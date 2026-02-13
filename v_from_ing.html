@@ -1,0 +1,1316 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>V + O + from + V-ing 완전정리 | VERADICT ENGLISH</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Noto+Sans+KR:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&family=Source+Serif+4:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #1a1a2e;
+    --paper: #f8f6f1;
+    --accent: #c0392b;
+    --accent2: #2c3e50;
+    --accent3: #27ae60;
+    --highlight: #fff3cd;
+    --blue: #2980b9;
+    --purple: #8e44ad;
+    --orange: #e67e22;
+    --teal: #16a085;
+    --card: #ffffff;
+    --border: #e0ddd5;
+    --shadow: rgba(0,0,0,0.08);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* HERO */
+  .hero {
+    background: linear-gradient(135deg, #1a1a2e 0%, #2c3e50 50%, #1a1a2e 100%);
+    color: #fff;
+    padding: 60px 40px 50px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 30px,
+      rgba(255,255,255,0.015) 30px,
+      rgba(255,255,255,0.015) 60px
+    );
+  }
+  .hero-badge {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    padding: 6px 18px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    position: relative;
+  }
+  .hero h1 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: clamp(28px, 5vw, 52px);
+    font-weight: 600;
+    letter-spacing: -1px;
+    margin-bottom: 10px;
+    position: relative;
+  }
+  .hero h1 .red { color: #e74c3c; }
+  .hero h1 .yellow { color: #f1c40f; }
+  .hero h1 .green { color: #2ecc71; }
+  .hero p {
+    font-size: 15px;
+    opacity: 0.7;
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  /* STRUCTURE BOX */
+  .structure-banner {
+    max-width: 900px;
+    margin: -25px auto 0;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+  }
+  .structure-box {
+    background: #fff;
+    border: 2px solid var(--accent);
+    border-radius: 16px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 8px 30px var(--shadow);
+  }
+  .structure-formula {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: clamp(16px, 3vw, 26px);
+    font-weight: 600;
+    color: var(--ink);
+    margin-bottom: 8px;
+  }
+  .structure-formula .s { color: var(--blue); }
+  .structure-formula .v { color: var(--accent); }
+  .structure-formula .o { color: var(--purple); }
+  .structure-formula .f { color: var(--ink); font-weight: 400; }
+  .structure-formula .ing { color: var(--accent3); }
+  .structure-meaning {
+    font-size: 14px;
+    color: #777;
+  }
+
+  /* MAIN */
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px 60px;
+  }
+
+  /* SECTION */
+  .section {
+    margin-bottom: 50px;
+  }
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 24px;
+    padding-bottom: 14px;
+    border-bottom: 2px solid var(--border);
+  }
+  .section-num {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 800;
+    color: #fff;
+    flex-shrink: 0;
+  }
+  .section-title {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--ink);
+  }
+  .section-subtitle {
+    font-size: 13px;
+    color: #999;
+    font-weight: 400;
+  }
+
+  /* COLOR CODING PER SECTION */
+  .sec-prevent .section-num { background: var(--accent); }
+  .sec-prevent .word-card { border-left-color: var(--accent); }
+  .sec-protect .section-num { background: var(--blue); }
+  .sec-protect .word-card { border-left-color: var(--blue); }
+  .sec-free .section-num { background: var(--accent3); }
+  .sec-free .word-card { border-left-color: var(--accent3); }
+  .sec-distinguish .section-num { background: var(--purple); }
+  .sec-distinguish .word-card { border-left-color: var(--purple); }
+  .sec-misc .section-num { background: var(--orange); }
+  .sec-misc .word-card { border-left-color: var(--orange); }
+
+  /* WORD CARD */
+  .word-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-left: 5px solid var(--accent);
+    border-radius: 10px;
+    padding: 20px 24px;
+    margin-bottom: 14px;
+    box-shadow: 0 2px 8px var(--shadow);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .word-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  }
+  .word-top {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    margin-bottom: 6px;
+    flex-wrap: wrap;
+  }
+  .word-en {
+    font-family: 'Source Serif 4', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .word-kr {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--accent2);
+  }
+  .word-detail {
+    font-size: 13px;
+    color: #888;
+    margin-bottom: 10px;
+    font-weight: 400;
+  }
+  .word-example {
+    background: #fafaf7;
+    border-radius: 8px;
+    padding: 12px 16px;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-top: 8px;
+  }
+  .word-example .en {
+    font-family: 'Source Serif 4', serif;
+    font-size: 14.5px;
+    color: var(--ink);
+  }
+  .word-example .en b {
+    color: var(--accent);
+    font-weight: 700;
+  }
+  .word-example .ko {
+    font-size: 13px;
+    color: #777;
+    margin-top: 2px;
+  }
+  .star {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 10px;
+    margin-left: 6px;
+    vertical-align: middle;
+    letter-spacing: 0.5px;
+  }
+  .star.blue { background: var(--blue); }
+  .star.green { background: var(--accent3); }
+  .star.purple { background: var(--purple); }
+  .star.orange { background: var(--orange); }
+
+  /* TIP BOX */
+  .tip-box {
+    background: linear-gradient(135deg, #fff3cd 0%, #ffeeba 100%);
+    border: 2px solid #f0d98c;
+    border-radius: 12px;
+    padding: 24px 28px;
+    margin: 30px 0;
+  }
+  .tip-box.danger {
+    background: linear-gradient(135deg, #fde8e8 0%, #f8d7da 100%);
+    border-color: #f0b0b0;
+  }
+  .tip-box.info {
+    background: linear-gradient(135deg, #dbeafe 0%, #c7d8f0 100%);
+    border-color: #a8c4e0;
+  }
+  .tip-title {
+    font-weight: 800;
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .tip-content {
+    font-size: 14px;
+    line-height: 1.9;
+  }
+  .tip-content code {
+    font-family: 'JetBrains Mono', monospace;
+    background: rgba(0,0,0,0.06);
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-size: 13px;
+  }
+
+  /* COMPARISON TABLE */
+  .compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 14px;
+  }
+  .compare-table th {
+    background: var(--accent2);
+    color: #fff;
+    padding: 12px 16px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 13px;
+  }
+  .compare-table th:first-child { border-radius: 8px 0 0 0; }
+  .compare-table th:last-child { border-radius: 0 8px 0 0; }
+  .compare-table td {
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+  .compare-table tr:nth-child(even) td { background: #fafaf7; }
+  .compare-table td code {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 13px;
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  /* QUICK REF */
+  .quick-ref {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 16px;
+  }
+  .quick-item {
+    background: #fff;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 12px 14px;
+    font-size: 13px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .quick-item .en {
+    font-family: 'Source Serif 4', serif;
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .quick-item .kr {
+    font-size: 12px;
+    color: #888;
+  }
+
+  /* FOOTER */
+  .footer {
+    text-align: center;
+    padding: 40px 20px;
+    color: #aaa;
+    font-size: 12px;
+    border-top: 1px solid var(--border);
+  }
+  .footer strong {
+    color: #777;
+  }
+
+  /* Print */
+  @media print {
+    .hero { padding: 30px 20px; }
+    .word-card:hover { transform: none; box-shadow: none; }
+    body { font-size: 12px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-badge">VERADICT ENGLISH · 편입 문법</div>
+  <h1><span class="red">V</span> + <span class="yellow">O</span> + from + <span class="green">V-ing</span></h1>
+  <p>동사 + 목적어 + from + 동명사 구문 완전정리 — 편입·편입학·사관학교 대비 필수 어휘</p>
+</div>
+
+<!-- STRUCTURE -->
+<div class="structure-banner">
+  <div class="structure-box">
+    <div class="structure-formula">
+      <span class="s">S</span> + <span class="v">V</span> + <span class="o">O</span> + <span class="f">from</span> + <span class="ing">V-ing</span>
+    </div>
+    <div class="structure-meaning">
+      "주어가 목적어를 ~하지 못하게/~로부터 [동사]하다"
+    </div>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="container">
+
+  <!-- ========== SECTION 1: 방해/금지 ========== -->
+  <div class="section sec-prevent">
+    <div class="section-header">
+      <div class="section-num">1</div>
+      <div>
+        <div class="section-title">방해 · 금지 · 억제 계열</div>
+        <div class="section-subtitle">~하지 못하게 막다 / 금지하다 — 편입 최다 출제 영역</div>
+      </div>
+    </div>
+
+    <!-- prevent -->
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">prevent</span>
+        <span class="word-kr">막다, 예방하다</span>
+        <span class="star">최빈출 ★★★</span>
+      </div>
+      <div class="word-detail">from 생략 가능 (비격식). 시험에서는 from 포함이 정답.</div>
+      <div class="word-example">
+        <div class="en">The heavy snow <b>prevented</b> the plane <b>from taking off</b>.</div>
+        <div class="ko">폭설이 비행기의 이륙을 막았다.</div>
+      </div>
+    </div>
+
+    <!-- keep -->
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">keep</span>
+        <span class="word-kr">~하지 못하게 하다</span>
+        <span class="star">최빈출 ★★★</span>
+      </div>
+      <div class="word-detail">⚠️ 함정: keep + O + from -ing (막다) vs. keep + -ing (계속하다) 구별 필수!</div>
+      <div class="word-example">
+        <div class="en">The noise <b>kept</b> me <b>from sleeping</b>.</div>
+        <div class="ko">소음이 나를 잠들지 못하게 했다.</div>
+      </div>
+    </div>
+
+    <!-- stop -->
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">stop</span>
+        <span class="word-kr">막다, 그만두게 하다</span>
+        <span class="star">최빈출 ★★★</span>
+      </div>
+      <div class="word-detail">⚠️ 3중 함정: stop + O + from -ing (막다) / stop + -ing (그만하다) / stop + to-V (하려고 멈추다)</div>
+      <div class="word-example">
+        <div class="en">Nothing can <b>stop</b> her <b>from pursuing</b> her dream.</div>
+        <div class="ko">어떤 것도 그녀가 꿈을 추구하는 것을 막을 수 없다.</div>
+      </div>
+    </div>
+
+    <!-- prohibit -->
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">prohibit</span>
+        <span class="word-kr">금지하다 (법·규정에 의해)</span>
+        <span class="star">최빈출 ★★★</span>
+      </div>
+      <div class="word-detail">법적·제도적 금지. from 생략 불가. 수동태 빈출: be prohibited from</div>
+      <div class="word-example">
+        <div class="en">The regulation <b>prohibits</b> employees <b>from disclosing</b> confidential information.</div>
+        <div class="ko">규정은 직원들이 기밀 정보를 공개하는 것을 금지한다.</div>
+      </div>
+    </div>
+
+    <!-- ban -->
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">ban</span>
+        <span class="word-kr">금지하다 (공식적으로)</span>
+        <span class="star">빈출 ★★</span>
+      </div>
+      <div class="word-detail">공식적·공적 금지. from 생략 불가.</div>
+      <div class="word-example">
+        <div class="en">The government <b>banned</b> citizens <b>from traveling</b> abroad.</div>
+        <div class="ko">정부는 시민들의 해외여행을 금지했다.</div>
+      </div>
+    </div>
+
+    <!-- bar -->
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">bar</span>
+        <span class="word-kr">막다, 차단하다 (접근·진입)</span>
+        <span class="star">빈출 ★★</span>
+      </div>
+      <div class="word-detail">물리적/법적으로 접근을 차단. 수동태 빈출: be barred from</div>
+      <div class="word-example">
+        <div class="en">The athlete was <b>barred from competing</b> in the Olympics.</div>
+        <div class="ko">그 선수는 올림픽 출전이 금지되었다.</div>
+      </div>
+    </div>
+
+    <!-- block -->
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">block</span>
+        <span class="word-kr">막다, 가로막다</span>
+      </div>
+      <div class="word-detail">물리적/추상적 장벽으로 차단</div>
+      <div class="word-example">
+        <div class="en">The tall buildings <b>blocked</b> sunlight <b>from entering</b> the room.</div>
+        <div class="ko">높은 건물들이 햇빛이 방에 들어오는 것을 막았다.</div>
+      </div>
+    </div>
+
+    <!-- hinder -->
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">hinder</span>
+        <span class="word-kr">방해하다, 저해하다</span>
+        <span class="star">빈출 ★★</span>
+      </div>
+      <div class="word-detail">진행·발전을 더디게 함. 완전 차단이 아닌 '느리게 만듦'</div>
+      <div class="word-example">
+        <div class="en">Poor infrastructure <b>hindered</b> the nation <b>from developing</b> rapidly.</div>
+        <div class="ko">열악한 인프라가 국가의 빠른 발전을 방해했다.</div>
+      </div>
+    </div>
+
+    <!-- impede -->
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">impede</span>
+        <span class="word-kr">방해하다, 지연시키다</span>
+      </div>
+      <div class="word-detail">격식체. hinder와 유사하나 더 공식적. 진행을 물리적으로 가로막는 뉘앙스.</div>
+      <div class="word-example">
+        <div class="en">Bureaucratic red tape <b>impeded</b> the company <b>from launching</b> the product on time.</div>
+        <div class="ko">관료주의적 행정 절차가 회사의 제때 제품 출시를 방해했다.</div>
+      </div>
+    </div>
+
+    <!-- hamper -->
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">hamper</span>
+        <span class="word-kr">방해하다, 저해하다</span>
+      </div>
+      <div class="word-detail">주로 진행·활동에 불편함을 초래. hinder보다 더 실질적인 어려움.</div>
+      <div class="word-example">
+        <div class="en">The injury <b>hampered</b> him <b>from performing</b> at his best.</div>
+        <div class="ko">부상이 그가 최선의 기량을 발휘하는 것을 방해했다.</div>
+      </div>
+    </div>
+
+    <!-- restrain -->
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">restrain</span>
+        <span class="word-kr">억제하다, 제지하다</span>
+        <span class="star">빈출 ★★</span>
+      </div>
+      <div class="word-detail">물리적/심리적으로 자제시킴. 재귀 용법 빈출: restrain oneself from</div>
+      <div class="word-example">
+        <div class="en">She could barely <b>restrain</b> herself <b>from laughing</b> out loud.</div>
+        <div class="ko">그녀는 큰소리로 웃음을 참기가 어려웠다.</div>
+      </div>
+    </div>
+
+    <!-- restrict -->
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">restrict</span>
+        <span class="word-kr">제한하다</span>
+      </div>
+      <div class="word-detail">범위·양·행동을 일정 수준으로 제한</div>
+      <div class="word-example">
+        <div class="en">The new policy <b>restricts</b> employees <b>from accessing</b> social media during work hours.</div>
+        <div class="ko">새 정책은 직원들의 근무 시간 중 SNS 접속을 제한한다.</div>
+      </div>
+    </div>
+
+    <!-- preclude -->
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">preclude</span>
+        <span class="word-kr">배제하다, 불가능하게 하다</span>
+        <span class="star">빈출 ★★</span>
+      </div>
+      <div class="word-detail">⚠️ 고급 어휘. 격식체. "사전에 가능성 자체를 차단"하는 의미. 편입 독해·어휘 문제 빈출.</div>
+      <div class="word-example">
+        <div class="en">His criminal record <b>precluded</b> him <b>from obtaining</b> a teaching license.</div>
+        <div class="ko">범죄 기록이 그가 교사 자격증을 취득하는 것을 불가능하게 했다.</div>
+      </div>
+    </div>
+
+    <!-- deter -->
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">deter</span>
+        <span class="word-kr">단념시키다, 억제하다</span>
+        <span class="star">빈출 ★★</span>
+      </div>
+      <div class="word-detail">위협·두려움으로 하지 않도록 만듦. 범죄·위험 행동 맥락에서 자주 사용.</div>
+      <div class="word-example">
+        <div class="en">Harsh penalties <b>deter</b> people <b>from committing</b> crimes.</div>
+        <div class="ko">가혹한 처벌은 사람들이 범죄를 저지르는 것을 억제한다.</div>
+      </div>
+    </div>
+
+    <!-- discourage -->
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">discourage</span>
+        <span class="word-kr">낙담시키다, 의욕을 꺾다</span>
+        <span class="star">빈출 ★★</span>
+      </div>
+      <div class="word-detail">심리적으로 의욕을 꺾어 단념시킴. ↔ encourage A to-V</div>
+      <div class="word-example">
+        <div class="en">The coach <b>discouraged</b> the players <b>from taking</b> unnecessary risks.</div>
+        <div class="ko">코치는 선수들이 불필요한 위험을 감수하지 않도록 말렸다.</div>
+      </div>
+    </div>
+
+    <!-- dissuade -->
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">dissuade</span>
+        <span class="word-kr">설득하여 단념시키다</span>
+        <span class="star">빈출 ★★</span>
+      </div>
+      <div class="word-detail">⚠️ discourage와 비교 출제! dissuade = 설득으로 단념 / discourage = 의욕을 꺾어 단념. ↔ persuade A to-V</div>
+      <div class="word-example">
+        <div class="en">Her friends <b>dissuaded</b> her <b>from dropping out</b> of college.</div>
+        <div class="ko">친구들이 그녀를 설득하여 대학 중퇴를 단념시켰다.</div>
+      </div>
+    </div>
+
+    <!-- inhibit -->
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">inhibit</span>
+        <span class="word-kr">억제하다, 저해하다</span>
+      </div>
+      <div class="word-detail">내적·생리적 억제. 심리적 위축 또는 화학적 반응 억제.</div>
+      <div class="word-example">
+        <div class="en">Shyness <b>inhibited</b> him <b>from expressing</b> his true feelings.</div>
+        <div class="ko">수줍음이 그가 진정한 감정을 표현하는 것을 억제했다.</div>
+      </div>
+    </div>
+
+    <!-- exclude -->
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">exclude</span>
+        <span class="word-kr">배제하다, 제외하다</span>
+      </div>
+      <div class="word-detail">집단·활동에서 의도적으로 제외</div>
+      <div class="word-example">
+        <div class="en">The committee <b>excluded</b> him <b>from participating</b> in the election.</div>
+        <div class="ko">위원회는 그를 선거 참여에서 배제했다.</div>
+      </div>
+    </div>
+
+    <!-- exempt -->
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">exempt</span>
+        <span class="word-kr">면제하다</span>
+      </div>
+      <div class="word-detail">의무·규칙에서 면제. 법·세금 맥락에서 빈출.</div>
+      <div class="word-example">
+        <div class="en">The new rule <b>exempts</b> small businesses <b>from paying</b> the additional tax.</div>
+        <div class="ko">새 규정은 소규모 사업체를 추가 세금 납부에서 면제한다.</div>
+      </div>
+    </div>
+
+    <!-- disqualify -->
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">disqualify</span>
+        <span class="word-kr">자격을 박탈하다</span>
+      </div>
+      <div class="word-detail">공식적으로 자격을 빼앗음. 스포츠·시험·선거 맥락.</div>
+      <div class="word-example">
+        <div class="en">Doping <b>disqualified</b> the athlete <b>from competing</b> in the finals.</div>
+        <div class="ko">도핑이 그 선수의 결승전 출전 자격을 박탈했다.</div>
+      </div>
+    </div>
+
+    <!-- forbid -->
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">forbid</span>
+        <span class="word-kr">금지하다</span>
+      </div>
+      <div class="word-detail">⚠️ 주로 forbid + O + to-V / forbid + O + from -ing 둘 다 가능. 시험에서는 구문 선택 주의!</div>
+      <div class="word-example">
+        <div class="en">The doctor <b>forbade</b> him <b>from drinking</b> alcohol.</div>
+        <div class="ko">의사가 그에게 음주를 금지했다.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- TIP: from 생략 -->
+  <div class="tip-box danger">
+    <div class="tip-title">⚠️ 시험 핵심: from 생략 가능 vs. 불가</div>
+    <div class="tip-content">
+      <table class="compare-table">
+        <tr>
+          <th>from 생략 가능 (구어체)</th>
+          <th>from 생략 불가</th>
+        </tr>
+        <tr>
+          <td><code>prevent</code> / <code>stop</code> / <code>keep</code></td>
+          <td><code>prohibit</code> / <code>ban</code> / <code>bar</code> / <code>disqualify</code> / <code>exclude</code> / <code>exempt</code> / <code>deter</code> / <code>discourage</code> / <code>dissuade</code> / <code>preclude</code> / <code>hinder</code> / <code>restrain</code></td>
+        </tr>
+      </table>
+      ※ 시험에서는 from이 포함된 형태가 정답. 생략 가능 여부는 오답 소거용으로 알아둘 것.
+    </div>
+  </div>
+
+  <!-- TIP: stop / keep 함정 -->
+  <div class="tip-box">
+    <div class="tip-title">🔥 편입 단골 함정: stop과 keep의 3중·2중 구문</div>
+    <div class="tip-content">
+      <table class="compare-table">
+        <tr><th>구문</th><th>의미</th><th>예문</th></tr>
+        <tr>
+          <td><code>stop + O + from -ing</code></td>
+          <td>~가 …하는 것을 막다</td>
+          <td>I stopped him from leaving. (떠나는 걸 막았다)</td>
+        </tr>
+        <tr>
+          <td><code>stop + -ing</code></td>
+          <td>~하는 것을 그만두다</td>
+          <td>I stopped smoking. (담배를 끊었다)</td>
+        </tr>
+        <tr>
+          <td><code>stop + to-V</code></td>
+          <td>~하기 위해 멈추다</td>
+          <td>I stopped to smoke. (담배 피우려고 멈췄다)</td>
+        </tr>
+        <tr>
+          <td><code>keep + O + from -ing</code></td>
+          <td>~가 …하지 못하게 하다</td>
+          <td>The rain kept us from going out. (비가 외출을 막았다)</td>
+        </tr>
+        <tr>
+          <td><code>keep + -ing</code></td>
+          <td>계속 ~하다</td>
+          <td>Keep studying! (계속 공부해!)</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+  <!-- ========== SECTION 2: 보호 ========== -->
+  <div class="section sec-protect">
+    <div class="section-header">
+      <div class="section-num">2</div>
+      <div>
+        <div class="section-title">보호 · 방어 계열</div>
+        <div class="section-subtitle">~로부터 보호하다 / 지키다</div>
+      </div>
+    </div>
+
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">protect</span>
+        <span class="word-kr">보호하다</span>
+        <span class="star blue">빈출 ★★</span>
+      </div>
+      <div class="word-detail">가장 일반적인 보호 동사. 위험·해악으로부터 지킴.</div>
+      <div class="word-example">
+        <div class="en">Sunscreen <b>protects</b> the skin <b>from being damaged</b> by UV rays.</div>
+        <div class="ko">자외선 차단제가 피부를 자외선 손상으로부터 보호한다.</div>
+      </div>
+    </div>
+
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">shield</span>
+        <span class="word-kr">보호하다, 가리다</span>
+      </div>
+      <div class="word-detail">방패처럼 물리적으로 가려 보호. protect보다 더 적극적.</div>
+      <div class="word-example">
+        <div class="en">The mother <b>shielded</b> her child <b>from being hit</b> by debris.</div>
+        <div class="ko">어머니가 아이를 잔해에 맞지 않도록 감쌌다.</div>
+      </div>
+    </div>
+
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">save</span>
+        <span class="word-kr">구하다</span>
+      </div>
+      <div class="word-detail">위험한 상황에서 구출</div>
+      <div class="word-example">
+        <div class="en">The seatbelt <b>saved</b> her <b>from being thrown</b> out of the car.</div>
+        <div class="ko">안전벨트가 그녀가 차 밖으로 튕겨 나가는 것을 막아주었다.</div>
+      </div>
+    </div>
+
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">defend</span>
+        <span class="word-kr">방어하다, 보호하다</span>
+      </div>
+      <div class="word-detail">공격·비난으로부터 적극적으로 방어</div>
+      <div class="word-example">
+        <div class="en">The lawyer <b>defended</b> his client <b>from being wrongfully convicted</b>.</div>
+        <div class="ko">변호사가 의뢰인이 억울하게 유죄 판결을 받는 것을 막았다.</div>
+      </div>
+    </div>
+
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">guard</span>
+        <span class="word-kr">지키다, 경비하다</span>
+      </div>
+      <div class="word-detail">감시·경계하며 보호</div>
+      <div class="word-example">
+        <div class="en">The firewall <b>guards</b> the system <b>from being hacked</b>.</div>
+        <div class="ko">방화벽이 시스템이 해킹당하는 것을 방지한다.</div>
+      </div>
+    </div>
+
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">shelter</span>
+        <span class="word-kr">보호하다, 피난시키다</span>
+      </div>
+      <div class="word-detail">외부 환경(날씨·위험)으로부터 은신·대피</div>
+      <div class="word-example">
+        <div class="en">The cave <b>sheltered</b> them <b>from being exposed</b> to the blizzard.</div>
+        <div class="ko">동굴이 그들을 눈보라에 노출되는 것으로부터 보호했다.</div>
+      </div>
+    </div>
+
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">insulate</span>
+        <span class="word-kr">절연하다, 격리하다</span>
+      </div>
+      <div class="word-detail">열·소리·충격 등으로부터 차단. 비유적으로도 사용.</div>
+      <div class="word-example">
+        <div class="en">Diversification <b>insulates</b> investors <b>from losing</b> everything in a crash.</div>
+        <div class="ko">분산 투자는 투자자들이 폭락 시 전부 잃는 것을 방지한다.</div>
+      </div>
+    </div>
+
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">preserve</span>
+        <span class="word-kr">보전하다, 보존하다</span>
+      </div>
+      <div class="word-detail">상태·가치를 유지하며 보호</div>
+      <div class="word-example">
+        <div class="en">Refrigeration <b>preserves</b> food <b>from spoiling</b> quickly.</div>
+        <div class="ko">냉장 보관이 음식이 빨리 상하는 것을 막는다.</div>
+      </div>
+    </div>
+
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">safeguard</span>
+        <span class="word-kr">보호하다, 안전장치를 두다</span>
+      </div>
+      <div class="word-detail">제도적·체계적 보호. 격식체.</div>
+      <div class="word-example">
+        <div class="en">The new law <b>safeguards</b> consumers <b>from being exploited</b> by corporations.</div>
+        <div class="ko">새 법이 소비자들이 기업에 착취당하는 것을 방지한다.</div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- ========== SECTION 3: 해방/면제 ========== -->
+  <div class="section sec-free">
+    <div class="section-header">
+      <div class="section-num">3</div>
+      <div>
+        <div class="section-title">해방 · 면제 · 구제 계열</div>
+        <div class="section-subtitle">~로부터 풀어주다 / 자유롭게 하다</div>
+      </div>
+    </div>
+
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">free</span>
+        <span class="word-kr">자유롭게 하다, 해방하다</span>
+      </div>
+      <div class="word-example">
+        <div class="en">The new technology <b>freed</b> workers <b>from performing</b> tedious tasks.</div>
+        <div class="ko">새 기술이 노동자들을 지루한 작업에서 해방시켰다.</div>
+      </div>
+    </div>
+
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">liberate</span>
+        <span class="word-kr">해방하다</span>
+      </div>
+      <div class="word-detail">억압·속박에서의 해방. free보다 더 강하고 격식적.</div>
+      <div class="word-example">
+        <div class="en">Education <b>liberates</b> individuals <b>from being confined</b> by ignorance.</div>
+        <div class="ko">교육은 개인을 무지의 속박에서 해방시킨다.</div>
+      </div>
+    </div>
+
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">release</span>
+        <span class="word-kr">풀어주다, 면제하다</span>
+      </div>
+      <div class="word-example">
+        <div class="en">The contract <b>released</b> him <b>from paying</b> any further damages.</div>
+        <div class="ko">계약서가 그를 추가 손해배상 지급에서 면제했다.</div>
+      </div>
+    </div>
+
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">relieve</span>
+        <span class="word-kr">덜어주다, 해제하다</span>
+        <span class="star green">빈출 ★★</span>
+      </div>
+      <div class="word-detail">부담·고통·의무를 경감시킴. relieve A of B와 혼동 주의!</div>
+      <div class="word-example">
+        <div class="en">Automation <b>relieved</b> employees <b>from doing</b> repetitive manual work.</div>
+        <div class="ko">자동화가 직원들을 반복적인 수작업에서 벗어나게 했다.</div>
+      </div>
+    </div>
+
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">absolve</span>
+        <span class="word-kr">면죄하다, 책임을 면하다</span>
+      </div>
+      <div class="word-detail">도덕적·법적 책임에서 풀어줌. 격식체. absolve A of B도 가능.</div>
+      <div class="word-example">
+        <div class="en">The evidence <b>absolved</b> the suspect <b>from being held</b> responsible.</div>
+        <div class="ko">증거가 용의자를 책임에서 벗어나게 했다.</div>
+      </div>
+    </div>
+
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">deliver</span>
+        <span class="word-kr">구출하다, 해방하다</span>
+      </div>
+      <div class="word-detail">고통·위험에서 구출. 종교적·문학적 맥락에서도 사용. 격식체.</div>
+      <div class="word-example">
+        <div class="en">The medicine <b>delivered</b> her <b>from suffering</b> chronic pain.</div>
+        <div class="ko">약이 그녀를 만성 통증의 고통에서 구해주었다.</div>
+      </div>
+    </div>
+
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">spare</span>
+        <span class="word-kr">~를 면하게 하다</span>
+      </div>
+      <div class="word-detail">불쾌한 경험을 겪지 않도록 해줌.</div>
+      <div class="word-example">
+        <div class="en">His timely confession <b>spared</b> her <b>from being blamed</b>.</div>
+        <div class="ko">그의 시의적절한 고백이 그녀가 비난받는 것을 면하게 해주었다.</div>
+      </div>
+    </div>
+
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">excuse</span>
+        <span class="word-kr">면제하다, 용서하다</span>
+      </div>
+      <div class="word-example">
+        <div class="en">The professor <b>excused</b> her <b>from attending</b> the lecture.</div>
+        <div class="ko">교수가 그녀를 강의 참석에서 면제해 주었다.</div>
+      </div>
+    </div>
+
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">discharge</span>
+        <span class="word-kr">면제하다, 해제하다</span>
+      </div>
+      <div class="word-detail">의무·직무·책임에서 공식적으로 해제. 법률·군사 맥락.</div>
+      <div class="word-example">
+        <div class="en">The court <b>discharged</b> him <b>from fulfilling</b> the remaining obligations.</div>
+        <div class="ko">법원이 그를 나머지 의무 이행에서 면제했다.</div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- ========== SECTION 4: 구별 ========== -->
+  <div class="section sec-distinguish">
+    <div class="section-header">
+      <div class="section-num">4</div>
+      <div>
+        <div class="section-title">구별 · 분리 계열</div>
+        <div class="section-subtitle">~와 구별하다 / ~에서 분리하다</div>
+      </div>
+    </div>
+
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">distinguish</span>
+        <span class="word-kr">구별하다</span>
+        <span class="star purple">빈출 ★★</span>
+      </div>
+      <div class="word-detail">distinguish A from B (A와 B를 구별하다). B 자리에 -ing 가능.</div>
+      <div class="word-example">
+        <div class="en">It is difficult to <b>distinguish</b> facts <b>from being</b> mere opinions.</div>
+        <div class="ko">사실과 단순한 의견을 구별하기 어렵다.</div>
+      </div>
+    </div>
+
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">differentiate</span>
+        <span class="word-kr">구별하다, 차별화하다</span>
+      </div>
+      <div class="word-detail">차이점을 기반으로 구별. 학술적 맥락에서 선호.</div>
+      <div class="word-example">
+        <div class="en">Experts <b>differentiate</b> genuine art <b>from being</b> a counterfeit.</div>
+        <div class="ko">전문가들이 진품과 모조품을 구별한다.</div>
+      </div>
+    </div>
+
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">separate</span>
+        <span class="word-kr">분리하다</span>
+      </div>
+      <div class="word-example">
+        <div class="en">The fence <b>separated</b> the garden <b>from being accessed</b> by animals.</div>
+        <div class="ko">울타리가 동물들이 정원에 접근하는 것을 차단했다.</div>
+      </div>
+    </div>
+
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">tell</span>
+        <span class="word-kr">구별하다</span>
+      </div>
+      <div class="word-detail">tell A from B = A와 B를 구별하다. 구어적 표현.</div>
+      <div class="word-example">
+        <div class="en">Can you <b>tell</b> the original <b>from being</b> a reproduction?</div>
+        <div class="ko">원본과 복제품을 구별할 수 있니?</div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ========== SECTION 5: 기타 ========== -->
+  <div class="section sec-misc">
+    <div class="section-header">
+      <div class="section-num">5</div>
+      <div>
+        <div class="section-title">기타 중요 동사</div>
+        <div class="section-subtitle">다양한 의미로 from -ing을 취하는 동사들</div>
+      </div>
+    </div>
+
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">distract</span>
+        <span class="word-kr">주의를 흩트리다</span>
+        <span class="star orange">빈출 ★★</span>
+      </div>
+      <div class="word-detail">집중을 방해하여 다른 데로 주의를 돌리게 함.</div>
+      <div class="word-example">
+        <div class="en">Social media <b>distracts</b> students <b>from studying</b> effectively.</div>
+        <div class="ko">SNS가 학생들의 효과적인 공부를 방해한다.</div>
+      </div>
+    </div>
+
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">divert</span>
+        <span class="word-kr">전환하다, 돌리다</span>
+      </div>
+      <div class="word-detail">방향·주의·자원을 다른 곳으로 돌림.</div>
+      <div class="word-example">
+        <div class="en">The scandal <b>diverted</b> attention <b>from focusing</b> on the real issues.</div>
+        <div class="ko">스캔들이 실제 문제에 집중하지 못하게 관심을 돌렸다.</div>
+      </div>
+    </div>
+
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">derive</span>
+        <span class="word-kr">끌어내다, 유래하다</span>
+      </div>
+      <div class="word-detail">derive A from B (B에서 A를 끌어내다). B 자리에 -ing 가능.</div>
+      <div class="word-example">
+        <div class="en">She <b>derived</b> great satisfaction <b>from teaching</b> underprivileged children.</div>
+        <div class="ko">그녀는 소외 아동을 가르치는 것에서 큰 보람을 느꼈다.</div>
+      </div>
+    </div>
+
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">benefit</span>
+        <span class="word-kr">이익을 얻다</span>
+      </div>
+      <div class="word-detail">benefit from -ing (주어가 ~함으로써 이익을 얻다). 목적어 없이도 사용.</div>
+      <div class="word-example">
+        <div class="en">Students <b>benefit from studying</b> in a quiet environment.</div>
+        <div class="ko">학생들은 조용한 환경에서 공부함으로써 이익을 얻는다.</div>
+      </div>
+    </div>
+
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">suffer</span>
+        <span class="word-kr">고통받다</span>
+      </div>
+      <div class="word-detail">suffer from -ing (주어가 ~하는 것으로 고통받다). 자동사 용법.</div>
+      <div class="word-example">
+        <div class="en">The economy <b>suffered from being</b> overly dependent on oil exports.</div>
+        <div class="ko">경제가 석유 수출에 지나치게 의존한 것으로 타격을 입었다.</div>
+      </div>
+    </div>
+
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">refrain</span>
+        <span class="word-kr">삼가다, 자제하다</span>
+        <span class="star orange">빈출 ★★</span>
+      </div>
+      <div class="word-detail">⚠️ 자동사! refrain from -ing (목적어 없음). 시험에서 타동사 함정 주의.</div>
+      <div class="word-example">
+        <div class="en">Passengers are advised to <b>refrain from smoking</b> on the premises.</div>
+        <div class="ko">승객들은 구내에서 흡연을 삼가도록 권고됩니다.</div>
+      </div>
+    </div>
+
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">abstain</span>
+        <span class="word-kr">삼가다, 자제하다</span>
+      </div>
+      <div class="word-detail">자동사. abstain from -ing. refrain과 유사하나 더 의지적·도덕적 결단의 뉘앙스.</div>
+      <div class="word-example">
+        <div class="en">He was advised to <b>abstain from consuming</b> alcohol for a month.</div>
+        <div class="ko">그는 한 달간 음주를 삼가라는 권고를 받았다.</div>
+      </div>
+    </div>
+
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">desist</span>
+        <span class="word-kr">그만두다, 중단하다</span>
+      </div>
+      <div class="word-detail">법률 용어. desist from -ing. "cease and desist" (중지 및 포기) 표현으로 유명.</div>
+      <div class="word-example">
+        <div class="en">The company was ordered to <b>desist from using</b> the trademark.</div>
+        <div class="ko">회사는 상표 사용 중단 명령을 받았다.</div>
+      </div>
+    </div>
+
+    <div class="word-card">
+      <div class="word-top">
+        <span class="word-en">shrink</span>
+        <span class="word-kr">주저하다, 움츠러들다</span>
+      </div>
+      <div class="word-detail">두려움·불쾌감으로 회피. shrink from -ing.</div>
+      <div class="word-example">
+        <div class="en">He never <b>shrank from confronting</b> difficult truths.</div>
+        <div class="ko">그는 어려운 진실에 맞서는 것을 결코 주저하지 않았다.</div>
+      </div>
+    </div>
+
+33  </div>
+
+
+  <!-- ========== EXAM TIPS ========== -->
+  <div class="tip-box info">
+    <div class="tip-title">📝 편입 시험 출제 포인트 총정리</div>
+    <div class="tip-content">
+      <table class="compare-table">
+        <tr><th>출제 유형</th><th>핵심 내용</th></tr>
+        <tr>
+          <td><strong>어휘 선택</strong></td>
+          <td><code>prevent / prohibit / preclude / hinder / deter</code> 등 유의어 간 미세한 의미 차이를 묻는 문제. 특히 <code>preclude</code>(가능성 자체를 차단)와 <code>deter</code>(위협으로 단념)의 뉘앙스 차이.</td>
+        </tr>
+        <tr>
+          <td><strong>전치사 선택</strong></td>
+          <td>빈칸에 <code>from</code>을 넣는 문제. "prevent O ___ -ing"에서 from 선택.</td>
+        </tr>
+        <tr>
+          <td><strong>동명사 vs. to부정사</strong></td>
+          <td><code>prevent/prohibit/ban</code> → from -ing (O) / to-V (X)<br>
+          <code>forbid</code> → from -ing (O) / to-V (O) 둘 다 가능<br>
+          <code>encourage/persuade/allow</code> → to-V (O) / from -ing (X)</td>
+        </tr>
+        <tr>
+          <td><strong>반의어 구문 전환</strong></td>
+          <td><code>discourage A from -ing</code> ↔ <code>encourage A to-V</code><br>
+          <code>dissuade A from -ing</code> ↔ <code>persuade A to-V</code><br>
+          <code>prohibit A from -ing</code> ↔ <code>allow/permit A to-V</code></td>
+        </tr>
+        <tr>
+          <td><strong>자동사 함정</strong></td>
+          <td><code>refrain / abstain / desist / shrink</code>는 자동사 → 목적어 없이 바로 from -ing<br>
+          ※ 타동사(prevent 등)와 혼동하는 함정 문제 출제!</td>
+        </tr>
+        <tr>
+          <td><strong>수동태 전환</strong></td>
+          <td>"A is prevented from -ing" / "A is prohibited from -ing" / "A is barred from -ing" 등 수동태 형태 빈출</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+  <!-- ========== QUICK REFERENCE ========== -->
+  <div class="section">
+    <div class="section-header">
+      <div class="section-num" style="background: var(--ink);">★</div>
+      <div>
+        <div class="section-title">빠른 암기용 총목록</div>
+        <div class="section-subtitle">V + O + from + V-ing 전체 동사 한눈에 보기</div>
+      </div>
+    </div>
+
+    <h4 style="margin: 16px 0 8px; color: var(--accent); font-size: 14px;">🔴 방해 · 금지 · 억제</h4>
+    <div class="quick-ref">
+      <div class="quick-item"><span class="en">prevent</span><span class="kr">막다</span></div>
+      <div class="quick-item"><span class="en">keep</span><span class="kr">못하게 하다</span></div>
+      <div class="quick-item"><span class="en">stop</span><span class="kr">막다</span></div>
+      <div class="quick-item"><span class="en">prohibit</span><span class="kr">금지하다</span></div>
+      <div class="quick-item"><span class="en">ban</span><span class="kr">금지하다</span></div>
+      <div class="quick-item"><span class="en">bar</span><span class="kr">차단하다</span></div>
+      <div class="quick-item"><span class="en">block</span><span class="kr">막다</span></div>
+      <div class="quick-item"><span class="en">hinder</span><span class="kr">방해하다</span></div>
+      <div class="quick-item"><span class="en">impede</span><span class="kr">지연시키다</span></div>
+      <div class="quick-item"><span class="en">hamper</span><span class="kr">방해하다</span></div>
+      <div class="quick-item"><span class="en">restrain</span><span class="kr">억제하다</span></div>
+      <div class="quick-item"><span class="en">restrict</span><span class="kr">제한하다</span></div>
+      <div class="quick-item"><span class="en">preclude</span><span class="kr">배제하다</span></div>
+      <div class="quick-item"><span class="en">deter</span><span class="kr">단념시키다</span></div>
+      <div class="quick-item"><span class="en">discourage</span><span class="kr">낙담시키다</span></div>
+      <div class="quick-item"><span class="en">dissuade</span><span class="kr">설득해 단념</span></div>
+      <div class="quick-item"><span class="en">inhibit</span><span class="kr">억제하다</span></div>
+      <div class="quick-item"><span class="en">exclude</span><span class="kr">배제하다</span></div>
+      <div class="quick-item"><span class="en">exempt</span><span class="kr">면제하다</span></div>
+      <div class="quick-item"><span class="en">disqualify</span><span class="kr">자격 박탈</span></div>
+      <div class="quick-item"><span class="en">forbid</span><span class="kr">금지하다</span></div>
+    </div>
+
+    <h4 style="margin: 24px 0 8px; color: var(--blue); font-size: 14px;">🔵 보호 · 방어</h4>
+    <div class="quick-ref">
+      <div class="quick-item"><span class="en">protect</span><span class="kr">보호하다</span></div>
+      <div class="quick-item"><span class="en">shield</span><span class="kr">가리다</span></div>
+      <div class="quick-item"><span class="en">save</span><span class="kr">구하다</span></div>
+      <div class="quick-item"><span class="en">defend</span><span class="kr">방어하다</span></div>
+      <div class="quick-item"><span class="en">guard</span><span class="kr">경비하다</span></div>
+      <div class="quick-item"><span class="en">shelter</span><span class="kr">대피시키다</span></div>
+      <div class="quick-item"><span class="en">insulate</span><span class="kr">절연하다</span></div>
+      <div class="quick-item"><span class="en">preserve</span><span class="kr">보존하다</span></div>
+      <div class="quick-item"><span class="en">safeguard</span><span class="kr">보호하다</span></div>
+    </div>
+
+    <h4 style="margin: 24px 0 8px; color: var(--accent3); font-size: 14px;">🟢 해방 · 면제</h4>
+    <div class="quick-ref">
+      <div class="quick-item"><span class="en">free</span><span class="kr">해방하다</span></div>
+      <div class="quick-item"><span class="en">liberate</span><span class="kr">해방하다</span></div>
+      <div class="quick-item"><span class="en">release</span><span class="kr">풀어주다</span></div>
+      <div class="quick-item"><span class="en">relieve</span><span class="kr">덜어주다</span></div>
+      <div class="quick-item"><span class="en">absolve</span><span class="kr">면죄하다</span></div>
+      <div class="quick-item"><span class="en">deliver</span><span class="kr">구출하다</span></div>
+      <div class="quick-item"><span class="en">spare</span><span class="kr">면하게 하다</span></div>
+      <div class="quick-item"><span class="en">excuse</span><span class="kr">면제하다</span></div>
+      <div class="quick-item"><span class="en">discharge</span><span class="kr">해제하다</span></div>
+    </div>
+
+    <h4 style="margin: 24px 0 8px; color: var(--purple); font-size: 14px;">🟣 구별 · 분리</h4>
+    <div class="quick-ref">
+      <div class="quick-item"><span class="en">distinguish</span><span class="kr">구별하다</span></div>
+      <div class="quick-item"><span class="en">differentiate</span><span class="kr">구별하다</span></div>
+      <div class="quick-item"><span class="en">separate</span><span class="kr">분리하다</span></div>
+      <div class="quick-item"><span class="en">tell</span><span class="kr">구별하다</span></div>
+    </div>
+
+    <h4 style="margin: 24px 0 8px; color: var(--orange); font-size: 14px;">🟠 기타 중요 동사</h4>
+    <div class="quick-ref">
+      <div class="quick-item"><span class="en">distract</span><span class="kr">주의 분산</span></div>
+      <div class="quick-item"><span class="en">divert</span><span class="kr">전환하다</span></div>
+      <div class="quick-item"><span class="en">derive</span><span class="kr">끌어내다</span></div>
+      <div class="quick-item"><span class="en">benefit</span><span class="kr">이익 얻다</span></div>
+      <div class="quick-item"><span class="en">suffer</span><span class="kr">고통받다</span></div>
+      <div class="quick-item"><span class="en">refrain</span><span class="kr">삼가다 (자동사)</span></div>
+      <div class="quick-item"><span class="en">abstain</span><span class="kr">자제하다 (자동사)</span></div>
+      <div class="quick-item"><span class="en">desist</span><span class="kr">중단하다 (자동사)</span></div>
+      <div class="quick-item"><span class="en">shrink</span><span class="kr">주저하다 (자동사)</span></div>
+    </div>
+  </div>
+
+  <!-- ANTI-PATTERN -->
+  <div class="tip-box danger">
+    <div class="tip-title">❌ 헷갈리는 반의어 구문 — 이것은 to-V를 쓴다!</div>
+    <div class="tip-content">
+      <table class="compare-table">
+        <tr><th>from -ing (단념·금지)</th><th>↔</th><th>to-V (권유·허용)</th></tr>
+        <tr><td><code>discourage A from -ing</code></td><td>↔</td><td><code>encourage A to-V</code></td></tr>
+        <tr><td><code>dissuade A from -ing</code></td><td>↔</td><td><code>persuade A to-V</code></td></tr>
+        <tr><td><code>prohibit A from -ing</code></td><td>↔</td><td><code>allow / permit A to-V</code></td></tr>
+        <tr><td><code>prevent A from -ing</code></td><td>↔</td><td><code>enable A to-V</code></td></tr>
+        <tr><td><code>deter A from -ing</code></td><td>↔</td><td><code>motivate A to-V</code></td></tr>
+        <tr><td><code>ban A from -ing</code></td><td>↔</td><td><code>authorize A to-V</code></td></tr>
+      </table>
+      ※ "막다/금지" 계열 = from -ing &nbsp;|&nbsp; "허용/권유" 계열 = to-V 로 대비해서 암기!
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<div class="footer">
+  <strong>VERADICT ENGLISH</strong> · 편입 문법 시리즈<br>
+  V + O + from + V-ing 완전정리 · 총 43개 동사 수록
+</div>
+
+</body>
+</html>

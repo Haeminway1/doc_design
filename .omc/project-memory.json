@@ -1,0 +1,105 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1770946029197,
+  "projectRoot": "/Users/haemin/projects/doc_design",
+  "techStack": {
+    "languages": [],
+    "frameworks": [],
+    "packageManager": null,
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "docs"
+    ],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "archive": {
+      "path": "archive",
+      "purpose": null,
+      "fileCount": 19,
+      "lastAccessed": 1770946029185,
+      "keyFiles": [
+        "VERADICT 구문독해.pdf",
+        "VERADICT 구문독해_final.pdf",
+        "VERADICT 구문독해_no_cover.pdf",
+        "[편입영어]구문독해_bridge.html",
+        "aaa.jpeg"
+      ]
+    },
+    "docs": {
+      "path": "docs",
+      "purpose": "Documentation",
+      "fileCount": 1,
+      "lastAccessed": 1770946029185,
+      "keyFiles": [
+        "PDF_DESIGN_GUIDE.md"
+      ]
+    },
+    "계약서": {
+      "path": "계약서",
+      "purpose": null,
+      "fileCount": 15,
+      "lastAccessed": 1770946029185,
+      "keyFiles": [
+        "1C78A870-4768-4D73-85B1-A51501526E41_1_105_c.jpeg",
+        "1EB05024-EE04-44AA-B8CF-09231E0D77AC_1_105_c.jpeg",
+        "2A3CB969-D121-45FF-B73A-5263CEAE82A5_1_105_c.jpeg",
+        "57514694-BFA6-4995-A280-82037424BFF2_1_105_c.jpeg",
+        "706FEA83-99AF-4767-ABA8-19AAEC52745F_1_105_c.jpeg"
+      ]
+    },
+    "계약서_cropped": {
+      "path": "계약서_cropped",
+      "purpose": null,
+      "fileCount": 15,
+      "lastAccessed": 1770946029185,
+      "keyFiles": [
+        "01.jpeg",
+        "02.jpeg",
+        "03.jpeg",
+        "04.jpeg",
+        "05.jpeg"
+      ]
+    },
+    "베라진": {
+      "path": "베라진",
+      "purpose": null,
+      "fileCount": 12,
+      "lastAccessed": 1770946029186,
+      "keyFiles": [
+        "KakaoTalk_Photo_2026-02-13-09-24-04 001.jpeg",
+        "KakaoTalk_Photo_2026-02-13-09-24-04 002.jpeg",
+        "KakaoTalk_Photo_2026-02-13-09-24-04 003.jpeg",
+        "KakaoTalk_Photo_2026-02-13-09-24-04 004.jpeg",
+        "KakaoTalk_Photo_2026-02-13-09-24-05 005.jpeg"
+      ]
+    },
+    "편입영어 교재": {
+      "path": "편입영어 교재",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1770946029186,
+      "keyFiles": []
+    }
+  },
+  "hotPaths": [],
+  "userDirectives": []
+}

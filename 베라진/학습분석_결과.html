@@ -1,0 +1,1906 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>베라진 교재 학습 분석 및 보충학습 자료</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  /* ===== RESET & BASE ===== */
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 10pt;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 10pt;
+    line-height: 1.7;
+    color: #1a202c;
+    background: #ffffff !important;
+  }
+
+  /* ===== PAGE BREAK UTILITIES ===== */
+  .page-break-after {
+    page-break-after: always !important;
+  }
+  .page-break-before {
+    page-break-before: always !important;
+  }
+  .avoid-break {
+    page-break-inside: avoid !important;
+  }
+
+  h1, h2, h3, h4 {
+    page-break-after: avoid !important;
+  }
+
+  table {
+    page-break-inside: avoid !important;
+  }
+
+  /* ===== COVER PAGE ===== */
+  .cover-page {
+    background-color: #1e3a5f !important;
+    color: #ffffff !important;
+    height: 297mm;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    margin: -16mm -14mm 0 -14mm;
+    padding: 60px 40px;
+    page-break-after: always !important;
+  }
+
+  .cover-page .cover-icon {
+    font-size: 48pt;
+    margin-bottom: 30px;
+  }
+
+  .cover-page .cover-title {
+    font-size: 26pt;
+    font-weight: 700;
+    color: #ffffff !important;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+    line-height: 1.3;
+  }
+
+  .cover-page .cover-subtitle {
+    font-size: 14pt;
+    font-weight: 300;
+    color: #a0c4e8 !important;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+  }
+
+  .cover-divider {
+    width: 80px;
+    height: 2px;
+    background-color: #ffffff !important;
+    margin: 0 auto 40px auto;
+  }
+
+  .cover-meta {
+    font-size: 10pt;
+    font-weight: 300;
+    color: #8ab4d6 !important;
+    line-height: 2;
+  }
+
+  /* ===== TABLE OF CONTENTS ===== */
+  .toc {
+    padding: 20px 0;
+  }
+
+  .toc h2 {
+    font-size: 20pt;
+    font-weight: 700;
+    color: #1e3a5f !important;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #1e3a5f;
+  }
+
+  .toc-section {
+    margin-bottom: 20px;
+  }
+
+  .toc-section-title {
+    font-size: 12pt;
+    font-weight: 700;
+    color: #2b6cb0 !important;
+    margin-bottom: 8px;
+    padding: 6px 0;
+  }
+
+  .toc-section-number {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    background-color: #2b6cb0 !important;
+    color: #ffffff !important;
+    border-radius: 50%;
+    font-size: 10pt;
+    font-weight: 700;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+
+  .toc-items {
+    list-style: none;
+    padding-left: 40px;
+  }
+
+  .toc-items li {
+    font-size: 10pt;
+    color: #4a5568 !important;
+    padding: 3px 0;
+    border-bottom: 1px dotted #e2e8f0;
+    line-height: 1.8;
+  }
+
+  .toc-items li span.toc-label {
+    color: #1a202c !important;
+  }
+
+  /* ===== HEADINGS ===== */
+  h1 {
+    font-size: 20pt;
+    font-weight: 700;
+    color: #1e3a5f !important;
+    margin: 20px 0 10px 0;
+    padding-bottom: 6px;
+    border-bottom: 3px solid #1e3a5f;
+    line-height: 1.3;
+  }
+
+  h2 {
+    font-size: 16pt;
+    font-weight: 700;
+    color: #2b6cb0 !important;
+    margin: 18px 0 10px 0;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #e2e8f0;
+    line-height: 1.3;
+  }
+
+  h3 {
+    font-size: 13pt;
+    font-weight: 700;
+    color: #2d3748 !important;
+    margin: 14px 0 8px 0;
+    line-height: 1.4;
+  }
+
+  h4 {
+    font-size: 11pt;
+    font-weight: 700;
+    color: #4a5568 !important;
+    margin: 10px 0 6px 0;
+    line-height: 1.4;
+  }
+
+  /* ===== PARAGRAPHS ===== */
+  p {
+    margin-bottom: 8px;
+  }
+
+  strong {
+    font-weight: 700;
+  }
+
+  /* ===== TABLES ===== */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 16px 0;
+    font-size: 9pt;
+    line-height: 1.6;
+  }
+
+  thead th {
+    background-color: #3182ce !important;
+    color: #ffffff !important;
+    font-weight: 700;
+    padding: 8px 10px;
+    text-align: left;
+    border: 1px solid #2b6cb0;
+    font-size: 9pt;
+  }
+
+  tbody td {
+    padding: 7px 10px;
+    border: 1px solid #e2e8f0;
+    vertical-align: top;
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: #ffffff !important;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #f7fafc !important;
+  }
+
+  /* Bold cells in first column */
+  tbody td:first-child {
+    font-weight: 500;
+  }
+
+  /* ===== RESULT MARKERS ===== */
+  .result-correct {
+    color: #38a169 !important;
+    font-weight: 700;
+  }
+
+  .result-wrong {
+    color: #e53e3e !important;
+    font-weight: 700;
+  }
+
+  /* ===== QUESTION BOX ===== */
+  .question-box {
+    background-color: #f7fafc !important;
+    border-left: 4px solid #3182ce;
+    padding: 10px 14px;
+    margin: 8px 0;
+    font-size: 10pt;
+    line-height: 1.7;
+  }
+
+  .question-box p {
+    margin: 0;
+  }
+
+  /* ===== ANSWER BOX ===== */
+  .answer-box {
+    background-color: #f0fff4 !important;
+    border-left: 4px solid #38a169;
+    padding: 8px 14px;
+    margin: 8px 0;
+    font-weight: 500;
+  }
+
+  /* ===== CODE / GRAMMAR BLOCK ===== */
+  .grammar-block {
+    background-color: #edf2f7 !important;
+    border: 1px solid #e2e8f0;
+    padding: 12px 16px;
+    margin: 12px 0;
+    font-family: 'Noto Sans KR', monospace;
+    font-size: 9pt;
+    line-height: 1.8;
+    white-space: pre-wrap;
+    page-break-inside: avoid !important;
+  }
+
+  /* ===== TIP / NOTE BOX ===== */
+  .tip-box {
+    background-color: #fffaf0 !important;
+    border-left: 4px solid #ed8936;
+    padding: 10px 16px;
+    margin: 12px 0;
+    page-break-inside: avoid !important;
+  }
+
+  .tip-box .tip-label {
+    font-weight: 700;
+    color: #c05621 !important;
+    font-size: 9pt;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  /* ===== WARNING BOX ===== */
+  .warning-box {
+    background-color: #fff5f5 !important;
+    border-left: 4px solid #e53e3e;
+    padding: 10px 16px;
+    margin: 12px 0;
+    page-break-inside: avoid !important;
+  }
+
+  .warning-box .warning-label {
+    font-weight: 700;
+    color: #e53e3e !important;
+    font-size: 9pt;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  /* ===== PROBLEM CARD ===== */
+  .problem-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 14px 18px;
+    margin: 14px 0;
+    page-break-inside: avoid !important;
+    background-color: #ffffff !important;
+  }
+
+  .problem-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+    gap: 12px;
+  }
+
+  .problem-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    border-radius: 50%;
+    background-color: #3182ce !important;
+    color: #ffffff !important;
+    font-weight: 700;
+    font-size: 13pt;
+    line-height: 1;
+  }
+
+  .problem-title {
+    font-size: 13pt;
+    font-weight: 700;
+    color: #2d3748 !important;
+    margin: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .problem-source {
+    display: inline-block;
+    background-color: #edf2f7 !important;
+    color: #4a5568 !important;
+    font-size: 8pt;
+    padding: 2px 10px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+
+  /* ===== VARIANT PROBLEMS ===== */
+  .variant-section {
+    background-color: #f7fafc !important;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 12px 16px;
+    margin-top: 12px;
+    page-break-inside: avoid !important;
+  }
+
+  .variant-section h4 {
+    color: #2b6cb0 !important;
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 6px;
+  }
+
+  .variant-item {
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px dotted #e2e8f0;
+  }
+
+  .variant-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .variant-q {
+    font-weight: 500;
+    margin-bottom: 3px;
+    font-size: 9.5pt;
+  }
+
+  .variant-a {
+    color: #38a169 !important;
+    font-size: 9pt;
+    padding-left: 16px;
+    font-weight: 500;
+  }
+
+  .variant-choices {
+    padding-left: 20px;
+    font-size: 9pt;
+    line-height: 1.8;
+    margin: 4px 0;
+  }
+
+  /* ===== FLOWCHART / STEP DIAGRAM ===== */
+  .flowchart {
+    margin: 16px 0;
+    page-break-inside: avoid !important;
+  }
+
+  .flow-step {
+    background-color: #edf2f7 !important;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 10px 16px;
+    margin-bottom: 4px;
+    font-size: 9.5pt;
+  }
+
+  .flow-step .step-label {
+    font-weight: 700;
+    color: #3182ce !important;
+    margin-right: 8px;
+  }
+
+  .flow-step .step-sub {
+    padding-left: 24px;
+    font-size: 9pt;
+    color: #4a5568 !important;
+    margin-top: 4px;
+    line-height: 1.7;
+  }
+
+  .flow-arrow {
+    text-align: center;
+    font-size: 14pt;
+    color: #3182ce !important;
+    line-height: 1.2;
+    margin: 2px 0;
+  }
+
+  /* ===== CHECKLIST ===== */
+  .checklist-group {
+    margin-bottom: 16px;
+    page-break-inside: avoid !important;
+  }
+
+  .checklist-group-title {
+    font-size: 11pt;
+    font-weight: 700;
+    color: #2b6cb0 !important;
+    margin-bottom: 8px;
+    padding: 4px 0;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .checklist-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 4px 0;
+    font-size: 9.5pt;
+    line-height: 1.6;
+  }
+
+  .checkbox {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    min-width: 14px;
+    border: 1.5px solid #a0aec0;
+    border-radius: 2px;
+    margin-top: 3px;
+  }
+
+  /* ===== HORIZONTAL RULE ===== */
+  hr {
+    border: none;
+    border-top: 1px solid #e2e8f0;
+    margin: 20px 0;
+  }
+
+  /* ===== SECTION HEADER BAR ===== */
+  .section-header {
+    background-color: #1e3a5f !important;
+    color: #ffffff !important;
+    padding: 12px 20px;
+    margin: 20px -14mm 14px -14mm;
+    padding-left: 14mm;
+    padding-right: 14mm;
+    font-size: 16pt;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  .section-header .section-num {
+    font-size: 12pt;
+    font-weight: 300;
+    display: block;
+    margin-bottom: 2px;
+    color: #a0c4e8 !important;
+  }
+
+  /* ===== COMPARISON TABLE HIGHLIGHT ===== */
+  .highlight-row-green td {
+    background-color: #f0fff4 !important;
+  }
+
+  .highlight-row-red td {
+    background-color: #fff5f5 !important;
+  }
+
+  /* ===== APPENDIX RESULT TABLE ===== */
+  .result-table tbody tr.row-wrong {
+    background-color: #fff5f5 !important;
+  }
+
+  .result-table tbody tr.row-wrong td {
+    background-color: #fff5f5 !important;
+  }
+
+  /* ===== INLINE MARKERS ===== */
+  .marker-o {
+    color: #38a169 !important;
+    font-weight: 700;
+  }
+
+  .marker-x {
+    color: #e53e3e !important;
+    font-weight: 700;
+  }
+
+  /* ===== SUB SECTION DIVIDER ===== */
+  .sub-divider {
+    border-top: 1px solid #e2e8f0;
+    margin: 24px 0;
+  }
+
+  /* ===== EXPRESSION TABLE (wider first col) ===== */
+  .expression-table td:first-child {
+    white-space: nowrap;
+    font-weight: 700;
+  }
+
+  /* ===== COMPARISON HIGHLIGHT ===== */
+  .compare-table thead th:nth-child(2) {
+    background-color: #2b6cb0 !important;
+  }
+
+  .compare-table thead th:nth-child(3) {
+    background-color: #38a169 !important;
+  }
+
+  /* ===== ANSWER KEY ===== */
+  .answer-key-section {
+    columns: 2;
+    column-gap: 24px;
+  }
+
+  .answer-key-group {
+    page-break-inside: avoid !important;
+    margin-bottom: 14px;
+    padding: 10px 12px;
+    background-color: #f7fafc !important;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    break-inside: avoid;
+  }
+
+  .answer-key-group h4 {
+    font-size: 9.5pt;
+    font-weight: 700;
+    color: #2b6cb0 !important;
+    margin: 0 0 6px 0;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .answer-key-items p {
+    font-size: 8.5pt;
+    line-height: 1.6;
+    margin: 2px 0;
+    color: #2d3748 !important;
+  }
+
+  /* ===== PRINT ADJUSTMENTS ===== */
+  @media print {
+    body {
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+    .cover-page {
+      margin: -16mm -14mm 0 -14mm;
+    }
+    .section-header {
+      margin-left: -14mm;
+      margin-right: -14mm;
+      padding-left: 14mm;
+      padding-right: 14mm;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============================================= -->
+<!-- SECTION 1: 전체 학습 항목 -->
+<!-- ============================================= -->
+<div class="section-header">
+  <span class="section-num">SECTION 1</span>
+  전체 학습 항목
+</div>
+
+<h3>문제 파트 (총 18문제 &rarr; 해설 + 변형문제)</h3>
+
+<table class="avoid-break">
+  <thead>
+    <tr>
+      <th style="width:30px;">#</th>
+      <th style="width:150px;">위치</th>
+      <th>문제</th>
+      <th style="width:160px;">핵심 포인트</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>POINT 3-3 연습 6번</td><td>Let me (explain / to explain)...</td><td>사역동사 let + 동사원형</td></tr>
+    <tr><td>2</td><td>POINT 3-3 연습 8번</td><td>What made you (sleep / to sleep)...</td><td>사역동사 make + 동사원형</td></tr>
+    <tr><td>3</td><td>POINT 2 연습B 3번</td><td>We made Sandra a birthday card &rarr; 3형식</td><td>make &rarr; for</td></tr>
+    <tr><td>4</td><td>실전 30문항 5번</td><td>His biggest fear is failing the exam.</td><td>동명사 (S=C 동호관계)</td></tr>
+    <tr><td>5</td><td>실전 30문항 17번</td><td>We watched the setting sun...</td><td>현재분사 (진행 동작 수식)</td></tr>
+    <tr><td>6</td><td>실전 30문항 19번</td><td>A washing machine needs...</td><td>동명사 (용도/목적)</td></tr>
+    <tr><td>7</td><td>POINT 1-2 기출</td><td>The story sounds a lie.</td><td>감각동사 + like + 명사</td></tr>
+    <tr><td>8</td><td>편입 기출 3번</td><td>She denied ___ anything...</td><td>deny + 동명사</td></tr>
+    <tr><td>9</td><td>편입 기출 4번</td><td>___ from the top, the city looked...</td><td>분사구문 과거분사 Seen</td></tr>
+    <tr><td>10</td><td>편입 기출 8번</td><td>...is committed to ___ air quality</td><td>be committed to + -ing</td></tr>
+    <tr><td>11</td><td>편입 기출 9번</td><td>When it comes to ___ a healthy diet</td><td>when it comes to + -ing</td></tr>
+    <tr><td>12</td><td>편입 기출 10번</td><td>...devoted his career to ___ the effects</td><td>devoted to + -ing</td></tr>
+    <tr><td>13</td><td>POINT 1-1 연습 3번</td><td>The snail moves slowly.</td><td>1형식 (부사는 보어 아님)</td></tr>
+    <tr><td>14</td><td>POINT 1-1 연습 9번</td><td>We must keep quiet in the hallway.</td><td>2형식 (keep + 형용사)</td></tr>
+    <tr><td>15</td><td>POINT 1-1 연습 10번</td><td>An accident happened yesterday.</td><td>1형식 (자동사)</td></tr>
+    <tr><td>16</td><td>POINT 1-1 연습 11번</td><td>Olivia became a ballerina.</td><td>2형식 (became + 명사보어)</td></tr>
+    <tr><td>17</td><td>POINT 1-1 연습 12번</td><td>There are many dishes in the cupboard.</td><td>1형식 (There + be = 존재)</td></tr>
+    <tr><td>18</td><td>POINT 1-1 연습 13번</td><td>The stars will shine brightly tonight.</td><td>1형식 (shine + 부사)</td></tr>
+  </tbody>
+</table>
+
+<h3>설명 파트 (보강)</h3>
+
+<table class="avoid-break">
+  <thead>
+    <tr>
+      <th style="width:30px;">#</th>
+      <th style="width:130px;">위치</th>
+      <th>내용</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>A</strong></td><td>교재 핵심 표현</td><td>to + -ing 표현, be used to vs used to V, -ing 구별 5단계</td></tr>
+    <tr><td><strong>B</strong></td><td>POINT 1-1 &#9733;</td><td>There + be동사 = 1형식</td></tr>
+    <tr><td><strong>C</strong></td><td>POINT 1-1 전체</td><td>1형식 vs 2형식 완전 판별법</td></tr>
+  </tbody>
+</table>
+
+<!-- ============================================= -->
+<!-- SECTION 2: 설명 파트 보강 -->
+<!-- ============================================= -->
+<div class="page-break-before section-header">
+  <span class="section-num">SECTION 2</span>
+  설명 파트 보강
+</div>
+
+<!-- ===== 설명 A ===== -->
+<h2>설명 A: -ing 핵심 정리</h2>
+
+<h3>(1) "to"가 전치사인 표현 &rarr; 뒤에 반드시 -ing</h3>
+
+<div class="tip-box">
+  <span class="tip-label">핵심 판별법</span>
+  "to" 뒤에 <strong>명사</strong>를 넣어 봐라. 자연스러우면 전치사 to &rarr; <strong>-ing</strong><br>
+  &bull; "I look forward to <strong>the party</strong>" (자연스러움) &rarr; 전치사 to &rarr; -ing<br>
+  &bull; "I want to <strong>the party</strong>" (부자연스러움) &rarr; to부정사 &rarr; 동사원형
+</div>
+
+<table class="expression-table avoid-break">
+  <thead>
+    <tr>
+      <th>표현</th>
+      <th>의미</th>
+      <th>예문</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>be used to</strong> -ing</td><td>~에 익숙하다</td><td>I am used to <strong>waking</strong> up early.</td></tr>
+    <tr><td><strong>look forward to</strong> -ing</td><td>~를 기대하다</td><td>I look forward to <strong>seeing</strong> you.</td></tr>
+    <tr><td><strong>be committed to</strong> -ing</td><td>~에 전념하다</td><td>He is committed to <strong>reducing</strong> waste.</td></tr>
+    <tr><td><strong>be devoted to</strong> -ing</td><td>~에 헌신하다</td><td>She is devoted to <strong>teaching</strong> kids.</td></tr>
+    <tr><td><strong>when it comes to</strong> -ing</td><td>~에 관해서는</td><td>When it comes to <strong>cooking</strong>, she's the best.</td></tr>
+    <tr><td><strong>be subject to</strong> -ing</td><td>~의 대상이 되다</td><td>The plan is subject to <strong>changing</strong>.</td></tr>
+    <tr><td><strong>be opposed to</strong> -ing</td><td>~에 반대하다</td><td>They are opposed to <strong>building</strong> a dam.</td></tr>
+    <tr><td><strong>be prone to</strong> -ing</td><td>~하는 경향이 있다</td><td>He is prone to <strong>making</strong> mistakes.</td></tr>
+    <tr><td><strong>be reduced to</strong> -ing</td><td>~하는 지경에 이르다</td><td>She was reduced to <strong>begging</strong>.</td></tr>
+    <tr><td><strong>be limited to</strong> -ing</td><td>~에 한정되다</td><td>Access is limited to <strong>entering</strong> the lobby.</td></tr>
+    <tr><td><strong>lead to</strong> -ing</td><td>~을 초래하다</td><td>Stress can lead to <strong>overeating</strong>.</td></tr>
+    <tr><td><strong>resort to</strong> -ing</td><td>~에 의지하다</td><td>He resorted to <strong>borrowing</strong> money.</td></tr>
+    <tr><td><strong>confess to</strong> -ing</td><td>~을 고백하다</td><td>She confessed to <strong>stealing</strong> the ring.</td></tr>
+    <tr><td><strong>adjust to</strong> -ing</td><td>~에 적응하다</td><td>I adjusted to <strong>living</strong> alone.</td></tr>
+    <tr><td><strong>take to</strong> -ing</td><td>~하기 시작하다</td><td>She took to <strong>jogging</strong> every morning.</td></tr>
+    <tr><td><strong>get around to</strong> -ing</td><td>시간을 내어 ~하다</td><td>I'll get around to <strong>fixing</strong> it.</td></tr>
+    <tr><td><strong>prefer A to</strong> -ing</td><td>~보다 선호하다</td><td>I prefer reading to <strong>watching</strong> TV.</td></tr>
+    <tr><td><strong>with a view to</strong> -ing</td><td>~할 목적으로</td><td>He studied with a view to <strong>passing</strong> the exam.</td></tr>
+    <tr><td><strong>in addition to</strong> -ing</td><td>~에 더하여</td><td>In addition to <strong>studying</strong>, she works.</td></tr>
+    <tr><td><strong>object to</strong> -ing</td><td>~에 반대하다</td><td>I object to <strong>being</strong> treated unfairly.</td></tr>
+  </tbody>
+</table>
+
+<div class="sub-divider"></div>
+
+<!-- (2) be used to vs used to V -->
+<h3>(2) be used to -ing vs. used to V</h3>
+
+<table class="avoid-break">
+  <thead>
+    <tr>
+      <th>구분</th>
+      <th>be used to -ing</th>
+      <th>used to + V</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>의미</strong></td><td>~하는 것에 <strong>익숙하다</strong></td><td>(과거에) ~하곤 <strong>했다</strong></td></tr>
+    <tr><td><strong>시제</strong></td><td>현재/과거 모두 가능</td><td><strong>과거만</strong> 가능</td></tr>
+    <tr><td><strong>to</strong></td><td><strong>전치사</strong> &rarr; -ing</td><td><strong>to부정사</strong> &rarr; 동사원형</td></tr>
+    <tr><td><strong>예문</strong></td><td>I <strong>am used to</strong> getting up early.</td><td>I <strong>used to</strong> get up early.</td></tr>
+    <tr><td><strong>해석</strong></td><td>일찍 일어나는 것에 익숙하다</td><td>일찍 일어나곤 했다 (지금은 아님)</td></tr>
+  </tbody>
+</table>
+
+<p><strong>추가</strong>: <strong>get used to -ing</strong> = ~에 익숙해지다 (변화 과정)</p>
+
+<div class="grammar-block">(<span class="marker-x">X</span>) I used to waking up early.        &rarr; used to + 동사원형이므로 wake
+(<span class="marker-x">X</span>) I am used to wake up early.       &rarr; be used to + -ing이므로 waking
+(<span class="marker-o">O</span>) I used to wake up early.          &rarr; 과거 습관
+(<span class="marker-o">O</span>) I am used to waking up early.     &rarr; 현재 익숙함</div>
+
+<div class="sub-divider"></div>
+
+<!-- (3) -ing 구별 5단계 -->
+<h3>(3) -ing 구별 5단계 (동명사 vs 현재분사)</h3>
+
+<div class="flowchart">
+  <div class="flow-step">
+    <span class="step-label">1단계</span> 주어 자리? &rarr; <strong>동명사</strong>
+    <div class="step-sub">예: <em>Swimming</em> is fun.</div>
+  </div>
+  <div class="flow-arrow">&darr;</div>
+  <div class="flow-step">
+    <span class="step-label">2단계</span> 타동사/전치사의 목적어? &rarr; <strong>동명사</strong>
+    <div class="step-sub">예: I enjoy <em>traveling</em>. / good at <em>solving</em></div>
+  </div>
+  <div class="flow-arrow">&darr;</div>
+  <div class="flow-step">
+    <span class="step-label">3단계</span> be동사 뒤 보어?
+    <div class="step-sub">
+      &bull; S = C 동호관계 &rarr; <strong>동명사</strong> &nbsp;(His hobby is <em>painting</em>.)<br>
+      &bull; S의 성질/감정 &rarr; <strong>현재분사</strong> &nbsp;(The movie was <em>boring</em>.)<br>
+      &bull; 진행형 &rarr; <strong>현재분사</strong> &nbsp;(She is <em>running</em>.)
+    </div>
+  </div>
+  <div class="flow-arrow">&darr;</div>
+  <div class="flow-step">
+    <span class="step-label">4단계</span> 명사 수식?
+    <div class="step-sub">
+      &bull; 용도/목적 &rarr; <strong>동명사</strong> &nbsp;(a <em>washing</em> machine = 세탁용)<br>
+      &bull; 진행 동작 &rarr; <strong>현재분사</strong> &nbsp;(the <em>setting</em> sun = 지고 있는)<br>
+      &#8251; <strong>"명사가 실제로 그 동작을 하는가?"</strong> YES &rarr; 현재분사, NO &rarr; 동명사
+    </div>
+  </div>
+  <div class="flow-arrow">&darr;</div>
+  <div class="flow-step">
+    <span class="step-label">5단계</span> 지각/사역동사 + O + -ing / 분사구문 &rarr; <strong>현재분사</strong>
+    <div class="step-sub">예: I saw him <em>running</em>. / <em>Walking</em> through the park, she found...</div>
+  </div>
+</div>
+
+<h4>4단계 핵심 비교표 (실전 17번, 19번에서 틀린 포인트)</h4>
+
+<table class="avoid-break">
+  <thead>
+    <tr>
+      <th>-ing + 명사</th>
+      <th>해석</th>
+      <th>구분</th>
+      <th>이유</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>a <strong>washing</strong> machine</td><td>세탁<strong>용</strong> 기계</td><td><strong>동명사</strong></td><td>기계가 세탁하고 있지 않음</td></tr>
+    <tr><td>a <strong>sleeping</strong> bag</td><td>잠자<strong>기 위한</strong> 가방</td><td><strong>동명사</strong></td><td>가방이 자고 있지 않음</td></tr>
+    <tr><td>a <strong>parking</strong> lot</td><td>주차<strong>용</strong> 공간</td><td><strong>동명사</strong></td><td>공간이 주차하고 있지 않음</td></tr>
+    <tr><td>the <strong>setting</strong> sun</td><td>지<strong>고 있는</strong> 태양</td><td><strong>현재분사</strong></td><td>태양이 실제로 지고 있음</td></tr>
+    <tr><td>the <strong>rising</strong> sun</td><td>떠오르<strong>고 있는</strong> 태양</td><td><strong>현재분사</strong></td><td>태양이 실제로 떠오르고 있음</td></tr>
+    <tr><td>a <strong>crying</strong> baby</td><td>울<strong>고 있는</strong> 아기</td><td><strong>현재분사</strong></td><td>아기가 실제로 울고 있음</td></tr>
+    <tr><td><strong>boiling</strong> water</td><td>끓<strong>고 있는</strong> 물</td><td><strong>현재분사</strong></td><td>물이 실제로 끓고 있음</td></tr>
+  </tbody>
+</table>
+
+<!-- ===== 설명 B ===== -->
+<h2>설명 B: There + be동사 = 1형식</h2>
+
+<div class="question-box">
+  <p><strong>"There are many dishes in the cupboard."</strong> 분석:</p>
+</div>
+
+<p>&bull; There = <strong>유도부사</strong> (주어가 아님!)<br>
+&bull; 진짜 주어 = many dishes<br>
+&bull; are = <strong>"있다"</strong> (존재) &rarr; 1형식<br>
+&bull; in the cupboard = 수식어(부사구)</p>
+
+<table class="avoid-break">
+  <thead>
+    <tr>
+      <th>be동사의 의미</th>
+      <th>형식</th>
+      <th>예문</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>"있다" (존재)</strong></td><td><strong>1형식</strong></td><td>There <strong>is</strong> a cat on the roof.</td></tr>
+    <tr><td><strong>"~이다" (상태)</strong></td><td><strong>2형식</strong></td><td>The cat <strong>is</strong> cute.</td></tr>
+  </tbody>
+</table>
+
+<div class="sub-divider"></div>
+
+<!-- ===== 설명 C ===== -->
+<h2>설명 C: 1형식 vs 2형식 완전 판별법</h2>
+
+<div class="tip-box">
+  <span class="tip-label">TIP</span>
+  POINT 1-1 연습문제 3, 9, 10, 11, 12, 13번에서 집중적으로 틀린 포인트
+</div>
+
+<h3>핵심 구분</h3>
+
+<table class="avoid-break">
+  <thead>
+    <tr>
+      <th></th>
+      <th>1형식</th>
+      <th>2형식</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>구조</strong></td><td>S + V (+수식어)</td><td>S + V + <strong>주격보어(C)</strong></td></tr>
+    <tr><td><strong>동사</strong></td><td>완전자동사</td><td><strong>연결동사</strong></td></tr>
+    <tr><td><strong>보어</strong></td><td>없음 (수식어만)</td><td>명사 또는 형용사</td></tr>
+    <tr><td><strong>판별</strong></td><td>동사 뒤를 빼도 문장 성립</td><td>보어를 빼면 문장 불완전</td></tr>
+  </tbody>
+</table>
+
+<h3>연결동사 (2형식 동사) 목록</h3>
+
+<table class="avoid-break">
+  <thead>
+    <tr>
+      <th>유형</th>
+      <th>동사</th>
+      <th>의미</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>상태 유지</td><td><strong>be, stay, keep, remain</strong></td><td>~이다, ~인 채로 있다</td></tr>
+    <tr><td>상태 변화</td><td><strong>become, get, turn, grow, go</strong></td><td>~이 되다, ~해지다</td></tr>
+    <tr><td>감각</td><td><strong>look, sound, smell, taste, feel</strong></td><td>~처럼 보이다/들리다/...</td></tr>
+  </tbody>
+</table>
+
+<h3>판별 3단계</h3>
+
+<div class="flowchart">
+  <div class="flow-step">
+    <span class="step-label">1단계</span> 동사가 연결동사 목록에 있는가?
+    <div class="step-sub">
+      &rarr; <strong>NO</strong> &rarr; 1형식 (또는 3형식 이상)<br>
+      &rarr; <strong>YES</strong> &rarr; 2단계로
+    </div>
+  </div>
+  <div class="flow-arrow">&darr;</div>
+  <div class="flow-step">
+    <span class="step-label">2단계</span> 동사 뒤에 형용사 또는 명사(보어)가 있는가?
+    <div class="step-sub">
+      &rarr; <strong>YES</strong> &rarr; 2형식<br>
+      &rarr; <strong>NO</strong> (부사/전치사구만 있음) &rarr; 1형식
+    </div>
+  </div>
+  <div class="flow-arrow">&darr;</div>
+  <div class="flow-step">
+    <span class="step-label">3단계</span> 보어를 빼면 의미가 불완전한가?
+    <div class="step-sub">
+      &rarr; <strong>YES</strong> &rarr; 2형식 확정<br>
+      &rarr; <strong>NO</strong> &rarr; 1형식
+    </div>
+  </div>
+</div>
+
+<h3>혼동하기 쉬운 경우 &mdash; 완전 정리</h3>
+
+<table class="avoid-break">
+  <thead>
+    <tr>
+      <th>문장</th>
+      <th>형식</th>
+      <th>판별 근거</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>The snail moves <strong>slowly</strong>.</td><td><strong>1형식</strong></td><td>slowly = <strong>부사</strong> (보어 아님). move = 자동사</td></tr>
+    <tr><td>The sky grew <strong>dark</strong>.</td><td><strong>2형식</strong></td><td>dark = <strong>형용사</strong>(보어). grew = 연결동사 "~해지다"</td></tr>
+    <tr><td>We must keep <strong>quiet</strong>.</td><td><strong>2형식</strong></td><td>quiet = <strong>형용사</strong>(보어). keep = 연결동사</td></tr>
+    <tr><td>An accident <strong>happened</strong> yesterday.</td><td><strong>1형식</strong></td><td>happened = 자동사. yesterday = 부사(수식어)</td></tr>
+    <tr><td>Olivia became <strong>a ballerina</strong>.</td><td><strong>2형식</strong></td><td>a ballerina = <strong>명사</strong>(보어). became = 연결동사</td></tr>
+    <tr><td>There <strong>are</strong> many dishes.</td><td><strong>1형식</strong></td><td>are = "있다"(존재). There = 유도부사</td></tr>
+    <tr><td>The stars will <strong>shine</strong> brightly.</td><td><strong>1형식</strong></td><td>brightly = <strong>부사</strong> (보어 아님). shine = 자동사</td></tr>
+  </tbody>
+</table>
+
+<div class="warning-box">
+  <span class="warning-label">핵심 함정: 부사 vs 형용사</span>
+  <strong>slowly, brightly, quietly</strong> = <strong>부사</strong> &rarr; 수식어 &rarr; <strong>1형식</strong><br>
+  <strong>slow, bright, quiet</strong> = <strong>형용사</strong> &rarr; 보어 가능 &rarr; <strong>2형식</strong><br><br>
+  예: "He moved <strong>slowly</strong>." (1형식) vs "He remained <strong>slow</strong>." (2형식)
+</div>
+
+<!-- ============================================= -->
+<!-- SECTION 3: 문제 파트 해설 + 변형문제 -->
+<!-- ============================================= -->
+<div class="page-break-before section-header">
+  <span class="section-num">SECTION 3</span>
+  문제 파트 해설 + 변형문제
+</div>
+
+<!-- ===== 문제 1 ===== -->
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">1</div>
+    <div class="problem-title">사역동사 let</div>
+  </div>
+  <div class="problem-source">POINT 3-3 연습문제 6번</div>
+
+  <div class="question-box">
+    <p><strong>Let me (explain / to explain) the rules of this game.</strong></p>
+  </div>
+
+  <div class="answer-box">
+    <p>정답: <strong>explain</strong></p>
+  </div>
+
+  <h4>해설</h4>
+  <p>&bull; <strong>let</strong>은 사역동사 &rarr; 목적격 보어로 <strong>동사원형</strong>만 가능<br>
+  &bull; "Let me explain" <span class="marker-o">&#10004;</span> &nbsp;/&nbsp; "Let me to explain" <span class="marker-x">&#10008;</span></p>
+
+  <table>
+    <thead>
+      <tr><th>동사</th><th>보어 형태</th><th>예문</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>let</td><td><strong>동사원형</strong></td><td>Let me <strong>explain</strong>.</td></tr>
+      <tr><td>make</td><td><strong>동사원형</strong></td><td>She made me <strong>clean</strong>.</td></tr>
+      <tr><td>have</td><td><strong>동사원형</strong></td><td>I had him <strong>fix</strong> it.</td></tr>
+      <tr><td>allow</td><td><strong>to부정사</strong></td><td>Allow me <strong>to explain</strong>.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="variant-section">
+    <h4>변형문제</h4>
+    <div class="variant-item">
+      <div class="variant-q"><strong>1.</strong> My parents didn't let me (stay / to stay) out late.</div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>2.</strong> The teacher let the students (choose / to choose) their own topics.</div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>3.</strong> Please let me (know / to know) if you need any help.</div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>4.</strong> They wouldn't let anyone (enter / to enter) the building after 10 p.m.</div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>5.</strong> 다음 중 어법상 올바른 문장은?</div>
+      <div class="variant-choices">
+        &#9312; She let him to borrow her pen.<br>
+        &#9313; She allowed him borrow her pen.<br>
+        &#9314; She let him borrow her pen.<br>
+        &#9315; She let him borrowing her pen.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 문제 2 ===== -->
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">2</div>
+    <div class="problem-title">사역동사 make</div>
+  </div>
+  <div class="problem-source">POINT 3-3 연습문제 8번</div>
+
+  <div class="question-box">
+    <p><strong>What made you (sleep / to sleep) so late yesterday?</strong></p>
+  </div>
+
+  <div class="answer-box">
+    <p>정답: <strong>sleep</strong></p>
+  </div>
+
+  <h4>해설</h4>
+  <p>&bull; <strong>make</strong> = 사역동사 &rarr; <strong>동사원형</strong><br>
+  &bull; 단, <strong>수동태</strong>에서는 <strong>to부정사</strong>: "I was made <strong>to sleep</strong> early."</p>
+
+  <table>
+    <thead>
+      <tr><th>태</th><th>구조</th><th>예문</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>능동</td><td>make + O + <strong>동사원형</strong></td><td>The noise <strong>made</strong> me <strong>wake</strong> up.</td></tr>
+      <tr><td>수동</td><td>be made + <strong>to V</strong></td><td>I <strong>was made to wake</strong> up.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="variant-section">
+    <h4>변형문제</h4>
+    <div class="variant-item">
+      <div class="variant-q"><strong>1.</strong> The sad movie made her (cry / to cry).</div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>2.</strong> What makes this restaurant (stand / to stand) out?</div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>3.</strong> The rain made us (cancel / to cancel) the event.</div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>4.</strong> 다음 중 어법상 <strong>틀린</strong> 것은?</div>
+      <div class="variant-choices">
+        &#9312; The teacher made the students study harder.<br>
+        &#9313; The cold weather made him to wear a coat.<br>
+        &#9314; She made me wait for two hours.<br>
+        &#9315; The joke made everyone laugh.
+      </div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>5.</strong> He was made _______ the report again by his boss.</div>
+      <div class="variant-choices">
+        &#9312; rewrite &nbsp; &#9313; to rewrite &nbsp; &#9314; rewriting &nbsp; &#9315; rewrote
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 문제 3 ===== -->
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">3</div>
+    <div class="problem-title">4형식 &rarr; 3형식 전환</div>
+  </div>
+  <div class="problem-source">POINT 2 연습문제 B 3번</div>
+
+  <div class="question-box">
+    <p><strong>We made Sandra a birthday card.</strong> &rarr; 3형식으로 전환</p>
+  </div>
+
+  <div class="answer-box">
+    <p>정답: <strong>We made a birthday card for Sandra.</strong></p>
+  </div>
+
+  <h4>해설</h4>
+  <p>&bull; make는 <strong>for</strong>를 쓰는 동사 (buy, cook, find, make, get, build)<br>
+  &bull; "전달" 느낌 &rarr; <strong>to</strong> (give, send, bring, pass, show, teach, tell)<br>
+  &bull; "대신/위해" 느낌 &rarr; <strong>for</strong> (make, buy, cook, find, get, build)</p>
+
+  <div class="variant-section">
+    <h4>변형문제</h4>
+    <div class="variant-item">
+      <div class="variant-q"><strong>1.</strong> She bought her son a new backpack. &rarr; 3형식</div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>2.</strong> The chef cooked us a special meal. &rarr; 3형식</div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>3.</strong> He found me a good seat. &rarr; 3형식</div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>4.</strong> "My father built a treehouse _____ my brother."</div>
+      <div class="variant-choices">
+        &#9312; to &nbsp; &#9313; for &nbsp; &#9314; of &nbsp; &#9315; at
+      </div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>5.</strong> 다음 중 3형식 전환이 올바른 것은?</div>
+      <div class="variant-choices">
+        &#9312; She gave a book for me.<br>
+        &#9313; He made a cake to his wife.<br>
+        &#9314; I sent a letter to my friend.<br>
+        &#9315; Mom cooked a meal to us.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 문제 4 ===== -->
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">4</div>
+    <div class="problem-title">failing 동명사</div>
+  </div>
+  <div class="problem-source">실전 30문항 5번</div>
+
+  <div class="question-box">
+    <p><strong>His biggest fear is failing the exam.</strong> &rarr; failing: 동명사 or 현재분사?</p>
+  </div>
+
+  <div class="answer-box">
+    <p>정답: <strong>동명사</strong></p>
+  </div>
+
+  <h4>해설</h4>
+  <p>&bull; 주어(fear) = 보어(failing) &rarr; <strong>동호관계</strong> &rarr; 동명사<br>
+  &bull; "두려움 = 떨어지는 것" &rarr; 같은 대상</p>
+
+  <table>
+    <thead>
+      <tr><th>관계</th><th>결과</th><th>예문</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>S = C (동호관계)</td><td>&rarr; <strong>동명사</strong></td><td>His fear is <strong>failing</strong>.</td></tr>
+      <tr><td>S의 성질/감정 설명</td><td>&rarr; <strong>현재분사</strong></td><td>The movie is <strong>boring</strong>.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="variant-section">
+    <h4>변형문제</h4>
+    <div class="variant-item">
+      <div class="variant-q"><strong>1.</strong> My favorite activity is hiking in the mountains. &rarr; hiking은?</div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>2.</strong> The news was surprising to everyone. &rarr; surprising은?</div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>3.</strong> Her dream is becoming a doctor. &rarr; becoming은?</div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>4.</strong> The children were playing in the yard. &rarr; playing은?</div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>5.</strong> One important task is checking all the data. &rarr; checking은?</div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 문제 5 ===== -->
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">5</div>
+    <div class="problem-title">setting 현재분사</div>
+  </div>
+  <div class="problem-source">실전 30문항 17번</div>
+
+  <div class="question-box">
+    <p><strong>We watched the setting sun from the rooftop.</strong> &rarr; setting: 동명사 or 현재분사?</p>
+  </div>
+
+  <div class="answer-box">
+    <p>정답: <strong>현재분사</strong></p>
+  </div>
+
+  <h4>해설</h4>
+  <p>&bull; "the <strong>setting</strong> sun" = 지<strong>고 있는</strong> 태양<br>
+  &bull; <strong>태양이 실제로 지고 있다</strong> &rarr; 진행 동작 &rarr; 현재분사<br>
+  &bull; cf. "a <strong>washing</strong> machine" = 세탁<strong>용</strong> 기계 &rarr; 기계가 세탁하고 있지 않음 &rarr; 동명사</p>
+
+  <div class="tip-box">
+    <span class="tip-label">핵심</span>
+    "명사가 실제로 그 동작을 하고 있는가?" <strong>YES &rarr; 현재분사 / NO &rarr; 동명사</strong>
+  </div>
+
+  <div class="variant-section">
+    <h4>변형문제</h4>
+    <div class="variant-item">
+      <div class="variant-q"><strong>1.</strong> The falling leaves covered the ground. &rarr; falling은?</div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>2.</strong> She stared at the burning candle. &rarr; burning은?</div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>3.</strong> We need a cutting board. &rarr; cutting은?</div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>4.</strong> The barking dog scared the children. &rarr; barking은?</div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>5.</strong> 밑줄 친 -ing가 <strong>동명사</strong>인 것은?</div>
+      <div class="variant-choices">
+        &#9312; the rising tide &nbsp; &#9313; a running track &nbsp; &#9314; the shining stars &nbsp; &#9315; a flying bird
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 문제 6 ===== -->
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">6</div>
+    <div class="problem-title">washing 동명사</div>
+  </div>
+  <div class="problem-source">실전 30문항 19번</div>
+
+  <div class="question-box">
+    <p><strong>A washing machine needs to be repaired.</strong> &rarr; washing: 동명사 or 현재분사?</p>
+  </div>
+
+  <div class="answer-box">
+    <p>정답: <strong>동명사</strong></p>
+  </div>
+
+  <h4>해설</h4>
+  <p>&bull; "washing machine" = 세탁<strong>용</strong> 기계<br>
+  &bull; 기계가 세탁하고 있지 않음 &rarr; <strong>용도</strong> &rarr; 동명사<br>
+  &bull; = a machine <strong>for</strong> washing</p>
+
+  <table>
+    <thead>
+      <tr><th>동명사 (용도)</th><th>현재분사 (동작)</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>a sleeping <strong>bag</strong> (잠자기 위한)</td><td>a sleeping <strong>baby</strong> (자고 있는)</td></tr>
+      <tr><td>a swimming <strong>pool</strong> (수영용)</td><td>a swimming <strong>duck</strong> (수영하는)</td></tr>
+      <tr><td>drinking <strong>water</strong> (마시기 위한)</td><td>a drinking <strong>man</strong> (마시고 있는)</td></tr>
+    </tbody>
+  </table>
+
+  <div class="variant-section">
+    <h4>변형문제</h4>
+    <div class="variant-item">
+      <div class="variant-q"><strong>1.</strong> I bought a new sewing machine. &rarr; sewing은?</div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>2.</strong> The melting ice cream dripped. &rarr; melting은?</div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>3.</strong> We stayed at a camping site. &rarr; camping은?</div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>4.</strong> She put the baby in the rocking chair. &rarr; rocking은?</div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>5.</strong> 밑줄 친 -ing가 <strong>현재분사</strong>인 것은?</div>
+      <div class="variant-choices">
+        &#9312; a dining table &nbsp; &#9313; a writing desk &nbsp; &#9314; a dancing girl &nbsp; &#9315; a swimming pool
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 문제 7 ===== -->
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">7</div>
+    <div class="problem-title">sounds like</div>
+  </div>
+  <div class="problem-source">POINT 1-2 기출 적중문제</div>
+
+  <div class="question-box">
+    <p><strong>The story sounds a lie.</strong> &rarr; 틀린 부분을 고치시오.</p>
+  </div>
+
+  <div class="answer-box">
+    <p>정답: <strong>The story sounds like a lie.</strong></p>
+  </div>
+
+  <h4>해설</h4>
+  <p>&bull; 감각동사 뒤에 <strong>명사</strong> &rarr; 반드시 <strong>like + 명사</strong><br>
+  &bull; 감각동사 뒤에 <strong>형용사</strong> &rarr; 바로 가능</p>
+
+  <div class="grammar-block">감각동사 + 형용사      &rarr; OK  (It sounds strange.)
+감각동사 + like + 명사  &rarr; OK  (It sounds like a lie.)
+감각동사 + 명사        &rarr; <span class="marker-x">NO</span>  (It sounds a lie. <span class="marker-x">&#10008;</span>)
+감각동사 + 부사        &rarr; <span class="marker-x">NO</span>  (It sounds strangely. <span class="marker-x">&#10008;</span>)</div>
+
+  <div class="variant-section">
+    <h4>변형문제</h4>
+    <div class="variant-item">
+      <div class="variant-q"><strong>1.</strong> 고치시오: "This soup tastes salt."</div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>2.</strong> 올바른 문장은?</div>
+      <div class="variant-choices">
+        &#9312; The flower smells sweetly.<br>
+        &#9313; The flower smells sweet.<br>
+        &#9314; The flower smells like sweetly.<br>
+        &#9315; The flower smells as sweet.
+      </div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>3.</strong> "Her voice sounds _______ an angel."</div>
+      <div class="variant-choices">
+        &#9312; as &nbsp; &#9313; like &nbsp; &#9314; alike &nbsp; &#9315; likely
+      </div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>4.</strong> 고치시오: "The fabric feels like smooth."</div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>5.</strong> 어법상 틀린 것을 <strong>모두</strong> 고르시오.</div>
+      <div class="variant-choices">
+        &#9312; He looks happily today.<br>
+        &#9313; The milk smells like cheese.<br>
+        &#9314; This cake tastes like delicious.<br>
+        &#9315; The idea sounds great.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 문제 8 ===== -->
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">8</div>
+    <div class="problem-title">deny + 동명사</div>
+  </div>
+  <div class="problem-source">편입 기출 3번</div>
+
+  <div class="question-box">
+    <p><strong>She denied _______ anything about the missing documents.</strong><br>
+    (A) know &nbsp; (B) to know &nbsp; (C) knowing &nbsp; (D) known</p>
+  </div>
+
+  <div class="answer-box">
+    <p>정답: <strong>(C) knowing</strong></p>
+  </div>
+
+  <h4>해설</h4>
+  <p>&bull; <strong>deny</strong>는 <strong>동명사만</strong> 목적어로 취하는 동사 &rarr; deny + V-ing<br>
+  &bull; "She denied <strong>knowing</strong> anything" = 그녀는 아무것도 모른다고 부인했다<br>
+  &bull; deny + to know (<span class="marker-x">&#10008;</span>) &mdash; to부정사 불가!</p>
+
+  <p><strong>동명사만 목적어로 취하는 동사</strong> (시험 필수 암기):</p>
+
+  <table>
+    <thead>
+      <tr><th>동사</th><th>의미</th><th>예문</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>enjoy</strong></td><td>즐기다</td><td>I enjoy <strong>swimming</strong>.</td></tr>
+      <tr><td><strong>mind</strong></td><td>꺼리다</td><td>Do you mind <strong>waiting</strong>?</td></tr>
+      <tr><td><strong>deny</strong></td><td>부인하다</td><td>He denied <strong>stealing</strong> the money.</td></tr>
+      <tr><td><strong>finish</strong></td><td>끝내다</td><td>She finished <strong>writing</strong> the report.</td></tr>
+      <tr><td><strong>avoid</strong></td><td>피하다</td><td>He avoids <strong>making</strong> eye contact.</td></tr>
+      <tr><td><strong>give up</strong></td><td>포기하다</td><td>She gave up <strong>trying</strong>.</td></tr>
+      <tr><td><strong>keep</strong></td><td>계속하다</td><td>He kept <strong>talking</strong>.</td></tr>
+      <tr><td><strong>suggest</strong></td><td>제안하다</td><td>I suggest <strong>leaving</strong> early.</td></tr>
+      <tr><td><strong>consider</strong></td><td>고려하다</td><td>Have you considered <strong>moving</strong>?</td></tr>
+      <tr><td><strong>practice</strong></td><td>연습하다</td><td>She practices <strong>playing</strong> the piano.</td></tr>
+      <tr><td><strong>postpone</strong></td><td>연기하다</td><td>They postponed <strong>launching</strong> the product.</td></tr>
+      <tr><td><strong>quit</strong></td><td>그만두다</td><td>He quit <strong>smoking</strong>.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="tip-box">
+    <span class="tip-label">암기 TIP</span>
+    <strong>"mega" + 더</strong> = mind, enjoy, give up, avoid + deny, finish, keep, suggest, consider...
+  </div>
+
+  <div class="variant-section">
+    <h4>변형문제</h4>
+    <div class="variant-item">
+      <div class="variant-q"><strong>1.</strong> The suspect denied (to commit / committing) the crime.</div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>2.</strong> She enjoys (to read / reading) novels before bed.</div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>3.</strong> Would you mind (to open / opening) the window?</div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>4.</strong> He avoids (to eat / eating) junk food.</div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>5.</strong> 다음 중 어법상 올바른 문장은?</div>
+      <div class="variant-choices">
+        &#9312; She denied to take the money.<br>
+        &#9313; He finished to write the report.<br>
+        &#9314; They considered moving to a new city.<br>
+        &#9315; I suggest to leave early.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 문제 9 ===== -->
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">9</div>
+    <div class="problem-title">분사구문 과거분사 Seen</div>
+  </div>
+  <div class="problem-source">편입 기출 4번</div>
+
+  <div class="question-box">
+    <p><strong>_______ from the top of the mountain, the city looked breathtaking.</strong><br>
+    (A) See &nbsp; (B) Seeing &nbsp; (C) Seen &nbsp; (D) Having seeing</p>
+  </div>
+
+  <div class="answer-box">
+    <p>정답: <strong>(C) Seen</strong></p>
+  </div>
+
+  <h4>해설</h4>
+  <p>&bull; 이것은 <strong>분사구문</strong>이다.<br>
+  &bull; 주절의 주어 = <strong>the city</strong> (도시)<br>
+  &bull; 도시는 "보는" 주체가 아니라 "<strong>보여지는</strong>" 대상 &rarr; <strong>수동</strong> 관계<br>
+  &bull; 수동 &rarr; <strong>과거분사(Seen)</strong> 사용</p>
+
+  <div class="tip-box">
+    <span class="tip-label">핵심</span>
+    분사구문에서 주어와 분사의 관계가 <strong>능동</strong>이면 <strong>현재분사(-ing)</strong>, <strong>수동</strong>이면 <strong>과거분사(p.p.)</strong>
+  </div>
+
+  <table>
+    <thead>
+      <tr><th>관계</th><th>분사</th><th>예문</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>능동</strong> (주어가 동작 수행)</td><td><strong>현재분사</strong></td><td><strong>Walking</strong> through the park, <strong>she</strong> found a wallet.</td></tr>
+      <tr><td><strong>수동</strong> (주어가 동작 당함)</td><td><strong>과거분사</strong></td><td><strong>Seen</strong> from the top, <strong>the city</strong> looked beautiful.</td></tr>
+    </tbody>
+  </table>
+
+  <p><strong>왜 (B) Seeing이 아닌가?</strong><br>
+  &bull; Seeing이면: "도시가 보고 있는" (능동) &rarr; 도시는 눈이 없으므로 볼 수 없다!<br>
+  &bull; Seen이면: "도시가 보여지는" (수동) &rarr; 산꼭대기에서 도시가 보여짐 <span class="marker-o">&#10004;</span></p>
+
+  <div class="variant-section">
+    <h4>변형문제</h4>
+    <div class="variant-item">
+      <div class="variant-q"><strong>1.</strong> _______ in simple English, the book is easy to understand.</div>
+      <div class="variant-choices">
+        (A) Writing &nbsp; (B) Written &nbsp; (C) To write &nbsp; (D) Having writing
+      </div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>2.</strong> _______ by the beautiful scenery, she took many photos.</div>
+      <div class="variant-choices">
+        (A) Impressing &nbsp; (B) Impressed &nbsp; (C) To impress &nbsp; (D) Having impressing
+      </div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>3.</strong> _______ hard for months, he finally passed the exam.</div>
+      <div class="variant-choices">
+        (A) Study &nbsp; (B) Studied &nbsp; (C) Having studied &nbsp; (D) Having been studied
+      </div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>4.</strong> _______ from a distance, the mountain looks small.</div>
+      <div class="variant-choices">
+        (A) Seeing &nbsp; (B) Seen &nbsp; (C) To see &nbsp; (D) Having seen
+      </div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>5.</strong> _______ with care, this machine will last for years.</div>
+      <div class="variant-choices">
+        (A) Using &nbsp; (B) Used &nbsp; (C) To use &nbsp; (D) Having using
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 문제 10 ===== -->
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">10</div>
+    <div class="problem-title">전치사 to + -ing 통합</div>
+  </div>
+  <div class="problem-source">편입 기출 8, 9, 10번</div>
+
+  <div class="question-box">
+    <p><strong>8.</strong> The government is committed to _____ air quality in urban areas.<br>
+    &rarr; (A) improve &nbsp; <strong>(B) improving</strong> &nbsp; (C) improved &nbsp; (D) improvement</p>
+    <p><strong>9.</strong> When it comes to _____ a healthy diet, many people find it challenging.<br>
+    &rarr; (A) maintain &nbsp; <strong>(B) maintaining</strong> &nbsp; (C) maintained &nbsp; (D) be maintained</p>
+    <p><strong>10.</strong> The professor devoted his entire career to _____ the effects of climate change.<br>
+    &rarr; (A) study &nbsp; <strong>(B) studying</strong> &nbsp; (C) studied &nbsp; (D) have studied</p>
+  </div>
+
+  <div class="answer-box">
+    <p>정답: 모두 <strong>(B) -ing형</strong></p>
+  </div>
+
+  <h4>해설</h4>
+  <p>세 문제 모두 <strong>같은 문법 포인트</strong>: "to"가 <strong>전치사</strong>이므로 뒤에 <strong>동명사(-ing)</strong>가 온다.</p>
+
+  <table>
+    <thead>
+      <tr><th>문제</th><th>표현</th><th>to의 정체</th><th>이유</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>8번</td><td><strong>be committed to</strong></td><td>전치사</td><td>~에 전념하다 &rarr; to + -ing</td></tr>
+      <tr><td>9번</td><td><strong>when it comes to</strong></td><td>전치사</td><td>~에 관해서는 &rarr; to + -ing</td></tr>
+      <tr><td>10번</td><td><strong>devote ... to</strong></td><td>전치사</td><td>~에 헌신하다 &rarr; to + -ing</td></tr>
+    </tbody>
+  </table>
+
+  <div class="warning-box">
+    <span class="warning-label">함정 주의</span>
+    "to" 뒤에 동사원형을 넣고 싶은 유혹! 하지만 이 표현들의 to는 <strong>전치사</strong>이므로 반드시 <strong>-ing</strong>
+  </div>
+
+  <p><strong>빠른 판별</strong>: "to" 자리에 "to <strong>the project</strong>"처럼 명사를 넣어 본다.<br>
+  &bull; "He is committed to <strong>the project</strong>" &rarr; 자연스러움 &rarr; 전치사 to &rarr; -ing <span class="marker-o">&#10004;</span><br>
+  &bull; "He wants to <strong>the project</strong>" &rarr; 부자연스러움 &rarr; to부정사 &rarr; 동사원형</p>
+
+  <div class="variant-section">
+    <h4>변형문제</h4>
+    <div class="variant-item">
+      <div class="variant-q"><strong>1.</strong> She is accustomed to (live / living) in a big city.</div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>2.</strong> I look forward to (hear / hearing) from you soon.</div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>3.</strong> He objected to (change / changing) the schedule.</div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>4.</strong> In addition to (study / studying), she works part-time.</div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>5.</strong> 다음 중 어법상 <strong>올바른</strong> 것은?</div>
+      <div class="variant-choices">
+        &#9312; She is used to work under pressure.<br>
+        &#9313; He devoted his life to help the poor.<br>
+        &#9314; When it comes to cook, she's an expert.<br>
+        &#9315; I'm looking forward to meeting you.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== 문제 11 ===== -->
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">11</div>
+    <div class="problem-title">1형식 vs 2형식 통합</div>
+  </div>
+  <div class="problem-source">POINT 1-1 연습 3, 9, 10, 11, 12, 13번</div>
+
+  <div class="question-box">
+    <p><strong>3번:</strong> The snail moves slowly. &rarr; 1형식 / 2형식?<br>
+    <strong>9번:</strong> We must keep quiet in the hallway. &rarr; 1형식 / 2형식?<br>
+    <strong>10번:</strong> An accident happened yesterday. &rarr; 1형식 / 2형식?<br>
+    <strong>11번:</strong> Olivia became a ballerina. &rarr; 1형식 / 2형식?<br>
+    <strong>12번:</strong> There are many dishes in the cupboard. &rarr; 1형식 / 2형식?<br>
+    <strong>13번:</strong> The stars will shine brightly tonight. &rarr; 1형식 / 2형식?</p>
+  </div>
+
+  <h4>정답 및 해설</h4>
+
+  <table>
+    <thead>
+      <tr><th>#</th><th>문장</th><th>정답</th><th>해설</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>3</td><td>The snail moves <strong>slowly</strong>.</td><td><strong>1형식</strong></td><td>slowly = <strong>부사</strong>(수식어). 부사는 보어가 아님</td></tr>
+      <tr><td>9</td><td>We must keep <strong>quiet</strong>.</td><td><strong>2형식</strong></td><td>quiet = <strong>형용사</strong>(보어). keep = 연결동사</td></tr>
+      <tr><td>10</td><td>An accident <strong>happened</strong> yesterday.</td><td><strong>1형식</strong></td><td>happened = 완전자동사. yesterday = 부사(수식어)</td></tr>
+      <tr><td>11</td><td>Olivia became <strong>a ballerina</strong>.</td><td><strong>2형식</strong></td><td>a ballerina = <strong>명사</strong>(보어). became = 연결동사</td></tr>
+      <tr><td>12</td><td>There <strong>are</strong> many dishes in the cupboard.</td><td><strong>1형식</strong></td><td>There = 유도부사(주어 아님). are = "있다"(존재)</td></tr>
+      <tr><td>13</td><td>The stars will <strong>shine</strong> brightly.</td><td><strong>1형식</strong></td><td>brightly = <strong>부사</strong>(수식어). shine = 자동사</td></tr>
+    </tbody>
+  </table>
+
+  <h4>오답 패턴 분석</h4>
+
+  <div class="warning-box" style="margin-bottom: 8px;">
+    <span class="warning-label">패턴 1: 부사를 보어로 착각 (3번, 13번)</span>
+    slow<strong>ly</strong>, bright<strong>ly</strong> &rarr; <strong>-ly</strong>로 끝나면 대부분 부사 &rarr; <strong>보어 아님</strong> &rarr; 1형식<br>
+    slow, bright &rarr; 형용사 &rarr; 보어 가능 &rarr; 2형식
+  </div>
+
+  <div class="warning-box" style="margin-bottom: 8px;">
+    <span class="warning-label">패턴 2: 연결동사를 일반동사로 착각 (9번, 11번)</span>
+    keep quiet: keep이 "유지하다"(연결동사)로 쓰임 &rarr; quiet(형용사) = 보어 &rarr; 2형식<br>
+    became a ballerina: became = 연결동사 &rarr; 2형식
+  </div>
+
+  <div class="warning-box">
+    <span class="warning-label">패턴 3: There + be동사 혼동 (12번)</span>
+    There is/are = "있다"(존재) &rarr; 1형식<br>
+    주어 is/are + 보어 = "이다"(상태) &rarr; 2형식
+  </div>
+
+  <h4>같은 동사, 다른 형식 &mdash; 비교</h4>
+
+  <table>
+    <thead>
+      <tr><th>1형식 (자동사) / 3형식</th><th>2형식 (연결동사)</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>He <strong>kept</strong> walking. (3형식: 계속했다)</td><td>He <strong>kept</strong> silent. (2형식: 유지했다)</td></tr>
+      <tr><td>She <strong>grew</strong> flowers. (3형식: 키웠다)</td><td>She <strong>grew</strong> tall. (2형식: 키가 커졌다)</td></tr>
+      <tr><td>He <strong>turned</strong> left. (1형식: 방향을 틀었다)</td><td>He <strong>turned</strong> pale. (2형식: 창백해졌다)</td></tr>
+      <tr><td>She <strong>got</strong> a letter. (3형식: 받았다)</td><td>She <strong>got</strong> angry. (2형식: 화가 났다)</td></tr>
+    </tbody>
+  </table>
+
+  <div class="variant-section">
+    <h4>변형문제</h4>
+    <div class="variant-item">
+      <div class="variant-q"><strong>1.</strong> The baby cried loudly all night. &rarr; 1형식 / 2형식?</div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>2.</strong> The milk went bad after three days. &rarr; 1형식 / 2형식?</div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>3.</strong> She remained calm during the crisis. &rarr; 1형식 / 2형식?</div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>4.</strong> The children ran quickly to the playground. &rarr; 1형식 / 2형식?</div>
+    </div>
+    <div class="variant-item">
+      <div class="variant-q"><strong>5.</strong> 다음 중 <strong>2형식</strong> 문장을 <strong>모두</strong> 고르시오.</div>
+      <div class="variant-choices">
+        &#9312; The soup smells delicious.<br>
+        &#9313; He walked slowly to the door.<br>
+        &#9314; She stayed healthy throughout her life.<br>
+        &#9315; The bird flew high in the sky.<br>
+        &#9316; The weather turned cold suddenly.
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="page-break-before"></div>
+
+<div class="section-header">
+  <span class="section-num">ANSWER KEY</span>
+  변형문제 정답
+</div>
+
+<div class="answer-key-section">
+  <div class="answer-key-group">
+    <h4>문제 1: 사역동사 let</h4>
+    <div class="answer-key-items">
+      <p><strong>1.</strong> stay &mdash; let + O + 동사원형</p>
+      <p><strong>2.</strong> choose &mdash; let + O + 동사원형</p>
+      <p><strong>3.</strong> know &mdash; let + O + 동사원형</p>
+      <p><strong>4.</strong> enter &mdash; let + O + 동사원형</p>
+      <p><strong>5.</strong> &#9314; &mdash; let + O + 동사원형. &#9313;는 allow + O + to V 필요.</p>
+    </div>
+  </div>
+
+  <div class="answer-key-group">
+    <h4>문제 2: 사역동사 make</h4>
+    <div class="answer-key-items">
+      <p><strong>1.</strong> cry &mdash; make + O + 동사원형</p>
+      <p><strong>2.</strong> stand &mdash; make + O + 동사원형</p>
+      <p><strong>3.</strong> cancel &mdash; make + O + 동사원형</p>
+      <p><strong>4.</strong> &#9313; &mdash; to wear &rarr; wear</p>
+      <p><strong>5.</strong> &#9313; &mdash; make 수동태: be made + to V</p>
+    </div>
+  </div>
+
+  <div class="answer-key-group">
+    <h4>문제 3: 4형식&rarr;3형식 전환</h4>
+    <div class="answer-key-items">
+      <p><strong>1.</strong> She bought a new backpack for her son. (buy &rarr; for)</p>
+      <p><strong>2.</strong> The chef cooked a special meal for us. (cook &rarr; for)</p>
+      <p><strong>3.</strong> He found a good seat for me. (find &rarr; for)</p>
+      <p><strong>4.</strong> &#9313; &mdash; build &rarr; for</p>
+      <p><strong>5.</strong> &#9314; &mdash; send &rarr; to. &#9312;give&rarr;to, &#9313;make&rarr;for, &#9315;cook&rarr;for</p>
+    </div>
+  </div>
+
+  <div class="answer-key-group">
+    <h4>문제 4: failing 동명사</h4>
+    <div class="answer-key-items">
+      <p><strong>1.</strong> 동명사 &mdash; activity = hiking 동호관계</p>
+      <p><strong>2.</strong> 현재분사 &mdash; news의 성질 설명</p>
+      <p><strong>3.</strong> 동명사 &mdash; dream = becoming 동호관계</p>
+      <p><strong>4.</strong> 현재분사 &mdash; 진행형 be + V-ing</p>
+      <p><strong>5.</strong> 동명사 &mdash; task = checking 동호관계</p>
+    </div>
+  </div>
+
+  <div class="answer-key-group">
+    <h4>문제 5: setting 현재분사</h4>
+    <div class="answer-key-items">
+      <p><strong>1.</strong> 현재분사 &mdash; 나뭇잎이 실제로 떨어지고 있다</p>
+      <p><strong>2.</strong> 현재분사 &mdash; 촛불이 실제로 타고 있다</p>
+      <p><strong>3.</strong> 동명사 &mdash; 자르기 위한 도마 (용도)</p>
+      <p><strong>4.</strong> 현재분사 &mdash; 개가 실제로 짖고 있다</p>
+      <p><strong>5.</strong> &#9313; &mdash; running track = 달리기 위한 트랙 (용도)</p>
+    </div>
+  </div>
+
+  <div class="answer-key-group">
+    <h4>문제 6: washing 동명사</h4>
+    <div class="answer-key-items">
+      <p><strong>1.</strong> 동명사 &mdash; 바느질용 기계 (용도)</p>
+      <p><strong>2.</strong> 현재분사 &mdash; 아이스크림이 실제로 녹고 있다</p>
+      <p><strong>3.</strong> 동명사 &mdash; 캠핑용 장소 (용도)</p>
+      <p><strong>4.</strong> 동명사 &mdash; 흔들기 위한 의자 (용도)</p>
+      <p><strong>5.</strong> &#9314; &mdash; 소녀가 실제로 춤추고 있다</p>
+    </div>
+  </div>
+
+  <div class="answer-key-group">
+    <h4>문제 7: sounds like</h4>
+    <div class="answer-key-items">
+      <p><strong>1.</strong> This soup tastes salty. &mdash; salt(명사) &rarr; salty(형용사)</p>
+      <p><strong>2.</strong> &#9313; &mdash; 감각동사 + 형용사</p>
+      <p><strong>3.</strong> &#9313; &mdash; 감각동사 + like + 명사</p>
+      <p><strong>4.</strong> The fabric feels smooth. &mdash; 형용사 앞에 like 불필요</p>
+      <p><strong>5.</strong> &#9312;, &#9314; &mdash; &#9312;happily&rarr;happy, &#9314;like delicious&rarr;delicious</p>
+    </div>
+  </div>
+
+  <div class="answer-key-group">
+    <h4>문제 8: deny + 동명사</h4>
+    <div class="answer-key-items">
+      <p><strong>1.</strong> committing &mdash; deny + V-ing</p>
+      <p><strong>2.</strong> reading &mdash; enjoy + V-ing</p>
+      <p><strong>3.</strong> opening &mdash; mind + V-ing</p>
+      <p><strong>4.</strong> eating &mdash; avoid + V-ing</p>
+      <p><strong>5.</strong> &#9314; &mdash; consider + V-ing. &#9312;deny+V-ing, &#9313;finish+V-ing, &#9315;suggest+V-ing</p>
+    </div>
+  </div>
+
+  <div class="answer-key-group">
+    <h4>문제 9: 분사구문 과거분사 Seen</h4>
+    <div class="answer-key-items">
+      <p><strong>1.</strong> (B) Written &mdash; 책이 "쓰여진" 것 (수동) &rarr; 과거분사</p>
+      <p><strong>2.</strong> (B) Impressed &mdash; 그녀가 "감명받은" 것 (수동) &rarr; 과거분사</p>
+      <p><strong>3.</strong> (C) Having studied &mdash; 그가 "공부한" 것 (능동) &rarr; 현재분사 완료형</p>
+      <p><strong>4.</strong> (B) Seen &mdash; 산이 "보여진" 것 (수동) &rarr; 과거분사</p>
+      <p><strong>5.</strong> (B) Used &mdash; 기계가 "사용되는" 것 (수동) &rarr; 과거분사</p>
+    </div>
+  </div>
+
+  <div class="answer-key-group">
+    <h4>문제 10: 전치사 to + -ing 통합</h4>
+    <div class="answer-key-items">
+      <p><strong>1.</strong> living &mdash; be accustomed to + -ing (전치사 to)</p>
+      <p><strong>2.</strong> hearing &mdash; look forward to + -ing</p>
+      <p><strong>3.</strong> changing &mdash; object to + -ing</p>
+      <p><strong>4.</strong> studying &mdash; in addition to + -ing</p>
+      <p><strong>5.</strong> &#9315; &mdash; look forward to + -ing. &#9312;work&rarr;working, &#9313;help&rarr;helping, &#9314;cook&rarr;cooking</p>
+    </div>
+  </div>
+
+  <div class="answer-key-group">
+    <h4>문제 11: 1형식 vs 2형식 통합</h4>
+    <div class="answer-key-items">
+      <p><strong>1.</strong> 1형식 &mdash; loudly = 부사(수식어). cried = 자동사</p>
+      <p><strong>2.</strong> 2형식 &mdash; bad = 형용사(보어). went = 연결동사 "~해지다"</p>
+      <p><strong>3.</strong> 2형식 &mdash; calm = 형용사(보어). remained = 연결동사 "~한 상태로 남다"</p>
+      <p><strong>4.</strong> 1형식 &mdash; quickly = 부사(수식어). ran = 자동사</p>
+      <p><strong>5.</strong> &#9312;, &#9314;, &#9316; &mdash; &#9312;smells+delicious=2형식, &#9314;stayed+healthy=2형식, &#9316;turned+cold=2형식</p>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================= -->
+<!-- 부록: 실전 30문항 정답표 -->
+<!-- ============================================= -->
+<div class="page-break-before section-header">
+  <span class="section-num">APPENDIX</span>
+  부록: 실전 30문항 전체 정답표 + 오답 분석
+</div>
+
+<table class="result-table">
+  <thead>
+    <tr>
+      <th style="width:35px;">No</th>
+      <th style="width:70px;">정답</th>
+      <th>해설</th>
+      <th style="width:45px;">결과</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>동명사</td><td>주어 자리 &rarr; 동명사</td><td><span class="result-correct">&#10004;</span></td></tr>
+    <tr><td>2</td><td>현재분사</td><td>명사(child) 앞에서 수식 &rarr; 현재분사</td><td><span class="result-correct">&#10004;</span></td></tr>
+    <tr><td>3</td><td>동명사</td><td>타동사(enjoy)의 목적어 &rarr; 동명사</td><td><span class="result-correct">&#10004;</span></td></tr>
+    <tr><td>4</td><td>현재분사</td><td>분사구문 (= While she was walking) &rarr; 현재분사</td><td><span class="result-correct">&#10004;</span></td></tr>
+    <tr class="row-wrong"><td><strong>5</strong></td><td><strong>동명사</strong></td><td><strong>주어(fear) = failing (동호관계) &rarr; 동명사</strong></td><td><span class="result-wrong">&#10008;</span></td></tr>
+    <tr><td>6</td><td>현재분사</td><td>명사(girl)를 뒤에서 수식 &rarr; 현재분사</td><td><span class="result-correct">&#10004;</span></td></tr>
+    <tr><td>7</td><td>동명사</td><td>전치사(at)의 목적어 &rarr; 동명사</td><td><span class="result-correct">&#10004;</span></td></tr>
+    <tr><td>8</td><td>현재분사</td><td>주어(movie)의 성질 설명 &rarr; 현재분사(감정형용사)</td><td><span class="result-correct">&#10004;</span></td></tr>
+    <tr><td>9</td><td>동명사</td><td>주차하기 위한 공간(용도) &rarr; 동명사</td><td><span class="result-correct">&#10004;</span></td></tr>
+    <tr><td>10</td><td>동명사</td><td>타동사(keep)의 목적어 &rarr; 동명사</td><td><span class="result-correct">&#10004;</span></td></tr>
+    <tr><td>11</td><td>현재분사</td><td>명사(sun) 앞에서 수식 (떠오르고 있는 태양)</td><td><span class="result-correct">&#10004;</span></td></tr>
+    <tr><td>12</td><td>동명사</td><td>전치사(about)의 목적어 &rarr; 동명사</td><td><span class="result-correct">&#10004;</span></td></tr>
+    <tr><td>13</td><td>현재분사</td><td>진행형(are building) &rarr; 현재분사</td><td><span class="result-correct">&#10004;</span></td></tr>
+    <tr><td>14</td><td>동명사</td><td>주어(hobbies) = painting (동호관계) &rarr; 동명사</td><td><span class="result-correct">&#10004;</span></td></tr>
+    <tr><td>15</td><td>동명사</td><td>타동사(mind)의 목적어 &rarr; 동명사</td><td><span class="result-correct">&#10004;</span></td></tr>
+    <tr><td>16</td><td>현재분사</td><td>분사구문 (= Because he felt exhausted) &rarr; 현재분사</td><td><span class="result-correct">&#10004;</span></td></tr>
+    <tr class="row-wrong"><td><strong>17</strong></td><td><strong>현재분사</strong></td><td><strong>명사(sun) 앞에서 수식 (지고 있는 태양)</strong></td><td><span class="result-wrong">&#10008;</span></td></tr>
+    <tr><td>18</td><td>동명사</td><td>전치사 to의 목적어 (look forward to = 전치사!)</td><td><span class="result-correct">&#10004;</span></td></tr>
+    <tr class="row-wrong"><td><strong>19</strong></td><td><strong>동명사</strong></td><td><strong>세탁하기 위한 기계(용도) &rarr; 동명사</strong></td><td><span class="result-wrong">&#10008;</span></td></tr>
+    <tr><td>20</td><td>현재분사</td><td>주어(news)의 성질 설명 &rarr; 현재분사(감정형용사)</td><td><span class="result-correct">&#10004;</span></td></tr>
+    <tr><td>21</td><td>현재분사</td><td>명사(boy)를 뒤에서 수식 &rarr; 현재분사</td><td><span class="result-correct">&#10004;</span></td></tr>
+    <tr><td>22</td><td>동명사</td><td>전치사 to의 목적어 (be used to = 전치사!)</td><td><span class="result-correct">&#10004;</span></td></tr>
+    <tr><td>23</td><td>동명사</td><td>주어 자리 &rarr; 동명사</td><td><span class="result-correct">&#10004;</span></td></tr>
+    <tr><td>24</td><td>현재분사</td><td>지각동사(heard) + O + 목적보어 &rarr; 현재분사</td><td><span class="result-correct">&#10004;</span></td></tr>
+    <tr><td>25</td><td>동명사</td><td>타동사(deny)의 목적어 &rarr; 동명사</td><td><span class="result-correct">&#10004;</span></td></tr>
+    <tr><td>26</td><td>현재분사</td><td>분사구문 &rarr; 현재분사</td><td><span class="result-correct">&#10004;</span></td></tr>
+    <tr><td>27</td><td>현재분사</td><td>명사(voice) 앞에서 수식 (노래하는 목소리)</td><td><span class="result-correct">&#10004;</span></td></tr>
+    <tr><td>28</td><td>동명사</td><td>전치사 to의 목적어 (be committed to = 전치사!)</td><td><span class="result-correct">&#10004;</span></td></tr>
+    <tr><td>29</td><td>현재분사</td><td>지각동사(caught) + O + 목적보어 &rarr; 현재분사</td><td><span class="result-correct">&#10004;</span></td></tr>
+    <tr><td>30</td><td>동명사</td><td>주어 자리 &rarr; 동명사</td><td><span class="result-correct">&#10004;</span></td></tr>
+  </tbody>
+</table>
+
+<!-- ============================================= -->
+<!-- 총 요약 복습 체크리스트 -->
+<!-- ============================================= -->
+<div class="page-break-before section-header">
+  <span class="section-num">SUMMARY</span>
+  총 요약 &mdash; 복습 체크리스트
+</div>
+
+<div class="checklist-group">
+  <div class="checklist-group-title">사역동사</div>
+  <div class="checklist-item"><span class="checkbox"></span> make, have, let + O + <strong>동사원형</strong></div>
+  <div class="checklist-item"><span class="checkbox"></span> make 수동태: be made + <strong>to V</strong></div>
+  <div class="checklist-item"><span class="checkbox"></span> let &#8800; allow: let + 동사원형 / allow + to V</div>
+</div>
+
+<div class="checklist-group">
+  <div class="checklist-group-title">4형식 &rarr; 3형식</div>
+  <div class="checklist-item"><span class="checkbox"></span> make, buy, cook, find, get, build &rarr; <strong>for</strong></div>
+  <div class="checklist-item"><span class="checkbox"></span> give, send, bring, pass, show, teach, tell &rarr; <strong>to</strong></div>
+  <div class="checklist-item"><span class="checkbox"></span> ask &rarr; <strong>of</strong></div>
+</div>
+
+<div class="checklist-group">
+  <div class="checklist-group-title">감각동사</div>
+  <div class="checklist-item"><span class="checkbox"></span> 감각동사 + <strong>형용사</strong> (부사 <span class="marker-x">&#10008;</span>)</div>
+  <div class="checklist-item"><span class="checkbox"></span> 감각동사 + <strong>like + 명사</strong> (명사 단독 <span class="marker-x">&#10008;</span>)</div>
+</div>
+
+<div class="checklist-group">
+  <div class="checklist-group-title">동명사를 목적어로 취하는 동사</div>
+  <div class="checklist-item"><span class="checkbox"></span> deny, enjoy, mind, finish, avoid, give up, keep, suggest, consider, practice, postpone, quit + <strong>V-ing</strong></div>
+</div>
+
+<div class="checklist-group">
+  <div class="checklist-group-title">분사구문 능동/수동</div>
+  <div class="checklist-item"><span class="checkbox"></span> 주어가 동작 <strong>수행</strong> &rarr; <strong>현재분사 (V-ing)</strong></div>
+  <div class="checklist-item"><span class="checkbox"></span> 주어가 동작 <strong>당함</strong> &rarr; <strong>과거분사 (p.p.)</strong></div>
+</div>
+
+<div class="checklist-group">
+  <div class="checklist-group-title">전치사 to + -ing</div>
+  <div class="checklist-item"><span class="checkbox"></span> be committed to, be devoted to, look forward to, be used to, when it comes to, object to, in addition to... + <strong>-ing</strong></div>
+</div>
+
+<div class="checklist-group">
+  <div class="checklist-group-title">1형식 vs 2형식</div>
+  <div class="checklist-item"><span class="checkbox"></span> <strong>부사</strong>(-ly)는 보어가 아님 &rarr; <strong>1형식</strong></div>
+  <div class="checklist-item"><span class="checkbox"></span> <strong>형용사</strong>는 보어 &rarr; <strong>2형식</strong></div>
+  <div class="checklist-item"><span class="checkbox"></span> There + be = "있다" &rarr; <strong>1형식</strong></div>
+  <div class="checklist-item"><span class="checkbox"></span> 연결동사(be, become, get, turn, grow, keep, stay, remain, 감각동사) + 보어 &rarr; <strong>2형식</strong></div>
+</div>
+
+<div class="checklist-group">
+  <div class="checklist-group-title">-ing 구별</div>
+  <div class="checklist-item"><span class="checkbox"></span> 주어/목적어 &rarr; <strong>동명사</strong></div>
+  <div class="checklist-item"><span class="checkbox"></span> 보어: S=C &rarr; <strong>동명사</strong> / 성질 &rarr; <strong>현재분사</strong></div>
+  <div class="checklist-item"><span class="checkbox"></span> 명사 수식: 용도 &rarr; <strong>동명사</strong> / 동작 &rarr; <strong>현재분사</strong></div>
+  <div class="checklist-item"><span class="checkbox"></span> 지각/사역동사 O.C. / 분사구문 &rarr; <strong>현재분사</strong></div>
+</div>
+
+</body>
+</html>

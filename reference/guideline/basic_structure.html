@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A4 Document Template</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* =================================================================== */
+        /* A4 프린트 규격 강제 설정 */
+        /* =================================================================== */
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background: #f5f5f5;
+            counter-reset: page;
+        }
+
+        .eng-text {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* =================================================================== */
+        /* A4 페이지 레이아웃 (210mm × 297mm) */
+        /* =================================================================== */
+        .page {
+            width: 210mm;
+            height: 297mm;
+            margin: 10mm auto;
+            /* 여유로운 디자인 (기본값) - "여유롭게", "넓은 여백", "여백을 충분히" 등 명시 시 적용 */
+            padding: 20mm 18mm;
+            background: white;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            page-break-after: always;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        /* 여유로운 디자인 명시적 클래스 (기본값과 동일하지만 명확성 위해) */
+        .page.spacious-design {
+            padding: 20mm 18mm;
+        }
+
+        .page.spacious-design .page-content {
+            font-size: 12pt;
+            line-height: 1.6;
+        }
+
+        .page.spacious-design h1 {
+            font-size: 24pt;
+            margin-bottom: 15mm;
+        }
+
+        .page.spacious-design h2 {
+            font-size: 18pt;
+            margin: 10mm 0 5mm 0;
+        }
+
+        .page.spacious-design h3 {
+            font-size: 14pt;
+            margin: 8mm 0 4mm 0;
+        }
+
+        .page.spacious-design p {
+            margin-bottom: 6mm;
+        }
+
+        /* 컴팩트 디자인 옵션 (프롬프트에 "컴팩트하게", "정보 밀도 높게", "여백 최소화" 등 명시 시 적용) */
+        .page.compact-design {
+            padding: 12mm;
+        }
+
+        .page:last-child {
+            page-break-after: avoid;
+        }
+
+        .page-content {
+            flex-grow: 1;
+            overflow: hidden;
+            font-size: 11pt;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* 표지 페이지 레이아웃 (상단 쏠림 방지) */
+        .no-header-footer .page-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* 중앙 정렬 (선택 가능: center, space-between 등) */
+            align-items: center;
+            text-align: center;
+            min-height: 100%;
+            padding: 20mm;
+            /* 적절한 패딩으로 상단 쏠림 방지 */
+        }
+
+        /* 표지에서 요소 간 여백 최적화 */
+        .no-header-footer .page-content>* {
+            margin: 0;
+        }
+
+        .no-header-footer .page-content>*+* {
+            margin-top: 8mm;
+            /* 요소 간 일정한 여백 */
+        }
+
+        .no-header-footer .page-content h1 {
+            margin-bottom: 0;
+            /* h1의 기본 margin 제거 */
+        }
+
+        /* 상단 정렬 표지 옵션 (필요 시 사용) */
+        .no-header-footer.cover-top .page-content {
+            justify-content: flex-start;
+            padding-top: 40mm;
+            /* 상단 여백 충분히 확보 (상단 쏠림 방지) */
+            padding-bottom: 40mm;
+            /* 하단 여백도 균형있게 */
+        }
+
+        /* =================================================================== */
+        /* 헤더 & 푸터 */
+        /* =================================================================== */
+        .page-header,
+        .page-footer {
+            width: 100%;
+            flex-shrink: 0;
+            font-size: 9pt;
+            color: #666;
+        }
+
+        .page-header {
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 8px;
+            margin-bottom: 6mm;
+            /* 15mm → 6mm로 축소 (헤더와 본문 사이 불필요한 공백 제거) */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .page-footer {
+            border-top: 1px solid #ddd;
+            padding-top: 8px;
+            margin-top: 15mm;
+            text-align: center;
+        }
+
+        /* 자동 페이지 번호 */
+        .page-footer::after {
+            counter-increment: page;
+            content: counter(page);
+        }
+
+        /* 특정 페이지에서 헤더/푸터 숨기기 */
+        .no-header-footer .page-header,
+        .no-header-footer .page-footer {
+            display: none;
+        }
+
+        /* =================================================================== */
+        /* 기본 텍스트 스타일 */
+        /* =================================================================== */
+        h1 {
+            font-size: 24pt;
+            font-weight: 700;
+            margin-bottom: 15mm;
+            color: #222;
+        }
+
+        h2 {
+            font-size: 18pt;
+            font-weight: 600;
+            margin: 10mm 0 5mm 0;
+            color: #333;
+        }
+
+        h3 {
+            font-size: 14pt;
+            font-weight: 600;
+            margin: 8mm 0 4mm 0;
+            color: #444;
+        }
+
+        p {
+            margin-bottom: 4mm;
+            text-align: justify;
+        }
+
+        /* 여유로운 디자인 기본값 (명시적 스타일) */
+        .spacious-design p {
+            margin-bottom: 6mm;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .text-right {
+            text-align: right;
+        }
+
+        .font-bold {
+            font-weight: 700;
+        }
+
+        /* =================================================================== */
+        /* 기본 리스트 스타일 */
+        /* =================================================================== */
+        ul,
+        ol {
+            margin-left: 5mm;
+            margin-bottom: 4mm;
+        }
+
+        li {
+            margin-bottom: 2mm;
+        }
+
+        /* =================================================================== */
+        /* 기본 테이블 스타일 */
+        /* =================================================================== */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 5mm 0;
+            font-size: 10pt;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 3mm;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: #f8f9fa;
+            font-weight: 600;
+            color: #333;
+        }
+
+        /* =================================================================== */
+        /* 텍스트 강조 기능 (핵심! 반드시 활용) */
+        /* =================================================================== */
+
+        /* 색상 강조 (기본) */
+        .highlight-key {
+            color: #1E3A8A;
+            /* Deep Blue */
+            font-weight: 600;
+        }
+
+        .highlight-eng {
+            color: #0EA5E9;
+            /* Sky Blue */
+            font-weight: 500;
+        }
+
+        .highlight-concept {
+            color: #F97316;
+            /* Orange */
+            font-weight: 600;
+        }
+
+        .highlight-answer {
+            color: #22C55E;
+            /* Green */
+            font-weight: 600;
+        }
+
+        /* 하이라이트 배경 (형광펜 효과) */
+        .highlight-yellow {
+            background: #FEF3C7;
+            /* Amber 100 */
+            color: #92400E;
+            /* Amber 800 */
+            padding: 1pt 2pt;
+            border-radius: 2px;
+            font-weight: 500;
+        }
+
+        .highlight-blue {
+            background: #DBEAFE;
+            /* Blue 100 */
+            color: #1E40AF;
+            /* Blue 800 */
+            padding: 1pt 2pt;
+            border-radius: 2px;
+            font-weight: 500;
+        }
+
+        .highlight-green {
+            background: #D1FAE5;
+            /* Green 100 */
+            color: #065F46;
+            /* Green 800 */
+            padding: 1pt 2pt;
+            border-radius: 2px;
+            font-weight: 500;
+        }
+
+        /* 색상 밑줄 */
+        .underline-red {
+            text-decoration: underline;
+            text-decoration-color: #EF4444;
+            /* Red 500 */
+            text-decoration-thickness: 2px;
+            text-underline-offset: 2px;
+            color: #1F2937;
+            /* 본문 색상 유지 */
+        }
+
+        .underline-blue {
+            text-decoration: underline;
+            text-decoration-color: #3B82F6;
+            /* Blue 500 */
+            text-decoration-thickness: 2px;
+            text-underline-offset: 2px;
+        }
+
+        .underline-green {
+            text-decoration: underline;
+            text-decoration-color: #22C55E;
+            /* Green 500 */
+            text-decoration-thickness: 2px;
+            text-underline-offset: 2px;
+        }
+
+        /* 복합 강조 (가장 강한 효과) */
+        .highlight-strong {
+            background: #FEF3C7;
+            /* Amber 100 */
+            color: #92400E;
+            /* Amber 800 */
+            font-weight: 700;
+            padding: 2pt 4pt;
+            border-radius: 3px;
+            border-left: 3px solid #F59E0B;
+            /* Amber 500 */
+        }
+
+        .highlight-english {
+            background: #E0F2FE;
+            /* Sky 100 */
+            color: #0C4A6E;
+            /* Sky 900 */
+            font-weight: 600;
+            font-style: italic;
+            padding: 1pt 3pt;
+            border-radius: 2px;
+        }
+
+        /* =================================================================== */
+        /* 유틸리티 클래스 */
+        /* =================================================================== */
+        .spacer-sm {
+            height: 2mm;
+        }
+
+        .spacer {
+            height: 4mm;
+        }
+
+        .spacer-lg {
+            height: 8mm;
+        }
+
+        .border {
+            border: 1px solid #ddd;
+            padding: 3mm;
+            border-radius: 2px;
+        }
+
+        .bg-light {
+            background-color: #f8f9fa;
+        }
+
+        .text-muted {
+            color: #666;
+        }
+
+        /* =================================================================== */
+        /* 프린트 최적화 */
+        /* =================================================================== */
+        @media print {
+            body {
+                background: white;
+                margin: 0;
+                padding: 0;
+            }
+
+            .page {
+                margin: 0 !important;
+                /* PDF 변환 시 여백 제거 (중요!) */
+                box-shadow: none;
+                page-break-after: always;
+                width: 210mm;
+                /* A4 너비 고정 */
+                height: 297mm;
+                /* A4 높이 고정 */
+            }
+        }
+
+        /* 페이지 브레이크 제어 */
+        h1,
+        h2,
+        h3 {
+            break-after: avoid-page;
+        }
+
+        table,
+        .border {
+            break-inside: avoid;
+        }
+
+        p,
+        li {
+            orphans: 3;
+            widows: 3;
+        }
+
+        /* =================================================================== */
+        /* 컴팩트 디자인 옵션 (프롬프트에 "컴팩트", "정보 밀도 높게" 등 명시 시 적용) */
+        /* =================================================================== */
+        .page.compact-design {
+            padding: 12mm;
+        }
+
+        .page.compact-design .page-content {
+            font-size: 9pt;
+            line-height: 1.35;
+        }
+
+        .page.compact-design h1 {
+            font-size: 18pt;
+            margin-bottom: 8mm;
+        }
+
+        .page.compact-design h2 {
+            font-size: 14pt;
+            margin: 6mm 0 3mm 0;
+        }
+
+        .page.compact-design h3 {
+            font-size: 11pt;
+            margin: 5mm 0 2mm 0;
+        }
+
+        .page.compact-design p {
+            margin-bottom: 3mm;
+        }
+
+        .page.compact-design table {
+            font-size: 8.5pt;
+        }
+
+        <h1>문서 제목</h1>< !-- 부제목 --><p class="text-muted eng-text" style="font-size: 14pt; margin-top: 8mm;">Document Subtitle</p>< !-- 구분선 (선택적) --><div style="width: 60px; height: 1px; background: #ddd; margin: 12mm 0;"></div>< !-- 추가 설명 (선택적) --><p style="font-size: 12pt; color: #666;">중요 공지 및 안내 사항</p>< !-- 하단 정보 (flex-grow로 하단 고정) --><div style="flex-grow: 1; min-height: 20mm;"></div><p class="text-muted" style="font-size: 10pt; margin-top: 0;">작성자: 홍길동</p><p class="text-muted" style="font-size: 10pt; margin-top: 4mm;">2024년 12월</p></div></div>< !--===================================================================-->< !-- 두 번째 페이지 (일반 내용 페이지 예시) -->< !--===================================================================--><div class="page"><div class="page-header"><span>문서 제목</span><span class="eng-text">Document Title</span></div><div class="page-content"><h2>1. 서론</h2><p>이것은 A4 규격으로 출력 가능한 HTML 문서 템플릿입니다. 이 템플릿은 웹 브라우저에서 보기에도 좋고,
+        PDF로 출력했을 때도 정확한 A4 크기로 인쇄됩니다. </p><p>각 페이지는 210mm × 297mm의 A4 표준 크기를 가지며,
+        적절한 여백과 함께 가독성을 고려한 레이아웃으로 구성되어 있습니다. </p><h3>1.1 주요 특징</h3><ul><li>A4 규격 강제 출력 (@page size: A4)</li><li>자동 페이지 번호</li><li>헤더와 푸터 지원</li><li>프린트 최적화</li><li>반응형 텍스트 레이아웃</li></ul><div class="spacer"></div><h3>1.2 사용 예시 테이블</h3><table><thead><tr><th>항목</th><th>설명</th><th>비고</th></tr></thead><tbody><tr><td>페이지 크기</td><td>210mm × 297mm (A4 표준)</td><td>CSS로 강제 지정</td></tr><tr><td>여백</td><td>상하좌우 20mm</td><td>가독성 최적화</td></tr><tr><td>폰트</td><td>Noto Sans KR / Inter</td><td>웹폰트 적용</td></tr></tbody></table></div><div class="page-footer">< !-- 자동 페이지 번호가 여기에 표시됩니다 --></div></div>< !--===================================================================-->< !-- 세 번째 페이지 (추가 내용 예시) -->< !--===================================================================--><div class="page"><div class="page-header"><span>문서 제목</span><span class="eng-text">Document Title</span></div><div class="page-content"><h2>2. 사용 방법</h2><h3>2.1 기본 구조</h3><p>새로운 페이지를 추가하려면 <code>&lt;
+        div class="page" &gt;
+        </code>요소를 복사하여 사용하시면 됩니다. 각 페이지는 자동으로 새로운 페이지로 분할됩니다. </p><div class="border bg-light"><p class="font-bold">참고사항:</p><p>이 템플릿은 Chrome,
+        Firefox,
+        Safari 등 모든 주요 브라우저에서 정상적으로 작동하며,
+        "인쇄" 기능을 통해 PDF로 저장할 수 있습니다. </p></div><div class="spacer"></div><h3>2.2 스타일 커스터마이징</h3><ol><li>색상 변경: CSS 변수 또는 직접 색상값 수정</li><li>폰트 변경: Google Fonts 링크 및 font-family 수정</li><li>여백 조정: .page 클래스의 padding 값 수정</li><li>헤더/푸터 커스터마이징: 해당 클래스 스타일 수정</li></ol><div class="spacer-lg"></div><p class="text-center text-muted">이것은 기본 템플릿입니다. 필요에 따라 자유롭게 수정하여 사용하세요. </p></div><div class="page-footer">< !-- 자동 페이지 번호 --></div></div></body></html>
