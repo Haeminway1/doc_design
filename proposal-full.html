@@ -1,0 +1,2556 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>HLS 학원 맞춤형 디지털 관리 시스템 제안서</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap');
+
+    @page {
+      size: A4;
+      margin: 18mm 16mm 22mm 16mm;
+    }
+
+    @page :first {
+      margin-top: 10mm;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      font-size: 10pt;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      line-height: 1.65;
+      color: #1a202c;
+    }
+
+    .page-break {
+      page-break-before: always;
+    }
+
+    .avoid-break {
+      page-break-inside: avoid;
+    }
+
+    .keep-together {
+      page-break-inside: avoid;
+      page-break-after: avoid;
+    }
+
+    /* 선택 스타일 문제 해결 */
+    ::selection {
+      background: transparent;
+    }
+
+    ::-moz-selection {
+      background: transparent;
+    }
+
+    /* 커버 페이지 */
+    .cover {
+      height: 257mm;
+      min-height: 257mm;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: #1e3a5f !important;
+      color: #ffffff !important;
+      padding: 40px;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+      page-break-after: always;
+    }
+
+    .cover h1 {
+      font-size: 32pt;
+      font-weight: 700;
+      margin-bottom: 24px;
+      color: #ffffff !important;
+      border: none;
+    }
+
+    .cover .subtitle {
+      font-size: 14pt;
+      color: #ffffff !important;
+      margin-bottom: 80px;
+    }
+
+    .cover .meta {
+      font-size: 12pt;
+      color: #eeeeee !important;
+      line-height: 2.2;
+    }
+
+    .cover .meta strong {
+      color: #ffffff !important;
+    }
+
+    .cover .logo {
+      width: 100px;
+      height: 100px;
+      background: #ffffff !important;
+      border-radius: 50%;
+      margin-bottom: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28pt;
+      color: #2d5a87 !important;
+      font-weight: 700;
+      border: 3px solid #ffffff;
+    }
+
+    /* 링크 스타일 */
+    a {
+      color: #2b6cb0;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* 섹션 헤더 */
+    h1 {
+      font-size: 20pt;
+      color: #1e3a5f;
+      border-bottom: 3px solid #3182ce;
+      padding-bottom: 8px;
+      margin: 0 0 20px 0;
+      page-break-after: avoid;
+    }
+
+    h2 {
+      font-size: 14pt;
+      color: #2b6cb0;
+      margin: 25px 0 12px 0;
+      padding-left: 12px;
+      border-left: 4px solid #3182ce;
+      page-break-inside: avoid;
+      page-break-after: avoid;
+    }
+
+    h3 {
+      font-size: 11pt;
+      color: #2c5282;
+      margin: 18px 0 10px 0;
+      page-break-inside: avoid;
+      page-break-after: avoid;
+    }
+
+    p {
+      margin: 8px 0;
+      text-align: justify;
+    }
+
+    /* 테이블 */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0;
+      font-size: 9pt;
+    }
+
+    th {
+      background: #3182ce !important;
+      color: white !important;
+      padding: 10px 8px;
+      text-align: left;
+      font-weight: 600;
+    }
+
+    td {
+      padding: 8px;
+      border: 1px solid #e2e8f0;
+    }
+
+    tr:nth-child(even) td {
+      background: #f7fafc;
+    }
+
+    td:first-child {
+      font-weight: 500;
+      color: #1e3a5f;
+    }
+
+    /* 다이어그램 박스 */
+    .diagram-box {
+      background: #f7fafc !important;
+      border: 2px solid #cbd5e0;
+      border-radius: 12px;
+      padding: 24px;
+      margin: 16px 0;
+    }
+
+    .diagram-title {
+      font-size: 12pt;
+      font-weight: 700;
+      color: #1e3a5f;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    /* 2열 카드 레이아웃 */
+    .two-col {
+      display: flex;
+      gap: 16px;
+      margin: 16px 0;
+    }
+
+    .card {
+      flex: 1;
+      background: white;
+      border-radius: 10px;
+      padding: 16px;
+      border: 2px solid #e2e8f0;
+    }
+
+    .card-header {
+      font-size: 11pt;
+      font-weight: 700;
+      color: #2b6cb0;
+      margin-bottom: 10px;
+      padding-bottom: 8px;
+      border-bottom: 2px solid #bee3f8;
+    }
+
+    .card ul {
+      padding-left: 18px;
+      font-size: 9pt;
+    }
+
+    .card li {
+      margin: 4px 0;
+    }
+
+    .card .price {
+      font-size: 14pt;
+      font-weight: 700;
+      color: #c53030;
+      margin-top: 8px;
+    }
+
+    .card .sub-price {
+      font-size: 9pt;
+      color: #718096;
+    }
+
+    /* 화살표 */
+    .arrow-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+    }
+
+    .arrow {
+      font-size: 24pt;
+      color: #3182ce;
+    }
+
+    /* 인용문 */
+    blockquote {
+      background: #ebf8ff !important;
+      border-left: 4px solid #3182ce;
+      padding: 12px 16px;
+      margin: 12px 0;
+      border-radius: 0 8px 8px 0;
+      font-size: 9pt;
+    }
+
+    /* 비교 테이블 */
+    .comparison-row {
+      display: flex;
+      gap: 12px;
+      margin: 12px 0;
+    }
+
+    .option-card {
+      flex: 1;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 2px solid #e2e8f0;
+    }
+
+    .option-card.recommended {
+      border-color: #3182ce;
+      border-width: 3px;
+    }
+
+    .option-header {
+      padding: 12px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 11pt;
+    }
+
+    .option-card:nth-child(1) .option-header {
+      background: #48bb78 !important;
+      color: white !important;
+    }
+
+    .option-card:nth-child(2) .option-header {
+      background: #3182ce !important;
+      color: white !important;
+    }
+
+    .option-body {
+      padding: 14px;
+      font-size: 9pt;
+    }
+
+    .option-body ul {
+      padding-left: 16px;
+    }
+
+    .option-body li {
+      margin: 4px 0;
+    }
+
+    .option-price {
+      text-align: center;
+      padding: 10px;
+      background: #f7fafc;
+      font-size: 12pt;
+      font-weight: 700;
+      color: #c53030;
+    }
+
+    /* 타임라인 */
+    .timeline {
+      position: relative;
+      padding-left: 30px;
+      margin: 16px 0;
+    }
+
+    .timeline::before {
+      content: '';
+      position: absolute;
+      left: 8px;
+      top: 0;
+      bottom: 0;
+      width: 3px;
+      background: linear-gradient(180deg, #3182ce, #63b3ed);
+    }
+
+    .timeline-item {
+      position: relative;
+      margin-bottom: 16px;
+    }
+
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      left: -26px;
+      top: 4px;
+      width: 14px;
+      height: 14px;
+      background: #3182ce !important;
+      border-radius: 50%;
+      border: 3px solid white;
+    }
+
+    .timeline-item h4 {
+      font-size: 10pt;
+      color: #2b6cb0;
+      margin-bottom: 4px;
+    }
+
+    .timeline-item p {
+      font-size: 9pt;
+      color: #4a5568;
+    }
+
+    /* 플로우 다이어그램 */
+    .flow-diagram {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin: 16px 0;
+    }
+
+    .flow-box {
+      padding: 12px 16px;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 9pt;
+      font-weight: 500;
+      min-width: 100px;
+    }
+
+    .flow-box.current {
+      background: #fed7d7;
+      border: 2px solid #fc8181;
+      color: #c53030;
+    }
+
+    .flow-box.part1 {
+      background: #c6f6d5;
+      border: 2px solid #68d391;
+      color: #276749;
+    }
+
+    .flow-box.part2 {
+      background: #bee3f8;
+      border: 2px solid #63b3ed;
+      color: #2b6cb0;
+    }
+
+    .flow-arrow {
+      font-size: 18pt;
+      color: #a0aec0;
+    }
+
+    /* 시스템 구성도 */
+    .system-arch {
+      background: #1a202c;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 16px 0;
+      color: white;
+    }
+
+    .system-arch .backend {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      border-radius: 8px;
+      padding: 14px;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+
+    .system-arch .backend h4 {
+      font-size: 11pt;
+      margin-bottom: 4px;
+    }
+
+    .system-arch .backend p {
+      font-size: 8pt;
+      color: #dddddd;
+    }
+
+    .system-arch .services {
+      display: flex;
+      gap: 12px;
+    }
+
+    .system-arch .service {
+      flex: 1;
+      background: #2d3748 !important;
+      border-radius: 8px;
+      padding: 12px;
+      text-align: center;
+    }
+
+    .system-arch .service h5 {
+      font-size: 9pt;
+      color: #63b3ed;
+      margin-bottom: 6px;
+    }
+
+    .system-arch .service p {
+      font-size: 8pt;
+      color: #cccccc;
+    }
+
+    .system-arch .service .tech {
+      font-size: 7pt;
+      color: #a0aec0;
+      margin-top: 6px;
+    }
+
+    /* 기능 그리드 */
+    .feature-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin: 12px 0;
+    }
+
+    .feature-item {
+      background: #f7fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      padding: 10px;
+      font-size: 9pt;
+    }
+
+    .feature-item strong {
+      color: #2b6cb0;
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    /* ROI 박스 */
+    .roi-box {
+      background: linear-gradient(135deg, #f0fff4, #c6f6d5);
+      border: 2px solid #68d391;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 16px 0;
+    }
+
+    .roi-box h4 {
+      color: #276749;
+      font-size: 11pt;
+      margin-bottom: 12px;
+    }
+
+    .roi-highlight {
+      font-size: 18pt;
+      font-weight: 700;
+      color: #276749;
+    }
+
+    /* 강조 */
+    strong {
+      color: #c53030;
+    }
+
+    .highlight {
+      background: #fef3c7;
+      padding: 2px 6px;
+      border-radius: 4px;
+    }
+
+    /* 목차 */
+    .toc {
+      background: #f7fafc;
+      border-radius: 12px;
+      padding: 20px;
+      margin: 20px 0;
+    }
+
+    .toc h2 {
+      border: none;
+      padding: 0;
+      margin: 0 0 14px 0;
+    }
+
+    .toc ol {
+      padding-left: 20px;
+    }
+
+    .toc li {
+      margin: 6px 0;
+      font-size: 10pt;
+    }
+
+    .toc a {
+      color: #2b6cb0;
+      text-decoration: none;
+    }
+
+    /* 콘텐츠 섹션 */
+    .content {
+      padding: 0 10px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  
+  <div class="cover">
+    <div class="logo">HLS</div>
+    <h1>HLS 학원 맞춤형<br>디지털 관리 시스템 제안서</h1>
+    <p class="subtitle">수기 관리에서 스마트 자동화로의 전환</p>
+    <div class="meta">
+      <p><strong>작성일</strong>: 2026-02-08</p>
+      <p><strong>작성자</strong>: 김해민</p>
+    </div>
+  </div>
+
+  
+  <div class="page-break"></div>
+  <div class="content">
+    <div class="toc avoid-break">
+      <h2>목차</h2>
+      <ol>
+        <li>제안 개요</li>
+        <li>현재 상황 분석</li>
+        <li>Part 1: 스마트 학원 관리 시작하기 (GAS)</li>
+        <li>Part 2: 통합 디지털 학원 시스템 (풀스택)</li>
+        <li>도입 효과 분석 (ROI)</li>
+        <li>시장 시세 및 비용 산정 근거</li>
+        <li>소유권 및 권리 구조</li>
+        <li>비용 총괄 및 계약 옵션</li>
+        <li>개발 일정</li>
+        <li>자주 묻는 질문</li>
+        <li>다음 단계</li>
+        <li>참고 자료</li>
+      </ol>
+    </div>
+  </div>
+
+  
+  <div class="page-break"></div>
+  <div class="content">
+    <section>
+      <h1>1. 제안 개요</h1>
+
+      <h2>1.1 본 문서의 목적</h2>
+      <p>본 제안서는 HLS 학원의 학생 관리 업무를 <strong>수기 스프레드시트 방식</strong>에서 <strong>자동화된 디지털 시스템</strong>으로 전환하기 위한 개발 계획과 비용을
+        제시합니다.</p>
+
+      <h2>1.2 핵심 제안 요약</h2>
+      <div class="diagram-box avoid-break">
+        <div class="diagram-title">📋 제안 구조 한눈에 보기</div>
+        <div class="two-col">
+          <div class="card">
+            <div class="card-header">🚀 Part 1 (지금 바로 시작)</div>
+            <p style="font-size:10pt; color:#276749; font-weight:600; margin-bottom:8px;">스마트 학원 관리 (GAS 프로토타입)</p>
+            <ul>
+              <li>학생/반/출결 관리</li>
+              <li>상담 기록</li>
+              <li>자동 문자 발송</li>
+            </ul>
+            <div class="price">400만원 <span style="font-size:9pt;color:#718096;">(일시불)</span></div>
+            <div class="sub-price">운영비: 0원 | 완성: 약 1개월</div>
+            <div
+              style="margin-top:10px; padding:8px; background:#f0fff4; border-radius:6px; font-size:8pt; color:#276749; text-align:center;">
+              ✨ Part 2와 함께 계약 시 <strong>200만원 (50% 할인)</strong>
+            </div>
+          </div>
+          <div class="arrow-container"><span class="arrow">→</span></div>
+          <div class="card">
+            <div class="card-header">🏢 Part 2 (검증 후 확장)</div>
+            <p style="font-size:10pt; color:#2b6cb0; font-weight:600; margin-bottom:8px;">통합 디지털 시스템 (웹 + 모바일 앱)</p>
+            <ul>
+              <li>학생관리 SaaS</li>
+              <li>문제풀이 앱</li>
+              <li>문제 DB 관리</li>
+            </ul>
+            <div class="price">월 700~800만원</div>
+            <div class="sub-price">옵션에 따라 | 개발: 10~12개월</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="avoid-break">
+        <table>
+          <tr>
+            <th>구분</th>
+            <th>Part 1</th>
+            <th>Part 2</th>
+          </tr>
+          <tr>
+            <td>명칭</td>
+            <td>스마트 학원 관리 (프로토타입)</td>
+            <td>통합 디지털 학원 시스템</td>
+          </tr>
+          <tr>
+            <td>범위</td>
+            <td>학생/반/출결/상담 관리</td>
+            <td>학생관리 + 문제풀이앱 + 문제DB</td>
+          </tr>
+          <tr>
+            <td>플랫폼</td>
+            <td>웹 (Google Apps Script)</td>
+            <td>웹 + 모바일 앱 (풀스택)</td>
+          </tr>
+          <tr>
+            <td>대상 학원</td>
+            <td>HLS 본원 전용</td>
+            <td>다지점 확장 가능</td>
+          </tr>
+          <tr>
+            <td>개발 비용</td>
+            <td><strong>400만원</strong> (일시불)</td>
+            <td><strong>월 700~800만원</strong> (옵션별)</td>
+          </tr>
+          <tr>
+            <td>운영 비용</td>
+            <td>무료</td>
+            <td>월 5~10만원</td>
+          </tr>
+          <tr>
+            <td>개발 기간</td>
+            <td>약 1개월</td>
+            <td>10~12개월</td>
+          </tr>
+        </table>
+      </div>
+
+      <h2>1.3 왜 2단계로 진행하는가</h2>
+      <p>대규모 시스템을 처음부터 개발할 경우 다음과 같은 위험이 있습니다:</p>
+      <div class="avoid-break">
+        <table>
+          <tr>
+            <th>위험 요소</th>
+            <th>설명</th>
+          </tr>
+          <tr>
+            <td>개발 기간 장기화</td>
+            <td>실제 사용까지 1년 이상 소요 가능</td>
+          </tr>
+          <tr>
+            <td>요구사항 불일치</td>
+            <td>완성 후 실제 업무 흐름과 맞지 않을 수 있음</td>
+          </tr>
+          <tr>
+            <td>비용 집중</td>
+            <td>초기에 대규모 투자 필요</td>
+          </tr>
+          <tr>
+            <td>검증 불가</td>
+            <td>중간 결과물 없이 최종 완성까지 확인 불가</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="diagram-box avoid-break">
+        <div class="diagram-title">✅ 2단계 접근의 장점</div>
+        <div class="flow-diagram">
+          <div class="flow-box current">📝 현재<br><small>스프레드시트<br>수기 입력</small></div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-box part1">🌐 Part 1<br><small>웹 기반 시스템<br>(약 1개월)</small></div>
+          <div class="flow-arrow">→</div>
+          <div class="flow-box part2">📱 Part 2<br><small>통합 플랫폼<br>(10~12개월)</small></div>
+        </div>
+        <div class="feature-grid" style="margin-top:16px;">
+          <div class="feature-item"><strong>즉시 효율화</strong>Part 1으로 바로 업무 개선</div>
+          <div class="feature-item"><strong>요구사항 검증</strong>실사용 통한 피드백</div>
+          <div class="feature-item"><strong>데이터 기반 판단</strong>Part 2 진행 여부 결정</div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  
+  <div class="page-break"></div>
+  <div class="content">
+    <section>
+      <h1>2. 현재 상황 분석</h1>
+
+      <h2>2.1 현행 업무 방식의 문제점</h2>
+      <p>현재 HLS 학원에서는 학생 관리, 출결 체크, 상담 기록 등을 <strong>스프레드시트 수기 입력</strong> 방식으로 운영하고 있습니다.</p>
+
+      <h3>업무별 소요 시간 (추정)</h3>
+      <div class="avoid-break">
+        <table>
+          <tr>
+            <th>업무</th>
+            <th>담당자</th>
+            <th>일일 소요 시간</th>
+            <th>월간 환산</th>
+          </tr>
+          <tr>
+            <td>출결 체크 및 기록</td>
+            <td>관리자/강사</td>
+            <td>30~60분</td>
+            <td>10~20시간</td>
+          </tr>
+          <tr>
+            <td>학부모 문자 발송</td>
+            <td>관리자</td>
+            <td>20~40분</td>
+            <td>7~13시간</td>
+          </tr>
+          <tr>
+            <td>상담 기록 정리</td>
+            <td>관리자/강사</td>
+            <td>15~30분</td>
+            <td>5~10시간</td>
+          </tr>
+          <tr>
+            <td>학생 정보 검색</td>
+            <td>전 직원</td>
+            <td>10~20분</td>
+            <td>3~7시간</td>
+          </tr>
+          <tr>
+            <td>월말 통계 작성</td>
+            <td>팀장/원장</td>
+            <td>-</td>
+            <td>3~5시간</td>
+          </tr>
+          <tr style="background:#ebf8ff;">
+            <td><strong>합계</strong></td>
+            <td></td>
+            <td><strong>1~2.5시간/일</strong></td>
+            <td><strong>28~55시간/월</strong></td>
+          </tr>
+        </table>
+      </div>
+
+      <h3>수기 관리의 구조적 한계</h3>
+      <div class="avoid-break">
+        <table>
+          <tr>
+            <th>문제</th>
+            <th>영향</th>
+            <th>빈도</th>
+          </tr>
+          <tr>
+            <td>데이터 입력 오류</td>
+            <td>학생 정보 불일치, 출결 누락</td>
+            <td>주 1~2회</td>
+          </tr>
+          <tr>
+            <td>정보 검색 지연</td>
+            <td>상담 시 과거 기록 확인 어려움</td>
+            <td>매일</td>
+          </tr>
+          <tr>
+            <td>동시 작업 충돌</td>
+            <td>여러 명이 수정 시 데이터 덮어쓰기</td>
+            <td>주 1회</td>
+          </tr>
+          <tr>
+            <td>통계 작성 부담</td>
+            <td>월말 수작업 집계로 야근 발생</td>
+            <td>월 1회</td>
+          </tr>
+          <tr>
+            <td>데이터 손실 위험</td>
+            <td>실수로 인한 삭제, 파일 손상</td>
+            <td>연 1~2회</td>
+          </tr>
+          <tr>
+            <td>분점 확장 어려움</td>
+            <td>지점별 데이터 통합 관리 불가</td>
+            <td>상시</td>
+          </tr>
+        </table>
+      </div>
+
+      <h2>2.2 시스템 도입 시 기대 효과</h2>
+      <div class="avoid-break">
+        <table>
+          <tr>
+            <th>현재 방식</th>
+            <th>시스템 도입 후</th>
+          </tr>
+          <tr>
+            <td>매번 수기 입력</td>
+            <td>클릭 몇 번으로 자동 기록</td>
+          </tr>
+          <tr>
+            <td>정보 찾기 어려움</td>
+            <td>검색으로 즉시 조회</td>
+          </tr>
+          <tr>
+            <td>실수로 데이터 손실 가능</td>
+            <td>자동 백업 및 복구</td>
+          </tr>
+          <tr>
+            <td>여러 명 동시 작업 시 충돌</td>
+            <td>실시간 동시 접속 가능</td>
+          </tr>
+          <tr>
+            <td>통계/분석 수작업</td>
+            <td>자동 리포트 생성</td>
+          </tr>
+          <tr>
+            <td>학부모 문자 일일이 발송</td>
+            <td>자동 알림 발송</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  
+
+
+
+
+<div class="page-break"></div>
+<div class="content">
+    <section>
+        <h1>3. Part 1: 스마트 학원 관리 시작하기 (GAS)</h1>
+
+        <h2>3.1 개요</h2>
+        <p>Part 1은 <strong>Google Apps Script(GAS)</strong> 기반의 웹 시스템입니다. 브라우저에서 접속하여 사용하며, Google 인프라를 활용하여 <strong>추가
+                운영 비용 없이</strong> 운영할 수 있습니다.</p>
+
+        <blockquote>
+            <strong>Google Apps Script(GAS)란?</strong><br>
+            Google이 제공하는 클라우드 기반 개발 환경으로, Google 스프레드시트, 드라이브 등과 연동되는 웹 애플리케이션을 만들 수 있습니다. 별도 서버 비용 없이 운영 가능합니다.
+        </blockquote>
+
+        <h3>기술 구성</h3>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>항목</th>
+                    <th>기술</th>
+                    <th>비용</th>
+                </tr>
+                <tr>
+                    <td>프론트엔드</td>
+                    <td>HTML/CSS/JavaScript</td>
+                    <td>무료</td>
+                </tr>
+                <tr>
+                    <td>백엔드</td>
+                    <td>Google Apps Script</td>
+                    <td>무료</td>
+                </tr>
+                <tr>
+                    <td>데이터베이스</td>
+                    <td>Google 스프레드시트</td>
+                    <td>무료</td>
+                </tr>
+                <tr>
+                    <td>호스팅</td>
+                    <td>Google Cloud</td>
+                    <td>무료</td>
+                </tr>
+                <tr>
+                    <td>문자 발송</td>
+                    <td>솔라피 API 연동</td>
+                    <td>건당 과금</td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>3.2 주요 기능</h2>
+
+        <h3>3.2.1 학생 관리</h3>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>기능</th>
+                    <th>설명</th>
+                </tr>
+                <tr>
+                    <td>학생 등록</td>
+                    <td>이름, 연락처, 학교, 학년, 학부모 정보 등록</td>
+                </tr>
+                <tr>
+                    <td>정보 수정</td>
+                    <td>등록된 학생 정보 수정 및 업데이트</td>
+                </tr>
+                <tr>
+                    <td>학생 검색</td>
+                    <td>이름, 반, 학년 등 조건별 즉시 검색</td>
+                </tr>
+                <tr>
+                    <td>수강 이력</td>
+                    <td>수강 과목 및 반 변경 이력 자동 기록</td>
+                </tr>
+                <tr>
+                    <td>상태 관리</td>
+                    <td>재원/휴원/퇴원 상태 관리</td>
+                </tr>
+            </table>
+        </div>
+
+        <h3>3.2.2 반 관리</h3>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>기능</th>
+                    <th>설명</th>
+                </tr>
+                <tr>
+                    <td>반 생성</td>
+                    <td>과목, 레벨, 시간대별 반 생성</td>
+                </tr>
+                <tr>
+                    <td>학생 배정</td>
+                    <td>학생을 반에 배정 및 이동</td>
+                </tr>
+                <tr>
+                    <td>정원 관리</td>
+                    <td>반별 정원 설정 및 현황 확인</td>
+                </tr>
+                <tr>
+                    <td>강사 배정</td>
+                    <td>반별 담당 강사 지정</td>
+                </tr>
+            </table>
+        </div>
+
+        <h3>3.2.3 시간표</h3>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>기능</th>
+                    <th>설명</th>
+                </tr>
+                <tr>
+                    <td>시간표 조회</td>
+                    <td>강사별, 반별, 요일별 시간표 확인</td>
+                </tr>
+                <tr>
+                    <td>시간표 편집</td>
+                    <td>드래그 앤 드롭 방식 시간 변경</td>
+                </tr>
+                <tr>
+                    <td>충돌 감지</td>
+                    <td>강사/강의실 중복 배정 시 경고</td>
+                </tr>
+            </table>
+        </div>
+
+        <h3>3.2.4 출결 관리</h3>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>기능</th>
+                    <th>설명</th>
+                </tr>
+                <tr>
+                    <td>출석 체크</td>
+                    <td>반별 출석/지각/결석/조퇴 기록</td>
+                </tr>
+                <tr>
+                    <td>출결 현황</td>
+                    <td>학생별, 반별 출결 통계 조회</td>
+                </tr>
+                <tr>
+                    <td>자동 알림</td>
+                    <td>결석 시 학부모 자동 문자 발송 (선택)</td>
+                </tr>
+            </table>
+        </div>
+
+        <h3>3.2.5 상담 기록</h3>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>기능</th>
+                    <th>설명</th>
+                </tr>
+                <tr>
+                    <td>상담 등록</td>
+                    <td>학생/학부모 상담 내용 기록</td>
+                </tr>
+                <tr>
+                    <td>이력 조회</td>
+                    <td>학생별 전체 상담 이력 조회</td>
+                </tr>
+                <tr>
+                    <td>태그 분류</td>
+                    <td>상담 유형별 태그 (학습/생활/진로 등)</td>
+                </tr>
+                <tr>
+                    <td>후속 조치</td>
+                    <td>다음 상담 일정, 조치 사항 기록</td>
+                </tr>
+            </table>
+        </div>
+
+        <h3>3.2.6 문자 발송</h3>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>기능</th>
+                    <th>설명</th>
+                </tr>
+                <tr>
+                    <td>개별 발송</td>
+                    <td>특정 학부모에게 문자 발송</td>
+                </tr>
+                <tr>
+                    <td>단체 발송</td>
+                    <td>반별, 전체 학부모 일괄 발송</td>
+                </tr>
+                <tr>
+                    <td>템플릿</td>
+                    <td>자주 쓰는 문구 저장 및 활용</td>
+                </tr>
+                <tr>
+                    <td>발송 이력</td>
+                    <td>발송 내역 및 성공/실패 확인</td>
+                </tr>
+            </table>
+        </div>
+
+        <blockquote>
+            <strong>문자 비용 (솔라피 기준)</strong>: 단문(SMS) 13원/건, 장문(LMS) 29원/건, 카카오 알림톡 9원/건
+        </blockquote>
+
+        <h3>3.2.7 리포트</h3>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>기능</th>
+                    <th>설명</th>
+                </tr>
+                <tr>
+                    <td>출결 리포트</td>
+                    <td>기간별 출결 통계 자동 생성</td>
+                </tr>
+                <tr>
+                    <td>학생 현황</td>
+                    <td>재원/휴원/퇴원 현황 요약</td>
+                </tr>
+                <tr>
+                    <td>반 현황</td>
+                    <td>반별 정원 대비 현원 현황</td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>3.3 현재 개발 상태</h2>
+        <p>기본 기능 개발이 상당 부분 진행되어 있습니다.</p>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>기능</th>
+                    <th>진행률</th>
+                    <th>남은 작업</th>
+                </tr>
+                <tr>
+                    <td>학생 관리</td>
+                    <td>90%</td>
+                    <td>UI 개선, 검색 최적화</td>
+                </tr>
+                <tr>
+                    <td>반 관리</td>
+                    <td>80%</td>
+                    <td>정원 관리 기능 추가</td>
+                </tr>
+                <tr>
+                    <td>시간표</td>
+                    <td>80%</td>
+                    <td>충돌 감지 로직</td>
+                </tr>
+                <tr>
+                    <td>출결 관리</td>
+                    <td>60%</td>
+                    <td>통계 및 자동 알림</td>
+                </tr>
+                <tr>
+                    <td>상담 기록</td>
+                    <td>50%</td>
+                    <td>이력 조회 UI</td>
+                </tr>
+                <tr>
+                    <td>문자 발송</td>
+                    <td style="color:#276749;font-weight:700;">100%</td>
+                    <td>완료 (솔라피 연동)</td>
+                </tr>
+                <tr>
+                    <td>리포트</td>
+                    <td>30%</td>
+                    <td>자동 생성 기능</td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="diagram-box avoid-break" style="background:#1a202c !important;color:white;">
+            <div class="diagram-title" style="color:#63b3ed;">📊 개발 규모</div>
+            <div style="display:flex;justify-content:space-around;text-align:center;">
+                <div>
+                    <div style="font-size:20pt;font-weight:700;color:#68d391;">25,176</div>
+                    <div style="font-size:9pt;opacity:0.8;">코드 라인 수</div>
+                </div>
+                <div>
+                    <div style="font-size:20pt;font-weight:700;color:#63b3ed;">278</div>
+                    <div style="font-size:9pt;opacity:0.8;">함수 수</div>
+                </div>
+                <div>
+                    <div style="font-size:20pt;font-weight:700;color:#f6ad55;">44</div>
+                    <div style="font-size:9pt;opacity:0.8;">API 엔드포인트</div>
+                </div>
+                <div>
+                    <div style="font-size:20pt;font-weight:700;color:#fc8181;">15</div>
+                    <div style="font-size:9pt;opacity:0.8;">DB 테이블</div>
+                </div>
+            </div>
+        </div>
+
+        <h2>3.4 Part 1의 장점과 한계</h2>
+        <div class="comparison-row avoid-break">
+            <div class="option-card">
+                <div class="option-header">✅ 장점</div>
+                <div class="option-body">
+                    <ul>
+                        <li><strong>즉시 도입 가능</strong> - 1개월 내 완성</li>
+                        <li><strong>운영 비용 무료</strong> - Google 무료 플랜</li>
+                        <li><strong>검증된 기술</strong> - Google 인프라 안정성</li>
+                        <li><strong>점진적 개선</strong> - 피드백 반영 가능</li>
+                        <li><strong>Part 2 준비</strong> - 데이터 축적</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="option-card">
+                <div class="option-header" style="background:#fc8181 !important;">⚠️ 한계 (GAS 구조적
+                    제약)</div>
+                <div class="option-body">
+                    <ul>
+                        <li><strong>처리 용량</strong> - 500명 이상 시 속도 저하</li>
+                        <li><strong>동시 접속</strong> - 30명 이상 시 지연</li>
+                        <li><strong>모바일 앱</strong> - 앱 형태 제공 불가</li>
+                        <li><strong>다지점 관리</strong> - 분리 관리 어려움</li>
+                        <li><strong>고급 분석</strong> - AI 분석 불가</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <blockquote>
+            <strong>결론</strong>: Part 1은 <strong>HLS 본원 전용</strong>으로 <strong>지금 당장 사용할 수 있는 시스템</strong>입니다. 다지점 확장,
+            학생용 앱, 고급 분석 기능이 필요하다면 Part 2로 진행해야 합니다.
+        </blockquote>
+
+        <h2>3.5 비용</h2>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>항목</th>
+                    <th>금액</th>
+                    <th>비고</th>
+                </tr>
+                <tr>
+                    <td>개발비 (단독 계약)</td>
+                    <td><strong>400만원</strong></td>
+                    <td>일시불</td>
+                </tr>
+                <tr>
+                    <td>개발비 (Part 2 동시 계약)</td>
+                    <td><strong>200만원</strong></td>
+                    <td>50% 할인</td>
+                </tr>
+                <tr>
+                    <td>운영비</td>
+                    <td><strong>0원</strong></td>
+                    <td>Google 무료 플랜</td>
+                </tr>
+                <tr>
+                    <td>문자 비용</td>
+                    <td>건당 과금</td>
+                    <td>솔라피 요금 별도</td>
+                </tr>
+            </table>
+        </div>
+
+        <h3>비용 근거</h3>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>비교</th>
+                    <th>금액</th>
+                    <th>비고</th>
+                </tr>
+                <tr>
+                    <td>유사 프로젝트 (학생관리 자동화 웹)</td>
+                    <td>1,000만원</td>
+                    <td>위시캣 실제 프로젝트, 60일</td>
+                </tr>
+                <tr>
+                    <td>GAS 기술 특성 반영</td>
+                    <td>300~500만원</td>
+                    <td>전문 프레임워크 대비 단순한 기술</td>
+                </tr>
+                <tr>
+                    <td><strong>본 제안</strong></td>
+                    <td><strong>400만원</strong></td>
+                    <td>시장 적정가 반영</td>
+                </tr>
+            </table>
+        </div>
+
+        <blockquote>
+            <strong>출처</strong>: 위시캣 학생관리 자동화 웹 프로젝트 #147617
+        </blockquote>
+
+        <div class="roi-box avoid-break">
+            <h4>💡 Part 2와 함께 계약하시면</h4>
+            <p>Part 1 개발비가 400만원에서 <span class="roi-highlight">200만원으로 할인</span>됩니다. 이는 장기 파트너십에 대한 할인입니다.</p>
+        </div>
+
+        <h2>3.6 산출물</h2>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>산출물</th>
+                    <th>설명</th>
+                </tr>
+                <tr>
+                    <td>웹 시스템</td>
+                    <td>브라우저에서 접속 가능한 관리 화면</td>
+                </tr>
+                <tr>
+                    <td>소스코드</td>
+                    <td>Google Apps Script 프로젝트 접근 권한</td>
+                </tr>
+                <tr>
+                    <td>데이터</td>
+                    <td>Google 스프레드시트 (자동 백업)</td>
+                </tr>
+                <tr>
+                    <td>사용 매뉴얼</td>
+                    <td>기능별 사용법 문서</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</div>
+
+
+<div class="page-break"></div>
+<div class="content">
+    <section>
+        <h1>4. Part 2: 통합 디지털 학원 시스템 (풀스택)</h1>
+
+        <h2>4.1 왜 Part 2가 필요한가</h2>
+        <p>Part 1을 운영하면서 다음과 같은 필요가 생길 수 있습니다:</p>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>요구사항</th>
+                    <th>Part 1</th>
+                    <th>Part 2</th>
+                </tr>
+                <tr>
+                    <td>"분점에도 같은 시스템을 쓰고 싶다"</td>
+                    <td style="color:#e53e3e;">불가</td>
+                    <td style="color:#276749;font-weight:700;">가능</td>
+                </tr>
+                <tr>
+                    <td>"학생들이 앱으로 문제를 풀었으면 좋겠다"</td>
+                    <td style="color:#e53e3e;">불가</td>
+                    <td style="color:#276749;font-weight:700;">가능</td>
+                </tr>
+                <tr>
+                    <td>"문제 은행을 체계적으로 관리하고 싶다"</td>
+                    <td style="color:#e53e3e;">불가</td>
+                    <td style="color:#276749;font-weight:700;">가능</td>
+                </tr>
+                <tr>
+                    <td>"학생별 취약점을 자동 분석해주면 좋겠다"</td>
+                    <td style="color:#e53e3e;">불가</td>
+                    <td style="color:#276749;font-weight:700;">가능</td>
+                </tr>
+                <tr>
+                    <td>"학생 500명 이상도 빠르게 처리되어야 한다"</td>
+                    <td style="color:#e53e3e;">불가</td>
+                    <td style="color:#276749;font-weight:700;">가능</td>
+                </tr>
+            </table>
+        </div>
+        <p>이러한 기능들은 Google Apps Script의 구조적 한계로 인해 구현이 어렵거나 불가능합니다. <strong>본격적인 웹/앱 서비스로 새로 개발</strong>해야 합니다.</p>
+
+        <h2>4.2 시스템 구성</h2>
+        <p>Part 2는 <strong>3개의 연동된 서비스</strong>로 구성됩니다.</p>
+
+        <div class="system-arch avoid-break">
+            <div class="backend">
+                <h4>☁️ Supabase (통합 백엔드)</h4>
+                <p>데이터베이스 + 사용자 인증 + 실시간 동기화 + 파일 저장</p>
+            </div>
+            <div class="services">
+                <div class="service">
+                    <h5>🖥️ 서비스 1</h5>
+                    <p><strong>학생 관리 웹</strong><br>(관리자용)</p>
+                    <div class="tech">React</div>
+                </div>
+                <div class="service" style="position:relative;">
+                    <div style="position:absolute;top:-8px;left:50%;transform:translateX(-50%);font-size:12pt;">↔️</div>
+                    <h5>📱 서비스 2</h5>
+                    <p><strong>문제 풀이 앱</strong><br>(학생용)</p>
+                    <div class="tech">Flutter</div>
+                </div>
+                <div class="service">
+                    <h5>📝 서비스 3</h5>
+                    <p><strong>문제 DB 웹</strong><br>(강사용)</p>
+                    <div class="tech">React</div>
+                </div>
+            </div>
+        </div>
+
+        <blockquote>
+            <strong>Supabase</strong>: 오픈소스 기반 백엔드 서비스. 직접 서버 구축보다 빠르고 비용 효율적.<br>
+            <strong>React</strong>: 페이스북이 개발한 웹 프레임워크. 가장 널리 사용되는 웹 개발 기술.<br>
+            <strong>Flutter</strong>: Google이 개발한 앱 프레임워크. 하나의 코드로 Android와 iOS 앱 동시 개발.
+        </blockquote>
+
+        <h2>4.3 서비스 1: 학생 관리 시스템 (관리자/강사용 웹)</h2>
+        <p>Part 1의 모든 기능을 포함하며, 다음 기능이 추가됩니다.</p>
+
+        <h3>기본 기능 (Part 1 포함)</h3>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>기능</th>
+                    <th>설명</th>
+                </tr>
+                <tr>
+                    <td>학생 관리</td>
+                    <td>등록, 수정, 검색, 상태 관리</td>
+                </tr>
+                <tr>
+                    <td>반 관리</td>
+                    <td>생성, 배정, 정원 관리</td>
+                </tr>
+                <tr>
+                    <td>시간표</td>
+                    <td>조회, 편집, 충돌 감지</td>
+                </tr>
+                <tr>
+                    <td>출결 관리</td>
+                    <td>출석 체크, 통계, 자동 알림</td>
+                </tr>
+                <tr>
+                    <td>상담 기록</td>
+                    <td>등록, 이력 조회, 태그 분류</td>
+                </tr>
+                <tr>
+                    <td>문자 발송</td>
+                    <td>개별/단체 발송, 템플릿</td>
+                </tr>
+            </table>
+        </div>
+
+        <h3>확장 기능</h3>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>기능</th>
+                    <th>설명</th>
+                </tr>
+                <tr>
+                    <td><strong>다지점 관리</strong></td>
+                    <td>여러 지점을 하나의 시스템에서 통합 관리</td>
+                </tr>
+                <tr>
+                    <td><strong>권한 관리</strong></td>
+                    <td>원장/팀장/강사/관리자별 접근 권한 분리</td>
+                </tr>
+                <tr>
+                    <td><strong>학습 일지</strong></td>
+                    <td>문제풀이 앱 결과가 자동으로 기록</td>
+                </tr>
+                <tr>
+                    <td><strong>취약점 분석</strong></td>
+                    <td>학생별 취약 유형 자동 분석 및 표시</td>
+                </tr>
+                <tr>
+                    <td><strong>성적 추이</strong></td>
+                    <td>기간별 성적 변화 그래프</td>
+                </tr>
+                <tr>
+                    <td><strong>학부모 알림</strong></td>
+                    <td>카카오톡/문자 자동 발송 (출결, 성적)</td>
+                </tr>
+                <tr>
+                    <td><strong>대시보드</strong></td>
+                    <td>핵심 지표 한눈에 확인</td>
+                </tr>
+            </table>
+        </div>
+
+        <h3>예상 화면 수: 약 25개 이상</h3>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>영역</th>
+                    <th>화면 예시</th>
+                </tr>
+                <tr>
+                    <td>학생</td>
+                    <td>목록, 상세, 등록/수정, 학습일지, 성적추이</td>
+                </tr>
+                <tr>
+                    <td>반</td>
+                    <td>목록, 상세, 학생배정, 시간표</td>
+                </tr>
+                <tr>
+                    <td>출결</td>
+                    <td>출석체크, 통계, 알림설정</td>
+                </tr>
+                <tr>
+                    <td>상담</td>
+                    <td>목록, 등록, 상세</td>
+                </tr>
+                <tr>
+                    <td>문자</td>
+                    <td>발송, 템플릿, 이력</td>
+                </tr>
+                <tr>
+                    <td>분석</td>
+                    <td>대시보드, 학생별분석, 반별비교</td>
+                </tr>
+                <tr>
+                    <td>설정</td>
+                    <td>지점관리, 권한관리, 알림설정</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</div>
+
+
+<div class="page-break"></div>
+<div class="content">
+    <section>
+        <h2>4.4 서비스 2: 문제 풀이 앱 (학생용 모바일 앱)</h2>
+        <p>학생들이 스마트폰이나 태블릿에서 문제를 풀 수 있는 Android 앱입니다.</p>
+
+        <h3>주요 기능</h3>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>기능</th>
+                    <th>설명</th>
+                </tr>
+                <tr>
+                    <td><strong>문제 풀이</strong></td>
+                    <td>화면에서 문제 확인 및 답안 입력</td>
+                </tr>
+                <tr>
+                    <td><strong>즉시 채점</strong></td>
+                    <td>제출 즉시 정답/오답 확인</td>
+                </tr>
+                <tr>
+                    <td><strong>정오표</strong></td>
+                    <td>맞은 문제, 틀린 문제 한눈에 확인</td>
+                </tr>
+                <tr>
+                    <td><strong>오답 노트</strong></td>
+                    <td>틀린 문제 자동 저장 및 다시 풀기</td>
+                </tr>
+                <tr>
+                    <td><strong>진도 확인</strong></td>
+                    <td>학습 진도율, 완료/미완료 표시</td>
+                </tr>
+                <tr>
+                    <td><strong>성적 조회</strong></td>
+                    <td>과목별, 기간별 점수 이력 확인</td>
+                </tr>
+            </table>
+        </div>
+
+        <h3>문제 유형 지원</h3>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>유형</th>
+                    <th>설명</th>
+                </tr>
+                <tr>
+                    <td>객관식</td>
+                    <td>4~5지선다</td>
+                </tr>
+                <tr>
+                    <td>단답형</td>
+                    <td>숫자, 단어 입력</td>
+                </tr>
+                <tr>
+                    <td>OX형</td>
+                    <td>참/거짓 선택</td>
+                </tr>
+            </table>
+        </div>
+
+        <blockquote>
+            <strong>참고</strong>: 주관식(서술형) 채점은 자동화가 어려워 초기 버전에서는 제외됩니다.
+        </blockquote>
+
+        <h3>예상 화면 수: 약 15개 이상</h3>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>영역</th>
+                    <th>화면 예시</th>
+                </tr>
+                <tr>
+                    <td>로그인</td>
+                    <td>로그인, 비밀번호찾기</td>
+                </tr>
+                <tr>
+                    <td>문제풀이</td>
+                    <td>과목선택, 문제화면, 결과화면</td>
+                </tr>
+                <tr>
+                    <td>정오표</td>
+                    <td>전체정오표, 오답노트</td>
+                </tr>
+                <tr>
+                    <td>성적</td>
+                    <td>성적조회, 추이그래프</td>
+                </tr>
+                <tr>
+                    <td>설정</td>
+                    <td>프로필, 알림설정</td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>4.5 서비스 3: 문제 DB 관리 (강사용 웹)</h2>
+        <p>강사가 문제를 등록하고 관리하는 웹 시스템입니다.</p>
+
+        <h3>주요 기능</h3>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>기능</th>
+                    <th>설명</th>
+                </tr>
+                <tr>
+                    <td><strong>문제 등록</strong></td>
+                    <td>문제, 보기, 정답, 해설 입력</td>
+                </tr>
+                <tr>
+                    <td><strong>이미지 업로드</strong></td>
+                    <td>문제/보기/해설에 이미지 첨부</td>
+                </tr>
+                <tr>
+                    <td><strong>분류/태깅</strong></td>
+                    <td>과목, 단원, 유형, 난이도 지정</td>
+                </tr>
+                <tr>
+                    <td><strong>문제 검색</strong></td>
+                    <td>조건별 검색으로 문제 찾기</td>
+                </tr>
+                <tr>
+                    <td><strong>문제 세트</strong></td>
+                    <td>여러 문제를 묶어 시험지 구성</td>
+                </tr>
+                <tr>
+                    <td><strong>통계 확인</strong></td>
+                    <td>문제별 정답률, 오답 유형 분석</td>
+                </tr>
+            </table>
+        </div>
+
+        <h3>분류 체계 예시</h3>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>분류 기준</th>
+                    <th>예시</th>
+                </tr>
+                <tr>
+                    <td>과목</td>
+                    <td>영어, 수학, 국어</td>
+                </tr>
+                <tr>
+                    <td>단원</td>
+                    <td>문법-시제, 문법-가정법, 독해-주제찾기</td>
+                </tr>
+                <tr>
+                    <td>난이도</td>
+                    <td>상/중/하 또는 1~5단계</td>
+                </tr>
+                <tr>
+                    <td>유형</td>
+                    <td>객관식, 단답형, OX형</td>
+                </tr>
+                <tr>
+                    <td>출처</td>
+                    <td>자체제작, 기출문제, 교재</td>
+                </tr>
+            </table>
+        </div>
+
+        <h3>예상 화면 수: 약 15개 이상</h3>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>영역</th>
+                    <th>화면 예시</th>
+                </tr>
+                <tr>
+                    <td>문제</td>
+                    <td>목록, 등록, 수정, 상세, 미리보기</td>
+                </tr>
+                <tr>
+                    <td>문제세트</td>
+                    <td>목록, 생성, 편집, 배포</td>
+                </tr>
+                <tr>
+                    <td>통계</td>
+                    <td>문제별통계, 전체분석</td>
+                </tr>
+                <tr>
+                    <td>설정</td>
+                    <td>분류관리, 태그관리</td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>4.6 3개 서비스 연동 흐름</h2>
+        <p>세 서비스는 <strong>실시간으로 연동</strong>되어 데이터가 자동으로 흐릅니다.</p>
+        <div class="diagram-box avoid-break">
+            <div class="diagram-title">🔄 실시간 데이터 연동</div>
+            <div style="display:flex;align-items:center;justify-content:space-between;font-size:9pt;text-align:center;">
+                <div style="flex:1;padding:10px;background:#fef3c7;border-radius:8px;margin:0 5px;">
+                    <strong>강사: 문제 DB</strong><br>
+                    ① 문제 등록/수정<br>
+                    ③ 정답률/오답 통계 수신
+                </div>
+                <div style="font-size:16pt;color:#a0aec0;">⟷</div>
+                <div style="flex:1;padding:10px;background:#f0fff4;border-radius:8px;margin:0 5px;">
+                    <strong>학생: 앱</strong><br>
+                    ② 문제 풀이<br>
+                    ④ 취약점 분석 결과 수신
+                </div>
+                <div style="font-size:16pt;color:#a0aec0;">⟷</div>
+                <div style="flex:1;padding:10px;background:#ebf8ff;border-radius:8px;margin:0 5px;">
+                    <strong>관리자: 학생 관리</strong><br>
+                    결과 자동 기록<br>
+                    학습 가이드 제공
+                </div>
+            </div>
+        </div>
+
+        <h3>연동 시나리오 예시</h3>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>시나리오</th>
+                    <th>흐름</th>
+                </tr>
+                <tr>
+                    <td>새 문제 출제</td>
+                    <td>강사가 문제 등록 → 학생 앱에 즉시 반영</td>
+                </tr>
+                <tr>
+                    <td>학생 풀이</td>
+                    <td>학생이 문제 풀이 → 정오표 자동 생성 → 학습일지에 기록</td>
+                </tr>
+                <tr>
+                    <td>취약점 파악</td>
+                    <td>오답 누적 → 취약 유형 분석 → 학생관리 시스템에 표시</td>
+                </tr>
+                <tr>
+                    <td>학부모 알림</td>
+                    <td>주간 성적 집계 → 자동 문자/카톡 발송</td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>4.7 개발 범위에서 제외되는 것</h2>
+        <p>다음 기능들은 기술적 복잡도, 규정 준수 요건 등으로 인해 <strong>본 프로젝트 범위에 포함되지 않습니다</strong>.</p>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>제외 항목</th>
+                    <th>이유</th>
+                    <th>대안</th>
+                </tr>
+                <tr>
+                    <td>결제 시스템</td>
+                    <td>PCI-DSS 보안 규정 준수 필요</td>
+                    <td>토스페이먼츠 등 전문 솔루션</td>
+                </tr>
+                <tr>
+                    <td>키오스크</td>
+                    <td>하드웨어 연동 + 결제 기능</td>
+                    <td>별도 전문 업체</td>
+                </tr>
+                <tr>
+                    <td>iOS 앱</td>
+                    <td>개발 기간/비용 증가</td>
+                    <td>Android 우선, iOS 추후 협의</td>
+                </tr>
+                <tr>
+                    <td>오프라인 모드</td>
+                    <td>동기화 복잡도 높음</td>
+                    <td>필요시 추후 추가</td>
+                </tr>
+                <tr>
+                    <td>주관식 자동 채점</td>
+                    <td>AI 기술 필요, 정확도 보장 어려움</td>
+                    <td>객관식/단답형 우선</td>
+                </tr>
+            </table>
+        </div>
+
+        <blockquote style="background:#fff5f5 !important;border-color:#fc8181;">
+            <strong>⚠️ 특히 결제 시스템</strong>은 금융 보안 규정이 엄격하여, 무리하게 포함하면 프로젝트 전체 실패 위험이 높아집니다. 전문 결제 솔루션(토스페이먼츠, 네이버페이,
+            카카오페이 등) 도입을 권장합니다.
+        </blockquote>
+    </section>
+</div>
+
+
+
+<div class="page-break"></div>
+<div class="content">
+    <section>
+        <h1>5. 도입 효과 분석 (ROI)</h1>
+
+        <h2>5.1 정량적 효과: 업무 시간 절감</h2>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>업무</th>
+                    <th>현재 (수기)</th>
+                    <th>시스템 도입 후</th>
+                    <th>절감 시간</th>
+                </tr>
+                <tr>
+                    <td>출결 체크 + 기록</td>
+                    <td>30~60분/일</td>
+                    <td>5~10분/일</td>
+                    <td><strong>25~50분/일</strong></td>
+                </tr>
+                <tr>
+                    <td>학부모 문자 발송</td>
+                    <td>20~40분/일</td>
+                    <td>자동화</td>
+                    <td><strong>20~40분/일</strong></td>
+                </tr>
+                <tr>
+                    <td>상담 기록 검색/정리</td>
+                    <td>15~30분/일</td>
+                    <td>즉시 검색</td>
+                    <td><strong>10~25분/일</strong></td>
+                </tr>
+                <tr>
+                    <td>학생 정보 검색</td>
+                    <td>10~20분/일</td>
+                    <td>즉시 검색</td>
+                    <td><strong>8~15분/일</strong></td>
+                </tr>
+                <tr>
+                    <td>월말 통계/리포트</td>
+                    <td>3~5시간/월</td>
+                    <td>자동 생성</td>
+                    <td><strong>3~5시간/월</strong></td>
+                </tr>
+            </table>
+        </div>
+
+        <h3>인건비 환산 (시급 1.5~2만원 기준)</h3>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>구분</th>
+                    <th>월간 절감 시간</th>
+                    <th>시급 1.5만원</th>
+                    <th>시급 2만원</th>
+                </tr>
+                <tr>
+                    <td>관리자 1명</td>
+                    <td>40시간</td>
+                    <td>60만원</td>
+                    <td>80만원</td>
+                </tr>
+                <tr>
+                    <td>강사 3명</td>
+                    <td>45시간 (15×3)</td>
+                    <td>67.5만원</td>
+                    <td>90만원</td>
+                </tr>
+                <tr>
+                    <td>팀장 1명</td>
+                    <td>12시간</td>
+                    <td>18만원</td>
+                    <td>24만원</td>
+                </tr>
+                <tr style="background:#ebf8ff;">
+                    <td><strong>월간 합계</strong></td>
+                    <td><strong>97시간</strong></td>
+                    <td><strong>145.5만원</strong></td>
+                    <td><strong>194만원</strong></td>
+                </tr>
+                <tr style="background:#f0fff4;">
+                    <td><strong>연간 합계</strong></td>
+                    <td><strong>1,164시간</strong></td>
+                    <td><strong>1,746만원</strong></td>
+                    <td><strong>2,328만원</strong></td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>5.2 정성적 효과</h2>
+        <div class="two-col avoid-break">
+            <div class="card">
+                <div class="card-header">📈 업무 품질 향상</div>
+                <ul>
+                    <li><strong>데이터 정확성</strong> - 수기 오류 제거</li>
+                    <li><strong>의사결정 속도</strong> - 실시간 통계</li>
+                    <li><strong>고객 만족도</strong> - 자동 알림</li>
+                    <li><strong>직원 만족도</strong> - 반복 업무 감소</li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="card-header">🚀 사업 확장 기반</div>
+                <ul>
+                    <li><strong>분점 확장</strong> - 표준화된 시스템</li>
+                    <li><strong>데이터 축적</strong> - 맞춤 서비스</li>
+                    <li><strong>차별화</strong> - 디지털 경쟁력</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>5.3 투자 대비 효과 (ROI)</h2>
+        <div class="diagram-box avoid-break">
+            <div class="diagram-title">💰 투자 대비 효과 요약</div>
+            <div class="two-col">
+                <div class="card" style="background:#f0fff4 !important;border-color:#68d391;">
+                    <div class="card-header" style="color:#276749;border-color:#68d391;">Part 1 (GAS 프로토타입)</div>
+                    <p><strong>투자</strong>: 400만원 (일시불)</p>
+                    <p><strong>월간 절감</strong>: 50~80만원</p>
+                    <p><strong>운영비</strong>: 0원</p>
+                    <div class="price" style="color:#276749;">손익분기점: 5~8개월</div>
+                    <div class="sub-price">(Part 2 동시 계약 시: 3~4개월)</div>
+                </div>
+                <div class="card" style="background:#ebf8ff !important;border-color:#63b3ed;">
+                    <div class="card-header" style="color:#2b6cb0;border-color:#63b3ed;">Part 2 (풀스택) — 옵션 A 기준</div>
+                    <p><strong>투자</strong>: 월 700만원 × 12개월 = 8,400만원</p>
+                    <p><strong>월간 절감</strong>: 150~200만원</p>
+                    <p><strong>개발 완료 후 운영비</strong>: 월 10~20만원</p>
+                    <div class="price" style="color:#2b6cb0;">연간 순절감: 1,560~2,160만원</div>
+                </div>
+            </div>
+            <p style="text-align:center;margin-top:12px;font-size:9pt;color:#718096;">※ 분점 확장 시 추가 개발 없이 적용 → 효과 극대화</p>
+        </div>
+    </section>
+</div>
+
+
+<div class="page-break"></div>
+<div class="content">
+    <section>
+        <h1>6. 시장 시세 및 비용 산정 근거</h1>
+
+        <h2>6.1 개발자 인건비 시장 현황 (2025-2026)</h2>
+
+        <h3>KOSA 공식 통계</h3>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>항목</th>
+                    <th>금액</th>
+                    <th>비고</th>
+                </tr>
+                <tr>
+                    <td>일 평균임금</td>
+                    <td><strong>414,762원</strong></td>
+                    <td>전년 대비 4.7% 상승</td>
+                </tr>
+                <tr>
+                    <td>월 환산 (20.6일)</td>
+                    <td><strong>약 854만원</strong></td>
+                    <td>기본급+수당+상여+퇴직금+4대보험 포함</td>
+                </tr>
+                <tr>
+                    <td>시간 평균임금</td>
+                    <td>51,845원</td>
+                    <td>8시간 기준</td>
+                </tr>
+            </table>
+            <p style="font-size:8pt;color:#718096;">출처: KOSA SW기술자 평균임금 2026년 공표</p>
+        </div>
+
+        <h3>위시캣 프리랜서 실거래 단가 (2025 상반기)</h3>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>직군</th>
+                    <th>주니어</th>
+                    <th>미드레벨</th>
+                    <th>시니어</th>
+                </tr>
+                <tr>
+                    <td>프론트엔드</td>
+                    <td>425만원</td>
+                    <td>533만원</td>
+                    <td><strong>758만원</strong></td>
+                </tr>
+                <tr>
+                    <td>백엔드</td>
+                    <td>-</td>
+                    <td>578만원</td>
+                    <td><strong>750만원+</strong></td>
+                </tr>
+                <tr>
+                    <td>풀스택</td>
+                    <td>391만원</td>
+                    <td>561만원</td>
+                    <td><strong>750만원</strong></td>
+                </tr>
+                <tr>
+                    <td>Android</td>
+                    <td>-</td>
+                    <td>-</td>
+                    <td><strong>673만원</strong></td>
+                </tr>
+            </table>
+            <p style="font-size:8pt;color:#718096;">출처: 위시캣 2025 프리랜서 개발자 리포트</p>
+        </div>
+
+        <h2>6.2 유사 프로젝트 외주 비용</h2>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>프로젝트</th>
+                    <th>기간</th>
+                    <th>비용</th>
+                    <th>출처</th>
+                </tr>
+                <tr>
+                    <td>방과후 학생관리 자동화 웹</td>
+                    <td>60일</td>
+                    <td><strong>1,000만원</strong></td>
+                    <td>위시캣</td>
+                </tr>
+                <tr>
+                    <td>학원생 관리 솔루션 웹+앱</td>
+                    <td>90일</td>
+                    <td><strong>3,800만원</strong></td>
+                    <td>위시캣</td>
+                </tr>
+                <tr>
+                    <td>소규모 학원 관리 앱 (기본)</td>
+                    <td>3개월</td>
+                    <td>3,000~4,000만원</td>
+                    <td>위시캣</td>
+                </tr>
+                <tr>
+                    <td>중규모 학원 관리 시스템</td>
+                    <td>6개월</td>
+                    <td>6,000~8,000만원</td>
+                    <td>위시캣</td>
+                </tr>
+                <tr style="background:#fef3c7;">
+                    <td><strong>웹+앱 통합 시스템 (본 프로젝트 유사)</strong></td>
+                    <td><strong>8~10개월</strong></td>
+                    <td><strong>8,000만원~1억원</strong></td>
+                    <td>브런치</td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>6.3 본 제안과 시장가 비교</h2>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>구분</th>
+                    <th>시장가</th>
+                    <th>제안가</th>
+                    <th>절감</th>
+                </tr>
+                <tr>
+                    <td>Part 1 (GAS)</td>
+                    <td>300~1,000만원</td>
+                    <td><strong>400만원</strong> (번들 시 200만원)</td>
+                    <td>시장 적정가</td>
+                </tr>
+                <tr>
+                    <td>Part 2 옵션 A (월)</td>
+                    <td>750~850만원</td>
+                    <td><strong>700만원</strong></td>
+                    <td>7~18%</td>
+                </tr>
+                <tr>
+                    <td>Part 2 옵션 A (12개월)</td>
+                    <td>9,000~10,200만원</td>
+                    <td><strong>8,400만원</strong></td>
+                    <td>7~18%</td>
+                </tr>
+            </table>
+        </div>
+
+        <blockquote>
+            <strong>왜 시장가보다 저렴한가?</strong><br>
+            ① 도메인 이해 - HLS 학원 업무 이해로 학습 비용 없음<br>
+            ② 장기 파트너십 - 단발성 외주가 아닌 지속적 협력<br>
+            ③ 상호 성장 - 학원 성장이 시스템 성장으로 연결<br>
+            ④ Part 1 기반 - 개발 과정에서 축적된 이해도 활용
+        </blockquote>
+    </section>
+</div>
+
+
+<div class="page-break"></div>
+<div class="content">
+    <section>
+        <h1>7. 소유권 및 권리 구조</h1>
+
+        <h2>7.1 소프트웨어 권리의 기본 개념</h2>
+        <div class="diagram-box avoid-break">
+            <div class="diagram-title">🔐 소프트웨어 권리 3가지 개념</div>
+            <div class="feature-grid">
+                <div class="feature-item" style="text-align:center;">
+                    <strong>① 소스코드 인도</strong>
+                    <div style="font-size:20pt;margin:8px 0;">🔑</div>
+                    "집 열쇠를 받는 것"<br>
+                    <small>코드 파일/저장소 접근권</small>
+                </div>
+                <div class="feature-item" style="text-align:center;">
+                    <strong>② 저작재산권 양도</strong>
+                    <div style="font-size:20pt;margin:8px 0;">📜</div>
+                    "집 등기를 이전받는 것"<br>
+                    <small>복제/배포/수정 등 경제적 권리</small>
+                </div>
+                <div class="feature-item" style="text-align:center;">
+                    <strong>③ 사용권 부여</strong>
+                    <div style="font-size:20pt;margin:8px 0;">🏠</div>
+                    "임차권을 받는 것"<br>
+                    <small>특정 범위 내 사용 권리</small>
+                </div>
+            </div>
+            <p style="text-align:center;margin-top:12px;font-size:9pt;color:#c53030;">※ 소스코드를 받았다고 자동으로 저작권이 넘어가지 않습니다.
+                계약서에 별도 명시 필요.</p>
+        </div>
+
+        <h2>7.4 권리 구조 옵션</h2>
+        <div class="comparison-row avoid-break">
+            <div class="option-card">
+                <div class="option-header">옵션 A: 기본형</div>
+                <div class="option-body">
+                    <p><strong>학원이 할 수 있는 것:</strong></p>
+                    <ul>
+                        <li>HLS 모든 지점에서 시스템 사용</li>
+                        <li>필요에 따라 기능 수정/추가</li>
+                        <li>다른 개발자를 투입하여 유지보수</li>
+                    </ul>
+                    <p style="margin-top:10px;"><strong>학원이 할 수 없는 것:</strong></p>
+                    <ul style="color:#e53e3e;">
+                        <li>소스코드 외부 판매</li>
+                        <li>타 학원(비계열)에 시스템 제공</li>
+                    </ul>
+                </div>
+                <div class="option-price">월 700만원 (12개월: 8,400만원)</div>
+            </div>
+            <div class="option-card recommended">
+                <div class="option-header">옵션 B: 완전 양도형</div>
+                <div class="option-body">
+                    <p><strong>학원이 할 수 있는 것:</strong></p>
+                    <ul>
+                        <li>옵션 A의 모든 권리</li>
+                        <li style="color:#276749;font-weight:700;">소스코드 외부 판매 가능</li>
+                        <li style="color:#276749;font-weight:700;">타 학원에 시스템 제공/판매</li>
+                        <li style="color:#276749;font-weight:700;">시스템 자체를 상품으로 사업화</li>
+                    </ul>
+                    <p style="margin-top:10px;font-size:8pt;color:#718096;">저작재산권 전체 양도 포함</p>
+                </div>
+                <div class="option-price">월 800만원 (12개월: 9,600만원)</div>
+            </div>
+        </div>
+
+        <h2>7.8 권장 사항</h2>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>상황</th>
+                    <th>권장 옵션</th>
+                </tr>
+                <tr>
+                    <td>HLS 계열 지점에서만 사용 예정</td>
+                    <td><strong>옵션 A</strong> (비용 효율적)</td>
+                </tr>
+                <tr>
+                    <td>타 학원 판매/프랜차이즈 사업 계획</td>
+                    <td><strong>옵션 B</strong> (완전한 권리 확보)</td>
+                </tr>
+                <tr>
+                    <td>현재는 내부 사용, 추후 확장 가능성</td>
+                    <td><strong>옵션 A</strong> → 나중에 옵션 B로 전환 협의</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</div>
+
+
+<div class="page-break"></div>
+<div class="content">
+    <section>
+        <h1>8. 비용 총괄 및 계약 옵션</h1>
+
+        <h2>8.1~8.2 Part 1 & Part 2 비용</h2>
+        <div class="diagram-box avoid-break">
+            <div class="diagram-title">💵 비용 구조 요약</div>
+
+            <div
+                style="background:#f0fff4;border:2px solid #68d391;border-radius:10px;padding:16px;margin-bottom:16px;">
+                <h4 style="color:#276749;margin:0 0 10px 0;">Part 1 (GAS 프로토타입)</h4>
+                <div style="display:flex;justify-content:space-between;align-items:center;">
+                    <div>
+                        <p style="margin:4px 0;">단독 계약: <strong style="font-size:14pt;">400만원</strong> (일시불)</p>
+                        <p style="margin:4px 0;">Part 2 번들: <strong style="font-size:14pt;color:#276749;">200만원</strong>
+                            (50% 할인)</p>
+                    </div>
+                    <div style="text-align:right;">
+                        <p style="margin:4px 0;font-size:9pt;">운영비: <strong>0원</strong> (Google 무료)</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align:center;font-size:20pt;color:#a0aec0;margin:10px 0;">↓</div>
+
+            <div style="display:flex;gap:16px;">
+                <div style="flex:1;background:#ebf8ff;border:2px solid #63b3ed;border-radius:10px;padding:16px;">
+                    <h4 style="color:#2b6cb0;margin:0 0 10px 0;">옵션 A (기본형)</h4>
+                    <p style="margin:4px 0;font-size:14pt;font-weight:700;">월 700만원</p>
+                    <p style="margin:4px 0;font-size:10pt;">12개월: 8,400만원</p>
+                    <p style="margin:8px 0 0 0;font-size:8pt;color:#718096;">저작권: 개발자 | 내부 사용 무제한</p>
+                </div>
+                <div style="flex:1;background:#fef3c7;border:2px solid #f6ad55;border-radius:10px;padding:16px;">
+                    <h4 style="color:#c05621;margin:0 0 10px 0;">옵션 B (완전 양도형)</h4>
+                    <p style="margin:4px 0;font-size:14pt;font-weight:700;">월 800만원</p>
+                    <p style="margin:4px 0;font-size:10pt;">12개월: 9,600만원</p>
+                    <p style="margin:8px 0 0 0;font-size:8pt;color:#718096;">저작권: 학원 | 외부 판매 가능</p>
+                </div>
+            </div>
+
+            <p style="text-align:center;margin-top:16px;font-size:9pt;color:#718096;">개발 완료 후 운영비: 월 5~10만원 (Supabase +
+                도메인)</p>
+        </div>
+
+        <h2>8.3 시장가 대비 비교</h2>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>구분</th>
+                    <th>시장가 (외주)</th>
+                    <th>본 제안</th>
+                    <th>절감</th>
+                </tr>
+                <tr>
+                    <td>Part 1 (GAS)</td>
+                    <td>300~1,000만원</td>
+                    <td>400만원</td>
+                    <td>시장 적정가</td>
+                </tr>
+                <tr>
+                    <td>Part 2 (12개월, 기본형)</td>
+                    <td>9,000~10,200만원</td>
+                    <td>8,400만원 (옵션 A)</td>
+                    <td>600~1,800만원</td>
+                </tr>
+                <tr>
+                    <td>Part 2 (저작권 양도 포함)</td>
+                    <td>10,000만원+</td>
+                    <td>9,600만원 (옵션 B)</td>
+                    <td>400만원+</td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>8.5 지급 방식</h2>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>구분</th>
+                    <th>방식</th>
+                    <th>비고</th>
+                </tr>
+                <tr>
+                    <td>Part 1</td>
+                    <td>완료 후 일시불</td>
+                    <td>400만원 (번들 시 200만원)</td>
+                </tr>
+                <tr>
+                    <td>Part 2</td>
+                    <td>월 지급</td>
+                    <td>매월 말 지급</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</div>
+
+
+
+<div class="page-break"></div>
+<div class="content">
+    <section>
+        <h1>9. 개발 일정</h1>
+
+        <h2>9.1 Part 1 일정 (GAS 프로토타입)</h2>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>단계</th>
+                    <th>기간</th>
+                    <th>내용</th>
+                </tr>
+                <tr>
+                    <td>핵심 기능 완성</td>
+                    <td>1~2주</td>
+                    <td>출결, 상담 기록 완료</td>
+                </tr>
+                <tr>
+                    <td>리포트 기능</td>
+                    <td>1주</td>
+                    <td>자동 통계 생성</td>
+                </tr>
+                <tr>
+                    <td>UI 개선 및 안정화</td>
+                    <td>1~2주</td>
+                    <td>사용성 개선, 버그 수정</td>
+                </tr>
+                <tr style="background:#f0fff4;">
+                    <td><strong>총 기간</strong></td>
+                    <td colspan="2"><strong>약 1개월</strong></td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>9.2 Part 2 일정 (풀스택 시스템)</h2>
+        <div class="diagram-box avoid-break">
+            <div class="diagram-title">📅 Part 2 개발 타임라인</div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>Phase 1: 학생 관리 시스템 (웹) — Month 1-3</h4>
+                    <p>Part 1 마이그레이션 + 다지점 + 분석<br><span style="color:#276749;">→ 3개월 차: 관리자/강사 사용 시작</span></p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Phase 2: 문제 풀이 앱 (Android) — Month 4-6</h4>
+                    <p>문제풀이 + 채점 + 정오표 + 오답노트<br><span style="color:#276749;">→ 6개월 차: 일부 학생 베타 테스트</span></p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Phase 3: 문제 DB + 3서비스 연동 — Month 7-9</h4>
+                    <p>문제 CRUD + 분류 + 3서비스 연동<br><span style="color:#276749;">→ 9개월 차: 강사 사용 시작</span></p>
+                </div>
+                <div class="timeline-item">
+                    <h4>안정화 + 단계별 오픈 — Month 10-12</h4>
+                    <p>통합 테스트 + 버그 수정 + 런칭<br><span style="color:#276749;">→ 12개월 차: 전체 시스템 정식 오픈</span></p>
+                </div>
+            </div>
+        </div>
+
+        <blockquote>
+            각 Phase 완료 시 <strong>순차적으로 배포</strong>하여 중간 결과물을 확인하고 피드백을 반영합니다.
+        </blockquote>
+    </section>
+</div>
+
+
+<div class="page-break"></div>
+<div class="content">
+    <section>
+        <h1>10. 자주 묻는 질문</h1>
+
+        <div class="avoid-break" style="margin-bottom:16px;">
+            <h3 style="color:#2b6cb0;">Q1. Part 1만 하고 Part 2는 안 해도 되나요?</h3>
+            <p><strong>네, 가능합니다.</strong> Part 1만으로도 현재 스프레드시트 수기 입력 방식보다 훨씬 효율적입니다. 학생 수 500명 초과, 분점 확장, 학생용 앱, 고급 분석
+                필요 시 Part 2를 진행하세요.</p>
+        </div>
+
+        <div class="avoid-break" style="margin-bottom:16px;">
+            <h3 style="color:#2b6cb0;">Q2. 개발 완료 후 개발자가 그만두면요?</h3>
+            <p>걱정하지 않으셔도 됩니다. 모든 소스코드가 인도되고, React/Flutter 등 업계 표준 기술 사용으로 다른 개발자가 유지보수 가능합니다. 문서화 및 저장소 접근권도 제공됩니다.</p>
+        </div>
+
+        <div class="avoid-break" style="margin-bottom:16px;">
+            <h3 style="color:#2b6cb0;">Q3. 나중에 옵션 A에서 옵션 B로 바꿀 수 있나요?</h3>
+            <p><strong>네, 가능합니다.</strong> 별도 협의를 통해 전환할 수 있으며, 기존 지급액의 일부를 크레딧으로 인정하는 방식도 협의 가능합니다.</p>
+        </div>
+
+        <div class="avoid-break" style="margin-bottom:16px;">
+            <h3 style="color:#2b6cb0;">Q4. 왜 결제 시스템은 안 만드나요?</h3>
+            <p>PCI-DSS 등 금융 보안 규정 준수, PG사 계약, 결제 오류 책임 소재 문제로 <strong>전문 결제 솔루션(토스페이먼츠, 네이버페이 등)</strong> 도입을 권장합니다.</p>
+        </div>
+
+        <div class="avoid-break" style="margin-bottom:16px;">
+            <h3 style="color:#2b6cb0;">Q5. iOS 앱은 왜 안 만드나요?</h3>
+            <p>개발 비용 30~50% 증가, Apple 심사 복잡도, 한국 Android 시장 점유율, 학원 태블릿 대부분 Android. iOS는 안정화 후 추후 협의 가능합니다.</p>
+        </div>
+
+        <div class="avoid-break" style="margin-bottom:16px;">
+            <h3 style="color:#2b6cb0;">Q6. Part 1 데이터를 Part 2로 옮길 수 있나요?</h3>
+            <p><strong>네, 가능합니다.</strong> 마이그레이션(이전) 작업을 통해 학생, 반, 출결, 상담 데이터를 그대로 옮길 수 있습니다.</p>
+        </div>
+
+        <div class="avoid-break" style="margin-bottom:16px;">
+            <h3 style="color:#2b6cb0;">Q7. 개발 중에 요구사항이 바뀌면요?</h3>
+            <p><strong>백로그 방식</strong>으로 유연하게 대응합니다. 매월 "이번 달 할 일"을 합의하고 우선순위를 조정하여 변화에 유연하게 대응합니다.</p>
+        </div>
+
+        <div class="avoid-break" style="margin-bottom:16px;">
+            <h3 style="color:#2b6cb0;">Q8. 옵션 A와 옵션 B, 어떤 걸 선택해야 하나요?</h3>
+            <div class="avoid-break">
+                <table>
+                    <tr>
+                        <th>판단 기준</th>
+                        <th>옵션 A</th>
+                        <th>옵션 B</th>
+                    </tr>
+                    <tr>
+                        <td>사용 목적</td>
+                        <td>HLS 내부 사용 중심</td>
+                        <td>외부 판매/사업화 계획</td>
+                    </tr>
+                    <tr>
+                        <td>분점 배포</td>
+                        <td>HLS 계열 지점만</td>
+                        <td>비계열 타 학원도 포함</td>
+                    </tr>
+                    <tr>
+                        <td>비용 우선</td>
+                        <td>월 100만원 절약</td>
+                        <td>완전한 권리 확보 우선</td>
+                    </tr>
+                </table>
+            </div>
+            <p style="margin-top:8px;"><strong>대부분의 학원에는 옵션 A가 적합합니다.</strong></p>
+        </div>
+    </section>
+</div>
+
+
+<div class="page-break"></div>
+<div class="content">
+    <section>
+        <h1>11. 다음 단계</h1>
+
+        <h2>11.1 진행 프로세스</h2>
+        <div class="diagram-box avoid-break">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>1. 본 제안서 검토</h4>
+                    <p>궁금한 점, 추가 요청 사항 협의</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>2. Part 1 진행 결정</h4>
+                    <p>계약 조건 합의 → 개발 착수 (잔여 기능 완성)</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>3. Part 1 완료 및 검증 (약 1개월)</h4>
+                    <p>실제 업무 적용 → 피드백 수집</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>4. Part 2 진행 결정 (옵션 선택)</h4>
+                    <p>옵션 A/B/C 선택 → 상세 범위 협의 → 계약 체결</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>5. Part 2 개발 (10~12개월)</h4>
+                    <p>Phase별 단계적 배포 → 매월 진행 상황 공유</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>6. 개발 완료 후</h4>
+                    <p>안정화 및 운영 지원 → 필요시 추가 기능 개발 협의</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>11.2 의사결정 체크리스트</h2>
+        <div class="two-col avoid-break">
+            <div class="card">
+                <div class="card-header">☑️ Part 1 진행 여부</div>
+                <ul>
+                    <li>현재 수기 관리의 비효율성 개선 필요성 공감</li>
+                    <li>400만원 투자 가능 (Part 2 동시 계약 시 200만원)</li>
+                    <li>1개월 내 시스템 도입 희망</li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="card-header">☑️ Part 2 진행 여부</div>
+                <ul>
+                    <li>다지점 확장 또는 학생용 앱 필요</li>
+                    <li>월 700~800만원 개발비 투자 가능</li>
+                    <li>10~12개월 개발 기간 수용 가능</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>11.3 문의</h2>
+        <p>본 제안서와 관련하여 궁금한 점이 있으시면 언제든 말씀해 주십시오. 추가 설명이나 미팅이 필요하시면 일정을 조율하겠습니다.</p>
+    </section>
+</div>
+
+
+<div class="page-break"></div>
+<div class="content">
+    <section>
+        <h1>12. 참고 자료</h1>
+
+        <h2>시장 데이터</h2>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>자료명</th>
+                    <th>출처</th>
+                    <th>URL</th>
+                </tr>
+                <tr>
+                    <td>SW기술자 평균임금 2026년</td>
+                    <td>KOSA</td>
+                    <td><a href="https://www.sw.or.kr/site/sw/ex/board/View.do?cbIdx=304&bcIdx=64717"
+                            target="_blank">링크</a></td>
+                </tr>
+                <tr>
+                    <td>프리랜서 개발자 단가 2025</td>
+                    <td>위시캣</td>
+                    <td><a href="https://blog.wishket.com/blog/freelance-developer-rates-2025" target="_blank">링크</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>앱 개발 비용 데이터 가이드</td>
+                    <td>위시캣</td>
+                    <td><a href="https://blog.wishket.com/blog/app-development-cost-data-guide" target="_blank">링크</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>학생관리 자동화 웹 프로젝트</td>
+                    <td>위시캣</td>
+                    <td><a href="https://www.wishket.com/project/147617/" target="_blank">링크</a></td>
+                </tr>
+                <tr>
+                    <td>학원생 관리 솔루션 웹+앱 프로젝트</td>
+                    <td>위시캣</td>
+                    <td><a href="https://www.wishket.com/project/124545/" target="_blank">링크</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>법률/제도</h2>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>자료명</th>
+                    <th>출처</th>
+                    <th>URL</th>
+                </tr>
+                <tr>
+                    <td>저작권법 제9조(업무상저작물) 해설</td>
+                    <td>문화체육관광부</td>
+                    <td><a href="https://www.mcst.go.kr/kor/s_policy/dept/deptView.jsp?pSeq=1305&pDataCD=0417000000&pType=01"
+                            target="_blank">링크</a></td>
+                </tr>
+                <tr>
+                    <td>저작권법 제45조(저작재산권의 양도)</td>
+                    <td>법령정보센터</td>
+                    <td><a href="https://www.law.go.kr/법령/저작권법" target="_blank">링크</a></td>
+                </tr>
+                <tr>
+                    <td>근로기준법(해고 제한/해고예고)</td>
+                    <td>법령정보센터</td>
+                    <td><a href="https://www.law.go.kr/법령/근로기준법" target="_blank">링크</a></td>
+                </tr>
+                <tr>
+                    <td>근로자퇴직급여 보장법</td>
+                    <td>법령정보센터</td>
+                    <td><a href="https://www.law.go.kr/법령/근로자퇴직급여보장법" target="_blank">링크</a></td>
+                </tr>
+                <tr>
+                    <td>SW분야 표준계약서</td>
+                    <td>SPRi</td>
+                    <td><a href="https://spri.kr/posts/view/23132" target="_blank">링크</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <div style="text-align:center;margin-top:60px;padding-top:20px;border-top:2px solid #e2e8f0;color:#718096;">
+            <p><strong>작성자</strong>: 김해민</p>
+            <p><strong>작성일</strong>: 2026-02-08</p>
+        </div>
+    </section>
+</div>
+
+
+
+
+</body>
+</html>

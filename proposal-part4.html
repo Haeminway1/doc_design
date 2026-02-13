@@ -1,0 +1,293 @@
+<!-- Part 9-12 추가 콘텐츠 -->
+
+<!-- 9. 개발 일정 -->
+<div class="page-break"></div>
+<div class="content">
+    <section>
+        <h1>9. 개발 일정</h1>
+
+        <h2>9.1 Part 1 일정 (GAS 프로토타입)</h2>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>단계</th>
+                    <th>기간</th>
+                    <th>내용</th>
+                </tr>
+                <tr>
+                    <td>핵심 기능 완성</td>
+                    <td>1~2주</td>
+                    <td>출결, 상담 기록 완료</td>
+                </tr>
+                <tr>
+                    <td>리포트 기능</td>
+                    <td>1주</td>
+                    <td>자동 통계 생성</td>
+                </tr>
+                <tr>
+                    <td>UI 개선 및 안정화</td>
+                    <td>1~2주</td>
+                    <td>사용성 개선, 버그 수정</td>
+                </tr>
+                <tr style="background:#f0fff4;">
+                    <td><strong>총 기간</strong></td>
+                    <td colspan="2"><strong>약 1개월</strong></td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>9.2 Part 2 일정 (풀스택 시스템)</h2>
+        <div class="diagram-box avoid-break">
+            <div class="diagram-title">📅 Part 2 개발 타임라인</div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>Phase 1: 학생 관리 시스템 (웹) — Month 1-3</h4>
+                    <p>Part 1 마이그레이션 + 다지점 + 분석<br><span style="color:#276749;">→ 3개월 차: 관리자/강사 사용 시작</span></p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Phase 2: 문제 풀이 앱 (Android) — Month 4-6</h4>
+                    <p>문제풀이 + 채점 + 정오표 + 오답노트<br><span style="color:#276749;">→ 6개월 차: 일부 학생 베타 테스트</span></p>
+                </div>
+                <div class="timeline-item">
+                    <h4>Phase 3: 문제 DB + 3서비스 연동 — Month 7-9</h4>
+                    <p>문제 CRUD + 분류 + 3서비스 연동<br><span style="color:#276749;">→ 9개월 차: 강사 사용 시작</span></p>
+                </div>
+                <div class="timeline-item">
+                    <h4>안정화 + 단계별 오픈 — Month 10-12</h4>
+                    <p>통합 테스트 + 버그 수정 + 런칭<br><span style="color:#276749;">→ 12개월 차: 전체 시스템 정식 오픈</span></p>
+                </div>
+            </div>
+        </div>
+
+        <blockquote>
+            각 Phase 완료 시 <strong>순차적으로 배포</strong>하여 중간 결과물을 확인하고 피드백을 반영합니다.
+        </blockquote>
+    </section>
+</div>
+
+<!-- 10. 자주 묻는 질문 -->
+<div class="page-break"></div>
+<div class="content">
+    <section>
+        <h1>10. 자주 묻는 질문</h1>
+
+        <div class="avoid-break" style="margin-bottom:16px;">
+            <h3 style="color:#2b6cb0;">Q1. Part 1만 하고 Part 2는 안 해도 되나요?</h3>
+            <p><strong>네, 가능합니다.</strong> Part 1만으로도 현재 스프레드시트 수기 입력 방식보다 훨씬 효율적입니다. 학생 수 500명 초과, 분점 확장, 학생용 앱, 고급 분석
+                필요 시 Part 2를 진행하세요.</p>
+        </div>
+
+        <div class="avoid-break" style="margin-bottom:16px;">
+            <h3 style="color:#2b6cb0;">Q2. 개발 완료 후 개발자가 그만두면요?</h3>
+            <p>걱정하지 않으셔도 됩니다. 모든 소스코드가 인도되고, React/Flutter 등 업계 표준 기술 사용으로 다른 개발자가 유지보수 가능합니다. 문서화 및 저장소 접근권도 제공됩니다.</p>
+        </div>
+
+        <div class="avoid-break" style="margin-bottom:16px;">
+            <h3 style="color:#2b6cb0;">Q3. 나중에 옵션 A에서 옵션 B로 바꿀 수 있나요?</h3>
+            <p><strong>네, 가능합니다.</strong> 별도 협의를 통해 전환할 수 있으며, 기존 지급액의 일부를 크레딧으로 인정하는 방식도 협의 가능합니다.</p>
+        </div>
+
+        <div class="avoid-break" style="margin-bottom:16px;">
+            <h3 style="color:#2b6cb0;">Q4. 왜 결제 시스템은 안 만드나요?</h3>
+            <p>PCI-DSS 등 금융 보안 규정 준수, PG사 계약, 결제 오류 책임 소재 문제로 <strong>전문 결제 솔루션(토스페이먼츠, 네이버페이 등)</strong> 도입을 권장합니다.</p>
+        </div>
+
+        <div class="avoid-break" style="margin-bottom:16px;">
+            <h3 style="color:#2b6cb0;">Q5. iOS 앱은 왜 안 만드나요?</h3>
+            <p>개발 비용 30~50% 증가, Apple 심사 복잡도, 한국 Android 시장 점유율, 학원 태블릿 대부분 Android. iOS는 안정화 후 추후 협의 가능합니다.</p>
+        </div>
+
+        <div class="avoid-break" style="margin-bottom:16px;">
+            <h3 style="color:#2b6cb0;">Q6. Part 1 데이터를 Part 2로 옮길 수 있나요?</h3>
+            <p><strong>네, 가능합니다.</strong> 마이그레이션(이전) 작업을 통해 학생, 반, 출결, 상담 데이터를 그대로 옮길 수 있습니다.</p>
+        </div>
+
+        <div class="avoid-break" style="margin-bottom:16px;">
+            <h3 style="color:#2b6cb0;">Q7. 개발 중에 요구사항이 바뀌면요?</h3>
+            <p><strong>백로그 방식</strong>으로 유연하게 대응합니다. 매월 "이번 달 할 일"을 합의하고 우선순위를 조정하여 변화에 유연하게 대응합니다.</p>
+        </div>
+
+        <div class="avoid-break" style="margin-bottom:16px;">
+            <h3 style="color:#2b6cb0;">Q8. 옵션 A와 옵션 B, 어떤 걸 선택해야 하나요?</h3>
+            <div class="avoid-break">
+                <table>
+                    <tr>
+                        <th>판단 기준</th>
+                        <th>옵션 A</th>
+                        <th>옵션 B</th>
+                    </tr>
+                    <tr>
+                        <td>사용 목적</td>
+                        <td>HLS 내부 사용 중심</td>
+                        <td>외부 판매/사업화 계획</td>
+                    </tr>
+                    <tr>
+                        <td>분점 배포</td>
+                        <td>HLS 계열 지점만</td>
+                        <td>비계열 타 학원도 포함</td>
+                    </tr>
+                    <tr>
+                        <td>비용 우선</td>
+                        <td>월 100만원 절약</td>
+                        <td>완전한 권리 확보 우선</td>
+                    </tr>
+                </table>
+            </div>
+            <p style="margin-top:8px;"><strong>대부분의 학원에는 옵션 A가 적합합니다.</strong></p>
+        </div>
+    </section>
+</div>
+
+<!-- 11. 다음 단계 -->
+<div class="page-break"></div>
+<div class="content">
+    <section>
+        <h1>11. 다음 단계</h1>
+
+        <h2>11.1 진행 프로세스</h2>
+        <div class="diagram-box avoid-break">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h4>1. 본 제안서 검토</h4>
+                    <p>궁금한 점, 추가 요청 사항 협의</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>2. Part 1 진행 결정</h4>
+                    <p>계약 조건 합의 → 개발 착수 (잔여 기능 완성)</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>3. Part 1 완료 및 검증 (약 1개월)</h4>
+                    <p>실제 업무 적용 → 피드백 수집</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>4. Part 2 진행 결정 (옵션 선택)</h4>
+                    <p>옵션 A/B/C 선택 → 상세 범위 협의 → 계약 체결</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>5. Part 2 개발 (10~12개월)</h4>
+                    <p>Phase별 단계적 배포 → 매월 진행 상황 공유</p>
+                </div>
+                <div class="timeline-item">
+                    <h4>6. 개발 완료 후</h4>
+                    <p>안정화 및 운영 지원 → 필요시 추가 기능 개발 협의</p>
+                </div>
+            </div>
+        </div>
+
+        <h2>11.2 의사결정 체크리스트</h2>
+        <div class="two-col avoid-break">
+            <div class="card">
+                <div class="card-header">☑️ Part 1 진행 여부</div>
+                <ul>
+                    <li>현재 수기 관리의 비효율성 개선 필요성 공감</li>
+                    <li>400만원 투자 가능 (Part 2 동시 계약 시 200만원)</li>
+                    <li>1개월 내 시스템 도입 희망</li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="card-header">☑️ Part 2 진행 여부</div>
+                <ul>
+                    <li>다지점 확장 또는 학생용 앱 필요</li>
+                    <li>월 700~800만원 개발비 투자 가능</li>
+                    <li>10~12개월 개발 기간 수용 가능</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>11.3 문의</h2>
+        <p>본 제안서와 관련하여 궁금한 점이 있으시면 언제든 말씀해 주십시오. 추가 설명이나 미팅이 필요하시면 일정을 조율하겠습니다.</p>
+    </section>
+</div>
+
+<!-- 12. 참고 자료 -->
+<div class="page-break"></div>
+<div class="content">
+    <section>
+        <h1>12. 참고 자료</h1>
+
+        <h2>시장 데이터</h2>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>자료명</th>
+                    <th>출처</th>
+                    <th>URL</th>
+                </tr>
+                <tr>
+                    <td>SW기술자 평균임금 2026년</td>
+                    <td>KOSA</td>
+                    <td><a href="https://www.sw.or.kr/site/sw/ex/board/View.do?cbIdx=304&bcIdx=64717"
+                            target="_blank">링크</a></td>
+                </tr>
+                <tr>
+                    <td>프리랜서 개발자 단가 2025</td>
+                    <td>위시캣</td>
+                    <td><a href="https://blog.wishket.com/blog/freelance-developer-rates-2025" target="_blank">링크</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>앱 개발 비용 데이터 가이드</td>
+                    <td>위시캣</td>
+                    <td><a href="https://blog.wishket.com/blog/app-development-cost-data-guide" target="_blank">링크</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>학생관리 자동화 웹 프로젝트</td>
+                    <td>위시캣</td>
+                    <td><a href="https://www.wishket.com/project/147617/" target="_blank">링크</a></td>
+                </tr>
+                <tr>
+                    <td>학원생 관리 솔루션 웹+앱 프로젝트</td>
+                    <td>위시캣</td>
+                    <td><a href="https://www.wishket.com/project/124545/" target="_blank">링크</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <h2>법률/제도</h2>
+        <div class="avoid-break">
+            <table>
+                <tr>
+                    <th>자료명</th>
+                    <th>출처</th>
+                    <th>URL</th>
+                </tr>
+                <tr>
+                    <td>저작권법 제9조(업무상저작물) 해설</td>
+                    <td>문화체육관광부</td>
+                    <td><a href="https://www.mcst.go.kr/kor/s_policy/dept/deptView.jsp?pSeq=1305&pDataCD=0417000000&pType=01"
+                            target="_blank">링크</a></td>
+                </tr>
+                <tr>
+                    <td>저작권법 제45조(저작재산권의 양도)</td>
+                    <td>법령정보센터</td>
+                    <td><a href="https://www.law.go.kr/법령/저작권법" target="_blank">링크</a></td>
+                </tr>
+                <tr>
+                    <td>근로기준법(해고 제한/해고예고)</td>
+                    <td>법령정보센터</td>
+                    <td><a href="https://www.law.go.kr/법령/근로기준법" target="_blank">링크</a></td>
+                </tr>
+                <tr>
+                    <td>근로자퇴직급여 보장법</td>
+                    <td>법령정보센터</td>
+                    <td><a href="https://www.law.go.kr/법령/근로자퇴직급여보장법" target="_blank">링크</a></td>
+                </tr>
+                <tr>
+                    <td>SW분야 표준계약서</td>
+                    <td>SPRi</td>
+                    <td><a href="https://spri.kr/posts/view/23132" target="_blank">링크</a></td>
+                </tr>
+            </table>
+        </div>
+
+        <div style="text-align:center;margin-top:60px;padding-top:20px;border-top:2px solid #e2e8f0;color:#718096;">
+            <p><strong>작성자</strong>: 김해민</p>
+            <p><strong>작성일</strong>: 2026-02-08</p>
+        </div>
+    </section>
+</div>
+
+</body>
+
+</html>
