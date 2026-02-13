@@ -1,0 +1,1792 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>조근영 - Chapter 2 동사의 시제 보충학습 자료</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  /* ===== RESET & BASE ===== */
+  *, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 10pt;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 10pt;
+    line-height: 1.7;
+    color: #1a202c;
+    background: #ffffff !important;
+  }
+
+  /* ===== PAGE BREAK UTILITIES ===== */
+  .page-break-after {
+    page-break-after: always !important;
+  }
+  .page-break-before {
+    page-break-before: always !important;
+  }
+  .avoid-break {
+    page-break-inside: avoid !important;
+  }
+
+  h1, h2, h3, h4 {
+    page-break-after: avoid !important;
+  }
+
+  table {
+    page-break-inside: avoid !important;
+  }
+
+  /* ===== COVER PAGE ===== */
+  .cover-page {
+    background-color: #1e3a5f !important;
+    color: #ffffff !important;
+    height: 297mm;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+    margin: -16mm -14mm 0 -14mm;
+    padding: 60px 40px;
+    page-break-after: always !important;
+  }
+
+  .cover-page .cover-icon {
+    font-size: 48pt;
+    margin-bottom: 30px;
+  }
+
+  .cover-page .cover-title {
+    font-size: 26pt;
+    font-weight: 700;
+    color: #ffffff !important;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+    line-height: 1.3;
+  }
+
+  .cover-page .cover-subtitle {
+    font-size: 14pt;
+    font-weight: 300;
+    color: #a0c4e8 !important;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+  }
+
+  .cover-divider {
+    width: 80px;
+    height: 2px;
+    background-color: #ffffff !important;
+    margin: 0 auto 40px auto;
+  }
+
+  .cover-meta {
+    font-size: 10pt;
+    font-weight: 300;
+    color: #8ab4d6 !important;
+    line-height: 2;
+  }
+
+  /* ===== TABLE OF CONTENTS ===== */
+  .toc {
+    padding: 20px 0;
+  }
+
+  .toc h2 {
+    font-size: 20pt;
+    font-weight: 700;
+    color: #1e3a5f !important;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #1e3a5f;
+  }
+
+  .toc-section {
+    margin-bottom: 20px;
+  }
+
+  .toc-section-title {
+    font-size: 12pt;
+    font-weight: 700;
+    color: #2b6cb0 !important;
+    margin-bottom: 8px;
+    padding: 6px 0;
+  }
+
+  .toc-section-number {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    line-height: 28px;
+    text-align: center;
+    background-color: #2b6cb0 !important;
+    color: #ffffff !important;
+    border-radius: 50%;
+    font-size: 10pt;
+    font-weight: 700;
+    margin-right: 10px;
+    vertical-align: middle;
+  }
+
+  .toc-items {
+    list-style: none;
+    padding-left: 40px;
+  }
+
+  .toc-items li {
+    font-size: 10pt;
+    color: #4a5568 !important;
+    padding: 3px 0;
+    border-bottom: 1px dotted #e2e8f0;
+    line-height: 1.8;
+  }
+
+  .toc-items li span.toc-label {
+    color: #1a202c !important;
+  }
+
+  /* ===== HEADINGS ===== */
+  h1 {
+    font-size: 20pt;
+    font-weight: 700;
+    color: #1e3a5f !important;
+    margin: 20px 0 10px 0;
+    padding-bottom: 6px;
+    border-bottom: 3px solid #1e3a5f;
+    line-height: 1.3;
+  }
+
+  h2 {
+    font-size: 16pt;
+    font-weight: 700;
+    color: #2b6cb0 !important;
+    margin: 18px 0 10px 0;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #e2e8f0;
+    line-height: 1.3;
+  }
+
+  h3 {
+    font-size: 13pt;
+    font-weight: 700;
+    color: #2d3748 !important;
+    margin: 14px 0 8px 0;
+    line-height: 1.4;
+  }
+
+  h4 {
+    font-size: 11pt;
+    font-weight: 700;
+    color: #4a5568 !important;
+    margin: 10px 0 6px 0;
+    line-height: 1.4;
+  }
+
+  /* ===== PARAGRAPHS ===== */
+  p {
+    margin-bottom: 8px;
+  }
+
+  strong {
+    font-weight: 700;
+  }
+
+  /* ===== TABLES ===== */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 16px 0;
+    font-size: 9pt;
+    line-height: 1.6;
+  }
+
+  thead th {
+    background-color: #3182ce !important;
+    color: #ffffff !important;
+    font-weight: 700;
+    padding: 8px 10px;
+    text-align: left;
+    border: 1px solid #2b6cb0;
+    font-size: 9pt;
+  }
+
+  tbody td {
+    padding: 7px 10px;
+    border: 1px solid #e2e8f0;
+    vertical-align: top;
+  }
+
+  tbody tr:nth-child(odd) {
+    background-color: #ffffff !important;
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: #f7fafc !important;
+  }
+
+  /* Bold cells in first column */
+  tbody td:first-child {
+    font-weight: 500;
+  }
+
+  /* ===== RESULT MARKERS ===== */
+  .result-correct {
+    color: #38a169 !important;
+    font-weight: 700;
+  }
+
+  .result-wrong {
+    color: #e53e3e !important;
+    font-weight: 700;
+  }
+
+  /* ===== QUESTION BOX ===== */
+  .question-box {
+    background-color: #f7fafc !important;
+    border-left: 4px solid #3182ce;
+    padding: 10px 14px;
+    margin: 8px 0;
+    font-size: 10pt;
+    line-height: 1.7;
+  }
+
+  .question-box p {
+    margin: 0;
+  }
+
+  /* ===== ANSWER BOX ===== */
+  .answer-box {
+    background-color: #f0fff4 !important;
+    border-left: 4px solid #38a169;
+    padding: 8px 14px;
+    margin: 8px 0;
+    font-weight: 500;
+  }
+
+  /* ===== CODE / GRAMMAR BLOCK ===== */
+  .grammar-block {
+    background-color: #edf2f7 !important;
+    border: 1px solid #e2e8f0;
+    padding: 12px 16px;
+    margin: 12px 0;
+    font-family: 'Noto Sans KR', monospace;
+    font-size: 9pt;
+    line-height: 1.8;
+    white-space: pre-wrap;
+    page-break-inside: avoid !important;
+  }
+
+  /* ===== TIP / NOTE BOX ===== */
+  .tip-box {
+    background-color: #fffaf0 !important;
+    border-left: 4px solid #ed8936;
+    padding: 10px 16px;
+    margin: 12px 0;
+    page-break-inside: avoid !important;
+  }
+
+  .tip-box .tip-label {
+    font-weight: 700;
+    color: #c05621 !important;
+    font-size: 9pt;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  /* ===== WARNING BOX ===== */
+  .warning-box {
+    background-color: #fff5f5 !important;
+    border-left: 4px solid #e53e3e;
+    padding: 10px 16px;
+    margin: 12px 0;
+    page-break-inside: avoid !important;
+  }
+
+  .warning-box .warning-label {
+    font-weight: 700;
+    color: #e53e3e !important;
+    font-size: 9pt;
+    display: block;
+    margin-bottom: 4px;
+  }
+
+  /* ===== PROBLEM CARD ===== */
+  .problem-card {
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 14px 18px;
+    margin: 14px 0;
+    page-break-inside: avoid !important;
+    background-color: #ffffff !important;
+  }
+
+  .problem-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+    gap: 12px;
+  }
+
+  .problem-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    border-radius: 50%;
+    background-color: #3182ce !important;
+    color: #ffffff !important;
+    font-weight: 700;
+    font-size: 13pt;
+    line-height: 1;
+  }
+
+  .problem-title {
+    font-size: 13pt;
+    font-weight: 700;
+    color: #2d3748 !important;
+    margin: 0;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .problem-source {
+    display: inline-block;
+    background-color: #edf2f7 !important;
+    color: #4a5568 !important;
+    font-size: 8pt;
+    padding: 2px 10px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    font-weight: 500;
+  }
+
+  /* ===== VARIANT PROBLEMS ===== */
+  .variant-section {
+    background-color: #f7fafc !important;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 12px 16px;
+    margin-top: 12px;
+    page-break-inside: avoid !important;
+  }
+
+  .variant-section h4 {
+    color: #2b6cb0 !important;
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 10pt;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 6px;
+  }
+
+  .variant-item {
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px dotted #e2e8f0;
+  }
+
+  .variant-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .variant-q {
+    font-weight: 500;
+    margin-bottom: 3px;
+    font-size: 9.5pt;
+  }
+
+  .variant-a {
+    color: #38a169 !important;
+    font-size: 9pt;
+    padding-left: 16px;
+    font-weight: 500;
+  }
+
+  .variant-choices {
+    padding-left: 20px;
+    font-size: 9pt;
+    line-height: 1.8;
+    margin: 4px 0;
+  }
+
+  /* ===== FLOWCHART / STEP DIAGRAM ===== */
+  .flowchart {
+    margin: 16px 0;
+    page-break-inside: avoid !important;
+  }
+
+  .flow-step {
+    background-color: #edf2f7 !important;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    padding: 10px 16px;
+    margin-bottom: 4px;
+    font-size: 9.5pt;
+  }
+
+  .flow-step .step-label {
+    font-weight: 700;
+    color: #3182ce !important;
+    margin-right: 8px;
+  }
+
+  .flow-step .step-sub {
+    padding-left: 24px;
+    font-size: 9pt;
+    color: #4a5568 !important;
+    margin-top: 4px;
+    line-height: 1.7;
+  }
+
+  .flow-arrow {
+    text-align: center;
+    font-size: 14pt;
+    color: #3182ce !important;
+    line-height: 1.2;
+    margin: 2px 0;
+  }
+
+  /* ===== CHECKLIST ===== */
+  .checklist-group {
+    margin-bottom: 16px;
+    page-break-inside: avoid !important;
+  }
+
+  .checklist-group-title {
+    font-size: 11pt;
+    font-weight: 700;
+    color: #2b6cb0 !important;
+    margin-bottom: 8px;
+    padding: 4px 0;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .checklist-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    padding: 4px 0;
+    font-size: 9.5pt;
+    line-height: 1.6;
+  }
+
+  .checkbox {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    min-width: 14px;
+    border: 1.5px solid #a0aec0;
+    border-radius: 2px;
+    margin-top: 3px;
+  }
+
+  /* ===== HORIZONTAL RULE ===== */
+  hr {
+    border: none;
+    border-top: 1px solid #e2e8f0;
+    margin: 20px 0;
+  }
+
+  /* ===== SECTION HEADER BAR ===== */
+  .section-header {
+    background-color: #1e3a5f !important;
+    color: #ffffff !important;
+    padding: 12px 20px;
+    margin: 20px -14mm 14px -14mm;
+    padding-left: 14mm;
+    padding-right: 14mm;
+    font-size: 16pt;
+    font-weight: 700;
+    line-height: 1.3;
+  }
+
+  .section-header .section-num {
+    font-size: 12pt;
+    font-weight: 300;
+    display: block;
+    margin-bottom: 2px;
+    color: #a0c4e8 !important;
+  }
+
+  /* ===== COMPARISON TABLE HIGHLIGHT ===== */
+  .highlight-row-green td {
+    background-color: #f0fff4 !important;
+  }
+
+  .highlight-row-red td {
+    background-color: #fff5f5 !important;
+  }
+
+  /* ===== APPENDIX RESULT TABLE ===== */
+  .result-table tbody tr.row-wrong {
+    background-color: #fff5f5 !important;
+  }
+
+  .result-table tbody tr.row-wrong td {
+    background-color: #fff5f5 !important;
+  }
+
+  /* ===== INLINE MARKERS ===== */
+  .marker-o {
+    color: #38a169 !important;
+    font-weight: 700;
+  }
+
+  .marker-x {
+    color: #e53e3e !important;
+    font-weight: 700;
+  }
+
+  /* ===== SUB SECTION DIVIDER ===== */
+  .sub-divider {
+    border-top: 1px solid #e2e8f0;
+    margin: 24px 0;
+  }
+
+  /* ===== EXPRESSION TABLE (wider first col) ===== */
+  .expression-table td:first-child {
+    white-space: nowrap;
+    font-weight: 700;
+  }
+
+  /* ===== COMPARISON HIGHLIGHT ===== */
+  .compare-table thead th:nth-child(2) {
+    background-color: #2b6cb0 !important;
+  }
+
+  .compare-table thead th:nth-child(3) {
+    background-color: #38a169 !important;
+  }
+
+  /* ===== ANSWER KEY ===== */
+  .answer-key-section {
+    columns: 2;
+    column-gap: 24px;
+  }
+
+  .answer-key-group {
+    page-break-inside: avoid !important;
+    margin-bottom: 14px;
+    padding: 10px 12px;
+    background-color: #f7fafc !important;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    break-inside: avoid;
+  }
+
+  .answer-key-group h4 {
+    font-size: 9.5pt;
+    font-weight: 700;
+    color: #2b6cb0 !important;
+    margin: 0 0 6px 0;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .answer-key-items p {
+    font-size: 8.5pt;
+    line-height: 1.6;
+    margin: 2px 0;
+    color: #2d3748 !important;
+  }
+
+  /* ===== PRINT ADJUSTMENTS ===== */
+  @media print {
+    body {
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+    .cover-page {
+      margin: -16mm -14mm 0 -14mm;
+    }
+    .section-header {
+      margin-left: -14mm;
+      margin-right: -14mm;
+      padding-left: 14mm;
+      padding-right: 14mm;
+    }
+  }
+</style>
+</head>
+<body>
+
+<!-- ============================================= -->
+<!-- SECTION 1: 오답 총정리 -->
+<!-- ============================================= -->
+<div class="section-header">
+  <span class="section-num">SECTION 1</span>
+  오답 총정리
+</div>
+
+<h3>틀린 문제 + 별표 문제 (총 15문제)</h3>
+
+<table class="avoid-break">
+  <thead>
+    <tr>
+      <th style="width:30px;">#</th>
+      <th style="width:80px;">페이지</th>
+      <th style="width:120px;">위치</th>
+      <th>문제 내용</th>
+      <th style="width:140px;">핵심 포인트</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>1</td><td>p.41</td><td>EXERCISE 3번 #5</td><td>"Jake is going to have dinner when Judy came home"</td><td>시제 일치 → was going to</td></tr>
+    <tr><td>2</td><td>p.45</td><td>EXERCISE 7번 #4</td><td>"will have arrive" → will have arrived</td><td>미래완료 p.p. 형태</td></tr>
+    <tr><td>3</td><td>p.47</td><td>EXERCISE 9번 #1</td><td>"No, I ___ care of my patients then. (take)"</td><td>미래진행형 will be taking</td></tr>
+    <tr><td>4</td><td>p.48</td><td>단원종합문제 #2</td><td>시제 일치 오류 짝짓기 (ⓓ,ⓔ)</td><td>has→had, go→went</td></tr>
+    <tr><td>5</td><td>p.53</td><td>#25 (2)</td><td>"지난주부터 계속 미술 수업" 문장 완성</td><td>현재완료진행 has been taking</td></tr>
+    <tr><td>6</td><td>p.53</td><td>#23 (2)</td><td>"토요일부터 계속 눈" 문장 완성</td><td>현재완료진행 has been snowing</td></tr>
+    <tr><td>7</td><td>p.55</td><td>실전기출문제 #1</td><td>Zátopek 지문 밑줄 중 틀린 것</td><td>④ married to → was married to / married</td></tr>
+    <tr><td>8</td><td>p.57</td><td>실전기출문제 #6</td><td>Mental development 지문</td><td>④ give → are given (수동)</td></tr>
+    <tr><td>9</td><td>p.75</td><td>Practice #72</td><td>"by the time the product launches..."</td><td>미래완료 will have developed</td></tr>
+    <tr><td>10</td><td>p.76</td><td>Practice #74</td><td>"By next year, they ___ married for 26 years"</td><td>미래완료 will have been</td></tr>
+    <tr><td>11</td><td>p.77</td><td>★ Practice #76</td><td>"By the time my flight ___, my family ___"</td><td>시간부사절 현재 + 미래완료진행</td></tr>
+    <tr><td>12</td><td>p.78</td><td>Practice #81</td><td>"The police officer asked...what the driver ___"</td><td>간접의문문 과거진행 was doing</td></tr>
+    <tr><td>14</td><td>p.79</td><td>Practice #92</td><td>"...as soon as the CEO ___ the final proposal"</td><td>시간부사절 현재 approves</td></tr>
+    <tr><td>15</td><td>p.79</td><td>Practice #94</td><td>"I am not sure if the package ___ in time"</td><td>명사절 if → will arrive</td></tr>
+  </tbody>
+</table>
+
+<h3>오답 패턴 분석 (7개 테마)</h3>
+
+<table class="avoid-break">
+  <thead>
+    <tr>
+      <th style="width:50px;">테마</th>
+      <th style="width:100px;">관련 문제</th>
+      <th style="width:60px;">빈도</th>
+      <th style="width:70px;">중요도</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>A</strong></td><td>#2, #9, #10</td><td>3문제</td><td>최우선</td></tr>
+    <tr><td colspan="4" style="padding-left: 30px;"><strong>미래완료</strong> (will have + p.p.)</td></tr>
+    <tr><td><strong>B</strong></td><td>#5, #6, #11</td><td>3문제</td><td>최우선</td></tr>
+    <tr><td colspan="4" style="padding-left: 30px;"><strong>완료진행형</strong> (have/has/had/will have been + V-ing)</td></tr>
+    <tr><td><strong>C</strong></td><td>#1, #4, #12</td><td>3문제</td><td>높음</td></tr>
+    <tr><td colspan="4" style="padding-left: 30px;"><strong>시제 일치 / 간접의문문</strong></td></tr>
+    <tr><td><strong>D</strong></td><td>#11, #14</td><td>2문제</td><td>높음</td></tr>
+    <tr><td colspan="4" style="padding-left: 30px;"><strong>시간·조건 부사절의 시제</strong> (현재시제 대용)</td></tr>
+    <tr><td><strong>E</strong></td><td>#7, #8</td><td>2문제</td><td>높음</td></tr>
+    <tr><td colspan="4" style="padding-left: 30px;"><strong>수능형 어법 판단</strong> (지문 기반)</td></tr>
+    <tr><td><strong>F</strong></td><td>#3</td><td>1문제</td><td>보통</td></tr>
+    <tr><td colspan="4" style="padding-left: 30px;"><strong>미래진행형</strong> (will be + V-ing)</td></tr>
+    <tr><td><strong>G</strong></td><td>#15</td><td>1문제</td><td>보통</td></tr>
+    <tr><td colspan="4" style="padding-left: 30px;"><strong>명사절 if vs 부사절 if</strong></td></tr>
+  </tbody>
+</table>
+
+<div class="page-break-after"></div>
+
+<h3>문제 원문</h3>
+
+<!-- Problem #1 -->
+<div class="problem-card">
+  <div class="problem-header">
+    <span class="problem-badge">1</span>
+    <h3 class="problem-title">시제 일치 (과거 기준)</h3>
+  </div>
+  <span class="problem-source">p.41 EXERCISE 3번 #5</span>
+  <div class="question-box">
+    <p><strong>유형:</strong> 틀린 부분 찾아 고치기</p>
+    <p>Jake <strong>is going to</strong> have dinner when Judy <strong>came</strong> home.</p>
+  </div>
+  <div class="answer-box">
+    <strong>정답:</strong> is going to → <strong>was going to</strong> (came가 과거이므로 시제 일치)
+  </div>
+</div>
+
+<!-- Problem #2 -->
+<div class="problem-card">
+  <div class="problem-header">
+    <span class="problem-badge">2</span>
+    <h3 class="problem-title">미래완료 p.p. 형태</h3>
+  </div>
+  <span class="problem-source">p.45 EXERCISE 7번 #4</span>
+  <div class="question-box">
+    <p><strong>유형:</strong> 보기 글을 읽고 빈칸 채우기 (Susan의 내일 일과)</p>
+    <p>Susan goes to school every day. She starts for school at 7 o'clock and arrives there at 7:30. (...) This is the same routine every day, so it will not change tomorrow.</p>
+    <p><strong>#4:</strong> She ___ at school at 7:30 a.m. tomorrow. (arrive)</p>
+  </div>
+  <div class="answer-box">
+    <strong>학생 오답:</strong> will have arrive<br>
+    <strong>정답:</strong> <strong>will have arrived</strong> (미래완료 = will have + p.p.)
+  </div>
+</div>
+
+<!-- Problem #3 -->
+<div class="problem-card">
+  <div class="problem-header">
+    <span class="problem-badge">3</span>
+    <h3 class="problem-title">미래진행형</h3>
+  </div>
+  <span class="problem-source">p.47 EXERCISE 9번 #1</span>
+  <div class="question-box">
+    <p><strong>유형:</strong> 괄호 안의 단어를 시제에 맞게 고쳐 쓰기</p>
+    <p>A: Is it okay if I come at 8 o'clock?<br>
+    B: No, I ___ care of my patients then. (take)</p>
+  </div>
+  <div class="answer-box">
+    <strong>정답:</strong> <strong>will be taking</strong> (미래진행형 — 미래 특정 시점에 진행 중인 동작)
+  </div>
+</div>
+
+<!-- Problem #4 -->
+<div class="problem-card">
+  <div class="problem-header">
+    <span class="problem-badge">4</span>
+    <h3 class="problem-title">시제 일치 오류 찾기</h3>
+  </div>
+  <span class="problem-source">p.48 단원종합문제 #2</span>
+  <div class="question-box">
+    <p><strong>유형:</strong> 밑줄 친 부분 중 어법상 어색한 것으로만 짝지어진 것은?</p>
+    <p>ⓐ After she had completed her presentation, the audience gave her a big applause for her excellent work.<br>
+    ⓑ He will be studying for the midterm test all week, so he won't be able to go on a picnic.<br>
+    ⓒ I have read all the books in that series already, and now I'm waiting for the next one.<br>
+    ⓓ She often told me that she liked to go to places she <strong>has never visited</strong> before.<br>
+    ⓔ She was not home when I <strong>go</strong> there to borrow a book for my assignment.</p>
+    <p>① ⓐ, ⓑ &nbsp; ② ⓑ, ⓒ &nbsp; ③ ⓒ, ⓓ &nbsp; ④ <strong>ⓓ, ⓔ</strong> &nbsp; ⑤ ⓐ, ⓔ</p>
+  </div>
+  <div class="answer-box">
+    <strong>정답:</strong> ④ (ⓓ has never visited → <strong>had never visited</strong>, ⓔ go → <strong>went</strong>)
+  </div>
+</div>
+
+<!-- Problem #5 -->
+<div class="problem-card">
+  <div class="problem-header">
+    <span class="problem-badge">5</span>
+    <h3 class="problem-title">현재완료진행</h3>
+  </div>
+  <span class="problem-source">p.53 #25 (2)</span>
+  <div class="question-box">
+    <p><strong>유형:</strong> 두 문장을 합쳐 같은 뜻 만들기</p>
+    <p>• He started taking Art lessons in New York University last month.<br>
+    • He is still taking Art lessons.<br>
+    → He ___ Art lessons since last month.</p>
+  </div>
+  <div class="answer-box">
+    <strong>정답:</strong> <strong>has been taking</strong> (현재완료진행 — 과거 시작 + 현재까지 진행 중)
+  </div>
+</div>
+
+<!-- Problem #6 -->
+<div class="problem-card">
+  <div class="problem-header">
+    <span class="problem-badge">6</span>
+    <h3 class="problem-title">현재완료진행 (since)</h3>
+  </div>
+  <span class="problem-source">p.53 #23 (2)</span>
+  <div class="question-box">
+    <p><strong>유형:</strong> 주어진 단어를 활용하여 우리말에 맞게 빈칸 채우기</p>
+    <p>토요일부터 계속 눈이 내리고 있다. (week, since, it, snow, last)</p>
+  </div>
+  <div class="answer-box">
+    <strong>정답:</strong> <strong>It has been snowing since last week.</strong> (현재완료진행)
+  </div>
+</div>
+
+<!-- Problem #7 -->
+<div class="problem-card">
+  <div class="problem-header">
+    <span class="problem-badge">7</span>
+    <h3 class="problem-title">수능형 어법 (marry 용법)</h3>
+  </div>
+  <span class="problem-source">p.55 실전기출문제 #1</span>
+  <div class="question-box">
+    <p><strong>유형:</strong> 다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?</p>
+    <p>Emil Zátopek is considered one of the greatest long-distance runners ever. He was also famous for his distinctive running style. While ① <strong>working</strong> in a shoe factory, he participated in a 1,500-meter race and won second place. After that event, he took a more serious interest in running and ② <strong>devoted</strong> himself to it. At the 1952 Olympic Games in Helsinki, he won three gold medals in the 5,000-meter and 10,000-meter races and in the marathon, ③ <strong>breaking</strong> Olympic records in each. He ④ <strong>married to</strong> Dana Zátopková, who was an Olympic gold medalist, too. Zátopek was also noted for his friendly personality. In 1966, Zátopek invited Ron Clarke, a great Australian runner who ⑤ <strong>had never won</strong> an Olympic gold medal, to an athletic meeting in Prague. After the meeting, he gave Clarke one of his gold medals as a gift.</p>
+  </div>
+  <div class="answer-box">
+    <strong>정답:</strong> ④ (married to → <strong>was married to</strong> 또는 <strong>married</strong> + 목적어. marry는 타동사이므로 전치사 to 없이 직접 목적어를 취함)
+  </div>
+</div>
+
+<!-- Problem #8 -->
+<div class="problem-card">
+  <div class="problem-header">
+    <span class="problem-badge">8</span>
+    <h3 class="problem-title">수능형 어법 (능동/수동)</h3>
+  </div>
+  <span class="problem-source">p.57 실전기출문제 #6</span>
+  <div class="question-box">
+    <p><strong>유형:</strong> 다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?</p>
+    <p>Mental development consists of ① <strong>internalizing</strong> social patterns and gradually becoming a responsible actor among other responsible actors. In Denmark, the age of criminal responsibility is 15 years, ② <strong>which</strong> means that we then say that people have ③ <strong>developed</strong> sufficient mental maturity to be accountable for their actions at this point. And at the age of 18, people ④ <strong>give</strong> the right to vote and are thereby formally included in the basic democratic process. I do not know ⑤ <strong>whether</strong> these age boundaries are optimal. However, it is clear that mental development takes place at different rates for different individuals, and depends especially on the social and family environment they have been given. Therefore, having formal limits for responsibility from a specific age that apply to everyone is a somewhat questionable practice. But the question, of course, is whether it can be done any differently.</p>
+  </div>
+  <div class="answer-box">
+    <strong>정답:</strong> ④ (give → <strong>are given</strong>. 사람들이 투표권을 "주는" 것이 아니라 "받는" 것이므로 수동태)
+  </div>
+</div>
+
+<div class="page-break-after"></div>
+
+<!-- Problem #9 -->
+<div class="problem-card">
+  <div class="problem-header">
+    <span class="problem-badge">9</span>
+    <h3 class="problem-title">미래완료 (by the time)</h3>
+  </div>
+  <span class="problem-source">p.75 Practice #72</span>
+  <div class="question-box">
+    <p><strong>유형:</strong> 객관식 빈칸 채우기</p>
+    <p>The marketing team is working diligently on the new campaign. They are confident that by the time the product launches next month, they ___ a comprehensive advertising strategy to attract a wide range of customers.</p>
+    <p>① <strong>will have developed</strong> &nbsp; ② developed &nbsp; ③ had developed &nbsp; ④ are developing &nbsp; ⑤ will develop</p>
+  </div>
+  <div class="answer-box">
+    <strong>정답:</strong> ① will have developed (by the time + 현재시제 → 미래완료)
+  </div>
+</div>
+
+<!-- Problem #10 -->
+<div class="problem-card">
+  <div class="problem-header">
+    <span class="problem-badge">10</span>
+    <h3 class="problem-title">미래완료 (By + 미래시점)</h3>
+  </div>
+  <span class="problem-source">p.76 Practice #74</span>
+  <div class="question-box">
+    <p><strong>유형:</strong> 객관식 빈칸 채우기</p>
+    <p>My parents are celebrating their 25th wedding anniversary this year. By next year, they ___ married for 26 years, a milestone that they plan to celebrate with a trip to Europe.</p>
+    <p>① will be &nbsp; ② have been &nbsp; ③ had been &nbsp; ④ <strong>will have been</strong> &nbsp; ⑤ were</p>
+  </div>
+  <div class="answer-box">
+    <strong>정답:</strong> ④ will have been (By next year = 미래 기준점 → 미래완료)
+  </div>
+</div>
+
+<!-- Problem #11 -->
+<div class="problem-card">
+  <div class="problem-header">
+    <span class="problem-badge">11</span>
+    <h3 class="problem-title">★ 시간부사절 + 미래완료진행</h3>
+  </div>
+  <span class="problem-source">p.77 ★ Practice #76</span>
+  <div class="question-box">
+    <p><strong>유형:</strong> 객관식 빈칸 두 개 채우기 (★ 별표)</p>
+    <p>By the time my flight ___ in Seoul tomorrow afternoon, my family ___ for me at the arrival gate for at least half an hour.</p>
+    <p>① will land / will wait &nbsp; ② <strong>lands / will have been waiting</strong> &nbsp; ③ landed / had been waiting &nbsp; ④ lands / will wait &nbsp; ⑤ will land / will have waited</p>
+  </div>
+  <div class="answer-box">
+    <strong>정답:</strong> ② lands / will have been waiting<br>
+    • 첫 번째 빈칸: 시간부사절(By the time...)에서 <strong>현재시제</strong>로 미래 대용<br>
+    • 두 번째 빈칸: <strong>미래완료진행</strong> (for at least half an hour = 기간 → 진행형)
+  </div>
+</div>
+
+<!-- Problem #12 -->
+<div class="problem-card">
+  <div class="problem-header">
+    <span class="problem-badge">12</span>
+    <h3 class="problem-title">간접의문문 + 과거진행</h3>
+  </div>
+  <span class="problem-source">p.78 Practice #81</span>
+  <div class="question-box">
+    <p><strong>유형:</strong> 객관식 빈칸 채우기</p>
+    <p>The police officer asked the witness what the driver ___ at the moment of the accident.</p>
+    <p>① does &nbsp; ② did &nbsp; ③ <strong>was doing</strong> &nbsp; ④ has done &nbsp; ⑤ had done</p>
+  </div>
+  <div class="answer-box">
+    <strong>정답:</strong> ③ was doing (간접의문문: asked(과거) → 종속절도 과거, at the moment = 그 순간 진행 중 → 과거진행)
+  </div>
+</div>
+
+<!-- Problem #14 -->
+<div class="problem-card">
+  <div class="problem-header">
+    <span class="problem-badge">14</span>
+    <h3 class="problem-title">시간부사절 현재시제</h3>
+  </div>
+  <span class="problem-source">p.79 Practice #92</span>
+  <div class="question-box">
+    <p><strong>유형:</strong> 객관식 빈칸 채우기</p>
+    <p>The marketing team will launch the new advertising campaign as soon as the CEO ___ the final proposal.</p>
+    <p>① will approve &nbsp; ② <strong>approves</strong> &nbsp; ③ approved &nbsp; ④ has approved &nbsp; ⑤ is approving</p>
+  </div>
+  <div class="answer-box">
+    <strong>정답:</strong> ② approves (as soon as = 시간부사절 → 현재시제로 미래 대용)
+  </div>
+</div>
+
+<!-- Problem #15 -->
+<div class="problem-card">
+  <div class="problem-header">
+    <span class="problem-badge">15</span>
+    <h3 class="problem-title">명사절 if (= whether)</h3>
+  </div>
+  <span class="problem-source">p.79 Practice #94</span>
+  <div class="question-box">
+    <p><strong>유형:</strong> 객관식 빈칸 채우기</p>
+    <p>I am not sure if the package ___ in time for her birthday next Friday.</p>
+    <p>① arrives &nbsp; ② arrived &nbsp; ③ <strong>will arrive</strong> &nbsp; ④ has arrived &nbsp; ⑤ would arrive</p>
+  </div>
+  <div class="answer-box">
+    <strong>정답:</strong> ③ will arrive (이 문장의 if = whether(~인지), 명사절 → 미래시제 사용 가능. 부사절 if(만약)와 구분!)
+  </div>
+</div>
+
+<!-- ============================================= -->
+<!-- SECTION 2: 해설 파트 -->
+<!-- ============================================= -->
+<div class="page-break-before section-header">
+  <span class="section-num">SECTION 2</span>
+  해설 파트
+</div>
+
+<!-- 테마 A -->
+<h2>테마 A: 미래완료 (will have + p.p.) — #2, #9, #10</h2>
+
+<div class="tip-box">
+  <span class="tip-label">핵심 개념</span>
+  <p>미래완료는 <strong>"미래의 어떤 시점까지 완료될 동작"</strong>을 나타낸다.</p>
+</div>
+
+<div class="grammar-block">공식: will have + 과거분사(p.p.)
+
+자주 함께 쓰이는 표현:
+• by + 미래 시점 (by tomorrow, by next year, by the time...)
+• before + 미래 시점</div>
+
+<h4>왜 틀렸을까?</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th style="width:60px;">문제</th>
+      <th>학생의 실수</th>
+      <th>원인</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>#2</td><td>will have <strong>arrive</strong></td><td>p.p. 형태를 빠뜨림 (arrive → arrived)</td></tr>
+    <tr><td>#9</td><td>선지 혼동</td><td>"by the time + 현재시제" 뒤에 미래완료가 온다는 패턴 미숙</td></tr>
+    <tr><td>#10</td><td>선지 혼동</td><td>"By next year" = 미래 기준점임을 인식 못함</td></tr>
+  </tbody>
+</table>
+
+<h4>규칙 정리</h4>
+
+<ol style="line-height: 1.9; margin: 10px 0 10px 20px;">
+  <li><strong>will have + 반드시 p.p.</strong> (과거분사): arrive → arrived, develop → developed, be → been</li>
+  <li><strong>by the time + 주어 + 현재시제(동사원형/동사-s)</strong> → 주절은 미래완료</li>
+  <li><strong>By + 미래 시점</strong> → 미래완료</li>
+</ol>
+
+<h4>추가 예문</h4>
+
+<ul style="line-height: 1.9; margin: 10px 0 10px 20px;">
+  <li>By 2030, scientists <strong>will have discovered</strong> new treatments for cancer.</li>
+  <li>She <strong>will have finished</strong> the project by the deadline.</li>
+  <li>By the time you arrive, I <strong>will have left</strong>.</li>
+</ul>
+
+<div class="page-break-before"></div>
+
+<!-- 테마 B -->
+<h2>테마 B: 완료진행형 (have/has/had/will have been + V-ing) — #5, #6, #11</h2>
+
+<div class="tip-box">
+  <span class="tip-label">핵심 개념</span>
+  <p>완료진행형은 <strong>"특정 시점까지 계속 진행 중인 동작"</strong>을 강조한다. 완료형이 "완료"에 초점이라면, 완료진행형은 <strong>"지속/진행"</strong>에 초점.</p>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th style="width:150px;">시제</th>
+      <th style="width:200px;">공식</th>
+      <th>의미</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>현재완료진행</td><td>have/has been + V-ing</td><td>과거부터 지금까지 계속</td></tr>
+    <tr><td>과거완료진행</td><td>had been + V-ing</td><td>과거의 어떤 시점까지 계속</td></tr>
+    <tr><td>미래완료진행</td><td>will have been + V-ing</td><td>미래의 어떤 시점까지 계속</td></tr>
+  </tbody>
+</table>
+
+<h4>핵심 단서 키워드</h4>
+
+<ul style="line-height: 1.9; margin: 10px 0 10px 20px;">
+  <li><strong>since</strong> + 시작 시점 → 완료진행 (since last week, since Monday)</li>
+  <li><strong>for</strong> + 기간 → 완료진행 (for three hours, for half an hour)</li>
+</ul>
+
+<h4>왜 틀렸을까?</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th style="width:60px;">문제</th>
+      <th style="width:180px;">핵심</th>
+      <th>학생의 실수</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>#5</td><td>has been taking</td><td>현재완료진행 구조 조립 실수</td></tr>
+    <tr><td>#6</td><td>has been snowing</td><td>since + 시작점 → 현재완료진행 인식 부족</td></tr>
+    <tr><td>#11</td><td>will have been waiting</td><td>for + 기간 → 미래완료"진행"형까지 확장 못함</td></tr>
+  </tbody>
+</table>
+
+<h4>추가 예문</h4>
+
+<ul style="line-height: 1.9; margin: 10px 0 10px 20px;">
+  <li>I <strong>have been studying</strong> English since 2020. (현재완료진행)</li>
+  <li>He <strong>had been waiting</strong> for two hours when the bus finally came. (과거완료진행)</li>
+  <li>By December, she <strong>will have been working</strong> here for 10 years. (미래완료진행)</li>
+</ul>
+
+<div class="page-break-before"></div>
+
+<!-- 테마 C -->
+<h2>테마 C: 시제 일치 / 간접의문문 — #1, #4, #12</h2>
+
+<div class="tip-box">
+  <span class="tip-label">핵심 개념</span>
+  <p><strong>시제 일치 원칙:</strong> 주절이 과거시제이면 종속절도 과거시제로 맞춘다.</p>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th style="width:200px;">주절</th>
+      <th>종속절 변환</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>said / told / asked (과거)</td><td>현재 → 과거, 현재완료 → 과거완료, will → would</td></tr>
+  </tbody>
+</table>
+
+<p><strong>간접의문문:</strong> 의문사(what, when, where...) + <strong>주어 + 동사</strong> (의문문 어순 X)</p>
+
+<h4>왜 틀렸을까?</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th style="width:60px;">문제</th>
+      <th>핵심</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>#1</td><td>when Judy <strong>came</strong> (과거) → is going to도 <strong>was going to</strong>로</td></tr>
+    <tr><td>#4</td><td>told(과거) → has visited를 <strong>had visited</strong>로 / was(과거) → go를 <strong>went</strong>로</td></tr>
+    <tr><td>#12</td><td>asked(과거) + at the moment(순간 진행) → <strong>was doing</strong> (과거진행)</td></tr>
+  </tbody>
+</table>
+
+<h4>규칙 정리</h4>
+
+<ol style="line-height: 1.9; margin: 10px 0 10px 20px;">
+  <li><strong>when/before/after</strong> 등으로 연결된 두 절은 시제가 일치해야 한다</li>
+  <li>간접의문문: 주절이 과거 → 종속절도 과거로 한 단계 후퇴</li>
+  <li>"at the moment of ~" = 특정 순간 진행 중 → <strong>과거진행</strong> (was/were + V-ing)</li>
+</ol>
+
+<h4>추가 예문</h4>
+
+<ul style="line-height: 1.9; margin: 10px 0 10px 20px;">
+  <li>He <strong>said</strong> that he <strong>was</strong> tired. (says → said이면 is → was)</li>
+  <li>She <strong>asked</strong> me where I <strong>lived</strong>. (live → lived)</li>
+  <li>The teacher <strong>told</strong> us that the Earth <strong>revolves</strong> around the Sun. (불변의 진리는 현재시제 유지!)</li>
+</ul>
+
+<div class="page-break-before"></div>
+
+<!-- 테마 D -->
+<h2>테마 D: 시간·조건 부사절의 시제 — #11, #14</h2>
+
+<div class="tip-box">
+  <span class="tip-label">핵심 개념</span>
+  <p><strong>시간·조건 부사절</strong>에서는 미래 내용이라도 <strong>현재시제</strong>를 쓴다.</p>
+</div>
+
+<p><strong>대표 접속사:</strong> when, before, after, until, as soon as, by the time, if(만약~라면)</p>
+
+<div class="grammar-block">공식: 시간/조건 부사절 = 현재시제 + 주절 = 미래시제</div>
+
+<h4>왜 틀렸을까?</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th style="width:60px;">문제</th>
+      <th>오답 유혹</th>
+      <th>정답</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>#11</td><td>will land (미래 내용이니까 will?)</td><td><strong>lands</strong> (부사절이므로 현재)</td></tr>
+    <tr><td>#14</td><td>will approve</td><td><strong>approves</strong> (as soon as = 부사절)</td></tr>
+  </tbody>
+</table>
+
+<h4>주의! 명사절 if vs 부사절 if (#15와 연결)</h4>
+
+<table>
+  <thead>
+    <tr>
+      <th style="width:100px;">구분</th>
+      <th style="width:160px;">if의 의미</th>
+      <th>시제 규칙</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>부사절</strong> if</td><td>만약 ~라면 (조건)</td><td>현재시제로 미래 대용</td></tr>
+    <tr><td><strong>명사절</strong> if</td><td>~인지 아닌지 (= whether)</td><td>미래시제 사용 가능</td></tr>
+  </tbody>
+</table>
+
+<ul style="line-height: 1.9; margin: 10px 0 10px 20px;">
+  <li><strong>부사절:</strong> If it <strong>rains</strong> tomorrow, I will stay home. (만약)</li>
+  <li><strong>명사절:</strong> I don't know if it <strong>will rain</strong> tomorrow. (~인지)</li>
+</ul>
+
+<div class="page-break-before"></div>
+
+<!-- 테마 E -->
+<h2>테마 E: 수능형 어법 판단 — #7, #8</h2>
+
+<h3>#7 해설: marry의 용법</h3>
+
+<div class="tip-box">
+  <span class="tip-label">핵심</span>
+  <p>marry는 <strong>타동사</strong> → 전치사 없이 바로 목적어를 취한다.</p>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th style="width:200px;">표현</th>
+      <th style="width:80px;">맞는지</th>
+      <th>설명</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>He <strong>married</strong> Dana.</td><td>O</td><td>타동사 + 목적어</td></tr>
+    <tr><td>He <strong>was married to</strong> Dana.</td><td>O</td><td>be married to = ~와 결혼한 상태</td></tr>
+    <tr><td>He <strong>married to</strong> Dana.</td><td><strong>X</strong></td><td>타동사에 전치사 to를 붙이면 안 됨</td></tr>
+    <tr><td>He <strong>got married to</strong> Dana.</td><td>O</td><td>get married to = ~와 결혼하다</td></tr>
+  </tbody>
+</table>
+
+<p><strong>지문 속 오류:</strong> "He ④ married to Dana" → <strong>was married to</strong> 또는 <strong>married</strong> (to 삭제)</p>
+
+<div class="warning-box">
+  <span class="warning-label">유사 타동사 주의</span>
+  <p>marry, enter, reach, attend, discuss, mention (전치사 없이 목적어)</p>
+</div>
+
+<h3>#8 해설: 능동 vs 수동</h3>
+
+<div class="tip-box">
+  <span class="tip-label">핵심</span>
+  <p>주어가 동작의 <strong>주체</strong>인지 <strong>대상</strong>인지 판단</p>
+</div>
+
+<ul style="line-height: 1.9; margin: 10px 0 10px 20px;">
+  <li>People ④ <strong>give</strong> the right to vote (X) → 사람들이 투표권을 "주는" 건 말이 안 됨</li>
+  <li>People <strong>are given</strong> the right to vote (O) → 사람들은 투표권을 "부여받는" 것</li>
+</ul>
+
+<p><strong>능동/수동 판단 팁:</strong> 주어 + 동사를 읽고 "주어가 ~하는 건가, ~당하는 건가?" 를 생각</p>
+
+<div class="page-break-before"></div>
+
+<!-- 테마 F -->
+<h2>테마 F: 미래진행형 — #3</h2>
+
+<div class="tip-box">
+  <span class="tip-label">핵심 개념</span>
+  <p>미래진행형은 <strong>"미래의 특정 시점에 진행 중일 동작"</strong>을 나타낸다.</p>
+</div>
+
+<div class="grammar-block">공식: will be + V-ing
+
+단서: at that time, then, at 8 o'clock (tomorrow), this time next week 등</div>
+
+<h4>#3 해설</h4>
+
+<ul style="line-height: 1.9; margin: 10px 0 10px 20px;">
+  <li>A: "Is it okay if I come at <strong>8 o'clock</strong>?" → 미래의 특정 시점</li>
+  <li>B: "No, I ___ care of my patients <strong>then</strong>." → 그 시점에 진행 중</li>
+  <li>→ <strong>will be taking</strong> (미래진행)</li>
+</ul>
+
+<h4>추가 예문</h4>
+
+<ul style="line-height: 1.9; margin: 10px 0 10px 20px;">
+  <li>This time tomorrow, I <strong>will be flying</strong> to Paris.</li>
+  <li>Don't call at 9 — she <strong>will be sleeping</strong> then.</li>
+</ul>
+
+<!-- 테마 G -->
+<h2>테마 G: 명사절 if vs 부사절 if — #15</h2>
+
+<div class="tip-box">
+  <span class="tip-label">핵심 개념 (테마 D 보충)</span>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th style="width:100px;">구분</th>
+      <th style="width:120px;">if =</th>
+      <th style="width:120px;">뒤에 미래시제?</th>
+      <th>예문</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td>부사절</td><td>만약 ~라면</td><td>X (현재시제)</td><td>If it <strong>rains</strong>, I will stay.</td></tr>
+    <tr><td>명사절</td><td>~인지 (= whether)</td><td><strong>O</strong> (will 가능)</td><td>I wonder if it <strong>will rain</strong>.</td></tr>
+  </tbody>
+</table>
+
+<h4>#15 해설</h4>
+
+<ul style="line-height: 1.9; margin: 10px 0 10px 20px;">
+  <li>"I am not sure <strong>if</strong> the package ___ in time"</li>
+  <li>이 if = "~인지 아닌지" (= whether) → <strong>명사절</strong></li>
+  <li>명사절이므로 미래시제 가능 → <strong>will arrive</strong></li>
+  <li>만약 "If the package arrives, I will..." 이었다면 → 부사절이므로 현재시제</li>
+</ul>
+
+<!-- ============================================= -->
+<!-- SECTION 3: 변형문제 파트 -->
+<!-- ============================================= -->
+<div class="page-break-before section-header">
+  <span class="section-num">SECTION 3</span>
+  변형문제 파트
+</div>
+
+<p style="font-size: 10pt; color: #4a5568; margin-bottom: 20px;">각 문제당 5개의 변형문제. 정답은 각 세트 마지막에 표기.</p>
+
+<!-- #1 변형 -->
+<div class="variant-section avoid-break">
+  <h4>#1 변형 — 시제 일치 (과거 기준)</h4>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>1-1.</strong> 다음 문장에서 어법상 틀린 부분을 찾아 고치시오.<br>
+    > She tells me that she will visit Paris when she saved enough money.</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>1-2.</strong> 다음 문장에서 어법상 틀린 부분을 찾아 고치시오.<br>
+    > He was going to call you, but he forgets your number.</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>1-3.</strong> 빈칸에 알맞은 형태를 쓰시오.<br>
+    > Tom said he ___ (be going to) buy a new car the next day.</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>1-4.</strong> 다음 문장에서 어법상 틀린 부분을 찾아 고치시오.<br>
+    > I promised that I am going to help her move to the new apartment.</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>1-5.</strong> 빈칸에 알맞은 형태를 쓰시오.<br>
+    > When the guests arrived, Maria ___ (be going to) serve dinner.</div>
+  </div>
+
+  <div class="variant-a"><strong>정답:</strong> 1-1. tells→told 또는 saved→saves | 1-2. forgets→forgot | 1-3. was going to | 1-4. am going to→was going to | 1-5. was going to</div>
+</div>
+
+<!-- #2 변형 -->
+<div class="variant-section avoid-break">
+  <h4>#2 변형 — 미래완료 p.p. 형태</h4>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>2-1.</strong> 빈칸에 알맞은 형태를 쓰시오.<br>
+    > By this time next year, she will have ___ (graduate) from university.</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>2-2.</strong> 다음 중 어법상 옳은 것은?<br>
+    ① will have went &nbsp; ② will have go &nbsp; ③ will have gone &nbsp; ④ will have going</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>2-3.</strong> 빈칸에 알맞은 형태를 쓰시오.<br>
+    > Before the concert starts, the band will have ___ (rehearse) for five hours.</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>2-4.</strong> 다음 문장의 밑줄 친 부분을 바르게 고치시오.<br>
+    > By the end of this month, I will have <strong>read</strong> 30 books this year. → (맞으면 O, 틀리면 수정)</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>2-5.</strong> 빈칸에 알맞은 형태를 쓰시오.<br>
+    > The builders will have ___ (complete) the bridge by December.</div>
+  </div>
+
+  <div class="variant-a"><strong>정답:</strong> 2-1. graduated | 2-2. ③ | 2-3. rehearsed | 2-4. O (read의 p.p.는 read) | 2-5. completed</div>
+</div>
+
+<div class="page-break-before"></div>
+
+<!-- #3 변형 -->
+<div class="variant-section avoid-break">
+  <h4>#3 변형 — 미래진행형</h4>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>3-1.</strong> 빈칸에 알맞은 형태를 쓰시오.<br>
+    > This time next Monday, I ___ (take) my final exam.</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>3-2.</strong> 다음 중 어법상 옳은 것은?<br>
+    ① She will be study &nbsp; ② She will be studying &nbsp; ③ She will studying &nbsp; ④ She will been studying</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>3-3.</strong> 빈칸에 알맞은 형태를 쓰시오.<br>
+    > Don't call me at 10 tonight. I ___ (sleep) by then.</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>3-4.</strong> 다음 대화의 빈칸에 알맞은 표현을 쓰시오.<br>
+    > A: Can I visit you at 3 p.m. tomorrow?<br>
+    > B: Sorry, I ___ (attend) a meeting at that time.</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>3-5.</strong> 빈칸에 알맞은 형태를 쓰시오.<br>
+    > At noon tomorrow, the students ___ (listen) to the lecture in the auditorium.</div>
+  </div>
+
+  <div class="variant-a"><strong>정답:</strong> 3-1. will be taking | 3-2. ② | 3-3. will be sleeping | 3-4. will be attending | 3-5. will be listening</div>
+</div>
+
+<!-- #4 변형 -->
+<div class="variant-section avoid-break">
+  <h4>#4 변형 — 시제 일치 오류 찾기</h4>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>4-1.</strong> 다음 밑줄 친 부분 중 어법상 어색한 것은?<br>
+    > The manager announced that the meeting ② has been postponed to next Monday, but many employees ③ were unhappy because they ④ had already made plans ⑤ for that day.</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>4-2.</strong> 다음 밑줄 친 부분 중 어법상 어색한 것은?<br>
+    > She ① told me that she ② is planning to study abroad next year and ③ asked if I ④ could recommend ⑤ a good university.</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>4-3.</strong> 다음 문장에서 틀린 부분을 찾아 고치시오.<br>
+    > He explained that he has been living in Seoul since 2015.</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>4-4.</strong> 다음 밑줄 친 부분 중 어법상 어색한 것은?<br>
+    > My teacher ① said that water ② boils at 100°C and that ice ③ melts at 0°C, which ④ was a fact ⑤ everyone should know.</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>4-5.</strong> 다음 문장에서 틀린 부분을 찾아 고치시오.<br>
+    > The witness stated that the suspect runs out of the building at around 9 p.m.</div>
+  </div>
+
+  <div class="variant-a"><strong>정답:</strong> 4-1. ② has been → had been | 4-2. ② is → was | 4-3. has been → had been | 4-4. 모두 맞음 (불변의 진리는 현재시제 유지) | 4-5. runs → ran 또는 had run</div>
+</div>
+
+<div class="page-break-before"></div>
+
+<!-- #5 변형 -->
+<div class="variant-section avoid-break">
+  <h4>#5 변형 — 현재완료진행 (has/have been + V-ing)</h4>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>5-1.</strong> 두 문장을 한 문장으로 합치시오.<br>
+    > He started learning piano three years ago. He is still learning piano.<br>
+    > → He ___</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>5-2.</strong> 빈칸에 알맞은 형태를 쓰시오.<br>
+    > My sister ___ (practice) violin since she was seven years old.</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>5-3.</strong> 다음 중 어법상 옳은 것은?<br>
+    ① She has been cook since morning. &nbsp; ② She has been cooking since morning.<br>
+    ③ She has cooking since morning. &nbsp; ④ She been cooking since morning.</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>5-4.</strong> 주어진 단어를 활용하여 문장을 완성하시오.<br>
+    > 그는 2시간 동안 계속 운전하고 있다. (drive, for, he, two hours)<br>
+    > → ___</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>5-5.</strong> 빈칸에 알맞은 형태를 쓰시오.<br>
+    > The children ___ (play) outside since lunchtime. They must be tired.</div>
+  </div>
+
+  <div class="variant-a"><strong>정답:</strong> 5-1. has been learning piano for three years | 5-2. has been practicing | 5-3. ② | 5-4. He has been driving for two hours. | 5-5. have been playing</div>
+</div>
+
+<!-- #6 변형 -->
+<div class="variant-section avoid-break">
+  <h4>#6 변형 — 현재완료진행 (since + 시작점)</h4>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>6-1.</strong> 주어진 단어를 활용하여 문장을 완성하시오.<br>
+    > 월요일부터 계속 비가 내리고 있다. (rain, since, it, Monday)<br>
+    > → ___</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>6-2.</strong> 빈칸에 알맞은 형태를 쓰시오.<br>
+    > We ___ (wait) for the bus since 8 o'clock this morning.</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>6-3.</strong> 다음 문장에서 틀린 부분을 고치시오.<br>
+    > She has been work at this company since 2019.</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>6-4.</strong> 주어진 단어를 활용하여 문장을 완성하시오.<br>
+    > 어제부터 계속 바람이 불고 있다. (blow, since, the wind, yesterday)<br>
+    > → ___</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>6-5.</strong> 빈칸에 알맞은 형태를 쓰시오.<br>
+    > The factory ___ (produce) cars since the 1950s.</div>
+  </div>
+
+  <div class="variant-a"><strong>정답:</strong> 6-1. It has been raining since Monday. | 6-2. have been waiting | 6-3. work → working | 6-4. The wind has been blowing since yesterday. | 6-5. has been producing</div>
+</div>
+
+<div class="page-break-before"></div>
+
+<!-- #7 변형 -->
+<div class="variant-section avoid-break">
+  <h4>#7 변형 — 수능형 어법 (밑줄 중 틀린 것)</h4>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>7-1.</strong> 다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?<br><br>
+    Thomas Edison is one of the most famous inventors in history. ① Born in Ohio in 1847, he showed great curiosity from an early age. His mother, who ② believed in his potential, taught him at home. Edison ③ entered to the world of business as a teenager, selling newspapers on trains. He later ④ devoted himself to inventing and ⑤ created more than 1,000 patented devices.</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>7-2.</strong> 다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?<br><br>
+    Marie Curie ① discovered radium in 1898. She ② married to Pierre Curie, who shared her passion for science. Together, they ③ conducted groundbreaking research. After Pierre's death, Marie ④ continued her work and ⑤ became the first person to win Nobel Prizes in two different sciences.</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>7-3.</strong> 다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?<br><br>
+    The ancient Egyptians ① built the pyramids as tombs for their pharaohs. Workers ② were believed to have spent decades on a single pyramid. The Great Pyramid ③ consisted of over two million stone blocks. Modern engineers have ④ discussed about how these massive structures were built without modern technology. The pyramids ⑤ remain one of the greatest achievements of ancient civilization.</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>7-4.</strong> 다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?<br><br>
+    Steve Jobs ① dropped out of college but continued ② attending classes that interested him. He ③ co-founded Apple in 1976 and eventually ④ married with Laurene Powell in 1991. He ⑤ is remembered as one of the greatest innovators of our time.</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>7-5.</strong> 다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?<br><br>
+    Beethoven ① began learning music at a very young age. His father, ② hoping to create a child prodigy, pushed him relentlessly. Despite ③ losing his hearing gradually, Beethoven ④ entered the highest levels of musical achievement. He ⑤ married to no one, dedicating his life entirely to his art.</div>
+  </div>
+
+  <div class="variant-a"><strong>정답:</strong> 7-1. ③ entered to → entered | 7-2. ② married to → married 또는 was married to | 7-3. ④ discussed about → discussed | 7-4. ④ married with → married | 7-5. ⑤ married to no one → married no one 또는 was married to no one</div>
+</div>
+
+<div class="page-break-before"></div>
+
+<!-- #8 변형 -->
+<div class="variant-section avoid-break">
+  <h4>#8 변형 — 수능형 어법 (능동/수동 판단)</h4>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>8-1.</strong> 다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?<br><br>
+    In many countries, children ① require to attend school until the age of 16. Education ② is considered a fundamental right. Students ③ are taught various subjects, and they ④ are encouraged to develop critical thinking skills. Teachers ⑤ play a vital role in this process.</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>8-2.</strong> 다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?<br><br>
+    The new policy ① was announced last week. All employees ② expect to follow the updated guidelines. Managers ③ were asked to hold meetings with their teams. The changes ④ are designed to improve workplace efficiency. Feedback ⑤ will be collected over the next month.</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>8-3.</strong> 다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?<br><br>
+    Volunteers ① are needed for the community project. Participants ② will provide with all necessary equipment. The event ③ is organized by the local government. Everyone ④ is invited to join. Refreshments ⑤ will be served after the event.</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>8-4.</strong> 다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?<br><br>
+    Every year, millions of tourists ① are attracted to Paris. The Eiffel Tower ② was built in 1889 and ③ has remained one of the most iconic structures. Visitors ④ allow to climb to the top for a panoramic view. The city ⑤ is known for its art, culture, and cuisine.</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>8-5.</strong> 다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?<br><br>
+    The scholarship ① is awarded to students who ② demonstrate academic excellence. Recipients ③ are selected by a committee. Last year, the award ④ gave to five outstanding students. This year, more funding ⑤ has been allocated for the program.</div>
+  </div>
+
+  <div class="variant-a"><strong>정답:</strong> 8-1. ① require → are required | 8-2. ② expect → are expected | 8-3. ② will provide → will be provided | 8-4. ④ allow → are allowed | 8-5. ④ gave → was given</div>
+</div>
+
+<div class="page-break-before"></div>
+
+<!-- #9 변형 -->
+<div class="variant-section avoid-break">
+  <h4>#9 변형 — 미래완료 (by the time + 현재시제)</h4>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>9-1.</strong> 빈칸에 알맞은 것을 고르시오.<br>
+    > By the time the guests arrive, we ___ all the decorations.<br>
+    ① finish &nbsp; ② will finish &nbsp; ③ will have finished &nbsp; ④ have finished</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>9-2.</strong> 빈칸에 알맞은 것을 고르시오.<br>
+    > The company ___ over 10,000 units by the end of this quarter.<br>
+    ① produces &nbsp; ② will produce &nbsp; ③ will have produced &nbsp; ④ has produced</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>9-3.</strong> 빈칸에 알맞은 것을 고르시오.<br>
+    > By the time she turns 30, she ___ her PhD.<br>
+    ① completes &nbsp; ② will complete &nbsp; ③ will have completed &nbsp; ④ completed</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>9-4.</strong> 빈칸에 알맞은 것을 고르시오.<br>
+    > By the time the movie ends, we ___ in this theater for three hours.<br>
+    ① sit &nbsp; ② will sit &nbsp; ③ will have sat &nbsp; ④ are sitting</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>9-5.</strong> 빈칸에 알맞은 것을 고르시오.<br>
+    > The team ___ all the data by the time the report is due.<br>
+    ① analyzes &nbsp; ② will analyze &nbsp; ③ will have analyzed &nbsp; ④ analyzed</div>
+  </div>
+
+  <div class="variant-a"><strong>정답:</strong> 9-1. ③ | 9-2. ③ | 9-3. ③ | 9-4. ③ | 9-5. ③</div>
+</div>
+
+<!-- #10 변형 -->
+<div class="variant-section avoid-break">
+  <h4>#10 변형 — 미래완료 (By + 미래 시점)</h4>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>10-1.</strong> 빈칸에 알맞은 것을 고르시오.<br>
+    > By next summer, they ___ in this house for 20 years.<br>
+    ① live &nbsp; ② will live &nbsp; ③ will have lived &nbsp; ④ have lived</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>10-2.</strong> 빈칸에 알맞은 것을 고르시오.<br>
+    > By the year 2030, the population ___ 10 billion.<br>
+    ① reaches &nbsp; ② will reach &nbsp; ③ will have reached &nbsp; ④ reached</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>10-3.</strong> 빈칸에 알맞은 것을 고르시오.<br>
+    > By graduation day, she ___ more than 200 credit hours.<br>
+    ① earns &nbsp; ② will earn &nbsp; ③ will have earned &nbsp; ④ earned</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>10-4.</strong> 빈칸에 알맞은 것을 고르시오.<br>
+    > By tomorrow evening, the snow ___ for 48 hours straight.<br>
+    ① falls &nbsp; ② will fall &nbsp; ③ will have fallen &nbsp; ④ fell</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>10-5.</strong> 빈칸에 알맞은 것을 고르시오.<br>
+    > By the time I retire, I ___ at this company for 35 years.<br>
+    ① work &nbsp; ② will work &nbsp; ③ will have worked &nbsp; ④ worked</div>
+  </div>
+
+  <div class="variant-a"><strong>정답:</strong> 10-1. ③ | 10-2. ③ | 10-3. ③ | 10-4. ③ | 10-5. ③</div>
+</div>
+
+<div class="page-break-before"></div>
+
+<!-- #11 변형 -->
+<div class="variant-section avoid-break">
+  <h4>#11 변형 — 시간부사절 현재시제 + 미래완료진행</h4>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>11-1.</strong> 빈칸에 알맞은 것을 고르시오.<br>
+    > By the time the train ___, I ___ at the station for over an hour.<br>
+    ① arrives / will have been waiting &nbsp; ② will arrive / will have been waiting<br>
+    ③ arrives / have been waiting &nbsp; ④ will arrive / wait</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>11-2.</strong> 빈칸에 알맞은 것을 고르시오.<br>
+    > When the teacher ___, the students ___ the test for 30 minutes already.<br>
+    ① returns / will have been taking &nbsp; ② will return / will have been taking<br>
+    ③ returns / take &nbsp; ④ will return / will take</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>11-3.</strong> 빈칸에 알맞은 것을 고르시오.<br>
+    > By the time you ___ home tonight, I ___ dinner for two hours.<br>
+    ① get / will have been cooking &nbsp; ② will get / will have been cooking<br>
+    ③ get / am cooking &nbsp; ④ will get / cook</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>11-4.</strong> 빈칸에 알맞은 것을 고르시오.<br>
+    > Before the sun ___, the farmers ___ in the fields for several hours.<br>
+    ① sets / will have been working &nbsp; ② will set / will have been working<br>
+    ③ sets / work &nbsp; ④ will set / will work</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>11-5.</strong> 빈칸에 알맞은 것을 고르시오.<br>
+    > By the time the marathon ___, the runners ___ for over four hours.<br>
+    ① ends / will have been running &nbsp; ② will end / will have been running<br>
+    ③ ends / run &nbsp; ④ will end / will run</div>
+  </div>
+
+  <div class="variant-a"><strong>정답:</strong> 11-1. ① | 11-2. ① | 11-3. ① | 11-4. ① | 11-5. ①</div>
+</div>
+
+<!-- #12 변형 -->
+<div class="variant-section avoid-break">
+  <h4>#12 변형 — 간접의문문 + 과거진행</h4>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>12-1.</strong> 빈칸에 알맞은 것을 고르시오.<br>
+    > The detective asked the suspect what he ___ between 9 and 10 p.m. last night.<br>
+    ① does &nbsp; ② did &nbsp; ③ was doing &nbsp; ④ has done</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>12-2.</strong> 빈칸에 알맞은 것을 고르시오.<br>
+    > My mother wanted to know what I ___ when she called me.<br>
+    ① do &nbsp; ② did &nbsp; ③ was doing &nbsp; ④ have done</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>12-3.</strong> 빈칸에 알맞은 것을 고르시오.<br>
+    > The reporter asked the witnesses what ___ at the scene before the ambulance arrived.<br>
+    ① happens &nbsp; ② happened &nbsp; ③ was happening &nbsp; ④ has happened</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>12-4.</strong> 빈칸에 알맞은 것을 고르시오.<br>
+    > She wondered what her children ___ while she was at the meeting.<br>
+    ① do &nbsp; ② did &nbsp; ③ were doing &nbsp; ④ have done</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>12-5.</strong> 빈칸에 알맞은 것을 고르시오.<br>
+    > The manager inquired what the team ___ at the exact moment the power went out.<br>
+    ① does &nbsp; ② did &nbsp; ③ was doing &nbsp; ④ had done</div>
+  </div>
+
+  <div class="variant-a"><strong>정답:</strong> 12-1. ③ | 12-2. ③ | 12-3. ③ | 12-4. ③ | 12-5. ③</div>
+</div>
+
+<div class="page-break-before"></div>
+
+<!-- #14 변형 -->
+<div class="variant-section avoid-break">
+  <h4>#14 변형 — 시간부사절에서 현재시제</h4>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>14-1.</strong> 빈칸에 알맞은 것을 고르시오.<br>
+    > I will send you a message as soon as the meeting ___.<br>
+    ① will end &nbsp; ② ends &nbsp; ③ ended &nbsp; ④ will have ended</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>14-2.</strong> 빈칸에 알맞은 것을 고르시오.<br>
+    > We will start the project when the budget ___.<br>
+    ① will be approved &nbsp; ② approves &nbsp; ③ is approved &nbsp; ④ will approve</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>14-3.</strong> 빈칸에 알맞은 것을 고르시오.<br>
+    > She will call you before she ___ for the airport.<br>
+    ① will leave &nbsp; ② leaves &nbsp; ③ left &nbsp; ④ will have left</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>14-4.</strong> 빈칸에 알맞은 것을 고르시오.<br>
+    > The store will close after the last customer ___.<br>
+    ① will leave &nbsp; ② leaves &nbsp; ③ left &nbsp; ④ is leaving</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>14-5.</strong> 빈칸에 알맞은 것을 고르시오.<br>
+    > We won't go home until the work ___ completely.<br>
+    ① will be finished &nbsp; ② finishes &nbsp; ③ is finished &nbsp; ④ will finish</div>
+  </div>
+
+  <div class="variant-a"><strong>정답:</strong> 14-1. ② | 14-2. ③ | 14-3. ② | 14-4. ② | 14-5. ③</div>
+</div>
+
+<!-- #15 변형 -->
+<div class="variant-section avoid-break">
+  <h4>#15 변형 — 명사절 if (= whether) vs 부사절 if</h4>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>15-1.</strong> 빈칸에 알맞은 것을 고르시오.<br>
+    > I don't know if she ___ to the party tomorrow.<br>
+    ① comes &nbsp; ② came &nbsp; ③ will come &nbsp; ④ come</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>15-2.</strong> 빈칸에 알맞은 것을 고르시오.<br>
+    > If it ___ tomorrow, the game will be canceled. (부사절)<br>
+    ① will rain &nbsp; ② rains &nbsp; ③ rained &nbsp; ④ will be raining</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>15-3.</strong> 두 문장의 빈칸에 각각 알맞은 것을 고르시오.<br>
+    > (a) Please let me know if the train ___ on time. (명사절)<br>
+    > (b) If the train ___ on time, we will make it to the concert. (부사절)<br>
+    ① (a) will arrive / (b) arrives &nbsp; ② (a) arrives / (b) will arrive<br>
+    ③ (a) will arrive / (b) will arrive &nbsp; ④ (a) arrives / (b) arrives</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>15-4.</strong> 빈칸에 알맞은 것을 고르시오.<br>
+    > He is wondering if his application ___ accepted.<br>
+    ① is &nbsp; ② was &nbsp; ③ will be &nbsp; ④ were</div>
+  </div>
+
+  <div class="variant-item">
+    <div class="variant-q"><strong>15-5.</strong> 다음 중 어법상 옳은 것은?<br>
+    ① If it will snow, we will stay home.<br>
+    ② I wonder if it will snow tomorrow.<br>
+    ③ If it will snow tomorrow, the roads will be dangerous.<br>
+    ④ Tell me if it snows or not. (= whether의 의미)</div>
+  </div>
+
+  <div class="variant-a"><strong>정답:</strong> 15-1. ③ | 15-2. ② | 15-3. ① | 15-4. ③ | 15-5. ② (④도 문법적으로 가능하나, ②가 가장 명확한 정답)</div>
+</div>
+
+</body>
+</html>

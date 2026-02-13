@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node:*)",
+      "Bash(npx puppeteer browsers install:*)",
+      "Bash(pip install:*)",
+      "Bash(pip3 install:*)",
+      "Bash(sudo apt-get install:*)"
+    ]
+  }
+}
