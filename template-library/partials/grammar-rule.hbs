@@ -1,0 +1,34 @@
+{{#if concept}}
+<div class="concept-box avoid-break">
+  <span class="concept-label">핵심 개념</span>
+  <p>{{concept}}</p>
+</div>
+{{/if}}
+
+{{#each sections}}
+<div class="avoid-break">
+  {{#if heading}}<h4>{{heading}}</h4>{{/if}}
+  {{#if (eq type "grammar-block")}}
+  <div class="grammar-block">{{{content}}}</div>
+  {{else if (eq type "warning")}}
+  <div class="warning-box">
+    <span class="warning-label">주의</span>
+    {{{content}}}
+  </div>
+  {{else if (eq type "tip")}}
+  <div class="tip-box">
+    <span class="tip-label">Tip</span>
+    {{{content}}}
+  </div>
+  {{else if (eq type "concept")}}
+  <div class="concept-box">
+    <span class="concept-label">개념</span>
+    {{{content}}}
+  </div>
+  {{else if (eq type "flowchart")}}
+  <div class="flowchart">{{{content}}}</div>
+  {{else}}
+  <div>{{{content}}}</div>
+  {{/if}}
+</div>
+{{/each}}

@@ -1,0 +1,174 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vera://schemas/passage",
+  "title": "PassageSet",
+  "description": "독해 지문 세트 — 지문 + 어휘 + 문제",
+  "type": "object",
+  "required": ["$schema", "meta", "passages"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "const": "vera://schemas/passage",
+      "description": "스키마 식별자"
+    },
+    "meta": {
+      "type": "object",
+      "required": ["subject", "level", "part", "partTitle"],
+      "additionalProperties": false,
+      "description": "지문 세트 메타데이터",
+      "properties": {
+        "subject": {
+          "type": "string",
+          "enum": ["reading", "syntax-reading"],
+          "description": "과목 분류 (독해 또는 구문독해)"
+        },
+        "level": {
+          "type": "string",
+          "enum": ["basic", "bridge", "intermediate", "advanced"],
+          "description": "난이도 레벨"
+        },
+        "part": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "파트 번호"
+        },
+        "partTitle": {
+          "type": "string",
+          "description": "파트 제목",
+          "examples": ["내용 파악", "추론", "빈칸 완성"]
+        }
+      }
+    },
+    "passages": {
+      "type": "array",
+      "minItems": 1,
+      "description": "지문 배열",
+      "items": {
+        "$ref": "#/$defs/Passage"
+      }
+    }
+  },
+  "$defs": {
+    "Passage": {
+      "type": "object",
+      "required": ["id", "number", "title", "text", "vocabulary", "questions"],
+      "additionalProperties": false,
+      "description": "개별 지문 정의",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z]+-[a-z]+-p[0-9]+$",
+          "description": "지문 고유 ID. 형식: {subject}-{level}-p{번호}",
+          "examples": ["reading-basic-p01", "syntax-reading-bridge-p15"]
+        },
+        "number": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "지문 표시 번호"
+        },
+        "title": {
+          "type": "string",
+          "description": "지문 영문 제목",
+          "examples": ["A Lost Wallet", "The Power of Habit"]
+        },
+        "text": {
+          "type": "string",
+          "description": "지문 본문. **볼드** 마크다운 허용"
+        },
+        "boldWords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "지문 내 볼드 처리할 단어 목록 (선택)"
+        },
+        "vocabulary": {
+          "type": "array",
+          "description": "지문 관련 어휘 목록",
+          "items": {
+            "type": "object",
+            "required": ["word", "meaning"],
+            "additionalProperties": false,
+            "properties": {
+              "word": {
+                "type": "string",
+                "description": "영어 단어"
+              },
+              "meaning": {
+                "type": "string",
+                "description": "한글 뜻"
+              }
+            }
+          }
+        },
+        "questions": {
+          "type": "array",
+          "minItems": 1,
+          "description": "지문 관련 문제 목록",
+          "items": {
+            "$ref": "#/$defs/Question"
+          }
+        }
+      }
+    },
+    "Question": {
+      "type": "object",
+      "required": ["id", "number", "type", "text", "choices", "answer"],
+      "additionalProperties": false,
+      "description": "지문 문제 정의",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z]+-[a-z]+-p[0-9]+-q[0-9]+$",
+          "description": "문제 고유 ID. 형식: {subject}-{level}-p{지문번호}-q{문제번호}",
+          "examples": ["reading-basic-p01-q01", "reading-basic-p01-q02"]
+        },
+        "number": {
+          "type": "string",
+          "pattern": "^[0-9]+-[0-9]+$",
+          "description": "문제 표시 번호 (지문번호-문제번호)",
+          "examples": ["1-1", "1-2", "15-3"]
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "main-idea",
+            "detail",
+            "inference",
+            "vocabulary-in-context",
+            "true-false",
+            "fill-in-blank",
+            "ordering",
+            "purpose",
+            "tone"
+          ],
+          "description": "문제 유형"
+        },
+        "text": {
+          "type": "string",
+          "description": "문제 지문/발문"
+        },
+        "choices": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 2,
+          "maxItems": 5,
+          "description": "선택지 배열"
+        },
+        "answer": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5,
+          "description": "정답 번호 (1-based)"
+        },
+        "explanation": {
+          "type": "string",
+          "description": "짧은 해설 (선택)"
+        }
+      }
+    }
+  }
+}

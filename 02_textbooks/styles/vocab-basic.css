@@ -1,0 +1,490 @@
+/* --- style block 1 --- */
+
+   /* --- 기본 페이지 및 폰트 설정 --- */
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-print-color-adjust: exact;
+            color-adjust: exact;
+        }
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            line-height: 1.6;
+            color: #334155; /* Slate 700 */
+            background: #F1F5F9; /* Slate 100 */
+        }
+        .eng-text { font-family: 'Inter', sans-serif; }
+        .bold-text { font-weight: 700; }
+
+        /* --- A4 페이지 레이아웃 --- */
+        .page {
+            width: 210mm;
+            height: 297mm;
+            margin: 10mm auto;
+            padding: 15mm 18mm;
+            background: white;
+            box-shadow: none;
+            page-break-after: always;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            overflow: hidden;
+        }
+        .page:last-child {
+            page-break-after: avoid;
+        }
+        .page-content {
+            flex-grow: 1;
+            overflow: hidden;
+        }
+
+        /* --- 페이지 헤더 & 푸터 --- */
+        .page-header, .page-footer {
+            width: 100%;
+            flex-shrink: 0;
+            font-size: 10px;
+            color: #64748B; /* Slate 500 */
+            font-family: 'Inter', sans-serif;
+        }
+        .page-header {
+            border-bottom: 1px solid #E2E8F0; /* Slate 200 */
+            padding-bottom: 8px;
+            margin-bottom: 10mm;
+            display: flex;
+            justify-content: space-between;
+            color: #0F172A; /* Slate 900 */
+            font-weight: 500;
+        }
+        .page-footer {
+            border-top: 1px solid #E2E8F0; /* Slate 200 */
+            padding-top: 8px;
+            margin-top: 10mm;
+            text-align: center;
+        }
+        .no-header .page-header,
+        .no-footer .page-footer {
+            display: none;
+        }
+        .no-header-footer {
+            padding: 0;
+        }
+        .no-header-footer .page-header,
+        .no-header-footer .page-footer {
+            display: none;
+        }
+        
+        /* 인쇄 설정 */
+        @media print { 
+            body { background: #fff; } 
+            .page { margin: 0; box-shadow: none; } 
+            p, li, div { orphans: 3; widows: 3; }
+            .word-entry, .tip-box { break-inside: avoid; }
+        }
+
+        /* =================================================================== */
+        /* 표지 스타일 (Cover Page)                                          */
+        /* =================================================================== */
+        .cover-page {
+            color: white;
+            background-color: #0284C7; /* Sky 600 */
+            background-image: url('../../../05_assets/backgrounds/background4.png');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20mm;
+        }
+        .cover-page .cover-brand {
+            font-family: 'Inter', sans-serif;
+            font-size: 24px;
+            font-weight: 500;
+            color: #e6e6e6;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+        .cover-page .cover-main-title {
+            font-size: 96px;
+            font-weight: 900;
+            line-height: 1.0;
+            letter-spacing: -5px;
+            /* text-shadow removed: causes dark boxes in Puppeteer PDF */
+        }
+        .cover-page .cover-subtitle {
+            font-family: 'Inter', sans-serif;
+            font-size: 28px;
+            font-weight: 600;
+            margin-top: 10px;
+            color: #FBBF24; /* Amber 400 */
+        }
+        .cover-page .cover-slogan {
+            position: absolute;
+            bottom: 40mm;
+            font-size: 18px;
+            line-height: 1.6;
+            color: #f0f0f0;
+        }
+        .cover-page .cover-corp {
+            position: absolute;
+            bottom: 20mm;
+            right: 20mm;
+            font-size: 12px;
+            font-family: 'Inter', sans-serif;
+            color: #cccccc;
+        }
+
+        /* =================================================================== */
+        /* 목차 페이지 (Table of Contents)                                     */
+        /* =================================================================== */
+        .toc-page .page-content {
+            padding-top: 10mm;
+        }
+        .toc-header { 
+            font-family: 'Inter', sans-serif; 
+            font-size: 32px; 
+            font-weight: 800; 
+            color: #0F172A; /* Slate 900 */
+            margin-bottom: 20px; 
+            padding-bottom: 10px; 
+            border-bottom: 3px solid #38BDF8; /* Sky 400 */
+            text-align: center;
+            letter-spacing: 2px;
+        }
+        .toc-columns {
+            column-count: 2;
+            column-gap: 15mm;
+        }
+        .toc-list { 
+            list-style: none; 
+            padding-left: 0; 
+            font-size: 12px; 
+            line-height: 2.3;
+            break-inside: avoid;
+        }
+        .toc-item { 
+            display: flex; 
+            align-items: baseline; 
+            margin-bottom: 4px; 
+            break-inside: avoid;
+        }
+        .toc-item .title { 
+            order: 1; 
+            white-space: nowrap; 
+            padding-right: 5px;
+            font-weight: 500;
+        }
+        .toc-item .dots { 
+            order: 2; 
+            flex-grow: 1; 
+            border-bottom: 1px dotted #94A3B8; /* Slate 400 */
+            position: relative; 
+            top: -3px; 
+        }
+        .toc-item .page-num { 
+            order: 3; 
+            padding-left: 5px; 
+            font-family: 'Inter', sans-serif; 
+            font-weight: 600;
+            color: #38BDF8; /* Sky 400 */
+        }
+        .toc-part-title { 
+            font-family: 'Inter', sans-serif; 
+            font-size: 16px; 
+            font-weight: 700; 
+            color: #0369A1; /* Sky 700 */
+            margin-top: 25px; 
+            margin-bottom: 8px; 
+            padding-left: 10px;
+            border-left: 4px solid #FBBF24; /* Amber 400 */
+        }
+        
+        /* =================================================================== */
+        /* DAY 타이틀 페이지 (Day Title Page)                                  */
+        /* =================================================================== */
+        .day-title-page {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #F0F9FF; /* Sky 50 */
+        }
+        .day-title-page .day-number {
+            font-family: 'Inter', sans-serif;
+            font-size: 120px;
+            font-weight: 900;
+            color: #0EA5E9; /* Sky 500 */
+            line-height: 1;
+            /* text-shadow removed: causes dark boxes in Puppeteer PDF */
+        }
+        .day-title-page .day-theme {
+            font-size: 24px;
+            font-weight: 500;
+            color: #475569; /* Slate 600 */
+            margin-top: 15px;
+            border-top: 2px solid #E0F2FE; /* Sky 100 */
+            padding-top: 15px;
+        }
+
+        /* =================================================================== */
+        /* 단어 콘텐츠 페이지 (Vocabulary Content Page)                        */
+        /* =================================================================== */
+        .word-entry {
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid #F1F5F9; /* Slate 100 */
+            break-inside: avoid;
+        }
+        .word-entry:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        .word-header {
+            display: flex;
+            align-items: baseline;
+            margin-bottom: 6px;
+        }
+        .word-number {
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            color: #7DD3FC; /* Sky 300 */
+            margin-right: 8px;
+        }
+        .word-title {
+            font-size: 18px;
+            font-weight: 700;
+            color: #0F172A; /* Slate 900 */
+            margin-right: 10px;
+        }
+        .word-pronunciation {
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            color: #64748B; /* Slate 500 */
+        }
+        .word-body {
+            padding-left: 35px;
+        }
+        .word-def {
+            display: flex;
+            align-items: baseline;
+            font-size: 13px;
+            margin-bottom: 8px;
+        }
+        .part-of-speech {
+            font-family: 'Inter', sans-serif;
+            font-style: italic;
+            font-weight: 500;
+            color: #0EA5E9; /* Sky 500 */
+            margin-right: 8px;
+        }
+        .word-example {
+            background-color: #F8FAFC; /* Slate 50 */
+            border-left: 3px solid #BAE6FD; /* Sky 200 */
+            padding: 8px 12px;
+            font-size: 12.5px;
+            border-radius: 4px;
+        }
+        .ex-eng {
+            font-weight: 500;
+            color: #1E293B; /* Slate 800 */
+        }
+        .ex-kor {
+            color: #475569; /* Slate 600 */
+            font-size: 12px;
+        }
+        .word-extra {
+            padding-left: 12px;
+            margin-top: 8px;
+            font-size: 12px;
+        }
+        .extra-label {
+            font-weight: 600;
+            color: #0369A1; /* Sky 700 */
+            margin-right: 6px;
+        }
+        .extra-content {
+            font-family: 'Inter', sans-serif;
+            color: #475569; /* Slate 600 */
+        }
+
+        /* =================================================================== */
+        /* Vera's Tip 페이지                                                 */
+        /* =================================================================== */
+        .veras-tip-page {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #EFF6FF; /* Blue 50 */
+            border: 10px solid white;
+            outline: 1px solid #DBEAFE; /* Blue 200 */
+        }
+        .tip-box {
+            width: 85%;
+            padding: 30px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: none;
+            border-top: 5px solid #60A5FA; /* Blue 400 */
+        }
+        .tip-box-title {
+            font-family: 'Inter', sans-serif;
+            font-size: 28px;
+            font-weight: 800;
+            color: #1E3A8A; /* Blue 800 */
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .tip-box-title .brand {
+            color: #3B82F6; /* Blue 500 */
+        }
+        .tip-box-content {
+            font-size: 14px;
+            line-height: 1.8;
+            color: #334155; /* Slate 700 */
+        }
+        .tip-box-content p {
+            margin-bottom: 1em;
+        }
+        .tip-box-content strong {
+            font-weight: 700;
+            color: #1D4ED8; /* Blue 700 */
+        }
+        .tip-box-content code {
+            background-color: #E0F2FE; /* Sky 100 */
+            color: #0C4A6E; /* Sky 800 */
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: 'Inter', monospace;
+            font-size: 13px;
+        }
+    
+        /* 자동 넘버링 시스템 */
+        body { counter-reset: page-counter word-counter; }
+        .page { counter-increment: page-counter; }
+        .page-footer::after { content: counter(page-counter); }
+        .word-entry { counter-increment: word-counter; }
+        .word-number::before { content: counter(word-counter, decimal-leading-zero) "."; }
+        
+        /* 시스템 디버그 패널 제거됨 (PDF 불필요) */
+        
+        /* 상태 표시 스타일 */
+        .day-status-info { break-inside: avoid; }
+        .duplicate-warning {
+            background: #FEF3C7; border: 1px solid #F59E0B; color: #92400E;
+            padding: 8px 12px; border-radius: 4px; font-size: 12px; margin-top: 5px;
+        }
+        
+        @media print { /* system-info 제거됨 */ }
+  
+
+/* --- style block 2 --- */
+
+     /* --- 한 페이지 목차를 위한 CSS --- */
+                .toc-page .toc-columns {
+                    column-count: 3;
+                    column-gap: 12mm;
+                }
+                .toc-page .toc-list {
+                    font-size: 10.5px;
+                    line-height: 1.9;
+                    /* 각 ul 리스트가 열 중간에 잘리지 않도록 설정 */
+                    break-inside: avoid;
+                    page-break-inside: avoid; /* 인쇄 시에도 적용 */
+                }
+                .toc-page .toc-part-title {
+                    font-size: 15px;
+                    margin-top: 0; /* 각 열의 시작점이 되므로 상단 마진 통일 */
+                    margin-bottom: 8px;
+                }
+                .toc-page .toc-item {
+                    padding-left: 5px;
+                }
+                /* 페이지 번호와 점선 관련 스타일 제거 */
+                .toc-item .dots, .toc-item .page-num {
+                    display: none;
+                }
+    
+
+/* --- style block 3 --- */
+
+    /* --- 강사의 말 페이지 v2 CSS --- */
+                @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Playfair+Display:ital,wght@0,800;1,400&display=swap');
+                .veras-word-page-v2 {
+                    background: #F8FAFC; /* Slate 50 */
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 25mm 20mm;
+                }
+                .message-box-v2 {
+                    width: 100%;
+                    max-width: 160mm;
+                    text-align: center;
+                    position: relative;
+                }
+                .message-box-v2::before {
+                    content: '“';
+                    font-family: 'Playfair Display', serif;
+                    font-size: 150px;
+                    color: #F1F5F9; /* Slate 100 */
+                    position: absolute;
+                    top: -60px;
+                    left: -20px;
+                    z-index: 1;
+                    line-height: 1;
+                }
+                .message-title-v2 {
+                    font-family: 'Inter', sans-serif;
+                    font-size: 36px;
+                    font-weight: 800;
+                    color: #0F172A; /* Slate 900 */
+                    margin-bottom: 30px;
+                    position: relative;
+                    z-index: 2;
+                    letter-spacing: 1px;
+                    padding-bottom: 15px;
+                    border-bottom: 2px solid #FBBF24; /* Amber 400 */
+                    display: inline-block;
+                }
+                .message-content-v2 {
+                    font-family: 'Georgia', serif;
+                    font-size: 16px;
+                    line-height: 2;
+                    color: #334155; /* Slate 700 */
+                    text-align: justify;
+                    position: relative;
+                    z-index: 2;
+                }
+                .message-content-v2 p {
+                    margin-bottom: 1.5em;
+                }
+                .message-content-v2 strong {
+                    font-weight: bold;
+                    color: #B45309; /* Amber 700 */
+                }
+                .message-signature-v2 {
+                    margin-top: 50px;
+                    text-align: right;
+                }
+                .message-signature-v2 .title {
+                    font-size: 15px;
+                    color: #475569; /* Slate 600 */
+                    margin-bottom: 5px;
+                }
+                .message-signature-v2 .name {
+                    font-family: 'Caveat', cursive;
+                    font-size: 32px;
+                    color: #0F172A; /* Slate 900 */
+                }
+   
+

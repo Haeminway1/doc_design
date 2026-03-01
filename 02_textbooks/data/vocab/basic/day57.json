@@ -1,0 +1,507 @@
+{
+  "bookId": "vocab-basic",
+  "day": 57,
+  "theme": "신체 부위와 기능 (Body Parts and Functions)",
+  "words": [
+    {
+      "word": "organ",
+      "pronunciation": "[ɔ́ːrgən]",
+      "partOfSpeech": "n.",
+      "meaning": "(인체의) 기관, 장기",
+      "example": {
+        "en": "The heart is a vital organ.",
+        "ko": "심장은 필수적인 기관이다."
+      }
+    },
+    {
+      "word": "tissue",
+      "pronunciation": "[tíʃuː]",
+      "partOfSpeech": "n.",
+      "meaning": "(세포) 조직",
+      "example": {
+        "en": "The doctor took a tissue sample for biopsy.",
+        "ko": "의사는 조직 검사를 위해 조직 샘플을 채취했다."
+      }
+    },
+    {
+      "word": "cell",
+      "pronunciation": "[sel]",
+      "partOfSpeech": "n.",
+      "meaning": "세포",
+      "example": {
+        "en": "The human body is made up of trillions of cells.",
+        "ko": "인체는 수조 개의 세포로 이루어져 있다."
+      }
+    },
+    {
+      "word": "bone",
+      "pronunciation": "[boun]",
+      "partOfSpeech": "n.",
+      "meaning": "뼈",
+      "example": {
+        "en": "He broke a bone in his arm.",
+        "ko": "그는 팔에 뼈가 부러졌다."
+      }
+    },
+    {
+      "word": "joint",
+      "pronunciation": "[dʒɔint]",
+      "partOfSpeech": "n.",
+      "meaning": "관절",
+      "example": {
+        "en": "The knee is the largest joint in the body.",
+        "ko": "무릎은 신체에서 가장 큰 관절이다."
+      }
+    },
+    {
+      "word": "ligament",
+      "pronunciation": "[lígəmənt]",
+      "partOfSpeech": "n.",
+      "meaning": "인대",
+      "example": {
+        "en": "He tore a ligament in his knee while playing soccer.",
+        "ko": "그는 축구를 하다가 무릎 인대가 찢어졌다."
+      }
+    },
+    {
+      "word": "tendon",
+      "pronunciation": "[téndən]",
+      "partOfSpeech": "n.",
+      "meaning": "힘줄",
+      "example": {
+        "en": "The Achilles tendon connects the calf muscle to the heel bone.",
+        "ko": "아킬레스건은 종아리 근육과 발뒤꿈치 뼈를 연결한다."
+      }
+    },
+    {
+      "word": "muscle",
+      "pronunciation": "[mʌ́sl]",
+      "partOfSpeech": "n.",
+      "meaning": "근육",
+      "example": {
+        "en": "He pulled a muscle in his back.",
+        "ko": "그는 등에 근육이 결렸다."
+      }
+    },
+    {
+      "word": "nerve",
+      "pronunciation": "[nəːrv]",
+      "partOfSpeech": "n.",
+      "meaning": "신경",
+      "example": {
+        "en": "The dentist hit a nerve, and I felt a sharp pain.",
+        "ko": "치과의사가 신경을 건드려서 나는 날카로운 통증을 느꼈다."
+      }
+    },
+    {
+      "word": "brain",
+      "pronunciation": "[brein]",
+      "partOfSpeech": "n.",
+      "meaning": "뇌",
+      "example": {
+        "en": "The brain is the control center of the body.",
+        "ko": "뇌는 신체의 통제 센터이다."
+      }
+    },
+    {
+      "word": "spine",
+      "pronunciation": "[spain]",
+      "partOfSpeech": "n.",
+      "meaning": "척추",
+      "example": {
+        "en": "An injury to the spine can cause paralysis.",
+        "ko": "척추 부상은 마비를 유발할 수 있다."
+      }
+    },
+    {
+      "word": "heart",
+      "pronunciation": "[hɑːrt]",
+      "partOfSpeech": "n.",
+      "meaning": "심장",
+      "example": {
+        "en": "The heart pumps blood throughout the body.",
+        "ko": "심장은 몸 전체에 피를 펌프질한다."
+      }
+    },
+    {
+      "word": "lung",
+      "pronunciation": "[lʌ&eng;]",
+      "partOfSpeech": "n.",
+      "meaning": "폐, 허파",
+      "example": {
+        "en": "Smoking is very bad for your lungs.",
+        "ko": "흡연은 폐에 매우 나쁘다."
+      }
+    },
+    {
+      "word": "liver",
+      "pronunciation": "[lívər]",
+      "partOfSpeech": "n.",
+      "meaning": "간",
+      "example": {
+        "en": "The liver plays a key role in detoxification.",
+        "ko": "간은 해독에 핵심적인 역할을 한다."
+      }
+    },
+    {
+      "word": "kidney",
+      "pronunciation": "[kídni]",
+      "partOfSpeech": "n.",
+      "meaning": "신장, 콩팥",
+      "example": {
+        "en": "The kidneys filter waste products from the blood.",
+        "ko": "신장은 혈액에서 노폐물을 걸러낸다."
+      }
+    },
+    {
+      "word": "stomach",
+      "pronunciation": "[stʌ́mək]",
+      "partOfSpeech": "n.",
+      "meaning": "위, 복부",
+      "example": {
+        "en": "My stomach hurts after eating too much.",
+        "ko": "너무 많이 먹어서 배가 아프다."
+      }
+    },
+    {
+      "word": "intestine",
+      "pronunciation": "[intéstin]",
+      "partOfSpeech": "n.",
+      "meaning": "장, 창자",
+      "example": {
+        "en": "The small intestine is where most digestion occurs.",
+        "ko": "소장은 대부분의 소화가 일어나는 곳이다."
+      }
+    },
+    {
+      "word": "skin",
+      "pronunciation": "[skin]",
+      "partOfSpeech": "n.",
+      "meaning": "피부",
+      "example": {
+        "en": "The skin is the body's largest organ.",
+        "ko": "피부는 신체의 가장 큰 기관이다."
+      }
+    },
+    {
+      "word": "hair",
+      "pronunciation": "[hεər]",
+      "partOfSpeech": "n.",
+      "meaning": "머리카락, 털",
+      "example": {
+        "en": "She has long, beautiful hair.",
+        "ko": "그녀는 길고 아름다운 머리카락을 가지고 있다."
+      }
+    },
+    {
+      "word": "nail",
+      "pronunciation": "[neil]",
+      "partOfSpeech": "n.",
+      "meaning": "손톱, 발톱; 못",
+      "example": {
+        "en": "She painted her nails red.",
+        "ko": "그녀는 손톱을 빨갛게 칠했다."
+      }
+    },
+    {
+      "word": "eye",
+      "pronunciation": "[ai]",
+      "partOfSpeech": "n.",
+      "meaning": "눈",
+      "example": {
+        "en": "Close your eyes and make a wish.",
+        "ko": "눈을 감고 소원을 빌어보세요."
+      }
+    },
+    {
+      "word": "ear",
+      "pronunciation": "[iər]",
+      "partOfSpeech": "n.",
+      "meaning": "귀",
+      "example": {
+        "en": "The loud music hurt my ears.",
+        "ko": "시끄러운 음악이 내 귀를 아프게 했다."
+      }
+    },
+    {
+      "word": "nose",
+      "pronunciation": "[nouz]",
+      "partOfSpeech": "n.",
+      "meaning": "코",
+      "example": {
+        "en": "I have a runny nose because of my cold.",
+        "ko": "감기 때문에 콧물이 난다."
+      }
+    },
+    {
+      "word": "mouth",
+      "pronunciation": "[mauθ]",
+      "partOfSpeech": "n.",
+      "meaning": "입",
+      "example": {
+        "en": "Don't speak with your mouth full.",
+        "ko": "입에 음식을 가득 넣고 말하지 마세요."
+      }
+    },
+    {
+      "word": "tongue",
+      "pronunciation": "[tʌ&eng;]",
+      "partOfSpeech": "n.",
+      "meaning": "혀",
+      "example": {
+        "en": "I bit my tongue while eating.",
+        "ko": "나는 밥을 먹다가 혀를 깨물었다."
+      }
+    },
+    {
+      "word": "tooth",
+      "pronunciation": "[tuːθ]",
+      "partOfSpeech": "n.",
+      "meaning": "이, 치아 (pl. teeth)",
+      "example": {
+        "en": "You should brush your teeth twice a day.",
+        "ko": "하루에 두 번 이를 닦아야 한다."
+      }
+    },
+    {
+      "word": "throat",
+      "pronunciation": "[θrout]",
+      "partOfSpeech": "n.",
+      "meaning": "목구멍",
+      "example": {
+        "en": "I have a sore throat.",
+        "ko": "목이 아프다."
+      }
+    },
+    {
+      "word": "neck",
+      "pronunciation": "[nek]",
+      "partOfSpeech": "n.",
+      "meaning": "목",
+      "example": {
+        "en": "She wore a beautiful necklace around her neck.",
+        "ko": "그녀는 목에 아름다운 목걸이를 걸었다."
+      }
+    },
+    {
+      "word": "shoulder",
+      "pronunciation": "[ʃóuldər]",
+      "partOfSpeech": "n.",
+      "meaning": "어깨",
+      "example": {
+        "en": "He carried the heavy bag on his shoulder.",
+        "ko": "그는 무거운 가방을 어깨에 멨다."
+      }
+    },
+    {
+      "word": "arm",
+      "pronunciation": "[ɑːrm]",
+      "partOfSpeech": "n.",
+      "meaning": "팔",
+      "example": {
+        "en": "She broke her arm in the accident.",
+        "ko": "그녀는 사고로 팔이 부러졌다."
+      }
+    },
+    {
+      "word": "elbow",
+      "pronunciation": "[élbou]",
+      "partOfSpeech": "n.",
+      "meaning": "팔꿈치",
+      "example": {
+        "en": "He rested his elbow on the table.",
+        "ko": "그는 테이블에 팔꿈치를 기댔다."
+      }
+    },
+    {
+      "word": "wrist",
+      "pronunciation": "[rist]",
+      "partOfSpeech": "n.",
+      "meaning": "손목",
+      "example": {
+        "en": "She wore a watch on her wrist.",
+        "ko": "그녀는 손목에 시계를 찼다."
+      }
+    },
+    {
+      "word": "hand",
+      "pronunciation": "[hænd]",
+      "partOfSpeech": "n.",
+      "meaning": "손",
+      "example": {
+        "en": "Please wash your hands before dinner.",
+        "ko": "저녁 식사 전에 손을 씻으세요."
+      }
+    },
+    {
+      "word": "finger",
+      "pronunciation": "[fí&eng;gər]",
+      "partOfSpeech": "n.",
+      "meaning": "손가락",
+      "example": {
+        "en": "She wore a ring on her finger.",
+        "ko": "그녀는 손가락에 반지를 꼈다."
+      }
+    },
+    {
+      "word": "chest",
+      "pronunciation": "[tʃest]",
+      "partOfSpeech": "n.",
+      "meaning": "가슴",
+      "example": {
+        "en": "He felt a pain in his chest.",
+        "ko": "그는 가슴에 통증을 느꼈다."
+      }
+    },
+    {
+      "word": "abdomen",
+      "pronunciation": "[ǽbdəmən]",
+      "partOfSpeech": "n.",
+      "meaning": "복부",
+      "example": {
+        "en": "The doctor examined the patient's abdomen.",
+        "ko": "의사는 환자의 복부를 진찰했다."
+      }
+    },
+    {
+      "word": "back",
+      "pronunciation": "[bæk]",
+      "partOfSpeech": "n.",
+      "meaning": "등, 허리",
+      "example": {
+        "en": "I hurt my back lifting a heavy box.",
+        "ko": "나는 무거운 상자를 들다가 허리를 다쳤다."
+      }
+    },
+    {
+      "word": "hip",
+      "pronunciation": "[hip]",
+      "partOfSpeech": "n.",
+      "meaning": "엉덩이, 골반",
+      "example": {
+        "en": "She broke her hip in the fall.",
+        "ko": "그녀는 넘어져서 엉덩이뼈가 부러졌다."
+      }
+    },
+    {
+      "word": "leg",
+      "pronunciation": "[leg]",
+      "partOfSpeech": "n.",
+      "meaning": "다리",
+      "example": {
+        "en": "My legs are tired from walking all day.",
+        "ko": "하루 종일 걸어서 다리가 피곤하다."
+      }
+    },
+    {
+      "word": "knee",
+      "pronunciation": "[niː]",
+      "partOfSpeech": "n.",
+      "meaning": "무릎",
+      "example": {
+        "en": "He fell and scraped his knee.",
+        "ko": "그는 넘어져서 무릎이 까졌다."
+      }
+    },
+    {
+      "word": "ankle",
+      "pronunciation": "[ǽ&eng;kl]",
+      "partOfSpeech": "n.",
+      "meaning": "발목",
+      "example": {
+        "en": "She twisted her ankle while running.",
+        "ko": "그녀는 달리다가 발목을 삐었다."
+      }
+    },
+    {
+      "word": "foot",
+      "pronunciation": "[fut]",
+      "partOfSpeech": "n.",
+      "meaning": "발 (pl. feet)",
+      "example": {
+        "en": "My feet are sore from standing all day.",
+        "ko": "하루 종일 서 있어서 발이 아프다."
+      }
+    },
+    {
+      "word": "toe",
+      "pronunciation": "[tou]",
+      "partOfSpeech": "n.",
+      "meaning": "발가락",
+      "example": {
+        "en": "I stubbed my toe on the leg of the chair.",
+        "ko": "나는 의자 다리에 발가락을 찧었다."
+      }
+    },
+    {
+      "word": "vein",
+      "pronunciation": "[vein]",
+      "partOfSpeech": "n.",
+      "meaning": "정맥",
+      "example": {
+        "en": "Veins carry blood back to the heart.",
+        "ko": "정맥은 혈액을 심장으로 다시 운반한다."
+      }
+    },
+    {
+      "word": "artery",
+      "pronunciation": "[άːrtəri]",
+      "partOfSpeech": "n.",
+      "meaning": "동맥",
+      "example": {
+        "en": "Arteries carry oxygen-rich blood from the heart.",
+        "ko": "동맥은 산소가 풍부한 혈액을 심장에서 운반한다."
+      }
+    },
+    {
+      "word": "capillary",
+      "pronunciation": "[kǽpəlèri]",
+      "partOfSpeech": "n.",
+      "meaning": "모세혈관",
+      "example": {
+        "en": "Capillaries are the smallest blood vessels in the body.",
+        "ko": "모세혈관은 신체에서 가장 작은 혈관이다."
+      }
+    },
+    {
+      "word": "gland",
+      "pronunciation": "[glænd]",
+      "partOfSpeech": "n.",
+      "meaning": "(분비)샘, 선",
+      "example": {
+        "en": "The thyroid is a gland in the neck that produces hormones.",
+        "ko": "갑상선은 호르몬을 생산하는 목에 있는 분비샘이다."
+      }
+    },
+    {
+      "word": "synovial",
+      "pronunciation": "[sɪˈnoʊviəl]",
+      "partOfSpeech": "adjective",
+      "meaning": "활막의, 관절액의",
+      "example": {
+        "en": "The synovial fluid helps reduce friction between joints during movement.",
+        "ko": "활막액은 운동 중 관절 사이의 마찰을 줄이는 데 도움을 줍니다."
+      }
+    },
+    {
+      "word": "osseous",
+      "pronunciation": "[ˈɑːsiəs]",
+      "partOfSpeech": "adjective",
+      "meaning": "뼈의, 골질의",
+      "example": {
+        "en": "The osseous tissue provides structural support for the entire body.",
+        "ko": "골조직은 전신의 구조적 지지를 제공합니다."
+      }
+    },
+    {
+      "word": "diaphragm",
+      "pronunciation": "/ˈdaɪəfræm/",
+      "partOfSpeech": "n.",
+      "meaning": "돔 모양의 근육성 격막으로 흉강과 복강을 나누며, 수축하면 흉강을 확장시켜 호흡에 필수적이다.",
+      "example": {
+        "en": "When the diaphragm contracts, the chest cavity expands, drawing air into the lungs.",
+        "ko": "횡격막이 수축하면 흉강이 확장되어 공기가 폐로 들어간다."
+      }
+    }
+  ]
+}

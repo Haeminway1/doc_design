@@ -1,0 +1,106 @@
+/* 피드백지 공통 CSS v1.0 — 파스텔 하늘색 팔레트 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap');
+
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size: 10pt; -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+body { font-family: 'Noto Sans KR', sans-serif; font-weight: 400; font-size: 10pt; line-height: 1.7; color: #1a202c !important; text-align: justify; }
+@page { size: A4; margin: 16mm 14mm; }
+
+/* Page break controls */
+.page-break-after { page-break-after: always !important; }
+.page-break-before { page-break-before: always !important; }
+.avoid-break { page-break-inside: avoid !important; }
+h1, h2, h3, h4 { page-break-after: avoid !important; }
+
+/* Headings */
+h1 { font-size: 20pt; font-weight: 700; color: #4A90C4 !important; border-bottom: 3px solid #4A90C4 !important; padding-bottom: 8px; margin: 20px 0 14px 0; }
+h2 { font-size: 16pt; font-weight: 700; color: #5BA3D9 !important; border-bottom: 2px solid #D4E5F3 !important; padding-bottom: 6px; margin: 18px 0 12px 0; }
+h3 { font-size: 13pt; font-weight: 700; color: #2d3748 !important; margin: 14px 0 8px 0; }
+h4 { font-size: 11pt; font-weight: 700; color: #4a5568 !important; margin: 12px 0 6px 0; }
+
+/* Report Header */
+.report-header { text-align: center; margin-bottom: 20px; }
+.report-date { font-size: 10pt; color: #718096 !important; margin-bottom: 4px; }
+.report-title { font-size: 22pt; font-weight: 700; color: #4A90C4 !important; border: none !important; margin: 8px 0; padding: 0; }
+.report-subtitle { font-size: 12pt; color: #4a5568 !important; margin-bottom: 6px; }
+.report-meta { font-size: 9pt; color: #718096 !important; }
+
+/* Section Header (full-bleed bar) */
+.section-header { background-color: #5BA3D9 !important; color: #fff !important; padding: 12px 20px; margin: 20px -14mm 14px -14mm; padding-left: 14mm; padding-right: 14mm; font-size: 16pt; font-weight: 700; }
+.section-header .section-num { display: block; font-size: 12pt; font-weight: 300; color: #C5DFEF !important; margin-bottom: 2px; }
+.section-divider { border: none; border-top: 2px solid #D4E5F3 !important; margin: 16px 0; }
+
+/* Diagnosis Card */
+.diagnosis-card { border: 2px solid #B8D4EC !important; border-radius: 6px; padding: 14px 18px; margin: 14px 0; background-color: #F4F9FD !important; }
+.priority-order { background-color: #EDF5FC !important; border-left: 4px solid #7BB8E8 !important; padding: 10px 16px; margin: 12px 0; }
+
+/* Problem Card */
+.problem-card { border: 1px solid #D4E5F3 !important; border-radius: 4px; padding: 14px 18px; margin: 14px 0; page-break-inside: avoid !important; background-color: #fff !important; }
+.problem-header { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+.problem-badge { width: 36px; height: 36px; border-radius: 50%; background-color: #7BB8E8 !important; color: #fff !important; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 12pt; flex-shrink: 0; }
+.problem-title { font-size: 11pt; font-weight: 700; color: #2d3748 !important; }
+.problem-source { font-size: 8pt; color: #718096 !important; display: block; margin-top: 2px; }
+
+/* Content Boxes */
+.concept-box { background-color: #EDF5FC !important; border: 1px solid #7BB8E8 !important; padding: 12px 16px; margin: 12px 0; page-break-inside: avoid !important; }
+.concept-label { color: #4A90C4 !important; font-weight: 700; font-size: 9pt; display: block; margin-bottom: 4px; }
+.grammar-block { background-color: #edf2f7 !important; border: 1px solid #D4E5F3 !important; padding: 12px 16px; margin: 12px 0; font-size: 9pt; line-height: 1.8; white-space: pre-wrap; page-break-inside: avoid !important; }
+.tip-box { background-color: #fffaf0 !important; border-left: 4px solid #ed8936 !important; padding: 10px 16px; margin: 12px 0; page-break-inside: avoid !important; }
+.tip-label { color: #c05621 !important; font-weight: 700; font-size: 9pt; display: block; margin-bottom: 4px; }
+.warning-box { background-color: #fff5f5 !important; border-left: 4px solid #e53e3e !important; padding: 10px 16px; margin: 12px 0; page-break-inside: avoid !important; }
+.warning-label { color: #e53e3e !important; font-weight: 700; font-size: 9pt; display: block; margin-bottom: 4px; }
+.question-box { background-color: #F4F9FD !important; border-left: 4px solid #7BB8E8 !important; padding: 10px 14px; margin: 8px 0; font-size: 10pt; line-height: 1.7; }
+.answer-box { background-color: #f0fff4 !important; border-left: 4px solid #38a169 !important; padding: 8px 14px; margin: 8px 0; font-weight: 500; }
+.passage-box { background-color: #F4F9FD !important; border: 1px solid #B8D4EC !important; padding: 14px 16px; margin: 10px 0; font-size: 9.5pt; line-height: 1.8; text-align: justify; page-break-inside: avoid !important; }
+
+/* Tables */
+table { width: 100%; border-collapse: collapse; margin: 12px 0 16px 0; font-size: 9pt; line-height: 1.6; page-break-inside: avoid !important; }
+thead th { background-color: #7BB8E8 !important; color: #fff !important; font-weight: 700; padding: 8px 10px; border: 1px solid #6AABDE !important; text-align: left; }
+tbody td { padding: 7px 10px; border: 1px solid #D4E5F3 !important; vertical-align: top; }
+tbody tr:nth-child(odd) { background-color: #fff !important; }
+tbody tr:nth-child(even) { background-color: #F4F9FD !important; }
+tbody td:first-child { font-weight: 500; }
+.compare-table thead th:nth-child(2) { background-color: #6AABDE !important; }
+.compare-table thead th:nth-child(3) { background-color: #38a169 !important; }
+.group-row td { background-color: #EDF5FC !important; font-weight: 700; color: #4A90C4 !important; border-bottom: 2px solid #7BB8E8 !important; }
+.expression-table td:first-child { white-space: nowrap; }
+
+/* Flowchart */
+.flowchart { page-break-inside: avoid !important; margin: 12px 0; }
+.flow-step { background-color: #EDF5FC !important; border: 1px solid #B8D4EC !important; border-radius: 4px; padding: 10px 16px; margin: 4px 0; }
+.flow-step .step-label { font-weight: 700; color: #4A90C4 !important; }
+.flow-step .step-sub { padding-left: 24px; font-size: 9pt; color: #4a5568 !important; }
+.flow-arrow { text-align: center; font-size: 14pt; color: #7BB8E8 !important; margin: 2px 0; }
+
+/* Severity badges */
+.severity-high { display: inline-block; background-color: #e53e3e !important; color: #fff !important; font-size: 8pt; padding: 2px 8px; border-radius: 10px; }
+.severity-mid { display: inline-block; background-color: #ed8936 !important; color: #fff !important; font-size: 8pt; padding: 2px 8px; border-radius: 10px; }
+.severity-low { display: inline-block; background-color: #38a169 !important; color: #fff !important; font-size: 8pt; padding: 2px 8px; border-radius: 10px; }
+
+/* Inline highlights */
+.hl-key { color: #4A90C4 !important; font-weight: 700; }
+.hl-correct { color: #38a169 !important; font-weight: 700; }
+.hl-wrong { color: #e53e3e !important; font-weight: 700; text-decoration: line-through; }
+.hl-blue { color: #5BA3D9 !important; font-weight: 700; }
+.marker-o { color: #38a169 !important; font-weight: 700; }
+.marker-x { color: #e53e3e !important; font-weight: 700; }
+.result-correct { color: #38a169 !important; font-weight: 700; }
+.result-wrong { color: #e53e3e !important; font-weight: 700; }
+
+/* Checklist */
+.checklist-group { margin: 12px 0; }
+.checklist-group-title { font-weight: 700; color: #4A90C4 !important; font-size: 11pt; margin: 10px 0 6px 0; }
+.checklist-item { list-style: none; margin: 4px 0; font-size: 10pt; }
+.checkbox { display: inline-block; width: 14px; height: 14px; border: 1.5px solid #a0aec0 !important; border-radius: 2px; margin-right: 8px; vertical-align: middle; }
+
+/* Practice */
+.practice-item { margin: 8px 0; }
+.practice-num { font-weight: 700; color: #4A90C4 !important; }
+.practice-choices { padding-left: 20px; font-size: 9pt; line-height: 1.8; }
+.variant-choices { padding-left: 20px; font-size: 9pt; line-height: 1.8; }
+
+/* Direction badges for reading */
+.direction-badge { display: inline-block; font-size: 8pt; font-weight: 700; padding: 2px 10px; border-radius: 10px; margin: 4px 2px; }
+.direction-positive { background-color: #38a169 !important; color: #fff !important; }
+.direction-negative { background-color: #e53e3e !important; color: #fff !important; }
+.direction-neutral { background-color: #ed8936 !important; color: #fff !important; }

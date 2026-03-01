@@ -1,6 +1,25 @@
 {
+  "name": "vera-doc-studio",
+  "version": "1.0.0",
+  "description": "Vera's Document Studio — 교재 제작, 학습분석, 프린트 도구",
+  "private": true,
+  "scripts": {
+    "study": "node 04_scripts/generate-study-pdf.js",
+    "print": "node 04_scripts/images-to-pdf.js",
+    "assemble": "node 04_scripts/assemble.js",
+    "validate": "node 04_scripts/validate-schema.js"
+  },
   "dependencies": {
+    "@anthropic-ai/sdk": "^0.78.0",
+    "cheerio": "^1.2.0",
+    "handlebars": "^4.7.8",
+    "js-yaml": "^4.1.1",
+    "marked": "^17.0.3",
+    "openai": "^6.22.0",
     "pdf-lib": "^1.17.1",
+    "pdf-parse": "^1.1.1",
+    "puppeteer": "^24.2.0",
+    "puppeteer-core": "^24.37.5",
     "sharp": "^0.34.5"
   }
 }

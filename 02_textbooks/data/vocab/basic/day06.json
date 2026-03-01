@@ -1,0 +1,507 @@
+{
+  "bookId": "vocab-basic",
+  "day": 6,
+  "theme": "법, 재판, 범죄 (Law, Trial, and Crime)",
+  "words": [
+    {
+      "word": "law",
+      "pronunciation": "[lɔː]",
+      "partOfSpeech": "n.",
+      "meaning": "법, 법률; 법칙",
+      "example": {
+        "en": "Everyone is equal before the law.",
+        "ko": "모든 사람은 법 앞에 평등하다."
+      }
+    },
+    {
+      "word": "statute",
+      "pronunciation": "[stǽʧuːt]",
+      "partOfSpeech": "n.",
+      "meaning": "법규, 법령, 정관",
+      "example": {
+        "en": "The company was fined for violating a safety statute.",
+        "ko": "그 회사는 안전 법규를 위반하여 벌금을 부과받았다."
+      }
+    },
+    {
+      "word": "code",
+      "pronunciation": "[koud]",
+      "partOfSpeech": "n.",
+      "meaning": "법전, 규범; 암호",
+      "example": {
+        "en": "The penal code lists all criminal offenses and their punishments.",
+        "ko": "형법전은 모든 형사 범죄와 그 처벌을 열거한다."
+      }
+    },
+    {
+      "word": "legal",
+      "pronunciation": "[líːgəl]",
+      "partOfSpeech": "a.",
+      "meaning": "법률의, 합법적인",
+      "example": {
+        "en": "It is not legal to drive without a license.",
+        "ko": "면허 없이 운전하는 것은 합법이 아니다."
+      }
+    },
+    {
+      "word": "illicit",
+      "pronunciation": "[ilísit]",
+      "partOfSpeech": "a.",
+      "meaning": "불법의, 부당한 (특히 사회적으로 금기시되는)",
+      "example": {
+        "en": "He was arrested for selling illicit drugs.",
+        "ko": "그는 불법 약물을 판매한 혐의로 체포되었다."
+      }
+    },
+    {
+      "word": "unlawful",
+      "pronunciation": "[ʌnlɔ́ːfəl]",
+      "partOfSpeech": "a.",
+      "meaning": "불법적인, 비합법적인",
+      "example": {
+        "en": "The police declared the demonstration an unlawful assembly.",
+        "ko": "경찰은 그 시위를 불법 집회로 선언했다."
+      }
+    },
+    {
+      "word": "legitimate",
+      "pronunciation": "[lidʒítəmət]",
+      "partOfSpeech": "a.",
+      "meaning": "합법적인, 정당한",
+      "example": {
+        "en": "She has a legitimate claim to the property.",
+        "ko": "그녀는 그 재산에 대한 합법적인 소유권을 가지고 있다."
+      }
+    },
+    {
+      "word": "court",
+      "pronunciation": "[kɔːrt]",
+      "partOfSpeech": "n.",
+      "meaning": "법원, 법정; (테니스 등의) 코트",
+      "example": {
+        "en": "The case will be heard in the Supreme Court.",
+        "ko": "그 사건은 대법원에서 심리될 것이다."
+      }
+    },
+    {
+      "word": "trial",
+      "pronunciation": "[tráiəl]",
+      "partOfSpeech": "n.",
+      "meaning": "재판, 공판; 시험",
+      "example": {
+        "en": "He is on trial for murder.",
+        "ko": "그는 살인 혐의로 재판을 받고 있다."
+      }
+    },
+    {
+      "word": "sue",
+      "pronunciation": "[suː]",
+      "partOfSpeech": "v.",
+      "meaning": "고소하다, 소송을 제기하다",
+      "example": {
+        "en": "She is suing the company for damages.",
+        "ko": "그녀는 손해 배상을 요구하며 그 회사를 고소하고 있다."
+      }
+    },
+    {
+      "word": "lawsuit",
+      "pronunciation": "[lɔ́ːsùːt]",
+      "partOfSpeech": "n.",
+      "meaning": "소송",
+      "example": {
+        "en": "He filed a lawsuit against his former employer.",
+        "ko": "그는 이전 고용주를 상대로 소송을 제기했다."
+      }
+    },
+    {
+      "word": "plaintiff",
+      "pronunciation": "[pléintif]",
+      "partOfSpeech": "n.",
+      "meaning": "(민사 소송의) 원고, 고소인",
+      "example": {
+        "en": "The plaintiff is seeking $1 million in compensation.",
+        "ko": "원고는 100만 달러의 보상을 요구하고 있다."
+      }
+    },
+    {
+      "word": "defendant",
+      "pronunciation": "[diféndənt]",
+      "partOfSpeech": "n.",
+      "meaning": "(민사·형사 소송의) 피고",
+      "example": {
+        "en": "The defendant pleaded not guilty to the charges.",
+        "ko": "피고는 혐의에 대해 무죄를 주장했다."
+      }
+    },
+    {
+      "word": "lawyer",
+      "pronunciation": "[lɔ́ːjər]",
+      "partOfSpeech": "n.",
+      "meaning": "변호사",
+      "example": {
+        "en": "You should consult a lawyer before signing the contract.",
+        "ko": "계약서에 서명하기 전에 변호사와 상담해야 한다."
+      }
+    },
+    {
+      "word": "attorney",
+      "pronunciation": "[ətə́ːrni]",
+      "partOfSpeech": "n.",
+      "meaning": "(미국의) 변호사; 대리인",
+      "example": {
+        "en": "The district attorney will prosecute the case.",
+        "ko": "지방 검사가 그 사건을 기소할 것이다."
+      }
+    },
+    {
+      "word": "prosecutor",
+      "pronunciation": "[prάsikjùːtər]",
+      "partOfSpeech": "n.",
+      "meaning": "검사",
+      "example": {
+        "en": "The prosecutor presented strong evidence against the accused.",
+        "ko": "검사는 피고인에 대한 강력한 증거를 제시했다."
+      }
+    },
+    {
+      "word": "judge",
+      "pronunciation": "[dʒʌdʒ]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "판사; 심판\n       \n        판단하다, 판결을 내리다",
+      "example": {
+        "en": "The judge sentenced the defendant to ten years in prison.",
+        "ko": "판사는 피고에게 징역 10년을 선고했다."
+      }
+    },
+    {
+      "word": "jury",
+      "pronunciation": "[dʒúəri]",
+      "partOfSpeech": "n.",
+      "meaning": "배심원단",
+      "example": {
+        "en": "The jury found the defendant guilty.",
+        "ko": "배심원단은 피고에게 유죄 평결을 내렸다."
+      }
+    },
+    {
+      "word": "verdict",
+      "pronunciation": "[və́ːrdikt]",
+      "partOfSpeech": "n.",
+      "meaning": "(배심원단의) 평결",
+      "example": {
+        "en": "The jury reached a unanimous verdict of not guilty.",
+        "ko": "배심원단은 만장일치로 무죄 평결에 도달했다."
+      }
+    },
+    {
+      "word": "sentence",
+      "pronunciation": "[séntəns]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "(형의) 선고; 문장\n       \n        (형을) 선고하다",
+      "example": {
+        "en": "He received a life sentence for the crime.",
+        "ko": "그는 그 범죄로 종신형을 선고받았다."
+      }
+    },
+    {
+      "word": "testimony",
+      "pronunciation": "[téstəmòuni]",
+      "partOfSpeech": "n.",
+      "meaning": "(법정에서의) 증언",
+      "example": {
+        "en": "The witness gave a false testimony in court.",
+        "ko": "그 증인은 법정에서 위증을 했다."
+      }
+    },
+    {
+      "word": "witness",
+      "pronunciation": "[wítnis]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "목격자, 증인\n       \n        목격하다",
+      "example": {
+        "en": "There were no witnesses to the accident.",
+        "ko": "그 사고에는 목격자가 없었다."
+      }
+    },
+    {
+      "word": "evidence",
+      "pronunciation": "[évidəns]",
+      "partOfSpeech": "n.",
+      "meaning": "증거",
+      "example": {
+        "en": "The police are still collecting evidence at the crime scene.",
+        "ko": "경찰은 여전히 범죄 현장에서 증거를 수집하고 있다."
+      }
+    },
+    {
+      "word": "accuse",
+      "pronunciation": "[əkjúːz]",
+      "partOfSpeech": "v.",
+      "meaning": "고발하다, 기소하다, 비난하다",
+      "example": {
+        "en": "He was accused of stealing money from the company.",
+        "ko": "그는 회사에서 돈을 훔친 혐의로 고발당했다."
+      }
+    },
+    {
+      "word": "indict",
+      "pronunciation": "[indáit]",
+      "partOfSpeech": "v.",
+      "meaning": "(대배심이) 기소하다",
+      "example": {
+        "en": "A grand jury voted to indict the official on bribery charges.",
+        "ko": "대배심은 그 공무원을 뇌물 수수 혐의로 기소하기로 의결했다."
+      }
+    },
+    {
+      "word": "plead",
+      "pronunciation": "[pliːd]",
+      "partOfSpeech": "v.",
+      "meaning": "(법정에서) 주장하다, 변호하다; 간청하다",
+      "example": {
+        "en": "The suspect pleaded innocent to all charges.",
+        "ko": "용의자는 모든 혐의에 대해 무죄를 주장했다."
+      }
+    },
+    {
+      "word": "crime",
+      "pronunciation": "[kraim]",
+      "partOfSpeech": "n.",
+      "meaning": "범죄",
+      "example": {
+        "en": "Robbery is a serious crime.",
+        "ko": "강도는 심각한 범죄이다."
+      }
+    },
+    {
+      "word": "offense",
+      "pronunciation": "[əféns]",
+      "partOfSpeech": "n.",
+      "meaning": "위법 행위, 범죄",
+      "example": {
+        "en": "Driving without a license is a criminal offense.",
+        "ko": "무면허 운전은 형사 범죄이다."
+      }
+    },
+    {
+      "word": "felony",
+      "pronunciation": "[féləni]",
+      "partOfSpeech": "n.",
+      "meaning": "중죄, 흉악 범죄",
+      "example": {
+        "en": "Murder is a felony in most countries.",
+        "ko": "살인은 대부분의 국가에서 중죄이다."
+      }
+    },
+    {
+      "word": "misdemeanor",
+      "pronunciation": "[mìsdimíːnər]",
+      "partOfSpeech": "n.",
+      "meaning": "경범죄",
+      "example": {
+        "en": "Shoplifting is often treated as a misdemeanor.",
+        "ko": "가게 좀도둑질은 종종 경범죄로 다뤄진다."
+      }
+    },
+    {
+      "word": "perpetrator",
+      "pronunciation": "[pə́ːrpətrèitər]",
+      "partOfSpeech": "n.",
+      "meaning": "(범행·과실을 저지른) 가해자, 범인",
+      "example": {
+        "en": "The police are searching for the perpetrators of the attack.",
+        "ko": "경찰은 그 공격의 가해자들을 수색하고 있다."
+      }
+    },
+    {
+      "word": "victim",
+      "pronunciation": "[víktim]",
+      "partOfSpeech": "n.",
+      "meaning": "피해자, 희생자",
+      "example": {
+        "en": "The victim was able to identify her attacker.",
+        "ko": "피해자는 자신의 공격자를 식별할 수 있었다."
+      }
+    },
+    {
+      "word": "culprit",
+      "pronunciation": "[kʌ́lprit]",
+      "partOfSpeech": "n.",
+      "meaning": "범인, 범죄자; (문제의) 원인",
+      "example": {
+        "en": "The police quickly identified the main culprit.",
+        "ko": "경찰은 신속하게 주범을 식별했다."
+      }
+    },
+    {
+      "word": "suspect",
+      "pronunciation": "[səspékt]",
+      "partOfSpeech": "v.\n       \n        n.",
+      "meaning": "의심하다\n       \n        [sʌ́spekt] 용의자",
+      "example": {
+        "en": "He is the prime suspect in the murder case.",
+        "ko": "그는 그 살인 사건의 제1 용의자이다."
+      }
+    },
+    {
+      "word": "accomplice",
+      "pronunciation": "[əkάmplis]",
+      "partOfSpeech": "n.",
+      "meaning": "공범자",
+      "example": {
+        "en": "He was convicted of being an accomplice to the robbery.",
+        "ko": "그는 강도 사건의 공범이라는 유죄 판결을 받았다."
+      }
+    },
+    {
+      "word": "alibi",
+      "pronunciation": "[ǽləbài]",
+      "partOfSpeech": "n.",
+      "meaning": "알리바이, 현장 부재 증명",
+      "example": {
+        "en": "The suspect had a solid alibi for the time of the crime.",
+        "ko": "그 용의자는 범행 시각에 대한 확실한 알리바이를 가지고 있었다."
+      }
+    },
+    {
+      "word": "investigation",
+      "pronunciation": "[invèstəgéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "수사, 조사",
+      "example": {
+        "en": "The police have launched a full investigation into the incident.",
+        "ko": "경찰은 그 사건에 대한 전면적인 수사에 착수했다."
+      }
+    },
+    {
+      "word": "warrant",
+      "pronunciation": "[wɔ́ːrənt]",
+      "partOfSpeech": "n.",
+      "meaning": "(체포·수색) 영장",
+      "example": {
+        "en": "The police had a warrant to search the house.",
+        "ko": "경찰은 그 집을 수색할 영장을 가지고 있었다."
+      }
+    },
+    {
+      "word": "arrest",
+      "pronunciation": "[ərést]",
+      "partOfSpeech": "v.\n       \n        n.",
+      "meaning": "체포하다\n       \n        체포",
+      "example": {
+        "en": "The suspect was arrested and taken to the police station.",
+        "ko": "용의자는 체포되어 경찰서로 연행되었다."
+      }
+    },
+    {
+      "word": "custody",
+      "pronunciation": "[kʌ́stədi]",
+      "partOfSpeech": "n.",
+      "meaning": "양육권; 구류, 구금",
+      "example": {
+        "en": "The suspect is being held in police custody.",
+        "ko": "그 용의자는 경찰에 구금되어 있다."
+      }
+    },
+    {
+      "word": "imprison",
+      "pronunciation": "[imprízn]",
+      "partOfSpeech": "v.",
+      "meaning": "투옥하다, 감금하다",
+      "example": {
+        "en": "He was imprisoned for 20 years for his crimes.",
+        "ko": "그는 범죄 혐의로 20년 동안 투옥되었다."
+      }
+    },
+    {
+      "word": "incarcerate",
+      "pronunciation": "[inkάːrsərèit]",
+      "partOfSpeech": "v.",
+      "meaning": "투옥하다, 감금하다",
+      "example": {
+        "en": "The new law would incarcerate offenders for longer periods.",
+        "ko": "새 법은 범죄자들을 더 오랜 기간 동안 투옥하게 될 것이다."
+      }
+    },
+    {
+      "word": "fine",
+      "pronunciation": "[fain]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "벌금\n       \n        벌금을 부과하다",
+      "example": {
+        "en": "He had to pay a heavy fine for speeding.",
+        "ko": "그는 과속으로 무거운 벌금을 내야 했다."
+      }
+    },
+    {
+      "word": "probation",
+      "pronunciation": "[proubéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "보호 관찰, 집행 유예",
+      "example": {
+        "en": "The judge sentenced him to two years' probation.",
+        "ko": "판사는 그에게 2년의 보호 관찰을 선고했다."
+      }
+    },
+    {
+      "word": "parole",
+      "pronunciation": "[pərέul]",
+      "partOfSpeech": "n.",
+      "meaning": "가석방",
+      "example": {
+        "en": "He was released from prison on parole.",
+        "ko": "그는 가석방으로 교도소에서 풀려났다."
+      }
+    },
+    {
+      "word": "acquittal",
+      "pronunciation": "[əkwítl]",
+      "partOfSpeech": "n.",
+      "meaning": "무죄 선고",
+      "example": {
+        "en": "The trial resulted in an acquittal for the defendant.",
+        "ko": "그 재판은 피고에 대한 무죄 선고로 끝났다."
+      }
+    },
+    {
+      "word": "appeal",
+      "pronunciation": "[əpíːl]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "항소, 상고; 매력\n       \n        항소하다; 호소하다",
+      "example": {
+        "en": "His lawyers are planning to appeal the verdict.",
+        "ko": "그의 변호사들은 평결에 대해 항소할 계획이다."
+      }
+    },
+    {
+      "word": "amnesty",
+      "pronunciation": "[ǽmnəsti]",
+      "partOfSpeech": "n.",
+      "meaning": "(특히 정치범에 대한) 사면",
+      "example": {
+        "en": "The government granted an amnesty to all political prisoners.",
+        "ko": "정부는 모든 정치범에게 사면을 내렸다."
+      }
+    },
+    {
+      "word": "subpoena",
+      "pronunciation": "/səˈpiːnə/",
+      "partOfSpeech": "n.",
+      "meaning": "법원에 출석하거나 특정한 증거를 제출하도록 명하는 공식 영장.",
+      "example": {
+        "en": "The witness ignored the subpoena and was held in contempt of court.",
+        "ko": "그 증인은 소환장을 무시했고 법정모독으로 제재를 받았다."
+      }
+    },
+    {
+      "word": "precedent",
+      "pronunciation": "/ˈprɛsɪdənt/",
+      "partOfSpeech": "n.",
+      "meaning": "유사한 사실관계의 후속 사건 판단의 기준이 되는 이전의 법원 판결.",
+      "example": {
+        "en": "Bound by precedent, the appellate court affirmed the conviction.",
+        "ko": "선례에 구속되어 항소심 법원은 유죄 판결을 유지했다."
+      }
+    }
+  ]
+}

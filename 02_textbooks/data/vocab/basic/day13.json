@@ -1,0 +1,503 @@
+{
+  "bookId": "vocab-basic",
+  "day": 13,
+  "theme": "경제 현상 (Economic Phenomena)",
+  "words": [
+    {
+      "word": "economy",
+      "pronunciation": "[ikάnəmi]",
+      "partOfSpeech": "n.",
+      "meaning": "경제; 절약",
+      "example": {
+        "en": "The country's economy is growing at a rapid pace.",
+        "ko": "그 나라의 경제는 빠른 속도로 성장하고 있다."
+      }
+    },
+    {
+      "word": "economics",
+      "pronunciation": "[ìːkənάmiks]",
+      "partOfSpeech": "n.",
+      "meaning": "경제학",
+      "example": {
+        "en": "He is studying economics at the university.",
+        "ko": "그는 대학에서 경제학을 공부하고 있다."
+      }
+    },
+    {
+      "word": "boom",
+      "pronunciation": "[buːm]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "(경기의) 호황, 붐\n       \n        호황을 맞다",
+      "example": {
+        "en": "The tech industry experienced a massive boom in the 1990s.",
+        "ko": "기술 산업은 1990년대에 거대한 호황을 경험했다."
+      }
+    },
+    {
+      "word": "prosperity",
+      "pronunciation": "[prɑspérəti]",
+      "partOfSpeech": "n.",
+      "meaning": "번영, 번창",
+      "example": {
+        "en": "The post-war era was a time of great economic prosperity.",
+        "ko": "전후 시대는 엄청난 경제적 번영의 시기였다."
+      }
+    },
+    {
+      "word": "recession",
+      "pronunciation": "[riséʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "(일시적인) 경기 후퇴, 불경기",
+      "example": {
+        "en": "The economy is slowly recovering from a deep recession.",
+        "ko": "경제는 깊은 불경기에서 서서히 회복하고 있다."
+      }
+    },
+    {
+      "word": "slump",
+      "pronunciation": "[slʌmp]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "(가격·가치 등의) 급락; 불황, 슬럼프\n       \n        급락하다",
+      "example": {
+        "en": "The housing market is in a slump.",
+        "ko": "주택 시장은 불황에 빠져 있다."
+      }
+    },
+    {
+      "word": "depression",
+      "pronunciation": "[dipréʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "(장기적인) 불황, 불경기; 우울증",
+      "example": {
+        "en": "The Great Depression of the 1930s affected the entire world.",
+        "ko": "1930년대의 대공황은 전 세계에 영향을 미쳤다."
+      }
+    },
+    {
+      "word": "bust",
+      "pronunciation": "[bʌst]",
+      "partOfSpeech": "n.",
+      "meaning": "(사업의) 파산, 실패; 불황기",
+      "example": {
+        "en": "The dot-com boom was followed by a bust.",
+        "ko": "닷컴 붐 이후에는 불황기가 뒤따랐다."
+      }
+    },
+    {
+      "word": "inflation",
+      "pronunciation": "[infléiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "인플레이션, 통화 팽창",
+      "example": {
+        "en": "The government is trying to control rising inflation.",
+        "ko": "정부는 상승하는 인플레이션을 통제하려고 노력하고 있다."
+      }
+    },
+    {
+      "word": "deflation",
+      "pronunciation": "[difléiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "디플레이션, 통화 수축",
+      "example": {
+        "en": "Deflation can lead to decreased consumer spending.",
+        "ko": "디플레이션은 소비 지출 감소로 이어질 수 있다."
+      }
+    },
+    {
+      "word": "stagflation",
+      "pronunciation": "[stægfléiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "스태그플레이션 (경기 침체 중 물가 상승)",
+      "example": {
+        "en": "Stagflation is a difficult economic problem to solve.",
+        "ko": "스태그플레이션은 해결하기 어려운 경제 문제이다."
+      }
+    },
+    {
+      "word": "crisis",
+      "pronunciation": "[kráisis]",
+      "partOfSpeech": "n.",
+      "meaning": "위기 (pl. crises)",
+      "example": {
+        "en": "The country is facing a severe financial crisis.",
+        "ko": "그 나라는 심각한 금융 위기에 직면해 있다."
+      }
+    },
+    {
+      "word": "panic",
+      "pronunciation": "[pǽnik]",
+      "partOfSpeech": "n.",
+      "meaning": "(금융) 공황; 공포, 패닉",
+      "example": {
+        "en": "Rumors of a bank failure caused a financial panic.",
+        "ko": "은행 파산 소문은 금융 공황을 일으켰다."
+      }
+    },
+    {
+      "word": "bubble",
+      "pronunciation": "[bʌ́bl]",
+      "partOfSpeech": "n.",
+      "meaning": "(경제) 거품",
+      "example": {
+        "en": "The housing bubble burst, leading to a market crash.",
+        "ko": "주택 거품이 터지면서 시장 붕괴로 이어졌다."
+      }
+    },
+    {
+      "word": "soar",
+      "pronunciation": "[sɔːr]",
+      "partOfSpeech": "v.",
+      "meaning": "(물가·가격 등이) 급등하다, 치솟다",
+      "example": {
+        "en": "Oil prices soared after the announcement of production cuts.",
+        "ko": "감산 발표 이후 유가가 급등했다."
+      }
+    },
+    {
+      "word": "surge",
+      "pronunciation": "[səːrdʒ]",
+      "partOfSpeech": "v.\n       \n        n.",
+      "meaning": "급등하다, 밀려들다\n       \n        급등, 쇄도",
+      "example": {
+        "en": "There was a sudden surge in demand for the new product.",
+        "ko": "신제품에 대한 수요가 갑자기 급증했다."
+      }
+    },
+    {
+      "word": "skyrocket",
+      "pronunciation": "[skáirὰkit]",
+      "partOfSpeech": "v.",
+      "meaning": "(가격 등이) 치솟다, 급등하다",
+      "example": {
+        "en": "The company's profits skyrocketed last year.",
+        "ko": "그 회사의 이익은 작년에 치솟았다."
+      }
+    },
+    {
+      "word": "hike",
+      "pronunciation": "[haik]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "(물가·임금 등의) 대폭 인상\n       \n        대폭 인상하다",
+      "example": {
+        "en": "The central bank announced an interest rate hike.",
+        "ko": "중앙은행은 금리 인상을 발표했다."
+      }
+    },
+    {
+      "word": "plummet",
+      "pronunciation": "[plʌ́mit]",
+      "partOfSpeech": "v.",
+      "meaning": "(가치·가격 등이) 곤두박질치다, 급락하다",
+      "example": {
+        "en": "Share prices plummeted after the company's poor sales report.",
+        "ko": "회사의 저조한 판매 보고서 이후 주가가 곤두박질쳤다."
+      }
+    },
+    {
+      "word": "plunge",
+      "pronunciation": "[plʌndʒ]",
+      "partOfSpeech": "v.\n       \n        n.",
+      "meaning": "급락하다; 뛰어들다\n       \n        급락",
+      "example": {
+        "en": "The stock market plunged into chaos.",
+        "ko": "주식 시장은 혼란 속으로 급락했다."
+      }
+    },
+    {
+      "word": "nosedive",
+      "pronunciation": "[nóuzdàiv]",
+      "partOfSpeech": "v.\n       \n        n.",
+      "meaning": "곤두박질치다, 폭락하다\n       \n        급강하, 폭락",
+      "example": {
+        "en": "The company's stock took a nosedive.",
+        "ko": "그 회사의 주식은 폭락했다."
+      }
+    },
+    {
+      "word": "fluctuate",
+      "pronunciation": "[flʌ́kʧuèit]",
+      "partOfSpeech": "v.",
+      "meaning": "변동을 거듭하다, 오르내리다",
+      "example": {
+        "en": "The price of gold fluctuates daily.",
+        "ko": "금값은 매일 변동한다."
+      }
+    },
+    {
+      "word": "volatile",
+      "pronunciation": "[vάlətl]",
+      "partOfSpeech": "a.",
+      "meaning": "(가격·상황이) 변동이 심한; 휘발성의",
+      "example": {
+        "en": "The stock market can be very volatile.",
+        "ko": "주식 시장은 매우 변동이 심할 수 있다."
+      }
+    },
+    {
+      "word": "stable",
+      "pronunciation": "[stéibl]",
+      "partOfSpeech": "a.",
+      "meaning": "안정적인, 안정된",
+      "example": {
+        "en": "The goal is to create a stable economic environment.",
+        "ko": "목표는 안정적인 경제 환경을 만드는 것이다."
+      }
+    },
+    {
+      "word": "recovery",
+      "pronunciation": "[rikʌ́vəri]",
+      "partOfSpeech": "n.",
+      "meaning": "(경기의) 회복, 회복세",
+      "example": {
+        "en": "Economists are optimistic about the prospects for economic recovery.",
+        "ko": "경제학자들은 경제 회복 전망에 대해 낙관적이다."
+      }
+    },
+    {
+      "word": "stimulus",
+      "pronunciation": "[stímjuləs]",
+      "partOfSpeech": "n.",
+      "meaning": "경기 부양책; 자극(제)",
+      "example": {
+        "en": "The government introduced a stimulus package to boost the economy.",
+        "ko": "정부는 경제를 활성화하기 위해 경기 부양책을 도입했다."
+      }
+    },
+    {
+      "word": "bailout",
+      "pronunciation": "[béilàut]",
+      "partOfSpeech": "n.",
+      "meaning": "(정부의) 구제 금융",
+      "example": {
+        "en": "The troubled bank received a massive bailout from the government.",
+        "ko": "그 문제 있는 은행은 정부로부터 막대한 구제 금융을 받았다."
+      }
+    },
+    {
+      "word": "austerity",
+      "pronunciation": "[ɔːstérəti]",
+      "partOfSpeech": "n.",
+      "meaning": "(정부의) 긴축 재정 정책; 금욕, 내핍",
+      "example": {
+        "en": "The government implemented austerity measures to reduce the national debt.",
+        "ko": "정부는 국가 부채를 줄이기 위해 긴축 정책을 시행했다."
+      }
+    },
+    {
+      "word": "indicator",
+      "pronunciation": "[índikèitər]",
+      "partOfSpeech": "n.",
+      "meaning": "(경제) 지표",
+      "example": {
+        "en": "The unemployment rate is a key economic indicator.",
+        "ko": "실업률은 핵심 경제 지표이다."
+      }
+    },
+    {
+      "word": "GDP (Gross Domestic Product)",
+      "partOfSpeech": "n.",
+      "meaning": "국내 총생산",
+      "example": {
+        "en": "GDP measures the total value of goods and services produced in a country.",
+        "ko": "GDP는 한 국가에서 생산된 재화와 용역의 총 가치를 측정한다."
+      }
+    },
+    {
+      "word": "GNP (Gross National Product)",
+      "partOfSpeech": "n.",
+      "meaning": "국민 총생산",
+      "example": {
+        "en": "GNP includes the income earned by a country's citizens abroad.",
+        "ko": "GNP는 한 국가의 국민이 해외에서 번 소득을 포함한다."
+      }
+    },
+    {
+      "word": "per capita income",
+      "partOfSpeech": "n.",
+      "meaning": "1인당 소득",
+      "example": {
+        "en": "The country has one of the highest per capita incomes in the world.",
+        "ko": "그 나라는 세계에서 가장 높은 1인당 소득을 가진 나라 중 하나이다."
+      }
+    },
+    {
+      "word": "deficit",
+      "pronunciation": "[défisit]",
+      "partOfSpeech": "n.",
+      "meaning": "적자, 부족액",
+      "example": {
+        "en": "The government is trying to reduce the budget deficit.",
+        "ko": "정부는 예산 적자를 줄이려고 노력하고 있다."
+      }
+    },
+    {
+      "word": "surplus",
+      "pronunciation": "[sə́ːrpləs]",
+      "partOfSpeech": "n.",
+      "meaning": "흑자; 과잉, 잉여",
+      "example": {
+        "en": "The country has a large trade surplus with its trading partners.",
+        "ko": "그 나라는 교역 상대국들과의 무역에서 큰 흑자를 내고 있다."
+      }
+    },
+    {
+      "word": "debt",
+      "pronunciation": "[det]",
+      "partOfSpeech": "n.",
+      "meaning": "빚, 부채",
+      "example": {
+        "en": "The company is struggling to pay off its massive debts.",
+        "ko": "그 회사는 막대한 빚을 갚기 위해 고군분투하고 있다."
+      }
+    },
+    {
+      "word": "bankruptcy",
+      "pronunciation": "[bǽ&eng;krʌptsi]",
+      "partOfSpeech": "n.",
+      "meaning": "파산",
+      "example": {
+        "en": "The company filed for bankruptcy last month.",
+        "ko": "그 회사는 지난달 파산 신청을 했다."
+      }
+    },
+    {
+      "word": "insolvency",
+      "pronunciation": "[insάlvənsi]",
+      "partOfSpeech": "n.",
+      "meaning": "지불 불능, 파산 상태",
+      "example": {
+        "en": "The firm's insolvency left hundreds of employees jobless.",
+        "ko": "그 회사의 지불 불능 상태로 수백 명의 직원이 일자리를 잃었다."
+      }
+    },
+    {
+      "word": "moratorium",
+      "pronunciation": "[mɔ̀ːrətɔ́ːriəm]",
+      "partOfSpeech": "n.",
+      "meaning": "(채무) 지불 유예",
+      "example": {
+        "en": "The government declared a moratorium on all debt payments.",
+        "ko": "정부는 모든 채무 상환에 대한 지불 유예를 선언했다."
+      }
+    },
+    {
+      "word": "market",
+      "pronunciation": "[mάːrkit]",
+      "partOfSpeech": "n.",
+      "meaning": "시장",
+      "example": {
+        "en": "We need to analyze the current market trends.",
+        "ko": "우리는 현재 시장 동향을 분석해야 한다."
+      }
+    },
+    {
+      "word": "supply and demand",
+      "partOfSpeech": "n.",
+      "meaning": "공급과 수요",
+      "example": {
+        "en": "The price of a product is determined by the law of supply and demand.",
+        "ko": "상품의 가격은 공급과 수요의 법칙에 의해 결정된다."
+      }
+    },
+    {
+      "word": "monopoly",
+      "pronunciation": "[mənάpəli]",
+      "partOfSpeech": "n.",
+      "meaning": "(시장의) 독점, 전매",
+      "example": {
+        "en": "The company has a monopoly on the local telecommunications market.",
+        "ko": "그 회사는 지역 통신 시장을 독점하고 있다."
+      }
+    },
+    {
+      "word": "oligopoly",
+      "pronunciation": "[ὰligάpəli]",
+      "partOfSpeech": "n.",
+      "meaning": "과점 (소수 기업이 시장을 지배하는 상태)",
+      "example": {
+        "en": "The automobile industry is an example of an oligopoly.",
+        "ko": "자동차 산업은 과점의 한 예이다."
+      }
+    },
+    {
+      "word": "cartel",
+      "pronunciation": "[kɑːrtél]",
+      "partOfSpeech": "n.",
+      "meaning": "카르텔, 기업 연합 (가격을 담합하는)",
+      "example": {
+        "en": "The government fined the cartel for price-fixing.",
+        "ko": "정부는 가격 담합으로 그 카르텔에 벌금을 부과했다."
+      }
+    },
+    {
+      "word": "competition",
+      "pronunciation": "[kὰmpətíʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "경쟁",
+      "example": {
+        "en": "There is fierce competition among smartphone manufacturers.",
+        "ko": "스마트폰 제조업체들 사이에는 치열한 경쟁이 있다."
+      }
+    },
+    {
+      "word": "consumer",
+      "pronunciation": "[kənsúːmər]",
+      "partOfSpeech": "n.",
+      "meaning": "소비자",
+      "example": {
+        "en": "Consumer confidence has fallen in recent months.",
+        "ko": "최근 몇 달간 소비자 신뢰 지수가 하락했다."
+      }
+    },
+    {
+      "word": "producer",
+      "pronunciation": "[prədúːsər]",
+      "partOfSpeech": "n.",
+      "meaning": "생산자, 제작자",
+      "example": {
+        "en": "The new regulations will affect both producers and consumers.",
+        "ko": "새로운 규제는 생산자와 소비자 모두에게 영향을 미칠 것이다."
+      }
+    },
+    {
+      "word": "commodity",
+      "pronunciation": "[kəmάdəti]",
+      "partOfSpeech": "n.",
+      "meaning": "상품, 원자재",
+      "example": {
+        "en": "Oil, gold, and coffee are all important commodities.",
+        "ko": "석유, 금, 커피는 모두 중요한 원자재이다."
+      }
+    },
+    {
+      "word": "asset",
+      "pronunciation": "[ǽset]",
+      "partOfSpeech": "n.",
+      "meaning": "자산, 재산",
+      "example": {
+        "en": "The company's assets include buildings, machinery, and cash.",
+        "ko": "그 회사의 자산에는 건물, 기계, 현금이 포함된다."
+      }
+    },
+    {
+      "word": "liability",
+      "pronunciation": "[làiəbíləti]",
+      "partOfSpeech": "n.",
+      "meaning": "(pl.) 부채; (법적) 책임",
+      "example": {
+        "en": "The company has huge liabilities that it cannot pay.",
+        "ko": "그 회사는 지불할 수 없는 거대한 부채를 가지고 있다."
+      }
+    },
+    {
+      "word": "equity",
+      "pronunciation": "[ékwəti]",
+      "partOfSpeech": "n.",
+      "meaning": "(한 회사의) 자기 자본, 순자산; 공평, 공정",
+      "example": {
+        "en": "The value of his equity in the company has doubled.",
+        "ko": "그 회사의 자기 자본 가치는 두 배가 되었다."
+      }
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "bookId": "syntax-basic-unit08",
+  "unit": 8,
+  "title": "괄호치기 종합 연습",
+  "part": "II",
+  "week": 2,
+  "type": "sentence-analysis",
+  "instruction": "다음 문장에서 모든 수식어(전치사구, 부사)를 괄호로 묶고, 남은 뼈대를 분석한 후 해석해 보세요.",
+  "problems": [
+    {
+      "id": "syntax-basic-unit08-1",
+      "number": 1,
+      "type": "sentence-analysis",
+      "stem": "In the morning, the birds sing sweetly in the trees.",
+      "answer": {
+        "analysis": "(In the morning), the birds(S) sing(V) (sweetly) (in the trees).",
+        "pattern": "",
+        "translation": "(아침에) 새들이 (나무에서) (달콤하게) 노래한다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit08-2",
+      "number": 2,
+      "type": "sentence-analysis",
+      "stem": "The boy with glasses is reading a book quietly in the library.",
+      "answer": {
+        "analysis": "The boy(S) (with glasses) is reading(V) a book(O) (quietly) (in the library).",
+        "pattern": "",
+        "translation": "(안경을 쓴) 소년이 (도서관에서) (조용히) 책을 읽고 있다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit08-3",
+      "number": 3,
+      "type": "sentence-analysis",
+      "stem": "We will have a meeting about the new project tomorrow.",
+      "answer": {
+        "analysis": "We(S) will have(V) a meeting(O) (about the new project) (tomorrow).",
+        "pattern": "",
+        "translation": "우리는 (내일) (새 프로젝트에 대해) 회의를 할 것이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit08-4",
+      "number": 4,
+      "type": "sentence-analysis",
+      "stem": "She quickly finished her homework after dinner.",
+      "answer": {
+        "analysis": "She(S) (quickly) finished(V) her homework(O) (after dinner).",
+        "pattern": "",
+        "translation": "그녀는 (저녁 식사 후에) (빨리) 숙제를 끝냈다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit08-5",
+      "number": 5,
+      "type": "sentence-analysis",
+      "stem": "The old photo on the desk always reminds me of my childhood.",
+      "answer": {
+        "analysis": "The old photo(S) (on the desk) (always) reminds(V) me(O) (of my childhood).",
+        "pattern": "",
+        "translation": "(책상 위의) 그 낡은 사진은 (항상) 나에게 어린 시절을 상기시킨다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit08-6",
+      "number": 6,
+      "type": "sentence-analysis",
+      "stem": "He works very hard every day for his family.",
+      "answer": {
+        "analysis": "He(S) works(V) (very) (hard) (every day) (for his family).",
+        "pattern": "",
+        "translation": "그는 (가족을 위해) (매일) (매우) (열심히) 일한다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit08-7",
+      "number": 7,
+      "type": "sentence-analysis",
+      "stem": "The package from my parents finally arrived this afternoon.",
+      "answer": {
+        "analysis": "The package(S) (from my parents) (finally) arrived(V) (this afternoon).",
+        "pattern": "",
+        "translation": "(부모님으로부터 온) 소포가 (마침내) (오늘 오후에) 도착했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit08-8",
+      "number": 8,
+      "type": "sentence-analysis",
+      "stem": "I usually drink a glass of water right after I wake up.",
+      "answer": {
+        "analysis": "I(S) (usually) drink(V) a glass(O) (of water) (right after I wake up).",
+        "pattern": "",
+        "translation": "나는 (보통) (일어나자마자) (물) 한 잔을 마신다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit08-9",
+      "number": 9,
+      "type": "sentence-analysis",
+      "stem": "Honestly, I am not very interested in sports.",
+      "answer": {
+        "analysis": "(Honestly), I(S) am(V) not (very) interested(C) (in sports).",
+        "pattern": "",
+        "translation": "(솔직히), 나는 (스포츠에) (별로) 관심이 없다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit08-10",
+      "number": 10,
+      "type": "sentence-analysis",
+      "stem": "The team celebrated their victory with a big party after the game.",
+      "answer": {
+        "analysis": "The team(S) celebrated(V) their victory(O) (with a big party) (after the game).",
+        "pattern": "",
+        "translation": "그 팀은 (경기 후에) (성대한 파티로) 그들의 승리를 축하했다. 지난 2주간 우리는 문장의 뼈대(1~5형식)와 장식품(수식어)을 모두 배웠습니다. 이제 이 두 가지를 통합하여 어떤 문장이든 구조적으로 분석할 수 있는 능력을 갖추게 되었습니다. 이번 시간에는 1~5형식 문장에 다양한 수식어가 결합된 종합적인 문장들을 분석하는 훈련을 합니다. 분석 프로세스 예제",
+        "notes": ""
+      }
+    }
+  ]
+}

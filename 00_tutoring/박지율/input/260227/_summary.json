@@ -1,0 +1,64 @@
+{
+  "date": "260227",
+  "student": "박지율",
+  "totalImages": 6,
+  "feedbackImages": 5,
+  "images": [
+    {
+      "file": "박지율_260227_01.png",
+      "category": "FEEDBACK",
+      "detailCategory": "our-textbook",
+      "confidence": 0.95,
+      "description": "Vera's Flavor 로고가 있는 VOCA 365 Daily Test 단어 시험지입니다.",
+      "level": "intermediate",
+      "subject": "vocab"
+    },
+    {
+      "file": "박지율_260227_02.png",
+      "category": "FEEDBACK",
+      "detailCategory": "our-textbook",
+      "confidence": 0.95,
+      "description": "Vera's Flavor 로고가 있는 VOCA 365 Daily Test 단어 시험지. Day 33 환경과 자연 관련 단어 테스트.",
+      "level": "intermediate",
+      "subject": "vocab"
+    },
+    {
+      "file": "박지율_260227_03.png",
+      "category": "FEEDBACK",
+      "detailCategory": "our-textbook",
+      "confidence": 0.95,
+      "description": "베라진 VOCA 365 Daily Test 단어 시험 결과입니다.",
+      "level": "intermediate",
+      "subject": "vocab"
+    },
+    {
+      "file": "박지율_260227_04.jpg",
+      "category": "FEEDBACK",
+      "detailCategory": "our-textbook",
+      "confidence": 0.95,
+      "description": "베라진 교재의 문법 연습 문제 풀이 흔적.",
+      "level": "basic",
+      "subject": "문법"
+    },
+    {
+      "file": "박지율_260227_05.png",
+      "category": "EXCLUDE",
+      "detailCategory": "planner",
+      "confidence": 1,
+      "description": "학습 시간 기록 앱의 스크린샷. 과목별 학습 시간을 보여주는 플래너 화면입니다.",
+      "level": null,
+      "subject": null
+    },
+    {
+      "file": "박지율_260227_06.png",
+      "category": "FEEDBACK",
+      "detailCategory": "our-textbook",
+      "confidence": 0.95,
+      "description": "베라진 교재의 문법 연습 문제 페이지입니다. 분사 연습 문제인 것으로 보입니다.",
+      "level": "basic",
+      "subject": "문법"
+    }
+  ],
+  "feedbackReady": true,
+  "processedAt": "2026-02-27T07:20:55.262Z"
+}

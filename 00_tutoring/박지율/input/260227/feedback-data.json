@@ -1,0 +1,178 @@
+{
+  "student": "박지율",
+  "date": "260227",
+  "subject": "문법",
+  "textbook": "문법 연습문제 Basic / VOCA 365 Daily Test",
+  "range": "문법 that·what Q10~12 + VOCA Day 32~34 (150문항)",
+  "summary": {
+    "totalQ": 3,
+    "wrongQ": 1,
+    "correctRate": "67%",
+    "goodPoints": "문법 Q10(관계대명사 that)과 Q12(What/that 이중 구별)를 정확히 풀어냈습니다. that과 what의 기본 개념 자체는 이해하고 있습니다. 별도 어휘 시험(VOCA 365) Day 32(84%) → Day 33(90%) → Day 34(92%)로 매일 정답률이 꾸준히 상승 중입니다.",
+    "badPoints": "문법 Q11에서 'said those things'의 목적어(those things)를 인식하지 못하고 불완전절로 오판하여 what을 선택했습니다. 동사 뒤 목적어 존재 여부를 정확히 파악하는 훈련이 필요합니다.",
+    "priority": "that/what 구별 시 '완전절/불완전절' 판별법 → 동사 바로 뒤 목적어 확인 습관화",
+    "weakAreas": [
+      { "area": "that/what 완전절 판별", "count": 1, "severity": "high", "note": "동사 뒤 목적어(those things)를 놓쳐 완전절을 불완전절로 오판" },
+      { "area": "어휘 (Day 32 교육과 학습)", "count": 8, "severity": "mid", "note": "50문항 중 8개 오답 — 84% 정답률" },
+      { "area": "어휘 (Day 33 환경과 자연)", "count": 5, "severity": "low", "note": "50문항 중 5개 오답 — 90% 정답률" },
+      { "area": "어휘 (Day 34 날씨와 기후)", "count": 4, "severity": "low", "note": "50문항 중 4개 오답 — 92% 정답률" }
+    ]
+  },
+  "wrongAnswers": [
+    {
+      "q": 11,
+      "selected": "what",
+      "correct": "that",
+      "type": "접속사 that vs 관계대명사 what 구별",
+      "question": "I can't believe ______ he actually said those things about his former colleagues.",
+      "choices": ["① that", "② what"],
+      "explanation": "<div class=\"concept-box\"><h4>that vs what 핵심 구별법</h4><table><thead><tr><th></th><th>that (접속사)</th><th>what (관계대명사)</th></tr></thead><tbody><tr><td><strong>뒤에 오는 절</strong></td><td>완전한 절 (S+V+O/C 다 있음)</td><td>불완전한 절 (S, O, C 중 하나 빠짐)</td></tr><tr><td><strong>역할</strong></td><td>단순 연결 (의미 없음)</td><td>'~하는 것' (= the thing that)</td></tr><tr><td><strong>공식</strong></td><td>that + <strong>완전절</strong></td><td>what + <strong>불완전절</strong></td></tr></tbody></table></div><div class=\"grammar-block\"><h4>이 문장 구조 분석</h4><p><strong>I can't believe ______ he actually said those things about his former colleagues.</strong></p><table><thead><tr><th>문장 성분</th><th>해당 부분</th></tr></thead><tbody><tr><td>주어 (S)</td><td>he</td></tr><tr><td>부사</td><td>actually</td></tr><tr><td>동사 (V)</td><td>said</td></tr><tr><td><strong>목적어 (O)</strong></td><td><strong>those things</strong></td></tr><tr><td>수식어 (전치사구)</td><td>about his former colleagues</td></tr></tbody></table><p>→ S(he) + V(said) + O(those things) = <strong>3형식 완전절</strong> → <strong>that</strong></p></div><div class=\"answer-box\"><h4>정답: that</h4><p>I can't believe <strong>that</strong> he actually said those things about his former colleagues.</p><p>= 나는 그가 실제로 전 동료들에 대해 그런 말을 했다는 것을 믿을 수 없다.</p><p><strong>believe</strong>의 목적어 자리에 명사절 that절이 왔습니다. that 뒤의 절은 S(he) + V(said) + O(those things)로 <strong>완전</strong>하므로 접속사 <strong>that</strong>이 정답입니다.</p></div><div class=\"warning-box\"><h4>오답 함정 분석</h4><p>학생 메모: <em>\"불완전으로 보고 what으로 쳤다\"</em>, <em>\"4형식 X\"</em></p><p><strong>오판 과정 추적:</strong></p><ol><li>said 뒤를 보고 → 4형식(SVOO)인지 확인 → 아님 (4형식 X ✓)</li><li>그런데 4형식이 아니라는 이유로 those things를 목적어가 아니라고 판단 → <strong>여기서 오류 발생!</strong></li><li>목적어가 없다고 보고 → 불완전절 → what 선택</li></ol><p><strong>핵심 포인트:</strong> 4형식이 아니더라도 <strong>3형식(SVO)</strong>에서 목적어는 존재합니다!</p><ul><li>said + <strong>those things</strong> → 3형식의 목적어 → 완전절</li><li>about his former colleagues → 전치사구(수식어)일 뿐, 문장 필수 성분 아님</li></ul><p><strong>판별 팁:</strong> 동사 바로 뒤에 명사(구)가 오면 → 그것이 목적어! → 완전절 → that</p></div>",
+      "studentAnalysis": {
+        "whyChosen": "'said' 뒤의 구조를 분석할 때, 4형식(SVOO)이 아닌 것을 확인한 후 'those things'를 목적어로 인식하지 못했습니다. 전치사구 'about his former colleagues'에 시선이 분산되어 불완전절이라 판단하고 what을 선택했습니다.",
+        "errorPattern": "목적어 인식 오류 — 4형식 여부만 확인하고, 3형식 SVO의 목적어를 놓침. 동사 직후 명사구가 있어도 전치사구에 혼동되어 목적어로 인정하지 않음.",
+        "focusPoint": "동사 바로 뒤에 명사(구)가 오면 = 목적어! 'said those things' = 3형식 SVO 완전절 → that. 전치사구(about ~)는 수식어일 뿐 문장 필수 성분에 영향 없음."
+      }
+    }
+  ],
+  "conceptQuestions": [
+    {
+      "title": "that vs what 구별법 — 완전절/불완전절 판별 훈련",
+      "explanation": "<div class=\"concept-box\"><h4>that vs what 완벽 정리</h4><p><strong>핵심 원리:</strong> 빈칸 뒤의 절이 <strong>완전</strong>하면 <strong>that</strong>, <strong>불완전</strong>하면 <strong>what</strong></p><h5>Step 1: 절의 필수 성분 확인</h5><table><thead><tr><th>형식</th><th>구조</th><th>예시</th></tr></thead><tbody><tr><td>1형식</td><td>S + V</td><td>He arrived.</td></tr><tr><td>2형식</td><td>S + V + C</td><td>She is kind.</td></tr><tr><td>3형식</td><td>S + V + O</td><td>He said <strong>those things</strong>.</td></tr><tr><td>4형식</td><td>S + V + IO + DO</td><td>He gave <strong>me</strong> <strong>a book</strong>.</td></tr><tr><td>5형식</td><td>S + V + O + OC</td><td>They call <strong>him</strong> <strong>genius</strong>.</td></tr></tbody></table><h5>Step 2: 빠진 성분이 있는가?</h5><ul><li>S, O, C 중 하나라도 빠지면 → <strong>불완전절</strong> → <strong>what</strong></li><li>모두 갖추면 → <strong>완전절</strong> → <strong>that</strong></li></ul><h5>Q10~Q12 비교 분석</h5><table><thead><tr><th>문제</th><th>절 분석</th><th>완전/불완전</th><th>정답</th></tr></thead><tbody><tr><td>Q10</td><td>The book [___] <u>changed</u> my perspective → 주어 역할 필요, 선행사 book 있음</td><td>관계절 (선행사 O)</td><td><strong>that</strong></td></tr><tr><td>Q11</td><td>he <u>said</u> <strong>those things</strong> → SVO 완전</td><td>완전절</td><td><strong>that</strong></td></tr><tr><td>Q12-①</td><td>[___] <u>surprises</u> me most → 주어 빠짐</td><td>불완전절</td><td><strong>What</strong></td></tr><tr><td>Q12-②</td><td>nobody <u>noticed</u> <strong>the obvious mistake</strong> → SVO 완전</td><td>완전절</td><td><strong>that</strong></td></tr></tbody></table></div>",
+      "examples": [
+        "I know that she is honest. (완전절: she + is + honest = SVC)",
+        "What he said was shocking. (불완전절: said의 목적어 없음)",
+        "The fact is that we need more time. (완전절: we + need + more time = SVO)",
+        "I don't understand what makes him angry. (불완전절: makes의 주어 없음)"
+      ],
+      "exampleSentences": [
+        "나는 그녀가 정직하다는 것을 안다 → I know that she is honest.",
+        "그가 말한 것은 충격적이었다 → What he said was shocking.",
+        "사실은 우리에게 더 많은 시간이 필요하다는 것이다 → The fact is that we need more time.",
+        "나는 무엇이 그를 화나게 하는지 이해하지 못한다 → I don't understand what makes him angry."
+      ],
+      "confusionPoints": "<div class=\"warning-box\"><h4>자주 헷갈리는 포인트</h4><ol><li><strong>전치사구에 속지 마세요!</strong><br>said those things <em>about his colleagues</em> → 전치사구는 수식어! those things가 목적어 → 완전절 → that</li><li><strong>4형식이 아니어도 목적어는 존재합니다!</strong><br>3형식 SVO에서도 V 바로 뒤 명사(구) = 목적어</li><li><strong>what = the thing(s) that</strong><br>what은 '선행사 + 관계대명사'를 합친 것. 앞에 이미 명사가 있으면 what 사용 불가 (→ that/which 사용)</li><li><strong>주어 자리가 빈 경우</strong><br>_____ surprises me → 주어 없음 → What (the thing that)</li></ol></div>",
+      "practiceProblems": [
+        {
+          "sentence": "I am certain ______ she passed the final exam.",
+          "choices": ["① that", "② what", "③ which", "④ if"],
+          "answer": "①",
+          "explanation": "she(S) + passed(V) + the final exam(O) = 완전절 → that"
+        },
+        {
+          "sentence": "______ he said at the meeting shocked everyone.",
+          "choices": ["① That", "② What", "③ Which", "④ If"],
+          "answer": "②",
+          "explanation": "said(V)의 목적어 없음 (at the meeting은 전치사구) = 불완전절 → What"
+        },
+        {
+          "sentence": "We believe ______ the project will be completed on time.",
+          "choices": ["① that", "② what", "③ which", "④ if"],
+          "answer": "①",
+          "explanation": "the project(S) + will be completed(V) + on time(수식어) = 완전절 → that"
+        },
+        {
+          "sentence": "Tell me ______ happened last night.",
+          "choices": ["① that", "② what", "③ which", "④ if"],
+          "answer": "②",
+          "explanation": "happened(V)의 주어 없음 = 불완전절 → what"
+        },
+        {
+          "sentence": "I don't understand ______ makes this machine so expensive.",
+          "choices": ["① that", "② what", "③ which", "④ if"],
+          "answer": "②",
+          "explanation": "makes(V)의 주어 없음 = 불완전절 → what"
+        },
+        {
+          "sentence": "He claimed ______ he had never seen the document before.",
+          "choices": ["① that", "② what", "③ which", "④ if"],
+          "answer": "①",
+          "explanation": "he(S) + had seen(V) + the document(O) = 완전절 → that"
+        },
+        {
+          "sentence": "______ the teacher wrote on the board was too small to read.",
+          "choices": ["① That", "② What", "③ Which", "④ If"],
+          "answer": "②",
+          "explanation": "wrote(V)의 목적어 없음 (on the board는 전치사구) = 불완전절 → What"
+        },
+        {
+          "sentence": "Everyone agreed ______ the new policy was fair and reasonable.",
+          "choices": ["① that", "② what", "③ which", "④ if"],
+          "answer": "①",
+          "explanation": "the new policy(S) + was(V) + fair and reasonable(C) = 완전절 → that"
+        },
+        {
+          "sentence": "I can't imagine ______ life would be like without the internet.",
+          "choices": ["① that", "② what", "③ which", "④ if"],
+          "answer": "②",
+          "explanation": "be like(V)의 보어 없음 = 불완전절 → what (what ~ would be like = ~이 어떨지)"
+        },
+        {
+          "sentence": "She insisted ______ everyone attend the graduation ceremony.",
+          "choices": ["① that", "② what", "③ which", "④ if"],
+          "answer": "①",
+          "explanation": "everyone(S) + attend(V) + the ceremony(O) = 완전절 → that (insist that + 동사원형: 당위의 should 생략)"
+        },
+        {
+          "sentence": "______ you need right now is a good night's sleep.",
+          "choices": ["① That", "② What", "③ Which", "④ If"],
+          "answer": "②",
+          "explanation": "need(V)의 목적어 없음 = 불완전절 → What"
+        },
+        {
+          "sentence": "The real problem is ______ we don't have enough funding for the project.",
+          "choices": ["① that", "② what", "③ which", "④ if"],
+          "answer": "①",
+          "explanation": "we(S) + don't have(V) + enough funding(O) = 완전절 → that"
+        },
+        {
+          "sentence": "I was disappointed by ______ the committee finally decided.",
+          "choices": ["① that", "② what", "③ which", "④ if"],
+          "answer": "②",
+          "explanation": "decided(V)의 목적어 없음 = 불완전절 → what"
+        },
+        {
+          "sentence": "It seems ______ the morning train has been delayed again.",
+          "choices": ["① that", "② what", "③ which", "④ if"],
+          "answer": "①",
+          "explanation": "the train(S) + has been delayed(V) = 완전절 → that"
+        },
+        {
+          "sentence": "______ she bought for her mother turned out to be a beautiful necklace.",
+          "choices": ["① That", "② What", "③ Which", "④ If"],
+          "answer": "②",
+          "explanation": "bought(V)의 목적어 없음 (for her mother는 전치사구) = 불완전절 → What"
+        },
+        {
+          "sentence": "The scientist finally proved ______ the old theory was completely wrong.",
+          "choices": ["① that", "② what", "③ which", "④ if"],
+          "answer": "①",
+          "explanation": "the old theory(S) + was(V) + completely wrong(C) = 완전절 → that"
+        },
+        {
+          "sentence": "Nobody noticed ______ he quietly left the room during the long speech.",
+          "choices": ["① that", "② what", "③ which", "④ if"],
+          "answer": "①",
+          "explanation": "he(S) + left(V) + the room(O) = 완전절 → that (Q11과 유사 패턴!)"
+        },
+        {
+          "sentence": "I wonder ______ caused the sudden power outage last night.",
+          "choices": ["① that", "② what", "③ which", "④ if"],
+          "answer": "②",
+          "explanation": "caused(V)의 주어 없음 = 불완전절 → what"
+        },
+        {
+          "sentence": "She was genuinely surprised ______ her students had organized a farewell party.",
+          "choices": ["① that", "② what", "③ which", "④ if"],
+          "answer": "①",
+          "explanation": "her students(S) + had organized(V) + a farewell party(O) = 완전절 → that"
+        },
+        {
+          "sentence": "I need to figure out ______ went wrong with the entire experiment.",
+          "choices": ["① that", "② what", "③ which", "④ if"],
+          "answer": "②",
+          "explanation": "went(V)의 주어 없음 = 불완전절 → what"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vera://schemas/book-manifest",
+  "title": "BookManifest",
+  "description": "교재 조립 매니페스트 — 어떤 템플릿 + 어떤 콘텐츠를 어떤 순서로",
+  "type": "object",
+  "required": ["book", "pages"],
+  "additionalProperties": false,
+  "properties": {
+    "book": {
+      "type": "object",
+      "required": ["title", "subject", "level", "template"],
+      "additionalProperties": false,
+      "description": "교재 메타데이터",
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "교재 제목",
+          "examples": ["편입영어 문법 Bridge 편 Part 2"]
+        },
+        "subject": {
+          "type": "string",
+          "enum": ["grammar", "reading", "vocabulary", "logic", "syntax-reading"],
+          "description": "과목 분류"
+        },
+        "level": {
+          "type": "string",
+          "enum": ["basic", "bridge", "intermediate", "advanced"],
+          "description": "난이도 레벨"
+        },
+        "template": {
+          "type": "string",
+          "description": "templates/ 디렉토리 내 템플릿 ID",
+          "examples": ["ocean-blue", "royal-purple", "earth-tone", "mint-sky"]
+        },
+        "author": {
+          "type": "string",
+          "default": "Vera's Flavor",
+          "description": "저자명 (선택)"
+        },
+        "version": {
+          "type": "string",
+          "pattern": "^[0-9]+\\.[0-9]+$",
+          "description": "버전 번호 (선택)",
+          "examples": ["1.0", "2.3"]
+        }
+      }
+    },
+    "pages": {
+      "type": "array",
+      "minItems": 1,
+      "description": "페이지 구성 배열 (순서대로 조립됨)",
+      "items": {
+        "$ref": "#/$defs/PageEntry"
+      }
+    }
+  },
+  "$defs": {
+    "PageEntry": {
+      "type": "object",
+      "required": ["type"],
+      "description": "개별 페이지 엔트리 정의",
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "content",
+            "problems",
+            "passages",
+            "vocabulary",
+            "answer-grid",
+            "explanations",
+            "toc"
+          ],
+          "description": "페이지 타입. content = HTML 자유 콘텐츠, 나머지 = JSON 자동 렌더링"
+        },
+        "src": {
+          "type": "string",
+          "description": "소스 파일 경로 (content/ 또는 data/ 디렉토리 기준 상대 경로)",
+          "examples": [
+            "content/grammar/bridge/ch02-concepts.html",
+            "data/grammar/bridge/ch02-problems.json"
+          ]
+        },
+        "range": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 2,
+          "maxItems": 2,
+          "description": "렌더링 범위 [시작번호, 끝번호]. problems/passages/vocabulary 타입에서 사용",
+          "examples": [[1, 50], [51, 100]]
+        },
+        "layout": {
+          "type": "string",
+          "enum": [
+            "default",
+            "compact",
+            "two-per-page",
+            "three-per-page",
+            "single-column"
+          ],
+          "description": "렌더링 레이아웃 (선택). problems/explanations 타입에서 사용"
+        },
+        "auto": {
+          "type": "boolean",
+          "description": "자동 생성 여부 (선택). toc 타입에서 사용"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "enum": ["content", "problems", "passages", "vocabulary", "explanations"]
+              }
+            }
+          },
+          "then": {
+            "required": ["src"]
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "toc"
+              }
+            }
+          },
+          "then": {
+            "required": ["auto"]
+          }
+        }
+      ]
+    }
+  }
+}

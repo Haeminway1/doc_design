@@ -1,0 +1,131 @@
+{
+  "bookId": "syntax-basic-unit03",
+  "unit": 3,
+  "title": "3형식 문장 (S + V + O)",
+  "part": "I",
+  "week": 1,
+  "type": "sentence-analysis",
+  "instruction": "다음 문장에서 주어(S), 동사(V), 목적어(O)를 찾아 표시하고, 우리말로 해석해 보세요.",
+  "problems": [
+    {
+      "id": "syntax-basic-unit03-1",
+      "number": 1,
+      "type": "sentence-analysis",
+      "stem": "She wrote a letter to her friend.",
+      "answer": {
+        "analysis": "She(S) wrote(V) a letter(O) (to her friend).",
+        "pattern": "",
+        "translation": "그녀는 친구에게 편지를 썼다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit03-2",
+      "number": 2,
+      "type": "sentence-analysis",
+      "stem": "I have a question.",
+      "answer": {
+        "analysis": "I(S) have(V) a question(O).",
+        "pattern": "",
+        "translation": "저는 질문이 있습니다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit03-3",
+      "number": 3,
+      "type": "sentence-analysis",
+      "stem": "The sun shines brightly.",
+      "answer": {
+        "analysis": "The sun(S) shines(V) (brightly).",
+        "pattern": "1형식",
+        "translation": "해가 밝게 빛난다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit03-4",
+      "number": 4,
+      "type": "sentence-analysis",
+      "stem": "My dad fixed my computer.",
+      "answer": {
+        "analysis": "My dad(S) fixed(V) my computer(O).",
+        "pattern": "",
+        "translation": "아빠가 내 컴퓨터를 고쳐주셨다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit03-5",
+      "number": 5,
+      "type": "sentence-analysis",
+      "stem": "He is a student.",
+      "answer": {
+        "analysis": "He(S) is(V) a student(C).",
+        "pattern": "2형식",
+        "translation": "그는 학생이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit03-6",
+      "number": 6,
+      "type": "sentence-analysis",
+      "stem": "I remember his name.",
+      "answer": {
+        "analysis": "I(S) remember(V) his name(O).",
+        "pattern": "",
+        "translation": "나는 그의 이름을 기억한다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit03-7",
+      "number": 7,
+      "type": "sentence-analysis",
+      "stem": "The baby is crying loudly.",
+      "answer": {
+        "analysis": "The baby(S) is crying(V) (loudly).",
+        "pattern": "1형식",
+        "translation": "아기가 시끄럽게 울고 있다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit03-8",
+      "number": 8,
+      "type": "sentence-analysis",
+      "stem": "She teaches English at a high school.",
+      "answer": {
+        "analysis": "She(S) teaches(V) English(O) (at a high school).",
+        "pattern": "",
+        "translation": "그녀는 고등학교에서 영어를 가르친다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit03-9",
+      "number": 9,
+      "type": "sentence-analysis",
+      "stem": "We discussed the plan for an hour.",
+      "answer": {
+        "analysis": "We(S) discussed(V) the plan(O) (for an hour).",
+        "pattern": "",
+        "translation": "우리는 한 시간 동안 그 계획을 논의했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit03-10",
+      "number": 10,
+      "type": "sentence-analysis",
+      "stem": "The chef made a delicious pizza.",
+      "answer": {
+        "analysis": "The chef(S) made(V) a delicious pizza(O).",
+        "pattern": "",
+        "translation": "그 요리사는 맛있는 피자를 만들었다. 문장이 풍성해지는 비밀 (4, 5형식) 어떤 동사는 목적어를 두 개나 가질 수 있습니다. 주로 '주다'라는 의미를 가진 수여동사들이 그렇습니다. 간접목적어(Indirect Object, IO): 행동의 혜택을 받는 대상. 주로 사람. '~에게'로 해석. 직접목적어(Direct Object, DO): 실제 전달되는 사물. '~을/를'로 해석.",
+        "notes": ""
+      }
+    }
+  ]
+}

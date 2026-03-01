@@ -1,0 +1,24 @@
+{
+    "id": "logic-blue",
+    "name": "Logic Blue",
+    "description": "논리 Basic 템플릿. 블루600과 에메랄드의 명쾌한 조합. Border-frame 표지와 step-section 전용 스타일링이 특징.",
+    "version": "1.0.0",
+    "author": "Vera's Flavor",
+    "fonts": {
+        "heading": "Inter",
+        "body": "Noto Sans KR",
+        "accent": "Inter"
+    },
+    "palette": {
+        "primary": "#2563EB",
+        "primaryLight": "#EFF6FF",
+        "secondary": "#10B981",
+        "accent": "#1E40AF"
+    },
+    "coverStyle": "border-frame",
+    "borderRadius": "8px",
+    "headerStyle": "colored-underline",
+    "usedBy": [
+        "[편입영어]논리_basic.html"
+    ]
+}

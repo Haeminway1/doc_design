@@ -1,0 +1,46 @@
+{
+  "date": "260228",
+  "student": "김지환",
+  "totalImages": 4,
+  "feedbackImages": 3,
+  "images": [
+    {
+      "file": "김지환_260228_01.jpg",
+      "category": "EXCLUDE",
+      "detailCategory": "planner",
+      "confidence": 0.95,
+      "description": "학습 계획을 캡쳐한 이미지입니다.",
+      "level": null,
+      "subject": null
+    },
+    {
+      "file": "김지환_260228_02.jpg",
+      "category": "FEEDBACK",
+      "detailCategory": "external-textbook",
+      "confidence": 0.95,
+      "description": "독학사 영어 오답 해설 및 암기 정리 화면 캡쳐.",
+      "level": null,
+      "subject": null
+    },
+    {
+      "file": "김지환_260228_03.jpg",
+      "category": "FEEDBACK",
+      "detailCategory": "external-textbook",
+      "confidence": 0.95,
+      "description": "외부 교재 (동의어, 반의어, 조건문 설명)",
+      "level": "intermediate",
+      "subject": "문법"
+    },
+    {
+      "file": "김지환_260228_04.jpg",
+      "category": "FEEDBACK",
+      "detailCategory": "external-textbook",
+      "confidence": 0.95,
+      "description": "베라진 교재가 아닌 외부 교재 이미지입니다. 단어와 독해 팁이 있는 페이지입니다.",
+      "level": "intermediate",
+      "subject": "독해"
+    }
+  ],
+  "feedbackReady": true,
+  "processedAt": "2026-02-28T05:25:30.303Z"
+}

@@ -1,0 +1,59 @@
+{
+  "student": "박지율",
+  "date": "260226",
+  "subject": "문법",
+  "textbook": "",
+  "range": "",
+  "answers": [
+    {
+      "questionNo": "301",
+      "studentAnswer": "⑤",
+      "correctAnswer": "?",
+      "isCorrect": null,
+      "imageFile": "박지율_260226_01.jpg",
+      "verified": null,
+      "conflict": null,
+      "allMarks": {
+        "1": "none",
+        "2": "none",
+        "3": "none",
+        "4": "none",
+        "5": "circle"
+      },
+      "usedColorSep": true,
+      "pass1": "⑤",
+      "pass2": null
+    },
+    {
+      "questionNo": "302",
+      "studentAnswer": "③",
+      "correctAnswer": "?",
+      "isCorrect": null,
+      "imageFile": "박지율_260226_01.jpg",
+      "verified": null,
+      "conflict": null,
+      "allMarks": {
+        "1": "none",
+        "2": "none",
+        "3": "circle",
+        "4": "none",
+        "5": "none"
+      },
+      "usedColorSep": true,
+      "pass1": "③",
+      "pass2": null
+    }
+  ],
+  "extractedAt": "2026-02-28T16:30:04.615Z",
+  "imageCount": 5,
+  "version": 4,
+  "method": "color-separation-2pass",
+  "stats": {
+    "total": 2,
+    "correct": 0,
+    "wrong": 0,
+    "unknown": 2,
+    "verified": 0,
+    "conflicts": 0
+  }
+}

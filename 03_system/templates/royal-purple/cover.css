@@ -1,0 +1,80 @@
+/* =================================================================== */
+/* Royal Purple Template — Cover Page Styles                          */
+/* 독해 Basic Overlay 표지 (솔리드 색상 버전)                          */
+/* Vera's Document Studio                                             */
+/* =================================================================== */
+
+.cover-page {
+    background-color: #6C3483 !important;
+    background-image: url('../../05_assets/backgrounds/background5.png') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    position: relative !important;
+}
+
+/* Overlay - 솔리드 배경으로 대체 */
+.cover-overlay {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background-color: #8E44AD !important;
+    opacity: 0.85 !important;
+    z-index: 1 !important;
+}
+
+/* Cover Content Container */
+.cover-content {
+    position: relative !important;
+    z-index: 2 !important;
+    text-align: center !important;
+    padding: 25mm !important;
+}
+
+/* Cover Title */
+.cover-main-title {
+    font-family: var(--font-eng) !important;
+    font-size: var(--cover-title-size) !important;
+    color: #FFFFFF !important;
+    font-weight: 800 !important;
+    margin-bottom: 8mm !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.5pt !important;
+    text-shadow: none !important;
+}
+
+/* Cover Subtitle */
+.cover-subtitle {
+    font-family: var(--font-sans) !important;
+    font-size: var(--cover-subtitle-size) !important;
+    color: #FFFFFF !important;
+    font-weight: 400 !important;
+    margin-bottom: 12mm !important;
+    line-height: 1.4 !important;
+}
+
+/* Cover Brand */
+.cover-brand {
+    font-family: var(--font-eng) !important;
+    font-size: var(--cover-brand-size) !important;
+    color: var(--color-accent-secondary) !important;
+    font-weight: 700 !important;
+    letter-spacing: 2pt !important;
+    margin-top: 15mm !important;
+    text-transform: uppercase !important;
+}
+
+/* Cover Accent Line */
+.cover-accent-line {
+    width: 80mm !important;
+    height: 3px !important;
+    background-color: var(--color-accent-secondary) !important;
+    margin: 8mm auto !important;
+}

@@ -1,0 +1,131 @@
+{
+  "bookId": "syntax-basic-unit15",
+  "unit": 15,
+  "title": "[중간 점검] 1~3주차 누적 복습",
+  "part": "IV",
+  "week": 4,
+  "type": "sentence-analysis",
+  "instruction": "1~3주차 내용을 총동원하여 다음 문장을 분석하고 해석해 보세요.",
+  "problems": [
+    {
+      "id": "syntax-basic-unit15-1",
+      "number": 1,
+      "type": "sentence-analysis",
+      "stem": "Reading books is a good way to broaden your perspective.",
+      "answer": {
+        "analysis": "Reading books(S) is(V) a good way(C) [형용사적] to broaden your perspective.",
+        "pattern": "명사적",
+        "translation": "책을 읽는",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit15-2",
+      "number": 2,
+      "type": "sentence-analysis",
+      "stem": "The students studying in the library seem to be preparing for an exam.",
+      "answer": {
+        "analysis": "것은 당신의 시야를 넓히는 좋은 방법이다. The students(S) [형용사적] studying in the library seem(V) [명사적] to be preparing for an exam(C).",
+        "pattern": "",
+        "translation": "도서관에서 공부하고 있는 학생들은 시험을 준비하고 있는 것 같다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit15-3",
+      "number": 3,
+      "type": "sentence-analysis",
+      "stem": "He went to the post office to send a package to his family.",
+      "answer": {
+        "analysis": "He(S) went(V) (to the post office) [부사적] to send a package to his family.",
+        "pattern": "",
+        "translation": "그는 그의 가족에게 소포",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit15-4",
+      "number": 4,
+      "type": "sentence-analysis",
+      "stem": "The movie, based on a true story, made many people cry.",
+      "answer": {
+        "analysis": "를 보내기 위해 우체국에 갔다. The movie(S), [부사적] based on a true story, made(V) many people(O) cry(OC).",
+        "pattern": "",
+        "translation": "실화에 바탕을 둔",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit15-5",
+      "number": 5,
+      "type": "sentence-analysis",
+      "stem": "My plan is to travel around Europe for a month after graduation.",
+      "answer": {
+        "analysis": "그 영화는 많은 사람들을 울게 만들었다. My plan(S) is(V) [명사적] to travel around Europe for a month after graduation(C).",
+        "pattern": "",
+        "translation": "내 계획은 졸업",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit15-6",
+      "number": 6,
+      "type": "sentence-analysis",
+      "stem": "The problem is too difficult for me to solve alone.",
+      "answer": {
+        "analysis": "후에 한 달 동안 유럽을 여행하는 것이다. The problem(S) is(V) too difficult(C) (for me) [부사적] to solve alone.",
+        "pattern": "",
+        "translation": "그 문제는 내가 혼자 풀기에는",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit15-7",
+      "number": 7,
+      "type": "sentence-analysis",
+      "stem": "Not receiving any answer, I decided to call him directly.",
+      "answer": {
+        "analysis": "너무 어렵다. [부사적] Not receiving any answer, I(S) decided(V) [명사적] to call him directly.",
+        "pattern": "",
+        "translation": "아무런 답을 받지 못",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit15-8",
+      "number": 8,
+      "type": "sentence-analysis",
+      "stem": "The most effective method to learn English is to use it every day.",
+      "answer": {
+        "analysis": "해서, 나는 그에게 직접 전화하기로 결정했다. The most effective method(S) [형용사적] to learn English is(V) [명사적] to use it every day(C).",
+        "pattern": "",
+        "translation": "영",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit15-9",
+      "number": 9,
+      "type": "sentence-analysis",
+      "stem": "She was disappointed to hear the news of the concert's cancellation.",
+      "answer": {
+        "analysis": "어를 배우는 가장 효과적인 방법은 그것을 매일 사용하는 것이다. She(S) was(V) disappointed(C) [부사적] to hear the news of the concert's cancellation.",
+        "pattern": "",
+        "translation": "그녀는 콘",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit15-10",
+      "number": 10,
+      "type": "sentence-analysis",
+      "stem": "The products made in Korea are known for their high quality.",
+      "answer": {
+        "analysis": "서트 취소 소식을 듣게 되어 실망했다. The products(S) [형용사적] made in Korea are known(V) (for their high quality).",
+        "pattern": "",
+        "translation": "한국에서 만들어",
+        "notes": ""
+      }
+    }
+  ]
+}

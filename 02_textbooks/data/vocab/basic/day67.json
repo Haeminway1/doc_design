@@ -1,0 +1,507 @@
+{
+  "bookId": "vocab-basic",
+  "day": 67,
+  "theme": "지리와 지형 (Geography and Topography)",
+  "words": [
+    {
+      "word": "geography",
+      "pronunciation": "[dʒiάgrəfi]",
+      "partOfSpeech": "n.",
+      "meaning": "지리학",
+      "example": {
+        "en": "Geography is the study of the Earth's physical features and its atmosphere.",
+        "ko": "지리학은 지구의 물리적 특징과 대기를 연구하는 학문이다."
+      }
+    },
+    {
+      "word": "cartography",
+      "pronunciation": "[kɑːrtάgrəfi]",
+      "partOfSpeech": "n.",
+      "meaning": "지도 제작술",
+      "example": {
+        "en": "Cartography has evolved significantly with the advent of satellite technology.",
+        "ko": "지도 제작술은 위성 기술의 출현으로 크게 발전했다."
+      }
+    },
+    {
+      "word": "continent",
+      "pronunciation": "[kάntənənt]",
+      "partOfSpeech": "n.",
+      "meaning": "대륙",
+      "example": {
+        "en": "Asia is the largest continent in the world.",
+        "ko": "아시아는 세계에서 가장 큰 대륙이다."
+      }
+    },
+    {
+      "word": "peninsula",
+      "pronunciation": "[pənínsjulə]",
+      "partOfSpeech": "n.",
+      "meaning": "반도",
+      "example": {
+        "en": "The Korean Peninsula is surrounded by water on three sides.",
+        "ko": "한반도는 삼면이 바다로 둘러싸여 있다."
+      }
+    },
+    {
+      "word": "island",
+      "pronunciation": "[áilənd]",
+      "partOfSpeech": "n.",
+      "meaning": "섬",
+      "example": {
+        "en": "They spent their vacation on a tropical island.",
+        "ko": "그들은 열대 섬에서 휴가를 보냈다."
+      }
+    },
+    {
+      "word": "archipelago",
+      "pronunciation": "[ὰːrkəpéləgòu]",
+      "partOfSpeech": "n.",
+      "meaning": "군도, 열도",
+      "example": {
+        "en": "The Philippines is an archipelago made up of over 7,000 islands.",
+        "ko": "필리핀은 7,000개가 넘는 섬으로 이루어진 군도이다."
+      }
+    },
+    {
+      "word": "coastline",
+      "pronunciation": "[kóustlàin]",
+      "partOfSpeech": "n.",
+      "meaning": "해안선",
+      "example": {
+        "en": "California has a long and beautiful coastline.",
+        "ko": "캘리포니아는 길고 아름다운 해안선을 가지고 있다."
+      }
+    },
+    {
+      "word": "shore",
+      "pronunciation": "[ʃɔːr]",
+      "partOfSpeech": "n.",
+      "meaning": "해안, 기슭",
+      "example": {
+        "en": "We walked along the shore and collected seashells.",
+        "ko": "우리는 해안을 따라 걸으며 조개껍데기를 모았다."
+      }
+    },
+    {
+      "word": "beach",
+      "pronunciation": "[biːtʃ]",
+      "partOfSpeech": "n.",
+      "meaning": "해변",
+      "example": {
+        "en": "The children built a sandcastle on the beach.",
+        "ko": "아이들은 해변에 모래성을 쌓았다."
+      }
+    },
+    {
+      "word": "cliff",
+      "pronunciation": "[klif]",
+      "partOfSpeech": "n.",
+      "meaning": "절벽",
+      "example": {
+        "en": "The waves crashed against the steep cliffs.",
+        "ko": "파도가 가파른 절벽에 부딪혔다."
+      }
+    },
+    {
+      "word": "mountain",
+      "pronunciation": "[máuntin]",
+      "partOfSpeech": "n.",
+      "meaning": "산",
+      "example": {
+        "en": "Mount Everest is the highest mountain in the world.",
+        "ko": "에베레스트산은 세계에서 가장 높은 산이다."
+      }
+    },
+    {
+      "word": "peak",
+      "pronunciation": "[piːk]",
+      "partOfSpeech": "n.",
+      "meaning": "정상, 봉우리",
+      "example": {
+        "en": "The mountain peak was covered in snow.",
+        "ko": "산봉우리는 눈으로 덮여 있었다."
+      }
+    },
+    {
+      "word": "ridge",
+      "pronunciation": "[ridʒ]",
+      "partOfSpeech": "n.",
+      "meaning": "산등성이, 능선",
+      "example": {
+        "en": "We walked along the narrow mountain ridge.",
+        "ko": "우리는 좁은 산등성이를 따라 걸었다."
+      }
+    },
+    {
+      "word": "valley",
+      "pronunciation": "[vǽli]",
+      "partOfSpeech": "n.",
+      "meaning": "계곡, 골짜기",
+      "example": {
+        "en": "A river flows through the bottom of the valley.",
+        "ko": "강이 계곡 바닥을 따라 흐른다."
+      }
+    },
+    {
+      "word": "canyon",
+      "pronunciation": "[kǽnjən]",
+      "partOfSpeech": "n.",
+      "meaning": "협곡",
+      "example": {
+        "en": "The Grand Canyon is one of the world's natural wonders.",
+        "ko": "그랜드 캐니언은 세계의 자연 경이 중 하나이다."
+      }
+    },
+    {
+      "word": "plateau",
+      "pronunciation": "[plætóu]",
+      "partOfSpeech": "n.",
+      "meaning": "고원",
+      "example": {
+        "en": "The Tibetan Plateau is the highest and largest plateau in the world.",
+        "ko": "티베트 고원은 세계에서 가장 높고 가장 큰 고원이다."
+      }
+    },
+    {
+      "word": "plain",
+      "pronunciation": "[plein]",
+      "partOfSpeech": "n.",
+      "meaning": "평원, 평야",
+      "example": {
+        "en": "Buffalo once roamed the vast plains of North America.",
+        "ko": "들소는 한때 북미의 광활한 평원을 배회했다."
+      }
+    },
+    {
+      "word": "oasis",
+      "pronunciation": "[ouéisis]",
+      "partOfSpeech": "n.",
+      "meaning": "오아시스",
+      "example": {
+        "en": "The travelers were relieved to find an oasis in the desert.",
+        "ko": "여행자들은 사막에서 오아시스를 발견하고 안도했다."
+      }
+    },
+    {
+      "word": "forest",
+      "pronunciation": "[fɔ́ːrist]",
+      "partOfSpeech": "n.",
+      "meaning": "숲",
+      "example": {
+        "en": "We went for a walk in the forest.",
+        "ko": "우리는 숲으로 산책을 갔다."
+      }
+    },
+    {
+      "word": "jungle",
+      "pronunciation": "[dʒʌ́&eng;gl]",
+      "partOfSpeech": "n.",
+      "meaning": "정글, 밀림",
+      "example": {
+        "en": "The Amazon jungle is home to countless species.",
+        "ko": "아마존 정글은 수많은 종의 서식지이다."
+      }
+    },
+    {
+      "word": "river",
+      "pronunciation": "[rívər]",
+      "partOfSpeech": "n.",
+      "meaning": "강",
+      "example": {
+        "en": "The Nile is the longest river in the world.",
+        "ko": "나일강은 세계에서 가장 긴 강이다."
+      }
+    },
+    {
+      "word": "stream",
+      "pronunciation": "[striːm]",
+      "partOfSpeech": "n.",
+      "meaning": "개울, 시내",
+      "example": {
+        "en": "A small stream runs through the woods.",
+        "ko": "작은 개울이 숲을 가로질러 흐른다."
+      }
+    },
+    {
+      "word": "lake",
+      "pronunciation": "[leik]",
+      "partOfSpeech": "n.",
+      "meaning": "호수",
+      "example": {
+        "en": "We went swimming in the lake.",
+        "ko": "우리는 호수에서 수영을 했다."
+      }
+    },
+    {
+      "word": "pond",
+      "pronunciation": "[pɑnd]",
+      "partOfSpeech": "n.",
+      "meaning": "연못",
+      "example": {
+        "en": "Ducks were swimming in the pond.",
+        "ko": "오리들이 연못에서 헤엄치고 있었다."
+      }
+    },
+    {
+      "word": "waterfall",
+      "pronunciation": "[wɔ́ːtərfɔ̀ːl]",
+      "partOfSpeech": "n.",
+      "meaning": "폭포",
+      "example": {
+        "en": "Niagara Falls is a famous waterfall.",
+        "ko": "나이아가라 폭포는 유명한 폭포이다."
+      }
+    },
+    {
+      "word": "glacier",
+      "pronunciation": "[gléiʃər]",
+      "partOfSpeech": "n.",
+      "meaning": "빙하",
+      "example": {
+        "en": "Glaciers are slowly melting due to global warming.",
+        "ko": "빙하는 지구 온난화로 인해 서서히 녹고 있다."
+      }
+    },
+    {
+      "word": "iceberg",
+      "pronunciation": "[áisbə̀ːrg]",
+      "partOfSpeech": "n.",
+      "meaning": "빙산",
+      "example": {
+        "en": "The ship hit an iceberg and sank.",
+        "ko": "그 배는 빙산에 부딪혀 침몰했다."
+      }
+    },
+    {
+      "word": "tundra",
+      "pronunciation": "[tʌ́ndrə]",
+      "partOfSpeech": "n.",
+      "meaning": "툰드라, 동토대",
+      "example": {
+        "en": "The arctic tundra is a vast, treeless region.",
+        "ko": "북극 툰드라는 광활하고 나무가 없는 지역이다."
+      }
+    },
+    {
+      "word": "grassland",
+      "pronunciation": "[grǽslæ̀nd]",
+      "partOfSpeech": "n.",
+      "meaning": "초원",
+      "example": {
+        "en": "The African grassland is home to many large animals.",
+        "ko": "아프리카 초원은 많은 대형 동물의 서식지이다."
+      }
+    },
+    {
+      "word": "savanna",
+      "pronunciation": "[səvǽnə]",
+      "partOfSpeech": "n.",
+      "meaning": "사바나, 대초원",
+      "example": {
+        "en": "Lions and zebras live on the African savanna.",
+        "ko": "사자와 얼룩말은 아프리카 사바나에 산다."
+      }
+    },
+    {
+      "word": "swamp",
+      "pronunciation": "[swɑmp]",
+      "partOfSpeech": "n.",
+      "meaning": "늪",
+      "example": {
+        "en": "Alligators are often found in swamps.",
+        "ko": "악어는 종종 늪에서 발견된다."
+      }
+    },
+    {
+      "word": "marsh",
+      "pronunciation": "[mɑːrʃ]",
+      "partOfSpeech": "n.",
+      "meaning": "습지",
+      "example": {
+        "en": "The marsh is an important habitat for birds.",
+        "ko": "그 습지는 새들의 중요한 서식지이다."
+      }
+    },
+    {
+      "word": "estuary",
+      "pronunciation": "[ésʧuèri]",
+      "partOfSpeech": "n.",
+      "meaning": "하구",
+      "example": {
+        "en": "The river flows into the sea at the estuary.",
+        "ko": "그 강은 하구에서 바다로 흘러 들어간다."
+      }
+    },
+    {
+      "word": "delta",
+      "pronunciation": "[déltə]",
+      "partOfSpeech": "n.",
+      "meaning": "삼각주",
+      "example": {
+        "en": "The Nile Delta is a very fertile region.",
+        "ko": "나일강 삼각주는 매우 비옥한 지역이다."
+      }
+    },
+    {
+      "word": "fjord",
+      "pronunciation": "[fjɔːrd]",
+      "partOfSpeech": "n.",
+      "meaning": "피오르드",
+      "example": {
+        "en": "Norway is famous for its beautiful fjords.",
+        "ko": "노르웨이는 아름다운 피오르드로 유명하다."
+      }
+    },
+    {
+      "word": "strait",
+      "pronunciation": "[streit]",
+      "partOfSpeech": "n.",
+      "meaning": "해협",
+      "example": {
+        "en": "The Strait of Gibraltar connects the Atlantic Ocean and the Mediterranean Sea.",
+        "ko": "지브롤터 해협은 대서양과 지중해를 연결한다."
+      }
+    },
+    {
+      "word": "bay",
+      "pronunciation": "[bei]",
+      "partOfSpeech": "n.",
+      "meaning": "만(灣)",
+      "example": {
+        "en": "The city is located on a large bay.",
+        "ko": "그 도시는 큰 만에 위치해 있다."
+      }
+    },
+    {
+      "word": "cape",
+      "pronunciation": "[keip]",
+      "partOfSpeech": "n.",
+      "meaning": "곶, 갑",
+      "example": {
+        "en": "The Cape of Good Hope is at the southern tip of Africa.",
+        "ko": "희망봉은 아프리카 남쪽 끝에 있다."
+      }
+    },
+    {
+      "word": "equator",
+      "pronunciation": "[ikwéitər]",
+      "partOfSpeech": "n.",
+      "meaning": "적도",
+      "example": {
+        "en": "Countries near the equator have a tropical climate.",
+        "ko": "적도 근처의 나라들은 열대 기후를 가지고 있다."
+      }
+    },
+    {
+      "word": "meridian",
+      "pronunciation": "[mərídiən]",
+      "partOfSpeech": "n.",
+      "meaning": "경선, 자오선",
+      "example": {
+        "en": "The Prime Meridian passes through Greenwich, England.",
+        "ko": "본초 자오선은 영국 그리니치를 통과한다."
+      }
+    },
+    {
+      "word": "tropics",
+      "pronunciation": "[trάpiks]",
+      "partOfSpeech": "n.",
+      "meaning": "열대 지방",
+      "example": {
+        "en": "The tropics are the region of the Earth surrounding the Equator.",
+        "ko": "열대 지방은 적도를 둘러싼 지구의 지역이다."
+      }
+    },
+    {
+      "word": "poles",
+      "pronunciation": "[poulz]",
+      "partOfSpeech": "n.",
+      "meaning": "극지방",
+      "example": {
+        "en": "The North and South Poles are the coldest places on Earth.",
+        "ko": "북극과 남극은 지구상에서 가장 추운 곳이다."
+      }
+    },
+    {
+      "word": "hemisphere",
+      "pronunciation": "[hémisfìər]",
+      "partOfSpeech": "n.",
+      "meaning": "반구",
+      "example": {
+        "en": "Australia is in the Southern Hemisphere.",
+        "ko": "호주는 남반구에 있다."
+      }
+    },
+    {
+      "word": "premonition",
+      "pronunciation": "[ˌprɛməˈnɪʃən]",
+      "partOfSpeech": "noun",
+      "meaning": "예감, 전조, 예지",
+      "example": {
+        "en": "She had a premonition that major changes were about to occur in her life.",
+        "ko": "그녀는 자신의 인생에 큰 변화가 일어날 것이라는 예감이 들었다."
+      }
+    },
+    {
+      "word": "portentous",
+      "pronunciation": "[pɔːrˈtɛntəs]",
+      "partOfSpeech": "adjective",
+      "meaning": "불길한 징조의, 중대한, 예언적인",
+      "example": {
+        "en": "The dark clouds gathering on the horizon seemed portentous of an approaching storm.",
+        "ko": "지평선에 모여드는 먹구름은 다가오는 폭풍의 불길한 징조처럼 보였다."
+      }
+    },
+    {
+      "word": "harbinger",
+      "pronunciation": "[ˈhɑːrbɪndʒər]",
+      "partOfSpeech": "noun",
+      "meaning": "전조, 선구자, 예고자",
+      "example": {
+        "en": "The appearance of robins is often seen as a harbinger of spring.",
+        "ko": "로빈새의 출현은 종종 봄의 전조로 여겨진다."
+      }
+    },
+    {
+      "word": "prognosticate",
+      "pronunciation": "[prɒɡˈnɒstɪkeɪt]",
+      "partOfSpeech": "verb",
+      "meaning": "예측하다, 예언하다",
+      "example": {
+        "en": "Financial analysts tried to prognosticate the market's future behavior.",
+        "ko": "금융 분석가들은 시장의 미래 동향을 예측하려 했다."
+      }
+    },
+    {
+      "word": "prescient",
+      "pronunciation": "[ˈprɛʃənt]",
+      "partOfSpeech": "adjective",
+      "meaning": "선견지명이 있는, 예지력이 있는",
+      "example": {
+        "en": "Her prescient warning about the economic crisis proved accurate.",
+        "ko": "경제 위기에 대한 그녀의 선견지명 있는 경고는 정확했던 것으로 판명되었다."
+      }
+    },
+    {
+      "word": "prospective",
+      "pronunciation": "[prəˈspɛktɪv]",
+      "partOfSpeech": "adjective",
+      "meaning": "장래의, 예상되는, 잠재적인",
+      "example": {
+        "en": "The company interviewed several prospective employees for the position.",
+        "ko": "회사는 그 직책에 대해 여러 잠재적 직원들을 면접했다."
+      }
+    },
+    {
+      "word": "terrain",
+      "pronunciation": "/təˈreɪn/",
+      "partOfSpeech": "n.",
+      "meaning": "한 지역 토지의 물리적 특징이나 유형",
+      "example": {
+        "en": "The rugged terrain made road construction difficult.",
+        "ko": "험준한 지형 때문에 도로 건설이 어려웠다."
+      }
+    }
+  ]
+}

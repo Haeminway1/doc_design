@@ -1,0 +1,504 @@
+{
+  "bookId": "vocab-basic",
+  "day": 68,
+  "theme": "천문학과 우주 (Astronomy and Space)",
+  "words": [
+    {
+      "word": "astronomy",
+      "pronunciation": "[əstrάnəmi]",
+      "partOfSpeech": "n.",
+      "meaning": "천문학",
+      "example": {
+        "en": "Astronomy is the study of celestial objects and phenomena.",
+        "ko": "천문학은 천체와 우주 현상을 연구하는 학문이다."
+      }
+    },
+    {
+      "word": "cosmology",
+      "pronunciation": "[kɑzmάlədʒi]",
+      "partOfSpeech": "n.",
+      "meaning": "우주론",
+      "example": {
+        "en": "Cosmology explores the origin and evolution of the universe.",
+        "ko": "우주론은 우주의 기원과 진화를 탐구한다."
+      }
+    },
+    {
+      "word": "astrophysics",
+      "pronunciation": "[æ̀stroufíziks]",
+      "partOfSpeech": "n.",
+      "meaning": "천체물리학",
+      "example": {
+        "en": "Astrophysics applies the principles of physics to astronomy.",
+        "ko": "천체물리학은 물리학의 원리를 천문학에 적용한다."
+      }
+    },
+    {
+      "word": "universe",
+      "pronunciation": "[júːnəvə̀ːrs]",
+      "partOfSpeech": "n.",
+      "meaning": "우주",
+      "example": {
+        "en": "Scientists believe the universe is constantly expanding.",
+        "ko": "과학자들은 우주가 끊임없이 팽창하고 있다고 믿는다."
+      }
+    },
+    {
+      "word": "cosmos",
+      "pronunciation": "[kάzməs]",
+      "partOfSpeech": "n.",
+      "meaning": "우주 (질서 있는 체계로서의)",
+      "example": {
+        "en": "The ancient Greeks viewed the cosmos as an ordered and harmonious system.",
+        "ko": "고대 그리스인들은 우주를 질서 있고 조화로운 체계로 보았다."
+      }
+    },
+    {
+      "word": "galaxy",
+      "pronunciation": "[gǽləksi]",
+      "partOfSpeech": "n.",
+      "meaning": "은하",
+      "example": {
+        "en": "Our solar system is part of the Milky Way galaxy.",
+        "ko": "우리 태양계는 은하수의 일부이다."
+      }
+    },
+    {
+      "word": "solar system",
+      "partOfSpeech": "n.",
+      "meaning": "태양계",
+      "example": {
+        "en": "The solar system consists of the sun and the planets that orbit it.",
+        "ko": "태양계는 태양과 그 주위를 도는 행성들로 구성된다."
+      }
+    },
+    {
+      "word": "planet",
+      "pronunciation": "[plǽnit]",
+      "partOfSpeech": "n.",
+      "meaning": "행성",
+      "example": {
+        "en": "Earth is the third planet from the sun.",
+        "ko": "지구는 태양에서 세 번째 행성이다."
+      }
+    },
+    {
+      "word": "moon",
+      "pronunciation": "[muːn]",
+      "partOfSpeech": "n.",
+      "meaning": "달, 위성",
+      "example": {
+        "en": "The full moon was bright in the night sky.",
+        "ko": "보름달이 밤하늘에 밝게 빛났다."
+      }
+    },
+    {
+      "word": "star",
+      "pronunciation": "[stɑːr]",
+      "partOfSpeech": "n.",
+      "meaning": "별, 항성",
+      "example": {
+        "en": "The Sun is the closest star to Earth.",
+        "ko": "태양은 지구에서 가장 가까운 별이다."
+      }
+    },
+    {
+      "word": "constellation",
+      "pronunciation": "[kὰnstəléiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "별자리",
+      "example": {
+        "en": "Orion is a well-known constellation.",
+        "ko": "오리온자리는 잘 알려진 별자리이다."
+      }
+    },
+    {
+      "word": "nebula",
+      "pronunciation": "[nébjulə]",
+      "partOfSpeech": "n.",
+      "meaning": "성운",
+      "example": {
+        "en": "A nebula is a giant cloud of dust and gas in space.",
+        "ko": "성운은 우주에 있는 거대한 먼지와 가스 구름이다."
+      }
+    },
+    {
+      "word": "supernova",
+      "pronunciation": "[sùːpərnóuvə]",
+      "partOfSpeech": "n.",
+      "meaning": "초신성",
+      "example": {
+        "en": "A supernova is the explosive death of a star.",
+        "ko": "초신성은 별의 폭발적인 죽음이다."
+      }
+    },
+    {
+      "word": "black hole",
+      "partOfSpeech": "n.",
+      "meaning": "블랙홀",
+      "example": {
+        "en": "A black hole has such strong gravity that nothing can escape it.",
+        "ko": "블랙홀은 너무 강한 중력을 가지고 있어서 아무것도 빠져나갈 수 없다."
+      }
+    },
+    {
+      "word": "asteroid",
+      "pronunciation": "[ǽstərɔ̀id]",
+      "partOfSpeech": "n.",
+      "meaning": "소행성",
+      "example": {
+        "en": "The asteroid belt is located between Mars and Jupiter.",
+        "ko": "소행성대는 화성과 목성 사이에 위치해 있다."
+      }
+    },
+    {
+      "word": "comet",
+      "pronunciation": "[kάmit]",
+      "partOfSpeech": "n.",
+      "meaning": "혜성",
+      "example": {
+        "en": "A comet is a celestial body with a long, bright tail.",
+        "ko": "혜성은 길고 밝은 꼬리를 가진 천체이다."
+      }
+    },
+    {
+      "word": "meteor",
+      "pronunciation": "[míːtiər]",
+      "partOfSpeech": "n.",
+      "meaning": "유성, 별똥별",
+      "example": {
+        "en": "We saw a meteor streak across the night sky.",
+        "ko": "우리는 밤하늘을 가로지르는 유성을 보았다."
+      }
+    },
+    {
+      "word": "meteorite",
+      "pronunciation": "[míːtiəràit]",
+      "partOfSpeech": "n.",
+      "meaning": "운석",
+      "example": {
+        "en": "A meteorite is a piece of rock from space that has landed on Earth.",
+        "ko": "운석은 우주에서 온 암석 조각으로 지구에 떨어진 것이다."
+      }
+    },
+    {
+      "word": "rotation",
+      "pronunciation": "[routéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "자전, 회전",
+      "example": {
+        "en": "The Earth's rotation causes day and night.",
+        "ko": "지구의 자전은 낮과 밤을 유발한다."
+      }
+    },
+    {
+      "word": "eclipse",
+      "pronunciation": "[iklíps]",
+      "partOfSpeech": "n.",
+      "meaning": "(일식·월식의) 식",
+      "example": {
+        "en": "A solar eclipse occurs when the Moon passes between the Sun and Earth.",
+        "ko": "일식은 달이 태양과 지구 사이를 지날 때 발생한다."
+      }
+    },
+    {
+      "word": "tide",
+      "pronunciation": "[taid]",
+      "partOfSpeech": "n.",
+      "meaning": "조수, 조류",
+      "example": {
+        "en": "The tide is high at noon.",
+        "ko": "정오에 만조이다."
+      }
+    },
+    {
+      "word": "gravity",
+      "pronunciation": "[grǽvəti]",
+      "partOfSpeech": "n.",
+      "meaning": "중력",
+      "example": {
+        "en": "Gravity is the force that keeps us on the ground.",
+        "ko": "중력은 우리를 땅에 붙어 있게 하는 힘이다."
+      }
+    },
+    {
+      "word": "telescope",
+      "pronunciation": "[téləskòup]",
+      "partOfSpeech": "n.",
+      "meaning": "망원경",
+      "example": {
+        "en": "We used a telescope to look at the stars.",
+        "ko": "우리는 별을 보기 위해 망원경을 사용했다."
+      }
+    },
+    {
+      "word": "observatory",
+      "pronunciation": "[əbzə́ːrvətɔ̀ːri]",
+      "partOfSpeech": "n.",
+      "meaning": "천문대, 관측소",
+      "example": {
+        "en": "The observatory is located on a high mountain.",
+        "ko": "그 천문대는 높은 산 위에 위치해 있다."
+      }
+    },
+    {
+      "word": "astronomer",
+      "pronunciation": "[əstrάnəmər]",
+      "partOfSpeech": "n.",
+      "meaning": "천문학자",
+      "example": {
+        "en": "The astronomer discovered a new planet.",
+        "ko": "그 천문학자는 새로운 행성을 발견했다."
+      }
+    },
+    {
+      "word": "astronaut",
+      "pronunciation": "[ǽstrənɔ̀ːt]",
+      "partOfSpeech": "n.",
+      "meaning": "우주비행사",
+      "example": {
+        "en": "Neil Armstrong was the first astronaut to walk on the moon.",
+        "ko": "닐 암스트롱은 달 위를 걸은 최초의 우주비행사였다."
+      }
+    },
+    {
+      "word": "cosmonaut",
+      "pronunciation": "[kάzmənɔ̀ːt]",
+      "partOfSpeech": "n.",
+      "meaning": "(러시아의) 우주비행사",
+      "example": {
+        "en": "Yuri Gagarin was the first cosmonaut in space.",
+        "ko": "유리 가가린은 우주 최초의 우주비행사였다."
+      }
+    },
+    {
+      "word": "spacecraft",
+      "pronunciation": "[spéiskræ̀ft]",
+      "partOfSpeech": "n.",
+      "meaning": "우주선",
+      "example": {
+        "en": "The spacecraft is on a mission to Mars.",
+        "ko": "그 우주선은 화성 탐사 임무를 수행 중이다."
+      }
+    },
+    {
+      "word": "rocket",
+      "pronunciation": "[rάkit]",
+      "partOfSpeech": "n.",
+      "meaning": "로켓",
+      "example": {
+        "en": "The rocket will launch a new satellite into orbit.",
+        "ko": "그 로켓은 새로운 위성을 궤도에 쏘아 올릴 것이다."
+      }
+    },
+    {
+      "word": "shuttle",
+      "pronunciation": "[ʃʌ́tl]",
+      "partOfSpeech": "n.",
+      "meaning": "우주 왕복선, 셔틀",
+      "example": {
+        "en": "The space shuttle was a reusable spacecraft.",
+        "ko": "우주 왕복선은 재사용 가능한 우주선이었다."
+      }
+    },
+    {
+      "word": "space station",
+      "partOfSpeech": "n.",
+      "meaning": "우주 정거장",
+      "example": {
+        "en": "Astronauts live and work on the International Space Station.",
+        "ko": "우주비행사들은 국제 우주 정거장에서 생활하고 일한다."
+      }
+    },
+    {
+      "word": "mission",
+      "pronunciation": "[míʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "임무",
+      "example": {
+        "en": "The primary mission of the crew is to conduct scientific experiments.",
+        "ko": "승무원의 주된 임무는 과학 실험을 수행하는 것이다."
+      }
+    },
+    {
+      "word": "landing",
+      "pronunciation": "[lǽndi&eng;]",
+      "partOfSpeech": "n.",
+      "meaning": "착륙",
+      "example": {
+        "en": "The spacecraft made a successful landing on Mars.",
+        "ko": "우주선은 화성에 성공적으로 착륙했다."
+      }
+    },
+    {
+      "word": "research",
+      "pronunciation": "[risə́ːrʧ]",
+      "partOfSpeech": "n.",
+      "meaning": "연구",
+      "example": {
+        "en": "Scientific research is essential for progress.",
+        "ko": "과학 연구는 발전에 필수적이다."
+      }
+    },
+    {
+      "word": "observation",
+      "pronunciation": "[ὰbzərvéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "관측, 관찰",
+      "example": {
+        "en": "The astronomer made a careful observation of the star.",
+        "ko": "천문학자는 그 별을 주의 깊게 관측했다."
+      }
+    },
+    {
+      "word": "measurement",
+      "pronunciation": "[méʒərmənt]",
+      "partOfSpeech": "n.",
+      "meaning": "측정",
+      "example": {
+        "en": "Accurate measurement is crucial in science.",
+        "ko": "정확한 측정은 과학에서 매우 중요하다."
+      }
+    },
+    {
+      "word": "extraterrestrial",
+      "pronunciation": "[èkstrətəréstriəl]",
+      "partOfSpeech": "a.",
+      "meaning": "지구 밖의, 외계의",
+      "example": {
+        "en": "Many people believe in the existence of extraterrestrial life.",
+        "ko": "많은 사람들이 외계 생명체의 존재를 믿는다."
+      }
+    },
+    {
+      "word": "perilous",
+      "pronunciation": "[ˈperələs]",
+      "partOfSpeech": "adjective",
+      "meaning": "매우 위험한, 아주 해로운",
+      "example": {
+        "en": "The mountaineers faced perilous conditions during their ascent to the summit.",
+        "ko": "등산가들은 정상에 오르는 동안 매우 위험한 상황에 직면했다."
+      }
+    },
+    {
+      "word": "precautionary",
+      "pronunciation": "[prɪˈkɔːʃəneri]",
+      "partOfSpeech": "adjective",
+      "meaning": "예방의, 예방책으로서의",
+      "example": {
+        "en": "The company took precautionary measures to prevent workplace accidents.",
+        "ko": "회사는 작업장 사고를 예방하기 위한 예방 조치를 취했다."
+      }
+    },
+    {
+      "word": "safeguard",
+      "pronunciation": "[ˈseɪfɡɑːrd]",
+      "partOfSpeech": "verb/noun",
+      "meaning": "보호하다, 보호장치",
+      "example": {
+        "en": "The new policy aims to safeguard children's rights in education.",
+        "ko": "새로운 정책은 교육에서 아동의 권리를 보호하는 것을 목표로 한다."
+      }
+    },
+    {
+      "word": "mitigation",
+      "pronunciation": "[ˌmɪtɪˈɡeɪʃn]",
+      "partOfSpeech": "noun",
+      "meaning": "완화, 경감",
+      "example": {
+        "en": "Risk mitigation strategies were implemented across all departments.",
+        "ko": "위험 완화 전략이 모든 부서에 걸쳐 시행되었다."
+      }
+    },
+    {
+      "word": "contingency",
+      "pronunciation": "[kənˈtɪndʒənsi]",
+      "partOfSpeech": "noun",
+      "meaning": "불측의 사태, 비상사태",
+      "example": {
+        "en": "The company developed a contingency plan for potential cyber attacks.",
+        "ko": "회사는 잠재적인 사이버 공격에 대비한 비상 계획을 수립했다."
+      }
+    },
+    {
+      "word": "imperil",
+      "pronunciation": "[ɪmˈperəl]",
+      "partOfSpeech": "verb",
+      "meaning": "위태롭게 하다, 위험에 빠뜨리다",
+      "example": {
+        "en": "Their reckless actions imperiled the safety of the entire team.",
+        "ko": "그들의 무모한 행동은 전체 팀의 안전을 위태롭게 했다."
+      }
+    },
+    {
+      "word": "vulnerability",
+      "pronunciation": "[ˌvʌlnərəˈbɪləti]",
+      "partOfSpeech": "noun",
+      "meaning": "취약성, 약점",
+      "example": {
+        "en": "The security audit revealed several vulnerabilities in the system.",
+        "ko": "보안 감사는 시스템의 여러 취약점을 드러냈다."
+      }
+    },
+    {
+      "word": "lightyear",
+      "pronunciation": "/ˈlaɪtˌjɪr/",
+      "partOfSpeech": "n.",
+      "meaning": "빛이 1년 동안 이동한 거리에 해당하는 거리의 단위로, 약 9.46조 킬로미터이다.",
+      "example": {
+        "en": "The nearest star beyond the Sun is about 4.24 lightyears away.",
+        "ko": "태양 다음으로 가까운 별은 약 4.24광년 떨어져 있다."
+      }
+    },
+    {
+      "word": "astronomical unit",
+      "pronunciation": "/ˌæstrəˈnɑːmɪkəl ˈjuːnɪt/",
+      "partOfSpeech": "n.",
+      "meaning": "지구와 태양 사이의 평균 거리(약 1억 4,960만 km)로, 태양계 거리 척도로 쓰이는 단위",
+      "example": {
+        "en": "Mars orbits at about 1.5 astronomical units from the Sun.",
+        "ko": "화성은 태양으로부터 약 1.5천문단위 거리에서 공전한다."
+      }
+    },
+    {
+      "word": "parsec",
+      "pronunciation": "/ˈpɑːrˌsɛk/",
+      "partOfSpeech": "n.",
+      "meaning": "약 3.26광년에 해당하는 거리 단위로, 1천문단위가 1초각을 이루는 거리.",
+      "example": {
+        "en": "The cluster lies roughly 500 parsecs from Earth.",
+        "ko": "그 성단은 지구로부터 대략 500파섹 떨어져 있다."
+      }
+    },
+    {
+      "word": "exoplanet",
+      "pronunciation": "/ˈeksoʊˌplænɪt/",
+      "partOfSpeech": "n.",
+      "meaning": "우리 태양계 밖의 별을 도는 행성",
+      "example": {
+        "en": "The telescope detected an exoplanet by the tiny dip in the star’s brightness.",
+        "ko": "망원경은 별 밝기의 미세한 감소를 통해 외계행성을 검출했다."
+      }
+    },
+    {
+      "word": "main sequence",
+      "pronunciation": "/ˌmeɪn ˈsiːkwəns/",
+      "partOfSpeech": "n.",
+      "meaning": "별이 중심핵에서 수소를 핵융합하는 장기간의 진화 단계로, H–R 도표에서 띠를 이룸",
+      "example": {
+        "en": "Our Sun is a main sequence star that steadily fuses hydrogen in its core.",
+        "ko": "우리 태양은 중심에서 수소를 꾸준히 융합하는 주계열성이다."
+      }
+    },
+    {
+      "word": "red giant",
+      "pronunciation": "/ˌrɛd ˈdʒaɪənt/",
+      "partOfSpeech": "n.",
+      "meaning": "항성이 핵에서 수소를 소진한 뒤 팽창하고 냉각하는 항성 진화의 후기 단계",
+      "example": {
+        "en": "In about 5 billion years, the Sun will expand into a red giant.",
+        "ko": "약 50억 년 후 태양은 팽창하여 적색거성이 될 것이다."
+      }
+    }
+  ]
+}

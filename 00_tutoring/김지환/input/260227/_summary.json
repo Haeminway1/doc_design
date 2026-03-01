@@ -1,0 +1,91 @@
+{
+  "date": "260227",
+  "student": "김지환",
+  "totalImages": 9,
+  "feedbackImages": 7,
+  "images": [
+    {
+      "file": "김지환_260227_01.jpg",
+      "category": "EXCLUDE",
+      "detailCategory": "planner",
+      "confidence": 0.95,
+      "description": "학습 계획표 이미지. 단어, 독해, 독학사 학습 내용이 기록되어 있습니다.",
+      "level": null,
+      "subject": null
+    },
+    {
+      "file": "김지환_260227_02.jpg",
+      "category": "FEEDBACK",
+      "detailCategory": "external-textbook",
+      "confidence": 0.95,
+      "description": "외부 교재의 페이지로 보이며, 문제 풀이 흔적이 있습니다.",
+      "level": "intermediate",
+      "subject": "독해"
+    },
+    {
+      "file": "김지환_260227_03.jpg",
+      "category": "FEEDBACK",
+      "detailCategory": "external-textbook",
+      "confidence": 0.95,
+      "description": "외부 교재의 문제 풀이 흔적. 문법 문제 위주로 보임.",
+      "level": "intermediate",
+      "subject": "문법"
+    },
+    {
+      "file": "김지환_260227_04.jpg",
+      "category": "FEEDBACK",
+      "detailCategory": "external-textbook",
+      "confidence": 0.95,
+      "description": "외부 교재의 페이지로 보입니다. 빈칸 채우기 문제 풀이 흔적이 있습니다.",
+      "level": "intermediate",
+      "subject": "독해"
+    },
+    {
+      "file": "김지환_260227_05.jpg",
+      "category": "FEEDBACK",
+      "detailCategory": "external-textbook",
+      "confidence": 0.95,
+      "description": "외부 교재의 페이지이며, 독해 문제 풀이 흔적이 있습니다.",
+      "level": "intermediate",
+      "subject": "독해"
+    },
+    {
+      "file": "김지환_260227_06.jpg",
+      "category": "FEEDBACK",
+      "detailCategory": "external-textbook",
+      "confidence": 0.95,
+      "description": "외부 교재의 문제 풀이 흔적이 있는 페이지입니다.",
+      "level": "intermediate",
+      "subject": "문법"
+    },
+    {
+      "file": "김지환_260227_07.jpg",
+      "category": "FEEDBACK",
+      "detailCategory": "external-textbook",
+      "confidence": 0.95,
+      "description": "외부 교재의 문법 문제 풀이 흔적.",
+      "level": "intermediate",
+      "subject": "문법"
+    },
+    {
+      "file": "김지환_260227_08.jpg",
+      "category": "FEEDBACK",
+      "detailCategory": "external-textbook",
+      "confidence": 0.95,
+      "description": "외부 교재의 문제 풀이 흔적.",
+      "level": "intermediate",
+      "subject": "독해"
+    },
+    {
+      "file": "김지환_260227_09.jpg",
+      "category": "EXCLUDE",
+      "detailCategory": "vocab-cert",
+      "confidence": 0.95,
+      "description": "단어 학습 인증 이미지. 영어 단어와 한국어 뜻이 적혀 있는 노트 필기.",
+      "level": null,
+      "subject": null
+    }
+  ],
+  "feedbackReady": true,
+  "processedAt": "2026-02-27T12:29:59.879Z"
+}

@@ -1,0 +1,37 @@
+{
+  "classifiedAt": "2026-02-28T05:25:30.302Z",
+  "files": {
+    "김지환_260228_01.jpg": {
+      "category": "planner",
+      "confidence": 0.95,
+      "description": "학습 계획을 캡쳐한 이미지입니다.",
+      "isFeedbackTarget": false,
+      "level": null,
+      "subject": null
+    },
+    "김지환_260228_02.jpg": {
+      "category": "external-textbook",
+      "confidence": 0.95,
+      "description": "독학사 영어 오답 해설 및 암기 정리 화면 캡쳐.",
+      "isFeedbackTarget": true,
+      "level": null,
+      "subject": null
+    },
+    "김지환_260228_03.jpg": {
+      "category": "external-textbook",
+      "confidence": 0.95,
+      "description": "외부 교재 (동의어, 반의어, 조건문 설명)",
+      "isFeedbackTarget": true,
+      "level": "intermediate",
+      "subject": "문법"
+    },
+    "김지환_260228_04.jpg": {
+      "category": "external-textbook",
+      "confidence": 0.95,
+      "description": "베라진 교재가 아닌 외부 교재 이미지입니다. 단어와 독해 팁이 있는 페이지입니다.",
+      "isFeedbackTarget": true,
+      "level": "intermediate",
+      "subject": "독해"
+    }
+  }
+}

@@ -1,0 +1,507 @@
+{
+  "bookId": "vocab-basic",
+  "day": 70,
+  "theme": "심리학과 인지과학 (Psychology and Cognitive Science)",
+  "words": [
+    {
+      "word": "psychoanalysis",
+      "pronunciation": "[/ˌsaɪkoʊəˈnæləsɪs/]",
+      "partOfSpeech": "n.",
+      "meaning": "정신 분석학",
+      "example": {
+        "en": "Sigmund Freud is the founder of psychoanalysis.",
+        "ko": "지그문트 프로이트는 정신분석학의 창시자이다."
+      }
+    },
+    {
+      "word": "behavior",
+      "pronunciation": "[/bɪˈheɪvjər/]",
+      "partOfSpeech": "n.",
+      "meaning": "행동, 태도",
+      "example": {
+        "en": "His strange behavior worried his parents.",
+        "ko": "그의 이상한 행동은 그의 부모님을 걱정시켰다."
+      }
+    },
+    {
+      "word": "consciousness",
+      "pronunciation": "[/ˈkɑːnʃəsnəs/]",
+      "partOfSpeech": "n.",
+      "meaning": "의식, 자각",
+      "example": {
+        "en": "He lost consciousness after hitting his head.",
+        "ko": "그는 머리를 부딪힌 후 의식을 잃었다."
+      }
+    },
+    {
+      "word": "unconscious",
+      "pronunciation": "[/ʌnˈkɑːnʃəs/]",
+      "partOfSpeech": "n.",
+      "meaning": "무의식",
+      "example": {
+        "en": "Psychoanalysis explores the influence of the unconscious on behavior.",
+        "ko": "정신분석학은 행동에 대한 무의식의 영향을 탐구한다."
+      }
+    },
+    {
+      "word": "subconscious",
+      "pronunciation": "[/ˌsʌbˈkɑːnʃəs/]",
+      "partOfSpeech": "n.",
+      "meaning": "잠재의식",
+      "example": {
+        "en": "Our subconscious mind can influence our decisions.",
+        "ko": "우리의 잠재의식은 우리의 결정에 영향을 미칠 수 있다."
+      }
+    },
+    {
+      "word": "attention",
+      "pronunciation": "[/əˈtenʃn/]",
+      "partOfSpeech": "n.",
+      "meaning": "주의, 주목, 관심",
+      "example": {
+        "en": "Please pay attention to the teacher.",
+        "ko": "선생님께 주목해 주세요."
+      }
+    },
+    {
+      "word": "concentration",
+      "pronunciation": "[/ˌkɑːnsnˈtreɪʃn/]",
+      "partOfSpeech": "n.",
+      "meaning": "집중, 농도",
+      "example": {
+        "en": "This task requires a high level of concentration.",
+        "ko": "이 과업은 높은 수준의 집중력을 요구한다."
+      }
+    },
+    {
+      "word": "focus",
+      "pronunciation": "[/ˈfoʊkəs/]",
+      "partOfSpeech": "n.",
+      "meaning": "초점, 집중",
+      "example": {
+        "en": "The main focus of the study is on child development.",
+        "ko": "그 연구의 주된 초점은 아동 발달에 있다."
+      }
+    },
+    {
+      "word": "awareness",
+      "pronunciation": "[/əˈwernəs/]",
+      "partOfSpeech": "n.",
+      "meaning": "인식, 자각",
+      "example": {
+        "en": "The campaign aims to raise public awareness of the issue.",
+        "ko": "그 캠페인은 그 문제에 대한 대중의 인식을 높이는 것을 목표로 한다."
+      }
+    },
+    {
+      "word": "learning",
+      "pronunciation": "[/ˈlɜːrnɪŋ/]",
+      "partOfSpeech": "n.",
+      "meaning": "학습, 학식",
+      "example": {
+        "en": "Learning a new language takes time and effort.",
+        "ko": "새로운 언어를 배우는 것은 시간과 노력이 든다."
+      }
+    },
+    {
+      "word": "conditioning",
+      "pronunciation": "[/kənˈdɪʃənɪŋ/]",
+      "partOfSpeech": "n.",
+      "meaning": "조건화, 길들이기",
+      "example": {
+        "en": "Classical conditioning was famously demonstrated by Pavlov's dogs.",
+        "ko": "고전적 조건화는 파블로프의 개들에 의해 유명하게 증명되었다."
+      }
+    },
+    {
+      "word": "reinforcement",
+      "pronunciation": "[/ˌriːɪnˈfɔːrsmənt/]",
+      "partOfSpeech": "n.",
+      "meaning": "강화, 보강",
+      "example": {
+        "en": "Positive reinforcement can be an effective way to change behavior.",
+        "ko": "긍정적 강화는 행동을 바꾸는 효과적인 방법이 될 수 있다."
+      }
+    },
+    {
+      "word": "motivation",
+      "pronunciation": "[/ˌmoʊtɪˈveɪʃn/]",
+      "partOfSpeech": "n.",
+      "meaning": "동기 부여, 자극",
+      "example": {
+        "en": "What is your motivation for studying so hard?",
+        "ko": "그렇게 열심히 공부하는 동기가 무엇인가요?"
+      }
+    },
+    {
+      "word": "mood",
+      "pronunciation": "[/muːd/]",
+      "partOfSpeech": "n.",
+      "meaning": "기분, 분위기",
+      "example": {
+        "en": "He is in a good mood today.",
+        "ko": "그는 오늘 기분이 좋다."
+      }
+    },
+    {
+      "word": "disorder",
+      "pronunciation": "[/dɪsˈɔːrdər/]",
+      "partOfSpeech": "n.",
+      "meaning": "장애, 무질서",
+      "example": {
+        "en": "He was diagnosed with a rare mental disorder.",
+        "ko": "그는 희귀한 정신 장애 진단을 받았다."
+      }
+    },
+    {
+      "word": "phobia",
+      "pronunciation": "[/ˈfoʊbiə/]",
+      "partOfSpeech": "n.",
+      "meaning": "공포증",
+      "example": {
+        "en": "She has a phobia of spiders.",
+        "ko": "그녀는 거미 공포증이 있다."
+      }
+    },
+    {
+      "word": "stress",
+      "pronunciation": "[/stres/]",
+      "partOfSpeech": "n.",
+      "meaning": "스트레스, 압박, 강조",
+      "example": {
+        "en": "He is under a lot of stress at work.",
+        "ko": "그는 직장에서 많은 스트레스를 받고 있다."
+      }
+    },
+    {
+      "word": "trauma",
+      "pronunciation": "[/ˈtrɔːmə/]",
+      "partOfSpeech": "n.",
+      "meaning": "정신적 외상, 트라우마",
+      "example": {
+        "en": "The trauma of the accident left him with lasting psychological scars.",
+        "ko": "그 사고의 트라우마는 그에게 지속적인 심리적 상처를 남겼다."
+      }
+    },
+    {
+      "word": "treatment",
+      "pronunciation": "[/ˈtriːtmənt/]",
+      "partOfSpeech": "n.",
+      "meaning": "치료, 대우",
+      "example": {
+        "en": "Early treatment is important for a full recovery.",
+        "ko": "조기 치료는 완전한 회복에 중요하다."
+      }
+    },
+    {
+      "word": "counseling",
+      "pronunciation": "[/ˈkaʊnsəlɪŋ/]",
+      "partOfSpeech": "n.",
+      "meaning": "상담, 조언",
+      "example": {
+        "en": "They sought marriage counseling to resolve their conflicts.",
+        "ko": "그들은 갈등을 해결하기 위해 부부 상담을 받았다."
+      }
+    },
+    {
+      "word": "defense mechanism",
+      "pronunciation": "[/dɪˈfens ˈmekənɪzəm/]",
+      "partOfSpeech": "n.",
+      "meaning": "방어기제",
+      "example": {
+        "en": "Denial is a common defense mechanism.",
+        "ko": "부인은 흔한 방어기제이다."
+      }
+    },
+    {
+      "word": "projection",
+      "pronunciation": "[/prəˈdʒekʃn/]",
+      "partOfSpeech": "n.",
+      "meaning": "투영, 투사; 예상",
+      "example": {
+        "en": "Projection is a defense mechanism where one attributes their own feelings to others.",
+        "ko": "투사는 자신의 감정을 다른 사람에게 귀속시키는 방어기제이다."
+      }
+    },
+    {
+      "word": "repression",
+      "pronunciation": "[/rɪˈpreʃn/]",
+      "partOfSpeech": "n.",
+      "meaning": "억압, 억제",
+      "example": {
+        "en": "Repression involves pushing unwanted thoughts into the unconscious.",
+        "ko": "억압은 원치 않는 생각을 무의식 속으로 밀어 넣는 것을 포함한다."
+      }
+    },
+    {
+      "word": "transference",
+      "pronunciation": "[/trænsˈfɜːrəns/]",
+      "partOfSpeech": "n.",
+      "meaning": "전이, 이동",
+      "example": {
+        "en": "Transference is a key concept in psychoanalytic therapy.",
+        "ko": "전이는 정신분석 치료의 핵심 개념이다."
+      }
+    },
+    {
+      "word": "epitomize",
+      "pronunciation": "[/ɪˈpɪtəmaɪz/]",
+      "partOfSpeech": "verb",
+      "meaning": "~의 전형이다, 요약하다",
+      "example": {
+        "en": "His career epitomizes the pursuit of excellence in academic research.",
+        "ko": "그의 경력은 학술 연구에서의 탁월성 추구를 전형적으로 보여준다."
+      }
+    },
+    {
+      "word": "curiosity",
+      "pronunciation": "[/ˌkjʊriˈɑːsəti/]",
+      "partOfSpeech": "n.",
+      "meaning": "호기심",
+      "example": {
+        "en": "Curiosity drives children to explore and ask questions.",
+        "ko": "호기심은 아이들이 탐색하고 질문하게 만든다."
+      }
+    },
+    {
+      "word": "prejudice",
+      "pronunciation": "[/ˈpredʒədɪs/]",
+      "partOfSpeech": "n.",
+      "meaning": "편견, 선입견",
+      "example": {
+        "en": "Prejudice can distort how we interpret others' behavior.",
+        "ko": "편견은 우리가 타인의 행동을 해석하는 방식을 왜곡할 수 있다."
+      }
+    },
+    {
+      "word": "impulse",
+      "pronunciation": "[/ˈɪmpʌls/]",
+      "partOfSpeech": "n.",
+      "meaning": "충동, 자극",
+      "example": {
+        "en": "He bought the gadget on impulse, then regretted it.",
+        "ko": "그는 충동적으로 그 기기를 샀다가 후회했다."
+      }
+    },
+    {
+      "word": "frustration",
+      "pronunciation": "[/frʌˈstreɪʃn/]",
+      "partOfSpeech": "n.",
+      "meaning": "좌절, 불만",
+      "example": {
+        "en": "Long delays created frustration that reduced their focus.",
+        "ko": "긴 지연은 좌절감을 만들어 집중력을 떨어뜨렸다."
+      }
+    },
+    {
+      "word": "jealousy",
+      "pronunciation": "[/ˈdʒeləsi/]",
+      "partOfSpeech": "n.",
+      "meaning": "질투, 시기",
+      "example": {
+        "en": "Jealousy flared when she felt excluded from the group.",
+        "ko": "그녀는 모임에서 배제되었다고 느끼자 질투심이 치솟았다."
+      }
+    },
+    {
+      "word": "skepticism",
+      "pronunciation": "[/ˈskeptɪsɪzəm/]",
+      "partOfSpeech": "n.",
+      "meaning": "회의론, 회의적인 태도",
+      "example": {
+        "en": "Healthy skepticism helps us evaluate claims more carefully.",
+        "ko": "건전한 회의주의는 주장을 더 신중히 평가하게 돕는다."
+      }
+    },
+    {
+      "word": "contemplate",
+      "pronunciation": "[/ˈkɑːntəmpleɪt/]",
+      "partOfSpeech": "v.",
+      "meaning": "심사숙고하다, 고려하다",
+      "example": {
+        "en": "Take time to contemplate your options before deciding.",
+        "ko": "결정하기 전에 선택지를 곰곰이 생각해 보라."
+      }
+    },
+    {
+      "word": "gullible",
+      "pronunciation": "[/ˈɡʌləbl/]",
+      "partOfSpeech": "adj.",
+      "meaning": "잘 속아 넘어가는, 순진한",
+      "example": {
+        "en": "Gullible people may share false stories without checking.",
+        "ko": "잘 속는 사람들은 확인 없이 거짓 이야기를 퍼뜨릴 수 있다."
+      }
+    },
+    {
+      "word": "disdain",
+      "pronunciation": "[/dɪsˈdeɪn/]",
+      "partOfSpeech": "n.",
+      "meaning": "경멸, 무시",
+      "example": {
+        "en": "He showed disdain for anyone who disagreed with him.",
+        "ko": "그는 자신과 의견이 다른 사람들을 경멸했다."
+      }
+    },
+    {
+      "word": "vigilance",
+      "pronunciation": "[/ˈvɪdʒɪləns/]",
+      "partOfSpeech": "n.",
+      "meaning": "경계, 조심, 불침번",
+      "example": {
+        "en": "Sustained vigilance can catch small errors before they spread.",
+        "ko": "지속적인 경계는 작은 실수를 퍼지기 전에 잡아낸다."
+      }
+    },
+    {
+      "word": "volition",
+      "pronunciation": "[/voʊˈlɪʃn/]",
+      "partOfSpeech": "n.",
+      "meaning": "자유 의지, 결단력",
+      "example": {
+        "en": "Therapy encouraged change that came from her own volition.",
+        "ko": "치료는 그녀가 스스로의 의지로 변화하도록 격려했다."
+      }
+    },
+    {
+      "word": "credulity",
+      "pronunciation": "[/krəˈduːləti/]",
+      "partOfSpeech": "n.",
+      "meaning": "쉽게 믿음, 경솔함",
+      "example": {
+        "en": "Scammers exploit credulity by using urgent, emotional language.",
+        "ko": "사기꾼들은 급하고 감정적인 언어로 사람들의 쉽게 믿는 성향을 악용한다."
+      }
+    },
+    {
+      "word": "cognitive",
+      "pronunciation": "[/ˈkɑːɡnətɪv/]",
+      "partOfSpeech": "adj.",
+      "meaning": "인지의, 인식의",
+      "example": {
+        "en": "Reading is a complex cognitive process.",
+        "ko": "독서는 복잡한 인지 과정이다."
+      }
+    },
+    {
+      "word": "perception",
+      "pronunciation": "[/pərˈsepʃn/]",
+      "partOfSpeech": "n.",
+      "meaning": "지각, 인식",
+      "example": {
+        "en": "Our perception of reality is influenced by our beliefs.",
+        "ko": "현실에 대한 우리의 인식은 우리의 신념에 의해 영향을 받는다."
+      }
+    },
+    {
+      "word": "empathy",
+      "pronunciation": "[/ˈempəθi/]",
+      "partOfSpeech": "n.",
+      "meaning": "공감, 감정 이입",
+      "example": {
+        "en": "A good therapist must have empathy for their patients.",
+        "ko": "좋은 치료사는 환자에 대한 공감 능력이 있어야 한다."
+      }
+    },
+    {
+      "word": "introspection",
+      "pronunciation": "[/ˌɪntrəˈspekʃn/]",
+      "partOfSpeech": "n.",
+      "meaning": "자기 성찰, 내성",
+      "example": {
+        "en": "He spent a month in quiet introspection.",
+        "ko": "그는 한 달 동안 조용히 자기 성찰의 시간을 보냈다."
+      }
+    },
+    {
+      "word": "resilience",
+      "pronunciation": "[/rɪˈzɪliəns/]",
+      "partOfSpeech": "n.",
+      "meaning": "회복력, 탄력",
+      "example": {
+        "en": "Psychological resilience helps people cope with trauma.",
+        "ko": "심리적 회복력은 사람들이 트라우마에 대처하는 것을 돕는다."
+      }
+    },
+    {
+      "word": "bias",
+      "pronunciation": "[/ˈbaɪəs/]",
+      "partOfSpeech": "n.",
+      "meaning": "편견, 편향",
+      "example": {
+        "en": "Confirmation bias makes us favor information that confirms our beliefs.",
+        "ko": "확증 편향은 우리가 자신의 신념을 확인하는 정보를 선호하게 만든다."
+      }
+    },
+    {
+      "word": "heuristic",
+      "pronunciation": "[/hjuˈrɪstɪk/]",
+      "partOfSpeech": "n.",
+      "meaning": "체험적인 방법, 발견적 학습법",
+      "example": {
+        "en": "People often use a heuristic approach to solve complex problems quickly.",
+        "ko": "사람들은 복잡한 문제를 빨리 해결하기 위해 종종 발견적 방법을 사용한다."
+      }
+    },
+    {
+      "word": "ambivalent",
+      "pronunciation": "[/æmˈbɪvələnt/]",
+      "partOfSpeech": "adj.",
+      "meaning": "양면적인, 상반된 감정이 있는",
+      "example": {
+        "en": "She felt ambivalent about leaving her hometown.",
+        "ko": "그녀는 고향을 떠나는 것에 대해 양면적인 감정을 느꼈다."
+      }
+    },
+    {
+      "word": "aptitude",
+      "pronunciation": "[/ˈæptɪtuːd/]",
+      "partOfSpeech": "n.",
+      "meaning": "소질, 적성",
+      "example": {
+        "en": "He showed a natural aptitude for music at an early age.",
+        "ko": "그는 어린 나이에 음악에 대한 타고난 소질을 보였다."
+      }
+    },
+    {
+      "word": "intuition",
+      "pronunciation": "[/ˌɪntuˈɪʃn/]",
+      "partOfSpeech": "n.",
+      "meaning": "직관, 직감",
+      "example": {
+        "en": "Sometimes, you have to trust your intuition.",
+        "ko": "때로는 자신의 직감을 믿어야 한다."
+      }
+    },
+    {
+      "word": "sensation",
+      "pronunciation": "[/senˈseɪʃn/]",
+      "partOfSpeech": "n.",
+      "meaning": "감각, 느낌; 돌풍, 센세이션",
+      "example": {
+        "en": "He had the strange sensation of being watched.",
+        "ko": "그는 누가 지켜보고 있다는 이상한 느낌이 들었다."
+      }
+    },
+    {
+      "word": "syndrome",
+      "pronunciation": "[/ˈsɪndroʊm/]",
+      "partOfSpeech": "n.",
+      "meaning": "증후군",
+      "example": {
+        "en": "Burnout syndrome is common among overworked professionals.",
+        "ko": "번아웃 증후군은 과로한 전문가들 사이에서 흔하다."
+      }
+    },
+    {
+      "word": "anxiety",
+      "pronunciation": "[/æŋˈzaɪəti/]",
+      "partOfSpeech": "n.",
+      "meaning": "불안, 걱정, 염려",
+      "example": {
+        "en": "He suffers from anxiety before important exams.",
+        "ko": "그는 중요한 시험을 앞두고 불안감에 시달린다."
+      }
+    }
+  ]
+}

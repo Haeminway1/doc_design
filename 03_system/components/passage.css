@@ -1,0 +1,132 @@
+/* =================================================================== */
+/* passage.css — 독해 지문 + 어휘 컴포넌트                             */
+/* Vera's Document Studio                                               */
+/* =================================================================== */
+
+/**
+ * 독해 지문 컴포넌트
+ *
+ * 용도: 영문 지문 표시 + 하단 어휘 리스트
+ *
+ * 마크업 예시:
+ * <article class="passage" data-id="1">
+ *   <header class="passage-header">
+ *     <span class="passage-number">[지문 1]</span>
+ *     <h3 class="passage-title">The Impact of Technology</h3>
+ *   </header>
+ *   <div class="passage-body eng-text">
+ *     <p>Technology has transformed...</p>
+ *   </div>
+ *   <div class="passage-vocab">
+ *     <h4 class="passage-vocab-title">Vocabulary</h4>
+ *     <ul class="vocab-list">
+ *       <li class="vocab-item">
+ *         <span class="vocab-word">transform</span>
+ *         <span class="vocab-meaning">변화시키다</span>
+ *       </li>
+ *     </ul>
+ *   </div>
+ * </article>
+ */
+
+.passage {
+    margin: var(--space-xl) 0 !important;
+    padding: var(--space-lg) !important;
+    border: 1px solid var(--color-border-default) !important;
+    border-radius: var(--radius-md) !important;
+    background-color: var(--color-bg-page) !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+}
+
+.passage-header {
+    display: flex !important;
+    align-items: baseline !important;
+    gap: var(--space-md) !important;
+    margin-bottom: var(--space-lg) !important;
+    padding-bottom: var(--space-md) !important;
+    border-bottom: 2px solid var(--color-accent-primary) !important;
+}
+
+.passage-number {
+    font-size: var(--text-md) !important;
+    font-weight: 700 !important;
+    color: var(--color-accent-primary) !important;
+    flex-shrink: 0 !important;
+}
+
+.passage-title {
+    font-size: var(--text-lg) !important;
+    font-weight: 600 !important;
+    color: var(--color-text-primary) !important;
+    font-family: var(--font-eng) !important;
+    margin: 0 !important;
+}
+
+.passage-body {
+    font-size: var(--passage-font-size) !important;
+    line-height: var(--passage-line-height) !important;
+    color: var(--color-text-primary) !important;
+    font-family: var(--font-eng) !important;
+    margin-bottom: var(--space-lg) !important;
+}
+
+.passage-body p {
+    margin-bottom: var(--space-md) !important;
+    text-align: justify !important;
+}
+
+.passage-body p:last-child {
+    margin-bottom: 0 !important;
+}
+
+/* 어휘 섹션 */
+.passage-vocab {
+    margin-top: var(--space-lg) !important;
+    padding-top: var(--space-lg) !important;
+    border-top: 1px solid var(--color-border-default) !important;
+}
+
+.passage-vocab-title {
+    font-size: var(--text-md) !important;
+    font-weight: 600 !important;
+    color: var(--color-accent-dark) !important;
+    margin-bottom: var(--space-md) !important;
+    font-family: var(--font-eng) !important;
+}
+
+.vocab-list {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: var(--space-sm) var(--space-lg) !important;
+}
+
+.vocab-item {
+    display: flex !important;
+    gap: var(--space-md) !important;
+    align-items: baseline !important;
+    margin: 0 !important;
+}
+
+.vocab-word {
+    font-family: var(--font-eng) !important;
+    font-weight: 600 !important;
+    color: var(--color-accent-dark) !important;
+    font-size: var(--text-base) !important;
+    min-width: 80px !important;
+    flex-shrink: 0 !important;
+}
+
+.vocab-meaning {
+    font-size: var(--text-sm) !important;
+    color: var(--color-text-secondary) !important;
+    line-height: var(--leading-tight) !important;
+}
+
+/* 1열 레이아웃 변형 (어휘가 적을 때) */
+.passage-vocab--single-column .vocab-list {
+    grid-template-columns: 1fr !important;
+}

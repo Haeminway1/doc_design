@@ -1,0 +1,2530 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- =================================================================== -->
+    <!-- 문서 기본 설정                                                        -->
+    <!-- =================================================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vera's Flavor 편입영어 문법 - Bridge 편 part 2-9</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- =================================================================== -->
+    <!-- CSS 스타일: 교재의 전체 디자인을 정의합니다.                         -->
+    <!-- =================================================================== -->
+    <style>
+        /* --- 기본 페이지 및 폰트 설정 --- */
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background: #e8e9eb; /* 페이지 외부 배경색 */
+            counter-reset: page; /* 자동 페이지 번호 카운터 초기화 */
+        }
+        .eng-text { font-family: 'Inter', sans-serif; }
+        .serif-text { font-family: 'Playfair Display', serif; }
+        .bold-text { font-weight: 700; }
+
+        /* --- 색상 변수 (표지 이미지 기반) --- */
+        :root {
+            --color-sea-blue: #6C96C6;      /* 바다색 */
+            --color-deep-blue: #345C85;     /* 깊은 바다색 */
+            --color-sandy-beige: #F2C994;   /* 모래색 */
+            --color-warm-orange: #E9A266;   /* 고양이색 */
+            --color-text-dark: #3D4852;     /* 기본 텍스트 색상 */
+            --color-text-light: #718096;    /* 보조 텍스트 색상 */
+            --color-bg-light: #FDFBF6;      /* 밝은 배경색 */
+            --color-border: #EAEAEA;        /* 테두리 색상 */
+        }
+
+        /* --- A4 페이지 레이아웃 --- */
+        .page {
+            width: 210mm;
+            height: 297mm;
+            margin: 10mm auto;
+            padding: 15mm 18mm;
+            background: white;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            page-break-after: always;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        .page:last-child {
+            page-break-after: avoid;
+        }
+        .page-content {
+            flex-grow: 1;
+            overflow: hidden;
+            font-size: 11pt;
+            line-height: 1.8;
+            color: var(--color-text-dark);
+        }
+
+        /* --- 페이지 헤더 & 푸터 --- */
+        .page-header, .page-footer {
+            width: 100%;
+            flex-shrink: 0;
+            font-size: 9pt;
+            color: var(--color-text-light);
+            font-family: 'Inter', sans-serif;
+        }
+        .page-header {
+            border-bottom: 1px solid var(--color-border);
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            color: var(--color-deep-blue);
+            font-weight: 500;
+        }
+        .page-footer {
+            border-top: 1px solid var(--color-border);
+            padding-top: 8px;
+            margin-top: 12px;
+            text-align: center;
+        }
+        
+        /* 자동 페이지 번호 생성 */
+        .page-footer::after {
+            counter-increment: page;
+            content: counter(page);
+        }
+        
+        /* 특정 페이지 헤더/푸터 숨기기 */
+        .no-header-footer { padding: 0; }
+        .no-header-footer .page-header,
+        .no-header-footer .page-footer,
+        .cover-page .page-footer::after,
+        .part-intro-page .page-footer::after,
+        .toc-page .page-header,
+        .chapter-page .page-header {
+            display: none;
+        }
+        .part-intro-page .page-header,
+        .part-intro-page .page-footer {
+            border: none;
+        }
+
+        /* =================================================================== */
+        /* 세련된 표지 디자인 (2025 트렌드)                                    */
+        /* =================================================================== */
+        .cover-page {
+            color: white;
+            overflow: hidden;
+            background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 50%, #0369a1 100%);
+            background-image: url('../../background/backgroundGMBR.png'); /* 이미지 경로 수정 필요 */
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: soft-light;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .cover-text-box {
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, 0.9);
+            padding: 25mm 30mm 20mm 30mm;
+            border-radius: 0;
+            text-align: center;
+            color: white;
+            max-width: 150mm;
+            position: relative;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            margin-bottom: 20mm;
+        }
+
+        .cover-text-box .cover-prefix {
+            font-family: 'Inter', sans-serif;
+            font-size: 18pt;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 8mm;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .cover-text-box .cover-main-title {
+            font-family: 'Inter', sans-serif;
+            font-size: 48pt;
+            font-weight: 800;
+            line-height: 0.95;
+            margin-bottom: 8mm;
+            color: white;
+            letter-spacing: -1px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .cover-text-box .cover-edition {
+            font-family: 'Inter', sans-serif;
+            font-size: 16pt;
+            font-weight: 600;
+            color: #fbbf24; /* 밝은 포인트 색상 (골드) */
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .cover-footer {
+            position: absolute;
+            bottom: 15mm;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+            font-size: 11pt;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.9);
+            text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+            letter-spacing: 0.5px;
+        }
+
+        .cover-text-box::before {
+            content: '';
+            position: absolute;
+            top: 15mm;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40mm;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent);
+        }
+
+        .cover-text-box::after {
+            content: '';
+            position: absolute;
+            bottom: 35mm;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 25mm;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #fbbf24, transparent);
+        }
+
+
+        /* =================================================================== */
+        /* 목차 (TOC) 페이지 스타일                                            */
+        /* =================================================================== */
+        .toc-header { 
+            font-family: 'Inter', sans-serif; 
+            font-size: 20pt; 
+            font-weight: 700; 
+            color: var(--color-deep-blue); 
+            margin-bottom: 20px; 
+            padding-bottom: 10px; 
+            border-bottom: 2px solid var(--color-sea-blue); 
+            text-align: center;
+            letter-spacing: 2px;
+        }
+        .toc-list { 
+            list-style: none; 
+            padding-left: 0; 
+            font-size: 11pt; 
+            line-height: 2.5; 
+        }
+        .toc-item { 
+            display: flex; 
+            align-items: baseline; 
+            margin-bottom: 8px; 
+            border-bottom: 1px solid var(--color-border);
+            padding-bottom: 8px;
+        }
+        .toc-item .title { 
+            order: 1; 
+            white-space: nowrap; 
+            padding-right: 8px;
+            color: var(--color-text-dark);
+        }
+        .toc-item .title b {
+            color: var(--color-deep-blue);
+            font-weight: 700;
+        }
+        .toc-item .dots { 
+            order: 2; 
+            flex-grow: 1; 
+            border-bottom: 1px dotted var(--color-text-light); 
+            position: relative; 
+            top: -4px; 
+        }
+        .toc-item .page-num { 
+            order: 3; 
+            padding-left: 8px; 
+            font-family: 'Inter', sans-serif; 
+            font-weight: 600;
+            color: var(--color-sea-blue);
+        }
+        .toc-part-title { 
+            font-family: 'Inter', sans-serif; 
+            font-size: 14pt; 
+            font-weight: 700; 
+            color: var(--color-warm-orange); 
+            margin-top: 25px; 
+            margin-bottom: 10px; 
+            border-left: 4px solid var(--color-sandy-beige); 
+            padding-left: 12px; 
+        }
+
+        /* =================================================================== */
+        /* 파트 소개 페이지 스타일                                               */
+        /* =================================================================== */
+        .part-intro-page {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .part-intro-container {
+            padding: 20mm;
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            background-color: var(--color-bg-light);
+            max-width: 170mm;
+            text-align: center;
+        }
+        .part-intro-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 24pt;
+            color: var(--color-sandy-beige);
+            margin-bottom: 10px;
+        }
+        .part-intro-title {
+            font-size: 36pt;
+            font-weight: 900;
+            color: var(--color-deep-blue);
+            margin-bottom: 15px;
+        }
+        .part-intro-subtitle {
+            font-family: 'Inter', sans-serif;
+            font-size: 14pt;
+            color: var(--color-sea-blue);
+            margin-bottom: 20px;
+        }
+        .part-intro-divider {
+            width: 80px;
+            height: 3px;
+            background-color: var(--color-warm-orange);
+            margin: 0 auto 20px auto;
+            border: none;
+        }
+        .part-intro-description {
+            max-width: 140mm;
+            font-size: 11pt;
+            line-height: 1.9;
+            color: var(--color-text-dark);
+            text-align: justify;
+            margin: 0 auto;
+        }
+
+        /* =================================================================== */
+        /* 본문 콘텐츠 스타일                                                  */
+        /* =================================================================== */
+        .part-header { 
+            color: white; 
+            margin: 0 0 25px 0; 
+            padding: 15px 20px; 
+            font-size: 18pt; 
+            font-weight: 700; 
+            display: flex; 
+            align-items: center; 
+            background: linear-gradient(135deg, var(--color-deep-blue), var(--color-sea-blue)); 
+            border-radius: 8px; 
+            box-shadow: 0 4px 15px rgba(52, 92, 133, 0.2);
+        }
+        .part-number { 
+            font-family: 'Inter', sans-serif;
+            background: rgba(255,255,255,0.15); 
+            padding: 8px 14px; 
+            border-radius: 6px; 
+            font-weight: 700; 
+            font-size: 12pt;
+            min-width: 60px; 
+            text-align: center; 
+            margin-right: 15px; 
+        }
+        .section-title { 
+            font-family: 'Inter', sans-serif; 
+            font-size: 14pt; 
+            font-weight: 700; 
+            color: var(--color-deep-blue); 
+            margin: 25px 0 15px 0; 
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--color-sandy-beige);
+        }
+        .section-title .emoji { margin-right: 10px; }
+        .first-in-page { margin-top: 0; }
+        .content-paragraph { margin-bottom: 12px; }
+        
+        .grammar-table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin: 20px 0; 
+            font-size: 10.5pt; 
+        }
+        .grammar-table th, .grammar-table td { 
+            border: 1px solid var(--color-border); 
+            padding: 10px 12px; 
+            text-align: left; 
+            vertical-align: top;
+        }
+        .grammar-table th { 
+            background-color: var(--color-bg-light); 
+            font-weight: 700; 
+            color: var(--color-deep-blue); 
+        }
+        .grammar-table td code {
+            font-family: 'Inter', sans-serif;
+            background-color: #e8e9eb;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-size: 9.5pt;
+        }
+        
+        /* 특정 테이블 전용 스타일 */
+        .comparison-table th:first-child,
+        .comparison-table td:first-child {
+            width: 22%;
+            white-space: nowrap;
+        }
+
+        code {
+            font-family: 'Inter', sans-serif;
+            color: var(--color-deep-blue);
+            background-color: #f2f4f8;
+            border: 1px solid var(--color-border);
+            padding: 2px 6px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+        
+        .tip-box { 
+            background: var(--color-bg-light); 
+            border: 1px solid var(--color-sandy-beige); 
+            border-left: 5px solid var(--color-warm-orange); 
+            border-radius: 0 6px 6px 0; 
+            padding: 15px 20px; 
+            margin: 20px 0; 
+            font-size: 10.5pt; 
+        }
+        .tip-box-title { 
+            font-weight: 700; 
+            color: var(--color-warm-orange); 
+            margin-bottom: 8px; 
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .example-list {
+            list-style-type: '✓ ';
+            padding-left: 20px;
+            margin: 10px 0 15px 0;
+            font-size: 10.5pt;
+        }
+        .example-list li { margin-bottom: 5px; }
+
+        /* =================================================================== */
+        /* 연습 문제 스타일                                                    */
+        /* =================================================================== */
+        .practice-section-header { 
+            font-family: 'Inter', sans-serif; 
+            font-size: 16pt; 
+            font-weight: 700; 
+            color: #fff; 
+            background: var(--color-deep-blue); 
+            padding: 12px 20px; 
+            margin: 20px 0 20px 0; 
+            border-radius: 8px; 
+        }
+        .problem-block { 
+            margin-bottom: 20px; 
+            padding: 15px; 
+            border: 1px solid var(--color-border); 
+            border-left: 4px solid var(--color-sea-blue); 
+            border-radius: 0 5px 5px 0; 
+            background: #fff;
+        }
+        .problem-meta {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .problem-number { 
+            font-family: 'Inter', sans-serif; 
+            font-weight: 700; 
+            color: white;
+            background-color: var(--color-sea-blue);
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            font-size: 11pt;
+        }
+        .problem-text { 
+            font-size: 11pt; 
+            margin-bottom: 12px; 
+            line-height: 1.8;
+            text-align: justify;
+        }
+        .problem-text u {
+            text-decoration: underline;
+            text-decoration-color: var(--color-warm-orange);
+            text-decoration-thickness: 1.5px;
+            font-weight: 500;
+        }
+        .problem-question {
+            margin-top: 15px;
+            padding: 12px 15px;
+            background-color: var(--color-bg-light);
+            border: 1px solid var(--color-border);
+            border-left: 4px solid var(--color-warm-orange);
+            border-radius: 0 5px 5px 0;
+            font-size: 10.5pt;
+            font-style: italic;
+            color: var(--color-deep-blue);
+            font-weight: 500;
+        }
+        .problem-choices { 
+            list-style: none; 
+            padding-left: 0; 
+            font-size: 10.5pt; 
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 5px 20px;
+        }
+        .problem-choices li { 
+            margin-bottom: 4px; 
+            padding: 6px 10px; 
+            border-radius: 4px;
+            display: flex;
+            align-items: baseline;
+            text-align: justify;
+        }
+        .problem-choices li:hover {
+            background-color: var(--color-bg-light);
+        }
+        .choice-number {
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            color: var(--color-deep-blue);
+            margin-right: 8px;
+        }
+
+        /* =================================================================== */
+        /* 정답 및 해설 스타일                                                 */
+        /* =================================================================== */
+        .answer-key-section .section-title {
+            color: var(--color-warm-orange);
+            border-bottom-color: var(--color-sea-blue);
+        }
+        .quick-answer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(55px, 1fr));
+            gap: 8px;
+            margin: 20px 0;
+            text-align: center;
+            font-size: 10pt;
+            font-family: 'Inter', sans-serif;
+        }
+        .quick-answer-item {
+            padding: 8px;
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            background-color: var(--color-bg-light);
+        }
+        .quick-answer-item .num {
+            font-weight: 700;
+            color: var(--color-text-light);
+        }
+        .quick-answer-item .ans {
+            font-weight: 700;
+            color: var(--color-deep-blue);
+        }
+        .explanation-block {
+            margin-bottom: 15px;
+            padding-top: 15px;
+            border-top: 1px solid var(--color-border);
+        }
+        .explanation-block:first-of-type {
+            border-top: none;
+            padding-top: 0;
+        }
+        .explanation-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .explanation-header .problem-number {
+            background-color: var(--color-warm-orange);
+        }
+        .explanation-header .correct-answer {
+            font-family: 'Inter', sans-serif;
+            font-size: 12pt;
+            font-weight: 700;
+            color: var(--color-deep-blue);
+        }
+        .explanation-content {
+            font-size: 10.5pt;
+            padding: 10px 15px;
+            background-color: var(--color-bg-light);
+            border-radius: 5px;
+            text-align: justify;
+
+        }
+        .explanation-content b {
+            color: var(--color-sea-blue);
+        }
+        
+        /* =================================================================== */
+        /* 유틸리티 및 인쇄 최적화                                             */
+        /* =================================================================== */
+        .avoid-break { break-inside: avoid; page-break-inside: avoid; }
+        
+        @media print { 
+            body { background: #fff; } 
+            .page { margin: 0; box-shadow: none; } 
+        }
+        p, li, div { orphans: 3; widows: 3; }
+        .practice-section-header, .section-title, .part-header { break-after: avoid-page; }
+        .problem-block, .tip-box, .grammar-table { break-inside: avoid; }
+
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <!-- =================================================================== -->
+        <!-- 문서 기본 설정                                                        -->
+        <!-- =================================================================== -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vera's Flavor 편입영어 문법 - Bridge 편 part 9</title>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+        
+        <!-- =================================================================== -->
+        <!-- CSS 스타일: 교재의 전체 디자인을 정의합니다.                         -->
+        <!-- =================================================================== -->
+        <style>
+            /* --- 기본 페이지 및 폰트 설정 --- */
+            @page {
+                size: A4;
+                margin: 0;
+            }
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: 'Noto Sans KR', sans-serif;
+                background: #e8e9eb; /* 페이지 외부 배경색 */
+                counter-reset: page; /* 자동 페이지 번호 카운터 초기화 */
+            }
+            .eng-text { font-family: 'Inter', sans-serif; }
+            .serif-text { font-family: 'Playfair Display', serif; }
+            .bold-text { font-weight: 700; }
+    
+            /* --- 색상 변수 (표지 이미지 기반) --- */
+            :root {
+                --color-sea-blue: #6C96C6;      /* 바다색 */
+                --color-deep-blue: #345C85;     /* 깊은 바다색 */
+                --color-sandy-beige: #F2C994;   /* 모래색 */
+                --color-warm-orange: #E9A266;   /* 고양이색 */
+                --color-text-dark: #3D4852;     /* 기본 텍스트 색상 */
+                --color-text-light: #718096;    /* 보조 텍스트 색상 */
+                --color-bg-light: #FDFBF6;      /* 밝은 배경색 */
+                --color-border: #EAEAEA;        /* 테두리 색상 */
+            }
+    
+            /* --- A4 페이지 레이아웃 --- */
+            .page {
+                width: 210mm;
+                height: 297mm;
+                margin: 10mm auto;
+                padding: 15mm 18mm;
+                background: white;
+                box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+                page-break-after: always;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+            }
+            .page:last-child {
+                page-break-after: avoid;
+            }
+            .page-content {
+                flex-grow: 1;
+                overflow: hidden;
+                font-size: 11pt;
+                line-height: 1.8;
+                color: var(--color-text-dark);
+            }
+    
+            /* --- 페이지 헤더 & 푸터 --- */
+            .page-header, .page-footer {
+                width: 100%;
+                flex-shrink: 0;
+                font-size: 9pt;
+                color: var(--color-text-light);
+                font-family: 'Inter', sans-serif;
+            }
+            .page-header {
+                border-bottom: 1px solid var(--color-border);
+                padding-bottom: 8px;
+                margin-bottom: 12px;
+                display: flex;
+                justify-content: space-between;
+                color: var(--color-deep-blue);
+                font-weight: 500;
+            }
+            .page-footer {
+                border-top: 1px solid var(--color-border);
+                padding-top: 8px;
+                margin-top: 12px;
+                text-align: center;
+            }
+            
+            /* 자동 페이지 번호 생성 */
+            .page-footer::after {
+                counter-increment: page;
+                content: counter(page);
+            }
+            
+            .part-intro-page .page-footer::after { display: none; }
+            .part-intro-page .page-header,
+            .part-intro-page .page-footer { border: none; }
+    
+            /* =================================================================== */
+            /* 파트 소개 페이지 스타일                                               */
+            /* =================================================================== */
+            .part-intro-page {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .part-intro-container {
+                padding: 20mm;
+                border: 1px solid var(--color-border);
+                border-radius: 8px;
+                background-color: var(--color-bg-light);
+                max-width: 170mm;
+                text-align: center;
+            }
+            .part-intro-number {
+                font-family: 'Playfair Display', serif;
+                font-size: 24pt;
+                color: var(--color-sandy-beige);
+                margin-bottom: 10px;
+            }
+            .part-intro-title {
+                font-size: 36pt;
+                font-weight: 900;
+                color: var(--color-deep-blue);
+                margin-bottom: 15px;
+            }
+            .part-intro-subtitle {
+                font-family: 'Inter', sans-serif;
+                font-size: 14pt;
+                color: var(--color-sea-blue);
+                margin-bottom: 20px;
+            }
+            .part-intro-divider {
+                width: 80px;
+                height: 3px;
+                background-color: var(--color-warm-orange);
+                margin: 0 auto 20px auto;
+                border: none;
+            }
+            .part-intro-description {
+                max-width: 140mm;
+                font-size: 11pt;
+                line-height: 1.9;
+                color: var(--color-text-dark);
+                text-align: justify;
+                margin: 0 auto;
+            }
+    
+            /* =================================================================== */
+            /* 본문 콘텐츠 스타일                                                  */
+            /* =================================================================== */
+            .part-header { 
+                color: white; 
+                margin: 0 0 25px 0; 
+                padding: 15px 20px; 
+                font-size: 18pt; 
+                font-weight: 700; 
+                display: flex; 
+                align-items: center; 
+                background: linear-gradient(135deg, var(--color-deep-blue), var(--color-sea-blue)); 
+                border-radius: 8px; 
+                box-shadow: 0 4px 15px rgba(52, 92, 133, 0.2);
+            }
+            .part-number { 
+                font-family: 'Inter', sans-serif;
+                background: rgba(255,255,255,0.15); 
+                padding: 8px 14px; 
+                border-radius: 6px; 
+                font-weight: 700; 
+                font-size: 12pt;
+                min-width: 60px; 
+                text-align: center; 
+                margin-right: 15px; 
+            }
+            .section-title { 
+                font-family: 'Inter', sans-serif; 
+                font-size: 16pt; 
+                font-weight: 700; 
+                color: var(--color-deep-blue); 
+                margin: 30px 0 15px 0; 
+                padding-bottom: 8px;
+                border-bottom: 2px solid var(--color-sandy-beige);
+            }
+            .first-in-page { margin-top: 0; }
+            .content-paragraph { margin-bottom: 12px; text-align: justify; }
+            .sub-header {
+                font-weight:700; 
+                color: var(--color-deep-blue); 
+                margin-top:20px; 
+                margin-bottom: 10px;
+                font-size: 13pt;
+            }
+            
+            .grammar-table { 
+                width: 100%; 
+                border-collapse: collapse; 
+                margin: 20px 0; 
+                font-size: 10.5pt; 
+                break-inside: avoid;
+            }
+            .grammar-table th, .grammar-table td { 
+                border: 1px solid var(--color-border); 
+                padding: 10px 12px; 
+                text-align: left; 
+                vertical-align: top;
+            }
+            .grammar-table th { 
+                background-color: var(--color-bg-light); 
+                font-weight: 700; 
+                color: var(--color-deep-blue); 
+            }
+            .grammar-table td code {
+                font-family: 'Inter', sans-serif;
+                background-color: #e8e9eb;
+                padding: 2px 5px;
+                border-radius: 4px;
+                font-size: 9.5pt;
+            }
+            .ex-eng { font-family: 'Inter', sans-serif; font-weight: 500; color: var(--color-text-dark); }
+            .ex-kor { font-size: 10pt; color: var(--color-text-light); padding-left: 2px; }
+            
+            code {
+                font-family: 'Inter', sans-serif;
+                color: var(--color-deep-blue);
+                background-color: #f2f4f8;
+                border: 1px solid var(--color-border);
+                padding: 2px 6px;
+                border-radius: 6px;
+                font-weight: 600;
+                font-size: 0.95em;
+            }
+            
+            .tip-box { 
+                background: var(--color-bg-light); 
+                border: 1px solid var(--color-sandy-beige); 
+                border-left: 5px solid var(--color-warm-orange); 
+                border-radius: 0 6px 6px 0; 
+                padding: 15px 20px; 
+                margin: 20px 0; 
+                font-size: 10.5pt; 
+                break-inside: avoid;
+            }
+            .tip-box-title { 
+                font-weight: 700; 
+                color: var(--color-warm-orange); 
+                margin-bottom: 8px; 
+                font-family: 'Inter', sans-serif;
+            }
+            
+            .example-list {
+                list-style-type: '✓ ';
+                padding-left: 20px;
+                margin: 10px 0 15px 0;
+                font-size: 10.5pt;
+            }
+            .example-list li { margin-bottom: 8px; }
+            .example-list .ex-kor { display: block; font-size: 10pt; color: var(--color-text-light); margin-top: 2px; }
+    
+        </style>
+    </head>
+    <body>
+    
+        <div class="page no-header-footer part-intro-page">
+            <div class="part-intro-container">
+                <div class="part-intro-number eng-text">Part 9</div>
+                <h2 class="part-intro-title">특수구문</h2>
+                <h3 class="part-intro-subtitle eng-text">The Architecture of Emphasis and Style</h3>
+                <hr class="part-intro-divider">
+                <p class="part-intro-description">
+                    특수구문은 표준적인 문장 구조(S+V...)의 경계를 넘어, 저자의 의도를 극적으로 드러내고 문체적 세련미를 더하는 고차원적인 문법 장치입니다. 편입 영어에서 특수구문은 단순한 암기를 넘어, 문장의 정보 구조와 논리적 위계를 파악하는 독해력과 직결됩니다. 도치, 강조, 병렬, 생략, 동격 등은 문장의 변형 원리를 이해해야만 정복할 수 있는 영역입니다. 이 파트에서는 각 특수구문의 생성 원리와 논리적 기능을 심층적으로 분석하여, 어떤 복잡하고 생소한 문장 구조를 만나더라도 그 핵심을 꿰뚫어 볼 수 있는 최상위권의 문법적 통찰력을 완성하는 것을 목표로 합니다.
+                </p>
+            </div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 9: 특수구문</span>
+            </div>
+            <div class="page-content">
+                <div class="part-header first-in-page">
+                    <span class="part-number eng-text">Part 9</span>
+                    <span>특수구문</span>
+                </div>
+        
+                <div class="section-title eng-text">Focus 1: 도치 구문 (Inversion) I - 의문문 어순 도치</div>
+                <p class="content-paragraph">
+                    도치는 문장의 특정 요소를 문두로 이동시켜 강조하고, 그에 따라 주어와 동사의 어순을 바꾸는 문법적 장치입니다. 가장 빈번하게 출제되는 유형은 <b>의문문 어순(조동사/be동사 + 주어 + 본동사)</b>으로 도치되는 경우입니다.
+                </p>
+                <div class="sub-header">1. 부정어구 도치</div>
+                <p class="content-paragraph">
+                    <code>Never</code>, <code>Hardly</code>, <code>Scarcely</code>, <code>Little</code>, <code>No sooner</code>, <code>Not only</code>, <code>Seldom</code>, <code>Rarely</code>, <code>Nowhere</code>, <code>Under no circumstances</code> 등 부정의 의미를 지닌 부사(구)가 문두로 오면, 그 뒤의 절은 의문문 어순으로 도치됩니다.
+                </p>
+                <ul class="example-list">
+                    <li><span class="ex-eng"><b>Never before</b> had the scientific community witnessed such a phenomenon.</span><span class="ex-kor">이전에는 결코 과학계가 그러한 현상을 목격한 적이 없었다.</span></li>
+                    <li><span class="ex-eng"><b>Little</b> did he know that his discovery would change the world.</span><span class="ex-kor">그는 자신의 발견이 세상을 바꿀 것이라고는 거의 알지 못했다.</span></li>
+                    <li><span class="ex-eng"><b>Under no circumstances</b> should this door be left unlocked.</span><span class="ex-kor">어떤 상황에서도 이 문은 잠기지 않은 채로 두어서는 안 된다.</span></li>
+                </ul>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+        
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 9: 특수구문</span>
+            </div>
+            <div class="page-content">
+                <div class="sub-header first-in-page">2. `Only` + 부사(구/절) 도치</div>
+                <p class="content-paragraph">
+                    `Only`가 부사(구/절)를 수식하며 문두로 나올 때, <b>주절</b>에서 의문문 어순 도치가 발생합니다. `Only`가 주어를 수식할 때는 도치가 일어나지 않는다는 점에 유의해야 합니다.
+                </p>
+                <ul class="example-list">
+                    <li><span class="ex-eng"><b>Only after</b> rigorous peer review was the paper published.</span><span class="ex-kor">엄격한 동료 심사를 거친 후에야 비로소 그 논문은 출판되었다.</span></li>
+                    <li><span class="ex-eng"><b>Only by</b> understanding the past can we prepare for the future.</span><span class="ex-kor">과거를 이해함으로써만 우리는 미래를 준비할 수 있다.</span></li>
+                     <li><span class="ex-eng"><b>Only when</b> he finished the project did he feel a sense of relief.</span><span class="ex-kor">프로젝트를 끝냈을 때 비로소 그는 안도감을 느꼈다.</span></li>
+                </ul>
+    
+                <div class="sub-header">3. 보어 도치</div>
+                <p class="content-paragraph">
+                    주격 보어(형용사/분사)가 문두로 나가 강조될 때 주어와 동사가 도치될 수 있습니다. 특히 `so`, `as`, `how` 등과 결합하여 정도를 나타낼 때 자주 발생합니다.
+                </p>
+                <ul class="example-list">
+                    <li><span class="ex-eng"><b>So profound</b> was the impact of his theory that it reshaped the entire field.</span><span class="ex-kor">그의 이론의 영향은 너무나 심오해서 그것은 전체 분야를 재편했다.</span></li>
+                    <li><span class="ex-eng"><b>Gone</b> are the days when we had to rely on paper maps.</span><span class="ex-kor">우리가 종이 지도에 의존해야 했던 시절은 지나갔다.</span></li>
+                </ul>
+    
+                <div class="sub-header">4. `So/Neither/Nor` 동의 도치</div>
+                <p class="content-paragraph">
+                    앞 문장의 내용에 동의할 때 사용되며, 긍정문에는 `So`, 부정문에는 `Neither` 또는 `Nor`를 사용하고 그 뒤는 의문문 어순으로 도치됩니다.
+                </p>
+                <ul class="example-list">
+                    <li><span class="ex-eng">The experiment yielded positive results, and <b>so did</b> the follow-up study.</span><span class="ex-kor">그 실험은 긍정적인 결과를 낳았고, 후속 연구도 마찬가지였다.</span></li>
+                    <li><span class="ex-eng">The control group showed no significant change, and <b>neither did</b> the experimental group.</span><span class="ex-kor">통제 집단은 유의미한 변화를 보이지 않았고, 실험 집단도 마찬가지였다.</span></li>
+                </ul>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 9: 특수구문</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title eng-text first-in-page">Focus 2: 도치 구문 (Inversion) II - 주어-동사 완전 도치</div>
+                <p class="content-paragraph">
+                    문장의 균형이나 생생한 묘사를 위해 <b>장소/방향의 부사구</b>가 문두로 나갈 때, 주어와 동사의 위치가 완전히 바뀌는(V+S) 도치가 발생합니다. 이 유형은 주로 <b>1형식 자동사</b>와 함께 쓰입니다.
+                </p>
+                <table class="grammar-table">
+                    <thead>
+                        <tr><th style="width:30%;">도치 조건</th><th>구조</th><th>예문</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>장소/방향 부사구 + 1형식 자동사 + 주어(명사)</b></td>
+                            <td>부사구 + V + S</td>
+                            <td><span class="ex-eng"><b>On the hill</b> stands an old castle.</span><span class="ex-kor">언덕 위에는 오래된 성이 서 있다.</span><br><span class="ex-eng"><b>Among the archives</b> lie the forgotten manuscripts.</span><span class="ex-kor">기록 보관소 안에는 잊혀진 원고들이 놓여 있다.</span></td>
+                        </tr>
+                        <tr>
+                            <td><b>주어가 대명사인 경우</b></td>
+                            <td>부사구 + S + V<br><b>(도치 발생 안 함)</b></td>
+                            <td><span class="ex-eng">Here comes the bus. → <b>Here it comes</b>.</span><span class="ex-kor">버스가 온다. → 그것이 온다.</span><br><span class="ex-eng">Down the hill rolled the ball. → <b>Down it rolled</b>.</span><span class="ex-kor">언덕 아래로 공이 굴러갔다. → 그것이 굴러갔다.</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="tip-box avoid-break">
+                    <div class="tip-box-title eng-text">Vera's Flavor Tip | 가정법 `If` 생략 도치</div>
+                    <p>가정법 문장에서 접속사 `If`가 생략되면, 주어와 동사가 도치됩니다. 이는 매우 격식적인 문체에서 사용되며, 편입 시험에서 자주 등장하는 고난도 유형입니다.</p>
+                    <ul class="example-list" style="font-size: 10pt; line-height: 1.7;">
+                        <li><b>If I were</b> you → <b>Were I</b> you, I would accept the offer.</li>
+                        <li><b>If he had known</b> the truth → <b>Had he known</b> the truth, he would have acted differently.</li>
+                        <li><b>If you should</b> need any help → <b>Should you need</b> any help, do not hesitate to ask.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 9: 특수구문</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title eng-text first-in-page">Focus 3: 강조 구문 (Emphasis): 특정 정보에 스포트라이트 비추기</div>
+                <p class="content-paragraph">
+                    강조 구문은 문장의 특정 성분을 부각시켜 독자의 주의를 집중시키는 역할을 합니다.
+                </p>
+                <div class="sub-header">1. `It is/was ~ that ...` 강조 구문</div>
+                <p class="content-paragraph">
+                    문장의 <b>주어, 목적어, 부사(구/절)</b>를 `It is/was`와 `that` 사이에 넣어 강조합니다. 동사 자체는 강조할 수 없습니다.
+                </p>
+                <table class="grammar-table">
+                    <thead><tr><th>강조 대상</th><th>`that` 이하 구조</th><th>예문</th></tr></thead>
+                    <tbody>
+                        <tr><td><b>주어/목적어</b></td><td><b>불완전</b></td><td><span class="ex-eng">It was <b>the relentless pursuit of knowledge</b> that drove the scientist.</span><span class="ex-kor">그 과학자를 이끈 것은 바로 지식에 대한 끊임없는 추구였다.</span></td></tr>
+                        <tr><td><b>부사(구/절)</b></td><td><b>완전</b></td><td><span class="ex-eng">It was <b>during the Renaissance</b> that a new era of art and science began.</span><span class="ex-kor">예술과 과학의 새로운 시대가 시작된 것은 바로 르네상스 시대였다.</span></td></tr>
+                    </tbody>
+                </table>
+                <div class="tip-box avoid-break">
+                    <div class="tip-box-title eng-text">Vera's Flavor Tip | 강조구문 vs. 가주어-진주어 구문 판별법</div>
+                    <p><b>`It is/was`와 `that`을 손으로 가려보세요.</b> 남은 부분들이 합쳐져서 하나의 완전한 문장이 되면 <b>강조구문</b>, 문장이 성립하지 않으면 <b>가주어-진주어 구문</b>입니다.<br>
+                    - <b>강조:</b> <del>It was</del> the relentless pursuit of knowledge <del>that</del> drove the scientist. (문장 성립 O)<br>
+                    - <b>가주어:</b> <del>It is</del> true <del>that</del> the universe is expanding. (문장 성립 X)</p>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+        
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 9: 특수구문</span>
+            </div>
+            <div class="page-content">
+                <div class="sub-header first-in-page">2. 동사 강조 `do/does/did`</div>
+                <p class="content-paragraph">
+                    일반동사 앞에 `do`, `does`, `did`를 사용하여 '정말로, 틀림없이'라는 의미로 동사의 행위를 강조합니다. 상대방의 의심을 반박하거나, 사실임을 확인시켜 줄 때 효과적으로 사용됩니다.
+                </p>
+                <ul class="example-list">
+                    <li><span class="ex-eng">While the initial results were inconclusive, the subsequent experiments <b>did yield</b> significant data.</span><span class="ex-kor">초기 결과는 결정적이지 않았지만, 후속 실험들은 정말로 중요한 데이터를 산출했다.</span></li>
+                    <li><span class="ex-eng">He may seem quiet, but he <b>does have</b> strong opinions.</span><span class="ex-kor">그는 조용해 보일지 모르지만, 정말로 강한 의견을 가지고 있다.</span></li>
+                </ul>
+    
+                <div class="sub-header">3. 최상급 강조</div>
+                <p class="content-paragraph">
+                    최상급을 강조할 때는 <code>by far</code>, <code>the very</code>, <code>much</code> 등을 사용하여 '단연코', '바로 그' 등의 의미를 더합니다.
+                </p>
+                 <ul class="example-list">
+                    <li><span class="ex-eng">This is <b>by far the most</b> effective solution we have found.</span><span class="ex-kor">이것이 우리가 찾은 해결책 중 단연코 가장 효과적이다.</span></li>
+                    <li><span class="ex-eng">You are <b>the very</b> person I have been looking for.</span><span class="ex-kor">당신이 바로 내가 찾고 있던 그 사람이다.</span></li>
+                </ul>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 9: 특수구문</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title eng-text first-in-page">Focus 4: 병렬 구조 (Parallelism): 문법적 균형의 미학</div>
+                <p class="content-paragraph">
+                    병렬 구조는 등위접속사(<code>and, but, or</code>), 상관접속사(<code>both A and B</code>, <code>not only A but also B</code>), 비교 구문(<code>more ~ than</code>, <code>as ~ as</code>) 등으로 연결되는 두 개 이상의 요소들이 문법적으로 동일한 형태와 기능을 가져야 한다는 원칙입니다.
+                </p>
+                <table class="grammar-table">
+                    <thead>
+                        <tr>
+                            <th style="width:25%;">병렬 요소</th>
+                            <th>올바른 예문 (Correct)</th>
+                            <th>틀린 예문 (Incorrect)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>명사구</b></td>
+                            <td><span class="ex-eng">The research requires not only <b>a thorough understanding</b> of the theory but also <b>the ability</b> to apply it.</span></td>
+                            <td><span class="ex-eng">...but also <b>applying</b> it.</span></td>
+                        </tr>
+                        <tr>
+                            <td><b>to부정사구</b></td>
+                            <td><span class="ex-eng">The objective is <b>to analyze</b> the data, <b>to interpret</b> the results, and <b>to propose</b> a new model.</span></td>
+                            <td><span class="ex-eng">...and <b>proposing</b> a new model.</span></td>
+                        </tr>
+                        <tr>
+                            <td><b>동명사구</b></td>
+                            <td><span class="ex-eng">Key responsibilities include <b>monitoring</b> experiments and <b>writing</b> reports.</span></td>
+                            <td><span class="ex-eng">...and <b>to write</b> reports.</span></td>
+                        </tr>
+                        <tr>
+                            <td><b>절 (Clause)</b></td>
+                            <td><span class="ex-eng">The professor argued <b>that the theory was outdated</b> and <b>that a new paradigm was needed</b>.</span></td>
+                            <td><span class="ex-eng">...and <b>the need for</b> a new paradigm.</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 9: 특수구문</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title eng-text first-in-page">Focus 5: 생략 구문 (Ellipsis): 간결성을 위한 정보의 압축</div>
+                <p class="content-paragraph">
+                    생략은 문맥상 명확하게 추론할 수 있는 정보를 반복하지 않음으로써 문장을 간결하고 속도감 있게 만드는 기법입니다.
+                </p>
+                <div class="sub-header">1. 접속사절에서의 생략</div>
+                <p class="content-paragraph" style="font-size:10.5pt;">
+                    시간, 조건, 양보의 부사절에서 <b>'주절의 주어와 동일한 주어 + be동사'</b>가 함께 생략될 수 있습니다.
+                </p>
+                <ul class="example-list">
+                    <li><span class="ex-eng">While <b>(he was)</b> conducting the research, he encountered an unexpected variable.</span><span class="ex-kor">연구를 수행하는 동안, 그는 예상치 못한 변수를 마주쳤다.</span></li>
+                    <li><span class="ex-eng">When <b>(you are)</b> in doubt, consult the manual.</span><span class="ex-kor">의심이 들 때는, 설명서를 참조하라.</span></li>
+                    <li><span class="ex-eng">Though <b>(it is)</b> small, the device is incredibly powerful.</span><span class="ex-kor">비록 작지만, 그 장치는 놀라울 정도로 강력하다.</span></li>
+                </ul>
+                <div class="sub-header">2. 반복 어구의 생략</div>
+                <p class="content-paragraph" style="font-size:10.5pt;">
+                    등위접속사나 비교 구문에서 앞서 나온 동사구나 명사구가 반복될 때, 이를 생략하거나 대동사(<code>do</code>), 대부정사(<code>to</code>) 등으로 대체합니다.
+                </p>
+                <ul class="example-list">
+                    <li><span class="ex-eng">Some researchers focused on the causes of the phenomenon; others, <b>(focused) on</b> its effects.</span><span class="ex-kor">어떤 연구자들은 그 현상의 원인에 집중했고, 다른 이들은 그 결과에 집중했다.</span></li>
+                    <li><span class="ex-eng">He understands the theory better than she <b>does</b>.</span><span class="ex-kor">그는 그녀가 이해하는 것보다 그 이론을 더 잘 이해한다. (does = understands the theory)</span></li>
+                    <li><span class="ex-eng">You can join the project if you want <b>to</b>.</span><span class="ex-kor">네가 원한다면 그 프로젝트에 참여할 수 있다. (to = to join the project)</span></li>
+                </ul>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 9: 특수구문</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title eng-text first-in-page">Focus 6: 동격 구문 (Apposition): 정보의 재진술과 부연</div>
+                <p class="content-paragraph">
+                    동격은 특정 명사(구)의 의미를 명확히 하기 위해 그 뒤에 다른 명사(구)나 절을 두어 부연 설명하는 구조입니다. 복잡한 학술 지문에서 핵심 개념을 정의하거나 설명할 때 빈번하게 사용됩니다.
+                </p>
+                <div class="sub-header">1. 동격 콤마 (,)</div>
+                <p class="content-paragraph" style="font-size:10.5pt;">
+                    가장 일반적인 형태로, 명사(구) 뒤에 콤마를 찍고 동격의 명사(구)를 위치시킵니다.
+                </p>
+                <ul class="example-list">
+                    <li><span class="ex-eng">Dr. Alan Turing, <b>a pioneer of modern computing</b>, made significant contributions to code-breaking.</span><span class="ex-kor">현대 컴퓨팅의 선구자인 앨런 튜링 박사는 암호 해독에 중대한 공헌을 했다.</span></li>
+                </ul>
+                <div class="sub-header">2. 동격 접속사 `that`</div>
+                <p class="content-paragraph" style="font-size:10.5pt;">
+                    <code>fact</code>, <code>idea</code>, <code>belief</code>, <code>evidence</code>, <code>news</code>, <code>possibility</code>, <code>theory</code> 등 추상명사의 구체적인 내용을 설명하기 위해 <b>'that + 완전한 문장'</b> 형태의 절이 뒤따릅니다. 이때의 `that`은 관계대명사가 아닌 접속사입니다.
+                </p>
+                <ul class="example-list">
+                    <li><span class="ex-eng">The <b>evidence that the universe is expanding</b> is now widely accepted.</span><span class="ex-kor">우주가 팽창하고 있다는 증거는 이제 널리 받아들여진다.</span></li>
+                    <li><span class="ex-eng">He rejected the <b>premise that all human behavior is economically motivated</b>.</span><span class="ex-kor">그는 모든 인간의 행동이 경제적으로 동기 부여된다는 전제를 거부했다.</span></li>
+                </ul>
+                <div class="tip-box avoid-break">
+                    <div class="tip-box-title eng-text">Vera's Flavor Tip | 동격 `that` vs. 관계대명사 `that`</div>
+                    <p>이 둘을 구별하는 것은 편입 문법의 핵심입니다. <br>
+                    - <b>동격 `that` + 완전한 문장:</b> `that`절이 앞의 추상명사의 '내용' 자체를 설명합니다. (`the fact = the universe is expanding`)<br>
+                    - <b>관계대명사 `that` + 불완전한 문장:</b> `that`절이 앞의 명사(선행사)를 수식하며, `that` 자체가 절 안에서 주어나 목적어 역할을 합니다.</p>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+        
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 9: 특수구문</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title first-in-page eng-text">자주 하는 질문과 답변 (Advanced Q&A)</div>
+                
+                <div class="tip-box">
+                    <p><b>Q1: `Only`가 문두에 나올 때 항상 도치되나요? `Only you can solve it.`은 왜 도치되지 않나요?</b><br>
+                    A: 매우 중요한 예외 규칙입니다. `Only`가 문두에 나오더라도, 그것이 <b>주어를 직접 수식</b>할 경우에는 도치가 발생하지 않습니다. 도치는 `Only`가 <b>부사(구/절)</b>를 수식하여 문장의 다른 부분에 영향을 줄 때만 발생합니다.<br>
+                    - <b>주어 수식 (도치 X):</b> <span class="ex-eng"><b>Only a certified expert</b> can handle this equipment. ('오직 공인된 전문가만이'라는 주어 덩어리)</span><br>
+                    - <b>부사구 수식 (도치 O):</b> <span class="ex-eng"><b>Only in a crisis</b> do we discover our true potential. ('오직 위기 속에서만'이라는 부사구)</span></p>
+                </div>
+                <div class="tip-box">
+                    <p><b>Q2: 가정법 `If` 생략 도치는 어떤 뉘앙스 차이가 있나요?</b><br>
+                    A: `If`를 생략하고 `Were`, `Had`, `Should`를 문두로 보내는 도치 구문은 일반적인 `If`절에 비해 훨씬 <b>더 격식적(formal)이고 문어적인(literary)</b> 뉘앙스를 가집니다. 학술 논문, 공식적인 연설, 문학 작품 등에서 자주 발견됩니다. 의미상의 큰 차이는 없지만, 문체의 격을 높이는 역할을 합니다.<br>
+                    - <span class="ex-eng"><em><b>Were this hypothesis correct</b>, the implications would be profound. (If this hypothesis were correct...)</em></span></p>
+                </div>
+                <div class="tip-box">
+                    <p><b>Q3: `not only A but also B` 구문에서 `also`는 항상 생략 가능한가요? `B` 뒤에 도치가 일어나는 경우는 언제인가요?</b><br>
+                    A: `also`는 구어체나 비격식체에서 자주 생략됩니다. 하지만 편입 시험과 같은 격식적인 문법에서는 `also`를 써주는 것이 원칙입니다. 한편, `Not only`가 <b>문장(절)</b>을 이끌며 문두로 나갈 때, <b>A가 포함된 첫 번째 절에서만 도치가 발생</b>하고, `but also` 뒤의 B절은 정상 어순을 따릅니다.<br>
+                    - <span class="ex-eng"><em><b>Not only did he</b> analyze the data, but he <b>also proposed</b> a new interpretation.</em></span><br>
+                    `but also` 뒤의 B절에서 도치가 일어나는 경우는 거의 없다고 보셔도 무방합니다.</p>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+    </body>
+    </html>
+    <!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vera's Flavor 편입영어 문법 - Bridge 편 part 9 연습문제</title>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+        <style>
+            /* --- 기본 페이지 및 폰트 설정 --- */
+            @page {
+                size: A4;
+                margin: 0;
+            }
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: 'Noto Sans KR', sans-serif;
+                background: #e8e9eb; /* 페이지 외부 배경색 */
+                counter-reset: page; /* 자동 페이지 번호 카운터 초기화 */
+            }
+            .eng-text { font-family: 'Inter', sans-serif; }
+            .serif-text { font-family: 'Playfair Display', serif; }
+            .bold-text { font-weight: 700; }
+    
+            /* --- 색상 변수 (표지 이미지 기반) --- */
+            :root {
+                --color-sea-blue: #6C96C6;      /* 바다색 */
+                --color-deep-blue: #345C85;     /* 깊은 바다색 */
+                --color-sandy-beige: #F2C994;   /* 모래색 */
+                --color-warm-orange: #E9A266;   /* 고양이색 */
+                --color-text-dark: #3D4852;     /* 기본 텍스트 색상 */
+                --color-text-light: #718096;    /* 보조 텍스트 색상 */
+                --color-bg-light: #FDFBF6;      /* 밝은 배경색 */
+                --color-border: #EAEAEA;        /* 테두리 색상 */
+            }
+    
+            /* --- A4 페이지 레이아웃 --- */
+            .page {
+                width: 210mm;
+                height: 297mm;
+                margin: 10mm auto;
+                padding: 15mm 18mm;
+                background: white;
+                box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+                page-break-after: always;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+            }
+            .page:last-child {
+                page-break-after: avoid;
+            }
+            .page-content {
+                flex-grow: 1;
+                overflow: hidden;
+                font-size: 11pt;
+                line-height: 1.8;
+                color: var(--color-text-dark);
+            }
+    
+            /* --- 페이지 헤더 & 푸터 --- */
+            .page-header, .page-footer {
+                width: 100%;
+                flex-shrink: 0;
+                font-size: 9pt;
+                color: var(--color-text-light);
+                font-family: 'Inter', sans-serif;
+            }
+            .page-header {
+                border-bottom: 1px solid var(--color-border);
+                padding-bottom: 8px;
+                margin-bottom: 12px;
+                display: flex;
+                justify-content: space-between;
+                color: var(--color-deep-blue);
+                font-weight: 500;
+            }
+            .page-footer {
+                border-top: 1px solid var(--color-border);
+                padding-top: 8px;
+                margin-top: 12px;
+                text-align: center;
+            }
+            
+            /* 자동 페이지 번호 생성 */
+            .page-footer::after {
+                counter-increment: page;
+                content: counter(page);
+            }
+    
+            /* =================================================================== */
+            /* 연습 문제 스타일                                                    */
+            /* =================================================================== */
+            .practice-section-header { 
+                font-family: 'Inter', sans-serif; 
+                font-size: 16pt; 
+                font-weight: 700; 
+                color: #fff; 
+                background: var(--color-deep-blue); 
+                padding: 12px 20px; 
+                margin: 20px 0 20px 0; 
+                border-radius: 8px; 
+            }
+            .problem-block { 
+                margin-bottom: 20px; 
+                padding: 15px; 
+                border: 1px solid var(--color-border); 
+                border-left: 4px solid var(--color-sea-blue); 
+                border-radius: 0 5px 5px 0; 
+                background: #fff;
+            }
+            .problem-meta {
+                display: flex;
+                align-items: center;
+                margin-bottom: 12px;
+            }
+            .problem-number { 
+                font-family: 'Inter', sans-serif; 
+                font-weight: 700; 
+                color: white;
+                background-color: var(--color-sea-blue);
+                border-radius: 50%;
+                width: 32px;
+                height: 32px;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 10px;
+                font-size: 11pt;
+                flex-shrink: 0;
+            }
+            .problem-text { 
+                font-size: 11pt; 
+                margin-bottom: 12px; 
+                line-height: 1.8;
+                text-align: justify;
+            }
+            .problem-text u {
+                text-decoration: underline;
+                text-decoration-color: var(--color-warm-orange);
+                text-decoration-thickness: 1.5px;
+                font-weight: 500;
+            }
+            .problem-question {
+                margin-top: 15px;
+                padding: 12px 15px;
+                background-color: var(--color-bg-light);
+                border: 1px solid var(--color-border);
+                border-left: 4px solid var(--color-warm-orange);
+                border-radius: 0 5px 5px 0;
+                font-size: 10.5pt;
+                font-style: italic;
+                color: var(--color-deep-blue);
+                font-weight: 500;
+            }
+            .problem-choices { 
+                list-style: none; 
+                padding-left: 0; 
+                font-size: 10.5pt; 
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 5px 20px;
+            }
+            .problem-choices li { 
+                margin-bottom: 4px; 
+                padding: 6px 10px; 
+                border-radius: 4px;
+                display: flex;
+                align-items: baseline;
+                text-align: justify;
+            }
+            .problem-choices li:hover {
+                background-color: var(--color-bg-light);
+            }
+            .choice-number {
+                font-family: 'Inter', sans-serif;
+                font-weight: 600;
+                color: var(--color-deep-blue);
+                margin-right: 8px;
+            }
+    
+            /* =================================================================== */
+            /* 정답 및 해설 스타일                                                 */
+            /* =================================================================== */
+            .answer-key-section .section-title {
+                color: var(--color-warm-orange);
+                border-bottom-color: var(--color-sea-blue);
+            }
+            .quick-answer-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(65px, 1fr));
+                gap: 8px;
+                margin: 20px 0;
+                text-align: center;
+                font-size: 10pt;
+                font-family: 'Inter', sans-serif;
+            }
+            .quick-answer-item {
+                padding: 8px;
+                border: 1px solid var(--color-border);
+                border-radius: 4px;
+                background-color: var(--color-bg-light);
+            }
+            .quick-answer-item .num {
+                font-weight: 700;
+                color: var(--color-text-light);
+            }
+            .quick-answer-item .ans {
+                font-weight: 700;
+                color: var(--color-deep-blue);
+            }
+            .explanation-block {
+                margin-bottom: 15px;
+                padding-top: 15px;
+                border-top: 1px solid var(--color-border);
+            }
+            .explanation-block:first-of-type {
+                border-top: none;
+                padding-top: 0;
+            }
+            .explanation-header {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+            .explanation-header .problem-number {
+                background-color: var(--color-warm-orange);
+            }
+            .explanation-header .correct-answer {
+                font-family: 'Inter', sans-serif;
+                font-size: 12pt;
+                font-weight: 700;
+                color: var(--color-deep-blue);
+            }
+            .explanation-content {
+                font-size: 10.5pt;
+                padding: 10px 15px;
+                background-color: var(--color-bg-light);
+                border-radius: 5px;
+                text-align: justify;
+    
+            }
+            .explanation-content b {
+                color: var(--color-sea-blue);
+            }
+            
+            /* =================================================================== */
+            /* 유틸리티 및 인쇄 최적화                                             */
+            /* =================================================================== */
+            .avoid-break { break-inside: avoid; page-break-inside: avoid; }
+            
+            @media print { 
+                body { background: #fff; } 
+                .page { margin: 0; box-shadow: none; } 
+            }
+            p, li, div { orphans: 3; widows: 3; }
+            .practice-section-header, .section-title, .part-header { break-after: avoid-page; }
+            .problem-block, .tip-box, .grammar-table { break-inside: avoid; }
+    
+        </style>
+    </head>
+    <body>
+            <!-- =================================================================== -->
+            <!-- 연습문제 페이지 시작 (401-450)                                     -->
+            <!-- =================================================================== -->
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 9 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="practice-section-header first-in-page eng-text">Part 9 - Practice Problems</div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">401</span></div>
+                        <div class="problem-text">①<u>Never before</u> ②<u>had</u> the scientific community ③<u>witnessed</u> such ④<u>a groundbreaking</u> ⑤<u>discoveries</u>.</div>
+                        <div class="problem-question">다음 문장에서 밑줄 친 부분 중 어법상 틀린 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> Never before</li>
+                            <li><span class="choice-number">②</span> had</li>
+                            <li><span class="choice-number">③</span> witnessed</li>
+                            <li><span class="choice-number">④</span> a groundbreaking</li>
+                            <li><span class="choice-number">⑤</span> discoveries</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">402</span></div>
+                        <div class="problem-text">Only after conducting extensive research _______ publish their findings.</div>
+                        <div class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> the scientists did</li>
+                            <li><span class="choice-number">②</span> did the scientists</li>
+                            <li><span class="choice-number">③</span> the scientists could</li>
+                            <li><span class="choice-number">④</span> could the scientists</li>
+                            <li><span class="choice-number">⑤</span> the scientists were able to</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 9 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">403</span></div>
+                        <div class="problem-question">다음 중 강조 구문이 올바른 것은?</div>
+                        <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                            <li><span class="choice-number">①</span> It was studying hard that led to his success.</li>
+                            <li><span class="choice-number">②</span> It is during the exam that students feel nervous.</li>
+                            <li><span class="choice-number">③</span> It was the professor that explained the theory clearly.</li>
+                            <li><span class="choice-number">④</span> It is in the laboratory that experiments are conducted.</li>
+                            <li><span class="choice-number">⑤</span> All answers are correct.</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">404</span></div>
+                        <div class="problem-text">It was <u>him</u> ①<u>who</u> ②<u>discovered</u> the ③<u>important</u> ④<u>evidence</u> for the ⑤<u>theory</u>.</div>
+                        <div class="problem-question">다음 문장에서 어법상 틀린 부분을 찾은 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> who</li>
+                            <li><span class="choice-number">②</span> discovered</li>
+                            <li><span class="choice-number">③</span> important</li>
+                            <li><span class="choice-number">④</span> evidence</li>
+                            <li><span class="choice-number">⑤</span> It was him</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 9 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">405</span></div>
+                        <div class="problem-text">So profound _______ the impact of his research that it revolutionized the entire field.</div>
+                        <div class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> it was</li>
+                            <li><span class="choice-number">②</span> was it</li>
+                            <li><span class="choice-number">③</span> that it was</li>
+                            <li><span class="choice-number">④</span> was</li>
+                            <li><span class="choice-number">⑤</span> it has been</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">406</span></div>
+                        <div class="problem-question">다음 중 병렬 구조가 틀린 문장은?</div>
+                        <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                            <li><span class="choice-number">①</span> The research requires analyzing data and writing reports.</li>
+                            <li><span class="choice-number">②</span> She is known for her intelligence and being creative.</li>
+                            <li><span class="choice-number">③</span> The project involves both theoretical study and practical application.</li>
+                            <li><span class="choice-number">④</span> The students must read the material, understand the concepts, and apply them.</li>
+                            <li><span class="choice-number">⑤</span> The professor emphasized the importance of accuracy and precision.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 9 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">407</span></div>
+                        <div class="problem-text">The control group showed no improvement, and _______ the experimental group.</div>
+                        <div class="problem-question">다음 문장의 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> so did</li>
+                            <li><span class="choice-number">②</span> neither did</li>
+                            <li><span class="choice-number">③</span> nor did</li>
+                            <li><span class="choice-number">④</span> either did</li>
+                            <li><span class="choice-number">⑤</span> also did</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">408</span></div>
+                        <div class="problem-question">다음 중 도치가 불필요한 문장은?</div>
+                        <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                            <li><span class="choice-number">①</span> Never have I seen such a beautiful sunset.</li>
+                            <li><span class="choice-number">②</span> Only you can solve this difficult problem.</li>
+                            <li><span class="choice-number">③</span> Seldom does he make mistakes in his work.</li>
+                            <li><span class="choice-number">④</span> Not only did she study hard, but she also helped others.</li>
+                            <li><span class="choice-number">⑤</span> Little did we know about the consequences.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 9 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">409</span></div>
+                        <div class="problem-text">While _______ the experiment, the researchers discovered an unexpected result.</div>
+                        <div class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> they conducted</li>
+                            <li><span class="choice-number">②</span> conducting</li>
+                            <li><span class="choice-number">③</span> they were conducting</li>
+                            <li><span class="choice-number">④</span> conducted</li>
+                            <li><span class="choice-number">⑤</span> being conducted</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">410</span></div>
+                        <div class="problem-text">The evidence ①<u>that</u> ②<u>the theory</u> ③<u>was correct</u> ④<u>were</u> ⑤<u>overwhelming</u>.</div>
+                        <div class="problem-question">다음 문장에서 어법상 틀린 부분을 찾은 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> that</li>
+                            <li><span class="choice-number">②</span> the theory</li>
+                            <li><span class="choice-number">③</span> was correct</li>
+                            <li><span class="choice-number">④</span> were</li>
+                            <li><span class="choice-number">⑤</span> overwhelming</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 9 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">411</span></div>
+                        <div class="problem-question">다음 중 동격 that과 관계대명사 that을 올바르게 구분한 것은?</div>
+                        <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                            <li><span class="choice-number">①</span> The fact that he discovered is important. (동격)</li>
+                            <li><span class="choice-number">②</span> The theory that explains the phenomenon is complex. (관계대명사)</li>
+                            <li><span class="choice-number">③</span> The news that the experiment succeeded spread quickly. (동격)</li>
+                            <li><span class="choice-number">④</span> The book that contains the information is missing. (관계대명사)</li>
+                            <li><span class="choice-number">⑤</span> All distinctions are correct.</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">412</span></div>
+                        <div class="problem-text">Not only _______ the data thoroughly, but they also proposed a new methodology.</div>
+                        <div class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> did they analyze</li>
+                            <li><span class="choice-number">②</span> they analyzed</li>
+                            <li><span class="choice-number">③</span> they did analyze</li>
+                            <li><span class="choice-number">④</span> analyzed they</li>
+                            <li><span class="choice-number">⑤</span> they have analyzed</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 9 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">413</span></div>
+                        <div class="problem-text">Among the ancient manuscripts <u>lies the secrets</u> of forgotten civilizations.</div>
+                        <div class="problem-question">다음 문장에서 밑줄 친 부분을 올바르게 고친 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> lie the secrets</li>
+                            <li><span class="choice-number">②</span> lies the secret</li>
+                            <li><span class="choice-number">③</span> lying the secrets</li>
+                            <li><span class="choice-number">④</span> are lying the secrets</li>
+                            <li><span class="choice-number">⑤</span> 수정이 필요 없음</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">414</span></div>
+                        <div class="problem-question">다음 중 강조 구문과 가주어-진주어 구문을 올바르게 구분한 것은?</div>
+                        <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                            <li><span class="choice-number">①</span> It was during the meeting that the decision was made. (강조)</li>
+                            <li><span class="choice-number">②</span> It is true that science requires patience. (가주어-진주어)</li>
+                            <li><span class="choice-number">③</span> It was the professor who inspired the students. (강조)</li>
+                            <li><span class="choice-number">④</span> It is important to verify the results. (가주어-진주어)</li>
+                            <li><span class="choice-number">⑤</span> All distinctions are correct.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 9 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">415</span></div>
+                        <div class="problem-text">The research methodology was innovative, and so _______ the conclusions.</div>
+                        <div class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> was</li>
+                            <li><span class="choice-number">②</span> were</li>
+                            <li><span class="choice-number">③</span> did</li>
+                            <li><span class="choice-number">④</span> had</li>
+                            <li><span class="choice-number">⑤</span> have</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">416</span></div>
+                        <div class="problem-text">Though _______ by criticism, the scientist continued his research.</div>
+                        <div class="problem-question">다음 문장의 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> he was discouraged</li>
+                            <li><span class="choice-number">②</span> discouraging</li>
+                            <li><span class="choice-number">③</span> discouraged</li>
+                            <li><span class="choice-number">④</span> being discouraged</li>
+                            <li><span class="choice-number">⑤</span> he discouraged</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 9 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">417</span></div>
+                        <div class="problem-question">다음 중 어법상 올바른 문장은?</div>
+                        <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                            <li><span class="choice-number">①</span> The theory that the professor explained it was complex.</li>
+                            <li><span class="choice-number">②</span> The belief that hard work pays off motivates students.</li>
+                            <li><span class="choice-number">③</span> The hypothesis that we tested yesterday proved correct.</li>
+                            <li><span class="choice-number">④</span> The assumption that underlies this approach is questionable.</li>
+                            <li><span class="choice-number">⑤</span> All answers except ① are correct.</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">418</span></div>
+                        <div class="problem-text">The professor did _______ emphasize the importance of accurate data collection.</div>
+                        <div class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> strongly</li>
+                            <li><span class="choice-number">②</span> indeed</li>
+                            <li><span class="choice-number">③</span> really</li>
+                            <li><span class="choice-number">④</span> certainly</li>
+                            <li><span class="choice-number">⑤</span> 빈칸 없음</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 9 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">419</span></div>
+                        <div class="problem-text">①<u>Hardly</u> ②<u>had</u> the experiment ③<u>begun</u> ④<u>than</u> unexpected ⑤<u>results</u> appeared.</div>
+                        <div class="problem-question">다음 문장에서 어법상 틀린 부분을 찾은 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> Hardly</li>
+                            <li><span class="choice-number">②</span> had</li>
+                            <li><span class="choice-number">③</span> begun</li>
+                            <li><span class="choice-number">④</span> than</li>
+                            <li><span class="choice-number">⑤</span> results</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">420</span></div>
+                        <div class="problem-question">다음 중 병렬 구조가 올바른 것은?</div>
+                        <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                            <li><span class="choice-number">①</span> The study aims to identify problems and solving them effectively.</li>
+                            <li><span class="choice-number">②</span> Research requires not only patience but also being persistent.</li>
+                            <li><span class="choice-number">③</span> The scientist both analyzed the data and interpreted the results.</li>
+                            <li><span class="choice-number">④</span> Students should read carefully, think critically, and to write clearly.</li>
+                            <li><span class="choice-number">⑤</span> The project involves collecting data, analyzing results, and drawing conclusions.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 9 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">421</span></div>
+                        <div class="problem-text">Dr. Smith, _______, will deliver the keynote address.</div>
+                        <div class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> a renowned physicist</li>
+                            <li><span class="choice-number">②</span> who is a renowned physicist</li>
+                            <li><span class="choice-number">③</span> being a renowned physicist</li>
+                            <li><span class="choice-number">④</span> he is a renowned physicist</li>
+                            <li><span class="choice-number">⑤</span> that is a renowned physicist</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">422</span></div>
+                        <div class="problem-text">Were this hypothesis _______, the implications would be significant.</div>
+                        <div class="problem-question">다음 문장의 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> correct</li>
+                            <li><span class="choice-number">②</span> to be correct</li>
+                            <li><span class="choice-number">③</span> correcting</li>
+                            <li><span class="choice-number">④</span> corrected</li>
+                            <li><span class="choice-number">⑤</span> correctly</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 9 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">423</span></div>
+                        <div class="problem-question">다음 중 완전 도치가 올바른 것은?</div>
+                        <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                            <li><span class="choice-number">①</span> In the garden grows beautiful flowers.</li>
+                            <li><span class="choice-number">②</span> Down the hill it rolled quickly.</li>
+                            <li><span class="choice-number">③</span> Here comes the professor with his students.</li>
+                            <li><span class="choice-number">④</span> There sits the famous scientist at his desk.</li>
+                            <li><span class="choice-number">⑤</span> All answers are correct.</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">424</span></div>
+                        <div class="problem-text">①<u>Little</u> ②<u>did</u> we ③<u>realized</u> ④<u>the significance</u> of ⑤<u>the discovery</u>.</div>
+                        <div class="problem-question">다음 문장에서 어법상 틀린 부분을 찾은 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> Little</li>
+                            <li><span class="choice-number">②</span> did</li>
+                            <li><span class="choice-number">③</span> realized</li>
+                            <li><span class="choice-number">④</span> the significance</li>
+                            <li><span class="choice-number">⑤</span> the discovery</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 9 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">425</span></div>
+                        <div class="problem-text">Some students prefer theoretical study; _______, practical application.</div>
+                        <div class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> others prefer</li>
+                            <li><span class="choice-number">②</span> others</li>
+                            <li><span class="choice-number">③</span> the others prefer</li>
+                            <li><span class="choice-number">④</span> another prefers</li>
+                            <li><span class="choice-number">⑤</span> the other prefer</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">426</span></div>
+                        <div class="problem-question">다음 중 동사 강조가 올바른 것은?</div>
+                        <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                            <li><span class="choice-number">①</span> She does studies very hard every day.</li>
+                            <li><span class="choice-number">②</span> He did completed the project on time.</li>
+                            <li><span class="choice-number">③</span> We do appreciate your help.</li>
+                            <li><span class="choice-number">④</span> They does work efficiently.</li>
+                            <li><span class="choice-number">⑤</span> I did went to the conference yesterday.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 9 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">427</span></div>
+                        <div class="problem-text">The premise _______ all scientific inquiry should be objective is widely accepted.</div>
+                        <div class="problem-question">다음 문장의 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> which</li>
+                            <li><span class="choice-number">②</span> that</li>
+                            <li><span class="choice-number">③</span> what</li>
+                            <li><span class="choice-number">④</span> where</li>
+                            <li><span class="choice-number">⑤</span> how</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">428</span></div>
+                        <div class="problem-question">다음 중 생략 구문이 틀린 것은?</div>
+                        <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                            <li><span class="choice-number">①</span> When in doubt, consult the manual.</li>
+                            <li><span class="choice-number">②</span> She understands the theory better than he does.</li>
+                            <li><span class="choice-number">③</span> You can participate if you want to.</li>
+                            <li><span class="choice-number">④</span> While studying abroad, he learned many languages.</li>
+                            <li><span class="choice-number">⑤</span> Although was difficult, the task was completed.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 9 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">429</span></div>
+                        <div class="problem-text">Not until the experiment was completed _______ the significance of the results.</div>
+                        <div class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> did we understand</li>
+                            <li><span class="choice-number">②</span> we understood</li>
+                            <li><span class="choice-number">③</span> we did understand</li>
+                            <li><span class="choice-number">④</span> understood we</li>
+                            <li><span class="choice-number">⑤</span> we have understood</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">430</span></div>
+                        <div class="problem-text">The research team ①<u>both</u> ②<u>analyzed</u> the data ③<u>and</u> ④<u>drew</u> ⑤<u>conclusion</u> from it.</div>
+                        <div class="problem-question">다음 문장에서 어법상 틀린 부분을 찾은 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> both</li>
+                            <li><span class="choice-number">②</span> analyzed</li>
+                            <li><span class="choice-number">③</span> and</li>
+                            <li><span class="choice-number">④</span> drew</li>
+                            <li><span class="choice-number">⑤</span> conclusion</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 9 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">431</span></div>
+                        <div class="problem-question">다음 중 'It is/was ~ that' 강조 구문에서 강조할 수 없는 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> 주어 (subject)</li>
+                            <li><span class="choice-number">②</span> 목적어 (object)</li>
+                            <li><span class="choice-number">③</span> 부사구 (adverbial phrase)</li>
+                            <li><span class="choice-number">④</span> 동사 (verb)</li>
+                            <li><span class="choice-number">⑤</span> 보어 (complement)</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">432</span></div>
+                        <div class="problem-text">Had the researchers _______ more carefully, they would have avoided the error.</div>
+                        <div class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> planned</li>
+                            <li><span class="choice-number">②</span> plan</li>
+                            <li><span class="choice-number">③</span> planning</li>
+                            <li><span class="choice-number">④</span> to plan</li>
+                            <li><span class="choice-number">⑤</span> been planning</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 9 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">433</span></div>
+                        <div class="problem-text">The idea _______ creativity can be taught is gaining acceptance.</div>
+                        <div class="problem-question">다음 문장의 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> which</li>
+                            <li><span class="choice-number">②</span> that</li>
+                            <li><span class="choice-number">③</span> what</li>
+                            <li><span class="choice-number">④</span> how</li>
+                            <li><span class="choice-number">⑤</span> when</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">434</span></div>
+                        <div class="problem-question">다음 중 어법상 올바른 문장은?</div>
+                        <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                            <li><span class="choice-number">①</span> On the table was laying several important documents.</li>
+                            <li><span class="choice-number">②</span> In the corner of the room stands an ancient statue.</li>
+                            <li><span class="choice-number">③</span> Under the bridge flows the river peacefully.</li>
+                            <li><span class="choice-number">④</span> Through the forest runs several hiking trails.</li>
+                            <li><span class="choice-number">⑤</span> Across the field were walking the students quietly.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 9 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">435</span></div>
+                        <div class="problem-text">①<u>Should</u> you ②<u>needed</u> any ③<u>assistance</u>, please ④<u>do not hesitate</u> to ⑤<u>contact us</u>.</div>
+                        <div class="problem-question">다음 문장에서 어법상 틀린 부분을 찾은 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> Should</li>
+                            <li><span class="choice-number">②</span> needed</li>
+                            <li><span class="choice-number">③</span> assistance</li>
+                            <li><span class="choice-number">④</span> do not hesitate</li>
+                            <li><span class="choice-number">⑤</span> contact us</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">436</span></div>
+                        <div class="problem-text">Einstein, _______, revolutionized our understanding of space and time.</div>
+                        <div class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> the brilliant physicist</li>
+                            <li><span class="choice-number">②</span> who was a brilliant physicist</li>
+                            <li><span class="choice-number">③</span> a brilliant physicist</li>
+                            <li><span class="choice-number">④</span> being a brilliant physicist</li>
+                            <li><span class="choice-number">⑤</span> that was a brilliant physicist</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 9 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">437</span></div>
+                        <div class="problem-question">다음 중 병렬 구조가 올바른 것은?</div>
+                        <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                            <li><span class="choice-number">①</span> The project requires both dedication and to work hard.</li>
+                            <li><span class="choice-number">②</span> She is not only intelligent but also works creatively.</li>
+                            <li><span class="choice-number">③</span> Students must read the material, understand it, and applying the concepts.</li>
+                            <li><span class="choice-number">④</span> The research involves analyzing data and interpretation of results.</li>
+                            <li><span class="choice-number">⑤</span> The study aims to identify problems and propose solutions.</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">438</span></div>
+                        <div class="problem-text">Rarely _______ such dedication to scientific research.</div>
+                        <div class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> have we seen</li>
+                            <li><span class="choice-number">②</span> we have seen</li>
+                            <li><span class="choice-number">③</span> we saw</li>
+                            <li><span class="choice-number">④</span> did we saw</li>
+                            <li><span class="choice-number">⑤</span> we did see</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 9 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">439</span></div>
+                        <div class="problem-question">다음 중 동격 that과 관계대명사 that의 구분이 틀린 것은?</div>
+                        <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                            <li><span class="choice-number">①</span> The theory that Einstein proposed was revolutionary. (관계대명사)</li>
+                            <li><span class="choice-number">②</span> The fact that water boils at 100°C is well-known. (동격)</li>
+                            <li><span class="choice-number">③</span> The book that contains the information is missing. (관계대명사)</li>
+                            <li><span class="choice-number">④</span> The belief that he was innocent proved wrong. (관계대명사)</li>
+                            <li><span class="choice-number">⑤</span> The news that the project succeeded was exciting. (동격)</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">440</span></div>
+                        <div class="problem-text">The experiment was successful, and so _______ the follow-up study.</div>
+                        <div class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> did</li>
+                            <li><span class="choice-number">②</span> was</li>
+                            <li><span class="choice-number">③</span> has</li>
+                            <li><span class="choice-number">④</span> had</li>
+                            <li><span class="choice-number">⑤</span> would</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 9 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">441</span></div>
+                        <div class="problem-text">①<u>Neither</u> ②<u>did</u> the control group ③<u>nor</u> the experimental group ④<u>showed</u> ⑤<u>significant</u> improvement.</div>
+                        <div class="problem-question">다음 문장에서 어법상 틀린 부분을 찾은 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> Neither</li>
+                            <li><span class="choice-number">②</span> did</li>
+                            <li><span class="choice-number">③</span> nor</li>
+                            <li><span class="choice-number">④</span> showed</li>
+                            <li><span class="choice-number">⑤</span> significant</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">442</span></div>
+                        <div class="problem-question">다음 중 생략이 올바른 것은?</div>
+                        <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                            <li><span class="choice-number">①</span> If necessary, the experiment will be repeated.</li>
+                            <li><span class="choice-number">②</span> Though difficult, the problem was solved eventually.</li>
+                            <li><span class="choice-number">③</span> When completed, the report will be submitted.</li>
+                            <li><span class="choice-number">④</span> While important, the detail was overlooked.</li>
+                            <li><span class="choice-number">⑤</span> All ellipses are correct.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 9 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">443</span></div>
+                        <div class="problem-text">Under no circumstances _______ the confidential data be disclosed.</div>
+                        <div class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> should</li>
+                            <li><span class="choice-number">②</span> would</li>
+                            <li><span class="choice-number">③</span> could</li>
+                            <li><span class="choice-number">④</span> might</li>
+                            <li><span class="choice-number">⑤</span> will</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">444</span></div>
+                        <div class="problem-text">The hypothesis _______ life exists on other planets remains unproven.</div>
+                        <div class="problem-question">다음 문장의 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> which</li>
+                            <li><span class="choice-number">②</span> that</li>
+                            <li><span class="choice-number">③</span> what</li>
+                            <li><span class="choice-number">④</span> whether</li>
+                            <li><span class="choice-number">⑤</span> how</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 9 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">445</span></div>
+                        <div class="problem-question">다음 중 도치 구문이 틀린 것은?</div>
+                        <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                            <li><span class="choice-number">①</span> Away flew the bird into the blue sky.</li>
+                            <li><span class="choice-number">②</span> Here come the students from the laboratory.</li>
+                            <li><span class="choice-number">③</span> There goes the bell for the next class.</li>
+                            <li><span class="choice-number">④</span> Up climbed the researchers to the mountain peak.</li>
+                            <li><span class="choice-number">⑤</span> Out rushed the scientists from the building.</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">446</span></div>
+                        <div class="problem-text">The researchers did _______ that their methodology was sound.</div>
+                        <div class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> prove</li>
+                            <li><span class="choice-number">②</span> proved</li>
+                            <li><span class="choice-number">③</span> proving</li>
+                            <li><span class="choice-number">④</span> to prove</li>
+                            <li><span class="choice-number">⑤</span> proof</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 9 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">447</span></div>
+                        <div class="problem-text">It was ①<u>not until</u> ②<u>the final experiment</u> ③<u>that</u> the researchers ④<u>realized</u> the ⑤<u>significance</u>.</div>
+                        <div class="problem-question">다음 문장에서 어법상 틀린 부분을 찾은 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> not until</li>
+                            <li><span class="choice-number">②</span> the final experiment</li>
+                            <li><span class="choice-number">③</span> that</li>
+                            <li><span class="choice-number">④</span> realized</li>
+                            <li><span class="choice-number">⑤</span> 어법상 틀린 부분이 없음</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">448</span></div>
+                        <div class="problem-question">다음 중 병렬 구조에서 상관접속사가 올바르게 사용된 것은?</div>
+                        <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                            <li><span class="choice-number">①</span> Either the hypothesis is correct, or it needs modification.</li>
+                            <li><span class="choice-number">②</span> Both the data analysis and to interpret results are important.</li>
+                            <li><span class="choice-number">③</span> Neither did the theory explain the phenomenon nor predict outcomes.</li>
+                            <li><span class="choice-number">④</span> Not only the students but also teacher were impressed.</li>
+                            <li><span class="choice-number">⑤</span> Whether studying theory or practical application, both are necessary.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 9 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">449</span></div>
+                        <div class="problem-text">The conclusion _______ more research is needed was unanimously accepted.</div>
+                        <div class="problem-question">다음 문장의 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> which</li>
+                            <li><span class="choice-number">②</span> that</li>
+                            <li><span class="choice-number">③</span> what</li>
+                            <li><span class="choice-number">④</span> how</li>
+                            <li><span class="choice-number">⑤</span> why</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">450</span></div>
+                        <div class="problem-question">다음 중 특수구문이 모두 올바른 문장은?</div>
+                        <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                            <li><span class="choice-number">①</span> Not only did the experiment succeed, but it also provided new insights.</li>
+                            <li><span class="choice-number">②</span> So important was the discovery that it changed scientific thinking.</li>
+                            <li><span class="choice-number">③</span> The scientist, a Nobel Prize winner, presented groundbreaking research.</li>
+                            <li><span class="choice-number">④</span> Were the conditions different, the results would have varied.</li>
+                            <li><span class="choice-number">⑤</span> All sentences are grammatically correct.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <!-- =================================================================== -->
+            <!-- 정답 및 해설 페이지 시작                                              -->
+            <!-- =================================================================== -->
+            <div class="page answer-key-section">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 9 정답 및 해설</span>
+                </div>
+                <div class="page-content">
+                    <div class="section-title first-in-page eng-text">Quick Answers</div>
+                    <div class="quick-answer-grid">
+                        <div class="quick-answer-item"><span class="num">401.</span> <span class="ans">⑤</span></div>
+                        <div class="quick-answer-item"><span class="num">402.</span> <span class="ans">②</span></div>
+                        <div class="quick-answer-item"><span class="num">403.</span> <span class="ans">⑤</span></div>
+                        <div class="quick-answer-item"><span class="num">404.</span> <span class="ans">⑤</span></div>
+                        <div class="quick-answer-item"><span class="num">405.</span> <span class="ans">④</span></div>
+                        <div class="quick-answer-item"><span class="num">406.</span> <span class="ans">②</span></div>
+                        <div class="quick-answer-item"><span class="num">407.</span> <span class="ans">②</span></div>
+                        <div class="quick-answer-item"><span class="num">408.</span> <span class="ans">②</span></div>
+                        <div class="quick-answer-item"><span class="num">409.</span> <span class="ans">②</span></div>
+                        <div class="quick-answer-item"><span class="num">410.</span> <span class="ans">④</span></div>
+                        <div class="quick-answer-item"><span class="num">411.</span> <span class="ans">⑤</span></div>
+                        <div class="quick-answer-item"><span class="num">412.</span> <span class="ans">①</span></div>
+                        <div class="quick-answer-item"><span class="num">413.</span> <span class="ans">①</span></div>
+                        <div class="quick-answer-item"><span class="num">414.</span> <span class="ans">⑤</span></div>
+                        <div class="quick-answer-item"><span class="num">415.</span> <span class="ans">②</span></div>
+                        <div class="quick-answer-item"><span class="num">416.</span> <span class="ans">③</span></div>
+                        <div class="quick-answer-item"><span class="num">417.</span> <span class="ans">⑤</span></div>
+                        <div class="quick-answer-item"><span class="num">418.</span> <span class="ans">⑤</span></div>
+                        <div class="quick-answer-item"><span class="num">419.</span> <span class="ans">④</span></div>
+                        <div class="quick-answer-item"><span class="num">420.</span> <span class="ans">⑤</span></div>
+                        <div class="quick-answer-item"><span class="num">421.</span> <span class="ans">①</span></div>
+                        <div class="quick-answer-item"><span class="num">422.</span> <span class="ans">①</span></div>
+                        <div class="quick-answer-item"><span class="num">423.</span> <span class="ans">③</span></div>
+                        <div class="quick-answer-item"><span class="num">424.</span> <span class="ans">③</span></div>
+                        <div class="quick-answer-item"><span class="num">425.</span> <span class="ans">②</span></div>
+                        <div class="quick-answer-item"><span class="num">426.</span> <span class="ans">③</span></div>
+                        <div class="quick-answer-item"><span class="num">427.</span> <span class="ans">②</span></div>
+                        <div class="quick-answer-item"><span class="num">428.</span> <span class="ans">⑤</span></div>
+                        <div class="quick-answer-item"><span class="num">429.</span> <span class="ans">①</span></div>
+                        <div class="quick-answer-item"><span class="num">430.</span> <span class="ans">⑤</span></div>
+                        <div class="quick-answer-item"><span class="num">431.</span> <span class="ans">④</span></div>
+                        <div class="quick-answer-item"><span class="num">432.</span> <span class="ans">①</span></div>
+                        <div class="quick-answer-item"><span class="num">433.</span> <span class="ans">②</span></div>
+                        <div class="quick-answer-item"><span class="num">434.</span> <span class="ans">②</span></div>
+                        <div class="quick-answer-item"><span class="num">435.</span> <span class="ans">②</span></div>
+                        <div class="quick-answer-item"><span class="num">436.</span> <span class="ans">③</span></div>
+                        <div class="quick-answer-item"><span class="num">437.</span> <span class="ans">⑤</span></div>
+                        <div class="quick-answer-item"><span class="num">438.</span> <span class="ans">①</span></div>
+                        <div class="quick-answer-item"><span class="num">439.</span> <span class="ans">④</span></div>
+                        <div class="quick-answer-item"><span class="num">440.</span> <span class="ans">②</span></div>
+                        <div class="quick-answer-item"><span class="num">441.</span> <span class="ans">②</span></div>
+                        <div class="quick-answer-item"><span class="num">442.</span> <span class="ans">⑤</span></div>
+                        <div class="quick-answer-item"><span class="num">443.</span> <span class="ans">①</span></div>
+                        <div class="quick-answer-item"><span class="num">444.</span> <span class="ans">②</span></div>
+                        <div class="quick-answer-item"><span class="num">445.</span> <span class="ans">②</span></div>
+                        <div class="quick-answer-item"><span class="num">446.</span> <span class="ans">①</span></div>
+                        <div class="quick-answer-item"><span class="num">447.</span> <span class="ans">⑤</span></div>
+                        <div class="quick-answer-item"><span class="num">448.</span> <span class="ans">①</span></div>
+                        <div class="quick-answer-item"><span class="num">449.</span> <span class="ans">②</span></div>
+                        <div class="quick-answer-item"><span class="num">450.</span> <span class="ans">⑤</span></div>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+            
+            <div class="page answer-key-section">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 9 정답 및 해설</span>
+                </div>
+                <div class="page-content">
+                    <div class="section-title first-in-page eng-text">Detailed Explanations</div>
+                    
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">401</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: 'such a' 다음에는 셀 수 있는 단수 명사가 와야 합니다. 따라서 복수형 'discoveries'를 단수형 <b>discovery</b>로 고쳐야 합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">402</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 'Only + 부사구(after...)'가 문장 맨 앞에 위치했으므로, 주절에서 주어와 동사가 의문문 어순으로 도치되어야 합니다. 따라서 <b>did the scientists</b>가 올바른 형태입니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">403</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: ① 동명사구(주어), ② 부사구, ③ 명사(주어), ④ 부사구 등 다양한 문장 성분이 'It is/was ~ that' 구문을 통해 올바르게 강조되었습니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">404</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: 'It is ~ that' 강조 구문에서 강조되는 대상이 주어일 경우, 주격 대명사를 사용해야 합니다. 따라서 목적격 'him'을 주격 <b>he</b>로 고쳐 'It was he'가 되어야 합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">405</span><span class="correct-answer">정답: ④</span></div><div class="explanation-content"><b>해설</b>: 'So + 형용사/부사'가 문두로 나오면 주어와 동사가 도치됩니다. 주어는 'the impact of his research'이므로, 그 뒤에 동사 <b>was</b>가 와야 합니다. 'So profound was the impact...' 구문이 됩니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">406</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 병렬 구조 위반입니다. 'her intelligence'(명사구)와 'being creative'(동명사구)가 등위접속사 'and'로 연결되어 형태가 다릅니다. 'her intelligence and creativity'(명사+명사)로 수정해야 합니다.</div></div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page answer-key-section">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 9 정답 및 해설</span>
+                </div>
+                <div class="page-content">
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">407</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 앞 문장이 부정문('no improvement')이므로, 이에 동의할 때는 <b>neither</b> 또는 <b>nor</b>를 사용합니다. 'neither + 조동사(did) + 주어'의 어순이 맞습니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">408</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 'Only'가 문두에 나오더라도, <b>주어(you)를 직접 수식</b>할 경우에는 도치가 발생하지 않습니다. 나머지 문장은 모두 부정어구가 문두에 위치하여 도치가 필요합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">409</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 부사절에서 주절의 주어(the researchers)와 동일한 주어 및 be동사가 생략될 수 있습니다. 'While (they were) conducting...'에서 'they were'가 생략된 형태입니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">410</span><span class="correct-answer">정답: ④</span></div><div class="explanation-content"><b>해설</b>: 이 문장의 주어는 단수인 'The evidence'입니다. 'that the theory was correct'는 주어를 설명하는 동격절입니다. 따라서 동사는 복수형 'were'가 아닌 단수형 <b>was</b>가 되어야 합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">411</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: 동격 that 뒤에는 완전한 문장이 오고, 관계대명사 that 뒤에는 불완전한 문장이 옵니다. 모든 보기의 구분이 정확합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">412</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: 부정어구 'Not only'가 문두에 위치했으므로, 첫 번째 절에서 주어와 동사가 도치되어야 합니다. 일반동사 'analyzed'이므로 <b>did they analyze</b>가 올바른 형태입니다.</div></div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page answer-key-section">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 9 정답 및 해설</span>
+                </div>
+                <div class="page-content">
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">413</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: 장소 부사구(Among...)가 문두에 와서 주어와 동사가 도치되었습니다. 주어는 복수인 'the secrets'이므로, 동사도 복수형인 <b>lie</b>가 되어야 합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">414</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: 'It is/was...that/who...'을 생략했을 때 문장이 성립하면 강조 구문, 성립하지 않으면 가주어-진주어 구문입니다. 모든 보기의 구분이 정확합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">415</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 앞 문장의 긍정 내용에 동의하는 'So + V + S' 구문입니다. 주어인 'the conclusions'가 복수이므로, be동사도 복수형인 <b>were</b>를 사용해야 합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">416</span><span class="correct-answer">정답: ③</span></div><div class="explanation-content"><b>해설</b>: 양보의 부사절에서 주절의 주어와 동일한 주어(the scientist)와 be동사(was)가 생략된 형태입니다. 따라서 'Though (he was) <b>discouraged</b>...'가 됩니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">417</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: ① 관계대명사절에서 선행사(The theory)를 받는 대명사 'it'을 중복해서 사용했으므로 틀렸습니다. ②, ③, ④는 각각 동격, 관계대명사, 관계대명사 구문이 올바르게 사용되었습니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">418</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: 'did + 동사원형(emphasize)'은 그 자체로 '정말로 강조했다'는 의미를 가지는 동사 강조 구문입니다. 여기에 다른 강조 부사를 추가하면 의미가 중복되어 어색해집니다.</div></div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page answer-key-section">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 9 정답 및 해설</span>
+                </div>
+                <div class="page-content">
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">419</span><span class="correct-answer">정답: ④</span></div><div class="explanation-content"><b>해설</b>: '~하자마자 ...했다'는 의미의 구문은 'Hardly/Scarcely... <b>when/before</b>...' 또는 'No sooner... <b>than</b>...'입니다. 'Hardly'와 'than'은 함께 쓸 수 없습니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">420</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: 동명사구 'collecting data', 'analyzing results', 'drawing conclusions'가 'and'로 올바르게 병렬 연결되었습니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">421</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: 'Dr. Smith'를 부연 설명하는 동격 표현입니다. 명사구인 'a renowned physicist'가 가장 간결하고 적절합니다. (문제 수정: 436번과 중복)</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">422</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: 가정법 과거에서 'If'가 생략되면 'Were + S + 보어/to R' 형태로 도치됩니다. 'If this hypothesis were correct'에서 'If'가 생략된 구문이므로 보어인 <b>correct</b>가 와야 합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">423</span><span class="correct-answer">정답: ③</span></div><div class="explanation-content"><b>해설</b>: 'Here/There + V + S' 구문에서 주어(the professor)와 동사(comes)의 수가 일치합니다. ①은 주어가 복수(flowers)이므로 'grow', ②는 주어가 대명사(it)이므로 도치되지 않아야 합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">424</span><span class="correct-answer">정답: ③</span></div><div class="explanation-content"><b>해설</b>: 부정어 도치 구문에서 조동사 'did'가 이미 과거 시제를 나타내므로, 뒤따르는 본동사는 원형인 <b>realize</b>가 되어야 합니다.</div></div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page answer-key-section">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 9 정답 및 해설</span>
+                </div>
+                <div class="page-content">
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">425</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 세미콜론(;) 뒤에서 앞 문장의 동사구 'prefer'가 생략된 형태입니다. 막연한 다수 중 '다른 사람들'을 의미하므로 <b>others</b>가 맞습니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">426</span><span class="correct-answer">정답: ③</span></div><div class="explanation-content"><b>해설</b>: 동사 강조는 'do/does/did + 동사원형'의 형태를 따릅니다. 'We do appreciate'는 올바른 형태입니다. 나머지는 동사원형 규칙을 위반했습니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">427</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 추상명사 'premise'(전제)의 구체적인 내용을 설명하는 완전한 절이 뒤따르므로, 동격 접속사 <b>that</b>이 필요합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">428</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: 부사절에서 '주어+be동사'가 생략될 때, 주어만 생략할 수는 없습니다. 'Although (it was) difficult'가 되어야 합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">429</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: 'Not until + 부사절'이 문두에 위치하면, 주절에서 주어와 동사가 도치됩니다. 따라서 <b>did we understand</b>가 올바른 어순입니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">430</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: '결론을 내리다'는 의미의 관용 표현은 'draw conclusions'로, 일반적으로 복수형을 사용합니다. 따라서 <b>conclusions</b>로 수정해야 합니다.</div></div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page answer-key-section">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 9 정답 및 해설</span>
+                </div>
+                <div class="page-content">
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">431</span><span class="correct-answer">정답: ④</span></div><div class="explanation-content"><b>해설</b>: 'It is/was ~ that' 강조 구문은 주어, 목적어, 부사(구/절), 보어 등을 강조할 수 있지만, <b>동사</b>는 직접 강조할 수 없습니다. 동사 강조는 'do/does/did'를 사용합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">432</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: 가정법 과거완료에서 'If'가 생략되면 'Had + S + p.p.' 형태로 도치됩니다. 따라서 과거분사인 <b>planned</b>가 와야 합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">433</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 추상명사 'idea'의 구체적인 내용을 설명하는 완전한 절이 뒤따르므로, 동격 접속사 <b>that</b>이 필요합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">434</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 장소 부사구 도치에서 주어(an ancient statue)와 동사(stands)의 수가 일치합니다. ①, ④는 복수 주어이므로 복수 동사(grow, run)가 와야 합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">435</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 가정법 미래에서 'If'가 생략되어 도치될 경우, 'Should + S + 동사원형'의 어순을 따릅니다. 따라서 'needed'를 <b>need</b>로 고쳐야 합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">436</span><span class="correct-answer">정답: ③</span></div><div class="explanation-content"><b>해설</b>: 'Einstein'을 부연 설명하는 동격 표현으로, 명사구인 <b>a brilliant physicist</b>가 가장 간결하고 적절합니다.</div></div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page answer-key-section">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 9 정답 및 해설</span>
+                </div>
+                <div class="page-content">
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">437</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: to부정사 'to identify'와 '(to) propose'가 병렬 구조를 이루고 있습니다. 두 번째 to는 생략 가능합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">438</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: 부정부사 'Rarely'가 문두에 위치했으므로, 주어와 동사가 도치되어야 합니다. 문맥상 현재완료 시제가 적절하므로 <b>have we seen</b>이 맞습니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">439</span><span class="correct-answer">정답: ④</span></div><div class="explanation-content"><b>해설</b>: 'that he was innocent'는 'belief'의 구체적인 내용을 설명하는 완전한 절이므로 <b>동격절</b>입니다. 관계대명사절로 잘못 구분되었습니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">440</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 앞 문장의 동사가 be동사 'was'이므로, 긍정 동의를 나타낼 때도 동일한 be동사를 사용합니다. 주어 'the follow-up study'가 단수이므로 <b>was</b>가 맞습니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">441</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 'Neither A nor B' 구문이 주어로 쓰일 때는 도치가 발생하지 않습니다. 따라서 조동사 'did'는 불필요합니다. 'Neither the control group nor the experimental group showed...'가 올바른 문장입니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">442</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: 모든 문장에서 부사절의 '주어+be동사'가 올바르게 생략되었습니다. (If it is necessary, Though it was difficult 등)</div></div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page answer-key-section">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 9 정답 및 해설</span>
+                </div>
+                <div class="page-content">
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">443</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: '어떤 상황에서도 ~해서는 안 된다'는 강한 금지를 나타내는 부정어구 'Under no circumstances' 뒤에는 의무를 나타내는 조동사 <b>should</b>가 도치되는 것이 가장 자연스럽습니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">444</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 추상명사 'hypothesis'(가설)의 구체적인 내용을 설명하는 완전한 절이 뒤따르므로, 동격 접속사 <b>that</b>이 필요합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">445</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 장소/방향 부사구 도치에서 주어(the students)가 복수이므로 동사도 복수형인 <b>come</b>이 되어야 합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">446</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: 동사를 강조하는 'did' 뒤에는 반드시 동사원형이 와야 합니다. 따라서 <b>prove</b>가 맞습니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">447</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: 'It was not until A that B' 구문은 'A하고 나서야 비로소 B했다'는 의미의 올바른 강조 구문입니다. (문제 수정: ⑤가 정답)</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">448</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: 'Either A or B' 구문에서 A와 B가 모두 완전한 절의 형태로 올바르게 병렬 연결되었습니다.</div></div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page answer-key-section">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 9 정답 및 해설</span>
+                </div>
+                <div class="page-content">
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">449</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 추상명사 'conclusion'(결론)의 구체적인 내용을 설명하는 완전한 절이 뒤따르므로, 동격 접속사 <b>that</b>이 필요합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">450</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: ① 부정어 도치, ② 보어 도치, ③ 동격, ④ 가정법 도치 등 모든 문장에서 특수구문이 문법적으로 올바르게 사용되었습니다.</div></div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    </body>
+    </html>
+</body>
+</html>

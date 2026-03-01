@@ -1,0 +1,41 @@
+# grammar-bridge-ch06 — 문법 Bridge 비교구문
+book:
+  title: "문법 Bridge - 비교구문"
+  author: "Vera's Flavor"
+  style: grammar-bridge-part1
+  series: grammar-bridge
+  part: 6
+
+pages:
+  - type: content
+    src: grammar/bridge/ch06-content-01.html
+  - type: content
+    src: grammar/bridge/ch06-content-02.html
+  - type: content
+    src: grammar/bridge/ch06-content-03.html
+  - type: content
+    src: grammar/bridge/ch06-content-04.html
+  - type: content
+    src: grammar/bridge/ch06-content-05.html
+  - type: content
+    src: grammar/bridge/ch06-content-06.html
+  - type: content
+    src: grammar/bridge/ch06-content-07.html
+  - type: content
+    src: grammar/bridge/ch06-content-08.html
+  - type: content
+    src: grammar/bridge/ch06-content-09.html
+  - type: content
+    src: grammar/bridge/ch06-content-10.html
+  - type: content
+    src: grammar/bridge/ch06-content-11.html
+  - type: content
+    src: grammar/bridge/ch06-content-12.html
+  - type: problems
+    src: grammar/bridge/ch06-problems.json
+    layout: two-per-page
+  - type: answer-grid
+    src: grammar/bridge/ch06-problems.json
+  - type: explanations
+    src: grammar/bridge/ch06-problems.json
+    layout: compact

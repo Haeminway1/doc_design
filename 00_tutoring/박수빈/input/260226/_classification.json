@@ -1,0 +1,53 @@
+{
+  "classifiedAt": "2026-02-27T03:50:21.699Z",
+  "files": {
+    "박수빈_260226_01.jpg": {
+      "category": "external-textbook",
+      "confidence": 0.95,
+      "description": "문법 교재 필기 내용. 명사절 접속사 that, what, if, whether, 간접의문문 정리.",
+      "isFeedbackTarget": true,
+      "level": "intermediate",
+      "subject": "문법"
+    },
+    "박수빈_260226_02.jpg": {
+      "category": "feedback-print",
+      "confidence": 0.95,
+      "description": "명사절 용법을 묻는 문법 문제 피드백이 적힌 프린트물",
+      "isFeedbackTarget": false,
+      "level": null,
+      "subject": null
+    },
+    "박수빈_260226_03.jpg": {
+      "category": "external-textbook",
+      "confidence": 0.95,
+      "description": "문법 교재의 연습문제 페이지. 명사절/관계사절 구분 문제 풀이 흔적이 보임.",
+      "isFeedbackTarget": true,
+      "level": "intermediate",
+      "subject": "문법"
+    },
+    "박수빈_260226_04.jpg": {
+      "category": "vocab-test",
+      "confidence": 1,
+      "description": "워드마스터 수능2000 단어 시험지. 학생이 시험을 보고 채점한 흔적이 보입니다.",
+      "isFeedbackTarget": false,
+      "level": null,
+      "subject": null
+    },
+    "박수빈_260226_05.jpg": {
+      "category": "vocab-test",
+      "confidence": 0.99,
+      "description": "단어 시험지로, 학생이 직접 뜻을 적고 채점한 흔적이 보입니다.",
+      "isFeedbackTarget": false,
+      "level": null,
+      "subject": null
+    },
+    "박수빈_260226_06.jpg": {
+      "category": "planner",
+      "confidence": 1,
+      "description": "학습 플래너 앱 스크린샷. 독해, 문법, 단어 학습 계획이 나열되어 있음.",
+      "isFeedbackTarget": false,
+      "level": null,
+      "subject": null
+    }
+  }
+}

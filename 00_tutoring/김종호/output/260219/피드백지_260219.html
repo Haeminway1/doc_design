@@ -1,0 +1,1815 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>학습 피드백지 — 김종호 260219</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  /* =============================================================
+     피드백지 공통 CSS v1.0 — 파스텔 하늘색 팔레트
+     참조: 06_reference/guideline/feedback_guideline.md
+     ============================================================= */
+
+  /* ===== RESET & BASE ===== */
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html {
+    font-size: 10pt;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 10pt;
+    line-height: 1.7;
+    color: #1a202c;
+    background: #fff !important;
+  }
+
+  @page { size: A4; margin: 16mm 14mm; }
+
+  /* ===== PAGE BREAK ===== */
+  .page-break-after { page-break-after: always !important; }
+  .page-break-before { page-break-before: always !important; }
+  .avoid-break { page-break-inside: avoid !important; }
+  h1, h2, h3, h4 { page-break-after: avoid !important; }
+  table { page-break-inside: avoid !important; }
+
+  /* ===== HEADINGS ===== */
+  h1 {
+    font-size: 20pt; font-weight: 700; color: #4A90C4 !important;
+    margin: 20px 0 10px 0; padding-bottom: 6px;
+    border-bottom: 3px solid #4A90C4; line-height: 1.3;
+  }
+  h2 {
+    font-size: 16pt; font-weight: 700; color: #5BA3D9 !important;
+    margin: 18px 0 10px 0; padding-bottom: 4px;
+    border-bottom: 2px solid #D4E5F3; line-height: 1.3;
+  }
+  h3 {
+    font-size: 13pt; font-weight: 700; color: #2d3748 !important;
+    margin: 14px 0 8px 0; line-height: 1.4;
+  }
+  h4 {
+    font-size: 11pt; font-weight: 700; color: #4a5568 !important;
+    margin: 10px 0 6px 0; line-height: 1.4;
+  }
+  p { margin-bottom: 8px; }
+  strong { font-weight: 700; }
+  hr { border: none; border-top: 1px solid #D4E5F3; margin: 20px 0; }
+
+  /* ===== TABLES ===== */
+  table {
+    width: 100%; border-collapse: collapse;
+    margin: 12px 0 16px 0; font-size: 9pt; line-height: 1.6;
+  }
+  thead th {
+    background-color: #7BB8E8 !important; color: #fff !important;
+    font-weight: 700; padding: 8px 10px; text-align: left;
+    border: 1px solid #6AABDE; font-size: 9pt;
+  }
+  tbody td {
+    padding: 7px 10px; border: 1px solid #D4E5F3; vertical-align: top;
+  }
+  tbody tr:nth-child(odd) { background-color: #fff !important; }
+  tbody tr:nth-child(even) { background-color: #F4F9FD !important; }
+  tbody td:first-child { font-weight: 500; }
+
+  .result-correct { color: #38a169 !important; font-weight: 700; }
+  .result-wrong { color: #e53e3e !important; font-weight: 700; }
+
+  /* ===== REPORT HEADER (첫 페이지) ===== */
+  .report-header { margin-bottom: 16px; }
+  .report-date { font-size: 10pt; color: #718096 !important; font-weight: 400; margin-bottom: 4px; }
+  .report-title {
+    font-size: 22pt; font-weight: 700; color: #4A90C4 !important;
+    margin-bottom: 6px; line-height: 1.2; border: none; padding: 0;
+  }
+  .report-subtitle { font-size: 12pt; font-weight: 400; color: #4a5568 !important; margin-bottom: 2px; }
+  .report-meta { font-size: 9pt; color: #718096 !important; line-height: 1.8; margin-top: 8px; }
+  .report-meta span { display: inline-block; margin-right: 16px; }
+
+  /* ===== SECTION HEADER BAR ===== */
+  .section-header {
+    background-color: #5BA3D9 !important; color: #fff !important;
+    padding: 12px 20px; margin: 20px -14mm 14px -14mm;
+    padding-left: 14mm; padding-right: 14mm;
+    font-size: 16pt; font-weight: 700; line-height: 1.3;
+  }
+  .section-header .section-num {
+    font-size: 12pt; font-weight: 300; display: block;
+    margin-bottom: 2px; color: #C5DFEF !important;
+  }
+
+  /* ===== SEVERITY BADGES ===== */
+  .severity-high {
+    display: inline-block; background-color: #e53e3e !important; color: #fff !important;
+    font-size: 8pt; font-weight: 700; padding: 1px 8px; border-radius: 10px;
+  }
+  .severity-mid {
+    display: inline-block; background-color: #ed8936 !important; color: #fff !important;
+    font-size: 8pt; font-weight: 700; padding: 1px 8px; border-radius: 10px;
+  }
+  .severity-low {
+    display: inline-block; background-color: #38a169 !important; color: #fff !important;
+    font-size: 8pt; font-weight: 700; padding: 1px 8px; border-radius: 10px;
+  }
+
+  /* ===== DIAGNOSIS CARD (학습 요약) ===== */
+  .diagnosis-card {
+    border: 2px solid #B8D4EC; border-radius: 6px;
+    padding: 14px 18px; margin: 14px 0; background-color: #F4F9FD !important;
+  }
+  .diagnosis-card h3 { margin-top: 0; color: #4A90C4 !important; font-size: 12pt; }
+  .priority-order {
+    background-color: #EDF5FC !important; border-left: 4px solid #7BB8E8;
+    padding: 10px 16px; margin: 12px 0; font-size: 10pt;
+  }
+
+  /* ===== QUESTION BOX ===== */
+  .question-box {
+    background-color: #F4F9FD !important; border-left: 4px solid #7BB8E8;
+    padding: 10px 14px; margin: 8px 0; font-size: 10pt; line-height: 1.7;
+  }
+  .question-box p { margin: 0; }
+
+  /* ===== ANSWER BOX ===== */
+  .answer-box {
+    background-color: #f0fff4 !important; border-left: 4px solid #38a169;
+    padding: 8px 14px; margin: 8px 0; font-weight: 500;
+  }
+
+  /* ===== GRAMMAR BLOCK ===== */
+  .grammar-block {
+    background-color: #edf2f7 !important; border: 1px solid #D4E5F3;
+    padding: 12px 16px; margin: 12px 0;
+    font-size: 9pt; line-height: 1.8; white-space: pre-wrap;
+    page-break-inside: avoid !important;
+  }
+
+  /* ===== TIP BOX ===== */
+  .tip-box {
+    background-color: #fffaf0 !important; border-left: 4px solid #ed8936;
+    padding: 10px 16px; margin: 12px 0; page-break-inside: avoid !important;
+  }
+  .tip-box .tip-label {
+    font-weight: 700; color: #c05621 !important; font-size: 9pt;
+    display: block; margin-bottom: 4px;
+  }
+
+  /* ===== WARNING BOX ===== */
+  .warning-box {
+    background-color: #fff5f5 !important; border-left: 4px solid #e53e3e;
+    padding: 10px 16px; margin: 12px 0; page-break-inside: avoid !important;
+  }
+  .warning-box .warning-label {
+    font-weight: 700; color: #e53e3e !important; font-size: 9pt;
+    display: block; margin-bottom: 4px;
+  }
+
+  /* ===== CONCEPT BOX ===== */
+  .concept-box {
+    background-color: #EDF5FC !important; border: 1px solid #7BB8E8;
+    padding: 12px 16px; margin: 12px 0; page-break-inside: avoid !important;
+  }
+  .concept-box .concept-label {
+    font-weight: 700; color: #4A90C4 !important; font-size: 9pt;
+    display: block; margin-bottom: 6px;
+  }
+
+  /* ===== PROBLEM CARD ===== */
+  .problem-card {
+    border: 1px solid #D4E5F3; border-radius: 4px;
+    padding: 14px 18px; margin: 14px 0;
+    page-break-inside: avoid !important; background-color: #fff !important;
+  }
+  .problem-header {
+    display: flex; align-items: center; margin-bottom: 14px; gap: 12px;
+  }
+  .problem-badge {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 36px; height: 36px; border-radius: 50%;
+    background-color: #7BB8E8 !important; color: #fff !important;
+    font-weight: 700; font-size: 12pt; flex-shrink: 0;
+  }
+  .problem-title {
+    font-size: 11pt; font-weight: 700; color: #2d3748 !important;
+  }
+  .problem-source {
+    font-size: 8pt; color: #718096 !important; font-weight: 400;
+    display: block; margin-top: 2px;
+  }
+
+  /* ===== HIGHLIGHT ===== */
+  .hl-key { color: #4A90C4 !important; font-weight: 700; }
+  .hl-wrong { color: #e53e3e !important; font-weight: 700; text-decoration: line-through; }
+  .hl-correct { color: #38a169 !important; font-weight: 700; }
+  .hl-blue { color: #5BA3D9 !important; font-weight: 700; }
+
+  /* ===== FLOWCHART ===== */
+  .flowchart { margin: 16px 0; page-break-inside: avoid !important; }
+  .flow-step {
+    background-color: #EDF5FC !important; border: 1px solid #B8D4EC;
+    border-radius: 4px; padding: 10px 16px; margin-bottom: 4px; font-size: 9.5pt;
+  }
+  .flow-step .step-label { font-weight: 700; color: #4A90C4 !important; margin-right: 8px; }
+  .flow-step .step-sub {
+    padding-left: 24px; font-size: 9pt; color: #4a5568 !important;
+    margin-top: 4px; line-height: 1.7;
+  }
+  .flow-arrow { text-align: center; font-size: 14pt; color: #7BB8E8 !important; line-height: 1.2; margin: 2px 0; }
+
+  /* ===== CHECKLIST ===== */
+  .checklist-group { margin-bottom: 16px; page-break-inside: avoid !important; }
+  .checklist-group-title {
+    font-size: 11pt; font-weight: 700; color: #4A90C4 !important;
+    margin-bottom: 8px; padding: 4px 0; border-bottom: 1px solid #D4E5F3;
+  }
+  .checklist-item {
+    display: flex; align-items: flex-start; gap: 8px;
+    padding: 4px 0; font-size: 9.5pt; line-height: 1.6;
+  }
+  .checkbox {
+    display: inline-block; width: 14px; height: 14px; min-width: 14px;
+    border: 1.5px solid #a0aec0; border-radius: 2px; margin-top: 3px;
+  }
+
+  /* ===== SECTION DIVIDER ===== */
+  .section-divider { border: none; border-top: 2px solid #D4E5F3; margin: 20px 0; }
+
+  /* ===== VARIANT CHOICES ===== */
+  .variant-choices { padding-left: 20px; font-size: 9pt; line-height: 1.8; margin: 4px 0; }
+
+  /* ===== GROUP ROW ===== */
+  .group-row td {
+    background-color: #EDF5FC !important; font-weight: 700;
+    color: #4A90C4 !important; border-bottom: 2px solid #7BB8E8;
+  }
+
+  /* ===== COMPARE TABLE ===== */
+  .compare-table thead th:nth-child(2) { background-color: #6AABDE !important; }
+  .compare-table thead th:nth-child(3) { background-color: #38a169 !important; }
+
+  /* ===== EXPRESSION TABLE ===== */
+  .expression-table td:first-child { white-space: nowrap; font-weight: 700; }
+
+  /* ===== MARKER ===== */
+  .marker-o { color: #38a169 !important; font-weight: 700; }
+  .marker-x { color: #e53e3e !important; font-weight: 700; }
+
+  /* ===== PRINT OPTIMIZATION ===== */
+  @media print {
+    body { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+    .section-header { margin-left: -14mm; margin-right: -14mm; padding-left: 14mm; padding-right: 14mm; }
+  }
+</style>
+</head>
+<body>
+
+<div class="report-header">
+  <div class="report-date">2026. 02. 19</div>
+  <h1 class="report-title" style="border:none; margin-bottom:6px;">학습 피드백지</h1>
+  <div class="report-subtitle">문법 + 구문독해</div>
+  <div class="report-meta">
+    <span><strong>학생</strong> 김종호</span>
+    <span><strong>교재</strong> 기출로적중 (문법) / Vera's Flavor 구문독해 BASIC</span>
+    <span><strong>범위</strong> 문법 POINT 1-3 (감탄문, 의문사 의문문, 선택의문문) + 구문독해 2주차 마무리 Part 2-B~4-B (문제 31-80)</span>
+  </div>
+</div>
+
+
+
+<hr class="section-divider">
+<div class="diagnosis-card"><h3>학습 요약</h3>
+<p><strong>전체 결과</strong>: 103문제 중 오답 <strong>16문제</strong> (정답률 약 84%)</p>
+<ul>
+<li>문법: 53문제 중 오답 5문제 (정답률 91%)</li>
+<li>구문독해: 50문제 중 오답 11문제 (정답률 78%)</li>
+</ul>
+<p><strong>잘한 점</strong>: 감탄문 연습문제 A 전문 정답, 선택의문문 전문 정답으로 문법 기초가 탄탄함. 구문독해 해석 정확도가 크게 향상되었고, 5형식 오답이 이전(5문제→1문제)보다 대폭 감소함.</p>
+<p><strong>아쉬운 점</strong>: 1형식 자동사 판별에서 전치사 뒤 명사를 목적어로 착각하는 실수가 반복됨. 연결동사 remain, turn은 이전 피드백(260215)에서도 지적된 반복 오류. 구동사 went up, look for도 동일 실수 재발.</p>
+<table class="avoid-break">
+<thead>
+<tr>
+<th>취약 영역</th>
+<th>문제 수</th>
+<th>심각도</th>
+<th>핵심</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1형식 — 자동사+전치사구</td>
+<td>5문제</td>
+<td><strong>높음</strong></td>
+<td>work on, drift, go up, sleep, look for: 전치사 뒤 명사 ≠ 목적어</td>
+</tr>
+<tr>
+<td>3/4/5형식 구별</td>
+<td>4문제</td>
+<td><strong>높음</strong></td>
+<td>wish/do 4형식, drive 5형식, wrote+to구 3형식 혼동</td>
+</tr>
+<tr>
+<td>의문사 의문문 어순</td>
+<td>3문제</td>
+<td>보통</td>
+<td>의문사 주어 어순, be 중복, 주격/목적격 혼동</td>
+</tr>
+<tr>
+<td>2형식 — 연결동사</td>
+<td>2문제</td>
+<td>보통</td>
+<td>turn, remain 연결동사 미인식 (반복 오류)</td>
+</tr>
+<tr>
+<td>감탄문 전환</td>
+<td>2문제</td>
+<td>낮음</td>
+<td>What/How 선택 및 관사 a/an 사용</td>
+</tr>
+</tbody></table>
+<div class="priority-order"><strong>학습 우선순위:</strong> 1형식 자동사(반복 오류) → 3/4/5형식 구별 → 2형식 연결동사(반복) → 의문사 의문문 → 감탄문</div>
+<hr class="section-divider">
+</div>
+<div class="page-break-before section-header"><span class="section-num">Section 1</span>틀린 문제 리스트</div>
+<h3>문법</h3>
+<table class="avoid-break">
+<thead>
+<tr>
+<th>#</th>
+<th>위치</th>
+<th>문제</th>
+<th>정답</th>
+<th>오류 유형</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td><strong>[ 감탄문 ]</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>1</td>
+<td>연습B #6</td>
+<td>We had a really wonderful time. → 감탄문 전환</td>
+<td>What a wonderful time we had!</td>
+<td>What/How 혼동 또는 관사 누락</td>
+</tr>
+<tr>
+<td>2</td>
+<td>연습B #12</td>
+<td>That was a very exciting game. → 감탄문 전환</td>
+<td>What an exciting game that was!</td>
+<td>a/an 선택 오류 (모음 발음 앞 an)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><strong>[ 의문사 의문문 ]</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>3</td>
+<td>연습A #2</td>
+<td>어젯밤에 무슨 일이 일어났니? (happened, what, last night)</td>
+<td>What happened last night?</td>
+<td>의문사 주어 어순 혼동</td>
+</tr>
+<tr>
+<td>4</td>
+<td>연습A #3</td>
+<td>우리의 담임 선생님은 누가 되실까? (our homeroom teacher, be, will, who)</td>
+<td>Who will be our homeroom teacher?</td>
+<td>be동사 중복 사용</td>
+</tr>
+<tr>
+<td>5</td>
+<td>연습A #11</td>
+<td>나는 왜 Linda에게 사과해야 하니? (should, why, to Linda, apologize, I)</td>
+<td>Why should I apologize to Linda?</td>
+<td>주격 I vs 목적격 me 혼동</td>
+</tr>
+</tbody></table>
+<h3>구문독해</h3>
+<table class="avoid-break">
+<thead>
+<tr>
+<th>#</th>
+<th>위치</th>
+<th>문제</th>
+<th>정답 형식</th>
+<th>오류 유형</th>
+</tr>
+</thead>
+<tbody><tr>
+<td></td>
+<td></td>
+<td><strong>[ 1형식 ]</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>6</td>
+<td>Part 2-B #38</td>
+<td>He is currently working on a new project with his colleagues.</td>
+<td>1형식 (S+V)</td>
+<td>&quot;a new project&quot;를 목적어로 착각</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Part 3-A #46</td>
+<td>The baby in the cradle slept peacefully through the storm.</td>
+<td>1형식 (S+V)</td>
+<td>cradle 어휘 + 구조 분석 오류</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Part 3-B #51</td>
+<td>The small boat drifted aimlessly on the vast ocean.</td>
+<td>1형식 (S+V)</td>
+<td>&quot;the vast ocean&quot;을 목적어로 착각</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Part 3-B #52</td>
+<td>The price of oil went up sharply last month.</td>
+<td>1형식 (S+V)</td>
+<td>구동사 자동사 혼동 (<strong>반복</strong>)</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Part 4-A #68</td>
+<td>She is actively looking for a new opportunity in another country.</td>
+<td>3형식 (S+V+O)</td>
+<td>구동사 타동사 미인식 (<strong>반복</strong>)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><strong>[ 2형식 ]</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>11</td>
+<td>Part 3-A #41</td>
+<td>The leaves of the tree turn red and yellow in autumn.</td>
+<td>2형식 (S+V+C)</td>
+<td>turn 연결동사 미인식</td>
+</tr>
+<tr>
+<td>12</td>
+<td>Part 3-A #47</td>
+<td>The defendant remained silent throughout the entire investigation.</td>
+<td>2형식 (S+V+C)</td>
+<td>remain 연결동사 미인식 (<strong>반복</strong>)</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td><strong>[ 3/4/5형식 ]</strong></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>13</td>
+<td>Part 3-A #50</td>
+<td>The constant noise from the construction site is driving me mad.</td>
+<td>5형식 (S+V+O+O.C)</td>
+<td>목적격보어 mad 미인식</td>
+</tr>
+<tr>
+<td>14</td>
+<td>Part 3-B #59</td>
+<td>I sincerely wish you success in your future endeavors.</td>
+<td>4형식 (S+V+I.O+D.O)</td>
+<td>I.O/D.O 구별 오류</td>
+</tr>
+<tr>
+<td>15</td>
+<td>Part 4-A #69</td>
+<td>Can you do me a huge favor for a moment?</td>
+<td>4형식 (S+V+I.O+D.O)</td>
+<td>I.O/D.O 구별 오류</td>
+</tr>
+<tr>
+<td>16</td>
+<td>Part 4-B #78</td>
+<td>The author wrote a personal letter to each of his fans.</td>
+<td>3형식 (S+V+O)</td>
+<td>3형식 vs 4형식 혼동</td>
+</tr>
+</tbody></table>
+<h2 style="page-break-before:always;">테마 A: 감탄문 — What vs How 구분 (#6, #12)</h2>
+<div class="concept-box"><p>감탄문은 <strong>명사의 유무</strong>로 What/How를 결정한다!</p></div>
+<h4>핵심 공식</h4>
+<div class="grammar-block">What + (a/an) + 형용사 + 명사 + (S+V)!   ← 명사 있으면 What
+How  + 형용사/부사 + (S+V)!              ← 명사 없으면 How
+</div>
+<h4>What 감탄문의 관사 규칙</h4>
+<table class="avoid-break">
+<thead>
+<tr>
+<th>명사 유형</th>
+<th>관사</th>
+<th>예문</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>단수 가산명사</td>
+<td><strong>a/an</strong> 필수</td>
+<td>What <strong>a</strong> beautiful day!</td>
+</tr>
+<tr>
+<td>복수 가산명사</td>
+<td>관사 없음</td>
+<td>What beautiful flowers!</td>
+</tr>
+<tr>
+<td>불가산명사</td>
+<td>관사 없음</td>
+<td>What beautiful weather!</td>
+</tr>
+</tbody></table>
+<p><strong>a vs an 판별</strong>: 형용사의 <strong>첫 발음</strong>이 모음이면 <strong>an</strong></p>
+<table class="avoid-break">
+<thead>
+<tr>
+<th>a 사용</th>
+<th>an 사용</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>a beautiful day</td>
+<td><strong>an</strong> exciting game</td>
+</tr>
+<tr>
+<td>a wonderful time</td>
+<td><strong>an</strong> amazing view</td>
+</tr>
+<tr>
+<td>a cute baby</td>
+<td><strong>an</strong> excellent speech</td>
+</tr>
+<tr>
+<td>a terrible mistake</td>
+<td><strong>an</strong> honest person</td>
+</tr>
+</tbody></table>
+<h4>오답 분석</h4>
+<p><strong>#6. We had a really wonderful time.</strong></p>
+<p>정답: <strong>What a wonderful time we had!</strong></p>
+<ul>
+<li>&quot;time&quot;은 단수 가산명사 → What + <strong>a</strong> + wonderful + time</li>
+<li>뒤에 <strong>명사(time)</strong>가 있으므로 What (How 아님)</li>
+</ul>
+<div class="tip-box"><span class="tip-label">학생 답 분석</span><p><strong>학생 답 분석</strong>
+<strong>왜 이 답을 골랐을까</strong>: 작문 시 관사 &quot;a&quot;를 빠뜨렸다. 감탄문 전환에서 What까지는 맞았지만 단수 가산명사 앞 관사를 누락함
+<strong>오류 패턴</strong>: What 감탄문에서 단수 가산명사 앞 관사(a/an) 필수라는 규칙 미적용
+<strong>집중 포인트</strong>: &quot;형용사 + 명사&quot; 조합이 보이면 무조건 What. 단수 가산명사면 반드시 a/an 붙이기</p></div>
+<p><strong>#12. That was a very exciting game.</strong></p>
+<p>정답: <strong>What an exciting game that was!</strong></p>
+<ul>
+<li>&quot;game&quot;은 단수 가산명사 → What + 관사 + exciting + game</li>
+<li>&quot;exciting&quot;은 모음 발음(/ɪ/)으로 시작 → <strong>an</strong> (a 아님!)</li>
+</ul>
+<div class="tip-box"><span class="tip-label">학생 답 분석</span><p><strong>학생 답 분석</strong>
+<strong>왜 이 답을 골랐을까</strong>: 작문 시 관사를 빠뜨렸다. &quot;What exciting game&quot;처럼 an 없이 썼다. 단수 가산명사 앞 관사가 필수인데 누락함
+<strong>오류 패턴</strong>: a/an 관사 누락 — 감탄문에서도 단수 가산명사 앞에는 반드시 관사 필요
+<strong>집중 포인트</strong>: What + a/an은 바로 뒤에 오는 <strong>형용사의 첫 발음</strong>으로 결정. exciting → /ɪ/ → an</p></div>
+<h4>What vs How 판별 순서도</h4>
+<div class="grammar-block">문장에서 강조할 부분 확인
+      ↓
+형용사 뒤에 명사가 있는가?
+  ├─ YES → What + (a/an) + 형용사 + 명사 + (S+V)!
+  │         └─ 단수 가산명사? → a/an 필수 (형용사 첫 발음으로 a/an 결정)
+  │         └─ 복수/불가산? → 관사 없이
+  └─ NO  → How + 형용사/부사 + (S+V)!
+</div>
+<h2 style="page-break-before:always;">테마 B: 의문사 의문문 — 어순과 주의사항 (#2, #3, #11)</h2>
+<h4>의문사 의문문 3가지 유형</h4>
+<table class="avoid-break">
+<thead>
+<tr>
+<th>유형</th>
+<th>어순</th>
+<th>예문</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>① be동사</td>
+<td>의문사 + <strong>be</strong> + 주어 ~?</td>
+<td><strong>Who is</strong> this girl?</td>
+</tr>
+<tr>
+<td>② 일반동사</td>
+<td>의문사 + <strong>do/does/did</strong> + 주어 + 동사원형 ~?</td>
+<td><strong>What did</strong> you eat?</td>
+</tr>
+<tr>
+<td>③ 조동사</td>
+<td>의문사 + <strong>조동사</strong> + 주어 + 동사원형 ~?</td>
+<td><strong>Where will</strong> you go?</td>
+</tr>
+</tbody></table>
+<h4>핵심 규칙 3가지</h4>
+<p><strong>규칙 1: 의문사가 주어이면 → 의문사 + 동사 (do/does/did 불필요)</strong></p>
+<div class="grammar-block">일반적 어순: What + did + 주어 + 동사원형?
+  → What did you eat? (너는 무엇을 먹었니?)
+
+의문사=주어: What + 동사?
+  → What happened? (무슨 일이 일어났니?)
+  → Who broke the window? (누가 창문을 깼니?)
+</div>
+<p>의문사가 주어인지 판별: <strong>&quot;누가/무엇이&quot;로 해석되면 주어!</strong></p>
+<ul>
+<li>What happened? (무엇이 일어났니?) → what = 주어</li>
+<li>What did you buy? (무엇을 샀니?) → what = 목적어, you = 주어</li>
+</ul>
+<p><strong>규칙 2: be동사/조동사는 문장에 하나만</strong></p>
+<div class="grammar-block">✗ Who will be our teacher be?     ← be 중복!
+✓ Who will be our homeroom teacher?
+
+✗ Where are you are going?         ← are 중복!
+✓ Where are you going?
+</div>
+<p><strong>규칙 3: 주어 자리에는 주격 대명사</strong></p>
+<table class="avoid-break">
+<thead>
+<tr>
+<th>주격 (주어 자리)</th>
+<th>목적격 (목적어 자리)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>I</td>
+<td>me</td>
+</tr>
+<tr>
+<td>he / she</td>
+<td>him / her</td>
+</tr>
+<tr>
+<td>we</td>
+<td>us</td>
+</tr>
+<tr>
+<td>they</td>
+<td>them</td>
+</tr>
+</tbody></table>
+<div class="grammar-block">✗ Why should me apologize?   ← me는 목적격!
+✓ Why should I apologize?    ← I는 주격!
+
+조동사(should/can/will) 뒤 주어 → 반드시 주격!
+</div>
+<h4>오답 분석</h4>
+<p><strong>#2. 어젯밤에 무슨 일이 일어났니?</strong> (happened, what, last night)</p>
+<p>학생 답: What last night happened?
+정답: <strong>What happened last night?</strong></p>
+<div class="tip-box"><span class="tip-label">학생 답 분석</span><p><strong>학생 답 분석</strong>
+<strong>왜 이 답을 골랐을까</strong>: &quot;의문사 + 시간 부사 + 동사&quot; 순서로 배열. &quot;What + 나머지 단어들&quot;이라고만 생각하고 어순 규칙을 적용하지 않음
+<strong>오류 패턴</strong>: 의문사가 주어일 때 &quot;의문사 + 바로 동사&quot; 규칙 미적용
+<strong>집중 포인트</strong>: what/who가 &quot;무엇이/누가&quot;(주어)로 쓰이면 → 의문사 바로 뒤에 동사. 시간 부사(last night)는 문장 끝!</p></div>
+<p><strong>#3. 우리의 담임 선생님은 누가 되실까?</strong> (our homeroom teacher, be, will, who)</p>
+<p>학생 답: Who will be our homeroom teacher be?
+정답: <strong>Who will be our homeroom teacher?</strong></p>
+<div class="tip-box"><span class="tip-label">학생 답 분석</span><p><strong>학생 답 분석</strong>
+<strong>왜 이 답을 골랐을까</strong>: 주어진 단어 &quot;be&quot;를 반드시 써야 한다고 생각해서 be를 두 번 배치. &quot;will be&quot;에서 이미 be가 사용됨을 간과
+<strong>오류 패턴</strong>: 조동사+be동사 구조에서 be 중복 — 한 문장에 동사 역할은 하나만
+<strong>집중 포인트</strong>: will be = &quot;~일 것이다&quot;에서 be는 이미 사용됨. 남은 단어들로 보어 구성</p></div>
+<p><strong>#11. 나는 왜 Linda에게 사과해야 하니?</strong> (should, why, to Linda, apologize, I)</p>
+<p>학생 답: Why should me apologize to Linda?
+정답: <strong>Why should I apologize to Linda?</strong></p>
+<div class="tip-box"><span class="tip-label">학생 답 분석</span><p><strong>학생 답 분석</strong>
+<strong>왜 이 답을 골랐을까</strong>: &quot;나&quot;를 영어로 me라고 먼저 떠올림. I와 me의 사용 위치 구분이 안 됨
+<strong>오류 패턴</strong>: 주격(I) vs 목적격(me) 혼동 — 주어 자리에 목적격 사용
+<strong>집중 포인트</strong>: should/can/will 뒤에 오는 주어는 반드시 주격! &quot;should <strong>I</strong>&quot;, &quot;can <strong>I</strong>&quot;, &quot;will <strong>I</strong>&quot;</p></div>
+<h2 style="page-break-before:always;">테마 C: 1형식 — 자동사와 전치사구 (#38, #46, #51, #52, #68)</h2>
+<div class="concept-box"><p>1형식 = S + V (+수식어). 전치사구는 <strong>수식어</strong>이지 <strong>목적어가 아니다!</strong></p></div>
+<h4>절대 규칙: &quot;전치사 + 명사&quot; = 수식어</h4>
+<div class="grammar-block">on a new project    ← 전치사구 (수식어)
+through the storm   ← 전치사구 (수식어)
+on the vast ocean   ← 전치사구 (수식어)
+
+이것들은 목적어(O)가 아니다!
+목적어 = 동사 바로 뒤에 전치사 없이 오는 명사
+</div>
+<h4>오답 분석</h4>
+<table class="avoid-break">
+<thead>
+<tr>
+<th>문제</th>
+<th>S</th>
+<th>V</th>
+<th>수식어</th>
+<th>학생 오류</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>#38</td>
+<td>He</td>
+<td>is working</td>
+<td>currently / on a new project / with his colleagues</td>
+<td>&quot;a new project&quot;를 O로 착각</td>
+</tr>
+<tr>
+<td>#46</td>
+<td>The baby (in the cradle)</td>
+<td>slept</td>
+<td>peacefully / through the storm</td>
+<td>구조 분석 실패</td>
+</tr>
+<tr>
+<td>#51</td>
+<td>The small boat</td>
+<td>drifted</td>
+<td>aimlessly / on the vast ocean</td>
+<td>&quot;the vast ocean&quot;을 O로 착각</td>
+</tr>
+<tr>
+<td>#52</td>
+<td>The price (of oil)</td>
+<td>went up</td>
+<td>sharply / last month</td>
+<td>구동사 혼동 (<strong>반복</strong>)</td>
+</tr>
+<tr>
+<td>#68</td>
+<td>She</td>
+<td>is looking for</td>
+<td>actively / a new opportunity / in another country</td>
+<td><strong>3형식!</strong> (아래 별도 설명)</td>
+</tr>
+</tbody></table>
+<h4>#38 상세 분석</h4>
+<div class="grammar-block">He is currently working on a new project with his colleagues.
+S        V              전치사구          전치사구
+
+work = 자동사 &quot;일하다&quot;
+work on = 자동사 + 전치사 &quot;~에 대해 일하다&quot;
+&quot;a new project&quot;는 전치사 on의 목적어 (동사의 목적어 아님!)
+→ 1형식
+</div>
+<div class="tip-box"><span class="tip-label">학생 답 분석</span><p><strong>학생 답 분석</strong>
+<strong>왜 틀렸을까</strong>: &quot;work on a project&quot;에서 &quot;a project&quot;를 work의 직접목적어로 봄
+<strong>오류 패턴</strong>: 전치사의 목적어 vs 동사의 목적어 혼동
+<strong>집중 포인트</strong>: &quot;on/in/at/through/with + 명사&quot;는 전부 전치사구 = 수식어!</p></div>
+<h4>#46 상세 분석</h4>
+<div class="grammar-block">The baby in the cradle slept peacefully through the storm.
+   S     (수식어)        V     (부사)     (전치사구)
+
+cradle [kreɪdl] = 요람, 아기 침대
+slept = sleep의 과거형 (완전자동사 &quot;잤다&quot;)
+→ 1형식
+</div>
+<div class="tip-box"><span class="tip-label">학생 답 분석</span><p><strong>학생 답 분석</strong>
+<strong>왜 틀렸을까</strong>: &quot;cradle&quot; 어휘를 몰라 전체 구조 파악이 어려웠고, &quot;through the storm&quot;의 역할 판단 실패
+<strong>집중 포인트</strong>: 모르는 단어가 있어도 동사(slept)의 성질(자동사/타동사)로 형식 판단 가능</p></div>
+<h4>#51, #52 상세 분석</h4>
+<div class="grammar-block">#51: The small boat drifted aimlessly on the vast ocean.
+     S                V       (부사)    (전치사구)
+     drift [drɪft] = 표류하다 (자동사)
+     → 1형식
+
+#52: The price of oil went up sharply last month.
+     S                 V(구동사)  (부사)  (수식어)
+     go up = 오르다 (자동사 구동사)
+     → 1형식
+</div>
+<div class="tip-box"><span class="tip-label">학생 답 분석</span><p><strong>학생 답 분석 (#52)</strong>
+<strong>왜 틀렸을까</strong>: &quot;went up&quot;을 &quot;올렸다&quot;(타동사)로 해석하여 뒤에 목적어를 찾으려 함
+<strong>오류 패턴</strong>: 260215 피드백에서도 동일 문제(#52)를 틀림! 구동사 자동사 개념이 아직 정착되지 않음
+<strong>집중 포인트</strong>: go up(오르다), go on(계속되다), go off(울리다) = 모두 자동사 구동사. &quot;스스로 ~하다&quot;이므로 목적어 불필요</p></div>
+<h4>#68 — 주의: 이 문제는 3형식!</h4>
+<div class="grammar-block">She is actively looking for a new opportunity in another country.
+S              V(타동사구)        O             (전치사구)
+
+look for = 타동사구 &quot;찾다&quot; (하나의 동사로 취급!)
+→ 3형식 (S + V + O)
+</div>
+<div class="tip-box"><span class="tip-label">학생 답 분석</span><p><strong>학생 답 분석</strong>
+<strong>왜 틀렸을까</strong>: &quot;look&quot;과 &quot;for&quot;를 분리하여 &quot;for a new opportunity&quot;를 전치사구(수식어)로 처리 → 1형식으로 착각
+<strong>오류 패턴</strong>: 260215에서도 동일 문제(#68) 틀림! 구동사 타동사 인식 미숙
+<strong>집중 포인트</strong>: look for(찾다), take care of(돌보다), deal with(다루다) = 타동사구. 전체를 하나의 V로!</p></div>
+<h4>자동사 vs 타동사 구동사 비교</h4>
+<table class="avoid-break">
+<thead>
+<tr>
+<th>자동사 구동사 (1형식)</th>
+<th>의미</th>
+<th>타동사 구동사 (3형식)</th>
+<th>의미</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>go up</td>
+<td>오르다</td>
+<td>look for</td>
+<td>찾다</td>
+</tr>
+<tr>
+<td>go on</td>
+<td>계속되다</td>
+<td>look after</td>
+<td>돌보다</td>
+</tr>
+<tr>
+<td>go off</td>
+<td>울리다</td>
+<td>take care of</td>
+<td>돌보다</td>
+</tr>
+<tr>
+<td>break out</td>
+<td>발발하다</td>
+<td>deal with</td>
+<td>다루다</td>
+</tr>
+<tr>
+<td>come about</td>
+<td>발생하다</td>
+<td>depend on</td>
+<td>의존하다</td>
+</tr>
+</tbody></table>
+<div class="tip-box"><span class="tip-label">판별 팁</span><p>구동사 뒤에 &quot;전치사 없이&quot; 명사가 바로 오면 → 3형식!</p></div>
+<h2 style="page-break-before:always;">테마 D: 2형식 — 연결동사 보어 (#41, #47)</h2>
+<div class="concept-box"><p>2형식 = S + V + C (주격보어). &quot;S = C&quot; 관계가 핵심!</p></div>
+<div class="warning-box"><span class="warning-label">반복 오류 경고</span><p>remain은 260215(#32)에서도 틀렸음. turn도 이전에 학습했지만 재실수.</p></div>
+<h4>연결동사 복습</h4>
+<table class="avoid-break">
+<thead>
+<tr>
+<th>유형</th>
+<th>동사</th>
+<th>의미</th>
+<th>이번 오답</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>상태 유지</td>
+<td><strong>remain</strong></td>
+<td>~인 채로 남다</td>
+<td>✗ #47 (반복)</td>
+</tr>
+<tr>
+<td>상태 변화</td>
+<td><strong>turn</strong></td>
+<td>~해지다</td>
+<td>✗ #41</td>
+</tr>
+<tr>
+<td>상태 변화</td>
+<td>come</td>
+<td>~이 되다</td>
+<td>—</td>
+</tr>
+<tr>
+<td>상태 변화</td>
+<td>go</td>
+<td>~해지다</td>
+<td>—</td>
+</tr>
+<tr>
+<td>상태 유지</td>
+<td>stay</td>
+<td>~인 채로 있다</td>
+<td>—</td>
+</tr>
+<tr>
+<td>판단</td>
+<td>seem</td>
+<td>~인 것 같다</td>
+<td>—</td>
+</tr>
+</tbody></table>
+<h4>오답 분석</h4>
+<p><strong>#41. The leaves of the tree turn red and yellow in autumn.</strong></p>
+<div class="grammar-block">S = The leaves (of the tree = 수식어)
+V = turn (연결동사 &quot;~해지다&quot;)
+C = red and yellow (형용사 보어)
+
+S = C 확인: leaves = red and yellow ✓ (나뭇잎이 빨갛고 노랗다)
+→ 2형식
+</div>
+<div class="tip-box"><span class="tip-label">학생 답 분석</span><p><strong>학생 답 분석</strong>
+<strong>왜 틀렸을까</strong>: &quot;turn&quot;을 &quot;돌리다&quot;(타동사)로 해석, &quot;red and yellow&quot;를 목적어로 착각
+<strong>오류 패턴</strong>: 다의어 동사의 연결동사 용법 미인식
+<strong>집중 포인트</strong>: turn 뒤에 형용사(red, yellow, cold, pale)가 오면 → &quot;~해지다&quot; (연결동사, 2형식)</p></div>
+<p><strong>#47. The defendant remained silent throughout the entire investigation.</strong></p>
+<div class="grammar-block">S = The defendant [dɪˈfendənt] (피고, 피고인)
+V = remained (연결동사 &quot;~인 채로 남다&quot;)
+C = silent (형용사 보어 &quot;침묵하는&quot;)
+
+S = C 확인: defendant = silent ✓ (피고가 침묵하는)
+→ 2형식
+</div>
+<div class="tip-box"><span class="tip-label">학생 답 분석</span><p><strong>학생 답 분석</strong>
+<strong>왜 틀렸을까</strong>: &quot;remained&quot;를 &quot;남았다&quot;(자동사)로 해석, &quot;silent&quot;를 부사로 착각하여 1형식으로 분석
+<strong>오류 패턴</strong>: 260215(#32 &quot;The situation remains unchanged&quot;)와 동일 오류! remain + 형용사 = 2형식 패턴이 아직 정착 안 됨
+<strong>집중 포인트</strong>: remain/stay 뒤에 형용사가 오면 → 무조건 2형식. &quot;silent&quot;는 부사가 아니라 형용사!</p></div>
+<h4>같은 동사, 다른 형식 (turn / remain)</h4>
+<table class="avoid-break">
+<thead>
+<tr>
+<th>1형식 (자동사)</th>
+<th>2형식 (연결동사)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>He <strong>turned</strong> around. (돌았다)</td>
+<td>The leaves <strong>turned</strong> yellow. (~해졌다)</td>
+</tr>
+<tr>
+<td>She <strong>remained</strong> in the room. (남았다)</td>
+<td>She <strong>remained</strong> silent. (~인 채로)</td>
+</tr>
+<tr>
+<td>He <strong>turned</strong> to the left. (방향 전환)</td>
+<td>His face <strong>turned</strong> pale. (~해졌다)</td>
+</tr>
+</tbody></table>
+<div class="tip-box"><span class="tip-label">판별 팁</span><p>동사 뒤에 <strong>형용사</strong>가 오고 &quot;S = 형용사&quot; 관계가 성립하면 → <strong>2형식!</strong></p></div>
+<h4>어휘 보강</h4>
+<table class="avoid-break">
+<thead>
+<tr>
+<th>단어</th>
+<th>발음</th>
+<th>뜻</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>defendant</td>
+<td>[dɪˈfendənt]</td>
+<td>피고, 피고인</td>
+</tr>
+<tr>
+<td>remain</td>
+<td>[rɪˈmeɪn]</td>
+<td>(~인 채로) 남다, 유지하다</td>
+</tr>
+<tr>
+<td>silent</td>
+<td>[ˈsaɪlənt]</td>
+<td>침묵하는, 조용한</td>
+</tr>
+<tr>
+<td>throughout</td>
+<td>[θruːˈaʊt]</td>
+<td>~내내, ~동안 줄곧</td>
+</tr>
+<tr>
+<td>investigation</td>
+<td>[ɪnˌvestɪˈɡeɪʃn]</td>
+<td>조사, 수사</td>
+</tr>
+<tr>
+<td>cradle</td>
+<td>[ˈkreɪdl]</td>
+<td>요람, 아기 침대</td>
+</tr>
+<tr>
+<td>constant</td>
+<td>[ˈkɑːnstənt]</td>
+<td>끊임없는, 지속적인</td>
+</tr>
+<tr>
+<td>endeavor</td>
+<td>[ɪnˈdevər]</td>
+<td>노력, 시도</td>
+</tr>
+</tbody></table>
+<h2 style="page-break-before:always;">테마 E: 3/4/5형식 구별 (#50, #59, #69, #78)</h2>
+<h4>3/4/5형식 핵심 구분</h4>
+<table class="avoid-break">
+<thead>
+<tr>
+<th>형식</th>
+<th>구조</th>
+<th>핵심 판별</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>3형식</td>
+<td>S + V + <strong>O</strong> + (전치사구)</td>
+<td>목적어 1개 + 전치사구 = 수식어</td>
+</tr>
+<tr>
+<td>4형식</td>
+<td>S + V + <strong>I.O</strong> + <strong>D.O</strong></td>
+<td>목적어 2개 (전치사 없이 나란히)</td>
+</tr>
+<tr>
+<td>5형식</td>
+<td>S + V + <strong>O</strong> + <strong>O.C</strong></td>
+<td>O = O.C 관계 성립</td>
+</tr>
+</tbody></table>
+<div class="grammar-block">3형식: wrote a letter to fans     → O + 전치사구 (전치사 있음!)
+4형식: wish you success           → I.O + D.O (전치사 없이 나란히)
+5형식: is driving me mad          → O + O.C (me = mad)
+</div>
+<h4>오답 분석</h4>
+<p><strong>#50. The constant noise from the construction site is driving me mad.</strong></p>
+<div class="grammar-block">S = The constant noise (from the construction site = 수식어)
+V = is driving
+O = me
+O.C = mad (형용사)
+
+O = O.C 확인: me = mad ✓ (&quot;나를 미치게 하다&quot;)
+→ 5형식
+</div>
+<p>drive + O + O.C = &quot;~을 ~하게 만들다&quot;</p>
+<div class="tip-box"><span class="tip-label">학생 답 분석</span><p><strong>학생 답 분석</strong>
+<strong>왜 틀렸을까</strong>: &quot;me&quot;까지만 목적어로 보고 &quot;mad&quot;의 역할을 파악하지 못함. 또는 &quot;drive me&quot;를 3형식으로 분석
+<strong>오류 패턴</strong>: 목적격보어(O.C) 인식 실패 — &quot;mad&quot;가 &quot;me&quot;를 보충 설명하는 것을 못 봄
+<strong>집중 포인트</strong>: &quot;drive someone + 형용사(mad/crazy/insane)&quot; = 5형식. &quot;O = O.C&quot; 확인!</p></div>
+<p><strong>#59. I sincerely wish you success in your future endeavors.</strong></p>
+<div class="grammar-block">S = I
+V = wish
+I.O = you (누구에게)
+D.O = success (무엇을)
+수식어 = sincerely(부사), in your future endeavors(전치사구)
+
+I.O ≠ D.O: you ≠ success → 4형식!
+→ 4형식
+</div>
+<div class="tip-box"><span class="tip-label">학생 답 분석</span><p><strong>학생 답 분석</strong>
+<strong>왜 틀렸을까</strong>: &quot;wish you success&quot;에서 두 명사(you, success)가 나란히 오는 4형식 패턴을 인식 못함. &quot;endeavors&quot; 어휘도 어려웠을 것
+<strong>오류 패턴</strong>: I.O + D.O 패턴 미인식
+<strong>집중 포인트</strong>: wish + 사람 + 사물 = 4형식 (&quot;~에게 ~을 빌다&quot;). wish you luck/success/happiness</p></div>
+<p><strong>#69. Can you do me a huge favor for a moment?</strong></p>
+<div class="grammar-block">S = you
+V = do
+I.O = me (누구에게)
+D.O = a huge favor (무엇을)
+수식어 = for a moment(전치사구)
+
+I.O ≠ D.O: me ≠ a huge favor → 4형식!
+→ 4형식
+</div>
+<div class="tip-box"><span class="tip-label">학생 답 분석</span><p><strong>학생 답 분석</strong>
+<strong>왜 틀렸을까</strong>: &quot;do me a favor&quot;라는 관용 표현의 4형식 구조를 인식 못함
+<strong>오류 패턴</strong>: 관용 표현 속 문법 구조 분석 실패
+<strong>집중 포인트</strong>: do + 사람 + a favor = &quot;~에게 부탁을 들어주다&quot; → 4형식</p></div>
+<p><strong>#78. The author wrote a personal letter to each of his fans.</strong></p>
+<div class="grammar-block">S = The author
+V = wrote
+O = a personal letter
+수식어 = to each of his fans (전치사구!)
+
+&quot;to each of his fans&quot;에 전치사 to가 있다 → 전치사구 = 수식어
+→ 3형식 (O가 1개)
+</div>
+<p>비교:</p>
+<div class="grammar-block">3형식: wrote a letter TO his fans   ← &quot;to&quot; 있음 → 전치사구 → 3형식
+4형식: wrote his fans a letter      ← 전치사 없이 I.O+D.O 나란히 → 4형식
+</div>
+<div class="tip-box"><span class="tip-label">학생 답 분석</span><p><strong>학생 답 분석</strong>
+<strong>왜 틀렸을까</strong>: &quot;to each of his fans&quot;를 간접목적어로 착각하여 4형식으로 분석. &quot;편지를 팬들에게 썼다&quot; → 4형식처럼 보이지만 전치사 &quot;to&quot;가 있으면 3형식
+<strong>오류 패턴</strong>: 전치사구를 간접목적어로 착각 — 260215에서도 지적된 핵심 규칙
+<strong>집중 포인트</strong>: 두 명사 사이에 전치사(to/for/of/with)가 있으면 → 무조건 3형식! 4형식은 전치사 없이 나란히!</p></div>
+<h4>4형식 vs 3형식 전환 (복습)</h4>
+<table class="avoid-break">
+<thead>
+<tr>
+<th>4형식 (전치사 없이)</th>
+<th>→</th>
+<th>3형식 (전치사 포함)</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>wrote his fans a letter</td>
+<td>→</td>
+<td>wrote a letter <strong>to</strong> his fans</td>
+</tr>
+<tr>
+<td>wished you success</td>
+<td>→</td>
+<td>wished success <strong>for</strong> you</td>
+</tr>
+<tr>
+<td>did me a favor</td>
+<td>→</td>
+<td>did a favor <strong>for</strong> me</td>
+</tr>
+</tbody></table>
+<div class="page-break-before section-header"><span class="section-num">Section 3</span>복습 체크리스트</div>
+<div class="checklist-group-title">감탄문</div>
+<ul>
+<li><input disabled="" type="checkbox"> 명사 있으면 What, 없으면 How</li>
+<li><input disabled="" type="checkbox"> What + a/an: 형용사의 첫 발음이 모음이면 an (an exciting, an honest)</li>
+<li><input disabled="" type="checkbox"> 복수명사/불가산명사: a/an 안 씀 (What beautiful flowers!)</li>
+</ul>
+<div class="checklist-group-title">의문사 의문문</div>
+<ul>
+<li><input disabled="" type="checkbox"> 의문사 = 주어 → 의문사 + 동사 (do/does/did 없이)</li>
+<li><input disabled="" type="checkbox"> be동사/조동사는 한 문장에 하나만 (will be 이면 be 추가 금지)</li>
+<li><input disabled="" type="checkbox"> 조동사 뒤 주어 = 주격 (I, he, she, we, they)</li>
+</ul>
+<div class="checklist-group-title">1형식 (자동사)</div>
+<ul>
+<li><input disabled="" type="checkbox"> &quot;전치사 + 명사&quot; = 수식어 (목적어 아님!)</li>
+<li><input disabled="" type="checkbox"> go up/go on/go off/break out = 자동사 구동사</li>
+<li><input disabled="" type="checkbox"> work on, drift, sleep, live = 자동사</li>
+</ul>
+<div class="checklist-group-title">2형식 (연결동사)</div>
+<ul>
+<li><input disabled="" type="checkbox"> turn(~해지다), remain(~인 채로) 뒤에 형용사 → 2형식</li>
+<li><input disabled="" type="checkbox"> S = C 관계 확인: leaves = red, defendant = silent</li>
+</ul>
+<div class="checklist-group-title">3/4/5형식</div>
+<ul>
+<li><input disabled="" type="checkbox"> 전치사 있으면 3형식 (wrote a letter <strong>to</strong> fans)</li>
+<li><input disabled="" type="checkbox"> 전치사 없이 명사 나란히 → 4형식 (wish you success)</li>
+<li><input disabled="" type="checkbox"> O = O.C 성립 → 5형식 (driving me mad: me = mad)</li>
+</ul>
+<div class="page-break-before section-header"><span class="section-num">연습</span>Part A. 감탄문 연습 (20문제)</div>
+<p>다음 문장을 감탄문으로 바꿔 쓰시오. (What 또는 How로 시작)</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>1.</strong> She has a very pretty voice.
+<strong>2.</strong> The sunset was really beautiful.
+<strong>3.</strong> They are very delicious cookies.
+<strong>4.</strong> He runs extremely fast.
+<strong>5.</strong> It was an incredibly boring movie.
+<strong>6.</strong> She sings really well.
+<strong>7.</strong> This is very useful information.
+<strong>8.</strong> He told an amazing story.
+<strong>9.</strong> The children played very loudly.
+<strong>10.</strong> She wore an elegant dress.</p>
+<p>다음 빈칸에 What 또는 How를 쓰시오.</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>11.</strong> (     ) a clever idea that was!
+<strong>12.</strong> (     ) beautifully she dances!
+<strong>13.</strong> (     ) terrible weather we are having!
+<strong>14.</strong> (     ) expensive these shoes are!
+<strong>15.</strong> (     ) an interesting book this is!</p>
+<p>다음 중 어법상 올바른 것을 고르시오.</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>16.</strong> (What a / What an) honest boy he is!
+<strong>17.</strong> (What a / What) wonderful news!
+<strong>18.</strong> (How / What) slowly the turtle moves!
+<strong>19.</strong> (What a / What an) unusual experience it was!
+<strong>20.</strong> (How / What a) kind your mother is!</p>
+<h3 class="page-break-before" style="color:#4A90C4; margin-bottom:12px;">Part A. 감탄문 정답 및 해설</h3>
+<table class="avoid-break">
+<thead>
+<tr>
+<th>#</th>
+<th>정답</th>
+<th>해설</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>What a pretty voice she has!</td>
+<td>voice = 단수가산명사 → What + a</td>
+</tr>
+<tr>
+<td>2</td>
+<td>How beautiful the sunset was!</td>
+<td>명사 없이 형용사만 → How</td>
+</tr>
+<tr>
+<td>3</td>
+<td>What delicious cookies they are!</td>
+<td>cookies = 복수명사 → What (a/an 없이)</td>
+</tr>
+<tr>
+<td>4</td>
+<td>How fast he runs!</td>
+<td>부사 fast → How</td>
+</tr>
+<tr>
+<td>5</td>
+<td>What an incredibly boring movie it was!</td>
+<td>movie = 단수가산명사, incredibly 첫 발음 모음 → an</td>
+</tr>
+<tr>
+<td>6</td>
+<td>How well she sings!</td>
+<td>부사 well → How</td>
+</tr>
+<tr>
+<td>7</td>
+<td>What useful information this is!</td>
+<td>information = 불가산명사 → What (a/an 없이)</td>
+</tr>
+<tr>
+<td>8</td>
+<td>What an amazing story he told!</td>
+<td>story = 단수가산명사, amazing 첫 발음 /ə/ 모음 → an</td>
+</tr>
+<tr>
+<td>9</td>
+<td>How loudly the children played!</td>
+<td>부사 loudly → How</td>
+</tr>
+<tr>
+<td>10</td>
+<td>What an elegant dress she wore!</td>
+<td>dress = 단수가산명사, elegant 첫 발음 /ɛ/ 모음 → an</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>What</strong></td>
+<td>&quot;a clever idea&quot; → 명사 있음 → What</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>How</strong></td>
+<td>beautifully = 부사 → How</td>
+</tr>
+<tr>
+<td>13</td>
+<td><strong>What</strong></td>
+<td>&quot;terrible weather&quot; → 명사(weather, 불가산) 있음 → What (a 없이)</td>
+</tr>
+<tr>
+<td>14</td>
+<td><strong>How</strong></td>
+<td>expensive = 형용사, 뒤에 명사 없음 → How</td>
+</tr>
+<tr>
+<td>15</td>
+<td><strong>What</strong></td>
+<td>&quot;an interesting book&quot; → 명사 있음 → What</td>
+</tr>
+<tr>
+<td>16</td>
+<td><strong>What an</strong></td>
+<td>honest의 첫 발음 /ɑː/ = 모음 → an</td>
+</tr>
+<tr>
+<td>17</td>
+<td><strong>What</strong></td>
+<td>news = 불가산명사 → a 없이 What</td>
+</tr>
+<tr>
+<td>18</td>
+<td><strong>How</strong></td>
+<td>slowly = 부사 → How</td>
+</tr>
+<tr>
+<td>19</td>
+<td><strong>What an</strong></td>
+<td>unusual의 첫 발음 /ʌ/ = 모음 → an</td>
+</tr>
+<tr>
+<td>20</td>
+<td><strong>How</strong></td>
+<td>kind = 형용사, 뒤에 명사 없음 → How</td>
+</tr>
+</tbody></table>
+<div class="page-break-before section-header"><span class="section-num">연습</span>Part B. 의문사 의문문 연습 (20문제)</div>
+<p>다음 우리말에 맞게 주어진 단어를 배열하시오.</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>1.</strong> 누가 이 편지를 보냈니? (this letter, who, sent)
+<strong>2.</strong> 그녀는 어디에서 그 책을 찾았니? (the book, find, where, she, did)
+<strong>3.</strong> 무엇이 그를 화나게 만들었니? (made, angry, what, him)
+<strong>4.</strong> 너는 어떻게 그 문제를 풀었니? (solve, how, the problem, you, did)
+<strong>5.</strong> 누가 이 창문을 깼니? (this window, who, broke)</p>
+<p>다음 문장에서 틀린 부분을 찾아 고치시오.</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>6.</strong> Where are you are going now?
+<strong>7.</strong> What did happened yesterday?
+<strong>8.</strong> Who did call you last night?
+<strong>9.</strong> Why should me help him?
+<strong>10.</strong> When will the train will arrive?</p>
+<p>다음 괄호 안에서 올바른 것을 고르시오.</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>11.</strong> What (does make / makes) you happy?
+<strong>12.</strong> Who (did break / broke) the vase?
+<strong>13.</strong> Why should (I / me) wait for him?
+<strong>14.</strong> How (do you can / can you) solve this?
+<strong>15.</strong> What (did happen / happened) to your car?</p>
+<p>다음 대화가 자연스럽도록 의문문을 완성하시오.</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>16.</strong> A: ___________________________? B: My brother did. (누가 그 케이크를 먹었니?)
+<strong>17.</strong> A: ___________________________? B: It started at 3 p.m. (그 회의는 언제 시작했니?)
+<strong>18.</strong> A: ___________________________? B: Because I was sick. (왜 학교에 안 갔니?)
+<strong>19.</strong> A: ___________________________? B: A car accident happened. (무슨 일이 일어났니?)
+<strong>20.</strong> A: ___________________________? B: She is a doctor. (너의 어머니는 뭘 하시니?)</p>
+<h3 class="page-break-before" style="color:#4A90C4; margin-bottom:12px;">Part B. 의문사 의문문 정답 및 해설</h3>
+<table class="avoid-break">
+<thead>
+<tr>
+<th>#</th>
+<th>정답</th>
+<th>해설</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td><strong>Who sent this letter?</strong></td>
+<td>who = 주어 → 의문사 + 동사 (did 불필요)</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>Where did she find the book?</strong></td>
+<td>she = 주어, where = 부사 → 의문사 + did + 주어 + 동사원형</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>What made him angry?</strong></td>
+<td>what = 주어 → 의문사 + 동사 (did 불필요)</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>How did you solve the problem?</strong></td>
+<td>you = 주어, how = 부사 → 의문사 + did + 주어 + 동사원형</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>Who broke this window?</strong></td>
+<td>who = 주어 → 의문사 + 동사 (did 불필요)</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Where <strong>are</strong> you going now?</td>
+<td>are 중복 → 하나 삭제</td>
+</tr>
+<tr>
+<td>7</td>
+<td>What <strong>happened</strong> yesterday?</td>
+<td>what = 주어 → did 불필요. did happened → happened</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Who <strong>called</strong> you last night?</td>
+<td>who = 주어 → did 불필요. did call → called</td>
+</tr>
+<tr>
+<td>9</td>
+<td>Why should <strong>I</strong> help him?</td>
+<td>주어 자리 → 주격 I (me는 목적격)</td>
+</tr>
+<tr>
+<td>10</td>
+<td>When <strong>will</strong> the train arrive?</td>
+<td>will 중복 → 하나 삭제</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>makes</strong></td>
+<td>what = 주어 → 의문사+동사 (do/does 불필요). what은 3인칭 단수 취급</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>broke</strong></td>
+<td>who = 주어 → 의문사+동사 (did 불필요)</td>
+</tr>
+<tr>
+<td>13</td>
+<td><strong>I</strong></td>
+<td>should 뒤 주어 → 주격</td>
+</tr>
+<tr>
+<td>14</td>
+<td><strong>can you</strong></td>
+<td>조동사 + 주어 어순. do 불필요 (can이 조동사)</td>
+</tr>
+<tr>
+<td>15</td>
+<td><strong>happened</strong></td>
+<td>what = 주어 → 의문사+동사 (did 불필요)</td>
+</tr>
+<tr>
+<td>16</td>
+<td><strong>Who ate the cake?</strong></td>
+<td>&quot;My brother did&quot; → who = 주어</td>
+</tr>
+<tr>
+<td>17</td>
+<td><strong>When did the meeting start?</strong></td>
+<td>the meeting = 주어 → did + 주어 + 동사원형</td>
+</tr>
+<tr>
+<td>18</td>
+<td><strong>Why didn&#39;t you go to school?</strong></td>
+<td>you = 주어 → did + 주어 + 동사원형</td>
+</tr>
+<tr>
+<td>19</td>
+<td><strong>What happened?</strong></td>
+<td>what = 주어 → 의문사 + 동사</td>
+</tr>
+<tr>
+<td>20</td>
+<td><strong>What does your mother do?</strong></td>
+<td>your mother = 주어 → does + 주어 + 동사원형</td>
+</tr>
+</tbody></table>
+<div class="page-break-before section-header"><span class="section-num">연습</span>Part C. 1형식 복습 (20문제)</div>
+<p>다음 문장의 형식을 쓰시오 (1형식이 아닌 것도 포함).</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>1.</strong> The train arrived at the station on time.
+<strong>2.</strong> She is working on her assignment diligently.
+<strong>3.</strong> The cat slept peacefully under the warm blanket.
+<strong>4.</strong> The temperature dropped significantly overnight.
+<strong>5.</strong> He traveled extensively throughout Asia.
+<strong>6.</strong> The flowers bloomed beautifully in spring.
+<strong>7.</strong> She is searching for a better solution.
+<strong>8.</strong> The river flows quietly through the valley.
+<strong>9.</strong> A strange event occurred at midnight.
+<strong>10.</strong> He is depending on his parents financially.</p>
+<p>다음 문장이 1형식이면 ○, 아니면 ✗를 쓰고 올바른 형식을 쓰시오.</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>11.</strong> The alarm went off at 6 a.m.
+<strong>12.</strong> The milk went bad in the fridge.
+<strong>13.</strong> She looked at the painting carefully.
+<strong>14.</strong> She looked after the children.
+<strong>15.</strong> The economy grew rapidly last year.
+<strong>16.</strong> The weather grew colder in the evening.
+<strong>17.</strong> He ran quickly to the bus stop.
+<strong>18.</strong> The well ran dry during the drought.</p>
+<p>다음 밑줄 친 부분이 목적어(O)인지 수식어(전치사구)인지 쓰시오.</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>19.</strong> He is working on <strong>a new project</strong>.
+<strong>20.</strong> She is looking for <strong>her lost keys</strong>.</p>
+<h3 class="page-break-before" style="color:#4A90C4; margin-bottom:12px;">Part C. 1형식 정답 및 해설</h3>
+<table class="avoid-break">
+<thead>
+<tr>
+<th>#</th>
+<th>정답</th>
+<th>해설</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td><strong>1형식</strong></td>
+<td>arrived = 자동사. &quot;at the station&quot; = 전치사구(수식어)</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>1형식</strong></td>
+<td>is working = 자동사. &quot;on her assignment&quot; = 전치사구(수식어)</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>1형식</strong></td>
+<td>slept = 자동사. &quot;under the warm blanket&quot; = 전치사구(수식어)</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>1형식</strong></td>
+<td>dropped = 자동사 &quot;떨어지다&quot;. significantly = 부사(수식어)</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>1형식</strong></td>
+<td>traveled = 자동사. &quot;throughout Asia&quot; = 전치사구(수식어)</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>1형식</strong></td>
+<td>bloomed = 자동사 &quot;피다&quot;. beautifully = 부사(수식어)</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>3형식</strong></td>
+<td>is searching for = 타동사구 &quot;찾다&quot;. O = a better solution</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>1형식</strong></td>
+<td>flows = 자동사 &quot;흐르다&quot;. &quot;through the valley&quot; = 전치사구(수식어)</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>1형식</strong></td>
+<td>occurred = 자동사 &quot;발생하다&quot;. &quot;at midnight&quot; = 전치사구(수식어)</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>1형식</strong></td>
+<td>is depending on = 자동사+전치사 &quot;의존하다&quot;. 단, depend on을 타동사구로 보면 3형식도 가능</td>
+</tr>
+<tr>
+<td>11</td>
+<td>○ <strong>1형식</strong></td>
+<td>went off = 자동사 구동사 &quot;울리다&quot;</td>
+</tr>
+<tr>
+<td>12</td>
+<td>✗ <strong>2형식</strong></td>
+<td>went = 연결동사 &quot;~해지다&quot;. bad = 형용사(보어). milk = bad ✓</td>
+</tr>
+<tr>
+<td>13</td>
+<td>○ <strong>1형식</strong></td>
+<td>looked at = 자동사+전치사 &quot;~을 보다&quot;. &quot;the painting&quot; = 전치사의 목적어</td>
+</tr>
+<tr>
+<td>14</td>
+<td>✗ <strong>3형식</strong></td>
+<td>looked after = 타동사구 &quot;돌보다&quot;. O = the children</td>
+</tr>
+<tr>
+<td>15</td>
+<td>○ <strong>1형식</strong></td>
+<td>grew = 자동사 &quot;성장하다&quot;. rapidly = 부사(수식어)</td>
+</tr>
+<tr>
+<td>16</td>
+<td>✗ <strong>2형식</strong></td>
+<td>grew = 연결동사 &quot;~해지다&quot;. colder = 형용사(보어). weather = colder ✓</td>
+</tr>
+<tr>
+<td>17</td>
+<td>○ <strong>1형식</strong></td>
+<td>ran = 자동사 &quot;달리다&quot;. quickly = 부사, &quot;to the bus stop&quot; = 전치사구</td>
+</tr>
+<tr>
+<td>18</td>
+<td>✗ <strong>2형식</strong></td>
+<td>ran = 연결동사 &quot;~해지다&quot;. dry = 형용사(보어). well = dry</td>
+</tr>
+<tr>
+<td>19</td>
+<td><strong>수식어</strong> (전치사구)</td>
+<td>&quot;on&quot;이 전치사 → &quot;on a new project&quot; = 전치사구. work의 목적어 아님</td>
+</tr>
+<tr>
+<td>20</td>
+<td><strong>목적어</strong> (O)</td>
+<td>&quot;look for&quot; = 타동사구 → &quot;her lost keys&quot; = 직접목적어</td>
+</tr>
+</tbody></table>
+<div class="page-break-before section-header"><span class="section-num">연습</span>Part D. 2형식 복습 (20문제)</div>
+<p>다음 문장이 2형식이면 ○, 아니면 ✗를 쓰고 올바른 형식을 쓰시오.</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>1.</strong> The soup remains hot after two hours.
+<strong>2.</strong> He remained at the office until midnight.
+<strong>3.</strong> The sky turned pink during sunset.
+<strong>4.</strong> She turned the page quickly.
+<strong>5.</strong> The food smells delicious.
+<strong>6.</strong> Her voice sounded strange on the phone.
+<strong>7.</strong> The story proved true in the end.
+<strong>8.</strong> He proved his innocence in court.
+<strong>9.</strong> The rumor turned out false.
+<strong>10.</strong> The patient stayed calm throughout the surgery.</p>
+<p>다음 괄호 안에서 올바른 것을 고르시오.</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>11.</strong> The milk tastes (sour / sourly).
+<strong>12.</strong> He grew (nervous / nervously) before the interview.
+<strong>13.</strong> The flowers smell (sweet / sweetly).
+<strong>14.</strong> She appeared (confident / confidently) during the presentation.
+<strong>15.</strong> The plan seemed (reasonable / reasonably) at first.</p>
+<p>다음 문장의 형식을 쓰시오.</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>16.</strong> The water in the lake remained crystal clear.
+<strong>17.</strong> The situation seems quite hopeless now.
+<strong>18.</strong> His face turned bright red with embarrassment.
+<strong>19.</strong> The students fell silent when the teacher entered.
+<strong>20.</strong> The meat went bad because of the heat.</p>
+<h3 class="page-break-before" style="color:#4A90C4; margin-bottom:12px;">Part D. 2형식 정답 및 해설</h3>
+<table class="avoid-break">
+<thead>
+<tr>
+<th>#</th>
+<th>정답</th>
+<th>해설</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td>○ <strong>2형식</strong></td>
+<td>remains = 연결동사. hot = 형용사(보어). soup = hot ✓</td>
+</tr>
+<tr>
+<td>2</td>
+<td>✗ <strong>1형식</strong></td>
+<td>remained = 자동사 &quot;남다&quot;. &quot;at the office&quot; = 전치사구(수식어). 형용사(보어) 없음</td>
+</tr>
+<tr>
+<td>3</td>
+<td>○ <strong>2형식</strong></td>
+<td>turned = 연결동사 &quot;~해지다&quot;. pink = 형용사(보어). sky = pink ✓</td>
+</tr>
+<tr>
+<td>4</td>
+<td>✗ <strong>3형식</strong></td>
+<td>turned = 타동사 &quot;넘기다&quot;. O = the page. quickly = 부사</td>
+</tr>
+<tr>
+<td>5</td>
+<td>○ <strong>2형식</strong></td>
+<td>smells = 감각동사(연결동사). delicious = 형용사(보어). food = delicious ✓</td>
+</tr>
+<tr>
+<td>6</td>
+<td>○ <strong>2형식</strong></td>
+<td>sounded = 감각동사(연결동사). strange = 형용사(보어). voice = strange ✓</td>
+</tr>
+<tr>
+<td>7</td>
+<td>○ <strong>2형식</strong></td>
+<td>proved = 연결동사 &quot;~로 판명되다&quot;. true = 형용사(보어). story = true ✓</td>
+</tr>
+<tr>
+<td>8</td>
+<td>✗ <strong>3형식</strong></td>
+<td>proved = 타동사 &quot;증명하다&quot;. O = his innocence</td>
+</tr>
+<tr>
+<td>9</td>
+<td>○ <strong>2형식</strong></td>
+<td>turned out = 연결동사 &quot;~로 드러나다&quot;. false = 형용사(보어)</td>
+</tr>
+<tr>
+<td>10</td>
+<td>○ <strong>2형식</strong></td>
+<td>stayed = 연결동사 &quot;~인 채로 있다&quot;. calm = 형용사(보어). patient = calm ✓</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>sour</strong></td>
+<td>감각동사 taste + 형용사. 부사(sourly) 불가</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>nervous</strong></td>
+<td>연결동사 grow + 형용사. &quot;긴장해지다&quot; = 2형식</td>
+</tr>
+<tr>
+<td>13</td>
+<td><strong>sweet</strong></td>
+<td>감각동사 smell + 형용사. 부사(sweetly) 불가</td>
+</tr>
+<tr>
+<td>14</td>
+<td><strong>confident</strong></td>
+<td>연결동사 appear + 형용사. 부사(confidently) 불가</td>
+</tr>
+<tr>
+<td>15</td>
+<td><strong>reasonable</strong></td>
+<td>연결동사 seem + 형용사. 부사(reasonably) 불가</td>
+</tr>
+<tr>
+<td>16</td>
+<td><strong>2형식</strong></td>
+<td>remained = 연결동사. crystal clear = 형용사(보어). water = clear ✓</td>
+</tr>
+<tr>
+<td>17</td>
+<td><strong>2형식</strong></td>
+<td>seems = 연결동사. hopeless = 형용사(보어). situation = hopeless ✓</td>
+</tr>
+<tr>
+<td>18</td>
+<td><strong>2형식</strong></td>
+<td>turned = 연결동사. bright red = 형용사(보어). face = red ✓</td>
+</tr>
+<tr>
+<td>19</td>
+<td><strong>2형식</strong></td>
+<td>fell = 연결동사 &quot;~해지다&quot;. silent = 형용사(보어). students = silent ✓</td>
+</tr>
+<tr>
+<td>20</td>
+<td><strong>2형식</strong></td>
+<td>went = 연결동사 &quot;~해지다&quot;. bad = 형용사(보어). meat = bad ✓</td>
+</tr>
+</tbody></table>
+<div class="page-break-before section-header"><span class="section-num">연습</span>Part E. 3/4/5형식 구별 (20문제)</div>
+<p>다음 문장의 형식을 쓰시오.</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>1.</strong> She sent her friend a birthday card.
+<strong>2.</strong> She sent a birthday card to her friend.
+<strong>3.</strong> The teacher made the students excited.
+<strong>4.</strong> The teacher made the students sandwiches.
+<strong>5.</strong> He painted the fence white.
+<strong>6.</strong> He painted a beautiful picture for his wife.
+<strong>7.</strong> I found him a reliable partner.
+<strong>8.</strong> I found him a good book.
+<strong>9.</strong> They elected her president of the club.
+<strong>10.</strong> The cold weather drove everyone indoors.</p>
+<p>다음 문장에서 밑줄 친 부분의 역할을 쓰시오 (O, I.O, D.O, O.C).</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>11.</strong> She gave <strong>me</strong> a chance.
+<strong>12.</strong> The news made <strong>her</strong> worried.
+<strong>13.</strong> I wish <strong>you</strong> happiness.
+<strong>14.</strong> He considers <strong>the project</strong> important.
+<strong>15.</strong> She wrote a long letter <strong>to her parents</strong>.</p>
+<p>다음 문장이 3형식이면 ○, 4형식이면 △, 5형식이면 ✗를 쓰시오.</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>16.</strong> He offered me his seat on the bus.
+<strong>17.</strong> She left the window open all night.
+<strong>18.</strong> He reminded me of the appointment.
+<strong>19.</strong> Can you lend me your pen?
+<strong>20.</strong> The loud music is driving the neighbors crazy.</p>
+<h3 class="page-break-before" style="color:#4A90C4; margin-bottom:12px;">Part E. 3/4/5형식 정답 및 해설</h3>
+<table class="avoid-break">
+<thead>
+<tr>
+<th>#</th>
+<th>정답</th>
+<th>해설</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td><strong>4형식</strong></td>
+<td>sent + I.O(her friend) + D.O(a birthday card). 전치사 없이 나란히</td>
+</tr>
+<tr>
+<td>2</td>
+<td><strong>3형식</strong></td>
+<td>sent + O(a birthday card). &quot;to her friend&quot; = 전치사구(수식어)</td>
+</tr>
+<tr>
+<td>3</td>
+<td><strong>5형식</strong></td>
+<td>made + O(the students) + O.C(excited). students = excited ✓</td>
+</tr>
+<tr>
+<td>4</td>
+<td><strong>4형식</strong></td>
+<td>made + I.O(the students) + D.O(sandwiches). students ≠ sandwiches</td>
+</tr>
+<tr>
+<td>5</td>
+<td><strong>5형식</strong></td>
+<td>painted + O(the fence) + O.C(white). fence = white ✓</td>
+</tr>
+<tr>
+<td>6</td>
+<td><strong>3형식</strong></td>
+<td>painted + O(a beautiful picture). &quot;for his wife&quot; = 전치사구(수식어)</td>
+</tr>
+<tr>
+<td>7</td>
+<td><strong>5형식</strong></td>
+<td>found + O(him) + O.C(a reliable partner). him = a reliable partner ✓</td>
+</tr>
+<tr>
+<td>8</td>
+<td><strong>4형식</strong></td>
+<td>found + I.O(him) + D.O(a good book). him ≠ a book</td>
+</tr>
+<tr>
+<td>9</td>
+<td><strong>5형식</strong></td>
+<td>elected + O(her) + O.C(president). her = president ✓</td>
+</tr>
+<tr>
+<td>10</td>
+<td><strong>5형식</strong></td>
+<td>drove + O(everyone) + O.C(indoors). &quot;everyone을 실내로 몰아넣었다&quot;</td>
+</tr>
+<tr>
+<td>11</td>
+<td><strong>I.O</strong> (간접목적어)</td>
+<td>gave + I.O(me) + D.O(a chance) → 4형식</td>
+</tr>
+<tr>
+<td>12</td>
+<td><strong>O</strong> (목적어)</td>
+<td>made + O(her) + O.C(worried) → 5형식</td>
+</tr>
+<tr>
+<td>13</td>
+<td><strong>I.O</strong> (간접목적어)</td>
+<td>wish + I.O(you) + D.O(happiness) → 4형식</td>
+</tr>
+<tr>
+<td>14</td>
+<td><strong>O</strong> (목적어)</td>
+<td>considers + O(the project) + O.C(important) → 5형식</td>
+</tr>
+<tr>
+<td>15</td>
+<td><strong>수식어</strong> (전치사구)</td>
+<td>wrote + O(a long letter). &quot;to her parents&quot; = 전치사구 → 3형식</td>
+</tr>
+<tr>
+<td>16</td>
+<td>△ <strong>4형식</strong></td>
+<td>offered + I.O(me) + D.O(his seat). me ≠ his seat → 4형식</td>
+</tr>
+<tr>
+<td>17</td>
+<td>✗ <strong>5형식</strong></td>
+<td>left + O(the window) + O.C(open). window = open ✓</td>
+</tr>
+<tr>
+<td>18</td>
+<td>○ <strong>3형식</strong></td>
+<td>reminded + O(me). &quot;of the appointment&quot; = 전치사구(수식어)</td>
+</tr>
+<tr>
+<td>19</td>
+<td>△ <strong>4형식</strong></td>
+<td>lend + I.O(me) + D.O(your pen). me ≠ pen → 4형식</td>
+</tr>
+<tr>
+<td>20</td>
+<td>✗ <strong>5형식</strong></td>
+<td>is driving + O(the neighbors) + O.C(crazy). neighbors = crazy ✓</td>
+</tr>
+</tbody></table>
+
+
+<hr class="section-divider">
+<p style="text-align:center; color:#a0aec0; font-size:9pt; margin-top:30px;">
+  피드백지 작성 완료 — 2026. 02. 19
+</p>
+</body>
+</html>

@@ -1,0 +1,102 @@
+/* =================================================================== */
+/* comparison-table.css — 비교표 컴포넌트                               */
+/* Vera's Document Studio                                               */
+/* =================================================================== */
+
+/**
+ * 비교표
+ *
+ * 용도: 문법 개념 비교 (직설법 vs 가정법, 현재완료 vs 과거 등)
+ *
+ * 마크업 예시:
+ * <table class="comparison-table">
+ *   <thead>
+ *     <tr>
+ *       <th>구분</th>
+ *       <th>직설법</th>
+ *       <th>가정법</th>
+ *     </tr>
+ *   </thead>
+ *   <tbody>
+ *     <tr>
+ *       <td>의미</td>
+ *       <td>사실</td>
+ *       <td>가정/반대</td>
+ *     </tr>
+ *   </tbody>
+ * </table>
+ */
+
+.comparison-table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin: var(--space-lg) 0 !important;
+    font-size: var(--text-base) !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+}
+
+.comparison-table caption {
+    font-size: var(--text-md) !important;
+    font-weight: 600 !important;
+    color: var(--color-text-primary) !important;
+    margin-bottom: var(--space-md) !important;
+    text-align: left !important;
+}
+
+.comparison-table thead {
+    background-color: var(--color-accent-dark) !important;
+}
+
+.comparison-table thead th {
+    color: var(--color-white) !important;
+    font-weight: 600 !important;
+    font-size: var(--text-base) !important;
+    padding: var(--space-md) var(--space-sm) !important;
+    text-align: center !important;
+    border: 1px solid var(--color-accent-dark) !important;
+}
+
+.comparison-table thead th:first-child {
+    background-color: var(--color-accent-primary) !important;
+    border-color: var(--color-accent-primary) !important;
+}
+
+.comparison-table tbody td {
+    padding: var(--space-md) var(--space-sm) !important;
+    border: 1px solid var(--color-border-default) !important;
+    vertical-align: top !important;
+    line-height: var(--leading-normal) !important;
+}
+
+.comparison-table tbody td:first-child {
+    font-weight: 600 !important;
+    background-color: var(--color-bg-subtle) !important;
+    color: var(--color-text-primary) !important;
+    text-align: center !important;
+}
+
+.comparison-table tbody td b,
+.comparison-table tbody td strong {
+    color: var(--color-accent-dark) !important;
+    font-weight: 700 !important;
+}
+
+.comparison-table .eng-text {
+    font-family: var(--font-eng) !important;
+}
+
+/* 줄무늬 변형 (striped) */
+.comparison-table--striped tbody tr:nth-child(even) td {
+    background-color: var(--color-bg-muted) !important;
+}
+
+.comparison-table--striped tbody tr:nth-child(even) td:first-child {
+    background-color: var(--color-bg-subtle) !important;
+}
+
+/* 컴팩트 변형 (좁은 간격) */
+.comparison-table--compact tbody td {
+    padding: var(--space-sm) var(--space-xs) !important;
+    font-size: var(--text-sm) !important;
+}

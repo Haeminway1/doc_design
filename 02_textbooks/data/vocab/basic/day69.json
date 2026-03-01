@@ -1,0 +1,507 @@
+{
+  "bookId": "vocab-basic",
+  "day": 69,
+  "theme": "수학과 통계 (Mathematics and Statistics)",
+  "words": [
+    {
+      "word": "mathematics",
+      "pronunciation": "[mæ̀θəmǽtiks]",
+      "partOfSpeech": "n.",
+      "meaning": "수학",
+      "example": {
+        "en": "Mathematics is the language of the universe.",
+        "ko": "수학은 우주의 언어이다."
+      }
+    },
+    {
+      "word": "arithmetic",
+      "pronunciation": "[əríθmətik]",
+      "partOfSpeech": "n.",
+      "meaning": "산수",
+      "example": {
+        "en": "Basic arithmetic includes addition, subtraction, multiplication, and division.",
+        "ko": "기초 산수는 덧셈, 뺄셈, 곱셈, 나눗셈을 포함한다."
+      }
+    },
+    {
+      "word": "algebra",
+      "pronunciation": "[ǽldʒəbrə]",
+      "partOfSpeech": "n.",
+      "meaning": "대수학",
+      "example": {
+        "en": "In algebra, we use letters to represent unknown numbers.",
+        "ko": "대수학에서 우리는 미지수를 나타내기 위해 문자를 사용한다."
+      }
+    },
+    {
+      "word": "geometry",
+      "pronunciation": "[dʒiάmətri]",
+      "partOfSpeech": "n.",
+      "meaning": "기하학",
+      "example": {
+        "en": "Geometry is the study of shapes, sizes, and positions of figures.",
+        "ko": "기하학은 도형의 모양, 크기, 위치를 연구하는 학문이다."
+      }
+    },
+    {
+      "word": "trigonometry",
+      "pronunciation": "[trìgənάmətri]",
+      "partOfSpeech": "n.",
+      "meaning": "삼각법",
+      "example": {
+        "en": "Trigonometry deals with the relationships between the sides and angles of triangles.",
+        "ko": "삼각법은 삼각형의 변과 각 사이의 관계를 다룬다."
+      }
+    },
+    {
+      "word": "calculus",
+      "pronunciation": "[kǽlkjuləs]",
+      "partOfSpeech": "n.",
+      "meaning": "미적분학",
+      "example": {
+        "en": "Calculus is a branch of mathematics that studies rates of change.",
+        "ko": "미적분학은 변화율을 연구하는 수학의 한 분야이다."
+      }
+    },
+    {
+      "word": "statistics",
+      "pronunciation": "[stətístiks]",
+      "partOfSpeech": "n.",
+      "meaning": "통계학, 통계 자료",
+      "example": {
+        "en": "Statistics are used to analyze and interpret data.",
+        "ko": "통계는 데이터를 분석하고 해석하는 데 사용된다."
+      }
+    },
+    {
+      "word": "probability",
+      "pronunciation": "[prὰbəbíləti]",
+      "partOfSpeech": "n.",
+      "meaning": "확률",
+      "example": {
+        "en": "The probability of flipping a coin and getting heads is 50%.",
+        "ko": "동전을 던져 앞면이 나올 확률은 50%이다."
+      }
+    },
+    {
+      "word": "equation",
+      "pronunciation": "[ikwéiʒən]",
+      "partOfSpeech": "n.",
+      "meaning": "방정식",
+      "example": {
+        "en": "Can you solve this algebraic equation?",
+        "ko": "이 대수 방정식을 풀 수 있나요?"
+      }
+    },
+    {
+      "word": "formula",
+      "pronunciation": "[fɔ́ːrmjulə]",
+      "partOfSpeech": "n.",
+      "meaning": "공식",
+      "example": {
+        "en": "The formula for the area of a circle is πr².",
+        "ko": "원의 넓이 공식은 πr²이다."
+      }
+    },
+    {
+      "word": "theorem",
+      "pronunciation": "[θíːərəm]",
+      "partOfSpeech": "n.",
+      "meaning": "정리",
+      "example": {
+        "en": "The Pythagorean theorem relates the sides of a right triangle.",
+        "ko": "피타고라스의 정리는 직각삼각형의 변들을 관련시킨다."
+      }
+    },
+    {
+      "word": "proof",
+      "pronunciation": "[pruːf]",
+      "partOfSpeech": "n.",
+      "meaning": "증명",
+      "example": {
+        "en": "The mathematician presented a rigorous proof of the theorem.",
+        "ko": "그 수학자는 그 정리에 대한 엄밀한 증명을 제시했다."
+      }
+    },
+    {
+      "word": "function",
+      "pronunciation": "[fʌ́&eng;kʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "함수",
+      "example": {
+        "en": "A linear function can be represented by a straight line on a graph.",
+        "ko": "선형 함수는 그래프 상에서 직선으로 나타낼 수 있다."
+      }
+    },
+    {
+      "word": "graph",
+      "pronunciation": "[græf]",
+      "partOfSpeech": "n.",
+      "meaning": "그래프",
+      "example": {
+        "en": "The graph shows the company's sales over the last year.",
+        "ko": "그래프는 작년 한 해 동안의 회사 매출을 보여준다."
+      }
+    },
+    {
+      "word": "diagram",
+      "pronunciation": "[dáiəgræ̀m]",
+      "partOfSpeech": "n.",
+      "meaning": "도해, 그림",
+      "example": {
+        "en": "The diagram explains how the machine works.",
+        "ko": "그 도해는 기계가 어떻게 작동하는지 설명한다."
+      }
+    },
+    {
+      "word": "figure",
+      "pronunciation": "[fígjər]",
+      "partOfSpeech": "n.",
+      "meaning": "도형, 숫자",
+      "example": {
+        "en": "A square is a four-sided figure.",
+        "ko": "정사각형은 네 개의 변을 가진 도형이다."
+      }
+    },
+    {
+      "word": "triangle",
+      "pronunciation": "[tráiæ̀&eng;gl]",
+      "partOfSpeech": "n.",
+      "meaning": "삼각형",
+      "example": {
+        "en": "The sum of the angles in a triangle is 180 degrees.",
+        "ko": "삼각형의 내각의 합은 180도이다."
+      }
+    },
+    {
+      "word": "square",
+      "pronunciation": "[skwεər]",
+      "partOfSpeech": "n.",
+      "meaning": "정사각형",
+      "example": {
+        "en": "A square has four equal sides and four right angles.",
+        "ko": "정사각형은 네 개의 같은 변과 네 개의 직각을 가지고 있다."
+      }
+    },
+    {
+      "word": "rectangle",
+      "pronunciation": "[réktæ̀&eng;gl]",
+      "partOfSpeech": "n.",
+      "meaning": "직사각형",
+      "example": {
+        "en": "The area of a rectangle is length times width.",
+        "ko": "직사각형의 넓이는 가로 곱하기 세로이다."
+      }
+    },
+    {
+      "word": "circle",
+      "pronunciation": "[sə́ːrkl]",
+      "partOfSpeech": "n.",
+      "meaning": "원",
+      "example": {
+        "en": "Draw a circle with a radius of 5 cm.",
+        "ko": "반지름이 5cm인 원을 그리세요."
+      }
+    },
+    {
+      "word": "sphere",
+      "pronunciation": "[sfiər]",
+      "partOfSpeech": "n.",
+      "meaning": "구",
+      "example": {
+        "en": "A ball is a common example of a sphere.",
+        "ko": "공은 구의 흔한 예이다."
+      }
+    },
+    {
+      "word": "cylinder",
+      "pronunciation": "[síləndər]",
+      "partOfSpeech": "n.",
+      "meaning": "원기둥",
+      "example": {
+        "en": "A can of soup is shaped like a cylinder.",
+        "ko": "수프 캔은 원기둥 모양이다."
+      }
+    },
+    {
+      "word": "fraction",
+      "pronunciation": "[frǽkʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "분수",
+      "example": {
+        "en": "One-half (1/2) is a simple fraction.",
+        "ko": "2분의 1은 간단한 분수이다."
+      }
+    },
+    {
+      "word": "decimal",
+      "pronunciation": "[désəməl]",
+      "partOfSpeech": "n.",
+      "meaning": "소수",
+      "example": {
+        "en": "Please write the answer as a decimal, not a fraction.",
+        "ko": "답을 분수가 아닌 소수로 써주세요."
+      }
+    },
+    {
+      "word": "percentage",
+      "pronunciation": "[pərséntidʒ]",
+      "partOfSpeech": "n.",
+      "meaning": "백분율, 퍼센트",
+      "example": {
+        "en": "What percentage of students passed the exam?",
+        "ko": "시험에 합격한 학생의 비율은 몇 퍼센트입니까?"
+      }
+    },
+    {
+      "word": "ratio",
+      "pronunciation": "[réiʃiou]",
+      "partOfSpeech": "n.",
+      "meaning": "비율",
+      "example": {
+        "en": "The ratio of boys to girls in the class is two to one.",
+        "ko": "그 반의 남학생 대 여학생 비율은 2대 1이다."
+      }
+    },
+    {
+      "word": "proportion",
+      "pronunciation": "[prəpɔ́ːrʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "비율, 비례",
+      "example": {
+        "en": "A large proportion of the population lives in cities.",
+        "ko": "인구의 많은 비율이 도시에 산다."
+      }
+    },
+    {
+      "word": "average",
+      "pronunciation": "[ǽvəridʒ]",
+      "partOfSpeech": "n.",
+      "meaning": "평균",
+      "example": {
+        "en": "The average age of the students is 21.",
+        "ko": "학생들의 평균 나이는 21세이다."
+      }
+    },
+    {
+      "word": "median",
+      "pronunciation": "[míːdiən]",
+      "partOfSpeech": "n.",
+      "meaning": "중앙값",
+      "example": {
+        "en": "The median income is a better indicator than the average income.",
+        "ko": "중앙 소득은 평균 소득보다 더 나은 지표이다."
+      }
+    },
+    {
+      "word": "mode",
+      "pronunciation": "[moud]",
+      "partOfSpeech": "n.",
+      "meaning": "최빈값",
+      "example": {
+        "en": "In the data set {1, 2, 2, 3, 4}, the mode is 2.",
+        "ko": "데이터 집합 {1, 2, 2, 3, 4}에서 최빈값은 2이다."
+      }
+    },
+    {
+      "word": "range",
+      "pronunciation": "[reindʒ]",
+      "partOfSpeech": "n.",
+      "meaning": "범위",
+      "example": {
+        "en": "The test scores have a wide range from 50 to 100.",
+        "ko": "시험 점수는 50에서 100까지 넓은 범위를 가진다."
+      }
+    },
+    {
+      "word": "deviation",
+      "pronunciation": "[dìːviéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "편차",
+      "example": {
+        "en": "Standard deviation measures how spread out the data is.",
+        "ko": "표준 편차는 데이터가 얼마나 퍼져 있는지를 측정한다."
+      }
+    },
+    {
+      "word": "correlation",
+      "pronunciation": "[kɔ̀ːrəléiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "상관관계",
+      "example": {
+        "en": "There is a strong correlation between smoking and lung cancer.",
+        "ko": "흡연과 폐암 사이에는 강한 상관관계가 있다."
+      }
+    },
+    {
+      "word": "regression",
+      "pronunciation": "[rigréʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "회귀",
+      "example": {
+        "en": "Regression analysis is a statistical method to model the relationship between variables.",
+        "ko": "회귀 분석은 변수 간의 관계를 모델링하는 통계적 방법이다."
+      }
+    },
+    {
+      "word": "sample",
+      "pronunciation": "[sǽmpl]",
+      "partOfSpeech": "n.",
+      "meaning": "표본",
+      "example": {
+        "en": "The survey was based on a random sample of 1,000 people.",
+        "ko": "그 조사는 1,000명의 무작위 표본을 기반으로 했다."
+      }
+    },
+    {
+      "word": "population",
+      "pronunciation": "[pὰpjuléiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "모집단",
+      "example": {
+        "en": "The sample was drawn from the entire student population.",
+        "ko": "그 표본은 전체 학생 모집단에서 추출되었다."
+      }
+    },
+    {
+      "word": "interpretation",
+      "pronunciation": "[intə̀ːrpritéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "해석",
+      "example": {
+        "en": "The interpretation of the results requires careful consideration.",
+        "ko": "결과에 대한 해석은 신중한 고려를 필요로 한다."
+      }
+    },
+    {
+      "word": "prediction",
+      "pronunciation": "[pridíkʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "예측",
+      "example": {
+        "en": "The model's prediction was accurate.",
+        "ko": "그 모델의 예측은 정확했다."
+      }
+    },
+    {
+      "word": "estimation",
+      "pronunciation": "[èstəméiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "추정",
+      "example": {
+        "en": "The estimation of the total cost was lower than the actual amount.",
+        "ko": "총비용의 추정치는 실제 금액보다 낮았다."
+      }
+    },
+    {
+      "word": "approximation",
+      "pronunciation": "[əprὰksəméiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "근사치",
+      "example": {
+        "en": "The result is an approximation, not an exact value.",
+        "ko": "그 결과는 정확한 값이 아닌 근사치이다."
+      }
+    },
+    {
+      "word": "synergistic",
+      "pronunciation": "[ˌsɪnərˈdʒɪstɪk]",
+      "partOfSpeech": "adj.",
+      "meaning": "상승효과를 일으키는, 협력적인",
+      "example": {
+        "en": "The two companies formed a synergistic partnership that benefited both parties.",
+        "ko": "두 회사는 양측 모두에게 이익이 되는 상승효과적 파트너십을 형성했다."
+      }
+    },
+    {
+      "word": "antagonistic",
+      "pronunciation": "[ænˌtæɡəˈnɪstɪk]",
+      "partOfSpeech": "adj.",
+      "meaning": "적대적인, 대립하는",
+      "example": {
+        "en": "The antagonistic relationship between the two teams led to intense competition.",
+        "ko": "두 팀 간의 적대적 관계는 치열한 경쟁으로 이어졌다."
+      }
+    },
+    {
+      "word": "reciprocal",
+      "pronunciation": "[rɪˈsɪprəkl]",
+      "partOfSpeech": "adj.",
+      "meaning": "상호적인, 호혜적인",
+      "example": {
+        "en": "The reciprocal agreement ensured mutual benefits for all participating organizations.",
+        "ko": "상호적 협약은 모든 참여 조직들에게 상호 이익을 보장했다."
+      }
+    },
+    {
+      "word": "symbiotic",
+      "pronunciation": "[ˌsɪmbaɪˈɒtɪk]",
+      "partOfSpeech": "adj.",
+      "meaning": "공생의, 상부상조하는",
+      "example": {
+        "en": "The two companies developed a symbiotic relationship that enhanced their market position.",
+        "ko": "두 회사는 그들의 시장 위치를 강화하는 공생 관계를 발전시켰다."
+      }
+    },
+    {
+      "word": "cutthroat",
+      "pronunciation": "[ˈkʌtθroʊt]",
+      "partOfSpeech": "adj.",
+      "meaning": "극심한, 무자비한 (경쟁)",
+      "example": {
+        "en": "The cutthroat competition in the tech industry led to rapid innovation.",
+        "ko": "기술 산업의 무자비한 경쟁은 빠른 혁신으로 이어졌다."
+      }
+    },
+    {
+      "word": "collusive",
+      "pronunciation": "[kəˈluːsɪv]",
+      "partOfSpeech": "adj.",
+      "meaning": "담합의, 공모의",
+      "example": {
+        "en": "The companies were accused of collusive practices in price-fixing.",
+        "ko": "그 기업들은 가격 담합 행위로 고발되었다."
+      }
+    },
+    {
+      "word": "predatory",
+      "pronunciation": "[ˈpredətɔːri]",
+      "partOfSpeech": "adj.",
+      "meaning": "약탈적인, 포식성의",
+      "example": {
+        "en": "The company was criticized for its predatory pricing strategies.",
+        "ko": "그 회사는 약탈적 가격 전략으로 비판을 받았다."
+      }
+    },
+    {
+      "word": "random variable",
+      "pronunciation": "/ˈrændəm ˈvɛəriəbl/",
+      "partOfSpeech": "n.",
+      "meaning": "확률 실험의 각 결과에 실수를 대응시키는 함수로, 보통 X, Y 등으로 표기되며 확률분포로 특징지어진다.",
+      "example": {
+        "en": "Let X be the random variable representing the number of heads in three fair coin tosses.",
+        "ko": "X를 공정한 동전을 세 번 던질 때 나오는 앞면의 개수를 나타내는 확률변수라고 하자."
+      }
+    },
+    {
+      "word": "density function",
+      "pronunciation": "/ˈdɛnsɪti ˈfʌ&eng;kʃən/",
+      "partOfSpeech": "n.",
+      "meaning": "확률밀도함수(pdf)라고도 하며, 연속 확률변수의 비음수 함수 f(x)로서 임의의 집합에 대한 ∫ f(x) dx가 그 집합에 속할 확률이 되고 ∫_{−∞}^{∞} f(x) dx = 1을 만족한다.",
+      "example": {
+        "en": "The standard normal density function is f(x) = (1/√(2π)) e^(−x²/2).",
+        "ko": "표준정규분포의 밀도함수는 f(x) = (1/√(2π)) e^(−x²/2)이다."
+      }
+    },
+    {
+      "word": "cumulative distribution function",
+      "pronunciation": "/ˈkjuːmjələtɪv ˌdɪstrɪˈbjuːʃən ˈfʌ&eng;kʃən/",
+      "partOfSpeech": "n.",
+      "meaning": "확률변수 X에 대해 F(x)=P(X≤x)로 정의되는 비감소이며 우연속인 함수로, x→−∞에서 0, x→∞에서 1에 수렴한다.",
+      "example": {
+        "en": "The cumulative distribution function of an exponential(λ) variable is F(x) = 1 − e^(−λx) for x ≥ 0.",
+        "ko": "지수분포(λ)의 누적분포함수는 x ≥ 0에서 F(x) = 1 − e^(−λx)이다."
+      }
+    }
+  ]
+}

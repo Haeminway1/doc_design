@@ -1,0 +1,507 @@
+{
+  "bookId": "vocab-basic",
+  "day": 66,
+  "theme": "동물과 생물학 (Animals and Biology)",
+  "words": [
+    {
+      "word": "biology",
+      "pronunciation": "[baiάlədʒi]",
+      "partOfSpeech": "n.",
+      "meaning": "생물학",
+      "example": {
+        "en": "Biology is the scientific study of living things.",
+        "ko": "생물학은 생명체를 과학적으로 연구하는 학문이다."
+      }
+    },
+    {
+      "word": "zoology",
+      "pronunciation": "[zouάlədʒi]",
+      "partOfSpeech": "n.",
+      "meaning": "동물학",
+      "example": {
+        "en": "Zoology is the branch of biology that studies the animal kingdom.",
+        "ko": "동물학은 동물계를 연구하는 생물학의 한 분야이다."
+      }
+    },
+    {
+      "word": "botany",
+      "pronunciation": "[bάtəni]",
+      "partOfSpeech": "n.",
+      "meaning": "식물학",
+      "example": {
+        "en": "She is a professor of botany at the university.",
+        "ko": "그녀는 그 대학의 식물학 교수이다."
+      }
+    },
+    {
+      "word": "ecology",
+      "pronunciation": "[ikάlədʒi]",
+      "partOfSpeech": "n.",
+      "meaning": "생태학",
+      "example": {
+        "en": "Ecology studies the relationships between organisms and their environment.",
+        "ko": "생태학은 유기체와 그들의 환경 사이의 관계를 연구한다."
+      }
+    },
+    {
+      "word": "adaptation",
+      "pronunciation": "[æ̀dəptéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "적응",
+      "example": {
+        "en": "Camouflage is a form of adaptation that helps animals hide.",
+        "ko": "위장은 동물이 숨는 것을 돕는 적응의 한 형태이다."
+      }
+    },
+    {
+      "word": "mutation",
+      "pronunciation": "[mjuːtéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "돌연변이",
+      "example": {
+        "en": "A genetic mutation can cause diseases.",
+        "ko": "유전적 돌연변이는 질병을 유발할 수 있다."
+      }
+    },
+    {
+      "word": "genetics",
+      "pronunciation": "[dʒənétiks]",
+      "partOfSpeech": "n.",
+      "meaning": "유전학",
+      "example": {
+        "en": "Genetics is the study of genes and heredity.",
+        "ko": "유전학은 유전자와 유전을 연구하는 학문이다."
+      }
+    },
+    {
+      "word": "heredity",
+      "pronunciation": "[hirédəti]",
+      "partOfSpeech": "n.",
+      "meaning": "유전",
+      "example": {
+        "en": "Eye color is determined by heredity.",
+        "ko": "눈 색깔은 유전에 의해 결정된다."
+      }
+    },
+    {
+      "word": "chromosome",
+      "pronunciation": "[króuməsòum]",
+      "partOfSpeech": "n.",
+      "meaning": "염색체",
+      "example": {
+        "en": "Humans have 23 pairs of chromosomes.",
+        "ko": "인간은 23쌍의 염색체를 가지고 있다."
+      }
+    },
+    {
+      "word": "DNA",
+      "pronunciation": "[diː en ei]",
+      "partOfSpeech": "n.",
+      "meaning": "DNA, 디옥시리보핵산",
+      "example": {
+        "en": "DNA carries the genetic instructions for all known organisms.",
+        "ko": "DNA는 모든 알려진 유기체의 유전 정보를 담고 있다."
+      }
+    },
+    {
+      "word": "species",
+      "pronunciation": "[spíːʃiːz]",
+      "partOfSpeech": "n.",
+      "meaning": "(생물 분류의) 종",
+      "example": {
+        "en": "Many species of animals are in danger of extinction.",
+        "ko": "많은 종의 동물들이 멸종 위기에 처해 있다."
+      }
+    },
+    {
+      "word": "genus",
+      "pronunciation": "[dʒíːnəs]",
+      "partOfSpeech": "n.",
+      "meaning": "(생물 분류의) 속",
+      "example": {
+        "en": "Lions and tigers belong to the same genus, Panthera.",
+        "ko": "사자와 호랑이는 같은 속인 판테라 속에 속한다."
+      }
+    },
+    {
+      "word": "classification",
+      "pronunciation": "[klæ̀səfikéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "분류",
+      "example": {
+        "en": "The scientific classification of organisms is based on shared characteristics.",
+        "ko": "유기체의 과학적 분류는 공유된 특성에 기반한다."
+      }
+    },
+    {
+      "word": "taxonomy",
+      "pronunciation": "[tæksάnəmi]",
+      "partOfSpeech": "n.",
+      "meaning": "분류학",
+      "example": {
+        "en": "Taxonomy is the science of naming and classifying organisms.",
+        "ko": "분류학은 유기체의 이름을 짓고 분류하는 과학이다."
+      }
+    },
+    {
+      "word": "organism",
+      "pronunciation": "[ɔ́ːrgənìzəm]",
+      "partOfSpeech": "n.",
+      "meaning": "유기체, 생물",
+      "example": {
+        "en": "All living organisms are composed of cells.",
+        "ko": "모든 살아있는 유기체는 세포로 구성되어 있다."
+      }
+    },
+    {
+      "word": "microorganism",
+      "pronunciation": "[màikrouɔ́ːrgənìzəm]",
+      "partOfSpeech": "n.",
+      "meaning": "미생물",
+      "example": {
+        "en": "Microorganisms are too small to be seen with the naked eye.",
+        "ko": "미생물은 너무 작아서 육안으로 볼 수 없다."
+      }
+    },
+    {
+      "word": "reproduction",
+      "pronunciation": "[rìːprədʌ́kʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "번식, 생식",
+      "example": {
+        "en": "Reproduction is essential for the survival of a species.",
+        "ko": "번식은 종의 생존에 필수적이다."
+      }
+    },
+    {
+      "word": "offspring",
+      "pronunciation": "[ɔ́ːfsprì&eng;]",
+      "partOfSpeech": "n.",
+      "meaning": "자손, 후손",
+      "example": {
+        "en": "The lioness protected her offspring from danger.",
+        "ko": "암사자는 위험으로부터 새끼들을 보호했다."
+      }
+    },
+    {
+      "word": "breeding",
+      "pronunciation": "[bríːdi&eng;]",
+      "partOfSpeech": "n.",
+      "meaning": "사육, 번식",
+      "example": {
+        "en": "Selective breeding has created many different dog breeds.",
+        "ko": "선택적 사육은 많은 다른 개 품종을 만들어냈다."
+      }
+    },
+    {
+      "word": "domestication",
+      "pronunciation": "[dəméstikéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "가축화, 길들이기",
+      "example": {
+        "en": "The domestication of dogs began thousands of years ago.",
+        "ko": "개의 가축화는 수천 년 전에 시작되었다."
+      }
+    },
+    {
+      "word": "wildlife",
+      "pronunciation": "[wáildlàif]",
+      "partOfSpeech": "n.",
+      "meaning": "야생 동물",
+      "example": {
+        "en": "The national park is home to a variety of wildlife.",
+        "ko": "그 국립공원은 다양한 야생 동물의 서식지이다."
+      }
+    },
+    {
+      "word": "environment",
+      "pronunciation": "[inváiərənmənt]",
+      "partOfSpeech": "n.",
+      "meaning": "환경",
+      "example": {
+        "en": "We must protect the environment for future generations.",
+        "ko": "우리는 미래 세대를 위해 환경을 보호해야 한다."
+      }
+    },
+    {
+      "word": "predator",
+      "pronunciation": "[prédətər]",
+      "partOfSpeech": "n.",
+      "meaning": "포식자",
+      "example": {
+        "en": "The lion is a fearsome predator.",
+        "ko": "사자는 무서운 포식자이다."
+      }
+    },
+    {
+      "word": "prey",
+      "pronunciation": "[prei]",
+      "partOfSpeech": "n.",
+      "meaning": "먹이",
+      "example": {
+        "en": "The eagle swooped down to catch its prey.",
+        "ko": "독수리는 먹이를 잡기 위해 급강하했다."
+      }
+    },
+    {
+      "word": "carnivore",
+      "pronunciation": "[kάːrnəvɔ̀ːr]",
+      "partOfSpeech": "n.",
+      "meaning": "육식 동물",
+      "example": {
+        "en": "Tyrannosaurus rex was a large carnivore.",
+        "ko": "티라노사우루스 렉스는 대형 육식 동물이었다."
+      }
+    },
+    {
+      "word": "herbivore",
+      "pronunciation": "[hə́ːrbəvɔ̀ːr]",
+      "partOfSpeech": "n.",
+      "meaning": "초식 동물",
+      "example": {
+        "en": "Cows and sheep are herbivores.",
+        "ko": "소와 양은 초식 동물이다."
+      }
+    },
+    {
+      "word": "omnivore",
+      "pronunciation": "[άmnəvɔ̀ːr]",
+      "partOfSpeech": "n.",
+      "meaning": "잡식 동물",
+      "example": {
+        "en": "Bears are omnivores, eating both plants and animals.",
+        "ko": "곰은 식물과 동물을 모두 먹는 잡식 동물이다."
+      }
+    },
+    {
+      "word": "mammal",
+      "pronunciation": "[mǽməl]",
+      "partOfSpeech": "n.",
+      "meaning": "포유류",
+      "example": {
+        "en": "Humans, dogs, and whales are all mammals.",
+        "ko": "인간, 개, 고래는 모두 포유류이다."
+      }
+    },
+    {
+      "word": "reptile",
+      "pronunciation": "[réptail]",
+      "partOfSpeech": "n.",
+      "meaning": "파충류",
+      "example": {
+        "en": "Snakes, lizards, and crocodiles are reptiles.",
+        "ko": "뱀, 도마뱀, 악어는 파충류이다."
+      }
+    },
+    {
+      "word": "amphibian",
+      "pronunciation": "[æmfíbiən]",
+      "partOfSpeech": "n.",
+      "meaning": "양서류",
+      "example": {
+        "en": "Frogs and salamanders are amphibians.",
+        "ko": "개구리와 도롱뇽은 양서류이다."
+      }
+    },
+    {
+      "word": "bird",
+      "pronunciation": "[bəːrd]",
+      "partOfSpeech": "n.",
+      "meaning": "조류, 새",
+      "example": {
+        "en": "The early bird catches the worm.",
+        "ko": "일찍 일어나는 새가 벌레를 잡는다."
+      }
+    },
+    {
+      "word": "fish",
+      "pronunciation": "[fiʃ]",
+      "partOfSpeech": "n.",
+      "meaning": "어류, 물고기",
+      "example": {
+        "en": "There are many different kinds of fish in the sea.",
+        "ko": "바다에는 많은 다른 종류의 물고기가 있다."
+      }
+    },
+    {
+      "word": "insect",
+      "pronunciation": "[ínsekt]",
+      "partOfSpeech": "n.",
+      "meaning": "곤충",
+      "example": {
+        "en": "Ants, bees, and butterflies are all insects.",
+        "ko": "개미, 벌, 나비는 모두 곤충이다."
+      }
+    },
+    {
+      "word": "vertebrate",
+      "pronunciation": "[və́ːrtəbrət]",
+      "partOfSpeech": "n.",
+      "meaning": "척추동물",
+      "example": {
+        "en": "Humans are vertebrates because we have a backbone.",
+        "ko": "인간은 척추가 있기 때문에 척추동물이다."
+      }
+    },
+    {
+      "word": "invertebrate",
+      "pronunciation": "[invə́ːrtəbrət]",
+      "partOfSpeech": "n.",
+      "meaning": "무척추동물",
+      "example": {
+        "en": "Jellyfish and worms are examples of invertebrates.",
+        "ko": "해파리와 벌레는 무척추동물의 예이다."
+      }
+    },
+    {
+      "word": "extinct",
+      "pronunciation": "[ikstí&eng;kt]",
+      "partOfSpeech": "a.",
+      "meaning": "멸종된",
+      "example": {
+        "en": "Dinosaurs became extinct millions of years ago.",
+        "ko": "공룡은 수백만 년 전에 멸종되었다."
+      }
+    },
+    {
+      "word": "endangered",
+      "pronunciation": "[indéindʒərd]",
+      "partOfSpeech": "a.",
+      "meaning": "멸종 위기에 처한",
+      "example": {
+        "en": "The giant panda is an endangered species.",
+        "ko": "자이언트 판다는 멸종 위기 종이다."
+      }
+    },
+    {
+      "word": "reserve",
+      "pronunciation": "[rizə́ːrv]",
+      "partOfSpeech": "n.",
+      "meaning": "보호 지역",
+      "example": {
+        "en": "The nature reserve is home to many rare plants and animals.",
+        "ko": "자연 보호 지역은 많은 희귀 식물과 동물의 서식지이다."
+      }
+    },
+    {
+      "word": "metaphysical",
+      "pronunciation": "[ˌmetəˈfɪzɪkl]",
+      "partOfSpeech": "adjective",
+      "meaning": "형이상학적인",
+      "example": {
+        "en": "The philosopher explored metaphysical questions about existence and reality.",
+        "ko": "그 철학자는 존재와 실재에 관한 형이상학적 질문들을 탐구했다."
+      }
+    },
+    {
+      "word": "ontological",
+      "pronunciation": "[ˌɒntəˈlɒdʒɪkl]",
+      "partOfSpeech": "adjective",
+      "meaning": "존재론적인",
+      "example": {
+        "en": "The ontological argument attempts to prove God's existence through reason alone.",
+        "ko": "존재론적 논증은 이성만으로 신의 존재를 증명하려 시도한다."
+      }
+    },
+    {
+      "word": "phenomenology",
+      "pronunciation": "[fɪˌnɒmɪˈnɒlədʒi]",
+      "partOfSpeech": "noun",
+      "meaning": "현상학",
+      "example": {
+        "en": "Husserl developed phenomenology as a systematic study of consciousness.",
+        "ko": "후설은 의식의 체계적 연구로서 현상학을 발전시켰다."
+      }
+    },
+    {
+      "word": "teleological",
+      "pronunciation": "[ˌteliəˈlɒdʒɪkl]",
+      "partOfSpeech": "adjective",
+      "meaning": "목적론적인",
+      "example": {
+        "en": "Aristotle's ethics presents a teleological view of human nature.",
+        "ko": "아리스토텔레스의 윤리학은 인간 본성에 대한 목적론적 관점을 제시한다."
+      }
+    },
+    {
+      "word": "determinism",
+      "pronunciation": "[dɪˈtɜːmɪnɪzəm]",
+      "partOfSpeech": "noun",
+      "meaning": "결정론",
+      "example": {
+        "en": "Hard determinism claims that free will is incompatible with causality.",
+        "ko": "강한 결정론은 자유의지가 인과성과 양립할 수 없다고 주장한다."
+      }
+    },
+    {
+      "word": "hermeneutics",
+      "pronunciation": "[ˌhɜːməˈnjuːtɪks]",
+      "partOfSpeech": "noun",
+      "meaning": "해석학",
+      "example": {
+        "en": "Biblical hermeneutics involves the interpretation of sacred texts.",
+        "ko": "성서 해석학은 성스러운 텍스트의 해석을 다룬다."
+      }
+    },
+    {
+      "word": "nihilism",
+      "pronunciation": "[ˈnaɪhɪlɪzəm]",
+      "partOfSpeech": "noun",
+      "meaning": "허무주의",
+      "example": {
+        "en": "Nietzsche explored the implications of nihilism in modern society.",
+        "ko": "니체는 현대 사회에서 허무주의의 함의를 탐구했다."
+      }
+    },
+    {
+      "word": "echolocation",
+      "pronunciation": "/ˌiːkoʊloʊˈkeɪʃən/",
+      "partOfSpeech": "n.",
+      "meaning": "박쥐나 돌고래 등이 소리를 내고 되돌아오는 반향을 해석해 방향을 잡고 먹이를 찾는 생물학적 음파탐지법.",
+      "example": {
+        "en": "Dolphins adjust the frequency of their echolocation clicks to detect small fish in murky water.",
+        "ko": "돌고래는 탁한 물에서 작은 물고기를 탐지하기 위해 반향정위 클릭의 주파수를 조절한다."
+      }
+    },
+    {
+      "word": "endotherm",
+      "pronunciation": "/ˈɛndoʊˌθɜːrm/",
+      "partOfSpeech": "n.",
+      "meaning": "대사열로 체온을 일정하게 유지하는 동물(조류·포유류 등)",
+      "example": {
+        "en": "As an endotherm, the arctic fox burns fat to keep its core temperature stable in winter.",
+        "ko": "내온성 동물인 북극여우는 겨울에 체온을 일정하게 유지하기 위해 지방을 연소한다."
+      }
+    },
+    {
+      "word": "ectotherm",
+      "pronunciation": "/ˈɛktoʊˌθɜːrm/",
+      "partOfSpeech": "n.",
+      "meaning": "체온을 주로 외부 열원에 의존하여 조절하는 변온동물.",
+      "example": {
+        "en": "The lizard, an ectotherm, basked on a rock to warm up before hunting.",
+        "ko": "도마뱀은 변온동물로, 사냥 전에 몸을 데우기 위해 바위 위에서 일광욕했다."
+      }
+    },
+    {
+      "word": "mimicry",
+      "pronunciation": "/ˈmɪmɪkri/",
+      "partOfSpeech": "n.",
+      "meaning": "한 종이 보호나 기타 이점을 얻기 위해 다른 종이나 물체를 닮도록 진화하는 적응 현상",
+      "example": {
+        "en": "The harmless king snake uses mimicry to resemble the venomous coral snake and deter predators.",
+        "ko": "무해한 킹스네이크는 독이 있는 코럴스네이크를 닮게 하는 의태를 이용해 포식자를 억제한다."
+      }
+    },
+    {
+      "word": "bioluminescence",
+      "pronunciation": "/ˌbaɪoʊˌluːməˈnɛsəns/",
+      "partOfSpeech": "n.",
+      "meaning": "생물이 화학 반응으로 빛을 생성·방출하는 현상",
+      "example": {
+        "en": "Fireflies use bioluminescence to attract mates on summer nights.",
+        "ko": "반딧불이는 여름밤에 생물발광을 이용해 짝을 유인한다."
+      }
+    }
+  ]
+}

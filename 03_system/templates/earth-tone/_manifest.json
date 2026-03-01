@@ -1,0 +1,24 @@
+{
+    "id": "earth-tone",
+    "name": "Earth Tone",
+    "description": "독해 Bridge 템플릿. Pantone 2025 차콜과 민트그레이의 차분한 조화. 미니멀 보더 박스 표지와 점선 구분이 특징.",
+    "version": "1.0.0",
+    "author": "Vera's Flavor",
+    "fonts": {
+        "heading": "Inter",
+        "body": "Noto Sans KR",
+        "accent": "Merriweather"
+    },
+    "palette": {
+        "primary": "#4B5358",
+        "primaryLight": "#EAE6E1",
+        "secondary": "#A2B2A4",
+        "accent": "#6B7A6E"
+    },
+    "coverStyle": "minimal",
+    "borderRadius": "0px",
+    "headerStyle": "dotted",
+    "usedBy": [
+        "[편입영어]독해_bridge.html"
+    ]
+}

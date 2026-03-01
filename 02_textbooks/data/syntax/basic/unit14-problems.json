@@ -1,0 +1,131 @@
+{
+  "bookId": "syntax-basic-unit14",
+  "unit": 14,
+  "title": "3주차 총정리 (준동사 구별)",
+  "part": "III",
+  "week": 3,
+  "type": "sentence-analysis",
+  "instruction": "다음 문장에서 준동사구를 찾아 [ ]로 묶고, 그 역할(명사적/형용사적/부사적)을 구별한 후 해석해 보세요.",
+  "problems": [
+    {
+      "id": "syntax-basic-unit14-1",
+      "number": 1,
+      "type": "sentence-analysis",
+      "stem": "He wants to buy a new computer.",
+      "answer": {
+        "analysis": "He wants [to buy a new computer].",
+        "pattern": "명사적",
+        "translation": "그는 새 컴퓨터 [사는 것을] 원한다. (목적어 역할)",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit14-2",
+      "number": 2,
+      "type": "sentence-analysis",
+      "stem": "The girl sitting on the bench is reading a book.",
+      "answer": {
+        "analysis": "The girl [sitting on the bench] is reading a book.",
+        "pattern": "형용사적",
+        "translation": "[벤치에 앉아 있는] 소녀가 책을 읽고 있",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit14-3",
+      "number": 3,
+      "type": "sentence-analysis",
+      "stem": "My plan for the weekend is doing nothing.",
+      "answer": {
+        "analysis": "다. (주어 수식) (명사적) My plan for the weekend is [doing nothing].",
+        "pattern": "",
+        "translation": "주말에 대한 내 계획은 [아무것도 하지 않는 것]",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit14-4",
+      "number": 4,
+      "type": "sentence-analysis",
+      "stem": "He studied hard to become a lawyer.",
+      "answer": {
+        "analysis": "이다. (보어 역할) (부사적) He studied hard [to become a lawyer].",
+        "pattern": "",
+        "translation": "그는 [변호사가 되기 위해서] 열심히 공부했다. (목적)",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit14-5",
+      "number": 5,
+      "type": "sentence-analysis",
+      "stem": "This is the best movie I have ever seen. (*주의! 준동사가 없는 문장*)",
+      "answer": {
+        "analysis": "This is the best movie (that) I have ever seen.",
+        "pattern": "준동사 없음",
+        "translation": "이것은 내가 본 최고의 영화이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit14-6",
+      "number": 6,
+      "type": "sentence-analysis",
+      "stem": "I need a pen to write a letter.",
+      "answer": {
+        "analysis": "I need a pen [to write a letter].",
+        "pattern": "형용사적",
+        "translation": "나는 편지를 [쓸] 펜이 필요하다. (명사 수식)",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit14-7",
+      "number": 7,
+      "type": "sentence-analysis",
+      "stem": "Not knowing her address, I couldn't send the card.",
+      "answer": {
+        "analysis": "[Not knowing her address], I couldn't send the card.",
+        "pattern": "부사적",
+        "translation": "그녀의 주소를 [몰랐기 때문에], 나는",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit14-8",
+      "number": 8,
+      "type": "sentence-analysis",
+      "stem": "The boy injured in the accident was taken to the hospital.",
+      "answer": {
+        "analysis": "카드를 보낼 수 없었다. (분사구문) (형용사적) The boy [injured in the accident] was taken to the hospital.",
+        "pattern": "",
+        "translation": "사고에서 [다친] 소년은 병원",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit14-9",
+      "number": 9,
+      "type": "sentence-analysis",
+      "stem": "To master a foreign language requires a lot of effort.",
+      "answer": {
+        "analysis": "으로 옮겨졌다. (주어 수식) (명사적) [To master a foreign language](S) requires a lot of effort.",
+        "pattern": "",
+        "translation": "외국어를 [마스터하는 것은] 많은",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit14-10",
+      "number": 10,
+      "type": "sentence-analysis",
+      "stem": "He left the office, turning off all the lights.",
+      "answer": {
+        "analysis": "노력을 필요로 한다. (주어 역할) (부사적) He left the office, [turning off all the lights].",
+        "pattern": "",
+        "translation": "그는 사무실을 떠나면서, [모든 불을 껐다]. (분사",
+        "notes": ""
+      }
+    }
+  ]
+}

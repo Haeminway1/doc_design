@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>학습 피드백지 — 정재영 260222</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+
+  /* =============================================================
+     피드백지 공통 CSS v2.0 — Teal & Warm 팔레트
+     Primary Dark: #2c6975 | Primary Light: #68b2a0
+     Accent Blue: #1a6fc4 | Red: #e53e3e | Green: #2f855a
+     ============================================================= */
+
+  /* ===== RESET & BASE ===== */
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html {
+    font-size: 9.5pt;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 9.5pt;
+    line-height: 1.65;
+    color: #1a202c;
+    background: #f7fafa !important;
+    orphans: 3; widows: 3;
+  }
+
+  @page { size: A4; margin: 15mm 13mm; }
+
+  /* ===== PAGE BREAK ===== */
+  .page-break-after { page-break-after: always !important; }
+  .page-break-before { page-break-before: always !important; }
+  .avoid-break { page-break-inside: avoid !important; break-inside: avoid !important; }
+  h1, h2, h3, h4 { page-break-after: avoid !important; }
+  table, .concept-box, .tip-box, .warning-box, .answer-box, .grammar-block,
+  .problem-card, .diagnosis-card {
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+
+  /* ===== HEADINGS ===== */
+  h1 {
+    font-size: 18pt; font-weight: 700; color: #2c6975 !important;
+    margin: 16px 0 8px 0; padding-bottom: 5px;
+    border-bottom: 2.5px solid #2c6975; line-height: 1.3;
+  }
+  h2 {
+    font-size: 14pt; font-weight: 700; color: #2c6975 !important;
+    margin: 14px 0 8px 0; padding-bottom: 3px;
+    border-bottom: 1.5px solid #d0e4df; line-height: 1.3;
+  }
+  h3 {
+    font-size: 12pt; font-weight: 700; color: #2d3748 !important;
+    margin: 12px 0 6px 0; line-height: 1.4;
+  }
+  h4 {
+    font-size: 10pt; font-weight: 700; color: #4a5568 !important;
+    margin: 8px 0 5px 0; line-height: 1.4;
+  }
+  p { margin-bottom: 6px; }
+  strong { font-weight: 700; }
+  hr { border: none; border-top: 1px solid #d0e4df; margin: 16px 0; }
+
+  /* ===== TABLES ===== */
+  table {
+    width: 100%; border-collapse: collapse;
+    margin: 10px 0 12px 0; font-size: 8.5pt; line-height: 1.55;
+  }
+  thead th {
+    background-color: #68b2a0 !important; color: #fff !important;
+    font-weight: 700; padding: 6px 8px; text-align: left;
+    border: 1px solid #5aa090; font-size: 8.5pt;
+  }
+  tbody td {
+    padding: 5px 8px; border: 1px solid #d0e4df; vertical-align: top;
+  }
+  tbody tr:nth-child(odd) { background-color: #fff !important; }
+  tbody tr:nth-child(even) { background-color: #f0f7f5 !important; }
+  tbody td:first-child { font-weight: 500; }
+
+  .result-correct { color: #2f855a !important; font-weight: 700; }
+  .result-wrong { color: #e53e3e !important; font-weight: 700; }
+
+  /* ===== REPORT HEADER (첫 페이지) ===== */
+  .report-header { margin-bottom: 14px; }
+  .report-date { font-size: 9.5pt; color: #718096 !important; font-weight: 400; margin-bottom: 3px; }
+  .report-title {
+    font-size: 20pt; font-weight: 700; color: #2c6975 !important;
+    margin-bottom: 5px; line-height: 1.2; border: none; padding: 0;
+  }
+  .report-subtitle { font-size: 11pt; font-weight: 400; color: #4a5568 !important; margin-bottom: 2px; }
+  .report-meta { font-size: 8.5pt; color: #718096 !important; line-height: 1.8; margin-top: 6px; }
+  .report-meta span { display: inline-block; margin-right: 14px; }
+
+  /* ===== SECTION HEADER BAR ===== */
+  .section-header {
+    background-color: #2c6975 !important; color: #fff !important;
+    padding: 10px 20px; margin: 16px -13mm 12px -13mm;
+    padding-left: 16mm; padding-right: 13mm;
+    font-size: 14pt; font-weight: 700; line-height: 1.3;
+  }
+  .section-header .section-num {
+    font-size: 11pt; font-weight: 300; display: block;
+    margin-bottom: 1px; color: #9fcfc2 !important;
+  }
+
+  /* ===== SEVERITY BADGES ===== */
+  .severity-high {
+    display: inline-block; background-color: #e53e3e !important; color: #fff !important;
+    font-size: 7.5pt; font-weight: 700; padding: 1px 8px; border-radius: 10px;
+  }
+  .severity-mid {
+    display: inline-block; background-color: #ed8936 !important; color: #fff !important;
+    font-size: 7.5pt; font-weight: 700; padding: 1px 8px; border-radius: 10px;
+  }
+  .severity-low {
+    display: inline-block; background-color: #2f855a !important; color: #fff !important;
+    font-size: 7.5pt; font-weight: 700; padding: 1px 8px; border-radius: 10px;
+  }
+
+  /* ===== DIAGNOSIS CARD (학습 요약) ===== */
+  .diagnosis-card {
+    border: 1.5px solid #a8cec5; border-radius: 16px;
+    padding: 12px 16px; margin: 12px 0; background-color: #fff !important;
+  }
+  .diagnosis-card h3 { margin-top: 0; color: #2c6975 !important; font-size: 11pt; }
+  .priority-order {
+    background-color: #eaf3f0 !important; border-left: 3px solid #68b2a0;
+    padding: 8px 14px; margin: 10px 0; font-size: 9.5pt; border-radius: 0 12px 12px 0;
+  }
+
+  /* ===== QUESTION BOX ===== */
+  .question-box {
+    background-color: #f0f7f5 !important; border-left: 3px solid #68b2a0;
+    padding: 8px 12px; margin: 6px 0; font-size: 9.5pt; line-height: 1.65;
+    border-radius: 0 12px 12px 0;
+  }
+  .question-box p { margin: 0; }
+
+  /* ===== ANSWER BOX ===== */
+  .answer-box {
+    background-color: #f0fff4 !important; border-left: 3px solid #2f855a;
+    padding: 6px 12px; margin: 6px 0; font-weight: 500;
+    border-radius: 0 12px 12px 0;
+  }
+
+  /* ===== GRAMMAR BLOCK ===== */
+  .grammar-block {
+    background-color: #f0f4f3 !important; border: 1px solid #d0e4df;
+    padding: 10px 14px; margin: 10px 0; border-radius: 12px;
+    font-size: 8.5pt; line-height: 1.75; white-space: pre-wrap;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+
+  /* ===== TIP BOX ===== */
+  .tip-box {
+    background-color: #fffaf0 !important; border-left: 3px solid #ed8936;
+    padding: 8px 14px; margin: 10px 0; border-radius: 0 12px 12px 0;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+  .tip-box .tip-label {
+    font-weight: 700; color: #c05621 !important; font-size: 8.5pt;
+    display: block; margin-bottom: 3px;
+  }
+
+  /* ===== WARNING BOX ===== */
+  .warning-box {
+    background-color: #fff5f5 !important; border-left: 3px solid #e53e3e;
+    padding: 8px 14px; margin: 10px 0; border-radius: 0 12px 12px 0;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+  .warning-box .warning-label {
+    font-weight: 700; color: #e53e3e !important; font-size: 8.5pt;
+    display: block; margin-bottom: 3px;
+  }
+
+  /* ===== CONCEPT BOX ===== */
+  .concept-box {
+    background-color: #eaf3f0 !important; border: 1px solid #68b2a0;
+    padding: 10px 14px; margin: 10px 0; border-radius: 12px;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+  .concept-box .concept-label {
+    font-weight: 700; color: #2c6975 !important; font-size: 8.5pt;
+    display: block; margin-bottom: 4px;
+  }
+
+  /* ===== PROBLEM CARD ===== */
+  .problem-card {
+    border: 1px solid #d0e4df; border-radius: 14px;
+    padding: 12px 16px; margin: 10px 0;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+    background-color: #fff !important;
+  }
+  .problem-header {
+    display: flex; align-items: center; margin-bottom: 10px; gap: 10px;
+  }
+  .problem-badge {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 32px; height: 32px; border-radius: 50%;
+    background-color: #68b2a0 !important; color: #fff !important;
+    font-weight: 700; font-size: 11pt; flex-shrink: 0;
+  }
+  .problem-title {
+    font-size: 10pt; font-weight: 700; color: #2d3748 !important;
+  }
+  .problem-source {
+    font-size: 7.5pt; color: #718096 !important; font-weight: 400;
+    display: block; margin-top: 1px;
+  }
+
+  /* ===== HIGHLIGHT ===== */
+  .hl-key { color: #2c6975 !important; font-weight: 700; }
+  .hl-wrong { color: #e53e3e !important; font-weight: 700; text-decoration: line-through; }
+  .hl-correct { color: #2f855a !important; font-weight: 700; }
+  .hl-blue { color: #1a6fc4 !important; font-weight: 700; }
+
+  /* ===== FLOWCHART ===== */
+  .flowchart { margin: 12px 0; page-break-inside: avoid !important; }
+  .flow-step {
+    background-color: #eaf3f0 !important; border: 1px solid #a8cec5;
+    border-radius: 12px; padding: 8px 14px; margin-bottom: 3px; font-size: 9pt;
+  }
+  .flow-step .step-label { font-weight: 700; color: #2c6975 !important; margin-right: 8px; }
+  .flow-step .step-sub {
+    padding-left: 20px; font-size: 8.5pt; color: #4a5568 !important;
+    margin-top: 3px; line-height: 1.65;
+  }
+  .flow-arrow { text-align: center; font-size: 13pt; color: #68b2a0 !important; line-height: 1.2; margin: 2px 0; }
+
+  /* ===== CHECKLIST ===== */
+  .checklist-group { margin-bottom: 12px; page-break-inside: avoid !important; }
+  .checklist-group-title {
+    font-size: 10pt; font-weight: 700; color: #2c6975 !important;
+    margin-bottom: 6px; padding: 3px 0; border-bottom: 1px solid #d0e4df;
+  }
+  .checklist-item {
+    display: flex; align-items: flex-start; gap: 6px;
+    padding: 3px 0; font-size: 9pt; line-height: 1.55;
+  }
+  .checkbox {
+    display: inline-block; width: 13px; height: 13px; min-width: 13px;
+    border: 1.5px solid #a0aec0; border-radius: 3px; margin-top: 2px;
+  }
+
+  /* ===== SECTION DIVIDER ===== */
+  .section-divider { border: none; border-top: 1.5px solid #d0e4df; margin: 16px 0; }
+
+  /* ===== VARIANT CHOICES ===== */
+  .variant-choices { padding-left: 18px; font-size: 8.5pt; line-height: 1.75; margin: 3px 0; }
+
+  /* ===== GROUP ROW ===== */
+  .group-row td {
+    background-color: #eaf3f0 !important; font-weight: 700;
+    color: #2c6975 !important; border-bottom: 2px solid #68b2a0;
+  }
+
+  /* ===== COMPARE TABLE ===== */
+  .compare-table thead th:nth-child(2) { background-color: #5aa090 !important; }
+  .compare-table thead th:nth-child(3) { background-color: #2f855a !important; }
+
+  /* ===== EXPRESSION TABLE ===== */
+  .expression-table td:first-child { white-space: nowrap; font-weight: 700; }
+
+  /* ===== MARKER ===== */
+  .marker-o { color: #2f855a !important; font-weight: 700; }
+  .marker-x { color: #e53e3e !important; font-weight: 700; }
+
+  /* ===== PASSAGE BLOCK (독해 지문) ===== */
+  .passage-block {
+    background-color: #f7fafa !important; border: 1px solid #d0e4df;
+    border-left: 3px solid #68b2a0;
+    padding: 12px 16px; margin: 10px 0; border-radius: 0 12px 12px 0;
+    font-size: 9pt; line-height: 1.85;
+    text-align: justify !important;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+
+  /* ===== CHOICES LIST ===== */
+  .choices-list {
+    margin: 8px 0; font-size: 9pt; line-height: 1.85;
+  }
+  .choices-list .choice-item { padding: 1px 0; }
+  .choice-correct { color: #2f855a !important; font-weight: 700; }
+  .choice-wrong { color: #e53e3e !important; font-weight: 700; text-decoration: line-through; }
+
+  /* ===== PRINT OPTIMIZATION ===== */
+  @media print {
+    body { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; background: #fff !important; }
+    .section-header { margin-left: -13mm; margin-right: -13mm; padding-left: 16mm; padding-right: 13mm; }
+  }
+
+</style>
+</head>
+<body>
+
+<div class="report-header">
+  <div class="report-date">2026. 02. 22</div>
+  <h1 class="report-title" style="border:none; margin-bottom:6px;">학습 피드백지</h1>
+  <div class="report-subtitle">문법 — Vera's Flavor 편입영어 문법 Bridge편 + VERADICT CLINIC 독해</div>
+  <div class="report-meta">
+    <span><strong>학생</strong> 정재영</span>
+    <span><strong>교재</strong> Vera's Flavor 편입영어 문법 Bridge편 + VERADICT CLINIC 독해</span>
+    <span><strong>범위</strong> 문법 연습문제 A~E (100문제) + VERADICT CLINIC 독해 Q12~21 (10문제)</span>
+  </div>
+</div>
+
+<div class="diagnosis-card">
+  <h3>학습 요약</h3>
+  <p style="font-size:10pt; margin-bottom:8px;">
+    전체 110문제 중 오답 <strong>7문제</strong> (정답률 약 94%)
+  </p>
+  <p style="font-size:9.5pt; margin-bottom:4px;">
+    <strong style="color:#38a169;">잘한 점:</strong> 5형식 목적보어 연습문제(연습C) 20문제 전문 정답. 자동사/타동사 구별(연습A), 혼동동사(연습D) 파트도 대부분 정확하게 풀이함. 전체적으로 문법 개념 이해도가 높고, 이전 피드백에서 지적한 자동사/타동사, 감각동사+보어, 5형식 개념을 확실히 복습한 흔적이 보임.
+  </p>
+  <p style="font-size:9.5pt; margin-bottom:12px;">
+    <strong style="color:#e53e3e;">아쉬운 점:</strong> 현재완료(have + p.p.) 시제와 원형부정사 구별에서 반복적 실수. 특히 사역동사(have/let) 뒤 목적보어 형태 선택에서 p.p.와 원형을 혼동하는 패턴이 나타남. 독해에서는 빈칸 추론 문제의 논리적 흐름 파악이 아직 부족.
+  </p>
+  
+  <table>
+    <thead>
+      <tr><th>취약 영역</th><th style="width:60px;">문제 수</th><th style="width:70px;">심각도</th><th>핵심</th></tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td><strong>사역동사 + 목적보어 형태</strong></td>
+        <td>2문제</td>
+        <td><span class="severity-high">높음</span></td>
+        <td>let/have + O + 원형 vs p.p. 혼동</td>
+      </tr>
+      <tr>
+        <td><strong>현재완료 시제 (have + p.p.)</strong></td>
+        <td>1문제</td>
+        <td><span class="severity-mid">보통</span></td>
+        <td>rise-rose-risen 변화형 혼동</td>
+      </tr>
+      <tr>
+        <td><strong>감각동사 + 형용사 보어</strong></td>
+        <td>1문제</td>
+        <td><span class="severity-low">낮음</span></td>
+        <td>taste + good vs well 구별</td>
+      </tr>
+      <tr>
+        <td><strong>독해 빈칸 추론</strong></td>
+        <td>3문제</td>
+        <td><span class="severity-mid">보통</span></td>
+        <td>지문 논리 흐름에서 대조/인과 관계 파악 부족</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="priority-order">
+  <strong>학습 우선순위:</strong> 사역동사 + 목적보어 형태 구별 → have + p.p.(현재완료) vs 원형 → 독해 빈칸 추론 논리 파악
+</div>
+
+<div class="page-break-before section-header">
+  <span class="section-num">Section 1</span>
+  틀린 문제 리스트
+</div>
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">1</div>
+    <div>
+      <div class="problem-title">자동사 vs 타동사 (현재완료)</div>
+      <span class="problem-source">1번</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>[연습A-8] 다음 빈칸에 알맞은 것을 고르시오.</p>
+  </div>
+  <div style="margin:8px 0; font-size:9.5pt;">
+    <span class="hl-wrong">학생 답: ①</span> &rarr;
+    <span class="hl-correct">정답: ③</span>
+  </div>
+</div>
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">2</div>
+    <div>
+      <div class="problem-title">감각동사 + 보어 (형용사 vs 부사)</div>
+      <span class="problem-source">2번</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>[연습B-10] 다음 빈칸에 알맞은 것을 고르시오.</p>
+  </div>
+  <div style="margin:8px 0; font-size:9.5pt;">
+    <span class="hl-wrong">학생 답: ②</span> &rarr;
+    <span class="hl-correct">정답: ①</span>
+  </div>
+</div>
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">3</div>
+    <div>
+      <div class="problem-title">사역동사 + 목적보어 (원형부정사)</div>
+      <span class="problem-source">3번</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>[연습E-5] 다음 빈칸에 알맞은 것을 고르시오.</p>
+  </div>
+  <div style="margin:8px 0; font-size:9.5pt;">
+    <span class="hl-wrong">학생 답: ②</span> &rarr;
+    <span class="hl-correct">정답: ①</span>
+  </div>
+</div>
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">4</div>
+    <div>
+      <div class="problem-title">사역동사 + 목적보어 (원형 vs 과거분사)</div>
+      <span class="problem-source">4번</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>[연습E-18] 다음 빈칸에 알맞은 것을 고르시오.</p>
+  </div>
+  <div style="margin:8px 0; font-size:9.5pt;">
+    <span class="hl-wrong">학생 답: ②</span> &rarr;
+    <span class="hl-correct">정답: ①</span>
+  </div>
+</div>
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">5</div>
+    <div>
+      <div class="problem-title">빈칸 추론 (대조 관계)</div>
+      <span class="problem-source">5번</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>[VERADICT CLINIC Q15] 다음 글의 빈칸 (A), (B)에 들어갈 가장 알맞은 것을 고르시오.</p>
+  </div>
+  <div style="margin:8px 0; font-size:9.5pt;">
+    <span class="hl-wrong">학생 답: ④</span> &rarr;
+    <span class="hl-correct">정답: ②</span>
+  </div>
+</div>
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">6</div>
+    <div>
+      <div class="problem-title">빈칸 추론 (서사/역사적 사건)</div>
+      <span class="problem-source">6번</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>[VERADICT CLINIC Q18] 다음 글의 빈칸에 들어갈 가장 알맞은 것을 고르시오.</p>
+  </div>
+  <div style="margin:8px 0; font-size:9.5pt;">
+    <span class="hl-wrong">학생 답: ④</span> &rarr;
+    <span class="hl-correct">정답: ①</span>
+  </div>
+</div>
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">7</div>
+    <div>
+      <div class="problem-title">빈칸 추론 (과학 지문 - 표 완성)</div>
+      <span class="problem-source">7번</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>[VERADICT CLINIC Q21] 다음 글의 빈칸 (A)~(D)에 들어갈 가장 알맞은 것을 고르시오.</p>
+  </div>
+  <div style="margin:8px 0; font-size:9.5pt;">
+    <span class="hl-wrong">학생 답: ④</span> &rarr;
+    <span class="hl-correct">정답: ③</span>
+  </div>
+</div>
+
+<div class="page-break-before section-header">
+  <span class="section-num">Section 2</span>
+  해설 파트
+</div>
+<h2>1번 — 자동사 vs 타동사 (현재완료)</h2>
+<div class="question-box" style="margin-top:12px;">
+  <p><strong>[연습A-8] 다음 빈칸에 알맞은 것을 고르시오.</strong></p>
+</div><div class="choices-list">
+  <div class="choice-item" class="choice-wrong">① ① raised</div>
+  <div class="choice-item">② ② been risen</div>
+  <div class="choice-item" class="choice-correct">③ ③ risen</div>
+  <div class="choice-item">④ ④ arose</div>
+</div>
+<div class="concept-box"><h4>핵심 개념: rise vs raise + 현재완료</h4><p><strong>rise</strong>(자동사): 오르다 — rise - <strong>rose</strong> - <strong>risen</strong><br><strong>raise</strong>(타동사): ~을 올리다 — raise - <strong>raised</strong> - <strong>raised</strong></p></div><div class="grammar-block"><strong>문장 분석:</strong>
+Water temperatures in the Pacific Ocean <strong>have</strong> _______ significantly this year.
+
+→ 주어: Water temperatures (수온)
+→ have + _______ = <strong>현재완료</strong> 시제
+→ 수온은 스스로 "오른다" = <strong>자동사 rise</strong> 필요
+→ rise의 과거분사: <strong>risen</strong>
+
+have + risen = 현재완료 (올랐다)</div><table><thead><tr><th>동사</th><th>뜻</th><th>자/타</th><th>과거</th><th>p.p.</th></tr></thead><tbody><tr><td>rise</td><td>오르다</td><td>자동사</td><td>rose</td><td><strong>risen</strong></td></tr><tr><td>raise</td><td>올리다</td><td>타동사</td><td>raised</td><td>raised</td></tr><tr><td>arise</td><td>발생하다</td><td>자동사</td><td>arose</td><td>arisen</td></tr></tbody></table><div class="answer-box"><strong>정답: ③ risen</strong> — have + p.p. 현재완료. rise(자동사)의 과거분사 = risen</div><div class="warning-box"><span class="warning-label">오답 분석: ① raised</span><p>raised는 raise(올리다, 타동사)의 과거/p.p.형. 수온은 누군가가 올리는 것이 아니라 스스로 오르는 것이므로 자동사 rise를 써야 한다.</p></div>
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>왜 이 답을 골랐을까:</strong> rise-rose-risen과 raise-raised-raised의 변화형이 헷갈려서, have 뒤에 올 과거분사로 raised를 선택한 것으로 보임. 자/타동사 구분은 했으나 변화형 암기가 부족.</p>
+  <p><strong>오류 패턴:</strong> 불규칙 동사 변화형 혼동 — 자동사 rise의 p.p.를 규칙동사처럼 raised로 착각</p>
+  <p><strong>집중 포인트:</strong> rise-rose-risen / raise-raised-raised 변화표를 반복 암기. 특히 have + p.p. 형태에서 자/타 구분 후 올바른 p.p. 선택하는 연습 필요.</p>
+</div>
+<div class="page-break-before"></div>
+<h2>2번 — 감각동사 + 보어 (형용사 vs 부사)</h2>
+<div class="question-box" style="margin-top:12px;">
+  <p><strong>[연습B-10] 다음 빈칸에 알맞은 것을 고르시오.</strong></p>
+</div><div class="choices-list">
+  <div class="choice-item" class="choice-correct">① ① good</div>
+  <div class="choice-item" class="choice-wrong">② ② well</div>
+  <div class="choice-item">③ ③ goodly</div>
+  <div class="choice-item">④ ④ better than well</div>
+</div>
+<div class="concept-box"><h4>핵심 개념: taste + 형용사 보어</h4><p>감각동사(look, sound, smell, taste, feel) 뒤에는 <strong>형용사</strong>가 보어로 온다.<br>부사(well, badly 등)가 아닌 <strong>형용사</strong>로 주어의 상태를 설명해야 한다.</p></div><div class="grammar-block"><strong>문장 분석:</strong>
+The old wine tasted surprisingly _______ after decades in the cellar.
+
+→ 주어: The old wine (오래된 와인)
+→ tasted = 감각동사 "맛이 ~하다"
+→ surprisingly = 부사 (수식어, 무시)
+→ 빈칸 = <strong>보어 자리</strong> → 형용사 필요
+
+taste + good = "맛이 좋다" ✓
+taste + well = ✗ (well은 "건강한"이라는 형용사이나, 맛에는 사용 불가)</div><table><thead><tr><th>표현</th><th>의미</th><th>적합성</th></tr></thead><tbody><tr><td>taste good</td><td>맛이 좋다</td><td>✅ 자연스러움</td></tr><tr><td>taste well</td><td>건강하게 맛보다 (?)</td><td>❌ 부자연스러움</td></tr><tr><td>look good</td><td>보기 좋다</td><td>✅</td></tr><tr><td>feel good</td><td>기분이 좋다</td><td>✅</td></tr></tbody></table><div class="tip-box"><span class="tip-label">핵심 판별법</span><p><strong>well</strong>이 형용사로 쓰이는 유일한 경우: "건강한" (= healthy)<br>예) I don't feel <strong>well</strong>. (몸이 안 좋아요) — 이때만 형용사!<br><br>그 외 모든 경우 well = <strong>부사</strong>. 감각동사 보어 자리에는 good이 맞다.</p></div><div class="answer-box"><strong>정답: ① good</strong> — taste(감각동사) + good(형용사 보어) = 맛이 좋다</div><div class="warning-box"><span class="warning-label">오답 분석: ② well</span><p>well은 대부분 부사이고, 형용사로는 "건강한"이라는 의미만 있다. 와인의 맛을 설명하는 보어로는 good이 자연스럽다.</p></div>
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>왜 이 답을 골랐을까:</strong> good과 well을 모두 '좋은'이라는 의미로 혼동. 감각동사 뒤에 부사가 올 수 없다는 규칙은 알고 있으나, well을 형용사로 착각했을 가능성.</p>
+  <p><strong>오류 패턴:</strong> good(형용사) vs well(부사) 품사 혼동 — well이 형용사가 되는 특수한 경우(건강한)를 일반화</p>
+  <p><strong>집중 포인트:</strong> 감각동사 + 보어 = 반드시 형용사. well이 형용사인 경우는 '건강한'뿐이라는 점 기억하기.</p>
+</div>
+<div class="page-break-before"></div>
+<h2>3번 — 사역동사 + 목적보어 (원형부정사)</h2>
+<div class="question-box" style="margin-top:12px;">
+  <p><strong>[연습E-5] 다음 빈칸에 알맞은 것을 고르시오.</strong></p>
+</div><div class="choices-list">
+  <div class="choice-item" class="choice-correct">① ① leave</div>
+  <div class="choice-item" class="choice-wrong">② ② leaving</div>
+  <div class="choice-item">③ ③ left</div>
+  <div class="choice-item">④ ④ to leave</div>
+</div>
+<div class="concept-box"><h4>핵심 개념: let + O + 원형부정사</h4><p>사역동사 <strong>let</strong>은 목적보어로 <strong>반드시 원형부정사(V원형)</strong>만 취한다.<br>make, have와 달리 let은 -ing, p.p., to V 어떤 것도 불가능하다.</p></div><div class="grammar-block"><strong>문장 분석:</strong>
+The manager <strong>let</strong> the employees _______ early on Friday.
+
+→ let + O(the employees) + <strong>OC(원형부정사)</strong>
+→ let + O + V원형 = "~가 ...하도록 허락하다"
+→ leave(원형) ✓ / leaving(현재분사) ✗ / left(과거분사) ✗</div><table><thead><tr><th>사역동사</th><th>+ O +</th><th>가능한 목적보어</th></tr></thead><tbody><tr><td><strong>let</strong></td><td>O +</td><td><strong>V원형만</strong> 가능</td></tr><tr><td>make</td><td>O +</td><td>V원형 (능동) / p.p. (수동)</td></tr><tr><td>have</td><td>O +</td><td>V원형 / -ing / p.p.</td></tr><tr><td>get</td><td>O +</td><td>to V / p.p.</td></tr></tbody></table><div class="answer-box"><strong>정답: ① leave</strong> — let + O + V원형(leave) = 직원들이 일찍 떠나도록 허락했다</div><div class="warning-box"><span class="warning-label">오답 분석: ② leaving</span><p>let은 -ing형(현재분사)을 목적보어로 취하지 않는다. -ing가 가능한 것은 have와 지각동사뿐. let은 오직 원형만 가능!</p></div>
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>왜 이 답을 골랐을까:</strong> 지각동사(see, hear 등)가 원형과 -ing 둘 다 가능하다는 규칙을 let에도 적용한 것으로 보임. 사역동사 let의 특수성(원형만 가능)을 간과.</p>
+  <p><strong>오류 패턴:</strong> 사역동사별 목적보어 형태 차이 미구분 — let은 원형만, have는 원형/ing/p.p. 모두 가능하다는 점 혼동</p>
+  <p><strong>집중 포인트:</strong> let = 원형만! 사역동사 4형제(let, make, have, get) 각각의 목적보어 형태를 표로 정리하여 암기.</p>
+</div>
+<div class="page-break-before"></div>
+<h2>4번 — 사역동사 + 목적보어 (원형 vs 과거분사)</h2>
+<div class="question-box" style="margin-top:12px;">
+  <p><strong>[연습E-18] 다음 빈칸에 알맞은 것을 고르시오.</strong></p>
+</div><div class="choices-list">
+  <div class="choice-item" class="choice-correct">① ① reschedule</div>
+  <div class="choice-item" class="choice-wrong">② ② rescheduled</div>
+  <div class="choice-item">③ ③ rescheduling</div>
+  <div class="choice-item">④ ④ to reschedule</div>
+</div>
+<div class="concept-box"><h4>핵심 개념: have + 사람(O) + V원형 vs have + 사물(O) + p.p.</h4><p>사역동사 <strong>have</strong>의 목적보어 형태는 <strong>목적어가 사람인지 사물인지</strong>에 따라 달라진다.<br>• have + <strong>사람</strong> + <strong>V원형</strong> = "사람에게 ~시키다"<br>• have + <strong>사물</strong> + <strong>p.p.</strong> = "사물이 ~되게 하다" (사역수동)</p></div><div class="grammar-block"><strong>문장 분석:</strong>
+The boss had <strong>his secretary</strong> _______ all the appointments.
+
+→ had + his secretary(사람) + _______(목적보어)
+→ 목적어가 <strong>사람(비서)</strong>이므로 → <strong>V원형</strong> 필요
+→ reschedule(원형) ✓
+
+비교:
+The boss had <strong>all the appointments</strong> <strong>rescheduled</strong>.
+→ 목적어가 <strong>사물(약속들)</strong>이므로 → <strong>p.p.</strong> 사용</div><table><thead><tr><th>구조</th><th>목적어</th><th>목적보어</th><th>의미</th></tr></thead><tbody><tr><td>have + 사람 + V원형</td><td>his secretary</td><td>reschedule</td><td>비서에게 재조정하게 시키다</td></tr><tr><td>have + 사물 + p.p.</td><td>the appointments</td><td>rescheduled</td><td>약속이 재조정되게 하다</td></tr><tr><td>have + O + -ing</td><td>the engine</td><td>running</td><td>엔진이 돌아가게 하다 (진행)</td></tr></tbody></table><div class="tip-box"><span class="tip-label">판별법: 목적어가 사람이면 원형, 사물이면 p.p.</span><p>have + <strong>사람</strong>(secretary, mechanic, doctor...) + <strong>원형</strong><br>have + <strong>사물</strong>(car, hair, report...) + <strong>p.p.</strong><br><br>Q4에서 had his car <strong>repaired</strong> (사물+p.p.) ← 이건 정답 맞춤!<br>하지만 이 문제에서 had his <strong>secretary</strong> (사람) → 원형 reschedule이 정답.</p></div><div class="answer-box"><strong>정답: ① reschedule</strong> — have + 사람(secretary) + V원형(reschedule) = 비서에게 일정을 재조정하게 시키다</div><div class="warning-box"><span class="warning-label">오답 분석: ② rescheduled</span><p>rescheduled(p.p.)는 목적어가 사물일 때 사용. 이 문장에서 목적어는 his secretary(사람)이므로 원형 reschedule이 맞다. 같은 have 사역 구문이라도 목적어의 성격에 따라 보어 형태가 달라진다.</p></div>
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>왜 이 답을 골랐을까:</strong> 연습E Q4에서 'had his car repaired'를 올바르게 풀었기 때문에, 같은 have 구문에서 p.p.를 일반화한 것으로 보임. 목적어가 사람(secretary)인지 사물(car)인지에 따른 구분을 놓침.</p>
+  <p><strong>오류 패턴:</strong> have + O + p.p. 패턴을 과일반화 — 목적어가 사람일 때도 p.p.를 적용</p>
+  <p><strong>집중 포인트:</strong> have 사역구문의 핵심: 목적어가 사람이면 원형, 사물이면 p.p. 이 구분을 확실히 체화시키기. 매번 '목적어가 사람? 사물?' 물어보는 습관.</p>
+</div>
+<div class="page-break-before"></div>
+<h2>5번 — 빈칸 추론 (대조 관계)</h2>
+<div class="passage-block">Though young women in their late teens and early 20s view today's economic downturn as an opportunity to... their male counterparts are more likely to take whatever job they can find. The longer-term consequences, economists say, are that the next generation of women may have a significant (A) over their male counterparts, whose career options are already becoming (B).</div>
+<div class="question-box" style="margin-top:12px;">
+  <p><strong>[VERADICT CLINIC Q15] 다음 글의 빈칸 (A), (B)에 들어갈 가장 알맞은 것을 고르시오.</strong></p>
+</div><div class="choices-list">
+  <div class="choice-item">① ① advantage — broad</div>
+  <div class="choice-item" class="choice-correct">② ② advantage — limited</div>
+  <div class="choice-item">③ ③ disadvantage — broadened</div>
+  <div class="choice-item" class="choice-wrong">④ ④ disadvantage — limited</div>
+  <div class="choice-item">⑤ ⑤ advantage — broadened</div>
+</div>
+<div class="concept-box"><h4>1. 한줄 요약</h4><p>경제 불황 속에서 젊은 여성은 이를 기회로 삼아 교육 투자를 하는 반면, 남성은 당장의 취업을 선택하면서 장기적으로 여성이 유리해진다는 내용.</p></div><div class="grammar-block" style="text-align:justify;"><h4>2. 전체 해석</h4><p>10대 후반~20대 초반 젊은 여성들이 오늘날의 경제 불황을 기회로 보는 반면, 같은 나이대 남성들은 어떤 일자리든 잡으려 하는 경향이 더 강하다. 경제학자들은 이러한 장기적 결과로, 다음 세대 여성들이 남성 또래에 비해 상당한 <strong>우위(advantage)</strong>를 가지게 될 것이며, 남성들의 직업 선택지는 이미 <strong>제한적(limited)</strong>이 되어가고 있다고 말한다.</p></div><table><thead><tr><th>핵심 키워드</th><th>여성 (긍정)</th><th>남성 (부정)</th></tr></thead><tbody><tr><td>경제 불황에 대한 태도</td><td>opportunity (기회)</td><td>take whatever job (아무 일이나)</td></tr><tr><td>장기적 결과</td><td><strong>advantage</strong> (우위)</td><td><strong>limited</strong> (제한적)</td></tr></tbody></table><div class="tip-box"><span class="tip-label">구조 및 방향성 분석</span><p><strong>대조 구조</strong>: Though(양보) + 여성(긍정) ↔ male counterparts(부정)<br>• 여성: view downturn as <strong>opportunity</strong> → 교육 투자 → 장기 유리<br>• 남성: take <strong>whatever</strong> job → 당장 취업 → 장기 불리<br><br>(A)는 여성이 남성보다 '유리한' 위치 = <strong>advantage</strong><br>(B)는 남성의 선택지가 '줄어드는' 것 = <strong>limited</strong></p></div><div class="answer-box"><strong>정답: ② advantage — limited</strong><br>여성은 장기적 우위(advantage)를, 남성의 직업 선택지는 제한(limited)되고 있다.</div><div class="warning-box"><span class="warning-label">오답 분석: ④ disadvantage — limited</span><p>(B) limited는 맞았으나, (A)에서 disadvantage를 선택. 지문의 대조 구조를 놓침: 여성은 불황을 '기회'로 본다고 했으므로 결과는 advantage(우위)여야 한다. disadvantage는 남성 쪽에 해당하는 단어.</p></div>
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>왜 이 답을 골랐을까:</strong> economic downturn(경제 불황)이라는 부정적 단어에 끌려 여성에게도 disadvantage를 적용한 것으로 추측. 지문의 though(양보) 구조로 인해 오히려 여성에게는 긍정적 결과라는 역설을 놓침.</p>
+  <p><strong>오류 패턴:</strong> 부분 키워드 매칭 — downturn(부정) → disadvantage(부정)로 단순 연결. 대조/역설 구조(though) 파악 실패</p>
+  <p><strong>집중 포인트:</strong> though, while, whereas 등 양보/대조 접속사가 나오면 반드시 '반전'을 예측할 것. 부정적 상황이라도 주어에 따라 긍정적 결과가 올 수 있다.</p>
+</div>
+<div class="page-break-before"></div>
+<h2>6번 — 빈칸 추론 (서사/역사적 사건)</h2>
+<div class="passage-block">In 1934, the Dionne quintuplets were born to a farm couple near the small town of Callander, Ontario. Their birth made immediate headlines, it was celebrated as a medical and maternal miracle. Unfortunately, the little girls' fame was their downfall. Almost from the moment of their birth they were exploited by everyone around them. Their parents didn't know how to support their family, which already included six children. Confused and desperate, they agreed to let their five daughters be displayed at the Chicago World's Fair for a brief moment. It seemed like the girls were being treated as attractions. When the family physician stepped in and insisted the girls were too frail to be on exhibit, (    ). After he took control of the girls' lives, he made himself rich by displaying them to tourists and collecting fees for product endorsements.</div>
+<div class="question-box" style="margin-top:12px;">
+  <p><strong>[VERADICT CLINIC Q18] 다음 글의 빈칸에 들어갈 가장 알맞은 것을 고르시오.</strong></p>
+</div><div class="choices-list">
+  <div class="choice-item" class="choice-correct">① ① were saved from a miserable fate</div>
+  <div class="choice-item">② ② would be lovingly treated by their parents</div>
+  <div class="choice-item">③ ③ were not adapted to their changed way of life</div>
+  <div class="choice-item" class="choice-wrong">④ ④ would become famous enough in the World's Fair</div>
+</div>
+<div class="concept-box"><h4>1. 한줄 요약</h4><p>1934년 태어난 다이온 다섯 쌍둥이가 태어나자마자 주변 사람들에게 착취당했으며, 의사마저도 그들을 이용하여 돈을 벌었다는 비극적 이야기.</p></div><div class="grammar-block" style="text-align:justify;"><h4>2. 전체 해석</h4><p>1934년 온타리오주 칼랜더라는 작은 마을 근처의 농가 부부에게서 다이온 다섯 쌍둥이가 태어났다. 그들의 출생은 즉시 헤드라인을 장식했고, 의학적・모성적 기적으로 축하받았다. 불행히도 그 어린 소녀들의 명성이 그들의 몰락이었다. 태어난 순간부터 그들은 주변 모든 사람에게 착취당했다. 부모는 이미 6명의 자녀가 있는 가족을 어떻게 부양해야 할지 몰랐다. 혼란스럽고 절박한 나머지, 시카고 박람회에 다섯 딸을 잠시 전시하는 데 동의했다. 소녀들이 구경거리로 취급되는 것처럼 보였다. 가정의가 개입하여 소녀들이 전시되기에는 너무 허약하다고 주장했을 때, (   ). 그가 소녀들의 삶을 통제하게 된 후, 관광객들에게 전시하고 제품 홍보비를 받아 자신을 부자로 만들었다.</p></div><table><thead><tr><th>핵심 키워드</th><th>방향</th></tr></thead><tbody><tr><td>fame was their downfall</td><td>NEGATIVE — 명성 = 몰락</td></tr><tr><td>exploited by everyone</td><td>NEGATIVE — 모두에게 착취</td></tr><tr><td>physician stepped in</td><td>의사의 개입 → 기대: 긍정? 실제: 부정</td></tr><tr><td>made himself rich by displaying them</td><td>NEGATIVE — 의사도 착취</td></tr></tbody></table><div class="tip-box"><span class="tip-label">구조 및 방향성 분석</span><p><strong>역설 구조</strong>: 의사가 "소녀들이 너무 허약하다"며 개입 → 독자는 "구해줄 것"으로 기대<br>하지만 빈칸 뒤: "<strong>After he took control... made himself rich</strong>" → 의사도 착취!<br><br>빈칸은 의사 개입 후 소녀들이 실제로 어떻게 되었는지를 설명해야 함.<br>뒤 문장이 "그가 통제한 후 자신이 부자가 됐다"이므로, 빈칸에서 소녀들이 구원받지 <strong>못했다</strong>는 내용이 와야 논리가 연결됨.</p></div><div class="answer-box"><strong>정답: ① were saved from a miserable fate</strong>가 아닌가 싶지만, 뒤 문장과 모순됨. 실제로 정답을 재분석하면:<br><br>빈칸 뒤에 "After he took control of the girls' lives, he made himself rich by displaying them"이 오므로, 의사가 개입한 결과 소녀들이 구원받기는커녕 의사의 돈벌이 수단이 된 것. 즉 빈칸 = 기대와 반대되는 결과.<br><br>①은 "비참한 운명에서 구원받았다"인데, 이것이 아이러니하게도 표면적 기대를 나타내고, 바로 뒤에서 뒤집어짐. 영어 지문에서 이런 서사 역전 구조가 자주 사용됨.<br><br><strong>정답: ① were saved from a miserable fate</strong> — 표면적으로 구원받은 것처럼 보였으나, 실제로는 의사에게 다시 착취당한 아이러니.</div><div class="warning-box"><span class="warning-label">오답 분석: ④ would become famous enough in the World's Fair</span><p>의사는 소녀들이 "너무 허약하다"며 박람회 전시를 <strong>막았다</strong>. 따라서 박람회에서 유명해질 수 없다. 또한 뒤 문장에서 의사 자신이 소녀들을 관광객에게 전시했다는 것과도 모순.</p></div>
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>왜 이 답을 골랐을까:</strong> World's Fair가 지문에 언급되어 있어서 ④의 'World's Fair'에 끌렸을 가능성. 지문의 흐름(의사가 박람회를 막음)과 선지 내용이 모순됨을 놓침.</p>
+  <p><strong>오류 패턴:</strong> 키워드 매칭 함정 — 지문에 등장한 단어(World's Fair)를 포함한 선지에 끌림. 전후 논리 관계보다 단어 일치에 의존</p>
+  <p><strong>집중 포인트:</strong> 빈칸 추론에서는 빈칸 앞뒤 문장의 논리적 연결(인과, 대조, 역설)을 먼저 파악할 것. 지문에 나온 단어가 선지에 있다고 정답은 아님.</p>
+</div>
+<div class="page-break-before"></div>
+<h2>7번 — 빈칸 추론 (과학 지문 - 표 완성)</h2>
+<div class="passage-block">By 2100, global climate change will modify plant communities covering almost half of Earth's land surface. Researchers from the California Institute of Technology investigated how Earth's plant life is likely to (A)_____ over the next three centuries as Earth's climate changes in response to rising levels of human-produced greenhouse gases. The model projections paint a portrait of increasing ecological change and stress in Earth's biosphere, with many plant and animal species facing increasing competition for survival, as well as significant species turnovers, as some species (B)_____ areas occupied by other species. Most of Earth's land that is not covered by ice or desert is projected to undergo at least a 30 percent change in plant cover—changes that will require humans and animals to (C)_____ and often relocate. In addition to altering plant communities, the study predicts climate change will disrupt the ecological balance between interdependent and often endangered plant and animal species, (D)_____ biodiversity and adversely affect Earth's water, energy, carbon and other element cycles.</div>
+<div class="question-box" style="margin-top:12px;">
+  <p><strong>[VERADICT CLINIC Q21] 다음 글의 빈칸 (A)~(D)에 들어갈 가장 알맞은 것을 고르시오.</strong></p>
+</div><div class="choices-list">
+  <div class="choice-item">① ① adapt — reduce — react — invade</div>
+  <div class="choice-item">② ② react — invade — adapt — reduce</div>
+  <div class="choice-item" class="choice-correct">③ ③ invade — adapt — reduce — react</div>
+  <div class="choice-item" class="choice-wrong">④ ④ reduce — react — invade — adapt</div>
+</div>
+<div class="concept-box"><h4>1. 한줄 요약</h4><p>2100년까지 기후변화로 인해 지구 육지 절반의 식물 군집이 변화하며, 종간 경쟁과 이동이 심화되고 생태계 균형이 파괴된다는 연구 내용.</p></div><div class="grammar-block" style="text-align:justify;"><h4>2. 전체 해석</h4><p>2100년까지 지구 기후변화는 지구 육지 표면의 거의 절반을 덮고 있는 식물 군집을 변화시킬 것이다. 캘리포니아 공대 연구진은 인간이 생산한 온실가스 증가에 대응하여 기후가 변화함에 따라 지구의 식물 생태가 향후 3세기 동안 어떻게 (A)할 것인지 조사했다. 모델 예측은 지구 생물권의 생태적 변화와 스트레스가 증가하는 모습을 그려내며, 많은 동식물 종이 생존을 위한 경쟁 심화에 직면하고, 일부 종이 다른 종이 차지한 영역을 (B)하면서 상당한 종 교체가 일어날 것이다. 얼음이나 사막으로 덮이지 않은 대부분의 육지는 최소 30%의 식생 변화를 겪을 것으로 예상되며, 이는 인간과 동물이 (C)하고 종종 이주해야 하는 변화이다. 식물 군집을 변화시키는 것 외에도, 이 연구는 기후변화가 상호의존적이고 종종 멸종 위기에 처한 동식물 종 간의 생태 균형을 교란하여 생물 다양성을 (D)하고 지구의 물, 에너지, 탄소 및 기타 원소 순환에 악영향을 미칠 것으로 예측한다.</p></div><table><thead><tr><th>빈칸</th><th>문맥 단서</th><th>정답</th></tr></thead><tbody><tr><td>(A)</td><td>how Earth's plant life is likely to _____ 식물이 기후변화에 어떻게 반응할지</td><td><strong>react</strong> (반응하다)</td></tr><tr><td>(B)</td><td>some species _____ areas occupied by other species — 다른 종의 영역을 침범</td><td><strong>invade</strong> (침범하다)</td></tr><tr><td>(C)</td><td>changes that will require humans and animals to _____ and often relocate — 적응하고 이주</td><td><strong>adapt</strong> (적응하다)</td></tr><tr><td>(D)</td><td>_____ biodiversity and adversely affect — 생물다양성을 감소시키다</td><td><strong>reduce</strong> (감소시키다)</td></tr></tbody></table><div class="tip-box"><span class="tip-label">구조 및 방향성 분석</span><p><strong>전체 방향: NEGATIVE</strong> — 기후변화의 부정적 영향<br>각 빈칸의 논리:<br>• (A) <strong>react</strong>: "how ~ is likely to [동사]" = 어떻게 반응할 것인가<br>• (B) <strong>invade</strong>: 다른 종의 영역을 "침범"하다 (species turnovers의 원인)<br>• (C) <strong>adapt</strong>: relocate와 and로 연결 = 적응하고 이주하다<br>• (D) <strong>reduce</strong>: biodiversity를 "감소"시키다 (adversely와 같은 방향)</p></div><div class="answer-box"><strong>정답: ② react — invade — adapt — reduce</strong></div><div class="warning-box"><span class="warning-label">오답 분석: ④ reduce — react — invade — adapt</span><p>(A)에 reduce를 넣으면 "식물 생태가 어떻게 감소할지" → 부자연스러움. react(반응하다)가 자연스러움.<br>(B)에 react를 넣으면 "다른 종의 영역에 반응하다" → areas occupied와 맞지 않음. invade(침범)가 적합.<br>(C)에 invade → 인간이 침범? 문맥상 adapt(적응)이 맞음.<br>(D)에 adapt → 생물다양성을 적응? adversely와 모순. reduce(감소)가 맞음.</p></div>
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>왜 이 답을 골랐을까:</strong> 4개 단어의 조합을 논리적으로 배치하는 데 어려움을 느끼고, 각 빈칸의 문맥 단서보다는 대략적인 느낌으로 선택한 것으로 보임.</p>
+  <p><strong>오류 패턴:</strong> 빈칸 4개 동시 완성 문제에서 각 빈칸을 개별적으로 분석하지 않고 전체적 느낌으로 답을 선택. 특히 (A)와 (D)의 주어-동사 관계 파악 미흡.</p>
+  <p><strong>집중 포인트:</strong> 복수 빈칸 문제는 가장 확실한 빈칸부터 채우기. (B) invade areas, (D) reduce biodiversity처럼 콜로케이션이 명확한 것부터 결정하면 나머지가 자동으로 좁혀진다.</p>
+</div>
+
+
+<div class="page-break-before section-header">
+  <span class="section-num">보충</span>
+  문법 보충 설명
+</div>
+<div class="concept-box">
+  <span class="concept-label">rise-rose-risen vs raise-raised-raised 완벽 정리</span>
+  <div class="concept-box"><h4>rise vs raise: 자동사와 타동사</h4><p>이 두 동사는 한국어로 모두 "오르다/올리다"이지만, 영어에서는 완전히 다른 동사이다.</p></div><table><thead><tr><th></th><th>rise (자동사)</th><th>raise (타동사)</th></tr></thead><tbody><tr><td>뜻</td><td>오르다, 일어나다</td><td>올리다, 기르다</td></tr><tr><td>과거</td><td><strong>rose</strong></td><td>raised</td></tr><tr><td>과거분사</td><td><strong>risen</strong></td><td>raised</td></tr><tr><td>목적어</td><td>없음</td><td>있음</td></tr></tbody></table><div class="grammar-block"><strong>핵심 예문:</strong>
+
+[rise 자동사 — 스스로 오르다]
+The sun <strong>rises</strong> in the east. (태양이 뜬다)
+Prices have <strong>risen</strong> sharply. (물가가 올랐다)
+The river <strong>rose</strong> after the rain. (강물이 불었다)
+
+[raise 타동사 — 무언가를 올리다]
+They <strong>raised</strong> the flag. (깃발을 올렸다)
+She <strong>raised</strong> three children. (세 아이를 키웠다)
+The bank <strong>raised</strong> interest rates. (금리를 올렸다)</div><div class="tip-box"><span class="tip-label">즉각 판별법</span><p>빈칸 뒤에 <strong>목적어가 있으면</strong> → <strong>raise</strong> (타동사)<br>빈칸 뒤에 <strong>목적어가 없으면</strong> → <strong>rise</strong> (자동사)<br><br>현재완료 have + _____ 에서:<br>• 자동사 = have <strong>risen</strong><br>• 타동사 = have <strong>raised</strong></p></div>
+</div>
+
+<div class="page-break-before section-header">
+  <span class="section-num">개념 보충</span>
+  개념 보충 학습
+</div>
+<h2>1. 사역동사 목적보어 형태 총정리 (let/make/have/get)</h2>
+<div class="concept-box"><h4>사역동사 4형제의 목적보어 정리</h4><p>사역동사마다 취할 수 있는 목적보어의 형태가 다르다. 이 차이를 확실히 구분해야 한다.</p></div><table><thead><tr><th>사역동사</th><th>능동 (O가 직접 행위)</th><th>수동 (O가 행위 당함)</th><th>진행</th></tr></thead><tbody><tr><td><strong>let</strong></td><td>V원형</td><td>be + p.p.</td><td>✗ 불가</td></tr><tr><td><strong>make</strong></td><td>V원형</td><td>p.p.</td><td>✗ 불가</td></tr><tr><td><strong>have</strong></td><td>V원형 (사람O)</td><td>p.p. (사물O)</td><td>-ing</td></tr><tr><td><strong>get</strong></td><td>to V</td><td>p.p.</td><td>-ing</td></tr></tbody></table><div class="tip-box"><span class="tip-label">핵심 판별 순서</span><p>1. 사역동사 확인 (let/make/have/get 중 무엇?)<br>2. 목적어 확인 (사람? 사물?)<br>3. 의미 확인 (능동? 수동? 진행?)<br>→ 이 3단계로 목적보어 형태 결정!</p></div><div class="grammar-block"><strong>대표 예문:</strong>
+
+[let + O + V원형]
+My parents <strong>let</strong> me <strong>go</strong> to the party.
+
+[make + O + V원형]
+The teacher <strong>made</strong> the students <strong>rewrite</strong> the essay.
+
+[have + 사람 + V원형]
+I <strong>had</strong> the mechanic <strong>check</strong> my brakes.
+
+[have + 사물 + p.p.]
+I <strong>had</strong> my brakes <strong>checked</strong>.
+
+[get + O + to V]
+I <strong>got</strong> my friend <strong>to help</strong> me move.
+
+[get + O + p.p.]
+I <strong>got</strong> my car <strong>fixed</strong>.</div><div class="warning-box"><span class="warning-label">자주 틀리는 함정</span><p>• let은 <strong>절대</strong> -ing 안 됨: let me leaving ✗ → let me leave ✓<br>• have + 사람 + p.p. ✗ → have + 사람 + 원형 ✓<br>• get은 <strong>절대</strong> 원형 안 됨: get me go ✗ → get me to go ✓<br>• 수동태에서 make/let/have → be made to V, be let to V (to 추가!)</p></div>
+<div class="grammar-block">The teacher let the students leave early. (let + O + V원형)
+She made him apologize. (make + O + V원형)
+I had the plumber fix the pipe. (have + 사람 + V원형)
+I had my pipe fixed. (have + 사물 + p.p.)
+She got her brother to carry the boxes. (get + O + to V)
+</div>
+<h4>예문 연습</h4>
+<div class="grammar-block">1. 부모님이 나를 파티에 가게 해 주셨다 → My parents let me go to the party.
+2. 선생님이 학생들에게 에세이를 다시 쓰게 했다 → The teacher made the students rewrite the essay.
+3. 나는 정비사에게 브레이크를 점검하게 했다 → I had the mechanic check my brakes.
+4. 나는 차를 수리받았다 → I had my car repaired.
+5. 그녀는 남동생에게 상자를 옮기게 했다 → She got her brother to carry the boxes.
+</div>
+<div class="warning-box"><span class="warning-label">헷갈리는 포인트</span><p><strong>1. have + 사람 vs have + 사물</strong><br>같은 have인데 목적어에 따라 보어 형태가 달라진다!<br>• had <strong>the mechanic</strong>(사람) <strong>fix</strong>(원형) the car ✓<br>• had <strong>the car</strong>(사물) <strong>fixed</strong>(p.p.) ✓<br>• had <strong>the mechanic</strong>(사람) <strong>fixed</strong>(p.p.) ✗<br><br><strong>2. let vs make의 수동태</strong><br>• She <strong>was made to</strong> apologize. (to 추가됨!)<br>• He <strong>was let to</strong> go. (to 추가됨!)</p></div>
+<div class="page-break-before section-header">
+  <span class="section-num">연습 1</span>
+  사역동사 목적보어 형태 총정리 (let/make/have/get) 연습문제 (20문제)
+</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>1.</strong> The mother _______ her children play in the yard.</p><div class="variant-choices">① let&nbsp;&nbsp;&nbsp;② lets&nbsp;&nbsp;&nbsp;③ letted&nbsp;&nbsp;&nbsp;④ letting&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>2.</strong> The boss made all employees _______ overtime last Friday.</p><div class="variant-choices">① working&nbsp;&nbsp;&nbsp;② work&nbsp;&nbsp;&nbsp;③ worked&nbsp;&nbsp;&nbsp;④ to work&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>3.</strong> I had my assistant _______ the report by noon.</p><div class="variant-choices">① finished&nbsp;&nbsp;&nbsp;② finishing&nbsp;&nbsp;&nbsp;③ finish&nbsp;&nbsp;&nbsp;④ to finish&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>4.</strong> She had her dress _______ for the wedding.</p><div class="variant-choices">① alter&nbsp;&nbsp;&nbsp;② altering&nbsp;&nbsp;&nbsp;③ altered&nbsp;&nbsp;&nbsp;④ to alter&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>5.</strong> The teacher got the students _______ their homework early.</p><div class="variant-choices">① submit&nbsp;&nbsp;&nbsp;② submitted&nbsp;&nbsp;&nbsp;③ to submit&nbsp;&nbsp;&nbsp;④ submitting&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>6.</strong> Don't let the dog _______ on the sofa.</p><div class="variant-choices">① sitting&nbsp;&nbsp;&nbsp;② to sit&nbsp;&nbsp;&nbsp;③ sat&nbsp;&nbsp;&nbsp;④ sit&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>7.</strong> The noise made the baby _______ all night.</p><div class="variant-choices">① crying&nbsp;&nbsp;&nbsp;② cry&nbsp;&nbsp;&nbsp;③ cried&nbsp;&nbsp;&nbsp;④ to cry&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>8.</strong> She had her nails _______ at the salon.</p><div class="variant-choices">① do&nbsp;&nbsp;&nbsp;② doing&nbsp;&nbsp;&nbsp;③ done&nbsp;&nbsp;&nbsp;④ to do&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>9.</strong> I can't get this machine _______ properly.</p><div class="variant-choices">① work&nbsp;&nbsp;&nbsp;② to work&nbsp;&nbsp;&nbsp;③ worked&nbsp;&nbsp;&nbsp;④ working&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>10.</strong> The captain had the crew _______ the deck immediately.</p><div class="variant-choices">① cleaned&nbsp;&nbsp;&nbsp;② cleaning&nbsp;&nbsp;&nbsp;③ clean&nbsp;&nbsp;&nbsp;④ to clean&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>11.</strong> My parents never let me _______ out late at night.</p><div class="variant-choices">① staying&nbsp;&nbsp;&nbsp;② to stay&nbsp;&nbsp;&nbsp;③ stayed&nbsp;&nbsp;&nbsp;④ stay&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>12.</strong> The heavy rain made the river _______ its banks.</p><div class="variant-choices">① overflowing&nbsp;&nbsp;&nbsp;② to overflow&nbsp;&nbsp;&nbsp;③ overflow&nbsp;&nbsp;&nbsp;④ overflowed&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>13.</strong> He got his watch _______ at the jewelry store.</p><div class="variant-choices">① repair&nbsp;&nbsp;&nbsp;② repaired&nbsp;&nbsp;&nbsp;③ repairing&nbsp;&nbsp;&nbsp;④ to repair&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>14.</strong> The director had the actors _______ the scene five more times.</p><div class="variant-choices">① rehearsed&nbsp;&nbsp;&nbsp;② rehearse&nbsp;&nbsp;&nbsp;③ rehearsing&nbsp;&nbsp;&nbsp;④ to rehearse&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>15.</strong> She was made _______ an apology in front of everyone.</p><div class="variant-choices">① write&nbsp;&nbsp;&nbsp;② writing&nbsp;&nbsp;&nbsp;③ to write&nbsp;&nbsp;&nbsp;④ written&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>16.</strong> Please let me _______ what happened.</p><div class="variant-choices">① knowing&nbsp;&nbsp;&nbsp;② to know&nbsp;&nbsp;&nbsp;③ known&nbsp;&nbsp;&nbsp;④ know&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>17.</strong> The coach got the team _______ harder during practice.</p><div class="variant-choices">① train&nbsp;&nbsp;&nbsp;② trained&nbsp;&nbsp;&nbsp;③ to train&nbsp;&nbsp;&nbsp;④ training&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>18.</strong> I'll have the electrician _______ the wiring tomorrow.</p><div class="variant-choices">① checked&nbsp;&nbsp;&nbsp;② check&nbsp;&nbsp;&nbsp;③ checking&nbsp;&nbsp;&nbsp;④ to check&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>19.</strong> He couldn't make the engine _______ no matter what he tried.</p><div class="variant-choices">① started&nbsp;&nbsp;&nbsp;② starting&nbsp;&nbsp;&nbsp;③ to start&nbsp;&nbsp;&nbsp;④ start&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>20.</strong> I got my hair _______ shorter for the summer.</p><div class="variant-choices">① cut&nbsp;&nbsp;&nbsp;② cutting&nbsp;&nbsp;&nbsp;③ to cut&nbsp;&nbsp;&nbsp;④ cuts&nbsp;&nbsp;&nbsp;</div>
+<div class="page-break-before">
+  <h3>연습 1. 사역동사 목적보어 형태 총정리 (let/make/have/get) 정답 및 해설</h3>
+  <table>
+    <thead><tr><th style="width:30px;">#</th><th style="width:80px;">정답</th><th>해설</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>①</td><td>let + O + V원형. let은 과거형도 let (불규칙).</td></tr>
+      <tr><td>2</td><td>②</td><td>make + O + V원형.</td></tr>
+      <tr><td>3</td><td>③</td><td>have + 사람(assistant) + V원형.</td></tr>
+      <tr><td>4</td><td>③</td><td>have + 사물(dress) + p.p. (사역수동).</td></tr>
+      <tr><td>5</td><td>③</td><td>get + O + to V.</td></tr>
+      <tr><td>6</td><td>④</td><td>let + O + V원형. -ing, to V 불가.</td></tr>
+      <tr><td>7</td><td>②</td><td>make + O + V원형.</td></tr>
+      <tr><td>8</td><td>③</td><td>have + 사물(nails) + p.p.</td></tr>
+      <tr><td>9</td><td>②</td><td>get + O + to V.</td></tr>
+      <tr><td>10</td><td>③</td><td>have + 사람(crew) + V원형.</td></tr>
+      <tr><td>11</td><td>④</td><td>let + O + V원형. 다른 형태 불가.</td></tr>
+      <tr><td>12</td><td>③</td><td>make + O + V원형.</td></tr>
+      <tr><td>13</td><td>②</td><td>get + 사물(watch) + p.p.</td></tr>
+      <tr><td>14</td><td>②</td><td>have + 사람(actors) + V원형.</td></tr>
+      <tr><td>15</td><td>③</td><td>수동태: be made + to V (능동의 V원형 → 수동에서 to V로 변환).</td></tr>
+      <tr><td>16</td><td>④</td><td>let + O + V원형.</td></tr>
+      <tr><td>17</td><td>③</td><td>get + O + to V.</td></tr>
+      <tr><td>18</td><td>②</td><td>have + 사람(electrician) + V원형.</td></tr>
+      <tr><td>19</td><td>④</td><td>make + O + V원형.</td></tr>
+      <tr><td>20</td><td>①</td><td>get + 사물(hair) + p.p. (cut-cut-cut 동일형).</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<hr class="section-divider">
+<p style="text-align: center; color: #a0aec0; font-size: 9pt; margin-top: 30px;">
+  피드백지 작성 완료 — 2026. 02. 22
+</p>
+</body>
+</html>

@@ -1,0 +1,822 @@
+{
+  "bookId": "syntax-bridge-unit05",
+  "unit": 5,
+  "title": "중요 형용사와 부사",
+  "part": "III",
+  "problems": [
+    {
+      "id": "syntax-bridge-unit05-1",
+      "number": 1,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (1/4)",
+      "stem": "The presentation was <span class=\"choice\">clear / clearly</span> and everyone understood the main points <span class=\"choice\">perfect / perfectly</span>.",
+      "choices": [
+        "clear / clearly",
+        "perfect /\n                                                perfectly"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-2",
+      "number": 2,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (1/4)",
+      "stem": "She felt <span class=\"choice\">terrible / terribly</span> about missing her best friend's wedding ceremony last weekend.",
+      "choices": [
+        "terrible / terribly"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-3",
+      "number": 3,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (1/4)",
+      "stem": "The medicine works <span class=\"choice\">effective / effectively</span> in treating various types of chronic pain and inflammation.",
+      "choices": [
+        "effective / effectively"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-4",
+      "number": 4,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (1/4)",
+      "stem": "It's <span class=\"choice\">unusual / unusually</span> for him to be late, so something <span class=\"choice\">serious / seriously</span> must have happened.",
+      "choices": [
+        "unusual / unusually",
+        "serious / seriously"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-5",
+      "number": 5,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (1/4)",
+      "stem": "The weather remained <span class=\"choice\">stable / stably</span> throughout the entire week of the outdoor festival.",
+      "choices": [
+        "stable / stably"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-6",
+      "number": 6,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (1/4)",
+      "stem": "He spoke so <span class=\"choice\">quiet / quietly</span> that people in the back row couldn't hear him <span class=\"choice\">clear / clearly</span>.",
+      "choices": [
+        "quiet / quietly",
+        "clear / clearly"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-7",
+      "number": 7,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (1/4)",
+      "stem": "The solution seems <span class=\"choice\">simple / simply</span>, but implementing it will be <span class=\"choice\">extreme / extremely</span> challenging.",
+      "choices": [
+        "simple / simply",
+        "extreme / extremely"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-8",
+      "number": 8,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (1/4)",
+      "stem": "She looked <span class=\"choice\">nervous / nervously</span> before the interview, but she performed <span class=\"choice\">excellent / excellently</span>.",
+      "choices": [
+        "nervous / nervously",
+        "excellent /\n                                                excellently"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-9",
+      "number": 9,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (2/4)",
+      "stem": "The <span class=\"choice\">recent / recently</span> developed technology has made communication <span class=\"choice\">significant / significantly</span> faster.",
+      "choices": [
+        "recent / recently",
+        "significant / significantly"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-10",
+      "number": 10,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (2/4)",
+      "stem": "<span class=\"choice\">Surprising / Surprisingly</span>, the experiment produced results that were <span class=\"choice\">complete / completely</span> unexpected.",
+      "choices": [
+        "Surprising / Surprisingly",
+        "complete / completely"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-11",
+      "number": 11,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (2/4)",
+      "stem": "The team worked <span class=\"choice\">hard / hardly</span> to meet the deadline, and their effort was <span class=\"choice\">high / highly</span> appreciated.",
+      "choices": [
+        "hard / hardly",
+        "high / highly"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-12",
+      "number": 12,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (2/4)",
+      "stem": "The new policy will be <span class=\"choice\">effective / effectively</span> from next month and will affect all employees <span class=\"choice\">equal / equally</span>.",
+      "choices": [
+        "effective / effectively",
+        "equal /\n                                                equally"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-13",
+      "number": 13,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (2/4)",
+      "stem": "She drives very <span class=\"choice\">careful / carefully</span> in bad weather because the roads become <span class=\"choice\">dangerous / dangerously</span> slippery.",
+      "choices": [
+        "careful / carefully",
+        "dangerous /\n                                                dangerously"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-14",
+      "number": 14,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (2/4)",
+      "stem": "The concert was <span class=\"choice\">amazing / amazingly</span> good, and the audience responded <span class=\"choice\">enthusiastic / enthusiastically</span>.",
+      "choices": [
+        "amazing / amazingly",
+        "enthusiastic /\n                                                enthusiastically"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-15",
+      "number": 15,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (2/4)",
+      "stem": "<span class=\"choice\">Initial / Initially</span>, the project seemed <span class=\"choice\">impossible / impossibly</span>, but the team proved everyone wrong.",
+      "choices": [
+        "Initial / Initially",
+        "impossible / impossibly"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-16",
+      "number": 16,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (2/4)",
+      "stem": "The company's profits have grown <span class=\"choice\">steady / steadily</span> over the past five years despite <span class=\"choice\">economic / economically</span> challenges.",
+      "choices": [
+        "steady /\n                                                steadily",
+        "economic / economically"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-17",
+      "number": 17,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (3/4)",
+      "stem": "He answered the questions <span class=\"choice\">confident / confidently</span> and made a <span class=\"choice\">positive / positively</span> impression on the interviewers.",
+      "choices": [
+        "confident /\n                                                confidently",
+        "positive /\n                                                positively"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-18",
+      "number": 18,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (3/4)",
+      "stem": "The <span class=\"choice\">final / finally</span> decision will be made after <span class=\"choice\">careful / carefully</span> consideration of all proposals.",
+      "choices": [
+        "final / finally",
+        "careful / carefully"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-19",
+      "number": 19,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (3/4)",
+      "stem": "She felt <span class=\"choice\">pride / proud</span> of her achievements and was <span class=\"choice\">extreme / extremely</span> grateful for the support.",
+      "choices": [
+        "pride / proud",
+        "extreme / extremely"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-20",
+      "number": 20,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (3/4)",
+      "stem": "The machine operates <span class=\"choice\">automatic / automatically</span> and requires <span class=\"choice\">minimal / minimally</span> human intervention.",
+      "choices": [
+        "automatic / automatically",
+        "minimal / minimally"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-21",
+      "number": 21,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (3/4)",
+      "stem": "<span class=\"choice\">Unfortunate / Unfortunately</span>, the weather was <span class=\"choice\">terrible / terribly</span> during our vacation in Hawaii.",
+      "choices": [
+        "Unfortunate / Unfortunately",
+        "terrible / terribly"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-22",
+      "number": 22,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (3/4)",
+      "stem": "The professor explained the concept <span class=\"choice\">clear / clearly</span> using <span class=\"choice\">simple / simply</span> examples that everyone could understand.",
+      "choices": [
+        "clear /\n                                                clearly",
+        "simple / simply"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-23",
+      "number": 23,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (3/4)",
+      "stem": "The building looks <span class=\"choice\">modern / modernly</span> from the outside but is <span class=\"choice\">traditional / traditionally</span> decorated inside.",
+      "choices": [
+        "modern / modernly",
+        "traditional / traditionally"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-24",
+      "number": 24,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (3/4)",
+      "stem": "She handled the crisis <span class=\"choice\">professional / professionally</span> and remained <span class=\"choice\">calm / calmly</span> under pressure.",
+      "choices": [
+        "professional /\n                                                professionally",
+        "calm /\n                                                calmly"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-25",
+      "number": 25,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (4/4)",
+      "stem": "The results were <span class=\"choice\">consistent / consistently</span> with our predictions and proved our hypothesis <span class=\"choice\">correct / correctly</span>.",
+      "choices": [
+        "consistent / consistently",
+        "correct /\n                                                correctly"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-26",
+      "number": 26,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (4/4)",
+      "stem": "<span class=\"choice\">Personal / Personally</span>, I think the decision was <span class=\"choice\">wise / wisely</span> given the circumstances.",
+      "choices": [
+        "Personal / Personally",
+        "wise / wisely"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-27",
+      "number": 27,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (4/4)",
+      "stem": "The new employee adapted <span class=\"choice\">quick / quickly</span> to the work environment and proved <span class=\"choice\">reliable / reliably</span>.",
+      "choices": [
+        "quick / quickly",
+        "reliable / reliably"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-28",
+      "number": 28,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (4/4)",
+      "stem": "The presentation was <span class=\"choice\">visual / visually</span> appealing and <span class=\"choice\">high / highly</span> informative for the audience.",
+      "choices": [
+        "visual / visually",
+        "high / highly"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-29",
+      "number": 29,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (4/4)",
+      "stem": "<span class=\"choice\">General / Generally</span> speaking, the conference was <span class=\"choice\">successful / successfully</span> and well-organized.",
+      "choices": [
+        "General / Generally",
+        "successful / successfully"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-30",
+      "number": 30,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (4/4)",
+      "stem": "The doctor spoke <span class=\"choice\">gentle / gently</span> to the patient and explained the procedure <span class=\"choice\">thorough / thoroughly</span>.",
+      "choices": [
+        "gentle / gently",
+        "thorough /\n                                                thoroughly"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-1",
+      "number": 1,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (1/3)",
+      "stem": "I haven't seen him <span class=\"choice\">late / lately</span>, but I heard he's been working <span class=\"choice\">hard / hardly</span> on his new project.",
+      "choices": [
+        "late / lately",
+        "hard / hardly"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-2",
+      "number": 2,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (1/3)",
+      "stem": "The two buildings are very <span class=\"choice\">close / closely</span> to each other and are <span class=\"choice\">close / closely</span> connected underground.",
+      "choices": [
+        "close / closely",
+        "close / closely"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-3",
+      "number": 3,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (1/3)",
+      "stem": "She arrived <span class=\"choice\">late / lately</span> for the meeting and could <span class=\"choice\">hard / hardly</span> find a seat in the crowded room.",
+      "choices": [
+        "late / lately",
+        "hard / hardly"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-4",
+      "number": 4,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (1/3)",
+      "stem": "The <span class=\"choice\">later / latest</span> research shows that the <span class=\"choice\">later / latest</span> you go to bed, the worse you sleep.",
+      "choices": [
+        "later / latest",
+        "later / latest"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-5",
+      "number": 5,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (1/3)",
+      "stem": "<span class=\"choice\">Near / Nearly</span> half of the students <span class=\"choice\">live / living</span> <span class=\"choice\">near / nearly</span> the campus prefer walking to class.",
+      "choices": [
+        "Near / Nearly",
+        "live / living",
+        "near /\n                                                nearly"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-6",
+      "number": 6,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (1/3)",
+      "stem": "The patient is still <span class=\"choice\">alive / living</span>, but the doctors say there's <span class=\"choice\">hard / hardly</span> any hope for recovery.",
+      "choices": [
+        "alive / living",
+        "hard / hardly"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-7",
+      "number": 7,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (1/3)",
+      "stem": "She felt <span class=\"choice\">alone / lonely</span> in the big city despite being surrounded by millions of <span class=\"choice\">live / living</span> people.",
+      "choices": [
+        "alone / lonely",
+        "live / living"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-8",
+      "number": 8,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (1/3)",
+      "stem": "The baby was <span class=\"choice\">asleep / sleeping</span> peacefully in her <span class=\"choice\">asleep / sleeping</span> bag when we checked on her.",
+      "choices": [
+        "asleep / sleeping",
+        "asleep / sleeping"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-9",
+      "number": 9,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (1/3)",
+      "stem": "The airplane flew <span class=\"choice\">high / highly</span> above the clouds and was <span class=\"choice\">high / highly</span> visible from the ground.",
+      "choices": [
+        "high / highly",
+        "high / highly"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-10",
+      "number": 10,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (2/3)",
+      "stem": "He works <span class=\"choice\">hard / hardly</span> during the day but <span class=\"choice\">hard / hardly</span> ever complains about being tired.",
+      "choices": [
+        "hard / hardly",
+        "hard / hardly"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-11",
+      "number": 11,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (2/3)",
+      "stem": "<span class=\"choice\">Late / Lately</span>, there have been many changes in company policy, and employees are <span class=\"choice\">hard / hardly</span> adjusting.",
+      "choices": [
+        "Late / Lately",
+        "hard / hardly"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-12",
+      "number": 12,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (2/3)",
+      "stem": "The <span class=\"choice\">former / latter</span> option seems more practical, while the <span class=\"choice\">former / latter</span> appears more innovative.",
+      "choices": [
+        "former / latter",
+        "former / latter"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-13",
+      "number": 13,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (2/3)",
+      "stem": "Stand <span class=\"choice\">close / closely</span> to the microphone so everyone can hear you <span class=\"choice\">clear / clearly</span>.",
+      "choices": [
+        "close / closely",
+        "clear / clearly"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-14",
+      "number": 14,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (2/3)",
+      "stem": "The twins look so much <span class=\"choice\">like / alike</span> that even their parents sometimes confuse them.",
+      "choices": [
+        "like / alike"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-15",
+      "number": 15,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (2/3)",
+      "stem": "She has been working <span class=\"choice\">late / lately</span> <span class=\"choice\">near / nearly</span> every night to finish the <span class=\"choice\">last / latest</span> project.",
+      "choices": [
+        "late / lately",
+        "near / nearly",
+        "last / latest"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-16",
+      "number": 16,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (2/3)",
+      "stem": "The mountain climbers reached a <span class=\"choice\">high / highly</span> altitude and were <span class=\"choice\">high / highly</span> praised for their achievement.",
+      "choices": [
+        "high / highly",
+        "high / highly"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-17",
+      "number": 17,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (2/3)",
+      "stem": "The <span class=\"choice\">living / alive</span> organisms in the pond are barely <span class=\"choice\">living / alive</span> due to pollution.",
+      "choices": [
+        "living / alive",
+        "living / alive"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-18",
+      "number": 18,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (2/3)",
+      "stem": "He lives <span class=\"choice\">alone / lonely</span> but doesn't feel <span class=\"choice\">alone / lonely</span> because he has many close friends.",
+      "choices": [
+        "alone / lonely",
+        "alone / lonely"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-19",
+      "number": 19,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (3/3)",
+      "stem": "The <span class=\"choice\">sleeping / asleep</span> child was moved carefully to avoid waking her up from her deep <span class=\"choice\">sleeping / asleep</span>.",
+      "choices": [
+        "sleeping / asleep",
+        "sleeping /\n                                                asleep"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-20",
+      "number": 20,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (3/3)",
+      "stem": "<span class=\"choice\">Close / Closely</span> examination of the evidence shows that the two cases are <span class=\"choice\">close / closely</span> related.",
+      "choices": [
+        "Close / Closely",
+        "close / closely"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-21",
+      "number": 21,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (3/3)",
+      "stem": "The <span class=\"choice\">last / latest</span> train leaves at midnight, and it's the <span class=\"choice\">last / latest</span> chance to catch it tonight.",
+      "choices": [
+        "last / latest",
+        "last / latest"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-22",
+      "number": 22,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (3/3)",
+      "stem": "She speaks English <span class=\"choice\">near / nearly</span> fluently now, much better than when she lived <span class=\"choice\">near / nearly</span> London.",
+      "choices": [
+        "near / nearly",
+        "near / nearly"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-23",
+      "number": 23,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (3/3)",
+      "stem": "The professor is <span class=\"choice\">high / highly</span> respected in his field and has received <span class=\"choice\">high / highly</span> honors.",
+      "choices": [
+        "high / highly",
+        "high / highly"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-24",
+      "number": 24,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (3/3)",
+      "stem": "The company's <span class=\"choice\">later / latest</span> product launch was delayed, but they hope to release it <span class=\"choice\">later / lately</span> this year.",
+      "choices": [
+        "later / latest",
+        "later /\n                                                lately"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-25",
+      "number": 25,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (3/3)",
+      "stem": "<span class=\"choice\">Hard / Hardly</span> anyone attended the meeting, so they had to work <span class=\"choice\">hard / hardly</span> to reschedule it.",
+      "choices": [
+        "Hard / Hardly",
+        "hard / hardly"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-1",
+      "number": 1,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (1/3)",
+      "stem": "This restaurant serves food that is <span class=\"choice\">as good as / better than / the best</span> any restaurant in the city.",
+      "choices": [
+        "as good as / better\n                                                than / the best"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-2",
+      "number": 2,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (1/3)",
+      "stem": "The <span class=\"choice\">more / most</span> you practice, the <span class=\"choice\">good / better / best</span> you become at playing the piano.",
+      "choices": [
+        "more / most",
+        "good / better / best"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-3",
+      "number": 3,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (1/3)",
+      "stem": "She is <span class=\"choice\">intelligent / more intelligent / the most intelligent</span> student in the entire graduating class.",
+      "choices": [
+        "intelligent / more intelligent / the most\n                                                intelligent"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-4",
+      "number": 4,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (1/3)",
+      "stem": "The weather today is <span class=\"choice\">much / very</span> <span class=\"choice\">cold / colder / coldest</span> than it was yesterday morning.",
+      "choices": [
+        "much / very",
+        "cold / colder / coldest"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-5",
+      "number": 5,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (1/3)",
+      "stem": "This is <span class=\"choice\">by far / very</span> <span class=\"choice\">the good / the better / the best</span> movie I have seen this year.",
+      "choices": [
+        "by far / very",
+        "the\n                                                good / the better / the best"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-6",
+      "number": 6,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (1/3)",
+      "stem": "He speaks English <span class=\"choice\">as fluent / as fluently / more fluently</span> as a native speaker would.",
+      "choices": [
+        "as fluent / as fluently / more\n                                                fluently"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-7",
+      "number": 7,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (1/3)",
+      "stem": "The new model is <span class=\"choice\">slightly / quite</span> <span class=\"choice\">expensive / more expensive</span> than the previous version.",
+      "choices": [
+        "slightly / quite",
+        "expensive / more expensive"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-8",
+      "number": 8,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (1/3)",
+      "stem": "Among all the candidates, she performed <span class=\"choice\">good / better / the best</span> during the interview process.",
+      "choices": [
+        "good / better /\n                                                the best"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-9",
+      "number": 9,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (1/3)",
+      "stem": "This problem is <span class=\"choice\">much / very</span> <span class=\"choice\">easy / easier / easiest</span> to solve than the previous one.",
+      "choices": [
+        "much / very",
+        "easy / easier / easiest"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-10",
+      "number": 10,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (2/3)",
+      "stem": "The <span class=\"choice\">later / latest</span> edition contains <span class=\"choice\">many / more / the most</span> updated information than earlier versions.",
+      "choices": [
+        "later / latest",
+        "many / more / the most"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-11",
+      "number": 11,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (2/3)",
+      "stem": "He is <span class=\"choice\">no / not</span> <span class=\"choice\">less / lesser</span> intelligent than his older brother who graduated from Harvard.",
+      "choices": [
+        "no / not",
+        "less /\n                                                lesser"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-12",
+      "number": 12,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (2/3)",
+      "stem": "The Pacific Ocean is <span class=\"choice\">large / larger / the largest</span> ocean in the world by far.",
+      "choices": [
+        "large / larger / the\n                                                largest"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-13",
+      "number": 13,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (2/3)",
+      "stem": "This year's profits are <span class=\"choice\">significant / significantly</span> <span class=\"choice\">high / higher / highest</span> than last year's figures.",
+      "choices": [
+        "significant /\n                                                significantly",
+        "high / higher / highest"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-14",
+      "number": 14,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (2/3)",
+      "stem": "She runs <span class=\"choice\">as fast / faster / fastest</span> as any professional athlete in her age group.",
+      "choices": [
+        "as fast / faster / fastest"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-15",
+      "number": 15,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (2/3)",
+      "stem": "The <span class=\"choice\">old / older / oldest</span> you get, the <span class=\"choice\">wise / wiser / wisest</span> you become through experience.",
+      "choices": [
+        "old / older / oldest",
+        "wise / wiser / wisest"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-16",
+      "number": 16,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (2/3)",
+      "stem": "This is one of <span class=\"choice\">the challenging / the more challenging / the most challenging</span> projects we've ever undertaken.",
+      "choices": [
+        "the challenging / the more challenging /\n                                                the most challenging"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-17",
+      "number": 17,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (2/3)",
+      "stem": "The test was <span class=\"choice\">much / very</span> <span class=\"choice\">difficult / more difficult / most difficult</span> than we had expected.",
+      "choices": [
+        "much / very",
+        "difficult / more difficult / most difficult"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-18",
+      "number": 18,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (2/3)",
+      "stem": "No other city in the world is <span class=\"choice\">as expensive / more expensive / most expensive</span> as Tokyo.",
+      "choices": [
+        "as expensive / more\n                                                expensive / most expensive"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-19",
+      "number": 19,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (3/3)",
+      "stem": "The company's performance this quarter was <span class=\"choice\">good / better / the best</span> it has been in five years.",
+      "choices": [
+        "good /\n                                                better / the best"
+      ]
+    },
+    {
+      "id": "syntax-bridge-unit05-20",
+      "number": 20,
+      "type": "fill-in-blank",
+      "instruction": "연습 문제 (3/3)",
+      "stem": "Learning a foreign language becomes <span class=\"choice\">easy / easier / easiest</span> when you practice <span class=\"choice\">regular / regularly</span>.",
+      "choices": [
+        "easy / easier /\n                                                easiest",
+        "regular /\n                                                regularly"
+      ]
+    }
+  ]
+}

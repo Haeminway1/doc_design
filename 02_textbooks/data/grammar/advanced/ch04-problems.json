@@ -1,0 +1,256 @@
+{
+  "bookId": "grammar-advanced-ch04",
+  "chapter": "ch04",
+  "title": "특수 어순과 도치 구문 마스터",
+  "problems": [
+    {
+      "id": "grammar-advanced-76",
+      "number": 76,
+      "type": "error-identification",
+      "stem": "Under no circumstances employees are permitted to share their security credentials with anyone, regardless of their rank or position.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "employees are → are employees",
+      "explanation": "employees are → are employees"
+    },
+    {
+      "id": "grammar-advanced-77",
+      "number": 77,
+      "type": "error-identification",
+      "stem": "So profound the implications of the discovery were that the scientific community took nearly a decade to fully accept them.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "profound the implications... were → profound were the implications...",
+      "explanation": "profound the implications... were → profound were the implications..."
+    },
+    {
+      "id": "grammar-advanced-78",
+      "number": 78,
+      "type": "error-identification",
+      "stem": "Had the regulator acted more decisively, not only the financial crisis could have been averted but also public trust in the banking system might have been preserved.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "the financial crisis could → could the financial crisis",
+      "explanation": "the financial crisis could → could the financial crisis"
+    },
+    {
+      "id": "grammar-advanced-79",
+      "number": 79,
+      "type": "error-identification",
+      "stem": "The report fails to address the crucial question of how can the new policy be implemented without causing significant disruption to existing operations.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "how can the new policy be → how the new policy can be",
+      "explanation": "how can the new policy be → how the new policy can be"
+    },
+    {
+      "id": "grammar-advanced-80",
+      "number": 80,
+      "type": "error-identification",
+      "stem": "Rarely in the history of modern medicine a single invention has had such a transformative impact on public health as the development of vaccines.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "a single invention has → has a single invention",
+      "explanation": "a single invention has → has a single invention"
+    },
+    {
+      "id": "grammar-advanced-81",
+      "number": 81,
+      "type": "fill-in-blank",
+      "stem": "On the wall of the ancient tomb ________ intricate hieroglyphs depicting the life and death of a forgotten pharaoh.",
+      "choices": [
+        "was",
+        "were",
+        "has been",
+        "have been"
+      ],
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "answer": 2,
+      "explanation": "(B) (주어는 intricate hieroglyphs)"
+    },
+    {
+      "id": "grammar-advanced-82",
+      "number": 82,
+      "type": "error-identification",
+      "stem": "Only by understanding the historical context of the novel one can fully appreciate the depth of its social commentary.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "one can → can one",
+      "explanation": "one can → can one"
+    },
+    {
+      "id": "grammar-advanced-83",
+      "number": 83,
+      "type": "error-identification",
+      "stem": "Such was the chaos after the earthquake that the government struggled to provide even basic necessities to its citizens.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "No Error",
+      "explanation": "No Error"
+    },
+    {
+      "id": "grammar-advanced-84",
+      "number": 84,
+      "type": "error-identification",
+      "stem": "The committee is investigating why did the safety protocols fail and who is ultimately responsible for the oversight.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "why did the safety protocols fail → why the safety protocols failed",
+      "explanation": "why did the safety protocols fail → why the safety protocols failed"
+    },
+    {
+      "id": "grammar-advanced-85",
+      "number": 85,
+      "type": "error-identification",
+      "stem": "No sooner the CEO had finished his speech than the company's stock price began to plummet.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "the CEO had → had the CEO",
+      "explanation": "the CEO had → had the CEO"
+    },
+    {
+      "id": "grammar-advanced-86",
+      "number": 86,
+      "type": "fill-in-blank",
+      "stem": "________ aware of the potential risks, they would have never approved the project in the first place.",
+      "choices": [
+        "They had been",
+        "Had they been",
+        "They were",
+        "Were they"
+      ],
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "answer": 2,
+      "explanation": "(B) (가정법 과거완료 도치)"
+    },
+    {
+      "id": "grammar-advanced-87",
+      "number": 87,
+      "type": "error-identification",
+      "stem": "In the valley below the towering mountains a small, isolated village lies, seemingly untouched by the passage of time.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "a small... village lies → lies a small... village",
+      "explanation": "a small... village lies → lies a small... village"
+    },
+    {
+      "id": "grammar-advanced-88",
+      "number": 88,
+      "type": "error-identification",
+      "stem": "Not for a single moment I did doubt his loyalty, even when all the evidence seemed to point against him.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "I did → did I",
+      "explanation": "I did → did I"
+    },
+    {
+      "id": "grammar-advanced-89",
+      "number": 89,
+      "type": "error-identification",
+      "stem": "The question of what constitutes \"intelligence\" and how can it be measured accurately remains a subject of intense debate among psychologists.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "how can it be → how it can be",
+      "explanation": "how can it be → how it can be"
+    },
+    {
+      "id": "grammar-advanced-90",
+      "number": 90,
+      "type": "error-identification",
+      "stem": "Little the board of directors knew that their decision to merge with the rival company would eventually lead to its downfall.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "the board... knew → did the board... know",
+      "explanation": "the board... knew → did the board... know"
+    },
+    {
+      "id": "grammar-advanced-91",
+      "number": 91,
+      "type": "error-identification",
+      "stem": "Into the crowded courtroom he walked, exuding an air of confidence that seemed to defy the gravity of the charges against him.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "No Error (주어가 대명사이므로 도치 X)",
+      "explanation": "No Error (주어가 대명사이므로 도치 X)"
+    },
+    {
+      "id": "grammar-advanced-92",
+      "number": 92,
+      "type": "error-identification",
+      "stem": "Not only the new regulations are difficult to interpret, but they also impose a significant financial burden on small businesses.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "the new regulations are → are the new regulations",
+      "explanation": "the new regulations are → are the new regulations"
+    },
+    {
+      "id": "grammar-advanced-93",
+      "number": 93,
+      "type": "fill-in-blank",
+      "stem": "Should you require any further clarification on this matter, ________ hesitate to contact my office directly.",
+      "choices": [
+        "do not",
+        "you should not",
+        "not",
+        "you do not"
+      ],
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "answer": 1,
+      "explanation": "(A) (가정법 도치 뒤 명령문)"
+    },
+    {
+      "id": "grammar-advanced-94",
+      "number": 94,
+      "type": "error-identification",
+      "stem": "The police asked the witness to describe exactly what did he see on the night of the incident.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "what did he see → what he saw",
+      "explanation": "what did he see → what he saw"
+    },
+    {
+      "id": "grammar-advanced-95",
+      "number": 95,
+      "type": "error-identification",
+      "stem": "Hardly the sun had risen when the rescue team began their search for the missing hikers in the treacherous mountain terrain.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "the sun had → had the sun",
+      "explanation": "the sun had → had the sun"
+    },
+    {
+      "id": "grammar-advanced-96",
+      "number": 96,
+      "type": "error-identification",
+      "stem": "On no account you should provide personal information to anyone over the phone, even if they claim to be from your bank.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "you should → should you",
+      "explanation": "you should → should you"
+    },
+    {
+      "id": "grammar-advanced-97",
+      "number": 97,
+      "type": "error-identification",
+      "stem": "The issue is not who is to blame, but rather what steps should be taken now to mitigate the damage.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "No Error (간접의문문 어순)",
+      "explanation": "No Error (간접의문문 어순)"
+    },
+    {
+      "id": "grammar-advanced-98",
+      "number": 98,
+      "type": "error-identification",
+      "stem": "So skillfully the artist manipulated light and shadow that her paintings seemed almost three-dimensional.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "the artist manipulated → did the artist manipulate",
+      "explanation": "the artist manipulated → did the artist manipulate"
+    },
+    {
+      "id": "grammar-advanced-99",
+      "number": 99,
+      "type": "error-identification",
+      "stem": "Not until all other options had been exhausted the committee did agree to consider such a drastic measure.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "the committee did → did the committee",
+      "explanation": "the committee did → did the committee"
+    },
+    {
+      "id": "grammar-advanced-100",
+      "number": 100,
+      "type": "fill-in-blank",
+      "stem": "Were the government to implement a universal basic income, the potential economic and social consequences ________ profound.",
+      "choices": [
+        "are",
+        "would be",
+        "will be",
+        "were"
+      ],
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "answer": 2,
+      "explanation": "(B) (가정법 과거 도치 구문의 주절)"
+    }
+  ]
+}

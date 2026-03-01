@@ -1,0 +1,818 @@
+{
+  "bookId": "grammar-bridge-ch02",
+  "chapter": "ch02",
+  "title": "가정법 (Conditional Mood)",
+  "problems": [
+    {
+      "id": "grammar-bridge-ch02-51",
+      "number": 51,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "used - would discover",
+        "had used - would have discovered",
+        "would use - had discovered",
+        "were using - would discover",
+        "had been using - discovered"
+      ],
+      "stem": "If the archaeological team _______ more advanced equipment during their expedition, they _______ the ancient artifacts much earlier.",
+      "answer": 2,
+      "explanation": "문맥상 '탐사 중에(during their expedition)'라는 과거 시점에 대한 반대 가정이므로 가정법 과거완료가 필요합니다. 공식은 'If + S + had p.p., S + would have p.p.'이므로, `had used`와 `would have discovered`가 가장 적절합니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-52",
+      "number": 52,
+      "type": "transformation",
+      "instruction": "다음 문장을 가정법으로 바꿀 때 가장 적절한 것은?",
+      "choices": [
+        "If the founders conducted thorough market research, the startup wouldn't fail.",
+        "If the founders had conducted thorough market research, the startup wouldn't have failed.",
+        "If the founders would conduct thorough market research, the startup didn't fail.",
+        "If the founders should conduct thorough market research, the startup won't fail.",
+        "If the founders were to conduct thorough market research, the startup hadn't failed."
+      ],
+      "stem": "The startup failed because the founders didn't conduct thorough market research.",
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "주어진 문장은 '실패했다(failed)', '조사하지 않았다(didn't conduct)'는 과거 사실입니다. 이에 대한 반대 가정은 가정법 과거완료를 사용해야 합니다. 따라서 'If the founders had conducted..., the startup wouldn't have failed.'가 올바른 문장입니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-53",
+      "number": 53,
+      "type": "correct-usage",
+      "instruction": "다음 중 어법상 올바른 것은?",
+      "choices": [
+        "If I was in your position, I would reject the proposal immediately.",
+        "If the weather will be nice tomorrow, we could have a picnic in the park.",
+        "If she were more confident in her abilities, she would apply for the promotion.",
+        "If they would have studied harder, they could pass the examination.",
+        "If he has more experience, he would be selected for the position."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 3,
+      "explanation": "가정법 과거에서 be동사는 주어의 인칭과 수에 관계없이 `were`를 사용하는 것이 원칙입니다. ① `was` → `were`. ② 조건절에 `will` 사용 불가. ④ If절에 `would have` 사용 불가. ⑤ `has` → `had`."
+    },
+    {
+      "id": "grammar-bridge-ch02-54",
+      "number": 54,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "Despite",
+        "But for",
+        "In case of",
+        "Due to",
+        "On behalf of"
+      ],
+      "stem": "_______ the sudden economic recession, the company's expansion plans would have proceeded as scheduled.",
+      "answer": 2,
+      "explanation": "주절이 'would have proceeded'로 가정법 과거완료 형태이므로, 조건절의 의미를 가진 표현이 필요합니다. 'But for'는 '...이 없었다면'이라는 의미로 가정법 구문에서 If절을 대신할 수 있습니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-55",
+      "number": 55,
+      "type": "paraphrase",
+      "instruction": "다음 문장의 의미와 가장 가까운 것은?",
+      "choices": [
+        "If the negotiator had been more experienced, he would have secured better terms for the contract.",
+        "If the negotiator were more experienced, he would secure better terms for the contract.",
+        "If the negotiator should be more experienced, he will secure better terms for the contract.",
+        "If the negotiator was more experienced, he secured better terms for the contract.",
+        "If the negotiator would be more experienced, he would have secured better terms for the contract."
+      ],
+      "stem": "A more experienced negotiator would have secured better terms for the contract.",
+      "choiceLayout": "single-column",
+      "answer": 1,
+      "explanation": "주어 'A more experienced negotiator'는 'If the negotiator had been more experienced'라는 의미를 내포하고 있습니다. 주절이 'would have secured'이므로, 조건절은 가정법 과거완료 형태가 되어야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-56",
+      "number": 56,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 가정법 과거가 올바르게 사용된 것은?",
+      "choices": [
+        "If the professor explained the concept more clearly, students would understand it better.",
+        "If the professor were to explain the concept more clearly, students would understand it better.",
+        "If the professor would explain the concept more clearly, students understood it better.",
+        "If the professor had explained the concept more clearly, students would have understood it better.",
+        "If the professor should explain the concept more clearly, students will understand it better."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 1,
+      "explanation": "가정법 과거는 현재 사실에 대한 반대 가정을 나타내며 'If + S + 과거동사, S + would/could + R'의 형태를 가집니다. ①이 이 공식에 정확히 부합합니다. ②, ⑤는 가정법 미래, ④는 가정법 과거완료입니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-57",
+      "number": 57,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "couldn't complete",
+        "couldn't have completed",
+        "can't complete",
+        "won't complete",
+        "wouldn't complete"
+      ],
+      "stem": "Without your invaluable guidance throughout the research process, I _______ this dissertation successfully.",
+      "answer": 2,
+      "explanation": "'Without' 구문이 이끄는 가정법 문장입니다. 문맥상 '연구 과정 내내(throughout the research process)'라는 과거의 일에 대한 가정이므로, 주절은 가정법 과거완료 형태인 `couldn't have completed`가 와야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-58",
+      "number": 58,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 어법상 틀린 부분은?",
+      "choices": [
+        "the government",
+        "would implement",
+        "stricter environmental regulations",
+        "the air quality",
+        "would improve"
+      ],
+      "stem": "If ①<u>the government</u> ②<u>would implement</u> ③<u>stricter environmental regulations</u>, ④<u>the air quality</u> ⑤<u>would improve</u> significantly.",
+      "answer": 2,
+      "explanation": "가정법 과거의 If절(조건절)에는 과거형 동사를 사용해야 하며, 조동사 `would`를 사용할 수 없습니다. `would implement`를 `implemented`로 고쳐야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-59",
+      "number": 59,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "wouldn't consider",
+        "won't consider",
+        "didn't consider",
+        "don't consider",
+        "haven't considered"
+      ],
+      "stem": "In your shoes, I _______ the risky investment opportunity without conducting extensive due diligence.",
+      "answer": 1,
+      "explanation": "'In your shoes'는 'If I were in your position'과 같은 의미의 가정법 과거 구문입니다. 따라서 주절에는 '조동사 과거형 + 동사원형' 형태인 `wouldn't consider`가 적절합니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-60",
+      "number": 60,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 가정법 미래가 사용된 문장은?",
+      "choices": [
+        "If you changed your mind about the proposal, please let me know.",
+        "If you should change your mind about the proposal, please let me know.",
+        "If you had changed your mind about the proposal, you would have told me.",
+        "If you were changing your mind about the proposal, I would understand.",
+        "If you have changed your mind about the proposal, we need to discuss it."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "가정법 미래는 실현 가능성이 희박한 미래의 일을 가정하며, If절에 `should`나 `were to`를 사용합니다. ②는 '혹시라도 마음이 바뀐다면'이라는 의미의 가정법 미래 구문입니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-61",
+      "number": 61,
+      "type": "transformation",
+      "instruction": "다음 문장을 가정법으로 바꿀 때 가장 적절한 것은?",
+      "choices": [
+        "If she spoke fluent Mandarin, she could work as a translator in Beijing.",
+        "If she had spoken fluent Mandarin, she could have worked as a translator in Beijing.",
+        "If she would speak fluent Mandarin, she can work as a translator in Beijing.",
+        "If she speaks fluent Mandarin, she could work as a translator in Beijing.",
+        "If she should speak fluent Mandarin, she will work as a translator in Beijing."
+      ],
+      "stem": "She doesn't speak fluent Mandarin, so she can't work as a translator in Beijing.",
+      "choiceLayout": "single-column",
+      "answer": 1,
+      "explanation": "'doesn't speak', 'can't work'는 현재 사실입니다. 이에 대한 반대 가정은 가정법 과거('If + 과거동사, ... could + R')를 사용해야 합니다. 따라서 ①이 가장 적절합니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-62",
+      "number": 62,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "Because of",
+        "In spite of",
+        "But for",
+        "On account of",
+        "With regard to"
+      ],
+      "stem": "_______ his arrogant attitude during the interview, he might have been offered the position.",
+      "answer": 3,
+      "explanation": "주절이 'might have been offered'로 가정법 과거완료 형태입니다. 문맥상 '그의 거만한 태도가 없었더라면'이라는 의미가 되어야 하므로, 'But for'(~이 없었다면)가 가장 적절합니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-63",
+      "number": 63,
+      "type": "correct-usage",
+      "instruction": "다음 중 어법상 올바른 것은?",
+      "choices": [
+        "If the sun were to rise in the west, I would still trust in your loyalty.",
+        "If the sun will rise in the west, I would still trust in your loyalty.",
+        "If the sun would rise in the west, I will still trust in your loyalty.",
+        "If the sun rises in the west, I would still trust in your loyalty.",
+        "If the sun had risen in the west, I would still trust in your loyalty."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 1,
+      "explanation": "'해가 서쪽에서 뜬다면'과 같이 실현 불가능한 미래를 가정할 때는 가정법 미래의 `were to` 구문을 사용합니다. 'If + S + were to + R, S + would + R' 공식에 맞는 ①이 정답입니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-64",
+      "number": 64,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장의 의미를 나타내는 가정법 구문은?",
+      "choices": [
+        "If there had been adequate funding, the research team could have completed their groundbreaking study.",
+        "If there were adequate funding, the research team could complete their groundbreaking study.",
+        "If there should be adequate funding, the research team will complete their groundbreaking study.",
+        "If there would be adequate funding, the research team completed their groundbreaking study.",
+        "If there is adequate funding, the research team would complete their groundbreaking study."
+      ],
+      "stem": "The lack of funding prevented the research team from completing their groundbreaking study.",
+      "choiceLayout": "single-column",
+      "answer": 1,
+      "explanation": "'자금 부족이 연구를 막았다(prevented)'는 과거 사실에 대한 반대 가정이므로 가정법 과거완료를 사용해야 합니다. 'If + S + had p.p., S + could have p.p.' 형태인 ①이 가장 적절합니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-65",
+      "number": 65,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "made",
+        "would make",
+        "would have made",
+        "will make",
+        "makes"
+      ],
+      "stem": "Given the same circumstances, any rational person _______ the same decision.",
+      "answer": 2,
+      "explanation": "'Given the same circumstances'는 'If he/she were given the same circumstances'라는 의미를 내포하는 가정법 과거 구문입니다. 따라서 주절에는 `would make`가 와야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-66",
+      "number": 66,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "had not engaged - would not be",
+        "does not engage - will not be",
+        "did not engage - would not be",
+        "would not engage - is not",
+        "had not engaged - would not have been"
+      ],
+      "stem": "If the pharmaceutical company _______ in unethical testing practices in the past, its reputation _______ severely damaged today.",
+      "answer": 1,
+      "explanation": "If절은 'in the past'(과거)의 일을, 주절은 'today'(현재)의 결과를 가정하므로 혼합가정법입니다. If절은 가정법 과거완료(`had not engaged`), 주절은 가정법 과거(`would not be`) 형태가 되어야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-67",
+      "number": 67,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 혼합가정법이 올바르게 사용된 것은?",
+      "choices": [
+        "If she had studied medicine instead of law, she would have been a doctor now.",
+        "If she had studied medicine instead of law, she would be a doctor now.",
+        "If she studied medicine instead of law, she would be a doctor now.",
+        "If she were to study medicine instead of law, she would have been a doctor now.",
+        "If she should study medicine instead of law, she would be a doctor now."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "과거의 선택('의대를 공부했더라면')이 현재의 상태('지금 의사일 텐데')에 영향을 미치는 혼합가정법입니다. If절은 `had studied`, 주절은 `would be a doctor now`가 올바른 형태입니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-68",
+      "number": 68,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장에서 시간 부사를 근거로 올바른 가정법 구문은?",
+      "choices": [
+        "If the scientist had not made a critical error in his calculations last year, his theory would have been accepted today.",
+        "If the scientist did not make a critical error in his calculations last year, his theory would be accepted today.",
+        "If the scientist had not made a critical error in his calculations last year, his theory would be accepted today.",
+        "If the scientist would not make a critical error in his calculations last year, his theory is accepted today.",
+        "If the scientist should not make a critical error in his calculations last year, his theory will be accepted today."
+      ],
+      "stem": "The scientist made a critical error in his calculations <b>last year</b>, and as a result, his theory is not accepted <b>today</b>.",
+      "choiceLayout": "single-column",
+      "answer": 3,
+      "explanation": "'last year'(과거)의 원인과 'today'(현재)의 결과를 연결하는 혼합가정법입니다. If절은 가정법 과거완료(`had not made`), 주절은 가정법 과거(`would be accepted`)를 사용한 ③이 정답입니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-69",
+      "number": 69,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "predicted - would be",
+        "had predicted - would be",
+        "would predict - had been",
+        "had predicted - would have been",
+        "predicted - would have been"
+      ],
+      "stem": "If the urban planner _______ the population growth more accurately <b>twenty years ago</b>, the city's infrastructure _______ much more efficient <b>at present</b>.",
+      "answer": 2,
+      "explanation": "'twenty years ago'(과거)의 조건과 'at present'(현재)의 결과를 다루므로 혼합가정법입니다. If절은 `had predicted`, 주절은 `would be`가 되어야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-70",
+      "number": 70,
+      "type": "transformation",
+      "instruction": "다음 문장을 혼합가정법으로 바꿀 때 가장 적절한 것은?",
+      "choices": [
+        "If the CEO listened to the board's advice in 2020, the company wouldn't struggle with financial difficulties now.",
+        "If the CEO had listened to the board's advice in 2020, the company wouldn't be struggling with financial difficulties now.",
+        "If the CEO would listen to the board's advice in 2020, the company isn't struggling with financial difficulties now.",
+        "If the CEO should listen to the board's advice in 2020, the company won't struggle with financial difficulties now.",
+        "If the CEO had listened to the board's advice in 2020, the company wouldn't have struggled with financial difficulties now."
+      ],
+      "stem": "Because the CEO didn't listen to the board's advice in 2020, the company is struggling with financial difficulties now.",
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "'in 2020'(과거)에 조언을 듣지 않은 것이 'now'(현재)의 재정난으로 이어졌으므로 혼합가정법으로 전환해야 합니다. If절은 가정법 과거완료(`had listened`), 주절은 가정법 과거(`wouldn't be struggling`)를 사용한 ②가 맞습니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-71",
+      "number": 71,
+      "type": "correct-usage",
+      "instruction": "다음 중 어법상 올바른 것은?",
+      "choices": [
+        "If I had taken his advice more seriously back then, I would have been more successful now.",
+        "If I had taken his advice more seriously back then, I would be more successful now.",
+        "If I took his advice more seriously back then, I would be more successful now.",
+        "If I would take his advice more seriously back then, I would be more successful now.",
+        "If I should take his advice more seriously back then, I will be more successful now."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "'back then'(그때)이라는 과거의 조건과 'now'(지금)라는 현재의 결과를 연결하는 혼합가정법입니다. If절은 `had taken`, 주절은 `would be`를 사용한 ②가 올바른 문장입니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-72",
+      "number": 72,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "proceeded - could have been",
+        "proceeded - could be",
+        "been proceeding - would have",
+        "proceed - would",
+        "been proceeded - might have"
+      ],
+      "stem": "Had the diplomatic negotiations _______ more successfully <b>in the early stages</b>, the current international crisis _______ avoided.",
+      "answer": 1,
+      "explanation": "'Had'로 시작하는 도치 구문이므로 If절은 가정법 과거완료입니다. 'in the early stages'(초기 단계에)라는 과거의 조건이 'the current international crisis'(현재의 위기)라는 과거부터 이어진 결과에 영향을 미쳤다고 보는 것이 자연스러우므로, 주절도 가정법 과거완료인 `could have been`이 적절합니다. (이 문제는 문맥상 혼합가정법보다 가정법 과거완료가 더 자연스럽습니다.)"
+    },
+    {
+      "id": "grammar-bridge-ch02-73",
+      "number": 73,
+      "type": "paraphrase",
+      "instruction": "다음 문장의 의미와 가장 가까운 것은?",
+      "choices": [
+        "The environmental activist raised awareness about deforestation in the 1990s, so countless species are not extinct today.",
+        "The environmental activist didn't raise awareness about deforestation in the 1990s, so countless species are extinct today.",
+        "The environmental activist raised awareness about deforestation in the 1990s, so countless species were not extinct then.",
+        "The environmental activist didn't raise awareness about deforestation in the 1990s, so countless species were extinct then.",
+        "The environmental activist will raise awareness about deforestation in the 1990s, so countless species won't be extinct today."
+      ],
+      "stem": "If the environmental activist had not raised awareness about deforestation in the 1990s, countless species would be extinct today.",
+      "choiceLayout": "single-column",
+      "answer": 1,
+      "explanation": "주어진 문장은 '1990년대(과거)에 인식을 높이지 않았더라면, 오늘날(현재) 멸종했을 것이다'라는 혼합가정법입니다. 이는 '과거에 인식을 높였기 때문에, 현재 멸종하지 않았다'는 직설법 의미와 같습니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-74",
+      "number": 74,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "had been - would be",
+        "were - would be",
+        "had been - would have been",
+        "was - would be",
+        "would be - had been"
+      ],
+      "stem": "If the archaeological discovery _______ publicized <b>decades ago</b>, our understanding of ancient civilizations _______ dramatically different <b>nowadays</b>.",
+      "answer": 1,
+      "explanation": "'decades ago'(과거)의 조건과 'nowadays'(현재)의 결과를 다루므로 혼합가정법입니다. If절은 수동태를 포함한 가정법 과거완료(`had been publicized`), 주절은 가정법 과거(`would be`)를 사용한 ①이 정답입니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-75",
+      "number": 75,
+      "type": "inversion",
+      "instruction": "다음 중 혼합가정법의 도치 구문이 올바른 것은?",
+      "choices": [
+        "Had the investment firm diversified its portfolio earlier, it would be more stable today.",
+        "Were the investment firm to diversify its portfolio earlier, it would be more stable today.",
+        "Should the investment firm diversify its portfolio earlier, it would be more stable today.",
+        "Had the investment firm diversified its portfolio earlier, it would have been more stable today.",
+        "Were the investment firm diversified its portfolio earlier, it would be more stable today."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 1,
+      "explanation": "'earlier'(과거)의 조건과 'today'(현재)의 결과를 나타내는 혼합가정법의 도치 구문입니다. If절은 가정법 과거완료이므로 'Had + S + p.p.' 형태로 도치하고, 주절은 가정법 과거 형태를 유지한 ①이 올바릅니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-76",
+      "number": 76,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 어법상 틀린 부분은?",
+      "choices": [
+        "the multinational corporation",
+        "had adopted",
+        "sustainable business practices",
+        "earlier",
+        "would have been"
+      ],
+      "stem": "If ①<u>the multinational corporation</u> ②<u>had adopted</u> ③<u>sustainable business practices</u> ④<u>earlier</u>, its public image ⑤<u>would have been</u> much better today.",
+      "answer": 5,
+      "explanation": "'earlier'(과거)의 조건과 'today'(현재)의 결과를 나타내는 혼합가정법입니다. 주절은 현재 사실에 대한 반대이므로 가정법 과거 형태인 `would be`로 써야 합니다. `would have been`은 잘못되었습니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-77",
+      "number": 77,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "But for - would have been",
+        "But for - would be",
+        "Despite - would have been",
+        "Without - had been",
+        "In spite of - would be"
+      ],
+      "stem": "_______ the brilliant inventor's premature death <b>in his thirties</b>, technological advancement _______ much more rapid <b>in the following decades</b>.",
+      "answer": 1,
+      "explanation": "'in his thirties'(과거)의 조건과 'in the following decades'(그 후 수십 년간, 즉 과거)의 결과를 다루므로 가정법 과거완료 구문입니다. 'But for'(~이 없었다면) 뒤에 가정법 과거완료 주절인 `would have been`이 오는 것이 맞습니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-78",
+      "number": 78,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 혼합가정법이 아닌 것은?",
+      "choices": [
+        "If the economist had predicted the market crash correctly, he would be regarded as a financial genius today.",
+        "If the company had invested in renewable energy earlier, it would be leading the green technology sector now.",
+        "If the politician had been more honest during his campaign, voters would trust him more today.",
+        "If the researcher had published her findings sooner, she would have received greater recognition.",
+        "If the architect had designed the building differently, it would be more energy-efficient now."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 4,
+      "explanation": "④는 '더 빨리 발표했더라면(과거), 더 큰 인정을 받았을 텐데(과거)'라는 의미의 가정법 과거완료입니다. 나머지는 모두 과거의 조건이 현재의 결과에 영향을 미치는 혼합가정법입니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-79",
+      "number": 79,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장을 완성할 때 가장 적절한 것은?",
+      "choices": [
+        "would have been much more comprehensive",
+        "would be much more comprehensive today",
+        "will be much more comprehensive",
+        "is much more comprehensive today",
+        "had been much more comprehensive"
+      ],
+      "stem": "If the ancient library of Alexandria had not been destroyed, our knowledge of classical antiquity _______.",
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "'고대에 파괴되지 않았더라면(과거)'이라는 조건이 '오늘날 우리의 지식(현재)'에 미치는 영향을 서술하므로 혼합가정법이 가장 자연스럽습니다. 따라서 주절은 `would be much more comprehensive today`가 되어야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-80",
+      "number": 80,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "chose - wouldn't be",
+        "had chosen - wouldn't be",
+        "would choose - wasn't",
+        "had chosen - wouldn't have been",
+        "chose - wouldn't have been"
+      ],
+      "stem": "The startup founder often reflects that if he _______ his business partner more carefully <b>five years ago</b>, he _______ dealing with constant legal disputes <b>right now</b>.",
+      "answer": 2,
+      "explanation": "'five years ago'(과거)의 조건과 'right now'(현재)의 결과를 다루는 혼합가정법입니다. If절은 `had chosen`, 주절은 `wouldn't be`가 올바른 형태입니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-81",
+      "number": 81,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "has",
+        "had",
+        "had had",
+        "would have",
+        "would have had"
+      ],
+      "stem": "The renowned pianist wished she _______ more time to practice before the Carnegie Hall debut.",
+      "answer": 3,
+      "explanation": "'카네기 홀 데뷔 전(before the... debut)'이라는 과거 시점보다 더 이전에 연습할 시간이 있었기를 바라는 것이므로, 주절의 시제(wished)보다 앞선 시점을 나타내는 가정법 과거완료 `had had`를 사용해야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-82",
+      "number": 82,
+      "type": "correct-usage",
+      "instruction": "다음 중 어법상 올바른 것은?",
+      "choices": [
+        "I wish I was born in a different era when life was simpler.",
+        "The professor talks about quantum physics as if he was Einstein himself.",
+        "She acts as if she were the owner of the multinational corporation.",
+        "He wished he can change his major to computer science.",
+        "I wish I would have studied abroad during my university years."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 3,
+      "explanation": "'as if' 뒤에는 가정법 시제가 옵니다. 현재 사실('그녀는 주인이 아니다')에 반하는 가정이므로 가정법 과거 `were`를 사용한 ③이 맞습니다. ①, ②, ④에서는 `was` 대신 `were`, `can` 대신 `could`를 써야 합니다. ⑤ `would have` → `had`."
+    },
+    {
+      "id": "grammar-bridge-ch02-83",
+      "number": 83,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "takes",
+        "took",
+        "has taken",
+        "will take",
+        "would take"
+      ],
+      "stem": "It is high time the government _______ decisive action to address the housing crisis.",
+      "answer": 2,
+      "explanation": "'It is (high) time that...' 구문 뒤에는 '~했어야 할 시간이다'라는 의미로 관용적으로 가정법 과거(과거 동사)를 사용합니다. 따라서 `took`이 정답입니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-84",
+      "number": 84,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 어법상 틀린 부분은?",
+      "choices": [
+        "every team member",
+        "should",
+        "submits",
+        "their preliminary findings",
+        "by the deadline"
+      ],
+      "stem": "The research director insisted that ①<u>every team member</u> ②<u>should</u> ③<u>submits</u> ④<u>their preliminary findings</u> ⑤<u>by the deadline</u>.",
+      "answer": 3,
+      "explanation": "'insist'가 '주장하다'라는 당위성의 의미로 쓰일 때, that절에는 `(should) + 동사원형`을 사용해야 합니다. 따라서 `submits`를 `submit`으로 고쳐야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-85",
+      "number": 85,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 당위성의 Subjunctive Mood가 올바르게 사용된 것은?",
+      "choices": [
+        "The committee recommended that the new policy should be implemented immediately.",
+        "The data suggests that the economy is slowly recovering from the recession.",
+        "The professor demanded that each student turns in their research paper on time.",
+        "The evidence indicates that the suspect was present at the crime scene.",
+        "The survey shows that most consumers prefers environmentally friendly products."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 1,
+      "explanation": "'recommend'와 같은 제안/요구 동사 뒤 that절에는 당위성을 나타내는 `(should) + 동사원형`을 씁니다. ①이 올바른 형태입니다. ②, ④, ⑤는 사실을 전달하므로 직설법 시제를, ③은 `turns`가 아닌 `turn`을 써야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-86",
+      "number": 86,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "doesn't sleep",
+        "didn't sleep",
+        "hadn't slept",
+        "wouldn't sleep",
+        "won't sleep"
+      ],
+      "stem": "The elderly man looked exhausted, as though he _______ for several consecutive nights.",
+      "answer": 3,
+      "explanation": "주절의 시제가 과거(`looked`)이고, 그가 피곤해 보인 것보다 잠을 못 잔 것이 더 이전의 일이므로, 'as though' 뒤에는 가정법 과거완료 `hadn't slept`가 와야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-87",
+      "number": 87,
+      "type": "paraphrase",
+      "instruction": "다음 문장의 의미와 가장 가까운 것은?",
+      "choices": [
+        "I paid attention to my grandmother's stories, but I want to hear more.",
+        "I didn't pay enough attention to my grandmother's stories, and I regret it now.",
+        "I will pay more attention to my grandmother's stories in the future.",
+        "I am currently paying attention to my grandmother's stories about her childhood.",
+        "I should pay more attention to my grandmother's stories about her childhood."
+      ],
+      "stem": "I wish I had paid more attention to my grandmother's stories about her childhood.",
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "'I wish + S + had p.p.' 구문은 과거에 하지 않은 일에 대한 현재의 후회를 나타냅니다. 따라서 '과거에 충분히 주의를 기울이지 않았고, 지금 그것을 후회한다'는 의미의 ②가 가장 가깝습니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-88",
+      "number": 88,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 'as if' 구문이 올바르게 사용된 것은?",
+      "choices": [
+        "She speaks about the project as if she has been working on it for years.",
+        "He talks about quantum mechanics as if he were a Nobel Prize winner.",
+        "They act as if they would have known the secret all along.",
+        "The child behaves as if he was the king of the playground.",
+        "She looks as if she will see a ghost."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "현재 사실('그는 노벨상 수상자가 아니다')에 반하는 비유이므로 가정법 과거 `were`를 사용한 ②가 올바릅니다. 격식체에서는 `was` 대신 `were`를 사용합니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-89",
+      "number": 89,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "develops",
+        "developed",
+        "develop",
+        "will develop",
+        "would develop"
+      ],
+      "stem": "The board of directors required that the new CEO _______ a comprehensive strategic plan within the first quarter.",
+      "answer": 3,
+      "explanation": "'require'와 같은 요구/명령 동사 뒤 that절에는 당위성을 나타내는 `(should) + 동사원형`을 사용합니다. 따라서 동사원형인 `develop`이 정답입니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-90",
+      "number": 90,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장을 'I wish' 구문으로 바꿀 때 가장 적절한 것은?",
+      "choices": [
+        "I wish I can speak multiple foreign languages fluently.",
+        "I wish I could speak multiple foreign languages fluently.",
+        "I wish I would speak multiple foreign languages fluently.",
+        "I wish I will speak multiple foreign languages fluently.",
+        "I wish I spoke multiple foreign languages fluently."
+      ],
+      "stem": "Unfortunately, I cannot speak multiple foreign languages fluently.",
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "현재 할 수 없는 능력('cannot speak')에 대한 아쉬움을 표현할 때는 'I wish + S + could + R' 형태를 사용합니다. ⑤의 `spoke`도 가능하지만, 능력에 대한 아쉬움은 `could`로 표현하는 것이 더 명확하고 자연스럽습니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-91",
+      "number": 91,
+      "type": "correct-usage",
+      "instruction": "다음 중 어법상 올바른 것은?",
+      "choices": [
+        "It's about time you start taking your responsibilities seriously.",
+        "It's high time that the company took measures to improve employee satisfaction.",
+        "The senator suggested that the new legislation should passes without delay.",
+        "She wished she would have the opportunity to travel around the world.",
+        "He acts as if he was the most important person in the organization."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "'It's high time' 뒤에는 가정법 과거 동사인 `took`이 와야 합니다. ① `start` → `started`. ③ `passes` → `pass`. ④ `would have` → `had`. ⑤ `was` → `were`."
+    },
+    {
+      "id": "grammar-bridge-ch02-92",
+      "number": 92,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "agree upon",
+        "agreed upon",
+        "had agreed upon",
+        "would agree upon",
+        "will agree upon"
+      ],
+      "stem": "The negotiation proceeded smoothly, as if both parties _______ the terms beforehand.",
+      "answer": 3,
+      "explanation": "협상이 순조롭게 진행된 것(과거)은 양측이 그 이전에 이미 조건에 합의한 것처럼 보였다는 의미입니다. 주절 시제보다 앞선 시점을 가정하므로 가정법 과거완료 `had agreed upon`이 적절합니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-93",
+      "number": 93,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 어법상 틀린 부분은?",
+      "choices": [
+        "each member nation",
+        "should",
+        "reduces",
+        "their carbon emissions",
+        "by thirty percent"
+      ],
+      "stem": "The international organization urged that ①<u>each member nation</u> ②<u>should</u> ③<u>reduces</u> ④<u>their carbon emissions</u> ⑤<u>by thirty percent</u>.",
+      "answer": 3,
+      "explanation": "'urge'(촉구하다)는 당위성을 나타내는 동사입니다. 따라서 that절에는 `(should) + 동사원형`이 와야 합니다. `reduces`를 `reduce`로 고쳐야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-94",
+      "number": 94,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 'I wish' 구문의 시제가 올바른 것은?",
+      "choices": [
+        "I wish I knew about the investment opportunity last year. (작년 기회에 대해 지금 알고 있기를 바람)",
+        "I wish I had known about the investment opportunity last year. (작년에 그 기회를 알았더라면)",
+        "I wish I would know about investment opportunities in the future. (미래 기회를 알게 되기를 바람)",
+        "I wish I will know about the investment opportunity next year. (내년에 알게 되기를 바람)",
+        "I wish I can know about investment opportunities easily. (쉽게 알 수 있기를 바람)"
+      ],
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "'last year'라는 명백한 과거 시점에 대한 후회는 가정법 과거완료('I wish I had known...')로 표현해야 합니다. ②가 문법과 의미 모두 올바릅니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-95",
+      "number": 95,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "understands",
+        "understand",
+        "understood",
+        "will understand",
+        "would understand"
+      ],
+      "stem": "It is essential that every participant _______ the safety regulations before entering the laboratory.",
+      "answer": 2,
+      "explanation": "'It is essential that...' 구문은 '~하는 것이 필수적이다'라는 당위성을 나타내므로, that절에는 `(should) + 동사원형`을 사용합니다. 따라서 `understand`가 정답입니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-96",
+      "number": 96,
+      "type": "inversion",
+      "instruction": "다음 중 가정법 도치가 올바르게 사용된 것은?",
+      "choices": [
+        "Were the economic conditions to improve significantly, unemployment rates would decrease.",
+        "Should you have any questions about the procedure, please contact the administrator.",
+        "Had the weather been favorable, we would go hiking in the mountains.",
+        "Were I you, I would have accepted the scholarship offer.",
+        "Should the experiment fail, we would have needed alternative methods."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 1,
+      "explanation": "가정법 미래 도치는 'Were + S + to R' 또는 'Should + S + R' 형태입니다. ①은 'Were... to improve'와 주절 'would decrease'의 시제가 올바르게 일치합니다. ② `Should you have`는 맞지만, 주절이 명령문인 `please contact`가 더 자연스럽습니다. ③, ④, ⑤는 조건절과 주절의 시제가 맞지 않습니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-97",
+      "number": 97,
+      "type": "error-identification",
+      "instruction": "다음 복합 문장에서 어법상 틀린 부분은?",
+      "choices": [
+        "Were it not for",
+        "many students",
+        "would not have graduated",
+        "the university's reputation",
+        "(오류 없음)"
+      ],
+      "stem": "①<u>Were it not for</u> the professor's dedication, ②<u>many students</u> ③<u>would not have graduated</u>, and ④<u>the university's reputation</u> ⑤<u>would not be</u> as prestigious today.",
+      "answer": 5,
+      "explanation": "이 문장은 오류가 없습니다. 'Were it not for'는 현재 사실에 대한 반대 가정('교수님의 헌신이 없다면')이지만, 문맥상 과거부터 이어진 헌신으로 해석할 수 있습니다. 이 헌신이 없었다면 '많은 학생들이 졸업하지 못했을 것(과거)'이고, '대학의 명성이 오늘날처럼 높지 않을 것(현재)'이라는 가정법 과거완료와 혼합가정법이 결합된 복합 문장입니다. 모든 부분이 문법적으로 올바릅니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-98",
+      "number": 98,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "were developed - would have been",
+        "had been developed - would have been",
+        "had been developed - would be",
+        "were developed - would be",
+        "would be developed - had been"
+      ],
+      "stem": "The research suggests that if alternative energy sources _______ more extensively <b>in the past decade</b>, global warming _______ significantly slowed down <b>by now</b>.",
+      "answer": 3,
+      "explanation": "'in the past decade'(과거)의 조건과 'by now'(지금쯤)의 결과를 다루는 혼합가정법입니다. If절은 수동태를 포함한 가정법 과거완료(`had been developed`), 주절은 가정법 과거(`would be`)를 사용한 ③이 정답입니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-99",
+      "number": 99,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장의 의미를 가장 정확하게 표현한 가정법 구문은?",
+      "choices": [
+        "If there had been proper communication between departments, the project wouldn't have failed, and the company would be more efficient today.",
+        "If there were proper communication between departments, the project wouldn't fail, and the company would be more efficient today.",
+        "If there should be proper communication between departments, the project won't fail, and the company will be more efficient today.",
+        "If there would be proper communication between departments, the project didn't fail, and the company is more efficient today.",
+        "If there had been proper communication between departments, the project wouldn't have failed, and the company would have been more efficient today."
+      ],
+      "stem": "The lack of proper communication between departments resulted in the project's failure, and this continues to affect the company's efficiency today.",
+      "choiceLayout": "single-column",
+      "answer": 1,
+      "explanation": "'프로젝트 실패(과거)'와 '오늘날 회사의 효율성에 미치는 영향(현재)' 두 가지를 모두 가정해야 합니다. 따라서 'If + had p.p., S + wouldn't have p.p.(과거 결과), and S + would be...(현재 결과)' 형태의 복합적인 혼합가정법 문장인 ①이 가장 정확합니다."
+    },
+    {
+      "id": "grammar-bridge-ch02-100",
+      "number": 100,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 모든 문법 사항이 올바른 것은?",
+      "choices": [
+        "Had the brilliant scientist not died prematurely, she would have made groundbreaking discoveries that would revolutionize modern medicine today.",
+        "If the ancient civilization had developed advanced technology, archaeologists would find more sophisticated artifacts today.",
+        "Were the climate change to be reversed miraculously, many extinct species would have returned to their natural habitats.",
+        "Should the innovative startup had received adequate funding, it would be dominating the tech industry now.",
+        "But for the mentor's guidance throughout his career, the young researcher wouldn't become such a renowned expert today."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "②는 '고대 문명이 기술을 개발했다면(과거), 고고학자들이 오늘날 더 정교한 유물을 발견할 텐데(현재)'라는 의미의 혼합가정법으로 문법적으로 완벽합니다. ① 주절의 `that` 이하가 어색합니다. ③ 조건절(가정법 미래)과 주절(가정법 과거완료)의 시제가 맞지 않습니다. ④ `Should... had received`는 불가능한 형태입니다. ⑤ `wouldn't become` → `wouldn't be` 또는 `wouldn't have become`이 되어야 합니다."
+    }
+  ]
+}

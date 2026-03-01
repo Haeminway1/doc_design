@@ -1,0 +1,507 @@
+{
+  "bookId": "vocab-basic",
+  "day": 62,
+  "theme": "오락과 취미 (Entertainment and Hobbies)",
+  "words": [
+    {
+      "word": "recreation",
+      "pronunciation": "[rèkriéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "오락, 레크리에이션",
+      "example": {
+        "en": "The park offers various facilities for public recreation.",
+        "ko": "그 공원은 대중의 오락을 위한 다양한 시설을 제공한다."
+      }
+    },
+    {
+      "word": "leisure",
+      "pronunciation": "[líːʒər]",
+      "partOfSpeech": "n.",
+      "meaning": "여가",
+      "example": {
+        "en": "He spends his leisure time reading and hiking.",
+        "ko": "그는 여가 시간을 독서와 하이킹으로 보낸다."
+      }
+    },
+    {
+      "word": "pastime",
+      "pronunciation": "[pǽstàim]",
+      "partOfSpeech": "n.",
+      "meaning": "취미, 오락",
+      "example": {
+        "en": "Fishing is his favorite pastime.",
+        "ko": "낚시는 그가 가장 좋아하는 취미이다."
+      }
+    },
+    {
+      "word": "hobby",
+      "pronunciation": "[hάbi]",
+      "partOfSpeech": "n.",
+      "meaning": "취미",
+      "example": {
+        "en": "My hobbies include painting and playing the guitar.",
+        "ko": "나의 취미는 그림 그리기와 기타 연주이다."
+      }
+    },
+    {
+      "word": "interest",
+      "pronunciation": "[íntərəst]",
+      "partOfSpeech": "n.",
+      "meaning": "관심사, 흥미",
+      "example": {
+        "en": "She has a wide range of interests, from astronomy to zoology.",
+        "ko": "그녀는 천문학에서 동물학까지 넓은 범위의 관심사를 가지고 있다."
+      }
+    },
+    {
+      "word": "amusement",
+      "pronunciation": "[əmjúːzmənt]",
+      "partOfSpeech": "n.",
+      "meaning": "즐거움, 오락",
+      "example": {
+        "en": "The amusement park was filled with laughter and excitement.",
+        "ko": "놀이공원은 웃음과 흥분으로 가득 찼다."
+      }
+    },
+    {
+      "word": "diversion",
+      "pronunciation": "[daivə́ːrʒən]",
+      "partOfSpeech": "n.",
+      "meaning": "기분 전환, 오락",
+      "example": {
+        "en": "Reading a book is a pleasant diversion from work.",
+        "ko": "책을 읽는 것은 일로부터의 즐거운 기분 전환이다."
+      }
+    },
+    {
+      "word": "distraction",
+      "pronunciation": "[distrǽkʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "주의 산만, 기분 전환",
+      "example": {
+        "en": "Playing video games is a welcome distraction after a long day of studying.",
+        "ko": "비디오 게임을 하는 것은 긴 공부 끝에 반가운 기분 전환이다."
+      }
+    },
+    {
+      "word": "relaxation",
+      "pronunciation": "[rìːlækséiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "휴식",
+      "example": {
+        "en": "Yoga is a great form of relaxation for both mind and body.",
+        "ko": "요가는 몸과 마음 모두를 위한 훌륭한 휴식 형태이다."
+      }
+    },
+    {
+      "word": "fun",
+      "pronunciation": "[fʌn]",
+      "partOfSpeech": "n.",
+      "meaning": "재미",
+      "example": {
+        "en": "We had a lot of fun at the party.",
+        "ko": "우리는 파티에서 아주 재미있게 놀았다."
+      }
+    },
+    {
+      "word": "thrill",
+      "pronunciation": "[θril]",
+      "partOfSpeech": "n.",
+      "meaning": "스릴, 흥분",
+      "example": {
+        "en": "Riding a roller coaster gives me a thrill.",
+        "ko": "롤러코스터를 타는 것은 나에게 스릴을 준다."
+      }
+    },
+    {
+      "word": "excitement",
+      "pronunciation": "[iksáitmənt]",
+      "partOfSpeech": "n.",
+      "meaning": "흥분",
+      "example": {
+        "en": "The children were full of excitement on Christmas morning.",
+        "ko": "아이들은 크리스마스 아침에 흥분으로 가득 찼다."
+      }
+    },
+    {
+      "word": "adventure",
+      "pronunciation": "[ædvénʧər]",
+      "partOfSpeech": "n.",
+      "meaning": "모험",
+      "example": {
+        "en": "Backpacking through South America was a great adventure.",
+        "ko": "남미 배낭여행은 멋진 모험이었다."
+      }
+    },
+    {
+      "word": "exploration",
+      "pronunciation": "[èkspləréiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "탐험",
+      "example": {
+        "en": "Space exploration continues to reveal new discoveries.",
+        "ko": "우주 탐험은 계속해서 새로운 발견을 드러내고 있다."
+      }
+    },
+    {
+      "word": "discovery",
+      "pronunciation": "[diskʌ́vəri]",
+      "partOfSpeech": "n.",
+      "meaning": "발견",
+      "example": {
+        "en": "The discovery of penicillin revolutionized medicine.",
+        "ko": "페니실린의 발견은 의학에 혁명을 일으켰다."
+      }
+    },
+    {
+      "word": "inspiration",
+      "pronunciation": "[ìnspəréiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "영감",
+      "example": {
+        "en": "Nature is a great source of inspiration for many artists.",
+        "ko": "자연은 많은 예술가들에게 훌륭한 영감의 원천이다."
+      }
+    },
+    {
+      "word": "craft",
+      "pronunciation": "[kræft]",
+      "partOfSpeech": "n.",
+      "meaning": "공예, 기술",
+      "example": {
+        "en": "He learned the craft of pottery from his father.",
+        "ko": "그는 아버지로부터 도예 기술을 배웠다."
+      }
+    },
+    {
+      "word": "handicraft",
+      "pronunciation": "[hǽndikræ̀ft]",
+      "partOfSpeech": "n.",
+      "meaning": "수공예",
+      "example": {
+        "en": "The market sells a variety of local handicrafts.",
+        "ko": "그 시장은 다양한 지역 수공예품을 판매한다."
+      }
+    },
+    {
+      "word": "artwork",
+      "pronunciation": "[άːrtwə̀ːrk]",
+      "partOfSpeech": "n.",
+      "meaning": "예술 작품",
+      "example": {
+        "en": "The gallery features artwork by local artists.",
+        "ko": "그 갤러리는 지역 예술가들의 작품을 전시한다."
+      }
+    },
+    {
+      "word": "collector",
+      "pronunciation": "[kəléktər]",
+      "partOfSpeech": "n.",
+      "meaning": "수집가",
+      "example": {
+        "en": "She is an avid collector of antique dolls.",
+        "ko": "그녀는 골동 인형의 열렬한 수집가이다."
+      }
+    },
+    {
+      "word": "memorabilia",
+      "pronunciation": "[mèmərəbíliə]",
+      "partOfSpeech": "n.",
+      "meaning": "기념품, 수집품",
+      "example": {
+        "en": "He collects sports memorabilia, like signed baseballs.",
+        "ko": "그는 사인된 야구공과 같은 스포츠 기념품을 수집한다."
+      }
+    },
+    {
+      "word": "puzzle",
+      "pronunciation": "[pʌ́zl]",
+      "partOfSpeech": "n.",
+      "meaning": "퍼즐",
+      "example": {
+        "en": "It took me hours to complete the jigsaw puzzle.",
+        "ko": "직소 퍼즐을 완성하는 데 몇 시간이 걸렸다."
+      }
+    },
+    {
+      "word": "riddle",
+      "pronunciation": "[rídl]",
+      "partOfSpeech": "n.",
+      "meaning": "수수께끼",
+      "example": {
+        "en": "Can you solve this riddle?",
+        "ko": "이 수수께끼를 풀 수 있나요?"
+      }
+    },
+    {
+      "word": "game",
+      "pronunciation": "[geim]",
+      "partOfSpeech": "n.",
+      "meaning": "게임, 경기",
+      "example": {
+        "en": "Let's play a board game.",
+        "ko": "보드게임을 하자."
+      }
+    },
+    {
+      "word": "entertainment",
+      "pronunciation": "[èntərtéinmənt]",
+      "partOfSpeech": "n.",
+      "meaning": "오락, 엔터테인먼트",
+      "example": {
+        "en": "The city offers a wide range of entertainment options.",
+        "ko": "그 도시는 다양한 오락거리를 제공한다."
+      }
+    },
+    {
+      "word": "show",
+      "pronunciation": "[ʃou]",
+      "partOfSpeech": "n.",
+      "meaning": "쇼, 공연",
+      "example": {
+        "en": "The magic show was amazing.",
+        "ko": "마술 쇼는 정말 놀라웠다."
+      }
+    },
+    {
+      "word": "concert",
+      "pronunciation": "[kάnsərt]",
+      "partOfSpeech": "n.",
+      "meaning": "콘서트",
+      "example": {
+        "en": "We're going to a rock concert on Saturday.",
+        "ko": "우리는 토요일에 록 콘서트에 갈 것이다."
+      }
+    },
+    {
+      "word": "carnival",
+      "pronunciation": "[kάːrnəvəl]",
+      "partOfSpeech": "n.",
+      "meaning": "카니발, 축제",
+      "example": {
+        "en": "The carnival featured parades, music, and dancing.",
+        "ko": "카니발은 퍼레이드, 음악, 춤을 특징으로 했다."
+      }
+    },
+    {
+      "word": "fair",
+      "pronunciation": "[fεər]",
+      "partOfSpeech": "n.",
+      "meaning": "박람회, 축제",
+      "example": {
+        "en": "We went to the county fair and saw the prize-winning animals.",
+        "ko": "우리는 군 박람회에 가서 수상한 동물들을 보았다."
+      }
+    },
+    {
+      "word": "exhibition",
+      "pronunciation": "[èksəbíʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "전시회",
+      "example": {
+        "en": "There is a new exhibition of modern art at the museum.",
+        "ko": "박물관에서 새로운 현대 미술 전시회가 열리고 있다."
+      }
+    },
+    {
+      "word": "gallery",
+      "pronunciation": "[gǽləri]",
+      "partOfSpeech": "n.",
+      "meaning": "갤러리, 미술관",
+      "example": {
+        "en": "The art gallery is displaying works by local artists.",
+        "ko": "그 미술관은 지역 예술가들의 작품을 전시하고 있다."
+      }
+    },
+    {
+      "word": "museum",
+      "pronunciation": "[mjuːzíːəm]",
+      "partOfSpeech": "n.",
+      "meaning": "박물관",
+      "example": {
+        "en": "We visited the natural history museum.",
+        "ko": "우리는 자연사 박물관을 방문했다."
+      }
+    },
+    {
+      "word": "theater",
+      "pronunciation": "[θíːətər]",
+      "partOfSpeech": "n.",
+      "meaning": "극장",
+      "example": {
+        "en": "Let's go to the theater to see a play.",
+        "ko": "연극을 보러 극장에 가자."
+      }
+    },
+    {
+      "word": "cinema",
+      "pronunciation": "[sínəmə]",
+      "partOfSpeech": "n.",
+      "meaning": "영화관",
+      "example": {
+        "en": "The new cinema has comfortable seats and a large screen.",
+        "ko": "새 영화관은 편안한 좌석과 큰 스크린을 갖추고 있다."
+      }
+    },
+    {
+      "word": "club",
+      "pronunciation": "[klʌb]",
+      "partOfSpeech": "n.",
+      "meaning": "클럽, 동호회",
+      "example": {
+        "en": "I joined the school's chess club.",
+        "ko": "나는 학교 체스 동아리에 가입했다."
+      }
+    },
+    {
+      "word": "association",
+      "pronunciation": "[əsòusiéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "협회",
+      "example": {
+        "en": "He is a member of the local historical association.",
+        "ko": "그는 지역 역사 협회의 회원이다."
+      }
+    },
+    {
+      "word": "enthusiast",
+      "pronunciation": "[inθúːziæ̀st]",
+      "partOfSpeech": "n.",
+      "meaning": "애호가, 열광적인 팬",
+      "example": {
+        "en": "He is a car enthusiast and loves restoring old models.",
+        "ko": "그는 오래된 모델을 복원하는 것을 좋아하는 자동차 애호가이다."
+      }
+    },
+    {
+      "word": "avocation",
+      "pronunciation": "[ævəˈkeɪʃən]",
+      "partOfSpeech": "noun",
+      "meaning": "취미, 부업 (주된 직업이 아닌 활동)",
+      "example": {
+        "en": "Though teaching was his profession, photography remained his lifelong avocation.",
+        "ko": "교직이 그의 직업이었지만, 사진촬영은 평생의 취미로 남았다."
+      }
+    },
+    {
+      "word": "dilettante",
+      "pronunciation": "[ˌdɪləˈtænti]",
+      "partOfSpeech": "noun",
+      "meaning": "예술이나 학문을 깊이 없이 즐기는 사람, 아마추어",
+      "example": {
+        "en": "He was no mere dilettante in music; he had studied composition seriously for years.",
+        "ko": "그는 음악에 있어 단순한 애호가가 아니었다; 작곡을 수년간 진지하게 공부했다."
+      }
+    },
+    {
+      "word": "numismatics",
+      "pronunciation": "[ˌnjuːmɪzˈmætɪks]",
+      "partOfSpeech": "noun",
+      "meaning": "화폐 수집학, 동전학",
+      "example": {
+        "en": "His interest in numismatics led him to amass an impressive collection of ancient coins.",
+        "ko": "화폐 수집에 대한 그의 관심은 그로 하여금 인상적인 고대 동전 컬렉션을 모으게 했다."
+      }
+    },
+    {
+      "word": "philately",
+      "pronunciation": "[fɪˈlætəli]",
+      "partOfSpeech": "noun",
+      "meaning": "우표 수집, 우표학",
+      "example": {
+        "en": "Her enthusiasm for philately began when she inherited her grandfather's stamp collection.",
+        "ko": "할아버지의 우표 컬렉션을 물려받으면서 그녀의 우표 수집에 대한 열정이 시작되었다."
+      }
+    },
+    {
+      "word": "connoisseur",
+      "pronunciation": "[ˌkɒnəˈsɜːr]",
+      "partOfSpeech": "noun",
+      "meaning": "감정가, 전문가, 감식가",
+      "example": {
+        "en": "As a connoisseur of fine wines, he could identify the vintage year with just one taste.",
+        "ko": "고급 와인 감정가로서, 그는 한 번의 시음으로 수확 연도를 맞출 수 있었다."
+      }
+    },
+    {
+      "word": "erudite",
+      "pronunciation": "[ˈerʊdaɪt]",
+      "partOfSpeech": "adjective",
+      "meaning": "박학한, 학식이 풍부한",
+      "example": {
+        "en": "His erudite commentary on classical literature revealed years of dedicated study.",
+        "ko": "고전 문학에 대한 그의 박학한 해설은 수년간의 헌신적인 연구를 보여주었다."
+      }
+    },
+    {
+      "word": "polymath",
+      "pronunciation": "[ˈpɒlimæθ]",
+      "partOfSpeech": "noun",
+      "meaning": "박학다식한 사람, 여러 분야에 정통한 사람",
+      "example": {
+        "en": "As a true polymath, she excelled in both sciences and arts during her leisure time.",
+        "ko": "진정한 박학다식가로서, 그녀는 여가 시간에 과학과 예술 모두에서 뛰어났다."
+      }
+    },
+    {
+      "word": "virtuoso",
+      "pronunciation": "[ˌvɜːtʃuˈəʊsəʊ]",
+      "partOfSpeech": "noun",
+      "meaning": "대가, 명인, 비루투오소",
+      "example": {
+        "en": "The young virtuoso practiced piano for six hours every day.",
+        "ko": "그 젊은 피아노의 대가는 매일 6시간씩 연습했다."
+      }
+    },
+    {
+      "word": "bibliophile",
+      "pronunciation": "[ˈbɪbliəʊfaɪl]",
+      "partOfSpeech": "noun",
+      "meaning": "애서가, 장서가",
+      "example": {
+        "en": "As a dedicated bibliophile, she spent most weekends browsing antiquarian bookshops.",
+        "ko": "열성적인 애서가로서, 그녀는 대부분의 주말을 고서점을 돌아다니며 보냈다."
+      }
+    },
+    {
+      "word": "aesthete",
+      "pronunciation": "[ˈiːsθiːt]",
+      "partOfSpeech": "noun",
+      "meaning": "유미주의자, 예술을 사랑하는 사람",
+      "example": {
+        "en": "The aesthete spent hours contemplating each painting in the gallery.",
+        "ko": "그 유미주의자는 미술관에서 각각의 그림을 관람하는데 수 시간을 보냈다."
+      }
+    },
+    {
+      "word": "oenophile",
+      "pronunciation": "[ˈiːnəʊfaɪl]",
+      "partOfSpeech": "noun",
+      "meaning": "와인 애호가",
+      "example": {
+        "en": "As an oenophile, he had transformed his basement into a temperature-controlled wine cellar.",
+        "ko": "와인 애호가로서, 그는 자신의 지하실을 온도 조절이 가능한 와인 저장고로 개조했다."
+      }
+    },
+    {
+      "word": "peripatetic",
+      "pronunciation": "[ˌperɪpəˈtetɪk]",
+      "partOfSpeech": "adjective",
+      "meaning": "이곳저곳 돌아다니는, 유랑하는",
+      "example": {
+        "en": "Her peripatetic lifestyle as a travel photographer allowed her to pursue her passion for photography.",
+        "ko": "여행 사진작가로서의 그녀의 떠도는 생활방식은 사진에 대한 열정을 추구할 수 있게 해주었다."
+      }
+    },
+    {
+      "word": "video game",
+      "pronunciation": "/ˈvɪdioʊ ɡeɪm/",
+      "partOfSpeech": "n.",
+      "meaning": "컴퓨터, 콘솔 또는 모바일 기기에서 하는 전자 게임이다.",
+      "example": {
+        "en": "This video game lets you build your own city.",
+        "ko": "이 비디오게임은 네가 직접 도시를 건설할 수 있게 해 준다."
+      }
+    }
+  ]
+}

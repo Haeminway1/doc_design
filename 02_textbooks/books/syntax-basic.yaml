@@ -1,0 +1,73 @@
+# syntax-basic — 구문독해 Basic
+id: syntax-basic
+title: "Vera's Flavor 구문독해 BASIC"
+subject: syntax
+level: basic
+author: "Vera's Flavor"
+template: mint-sky
+
+parts:
+  - id: I
+    title: "1주차 - 문장의 기본 뼈대 세우기"
+    units: [1, 2, 3, 4, 5]
+    review: week1
+  - id: II
+    title: "2주차 - 수식어 걷어내기"
+    units: [6, 7, 8, 9]
+    review: week2
+  - id: III
+    title: "3주차 - 준동사 파헤치기"
+    units: [10, 11, 12, 13, 14]
+    review: week3
+  - id: IV
+    title: "4주차 - 절 정복하기"
+    units: [15, 16, 17, 18, 19, 20]
+    review: week4
+
+data:
+  - type: problems
+    src: syntax/basic/unit01-problems.json
+  - type: problems
+    src: syntax/basic/unit02-problems.json
+  - type: problems
+    src: syntax/basic/unit03-problems.json
+  - type: problems
+    src: syntax/basic/unit04-problems.json
+  - type: problems
+    src: syntax/basic/unit05-problems.json
+  - type: problems
+    src: syntax/basic/unit06-problems.json
+  - type: problems
+    src: syntax/basic/unit07-problems.json
+  - type: problems
+    src: syntax/basic/unit08-problems.json
+  - type: problems
+    src: syntax/basic/unit09-problems.json
+  - type: problems
+    src: syntax/basic/unit10-problems.json
+  - type: problems
+    src: syntax/basic/unit11-problems.json
+  - type: problems
+    src: syntax/basic/unit12-problems.json
+  - type: problems
+    src: syntax/basic/unit13-problems.json
+  - type: problems
+    src: syntax/basic/unit14-problems.json
+  - type: problems
+    src: syntax/basic/unit15-problems.json
+  - type: problems
+    src: syntax/basic/unit16-problems.json
+  - type: problems
+    src: syntax/basic/unit17-problems.json
+  - type: problems
+    src: syntax/basic/unit18-problems.json
+  - type: problems
+    src: syntax/basic/unit19-problems.json
+  - type: problems
+    src: syntax/basic/review-week1-problems.json
+  - type: problems
+    src: syntax/basic/review-week2-problems.json
+  - type: problems
+    src: syntax/basic/review-week3-problems.json
+  - type: problems
+    src: syntax/basic/review-week4-problems.json

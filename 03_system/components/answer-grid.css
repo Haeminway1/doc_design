@@ -1,0 +1,177 @@
+/* =================================================================== */
+/* answer-grid.css — 정답 그리드 컴포넌트                               */
+/* Vera's Document Studio                                               */
+/* =================================================================== */
+
+/*
+ * 용도: 문제집 정답표 (10열 그리드 또는 3x3 그리드)
+ *
+ * 마크업 예시 (10열):
+ * <div class="answer-grid">
+ *   <h3 class="answer-grid-title">정답</h3>
+ *   <div class="answer-grid-table">
+ *     <div class="answer-grid-item">
+ *       <span class="answer-grid-number">1</span>
+ *       <span class="answer-grid-answer">②</span>
+ *     </div>
+ *     <!-- 반복 -->
+ *   </div>
+ * </div>
+ */
+
+/* --- 정답 그리드 컨테이너 --- */
+.answer-grid {
+    margin: var(--space-2xl) 0 !important;
+    padding: var(--space-lg) !important;
+    background-color: var(--color-bg-subtle) !important;
+    border: 2px solid var(--color-accent-primary) !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+}
+
+/* --- 정답 그리드 제목 --- */
+.answer-grid-title {
+    font-family: var(--font-eng) !important;
+    font-size: var(--text-xl) !important;
+    font-weight: 700 !important;
+    color: var(--color-accent-dark) !important;
+    text-align: center !important;
+    margin-bottom: var(--space-lg) !important;
+    padding-bottom: var(--space-sm) !important;
+    border-bottom: 1px solid var(--color-border-strong) !important;
+    letter-spacing: 2px !important;
+    text-transform: uppercase !important;
+}
+
+/* --- 정답 그리드 테이블 (10열 기본) --- */
+.answer-grid-table {
+    display: grid !important;
+    grid-template-columns: repeat(10, 1fr) !important;
+    gap: var(--space-sm) !important;
+}
+
+/* --- 정답 그리드 항목 --- */
+.answer-grid-item {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: var(--space-sm) !important;
+    background-color: var(--color-white) !important;
+    border: 1px solid var(--color-border-default) !important;
+    text-align: center !important;
+}
+
+/* --- 문제 번호 --- */
+.answer-grid-number {
+    font-family: var(--font-eng) !important;
+    font-size: var(--text-xs) !important;
+    font-weight: 500 !important;
+    color: var(--color-text-muted) !important;
+    margin-bottom: var(--space-xs) !important;
+}
+
+/* --- 정답 번호 --- */
+.answer-grid-answer {
+    font-family: var(--font-eng) !important;
+    font-size: var(--text-md) !important;
+    font-weight: 700 !important;
+    color: var(--color-accent-primary) !important;
+}
+
+/* --- 5열 변형 (문제 수가 적을 때) --- */
+.answer-grid-table--5-columns {
+    grid-template-columns: repeat(5, 1fr) !important;
+}
+
+/* --- 3열 변형 (큰 표시) --- */
+.answer-grid-table--3-columns {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: var(--space-md) !important;
+}
+
+.answer-grid-table--3-columns .answer-grid-item {
+    padding: var(--space-md) !important;
+}
+
+.answer-grid-table--3-columns .answer-grid-number {
+    font-size: var(--text-sm) !important;
+}
+
+.answer-grid-table--3-columns .answer-grid-answer {
+    font-size: var(--text-lg) !important;
+}
+
+/* --- 컴팩트 정답표 (간격 좁게) --- */
+.answer-grid--compact {
+    padding: var(--space-md) !important;
+    margin: var(--space-lg) 0 !important;
+}
+
+.answer-grid--compact .answer-grid-title {
+    font-size: var(--text-lg) !important;
+    margin-bottom: var(--space-md) !important;
+}
+
+.answer-grid--compact .answer-grid-table {
+    gap: var(--space-xs) !important;
+}
+
+.answer-grid--compact .answer-grid-item {
+    padding: var(--space-xs) !important;
+}
+
+.answer-grid--compact .answer-grid-number {
+    font-size: 7pt !important;
+    margin-bottom: 2px !important;
+}
+
+.answer-grid--compact .answer-grid-answer {
+    font-size: var(--text-sm) !important;
+}
+
+/* --- 인라인 정답표 (한 줄로) --- */
+.answer-grid--inline {
+    padding: var(--space-md) !important;
+    background-color: var(--color-white) !important;
+    border: 1px solid var(--color-border-default) !important;
+}
+
+.answer-grid--inline .answer-grid-title {
+    display: inline !important;
+    border-bottom: none !important;
+    margin-bottom: 0 !important;
+    margin-right: var(--space-md) !important;
+    padding-bottom: 0 !important;
+    font-size: var(--text-base) !important;
+}
+
+.answer-grid--inline .answer-grid-table {
+    display: inline-flex !important;
+    flex-wrap: wrap !important;
+    gap: var(--space-md) !important;
+}
+
+.answer-grid--inline .answer-grid-item {
+    flex-direction: row !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    gap: var(--space-xs) !important;
+}
+
+.answer-grid--inline .answer-grid-number {
+    margin-bottom: 0 !important;
+}
+
+.answer-grid--inline .answer-grid-number::after {
+    content: '.' !important;
+}
+
+/* --- 인쇄 최적화 --- */
+@media print {
+    .answer-grid {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+    }
+}

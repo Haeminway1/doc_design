@@ -1,0 +1,507 @@
+{
+  "bookId": "vocab-basic",
+  "day": 52,
+  "theme": "증가와 감소 (Increase and Decrease)",
+  "words": [
+    {
+      "word": "increase",
+      "pronunciation": "/ɪnˈkriːs/",
+      "partOfSpeech": "v.",
+      "meaning": "수·크기·양이 늘다",
+      "example": {
+        "en": "Demand increased by 15% after the price cut.",
+        "ko": "가격 인하 후 수요가 15% 증가했다."
+      }
+    },
+    {
+      "word": "decrease",
+      "pronunciation": "/dɪˈkriːs/",
+      "partOfSpeech": "v.",
+      "meaning": "수·크기·양이 줄다",
+      "example": {
+        "en": "The number of students has decreased significantly.",
+        "ko": "학생 수가 상당히 감소했다."
+      }
+    },
+    {
+      "word": "rise",
+      "pronunciation": "/raɪz/",
+      "partOfSpeech": "v.",
+      "meaning": "더 높은 수준이나 지위로 올라가다",
+      "example": {
+        "en": "Inflation rose to 4% last quarter.",
+        "ko": "지난 분기 물가상승률이 4%로 올랐다."
+      }
+    },
+    {
+      "word": "fall",
+      "pronunciation": "/fɔːl/",
+      "partOfSpeech": "v.",
+      "meaning": "양이나 수준이 줄다",
+      "example": {
+        "en": "Unemployment fell sharply after the stimulus.",
+        "ko": "경기부양책 이후 실업률이 급격히 하락했다."
+      }
+    },
+    {
+      "word": "grow",
+      "pronunciation": "/ɡroʊ/",
+      "partOfSpeech": "v.",
+      "meaning": "시간이 지남에 따라 크기·양·중요성이 증가하다",
+      "example": {
+        "en": "Sales grew steadily throughout the year.",
+        "ko": "올해 내내 매출이 꾸준히 증가했다."
+      }
+    },
+    {
+      "word": "expand",
+      "pronunciation": "/ɪkˈspænd/",
+      "partOfSpeech": "v.",
+      "meaning": "크기·수·범위가 커지다, 또는 크게 하다",
+      "example": {
+        "en": "The company expanded its operations into Southeast Asia.",
+        "ko": "그 회사는 동남아시아로 사업을 확장했다."
+      }
+    },
+    {
+      "word": "contract",
+      "pronunciation": "/kənˈtrækt/",
+      "partOfSpeech": "v.",
+      "meaning": "줄어들다, 수축하다",
+      "example": {
+        "en": "The economy contracted by 2% last year.",
+        "ko": "작년에 경제가 2% 위축되었다."
+      }
+    },
+    {
+      "word": "shrink",
+      "pronunciation": "/ʃrɪ&eng;k/",
+      "partOfSpeech": "v.",
+      "meaning": "크기나 양이 줄어들다",
+      "example": {
+        "en": "The budget shrank due to lower tax revenue.",
+        "ko": "세수 감소로 예산이 줄었다."
+      }
+    },
+    {
+      "word": "swell",
+      "pronunciation": "/swel/",
+      "partOfSpeech": "v.",
+      "meaning": "크기나 수가 늘다, 부풀다",
+      "example": {
+        "en": "The crowd swelled as the concert began.",
+        "ko": "공연이 시작되자 군중이 급격히 늘어났다."
+      }
+    },
+    {
+      "word": "lower",
+      "pronunciation": "/ˈloʊər/",
+      "partOfSpeech": "v.",
+      "meaning": "양·수준·가격을 줄이다",
+      "example": {
+        "en": "The bank lowered interest rates to boost spending.",
+        "ko": "지출을 촉진하기 위해 은행이 금리를 인하했다."
+      }
+    },
+    {
+      "word": "augment",
+      "pronunciation": "[ɔːɡˈment]",
+      "partOfSpeech": "v.",
+      "meaning": "늘리다, 증가시키다",
+      "example": {
+        "en": "He augmented his income by working a second job.",
+        "ko": "그는 부업을 해서 소득을 늘렸다."
+      }
+    },
+    {
+      "word": "diminish",
+      "pronunciation": "[dɪˈmɪnɪʃ]",
+      "partOfSpeech": "v.",
+      "meaning": "줄어들다, 약화시키다",
+      "example": {
+        "en": "The scandal diminished the politician's influence.",
+        "ko": "그 스캔들은 정치인의 영향력을 약화시켰다."
+      }
+    },
+    {
+      "word": "multiply",
+      "pronunciation": "/ˈmʌltɪplaɪ/",
+      "partOfSpeech": "v.",
+      "meaning": "크게 증가하다, 증식하다",
+      "example": {
+        "en": "Cases multiplied within days despite restrictions.",
+        "ko": "제한 조치에도 불구하고 며칠 만에 사례 수가 급증했다."
+      }
+    },
+    {
+      "word": "curtail",
+      "pronunciation": "/kərˈteɪl/",
+      "partOfSpeech": "v.",
+      "meaning": "삭감하다, 줄이다",
+      "example": {
+        "en": "The firm curtailed spending to cope with lower revenue.",
+        "ko": "수익 감소에 대응하기 위해 회사가 지출을 줄였다."
+      }
+    },
+    {
+      "word": "mount",
+      "pronunciation": "/maʊnt/",
+      "partOfSpeech": "v.",
+      "meaning": "(점점) 증가하다, 커지다",
+      "example": {
+        "en": "Concerns mounted as customer complaints continued to rise.",
+        "ko": "고객 불만이 계속 증가하면서 우려가 커졌다."
+      }
+    },
+    {
+      "word": "soar",
+      "pronunciation": "[sɔːr]",
+      "partOfSpeech": "v.",
+      "meaning": "급등하다, 치솟다",
+      "example": {
+        "en": "Stock prices soared after the positive economic news.",
+        "ko": "긍정적인 경제 소식 이후 주가가 급등했다."
+      }
+    },
+    {
+      "word": "plummet",
+      "pronunciation": "[ˈplʌmɪt]",
+      "partOfSpeech": "v.",
+      "meaning": "곤두박질치다, 급락하다",
+      "example": {
+        "en": "The company's profits plummeted by 50% last year.",
+        "ko": "작년에 그 회사의 이익이 50% 급락했다."
+      }
+    },
+    {
+      "word": "climb",
+      "pronunciation": "/klaɪm/",
+      "partOfSpeech": "v.",
+      "meaning": "(꾸준히) 오르다, 상승하다",
+      "example": {
+        "en": "Oil prices climbed above $90 a barrel.",
+        "ko": "유가가 배럴당 90달러를 넘어 상승했다."
+      }
+    },
+    {
+      "word": "sink",
+      "pronunciation": "/sɪ&eng;k/",
+      "partOfSpeech": "v.",
+      "meaning": "(낮은 수준으로) 떨어지다, 가라앉다",
+      "example": {
+        "en": "Consumer confidence sank to a two-year low.",
+        "ko": "소비자 신뢰도가 2년 만의 최저치로 떨어졌다."
+      }
+    },
+    {
+      "word": "tumble",
+      "pronunciation": "/ˈtʌmbəl/",
+      "partOfSpeech": "v.",
+      "meaning": "급락하다, 폭락하다",
+      "example": {
+        "en": "Shares tumbled after the earnings warning.",
+        "ko": "실적 경고 이후 주가가 급락했다."
+      }
+    },
+    {
+      "word": "surge",
+      "pronunciation": "[sɜːrdʒ]",
+      "partOfSpeech": "v.\n       \n        n.",
+      "meaning": "급증하다, 밀려들다\n       \n        급증",
+      "example": {
+        "en": "There was a sudden surge in online orders.",
+        "ko": "온라인 주문이 갑자기 급증했다."
+      }
+    },
+    {
+      "word": "slump",
+      "pronunciation": "[slʌmp]",
+      "partOfSpeech": "v.\n       \n        n.",
+      "meaning": "급감하다, 폭락하다\n       \n        불황, 슬럼프",
+      "example": {
+        "en": "The housing market went into a deep slump.",
+        "ko": "주택 시장이 깊은 불황에 빠졌다."
+      }
+    },
+    {
+      "word": "spike",
+      "pronunciation": "/spaɪk/",
+      "partOfSpeech": "n.",
+      "meaning": "급등, 급증",
+      "example": {
+        "en": "There was a spike in traffic after the promotion.",
+        "ko": "프로모션 이후 트래픽이 급증했다."
+      }
+    },
+    {
+      "word": "dip",
+      "pronunciation": "/dɪp/",
+      "partOfSpeech": "n.",
+      "meaning": "(일시적인) 하락",
+      "example": {
+        "en": "The market took a brief dip before recovering.",
+        "ko": "시장이 회복하기 전 잠깐 하락했다."
+      }
+    },
+    {
+      "word": "drop",
+      "pronunciation": "/drɒp/",
+      "partOfSpeech": "v.",
+      "meaning": "떨어지다, 하락하다",
+      "example": {
+        "en": "Sales dropped sharply in the third quarter.",
+        "ko": "3분기에 매출이 급격히 감소했다."
+      }
+    },
+    {
+      "word": "burgeon",
+      "pronunciation": "[ˈbɜːrdʒən]",
+      "partOfSpeech": "v.",
+      "meaning": "급성장하다",
+      "example": {
+        "en": "The tech industry continues to burgeon in this region.",
+        "ko": "이 지역에서 기술 산업이 계속해서 급성장하고 있다."
+      }
+    },
+    {
+      "word": "dwindle",
+      "pronunciation": "[ˈdwɪndl]",
+      "partOfSpeech": "v.",
+      "meaning": "(점점) 줄어들다",
+      "example": {
+        "en": "The town's population has dwindled over the years.",
+        "ko": "그 마을의 인구는 수년에 걸쳐 점점 줄어들었다."
+      }
+    },
+    {
+      "word": "proliferate",
+      "pronunciation": "[prəˈlɪfəreɪt]",
+      "partOfSpeech": "v.",
+      "meaning": "급증하다, 확산되다",
+      "example": {
+        "en": "Social media platforms have proliferated in recent years.",
+        "ko": "소셜 미디어 플랫폼들이 최근 몇 년간 급증했다."
+      }
+    },
+    {
+      "word": "wane",
+      "pronunciation": "[weɪn]",
+      "partOfSpeech": "v.",
+      "meaning": "약해지다, 시들해지다",
+      "example": {
+        "en": "Public interest in the issue began to wane.",
+        "ko": "그 문제에 대한 대중의 관심이 시들해지기 시작했다."
+      }
+    },
+    {
+      "word": "mushroom",
+      "pronunciation": "/ˈmʌʃruːm/",
+      "partOfSpeech": "v.",
+      "meaning": "급속히 커지다[증가하다]",
+      "example": {
+        "en": "After the policy change, complaints mushroomed across social media.",
+        "ko": "정책 변화 이후 불만이 소셜 미디어 전반에서 급증했다."
+      }
+    },
+    {
+      "word": "escalation",
+      "pronunciation": "/ˌeskəˈleɪʃən/",
+      "partOfSpeech": "n.",
+      "meaning": "(단계적인) 확대, 증가, 악화",
+      "example": {
+        "en": "The sudden escalation in energy prices is straining households.",
+        "ko": "에너지 가격의 갑작스러운 급등이 가계에 부담을 주고 있다."
+      }
+    },
+    {
+      "word": "subside",
+      "pronunciation": "[səbˈsaɪd]",
+      "partOfSpeech": "v.",
+      "meaning": "가라앉다, 진정되다",
+      "example": {
+        "en": "The storm began to subside after a few hours.",
+        "ko": "몇 시간 후에 폭풍이 가라앉기 시작했다."
+      }
+    },
+    {
+      "word": "balloon",
+      "pronunciation": "/bəˈluːn/",
+      "partOfSpeech": "v.",
+      "meaning": "(갑자기) 부풀다, 급증하다",
+      "example": {
+        "en": "The national debt has ballooned in recent years.",
+        "ko": "최근 몇 년간 국가 부채가 급증했다."
+      }
+    },
+    {
+      "word": "ebb",
+      "pronunciation": "/ɛb/",
+      "partOfSpeech": "v.",
+      "meaning": "서서히 사그라지다, 약해지다",
+      "example": {
+        "en": "As the campaign wore on, public interest began to ebb.",
+        "ko": "선거운동이 길어지자 대중의 관심이 서서히 줄기 시작했다."
+      }
+    },
+    {
+      "word": "recede",
+      "pronunciation": "/rɪˈsiːd/",
+      "partOfSpeech": "v.",
+      "meaning": "물러나다, 약해지다",
+      "example": {
+        "en": "Floodwaters receded overnight, revealing damaged roads.",
+        "ko": "밤새 홍수물이 물러나 손상된 도로가 드러났다."
+      }
+    },
+    {
+      "word": "amplify",
+      "pronunciation": "[ˈæmplɪfaɪ]",
+      "partOfSpeech": "v.",
+      "meaning": "증폭시키다, 확대하다",
+      "example": {
+        "en": "The new system will amplify the sound for the entire stadium.",
+        "ko": "새로운 시스템은 경기장 전체의 소리를 증폭시킬 것이다."
+      }
+    },
+    {
+      "word": "abate",
+      "pronunciation": "[əˈbeɪt]",
+      "partOfSpeech": "v.",
+      "meaning": "(강도가) 약해지다, 수그러들다",
+      "example": {
+        "en": "We waited for the wind to abate before setting sail.",
+        "ko": "우리는 항해를 시작하기 전에 바람이 잦아들기를 기다렸다."
+      }
+    },
+    {
+      "word": "snowball",
+      "pronunciation": "/ˈsnoʊˌbɔːl/",
+      "partOfSpeech": "v.",
+      "meaning": "눈덩이처럼 불어나다",
+      "example": {
+        "en": "What began as a minor delay snowballed into a week-long backlog.",
+        "ko": "사소한 지연으로 시작된 일이 일주일짜리 업무 적체로 눈덩이처럼 불어났다."
+      }
+    },
+    {
+      "word": "taper",
+      "pronunciation": "/ˈteɪpər/",
+      "partOfSpeech": "v.",
+      "meaning": "점점 가늘어지다, 점점 줄어들다",
+      "example": {
+        "en": "The medication is tapered over two weeks.",
+        "ko": "그 약물은 2주에 걸쳐 서서히 줄인다."
+      }
+    },
+    {
+      "word": "sag",
+      "pronunciation": "/sæɡ/",
+      "partOfSpeech": "v.",
+      "meaning": "축 처지다, 약화되다",
+      "example": {
+        "en": "Sales sagged in the second quarter amid weak consumer confidence.",
+        "ko": "소비자 신뢰가 약화되면서 2분기 판매가 하락했다."
+      }
+    },
+    {
+      "word": "accrue",
+      "pronunciation": "[əˈkruː]",
+      "partOfSpeech": "v.",
+      "meaning": "(점진적으로) 축적되다, 누적되다",
+      "example": {
+        "en": "Interest will accrue on the account at a rate of 3%.",
+        "ko": "그 계좌에는 3%의 이율로 이자가 붙을 것이다."
+      }
+    },
+    {
+      "word": "deplete",
+      "pronunciation": "/dɪˈpliːt/",
+      "partOfSpeech": "v.",
+      "meaning": "고갈시키다, 격감시키다",
+      "example": {
+        "en": "Overfishing has severely depleted the region’s fish stocks.",
+        "ko": "남획으로 이 지역의 어류 자원이 심각하게 고갈되었다."
+      }
+    },
+    {
+      "word": "wax",
+      "pronunciation": "[wæks]",
+      "partOfSpeech": "v.",
+      "meaning": "(달이) 차오르다, 커지다, 강해지다",
+      "example": {
+        "en": "His enthusiasm for the project began to wax and wane.",
+        "ko": "그 프로젝트에 대한 그의 열정은 커졌다 작아졌다 하기 시작했다."
+      }
+    },
+    {
+      "word": "upturn",
+      "pronunciation": "/ˈʌptɜːrn/",
+      "partOfSpeech": "n.",
+      "meaning": "상승, 호전",
+      "example": {
+        "en": "Analysts anticipate an upturn in consumer spending.",
+        "ko": "분석가들은 소비 지출의 반등을 예상한다."
+      }
+    },
+    {
+      "word": "upswing",
+      "pronunciation": "/ˈʌpˌswɪ&eng;/",
+      "partOfSpeech": "n.",
+      "meaning": "상승, 호조",
+      "example": {
+        "en": "The economy is on the upswing after months of contraction.",
+        "ko": "수개월간의 위축 이후 경제가 회복 국면에 들어섰다."
+      }
+    },
+    {
+      "word": "inflate",
+      "pronunciation": "/ɪnˈfleɪt/",
+      "partOfSpeech": "v.",
+      "meaning": "부풀리다, (가격을) 올리다",
+      "example": {
+        "en": "The company was accused of inflating its profits.",
+        "ko": "그 회사는 이익을 부풀렸다는 의혹을 받았다."
+      }
+    },
+    {
+      "word": "deflate",
+      "pronunciation": "[dɪˈfleɪt]",
+      "partOfSpeech": "v.",
+      "meaning": "(공기를) 빼다, 수축시키다, (물가를) 끌어내리다",
+      "example": {
+        "en": "The government's policies helped to deflate the housing bubble.",
+        "ko": "정부의 정책은 주택 거품을 가라앉히는 데 도움이 되었다."
+      }
+    },
+    {
+      "word": "reduction",
+      "pronunciation": "/rɪˈdʌkʃən/",
+      "partOfSpeech": "n.",
+      "meaning": "감소, 축소, 삭감",
+      "example": {
+        "en": "The company reported a 20% reduction in operating costs.",
+        "ko": "회사는 운영비가 20% 감소했다고 보고했다."
+      }
+    },
+    {
+      "word": "attrition",
+      "pronunciation": "[əˈtrɪʃn]",
+      "partOfSpeech": "n.",
+      "meaning": "(자연적인) 감소, 마모",
+      "example": {
+        "en": "The company suffered high employee attrition rates last year.",
+        "ko": "그 회사는 작년에 높은 직원 이탈률을 겪었다."
+      }
+    },
+    {
+      "word": "uptick",
+      "pronunciation": "/ˈʌpˌtɪk/",
+      "partOfSpeech": "n.",
+      "meaning": "소폭 상승",
+      "example": {
+        "en": "Analysts noted a modest uptick in consumer spending last month.",
+        "ko": "지난달 소비 지출이 소폭 증가했다고 분석가들이 지적했다."
+      }
+    }
+  ]
+}

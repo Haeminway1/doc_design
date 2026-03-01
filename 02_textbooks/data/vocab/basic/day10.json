@@ -1,0 +1,504 @@
+{
+  "bookId": "vocab-basic",
+  "day": 10,
+  "theme": "전쟁, 군사, 무기 (War, Military, and Weapons)",
+  "words": [
+    {
+      "word": "war",
+      "pronunciation": "[wɔːr]",
+      "partOfSpeech": "n.",
+      "meaning": "전쟁",
+      "example": {
+        "en": "The two countries have been at war for five years.",
+        "ko": "두 나라는 5년 동안 전쟁 중이다."
+      }
+    },
+    {
+      "word": "combat",
+      "pronunciation": "[kάmbæt]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "전투\n       \n        싸우다",
+      "example": {
+        "en": "He was killed in combat during the war.",
+        "ko": "그는 전쟁 중 전투에서 사망했다."
+      }
+    },
+    {
+      "word": "battle",
+      "pronunciation": "[bǽtl]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "전투, 싸움\n       \n        싸우다",
+      "example": {
+        "en": "The Battle of Gettysburg was a turning point in the Civil War.",
+        "ko": "게티즈버그 전투는 남북전쟁의 전환점이었다."
+      }
+    },
+    {
+      "word": "conflict",
+      "pronunciation": "[kάnflikt]",
+      "partOfSpeech": "n.",
+      "meaning": "갈등, 분쟁, 충돌",
+      "example": {
+        "en": "The armed conflict has resulted in many casualties.",
+        "ko": "무력 충돌은 많은 사상자를 낳았다."
+      }
+    },
+    {
+      "word": "hostility",
+      "pronunciation": "[hɑstíləti]",
+      "partOfSpeech": "n.",
+      "meaning": "(pl.) 적대 행위, 교전; 적의",
+      "example": {
+        "en": "The two groups have a long history of hostility towards each other.",
+        "ko": "그 두 집단은 서로에 대해 오랜 적대감의 역사를 가지고 있다."
+      }
+    },
+    {
+      "word": "military",
+      "pronunciation": "[mílitèri]",
+      "partOfSpeech": "a.\n       \n        n.",
+      "meaning": "군사의\n       \n        군대",
+      "example": {
+        "en": "The government decided to take military action.",
+        "ko": "정부는 군사 행동을 취하기로 결정했다."
+      }
+    },
+    {
+      "word": "armed forces",
+      "partOfSpeech": "n.",
+      "meaning": "(육해공군을 포함한) 군대",
+      "example": {
+        "en": "He served in the armed forces for ten years.",
+        "ko": "그는 군대에서 10년 동안 복무했다."
+      }
+    },
+    {
+      "word": "troop",
+      "pronunciation": "[truːp]",
+      "partOfSpeech": "n.",
+      "meaning": "(pl.) 군대, 부대; 병력",
+      "example": {
+        "en": "The government sent troops to the border.",
+        "ko": "정부는 국경에 군대를 파견했다."
+      }
+    },
+    {
+      "word": "soldier",
+      "pronunciation": "[sóuldʒər]",
+      "partOfSpeech": "n.",
+      "meaning": "군인, 병사",
+      "example": {
+        "en": "The brave soldier was awarded a medal for his courage.",
+        "ko": "그 용감한 군인은 그의 용맹으로 훈장을 받았다."
+      }
+    },
+    {
+      "word": "warrior",
+      "pronunciation": "[wɔ́ːriər]",
+      "partOfSpeech": "n.",
+      "meaning": "(과거의) 전사, 무사",
+      "example": {
+        "en": "The samurai were skilled warriors in feudal Japan.",
+        "ko": "사무라이는 봉건 일본의 숙련된 전사들이었다."
+      }
+    },
+    {
+      "word": "veteran",
+      "pronunciation": "[vétərən]",
+      "partOfSpeech": "n.",
+      "meaning": "(전쟁에 참전했던) 참전 용사; 베테랑",
+      "example": {
+        "en": "He is a veteran of the Vietnam War.",
+        "ko": "그는 베트남 전쟁 참전 용사이다."
+      }
+    },
+    {
+      "word": "recruit",
+      "pronunciation": "[rikrúːt]",
+      "partOfSpeech": "v.\n       \n        n.",
+      "meaning": "모집하다, 징집하다\n       \n        신병, 신입사원",
+      "example": {
+        "en": "The army is trying to recruit more young people.",
+        "ko": "군대는 더 많은 젊은이들을 모집하려고 노력하고 있다."
+      }
+    },
+    {
+      "word": "enlist",
+      "pronunciation": "[inlíst]",
+      "partOfSpeech": "v.",
+      "meaning": "입대하다, 입대시키다; (협조·참여를) 얻다",
+      "example": {
+        "en": "He enlisted in the navy when he was eighteen.",
+        "ko": "그는 18살 때 해군에 입대했다."
+      }
+    },
+    {
+      "word": "draft",
+      "pronunciation": "[dræft]",
+      "partOfSpeech": "v.\n       \n        n.",
+      "meaning": "징병하다, 징집하다\n       \n        징병; 초안",
+      "example": {
+        "en": "He was drafted into the army during the war.",
+        "ko": "그는 전쟁 중에 군대에 징집되었다."
+      }
+    },
+    {
+      "word": "army",
+      "pronunciation": "[άːrmi]",
+      "partOfSpeech": "n.",
+      "meaning": "육군",
+      "example": {
+        "en": "The army launched a major offensive against the enemy.",
+        "ko": "육군은 적에 대한 대규모 공격을 개시했다."
+      }
+    },
+    {
+      "word": "navy",
+      "pronunciation": "[néivi]",
+      "partOfSpeech": "n.",
+      "meaning": "해군",
+      "example": {
+        "en": "The navy patrols the country's coastline.",
+        "ko": "해군은 국가의 해안선을 순찰한다."
+      }
+    },
+    {
+      "word": "air force",
+      "partOfSpeech": "n.",
+      "meaning": "공군",
+      "example": {
+        "en": "The air force conducted bombing raids on enemy targets.",
+        "ko": "공군은 적 목표물에 대한 폭격 공습을 실시했다."
+      }
+    },
+    {
+      "word": "corps",
+      "pronunciation": "[kɔːr]",
+      "partOfSpeech": "n.",
+      "meaning": "군단; (특수 임무를 띤) 단, 부대",
+      "example": {
+        "en": "She is a member of the Marine Corps.",
+        "ko": "그녀는 해병대원이다."
+      }
+    },
+    {
+      "word": "regiment",
+      "pronunciation": "[rédʒəmənt]",
+      "partOfSpeech": "n.",
+      "meaning": "(군대의) 연대",
+      "example": {
+        "en": "A regiment is usually commanded by a colonel.",
+        "ko": "연대는 보통 대령이 지휘한다."
+      }
+    },
+    {
+      "word": "battalion",
+      "pronunciation": "[bətǽljən]",
+      "partOfSpeech": "n.",
+      "meaning": "대대",
+      "example": {
+        "en": "A battalion consists of several companies.",
+        "ko": "대대는 여러 개의 중대로 구성된다."
+      }
+    },
+    {
+      "word": "platoon",
+      "pronunciation": "[plətúːn]",
+      "partOfSpeech": "n.",
+      "meaning": "소대",
+      "example": {
+        "en": "The platoon was ordered to capture the bridge.",
+        "ko": "소대는 다리를 점령하라는 명령을 받았다."
+      }
+    },
+    {
+      "word": "squad",
+      "pronunciation": "[skwɑd]",
+      "partOfSpeech": "n.",
+      "meaning": "분대",
+      "example": {
+        "en": "A squad is the smallest unit in an army.",
+        "ko": "분대는 군대에서 가장 작은 단위이다."
+      }
+    },
+    {
+      "word": "weapon",
+      "pronunciation": "[wépən]",
+      "partOfSpeech": "n.",
+      "meaning": "무기, 병기",
+      "example": {
+        "en": "The police found a weapon at the scene of the crime.",
+        "ko": "경찰은 범죄 현장에서 무기를 발견했다."
+      }
+    },
+    {
+      "word": "arms",
+      "pronunciation": "[ɑːrmz]",
+      "partOfSpeech": "n.",
+      "meaning": "(pl.) 무기",
+      "example": {
+        "en": "The country agreed to reduce its nuclear arms.",
+        "ko": "그 나라는 핵무기를 감축하기로 합의했다."
+      }
+    },
+    {
+      "word": "arsenal",
+      "pronunciation": "[άːrsənl]",
+      "partOfSpeech": "n.",
+      "meaning": "무기고, 병기고",
+      "example": {
+        "en": "The terrorists raided a military arsenal to get weapons.",
+        "ko": "테러리스트들은 무기를 얻기 위해 군 무기고를 습격했다."
+      }
+    },
+    {
+      "word": "ammunition",
+      "pronunciation": "[æ̀mjəníʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "탄약",
+      "example": {
+        "en": "The soldiers were running low on ammunition.",
+        "ko": "병사들의 탄약이 떨어져 가고 있었다."
+      }
+    },
+    {
+      "word": "sword",
+      "pronunciation": "[sɔːrd]",
+      "partOfSpeech": "n.",
+      "meaning": "칼, 검",
+      "example": {
+        "en": "The knight drew his sword and prepared for battle.",
+        "ko": "기사는 칼을 뽑고 전투를 준비했다."
+      }
+    },
+    {
+      "word": "dagger",
+      "pronunciation": "[dǽgər]",
+      "partOfSpeech": "n.",
+      "meaning": "단검",
+      "example": {
+        "en": "He carried a concealed dagger in his boot.",
+        "ko": "그는 부츠 안에 단검을 숨기고 다녔다."
+      }
+    },
+    {
+      "word": "shield",
+      "pronunciation": "[ʃiːld]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "방패\n       \n        보호하다, 막다",
+      "example": {
+        "en": "The warrior used his shield to block the enemy's attack.",
+        "ko": "그 전사는 방패를 이용해 적의 공격을 막았다."
+      }
+    },
+    {
+      "word": "spear",
+      "pronunciation": "[spiər]",
+      "partOfSpeech": "n.",
+      "meaning": "창",
+      "example": {
+        "en": "The tribe hunted with spears and arrows.",
+        "ko": "그 부족은 창과 화살로 사냥했다."
+      }
+    },
+    {
+      "word": "bow and arrow",
+      "partOfSpeech": "n.",
+      "meaning": "활과 화살",
+      "example": {
+        "en": "Robin Hood was famous for his skill with a bow and arrow.",
+        "ko": "로빈 후드는 활과 화살 솜씨로 유명했다."
+      }
+    },
+    {
+      "word": "rifle",
+      "pronunciation": "[ráifl]",
+      "partOfSpeech": "n.",
+      "meaning": "소총",
+      "example": {
+        "en": "The soldier aimed his rifle at the target.",
+        "ko": "군인은 목표물을 향해 소총을 겨누었다."
+      }
+    },
+    {
+      "word": "gun",
+      "pronunciation": "[gʌn]",
+      "partOfSpeech": "n.",
+      "meaning": "총, 대포",
+      "example": {
+        "en": "The sound of a gun echoed through the valley.",
+        "ko": "총성이 계곡에 울려 퍼졌다."
+      }
+    },
+    {
+      "word": "bullet",
+      "pronunciation": "[búlit]",
+      "partOfSpeech": "n.",
+      "meaning": "총알, 탄환",
+      "example": {
+        "en": "The doctor removed the bullet from the patient's shoulder.",
+        "ko": "의사는 환자의 어깨에서 총알을 제거했다."
+      }
+    },
+    {
+      "word": "cannon",
+      "pronunciation": "[kǽnən]",
+      "partOfSpeech": "n.",
+      "meaning": "대포",
+      "example": {
+        "en": "The old fort was defended by cannons.",
+        "ko": "그 오래된 요새는 대포로 방어되었다."
+      }
+    },
+    {
+      "word": "missile",
+      "pronunciation": "[mísəl]",
+      "partOfSpeech": "n.",
+      "meaning": "미사일",
+      "example": {
+        "en": "The warship launched a missile at the enemy ship.",
+        "ko": "그 군함은 적함에 미사일을 발사했다."
+      }
+    },
+    {
+      "word": "bomb",
+      "pronunciation": "[bɑm]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "폭탄\n       \n        폭격하다",
+      "example": {
+        "en": "A bomb exploded in the city center, causing many casualties.",
+        "ko": "시내 중심가에서 폭탄이 터져 많은 사상자가 발생했다."
+      }
+    },
+    {
+      "word": "strategy",
+      "pronunciation": "[strǽtədʒi]",
+      "partOfSpeech": "n.",
+      "meaning": "전략",
+      "example": {
+        "en": "The general devised a clever strategy to win the battle.",
+        "ko": "장군은 전투에서 이기기 위한 교묘한 전략을 고안했다."
+      }
+    },
+    {
+      "word": "tactics",
+      "pronunciation": "[tǽktiks]",
+      "partOfSpeech": "n.",
+      "meaning": "전술",
+      "example": {
+        "en": "The army used guerrilla tactics to fight the larger enemy force.",
+        "ko": "군대는 더 큰 적군과 싸우기 위해 게릴라 전술을 사용했다."
+      }
+    },
+    {
+      "word": "maneuver",
+      "pronunciation": "[mənúːvər]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "(군대의) 기동, 작전 행동; 책략\n       \n        기동하다",
+      "example": {
+        "en": "The army conducted large-scale maneuvers near the border.",
+        "ko": "군대는 국경 근처에서 대규모 기동 훈련을 실시했다."
+      }
+    },
+    {
+      "word": "siege",
+      "pronunciation": "[siːdʒ]",
+      "partOfSpeech": "n.",
+      "meaning": "포위 공격",
+      "example": {
+        "en": "The city was under siege for six months.",
+        "ko": "그 도시는 6개월 동안 포위 공격을 받았다."
+      }
+    },
+    {
+      "word": "ambush",
+      "pronunciation": "[ǽmbuʃ]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "매복, 잠복\n       \n        매복 공격하다",
+      "example": {
+        "en": "The soldiers were killed in an enemy ambush.",
+        "ko": "그 군인들은 적의 매복 공격으로 사망했다."
+      }
+    },
+    {
+      "word": "raid",
+      "pronunciation": "[reid]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "급습, 습격\n       \n        급습하다",
+      "example": {
+        "en": "The commandos carried out a daring raid on the enemy camp.",
+        "ko": "특공대는 적진에 대한 대담한 급습을 감행했다."
+      }
+    },
+    {
+      "word": "invasion",
+      "pronunciation": "[invéiʒən]",
+      "partOfSpeech": "n.",
+      "meaning": "침략, 침입",
+      "example": {
+        "en": "The invasion of the country marked the beginning of the war.",
+        "ko": "그 나라에 대한 침략은 전쟁의 시작을 알렸다."
+      }
+    },
+    {
+      "word": "retreat",
+      "pronunciation": "[ritríːt]",
+      "partOfSpeech": "v.\n       \n        n.",
+      "meaning": "후퇴하다\n       \n        후퇴",
+      "example": {
+        "en": "The army was forced to retreat after a heavy defeat.",
+        "ko": "군대는 대패 후 후퇴할 수밖에 없었다."
+      }
+    },
+    {
+      "word": "surrender",
+      "pronunciation": "[səréndər]",
+      "partOfSpeech": "v.\n       \n        n.",
+      "meaning": "항복하다\n       \n        항복",
+      "example": {
+        "en": "The enemy finally surrendered after a long siege.",
+        "ko": "적은 오랜 포위 공격 끝에 마침내 항복했다."
+      }
+    },
+    {
+      "word": "ceasefire",
+      "pronunciation": "[síːsfàiər]",
+      "partOfSpeech": "n.",
+      "meaning": "휴전, 정전",
+      "example": {
+        "en": "Both sides agreed to a temporary ceasefire.",
+        "ko": "양측은 임시 휴전에 합의했다."
+      }
+    },
+    {
+      "word": "truce",
+      "pronunciation": "[truːs]",
+      "partOfSpeech": "n.",
+      "meaning": "휴전, 정전",
+      "example": {
+        "en": "A truce was declared between the warring factions.",
+        "ko": "교전 중인 파벌들 사이에 휴전이 선포되었다."
+      }
+    },
+    {
+      "word": "armistice",
+      "pronunciation": "[άːrməstis]",
+      "partOfSpeech": "n.",
+      "meaning": "휴전 (협정)",
+      "example": {
+        "en": "The armistice was signed on November 11th, ending the war.",
+        "ko": "휴전 협정은 11월 11일에 체결되어 전쟁을 끝냈다."
+      }
+    },
+    {
+      "word": "peace",
+      "pronunciation": "[piːs]",
+      "partOfSpeech": "n.",
+      "meaning": "평화",
+      "example": {
+        "en": "They prayed for a lasting peace in the region.",
+        "ko": "그들은 그 지역의 지속적인 평화를 위해 기도했다."
+      }
+    }
+  ]
+}

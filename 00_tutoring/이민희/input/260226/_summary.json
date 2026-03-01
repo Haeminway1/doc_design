@@ -1,0 +1,127 @@
+{
+  "date": "260226",
+  "student": "이민희",
+  "totalImages": 13,
+  "feedbackImages": 8,
+  "images": [
+    {
+      "file": "이민희_260226_01.jpg",
+      "category": "EXCLUDE",
+      "detailCategory": "vocab-test",
+      "confidence": 0.95,
+      "description": "워드마스터 중등실력 단어 시험지입니다.",
+      "level": null,
+      "subject": null
+    },
+    {
+      "file": "이민희_260226_02.jpg",
+      "category": "EXCLUDE",
+      "detailCategory": "vocab-test",
+      "confidence": 0.95,
+      "description": "단어 시험지로, 영어 단어와 한국어 뜻을 매칭하는 시험 결과입니다.",
+      "level": null,
+      "subject": null
+    },
+    {
+      "file": "이민희_260226_03.jpg",
+      "category": "EXCLUDE",
+      "detailCategory": "vocab-test",
+      "confidence": 0.95,
+      "description": "워드마스터 중등실력 단어 시험지. 학생이 직접 쓴 답안과 채점 표시가 보입니다.",
+      "level": null,
+      "subject": null
+    },
+    {
+      "file": "이민희_260226_04.jpg",
+      "category": "EXCLUDE",
+      "detailCategory": "vocab-test",
+      "confidence": 0.95,
+      "description": "워드마스터 중등실력 단어 시험지.",
+      "level": null,
+      "subject": null
+    },
+    {
+      "file": "이민희_260226_05.jpg",
+      "category": "FEEDBACK",
+      "detailCategory": "our-textbook",
+      "confidence": 0.95,
+      "description": "베라진 교재의 한 페이지이며, 전치사에 대한 설명이 있습니다. 필기가 되어 있습니다.",
+      "level": "basic",
+      "subject": "문법"
+    },
+    {
+      "file": "이민희_260226_06.jpg",
+      "category": "FEEDBACK",
+      "detailCategory": "external-textbook",
+      "confidence": 0.95,
+      "description": "필기된 외부 교재 이미지. 문법 및 구문 관련 내용으로 보임.",
+      "level": "intermediate",
+      "subject": "문법"
+    },
+    {
+      "file": "이민희_260226_07.jpg",
+      "category": "FEEDBACK",
+      "detailCategory": "external-textbook",
+      "confidence": 0.95,
+      "description": "베라진 교재가 아닌 외부 교재 (전치사, 구문 학습).",
+      "level": "intermediate",
+      "subject": "구문독해"
+    },
+    {
+      "file": "이민희_260226_08.jpg",
+      "category": "FEEDBACK",
+      "detailCategory": "our-textbook",
+      "confidence": 0.95,
+      "description": "베라진 구문독해 교재에 필기된 내용입니다.",
+      "level": "basic",
+      "subject": "구문독해"
+    },
+    {
+      "file": "이민희_260226_09.jpg",
+      "category": "FEEDBACK",
+      "detailCategory": "our-textbook",
+      "confidence": 0.99,
+      "description": "베라진 구문독해 BASIC 교재에 필기된 내용입니다.",
+      "level": "basic",
+      "subject": "구문독해"
+    },
+    {
+      "file": "이민희_260226_10.jpg",
+      "category": "FEEDBACK",
+      "detailCategory": "our-textbook",
+      "confidence": 0.99,
+      "description": "베라진 구문독해 BASIC 교재에 필기된 내용입니다.",
+      "level": "basic",
+      "subject": "구문독해"
+    },
+    {
+      "file": "이민희_260226_11.jpg",
+      "category": "FEEDBACK",
+      "detailCategory": "our-textbook",
+      "confidence": 0.95,
+      "description": "베라진 구문독해 BASIC 교재의 페이지이며, 학생이 필기한 내용이 보입니다.",
+      "level": "basic",
+      "subject": "구문독해"
+    },
+    {
+      "file": "이민희_260226_12.jpg",
+      "category": "EXCLUDE",
+      "detailCategory": "planner",
+      "confidence": 0.95,
+      "description": "손으로 작성된 학습 플래너 이미지입니다.",
+      "level": null,
+      "subject": null
+    },
+    {
+      "file": "이민희_260226_13.jpg",
+      "category": "FEEDBACK",
+      "detailCategory": "external-textbook",
+      "confidence": 0.95,
+      "description": "명사절 접속사 that, what, if, whether에 대한 설명과 예문이 있는 외부 교재 페이지.",
+      "level": "intermediate",
+      "subject": "문법"
+    }
+  ],
+  "feedbackReady": true,
+  "processedAt": "2026-02-27T03:52:24.519Z"
+}

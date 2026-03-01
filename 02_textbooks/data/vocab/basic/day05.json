@@ -1,0 +1,504 @@
+{
+  "bookId": "vocab-basic",
+  "day": 5,
+  "theme": "통치, 권력, 자치 (Governance, Power, and Autonomy)",
+  "words": [
+    {
+      "word": "govern",
+      "pronunciation": "[gʌ́vərn]",
+      "partOfSpeech": "v.",
+      "meaning": "다스리다, 통치하다; 지배하다",
+      "example": {
+        "en": "The country has been governed by the same party for 20 years.",
+        "ko": "그 나라는 20년 동안 같은 정당에 의해 통치되어 왔다."
+      }
+    },
+    {
+      "word": "rule",
+      "pronunciation": "[ruːl]",
+      "partOfSpeech": "v.\n       \n        n.",
+      "meaning": "통치하다, 지배하다\n       \n        규칙, 통치",
+      "example": {
+        "en": "The emperor ruled over a vast empire.",
+        "ko": "황제는 거대한 제국을 다스렸다."
+      }
+    },
+    {
+      "word": "preside",
+      "pronunciation": "[prizáid]",
+      "partOfSpeech": "v.",
+      "meaning": "(회의·의식을) 주재하다, 사회를 보다",
+      "example": {
+        "en": "The judge will preside over the trial.",
+        "ko": "판사가 그 재판을 주재할 것이다."
+      }
+    },
+    {
+      "word": "administration",
+      "pronunciation": "[ədminəstréiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "행정부, 행정; 관리",
+      "example": {
+        "en": "The new administration promised to lower taxes.",
+        "ko": "새 행정부는 세금을 낮추겠다고 약속했다."
+      }
+    },
+    {
+      "word": "authority",
+      "pronunciation": "[əθɔ́ːrəti]",
+      "partOfSpeech": "n.",
+      "meaning": "권위, 권한; 당국",
+      "example": {
+        "en": "Only the manager has the authority to approve this request.",
+        "ko": "오직 관리자만이 이 요청을 승인할 권한이 있다."
+      }
+    },
+    {
+      "word": "power",
+      "pronunciation": "[páuər]",
+      "partOfSpeech": "n.",
+      "meaning": "권력, 힘; 능력",
+      "example": {
+        "en": "The constitution limits the power of the government.",
+        "ko": "헌법은 정부의 권력을 제한한다."
+      }
+    },
+    {
+      "word": "centralize",
+      "pronunciation": "[séntrəlàiz]",
+      "partOfSpeech": "v.",
+      "meaning": "(권력을) 중앙 집중화하다",
+      "example": {
+        "en": "The king attempted to centralize power and weaken the nobles.",
+        "ko": "왕은 권력을 중앙으로 집중시키고 귀족들을 약화시키려 시도했다."
+      }
+    },
+    {
+      "word": "autonomy",
+      "pronunciation": "[ɔːtάnəmi]",
+      "partOfSpeech": "n.",
+      "meaning": "자치, 자치권; 자율성",
+      "example": {
+        "en": "The province was granted autonomy from the central government.",
+        "ko": "그 주는 중앙 정부로부터 자치권을 부여받았다."
+      }
+    },
+    {
+      "word": "municipal",
+      "pronunciation": "[mjuːnísəpəl]",
+      "partOfSpeech": "a.",
+      "meaning": "지방 자치제의, 시의",
+      "example": {
+        "en": "The municipal government is responsible for local services like trash collection.",
+        "ko": "시 정부는 쓰레기 수거와 같은 지역 서비스를 책임진다."
+      }
+    },
+    {
+      "word": "local self-government",
+      "partOfSpeech": "n.",
+      "meaning": "지방 자치",
+      "example": {
+        "en": "The system of local self-government allows communities to manage their own affairs.",
+        "ko": "지방 자치 제도는 지역 사회가 자신들의 일을 스스로 관리하도록 허용한다."
+      }
+    },
+    {
+      "word": "helm",
+      "pronunciation": "[helm]",
+      "partOfSpeech": "n.",
+      "meaning": "(배의) 키; (조직의) 지도적 위치",
+      "example": {
+        "en": "After the founder retired, his son took the helm of the company.",
+        "ko": "창업자가 은퇴한 후, 그의 아들이 회사의 지휘권을 잡았다."
+      }
+    },
+    {
+      "word": "rein",
+      "pronunciation": "[rein]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "(말의) 고삐; (pl.) 통제권, 지휘권\n       \n        통제하다",
+      "example": {
+        "en": "The new CEO was given free rein to restructure the company.",
+        "ko": "새로운 CEO는 회사를 구조조정할 완전한 재량권을 부여받았다."
+      }
+    },
+    {
+      "word": "seize",
+      "pronunciation": "[siːz]",
+      "partOfSpeech": "v.",
+      "meaning": "(권력을) 장악하다; 붙잡다, 압수하다",
+      "example": {
+        "en": "The rebels seized control of the capital city.",
+        "ko": "반군은 수도의 통제권을 장악했다."
+      }
+    },
+    {
+      "word": "annex",
+      "pronunciation": "[ənéks]",
+      "partOfSpeech": "v.",
+      "meaning": "(영토·국가 등을) 합병하다",
+      "example": {
+        "en": "The larger country annexed its smaller neighbor.",
+        "ko": "더 큰 나라는 이웃의 작은 나라를 합병했다."
+      }
+    },
+    {
+      "word": "mandate",
+      "pronunciation": "[mǽndeit]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "(선거에 의해 주어진) 권한, 위임 통치\n       \n        명령하다, 권한을 주다",
+      "example": {
+        "en": "The government has a mandate from the people to implement these reforms.",
+        "ko": "정부는 이러한 개혁을 실행하라는 국민의 위임을 받았다."
+      }
+    },
+    {
+      "word": "enact",
+      "pronunciation": "[inǽkt]",
+      "partOfSpeech": "v.",
+      "meaning": "(법을) 제정하다",
+      "example": {
+        "en": "Parliament will enact new legislation to protect the environment.",
+        "ko": "의회는 환경을 보호하기 위한 새로운 법률을 제정할 것이다."
+      }
+    },
+    {
+      "word": "decree",
+      "pronunciation": "[dikríː]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "법령, 칙령\n       \n        법령으로 공포하다",
+      "example": {
+        "en": "The king issued a decree banning all public gatherings.",
+        "ko": "왕은 모든 공공 집회를 금지하는 칙령을 내렸다."
+      }
+    },
+    {
+      "word": "ordinance",
+      "pronunciation": "[ɔ́ːrdinəns]",
+      "partOfSpeech": "n.",
+      "meaning": "(지방 자치 단체의) 법령, 조례",
+      "example": {
+        "en": "The city passed an ordinance against smoking in public parks.",
+        "ko": "시는 공공 공원에서의 흡연을 금지하는 조례를 통과시켰다."
+      }
+    },
+    {
+      "word": "legislation",
+      "pronunciation": "[lèdʒisléiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "법률, 입법",
+      "example": {
+        "en": "The government is planning to introduce new environmental legislation.",
+        "ko": "정부는 새로운 환경 법규를 도입할 계획이다."
+      }
+    },
+    {
+      "word": "bureaucracy",
+      "pronunciation": "[bjuərάkrəsi]",
+      "partOfSpeech": "n.",
+      "meaning": "관료제, 관료주의; (복잡한) 행정 절차",
+      "example": {
+        "en": "It took weeks to get through the university's bureaucracy.",
+        "ko": "대학의 관료주의적 절차를 통과하는 데 몇 주가 걸렸다."
+      }
+    },
+    {
+      "word": "red tape",
+      "partOfSpeech": "n.",
+      "meaning": "(불필요하고 복잡한) 관료적 형식, 형식주의",
+      "example": {
+        "en": "We had to cut through a lot of red tape to get our visa.",
+        "ko": "우리는 비자를 받기 위해 많은 관료적 형식을 거쳐야 했다."
+      }
+    },
+    {
+      "word": "civil service",
+      "partOfSpeech": "n.",
+      "meaning": "공무원, 행정 기관",
+      "example": {
+        "en": "She has worked in the civil service for over 20 years.",
+        "ko": "그녀는 20년 넘게 공무원으로 일해왔다."
+      }
+    },
+    {
+      "word": "rally",
+      "pronunciation": "[rǽli]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "(정치적) 집회, 대회\n       \n        (지지를 위해) 결집하다",
+      "example": {
+        "en": "Thousands of people attended the political rally in the city square.",
+        "ko": "수천 명의 사람들이 시청 광장에서 열린 정치 집회에 참석했다."
+      }
+    },
+    {
+      "word": "poll",
+      "pronunciation": "[poul]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "여론 조사; 투표소; 투표\n       \n        여론 조사를 하다",
+      "example": {
+        "en": "A recent poll shows that the president's approval rating has dropped.",
+        "ko": "최근의 여론 조사는 대통령의 지지율이 하락했음을 보여준다."
+      }
+    },
+    {
+      "word": "canvass",
+      "pronunciation": "[kǽnvəs]",
+      "partOfSpeech": "v.",
+      "meaning": "(선거) 유세를 하다; (여론 등을) 조사하다",
+      "example": {
+        "en": "Volunteers are canvassing the neighborhood for the candidate.",
+        "ko": "자원봉사자들이 그 후보를 위해 동네를 돌며 유세를 하고 있다."
+      }
+    },
+    {
+      "word": "filibuster",
+      "pronunciation": "[fílibʌ̀stər]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "(의회에서의) 의사 진행 방해\n       \n        의사 진행을 방해하다",
+      "example": {
+        "en": "A senator used a filibuster to delay the vote on the bill.",
+        "ko": "한 상원의원은 법안 표결을 지연시키기 위해 필리버스터를 사용했다."
+      }
+    },
+    {
+      "word": "gerrymander",
+      "pronunciation": "[dʒérimæ̀ndər]",
+      "partOfSpeech": "v.",
+      "meaning": "(특정 정당에 유리하도록) 선거구를 개편하다",
+      "example": {
+        "en": "The ruling party was accused of gerrymandering the districts.",
+        "ko": "여당은 선거구를 게리맨더링했다는 비난을 받았다."
+      }
+    },
+    {
+      "word": "constituent",
+      "pronunciation": "[kənstíʧuənt]",
+      "partOfSpeech": "n.",
+      "meaning": "(선거구의) 유권자, 주민; 구성 요소",
+      "example": {
+        "en": "The senator received many letters from her constituents.",
+        "ko": "그 상원의원은 자신의 선거구민들로부터 많은 편지를 받았다."
+      }
+    },
+    {
+      "word": "electorate",
+      "pronunciation": "[iléktərət]",
+      "partOfSpeech": "n.",
+      "meaning": "(전체) 유권자",
+      "example": {
+        "en": "The government must listen to the will of the electorate.",
+        "ko": "정부는 유권자의 뜻에 귀를 기울여야 한다."
+      }
+    },
+    {
+      "word": "incumbent",
+      "pronunciation": "[inkʌ́mbənt]",
+      "partOfSpeech": "n.\n       \n        a.",
+      "meaning": "현직자, 재임자\n       \n        재임 중인",
+      "example": {
+        "en": "The incumbent president is running for re-election.",
+        "ko": "현직 대통령이 재선을 위해 출마한다."
+      }
+    },
+    {
+      "word": "challenger",
+      "pronunciation": "[tʃǽləndʒər]",
+      "partOfSpeech": "n.",
+      "meaning": "도전자",
+      "example": {
+        "en": "The challenger criticized the incumbent's policies during the debate.",
+        "ko": "도전자는 토론 중에 현직자의 정책을 비판했다."
+      }
+    },
+    {
+      "word": "platform",
+      "pronunciation": "[plǽtfɔːrm]",
+      "partOfSpeech": "n.",
+      "meaning": "(정당의) 정강, 공약; 연단",
+      "example": {
+        "en": "The party's platform includes promises of tax cuts and job creation.",
+        "ko": "그 정당의 공약에는 감세와 일자리 창출 약속이 포함되어 있다."
+      }
+    },
+    {
+      "word": "lobby",
+      "pronunciation": "[lάbi]",
+      "partOfSpeech": "v.\n       \n        n.",
+      "meaning": "로비하다, 압력을 가하다\n       \n        로비, 압력 단체",
+      "example": {
+        "en": "They are lobbying the government to change the law.",
+        "ko": "그들은 법 개정을 위해 정부에 로비를 하고 있다."
+      }
+    },
+    {
+      "word": "grassroots",
+      "pronunciation": "[grǽssrúːts]",
+      "partOfSpeech": "n.\n       \n        a.",
+      "meaning": "풀뿌리, (일반) 대중\n       \n        풀뿌리의, 민중의",
+      "example": {
+        "en": "The campaign started as a grassroots movement.",
+        "ko": "그 캠페인은 풀뿌리 운동으로 시작되었다."
+      }
+    },
+    {
+      "word": "bipartisan",
+      "pronunciation": "[bàipάːrtəzən]",
+      "partOfSpeech": "a.",
+      "meaning": "양당의, 초당파적인",
+      "example": {
+        "en": "The bill has bipartisan support from both Democrats and Republicans.",
+        "ko": "그 법안은 민주당과 공화당 양측으로부터 초당파적인 지지를 받고 있다."
+      }
+    },
+    {
+      "word": "faction",
+      "pronunciation": "[fǽkʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "파벌, 당파",
+      "example": {
+        "en": "The party is deeply divided by internal factions.",
+        "ko": "그 정당은 내부 파벌들로 인해 심각하게 분열되어 있다."
+      }
+    },
+    {
+      "word": "dissent",
+      "pronunciation": "[disént]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "(공식적 의견에 대한) 반대, 이의\n       \n        반대하다",
+      "example": {
+        "en": "Two judges expressed their dissent from the majority opinion.",
+        "ko": "두 명의 판사가 다수 의견에 대한 반대 의사를 표명했다."
+      }
+    },
+    {
+      "word": "opposition",
+      "pronunciation": "[ὰpəzíʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "야당; 반대",
+      "example": {
+        "en": "The opposition party criticized the government's handling of the economy.",
+        "ko": "야당은 정부의 경제 운용을 비판했다."
+      }
+    },
+    {
+      "word": "propaganda",
+      "pronunciation": "[prὰpəgǽndə]",
+      "partOfSpeech": "n.",
+      "meaning": "(정치적) 선전",
+      "example": {
+        "en": "The regime used propaganda to control public opinion.",
+        "ko": "그 정권은 여론을 통제하기 위해 선전을 이용했다."
+      }
+    },
+    {
+      "word": "unrest",
+      "pronunciation": "[ʌnrést]",
+      "partOfSpeech": "n.",
+      "meaning": "(사회·정치적) 불안, 불만",
+      "example": {
+        "en": "Rising unemployment has led to social unrest in the region.",
+        "ko": "실업률 상승이 그 지역의 사회 불안을 야기했다."
+      }
+    },
+    {
+      "word": "insurrection",
+      "pronunciation": "[ìnsərékʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "반란, 폭동",
+      "example": {
+        "en": "The government quickly suppressed the armed insurrection.",
+        "ko": "정부는 무장 반란을 신속하게 진압했다."
+      }
+    },
+    {
+      "word": "sedition",
+      "pronunciation": "[sidíʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "(정부 전복을 목표로 하는) 선동, 난동 교사",
+      "example": {
+        "en": "He was charged with sedition for inciting violence against the state.",
+        "ko": "그는 국가에 대한 폭력을 선동한 혐의로 내란 선동죄로 기소되었다."
+      }
+    },
+    {
+      "word": "asylum",
+      "pronunciation": "[əsáiləm]",
+      "partOfSpeech": "n.",
+      "meaning": "(정치적) 망명; 보호 시설",
+      "example": {
+        "en": "He sought political asylum in a foreign country.",
+        "ko": "그는 외국에서 정치적 망명을 신청했다."
+      }
+    },
+    {
+      "word": "refugee",
+      "pronunciation": "[rèfjudʒíː]",
+      "partOfSpeech": "n.",
+      "meaning": "난민, 망명자",
+      "example": {
+        "en": "Thousands of refugees fled the war-torn country.",
+        "ko": "수천 명의 난민들이 전쟁으로 폐허가 된 나라를 탈출했다."
+      }
+    },
+    {
+      "word": "civic",
+      "pronunciation": "[sívik]",
+      "partOfSpeech": "a.",
+      "meaning": "시의, 시민의",
+      "example": {
+        "en": "It is our civic duty to vote in elections.",
+        "ko": "선거에서 투표하는 것은 우리의 시민적 의무이다."
+      }
+    },
+    {
+      "word": "welfare",
+      "pronunciation": "[wélfεər]",
+      "partOfSpeech": "n.",
+      "meaning": "복지, 행복",
+      "example": {
+        "en": "The government is responsible for the welfare of its citizens.",
+        "ko": "정부는 국민의 복지를 책임진다."
+      }
+    },
+    {
+      "word": "infrastructure",
+      "pronunciation": "[ínfrəstrʌ̀kʧər]",
+      "partOfSpeech": "n.",
+      "meaning": "사회 기반 시설, 인프라",
+      "example": {
+        "en": "The country needs to invest more in its aging infrastructure.",
+        "ko": "그 나라는 노후화된 사회 기반 시설에 더 많이 투자해야 한다."
+      }
+    },
+    {
+      "word": "hamlet",
+      "pronunciation": "[hǽmlit]",
+      "partOfSpeech": "n.",
+      "meaning": "아주 작은 마을, 촌락",
+      "example": {
+        "en": "He grew up in a quiet hamlet in the countryside.",
+        "ko": "그는 시골의 조용한 작은 마을에서 자랐다."
+      }
+    },
+    {
+      "word": "hinterland",
+      "pronunciation": "[híntərlæ̀nd]",
+      "partOfSpeech": "n.",
+      "meaning": "배후지, 오지; 시골 지역",
+      "example": {
+        "en": "The port serves a vast agricultural hinterland.",
+        "ko": "그 항구는 광대한 농업 배후지에 서비스를 제공한다."
+      }
+    },
+    {
+      "word": "enclave",
+      "pronunciation": "[énkleiv]",
+      "partOfSpeech": "n.",
+      "meaning": "(타국 영토로 둘러싸인) 고립된 영토, 소수 민족 거주지",
+      "example": {
+        "en": "The Vatican City is an independent enclave within Rome.",
+        "ko": "바티칸 시국은 로마 내에 있는 독립적인 고립 영토이다."
+      }
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+/* =================================================================== */
+/* part-opener.css — Part/Unit 시작 페이지                             */
+/* Vera's Document Studio                                               */
+/* =================================================================== */
+
+/**
+ * Part Opener Component
+ *
+ * 용도: 교재의 Part/Unit 시작을 알리는 전체 페이지 구성 요소
+ *
+ * 마크업 예시:
+ *
+ * <div class="page page-start no-header-footer">
+ *   <div class="part-opener">
+ *     <div class="part-opener-number">PART 1</div>
+ *     <div class="part-opener-divider"></div>
+ *     <h1 class="part-opener-title">구조와 준동사</h1>
+ *     <p class="part-opener-subtitle">Structure & Verbals</p>
+ *     <p class="part-opener-description">
+ *       영어 문장의 기본 골격을 이해하고, 동사와 준동사의 정확한 구분법을 익힙니다.
+ *     </p>
+ *   </div>
+ * </div>
+ */
+
+/* --- Part Opener 컨테이너 --- */
+.part-opener {
+    width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    background: var(--color-white) !important;
+    padding: var(--space-2xl) !important;
+    break-inside: avoid !important;
+}
+
+/* --- Part/Unit 번호 --- */
+.part-opener-number {
+    font-family: var(--font-eng) !important;
+    font-size: 72pt !important;
+    font-weight: 900 !important;
+    color: var(--color-accent-primary) !important;
+    letter-spacing: -2px !important;
+    margin-bottom: var(--space-lg) !important;
+    line-height: 1 !important;
+}
+
+/* --- 구분선 --- */
+.part-opener-divider {
+    width: 80px !important;
+    height: 4px !important;
+    background: var(--color-accent-primary) !important;
+    margin: var(--space-xl) 0 !important;
+}
+
+/* --- Part 제목 --- */
+.part-opener-title {
+    font-family: var(--font-sans) !important;
+    font-size: var(--text-3xl) !important;
+    font-weight: 700 !important;
+    color: var(--color-text-primary) !important;
+    margin: var(--space-lg) 0 !important;
+    line-height: var(--leading-tight) !important;
+}
+
+/* --- Part 부제 (영문) --- */
+.part-opener-subtitle {
+    font-family: var(--font-eng) !important;
+    font-size: var(--text-xl) !important;
+    font-weight: 500 !important;
+    color: var(--color-text-secondary) !important;
+    margin: var(--space-md) 0 !important;
+    line-height: var(--leading-normal) !important;
+}
+
+/* --- Part 설명 --- */
+.part-opener-description {
+    font-family: var(--font-sans) !important;
+    font-size: var(--text-md) !important;
+    font-weight: 400 !important;
+    color: var(--color-text-secondary) !important;
+    margin-top: var(--space-xl) !important;
+    max-width: 140mm !important;
+    line-height: var(--leading-relaxed) !important;
+}
+
+/* --- 헤더/푸터 숨김 --- */
+.part-opener .page-header,
+.part-opener .page-footer {
+    display: none !important;
+}
+
+/* --- Unit Header (페이지 내부용, 별도 컴포넌트) --- */
+.unit-header {
+    text-align: center !important;
+    padding: var(--space-lg) 0 !important;
+    margin-bottom: var(--space-xl) !important;
+    border-bottom: 2px solid var(--color-accent-primary) !important;
+    break-inside: avoid !important;
+}
+
+.unit-header h1 {
+    font-family: var(--font-eng) !important;
+    font-size: var(--text-2xl) !important;
+    font-weight: 700 !important;
+    color: var(--color-accent-dark) !important;
+    margin-bottom: var(--space-sm) !important;
+}
+
+.unit-header p {
+    font-size: var(--text-base) !important;
+    color: var(--color-text-secondary) !important;
+    line-height: var(--leading-normal) !important;
+}

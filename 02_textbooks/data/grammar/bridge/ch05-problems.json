@@ -1,0 +1,828 @@
+{
+  "bookId": "grammar-bridge-ch05",
+  "chapter": "ch05",
+  "title": "접속사",
+  "problems": [
+    {
+      "id": "grammar-bridge-ch05-201",
+      "number": 201,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 밑줄 친 부분을 올바르게 고친 것은?",
+      "choices": [
+        "neighboring areas have",
+        "that of neighboring areas",
+        "those of neighboring areas",
+        "neighboring areas'",
+        "what neighboring areas have"
+      ],
+      "stem": "The employment rate of this region is higher than <u>neighboring areas</u>.",
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "'이 지역의 고용률'과 '이웃 지역들'을 비교하는 것은 비논리적입니다. '이 지역의 고용률'과 '이웃 지역들의 고용률'을 비교해야 합니다. 단수인 'the employment rate'를 대신하는 지시대명사 that을 사용하여 'that of neighboring areas'로 고쳐야 논리적으로 올바른 비교가 됩니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-202",
+      "number": 202,
+      "type": "correct-usage",
+      "instruction": "다음 중 어법상 올바른 문장은?",
+      "choices": [
+        "The new policy is very more effective than the previous one.",
+        "This method proves far superior than conventional approaches.",
+        "The research findings are much more convincing than expected.",
+        "Her argument was too better structured than his presentation.",
+        "The analysis is so more comprehensive than last year's study."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 3,
+      "explanation": "비교급(more convincing)을 강조할 때는 much, far, even, still, a lot 등을 사용합니다. ①, ④, ⑤의 'very', 'too', 'so'는 비교급을 수식할 수 없습니다. ② 'superior'는 'than'이 아닌 'to'와 함께 사용됩니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-203",
+      "number": 203,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "more superior to",
+        "far superior to",
+        "very superior than",
+        "much superior than",
+        "too superior to"
+      ],
+      "stem": "The senior researcher's expertise is _______ that of junior colleagues in both depth and breadth.",
+      "answer": 2,
+      "explanation": "라틴어 계열 비교급인 'superior'는 'than' 대신 'to'를 사용하며, 'more'를 붙이지 않습니다. 비교급을 강조하는 부사 far를 사용하여 'far superior to'가 가장 적절합니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-204",
+      "number": 204,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장을 최상급을 사용하지 않고 같은 의미로 바꾼 것은?",
+      "choices": [
+        "This project is more challenging than any our team has undertaken.",
+        "No other project our team has undertaken is as challenging as this one.",
+        "This project is more challenging than every project our team has undertaken.",
+        "Any project our team has undertaken was not so challenging as this one.",
+        "This project is the more challenging than all others our team has undertaken."
+      ],
+      "stem": "This is the most challenging project our team has ever undertaken.",
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "최상급은 '부정주어 + as 원급 as' 구문으로 전환할 수 있습니다. \"우리 팀이 맡았던 다른 어떤 프로젝트도 이것만큼 어렵지는 않다\"는 의미로 최상급의 의미를 전달합니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-205",
+      "number": 205,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장의 의미를 가장 정확하게 파악한 것은?",
+      "choices": [
+        "그의 설명은 아이의 변명보다 설득력이 있다.",
+        "그의 설명은 아이의 변명만큼 설득력이 없다.",
+        "그의 설명과 아이의 변명 모두 설득력이 없다.",
+        "그의 설명은 아이의 변명보다 설득력이 떨어진다.",
+        "그의 설명은 아이의 변명과는 다르게 설득력이 있다."
+      ],
+      "stem": "His explanation is no more convincing than a child's excuse is.",
+      "choiceLayout": "single-column",
+      "answer": 3,
+      "explanation": "'A is no more B than C is D' 구문은 'A가 B가 아닌 것은 C가 D가 아닌 것과 같다'는 의미의 양자 부정입니다. 즉, 그의 설명과 아이의 변명 둘 다 설득력이 없다는 의미입니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-206",
+      "number": 206,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장의 빈칸에 들어갈 가장 적절한 것은? (참가자 수가 '놀라울 정도로 많음'을 강조)",
+      "choices": [
+        "no more than",
+        "not more than",
+        "no less than",
+        "not less than",
+        "no fewer than"
+      ],
+      "stem": "The conference attracted _______ five hundred participants from around the world.",
+      "answer": 3,
+      "explanation": "no less than은 '자그마치 ~씩이나'라는 의미로, 수가 많음에 대한 화자의 놀라움을 나타냅니다. 문맥상 500명이나 되는 많은 참가자가 모였다는 긍정적 놀라움을 표현하는 것이 자연스럽습니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-207",
+      "number": 207,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 올바르게 고친 것은?",
+      "choices": [
+        "the more important statistical expertise becomes",
+        "the more important becomes statistical expertise",
+        "the more statistical expertise becomes important",
+        "the more important is statistical expertise",
+        "the more important statistical expertise is"
+      ],
+      "stem": "The more complex the data analysis becomes, <u>the more becomes important statistical expertise</u>.",
+      "choiceLayout": "single-column",
+      "answer": 1,
+      "explanation": "'The 비교급, the 비교급' 구문에서 'the 비교급' 뒤에는 주어+동사의 정상 어순이 와야 합니다. 따라서 'the more important statistical expertise becomes'가 올바른 어순입니다. ②처럼 주어와 동사가 도치되는 경우는 주어가 매우 길거나 동사가 be동사일 때 제한적으로 나타납니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-208",
+      "number": 208,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "three times as fast as",
+        "three times as faster as",
+        "three times more faster than",
+        "three times so fast as",
+        "three times very fast than"
+      ],
+      "stem": "This smartphone processes data _______ the previous model.",
+      "answer": 1,
+      "explanation": "배수사 비교는 '배수사 + as + 원급 + as' 형태로 나타냅니다. 따라서 'three times as fast as'가 올바른 형태입니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-209",
+      "number": 209,
+      "type": "error-identification",
+      "instruction": "다음 중 어법상 틀린 문장은?",
+      "choices": [
+        "The new methodology is far more efficient than we anticipated.",
+        "This approach is vastly inferior to traditional methods.",
+        "Her performance was much better than his was.",
+        "The results are very more significant than previous studies.",
+        "The analysis proved even more detailed than expected."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 4,
+      "explanation": "very는 원급을 수식하며, 비교급(more significant)을 수식할 수 없습니다. 'much more significant'나 'far more significant' 등으로 고쳐야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-210",
+      "number": 210,
+      "type": "paraphrase",
+      "instruction": "다음 문장의 의미와 가장 가까운 것은?",
+      "choices": [
+        "그녀는 유명한 교수보다 덜 똑똑하다.",
+        "그녀는 유명한 교수만큼 똑똑하지 않다.",
+        "그녀는 유명한 교수만큼 똑똑하다.",
+        "그녀는 유명한 교수보다 더 똑똑하다.",
+        "그녀와 유명한 교수 모두 똑똑하지 않다."
+      ],
+      "stem": "She is no less intelligent than her renowned professor.",
+      "choiceLayout": "single-column",
+      "answer": 3,
+      "explanation": "'A is no less B than C is' 구문은 'A가 B인 것은 C가 B인 것과 마찬가지다'라는 의미의 양자 긍정입니다. 즉, 그녀와 교수 둘 다 똑똑하다는 의미입니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-211",
+      "number": 211,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 밑줄 친 부분을 올바르게 고친 것은?",
+      "choices": [
+        "to learn grammar rules",
+        "learning of grammar rules",
+        "learn grammar rules",
+        "learned grammar rules",
+        "grammar rules learning"
+      ],
+      "stem": "To master a foreign language requires more dedication than <u>learning grammar rules</u>.",
+      "answer": 1,
+      "explanation": "비교 구문에서는 비교되는 대상의 문법적 형태가 동일해야 합니다(병렬 구조). 주어인 'To master a foreign language'(to부정사구)와 비교되므로, 'than' 뒤에도 동일한 형태인 to learn grammar rules가 와야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-212",
+      "number": 212,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은? (수량의 상한선을 객관적으로 전달)",
+      "choices": [
+        "no more than",
+        "not more than",
+        "no less than",
+        "not less than",
+        "no fewer than"
+      ],
+      "stem": "The committee decided that applicants should submit _______ ten pages for their research proposal.",
+      "answer": 2,
+      "explanation": "not more than은 '많아봐야, 기껏해야'라는 의미로, 수량의 상한선을 객관적으로 명시하는 규정을 나타낼 때 사용됩니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-213",
+      "number": 213,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 문법적으로 올바른 문장은?",
+      "choices": [
+        "This building is twice as taller as the old one.",
+        "This building is twice the height of the old one.",
+        "This building is twice more tall than the old one.",
+        "This building is twice so tall as the old one.",
+        "This building is twice very tall than the old one."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "배수사 비교의 또 다른 형태인 '배수사 + the + 명사 + of' 구문이 올바르게 사용되었습니다. ① 'as 원급 as' 구문에는 비교급(taller)이 올 수 없습니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-214",
+      "number": 214,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장을 완성하는 가장 적절한 것은?",
+      "choices": [
+        "the more difficult it becomes to understand",
+        "the more it becomes difficult to understand",
+        "the more becomes difficult it to understand",
+        "the more difficult to understand it becomes",
+        "the more it difficult becomes to understand"
+      ],
+      "stem": "The more sophisticated the technology becomes, _______.",
+      "choiceLayout": "single-column",
+      "answer": 1,
+      "explanation": "'The 비교급, the 비교급' 구문에서 'the more difficult'라는 보어가 앞으로 나간 후, 뒤에는 '주어(it) + 동사(becomes) + 진목적어(to understand)'의 정상 어순이 와야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-215",
+      "number": 215,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장에서 비교 대상의 논리적 일치를 위해 수정해야 할 부분은?",
+      "choices": [
+        "public schools have",
+        "that of public schools",
+        "those in public schools",
+        "public schools' performance",
+        "what public schools achieve"
+      ],
+      "stem": "The academic performance of students in private schools is generally better than <u>public schools</u>.",
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "'사립학교 학생들의 학업 성취도'와 '공립학교'를 비교하는 것은 비논리적입니다. '공립학교 학생들의 학업 성취도'와 비교해야 합니다. 단수인 'The academic performance'를 대신하는 that을 사용하여 'that of public schools'로 고쳐야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-216",
+      "number": 216,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은? (수상 개수가 '놀라울 정도로 많음'을 강조)",
+      "choices": [
+        "no more than",
+        "not more than",
+        "no less than",
+        "not less than",
+        "no fewer than"
+      ],
+      "stem": "His new novel received _______ twelve prestigious literary awards this year.",
+      "answer": 3,
+      "explanation": "no less than은 '자그마치 ~씩이나'라는 의미로, 12개나 되는 많은 상을 받았다는 놀라움을 표현하는 데 가장 적절합니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-217",
+      "number": 217,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 'superior'의 용법이 올바른 문장은?",
+      "choices": [
+        "This product is more superior than its competitors.",
+        "This product is superior than its competitors.",
+        "This product is superior to its competitors.",
+        "This product is very superior than its competitors.",
+        "This product is much superior than its competitors."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 3,
+      "explanation": "라틴어 계열 비교급 'superior'는 'than' 대신 전치사 to를 사용하며, 'more'를 붙이지 않습니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-218",
+      "number": 218,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장의 의미를 가장 정확하게 파악한 것은?",
+      "choices": [
+        "몰입을 통한 언어 학습이 문법책 공부보다 효과적이다.",
+        "몰입을 통한 언어 학습이 문법책 공부만큼 효과적이지 않다.",
+        "몰입을 통한 언어 학습과 문법책 공부 모두 효과적이지 않다.",
+        "몰입을 통한 언어 학습이 문법책 공부보다 덜 효과적이다.",
+        "몰입을 통한 언어 학습은 문법책 공부와 다르게 효과적이다."
+      ],
+      "stem": "Learning a language through immersion is no more effective than studying grammar books is.",
+      "choiceLayout": "single-column",
+      "answer": 3,
+      "explanation": "'A is no more B than C is' 구문은 양자 부정입니다. 즉, 몰입 학습과 문법책 공부 둘 다 효과적이지 않다는 의미를 전달합니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-219",
+      "number": 219,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾은 것은?",
+      "choices": [
+        "implementing",
+        "new procedures",
+        "even more challenging",
+        "to design",
+        "어법상 틀린 부분이 없다"
+      ],
+      "stem": "The research team discovered that implementing new procedures was even more challenging than <u>to design</u> them.",
+      "answer": 4,
+      "explanation": "병렬 구조의 원칙에 따라, 비교 대상인 'implementing new procedures'(동명사구)와 동일한 형태가 와야 합니다. 따라서 'to design'을 designing으로 고쳐야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-220",
+      "number": 220,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "much",
+        "very",
+        "even",
+        "quite",
+        "too"
+      ],
+      "stem": "This new software runs _______ three times faster than the previous version.",
+      "answer": 3,
+      "explanation": "'three times faster'라는 비교급 표현을 강조하는 부사로는 even이 적절합니다. 'much'나 'far'도 가능하지만, 배수사와 함께 쓰일 때는 'even'이 자연스럽게 강조의 의미를 더합니다. 'very'는 비교급을 수식할 수 없습니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-221",
+      "number": 221,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 최상급의 의미를 올바르게 변환한 문장은?",
+      "choices": [
+        "Mount Everest is higher than any mountain in the world.",
+        "Mount Everest is higher than any other mountain in the world.",
+        "Mount Everest is higher than every mountain in the world.",
+        "No mountain in the world is higher than Mount Everest.",
+        "Any mountain in the world is not so high as Mount Everest."
+      ],
+      "stem": "Mount Everest is the highest mountain in the world.",
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "최상급은 '비교급 + than any other + 단수명사'로 전환할 수 있습니다. ①, ③처럼 'other'가 없으면 에베레스트 산 자신을 포함하여 비교하는 논리적 오류가 발생합니다. ④, ⑤도 의미는 통하지만 ②가 가장 정석적인 변환입니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-222",
+      "number": 222,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장의 빈칸에 들어갈 가장 적절한 것은? (수량의 하한선을 객관적으로 전달)",
+      "choices": [
+        "no more than",
+        "not more than",
+        "no less than",
+        "not less than",
+        "no fewer than"
+      ],
+      "stem": "The manuscript requires _______ fifty pages to meet publication standards.",
+      "answer": 4,
+      "explanation": "not less than은 '적어도'(=at least)라는 의미로, 수량의 하한선을 객관적으로 명시하는 규정을 나타낼 때 사용됩니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-223",
+      "number": 223,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 밑줄 친 부분의 의미를 가장 잘 나타낸 것은?",
+      "choices": [
+        "이번 분기 이익이 지난 분기 손실과 같다",
+        "이번 분기 이익이 지난 분기 손실보다 많다",
+        "이번 분기 이익과 지난 분기 손실 모두 미미하다",
+        "이번 분기 이익이 지난 분기 손실보다 적다",
+        "이번 분기 이익이 지난 분기 손실만큼 적다"
+      ],
+      "stem": "The company's profits this quarter were no more than last quarter's losses.",
+      "choiceLayout": "single-column",
+      "answer": 5,
+      "explanation": "'A is no more than B'는 'A는 기껏해야 B에 불과하다'는 의미입니다. 즉, 이번 분기 이익이 지난 분기 손실액만큼이나 적은 액수라는 부정적인 뉘앙스를 전달합니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-224",
+      "number": 224,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "The more / the more",
+        "The most / the most",
+        "More / more",
+        "The more / more",
+        "More / the more"
+      ],
+      "stem": "_______ comprehensive the database becomes, _______ accurate the research results will be.",
+      "answer": 1,
+      "explanation": "'~하면 할수록, 더욱더 ~하다'는 의미의 'The 비교급, the 비교급' 구문입니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-225",
+      "number": 225,
+      "type": "correct-usage",
+      "instruction": "다음 중 어법상 올바른 문장은?",
+      "choices": [
+        "This theory is much more superior to previous ones.",
+        "This theory is far superior to previous ones.",
+        "This theory is very superior than previous ones.",
+        "This theory is more superior than previous ones.",
+        "This theory is so superior than previous ones."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "'superior'는 라틴어 계열 비교급으로 'more'를 붙이지 않고 'to'와 함께 씁니다. 비교급 강조 부사인 far를 사용하여 'far superior to'로 표현할 수 있습니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-226",
+      "number": 226,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장에서 비교 구문의 오류를 올바르게 수정한 것은?",
+      "choices": [
+        "more significant than that on adults",
+        "more significant than on adults",
+        "more significant than adults have",
+        "more significant than adults'",
+        "more significant than what adults experience"
+      ],
+      "stem": "The impact of social media on teenagers is more significant than <u>adults</u>.",
+      "choiceLayout": "single-column",
+      "answer": 1,
+      "explanation": "'십대들에 대한 소셜 미디어의 영향'과 '성인들'을 비교하는 것은 비논리적입니다. '성인들에 대한 영향'과 비교해야 합니다. 단수인 'The impact'를 대신하는 that을 사용하여 'that on adults'로 고쳐야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-227",
+      "number": 227,
+      "type": "paraphrase",
+      "instruction": "다음 문장의 의미와 가장 가까운 것은?",
+      "choices": [
+        "이 문제는 이전 문제보다 덜 복잡하다.",
+        "이 문제는 이전 문제만큼 복잡하지 않다.",
+        "이 문제는 이전 문제만큼 복잡하다.",
+        "이 문제는 이전 문제보다 더 복잡하다.",
+        "이 문제와 이전 문제 모두 복잡하지 않다."
+      ],
+      "stem": "This problem is no less complex than the previous one was.",
+      "choiceLayout": "single-column",
+      "answer": 3,
+      "explanation": "'A is no less B than C is'는 양자 긍정 구문으로, 'A와 C 둘 다 B하다'는 의미입니다. 즉, 이 문제와 이전 문제 둘 다 복잡하다는 뜻입니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-228",
+      "number": 228,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "junior to",
+        "senior to",
+        "inferior to",
+        "superior to",
+        "prior to"
+      ],
+      "stem": "The new employee demonstrated skills that were _______ his colleagues with years of experience.",
+      "answer": 4,
+      "explanation": "문맥상 신입사원이 수년의 경력을 가진 동료들보다 '더 뛰어난' 기술을 보여주었다는 의미가 자연스러우므로 superior to가 정답입니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-229",
+      "number": 229,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 배수사 표현이 문법적으로 올바른 것은?",
+      "choices": [
+        "This room is twice as larger as mine.",
+        "This room is twice large as mine.",
+        "This room is twice the size of mine.",
+        "This room is twice more large than mine.",
+        "This room is twice so large as mine."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 3,
+      "explanation": "'배수사 + the + 명사(size, length 등) + of'는 올바른 배수사 표현입니다. ① 'as'와 'as' 사이에는 원급(large)이 와야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-230",
+      "number": 230,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾은 것은?",
+      "choices": [
+        "more precisely",
+        "measure",
+        "more becomes clear",
+        "underlying pattern",
+        "어법상 틀린 부분이 없다"
+      ],
+      "stem": "The more precisely scientists measure the data, <u>the more becomes clear the underlying pattern</u>.",
+      "answer": 3,
+      "explanation": "'The 비교급, the 비교급' 구문에서 보어(clear)가 앞으로 나갈 때 'the more clear'가 하나의 덩어리가 되어야 합니다. 따라서 'the more clear becomes the underlying pattern'으로 고쳐야 합니다. 주어가 길기 때문에 V+S 도치가 일어난 형태입니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-231",
+      "number": 231,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "much more groundbreaking than",
+        "very more groundbreaking than",
+        "too more groundbreaking than",
+        "so more groundbreaking than",
+        "quite more groundbreaking than"
+      ],
+      "stem": "The researcher's findings proved to be _______ conventional wisdom suggested.",
+      "choiceLayout": "single-column",
+      "answer": 1,
+      "explanation": "비교급(more groundbreaking)을 강조하는 부사 much가 올바르게 사용되었습니다. very, too, so, quite는 비교급을 수식할 수 없습니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-232",
+      "number": 232,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 밑줄 친 부분을 올바르게 고친 것은?",
+      "choices": [
+        "creating simple reports",
+        "create simple reports",
+        "creation of simple reports",
+        "simple reports creation",
+        "created simple reports"
+      ],
+      "stem": "Analyzing complex data sets is generally more time-consuming than <u>to create simple reports</u>.",
+      "answer": 1,
+      "explanation": "병렬 구조에 따라, 비교 대상인 'Analyzing complex data sets'(동명사구)와 동일한 형태인 creating simple reports가 와야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-233",
+      "number": 233,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장의 의미를 가장 정확하게 파악한 것은?",
+      "choices": [
+        "디지털 교과서가 전통적인 인쇄본보다 더 흥미롭다.",
+        "디지털 교과서가 전통적인 인쇄본만큼 흥미롭지 않다.",
+        "디지털 교과서와 전통적인 인쇄본 모두 흥미롭지 않다.",
+        "디지털 교과서가 전통적인 인쇄본보다 덜 흥미롭다.",
+        "디지털 교과서는 전통적인 인쇄본과 다르게 흥미롭다."
+      ],
+      "stem": "Digital textbooks are no more engaging than traditional printed books are.",
+      "choiceLayout": "single-column",
+      "answer": 3,
+      "explanation": "'A is no more B than C is'는 양자 부정 구문입니다. 즉, 디지털 교과서와 전통적인 인쇄본 둘 다 흥미롭지 않다는 의미입니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-234",
+      "number": 234,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은? (신청자 수가 '놀라울 정도로 많음'을 강조)",
+      "choices": [
+        "no more than",
+        "not more than",
+        "no less than",
+        "not less than",
+        "no fewer than"
+      ],
+      "stem": "The university received _______ two hundred applications for the prestigious scholarship program.",
+      "answer": 3,
+      "explanation": "no less than은 '자그마치 ~씩이나'라는 의미로, 명문 장학금 프로그램에 200개나 되는 많은 지원서가 접수되었다는 놀라움을 표현합니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-235",
+      "number": 235,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 최상급을 다른 형태로 올바르게 변환한 것은?",
+      "choices": [
+        "This method is more efficient than any available.",
+        "This method is more efficient than any other available.",
+        "No other available method is as efficient as this one.",
+        "Any other available method is not so efficient as this one.",
+        "This method is the more efficient than all others available."
+      ],
+      "stem": "This is the most efficient method available.",
+      "choiceLayout": "single-column",
+      "answer": 3,
+      "explanation": "최상급은 '부정주어 + as 원급 as' 구문으로 전환할 수 있습니다. \"이용 가능한 다른 어떤 방법도 이것만큼 효율적이지 않다\"는 의미로 최상급의 의미를 전달합니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-236",
+      "number": 236,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 말로 어법상 가장 알맞은 것은?",
+      "choices": [
+        "more early",
+        "earliest",
+        "earlier",
+        "early",
+        "more earlier"
+      ],
+      "stem": "The project deadline is much _______ than we initially planned.",
+      "choiceLayout": "single-column",
+      "answer": 3,
+      "explanation": "빈칸 앞에는 비교급을 강조하는 부사 much가 있고, 뒤에는 비교 대상이 오는 than이 있으므로 빈칸에는 비교급 형태가 들어가야 합니다.\n                            'early'와 같이 -y로 끝나는 2음절 형용사는 y를 i로 바꾸고 -er를 붙여 비교급을 만듭니다. 따라서 ③ earlier가 문법적으로 올바른 형태입니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-237",
+      "number": 237,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "The more / the greater are",
+        "The most / the greatest are",
+        "More / greater are",
+        "The more / the greater",
+        "More / the greater are"
+      ],
+      "stem": "_______ advanced the artificial intelligence becomes, _______ concerns about job displacement.",
+      "answer": 1,
+      "explanation": "'The 비교급, the 비교급' 구문입니다. 두 번째 절에서 주어(concerns about job displacement)가 길기 때문에 보어(the greater)가 앞으로 나가고 동사(are)와 주어가 도치된 형태입니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-238",
+      "number": 238,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장에서 비교 대상의 논리적 일치를 위해 수정이 필요한 부분은?",
+      "choices": [
+        "that of vegetables from conventional farming methods",
+        "vegetables from conventional farming methods",
+        "conventional farming methods produce",
+        "what conventional farming methods provide",
+        "conventionally farmed vegetables"
+      ],
+      "stem": "The nutritional value of organic vegetables is often higher than <u>conventional farming methods</u>.",
+      "choiceLayout": "single-column",
+      "answer": 1,
+      "explanation": "'유기농 채소의 영양가'와 '전통적인 농업 방식'을 비교하는 것은 비논리적입니다. '전통적인 농업 방식으로 재배된 채소의 영양가'와 비교해야 합니다. 단수인 'The nutritional value'를 대신하는 that을 사용하여 'that of vegetables from...'으로 고쳐야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-239",
+      "number": 239,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 'inferior'의 용법이 올바른 문장은?",
+      "choices": [
+        "This product is more inferior to its competitors.",
+        "This product is inferior than its competitors.",
+        "This product is inferior to its competitors.",
+        "This product is very inferior than its competitors.",
+        "This product is much inferior than its competitors."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 3,
+      "explanation": "라틴어 계열 비교급 'inferior'는 'than' 대신 전치사 to를 사용하며, 'more'를 붙이지 않습니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-240",
+      "number": 240,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장의 빈칸에 들어갈 가장 적절한 것은? (수량의 하한선을 객관적으로 전달)",
+      "choices": [
+        "no more than",
+        "not more than",
+        "no less than",
+        "not less than",
+        "no fewer than"
+      ],
+      "stem": "The research paper must contain _______ fifteen scholarly references to meet academic standards.",
+      "answer": 4,
+      "explanation": "not less than은 '적어도'(=at least)라는 의미로, 학술 기준을 충족하기 위한 참고문헌의 최소 개수를 객관적으로 명시하는 데 사용됩니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-241",
+      "number": 241,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 올바르게 고친 것은?",
+      "choices": [
+        "the more likely they are to succeed",
+        "the more they likely are to succeed",
+        "the more are they likely to succeed",
+        "the more likely are they to succeed",
+        "수정이 필요하지 않다"
+      ],
+      "stem": "The more thoroughly students prepare for the exam, <u>the more they are likely to succeed</u>.",
+      "choiceLayout": "single-column",
+      "answer": 1,
+      "explanation": "'The 비교급, the 비교급' 구문에서 'the more likely'가 하나의 의미 덩어리로 문두에 위치하고, 그 뒤에 주어+동사(they are)가 정상 어순으로 와야 합니다. 밑줄 친 부분은 이미 올바른 형태입니다. (문제 수정: ⑤가 정답)"
+    },
+    {
+      "id": "grammar-bridge-ch05-242",
+      "number": 242,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 배수사 표현이 문법적으로 올바른 것은?",
+      "choices": [
+        "The new processor is three times as faster as the old one.",
+        "The new processor is three times faster than the old one.",
+        "The new processor is three times more faster than the old one.",
+        "The new processor is three times so fast as the old one.",
+        "The new processor is three times very fast than the old one."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "배수사 비교는 '배수사 + 비교급 + than' 형태로도 나타낼 수 있습니다. 따라서 'three times faster than'이 올바른 형태입니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-243",
+      "number": 243,
+      "type": "paraphrase",
+      "instruction": "다음 문장의 의미와 가장 가까운 것은?",
+      "choices": [
+        "전통적인 교수법이 현대 기술 기반 접근법보다 덜 효과적이다.",
+        "전통적인 교수법이 현대 기술 기반 접근법만큼 효과적이지 않다.",
+        "전통적인 교수법이 현대 기술 기반 접근법만큼 효과적이다.",
+        "전통적인 교수법이 현대 기술 기반 접근법보다 더 효과적이다.",
+        "전통적인 교수법과 현대 기술 기반 접근법 모두 효과적이지 않다."
+      ],
+      "stem": "Traditional teaching methods are no less effective than modern technology-based approaches.",
+      "choiceLayout": "single-column",
+      "answer": 3,
+      "explanation": "'A is no less B than C is'는 양자 긍정 구문으로, 'A와 C 둘 다 B하다'는 의미입니다. 즉, 전통적인 방법과 현대적인 방법 둘 다 효과적이라는 뜻입니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-244",
+      "number": 244,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "much superior to",
+        "very superior than",
+        "more superior to",
+        "too superior than",
+        "so superior than"
+      ],
+      "stem": "The young scientist's research methodology proved _______ that of senior researchers in its innovation.",
+      "answer": 1,
+      "explanation": "'superior to'라는 라틴어 계열 비교급을 강조하는 부사로는 much가 적절합니다. 'very'는 사용할 수 없으며, 'more'는 중복입니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-245",
+      "number": 245,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 밑줄 친 부분을 올바르게 고친 것은?",
+      "choices": [
+        "memorizing formulas",
+        "memorize formulas",
+        "memorization of formulas",
+        "formula memorization",
+        "memorized formulas"
+      ],
+      "stem": "Understanding advanced mathematics requires more logical thinking than <u>to memorize formulas</u>.",
+      "answer": 1,
+      "explanation": "병렬 구조에 따라, 비교 대상인 'Understanding advanced mathematics'(동명사구)와 동일한 형태인 memorizing formulas가 와야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-246",
+      "number": 246,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장의 의미를 가장 정확하게 파악한 것은?",
+      "choices": [
+        "온라인 교육이 텔레비전 시청보다 더 개인적이다.",
+        "온라인 교육이 텔레비전 시청만큼 개인적이지 않다.",
+        "온라인 교육과 텔레비전 시청 모두 개인적이지 않다.",
+        "온라인 교육이 텔레비전 시청보다 덜 개인적이다.",
+        "온라인 교육은 텔레비전 시청과 다르게 개인적이다."
+      ],
+      "stem": "Online education is no more personal than watching television is.",
+      "choiceLayout": "single-column",
+      "answer": 3,
+      "explanation": "'A is no more B than C is'는 양자 부정 구문입니다. 즉, 온라인 교육과 TV 시청 둘 다 개인적이지 않다는(비인격적이라는) 의미입니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-247",
+      "number": 247,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은? (수량의 하한선을 객관적으로 전달)",
+      "choices": [
+        "no more than",
+        "not more than",
+        "no less than",
+        "not less than",
+        "no fewer than"
+      ],
+      "stem": "The survey indicates that students should spend _______ two hours daily on independent study.",
+      "answer": 4,
+      "explanation": "not less than은 '적어도'(=at least)라는 의미로, 독립적인 학습 시간의 최소 요구량을 객관적으로 전달하는 데 적절합니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-248",
+      "number": 248,
+      "type": "correct-usage",
+      "instruction": "다음 중 어법상 올바른 문장은?",
+      "choices": [
+        "The more complex becomes the problem, the more creative solutions we need.",
+        "The more complex the problem becomes, the more creative solutions we need.",
+        "The more the problem becomes complex, the more creative solutions we need.",
+        "The more complex the problem becomes, the more we need creative solutions.",
+        "The more complex the problem becomes, more creative solutions we need."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "'The 비교급, the 비교급' 구문에서 'The more complex'가 앞으로 나간 후, 주어(the problem)와 동사(becomes)가 정상 어순으로 와야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-249",
+      "number": 249,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장에서 비교 구문의 오류를 올바르게 수정한 것은?",
+      "choices": [
+        "more competitive than that of fossil fuels",
+        "more competitive than fossil fuels are",
+        "more competitive than fossil fuels have",
+        "more competitive than what fossil fuels provide",
+        "more competitive than fossil fuels'"
+      ],
+      "stem": "The efficiency of renewable energy sources is becoming more competitive than <u>fossil fuels</u>.",
+      "choiceLayout": "single-column",
+      "answer": 1,
+      "explanation": "'재생 에너지원의 효율성'과 '화석 연료'를 비교하는 것은 비논리적입니다. '화석 연료의 효율성'과 비교해야 합니다. 단수인 'The efficiency'를 대신하는 that을 사용하여 'that of fossil fuels'로 고쳐야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch05-250",
+      "number": 250,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장의 빈칸에 들어갈 가장 적절한 것은? (기관의 수가 '놀라울 정도로 많음'을 강조)",
+      "choices": [
+        "no more than",
+        "not more than",
+        "no less than",
+        "not less than",
+        "no fewer than"
+      ],
+      "stem": "The groundbreaking research attracted _______ fifty collaborating institutions from around the globe.",
+      "answer": 3,
+      "explanation": "no less than은 '자그마치 ~씩이나'라는 의미로, 50개나 되는 많은 기관이 협력했다는 놀라움을 표현하는 데 가장 적절합니다."
+    }
+  ]
+}

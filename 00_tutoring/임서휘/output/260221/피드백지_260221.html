@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>학습 피드백지 — 임서휘 260221</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+
+  /* =============================================================
+     피드백지 공통 CSS v1.0 — 파스텔 하늘색 팔레트
+     참조: 06_reference/guideline/feedback_guideline.md
+     ============================================================= */
+
+  /* ===== RESET & BASE ===== */
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html {
+    font-size: 10pt;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 10pt;
+    line-height: 1.7;
+    color: #1a202c;
+    background: #fff !important;
+  }
+
+  @page { size: A4; margin: 16mm 14mm; }
+
+  /* ===== PAGE BREAK ===== */
+  .page-break-after { page-break-after: always !important; }
+  .page-break-before { page-break-before: always !important; }
+  .avoid-break { page-break-inside: avoid !important; }
+  h1, h2, h3, h4 { page-break-after: avoid !important; }
+  table { page-break-inside: avoid !important; }
+
+  /* ===== HEADINGS ===== */
+  h1 {
+    font-size: 20pt; font-weight: 700; color: #4A90C4 !important;
+    margin: 20px 0 10px 0; padding-bottom: 6px;
+    border-bottom: 3px solid #4A90C4; line-height: 1.3;
+  }
+  h2 {
+    font-size: 16pt; font-weight: 700; color: #5BA3D9 !important;
+    margin: 18px 0 10px 0; padding-bottom: 4px;
+    border-bottom: 2px solid #D4E5F3; line-height: 1.3;
+  }
+  h3 {
+    font-size: 13pt; font-weight: 700; color: #2d3748 !important;
+    margin: 14px 0 8px 0; line-height: 1.4;
+  }
+  h4 {
+    font-size: 11pt; font-weight: 700; color: #4a5568 !important;
+    margin: 10px 0 6px 0; line-height: 1.4;
+  }
+  p { margin-bottom: 8px; }
+  strong { font-weight: 700; }
+  hr { border: none; border-top: 1px solid #D4E5F3; margin: 20px 0; }
+
+  /* ===== TABLES ===== */
+  table {
+    width: 100%; border-collapse: collapse;
+    margin: 12px 0 16px 0; font-size: 9pt; line-height: 1.6;
+  }
+  thead th {
+    background-color: #7BB8E8 !important; color: #fff !important;
+    font-weight: 700; padding: 8px 10px; text-align: left;
+    border: 1px solid #6AABDE; font-size: 9pt;
+  }
+  tbody td {
+    padding: 7px 10px; border: 1px solid #D4E5F3; vertical-align: top;
+  }
+  tbody tr:nth-child(odd) { background-color: #fff !important; }
+  tbody tr:nth-child(even) { background-color: #F4F9FD !important; }
+  tbody td:first-child { font-weight: 500; }
+
+  .result-correct { color: #38a169 !important; font-weight: 700; }
+  .result-wrong { color: #e53e3e !important; font-weight: 700; }
+
+  /* ===== REPORT HEADER (첫 페이지) ===== */
+  .report-header { margin-bottom: 16px; }
+  .report-date { font-size: 10pt; color: #718096 !important; font-weight: 400; margin-bottom: 4px; }
+  .report-title {
+    font-size: 22pt; font-weight: 700; color: #4A90C4 !important;
+    margin-bottom: 6px; line-height: 1.2; border: none; padding: 0;
+  }
+  .report-subtitle { font-size: 12pt; font-weight: 400; color: #4a5568 !important; margin-bottom: 2px; }
+  .report-meta { font-size: 9pt; color: #718096 !important; line-height: 1.8; margin-top: 8px; }
+  .report-meta span { display: inline-block; margin-right: 16px; }
+
+  /* ===== SECTION HEADER BAR ===== */
+  .section-header {
+    background-color: #5BA3D9 !important; color: #fff !important;
+    padding: 12px 20px; margin: 20px -14mm 14px -14mm;
+    padding-left: 14mm; padding-right: 14mm;
+    font-size: 16pt; font-weight: 700; line-height: 1.3;
+  }
+  .section-header .section-num {
+    font-size: 12pt; font-weight: 300; display: block;
+    margin-bottom: 2px; color: #C5DFEF !important;
+  }
+
+  /* ===== SEVERITY BADGES ===== */
+  .severity-high {
+    display: inline-block; background-color: #e53e3e !important; color: #fff !important;
+    font-size: 8pt; font-weight: 700; padding: 1px 8px; border-radius: 10px;
+  }
+  .severity-mid {
+    display: inline-block; background-color: #ed8936 !important; color: #fff !important;
+    font-size: 8pt; font-weight: 700; padding: 1px 8px; border-radius: 10px;
+  }
+  .severity-low {
+    display: inline-block; background-color: #38a169 !important; color: #fff !important;
+    font-size: 8pt; font-weight: 700; padding: 1px 8px; border-radius: 10px;
+  }
+
+  /* ===== DIAGNOSIS CARD (학습 요약) ===== */
+  .diagnosis-card {
+    border: 2px solid #B8D4EC; border-radius: 6px;
+    padding: 14px 18px; margin: 14px 0; background-color: #F4F9FD !important;
+  }
+  .diagnosis-card h3 { margin-top: 0; color: #4A90C4 !important; font-size: 12pt; }
+  .priority-order {
+    background-color: #EDF5FC !important; border-left: 4px solid #7BB8E8;
+    padding: 10px 16px; margin: 12px 0; font-size: 10pt;
+  }
+
+  /* ===== QUESTION BOX ===== */
+  .question-box {
+    background-color: #F4F9FD !important; border-left: 4px solid #7BB8E8;
+    padding: 10px 14px; margin: 8px 0; font-size: 10pt; line-height: 1.7;
+  }
+  .question-box p { margin: 0; }
+
+  /* ===== ANSWER BOX ===== */
+  .answer-box {
+    background-color: #f0fff4 !important; border-left: 4px solid #38a169;
+    padding: 8px 14px; margin: 8px 0; font-weight: 500;
+  }
+
+  /* ===== GRAMMAR BLOCK ===== */
+  .grammar-block {
+    background-color: #edf2f7 !important; border: 1px solid #D4E5F3;
+    padding: 12px 16px; margin: 12px 0;
+    font-size: 9pt; line-height: 1.8; white-space: pre-wrap;
+    page-break-inside: avoid !important;
+  }
+
+  /* ===== TIP BOX ===== */
+  .tip-box {
+    background-color: #fffaf0 !important; border-left: 4px solid #ed8936;
+    padding: 10px 16px; margin: 12px 0; page-break-inside: avoid !important;
+  }
+  .tip-box .tip-label {
+    font-weight: 700; color: #c05621 !important; font-size: 9pt;
+    display: block; margin-bottom: 4px;
+  }
+
+  /* ===== WARNING BOX ===== */
+  .warning-box {
+    background-color: #fff5f5 !important; border-left: 4px solid #e53e3e;
+    padding: 10px 16px; margin: 12px 0; page-break-inside: avoid !important;
+  }
+  .warning-box .warning-label {
+    font-weight: 700; color: #e53e3e !important; font-size: 9pt;
+    display: block; margin-bottom: 4px;
+  }
+
+  /* ===== CONCEPT BOX ===== */
+  .concept-box {
+    background-color: #EDF5FC !important; border: 1px solid #7BB8E8;
+    padding: 12px 16px; margin: 12px 0; page-break-inside: avoid !important;
+  }
+  .concept-box .concept-label {
+    font-weight: 700; color: #4A90C4 !important; font-size: 9pt;
+    display: block; margin-bottom: 6px;
+  }
+
+  /* ===== PROBLEM CARD ===== */
+  .problem-card {
+    border: 1px solid #D4E5F3; border-radius: 4px;
+    padding: 14px 18px; margin: 14px 0;
+    page-break-inside: avoid !important; background-color: #fff !important;
+  }
+  .problem-header {
+    display: flex; align-items: center; margin-bottom: 14px; gap: 12px;
+  }
+  .problem-badge {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 36px; height: 36px; border-radius: 50%;
+    background-color: #7BB8E8 !important; color: #fff !important;
+    font-weight: 700; font-size: 12pt; flex-shrink: 0;
+  }
+  .problem-title {
+    font-size: 11pt; font-weight: 700; color: #2d3748 !important;
+  }
+  .problem-source {
+    font-size: 8pt; color: #718096 !important; font-weight: 400;
+    display: block; margin-top: 2px;
+  }
+
+  /* ===== HIGHLIGHT ===== */
+  .hl-key { color: #4A90C4 !important; font-weight: 700; }
+  .hl-wrong { color: #e53e3e !important; font-weight: 700; text-decoration: line-through; }
+  .hl-correct { color: #38a169 !important; font-weight: 700; }
+  .hl-blue { color: #5BA3D9 !important; font-weight: 700; }
+
+  /* ===== FLOWCHART ===== */
+  .flowchart { margin: 16px 0; page-break-inside: avoid !important; }
+  .flow-step {
+    background-color: #EDF5FC !important; border: 1px solid #B8D4EC;
+    border-radius: 4px; padding: 10px 16px; margin-bottom: 4px; font-size: 9.5pt;
+  }
+  .flow-step .step-label { font-weight: 700; color: #4A90C4 !important; margin-right: 8px; }
+  .flow-step .step-sub {
+    padding-left: 24px; font-size: 9pt; color: #4a5568 !important;
+    margin-top: 4px; line-height: 1.7;
+  }
+  .flow-arrow { text-align: center; font-size: 14pt; color: #7BB8E8 !important; line-height: 1.2; margin: 2px 0; }
+
+  /* ===== CHECKLIST ===== */
+  .checklist-group { margin-bottom: 16px; page-break-inside: avoid !important; }
+  .checklist-group-title {
+    font-size: 11pt; font-weight: 700; color: #4A90C4 !important;
+    margin-bottom: 8px; padding: 4px 0; border-bottom: 1px solid #D4E5F3;
+  }
+  .checklist-item {
+    display: flex; align-items: flex-start; gap: 8px;
+    padding: 4px 0; font-size: 9.5pt; line-height: 1.6;
+  }
+  .checkbox {
+    display: inline-block; width: 14px; height: 14px; min-width: 14px;
+    border: 1.5px solid #a0aec0; border-radius: 2px; margin-top: 3px;
+  }
+
+  /* ===== SECTION DIVIDER ===== */
+  .section-divider { border: none; border-top: 2px solid #D4E5F3; margin: 20px 0; }
+
+  /* ===== VARIANT CHOICES ===== */
+  .variant-choices { padding-left: 20px; font-size: 9pt; line-height: 1.8; margin: 4px 0; }
+
+  /* ===== GROUP ROW ===== */
+  .group-row td {
+    background-color: #EDF5FC !important; font-weight: 700;
+    color: #4A90C4 !important; border-bottom: 2px solid #7BB8E8;
+  }
+
+  /* ===== COMPARE TABLE ===== */
+  .compare-table thead th:nth-child(2) { background-color: #6AABDE !important; }
+  .compare-table thead th:nth-child(3) { background-color: #38a169 !important; }
+
+  /* ===== EXPRESSION TABLE ===== */
+  .expression-table td:first-child { white-space: nowrap; font-weight: 700; }
+
+  /* ===== MARKER ===== */
+  .marker-o { color: #38a169 !important; font-weight: 700; }
+  .marker-x { color: #e53e3e !important; font-weight: 700; }
+
+  /* ===== PASSAGE BLOCK (독해 지문) ===== */
+  .passage-block {
+    background-color: #f7fafc !important; border: 1px solid #D4E5F3;
+    border-left: 4px solid #7BB8E8;
+    padding: 14px 18px; margin: 12px 0;
+    font-size: 9.5pt; line-height: 1.9;
+    text-align: justify !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* ===== CHOICES LIST ===== */
+  .choices-list {
+    margin: 10px 0; font-size: 9.5pt; line-height: 1.9;
+  }
+  .choices-list .choice-item {
+    padding: 2px 0;
+  }
+  .choice-correct {
+    color: #38a169 !important; font-weight: 700;
+  }
+  .choice-wrong {
+    color: #e53e3e !important; font-weight: 700; text-decoration: line-through;
+  }
+
+  /* ===== PRINT OPTIMIZATION ===== */
+  @media print {
+    body { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+    .section-header { margin-left: -14mm; margin-right: -14mm; padding-left: 14mm; padding-right: 14mm; }
+  }
+
+</style>
+</head>
+<body>
+
+<div class="report-header">
+  <div class="report-date">2026. 02. 21</div>
+  <h1 class="report-title" style="border:none; margin-bottom:6px;">학습 피드백지</h1>
+  <div class="report-subtitle">독해 — Vera's Flavor - PART 1</div>
+  <div class="report-meta">
+    <span><strong>학생</strong> 임서휘</span>
+    <span><strong>교재</strong> Vera's Flavor - PART 1</span>
+    <span><strong>범위</strong> 지문 76, 80</span>
+  </div>
+</div>
+
+<div class="diagnosis-card">
+  <h3>학습 요약</h3>
+  <p style="font-size:10pt; margin-bottom:8px;">
+    전체 6문제 중 오답 <strong>1문제</strong> (정답률 약 83%)
+  </p>
+  <p style="font-size:9.5pt; margin-bottom:4px;">
+    <strong style="color:#38a169;">잘한 점:</strong> 지문 76(ISS)을 3문항 모두 완벽하게 정답 처리하였고, 지문 80에서도 주제 파악(80-1)과 세부 내용(80-2)을 정확히 맞춤. 지문 위에 S/V/O/C 문장성분 분석을 꼼꼼히 표시하는 학습 습관이 우수하며, be PP(수동태) 등 문법 포인트까지 메모하는 적극적인 학습 태도가 돋보임.
+  </p>
+  <p style="font-size:9.5pt; margin-bottom:12px;">
+    <strong style="color:#e53e3e;">아쉬운 점:</strong> 80-3에서 지문이 '진정한 듣기는 ~이 아니다(not just)'라고 부정한 내용을 정의로 착각하여 오답 선택. 부정 표현(not just)을 놓치고 표면적 키워드에 이끌리는 패턴이 나타남.
+  </p>
+  
+  <table>
+    <thead>
+      <tr><th>취약 영역</th><th style="width:60px;">문제 수</th><th style="width:70px;">심각도</th><th>핵심</th></tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td><strong>부정 표현 오독</strong></td>
+        <td>1문제</td>
+        <td><span class="severity-mid">보통</span></td>
+        <td>'not just'를 놓치고 부정 대상을 정답으로 선택</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="priority-order">
+  <strong>학습 우선순위:</strong> 부정 표현(not just / not only) 정확히 읽기 → '~가 아니다' vs '~이다' 구분 → 담화 표지 주의
+</div>
+
+<div class="page-break-before section-header">
+  <span class="section-num">Section 1</span>
+  틀린 문제 리스트
+</div>
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">1</div>
+    <div>
+      <div class="problem-title">세부 내용 파악</div>
+      <span class="problem-source">80-3번</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>위 글에서 '진정한 듣기'란 무엇이라고 설명하는가?</p>
+  </div>
+  <div style="margin:8px 0; font-size:9.5pt;">
+    <span class="hl-wrong">학생 답: ②</span> &rarr;
+    <span class="hl-correct">정답: ②</span>
+  </div>
+</div>
+
+<div class="page-break-before section-header">
+  <span class="section-num">Section 2</span>
+  해설 파트
+</div>
+<h2>80-3번 — 세부 내용 파악</h2>
+<div class="passage-block">We often think that being a good conversationalist means being a good talker. But being a good listener is just as, if not more, important. True listening is not just waiting for your turn to speak. It's an active process. It means paying full attention to the other person. You should make eye contact and nod to show you are following along. Try to understand not just the words they are saying, but also the feelings behind them. Don't interrupt or start thinking about your reply while they are still talking. When you listen well, you make the other person feel respected and understood. This strengthens your relationships and helps you learn new things. It is a skill that can be improved with practice.</div>
+<div class="question-box" style="margin-top:12px;">
+  <p><strong>위 글에서 '진정한 듣기'란 무엇이라고 설명하는가?</strong></p>
+</div><div class="choices-list">
+  <div class="choice-item">① 말할 차례를 조용히 기다리는 것</div>
+  <div class="choice-item" class="choice-correct">② 상대방에게 온전히 집중하는 능동적인 과정</div>
+  <div class="choice-item">③ 상대방의 말에서 틀린 점을 찾아내는 것</div>
+  <div class="choice-item">④ 대화 중에 내 대답을 미리 생각하는 것</div>
+  <div class="choice-item">⑤ 고개를 계속 끄덕이는 것</div>
+</div>
+
+<div class="concept-box">
+  <h4>1. 한줄 요약</h4>
+  <p>좋은 대화상대가 되는 것은 말을 잘하는 것이 아니라, <strong>능동적으로 경청하는 기술</strong>이 더 중요하다는 글이다.</p>
+</div>
+
+<div class="grammar-block" style="text-align:justify; white-space:normal;">
+  <h4>2. 전체 해석 (Full Translation)</h4>
+  <p>우리는 종종 좋은 대화상대가 되는 것이 좋은 화자가 되는 것이라고 생각한다. 하지만 좋은 청자가 되는 것은 그만큼, 아니 더 중요하다. <strong>진정한 경청은 단지 자신이 말할 차례를 기다리는 것이 아니다.</strong> 그것은 능동적인 과정이다. 그것은 상대방에게 온전한 주의를 기울이는 것을 의미한다. 당신이 따라가고 있다는 것을 보여주기 위해 눈을 맞추고 고개를 끄덕여야 한다. 그들이 말하는 단어뿐만 아니라 그 뒤에 있는 감정도 이해하려고 노력하라. 그들이 아직 말하고 있는 동안 끼어들거나 답변을 생각하기 시작하지 마라. 잘 경청하면 상대방이 존중받고 이해받는다고 느끼게 만든다. 이것은 관계를 강화하고 새로운 것을 배우는 데 도움이 된다. 이것은 연습을 통해 향상될 수 있는 기술이다.</p>
+</div>
+
+<table>
+  <thead>
+    <tr><th>구분</th><th>표현 및 키워드</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>핵심 키워드</strong></td><td>conversationalist, listener, true listening, active process, full attention, eye contact, feelings, interrupt, practice</td></tr>
+    <tr><td><strong>정답 방향 (Positive)</strong></td><td>active process, paying full attention, understand the feelings, respected and understood — 능동적 집중·이해의 과정</td></tr>
+    <tr><td><strong>반대 방향 (Negative)</strong></td><td>not just waiting, Don't interrupt, Don't start thinking about your reply — 수동적 대기·자기중심적 행동은 진정한 경청이 아님</td></tr>
+  </tbody>
+</table>
+
+<div class="tip-box">
+  <h4>4. 구조 및 방향성</h4>
+  <p><span class="severity-low">통념 → 전환(But) → 부정 정의 → 긍정 정의 → 실천법 → 효과 → 결론</span></p>
+  <table>
+    <thead><tr><th>단계</th><th>문장</th><th>기능</th></tr></thead>
+    <tbody>
+      <tr><td>1문장</td><td>좋은 대화상대 = 좋은 화자라는 통념</td><td>통념 제시</td></tr>
+      <tr><td>2문장</td><td>But — 좋은 청자가 되는 것이 더 중요</td><td>전환 (반박)</td></tr>
+      <tr><td><strong>3문장</strong></td><td>진정한 경청 ≠ 말할 차례 기다리기</td><td><strong>부정 정의 — "not just"로 오해 차단</strong></td></tr>
+      <tr><td><strong>4-5문장</strong></td><td>능동적 과정 + 온전한 주의</td><td><strong>긍정 정의 — 정답(②)의 근거</strong></td></tr>
+      <tr><td>6-8문장</td><td>눈 맞춤, 감정 이해, 끼어들지 않기</td><td>구체적 실천법</td></tr>
+      <tr><td>9-10문장</td><td>존중/이해, 관계 강화, 새로운 배움</td><td>경청의 효과</td></tr>
+      <tr><td>11문장</td><td>연습으로 향상 가능한 기술</td><td>결론</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="answer-box">
+  <h4>✅ 정답: ② 상대방에게 온전히 집중하는 능동적인 과정</h4>
+  <p><strong>근거:</strong> "It's an <strong>active process</strong>. It means paying <strong>full attention</strong> to the other person."</p>
+  <p><strong>해석:</strong> 그것(진정한 경청)은 능동적인 과정이다. 그것은 상대방에게 온전한 주의를 기울이는 것을 의미한다.</p>
+  <p><strong>포인트:</strong> 3문장에서 "무엇이 아닌지"를 부정한 후, 4-5문장에서 "진짜 무엇인지"를 정의한다. ②는 이 긍정 정의(active process + full attention)를 정확히 요약한 선지이다.</p>
+</div>
+
+<div class="warning-box" style="border-left-color: #e53e3e !important;">
+  <h4>❌ 오답: ① 말할 차례를 조용히 기다리는 것 [학생 선택]</h4>
+  <p><strong>근거:</strong> "True listening is <strong>not just</strong> waiting for your turn to speak."</p>
+  <p><strong>해석:</strong> 진정한 경청은 단지 자신이 말할 차례를 기다리는 것이 <strong>아니다</strong>.</p>
+  <p><strong>포인트:</strong> 지문이 명시적으로 부정한 내용이다. "not just"는 "단지 ~이 아니다"라는 의미로, ①은 진정한 듣기의 정의가 아니라 지문이 거부한 진술이다.</p>
+</div>
+
+<div class="warning-box" style="border-left-color: #e53e3e !important;">
+  <h4>❌ 오답: ③ 상대방의 말에서 틀린 점을 찾아내는 것</h4>
+  <p><strong>근거:</strong> 지문에 "상대방의 말에서 틀린 점을 찾는다"는 언급이 전혀 없음.</p>
+  <p><strong>포인트:</strong> 오히려 지문은 "understand not just the words... but also the feelings behind them"으로 이해와 공감을 강조하고 있다.</p>
+</div>
+
+<div class="warning-box" style="border-left-color: #e53e3e !important;">
+  <h4>❌ 오답: ④ 대화 중에 내 대답을 미리 생각하는 것</h4>
+  <p><strong>근거:</strong> "Don't... start thinking about your reply while they are still talking."</p>
+  <p><strong>해석:</strong> 그들이 아직 말하고 있는 동안 답변을 생각하기 시작하지 마라.</p>
+  <p><strong>포인트:</strong> 지문이 명시적으로 "하지 마라"고 금지한 행동이다. ①과 마찬가지로 부정 표현에 주의해야 한다.</p>
+</div>
+
+<div class="warning-box" style="border-left-color: #e53e3e !important;">
+  <h4>❌ 오답: ⑤ 고개를 계속 끄덕이는 것</h4>
+  <p><strong>근거:</strong> "nod to show you are following along"은 경청의 한 가지 구체적 행동에 불과.</p>
+  <p><strong>포인트:</strong> 고개 끄덕임은 진정한 듣기의 여러 요소 중 하나이지, 전체를 정의하는 핵심이 아니다. "계속 끄덕이는 것"이라는 과장 표현도 지문과 다르다.</p>
+</div>
+
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>왜 이 답을 골랐을까:</strong> 3문장 &quot;True listening is not just waiting for your turn to speak&quot;에서 'not just'를 놓치고, 'waiting for your turn to speak' 부분만 읽어 이것이 진정한 듣기의 정의라고 착각한 것으로 보입니다. 지문에서 '진정한 듣기(true listening)'라는 키워드 바로 뒤에 나온 내용을 곧바로 정답으로 연결한 것입니다.</p>
+  <p><strong>오류 패턴:</strong> 부정 표현 누락 — 'not just X'에서 부정어(not)를 놓치고 X를 정답으로 선택. 키워드 근접성 함정(true listening 바로 뒤에 나온 내용을 무조건 정답으로 매칭)에 빠짐.</p>
+  <p><strong>집중 포인트:</strong> 'not just', 'not only', 'not merely' 같은 부정 표현이 나오면, 그 뒤의 내용은 '~이 아니다'라는 의미입니다. 이런 부정 표현을 발견하면 밑줄 + ✗ 표시를 해두는 습관을 들이세요. 특히 정의를 묻는 문제에서는 '부정 정의(≠)'와 '긍정 정의(=)'를 반드시 구분하세요.</p>
+</div>
+<hr class="section-divider">
+
+
+<div class="page-break-before section-header">
+  <span class="section-num">보충</span>
+  문법 보충 설명
+</div>
+<div class="concept-box">
+  <span class="concept-label">to부정사의 목적어 기능 — 추가 설명</span>
+  
+  <h4>1. 목적어 기능 (~하는 것을)</h4>
+  <p>목적어 자리에 쓰인 <strong>부정사(to V)</strong>와 <strong>동명사(V-ing)</strong>는 구별하는 것이 중요하다.</p>
+
+  <table>
+    <thead><tr><th>예문</th><th>해석</th><th>핵심 포인트</th></tr></thead>
+    <tbody>
+      <tr><td>I <strong>want to be</strong> like you.</td><td>나는 너처럼 되고 싶다.</td><td>want + to V (동명사 불가)</td></tr>
+      <tr><td>Don't be surprised if I <strong>pretend not to</strong> recognize you.</td><td>내가 너를 못 알아본 척 하더라도, 놀라지 말아라.</td><td>준동사 부정: <strong>not/never + to V</strong></td></tr>
+      <tr><td>You cannot <strong>afford to</strong> relax your concentration.</td><td>너는 잠시라도 정신 집중을 놓을 여유가 없다.</td><td>afford + to V</td></tr>
+      <tr><td>Scientists <strong>made it possible to</strong> open the door only with fingerprints.</td><td>과학자들은 오직 지문으로 문을 여는 것을 가능하게 했다.</td><td>가목적어 it + 진목적어 to V</td></tr>
+    </tbody>
+  </table>
+
+  <div class="tip-box" style="page-break-inside:avoid;">
+    <span class="tip-label">핵심 규칙: 준동사 부정</span>
+    <p>준동사(to V / V-ing)를 부정할 때는 <strong>준동사 바로 앞에 not/never</strong>를 붙인다.</p>
+    <p>• pretend <strong>not to</strong> recognize (○) &nbsp;&nbsp;← not이 to V 바로 앞</p>
+    <p>• pretend to <strong>not</strong> recognize (✗)</p>
+  </div>
+
+  <h4>2. 보어 기능</h4>
+
+  <p><strong>① 주격 보어</strong> (~하는 것이다): 주어 = 보어 관계. 동명사로 교체 가능.</p>
+  <table>
+    <thead><tr><th>예문</th><th>해석</th><th>구조</th></tr></thead>
+    <tbody>
+      <tr><td>His objective <strong>is to travel</strong> abroad.</td><td>그의 목적은 해외로 여행하는 것이다.</td><td>S + V + C (V가 결정)</td></tr>
+      <tr><td>The task of the organization <strong>is to ensure</strong> fair play.</td><td>이 단체의 직무는 페어플레이를 보장하는 것이다.</td><td>V-ing으로도 교체 가능</td></tr>
+    </tbody>
+  </table>
+
+  <p><strong>② 목적격 보어</strong> (~하게, ~하도록): 5형식(SVOC). <strong>동명사로 교체 불가!</strong></p>
+  <table>
+    <thead><tr><th>동사 패턴</th><th>예문</th><th>해석</th></tr></thead>
+    <tbody>
+      <tr><td><strong>enable</strong> + O + to V</td><td>The fog enabled the enemy <strong>to retreat</strong>.</td><td>안개는 적이 퇴각할 수 있게 만들었다.</td></tr>
+      <tr><td><strong>encourage</strong> + O + to V</td><td>The coach encouraged us <strong>to keep walking</strong>.</td><td>코치는 우리가 계속 걸어가도록 격려했다.</td></tr>
+      <tr><td><strong>force</strong> + O + to V</td><td>The demonstration forced us <strong>to make</strong> a detour.</td><td>데모는 우리가 돌아가도록 강요했다.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="warning-box" style="page-break-inside:avoid;">
+    <span class="warning-label">주의: 주격 보어 vs 목적격 보어</span>
+    <p>• 주격 보어 (2형식 SVC): to V → V-ing 교체 <strong>가능</strong></p>
+    <p>• 목적격 보어 (5형식 SVOC): to V → V-ing 교체 <strong>불가</strong></p>
+    <p>예) The fog enabled the enemy <strong>to retreat</strong>. (○) / retreating (✗)</p>
+  </div>
+
+  <div class="tip-box" style="page-break-inside:avoid;">
+    <span class="tip-label">암기 TIP: 가목적어 구문의 대표 동사</span>
+    <p><strong>make / find / believe</strong> + it + 형용사 + to V</p>
+    <p>예) Scientists made <strong>it</strong> possible <strong>to open</strong> the door.</p>
+    <p>(it = 가목적어, to open the door = 진목적어)</p>
+  </div>
+
+</div>
+<div class="concept-box">
+  <span class="concept-label">to부정사의 형용사 용법 — 자동사가 쓰인 경우 + 의문사 to V</span>
+  
+  <h4>1. 형용사적 역할 기본: N + to V</h4>
+  <p>부정사가 앞의 명사를 수식한다. "N할 / N하는"으로 해석.</p>
+  <table>
+    <thead><tr><th>표현</th><th>의미</th><th>예시</th></tr></thead>
+    <tbody>
+      <tr><td>way <strong>to V</strong></td><td>~할 방법</td><td>the easiest way <strong>to contact</strong> Ted</td></tr>
+      <tr><td>opportunity / chance <strong>to V</strong></td><td>~할 기회</td><td>a chance <strong>to travel</strong> abroad</td></tr>
+      <tr><td>possibility <strong>to V</strong></td><td>~할 가능성</td><td>the possibility <strong>to succeed</strong></td></tr>
+      <tr><td>ability / capability <strong>to V</strong></td><td>~할 능력</td><td>the ability <strong>to communicate</strong></td></tr>
+      <tr><td>decision <strong>to V</strong></td><td>~하겠다는 결심</td><td>a decision <strong>to leave</strong></td></tr>
+      <tr><td>effort <strong>to V</strong></td><td>~하려는 노력</td><td>an effort <strong>to improve</strong></td></tr>
+      <tr><td>failure <strong>to V</strong></td><td>~하지 못한 것</td><td>failure <strong>to comply</strong></td></tr>
+    </tbody>
+  </table>
+
+  <h4>2. 핵심: 자동사가 쓰인 경우 — 전치사 필수!</h4>
+  <p>부정사가 수식하는 <strong>명사가 전치사의 목적어</strong>인 경우, 반드시 전치사를 붙여야 한다.</p>
+
+  <table>
+    <thead><tr><th>올바른 표현 (○)</th><th>틀린 표현 (✗)</th><th>전치사의 이유</th></tr></thead>
+    <tbody>
+      <tr><td>friends to play <strong>with</strong></td><td><span style="color:#e53e3e;">friends to play</span></td><td>play <strong>with</strong> friends (친구와 놀다)</td></tr>
+      <tr><td>friends to speak <strong>to</strong></td><td><span style="color:#e53e3e;">friends to speak</span></td><td>speak <strong>to</strong> friends (친구에게 말하다)</td></tr>
+      <tr><td>a pen to write <strong>with</strong></td><td><span style="color:#e53e3e;">a pen to write</span></td><td>write <strong>with</strong> a pen (펜으로 쓰다)</td></tr>
+      <tr><td>a house to live <strong>in</strong></td><td><span style="color:#e53e3e;">a house to live</span></td><td>live <strong>in</strong> a house (집에 살다)</td></tr>
+      <tr><td>money to live <strong>on</strong></td><td><span style="color:#e53e3e;">money to live</span></td><td>live <strong>on</strong> money (돈으로 먹고 살다)</td></tr>
+      <tr><td>nothing to be afraid <strong>of</strong></td><td><span style="color:#e53e3e;">nothing to be afraid</span></td><td>be afraid <strong>of</strong> nothing (아무것도 두렵지 않다)</td></tr>
+    </tbody>
+  </table>
+
+  <div class="tip-box" style="page-break-inside:avoid;">
+    <span class="tip-label">판별법: 전치사가 필요한지 확인하는 방법</span>
+    <p><strong>원래 문장으로 복원</strong>해보면 전치사 필요 여부를 알 수 있다.</p>
+    <p>• I have a friend to speak <strong>to</strong>. ← I speak <strong>to</strong> a friend. (자동사 speak + 전치사 to)</p>
+    <p>• He has no house to live <strong>in</strong>. ← He lives <strong>in</strong> a house. (자동사 live + 전치사 in)</p>
+    <p>→ 수식받는 명사를 동사 뒤에 넣어서 문장을 만들어보면, 전치사가 빠졌는지 바로 확인 가능!</p>
+  </div>
+
+  <div class="warning-box" style="page-break-inside:avoid;">
+    <span class="warning-label">주의: 타동사 vs 자동사</span>
+    <p>• <strong>타동사</strong>: 전치사 불필요 → I have a lot of homework to <strong>do</strong>. (do homework — 타동사)</p>
+    <p>• <strong>자동사</strong>: 전치사 필수 → I have a friend to talk <strong>with</strong>. (talk with a friend — 자동사)</p>
+    <p>→ 부정사의 동사가 <strong>타동사인지 자동사인지</strong> 먼저 판별하세요!</p>
+  </div>
+
+  <h4>3. 의문사 + to V = 명사 덩어리</h4>
+  <p>의문사 + to V는 <strong>명사절을 축약</strong>한 것으로, 목적어 자리에 쓰인다.</p>
+
+  <table>
+    <thead><tr><th>의문사 + to V</th><th>의미</th><th>= 명사절 (축약 전)</th></tr></thead>
+    <tbody>
+      <tr><td><strong>how</strong> to V</td><td>어떻게 V할지 / V하는 방법</td><td>how I should V</td></tr>
+      <tr><td><strong>what</strong> to V</td><td>무엇을 V할지</td><td>what I should V</td></tr>
+      <tr><td><strong>when</strong> to V</td><td>언제 V할지</td><td>when I should V</td></tr>
+      <tr><td><strong>where</strong> to V</td><td>어디서 V할지</td><td>where I should V</td></tr>
+      <tr><td><strong>whether</strong> to V</td><td>V할지 말지</td><td>whether I should V</td></tr>
+    </tbody>
+  </table>
+
+  <div class="grammar-block" style="white-space:normal;">
+    <h4>축약 과정</h4>
+    <p>I don't know <strong>what I should buy</strong>. (나는 무엇을 사야 할지 모른다)</p>
+    <p>→ I don't know <strong>what to buy</strong>. (의문사 + should → to V로 축약)</p>
+    <p>&nbsp;</p>
+    <p>I taught her <strong>how she should drive</strong> a car. (나는 그녀에게 운전하는 방법을 가르쳐주었다)</p>
+    <p>→ I taught her <strong>how to drive</strong> a car. (S + V + IO + 의문사 to V)</p>
+  </div>
+
+  <div class="tip-box" style="page-break-inside:avoid;">
+    <span class="tip-label">축약 공식</span>
+    <p><strong>의문사 + 주어 + should + 동사원형</strong> → <strong>의문사 + to + 동사원형</strong></p>
+    <p>핵심: should가 있는 명사절만 축약 가능!</p>
+  </div>
+
+</div>
+
+<hr class="section-divider">
+<p style="text-align: center; color: #a0aec0; font-size: 9pt; margin-top: 30px;">
+  피드백지 작성 완료 — 2026. 02. 21
+</p>
+</body>
+</html>

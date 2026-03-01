@@ -1,0 +1,507 @@
+{
+  "bookId": "vocab-basic",
+  "day": 4,
+  "theme": "정치, 국가, 통치 (Politics, State, and Governance)",
+  "words": [
+    {
+      "word": "politics",
+      "pronunciation": "[pάlətìks]",
+      "partOfSpeech": "n.",
+      "meaning": "정치, 정치학",
+      "example": {
+        "en": "She decided to enter politics to make a difference.",
+        "ko": "그녀는 변화를 만들기 위해 정계에 입문하기로 결심했다."
+      }
+    },
+    {
+      "word": "state",
+      "pronunciation": "[steit]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "국가; (미국의) 주; 상태\n       \n        진술하다",
+      "example": {
+        "en": "The primary duty of the state is to protect its citizens.",
+        "ko": "국가의 최우선 의무는 국민을 보호하는 것이다."
+      }
+    },
+    {
+      "word": "nation",
+      "pronunciation": "[néiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "국가, 민족",
+      "example": {
+        "en": "The United Nations is an organization of independent nations.",
+        "ko": "유엔은 독립 국가들의 조직이다."
+      }
+    },
+    {
+      "word": "government",
+      "pronunciation": "[gʌ́vərnmənt]",
+      "partOfSpeech": "n.",
+      "meaning": "정부, 정권; 통치",
+      "example": {
+        "en": "The government has announced new tax policies.",
+        "ko": "정부는 새로운 세금 정책을 발표했다."
+      }
+    },
+    {
+      "word": "regime",
+      "pronunciation": "[reiʒíːm]",
+      "partOfSpeech": "n.",
+      "meaning": "(특히 비민주적인) 정권, 제도, 체제",
+      "example": {
+        "en": "The military regime was overthrown by a popular uprising.",
+        "ko": "군사 정권은 민중 봉기에 의해 전복되었다."
+      }
+    },
+    {
+      "word": "tyranny",
+      "pronunciation": "[tírəni]",
+      "partOfSpeech": "n.",
+      "meaning": "독재 정치, 압제, 폭정",
+      "example": {
+        "en": "The people suffered for years under the king's tyranny.",
+        "ko": "국민들은 왕의 폭정 아래에서 수년간 고통받았다."
+      }
+    },
+    {
+      "word": "despotic",
+      "pronunciation": "[dispάtik]",
+      "partOfSpeech": "a.",
+      "meaning": "전제적인, 독재적인, 횡포한",
+      "example": {
+        "en": "A despotic ruler has absolute power over the people.",
+        "ko": "전제적인 통치자는 국민에 대해 절대적인 권력을 가진다."
+      }
+    },
+    {
+      "word": "autocracy",
+      "pronunciation": "[ɔːtάkrəsi]",
+      "partOfSpeech": "n.",
+      "meaning": "독재 정치, 전제 군주국",
+      "example": {
+        "en": "In an autocracy, one person rules with unlimited authority.",
+        "ko": "독재 정치에서는 한 사람이 무한한 권위로 통치한다."
+      }
+    },
+    {
+      "word": "sovereign",
+      "pronunciation": "[sάvərən]",
+      "partOfSpeech": "n.\n       \n        a.",
+      "meaning": "군주, 통치자\n       \n        주권을 가진, 독립의",
+      "example": {
+        "en": "A sovereign state is not controlled by any other country.",
+        "ko": "주권 국가는 다른 어떤 나라의 통제도 받지 않는다."
+      }
+    },
+    {
+      "word": "monarch",
+      "pronunciation": "[mάnərk]",
+      "partOfSpeech": "n.",
+      "meaning": "군주",
+      "example": {
+        "en": "The monarch is the head of state in a monarchy.",
+        "ko": "군주는 군주제에서 국가 원수이다."
+      }
+    },
+    {
+      "word": "democracy",
+      "pronunciation": "[dimάkrəsi]",
+      "partOfSpeech": "n.",
+      "meaning": "민주주의, 민주 국가",
+      "example": {
+        "en": "Freedom of speech is a cornerstone of democracy.",
+        "ko": "표현의 자유는 민주주의의 초석이다."
+      }
+    },
+    {
+      "word": "republic",
+      "pronunciation": "[ripʌ́blik]",
+      "partOfSpeech": "n.",
+      "meaning": "공화국",
+      "example": {
+        "en": "In a republic, the head of state is usually an elected president.",
+        "ko": "공화국에서는 국가 원수가 보통 선출된 대통령이다."
+      }
+    },
+    {
+      "word": "federation",
+      "pronunciation": "[fèdəréiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "연방, 연방 국가",
+      "example": {
+        "en": "The United States is a federation of 50 states.",
+        "ko": "미국은 50개 주로 이루어진 연방 국가이다."
+      }
+    },
+    {
+      "word": "confederation",
+      "pronunciation": "[kənfèdəréiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "(국가·사업체 등의) 연합, 연맹",
+      "example": {
+        "en": "The European Union is a confederation of European countries.",
+        "ko": "유럽 연합은 유럽 국가들의 연합체이다."
+      }
+    },
+    {
+      "word": "totalitarianism",
+      "pronunciation": "[toutæ̀lətέəriənìzəm]",
+      "partOfSpeech": "n.",
+      "meaning": "전체주의",
+      "example": {
+        "en": "Totalitarianism allows no individual freedom.",
+        "ko": "전체주의는 개인의 자유를 허용하지 않는다."
+      }
+    },
+    {
+      "word": "socialism",
+      "pronunciation": "[sóuʃəlìzəm]",
+      "partOfSpeech": "n.",
+      "meaning": "사회주의",
+      "example": {
+        "en": "Socialism advocates for public ownership of the means of production.",
+        "ko": "사회주의는 생산 수단의 공공 소유를 주창한다."
+      }
+    },
+    {
+      "word": "laissez-faire",
+      "pronunciation": "[lèsei fέər]",
+      "partOfSpeech": "n.",
+      "meaning": "(정부의) 자유방임주의",
+      "example": {
+        "en": "The government adopted a laissez-faire approach to the economy.",
+        "ko": "정부는 경제에 대해 자유방임주의적 접근법을 채택했다."
+      }
+    },
+    {
+      "word": "constitution",
+      "pronunciation": "[kὰnstətjúːʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "헌법; 구성, 구조",
+      "example": {
+        "en": "The new law was challenged as a violation of the constitution.",
+        "ko": "그 새 법은 헌법 위반으로 이의가 제기되었다."
+      }
+    },
+    {
+      "word": "parliament",
+      "pronunciation": "[pάːrləmənt]",
+      "partOfSpeech": "n.",
+      "meaning": "의회, 국회",
+      "example": {
+        "en": "A new bill was introduced in parliament today.",
+        "ko": "오늘 의회에 새로운 법안이 제출되었다."
+      }
+    },
+    {
+      "word": "congress",
+      "pronunciation": "[kά&eng;grəs]",
+      "partOfSpeech": "n.",
+      "meaning": "(미국의) 의회, 국회; (공식적인) 회의",
+      "example": {
+        "en": "The U.S. Congress consists of the Senate and the House of Representatives.",
+        "ko": "미국 의회는 상원과 하원으로 구성된다."
+      }
+    },
+    {
+      "word": "council",
+      "pronunciation": "[káunsəl]",
+      "partOfSpeech": "n.",
+      "meaning": "(지방) 의회; 협의회, 평의회",
+      "example": {
+        "en": "The city council voted to build a new library.",
+        "ko": "시의회는 새 도서관을 짓는 데 투표했다."
+      }
+    },
+    {
+      "word": "cabinet",
+      "pronunciation": "[kǽbənit]",
+      "partOfSpeech": "n.",
+      "meaning": "내각",
+      "example": {
+        "en": "The Prime Minister held an emergency meeting with the cabinet.",
+        "ko": "총리는 내각과 긴급회의를 가졌다."
+      }
+    },
+    {
+      "word": "legislate",
+      "pronunciation": "[lédʒislèit]",
+      "partOfSpeech": "v.",
+      "meaning": "법률을 제정하다",
+      "example": {
+        "en": "It is the job of Congress to legislate.",
+        "ko": "법률을 제정하는 것은 의회의 일이다."
+      }
+    },
+    {
+      "word": "ratify",
+      "pronunciation": "[rǽtəfài]",
+      "partOfSpeech": "v.",
+      "meaning": "(조약 등을) 비준하다, 승인하다",
+      "example": {
+        "en": "The treaty must be ratified by both countries.",
+        "ko": "그 조약은 양국에 의해 비준되어야 한다."
+      }
+    },
+    {
+      "word": "veto",
+      "pronunciation": "[víːtou]",
+      "partOfSpeech": "v.\n       \n        n.",
+      "meaning": "거부권을 행사하다\n       \n        거부권",
+      "example": {
+        "en": "The president has the power to veto legislation.",
+        "ko": "대통령은 법안에 대해 거부권을 행사할 힘이 있다."
+      }
+    },
+    {
+      "word": "impeach",
+      "pronunciation": "[impíːtʃ]",
+      "partOfSpeech": "v.",
+      "meaning": "(공무원을) 탄핵하다, 고발하다",
+      "example": {
+        "en": "The legislature voted to impeach the president for corruption.",
+        "ko": "입법부는 부패 혐의로 대통령을 탄핵하기로 의결했다."
+      }
+    },
+    {
+      "word": "election",
+      "pronunciation": "[ilékʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "선거",
+      "example": {
+        "en": "The country will hold a general election next year.",
+        "ko": "그 나라는 내년에 총선을 치를 것이다."
+      }
+    },
+    {
+      "word": "ballot",
+      "pronunciation": "[bǽlət]",
+      "partOfSpeech": "n.",
+      "meaning": "투표용지; 투표",
+      "example": {
+        "en": "Voters cast their ballots at polling stations.",
+        "ko": "유권자들은 투표소에서 투표를 한다."
+      }
+    },
+    {
+      "word": "constituency",
+      "pronunciation": "[kənstíʧuənsi]",
+      "partOfSpeech": "n.",
+      "meaning": "선거구; (선거구의) 유권자",
+      "example": {
+        "en": "She has represented this constituency for 20 years.",
+        "ko": "그녀는 20년 동안 이 선거구를 대표해 왔다."
+      }
+    },
+    {
+      "word": "candidate",
+      "pronunciation": "[kǽndidèit]",
+      "partOfSpeech": "n.",
+      "meaning": "후보자, 지원자",
+      "example": {
+        "en": "There are three candidates running for mayor.",
+        "ko": "시장 선거에 출마한 후보는 세 명이다."
+      }
+    },
+    {
+      "word": "campaign",
+      "pronunciation": "[kæmpéin]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "(정치·사회적) 운동, 캠페인\n       \n        캠페인을 벌이다",
+      "example": {
+        "en": "They launched a campaign to raise awareness about climate change.",
+        "ko": "그들은 기후 변화에 대한 인식을 높이기 위한 캠페인을 시작했다."
+      }
+    },
+    {
+      "word": "policy",
+      "pronunciation": "[pάləsi]",
+      "partOfSpeech": "n.",
+      "meaning": "정책, 방침",
+      "example": {
+        "en": "The government's economic policy has been criticized.",
+        "ko": "정부의 경제 정책은 비판을 받아왔다."
+      }
+    },
+    {
+      "word": "diplomacy",
+      "pronunciation": "[diplóuməsi]",
+      "partOfSpeech": "n.",
+      "meaning": "외교, 외교술",
+      "example": {
+        "en": "The conflict was resolved through skilled diplomacy.",
+        "ko": "그 갈등은 숙련된 외교를 통해 해결되었다."
+      }
+    },
+    {
+      "word": "treaty",
+      "pronunciation": "[tríːti]",
+      "partOfSpeech": "n.",
+      "meaning": "(국가 간의) 조약, 협정",
+      "example": {
+        "en": "The two countries signed a peace treaty to end the war.",
+        "ko": "두 나라는 전쟁을 끝내기 위해 평화 조약에 서명했다."
+      }
+    },
+    {
+      "word": "alliance",
+      "pronunciation": "[əláiəns]",
+      "partOfSpeech": "n.",
+      "meaning": "동맹, 연합",
+      "example": {
+        "en": "The two nations formed a military alliance for mutual defense.",
+        "ko": "두 국가는 상호 방위를 위해 군사 동맹을 결성했다."
+      }
+    },
+    {
+      "word": "coalition",
+      "pronunciation": "[kòuəlíʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "(둘 이상의 정당으로 구성된) 연립 정부, 연정; 연합",
+      "example": {
+        "en": "A coalition government was formed after no single party won a majority.",
+        "ko": "어느 정당도 과반을 차지하지 못하자 연립 정부가 구성되었다."
+      }
+    },
+    {
+      "word": "sanction",
+      "pronunciation": "[sǽ&eng;kʃən]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "(pl.) (국가에 대한) 제재; 허가, 승인\n       \n        허가하다",
+      "example": {
+        "en": "The UN imposed economic sanctions on the country.",
+        "ko": "유엔은 그 나라에 경제 제재를 가했다."
+      }
+    },
+    {
+      "word": "envoy",
+      "pronunciation": "[énvɔi]",
+      "partOfSpeech": "n.",
+      "meaning": "(정부의) 사절, 특사",
+      "example": {
+        "en": "A special envoy was sent to negotiate a ceasefire.",
+        "ko": "휴전을 협상하기 위해 특별 사절이 파견되었다."
+      }
+    },
+    {
+      "word": "ambassador",
+      "pronunciation": "[æmbǽsədər]",
+      "partOfSpeech": "n.",
+      "meaning": "대사",
+      "example": {
+        "en": "He was appointed as the new ambassador to France.",
+        "ko": "그는 신임 프랑스 대사로 임명되었다."
+      }
+    },
+    {
+      "word": "statesman",
+      "pronunciation": "[stéitsmən]",
+      "partOfSpeech": "n.",
+      "meaning": "(경험 많고 존경받는) 정치인, 정치가",
+      "example": {
+        "en": "Nelson Mandela is remembered as a great statesman.",
+        "ko": "넬슨 만델라는 위대한 정치가로 기억된다."
+      }
+    },
+    {
+      "word": "bureaucrat",
+      "pronunciation": "[bjúəroukræ̀t]",
+      "partOfSpeech": "n.",
+      "meaning": "관료",
+      "example": {
+        "en": "Many people complain about the inefficiency of bureaucrats.",
+        "ko": "많은 사람들이 관료들의 비효율성에 대해 불평한다."
+      }
+    },
+    {
+      "word": "coup / coup d'état",
+      "pronunciation": "[kuː / kuːdeitάː]",
+      "partOfSpeech": "n.",
+      "meaning": "쿠데타",
+      "example": {
+        "en": "The government was overthrown in a military coup.",
+        "ko": "정부는 군사 쿠데타로 전복되었다."
+      }
+    },
+    {
+      "word": "overthrow",
+      "pronunciation": "[òuvərθróu]",
+      "partOfSpeech": "v.",
+      "meaning": "(정부·지도자를) 전복시키다, 타도하다",
+      "example": {
+        "en": "The rebels attempted to overthrow the government.",
+        "ko": "반군들은 정부를 전복시키려 시도했다."
+      }
+    },
+    {
+      "word": "usurp",
+      "pronunciation": "[juːsə́ːrp]",
+      "partOfSpeech": "v.",
+      "meaning": "(왕위·권력 등을) 빼앗다, 찬탈하다",
+      "example": {
+        "en": "The duke tried to usurp the throne from his brother.",
+        "ko": "공작은 그의 형으로부터 왕위를 찬탈하려 했다."
+      }
+    },
+    {
+      "word": "partisan",
+      "pronunciation": "[pάːrtəzən]",
+      "partOfSpeech": "a.\n       \n        n.",
+      "meaning": "편파적인, 당파적인\n       \n        열렬한 지지자",
+      "example": {
+        "en": "The debate became too partisan to be productive.",
+        "ko": "그 토론은 너무 당파적이어서 생산적이지 못했다."
+      }
+    },
+    {
+      "word": "ideology",
+      "pronunciation": "[àidiάlədʒi]",
+      "partOfSpeech": "n.",
+      "meaning": "이데올로기, 이념",
+      "example": {
+        "en": "The two parties have very different political ideologies.",
+        "ko": "그 두 정당은 매우 다른 정치 이념을 가지고 있다."
+      }
+    },
+    {
+      "word": "bill",
+      "pronunciation": "[bil]",
+      "partOfSpeech": "n.",
+      "meaning": "법안; 계산서, 청구서",
+      "example": {
+        "en": "The bill needs to pass both houses of Congress to become law.",
+        "ko": "그 법안이 법이 되려면 의회 양원을 모두 통과해야 한다."
+      }
+    },
+    {
+      "word": "amendment",
+      "pronunciation": "[əméndmənt]",
+      "partOfSpeech": "n.",
+      "meaning": "(법 등의) 개정, 수정(안)",
+      "example": {
+        "en": "The First Amendment to the U.S. Constitution guarantees freedom of speech.",
+        "ko": "미국 수정 헌법 제1조는 언론의 자유를 보장한다."
+      }
+    },
+    {
+      "word": "jurisdiction",
+      "pronunciation": "[dʒùərisdíkʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "사법권, 관할권; 관할 구역",
+      "example": {
+        "en": "The court has jurisdiction over cases in this state.",
+        "ko": "그 법원은 이 주의 사건들에 대한 사법권을 가진다."
+      }
+    },
+    {
+      "word": "referendum",
+      "pronunciation": "[rèfəréndəm]",
+      "partOfSpeech": "n.",
+      "meaning": "국민투표",
+      "example": {
+        "en": "A referendum was held on the question of independence.",
+        "ko": "독립 문제에 대해 국민투표가 실시되었다."
+      }
+    }
+  ]
+}

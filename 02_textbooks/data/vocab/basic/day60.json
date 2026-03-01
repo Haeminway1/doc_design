@@ -1,0 +1,505 @@
+{
+  "bookId": "vocab-basic",
+  "day": 60,
+  "theme": "일과 고용 (Work and Employment)",
+  "words": [
+    {
+      "word": "career",
+      "pronunciation": "[kəríər]",
+      "partOfSpeech": "n.",
+      "meaning": "경력, 직업",
+      "example": {
+        "en": "She has a successful career in law.",
+        "ko": "그녀는 법조계에서 성공적인 경력을 쌓았다."
+      }
+    },
+    {
+      "word": "profession",
+      "pronunciation": "[prəféʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "(전문적인) 직업",
+      "example": {
+        "en": "The medical profession has high ethical standards.",
+        "ko": "의료 전문직은 높은 윤리 기준을 가지고 있다."
+      }
+    },
+    {
+      "word": "occupation",
+      "pronunciation": "[ὰkjupéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "직업",
+      "example": {
+        "en": "Please state your name, age, and occupation.",
+        "ko": "이름, 나이, 직업을 말씀해 주세요."
+      }
+    },
+    {
+      "word": "vocation",
+      "pronunciation": "[voukéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "천직, 소명",
+      "example": {
+        "en": "She believes that teaching is her true vocation.",
+        "ko": "그녀는 가르치는 것이 자신의 진정한 천직이라고 믿는다."
+      }
+    },
+    {
+      "word": "employment",
+      "pronunciation": "[implɔ́imənt]",
+      "partOfSpeech": "n.",
+      "meaning": "고용, 일자리",
+      "example": {
+        "en": "The new factory will create employment for local people.",
+        "ko": "새 공장은 지역 주민들을 위한 일자리를 창출할 것이다."
+      }
+    },
+    {
+      "word": "unemployment",
+      "pronunciation": "[ʌ̀nimplɔ́imənt]",
+      "partOfSpeech": "n.",
+      "meaning": "실업",
+      "example": {
+        "en": "The unemployment rate has fallen for the third consecutive month.",
+        "ko": "실업률이 3개월 연속 하락했다."
+      }
+    },
+    {
+      "word": "job",
+      "pronunciation": "[dʒɑb]",
+      "partOfSpeech": "n.",
+      "meaning": "일, 직업",
+      "example": {
+        "en": "He is looking for a new job.",
+        "ko": "그는 새로운 일자리를 찾고 있다."
+      }
+    },
+    {
+      "word": "post",
+      "pronunciation": "[poust]",
+      "partOfSpeech": "n.",
+      "meaning": "직책, 지위",
+      "example": {
+        "en": "He was offered a teaching post at the university.",
+        "ko": "그는 그 대학에서 교수직을 제안받았다."
+      }
+    },
+    {
+      "word": "vacancy",
+      "pronunciation": "[véikənsi]",
+      "partOfSpeech": "n.",
+      "meaning": "공석, 결원",
+      "example": {
+        "en": "There is a vacancy for a senior manager.",
+        "ko": "수석 관리자 자리에 공석이 있다."
+      }
+    },
+    {
+      "word": "recruitment",
+      "pronunciation": "[rikrúːtmənt]",
+      "partOfSpeech": "n.",
+      "meaning": "채용, 모집",
+      "example": {
+        "en": "The company is starting a new recruitment drive.",
+        "ko": "그 회사는 새로운 채용 캠페인을 시작하고 있다."
+      }
+    },
+    {
+      "word": "application",
+      "pronunciation": "[æ̀pləkéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "지원(서)",
+      "example": {
+        "en": "Please fill out the application form.",
+        "ko": "지원서를 작성해 주세요."
+      }
+    },
+    {
+      "word": "resume",
+      "pronunciation": "[rézumèi]",
+      "partOfSpeech": "n.",
+      "meaning": "이력서",
+      "example": {
+        "en": "I need to update my resume before applying for the job.",
+        "ko": "그 일자리에 지원하기 전에 이력서를 업데이트해야 한다."
+      }
+    },
+    {
+      "word": "curriculum vitae (CV)",
+      "pronunciation": "[kəríkjuləm víːtai]",
+      "partOfSpeech": "n.",
+      "meaning": "이력서",
+      "example": {
+        "en": "Please submit your CV and a cover letter.",
+        "ko": "이력서와 자기소개서를 제출해 주세요."
+      }
+    },
+    {
+      "word": "interview",
+      "pronunciation": "[íntərvjùː]",
+      "partOfSpeech": "n.",
+      "meaning": "면접",
+      "example": {
+        "en": "I have a job interview tomorrow morning.",
+        "ko": "나는 내일 아침에 면접이 있다."
+      }
+    },
+    {
+      "word": "hire",
+      "pronunciation": "[haiər]",
+      "partOfSpeech": "v.",
+      "meaning": "고용하다",
+      "example": {
+        "en": "The company is planning to hire more staff.",
+        "ko": "그 회사는 더 많은 직원을 고용할 계획이다."
+      }
+    },
+    {
+      "word": "employ",
+      "pronunciation": "[implɔ́i]",
+      "partOfSpeech": "v.",
+      "meaning": "고용하다",
+      "example": {
+        "en": "The factory employs over 500 people.",
+        "ko": "그 공장은 500명 이상의 사람들을 고용하고 있다."
+      }
+    },
+    {
+      "word": "fire",
+      "pronunciation": "[faiər]",
+      "partOfSpeech": "v.",
+      "meaning": "해고하다",
+      "example": {
+        "en": "He was fired for being consistently late.",
+        "ko": "그는 계속 지각해서 해고당했다."
+      }
+    },
+    {
+      "word": "dismiss",
+      "pronunciation": "[dismís]",
+      "partOfSpeech": "v.",
+      "meaning": "해고하다",
+      "example": {
+        "en": "She was dismissed from her job for misconduct.",
+        "ko": "그녀는 비행으로 직장에서 해고되었다."
+      }
+    },
+    {
+      "word": "sack",
+      "pronunciation": "[sæk]",
+      "partOfSpeech": "v.",
+      "meaning": "해고하다",
+      "example": {
+        "en": "He got the sack for stealing from the company.",
+        "ko": "그는 회사에서 물건을 훔쳐서 해고당했다."
+      }
+    },
+    {
+      "word": "lay off",
+      "partOfSpeech": "phr.",
+      "meaning": "(경영 악화로) 해고하다",
+      "example": {
+        "en": "The company had to lay off hundreds of workers.",
+        "ko": "그 회사는 수백 명의 노동자를 해고해야 했다."
+      }
+    },
+    {
+      "word": "resign",
+      "pronunciation": "[rizáin]",
+      "partOfSpeech": "v.",
+      "meaning": "사임하다",
+      "example": {
+        "en": "He resigned from his position as CEO.",
+        "ko": "그는 CEO 자리에서 사임했다."
+      }
+    },
+    {
+      "word": "retire",
+      "pronunciation": "[ritáiər]",
+      "partOfSpeech": "v.",
+      "meaning": "은퇴하다",
+      "example": {
+        "en": "She is planning to retire next year.",
+        "ko": "그녀는 내년에 은퇴할 계획이다."
+      }
+    },
+    {
+      "word": "promotion",
+      "pronunciation": "[prəmóuʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "승진",
+      "example": {
+        "en": "He received a promotion to senior manager.",
+        "ko": "그는 수석 관리자로 승진했다."
+      }
+    },
+    {
+      "word": "demotion",
+      "pronunciation": "[dimóuʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "강등",
+      "example": {
+        "en": "His poor performance led to a demotion.",
+        "ko": "그의 저조한 실적은 강등으로 이어졌다."
+      }
+    },
+    {
+      "word": "salary",
+      "pronunciation": "[sǽləri]",
+      "partOfSpeech": "n.",
+      "meaning": "봉급, 월급",
+      "example": {
+        "en": "He earns a high salary as a software engineer.",
+        "ko": "그는 소프트웨어 엔지니어로 높은 봉급을 받는다."
+      }
+    },
+    {
+      "word": "wage",
+      "pronunciation": "[weidʒ]",
+      "partOfSpeech": "n.",
+      "meaning": "임금 (주급, 시급)",
+      "example": {
+        "en": "The minimum wage has been increased.",
+        "ko": "최저 임금이 인상되었다."
+      }
+    },
+    {
+      "word": "remuneration",
+      "pronunciation": "[rimjùːnəréiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "보수",
+      "example": {
+        "en": "The job offers a generous remuneration package.",
+        "ko": "그 직업은 후한 보수 패키지를 제공한다."
+      }
+    },
+    {
+      "word": "compensation",
+      "pronunciation": "[kὰmpenséiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "보상(금)",
+      "example": {
+        "en": "He received compensation for his injuries.",
+        "ko": "그는 부상에 대한 보상을 받았다."
+      }
+    },
+    {
+      "word": "benefit",
+      "pronunciation": "[bénəfit]",
+      "partOfSpeech": "n.",
+      "meaning": "복리후생, 수당",
+      "example": {
+        "en": "The company offers excellent benefits, including health insurance.",
+        "ko": "그 회사는 건강 보험을 포함한 훌륭한 복리후생을 제공한다."
+      }
+    },
+    {
+      "word": "overtime",
+      "pronunciation": "[óuvərtàim]",
+      "partOfSpeech": "n.",
+      "meaning": "초과 근무",
+      "example": {
+        "en": "I had to work overtime to finish the project.",
+        "ko": "나는 프로젝트를 끝내기 위해 초과 근무를 해야 했다."
+      }
+    },
+    {
+      "word": "shift",
+      "pronunciation": "[ʃift]",
+      "partOfSpeech": "n.",
+      "meaning": "교대 근무",
+      "example": {
+        "en": "He works the night shift at the factory.",
+        "ko": "그는 공장에서 야간 교대 근무를 한다."
+      }
+    },
+    {
+      "word": "coworker",
+      "pronunciation": "[kóuwə̀ːrkər]",
+      "partOfSpeech": "n.",
+      "meaning": "동료",
+      "example": {
+        "en": "My coworkers are very friendly and supportive.",
+        "ko": "내 동료들은 매우 친절하고 협조적이다."
+      }
+    },
+    {
+      "word": "subordinate",
+      "pronunciation": "[səbɔ́ːrdənət]",
+      "partOfSpeech": "n.",
+      "meaning": "부하 직원",
+      "example": {
+        "en": "He is always respectful to his subordinates.",
+        "ko": "그는 항상 부하 직원들에게 존중을 표한다."
+      }
+    },
+    {
+      "word": "superior",
+      "pronunciation": "[supíəriər]",
+      "partOfSpeech": "n.",
+      "meaning": "상사",
+      "example": {
+        "en": "You should report any problems to your immediate superior.",
+        "ko": "어떤 문제든 직속 상사에게 보고해야 한다."
+      }
+    },
+    {
+      "word": "boss",
+      "pronunciation": "[bɔːs]",
+      "partOfSpeech": "n.",
+      "meaning": "상사",
+      "example": {
+        "en": "My boss is very demanding.",
+        "ko": "내 상사는 매우 까다롭다."
+      }
+    },
+    {
+      "word": "employer",
+      "pronunciation": "[implɔ́iər]",
+      "partOfSpeech": "n.",
+      "meaning": "고용주",
+      "example": {
+        "en": "The company is a major employer in this area.",
+        "ko": "그 회사는 이 지역의 주요 고용주이다."
+      }
+    },
+    {
+      "word": "employee",
+      "pronunciation": "[implɔ́iiː]",
+      "partOfSpeech": "n.",
+      "meaning": "직원, 피고용인",
+      "example": {
+        "en": "The company has over 1,000 employees.",
+        "ko": "그 회사는 1,000명 이상의 직원을 두고 있다."
+      }
+    },
+    {
+      "word": "staff",
+      "pronunciation": "[stæf]",
+      "partOfSpeech": "n.",
+      "meaning": "(집합적) 직원",
+      "example": {
+        "en": "The hotel staff are very friendly and helpful.",
+        "ko": "호텔 직원들은 매우 친절하고 도움이 된다."
+      }
+    },
+    {
+      "word": "personnel",
+      "pronunciation": "[pə̀ːrsənél]",
+      "partOfSpeech": "n.",
+      "meaning": "(조직의) 인원, 직원; 인사과",
+      "example": {
+        "en": "All personnel are required to attend the safety training.",
+        "ko": "모든 직원은 안전 교육에 참석해야 한다."
+      }
+    },
+    {
+      "word": "workforce",
+      "pronunciation": "[wə́ːrkfɔ̀ːrs]",
+      "partOfSpeech": "n.",
+      "meaning": "노동력, 노동 인구",
+      "example": {
+        "en": "The company has a diverse and skilled workforce.",
+        "ko": "그 회사는 다양하고 숙련된 노동력을 보유하고 있다."
+      }
+    },
+    {
+      "word": "labor union",
+      "partOfSpeech": "n.",
+      "meaning": "노동조합",
+      "example": {
+        "en": "The labor union is negotiating for better working conditions.",
+        "ko": "노동조합은 더 나은 근무 조건을 위해 협상하고 있다."
+      }
+    },
+    {
+      "word": "workload",
+      "pronunciation": "[wə́ːrklòud]",
+      "partOfSpeech": "n.",
+      "meaning": "업무량",
+      "example": {
+        "en": "I have a heavy workload this week.",
+        "ko": "나는 이번 주에 업무량이 많다."
+      }
+    },
+    {
+      "word": "hierarchical",
+      "pronunciation": "[ˌhaɪəˈrɑːrkɪkl]",
+      "partOfSpeech": "adjective",
+      "meaning": "계층적인, 위계질서의",
+      "example": {
+        "en": "Many traditional corporations maintain a hierarchical management structure.",
+        "ko": "많은 전통적인 기업들은 계층적 관리 구조를 유지한다."
+      }
+    },
+    {
+      "word": "delegation",
+      "pronunciation": "[ˌdelɪˈɡeɪʃn]",
+      "partOfSpeech": "noun",
+      "meaning": "위임, 권한 이양",
+      "example": {
+        "en": "Effective delegation is crucial for successful management.",
+        "ko": "효과적인 권한 위임은 성공적인 관리의 핵심이다."
+      }
+    },
+    {
+      "word": "procurement",
+      "pronunciation": "[prəˈkjʊrmənt]",
+      "partOfSpeech": "noun",
+      "meaning": "조달, 구매, 획득",
+      "example": {
+        "en": "The procurement department is responsible for sourcing all office supplies.",
+        "ko": "구매부서는 모든 사무용품 조달을 담당한다."
+      }
+    },
+    {
+      "word": "tenure",
+      "pronunciation": "[ˈtenjər]",
+      "partOfSpeech": "noun",
+      "meaning": "재직 기간, 종신 재직권",
+      "example": {
+        "en": "She has the longest tenure among all employees in the department.",
+        "ko": "그녀는 부서 내 모든 직원 중 가장 긴 재직 기간을 가지고 있다."
+      }
+    },
+    {
+      "word": "workplace",
+      "pronunciation": "/ˈwɜːrkˌpleɪs/",
+      "partOfSpeech": "n.",
+      "meaning": "사람들이 일을 하는 장소나 환경",
+      "example": {
+        "en": "Creating a respectful workplace improves productivity.",
+        "ko": "존중하는 직장을 조성하면 생산성이 향상된다."
+      }
+    },
+    {
+      "word": "hiring",
+      "pronunciation": "/ˈhaɪərɪ&eng;/",
+      "partOfSpeech": "n.",
+      "meaning": "신규 직원을 모집·선발·고용하는 과정.",
+      "example": {
+        "en": "The hiring of seasonal workers begins in May.",
+        "ko": "계절직 채용은 5월에 시작된다."
+      }
+    },
+    {
+      "word": "manager",
+      "pronunciation": "/ˈmænɪdʒər/",
+      "partOfSpeech": "n.",
+      "meaning": "목표 달성을 위해 팀이나 부서의 활동을 계획·조직·지휘하는 책임자.",
+      "example": {
+        "en": "The sales manager approved the budget for next quarter.",
+        "ko": "영업 관리자가 다음 분기 예산을 승인했다."
+      }
+    },
+    {
+      "word": "supervisor",
+      "pronunciation": "/ˈsuːpərˌvaɪzər/",
+      "partOfSpeech": "n.",
+      "meaning": "다른 직원들의 일상 업무를 감독하고 정책·기준 준수를 보장하는 직원.",
+      "example": {
+        "en": "Report any safety issues to your supervisor immediately.",
+        "ko": "안전 관련 문제는 즉시 상사에게 보고하세요."
+      }
+    }
+  ]
+}

@@ -1,0 +1,1210 @@
+{
+  "bookId": "syntax-basic-review-week2",
+  "week": 2,
+  "title": "[2주차 마무리] 뼈대와 수식어 완벽 분리 실전 훈련 (100문제)",
+  "part": "II",
+  "type": "sentence-analysis",
+  "instruction": "다음 문장에서 수식어를 괄호로 묶고, 뼈대를 분석한 후 해석해 보세요.",
+  "problems": [
+    {
+      "id": "syntax-basic-review-week2-1",
+      "number": 1,
+      "type": "sentence-analysis",
+      "stem": "The sun shines brightly in the clear sky.",
+      "answer": {
+        "analysis": "The sun(S) shines(V) (brightly) (in the clear sky).",
+        "pattern": "1형식",
+        "translation": "맑은 하늘에서 해가 밝게 빛난다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-2",
+      "number": 2,
+      "type": "sentence-analysis",
+      "stem": "The girl with long hair is my younger sister.",
+      "answer": {
+        "analysis": "The girl(S) (with long hair) is(V) my younger sister(C).",
+        "pattern": "2형식",
+        "translation": "긴 머리의 저 소녀는 나의 여동생이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-3",
+      "number": 3,
+      "type": "sentence-analysis",
+      "stem": "I usually drink a cup of coffee in the morning.",
+      "answer": {
+        "analysis": "I(S) (usually) drink(V) a cup(O) (of coffee) (in the morning).",
+        "pattern": "3형식",
+        "translation": "나는 보통 아침에 커피 한 잔을 마신다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-4",
+      "number": 4,
+      "type": "sentence-analysis",
+      "stem": "My parents gave me a wonderful gift for my birthday.",
+      "answer": {
+        "analysis": "My parents(S) gave(V) me(IO) a wonderful gift(DO) (for my birthday).",
+        "pattern": "4형식",
+        "translation": "부모님께서 내 생일 선물로 멋진 선물을 주셨다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-5",
+      "number": 5,
+      "type": "sentence-analysis",
+      "stem": "The teacher found the student's answer completely wrong.",
+      "answer": {
+        "analysis": "The teacher(S) found(V) the student's answer(O) (completely) wrong(OC).",
+        "pattern": "5형식",
+        "translation": "선생님은 그 학생의 답이 완전히 틀 렸다는 것을 알게 되었다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-6",
+      "number": 6,
+      "type": "sentence-analysis",
+      "stem": "The train for Busan departs from this platform at 10 a.m.",
+      "answer": {
+        "analysis": "The train(S) (for Busan) departs(V) (from this platform) (at 10 a.m.).",
+        "pattern": "1형식",
+        "translation": "부산행 기차는 오전 10시에 이 플랫폼에서 출발한다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-7",
+      "number": 7,
+      "type": "sentence-analysis",
+      "stem": "This old book on the shelf looks very interesting.",
+      "answer": {
+        "analysis": "This old book(S) (on the shelf) looks(V) (very) interesting(C).",
+        "pattern": "2형식",
+        "translation": "선반 위의 이 낡은 책은 매우 흥미로워 보인다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-8",
+      "number": 8,
+      "type": "sentence-analysis",
+      "stem": "She bought a beautiful dress at the new department store.",
+      "answer": {
+        "analysis": "She(S) bought(V) a beautiful dress(O) (at the new department store).",
+        "pattern": "3형식",
+        "translation": "그녀는 새로 생긴 백화점에서 아름다운 드레스를 샀다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-9",
+      "number": 9,
+      "type": "sentence-analysis",
+      "stem": "The sudden noise from outside made the baby cry.",
+      "answer": {
+        "analysis": "The sudden noise(S) (from outside) made(V) the baby(O) cry(OC).",
+        "pattern": "5형식",
+        "translation": "밖에서 나는 갑작스러운 소음이 아기를 울게 만들었다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-10",
+      "number": 10,
+      "type": "sentence-analysis",
+      "stem": "The chef cooked a delicious meal for the special guests.",
+      "answer": {
+        "analysis": "The chef(S) cooked(V) a delicious meal(O) (for the special guests).",
+        "pattern": "3형식",
+        "translation": "요리사는 특별한 손님들을 위해 맛있는 식 사를 요리했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-11",
+      "number": 11,
+      "type": "sentence-analysis",
+      "stem": "The birds in the cage sing sweetly every morning.",
+      "answer": {
+        "analysis": "The birds(S) (in the cage) sing(V) (sweetly) (every morning).",
+        "pattern": "1형식",
+        "translation": "새장 안의 새들은 매일 아침 감미롭게 노래한다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-12",
+      "number": 12,
+      "type": "sentence-analysis",
+      "stem": "The new employee in our team seems very diligent.",
+      "answer": {
+        "analysis": "The new employee(S) (in our team) seems(V) (very) diligent(C).",
+        "pattern": "2형식",
+        "translation": "우리 팀의 신입사원은 매우 성실해 보인다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-13",
+      "number": 13,
+      "type": "sentence-analysis",
+      "stem": "I finally finished the difficult project after many weeks.",
+      "answer": {
+        "analysis": "I(S) (finally) finished(V) the difficult project(O) (after many weeks).",
+        "pattern": "3형식",
+        "translation": "나는 몇 주 후에 마침내 그 어려운 프로젝 트를 끝냈다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-14",
+      "number": 14,
+      "type": "sentence-analysis",
+      "stem": "He showed me his collection of old stamps with pride.",
+      "answer": {
+        "analysis": "He(S) showed(V) his collection(O) (of old stamps) (with pride).",
+        "pattern": "3형식",
+        "translation": "그는 자신의 오래된 우표 수집품을 자랑스럽게 보여주었다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-15",
+      "number": 15,
+      "type": "sentence-analysis",
+      "stem": "The long and boring speech made everyone sleepy.",
+      "answer": {
+        "analysis": "The long and boring speech(S) made(V) everyone(O) sleepy(OC).",
+        "pattern": "5형식",
+        "translation": "길고 지루한 연설은 모두를 졸리게 만들었",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-16",
+      "number": 16,
+      "type": "sentence-analysis",
+      "stem": "The cat under the table is watching a mouse carefully.",
+      "answer": {
+        "analysis": "The cat(S) (under the table) is watching(V) a mouse(O) (carefully).",
+        "pattern": "3형식",
+        "translation": "테이블 아래의 고양이가 쥐를 조심스럽게 지켜보고 있다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-17",
+      "number": 17,
+      "type": "sentence-analysis",
+      "stem": "The air in the countryside feels much fresher than in the city.",
+      "answer": {
+        "analysis": "The air(S) (in the countryside) feels(V) (much) fresher(C) (than in the city).",
+        "pattern": "2형식",
+        "translation": "시골의 공기는 도시보다 훨씬 더 신선하게 느껴진다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-18",
+      "number": 18,
+      "type": "sentence-analysis",
+      "stem": "She sent an email to her professor about her absence.",
+      "answer": {
+        "analysis": "She(S) sent(V) an email(O) (to her professor) (about her absence).",
+        "pattern": "3형식",
+        "translation": "그녀는 자신의 결석에 대해 교수님께 이메 일을 보냈다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-19",
+      "number": 19,
+      "type": "sentence-analysis",
+      "stem": "My father always tells me interesting stories about his youth.",
+      "answer": {
+        "analysis": "My father(S) (always) tells(V) me(IO) interesting stories(DO) (about his youth).",
+        "pattern": "4형식",
+        "translation": "아버지는 항상 나에게 자신의 젊은 시절에 대한 재미있는 이야기를 들려주신다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-20",
+      "number": 20,
+      "type": "sentence-analysis",
+      "stem": "We consider him the best candidate for this position.",
+      "answer": {
+        "analysis": "We(S) consider(V) him(O) the best candidate(OC) (for this position).",
+        "pattern": "5형식",
+        "translation": "우리는 그를 이 직책에 가장 적합한 후보 자로 여긴다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-21",
+      "number": 21,
+      "type": "sentence-analysis",
+      "stem": "The children played happily in the snow all day.",
+      "answer": {
+        "analysis": "The children(S) played(V) (happily) (in the snow) (all day).",
+        "pattern": "1형식",
+        "translation": "아이들은 하루 종일 눈 속에서 행복하게 놀았다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-22",
+      "number": 22,
+      "type": "sentence-analysis",
+      "stem": "The soup in this bowl tastes a little too salty for me.",
+      "answer": {
+        "analysis": "The soup(S) (in this bowl) tastes(V) (a little too) salty(C) (for me).",
+        "pattern": "2형식",
+        "translation": "이 그릇에 담긴 수프는 내게는 약간 너무 짠 맛이 난다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-23",
+      "number": 23,
+      "type": "sentence-analysis",
+      "stem": "I accidentally deleted an important file from my computer.",
+      "answer": {
+        "analysis": "I(S) (accidentally) deleted(V) an important file(O) (from my computer).",
+        "pattern": "3형식",
+        "translation": "나는 실수로 내 컴퓨터에서 중요한 파 일을 삭제했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-24",
+      "number": 24,
+      "type": "sentence-analysis",
+      "stem": "Could you please bring me a glass of water from the kitchen?",
+      "answer": {
+        "analysis": "you(S) Could (please) bring(V) me(IO) a glass of water(DO) (from the kitchen)?",
+        "pattern": "4형식",
+        "translation": "부엌에서 물 한 잔만 가져다 주시겠어요?",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-25",
+      "number": 25,
+      "type": "sentence-analysis",
+      "stem": "The news of his success made his family very proud.",
+      "answer": {
+        "analysis": "The news(S) (of his success) made(V) his family(O) (very) proud(OC).",
+        "pattern": "5형식",
+        "translation": "그의 성공 소식은 그의 가족을 매우 자랑 스럽게 만들었다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-26",
+      "number": 26,
+      "type": "sentence-analysis",
+      "stem": "The river flows slowly through the peaceful valley.",
+      "answer": {
+        "analysis": "The river(S) flows(V) (slowly) (through the peaceful valley).",
+        "pattern": "1형식",
+        "translation": "강은 평화로운 계곡을 통해 천천히 흐른다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-27",
+      "number": 27,
+      "type": "sentence-analysis",
+      "stem": "The man in the black suit looks like a detective from a movie.",
+      "answer": {
+        "analysis": "The man(S) (in the black suit) looks(V) like a detective(C) (from a movie).",
+        "pattern": "2형식",
+        "translation": "검은 정장을 입은 남자는 영화에 나 오는 탐정처럼 보인다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-28",
+      "number": 28,
+      "type": "sentence-analysis",
+      "stem": "We discussed the problem for hours without any conclusion.",
+      "answer": {
+        "analysis": "We(S) discussed(V) the problem(O) (for hours) (without any conclusion).",
+        "pattern": "3형식",
+        "translation": "우리는 아무런 결론 없이 몇 시간 동 안 그 문제에 대해 논의했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-29",
+      "number": 29,
+      "type": "sentence-analysis",
+      "stem": "The company will offer all employees a special bonus this year.",
+      "answer": {
+        "analysis": "The company(S) will offer(V) all employees(IO) a special bonus(DO) (this year).",
+        "pattern": "4형식",
+        "translation": "그 회사는 올해 모든 직원에 게 특별 보너스를 제공할 것이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-30",
+      "number": 30,
+      "type": "sentence-analysis",
+      "stem": "The hot weather makes me feel tired and lethargic.",
+      "answer": {
+        "analysis": "The hot weather(S) makes(V) me(O) feel tired and lethargic(OC).",
+        "pattern": "5형식",
+        "translation": "더운 날씨는 나를 피곤하고 무기력하게 느끼 게 만든다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-31",
+      "number": 31,
+      "type": "sentence-analysis",
+      "stem": "The stars shine like diamonds in the dark night sky.",
+      "answer": {
+        "analysis": "The stars(S) shine(V) (like diamonds) (in the dark night sky).",
+        "pattern": "1형식",
+        "translation": "별들은 어두운 밤하늘에서 다이아몬드처럼 빛난",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-32",
+      "number": 32,
+      "type": "sentence-analysis",
+      "stem": "The situation in the country remains quite unstable.",
+      "answer": {
+        "analysis": "The situation(S) (in the country) remains(V) (quite) unstable(C).",
+        "pattern": "2형식",
+        "translation": "그 나라의 상황은 꽤 불안정한 상태로 남아있",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-33",
+      "number": 33,
+      "type": "sentence-analysis",
+      "stem": "I clearly remember the promise between you and me.",
+      "answer": {
+        "analysis": "I(S) (clearly) remember(V) the promise(O) (between you and me).",
+        "pattern": "3형식",
+        "translation": "나는 너와 나 사이의 약속을 분명히 기억한",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-34",
+      "number": 34,
+      "type": "sentence-analysis",
+      "stem": "She bought a new smartphone for her son on his birthday.",
+      "answer": {
+        "analysis": "She(S) bought(V) a new smartphone(O) (for her son) (on his birthday).",
+        "pattern": "3형식",
+        "translation": "그녀는 아들의 생일에 그를 위해 새 스 마트폰을 사주었다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-35",
+      "number": 35,
+      "type": "sentence-analysis",
+      "stem": "I found the last chapter of the book particularly moving.",
+      "answer": {
+        "analysis": "I(S) found(V) the last chapter(O) (of the book) (particularly) moving(OC).",
+        "pattern": "5형식",
+        "translation": "나는 그 책의 마지막 장이 특히 감동 적이라는 것을 알게 되었다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-36",
+      "number": 36,
+      "type": "sentence-analysis",
+      "stem": "Many people gathered in the square for the festival.",
+      "answer": {
+        "analysis": "Many people(S) gathered(V) (in the square) (for the festival).",
+        "pattern": "1형식",
+        "translation": "많은 사람들이 축제를 위해 광장에 모였다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-37",
+      "number": 37,
+      "type": "sentence-analysis",
+      "stem": "The new policy seems quite effective in many ways.",
+      "answer": {
+        "analysis": "The new policy(S) seems(V) (quite) effective(C) (in many ways).",
+        "pattern": "2형식",
+        "translation": "새 정책은 여러 면에서 꽤 효과적인 것 같다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-38",
+      "number": 38,
+      "type": "sentence-analysis",
+      "stem": "He is currently working on a new project with his colleagues.",
+      "answer": {
+        "analysis": "He(S) is (currently) working on(V) a new project(O) (with his colleagues).",
+        "pattern": "3형식",
+        "translation": "그는 현재 동료들과 함께 새로운 프 로젝트를 진행하고 있다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-39",
+      "number": 39,
+      "type": "sentence-analysis",
+      "stem": "The old woman gave the hungry child a piece of bread.",
+      "answer": {
+        "analysis": "The old woman(S) gave(V) the hungry child(IO) a piece of bread(DO).",
+        "pattern": "4형식",
+        "translation": "그 노부인은 배고픈 아이에게 빵 한 조 각을 주었다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-40",
+      "number": 40,
+      "type": "sentence-analysis",
+      "stem": "The citizens elected a new mayor for their city.",
+      "answer": {
+        "analysis": "The citizens(S) elected(V) a new mayor(O) (for their city).",
+        "pattern": "5형식",
+        "translation": "시민들은 자신들의 도시를 위해 새로운 시장을 선출",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-41",
+      "number": 41,
+      "type": "sentence-analysis",
+      "stem": "The leaves of the tree turn red and yellow in autumn.",
+      "answer": {
+        "analysis": "The leaves(S) (of the tree) turn(V) red and yellow(C) (in autumn).",
+        "pattern": "2형식",
+        "translation": "가을에는 나뭇잎들이 빨갛고 노랗게 변한다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-42",
+      "number": 42,
+      "type": "sentence-analysis",
+      "stem": "The music from the cafe sounds very relaxing.",
+      "answer": {
+        "analysis": "The music(S) (from the cafe) sounds(V) (very) relaxing(C).",
+        "pattern": "2형식",
+        "translation": "카페에서 흘러나오는 음악은 매우 편안하게 들린다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-43",
+      "number": 43,
+      "type": "sentence-analysis",
+      "stem": "The company provides its employees with various welfare benefits.",
+      "answer": {
+        "analysis": "The company(S) provides(V) its employees(O) (with various welfare benefits).",
+        "pattern": "3형식",
+        "translation": "그 회사는 직원들에게 다양한 복리후생을 제공한다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-44",
+      "number": 44,
+      "type": "sentence-analysis",
+      "stem": "The coach's advice helped the team win the game.",
+      "answer": {
+        "analysis": "The coach's advice(S) helped(V) the team(O) win the game(OC).",
+        "pattern": "5형식",
+        "translation": "코치의 조언은 팀이 경기에서 이기도록 도왔",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-45",
+      "number": 45,
+      "type": "sentence-analysis",
+      "stem": "He explained the complex theory to his students with simple examples.",
+      "answer": {
+        "analysis": "He(S) explained(V) the complex theory(O) (to his students) (with simple examples).",
+        "pattern": "3형식",
+        "translation": "그는 복잡한 이론을 학 생들에게 간단한 예시로 설명했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-46",
+      "number": 46,
+      "type": "sentence-analysis",
+      "stem": "The baby in the cradle slept peacefully through the storm.",
+      "answer": {
+        "analysis": "The baby(S) (in the cradle) slept(V) (peacefully) (through the storm).",
+        "pattern": "1형식",
+        "translation": "요람 속의 아기는 폭풍우 속에서도 평화 롭게 잠을 잤다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-47",
+      "number": 47,
+      "type": "sentence-analysis",
+      "stem": "The defendant remained silent throughout the entire investigation.",
+      "answer": {
+        "analysis": "The defendant(S) remained(V) silent(C) (throughout the entire investigation).",
+        "pattern": "2형식",
+        "translation": "피고인은 전체 조사 과정 내내 침묵을 지켰다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-48",
+      "number": 48,
+      "type": "sentence-analysis",
+      "stem": "The marketing team launched a new campaign for their product.",
+      "answer": {
+        "analysis": "The marketing team(S) launched(V) a new campaign(O) (for their product).",
+        "pattern": "3형식",
+        "translation": "마케팅팀은 그들의 제품을 위한 새로운 캠페인을 시작했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-49",
+      "number": 49,
+      "type": "sentence-analysis",
+      "stem": "The teacher asked her students a few questions about the last class.",
+      "answer": {
+        "analysis": "The teacher(S) asked(V) her students(IO) a few questions(DO) (about the last class).",
+        "pattern": "4형식",
+        "translation": "선생님은 학생들에게 지난 수업에 대해 몇 가지 질문을 했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-50",
+      "number": 50,
+      "type": "sentence-analysis",
+      "stem": "The constant noise from the construction site is driving me mad.",
+      "answer": {
+        "analysis": "The constant noise(S) (from the construction site) is driving(V) me(O) mad(OC).",
+        "pattern": "5형식",
+        "translation": "공사 현장의 끊임없는 소음 이 나를 미치게 하고 있다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-51",
+      "number": 51,
+      "type": "sentence-analysis",
+      "stem": "The small boat drifted aimlessly on the vast ocean.",
+      "answer": {
+        "analysis": "The small boat(S) drifted(V) (aimlessly) (on the vast ocean).",
+        "pattern": "1형식",
+        "translation": "작은 배는 광활한 바다 위를 목적 없이 떠다녔다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-52",
+      "number": 52,
+      "type": "sentence-analysis",
+      "stem": "The price of oil went up sharply last month.",
+      "answer": {
+        "analysis": "The price(S) (of oil) went up(V) (sharply) (last month).",
+        "pattern": "1형식",
+        "translation": "지난달 유가가 급격히 상승했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-53",
+      "number": 53,
+      "type": "sentence-analysis",
+      "stem": "I saw a group of dolphins in the distance during the boat trip.",
+      "answer": {
+        "analysis": "I(S) saw(V) a group of dolphins(O) (in the distance) (during the boat trip).",
+        "pattern": "3형식",
+        "translation": "나는 보트 여행 중에 멀리서 돌고래 떼를 보았다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-54",
+      "number": 54,
+      "type": "sentence-analysis",
+      "stem": "He promised his family a vacation.",
+      "answer": {
+        "analysis": "He(S) promised(V) his family(IO) a vacation(DO).",
+        "pattern": "4형식",
+        "translation": "그는 가족에게 휴가를 약속했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-55",
+      "number": 55,
+      "type": "sentence-analysis",
+      "stem": "The new security system will keep our home safe from intruders.",
+      "answer": {
+        "analysis": "The new security system(S) will keep(V) our home(O) safe(OC) (from intruders).",
+        "pattern": "5형식",
+        "translation": "새로운 보안 시스템은 침입 자들로부터 우리 집을 안전하게 지켜줄 것이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-56",
+      "number": 56,
+      "type": "sentence-analysis",
+      "stem": "The famous artist lived in a small village in France.",
+      "answer": {
+        "analysis": "The famous artist(S) lived(V) (in a small village) (in France).",
+        "pattern": "1형식",
+        "translation": "그 유명한 예술가는 프랑스의 작은 마을에 살았다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-57",
+      "number": 57,
+      "type": "sentence-analysis",
+      "stem": "Her dream finally came true.",
+      "answer": {
+        "analysis": "Her dream(S) finally came(V) true(C).",
+        "pattern": "2형식",
+        "translation": "그녀의 꿈은 마침내 실현되었다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-58",
+      "number": 58,
+      "type": "sentence-analysis",
+      "stem": "She accidentally broke her favorite cup this morning.",
+      "answer": {
+        "analysis": "She(S) (accidentally) broke(V) her favorite cup(O) (this morning).",
+        "pattern": "3형식",
+        "translation": "그녀는 오늘 아침에 실수로 가장 아끼는 컵을",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-59",
+      "number": 59,
+      "type": "sentence-analysis",
+      "stem": "I sincerely wish you success in your future endeavors.",
+      "answer": {
+        "analysis": "I(S) (sincerely) wish(V) you(IO) success(DO) (in your future endeavors).",
+        "pattern": "4형식",
+        "translation": "나는 당신의 미래의 노력에 성공이 있 기를 진심으로 기원합니다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-60",
+      "number": 60,
+      "type": "sentence-analysis",
+      "stem": "The difficult experience made him a more mature person.",
+      "answer": {
+        "analysis": "The difficult experience(S) made(V) him(O) a more mature person(OC).",
+        "pattern": "5형식",
+        "translation": "그 힘든 경험은 그를 더 성숙한 사람 으로 만들었다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-61",
+      "number": 61,
+      "type": "sentence-analysis",
+      "stem": "The next flight to London will depart in about an hour.",
+      "answer": {
+        "analysis": "The next flight(S) (to London) will depart(V) (in about an hour).",
+        "pattern": "1형식",
+        "translation": "다음 런던행 비행기는 약 한 시간 후에 출발할 것이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-62",
+      "number": 62,
+      "type": "sentence-analysis",
+      "stem": "The sky over the city grew dark with storm clouds.",
+      "answer": {
+        "analysis": "The sky(S) (over the city) grew(V) dark(C) (with storm clouds).",
+        "pattern": "2형식",
+        "translation": "도시 위 하늘이 폭풍 구름으로 어두워졌다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-63",
+      "number": 63,
+      "type": "sentence-analysis",
+      "stem": "I deeply respect his dedication to his work.",
+      "answer": {
+        "analysis": "I(S) (deeply) respect(V) his dedication(O) (to his work).",
+        "pattern": "3형식",
+        "translation": "나는 그의 일에 대한 헌신을 깊이 존경한다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-64",
+      "number": 64,
+      "type": "sentence-analysis",
+      "stem": "The kind host cooked all the guests a wonderful dinner.",
+      "answer": {
+        "analysis": "The kind host(S) cooked(V) a wonderful dinner(O) (for all the guests).",
+        "pattern": "3형식",
+        "translation": "친절한 주인은 모든 손님을 위해 멋진 저녁을 요리했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-65",
+      "number": 65,
+      "type": "sentence-analysis",
+      "stem": "The students in my class found the history lecture extremely boring.",
+      "answer": {
+        "analysis": "The students(S) (in my class) found(V) the history lecture(O) (extremely) boring(OC).",
+        "pattern": "5형식",
+        "translation": "우리 반 학생들은 역사 강의가 극도로 지루하다고 생각했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-66",
+      "number": 66,
+      "type": "sentence-analysis",
+      "stem": "The stream flows gently down the mountain.",
+      "answer": {
+        "analysis": "The stream(S) flows(V) (gently) (down the mountain).",
+        "pattern": "1형식",
+        "translation": "시냇물은 산 아래로 부드럽게 흐른다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-67",
+      "number": 67,
+      "type": "sentence-analysis",
+      "stem": "The new evidence from the scene proved him innocent.",
+      "answer": {
+        "analysis": "The new evidence(S) (from the scene) proved(V) him(O) innocent(OC).",
+        "pattern": "5형식",
+        "translation": "현장에서 나온 새로운 증거는 그가 무 죄임을 증명했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-68",
+      "number": 68,
+      "type": "sentence-analysis",
+      "stem": "She is actively looking for a new opportunity in another country.",
+      "answer": {
+        "analysis": "She(S) is (actively) looking for(V) a new opportunity(O) (in another country).",
+        "pattern": "3형식",
+        "translation": "그녀는 다른 나라에서 새로운 기회를 적극적으로 찾고 있다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-69",
+      "number": 69,
+      "type": "sentence-analysis",
+      "stem": "Can you do me a huge favor for a moment?",
+      "answer": {
+        "analysis": "you(S) Can do(V) me(IO) a huge favor(DO) (for a moment)?",
+        "pattern": "4형식",
+        "translation": "잠시 제 큰 부탁 하나만 들어주시겠어요?",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-70",
+      "number": 70,
+      "type": "sentence-analysis",
+      "stem": "He painted the walls of his room a bright yellow.",
+      "answer": {
+        "analysis": "He(S) painted(V) the walls(O) (of his room) a bright yellow(OC).",
+        "pattern": "5형식",
+        "translation": "그는 자기 방의 벽을 밝은 노란색으로 칠했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-71",
+      "number": 71,
+      "type": "sentence-analysis",
+      "stem": "The number of tourists in this city is rapidly increasing every year.",
+      "answer": {
+        "analysis": "The number(S) (of tourists) (in this city) is (rapidly) increasing(V) (every year).",
+        "pattern": "1형식",
+        "translation": "이 도시의 관광객 수가 매년 급격히 증가하고 있다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-72",
+      "number": 72,
+      "type": "sentence-analysis",
+      "stem": "The milk in the carton has unfortunately gone bad.",
+      "answer": {
+        "analysis": "The milk (in the carton)(S) has (unfortunately) gone(V) bad(C).",
+        "pattern": "2형식",
+        "translation": "곽 안의 우유가 불행히도 상했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-73",
+      "number": 73,
+      "type": "sentence-analysis",
+      "stem": "He solved the difficult math problem with little effort.",
+      "answer": {
+        "analysis": "He(S) solved(V) the difficult math problem(O) (with little effort).",
+        "pattern": "3형식",
+        "translation": "그는 거의 노력 없이 그 어려운 수학 문제를 풀었다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-74",
+      "number": 74,
+      "type": "sentence-analysis",
+      "stem": "The school provides every student with a free lunch.",
+      "answer": {
+        "analysis": "The school(S) provides(V) every student(O) (with a free lunch).",
+        "pattern": "3형식",
+        "translation": "그 학교는 모든 학생에게 무료 점심을 제공한",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-75",
+      "number": 75,
+      "type": "sentence-analysis",
+      "stem": "I always thought him a very honest and reliable person.",
+      "answer": {
+        "analysis": "I(S) (always) thought(V) him(O) a very honest and reliable person(OC).",
+        "pattern": "5형식",
+        "translation": "나는 항상 그가 매우 정직하고 믿을 수 있는 사람이라고 생각했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-76",
+      "number": 76,
+      "type": "sentence-analysis",
+      "stem": "The cat is sleeping peacefully on the sofa in the living room.",
+      "answer": {
+        "analysis": "The cat(S) is sleeping(V) (peacefully) (on the sofa) (in the living room).",
+        "pattern": "1형식",
+        "translation": "개가 거실 소파 위에서 평화롭게 잠자 고 있다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-77",
+      "number": 77,
+      "type": "sentence-analysis",
+      "stem": "The air in the forest feels cool and fresh in the early morning.",
+      "answer": {
+        "analysis": "The air(S) (in the forest) feels(V) cool and fresh(C) (in the early morning).",
+        "pattern": "2형식",
+        "translation": "이른 아침 숲속의 공기는 시원하고 신선하게 느껴진다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-78",
+      "number": 78,
+      "type": "sentence-analysis",
+      "stem": "The author wrote a personal letter to each of his fans.",
+      "answer": {
+        "analysis": "The author(S) wrote(V) a personal letter(DO) (to each of his fans).",
+        "pattern": "4형식",
+        "translation": "그 작가는 자신의 각 팬에게 개인적인 편지 를 썼다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-79",
+      "number": 79,
+      "type": "sentence-analysis",
+      "stem": "The board of directors appointed her the new CEO of the company.",
+      "answer": {
+        "analysis": "The board of directors(S) appointed(V) her(O) the new CEO(OC) (of the company).",
+        "pattern": "5형식",
+        "translation": "이사회는 그녀를 그 회사 의 새로운 CEO로 임명했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-80",
+      "number": 80,
+      "type": "sentence-analysis",
+      "stem": "I suddenly heard a loud crash from the kitchen.",
+      "answer": {
+        "analysis": "I(S) (suddenly) heard(V) a loud crash(O) (from the kitchen).",
+        "pattern": "3형식",
+        "translation": "나는 갑자기 부엌에서 나는 큰 충돌 소리를 들었다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-81",
+      "number": 81,
+      "type": "sentence-analysis",
+      "stem": "The concert on the beach will go on despite the rain.",
+      "answer": {
+        "analysis": "The concert(S) (on the beach) will go on(V) (despite the rain).",
+        "pattern": "1형식",
+        "translation": "비에도 불구하고 해변에서의 콘서트는 계속될 것",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-82",
+      "number": 82,
+      "type": "sentence-analysis",
+      "stem": "The new plan for the city's development seems quite promising.",
+      "answer": {
+        "analysis": "The new plan(S) (for the city's development) seems(V) (quite) promising(C).",
+        "pattern": "2형식",
+        "translation": "도시 개발을 위한 새로운 계획 은 꽤 유망해 보인다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-83",
+      "number": 83,
+      "type": "sentence-analysis",
+      "stem": "The government recently built a new library for the community.",
+      "answer": {
+        "analysis": "The government(S) (recently) built(V) a new library(O) (for the community).",
+        "pattern": "3형식",
+        "translation": "정부는 최근에 지역 사회를 위해 새로운 도서관을 지었다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-84",
+      "number": 84,
+      "type": "sentence-analysis",
+      "stem": "My grandfather often showed me his old pictures from the war.",
+      "answer": {
+        "analysis": "My grandfather(S) (often) showed(V) me(IO) his old pictures(DO) (from the war).",
+        "pattern": "4형식",
+        "translation": "할아버지는 종종 나에게 전 쟁 때의 낡은 사진들을 보여주셨다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-85",
+      "number": 85,
+      "type": "sentence-analysis",
+      "stem": "The long hike up the mountain made our legs very tired.",
+      "answer": {
+        "analysis": "The long hike(S) (up the mountain) made(V) our legs(O) (very) tired(OC).",
+        "pattern": "5형식",
+        "translation": "산 위로의 긴 하이킹은 우리 다리를 매우 피곤하게 만들었다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-86",
+      "number": 86,
+      "type": "sentence-analysis",
+      "stem": "The moon appeared brightly from behind the clouds.",
+      "answer": {
+        "analysis": "The moon(S) appeared(V) (brightly) (from behind the clouds).",
+        "pattern": "1형식",
+        "translation": "달이 구름 뒤에서 밝게 나타났다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-87",
+      "number": 87,
+      "type": "sentence-analysis",
+      "stem": "The new medicine from the lab tastes terribly bitter.",
+      "answer": {
+        "analysis": "The new medicine(S) (from the lab) tastes(V) (terribly) bitter(C).",
+        "pattern": "2형식",
+        "translation": "연구실에서 나온 신약은 끔찍하게 쓴맛이 난",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-88",
+      "number": 88,
+      "type": "sentence-analysis",
+      "stem": "I will definitely get you a good seat for the concert.",
+      "answer": {
+        "analysis": "I(S) will (definitely) get(V) you(IO) a good seat(DO) (for the concert).",
+        "pattern": "4형식",
+        "translation": "나는 반드시 너에게 콘서트 좋은 자리를 구해줄게.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-89",
+      "number": 89,
+      "type": "sentence-analysis",
+      "stem": "The famous actor always keeps himself in good shape.",
+      "answer": {
+        "analysis": "The famous actor(S) (always) keeps(V) himself(O) in good shape(OC).",
+        "pattern": "5형식",
+        "translation": "그 유명한 배우는 항상 자신을 좋은 몸 상태로 유지한다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-90",
+      "number": 90,
+      "type": "sentence-analysis",
+      "stem": "The teacher gave her students a lot of homework over the weekend.",
+      "answer": {
+        "analysis": "The teacher(S) gave(V) her students(IO) a lot of homework(DO) (over the weekend).",
+        "pattern": "4형식",
+        "translation": "선생님은 주말 동안 학 생들에게 많은 숙제를 내주셨다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-91",
+      "number": 91,
+      "type": "sentence-analysis",
+      "stem": "The guests for the party arrived one after another.",
+      "answer": {
+        "analysis": "The guests(S) (for the party) arrived(V) (one after another).",
+        "pattern": "1형식",
+        "translation": "파티 손님들이 잇달아 도착했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-92",
+      "number": 92,
+      "type": "sentence-analysis",
+      "stem": "He remained a true friend to me through all the difficult times.",
+      "answer": {
+        "analysis": "He(S) remained(V) a true friend(C) (to me) (through all the difficult times).",
+        "pattern": "2형식",
+        "translation": "그는 모든 어려운 시기를 거쳐 나 에게 진정한 친구로 남아주었다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-93",
+      "number": 93,
+      "type": "sentence-analysis",
+      "stem": "The unexpected storm damaged many crops in the region.",
+      "answer": {
+        "analysis": "The unexpected storm(S) damaged(V) many crops(O) (in the region).",
+        "pattern": "3형식",
+        "translation": "예기치 못한 폭풍이 그 지역의 많은 농 작물에 피해를 입혔다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-94",
+      "number": 94,
+      "type": "sentence-analysis",
+      "stem": "I want to ask you a personal question about your decision.",
+      "answer": {
+        "analysis": "I(S) want to ask(V) you(IO) a personal question(DO) (about your decision).",
+        "pattern": "4형식",
+        "translation": "나는 당신의 결정에 대해 개인적 인 질문을 하나 하고 싶습니다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-95",
+      "number": 95,
+      "type": "sentence-analysis",
+      "stem": "We believe the witness's testimony to be completely true.",
+      "answer": {
+        "analysis": "We(S) believe(V) the witness's testimony(O) to be accurate(OC).",
+        "pattern": "5형식",
+        "translation": "우리는 그 증인의 증언이 정확하다고 믿는다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-96",
+      "number": 96,
+      "type": "sentence-analysis",
+      "stem": "The dog on the leash is barking loudly at every passerby.",
+      "answer": {
+        "analysis": "The dog(S) (on the leash) is barking(V) (loudly) (at every passerby).",
+        "pattern": "1형식",
+        "translation": "목줄을 한 개가 모든 행인에게 시끄럽게 짖고 있다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-97",
+      "number": 97,
+      "type": "sentence-analysis",
+      "stem": "The room became completely silent after his shocking announcement.",
+      "answer": {
+        "analysis": "The room(S) became(V) (completely) silent(C) (after his shocking announcement).",
+        "pattern": "2형식",
+        "translation": "그의 충격적인 발표 후에 방은 완전히 조용해졌다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-98",
+      "number": 98,
+      "type": "sentence-analysis",
+      "stem": "He is currently learning Chinese for his new job in Shanghai.",
+      "answer": {
+        "analysis": "He(S) is (currently) learning(V) Chinese(O) (for his new job) (in Shanghai).",
+        "pattern": "3형식",
+        "translation": "그는 상하이에서의 새 직장을 위해 현재 중국어를 배우고 있다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-99",
+      "number": 99,
+      "type": "sentence-analysis",
+      "stem": "The tragic news in the paper left everyone speechless.",
+      "answer": {
+        "analysis": "The bad news(S) (in the paper) left(V) her(O) speechless(OC).",
+        "pattern": "5형식",
+        "translation": "신문에 실린 비극적인 소식은 그녀를 말문이 막 히게 했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week2-100",
+      "number": 100,
+      "type": "sentence-analysis",
+      "stem": "The key to success in life is consistent effort.",
+      "answer": {
+        "analysis": "The key(S) (to success) (in life) is(V) consistent effort(C).",
+        "pattern": "2형식",
+        "translation": "인생에서 성공의 열쇠는 꾸준한 노력이다.",
+        "notes": ""
+      }
+    }
+  ]
+}

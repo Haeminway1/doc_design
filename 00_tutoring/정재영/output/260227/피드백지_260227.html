@@ -1,0 +1,941 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>학습 피드백지 — 정재영 260227</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+
+  /* =============================================================
+     피드백지 공통 CSS v2.0 — Teal & Warm 팔레트
+     Primary Dark: #2c6975 | Primary Light: #68b2a0
+     Accent Blue: #1a6fc4 | Red: #e53e3e | Green: #2f855a
+     ============================================================= */
+
+  /* ===== RESET & BASE ===== */
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html {
+    font-size: 9.5pt;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 9.5pt;
+    line-height: 1.65;
+    color: #1a202c;
+    background: #f7fafa !important;
+    orphans: 3; widows: 3;
+  }
+
+  @page { size: A4; margin: 15mm 13mm; }
+
+  /* ===== PAGE BREAK ===== */
+  .page-break-after { page-break-after: always !important; }
+  .page-break-before { page-break-before: always !important; }
+  .avoid-break { page-break-inside: avoid !important; break-inside: avoid !important; }
+  h1, h2, h3, h4 { page-break-after: avoid !important; }
+  table, .concept-box, .tip-box, .warning-box, .answer-box, .grammar-block,
+  .problem-card, .diagnosis-card {
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+
+  /* ===== HEADINGS ===== */
+  h1 {
+    font-size: 18pt; font-weight: 700; color: #2c6975 !important;
+    margin: 16px 0 8px 0; padding-bottom: 5px;
+    border-bottom: 2.5px solid #2c6975; line-height: 1.3;
+  }
+  h2 {
+    font-size: 14pt; font-weight: 700; color: #2c6975 !important;
+    margin: 14px 0 8px 0; padding-bottom: 3px;
+    border-bottom: 1.5px solid #d0e4df; line-height: 1.3;
+  }
+  h3 {
+    font-size: 12pt; font-weight: 700; color: #2d3748 !important;
+    margin: 12px 0 6px 0; line-height: 1.4;
+  }
+  h4 {
+    font-size: 10pt; font-weight: 700; color: #4a5568 !important;
+    margin: 8px 0 5px 0; line-height: 1.4;
+  }
+  p { margin-bottom: 6px; }
+  strong { font-weight: 700; }
+  hr { border: none; border-top: 1px solid #d0e4df; margin: 16px 0; }
+
+  /* ===== TABLES ===== */
+  table {
+    width: 100%; border-collapse: collapse;
+    margin: 10px 0 12px 0; font-size: 8.5pt; line-height: 1.55;
+  }
+  thead th {
+    background-color: #68b2a0 !important; color: #fff !important;
+    font-weight: 700; padding: 6px 8px; text-align: left;
+    border: 1px solid #5aa090; font-size: 8.5pt;
+  }
+  tbody td {
+    padding: 5px 8px; border: 1px solid #d0e4df; vertical-align: top;
+  }
+  tbody tr:nth-child(odd) { background-color: #fff !important; }
+  tbody tr:nth-child(even) { background-color: #f0f7f5 !important; }
+  tbody td:first-child { font-weight: 500; }
+
+  .result-correct { color: #2f855a !important; font-weight: 700; }
+  .result-wrong { color: #e53e3e !important; font-weight: 700; }
+
+  /* ===== REPORT HEADER (첫 페이지) ===== */
+  .report-header { margin-bottom: 14px; }
+  .report-date { font-size: 9.5pt; color: #718096 !important; font-weight: 400; margin-bottom: 3px; }
+  .report-title {
+    font-size: 20pt; font-weight: 700; color: #2c6975 !important;
+    margin-bottom: 5px; line-height: 1.2; border: none; padding: 0;
+  }
+  .report-subtitle { font-size: 11pt; font-weight: 400; color: #4a5568 !important; margin-bottom: 2px; }
+  .report-meta { font-size: 8.5pt; color: #718096 !important; line-height: 1.8; margin-top: 6px; }
+  .report-meta span { display: inline-block; margin-right: 14px; }
+
+  /* ===== SECTION HEADER BAR ===== */
+  .section-header {
+    background-color: #2c6975 !important; color: #fff !important;
+    padding: 10px 20px; margin: 16px -13mm 12px -13mm;
+    padding-left: 16mm; padding-right: 13mm;
+    font-size: 14pt; font-weight: 700; line-height: 1.3;
+  }
+  .section-header .section-num {
+    font-size: 11pt; font-weight: 300; display: block;
+    margin-bottom: 1px; color: #9fcfc2 !important;
+  }
+
+  /* ===== SEVERITY BADGES ===== */
+  .severity-high {
+    display: inline-block; background-color: #e53e3e !important; color: #fff !important;
+    font-size: 7.5pt; font-weight: 700; padding: 1px 8px; border-radius: 10px;
+  }
+  .severity-mid {
+    display: inline-block; background-color: #ed8936 !important; color: #fff !important;
+    font-size: 7.5pt; font-weight: 700; padding: 1px 8px; border-radius: 10px;
+  }
+  .severity-low {
+    display: inline-block; background-color: #2f855a !important; color: #fff !important;
+    font-size: 7.5pt; font-weight: 700; padding: 1px 8px; border-radius: 10px;
+  }
+
+  /* ===== DIAGNOSIS CARD (학습 요약) ===== */
+  .diagnosis-card {
+    border: 1.5px solid #a8cec5; border-radius: 16px;
+    padding: 12px 16px; margin: 12px 0; background-color: #fff !important;
+  }
+  .diagnosis-card h3 { margin-top: 0; color: #2c6975 !important; font-size: 11pt; }
+  .priority-order {
+    background-color: #eaf3f0 !important; border-left: 3px solid #68b2a0;
+    padding: 8px 14px; margin: 10px 0; font-size: 9.5pt; border-radius: 0 12px 12px 0;
+  }
+
+  /* ===== QUESTION BOX ===== */
+  .question-box {
+    background-color: #f0f7f5 !important; border-left: 3px solid #68b2a0;
+    padding: 8px 12px; margin: 6px 0; font-size: 9.5pt; line-height: 1.65;
+    border-radius: 0 12px 12px 0;
+  }
+  .question-box p { margin: 0; }
+
+  /* ===== ANSWER BOX ===== */
+  .answer-box {
+    background-color: #f0fff4 !important; border-left: 3px solid #2f855a;
+    padding: 6px 12px; margin: 6px 0; font-weight: 500;
+    border-radius: 0 12px 12px 0;
+  }
+
+  /* ===== GRAMMAR BLOCK ===== */
+  .grammar-block {
+    background-color: #f0f4f3 !important; border: 1px solid #d0e4df;
+    padding: 10px 14px; margin: 10px 0; border-radius: 12px;
+    font-size: 8.5pt; line-height: 1.75; white-space: pre-wrap;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+
+  /* ===== TIP BOX ===== */
+  .tip-box {
+    background-color: #fffaf0 !important; border-left: 3px solid #ed8936;
+    padding: 8px 14px; margin: 10px 0; border-radius: 0 12px 12px 0;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+  .tip-box .tip-label {
+    font-weight: 700; color: #c05621 !important; font-size: 8.5pt;
+    display: block; margin-bottom: 3px;
+  }
+
+  /* ===== WARNING BOX ===== */
+  .warning-box {
+    background-color: #fff5f5 !important; border-left: 3px solid #e53e3e;
+    padding: 8px 14px; margin: 10px 0; border-radius: 0 12px 12px 0;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+  .warning-box .warning-label {
+    font-weight: 700; color: #e53e3e !important; font-size: 8.5pt;
+    display: block; margin-bottom: 3px;
+  }
+
+  /* ===== CONCEPT BOX ===== */
+  .concept-box {
+    background-color: #eaf3f0 !important; border: 1px solid #68b2a0;
+    padding: 10px 14px; margin: 10px 0; border-radius: 12px;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+  .concept-box .concept-label {
+    font-weight: 700; color: #2c6975 !important; font-size: 8.5pt;
+    display: block; margin-bottom: 4px;
+  }
+
+  /* ===== PROBLEM CARD ===== */
+  .problem-card {
+    border: 1px solid #d0e4df; border-radius: 14px;
+    padding: 12px 16px; margin: 10px 0;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+    background-color: #fff !important;
+  }
+  .problem-header {
+    display: flex; align-items: center; margin-bottom: 10px; gap: 10px;
+  }
+  .problem-badge {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 32px; height: 32px; border-radius: 50%;
+    background-color: #68b2a0 !important; color: #fff !important;
+    font-weight: 700; font-size: 11pt; flex-shrink: 0;
+  }
+  .problem-title {
+    font-size: 10pt; font-weight: 700; color: #2d3748 !important;
+  }
+  .problem-source {
+    font-size: 7.5pt; color: #718096 !important; font-weight: 400;
+    display: block; margin-top: 1px;
+  }
+
+  /* ===== HIGHLIGHT ===== */
+  .hl-key { color: #2c6975 !important; font-weight: 700; }
+  .hl-wrong { color: #e53e3e !important; font-weight: 700; text-decoration: line-through; }
+  .hl-correct { color: #2f855a !important; font-weight: 700; }
+  .hl-blue { color: #1a6fc4 !important; font-weight: 700; }
+
+  /* ===== FLOWCHART ===== */
+  .flowchart { margin: 12px 0; page-break-inside: avoid !important; }
+  .flow-step {
+    background-color: #eaf3f0 !important; border: 1px solid #a8cec5;
+    border-radius: 12px; padding: 8px 14px; margin-bottom: 3px; font-size: 9pt;
+  }
+  .flow-step .step-label { font-weight: 700; color: #2c6975 !important; margin-right: 8px; }
+  .flow-step .step-sub {
+    padding-left: 20px; font-size: 8.5pt; color: #4a5568 !important;
+    margin-top: 3px; line-height: 1.65;
+  }
+  .flow-arrow { text-align: center; font-size: 13pt; color: #68b2a0 !important; line-height: 1.2; margin: 2px 0; }
+
+  /* ===== CHECKLIST ===== */
+  .checklist-group { margin-bottom: 12px; page-break-inside: avoid !important; }
+  .checklist-group-title {
+    font-size: 10pt; font-weight: 700; color: #2c6975 !important;
+    margin-bottom: 6px; padding: 3px 0; border-bottom: 1px solid #d0e4df;
+  }
+  .checklist-item {
+    display: flex; align-items: flex-start; gap: 6px;
+    padding: 3px 0; font-size: 9pt; line-height: 1.55;
+  }
+  .checkbox {
+    display: inline-block; width: 13px; height: 13px; min-width: 13px;
+    border: 1.5px solid #a0aec0; border-radius: 3px; margin-top: 2px;
+  }
+
+  /* ===== SECTION DIVIDER ===== */
+  .section-divider { border: none; border-top: 1.5px solid #d0e4df; margin: 16px 0; }
+
+  /* ===== VARIANT CHOICES ===== */
+  .variant-choices { padding-left: 18px; font-size: 8.5pt; line-height: 1.75; margin: 3px 0; }
+
+  /* ===== GROUP ROW ===== */
+  .group-row td {
+    background-color: #eaf3f0 !important; font-weight: 700;
+    color: #2c6975 !important; border-bottom: 2px solid #68b2a0;
+  }
+
+  /* ===== COMPARE TABLE ===== */
+  .compare-table thead th:nth-child(2) { background-color: #5aa090 !important; }
+  .compare-table thead th:nth-child(3) { background-color: #2f855a !important; }
+
+  /* ===== EXPRESSION TABLE ===== */
+  .expression-table td:first-child { white-space: nowrap; font-weight: 700; }
+
+  /* ===== MARKER ===== */
+  .marker-o { color: #2f855a !important; font-weight: 700; }
+  .marker-x { color: #e53e3e !important; font-weight: 700; }
+
+  /* ===== PASSAGE BLOCK (독해 지문) ===== */
+  .passage-block {
+    background-color: #f7fafa !important; border: 1px solid #d0e4df;
+    border-left: 3px solid #68b2a0;
+    padding: 12px 16px; margin: 10px 0; border-radius: 0 12px 12px 0;
+    font-size: 9pt; line-height: 1.85;
+    text-align: justify !important;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+
+  /* Allow long passages to break across pages */
+  .passage-block--long {
+    page-break-inside: auto !important; break-inside: auto !important;
+  }
+
+  /* Legacy .page container fallback (pre-v2 feedback HTMLs) */
+  .page {
+    min-height: 297mm;
+    height: auto;
+    overflow: visible;
+  }
+  .page-content {
+    overflow: visible;
+  }
+
+  /* ===== CHOICES LIST ===== */
+  .choices-list {
+    margin: 8px 0; font-size: 9pt; line-height: 1.85;
+  }
+  .choices-list .choice-item { padding: 1px 0; }
+  .choice-correct { color: #2f855a !important; font-weight: 700; }
+  .choice-wrong { color: #e53e3e !important; font-weight: 700; text-decoration: line-through; }
+
+  /* ===== PRINT OPTIMIZATION ===== */
+  @media print {
+    body { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; background: #fff !important; }
+    .section-header { margin-left: -13mm; margin-right: -13mm; padding-left: 16mm; padding-right: 13mm; }
+  }
+
+</style>
+</head>
+<body>
+
+<div class="report-header">
+  <div class="report-date">2026. 02. 27</div>
+  <h1 class="report-title" style="border:none; margin-bottom:6px;">학습 피드백지</h1>
+  <div class="report-subtitle">어휘 — 베라진 2월 어휘 토너먼트</div>
+  <div class="report-meta">
+    <span><strong>학생</strong> 정재영</span>
+    <span><strong>교재</strong> 베라진 2월 어휘 토너먼트</span>
+    <span><strong>범위</strong> Section A Q.1~50</span>
+  </div>
+</div>
+
+<div class="diagnosis-card">
+  <h3>학습 요약</h3>
+  <p style="font-size:10pt; margin-bottom:8px;">
+    전체 50문제 중 오답 <strong>12문제</strong> (정답률 약 30% (15/50, 공란 23문제 포함))
+  </p>
+  <p style="font-size:9.5pt; margin-bottom:4px;">
+    <strong style="color:#38a169;">잘한 점:</strong> immune, consume, control, core, pollution 등 일상 빈출 어휘 15개를 정확히 암기함. 동사-명사 어근 연결 능력(consume→소비, pollute→오염)이 보임
+  </p>
+  <p style="font-size:9.5pt; margin-bottom:12px;">
+    <strong style="color:#e53e3e;">아쉬운 점:</strong> 50문제 중 23문제 공란(미암기), 12문제는 유사 의미·품사 혼동. 특히 추상 명사(precaution, assumption, reflection 등)와 고급 형용사(applicable, sustainable, excessive)가 전멸
+  </p>
+  
+  <table>
+    <thead>
+      <tr><th>취약 영역</th><th style="width:60px;">문제 수</th><th style="width:70px;">심각도</th><th>핵심</th></tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td><strong>추상 명사 미암기</strong></td>
+        <td>11문제</td>
+        <td><span class="severity-high">높음</span></td>
+        <td>precaution, prospect, assumption 등 추상 명사 대부분 공란</td>
+      </tr>
+      <tr>
+        <td><strong>고급 형용사 미암기</strong></td>
+        <td>5문제</td>
+        <td><span class="severity-high">높음</span></td>
+        <td>applicable, sustainable, excessive 등 -able/-ive 형용사 전멸</td>
+      </tr>
+      <tr>
+        <td><strong>의미 혼동</strong></td>
+        <td>7문제</td>
+        <td><span class="severity-mid">보통</span></td>
+        <td>exchange↔변환, attractive↔도전 등 뜻을 다른 단어로 착각</td>
+      </tr>
+      <tr>
+        <td><strong>품사·형태 혼동</strong></td>
+        <td>3문제</td>
+        <td><span class="severity-mid">보통</span></td>
+        <td>concentration(명사)→집중하다(동사), able↔unable 혼동</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="priority-order">
+  <strong>학습 우선순위:</strong> 1) 공란 단어 암기 (23개) → 2) 혼동 단어 의미 구별 (12개) → 3) 접두사·접미사 패턴 학습
+</div>
+
+<div class="page-break-before section-header">
+  <span class="section-num">Section 1</span>
+  틀린 문제 리스트
+</div>
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">1</div>
+    <div>
+      <div class="problem-title">영한 뜻 쓰기</div>
+      <span class="problem-source">4번</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>reserve v.</p>
+  </div>
+  <div style="margin:8px 0; font-size:9.5pt;">
+    <span class="hl-wrong">학생 답: 해적하다(?)</span> &rarr;
+    <span class="hl-correct">정답: 예약하다, 보존하다</span>
+  </div>
+</div>
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">2</div>
+    <div>
+      <div class="problem-title">영한 뜻 쓰기</div>
+      <span class="problem-source">11번</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>intend v.</p>
+  </div>
+  <div style="margin:8px 0; font-size:9.5pt;">
+    <span class="hl-wrong">학생 답: 다짐하다</span> &rarr;
+    <span class="hl-correct">정답: 의도하다, ~할 작정이다</span>
+  </div>
+</div>
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">3</div>
+    <div>
+      <div class="problem-title">영한 뜻 쓰기</div>
+      <span class="problem-source">14번</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>exchange v./n.</p>
+  </div>
+  <div style="margin:8px 0; font-size:9.5pt;">
+    <span class="hl-wrong">학생 답: 변환하다</span> &rarr;
+    <span class="hl-correct">정답: 교환하다</span>
+  </div>
+</div>
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">4</div>
+    <div>
+      <div class="problem-title">영한 뜻 쓰기</div>
+      <span class="problem-source">19번</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>conduct v./n.</p>
+  </div>
+  <div style="margin:8px 0; font-size:9.5pt;">
+    <span class="hl-wrong">학생 답: 연행하다(?)</span> &rarr;
+    <span class="hl-correct">정답: 수행하다, 행동하다, 지휘하다</span>
+  </div>
+</div>
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">5</div>
+    <div>
+      <div class="problem-title">영한 뜻 쓰기</div>
+      <span class="problem-source">25번</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>concentration n.</p>
+  </div>
+  <div style="margin:8px 0; font-size:9.5pt;">
+    <span class="hl-wrong">학생 답: 집중하다</span> &rarr;
+    <span class="hl-correct">정답: 집중, 집중력</span>
+  </div>
+</div>
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">6</div>
+    <div>
+      <div class="problem-title">영한 뜻 쓰기</div>
+      <span class="problem-source">31번</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>operation n.</p>
+  </div>
+  <div style="margin:8px 0; font-size:9.5pt;">
+    <span class="hl-wrong">학생 답: 기술</span> &rarr;
+    <span class="hl-correct">정답: 수술, 운영, 작전</span>
+  </div>
+</div>
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">7</div>
+    <div>
+      <div class="problem-title">영한 뜻 쓰기</div>
+      <span class="problem-source">35번</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>selection n.</p>
+  </div>
+  <div style="margin:8px 0; font-size:9.5pt;">
+    <span class="hl-wrong">학생 답: 독립하다</span> &rarr;
+    <span class="hl-correct">정답: 선택, 선발</span>
+  </div>
+</div>
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">8</div>
+    <div>
+      <div class="problem-title">영한 뜻 쓰기</div>
+      <span class="problem-source">36번</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>transition n.</p>
+  </div>
+  <div style="margin:8px 0; font-size:9.5pt;">
+    <span class="hl-wrong">학생 답: 변화하다</span> &rarr;
+    <span class="hl-correct">정답: 전환, 과도기</span>
+  </div>
+</div>
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">9</div>
+    <div>
+      <div class="problem-title">영한 뜻 쓰기</div>
+      <span class="problem-source">41번</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>able adj.</p>
+  </div>
+  <div style="margin:8px 0; font-size:9.5pt;">
+    <span class="hl-wrong">학생 답: ~할 수 없다</span> &rarr;
+    <span class="hl-correct">정답: ~할 수 있는, 유능한</span>
+  </div>
+</div>
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">10</div>
+    <div>
+      <div class="problem-title">영한 뜻 쓰기</div>
+      <span class="problem-source">45번</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>profitable adj.</p>
+  </div>
+  <div style="margin:8px 0; font-size:9.5pt;">
+    <span class="hl-wrong">학생 답: 적절한</span> &rarr;
+    <span class="hl-correct">정답: 수익성 있는, 이익이 되는</span>
+  </div>
+</div>
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">11</div>
+    <div>
+      <div class="problem-title">영한 뜻 쓰기</div>
+      <span class="problem-source">47번</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>attractive adj.</p>
+  </div>
+  <div style="margin:8px 0; font-size:9.5pt;">
+    <span class="hl-wrong">학생 답: 도전하다</span> &rarr;
+    <span class="hl-correct">정답: 매력적인</span>
+  </div>
+</div>
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">12</div>
+    <div>
+      <div class="problem-title">영한 뜻 쓰기</div>
+      <span class="problem-source">50번</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>relative adj./n.</p>
+  </div>
+  <div style="margin:8px 0; font-size:9.5pt;">
+    <span class="hl-wrong">학생 답: (판독 불가)</span> &rarr;
+    <span class="hl-correct">정답: 상대적인, 친척</span>
+  </div>
+</div>
+
+<div class="page-break-before section-header">
+  <span class="section-num">Section 2</span>
+  해설 파트
+</div>
+<h2>4번 — 영한 뜻 쓰기</h2>
+<div class="question-box" style="margin-top:12px;">
+  <p><strong>reserve v.</strong></p>
+</div>
+<div class='concept-box'><strong>reserve</strong> [rɪˈzɜːrv] <em>v.</em> 예약하다, 보존하다, 비축하다 / <em>n.</em> 예비, 보호구역</div><div class='grammar-block' style='text-align:justify'><strong>예문</strong><br>• I'd like to <strong>reserve</strong> a table for two. — 2인 테이블을 <strong>예약</strong>하고 싶습니다.<br>• We should <strong>reserve</strong> some money for emergencies. — 비상금을 <strong>비축</strong>해야 합니다.<br>• This area is a nature <strong>reserve</strong>. — 이 지역은 자연 <strong>보호구역</strong>입니다.</div><div class='tip-box'><strong>암기 TIP</strong><br>re-(다시) + serve(지키다) → '다시 지켜두다' → 나중을 위해 남겨두다 → 예약/보존/비축</div>
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>어디서 막혔을까:</strong> reserve의 어근을 정확히 떠올리지 못하고, 비슷한 발음의 단어를 추측해서 작성한 것으로 보임</p>
+  <p><strong>오류 패턴:</strong> 불확실한 기억 — 어근은 인식하나 정확한 의미 연결 실패</p>
+  <p><strong>집중 포인트:</strong> '남겨두다'가 핵심 의미. 자리 남겨두기=예약, 자연 남겨두기=보존, 자원 남겨두기=비축</p>
+</div>
+<div class="page-break-before"></div>
+<h2>11번 — 영한 뜻 쓰기</h2>
+<div class="question-box" style="margin-top:12px;">
+  <p><strong>intend v.</strong></p>
+</div>
+<div class='concept-box'><strong>intend</strong> [ɪnˈtend] <em>v.</em> 의도하다, ~할 작정이다, ~할 계획이다</div><div class='grammar-block' style='text-align:justify'><strong>예문</strong><br>• I <strong>intend</strong> to study abroad next year. — 내년에 유학할 <strong>계획이다</strong>.<br>• What do you <strong>intend</strong> to do after graduation? — 졸업 후 뭘 할 <strong>작정</strong>이니?<br>• The gift was <strong>intended</strong> for you. — 그 선물은 너를 위해 <strong>의도된</strong> 거였어.</div><div class='tip-box'><strong>암기 TIP</strong><br>in-(안으로) + tend(향하다) → '마음이 안으로 향하다' → 의도하다<br>파생어: intention(의도), intentional(의도적인)</div><div class='warning-box'><strong>혼동 주의: intend vs 다짐하다</strong><br>다짐하다 = resolve, determine (결심·각오의 느낌)<br>intend = 의도하다 (계획·목적의 느낌)<br>intend는 '앞으로의 계획'에, 다짐은 '굳은 결심'에 초점</div>
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>어디서 막혔을까:</strong> '~할 작정이다'와 '다짐하다'가 비슷한 뉘앙스라서 혼동한 것으로 보임</p>
+  <p><strong>오류 패턴:</strong> 유사 뉘앙스 혼동 — 뜻이 비슷하지만 정확한 대응어가 아님</p>
+  <p><strong>집중 포인트:</strong> intend = 의도/계획 (plan), 다짐 = 결심/각오 (resolve). 'I intend to~' = '~할 계획이다'로 암기</p>
+</div>
+<div class="page-break-before"></div>
+<h2>14번 — 영한 뜻 쓰기</h2>
+<div class="question-box" style="margin-top:12px;">
+  <p><strong>exchange v./n.</strong></p>
+</div>
+<div class='concept-box'><strong>exchange</strong> [ɪksˈtʃeɪndʒ] <em>v.</em> 교환하다 / <em>n.</em> 교환, 환전</div><div class='grammar-block' style='text-align:justify'><strong>예문</strong><br>• Can I <strong>exchange</strong> this shirt for a larger size? — 이 셔츠를 더 큰 사이즈로 <strong>교환</strong>할 수 있나요?<br>• They <strong>exchanged</strong> phone numbers. — 그들은 전화번호를 <strong>교환</strong>했다.<br>• The foreign <strong>exchange</strong> rate is rising. — 외환 <strong>환율</strong>이 오르고 있다.</div><div class='tip-box'><strong>암기 TIP</strong><br>ex-(밖으로) + change(바꾸다) → '서로 밖으로 바꾸다' → 교환하다<br>핵심: 쌍방향으로 주고받는 것!</div><div class='warning-box'><strong>혼동 주의: exchange vs 변환</strong><br>교환(exchange) = A와 B를 서로 주고받음 (쌍방향)<br>변환(convert/transform) = A를 B로 바꿈 (일방향)<br>환전도 exchange: 원화↔달러 서로 교환</div>
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>어디서 막혔을까:</strong> '바꾸다' 계열 단어로 기억했으나, 교환(쌍방향)과 변환(일방향)의 차이를 구분하지 못함</p>
+  <p><strong>오류 패턴:</strong> 유사 의미 혼동 — '바꾸다' 의미권 내 세부 구분 실패</p>
+  <p><strong>집중 포인트:</strong> exchange의 ex-는 '서로', 즉 쌍방향 교환. convert/transform이 '변환'. 환전소 = exchange</p>
+</div>
+<div class="page-break-before"></div>
+<h2>19번 — 영한 뜻 쓰기</h2>
+<div class="question-box" style="margin-top:12px;">
+  <p><strong>conduct v./n.</strong></p>
+</div>
+<div class='concept-box'><strong>conduct</strong> [kənˈdʌkt] <em>v.</em> 수행하다, 행동하다, 지휘하다 / [ˈkɒndʌkt] <em>n.</em> 행동, 행위</div><div class='grammar-block' style='text-align:justify'><strong>예문</strong><br>• The scientist <strong>conducted</strong> an experiment. — 과학자가 실험을 <strong>수행</strong>했다.<br>• He <strong>conducted</strong> the orchestra beautifully. — 그는 오케스트라를 아름답게 <strong>지휘</strong>했다.<br>• Her <strong>conduct</strong> in class was excellent. — 그녀의 수업 <strong>태도</strong>는 훌륭했다.</div><div class='tip-box'><strong>암기 TIP</strong><br>con-(함께) + duct(이끌다) → '함께 이끌다' → 수행/지휘<br>같은 어근: produce(생산), reduce(줄이다), introduce(소개하다)</div>
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>어디서 막혔을까:</strong> conduct의 '이끌다' 뉘앙스를 '연행(끌고 가다)'으로 연결한 것으로 추정</p>
+  <p><strong>오류 패턴:</strong> 어근 의미 과잉 해석 — duct(이끌다)를 부정적 의미(연행)로 확대</p>
+  <p><strong>집중 포인트:</strong> conduct = '함께 이끌다' → 실험 수행, 오케스트라 지휘, 행동 등 중립적·긍정적 의미</p>
+</div>
+<div class="page-break-before"></div>
+<h2>25번 — 영한 뜻 쓰기</h2>
+<div class="question-box" style="margin-top:12px;">
+  <p><strong>concentration n.</strong></p>
+</div>
+<div class='concept-box'><strong>concentration</strong> [ˌkɒnsənˈtreɪʃn] <em>n.</em> 집중, 집중력, 농도</div><div class='grammar-block' style='text-align:justify'><strong>예문</strong><br>• This task requires intense <strong>concentration</strong>. — 이 과제는 강한 <strong>집중력</strong>을 요한다.<br>• The <strong>concentration</strong> of salt in seawater is about 3.5%. — 해수의 소금 <strong>농도</strong>는 약 3.5%이다.<br>• She lost her <strong>concentration</strong> during the exam. — 시험 중 <strong>집중</strong>을 잃었다.</div><div class='tip-box'><strong>암기 TIP</strong><br>concentrate(동사: 집중하다) + -tion(명사 접미사) = concentration(명사: 집중력)<br>시험에서 품사를 물으면 <strong>명사형 '집중(력)'</strong>으로 써야 정답!</div><div class='warning-box'><strong>품사 주의!</strong><br>concentrate (v.) = 집중하다 ← 동사<br>concentration (n.) = 집중, 집중력 ← 명사<br>문제에 <strong>n.</strong>이 표기되어 있으므로 명사형으로 답해야 함</div>
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>어디서 막혔을까:</strong> 어근의 뜻은 정확히 알고 있으나, 품사(명사)를 확인하지 않고 동사형으로 작성</p>
+  <p><strong>오류 패턴:</strong> 품사 미확인 — 단어의 뜻은 알지만 요구 품사를 무시</p>
+  <p><strong>집중 포인트:</strong> 시험지에 n./v./adj. 표기를 반드시 확인! -tion 접미사 = 명사</p>
+</div>
+<div class="page-break-before"></div>
+<h2>31번 — 영한 뜻 쓰기</h2>
+<div class="question-box" style="margin-top:12px;">
+  <p><strong>operation n.</strong></p>
+</div>
+<div class='concept-box'><strong>operation</strong> [ˌɒpəˈreɪʃn] <em>n.</em> ① 수술 ② 운영, 작동 ③ 작전</div><div class='grammar-block' style='text-align:justify'><strong>예문</strong><br>• The patient needs an <strong>operation</strong> on his heart. — 환자는 심장 <strong>수술</strong>이 필요하다.<br>• The <strong>operation</strong> of the machine is simple. — 기계 <strong>작동</strong>은 간단하다.<br>• A military <strong>operation</strong> was launched at dawn. — 새벽에 군사 <strong>작전</strong>이 시작되었다.</div><div class='tip-box'><strong>암기 TIP</strong><br>operate(작동하다, 수술하다) + -tion = operation<br>'수술실' = operating room → operation = 수술</div><div class='warning-box'><strong>혼동 주의: operation vs 기술</strong><br>기술 = technique, technology, skill<br>operation = 수술/운영/작전 (operate에서 파생)<br>전혀 다른 의미!</div>
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>어디서 막혔을까:</strong> operation의 정확한 뜻을 모르는 상태에서 추측으로 '기술'을 작성한 것으로 보임</p>
+  <p><strong>오류 패턴:</strong> 의미 추측 실패 — 어근 operate를 모르는 상태에서 무관한 뜻을 작성</p>
+  <p><strong>집중 포인트:</strong> operate = 작동하다/수술하다. 수술실(operating room)과 연결해서 암기</p>
+</div>
+<div class="page-break-before"></div>
+<h2>35번 — 영한 뜻 쓰기</h2>
+<div class="question-box" style="margin-top:12px;">
+  <p><strong>selection n.</strong></p>
+</div>
+<div class='concept-box'><strong>selection</strong> [sɪˈlekʃn] <em>n.</em> 선택, 선발, 선별</div><div class='grammar-block' style='text-align:justify'><strong>예문</strong><br>• The <strong>selection</strong> process took three months. — <strong>선발</strong> 과정이 3개월 걸렸다.<br>• We have a wide <strong>selection</strong> of books. — 다양한 책 <strong>선택지</strong>가 있습니다.<br>• Natural <strong>selection</strong> drives evolution. — 자연 <strong>선택</strong>이 진화를 이끈다.</div><div class='tip-box'><strong>암기 TIP</strong><br>select(선택하다) + -tion = selection(선택)<br>자연선택(natural selection)은 다윈의 진화론 핵심 개념!</div>
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>어디서 막혔을까:</strong> selection의 뜻을 모르는 상태에서 -tion 명사를 추측하여 '독립하다'를 작성</p>
+  <p><strong>오류 패턴:</strong> 의미 추측 실패 + 품사 오류 — 명사인데 동사형으로 작성</p>
+  <p><strong>집중 포인트:</strong> select(고르다) → selection(선택). '셀렉트샵(select shop)'에서 골라서 사는 것과 연결</p>
+</div>
+<div class="page-break-before"></div>
+<h2>36번 — 영한 뜻 쓰기</h2>
+<div class="question-box" style="margin-top:12px;">
+  <p><strong>transition n.</strong></p>
+</div>
+<div class='concept-box'><strong>transition</strong> [trænˈzɪʃn] <em>n.</em> 전환, 변천, 과도기</div><div class='grammar-block' style='text-align:justify'><strong>예문</strong><br>• The <strong>transition</strong> from high school to college is difficult. — 고등학교에서 대학으로의 <strong>전환</strong>은 어렵다.<br>• The country is in a period of <strong>transition</strong>. — 그 나라는 <strong>과도기</strong>에 있다.<br>• A smooth <strong>transition</strong> of power took place. — 순조로운 권력 <strong>이양</strong>이 이루어졌다.</div><div class='tip-box'><strong>암기 TIP</strong><br>trans-(건너서, 넘어서) + -ition = 한 상태에서 다른 상태로 넘어가기 → 전환<br>transit(교통수단), transfer(이동) 등과 같은 어근</div><div class='warning-box'><strong>혼동 주의: transition vs change</strong><br>change(변화) = 단순히 달라지는 것 (일반적)<br>transition(전환) = A 상태에서 B 상태로 넘어가는 과정 (방향성 있음)<br>또한 transition은 명사, '변화하다'는 동사형</div>
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>어디서 막혔을까:</strong> transition의 trans-(넘어가다)에서 '변하다' 뉘앙스를 감지했으나, 정확한 뜻과 품사를 틀림</p>
+  <p><strong>오류 패턴:</strong> 근접 의미 혼동 + 품사 오류 — '전환'이 아닌 '변화', 명사가 아닌 동사형</p>
+  <p><strong>집중 포인트:</strong> transition = A→B 전환(과정). change보다 구체적. trans-가 보이면 '넘어가기/전환'을 떠올릴 것</p>
+</div>
+<div class="page-break-before"></div>
+<h2>41번 — 영한 뜻 쓰기</h2>
+<div class="question-box" style="margin-top:12px;">
+  <p><strong>able adj.</strong></p>
+</div>
+<div class='concept-box'><strong>able</strong> [ˈeɪbl] <em>adj.</em> ~할 수 있는, 유능한</div><div class='grammar-block' style='text-align:justify'><strong>예문</strong><br>• She is <strong>able</strong> to speak three languages. — 그녀는 3개 국어를 할 수 <strong>있다</strong>.<br>• He is a very <strong>able</strong> leader. — 그는 매우 <strong>유능한</strong> 리더이다.<br>• Will you be <strong>able</strong> to come tomorrow? — 내일 올 수 <strong>있겠니</strong>?</div><div class='warning-box'><strong>혼동 주의: able vs unable</strong><br><strong>able</strong> = ~할 수 <strong>있는</strong> (긍정)<br><strong>un</strong>able = ~할 수 <strong>없는</strong> (부정)<br>접두사 un-이 붙으면 반대 의미!<br>Q7에서 unable = ~할 수 없다 를 맞혔는데, able에도 같은 답을 써서 틀림</div>
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>어디서 막혔을까:</strong> unable(~할 수 없다)과 able(~할 수 있는)을 혼동. Q7 unable은 맞혔으나 able에 같은 뜻을 적음</p>
+  <p><strong>오류 패턴:</strong> 접두사 un- 간과 — unable에서 un-의 부정 기능을 인식하지 못함</p>
+  <p><strong>집중 포인트:</strong> un- = 부정 접두사. able(가능) ↔ unable(불가능). unhappy(불행한), unfair(불공정한) 등 같은 패턴</p>
+</div>
+<div class="page-break-before"></div>
+<h2>45번 — 영한 뜻 쓰기</h2>
+<div class="question-box" style="margin-top:12px;">
+  <p><strong>profitable adj.</strong></p>
+</div>
+<div class='concept-box'><strong>profitable</strong> [ˈprɒfɪtəbl] <em>adj.</em> 수익성 있는, 이익이 되는</div><div class='grammar-block' style='text-align:justify'><strong>예문</strong><br>• The business became very <strong>profitable</strong>. — 그 사업은 매우 <strong>수익성 있게</strong> 되었다.<br>• It was a <strong>profitable</strong> investment. — <strong>이익이 되는</strong> 투자였다.<br>• Is this deal <strong>profitable</strong> for us? — 이 거래가 우리에게 <strong>이익이 되나</strong>?</div><div class='tip-box'><strong>암기 TIP</strong><br>profit(이익, 수익) + -able(~할 수 있는) = 이익이 되는<br>profit은 '이윤'이라는 뜻의 기본 단어!</div><div class='warning-box'><strong>혼동 주의</strong><br>profitable = 수익성 있는 (profit + able)<br>적절한 = appropriate, suitable<br>전혀 다른 의미!</div>
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>어디서 막혔을까:</strong> profitable의 정확한 뜻을 모르고 '-able'에서 적절/적합의 느낌을 유추한 것으로 보임</p>
+  <p><strong>오류 패턴:</strong> 접미사 과잉 유추 — -able만 보고 뜻을 추측, 어근 profit을 무시</p>
+  <p><strong>집중 포인트:</strong> profit(이익) + able = 이익이 되는. 어근 profit을 먼저 암기하면 파생어는 자동으로 해결</p>
+</div>
+<div class="page-break-before"></div>
+<h2>47번 — 영한 뜻 쓰기</h2>
+<div class="question-box" style="margin-top:12px;">
+  <p><strong>attractive adj.</strong></p>
+</div>
+<div class='concept-box'><strong>attractive</strong> [əˈtræktɪv] <em>adj.</em> 매력적인, 사람을 끄는</div><div class='grammar-block' style='text-align:justify'><strong>예문</strong><br>• She has an <strong>attractive</strong> smile. — 그녀는 <strong>매력적인</strong> 미소를 가지고 있다.<br>• The offer is very <strong>attractive</strong>. — 그 제안은 매우 <strong>매력적</strong>이다.<br>• The city is <strong>attractive</strong> to tourists. — 그 도시는 관광객에게 <strong>매력적</strong>이다.</div><div class='tip-box'><strong>암기 TIP</strong><br>attract(끌어당기다) + -ive(형용사) = 끌어당기는 → 매력적인<br>attraction(명소, 매력) = 사람을 끌어당기는 것</div><div class='warning-box'><strong>혼동 주의</strong><br>attractive = 매력적인 (attract: 끌다)<br>도전하다 = challenge<br>완전히 다른 단어!</div>
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>어디서 막혔을까:</strong> attractive의 뜻을 모르는 상태에서 추측으로 '도전하다'를 작성. 발음의 'tract'에서 연상했을 가능성</p>
+  <p><strong>오류 패턴:</strong> 의미 추측 실패 — 어근 attract(끌다)를 모르는 상태</p>
+  <p><strong>집중 포인트:</strong> attract = 끌어당기다. 자석(magnet)이 철을 attract하듯, 매력적인 사람은 사람을 attract</p>
+</div>
+<div class="page-break-before"></div>
+<h2>50번 — 영한 뜻 쓰기</h2>
+<div class="question-box" style="margin-top:12px;">
+  <p><strong>relative adj./n.</strong></p>
+</div>
+<div class='concept-box'><strong>relative</strong> [ˈrelətɪv] <em>adj.</em> 상대적인 / <em>n.</em> 친척</div><div class='grammar-block' style='text-align:justify'><strong>예문</strong><br>• Everything is <strong>relative</strong>. — 모든 것은 <strong>상대적</strong>이다.<br>• Einstein's theory of <strong>relativity</strong>. — 아인슈타인의 <strong>상대성</strong> 이론.<br>• I visited a distant <strong>relative</strong> last weekend. — 지난 주말 먼 <strong>친척</strong>을 방문했다.</div><div class='tip-box'><strong>암기 TIP</strong><br>relate(관련짓다) + -ive = '관련된' → 상대적인<br>명사로 쓰면 '관련된 사람' → 친척<br>relativity(상대성) = 아인슈타인! 으로 연결</div>
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>어디서 막혔을까:</strong> relative의 뜻을 모르는 상태에서 불확실한 답을 작성</p>
+  <p><strong>오류 패턴:</strong> 미암기 — 어근 relate를 모름</p>
+  <p><strong>집중 포인트:</strong> relate(관련짓다) 어근을 먼저 암기. relative(상대적인/친척), relation(관계), relationship(관계)</p>
+</div>
+
+
+<div class="page-break-before section-header">
+  <span class="section-num">보충</span>
+  문법 보충 설명
+</div>
+<div class="concept-box">
+  <span class="concept-label">접두사·접미사로 단어 확장하기</span>
+  <div class='concept-box'><strong>핵심 접두사 10개</strong><br><table style='width:100%;border-collapse:collapse'><tr style='background:#eef8f6;border-bottom:1px solid #ccc'><th style='padding:4px;text-align:left'>접두사</th><th style='text-align:left'>의미</th><th style='text-align:left'>예시</th></tr><tr style='border-bottom:1px solid #eee'><td style='padding:4px'><strong>pre-</strong></td><td>미리</td><td>precaution, predict, prevent</td></tr><tr style='border-bottom:1px solid #eee'><td style='padding:4px'><strong>pro-</strong></td><td>앞으로</td><td>promote, prospect, produce</td></tr><tr style='border-bottom:1px solid #eee'><td style='padding:4px'><strong>ex-</strong></td><td>밖으로</td><td>express, exchange, expect</td></tr><tr style='border-bottom:1px solid #eee'><td style='padding:4px'><strong>in-/im-</strong></td><td>안으로 / 부정</td><td>indicate, inspect, incredible, immune</td></tr><tr style='border-bottom:1px solid #eee'><td style='padding:4px'><strong>re-</strong></td><td>다시</td><td>reserve, revise, reflect, relative</td></tr><tr style='border-bottom:1px solid #eee'><td style='padding:4px'><strong>con-/com-</strong></td><td>함께</td><td>conduct, compose, commit, consume, control</td></tr><tr style='border-bottom:1px solid #eee'><td style='padding:4px'><strong>un-</strong></td><td>부정(아닌)</td><td>unable, unique, unusual</td></tr><tr style='border-bottom:1px solid #eee'><td style='padding:4px'><strong>trans-</strong></td><td>건너서</td><td>transition, transfer, transport</td></tr><tr style='border-bottom:1px solid #eee'><td style='padding:4px'><strong>de-</strong></td><td>아래로/분리</td><td>definition, desirable, decrease</td></tr><tr style='border-bottom:1px solid #eee'><td style='padding:4px'><strong>ad-</strong></td><td>~쪽으로</td><td>advertisement, attractive, assumption</td></tr></table></div><div class='tip-box'><strong>암기 전략</strong><br>접두사를 먼저 외우면, 처음 보는 단어도 의미를 50% 이상 추측할 수 있다!<br>예: <strong>in</strong>(안) + <strong>spect</strong>(보다) = inspect(안을 들여다보다 = 검사하다)</div>
+</div>
+<div class="concept-box">
+  <span class="concept-label">품사 변환 패턴: 동사 → 명사 → 형용사</span>
+  <div class='concept-box'><strong>-tion/-sion (동사→명사)</strong><br>• assume → assumption (가정)<br>• define → definition (정의)<br>• elect → election (선거)<br>• instruct → instruction (지시)<br>• operate → operation (수술/운영)<br>• reflect → reflection (반영/성찰)<br>• select → selection (선택)<br>• concentrate → concentration (집중)<br>• transit → transition (전환)</div><div class='concept-box'><strong>-ment (동사→명사)</strong><br>• advertise → advertisement (광고)<br>• commit → commitment (헌신)<br>• equip → equipment (장비)<br>• achieve → achievement (성취)<br>• develop → development (발전)</div><div class='concept-box'><strong>-able/-ible (명사/동사→형용사)</strong><br>• apply → applicable (적용 가능한)<br>• desire → desirable (바람직한)<br>• sustain → sustainable (지속 가능한)<br>• profit → profitable (수익성 있는)<br>• attract → attractive (매력적인)*<br><em>* attractive는 -ive 접미사이지만 같은 원리</em></div><div class='tip-box'><strong>시험 TIP</strong><br>문제에 <strong>n.</strong>(명사), <strong>v.</strong>(동사), <strong>adj.</strong>(형용사)가 표시되어 있다!<br>뜻을 알아도 품사를 틀리면 오답. 반드시 품사 표기를 확인하고 답을 쓸 것.</div>
+</div>
+
+<div class="page-break-before section-header">
+  <span class="section-num">개념 보충</span>
+  개념 보충 학습
+</div>
+<h2>1. 미암기 필수 동사 7선: promote, indicate, inspect, expect, express, commit, compose</h2>
+<div class='concept-box'><strong>반드시 외워야 할 동사 7개</strong><br><table style='width:100%;border-collapse:collapse'><tr style='border-bottom:1px solid #ccc'><td style='padding:4px'><strong>promote</strong></td><td>홍보하다, 승진시키다</td></tr><tr style='border-bottom:1px solid #ccc'><td style='padding:4px'><strong>indicate</strong></td><td>나타내다, 가리키다</td></tr><tr style='border-bottom:1px solid #ccc'><td style='padding:4px'><strong>inspect</strong></td><td>검사하다, 점검하다</td></tr><tr style='border-bottom:1px solid #ccc'><td style='padding:4px'><strong>expect</strong></td><td>기대하다, 예상하다</td></tr><tr style='border-bottom:1px solid #ccc'><td style='padding:4px'><strong>express</strong></td><td>표현하다</td></tr><tr style='border-bottom:1px solid #ccc'><td style='padding:4px'><strong>commit</strong></td><td>저지르다, 전념하다</td></tr><tr style='border-bottom:1px solid #ccc'><td style='padding:4px'><strong>compose</strong></td><td>구성하다, 작곡하다</td></tr></table></div>
+<div class="grammar-block">promote: The company promoted its new product. (회사가 신제품을 홍보했다)
+indicate: The data indicates a rising trend. (데이터가 상승 추세를 나타낸다)
+inspect: The officer inspected the building. (담당관이 건물을 검사했다)
+expect: I expect him to arrive by noon. (정오까지 그가 도착할 것으로 예상한다)
+express: She expressed her gratitude. (그녀는 감사를 표현했다)
+commit: He committed a serious crime. (그는 중대한 범죄를 저질렀다)
+compose: The team is composed of five members. (팀은 5명으로 구성된다)
+</div>
+<div class='warning-box'><strong>자주 혼동하는 동사 쌍</strong><br>• promote(홍보/승진) vs provide(제공하다) — pro-로 시작하지만 전혀 다른 뜻<br>• indicate(나타내다) vs imitate(모방하다) — 발음 비슷하지만 의미 다름<br>• inspect(검사하다) vs expect(기대하다) — -spect 어근 공유, 접두사로 구분<br>• commit(저지르다) vs admit(인정하다) — -mit 어근 공유</div>
+<div class="page-break-before section-header">
+  <span class="section-num">연습 1</span>
+  미암기 필수 동사 7선: promote, indicate, inspect, expect, express, commit, compose 연습문제 (20문제)
+</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>1.</strong> 다음 단어의 뜻은? promote</p><div class="variant-choices">① 홍보하다, 승진시키다&nbsp;&nbsp;&nbsp;② 약속하다&nbsp;&nbsp;&nbsp;③ 보호하다&nbsp;&nbsp;&nbsp;④ 생산하다&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>2.</strong> 다음 단어의 뜻은? indicate</p><div class="variant-choices">① 초대하다&nbsp;&nbsp;&nbsp;② 무시하다&nbsp;&nbsp;&nbsp;③ 나타내다, 가리키다&nbsp;&nbsp;&nbsp;④ 교육하다&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>3.</strong> 다음 단어의 뜻은? inspect</p><div class="variant-choices">① 존경하다&nbsp;&nbsp;&nbsp;② 기대하다&nbsp;&nbsp;&nbsp;③ 의심하다&nbsp;&nbsp;&nbsp;④ 검사하다, 점검하다&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>4.</strong> 다음 단어의 뜻은? expect</p><div class="variant-choices">① 수출하다&nbsp;&nbsp;&nbsp;② 기대하다, 예상하다&nbsp;&nbsp;&nbsp;③ 설명하다&nbsp;&nbsp;&nbsp;④ 확장하다&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>5.</strong> 다음 단어의 뜻은? express</p><div class="variant-choices">① 인상 짓다&nbsp;&nbsp;&nbsp;② 압축하다&nbsp;&nbsp;&nbsp;③ 표현하다&nbsp;&nbsp;&nbsp;④ 탐험하다&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>6.</strong> 다음 단어의 뜻은? commit</p><div class="variant-choices">① 소통하다&nbsp;&nbsp;&nbsp;② 저지르다, 전념하다&nbsp;&nbsp;&nbsp;③ 인정하다&nbsp;&nbsp;&nbsp;④ 생략하다&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>7.</strong> 다음 단어의 뜻은? compose</p><div class="variant-choices">① 비교하다&nbsp;&nbsp;&nbsp;② 반대하다&nbsp;&nbsp;&nbsp;③ 구성하다, 작곡하다&nbsp;&nbsp;&nbsp;④ 처분하다&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>8.</strong> '그 데이터는 문제가 있음을 ______한다'에 들어갈 단어는?</p><div class="variant-choices">① promote&nbsp;&nbsp;&nbsp;② indicate&nbsp;&nbsp;&nbsp;③ compose&nbsp;&nbsp;&nbsp;④ commit&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>9.</strong> '그는 범죄를 ______했다'에 들어갈 단어는?</p><div class="variant-choices">① expressed&nbsp;&nbsp;&nbsp;② inspected&nbsp;&nbsp;&nbsp;③ committed&nbsp;&nbsp;&nbsp;④ promoted&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>10.</strong> '이 팀은 10명으로 ______되어 있다'에 들어갈 단어는?</p><div class="variant-choices">① expected&nbsp;&nbsp;&nbsp;② committed&nbsp;&nbsp;&nbsp;③ indicated&nbsp;&nbsp;&nbsp;④ composed&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>11.</strong> '그녀는 자신의 의견을 자유롭게 ______했다'에 들어갈 단어는?</p><div class="variant-choices">① expressed&nbsp;&nbsp;&nbsp;② inspected&nbsp;&nbsp;&nbsp;③ promoted&nbsp;&nbsp;&nbsp;④ committed&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>12.</strong> '정부는 건강한 식습관을 ______하고 있다'에 들어갈 단어는?</p><div class="variant-choices">① committing&nbsp;&nbsp;&nbsp;② composing&nbsp;&nbsp;&nbsp;③ promoting&nbsp;&nbsp;&nbsp;④ inspecting&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>13.</strong> '안전 담당관이 공장을 ______했다'에 들어갈 단어는?</p><div class="variant-choices">① expected&nbsp;&nbsp;&nbsp;② inspected&nbsp;&nbsp;&nbsp;③ expressed&nbsp;&nbsp;&nbsp;④ indicated&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>14.</strong> '나는 내일 비가 올 것으로 ______한다'에 들어갈 단어는?</p><div class="variant-choices">① compose&nbsp;&nbsp;&nbsp;② commit&nbsp;&nbsp;&nbsp;③ indicate&nbsp;&nbsp;&nbsp;④ expect&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>15.</strong> '나타내다, 가리키다'를 영어로?</p><div class="variant-choices">① inspect&nbsp;&nbsp;&nbsp;② expect&nbsp;&nbsp;&nbsp;③ indicate&nbsp;&nbsp;&nbsp;④ express&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>16.</strong> '홍보하다, 승진시키다'를 영어로?</p><div class="variant-choices">① protect&nbsp;&nbsp;&nbsp;② promote&nbsp;&nbsp;&nbsp;③ produce&nbsp;&nbsp;&nbsp;④ provide&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>17.</strong> '구성하다, 작곡하다'를 영어로?</p><div class="variant-choices">① compete&nbsp;&nbsp;&nbsp;② compare&nbsp;&nbsp;&nbsp;③ compose&nbsp;&nbsp;&nbsp;④ complain&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>18.</strong> '검사하다, 점검하다'를 영어로?</p><div class="variant-choices">① insist&nbsp;&nbsp;&nbsp;② inspect&nbsp;&nbsp;&nbsp;③ install&nbsp;&nbsp;&nbsp;④ instruct&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>19.</strong> '저지르다, 전념하다'를 영어로?</p><div class="variant-choices">① comment&nbsp;&nbsp;&nbsp;② command&nbsp;&nbsp;&nbsp;③ commit&nbsp;&nbsp;&nbsp;④ communicate&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>20.</strong> inspect와 expect의 공통 어근 -spect의 뜻은?</p><div class="variant-choices">① 듣다&nbsp;&nbsp;&nbsp;② 보다&nbsp;&nbsp;&nbsp;③ 말하다&nbsp;&nbsp;&nbsp;④ 만지다&nbsp;&nbsp;&nbsp;</div>
+<div class="page-break-before">
+  <h3>연습 1. 미암기 필수 동사 7선: promote, indicate, inspect, expect, express, commit, compose 정답 및 해설</h3>
+  <table>
+    <thead><tr><th style="width:30px;">#</th><th style="width:80px;">정답</th><th>해설</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>①</td><td>promote = pro(앞으로) + mote(움직이다) → 앞으로 밀어주다 → 홍보/승진</td></tr>
+      <tr><td>2</td><td>③</td><td>indicate = in(안으로) + dic(말하다) → 가리켜 말하다 → 나타내다</td></tr>
+      <tr><td>3</td><td>④</td><td>inspect = in(안을) + spect(보다) → 안을 들여다보다 → 검사하다</td></tr>
+      <tr><td>4</td><td>②</td><td>expect = ex(밖을) + spect(보다) → 밖을 내다보다 → 기대하다/예상하다</td></tr>
+      <tr><td>5</td><td>③</td><td>express = ex(밖으로) + press(누르다) → 감정을 밖으로 눌러내다 → 표현하다</td></tr>
+      <tr><td>6</td><td>②</td><td>commit = com(함께) + mit(보내다) → (자신을) 보내다 → 범죄를 저지르다 / 전념하다</td></tr>
+      <tr><td>7</td><td>③</td><td>compose = com(함께) + pose(놓다) → 함께 모아 놓다 → 구성하다/작곡하다</td></tr>
+      <tr><td>8</td><td>②</td><td>indicate = 나타내다. The data indicates there is a problem.</td></tr>
+      <tr><td>9</td><td>③</td><td>commit a crime = 범죄를 저지르다</td></tr>
+      <tr><td>10</td><td>④</td><td>be composed of = ~로 구성되다</td></tr>
+      <tr><td>11</td><td>①</td><td>express one's opinion = 의견을 표현하다</td></tr>
+      <tr><td>12</td><td>③</td><td>promote = 홍보하다, 촉진하다. promote healthy eating habits</td></tr>
+      <tr><td>13</td><td>②</td><td>inspect = 검사하다. The officer inspected the factory.</td></tr>
+      <tr><td>14</td><td>④</td><td>expect = 예상하다. I expect it to rain tomorrow.</td></tr>
+      <tr><td>15</td><td>③</td><td>indicate = 나타내다, 가리키다</td></tr>
+      <tr><td>16</td><td>②</td><td>promote = 홍보하다, 승진시키다</td></tr>
+      <tr><td>17</td><td>③</td><td>compose = 구성하다, 작곡하다. composer = 작곡가</td></tr>
+      <tr><td>18</td><td>②</td><td>inspect = in(안) + spect(보다) = 검사하다</td></tr>
+      <tr><td>19</td><td>③</td><td>commit = 저지르다(commit a crime), 전념하다(commit to)</td></tr>
+      <tr><td>20</td><td>②</td><td>spect = 보다. inspect(안을 보다=검사), expect(밖을 보다=기대), spectacle(구경거리)</td></tr>
+    </tbody>
+  </table>
+</div>
+<h2>2. 미암기 필수 명사 11선: precaution ~ equipment</h2>
+<div class='concept-box'><strong>반드시 외워야 할 명사 11개</strong><br><table style='width:100%;border-collapse:collapse'><tr style='border-bottom:1px solid #ccc'><td style='padding:4px'><strong>precaution</strong></td><td>예방 조치, 주의</td></tr><tr style='border-bottom:1px solid #ccc'><td style='padding:4px'><strong>prospect</strong></td><td>전망, 가능성</td></tr><tr style='border-bottom:1px solid #ccc'><td style='padding:4px'><strong>assumption</strong></td><td>가정, 추정</td></tr><tr style='border-bottom:1px solid #ccc'><td style='padding:4px'><strong>definition</strong></td><td>정의</td></tr><tr style='border-bottom:1px solid #ccc'><td style='padding:4px'><strong>election</strong></td><td>선거</td></tr><tr style='border-bottom:1px solid #ccc'><td style='padding:4px'><strong>instruction</strong></td><td>지시, 설명서</td></tr><tr style='border-bottom:1px solid #ccc'><td style='padding:4px'><strong>profession</strong></td><td>직업, 전문직</td></tr><tr style='border-bottom:1px solid #ccc'><td style='padding:4px'><strong>reflection</strong></td><td>반영, 반사, 성찰</td></tr><tr style='border-bottom:1px solid #ccc'><td style='padding:4px'><strong>advertisement</strong></td><td>광고</td></tr><tr style='border-bottom:1px solid #ccc'><td style='padding:4px'><strong>commitment</strong></td><td>헌신, 약속</td></tr><tr style='border-bottom:1px solid #ccc'><td style='padding:4px'><strong>equipment</strong></td><td>장비</td></tr></table></div>
+<div class="grammar-block">precaution: Take precautions against fire. (화재 예방 조치를 취하세요)
+prospect: The prospect of getting a job is good. (취업 전망이 좋다)
+assumption: Don't make assumptions without evidence. (증거 없이 가정하지 마라)
+definition: What is the definition of happiness? (행복의 정의는 무엇인가?)
+election: The presidential election is next month. (대통령 선거가 다음 달이다)
+instruction: Follow the instructions carefully. (설명서를 주의 깊게 따르세요)
+profession: Teaching is a noble profession. (교직은 고귀한 직업이다)
+reflection: He saw his reflection in the mirror. (그는 거울에 비친 자신을 보았다)
+advertisement: I saw an advertisement for the new phone. (새 폰 광고를 봤다)
+commitment: Marriage requires commitment. (결혼은 헌신을 필요로 한다)
+equipment: The lab has modern equipment. (연구실에 최신 장비가 있다)
+</div>
+<div class='warning-box'><strong>동사 → 명사 변환 패턴 정리</strong><br>• assume → assumption (-tion)<br>• define → definition (-tion)<br>• elect → election (-tion)<br>• instruct → instruction (-tion)<br>• reflect → reflection (-tion)<br>• profess → profession (-ion)<br>• advertise → advertisement (-ment)<br>• commit → commitment (-ment)<br>• equip → equipment (-ment)<br><br><strong>규칙</strong>: -tion/-sion은 라틴어계, -ment는 프랑스어계 명사화 접미사</div>
+<div class="page-break-before section-header">
+  <span class="section-num">연습 2</span>
+  미암기 필수 명사 11선: precaution ~ equipment 연습문제 (20문제)
+</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>1.</strong> 다음 단어의 뜻은? precaution</p><div class="variant-choices">① 편견&nbsp;&nbsp;&nbsp;② 예방 조치&nbsp;&nbsp;&nbsp;③ 정밀도&nbsp;&nbsp;&nbsp;④ 선호&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>2.</strong> 다음 단어의 뜻은? prospect</p><div class="variant-choices">① 보호&nbsp;&nbsp;&nbsp;② 과정&nbsp;&nbsp;&nbsp;③ 전망, 가능성&nbsp;&nbsp;&nbsp;④ 제안&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>3.</strong> 다음 단어의 뜻은? assumption</p><div class="variant-choices">① 평가&nbsp;&nbsp;&nbsp;② 가정, 추정&nbsp;&nbsp;&nbsp;③ 보장&nbsp;&nbsp;&nbsp;④ 성취&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>4.</strong> 다음 단어의 뜻은? definition</p><div class="variant-choices">① 결함&nbsp;&nbsp;&nbsp;② 방어&nbsp;&nbsp;&nbsp;③ 정의&nbsp;&nbsp;&nbsp;④ 감소&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>5.</strong> 다음 단어의 뜻은? election</p><div class="variant-choices">① 선거&nbsp;&nbsp;&nbsp;② 전기&nbsp;&nbsp;&nbsp;③ 제거&nbsp;&nbsp;&nbsp;④ 우아함&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>6.</strong> 다음 단어의 뜻은? instruction</p><div class="variant-choices">① 파괴&nbsp;&nbsp;&nbsp;② 건설&nbsp;&nbsp;&nbsp;③ 지시, 설명서&nbsp;&nbsp;&nbsp;④ 제도&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>7.</strong> 다음 단어의 뜻은? profession</p><div class="variant-choices">① 진행&nbsp;&nbsp;&nbsp;② 고백&nbsp;&nbsp;&nbsp;③ 이익&nbsp;&nbsp;&nbsp;④ 직업, 전문직&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>8.</strong> 다음 단어의 뜻은? reflection</p><div class="variant-choices">① 거절&nbsp;&nbsp;&nbsp;② 반영, 반사, 성찰&nbsp;&nbsp;&nbsp;③ 개혁&nbsp;&nbsp;&nbsp;④ 추천&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>9.</strong> 다음 단어의 뜻은? advertisement</p><div class="variant-choices">① 모험&nbsp;&nbsp;&nbsp;② 조언&nbsp;&nbsp;&nbsp;③ 광고&nbsp;&nbsp;&nbsp;④ 이점&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>10.</strong> 다음 단어의 뜻은? commitment</p><div class="variant-choices">① 위원회&nbsp;&nbsp;&nbsp;② 헌신, 약속&nbsp;&nbsp;&nbsp;③ 논평&nbsp;&nbsp;&nbsp;④ 지역사회&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>11.</strong> 다음 단어의 뜻은? equipment</p><div class="variant-choices">① 동등&nbsp;&nbsp;&nbsp;② 평형&nbsp;&nbsp;&nbsp;③ 장비&nbsp;&nbsp;&nbsp;④ 방정식&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>12.</strong> '화재에 대비한 ______을 취하세요'에 들어갈 단어는?</p><div class="variant-choices">① election&nbsp;&nbsp;&nbsp;② precaution&nbsp;&nbsp;&nbsp;③ profession&nbsp;&nbsp;&nbsp;④ definition&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>13.</strong> '취업 ______이 밝다'에 들어갈 단어는?</p><div class="variant-choices">① prospect&nbsp;&nbsp;&nbsp;② reflection&nbsp;&nbsp;&nbsp;③ commitment&nbsp;&nbsp;&nbsp;④ instruction&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>14.</strong> '설명서의 ______을 잘 따르세요'에 들어갈 단어는?</p><div class="variant-choices">① elections&nbsp;&nbsp;&nbsp;② advertisements&nbsp;&nbsp;&nbsp;③ instructions&nbsp;&nbsp;&nbsp;④ assumptions&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>15.</strong> '광고'를 영어로?</p><div class="variant-choices">① achievement&nbsp;&nbsp;&nbsp;② advertisement&nbsp;&nbsp;&nbsp;③ arrangement&nbsp;&nbsp;&nbsp;④ assessment&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>16.</strong> '장비'를 영어로?</p><div class="variant-choices">① establishment&nbsp;&nbsp;&nbsp;② environment&nbsp;&nbsp;&nbsp;③ equipment&nbsp;&nbsp;&nbsp;④ experiment&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>17.</strong> '헌신, 약속'을 영어로?</p><div class="variant-choices">① comment&nbsp;&nbsp;&nbsp;② committee&nbsp;&nbsp;&nbsp;③ commitment&nbsp;&nbsp;&nbsp;④ community&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>18.</strong> '가정, 추정'을 영어로?</p><div class="variant-choices">① assurance&nbsp;&nbsp;&nbsp;② assumption&nbsp;&nbsp;&nbsp;③ assistance&nbsp;&nbsp;&nbsp;④ association&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>19.</strong> '선거'를 영어로?</p><div class="variant-choices">① elimination&nbsp;&nbsp;&nbsp;② elevation&nbsp;&nbsp;&nbsp;③ election&nbsp;&nbsp;&nbsp;④ elaboration&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>20.</strong> reflect의 명사형은?</p><div class="variant-choices">① reflector&nbsp;&nbsp;&nbsp;② reflection&nbsp;&nbsp;&nbsp;③ reflective&nbsp;&nbsp;&nbsp;④ reflexion&nbsp;&nbsp;&nbsp;</div>
+<div class="page-break-before">
+  <h3>연습 2. 미암기 필수 명사 11선: precaution ~ equipment 정답 및 해설</h3>
+  <table>
+    <thead><tr><th style="width:30px;">#</th><th style="width:80px;">정답</th><th>해설</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>②</td><td>precaution = pre(미리) + caution(주의) → 미리 주의하기 → 예방 조치</td></tr>
+      <tr><td>2</td><td>③</td><td>prospect = pro(앞을) + spect(보다) → 앞을 보다 → 전망</td></tr>
+      <tr><td>3</td><td>②</td><td>assumption = assume(가정하다)의 명사형</td></tr>
+      <tr><td>4</td><td>③</td><td>definition = define(정의하다)의 명사형</td></tr>
+      <tr><td>5</td><td>①</td><td>election = elect(선출하다)의 명사형. 대선 = presidential election</td></tr>
+      <tr><td>6</td><td>③</td><td>instruction = instruct(지시하다)의 명사형</td></tr>
+      <tr><td>7</td><td>④</td><td>profession = profess(공언하다)의 명사형. professional = 전문적인</td></tr>
+      <tr><td>8</td><td>②</td><td>reflection = reflect(반사하다, 성찰하다)의 명사형</td></tr>
+      <tr><td>9</td><td>③</td><td>advertisement = advertise(광고하다)의 명사형. 줄임말: ad</td></tr>
+      <tr><td>10</td><td>②</td><td>commitment = commit(전념하다)의 명사형</td></tr>
+      <tr><td>11</td><td>③</td><td>equipment = equip(장비를 갖추다)의 명사형. 불가산명사!</td></tr>
+      <tr><td>12</td><td>②</td><td>take precautions against = ~에 대한 예방 조치를 취하다</td></tr>
+      <tr><td>13</td><td>①</td><td>job prospects = 취업 전망</td></tr>
+      <tr><td>14</td><td>③</td><td>follow the instructions = 설명서/지시를 따르다</td></tr>
+      <tr><td>15</td><td>②</td><td>advertisement = 광고 (줄임: ad)</td></tr>
+      <tr><td>16</td><td>③</td><td>equipment = 장비 (불가산명사: an equipment (X) → a piece of equipment (O))</td></tr>
+      <tr><td>17</td><td>③</td><td>commitment = 헌신, 약속. commit(전념하다) + -ment</td></tr>
+      <tr><td>18</td><td>②</td><td>assumption = 가정, 추정. assume(가정하다) + -tion</td></tr>
+      <tr><td>19</td><td>③</td><td>election = 선거. elect(선출하다) + -ion</td></tr>
+      <tr><td>20</td><td>②</td><td>reflect → reflection (반영/반사/성찰). reflector는 반사경, reflective는 형용사</td></tr>
+    </tbody>
+  </table>
+</div>
+<h2>3. 미암기 필수 형용사 5선: applicable, desirable, sustainable, excessive, massive</h2>
+<div class='concept-box'><strong>반드시 외워야 할 형용사 5개</strong><br><table style='width:100%;border-collapse:collapse'><tr style='border-bottom:1px solid #ccc'><td style='padding:4px'><strong>applicable</strong></td><td>적용 가능한</td></tr><tr style='border-bottom:1px solid #ccc'><td style='padding:4px'><strong>desirable</strong></td><td>바람직한</td></tr><tr style='border-bottom:1px solid #ccc'><td style='padding:4px'><strong>sustainable</strong></td><td>지속 가능한</td></tr><tr style='border-bottom:1px solid #ccc'><td style='padding:4px'><strong>excessive</strong></td><td>과도한</td></tr><tr style='border-bottom:1px solid #ccc'><td style='padding:4px'><strong>massive</strong></td><td>거대한, 막대한</td></tr></table></div><div class='tip-box'><strong>접미사 패턴</strong><br>• <strong>-able</strong> = ~할 수 있는: applicable, desirable, sustainable<br>• <strong>-ive</strong> = ~하는 성질의: excessive, massive<br>접미사를 알면 처음 보는 단어도 의미를 유추할 수 있다!</div>
+<div class="grammar-block">applicable: This rule is applicable to all students. (이 규칙은 모든 학생에게 적용 가능하다)
+desirable: A peaceful world is desirable. (평화로운 세상은 바람직하다)
+sustainable: We need sustainable energy sources. (지속 가능한 에너지원이 필요하다)
+excessive: Excessive sugar intake is harmful. (과도한 설탕 섭취는 해롭다)
+massive: The earthquake caused massive damage. (지진이 막대한 피해를 일으켰다)
+</div>
+<div class='warning-box'><strong>비슷해 보이는 형용사 구분</strong><br>• applicable(적용 가능한) vs appreciable(상당한) — 어근이 다름 (apply vs appreciate)<br>• excessive(과도한) vs exclusive(독점적인) — ex-는 같지만 cess(넘다) vs clus(닫다)<br>• massive(거대한) vs passive(수동적인) — mass(덩어리) vs pass(겪다)</div>
+<div class="page-break-before section-header">
+  <span class="section-num">연습 3</span>
+  미암기 필수 형용사 5선: applicable, desirable, sustainable, excessive, massive 연습문제 (20문제)
+</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>1.</strong> 다음 단어의 뜻은? applicable</p><div class="variant-choices">① 감사하는&nbsp;&nbsp;&nbsp;② 적용 가능한&nbsp;&nbsp;&nbsp;③ 접근 가능한&nbsp;&nbsp;&nbsp;④ 수용 가능한&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>2.</strong> 다음 단어의 뜻은? desirable</p><div class="variant-choices">① 바람직한&nbsp;&nbsp;&nbsp;② 파괴적인&nbsp;&nbsp;&nbsp;③ 절망적인&nbsp;&nbsp;&nbsp;④ 결정적인&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>3.</strong> 다음 단어의 뜻은? sustainable</p><div class="variant-choices">① 적합한&nbsp;&nbsp;&nbsp;② 실질적인&nbsp;&nbsp;&nbsp;③ 지속 가능한&nbsp;&nbsp;&nbsp;④ 의심스러운&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>4.</strong> 다음 단어의 뜻은? excessive</p><div class="variant-choices">① 독점적인&nbsp;&nbsp;&nbsp;② 과도한&nbsp;&nbsp;&nbsp;③ 흥미로운&nbsp;&nbsp;&nbsp;④ 효과적인&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>5.</strong> 다음 단어의 뜻은? massive</p><div class="variant-choices">① 수동적인&nbsp;&nbsp;&nbsp;② 공격적인&nbsp;&nbsp;&nbsp;③ 거대한, 막대한&nbsp;&nbsp;&nbsp;④ 인상적인&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>6.</strong> '이 규칙은 모든 경우에 ______ 가능하다'에 들어갈 단어는?</p><div class="variant-choices">① excessive&nbsp;&nbsp;&nbsp;② applicable&nbsp;&nbsp;&nbsp;③ massive&nbsp;&nbsp;&nbsp;④ desirable&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>7.</strong> '______ 에너지 개발이 시급하다'에 들어갈 단어는?</p><div class="variant-choices">① excessive&nbsp;&nbsp;&nbsp;② massive&nbsp;&nbsp;&nbsp;③ sustainable&nbsp;&nbsp;&nbsp;④ desirable&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>8.</strong> '______ 음주는 건강에 해롭다'에 들어갈 단어는?</p><div class="variant-choices">① massive&nbsp;&nbsp;&nbsp;② desirable&nbsp;&nbsp;&nbsp;③ applicable&nbsp;&nbsp;&nbsp;④ excessive&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>9.</strong> '지진이 ______ 피해를 일으켰다'에 들어갈 단어는?</p><div class="variant-choices">① desirable&nbsp;&nbsp;&nbsp;② applicable&nbsp;&nbsp;&nbsp;③ massive&nbsp;&nbsp;&nbsp;④ sustainable&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>10.</strong> '이런 결과는 ______하지 않다'(바람직하지 않다)에 들어갈 단어는?</p><div class="variant-choices">① sustainable&nbsp;&nbsp;&nbsp;② excessive&nbsp;&nbsp;&nbsp;③ massive&nbsp;&nbsp;&nbsp;④ desirable&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>11.</strong> '적용 가능한'을 영어로?</p><div class="variant-choices">① available&nbsp;&nbsp;&nbsp;② applicable&nbsp;&nbsp;&nbsp;③ acceptable&nbsp;&nbsp;&nbsp;④ affordable&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>12.</strong> '과도한'을 영어로?</p><div class="variant-choices">① expensive&nbsp;&nbsp;&nbsp;② exclusive&nbsp;&nbsp;&nbsp;③ excessive&nbsp;&nbsp;&nbsp;④ extensive&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>13.</strong> '거대한, 막대한'을 영어로?</p><div class="variant-choices">① passive&nbsp;&nbsp;&nbsp;② massive&nbsp;&nbsp;&nbsp;③ aggressive&nbsp;&nbsp;&nbsp;④ impressive&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>14.</strong> '지속 가능한'을 영어로?</p><div class="variant-choices">① suitable&nbsp;&nbsp;&nbsp;② substantial&nbsp;&nbsp;&nbsp;③ sustainable&nbsp;&nbsp;&nbsp;④ susceptible&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>15.</strong> '바람직한'을 영어로?</p><div class="variant-choices">① decisive&nbsp;&nbsp;&nbsp;② desperate&nbsp;&nbsp;&nbsp;③ destructive&nbsp;&nbsp;&nbsp;④ desirable&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>16.</strong> apply의 형용사형은?</p><div class="variant-choices">① applied&nbsp;&nbsp;&nbsp;② applicant&nbsp;&nbsp;&nbsp;③ applicable&nbsp;&nbsp;&nbsp;④ application&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>17.</strong> sustain의 형용사형은?</p><div class="variant-choices">① sustained&nbsp;&nbsp;&nbsp;② sustainable&nbsp;&nbsp;&nbsp;③ sustaining&nbsp;&nbsp;&nbsp;④ substance&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>18.</strong> excess의 형용사형은?</p><div class="variant-choices">① excessed&nbsp;&nbsp;&nbsp;② excessing&nbsp;&nbsp;&nbsp;③ excessive&nbsp;&nbsp;&nbsp;④ exceedable&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>19.</strong> 다음 중 -able 접미사가 아닌 단어는?</p><div class="variant-choices">① applicable&nbsp;&nbsp;&nbsp;② desirable&nbsp;&nbsp;&nbsp;③ sustainable&nbsp;&nbsp;&nbsp;④ massive&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>20.</strong> 다음 중 '부정적' 의미를 가진 형용사는?</p><div class="variant-choices">① desirable&nbsp;&nbsp;&nbsp;② sustainable&nbsp;&nbsp;&nbsp;③ excessive&nbsp;&nbsp;&nbsp;④ applicable&nbsp;&nbsp;&nbsp;</div>
+<div class="page-break-before">
+  <h3>연습 3. 미암기 필수 형용사 5선: applicable, desirable, sustainable, excessive, massive 정답 및 해설</h3>
+  <table>
+    <thead><tr><th style="width:30px;">#</th><th style="width:80px;">정답</th><th>해설</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>②</td><td>applicable = apply(적용하다) + -able → 적용 가능한</td></tr>
+      <tr><td>2</td><td>①</td><td>desirable = desire(바라다) + -able → 바랄 만한 → 바람직한</td></tr>
+      <tr><td>3</td><td>③</td><td>sustainable = sustain(유지하다) + -able → 유지할 수 있는 → 지속 가능한</td></tr>
+      <tr><td>4</td><td>②</td><td>excessive = excess(초과) + -ive → 초과하는 → 과도한</td></tr>
+      <tr><td>5</td><td>③</td><td>massive = mass(덩어리, 대량) + -ive → 거대한</td></tr>
+      <tr><td>6</td><td>②</td><td>applicable to = ~에 적용 가능한</td></tr>
+      <tr><td>7</td><td>③</td><td>sustainable energy = 지속 가능한 에너지</td></tr>
+      <tr><td>8</td><td>④</td><td>excessive drinking = 과도한 음주</td></tr>
+      <tr><td>9</td><td>③</td><td>massive damage = 막대한 피해</td></tr>
+      <tr><td>10</td><td>④</td><td>desirable = 바람직한. not desirable = 바람직하지 않은</td></tr>
+      <tr><td>11</td><td>②</td><td>applicable = apply(적용하다) + -able</td></tr>
+      <tr><td>12</td><td>③</td><td>excessive = excess(초과) + -ive. expensive=비싼, exclusive=독점적인, extensive=광범위한</td></tr>
+      <tr><td>13</td><td>②</td><td>massive = mass(덩어리) + -ive. passive=수동적인, impressive=인상적인</td></tr>
+      <tr><td>14</td><td>③</td><td>sustainable = sustain(유지하다) + -able</td></tr>
+      <tr><td>15</td><td>④</td><td>desirable = desire(바라다) + -able</td></tr>
+      <tr><td>16</td><td>③</td><td>apply → applicable(적용 가능한). applicant=지원자, application=지원/적용</td></tr>
+      <tr><td>17</td><td>②</td><td>sustain → sustainable(지속 가능한). sustained=지속된(과거분사)</td></tr>
+      <tr><td>18</td><td>③</td><td>excess → excessive(과도한). exceed(초과하다)도 같은 어근</td></tr>
+      <tr><td>19</td><td>④</td><td>massive는 -ive 접미사. 나머지는 모두 -able 접미사</td></tr>
+      <tr><td>20</td><td>③</td><td>excessive(과도한)는 부정적 뉘앙스. 나머지는 중립/긍정적</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<hr class="section-divider">
+<p style="text-align: center; color: #a0aec0; font-size: 9pt; margin-top: 30px;">
+  피드백지 작성 완료 — 2026. 02. 27
+</p>
+</body>
+</html>

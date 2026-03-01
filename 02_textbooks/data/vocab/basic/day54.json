@@ -1,0 +1,506 @@
+{
+  "bookId": "vocab-basic",
+  "day": 54,
+  "theme": "의사소통과 언어 (Communication and Language)",
+  "words": [
+    {
+      "word": "convey",
+      "pronunciation": "[kənvéi]",
+      "partOfSpeech": "v.",
+      "meaning": "(생각·감정 등을) 전달하다; 운반하다",
+      "example": {
+        "en": "He tried to convey his feelings in a letter.",
+        "ko": "그는 편지로 자신의 감정을 전달하려고 노력했다."
+      }
+    },
+    {
+      "word": "express",
+      "pronunciation": "[iksprés]",
+      "partOfSpeech": "v.",
+      "meaning": "표현하다",
+      "example": {
+        "en": "It's important to express your opinions clearly.",
+        "ko": "자신의 의견을 명확하게 표현하는 것이 중요하다."
+      }
+    },
+    {
+      "word": "declare",
+      "pronunciation": "[diklέər]",
+      "partOfSpeech": "v.",
+      "meaning": "선언하다, 공표하다",
+      "example": {
+        "en": "The country declared independence in 1945.",
+        "ko": "그 나라는 1945년에 독립을 선언했다."
+      }
+    },
+    {
+      "word": "announce",
+      "pronunciation": "[ənáuns]",
+      "partOfSpeech": "v.",
+      "meaning": "발표하다, 알리다",
+      "example": {
+        "en": "The company will announce its quarterly earnings tomorrow.",
+        "ko": "그 회사는 내일 분기 실적을 발표할 것이다."
+      }
+    },
+    {
+      "word": "narrate",
+      "pronunciation": "[nǽreit]",
+      "partOfSpeech": "v.",
+      "meaning": "이야기하다, 해설하다",
+      "example": {
+        "en": "The documentary was narrated by a famous actor.",
+        "ko": "그 다큐멘터리는 유명 배우가 해설했다."
+      }
+    },
+    {
+      "word": "describe",
+      "pronunciation": "[diskráib]",
+      "partOfSpeech": "v.",
+      "meaning": "묘사하다, 설명하다",
+      "example": {
+        "en": "Can you describe the man you saw?",
+        "ko": "당신이 본 남자를 묘사할 수 있나요?"
+      }
+    },
+    {
+      "word": "interpret",
+      "pronunciation": "[intə́ːrprit]",
+      "partOfSpeech": "v.",
+      "meaning": "해석하다, 통역하다",
+      "example": {
+        "en": "The data can be interpreted in different ways.",
+        "ko": "그 데이터는 다른 방식으로 해석될 수 있다."
+      }
+    },
+    {
+      "word": "translate",
+      "pronunciation": "[trænsléit]",
+      "partOfSpeech": "v.",
+      "meaning": "번역하다, 통역하다",
+      "example": {
+        "en": "He translated the book from French into English.",
+        "ko": "그는 그 책을 프랑스어에서 영어로 번역했다."
+      }
+    },
+    {
+      "word": "decipher",
+      "pronunciation": "[disáifər]",
+      "partOfSpeech": "v.",
+      "meaning": "(암호 등을) 해독하다",
+      "example": {
+        "en": "It took years to decipher the ancient script.",
+        "ko": "고대 문자를 해독하는 데 수년이 걸렸다."
+      }
+    },
+    {
+      "word": "encode",
+      "pronunciation": "[inkóud]",
+      "partOfSpeech": "v.",
+      "meaning": "암호화하다, 부호화하다",
+      "example": {
+        "en": "The data is encoded before being transmitted.",
+        "ko": "데이터는 전송되기 전에 암호화된다."
+      }
+    },
+    {
+      "word": "gesture",
+      "pronunciation": "[dʒésʧər]",
+      "partOfSpeech": "n.",
+      "meaning": "몸짓, 제스처",
+      "example": {
+        "en": "He made a rude gesture at the other driver.",
+        "ko": "그는 다른 운전자에게 무례한 몸짓을 했다."
+      }
+    },
+    {
+      "word": "posture",
+      "pronunciation": "[pάsʧər]",
+      "partOfSpeech": "n.",
+      "meaning": "자세",
+      "example": {
+        "en": "Good posture is important for your back health.",
+        "ko": "좋은 자세는 허리 건강에 중요하다."
+      }
+    },
+    {
+      "word": "verbal",
+      "pronunciation": "[və́ːrbəl]",
+      "partOfSpeech": "a.",
+      "meaning": "언어의, 구두의",
+      "example": {
+        "en": "We have a verbal agreement, but nothing in writing.",
+        "ko": "우리는 구두 합의를 했지만, 서면으로 된 것은 없다."
+      }
+    },
+    {
+      "word": "non-verbal",
+      "partOfSpeech": "a.",
+      "meaning": "비언어적인",
+      "example": {
+        "en": "Body language is a form of non-verbal communication.",
+        "ko": "몸짓 언어는 비언어적 의사소통의 한 형태이다."
+      }
+    },
+    {
+      "word": "linguistic",
+      "pronunciation": "[li&eng;gwístik]",
+      "partOfSpeech": "a.",
+      "meaning": "언어의, 언어학의",
+      "example": {
+        "en": "The country has great linguistic diversity.",
+        "ko": "그 나라는 뛰어난 언어적 다양성을 가지고 있다."
+      }
+    },
+    {
+      "word": "semantic",
+      "pronunciation": "[simǽntik]",
+      "partOfSpeech": "a.",
+      "meaning": "의미의, 의미론적인",
+      "example": {
+        "en": "The two words have a similar semantic field.",
+        "ko": "그 두 단어는 비슷한 의미 영역을 가지고 있다."
+      }
+    },
+    {
+      "word": "syntax",
+      "pronunciation": "[síntæks]",
+      "partOfSpeech": "n.",
+      "meaning": "구문론, 통사론",
+      "example": {
+        "en": "The sentence has a complex syntax.",
+        "ko": "그 문장은 복잡한 구문 구조를 가지고 있다."
+      }
+    },
+    {
+      "word": "grammar",
+      "pronunciation": "[grǽmər]",
+      "partOfSpeech": "n.",
+      "meaning": "문법",
+      "example": {
+        "en": "Good grammar is important for clear writing.",
+        "ko": "좋은 문법은 명확한 글쓰기에 중요하다."
+      }
+    },
+    {
+      "word": "vocabulary",
+      "pronunciation": "[voukǽbjulèri]",
+      "partOfSpeech": "n.",
+      "meaning": "어휘",
+      "example": {
+        "en": "Reading books is a good way to expand your vocabulary.",
+        "ko": "책을 읽는 것은 어휘력을 확장하는 좋은 방법이다."
+      }
+    },
+    {
+      "word": "lexicon",
+      "pronunciation": "[léksikὰn]",
+      "partOfSpeech": "n.",
+      "meaning": "(특정 분야·개인의) 어휘",
+      "example": {
+        "en": "The lexicon of computer science includes terms like \"algorithm\" and \"database\".",
+        "ko": "컴퓨터 과학의 어휘에는 \"알고리즘\"과 \"데이터베이스\" 같은 용어들이 포함된다."
+      }
+    },
+    {
+      "word": "jargon",
+      "pronunciation": "[dʒάːrgən]",
+      "partOfSpeech": "n.",
+      "meaning": "전문 용어",
+      "example": {
+        "en": "The report was full of technical jargon that I didn't understand.",
+        "ko": "그 보고서는 내가 이해하지 못하는 기술 전문 용어로 가득했다."
+      }
+    },
+    {
+      "word": "slang",
+      "pronunciation": "[slæ&eng;]",
+      "partOfSpeech": "n.",
+      "meaning": "속어",
+      "example": {
+        "en": "\"Cool\" is a common slang word for \"good\".",
+        "ko": "\"Cool\"은 \"좋다\"는 뜻의 흔한 속어이다."
+      }
+    },
+    {
+      "word": "rhetoric",
+      "pronunciation": "[rétərik]",
+      "partOfSpeech": "n.",
+      "meaning": "수사법, 미사여구",
+      "example": {
+        "en": "The politician's speech was full of empty rhetoric.",
+        "ko": "그 정치인의 연설은 공허한 미사여구로 가득했다."
+      }
+    },
+    {
+      "word": "eloquence",
+      "pronunciation": "[éləkwəns]",
+      "partOfSpeech": "n.",
+      "meaning": "웅변, 설득력",
+      "example": {
+        "en": "He was known for his eloquence and powerful speeches.",
+        "ko": "그는 웅변과 강력한 연설로 유명했다."
+      }
+    },
+    {
+      "word": "discourse",
+      "pronunciation": "[dískɔːrs]",
+      "partOfSpeech": "n.",
+      "meaning": "담화, 담론",
+      "example": {
+        "en": "The book is a scholarly discourse on the nature of reality.",
+        "ko": "그 책은 현실의 본질에 대한 학술적 담론이다."
+      }
+    },
+    {
+      "word": "dialogue",
+      "pronunciation": "[dáiəlɔ̀ːg]",
+      "partOfSpeech": "n.",
+      "meaning": "대화",
+      "example": {
+        "en": "The play has some very witty dialogue.",
+        "ko": "그 연극에는 매우 재치 있는 대화가 있다."
+      }
+    },
+    {
+      "word": "conversation",
+      "pronunciation": "[kὰnvərséiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "대화",
+      "example": {
+        "en": "I had a long conversation with my friend on the phone.",
+        "ko": "나는 친구와 전화로 긴 대화를 나누었다."
+      }
+    },
+    {
+      "word": "debate",
+      "pronunciation": "[dibéit]",
+      "partOfSpeech": "n.",
+      "meaning": "토론",
+      "example": {
+        "en": "There was a lively debate about the new law.",
+        "ko": "새 법에 대한 활발한 토론이 있었다."
+      }
+    },
+    {
+      "word": "discussion",
+      "pronunciation": "[diskʌ́ʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "토론, 논의",
+      "example": {
+        "en": "We had a long discussion about our future plans.",
+        "ko": "우리는 미래 계획에 대해 긴 논의를 했다."
+      }
+    },
+    {
+      "word": "speech",
+      "pronunciation": "[spiːtʃ]",
+      "partOfSpeech": "n.",
+      "meaning": "연설",
+      "example": {
+        "en": "The president gave a powerful speech about unity.",
+        "ko": "대통령은 단결에 대한 강력한 연설을 했다."
+      }
+    },
+    {
+      "word": "address",
+      "pronunciation": "[ədrés]",
+      "partOfSpeech": "n.",
+      "meaning": "연설; 주소",
+      "example": {
+        "en": "The CEO's address to the employees was inspiring.",
+        "ko": "직원들에게 한 CEO의 연설은 영감을 주었다."
+      }
+    },
+    {
+      "word": "text",
+      "pronunciation": "[tekst]",
+      "partOfSpeech": "n.",
+      "meaning": "본문, 글",
+      "example": {
+        "en": "The book has a lot of text and very few pictures.",
+        "ko": "그 책은 글이 많고 그림은 거의 없다."
+      }
+    },
+    {
+      "word": "script",
+      "pronunciation": "[skript]",
+      "partOfSpeech": "n.",
+      "meaning": "대본, 원고",
+      "example": {
+        "en": "The actors were rehearsing their lines from the script.",
+        "ko": "배우들은 대본에 있는 대사를 연습하고 있었다."
+      }
+    },
+    {
+      "word": "manuscript",
+      "pronunciation": "[mǽnjuskrìpt]",
+      "partOfSpeech": "n.",
+      "meaning": "원고",
+      "example": {
+        "en": "She sent the manuscript of her novel to a publisher.",
+        "ko": "그녀는 소설 원고를 출판사에 보냈다."
+      }
+    },
+    {
+      "word": "publication",
+      "pronunciation": "[pʌ̀blikéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "출판, 발행",
+      "example": {
+        "en": "The book is scheduled for publication next month.",
+        "ko": "그 책은 다음 달에 출판될 예정이다."
+      }
+    },
+    {
+      "word": "broadcast",
+      "pronunciation": "[brɔ́ːdkæ̀st]",
+      "partOfSpeech": "n.\n        \n         v.",
+      "meaning": "방송\n        \n         방송하다",
+      "example": {
+        "en": "The news will be broadcast at 9 p.m.",
+        "ko": "뉴스는 오후 9시에 방송될 것이다."
+      }
+    },
+    {
+      "word": "media",
+      "pronunciation": "[míːdiə]",
+      "partOfSpeech": "n.",
+      "meaning": "대중 매체, 미디어",
+      "example": {
+        "en": "The event received a lot of coverage in the media.",
+        "ko": "그 행사는 언론에 많이 보도되었다."
+      }
+    },
+    {
+      "word": "journalism",
+      "pronunciation": "[dʒə́ːrnəlìzəm]",
+      "partOfSpeech": "n.",
+      "meaning": "언론",
+      "example": {
+        "en": "He studied journalism in college.",
+        "ko": "그는 대학에서 저널리즘을 공부했다."
+      }
+    },
+    {
+      "word": "correspondence",
+      "pronunciation": "[kɔ̀ːrispάndəns]",
+      "partOfSpeech": "n.",
+      "meaning": "서신, 통신",
+      "example": {
+        "en": "I have a lot of correspondence to deal with.",
+        "ko": "나는 처리해야 할 서신이 많다."
+      }
+    },
+    {
+      "word": "message",
+      "pronunciation": "[mésidʒ]",
+      "partOfSpeech": "n.",
+      "meaning": "메시지, 전갈",
+      "example": {
+        "en": "Did you get my message?",
+        "ko": "내 메시지 받았니?"
+      }
+    },
+    {
+      "word": "signal",
+      "pronunciation": "[sígnəl]",
+      "partOfSpeech": "n.",
+      "meaning": "신호",
+      "example": {
+        "en": "A red light is a signal to stop.",
+        "ko": "빨간불은 정지 신호이다."
+      }
+    },
+    {
+      "word": "communication",
+      "pronunciation": "[kəmjùːnikéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "의사소통",
+      "example": {
+        "en": "Good communication is essential in a team.",
+        "ko": "좋은 의사소통은 팀에서 필수적이다."
+      }
+    },
+    {
+      "word": "interaction",
+      "pronunciation": "[ìntərǽkʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "상호 작용",
+      "example": {
+        "en": "The book explores the interaction between humans and their environment.",
+        "ko": "그 책은 인간과 환경 사이의 상호 작용을 탐구한다."
+      }
+    },
+    {
+      "word": "feedback",
+      "pronunciation": "[fíːdbæ̀k]",
+      "partOfSpeech": "n.",
+      "meaning": "피드백, 의견",
+      "example": {
+        "en": "We welcome your feedback on our new product.",
+        "ko": "우리는 신제품에 대한 당신의 피드백을 환영합니다."
+      }
+    },
+    {
+      "word": "response",
+      "pronunciation": "[rispάns]",
+      "partOfSpeech": "n.",
+      "meaning": "응답, 반응",
+      "example": {
+        "en": "I am still waiting for a response to my email.",
+        "ko": "나는 아직 내 이메일에 대한 응답을 기다리고 있다."
+      }
+    },
+    {
+      "word": "clarification",
+      "pronunciation": "[klæ̀rəfikéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "설명, 해명",
+      "example": {
+        "en": "I need some clarification on this point.",
+        "ko": "이 점에 대해 약간의 설명이 필요합니다."
+      }
+    },
+    {
+      "word": "circumlocution",
+      "pronunciation": "[ˌsɜːrkəmloʊˈkjuːʃn]",
+      "partOfSpeech": "noun",
+      "meaning": "우회적 표현, 에둘러 말하기",
+      "example": {
+        "en": "Instead of giving a direct answer, he resorted to circumlocution to avoid the sensitive topic.",
+        "ko": "그는 직접적인 답변 대신 민감한 주제를 피하기 위해 우회적 표현을 사용했다."
+      }
+    },
+    {
+      "word": "language",
+      "pronunciation": "/ˈlæ&eng;ɡwɪdʒ/",
+      "partOfSpeech": "n.",
+      "meaning": "소리, 단어, 문법이 체계화된 인간의 의사소통 체계; 또한 특정 공동체가 사용하는 말.",
+      "example": {
+        "en": "Language enables humans to share complex ideas across generations.",
+        "ko": "언어는 인간이 복잡한 생각을 세대를 넘어 공유하게 해 준다."
+      }
+    },
+    {
+      "word": "translation",
+      "pronunciation": "/trænzˈleɪʃən/",
+      "partOfSpeech": "n.",
+      "meaning": "한 언어의 말이나 글을 다른 언어로 옮기는 일; 다른 언어로 옮긴 글",
+      "example": {
+        "en": "Accurate translation requires cultural as well as linguistic knowledge.",
+        "ko": "정확한 번역은 언어적 지식뿐 아니라 문화적 지식도 필요하다."
+      }
+    },
+    {
+      "word": "utterance",
+      "pronunciation": "/ˈʌtərəns/",
+      "partOfSpeech": "n.",
+      "meaning": "말로 된 단어·구·문장; 언어학에서 침묵으로 구분되는 발화 단위.",
+      "example": {
+        "en": "Each utterance was recorded and analyzed for pauses and fillers.",
+        "ko": "각 발화는 멈춤과 말채움소리를 분석하기 위해 녹음되었다."
+      }
+    }
+  ]
+}

@@ -1,0 +1,725 @@
+{
+  "bookId": "logic-basic-ch01",
+  "chapter": "ch01",
+  "title": "독해의 시작",
+  "problems": [
+    {
+      "id": "logic-basic-1",
+      "number": 1,
+      "type": "reading-comprehension",
+      "stem": "Clancy Blair, who suggests that the ability to self-regulate is more important than intelligence in children's academic achievement, said that children need to be provided with self-regulating activities to decrease impulsiveness and instant satisfaction and to promote attention and awareness of their own and other's thoughts and feelings.",
+      "choices": [
+        "아이들의 학업 성취에서 자기 규제가 가장 중요한 요소이다.",
+        "아이들에게 자기 조절을 위한 활동을 할 기회가 있어야 한다.",
+        "아이들의 지능은 학업 성취도에 영향을 미치지 않는다."
+      ],
+      "answer": 3,
+      "explanation": "[해석] 인터넷은 우리가 의사소통하고, 일하고, 정보에 접근하는 방식에 혁신을 가져왔다. 이메일은 즉석 국제 소통을 가능하게 하고, 온라인 플랫폼은 원격 근무 기회를 만들어준다. 디지털 도서관은 방대한 양의 지식에 대한 접근을 제공한다. 하지만 이러한 디지털 혁명은 사생활 침해 우려나 정보 과부하 같은 문제들도 가져온다.[해설] 첫 문장에서 인터넷이 여러 영역(의사소통, 업무, 정보 접근)에 혁신을 가져왔다고 했고, 이후 구체적 예시들과 문제점까지 제시하며 전체적인 영향을 다루고 있다."
+    },
+    {
+      "id": "logic-basic-2",
+      "number": 2,
+      "type": "reading-comprehension",
+      "stem": "Despite (what most people believe) many of today's kids have longer attention spans than we think; and they are passionate about creating not just personal web-sites, but also attractive, useful knit products that mark their presence in the world.",
+      "choices": [
+        "요즘 아이들은 집중력이 좋아서 웹 페이지 제작에 능한 편이다.",
+        "요즘 아이들의 집중력 지속 시간은 컴퓨터의 사용 시간에 비례한다.",
+        "요즘 아이들은 뜨개질 같은 집중력을 요하는 활동을 좋아한다."
+      ],
+      "answer": 1,
+      "explanation": "[해석] 기후변화는 우리 시대의 가장 시급한 문제 중 하나다. 상승하는 기온이 극지방 빙하를 녹이고 있어 해수면 상승을 초래하고 있다. 극한 기상 현상들이 더 빈번하고 심각해지고 있다. 과학자들은 즉각적인 조치 없이는 그 결과가 돌이킬 수 없을 수도 있다고 경고한다.[해설] 첫 문장에서 기후변화가 \"가장 시급한 문제 중 하나\"라고 중심 사상을 제시하고, 나머지 문장들은 이를 뒷받침하는 구체적 증거들이다."
+    },
+    {
+      "id": "logic-basic-3",
+      "number": 3,
+      "type": "reading-comprehension",
+      "stem": "We offer lengthy scientific explanations as answers to children's questions, when a direct experience of something similar or an image that can live and work in their imagination would be much more satisfying to them.",
+      "choices": [
+        "아이들이 충분히 상상할 수 있는 문제에도 우리는 과학적 설명을 제공하려 한다.",
+        "아이들의 상상력 자극을 위해 지나치게 많은 과학적 설명을 지양해야 한다.",
+        "아이들의 상상력이 충족되지 않을 경우 과학적 설명이 제공될 필요가 있다."
+      ],
+      "answer": 2,
+      "explanation": "[해석] 규칙적인 운동은 수많은 건강상의 이익을 제공한다. 심혈관계를 강화시켜 심장병 위험을 줄인다. 운동은 또한 자연적 기분 향상제 역할을 하는 엔돌핀을 분비하게 하여 정신 건강을 개선시킨다. 게다가 신체 활동은 건강한 체중을 유지하고 근력을 기르는 데 도움이 된다.[해설] 첫 문장에서 \"수많은 건강상의 이익\"이라는 중심 사상을 제시하고, 이후 심혈관, 정신건강, 체중관리 등 구체적 이익들을 나열한다."
+    },
+    {
+      "id": "logic-basic-4",
+      "number": 4,
+      "type": "reading-comprehension",
+      "stem": "In a study of 7,400 employees in London, those who felt they had to meet deadlines imposed by someone else and had little say in how they did their work had a 50 percent higher risk of developing symptoms of coronary heart disease than those with more job flexibility.",
+      "choices": [
+        "연구에 따르면 마감시한에 대한 압박이 없는 자율적인 직장에 속한 사람이 심장질환에 걸릴 확률이 더 낮지만, 일의 융통성은 떨어진다고 한다.",
+        "연구에 따르면 상사의 압박과 발언권이 없는 직장인이 심장질환에 걸릴 확률이 더 낮다고 한다.",
+        "연구에 따르면 상사가 요구한 마감시한이 없고 발언권을 가질 수 있는 직장인이 심장질환에 걸릴 확률이 더 낮다고 한다."
+      ],
+      "answer": 2,
+      "explanation": "[해석] 소셜미디어 플랫폼은 사람들이 정보를 공유하고 다른 사람들과 연결하는 방식을 변화시켰다. 페이스북은 사용자들이 전 세계의 친구들 및 가족과 연락을 유지할 수 있게 해준다. 트위터는 실시간 뉴스 공유와 공적 담론을 가능하게 한다. 인스타그램은 예술적 표현과 사업 마케팅을 위한 새로운 기회들을 만들어냈다.[해설] 첫 문장에서 소셜미디어가 정보 공유와 연결 방식을 변화시켰다는 중심 사상을 제시하고, 각 플랫폼별 구체적 예시들로 뒷받침한다."
+    },
+    {
+      "id": "logic-basic-5",
+      "number": 5,
+      "type": "reading-comprehension",
+      "stem": "As the structures of our world and the conditions of certainty have yielded to an avalanche of change, the extent of our longing for stable, definitive leadership has been exceeded only by the impossibility of finding it.",
+      "choices": [
+        "지도력 부재로 인해 세상이 예측하지 힘들고 통제하기가 어려워지고 있다.",
+        "세상이 험난해지면서 명확하고 안정적인 지도자가 절실하게 요구되고 있다.",
+        "세상이 예측할 수 없게 변하면서 안정적인 지도자를 찾기가 힘들어졌다."
+      ],
+      "answer": 2,
+      "explanation": "[해석] 화석연료 매장량이 감소함에 따라 재생 에너지원이 점점 더 중요해지고 있다. 태양 전지판은 해로운 배출물을 생산하지 않으면서 햇빛을 전기로 변환한다. 풍력 터빈은 자연 바람의 힘을 이용해 깨끗한 에너지를 생산한다. 이러한 지속가능한 기술들은 화석연료에 대한 의존도를 줄이면서 더 푸른 미래에 대한 희망을 제공한다.[해설] 첫 문장에서 재생 에너지원의 중요성 증대라는 중심 사상을 제시하고, 태양광과 풍력의 구체적 예시를 통해 뒷받침한다."
+    },
+    {
+      "id": "logic-basic-6",
+      "number": 6,
+      "type": "reading-comprehension",
+      "stem": "The pain of her injured back was beyond description.",
+      "choices": [
+        "She felt so much pain in the back after she got it injured.",
+        "The pain she had finally gotten over could not be explained.",
+        "The pain she felt after being attacked defied description.",
+        "The backache was relieved gradually after she got injured."
+      ],
+      "answer": 1,
+      "explanation": "[해석] 많은 학생들이 학업 생활 중에 미루는 습관으로 고생한다. 이 습관은 종종 실패에 대한 두려움이나 완벽주의에서 비롯된다. 미루기를 극복하기 위해, 학생들은 큰 과제를 더 작고 관리 가능한 단계들로 나눌 수 있다. 게다가 구체적인 마감일을 정하고 진전에 대해 보상하는 것이 동기를 유지하는 데 도움이 될 수 있다.[해설] 미루기라는 문제 제시 → 원인 분석(두려움, 완벽주의) → 해결책 제시(과제 분할, 마감일 설정 등)의 순서로 전개된다."
+    },
+    {
+      "id": "logic-basic-7",
+      "number": 7,
+      "type": "reading-comprehension",
+      "stem": "The important thing in science is not so much to obtain new facts as to discover new ways of thinking about them.",
+      "choices": [
+        "It's important in science to get new facts as well as new insights into them.",
+        "Science requires new ways of thought more than a collection of new facts.",
+        "To be a scientist, you should distinguish facts from mere thoughts about them.",
+        "Research on new facts isn't important in science consisting of new approaches."
+      ],
+      "answer": 1,
+      "explanation": "[해석] 과거에 사람들은 주로 신문과 텔레비전에 뉴스를 의존했다. 하지만 오늘날에는 디지털 플랫폼이 미디어 환경을 지배한다. 전통적 미디어와 달리, 온라인 소스들은 즉석 업데이트와 상호작용 기능을 제공한다. 이러한 변화는 정보 소비에 있어 장점과 단점을 모두 갖고 있다.[해설] 과거 상황(신문, TV) → 현재 상황(디지털 플랫폼) → 비교 분석(차이점과 영향)의 순서로 전개된다."
+    },
+    {
+      "id": "logic-basic-8",
+      "number": 8,
+      "type": "reading-comprehension",
+      "stem": "To say that a believer is happier than a skeptic is no more to the point than to say that a drunken man is happier than a sober one.",
+      "choices": [
+        "As a drunken man is happier than a sober one, so a believer is happier than a skeptic.",
+        "It is safe to say that a skeptic is happier than a believer as long as he stays away from alcohol.",
+        "It makes sense that alcohol does not make people any happier, nor does religious faith.",
+        "To say that a believer is happier is more important than to say that a drunken man is happier."
+      ],
+      "answer": 2,
+      "explanation": "[해석] 인공지능이 다양한 산업 분야에서 빠르게 발전하고 있다. 예를 들어, 의료 분야에서 AI는 의사들이 질병을 더 정확하게 진단하는 데 도움을 준다. 교통 분야에서는 자율주행차가 AI를 사용해 안전하게 운행한다. 마찬가지로 교육 분야에서 AI 기반 시스템들이 학생들에게 개인맞춤형 학습 경험을 제공한다.[해설] AI 발전이라는 일반론 제시 → 의료, 교통, 교육 분야의 구체적 예시들로 뒷받침하는 구조이다."
+    },
+    {
+      "id": "logic-basic-9",
+      "number": 9,
+      "type": "reading-comprehension",
+      "stem": "It has taken social critics some time to realize the importance of comic books.",
+      "choices": [
+        "Comic books were not viewed as important by social critics for a while.",
+        "Social critics have been trying to reveal the importance of comic books.",
+        "Social critics occasionally recognized the importance of comic books.",
+        "Comic books have been studied for their importance by social critics."
+      ],
+      "answer": 1,
+      "explanation": "[해석] 온라인 쇼핑은 전통적인 소매업이 따라올 수 없는 편리함과 다양성을 제공한다. 고객들은 집에서 수천 개의 제품을 둘러보고 가격을 쉽게 비교할 수 있다. 하지만 온라인 쇼핑에도 단점이 있다. 고객들은 구매 전에 제품을 직접 검사할 수 없고, 배송 지연이 짜증스러울 수 있다.[해설] 온라인 쇼핑의 장점들 제시 → \"However\"로 전환하여 단점들 제시하는 균형적 비교 구조이다."
+    },
+    {
+      "id": "logic-basic-10",
+      "number": 10,
+      "type": "reading-comprehension",
+      "stem": "Science does not seek to enforce a moral code of behavior in its practitioners, as much as ancient philosophy did.",
+      "choices": [
+        "Like ancient philosophers, practitioners of science should be held accountable for their moral behavior.",
+        "Ancient philosophy placed more pressure on its practitioners to adhere to moral rules regarding behavior than science currently does.",
+        "How a moral code of behavior is contested in science differs from how it was done in ancient philosophy.",
+        "Science is more rigorous about regulating its practitioners through a moral code of behavior than in ancient philosophy."
+      ],
+      "answer": 1,
+      "explanation": "[해석] 전기차의 인기가 환경적 우려와 기술 발전으로 인해 빠르게 증가하고 있다. 배터리 기술이 향상되면서, 전기차들은 한 번 충전으로 더 긴 거리를 갈 수 있게 되었다. 결과적으로, 더 많은 소비자들이 전통적인 가솔린 자동차보다 전기차를 선택하고 있다.[해설] 전기차 인기 증가라는 현상 → 환경적 우려와 기술 발전이라는 원인 → 소비자 선택 변화라는 결과의 순서로 전개된다."
+    },
+    {
+      "id": "logic-basic-11",
+      "number": 11,
+      "type": "reading-comprehension",
+      "stem": "We have no way to judge the future except by the past. Our vision into the future is dim but we have some light from the lamp of _________.",
+      "choices": [
+        "hope",
+        "truth",
+        "future",
+        "experience"
+      ],
+      "answer": 2,
+      "explanation": "[해석] 새 스마트폰은 많은 인상적인 기능들을 가지고 있다. 카메라 화질이 뛰어나고, 배터리 수명이 상당히 향상되었다. ________, 가격이 비슷한 모델들에 비해 꽤 높다.[해설] 앞에서 장점들을 나열했으므로, 이와 대조되는 단점(높은 가격)을 제시하기 위해 \"However\"가 적절하다."
+    },
+    {
+      "id": "logic-basic-12",
+      "number": 12,
+      "type": "reading-comprehension",
+      "stem": "The average person expresses himself differently in writing and speaking. With proper practice the difference can be overcome, and one's writing will become more _________.",
+      "choices": [
+        "clear and precise",
+        "like his talk",
+        "interesting to read",
+        "widely known"
+      ],
+      "answer": 3,
+      "explanation": "[해석] 규칙적인 독서는 수많은 인지적 이익을 가진다. 어휘력과 이해력을 향상시킨다. ________, 독서는 스트레스를 줄이고 인지 능력 저하를 예방하는 데 도움이 되는 정신적 자극을 제공할 수 있다.[해설] 독서의 이익들을 계속 추가로 제시하고 있으므로 \"Furthermore\"가 적절하다."
+    },
+    {
+      "id": "logic-basic-13",
+      "number": 13,
+      "type": "reading-comprehension",
+      "stem": "If the will to communicate is strong enough, language will not be a(n) _________. We always have, as a standby, communication by sign language, though it cannot really be called conversation.",
+      "choices": [
+        "unconquerable obstacle",
+        "necessary evil",
+        "impolite interaction",
+        "popular appeal"
+      ],
+      "answer": 3,
+      "explanation": "[해석] 많은 회사들이 재택근무 정책을 시행하고 있다. ________, 구글은 직원들이 주 3일 집에서 일할 수 있도록 하고, 마이크로소프트는 완전히 유연한 일정을 제공한다.[해설] 앞의 일반적 진술에 대한 구체적 예시를 제시하므로 \"For example\"이 적절하다."
+    },
+    {
+      "id": "logic-basic-14",
+      "number": 14,
+      "type": "reading-comprehension",
+      "stem": "Air resists the motion of objects passing through it. Airplanes and automobiles are streamlined so that they can pass through the air with _________.",
+      "choices": [
+        "no resistance",
+        "less resistance",
+        "less speed",
+        "full speed"
+      ],
+      "answer": 4,
+      "explanation": "[해석] 과학자들은 수십 년간 뇌에 대한 명상의 효과를 연구해왔다. 그들의 연구는 규칙적인 명상이 집중력을 향상시키고 불안을 줄일 수 있다는 것을 보여준다. ________, 명상은 정신 건강을 위한 가치 있는 도구인 것으로 보인다.[해설] 앞의 연구 결과를 바탕으로 결론을 도출하므로 \"Thus\"가 적절하다."
+    },
+    {
+      "id": "logic-basic-15",
+      "number": 15,
+      "type": "reading-comprehension",
+      "stem": "It has always been dangerous to teach men new ideas contrary to (those which are generally accepted.) The first men who taught that the earth is round were _________.",
+      "choices": [
+        "persecuted",
+        "rewarded",
+        "right",
+        "conformists"
+      ],
+      "answer": 2,
+      "explanation": "[해석] 도시의 대중교통 시스템은 많은 장점을 가지고 있다. 환경친화적이고 비용효율적이다. ________, 버스들은 러시아워 동안 종종 붐벼서 통근을 불편하게 만든다.[해설] 앞에서 장점들을 제시했으므로, 이와 대조되는 단점을 제시하기 위해 \"However\"가 적절하다."
+    },
+    {
+      "id": "logic-basic-16",
+      "number": 16,
+      "type": "reading-comprehension",
+      "stem": "When Marcus entered the classroom, he felt calm. However, as soon as he opened the test paper, he began to feel <strong>agitated</strong>.",
+      "choices": [
+        "very nervous",
+        "peaceful",
+        "angry",
+        "confused"
+      ],
+      "answer": 2,
+      "explanation": "[해석] 패스트 패션의 부상은 상당한 환경적 결과를 가져왔다. 저렴한 의류 생산은 막대한 섬유 폐기물과 오염을 초래한다. 많은 의류들이 버려지기 전에 단 몇 번만 입혀진다. 패션에 대한 이러한 ________ 접근법은 우리 지구에 지속가능하지 않다.[해설] 의류를 몇 번만 입고 버린다는 맥락에서 \"throwaway(일회용의, 버리는)\" 접근법이 적절하다."
+    },
+    {
+      "id": "logic-basic-17",
+      "number": 17,
+      "type": "reading-comprehension",
+      "stem": "Journalists must be <strong>versatile</strong>. For instance, they must be good at writing, listening to people, speaking, working quickly, and doing research.",
+      "choices": [
+        "able to do one thing",
+        "able to communicate well",
+        "able to do lots of different things",
+        "better at one skill than another"
+      ],
+      "answer": 3,
+      "explanation": "[해석] 소셜미디어 플랫폼들은 서비스를 개선하기 위해 방대한 양의 사용자 데이터를 수집한다. 하지만 이러한 관행은 심각한 사생활 우려를 제기한다. 사용자들은 종종 그 정보가 어떻게 사용될지 완전히 이해하지 못한 채 개인정보를 공유한다. 따라서 소비자를 보호하기 위해 더 강력한 ________ 규정이 필요하다.[해설] 개인정보 공유와 사생활 우려라는 맥락에서 \"data protection(데이터 보호)\" 규정이 적절하다."
+    },
+    {
+      "id": "logic-basic-18",
+      "number": 18,
+      "type": "reading-comprehension",
+      "stem": "When James worked in the office, his job was <strong>sedentary</strong>. In contrast, when he became a reporter, he was almost away from his desk.",
+      "choices": [
+        "well paid",
+        "sitting a lot",
+        "moving around a lot",
+        "exciting"
+      ],
+      "answer": 3,
+      "explanation": "[해석] 전통적인 농업 방법들은 종종 화학 살충제와 비료에 크게 의존한다. 대조적으로, 유기농업은 토양 건강을 유지하고 해충을 통제하기 위해 자연적 과정을 사용한다. 유기농 제품이 더 비쌀 수 있지만, 많은 소비자들이 ________ 음식을 위해 추가 비용을 지불할 의향이 있다.[해설] 유기농업과 자연적 과정이라는 맥락에서 \"healthier(더 건강한)\" 음식이 적절하다."
+    },
+    {
+      "id": "logic-basic-19",
+      "number": 19,
+      "type": "reading-comprehension",
+      "stem": "Pablo always showed <strong>animosity</strong> toward his teachers by throwing spitballs and mouthing off, but his sister Mary was kind and sweet.",
+      "choices": [
+        "kindness",
+        "greet in a friendly way",
+        "a strong feeling of dislike and anger",
+        "weapons"
+      ],
+      "answer": 1,
+      "explanation": "[해석] COVID-19 팬데믹은 많은 사업체들이 새로운 상황에 빠르게 적응하도록 강요했다. 식당들은 배달과 포장 서비스만을 제공하기 시작했다. 소매점들은 온라인 쇼핑 플랫폼을 개발했다. 이러한 빠른 ________은 많은 사업체들이 봉쇄 기간 동안 생존하는 데 도움이 되었다.[해설] 새로운 서비스 방식과 플랫폼 개발이라는 맥락에서 \"innovations(혁신들)\"이 적절하다."
+    },
+    {
+      "id": "logic-basic-20",
+      "number": 20,
+      "type": "reading-comprehension",
+      "stem": "Student journalists are taught how to be <strong>concise</strong> (when writing in a limited space).",
+      "choices": [
+        "peaceful",
+        "proper",
+        "clear and brief",
+        "wordy"
+      ],
+      "answer": 3,
+      "explanation": "[해석] 수면 부족은 현대 사회에서 점점 더 흔해지고 있다. 사람들은 종종 업무나 오락을 위해 수면을 희생한다. 하지만 수면 부족은 신체 건강, 정신적 수행능력, 그리고 감정적 안녕에 심각한 영향을 미칠 수 있다. 따라서 충분한 수면을 우선시하는 것은 전체적인 건강을 위해 ________ 것으로 여겨져야 한다.[해설] 건강에 심각한 영향을 미친다는 맥락에서 수면을 \"essential(필수적인)\" 것으로 여겨야 한다는 것이 적절하다."
+    },
+    {
+      "id": "logic-basic-1",
+      "number": 1,
+      "type": "reading-comprehension",
+      "stem": "According to many sociologists, the study of what our society calls 'art' can only really progress if we drop the highly specific and ideologically loaded terminology of 'art', 'artworks' and 'artists', and replace these with the more neutral and less historically specific terms 'cultural forms', 'cultural products' and 'cultural producers'.",
+      "choices": [
+        "전문 용어를 버리고, 더 중립적이고 쉬운 용어의 사용을 장려해야, 우리가 '예술'이라고 부르는 것들의 연구가 발전 할 수 있다.",
+        "전문적인 용어의 사용이 사회학자들로 하여금 '예술'에 대한 연구결과를 더 구체적으로 보여줄 수 있게 만들어 준다.",
+        "우리가 '예술'이라고 부르는 것들의 연구가 발전했기 때문에 우리는 더 쉬운 용어들로 이를 이해할 수 있게 되었다."
+      ]
+    },
+    {
+      "id": "logic-basic-2",
+      "number": 2,
+      "type": "reading-comprehension",
+      "stem": "One school of modern economic theory, following Hobbes, argues that people give to charities in part because of the pleasure they get from imagining either the relief of those they benefit or their own relief from alleviating their sympathetic distress.",
+      "choices": [
+        "사람들이 자선을 베푸는 이유는 자신의 이익 때문이다.",
+        "자선은 인간의 이기심을 치료하기 위한 좋은 도구이다.",
+        "자선은 현대-경제-이론의 결과와 배치되는 결과이다."
+      ]
+    },
+    {
+      "id": "logic-basic-3",
+      "number": 3,
+      "type": "reading-comprehension",
+      "stem": "Anchoring (settling to a certain price range) influences all kinds of purchases, which has been proven through a research by Uri Simonsohn and George Lowenstein that shows that people who move from inexpensive areas to moderately priced cities do not increase their spending to fit the new area.",
+      "choices": [
+        "사람들은 주변의 상황이 변해도 기존의 지출방식을 유지한다.",
+        "저소득층 지역에서 중산층 지역으로 이사를 가게 되면 사람들의 구매방식이 변화한다.",
+        "Anchoring이란 어떤 상황에서도 사람들의 지출방식이 변하지 않는다는 의미이다."
+      ]
+    },
+    {
+      "id": "logic-basic-4",
+      "number": 4,
+      "type": "reading-comprehension",
+      "stem": "Predatory fishes have less chance (of) encountering prey if the prey are members of a school because the individuals of the prey species are concentrated in compact units rather than dispersed over a much larger area.",
+      "choices": [
+        "포식자 물고기는 무리지어 다니는 물고기의 협력적 반격이 두려워서 회피한다.",
+        "무리지어 다니는 물고기는 한 곳에 집중되어 있어 포식자 물고기가 마주치기 힘들다.",
+        "여러 곳에 퍼져있는 물고기들은 포식자 물고기의 먹잇감이 되는 경우가 잦다."
+      ]
+    },
+    {
+      "id": "logic-basic-5",
+      "number": 5,
+      "type": "reading-comprehension",
+      "stem": "According to Cambodian legends, lions once roamed the countryside attacking villagers and their precious buffalo, and long before the great Khmer Empire began in the 9th century, farmers developed a fierce martial art to defend themselves against the predator.",
+      "choices": [
+        "캄보디아의 사자들은 변두리 지역에 자주 출몰해 사람들을 공격했다.",
+        "캄보디아 인들은 사자로부터 자신을 보호하기 위해 격투기를 개발했다.",
+        "캄보디아의 사자들은 인간들이 개발한 격투기에 의해 멸종 위기에 처했다."
+      ]
+    },
+    {
+      "id": "logic-basic-6",
+      "number": 6,
+      "type": "reading-comprehension",
+      "stem": "If greed motivates individuals to work for the good things in life, there may be a silver lining in the trait.",
+      "choices": [
+        "If good things rest on the motivation of greed, it follows that generous people can never do good to others.",
+        "If it is possible that people do good things out of greed, it means that greed may have a bright side in it.",
+        "Individuals eager to commit themselves to the good in life can retain the trait until they reach old age.",
+        "Even greed may count as a valuable thing in a struggling world, as many of greedy people are men of charity."
+      ]
+    },
+    {
+      "id": "logic-basic-7",
+      "number": 7,
+      "type": "reading-comprehension",
+      "stem": "If we compare the spending habits of females and males in our society, a sharp distinction emerges.",
+      "choices": [
+        "Compared with the spending habits of females, those of males are more rational in our society.",
+        "Men and women in our society spend money in a clearly different way from each other.",
+        "Classifying the spending habits by gender is emerging as a distinct trend in our society.",
+        "The similar and different ways of spending money are found between men and women in our society."
+      ]
+    },
+    {
+      "id": "logic-basic-8",
+      "number": 8,
+      "type": "reading-comprehension",
+      "stem": "Until the day comes when we expel any form of violence against women, we will be hard pressed to say that gender equality exists in our country.",
+      "choices": [
+        "Violence against women, if not eliminated, will continue to makes it difficult to say that men and women are equal in our country.",
+        "Only when women refrain from violence, will we be able to say that our country guarantees gender equality.",
+        "Unless we eradicate violence against women, our country will be compelled to declare war against gender inequality.",
+        "Increasing unjust violence against women will drive us to protest against gender discrimination in our country."
+      ]
+    },
+    {
+      "id": "logic-basic-9",
+      "number": 9,
+      "type": "reading-comprehension",
+      "stem": "Managers in commerce and industry must increase efficiency to help get us out of the economic slump, and the same applies to public-service managers.",
+      "choices": [
+        "In order to overcome the economic slump, managers in commerce and industry and public service managers need to boost efficiency.",
+        "To maintain the current economic state, efficiency should be increased by managers in commerce and industry and public-service managers.",
+        "Managers in commerce and industry need to negotiate with public-service managers to assist in improving the economy.",
+        "Unlike public-service managers, managers in commerce and industry must do their share for the economy."
+      ]
+    },
+    {
+      "id": "logic-basic-10",
+      "number": 10,
+      "type": "reading-comprehension",
+      "stem": "Despite its purported naturally, the study will be compelled to produce results favorable to its sponsors.",
+      "choices": [
+        "The results of the study will be unbiased through the people who fund it do not want them to be.",
+        "Some say the research is biased, but really it will only do exactly what people ordered it to do.",
+        "Even though people say it has to be fair, the report will be supported by financial backers.",
+        "The research claims to be fair, but it will be forced to say good things about the people who paid for it."
+      ]
+    },
+    {
+      "id": "logic-basic-11",
+      "number": 11,
+      "type": "reading-comprehension",
+      "stem": "We cannot assume that the educated persons of a community are its only clear-thinking inhabitants, for it has been shown that good judgement is not necessarily proportional to _________.",
+      "choices": [
+        "experience",
+        "wisdom",
+        "heredity",
+        "education"
+      ]
+    },
+    {
+      "id": "logic-basic-12",
+      "number": 12,
+      "type": "reading-comprehension",
+      "stem": "Rice requires a great deal of water in order to grow. In most rice-growing regions the rainfall does not provide sufficient moisture for the crop. The rice fields must be _________.",
+      "choices": [
+        "dug",
+        "irrigated",
+        "cultivated",
+        "fertilized"
+      ]
+    },
+    {
+      "id": "logic-basic-13",
+      "number": 13,
+      "type": "reading-comprehension",
+      "stem": "Mountain-climbing involves many risks, and the climber must be alert at all times. Reckless climbers soon meet with an accident. The job is really one for a man who is _________.",
+      "choices": [
+        "bold",
+        "strong",
+        "frightened",
+        "prudent"
+      ]
+    },
+    {
+      "id": "logic-basic-14",
+      "number": 14,
+      "type": "reading-comprehension",
+      "stem": "Man is one of the most formidable of all animals and the only one who persistently chooses to attack his own species. Throughout history, he has never, except for short periods of time, dispensed with _________.",
+      "choices": [
+        "community",
+        "vigorous outdoor sports",
+        "biological perpetuation",
+        "fierce warfare"
+      ]
+    },
+    {
+      "id": "logic-basic-15",
+      "number": 15,
+      "type": "reading-comprehension",
+      "stem": "The great incentive to learning a new skill or supporting discipline is an urgent need to use it. For this reason many scientists do not learn new skills or master new disciplines until the __________ is upon them to do so.",
+      "choices": [
+        "evidence",
+        "information",
+        "opportunity",
+        "pressure"
+      ]
+    },
+    {
+      "id": "logic-basic-16",
+      "number": 16,
+      "type": "reading-comprehension",
+      "stem": "The old man's hair was <strong>sparse</strong> rather than thick and full like it was when he was young.",
+      "choices": [
+        "grow quickly",
+        "large in number or amount",
+        "slim",
+        "small in number or amount"
+      ]
+    },
+    {
+      "id": "logic-basic-17",
+      "number": 17,
+      "type": "reading-comprehension",
+      "stem": "After he was caught cheating, the student suffered the <strong>ignominy</strong> of being expelled from the school.",
+      "choices": [
+        "frequency",
+        "disgrace",
+        "agreement",
+        "attitude"
+      ]
+    },
+    {
+      "id": "logic-basic-18",
+      "number": 18,
+      "type": "reading-comprehension",
+      "stem": "Philanthropists such as Bill Gates and Warren Buffet are usually very rich people who give away large amounts of money to improve things like health and education.",
+      "choices": [
+        "business people who love making money",
+        "people who do not like to spend money",
+        "people who know a lot about computers",
+        "people who spend their money to make life better for others"
+      ]
+    },
+    {
+      "id": "logic-basic-19",
+      "number": 19,
+      "type": "reading-comprehension",
+      "stem": "From the far past to the present day, the moon has been thought to cause <strong>lunacy</strong>. Some studies have shown that this momentary insanity does have some association to the moon's phases.",
+      "choices": [
+        "negation",
+        "madness",
+        "hatred",
+        "disloyal"
+      ]
+    },
+    {
+      "id": "logic-basic-20",
+      "number": 20,
+      "type": "reading-comprehension",
+      "stem": "In 1898, the Spanish <strong>ceded</strong>, or surrendered possession of, both Guam and Puerto Rico to the United.",
+      "choices": [
+        "maintained",
+        "gave up",
+        "purchased",
+        "battled"
+      ]
+    },
+    {
+      "id": "logic-basic-1",
+      "number": 1,
+      "type": "reading-comprehension",
+      "stem": "The Internet has revolutionized the way we communicate, work, and access information. Email allows instant global communication, while online platforms enable remote work opportunities. Digital libraries provide access to vast amounts of knowledge. However, this digital revolution also brings challenges such as privacy concerns and information overload.",
+      "choices": [
+        "인터넷이 의사소통 방식을 완전히 바꾸어 놓았다.",
+        "인터넷은 장점도 있지만 단점도 있다.",
+        "인터넷이 우리 삶의 여러 영역에 혁신을 가져왔다."
+      ]
+    },
+    {
+      "id": "logic-basic-2",
+      "number": 2,
+      "type": "reading-comprehension",
+      "stem": "Climate change is one of the most pressing issues of our time. Rising temperatures are melting polar ice caps, leading to sea level rise. Extreme weather events are becoming more frequent and severe. Scientists warn that without immediate action, the consequences could be irreversible.",
+      "choices": [
+        "기후변화가 현시대의 가장 시급한 문제 중 하나다.",
+        "과학자들이 기후변화에 대해 경고하고 있다.",
+        "기후변화로 인한 구체적인 현상들이 나타나고 있다."
+      ]
+    },
+    {
+      "id": "logic-basic-3",
+      "number": 3,
+      "type": "reading-comprehension",
+      "stem": "Regular exercise provides numerous health benefits. It strengthens the cardiovascular system, reducing the risk of heart disease. Exercise also improves mental health by releasing endorphins, which act as natural mood elevators. Additionally, physical activity helps maintain a healthy weight and builds muscle strength.",
+      "choices": [
+        "운동이 심혈관계를 강화시킨다.",
+        "규칙적인 운동이 다양한 건강상의 이익을 제공한다.",
+        "운동이 정신 건강에 도움이 된다."
+      ]
+    },
+    {
+      "id": "logic-basic-4",
+      "number": 4,
+      "type": "reading-comprehension",
+      "stem": "Social media platforms have transformed how people share information and connect with others. Facebook allows users to stay in touch with friends and family across the globe. Twitter enables real-time news sharing and public discourse. Instagram has created new opportunities for artistic expression and business marketing.",
+      "choices": [
+        "페이스북이 전 세계 사람들을 연결해준다.",
+        "소셜미디어가 정보 공유와 인간관계 형성 방식을 변화시켰다.",
+        "인스타그램이 새로운 사업 기회를 만들었다."
+      ]
+    },
+    {
+      "id": "logic-basic-5",
+      "number": 5,
+      "type": "reading-comprehension",
+      "stem": "Renewable energy sources are becoming increasingly important as fossil fuel reserves decline. Solar panels convert sunlight into electricity without producing harmful emissions. Wind turbines harness natural wind power to generate clean energy. These sustainable technologies offer hope for a greener future while reducing our dependence on fossil fuels.",
+      "choices": [
+        "태양 에너지가 깨끗한 전기를 만든다.",
+        "재생 에너지원이 화석 연료를 대체할 중요한 대안이 되고 있다.",
+        "풍력 발전이 자연 바람을 이용한다."
+      ]
+    },
+    {
+      "id": "logic-basic-6",
+      "number": 6,
+      "type": "reading-comprehension",
+      "stem": "Many students struggle with procrastination during their academic careers. This habit often stems from fear of failure or perfectionism. To overcome procrastination, students can break large tasks into smaller, manageable steps. Additionally, setting specific deadlines and rewarding progress can help maintain motivation.",
+      "choices": [
+        "문제 제시 → 원인 분석 → 해결책 제시",
+        "현상 설명 → 비교 분석 → 결론 도출",
+        "일반론 → 구체적 예시 → 반대 의견"
+      ]
+    },
+    {
+      "id": "logic-basic-7",
+      "number": 7,
+      "type": "reading-comprehension",
+      "stem": "In the past, people primarily relied on newspapers and television for news. Today, however, digital platforms dominate the media landscape. Unlike traditional media, online sources provide instant updates and interactive features. This shift has both advantages and disadvantages for information consumption.",
+      "choices": [
+        "과거 상황 → 현재 상황 → 비교 분석",
+        "원인 제시 → 결과 설명 → 해결책 제안",
+        "일반론 → 구체적 사례 → 결론"
+      ]
+    },
+    {
+      "id": "logic-basic-8",
+      "number": 8,
+      "type": "reading-comprehension",
+      "stem": "Artificial intelligence is rapidly advancing across various industries. For instance, in healthcare, AI helps doctors diagnose diseases more accurately. In transportation, self-driving cars use AI to navigate safely. Similarly, in education, AI-powered systems provide personalized learning experiences for students.",
+      "choices": [
+        "주장 → 반박 → 결론",
+        "일반론 → 구체적 예시들",
+        "문제 → 원인 → 해결책"
+      ]
+    },
+    {
+      "id": "logic-basic-11",
+      "number": 11,
+      "type": "reading-comprehension",
+      "stem": "The new smartphone has many impressive features. The camera quality is excellent, and the battery life has significantly improved. ________, the price is quite high compared to similar models.",
+      "choices": [
+        "Moreover",
+        "However",
+        "Therefore",
+        "For instance"
+      ]
+    },
+    {
+      "id": "logic-basic-12",
+      "number": 12,
+      "type": "reading-comprehension",
+      "stem": "Regular reading has numerous cognitive benefits. It improves vocabulary and comprehension skills. ________, reading can reduce stress and provide mental stimulation that helps prevent cognitive decline.",
+      "choices": [
+        "Nevertheless",
+        "In contrast",
+        "Furthermore",
+        "On the other hand"
+      ]
+    },
+    {
+      "id": "logic-basic-13",
+      "number": 13,
+      "type": "reading-comprehension",
+      "stem": "Many companies are implementing remote work policies. ________, Google allows employees to work from home three days a week, while Microsoft offers completely flexible schedules.",
+      "choices": [
+        "However",
+        "Therefore",
+        "For example",
+        "In conclusion"
+      ]
+    },
+    {
+      "id": "logic-basic-14",
+      "number": 14,
+      "type": "reading-comprehension",
+      "stem": "Scientists have been studying the effects of meditation on the brain for decades. Their research shows that regular meditation can improve focus and reduce anxiety. ________, meditation appears to be a valuable tool for mental health.",
+      "choices": [
+        "For instance",
+        "Nevertheless",
+        "In contrast",
+        "Thus"
+      ]
+    },
+    {
+      "id": "logic-basic-15",
+      "number": 15,
+      "type": "reading-comprehension",
+      "stem": "The city's public transportation system has many advantages. It's environmentally friendly and cost-effective. ________, the buses are often overcrowded during rush hours, making the commute uncomfortable.",
+      "choices": [
+        "Similarly",
+        "However",
+        "Therefore",
+        "Furthermore"
+      ]
+    },
+    {
+      "id": "logic-basic-16",
+      "number": 16,
+      "type": "reading-comprehension",
+      "stem": "The rise of fast fashion has had significant environmental consequences. Cheap clothing production leads to massive textile waste and pollution. Many garments are worn only a few times before being discarded. This ________ approach to fashion is unsustainable for our planet.",
+      "choices": [
+        "economical",
+        "throwaway",
+        "innovative",
+        "traditional"
+      ]
+    },
+    {
+      "id": "logic-basic-17",
+      "number": 17,
+      "type": "reading-comprehension",
+      "stem": "Social media platforms collect vast amounts of user data to improve their services. However, this practice raises serious privacy concerns. Users often share personal information without fully understanding how it will be used. Therefore, stronger ________ regulations are needed to protect consumers.",
+      "choices": [
+        "marketing",
+        "advertising",
+        "data protection",
+        "social networking"
+      ]
+    },
+    {
+      "id": "logic-basic-18",
+      "number": 18,
+      "type": "reading-comprehension",
+      "stem": "Traditional farming methods often rely heavily on chemical pesticides and fertilizers. In contrast, organic farming uses natural processes to maintain soil health and control pests. While organic produce may cost more, many consumers are willing to pay the premium for ________ food.",
+      "choices": [
+        "processed",
+        "conventional",
+        "healthier",
+        "cheaper"
+      ]
+    },
+    {
+      "id": "logic-basic-19",
+      "number": 19,
+      "type": "reading-comprehension",
+      "stem": "The COVID-19 pandemic forced many businesses to adapt quickly to new circumstances. Restaurants began offering delivery and takeout services exclusively. Retail stores developed online shopping platforms. These rapid ________ helped many businesses survive during lockdowns.",
+      "choices": [
+        "innovations",
+        "challenges",
+        "restrictions",
+        "competitions"
+      ]
+    },
+    {
+      "id": "logic-basic-20",
+      "number": 20,
+      "type": "reading-comprehension",
+      "stem": "Sleep deprivation has become increasingly common in modern society. People often sacrifice sleep for work or entertainment. However, lack of sleep can seriously impact physical health, mental performance, and emotional well-being. Therefore, prioritizing adequate sleep should be considered ________ for overall health.",
+      "choices": [
+        "optional",
+        "expensive",
+        "essential",
+        "difficult"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "student": "정재영",
+  "date": "260228",
+  "subject": "문법",
+  "textbook": "vera's flavor 편입영어 문법 bridge편",
+  "range": "Part 2 Practice Problems 51~68 (18문제)",
+  "textbookDataHint": null,
+  "summary": {
+    "totalQ": 18,
+    "wrongQ": 7,
+    "correctRate": "61%",
+    "goodPoints": "51, 52, 53, 55, 58, 67번 정답으로 단순 시제 판단과 과거 시제 활용은 잘 되고 있습니다. 특히 시간 표현(last night, five years ago, tomorrow)에 근거해 시제를 고르는 습관이 보입니다.",
+    "badPoints": "단순 현재 vs 현재 진행형 구분(54, 56, 57번)과 현재완료 용법(60, 62, 66, 68번)에서 오답이 집중됐습니다. 상태동사 진행형 불가 규칙과 has gone vs has been 구분이 취약합니다.",
+    "priority": "상태동사 목록 암기 → 단순현재/현재진행 판단 기준 정리 → 현재완료 have gone vs have been 구분 집중",
+    "weakAreas": [
+      {
+        "area": "단순현재 vs 현재진행형",
+        "count": 3,
+        "severity": "high",
+        "note": "54(상태동사), 56(현재상황 표현), 57(반복습관) — 진행형 과다 사용 패턴"
+      },
+      {
+        "area": "현재완료 시제",
+        "count": 4,
+        "severity": "high",
+        "note": "60(과거완료 혼동), 62(have been vs have gone), 66(주어 일치), 68(have gone vs have been)"
+      }
+    ]
+  },
+  "wrongAnswers": [
+    {
+      "questionNum": "54",
+      "studentAnswer": "② is consisting",
+      "correctAnswer": "① consists",
+      "questionType": "단순현재 vs 현재진행",
+      "explanation": "consist는 '구성되다'는 의미의 상태동사(stative verb)로 진행형을 쓸 수 없습니다. 상태동사는 감정(love, hate), 지각(see, hear), 소유(have, own), 존재/구성(consist, contain, belong) 등이 있습니다.",
+      "keyPoint": "상태동사(stative verb)는 진행형 불가 — consist, contain, belong, own, know, believe 등은 항상 단순 시제!",
+      "relatedGrammar": "상태동사 vs 동작동사"
+    },
+    {
+      "questionNum": "56",
+      "studentAnswer": "③ studied",
+      "correctAnswer": "② is studying",
+      "questionType": "단순현재 vs 현재진행",
+      "explanation": "'currently in his second year'처럼 지금 이 순간 진행 중인 상황은 현재 진행형을 씁니다. studied는 과거형으로 문맥에 맞지 않습니다.",
+      "keyPoint": "currently, now, at the moment, this year 등 현재 진행 중임을 나타내는 표현 → 현재 진행형!",
+      "relatedGrammar": "현재 진행형 용법"
+    },
+    {
+      "questionNum": "57",
+      "studentAnswer": "② is delivering",
+      "correctAnswer": "① delivers",
+      "questionType": "단순현재 vs 현재진행",
+      "explanation": "'every day this week'는 반복적 습관/일정을 나타내므로 단순 현재를 씁니다. 진행형은 지금 이 순간 일어나고 있는 동작에 사용합니다.",
+      "keyPoint": "every day, always, usually, regularly 등 반복·습관 표현 → 단순현재! (진행형 X)",
+      "relatedGrammar": "단순현재 용법 (반복/습관)"
+    },
+    {
+      "questionNum": "60",
+      "studentAnswer": "④ was billowing",
+      "correctAnswer": "③ has billowed",
+      "questionType": "현재완료",
+      "explanation": "현재완료(has billowed)는 과거에 일어난 일이 현재까지 영향을 미칠 때 사용합니다. 과거 진행(was billowing)은 과거 특정 시점에 진행 중이던 동작에 씁니다.",
+      "keyPoint": "현재완료 = 과거 사건의 현재 결과/영향 강조. 과거의 특정 시점이 아닌 '지금까지'의 상태를 나타낼 때!",
+      "relatedGrammar": "현재완료 vs 과거진행"
+    },
+    {
+      "questionNum": "62",
+      "studentAnswer": "② has gone",
+      "correctAnswer": "④ has been",
+      "questionType": "현재완료",
+      "explanation": "has gone = 가버려서 지금 여기 없음 / has been = 다녀온 경험(지금은 돌아옴). 문맥상 '다녀온 경험'을 나타내므로 has been이 정답입니다.",
+      "keyPoint": "have gone to = ~에 가고 없다 (현재 부재) / have been to = ~에 다녀온 적 있다 (경험, 현재 복귀)",
+      "relatedGrammar": "have gone vs have been 구분"
+    },
+    {
+      "questionNum": "66",
+      "studentAnswer": "① already sent",
+      "correctAnswer": "② have already sent",
+      "questionType": "현재완료",
+      "explanation": "already와 함께 과거부터 현재까지의 완료를 나타낼 때는 현재완료를 씁니다. 단순 과거(sent)는 명확한 과거 시점이 있을 때 사용합니다.",
+      "keyPoint": "already, yet, just, ever, never 등 → 현재완료와 함께! (단순 과거 X)",
+      "relatedGrammar": "현재완료 + already/yet/just"
+    },
+    {
+      "questionNum": "68",
+      "studentAnswer": "① has been",
+      "correctAnswer": "③ has gone",
+      "questionType": "현재완료",
+      "explanation": "문맥상 주어가 지금 여기 없고 어딘가에 가있는 상태이므로 has gone이 맞습니다. has been은 경험(다녀온 적 있다)을 나타내어 문맥에 맞지 않습니다.",
+      "keyPoint": "62번과 반대 케이스! 문맥에서 지금 부재(absence) 강조 → has gone / 경험 강조 → has been",
+      "relatedGrammar": "have gone vs have been 구분"
+    }
+  ]
+}

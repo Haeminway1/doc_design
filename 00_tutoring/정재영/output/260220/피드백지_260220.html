@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>학습 피드백지 — 정재영 260220</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  /* =============================================================
+     피드백지 공통 CSS v1.0 — 파스텔 하늘색 팔레트
+     ============================================================= */
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  html {
+    font-size: 10pt;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400; font-size: 10pt; line-height: 1.7;
+    color: #1a202c; background: #fff !important;
+  }
+  @page { size: A4; margin: 16mm 14mm; }
+
+  .page-break-after { page-break-after: always !important; }
+  .page-break-before { page-break-before: always !important; }
+  .avoid-break { page-break-inside: avoid !important; }
+  h1, h2, h3, h4 { page-break-after: avoid !important; }
+  table { page-break-inside: avoid !important; }
+
+  h1 { font-size: 20pt; font-weight: 700; color: #4A90C4 !important; margin: 20px 0 10px 0; padding-bottom: 6px; border-bottom: 3px solid #4A90C4; line-height: 1.3; }
+  h2 { font-size: 16pt; font-weight: 700; color: #5BA3D9 !important; margin: 18px 0 10px 0; padding-bottom: 4px; border-bottom: 2px solid #D4E5F3; line-height: 1.3; }
+  h3 { font-size: 13pt; font-weight: 700; color: #2d3748 !important; margin: 14px 0 8px 0; line-height: 1.4; }
+  h4 { font-size: 11pt; font-weight: 700; color: #4a5568 !important; margin: 10px 0 6px 0; line-height: 1.4; }
+  p { margin-bottom: 8px; }
+  strong { font-weight: 700; }
+  hr { border: none; border-top: 1px solid #D4E5F3; margin: 20px 0; }
+
+  table { width: 100%; border-collapse: collapse; margin: 12px 0 16px 0; font-size: 9pt; line-height: 1.6; }
+  thead th { background-color: #7BB8E8 !important; color: #fff !important; font-weight: 700; padding: 8px 10px; text-align: left; border: 1px solid #6AABDE; font-size: 9pt; }
+  tbody td { padding: 7px 10px; border: 1px solid #D4E5F3; vertical-align: top; }
+  tbody tr:nth-child(odd) { background-color: #fff !important; }
+  tbody tr:nth-child(even) { background-color: #F4F9FD !important; }
+  tbody td:first-child { font-weight: 500; }
+  .result-correct { color: #38a169 !important; font-weight: 700; }
+  .result-wrong { color: #e53e3e !important; font-weight: 700; }
+
+  .report-header { margin-bottom: 16px; }
+  .report-date { font-size: 10pt; color: #718096 !important; font-weight: 400; margin-bottom: 4px; }
+  .report-title { font-size: 22pt; font-weight: 700; color: #4A90C4 !important; margin-bottom: 6px; line-height: 1.2; border: none; padding: 0; }
+  .report-subtitle { font-size: 12pt; font-weight: 400; color: #4a5568 !important; margin-bottom: 2px; }
+  .report-meta { font-size: 9pt; color: #718096 !important; line-height: 1.8; margin-top: 8px; }
+  .report-meta span { display: inline-block; margin-right: 16px; }
+
+  .section-header { background-color: #5BA3D9 !important; color: #fff !important; padding: 12px 20px; margin: 20px -14mm 14px -14mm; padding-left: 14mm; padding-right: 14mm; font-size: 16pt; font-weight: 700; line-height: 1.3; }
+  .section-header .section-num { font-size: 12pt; font-weight: 300; display: block; margin-bottom: 2px; color: #C5DFEF !important; }
+
+  .severity-high { display: inline-block; background-color: #e53e3e !important; color: #fff !important; font-size: 8pt; font-weight: 700; padding: 1px 8px; border-radius: 10px; }
+  .severity-mid { display: inline-block; background-color: #ed8936 !important; color: #fff !important; font-size: 8pt; font-weight: 700; padding: 1px 8px; border-radius: 10px; }
+  .severity-low { display: inline-block; background-color: #38a169 !important; color: #fff !important; font-size: 8pt; font-weight: 700; padding: 1px 8px; border-radius: 10px; }
+
+  .diagnosis-card { border: 2px solid #B8D4EC; border-radius: 6px; padding: 14px 18px; margin: 14px 0; background-color: #F4F9FD !important; }
+  .diagnosis-card h3 { margin-top: 0; color: #4A90C4 !important; font-size: 12pt; }
+  .priority-order { background-color: #EDF5FC !important; border-left: 4px solid #7BB8E8; padding: 10px 16px; margin: 12px 0; font-size: 10pt; }
+
+  .question-box { background-color: #F4F9FD !important; border-left: 4px solid #7BB8E8; padding: 10px 14px; margin: 8px 0; font-size: 10pt; line-height: 1.7; }
+  .question-box p { margin: 0; }
+  .answer-box { background-color: #f0fff4 !important; border-left: 4px solid #38a169; padding: 8px 14px; margin: 8px 0; font-weight: 500; }
+  .grammar-block { background-color: #edf2f7 !important; border: 1px solid #D4E5F3; padding: 12px 16px; margin: 12px 0; font-size: 9pt; line-height: 1.8; white-space: pre-wrap; page-break-inside: avoid !important; }
+  .tip-box { background-color: #fffaf0 !important; border-left: 4px solid #ed8936; padding: 10px 16px; margin: 12px 0; page-break-inside: avoid !important; }
+  .tip-box .tip-label { font-weight: 700; color: #c05621 !important; font-size: 9pt; display: block; margin-bottom: 4px; }
+  .warning-box { background-color: #fff5f5 !important; border-left: 4px solid #e53e3e; padding: 10px 16px; margin: 12px 0; page-break-inside: avoid !important; }
+  .warning-box .warning-label { font-weight: 700; color: #e53e3e !important; font-size: 9pt; display: block; margin-bottom: 4px; }
+  .concept-box { background-color: #EDF5FC !important; border: 1px solid #7BB8E8; padding: 12px 16px; margin: 12px 0; page-break-inside: avoid !important; }
+  .concept-box .concept-label { font-weight: 700; color: #4A90C4 !important; font-size: 9pt; display: block; margin-bottom: 6px; }
+
+  .problem-card { border: 1px solid #D4E5F3; border-radius: 4px; padding: 14px 18px; margin: 14px 0; page-break-inside: avoid !important; background-color: #fff !important; }
+  .problem-header { display: flex; align-items: center; margin-bottom: 14px; gap: 12px; }
+  .problem-badge { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background-color: #7BB8E8 !important; color: #fff !important; font-weight: 700; font-size: 12pt; flex-shrink: 0; }
+  .problem-title { font-size: 11pt; font-weight: 700; color: #2d3748 !important; }
+  .problem-source { font-size: 8pt; color: #718096 !important; font-weight: 400; display: block; margin-top: 2px; }
+
+  .hl-key { color: #4A90C4 !important; font-weight: 700; }
+  .hl-wrong { color: #e53e3e !important; font-weight: 700; text-decoration: line-through; }
+  .hl-correct { color: #38a169 !important; font-weight: 700; }
+  .hl-blue { color: #5BA3D9 !important; font-weight: 700; }
+
+  .flowchart { margin: 16px 0; page-break-inside: avoid !important; }
+  .flow-step { background-color: #EDF5FC !important; border: 1px solid #B8D4EC; border-radius: 4px; padding: 10px 16px; margin-bottom: 4px; font-size: 9.5pt; }
+  .flow-step .step-label { font-weight: 700; color: #4A90C4 !important; margin-right: 8px; }
+  .flow-arrow { text-align: center; font-size: 14pt; color: #7BB8E8 !important; line-height: 1.2; margin: 2px 0; }
+
+  .section-divider { border: none; border-top: 2px solid #D4E5F3; margin: 20px 0; }
+  .practice-item { margin: 10px 0; line-height: 2.2; font-size: 9.5pt; }
+  .practice-num { font-weight: 700; color: #4A90C4 !important; margin-right: 6px; }
+  .variant-choices { padding-left: 20px; font-size: 9pt; line-height: 1.8; margin: 4px 0; }
+
+  .compare-table thead th:nth-child(2) { background-color: #6AABDE !important; }
+  .compare-table thead th:nth-child(3) { background-color: #38a169 !important; }
+
+  @media print {
+    body { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+    .section-header { margin-left: -14mm; margin-right: -14mm; padding-left: 14mm; padding-right: 14mm; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== 첫 페이지: 리포트 헤더 + 학습 요약 ===== -->
+<div class="report-header">
+  <div class="report-date">2026. 02. 20</div>
+  <h1 class="report-title" style="border:none; margin-bottom:6px;">학습 피드백지</h1>
+  <div class="report-subtitle">문법 — Part 1 연습문제 (1~5형식, 감각동사, 사역/지각동사, 혼동동사)</div>
+  <div class="report-meta">
+    <span><strong>학생</strong> 정재영</span>
+    <span><strong>교재</strong> Vera's Flavor 편입영어 문법 Bridge편</span>
+    <span><strong>범위</strong> Part 1 연습문제 (Q1–Q50)</span>
+  </div>
+</div>
+
+<div class="diagnosis-card">
+  <h3>학습 요약</h3>
+  <p style="font-size:10pt; margin-bottom:8px;">
+    전체 약 50문제 중 오답 <strong>15문제</strong> (정답률 약 70%)
+  </p>
+  <p style="font-size:9.5pt; margin-bottom:4px;">
+    <strong style="color:#38a169 !important;">잘한 점:</strong> Q5(lie-lay-lain 과거형 lay 정확), Q12(felt + comfortable 형용사 보어), Q33(had + 원형 report), Q35(see + 원형 catch) 등 기본 패턴을 정확히 적용했습니다. 지각동사 + 원형부정사 구조에 대한 이해가 있으며, 기본적인 2형식/5형식 감각이 있습니다.
+  </p>
+  <p style="font-size:9.5pt; margin-bottom:12px;">
+    <strong style="color:#e53e3e !important;">아쉬운 점:</strong> 5형식 목적보어(OC) 자리에 부사(~ly)나 동사 원형을 넣는 실수가 반복됩니다(Q15, Q16, Q18, Q19, Q20). 혼동동사(find/found, sit/seat, lie/lay) 구분이 취약하고(Q23, Q27, Q28, Q43), 감각동사 + 형용사 규칙 적용도 불안정합니다(Q11, Q17).
+  </p>
+
+  <table>
+    <thead>
+      <tr><th>취약 영역</th><th style="width:80px;">문제 수</th><th style="width:70px;">심각도</th><th>핵심</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>5형식 목적보어 (SVOC)</strong></td>
+        <td>5문제</td>
+        <td><span class="severity-high">높음</span></td>
+        <td>OC 자리에 부사/동사 원형 넣는 실수 반복 (Q15, Q16, Q18, Q19, Q20)</td>
+      </tr>
+      <tr>
+        <td><strong>혼동동사 (Confusing Pairs)</strong></td>
+        <td>4문제</td>
+        <td><span class="severity-high">높음</span></td>
+        <td>find/found, sit/seat, lie/lay 혼동 (Q23, Q27, Q28, Q43)</td>
+      </tr>
+      <tr>
+        <td><strong>감각동사 + 보어</strong></td>
+        <td>2문제</td>
+        <td><span class="severity-mid">보통</span></td>
+        <td>감각동사 뒤 부사 대신 형용사 필요 (Q11, Q17)</td>
+      </tr>
+      <tr>
+        <td><strong>자동사 vs 타동사</strong></td>
+        <td>2문제</td>
+        <td><span class="severity-mid">보통</span></td>
+        <td>enter(타), rise(자)/raise(타) 구별 (Q4, Q6)</td>
+      </tr>
+      <tr>
+        <td><strong>사역/지각동사 + OC</strong></td>
+        <td>2문제</td>
+        <td><span class="severity-mid">보통</span></td>
+        <td>have+O+p.p., hear+O+-ing (Q34, Q36)</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="priority-order">
+  <strong>학습 우선순위:</strong> 5형식 목적보어 &rarr; 혼동동사 &rarr; 감각동사 + 보어 &rarr; 자동사/타동사 &rarr; 사역/지각동사
+</div>
+
+<!-- ================================================================
+     Section 1: 틀린 문제 리스트
+     ================================================================ -->
+<div class="page-break-before section-header">
+  <span class="section-num">Section 1</span>
+  틀린 문제 리스트
+</div>
+
+<!-- Q4 -->
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">Q4</div>
+    <div>
+      <div class="problem-title">enter + into 중복</div>
+      <span class="problem-source">자동사/타동사 혼동 | p.17</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>The new employee was nervous on his first day. He took a deep breath before he <span class="hl-wrong">①entered into the office</span>. He was greeted by his manager, who then ②introduced him to the team. The team members ③discussed their ongoing projects and ④explained his role within the team.<br><em>Which part is grammatically incorrect?</em></p>
+  </div>
+  <p><strong>학생 답:</strong> <span class="hl-wrong">⑤ No error</span> &nbsp; <strong>정답:</strong> <span class="hl-correct">① entered into → entered the office</span> (enter는 타동사, into 불필요)</p>
+</div>
+
+<!-- Q6 -->
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">Q6</div>
+    <div>
+      <div class="problem-title">rise vs raise</div>
+      <span class="problem-source">자동사/타동사 혼동 | p.18</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>In response to the growing inflation rates, the central bank decided to ______ the interest rates for the third time this year. This move was expected to make borrowing more expensive.</p>
+  </div>
+  <p><strong>학생 답:</strong> <span class="hl-wrong">① rise</span> &nbsp; <strong>정답:</strong> <span class="hl-correct">② raise</span> (타동사: 금리를 올리다)</p>
+</div>
+
+<!-- Q11 -->
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">Q11</div>
+    <div>
+      <div class="problem-title">looks + 형용사 (감각동사)</div>
+      <span class="problem-source">감각동사 + 보어 | p.21</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>The new sculpture in the city square looks quite ______, attracting many tourists who are eager to take pictures with it.</p>
+  </div>
+  <p><strong>학생 답:</strong> <span class="hl-wrong">① impress</span> (동사) &nbsp; <strong>정답:</strong> <span class="hl-correct">② impressive</span> (형용사)</p>
+</div>
+
+<!-- Q15 -->
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">Q15</div>
+    <div>
+      <div class="problem-title">find + O + OC (5형식)</div>
+      <span class="problem-source">5형식 목적보어 | p.23</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>Many readers found the protagonist of the novel ______, as her decisions were often unpredictable and contrary to common sense.</p>
+  </div>
+  <p><strong>학생 답:</strong> <span class="hl-wrong">⑤ puzzlingly</span> (부사) &nbsp; <strong>정답:</strong> <span class="hl-correct">③ puzzling</span> (형용사/현재분사)</p>
+</div>
+
+<!-- Q16 -->
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">Q16</div>
+    <div>
+      <div class="problem-title">consider + O + N (5형식)</div>
+      <span class="problem-source">5형식 목적보어 | p.23</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>The committee considered the young architect ______ for his innovative designs and declared him the winner of the competition.</p>
+  </div>
+  <p><strong>학생 답:</strong> <span class="hl-wrong">② geniusly</span> (존재하지 않는 단어) &nbsp; <strong>정답:</strong> <span class="hl-correct">① a genius</span> (명사)</p>
+</div>
+
+<!-- Q17 -->
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">Q17</div>
+    <div>
+      <div class="problem-title">감각동사 + 형용사 (틀린 문장 찾기)</div>
+      <span class="problem-source">감각동사 + 보어 | p.24</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p><em>Which of the following sentences is grammatically INCORRECT?</em><br>
+    ① The chef tasted the soup carefully before serving it.<br>
+    ② The fresh bread from the bakery smells wonderfully.<br>
+    ③ This silk fabric feels smooth to the touch.<br>
+    ④ The plan to merge the two departments sounds reasonable.<br>
+    ⑤ He remained silent throughout the entire meeting.</p>
+  </div>
+  <p><strong>학생 답:</strong> <span class="hl-wrong">⑤</span> &nbsp; <strong>정답:</strong> <span class="hl-correct">② smells wonderfully → wonderful</span></p>
+</div>
+
+<!-- Q18 -->
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">Q18</div>
+    <div>
+      <div class="problem-title">keep + O + p.p. (5형식)</div>
+      <span class="problem-source">5형식 목적보어 | p.24</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>To ensure the safety of the valuables, the hotel manager asked the guests to keep their room doors ______ at all times.</p>
+  </div>
+  <p><strong>학생 답:</strong> <span class="hl-wrong">① lock</span> (원형) &nbsp; <strong>정답:</strong> <span class="hl-correct">③ locked</span> (과거분사)</p>
+</div>
+
+<!-- Q19 -->
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">Q19</div>
+    <div>
+      <div class="problem-title">4형식 vs 5형식 구별</div>
+      <span class="problem-source">5형식 목적보어 | p.25</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p><em>Which of the following sentences has a different sentence structure from the others?</em><br>
+    ① The board appointed him the new CEO.<br>
+    ② My parents always call me a late bloomer.<br>
+    ③ The teacher gave the students extra homework.<br>
+    ④ We believe him a trustworthy person.<br>
+    ⑤ The judge found the defendant guilty.</p>
+  </div>
+  <p><strong>학생 답:</strong> <span class="hl-wrong">⑤ (5형식 선지 선택)</span> &nbsp; <strong>정답:</strong> <span class="hl-correct">③ 4형식 SVOO</span> (나머지는 모두 5형식 SVOC)</p>
+</div>
+
+<!-- Q20 -->
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">Q20</div>
+    <div>
+      <div class="problem-title">leave + O + p.p. (5형식)</div>
+      <span class="problem-source">5형식 목적보어 | p.25</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>The sudden announcement of the factory's closure left the entire community ______ about their future.</p>
+  </div>
+  <p><strong>학생 답:</strong> <span class="hl-wrong">① worry</span> (동사 원형) &nbsp; <strong>정답:</strong> <span class="hl-correct">③ worried</span> (과거분사)</p>
+</div>
+
+<!-- Q23 -->
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">Q23</div>
+    <div>
+      <div class="problem-title">find-found vs found-founded</div>
+      <span class="problem-source">혼동동사 | p.27</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>The ancient city, which ______ the groundwork for modern democracy, was rediscovered by archaeologists in the early 20th century.</p>
+  </div>
+  <p><strong>학생 답:</strong> <span class="hl-wrong">③ founded</span> &nbsp; <strong>정답:</strong> <span class="hl-correct">① found</span> (find의 과거형)</p>
+</div>
+
+<!-- Q27 -->
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">Q27</div>
+    <div>
+      <div class="problem-title">sit vs seat</div>
+      <span class="problem-source">혼동동사 | p.29</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>"Please ______ yourselves, ladies and gentlemen," the host announced. "The show is about to begin."</p>
+  </div>
+  <p><strong>학생 답:</strong> <span class="hl-wrong">③ sat</span> &nbsp; <strong>정답:</strong> <span class="hl-correct">⑤ seated</span> (seat 타동사, Please be seated)</p>
+</div>
+
+<!-- Q28 -->
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">Q28</div>
+    <div>
+      <div class="problem-title">was found → was founded</div>
+      <span class="problem-source">혼동동사 | p.29</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>The charity organization, which was <span class="hl-wrong">①found</span> in 1985 to combat poverty, has ②raised millions of dollars. The funds are used to ③provide essential resources for communities ④in need.<br><em>Which part is grammatically incorrect?</em></p>
+  </div>
+  <p><strong>학생 답:</strong> <span class="hl-wrong">④ in need</span> &nbsp; <strong>정답:</strong> <span class="hl-correct">① found → founded</span> (설립하다 = found-founded-founded)</p>
+</div>
+
+<!-- Q34 -->
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">Q34</div>
+    <div>
+      <div class="problem-title">have + O + p.p. (사역동사)</div>
+      <span class="problem-source">사역/지각동사 | p.32</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>After the storm, we discovered a leak in the roof, so we had to have it ______ by a professional as soon as possible.</p>
+  </div>
+  <p><strong>학생 답:</strong> <span class="hl-wrong">① repair</span> (원형) &nbsp; <strong>정답:</strong> <span class="hl-correct">④ repaired</span> (have + O + p.p.)</p>
+</div>
+
+<!-- Q36 -->
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">Q36</div>
+    <div>
+      <div class="problem-title">hear + O + -ing (지각동사)</div>
+      <span class="problem-source">사역/지각동사 | p.33</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>As I was trying to concentrate, I could hear my neighbor's dog ______ incessantly in the backyard, which was quite distracting.</p>
+  </div>
+  <p><strong>학생 답:</strong> <span class="hl-wrong">① bark</span> (원형) &nbsp; <strong>정답:</strong> <span class="hl-correct">④ barking</span> (진행 중 반복 동작 → -ing)</p>
+</div>
+
+<!-- Q43 -->
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">Q43</div>
+    <div>
+      <div class="problem-title">lie-lay-lain vs lay-laid-laid</div>
+      <span class="problem-source">혼동동사 | p.37</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>The old photograph, which my grandmother kept ______ in her drawer, always makes me ______ about the stories of her youth.</p>
+  </div>
+  <p><strong>학생 답:</strong> <span class="hl-wrong">④ laid / wonder</span> &nbsp; <strong>정답:</strong> <span class="hl-correct">③ lain / wonder</span> (lie의 과거분사 lain)</p>
+</div>
+
+
+<!-- ================================================================
+     Section 2: 해설 파트
+     ================================================================ -->
+<div class="page-break-before section-header">
+  <span class="section-num">Section 2</span>
+  해설 파트
+</div>
+
+<!-- ===== 테마 A: 자동사 vs 타동사 ===== -->
+<h2>테마 A: 자동사 vs 타동사 — Q4, Q6</h2>
+
+<div class="concept-box">
+  <span class="concept-label">핵심 개념</span>
+  <strong>자동사(vi)</strong>는 목적어를 취하지 않고, <strong>타동사(vt)</strong>는 목적어를 취합니다. 편입영어에서 가장 자주 출제되는 핵심은 "겉모습은 비슷하지만 자/타가 다른 동사 쌍"입니다.
+</div>
+
+<h3>주요 혼동 동사 정리</h3>
+<table>
+  <thead><tr><th>타동사 (vt) — 바로 + 목적어</th><th>자동사 (vi) — 목적어 X</th></tr></thead>
+  <tbody>
+    <tr><td><strong>enter</strong> + 장소</td><td>&times; enter into + 장소</td></tr>
+    <tr><td><strong>raise</strong> + O (올리다)</td><td><strong>rise</strong> (오르다)</td></tr>
+    <tr><td><strong>attend</strong> + 행사</td><td>&times; attend to + 행사</td></tr>
+    <tr><td><strong>reach</strong> + 장소</td><td>&times; reach to + 장소</td></tr>
+    <tr><td><strong>discuss</strong> + 주제</td><td>&times; discuss about + 주제</td></tr>
+    <tr><td><strong>mention</strong> + O</td><td>&times; mention about + O</td></tr>
+    <tr><td><strong>resemble</strong> + O</td><td>&times; resemble with + O</td></tr>
+  </tbody>
+</table>
+
+<h3>Q4 해설: enter는 타동사</h3>
+<div class="grammar-block">enter는 타동사이므로 전치사 없이 바로 목적어를 취합니다.
+&times; entered <strong>into</strong> the office (into 불필요)
+&check; entered the office</div>
+
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>왜 이 답을 골랐을까:</strong> "entered into"가 한국어 "사무실 안으로 들어갔다"와 일치해서 자연스럽다고 느꼈을 가능성이 높습니다. "go into"처럼 전치사가 필요한 동사와 혼동한 것입니다.</p>
+  <p><strong>오류 패턴:</strong> 모국어 간섭 — 한국어 "~안으로 들어가다"를 영어에 그대로 대입</p>
+  <p><strong>집중 포인트:</strong> enter, reach, attend, discuss, mention, resemble은 전치사 없이 바로 목적어를 취하는 타동사입니다.</p>
+</div>
+
+<h3>Q6 해설: rise (자동사) vs raise (타동사)</h3>
+<table class="compare-table">
+  <thead><tr><th>구분</th><th>rise (자동사)</th><th>raise (타동사)</th></tr></thead>
+  <tbody>
+    <tr><td>의미</td><td>오르다, 일어나다</td><td>올리다, 기르다, 인상하다</td></tr>
+    <tr><td>활용</td><td>rise - rose - risen</td><td>raise - raised - raised</td></tr>
+    <tr><td>목적어</td><td>X (스스로 오르다)</td><td>O (무언가를 올리다)</td></tr>
+    <tr><td>예문</td><td>The sun rises.</td><td>They raised the flag.</td></tr>
+  </tbody>
+</table>
+
+<div class="grammar-block">"decided to ______ the interest rates"
+→ the interest rates가 목적어로 따라옴 → 타동사 raise 필요
+&times; decided to rise the interest rates (rise는 자동사)
+&check; decided to raise the interest rates</div>
+
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>왜 이 답을 골랐을까:</strong> "interest rates rise"(금리가 오르다)는 맞는 표현이라 rise를 선택한 것으로 보입니다.</p>
+  <p><strong>오류 패턴:</strong> 자동사/타동사 미구분 — 주어가 스스로 움직이는지(rise), 목적어를 움직이게 하는지(raise)</p>
+  <p><strong>집중 포인트:</strong> 빈칸 뒤에 명사(목적어)가 바로 오면 타동사 raise!</p>
+</div>
+
+<hr class="section-divider">
+
+<!-- ===== 테마 B: 감각동사 + 형용사 보어 ===== -->
+<h2>테마 B: 감각동사 + 형용사 보어 — Q11, Q17</h2>
+
+<div class="concept-box">
+  <span class="concept-label">핵심 개념</span>
+  감각동사(look, sound, smell, taste, feel) + <strong>형용사</strong> (NOT 부사)<br>
+  감각동사는 2형식(SVC)에서 보어로 형용사를 취합니다. 부사(~ly)를 쓰면 오답입니다.
+</div>
+
+<table>
+  <thead><tr><th>감각동사</th><th>2형식 (보어 = 형용사)</th><th>3형식 (타동사로 쓸 때)</th></tr></thead>
+  <tbody>
+    <tr><td>look</td><td>look beautiful (아름다워 보이다)</td><td>look at the painting (보다)</td></tr>
+    <tr><td>sound</td><td>sound strange (이상하게 들리다)</td><td>—</td></tr>
+    <tr><td>smell</td><td>smell wonderful (좋은 냄새가 나다)</td><td>smell the flower (맡다)</td></tr>
+    <tr><td>taste</td><td>taste delicious (맛있다)</td><td>taste the soup (맛보다)</td></tr>
+    <tr><td>feel</td><td>feel comfortable (편안하다)</td><td>feel the fabric (만지다)</td></tr>
+  </tbody>
+</table>
+
+<div class="warning-box">
+  <span class="warning-label">주의</span>
+  remain, stay, become, appear, seem 등의 <strong>상태 동사</strong>도 마찬가지로 형용사 보어를 취합니다.
+</div>
+
+<h3>Q11 해설: looks quite + 형용사</h3>
+<div class="grammar-block">"The sculpture looks quite __________"
+→ 감각동사 look의 보어 자리 → 형용사 impressive
+&times; looks quite impress (동사 원형은 보어 불가)
+&check; looks quite impressive (형용사)</div>
+
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>왜 이 답을 골랐을까:</strong> "impress"를 "인상적인"이라는 형용사로 착각했을 가능성이 있습니다.</p>
+  <p><strong>오류 패턴:</strong> 품사 혼동 — 동사(impress)와 형용사(impressive)의 형태 구분 실패</p>
+  <p><strong>집중 포인트:</strong> impress(v.) → impressive(adj.) → impressively(adv.) 형태 변화를 확실히 암기하세요.</p>
+</div>
+
+<h3>Q17 해설: smells wonderfully → smells wonderful</h3>
+<div class="grammar-block">② "The fresh bread from the bakery smells wonderfully." 가 틀린 문장.
+smell은 감각동사 → 보어로 형용사 wonderful 필요
+wonderfully는 부사 → 보어 불가
+
+나머지 선지:
+① tasted the soup carefully: taste가 3형식 타동사로 쓰임 → 부사 carefully 적절 ✓
+③ feels smooth: 감각동사 + 형용사 ✓
+④ sounds reasonable: 감각동사 + 형용사 ✓
+⑤ remained silent: 상태동사 + 형용사 ✓</div>
+
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>왜 이 답을 골랐을까:</strong> ⑤ "remained silent"에서 remain 뒤에 형용사가 올 수 있는지 확신이 없었을 수 있습니다. ②의 "smells wonderfully"는 ~ly 형태가 오히려 문법적으로 맞다고 느꼈을 가능성이 있습니다.</p>
+  <p><strong>오류 패턴:</strong> 감각동사 보어 규칙의 불완전한 적용 — remain도 2형식 동사임을 인식하지 못함</p>
+  <p><strong>집중 포인트:</strong> -ly가 붙으면 부사 → 감각동사/상태동사의 보어 불가!</p>
+</div>
+
+<hr class="section-divider">
+
+<!-- ===== 테마 C: 5형식 목적보어 ===== -->
+<h2>테마 C: 5형식 목적보어 (SVOC) — Q15, Q16, Q18, Q19, Q20</h2>
+
+<div class="concept-box">
+  <span class="concept-label">핵심 개념</span>
+  5형식: S + V + O + <strong>OC(목적보어)</strong><br>
+  목적보어는 목적어의 상태/신분/행위를 설명합니다.<br><br>
+  <strong>OC 자리에 올 수 있는 것:</strong> 형용사, 명사, 분사(현재/과거), 원형부정사(사역/지각), to부정사(want, ask 등)<br>
+  <strong>OC 자리에 올 수 없는 것:</strong> 부사(~ly)
+</div>
+
+<h3>5형식을 취하는 주요 동사</h3>
+<table>
+  <thead><tr><th>유형</th><th>동사</th><th>OC 형태</th></tr></thead>
+  <tbody>
+    <tr><td>인식</td><td>find, consider, think, believe</td><td>형용사/명사</td></tr>
+    <tr><td>명명/선출</td><td>call, name, elect, appoint</td><td>명사</td></tr>
+    <tr><td>상태 유지/변화</td><td>keep, leave, make, turn</td><td>형용사/분사</td></tr>
+    <tr><td>사역</td><td>make, have, let</td><td>원형부정사/분사</td></tr>
+    <tr><td>지각</td><td>see, hear, feel, watch</td><td>원형부정사/분사</td></tr>
+  </tbody>
+</table>
+
+<h3>Q15 해설: find + O + 형용사(현재분사)</h3>
+<div class="grammar-block">"Many readers found the protagonist puzzling"
+find + O + OC → OC는 형용사/분사
+&times; puzzlingly (부사 — OC 자리에 부사 불가)
+&check; puzzling (현재분사 → "당혹스러운")</div>
+
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>왜 이 답을 골랐을까:</strong> 부사 puzzlingly가 "당혹스럽게도"라는 의미로 문장 전체를 수식한다고 생각한 것 같습니다.</p>
+  <p><strong>오류 패턴:</strong> OC 자리에 부사를 넣는 실수 — Q16에서도 동일 패턴</p>
+  <p><strong>집중 포인트:</strong> "V + O + ___"에서 빈칸이 O를 설명하면 OC → 형용사/명사/분사만 가능! 부사(~ly) 절대 불가.</p>
+</div>
+
+<h3>Q16 해설: consider + O + 명사</h3>
+<div class="grammar-block">"The committee considered the young architect a genius"
+consider + O + OC → OC는 명사 또는 형용사
+&times; geniusly (존재하지 않는 단어; 부사는 OC 불가)
+&check; a genius (명사 → "천재라고 여기다")</div>
+
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>왜 이 답을 골랐을까:</strong> "-ly"를 붙이면 부사가 되어 "천재적으로"라는 의미가 된다고 생각한 것 같습니다. geniusly라는 단어는 영어에 존재하지 않습니다.</p>
+  <p><strong>오류 패턴:</strong> 이중 오류 — ①존재하지 않는 단어 선택 ②OC 자리에 부사 배치</p>
+  <p><strong>집중 포인트:</strong> consider + O + OC에서 OC는 "명사" 또는 "형용사"만 가능합니다.</p>
+</div>
+
+<h3>Q18 해설: keep + O + p.p.</h3>
+<div class="grammar-block">"keep their room doors locked"
+keep + O + OC → 목적어(doors)가 수동 → p.p.
+문이 스스로 잠그는 것이 아니라 "잠겨진" 상태 → locked
+&times; lock (원형 — keep은 사역동사가 아니므로 원형 불가)
+&check; locked (과거분사)</div>
+
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>왜 이 답을 골랐을까:</strong> make/have/let처럼 keep도 원형부정사를 취한다고 착각한 것입니다.</p>
+  <p><strong>오류 패턴:</strong> 사역동사 확대 적용 — keep은 사역동사가 아님</p>
+  <p><strong>집중 포인트:</strong> 원형부정사를 OC로 취하는 동사는 make, have, let + 지각동사 뿐! keep은 형용사/분사만 OC.</p>
+</div>
+
+<h3>Q19 해설: 4형식 vs 5형식 구별</h3>
+<table>
+  <thead><tr><th>선지</th><th>문장</th><th>구조</th></tr></thead>
+  <tbody>
+    <tr><td>①</td><td>The board appointed him the new CEO.</td><td><strong>5형식</strong> (him = CEO)</td></tr>
+    <tr><td>②</td><td>My parents always call me a late bloomer.</td><td><strong>5형식</strong> (me = a late bloomer)</td></tr>
+    <tr><td>③</td><td>The teacher gave the students extra homework.</td><td><strong>4형식</strong> (students &ne; homework)</td></tr>
+    <tr><td>④</td><td>We believe him a trustworthy person.</td><td><strong>5형식</strong> (him = a trustworthy person)</td></tr>
+    <tr><td>⑤</td><td>The judge found the defendant guilty.</td><td><strong>5형식</strong> (defendant = guilty)</td></tr>
+  </tbody>
+</table>
+
+<div class="flowchart">
+  <div class="flow-step"><span class="step-label">Step 1</span> V 뒤에 명사 두 개가 나오는가?</div>
+  <div class="flow-arrow">&darr;</div>
+  <div class="flow-step"><span class="step-label">Step 2</span> 두 명사(또는 명사+형용사)가 <strong>O = OC</strong> 관계인가?</div>
+  <div class="flow-arrow">&darr;</div>
+  <div class="flow-step"><span class="step-label">판별</span> O = OC → <strong>5형식</strong> / O &ne; OC → <strong>4형식</strong></div>
+</div>
+
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>왜 이 답을 골랐을까:</strong> ⑤ "found the defendant guilty"에서 guilty가 형용사이고 나머지는 명사라서 구조가 다르다고 판단한 것 같습니다.</p>
+  <p><strong>오류 패턴:</strong> OC의 품사(형용사 vs 명사)에 집착 — 진짜 기준은 "O=OC" 관계 성립 여부</p>
+  <p><strong>집중 포인트:</strong> "O = OC" (그는 CEO다)이면 5형식. "IO &ne; DO" (학생 &ne; 숙제)이면 4형식.</p>
+</div>
+
+<h3>Q20 해설: leave + O + p.p.</h3>
+<div class="grammar-block">"left the entire community worried about their future"
+leave + O + OC → community가 "걱정하는" 상태 → 감정 분사
+사람이 감정을 느끼는 것 → p.p. (worried)
+&times; worry (동사 원형 — leave는 사역동사가 아니므로 원형 불가)
+&check; worried (과거분사 → "걱정하게 된" 상태)</div>
+
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>왜 이 답을 골랐을까:</strong> worry를 "걱정하다"라는 의미로 원형부정사 OC가 가능하다고 생각한 것 같습니다.</p>
+  <p><strong>오류 패턴:</strong> 사역동사 확대 적용 — leave는 원형부정사를 OC로 취하지 않음. Q18과 동일 패턴.</p>
+  <p><strong>집중 포인트:</strong> leave + O + OC에서 OC는 형용사/분사만 가능. 감정동사는 사람이 느끼면 p.p.(worried).</p>
+</div>
+
+<hr class="section-divider">
+
+<!-- ===== 테마 D: 혼동동사 ===== -->
+<h2>테마 D: 혼동동사 (Confusing Verb Pairs) — Q23, Q27, Q28, Q43</h2>
+
+<div class="concept-box">
+  <span class="concept-label">핵심 개념</span>
+  형태가 비슷하지만 의미와 활용이 완전히 다른 동사 쌍들입니다. 편입 시험 최빈출 영역.
+</div>
+
+<h3>혼동동사 총정리표</h3>
+<table>
+  <thead><tr><th>동사</th><th>의미</th><th>과거형</th><th>과거분사</th><th>자/타</th></tr></thead>
+  <tbody>
+    <tr><td><strong>find</strong></td><td>발견하다</td><td>found</td><td>found</td><td>타동사</td></tr>
+    <tr><td><strong>found</strong></td><td>설립하다</td><td>founded</td><td>founded</td><td>타동사</td></tr>
+    <tr><td><strong>sit</strong></td><td>앉다</td><td>sat</td><td>sat</td><td>자동사</td></tr>
+    <tr><td><strong>seat</strong></td><td>앉히다</td><td>seated</td><td>seated</td><td>타동사</td></tr>
+    <tr><td><strong>lie</strong></td><td>눕다, 놓여있다</td><td>lay</td><td>lain</td><td>자동사</td></tr>
+    <tr><td><strong>lay</strong></td><td>놓다, 두다</td><td>laid</td><td>laid</td><td>타동사</td></tr>
+    <tr><td><strong>lie</strong></td><td>거짓말하다</td><td>lied</td><td>lied</td><td>자동사</td></tr>
+    <tr><td><strong>rise</strong></td><td>오르다</td><td>rose</td><td>risen</td><td>자동사</td></tr>
+    <tr><td><strong>raise</strong></td><td>올리다</td><td>raised</td><td>raised</td><td>타동사</td></tr>
+  </tbody>
+</table>
+
+<h3>Q23 해설: find-found vs found-founded</h3>
+<div class="grammar-block">"The ancient city, which ________ the groundwork for modern democracy"
+→ "기반을 확립했다" = find의 과거형 found
+&times; founded: found(설립하다)의 과거형
+&check; found: find의 과거형</div>
+
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>왜 이 답을 골랐을까:</strong> "기초를 놓다"를 "설립하다(found)"와 연결지어 founded를 선택한 것 같습니다.</p>
+  <p><strong>오류 패턴:</strong> 동음이의어 혼동 — found가 두 가지(find의 과거형 / found 설립하다 원형)</p>
+  <p><strong>집중 포인트:</strong> founded가 나오면 → 반드시 "설립하다"의 과거/과거분사. find의 과거형은 found(ed 없음)!</p>
+</div>
+
+<h3>Q27 해설: sit (자동사) vs seat (타동사)</h3>
+<div class="grammar-block">"Please ________ yourselves"
+→ yourselves가 목적어 → 타동사 seat 계열 필요
+&times; sat: sit의 과거형 (자동사, 명령문에 과거형 불가)
+&check; seated: "Please be seated" = 앉으세요</div>
+
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>왜 이 답을 골랐을까:</strong> sit-sat-sat의 과거형 sat을 명령형으로 착각한 것 같습니다.</p>
+  <p><strong>오류 패턴:</strong> 시제 착각 + 자타 혼동 — 명령문에는 동사 원형, 목적어가 있으면 타동사(seat)</p>
+  <p><strong>집중 포인트:</strong> sit = 자동사(앉다), seat = 타동사(앉히다). 목적어가 있으면 seat!</p>
+</div>
+
+<h3>Q28 해설: was found → was founded</h3>
+<div class="grammar-block">"which was ①found in 1985 to combat poverty"
+→ 1985년에 "설립된" 자선단체 → was founded
+&times; was found: find의 수동태 → "발견되었다" (문맥 부적절)
+&check; was founded: found(설립하다)의 수동태 → "설립되었다"</div>
+
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>왜 이 답을 골랐을까:</strong> "was found"를 "발견되었다"로 해석해도 그럴듯하게 읽힌다고 느꼈습니다. "④ in need"를 문법적으로 불완전하다고 오판했습니다.</p>
+  <p><strong>오류 패턴:</strong> 혼동동사 미구별 — "in need"는 "도움이 필요한"이라는 형용사구로 정상</p>
+  <p><strong>집중 포인트:</strong> 연도(1985)와 함께 나오면 "설립"일 확률 높음 → was founded!</p>
+</div>
+
+<h3>Q43 해설: lie-lay-lain vs lay-laid-laid</h3>
+<div class="grammar-block">"which my grandmother kept ________ in her drawer"
+→ 사진(photograph)이 "놓여 있는" 상태 = lie의 과거분사 lain
+lie(눕다, 놓여있다): lie - lay - lain (자동사)
+lay(놓다, 두다): lay - laid - laid (타동사)
+
+"makes me wonder": 사역동사 make + 원형부정사
+
+&times; laid / wonder: laid는 lay(놓다)의 과거분사
+&check; lain / wonder: lain은 lie(놓여있다)의 과거분사</div>
+
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>왜 이 답을 골랐을까:</strong> lie-lay-lain 활용이 워낙 혼동되기 쉬운 부분입니다.</p>
+  <p><strong>오류 패턴:</strong> lie/lay 활용 혼동 — 가장 빈출되는 혼동동사</p>
+  <p><strong>집중 포인트:</strong> 암기법: "LIE(눕다): 아이(I)가 눕는다 → lie-lay-lain" / "LAY(놓다): A를 놓는다(타동사) → lay-laid-laid"</p>
+</div>
+
+<hr class="section-divider">
+
+<!-- ===== 테마 E: 사역/지각동사 ===== -->
+<h2>테마 E: 사역동사/지각동사 + 목적보어 — Q34, Q36</h2>
+
+<div class="concept-box">
+  <span class="concept-label">핵심 개념</span>
+  사역/지각동사는 OC로 원형부정사, 현재분사(-ing), 과거분사(p.p.)를 취할 수 있으며, 의미가 달라집니다.
+</div>
+
+<table>
+  <thead><tr><th>동사 유형</th><th>OC: 원형</th><th>OC: -ing</th><th>OC: p.p.</th></tr></thead>
+  <tbody>
+    <tr><td><strong>사역</strong> (make, have, let)</td><td>O가 능동적으로 행위</td><td>have+O+-ing (진행)</td><td>O가 당하는 행위</td></tr>
+    <tr><td><strong>지각</strong> (see, hear, feel, watch)</td><td>행위 전체 목격</td><td>행위 진행 중 목격</td><td>O가 당하는 행위</td></tr>
+  </tbody>
+</table>
+
+<h3>Q34 해설: have + O + p.p.</h3>
+<div class="grammar-block">"we had to have it repaired by a professional"
+have + it + OC: it(지붕)이 "수리당하는" 것 → 수동 → p.p.
+"by a professional"이 있으므로 수동 관계 확실
+&times; repair (원형): "it이 직접 수리하다" → 의미 부적절
+&check; repaired (p.p.): "it이 수리되게 하다"</div>
+
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>왜 이 답을 골랐을까:</strong> "have + O + 원형"(사역)을 먼저 떠올려서 repair를 선택한 것 같습니다.</p>
+  <p><strong>오류 패턴:</strong> have의 OC 형태 미구분 — "by + 행위자"가 있으면 수동(p.p.)</p>
+  <p><strong>집중 포인트:</strong> "by ~"가 보이면 수동 관계 → p.p.! have + O + p.p. = "O가 ~되게 하다"</p>
+</div>
+
+<h3>Q36 해설: hear + O + -ing (진행)</h3>
+<div class="grammar-block">"I could hear my neighbor's dog barking incessantly"
+지각동사 hear + O + OC
+"incessantly"(끊임없이) = 진행 중인 동작 강조 → -ing
+&times; bark (원형): 행위 전체를 처음부터 끝까지 들음
+&check; barking: 개가 계속 짖고 있는 진행 상황</div>
+
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>왜 이 답을 골랐을까:</strong> "hear + O + 원형"(지각동사)을 우선 적용한 것 같습니다.</p>
+  <p><strong>오류 패턴:</strong> 지각동사 OC 선택 미세 구분 실패 — 원형(전체 동작) vs -ing(진행/반복)</p>
+  <p><strong>집중 포인트:</strong> "incessantly, constantly, continuously" 등이 나오면 -ing!</p>
+</div>
+
+
+<!-- ================================================================
+     Section 3: 연습문제 (연습 A ~ E)
+     ================================================================ -->
+
+<!-- 연습 A -->
+<div class="page-break-before section-header">
+  <span class="section-num">연습 A</span>
+  자동사 vs 타동사 연습문제 (20문제)
+</div>
+
+<div class="question-box"><p>다음 빈칸에 알맞은 답을 고르시오.</p></div>
+
+<p style="line-height:2.2; font-size:10pt;"><strong>1.</strong> The students __________ the matter for over an hour before reaching a conclusion.<br>① discussed &nbsp; ② discussed about &nbsp; ③ were discussed &nbsp; ④ discussing</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>2.</strong> The hikers finally __________ the summit after a grueling five-hour climb.<br>① reached &nbsp; ② reached to &nbsp; ③ reached at &nbsp; ④ were reached</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>3.</strong> The sun __________ over the mountains, painting the sky in shades of orange.<br>① raised &nbsp; ② rose &nbsp; ③ risen &nbsp; ④ was raised</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>4.</strong> The company decided to __________ the prices of all its products by 10%.<br>① rise &nbsp; ② risen &nbsp; ③ raise &nbsp; ④ arose</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>5.</strong> She __________ the conference despite feeling unwell.<br>① attended &nbsp; ② attended to &nbsp; ③ attended at &nbsp; ④ was attended</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>6.</strong> The manager refused to __________ the issue during the meeting.<br>① mention about &nbsp; ② mention &nbsp; ③ mention on &nbsp; ④ be mentioned</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>7.</strong> The twins __________ each other so closely that even their parents sometimes get confused.<br>① resemble &nbsp; ② resemble with &nbsp; ③ resemble to &nbsp; ④ are resembled</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>8.</strong> Water temperatures in the Pacific Ocean have __________ significantly this year.<br>① raised &nbsp; ② been risen &nbsp; ③ risen &nbsp; ④ arose</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>9.</strong> He __________ the room without knocking, startling everyone inside.<br>① entered &nbsp; ② entered into &nbsp; ③ entered to &nbsp; ④ was entered</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>10.</strong> The government plans to __________ awareness about climate change.<br>① rise &nbsp; ② arise &nbsp; ③ raise &nbsp; ④ risen</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>11.</strong> Which of the following is grammatically CORRECT?<br>① She mentioned about the problem. &nbsp; ② They discussed about the issue.<br>③ He entered the building quietly. &nbsp; ④ We reached to the airport on time.</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>12.</strong> The volunteers helped __________ funds for the local hospital.<br>① rise &nbsp; ② raise &nbsp; ③ arose &nbsp; ④ risen</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>13.</strong> The river has __________ three feet above its normal level due to the heavy rain.<br>① raised &nbsp; ② been raised &nbsp; ③ risen &nbsp; ④ rose</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>14.</strong> The baby __________ her parents so much that strangers always comment on it.<br>① resembles &nbsp; ② resembles to &nbsp; ③ resembles with &nbsp; ④ is resembled</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>15.</strong> He carefully __________ the museum, admiring the architecture as he walked in.<br>① entered into &nbsp; ② entered to &nbsp; ③ entered &nbsp; ④ was entering into</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>16.</strong> Nobody __________ the accident until the police arrived.<br>① mentioned about &nbsp; ② mentioned &nbsp; ③ mentioned on &nbsp; ④ discussed about</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>17.</strong> They __________ the new policy at the board meeting yesterday.<br>① discussed about &nbsp; ② were discussed &nbsp; ③ discussed &nbsp; ④ discussing</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>18.</strong> The flags were __________ to half-staff in honor of the fallen soldiers.<br>① risen &nbsp; ② rose &nbsp; ③ raised &nbsp; ④ arisen</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>19.</strong> She __________ the hospital immediately after hearing the news.<br>① reached &nbsp; ② reached to &nbsp; ③ arrived &nbsp; ④ reached at</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>20.</strong> The chairman __________ several important points during his speech.<br>① mentioned about &nbsp; ② was mentioned &nbsp; ③ mentioned &nbsp; ④ mentioned for</p>
+
+<!-- 연습 B -->
+<div class="page-break-before section-header">
+  <span class="section-num">연습 B</span>
+  감각동사 + 보어 연습문제 (20문제)
+</div>
+
+<div class="question-box"><p>다음 빈칸에 알맞은 답을 고르시오.</p></div>
+
+<p style="line-height:2.2; font-size:10pt;"><strong>1.</strong> The freshly baked cookies smell absolutely __________.<br>① deliciously &nbsp; ② delicious &nbsp; ③ deliciousness &nbsp; ④ to be delicious</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>2.</strong> The music from the concert hall sounded __________ even from a distance.<br>① beautifully &nbsp; ② beautiful &nbsp; ③ beauty &nbsp; ④ beautify</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>3.</strong> After the long hike, the cold water tasted __________ to the exhausted climbers.<br>① refreshingly &nbsp; ② refreshing &nbsp; ③ refresh &nbsp; ④ refreshed</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>4.</strong> The new fabric feels incredibly __________ against the skin.<br>① softly &nbsp; ② soften &nbsp; ③ soft &nbsp; ④ softness</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>5.</strong> The abandoned house looked __________ in the moonlight.<br>① eerily &nbsp; ② eerie &nbsp; ③ eeriness &nbsp; ④ to eerie</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>6.</strong> The patient appeared __________ after taking the new medication.<br>① calmly &nbsp; ② calm &nbsp; ③ calming &nbsp; ④ to calm</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>7.</strong> Which of the following is grammatically INCORRECT?<br>① The soup tastes wonderful. &nbsp; ② She looks beautifully in that dress.<br>③ The idea sounds reasonable. &nbsp; ④ The flowers smell fresh.</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>8.</strong> The professor remained __________ throughout the heated debate.<br>① composedly &nbsp; ② compose &nbsp; ③ composed &nbsp; ④ composing</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>9.</strong> The baby's skin feels __________ after applying the lotion.<br>① smoothly &nbsp; ② smooth &nbsp; ③ smoothen &nbsp; ④ smoothness</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>10.</strong> The old wine tasted surprisingly __________ after decades in the cellar.<br>① good &nbsp; ② well &nbsp; ③ goodly &nbsp; ④ better than well</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>11.</strong> The situation grew __________ as more details emerged.<br>① seriously &nbsp; ② serious &nbsp; ③ seriousness &nbsp; ④ in serious</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>12.</strong> Her voice sounded __________ over the phone, causing everyone to worry.<br>① weakly &nbsp; ② weak &nbsp; ③ weaken &nbsp; ④ weakness</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>13.</strong> The garden looks __________ after the landscaping team finished their work.<br>① magnificently &nbsp; ② magnificent &nbsp; ③ magnificence &nbsp; ④ magnify</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>14.</strong> The leftovers in the refrigerator smelled __________, so we threw them away.<br>① awfully &nbsp; ② awful &nbsp; ③ awfulness &nbsp; ④ to awful</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>15.</strong> She stayed __________ despite the provocative comments.<br>① silently &nbsp; ② silent &nbsp; ③ silence &nbsp; ④ in silently</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>16.</strong> The proposal sounds __________ on paper, but it may be difficult to execute.<br>① promisingly &nbsp; ② promising &nbsp; ③ promise &nbsp; ④ promised</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>17.</strong> Which sentence is grammatically CORRECT?<br>① The milk smells sourly. &nbsp; ② He became famously overnight.<br>③ The flower looks beautifully. &nbsp; ④ The cloth feels rough.</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>18.</strong> After the renovation, the building looked completely __________.<br>① differently &nbsp; ② different &nbsp; ③ difference &nbsp; ④ differ</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>19.</strong> The steak tasted __________, so we sent it back to the kitchen.<br>① terribly &nbsp; ② terrible &nbsp; ③ terribleness &nbsp; ④ to terrible</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>20.</strong> He seemed __________ by the unexpected question from the audience.<br>① confusedly &nbsp; ② confuse &nbsp; ③ confused &nbsp; ④ confusingly</p>
+
+<!-- 연습 C -->
+<div class="page-break-before section-header">
+  <span class="section-num">연습 C</span>
+  5형식 목적보어 연습문제 (20문제)
+</div>
+
+<div class="question-box"><p>다음 빈칸에 알맞은 답을 고르시오.</p></div>
+
+<p style="line-height:2.2; font-size:10pt;"><strong>1.</strong> The jury found the defendant __________ of all charges.<br>① guiltily &nbsp; ② guilt &nbsp; ③ guilty &nbsp; ④ to guiltily</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>2.</strong> We consider her __________ for the position.<br>① perfectly &nbsp; ② perfect &nbsp; ③ perfection &nbsp; ④ perfectness</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>3.</strong> The constant noise made the neighbors __________.<br>① angrily &nbsp; ② anger &nbsp; ③ angry &nbsp; ④ angering</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>4.</strong> They elected him __________ of the student council.<br>① presidently &nbsp; ② president &nbsp; ③ presidential &nbsp; ④ presiding</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>5.</strong> The coach kept the team __________ throughout the off-season.<br>① motivatedly &nbsp; ② motivate &nbsp; ③ motivated &nbsp; ④ motivatingly</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>6.</strong> She left the window __________ despite the cold weather.<br>① openly &nbsp; ② open &nbsp; ③ opened &nbsp; ④ opening</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>7.</strong> The manager appointed her __________ of the marketing division.<br>① direct &nbsp; ② direction &nbsp; ③ directly &nbsp; ④ director</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>8.</strong> I want this report __________ by tomorrow morning.<br>① complete &nbsp; ② completely &nbsp; ③ completed &nbsp; ④ completing</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>9.</strong> Which of the following sentences has a 5th-pattern (SVOC) structure?<br>① She gave him a present. &nbsp; ② They named their daughter Sophia.<br>③ He bought her flowers. &nbsp; ④ She sent me a letter.</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>10.</strong> The news left everyone __________ and confused.<br>① shockingly &nbsp; ② shock &nbsp; ③ shocked &nbsp; ④ to shock</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>11.</strong> We thought the project __________ but it turned out to be quite feasible.<br>① impossibly &nbsp; ② impossible &nbsp; ③ impossibility &nbsp; ④ impossibleness</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>12.</strong> The heavy rain turned the dirt road __________.<br>① muddily &nbsp; ② mud &nbsp; ③ muddy &nbsp; ④ muddiness</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>13.</strong> The teacher called his behavior __________.<br>① unacceptably &nbsp; ② unacceptable &nbsp; ③ unacceptability &nbsp; ④ unaccepted</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>14.</strong> She keeps her desk __________ at all times.<br>① neatly &nbsp; ② neat &nbsp; ③ neatness &nbsp; ④ neaten</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>15.</strong> They believed the rumor __________.<br>① truly &nbsp; ② truth &nbsp; ③ true &nbsp; ④ truthfully</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>16.</strong> The cold weather made the roads __________.<br>① dangerously &nbsp; ② danger &nbsp; ③ dangerous &nbsp; ④ endangered</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>17.</strong> Which of the following sentences has a DIFFERENT structure from the others?<br>① She bought me a book. &nbsp; ② He considers me his best friend.<br>③ They found the movie boring. &nbsp; ④ We named our cat Luna.</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>18.</strong> The loud explosion left the building __________.<br>① destructively &nbsp; ② destroy &nbsp; ③ damaged &nbsp; ④ destruction</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>19.</strong> The committee declared the competition __________.<br>① officially &nbsp; ② official &nbsp; ③ officialness &nbsp; ④ officiate</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>20.</strong> The medicine made the patient feel __________.<br>① drowsily &nbsp; ② drowsy &nbsp; ③ drowsiness &nbsp; ④ drowse</p>
+
+<!-- 연습 D -->
+<div class="page-break-before section-header">
+  <span class="section-num">연습 D</span>
+  혼동동사 연습문제 (20문제)
+</div>
+
+<div class="question-box"><p>다음 빈칸에 알맞은 답을 고르시오.</p></div>
+
+<p style="line-height:2.2; font-size:10pt;"><strong>1.</strong> The injured hiker __________ on the ground, waiting for help to arrive.<br>① laid &nbsp; ② lain &nbsp; ③ lay &nbsp; ④ lied</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>2.</strong> She carefully __________ the baby in the crib and tiptoed out of the room.<br>① lay &nbsp; ② lied &nbsp; ③ laid &nbsp; ④ lain</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>3.</strong> Harvard University was __________ in 1636.<br>① found &nbsp; ② founded &nbsp; ③ find &nbsp; ④ finding</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>4.</strong> The archaeologists __________ several ancient artifacts during the excavation.<br>① founded &nbsp; ② found &nbsp; ③ finding &nbsp; ④ finded</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>5.</strong> Please __________ yourselves; the meeting is about to begin.<br>① sit &nbsp; ② sat &nbsp; ③ seat &nbsp; ④ set</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>6.</strong> The audience was asked to remain __________ during the performance.<br>① sat &nbsp; ② seat &nbsp; ③ seated &nbsp; ④ set</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>7.</strong> The cat has __________ in that sunny spot all afternoon.<br>① laid &nbsp; ② lied &nbsp; ③ lain &nbsp; ④ lay</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>8.</strong> The workers __________ the foundation for the new building last month.<br>① lay &nbsp; ② lied &nbsp; ③ laid &nbsp; ④ lain</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>9.</strong> The organization was __________ on the principle of equality.<br>① found &nbsp; ② founded &nbsp; ③ finding &nbsp; ④ finded</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>10.</strong> She __________ to me about her grades last semester.<br>① lay &nbsp; ② laid &nbsp; ③ lied &nbsp; ④ lain</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>11.</strong> Which of the following is grammatically CORRECT?<br>① The company was found in 1990. &nbsp; ② She laid on the bed all day.<br>③ The hen has lain three eggs. &nbsp; ④ He has lain in bed since morning.</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>12.</strong> The price of oil has __________ dramatically over the past year.<br>① raised &nbsp; ② risen &nbsp; ③ rose &nbsp; ④ arose</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>13.</strong> The teacher asked the students to __________ down their pencils.<br>① lie &nbsp; ② lay &nbsp; ③ lied &nbsp; ④ lain</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>14.</strong> The ruins were __________ by explorers deep in the jungle.<br>① founded &nbsp; ② found &nbsp; ③ finding &nbsp; ④ finded</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>15.</strong> The theater usher asked us to __________ ourselves in the front row.<br>① sit &nbsp; ② sat &nbsp; ③ seat &nbsp; ④ set</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>16.</strong> She has been __________ to her parents about her whereabouts.<br>① laying &nbsp; ② lying &nbsp; ③ lieing &nbsp; ④ laying down</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>17.</strong> The construction workers __________ the bricks one by one.<br>① lay &nbsp; ② lied &nbsp; ③ laid &nbsp; ④ lain</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>18.</strong> The company __________ by her grandfather has grown into a multinational corporation.<br>① found &nbsp; ② founded &nbsp; ③ finding &nbsp; ④ was found</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>19.</strong> The dog __________ by the fireplace, enjoying the warmth.<br>① laid &nbsp; ② lied &nbsp; ③ lay &nbsp; ④ lain</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>20.</strong> A new scholarship fund has been __________ to support underprivileged students.<br>① found &nbsp; ② founded &nbsp; ③ finding &nbsp; ④ finded</p>
+
+<!-- 연습 E -->
+<div class="page-break-before section-header">
+  <span class="section-num">연습 E</span>
+  사역동사/지각동사 + 목적보어 연습문제 (20문제)
+</div>
+
+<div class="question-box"><p>다음 빈칸에 알맞은 답을 고르시오.</p></div>
+
+<p style="line-height:2.2; font-size:10pt;"><strong>1.</strong> I saw the children __________ in the park when I drove by.<br>① play &nbsp; ② played &nbsp; ③ playing &nbsp; ④ to play</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>2.</strong> The teacher had the students __________ their essays before class.<br>① rewrite &nbsp; ② rewriting &nbsp; ③ rewritten &nbsp; ④ to rewrite</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>3.</strong> She watched the sunset __________ behind the mountains.<br>① disappear &nbsp; ② disappeared &nbsp; ③ disappearing &nbsp; ④ to disappear</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>4.</strong> He had his car __________ at the mechanic's shop.<br>① repair &nbsp; ② repairing &nbsp; ③ repaired &nbsp; ④ to repair</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>5.</strong> The manager let the employees __________ early on Friday.<br>① leave &nbsp; ② leaving &nbsp; ③ left &nbsp; ④ to leave</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>6.</strong> I could feel the ground __________ beneath my feet during the earthquake.<br>① shake &nbsp; ② shook &nbsp; ③ shaking &nbsp; ④ shaken</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>7.</strong> She got her hair __________ at the new salon downtown.<br>① cut &nbsp; ② cutting &nbsp; ③ to cut &nbsp; ④ cuts</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>8.</strong> We heard someone __________ loudly in the next room.<br>① argue &nbsp; ② argued &nbsp; ③ arguing &nbsp; ④ to argue</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>9.</strong> The mother made her son __________ his room before going out.<br>① clean &nbsp; ② cleaned &nbsp; ③ cleaning &nbsp; ④ to clean</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>10.</strong> I noticed a strange man __________ around the building all morning.<br>① lurk &nbsp; ② lurked &nbsp; ③ lurking &nbsp; ④ to lurk</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>11.</strong> She had her portrait __________ by a famous artist.<br>① paint &nbsp; ② painting &nbsp; ③ painted &nbsp; ④ to paint</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>12.</strong> The comedian made the entire audience __________ uncontrollably.<br>① laugh &nbsp; ② laughed &nbsp; ③ laughing &nbsp; ④ to laugh</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>13.</strong> I watched the repairman __________ the broken pipe step by step.<br>① fix &nbsp; ② fixed &nbsp; ③ fixing &nbsp; ④ to fix</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>14.</strong> He couldn't let the opportunity __________ by without taking action.<br>① pass &nbsp; ② passed &nbsp; ③ passing &nbsp; ④ to pass</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>15.</strong> They had the document __________ into five languages.<br>① translate &nbsp; ② translating &nbsp; ③ translated &nbsp; ④ to translate</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>16.</strong> I felt something cold __________ across my foot in the dark.<br>① crawl &nbsp; ② crawled &nbsp; ③ crawling &nbsp; ④ to crawl</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>17.</strong> Which sentence is grammatically INCORRECT?<br>① She made him to apologize. &nbsp; ② I heard her sing a beautiful song.<br>③ He had his shoes polished. &nbsp; ④ We watched the birds fly south.</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>18.</strong> The boss had his secretary __________ all the appointments.<br>① reschedule &nbsp; ② rescheduled &nbsp; ③ rescheduling &nbsp; ④ to reschedule</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>19.</strong> We could see the smoke __________ from the chimney in the distance.<br>① rise &nbsp; ② rose &nbsp; ③ rising &nbsp; ④ risen</p>
+<p style="line-height:2.2; font-size:10pt;"><strong>20.</strong> She got her students __________ by providing interesting activities.<br>① motivate &nbsp; ② motivated &nbsp; ③ motivating &nbsp; ④ to motivate</p>
+
+
+<!-- ================================================================
+     Section 4: 정답 및 해설
+     ================================================================ -->
+<div class="page-break-before">
+  <h3 style="color:#4A90C4 !important; margin-bottom:12px;">연습 A. 자동사 vs 타동사 — 정답 및 해설</h3>
+  <table>
+    <thead><tr><th style="width:30px;">#</th><th style="width:80px;">정답</th><th>해설</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>① discussed</td><td>discuss는 타동사, about 불필요</td></tr>
+      <tr><td>2</td><td>① reached</td><td>reach는 타동사, to 불필요</td></tr>
+      <tr><td>3</td><td>② rose</td><td>rise의 과거형, 자동사</td></tr>
+      <tr><td>4</td><td>③ raise</td><td>타동사, prices를 목적어로 취함</td></tr>
+      <tr><td>5</td><td>① attended</td><td>attend는 타동사, 전치사 불필요</td></tr>
+      <tr><td>6</td><td>② mention</td><td>mention은 타동사, about 불필요</td></tr>
+      <tr><td>7</td><td>① resemble</td><td>resemble은 타동사, 전치사 불필요</td></tr>
+      <tr><td>8</td><td>③ risen</td><td>rise의 과거분사, have + p.p.</td></tr>
+      <tr><td>9</td><td>① entered</td><td>enter는 타동사, into 불필요</td></tr>
+      <tr><td>10</td><td>③ raise</td><td>타동사, awareness를 목적어로 취함</td></tr>
+      <tr><td>11</td><td>③</td><td>enter the building (타동사 + 목적어)</td></tr>
+      <tr><td>12</td><td>② raise</td><td>타동사, funds를 목적어로 취함</td></tr>
+      <tr><td>13</td><td>③ risen</td><td>rise의 과거분사, has + p.p.</td></tr>
+      <tr><td>14</td><td>① resembles</td><td>resemble은 타동사, 전치사 불필요</td></tr>
+      <tr><td>15</td><td>③ entered</td><td>enter는 타동사, 전치사 불필요</td></tr>
+      <tr><td>16</td><td>② mentioned</td><td>mention은 타동사, about 불필요</td></tr>
+      <tr><td>17</td><td>③ discussed</td><td>discuss는 타동사, about 불필요</td></tr>
+      <tr><td>18</td><td>③ raised</td><td>raise의 과거분사 (수동태)</td></tr>
+      <tr><td>19</td><td>① reached</td><td>reach는 타동사, to 불필요</td></tr>
+      <tr><td>20</td><td>③ mentioned</td><td>mention은 타동사, about 불필요</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="page-break-before">
+  <h3 style="color:#4A90C4 !important; margin-bottom:12px;">연습 B. 감각동사 + 보어 — 정답 및 해설</h3>
+  <table>
+    <thead><tr><th style="width:30px;">#</th><th style="width:80px;">정답</th><th>해설</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>② delicious</td><td>smell + 형용사</td></tr>
+      <tr><td>2</td><td>② beautiful</td><td>sound + 형용사</td></tr>
+      <tr><td>3</td><td>② refreshing</td><td>taste + 형용사 (현재분사)</td></tr>
+      <tr><td>4</td><td>③ soft</td><td>feel + 형용사</td></tr>
+      <tr><td>5</td><td>② eerie</td><td>look + 형용사</td></tr>
+      <tr><td>6</td><td>② calm</td><td>appear + 형용사</td></tr>
+      <tr><td>7</td><td>②</td><td>looks beautifully &rarr; looks beautiful</td></tr>
+      <tr><td>8</td><td>③ composed</td><td>remain + 형용사 (과거분사)</td></tr>
+      <tr><td>9</td><td>② smooth</td><td>feel + 형용사</td></tr>
+      <tr><td>10</td><td>① good</td><td>taste + 형용사 (well은 부사)</td></tr>
+      <tr><td>11</td><td>② serious</td><td>grow + 형용사</td></tr>
+      <tr><td>12</td><td>② weak</td><td>sound + 형용사</td></tr>
+      <tr><td>13</td><td>② magnificent</td><td>look + 형용사</td></tr>
+      <tr><td>14</td><td>② awful</td><td>smell + 형용사</td></tr>
+      <tr><td>15</td><td>② silent</td><td>stay + 형용사</td></tr>
+      <tr><td>16</td><td>② promising</td><td>sound + 형용사 (현재분사)</td></tr>
+      <tr><td>17</td><td>④</td><td>feel + rough (형용사) &check;</td></tr>
+      <tr><td>18</td><td>② different</td><td>look + 형용사</td></tr>
+      <tr><td>19</td><td>② terrible</td><td>taste + 형용사</td></tr>
+      <tr><td>20</td><td>③ confused</td><td>seem + 형용사 (과거분사)</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="page-break-before">
+  <h3 style="color:#4A90C4 !important; margin-bottom:12px;">연습 C. 5형식 목적보어 — 정답 및 해설</h3>
+  <table>
+    <thead><tr><th style="width:30px;">#</th><th style="width:90px;">정답</th><th>해설</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>③ guilty</td><td>find + O + 형용사(OC)</td></tr>
+      <tr><td>2</td><td>② perfect</td><td>consider + O + 형용사(OC)</td></tr>
+      <tr><td>3</td><td>③ angry</td><td>make + O + 형용사(OC)</td></tr>
+      <tr><td>4</td><td>② president</td><td>elect + O + 명사(OC)</td></tr>
+      <tr><td>5</td><td>③ motivated</td><td>keep + O + p.p.(OC)</td></tr>
+      <tr><td>6</td><td>② open</td><td>leave + O + 형용사(OC)</td></tr>
+      <tr><td>7</td><td>④ director</td><td>appoint + O + 명사(OC)</td></tr>
+      <tr><td>8</td><td>③ completed</td><td>want + O + p.p.(OC)</td></tr>
+      <tr><td>9</td><td>②</td><td>name + O + OC (5형식), 나머지 4형식</td></tr>
+      <tr><td>10</td><td>③ shocked</td><td>leave + O + p.p.(OC)</td></tr>
+      <tr><td>11</td><td>② impossible</td><td>think + O + 형용사(OC)</td></tr>
+      <tr><td>12</td><td>③ muddy</td><td>turn + O + 형용사(OC)</td></tr>
+      <tr><td>13</td><td>② unacceptable</td><td>call + O + 형용사(OC)</td></tr>
+      <tr><td>14</td><td>② neat</td><td>keep + O + 형용사(OC)</td></tr>
+      <tr><td>15</td><td>③ true</td><td>believe + O + 형용사(OC)</td></tr>
+      <tr><td>16</td><td>③ dangerous</td><td>make + O + 형용사(OC)</td></tr>
+      <tr><td>17</td><td>①</td><td>buy + IO + DO (4형식), 나머지 5형식</td></tr>
+      <tr><td>18</td><td>③ damaged</td><td>leave + O + p.p.(OC)</td></tr>
+      <tr><td>19</td><td>② official</td><td>declare + O + 형용사(OC)</td></tr>
+      <tr><td>20</td><td>② drowsy</td><td>make + feel + 형용사</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="page-break-before">
+  <h3 style="color:#4A90C4 !important; margin-bottom:12px;">연습 D. 혼동동사 — 정답 및 해설</h3>
+  <table>
+    <thead><tr><th style="width:30px;">#</th><th style="width:90px;">정답</th><th>해설</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>③ lay</td><td>lie(눕다)의 과거형</td></tr>
+      <tr><td>2</td><td>③ laid</td><td>lay(놓다)의 과거형</td></tr>
+      <tr><td>3</td><td>② founded</td><td>found(설립하다)의 과거분사</td></tr>
+      <tr><td>4</td><td>② found</td><td>find(발견하다)의 과거형</td></tr>
+      <tr><td>5</td><td>③ seat</td><td>seat(앉히다) 타동사, yourselves 목적어</td></tr>
+      <tr><td>6</td><td>③ seated</td><td>be seated = 앉아있다</td></tr>
+      <tr><td>7</td><td>③ lain</td><td>lie(눕다)의 과거분사, has + lain</td></tr>
+      <tr><td>8</td><td>③ laid</td><td>lay(놓다)의 과거형</td></tr>
+      <tr><td>9</td><td>② founded</td><td>found(설립하다)의 과거분사</td></tr>
+      <tr><td>10</td><td>③ lied</td><td>lie(거짓말하다)의 과거형</td></tr>
+      <tr><td>11</td><td>④</td><td>lie(눕다)-lay-lain: has lain &check;</td></tr>
+      <tr><td>12</td><td>② risen</td><td>rise(오르다)의 과거분사</td></tr>
+      <tr><td>13</td><td>② lay</td><td>lay(놓다) 원형</td></tr>
+      <tr><td>14</td><td>② found</td><td>find(발견하다)의 과거분사</td></tr>
+      <tr><td>15</td><td>③ seat</td><td>seat(앉히다) 타동사</td></tr>
+      <tr><td>16</td><td>② lying</td><td>lie(거짓말하다)의 현재분사</td></tr>
+      <tr><td>17</td><td>③ laid</td><td>lay(놓다)의 과거형</td></tr>
+      <tr><td>18</td><td>② founded</td><td>found(설립하다)의 과거분사</td></tr>
+      <tr><td>19</td><td>③ lay</td><td>lie(눕다)의 과거형</td></tr>
+      <tr><td>20</td><td>② founded</td><td>found(설립하다)의 과거분사</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="page-break-before">
+  <h3 style="color:#4A90C4 !important; margin-bottom:12px;">연습 E. 사역/지각동사 + 목적보어 — 정답 및 해설</h3>
+  <table>
+    <thead><tr><th style="width:30px;">#</th><th style="width:100px;">정답</th><th>해설</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>③ playing</td><td>see + O + -ing (진행 중 목격)</td></tr>
+      <tr><td>2</td><td>① rewrite</td><td>have + O + 원형 (능동)</td></tr>
+      <tr><td>3</td><td>① 또는 ③</td><td>watch + O + 원형/~ing 모두 가능</td></tr>
+      <tr><td>4</td><td>③ repaired</td><td>have + O + p.p. (수동: 차가 수리당함)</td></tr>
+      <tr><td>5</td><td>① leave</td><td>let + O + 원형</td></tr>
+      <tr><td>6</td><td>③ shaking</td><td>feel + O + -ing (진행 중)</td></tr>
+      <tr><td>7</td><td>① cut</td><td>get + O + p.p. (cut-cut-cut)</td></tr>
+      <tr><td>8</td><td>③ arguing</td><td>hear + O + -ing (진행 중)</td></tr>
+      <tr><td>9</td><td>① clean</td><td>make + O + 원형</td></tr>
+      <tr><td>10</td><td>③ lurking</td><td>notice + O + -ing (진행 중)</td></tr>
+      <tr><td>11</td><td>③ painted</td><td>have + O + p.p. (수동)</td></tr>
+      <tr><td>12</td><td>① laugh</td><td>make + O + 원형</td></tr>
+      <tr><td>13</td><td>① fix</td><td>watch + O + 원형 (전체 과정 목격)</td></tr>
+      <tr><td>14</td><td>① pass</td><td>let + O + 원형</td></tr>
+      <tr><td>15</td><td>③ translated</td><td>have + O + p.p. (수동)</td></tr>
+      <tr><td>16</td><td>③ crawling</td><td>feel + O + -ing (진행 중)</td></tr>
+      <tr><td>17</td><td>①</td><td>make + O + 원형 (to 불필요)</td></tr>
+      <tr><td>18</td><td>① reschedule</td><td>have + O + 원형 (능동)</td></tr>
+      <tr><td>19</td><td>③ rising</td><td>see + O + -ing (진행 중)</td></tr>
+      <tr><td>20</td><td>② motivated</td><td>get + O + p.p. (수동/상태)</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ===== 푸터 ===== -->
+<hr class="section-divider">
+<p style="text-align: center; color: #a0aec0 !important; font-size: 9pt; margin-top: 30px;">
+  피드백지 작성 완료 — 2026년 02월 20일
+</p>
+
+</body>
+</html>

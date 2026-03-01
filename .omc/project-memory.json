@@ -1,11 +1,20 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1770946029197,
+  "lastScanned": 1772267920402,
   "projectRoot": "/Users/haemin/projects/doc_design",
   "techStack": {
-    "languages": [],
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      }
+    ],
     "frameworks": [],
-    "packageManager": null,
+    "packageManager": "npm",
     "runtime": null
   },
   "build": {
@@ -13,7 +22,12 @@
     "testCommand": null,
     "lintCommand": null,
     "devCommand": null,
-    "scripts": {}
+    "scripts": {
+      "study": "node 04_scripts/generate-study-pdf.js",
+      "print": "node 04_scripts/images-to-pdf.js",
+      "assemble": "node 04_scripts/assemble.js",
+      "validate": "node 04_scripts/validate-schema.js"
+    }
   },
   "conventions": {
     "namingStyle": null,
@@ -27,15 +41,81 @@
     "mainDirectories": [
       "docs"
     ],
-    "gitBranches": null
+    "gitBranches": {
+      "defaultBranch": "main",
+      "branchingStrategy": null
+    }
   },
   "customNotes": [],
   "directoryMap": {
-    "archive": {
-      "path": "archive",
+    "00_tutoring": {
+      "path": "00_tutoring",
       "purpose": null,
-      "fileCount": 19,
-      "lastAccessed": 1770946029185,
+      "fileCount": 1,
+      "lastAccessed": 1772267920382,
+      "keyFiles": [
+        "tracking.json"
+      ]
+    },
+    "01_print-bundle": {
+      "path": "01_print-bundle",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1772267920386,
+      "keyFiles": []
+    },
+    "02_textbooks": {
+      "path": "02_textbooks",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1772267920386,
+      "keyFiles": []
+    },
+    "03_system": {
+      "path": "03_system",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1772267920386,
+      "keyFiles": [
+        "vera-core.css"
+      ]
+    },
+    "04_scripts": {
+      "path": "04_scripts",
+      "purpose": null,
+      "fileCount": 43,
+      "lastAccessed": 1772267920386,
+      "keyFiles": [
+        "_temp_check.js",
+        "_temp_extract.js",
+        "_temp_mapping.js",
+        "assemble.js",
+        "debug-kakao-chatroom.js"
+      ]
+    },
+    "05_assets": {
+      "path": "05_assets",
+      "purpose": null,
+      "fileCount": 0,
+      "lastAccessed": 1772267920386,
+      "keyFiles": []
+    },
+    "06_reference": {
+      "path": "06_reference",
+      "purpose": null,
+      "fileCount": 3,
+      "lastAccessed": 1772267920386,
+      "keyFiles": [
+        "PDF_DESIGN_GUIDE.md",
+        "편입영어_교재_리팩토링_분석보고서.md",
+        "편입영어_교재_리팩토링_심화보고서.md"
+      ]
+    },
+    "07_archive": {
+      "path": "07_archive",
+      "purpose": null,
+      "fileCount": 20,
+      "lastAccessed": 1772267920386,
       "keyFiles": [
         "VERADICT 구문독해.pdf",
         "VERADICT 구문독해_final.pdf",
@@ -44,60 +124,102 @@
         "aaa.jpeg"
       ]
     },
+    "automation": {
+      "path": "automation",
+      "purpose": null,
+      "fileCount": 3,
+      "lastAccessed": 1772267920386,
+      "keyFiles": [
+        "README.md",
+        "config.js",
+        "run.js"
+      ]
+    },
     "docs": {
       "path": "docs",
       "purpose": "Documentation",
       "fileCount": 1,
-      "lastAccessed": 1770946029185,
+      "lastAccessed": 1772267920386,
       "keyFiles": [
-        "PDF_DESIGN_GUIDE.md"
+        "카카오채팅_이미지_자동다운로드_기술명세서.md"
       ]
     },
-    "계약서": {
-      "path": "계약서",
+    "student_chats": {
+      "path": "student_chats",
       "purpose": null,
-      "fileCount": 15,
-      "lastAccessed": 1770946029185,
+      "fileCount": 18,
+      "lastAccessed": 1772267920387,
       "keyFiles": [
-        "1C78A870-4768-4D73-85B1-A51501526E41_1_105_c.jpeg",
-        "1EB05024-EE04-44AA-B8CF-09231E0D77AC_1_105_c.jpeg",
-        "2A3CB969-D121-45FF-B73A-5263CEAE82A5_1_105_c.jpeg",
-        "57514694-BFA6-4995-A280-82037424BFF2_1_105_c.jpeg",
-        "706FEA83-99AF-4767-ABA8-19AAEC52745F_1_105_c.jpeg"
+        "김예은.json",
+        "김지환.json",
+        "나진원.json",
+        "박수빈.json",
+        "박은지.json"
       ]
     },
-    "계약서_cropped": {
-      "path": "계약서_cropped",
+    "template-library": {
+      "path": "template-library",
       "purpose": null,
-      "fileCount": 15,
-      "lastAccessed": 1770946029185,
+      "fileCount": 3,
+      "lastAccessed": 1772267920387,
       "keyFiles": [
-        "01.jpeg",
-        "02.jpeg",
-        "03.jpeg",
-        "04.jpeg",
-        "05.jpeg"
+        "README.md",
+        "render.js",
+        "schema.json"
       ]
     },
-    "베라진": {
-      "path": "베라진",
+    "고등영문법_실력편_pages": {
+      "path": "고등영문법_실력편_pages",
       "purpose": null,
-      "fileCount": 12,
-      "lastAccessed": 1770946029186,
+      "fileCount": 20,
+      "lastAccessed": 1772267920387,
       "keyFiles": [
-        "KakaoTalk_Photo_2026-02-13-09-24-04 001.jpeg",
-        "KakaoTalk_Photo_2026-02-13-09-24-04 002.jpeg",
-        "KakaoTalk_Photo_2026-02-13-09-24-04 003.jpeg",
-        "KakaoTalk_Photo_2026-02-13-09-24-04 004.jpeg",
-        "KakaoTalk_Photo_2026-02-13-09-24-05 005.jpeg"
+        "page_096.pdf",
+        "page_097.pdf",
+        "page_098.pdf",
+        "page_099.pdf",
+        "page_100.pdf"
       ]
     },
-    "편입영어 교재": {
-      "path": "편입영어 교재",
-      "purpose": null,
+    "02_textbooks/data": {
+      "path": "02_textbooks/data",
+      "purpose": "Data files",
       "fileCount": 0,
-      "lastAccessed": 1770946029186,
+      "lastAccessed": 1772267920387,
       "keyFiles": []
+    },
+    "02_textbooks/schemas": {
+      "path": "02_textbooks/schemas",
+      "purpose": "Schema definitions",
+      "fileCount": 5,
+      "lastAccessed": 1772267920387,
+      "keyFiles": [
+        "book-manifest.schema.json",
+        "passage.schema.json",
+        "problem.schema.json"
+      ]
+    },
+    "03_system/components": {
+      "path": "03_system/components",
+      "purpose": "UI components",
+      "fileCount": 27,
+      "lastAccessed": 1772267920387,
+      "keyFiles": [
+        "COMPLETION_REPORT.md",
+        "COMPONENTS_INDEX.md",
+        "COMPONENTS_SUMMARY.md"
+      ]
+    },
+    "automation/utils": {
+      "path": "automation/utils",
+      "purpose": "Utility functions",
+      "fileCount": 4,
+      "lastAccessed": 1772267920387,
+      "keyFiles": [
+        "drive-client.js",
+        "kakao-client.js",
+        "logger.js"
+      ]
     }
   },
   "hotPaths": [],

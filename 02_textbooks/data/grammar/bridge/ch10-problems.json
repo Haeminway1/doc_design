@@ -1,0 +1,811 @@
+{
+  "bookId": "grammar-bridge-ch10",
+  "chapter": "ch10",
+  "title": "의문사 (Interrogatives)",
+  "problems": [
+    {
+      "id": "grammar-bridge-ch10-1",
+      "number": 1,
+      "type": "correct-usage",
+      "instruction": "다음 중 밑줄 친 부분이 문법적으로 올바른 것은?",
+      "choices": [
+        "I wonder what time does the train arrive at the station.",
+        "Could you tell me which department you work for?",
+        "Do you know where is the nearest hospital located?",
+        "I'm not sure how many people are there in the meeting room.",
+        "Please explain why did he suddenly quit his job."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "간접의문문에서는 '의문사 + 주어 + 동사' 어순을 사용합니다.\n                - ① what time the train arrives (✗ does the train arrive)\n                - ③ where the nearest hospital is (✗ is the nearest hospital)\n                - ④ how many people there are (✗ are there)\n                - ⑤ why he suddenly quit (✗ did he suddenly quit)"
+    },
+    {
+      "id": "grammar-bridge-ch10-2",
+      "number": 2,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장을 간접의문문으로 바꿀 때 가장 적절한 것은?",
+      "choices": [
+        "I want to know how long will the project take.",
+        "I want to know how long the project will take.",
+        "I want to know how long does the project take.",
+        "I want to know the project how long will take.",
+        "I want to know how long will take the project."
+      ],
+      "stem": "\"How long will the project take?\"",
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "간접의문문에서는 의문사 다음에 주어(the project) + 동사(will take) 순서가 와야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-3",
+      "number": 3,
+      "type": "correct-usage",
+      "instruction": "다음 중 어법상 올바른 문장은?",
+      "choices": [
+        "Can you guess what does she do for a living?",
+        "I have no idea where did they go last night.",
+        "Nobody knows when will the results be announced.",
+        "The teacher asked who had completed the assignment.",
+        "I wonder why is he always late to meetings."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 4,
+      "explanation": "간접의문문에서는 평서문 어순을 사용해야 합니다. ④만이 올바른 어순입니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-4",
+      "number": 4,
+      "type": "fill-in-blank",
+      "instruction": "빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "what did he think",
+        "what he thought",
+        "what he thinks",
+        "what does he think",
+        "what was he thinking"
+      ],
+      "stem": "\"The journalist asked the politician _______ about the new policy.\"",
+      "answer": 2,
+      "explanation": "간접의문문에서는 'what + 주어(he) + 동사(thought)' 어순이며, 시제 일치에 따라 과거형을 사용합니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-5",
+      "number": 5,
+      "type": "correct-usage",
+      "instruction": "다음 대화에서 B의 응답이 문법적으로 올바른 것은?",
+      "choices": [
+        "I think where we parked it near the fountain.",
+        "I think we parked it where near the fountain.",
+        "I think we parked it near the fountain where.",
+        "Where I think we parked it near the fountain.",
+        "I think we parked it near the fountain."
+      ],
+      "stem": "A: \"Do you remember where we parked the car?\"<br> B: ____________",
+      "choiceLayout": "single-column",
+      "answer": 5,
+      "explanation": "간접의문문에서 where은 부사구를 이끌므로, 완전한 문장 구조가 와야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-6",
+      "number": 6,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 밑줄 친 부분을 올바르게 수정한 것은?",
+      "choices": [
+        "how this machine works",
+        "how works this machine",
+        "how this machine does work",
+        "how does work this machine",
+        "this machine how works"
+      ],
+      "stem": "\"I can't figure out <b>how does this machine work</b> properly.\"",
+      "answer": 1,
+      "explanation": "간접의문문에서는 'how + 주어(this machine) + 동사(works)' 어순입니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-7",
+      "number": 7,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장에서 문법적 오류가 있는 것은?",
+      "choices": [
+        "I wonder what time the store closes on Sundays.",
+        "Can you tell me where the bus station is located?",
+        "Do you know how much does this book cost?",
+        "Nobody understands why he made that decision.",
+        "I'm curious about what she said at the meeting."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 3,
+      "explanation": "'how much does this book cost' → 'how much this book costs'가 정확합니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-8",
+      "number": 8,
+      "type": "fill-in-blank",
+      "instruction": "빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "who was present at",
+        "who present was at",
+        "at who was present",
+        "present who was at",
+        "who at was present"
+      ],
+      "stem": "\"The detective wanted to know _______ the crime scene.\"",
+      "answer": 1,
+      "explanation": "간접의문문에서 'who + 동사(was) + 보어/부사구(present at)'가 올바른 어순입니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-9",
+      "number": 9,
+      "type": "correct-usage",
+      "instruction": "다음 중 의미와 문법이 모두 올바른 것은?",
+      "choices": [
+        "I asked him where was he going tonight.",
+        "I asked him where he was going tonight.",
+        "I asked him where he is going tonight.",
+        "I asked him where is he going tonight.",
+        "I asked him he was going where tonight."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "간접의문문 어순과 시제 일치가 모두 올바른 문장입니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-10",
+      "number": 10,
+      "type": "correct-usage",
+      "instruction": "밑줄 친 부분이 문법적으로 올바른 것은?",
+      "choices": [
+        "who do you think",
+        "who you think",
+        "you think who",
+        "do you think who",
+        "who thinks you"
+      ],
+      "stem": "A: \"I'm looking for someone to help with the project.\"<br> B: \"Do you know _______ might be interested?\"",
+      "answer": 2,
+      "explanation": "간접의문문에서는 'who you think'가 올바른 어순입니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-11",
+      "number": 11,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "Who",
+        "Whom",
+        "Whose",
+        "Which",
+        "What"
+      ],
+      "stem": "\"_______ do you think will win the championship this year?\"",
+      "answer": 1,
+      "explanation": "'Who do you think'에서 who는 주어 역할을 하므로 주격 who를 사용합니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-12",
+      "number": 12,
+      "type": "correct-usage",
+      "instruction": "다음 중 문법적으로 올바른 것은?",
+      "choices": [
+        "To who should I address this letter?",
+        "To whom should I address this letter?",
+        "Who should I address this letter to?",
+        "Whom should I address this letter?",
+        "② and ③ are both correct."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 5,
+      "explanation": "전치사 to 뒤에는 목적격 whom을 쓰는 것이 격식적으로 정확하지만, 현대 영어에서는 문장 끝에 전치사를 두고 who를 쓰는 것도 허용됩니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-13",
+      "number": 13,
+      "type": "fill-in-blank",
+      "instruction": "빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "who",
+        "whom",
+        "whose",
+        "which",
+        "what"
+      ],
+      "stem": "\"The person _______ you were speaking with is my supervisor.\"",
+      "answer": 2,
+      "explanation": "전치사 with의 목적어 역할을 하므로 목적격 whom을 사용합니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-14",
+      "number": 14,
+      "type": "correct-usage",
+      "instruction": "다음 문장에서 문법적으로 올바른 것은?",
+      "choices": [
+        "Who did you invite to the party?",
+        "Whom did you invite to the party?",
+        "Who you invited to the party?",
+        "Whom you invited to the party?",
+        "① and ② are both acceptable in modern English."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 5,
+      "explanation": "직접의문문에서는 현대 영어에서 who와 whom 모두 허용되지만, whom이 격식적으로 더 정확합니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-15",
+      "number": 15,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 격식적 글쓰기에 가장 적절한 것은?",
+      "choices": [
+        "Who are you waiting for?",
+        "Whom are you waiting for?",
+        "For who are you waiting?",
+        "For whom are you waiting?",
+        "You are waiting for who?"
+      ],
+      "choiceLayout": "single-column",
+      "answer": 4,
+      "explanation": "격식적 글쓰기에서는 전치사를 앞으로 이동시키고 whom을 사용하는 것이 가장 적절합니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-16",
+      "number": 16,
+      "type": "fill-in-blank",
+      "instruction": "빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "who",
+        "whom",
+        "whose",
+        "which",
+        "what"
+      ],
+      "stem": "\"I wonder _______ she consulted before making that decision.\"",
+      "answer": 2,
+      "explanation": "consult의 목적어 역할을 하므로 목적격 whom을 사용합니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-17",
+      "number": 17,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 문법적으로 가장 정확한 것은?",
+      "choices": [
+        "Who do you think I should talk to?",
+        "Whom do you think I should talk to?",
+        "To whom do you think I should talk?",
+        "Who I should talk to do you think?",
+        "② and ③ are equally correct."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 5,
+      "explanation": "② (간접의문문에서 목적격 사용)와 ③ (전치사 전치 + 목적격) 모두 문법적으로 정확합니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-18",
+      "number": 18,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장에서 문법적 오류가 있는 것은?",
+      "choices": [
+        "Who called while I was out?",
+        "Whom did you see at the conference?",
+        "I don't know who to trust anymore.",
+        "With who are you planning to travel?",
+        "Whose car did you borrow yesterday?"
+      ],
+      "choiceLayout": "single-column",
+      "answer": 4,
+      "explanation": "전치사 with 뒤에는 whom을 써야 합니다. 'With whom are you planning to travel?'이 정확합니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-19",
+      "number": 19,
+      "type": "fill-in-blank",
+      "instruction": "빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "who",
+        "whom",
+        "whose",
+        "which",
+        "what"
+      ],
+      "stem": "\"The committee will decide _______ to nominate for the award.\"",
+      "answer": 2,
+      "explanation": "nominate의 목적어 역할을 하므로 목적격 whom을 사용합니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-20",
+      "number": 20,
+      "type": "fill-in-blank",
+      "instruction": "다음 대화에서 문법적으로 가장 정확한 응답은?",
+      "choices": [
+        "Who was it",
+        "Whom was it",
+        "Who it was",
+        "Whom it was",
+        "Whose was it"
+      ],
+      "stem": "A: \"Someone called for you earlier.\"<br> B: _______ ?",
+      "answer": 1,
+      "explanation": "직접의문문에서 who가 주어 역할을 하므로 주격 who를 사용합니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-21",
+      "number": 21,
+      "type": "paraphrase",
+      "instruction": "다음 중 의미상 가장 자연스러운 것은?",
+      "choices": [
+        "What color do you prefer, red or blue?",
+        "Which color do you prefer, red or blue?",
+        "What time does the meeting start?",
+        "Which time does the meeting start?",
+        "② and ③ are both natural."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 5,
+      "explanation": "② red와 blue라는 한정된 선택지가 있으므로 which가 자연스럽고, ③ 시간을 물을 때는 관습적으로 what을 사용합니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-22",
+      "number": 22,
+      "type": "fill-in-blank",
+      "instruction": "빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "What",
+        "Which",
+        "Who",
+        "Whose",
+        "When"
+      ],
+      "stem": "\"_______ of these books would you recommend for a beginner?\"",
+      "answer": 2,
+      "explanation": "'these books' 중에서 선택하는 한정된 범위이므로 which를 사용합니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-23",
+      "number": 23,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 문맥상 가장 적절한 것은?",
+      "choices": [
+        "What kind of movies do you like?",
+        "Which kind of movies do you like?",
+        "What movies do you like?",
+        "Which movies do you like?",
+        "① and ③ are equally appropriate."
+      ],
+      "stem": "상황: 친구가 수많은 영화 장르 중에서 선호하는 것을 물어볼 때",
+      "choiceLayout": "single-column",
+      "answer": 5,
+      "explanation": "수많은 영화 장르 중에서 일반적인 선호를 묻는 것이므로 what이 적절합니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-24",
+      "number": 24,
+      "type": "fill-in-blank",
+      "instruction": "다음 대화에서 가장 자연스러운 질문은?",
+      "choices": [
+        "What brand are you considering",
+        "Which brand are you considering",
+        "What brands do you prefer",
+        "Which smartphone do you want",
+        "All are equally natural."
+      ],
+      "stem": "A: \"I'm thinking about buying a smartphone.\"<br> B: _______ ?",
+      "choiceLayout": "single-column",
+      "answer": 1,
+      "explanation": "막연한 브랜드 선호를 묻는 것이므로 what이 더 자연스럽습니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-25",
+      "number": 25,
+      "type": "fill-in-blank",
+      "instruction": "빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "what",
+        "which",
+        "whose",
+        "who",
+        "when"
+      ],
+      "stem": "\"I can't decide _______ subject to major in at university.\"",
+      "answer": 1,
+      "explanation": "대학 전공은 무한히 많은 선택지 중에서 고르는 것이므로 what이 적절합니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-26",
+      "number": 26,
+      "type": "correct-usage",
+      "instruction": "다음 중 의미상 올바른 구별은?",
+      "choices": [
+        "What = 무한한 선택지, Which = 한정된 선택지",
+        "What = 한정된 선택지, Which = 무한한 선택지",
+        "What과 Which는 항상 교체 가능하다",
+        "What은 사물, Which는 사람에만 사용",
+        "What은 단수, Which는 복수에만 사용"
+      ],
+      "choiceLayout": "single-column",
+      "answer": 1,
+      "explanation": "what은 무한하거나 제한 없는 선택지, which는 한정된 선택지에서 사용됩니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-27",
+      "number": 27,
+      "type": "fill-in-blank",
+      "instruction": "다음 상황에서 가장 적절한 질문은?",
+      "choices": [
+        "What pasta do you want?",
+        "Which pasta do you want?",
+        "Whose pasta do you want?",
+        "When pasta do you want?",
+        "① and ② are equally appropriate."
+      ],
+      "stem": "상황: 메뉴에 3가지 파스타가 있을 때",
+      "answer": 2,
+      "explanation": "메뉴에 있는 3가지 파스타라는 한정된 선택지이므로 which가 적절합니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-28",
+      "number": 28,
+      "type": "fill-in-blank",
+      "instruction": "빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "What",
+        "Which",
+        "Who",
+        "When",
+        "Where"
+      ],
+      "stem": "\"_______ is your favorite season, and why do you like it?\"",
+      "answer": 1,
+      "explanation": "4계절이라는 한정된 범위이지만, 일반적인 선호를 묻는 관용적 표현으로 what을 사용합니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-29",
+      "number": 29,
+      "type": "paraphrase",
+      "instruction": "다음 중 문법적으로 올바르고 의미가 자연스러운 것은?",
+      "choices": [
+        "Which do you think is the best solution?",
+        "What do you think is the best solution?",
+        "Which solution do you think is the best?",
+        "What solution do you think is the best?",
+        "All are correct and natural."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 5,
+      "explanation": "문맥에 따라 모두 사용 가능합니다. 한정된 해결책들 중에서는 which, 일반적인 해결책을 물을 때는 what을 사용합니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-30",
+      "number": 30,
+      "type": "fill-in-blank",
+      "instruction": "다음 대화에서 가장 적절한 것은?",
+      "choices": [
+        "What is faster",
+        "Which is faster",
+        "What one is faster",
+        "Which one is faster",
+        "② and ④ are both appropriate."
+      ],
+      "stem": "A: \"There are two routes to the airport.\"<br> B: _______ ?",
+      "choiceLayout": "single-column",
+      "answer": 5,
+      "explanation": "두 개의 경로라는 명시된 선택지가 있으므로 which를 사용하며, one을 포함하거나 생략 모두 가능합니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-31",
+      "number": 31,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 밑줄 친 부분이 의문대명사로 사용된 것은?",
+      "choices": [
+        "What time do you usually wake up?",
+        "What happened at the meeting?",
+        "Which book are you currently reading?",
+        "Whose car is parked outside?",
+        "How many students attended the lecture?"
+      ],
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "②에서 What은 주어 역할을 하는 의문대명사이고, 나머지는 모두 명사를 수식하는 의문형용사입니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-32",
+      "number": 32,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장에서 문법적 기능이 나머지와 다른 것은?",
+      "choices": [
+        "What is your name?",
+        "What book are you reading?",
+        "Which do you prefer?",
+        "Whose is this umbrella?",
+        "Who called you yesterday?"
+      ],
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "②는 의문형용사(What이 book을 수식), 나머지는 모두 의문대명사입니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-33",
+      "number": 33,
+      "type": "fill-in-blank",
+      "instruction": "빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "what",
+        "which",
+        "whose",
+        "who",
+        "when"
+      ],
+      "stem": "\"I don't know _______ to choose from these options.\"",
+      "answer": 2,
+      "explanation": "여러 옵션 중에서 선택하는 상황이므로 which가 적절합니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-34",
+      "number": 34,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 whose가 의문대명사로 사용된 것은?",
+      "choices": [
+        "Whose car did you borrow?",
+        "Whose is this jacket?",
+        "Whose opinion matters most?",
+        "Whose house are we visiting?",
+        "Whose responsibility is it?"
+      ],
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "②에서 Whose는 단독으로 사용되어 소유대명사 역할을 하는 의문대명사입니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-35",
+      "number": 35,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장에서 밑줄 친 부분의 문법적 역할은?",
+      "choices": [
+        "주어",
+        "목적어",
+        "보어",
+        "부사어",
+        "관계사"
+      ],
+      "stem": "\"<b>Which of the candidates</b> do you think is most qualified?\"",
+      "answer": 2,
+      "explanation": "'Which of the candidates'는 동사 think의 목적어 역할을 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-36",
+      "number": 36,
+      "type": "fill-in-blank",
+      "instruction": "빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "What",
+        "Which",
+        "Who",
+        "Whose",
+        "When"
+      ],
+      "stem": "\"_______ makes you think he's the right person for the job?\"",
+      "answer": 1,
+      "explanation": "주어 자리에 오는 의문대명사로 What이 적절합니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-37",
+      "number": 37,
+      "type": "correct-usage",
+      "instruction": "다음 중 문법적 구조가 올바른 것은?",
+      "choices": [
+        "What do you think about it?",
+        "What about it do you think?",
+        "About what do you think it?",
+        "You think what about it?",
+        "Think what do you about it?"
+      ],
+      "choiceLayout": "single-column",
+      "answer": 1,
+      "explanation": "'What do you think about it?'이 가장 자연스러운 어순입니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-38",
+      "number": 38,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장에서 whose의 기능은?",
+      "choices": [
+        "의문대명사 (소유격)",
+        "의문형용사",
+        "관계대명사",
+        "의문부사",
+        "접속사"
+      ],
+      "stem": "\"Whose idea was it to start this project?\"",
+      "answer": 2,
+      "explanation": "'Whose idea'에서 Whose는 idea를 수식하는 의문형용사입니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-39",
+      "number": 39,
+      "type": "fill-in-blank",
+      "instruction": "빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "who",
+        "whom",
+        "whose",
+        "which",
+        "what"
+      ],
+      "stem": "\"I wonder _______ made this delicious cake.\"",
+      "answer": 1,
+      "explanation": "케이크를 만든 사람을 묻는 것이므로 주어 역할의 who가 적절합니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-40",
+      "number": 40,
+      "type": "paraphrase",
+      "instruction": "다음 중 문법적으로 올바르면서 의미가 자연스러운 것은?",
+      "choices": [
+        "What person do you admire most?",
+        "Which person do you admire most?",
+        "Who do you admire most?",
+        "Whose do you admire most?",
+        "① and ③ are both correct."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 5,
+      "explanation": "①과 ③ 모두 문법적으로 올바르며 의미도 자연스럽습니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-41",
+      "number": 41,
+      "type": "paraphrase",
+      "instruction": "다음 중 how가 포함된 표현의 의미가 잘못된 것은?",
+      "choices": [
+        "how long - 기간, 길이",
+        "how far - 거리",
+        "how often - 빈도",
+        "how much - 가격, 양(불가산명사)",
+        "how many - 양(불가산명사)"
+      ],
+      "choiceLayout": "single-column",
+      "answer": 5,
+      "explanation": "'how many'는 가산명사와 함께 사용되며, 불가산명사와는 'how much'를 사용합니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-42",
+      "number": 42,
+      "type": "fill-in-blank",
+      "instruction": "빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "How long",
+        "How far",
+        "How often",
+        "How much",
+        "How many"
+      ],
+      "stem": "\"_______ have you been learning English?\"",
+      "answer": 1,
+      "explanation": "영어 학습 기간을 묻는 것이므로 'How long'이 적절합니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-43",
+      "number": 43,
+      "type": "correct-usage",
+      "instruction": "다음 중 문법적으로 올바른 것은?",
+      "choices": [
+        "How come you didn't tell me earlier?",
+        "How come didn't you tell me earlier?",
+        "How come you not tell me earlier?",
+        "How come you don't told me earlier?",
+        "How come did you not tell me earlier?"
+      ],
+      "choiceLayout": "single-column",
+      "answer": 1,
+      "explanation": "'How come' 뒤에는 평서문 어순이 옵니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-44",
+      "number": 44,
+      "type": "fill-in-blank",
+      "instruction": "빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "How many",
+        "How much",
+        "How long",
+        "How often",
+        "How far"
+      ],
+      "stem": "\"_______ water do you drink every day?\"",
+      "answer": 2,
+      "explanation": "water는 불가산명사이므로 'How much'를 사용합니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-45",
+      "number": 45,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 의문부사 뒤에 완전한 문장이 오지 않은 것은?",
+      "choices": [
+        "When did you arrive here?",
+        "Where do you live?",
+        "Why are you crying?",
+        "How was your trip?",
+        "What happened yesterday?"
+      ],
+      "choiceLayout": "single-column",
+      "answer": 5,
+      "explanation": "⑤에서 What은 의문대명사로 주어 역할을 하므로, 뒤에 완전한 문장이 오지 않습니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-46",
+      "number": 46,
+      "type": "fill-in-blank",
+      "instruction": "다음 대화에서 가장 적절한 질문은?",
+      "choices": [
+        "How long do you go",
+        "How often do you go",
+        "How much do you go",
+        "How many do you go",
+        "How far do you go"
+      ],
+      "stem": "A: \"I go to the gym.\"<br> B: _______ ?",
+      "answer": 2,
+      "explanation": "헬스장을 가는 빈도를 묻는 것이므로 'How often'이 적절합니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-47",
+      "number": 47,
+      "type": "fill-in-blank",
+      "instruction": "빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "How long",
+        "How far",
+        "How often",
+        "How much",
+        "How many"
+      ],
+      "stem": "\"_______ is it from your house to the university?\"",
+      "answer": 2,
+      "explanation": "거리를 묻는 질문이므로 'How far'가 적절합니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-48",
+      "number": 48,
+      "type": "correct-usage",
+      "instruction": "다음 중 어법상 올바른 것은?",
+      "choices": [
+        "I don't know where does he live.",
+        "I don't know where he lives.",
+        "I don't know he lives where.",
+        "I don't know does he live where.",
+        "Where I don't know he lives."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "간접의문문에서는 평서문 어순을 사용해야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-49",
+      "number": 49,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장에서 문법적 기능이 다른 것은?",
+      "choices": [
+        "When will the conference begin?",
+        "I asked when the conference would begin.",
+        "Where are you going for vacation?",
+        "What time is the meeting scheduled?",
+        "Why did she decide to quit her job?"
+      ],
+      "choiceLayout": "single-column",
+      "answer": 4,
+      "explanation": "④는 의문형용사(What이 time을 수식), 나머지는 모두 의문부사입니다."
+    },
+    {
+      "id": "grammar-bridge-ch10-50",
+      "number": 50,
+      "type": "correct-usage",
+      "instruction": "다음 중 의미와 문법이 모두 올바른 것은?",
+      "choices": [
+        "How many money do you need?",
+        "How much money do you need?",
+        "How long money do you need?",
+        "How often money do you need?",
+        "How far money do you need?"
+      ],
+      "answer": 2,
+      "explanation": "money는 불가산명사이므로 'How much'와 함께 사용해야 합니다."
+    }
+  ]
+}

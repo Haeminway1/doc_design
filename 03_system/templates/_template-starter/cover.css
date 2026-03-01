@@ -1,0 +1,170 @@
+/* =================================================================== */
+/* Template Starter Kit — Cover Page Styles                           */
+/* 새 템플릿 제작용 스타터 킷                                           */
+/* Vera's Document Studio                                             */
+/* =================================================================== */
+
+/*
+ * 표지 스타일을 정의합니다.
+ * 4가지 스타일 중 하나를 선택하여 사용하세요:
+ *
+ * 1. border-frame: 보더 프레임 스타일 (ocean-blue, logic-blue)
+ * 2. overlay: 오버레이 스타일 (royal-purple) - 솔리드 배경색으로 대체
+ * 3. minimal: 미니멀 보더 박스 (earth-tone, mint-sky)
+ * 4. full-bleed: 풀 블리드 대형 타이틀 (sky-academic)
+ */
+
+/* --- Border-Frame Style (예시 1) --- */
+.cover-page {
+    background-color: #FDFBF6 !important;
+    background-image: url('../../05_assets/backgrounds/background1.png') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 25mm !important;
+    position: relative !important;
+}
+
+.cover-frame {
+    border: 3px solid var(--color-accent-primary) !important;
+    padding: 20mm !important;
+    background-color: rgba(255, 255, 255, 0.95) !important;
+    width: 100% !important;
+    max-width: 160mm !important;
+    text-align: center !important;
+}
+
+/* Cover Title */
+.cover-main-title {
+    font-family: var(--font-accent) !important;
+    font-size: var(--cover-title-size) !important;
+    color: var(--color-accent-primary) !important;
+    font-weight: 700 !important;
+    margin-bottom: 8mm !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.5pt !important;
+}
+
+/* Cover Subtitle */
+.cover-subtitle {
+    font-family: var(--font-sans) !important;
+    font-size: var(--cover-subtitle-size) !important;
+    color: var(--color-accent-dark) !important;
+    font-weight: 500 !important;
+    margin-bottom: 12mm !important;
+    line-height: 1.4 !important;
+}
+
+/* Cover Brand */
+.cover-brand {
+    font-family: var(--font-eng) !important;
+    font-size: var(--cover-brand-size) !important;
+    color: var(--color-accent-secondary) !important;
+    font-weight: 600 !important;
+    letter-spacing: 2pt !important;
+    margin-top: 15mm !important;
+    text-transform: uppercase !important;
+}
+
+/* Cover Accent Line */
+.cover-accent-line {
+    width: 60mm !important;
+    height: 2px !important;
+    background-color: var(--color-accent-secondary) !important;
+    margin: 6mm auto !important;
+}
+
+/* --- Overlay Style (예시 2) ---
+ * 배경 이미지 위에 솔리드 컬러 오버레이를 적용합니다.
+ * gradient나 backdrop-filter는 사용하지 않습니다 (PDF 안전 규칙).
+ */
+/*
+.cover-page {
+    background-color: #6C3483 !important;
+    background-image: url('../../05_assets/backgrounds/background5.png') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    position: relative !important;
+}
+
+.cover-overlay {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    background-color: #8E44AD !important;
+    opacity: 0.85 !important;
+    z-index: 1 !important;
+}
+
+.cover-content {
+    position: relative !important;
+    z-index: 2 !important;
+    text-align: center !important;
+    padding: 25mm !important;
+}
+
+.cover-main-title {
+    color: #FFFFFF !important;
+    font-weight: 800 !important;
+}
+*/
+
+/* --- Minimal Style (예시 3) ---
+ * 단순한 보더 박스 스타일입니다.
+ */
+/*
+.cover-page {
+    background-color: #F5F5F0 !important;
+    background-image: url('../../05_assets/backgrounds/background1.png') !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 25mm !important;
+}
+
+.cover-frame {
+    border: 2px solid var(--color-accent-primary) !important;
+    padding: 18mm !important;
+    background-color: #FFFFFF !important;
+    max-width: 150mm !important;
+    text-align: center !important;
+}
+*/
+
+/* --- Full-Bleed Style (예시 4) ---
+ * 배경 이미지를 전체에 채우고 대형 타이틀을 사용합니다.
+ */
+/*
+.cover-page {
+    background-color: #0284C7 !important;
+    background-image: url('../../05_assets/backgrounds/background4.png') !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+}
+
+.cover-content {
+    text-align: center !important;
+    padding: 30mm !important;
+    width: 100% !important;
+}
+
+.cover-main-title {
+    font-size: 42pt !important;
+    color: #FFFFFF !important;
+    font-weight: 800 !important;
+}
+*/

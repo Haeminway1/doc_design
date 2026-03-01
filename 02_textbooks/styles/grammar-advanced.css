@@ -1,0 +1,200 @@
+/* --- style block 1 --- */
+
+        /* --- 기본 페이지 및 폰트 설정 --- */
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            line-height: 1.7;
+            color: #34495E; /* 기본 텍스트 색상 */
+            background: #f0f2f5;
+            counter-reset: page; /* 🔥 자동 페이지 번호 카운터 초기화 */
+        }
+        .eng-text { font-family: 'Inter', sans-serif; }
+        .bold-text { font-weight: 700; }
+        b { font-weight: 700; }
+
+        /* --- A4 페이지 레이아웃 --- */
+        .page {
+            width: 210mm;
+            height: 297mm;
+            margin: 10mm auto;
+            padding: 15mm 18mm;
+            background: white;
+            box-shadow: none;
+            page-break-after: always;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        .page:last-child {
+            page-break-after: avoid;
+        }
+        .page-content {
+            flex-grow: 1;
+            overflow: hidden;
+        }
+
+        /* --- 페이지 헤더 & 푸터 --- */
+        .page-header, .page-footer {
+            width: 100%;
+            flex-shrink: 0;
+            font-size: 11px;
+            color: #7F8C8D;
+            font-family: 'Inter', sans-serif;
+        }
+        .page-header {
+            border-bottom: 1px solid #BDC3C7;
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            color: #2C3E50;
+        }
+        .page-footer {
+            border-top: 1px solid #BDC3C7;
+            padding-top: 8px;
+            margin-top: 12px;
+            text-align: center;
+        }
+        
+        /* 🔥 자동 페이지 번호 생성 */
+        .page-footer::after {
+            counter-increment: page; /* 각 페이지마다 카운터 1씩 증가 */
+            content: counter(page);   /* 현재 카운터 값을 텍스트로 출력 */
+        }
+        
+        /* 🔥 표지 페이지와 특정 페이지에서 헤더/푸터 숨기기 */
+        .no-header-footer .page-header,
+        .no-header-footer .page-footer,
+        .cover-page-modern .page-footer::after {
+            display: none;
+        }
+        .no-header-footer {
+            padding: 0;
+        }
+
+        /* =================================================================== */
+        /* 템플릿 1-B: 배경 이미지 표지 스타일 (Vera's Flavor 맞춤)             */
+        /* =================================================================== */
+        .cover-page-modern {
+            color: white;
+            overflow: hidden;
+            background-color: #2C3E50; /* 이미지 없을 경우 대비한 인디고 색상 */
+            background-image: url('../../../05_assets/backgrounds/background9.png'); /* 배경 이미지 경로 */
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .cover-page-modern .cover-author,
+        .cover-page-modern .cover-title-container,
+        .cover-page-modern .cover-slogan {
+            position: absolute;
+            z-index: 2; 
+            /* text-shadow removed: causes dark boxes in Puppeteer PDF */
+        }
+
+        .cover-page-modern .cover-author {
+            bottom: 110mm;
+            left: 0mm;
+            transform: rotate(-90deg) translateX(-50%);
+            transform-origin: bottom left;
+            font-size: 14px;
+            letter-spacing: 4px;
+            color: #cce5f5;
+        }
+        .cover-page-modern .cover-title-container {
+            top: 45mm;
+            left: 20mm;
+            text-align: left;
+        }
+        .cover-page-modern .cover-prefix {
+            font-family: 'Inter', sans-serif;
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 5px;
+            color: #e8f4fd;
+        }
+        .cover-page-modern .cover-main-title {
+            font-size: 84px;
+            font-weight: 900;
+            line-height: 1.0;
+            letter-spacing: -4px;
+            margin: 0;
+        }
+        .cover-page-modern .cover-edition {
+            font-family: 'Inter', sans-serif;
+            font-size: 36px;
+            font-weight: 600;
+            margin-top: 15px;
+            color: #E9C46A; /* 골드 옐로우 */
+        }
+
+        .cover-page-modern .cover-slogan {
+            bottom: 20mm;
+            left: 20mm;
+            font-size: 16px;
+            text-align: left;
+            line-height: 1.5;
+            color: #ddeef9;
+        }
+
+        /* --- 콘텐츠 스타일 --- */
+        .toc-header { font-family: 'Inter', sans-serif; font-size: 22px; font-weight: 600; color: #2C3E50; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #3498DB; }
+        .toc-list { list-style: none; padding-left: 0; font-size: 12.5px; line-height: 2.2; }
+        .toc-item { display: flex; align-items: baseline; margin-bottom: 5px; }
+        .toc-item .title { order: 1; white-space: nowrap; padding-right: 5px; }
+        .toc-item .dots { order: 2; flex-grow: 1; border-bottom: 1px dotted #BDC3C7; position: relative; top: -4px; }
+        .toc-item .page-num { order: 3; padding-left: 5px; font-family: 'Inter', sans-serif; }
+        .toc-part-title { font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 700; color: #3498DB; margin-top: 20px; margin-bottom: 5px; border-left: 3px solid #E9C46A; padding-left: 10px; }
+        .toc-sub-item { padding-left: 20px; font-size: 12px; color: #6c757d; line-height: 1.8; }
+	    .chapter-header { color: white; margin: 0 0 20px 0; padding: 12px 15px; font-size: 18px; font-weight: 600; display: flex; align-items: center; background: #3498DB; border-radius: 8px; }
+        .chapter-number { background: #d4e9f7; padding: 7px 11px; border-radius: 6px; font-weight: 700; min-width: 60px; text-align: center; margin-right: 12px; }
+        .section-title { font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 600; color: #2C3E50; margin: 20px 0 12px 0; padding: 8px 12px; background: #ECF0F1; border-left: 3px solid #3498DB; border-radius: 0 6px 6px 0; }
+        .first-in-page { margin-top: 0; }
+        .content-paragraph { margin-bottom: 10px; font-size: 12.5px; line-height: 1.75; }
+        .example-list { list-style: none; padding-left: 15px; margin-bottom: 15px; }
+        .example-list li { background: #f8f9fa; border: 1px solid #e9ecef; padding: 6px 10px; margin-bottom: 4px; border-radius: 4px; font-size: 12px; }
+        .practice-section-header { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #fff; background: #2C3E50; padding: 10px 15px; margin: 20px 0 15px 0; border-radius: 8px; }
+        .problem-block { margin-bottom: 15px; padding: 12px; border: 1px solid #e0e0e0; border-left: 3px solid #E9C46A; border-radius: 0 5px 5px 0; }
+        .problem-number { font-family: 'Inter', sans-serif; font-weight: 600; color: #3498DB; margin-right: 5px; font-size: 12.5px; }
+        .problem-text { font-size: 12px; margin-bottom: 8px; line-height: 1.6; }
+        .problem-choices { list-style: none; padding-left: 0; font-size: 11.5px; }
+        .problem-choices li { margin-bottom: 4px; padding: 5px 8px; }
+        
+        /* --- 추가 커스텀 스타일 --- */
+        .part-title-page { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; height: 100%; }
+        .part-title-page .part-number { font-family: 'Inter', sans-serif; font-size: 24px; font-weight: 600; color: #3498DB; margin-bottom: 10px; }
+        .part-title-page .part-main-title { font-size: 36px; font-weight: 700; color: #2C3E50; line-height: 1.3; }
+        .key-concept-box { background: #eff6ff; border-left: 4px solid #3498DB; padding: 15px 20px; margin: 20px 0; font-size: 12.5px; }
+        .key-concept-box .key-concept-title { font-weight: 700; color: #2C3E50; margin-bottom: 8px; font-size: 14px; }
+        .example-block { background: #f8f9fa; border: 1px solid #e9ecef; padding: 12px 15px; margin: 10px 0 15px 0; border-radius: 4px; font-size: 12px; line-height: 1.6; }
+        .example-block .example-label { font-weight: 600; color: #059669; margin-right: 8px; }
+        .highlight { background-color: #fff3cd; padding: 0 4px; border-radius: 3px; font-weight: 600; }
+        
+        /* --- 정답 및 해설 스타일 --- */
+        .answer-key-header { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #fff; background: #059669; padding: 10px 15px; margin: 0 0 15px 0; border-radius: 8px; }
+        .answer-list { list-style: none; padding: 0; column-count: 2; column-gap: 20px; }
+        .answer-item { break-inside: avoid; padding: 8px 0; border-bottom: 1px dotted #e0e0e0; font-size: 11.5px; line-height: 1.6; }
+        .answer-item:last-child { border-bottom: none; }
+        .answer-number { font-family: 'Inter', sans-serif; font-weight: 700; color: #3498DB; margin-right: 8px; }
+        .answer-explanation .fix-label { font-weight: 700; color: #C0392B; }
+        .answer-explanation .answer-label { font-weight: 700; color: #28a745; }
+
+        /* --- 프린트 최적화 --- */
+        @media print { 
+            body { background: #fff; } 
+            .page { margin: 0; box-shadow: none; } 
+            p, li, div, blockquote { orphans: 3; widows: 3; }
+            .section-title, .chapter-header, .practice-section-header { break-after: avoid-page; }
+            .problem-block, .key-concept-box, .example-block, .answer-item { break-inside: avoid-page; }
+        }
+    
+

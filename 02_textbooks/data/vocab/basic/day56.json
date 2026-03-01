@@ -1,0 +1,505 @@
+{
+  "bookId": "vocab-basic",
+  "day": 56,
+  "theme": "여행과 교통 (Travel and Transportation)",
+  "words": [
+    {
+      "word": "journey",
+      "pronunciation": "[dʒə́ːrni]",
+      "partOfSpeech": "n.",
+      "meaning": "(장거리) 여행, 여정",
+      "example": {
+        "en": "He embarked on a long journey across the continent.",
+        "ko": "그는 대륙을 횡단하는 긴 여정을 시작했다."
+      }
+    },
+    {
+      "word": "trip",
+      "pronunciation": "[trip]",
+      "partOfSpeech": "n.",
+      "meaning": "(짧은) 여행",
+      "example": {
+        "en": "We're planning a trip to the beach this weekend.",
+        "ko": "우리는 이번 주말에 해변으로 여행을 계획하고 있다."
+      }
+    },
+    {
+      "word": "voyage",
+      "pronunciation": "[vɔ́idʒ]",
+      "partOfSpeech": "n.",
+      "meaning": "항해, 우주여행",
+      "example": {
+        "en": "The Titanic sank on its maiden voyage.",
+        "ko": "타이타닉호는 첫 항해에서 침몰했다."
+      }
+    },
+    {
+      "word": "expedition",
+      "pronunciation": "[èkspədíʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "탐험, 원정",
+      "example": {
+        "en": "They went on an expedition to the Antarctic.",
+        "ko": "그들은 남극으로 탐험을 떠났다."
+      }
+    },
+    {
+      "word": "tour",
+      "pronunciation": "[tuər]",
+      "partOfSpeech": "n.",
+      "meaning": "관광 여행",
+      "example": {
+        "en": "We took a guided tour of the city.",
+        "ko": "우리는 가이드가 있는 도시 관광을 했다."
+      }
+    },
+    {
+      "word": "excursion",
+      "pronunciation": "[ikskə́ːrʒən]",
+      "partOfSpeech": "n.",
+      "meaning": "(짧은) 여행, 소풍",
+      "example": {
+        "en": "The school is planning a day excursion to the museum.",
+        "ko": "학교는 박물관으로의 당일치기 소풍을 계획하고 있다."
+      }
+    },
+    {
+      "word": "commute",
+      "pronunciation": "[kəmjúːt]",
+      "partOfSpeech": "v.\n        \n         n.",
+      "meaning": "통근하다\n        \n         통근",
+      "example": {
+        "en": "My daily commute to work takes about an hour.",
+        "ko": "나의 매일의 출퇴근은 약 한 시간이 걸린다."
+      }
+    },
+    {
+      "word": "transportation",
+      "pronunciation": "[træ̀nspərtéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "교통, 운송",
+      "example": {
+        "en": "Public transportation is a good way to reduce traffic.",
+        "ko": "대중교통은 교통량을 줄이는 좋은 방법이다."
+      }
+    },
+    {
+      "word": "vehicle",
+      "pronunciation": "[víːikl]",
+      "partOfSpeech": "n.",
+      "meaning": "차량, 운송 수단",
+      "example": {
+        "en": "Cars, buses, and trucks are all types of vehicles.",
+        "ko": "자동차, 버스, 트럭은 모두 차량의 종류이다."
+      }
+    },
+    {
+      "word": "passenger",
+      "pronunciation": "[pǽsindʒər]",
+      "partOfSpeech": "n.",
+      "meaning": "승객",
+      "example": {
+        "en": "All passengers must fasten their seatbelts.",
+        "ko": "모든 승객은 안전벨트를 매야 합니다."
+      }
+    },
+    {
+      "word": "fare",
+      "pronunciation": "[fεər]",
+      "partOfSpeech": "n.",
+      "meaning": "(교통) 요금",
+      "example": {
+        "en": "What is the bus fare to the city center?",
+        "ko": "시내 중심까지 버스 요금이 얼마인가요?"
+      }
+    },
+    {
+      "word": "ticket",
+      "pronunciation": "[tíkit]",
+      "partOfSpeech": "n.",
+      "meaning": "표, 티켓",
+      "example": {
+        "en": "I bought a round-trip ticket to Paris.",
+        "ko": "나는 파리행 왕복표를 샀다."
+      }
+    },
+    {
+      "word": "reservation",
+      "pronunciation": "[rèzərvéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "예약",
+      "example": {
+        "en": "I'd like to make a reservation for two people.",
+        "ko": "두 명 예약하고 싶습니다."
+      }
+    },
+    {
+      "word": "booking",
+      "pronunciation": "[búki&eng;]",
+      "partOfSpeech": "n.",
+      "meaning": "예약",
+      "example": {
+        "en": "You can make a booking online or by phone.",
+        "ko": "온라인이나 전화로 예약할 수 있습니다."
+      }
+    },
+    {
+      "word": "itinerary",
+      "pronunciation": "[aitínərèri]",
+      "partOfSpeech": "n.",
+      "meaning": "여행 일정표",
+      "example": {
+        "en": "The travel agent sent us our detailed itinerary.",
+        "ko": "여행사 직원이 우리에게 상세한 여행 일정표를 보냈다."
+      }
+    },
+    {
+      "word": "schedule",
+      "pronunciation": "[skédʒuːl]",
+      "partOfSpeech": "n.",
+      "meaning": "일정, 스케줄",
+      "example": {
+        "en": "The train is running behind schedule.",
+        "ko": "기차가 예정보다 늦게 운행되고 있다."
+      }
+    },
+    {
+      "word": "departure",
+      "pronunciation": "[dipάːrʧər]",
+      "partOfSpeech": "n.",
+      "meaning": "출발",
+      "example": {
+        "en": "Please check the departure time of your flight.",
+        "ko": "항공편의 출발 시간을 확인해 주세요."
+      }
+    },
+    {
+      "word": "arrival",
+      "pronunciation": "[əráivəl]",
+      "partOfSpeech": "n.",
+      "meaning": "도착",
+      "example": {
+        "en": "We waited for his arrival at the airport.",
+        "ko": "우리는 공항에서 그의 도착을 기다렸다."
+      }
+    },
+    {
+      "word": "destination",
+      "pronunciation": "[dèstənéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "목적지",
+      "example": {
+        "en": "Our final destination is Rome.",
+        "ko": "우리의 최종 목적지는 로마이다."
+      }
+    },
+    {
+      "word": "route",
+      "pronunciation": "[ruːt]",
+      "partOfSpeech": "n.",
+      "meaning": "경로, 노선",
+      "example": {
+        "en": "Which is the best route to the city center?",
+        "ko": "시내 중심으로 가는 가장 좋은 경로는 어느 것입니까?"
+      }
+    },
+    {
+      "word": "navigation",
+      "pronunciation": "[næ̀vəgéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "항해, 운항",
+      "example": {
+        "en": "Early sailors used the stars for navigation.",
+        "ko": "초기 선원들은 항해를 위해 별을 이용했다."
+      }
+    },
+    {
+      "word": "luggage",
+      "pronunciation": "[lʌ́gidʒ]",
+      "partOfSpeech": "n.",
+      "meaning": "수하물",
+      "example": {
+        "en": "You can check in your luggage at the counter.",
+        "ko": "카운터에서 수하물을 부칠 수 있습니다."
+      }
+    },
+    {
+      "word": "baggage",
+      "pronunciation": "[bǽgidʒ]",
+      "partOfSpeech": "n.",
+      "meaning": "수하물",
+      "example": {
+        "en": "Please collect your baggage from the carousel.",
+        "ko": "수하물 컨베이어 벨트에서 짐을 찾아가세요."
+      }
+    },
+    {
+      "word": "accommodation",
+      "pronunciation": "[əkὰmədéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "숙소",
+      "example": {
+        "en": "The price includes flights and accommodation.",
+        "ko": "가격에는 항공편과 숙소가 포함되어 있습니다."
+      }
+    },
+    {
+      "word": "lodging",
+      "pronunciation": "[lάdʒi&eng;]",
+      "partOfSpeech": "n.",
+      "meaning": "숙소",
+      "example": {
+        "en": "We found cheap lodging for the night.",
+        "ko": "우리는 하룻밤 묵을 저렴한 숙소를 찾았다."
+      }
+    },
+    {
+      "word": "inn",
+      "pronunciation": "[in]",
+      "partOfSpeech": "n.",
+      "meaning": "여관",
+      "example": {
+        "en": "We stayed at a cozy little inn in the countryside.",
+        "ko": "우리는 시골의 아늑한 작은 여관에 묵었다."
+      }
+    },
+    {
+      "word": "hostel",
+      "pronunciation": "[hάstl]",
+      "partOfSpeech": "n.",
+      "meaning": "호스텔",
+      "example": {
+        "en": "Youth hostels offer affordable accommodation for travelers.",
+        "ko": "유스호스텔은 여행자들에게 저렴한 숙소를 제공한다."
+      }
+    },
+    {
+      "word": "resort",
+      "pronunciation": "[rizɔ́ːrt]",
+      "partOfSpeech": "n.",
+      "meaning": "리조트, 휴양지",
+      "example": {
+        "en": "We spent our vacation at a ski resort in the mountains.",
+        "ko": "우리는 산속 스키 리조트에서 휴가를 보냈다."
+      }
+    },
+    {
+      "word": "motel",
+      "pronunciation": "[moutél]",
+      "partOfSpeech": "n.",
+      "meaning": "모텔",
+      "example": {
+        "en": "We stayed at a cheap motel by the highway.",
+        "ko": "우리는 고속도로 옆의 저렴한 모텔에 묵었다."
+      }
+    },
+    {
+      "word": "automobile",
+      "pronunciation": "[ɔ̀ːtəmoubíːl]",
+      "partOfSpeech": "n.",
+      "meaning": "자동차",
+      "example": {
+        "en": "The automobile industry is a major part of the economy.",
+        "ko": "자동차 산업은 경제의 주요 부분이다."
+      }
+    },
+    {
+      "word": "aircraft",
+      "pronunciation": "[έərkræ̀ft]",
+      "partOfSpeech": "n.",
+      "meaning": "항공기",
+      "example": {
+        "en": "The aircraft is preparing for takeoff.",
+        "ko": "항공기가 이륙을 준비하고 있다."
+      }
+    },
+    {
+      "word": "vessel",
+      "pronunciation": "[vésl]",
+      "partOfSpeech": "n.",
+      "meaning": "(대형) 선박",
+      "example": {
+        "en": "A large cargo vessel was entering the port.",
+        "ko": "대형 화물선이 항구로 들어오고 있었다."
+      }
+    },
+    {
+      "word": "railway",
+      "pronunciation": "[réilwèi]",
+      "partOfSpeech": "n.",
+      "meaning": "철도",
+      "example": {
+        "en": "The new railway line will connect the two cities.",
+        "ko": "새로운 철도 노선은 두 도시를 연결할 것이다."
+      }
+    },
+    {
+      "word": "subway",
+      "pronunciation": "[sʌ́bwèi]",
+      "partOfSpeech": "n.",
+      "meaning": "지하철",
+      "example": {
+        "en": "I take the subway to work every day.",
+        "ko": "나는 매일 지하철로 출근한다."
+      }
+    },
+    {
+      "word": "bus",
+      "pronunciation": "[bʌs]",
+      "partOfSpeech": "n.",
+      "meaning": "버스",
+      "example": {
+        "en": "Let's take the bus instead of the taxi.",
+        "ko": "택시 대신 버스를 타자."
+      }
+    },
+    {
+      "word": "taxi",
+      "pronunciation": "[tǽksi]",
+      "partOfSpeech": "n.",
+      "meaning": "택시",
+      "example": {
+        "en": "I'll call a taxi to take us to the airport.",
+        "ko": "공항까지 갈 택시를 부를게."
+      }
+    },
+    {
+      "word": "ferry",
+      "pronunciation": "[féri]",
+      "partOfSpeech": "n.",
+      "meaning": "페리, 연락선",
+      "example": {
+        "en": "We took a ferry to the island.",
+        "ko": "우리는 페리를 타고 섬으로 갔다."
+      }
+    },
+    {
+      "word": "cruise",
+      "pronunciation": "[kruːz]",
+      "partOfSpeech": "n.",
+      "meaning": "크루즈, 유람선 여행",
+      "example": {
+        "en": "They went on a Caribbean cruise for their honeymoon.",
+        "ko": "그들은 신혼여행으로 카리브해 크루즈를 갔다."
+      }
+    },
+    {
+      "word": "hitchhike",
+      "pronunciation": "[híʧhàik]",
+      "partOfSpeech": "v.",
+      "meaning": "히치하이크하다",
+      "example": {
+        "en": "They decided to hitchhike across the country.",
+        "ko": "그들은 히치하이크로 전국을 횡단하기로 결정했다."
+      }
+    },
+    {
+      "word": "backpacking",
+      "pronunciation": "[bǽkpæ̀ki&eng;]",
+      "partOfSpeech": "n.",
+      "meaning": "배낭여행",
+      "example": {
+        "en": "Backpacking through Europe is a popular adventure for young people.",
+        "ko": "유럽 배낭여행은 젊은이들에게 인기 있는 모험이다."
+      }
+    },
+    {
+      "word": "sightseeing",
+      "pronunciation": "[sáitsìːi&eng;]",
+      "partOfSpeech": "n.",
+      "meaning": "관광",
+      "example": {
+        "en": "We spent the day sightseeing in Paris.",
+        "ko": "우리는 파리에서 관광하며 하루를 보냈다."
+      }
+    },
+    {
+      "word": "souvenir",
+      "pronunciation": "[sùːvəníər]",
+      "partOfSpeech": "n.",
+      "meaning": "기념품",
+      "example": {
+        "en": "I bought a small souvenir to remember my trip.",
+        "ko": "나는 여행을 기억하기 위해 작은 기념품을 샀다."
+      }
+    },
+    {
+      "word": "passport",
+      "pronunciation": "[pǽspɔːrt]",
+      "partOfSpeech": "n.",
+      "meaning": "여권",
+      "example": {
+        "en": "You need a valid passport to travel internationally.",
+        "ko": "해외여행을 하려면 유효한 여권이 필요하다."
+      }
+    },
+    {
+      "word": "visa",
+      "pronunciation": "[víːzə]",
+      "partOfSpeech": "n.",
+      "meaning": "비자, 사증",
+      "example": {
+        "en": "Some countries require a visa for entry.",
+        "ko": "일부 국가에서는 입국을 위해 비자가 필요하다."
+      }
+    },
+    {
+      "word": "customs",
+      "pronunciation": "[kʌ́stəmz]",
+      "partOfSpeech": "n.",
+      "meaning": "세관",
+      "example": {
+        "en": "We had to go through customs at the airport.",
+        "ko": "우리는 공항에서 세관을 통과해야 했다."
+      }
+    },
+    {
+      "word": "immigration",
+      "pronunciation": "[ìməgréiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "출입국 관리",
+      "example": {
+        "en": "After landing, we proceeded to immigration control.",
+        "ko": "착륙 후, 우리는 출입국 관리소로 향했다."
+      }
+    },
+    {
+      "word": "boarding pass",
+      "partOfSpeech": "n.",
+      "meaning": "탑승권",
+      "example": {
+        "en": "You need to show your boarding pass at the gate.",
+        "ko": "게이트에서 탑승권을 보여주셔야 합니다."
+      }
+    },
+    {
+      "word": "layover",
+      "pronunciation": "[léiòuvər]",
+      "partOfSpeech": "n.",
+      "meaning": "경유",
+      "example": {
+        "en": "We had a three-hour layover in Dubai.",
+        "ko": "우리는 두바이에서 3시간 경유했다."
+      }
+    },
+    {
+      "word": "jet lag",
+      "partOfSpeech": "n.",
+      "meaning": "시차증",
+      "example": {
+        "en": "I'm still suffering from jet lag after my flight from New York.",
+        "ko": "나는 뉴욕에서 온 비행 후 아직도 시차증으로 고생하고 있다."
+      }
+    },
+    {
+      "word": "tourism",
+      "pronunciation": "[túərizəm]",
+      "partOfSpeech": "n.",
+      "meaning": "관광",
+      "example": {
+        "en": "Tourism is a major industry in this country.",
+        "ko": "관광은 이 나라의 주요 산업이다."
+      }
+    }
+  ]
+}

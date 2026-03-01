@@ -1,0 +1,256 @@
+{
+  "bookId": "grammar-advanced-ch02",
+  "chapter": "ch02",
+  "title": "5형식의 고급 변형과 특수 구문",
+  "problems": [
+    {
+      "id": "grammar-advanced-26",
+      "number": 26,
+      "type": "error-identification",
+      "stem": "The new regulations, intended to curb market speculation, have made much more difficult for smaller companies to secure the necessary funding for expansion.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "made → made it (가목적어 it 누락)",
+      "explanation": "made → made it (가목적어 it 누락)"
+    },
+    {
+      "id": "grammar-advanced-27",
+      "number": 27,
+      "type": "error-identification",
+      "stem": "Having been stranded on the deserted island for weeks, the survivors felt the ground to shake violently as the volcano, long thought dormant, began to erupt.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "to shake → shake / shaking (지각동사 felt + O + V원형/Ving)",
+      "explanation": "to shake → shake / shaking (지각동사 felt + O + V원형/Ving)"
+    },
+    {
+      "id": "grammar-advanced-28",
+      "number": 28,
+      "type": "fill-in-blank",
+      "stem": "There seems to have been a number of critical documents relating to the merger ________ from the server just hours before the investigation began.",
+      "choices": [
+        "remove",
+        "removing",
+        "removed",
+        "to remove"
+      ],
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "answer": 3,
+      "explanation": "(C) (documents가 제거되는 수동 관계)"
+    },
+    {
+      "id": "grammar-advanced-29",
+      "number": 29,
+      "type": "error-identification",
+      "stem": "The CEO had his legal team to review the contract meticulously before signing it, leaving no room for potential loopholes or ambiguities.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "to review → review (사역동사 have + O + V원형)",
+      "explanation": "to review → review (사역동사 have + O + V원형)"
+    },
+    {
+      "id": "grammar-advanced-30",
+      "number": 30,
+      "type": "error-identification",
+      "stem": "The complexity of the algorithm makes that almost impossible for anyone without a background in advanced mathematics to fully comprehend its inner workings.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "that → it (가목적어는 it)",
+      "explanation": "that → it (가목적어는 it)"
+    },
+    {
+      "id": "grammar-advanced-31",
+      "number": 31,
+      "type": "error-identification",
+      "stem": "After a thorough review, the oversight committee found the new security protocols not only inadequate but also is a potential threat to user privacy.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "is → a potential threat (병렬 구조)",
+      "explanation": "is → a potential threat (병렬 구조)"
+    },
+    {
+      "id": "grammar-advanced-32",
+      "number": 32,
+      "type": "error-identification",
+      "stem": "The protestors were not let to enter the city hall, so they gathered on the front steps, chanting slogans and demanding to speak with the mayor.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "let to enter → allowed to enter (let의 수동태)",
+      "explanation": "let to enter → allowed to enter (let의 수동태)"
+    },
+    {
+      "id": "grammar-advanced-33",
+      "number": 33,
+      "type": "error-identification",
+      "stem": "There are, according to the latest geological survey, a vast reservoir of untapped oil lies beneath the arctic shelf, a discovery that could have profound geopolitical implications.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "are → is, lies → lying",
+      "explanation": "are → is, lies → lying"
+    },
+    {
+      "id": "grammar-advanced-34",
+      "number": 34,
+      "type": "error-identification",
+      "stem": "To ensure the data's integrity, the researchers got every participant signed a consent form and to complete a preliminary questionnaire.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "signed → to sign (get + O + to-V)",
+      "explanation": "signed → to sign (get + O + to-V)"
+    },
+    {
+      "id": "grammar-advanced-35",
+      "number": 35,
+      "type": "error-identification",
+      "stem": "The sudden resignation of the CFO left the entire company in a state of confusion and wondering about its future financial stability.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "wondering → wonder (병렬 구조)",
+      "explanation": "wondering → wonder (병렬 구조)"
+    },
+    {
+      "id": "grammar-advanced-36",
+      "number": 36,
+      "type": "error-identification",
+      "stem": "The manager made it clear for all employees that any breach of the new confidentiality agreement would result in immediate termination.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "for → to (make it clear to sb)",
+      "explanation": "for → to (make it clear to sb)"
+    },
+    {
+      "id": "grammar-advanced-37",
+      "number": 37,
+      "type": "fill-in-blank",
+      "stem": "We watched the ancient castle, which had stood for centuries, ________ to rubble by the earthquake in a matter of minutes.",
+      "choices": [
+        "reduce",
+        "reducing",
+        "to be reduced",
+        "reduced"
+      ],
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "answer": 4,
+      "explanation": "(D) (watch + O + p.p. 수동 관계)"
+    },
+    {
+      "id": "grammar-advanced-38",
+      "number": 38,
+      "type": "error-identification",
+      "stem": "The government's new policy is intended to get more people use public transportation, thereby reducing traffic congestion and carbon emissions.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "use → to use (get + O + to-V)",
+      "explanation": "use → to use (get + O + to-V)"
+    },
+    {
+      "id": "grammar-advanced-39",
+      "number": 39,
+      "type": "error-identification",
+      "stem": "The investigation revealed that the company had for years made its employees to work in unsafe conditions without adequate protective gear.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "to work → work (make + O + V원형)",
+      "explanation": "to work → work (make + O + V원형)"
+    },
+    {
+      "id": "grammar-advanced-40",
+      "number": 40,
+      "type": "error-identification",
+      "stem": "There now exists compelling evidence suggests that the Vikings may have reached North America almost 500 years before Columbus.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "suggests → suggesting (현재분사 수식)",
+      "explanation": "suggests → suggesting (현재분사 수식)"
+    },
+    {
+      "id": "grammar-advanced-41",
+      "number": 41,
+      "type": "error-identification",
+      "stem": "The facilitator found it surprisingly difficult to get the two opposing parties agree on even the most basic terms for the negotiation.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "agree → to agree (get + O + to-V)",
+      "explanation": "agree → to agree (get + O + to-V)"
+    },
+    {
+      "id": "grammar-advanced-42",
+      "number": 42,
+      "type": "error-identification",
+      "stem": "The students were made submit their assignments electronically by midnight, a rule that was strictly enforced by the professor.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "submit → to submit (be made to-V)",
+      "explanation": "submit → to submit (be made to-V)"
+    },
+    {
+      "id": "grammar-advanced-43",
+      "number": 43,
+      "type": "error-identification",
+      "stem": "I distinctly remember to hear someone call my name, but when I turned around, there was no one in sight.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "to hear → hearing (remember + V-ing)",
+      "explanation": "to hear → hearing (remember + V-ing)"
+    },
+    {
+      "id": "grammar-advanced-44",
+      "number": 44,
+      "type": "fill-in-blank",
+      "stem": "The new software is so complex that many users find ________ to navigate its features without consulting the manual.",
+      "choices": [
+        "that impossible",
+        "it impossible",
+        "impossible it",
+        "impossible"
+      ],
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "answer": 2,
+      "explanation": "(B) (find it OC to-V 구문)"
+    },
+    {
+      "id": "grammar-advanced-45",
+      "number": 45,
+      "type": "error-identification",
+      "stem": "There is a growing number of evidence that indicates a strong correlation between chronic stress and the onset of autoimmune diseases.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "No Error (주어 evidence에 동사 is 일치)",
+      "explanation": "No Error (주어 evidence에 동사 is 일치)"
+    },
+    {
+      "id": "grammar-advanced-46",
+      "number": 46,
+      "type": "error-identification",
+      "stem": "The director had the actors rehearsing the scene repeatedly until he was satisfied with their performance, pushing them to their creative limits.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "rehearsing → rehearse (have + O + V원형)",
+      "explanation": "rehearsing → rehearse (have + O + V원형)"
+    },
+    {
+      "id": "grammar-advanced-47",
+      "number": 47,
+      "type": "error-identification",
+      "stem": "The lockdown forced millions of people work from home, a shift that has permanently altered our perception of the traditional office environment.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "work → to work (force + O + to-V)",
+      "explanation": "work → to work (force + O + to-V)"
+    },
+    {
+      "id": "grammar-advanced-48",
+      "number": 48,
+      "type": "error-identification",
+      "stem": "The president called the new trade agreement a historic achievement, one that he believed would usher in an era of unprecedented prosperity.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "No Error (call O OC 구조)",
+      "explanation": "No Error (call O OC 구조)"
+    },
+    {
+      "id": "grammar-advanced-49",
+      "number": 49,
+      "type": "fill-in-blank",
+      "stem": "We found the hotel's promise of a \"luxurious experience\" ________, as the service was slow and the rooms were poorly maintained.",
+      "choices": [
+        "to be misleading",
+        "was misleading",
+        "misleadingly",
+        "to mislead"
+      ],
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "answer": 1,
+      "explanation": "(A) (find O OC)"
+    },
+    {
+      "id": "grammar-advanced-50",
+      "number": 50,
+      "type": "error-identification",
+      "stem": "The defendant was seen enter the building at approximately 10 PM, just minutes before the crime was committed, according to three separate witnesses.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "enter → to enter (be seen to-V)",
+      "explanation": "enter → to enter (be seen to-V)"
+    }
+  ]
+}

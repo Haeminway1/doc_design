@@ -1,0 +1,96 @@
+/* =================================================================== */
+/* Mint Sky Template — Design Tokens                                  */
+/* 구문독해 Bridge 템플릿                                              */
+/* Vera's Document Studio                                             */
+/* =================================================================== */
+
+/* 이 파일은 base/page-layout.css의 :root 변수를 오버라이드합니다 */
+
+:root {
+    /* --- Accent Colors --- */
+    --color-accent-primary: #63B3ED !important;      /* 민트스카이 (메인) */
+    --color-accent-light: #F7FAFC !important;        /* 연한 배경 */
+    --color-accent-dark: #2D3748 !important;         /* 진한 그레이 */
+    --color-accent-secondary: #81E6D9 !important;    /* 민트 (보조) */
+
+    /* --- Semantic Colors --- */
+    --color-concept-bg: #EDF2F7 !important;
+    --color-concept-border: #63B3ED !important;
+    --color-example-bg: #E6FFFA !important;
+    --color-example-border: #81E6D9 !important;
+    --color-warning-bg: #FFFAF0 !important;
+    --color-warning-border: #F6AD55 !important;
+
+    /* --- Typography --- */
+    --font-accent: 'Noto Serif KR', serif !important;
+
+    /* --- Shape & Borders --- */
+    --radius-sm: 4px !important;
+    --radius-md: 6px !important;
+    --radius-lg: 6px !important;
+
+    /* Header Style */
+    --header-border-style: solid !important;
+    --header-border-color: var(--color-accent-primary) !important;
+
+    /* Table Style */
+    --table-header-bg: var(--color-accent-light) !important;
+    --table-header-border: 2px solid var(--color-accent-primary) !important;
+    --table-border-style: solid !important;
+
+    /* 구문 분석 하이라이트 */
+    --highlight-subject: #63B3ED !important;
+    --highlight-verb: #81E6D9 !important;
+    --highlight-object: #F6AD55 !important;
+    --highlight-modifier: #B794F4 !important;
+}
+
+/* --- Component Overrides --- */
+
+/* Rounded Boxes */
+.tip-box,
+.concept-box,
+.example-box,
+.warning-box {
+    border-radius: var(--radius-md) !important;
+}
+
+/* Header - Accent 색상 밑줄 */
+.page-header {
+    border-bottom: 2px solid var(--color-accent-primary) !important;
+}
+
+/* 구문 분석 하이라이트 스타일 */
+.highlight-subject {
+    color: var(--color-accent-primary) !important;
+    font-weight: 600 !important;
+}
+
+.highlight-verb {
+    color: var(--color-accent-secondary) !important;
+    font-weight: 600 !important;
+}
+
+.highlight-object {
+    color: #F6AD55 !important;
+    font-weight: 600 !important;
+}
+
+.highlight-modifier {
+    color: #B794F4 !important;
+    font-weight: 500 !important;
+}
+
+/* 구문 박스 */
+.syntax-box {
+    border-left: 4px solid var(--color-accent-primary) !important;
+    background-color: var(--color-accent-light) !important;
+    padding: var(--space-md) !important;
+    margin: var(--space-md) 0 !important;
+    border-radius: var(--radius-md) !important;
+}
+
+/* Cover Background */
+.cover-background-image {
+    background-image: url('../../05_assets/backgrounds/bridge.png');
+}

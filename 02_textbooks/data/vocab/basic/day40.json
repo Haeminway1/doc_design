@@ -1,0 +1,507 @@
+{
+  "bookId": "vocab-basic",
+  "day": 40,
+  "theme": "질감과 재질 (Texture and Material)",
+  "words": [
+    {
+      "word": "substance",
+      "pronunciation": "[sʌ́bstəns]",
+      "partOfSpeech": "n.",
+      "meaning": "물질, 본질",
+      "example": {
+        "en": "Water is a vital substance for all living things.",
+        "ko": "물은 모든 생명체에게 필수적인 물질이다."
+      }
+    },
+    {
+      "word": "material",
+      "pronunciation": "[mətíəriəl]",
+      "partOfSpeech": "n.",
+      "meaning": "재료, 물질",
+      "example": {
+        "en": "Wood is a natural material used for building.",
+        "ko": "목재는 건축에 사용되는 천연 재료이다."
+      }
+    },
+    {
+      "word": "component",
+      "pronunciation": "[kəmpóunənt]",
+      "partOfSpeech": "n.",
+      "meaning": "구성 요소, 부품",
+      "example": {
+        "en": "The machine is made of several different components.",
+        "ko": "그 기계는 여러 다른 부품으로 만들어져 있다."
+      }
+    },
+    {
+      "word": "element",
+      "pronunciation": "[éləmənt]",
+      "partOfSpeech": "n.",
+      "meaning": "요소, 성분; 원소",
+      "example": {
+        "en": "Honesty is a key element of a good friendship.",
+        "ko": "정직은 좋은 우정의 핵심 요소이다."
+      }
+    },
+    {
+      "word": "alloy",
+      "pronunciation": "[ǽlɔi]",
+      "partOfSpeech": "n.",
+      "meaning": "합금",
+      "example": {
+        "en": "Bronze is an alloy of copper and tin.",
+        "ko": "청동은 구리와 주석의 합금이다."
+      }
+    },
+    {
+      "word": "fabric",
+      "pronunciation": "[fǽbrik]",
+      "partOfSpeech": "n.",
+      "meaning": "직물, 천",
+      "example": {
+        "en": "This dress is made of a soft, comfortable fabric.",
+        "ko": "이 드레스는 부드럽고 편안한 천으로 만들어졌다."
+      }
+    },
+    {
+      "word": "textile",
+      "pronunciation": "[tékstail]",
+      "partOfSpeech": "n.",
+      "meaning": "직물, 옷감",
+      "example": {
+        "en": "The country is a major exporter of textiles.",
+        "ko": "그 나라는 주요 직물 수출국이다."
+      }
+    },
+    {
+      "word": "fiber",
+      "pronunciation": "[fáibər]",
+      "partOfSpeech": "n.",
+      "meaning": "섬유",
+      "example": {
+        "en": "Cotton fiber is used to make clothes.",
+        "ko": "면섬유는 옷을 만드는 데 사용된다."
+      }
+    },
+    {
+      "word": "thread",
+      "pronunciation": "[θred]",
+      "partOfSpeech": "n.",
+      "meaning": "실",
+      "example": {
+        "en": "I need a needle and thread to sew this button.",
+        "ko": "이 단추를 꿰매려면 바늘과 실이 필요하다."
+      }
+    },
+    {
+      "word": "yarn",
+      "pronunciation": "[jɑːrn]",
+      "partOfSpeech": "n.",
+      "meaning": "(뜨개질용) 실, 털실",
+      "example": {
+        "en": "She is knitting a sweater with blue yarn.",
+        "ko": "그녀는 파란색 털실로 스웨터를 뜨고 있다."
+      }
+    },
+    {
+      "word": "wool",
+      "pronunciation": "[wul]",
+      "partOfSpeech": "n.",
+      "meaning": "양모, 울",
+      "example": {
+        "en": "Wool sweaters are warm in the winter.",
+        "ko": "양모 스웨터는 겨울에 따뜻하다."
+      }
+    },
+    {
+      "word": "cotton",
+      "pronunciation": "[kάtn]",
+      "partOfSpeech": "n.",
+      "meaning": "면, 솜",
+      "example": {
+        "en": "This shirt is made of 100% cotton.",
+        "ko": "이 셔츠는 100% 면으로 만들어졌다."
+      }
+    },
+    {
+      "word": "silk",
+      "pronunciation": "[silk]",
+      "partOfSpeech": "n.",
+      "meaning": "비단, 실크",
+      "example": {
+        "en": "Silk is a luxurious and smooth fabric.",
+        "ko": "비단은 고급스럽고 부드러운 직물이다."
+      }
+    },
+    {
+      "word": "linen",
+      "pronunciation": "[línin]",
+      "partOfSpeech": "n.",
+      "meaning": "리넨, 아마포",
+      "example": {
+        "en": "Linen shirts are cool and comfortable in the summer.",
+        "ko": "리넨 셔츠는 여름에 시원하고 편안하다."
+      }
+    },
+    {
+      "word": "natural",
+      "pronunciation": "[nǽʧərəl]",
+      "partOfSpeech": "a.",
+      "meaning": "자연의, 천연의",
+      "example": {
+        "en": "Wood and stone are natural building materials.",
+        "ko": "목재와 석재는 천연 건축 자재이다."
+      }
+    },
+    {
+      "word": "metallic",
+      "pronunciation": "[mətǽlik]",
+      "partOfSpeech": "a.",
+      "meaning": "금속성의",
+      "example": {
+        "en": "The car has a shiny metallic finish.",
+        "ko": "그 차는 빛나는 금속성 마감 처리가 되어 있다."
+      }
+    },
+    {
+      "word": "wooden",
+      "pronunciation": "[wúdn]",
+      "partOfSpeech": "a.",
+      "meaning": "나무로 된",
+      "example": {
+        "en": "He sat on an old wooden bench.",
+        "ko": "그는 낡은 나무 벤치에 앉았다."
+      }
+    },
+    {
+      "word": "plastic",
+      "pronunciation": "[plǽstik]",
+      "partOfSpeech": "n.",
+      "meaning": "플라스틱",
+      "example": {
+        "en": "We should reduce our use of single-use plastic.",
+        "ko": "우리는 일회용 플라스틱 사용을 줄여야 한다."
+      }
+    },
+    {
+      "word": "ceramic",
+      "pronunciation": "[sərǽmik]",
+      "partOfSpeech": "n.",
+      "meaning": "도자기",
+      "example": {
+        "en": "The vase is made of ceramic.",
+        "ko": "그 꽃병은 도자기로 만들어졌다."
+      }
+    },
+    {
+      "word": "glass",
+      "pronunciation": "[glæs]",
+      "partOfSpeech": "n.",
+      "meaning": "유리",
+      "example": {
+        "en": "The window is made of thick glass.",
+        "ko": "창문은 두꺼운 유리로 만들어졌다."
+      }
+    },
+    {
+      "word": "crystal",
+      "pronunciation": "[krístl]",
+      "partOfSpeech": "n.",
+      "meaning": "수정, 크리스털",
+      "example": {
+        "en": "The chandelier was made of sparkling crystal.",
+        "ko": "그 샹들리에는 반짝이는 크리스털로 만들어졌다."
+      }
+    },
+    {
+      "word": "rubber",
+      "pronunciation": "[rʌ́bər]",
+      "partOfSpeech": "n.",
+      "meaning": "고무",
+      "example": {
+        "en": "Car tires are made of rubber.",
+        "ko": "자동차 타이어는 고무로 만들어진다."
+      }
+    },
+    {
+      "word": "leather",
+      "pronunciation": "[léðər]",
+      "partOfSpeech": "n.",
+      "meaning": "가죽",
+      "example": {
+        "en": "He was wearing a black leather jacket.",
+        "ko": "그는 검은색 가죽 재킷을 입고 있었다."
+      }
+    },
+    {
+      "word": "paper",
+      "pronunciation": "[péipər]",
+      "partOfSpeech": "n.",
+      "meaning": "종이",
+      "example": {
+        "en": "Please write your name on a piece of paper.",
+        "ko": "종이에 당신의 이름을 써주세요."
+      }
+    },
+    {
+      "word": "cardboard",
+      "pronunciation": "[kάːrdbɔ̀ːrd]",
+      "partOfSpeech": "n.",
+      "meaning": "판지, 마분지",
+      "example": {
+        "en": "The box is made of sturdy cardboard.",
+        "ko": "그 상자는 튼튼한 판지로 만들어졌다."
+      }
+    },
+    {
+      "word": "concrete",
+      "pronunciation": "[kάnkriːt]",
+      "partOfSpeech": "n.",
+      "meaning": "콘크리트",
+      "example": {
+        "en": "The sidewalk is made of concrete.",
+        "ko": "인도는 콘크리트로 만들어졌다."
+      }
+    },
+    {
+      "word": "stone",
+      "pronunciation": "[stoun]",
+      "partOfSpeech": "n.",
+      "meaning": "돌, 석재",
+      "example": {
+        "en": "The old castle was built of stone.",
+        "ko": "그 오래된 성은 돌로 지어졌다."
+      }
+    },
+    {
+      "word": "marble",
+      "pronunciation": "[mάːrbl]",
+      "partOfSpeech": "n.",
+      "meaning": "대리석",
+      "example": {
+        "en": "The statue was carved from a single block of marble.",
+        "ko": "그 조각상은 단일 대리석 블록으로 조각되었다."
+      }
+    },
+    {
+      "word": "granite",
+      "pronunciation": "[grǽnit]",
+      "partOfSpeech": "n.",
+      "meaning": "화강암",
+      "example": {
+        "en": "The kitchen countertop is made of polished granite.",
+        "ko": "주방 조리대는 광택이 나는 화강암으로 만들어졌다."
+      }
+    },
+    {
+      "word": "clay",
+      "pronunciation": "[klei]",
+      "partOfSpeech": "n.",
+      "meaning": "점토, 찰흙",
+      "example": {
+        "en": "The potter shaped the clay on the wheel.",
+        "ko": "도공은 물레 위에서 찰흙의 모양을 만들었다."
+      }
+    },
+    {
+      "word": "sand",
+      "pronunciation": "[sænd]",
+      "partOfSpeech": "n.",
+      "meaning": "모래",
+      "example": {
+        "en": "The children were playing in the sand.",
+        "ko": "아이들은 모래사장에서 놀고 있었다."
+      }
+    },
+    {
+      "word": "gravel",
+      "pronunciation": "[grǽvəl]",
+      "partOfSpeech": "n.",
+      "meaning": "자갈",
+      "example": {
+        "en": "The driveway was covered with gravel.",
+        "ko": "진입로는 자갈로 덮여 있었다."
+      }
+    },
+    {
+      "word": "powder",
+      "pronunciation": "[páudər]",
+      "partOfSpeech": "n.",
+      "meaning": "가루, 분말",
+      "example": {
+        "en": "She added a spoonful of cocoa powder to the milk.",
+        "ko": "그녀는 우유에 코코아 가루 한 스푼을 넣었다."
+      }
+    },
+    {
+      "word": "granular",
+      "pronunciation": "[grǽnjulər]",
+      "partOfSpeech": "a.",
+      "meaning": "알갱이로 된",
+      "example": {
+        "en": "Sugar has a granular texture.",
+        "ko": "설탕은 알갱이 질감을 가지고 있다."
+      }
+    },
+    {
+      "word": "liquid",
+      "pronunciation": "[líkwid]",
+      "partOfSpeech": "n.",
+      "meaning": "액체",
+      "example": {
+        "en": "Water is a clear, colorless liquid.",
+        "ko": "물은 맑고 무색의 액체이다."
+      }
+    },
+    {
+      "word": "solid",
+      "pronunciation": "[sάlid]",
+      "partOfSpeech": "a.",
+      "meaning": "고체의, 단단한",
+      "example": {
+        "en": "Ice is the solid form of water.",
+        "ko": "얼음은 물의 고체 형태이다."
+      }
+    },
+    {
+      "word": "gaseous",
+      "pronunciation": "[gǽsiəs]",
+      "partOfSpeech": "a.",
+      "meaning": "기체의",
+      "example": {
+        "en": "Steam is water in a gaseous state.",
+        "ko": "수증기는 기체 상태의 물이다."
+      }
+    },
+    {
+      "word": "fluid",
+      "pronunciation": "[flúːid]",
+      "partOfSpeech": "n.",
+      "meaning": "유체 (액체와 기체)",
+      "example": {
+        "en": "Air and water are both fluids.",
+        "ko": "공기와 물은 둘 다 유체이다."
+      }
+    },
+    {
+      "word": "viscous",
+      "pronunciation": "[vískəs]",
+      "partOfSpeech": "a.",
+      "meaning": "끈적끈적한, 점성이 있는",
+      "example": {
+        "en": "The viscous liquid flowed slowly down the tube.",
+        "ko": "그 점성 있는 액체는 관을 따라 천천히 흘러내렸다."
+      }
+    },
+    {
+      "word": "sticky",
+      "pronunciation": "[stíki]",
+      "partOfSpeech": "a.",
+      "meaning": "끈적끈적한",
+      "example": {
+        "en": "My hands are sticky from the honey.",
+        "ko": "꿀 때문에 내 손이 끈적끈적하다."
+      }
+    },
+    {
+      "word": "slippery",
+      "pronunciation": "[slípəri]",
+      "partOfSpeech": "a.",
+      "meaning": "미끄러운",
+      "example": {
+        "en": "Be careful, the floor is slippery when wet.",
+        "ko": "조심하세요, 바닥이 젖었을 때 미끄럽습니다."
+      }
+    },
+    {
+      "word": "absorbent",
+      "pronunciation": "[əbsɔ́ːrbənt]",
+      "partOfSpeech": "a.",
+      "meaning": "흡수성이 있는",
+      "example": {
+        "en": "A sponge is a very absorbent material.",
+        "ko": "스펀지는 매우 흡수성이 좋은 물질이다."
+      }
+    },
+    {
+      "word": "waterproof",
+      "pronunciation": "[wɔ́ːtərprùːf]",
+      "partOfSpeech": "a.",
+      "meaning": "방수의",
+      "example": {
+        "en": "This jacket is waterproof and will keep you dry in the rain.",
+        "ko": "이 재킷은 방수 기능이 있어 비가 와도 젖지 않게 해줄 것이다."
+      }
+    },
+    {
+      "word": "permeable",
+      "pronunciation": "[pə́ːrmiəbl]",
+      "partOfSpeech": "a.",
+      "meaning": "투과성의",
+      "example": {
+        "en": "The soil is permeable to water.",
+        "ko": "그 토양은 물에 대한 투과성이 있다."
+      }
+    },
+    {
+      "word": "abrasive",
+      "pronunciation": "[əˈbreɪsɪv]",
+      "partOfSpeech": "adjective",
+      "meaning": "거칠고 까칠한, 마찰성의",
+      "example": {
+        "en": "The surface was too abrasive to touch without protective gloves.",
+        "ko": "그 표면은 보호 장갑 없이 만지기에는 너무 거칠었다."
+      }
+    },
+    {
+      "word": "friable",
+      "pronunciation": "[ˈfraɪəbəl]",
+      "partOfSpeech": "adjective",
+      "meaning": "부스러지기 쉬운, 잘 부서지는",
+      "example": {
+        "en": "The friable soil made it difficult to maintain the garden's structure.",
+        "ko": "부스러지기 쉬운 토양으로 인해 정원의 구조를 유지하기가 어려웠다."
+      }
+    },
+    {
+      "word": "gossamer",
+      "pronunciation": "[ˈɡɒsəmə]",
+      "partOfSpeech": "adjective",
+      "meaning": "거미줄같이 얇고 섬세한, 극히 가벼운",
+      "example": {
+        "en": "The dress was made of gossamer silk that floated in the breeze.",
+        "ko": "그 드레스는 바람에 날리는 극히 얇은 실크로 만들어졌다."
+      }
+    },
+    {
+      "word": "lustrous",
+      "pronunciation": "[ˈlʌstrəs]",
+      "partOfSpeech": "adjective",
+      "meaning": "광택이 나는, 윤이 나는",
+      "example": {
+        "en": "Her lustrous hair shone beautifully under the sunlight.",
+        "ko": "그녀의 윤이 나는 머리카락이 햇빛 아래서 아름답게 빛났다."
+      }
+    },
+    {
+      "word": "diaphanous",
+      "pronunciation": "[daɪˈæfənəs]",
+      "partOfSpeech": "adjective",
+      "meaning": "투명한, 얇고 비치는",
+      "example": {
+        "en": "The diaphanous curtains allowed soft light to filter through.",
+        "ko": "비치는 얇은 커튼을 통해 부드러운 빛이 스며들었다."
+      }
+    },
+    {
+      "word": "velvety",
+      "pronunciation": "/ˈvɛlvɪti/",
+      "partOfSpeech": "adj.",
+      "meaning": "표면이 벨벳처럼 매끄럽고 아주 부드러운",
+      "example": {
+        "en": "The sauce had a velvety texture that coated the pasta evenly.",
+        "ko": "그 소스는 비단처럼 부드러운 질감으로 파스타를 고르게 감싸 주었다."
+      }
+    }
+  ]
+}

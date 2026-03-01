@@ -1,0 +1,109 @@
+{
+  "date": "260226",
+  "student": "최여진",
+  "totalImages": 11,
+  "feedbackImages": 7,
+  "images": [
+    {
+      "file": "최여진_260226_01.png",
+      "category": "EXCLUDE",
+      "detailCategory": "irrelevant",
+      "confidence": 1,
+      "description": "검은 화면에 'This video is private'라는 메시지가 표시된 스크린샷입니다. 학습 인증 이미지와는 관련이 없습니다.",
+      "level": null,
+      "subject": null
+    },
+    {
+      "file": "최여진_260226_02.png",
+      "category": "EXCLUDE",
+      "detailCategory": "planner",
+      "confidence": 0.95,
+      "description": "학습 시간 및 과목별 통계가 보이는 플래너 앱 스크린샷",
+      "level": null,
+      "subject": null
+    },
+    {
+      "file": "최여진_260226_03.jpg",
+      "category": "EXCLUDE",
+      "detailCategory": "vocab-test",
+      "confidence": 0.95,
+      "description": "능률보카 어원편 단어 시험 결과 (정답 개수, PASS/FAIL 표시).",
+      "level": null,
+      "subject": null
+    },
+    {
+      "file": "최여진_260226_04.jpg",
+      "category": "EXCLUDE",
+      "detailCategory": "vocab-test",
+      "confidence": 0.95,
+      "description": "능률보카 어원편 단어 시험 결과. 65/80점.",
+      "level": null,
+      "subject": null
+    },
+    {
+      "file": "최여진_260226_05.jpg",
+      "category": "FEEDBACK",
+      "detailCategory": "external-textbook",
+      "confidence": 0.95,
+      "description": "외부 교재의 독해 지문 문제 풀이 흔적. 빈칸 추론 문제 유형.",
+      "level": "advanced",
+      "subject": "독해"
+    },
+    {
+      "file": "최여진_260226_06.jpg",
+      "category": "FEEDBACK",
+      "detailCategory": "external-textbook",
+      "confidence": 0.95,
+      "description": "외부 교재의 빈칸 추론 문제 풀이 흔적입니다.",
+      "level": "advanced",
+      "subject": "독해"
+    },
+    {
+      "file": "최여진_260226_07.jpg",
+      "category": "FEEDBACK",
+      "detailCategory": "external-textbook",
+      "confidence": 0.95,
+      "description": "외부 교재의 빈칸 추론 문제 페이지입니다.",
+      "level": "advanced",
+      "subject": "독해"
+    },
+    {
+      "file": "최여진_260226_08.jpg",
+      "category": "FEEDBACK",
+      "detailCategory": "external-textbook",
+      "confidence": 0.95,
+      "description": "외부 교재의 빈칸 추론 문제 페이지.",
+      "level": "advanced",
+      "subject": "독해"
+    },
+    {
+      "file": "최여진_260226_09.jpg",
+      "category": "FEEDBACK",
+      "detailCategory": "external-textbook",
+      "confidence": 0.95,
+      "description": "외부 교재의 빈칸 추론 문제 페이지.",
+      "level": "advanced",
+      "subject": "독해"
+    },
+    {
+      "file": "최여진_260226_10.jpg",
+      "category": "FEEDBACK",
+      "detailCategory": "external-textbook",
+      "confidence": 0.95,
+      "description": "외부 교재의 독해 지문 및 문제 풀이 흔적.",
+      "level": "advanced",
+      "subject": "독해"
+    },
+    {
+      "file": "최여진_260226_11.jpg",
+      "category": "FEEDBACK",
+      "detailCategory": "external-textbook",
+      "confidence": 0.95,
+      "description": "외부 교재의 빈칸 추론 문제 풀이 흔적.",
+      "level": "advanced",
+      "subject": "독해"
+    }
+  ],
+  "feedbackReady": true,
+  "processedAt": "2026-02-27T03:57:52.900Z"
+}

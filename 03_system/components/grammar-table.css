@@ -1,0 +1,104 @@
+/* =================================================================== */
+/* grammar-table.css — 문법 도표 컴포넌트                               */
+/* Vera's Document Studio                                               */
+/* =================================================================== */
+
+/**
+ * 문법 도표
+ *
+ * 용도: 시제표, 동사 변화표, 형식 정리표 등 일반 문법 정리
+ *
+ * 마크업 예시:
+ * <table class="grammar-table">
+ *   <caption>시제 정리</caption>
+ *   <thead>
+ *     <tr>
+ *       <th>시제</th>
+ *       <th>형태</th>
+ *       <th>예문</th>
+ *     </tr>
+ *   </thead>
+ *   <tbody>
+ *     <tr>
+ *       <td>현재완료</td>
+ *       <td>have + p.p.</td>
+ *       <td class="eng-text">I have studied English.</td>
+ *     </tr>
+ *   </tbody>
+ * </table>
+ */
+
+.grammar-table {
+    width: 100% !important;
+    border-collapse: collapse !important;
+    margin: var(--space-lg) 0 !important;
+    font-size: var(--text-base) !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+}
+
+.grammar-table caption {
+    font-size: var(--text-md) !important;
+    font-weight: 600 !important;
+    color: var(--color-accent-dark) !important;
+    margin-bottom: var(--space-md) !important;
+    text-align: left !important;
+    padding-left: var(--space-sm) !important;
+}
+
+.grammar-table thead th {
+    background-color: var(--color-bg-subtle) !important;
+    color: var(--color-text-primary) !important;
+    font-weight: 600 !important;
+    font-size: var(--text-base) !important;
+    padding: var(--space-md) var(--space-sm) !important;
+    text-align: left !important;
+    border: 1px solid var(--color-border-strong) !important;
+}
+
+.grammar-table tbody th {
+    background-color: var(--color-bg-muted) !important;
+    color: var(--color-text-primary) !important;
+    font-weight: 600 !important;
+    padding: var(--space-md) var(--space-sm) !important;
+    text-align: left !important;
+    border: 1px solid var(--color-border-default) !important;
+}
+
+.grammar-table tbody td {
+    padding: var(--space-md) var(--space-sm) !important;
+    border: 1px solid var(--color-border-default) !important;
+    vertical-align: top !important;
+    line-height: var(--leading-normal) !important;
+    color: var(--color-text-primary) !important;
+}
+
+.grammar-table .eng-text {
+    font-family: var(--font-eng) !important;
+    color: var(--color-text-secondary) !important;
+}
+
+.grammar-table tbody td b,
+.grammar-table tbody td strong {
+    color: var(--color-accent-dark) !important;
+    font-weight: 700 !important;
+}
+
+/* 예문 셀 스타일 */
+.grammar-table .example-cell {
+    font-style: italic !important;
+    color: var(--color-text-secondary) !important;
+}
+
+/* 좌측 헤더 열 (시제 이름 등) */
+.grammar-table tbody tr td:first-child {
+    font-weight: 600 !important;
+    background-color: var(--color-bg-subtle) !important;
+}
+
+/* 컴팩트 변형 */
+.grammar-table--compact tbody td,
+.grammar-table--compact tbody th {
+    padding: var(--space-sm) var(--space-xs) !important;
+    font-size: var(--text-sm) !important;
+}

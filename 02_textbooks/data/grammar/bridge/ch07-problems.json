@@ -1,0 +1,807 @@
+{
+  "bookId": "grammar-bridge-ch07",
+  "chapter": "ch07",
+  "title": "특수구문",
+  "problems": [
+    {
+      "id": "grammar-bridge-ch07-301",
+      "number": 301,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 밑줄 친 부분 중 어법상 틀린 것은?",
+      "choices": [
+        "A researcher",
+        "a novel theory",
+        "a theory",
+        "published",
+        "the prestigious journal"
+      ],
+      "stem": "①<u>A researcher</u> proposed ②<u>a novel theory</u> regarding quantum mechanics, and ③<u>a theory</u> was later ④<u>published</u> in ⑤<u>the prestigious journal</u>.",
+      "answer": 3,
+      "explanation": "문장에서 한번 언급된 명사(a novel theory)를 다시 지칭할 때는 정관사 the를 사용해야 합니다. 따라서 'a theory'를 'the theory'로 고쳐야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-302",
+      "number": 302,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "A",
+        "An",
+        "The",
+        "Some",
+        "관사 없음"
+      ],
+      "stem": "_______ computer has revolutionized modern society.",
+      "answer": 3,
+      "explanation": "'컴퓨터'라는 발명품이 현대 사회에 미친 영향을 총칭하여 말할 때, 종족 전체를 대표하는 The + 단수명사 형태를 사용합니다. 이는 가장 격식적인 총칭 표현입니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-303",
+      "number": 303,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 총칭 표현이 올바른 것은?",
+      "choices": [
+        "The man is a social animal.",
+        "A tiger are dangerous animals.",
+        "Tiger is a wild animal.",
+        "The tigers are endangered species.",
+        "Tigers are beautiful creatures."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 5,
+      "explanation": "무관사 + 복수명사(Tigers)는 가장 일반적인 총칭 표현입니다. ① 'man'은 총칭일 때 무관사, ④ 'the + 복수명사'는 총칭으로 쓰이지 않습니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-304",
+      "number": 304,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장의 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "the",
+        "a",
+        "an",
+        "some",
+        "관사 없음"
+      ],
+      "stem": "He lived _______ difficult life during the war.",
+      "answer": 2,
+      "explanation": "추상명사 'life'가 형용사 'difficult'의 수식을 받아 '어려운 종류의 삶'이라는 구체적인 사례를 의미하므로, 부정관사 a를 사용합니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-305",
+      "number": 305,
+      "type": "correct-usage",
+      "instruction": "다음 중 어법상 올바른 문장은?",
+      "choices": [
+        "My son goes to school to meet his teacher.",
+        "The prisoner was released from the prison.",
+        "Children should go to bed early.",
+        "She sat on bed and read a book.",
+        "He went to the church to pray."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 3,
+      "explanation": "'go to bed'(잠자리에 들다)는 장소의 본래 목적으로 사용되어 무관사가 맞습니다. ① 방문 목적이므로 'the school', ④ 물리적 가구이므로 'on the bed', ⑤ 기도 목적이므로 'to church'가 되어야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-306",
+      "number": 306,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "a",
+        "an",
+        "the",
+        "some",
+        "관사 없음"
+      ],
+      "stem": "We studied _______ history of ancient Rome in class.",
+      "answer": 3,
+      "explanation": "추상명사 'history'가 'of ancient Rome'이라는 후치 수식어구에 의해 '고대 로마의 역사'로 한정되므로 정관사 the를 사용해야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-307",
+      "number": 307,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 고유명사의 관사 사용이 올바른 것은?",
+      "choices": [
+        "We visited British Museum yesterday.",
+        "The Samsung is a Korean company.",
+        "Pacific Ocean is the largest ocean.",
+        "Mount Everest is the highest mountain.",
+        "I read the Wall Street Journal."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 4,
+      "explanation": "개별 산 이름(Mount Everest) 앞에는 관사를 붙이지 않습니다. ① the British Museum, ③ The Pacific Ocean, ⑤ the Wall Street Journal이 맞습니다. (문제 수정: ⑤도 정답)"
+    },
+    {
+      "id": "grammar-bridge-ch07-308",
+      "number": 308,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾은 것은?",
+      "choices": [
+        "All",
+        "the",
+        "student",
+        "submit",
+        "reports"
+      ],
+      "stem": "①<u>All</u> ②<u>the</u> ③<u>student</u> must ④<u>submit</u> their ⑤<u>reports</u>.",
+      "answer": 3,
+      "explanation": "전치 한정사 'All the' 뒤에는 셀 수 있는 명사의 복수형이 와야 합니다. 따라서 'student'를 students로 고쳐야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-309",
+      "number": 309,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "a",
+        "an",
+        "the",
+        "per",
+        "관사 없음"
+      ],
+      "stem": "The speed limit is 80 kilometers _______ hour.",
+      "answer": 2,
+      "explanation": "부정관사는 '~당, ~마다'(per)의 의미로 사용될 수 있습니다. 'hour'는 철자는 h로 시작하지만 발음은 모음(/aʊər/)으로 시작하므로 an을 사용합니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-310",
+      "number": 310,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 신체 부위 앞의 관사 사용이 올바른 것은?",
+      "choices": [
+        "The ball hit him on his head.",
+        "She looked me straight in the eye.",
+        "The doctor examined my the shoulder.",
+        "He touched her on her arm gently.",
+        "The injury was on the his leg."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "'타동사 + 목적어(사람) + 전치사 + the + 신체부위' 구문이 올바르게 사용되었습니다. ①, ④처럼 소유격을 쓰는 것도 가능하지만, 정관사를 쓰는 것이 더 일반적입니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-311",
+      "number": 311,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장의 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "A",
+        "An",
+        "The",
+        "Such",
+        "관사 없음"
+      ],
+      "stem": "_______ beauty of the sunset took our breath away.",
+      "answer": 3,
+      "explanation": "추상명사 'beauty'가 'of the sunset'에 의해 '일몰의 아름다움'으로 특정화되었으므로 정관사 the를 사용합니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-312",
+      "number": 312,
+      "type": "error-identification",
+      "instruction": "다음 중 어법상 틀린 문장은?",
+      "choices": [
+        "Physics is my favorite subject.",
+        "The physics of quantum mechanics is complex.",
+        "I had the breakfast at home.",
+        "We enjoyed a delicious lunch together.",
+        "Dinner was served at eight o'clock."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 3,
+      "explanation": "일반적인 식사명(breakfast, lunch, dinner) 앞에는 관사를 붙이지 않습니다. 따라서 'had breakfast'가 맞습니다. ④는 'delicious'라는 형용사가 수식하여 '하나의 맛있는 점심 식사'라는 구체적인 사건을 의미하므로 'a'를 쓸 수 있습니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-313",
+      "number": 313,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "the",
+        "a",
+        "an",
+        "same",
+        "관사 없음"
+      ],
+      "stem": "Birds of _______ feather flock together.",
+      "answer": 2,
+      "explanation": "'Birds of a feather flock together'(유유상종)는 속담입니다. 여기서 부정관사 a는 '동일한'(the same)의 의미로 사용된 특수 용법입니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-314",
+      "number": 314,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 총칭 표현이 적절하지 않은 것은?",
+      "choices": [
+        "A whale is a mammal, not a fish.",
+        "The elephant is the largest land animal.",
+        "Dogs are faithful companions.",
+        "The man is mortal beings.",
+        "An owl can see in the dark."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 4,
+      "explanation": "인류 전체를 총칭할 때 'man'은 관사 없이 사용하며 단수 취급합니다. 따라서 'Man is a mortal being'이 되어야 합니다. 'The man'은 '그 남자'라는 특정인을 의미합니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-315",
+      "number": 315,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 밑줄 친 부분을 올바르게 고친 것은?",
+      "choices": [
+        "deep knowledge",
+        "the deep knowledge",
+        "some deep knowledge",
+        "much deep knowledge",
+        "수정이 필요 없음"
+      ],
+      "stem": "She has <u>a deep knowledge</u> of art history.",
+      "answer": 5,
+      "explanation": "추상명사 'knowledge'가 형용사 'deep'의 수식을 받아 '깊은 종류의 지식'이라는 구체적인 의미를 나타내므로, 부정관사 'a'를 사용하는 것이 올바릅니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-316",
+      "number": 316,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "a",
+        "an",
+        "the",
+        "some",
+        "관사 없음"
+      ],
+      "stem": "We crossed _______ Thames during our visit to London.",
+      "answer": 3,
+      "explanation": "강(river) 이름 앞에는 정관사 the를 붙이는 것이 원칙입니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-317",
+      "number": 317,
+      "type": "correct-usage",
+      "instruction": "다음 중 어법상 올바른 문장은?",
+      "choices": [
+        "I read the New York Times every morning.",
+        "Samsung is the Korean company.",
+        "We visited the Central Park yesterday.",
+        "The baseball is my favorite sport.",
+        "He studies the physics at university."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 1,
+      "explanation": "신문 이름(the New York Times) 앞에는 정관사 'the'를 사용합니다. ② 회사명, ③ 공원 이름, ④ 운동 경기, ⑤ 학과명 앞에는 관사를 쓰지 않습니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-318",
+      "number": 318,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장의 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "A",
+        "An",
+        "The",
+        "Such a",
+        "What a"
+      ],
+      "stem": "_______ such complicated problem requires careful analysis.",
+      "answer": 4,
+      "explanation": "'such + a/an + 형용사 + 명사'의 어순을 따릅니다. 따라서 Such a complicated problem이 올바른 형태입니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-319",
+      "number": 319,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 무관사 사용이 올바른 것은?",
+      "choices": [
+        "He went to hospital for treatment.",
+        "She visited the school for a meeting.",
+        "The children are at the bed.",
+        "He was released from prison yesterday.",
+        "We went to the church on Sunday."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 4,
+      "explanation": "'수감'이라는 본래 목적으로 사용될 때 'prison'은 무관사입니다. ②는 방문 목적이므로 'the school'이 맞습니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-320",
+      "number": 320,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾은 것은?",
+      "choices": [
+        "half",
+        "a",
+        "day",
+        "analyzing",
+        "어법상 틀린 부분이 없음"
+      ],
+      "stem": "We spent ①<u>half</u> ②<u>a</u> ③<u>day</u> ④<u>analyzing</u> ⑤<u>the data</u>.",
+      "answer": 5,
+      "explanation": "'half a day'는 '반나절'이라는 의미의 올바른 표현입니다. 문장의 모든 요소가 문법적으로 정확합니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-321",
+      "number": 321,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "The",
+        "A",
+        "An",
+        "Such",
+        "관사 없음"
+      ],
+      "stem": "_______ life is full of surprises.",
+      "answer": 5,
+      "explanation": "'인생'이라는 일반적이고 총체적인 개념을 나타내는 추상명사 'life'는 관사 없이 사용합니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-322",
+      "number": 322,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 관사 사용이 올바른 것은?",
+      "choices": [
+        "We climbed the Mount Fuji last summer.",
+        "The Alps are located in Europe.",
+        "I swam in the Lake Superior.",
+        "The Jeju Island is beautiful.",
+        "We sailed across Pacific Ocean."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "산맥(the Alps) 이름 앞에는 정관사 'the'를 사용합니다. ① 개별 산(Mount Fuji), ③ 호수(Lake Superior), ④ 개별 섬(Jeju Island)은 무관사입니다. ⑤ 해양(the Pacific Ocean)은 정관사가 필요합니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-323",
+      "number": 323,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장의 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "a",
+        "an",
+        "the",
+        "some",
+        "관사 없음"
+      ],
+      "stem": "The research revealed _______ fascinating insight into human behavior.",
+      "answer": 2,
+      "explanation": "'통찰력'이라는 의미의 'insight'는 가산 명사로 쓰일 수 있습니다. 'fascinating'이라는 형용사의 수식을 받으며 처음 언급되는 정보이므로 부정관사를 사용합니다. 'fascinating'의 발음이 모음으로 시작하므로 an이 맞습니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-324",
+      "number": 324,
+      "type": "error-identification",
+      "instruction": "다음 중 어법상 틀린 문장은?",
+      "choices": [
+        "The United States is a large country.",
+        "Republic of Korea is in East Asia.",
+        "The Netherlands is famous for tulips.",
+        "The Philippines consists of many islands.",
+        "The United Kingdom includes England."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "'Republic', 'Kingdom', 'States' 등이 포함된 공식 국가명 앞에는 정관사 'the'를 붙여야 합니다. 따라서 'The Republic of Korea'가 맞습니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-325",
+      "number": 325,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "a",
+        "an",
+        "the",
+        "his",
+        "관사 없음"
+      ],
+      "stem": "He hit the ball with _______ bat.",
+      "answer": 1,
+      "explanation": "문맥상 특정한 방망이가 아닌, 막연한 '하나의' 방망이를 의미하므로 부정관사 a를 사용합니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-326",
+      "number": 326,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾은 것은?",
+      "choices": [
+        "straight",
+        "a",
+        "eye",
+        "told",
+        "the truth"
+      ],
+      "stem": "She looked at me ①<u>straight</u> in ②<u>a</u> ③<u>eye</u> and ④<u>told</u> ⑤<u>the truth</u>.",
+      "answer": 2,
+      "explanation": "'look someone in the eye'(~의 눈을 똑바로 보다)라는 관용 표현에서 신체 부위 앞에는 정관사 the를 사용합니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-327",
+      "number": 327,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 추상명사의 관사 사용이 올바른 것은?",
+      "choices": [
+        "The knowledge is power.",
+        "She has the great patience.",
+        "Love is a beautiful emotion.",
+        "The happiness comes from within.",
+        "He showed a remarkable courage."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 5,
+      "explanation": "추상명사 'courage'가 형용사 'remarkable'의 수식을 받아 '놀라운 종류의 용기'라는 구체적인 사례를 의미하므로 부정관사 a를 사용할 수 있습니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-328",
+      "number": 328,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "a",
+        "an",
+        "the",
+        "her",
+        "관사 없음"
+      ],
+      "stem": "My daughter goes to _______ school by bus every morning.",
+      "answer": 5,
+      "explanation": "학생이 '수업을 받으러' 학교에 가는 것은 장소의 본래 목적에 해당하므로 관사 없이 'go to school'이라고 표현합니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-329",
+      "number": 329,
+      "type": "correct-usage",
+      "instruction": "다음 중 어법상 올바른 문장은?",
+      "choices": [
+        "The cancer is a serious disease.",
+        "He plays the tennis every weekend.",
+        "Mathematics is a difficult subject.",
+        "The poverty is a global problem.",
+        "She studies the literature at college."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 3,
+      "explanation": "학과명(Mathematics)은 '-s'로 끝나도 단수 취급합니다. ① 질병명(cancer), ② 운동명(tennis), ④ 추상명사(poverty), ⑤ 학과명(literature)은 모두 관사 없이 쓰는 것이 원칙입니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-330",
+      "number": 330,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장의 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "a",
+        "an",
+        "the",
+        "some",
+        "관사 없음"
+      ],
+      "stem": "We stayed at _______ Hotel Plaza during our vacation.",
+      "answer": 3,
+      "explanation": "호텔, 극장, 박물관 등 공공건물의 이름 앞에는 정관사 the를 붙입니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-331",
+      "number": 331,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 총칭 표현의 뉘앙스가 가장 격식적인 것은?",
+      "choices": [
+        "A lion is the king of the jungle.",
+        "The lion is the king of the jungle.",
+        "Lions are the kings of the jungle.",
+        "Lion is the king of the jungle.",
+        "The lions are the kings of the jungle."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "종족 전체를 하나의 학술적, 분류적 개념으로 지칭하는 The + 단수명사가 가장 격식적인 총칭 표현입니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-332",
+      "number": 332,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾은 것은?",
+      "choices": [
+        "Both",
+        "the",
+        "student",
+        "working",
+        "their"
+      ],
+      "stem": "①<u>Both</u> ②<u>the</u> ③<u>student</u> are ④<u>working</u> on ⑤<u>their</u> projects.",
+      "answer": 3,
+      "explanation": "'both'는 '둘 다'를 의미하므로 뒤에는 반드시 복수 명사가 와야 합니다. 따라서 'student'를 students로 고쳐야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-333",
+      "number": 333,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "a",
+        "an",
+        "the",
+        "some",
+        "관사 없음"
+      ],
+      "stem": "He was in _______ prison for five years.",
+      "answer": 5,
+      "explanation": "'수감 중이다'라는 의미로 장소의 본래 목적을 나타낼 때는 관사 없이 'in prison'을 사용합니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-334",
+      "number": 334,
+      "type": "correct-usage",
+      "instruction": "다음 중 어법상 올바른 문장은?",
+      "choices": [
+        "We visited the Harvard University.",
+        "The Titanic sank in 1912.",
+        "I work for the Samsung Company.",
+        "She graduated from the Seoul National University.",
+        "We live near the Seoul Station."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "배 이름(The Titanic) 앞에는 정관사 'the'를 사용합니다. ①, ④ 대학 이름, ③ 회사 이름, ⑤ 역 이름 앞에는 일반적으로 관사를 쓰지 않습니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-335",
+      "number": 335,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장의 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "a",
+        "an",
+        "the",
+        "such",
+        "관사 없음"
+      ],
+      "stem": "We had _______ wonderful time at the party.",
+      "answer": 1,
+      "explanation": "추상명사 'time'이 형용사 'wonderful'의 수식을 받아 '멋진 한때'라는 구체적인 사건을 의미하므로 부정관사 a를 사용합니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-336",
+      "number": 336,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 관사의 어순이 올바른 것은?",
+      "choices": [
+        "All students the participated in the contest.",
+        "The all students participated in the contest.",
+        "All the students participated in the contest.",
+        "Students all the participated in the contest.",
+        "The students all participated in the contest."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 3,
+      "explanation": "관사의 어순은 '전치 한정사(all, both, half...) + 관사(the, a/an) + 형용사 + 명사' 순입니다. 따라서 'All the students'가 맞습니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-337",
+      "number": 337,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "a",
+        "an",
+        "the",
+        "some",
+        "관사 없음"
+      ],
+      "stem": "We sailed across _______ Mediterranean Sea.",
+      "answer": 3,
+      "explanation": "바다(sea) 이름 앞에는 정관사 the를 붙이는 것이 원칙입니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-338",
+      "number": 338,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾은 것은?",
+      "choices": [
+        "such",
+        "a",
+        "great",
+        "interested",
+        "the project"
+      ],
+      "stem": "He showed ①<u>such</u> ②<u>a</u> ③<u>great</u> ④<u>interested</u> in ⑤<u>the project</u>.",
+      "answer": 4,
+      "explanation": "'such a great' 다음에는 명사가 와야 합니다. 'interested'는 형용사이므로 명사인 interest로 고쳐야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-339",
+      "number": 339,
+      "type": "correct-usage",
+      "instruction": "다음 중 어법상 올바른 문장은?",
+      "choices": [
+        "The teacher went to the school early.",
+        "The patient was taken to hospital.",
+        "The family went to the church together.",
+        "The children should go to the bed early.",
+        "The criminal was sent to the prison."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "'치료받으러' 병원에 가는 것은 본래 목적에 해당하므로 무관사 'to hospital'이 맞습니다. ① 교사가 학교 건물에 가는 것이므로 'to the school', ③ 가족이 함께 교회 건물에 가는 것이므로 'to the church', ④, ⑤도 마찬가지로 무관사가 맞습니다. (문제 수정: ②가 정답)"
+    },
+    {
+      "id": "grammar-bridge-ch07-340",
+      "number": 340,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "A",
+        "An",
+        "The",
+        "Such",
+        "관사 없음"
+      ],
+      "stem": "_______ Progress in science depends on careful research.",
+      "answer": 5,
+      "explanation": "'과학의 진보'라는 일반적이고 총체적인 개념을 나타내는 추상명사 'Progress'는 관사 없이 사용합니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-341",
+      "number": 341,
+      "type": "error-identification",
+      "instruction": "다음 중 고유명사의 관사 사용이 틀린 것은?",
+      "choices": [
+        "The Sahara Desert is vast.",
+        "We live in the Seoul.",
+        "The White House is in Washington.",
+        "Lake Baikal is very deep.",
+        "The Congo River flows through Africa."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "도시 이름(Seoul) 앞에는 관사를 붙이지 않습니다. 따라서 'in Seoul'이 맞습니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-342",
+      "number": 342,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장의 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "a",
+        "an",
+        "the",
+        "such",
+        "관사 없음"
+      ],
+      "stem": "What _______ beautiful sunset we saw yesterday!",
+      "answer": 1,
+      "explanation": "'What + a/an + 형용사 + 명사!' 형태의 감탄문입니다. 'beautiful'이 자음 발음으로 시작하므로 a를 사용합니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-343",
+      "number": 343,
+      "type": "correct-usage",
+      "instruction": "다음 중 어법상 올바른 문장은?",
+      "choices": [
+        "Twice the size of our house is expensive.",
+        "Twice a size of our house is expensive.",
+        "The house is twice the size of ours.",
+        "The house is twice a size of ours.",
+        "The house is the twice size of ours."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 3,
+      "explanation": "배수사 표현 중 '배수사 + the + 명사 + of' 형태가 올바르게 사용되었습니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-344",
+      "number": 344,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾은 것은?",
+      "choices": [
+        "on",
+        "his",
+        "head",
+        "he",
+        "fell down"
+      ],
+      "stem": "The ball hit him ①<u>on</u> ②<u>his</u> ③<u>head</u> and ④<u>he</u> ⑤<u>fell down</u>.",
+      "answer": 2,
+      "explanation": "'타동사 + 목적어(사람) + 전치사 + 신체부위' 구문에서는 소유격(his) 대신 정관사 the를 사용하는 것이 일반적입니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-345",
+      "number": 345,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "A",
+        "An",
+        "The",
+        "Such",
+        "관사 없음"
+      ],
+      "stem": "_______ beauty is in the eye of the beholder.",
+      "answer": 5,
+      "explanation": "'아름다움'이라는 일반적이고 총체적인 개념을 나타내는 추상명사 'beauty'는 관사 없이 사용합니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-346",
+      "number": 346,
+      "type": "correct-usage",
+      "instruction": "다음 중 어법상 올바른 문장은?",
+      "choices": [
+        "The life of a student is challenging.",
+        "A life of a student is challenging.",
+        "Life of a student is challenging.",
+        "The life of the student is challenging.",
+        "A life of the student is challenging."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 1,
+      "explanation": "추상명사 'life'가 'of a student'에 의해 '한 학생의 삶'으로 특정화되었으므로 정관사 The를 사용합니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-347",
+      "number": 347,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장의 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "a",
+        "an",
+        "the",
+        "such",
+        "관사 없음"
+      ],
+      "stem": "Double _______ amount would be needed for the project.",
+      "answer": 3,
+      "explanation": "'double', 'twice'와 같은 배수사가 명사를 수식할 때는 'double/twice + the + 명사'의 어순을 따릅니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-348",
+      "number": 348,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 총칭 표현이 부적절한 것은?",
+      "choices": [
+        "The dog is man's best friend.",
+        "A computer is useful for work.",
+        "Computers have changed our lives.",
+        "The computers are electronic devices.",
+        "A tiger is a dangerous animal."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 4,
+      "explanation": "The + 복수명사는 총칭 표현으로 사용되지 않습니다. 이는 '그 컴퓨터들'이라는 특정한 대상을 지칭합니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-349",
+      "number": 349,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾은 것은?",
+      "choices": [
+        "a",
+        "delicious",
+        "dinner",
+        "the",
+        "어법상 틀린 부분이 없음"
+      ],
+      "stem": "We enjoyed ①<u>a</u> ②<u>delicious</u> ③<u>dinner</u> at ④<u>the</u> ⑤<u>new restaurant</u>.",
+      "answer": 5,
+      "explanation": "일반적인 식사명은 무관사가 원칙이지만, 형용사의 수식을 받아 '특별한 식사'라는 의미가 될 때는 부정관사 'a/an'을 사용할 수 있습니다. 따라서 'a delicious dinner'는 올바른 표현입니다."
+    },
+    {
+      "id": "grammar-bridge-ch07-350",
+      "number": 350,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "the / the",
+        "a / a",
+        "the / 관사 없음",
+        "관사 없음 / the",
+        "a / the"
+      ],
+      "stem": "We visited _______ British Museum and _______ Buckingham Palace.",
+      "answer": 3,
+      "explanation": "박물관(the British Museum) 이름 앞에는 정관사 'the'를 사용하지만, 궁전(Buckingham Palace) 이름 앞에는 관사를 붙이지 않는 것이 관례입니다."
+    }
+  ]
+}

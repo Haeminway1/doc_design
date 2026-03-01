@@ -1,0 +1,37 @@
+{
+  "date": "260227",
+  "student": "황진주",
+  "totalImages": 3,
+  "feedbackImages": 1,
+  "images": [
+    {
+      "file": "황진주_260227_01.png",
+      "category": "EXCLUDE",
+      "detailCategory": "irrelevant",
+      "confidence": 1,
+      "description": "토스뱅크 송금 완료 화면입니다. 학습 인증 이미지로 보기 어렵습니다.",
+      "level": null,
+      "subject": null
+    },
+    {
+      "file": "황진주_260227_02.png",
+      "category": "FEEDBACK",
+      "detailCategory": "external-textbook",
+      "confidence": 0.95,
+      "description": "자동사와 타동사 정리 자료. 베라진 교재가 아닌 외부 자료로 보임.",
+      "level": "intermediate",
+      "subject": "문법"
+    },
+    {
+      "file": "황진주_260227_03.png",
+      "category": "EXCLUDE",
+      "detailCategory": "planner",
+      "confidence": 0.95,
+      "description": "구글 스프레드시트 형태의 학습 계획표. 문법 강의 링크 모음이 포함되어 있습니다.",
+      "level": null,
+      "subject": null
+    }
+  ],
+  "feedbackReady": true,
+  "processedAt": "2026-02-27T14:23:37.949Z"
+}

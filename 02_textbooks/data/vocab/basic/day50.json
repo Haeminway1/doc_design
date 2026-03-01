@@ -1,0 +1,507 @@
+{
+  "bookId": "vocab-basic",
+  "day": 50,
+  "theme": "성공과 실패 (Success and Failure)",
+  "words": [
+    {
+      "word": "achievement",
+      "pronunciation": "[ətʃíːvmənt]",
+      "partOfSpeech": "n.",
+      "meaning": "성취, 업적",
+      "example": {
+        "en": "Winning the Nobel Prize was a great achievement.",
+        "ko": "노벨상을 수상한 것은 위대한 업적이었다."
+      }
+    },
+    {
+      "word": "accomplishment",
+      "pronunciation": "[əkάmpliʃmənt]",
+      "partOfSpeech": "n.",
+      "meaning": "성취, 업적",
+      "example": {
+        "en": "Finishing the marathon was a great personal accomplishment.",
+        "ko": "마라톤을 완주한 것은 훌륭한 개인적 성취였다."
+      }
+    },
+    {
+      "word": "attainment",
+      "pronunciation": "[ətéinmənt]",
+      "partOfSpeech": "n.",
+      "meaning": "달성, 성취",
+      "example": {
+        "en": "The attainment of his goals required years of hard work.",
+        "ko": "그의 목표 달성에는 수년간의 노력이 필요했다."
+      }
+    },
+    {
+      "word": "success",
+      "pronunciation": "[səksés]",
+      "partOfSpeech": "n.",
+      "meaning": "성공",
+      "example": {
+        "en": "The play was a huge success.",
+        "ko": "그 연극은 대성공이었다."
+      }
+    },
+    {
+      "word": "victory",
+      "pronunciation": "[víktəri]",
+      "partOfSpeech": "n.",
+      "meaning": "승리",
+      "example": {
+        "en": "The team celebrated their victory in the championship.",
+        "ko": "그 팀은 챔피언십에서의 승리를 축하했다."
+      }
+    },
+    {
+      "word": "triumph",
+      "pronunciation": "[tráiəmf]",
+      "partOfSpeech": "n.",
+      "meaning": "대성공, 승리",
+      "example": {
+        "en": "The new product was a triumph of design and engineering.",
+        "ko": "그 신제품은 디자인과 공학의 대성공이었다."
+      }
+    },
+    {
+      "word": "conquest",
+      "pronunciation": "[kά&eng;kwest]",
+      "partOfSpeech": "n.",
+      "meaning": "정복",
+      "example": {
+        "en": "The Norman Conquest of England occurred in 1066.",
+        "ko": "영국의 노르만 정복은 1066년에 일어났다."
+      }
+    },
+    {
+      "word": "defeat",
+      "pronunciation": "[difíːt]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "패배\n       \n        패배시키다",
+      "example": {
+        "en": "The army suffered a crushing defeat.",
+        "ko": "그 군대는 참패를 당했다."
+      }
+    },
+    {
+      "word": "failure",
+      "pronunciation": "[féiljər]",
+      "partOfSpeech": "n.",
+      "meaning": "실패",
+      "example": {
+        "en": "The project ended in failure.",
+        "ko": "그 프로젝트는 실패로 끝났다."
+      }
+    },
+    {
+      "word": "fiasco",
+      "pronunciation": "[fiǽskou]",
+      "partOfSpeech": "n.",
+      "meaning": "대실패",
+      "example": {
+        "en": "The party turned into a complete fiasco.",
+        "ko": "그 파티는 완전한 대실패로 변했다."
+      }
+    },
+    {
+      "word": "disaster",
+      "pronunciation": "[dizǽstər]",
+      "partOfSpeech": "n.",
+      "meaning": "재앙, 대실패",
+      "example": {
+        "en": "The earthquake was a terrible disaster.",
+        "ko": "그 지진은 끔찍한 재앙이었다."
+      }
+    },
+    {
+      "word": "catastrophe",
+      "pronunciation": "[kətǽstrəfi]",
+      "partOfSpeech": "n.",
+      "meaning": "대참사",
+      "example": {
+        "en": "The oil spill was an environmental catastrophe.",
+        "ko": "석유 유출은 환경적 대참사였다."
+      }
+    },
+    {
+      "word": "setback",
+      "pronunciation": "[sétbæ̀k]",
+      "partOfSpeech": "n.",
+      "meaning": "차질, 좌절",
+      "example": {
+        "en": "The project suffered a major setback due to lack of funding.",
+        "ko": "그 프로젝트는 자금 부족으로 큰 차질을 겪었다."
+      }
+    },
+    {
+      "word": "obstacle",
+      "pronunciation": "[άbstəkl]",
+      "partOfSpeech": "n.",
+      "meaning": "장애물",
+      "example": {
+        "en": "Lack of experience is a major obstacle for young job seekers.",
+        "ko": "경험 부족은 젊은 구직자들에게 큰 장애물이다."
+      }
+    },
+    {
+      "word": "barrier",
+      "pronunciation": "[bǽriər]",
+      "partOfSpeech": "n.",
+      "meaning": "장벽, 장애물",
+      "example": {
+        "en": "Language can be a barrier to communication.",
+        "ko": "언어는 의사소통의 장벽이 될 수 있다."
+      }
+    },
+    {
+      "word": "impediment",
+      "pronunciation": "[impédəmənt]",
+      "partOfSpeech": "n.",
+      "meaning": "장애(물)",
+      "example": {
+        "en": "A speech impediment made it difficult for him to speak clearly.",
+        "ko": "언어 장애 때문에 그는 명확하게 말하기 어려웠다."
+      }
+    },
+    {
+      "word": "hindrance",
+      "pronunciation": "[híndrəns]",
+      "partOfSpeech": "n.",
+      "meaning": "방해(물)",
+      "example": {
+        "en": "The heavy traffic was a hindrance to our journey.",
+        "ko": "심한 교통 체증은 우리 여정에 방해가 되었다."
+      }
+    },
+    {
+      "word": "challenge",
+      "pronunciation": "[tʃǽləndʒ]",
+      "partOfSpeech": "n.",
+      "meaning": "도전, 난제",
+      "example": {
+        "en": "The new job presents an exciting challenge.",
+        "ko": "새로운 직업은 흥미로운 도전을 제시한다."
+      }
+    },
+    {
+      "word": "difficulty",
+      "pronunciation": "[dífikʌ̀lti]",
+      "partOfSpeech": "n.",
+      "meaning": "어려움",
+      "example": {
+        "en": "He had great difficulty in learning to read.",
+        "ko": "그는 읽기를 배우는 데 큰 어려움을 겪었다."
+      }
+    },
+    {
+      "word": "problem",
+      "pronunciation": "[prάbləm]",
+      "partOfSpeech": "n.",
+      "meaning": "문제",
+      "example": {
+        "en": "We need to find a solution to this problem.",
+        "ko": "우리는 이 문제에 대한 해결책을 찾아야 한다."
+      }
+    },
+    {
+      "word": "solution",
+      "pronunciation": "[səlúːʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "해결책",
+      "example": {
+        "en": "There is no easy solution to the problem of poverty.",
+        "ko": "빈곤 문제에 대한 쉬운 해결책은 없다."
+      }
+    },
+    {
+      "word": "resolution",
+      "pronunciation": "[rèzəlúːʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "해결; 결의",
+      "example": {
+        "en": "The two sides are working towards a peaceful resolution of the conflict.",
+        "ko": "양측은 갈등의 평화적 해결을 위해 노력하고 있다."
+      }
+    },
+    {
+      "word": "breakthrough",
+      "pronunciation": "[bréikθrùː]",
+      "partOfSpeech": "n.",
+      "meaning": "돌파구",
+      "example": {
+        "en": "Scientists have made a major breakthrough in cancer research.",
+        "ko": "과학자들은 암 연구에서 중요한 돌파구를 마련했다."
+      }
+    },
+    {
+      "word": "progress",
+      "pronunciation": "[prάgres]",
+      "partOfSpeech": "n.",
+      "meaning": "진전, 발전",
+      "example": {
+        "en": "We have made a lot of progress on the project.",
+        "ko": "우리는 그 프로젝트에서 많은 진전을 이루었다."
+      }
+    },
+    {
+      "word": "advancement",
+      "pronunciation": "[ædvǽnsmənt]",
+      "partOfSpeech": "n.",
+      "meaning": "발전, 진보",
+      "example": {
+        "en": "The advancement of technology has changed our lives.",
+        "ko": "기술의 발전은 우리의 삶을 바꾸었다."
+      }
+    },
+    {
+      "word": "improvement",
+      "pronunciation": "[imprúːvmənt]",
+      "partOfSpeech": "n.",
+      "meaning": "개선, 향상",
+      "example": {
+        "en": "There has been a significant improvement in his health.",
+        "ko": "그의 건강에 상당한 개선이 있었다."
+      }
+    },
+    {
+      "word": "enhancement",
+      "pronunciation": "[inhǽnsmənt]",
+      "partOfSpeech": "n.",
+      "meaning": "향상, 강화",
+      "example": {
+        "en": "The new software includes several enhancements.",
+        "ko": "새 소프트웨어에는 몇 가지 향상된 기능이 포함되어 있다."
+      }
+    },
+    {
+      "word": "development",
+      "pronunciation": "[divéləpmənt]",
+      "partOfSpeech": "n.",
+      "meaning": "발전, 개발",
+      "example": {
+        "en": "The company is focused on product development.",
+        "ko": "그 회사는 제품 개발에 집중하고 있다."
+      }
+    },
+    {
+      "word": "growth",
+      "pronunciation": "[grouθ]",
+      "partOfSpeech": "n.",
+      "meaning": "성장",
+      "example": {
+        "en": "The city has seen rapid population growth.",
+        "ko": "그 도시는 급속한 인구 성장을 보였다."
+      }
+    },
+    {
+      "word": "expansion",
+      "pronunciation": "[ikspǽnʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "확장",
+      "example": {
+        "en": "The company is planning a major expansion into Asia.",
+        "ko": "그 회사는 아시아로의 대규모 확장을 계획하고 있다."
+      }
+    },
+    {
+      "word": "deterioration",
+      "pronunciation": "[ditìəriəréiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "악화",
+      "example": {
+        "en": "We have seen a deterioration in the patient's condition.",
+        "ko": "우리는 환자의 상태가 악화되는 것을 보았다."
+      }
+    },
+    {
+      "word": "degradation",
+      "pronunciation": "[dègrədéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "악화, 저하",
+      "example": {
+        "en": "Environmental degradation is a serious global issue.",
+        "ko": "환경 악화는 심각한 세계적 문제이다."
+      }
+    },
+    {
+      "word": "collapse",
+      "pronunciation": "[kəlǽps]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "붕괴\n       \n        붕괴되다",
+      "example": {
+        "en": "The building collapsed after the earthquake.",
+        "ko": "그 건물은 지진 후에 붕괴되었다."
+      }
+    },
+    {
+      "word": "downfall",
+      "pronunciation": "[dáunfɔ̀ːl]",
+      "partOfSpeech": "n.",
+      "meaning": "몰락",
+      "example": {
+        "en": "The scandal led to the politician's downfall.",
+        "ko": "그 스캔들은 그 정치인의 몰락으로 이어졌다."
+      }
+    },
+    {
+      "word": "destruction",
+      "pronunciation": "[distrʌ́kʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "파괴",
+      "example": {
+        "en": "The war caused widespread destruction.",
+        "ko": "전쟁은 광범위한 파괴를 야기했다."
+      }
+    },
+    {
+      "word": "abundance",
+      "pronunciation": "[əbʌ́ndəns]",
+      "partOfSpeech": "n.",
+      "meaning": "풍부",
+      "example": {
+        "en": "The region has an abundance of natural resources.",
+        "ko": "그 지역은 풍부한 천연자원을 가지고 있다."
+      }
+    },
+    {
+      "word": "poverty",
+      "pronunciation": "[pάvərti]",
+      "partOfSpeech": "n.",
+      "meaning": "가난",
+      "example": {
+        "en": "Many people in the world live in extreme poverty.",
+        "ko": "세계의 많은 사람들이 극심한 가난 속에서 살고 있다."
+      }
+    },
+    {
+      "word": "scarcity",
+      "pronunciation": "[skέərsəti]",
+      "partOfSpeech": "n.",
+      "meaning": "부족, 결핍",
+      "example": {
+        "en": "The scarcity of water is a major problem in the desert.",
+        "ko": "물의 부족은 사막에서 주요한 문제이다."
+      }
+    },
+    {
+      "word": "shortage",
+      "pronunciation": "[ʃɔ́ːrtidʒ]",
+      "partOfSpeech": "n.",
+      "meaning": "부족",
+      "example": {
+        "en": "There is a severe shortage of housing in the city.",
+        "ko": "그 도시에는 심각한 주택 부족이 있다."
+      }
+    },
+    {
+      "word": "lack",
+      "pronunciation": "[læk]",
+      "partOfSpeech": "n.",
+      "meaning": "부족, 결핍",
+      "example": {
+        "en": "His failure was due to a lack of effort.",
+        "ko": "그의 실패는 노력 부족 때문이었다."
+      }
+    },
+    {
+      "word": "deficiency",
+      "pronunciation": "[difíʃənsi]",
+      "partOfSpeech": "n.",
+      "meaning": "결핍",
+      "example": {
+        "en": "A vitamin deficiency can cause health problems.",
+        "ko": "비타민 결핍은 건강 문제를 일으킬 수 있다."
+      }
+    },
+    {
+      "word": "balance",
+      "pronunciation": "[bǽləns]",
+      "partOfSpeech": "n.",
+      "meaning": "균형",
+      "example": {
+        "en": "It's important to find a balance between work and life.",
+        "ko": "일과 삶 사이의 균형을 찾는 것이 중요하다."
+      }
+    },
+    {
+      "word": "equilibrium",
+      "pronunciation": "[ìːkwəlíbriəm]",
+      "partOfSpeech": "n.",
+      "meaning": "평형, 균형",
+      "example": {
+        "en": "The ecosystem is in a state of delicate equilibrium.",
+        "ko": "생태계는 섬세한 평형 상태에 있다."
+      }
+    },
+    {
+      "word": "triumphant",
+      "pronunciation": "[traɪˈʌmfənt]",
+      "partOfSpeech": "adj",
+      "meaning": "승리의, 의기양양한, 성공적인",
+      "example": {
+        "en": "The team emerged triumphant after years of dedicated training.",
+        "ko": "그 팀은 수년간의 헌신적인 훈련 끝에 승리를 거두었다."
+      }
+    },
+    {
+      "word": "debacle",
+      "pronunciation": "[deɪˈbɑːkəl]",
+      "partOfSpeech": "n",
+      "meaning": "대실패, 참패, 붕괴",
+      "example": {
+        "en": "The company's investment turned into a complete debacle.",
+        "ko": "그 회사의 투자는 완전한 실패로 끝났다."
+      }
+    },
+    {
+      "word": "tenacious",
+      "pronunciation": "[təˈneɪʃəs]",
+      "partOfSpeech": "adj",
+      "meaning": "끈기 있는, 완고한, 고집 센",
+      "example": {
+        "en": "Her tenacious pursuit of excellence led to remarkable achievements.",
+        "ko": "그녀의 끈기 있는 탁월함 추구는 주목할 만한 성과로 이어졌다."
+      }
+    },
+    {
+      "word": "pinnacle",
+      "pronunciation": "[ˈpɪnəkl]",
+      "partOfSpeech": "n",
+      "meaning": "정점, 절정, 최고조",
+      "example": {
+        "en": "Winning the Nobel Prize was the pinnacle of her career.",
+        "ko": "노벨상 수상은 그녀 경력의 정점이었다."
+      }
+    },
+    {
+      "word": "indomitable",
+      "pronunciation": "[ɪnˈdɑːmɪtəbl]",
+      "partOfSpeech": "adj",
+      "meaning": "불굴의, 굴복시킬 수 없는",
+      "example": {
+        "en": "Her indomitable spirit helped her overcome all obstacles.",
+        "ko": "그녀의 불굴의 정신은 모든 장애물을 극복하는데 도움이 되었다."
+      }
+    },
+    {
+      "word": "adversity",
+      "pronunciation": "[ədˈvɜːrsəti]",
+      "partOfSpeech": "n",
+      "meaning": "역경, 불운, 곤란",
+      "example": {
+        "en": "She showed remarkable resilience in the face of adversity.",
+        "ko": "그녀는 역경 앞에서 놀라운 회복력을 보여주었다."
+      }
+    },
+    {
+      "word": "resilience",
+      "pronunciation": "/rɪˈzɪliəns/",
+      "partOfSpeech": "n.",
+      "meaning": "좌절이나 어려움에서 빠르게 회복하는 능력",
+      "example": {
+        "en": "Her resilience after the failed launch inspired the team to try again.",
+        "ko": "출시 실패 이후 그녀의 회복력은 팀이 다시 시도하도록 고무했다."
+      }
+    }
+  ]
+}

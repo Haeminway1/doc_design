@@ -1,0 +1,66 @@
+/* =================================================================== */
+/* Royal Purple Template — Design Tokens                              */
+/* 독해 Basic 템플릿                                                   */
+/* Vera's Document Studio                                             */
+/* =================================================================== */
+
+/* 이 파일은 base/page-layout.css의 :root 변수를 오버라이드합니다 */
+
+:root {
+    /* --- Accent Colors --- */
+    --color-accent-primary: #9B59B6 !important;      /* 보라 (메인) */
+    --color-accent-light: #F5EEF8 !important;        /* 연한 보라 배경 */
+    --color-accent-dark: #8E44AD !important;         /* 진한 보라 */
+    --color-accent-secondary: #F1C40F !important;    /* 골드 (보조) */
+
+    /* --- Semantic Colors --- */
+    --color-concept-bg: #F5EEF8 !important;
+    --color-concept-border: #9B59B6 !important;
+    --color-example-bg: #FEF9E7 !important;
+    --color-example-border: #F1C40F !important;
+    --color-warning-bg: #FFF8E1 !important;
+    --color-warning-border: #F1C40F !important;
+
+    /* --- Typography --- */
+    /* Royal Purple uses Inter for all text */
+
+    /* --- Shape & Borders --- */
+    --radius-sm: 6px !important;
+    --radius-md: 8px !important;
+    --radius-lg: 8px !important;
+
+    /* Header Style */
+    --header-border-style: solid !important;
+    --header-border-color: var(--color-accent-primary) !important;
+
+    /* Table Style */
+    --table-header-bg: var(--color-accent-light) !important;
+    --table-header-border: 1px solid var(--color-accent-primary) !important;
+    --table-border-style: solid !important;
+}
+
+/* --- Component Overrides --- */
+
+/* Rounded Boxes */
+.tip-box,
+.concept-box,
+.example-box,
+.warning-box {
+    border-radius: var(--radius-md) !important;
+}
+
+/* Header - Colored Underline */
+.page-header {
+    border-bottom: 2px solid var(--color-accent-primary) !important;
+}
+
+/* Table - 전체 테두리 */
+table {
+    border: 1px solid var(--color-border-default) !important;
+    border-radius: var(--radius-sm) !important;
+}
+
+/* Cover Background */
+.cover-background-image {
+    background-image: url('../../05_assets/backgrounds/background5.png');
+}

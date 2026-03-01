@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>학습 피드백지 — 최여진 260221</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+
+  /* =============================================================
+     피드백지 공통 CSS v1.0 — 파스텔 하늘색 팔레트
+     참조: 06_reference/guideline/feedback_guideline.md
+     ============================================================= */
+
+  /* ===== RESET & BASE ===== */
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html {
+    font-size: 10pt;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 10pt;
+    line-height: 1.7;
+    color: #1a202c;
+    background: #fff !important;
+  }
+
+  @page { size: A4; margin: 16mm 14mm; }
+
+  /* ===== PAGE BREAK ===== */
+  .page-break-after { page-break-after: always !important; }
+  .page-break-before { page-break-before: always !important; }
+  .avoid-break { page-break-inside: avoid !important; }
+  h1, h2, h3, h4 { page-break-after: avoid !important; }
+  table { page-break-inside: avoid !important; }
+
+  /* ===== HEADINGS ===== */
+  h1 {
+    font-size: 20pt; font-weight: 700; color: #4A90C4 !important;
+    margin: 20px 0 10px 0; padding-bottom: 6px;
+    border-bottom: 3px solid #4A90C4; line-height: 1.3;
+  }
+  h2 {
+    font-size: 16pt; font-weight: 700; color: #5BA3D9 !important;
+    margin: 18px 0 10px 0; padding-bottom: 4px;
+    border-bottom: 2px solid #D4E5F3; line-height: 1.3;
+  }
+  h3 {
+    font-size: 13pt; font-weight: 700; color: #2d3748 !important;
+    margin: 14px 0 8px 0; line-height: 1.4;
+  }
+  h4 {
+    font-size: 11pt; font-weight: 700; color: #4a5568 !important;
+    margin: 10px 0 6px 0; line-height: 1.4;
+  }
+  p { margin-bottom: 8px; }
+  strong { font-weight: 700; }
+  hr { border: none; border-top: 1px solid #D4E5F3; margin: 20px 0; }
+
+  /* ===== TABLES ===== */
+  table {
+    width: 100%; border-collapse: collapse;
+    margin: 12px 0 16px 0; font-size: 9pt; line-height: 1.6;
+  }
+  thead th {
+    background-color: #7BB8E8 !important; color: #fff !important;
+    font-weight: 700; padding: 8px 10px; text-align: left;
+    border: 1px solid #6AABDE; font-size: 9pt;
+  }
+  tbody td {
+    padding: 7px 10px; border: 1px solid #D4E5F3; vertical-align: top;
+  }
+  tbody tr:nth-child(odd) { background-color: #fff !important; }
+  tbody tr:nth-child(even) { background-color: #F4F9FD !important; }
+  tbody td:first-child { font-weight: 500; }
+
+  .result-correct { color: #38a169 !important; font-weight: 700; }
+  .result-wrong { color: #e53e3e !important; font-weight: 700; }
+
+  /* ===== REPORT HEADER (첫 페이지) ===== */
+  .report-header { margin-bottom: 16px; }
+  .report-date { font-size: 10pt; color: #718096 !important; font-weight: 400; margin-bottom: 4px; }
+  .report-title {
+    font-size: 22pt; font-weight: 700; color: #4A90C4 !important;
+    margin-bottom: 6px; line-height: 1.2; border: none; padding: 0;
+  }
+  .report-subtitle { font-size: 12pt; font-weight: 400; color: #4a5568 !important; margin-bottom: 2px; }
+  .report-meta { font-size: 9pt; color: #718096 !important; line-height: 1.8; margin-top: 8px; }
+  .report-meta span { display: inline-block; margin-right: 16px; }
+
+  /* ===== SECTION HEADER BAR ===== */
+  .section-header {
+    background-color: #5BA3D9 !important; color: #fff !important;
+    padding: 12px 20px; margin: 20px -14mm 14px -14mm;
+    padding-left: 14mm; padding-right: 14mm;
+    font-size: 16pt; font-weight: 700; line-height: 1.3;
+  }
+  .section-header .section-num {
+    font-size: 12pt; font-weight: 300; display: block;
+    margin-bottom: 2px; color: #C5DFEF !important;
+  }
+
+  /* ===== SEVERITY BADGES ===== */
+  .severity-high {
+    display: inline-block; background-color: #e53e3e !important; color: #fff !important;
+    font-size: 8pt; font-weight: 700; padding: 1px 8px; border-radius: 10px;
+  }
+  .severity-mid {
+    display: inline-block; background-color: #ed8936 !important; color: #fff !important;
+    font-size: 8pt; font-weight: 700; padding: 1px 8px; border-radius: 10px;
+  }
+  .severity-low {
+    display: inline-block; background-color: #38a169 !important; color: #fff !important;
+    font-size: 8pt; font-weight: 700; padding: 1px 8px; border-radius: 10px;
+  }
+
+  /* ===== DIAGNOSIS CARD (학습 요약) ===== */
+  .diagnosis-card {
+    border: 2px solid #B8D4EC; border-radius: 6px;
+    padding: 14px 18px; margin: 14px 0; background-color: #F4F9FD !important;
+  }
+  .diagnosis-card h3 { margin-top: 0; color: #4A90C4 !important; font-size: 12pt; }
+  .priority-order {
+    background-color: #EDF5FC !important; border-left: 4px solid #7BB8E8;
+    padding: 10px 16px; margin: 12px 0; font-size: 10pt;
+  }
+
+  /* ===== QUESTION BOX ===== */
+  .question-box {
+    background-color: #F4F9FD !important; border-left: 4px solid #7BB8E8;
+    padding: 10px 14px; margin: 8px 0; font-size: 10pt; line-height: 1.7;
+  }
+  .question-box p { margin: 0; }
+
+  /* ===== ANSWER BOX ===== */
+  .answer-box {
+    background-color: #f0fff4 !important; border-left: 4px solid #38a169;
+    padding: 8px 14px; margin: 8px 0; font-weight: 500;
+  }
+
+  /* ===== GRAMMAR BLOCK ===== */
+  .grammar-block {
+    background-color: #edf2f7 !important; border: 1px solid #D4E5F3;
+    padding: 12px 16px; margin: 12px 0;
+    font-size: 9pt; line-height: 1.8; white-space: pre-wrap;
+    page-break-inside: avoid !important;
+  }
+
+  /* ===== TIP BOX ===== */
+  .tip-box {
+    background-color: #fffaf0 !important; border-left: 4px solid #ed8936;
+    padding: 10px 16px; margin: 12px 0; page-break-inside: avoid !important;
+  }
+  .tip-box .tip-label {
+    font-weight: 700; color: #c05621 !important; font-size: 9pt;
+    display: block; margin-bottom: 4px;
+  }
+
+  /* ===== WARNING BOX ===== */
+  .warning-box {
+    background-color: #fff5f5 !important; border-left: 4px solid #e53e3e;
+    padding: 10px 16px; margin: 12px 0; page-break-inside: avoid !important;
+  }
+  .warning-box .warning-label {
+    font-weight: 700; color: #e53e3e !important; font-size: 9pt;
+    display: block; margin-bottom: 4px;
+  }
+
+  /* ===== CONCEPT BOX ===== */
+  .concept-box {
+    background-color: #EDF5FC !important; border: 1px solid #7BB8E8;
+    padding: 12px 16px; margin: 12px 0; page-break-inside: avoid !important;
+  }
+  .concept-box .concept-label {
+    font-weight: 700; color: #4A90C4 !important; font-size: 9pt;
+    display: block; margin-bottom: 6px;
+  }
+
+  /* ===== PROBLEM CARD ===== */
+  .problem-card {
+    border: 1px solid #D4E5F3; border-radius: 4px;
+    padding: 14px 18px; margin: 14px 0;
+    page-break-inside: avoid !important; background-color: #fff !important;
+  }
+  .problem-header {
+    display: flex; align-items: center; margin-bottom: 14px; gap: 12px;
+  }
+  .problem-badge {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 36px; height: 36px; border-radius: 50%;
+    background-color: #7BB8E8 !important; color: #fff !important;
+    font-weight: 700; font-size: 12pt; flex-shrink: 0;
+  }
+  .problem-title {
+    font-size: 11pt; font-weight: 700; color: #2d3748 !important;
+  }
+  .problem-source {
+    font-size: 8pt; color: #718096 !important; font-weight: 400;
+    display: block; margin-top: 2px;
+  }
+
+  /* ===== HIGHLIGHT ===== */
+  .hl-key { color: #4A90C4 !important; font-weight: 700; }
+  .hl-wrong { color: #e53e3e !important; font-weight: 700; text-decoration: line-through; }
+  .hl-correct { color: #38a169 !important; font-weight: 700; }
+  .hl-blue { color: #5BA3D9 !important; font-weight: 700; }
+
+  /* ===== FLOWCHART ===== */
+  .flowchart { margin: 16px 0; page-break-inside: avoid !important; }
+  .flow-step {
+    background-color: #EDF5FC !important; border: 1px solid #B8D4EC;
+    border-radius: 4px; padding: 10px 16px; margin-bottom: 4px; font-size: 9.5pt;
+  }
+  .flow-step .step-label { font-weight: 700; color: #4A90C4 !important; margin-right: 8px; }
+  .flow-step .step-sub {
+    padding-left: 24px; font-size: 9pt; color: #4a5568 !important;
+    margin-top: 4px; line-height: 1.7;
+  }
+  .flow-arrow { text-align: center; font-size: 14pt; color: #7BB8E8 !important; line-height: 1.2; margin: 2px 0; }
+
+  /* ===== CHECKLIST ===== */
+  .checklist-group { margin-bottom: 16px; page-break-inside: avoid !important; }
+  .checklist-group-title {
+    font-size: 11pt; font-weight: 700; color: #4A90C4 !important;
+    margin-bottom: 8px; padding: 4px 0; border-bottom: 1px solid #D4E5F3;
+  }
+  .checklist-item {
+    display: flex; align-items: flex-start; gap: 8px;
+    padding: 4px 0; font-size: 9.5pt; line-height: 1.6;
+  }
+  .checkbox {
+    display: inline-block; width: 14px; height: 14px; min-width: 14px;
+    border: 1.5px solid #a0aec0; border-radius: 2px; margin-top: 3px;
+  }
+
+  /* ===== SECTION DIVIDER ===== */
+  .section-divider { border: none; border-top: 2px solid #D4E5F3; margin: 20px 0; }
+
+  /* ===== VARIANT CHOICES ===== */
+  .variant-choices { padding-left: 20px; font-size: 9pt; line-height: 1.8; margin: 4px 0; }
+
+  /* ===== GROUP ROW ===== */
+  .group-row td {
+    background-color: #EDF5FC !important; font-weight: 700;
+    color: #4A90C4 !important; border-bottom: 2px solid #7BB8E8;
+  }
+
+  /* ===== COMPARE TABLE ===== */
+  .compare-table thead th:nth-child(2) { background-color: #6AABDE !important; }
+  .compare-table thead th:nth-child(3) { background-color: #38a169 !important; }
+
+  /* ===== EXPRESSION TABLE ===== */
+  .expression-table td:first-child { white-space: nowrap; font-weight: 700; }
+
+  /* ===== MARKER ===== */
+  .marker-o { color: #38a169 !important; font-weight: 700; }
+  .marker-x { color: #e53e3e !important; font-weight: 700; }
+
+  /* ===== PASSAGE BLOCK (독해 지문) ===== */
+  .passage-block {
+    background-color: #f7fafc !important; border: 1px solid #D4E5F3;
+    border-left: 4px solid #7BB8E8;
+    padding: 14px 18px; margin: 12px 0;
+    font-size: 9.5pt; line-height: 1.9;
+    text-align: justify !important;
+    page-break-inside: avoid !important;
+  }
+
+  /* ===== CHOICES LIST ===== */
+  .choices-list {
+    margin: 10px 0; font-size: 9.5pt; line-height: 1.9;
+  }
+  .choices-list .choice-item {
+    padding: 2px 0;
+  }
+  .choice-correct {
+    color: #38a169 !important; font-weight: 700;
+  }
+  .choice-wrong {
+    color: #e53e3e !important; font-weight: 700; text-decoration: line-through;
+  }
+
+  /* ===== PRINT OPTIMIZATION ===== */
+  @media print {
+    body { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+    .section-header { margin-left: -14mm; margin-right: -14mm; padding-left: 14mm; padding-right: 14mm; }
+  }
+
+</style>
+</head>
+<body>
+
+<div class="report-header">
+  <div class="report-date">2026. 02. 21</div>
+  <h1 class="report-title" style="border:none; margin-bottom:6px;">학습 피드백지</h1>
+  <div class="report-subtitle">독해 — 문단 구조 분석</div>
+  <div class="report-meta">
+    <span><strong>학생</strong> 최여진</span>
+    <span><strong>교재</strong> 문단 구조 분석</span>
+    <span><strong>범위</strong> 257~276번</span>
+  </div>
+</div>
+
+<div class="diagnosis-card">
+  <h3>학습 요약</h3>
+  <p style="font-size:10pt; margin-bottom:8px;">
+    전체 20문제 중 오답 <strong>3문제</strong> (정답률 약 85%)
+  </p>
+  <p style="font-size:9.5pt; margin-bottom:4px;">
+    <strong style="color:#38a169;">잘한 점:</strong> 20문항 중 17문항을 정답 처리하여 전반적인 독해 구조 파악 능력이 우수함. 특히 대부분의 지문에서 핵심 주제와 글의 전개 방향을 정확히 읽어냄.
+  </p>
+  <p style="font-size:9.5pt; margin-bottom:12px;">
+    <strong style="color:#e53e3e;">아쉬운 점:</strong> 특정 문장의 '기능(역할)'을 묻는 유형에서 반복 실수. 문장이 '정의'인지 '대조'인지 '증거 제시'인지 구분하는 데 혼동이 있음. 선지의 표면적 키워드에 이끌려 문장의 실제 역할을 간과하는 패턴.
+  </p>
+  
+  <table>
+    <thead>
+      <tr><th>취약 영역</th><th style="width:60px;">문제 수</th><th style="width:70px;">심각도</th><th>핵심</th></tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td><strong>문장 기능 판별</strong></td>
+        <td>2문제</td>
+        <td><span class="severity-high">높음</span></td>
+        <td>대조 기능 문장을 '도덕적 우월성 주장'이나 '반론 제시'로 오독</td>
+      </tr>
+      <tr>
+        <td><strong>증거 제시 vs 정의 구분</strong></td>
+        <td>1문제</td>
+        <td><span class="severity-mid">보통</span></td>
+        <td>경험적 증거 두 가지를 '정의 진술'로 착각</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="priority-order">
+  <strong>학습 우선순위:</strong> 문장 기능(역할) 판별 연습 → 대조/비교 구조 민감도 향상 → 증거 vs 정의 구분
+</div>
+
+<div class="page-break-before section-header">
+  <span class="section-num">Section 1</span>
+  틀린 문제 리스트
+</div>
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">1</div>
+    <div>
+      <div class="problem-title">문장 기능 파악</div>
+      <span class="problem-source">258번</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>The third sentence (&quot;Unlike the hero of a traditional romance or epic...&quot;) serves primarily to:</p>
+  </div>
+  <div style="margin:8px 0; font-size:9.5pt;">
+    <span class="hl-wrong">학생 답: ③</span> &rarr;
+    <span class="hl-correct">정답: ②</span>
+  </div>
+</div>
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">2</div>
+    <div>
+      <div class="problem-title">문장 기능 파악</div>
+      <span class="problem-source">263번</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>What is the function of the fourth sentence (&quot;The journal's editors, impressed by its apparent erudition...&quot;)?</p>
+  </div>
+  <div style="margin:8px 0; font-size:9.5pt;">
+    <span class="hl-wrong">학생 답: ④</span> &rarr;
+    <span class="hl-correct">정답: ③</span>
+  </div>
+</div>
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">3</div>
+    <div>
+      <div class="problem-title">문장 기능 파악</div>
+      <span class="problem-source">267번</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>What is the primary role of the third and fourth sentences?</p>
+  </div>
+  <div style="margin:8px 0; font-size:9.5pt;">
+    <span class="hl-wrong">학생 답: ①</span> &rarr;
+    <span class="hl-correct">정답: ③</span>
+  </div>
+</div>
+
+<div class="page-break-before section-header">
+  <span class="section-num">Section 2</span>
+  해설 파트
+</div>
+<h2>258번 — 문장 기능 파악</h2>
+<div class="passage-block">The &quot;picaresque&quot; novel, which originated in 16th-century Spain, is a genre characterized by the first-person adventures of a roguish, low-class protagonist (a *pícaro*). The narrative is typically episodic and satirical, following the *pícaro* as he navigates a corrupt society by his wits. Unlike the hero of a traditional romance or epic, the *pícaro* does not mature into a virtuous character or achieve a noble status. His social position remains precarious, and his story often ends without a neat resolution, reflecting the unchanging nature of the society he critiques. The genre's realism and focus on the underclass provided a stark contrast to the idealized worlds of chivalric romance. Thus, the picaresque offers a view of society from the bottom up, using humor and cynicism to expose its hypocrisy and injustices.</div>
+<div class="question-box" style="margin-top:12px;">
+  <p><strong>The third sentence (&quot;Unlike the hero of a traditional romance or epic...&quot;) serves primarily to:</strong></p>
+</div><div class="choices-list">
+  <div class="choice-item">① Provide a specific example of a picaresque novel.</div>
+  <div class="choice-item" class="choice-correct">② Define the picaresque genre by contrasting its protagonist with those of other, more established genres.</div>
+  <div class="choice-item" class="choice-wrong">③ Argue that the picaresque novel is a morally superior genre.</div>
+  <div class="choice-item">④ Explain the historical context in which the picaresque novel emerged.</div>
+  <div class="choice-item">⑤ Summarize the main plot points of a typical picaresque narrative.</div>
+</div>
+
+<div class="concept-box">
+  <h4>1. 한줄 요약</h4>
+  <p>피카레스크 소설의 장르적 특징을 설명하며, 특히 하층 계급 주인공(pícaro)의 성격과 서사 구조가 전통적인 로맨스·서사시와 어떻게 다른지를 <strong>대조</strong>를 통해 규정하는 글이다.</p>
+</div>
+
+<div class="grammar-block" style="text-align:justify; white-space:normal;">
+  <h4>2. 전체 해석 (Full Translation)</h4>
+  <p>"피카레스크" 소설은 16세기 스페인에서 유래한 장르로, 악한적이고 하층 계급의 주인공(pícaro)이 1인칭으로 겪는 모험을 특징으로 한다. 서사는 전형적으로 에피소드식이며 풍자적이고, 피카로가 자신의 재치를 이용해 부패한 사회를 헤쳐나가는 과정을 따라간다. <strong>전통적인 로맨스나 서사시의 영웅과 달리, 피카로는 덕스러운 인물로 성장하거나 고귀한 지위를 얻지 못한다.</strong> 그의 사회적 위치는 불안정한 채로 남아 있으며, 이야기는 종종 깔끔한 해결 없이 끝나는데, 이는 그가 비판하는 사회의 변하지 않는 본질을 반영한다. 이 장르의 사실주의와 하층 계급에 대한 초점은 기사도 로맨스의 이상화된 세계와 극명한 대조를 이루었다. 따라서 피카레스크는 사회를 아래에서 위로 바라보는 시각을 제공하며, 유머와 냉소를 사용해 사회의 위선과 부정의를 폭로한다.</p>
+</div>
+
+<table>
+  <thead>
+    <tr><th>구분</th><th>표현 및 키워드</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>핵심 키워드</strong></td><td>picaresque, roguish, low-class protagonist, episodic, satirical, corrupt society</td></tr>
+    <tr><td><strong>정답 방향 (Positive)</strong></td><td>Unlike the hero of a traditional romance or epic, does not mature, does not achieve noble status — 대조를 통한 장르 정의</td></tr>
+    <tr><td><strong>반대 방향 (Negative)</strong></td><td>morally superior(도덕적 우월), historical context(역사적 배경) — 본문에 없는 개념</td></tr>
+  </tbody>
+</table>
+
+<div class="tip-box">
+  <h4>4. 구조 및 방향성</h4>
+  <p><span class="severity-mid">정의 → 대조 → 의의</span></p>
+  <table>
+    <thead><tr><th>단계</th><th>문장</th><th>기능</th></tr></thead>
+    <tbody>
+      <tr><td>1문장</td><td>피카레스크 소설의 기원과 기본 정의</td><td>장르 소개</td></tr>
+      <tr><td>2문장</td><td>에피소드식·풍자적 서사 특징</td><td>특징 설명</td></tr>
+      <tr><td><strong>3문장</strong></td><td>Unlike... 전통 장르 영웅과의 대조</td><td><strong>대조를 통한 장르 규정 (정답 근거)</strong></td></tr>
+      <tr><td>4문장</td><td>불안정한 사회적 위치, 해결 없는 결말</td><td>3문장 보충</td></tr>
+      <tr><td>5문장</td><td>기사도 로맨스와의 대조</td><td>장르적 의의</td></tr>
+      <tr><td>6문장</td><td>아래에서 위로 바라보는 시각</td><td>결론</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="answer-box">
+  <h4>✅ 정답: ② Define the picaresque genre by contrasting its protagonist with those of other, more established genres.</h4>
+  <p><strong>근거:</strong> "Unlike the hero of a traditional romance or epic, the pícaro does not mature into a virtuous character or achieve a noble status."</p>
+  <p><strong>해석:</strong> 전통적인 로맨스나 서사시의 영웅과 달리, 피카로는 덕스러운 인물로 성장하지도, 고귀한 지위를 얻지도 못한다.</p>
+  <p><strong>포인트:</strong> "Unlike"로 시작하는 3번 문장은 다른 장르의 주인공과의 <strong>대조</strong>를 통해 피카레스크 장르의 독특한 성격을 규정(define)하는 역할을 한다.</p>
+</div>
+
+<div class="warning-box" style="border-left-color: #e53e3e !important;">
+  <h4>❌ 오답: ① Provide a specific example of a picaresque novel.</h4>
+  <p><strong>근거:</strong> 3번 문장은 특정 작품명을 언급하지 않음. 장르 전체의 특성을 설명.</p>
+  <p><strong>포인트:</strong> "specific example"은 구체적 작품(예: <em>Lazarillo de Tormes</em>)을 의미하는데, 본문에는 없다.</p>
+</div>
+
+<div class="warning-box" style="border-left-color: #e53e3e !important;">
+  <h4>❌ 오답: ③ Argue that the picaresque novel is a morally superior genre. [학생 선택]</h4>
+  <p><strong>근거:</strong> 본문은 피카레스크 장르의 특징을 객관적으로 서술할 뿐, "도덕적으로 우월하다"는 주장을 하지 않음.</p>
+  <p><strong>해석:</strong> "morally superior"(도덕적 우월)라는 가치 판단은 지문 어디에도 없다.</p>
+  <p><strong>포인트:</strong> 피카로가 "does not mature into a virtuous character"라고 했으므로 오히려 도덕성과 거리가 먼 주인공이다.</p>
+</div>
+
+<div class="warning-box" style="border-left-color: #e53e3e !important;">
+  <h4>❌ 오답: ④ Explain the historical context in which the picaresque novel emerged.</h4>
+  <p><strong>근거:</strong> 역사적 배경은 1문장("originated in 16th-century Spain")에서 이미 언급됨. 3문장은 역사가 아닌 대조.</p>
+  <p><strong>포인트:</strong> 3문장의 "Unlike"는 시대적 배경이 아니라 장르 간 비교를 나타낸다.</p>
+</div>
+
+<div class="warning-box" style="border-left-color: #e53e3e !important;">
+  <h4>❌ 오답: ⑤ Summarize the main plot points of a typical picaresque narrative.</h4>
+  <p><strong>근거:</strong> 3문장은 줄거리 요약이 아닌 주인공의 성격적 특징을 다른 장르와 대비하여 설명.</p>
+  <p><strong>포인트:</strong> "plot points"(줄거리 포인트)와 "character traits"(인물 특성)는 다른 개념이다.</p>
+</div>
+
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>왜 이 답을 골랐을까:</strong> 3번 문장에서 피카로가 &quot;does not mature into a virtuous character&quot;(덕스러운 인물로 성장하지 못한다)는 표현을 보고, '덕스러운 인물이 아니다 = 도덕적으로 다르다'는 연상에서 '도덕적 우월성(morally superior)'으로 확대 해석한 것으로 보입니다. 또한 &quot;Unlike&quot;를 '다른 장르를 비하하는' 뉘앙스로 읽었을 가능성이 있습니다.</p>
+  <p><strong>오류 패턴:</strong> 확대 해석 + 감정 투영 — 객관적 서술(대조)을 가치 판단(도덕적 우월)으로 오독. 'Unlike'의 기능을 '비하/주장'으로 착각.</p>
+  <p><strong>집중 포인트:</strong> 'Unlike A, B...' 구문은 대부분 대조(contrast)를 통한 정의(definition) 기능입니다. '주장(argue)'이나 '가치 판단'으로 해석하지 않도록 주의하세요. 문장 기능 문제에서는 필자의 감정이 아니라 문장의 구조적 역할에 집중하세요.</p>
+</div>
+<hr class="section-divider">
+<h2>263번 — 문장 기능 파악</h2>
+<div class="passage-block">The &quot;Sokal hoax&quot; was a scholarly publishing sting that ignited a fierce debate about academic standards in the 1990s. Physicist Alan Sokal submitted a deliberately nonsensical article, laden with postmodern jargon, to the cultural studies journal *Social Text*. The article, titled &quot;Transgressing the Boundaries,&quot; argued that physical reality is a social construct. The journal's editors, impressed by its apparent erudition, accepted and published it without sending it for external peer review. Sokal then revealed the hoax, arguing it demonstrated a lack of intellectual rigor and an ideological bias against science in certain humanities circles. The affair became a flashpoint in the &quot;science wars.&quot; It raised critical questions about the nature of truth, the role of peer review, and the intellectual responsibilities of scholars in all disciplines.</div>
+<div class="question-box" style="margin-top:12px;">
+  <p><strong>What is the function of the fourth sentence (&quot;The journal's editors, impressed by its apparent erudition...&quot;)?</strong></p>
+</div><div class="choices-list">
+  <div class="choice-item">① It describes the content of Sokal's fabricated article.</div>
+  <div class="choice-item">② It explains Sokal's motivation for perpetrating the hoax.</div>
+  <div class="choice-item" class="choice-correct">③ It details the crucial action by the journal that made the hoax successful and significant.</div>
+  <div class="choice-item" class="choice-wrong">④ It presents the counter-argument from the editors of *Social Text*.</div>
+  <div class="choice-item">⑤ It summarizes the long-term impact of the Sokal hoax on academia.</div>
+</div>
+
+<div class="concept-box">
+  <h4>1. 한줄 요약</h4>
+  <p>물리학자 앨런 소칼이 포스트모던 전문용어로 가득한 엉터리 논문을 학술지에 게재시킨 '소칼 사건'의 전말과, 이 사건이 학문적 기준에 대한 격렬한 논쟁을 촉발시킨 과정을 설명하는 글이다.</p>
+</div>
+
+<div class="grammar-block" style="text-align:justify; white-space:normal;">
+  <h4>2. 전체 해석 (Full Translation)</h4>
+  <p>"소칼 사기극"은 1990년대에 학문적 기준에 대한 격렬한 논쟁을 촉발시킨 학술 출판 함정 작전이었다. 물리학자 앨런 소칼은 포스트모던 전문용어로 가득한 의도적으로 무의미한 논문을 문화연구 학술지 <em>Social Text</em>에 투고했다. "경계를 넘어서"라는 제목의 이 논문은 물리적 현실이 사회적 구성물이라고 주장했다. <strong>학술지 편집자들은 그 논문의 겉보기 학식에 감명받아, 외부 동료 심사 없이 이를 수락하고 게재했다.</strong> 소칼은 이후 사기극을 폭로하며, 이것이 특정 인문학계에서의 지적 엄밀성 부족과 과학에 대한 이데올로기적 편향을 입증한다고 주장했다. 이 사건은 "과학 전쟁"의 도화선이 되었다. 이 사건은 진리의 본질, 동료 심사의 역할, 그리고 모든 학문 분야 학자들의 지적 책임에 대한 중요한 질문들을 제기했다.</p>
+</div>
+
+<table>
+  <thead>
+    <tr><th>구분</th><th>표현 및 키워드</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>핵심 키워드</strong></td><td>Sokal hoax, deliberately nonsensical, postmodern jargon, peer review, intellectual rigor</td></tr>
+    <tr><td><strong>정답 방향 (Positive)</strong></td><td>accepted and published it, without external peer review — 학술지의 결정적 행위(사기극 성공의 계기)</td></tr>
+    <tr><td><strong>반대 방향 (Negative)</strong></td><td>counter-argument(반론), motivation(동기) — 4번 문장의 기능과 무관</td></tr>
+  </tbody>
+</table>
+
+<div class="tip-box">
+  <h4>4. 구조 및 방향성</h4>
+  <p><span class="severity-mid">사건 소개 → 행위 → 결과 → 영향</span></p>
+  <table>
+    <thead><tr><th>단계</th><th>문장</th><th>기능</th></tr></thead>
+    <tbody>
+      <tr><td>1문장</td><td>소칼 사기극 — 학문적 기준 논쟁 촉발</td><td>사건 도입</td></tr>
+      <tr><td>2문장</td><td>소칼이 엉터리 논문을 투고</td><td>행위 1: 투고</td></tr>
+      <tr><td>3문장</td><td>논문 제목과 주장 내용</td><td>논문 내용 설명</td></tr>
+      <tr><td><strong>4문장</strong></td><td>편집자들이 감명받아 심사 없이 게재</td><td><strong>행위 2: 게재 결정 (정답 근거)</strong></td></tr>
+      <tr><td>5문장</td><td>소칼이 사기극을 폭로</td><td>행위 3: 폭로</td></tr>
+      <tr><td>6-7문장</td><td>과학 전쟁의 도화선, 중요한 질문 제기</td><td>영향/결론</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="answer-box">
+  <h4>✅ 정답: ③ It details the crucial action by the journal that made the hoax successful and significant.</h4>
+  <p><strong>근거:</strong> "The journal's editors, impressed by its apparent erudition, accepted and published it without sending it for external peer review."</p>
+  <p><strong>해석:</strong> 학술지 편집자들은 겉보기 학식에 감명받아, 외부 동료 심사 없이 논문을 수락하고 게재했다.</p>
+  <p><strong>포인트:</strong> 이 문장은 학술지가 심사 없이 게재했다는 <strong>결정적 행위(crucial action)</strong>를 서술한다. 이 행위가 없었다면 사기극은 성공하지 못했을 것이다.</p>
+</div>
+
+<div class="warning-box" style="border-left-color: #e53e3e !important;">
+  <h4>❌ 오답: ① It describes the content of Sokal's fabricated article.</h4>
+  <p><strong>근거:</strong> 논문의 내용(물리적 현실이 사회적 구성물)은 3번 문장에서 설명됨. 4번 문장은 편집자의 행위.</p>
+  <p><strong>포인트:</strong> 3번과 4번 문장의 역할을 구분해야 한다. 내용 설명 ≠ 게재 결정.</p>
+</div>
+
+<div class="warning-box" style="border-left-color: #e53e3e !important;">
+  <h4>❌ 오답: ② It explains Sokal's motivation for perpetrating the hoax.</h4>
+  <p><strong>근거:</strong> 소칼의 동기는 5번 문장("arguing it demonstrated a lack of intellectual rigor")에서 설명됨.</p>
+  <p><strong>포인트:</strong> 4번 문장의 주어는 "The journal's editors"이지 소칼이 아니다. 주어를 확인하면 동기 설명이 아님을 알 수 있다.</p>
+</div>
+
+<div class="warning-box" style="border-left-color: #e53e3e !important;">
+  <h4>❌ 오답: ④ It presents the counter-argument from the editors of *Social Text*. [학생 선택]</h4>
+  <p><strong>근거:</strong> 4번 문장에서 편집자들은 반론(counter-argument)을 제시하지 않았다. 그들은 논문에 감명받아 게재했을 뿐이다.</p>
+  <p><strong>해석:</strong> "impressed by its apparent erudition"은 '반박'이 아니라 '감명'이다.</p>
+  <p><strong>포인트:</strong> counter-argument는 기존 주장에 대한 반박을 의미하는데, 편집자들은 반박이 아니라 수용(accepted)의 행위를 했다.</p>
+</div>
+
+<div class="warning-box" style="border-left-color: #e53e3e !important;">
+  <h4>❌ 오답: ⑤ It summarizes the long-term impact of the Sokal hoax on academia.</h4>
+  <p><strong>근거:</strong> 장기적 영향은 6-7번 문장(과학 전쟁, 진리의 본질 등)에서 다룸. 4번 문장은 사건 진행 중의 행위.</p>
+  <p><strong>포인트:</strong> "long-term impact"과 "crucial action in the event"는 시간적으로 다른 단계이다.</p>
+</div>
+
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>왜 이 답을 골랐을까:</strong> 'editors'라는 단어를 보고 '편집자의 입장/반론'으로 연결한 것으로 보입니다. 'impressed by its apparent erudition'을 편집자들이 적극적으로 의견을 표명한 것(counter-argument)으로 해석했을 가능성이 높습니다. 하지만 이 표현은 분사구문으로, 편집자들의 감정 상태를 부가적으로 설명할 뿐입니다.</p>
+  <p><strong>오류 패턴:</strong> 키워드 연상 오류 — 'editors'라는 주어만 보고 '편집자의 반론'으로 연결. 실제로는 편집자가 반박이 아닌 수용(accepted and published) 행위를 한 것.</p>
+  <p><strong>집중 포인트:</strong> 문장 기능 문제에서 주어가 누구인지 확인한 후, 그 주어가 실제로 무엇을 했는지(동사)에 집중하세요. 'editors → counter-argument'가 아니라 'editors → accepted and published'가 핵심입니다.</p>
+</div>
+<hr class="section-divider">
+<h2>267번 — 문장 기능 파악</h2>
+<div class="passage-block">The &quot;Pollyanna principle,&quot; or positivity bias, is the psychological tendency to focus on and remember positive information more than negative information. This bias manifests in various ways, from the words we use to the memories we recall. For example, studies of language consistently find a universal tendency for positive words to be more frequent and varied than negative words. In memory recall tasks, people tend to remember more pleasant events from their past than unpleasant ones. This is not to say that people are naively optimistic or ignore all threats. Rather, it suggests a subconscious cognitive mechanism that leans toward the positive, which may have evolutionary benefits for resilience and motivation. This principle highlights a fundamental asymmetry in how the human mind processes emotional information.</div>
+<div class="question-box" style="margin-top:12px;">
+  <p><strong>What is the primary role of the third and fourth sentences?</strong></p>
+</div><div class="choices-list">
+  <div class="choice-item" class="choice-wrong">① To state the main definition of the Pollyanna principle.</div>
+  <div class="choice-item">② To introduce a counterargument that challenges the existence of the positivity bias.</div>
+  <div class="choice-item" class="choice-correct">③ To provide two distinct categories of empirical evidence (language and memory) that support the principle.</div>
+  <div class="choice-item">④ To explain the evolutionary origins of the positivity bias.</div>
+  <div class="choice-item">⑤ To offer a critique of the research methods used to study the principle.</div>
+</div>
+
+<div class="concept-box">
+  <h4>1. 한줄 요약</h4>
+  <p>폴리아나 원칙(긍정성 편향)을 정의하고, 언어와 기억이라는 두 가지 영역에서 이 원칙을 뒷받침하는 경험적 증거를 제시한 후, 이것이 진화적으로 유익한 무의식적 인지 메커니즘임을 설명하는 글이다.</p>
+</div>
+
+<div class="grammar-block" style="text-align:justify; white-space:normal;">
+  <h4>2. 전체 해석 (Full Translation)</h4>
+  <p>"폴리아나 원칙" 또는 긍정성 편향은 부정적인 정보보다 긍정적인 정보에 더 집중하고 더 잘 기억하는 심리적 경향이다. 이 편향은 우리가 사용하는 단어부터 우리가 회상하는 기억까지 다양한 방식으로 나타난다. <strong>예를 들어, 언어 연구에서는 긍정적인 단어가 부정적인 단어보다 더 빈번하고 다양하게 나타나는 보편적 경향을 일관되게 발견한다. 기억 회상 과제에서, 사람들은 불쾌한 사건보다 과거의 즐거운 사건을 더 잘 기억하는 경향이 있다.</strong> 이것이 사람들이 순진하게 낙관적이거나 모든 위협을 무시한다는 의미는 아니다. 오히려, 이것은 긍정적인 쪽으로 기울어지는 무의식적 인지 메커니즘을 시사하며, 이는 회복력과 동기 부여를 위한 진화적 이점을 가질 수 있다. 이 원칙은 인간의 마음이 감정적 정보를 처리하는 방식에서의 근본적인 비대칭성을 강조한다.</p>
+</div>
+
+<table>
+  <thead>
+    <tr><th>구분</th><th>표현 및 키워드</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>핵심 키워드</strong></td><td>Pollyanna principle, positivity bias, psychological tendency, subconscious cognitive mechanism</td></tr>
+    <tr><td><strong>정답 방향 (Positive)</strong></td><td>For example(예를 들어), studies of language(언어 연구), memory recall tasks(기억 회상 과제) — 두 가지 경험적 증거</td></tr>
+    <tr><td><strong>반대 방향 (Negative)</strong></td><td>definition(정의), evolutionary origins(진화적 기원) — 3·4번 문장의 역할이 아님</td></tr>
+  </tbody>
+</table>
+
+<div class="tip-box">
+  <h4>4. 구조 및 방향성</h4>
+  <p><span class="severity-low">정의 → 증거 → 반론 방지 → 설명 → 결론</span></p>
+  <table>
+    <thead><tr><th>단계</th><th>문장</th><th>기능</th></tr></thead>
+    <tbody>
+      <tr><td>1문장</td><td>폴리아나 원칙 = 긍정성 편향 정의</td><td>정의(definition)</td></tr>
+      <tr><td>2문장</td><td>이 편향이 다양한 방식으로 나타남</td><td>도입(bridge)</td></tr>
+      <tr><td><strong>3문장</strong></td><td>"For example" — 언어 연구의 증거</td><td><strong>증거 1: 언어 (정답 근거)</strong></td></tr>
+      <tr><td><strong>4문장</strong></td><td>기억 회상 과제의 증거</td><td><strong>증거 2: 기억 (정답 근거)</strong></td></tr>
+      <tr><td>5문장</td><td>"This is not to say..." 반론 방지</td><td>양보/제한</td></tr>
+      <tr><td>6문장</td><td>무의식적 인지 메커니즘, 진화적 이점</td><td>설명/해석</td></tr>
+      <tr><td>7문장</td><td>감정 정보 처리의 근본적 비대칭</td><td>결론</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="answer-box">
+  <h4>✅ 정답: ③ To provide two distinct categories of empirical evidence (language and memory) that support the principle.</h4>
+  <p><strong>근거:</strong> 3문장: "studies of <strong>language</strong> consistently find..." / 4문장: "In <strong>memory</strong> recall tasks, people tend to..."</p>
+  <p><strong>해석:</strong> 3문장은 언어 연구, 4문장은 기억 회상 과제라는 서로 다른 두 영역의 경험적 증거를 각각 제시한다.</p>
+  <p><strong>포인트:</strong> "For example"로 시작하는 3문장은 2문장의 "various ways"를 구체화하는 <strong>증거 제시</strong> 역할이다. 두 문장이 각각 언어와 기억이라는 별개의 증거 카테고리를 담당한다.</p>
+</div>
+
+<div class="warning-box" style="border-left-color: #e53e3e !important;">
+  <h4>❌ 오답: ① To state the main definition of the Pollyanna principle. [학생 선택]</h4>
+  <p><strong>근거:</strong> 정의(definition)는 1문장에서 이미 완료됨: "the psychological tendency to focus on and remember positive information more than negative information."</p>
+  <p><strong>해석:</strong> 3·4문장은 정의가 아니라 정의를 뒷받침하는 <strong>예시/증거</strong>이다.</p>
+  <p><strong>포인트:</strong> "For example"이라는 담화 표지(discourse marker)가 이 문장들이 예시임을 명확히 알려준다. 정의 문장에는 "For example"이 붙지 않는다.</p>
+</div>
+
+<div class="warning-box" style="border-left-color: #e53e3e !important;">
+  <h4>❌ 오답: ② To introduce a counterargument that challenges the existence of the positivity bias.</h4>
+  <p><strong>근거:</strong> 반론은 5문장("This is not to say...")에서 등장. 3·4문장은 편향의 존재를 지지하는 증거.</p>
+  <p><strong>포인트:</strong> 증거 제시(supporting evidence)와 반론(counterargument)은 정반대 기능이다.</p>
+</div>
+
+<div class="warning-box" style="border-left-color: #e53e3e !important;">
+  <h4>❌ 오답: ④ To explain the evolutionary origins of the positivity bias.</h4>
+  <p><strong>근거:</strong> 진화적 설명은 6문장("evolutionary benefits for resilience and motivation")에서 다룸.</p>
+  <p><strong>포인트:</strong> 3·4문장은 '현상의 존재 증거'이지 '원인/기원 설명'이 아니다.</p>
+</div>
+
+<div class="warning-box" style="border-left-color: #e53e3e !important;">
+  <h4>❌ 오답: ⑤ To offer a critique of the research methods used to study the principle.</h4>
+  <p><strong>근거:</strong> 본문 전체에 연구 방법론 비판은 없음. 3·4문장은 연구 결과를 긍정적으로 인용.</p>
+  <p><strong>포인트:</strong> "consistently find"는 비판이 아니라 일관된 연구 결과의 보고이다.</p>
+</div>
+
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>왜 이 답을 골랐을까:</strong> 3문장이 '긍정적인 단어가 더 빈번하다'고 말하고, 4문장이 '즐거운 사건을 더 잘 기억한다'고 말하는 것을 보고, 이것 자체가 폴리아나 원칙의 내용(정의)이라고 생각한 것으로 보입니다. '정의'와 '정의를 뒷받침하는 증거'를 혼동한 것입니다.</p>
+  <p><strong>오류 패턴:</strong> 정의 vs 증거 혼동 — 원칙의 내용을 서술하는 것(정의)과 원칙이 실재함을 보여주는 데이터(증거)를 구분하지 못함. 1문장(정의)과 3·4문장(증거)의 역할 차이를 간과.</p>
+  <p><strong>집중 포인트:</strong> 'For example'은 가장 강력한 담화 표지(discourse marker)입니다. 이 표현이 나오면 그 뒤의 문장은 100% 예시/증거이지, 정의나 주장이 아닙니다. 문장 기능 문제에서는 담화 표지를 먼저 확인하세요: 'For example' = 예시, 'However' = 전환/반론, 'Therefore' = 결론, 'In other words' = 재진술.</p>
+</div>
+<hr class="section-divider">
+
+
+
+<hr class="section-divider">
+<p style="text-align: center; color: #a0aec0; font-size: 9pt; margin-top: 30px;">
+  피드백지 작성 완료 — 2026. 02. 21
+</p>
+</body>
+</html>

@@ -1,0 +1,54 @@
+# grammar-advanced — 문법 Advanced
+book:
+  title: "편입영어 문법 Advanced 편"
+  author: "Vera's Flavor"
+  style: grammar-advanced
+  series: grammar-advanced
+
+pages:
+  - type: structural
+    src: grammar/advanced/cover.html
+  - type: structural
+    src: grammar/advanced/toc.html
+  - type: structural
+    src: grammar/advanced/toc-2.html
+  - type: content
+    src: grammar/advanced/ch01-content-01.html
+  - type: content
+    src: grammar/advanced/ch01-content-02.html
+  - type: content
+    src: grammar/advanced/ch01-content-03.html
+  - type: content
+    src: grammar/advanced/ch01-content-04.html
+  - type: problems
+    src: grammar/advanced/ch01-problems.json
+    layout: three-per-page
+  - type: content
+    src: grammar/advanced/ch02-content-01.html
+  - type: content
+    src: grammar/advanced/ch02-content-02.html
+  - type: problems
+    src: grammar/advanced/ch02-problems.json
+    layout: three-per-page
+  - type: content
+    src: grammar/advanced/ch03-content-01.html
+  - type: content
+    src: grammar/advanced/ch03-content-02.html
+  - type: problems
+    src: grammar/advanced/ch03-problems.json
+    layout: three-per-page
+  - type: content
+    src: grammar/advanced/ch04-content-01.html
+  - type: content
+    src: grammar/advanced/ch04-content-02.html
+  - type: problems
+    src: grammar/advanced/ch04-problems.json
+    layout: three-per-page
+  - type: answer-grid
+    src: grammar/advanced/ch01-problems.json
+  - type: answer-grid
+    src: grammar/advanced/ch02-problems.json
+  - type: answer-grid
+    src: grammar/advanced/ch03-problems.json
+  - type: answer-grid
+    src: grammar/advanced/ch04-problems.json

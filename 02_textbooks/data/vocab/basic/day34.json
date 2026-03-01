@@ -1,0 +1,507 @@
+{
+  "bookId": "vocab-basic",
+  "day": 34,
+  "theme": "날씨와 기후 (Weather and Climate)",
+  "words": [
+    {
+      "word": "temperate",
+      "pronunciation": "[témpərət]",
+      "partOfSpeech": "a.",
+      "meaning": "온화한",
+      "example": {
+        "en": "Korea has a temperate climate with four distinct seasons.",
+        "ko": "한국은 사계절이 뚜렷한 온화한 기후를 가지고 있다."
+      }
+    },
+    {
+      "word": "tropical",
+      "pronunciation": "[trάpikəl]",
+      "partOfSpeech": "a.",
+      "meaning": "열대의",
+      "example": {
+        "en": "Tropical rainforests are found near the equator.",
+        "ko": "열대우림은 적도 근처에서 발견된다."
+      }
+    },
+    {
+      "word": "arctic",
+      "pronunciation": "[άːrktik]",
+      "partOfSpeech": "a.",
+      "meaning": "북극의, 극한의",
+      "example": {
+        "en": "Polar bears are adapted to the harsh arctic environment.",
+        "ko": "북극곰은 혹독한 북극 환경에 적응했다."
+      }
+    },
+    {
+      "word": "arid",
+      "pronunciation": "[ǽrid]",
+      "partOfSpeech": "a.",
+      "meaning": "건조한, 불모의",
+      "example": {
+        "en": "Cacti can survive in arid desert climates.",
+        "ko": "선인장은 건조한 사막 기후에서 생존할 수 있다."
+      }
+    },
+    {
+      "word": "humid",
+      "pronunciation": "[hjúːmid]",
+      "partOfSpeech": "a.",
+      "meaning": "습한",
+      "example": {
+        "en": "The weather is hot and humid in the summer.",
+        "ko": "여름에는 날씨가 덥고 습하다."
+      }
+    },
+    {
+      "word": "drought",
+      "pronunciation": "[draut]",
+      "partOfSpeech": "n.",
+      "meaning": "가뭄",
+      "example": {
+        "en": "The long drought caused a severe water shortage.",
+        "ko": "오랜 가뭄은 심각한 물 부족을 야기했다."
+      }
+    },
+    {
+      "word": "flood",
+      "pronunciation": "[flʌd]",
+      "partOfSpeech": "n.",
+      "meaning": "홍수",
+      "example": {
+        "en": "Heavy rains caused a massive flood in the valley.",
+        "ko": "폭우로 계곡에 대규모 홍수가 발생했다."
+      }
+    },
+    {
+      "word": "blizzard",
+      "pronunciation": "[blízərd]",
+      "partOfSpeech": "n.",
+      "meaning": "눈보라",
+      "example": {
+        "en": "The town was buried under a fierce blizzard.",
+        "ko": "그 마을은 거센 눈보라에 파묻혔다."
+      }
+    },
+    {
+      "word": "hurricane",
+      "pronunciation": "[hə́ːrikèin]",
+      "partOfSpeech": "n.",
+      "meaning": "허리케인",
+      "example": {
+        "en": "The hurricane brought strong winds and heavy rain to the coast.",
+        "ko": "허리케인은 해안에 강한 바람과 폭우를 몰고 왔다."
+      }
+    },
+    {
+      "word": "tornado",
+      "pronunciation": "[tɔːrnéidou]",
+      "partOfSpeech": "n.",
+      "meaning": "토네이도, 회오리바람",
+      "example": {
+        "en": "A powerful tornado ripped through the small town.",
+        "ko": "강력한 토네이도가 작은 마을을 휩쓸고 지나갔다."
+      }
+    },
+    {
+      "word": "typhoon",
+      "pronunciation": "[taifúːn]",
+      "partOfSpeech": "n.",
+      "meaning": "태풍",
+      "example": {
+        "en": "The typhoon caused widespread damage in the Philippines.",
+        "ko": "태풍은 필리핀에 광범위한 피해를 입혔다."
+      }
+    },
+    {
+      "word": "cyclone",
+      "pronunciation": "[sáikloun]",
+      "partOfSpeech": "n.",
+      "meaning": "사이클론",
+      "example": {
+        "en": "A tropical cyclone is expected to make landfall tomorrow.",
+        "ko": "열대성 사이클론이 내일 상륙할 것으로 예상된다."
+      }
+    },
+    {
+      "word": "monsoon",
+      "pronunciation": "[mɑnsúːn]",
+      "partOfSpeech": "n.",
+      "meaning": "계절풍, 장마",
+      "example": {
+        "en": "The monsoon season brings heavy rainfall to Southeast Asia.",
+        "ko": "몬순 계절은 동남아시아에 많은 강우를 가져온다."
+      }
+    },
+    {
+      "word": "evaporation",
+      "pronunciation": "[ivæ̀pəréiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "증발",
+      "example": {
+        "en": "Evaporation is the process of water turning into vapor.",
+        "ko": "증발은 물이 수증기로 변하는 과정이다."
+      }
+    },
+    {
+      "word": "condensation",
+      "pronunciation": "[kὰndenséiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "응결, 응축",
+      "example": {
+        "en": "Condensation forms on the outside of a cold glass.",
+        "ko": "차가운 유리잔 바깥쪽에는 응결이 생긴다."
+      }
+    },
+    {
+      "word": "sublimation",
+      "pronunciation": "[sʌ̀bləméiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "승화",
+      "example": {
+        "en": "Dry ice undergoes sublimation, turning directly from a solid to a gas.",
+        "ko": "드라이아이스는 승화하여 고체에서 바로 기체로 변한다."
+      }
+    },
+    {
+      "word": "frost",
+      "pronunciation": "[frɔːst]",
+      "partOfSpeech": "n.",
+      "meaning": "서리",
+      "example": {
+        "en": "The ground was covered with frost this morning.",
+        "ko": "오늘 아침 땅은 서리로 덮여 있었다."
+      }
+    },
+    {
+      "word": "hail",
+      "pronunciation": "[heil]",
+      "partOfSpeech": "n.",
+      "meaning": "우박",
+      "example": {
+        "en": "The hailstorm damaged the crops.",
+        "ko": "우박 폭풍이 농작물에 피해를 입혔다."
+      }
+    },
+    {
+      "word": "sleet",
+      "pronunciation": "[sliːt]",
+      "partOfSpeech": "n.",
+      "meaning": "진눈깨비",
+      "example": {
+        "en": "The rain turned to sleet as the temperature dropped.",
+        "ko": "기온이 떨어지면서 비가 진눈깨비로 변했다."
+      }
+    },
+    {
+      "word": "drizzle",
+      "pronunciation": "[drízl]",
+      "partOfSpeech": "n.",
+      "meaning": "이슬비, 보슬비",
+      "example": {
+        "en": "A light drizzle was falling as we left the house.",
+        "ko": "우리가 집을 나설 때 가벼운 이슬비가 내리고 있었다."
+      }
+    },
+    {
+      "word": "downpour",
+      "pronunciation": "[dáunpɔ̀ːr]",
+      "partOfSpeech": "n.",
+      "meaning": "폭우",
+      "example": {
+        "en": "We were caught in a sudden downpour.",
+        "ko": "우리는 갑작스러운 폭우를 만났다."
+      }
+    },
+    {
+      "word": "torrent",
+      "pronunciation": "[tɔ́ːrənt]",
+      "partOfSpeech": "n.",
+      "meaning": "급류; (비가) 억수같이 쏟아짐",
+      "example": {
+        "en": "The rain came down in torrents.",
+        "ko": "비가 억수같이 쏟아졌다."
+      }
+    },
+    {
+      "word": "deluge",
+      "pronunciation": "[déljuːdʒ]",
+      "partOfSpeech": "n.",
+      "meaning": "대홍수, 폭우",
+      "example": {
+        "en": "The deluge flooded the entire village.",
+        "ko": "대홍수로 마을 전체가 물에 잠겼다."
+      }
+    },
+    {
+      "word": "breeze",
+      "pronunciation": "[briːz]",
+      "partOfSpeech": "n.",
+      "meaning": "산들바람, 미풍",
+      "example": {
+        "en": "A gentle breeze rustled the leaves.",
+        "ko": "부드러운 산들바람이 나뭇잎을 바스락거렸다."
+      }
+    },
+    {
+      "word": "gust",
+      "pronunciation": "[gʌst]",
+      "partOfSpeech": "n.",
+      "meaning": "돌풍",
+      "example": {
+        "en": "A sudden gust of wind blew my hat off.",
+        "ko": "갑작스러운 돌풍에 내 모자가 날아갔다."
+      }
+    },
+    {
+      "word": "gale",
+      "pronunciation": "[geil]",
+      "partOfSpeech": "n.",
+      "meaning": "강풍",
+      "example": {
+        "en": "The ship was damaged in a severe gale.",
+        "ko": "그 배는 심한 강풍에 손상되었다."
+      }
+    },
+    {
+      "word": "windstorm",
+      "pronunciation": "[wíndstɔ̀ːrm]",
+      "partOfSpeech": "n.",
+      "meaning": "폭풍",
+      "example": {
+        "en": "The windstorm knocked down several trees.",
+        "ko": "폭풍으로 나무 몇 그루가 쓰러졌다."
+      }
+    },
+    {
+      "word": "stillness",
+      "pronunciation": "[stílnis]",
+      "partOfSpeech": "n.",
+      "meaning": "고요, 정적",
+      "example": {
+        "en": "The stillness of the night was broken by a sudden cry.",
+        "ko": "밤의 고요는 갑작스러운 울음소리에 깨졌다."
+      }
+    },
+    {
+      "word": "barometer",
+      "pronunciation": "[bərάmətər]",
+      "partOfSpeech": "n.",
+      "meaning": "기압계",
+      "example": {
+        "en": "A falling barometer often indicates an approaching storm.",
+        "ko": "기압계가 떨어지는 것은 종종 폭풍이 다가오고 있음을 나타낸다."
+      }
+    },
+    {
+      "word": "hygrometer",
+      "pronunciation": "[haigrάmətər]",
+      "partOfSpeech": "n.",
+      "meaning": "습도계",
+      "example": {
+        "en": "A hygrometer is used to measure the humidity in the air.",
+        "ko": "습도계는 공기 중의 습도를 측정하는 데 사용된다."
+      }
+    },
+    {
+      "word": "thermometer",
+      "pronunciation": "[θərmάmətər]",
+      "partOfSpeech": "n.",
+      "meaning": "온도계",
+      "example": {
+        "en": "The thermometer showed a temperature of 30 degrees Celsius.",
+        "ko": "온도계는 섭씨 30도를 나타냈다."
+      }
+    },
+    {
+      "word": "forecast",
+      "pronunciation": "[fɔ́ːrkæ̀st]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "예보\n       \n        예보하다",
+      "example": {
+        "en": "The weather forecast predicts rain for tomorrow.",
+        "ko": "일기 예보는 내일 비가 올 것이라고 예측한다."
+      }
+    },
+    {
+      "word": "predict",
+      "pronunciation": "[pridíkt]",
+      "partOfSpeech": "v.",
+      "meaning": "예측하다, 예언하다",
+      "example": {
+        "en": "It is difficult to predict the weather accurately.",
+        "ko": "날씨를 정확하게 예측하는 것은 어렵다."
+      }
+    },
+    {
+      "word": "meteorologist",
+      "pronunciation": "[mìːtiərάlədʒist]",
+      "partOfSpeech": "n.",
+      "meaning": "기상학자",
+      "example": {
+        "en": "A meteorologist studies the Earth's atmosphere and weather patterns.",
+        "ko": "기상학자는 지구의 대기와 날씨 패턴을 연구한다."
+      }
+    },
+    {
+      "word": "climatology",
+      "pronunciation": "[klàimətάlədʒi]",
+      "partOfSpeech": "n.",
+      "meaning": "기후학",
+      "example": {
+        "en": "Climatology is the long-term study of weather patterns.",
+        "ko": "기후학은 날씨 패턴에 대한 장기적인 연구이다."
+      }
+    },
+    {
+      "word": "seasonal",
+      "pronunciation": "[síːzənl]",
+      "partOfSpeech": "a.",
+      "meaning": "계절적인",
+      "example": {
+        "en": "We experience seasonal changes in temperature.",
+        "ko": "우리는 계절적인 기온 변화를 경험한다."
+      }
+    },
+    {
+      "word": "equinox",
+      "pronunciation": "[íːkwənὰks]",
+      "partOfSpeech": "n.",
+      "meaning": "주야 평분시 (춘분, 추분)",
+      "example": {
+        "en": "At the equinox, day and night are of equal length.",
+        "ko": "춘분점/추분점에는 낮과 밤의 길이가 같다."
+      }
+    },
+    {
+      "word": "solstice",
+      "pronunciation": "[sάlstis]",
+      "partOfSpeech": "n.",
+      "meaning": "지점 (하지, 동지)",
+      "example": {
+        "en": "The summer solstice is the longest day of the year.",
+        "ko": "하지는 일 년 중 가장 긴 날이다."
+      }
+    },
+    {
+      "word": "tempest",
+      "pronunciation": "[témpist]",
+      "partOfSpeech": "n.",
+      "meaning": "(문어) 폭풍우",
+      "example": {
+        "en": "The ship was caught in a violent tempest.",
+        "ko": "그 배는 격렬한 폭풍우에 휩싸였다."
+      }
+    },
+    {
+      "word": "squall",
+      "pronunciation": "[skwɔːl]",
+      "partOfSpeech": "n.",
+      "meaning": "돌풍, 스콜",
+      "example": {
+        "en": "A sudden squall overturned several small boats.",
+        "ko": "갑작스러운 돌풍이 작은 보트 여러 척을 뒤집었다."
+      }
+    },
+    {
+      "word": "overcast",
+      "pronunciation": "[òuvərkǽst]",
+      "partOfSpeech": "a.",
+      "meaning": "구름이 뒤덮인, 흐린",
+      "example": {
+        "en": "The sky was overcast and it looked like it might rain.",
+        "ko": "하늘은 구름으로 뒤덮여 있었고 비가 올 것 같았다."
+      }
+    },
+    {
+      "word": "clear",
+      "pronunciation": "[kliər]",
+      "partOfSpeech": "a.",
+      "meaning": "맑은, 깨끗한",
+      "example": {
+        "en": "The sky was clear and the stars were bright.",
+        "ko": "하늘은 맑았고 별들은 밝았다."
+      }
+    },
+    {
+      "word": "cloudy",
+      "pronunciation": "[kláudi]",
+      "partOfSpeech": "a.",
+      "meaning": "구름 낀, 흐린",
+      "example": {
+        "en": "It will be cloudy with a chance of rain.",
+        "ko": "흐리고 비가 올 가능성이 있겠습니다."
+      }
+    },
+    {
+      "word": "foggy",
+      "pronunciation": "[fɔ́ːgi]",
+      "partOfSpeech": "a.",
+      "meaning": "안개가 낀",
+      "example": {
+        "en": "It was a foggy morning, and visibility was poor.",
+        "ko": "안개가 낀 아침이었고 시야가 좋지 않았다."
+      }
+    },
+    {
+      "word": "misty",
+      "pronunciation": "[místi]",
+      "partOfSpeech": "a.",
+      "meaning": "안개가 옅게 낀",
+      "example": {
+        "en": "The mountains were misty in the early morning light.",
+        "ko": "이른 아침 햇살에 산들은 안개가 옅게 끼어 있었다."
+      }
+    },
+    {
+      "word": "visibility",
+      "pronunciation": "[vìzəbíləti]",
+      "partOfSpeech": "n.",
+      "meaning": "시야, 가시성",
+      "example": {
+        "en": "Visibility was reduced to near zero in the thick fog.",
+        "ko": "짙은 안개 속에서 시야는 거의 0으로 줄어들었다."
+      }
+    },
+    {
+      "word": "turbulence",
+      "pronunciation": "[tə́ːrbjuləns]",
+      "partOfSpeech": "n.",
+      "meaning": "난기류",
+      "example": {
+        "en": "The plane experienced some turbulence during the flight.",
+        "ko": "비행기는 비행 중에 약간의 난기류를 겪었다."
+      }
+    },
+    {
+      "word": "atmospheric",
+      "pronunciation": "[æ̀tməsférik]",
+      "partOfSpeech": "a.",
+      "meaning": "대기의, 분위기의",
+      "example": {
+        "en": "Atmospheric pressure affects the weather.",
+        "ko": "대기압은 날씨에 영향을 미친다."
+      }
+    },
+    {
+      "word": "isobar",
+      "pronunciation": "[ˈaɪsəbɑːr]",
+      "partOfSpeech": "noun",
+      "meaning": "등압선 (기상도에서 같은 기압을 나타내는 선)",
+      "example": {
+        "en": "The meteorologist traced the isobars on the weather map to predict the storm's movement.",
+        "ko": "기상학자는 폭풍의 이동을 예측하기 위해 기상도에 등압선을 그렸다."
+      }
+    },
+    {
+      "word": "thunderstorm",
+      "pronunciation": "/ˈθʌndərˌstɔːrm/",
+      "partOfSpeech": "noun",
+      "meaning": "천둥과 번개를 동반하고, 보통 세찬 비나 우박이 내리는 폭풍.",
+      "example": {
+        "en": "A severe thunderstorm rolled in, bringing torrential rain and frequent lightning.",
+        "ko": "강한 뇌우가 몰려와 폭우와 잦은 번개를 동반했다."
+      }
+    }
+  ]
+}

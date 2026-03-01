@@ -1,0 +1,2349 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vera's Flavor 편입영어 문법 - Bridge 편 Part 2-4</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* =================================================================== */
+        /* 기본 설정                                                            */
+        /* =================================================================== */
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background: #e8e9eb;
+            counter-reset: page;
+        }
+        
+        /* 폰트 유틸리티 */
+        .eng-text { font-family: 'Inter', sans-serif; }
+        .serif-text { font-family: 'Playfair Display', serif; }
+        .bold-text { font-weight: 700; }
+
+        /* 색상 변수 */
+        :root {
+            --color-sea-blue: #6C96C6;
+            --color-deep-blue: #345C85;
+            --color-sandy-beige: #F2C994;
+            --color-warm-orange: #E9A266;
+            --color-text-dark: #3D4852;
+            --color-text-light: #718096;
+            --color-bg-light: #FDFBF6;
+            --color-border: #EAEAEA;
+        }
+
+        /* =================================================================== */
+        /* 페이지 레이아웃                                                      */
+        /* =================================================================== */
+        .page {
+            width: 210mm;
+            height: 297mm;
+            margin: 10mm auto;
+            padding: 15mm 18mm;
+            background: white;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            page-break-after: always;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        
+        .page:last-child {
+            page-break-after: avoid;
+        }
+        
+        .page-content {
+            flex-grow: 1;
+            overflow: hidden;
+            font-size: 11pt;
+            line-height: 1.8;
+            color: var(--color-text-dark);
+        }
+
+        /* 페이지 헤더 & 푸터 */
+        .page-header, .page-footer {
+            width: 100%;
+            flex-shrink: 0;
+            font-size: 9pt;
+            color: var(--color-text-light);
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .page-header {
+            border-bottom: 1px solid var(--color-border);
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            color: var(--color-deep-blue);
+            font-weight: 500;
+        }
+        
+        .page-footer {
+            border-top: 1px solid var(--color-border);
+            padding-top: 8px;
+            margin-top: 12px;
+            text-align: center;
+        }
+        
+        .page-footer::after {
+            counter-increment: page;
+            content: counter(page);
+        }
+        
+        /* 특수 페이지 헤더/푸터 제어 */
+        .no-header-footer { padding: 0; }
+        .no-header-footer .page-header,
+        .no-header-footer .page-footer,
+        .cover-page .page-footer::after,
+        .part-intro-page .page-footer::after,
+        .toc-page .page-header,
+        .chapter-page .page-header {
+            display: none;
+        }
+        
+        .part-intro-page .page-header,
+        .part-intro-page .page-footer {
+            border: none;
+        }
+
+        /* =================================================================== */
+        /* 표지 페이지                                                          */
+        /* =================================================================== */
+        .cover-page {
+            color: white;
+            overflow: hidden;
+            background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 50%, #0369a1 100%);
+            background-image: url('../../background/backgroundGMBR.png');
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: soft-light;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .cover-text-box {
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, 0.9);
+            padding: 25mm 30mm 20mm 30mm;
+            border-radius: 0;
+            text-align: center;
+            color: white;
+            max-width: 150mm;
+            position: relative;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            margin-bottom: 20mm;
+        }
+
+        .cover-text-box .cover-prefix {
+            font-family: 'Inter', sans-serif;
+            font-size: 18pt;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 8mm;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .cover-text-box .cover-main-title {
+            font-family: 'Inter', sans-serif;
+            font-size: 48pt;
+            font-weight: 800;
+            line-height: 0.95;
+            margin-bottom: 8mm;
+            color: white;
+            letter-spacing: -1px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .cover-text-box .cover-edition {
+            font-family: 'Inter', sans-serif;
+            font-size: 16pt;
+            font-weight: 600;
+            color: #fbbf24;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .cover-footer {
+            position: absolute;
+            bottom: 15mm;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+            font-size: 11pt;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.9);
+            text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+            letter-spacing: 0.5px;
+        }
+
+        .cover-text-box::before {
+            content: '';
+            position: absolute;
+            top: 15mm;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40mm;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent);
+        }
+
+        .cover-text-box::after {
+            content: '';
+            position: absolute;
+            bottom: 35mm;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 25mm;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #fbbf24, transparent);
+        }
+
+        /* =================================================================== */
+        /* 목차 페이지                                                          */
+        /* =================================================================== */
+        .toc-header { 
+            font-family: 'Inter', sans-serif; 
+            font-size: 20pt; 
+            font-weight: 700; 
+            color: var(--color-deep-blue); 
+            margin-bottom: 20px; 
+            padding-bottom: 10px; 
+            border-bottom: 2px solid var(--color-sea-blue); 
+            text-align: center;
+            letter-spacing: 2px;
+        }
+        
+        .toc-list { 
+            list-style: none; 
+            padding-left: 0; 
+            font-size: 11pt; 
+            line-height: 2.5; 
+        }
+        
+        .toc-item { 
+            display: flex; 
+            align-items: baseline; 
+            margin-bottom: 8px; 
+            border-bottom: 1px solid var(--color-border);
+            padding-bottom: 8px;
+        }
+        
+        .toc-item .title { 
+            order: 1; 
+            white-space: nowrap; 
+            padding-right: 8px;
+            color: var(--color-text-dark);
+        }
+        
+        .toc-item .title b {
+            color: var(--color-deep-blue);
+            font-weight: 700;
+        }
+        
+        .toc-item .dots { 
+            order: 2; 
+            flex-grow: 1; 
+            border-bottom: 1px dotted var(--color-text-light); 
+            position: relative; 
+            top: -4px; 
+        }
+        
+        .toc-item .page-num { 
+            order: 3; 
+            padding-left: 8px; 
+            font-family: 'Inter', sans-serif; 
+            font-weight: 600;
+            color: var(--color-sea-blue);
+        }
+        
+        .toc-part-title { 
+            font-family: 'Inter', sans-serif; 
+            font-size: 14pt; 
+            font-weight: 700; 
+            color: var(--color-warm-orange); 
+            margin-top: 25px; 
+            margin-bottom: 10px; 
+            border-left: 4px solid var(--color-sandy-beige); 
+            padding-left: 12px; 
+        }
+
+        /* =================================================================== */
+        /* 파트 소개 페이지                                                      */
+        /* =================================================================== */
+        .part-intro-page {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .part-intro-container {
+            padding: 20mm;
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            background-color: var(--color-bg-light);
+            max-width: 170mm;
+            text-align: center;
+        }
+        
+        .part-intro-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 24pt;
+            color: var(--color-sandy-beige);
+            margin-bottom: 10px;
+        }
+        
+        .part-intro-title {
+            font-size: 36pt;
+            font-weight: 900;
+            color: var(--color-deep-blue);
+            margin-bottom: 15px;
+        }
+        
+        .part-intro-subtitle {
+            font-family: 'Inter', sans-serif;
+            font-size: 14pt;
+            color: var(--color-sea-blue);
+            margin-bottom: 20px;
+        }
+        
+        .part-intro-divider {
+            width: 80px;
+            height: 3px;
+            background-color: var(--color-warm-orange);
+            margin: 0 auto 20px auto;
+            border: none;
+        }
+        
+        .part-intro-description {
+            max-width: 140mm;
+            font-size: 11pt;
+            line-height: 1.9;
+            color: var(--color-text-dark);
+            text-align: justify;
+            margin: 0 auto;
+        }
+
+        /* =================================================================== */
+        /* 본문 콘텐츠                                                          */
+        /* =================================================================== */
+        .part-header { 
+            color: white; 
+            margin: 0 0 25px 0; 
+            padding: 15px 20px; 
+            font-size: 18pt; 
+            font-weight: 700; 
+            display: flex; 
+            align-items: center; 
+            background: linear-gradient(135deg, var(--color-deep-blue), var(--color-sea-blue)); 
+            border-radius: 8px; 
+            box-shadow: 0 4px 15px rgba(52, 92, 133, 0.2);
+        }
+        
+        .part-number { 
+            font-family: 'Inter', sans-serif;
+            background: rgba(255,255,255,0.15); 
+            padding: 8px 14px; 
+            border-radius: 6px; 
+            font-weight: 700; 
+            font-size: 12pt;
+            min-width: 60px; 
+            text-align: center; 
+            margin-right: 15px; 
+        }
+        
+        .section-title { 
+            font-family: 'Inter', sans-serif; 
+            font-size: 16pt; 
+            font-weight: 700; 
+            color: var(--color-deep-blue); 
+            margin: 30px 0 15px 0; 
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--color-sandy-beige);
+        }
+        
+        .section-title .emoji { 
+            margin-right: 10px; 
+        }
+        
+        .first-in-page { 
+            margin-top: 0; 
+        }
+        
+        .content-paragraph { 
+            margin-bottom: 12px;
+            text-align: justify;
+        }
+        
+        .sub-header {
+            font-weight: 700; 
+            color: var(--color-deep-blue); 
+            margin-top: 20px; 
+            margin-bottom: 10px;
+            font-size: 13pt;
+        }
+        
+        /* 테이블 */
+        .grammar-table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin: 20px 0; 
+            font-size: 10.5pt;
+            break-inside: avoid;
+        }
+        
+        .grammar-table th, 
+        .grammar-table td { 
+            border: 1px solid var(--color-border); 
+            padding: 10px 12px; 
+            text-align: left; 
+            vertical-align: top;
+        }
+        
+        .grammar-table th { 
+            background-color: var(--color-bg-light); 
+            font-weight: 700; 
+            color: var(--color-deep-blue); 
+        }
+        
+        .grammar-table td code {
+            font-family: 'Inter', sans-serif;
+            background-color: #e8e9eb;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-size: 9.5pt;
+        }
+        
+        /* 특정 테이블 전용 스타일 */
+        .comparison-table th:first-child,
+        .comparison-table td:first-child {
+            width: 22%;
+            white-space: nowrap;
+        }
+        
+        .meaning-table .term-meaning {
+            font-weight: 600;
+            color: var(--color-deep-blue);
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .meaning-table .ex-eng {
+            display: block;
+            margin-bottom: 2px;
+        }
+        
+        .meaning-table .ex-kor {
+            display: block;
+        }
+        
+        /* Focus 테이블 스타일 (Part 4 전용) */
+        .focus-table td:nth-child(1) { 
+            width: 45%; 
+        }
+        
+        .focus-table td:nth-child(2) { 
+            width: 55%; 
+        }
+        
+        .focus-table .focus-point {
+            font-weight: 600;
+            color: var(--color-sea-blue);
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        /* 예문 스타일 */
+        .ex-eng { 
+            font-family: 'Inter', sans-serif; 
+            font-weight: 500; 
+            color: var(--color-text-dark); 
+        }
+        
+        .ex-kor { 
+            font-size: 10pt; 
+            color: var(--color-text-light); 
+            padding-left: 2px; 
+        }
+        
+        /* 코드 */
+        code {
+            font-family: 'Inter', sans-serif;
+            color: var(--color-deep-blue);
+            background-color: #f2f4f8;
+            border: 1px solid var(--color-border);
+            padding: 2px 6px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+        
+        /* Tip 박스 */
+        .tip-box { 
+            background: var(--color-bg-light); 
+            border: 1px solid var(--color-sandy-beige); 
+            border-left: 5px solid var(--color-warm-orange); 
+            border-radius: 0 6px 6px 0; 
+            padding: 15px 20px; 
+            margin: 20px 0; 
+            font-size: 10.5pt;
+            break-inside: avoid;
+        }
+        
+        .tip-box-title { 
+            font-weight: 700; 
+            color: var(--color-warm-orange); 
+            margin-bottom: 8px; 
+            font-family: 'Inter', sans-serif;
+        }
+        
+        /* 예시 리스트 */
+        .example-list {
+            list-style-type: '✓ ';
+            padding-left: 20px;
+            margin: 10px 0 15px 0;
+            font-size: 10.5pt;
+        }
+        
+        .example-list li { 
+            margin-bottom: 8px; 
+        }
+        
+        .example-list .ex-kor { 
+            display: block; 
+            font-size: 10pt; 
+            color: var(--color-text-light); 
+            margin-top: 2px; 
+        }
+
+        /* =================================================================== */
+        /* 연습문제                                                             */
+        /* =================================================================== */
+        .practice-section-header { 
+            font-family: 'Inter', sans-serif; 
+            font-size: 16pt; 
+            font-weight: 700; 
+            color: #fff; 
+            background: var(--color-deep-blue); 
+            padding: 12px 20px; 
+            margin: 20px 0 20px 0; 
+            border-radius: 8px; 
+        }
+        
+        .problem-block { 
+            margin-bottom: 20px; 
+            padding: 15px; 
+            border: 1px solid var(--color-border); 
+            border-left: 4px solid var(--color-sea-blue); 
+            border-radius: 0 5px 5px 0; 
+            background: #fff;
+        }
+        
+        .problem-meta {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        
+        .problem-number { 
+            font-family: 'Inter', sans-serif; 
+            font-weight: 700; 
+            color: white;
+            background-color: var(--color-sea-blue);
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            font-size: 11pt;
+        }
+        
+        .problem-text { 
+            font-size: 11pt; 
+            margin-bottom: 12px; 
+            line-height: 1.8;
+            text-align: justify;
+        }
+        
+        .problem-text u {
+            text-decoration: underline;
+            text-decoration-color: var(--color-warm-orange);
+            text-decoration-thickness: 1.5px;
+            font-weight: 500;
+        }
+        
+        .problem-question {
+            margin-top: 15px;
+            padding: 12px 15px;
+            background-color: var(--color-bg-light);
+            border: 1px solid var(--color-border);
+            border-left: 4px solid var(--color-warm-orange);
+            border-radius: 0 5px 5px 0;
+            font-size: 10.5pt;
+            font-style: italic;
+            color: var(--color-deep-blue);
+            font-weight: 500;
+        }
+        
+        .problem-choices { 
+            list-style: none; 
+            padding-left: 0; 
+            font-size: 10.5pt; 
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 5px 20px;
+        }
+        
+        .problem-choices li { 
+            margin-bottom: 4px; 
+            padding: 6px 10px; 
+            border-radius: 4px;
+            display: flex;
+            align-items: baseline;
+            text-align: justify;
+        }
+        
+        .problem-choices li:hover {
+            background-color: var(--color-bg-light);
+        }
+        
+        .choice-number {
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            color: var(--color-deep-blue);
+            margin-right: 8px;
+        }
+
+        /* =================================================================== */
+        /* 정답 및 해설                                                         */
+        /* =================================================================== */
+        .answer-key-section .section-title {
+            color: var(--color-warm-orange);
+            border-bottom-color: var(--color-sea-blue);
+        }
+        
+        .quick-answer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(55px, 1fr));
+            gap: 8px;
+            margin: 20px 0;
+            text-align: center;
+            font-size: 10pt;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .quick-answer-item {
+            padding: 8px;
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            background-color: var(--color-bg-light);
+        }
+        
+        .quick-answer-item .num {
+            font-weight: 700;
+            color: var(--color-text-light);
+        }
+        
+        .quick-answer-item .ans {
+            font-weight: 700;
+            color: var(--color-deep-blue);
+        }
+        
+        .explanation-block {
+            margin-bottom: 15px;
+            padding-top: 15px;
+            border-top: 1px solid var(--color-border);
+        }
+        
+        .explanation-block:first-of-type {
+            border-top: none;
+            padding-top: 0;
+        }
+        
+        .explanation-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        
+        .explanation-header .problem-number {
+            background-color: var(--color-warm-orange);
+        }
+        
+        .explanation-header .correct-answer {
+            font-family: 'Inter', sans-serif;
+            font-size: 12pt;
+            font-weight: 700;
+            color: var(--color-deep-blue);
+        }
+        
+        .explanation-content {
+            font-size: 10.5pt;
+            padding: 10px 15px;
+            background-color: var(--color-bg-light);
+            border-radius: 5px;
+            text-align: justify;
+        }
+        
+        .explanation-content b {
+            color: var(--color-sea-blue);
+        }
+
+        /* =================================================================== */
+        /* 인쇄 및 유틸리티                                                     */
+        /* =================================================================== */
+        .avoid-break { 
+            break-inside: avoid; 
+            page-break-inside: avoid; 
+        }
+        
+        @media print { 
+            body { 
+                background: #fff; 
+            } 
+            .page { 
+                margin: 0; 
+                box-shadow: none; 
+            } 
+        }
+        
+        p, li, div { 
+            orphans: 3; 
+            widows: 3; 
+        }
+        
+        .practice-section-header, 
+        .section-title, 
+        .part-header { 
+            break-after: avoid-page; 
+        }
+        
+        .problem-block, 
+        .tip-box, 
+        .grammar-table { 
+            break-inside: avoid; 
+        }
+    </style>
+    </head>
+    <body>
+    
+        <div class="page no-header-footer part-intro-page">
+            <div class="part-intro-container">
+                <div class="part-intro-number eng-text">Part 4</div>
+                <h2 class="part-intro-title">부사 (Adverbs)</h2>
+                <h3 class="part-intro-subtitle eng-text">The Spice of Language</h3>
+                <hr class="part-intro-divider">
+                <p class="part-intro-description">
+                    부사(Adverb)는 문장에서 동사, 형용사, 다른 부사, 또는 문장 전체를 수식하여 의미의 정밀성과 표현의 깊이를 더하는 핵심 요소입니다. 단순한 '양념'을 넘어, 부사의 정확한 사용은 문장의 논리적 흐름과 뉘앙스를 결정짓는 중요한 역할을 합니다. 이 파트에서는 부사의 기본적인 기능부터 편입 시험에서 변별력을 가르는 고난도 위치 규칙, 도치 구문, 그리고 혼동하기 쉬운 부사들의 용법까지 심도 있게 학습합니다.
+                </p>
+            </div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4: 부사 (Adverbs)</span>
+            </div>
+            <div class="page-content">
+                <div class="part-header first-in-page">
+                    <span class="part-number eng-text">Part 4</span>
+                    <span>부사 (Adverbs)</span>
+                </div>
+        
+                <div class="section-title eng-text">Focus 1: 부사의 역할과 형태 (The Role and Form of Adverbs)</div>
+                <p class="content-paragraph">
+                    부사는 문장의 필수 구성 요소는 아니지만, 의미를 풍부하게 하고 뉘앙스를 더하며 정보를 구체화하는 데 결정적인 역할을 합니다. 부사는 '언제', '어디서', '어떻게', '얼마나 자주', '어느 정도로'와 같은 질문에 답하며 문장의 표현력을 극대화합니다. 부사가 수식하는 4가지 대상을 정확히 인지하는 것이 모든 학습의 기초가 됩니다.
+                </p>
+                <ul class="example-list">
+                    <li><b>동사 수식:</b> <span class="ex-eng">The algorithm processes data <b>rapidly</b>.</span> <span class="ex-kor">그 알고리즘은 데이터를 신속하게 처리한다.</span></li>
+                    <li><b>형용사 수식:</b> <span class="ex-eng">The results were <b>truly</b> remarkable.</span> <span class="ex-kor">그 결과는 정말로 놀라웠다.</span></li>
+                    <li><b>다른 부사 수식:</b> <span class="ex-eng">She adapted to the new environment <b>surprisingly</b> well.</span> <span class="ex-kor">그녀는 새로운 환경에 놀라울 정도로 잘 적응했다.</span></li>
+                    <li><b>문장 전체 수식:</b> <span class="ex-eng"><b>Evidently</b>, further research is needed.</span> <span class="ex-kor">분명히, 추가적인 연구가 필요하다.</span></li>
+                </ul>
+    
+                <div class="sub-header">부사의 형태 (Formation of Adverbs)</div>
+                <p class="content-paragraph">
+                    대부분의 부사는 <b>형용사 + -ly</b> 형태로 만들어집니다. 하지만 모든 -ly가 부사는 아니며, 형태 변화에 몇 가지 규칙이 존재합니다.
+                </p>
+                <ul class="example-list">
+                    <li><b>기본형:</b> <code>slow</code> → <code>slowly</code>, <code>careful</code> → <code>carefully</code></li>
+                    <li><b>-y로 끝나는 형용사:</b> <code>easy</code> → <code>easily</code>, <code>happy</code> → <code>happily</code> (y를 i로 바꾸고 -ly)</li>
+                    <li><b>-ic로 끝나는 형용사:</b> <code>dramatic</code> → <code>dramatically</code> (-ally 추가)</li>
+                    <li><b>형태가 변하지 않는 경우:</b> <code>fast</code>, <code>hard</code>, <code>late</code>, <code>early</code>, <code>high</code> 등</li>
+                </ul>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4: 부사 (Adverbs)</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title eng-text first-in-page">Focus 2: 부사의 주요 종류 심층 분석</div>
+                <p class="content-paragraph">부사는 그 의미와 기능에 따라 여러 종류로 나뉩니다. 각 종류별 주요 부사와 그 의미를 정확히 숙지하는 것이 중요합니다.</p>
+                <table class="grammar-table">
+                    <thead><tr><th style="width:20%;">종류 (Type)</th><th style="width:25%;">핵심 질문</th><th>주요 부사 및 의미</th></tr></thead>
+                    <tbody>
+                        <tr><td><b>시간 (Time)</b></td><td>언제 (When?)</td><td><code>yesterday</code> (어제), <code>recently</code> (최근에), <code>afterwards</code> (나중에), <code>lately</code> (최근에), <code>soon</code> (곧), <code>immediately</code> (즉시)</td></tr>
+                        <tr><td><b>장소 (Place)</b></td><td>어디서 (Where?)</td><td><code>here</code> (여기에), <code>abroad</code> (해외에), <code>downstairs</code> (아래층에), <code>somewhere</code> (어딘가에), <code>nearby</code> (근처에)</td></tr>
+                        <tr><td><b>방법 (Manner)</b></td><td>어떻게 (How?)</td><td><code>carefully</code> (조심스럽게), <code>diligently</code> (성실하게), <code>well</code> (잘), <code>fast</code> (빠르게), <code>efficiently</code> (효율적으로)</td></tr>
+                        <tr><td><b>빈도 (Frequency)</b></td><td>얼마나 자주 (How often?)</td><td><code>always</code> (항상), <code>frequently</code> (자주), <code>seldom</code> (좀처럼 ~않는), <code>occasionally</code> (가끔), <code>never</code> (결코)</td></tr>
+                        <tr><td><b>정도 (Degree)</b></td><td>어느 정도로 (To what extent?)</td><td><code>very</code> (매우), <code>extremely</code> (극도로), <code>quite</code> (꽤), <code>barely</code> (간신히), <code>thoroughly</code> (철저히)</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4: 부사 (Adverbs)</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title eng-text first-in-page">Focus 3: 부사의 위치: 원칙과 예외</div>
+                <p class="content-paragraph">부사의 위치는 문장의 명료성과 뉘앙스에 큰 영향을 미칩니다. 일반적인 원칙이 있지만, 특정 부사들은 고유의 위치 규칙을 따르므로 주의가 필요합니다.</p>
+    
+                <div class="sub-header">1. 일반적인 부사 위치: 방법-장소-시간 (Manner-Place-Time)</div>
+                <p class="content-paragraph">여러 종류의 부사(구)가 함께 쓰일 때, 일반적으로 <b>'방법 > 장소 > 시간'</b>의 순서를 따릅니다. 이는 문장의 자연스러운 흐름을 만듭니다.</p>
+                <ul class="example-list">
+                    <li><span class="ex-eng">She worked <b>diligently</b> (방법) <b>in the lab</b> (장소) <b>all day</b> (시간).</span><span class="ex-kor">그녀는 하루 종일 연구실에서 성실하게 일했다.</span></li>
+                    <li><span class="ex-eng">He arrived <b>safely</b> (방법) <b>at the airport</b> (장소) <b>this morning</b> (시간).</span><span class="ex-kor">그는 오늘 아침 공항에 안전하게 도착했다.</span></li>
+                </ul>
+                <div class="tip-box">
+                    <div class="tip-box-title eng-text">Vera's Flavor Tip | 타동사 목적어와 방법 부사</div>
+                    <p>방법 부사는 타동사의 목적어 뒤에 위치하는 것이 원칙입니다. `동사 + 부사 + 목적어` 순서는 목적어가 매우 길 경우를 제외하고는 어색한 문장이 됩니다.</p>
+                    <ul class="example-list" style="font-size: 10.5pt;">
+                         <li><span class="ex-eng">He drives his car <b>carefully</b>. (O)</span></li>
+                         <li><span class="ex-eng">He drives <b>carefully</b> his car. (X)</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4: 부사 (Adverbs)</span>
+            </div>
+            <div class="page-content">
+                <div class="sub-header first-in-page">2. 빈도 부사 (Adverbs of Frequency)</div>
+                <p class="content-paragraph"><code>always</code>, <code>usually</code>, <code>often</code>, <code>sometimes</code>, <code>rarely</code>, <code>never</code> 등의 위치는 동사의 종류에 따라 결정됩니다.</p>
+                <div class="tip-box">
+                    <div class="tip-box-title eng-text">Vera's Flavor Tip | "조비뒤일앞"으로 완벽 암기!</div>
+                    <ul class="example-list">
+                        <li><b>조</b>동사 뒤: <span class="ex-eng">He <b>will <code>always</code></b> remember her kindness.</span><span class="ex-kor">그는 그녀의 친절을 항상 기억할 것이다.</span></li>
+                        <li><b>be</b>동사 뒤: <span class="ex-eng">She <b>is <code>never</code></b> satisfied with her performance.</span><span class="ex-kor">그녀는 자신의 성과에 결코 만족하지 않는다.</span></li>
+                        <li><b>일</b>반동사 앞: <span class="ex-eng">They <b><code>usually</code> conduct</b> experiments in the morning.</span><span class="ex-kor">그들은 보통 오전에 실험을 수행한다.</span></li>
+                    </ul>
+                </div>
+                <p class="content-paragraph" style="margin-top: 20px;">
+                    <code>sometimes</code>, <code>usually</code>, <code>often</code>과 같은 일부 빈도부사는 문장의 의미를 강조하기 위해 문장 맨 앞이나 맨 뒤에 위치할 수도 있습니다.
+                </p>
+                <ul class="example-list">
+                    <li><span class="ex-eng"><b>Sometimes</b> I feel like giving up. (문두 강조)</span></li>
+                    <li><span class="ex-eng">They visit their grandparents <b>often</b>. (문미)</span></li>
+                </ul>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4: 부사 (Adverbs)</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title eng-text first-in-page">Focus 4: 정도부사 심층 분석</div>
+                <div class="sub-header">1. `very` vs. `much` : 원급, 비교급, 최상급 수식</div>
+                <p class="content-paragraph">`very`와 `much`는 수식하는 대상(원급, 비교급, 최상급)에 따라 사용법이 명확하게 구분됩니다.</p>
+                <table class="grammar-table">
+                    <thead><tr><th style="width:20%;">부사</th><th>수식 대상</th><th>예문</th></tr></thead>
+                    <tbody>
+                        <tr><td><b>very</b></td><td><b>원급</b> (형용사/부사)</td><td><span class="ex-eng">This is a <b>very</b> important issue.</span><span class="ex-kor">이것은 매우 중요한 문제이다.</span></td></tr>
+                        <tr><td><b>much</b></td><td><b>비교급</b> (형용사/부사)</td><td><span class="ex-eng">This model is <b>much</b> better than the old one.</span><span class="ex-kor">이 모델은 이전 것보다 훨씬 좋다.</span></td></tr>
+                        <tr><td><b>the very</b></td><td><b>최상급</b> (형용사)</td><td><span class="ex-eng">He is <b>the very</b> best candidate for the job.</span><span class="ex-kor">그는 그 일에 단연코 최고의 후보다.</span></td></tr>
+                    </tbody>
+                </table>
+                
+                <div class="sub-header">2. `too`, `enough`, `so` 용법 비교</div>
+                <p class="content-paragraph">`too`, `enough`, `so`는 정도를 나타내지만, 구조와 뉘앙스에서 중요한 차이를 보입니다.</p>
+                <table class="grammar-table">
+                    <thead><tr><th>부사</th><th>구조 및 뉘앙스</th><th>예문</th></tr></thead>
+                    <tbody>
+                        <tr><td><b>too</b></td><td><b>too + 형/부 + to R</b><br>(부정적: 너무 ~해서 ...할 수 없다)</td><td><span class="ex-eng">The coffee is <b>too hot to drink</b>.</span><span class="ex-kor">커피가 너무 뜨거워서 마실 수 없다.</span></td></tr>
+                        <tr><td><b>enough</b></td><td><b>형/부 + enough + to R</b><br>(긍정적: ...할 만큼 충분히 ~하다)</td><td><span class="ex-eng">He is strong <b>enough to lift</b> the box.</span><span class="ex-kor">그는 그 상자를 들 만큼 충분히 힘이 세다.</span></td></tr>
+                        <tr><td><b>so</b></td><td><b>so + 형/부 + that S + V</b><br>(결과: 매우 ~해서 ...하다)</td><td><span class="ex-eng">The movie was <b>so moving that</b> I cried.</span><span class="ex-kor">영화가 너무 감동적이어서 나는 울었다.</span></td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4: 부사 (Adverbs)</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title eng-text first-in-page">Focus 5: 위치의 힘 - 초점 부사 `only`</div>
+                <p class="content-paragraph">
+                    초점 부사(Focus Adverbs)는 문장 내에서 어느 단어 앞에 위치하느냐에 따라 문장 전체의 의미와 뉘앙스가 극적으로 달라집니다. 수식하는 대상을 정확히 파악하는 독해력이 요구됩니다.
+                </p>
+                <table class="grammar-table focus-table">
+                    <thead>
+                        <tr><th>예문 (Example Sentence)</th><th>`only`의 수식 대상과 의미 변화</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="ex-eng"><b>Only</b> I gave her a book yesterday.</span></td>
+                            <td><span class="focus-point">수식 대상: I (주어)</span><span class="ex-kor">다른 사람은 안 주고, 오직 나만이 그녀에게 책을 주었다.</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="ex-eng">I <b>only</b> gave her a book yesterday.</span></td>
+                            <td><span class="focus-point">수식 대상: gave (동사)</span><span class="ex-kor">다른 행동(읽어주거나 팔지 않고)은 안 하고, 오직 주기만 했다.</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="ex-eng">I gave <b>only</b> her a book yesterday.</span></td>
+                            <td><span class="focus-point">수식 대상: her (간접목적어)</span><span class="ex-kor">다른 사람에겐 안 주고, 오직 그녀에게만 책을 주었다.</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="ex-eng">I gave her <b>only</b> a book yesterday.</span></td>
+                            <td><span class="focus-point">수식 대상: a book (직접목적어)</span><span class="ex-kor">다른 것은 안 주고, 오직 책 한 권만 주었다.</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="ex-eng">I gave her a book <b>only</b> yesterday.</span></td>
+                            <td><span class="focus-point">수식 대상: yesterday (시간부사)</span><span class="ex-kor">다른 날도 아니고, 바로 어제 (책을 주었다).</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+        
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4: 부사 (Adverbs)</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title eng-text first-in-page">Focus 5: 위치의 힘 - 초점 부사 `just`와 `even`</div>
+                <div class="sub-header">`just`의 위치와 의미</div>
+                <p class="content-paragraph">`just`는 위치에 따라 '방금', '단지', '정확히' 등 다양한 의미를 가집니다.</p>
+                <table class="grammar-table focus-table">
+                    <thead><tr><th>예문 (Example Sentence)</th><th>`just`의 의미와 뉘앙스</th></tr></thead>
+                    <tbody>
+                        <tr>
+                            <td><span class="ex-eng">I've <b>just</b> finished the report.</span></td>
+                            <td><span class="focus-point">의미: 방금, 막 (recently)</span><span class="ex-kor">나는 방금 그 보고서를 끝마쳤다.</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="ex-eng">It's <b>just</b> a scratch. Don't worry.</span></td>
+                            <td><span class="focus-point">의미: 단지, 그저 (only, merely)</span><span class="ex-kor">그건 그냥 긁힌 상처일 뿐이야. 걱정 마.</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="ex-eng">This is <b>just</b> what I wanted!</span></td>
+                            <td><span class="focus-point">의미: 정확히, 바로 (exactly)</span><span class="ex-kor">이게 바로 내가 원했던 거야!</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+    
+                <div class="sub-header">`even`의 위치와 의미</div>
+                <p class="content-paragraph">`even`은 '심지어 ~조차도'라는 의미로, 예상 밖의 놀라운 사실을 덧붙일 때 사용합니다.</p>
+                <table class="grammar-table focus-table">
+                     <thead><tr><th>예문 (Example Sentence)</th><th>`even`의 수식 대상과 의미</th></tr></thead>
+                     <tbody>
+                        <tr>
+                            <td><span class="ex-eng"><b>Even</b> <u>a child</u> can solve this puzzle.</span></td>
+                            <td><span class="focus-point">수식 대상: a child (주어)</span><span class="ex-kor">심지어 어린아이조차 이 퍼즐을 풀 수 있다.</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="ex-eng">He didn't <b>even</b> <u>try</u> to help.</span></td>
+                            <td><span class="focus-point">수식 대상: try (동사)</span><span class="ex-kor">그는 심지어 도우려는 시도조차 하지 않았다.</span></td>
+                        </tr>
+                        <tr>
+                            <td><span class="ex-eng">She can speak many languages, <b>even</b> <u>Chinese</u>.</span></td>
+                            <td><span class="focus-point">수식 대상: Chinese (명사)</span><span class="ex-kor">그녀는 많은 언어를 구사할 수 있는데, 심지어 중국어도 한다.</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4: 부사 (Adverbs)</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title eng-text first-in-page">Focus 6: 접속부사 (Conjunctive Adverbs)</div>
+                <p class="content-paragraph">접속부사는 두 개의 독립된 절을 논리적으로 연결하는 역할을 합니다. 접속사와 달리 문법적으로 절을 연결하는 기능은 없으므로, 두 절 사이에 세미콜론(;)을 사용하거나, 마침표(.)로 문장을 분리해야 합니다.</p>
+                <table class="grammar-table">
+                    <thead><tr><th style="width:20%;">논리 관계</th><th style="width:25%;">주요 접속부사</th><th>예문</th></tr></thead>
+                    <tbody>
+                        <tr>
+                            <td><b>대조 (Contrast)</b></td>
+                            <td><code>however</code> (하지만), <code>nevertheless</code> (그럼에도 불구하고), <code>on the other hand</code> (반면에)</td>
+                            <td><span class="ex-eng">He is a talented musician; <b>however</b>, he lacks discipline.</span><span class="ex-kor">그는 재능 있는 음악가이다; 하지만, 그는 규율이 부족하다.</span></td>
+                        </tr>
+                        <tr>
+                            <td><b>결과 (Result)</b></td>
+                            <td><code>therefore</code> (그러므로), <code>consequently</code> (결과적으로), <code>as a result</code> (그 결과), <code>thus</code> (따라서)</td>
+                            <td><span class="ex-eng">The company lost a major contract. <b>Therefore</b>, some layoffs are inevitable.</span><span class="ex-kor">회사는 주요 계약을 잃었다. 따라서, 일부 해고는 불가피하다.</span></td>
+                        </tr>
+                        <tr>
+                            <td><b>부가/첨언 (Addition)</b></td>
+                            <td><code>moreover</code> (게다가), <code>furthermore</code> (더욱이), <code>in addition</code> (게다가), <code>besides</code> (게다가)</td>
+                            <td><span class="ex-eng">The plan is too expensive; <b>furthermore</b>, it is impractical.</span><span class="ex-kor">그 계획은 너무 비싸다; 게다가, 비현실적이다.</span></td>
+                        </tr>
+                        <tr>
+                            <td><b>유사/비교 (Comparison)</b></td>
+                            <td><code>likewise</code> (마찬가지로), <code>similarly</code> (유사하게)</td>
+                            <td><span class="ex-eng">You must complete this assignment by Friday; <b>likewise</b>, the final report is due.</span><span class="ex-kor">너는 이 과제를 금요일까지 끝내야 한다; 마찬가지로, 최종 보고서도 마감이다.</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4: 부사 (Adverbs)</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title eng-text first-in-page">Focus 7: 주요 부사 관용어구</div>
+                <p class="content-paragraph">관용적으로 굳어진 부사구는 독해와 문법 문제 모두에서 중요하게 다뤄집니다. 숙어처럼 암기하여 문맥 속에서 자연스럽게 해석하는 능력을 길러야 합니다.</p>
+                <table class="grammar-table">
+                    <thead><tr><th style="width:30%;">관용어구</th><th style="width:25%;">의미</th><th>예문</th></tr></thead>
+                    <tbody>
+                        <tr>
+                            <td><code>sooner or later</code></td>
+                            <td>조만간, 머지않아</td>
+                            <td><span class="ex-eng"><b>Sooner or later</b>, the truth will come out.</span><span class="ex-kor">조만간 진실은 밝혀질 것이다.</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>once and for all</code></td>
+                            <td>최종적으로, 완전히</td>
+                            <td><span class="ex-eng">We need to solve this problem <b>once and for all</b>.</span><span class="ex-kor">우리는 이 문제를 최종적으로 해결해야 한다.</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>for good</code></td>
+                            <td>영원히</td>
+                            <td><span class="ex-eng">He decided to leave the city <b>for good</b>.</span><span class="ex-kor">그는 그 도시를 영원히 떠나기로 결심했다.</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>by and large</code></td>
+                            <td>전반적으로, 대체로</td>
+                            <td><span class="ex-eng"><b>By and large</b>, the new system is working well.</span><span class="ex-kor">전반적으로 새 시스템은 잘 작동하고 있다.</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>on and off</code></td>
+                            <td>이따금, 때때로</td>
+                            <td><span class="ex-eng">It rained <b>on and off</b> all day.</span><span class="ex-kor">하루 종일 비가 오락가락했다.</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>in vain</code></td>
+                            <td>헛되이</td>
+                            <td><span class="ex-eng">All our efforts were <b>in vain</b>.</span><span class="ex-kor">우리의 모든 노력은 헛수고였다.</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4: 부사 (Adverbs)</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title eng-text first-in-page">Focus 7: 주요 부사 관용어구</div>
+                <table class="grammar-table">
+                    <thead><tr><th style="width:30%;">관용어구</th><th style="width:25%;">의미</th><th>예문</th></tr></thead>
+                    <tbody>
+                        <tr>
+                            <td><code>more or less</code></td>
+                            <td>거의, 대략</td>
+                            <td><span class="ex-eng">The project is <b>more or less</b> finished.</span><span class="ex-kor">그 프로젝트는 거의 끝났다.</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>out of the blue</code></td>
+                            <td>갑자기, 난데없이</td>
+                            <td><span class="ex-eng">He appeared <b>out of the blue</b> after years of silence.</span><span class="ex-kor">수년간의 침묵 끝에 그가 갑자기 나타났다.</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>at random</code></td>
+                            <td>무작위로</td>
+                            <td><span class="ex-eng">The participants were selected <b>at random</b>.</span><span class="ex-kor">참가자들은 무작위로 선정되었다.</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>next to nothing</code></td>
+                            <td>거의 없는, 공짜나 다름없는</td>
+                            <td><span class="ex-eng">She knows <b>next to nothing</b> about politics.</span><span class="ex-kor">그녀는 정치에 대해 아는 것이 거의 없다.</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>upside down</code></td>
+                            <td>거꾸로, 뒤집혀</td>
+                            <td><span class="ex-eng">The boy held the book <b>upside down</b>.</span><span class="ex-kor">그 소년은 책을 거꾸로 들고 있었다.</span></td>
+                        </tr>
+                        <tr>
+                            <td><code>inside out</code></td>
+                            <td>안팎으로 뒤집어 / 속속들이</td>
+                            <td><span class="ex-eng">He knew the subject <b>inside out</b>.</span><span class="ex-kor">그는 그 주제를 속속들이 알고 있었다.</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4: 부사 (Adverbs)</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title eng-text first-in-page">Focus 8: 부사와 도치 (Inversion)</div>
+                <p class="content-paragraph">
+                    특정 부사(구)가 문장의 맨 앞으로 이동하여 강조될 때, 주어와 동사의 위치가 바뀌는 <b>도치</b> 현상이 발생합니다. 이는 편입 문법에서 가장 중요한 고난도 영역 중 하나로, 어순의 변화를 정확히 파악해야 합니다.
+                </p>
+                <div class="sub-header">1. 부정 부사(구)가 문두에 올 때</div>
+                <p class="content-paragraph"><code>Never</code>, <code>Hardly</code>, <code>Scarcely</code>, <code>Little</code>, <code>No sooner</code>, <code>Not only</code>, <code>Seldom</code> 등 부정의 의미를 지닌 부사(구)가 문두로 오면, 그 뒤의 절은 <b>의문문 어순 (조동사/be동사 + 주어 + 본동사)</b>으로 도치됩니다.</p>
+                <ul class="example-list">
+                    <li><span class="ex-eng">I have <b>never</b> seen such a beautiful sight.</span><br>→ <b>Never</b> <u>have I seen</u> such a beautiful sight.</li>
+                    <li><span class="ex-eng">He <b>little</b> knew what was about to happen.</span><br>→ <b>Little</b> <u>did he know</u> what was about to happen.</li>
+                    <li><span class="ex-eng">She had <b>hardly</b> arrived <b>when</b> he started complaining.</span><br>→ <b>Hardly</b> <u>had she arrived</u> <b>when</b> he started complaining.</li>
+                </ul>
+                <div class="tip-box">
+                    <div class="tip-box-title eng-text">Vera's Flavor Tip | `No sooner ~ than`, `Hardly/Scarcely ~ when/before`</div>
+                    <p>이 구문들은 '~하자마자 ...했다'는 의미로, 도치와 시제(과거완료)가 결합된 최상위 난도 문제로 출제됩니다. 짝을 이루는 접속사(than, when, before)를 정확히 암기해야 합니다.</p>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4: 부사 (Adverbs)</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title eng-text first-in-page">Focus 8: 부사와 도치</div>
+                <div class="sub-header">2. 'Only' 부사구가 문두에 올 때</div>
+                <p class="content-paragraph">`Only`가 단독으로 문두에 올 때는 도치가 일어나지 않지만, <b>`Only + 부사/부사구/부사절`</b>이 문두로 올 경우, <b>주절</b>에서 도치가 발생합니다.</p>
+                <ul class="example-list">
+                    <li><span class="ex-eng">You can succeed <b>only by working hard</b>.</span><br>→ <b>Only by working hard</b> <u>can you succeed</u>.</li>
+                    <li><span class="ex-eng">He realized the truth <b>only after she had left</b>.</span><br>→ <b>Only after she had left</b> <u>did he realize</u> the truth.</li>
+                </ul>
+    
+                <div class="sub-header">3. 장소/방향 부사구가 문두에 올 때</div>
+                <p class="content-paragraph">장소나 방향을 나타내는 부사구가 문두로 와서 강조될 때, <b>1형식 자동사</b>의 경우 <b>`동사 + 주어`</b> 순으로 도치됩니다. 단, 주어가 대명사일 때는 도치되지 않습니다.</p>
+                <ul class="example-list">
+                    <li><span class="ex-eng">A strange man stood <b>in the doorway</b>.</span><br>→ <b>In the doorway</b> <u>stood a strange man</u>.</li>
+                    <li><span class="ex-eng">The bus comes <b>here</b>.</span><br>→ <b>Here</b> <u>comes the bus</u>. (O)<br>→ <b>Here</b> <u>it comes</u>. (O, 주어가 대명사이므로 도치 X)</li>
+                </ul>
+    
+                <div class="sub-header">4. `So`, `Neither`, `Nor` 도치</div>
+                <p class="content-paragraph">앞 문장의 내용에 동의할 때 사용되며, 긍정문에는 `So`, 부정문에는 `Neither` 또는 `Nor`를 사용합니다.</p>
+                <ul class="example-list">
+                    <li><span class="ex-eng">A: I am tired. B: <b>So am I</b>. (나도 그래.)</span></li>
+                    <li><span class="ex-eng">A: She can't speak French. B: <b>Neither can I</b>. (나도 못해.)</span></li>
+                </ul>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4: 부사 (Adverbs)</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title eng-text first-in-page">자주 하는 질문과 답변 (심화)</div>
+                <div class="tip-box">
+                    <p><b>Q1: `too ... to R` 구문은 왜 부정적인 의미로 해석되나요?</b><br>
+                    A: 부사 `too`는 '지나치게, 과도하게'라는 부정적인 뉘앙스를 내포하고 있습니다. 따라서 `too + 형용사`는 '어떤 기준을 초과하여 과도하게 ~한' 상태를 의미합니다. 이 상태에서 `to 부정사`가 이어지면, 그 과도함 때문에 to 부정사의 행동을 '할 수 없다'는 논리적 결과로 이어집니다. 즉, '너무 ~해서 ...하기에는 지나치다' → '너무 ~해서 ...할 수 없다'로 해석되는 것입니다.</p>
+                </div>
+                <div class="tip-box">
+                    <p><b>Q2: `also`, `too`, `either`는 모두 '또한'이라는 뜻인데, 어떻게 다른가요?</b><br>
+                    A: 문장의 종류와 위치에 따라 사용법이 명확히 구분됩니다.<br>
+                    • <b>also:</b> 긍정문에서 주로 사용되며, 동사 앞에 위치하는 것이 일반적입니다. (e.g., She speaks French, and she <b>also</b> speaks Spanish.)<br>
+                    • <b>too:</b> 긍정문에서 사용되며, 문장의 맨 끝에 위치합니다. (e.g., I like coffee, and my brother likes it, <b>too</b>.)<br>
+                    • <b>either:</b> 부정문에서 사용되며, 문장의 맨 끝에 위치합니다. (e.g., He doesn't like the movie, and I don't like it, <b>either</b>.)</p>
+                </div>
+                <div class="tip-box">
+                    <p><b>Q3: 시간 부사 `ago`와 `before`의 차이점은 무엇인가요?</b><br>
+                    A: 기준 시점이 다릅니다. 이는 동사의 시제와 밀접한 관련이 있어 매우 중요한 구별 포인트입니다.<br>
+                    • <b>ago:</b> 항상 <b>현재</b>를 기준으로 '지금으로부터 ~ 전에'라는 의미를 나타내며, <b>과거 시제</b>와 함께 사용됩니다. (e.g., I met him three years <b>ago</b>.)<br>
+                    • <b>before:</b> <b>과거의 특정 시점</b>을 기준으로 '그보다 더 이전에'라는 의미를 나타내며, 주로 <b>과거완료 시제</b>와 함께 사용됩니다. (e.g., When I arrived, he had left ten minutes <b>before</b>.)</p>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+    </body>
+    </html>
+        <!-- =================================================================== -->
+        <!-- 연습문제 페이지 시작 (151-200)                                      -->
+        <!-- =================================================================== -->
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 4 - Practice Problems</div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">151</span></div>
+                    <div class="problem-text">"The experiment was <u>remarkably</u> successful, yielding results that were statistically significant."</div>
+                    <div class="problem-question">다음 문장에서 밑줄 친 부사가 수식하는 대상으로 가장 적절한 것은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> 동사 was</li>
+                        <li><span class="choice-number">②</span> 형용사 successful</li>
+                        <li><span class="choice-number">③</span> 명사 experiment</li>
+                        <li><span class="choice-number">④</span> 부사 statistically</li>
+                        <li><span class="choice-number">⑤</span> 문장 전체</li>
+                    </ul>
+                </div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">152</span></div>
+                    <div class="problem-question">다음 중 어법상 올바른 문장은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> Seldom does the company announce such significant changes without prior notice.</li>
+                        <li><span class="choice-number">②</span> Hardly had I arrived home when the phone rang.</li>
+                        <li><span class="choice-number">③</span> Little did she knew about the complexity of the situation.</li>
+                        <li><span class="choice-number">④</span> Never I have encountered such a dedicated researcher.</li>
+                        <li><span class="choice-number">⑤</span> Scarcely the meeting had begun than the fire alarm went off.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 4 - Practice Problems</div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">153</span></div>
+                    <div class="problem-text">The students were _______ confused by the professor's explanation, but they were _______ interested in the topic to ask further questions.</div>
+                    <div class="problem-question">다음 빈칸에 들어갈 말로 가장 적절한 것은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> very / much</li>
+                        <li><span class="choice-number">②</span> much / very</li>
+                        <li><span class="choice-number">③</span> very / very</li>
+                        <li><span class="choice-number">④</span> much / much</li>
+                        <li><span class="choice-number">⑤</span> so / too</li>
+                    </ul>
+                </div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">154</span></div>
+                    <div class="problem-question">다음 중 빈도부사의 위치가 어법상 잘못된 것은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> She usually arrives at the office before 9 AM.</li>
+                        <li><span class="choice-number">②</span> The researchers have always been careful about data accuracy.</li>
+                        <li><span class="choice-number">③</span> Sometimes are the results not what we expected.</li>
+                        <li><span class="choice-number">④</span> He is never satisfied with mediocre performance.</li>
+                        <li><span class="choice-number">⑤</span> We will often discuss these issues in our meetings.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 4 - Practice Problems</div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">155</span></div>
+                    <div class="problem-text">
+                        A: "The helicopter flew _______ over the mountain peaks."<br>
+                        B: "Yes, and the pilot was _______ skilled to navigate through such difficult terrain."
+                    </div>
+                    <div class="problem-question">다음 대화에서 빈칸에 들어갈 말로 가장 적절한 것은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> high / high</li>
+                        <li><span class="choice-number">②</span> highly / highly</li>
+                        <li><span class="choice-number">③</span> high / highly</li>
+                        <li><span class="choice-number">④</span> highly / high</li>
+                        <li><span class="choice-number">⑤</span> high / very</li>
+                    </ul>
+                </div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">156</span></div>
+                    <div class="problem-question">다음 중 의미가 다른 하나는?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> Only she understood the professor's lecture.</li>
+                        <li><span class="choice-number">②</span> She only understood the professor's lecture.</li>
+                        <li><span class="choice-number">③</span> She understood only the professor's lecture.</li>
+                        <li><span class="choice-number">④</span> She understood the professor's lecture only.</li>
+                        <li><span class="choice-number">⑤</span> She understood the only professor's lecture.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 4 - Practice Problems</div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">157</span></div>
+                    <div class="problem-text">
+                        A: "Has the research team published their findings _______?"<br>
+                        B: "No, they haven't completed the peer review process _______. They're _______ working on revisions."
+                    </div>
+                    <div class="problem-question">다음 빈칸에 들어갈 말로 가장 적절한 것은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> yet / yet / still</li>
+                        <li><span class="choice-number">②</span> already / still / yet</li>
+                        <li><span class="choice-number">③</span> still / already / yet</li>
+                        <li><span class="choice-number">④</span> yet / already / still</li>
+                        <li><span class="choice-number">⑤</span> already / yet / still</li>
+                    </ul>
+                </div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">158</span></div>
+                    <div class="problem-question">다음 문장에서 부사들의 배열이 어법상 가장 자연스러운 것은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> The scientists worked carefully in the laboratory yesterday.</li>
+                        <li><span class="choice-number">②</span> The scientists worked in the laboratory carefully yesterday.</li>
+                        <li><span class="choice-number">③</span> The scientists worked yesterday carefully in the laboratory.</li>
+                        <li><span class="choice-number">④</span> Yesterday the scientists worked carefully in the laboratory.</li>
+                        <li><span class="choice-number">⑤</span> In the laboratory the scientists worked yesterday carefully.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 4 - Practice Problems</div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">159</span></div>
+                    <div class="problem-question">다음 중 어법상 올바른 문장은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> The problem is too complex to solve it easily.</li>
+                        <li><span class="choice-number">②</span> She is intelligent enough solving this equation.</li>
+                        <li><span class="choice-number">③</span> The lecture was so boring that many students fell asleep.</li>
+                        <li><span class="choice-number">④</span> He is too young for understanding advanced concepts.</li>
+                        <li><span class="choice-number">⑤</span> The equipment is enough sensitive to detect minor changes.</li>
+                    </ul>
+                </div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">160</span></div>
+                    <div class="problem-text">"I have never seen such dedication in a student."</div>
+                    <div class="problem-question">다음 문장을 부정부사 'Never'로 시작하도록 바꾼 것 중 올바른 것은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> Never I have seen such dedication in a student.</li>
+                        <li><span class="choice-number">②</span> Never have I seen such dedication in a student.</li>
+                        <li><span class="choice-number">③</span> Never I saw such dedication in a student.</li>
+                        <li><span class="choice-number">④</span> Never did I have seen such dedication in a student.</li>
+                        <li><span class="choice-number">⑤</span> Never had I seen such dedication in a student.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 4 - Practice Problems</div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">161</span></div>
+                    <div class="problem-text">"The professor said that <u>even advanced students</u> struggled with this concept."</div>
+                    <div class="problem-question">다음 문장에서 밑줄 친 부분의 의미로 가장 적절한 것은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> 고급 학생들조차도 이 개념에 어려움을 겪었다</li>
+                        <li><span class="choice-number">②</span> 고급 학생들은 이 개념에 어려움을 겪기까지 했다</li>
+                        <li><span class="choice-number">③</span> 고급 학생들만이 이 개념에 어려움을 겪었다</li>
+                        <li><span class="choice-number">④</span> 고급 학생들은 이 개념을 이해하기도 했다</li>
+                        <li><span class="choice-number">⑤</span> 고급 학생들은 특히 이 개념에 어려움을 겪었다</li>
+                    </ul>
+                </div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">162</span></div>
+                    <div class="problem-question">다음 중 어법상 올바른 문장은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> Not until the experiment was completed did we realize the significance.</li>
+                        <li><span class="choice-number">②</span> Not until the experiment was completed we realized the significance.</li>
+                        <li><span class="choice-number">③</span> Not until did the experiment complete we realized the significance.</li>
+                        <li><span class="choice-number">④</span> Not until was the experiment completed did we realize the significance.</li>
+                        <li><span class="choice-number">⑤</span> Not until the experiment completed did we realize the significance.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 4 - Practice Problems</div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">163</span></div>
+                    <div class="problem-text">The research findings were _______ significant that they revolutionized our understanding of the phenomenon.</div>
+                    <div class="problem-question">다음 문장에서 빈칸에 들어갈 말로 가장 적절한 것은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> very</li>
+                        <li><span class="choice-number">②</span> quite</li>
+                        <li><span class="choice-number">③</span> rather</li>
+                        <li><span class="choice-number">④</span> so</li>
+                        <li><span class="choice-number">⑤</span> too</li>
+                    </ul>
+                </div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">164</span></div>
+                    <div class="problem-question">다음 중 방법부사의 위치가 어법상 가장 자연스러운 것은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> She quickly solved the mathematical problem.</li>
+                        <li><span class="choice-number">②</span> She solved quickly the mathematical problem.</li>
+                        <li><span class="choice-number">③</span> She solved the mathematical problem quickly.</li>
+                        <li><span class="choice-number">④</span> Quickly she solved the mathematical problem.</li>
+                        <li><span class="choice-number">⑤</span> She solved the quickly mathematical problem.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 4 - Practice Problems</div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">165</span></div>
+                    <div class="problem-text">"Despite working _______ for months, the team could _______ believe they had finally achieved their goal."</div>
+                    <div class="problem-question">다음 빈칸에 들어갈 말로 가장 적절한 것은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> hard / hard</li>
+                        <li><span class="choice-number">②</span> hardly / hardly</li>
+                        <li><span class="choice-number">③</span> hard / hardly</li>
+                        <li><span class="choice-number">④</span> hardly / hard</li>
+                        <li><span class="choice-number">⑤</span> hard / never</li>
+                    </ul>
+                </div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">166</span></div>
+                    <div class="problem-question">다음 중 어법상 올바른 문장은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> I have already finished my assignment yesterday.</li>
+                        <li><span class="choice-number">②</span> She has been recently promoted to manager.</li>
+                        <li><span class="choice-number">③</span> We have just completed the project this morning.</li>
+                        <li><span class="choice-number">④</span> They have lately been working on the proposal.</li>
+                        <li><span class="choice-number">⑤</span> He has never before experienced such success.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 4 - Practice Problems</div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">167</span></div>
+                    <div class="problem-text">"The conference will be held <u>abroad</u> next year."</div>
+                    <div class="problem-question">다음 문장에서 밑줄 친 부사의 의미로 가장 적절한 것은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> 넓게</li>
+                        <li><span class="choice-number">②</span> 해외에서</li>
+                        <li><span class="choice-number">③</span> 널리</li>
+                        <li><span class="choice-number">④</span> 공개적으로</li>
+                        <li><span class="choice-number">⑤</span> 멀리</li>
+                    </ul>
+                </div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">168</span></div>
+                    <div class="problem-question">다음 중 어법상 올바른 문장은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> Only when the results were analyzed did we understand the implications.</li>
+                        <li><span class="choice-number">②</span> Only when the results were analyzed we understood the implications.</li>
+                        <li><span class="choice-number">③</span> Only when were the results analyzed did we understand the implications.</li>
+                        <li><span class="choice-number">④</span> Only when the results analyzed did we understand the implications.</li>
+                        <li><span class="choice-number">⑤</span> Only when did the results analyze we understood the implications.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 4 - Practice Problems</div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">169</span></div>
+                    <div class="problem-question">다음 중 어법상 잘못된 문장은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> The presentation was very interesting.</li>
+                        <li><span class="choice-number">②</span> He was very surprised by the news.</li>
+                        <li><span class="choice-number">③</span> The results were very disappointing.</li>
+                        <li><span class="choice-number">④</span> She felt very pleased with her performance.</li>
+                        <li><span class="choice-number">⑤</span> The data was very analyzed by experts.</li>
+                    </ul>
+                </div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">170</span></div>
+                    <div class="problem-question">다음 중 의미상 가장 적절한 문장은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> He always doesn't come to class on time.</li>
+                        <li><span class="choice-number">②</span> He doesn't always come to class on time.</li>
+                        <li><span class="choice-number">③</span> He never always comes to class on time.</li>
+                        <li><span class="choice-number">④</span> Always he doesn't come to class on time.</li>
+                        <li><span class="choice-number">⑤</span> He comes always not to class on time.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 4 - Practice Problems</div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">171</span></div>
+                    <div class="problem-text">
+                        A: "Dr. Smith arrived _______ for the meeting yesterday."<br>
+                        B: "Has he been arriving _______ to meetings _______?"
+                    </div>
+                    <div class="problem-question">다음 대화에서 빈칸에 들어갈 말로 가장 적절한 것은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> late / late / lately</li>
+                        <li><span class="choice-number">②</span> lately / lately / late</li>
+                        <li><span class="choice-number">③</span> late / lately / late</li>
+                        <li><span class="choice-number">④</span> lately / late / lately</li>
+                        <li><span class="choice-number">⑤</span> late / late / late</li>
+                    </ul>
+                </div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">172</span></div>
+                    <div class="problem-question">다음 중 어법상 올바른 문장은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> She works more carefully than before.</li>
+                        <li><span class="choice-number">②</span> He arrived more early than expected.</li>
+                        <li><span class="choice-number">③</span> The machine operates more efficiently than the old one.</li>
+                        <li><span class="choice-number">④</span> They spoke more quietly in the library.</li>
+                        <li><span class="choice-number">⑤</span> She answered more correctly than others.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 4 - Practice Problems</div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">173</span></div>
+                    <div class="problem-question">다음 중 어법상 올바른 문장은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> No sooner had the lecture begun than students started taking notes.</li>
+                        <li><span class="choice-number">②</span> No sooner the lecture had begun than students started taking notes.</li>
+                        <li><span class="choice-number">③</span> No sooner had the lecture begun when students started taking notes.</li>
+                        <li><span class="choice-number">④</span> No sooner did the lecture begin than students started taking notes.</li>
+                        <li><span class="choice-number">⑤</span> No sooner the lecture began than students started taking notes.</li>
+                    </ul>
+                </div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">174</span></div>
+                    <div class="problem-text">"The team discovered the error <u>only after extensive analysis</u>."</div>
+                    <div class="problem-question">다음 문장에서 밑줄 친 부분을 문두로 이동시킬 때 올바른 것은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> Only after extensive analysis the team discovered the error.</li>
+                        <li><span class="choice-number">②</span> Only after extensive analysis did the team discover the error.</li>
+                        <li><span class="choice-number">③</span> Only after extensive analysis discovered the team the error.</li>
+                        <li><span class="choice-number">④</span> Only after extensive analysis was the error discovered by the team.</li>
+                        <li><span class="choice-number">⑤</span> Only after extensive analysis the error was discovered by the team.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 4 - Practice Problems</div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">175</span></div>
+                    <div class="problem-text">The patients were _______ improved after the new treatment, and the doctors were _______ encouraged by the results.</div>
+                    <div class="problem-question">다음 빈칸에 들어갈 말로 가장 적절한 것은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> much / very</li>
+                        <li><span class="choice-number">②</span> very / much</li>
+                        <li><span class="choice-number">③</span> much / much</li>
+                        <li><span class="choice-number">④</span> very / very</li>
+                        <li><span class="choice-number">⑤</span> so / too</li>
+                    </ul>
+                </div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">176</span></div>
+                    <div class="problem-question">다음 중 어법상 잘못된 것은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> She spoke softly to avoid waking the baby.</li>
+                        <li><span class="choice-number">②</span> The experiment was conducted systematic.</li>
+                        <li><span class="choice-number">③</span> He answered the question confidently.</li>
+                        <li><span class="choice-number">④</span> The project was completed successfully.</li>
+                        <li><span class="choice-number">⑤</span> They worked diligently throughout the night.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 4 - Practice Problems</div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">177</span></div>
+                    <div class="problem-question">다음 중 어법상 가장 자연스러운 문장은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> The researchers presented their findings clearly at the conference yesterday.</li>
+                        <li><span class="choice-number">②</span> The researchers presented clearly their findings at the conference yesterday.</li>
+                        <li><span class="choice-number">③</span> The researchers presented their findings at the conference clearly yesterday.</li>
+                        <li><span class="choice-number">④</span> The researchers clearly presented their findings at the conference yesterday.</li>
+                        <li><span class="choice-number">⑤</span> At the conference the researchers presented their findings clearly yesterday.</li>
+                    </ul>
+                </div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">178</span></div>
+                    <div class="problem-question">다음 중 어법상 올바른 문장은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> Little she knew about the consequences of her decision.</li>
+                        <li><span class="choice-number">②</span> Little did she know about the consequences of her decision.</li>
+                        <li><span class="choice-number">③</span> Little she did know about the consequences of her decision.</li>
+                        <li><span class="choice-number">④</span> Little knew she about the consequences of her decision.</li>
+                        <li><span class="choice-number">⑤</span> Little does she knew about the consequences of her decision.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 4 - Practice Problems</div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">179</span></div>
+                    <div class="problem-text">"The professor <u>certainly</u> knows how to explain complex theories."</div>
+                    <div class="problem-question">다음 문장에서 밑줄 친 부사의 역할로 가장 적절한 것은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> 빈도를 나타냄</li>
+                        <li><span class="choice-number">②</span> 확신을 나타냄</li>
+                        <li><span class="choice-number">③</span> 정도를 나타냄</li>
+                        <li><span class="choice-number">④</span> 방법을 나타냄</li>
+                        <li><span class="choice-number">⑤</span> 시간을 나타냄</li>
+                    </ul>
+                </div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">180</span></div>
+                    <div class="problem-text">The scientists examined the specimen _______ and found that it was _______ identical to the reference sample.</div>
+                    <div class="problem-question">다음 빈칸에 들어갈 말로 가장 적절한 것은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> closely / nearly</li>
+                        <li><span class="choice-number">②</span> nearly / closely</li>
+                        <li><span class="choice-number">③</span> close / near</li>
+                        <li><span class="choice-number">④</span> near / close</li>
+                        <li><span class="choice-number">⑤</span> closely / closely</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 4 - Practice Problems</div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">181</span></div>
+                    <div class="problem-question">다음 중 어법상 올바른 문장은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> Rarely do scientists achieve such breakthrough results.</li>
+                        <li><span class="choice-number">②</span> Rarely scientists achieve such breakthrough results.</li>
+                        <li><span class="choice-number">③</span> Rarely achieve scientists such breakthrough results.</li>
+                        <li><span class="choice-number">④</span> Rarely scientists do achieve such breakthrough results.</li>
+                        <li><span class="choice-number">⑤</span> Rarely do achieve scientists such breakthrough results.</li>
+                    </ul>
+                </div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">182</span></div>
+                    <div class="problem-text">"The students were particularly interested in the advanced research methods."</div>
+                    <div class="problem-question">다음 문장에서 'particularly'가 수식하는 것은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> students</li>
+                        <li><span class="choice-number">②</span> were</li>
+                        <li><span class="choice-number">③</span> interested</li>
+                        <li><span class="choice-number">④</span> advanced</li>
+                        <li><span class="choice-number">⑤</span> methods</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 4 - Practice Problems</div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">183</span></div>
+                    <div class="problem-question">다음 중 어법상 올바른 문장은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> He recently has completed his dissertation.</li>
+                        <li><span class="choice-number">②</span> She has recently been appointed as director.</li>
+                        <li><span class="choice-number">③</span> They recently have been working on the project.</li>
+                        <li><span class="choice-number">④</span> We recently have received the approval.</li>
+                        <li><span class="choice-number">⑤</span> I recently have been studying for the exam.</li>
+                    </ul>
+                </div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">184</span></div>
+                    <div class="problem-question">다음 중 어법상 올바른 문장은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> Having completed the experiment, carefully the data was analyzed.</li>
+                        <li><span class="choice-number">②</span> Having completed the experiment, the data was carefully analyzed.</li>
+                        <li><span class="choice-number">③</span> Carefully having completed the experiment, the data was analyzed.</li>
+                        <li><span class="choice-number">④</span> Having carefully completed the experiment, analyzed was the data.</li>
+                        <li><span class="choice-number">⑤</span> Having completed carefully the experiment, the data was analyzed.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 4 - Practice Problems</div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">185</span></div>
+                    <div class="problem-text">The audience consisted _______ of graduate students, and they were the _______ attentive group the professor had ever taught.</div>
+                    <div class="problem-question">다음 빈칸에 들어갈 말로 가장 적절한 것은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> most / mostly</li>
+                        <li><span class="choice-number">②</span> mostly / most</li>
+                        <li><span class="choice-number">③</span> most / most</li>
+                        <li><span class="choice-number">④</span> mostly / mostly</li>
+                        <li><span class="choice-number">⑤</span> mainly / most</li>
+                    </ul>
+                </div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">186</span></div>
+                    <div class="problem-question">다음 중 가장 강조적인 의미를 가진 문장은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> She definitely will succeed in her research.</li>
+                        <li><span class="choice-number">②</span> She will definitely succeed in her research.</li>
+                        <li><span class="choice-number">③</span> She will succeed definitely in her research.</li>
+                        <li><span class="choice-number">④</span> She will succeed in her research definitely.</li>
+                        <li><span class="choice-number">⑤</span> Definitely, she will succeed in her research.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 4 - Practice Problems</div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">187</span></div>
+                    <div class="problem-question">다음 중 어법상 올바른 문장은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> Under no circumstances should students cheat on exams.</li>
+                        <li><span class="choice-number">②</span> Under no circumstances students should cheat on exams.</li>
+                        <li><span class="choice-number">③</span> Under no circumstances should cheat students on exams.</li>
+                        <li><span class="choice-number">④</span> Under no circumstances students should not cheat on exams.</li>
+                        <li><span class="choice-number">⑤</span> Under no circumstances should students not cheat on exams.</li>
+                    </ul>
+                </div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">188</span></div>
+                    <div class="problem-question">다음 중 어법상 올바른 문장은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> The new method is much more effective than the previous one.</li>
+                        <li><span class="choice-number">②</span> The new method is very more effective than the previous one.</li>
+                        <li><span class="choice-number">③</span> The new method is too more effective than the previous one.</li>
+                        <li><span class="choice-number">④</span> The new method is quite more effective than the previous one.</li>
+                        <li><span class="choice-number">⑤</span> The new method is so more effective than the previous one.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 4 - Practice Problems</div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">189</span></div>
+                    <div class="problem-question">다음 중 어법상 올바른 문장은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> She almost read the entire book in one day.</li>
+                        <li><span class="choice-number">②</span> She read almost the entire book in one day.</li>
+                        <li><span class="choice-number">③</span> She read the almost entire book in one day.</li>
+                        <li><span class="choice-number">④</span> She read the entire almost book in one day.</li>
+                        <li><span class="choice-number">⑤</span> Almost she read the entire book in one day.</li>
+                    </ul>
+                </div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">190</span></div>
+                    <div class="problem-question">다음 중 의미가 가장 강한 것은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> He frequently makes mistakes.</li>
+                        <li><span class="choice-number">②</span> He often makes mistakes.</li>
+                        <li><span class="choice-number">③</span> He usually makes mistakes.</li>
+                        <li><span class="choice-number">④</span> He always makes mistakes.</li>
+                        <li><span class="choice-number">⑤</span> He sometimes makes mistakes.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 4 - Practice Problems</div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">191</span></div>
+                    <div class="problem-question">다음 중 어법상 가장 자연스러운 문장은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> The professor spoke clearly and slowly during the lecture in the auditorium yesterday.</li>
+                        <li><span class="choice-number">②</span> The professor spoke clearly and slowly in the auditorium during the lecture yesterday.</li>
+                        <li><span class="choice-number">③</span> The professor spoke clearly and slowly yesterday during the lecture in the auditorium.</li>
+                        <li><span class="choice-number">④</span> Yesterday the professor spoke clearly and slowly during the lecture in the auditorium.</li>
+                        <li><span class="choice-number">⑤</span> In the auditorium the professor spoke clearly and slowly during the lecture yesterday.</li>
+                    </ul>
+                </div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">192</span></div>
+                    <div class="problem-question">다음 중 어법상 잘못된 문장은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> The medicine worked effectively on all patients.</li>
+                        <li><span class="choice-number">②</span> She efficiently organized the conference materials.</li>
+                        <li><span class="choice-number">③</span> The team cooperated successfully on the project.</li>
+                        <li><span class="choice-number">④</span> He specifically requested additional information.</li>
+                        <li><span class="choice-number">⑤</span> The results were significantly different from previous studies.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 4 - Practice Problems</div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">193</span></div>
+                    <div class="problem-question">다음 중 어법상 올바른 문장은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> Should you need any assistance, please contact us immediately.</li>
+                        <li><span class="choice-number">②</span> Should you need any assistance, contact us please immediately.</li>
+                        <li><span class="choice-number">③</span> You should need any assistance, please contact us immediately.</li>
+                        <li><span class="choice-number">④</span> Should need you any assistance, please contact us immediately.</li>
+                        <li><span class="choice-number">⑤</span> Should you any assistance need, please contact us immediately.</li>
+                    </ul>
+                </div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">194</span></div>
+                    <div class="problem-text">
+                        A: "Did she complete the assignment carefully?"<br>
+                        B: _______
+                    </div>
+                    <div class="problem-question">다음 대화에서 B의 답변 중 어법상 올바른 것은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> "Yes, she did it."</li>
+                        <li><span class="choice-number">②</span> "Yes, she did carefully."</li>
+                        <li><span class="choice-number">③</span> "Yes, she did so."</li>
+                        <li><span class="choice-number">④</span> "Yes, she completed."</li>
+                        <li><span class="choice-number">⑤</span> "Yes, carefully she did."</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 4 - Practice Problems</div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">195</span></div>
+                    <div class="problem-question">다음 중 어법상 올바른 문장은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> He suggested carefully reviewing the proposal.</li>
+                        <li><span class="choice-number">②</span> He suggested reviewing carefully the proposal.</li>
+                        <li><span class="choice-number">③</span> He carefully suggested reviewing the proposal.</li>
+                        <li><span class="choice-number">④</span> He suggested reviewing the proposal carefully.</li>
+                        <li><span class="choice-number">⑤</span> 모든 문장이 올바름</li>
+                    </ul>
+                </div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">196</span></div>
+                    <div class="problem-question">다음 중 의미상 가장 적절한 문장은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> The theory is very extremely important.</li>
+                        <li><span class="choice-number">②</span> The theory is quite very important.</li>
+                        <li><span class="choice-number">③</span> The theory is extremely important.</li>
+                        <li><span class="choice-number">④</span> The theory is too very important.</li>
+                        <li><span class="choice-number">⑤</span> The theory is so very important.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 4 - Practice Problems</div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">197</span></div>
+                    <div class="problem-question">다음 중 어법상 올바른 문장은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> The experiment was carefully conducted by experienced researchers.</li>
+                        <li><span class="choice-number">②</span> The experiment was conducted carefully by experienced researchers.</li>
+                        <li><span class="choice-number">③</span> Carefully the experiment was conducted by experienced researchers.</li>
+                        <li><span class="choice-number">④</span> The experiment carefully was conducted by experienced researchers.</li>
+                        <li><span class="choice-number">⑤</span> 모든 문장이 올바름</li>
+                    </ul>
+                </div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">198</span></div>
+                    <div class="problem-question">다음 중 어법상 올바른 문장은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> The student who always studies hard will succeed.</li>
+                        <li><span class="choice-number">②</span> The student who studies always hard will succeed.</li>
+                        <li><span class="choice-number">③</span> The student who studies hard always will succeed.</li>
+                        <li><span class="choice-number">④</span> The always student who studies hard will succeed.</li>
+                        <li><span class="choice-number">⑤</span> The student always who studies hard will succeed.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 4 - Practice Problems</div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">199</span></div>
+                    <div class="problem-question">다음 중 어법상 올바른 문장은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> Fortunately, the weather improved before the outdoor experiment.</li>
+                        <li><span class="choice-number">②</span> The weather, fortunately, improved before the outdoor experiment.</li>
+                        <li><span class="choice-number">③</span> The weather improved, fortunately, before the outdoor experiment.</li>
+                        <li><span class="choice-number">④</span> The weather improved before the outdoor experiment, fortunately.</li>
+                        <li><span class="choice-number">⑤</span> 모든 문장이 올바름</li>
+                    </ul>
+                </div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">200</span></div>
+                    <div class="problem-text">"Never before had scientists ①<u>observed</u> such a phenomenon so ②<u>closely</u>. The team ③<u>carefully</u> analyzed the data and found that the results were ④<u>much</u> significant than ⑤<u>previously</u> thought."</div>
+                    <div class="problem-question">다음 글에서 어법상 잘못된 부분은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> observed</li>
+                        <li><span class="choice-number">②</span> closely</li>
+                        <li><span class="choice-number">③</span> carefully</li>
+                        <li><span class="choice-number">④</span> much</li>
+                        <li><span class="choice-number">⑤</span> previously</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+
+        <!-- =================================================================== -->
+        <!-- 정답 및 해설 페이지 시작                                              -->
+        <!-- =================================================================== -->
+        <div class="page answer-key-section">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4 정답 및 해설</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title first-in-page eng-text">Quick Answers</div>
+                <div class="quick-answer-grid" style="grid-template-columns: repeat(auto-fit, minmax(65px, 1fr));">
+                    <div class="quick-answer-item"><span class="num">151.</span> <span class="ans">②</span></div>
+                    <div class="quick-answer-item"><span class="num">152.</span> <span class="ans">①</span></div>
+                    <div class="quick-answer-item"><span class="num">153.</span> <span class="ans">②</span></div>
+                    <div class="quick-answer-item"><span class="num">154.</span> <span class="ans">③</span></div>
+                    <div class="quick-answer-item"><span class="num">155.</span> <span class="ans">③</span></div>
+                    <div class="quick-answer-item"><span class="num">156.</span> <span class="ans">⑤</span></div>
+                    <div class="quick-answer-item"><span class="num">157.</span> <span class="ans">①</span></div>
+                    <div class="quick-answer-item"><span class="num">158.</span> <span class="ans">②</span></div>
+                    <div class="quick-answer-item"><span class="num">159.</span> <span class="ans">③</span></div>
+                    <div class="quick-answer-item"><span class="num">160.</span> <span class="ans">②</span></div>
+                    <div class="quick-answer-item"><span class="num">161.</span> <span class="ans">①</span></div>
+                    <div class="quick-answer-item"><span class="num">162.</span> <span class="ans">①</span></div>
+                    <div class="quick-answer-item"><span class="num">163.</span> <span class="ans">④</span></div>
+                    <div class="quick-answer-item"><span class="num">164.</span> <span class="ans">③</span></div>
+                    <div class="quick-answer-item"><span class="num">165.</span> <span class="ans">③</span></div>
+                    <div class="quick-answer-item"><span class="num">166.</span> <span class="ans">⑤</span></div>
+                    <div class="quick-answer-item"><span class="num">167.</span> <span class="ans">②</span></div>
+                    <div class="quick-answer-item"><span class="num">168.</span> <span class="ans">①</span></div>
+                    <div class="quick-answer-item"><span class="num">169.</span> <span class="ans">⑤</span></div>
+                    <div class="quick-answer-item"><span class="num">170.</span> <span class="ans">②</span></div>
+                    <div class="quick-answer-item"><span class="num">171.</span> <span class="ans">①</span></div>
+                    <div class="quick-answer-item"><span class="num">172.</span> <span class="ans">③</span></div>
+                    <div class="quick-answer-item"><span class="num">173.</span> <span class="ans">①</span></div>
+                    <div class="quick-answer-item"><span class="num">174.</span> <span class="ans">②</span></div>
+                    <div class="quick-answer-item"><span class="num">175.</span> <span class="ans">③</span></div>
+                    <div class="quick-answer-item"><span class="num">176.</span> <span class="ans">②</span></div>
+                    <div class="quick-answer-item"><span class="num">177.</span> <span class="ans">①</span></div>
+                    <div class="quick-answer-item"><span class="num">178.</span> <span class="ans">②</span></div>
+                    <div class="quick-answer-item"><span class="num">179.</span> <span class="ans">②</span></div>
+                    <div class="quick-answer-item"><span class="num">180.</span> <span class="ans">①</span></div>
+                    <div class="quick-answer-item"><span class="num">181.</span> <span class="ans">①</span></div>
+                    <div class="quick-answer-item"><span class="num">182.</span> <span class="ans">③</span></div>
+                    <div class="quick-answer-item"><span class="num">183.</span> <span class="ans">②</span></div>
+                    <div class="quick-answer-item"><span class="num">184.</span> <span class="ans">②</span></div>
+                    <div class="quick-answer-item"><span class="num">185.</span> <span class="ans">②</span></div>
+                    <div class="quick-answer-item"><span class="num">186.</span> <span class="ans">⑤</span></div>
+                    <div class="quick-answer-item"><span class="num">187.</span> <span class="ans">①</span></div>
+                    <div class="quick-answer-item"><span class="num">188.</span> <span class="ans">①</span></div>
+                    <div class="quick-answer-item"><span class="num">189.</span> <span class="ans">②</span></div>
+                    <div class="quick-answer-item"><span class="num">190.</span> <span class="ans">④</span></div>
+                    <div class="quick-answer-item"><span class="num">191.</span> <span class="ans">②</span></div>
+                    <div class="quick-answer-item"><span class="num">192.</span> <span class="ans">⑤</span></div>
+                    <div class="quick-answer-item"><span class="num">193.</span> <span class="ans">①</span></div>
+                    <div class="quick-answer-item"><span class="num">194.</span> <span class="ans">③</span></div>
+                    <div class="quick-answer-item"><span class="num">195.</span> <span class="ans">⑤</span></div>
+                    <div class="quick-answer-item"><span class="num">196.</span> <span class="ans">③</span></div>
+                    <div class="quick-answer-item"><span class="num">197.</span> <span class="ans">⑤</span></div>
+                    <div class="quick-answer-item"><span class="num">198.</span> <span class="ans">①</span></div>
+                    <div class="quick-answer-item"><span class="num">199.</span> <span class="ans">⑤</span></div>
+                    <div class="quick-answer-item"><span class="num">200.</span> <span class="ans">④</span></div>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+        
+        <div class="page answer-key-section">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4 정답 및 해설</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title first-in-page eng-text">Detailed Explanations</div>
+                
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">151</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 부사 <b>remarkably</b>(놀라울 정도로)는 형용사 <b>successful</b>(성공적인)을 수식하여 그 정도를 강조합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">152</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: 부정부사 <b>Seldom</b>이 문두에 와서 주어(the company)와 동사(announce)가 <b>does...announce</b> 형태로 올바르게 도치되었습니다. ②→when, ③→know, ④→Never have I, ⑤→when.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">153</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 과거분사 <b>confused</b>는 <b>much</b>로 수식하고, 감정을 나타내는 과거분사 <b>interested</b>는 예외적으로 <b>very</b>로 수식할 수 있습니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">154</span><span class="correct-answer">정답: ③</span></div><div class="explanation-content"><b>해설</b>: <b>Sometimes</b>는 문두, 문중, 문미에 올 수 있지만, 문두에 올 경우 주어와 동사가 도치되지 않습니다. 올바른 문장은 'Sometimes the results are not...'입니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">155</span><span class="correct-answer">정답: ③</span></div><div class="explanation-content"><b>해설</b>: 첫 번째 빈칸은 물리적으로 '높이' 날았다는 의미이므로 <b>high</b>가, 두 번째 빈칸은 '매우' 숙련되었다는 추상적인 정도를 나타내므로 <b>highly</b>가 적절합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">156</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: ⑤에서 <b>only</b>는 형용사로 명사 professor를 수식하여 '유일한 교수'라는 의미입니다. 나머지는 모두 부사로 각각 다른 대상을 수식합니다.</div></div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+
+        <div class="page answer-key-section">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4 정답 및 해설</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title first-in-page eng-text">Detailed Explanations</div>
+                
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">157</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: 의문문에서는 '벌써'라는 의미의 <b>yet</b>, 부정문에서는 '아직'이라는 의미의 <b>yet</b>, 그리고 '여전히' 진행 중인 상황을 나타낼 때는 <b>still</b>을 사용합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">158</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 일반적인 부사 순서는 '장소(in the laboratory) > 방법(carefully) > 시간(yesterday)'입니다. ①도 가능하지만, 짧은 방법부사는 동사 바로 뒤에 오는 것이 더 자연스럽습니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">159</span><span class="correct-answer">정답: ③</span></div><div class="explanation-content"><b>해설</b>: <b>so...that</b> 구문이 결과를 나타내며 올바르게 사용되었습니다. ① to solve 뒤의 it은 불필요, ② enough to solve, ④ too young to understand, ⑤ sensitive enough.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">160</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 부정부사 <b>Never</b>가 문두로 오면서, 조동사 <b>have</b>가 주어 <b>I</b> 앞으로 이동하여 'Never have I seen...' 형태가 됩니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">161</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: <b>even</b>이 명사구 'advanced students'를 직접 수식하므로, '~조차도'라는 의미로 해석하는 것이 가장 정확합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">162</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: 'Not until + 부사구/절'이 문두에 오면, 주절에서 주어와 동사가 도치됩니다. 따라서 'did we realize'가 올바른 형태입니다.</div></div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+
+        <div class="page answer-key-section">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4 정답 및 해설</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title first-in-page eng-text">Detailed Explanations</div>
+                
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">163</span><span class="correct-answer">정답: ④</span></div><div class="explanation-content"><b>해설</b>: 뒤에 that절이 이어져 결과를 나타내고 있으므로, '매우 ~해서 ...하다'라는 의미의 <b>so...that</b> 구문을 만드는 <b>so</b>가 정답입니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">164</span><span class="correct-answer">정답: ③</span></div><div class="explanation-content"><b>해설</b>: 방법부사(quickly)는 일반적으로 동사+목적어 뒤에 위치하는 것이 가장 자연스럽습니다. ①, ④도 문법적으로 가능하지만 ③이 가장 일반적입니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">165</span><span class="correct-answer">정답: ③</span></div><div class="explanation-content"><b>해설</b>: '열심히' 일했다는 의미이므로 <b>hard</b>, '거의 믿을 수 없었다'는 부정적 의미이므로 <b>hardly</b>가 적절합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">166</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: <b>never before</b>는 현재완료 시제와 함께 '이전에는 결코 ~한 적이 없다'는 의미로 잘 어울립니다. ①, ③은 명백한 과거 시점 부사(yesterday, this morning)와 현재완료를 함께 쓸 수 없습니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">167</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: <b>abroad</b>는 '해외에서' 또는 '해외로'라는 의미를 가진 장소부사입니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">168</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: 'Only when + 부사절'이 문두에 오면 주절에서 도치가 발생해야 합니다. 따라서 'did we understand'가 올바른 형태입니다.</div></div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+
+        <div class="page answer-key-section">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4 정답 및 해설</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title first-in-page eng-text">Detailed Explanations</div>
+                
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">169</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: <b>very</b>는 동사를 직접 수식할 수 없습니다. 따라서 'The data was analyzed very carefully'와 같이 다른 부사를 수식하거나, 'The analysis was very thorough'와 같이 형용사를 수식해야 합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">170</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 'not always'는 '항상 ~인 것은 아니다'라는 의미의 부분 부정을 나타냅니다. ①의 'always not'은 어색한 표현입니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">171</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: 첫 번째 빈칸은 '늦게' 도착했다는 의미의 <b>late</b>, 두 번째도 '늦게' 도착하는지를 묻는 <b>late</b>, 마지막은 '최근에'라는 의미의 <b>lately</b>가 적절합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">172</span><span class="correct-answer">정답: ③</span></div><div class="explanation-content"><b>해설</b>: -ly로 끝나는 부사는 more를 붙여 비교급을 만듭니다. ② early의 비교급은 earlier입니다. ⑤ correctly는 more correctly가 맞습니다. (문제 수정: ①, ③, ④, ⑤ 모두 가능. ②가 명백한 오류)</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">173</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: 'No sooner ~ than ...' 구문은 '~하자마자 ...했다'는 의미로, No sooner 뒤에는 과거완료 도치(had + S + p.p.)가 오는 것이 일반적입니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">174</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 'Only after + 부사구'가 문두로 나오면 주절에서 도치가 발생합니다. 일반동사 discovered이므로 'did the team discover'가 올바른 형태입니다.</div></div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+
+        <div class="page answer-key-section">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4 정답 및 해설</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title first-in-page eng-text">Detailed Explanations</div>
+                
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">175</span><span class="correct-answer">정답: ③</span></div><div class="explanation-content"><b>해설</b>: 과거분사 <b>improved</b>와 <b>encouraged</b>는 모두 <b>much</b>로 수식하는 것이 원칙입니다. encouraged는 감정 형용사로 very도 가능하지만, much가 더 격식적이고 강한 의미를 전달합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">176</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 동사 conduct를 수식하기 위해서는 형용사 systematic이 아니라 부사 <b>systematically</b>가 와야 합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">177</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: '방법(clearly) > 장소(at the conference) > 시간(yesterday)' 순서가 가장 일반적이지만, 긴 부사구들 사이에서 짧은 부사는 동사 가까이 위치할 수 있습니다. ④도 가능하지만 ①이 더 자연스럽습니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">178</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 부정부사 <b>Little</b>이 문두에 오면 주어와 동사가 도치됩니다. 과거 시제이므로 'did she know'가 올바른 형태입니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">179</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: <b>certainly</b>는 '확실히, 틀림없이'라는 의미로, 화자의 확신을 나타내는 문장부사입니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">180</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: '면밀하게' 조사했다는 의미이므로 <b>closely</b>, '거의' 동일하다는 의미이므로 <b>nearly</b>가 적절합니다.</div></div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+
+        <div class="page answer-key-section">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4 정답 및 해설</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title first-in-page eng-text">Detailed Explanations</div>
+                
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">181</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: 부정부사 <b>Rarely</b>가 문두에 오면 주어(scientists)와 동사(achieve)가 <b>do...achieve</b> 형태로 도치됩니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">182</span><span class="correct-answer">정답: ③</span></div><div class="explanation-content"><b>해설</b>: <b>particularly</b>(특히)는 형용사(분사) <b>interested</b>를 수식하여 '특히 관심이 있는'이라는 의미를 만듭니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">183</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: <b>recently</b>와 같은 부사는 현재완료 시제에서 조동사 have와 본동사(또는 been) 사이에 위치합니다. 따라서 'has recently been'이 올바른 어순입니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">184</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 분사구문이 끝난 후, 주절은 완전한 문장 구조를 가져야 합니다. 주절 'the data was carefully analyzed'에서 부사 carefully의 위치가 가장 자연스럽습니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">185</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: '주로'라는 의미의 부사는 <b>mostly</b>, '가장'이라는 의미의 최상급 부사는 <b>most</b>입니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">186</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: 문장부사를 문두에 위치시키고 콤마를 찍는 것이 문장 전체를 강조하는 가장 강한 표현입니다.</div></div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+
+        <div class="page answer-key-section">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4 정답 및 해설</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title first-in-page eng-text">Detailed Explanations</div>
+                
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">187</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: 부정부사구 <b>Under no circumstances</b>가 문두에 오면 주어와 동사가 도치되어야 합니다. 'should students cheat'가 올바른 어순입니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">188</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: 비교급(more effective)을 강조할 때는 <b>much</b>, far, even, still, a lot 등을 사용합니다. very는 비교급을 수식할 수 없습니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">189</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: <b>almost</b>는 수식하는 대상 바로 앞에 위치해야 합니다. '거의 책 전체를'이라는 의미이므로 'almost the entire book'이 가장 자연스럽습니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">190</span><span class="correct-answer">정답: ④</span></div><div class="explanation-content"><b>해설</b>: <b>always</b>는 100%의 빈도를 나타내므로 의미가 가장 강합니다. (always > usually > frequently > often > sometimes)</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">191</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: '방법(clearly and slowly) > 장소(in the auditorium) > 시간(during the lecture yesterday)' 순서가 가장 자연스럽습니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">192</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: 모든 문장에서 부사가 동사 또는 형용사를 올바르게 수식하고 있습니다. (문제 수정: 모든 문장이 올바름)</div></div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+
+        <div class="page answer-key-section">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4 정답 및 해설</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title first-in-page eng-text">Detailed Explanations</div>
+                
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">193</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: 가정법 미래에서 If가 생략되면 주어와 조동사 should가 도치됩니다. 'If you should need...'가 'Should you need...'로 바뀐 올바른 문장입니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">194</span><span class="correct-answer">정답: ③</span></div><div class="explanation-content"><b>해설</b>: <b>so</b>는 앞서 언급된 동사구(complete the assignment carefully)를 대신하는 대부사로 사용될 수 있습니다. 'Yes, she did so.'는 'Yes, she completed the assignment carefully.'를 의미합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">195</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: 부사는 동명사를 수식할 때 동명사 앞(①), 동명사구 뒤(④), 또는 본동사 앞(③)에 위치할 수 있습니다. 문맥상 모두 가능합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">196</span><span class="correct-answer">정답: ③</span></div><div class="explanation-content"><b>해설</b>: <b>very</b>와 <b>extremely</b>는 모두 정도를 나타내는 강조부사로, 함께 사용하는 것은 어색하며 의미상 중복됩니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">197</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: 수동태 문장에서 방법부사는 'be + p.p.' 사이(①), p.p. 뒤(②), 또는 문장 맨 앞(③)에 올 수 있습니다. 모두 문법적으로 가능합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">198</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: 관계대명사절 내에서도 빈도부사 <b>always</b>는 일반동사 <b>studies</b> 앞에 위치하는 것이 가장 자연스럽습니다.</div></div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+
+        <div class="page answer-key-section">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 4 정답 및 해설</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title first-in-page eng-text">Detailed Explanations</div>
+                
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">199</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: <b>Fortunately</b>와 같은 문장부사는 문장 맨 앞, 주어와 동사 사이(콤마와 함께), 또는 문장 맨 뒤 등 다양한 위치에 올 수 있습니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">200</span><span class="correct-answer">정답: ④</span></div><div class="explanation-content"><b>해설</b>: 비교급(significant than...)을 수식할 때는 <b>very</b>가 아닌 <b>much</b>를 사용해야 합니다. 하지만 여기서는 'significant'가 원급이므로 'much more significant'가 되거나, 문맥상 'very significant'가 되어야 합니다. 'much significant'는 틀린 표현입니다.</div></div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+
+
+</body>
+</html>

@@ -1,0 +1,274 @@
+{
+  "bookId": "grammar-advanced-ch01",
+  "chapter": "ch01",
+  "title": "복합 문장 구조의 완벽 분석",
+  "problems": [
+    {
+      "id": "grammar-advanced-1",
+      "number": 1,
+      "type": "error-identification",
+      "stem": "The assertion that the company's new algorithms, which were developed at great expense and with considerable expertise, is capable of predicting market trends with 95% accuracy has been met with significant skepticism from industry analysts.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "is → are (주어는 복수인 algorithms)",
+      "explanation": "is → are (주어는 복수인 algorithms)"
+    },
+    {
+      "id": "grammar-advanced-2",
+      "number": 2,
+      "type": "error-identification",
+      "stem": "It was during the final, exhaustive phase of the investigation that the auditors, who had been working tirelessly for weeks, finally uncovering a complex network of shell corporations used for tax evasion.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "uncovering → uncovered (that절의 동사가 필요)",
+      "explanation": "uncovering → uncovered (that절의 동사가 필요)"
+    },
+    {
+      "id": "grammar-advanced-3",
+      "number": 3,
+      "type": "error-identification",
+      "stem": "The primary objectives of the new urban renewal project are to revitalize the downtown area, the preservation of historical landmarks, and creating more green spaces for public use.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "the preservation of → to preserve (to-V 병렬 구조 일치)",
+      "explanation": "the preservation of → to preserve (to-V 병렬 구조 일치)"
+    },
+    {
+      "id": "grammar-advanced-4",
+      "number": 4,
+      "type": "error-identification",
+      "stem": "Despite the fact which the evidence was overwhelmingly against him, the defendant continued to maintain his innocence throughout the trial, a decision that ultimately alienated the jury.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "which → that (동격절을 이끄는 접속사는 that)",
+      "explanation": "which → that (동격절을 이끄는 접속사는 that)"
+    },
+    {
+      "id": "grammar-advanced-5",
+      "number": 5,
+      "type": "error-identification",
+      "stem": "The committee's recommendation that all employees ① undergo mandatory ethics training and ② that a new oversight body is established ③ were met with resistance from senior management, ④ who argued it was an overreach of authority.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "is established → be established, were → was",
+      "explanation": "is established → be established, were → was"
+    },
+    {
+      "id": "grammar-advanced-6",
+      "number": 6,
+      "type": "fill-in-blank",
+      "stem": "The philosopher argued that consciousness, a phenomenon that has puzzled thinkers for centuries, cannot be fully explained by neurobiology alone, nor ________ by computational models of the brain.",
+      "choices": [
+        "it can be",
+        "can it be",
+        "it can",
+        "can it"
+      ],
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "answer": 2,
+      "explanation": "(B) (부정어 nor 뒤의 도치)"
+    },
+    {
+      "id": "grammar-advanced-7",
+      "number": 7,
+      "type": "fill-in-blank",
+      "stem": "A significant portion of the legislation, encompassing regulations on data privacy and consumer rights that have been debated for months, ________ still awaiting final approval from the senate.",
+      "choices": [
+        "is",
+        "are",
+        "has been",
+        "have been"
+      ],
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "answer": 1,
+      "explanation": "(A) (주어는 A significant portion)"
+    },
+    {
+      "id": "grammar-advanced-8",
+      "number": 8,
+      "type": "error-identification",
+      "stem": "The belief, however irrational it may seem to modern sensibilities, that celestial bodies influence human destiny were once a cornerstone of both scientific and philosophical thought.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "were → was (주어는 단수인 The belief)",
+      "explanation": "were → was (주어는 단수인 The belief)"
+    },
+    {
+      "id": "grammar-advanced-9",
+      "number": 9,
+      "type": "error-identification",
+      "stem": "To fully appreciate the author's intricate narrative structure requires not only a close reading of the text but also understand the complex historical context in which it was written.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "understand → understanding (명사구와 병렬)",
+      "explanation": "understand → understanding (명사구와 병렬)"
+    },
+    {
+      "id": "grammar-advanced-10",
+      "number": 10,
+      "type": "fill-in-blank",
+      "stem": "It is the CEO's unwavering commitment to innovation, rather than the company's vast financial resources, that ________ the primary driver of its sustained success over the past decade.",
+      "choices": [
+        "is",
+        "are",
+        "has been",
+        "have been"
+      ],
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "answer": 3,
+      "explanation": "(C) (that은 commitment을 받으며, 현재완료)"
+    },
+    {
+      "id": "grammar-advanced-11",
+      "number": 11,
+      "type": "error-identification",
+      "stem": "The professor's lecture on quantum entanglement, a concept that even Einstein famously called \"spooky action at a distance,\" left many students feeling more confused than they have been before.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "have been → were (주절 시제 left(과거)와 일치)",
+      "explanation": "have been → were (주절 시제 left(과거)와 일치)"
+    },
+    {
+      "id": "grammar-advanced-12",
+      "number": 12,
+      "type": "error-identification",
+      "stem": "The company's strategy involves minimizing operational costs, the maximization of market share, and to enhance brand loyalty through targeted advertising campaigns.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "the maximization of → maximizing, to enhance → enhancing",
+      "explanation": "the maximization of → maximizing, to enhance → enhancing"
+    },
+    {
+      "id": "grammar-advanced-13",
+      "number": 13,
+      "type": "fill-in-blank",
+      "stem": "That the board of directors approved the risky merger without adequate due diligence, a failure that later led to financial ruin, ________ now the subject of a major shareholder lawsuit.",
+      "choices": [
+        "is",
+        "are",
+        "was",
+        "were"
+      ],
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "answer": 1,
+      "explanation": "(A) (주어는 That절, 단수 취급)"
+    },
+    {
+      "id": "grammar-advanced-14",
+      "number": 14,
+      "type": "error-identification",
+      "stem": "Rarely the scientific community has witnessed a breakthrough so profound that it fundamentally alters our understanding of the universe's origins.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "the scientific community has → has the scientific community",
+      "explanation": "the scientific community has → has the scientific community"
+    },
+    {
+      "id": "grammar-advanced-15",
+      "number": 15,
+      "type": "error-identification",
+      "stem": "The diplomat was praised for his ability to negotiate complex treaties, his deep understanding of international law, and how skillfully he navigated cultural differences.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "how skillfully he navigated → his skillful navigation of",
+      "explanation": "how skillfully he navigated → his skillful navigation of"
+    },
+    {
+      "id": "grammar-advanced-16",
+      "number": 16,
+      "type": "fill-in-blank",
+      "stem": "It was the lead scientist, not her assistants, who first noticed the anomaly in the data, a discovery that ________ the entire course of the research.",
+      "choices": [
+        "alter",
+        "alters",
+        "altered",
+        "have altered"
+      ],
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "answer": 3,
+      "explanation": "(C) (주절 시제 was와 일치하는 과거 시제)"
+    },
+    {
+      "id": "grammar-advanced-17",
+      "number": 17,
+      "type": "error-identification",
+      "stem": "The notion that economic prosperity can be achieved at the expense of environmental protection is a dangerous fallacy that have been repeatedly debunked by empirical evidence.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "have been → has been (선행사는 a dangerous fallacy)",
+      "explanation": "have been → has been (선행사는 a dangerous fallacy)"
+    },
+    {
+      "id": "grammar-advanced-18",
+      "number": 18,
+      "type": "error-identification",
+      "stem": "The new software allows users to customize their interface, to integrate various third-party applications, and that they can secure their data with end-to-end encryption.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "that they can secure → to secure (to-V 병렬)",
+      "explanation": "that they can secure → to secure (to-V 병렬)"
+    },
+    {
+      "id": "grammar-advanced-19",
+      "number": 19,
+      "type": "error-identification",
+      "stem": "The collection of essays, written by various authors from diverse backgrounds and which address a wide range of contemporary issues, offer a compelling snapshot of our times.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "which address → addressing, offer → offers",
+      "explanation": "which address → addressing, offer → offers"
+    },
+    {
+      "id": "grammar-advanced-20",
+      "number": 20,
+      "type": "fill-in-blank",
+      "stem": "It is precisely by confronting and analyzing our past failures, however painful the process might be, ________ we can hope to avoid repeating them in the future.",
+      "choices": [
+        "which",
+        "what",
+        "that",
+        "when"
+      ],
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "answer": 3,
+      "explanation": "(C) (It is ~ that 강조 구문)"
+    },
+    {
+      "id": "grammar-advanced-21",
+      "number": 21,
+      "type": "error-identification",
+      "stem": "The fact that the CEO, despite numerous warnings from his financial advisors, continued to invest heavily in a volatile market are often cited as the primary reason for the company's collapse.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "are → is (주어는 The fact)",
+      "explanation": "are → is (주어는 The fact)"
+    },
+    {
+      "id": "grammar-advanced-22",
+      "number": 22,
+      "type": "error-identification",
+      "stem": "The curriculum is designed to provide students with a solid foundation in theoretical physics and equipping them with the practical skills necessary for laboratory research.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "equipping → to equip (to provide와 병렬)",
+      "explanation": "equipping → to equip (to provide와 병렬)"
+    },
+    {
+      "id": "grammar-advanced-23",
+      "number": 23,
+      "type": "fill-in-blank",
+      "stem": "The realization that the planet's resources are finite and that sustainable practices must be adopted ________ a fundamental shift in global economic policy.",
+      "choices": [
+        "demand",
+        "demands",
+        "have demanded",
+        "are demanding"
+      ],
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "answer": 2,
+      "explanation": "(B) (주어는 The realization)"
+    },
+    {
+      "id": "grammar-advanced-24",
+      "number": 24,
+      "type": "error-identification",
+      "stem": "Under no circumstances the confidential data of our clients should be shared with any third party without their explicit, written consent.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "the confidential data... should → should the confidential data...",
+      "explanation": "the confidential data... should → should the confidential data..."
+    },
+    {
+      "id": "grammar-advanced-25",
+      "number": 25,
+      "type": "error-identification",
+      "stem": "The archaeological team's discovery of a previously unknown civilization, one whose artifacts suggest a sophisticated understanding of astronomy, have forced historians to reconsider their timelines of early human development.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "have forced → has forced (주어는 discovery)",
+      "explanation": "have forced → has forced (주어는 discovery)"
+    }
+  ]
+}

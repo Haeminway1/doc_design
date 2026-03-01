@@ -1,0 +1,507 @@
+{
+  "bookId": "vocab-basic",
+  "day": 64,
+  "theme": "건축과 건설 (Architecture and Construction)",
+  "words": [
+    {
+      "word": "architect",
+      "pronunciation": "[άːrkitèkt]",
+      "partOfSpeech": "n.",
+      "meaning": "건축가",
+      "example": {
+        "en": "The architect designed a beautiful and functional building.",
+        "ko": "그 건축가는 아름답고 기능적인 건물을 설계했다."
+      }
+    },
+    {
+      "word": "engineer",
+      "pronunciation": "[èndʒəníər]",
+      "partOfSpeech": "n.",
+      "meaning": "엔지니어, 기술자",
+      "example": {
+        "en": "A structural engineer ensures the building is safe and stable.",
+        "ko": "구조 기술자는 건물이 안전하고 안정적인지 확인한다."
+      }
+    },
+    {
+      "word": "contractor",
+      "pronunciation": "[kάntræktər]",
+      "partOfSpeech": "n.",
+      "meaning": "계약업자, 도급업자",
+      "example": {
+        "en": "The contractor is responsible for completing the project on time.",
+        "ko": "계약업자는 프로젝트를 제시간에 완료할 책임이 있다."
+      }
+    },
+    {
+      "word": "builder",
+      "pronunciation": "[bíldər]",
+      "partOfSpeech": "n.",
+      "meaning": "건축업자",
+      "example": {
+        "en": "We hired a local builder to construct our new home.",
+        "ko": "우리는 새 집을 짓기 위해 지역 건축업자를 고용했다."
+      }
+    },
+    {
+      "word": "construction",
+      "pronunciation": "[kənstrʌ́kʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "건설, 공사",
+      "example": {
+        "en": "The construction of the new bridge will take two years.",
+        "ko": "새 다리 건설은 2년이 걸릴 것이다."
+      }
+    },
+    {
+      "word": "edifice",
+      "pronunciation": "[édəfis]",
+      "partOfSpeech": "n.",
+      "meaning": "(크고 인상적인) 건물, 건축물",
+      "example": {
+        "en": "The city hall is an imposing edifice.",
+        "ko": "시청은 인상적인 건축물이다."
+      }
+    },
+    {
+      "word": "building",
+      "pronunciation": "[bíldi&eng;]",
+      "partOfSpeech": "n.",
+      "meaning": "건물",
+      "example": {
+        "en": "That's the tallest building in the city.",
+        "ko": "저것이 도시에서 가장 높은 건물이다."
+      }
+    },
+    {
+      "word": "skyscraper",
+      "pronunciation": "[skáiskrèipər]",
+      "partOfSpeech": "n.",
+      "meaning": "마천루, 고층 건물",
+      "example": {
+        "en": "The skyline is dominated by modern skyscrapers.",
+        "ko": "스카이라인은 현대적인 마천루들이 지배하고 있다."
+      }
+    },
+    {
+      "word": "tower",
+      "pronunciation": "[táuər]",
+      "partOfSpeech": "n.",
+      "meaning": "탑",
+      "example": {
+        "en": "The Leaning Tower of Pisa is a famous landmark.",
+        "ko": "피사의 사탑은 유명한 랜드마크이다."
+      }
+    },
+    {
+      "word": "bridge",
+      "pronunciation": "[bridʒ]",
+      "partOfSpeech": "n.",
+      "meaning": "다리, 교량",
+      "example": {
+        "en": "We drove across the Golden Gate Bridge.",
+        "ko": "우리는 금문교를 차로 건넜다."
+      }
+    },
+    {
+      "word": "tunnel",
+      "pronunciation": "[tʌ́nl]",
+      "partOfSpeech": "n.",
+      "meaning": "터널",
+      "example": {
+        "en": "The train went through a long, dark tunnel.",
+        "ko": "기차는 길고 어두운 터널을 통과했다."
+      }
+    },
+    {
+      "word": "storey/story",
+      "pronunciation": "[stɔ́ːri]",
+      "partOfSpeech": "n.",
+      "meaning": "(건물의) 층",
+      "example": {
+        "en": "The building has five storeys.",
+        "ko": "그 건물은 5층짜리이다."
+      }
+    },
+    {
+      "word": "facade",
+      "pronunciation": "[fəsάːd]",
+      "partOfSpeech": "n.",
+      "meaning": "(건물의) 정면",
+      "example": {
+        "en": "The building has a beautiful stone facade.",
+        "ko": "그 건물은 아름다운 석조 정면을 가지고 있다."
+      }
+    },
+    {
+      "word": "entrance",
+      "pronunciation": "[éntrəns]",
+      "partOfSpeech": "n.",
+      "meaning": "입구",
+      "example": {
+        "en": "The main entrance to the museum is on the other side.",
+        "ko": "박물관의 정문은 반대편에 있다."
+      }
+    },
+    {
+      "word": "exit",
+      "pronunciation": "[égzit]",
+      "partOfSpeech": "n.",
+      "meaning": "출구",
+      "example": {
+        "en": "Please use the rear exit in case of fire.",
+        "ko": "화재 시에는 뒤쪽 출구를 이용해 주십시오."
+      }
+    },
+    {
+      "word": "corridor",
+      "pronunciation": "[kɔ́ːridər]",
+      "partOfSpeech": "n.",
+      "meaning": "복도",
+      "example": {
+        "en": "His office is at the end of the corridor.",
+        "ko": "그의 사무실은 복도 끝에 있다."
+      }
+    },
+    {
+      "word": "hallway",
+      "pronunciation": "[hɔ́ːlwèi]",
+      "partOfSpeech": "n.",
+      "meaning": "복도, 현관",
+      "example": {
+        "en": "Please leave your shoes in the hallway.",
+        "ko": "신발은 현관에 벗어두세요."
+      }
+    },
+    {
+      "word": "staircase",
+      "pronunciation": "[stέərkèis]",
+      "partOfSpeech": "n.",
+      "meaning": "계단",
+      "example": {
+        "en": "A grand staircase led to the second floor.",
+        "ko": "웅장한 계단이 2층으로 이어졌다."
+      }
+    },
+    {
+      "word": "elevator",
+      "pronunciation": "[éləvèitər]",
+      "partOfSpeech": "n.",
+      "meaning": "엘리베이터",
+      "example": {
+        "en": "Let's take the elevator to the tenth floor.",
+        "ko": "10층까지 엘리베이터를 타자."
+      }
+    },
+    {
+      "word": "escalator",
+      "pronunciation": "[éskəlèitər]",
+      "partOfSpeech": "n.",
+      "meaning": "에스컬레이터",
+      "example": {
+        "en": "The escalator is out of order, so we have to use the stairs.",
+        "ko": "에스컬레이터가 고장 나서 계단을 이용해야 한다."
+      }
+    },
+    {
+      "word": "ventilation",
+      "pronunciation": "[vèntəléiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "환기",
+      "example": {
+        "en": "The room has poor ventilation.",
+        "ko": "그 방은 환기가 잘 안 된다."
+      }
+    },
+    {
+      "word": "insulation",
+      "pronunciation": "[ìnsəléiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "단열",
+      "example": {
+        "en": "Good insulation helps to keep the house warm in winter.",
+        "ko": "좋은 단열은 겨울에 집을 따뜻하게 유지하는 데 도움이 된다."
+      }
+    },
+    {
+      "word": "plumbing",
+      "pronunciation": "[plʌ́mi&eng;]",
+      "partOfSpeech": "n.",
+      "meaning": "배관",
+      "example": {
+        "en": "There's a problem with the plumbing in the bathroom.",
+        "ko": "욕실 배관에 문제가 있다."
+      }
+    },
+    {
+      "word": "wiring",
+      "pronunciation": "[wáiəri&eng;]",
+      "partOfSpeech": "n.",
+      "meaning": "배선",
+      "example": {
+        "en": "The old house needs new electrical wiring.",
+        "ko": "그 낡은 집은 새로운 전기 배선이 필요하다."
+      }
+    },
+    {
+      "word": "heating",
+      "pronunciation": "[híːti&eng;]",
+      "partOfSpeech": "n.",
+      "meaning": "난방",
+      "example": {
+        "en": "The heating is not working properly.",
+        "ko": "난방이 제대로 작동하지 않는다."
+      }
+    },
+    {
+      "word": "cooling",
+      "pronunciation": "[kúːli&eng;]",
+      "partOfSpeech": "n.",
+      "meaning": "냉방",
+      "example": {
+        "en": "The air conditioning provides cooling in the summer.",
+        "ko": "에어컨은 여름에 냉방을 제공한다."
+      }
+    },
+    {
+      "word": "lighting",
+      "pronunciation": "[láiti&eng;]",
+      "partOfSpeech": "n.",
+      "meaning": "조명",
+      "example": {
+        "en": "The room has soft, ambient lighting.",
+        "ko": "그 방은 부드러운 간접 조명을 갖추고 있다."
+      }
+    },
+    {
+      "word": "demolition",
+      "pronunciation": "[dèməlíʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "철거, 파괴",
+      "example": {
+        "en": "The demolition of the old stadium will begin next week.",
+        "ko": "낡은 경기장의 철거는 다음 주에 시작될 것이다."
+      }
+    },
+    {
+      "word": "excavation",
+      "pronunciation": "[èkskəvéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "굴착, 발굴",
+      "example": {
+        "en": "The excavation of the site revealed ancient Roman ruins.",
+        "ko": "그 부지의 발굴로 고대 로마 유적이 드러났다."
+      }
+    },
+    {
+      "word": "specification",
+      "pronunciation": "[spèsəfikéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "명세서, 사양",
+      "example": {
+        "en": "The builder must follow the architect's specifications.",
+        "ko": "건축업자는 건축가의 명세서를 따라야 한다."
+      }
+    },
+    {
+      "word": "inspection",
+      "pronunciation": "[inspékʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "검사",
+      "example": {
+        "en": "The building must pass a final inspection before it can be occupied.",
+        "ko": "그 건물은 입주 전에 최종 검사를 통과해야 한다."
+      }
+    },
+    {
+      "word": "compliance",
+      "pronunciation": "[kəmpláiəns]",
+      "partOfSpeech": "n.",
+      "meaning": "준수",
+      "example": {
+        "en": "The building is in compliance with all safety regulations.",
+        "ko": "그 건물은 모든 안전 규정을 준수하고 있다."
+      }
+    },
+    {
+      "word": "durability",
+      "pronunciation": "[djùərəbíləti]",
+      "partOfSpeech": "n.",
+      "meaning": "내구성",
+      "example": {
+        "en": "The durability of the materials ensures the building will last for centuries.",
+        "ko": "자재의 내구성은 건물이 수 세기 동안 지속될 것을 보장한다."
+      }
+    },
+    {
+      "word": "exuberant",
+      "pronunciation": "[ɪɡˈzuːbərənt]",
+      "partOfSpeech": "adj.",
+      "meaning": "열정적인, 풍부한, 활기 넘치는",
+      "example": {
+        "en": "The exuberant crowd cheered as their team scored the winning goal.",
+        "ko": "그들의 팀이 결승골을 넣자 열광적인 군중이 환호했다."
+      }
+    },
+    {
+      "word": "melancholy",
+      "pronunciation": "[ˈmelənkɒli]",
+      "partOfSpeech": "n./adj.",
+      "meaning": "우울함, 슬픔",
+      "example": {
+        "en": "The painting captured the melancholy atmosphere of a rainy autumn day.",
+        "ko": "그 그림은 비 오는 가을날의 우울한 분위기를 담아냈다."
+      }
+    },
+    {
+      "word": "taciturn",
+      "pronunciation": "[ˈtæsɪtɜːrn]",
+      "partOfSpeech": "adj.",
+      "meaning": "과묵한, 말수가 적은",
+      "example": {
+        "en": "Despite being taciturn, he expressed deep emotions through his art.",
+        "ko": "과묵한 성격에도 불구하고, 그는 예술을 통해 깊은 감정을 표현했다."
+      }
+    },
+    {
+      "word": "ebullient",
+      "pronunciation": "[ɪˈbʌliənt]",
+      "partOfSpeech": "adj.",
+      "meaning": "열광적인, 들뜬",
+      "example": {
+        "en": "The ebullient students celebrated their graduation with songs and laughter.",
+        "ko": "들뜬 학생들은 노래와 웃음으로 졸업을 축하했다."
+      }
+    },
+    {
+      "word": "morose",
+      "pronunciation": "[məˈrəʊs]",
+      "partOfSpeech": "adj.",
+      "meaning": "음울한, 침울한",
+      "example": {
+        "en": "He became morose after receiving the bad news.",
+        "ko": "그는 나쁜 소식을 받은 후 침울해졌다."
+      }
+    },
+    {
+      "word": "phlegmatic",
+      "pronunciation": "[fleɡˈmætɪk]",
+      "partOfSpeech": "adj.",
+      "meaning": "침착한, 냉정한",
+      "example": {
+        "en": "The phlegmatic doctor remained calm during the emergency.",
+        "ko": "침착한 의사는 응급 상황에서도 평온을 유지했다."
+      }
+    },
+    {
+      "word": "stoic",
+      "pronunciation": "[ˈstəʊɪk]",
+      "partOfSpeech": "adj.",
+      "meaning": "금욕적인, 감정을 억제하는",
+      "example": {
+        "en": "He maintained a stoic expression despite the intense pain.",
+        "ko": "그는 극심한 고통에도 불구하고 금욕적인 표정을 유지했다."
+      }
+    },
+    {
+      "word": "petulant",
+      "pronunciation": "[ˈpetjʊlənt]",
+      "partOfSpeech": "adj.",
+      "meaning": "성마른, 심술궂은",
+      "example": {
+        "en": "The child became petulant when denied his favorite toy.",
+        "ko": "아이는 좋아하는 장난감을 거절당하자 성마르게 굴었다."
+      }
+    },
+    {
+      "word": "despondent",
+      "pronunciation": "[dɪˈspɒndənt]",
+      "partOfSpeech": "adj.",
+      "meaning": "낙담한, 의기소침한",
+      "example": {
+        "en": "The team was despondent after losing the final match.",
+        "ko": "팀은 결승전에서 진 후 의기소침해졌다."
+      }
+    },
+    {
+      "word": "impassive",
+      "pronunciation": "[ɪmˈpæsɪv]",
+      "partOfSpeech": "adj.",
+      "meaning": "무표정한, 감정을 나타내지 않는",
+      "example": {
+        "en": "The judge remained impassive throughout the emotional testimony.",
+        "ko": "판사는 감정적인 증언 내내 무표정을 유지했다."
+      }
+    },
+    {
+      "word": "diffident",
+      "pronunciation": "[ˈdɪfɪdənt]",
+      "partOfSpeech": "adj.",
+      "meaning": "소심한, 자신감 없는",
+      "example": {
+        "en": "The diffident student rarely spoke up in class.",
+        "ko": "소심한 학생은 수업 시간에 거의 발언하지 않았다."
+      }
+    },
+    {
+      "word": "callous",
+      "pronunciation": "[ˈkæləs]",
+      "partOfSpeech": "adj.",
+      "meaning": "무감각한, 냉담한",
+      "example": {
+        "en": "His callous remarks hurt everyone's feelings.",
+        "ko": "그의 무감각한 발언은 모두의 감정을 상하게 했다."
+      }
+    },
+    {
+      "word": "masonry",
+      "pronunciation": "/ˈmeɪsənri/",
+      "partOfSpeech": "n.",
+      "meaning": "모르타르로 결합한 벽돌·석재·콘크리트 블록으로 쌓는 공사; 석공의 기술 또는 작업.",
+      "example": {
+        "en": "The restoration crew repointed the masonry to prevent water penetration.",
+        "ko": "보수팀은 물 침투를 막기 위해 조적을 재줄눈했다."
+      }
+    },
+    {
+      "word": "rebar",
+      "pronunciation": "/ˈriːˌbɑːr/",
+      "partOfSpeech": "n.",
+      "meaning": "인장력에 저항하도록 콘크리트에 배치하는 철근",
+      "example": {
+        "en": "The engineer specified #5 rebar at 12-inch centers in the foundation wall.",
+        "ko": "엔지니어는 기초벽에 #5 철근을 12인치 간격으로 배근하라고 명시했다."
+      }
+    },
+    {
+      "word": "footing",
+      "pronunciation": "/ˈfʊtɪ&eng;/",
+      "partOfSpeech": "n.",
+      "meaning": "지표면 아래에서 하중을 지반에 분산하는 확장된 기초의 밑부분",
+      "example": {
+        "en": "Footings must extend below the frost line to prevent heaving.",
+        "ko": "융기를 방지하려면 푸팅(기초판)을 동결선 아래까지 내려 시공해야 한다."
+      }
+    },
+    {
+      "word": "slab",
+      "pronunciation": "/slæb/",
+      "partOfSpeech": "n.",
+      "meaning": "주로 바닥, 지붕, 포장면을 이루는 크고 평평한 콘크리트 판.",
+      "example": {
+        "en": "The warehouse uses a reinforced concrete slab-on-grade for the floor.",
+        "ko": "이 창고의 바닥은 지반 위 철근콘크리트 슬래브로 시공되었다."
+      }
+    },
+    {
+      "word": "pile",
+      "pronunciation": "/paɪl/",
+      "partOfSpeech": "n.",
+      "meaning": "하중을 더 깊고 견고한 지층으로 전달하기 위해 지반에 박거나 천공하여 설치하는 길고 가는 기초 부재",
+      "example": {
+        "en": "Friction piles were installed to carry loads through the soft upper soils.",
+        "ko": "연약한 상부 토층을 통과해 하중을 전달하도록 마찰말뚝을 설치했다."
+      }
+    }
+  ]
+}

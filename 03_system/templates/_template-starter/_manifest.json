@@ -1,0 +1,24 @@
+{
+    "id": "template-starter",
+    "name": "Template Starter Kit",
+    "description": "새 템플릿 제작 시 복사해서 사용하는 스타터 킷. 모든 토큰이 주석으로 설명되어 있습니다.",
+    "version": "1.0.0",
+    "author": "Vera's Flavor",
+    "fonts": {
+        "heading": "Inter",
+        "body": "Noto Sans KR",
+        "accent": "Playfair Display"
+    },
+    "palette": {
+        "primary": "#2563EB",
+        "primaryLight": "#EFF6FF",
+        "secondary": "#F59E0B",
+        "accent": "#1E3A8A"
+    },
+    "coverStyle": "border-frame | overlay | minimal | full-bleed",
+    "borderRadius": "0px | 6px | 8px",
+    "headerStyle": "underline | dotted | thin-line | colored-underline",
+    "usedBy": [
+        "스타터 킷 - 실제 교재에 사용하지 않음"
+    ]
+}

@@ -1,0 +1,278 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "피드백지 데이터 스키마",
+  "description": "AI(복돌이)가 생성하는 피드백지 JSON 데이터의 스키마 정의. 스크립트(generate-feedback-from-json.js)가 이 JSON을 읽어 HTML/PDF를 생성한다.",
+  "type": "object",
+  "required": ["student", "date", "subject", "textbook", "range", "summary", "wrongAnswers"],
+  "properties": {
+    "student": {
+      "type": "string",
+      "description": "학생 이름 (예: '최여진')"
+    },
+    "date": {
+      "type": "string",
+      "pattern": "^\\d{6}$",
+      "description": "날짜 YYMMDD 형식 (예: '260221')"
+    },
+    "subject": {
+      "type": "string",
+      "enum": ["독해", "문법", "어휘", "구문독해", "논리"],
+      "description": "과목명"
+    },
+    "textbook": {
+      "type": "string",
+      "description": "교재명 (예: '문단 구조 분석')"
+    },
+    "range": {
+      "type": "string",
+      "description": "문제 범위 (예: '257~276번')"
+    },
+    "summary": {
+      "type": "object",
+      "description": "전체 학습 요약 — 첫 페이지 진단 카드에 표시",
+      "required": ["totalQ", "wrongQ", "correctRate", "goodPoints", "badPoints", "priority"],
+      "properties": {
+        "totalQ": {
+          "type": "integer",
+          "description": "총 문제 수"
+        },
+        "wrongQ": {
+          "type": "integer",
+          "description": "오답 수"
+        },
+        "correctRate": {
+          "type": "string",
+          "description": "정답률 퍼센트 문자열 (예: '85%')"
+        },
+        "goodPoints": {
+          "type": "string",
+          "description": "잘한 점 — 구체적 칭찬"
+        },
+        "badPoints": {
+          "type": "string",
+          "description": "아쉬운 점 — 개선 필요 영역"
+        },
+        "priority": {
+          "type": "string",
+          "description": "학습 우선순위 (예: '문장 기능 파악 → 대조 구조 분석')"
+        },
+        "weakAreas": {
+          "type": "array",
+          "description": "취약 영역 분석 — 진단 카드 내 테이블",
+          "items": {
+            "type": "object",
+            "required": ["area", "count", "severity", "note"],
+            "properties": {
+              "area": {
+                "type": "string",
+                "description": "취약 영역명"
+              },
+              "count": {
+                "type": "integer",
+                "description": "해당 영역 오답 수"
+              },
+              "severity": {
+                "type": "string",
+                "enum": ["high", "mid", "low"],
+                "description": "심각도 (high=높음, mid=보통, low=낮음)"
+              },
+              "note": {
+                "type": "string",
+                "description": "핵심 설명"
+              }
+            }
+          }
+        }
+      }
+    },
+    "wrongAnswers": {
+      "type": "array",
+      "description": "오답 목록 — 문제 카드 + 해설 생성에 사용",
+      "items": {
+        "type": "object",
+        "required": ["q", "selected", "correct", "type", "question", "explanation"],
+        "properties": {
+          "q": {
+            "type": "integer",
+            "description": "문제 번호"
+          },
+          "selected": {
+            "type": "string",
+            "description": "학생이 선택한 답 (예: '③')"
+          },
+          "correct": {
+            "type": "string",
+            "description": "정답 (예: '②')"
+          },
+          "type": {
+            "type": "string",
+            "description": "문제 유형 (예: '문장 기능 파악', '빈칸 추론', '문장 삽입')"
+          },
+          "passage": {
+            "type": "string",
+            "description": "[독해 필수] 지문 원문 영어 텍스트"
+          },
+          "question": {
+            "type": "string",
+            "description": "질문 텍스트"
+          },
+          "choices": {
+            "type": "array",
+            "description": "선지 목록 — ①부터 순서대로, 번호 없이 텍스트만",
+            "items": { "type": "string" }
+          },
+          "explanation": {
+            "type": "string",
+            "description": "해설 HTML — CSS 클래스(concept-box, grammar-block, tip-box, warning-box, answer-box 등) 활용. 독해: 5단계 분석(한줄요약→전체해석→핵심키워드→구조/방향성→선지분석). 문법: 개념→판별법→비교표→예문→주의."
+          },
+          "studentAnalysis": {
+            "type": "object",
+            "description": "학생 답 분석 — tip-box로 렌더링",
+            "required": ["whyChosen", "errorPattern", "focusPoint"],
+            "properties": {
+              "whyChosen": {
+                "type": "string",
+                "description": "오답 선택 이유 추측 — 학생의 사고 과정 추적"
+              },
+              "errorPattern": {
+                "type": "string",
+                "description": "사고 오류 패턴 (예: '부분 정보 매칭', '반전 함정', '개념 혼동')"
+              },
+              "focusPoint": {
+                "type": "string",
+                "description": "집중 포인트 — 유사 문제 풀이 전략, 주의사항"
+              }
+            }
+          }
+        }
+      }
+    },
+    "starredCorrect": {
+      "type": "array",
+      "description": "정답이지만 별표 친 문항 — 주의 필요 표시",
+      "items": {
+        "type": "object",
+        "required": ["q", "selected", "note"],
+        "properties": {
+          "q": {
+            "type": "integer",
+            "description": "문제 번호"
+          },
+          "selected": {
+            "type": "string",
+            "description": "선택한 답"
+          },
+          "note": {
+            "type": "string",
+            "description": "참고 설명 — 왜 주의가 필요한지"
+          }
+        }
+      }
+    },
+    "grammarTopics": {
+      "type": "array",
+      "description": "문법 보충 설명 — 문법/구문독해 과목에서 추가 개념 설명이 필요할 때",
+      "items": {
+        "type": "object",
+        "required": ["title", "content"],
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "보충 주제 제목"
+          },
+          "content": {
+            "type": "string",
+            "description": "보충 내용 HTML — concept-box, grammar-block 등 활용"
+          }
+        }
+      }
+    },
+    "textbookDataHint": {
+      "type": "string",
+      "description": "교재 데이터 경로 힌트 (예: 'reading/intermediate/part07'). 02_textbooks/data/{hint}-passages.json 에서 passage, choices, correctAnswer 자동 조회"
+    },
+    "conceptQuestions": {
+      "type": "array",
+      "description": "개념 보충 학습 — 개념설명 + 예문 + 연습문제 20개 세트",
+      "items": {
+        "type": "object",
+        "required": ["title", "explanation", "practiceProblems"],
+        "properties": {
+          "title": {
+            "type": "string",
+            "description": "개념명 (예: 'to부정사 형용사 용법')"
+          },
+          "explanation": {
+            "type": "string",
+            "description": "개념 설명 HTML — concept-box 활용"
+          },
+          "examples": {
+            "type": "array",
+            "description": "핵심 예시 문장 목록",
+            "items": { "type": "string" }
+          },
+          "exampleSentences": {
+            "type": "array",
+            "description": "예문 연습 (한→영 or 영→한)",
+            "items": { "type": "string" }
+          },
+          "confusionPoints": {
+            "type": "string",
+            "description": "학생이 헷갈려할 부분 설명 HTML — warning-box 활용"
+          },
+          "practiceProblems": {
+            "type": "array",
+            "description": "연습문제 20개 — 선지 + 정답 + 해설",
+            "items": {
+              "type": "object",
+              "required": ["sentence", "choices", "answer", "explanation"],
+              "properties": {
+                "sentence": {
+                  "type": "string",
+                  "description": "문장 (빈칸 포함 가능)"
+                },
+                "choices": {
+                  "type": "array",
+                  "description": "선지 목록 (①부터 순서대로)",
+                  "items": { "type": "string" },
+                  "minItems": 4,
+                  "maxItems": 5
+                },
+                "answer": {
+                  "type": "string",
+                  "description": "정답 (예: '②')"
+                },
+                "explanation": {
+                  "type": "string",
+                  "description": "짧은 해설"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "examples": [
+    {
+      "student": "최여진",
+      "date": "260221",
+      "subject": "독해",
+      "textbook": "문단 구조 분석",
+      "range": "257~276번",
+      "summary": {
+        "totalQ": 20,
+        "wrongQ": 3,
+        "correctRate": "85%",
+        "goodPoints": "대부분의 지문에서 핵심 구조를 정확히 파악함",
+        "badPoints": "문장의 구체적 기능(대조, 예시, 정의)을 판별하는 데 혼동",
+        "priority": "문장 기능 파악 → 대조/비교 구조 분석",
+        "weakAreas": [
+          { "area": "문장 기능 파악", "count": 2, "severity": "high", "note": "문장의 역할을 추상적으로 해석" },
+          { "area": "경험적 증거 구분", "count": 1, "severity": "mid", "note": "증거 제시 vs 정의 혼동" }
+        ]
+      },
+      "wrongAnswers": ["(see full example in feedback-data.json)"]
+    }
+  ]
+}

@@ -1,0 +1,179 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vera://schemas/vocabulary",
+  "title": "VocabularyDay",
+  "description": "일별 단어장 — 단어 엔트리 + 테스트",
+  "type": "object",
+  "required": ["$schema", "meta", "words"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "const": "vera://schemas/vocabulary",
+      "description": "스키마 식별자"
+    },
+    "meta": {
+      "type": "object",
+      "required": ["subject", "level", "day", "theme"],
+      "additionalProperties": false,
+      "description": "단어장 메타데이터",
+      "properties": {
+        "subject": {
+          "type": "string",
+          "const": "vocabulary",
+          "description": "과목 분류 (항상 vocabulary)"
+        },
+        "level": {
+          "type": "string",
+          "enum": ["basic", "bridge", "intermediate", "advanced"],
+          "description": "난이도 레벨"
+        },
+        "day": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "Day 번호"
+        },
+        "theme": {
+          "type": "string",
+          "description": "Day 테마",
+          "examples": ["역사, 시간, 유물 (History, Time, and Artifacts)"]
+        }
+      }
+    },
+    "words": {
+      "type": "array",
+      "minItems": 1,
+      "description": "단어 엔트리 배열",
+      "items": {
+        "$ref": "#/$defs/WordEntry"
+      }
+    },
+    "test": {
+      "type": "array",
+      "description": "선택. 해당 Day의 테스트 문제",
+      "items": {
+        "$ref": "#/$defs/VocabTest"
+      }
+    }
+  },
+  "$defs": {
+    "WordEntry": {
+      "type": "object",
+      "required": ["id", "word", "partOfSpeech", "meaning", "example"],
+      "additionalProperties": false,
+      "description": "개별 단어 엔트리",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^voca-[a-z]+-d[0-9]+-[0-9]{3}$",
+          "description": "단어 고유 ID. 형식: voca-{level}-d{day}-{3자리번호}",
+          "examples": ["voca-basic-d01-001", "voca-bridge-d15-042"]
+        },
+        "word": {
+          "type": "string",
+          "description": "영어 단어"
+        },
+        "pronunciation": {
+          "type": "string",
+          "description": "IPA 발음 기호 (선택)",
+          "examples": ["[ɪ́ərə]", "[prɪˈzɜːrv]"]
+        },
+        "partOfSpeech": {
+          "type": "string",
+          "enum": ["n.", "v.", "adj.", "adv.", "prep.", "conj.", "phr.", "idiom"],
+          "description": "품사"
+        },
+        "meaning": {
+          "type": "string",
+          "description": "한글 뜻"
+        },
+        "example": {
+          "type": "object",
+          "required": ["en", "ko"],
+          "additionalProperties": false,
+          "description": "예문 (영문 + 한글)",
+          "properties": {
+            "en": {
+              "type": "string",
+              "description": "영문 예문"
+            },
+            "ko": {
+              "type": "string",
+              "description": "한글 번역"
+            }
+          }
+        },
+        "synonyms": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "유의어 목록 (선택)"
+        },
+        "antonyms": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "반의어 목록 (선택)"
+        },
+        "relatedWords": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "관련 단어 목록 (선택)"
+        }
+      }
+    },
+    "VocabTest": {
+      "type": "object",
+      "required": ["id", "type", "instruction", "choices", "answer"],
+      "additionalProperties": false,
+      "description": "단어 테스트 문제",
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "테스트 문제 고유 ID",
+          "examples": ["voca-basic-d01-test-001"]
+        },
+        "type": {
+          "type": "string",
+          "enum": ["meaning-match", "fill-in-blank", "synonym-match", "spelling"],
+          "description": "테스트 문제 유형"
+        },
+        "instruction": {
+          "type": "string",
+          "description": "문제 지시문"
+        },
+        "word": {
+          "type": "string",
+          "description": "출제 대상 단어 (선택)"
+        },
+        "stem": {
+          "type": "string",
+          "description": "문장형 문제의 지문 (선택)"
+        },
+        "choices": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 2,
+          "maxItems": 5,
+          "description": "선택지 배열"
+        },
+        "answer": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5,
+          "description": "정답 번호 (1-based)"
+        },
+        "explanation": {
+          "type": "string",
+          "description": "해설 (선택)"
+        }
+      }
+    }
+  }
+}

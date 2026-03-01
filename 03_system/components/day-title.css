@@ -1,0 +1,94 @@
+/* =================================================================== */
+/* day-title.css — 보카 Day별 시작 페이지                              */
+/* Vera's Document Studio                                               */
+/* =================================================================== */
+
+/**
+ * Day Title Component
+ *
+ * 용도: 보카 교재의 Day별 학습 시작 페이지
+ *
+ * 마크업 예시:
+ *
+ * <div class="page no-header-footer">
+ *   <div class="day-title-page">
+ *     <div class="day-number">DAY 01</div>
+ *     <div class="day-divider"></div>
+ *     <h2 class="day-theme">역사, 시간, 유물</h2>
+ *     <p class="day-theme-eng">History, Time, Relics</p>
+ *     <p class="day-word-count">30 Words</p>
+ *   </div>
+ * </div>
+ */
+
+/* --- Day Title 페이지 컨테이너 --- */
+.day-title-page {
+    width: 100% !important;
+    height: 100% !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    background: var(--color-white) !important;
+    padding: var(--space-2xl) !important;
+    break-inside: avoid !important;
+}
+
+/* --- DAY 번호 --- */
+.day-number {
+    font-family: var(--font-eng) !important;
+    font-size: 96pt !important;
+    font-weight: 900 !important;
+    color: var(--color-accent-primary) !important;
+    letter-spacing: -3px !important;
+    margin-bottom: var(--space-lg) !important;
+    line-height: 1 !important;
+}
+
+/* --- 구분선 --- */
+.day-divider {
+    width: 100px !important;
+    height: 3px !important;
+    background: var(--color-accent-primary) !important;
+    margin: var(--space-xl) 0 !important;
+}
+
+/* --- Day 테마 (한글) --- */
+.day-theme {
+    font-family: var(--font-sans) !important;
+    font-size: var(--text-2xl) !important;
+    font-weight: 700 !important;
+    color: var(--color-text-primary) !important;
+    margin: var(--space-md) 0 !important;
+    line-height: var(--leading-tight) !important;
+}
+
+/* --- Day 테마 (영문) --- */
+.day-theme-eng {
+    font-family: var(--font-eng) !important;
+    font-size: var(--text-lg) !important;
+    font-weight: 500 !important;
+    color: var(--color-text-secondary) !important;
+    margin: var(--space-sm) 0 !important;
+    line-height: var(--leading-normal) !important;
+}
+
+/* --- 단어 수 표시 --- */
+.day-word-count {
+    font-family: var(--font-eng) !important;
+    font-size: var(--text-md) !important;
+    font-weight: 600 !important;
+    color: var(--color-accent-secondary) !important;
+    margin-top: var(--space-lg) !important;
+    padding: var(--space-sm) var(--space-lg) !important;
+    background: var(--color-accent-light) !important;
+    border: 2px solid var(--color-accent-primary) !important;
+    border-radius: var(--radius-md) !important;
+}
+
+/* --- 헤더/푸터 숨김 --- */
+.day-title-page .page-header,
+.day-title-page .page-footer {
+    display: none !important;
+}

@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>학습 피드백지 — 정성엽 260228</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+
+  /* =============================================================
+     피드백지 공통 CSS v2.0 — Teal & Warm 팔레트
+     Primary Dark: #2c6975 | Primary Light: #68b2a0
+     Accent Blue: #1a6fc4 | Red: #e53e3e | Green: #2f855a
+     ============================================================= */
+
+  /* ===== RESET & BASE ===== */
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html {
+    font-size: 9.5pt;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 9.5pt;
+    line-height: 1.65;
+    color: #1a202c;
+    background: #f7fafa !important;
+    orphans: 3; widows: 3;
+  }
+
+  @page { size: A4; margin: 15mm 13mm; }
+
+  /* ===== PAGE BREAK ===== */
+  .page-break-after { page-break-after: always !important; }
+  .page-break-before { page-break-before: always !important; }
+  .avoid-break { page-break-inside: avoid !important; break-inside: avoid !important; }
+  h1, h2, h3, h4 { page-break-after: avoid !important; }
+  table, .concept-box, .tip-box, .warning-box, .answer-box, .grammar-block,
+  .problem-card, .diagnosis-card {
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+
+  /* ===== HEADINGS ===== */
+  h1 {
+    font-size: 18pt; font-weight: 700; color: #2c6975 !important;
+    margin: 16px 0 8px 0; padding-bottom: 5px;
+    border-bottom: 2.5px solid #2c6975; line-height: 1.3;
+  }
+  h2 {
+    font-size: 14pt; font-weight: 700; color: #2c6975 !important;
+    margin: 14px 0 8px 0; padding-bottom: 3px;
+    border-bottom: 1.5px solid #d0e4df; line-height: 1.3;
+  }
+  h3 {
+    font-size: 12pt; font-weight: 700; color: #2d3748 !important;
+    margin: 12px 0 6px 0; line-height: 1.4;
+  }
+  h4 {
+    font-size: 10pt; font-weight: 700; color: #4a5568 !important;
+    margin: 8px 0 5px 0; line-height: 1.4;
+  }
+  p { margin-bottom: 6px; }
+  strong { font-weight: 700; }
+  hr { border: none; border-top: 1px solid #d0e4df; margin: 16px 0; }
+
+  /* ===== TABLES ===== */
+  table {
+    width: 100%; border-collapse: collapse;
+    margin: 10px 0 12px 0; font-size: 8.5pt; line-height: 1.55;
+  }
+  thead th {
+    background-color: #68b2a0 !important; color: #fff !important;
+    font-weight: 700; padding: 6px 8px; text-align: left;
+    border: 1px solid #5aa090; font-size: 8.5pt;
+  }
+  tbody td {
+    padding: 5px 8px; border: 1px solid #d0e4df; vertical-align: top;
+  }
+  tbody tr:nth-child(odd) { background-color: #fff !important; }
+  tbody tr:nth-child(even) { background-color: #f0f7f5 !important; }
+  tbody td:first-child { font-weight: 500; }
+
+  .result-correct { color: #2f855a !important; font-weight: 700; }
+  .result-wrong { color: #e53e3e !important; font-weight: 700; }
+
+  /* ===== REPORT HEADER (첫 페이지) ===== */
+  .report-header { margin-bottom: 14px; }
+  .report-date { font-size: 9.5pt; color: #718096 !important; font-weight: 400; margin-bottom: 3px; }
+  .report-title {
+    font-size: 20pt; font-weight: 700; color: #2c6975 !important;
+    margin-bottom: 5px; line-height: 1.2; border: none; padding: 0;
+  }
+  .report-subtitle { font-size: 11pt; font-weight: 400; color: #4a5568 !important; margin-bottom: 2px; }
+  .report-meta { font-size: 8.5pt; color: #718096 !important; line-height: 1.8; margin-top: 6px; }
+  .report-meta span { display: inline-block; margin-right: 14px; }
+
+  /* ===== SECTION HEADER BAR ===== */
+  .section-header {
+    background-color: #2c6975 !important; color: #fff !important;
+    padding: 10px 20px; margin: 16px -13mm 12px -13mm;
+    padding-left: 16mm; padding-right: 13mm;
+    font-size: 14pt; font-weight: 700; line-height: 1.3;
+  }
+  .section-header .section-num {
+    font-size: 11pt; font-weight: 300; display: block;
+    margin-bottom: 1px; color: #9fcfc2 !important;
+  }
+
+  /* ===== SEVERITY BADGES ===== */
+  .severity-high {
+    display: inline-block; background-color: #e53e3e !important; color: #fff !important;
+    font-size: 7.5pt; font-weight: 700; padding: 1px 8px; border-radius: 10px;
+  }
+  .severity-mid {
+    display: inline-block; background-color: #ed8936 !important; color: #fff !important;
+    font-size: 7.5pt; font-weight: 700; padding: 1px 8px; border-radius: 10px;
+  }
+  .severity-low {
+    display: inline-block; background-color: #2f855a !important; color: #fff !important;
+    font-size: 7.5pt; font-weight: 700; padding: 1px 8px; border-radius: 10px;
+  }
+
+  /* ===== DIAGNOSIS CARD (학습 요약) ===== */
+  .diagnosis-card {
+    border: 1.5px solid #a8cec5; border-radius: 16px;
+    padding: 12px 16px; margin: 12px 0; background-color: #fff !important;
+  }
+  .diagnosis-card h3 { margin-top: 0; color: #2c6975 !important; font-size: 11pt; }
+  .priority-order {
+    background-color: #eaf3f0 !important; border-left: 3px solid #68b2a0;
+    padding: 8px 14px; margin: 10px 0; font-size: 9.5pt; border-radius: 0 12px 12px 0;
+  }
+
+  /* ===== QUESTION BOX ===== */
+  .question-box {
+    background-color: #f0f7f5 !important; border-left: 3px solid #68b2a0;
+    padding: 8px 12px; margin: 6px 0; font-size: 9.5pt; line-height: 1.65;
+    border-radius: 0 12px 12px 0;
+  }
+  .question-box p { margin: 0; }
+
+  /* ===== ANSWER BOX ===== */
+  .answer-box {
+    background-color: #f0fff4 !important; border-left: 3px solid #2f855a;
+    padding: 6px 12px; margin: 6px 0; font-weight: 500;
+    border-radius: 0 12px 12px 0;
+  }
+
+  /* ===== GRAMMAR BLOCK ===== */
+  .grammar-block {
+    background-color: #f0f4f3 !important; border: 1px solid #d0e4df;
+    padding: 10px 14px; margin: 10px 0; border-radius: 12px;
+    font-size: 8.5pt; line-height: 1.75; white-space: pre-wrap;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+
+  /* ===== TIP BOX ===== */
+  .tip-box {
+    background-color: #fffaf0 !important; border-left: 3px solid #ed8936;
+    padding: 8px 14px; margin: 10px 0; border-radius: 0 12px 12px 0;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+  .tip-box .tip-label {
+    font-weight: 700; color: #c05621 !important; font-size: 8.5pt;
+    display: block; margin-bottom: 3px;
+  }
+
+  /* ===== WARNING BOX ===== */
+  .warning-box {
+    background-color: #fff5f5 !important; border-left: 3px solid #e53e3e;
+    padding: 8px 14px; margin: 10px 0; border-radius: 0 12px 12px 0;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+  .warning-box .warning-label {
+    font-weight: 700; color: #e53e3e !important; font-size: 8.5pt;
+    display: block; margin-bottom: 3px;
+  }
+
+  /* ===== CONCEPT BOX ===== */
+  .concept-box {
+    background-color: #eaf3f0 !important; border: 1px solid #68b2a0;
+    padding: 10px 14px; margin: 10px 0; border-radius: 12px;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+  .concept-box .concept-label {
+    font-weight: 700; color: #2c6975 !important; font-size: 8.5pt;
+    display: block; margin-bottom: 4px;
+  }
+
+  /* ===== PROBLEM CARD ===== */
+  .problem-card {
+    border: 1px solid #d0e4df; border-radius: 14px;
+    padding: 12px 16px; margin: 10px 0;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+    background-color: #fff !important;
+  }
+  .problem-header {
+    display: flex; align-items: center; margin-bottom: 10px; gap: 10px;
+  }
+  .problem-badge {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 32px; height: 32px; border-radius: 50%;
+    background-color: #68b2a0 !important; color: #fff !important;
+    font-weight: 700; font-size: 11pt; flex-shrink: 0;
+  }
+  .problem-title {
+    font-size: 10pt; font-weight: 700; color: #2d3748 !important;
+  }
+  .problem-source {
+    font-size: 7.5pt; color: #718096 !important; font-weight: 400;
+    display: block; margin-top: 1px;
+  }
+
+  /* ===== HIGHLIGHT ===== */
+  .hl-key { color: #2c6975 !important; font-weight: 700; }
+  .hl-wrong { color: #e53e3e !important; font-weight: 700; text-decoration: line-through; }
+  .hl-correct { color: #2f855a !important; font-weight: 700; }
+  .hl-blue { color: #1a6fc4 !important; font-weight: 700; }
+
+  /* ===== FLOWCHART ===== */
+  .flowchart { margin: 12px 0; page-break-inside: avoid !important; }
+  .flow-step {
+    background-color: #eaf3f0 !important; border: 1px solid #a8cec5;
+    border-radius: 12px; padding: 8px 14px; margin-bottom: 3px; font-size: 9pt;
+  }
+  .flow-step .step-label { font-weight: 700; color: #2c6975 !important; margin-right: 8px; }
+  .flow-step .step-sub {
+    padding-left: 20px; font-size: 8.5pt; color: #4a5568 !important;
+    margin-top: 3px; line-height: 1.65;
+  }
+  .flow-arrow { text-align: center; font-size: 13pt; color: #68b2a0 !important; line-height: 1.2; margin: 2px 0; }
+
+  /* ===== CHECKLIST ===== */
+  .checklist-group { margin-bottom: 12px; page-break-inside: avoid !important; }
+  .checklist-group-title {
+    font-size: 10pt; font-weight: 700; color: #2c6975 !important;
+    margin-bottom: 6px; padding: 3px 0; border-bottom: 1px solid #d0e4df;
+  }
+  .checklist-item {
+    display: flex; align-items: flex-start; gap: 6px;
+    padding: 3px 0; font-size: 9pt; line-height: 1.55;
+  }
+  .checkbox {
+    display: inline-block; width: 13px; height: 13px; min-width: 13px;
+    border: 1.5px solid #a0aec0; border-radius: 3px; margin-top: 2px;
+  }
+
+  /* ===== SECTION DIVIDER ===== */
+  .section-divider { border: none; border-top: 1.5px solid #d0e4df; margin: 16px 0; }
+
+  /* ===== VARIANT CHOICES ===== */
+  .variant-choices { padding-left: 18px; font-size: 8.5pt; line-height: 1.75; margin: 3px 0; }
+
+  /* ===== GROUP ROW ===== */
+  .group-row td {
+    background-color: #eaf3f0 !important; font-weight: 700;
+    color: #2c6975 !important; border-bottom: 2px solid #68b2a0;
+  }
+
+  /* ===== COMPARE TABLE ===== */
+  .compare-table thead th:nth-child(2) { background-color: #5aa090 !important; }
+  .compare-table thead th:nth-child(3) { background-color: #2f855a !important; }
+
+  /* ===== EXPRESSION TABLE ===== */
+  .expression-table td:first-child { white-space: nowrap; font-weight: 700; }
+
+  /* ===== MARKER ===== */
+  .marker-o { color: #2f855a !important; font-weight: 700; }
+  .marker-x { color: #e53e3e !important; font-weight: 700; }
+
+  /* ===== PASSAGE BLOCK (독해 지문) ===== */
+  .passage-block {
+    background-color: #f7fafa !important; border: 1px solid #d0e4df;
+    border-left: 3px solid #68b2a0;
+    padding: 12px 16px; margin: 10px 0; border-radius: 0 12px 12px 0;
+    font-size: 9pt; line-height: 1.85;
+    text-align: justify !important;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+
+  /* Allow long passages to break across pages */
+  .passage-block--long {
+    page-break-inside: auto !important; break-inside: auto !important;
+  }
+
+  /* Legacy .page container fallback (pre-v2 feedback HTMLs) */
+  .page {
+    min-height: 297mm;
+    height: auto;
+    overflow: visible;
+  }
+  .page-content {
+    overflow: visible;
+  }
+
+  /* ===== CHOICES LIST ===== */
+  .choices-list {
+    margin: 8px 0; font-size: 9pt; line-height: 1.85;
+  }
+  .choices-list .choice-item { padding: 1px 0; }
+  .choice-correct { color: #2f855a !important; font-weight: 700; }
+  .choice-wrong { color: #e53e3e !important; font-weight: 700; text-decoration: line-through; }
+
+  /* ===== PRINT OPTIMIZATION ===== */
+  @media print {
+    body { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; background: #fff !important; }
+    .section-header { margin-left: -13mm; margin-right: -13mm; padding-left: 16mm; padding-right: 13mm; }
+  }
+
+</style>
+</head>
+<body>
+
+<div class="report-header">
+  <div class="report-date">2026. 02. 28</div>
+  <h1 class="report-title" style="border:none; margin-bottom:6px;">학습 피드백지</h1>
+  <div class="report-subtitle">문법 — 구vs절 완벽정리 (VERADICT)</div>
+  <div class="report-meta">
+    <span><strong>학생</strong> 정성엽</span>
+    <span><strong>교재</strong> 구vs절 완벽정리 (VERADICT)</span>
+    <span><strong>범위</strong> PART 3 관계사절·분사구 ~ PART 4 부사구/절</span>
+  </div>
+</div>
+
+<div class="diagnosis-card">
+  <h3>학습 요약</h3>
+  <p style="font-size:10pt; margin-bottom:8px;">
+    전체 0문제 중 오답 <strong>0문제</strong> (정답률 약 N/A)
+  </p>
+  <p style="font-size:9.5pt; margin-bottom:4px;">
+    <strong style="color:#38a169;">잘한 점:</strong> 교재 개념 페이지를 캡처하여 체계적으로 정리하는 학습 습관이 좋습니다. 관계대명사+be동사 생략 → 분사구 전환 공식, 부사 역할의 구/절 구분 등 편입 핵심 문법을 능동적으로 학습 중입니다.
+  </p>
+  <p style="font-size:9.5pt; margin-bottom:12px;">
+    <strong style="color:#e53e3e;">아쉬운 점:</strong> 오늘은 개념 정리 위주 학습이었으므로, 배운 개념을 실전 문제에 적용하는 연습이 필요합니다. 아래 연습문제 60문제로 개념을 확실히 다져봅시다.
+  </p>
+  
+  <table>
+    <thead>
+      <tr><th>취약 영역</th><th style="width:60px;">문제 수</th><th style="width:70px;">심각도</th><th>핵심</th></tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td><strong>관계사절 (관계대명사 선택)</strong></td>
+        <td>0문제</td>
+        <td><span class="severity-mid">보통</span></td>
+        <td>which/that/whose/whom/when 구분이 편입 빈출</td>
+      </tr>
+      <tr>
+        <td><strong>분사구문 ↔ 관계사절 전환</strong></td>
+        <td>0문제</td>
+        <td><span class="severity-high">높음</span></td>
+        <td>구와 절의 차이를 정확히 이해해야 전환 가능</td>
+      </tr>
+      <tr>
+        <td><strong>부사 역할 구와 절</strong></td>
+        <td>0문제</td>
+        <td><span class="severity-mid">보통</span></td>
+        <td>접속사 vs 전치사, so that vs so…that 구분</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="priority-order">
+  <strong>학습 우선순위:</strong> 관계대명사 선택 → 분사구문↔관계사절 전환 → 부사구/절 접속사 식별
+</div>
+
+<div class="page-break-before section-header">
+  <span class="section-num">Section 1</span>
+  틀린 문제 리스트
+</div>
+
+<div class="page-break-before section-header">
+  <span class="section-num">Section 2</span>
+  해설 파트
+</div>
+
+
+<div class="page-break-before section-header">
+  <span class="section-num">보충</span>
+  문법 보충 설명
+</div>
+<div class="concept-box">
+  <span class="concept-label">구(Phrase)와 절(Clause)의 근본적 차이</span>
+  <div class="concept-box"><h4>구 vs 절: 핵심 구분법</h4><table><tr><th></th><th>구 (Phrase)</th><th>절 (Clause)</th></tr><tr><td><strong>정의</strong></td><td>주어+동사 없이 의미 단위를 이루는 어구</td><td>주어+동사를 포함하는 의미 단위</td></tr><tr><td><strong>예시</strong></td><td>sitting on the bench (분사구)</td><td>who is sitting on the bench (관계사절)</td></tr><tr><td><strong>독립성</strong></td><td>문장 성분으로만 기능</td><td>독립절은 혼자 문장 가능</td></tr></table></div><div class="grammar-block"><h4>편입에서 묻는 포인트</h4><ol><li><strong>밑줄 친 부분의 문법적 기능</strong> → 구인지 절인지 판별</li><li><strong>구 ↔ 절 전환</strong> → 같은 의미를 구로/절로 바꾸기</li><li><strong>접속사/관계사 선택</strong> → 절을 이끄는 적절한 연결어</li></ol></div><div class="tip-box"><h4>빠른 판별법</h4><p>밑줄 친 부분에 <strong>주어+동사가 보이면 절</strong>, 보이지 않으면 구!</p><ul><li>to부정사구: to + 동사원형 (주어 없음) → 구</li><li>분사구문: V-ing / p.p. (주어 없음) → 구</li><li>전치사구: 전치사 + 명사 → 구</li><li>관계사절: 관계사 + S + V → 절</li><li>부사절: 접속사 + S + V → 절</li></ul></div>
+</div>
+
+<div class="page-break-before section-header">
+  <span class="section-num">개념 보충</span>
+  개념 보충 학습
+</div>
+<h2>1. 관계사절과 관계대명사 선택</h2>
+<div class="concept-box"><h4>핵심 개념: 관계대명사의 종류와 선택 기준</h4><p>관계대명사는 <strong>선행사의 종류</strong>와 <strong>절 안에서의 역할</strong>에 따라 선택한다.</p><table><tr><th>관계대명사</th><th>선행사</th><th>역할</th><th>예문</th></tr><tr><td><strong>who</strong></td><td>사람</td><td>주어</td><td>The man <em>who</em> called you is my boss.</td></tr><tr><td><strong>whom</strong></td><td>사람</td><td>목적어</td><td>The girl <em>whom</em> I met was kind.</td></tr><tr><td><strong>which</strong></td><td>사물/동물</td><td>주어/목적어</td><td>The car <em>which</em> I bought is red.</td></tr><tr><td><strong>that</strong></td><td>사람/사물</td><td>주어/목적어</td><td>The movie <em>that</em> we watched was great.</td></tr><tr><td><strong>whose</strong></td><td>사람/사물</td><td>소유격</td><td>The boy <em>whose</em> father is a doctor…</td></tr><tr><td><strong>when</strong></td><td>시간</td><td>부사</td><td>The day <em>when</em> I met her was special.</td></tr><tr><td><strong>where</strong></td><td>장소</td><td>부사</td><td>The city <em>where</em> I was born is small.</td></tr></table></div><div class="grammar-block"><h4>판별법: 3단계 선택 전략</h4><ol><li><strong>선행사 확인</strong> → 사람? 사물? 시간? 장소?</li><li><strong>관계사절 내 빈자리 확인</strong> → 주어? 목적어? 소유격? 부사?</li><li><strong>제한적 vs 계속적 용법</strong> → 콤마(,) 유무 확인. 콤마 뒤에는 that 불가!</li></ol></div><div class="warning-box"><h4>주의: that을 쓸 수 없는 경우</h4><ul><li>콤마(,) 뒤의 계속적 용법: My car, <strong>which</strong> is red, … (that 불가)</li><li>전치사 바로 뒤: the house <strong>in which</strong> I live (in that 불가)</li></ul></div>
+<div class="grammar-block">The man who called you is my boss. → 선행사: man(사람), 역할: 주어 → who
+The car which I bought is red. → 선행사: car(사물), 역할: 목적어 → which/that
+The boy whose father is a doctor studies hard. → 소유격 → whose
+The day when I met her was special. → 선행사: day(시간), 역할: 부사 → when
+</div>
+<h4>예문 연습</h4>
+<div class="grammar-block">1. I know the girl who won the contest. (나는 그 대회에서 우승한 소녀를 안다.)
+2. This is the book which changed my life. (이것이 내 인생을 바꾼 책이다.)
+3. The house whose roof is red belongs to my uncle. (지붕이 빨간 집은 삼촌 것이다.)
+4. Do you remember the place where we first met? (우리가 처음 만난 장소를 기억하니?)
+</div>
+<div class="warning-box"><h4>자주 헷갈리는 포인트</h4><ul><li><strong>who vs whom</strong>: 절 안에서 주어면 who, 목적어면 whom. 헷갈리면 he/him으로 대입 → he가 맞으면 who, him이 맞으면 whom</li><li><strong>which vs that</strong>: 대부분 호환 가능하지만, 콤마 뒤(계속적 용법)에서는 which만 가능</li><li><strong>that vs what</strong>: that은 선행사가 있고, what은 선행사를 포함(= the thing which)</li><li><strong>where vs which</strong>: 장소 선행사여도 절 안에 전치사가 없으면 which/that (The city <em>that</em> I visited → 목적어 빈자리)</li></ul></div>
+<div class="page-break-before section-header">
+  <span class="section-num">연습 1</span>
+  관계사절과 관계대명사 선택 연습문제 (20문제)
+</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>1.</strong> The teacher ______ taught us math retired last year.</p><div class="variant-choices">① who&nbsp;&nbsp;&nbsp;② whom&nbsp;&nbsp;&nbsp;③ which&nbsp;&nbsp;&nbsp;④ whose&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>2.</strong> The book ______ you recommended was excellent.</p><div class="variant-choices">① who&nbsp;&nbsp;&nbsp;② which&nbsp;&nbsp;&nbsp;③ whose&nbsp;&nbsp;&nbsp;④ where&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>3.</strong> The student ______ essay won the prize is my friend.</p><div class="variant-choices">① who&nbsp;&nbsp;&nbsp;② whom&nbsp;&nbsp;&nbsp;③ whose&nbsp;&nbsp;&nbsp;④ which&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>4.</strong> I remember the day ______ we graduated from college.</p><div class="variant-choices">① which&nbsp;&nbsp;&nbsp;② where&nbsp;&nbsp;&nbsp;③ when&nbsp;&nbsp;&nbsp;④ whom&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>5.</strong> She is the person ______ I spoke to on the phone.</p><div class="variant-choices">① who&nbsp;&nbsp;&nbsp;② whom&nbsp;&nbsp;&nbsp;③ which&nbsp;&nbsp;&nbsp;④ whose&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>6.</strong> The hotel ______ we stayed was near the beach.</p><div class="variant-choices">① which&nbsp;&nbsp;&nbsp;② where&nbsp;&nbsp;&nbsp;③ when&nbsp;&nbsp;&nbsp;④ whose&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>7.</strong> My sister, ______ lives in Paris, is visiting next week.</p><div class="variant-choices">① that&nbsp;&nbsp;&nbsp;② who&nbsp;&nbsp;&nbsp;③ whom&nbsp;&nbsp;&nbsp;④ which&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>8.</strong> The reason ______ he was late is still unknown.</p><div class="variant-choices">① which&nbsp;&nbsp;&nbsp;② why&nbsp;&nbsp;&nbsp;③ when&nbsp;&nbsp;&nbsp;④ where&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>9.</strong> This is the house in ______ I grew up.</p><div class="variant-choices">① that&nbsp;&nbsp;&nbsp;② which&nbsp;&nbsp;&nbsp;③ where&nbsp;&nbsp;&nbsp;④ whose&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>10.</strong> The woman ______ bag was stolen reported it to the police.</p><div class="variant-choices">① who&nbsp;&nbsp;&nbsp;② whom&nbsp;&nbsp;&nbsp;③ that&nbsp;&nbsp;&nbsp;④ whose&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>11.</strong> Everything ______ he said turned out to be true.</p><div class="variant-choices">① which&nbsp;&nbsp;&nbsp;② that&nbsp;&nbsp;&nbsp;③ who&nbsp;&nbsp;&nbsp;④ what&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>12.</strong> ______ surprised me was his sudden resignation.</p><div class="variant-choices">① That&nbsp;&nbsp;&nbsp;② Which&nbsp;&nbsp;&nbsp;③ What&nbsp;&nbsp;&nbsp;④ Who&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>13.</strong> The city ______ I visited last summer was beautiful.</p><div class="variant-choices">① where&nbsp;&nbsp;&nbsp;② which&nbsp;&nbsp;&nbsp;③ when&nbsp;&nbsp;&nbsp;④ whose&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>14.</strong> He has two sons, both of ______ are doctors.</p><div class="variant-choices">① who&nbsp;&nbsp;&nbsp;② whom&nbsp;&nbsp;&nbsp;③ which&nbsp;&nbsp;&nbsp;④ that&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>15.</strong> The movie, ______ was directed by Bong Joon-ho, won an Oscar.</p><div class="variant-choices">① that&nbsp;&nbsp;&nbsp;② which&nbsp;&nbsp;&nbsp;③ who&nbsp;&nbsp;&nbsp;④ whom&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>16.</strong> The man ______ car was parked illegally received a fine.</p><div class="variant-choices">① who&nbsp;&nbsp;&nbsp;② whom&nbsp;&nbsp;&nbsp;③ whose&nbsp;&nbsp;&nbsp;④ which&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>17.</strong> Is there anything ______ I can do for you?</p><div class="variant-choices">① which&nbsp;&nbsp;&nbsp;② what&nbsp;&nbsp;&nbsp;③ that&nbsp;&nbsp;&nbsp;④ whom&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>18.</strong> The way ______ she solved the problem impressed everyone.</p><div class="variant-choices">① how&nbsp;&nbsp;&nbsp;② which&nbsp;&nbsp;&nbsp;③ in which&nbsp;&nbsp;&nbsp;④ where&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>19.</strong> She married a man ______ she had met only twice.</p><div class="variant-choices">① who&nbsp;&nbsp;&nbsp;② whom&nbsp;&nbsp;&nbsp;③ whose&nbsp;&nbsp;&nbsp;④ where&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>20.</strong> The company, for ______ he works, is based in Seoul.</p><div class="variant-choices">① that&nbsp;&nbsp;&nbsp;② which&nbsp;&nbsp;&nbsp;③ whom&nbsp;&nbsp;&nbsp;④ who&nbsp;&nbsp;&nbsp;</div>
+<div class="page-break-before">
+  <h3>연습 1. 관계사절과 관계대명사 선택 정답 및 해설</h3>
+  <table>
+    <thead><tr><th style="width:30px;">#</th><th style="width:80px;">정답</th><th>해설</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>①</td><td>선행사 teacher(사람), 관계사절 내 주어 빈자리 → who</td></tr>
+      <tr><td>2</td><td>②</td><td>선행사 book(사물), 관계사절 내 목적어 빈자리 → which (that도 가능)</td></tr>
+      <tr><td>3</td><td>③</td><td>essay 앞의 소유격 빈자리 → whose (= the student's essay)</td></tr>
+      <tr><td>4</td><td>③</td><td>선행사 day(시간), 관계사절 내 시간 부사 역할 → when</td></tr>
+      <tr><td>5</td><td>②</td><td>전치사 to의 목적어 빈자리(사람) → whom</td></tr>
+      <tr><td>6</td><td>②</td><td>선행사 hotel(장소), 관계사절 내 장소 부사 역할(stayed at the hotel) → where</td></tr>
+      <tr><td>7</td><td>②</td><td>콤마+사람+주어 역할 → who (계속적 용법이므로 that 불가)</td></tr>
+      <tr><td>8</td><td>②</td><td>선행사 reason → 관계부사 why</td></tr>
+      <tr><td>9</td><td>②</td><td>전치사 in 바로 뒤 → which (in that은 불가)</td></tr>
+      <tr><td>10</td><td>④</td><td>bag 앞의 소유격 → whose (= the woman's bag)</td></tr>
+      <tr><td>11</td><td>②</td><td>선행사 everything(부정대명사) → that만 가능 (which 불가)</td></tr>
+      <tr><td>12</td><td>③</td><td>선행사 없음 + 주어절 → what (= the thing which)</td></tr>
+      <tr><td>13</td><td>②</td><td>장소 선행사지만 visited의 목적어 빈자리 → which/that (where 아님!)</td></tr>
+      <tr><td>14</td><td>②</td><td>전치사 of의 목적어(사람) + 콤마(계속적 용법) → whom</td></tr>
+      <tr><td>15</td><td>②</td><td>콤마+사물+주어 역할 → which (계속적 용법이므로 that 불가)</td></tr>
+      <tr><td>16</td><td>③</td><td>car 앞 소유격 → whose</td></tr>
+      <tr><td>17</td><td>③</td><td>선행사 anything(부정대명사) → that만 가능</td></tr>
+      <tr><td>18</td><td>③</td><td>the way how는 불가 → the way in which 또는 the way (that)</td></tr>
+      <tr><td>19</td><td>②</td><td>met의 목적어(사람) → whom</td></tr>
+      <tr><td>20</td><td>②</td><td>전치사 for + 사물(company) + 계속적 용법(콤마) → which</td></tr>
+    </tbody>
+  </table>
+</div>
+<h2>2. 분사구문 ↔ 관계사절 전환</h2>
+<div class="concept-box"><h4>핵심 개념: 분사구(구) vs 관계사절(절)</h4><p><strong>분사구문</strong>은 관계사절에서 <strong>관계대명사 + be동사</strong>를 생략한 축약형이다.</p><table><tr><th>분사구문 (구)</th><th>관계사절 (절)</th></tr><tr><td>The boy <strong>sitting</strong> on the bench</td><td>The boy <strong>who is sitting</strong> on the bench</td></tr><tr><td>The letter <strong>written</strong> in English</td><td>The letter <strong>which was written</strong> in English</td></tr><tr><td>Department, long <strong>reputed</strong> to be…</td><td>Department, <strong>which has long been reputed</strong> to be…</td></tr></table></div><div class="grammar-block"><h4>전환 공식</h4><ol><li><strong>능동 (현재분사 -ing)</strong>: 관계대명사 + be + V-ing → V-ing만 남김<br/>who is sitting → sitting</li><li><strong>수동 (과거분사 p.p.)</strong>: 관계대명사 + be + p.p. → p.p.만 남김<br/>which was written → written</li><li><strong>완료 분사</strong>: 관계대명사 + have + p.p. → having p.p.<br/>who has finished → having finished</li></ol></div><div class="tip-box"><h4>편입 빈출 포인트</h4><p>분사의 <strong>능동/수동</strong> 판별이 핵심! 수식받는 명사와의 관계를 확인:</p><ul><li>명사가 동작을 <strong>하면</strong> → 현재분사(-ing): a sleeping baby</li><li>명사가 동작을 <strong>당하면</strong> → 과거분사(p.p.): a broken window</li></ul></div>
+<div class="grammar-block">The girl standing by the door = The girl who is standing by the door (능동 → -ing)
+The report submitted yesterday = The report which was submitted yesterday (수동 → p.p.)
+Anyone wanting to join should apply. = Anyone who wants to join should apply.
+The bridge built in 1990 is now closed. = The bridge which was built in 1990 is now closed.
+</div>
+<h4>예문 연습</h4>
+<div class="grammar-block">1. 문 옆에 서 있는 소녀 → The girl standing by the door
+2. 어제 제출된 보고서 → The report submitted yesterday
+3. 영어로 쓰인 편지 → The letter written in English
+4. 벤치에 앉아 있는 소년 → The boy sitting on the bench
+</div>
+<div class="warning-box"><h4>자주 헷갈리는 포인트</h4><ul><li><strong>현재분사(-ing) vs 과거분사(p.p.)</strong>: 능동/수동 판별이 핵심. "exciting news(흥분시키는)" vs "excited people(흥분된)"</li><li><strong>분사구문의 위치</strong>: 명사 바로 뒤 → 형용사적 후치수식 / 문장 앞·뒤 → 부사적 분사구문</li><li><strong>관계대명사+be 생략 조건</strong>: be동사가 있어야 생략 가능. The man who likes coffee → liking 단순 전환 불가</li><li><strong>완료 분사 vs 단순 분사</strong>: 시제 차이가 있으면 having p.p. 사용</li></ul></div>
+<div class="page-break-before section-header">
+  <span class="section-num">연습 2</span>
+  분사구문 ↔ 관계사절 전환 연습문제 (20문제)
+</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>1.</strong> The man ______ at the bus stop is my uncle.</p><div class="variant-choices">① waited&nbsp;&nbsp;&nbsp;② waiting&nbsp;&nbsp;&nbsp;③ to wait&nbsp;&nbsp;&nbsp;④ wait&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>2.</strong> The documents ______ by the manager need revision.</p><div class="variant-choices">① signing&nbsp;&nbsp;&nbsp;② signed&nbsp;&nbsp;&nbsp;③ to sign&nbsp;&nbsp;&nbsp;④ sign&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>3.</strong> The students ______ in the project will receive extra credit.</p><div class="variant-choices">① involved&nbsp;&nbsp;&nbsp;② involving&nbsp;&nbsp;&nbsp;③ to involve&nbsp;&nbsp;&nbsp;④ involve&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>4.</strong> The woman ______ the red dress is a famous actress.</p><div class="variant-choices">① worn&nbsp;&nbsp;&nbsp;② wearing&nbsp;&nbsp;&nbsp;③ wore&nbsp;&nbsp;&nbsp;④ to wear&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>5.</strong> The package ______ to the wrong address was returned.</p><div class="variant-choices">① delivering&nbsp;&nbsp;&nbsp;② delivered&nbsp;&nbsp;&nbsp;③ deliver&nbsp;&nbsp;&nbsp;④ to deliver&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>6.</strong> ______ all the work, she went home early.</p><div class="variant-choices">① Finishing&nbsp;&nbsp;&nbsp;② Finished&nbsp;&nbsp;&nbsp;③ Having finished&nbsp;&nbsp;&nbsp;④ To finish&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>7.</strong> The language ______ in Brazil is Portuguese.</p><div class="variant-choices">① speaking&nbsp;&nbsp;&nbsp;② spoken&nbsp;&nbsp;&nbsp;③ to speak&nbsp;&nbsp;&nbsp;④ speak&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>8.</strong> Anyone ______ to participate should register by Friday.</p><div class="variant-choices">① wish&nbsp;&nbsp;&nbsp;② wished&nbsp;&nbsp;&nbsp;③ wishing&nbsp;&nbsp;&nbsp;④ to wish&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>9.</strong> The email ______ this morning contained important information.</p><div class="variant-choices">① receiving&nbsp;&nbsp;&nbsp;② received&nbsp;&nbsp;&nbsp;③ to receive&nbsp;&nbsp;&nbsp;④ receive&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>10.</strong> ______ from the top of the mountain, the city looked tiny.</p><div class="variant-choices">① Seeing&nbsp;&nbsp;&nbsp;② Seen&nbsp;&nbsp;&nbsp;③ To see&nbsp;&nbsp;&nbsp;④ Having seeing&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>11.</strong> The girl ______ next to me in class is very smart.</p><div class="variant-choices">① sat&nbsp;&nbsp;&nbsp;② sitting&nbsp;&nbsp;&nbsp;③ to sit&nbsp;&nbsp;&nbsp;④ sit&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>12.</strong> The road ______ to the village is very narrow.</p><div class="variant-choices">① led&nbsp;&nbsp;&nbsp;② leading&nbsp;&nbsp;&nbsp;③ to lead&nbsp;&nbsp;&nbsp;④ lead&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>13.</strong> ______ not what to say, he remained silent.</p><div class="variant-choices">① Known&nbsp;&nbsp;&nbsp;② Knowing&nbsp;&nbsp;&nbsp;③ Not knowing&nbsp;&nbsp;&nbsp;④ Not known&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>14.</strong> The car ______ in the accident was towed away.</p><div class="variant-choices">① damaging&nbsp;&nbsp;&nbsp;② damaged&nbsp;&nbsp;&nbsp;③ to damage&nbsp;&nbsp;&nbsp;④ damage&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>15.</strong> The children ______ in the park seemed very happy.</p><div class="variant-choices">① played&nbsp;&nbsp;&nbsp;② playing&nbsp;&nbsp;&nbsp;③ to play&nbsp;&nbsp;&nbsp;④ play&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>16.</strong> ______ by the news, she burst into tears.</p><div class="variant-choices">① Shocking&nbsp;&nbsp;&nbsp;② Shocked&nbsp;&nbsp;&nbsp;③ Having shocked&nbsp;&nbsp;&nbsp;④ To shock&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>17.</strong> The concert ______ last night was a huge success.</p><div class="variant-choices">① holding&nbsp;&nbsp;&nbsp;② held&nbsp;&nbsp;&nbsp;③ to hold&nbsp;&nbsp;&nbsp;④ hold&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>18.</strong> There is a woman ______ to see you at the front desk.</p><div class="variant-choices">① waited&nbsp;&nbsp;&nbsp;② waiting&nbsp;&nbsp;&nbsp;③ to wait&nbsp;&nbsp;&nbsp;④ waits&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>19.</strong> The policy ______ by the government was widely criticized.</p><div class="variant-choices">① adopting&nbsp;&nbsp;&nbsp;② adopted&nbsp;&nbsp;&nbsp;③ to adopt&nbsp;&nbsp;&nbsp;④ adopt&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>20.</strong> ______ in 1960, the building is now a historical landmark.</p><div class="variant-choices">① Building&nbsp;&nbsp;&nbsp;② Built&nbsp;&nbsp;&nbsp;③ Having built&nbsp;&nbsp;&nbsp;④ To build&nbsp;&nbsp;&nbsp;</div>
+<div class="page-break-before">
+  <h3>연습 2. 분사구문 ↔ 관계사절 전환 정답 및 해설</h3>
+  <table>
+    <thead><tr><th style="width:30px;">#</th><th style="width:80px;">정답</th><th>해설</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>②</td><td>= The man who is waiting → 능동 현재분사 waiting</td></tr>
+      <tr><td>2</td><td>②</td><td>= The documents which were signed → 수동 과거분사 signed</td></tr>
+      <tr><td>3</td><td>①</td><td>students가 프로젝트에 '관련된(당한)' 상태 → 수동 과거분사 involved</td></tr>
+      <tr><td>4</td><td>②</td><td>= The woman who is wearing → 능동 현재분사 wearing</td></tr>
+      <tr><td>5</td><td>②</td><td>= The package which was delivered → 수동 과거분사 delivered</td></tr>
+      <tr><td>6</td><td>③</td><td>일을 끝낸 것(완료)이 집에 간 것보다 먼저 → having p.p.</td></tr>
+      <tr><td>7</td><td>②</td><td>language가 '사용되는' 것 → 수동 과거분사 spoken</td></tr>
+      <tr><td>8</td><td>③</td><td>= Anyone who wishes → 능동 현재분사 wishing</td></tr>
+      <tr><td>9</td><td>②</td><td>= The email which was received → 수동 과거분사 received</td></tr>
+      <tr><td>10</td><td>②</td><td>the city가 '보이는' 대상(수동) → 과거분사 Seen</td></tr>
+      <tr><td>11</td><td>②</td><td>= The girl who is sitting → 능동 현재분사 sitting</td></tr>
+      <tr><td>12</td><td>②</td><td>road가 '이끄는' 주체(능동) → 현재분사 leading</td></tr>
+      <tr><td>13</td><td>③</td><td>he가 '모르는' 주체(능동) + 부정 → Not knowing</td></tr>
+      <tr><td>14</td><td>②</td><td>car가 '손상된' 대상(수동) → 과거분사 damaged</td></tr>
+      <tr><td>15</td><td>②</td><td>= The children who were playing → 능동 현재분사 playing</td></tr>
+      <tr><td>16</td><td>②</td><td>she가 '충격받은' 대상(감정 수동) → 과거분사 Shocked</td></tr>
+      <tr><td>17</td><td>②</td><td>concert가 '개최된' 대상(수동) → 과거분사 held</td></tr>
+      <tr><td>18</td><td>②</td><td>= a woman who is waiting → 능동 현재분사 waiting</td></tr>
+      <tr><td>19</td><td>②</td><td>policy가 '채택된' 대상(수동) → 과거분사 adopted</td></tr>
+      <tr><td>20</td><td>②</td><td>the building이 '지어진' 대상(수동) → 과거분사 Built</td></tr>
+    </tbody>
+  </table>
+</div>
+<h2>3. 부사 역할을 하는 구와 절</h2>
+<div class="concept-box"><h4>핵심 개념: 부사 역할의 구 vs 절</h4><p>부사는 <strong>동사, 형용사, 다른 부사, 문장 전체</strong>를 수식한다. '구'는 주어+동사가 없고, '절'은 주어+동사가 있다.</p><table><tr><th>부사구 (주어+동사 없음)</th><th>부사절 (주어+동사 있음)</th></tr><tr><td><strong>to부정사구</strong>: To pass the exam, he studied hard.</td><td><strong>시간절</strong>: When he arrived, I was sleeping.</td></tr><tr><td><strong>전치사구</strong>: Despite the rain, we went out.</td><td><strong>조건절</strong>: If it rains, we will stay home.</td></tr><tr><td><strong>분사구문</strong>: Walking home, I saw a cat.</td><td><strong>양보절</strong>: Although he tried, he failed.</td></tr><tr><td></td><td><strong>이유절</strong>: Because she was tired, she left early.</td></tr><tr><td></td><td><strong>목적절</strong>: He saved money so that he could travel.</td></tr><tr><td></td><td><strong>결과절</strong>: It was so cold that the lake froze.</td></tr></table></div><div class="grammar-block"><h4>부사절 접속사 핵심 정리</h4><table><tr><th>기능</th><th>접속사</th></tr><tr><td>시간</td><td>when, while, before, after, until, since, as soon as, once</td></tr><tr><td>조건</td><td>if, unless, provided (that), as long as, in case</td></tr><tr><td>양보</td><td>although, though, even though, even if, while</td></tr><tr><td>이유</td><td>because, since, as, now that</td></tr><tr><td>목적</td><td>so that, in order that, lest</td></tr><tr><td>결과</td><td>so … that, such … that</td></tr></table></div><div class="tip-box"><h4>편입 빈출: 부사절 → 분사구문 전환</h4><p>접속사 + 주어 + 동사 → (접속사 생략) + 분사<br/><strong>Because</strong> he <strong>was</strong> tired, he left. → <strong>Being</strong> tired, he left. → <strong>Tired</strong>, he left.</p></div>
+<div class="grammar-block">To improve his English, he watched American dramas. (to부정사구 — 목적)
+Despite the heavy traffic, she arrived on time. (전치사구 — 양보)
+Walking along the river, I found a beautiful park. (분사구문 — 동시동작)
+Although it was expensive, she bought the bag. (부사절 — 양보)
+</div>
+<h4>예문 연습</h4>
+<div class="grammar-block">1. 시험에 합격하기 위해 그는 열심히 공부했다. → To pass the exam, he studied hard.
+2. 비가 옴에도 불구하고 우리는 외출했다. → Despite the rain, we went out.
+3. 그가 도착했을 때 나는 자고 있었다. → When he arrived, I was sleeping.
+4. 너무 피곤해서 그녀는 일찍 떠났다. → Because she was tired, she left early.
+</div>
+<div class="warning-box"><h4>자주 헷갈리는 포인트</h4><ul><li><strong>because vs because of</strong>: because + 절(S+V), because of + 명사(구)</li><li><strong>although vs despite</strong>: although + 절, despite + 명사(구)</li><li><strong>so that(목적) vs so…that(결과)</strong>: He studied hard <em>so that</em> he could pass.(목적) / He was <em>so</em> tired <em>that</em> he fell asleep.(결과)</li><li><strong>if vs unless</strong>: unless = if … not</li><li><strong>while(시간) vs while(양보)</strong>: 문맥으로 판단. "While I was eating(시간)" vs "While I agree with you(양보)"</li></ul></div>
+<div class="page-break-before section-header">
+  <span class="section-num">연습 3</span>
+  부사 역할을 하는 구와 절 연습문제 (20문제)
+</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>1.</strong> ______ it was raining heavily, we decided to cancel the picnic.</p><div class="variant-choices">① Despite&nbsp;&nbsp;&nbsp;② Although&nbsp;&nbsp;&nbsp;③ Because&nbsp;&nbsp;&nbsp;④ Because of&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>2.</strong> ______ the bad weather, the event was held outdoors.</p><div class="variant-choices">① Although&nbsp;&nbsp;&nbsp;② Despite&nbsp;&nbsp;&nbsp;③ Because&nbsp;&nbsp;&nbsp;④ Since&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>3.</strong> She studied abroad ______ she could improve her language skills.</p><div class="variant-choices">① so that&nbsp;&nbsp;&nbsp;② because&nbsp;&nbsp;&nbsp;③ although&nbsp;&nbsp;&nbsp;④ unless&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>4.</strong> ______ you finish your homework, you cannot go out.</p><div class="variant-choices">① If&nbsp;&nbsp;&nbsp;② Unless&nbsp;&nbsp;&nbsp;③ Although&nbsp;&nbsp;&nbsp;④ Because&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>5.</strong> He was ______ tired ______ he fell asleep during the meeting.</p><div class="variant-choices">① so / that&nbsp;&nbsp;&nbsp;② such / that&nbsp;&nbsp;&nbsp;③ too / to&nbsp;&nbsp;&nbsp;④ so / as&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>6.</strong> ______ arriving at the station, she realized she had left her ticket at home.</p><div class="variant-choices">① Until&nbsp;&nbsp;&nbsp;② Upon&nbsp;&nbsp;&nbsp;③ During&nbsp;&nbsp;&nbsp;④ While&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>7.</strong> ______ he apologized, she refused to forgive him.</p><div class="variant-choices">① Because&nbsp;&nbsp;&nbsp;② Even though&nbsp;&nbsp;&nbsp;③ So that&nbsp;&nbsp;&nbsp;④ Unless&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>8.</strong> I'll wait here ______ you come back.</p><div class="variant-choices">① until&nbsp;&nbsp;&nbsp;② during&nbsp;&nbsp;&nbsp;③ while&nbsp;&nbsp;&nbsp;④ by&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>9.</strong> ______ his lack of experience, he performed remarkably well.</p><div class="variant-choices">① Although&nbsp;&nbsp;&nbsp;② In spite of&nbsp;&nbsp;&nbsp;③ Because of&nbsp;&nbsp;&nbsp;④ Since&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>10.</strong> ______ the sun sets, the temperature drops rapidly.</p><div class="variant-choices">① Once&nbsp;&nbsp;&nbsp;② Despite&nbsp;&nbsp;&nbsp;③ Unless&nbsp;&nbsp;&nbsp;④ In case&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>11.</strong> Take an umbrella ______ it rains.</p><div class="variant-choices">① in case&nbsp;&nbsp;&nbsp;② unless&nbsp;&nbsp;&nbsp;③ although&nbsp;&nbsp;&nbsp;④ so that&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>12.</strong> She left early ______ avoid the rush-hour traffic.</p><div class="variant-choices">① so that&nbsp;&nbsp;&nbsp;② in order to&nbsp;&nbsp;&nbsp;③ because&nbsp;&nbsp;&nbsp;④ although&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>13.</strong> ______ working on the project, he discovered a major error.</p><div class="variant-choices">① While&nbsp;&nbsp;&nbsp;② During&nbsp;&nbsp;&nbsp;③ Although&nbsp;&nbsp;&nbsp;④ Despite&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>14.</strong> ______ she is young, she has a lot of experience.</p><div class="variant-choices">① Because&nbsp;&nbsp;&nbsp;② Although&nbsp;&nbsp;&nbsp;③ Unless&nbsp;&nbsp;&nbsp;④ Until&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>15.</strong> He spoke slowly ______ everyone could understand him.</p><div class="variant-choices">① so that&nbsp;&nbsp;&nbsp;② because&nbsp;&nbsp;&nbsp;③ although&nbsp;&nbsp;&nbsp;④ even if&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>16.</strong> ______ I was having dinner, the phone rang.</p><div class="variant-choices">① During&nbsp;&nbsp;&nbsp;② While&nbsp;&nbsp;&nbsp;③ Despite&nbsp;&nbsp;&nbsp;④ Because of&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>17.</strong> It was ______ a difficult exam ______ most students failed.</p><div class="variant-choices">① so / that&nbsp;&nbsp;&nbsp;② such / that&nbsp;&nbsp;&nbsp;③ too / to&nbsp;&nbsp;&nbsp;④ very / that&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>18.</strong> ______ you study hard, you will not pass the exam.</p><div class="variant-choices">① If&nbsp;&nbsp;&nbsp;② Unless&nbsp;&nbsp;&nbsp;③ Although&nbsp;&nbsp;&nbsp;④ When&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>19.</strong> He saved money ______ he could buy a new laptop.</p><div class="variant-choices">① in order that&nbsp;&nbsp;&nbsp;② because&nbsp;&nbsp;&nbsp;③ although&nbsp;&nbsp;&nbsp;④ while&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>20.</strong> ______ rich he may be, he cannot buy happiness.</p><div class="variant-choices">① Although&nbsp;&nbsp;&nbsp;② However&nbsp;&nbsp;&nbsp;③ Despite&nbsp;&nbsp;&nbsp;④ Even&nbsp;&nbsp;&nbsp;</div>
+<div class="page-break-before">
+  <h3>연습 3. 부사 역할을 하는 구와 절 정답 및 해설</h3>
+  <table>
+    <thead><tr><th style="width:30px;">#</th><th style="width:80px;">정답</th><th>해설</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>③</td><td>뒤에 절(it was raining) + 이유 → Because</td></tr>
+      <tr><td>2</td><td>②</td><td>뒤에 명사구(the bad weather) + 양보 → Despite</td></tr>
+      <tr><td>3</td><td>①</td><td>목적(~하기 위해) → so that + could</td></tr>
+      <tr><td>4</td><td>②</td><td>숙제를 끝내지 않으면(= if you don't finish) → Unless</td></tr>
+      <tr><td>5</td><td>①</td><td>so + 형용사(tired) + that + 절 → 결과 구문</td></tr>
+      <tr><td>6</td><td>②</td><td>Upon + V-ing = ~하자마자(= As soon as she arrived)</td></tr>
+      <tr><td>7</td><td>②</td><td>사과했음에도 용서 안 함 → 양보 Even though</td></tr>
+      <tr><td>8</td><td>①</td><td>네가 돌아올 때까지 → until + 절</td></tr>
+      <tr><td>9</td><td>②</td><td>뒤에 명사구(his lack) + 양보 → In spite of (= Despite)</td></tr>
+      <tr><td>10</td><td>①</td><td>해가 지면(일단 ~하면) → Once + 절</td></tr>
+      <tr><td>11</td><td>①</td><td>비가 올 경우를 대비해서 → in case</td></tr>
+      <tr><td>12</td><td>②</td><td>to부정사구(목적): ~하기 위해 → in order to + 동사원형</td></tr>
+      <tr><td>13</td><td>①</td><td>While + V-ing(분사구문) = ~하는 동안. During은 명사 앞에만 사용</td></tr>
+      <tr><td>14</td><td>②</td><td>젊음에도 경험 많음 → 양보 Although</td></tr>
+      <tr><td>15</td><td>①</td><td>모두가 이해할 수 있도록(목적) → so that</td></tr>
+      <tr><td>16</td><td>②</td><td>뒤에 절(I was having) + 시간(~하는 동안) → While</td></tr>
+      <tr><td>17</td><td>②</td><td>such + a(n) + 형용사 + 명사 + that → 결과 구문</td></tr>
+      <tr><td>18</td><td>②</td><td>열심히 공부하지 않으면(= If you don't) → Unless</td></tr>
+      <tr><td>19</td><td>①</td><td>새 노트북을 살 수 있도록(목적) → in order that (= so that)</td></tr>
+      <tr><td>20</td><td>②</td><td>However + 형용사 + S + V = 아무리 ~해도 (양보의 부사절)</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<hr class="section-divider">
+<p style="text-align: center; color: #a0aec0; font-size: 9pt; margin-top: 30px;">
+  피드백지 작성 완료 — 2026. 02. 28
+</p>
+</body>
+</html>

@@ -1,0 +1,140 @@
+# reading-basic — 편입영어 독해 Basic 편
+book:
+  title: "편입영어 독해 Basic 편"
+  author: "Vera's Flavor"
+  style: reading-basic
+  series: reading-basic
+
+pages:
+  - type: structural
+    src: reading/basic/cover.html
+  - type: structural
+    src: reading/basic/toc.html
+
+  # ── Part 1 ──
+  - type: structural
+    src: reading/basic/part-1-intro.html
+  - type: passages
+    src: reading/basic/part01-passages.json
+
+  # ── Part 2 ──
+  - type: structural
+    src: reading/basic/part-2-intro.html
+  - type: passages
+    src: reading/basic/part02-passages.json
+
+  # ── Part 3 ──
+  - type: structural
+    src: reading/basic/part-3-intro.html
+  - type: passages
+    src: reading/basic/part03-passages.json
+
+  # ── Part 4 ──
+  - type: structural
+    src: reading/basic/part-4-intro.html
+  - type: passages
+    src: reading/basic/part04-passages.json
+
+  # ── Part 5 ──
+  - type: structural
+    src: reading/basic/part-5-intro.html
+  - type: passages
+    src: reading/basic/part05-passages.json
+
+  # ── Part 6 ──
+  - type: structural
+    src: reading/basic/part-6-intro.html
+  - type: passages
+    src: reading/basic/part06-passages.json
+
+  # ── 정답 해설 ──
+  - type: content
+    src: reading/basic/content-01.html
+    pageClass: answer-key-page
+  - type: content
+    src: reading/basic/content-02.html
+    pageClass: answer-key-page
+  - type: content
+    src: reading/basic/content-03.html
+    pageClass: answer-key-page
+  - type: content
+    src: reading/basic/content-04.html
+    pageClass: answer-key-page
+  - type: content
+    src: reading/basic/content-05.html
+    pageClass: answer-key-page
+  - type: content
+    src: reading/basic/content-06.html
+    pageClass: answer-key-page
+  - type: content
+    src: reading/basic/content-07.html
+    pageClass: answer-key-page
+  - type: content
+    src: reading/basic/content-08.html
+    pageClass: answer-key-page
+  - type: content
+    src: reading/basic/content-09.html
+    pageClass: answer-key-page
+  - type: content
+    src: reading/basic/content-10.html
+    pageClass: answer-key-page
+  - type: content
+    src: reading/basic/content-11.html
+    pageClass: answer-key-page
+  - type: content
+    src: reading/basic/content-12.html
+    pageClass: answer-key-page
+  - type: content
+    src: reading/basic/content-13.html
+    pageClass: answer-key-page
+  - type: content
+    src: reading/basic/content-14.html
+    pageClass: answer-key-page
+  - type: content
+    src: reading/basic/content-15.html
+    pageClass: answer-key-page
+  - type: content
+    src: reading/basic/content-16.html
+    pageClass: answer-key-page
+  - type: content
+    src: reading/basic/content-17.html
+    pageClass: answer-key-page
+  - type: content
+    src: reading/basic/content-18.html
+    pageClass: answer-key-page
+  - type: content
+    src: reading/basic/content-19.html
+    pageClass: answer-key-page
+  - type: content
+    src: reading/basic/content-20.html
+    pageClass: answer-key-page
+  - type: content
+    src: reading/basic/content-21.html
+    pageClass: answer-key-page
+  - type: content
+    src: reading/basic/content-22.html
+    pageClass: answer-key-page
+  - type: content
+    src: reading/basic/content-23.html
+    pageClass: answer-key-page
+  - type: content
+    src: reading/basic/content-24.html
+    pageClass: answer-key-page
+  - type: content
+    src: reading/basic/content-25.html
+    pageClass: answer-key-page
+  - type: content
+    src: reading/basic/content-26.html
+    pageClass: answer-key-page
+  - type: content
+    src: reading/basic/content-27.html
+    pageClass: answer-key-page
+  - type: content
+    src: reading/basic/content-28.html
+    pageClass: answer-key-page
+  - type: content
+    src: reading/basic/content-29.html
+    pageClass: answer-key-page
+  - type: content
+    src: reading/basic/content-30.html
+    pageClass: answer-key-page

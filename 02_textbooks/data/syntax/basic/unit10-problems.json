@@ -1,0 +1,131 @@
+{
+  "bookId": "syntax-basic-unit10",
+  "unit": 10,
+  "title": "to부정사 & 동명사 (명사 역할)",
+  "part": "III",
+  "week": 3,
+  "type": "sentence-analysis",
+  "instruction": "다음 문장에서 명사 역할을 하는 to부정사 또는 동명사구를 찾아 [ ]로 묶고, 그 역할을 (S, O, C)로 표시한 후 해석해 보세요.",
+  "problems": [
+    {
+      "id": "syntax-basic-unit10-1",
+      "number": 1,
+      "type": "sentence-analysis",
+      "stem": "To exercise regularly is good for your health.",
+      "answer": {
+        "analysis": "[To exercise regularly](S) is good for your health.",
+        "pattern": "",
+        "translation": "규칙적으로 운동하는 것은 건강에 좋다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit10-2",
+      "number": 2,
+      "type": "sentence-analysis",
+      "stem": "I hope to see you again soon.",
+      "answer": {
+        "analysis": "I hope [to see you again soon](O).",
+        "pattern": "",
+        "translation": "나는 곧 당신을 다시 보기를 희망한다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit10-3",
+      "number": 3,
+      "type": "sentence-analysis",
+      "stem": "My goal is winning the first prize.",
+      "answer": {
+        "analysis": "My goal is [winning the first prize](C).",
+        "pattern": "",
+        "translation": "나의 목표는 1등 상을 타는 것이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit10-4",
+      "number": 4,
+      "type": "sentence-analysis",
+      "stem": "She avoids eating fast food.",
+      "answer": {
+        "analysis": "She avoids [eating fast food](O).",
+        "pattern": "",
+        "translation": "그녀는 패스트푸드를 먹는 것을 피한다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit10-5",
+      "number": 5,
+      "type": "sentence-analysis",
+      "stem": "Learning a new skill takes time and effort.",
+      "answer": {
+        "analysis": "[Learning a new skill](S) takes time and effort.",
+        "pattern": "",
+        "translation": "새로운 기술을 배우는 것은 시간과 노력이 든다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit10-6",
+      "number": 6,
+      "type": "sentence-analysis",
+      "stem": "His promise was to help me with the project.",
+      "answer": {
+        "analysis": "His promise was [to help me with the project](C).",
+        "pattern": "",
+        "translation": "그의 약속은 내가 프로젝트를 하는 것을 돕는 것이",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit10-7",
+      "number": 7,
+      "type": "sentence-analysis",
+      "stem": "We finished cleaning the house.",
+      "answer": {
+        "analysis": "었다. We finished [cleaning the house](O).",
+        "pattern": "",
+        "translation": "우리는 집 청소하는 것을 끝냈다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit10-8",
+      "number": 8,
+      "type": "sentence-analysis",
+      "stem": "To tell a lie is wrong.",
+      "answer": {
+        "analysis": "[To tell a lie](S) is wrong.",
+        "pattern": "",
+        "translation": "거짓말을 하는 것은 나쁘다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit10-9",
+      "number": 9,
+      "type": "sentence-analysis",
+      "stem": "Her hobby is taking pictures of flowers.",
+      "answer": {
+        "analysis": "Her hobby is [taking pictures of flowers](C).",
+        "pattern": "",
+        "translation": "그녀의 취미는 꽃 사진을 찍는 것이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit10-10",
+      "number": 10,
+      "type": "sentence-analysis",
+      "stem": "He promised to call me every day.",
+      "answer": {
+        "analysis": "He promised [to call me every day](O).",
+        "pattern": "",
+        "translation": "그는 매일 나에게 전화하기로 약속했다.",
+        "notes": ""
+      }
+    }
+  ]
+}

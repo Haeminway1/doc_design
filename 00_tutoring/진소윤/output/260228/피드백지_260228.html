@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>학습 피드백지 — 진소윤 260228</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+
+  /* =============================================================
+     피드백지 공통 CSS v2.0 — Teal & Warm 팔레트
+     Primary Dark: #2c6975 | Primary Light: #68b2a0
+     Accent Blue: #1a6fc4 | Red: #e53e3e | Green: #2f855a
+     ============================================================= */
+
+  /* ===== RESET & BASE ===== */
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html {
+    font-size: 9.5pt;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 9.5pt;
+    line-height: 1.65;
+    color: #1a202c;
+    background: #f7fafa !important;
+    orphans: 3; widows: 3;
+  }
+
+  @page { size: A4; margin: 15mm 13mm; }
+
+  /* ===== PAGE BREAK ===== */
+  .page-break-after { page-break-after: always !important; }
+  .page-break-before { page-break-before: always !important; }
+  .avoid-break { page-break-inside: avoid !important; break-inside: avoid !important; }
+  h1, h2, h3, h4 { page-break-after: avoid !important; }
+  table, .concept-box, .tip-box, .warning-box, .answer-box, .grammar-block,
+  .problem-card, .diagnosis-card {
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+
+  /* ===== HEADINGS ===== */
+  h1 {
+    font-size: 18pt; font-weight: 700; color: #2c6975 !important;
+    margin: 16px 0 8px 0; padding-bottom: 5px;
+    border-bottom: 2.5px solid #2c6975; line-height: 1.3;
+  }
+  h2 {
+    font-size: 14pt; font-weight: 700; color: #2c6975 !important;
+    margin: 14px 0 8px 0; padding-bottom: 3px;
+    border-bottom: 1.5px solid #d0e4df; line-height: 1.3;
+  }
+  h3 {
+    font-size: 12pt; font-weight: 700; color: #2d3748 !important;
+    margin: 12px 0 6px 0; line-height: 1.4;
+  }
+  h4 {
+    font-size: 10pt; font-weight: 700; color: #4a5568 !important;
+    margin: 8px 0 5px 0; line-height: 1.4;
+  }
+  p { margin-bottom: 6px; }
+  strong { font-weight: 700; }
+  hr { border: none; border-top: 1px solid #d0e4df; margin: 16px 0; }
+
+  /* ===== TABLES ===== */
+  table {
+    width: 100%; border-collapse: collapse;
+    margin: 10px 0 12px 0; font-size: 8.5pt; line-height: 1.55;
+  }
+  thead th {
+    background-color: #68b2a0 !important; color: #fff !important;
+    font-weight: 700; padding: 6px 8px; text-align: left;
+    border: 1px solid #5aa090; font-size: 8.5pt;
+  }
+  tbody td {
+    padding: 5px 8px; border: 1px solid #d0e4df; vertical-align: top;
+  }
+  tbody tr:nth-child(odd) { background-color: #fff !important; }
+  tbody tr:nth-child(even) { background-color: #f0f7f5 !important; }
+  tbody td:first-child { font-weight: 500; }
+
+  .result-correct { color: #2f855a !important; font-weight: 700; }
+  .result-wrong { color: #e53e3e !important; font-weight: 700; }
+
+  /* ===== REPORT HEADER (첫 페이지) ===== */
+  .report-header { margin-bottom: 14px; }
+  .report-date { font-size: 9.5pt; color: #718096 !important; font-weight: 400; margin-bottom: 3px; }
+  .report-title {
+    font-size: 20pt; font-weight: 700; color: #2c6975 !important;
+    margin-bottom: 5px; line-height: 1.2; border: none; padding: 0;
+  }
+  .report-subtitle { font-size: 11pt; font-weight: 400; color: #4a5568 !important; margin-bottom: 2px; }
+  .report-meta { font-size: 8.5pt; color: #718096 !important; line-height: 1.8; margin-top: 6px; }
+  .report-meta span { display: inline-block; margin-right: 14px; }
+
+  /* ===== SECTION HEADER BAR ===== */
+  .section-header {
+    background-color: #2c6975 !important; color: #fff !important;
+    padding: 10px 20px; margin: 16px -13mm 12px -13mm;
+    padding-left: 16mm; padding-right: 13mm;
+    font-size: 14pt; font-weight: 700; line-height: 1.3;
+  }
+  .section-header .section-num {
+    font-size: 11pt; font-weight: 300; display: block;
+    margin-bottom: 1px; color: #9fcfc2 !important;
+  }
+
+  /* ===== SEVERITY BADGES ===== */
+  .severity-high {
+    display: inline-block; background-color: #e53e3e !important; color: #fff !important;
+    font-size: 7.5pt; font-weight: 700; padding: 1px 8px; border-radius: 10px;
+  }
+  .severity-mid {
+    display: inline-block; background-color: #ed8936 !important; color: #fff !important;
+    font-size: 7.5pt; font-weight: 700; padding: 1px 8px; border-radius: 10px;
+  }
+  .severity-low {
+    display: inline-block; background-color: #2f855a !important; color: #fff !important;
+    font-size: 7.5pt; font-weight: 700; padding: 1px 8px; border-radius: 10px;
+  }
+
+  /* ===== DIAGNOSIS CARD (학습 요약) ===== */
+  .diagnosis-card {
+    border: 1.5px solid #a8cec5; border-radius: 16px;
+    padding: 12px 16px; margin: 12px 0; background-color: #fff !important;
+  }
+  .diagnosis-card h3 { margin-top: 0; color: #2c6975 !important; font-size: 11pt; }
+  .priority-order {
+    background-color: #eaf3f0 !important; border-left: 3px solid #68b2a0;
+    padding: 8px 14px; margin: 10px 0; font-size: 9.5pt; border-radius: 0 12px 12px 0;
+  }
+
+  /* ===== QUESTION BOX ===== */
+  .question-box {
+    background-color: #f0f7f5 !important; border-left: 3px solid #68b2a0;
+    padding: 8px 12px; margin: 6px 0; font-size: 9.5pt; line-height: 1.65;
+    border-radius: 0 12px 12px 0;
+  }
+  .question-box p { margin: 0; }
+
+  /* ===== ANSWER BOX ===== */
+  .answer-box {
+    background-color: #f0fff4 !important; border-left: 3px solid #2f855a;
+    padding: 6px 12px; margin: 6px 0; font-weight: 500;
+    border-radius: 0 12px 12px 0;
+  }
+
+  /* ===== GRAMMAR BLOCK ===== */
+  .grammar-block {
+    background-color: #f0f4f3 !important; border: 1px solid #d0e4df;
+    padding: 10px 14px; margin: 10px 0; border-radius: 12px;
+    font-size: 8.5pt; line-height: 1.75; white-space: pre-wrap;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+
+  /* ===== TIP BOX ===== */
+  .tip-box {
+    background-color: #fffaf0 !important; border-left: 3px solid #ed8936;
+    padding: 8px 14px; margin: 10px 0; border-radius: 0 12px 12px 0;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+  .tip-box .tip-label {
+    font-weight: 700; color: #c05621 !important; font-size: 8.5pt;
+    display: block; margin-bottom: 3px;
+  }
+
+  /* ===== WARNING BOX ===== */
+  .warning-box {
+    background-color: #fff5f5 !important; border-left: 3px solid #e53e3e;
+    padding: 8px 14px; margin: 10px 0; border-radius: 0 12px 12px 0;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+  .warning-box .warning-label {
+    font-weight: 700; color: #e53e3e !important; font-size: 8.5pt;
+    display: block; margin-bottom: 3px;
+  }
+
+  /* ===== CONCEPT BOX ===== */
+  .concept-box {
+    background-color: #eaf3f0 !important; border: 1px solid #68b2a0;
+    padding: 10px 14px; margin: 10px 0; border-radius: 12px;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+  .concept-box .concept-label {
+    font-weight: 700; color: #2c6975 !important; font-size: 8.5pt;
+    display: block; margin-bottom: 4px;
+  }
+
+  /* ===== PROBLEM CARD ===== */
+  .problem-card {
+    border: 1px solid #d0e4df; border-radius: 14px;
+    padding: 12px 16px; margin: 10px 0;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+    background-color: #fff !important;
+  }
+  .problem-header {
+    display: flex; align-items: center; margin-bottom: 10px; gap: 10px;
+  }
+  .problem-badge {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 32px; height: 32px; border-radius: 50%;
+    background-color: #68b2a0 !important; color: #fff !important;
+    font-weight: 700; font-size: 11pt; flex-shrink: 0;
+  }
+  .problem-title {
+    font-size: 10pt; font-weight: 700; color: #2d3748 !important;
+  }
+  .problem-source {
+    font-size: 7.5pt; color: #718096 !important; font-weight: 400;
+    display: block; margin-top: 1px;
+  }
+
+  /* ===== HIGHLIGHT ===== */
+  .hl-key { color: #2c6975 !important; font-weight: 700; }
+  .hl-wrong { color: #e53e3e !important; font-weight: 700; text-decoration: line-through; }
+  .hl-correct { color: #2f855a !important; font-weight: 700; }
+  .hl-blue { color: #1a6fc4 !important; font-weight: 700; }
+
+  /* ===== FLOWCHART ===== */
+  .flowchart { margin: 12px 0; page-break-inside: avoid !important; }
+  .flow-step {
+    background-color: #eaf3f0 !important; border: 1px solid #a8cec5;
+    border-radius: 12px; padding: 8px 14px; margin-bottom: 3px; font-size: 9pt;
+  }
+  .flow-step .step-label { font-weight: 700; color: #2c6975 !important; margin-right: 8px; }
+  .flow-step .step-sub {
+    padding-left: 20px; font-size: 8.5pt; color: #4a5568 !important;
+    margin-top: 3px; line-height: 1.65;
+  }
+  .flow-arrow { text-align: center; font-size: 13pt; color: #68b2a0 !important; line-height: 1.2; margin: 2px 0; }
+
+  /* ===== CHECKLIST ===== */
+  .checklist-group { margin-bottom: 12px; page-break-inside: avoid !important; }
+  .checklist-group-title {
+    font-size: 10pt; font-weight: 700; color: #2c6975 !important;
+    margin-bottom: 6px; padding: 3px 0; border-bottom: 1px solid #d0e4df;
+  }
+  .checklist-item {
+    display: flex; align-items: flex-start; gap: 6px;
+    padding: 3px 0; font-size: 9pt; line-height: 1.55;
+  }
+  .checkbox {
+    display: inline-block; width: 13px; height: 13px; min-width: 13px;
+    border: 1.5px solid #a0aec0; border-radius: 3px; margin-top: 2px;
+  }
+
+  /* ===== SECTION DIVIDER ===== */
+  .section-divider { border: none; border-top: 1.5px solid #d0e4df; margin: 16px 0; }
+
+  /* ===== VARIANT CHOICES ===== */
+  .variant-choices { padding-left: 18px; font-size: 8.5pt; line-height: 1.75; margin: 3px 0; }
+
+  /* ===== GROUP ROW ===== */
+  .group-row td {
+    background-color: #eaf3f0 !important; font-weight: 700;
+    color: #2c6975 !important; border-bottom: 2px solid #68b2a0;
+  }
+
+  /* ===== COMPARE TABLE ===== */
+  .compare-table thead th:nth-child(2) { background-color: #5aa090 !important; }
+  .compare-table thead th:nth-child(3) { background-color: #2f855a !important; }
+
+  /* ===== EXPRESSION TABLE ===== */
+  .expression-table td:first-child { white-space: nowrap; font-weight: 700; }
+
+  /* ===== MARKER ===== */
+  .marker-o { color: #2f855a !important; font-weight: 700; }
+  .marker-x { color: #e53e3e !important; font-weight: 700; }
+
+  /* ===== PASSAGE BLOCK (독해 지문) ===== */
+  .passage-block {
+    background-color: #f7fafa !important; border: 1px solid #d0e4df;
+    border-left: 3px solid #68b2a0;
+    padding: 12px 16px; margin: 10px 0; border-radius: 0 12px 12px 0;
+    font-size: 9pt; line-height: 1.85;
+    text-align: justify !important;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+
+  /* Allow long passages to break across pages */
+  .passage-block--long {
+    page-break-inside: auto !important; break-inside: auto !important;
+  }
+
+  /* Legacy .page container fallback (pre-v2 feedback HTMLs) */
+  .page {
+    min-height: 297mm;
+    height: auto;
+    overflow: visible;
+  }
+  .page-content {
+    overflow: visible;
+  }
+
+  /* ===== CHOICES LIST ===== */
+  .choices-list {
+    margin: 8px 0; font-size: 9pt; line-height: 1.85;
+  }
+  .choices-list .choice-item { padding: 1px 0; }
+  .choice-correct { color: #2f855a !important; font-weight: 700; }
+  .choice-wrong { color: #e53e3e !important; font-weight: 700; text-decoration: line-through; }
+
+  /* ===== PRINT OPTIMIZATION ===== */
+  @media print {
+    body { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; background: #fff !important; }
+    .section-header { margin-left: -13mm; margin-right: -13mm; padding-left: 16mm; padding-right: 13mm; }
+  }
+
+</style>
+</head>
+<body>
+
+<div class="report-header">
+  <div class="report-date">2026. 02. 28</div>
+  <h1 class="report-title" style="border:none; margin-bottom:6px;">학습 피드백지</h1>
+  <div class="report-subtitle">독해 — vera's flavor 편입영어 독해 bridge편</div>
+  <div class="report-meta">
+    <span><strong>학생</strong> 진소윤</span>
+    <span><strong>교재</strong> vera's flavor 편입영어 독해 bridge편</span>
+    <span><strong>범위</strong> Part1 지문 56~60 (15문제), Part2 지문 101~108 (8문제)</span>
+  </div>
+</div>
+
+<div class="diagnosis-card">
+  <h3>학습 요약</h3>
+  <p style="font-size:10pt; margin-bottom:8px;">
+    전체 23문제 중 오답 <strong>1문제</strong> (정답률 약 96%)
+  </p>
+  <p style="font-size:9.5pt; margin-bottom:4px;">
+    <strong style="color:#38a169;">잘한 점:</strong> 23문제 중 22문제 정답으로 96%의 높은 정답률을 기록했습니다. Part1 내용파악(지문 56~60)에서 세부 정보를 정확하게 파악했고, Part2 대의파악(지문 101~108)에서는 8문제 전부 정답으로 주제·요지 포착 능력이 뛰어납니다. 젠트리피케이션, 핵심종, 추상미술, 자율무기체계, AI 창의성, 사피어-워프 가설 등 다양한 주제를 모두 정확하게 이해했습니다.
+  </p>
+  <p style="font-size:9.5pt; margin-bottom:12px;">
+    <strong style="color:#e53e3e;">아쉬운 점:</strong> 유일한 오답은 Passage 58(행동경제학/손실 회피)의 적용 문제(58-2)입니다. 지문의 핵심 원리(손실의 고통 &gt; 이득의 기쁨)를 이해했지만, 5개 선지를 '이득 vs 손실' 시나리오로 분류하는 적용 단계에서 실수가 발생했습니다.
+  </p>
+  
+  <table>
+    <thead>
+      <tr><th>취약 영역</th><th style="width:60px;">문제 수</th><th style="width:70px;">심각도</th><th>핵심</th></tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td><strong>개념 적용 (Application)</strong></td>
+        <td>1문제</td>
+        <td><span class="severity-low">낮음</span></td>
+        <td>핵심 원리를 이해했지만, 선지를 이득/손실로 분류하는 적용 단계에서 실수</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="priority-order">
+  <strong>학습 우선순위:</strong> 개념 적용 문제 연습 → 지문의 핵심 원리를 선지의 구체적 상황에 대입하는 훈련
+</div>
+
+<div class="page-break-before section-header">
+  <span class="section-num">Section 1</span>
+  틀린 문제 리스트
+</div>
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">1</div>
+    <div>
+      <div class="problem-title">내용 파악 (개념 적용)</div>
+      <span class="problem-source">58번</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>What is the main idea of the passage?</p>
+  </div>
+  <div style="margin:8px 0; font-size:9.5pt;">
+    <span class="hl-wrong">학생 답: ④</span> &rarr;
+    <span class="hl-correct">정답: ⑤</span>
+  </div>
+</div>
+
+<div class="page-break-before section-header">
+  <span class="section-num">Section 2</span>
+  해설 파트
+</div>
+<h2>58번 — 내용 파악 (개념 적용)</h2>
+<div class="passage-block">Behavioral economics challenges the traditional economic assumption that humans are perfectly rational decision-makers. It incorporates insights from psychology to explain why people often make choices that seem illogical. One of the most well-known concepts in this field is "loss aversion." This principle suggests that for most people, the psychological pain of losing something is twice as powerful as the pleasure of gaining something of equal value. For example, the distress of losing $100 is felt more intensely than the happiness of finding $100. This cognitive bias explains a wide range of behaviors, such as why investors hold on to losing stocks for too long, hoping to avoid realizing a loss, or why people are more motivated by penalties for failure than by rewards for success. Understanding loss aversion helps to explain real-world economic behaviors that seem irrational under the lens of classical economics, which often overlooks the powerful influence of human psychology.</div>
+<div class="question-box" style="margin-top:12px;">
+  <p><strong>What is the main idea of the passage?</strong></p>
+</div><div class="choices-list">
+  <div class="choice-item">① Traditional economics is a more accurate model of human behavior than behavioral economics.</div>
+  <div class="choice-item">② Loss aversion is a psychological bias where the pain of a loss is felt more strongly than the pleasure of an equivalent gain.</div>
+  <div class="choice-item">③ People are always motivated by the potential for large financial rewards.</div>
+  <div class="choice-item" class="choice-wrong">④ All human economic decisions are irrational and unpredictable.</div>
+  <div class="choice-item" class="choice-correct">⑤ Behavioral economics is primarily concerned with stock market investments.</div>
+</div>
+<div class="concept-box"><h4>한줄 요약</h4><p>행동경제학의 핵심 개념인 <strong>손실 회피(loss aversion)</strong>를 설명하는 지문으로, 동일한 금액이라도 <strong>잃는 고통이 얻는 기쁨보다 약 2배 강하다</strong>는 심리적 편향을 다룬다.</p></div><div class="grammar-block" style="text-align: justify;"><h4>전체 해석</h4><p>행동경제학은 인간이 완벽하게 합리적인 의사결정자라는 전통 경제학의 가정에 도전한다. 행동경제학은 심리학의 통찰을 접목하여, 사람들이 왜 비합리적으로 보이는 선택을 자주 하는지 설명한다. 이 분야에서 가장 잘 알려진 개념 중 하나가 &ldquo;손실 회피(loss aversion)&rdquo;이다. 이 원리에 따르면, 대부분의 사람들에게 <strong>무언가를 잃는 심리적 고통은 동일한 가치의 것을 얻는 즐거움보다 약 두 배 강하다.</strong> 예를 들어, 100달러를 잃었을 때의 괴로움은 100달러를 발견했을 때의 행복보다 더 강렬하게 느껴진다. 이러한 인지 편향은 다양한 행동을 설명해준다 &mdash; 투자자들이 손실을 확정짓지 않으려고 하락하는 주식을 너무 오래 보유하는 이유, 사람들이 성공에 대한 보상보다 실패에 대한 벌칙에 더 동기부여되는 이유 등이 그것이다. 손실 회피를 이해하면, 전통 경제학의 관점에서는 비합리적으로 보이는 실제 경제적 행동들을 설명하는 데 도움이 된다. 전통 경제학은 종종 인간 심리의 강력한 영향을 간과하기 때문이다.</p></div><table class="keyword-table"><thead><tr><th>핵심 표현</th><th>의미</th><th>방향</th></tr></thead><tbody><tr><td><strong>loss aversion</strong></td><td>손실 회피</td><td>핵심 개념</td></tr><tr><td><strong>psychological pain of losing</strong></td><td>잃는 심리적 고통</td><td class="negative">NEGATIVE (강함)</td></tr><tr><td><strong>pleasure of gaining</strong></td><td>얻는 즐거움</td><td class="positive">POSITIVE (약함)</td></tr><tr><td><strong>twice as powerful</strong></td><td>두 배 강력한</td><td>비교 기준</td></tr><tr><td><strong>cognitive bias</strong></td><td>인지 편향</td><td>원인</td></tr><tr><td><strong>irrational</strong></td><td>비합리적인</td><td>전통경제학 관점</td></tr></tbody></table><div class="tip-box"><h4>구조 및 방향성</h4><table class="structure-table"><thead><tr><th>문장</th><th>기능</th><th>방향</th></tr></thead><tbody><tr><td>문장 1~2</td><td>배경 제시: 전통경제학 vs 행동경제학</td><td><span class="badge badge-neutral">CONTRAST</span></td></tr><tr><td>문장 3</td><td>핵심 개념 도입: loss aversion</td><td><span class="badge badge-key">KEY CONCEPT</span></td></tr><tr><td>문장 4</td><td>원리 설명: 손실의 고통 &gt; 이득의 기쁨 (2배)</td><td><span class="badge badge-negative">CORE PRINCIPLE</span></td></tr><tr><td>문장 5</td><td>구체적 예시: $100 잃기 vs $100 찾기</td><td><span class="badge badge-neutral">EXAMPLE</span></td></tr><tr><td>문장 6~7</td><td>적용 사례: 주식 보유, 벌칙 동기부여</td><td><span class="badge badge-neutral">APPLICATION</span></td></tr><tr><td>문장 8</td><td>결론: 전통경제학이 간과하는 심리적 영향</td><td><span class="badge badge-negative">CONCLUSION</span></td></tr></tbody></table></div><div class="answer-box"><h4>✅ 정답: ⑤ Having a $50 bill stolen from their wallet.</h4><p>이 선지는 5개 중 <strong>유일한 &lsquo;손실(LOSS)&rsquo; 시나리오</strong>입니다. 지갑에서 $50를 도난당하는 것은 명백한 금전적 손실이며, 지문에서 &ldquo;the psychological pain of losing something is <strong>twice as powerful</strong> as the pleasure of gaining something of equal value&rdquo;라고 명시했으므로, 손실 시나리오가 이득 시나리오보다 심리적 영향이 훨씬 강합니다.</p></div><div class="warning-box"><h4>❌ 오답: ④ Getting a $50 discount on a purchase. (학생 선택)</h4><p>&lsquo;할인&rsquo;은 소비자 입장에서 <strong>지출이 줄어드는 이득(GAIN)</strong>입니다. &ldquo;할인 = 가격이 깎이는 것&rdquo;이라는 표면적 인상 때문에 &lsquo;손실&rsquo;과 혼동할 수 있지만, 실제로는 원래 지불해야 할 금액보다 적게 내는 것이므로 &lsquo;이득&rsquo;에 해당합니다. 따라서 loss aversion의 적용 대상이 아닙니다.</p></div><div class="warning-box"><h4>❌ 오답: ① Receiving an unexpected gift worth $50.</h4><p>예상치 못한 선물을 받는 것은 명백한 <strong>이득(GAIN)</strong> 시나리오입니다.</p></div><div class="warning-box"><h4>❌ 오답: ② Earning a $50 bonus at work.</h4><p>보너스를 받는 것 역시 <strong>이득(GAIN)</strong> 시나리오입니다.</p></div><div class="warning-box"><h4>❌ 오답: ③ Finding a $50 bill on the street.</h4><p>길에서 돈을 줍는 것은 <strong>이득(GAIN)</strong> 시나리오입니다. 지문의 예시에서도 &ldquo;the happiness of finding $100&rdquo;을 이득의 예로 직접 언급했습니다.</p></div>
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>어디서 막혔을까:</strong> ④ '할인 받기'를 선택한 이유는, '할인(discount)'이라는 단어가 '가격이 줄어드는 것'이라는 인상을 주기 때문에, 이를 '감소 = 손실'로 잘못 연결했을 가능성이 높습니다. 하지만 할인은 소비자 입장에서 '덜 지출하는 것'이므로 분명한 이득(gain)입니다.</p>
+  <p><strong>오류 패턴:</strong> 표면적 단어 연상 오류 — 'discount(할인)'의 '줄어든다'는 의미를 '손실'로 잘못 연결. 선지를 이득/손실로 먼저 분류하는 단계를 건너뛰고, 단어의 표면적 인상에 의존하여 판단.</p>
+  <p><strong>집중 포인트:</strong> 적용 문제를 풀 때는 반드시 '분류 먼저, 판단 나중' 전략을 사용하세요. 이 문제의 경우: ①②③④는 모두 '돈을 얻는' 시나리오, ⑤만 '돈을 잃는' 시나리오 → loss aversion 원리상 유일한 손실 시나리오(⑤)가 정답.</p>
+</div>
+
+
+
+
+<hr class="section-divider">
+<p style="text-align: center; color: #a0aec0; font-size: 9pt; margin-top: 30px;">
+  피드백지 작성 완료 — 2026. 02. 28
+</p>
+</body>
+</html>

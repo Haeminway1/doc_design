@@ -1,0 +1,507 @@
+{
+  "bookId": "vocab-basic",
+  "day": 43,
+  "theme": "맛과 냄새 (Taste and Smell)",
+  "words": [
+    {
+      "word": "palatable",
+      "pronunciation": "[pǽlətəbl]",
+      "partOfSpeech": "a.",
+      "meaning": "맛있는, 입에 맞는",
+      "example": {
+        "en": "The meal was palatable, but not exceptional.",
+        "ko": "그 식사는 입에 맞았지만 특별하지는 않았다."
+      }
+    },
+    {
+      "word": "appetizing",
+      "pronunciation": "[ǽpitàizi&eng;]",
+      "partOfSpeech": "a.",
+      "meaning": "식욕을 돋우는",
+      "example": {
+        "en": "The appetizing aroma of baking bread filled the kitchen.",
+        "ko": "빵 굽는 식욕을 돋우는 향기가 주방을 가득 채웠다."
+      }
+    },
+    {
+      "word": "delicious",
+      "pronunciation": "[dilíʃəs]",
+      "partOfSpeech": "a.",
+      "meaning": "맛있는",
+      "example": {
+        "en": "This chocolate cake is absolutely delicious.",
+        "ko": "이 초콜릿 케이크는 정말 맛있다."
+      }
+    },
+    {
+      "word": "delectable",
+      "pronunciation": "[diléktəbl]",
+      "partOfSpeech": "a.",
+      "meaning": "아주 맛있는",
+      "example": {
+        "en": "The restaurant served a delectable array of desserts.",
+        "ko": "그 레스토랑은 아주 맛있는 다양한 디저트를 제공했다."
+      }
+    },
+    {
+      "word": "scrumptious",
+      "pronunciation": "[skrʌ́mpʃəs]",
+      "partOfSpeech": "a.",
+      "meaning": "아주 맛있는",
+      "example": {
+        "en": "She baked a scrumptious apple pie.",
+        "ko": "그녀는 아주 맛있는 애플파이를 구웠다."
+      }
+    },
+    {
+      "word": "tasteless",
+      "pronunciation": "[téistlis]",
+      "partOfSpeech": "a.",
+      "meaning": "맛없는; 무미의",
+      "example": {
+        "en": "The vegetables were overcooked and tasteless.",
+        "ko": "채소는 너무 익어서 맛이 없었다."
+      }
+    },
+    {
+      "word": "flavorless",
+      "pronunciation": "[fléivərlis]",
+      "partOfSpeech": "a.",
+      "meaning": "맛이 없는, 풍미가 없는",
+      "example": {
+        "en": "The coffee was weak and flavorless.",
+        "ko": "그 커피는 묽고 풍미가 없었다."
+      }
+    },
+    {
+      "word": "perfumed",
+      "pronunciation": "[pərfjúːmd]",
+      "partOfSpeech": "a.",
+      "meaning": "향기로운",
+      "example": {
+        "en": "She sent me a perfumed letter.",
+        "ko": "그녀는 나에게 향기로운 편지를 보냈다."
+      }
+    },
+    {
+      "word": "scented",
+      "pronunciation": "[séntid]",
+      "partOfSpeech": "a.",
+      "meaning": "향기로운",
+      "example": {
+        "en": "The room was filled with the smell of scented candles.",
+        "ko": "방은 향초 냄새로 가득 찼다."
+      }
+    },
+    {
+      "word": "odorous",
+      "pronunciation": "[óudərəs]",
+      "partOfSpeech": "a.",
+      "meaning": "냄새나는",
+      "example": {
+        "en": "The odorous fumes from the factory were unpleasant.",
+        "ko": "공장에서 나오는 냄새나는 연기는 불쾌했다."
+      }
+    },
+    {
+      "word": "malodorous",
+      "pronunciation": "[mælóudərəs]",
+      "partOfSpeech": "a.",
+      "meaning": "악취를 풍기는",
+      "example": {
+        "en": "The malodorous garbage had not been collected for days.",
+        "ko": "악취를 풍기는 쓰레기는 며칠 동안 수거되지 않았다."
+      }
+    },
+    {
+      "word": "rancid",
+      "pronunciation": "[rǽnsid]",
+      "partOfSpeech": "a.",
+      "meaning": "(기름기가 든 음식이) 썩은, 악취 나는",
+      "example": {
+        "en": "The butter had gone rancid in the heat.",
+        "ko": "버터는 더위에 썩어버렸다."
+      }
+    },
+    {
+      "word": "stale",
+      "pronunciation": "[steil]",
+      "partOfSpeech": "a.",
+      "meaning": "신선하지 않은, 퀴퀴한",
+      "example": {
+        "en": "The bread was stale and hard.",
+        "ko": "빵은 신선하지 않고 딱딱했다."
+      }
+    },
+    {
+      "word": "fresh",
+      "pronunciation": "[freʃ]",
+      "partOfSpeech": "a.",
+      "meaning": "신선한",
+      "example": {
+        "en": "I love the smell of fresh coffee in the morning.",
+        "ko": "나는 아침에 신선한 커피 향을 좋아한다."
+      }
+    },
+    {
+      "word": "crisp",
+      "pronunciation": "[krisp]",
+      "partOfSpeech": "a.",
+      "meaning": "바삭바삭한",
+      "example": {
+        "en": "The salad was made with fresh, crisp lettuce.",
+        "ko": "그 샐러드는 신선하고 아삭아삭한 양상추로 만들어졌다."
+      }
+    },
+    {
+      "word": "tender",
+      "pronunciation": "[téndər]",
+      "partOfSpeech": "a.",
+      "meaning": "(고기·채소가) 연한, 부드러운",
+      "example": {
+        "en": "The steak was so tender it melted in my mouth.",
+        "ko": "스테이크가 너무 부드러워서 입에서 녹았다."
+      }
+    },
+    {
+      "word": "tough",
+      "pronunciation": "[tʌf]",
+      "partOfSpeech": "a.",
+      "meaning": "(고기가) 질긴; 힘든",
+      "example": {
+        "en": "The meat was tough and difficult to chew.",
+        "ko": "고기는 질겨서 씹기 어려웠다."
+      }
+    },
+    {
+      "word": "chewy",
+      "pronunciation": "[tʃúːi]",
+      "partOfSpeech": "a.",
+      "meaning": "쫄깃쫄깃한",
+      "example": {
+        "en": "I like the chewy texture of the rice cakes.",
+        "ko": "나는 떡의 쫄깃쫄깃한 식감을 좋아한다."
+      }
+    },
+    {
+      "word": "crunchy",
+      "pronunciation": "[krʌ́nʧi]",
+      "partOfSpeech": "a.",
+      "meaning": "아삭아삭한, 바삭바삭한",
+      "example": {
+        "en": "The fried chicken was crispy and crunchy.",
+        "ko": "프라이드치킨은 바삭하고 아삭했다."
+      }
+    },
+    {
+      "word": "creamy",
+      "pronunciation": "[kríːmi]",
+      "partOfSpeech": "a.",
+      "meaning": "크림 같은, 부드러운",
+      "example": {
+        "en": "The soup has a rich and creamy texture.",
+        "ko": "그 수프는 진하고 부드러운 질감을 가지고 있다."
+      }
+    },
+    {
+      "word": "lumpy",
+      "pronunciation": "[lʌ́mpi]",
+      "partOfSpeech": "a.",
+      "meaning": "덩어리가 많은",
+      "example": {
+        "en": "The gravy was lumpy because I didn't stir it enough.",
+        "ko": "충분히 젓지 않아서 그레이비가 덩어리졌다."
+      }
+    },
+    {
+      "word": "gritty",
+      "pronunciation": "[gríti]",
+      "partOfSpeech": "a.",
+      "meaning": "모래가 든 것 같은, 껄끄러운",
+      "example": {
+        "en": "The spinach had a gritty texture because it wasn't washed properly.",
+        "ko": "시금치는 제대로 씻지 않아서 껄끄러운 질감이 났다."
+      }
+    },
+    {
+      "word": "tangy",
+      "pronunciation": "[tǽ&eng;i]",
+      "partOfSpeech": "a.",
+      "meaning": "(톡 쏘는) 짜릿한 맛의",
+      "example": {
+        "en": "The salad had a tangy dressing made with lemon and herbs.",
+        "ko": "그 샐러드는 레몬과 허브로 만든 톡 쏘는 드레싱이 있었다."
+      }
+    },
+    {
+      "word": "tart",
+      "pronunciation": "[tɑːrt]",
+      "partOfSpeech": "a.",
+      "meaning": "시큼한",
+      "example": {
+        "en": "The apple was a little too tart for my liking.",
+        "ko": "그 사과는 내 입맛에는 약간 너무 시큼했다."
+      }
+    },
+    {
+      "word": "acidic",
+      "pronunciation": "[əsídik]",
+      "partOfSpeech": "a.",
+      "meaning": "산성의, 신맛이 나는",
+      "example": {
+        "en": "Vinegar has an acidic taste.",
+        "ko": "식초는 신맛이 난다."
+      }
+    },
+    {
+      "word": "alkaline",
+      "pronunciation": "[ǽlkəlàin]",
+      "partOfSpeech": "a.",
+      "meaning": "알칼리성의",
+      "example": {
+        "en": "Alkaline water is believed to have health benefits.",
+        "ko": "알칼리수는 건강에 이점이 있다고 믿어진다."
+      }
+    },
+    {
+      "word": "seasoning",
+      "pronunciation": "[síːzəni&eng;]",
+      "partOfSpeech": "n.",
+      "meaning": "조미료, 양념",
+      "example": {
+        "en": "Add salt and pepper for seasoning.",
+        "ko": "양념으로 소금과 후추를 넣으세요."
+      }
+    },
+    {
+      "word": "condiment",
+      "pronunciation": "[kάndəmənt]",
+      "partOfSpeech": "n.",
+      "meaning": "조미료, 양념",
+      "example": {
+        "en": "Ketchup and mustard are popular condiments for hot dogs.",
+        "ko": "케첩과 머스터드는 핫도그에 인기 있는 조미료이다."
+      }
+    },
+    {
+      "word": "spice",
+      "pronunciation": "[spais]",
+      "partOfSpeech": "n.",
+      "meaning": "향신료",
+      "example": {
+        "en": "The curry is flavored with a blend of exotic spices.",
+        "ko": "그 카레는 이국적인 향신료의 조합으로 맛을 냈다."
+      }
+    },
+    {
+      "word": "herb",
+      "pronunciation": "[əːrb]",
+      "partOfSpeech": "n.",
+      "meaning": "허브, 약초",
+      "example": {
+        "en": "Fresh herbs can add a lot of flavor to a dish.",
+        "ko": "신선한 허브는 요리에 많은 풍미를 더할 수 있다."
+      }
+    },
+    {
+      "word": "garnish",
+      "pronunciation": "[gάːrniʃ]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "고명\n       \n        고명을 얹다",
+      "example": {
+        "en": "Garnish the soup with a sprig of parsley.",
+        "ko": "수프에 파슬리 한 줄기로 고명을 얹으세요."
+      }
+    },
+    {
+      "word": "marinade",
+      "pronunciation": "[mæ̀rənéid]",
+      "partOfSpeech": "n.",
+      "meaning": "마리네이드 (고기·생선을 재는 양념장)",
+      "example": {
+        "en": "Let the chicken sit in the marinade for at least an hour.",
+        "ko": "닭고기를 최소 한 시간 동안 마리네이드에 재워두세요."
+      }
+    },
+    {
+      "word": "fermented",
+      "pronunciation": "[fərméntid]",
+      "partOfSpeech": "a.",
+      "meaning": "발효된",
+      "example": {
+        "en": "Kimchi is a traditional Korean dish of fermented vegetables.",
+        "ko": "김치는 발효된 채소로 만든 한국의 전통 음식이다."
+      }
+    },
+    {
+      "word": "pickled",
+      "pronunciation": "[píkld]",
+      "partOfSpeech": "a.",
+      "meaning": "소금[식초]에 절인",
+      "example": {
+        "en": "I enjoy eating pickled cucumbers with my sandwich.",
+        "ko": "나는 샌드위치와 함께 피클을 먹는 것을 즐긴다."
+      }
+    },
+    {
+      "word": "smoked",
+      "pronunciation": "[smoukt]",
+      "partOfSpeech": "a.",
+      "meaning": "훈제한",
+      "example": {
+        "en": "Smoked salmon is a popular delicacy.",
+        "ko": "훈제 연어는 인기 있는 별미이다."
+      }
+    },
+    {
+      "word": "grilled",
+      "pronunciation": "[grild]",
+      "partOfSpeech": "a.",
+      "meaning": "석쇠에 구운",
+      "example": {
+        "en": "We had grilled chicken for dinner.",
+        "ko": "우리는 저녁으로 닭고기 구이를 먹었다."
+      }
+    },
+    {
+      "word": "roasted",
+      "pronunciation": "[róustid]",
+      "partOfSpeech": "a.",
+      "meaning": "(오븐에) 구운",
+      "example": {
+        "en": "The smell of roasted coffee beans is wonderful.",
+        "ko": "볶은 커피 원두의 냄새는 훌륭하다."
+      }
+    },
+    {
+      "word": "steamed",
+      "pronunciation": "[stiːmd]",
+      "partOfSpeech": "a.",
+      "meaning": "찐",
+      "example": {
+        "en": "Steamed vegetables are a healthy side dish.",
+        "ko": "찐 채소는 건강한 곁들임 요리이다."
+      }
+    },
+    {
+      "word": "redolent",
+      "pronunciation": "[ˈredələnt]",
+      "partOfSpeech": "adjective",
+      "meaning": "강한 향기가 나는, ~을 연상시키는",
+      "example": {
+        "en": "The garden was redolent with the scent of jasmine.",
+        "ko": "정원에는 자스민의 향기가 강하게 풍겼다."
+      }
+    },
+    {
+      "word": "sapid",
+      "pronunciation": "[ˈsæpɪd]",
+      "partOfSpeech": "adjective",
+      "meaning": "맛있는, 풍미가 있는",
+      "example": {
+        "en": "The sapid soup was a perfect start to the meal.",
+        "ko": "맛있는 수프는 식사를 시작하기에 완벽했다."
+      }
+    },
+    {
+      "word": "discerning",
+      "pronunciation": "[dɪˈsɜːrnɪ&eng;]",
+      "partOfSpeech": "adjective",
+      "meaning": "안목이 있는, 식별력 있는 (특히 맛에 대해)",
+      "example": {
+        "en": "A discerning palate can detect subtle flavors in wine.",
+        "ko": "식별력 있는 미각은 와인의 미묘한 맛을 감지할 수 있다."
+      }
+    },
+    {
+      "word": "epicurean",
+      "pronunciation": "[ˌepɪkjʊˈriːən]",
+      "partOfSpeech": "adjective",
+      "meaning": "미식가의, 음식을 즐기는",
+      "example": {
+        "en": "The restaurant offers an epicurean experience with its innovative dishes.",
+        "ko": "이 레스토랑은 혁신적인 요리로 미식가적인 경험을 제공한다."
+      }
+    },
+    {
+      "word": "fetid",
+      "pronunciation": "[ˈfetɪd]",
+      "partOfSpeech": "adjective",
+      "meaning": "악취가 나는, 지독한 냄새가 나는",
+      "example": {
+        "en": "The fetid odor from the swamp was overwhelming.",
+        "ko": "늪에서 나는 지독한 악취는 압도적이었다."
+      }
+    },
+    {
+      "word": "insipid",
+      "pronunciation": "[ɪnˈsɪpɪd]",
+      "partOfSpeech": "adjective",
+      "meaning": "맛없는, 싱거운, 재미없는",
+      "example": {
+        "en": "The soup was completely insipid and needed more seasoning.",
+        "ko": "수프는 완전히 싱거워서 양념이 더 필요했다."
+      }
+    },
+    {
+      "word": "taste",
+      "pronunciation": "/teɪst/",
+      "partOfSpeech": "n.",
+      "meaning": "입안에서 느끼는 맛; 특정 맛에 대한 개인의 기호",
+      "example": {
+        "en": "This soup has a rich, savory taste.",
+        "ko": "이 수프는 진하고 감칠맛 나는 맛이 있다."
+      }
+    },
+    {
+      "word": "smell",
+      "pronunciation": "/smɛl/",
+      "partOfSpeech": "n.",
+      "meaning": "후각 또는 어떤 것 특유의 냄새",
+      "example": {
+        "en": "The smell of fresh bread filled the kitchen.",
+        "ko": "갓 구운 빵 냄새가 부엌을 가득 채웠다."
+      }
+    },
+    {
+      "word": "flavor",
+      "pronunciation": "/ˈfleɪvər/",
+      "partOfSpeech": "n.",
+      "meaning": "음식이나 음료의 고유한 맛과 향",
+      "example": {
+        "en": "Lemon zest adds bright flavor to the sauce.",
+        "ko": "레몬 제스트는 소스에 산뜻한 풍미를 더한다."
+      }
+    },
+    {
+      "word": "odor",
+      "pronunciation": "/ˈoʊdər/",
+      "partOfSpeech": "n.",
+      "meaning": "특히 불쾌하거나 뚜렷한 냄새",
+      "example": {
+        "en": "The refrigerator had a musty odor.",
+        "ko": "냉장고에서 퀴퀴한 냄새가 났다."
+      }
+    },
+    {
+      "word": "scent",
+      "pronunciation": "/sɛnt/",
+      "partOfSpeech": "n.",
+      "meaning": "특유의 냄새, 특히 좋은 냄새",
+      "example": {
+        "en": "The scent of jasmine drifted through the window.",
+        "ko": "자스민 향기가 창문을 통해 흘러들었다."
+      }
+    },
+    {
+      "word": "fragrance",
+      "pronunciation": "/ˈfreɪɡrəns/",
+      "partOfSpeech": "n.",
+      "meaning": "기분 좋고 달콤한 냄새",
+      "example": {
+        "en": "The flowers released a delicate fragrance at dusk.",
+        "ko": "그 꽃들은 해질 무렵 은은한 향기를 풍겼다."
+      }
+    }
+  ]
+}

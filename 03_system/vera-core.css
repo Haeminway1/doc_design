@@ -1,0 +1,45 @@
+/* =================================================================== */
+/* vera-core.css — Vera's Document Studio 통합 스타일시트               */
+/* base + components (템플릿은 별도 import)                              */
+/*                                                                      */
+/* 사용법:                                                               */
+/*   <link rel="stylesheet" href="03_system/vera-core.css">             */
+/*   교재: + <link href="03_system/templates/ocean-blue/ocean-blue.css">*/
+/* =================================================================== */
+
+/* === Layer 0: Base === */
+@import url('base/reset.css');
+@import url('base/page-layout.css');
+@import url('base/print.css');
+@import url('base/utilities.css');
+
+/* === Layer 1: Components — 전 교재 공통 === */
+
+/* Tier 1: 공통 구조 */
+@import url('components/cover.css');
+@import url('components/toc.css');
+@import url('components/section-title.css');
+@import url('components/problem.css');
+@import url('components/explanation.css');
+@import url('components/answer-grid.css');
+
+/* Tier 2: 과목별 핵심 */
+@import url('components/concept-box.css');
+@import url('components/tip-box.css');
+@import url('components/warning-box.css');
+@import url('components/rule-box.css');
+@import url('components/comparison-table.css');
+@import url('components/grammar-table.css');
+@import url('components/passage.css');
+@import url('components/word-entry.css');
+@import url('components/example-block.css');
+
+/* Tier 3: 특수 */
+@import url('components/part-opener.css');
+@import url('components/day-title.css');
+@import url('components/step-section.css');
+@import url('components/pattern-box.css');
+
+/* === Layer 2: Templates — 교재별 시각 개성 === */
+/* 사용할 템플릿을 HTML에서 별도 <link>로 로드 */
+/* 예: <link href="03_system/templates/ocean-blue/ocean-blue.css"> */

@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>피드백지 디자인 프리뷰 — Teal & Warm v2.0</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  /* =============================================================
+     피드백지 공통 CSS v2.0 — Teal & Warm 팔레트
+     Primary Dark: #3a8fa3 | Primary Light: #79c4b0
+     Accent Blue: #4a9fd4 | Red: #d9706b | Green: #52b389
+     ============================================================= */
+
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html {
+    font-size: 9.5pt;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 9.5pt;
+    line-height: 1.65;
+    color: #1a202c;
+    background: #f7fafa !important;
+    orphans: 3; widows: 3;
+  }
+
+  @page { size: A4; margin: 15mm 13mm; }
+
+  .page-break-after { page-break-after: always !important; }
+  .page-break-before { page-break-before: always !important; }
+  .avoid-break { page-break-inside: avoid !important; break-inside: avoid !important; }
+  h1, h2, h3, h4 { page-break-after: avoid !important; }
+  table, .concept-box, .tip-box, .warning-box, .answer-box, .grammar-block,
+  .problem-card, .diagnosis-card {
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+
+  h1 {
+    font-size: 18pt; font-weight: 700; color: #3a8fa3 !important;
+    margin: 16px 0 8px 0; padding-bottom: 5px;
+    border-bottom: 2.5px solid #3a8fa3; line-height: 1.3;
+  }
+  h2 {
+    font-size: 14pt; font-weight: 700; color: #3a8fa3 !important;
+    margin: 14px 0 8px 0; padding-bottom: 3px;
+    border-bottom: 1.5px solid #d0e4df; line-height: 1.3;
+  }
+  h3 {
+    font-size: 12pt; font-weight: 700; color: #2d3748 !important;
+    margin: 12px 0 6px 0; line-height: 1.4;
+  }
+  h4 {
+    font-size: 10pt; font-weight: 700; color: #4a5568 !important;
+    margin: 8px 0 5px 0; line-height: 1.4;
+  }
+  p { margin-bottom: 6px; }
+  strong { font-weight: 700; }
+  hr { border: none; border-top: 1px solid #d0e4df; margin: 16px 0; }
+
+  table {
+    width: 100%; border-collapse: collapse;
+    margin: 10px 0 12px 0; font-size: 8.5pt; line-height: 1.55;
+  }
+  thead th {
+    background-color: #79c4b0 !important; color: #fff !important;
+    font-weight: 700; padding: 6px 8px; text-align: left;
+    border: 1px solid #5aa090; font-size: 8.5pt;
+  }
+  tbody td {
+    padding: 5px 8px; border: 1px solid #d0e4df; vertical-align: top;
+  }
+  tbody tr:nth-child(odd) { background-color: #fff !important; }
+  tbody tr:nth-child(even) { background-color: #eef8f6 !important; }
+  tbody td:first-child { font-weight: 500; }
+
+  .result-correct { color: #52b389 !important; font-weight: 700; }
+  .result-wrong { color: #d9706b !important; font-weight: 700; }
+
+  .report-header { margin-bottom: 14px; }
+  .report-date { font-size: 9.5pt; color: #718096 !important; font-weight: 400; margin-bottom: 3px; }
+  .report-title {
+    font-size: 20pt; font-weight: 700; color: #3a8fa3 !important;
+    margin-bottom: 5px; line-height: 1.2; border: none; padding: 0;
+  }
+  .report-subtitle { font-size: 11pt; font-weight: 400; color: #4a5568 !important; margin-bottom: 2px; }
+  .report-meta { font-size: 8.5pt; color: #718096 !important; line-height: 1.8; margin-top: 6px; }
+  .report-meta span { display: inline-block; margin-right: 14px; }
+
+  .section-header {
+    background-color: #3a8fa3 !important; color: #fff !important;
+    padding: 10px 20px; margin: 16px -13mm 12px -13mm;
+    padding-left: 16mm; padding-right: 13mm;
+    font-size: 14pt; font-weight: 700; line-height: 1.3;
+  }
+  .section-header .section-num {
+    font-size: 11pt; font-weight: 300; display: block;
+    margin-bottom: 1px; color: #9fcfc2 !important;
+  }
+
+  .severity-high {
+    display: inline-block; background-color: #d9706b !important; color: #fff !important;
+    font-size: 7.5pt; font-weight: 700; padding: 1px 8px; border-radius: 10px;
+  }
+  .severity-mid {
+    display: inline-block; background-color: #ed8936 !important; color: #fff !important;
+    font-size: 7.5pt; font-weight: 700; padding: 1px 8px; border-radius: 10px;
+  }
+  .severity-low {
+    display: inline-block; background-color: #52b389 !important; color: #fff !important;
+    font-size: 7.5pt; font-weight: 700; padding: 1px 8px; border-radius: 10px;
+  }
+
+  .diagnosis-card {
+    border: 1.5px solid #a8cec5; border-radius: 16px;
+    padding: 12px 16px; margin: 12px 0; background-color: #fff !important;
+  }
+  .diagnosis-card h3 { margin-top: 0; color: #3a8fa3 !important; font-size: 11pt; }
+  .priority-order {
+    background-color: #eef8f6 !important; border-left: 3px solid #79c4b0;
+    padding: 8px 14px; margin: 10px 0; font-size: 9.5pt; border-radius: 0 12px 12px 0;
+  }
+
+  .question-box {
+    background-color: #eef8f6 !important; border-left: 3px solid #79c4b0;
+    padding: 8px 12px; margin: 6px 0; font-size: 9.5pt; line-height: 1.65;
+    border-radius: 0 12px 12px 0;
+  }
+  .question-box p { margin: 0; }
+
+  .answer-box {
+    background-color: #edfaf5 !important; border-left: 3px solid #52b389;
+    padding: 6px 12px; margin: 6px 0; font-weight: 500;
+    border-radius: 0 12px 12px 0;
+  }
+
+  .grammar-block {
+    background-color: #f0f4f3 !important; border: 1px solid #d0e4df;
+    padding: 10px 14px; margin: 10px 0; border-radius: 12px;
+    font-size: 8.5pt; line-height: 1.75; white-space: pre-wrap;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+
+  .tip-box {
+    background-color: #fffaf0 !important; border-left: 3px solid #ed8936;
+    padding: 8px 14px; margin: 10px 0; border-radius: 0 12px 12px 0;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+  .tip-box .tip-label {
+    font-weight: 700; color: #c05621 !important; font-size: 8.5pt;
+    display: block; margin-bottom: 3px;
+  }
+
+  .warning-box {
+    background-color: #fdf0ef !important; border-left: 3px solid #d9706b;
+    padding: 8px 14px; margin: 10px 0; border-radius: 0 12px 12px 0;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+  .warning-box .warning-label {
+    font-weight: 700; color: #d9706b !important; font-size: 8.5pt;
+    display: block; margin-bottom: 3px;
+  }
+
+  .concept-box {
+    background-color: #eef8f6 !important; border: 1px solid #79c4b0;
+    padding: 10px 14px; margin: 10px 0; border-radius: 12px;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+  .concept-box .concept-label {
+    font-weight: 700; color: #3a8fa3 !important; font-size: 8.5pt;
+    display: block; margin-bottom: 4px;
+  }
+
+  .problem-card {
+    border: 1px solid #d0e4df; border-radius: 14px;
+    padding: 12px 16px; margin: 10px 0;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+    background-color: #fff !important;
+  }
+  .problem-header {
+    display: flex; align-items: center; margin-bottom: 10px; gap: 10px;
+  }
+  .problem-badge {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 32px; height: 32px; border-radius: 50%;
+    background-color: #79c4b0 !important; color: #fff !important;
+    font-weight: 700; font-size: 11pt; flex-shrink: 0;
+  }
+  .problem-title { font-size: 10pt; font-weight: 700; color: #2d3748 !important; }
+  .problem-source {
+    font-size: 7.5pt; color: #718096 !important; font-weight: 400;
+    display: block; margin-top: 1px;
+  }
+
+  .hl-key { color: #3a8fa3 !important; font-weight: 700; }
+  .hl-wrong { color: #d9706b !important; font-weight: 700; text-decoration: line-through; }
+  .hl-correct { color: #52b389 !important; font-weight: 700; }
+  .hl-blue { color: #4a9fd4 !important; font-weight: 700; }
+
+  .flowchart { margin: 12px 0; page-break-inside: avoid !important; }
+  .flow-step {
+    background-color: #eef8f6 !important; border: 1px solid #a8cec5;
+    border-radius: 12px; padding: 8px 14px; margin-bottom: 3px; font-size: 9pt;
+  }
+  .flow-step .step-label { font-weight: 700; color: #3a8fa3 !important; margin-right: 8px; }
+  .flow-step .step-sub {
+    padding-left: 20px; font-size: 8.5pt; color: #4a5568 !important;
+    margin-top: 3px; line-height: 1.65;
+  }
+  .flow-arrow { text-align: center; font-size: 13pt; color: #79c4b0 !important; line-height: 1.2; margin: 2px 0; }
+
+  .section-divider { border: none; border-top: 1.5px solid #d0e4df; margin: 16px 0; }
+
+  .variant-choices { padding-left: 18px; font-size: 8.5pt; line-height: 1.75; margin: 3px 0; }
+
+  .group-row td {
+    background-color: #eef8f6 !important; font-weight: 700;
+    color: #3a8fa3 !important; border-bottom: 2px solid #79c4b0;
+  }
+
+  .marker-o { color: #52b389 !important; font-weight: 700; }
+  .marker-x { color: #d9706b !important; font-weight: 700; }
+
+  .passage-block {
+    background-color: #f7fafa !important; border: 1px solid #d0e4df;
+    border-left: 3px solid #79c4b0;
+    padding: 12px 16px; margin: 10px 0; border-radius: 0 12px 12px 0;
+    font-size: 9pt; line-height: 1.85;
+    text-align: justify !important;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+
+  .choices-list { margin: 8px 0; font-size: 9pt; line-height: 1.85; }
+  .choices-list .choice-item { padding: 1px 0; }
+  .choice-correct { color: #52b389 !important; font-weight: 700; }
+  .choice-wrong { color: #d9706b !important; font-weight: 700; text-decoration: line-through; }
+
+  @media print {
+    body { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; background: #fff !important; }
+    .section-header { margin-left: -13mm; margin-right: -13mm; padding-left: 16mm; padding-right: 13mm; }
+  }
+
+  /* ===== PREVIEW ONLY: 색상 팔레트 스와치 ===== */
+  .swatch-row { display: flex; gap: 8px; margin: 10px 0; flex-wrap: wrap; }
+  .swatch {
+    width: 80px; height: 50px; border-radius: 8px; border: 1px solid #d0e4df;
+    display: flex; align-items: flex-end; justify-content: center;
+    font-size: 7pt; color: #fff; font-weight: 700; padding-bottom: 3px;
+  }
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════════════════════════
+     1. 커버/헤더 섹션
+     ══════════════════════════════════════════════════════════════════ -->
+<div class="report-header">
+  <div class="report-date">2026. 02. 21</div>
+  <h1 class="report-title" style="border:none; margin-bottom:6px;">학습 피드백지</h1>
+  <div class="report-subtitle">독해 — 문단 구조 분석</div>
+  <div class="report-meta">
+    <span><strong>학생</strong> 최여진</span>
+    <span><strong>교재</strong> 문단 구조 분석</span>
+    <span><strong>범위</strong> 257~276번</span>
+  </div>
+</div>
+
+<!-- 색상 팔레트 (프리뷰 전용) -->
+<h4>테마 색상 팔레트</h4>
+<div class="swatch-row">
+  <div class="swatch" style="background:#3a8fa3;">#3a8fa3</div>
+  <div class="swatch" style="background:#79c4b0;">#79c4b0</div>
+  <div class="swatch" style="background:#4a9fd4;">#4a9fd4</div>
+  <div class="swatch" style="background:#d9706b;">#d9706b</div>
+  <div class="swatch" style="background:#52b389;">#52b389</div>
+  <div class="swatch" style="background:#ed8936;">#ed8936</div>
+  <div class="swatch" style="background:#f7fafa; color:#2d3748; border:1px solid #a8cec5;">#f7fafa</div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════════
+     2. 학습 요약 카드
+     ══════════════════════════════════════════════════════════════════ -->
+<div class="diagnosis-card">
+  <h3>학습 요약</h3>
+  <p style="font-size:9.5pt; margin-bottom:6px;">
+    전체 20문제 중 오답 <strong>3문제</strong> (정답률 약 85%)
+  </p>
+  <p style="font-size:9pt; margin-bottom:3px;">
+    <strong style="color:#52b389;">잘한 점:</strong> 대부분의 지문에서 핵심 구조를 정확히 파악함
+  </p>
+  <p style="font-size:9pt; margin-bottom:10px;">
+    <strong style="color:#d9706b;">아쉬운 점:</strong> 문장의 구체적 기능(대조, 예시, 정의)을 판별하는 데 혼동
+  </p>
+
+  <table>
+    <thead>
+      <tr><th>취약 영역</th><th style="width:60px;">문제 수</th><th style="width:70px;">심각도</th><th>핵심</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>문장 기능 파악</strong></td>
+        <td>2문제</td>
+        <td><span class="severity-high">높음</span></td>
+        <td>문장의 역할을 추상적으로 해석</td>
+      </tr>
+      <tr>
+        <td><strong>경험적 증거 구분</strong></td>
+        <td>1문제</td>
+        <td><span class="severity-mid">보통</span></td>
+        <td>증거 제시 vs 정의 혼동</td>
+      </tr>
+      <tr>
+        <td><strong>대조 구조 인식</strong></td>
+        <td>1문제</td>
+        <td><span class="severity-low">낮음</span></td>
+        <td>but/however 시그널 놓침</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="priority-order">
+  <strong>학습 우선순위:</strong> 문장 기능 파악 &rarr; 대조 구조 분석 &rarr; 증거 유형 구분
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════════
+     3. 틀린 문제 리스트 테이블
+     ══════════════════════════════════════════════════════════════════ -->
+<div class="page-break-before section-header">
+  <span class="section-num">Section 1</span>
+  틀린 문제 리스트
+</div>
+
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">1</div>
+    <div>
+      <div class="problem-title">문장 기능 파악</div>
+      <span class="problem-source">258번</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>What is the function of the underlined sentence in the passage?</p>
+  </div>
+  <div style="margin:6px 0; font-size:9pt;">
+    <span class="hl-wrong">학생 답: ③</span> &rarr;
+    <span class="hl-correct">정답: ②</span>
+  </div>
+</div>
+
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">2</div>
+    <div>
+      <div class="problem-title">빈칸 추론</div>
+      <span class="problem-source">263번</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>Which of the following best completes the blank?</p>
+  </div>
+  <div style="margin:6px 0; font-size:9pt;">
+    <span class="hl-wrong">학생 답: ④</span> &rarr;
+    <span class="hl-correct">정답: ①</span>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════════
+     4. 문제 카드 (지문 + 선지)
+     ══════════════════════════════════════════════════════════════════ -->
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">3</div>
+    <div>
+      <div class="problem-title">문장 삽입</div>
+      <span class="problem-source">271번</span>
+    </div>
+  </div>
+
+  <div class="passage-block">The concept of "governmentality," as introduced by Michel Foucault, offers a unique perspective on the nature of modern power. It describes a specific "art of government" that emerged in the 18th century, shifting focus from ruling over a territory to managing a "population." This new form of power, which Foucault termed "biopower," is concerned with the welfare of the populace in all its aspects: its health, wealth, and longevity.</div>
+
+  <div class="question-box" style="margin-top:8px;">
+    <p><strong>Where does the following sentence best fit in the passage?</strong></p>
+  </div>
+
+  <div class="choices-list">
+    <div class="choice-item">① To introduce a counterargument to Foucault's theory.</div>
+    <div class="choice-item choice-wrong">② To state the main thesis of the entire passage.</div>
+    <div class="choice-item choice-correct">③ To provide a specific example illustrating the tactics of governmentality.</div>
+    <div class="choice-item">④ To offer a concluding summary of the concept of biopower.</div>
+    <div class="choice-item">⑤ To contrast governmentality with older forms of sovereign power.</div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════════
+     5. 해설 섹션 (새 페이지 시작)
+     ══════════════════════════════════════════════════════════════════ -->
+<div class="page-break-before section-header">
+  <span class="section-num">Section 2</span>
+  해설 파트
+</div>
+
+<h2>258번 — 문장 기능 파악</h2>
+
+<!-- concept-box -->
+<div class="concept-box">
+  <span class="concept-label">핵심 개념: 문장 기능 유형</span>
+  <p>지문 내 문장은 <span class="hl-key">주제 제시</span>, <span class="hl-key">예시/근거</span>, <span class="hl-key">부연 설명</span>, <span class="hl-key">반론/양보</span>, <span class="hl-key">결론/요약</span> 중 하나의 기능을 수행합니다.</p>
+  <p>For instance, However, In other words 등의 <strong>담화 표지(discourse marker)</strong>를 활용해 기능을 판별합니다.</p>
+</div>
+
+<!-- grammar-block (해석 블록) -->
+<div class="grammar-block">해석:
+"푸코가 도입한 '통치성' 개념은 근대 권력의 본질에 대해 독특한 관점을 제시한다.
+이것은 18세기에 등장한 특정한 '통치 기술'을 기술하며, 영토 지배에서
+'인구' 관리로 초점이 이동했음을 보여준다."</div>
+
+<!-- 키워드 테이블 -->
+<h4>핵심 키워드</h4>
+<table>
+  <thead>
+    <tr><th>구분</th><th>표현 및 키워드</th></tr>
+  </thead>
+  <tbody>
+    <tr><td><strong>핵심 키워드</strong></td><td>governmentality, biopower, art of government</td></tr>
+    <tr><td><strong>정답 방향 (Positive)</strong></td><td>specific example, illustrating, For instance</td></tr>
+    <tr><td><strong>반대 방향 (Negative)</strong></td><td>counterargument, refutation, contrast</td></tr>
+  </tbody>
+</table>
+
+<!-- tip-box (구조 분석) -->
+<div class="tip-box">
+  <span class="tip-label">구조 분석</span>
+  <p><strong>방향:</strong> <span class="hl-correct">POSITIVE</span> (개념 정의 → 구체화)</p>
+  <p><strong>구조:</strong> 개념 도입(1-2문장) → 세부 설명(3-4문장) → <strong>예시 제시</strong>(5문장) → 결론(6-7문장)</p>
+  <p>5번째 문장의 "For instance"가 <strong>예시 기능</strong>임을 명확히 표시합니다.</p>
+</div>
+
+<!-- answer-box (정답) -->
+<div class="answer-box">
+  <strong>정답: ③</strong> To provide a specific example illustrating the tactics of governmentality.
+</div>
+
+<!-- warning-box (오답 분석) x3 -->
+<div class="warning-box">
+  <span class="warning-label">오답 ① 분석</span>
+  <p>"To introduce a counterargument" — 지문에 반론이나 양보 표현이 없습니다. <em>however, but, on the other hand</em> 등이 부재합니다.</p>
+</div>
+
+<div class="warning-box">
+  <span class="warning-label">오답 ② 분석</span>
+  <p>"To state the main thesis" — 주제문은 첫 문장에 이미 제시되었습니다. 5번째 문장은 <strong>보조적 역할</strong>(예시)입니다.</p>
+</div>
+
+<div class="warning-box">
+  <span class="warning-label">오답 ④ 분석</span>
+  <p>"To offer a concluding summary" — 결론은 마지막 문장("Thus, governmentality reveals...")이 담당합니다. 5번째 문장은 중간에 위치해 결론 기능을 하지 않습니다.</p>
+</div>
+
+<!-- 학생 답 분석 (tip-box) -->
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>왜 이 답을 골랐을까:</strong> "예시"와 "부연 설명"을 혼동. "For instance"를 단순한 추가 설명으로 해석한 것으로 보임</p>
+  <p><strong>오류 패턴:</strong> 담화 표지 간과 — 핵심 시그널 단어를 놓치고 문맥만으로 판단</p>
+  <p><strong>집중 포인트:</strong> For instance, For example = 예시 / In other words, That is = 부연 / However, But = 반전</p>
+</div>
+
+<hr class="section-divider">
+
+<!-- ══════════════════════════════════════════════════════════════════
+     6. starredCorrect 섹션
+     ══════════════════════════════════════════════════════════════════ -->
+<div class="page-break-before section-header">
+  <span class="section-num">참고</span>
+  별표 문항 (정답이지만 주의 필요)
+</div>
+
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge" style="background-color:#ed8936 !important;">★</div>
+    <div>
+      <div class="problem-title">265번</div>
+      <span class="problem-source">선택: ②</span>
+    </div>
+  </div>
+  <div class="tip-box">
+    <span class="tip-label">참고</span>
+    <p>정답을 맞혔으나, 소거법으로 풀었을 가능성. 선지 ④와의 차이를 명확히 구분하는 연습 필요.</p>
+  </div>
+</div>
+
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge" style="background-color:#ed8936 !important;">★</div>
+    <div>
+      <div class="problem-title">270번</div>
+      <span class="problem-source">선택: ④</span>
+    </div>
+  </div>
+  <div class="tip-box">
+    <span class="tip-label">참고</span>
+    <p>시간이 오래 걸린 문항. 주제문과 근거문의 관계를 빠르게 파악하는 연습이 필요합니다.</p>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════════
+     7. grammarTopics 섹션
+     ══════════════════════════════════════════════════════════════════ -->
+<div class="page-break-before section-header">
+  <span class="section-num">보충</span>
+  문법 보충 설명
+</div>
+
+<div class="concept-box">
+  <span class="concept-label">담화 표지 (Discourse Markers) 총정리</span>
+  <p><strong>예시 표지:</strong> For instance, For example, such as, including, namely</p>
+  <p><strong>부연 표지:</strong> In other words, That is, i.e., To put it differently</p>
+  <p><strong>대조 표지:</strong> However, But, On the other hand, In contrast, Nevertheless</p>
+  <p><strong>결론 표지:</strong> Thus, Therefore, Hence, Consequently, In conclusion</p>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════════
+     8. conceptQuestions 섹션 (연습문제 포함)
+     ══════════════════════════════════════════════════════════════════ -->
+<div class="page-break-before section-header">
+  <span class="section-num">개념 보충</span>
+  개념 보충 학습
+</div>
+
+<h2>1. 문장 기능 파악 전략</h2>
+
+<div class="concept-box">
+  <span class="concept-label">핵심 개념</span>
+  <p>영어 지문에서 각 문장은 고유한 <span class="hl-key">기능(function)</span>을 갖습니다. 기능은 크게 5가지: 주제 제시, 예시/근거, 부연 설명, 반론/양보, 결론/요약.</p>
+  <p>문장 앞의 <strong>담화 표지(discourse marker)</strong>가 가장 강력한 단서입니다.</p>
+</div>
+
+<div class="grammar-block">핵심 예시:
+1. "For instance, the collection of data allows..." → 예시 기능
+2. "In other words, reality is unthinkable." → 부연/재진술 기능
+3. "However, this approach has limitations." → 반론/전환 기능</div>
+
+<h4>예문 연습</h4>
+<div class="grammar-block">1. The study concluded that expectations affect performance. → 결론 기능
+2. For example, teachers provided more challenging material. → 예시 기능
+3. Nevertheless, the methodology has been questioned. → 양보/반전 기능</div>
+
+<div class="warning-box">
+  <span class="warning-label">헷갈리는 포인트</span>
+  <p><strong>"예시"와 "부연 설명"의 차이:</strong></p>
+  <p>예시(For instance) = 구체적 사례 제시 / 부연(In other words) = 같은 내용을 다른 표현으로 반복</p>
+  <p>예시는 <em>새로운 정보</em>를 추가하고, 부연은 <em>기존 정보</em>를 재표현합니다.</p>
+</div>
+
+<!-- 연습문제 -->
+<div class="page-break-before section-header">
+  <span class="section-num">연습 1</span>
+  문장 기능 파악 전략 연습문제 (5문제)
+</div>
+
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>1.</strong> The sentence "For example, demographic data collection enables state intervention" functions primarily to:</p>
+<div class="variant-choices">① state the main thesis&nbsp;&nbsp;&nbsp;② provide a counterargument&nbsp;&nbsp;&nbsp;③ offer a specific example&nbsp;&nbsp;&nbsp;④ summarize the passage&nbsp;&nbsp;&nbsp;⑤ define a key term</div>
+
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>2.</strong> "In other words, reality independent of the human mind is unthinkable." This sentence serves to:</p>
+<div class="variant-choices">① introduce a new concept&nbsp;&nbsp;&nbsp;② rephrase the preceding idea&nbsp;&nbsp;&nbsp;③ present a counterexample&nbsp;&nbsp;&nbsp;④ conclude the argument&nbsp;&nbsp;&nbsp;⑤ raise a question</div>
+
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>3.</strong> "However, the affective fallacy warns against evaluating literature by emotional response." This sentence:</p>
+<div class="variant-choices">① supports the previous claim&nbsp;&nbsp;&nbsp;② provides an example&nbsp;&nbsp;&nbsp;③ introduces a contrasting view&nbsp;&nbsp;&nbsp;④ defines a technical term&nbsp;&nbsp;&nbsp;⑤ summarizes the passage</div>
+
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>4.</strong> "Thus, governmentality reveals how deeply political power is invested in biological existence." This sentence:</p>
+<div class="variant-choices">① presents a new argument&nbsp;&nbsp;&nbsp;② offers an illustration&nbsp;&nbsp;&nbsp;③ restates the introduction&nbsp;&nbsp;&nbsp;④ draws a conclusion&nbsp;&nbsp;&nbsp;⑤ raises a counterpoint</div>
+
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>5.</strong> "The students labeled as bloomers showed significantly greater improvement." This sentence:</p>
+<div class="variant-choices">① describes the methodology&nbsp;&nbsp;&nbsp;② states the hypothesis&nbsp;&nbsp;&nbsp;③ presents the key finding&nbsp;&nbsp;&nbsp;④ offers a critique&nbsp;&nbsp;&nbsp;⑤ introduces the topic</div>
+
+<!-- 정답 및 해설 -->
+<div class="page-break-before">
+  <h3 style="color:#3a8fa3; margin-bottom:10px;">연습 1. 문장 기능 파악 전략 정답 및 해설</h3>
+  <table>
+    <thead><tr><th style="width:30px;">#</th><th style="width:80px;">정답</th><th>해설</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>③</td><td>"For example"이 예시 기능의 명확한 표지</td></tr>
+      <tr><td>2</td><td>②</td><td>"In other words"는 재진술/부연의 표지</td></tr>
+      <tr><td>3</td><td>③</td><td>"However"는 대조/전환의 표지</td></tr>
+      <tr><td>4</td><td>④</td><td>"Thus"는 결론의 표지</td></tr>
+      <tr><td>5</td><td>③</td><td>실험 결과를 제시하는 문장 (finding)</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════════
+     플로우차트 예시 (추가 컴포넌트)
+     ══════════════════════════════════════════════════════════════════ -->
+<hr class="section-divider">
+<h3>부록: 문장 기능 판별 순서도</h3>
+
+<div class="flowchart">
+  <div class="flow-step">
+    <span class="step-label">STEP 1</span> 담화 표지 확인
+    <div class="step-sub">For instance? However? Thus? In other words?</div>
+  </div>
+  <div class="flow-arrow">&darr;</div>
+  <div class="flow-step">
+    <span class="step-label">STEP 2</span> 앞뒤 문장과의 관계 파악
+    <div class="step-sub">같은 방향(지지) vs 다른 방향(전환)</div>
+  </div>
+  <div class="flow-arrow">&darr;</div>
+  <div class="flow-step">
+    <span class="step-label">STEP 3</span> 문장 위치 고려
+    <div class="step-sub">첫 문장(주제), 중간(근거/예시), 마지막(결론)</div>
+  </div>
+  <div class="flow-arrow">&darr;</div>
+  <div class="flow-step">
+    <span class="step-label">STEP 4</span> 선지와 대조
+    <div class="step-sub">가장 구체적이고 정확한 기능 표현 선택</div>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════════════
+     푸터
+     ══════════════════════════════════════════════════════════════════ -->
+<hr class="section-divider">
+<p style="text-align: center; color: #a0aec0; font-size: 8.5pt; margin-top: 24px;">
+  피드백지 디자인 프리뷰 — Teal & Warm v2.0 | 2026. 02. 21
+</p>
+
+</body>
+</html>

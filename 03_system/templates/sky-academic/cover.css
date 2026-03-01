@@ -1,0 +1,66 @@
+/* =================================================================== */
+/* Sky Academic Template — Cover Page Styles                          */
+/* 독해 Intermediate + 보카 Full-Bleed 표지                            */
+/* Vera's Document Studio                                             */
+/* =================================================================== */
+
+.cover-page {
+    background-color: #0284C7 !important;
+    background-image: url('../../05_assets/backgrounds/background4.png') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 0 !important;
+    position: relative !important;
+}
+
+/* Full-Bleed - No Frame */
+.cover-content {
+    text-align: center !important;
+    padding: 30mm !important;
+    width: 100% !important;
+}
+
+/* Cover Title - 대형 타이틀 */
+.cover-main-title {
+    font-family: var(--font-eng) !important;
+    font-size: 42pt !important;
+    color: #FFFFFF !important;
+    font-weight: 800 !important;
+    margin-bottom: 10mm !important;
+    line-height: 1.1 !important;
+    letter-spacing: -1pt !important;
+}
+
+/* Cover Subtitle */
+.cover-subtitle {
+    font-family: var(--font-sans) !important;
+    font-size: 20pt !important;
+    color: #FFFFFF !important;
+    font-weight: 300 !important;
+    margin-bottom: 15mm !important;
+    line-height: 1.4 !important;
+}
+
+/* Cover Brand */
+.cover-brand {
+    font-family: var(--font-eng) !important;
+    font-size: var(--cover-brand-size) !important;
+    color: var(--color-accent-secondary) !important;
+    font-weight: 700 !important;
+    letter-spacing: 2.5pt !important;
+    margin-top: 20mm !important;
+    text-transform: uppercase !important;
+}
+
+/* Cover Accent Line */
+.cover-accent-line {
+    width: 100mm !important;
+    height: 4px !important;
+    background-color: var(--color-accent-secondary) !important;
+    margin: 10mm auto !important;
+}

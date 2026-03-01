@@ -1,0 +1,507 @@
+{
+  "bookId": "vocab-basic",
+  "day": 53,
+  "theme": "조건과 상황 (Conditions and Circumstances)",
+  "words": [
+    {
+      "word": "circumstance",
+      "pronunciation": "[sə́ːrkəmstæ̀ns]",
+      "partOfSpeech": "n.",
+      "meaning": "(주로 pl.) 상황, 환경",
+      "example": {
+        "en": "Due to unforeseen circumstances, the event has been canceled.",
+        "ko": "예기치 못한 상황으로 인해 행사가 취소되었습니다."
+      }
+    },
+    {
+      "word": "situation",
+      "pronunciation": "[sìʧuéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "상황",
+      "example": {
+        "en": "We need to assess the current situation before making a decision.",
+        "ko": "결정을 내리기 전에 현재 상황을 평가해야 합니다."
+      }
+    },
+    {
+      "word": "condition",
+      "pronunciation": "[kəndíʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "조건, 상태",
+      "example": {
+        "en": "The house is in excellent condition.",
+        "ko": "그 집은 상태가 아주 좋다."
+      }
+    },
+    {
+      "word": "status",
+      "pronunciation": "[stéitəs]",
+      "partOfSpeech": "n.",
+      "meaning": "상태, 지위",
+      "example": {
+        "en": "What is the current status of the project?",
+        "ko": "프로젝트의 현재 상태는 어떻습니까?"
+      }
+    },
+    {
+      "word": "position",
+      "pronunciation": "[pəzíʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "위치, 입장",
+      "example": {
+        "en": "From my position, I could see the entire stage.",
+        "ko": "내 위치에서는 무대 전체를 볼 수 있었다."
+      }
+    },
+    {
+      "word": "predicament",
+      "pronunciation": "[pridíkəmənt]",
+      "partOfSpeech": "n.",
+      "meaning": "곤경, 궁지",
+      "example": {
+        "en": "He found himself in a difficult predicament.",
+        "ko": "그는 어려운 곤경에 처한 자신을 발견했다."
+      }
+    },
+    {
+      "word": "dilemma",
+      "pronunciation": "[dilémə]",
+      "partOfSpeech": "n.",
+      "meaning": "딜레마, 진퇴양난",
+      "example": {
+        "en": "She faced the dilemma of choosing between her career and her family.",
+        "ko": "그녀는 직업과 가족 사이에서 선택해야 하는 딜레마에 직면했다."
+      }
+    },
+    {
+      "word": "emergency",
+      "pronunciation": "[imə́ːrdʒənsi]",
+      "partOfSpeech": "n.",
+      "meaning": "비상사태",
+      "example": {
+        "en": "In case of an emergency, call 911.",
+        "ko": "비상사태 시에는 911에 전화하세요."
+      }
+    },
+    {
+      "word": "urgency",
+      "pronunciation": "[ə́ːrdʒənsi]",
+      "partOfSpeech": "n.",
+      "meaning": "긴급",
+      "example": {
+        "en": "This is a matter of great urgency.",
+        "ko": "이것은 매우 긴급한 문제이다."
+      }
+    },
+    {
+      "word": "priority",
+      "pronunciation": "[praiɔ́ːrəti]",
+      "partOfSpeech": "n.",
+      "meaning": "우선순위",
+      "example": {
+        "en": "Our top priority is customer satisfaction.",
+        "ko": "우리의 최우선 순위는 고객 만족이다."
+      }
+    },
+    {
+      "word": "necessity",
+      "pronunciation": "[nisésəti]",
+      "partOfSpeech": "n.",
+      "meaning": "필요성, 필수품",
+      "example": {
+        "en": "Food and water are basic necessities of life.",
+        "ko": "음식과 물은 삶의 기본 필수품이다."
+      }
+    },
+    {
+      "word": "requirement",
+      "pronunciation": "[rikwáiərmənt]",
+      "partOfSpeech": "n.",
+      "meaning": "요구 조건, 필요 조건",
+      "example": {
+        "en": "What are the requirements for this course?",
+        "ko": "이 과정의 요구 조건은 무엇입니까?"
+      }
+    },
+    {
+      "word": "prerequisite",
+      "pronunciation": "[priːrékwəzit]",
+      "partOfSpeech": "n.",
+      "meaning": "전제 조건",
+      "example": {
+        "en": "Basic math is a prerequisite for the advanced course.",
+        "ko": "기초 수학은 고급 과정의 전제 조건이다."
+      }
+    },
+    {
+      "word": "qualification",
+      "pronunciation": "[kwὰləfikéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "자격",
+      "example": {
+        "en": "Do you have the necessary qualifications for the job?",
+        "ko": "당신은 그 직업에 필요한 자격을 갖추고 있습니까?"
+      }
+    },
+    {
+      "word": "criterion",
+      "pronunciation": "[kraitíəriən]",
+      "partOfSpeech": "n.",
+      "meaning": "기준 (pl. criteria)",
+      "example": {
+        "en": "What is the main criterion for selecting the winner?",
+        "ko": "우승자를 선정하는 주요 기준은 무엇입니까?"
+      }
+    },
+    {
+      "word": "standard",
+      "pronunciation": "[stǽndərd]",
+      "partOfSpeech": "n.",
+      "meaning": "기준, 표준",
+      "example": {
+        "en": "The company has high standards of quality.",
+        "ko": "그 회사는 높은 품질 기준을 가지고 있다."
+      }
+    },
+    {
+      "word": "benchmark",
+      "pronunciation": "[béntʃmὰːrk]",
+      "partOfSpeech": "n.",
+      "meaning": "기준점, 벤치마크",
+      "example": {
+        "en": "The new product set a benchmark for the industry.",
+        "ko": "그 신제품은 업계의 기준점을 세웠다."
+      }
+    },
+    {
+      "word": "measure",
+      "pronunciation": "[méʒər]",
+      "partOfSpeech": "n.",
+      "meaning": "척도, 기준; 조치",
+      "example": {
+        "en": "We need to take strong measures to solve the problem.",
+        "ko": "우리는 그 문제를 해결하기 위해 강력한 조치를 취해야 한다."
+      }
+    },
+    {
+      "word": "parameter",
+      "pronunciation": "[pərǽmətər]",
+      "partOfSpeech": "n.",
+      "meaning": "매개 변수, 한계",
+      "example": {
+        "en": "We must work within the parameters of the budget.",
+        "ko": "우리는 예산의 한계 내에서 일해야 한다."
+      }
+    },
+    {
+      "word": "variable",
+      "pronunciation": "[vέəriəbl]",
+      "partOfSpeech": "n.",
+      "meaning": "변수",
+      "example": {
+        "en": "Temperature is a key variable in this experiment.",
+        "ko": "온도는 이 실험의 핵심 변수이다."
+      }
+    },
+    {
+      "word": "constant",
+      "pronunciation": "[kάnstənt]",
+      "partOfSpeech": "n.\n       \n        a.",
+      "meaning": "상수\n       \n        끊임없는",
+      "example": {
+        "en": "In this equation, 'c' represents a constant.",
+        "ko": "이 방정식에서 'c'는 상수를 나타낸다."
+      }
+    },
+    {
+      "word": "factor",
+      "pronunciation": "[fǽktər]",
+      "partOfSpeech": "n.",
+      "meaning": "요인, 요소",
+      "example": {
+        "en": "Several factors contributed to the company's success.",
+        "ko": "몇 가지 요인이 회사의 성공에 기여했다."
+      }
+    },
+    {
+      "word": "aspect",
+      "pronunciation": "[ǽspekt]",
+      "partOfSpeech": "n.",
+      "meaning": "측면, 양상",
+      "example": {
+        "en": "We must consider every aspect of the problem.",
+        "ko": "우리는 문제의 모든 측면을 고려해야 한다."
+      }
+    },
+    {
+      "word": "dimension",
+      "pronunciation": "[diménʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "차원, 관점",
+      "example": {
+        "en": "The problem has a social and an economic dimension.",
+        "ko": "그 문제는 사회적, 경제적 차원을 가지고 있다."
+      }
+    },
+    {
+      "word": "angle",
+      "pronunciation": "[ǽ&eng;gl]",
+      "partOfSpeech": "n.",
+      "meaning": "각도, 관점",
+      "example": {
+        "en": "Let's look at the problem from a different angle.",
+        "ko": "다른 각도에서 문제를 봅시다."
+      }
+    },
+    {
+      "word": "approach",
+      "pronunciation": "[əpróutʃ]",
+      "partOfSpeech": "n.",
+      "meaning": "접근법",
+      "example": {
+        "en": "We need a new approach to solve this problem.",
+        "ko": "이 문제를 해결하기 위해서는 새로운 접근법이 필요하다."
+      }
+    },
+    {
+      "word": "method",
+      "pronunciation": "[méθəd]",
+      "partOfSpeech": "n.",
+      "meaning": "방법",
+      "example": {
+        "en": "What is the most effective method for learning a new language?",
+        "ko": "새로운 언어를 배우는 가장 효과적인 방법은 무엇입니까?"
+      }
+    },
+    {
+      "word": "technique",
+      "pronunciation": "[tekníːk]",
+      "partOfSpeech": "n.",
+      "meaning": "기법, 기술",
+      "example": {
+        "en": "The artist has developed a unique painting technique.",
+        "ko": "그 화가는 독특한 회화 기법을 개발했다."
+      }
+    },
+    {
+      "word": "procedure",
+      "pronunciation": "[prəsíːdʒər]",
+      "partOfSpeech": "n.",
+      "meaning": "절차",
+      "example": {
+        "en": "You must follow the correct procedure.",
+        "ko": "올바른 절차를 따라야 합니다."
+      }
+    },
+    {
+      "word": "process",
+      "pronunciation": "[prάses]",
+      "partOfSpeech": "n.",
+      "meaning": "과정",
+      "example": {
+        "en": "Learning a language is a long process.",
+        "ko": "언어를 배우는 것은 긴 과정이다."
+      }
+    },
+    {
+      "word": "mechanism",
+      "pronunciation": "[mékənìzəm]",
+      "partOfSpeech": "n.",
+      "meaning": "메커니즘, 구조",
+      "example": {
+        "en": "The watch has a very complex mechanism.",
+        "ko": "그 시계는 매우 복잡한 구조를 가지고 있다."
+      }
+    },
+    {
+      "word": "system",
+      "pronunciation": "[sístəm]",
+      "partOfSpeech": "n.",
+      "meaning": "시스템, 체계",
+      "example": {
+        "en": "The company has a new computer system.",
+        "ko": "그 회사는 새로운 컴퓨터 시스템을 가지고 있다."
+      }
+    },
+    {
+      "word": "structure",
+      "pronunciation": "[strʌ́kʧər]",
+      "partOfSpeech": "n.",
+      "meaning": "구조",
+      "example": {
+        "en": "The structure of the building is very strong.",
+        "ko": "그 건물의 구조는 매우 튼튼하다."
+      }
+    },
+    {
+      "word": "format",
+      "pronunciation": "[fɔ́ːrmæt]",
+      "partOfSpeech": "n.",
+      "meaning": "형식, 구성",
+      "example": {
+        "en": "The format of the meeting will be informal.",
+        "ko": "회의 형식은 비공식적일 것이다."
+      }
+    },
+    {
+      "word": "model",
+      "pronunciation": "[mάdl]",
+      "partOfSpeech": "n.",
+      "meaning": "모델, 모형",
+      "example": {
+        "en": "The architect built a scale model of the new building.",
+        "ko": "건축가는 새 건물의 축소 모형을 만들었다."
+      }
+    },
+    {
+      "word": "scheme",
+      "pronunciation": "[skiːm]",
+      "partOfSpeech": "n.",
+      "meaning": "계획, 제도",
+      "example": {
+        "en": "The government has introduced a new pension scheme.",
+        "ko": "정부는 새로운 연금 제도를 도입했다."
+      }
+    },
+    {
+      "word": "plan",
+      "pronunciation": "[plæn]",
+      "partOfSpeech": "n.",
+      "meaning": "계획",
+      "example": {
+        "en": "What are your plans for the weekend?",
+        "ko": "주말 계획은 무엇인가요?"
+      }
+    },
+    {
+      "word": "arrangement",
+      "pronunciation": "[əréindʒmənt]",
+      "partOfSpeech": "n.",
+      "meaning": "준비, 방식, 합의",
+      "example": {
+        "en": "We have made an arrangement to meet next week.",
+        "ko": "우리는 다음 주에 만나기로 합의했다."
+      }
+    },
+    {
+      "word": "contingent",
+      "pronunciation": "[kənˈtɪndʒənt]",
+      "partOfSpeech": "형용사",
+      "meaning": "조건부의, 불확실한, 우연한",
+      "example": {
+        "en": "The success of the project is contingent upon securing adequate funding.",
+        "ko": "프로젝트의 성공은 적절한 자금 확보에 달려있다."
+      }
+    },
+    {
+      "word": "stipulate",
+      "pronunciation": "[ˈstɪpjuleɪt]",
+      "partOfSpeech": "동사",
+      "meaning": "규정하다, 명시하다",
+      "example": {
+        "en": "The contract stipulates that payment must be made within 30 days.",
+        "ko": "계약서는 지불이 30일 이내에 이루어져야 한다고 규정한다."
+      }
+    },
+    {
+      "word": "caveat",
+      "pronunciation": "[ˈkævɪæt]",
+      "partOfSpeech": "명사",
+      "meaning": "경고, 단서 조항",
+      "example": {
+        "en": "The report came with several caveats about the reliability of the data.",
+        "ko": "보고서에는 데이터의 신뢰성에 대한 몇 가지 단서 조항이 포함되어 있었다."
+      }
+    },
+    {
+      "word": "precarious",
+      "pronunciation": "[prɪˈkeəriəs]",
+      "partOfSpeech": "형용사",
+      "meaning": "불안정한, 위태로운",
+      "example": {
+        "en": "The company is in a precarious financial situation.",
+        "ko": "그 회사는 불안정한 재정 상태에 있다."
+      }
+    },
+    {
+      "word": "predicate",
+      "pronunciation": "[ˈpredɪkeɪt]",
+      "partOfSpeech": "동사",
+      "meaning": "기초를 두다, ~에 근거를 두다",
+      "example": {
+        "en": "His argument was predicated on several false assumptions.",
+        "ko": "그의 주장은 몇 가지 잘못된 가정에 근거를 두고 있었다."
+      }
+    },
+    {
+      "word": "exigent",
+      "pronunciation": "[ˈeksɪdʒənt]",
+      "partOfSpeech": "형용사",
+      "meaning": "긴급한, 절박한",
+      "example": {
+        "en": "The exigent circumstances required immediate action.",
+        "ko": "긴급한 상황은 즉각적인 조치를 필요로 했다."
+      }
+    },
+    {
+      "word": "conjecture",
+      "pronunciation": "[kənˈdʒektʃər]",
+      "partOfSpeech": "명사/동사",
+      "meaning": "추측, 추정/추측하다",
+      "example": {
+        "en": "Without solid evidence, we can only conjecture about what really happened.",
+        "ko": "확실한 증거 없이는 실제로 무슨 일이 일어났는지 추측만 할 수 있다."
+      }
+    },
+    {
+      "word": "vicissitude",
+      "pronunciation": "[vɪˈsɪsɪtjuːd]",
+      "partOfSpeech": "명사",
+      "meaning": "변천, 변화(특히 어려운 상황)",
+      "example": {
+        "en": "He faced the vicissitudes of life with remarkable courage.",
+        "ko": "그는 놀라운 용기로 인생의 변천을 맞이했다."
+      }
+    },
+    {
+      "word": "circumscribe",
+      "pronunciation": "[ˈsɜːkəmskraɪb]",
+      "partOfSpeech": "동사",
+      "meaning": "제한하다, 한정하다",
+      "example": {
+        "en": "The government's power is circumscribed by the constitution.",
+        "ko": "정부의 권력은 헌법에 의해 제한된다."
+      }
+    },
+    {
+      "word": "concomitant",
+      "pronunciation": "[kənˈkɒmɪtənt]",
+      "partOfSpeech": "형용사",
+      "meaning": "수반하는, 동반하는",
+      "example": {
+        "en": "Stress is often a concomitant factor in health problems.",
+        "ko": "스트레스는 종종 건강 문제에 수반되는 요인이다."
+      }
+    },
+    {
+      "word": "extenuating",
+      "pronunciation": "[ɪkˈstenjueɪtɪ&eng;]",
+      "partOfSpeech": "형용사",
+      "meaning": "정상참작이 되는, 죄를 경감시키는",
+      "example": {
+        "en": "The judge considered the extenuating circumstances before passing sentence.",
+        "ko": "판사는 선고 전에 정상참작이 되는 상황들을 고려했다."
+      }
+    },
+    {
+      "word": "precondition",
+      "pronunciation": "/ˌpriːkənˈdɪʃən/",
+      "partOfSpeech": "n.",
+      "meaning": "다른 일이 일어나거나 수행되기 전에 충족되어야 하는 조건",
+      "example": {
+        "en": "Completion of safety training is a precondition for access to the lab.",
+        "ko": "안전 교육 이수는 실험실 출입을 위한 선행 조건이다."
+      }
+    }
+  ]
+}

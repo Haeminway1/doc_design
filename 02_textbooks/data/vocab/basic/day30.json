@@ -1,0 +1,507 @@
+{
+  "bookId": "vocab-basic",
+  "day": 30,
+  "theme": "과학과 기술 (Science and Technology)",
+  "words": [
+    {
+      "word": "hypothesis",
+      "pronunciation": "[haipάθəsis]",
+      "partOfSpeech": "n.",
+      "meaning": "가설, 가정",
+      "example": {
+        "en": "The scientist tested his hypothesis through a series of experiments.",
+        "ko": "그 과학자는 일련의 실험을 통해 자신의 가설을 검증했다."
+      }
+    },
+    {
+      "word": "empirical",
+      "pronunciation": "[empírikəl]",
+      "partOfSpeech": "a.",
+      "meaning": "경험적인, 실증적인",
+      "example": {
+        "en": "The study is based on empirical evidence, not just theory.",
+        "ko": "그 연구는 단지 이론이 아닌 실증적 증거에 기반을 두고 있다."
+      }
+    },
+    {
+      "word": "methodology",
+      "pronunciation": "[mèθədάlədʒi]",
+      "partOfSpeech": "n.",
+      "meaning": "방법론",
+      "example": {
+        "en": "The research methodology must be sound and repeatable.",
+        "ko": "연구 방법론은 타당하고 반복 가능해야 한다."
+      }
+    },
+    {
+      "word": "phenomenon",
+      "pronunciation": "[finάmənὰn]",
+      "partOfSpeech": "n.",
+      "meaning": "현상 (pl. phenomena)",
+      "example": {
+        "en": "A solar eclipse is a rare natural phenomenon.",
+        "ko": "일식은 드문 자연 현상이다."
+      }
+    },
+    {
+      "word": "apparatus",
+      "pronunciation": "[æ̀pərǽtəs]",
+      "partOfSpeech": "n.",
+      "meaning": "(실험) 장치, 기구",
+      "example": {
+        "en": "The laboratory is equipped with modern scientific apparatus.",
+        "ko": "그 실험실은 현대적인 과학 기구를 갖추고 있다."
+      }
+    },
+    {
+      "word": "calibrate",
+      "pronunciation": "[kǽləbrèit]",
+      "partOfSpeech": "v.",
+      "meaning": "(계측기를) 조정하다, 눈금을 맞추다",
+      "example": {
+        "en": "You need to calibrate the thermometer for accurate readings.",
+        "ko": "정확한 측정을 위해 온도계의 눈금을 조정해야 한다."
+      }
+    },
+    {
+      "word": "synthesis",
+      "pronunciation": "[sínθəsis]",
+      "partOfSpeech": "n.",
+      "meaning": "합성, 종합",
+      "example": {
+        "en": "The new drug is a result of chemical synthesis.",
+        "ko": "그 신약은 화학 합성의 결과물이다."
+      }
+    },
+    {
+      "word": "catalyst",
+      "pronunciation": "[kǽtəlist]",
+      "partOfSpeech": "n.",
+      "meaning": "촉매(제)",
+      "example": {
+        "en": "The enzyme acted as a catalyst in the chemical reaction.",
+        "ko": "그 효소는 화학 반응에서 촉매 역할을 했다."
+      }
+    },
+    {
+      "word": "molecular",
+      "pronunciation": "[məlékyulər]",
+      "partOfSpeech": "a.",
+      "meaning": "분자의",
+      "example": {
+        "en": "He is studying the molecular structure of DNA.",
+        "ko": "그는 DNA의 분자 구조를 연구하고 있다."
+      }
+    },
+    {
+      "word": "genome",
+      "pronunciation": "[dʒíːnoum]",
+      "partOfSpeech": "n.",
+      "meaning": "게놈, 유전체",
+      "example": {
+        "en": "The Human Genome Project mapped the entire human genetic code.",
+        "ko": "인간 게놈 프로젝트는 전체 인간 유전 암호를 해독했다."
+      }
+    },
+    {
+      "word": "enzyme",
+      "pronunciation": "[énzaim]",
+      "partOfSpeech": "n.",
+      "meaning": "효소",
+      "example": {
+        "en": "Enzymes help to speed up chemical reactions in the body.",
+        "ko": "효소는 신체 내 화학 반응의 속도를 높이는 데 도움을 준다."
+      }
+    },
+    {
+      "word": "particle",
+      "pronunciation": "[pάːrtikl]",
+      "partOfSpeech": "n.",
+      "meaning": "입자, 미립자",
+      "example": {
+        "en": "Dust particles were visible in the sunbeam.",
+        "ko": "햇살 속에서 먼지 입자들이 보였다."
+      }
+    },
+    {
+      "word": "quantum",
+      "pronunciation": "[kwάntəm]",
+      "partOfSpeech": "n.",
+      "meaning": "양자; 양",
+      "example": {
+        "en": "Quantum physics studies the behavior of matter and energy at the atomic level.",
+        "ko": "양자 물리학은 원자 수준에서 물질과 에너지의 행동을 연구한다."
+      }
+    },
+    {
+      "word": "radiation",
+      "pronunciation": "[rèidiéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "방사선, 복사",
+      "example": {
+        "en": "Exposure to high levels of radiation can be harmful.",
+        "ko": "높은 수준의 방사선에 노출되는 것은 해로울 수 있다."
+      }
+    },
+    {
+      "word": "electromagnetic",
+      "pronunciation": "[ilèktroumægnétik]",
+      "partOfSpeech": "a.",
+      "meaning": "전자기의",
+      "example": {
+        "en": "Radio waves are a form of electromagnetic radiation.",
+        "ko": "전파는 전자기 복사의 한 형태이다."
+      }
+    },
+    {
+      "word": "velocity",
+      "pronunciation": "[vəlάsəti]",
+      "partOfSpeech": "n.",
+      "meaning": "(특정 방향으로의) 속도",
+      "example": {
+        "en": "The velocity of light is approximately 300,000 kilometers per second.",
+        "ko": "빛의 속도는 초당 약 30만 킬로미터이다."
+      }
+    },
+    {
+      "word": "trajectory",
+      "pronunciation": "[trədʒéktəri]",
+      "partOfSpeech": "n.",
+      "meaning": "궤도, 탄도",
+      "example": {
+        "en": "The missile followed a high trajectory.",
+        "ko": "그 미사일은 높은 궤도를 따라 날아갔다."
+      }
+    },
+    {
+      "word": "inertia",
+      "pronunciation": "[inə́ːrʃə]",
+      "partOfSpeech": "n.",
+      "meaning": "관성",
+      "example": {
+        "en": "The car's inertia carried it forward even after the brakes were applied.",
+        "ko": "브레이크를 밟은 후에도 자동차의 관성이 차를 앞으로 나아가게 했다."
+      }
+    },
+    {
+      "word": "momentum",
+      "pronunciation": "[mouméntəm]",
+      "partOfSpeech": "n.",
+      "meaning": "운동량, 탄력, 기세",
+      "example": {
+        "en": "The team gained momentum in the second half of the game.",
+        "ko": "그 팀은 경기 후반에 기세를 얻었다."
+      }
+    },
+    {
+      "word": "friction",
+      "pronunciation": "[fríkʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "마찰(력)",
+      "example": {
+        "en": "The friction between the tires and the road slows the car down.",
+        "ko": "타이어와 도로 사이의 마찰이 자동차의 속도를 늦춘다."
+      }
+    },
+    {
+      "word": "density",
+      "pronunciation": "[dénsəti]",
+      "partOfSpeech": "n.",
+      "meaning": "밀도",
+      "example": {
+        "en": "Lead has a high density.",
+        "ko": "납은 밀도가 높다."
+      }
+    },
+    {
+      "word": "viscosity",
+      "pronunciation": "[viskάsəti]",
+      "partOfSpeech": "n.",
+      "meaning": "점성, 점도",
+      "example": {
+        "en": "Honey has a higher viscosity than water.",
+        "ko": "꿀은 물보다 점성이 더 높다."
+      }
+    },
+    {
+      "word": "soluble",
+      "pronunciation": "[sάljubl]",
+      "partOfSpeech": "a.",
+      "meaning": "녹는, 용해성의",
+      "example": {
+        "en": "Salt is soluble in water.",
+        "ko": "소금은 물에 녹는다."
+      }
+    },
+    {
+      "word": "crystalline",
+      "pronunciation": "[krístəlin]",
+      "partOfSpeech": "a.",
+      "meaning": "수정 같은, 결정체의",
+      "example": {
+        "en": "The salt formed a crystalline structure as the water evaporated.",
+        "ko": "물이 증발하면서 소금은 결정체 구조를 형성했다."
+      }
+    },
+    {
+      "word": "combustible",
+      "pronunciation": "[kəmbʌ́stəbl]",
+      "partOfSpeech": "a.",
+      "meaning": "가연성의, 불붙기 쉬운",
+      "example": {
+        "en": "Dry leaves are highly combustible.",
+        "ko": "마른 잎은 매우 가연성이 높다."
+      }
+    },
+    {
+      "word": "inorganic",
+      "pronunciation": "[ìnɔːrgǽnik]",
+      "partOfSpeech": "a.",
+      "meaning": "무기물의, 무기적인",
+      "example": {
+        "en": "Inorganic chemistry is the study of non-carbon compounds.",
+        "ko": "무기 화학은 비탄소 화합물을 연구하는 학문이다."
+      }
+    },
+    {
+      "word": "biochemical",
+      "pronunciation": "[bàioukemikəl]",
+      "partOfSpeech": "a.",
+      "meaning": "생화학의",
+      "example": {
+        "en": "The lab is conducting biochemical research on enzymes.",
+        "ko": "그 실험실은 효소에 대한 생화학 연구를 수행하고 있다."
+      }
+    },
+    {
+      "word": "microscopic",
+      "pronunciation": "[màikrəskάpik]",
+      "partOfSpeech": "a.",
+      "meaning": "미세한, 현미경으로 봐야 보이는",
+      "example": {
+        "en": "Bacteria are microscopic organisms.",
+        "ko": "박테리아는 미세한 유기체이다."
+      }
+    },
+    {
+      "word": "macroscopic",
+      "pronunciation": "[mæ̀krəskάpik]",
+      "partOfSpeech": "a.",
+      "meaning": "육안으로 보이는, 거시적인",
+      "example": {
+        "en": "We can observe the macroscopic effects of gravity every day.",
+        "ko": "우리는 매일 중력의 거시적인 효과를 관찰할 수 있다."
+      }
+    },
+    {
+      "word": "algorithm",
+      "pronunciation": "[ǽlgərìðəm]",
+      "partOfSpeech": "n.",
+      "meaning": "알고리즘, 연산 법칙",
+      "example": {
+        "en": "The search engine uses a complex algorithm to rank websites.",
+        "ko": "그 검색 엔진은 웹사이트 순위를 매기기 위해 복잡한 알고리즘을 사용한다."
+      }
+    },
+    {
+      "word": "interface",
+      "pronunciation": "[íntərfèis]",
+      "partOfSpeech": "n.",
+      "meaning": "인터페이스, 접점",
+      "example": {
+        "en": "The new software has a user-friendly interface.",
+        "ko": "그 새 소프트웨어는 사용자 친화적인 인터페이스를 가지고 있다."
+      }
+    },
+    {
+      "word": "software",
+      "pronunciation": "[sɔ́ːftwὲər]",
+      "partOfSpeech": "n.",
+      "meaning": "소프트웨어",
+      "example": {
+        "en": "You need to install the latest software updates.",
+        "ko": "최신 소프트웨어 업데이트를 설치해야 합니다."
+      }
+    },
+    {
+      "word": "database",
+      "pronunciation": "[déitəbèis]",
+      "partOfSpeech": "n.",
+      "meaning": "데이터베이스",
+      "example": {
+        "en": "The company maintains a large database of its customers.",
+        "ko": "그 회사는 고객들의 대규모 데이터베이스를 유지하고 있다."
+      }
+    },
+    {
+      "word": "encrypt",
+      "pronunciation": "[inkrípt]",
+      "partOfSpeech": "v.",
+      "meaning": "암호화하다",
+      "example": {
+        "en": "The message was encrypted to protect its contents.",
+        "ko": "메시지는 내용을 보호하기 위해 암호화되었다."
+      }
+    },
+    {
+      "word": "decode",
+      "pronunciation": "[diːkóud]",
+      "partOfSpeech": "v.",
+      "meaning": "해독하다",
+      "example": {
+        "en": "The spy was unable to decode the secret message.",
+        "ko": "그 스파이는 비밀 메시지를 해독할 수 없었다."
+      }
+    },
+    {
+      "word": "transmit",
+      "pronunciation": "[trænsmít]",
+      "partOfSpeech": "v.",
+      "meaning": "전송하다, 보내다",
+      "example": {
+        "en": "The radio station transmits signals across the country.",
+        "ko": "그 라디오 방송국은 전국에 신호를 전송한다."
+      }
+    },
+    {
+      "word": "bandwidth",
+      "pronunciation": "[bǽndwìdθ]",
+      "partOfSpeech": "n.",
+      "meaning": "(데이터) 대역폭",
+      "example": {
+        "en": "We need more bandwidth to support video streaming.",
+        "ko": "비디오 스트리밍을 지원하려면 더 많은 대역폭이 필요하다."
+      }
+    },
+    {
+      "word": "processor",
+      "pronunciation": "[prάsesər]",
+      "partOfSpeech": "n.",
+      "meaning": "(컴퓨터의) 처리 장치, 프로세서",
+      "example": {
+        "en": "The new laptop has a faster processor.",
+        "ko": "새 노트북은 더 빠른 프로세서를 가지고 있다."
+      }
+    },
+    {
+      "word": "neural",
+      "pronunciation": "[njúərəl]",
+      "partOfSpeech": "a.",
+      "meaning": "신경의",
+      "example": {
+        "en": "Neural networks are a key component of artificial intelligence.",
+        "ko": "신경망은 인공 지능의 핵심 구성 요소이다."
+      }
+    },
+    {
+      "word": "simulation",
+      "pronunciation": "[sìmjuléiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "시뮬레이션, 모의실험",
+      "example": {
+        "en": "Pilots train in a flight simulation to prepare for emergencies.",
+        "ko": "조종사들은 비상사태에 대비하기 위해 비행 시뮬레이션으로 훈련한다."
+      }
+    },
+    {
+      "word": "virtual",
+      "pronunciation": "[və́ːrʧuəl]",
+      "partOfSpeech": "a.",
+      "meaning": "가상의",
+      "example": {
+        "en": "Virtual reality technology creates immersive experiences.",
+        "ko": "가상 현실 기술은 몰입형 경험을 만들어낸다."
+      }
+    },
+    {
+      "word": "digital",
+      "pronunciation": "[dídʒitl]",
+      "partOfSpeech": "a.",
+      "meaning": "디지털의",
+      "example": {
+        "en": "Most music is now stored in a digital format.",
+        "ko": "대부분의 음악은 이제 디지털 형식으로 저장된다."
+      }
+    },
+    {
+      "word": "analog",
+      "pronunciation": "[ǽnəlɔ̀ːg]",
+      "partOfSpeech": "a.",
+      "meaning": "아날로그의",
+      "example": {
+        "en": "An analog clock has hands that move around a dial.",
+        "ko": "아날로그시계는 다이얼 주위를 움직이는 바늘을 가지고 있다."
+      }
+    },
+    {
+      "word": "circuit",
+      "pronunciation": "[sə́ːrkit]",
+      "partOfSpeech": "n.",
+      "meaning": "회로",
+      "example": {
+        "en": "An integrated circuit contains millions of tiny transistors.",
+        "ko": "집적 회로는 수백만 개의 작은 트랜지스터를 포함한다."
+      }
+    },
+    {
+      "word": "semiconductor",
+      "pronunciation": "[sèmikəndʌ́ktər]",
+      "partOfSpeech": "n.",
+      "meaning": "반도체",
+      "example": {
+        "en": "Silicon is a key material used in semiconductors.",
+        "ko": "실리콘은 반도체에 사용되는 핵심 재료이다."
+      }
+    },
+    {
+      "word": "laser",
+      "pronunciation": "[léizər]",
+      "partOfSpeech": "n.",
+      "meaning": "레이저",
+      "example": {
+        "en": "Lasers are used in many applications, from surgery to barcode scanners.",
+        "ko": "레이저는 수술에서 바코드 스캐너에 이르기까지 많은 응용 분야에서 사용된다."
+      }
+    },
+    {
+      "word": "satellite",
+      "pronunciation": "[sǽtəlàit]",
+      "partOfSpeech": "n.",
+      "meaning": "(인공)위성",
+      "example": {
+        "en": "The satellite orbits the Earth, transmitting data.",
+        "ko": "그 위성은 데이터를 전송하며 지구 궤도를 돈다."
+      }
+    },
+    {
+      "word": "biotechnology",
+      "pronunciation": "[ˌbaɪoʊtekˈnɑːlədʒi]",
+      "partOfSpeech": "noun",
+      "meaning": "생명공학, 생물공학",
+      "example": {
+        "en": "The biotechnology firm developed a groundbreaking treatment for genetic disorders.",
+        "ko": "이 생명공학 회사는 유전적 질환에 대한 획기적인 치료법을 개발했다."
+      }
+    },
+    {
+      "word": "algorithmic",
+      "pronunciation": "[ˌælɡəˈrɪðmɪk]",
+      "partOfSpeech": "adjective",
+      "meaning": "알고리즘의, 계산 절차적인",
+      "example": {
+        "en": "The algorithmic approach to problem-solving has become essential in modern software development.",
+        "ko": "문제 해결을 위한 알고리즘적 접근은 현대 소프트웨어 개발에서 필수적이 되었다."
+      }
+    },
+    {
+      "word": "Nanotechnology",
+      "pronunciation": "/ˌnænoʊtɛkˈnɑːlədʒi/",
+      "partOfSpeech": "n.",
+      "meaning": "나노스케일(약 1~100 nm)에서 물질을 조작·응용하여 새로운 특성을 지닌 재료와 장치를 만드는 기술.",
+      "example": {
+        "en": "Using nanotechnology, researchers engineered a coating that makes solar panels more efficient.",
+        "ko": "나노기술을 이용해 연구진은 태양광 패널의 효율을 높이는 코팅을 개발했다."
+      }
+    }
+  ]
+}

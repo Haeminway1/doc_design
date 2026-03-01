@@ -1,0 +1,506 @@
+{
+  "bookId": "vocab-basic",
+  "day": 26,
+  "theme": "강화와 약화 (Strengthening and Weakening)",
+  "words": [
+    {
+      "word": "intensify",
+      "pronunciation": "[inténsəfài]",
+      "partOfSpeech": "v.",
+      "meaning": "(강도·정도 등이) 심해지다, 강화하다",
+      "example": {
+        "en": "The storm is expected to intensify as it moves north.",
+        "ko": "폭풍은 북상하면서 더 심해질 것으로 예상된다."
+      }
+    },
+    {
+      "word": "heighten",
+      "pronunciation": "[háitn]",
+      "partOfSpeech": "v.",
+      "meaning": "(감정·효과를) 고조시키다, 증대시키다",
+      "example": {
+        "en": "The dramatic music heightened the tension in the scene.",
+        "ko": "극적인 음악은 그 장면의 긴장감을 고조시켰다."
+      }
+    },
+    {
+      "word": "augment",
+      "pronunciation": "[ɔːgmént]",
+      "partOfSpeech": "v.",
+      "meaning": "(격식) 늘리다, 증대시키다",
+      "example": {
+        "en": "He augmented his income by working a second job.",
+        "ko": "그는 부업을 해서 수입을 늘렸다."
+      }
+    },
+    {
+      "word": "magnify",
+      "pronunciation": "[mǽgnəfài]",
+      "partOfSpeech": "v.",
+      "meaning": "확대하다; 과장하다",
+      "example": {
+        "en": "A microscope can magnify objects a thousand times.",
+        "ko": "현미경은 물체를 1000배까지 확대할 수 있다."
+      }
+    },
+    {
+      "word": "amplify",
+      "pronunciation": "[ǽmpləfài]",
+      "partOfSpeech": "v.",
+      "meaning": "(소리·이야기 등을) 증폭시키다, 확대하다",
+      "example": {
+        "en": "The microphone is used to amplify the speaker's voice.",
+        "ko": "마이크는 연설자의 목소리를 증폭시키는 데 사용된다."
+      }
+    },
+    {
+      "word": "escalate",
+      "pronunciation": "[éskəlèit]",
+      "partOfSpeech": "v.",
+      "meaning": "(싸움·문제 등이) 확대되다, 악화되다",
+      "example": {
+        "en": "The protest could escalate into a full-blown riot.",
+        "ko": "그 시위는 전면적인 폭동으로 확대될 수 있다."
+      }
+    },
+    {
+      "word": "consolidate",
+      "pronunciation": "[kənsάlədèit]",
+      "partOfSpeech": "v.",
+      "meaning": "(권력·지위 등을) 굳히다, 강화하다; 통합하다",
+      "example": {
+        "en": "The company consolidated its position as the market leader.",
+        "ko": "그 회사는 시장 선두 주자로서의 지위를 굳혔다."
+      }
+    },
+    {
+      "word": "solidify",
+      "pronunciation": "[səlídəfài]",
+      "partOfSpeech": "v.",
+      "meaning": "굳히다, 확고히 하다; 굳어지다",
+      "example": {
+        "en": "The team's victory helped to solidify their lead in the league.",
+        "ko": "그 팀의 승리는 리그에서의 선두를 굳히는 데 도움이 되었다."
+      }
+    },
+    {
+      "word": "sustain",
+      "pronunciation": "[səstéin]",
+      "partOfSpeech": "v.",
+      "meaning": "(필요한 것을 제공하여) 살아가게 하다, 지속시키다; (피해를) 입다",
+      "example": {
+        "en": "It's hard to sustain a high level of performance for a long time.",
+        "ko": "오랜 시간 동안 높은 수준의 성과를 유지하는 것은 어렵다."
+      }
+    },
+    {
+      "word": "maintain",
+      "pronunciation": "[meintéin]",
+      "partOfSpeech": "v.",
+      "meaning": "유지하다, 지속하다; 주장하다",
+      "example": {
+        "en": "It is important to maintain a healthy diet.",
+        "ko": "건강한 식단을 유지하는 것이 중요하다."
+      }
+    },
+    {
+      "word": "preserve",
+      "pronunciation": "[prizə́ːrv]",
+      "partOfSpeech": "v.",
+      "meaning": "보존하다, 보호하다",
+      "example": {
+        "en": "We must work to preserve the natural environment.",
+        "ko": "우리는 자연환경을 보존하기 위해 노력해야 한다."
+      }
+    },
+    {
+      "word": "prop up",
+      "partOfSpeech": "phr.",
+      "meaning": "~을 지지하다, 받치다",
+      "example": {
+        "en": "The government had to prop up the failing bank.",
+        "ko": "정부는 실패해가는 은행을 지원해야 했다."
+      }
+    },
+    {
+      "word": "weaken",
+      "pronunciation": "[wíːkən]",
+      "partOfSpeech": "v.",
+      "meaning": "약화시키다, 약해지다",
+      "example": {
+        "en": "The long illness has weakened him.",
+        "ko": "오랜 질병이 그를 쇠약하게 만들었다."
+      }
+    },
+    {
+      "word": "sap",
+      "pronunciation": "[sæp]",
+      "partOfSpeech": "v.\n       \n        n.",
+      "meaning": "(체력·자신감 등을) 약화시키다, 차츰 무너뜨리다\n       \n        수액",
+      "example": {
+        "en": "The long journey sapped all his energy.",
+        "ko": "긴 여정은 그의 모든 에너지를 소진시켰다."
+      }
+    },
+    {
+      "word": "cripple",
+      "pronunciation": "[krípl]",
+      "partOfSpeech": "v.",
+      "meaning": "심각한 손상을 주다, 불구로 만들다",
+      "example": {
+        "en": "The sanctions have crippled the country's economy.",
+        "ko": "그 제재는 그 나라의 경제를 심각하게 손상시켰다."
+      }
+    },
+    {
+      "word": "debilitate",
+      "pronunciation": "[dibílətèit]",
+      "partOfSpeech": "v.",
+      "meaning": "(사람·조직 등을) 심하게 쇠약하게 하다",
+      "example": {
+        "en": "The disease can debilitate the patient for weeks.",
+        "ko": "그 질병은 환자를 몇 주 동안 쇠약하게 할 수 있다."
+      }
+    },
+    {
+      "word": "enervate",
+      "pronunciation": "[énərvèit]",
+      "partOfSpeech": "v.",
+      "meaning": "기력을 떨어뜨리다, 무기력하게 하다",
+      "example": {
+        "en": "The hot weather enervated everyone.",
+        "ko": "더운 날씨는 모두의 기력을 떨어뜨렸다."
+      }
+    },
+    {
+      "word": "attenuate",
+      "pronunciation": "[əténjuèit]",
+      "partOfSpeech": "v.",
+      "meaning": "(격식) 약화시키다, 희석시키다",
+      "example": {
+        "en": "The medicine will attenuate the symptoms of the fever.",
+        "ko": "그 약은 열의 증상을 완화시킬 것이다."
+      }
+    },
+    {
+      "word": "diminish",
+      "pronunciation": "[dəmíniʃ]",
+      "partOfSpeech": "v.",
+      "meaning": "줄어들다, 약화시키다",
+      "example": {
+        "en": "The drug's effectiveness diminishes over time.",
+        "ko": "그 약의 효과는 시간이 지나면서 줄어든다."
+      }
+    },
+    {
+      "word": "lessen",
+      "pronunciation": "[lésn]",
+      "partOfSpeech": "v.",
+      "meaning": "(크기·강도 등이) 줄다, 줄이다",
+      "example": {
+        "en": "The new measures are designed to lessen the impact of the crisis.",
+        "ko": "새로운 조치들은 위기의 영향을 줄이도록 고안되었다."
+      }
+    },
+    {
+      "word": "reduce",
+      "pronunciation": "[ridúːs]",
+      "partOfSpeech": "v.",
+      "meaning": "줄이다, 축소하다",
+      "example": {
+        "en": "We need to reduce our spending.",
+        "ko": "우리는 지출을 줄여야 한다."
+      }
+    },
+    {
+      "word": "decrease",
+      "pronunciation": "[diːkríːs]",
+      "partOfSpeech": "v.\n       \n        n.",
+      "meaning": "감소하다, 줄이다\n       \n        [díːkriːs] 감소",
+      "example": {
+        "en": "The number of students has decreased this year.",
+        "ko": "올해 학생 수가 감소했다."
+      }
+    },
+    {
+      "word": "dwindle",
+      "pronunciation": "[dwíndl]",
+      "partOfSpeech": "v.",
+      "meaning": "(점점) 줄어들다",
+      "example": {
+        "en": "The town's population has dwindled over the years.",
+        "ko": "그 도시의 인구는 수년에 걸쳐 점점 줄어들었다."
+      }
+    },
+    {
+      "word": "wane",
+      "pronunciation": "[wein]",
+      "partOfSpeech": "v.",
+      "meaning": "약해지다, 시들해지다; (달이) 이지러지다",
+      "example": {
+        "en": "Her enthusiasm for the project began to wane.",
+        "ko": "그 프로젝트에 대한 그녀의 열정이 시들해지기 시작했다."
+      }
+    },
+    {
+      "word": "fade",
+      "pronunciation": "[feid]",
+      "partOfSpeech": "v.",
+      "meaning": "(색·빛 등이) 희미해지다, 사라지다",
+      "example": {
+        "en": "The bright colors of the flag had faded in the sun.",
+        "ko": "깃발의 선명한 색깔이 햇볕에 바래 있었다."
+      }
+    },
+    {
+      "word": "subside",
+      "pronunciation": "[səbsáid]",
+      "partOfSpeech": "v.",
+      "meaning": "(폭풍·감정 등이) 가라앉다, 진정되다",
+      "example": {
+        "en": "The pain should subside in a few hours.",
+        "ko": "통증은 몇 시간 안에 가라앉을 것입니다."
+      }
+    },
+    {
+      "word": "abate",
+      "pronunciation": "[əbéit]",
+      "partOfSpeech": "v.",
+      "meaning": "(격식) (강도가) 약해지다, 수그러들다",
+      "example": {
+        "en": "We waited for the storm to abate before we left.",
+        "ko": "우리는 떠나기 전에 폭풍이 잦아들기를 기다렸다."
+      }
+    },
+    {
+      "word": "moderate",
+      "pronunciation": "[mάdərèit]",
+      "partOfSpeech": "v.\n       \n        a.",
+      "meaning": "완화하다, 조절하다\n       \n        [mάdərət] 보통의, 온건한",
+      "example": {
+        "en": "The government took steps to moderate the effects of the recession.",
+        "ko": "정부는 경기 후퇴의 영향을 완화하기 위한 조치를 취했다."
+      }
+    },
+    {
+      "word": "alleviate",
+      "pronunciation": "[əlíːvièit]",
+      "partOfSpeech": "v.",
+      "meaning": "(고통·문제를) 완화하다, 경감하다",
+      "example": {
+        "en": "This medicine will help alleviate your pain.",
+        "ko": "이 약은 당신의 통증을 완화하는 데 도움이 될 것입니다."
+      }
+    },
+    {
+      "word": "relieve",
+      "pronunciation": "[rilíːv]",
+      "partOfSpeech": "v.",
+      "meaning": "(고통·불안 등을) 덜어주다, 완화하다",
+      "example": {
+        "en": "The drug is used to relieve pain.",
+        "ko": "그 약은 통증을 덜어주는 데 사용된다."
+      }
+    },
+    {
+      "word": "mitigate",
+      "pronunciation": "[mítəgèit]",
+      "partOfSpeech": "v.",
+      "meaning": "(격식) (고통·영향을) 완화시키다, 경감시키다",
+      "example": {
+        "en": "The company took action to mitigate the environmental damage.",
+        "ko": "그 회사는 환경 피해를 완화하기 위한 조치를 취했다."
+      }
+    },
+    {
+      "word": "soothe",
+      "pronunciation": "[suːð]",
+      "partOfSpeech": "v.",
+      "meaning": "(고통·감정을) 달래다, 진정시키다",
+      "example": {
+        "en": "The mother tried to soothe her crying baby.",
+        "ko": "엄마는 우는 아기를 달래려고 노력했다."
+      }
+    },
+    {
+      "word": "appease",
+      "pronunciation": "[əpíːz]",
+      "partOfSpeech": "v.",
+      "meaning": "(요구를 들어주어) 달래다, 진정시키다",
+      "example": {
+        "en": "They tried to appease the angry protesters.",
+        "ko": "그들은 성난 시위자들을 달래려고 노력했다."
+      }
+    },
+    {
+      "word": "placate",
+      "pronunciation": "[pléikeit]",
+      "partOfSpeech": "v.",
+      "meaning": "(화를) 달래다, 진정시키다",
+      "example": {
+        "en": "He tried to placate his angry wife with a bouquet of flowers.",
+        "ko": "그는 꽃다발로 화난 아내를 달래려고 했다."
+      }
+    },
+    {
+      "word": "mollify",
+      "pronunciation": "[mάləfài]",
+      "partOfSpeech": "v.",
+      "meaning": "(사람을) 달래다, 진정시키다",
+      "example": {
+        "en": "The manager's apology did little to mollify the angry customer.",
+        "ko": "관리자의 사과는 화난 고객을 달래는 데 거의 도움이 되지 않았다."
+      }
+    },
+    {
+      "word": "pacify",
+      "pronunciation": "[pǽsəfài]",
+      "partOfSpeech": "v.",
+      "meaning": "(화난 사람을) 진정시키다, 달래다",
+      "example": {
+        "en": "It was difficult to pacify the screaming child.",
+        "ko": "소리 지르는 아이를 진정시키는 것은 어려웠다."
+      }
+    },
+    {
+      "word": "allay",
+      "pronunciation": "[əléi]",
+      "partOfSpeech": "v.",
+      "meaning": "(두려움·걱정 등을) 가라앉히다, 완화하다",
+      "example": {
+        "en": "The doctor tried to allay the patient's fears.",
+        "ko": "의사는 환자의 두려움을 가라앉히려고 노력했다."
+      }
+    },
+    {
+      "word": "quell",
+      "pronunciation": "[kwel]",
+      "partOfSpeech": "v.",
+      "meaning": "(반란·감정 등을) 진압하다, 가라앉히다",
+      "example": {
+        "en": "The police were called to quell the riot.",
+        "ko": "폭동을 진압하기 위해 경찰이 출동했다."
+      }
+    },
+    {
+      "word": "suppress",
+      "pronunciation": "[səprés]",
+      "partOfSpeech": "v.",
+      "meaning": "(감정·반란 등을) 억누르다, 진압하다",
+      "example": {
+        "en": "She struggled to suppress her anger.",
+        "ko": "그녀는 분노를 억누르려고 애썼다."
+      }
+    },
+    {
+      "word": "curb",
+      "pronunciation": "[kəːrb]",
+      "partOfSpeech": "v.\n       \n        n.",
+      "meaning": "억제하다, 제한하다\n       \n        억제; 도로 경계석",
+      "example": {
+        "en": "The government is trying to curb inflation.",
+        "ko": "정부는 인플레이션을 억제하려고 노력하고 있다."
+      }
+    },
+    {
+      "word": "vitiate",
+      "pronunciation": "[ˈvɪʃieɪt]",
+      "partOfSpeech": "verb",
+      "meaning": "약화시키다, 손상시키다",
+      "example": {
+        "en": "Corruption vitiated the effectiveness of the aid program.",
+        "ko": "부패가 원조 프로그램의 효과를 약화시켰다."
+      }
+    },
+    {
+      "word": "invigorate",
+      "pronunciation": "[ɪnˈvɪɡəreɪt]",
+      "partOfSpeech": "verb",
+      "meaning": "활기를 불어넣다, 강화하다",
+      "example": {
+        "en": "The new leadership invigorated the company's innovation efforts.",
+        "ko": "새로운 리더십이 회사의 혁신 노력에 활기를 불어넣었다."
+      }
+    },
+    {
+      "word": "enfeeble",
+      "pronunciation": "[ɪnˈfiːbəl]",
+      "partOfSpeech": "verb",
+      "meaning": "약화시키다, 쇠약하게 만들다",
+      "example": {
+        "en": "Years of poor nutrition had enfeebled his body.",
+        "ko": "수년간의 영양 부족이 그의 신체를 쇠약하게 만들었다."
+      }
+    },
+    {
+      "word": "undercut",
+      "pronunciation": "/ˌʌn.dɚˈkʌt/",
+      "partOfSpeech": "v.",
+      "meaning": "효과·권위·지위를 약화시키다",
+      "example": {
+        "en": "Constant budget cuts undercut the agency’s ability to respond quickly.",
+        "ko": "지속적인 예산 삭감은 기관의 신속한 대응 능력을 약화시켰다."
+      }
+    },
+    {
+      "word": "galvanize",
+      "pronunciation": "/ˈɡæl.və.naɪz/",
+      "partOfSpeech": "v.",
+      "meaning": "자극이나 충격을 주어 행동에 나서게 하다",
+      "example": {
+        "en": "The crisis galvanized public support for sweeping reforms.",
+        "ko": "그 위기는 대대적인 개혁을 위한 대중의 지지를 촉발했다."
+      }
+    },
+    {
+      "word": "toughen",
+      "pronunciation": "/ˈtʌfən/",
+      "partOfSpeech": "v.",
+      "meaning": "더 강하고 회복력 있거나 더 엄격·혹독한 상태로 만들거나 그렇게 변하다",
+      "example": {
+        "en": "Grueling drills toughened the team before the championship.",
+        "ko": "혹독한 훈련이 결승전을 앞둔 팀을 단련했다."
+      }
+    },
+    {
+      "word": "harden",
+      "pronunciation": "/ˈhɑːrdn/",
+      "partOfSpeech": "v.",
+      "meaning": "굳게 하거나 굳어지다; 태도나 결심을 더욱 완강하게 하다",
+      "example": {
+        "en": "The crisis hardened public opinion against the policy.",
+        "ko": "그 위기로 인해 여론이 그 정책에 더욱 완강해졌다."
+      }
+    },
+    {
+      "word": "cement",
+      "pronunciation": "/sɪˈment/",
+      "partOfSpeech": "v.",
+      "meaning": "관계·합의·지위를 공고히 하다",
+      "example": {
+        "en": "The breakthrough victory cemented her reputation as a leader.",
+        "ko": "그 획기적인 승리가 그녀의 리더로서의 명성을 굳혔다."
+      }
+    },
+    {
+      "word": "embolden",
+      "pronunciation": "/ɪmˈboʊldən/",
+      "partOfSpeech": "v.",
+      "meaning": "누군가에게 어떤 일을 하도록 용기나 자신감을 북돋우다",
+      "example": {
+        "en": "Early success emboldened investors to take bigger risks.",
+        "ko": "초기의 성공이 투자자들로 하여금 더 큰 위험을 감수하도록 대담하게 만들었다."
+      }
+    },
+    {
+      "word": "steel",
+      "pronunciation": "/stiːl/",
+      "partOfSpeech": "v.",
+      "meaning": "어려운 일을 앞두고 마음을 굳게 먹다",
+      "example": {
+        "en": "He steeled himself for the difficult conversation with his boss.",
+        "ko": "그는 상사와의 어려운 대화를 대비해 마음을 단단히 먹었다."
+      }
+    }
+  ]
+}

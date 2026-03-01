@@ -1,0 +1,2676 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- =================================================================== -->
+    <!-- 문서 기본 설정                                                        -->
+    <!-- =================================================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vera's Flavor 편입영어 문법 - Bridge 편 part 2</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- =================================================================== -->
+    <!-- CSS 스타일: 교재의 전체 디자인을 정의합니다.                         -->
+    <!-- =================================================================== -->
+    <style>
+        /* --- 기본 페이지 및 폰트 설정 --- */
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background: #e8e9eb; /* 페이지 외부 배경색 */
+            counter-reset: page; /* 자동 페이지 번호 카운터 초기화 */
+        }
+        .eng-text { font-family: 'Inter', sans-serif; }
+        .serif-text { font-family: 'Playfair Display', serif; }
+        .bold-text { font-weight: 700; }
+
+        /* --- 색상 변수 (표지 이미지 기반) --- */
+        :root {
+            --color-sea-blue: #6C96C6;      /* 바다색 */
+            --color-deep-blue: #345C85;     /* 깊은 바다색 */
+            --color-sandy-beige: #F2C994;   /* 모래색 */
+            --color-warm-orange: #E9A266;   /* 고양이색 */
+            --color-text-dark: #3D4852;     /* 기본 텍스트 색상 */
+            --color-text-light: #718096;    /* 보조 텍스트 색상 */
+            --color-bg-light: #FDFBF6;      /* 밝은 배경색 */
+            --color-border: #EAEAEA;        /* 테두리 색상 */
+        }
+
+        /* --- A4 페이지 레이아웃 --- */
+        .page {
+            width: 210mm;
+            height: 297mm;
+            margin: 10mm auto;
+            padding: 15mm 18mm;
+            background: white;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            page-break-after: always;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        .page:last-child {
+            page-break-after: avoid;
+        }
+        .page-content {
+            flex-grow: 1;
+            overflow: hidden;
+            font-size: 11pt;
+            line-height: 1.8;
+            color: var(--color-text-dark);
+        }
+
+        /* --- 페이지 헤더 & 푸터 --- */
+        .page-header, .page-footer {
+            width: 100%;
+            flex-shrink: 0;
+            font-size: 9pt;
+            color: var(--color-text-light);
+            font-family: 'Inter', sans-serif;
+        }
+        .page-header {
+            border-bottom: 1px solid var(--color-border);
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            color: var(--color-deep-blue);
+            font-weight: 500;
+        }
+        .page-footer {
+            border-top: 1px solid var(--color-border);
+            padding-top: 8px;
+            margin-top: 12px;
+            text-align: center;
+        }
+        
+        /* 자동 페이지 번호 생성 */
+        .page-footer::after {
+            counter-increment: page;
+            content: counter(page);
+        }
+        
+        /* 특정 페이지 헤더/푸터 숨기기 */
+        .no-header-footer { padding: 0; }
+        .no-header-footer .page-header,
+        .no-header-footer .page-footer,
+        .cover-page .page-footer::after,
+        .part-intro-page .page-footer::after,
+        .toc-page .page-header,
+        .chapter-page .page-header {
+            display: none;
+        }
+        .part-intro-page .page-header,
+        .part-intro-page .page-footer {
+            border: none;
+        }
+
+        /* =================================================================== */
+        /* 세련된 표지 디자인 (2025 트렌드)                                    */
+        /* =================================================================== */
+        .cover-page {
+            color: white;
+            overflow: hidden;
+            background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 50%, #0369a1 100%);
+            background-image: url('../../background/backgroundGMBR.png'); /* 이미지 경로 수정 필요 */
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: soft-light;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .cover-text-box {
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, 0.9);
+            padding: 25mm 30mm 20mm 30mm;
+            border-radius: 0;
+            text-align: center;
+            color: white;
+            max-width: 150mm;
+            position: relative;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            margin-bottom: 20mm;
+        }
+
+        .cover-text-box .cover-prefix {
+            font-family: 'Inter', sans-serif;
+            font-size: 18pt;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 8mm;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .cover-text-box .cover-main-title {
+            font-family: 'Inter', sans-serif;
+            font-size: 48pt;
+            font-weight: 800;
+            line-height: 0.95;
+            margin-bottom: 8mm;
+            color: white;
+            letter-spacing: -1px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .cover-text-box .cover-edition {
+            font-family: 'Inter', sans-serif;
+            font-size: 16pt;
+            font-weight: 600;
+            color: #fbbf24; /* 밝은 포인트 색상 (골드) */
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .cover-footer {
+            position: absolute;
+            bottom: 15mm;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+            font-size: 11pt;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.9);
+            text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+            letter-spacing: 0.5px;
+        }
+
+        .cover-text-box::before {
+            content: '';
+            position: absolute;
+            top: 15mm;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40mm;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent);
+        }
+
+        .cover-text-box::after {
+            content: '';
+            position: absolute;
+            bottom: 35mm;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 25mm;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #fbbf24, transparent);
+        }
+
+
+        /* =================================================================== */
+        /* 목차 (TOC) 페이지 스타일                                            */
+        /* =================================================================== */
+        .toc-header { 
+            font-family: 'Inter', sans-serif; 
+            font-size: 20pt; 
+            font-weight: 700; 
+            color: var(--color-deep-blue); 
+            margin-bottom: 20px; 
+            padding-bottom: 10px; 
+            border-bottom: 2px solid var(--color-sea-blue); 
+            text-align: center;
+            letter-spacing: 2px;
+        }
+        .toc-list { 
+            list-style: none; 
+            padding-left: 0; 
+            font-size: 11pt; 
+            line-height: 2.5; 
+        }
+        .toc-item { 
+            display: flex; 
+            align-items: baseline; 
+            margin-bottom: 8px; 
+            border-bottom: 1px solid var(--color-border);
+            padding-bottom: 8px;
+        }
+        .toc-item .title { 
+            order: 1; 
+            white-space: nowrap; 
+            padding-right: 8px;
+            color: var(--color-text-dark);
+        }
+        .toc-item .title b {
+            color: var(--color-deep-blue);
+            font-weight: 700;
+        }
+        .toc-item .dots { 
+            order: 2; 
+            flex-grow: 1; 
+            border-bottom: 1px dotted var(--color-text-light); 
+            position: relative; 
+            top: -4px; 
+        }
+        .toc-item .page-num { 
+            order: 3; 
+            padding-left: 8px; 
+            font-family: 'Inter', sans-serif; 
+            font-weight: 600;
+            color: var(--color-sea-blue);
+        }
+        .toc-part-title { 
+            font-family: 'Inter', sans-serif; 
+            font-size: 14pt; 
+            font-weight: 700; 
+            color: var(--color-warm-orange); 
+            margin-top: 25px; 
+            margin-bottom: 10px; 
+            border-left: 4px solid var(--color-sandy-beige); 
+            padding-left: 12px; 
+        }
+
+        /* =================================================================== */
+        /* 파트 소개 페이지 스타일                                               */
+        /* =================================================================== */
+        .part-intro-page {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .part-intro-container {
+            padding: 20mm;
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            background-color: var(--color-bg-light);
+            max-width: 170mm;
+            text-align: center;
+        }
+        .part-intro-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 24pt;
+            color: var(--color-sandy-beige);
+            margin-bottom: 10px;
+        }
+        .part-intro-title {
+            font-size: 36pt;
+            font-weight: 900;
+            color: var(--color-deep-blue);
+            margin-bottom: 15px;
+        }
+        .part-intro-subtitle {
+            font-family: 'Inter', sans-serif;
+            font-size: 14pt;
+            color: var(--color-sea-blue);
+            margin-bottom: 20px;
+        }
+        .part-intro-divider {
+            width: 80px;
+            height: 3px;
+            background-color: var(--color-warm-orange);
+            margin: 0 auto 20px auto;
+            border: none;
+        }
+        .part-intro-description {
+            max-width: 140mm;
+            font-size: 11pt;
+            line-height: 1.9;
+            color: var(--color-text-dark);
+            text-align: justify;
+            margin: 0 auto;
+        }
+
+        /* =================================================================== */
+        /* 본문 콘텐츠 스타일                                                  */
+        /* =================================================================== */
+        .part-header { 
+            color: white; 
+            margin: 0 0 25px 0; 
+            padding: 15px 20px; 
+            font-size: 18pt; 
+            font-weight: 700; 
+            display: flex; 
+            align-items: center; 
+            background: linear-gradient(135deg, var(--color-deep-blue), var(--color-sea-blue)); 
+            border-radius: 8px; 
+            box-shadow: 0 4px 15px rgba(52, 92, 133, 0.2);
+        }
+        .part-number { 
+            font-family: 'Inter', sans-serif;
+            background: rgba(255,255,255,0.15); 
+            padding: 8px 14px; 
+            border-radius: 6px; 
+            font-weight: 700; 
+            font-size: 12pt;
+            min-width: 60px; 
+            text-align: center; 
+            margin-right: 15px; 
+        }
+        .section-title { 
+            font-family: 'Inter', sans-serif; 
+            font-size: 14pt; 
+            font-weight: 700; 
+            color: var(--color-deep-blue); 
+            margin: 25px 0 15px 0; 
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--color-sandy-beige);
+        }
+        .section-title .emoji { margin-right: 10px; }
+        .first-in-page { margin-top: 0; }
+        .content-paragraph { margin-bottom: 12px; }
+        
+        .grammar-table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin: 20px 0; 
+            font-size: 10.5pt; 
+        }
+        .grammar-table th, .grammar-table td { 
+            border: 1px solid var(--color-border); 
+            padding: 10px 12px; 
+            text-align: left; 
+            vertical-align: top;
+        }
+        .grammar-table th { 
+            background-color: var(--color-bg-light); 
+            font-weight: 700; 
+            color: var(--color-deep-blue); 
+        }
+        .grammar-table td code {
+            font-family: 'Inter', sans-serif;
+            background-color: #e8e9eb;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-size: 9.5pt;
+        }
+        
+        /* 특정 테이블 전용 스타일 */
+        .comparison-table th:first-child,
+        .comparison-table td:first-child {
+            width: 22%;
+            white-space: nowrap;
+        }
+
+        code {
+            font-family: 'Inter', sans-serif;
+            color: var(--color-deep-blue);
+            background-color: #f2f4f8;
+            border: 1px solid var(--color-border);
+            padding: 2px 6px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+        
+        .tip-box { 
+            background: var(--color-bg-light); 
+            border: 1px solid var(--color-sandy-beige); 
+            border-left: 5px solid var(--color-warm-orange); 
+            border-radius: 0 6px 6px 0; 
+            padding: 15px 20px; 
+            margin: 20px 0; 
+            font-size: 10.5pt; 
+        }
+        .tip-box-title { 
+            font-weight: 700; 
+            color: var(--color-warm-orange); 
+            margin-bottom: 8px; 
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .example-list {
+            list-style-type: '✓ ';
+            padding-left: 20px;
+            margin: 10px 0 15px 0;
+            font-size: 10.5pt;
+        }
+        .example-list li { margin-bottom: 5px; }
+
+        /* =================================================================== */
+        /* 연습 문제 스타일                                                    */
+        /* =================================================================== */
+        .practice-section-header { 
+            font-family: 'Inter', sans-serif; 
+            font-size: 16pt; 
+            font-weight: 700; 
+            color: #fff; 
+            background: var(--color-deep-blue); 
+            padding: 12px 20px; 
+            margin: 20px 0 20px 0; 
+            border-radius: 8px; 
+        }
+        .problem-block { 
+            margin-bottom: 20px; 
+            padding: 15px; 
+            border: 1px solid var(--color-border); 
+            border-left: 4px solid var(--color-sea-blue); 
+            border-radius: 0 5px 5px 0; 
+            background: #fff;
+        }
+        .problem-meta {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .problem-number { 
+            font-family: 'Inter', sans-serif; 
+            font-weight: 700; 
+            color: white;
+            background-color: var(--color-sea-blue);
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            font-size: 11pt;
+        }
+        .problem-text { 
+            font-size: 11pt; 
+            margin-bottom: 12px; 
+            line-height: 1.8;
+        }
+        .problem-text u {
+            text-decoration: underline;
+            text-decoration-color: var(--color-warm-orange);
+            text-decoration-thickness: 1.5px;
+            font-weight: 500;
+        }
+        .problem-question {
+            margin-top: 15px;
+            padding: 12px 15px;
+            background-color: var(--color-bg-light);
+            border: 1px solid var(--color-border);
+            border-left: 4px solid var(--color-warm-orange);
+            border-radius: 0 5px 5px 0;
+            font-size: 10.5pt;
+            font-style: italic;
+            color: var(--color-deep-blue);
+            font-weight: 500;
+        }
+        .problem-choices { 
+            list-style: none; 
+            padding-left: 0; 
+            font-size: 10.5pt; 
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 5px 20px;
+        }
+        .problem-choices li { 
+            margin-bottom: 4px; 
+            padding: 6px 10px; 
+            border-radius: 4px;
+            display: flex;
+            align-items: baseline;
+        }
+        .problem-choices li:hover {
+            background-color: var(--color-bg-light);
+        }
+        .choice-number {
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            color: var(--color-deep-blue);
+            margin-right: 8px;
+        }
+
+        /* =================================================================== */
+        /* 정답 및 해설 스타일                                                 */
+        /* =================================================================== */
+        .answer-key-section .section-title {
+            color: var(--color-warm-orange);
+            border-bottom-color: var(--color-sea-blue);
+        }
+        .quick-answer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(55px, 1fr));
+            gap: 8px;
+            margin: 20px 0;
+            text-align: center;
+            font-size: 10pt;
+            font-family: 'Inter', sans-serif;
+        }
+        .quick-answer-item {
+            padding: 8px;
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            background-color: var(--color-bg-light);
+        }
+        .quick-answer-item .num {
+            font-weight: 700;
+            color: var(--color-text-light);
+        }
+        .quick-answer-item .ans {
+            font-weight: 700;
+            color: var(--color-deep-blue);
+        }
+        .explanation-block {
+            margin-bottom: 15px;
+            padding-top: 15px;
+            border-top: 1px solid var(--color-border);
+        }
+        .explanation-block:first-of-type {
+            border-top: none;
+            padding-top: 0;
+        }
+        .explanation-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .explanation-header .problem-number {
+            background-color: var(--color-warm-orange);
+        }
+        .explanation-header .correct-answer {
+            font-family: 'Inter', sans-serif;
+            font-size: 12pt;
+            font-weight: 700;
+            color: var(--color-deep-blue);
+        }
+        .explanation-content {
+            font-size: 10.5pt;
+            padding: 10px 15px;
+            background-color: var(--color-bg-light);
+            border-radius: 5px;
+        }
+        .explanation-content b {
+            color: var(--color-sea-blue);
+        }
+        
+        /* =================================================================== */
+        /* 유틸리티 및 인쇄 최적화                                             */
+        /* =================================================================== */
+        .avoid-break { break-inside: avoid; page-break-inside: avoid; }
+        
+        @media print { 
+            body { background: #fff; } 
+            .page { margin: 0; box-shadow: none; } 
+        }
+        p, li, div { orphans: 3; widows: 3; }
+        .practice-section-header, .section-title, .part-header { break-after: avoid-page; }
+        .problem-block, .tip-box, .grammar-table { break-inside: avoid; }
+
+    </style>
+</head>
+<body>
+
+    <!-- =================================================================== -->
+    <!-- 표지 페이지                                                         -->
+    <!-- =================================================================== -->
+    <div class="page no-header-footer cover-page">
+        <div class="cover-text-box">
+            <div class="cover-prefix eng-text">vera's flavor</div>
+            <h1 class="cover-main-title">
+                편입영어<br>문법
+            </h1>
+            <div class="cover-edition">bridge 편 - part 2</div>
+        </div>
+        <div class="cover-footer eng-text">verajin LAB</div>
+    </div>
+    <!-- =================================================================== -->
+    <!-- Part 1 소개 페이지                                                    -->
+    <!-- =================================================================== -->
+    <div class="page no-header-footer part-intro-page">
+        <div class="part-intro-container">
+            <div class="part-intro-number eng-text">Part 1</div>
+            <h2 class="part-intro-title">의문사 (Interrogatives)</h2>
+            <h3 class="part-intro-subtitle eng-text">The Art of Asking Questions</h3>
+            <hr class="part-intro-divider">
+            <p class="part-intro-description">
+                의문사(Interrogative)는 문장에서 질문의 핵심 정보를 이끌어내는 품사입니다. '누가, 언제, 어디서, 무엇을, 어떻게, 왜'와 같은 육하원칙의 정보를 물을 때 사용되며, 문장의 종류를 의문문으로 만드는 핵심적인 역할을 합니다. 이 파트에서는 의문사의 종류와 정확한 쓰임을 완벽하게 마스터합니다.
+            </p>
+        </div>
+    </div>
+    <!-- =================================================================== -->
+    <!-- 본문 내용 페이지 시작 (Part 1. 의문사)                              -->
+    <!-- =================================================================== -->
+    <div class="page chapter-page">
+        <div class="page-content">
+            <div class="part-header first-in-page">
+                <span class="part-number eng-text">Part 1</span>
+                <span>의문사 (Interrogatives) - 개념 설명</span>
+            </div>
+
+            <div class="section-title eng-text"><span class="emoji">📖</span>의문사의 기본 개념</div>
+            <p class="content-paragraph">
+                <b>의문사(Interrogative)</b>는 문장에서 질문의 핵심 정보를 나타내는 단어입니다. '누가, 언제, 어디서, 무엇을, 어떻게, 왜'와 같은 육하원칙의 정보를 물어볼 때 사용되며, 문장의 종류를 의문문으로 만드는 핵심적인 역할을 합니다. 의문사는 그 기능과 역할에 따라 크게 <b>의문대명사, 의문형용사, 의문부사</b> 세 가지로 나뉩니다. 이 세 가지를 완벽하게 구분하는 것이 의문사 파트 정복의 첫걸음입니다.
+            </p>
+
+            <h4 style="font-weight:700; color: var(--color-deep-blue); margin-top:20px; margin-bottom: 10px;">1. 의문대명사 (Interrogative Pronoun)</h4>
+            <p class="content-paragraph">
+                <b>역할:</b> 문장 내에서 <b>명사</b>의 역할을 합니다. 즉, 주어(S), 목적어(O), 보어(C) 자리에 위치하여 사람이나 사물에 대한 질문을 던집니다.<br>
+                <b>종류:</b> <code>who</code> (누가), <code>whom</code> (누구를), <code>whose</code> (누구의 것), <code>what</code> (무엇), <code>which</code> (어느 것)<br>
+                <b>특징:</b> 의문대명사 자체로 문장의 한 성분이 되기 때문에, 그 뒤에는 주어나 목적어 등이 빠진 <b>불완전한 문장</b>이 이어집니다.
+            </p>
+            <ul class="example-list" style="margin-top:-5px;">
+                <li><b>Who</b> broke the vase? (누가 꽃병을 깼니?) - <code>Who</code>가 주어(S) 역할</li>
+                <li><b>What</b> do you want? (너는 무엇을 원하니?) - <code>What</code>이 want의 목적어(O) 역할</li>
+                <li><b>Whom</b> did she invite to the party? (그녀는 파티에 누구를 초대했니?) - <code>Whom</code>이 invite의 목적어(O) 역할</li>
+                <li><b>Which</b> is yours, the red one or the blue one? (어느 것이 네 것이니?) - <code>Which</code>가 주어(S) 역할</li>
+            </ul>
+
+            <h4 style="font-weight:700; color: var(--color-deep-blue); margin-top:20px; margin-bottom: 10px;">2. 의문형용사 (Interrogative Adjective)</h4>
+            <p class="content-paragraph">
+                <b>역할:</b> 문장 내에서 <b>형용사</b>의 역할을 합니다. 즉, 반드시 뒤따르는 명사를 수식하여 '어떤 명사', '무슨 명사'인지를 묻습니다.<br>
+                <b>종류:</b> <code>what</code> (무슨), <code>which</code> (어느), <code>whose</code> (누구의)<br>
+                <b>특징:</b> 단독으로 쓰일 수 없으며, 항상 <code>의문형용사 + 명사</code> 덩어리가 하나의 문장 성분으로 함께 움직입니다. 이 덩어리를 제외한 뒷 문장은 완전할 수도, 불완전할 수도 있습니다.
+            </p>
+            <ul class="example-list" style="margin-top:-5px;">
+                <li><b>What color</b> do you like? (너는 무슨 색을 좋아하니?) - <code>What</code>이 <code>color</code>를 수식</li>
+                <li><b>Whose car</b> is parked outside? (밖에 주차된 차는 누구의 차니?) - <code>Whose</code>가 <code>car</code>를 수식</li>
+                <li><b>Which path</b> should we take? (우리는 어느 길로 가야 할까?) - <code>Which</code>가 <code>path</code>를 수식</li>
+            </ul>
+
+            
+
+            
+        </div>
+        <div class="page-footer"></div>
+    </div>
+
+    <div class="page">
+        <div class="page-header">
+            <span class="eng-text">Vera's Flavor - Bridge 편</span>
+            <span>Part 1: 의문사 (Interrogatives)</span>
+        </div>
+        <div class="page-content">
+            <div class="avoid-break">
+                <h4 style="font-weight:700; color: var(--color-deep-blue); margin-top:20px; margin-bottom: 10px;">3. 의문부사 (Interrogative Adverb)</h4>
+                <p class="content-paragraph">
+                    <b>역할:</b> 문장 내에서 <b>부사</b>의 역할을 합니다. 즉, 동사, 형용사, 다른 부사 또는 문장 전체를 수식하며 시간, 장소, 이유, 방법, 정도 등에 대한 질문을 던집니다.<br>
+                    <b>종류:</b> <code>when</code> (언제), <code>where</code> (어디서), <code>why</code> (왜), <code>how</code> (어떻게, 얼마나)<br>
+                    <b>특징:</b> 의문부사는 문장의 필수 성분(주어, 목적어, 보어)이 아니므로, 의문부사 뒤에는 주어, 동사를 갖춘 <b>완전한 문장</b>이 이어집니다.
+                </p>
+                <ul class="example-list mb-md" style="margin-top:-5px;">
+                    <li><b>When</b> did you arrive? (너는 언제 도착했니?) - <code>When</code> 뒤에 <code>you(S) + did arrive(V)</code>의 완전한 구조</li>
+                    <li><b>Why</b> is she crying? (그녀는 왜 울고 있니?) - <code>Why</code> 뒤에 <code>she(S) + is crying(V)</code>의 완전한 구조</li>
+                </ul>
+            </div>
+            <div class="tip-box first-in-page">
+                <div class="tip-box-title eng-text"><span class="emoji">🎯</span>vera's flavor tip</div>
+                <p class="content-paragraph">
+                    편입 문법을 공부하다 보면 헷갈리는 포인트들이 꼭 있죠? vera가 여러분의 학습 효율을 극대화할 꿀팁을 알려드릴게요!
+                </p>
+                
+                <h4 style="font-weight:700; color: var(--color-deep-blue); margin-top:20px; margin-bottom: 10px;">1. `who` vs. `whom` 초간단 구별법: he/him 대입법!</h4>
+                <p style="font-size: 10.5pt;">
+                    `who`는 주격, `whom`은 목적격... 머리로는 알지만 막상 문제에 나오면 헷갈리죠? 이럴 땐 질문에 대한 <b>예상 답변</b>을 생각하고, 그 자리에 <code style="color:var(--color-sea-blue); font-weight:700;">he</code>가 어울리면 `who`, <code style="color:var(--color-warm-orange); font-weight:700;">him</code>이 어울리면 `whom`을 쓰면 99% 해결됩니다!
+                </p>
+                <ul class="example-list">
+                    <li><b>문제:</b> (Who / Whom) did you meet yesterday?<br>
+                        <b>→ 예상 답변:</b> I met <b><span style="color:var(--color-warm-orange);">him</span></b> yesterday. (`him`이 자연스럽죠?) → <b>정답: Whom</b></li>
+                    <li style="margin-top:5px;"><b>문제:</b> (Who / Whom) wrote this novel?<br>
+                        <b>→ 예상 답변:</b> <b><span style="color:var(--color-sea-blue);">He</span></b> wrote this novel. (`he`가 자연스럽죠?) → <b>정답: Who</b></li>
+                </ul>
+
+                <h4 style="font-weight:700; color: var(--color-deep-blue); margin-top:20px; margin-bottom: 10px;">2. 간접의문문 어순, "의주동"만 기억하세요!</h4>
+                <p style="font-size: 10.5pt;">
+                    간접의문문 어순은 편입 시험의 단골 출제 포인트입니다. 헷갈릴 땐 이 주문을 외워보세요. <b>"간접의문문은 평서문 어순을 사랑해! 의! 주! 동!"</b>
+                </p>
+                <ul class="example-list">
+                    <li><b>직접의문문:</b> Where <b>is the library</b>? (동사 + 주어)</li>
+                    <li><b>간접의문문:</b> Can you tell me where <b>the library is</b>? (의문사 + 주어 + 동사)</li>
+                </ul>
+                <p style="font-size: 10.5pt; margin-top: -5px;">
+                    의문문이 다른 문장 속으로 쏙 들어가는 순간, 더 이상 물음표의 주인이 아니게 됩니다. 그래서 얌전하게 평서문(주어+동사)의 옷으로 갈아입는다고 생각하면 절대 잊어버리지 않을 거예요!
+                </p>
+            </div>
+        </div>
+        <div class="page-footer"></div>
+    </div>
+
+    <div class="page">
+        <div class="page-header">
+            <span class="eng-text">Vera's Flavor - Bridge 편</span>
+            <span>Part 1: 의문사 (Interrogatives)</span>
+        </div>
+        <div class="page-content">
+            <div class="section-title eng-text first-in-page"><span class="emoji">📊</span>중요 도표 및 비교표</div>
+            <h4 style="font-weight:700; color: var(--color-deep-blue); margin-top:20px; margin-bottom: 10px;">1. 의문사 종류별 기능 및 예문 비교표</h4>
+            <table class="grammar-table">
+                <thead>
+                    <tr><th style="width:18%;">구분</th><th>의문사</th><th>기능 및 역할</th><th>예문</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><b>의문대명사</b><br><small>(명사 역할)</small></td>
+                        <td><code>who</code><br><code>whom</code><br><code>what</code><br><code>which</code><br><code>whose</code></td>
+                        <td><b>사람(주격)</b><br><b>사람(목적격)</b><br><b>사물/내용</b><br><b>사람/사물(선택)</b><br><b>사람(소유대명사)</b></td>
+                        <td><b>Who</b> called me?<br><b>Whom</b> did you see?<br><b>What</b> happened?<br><b>Which</b> is your favorite?<br><b>Whose</b> is this umbrella?</td>
+                    </tr>
+                    <tr><td><b>의문형용사</b><br><small>(명사 수식)</small></td>
+                        <td><code>what</code><br><code>which</code><br><code>whose</code></td>
+                        <td><b>'무슨'</b> + 명사<br><b>'어느'</b> + 명사<br><b>'누구의'</b> + 명사</td>
+                        <td><b>What time</b> is it now?<br><b>Which way</b> should we go?<br><b>Whose book</b> are you reading?</td>
+                    </tr>
+                    <tr><td><b>의문부사</b><br><small>(부사 역할)</small></td>
+                        <td><code>when</code><br><code>where</code><br><code>why</code><br><code>how</code></td>
+                        <td><b>시간</b> (언제)<br><b>장소</b> (어디서)<br><b>이유</b> (왜)<br><b>방법/정도</b> (어떻게)</td>
+                        <td><b>When</b> does the movie start?<br><b>Where</b> do you live?<br><b>Why</b> did you say that?<br><b>How</b> was your trip?</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4 style="font-weight:700; color: var(--color-deep-blue); margin-top:20px; margin-bottom: 10px;">2. 'what' vs. 'which' 핵심 차이 비교표</h4>
+            <table class="grammar-table comparison-table">
+                <thead><tr><th>구분</th><th><code>what</code></th><th><code>which</code></th></tr></thead>
+                <tbody>
+                    <tr><td><b>선택 범위</b></td><td><b>막연하고 제한 없는</b> 범위</td><td><b>한정되고 명확한</b> 범위 (주로 둘 이상)</td></tr>
+                    <tr><td><b>핵심 뉘앙스</b></td><td>"무엇?" (종류, 정체)</td><td>"어느 것?" (선택)</td></tr>
+                    <tr><td><b>예문<br>(형용사)</b></td><td><b>What sport</b> do you like?<br>(세상의 모든 스포츠 중)</td><td><b>Which sport</b> do you prefer, soccer or baseball? (축구와 야구 중)</td></tr>
+                    <tr><td><b>예문<br>(대명사)</b></td><td><b>What</b> is your favorite food?<br>(세상의 모든 음식 중)</td><td>Here are two options. <b>Which</b> do you want? (두 가지 선택지 중)</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="page-footer"></div>
+    </div>
+
+    <div class="page">
+        <div class="page-header">
+            <span class="eng-text">Vera's Flavor - Bridge 편</span>
+            <span>Part 1: 의문사 (Interrogatives)</span>
+        </div>
+        <div class="page-content">
+            <div class="section-title eng-text first-in-page"><span class="emoji">📚</span>상세 예시</div>
+            <h4 style="font-weight:700; color: var(--color-deep-blue); margin-top:20px; margin-bottom: 10px;">1. 의문대명사 (Who, Whom, Whose, What, Which) 심층 분석</h4>
+            <ul class="example-list">
+                <li><b><code>who</code> (주격: 누가):</b> <b>Who</b> is responsible for this project? / <b>Who</b> ate the last piece of cake?</li>
+                <li><b><code>whom</code> (목적격: 누구를, 누구에게):</b> To <b>whom</b> should I send this package? / The man <b>whom</b> I respect is my father.</li>
+                <li><b><code>whose</code> (소유격/소유대명사: 누구의 / 누구의 것):</b>
+                    <ul style="list-style-type: '- '; padding-left:20px; margin-top:5px; margin-bottom:5px;">
+                        <li><b>Whose jacket</b> is this? (의문형용사)</li>
+                        <li>This pen is mine. <b>Whose</b> is that? (의문대명사)</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h4 style="font-weight:700; color: var(--color-deep-blue); margin-top:20px; margin-bottom: 10px;">2. 의문부사 (When, Where, Why, How) 심층 분석</h4>
+            <p class="content-paragraph">특히 <code>how</code>는 다른 단어와 결합하여 다양한 의미를 만듭니다.</p>
+            <table class="grammar-table" style="font-size:10pt;">
+                <tbody>
+                    <tr><td><code>how long</code> (기간/길이)</td><td><b>How long</b> will the meeting last?</td></tr>
+                    <tr><td><code>how far</code> (거리)</td><td><b>How far</b> is your home from here?</td></tr>
+                    <tr><td><code>how often</code> (빈도)</td><td><b>How often</b> do you go to the gym?</td></tr>
+                    <tr><td><code>how many</code> (+ 복수 가산 명사)</td><td><b>How many</b> students are in your class?</td></tr>
+                    <tr><td><code>how much</code> (+ 불가산 명사)</td><td><b>How much</b> sugar do you need?</td></tr>
+                    <tr><td><code>how come</code> (왜, 어째서 - 구어체)</td><td><b>How come</b> you didn't come to the party? (뒤에 평서문 어순)</td></tr>
+                </tbody>
+            </table>
+            
+            <h4 style="font-weight:700; color: var(--color-deep-blue); margin-top:20px; margin-bottom: 10px;">3. 간접의문문 (Indirect Questions) 완벽 해설</h4>
+            <p class="content-paragraph">간접의문문은 의문문이 다른 문장의 일부(주어, 목적어, 보어)로 사용되는 것을 말합니다. 핵심은 <b>[의문사 + 주어 + 동사]</b> 어순입니다.</p>
+            <ul class="example-list">
+                <li>I don't know <b>what his job is</b>. (직접: What is his job?)</li>
+                <li><b>(주의) `think, believe` 동사와 결합 시:</b> <b>Where</b> do you think <b>he is</b>? (의문사가 문장 맨 앞으로 이동)</li>
+            </ul>
+        </div>
+        <div class="page-footer"></div>
+    </div>
+    
+    <div class="page">
+        <div class="page-header">
+            <span class="eng-text">Vera's Flavor - Bridge 편</span>
+            <span>Part 1: 의문사 (Interrogatives)</span>
+        </div>
+        <div class="page-content">
+            <div class="section-title eng-text first-in-page"><span class="emoji">💡</span>자주 하는 질문과 답변</div>
+            
+            <div class="tip-box">
+                <p><b>Q1: `who`와 `whom`은 꼭 구분해서 써야 하나요? 현대 영어에서는 어떻게 쓰이나요?</b><br>
+                A: 매우 중요한 질문입니다. 격식적인 글쓰기(학술 논문, 비즈니스 문서)나 편입 시험과 같은 표준화된 시험에서는 `who`(주격)와 `whom`(목적격)의 구분이 여전히 중요합니다. 특히 `to whom`, `for whom`과 같이 전치사 바로 뒤에는 반드시 `whom`을 써야 합니다. 하지만 일상적인 대화에서는 목적격 자리에도 `who`를 쓰는 경향이 매우 강합니다. 결론적으로, <b>편입 수험생이라면 문법적 정확성을 위해 반드시 구분해서 사용하는 법을 익혀야 합니다.</b></p>
+            </div>
+            <div class="tip-box">
+                <p><b>Q2: 간접의문문에서 `think`, `believe` 같은 동사가 쓰일 때 왜 의문사가 문장 맨 앞으로 가나요?</b><br>
+                A: 논리적으로 생각해보면 쉽습니다. "Where do you think he is?"라는 질문에 대한 기대 답변은 "Yes, I do."가 아니라 "I think he is <b>at the library</b>."와 같이 장소에 대한 정보입니다. 즉, 이 문장의 핵심 질문은 '생각하는지 여부'가 아니라 '**어디에** 있는지'입니다. 따라서 질문의 핵심인 의문사(Where)가 문장 전체를 이끌기 위해 맨 앞으로 나가는 것입니다.</p>
+            </div>
+            <div class="tip-box">
+                <p><b>Q3: 간접의문문에서 `if`와 `whether`는 완전히 똑같이 쓸 수 있나요?</b><br>
+                A: 대부분 바꿔 쓸 수 있지만, `whether`만 써야 하는 경우가 있습니다.<br>
+                1. <b>전치사의 목적어:</b> We talked about <b>whether</b> we should go. (about if X)<br>
+                2. <b>to부정사 앞:</b> The question is <b>whether to stay</b> or leave. (if to X)<br>
+                3. <b>`or not`이 바로 뒤에 붙을 때:</b> I don't care <b>whether or not</b> you agree. (if or not X)</p>
+            </div>
+        </div>
+        <div class="page-footer"></div>
+    </div>
+
+    
+
+
+    
+        <!-- =================================================================== -->
+        <!-- 연습문제 페이지 시작 (1-50)                                       -->
+        <!-- =================================================================== -->
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 1 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 1 - Practice Problems</div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">1</span></div>
+                    <div class="problem-question">다음 중 밑줄 친 부분이 <b>문법적으로 올바른</b> 것은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span><span>I wonder <b>what time does the train arrive</b> at the station.</span></li>
+                        <li><span class="choice-number">②</span><span>Could you tell me <b>which department you work for</b>?</span></li>
+                        <li><span class="choice-number">③</span><span>Do you know <b>where is the nearest hospital</b> located?</span></li>
+                        <li><span class="choice-number">④</span><span>I'm not sure <b>how many people are there</b> in the meeting room.</span></li>
+                        <li><span class="choice-number">⑤</span><span>Please explain <b>why did he suddenly quit</b> his job.</span></li>
+                    </ul>
+                </div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">2</span></div>
+                    <div class="problem-text">"How long will the project take?"</div>
+                    <div class="problem-question">다음 문장을 간접의문문으로 바꿀 때 <b>가장 적절한</b> 것은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> I want to know how long will the project take.</li>
+                        <li><span class="choice-number">②</span> I want to know how long the project will take.</li>
+                        <li><span class="choice-number">③</span> I want to know how long does the project take.</li>
+                        <li><span class="choice-number">④</span> I want to know the project how long will take.</li>
+                        <li><span class="choice-number">⑤</span> I want to know how long will take the project.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 1 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 1 - Practice Problems</div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">3</span></div>
+                    <div class="problem-question">다음 중 <b>어법상 올바른</b> 문장은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> Can you guess what does she do for a living?</li>
+                        <li><span class="choice-number">②</span> I have no idea where did they go last night.</li>
+                        <li><span class="choice-number">③</span> Nobody knows when will the results be announced.</li>
+                        <li><span class="choice-number">④</span> The teacher asked who had completed the assignment.</li>
+                        <li><span class="choice-number">⑤</span> I wonder why is he always late to meetings.</li>
+                    </ul>
+                </div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">4</span></div>
+                    <div class="problem-text">
+                        "The journalist asked the politician _______ about the new policy."
+                    </div>
+                    <div class="problem-question">빈칸에 들어갈 <b>가장 적절한</b> 것은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> what did he think</li>
+                        <li><span class="choice-number">②</span> what he thought</li>
+                        <li><span class="choice-number">③</span> what he thinks</li>
+                        <li><span class="choice-number">④</span> what does he think</li>
+                        <li><span class="choice-number">⑤</span> what was he thinking</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 1 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 1 - Practice Problems</div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">5</span></div>
+                    <div class="problem-text">
+                        A: "Do you remember where we parked the car?"<br>
+                        B: ____________
+                    </div>
+                    <div class="problem-question">다음 대화에서 B의 응답이 <b>문법적으로 올바른</b> 것은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> I think where we parked it near the fountain.</li>
+                        <li><span class="choice-number">②</span> I think we parked it where near the fountain.</li>
+                        <li><span class="choice-number">③</span> I think we parked it near the fountain where.</li>
+                        <li><span class="choice-number">④</span> Where I think we parked it near the fountain.</li>
+                        <li><span class="choice-number">⑤</span> I think we parked it near the fountain.</li>
+                    </ul>
+                </div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">6</span></div>
+                    <div class="problem-text">
+                        "I can't figure out <b>how does this machine work</b> properly."
+                    </div>
+                    <div class="problem-question">다음 중 밑줄 친 부분을 <b>올바르게 수정한</b> 것은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> how this machine works</li>
+                        <li><span class="choice-number">②</span> how works this machine</li>
+                        <li><span class="choice-number">③</span> how this machine does work</li>
+                        <li><span class="choice-number">④</span> how does work this machine</li>
+                        <li><span class="choice-number">⑤</span> this machine how works</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 1 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 1 - Practice Problems</div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">7</span></div>
+                    <div class="problem-question">다음 문장에서 <b>문법적 오류</b>가 있는 것은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> I wonder what time the store closes on Sundays.</li>
+                        <li><span class="choice-number">②</span> Can you tell me where the bus station is located?</li>
+                        <li><span class="choice-number">③</span> Do you know how much does this book cost?</li>
+                        <li><span class="choice-number">④</span> Nobody understands why he made that decision.</li>
+                        <li><span class="choice-number">⑤</span> I'm curious about what she said at the meeting.</li>
+                    </ul>
+                </div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">8</span></div>
+                    <div class="problem-text">
+                        "The detective wanted to know _______ the crime scene."
+                    </div>
+                    <div class="problem-question">빈칸에 들어갈 <b>가장 적절한</b> 것은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> who was present at</li>
+                        <li><span class="choice-number">②</span> who present was at</li>
+                        <li><span class="choice-number">③</span> at who was present</li>
+                        <li><span class="choice-number">④</span> present who was at</li>
+                        <li><span class="choice-number">⑤</span> who at was present</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 1 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 1 - Practice Problems</div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">9</span></div>
+                    <div class="problem-question">다음 중 <b>의미와 문법이 모두 올바른</b> 것은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> I asked him where was he going tonight.</li>
+                        <li><span class="choice-number">②</span> I asked him where he was going tonight.</li>
+                        <li><span class="choice-number">③</span> I asked him where he is going tonight.</li>
+                        <li><span class="choice-number">④</span> I asked him where is he going tonight.</li>
+                        <li><span class="choice-number">⑤</span> I asked him he was going where tonight.</li>
+                    </ul>
+                </div>
+    
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">10</span></div>
+                    <div class="problem-text">
+                        A: "I'm looking for someone to help with the project."<br>
+                        B: "Do you know _______ might be interested?"
+                    </div>
+                    <div class="problem-question">밑줄 친 부분이 <b>문법적으로 올바른</b> 것은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> who do you think</li>
+                        <li><span class="choice-number">②</span> who you think</li>
+                        <li><span class="choice-number">③</span> you think who</li>
+                        <li><span class="choice-number">④</span> do you think who</li>
+                        <li><span class="choice-number">⑤</span> who thinks you</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 1 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 1 - Practice Problems</div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">11</span></div>
+                    <div class="problem-text">
+                        "_______ do you think will win the championship this year?"
+                    </div>
+                    <div class="problem-question">다음 빈칸에 들어갈 <b>가장 적절한</b> 것은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> Who</li>
+                        <li><span class="choice-number">②</span> Whom</li>
+                        <li><span class="choice-number">③</span> Whose</li>
+                        <li><span class="choice-number">④</span> Which</li>
+                        <li><span class="choice-number">⑤</span> What</li>
+                    </ul>
+                </div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">12</span></div>
+                    <div class="problem-question">다음 중 <b>문법적으로 올바른</b> 것은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> To who should I address this letter?</li>
+                        <li><span class="choice-number">②</span> To whom should I address this letter?</li>
+                        <li><span class="choice-number">③</span> Who should I address this letter to?</li>
+                        <li><span class="choice-number">④</span> Whom should I address this letter?</li>
+                        <li><span class="choice-number">⑤</span> ② and ③ are both correct.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 1 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 1 - Practice Problems</div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">13</span></div>
+                    <div class="problem-text">
+                        "The person _______ you were speaking with is my supervisor."
+                    </div>
+                    <div class="problem-question">빈칸에 들어갈 <b>가장 적절한</b> 것은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> who</li>
+                        <li><span class="choice-number">②</span> whom</li>
+                        <li><span class="choice-number">③</span> whose</li>
+                        <li><span class="choice-number">④</span> which</li>
+                        <li><span class="choice-number">⑤</span> what</li>
+                    </ul>
+                </div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">14</span></div>
+                    <div class="problem-question">다음 문장에서 <b>문법적으로 올바른</b> 것은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> Who did you invite to the party?</li>
+                        <li><span class="choice-number">②</span> Whom did you invite to the party?</li>
+                        <li><span class="choice-number">③</span> Who you invited to the party?</li>
+                        <li><span class="choice-number">④</span> Whom you invited to the party?</li>
+                        <li><span class="choice-number">⑤</span> ① and ② are both acceptable in modern English.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 1 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 1 - Practice Problems</div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">15</span></div>
+                    <div class="problem-question">다음 중 <b>격식적 글쓰기에 가장 적절한</b> 것은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> Who are you waiting for?</li>
+                        <li><span class="choice-number">②</span> Whom are you waiting for?</li>
+                        <li><span class="choice-number">③</span> For who are you waiting?</li>
+                        <li><span class="choice-number">④</span> For whom are you waiting?</li>
+                        <li><span class="choice-number">⑤</span> You are waiting for who?</li>
+                    </ul>
+                </div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">16</span></div>
+                    <div class="problem-text">
+                        "I wonder _______ she consulted before making that decision."
+                    </div>
+                    <div class="problem-question">빈칸에 들어갈 <b>가장 적절한</b> 것은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> who</li>
+                        <li><span class="choice-number">②</span> whom</li>
+                        <li><span class="choice-number">③</span> whose</li>
+                        <li><span class="choice-number">④</span> which</li>
+                        <li><span class="choice-number">⑤</span> what</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 1 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 1 - Practice Problems</div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">17</span></div>
+                    <div class="problem-question">다음 중 <b>문법적으로 가장 정확한</b> 것은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> Who do you think I should talk to?</li>
+                        <li><span class="choice-number">②</span> Whom do you think I should talk to?</li>
+                        <li><span class="choice-number">③</span> To whom do you think I should talk?</li>
+                        <li><span class="choice-number">④</span> Who I should talk to do you think?</li>
+                        <li><span class="choice-number">⑤</span> ② and ③ are equally correct.</li>
+                    </ul>
+                </div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">18</span></div>
+                    <div class="problem-question">다음 문장에서 <b>문법적 오류</b>가 있는 것은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> Who called while I was out?</li>
+                        <li><span class="choice-number">②</span> Whom did you see at the conference?</li>
+                        <li><span class="choice-number">③</span> I don't know who to trust anymore.</li>
+                        <li><span class="choice-number">④</span> With who are you planning to travel?</li>
+                        <li><span class="choice-number">⑤</span> Whose car did you borrow yesterday?</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 1 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 1 - Practice Problems</div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">19</span></div>
+                    <div class="problem-text">
+                        "The committee will decide _______ to nominate for the award."
+                    </div>
+                    <div class="problem-question">빈칸에 들어갈 <b>가장 적절한</b> 것은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> who</li>
+                        <li><span class="choice-number">②</span> whom</li>
+                        <li><span class="choice-number">③</span> whose</li>
+                        <li><span class="choice-number">④</span> which</li>
+                        <li><span class="choice-number">⑤</span> what</li>
+                    </ul>
+                </div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">20</span></div>
+                    <div class="problem-text">
+                        A: "Someone called for you earlier."<br>
+                        B: _______ ?
+                    </div>
+                    <div class="problem-question">다음 대화에서 <b>문법적으로 가장 정확한</b> 응답은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> Who was it</li>
+                        <li><span class="choice-number">②</span> Whom was it</li>
+                        <li><span class="choice-number">③</span> Who it was</li>
+                        <li><span class="choice-number">④</span> Whom it was</li>
+                        <li><span class="choice-number">⑤</span> Whose was it</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+        
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 1 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 1 - Practice Problems</div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">21</span></div>
+                    <div class="problem-question">다음 중 <b>의미상 가장 자연스러운</b> 것은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> What color do you prefer, red or blue?</li>
+                        <li><span class="choice-number">②</span> Which color do you prefer, red or blue?</li>
+                        <li><span class="choice-number">③</span> What time does the meeting start?</li>
+                        <li><span class="choice-number">④</span> Which time does the meeting start?</li>
+                        <li><span class="choice-number">⑤</span> ② and ③ are both natural.</li>
+                    </ul>
+                </div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">22</span></div>
+                    <div class="problem-text">
+                        "_______ of these books would you recommend for a beginner?"
+                    </div>
+                    <div class="problem-question">빈칸에 들어갈 <b>가장 적절한</b> 것은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> What</li>
+                        <li><span class="choice-number">②</span> Which</li>
+                        <li><span class="choice-number">③</span> Who</li>
+                        <li><span class="choice-number">④</span> Whose</li>
+                        <li><span class="choice-number">⑤</span> When</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 1 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 1 - Practice Problems</div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">23</span></div>
+                    <div class="problem-text">
+                        상황: 친구가 수많은 영화 장르 중에서 선호하는 것을 물어볼 때
+                    </div>
+                    <div class="problem-question">다음 중 <b>문맥상 가장 적절한</b> 것은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> What kind of movies do you like?</li>
+                        <li><span class="choice-number">②</span> Which kind of movies do you like?</li>
+                        <li><span class="choice-number">③</span> What movies do you like?</li>
+                        <li><span class="choice-number">④</span> Which movies do you like?</li>
+                        <li><span class="choice-number">⑤</span> ① and ③ are equally appropriate.</li>
+                    </ul>
+                </div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">24</span></div>
+                    <div class="problem-text">
+                        A: "I'm thinking about buying a smartphone."<br>
+                        B: _______ ?
+                    </div>
+                    <div class="problem-question">다음 대화에서 <b>가장 자연스러운</b> 질문은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> What brand are you considering</li>
+                        <li><span class="choice-number">②</span> Which brand are you considering</li>
+                        <li><span class="choice-number">③</span> What brands do you prefer</li>
+                        <li><span class="choice-number">④</span> Which smartphone do you want</li>
+                        <li><span class="choice-number">⑤</span> All are equally natural.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 1 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 1 - Practice Problems</div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">25</span></div>
+                    <div class="problem-text">
+                        "I can't decide _______ subject to major in at university."
+                    </div>
+                    <div class="problem-question">빈칸에 들어갈 <b>가장 적절한</b> 것은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> what</li>
+                        <li><span class="choice-number">②</span> which</li>
+                        <li><span class="choice-number">③</span> whose</li>
+                        <li><span class="choice-number">④</span> who</li>
+                        <li><span class="choice-number">⑤</span> when</li>
+                    </ul>
+                </div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">26</span></div>
+                    <div class="problem-question">다음 중 <b>의미상 올바른</b> 구별은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> What = 무한한 선택지, Which = 한정된 선택지</li>
+                        <li><span class="choice-number">②</span> What = 한정된 선택지, Which = 무한한 선택지</li>
+                        <li><span class="choice-number">③</span> What과 Which는 항상 교체 가능하다</li>
+                        <li><span class="choice-number">④</span> What은 사물, Which는 사람에만 사용</li>
+                        <li><span class="choice-number">⑤</span> What은 단수, Which는 복수에만 사용</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+        
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 1 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 1 - Practice Problems</div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">27</span></div>
+                    <div class="problem-text">
+                        상황: 메뉴에 3가지 파스타가 있을 때
+                    </div>
+                    <div class="problem-question">다음 상황에서 <b>가장 적절한</b> 질문은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> What pasta do you want?</li>
+                        <li><span class="choice-number">②</span> Which pasta do you want?</li>
+                        <li><span class="choice-number">③</span> Whose pasta do you want?</li>
+                        <li><span class="choice-number">④</span> When pasta do you want?</li>
+                        <li><span class="choice-number">⑤</span> ① and ② are equally appropriate.</li>
+                    </ul>
+                </div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">28</span></div>
+                    <div class="problem-text">
+                        "_______ is your favorite season, and why do you like it?"
+                    </div>
+                    <div class="problem-question">빈칸에 들어갈 <b>가장 적절한</b> 것은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> What</li>
+                        <li><span class="choice-number">②</span> Which</li>
+                        <li><span class="choice-number">③</span> Who</li>
+                        <li><span class="choice-number">④</span> When</li>
+                        <li><span class="choice-number">⑤</span> Where</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+        
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 1 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 1 - Practice Problems</div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">29</span></div>
+                    <div class="problem-question">다음 중 <b>문법적으로 올바르고 의미가 자연스러운</b> 것은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> Which do you think is the best solution?</li>
+                        <li><span class="choice-number">②</span> What do you think is the best solution?</li>
+                        <li><span class="choice-number">③</span> Which solution do you think is the best?</li>
+                        <li><span class="choice-number">④</span> What solution do you think is the best?</li>
+                        <li><span class="choice-number">⑤</span> All are correct and natural.</li>
+                    </ul>
+                </div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">30</span></div>
+                    <div class="problem-text">
+                        A: "There are two routes to the airport."<br>
+                        B: _______ ?
+                    </div>
+                    <div class="problem-question">다음 대화에서 <b>가장 적절한</b> 것은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> What is faster</li>
+                        <li><span class="choice-number">②</span> Which is faster</li>
+                        <li><span class="choice-number">③</span> What one is faster</li>
+                        <li><span class="choice-number">④</span> Which one is faster</li>
+                        <li><span class="choice-number">⑤</span> ② and ④ are both appropriate.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 1 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 1 - Practice Problems</div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">31</span></div>
+                    <div class="problem-question">다음 중 밑줄 친 부분이 <b>의문대명사</b>로 사용된 것은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> <b>What time</b> do you usually wake up?</li>
+                        <li><span class="choice-number">②</span> <b>What</b> happened at the meeting?</li>
+                        <li><span class="choice-number">③</span> <b>Which book</b> are you currently reading?</li>
+                        <li><span class="choice-number">④</span> <b>Whose car</b> is parked outside?</li>
+                        <li><span class="choice-number">⑤</span> <b>How many</b> students attended the lecture?</li>
+                    </ul>
+                </div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">32</span></div>
+                    <div class="problem-question">다음 문장에서 <b>문법적 기능</b>이 나머지와 <b>다른</b> 것은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> <b>What</b> is your name?</li>
+                        <li><span class="choice-number">②</span> <b>What book</b> are you reading?</li>
+                        <li><span class="choice-number">③</span> <b>Which</b> do you prefer?</li>
+                        <li><span class="choice-number">④</span> <b>Whose</b> is this umbrella?</li>
+                        <li><span class="choice-number">⑤</span> <b>Who</b> called you yesterday?</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 1 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 1 - Practice Problems</div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">33</span></div>
+                    <div class="problem-text">
+                        "I don't know _______ to choose from these options."
+                    </div>
+                    <div class="problem-question">빈칸에 들어갈 <b>가장 적절한</b> 것은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> what</li>
+                        <li><span class="choice-number">②</span> which</li>
+                        <li><span class="choice-number">③</span> whose</li>
+                        <li><span class="choice-number">④</span> who</li>
+                        <li><span class="choice-number">⑤</span> when</li>
+                    </ul>
+                </div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">34</span></div>
+                    <div class="problem-question">다음 중 <b>whose</b>가 의문대명사로 사용된 것은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> Whose car did you borrow?</li>
+                        <li><span class="choice-number">②</span> Whose is this jacket?</li>
+                        <li><span class="choice-number">③</span> Whose opinion matters most?</li>
+                        <li><span class="choice-number">④</span> Whose house are we visiting?</li>
+                        <li><span class="choice-number">⑤</span> Whose responsibility is it?</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+        
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 1 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 1 - Practice Problems</div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">35</span></div>
+                    <div class="problem-text">
+                        "<b>Which of the candidates</b> do you think is most qualified?"
+                    </div>
+                    <div class="problem-question">다음 문장에서 밑줄 친 부분의 <b>문법적 역할</b>은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> 주어</li>
+                        <li><span class="choice-number">②</span> 목적어</li>
+                        <li><span class="choice-number">③</span> 보어</li>
+                        <li><span class="choice-number">④</span> 부사어</li>
+                        <li><span class="choice-number">⑤</span> 관계사</li>
+                    </ul>
+                </div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">36</span></div>
+                    <div class="problem-text">
+                        "_______ makes you think he's the right person for the job?"
+                    </div>
+                    <div class="problem-question">빈칸에 들어갈 <b>가장 적절한</b> 것은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> What</li>
+                        <li><span class="choice-number">②</span> Which</li>
+                        <li><span class="choice-number">③</span> Who</li>
+                        <li><span class="choice-number">④</span> Whose</li>
+                        <li><span class="choice-number">⑤</span> When</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+        
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 1 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 1 - Practice Problems</div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">37</span></div>
+                    <div class="problem-question">다음 중 <b>문법적 구조가 올바른</b> 것은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> What do you think about it?</li>
+                        <li><span class="choice-number">②</span> What about it do you think?</li>
+                        <li><span class="choice-number">③</span> About what do you think it?</li>
+                        <li><span class="choice-number">④</span> You think what about it?</li>
+                        <li><span class="choice-number">⑤</span> Think what do you about it?</li>
+                    </ul>
+                </div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">38</span></div>
+                    <div class="problem-text">
+                        "Whose idea was it to start this project?"
+                    </div>
+                    <div class="problem-question">다음 문장에서 <b>whose</b>의 기능은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> 의문대명사 (소유격)</li>
+                        <li><span class="choice-number">②</span> 의문형용사</li>
+                        <li><span class="choice-number">③</span> 관계대명사</li>
+                        <li><span class="choice-number">④</span> 의문부사</li>
+                        <li><span class="choice-number">⑤</span> 접속사</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 1 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 1 - Practice Problems</div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">39</span></div>
+                    <div class="problem-text">
+                        "I wonder _______ made this delicious cake."
+                    </div>
+                    <div class="problem-question">빈칸에 들어갈 <b>가장 적절한</b> 것은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> who</li>
+                        <li><span class="choice-number">②</span> whom</li>
+                        <li><span class="choice-number">③</span> whose</li>
+                        <li><span class="choice-number">④</span> which</li>
+                        <li><span class="choice-number">⑤</span> what</li>
+                    </ul>
+                </div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">40</span></div>
+                    <div class="problem-question">다음 중 <b>문법적으로 올바르면서 의미가 자연스러운</b> 것은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> What person do you admire most?</li>
+                        <li><span class="choice-number">②</span> Which person do you admire most?</li>
+                        <li><span class="choice-number">③</span> Who do you admire most?</li>
+                        <li><span class="choice-number">④</span> Whose do you admire most?</li>
+                        <li><span class="choice-number">⑤</span> ① and ③ are both correct.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 1 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 1 - Practice Problems</div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">41</span></div>
+                    <div class="problem-question">다음 중 <b>how</b>가 포함된 표현의 의미가 <b>잘못된</b> 것은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> how long - 기간, 길이</li>
+                        <li><span class="choice-number">②</span> how far - 거리</li>
+                        <li><span class="choice-number">③</span> how often - 빈도</li>
+                        <li><span class="choice-number">④</span> how much - 가격, 양(불가산명사)</li>
+                        <li><span class="choice-number">⑤</span> how many - 양(불가산명사)</li>
+                    </ul>
+                </div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">42</span></div>
+                    <div class="problem-text">
+                        "_______ have you been learning English?"
+                    </div>
+                    <div class="problem-question">빈칸에 들어갈 <b>가장 적절한</b> 것은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> How long</li>
+                        <li><span class="choice-number">②</span> How far</li>
+                        <li><span class="choice-number">③</span> How often</li>
+                        <li><span class="choice-number">④</span> How much</li>
+                        <li><span class="choice-number">⑤</span> How many</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+        
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 1 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 1 - Practice Problems</div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">43</span></div>
+                    <div class="problem-question">다음 중 <b>문법적으로 올바른</b> 것은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> How come you didn't tell me earlier?</li>
+                        <li><span class="choice-number">②</span> How come didn't you tell me earlier?</li>
+                        <li><span class="choice-number">③</span> How come you not tell me earlier?</li>
+                        <li><span class="choice-number">④</span> How come you don't told me earlier?</li>
+                        <li><span class="choice-number">⑤</span> How come did you not tell me earlier?</li>
+                    </ul>
+                </div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">44</span></div>
+                    <div class="problem-text">
+                        "_______ water do you drink every day?"
+                    </div>
+                    <div class="problem-question">빈칸에 들어갈 <b>가장 적절한</b> 것은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> How many</li>
+                        <li><span class="choice-number">②</span> How much</li>
+                        <li><span class="choice-number">③</span> How long</li>
+                        <li><span class="choice-number">④</span> How often</li>
+                        <li><span class="choice-number">⑤</span> How far</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+        
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 1 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 1 - Practice Problems</div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">45</span></div>
+                    <div class="problem-question">다음 중 <b>의문부사</b> 뒤에 <b>완전한 문장</b>이 오지 않은 것은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> When did you arrive here?</li>
+                        <li><span class="choice-number">②</span> Where do you live?</li>
+                        <li><span class="choice-number">③</span> Why are you crying?</li>
+                        <li><span class="choice-number">④</span> How was your trip?</li>
+                        <li><span class="choice-number">⑤</span> What happened yesterday?</li>
+                    </ul>
+                </div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">46</span></div>
+                    <div class="problem-text">
+                        A: "I go to the gym."<br>
+                        B: _______ ?
+                    </div>
+                    <div class="problem-question">다음 대화에서 <b>가장 적절한</b> 질문은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> How long do you go</li>
+                        <li><span class="choice-number">②</span> How often do you go</li>
+                        <li><span class="choice-number">③</span> How much do you go</li>
+                        <li><span class="choice-number">④</span> How many do you go</li>
+                        <li><span class="choice-number">⑤</span> How far do you go</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 1 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 1 - Practice Problems</div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">47</span></div>
+                    <div class="problem-text">
+                        "_______ is it from your house to the university?"
+                    </div>
+                    <div class="problem-question">빈칸에 들어갈 <b>가장 적절한</b> 것은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> How long</li>
+                        <li><span class="choice-number">②</span> How far</li>
+                        <li><span class="choice-number">③</span> How often</li>
+                        <li><span class="choice-number">④</span> How much</li>
+                        <li><span class="choice-number">⑤</span> How many</li>
+                    </ul>
+                </div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">48</span></div>
+                    <div class="problem-question">다음 중 <b>어법상 올바른</b> 것은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> I don't know where does he live.</li>
+                        <li><span class="choice-number">②</span> I don't know where he lives.</li>
+                        <li><span class="choice-number">③</span> I don't know he lives where.</li>
+                        <li><span class="choice-number">④</span> I don't know does he live where.</li>
+                        <li><span class="choice-number">⑤</span> Where I don't know he lives.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 1 연습문제</span>
+            </div>
+            <div class="page-content">
+                <div class="practice-section-header first-in-page eng-text">Part 1 - Practice Problems</div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">49</span></div>
+                    <div class="problem-question">다음 문장에서 <b>문법적 기능이 다른</b> 것은?</div>
+                    <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                        <li><span class="choice-number">①</span> <b>When</b> will the conference begin?</li>
+                        <li><span class="choice-number">②</span> I asked <b>when</b> the conference would begin.</li>
+                        <li><span class="choice-number">③</span> <b>Where</b> are you going for vacation?</li>
+                        <li><span class="choice-number">④</span> <b>What time</b> is the meeting scheduled?</li>
+                        <li><span class="choice-number">⑤</span> <b>Why</b> did she decide to quit her job?</li>
+                    </ul>
+                </div>
+                <div class="problem-block">
+                    <div class="problem-meta"><span class="problem-number">50</span></div>
+                    <div class="problem-question">다음 중 <b>의미와 문법이 모두 올바른</b> 것은?</div>
+                    <ul class="problem-choices">
+                        <li><span class="choice-number">①</span> How many money do you need?</li>
+                        <li><span class="choice-number">②</span> How much money do you need?</li>
+                        <li><span class="choice-number">③</span> How long money do you need?</li>
+                        <li><span class="choice-number">④</span> How often money do you need?</li>
+                        <li><span class="choice-number">⑤</span> How far money do you need?</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <!-- =================================================================== -->
+        <!-- 정답 및 해설 페이지 시작                                              -->
+        <!-- =================================================================== -->
+        <div class="page answer-key-section">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 1 정답 및 해설</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title first-in-page eng-text">Quick Answers</div>
+                <div class="quick-answer-grid">
+                    <div class="quick-answer-item"><span class="num">1.</span> <span class="ans">②</span></div>
+                    <div class="quick-answer-item"><span class="num">2.</span> <span class="ans">②</span></div>
+                    <div class="quick-answer-item"><span class="num">3.</span> <span class="ans">④</span></div>
+                    <div class="quick-answer-item"><span class="num">4.</span> <span class="ans">②</span></div>
+                    <div class="quick-answer-item"><span class="num">5.</span> <span class="ans">⑤</span></div>
+                    <div class="quick-answer-item"><span class="num">6.</span> <span class="ans">①</span></div>
+                    <div class="quick-answer-item"><span class="num">7.</span> <span class="ans">③</span></div>
+                    <div class="quick-answer-item"><span class="num">8.</span> <span class="ans">①</span></div>
+                    <div class="quick-answer-item"><span class="num">9.</span> <span class="ans">②</span></div>
+                    <div class="quick-answer-item"><span class="num">10.</span> <span class="ans">②</span></div>
+                    <div class="quick-answer-item"><span class="num">11.</span> <span class="ans">①</span></div>
+                    <div class="quick-answer-item"><span class="num">12.</span> <span class="ans">⑤</span></div>
+                    <div class="quick-answer-item"><span class="num">13.</span> <span class="ans">②</span></div>
+                    <div class="quick-answer-item"><span class="num">14.</span> <span class="ans">⑤</span></div>
+                    <div class="quick-answer-item"><span class="num">15.</span> <span class="ans">④</span></div>
+                    <div class="quick-answer-item"><span class="num">16.</span> <span class="ans">②</span></div>
+                    <div class="quick-answer-item"><span class="num">17.</span> <span class="ans">⑤</span></div>
+                    <div class="quick-answer-item"><span class="num">18.</span> <span class="ans">④</span></div>
+                    <div class="quick-answer-item"><span class="num">19.</span> <span class="ans">②</span></div>
+                    <div class="quick-answer-item"><span class="num">20.</span> <span class="ans">①</span></div>
+                    <div class="quick-answer-item"><span class="num">21.</span> <span class="ans">⑤</span></div>
+                    <div class="quick-answer-item"><span class="num">22.</span> <span class="ans">②</span></div>
+                    <div class="quick-answer-item"><span class="num">23.</span> <span class="ans">⑤</span></div>
+                    <div class="quick-answer-item"><span class="num">24.</span> <span class="ans">①</span></div>
+                    <div class="quick-answer-item"><span class="num">25.</span> <span class="ans">①</span></div>
+                    <div class="quick-answer-item"><span class="num">26.</span> <span class="ans">①</span></div>
+                    <div class="quick-answer-item"><span class="num">27.</span> <span class="ans">②</span></div>
+                    <div class="quick-answer-item"><span class="num">28.</span> <span class="ans">①</span></div>
+                    <div class="quick-answer-item"><span class="num">29.</span> <span class="ans">⑤</span></div>
+                    <div class="quick-answer-item"><span class="num">30.</span> <span class="ans">⑤</span></div>
+                    <div class="quick-answer-item"><span class="num">31.</span> <span class="ans">②</span></div>
+                    <div class="quick-answer-item"><span class="num">32.</span> <span class="ans">②</span></div>
+                    <div class="quick-answer-item"><span class="num">33.</span> <span class="ans">②</span></div>
+                    <div class="quick-answer-item"><span class="num">34.</span> <span class="ans">②</span></div>
+                    <div class="quick-answer-item"><span class="num">35.</span> <span class="ans">②</span></div>
+                    <div class="quick-answer-item"><span class="num">36.</span> <span class="ans">①</span></div>
+                    <div class="quick-answer-item"><span class="num">37.</span> <span class="ans">①</span></div>
+                    <div class="quick-answer-item"><span class="num">38.</span> <span class="ans">②</span></div>
+                    <div class="quick-answer-item"><span class="num">39.</span> <span class="ans">①</span></div>
+                    <div class="quick-answer-item"><span class="num">40.</span> <span class="ans">⑤</span></div>
+                    <div class="quick-answer-item"><span class="num">41.</span> <span class="ans">⑤</span></div>
+                    <div class="quick-answer-item"><span class="num">42.</span> <span class="ans">①</span></div>
+                    <div class="quick-answer-item"><span class="num">43.</span> <span class="ans">①</span></div>
+                    <div class="quick-answer-item"><span class="num">44.</span> <span class="ans">②</span></div>
+                    <div class="quick-answer-item"><span class="num">45.</span> <span class="ans">⑤</span></div>
+                    <div class="quick-answer-item"><span class="num">46.</span> <span class="ans">②</span></div>
+                    <div class="quick-answer-item"><span class="num">47.</span> <span class="ans">②</span></div>
+                    <div class="quick-answer-item"><span class="num">48.</span> <span class="ans">②</span></div>
+                    <div class="quick-answer-item"><span class="num">49.</span> <span class="ans">④</span></div>
+                    <div class="quick-answer-item"><span class="num">50.</span> <span class="ans">②</span></div>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+        
+        <div class="page answer-key-section">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 1 정답 및 해설</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title first-in-page eng-text">Detailed Explanations</div>
+                
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">1</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 간접의문문에서는 '의문사 + 주어 + 동사' 어순을 사용합니다.<br>
+                - ① what time <b>the train arrives</b> (✗ does the train arrive)<br>
+                - ③ where <b>the nearest hospital is</b> (✗ is the nearest hospital)<br>
+                - ④ how many people <b>there are</b> (✗ are there)<br>
+                - ⑤ why <b>he suddenly quit</b> (✗ did he suddenly quit)</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">2</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 간접의문문에서는 의문사 다음에 주어(the project) + 동사(will take) 순서가 와야 합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">3</span><span class="correct-answer">정답: ④</span></div><div class="explanation-content"><b>해설</b>: 간접의문문에서는 평서문 어순을 사용해야 합니다. ④만이 올바른 어순입니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">4</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 간접의문문에서는 'what + 주어(he) + 동사(thought)' 어순이며, 시제 일치에 따라 과거형을 사용합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">5</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: 간접의문문에서 where은 부사구를 이끌므로, 완전한 문장 구조가 와야 합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">6</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: 간접의문문에서는 'how + 주어(this machine) + 동사(works)' 어순입니다.</div></div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page answer-key-section">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 1 정답 및 해설</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title first-in-page eng-text">Detailed Explanations</div>
+                
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">7</span><span class="correct-answer">정답: ③</span></div><div class="explanation-content"><b>해설</b>: 'how much does this book cost' → 'how much this book costs'가 정확합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">8</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: 간접의문문에서 'who + 동사(was) + 보어/부사구(present at)'가 올바른 어순입니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">9</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 간접의문문 어순과 시제 일치가 모두 올바른 문장입니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">10</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 간접의문문에서는 'who you think'가 올바른 어순입니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">11</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: 'Who do you think'에서 who는 주어 역할을 하므로 주격 who를 사용합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">12</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: 전치사 to 뒤에는 목적격 whom을 쓰는 것이 격식적으로 정확하지만, 현대 영어에서는 문장 끝에 전치사를 두고 who를 쓰는 것도 허용됩니다.</div></div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page answer-key-section">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 1 정답 및 해설</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title first-in-page eng-text">Detailed Explanations</div>
+                
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">13</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 전치사 with의 목적어 역할을 하므로 목적격 whom을 사용합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">14</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: 직접의문문에서는 현대 영어에서 who와 whom 모두 허용되지만, whom이 격식적으로 더 정확합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">15</span><span class="correct-answer">정답: ④</span></div><div class="explanation-content"><b>해설</b>: 격식적 글쓰기에서는 전치사를 앞으로 이동시키고 whom을 사용하는 것이 가장 적절합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">16</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: consult의 목적어 역할을 하므로 목적격 whom을 사용합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">17</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: ② (간접의문문에서 목적격 사용)와 ③ (전치사 전치 + 목적격) 모두 문법적으로 정확합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">18</span><span class="correct-answer">정답: ④</span></div><div class="explanation-content"><b>해설</b>: 전치사 with 뒤에는 whom을 써야 합니다. 'With whom are you planning to travel?'이 정확합니다.</div></div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+        
+        <div class="page answer-key-section">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 1 정답 및 해설</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title first-in-page eng-text">Detailed Explanations</div>
+                
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">19</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: nominate의 목적어 역할을 하므로 목적격 whom을 사용합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">20</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: 직접의문문에서 who가 주어 역할을 하므로 주격 who를 사용합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">21</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: ② red와 blue라는 한정된 선택지가 있으므로 which가 자연스럽고, ③ 시간을 물을 때는 관습적으로 what을 사용합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">22</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 'these books' 중에서 선택하는 한정된 범위이므로 which를 사용합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">23</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: 수많은 영화 장르 중에서 일반적인 선호를 묻는 것이므로 what이 적절합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">24</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: 막연한 브랜드 선호를 묻는 것이므로 what이 더 자연스럽습니다.</div></div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+        
+        <div class="page answer-key-section">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 1 정답 및 해설</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title first-in-page eng-text">Detailed Explanations</div>
+                
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">25</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: 대학 전공은 무한히 많은 선택지 중에서 고르는 것이므로 what이 적절합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">26</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: what은 무한하거나 제한 없는 선택지, which는 한정된 선택지에서 사용됩니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">27</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 메뉴에 있는 3가지 파스타라는 한정된 선택지이므로 which가 적절합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">28</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: 4계절이라는 한정된 범위이지만, 일반적인 선호를 묻는 관용적 표현으로 what을 사용합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">29</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: 문맥에 따라 모두 사용 가능합니다. 한정된 해결책들 중에서는 which, 일반적인 해결책을 물을 때는 what을 사용합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">30</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: 두 개의 경로라는 명시된 선택지가 있으므로 which를 사용하며, one을 포함하거나 생략 모두 가능합니다.</div></div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+        
+        <div class="page answer-key-section">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 1 정답 및 해설</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title first-in-page eng-text">Detailed Explanations</div>
+                
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">31</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: ②에서 What은 주어 역할을 하는 의문대명사이고, 나머지는 모두 명사를 수식하는 의문형용사입니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">32</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: ②는 의문형용사(What이 book을 수식), 나머지는 모두 의문대명사입니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">33</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 여러 옵션 중에서 선택하는 상황이므로 which가 적절합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">34</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: ②에서 Whose는 단독으로 사용되어 소유대명사 역할을 하는 의문대명사입니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">35</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 'Which of the candidates'는 동사 think의 목적어 역할을 합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">36</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: 주어 자리에 오는 의문대명사로 What이 적절합니다.</div></div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+        
+        <div class="page answer-key-section">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 1 정답 및 해설</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title first-in-page eng-text">Detailed Explanations</div>
+                
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">37</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: 'What do you think about it?'이 가장 자연스러운 어순입니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">38</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 'Whose idea'에서 Whose는 idea를 수식하는 의문형용사입니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">39</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: 케이크를 만든 사람을 묻는 것이므로 주어 역할의 who가 적절합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">40</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: ①과 ③ 모두 문법적으로 올바르며 의미도 자연스럽습니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">41</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: 'how many'는 가산명사와 함께 사용되며, 불가산명사와는 'how much'를 사용합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">42</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: 영어 학습 기간을 묻는 것이므로 'How long'이 적절합니다.</div></div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+        
+        <div class="page answer-key-section">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 1 정답 및 해설</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title first-in-page eng-text">Detailed Explanations</div>
+                
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">43</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: 'How come' 뒤에는 평서문 어순이 옵니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">44</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: water는 불가산명사이므로 'How much'를 사용합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">45</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: ⑤에서 What은 의문대명사로 주어 역할을 하므로, 뒤에 완전한 문장이 오지 않습니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">46</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 헬스장을 가는 빈도를 묻는 것이므로 'How often'이 적절합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">47</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 거리를 묻는 질문이므로 'How far'가 적절합니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">48</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 간접의문문에서는 평서문 어순을 사용해야 합니다.</div></div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page answer-key-section">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 1 정답 및 해설</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title first-in-page eng-text">Detailed Explanations</div>
+                
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">49</span><span class="correct-answer">정답: ④</span></div><div class="explanation-content"><b>해설</b>: ④는 의문형용사(What이 time을 수식), 나머지는 모두 의문부사입니다.</div></div>
+                <div class="explanation-block"><div class="explanation-header"><span class="problem-number">50</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: money는 불가산명사이므로 'How much'와 함께 사용해야 합니다.</div></div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+        <style>
+            /* --- 기본 페이지 및 폰트 설정 --- */
+            @page {
+                size: A4;
+                margin: 0;
+            }
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: 'Noto Sans KR', sans-serif;
+                background: #e8e9eb; /* 페이지 외부 배경색 */
+                counter-reset: page; /* 자동 페이지 번호 카운터 초기화 */
+            }
+            .eng-text { font-family: 'Inter', sans-serif; }
+            .serif-text { font-family: 'Playfair Display', serif; }
+            .bold-text { font-weight: 700; }
+    
+            /* --- 색상 변수 (표지 이미지 기반) --- */
+            :root {
+                --color-sea-blue: #6C96C6;      /* 바다색 */
+                --color-deep-blue: #345C85;     /* 깊은 바다색 */
+                --color-sandy-beige: #F2C994;   /* 모래색 */
+                --color-warm-orange: #E9A266;   /* 고양이색 */
+                --color-text-dark: #3D4852;     /* 기본 텍스트 색상 */
+                --color-text-light: #718096;    /* 보조 텍스트 색상 */
+                --color-bg-light: #FDFBF6;      /* 밝은 배경색 */
+                --color-border: #EAEAEA;        /* 테두리 색상 */
+            }
+    
+            /* --- A4 페이지 레이아웃 --- */
+            .page {
+                width: 210mm;
+                height: 297mm;
+                margin: 10mm auto;
+                padding: 15mm 18mm;
+                background: white;
+                box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+                page-break-after: always;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+            }
+            .page:last-child {
+                page-break-after: avoid;
+            }
+            .page-content {
+                flex-grow: 1;
+                overflow: hidden;
+                font-size: 11pt;
+                line-height: 1.8;
+                color: var(--color-text-dark);
+            }
+    
+            /* --- 페이지 헤더 & 푸터 --- */
+            .page-header, .page-footer {
+                width: 100%;
+                flex-shrink: 0;
+                font-size: 9pt;
+                color: var(--color-text-light);
+                font-family: 'Inter', sans-serif;
+            }
+            .page-header {
+                border-bottom: 1px solid var(--color-border);
+                padding-bottom: 8px;
+                margin-bottom: 12px;
+                display: flex;
+                justify-content: space-between;
+                color: var(--color-deep-blue);
+                font-weight: 500;
+            }
+            .page-footer {
+                border-top: 1px solid var(--color-border);
+                padding-top: 8px;
+                margin-top: 12px;
+                text-align: center;
+            }
+            
+            /* 자동 페이지 번호 생성 */
+            .page-footer::after {
+                counter-increment: page;
+                content: counter(page);
+            }
+            
+            /* 특정 페이지 헤더/푸터 숨기기 */
+            .no-header-footer { padding: 0; }
+            .no-header-footer .page-header,
+            .no-header-footer .page-footer,
+            .cover-page .page-footer::after,
+            .part-intro-page .page-footer::after,
+            .toc-page .page-header,
+            .chapter-page .page-header {
+                display: none;
+            }
+            .part-intro-page .page-header,
+            .part-intro-page .page-footer {
+                border: none;
+            }
+    
+            /* =================================================================== */
+            /* 세련된 표지 디자인 (2025 트렌드)                                    */
+            /* =================================================================== */
+            .cover-page {
+                color: white;
+                overflow: hidden;
+                background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 50%, #0369a1 100%);
+                background-image: url('../../background/backgroundGMBR.png'); /* 이미지 경로 수정 필요 */
+                background-size: cover;
+                background-position: center;
+                background-blend-mode: soft-light;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+            }
+    
+            .cover-text-box {
+                background: transparent;
+                border: 2px solid rgba(255, 255, 255, 0.9);
+                padding: 25mm 30mm 20mm 30mm;
+                border-radius: 0;
+                text-align: center;
+                color: white;
+                max-width: 150mm;
+                position: relative;
+                backdrop-filter: blur(8px);
+                -webkit-backdrop-filter: blur(8px);
+                margin-bottom: 20mm;
+            }
+    
+            .cover-text-box .cover-prefix {
+                font-family: 'Inter', sans-serif;
+                font-size: 18pt;
+                font-weight: 500;
+                color: rgba(255, 255, 255, 0.85);
+                margin-bottom: 8mm;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+    
+            .cover-text-box .cover-main-title {
+                font-family: 'Inter', sans-serif;
+                font-size: 48pt;
+                font-weight: 800;
+                line-height: 0.95;
+                margin-bottom: 8mm;
+                color: white;
+                letter-spacing: -1px;
+                text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+    
+            .cover-text-box .cover-edition {
+                font-family: 'Inter', sans-serif;
+                font-size: 16pt;
+                font-weight: 600;
+                color: #fbbf24; /* 밝은 포인트 색상 (골드) */
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+            }
+    
+            .cover-footer {
+                position: absolute;
+                bottom: 15mm;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                font-family: 'Inter', sans-serif;
+                font-size: 11pt;
+                font-weight: 400;
+                color: rgba(255, 255, 255, 0.9);
+                text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+                letter-spacing: 0.5px;
+            }
+    
+            .cover-text-box::before {
+                content: '';
+                position: absolute;
+                top: 15mm;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 40mm;
+                height: 2px;
+                background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent);
+            }
+    
+            .cover-text-box::after {
+                content: '';
+                position: absolute;
+                bottom: 35mm;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 25mm;
+                height: 1px;
+                background: linear-gradient(90deg, transparent, #fbbf24, transparent);
+            }
+    
+    
+            /* =================================================================== */
+            /* 목차 (TOC) 페이지 스타일                                            */
+            /* =================================================================== */
+            .toc-header { 
+                font-family: 'Inter', sans-serif; 
+                font-size: 20pt; 
+                font-weight: 700; 
+                color: var(--color-deep-blue); 
+                margin-bottom: 20px; 
+                padding-bottom: 10px; 
+                border-bottom: 2px solid var(--color-sea-blue); 
+                text-align: center;
+                letter-spacing: 2px;
+            }
+            .toc-list { 
+                list-style: none; 
+                padding-left: 0; 
+                font-size: 11pt; 
+                line-height: 2.5; 
+            }
+            .toc-item { 
+                display: flex; 
+                align-items: baseline; 
+                margin-bottom: 8px; 
+                border-bottom: 1px solid var(--color-border);
+                padding-bottom: 8px;
+            }
+            .toc-item .title { 
+                order: 1; 
+                white-space: nowrap; 
+                padding-right: 8px;
+                color: var(--color-text-dark);
+            }
+            .toc-item .title b {
+                color: var(--color-deep-blue);
+                font-weight: 700;
+            }
+            .toc-item .dots { 
+                order: 2; 
+                flex-grow: 1; 
+                border-bottom: 1px dotted var(--color-text-light); 
+                position: relative; 
+                top: -4px; 
+            }
+            .toc-item .page-num { 
+                order: 3; 
+                padding-left: 8px; 
+                font-family: 'Inter', sans-serif; 
+                font-weight: 600;
+                color: var(--color-sea-blue);
+            }
+            .toc-part-title { 
+                font-family: 'Inter', sans-serif; 
+                font-size: 14pt; 
+                font-weight: 700; 
+                color: var(--color-warm-orange); 
+                margin-top: 25px; 
+                margin-bottom: 10px; 
+                border-left: 4px solid var(--color-sandy-beige); 
+                padding-left: 12px; 
+            }
+    
+            /* =================================================================== */
+            /* 파트 소개 페이지 스타일                                               */
+            /* =================================================================== */
+            .part-intro-page {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .part-intro-container {
+                padding: 20mm;
+                border: 1px solid var(--color-border);
+                border-radius: 8px;
+                background-color: var(--color-bg-light);
+                max-width: 170mm;
+                text-align: center;
+            }
+            .part-intro-number {
+                font-family: 'Playfair Display', serif;
+                font-size: 24pt;
+                color: var(--color-sandy-beige);
+                margin-bottom: 10px;
+            }
+            .part-intro-title {
+                font-size: 36pt;
+                font-weight: 900;
+                color: var(--color-deep-blue);
+                margin-bottom: 15px;
+            }
+            .part-intro-subtitle {
+                font-family: 'Inter', sans-serif;
+                font-size: 14pt;
+                color: var(--color-sea-blue);
+                margin-bottom: 20px;
+            }
+            .part-intro-divider {
+                width: 80px;
+                height: 3px;
+                background-color: var(--color-warm-orange);
+                margin: 0 auto 20px auto;
+                border: none;
+            }
+            .part-intro-description {
+                max-width: 140mm;
+                font-size: 11pt;
+                line-height: 1.9;
+                color: var(--color-text-dark);
+                text-align: justify;
+                margin: 0 auto;
+            }
+    
+            /* =================================================================== */
+            /* 본문 콘텐츠 스타일                                                  */
+            /* =================================================================== */
+            .part-header { 
+                color: white; 
+                margin: 0 0 25px 0; 
+                padding: 15px 20px; 
+                font-size: 18pt; 
+                font-weight: 700; 
+                display: flex; 
+                align-items: center; 
+                background: linear-gradient(135deg, var(--color-deep-blue), var(--color-sea-blue)); 
+                border-radius: 8px; 
+                box-shadow: 0 4px 15px rgba(52, 92, 133, 0.2);
+            }
+            .part-number { 
+                font-family: 'Inter', sans-serif;
+                background: rgba(255,255,255,0.15); 
+                padding: 8px 14px; 
+                border-radius: 6px; 
+                font-weight: 700; 
+                font-size: 12pt;
+                min-width: 60px; 
+                text-align: center; 
+                margin-right: 15px; 
+            }
+            .section-title { 
+                font-family: 'Inter', sans-serif; 
+                font-size: 14pt; 
+                font-weight: 700; 
+                color: var(--color-deep-blue); 
+                margin: 25px 0 15px 0; 
+                padding-bottom: 8px;
+                border-bottom: 2px solid var(--color-sandy-beige);
+            }
+            .section-title .emoji { margin-right: 10px; }
+            .first-in-page { margin-top: 0; }
+            .content-paragraph { margin-bottom: 12px; }
+            
+            .grammar-table { 
+                width: 100%; 
+                border-collapse: collapse; 
+                margin: 20px 0; 
+                font-size: 10.5pt; 
+            }
+            .grammar-table th, .grammar-table td { 
+                border: 1px solid var(--color-border); 
+                padding: 10px 12px; 
+                text-align: left; 
+                vertical-align: top;
+            }
+            .grammar-table th { 
+                background-color: var(--color-bg-light); 
+                font-weight: 700; 
+                color: var(--color-deep-blue); 
+            }
+            .grammar-table td code {
+                font-family: 'Inter', sans-serif;
+                background-color: #e8e9eb;
+                padding: 2px 5px;
+                border-radius: 4px;
+                font-size: 9.5pt;
+            }
+            
+            /* 특정 테이블 전용 스타일 */
+            .comparison-table th:first-child,
+            .comparison-table td:first-child {
+                width: 22%;
+                white-space: nowrap;
+            }
+    
+            code {
+                font-family: 'Inter', sans-serif;
+                color: var(--color-deep-blue);
+                background-color: #f2f4f8;
+                border: 1px solid var(--color-border);
+                padding: 2px 6px;
+                border-radius: 6px;
+                font-weight: 600;
+                font-size: 0.95em;
+            }
+            
+            .tip-box { 
+                background: var(--color-bg-light); 
+                border: 1px solid var(--color-sandy-beige); 
+                border-left: 5px solid var(--color-warm-orange); 
+                border-radius: 0 6px 6px 0; 
+                padding: 15px 20px; 
+                margin: 20px 0; 
+                font-size: 10.5pt; 
+            }
+            .tip-box-title { 
+                font-weight: 700; 
+                color: var(--color-warm-orange); 
+                margin-bottom: 8px; 
+                font-family: 'Inter', sans-serif;
+            }
+            
+            .example-list {
+                list-style-type: '✓ ';
+                padding-left: 20px;
+                margin: 10px 0 15px 0;
+                font-size: 10.5pt;
+            }
+            .example-list li { margin-bottom: 5px; }
+    
+            /* =================================================================== */
+            /* 연습 문제 스타일                                                    */
+            /* =================================================================== */
+            .practice-section-header { 
+                font-family: 'Inter', sans-serif; 
+                font-size: 16pt; 
+                font-weight: 700; 
+                color: #fff; 
+                background: var(--color-deep-blue); 
+                padding: 12px 20px; 
+                margin: 20px 0 20px 0; 
+                border-radius: 8px; 
+            }
+            .problem-block { 
+                margin-bottom: 20px; 
+                padding: 15px; 
+                border: 1px solid var(--color-border); 
+                border-left: 4px solid var(--color-sea-blue); 
+                border-radius: 0 5px 5px 0; 
+                background: #fff;
+            }
+            .problem-meta {
+                display: flex;
+                align-items: center;
+                margin-bottom: 12px;
+            }
+            .problem-number { 
+                font-family: 'Inter', sans-serif; 
+                font-weight: 700; 
+                color: white;
+                background-color: var(--color-sea-blue);
+                border-radius: 50%;
+                width: 28px;
+                height: 28px;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 10px;
+                font-size: 11pt;
+            }
+            .problem-text { 
+                font-size: 11pt; 
+                margin-bottom: 12px; 
+                line-height: 1.8;
+                text-align: justify;
+            }
+            .problem-text u {
+                text-decoration: underline;
+                text-decoration-color: var(--color-warm-orange);
+                text-decoration-thickness: 1.5px;
+                font-weight: 500;
+            }
+            .problem-question {
+                margin-top: 15px;
+                padding: 12px 15px;
+                background-color: var(--color-bg-light);
+                border: 1px solid var(--color-border);
+                border-left: 4px solid var(--color-warm-orange);
+                border-radius: 0 5px 5px 0;
+                font-size: 10.5pt;
+                font-style: italic;
+                color: var(--color-deep-blue);
+                font-weight: 500;
+            }
+            .problem-choices { 
+                list-style: none; 
+                padding-left: 0; 
+                font-size: 10.5pt; 
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 5px 20px;
+            }
+            .problem-choices li { 
+                margin-bottom: 4px; 
+                padding: 6px 10px; 
+                border-radius: 4px;
+                display: flex;
+                align-items: baseline;
+                text-align: justify;
+            }
+            .problem-choices li:hover {
+                background-color: var(--color-bg-light);
+            }
+            .choice-number {
+                font-family: 'Inter', sans-serif;
+                font-weight: 600;
+                color: var(--color-deep-blue);
+                margin-right: 8px;
+            }
+    
+            /* =================================================================== */
+            /* 정답 및 해설 스타일                                                 */
+            /* =================================================================== */
+            .answer-key-section .section-title {
+                color: var(--color-warm-orange);
+                border-bottom-color: var(--color-sea-blue);
+            }
+            .quick-answer-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(55px, 1fr));
+                gap: 8px;
+                margin: 20px 0;
+                text-align: center;
+                font-size: 10pt;
+                font-family: 'Inter', sans-serif;
+            }
+            .quick-answer-item {
+                padding: 8px;
+                border: 1px solid var(--color-border);
+                border-radius: 4px;
+                background-color: var(--color-bg-light);
+            }
+            .quick-answer-item .num {
+                font-weight: 700;
+                color: var(--color-text-light);
+            }
+            .quick-answer-item .ans {
+                font-weight: 700;
+                color: var(--color-deep-blue);
+            }
+            .explanation-block {
+                margin-bottom: 15px;
+                padding-top: 15px;
+                border-top: 1px solid var(--color-border);
+            }
+            .explanation-block:first-of-type {
+                border-top: none;
+                padding-top: 0;
+            }
+            .explanation-header {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+            .explanation-header .problem-number {
+                background-color: var(--color-warm-orange);
+            }
+            .explanation-header .correct-answer {
+                font-family: 'Inter', sans-serif;
+                font-size: 12pt;
+                font-weight: 700;
+                color: var(--color-deep-blue);
+            }
+            .explanation-content {
+                font-size: 10.5pt;
+                padding: 10px 15px;
+                background-color: var(--color-bg-light);
+                border-radius: 5px;
+                text-align: justify;
+    
+            }
+            .explanation-content b {
+                color: var(--color-sea-blue);
+            }
+            
+            /* =================================================================== */
+            /* 유틸리티 및 인쇄 최적화                                             */
+            /* =================================================================== */
+            .avoid-break { break-inside: avoid; page-break-inside: avoid; }
+            
+            @media print { 
+                body { background: #fff; } 
+                .page { margin: 0; box-shadow: none; } 
+            }
+            p, li, div { orphans: 3; widows: 3; }
+            .practice-section-header, .section-title, .part-header { break-after: avoid-page; }
+            .problem-block, .tip-box, .grammar-table { break-inside: avoid; }
+    
+        </style>
+    </head>
+    <body>
+    
+        <!-- =================================================================== -->
+        <!-- Part 2 소개 페이지 (심화 버전)                                        -->
+        <!-- =================================================================== -->
+        <div class="page no-header-footer part-intro-page">
+            <div class="part-intro-container">
+                <div class="part-intro-number eng-text">Part 2</div>
+                <h2 class="part-intro-title">가정법<br>(Conditional Mood)</h2>
+                <h3 class="part-intro-subtitle eng-text">Mastering Counterfactuals</h3>
+                <hr class="part-intro-divider">
+                <p class="part-intro-description">
+                    가정법(Conditional Mood)은 단순히 공식을 암기하는 영역이 아닙니다. 이는 사실(fact)의 세계를 벗어나 반사실적(counterfactual) 상황, 가상 시나리오, 그리고 강한 소망을 논리적으로 표현하는 고도의 문법 체계입니다. 가정법의 정수는 '시제 후퇴(tense backshifting)'를 통해 현실과의 '심리적 거리감'을 창조하는 데 있습니다. 이 파트에서는 단순 가정법을 넘어, 혼합가정법, 도치, 그리고 If 없는 가정법 구문까지 아우르며 가정법의 모든 것을 완벽하게 정복합니다.
+                </p>
+            </div>
+        </div>
+        
+        <!-- =================================================================== -->
+        <!-- 본문 내용 페이지 시작 (Part 2. 가정법) (심화 버전)                    -->
+        <!-- =================================================================== -->
+        <div class="page chapter-page">
+            <div class="page-content">
+                <div class="part-header first-in-page">
+                    <span class="part-number eng-text">Part 2</span>
+                    <span>가정법 (Conditional Mood) - 심층 개념</span>
+                </div>
+        
+                <div class="section-title eng-text"><span class="emoji">📖</span>가정법의 심층 이해: 시제 이동과 심리적 거리감</div>
+                <p class="content-paragraph">
+                    <b>가정법(Subjunctive/Conditional Mood)</b>은 화자가 특정 상황을 '사실'이 아닌 '비현실(irrealis)'의 영역으로 설정하고 있음을 명시적으로 보여주는 문법적 장치입니다. 직설법이 현실을 있는 그대로 반영하는 거울이라면, 가정법은 현실을 비틀어 상상의 세계를 보여주는 프리즘과 같습니다.
+                </p>
+                <p class="content-paragraph">
+                    이 '비현실성'을 표현하기 위해 영어는 <b>시제 후퇴(Tense Backshifting)</b>라는 독특한 전략을 사용합니다. 즉, 현재의 상상은 과거 시제로, 과거의 상상은 대과거(과거완료) 시제로 표현하여 의도적으로 시간적 불일치를 만듭니다. 이는 현실로부터 한 걸음 물러나 있다는 '심리적 거리감'을 문법적으로 구현한 것입니다.
+                </p>
+                <table class="grammar-table comparison-table">
+                    <thead><tr><th>구분</th><th>직설법 (Indicative Mood - 사실)</th><th>가정법 (Subjunctive Mood - 비현실)</th></tr></thead>
+                    <tbody>
+                        <tr><td><b>현재 시점</b></td>
+                            <td>Because the data <b>is</b> insufficient, we <b>cannot</b> proceed with the analysis.</td>
+                            <td>If the data <b>were</b> sufficient, we <b>could</b> proceed with the analysis.</td>
+                        </tr>
+                        <tr><td><b>과거 시점</b></td>
+                            <td>As he <b>did not follow</b> the advice, he <b>faced</b> financial difficulties.</td>
+                            <td>If he <b>had followed</b> the advice, he <b>would not have faced</b> financial difficulties.</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="content-paragraph">
+                    위 표에서 볼 수 있듯, 가정법은 단순히 '만약'을 의미하는 것을 넘어, '실제로는 그렇지 않지만'이라는 강력한 전제를 내포하고 있습니다.
+                </p>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+        
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 2: 가정법 (Conditional Mood)</span>
+            </div>
+            <div class="page-content">
+                <div class="tip-box first-in-page">
+                    <div class="tip-box-title eng-text"><span class="emoji">🎯</span>vera's flavor tip</div>
+                    <h4 style="font-weight:700; color: var(--color-deep-blue); margin-top:15px; margin-bottom: 10px;">1. 가정법 시제 = 현실과의 '거리'</h4>
+                    <p style="font-size: 10.5pt;">
+                        가정법 시제를 공식으로만 외우면 혼합가정법에서 무너집니다. '현실에서 얼마나 멀어지는가'라는 '거리' 개념으로 접근하면 모든 가정법이 하나의 원리로 꿰뚫어 보입니다.
+                    </p>
+                    <ul class="example-list" style="list-style-type: '→ '; padding-left:20px;">
+                        <li><b>거리 0 (현실):</b> He <b>is</b> not a diligent student.</li>
+                        <li><b>거리 1 (현재 사실과 반대):</b> I wish he <b>were</b> a diligent student. (가정법 과거)</li>
+                        <li><b>거리 2 (과거 사실과 반대):</b> If he <b>had been</b> a diligent student, he would have passed. (가정법 과거완료)</li>
+                    </ul>
+                    <h4 style="font-weight:700; color: var(--color-deep-blue); margin-top:20px; margin-bottom: 10px;">2. 혼합가정법의 열쇠, '시간 부사'를 찾아라!</h4>
+                    <p style="font-size: 10.5pt;">
+                        혼합가정법 문제는 문장 안에 반드시 시간적 단서(<code>now</code>, <code>today</code>, <code>last year</code>, <code>then</code> 등)를 포함합니다. 각 절의 시간 부사를 보고 시제를 결정하면 절대 틀리지 않습니다.
+                    </p>
+                    <p style="font-size: 10.5pt; background: #f2f4f8; padding: 10px; border-radius: 6px;">
+                        If the scientist <b>had not made</b> that critical error <i>in his previous experiment</i>, his theory <b>would be</b> widely accepted <i>today</i>.<br>
+                        → <i>in his previous experiment</i> (과거) → 과거 사실 반대 → <b>가정법 과거완료 (had p.p.)</b><br>
+                        → <i>today</i> (현재) → 현재 결과 반대 → <b>가정법 과거 (조동사 과거 + R)</b>
+                    </p>
+                    <h4 style="font-weight:700; color: var(--color-deep-blue); margin-top:20px; margin-bottom: 10px;">3. 'If 없는 가정법'을 간파하는 눈을 길러라!</h4>
+                    <p style="font-size: 10.5pt;">
+                        고난도 문제에서는 <code>If</code>가 보이지 않습니다. 하지만 주절에 <code>would/could/might + (have) R</code>이 보인다면, 문장 어딘가에 조건의 의미를 숨기고 있는 어구를 찾아내야 합니다. (e.g., <code>Without...</code>, <code>A true friend...</code>, <code>In your shoes...</code>)
+                    </p>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+        
+    </body>
+</html>

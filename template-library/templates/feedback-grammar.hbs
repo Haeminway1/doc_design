@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{student.name}} 문법 피드백지 · {{student.date}}</title>
+  <style>{{{css}}}</style>
+</head>
+<body>
+
+{{!-- 리포트 헤더 + 학습 요약 --}}
+{{> header}}
+
+{{!-- Section 1: 틀린 문제 리스트 --}}
+<div class="section-header page-break-before">
+  <span class="section-num">Section 1</span>
+  문제 리스트
+</div>
+
+{{#each problems}}
+{{> problem-card}}
+{{/each}}
+
+{{!-- Section 2: 해설 파트 --}}
+<div class="section-header page-break-before">
+  <span class="section-num">Section 2</span>
+  해설 파트
+</div>
+
+{{#each themes}}
+{{#if (eq category "grammar")}}
+<h2>테마 {{id}}. {{title}}</h2>
+
+{{!-- 관련 문제 번호 배지 --}}
+<p style="font-size: 9pt; color: #718096; margin-bottom: 12px;">
+  관련 문제:
+  {{#each problemNums}}
+  <span style="display: inline-block; background-color: #EDF5FC; border: 1px solid #B8D4EC; border-radius: 10px; padding: 1px 8px; margin: 1px; font-size: 8pt; color: #4A90C4; font-weight: 700;">{{this}}</span>
+  {{/each}}
+</p>
+
+{{!-- 문법 규칙 섹션 --}}
+{{> grammar-rule}}
+
+{{!-- 오답 분석 --}}
+{{#if wrongAnalysis.length}}
+<h4 style="color: #c05621; margin-top: 14px;">오답 분석</h4>
+{{> wrong-analysis}}
+{{/if}}
+
+<hr class="section-divider">
+{{/if}}
+{{/each}}
+
+{{!-- Section 3: 복습 체크리스트 --}}
+<div class="section-header page-break-before">
+  <span class="section-num">Section 3</span>
+  복습 체크리스트 &amp; 종합 분석
+</div>
+
+{{> summary}}
+
+{{!-- 연습문제 Parts --}}
+{{#if practices.length}}
+{{#each practices}}
+<div class="section-header page-break-before">
+  <span class="section-num">연습 파트 {{id}}</span>
+  {{title}}
+</div>
+
+{{#if instruction}}
+<div class="tip-box avoid-break">
+  <span class="tip-label">학습 안내</span>
+  <p>{{instruction}}</p>
+</div>
+{{/if}}
+
+{{#each questions}}
+<div class="practice-item avoid-break">
+  <p><span class="practice-num">{{num}}.</span> {{{text}}}</p>
+  {{#if choices.length}}
+  <div class="practice-choices">
+    {{#each choices}}
+    <div>{{@index_plus_1}}. {{this}}</div>
+    {{/each}}
+  </div>
+  {{/if}}
+</div>
+{{/each}}
+
+{{!-- 정답 및 해설 --}}
+<div class="section-header page-break-before">
+  <span class="section-num">정답 및 해설 — 파트 {{id}}</span>
+  {{title}}
+</div>
+
+<table class="avoid-break">
+  <thead>
+    <tr>
+      <th style="width: 50px;">번호</th>
+      <th style="width: 80px;">정답</th>
+      <th>해설</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each answers}}
+    <tr>
+      <td style="text-align: center; font-weight: 700; color: #4A90C4;">{{num}}</td>
+      <td style="font-weight: 700; color: #38a169;">{{answer}}</td>
+      <td>{{explanation}}</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+
+{{/each}}
+{{/if}}
+
+{{!-- 푸터 --}}
+{{> footer}}
+
+</body>
+</html>

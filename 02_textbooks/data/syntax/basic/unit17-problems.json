@@ -1,0 +1,131 @@
+{
+  "bookId": "syntax-basic-unit17",
+  "unit": 17,
+  "title": "명사절 (that, what, if/whether)",
+  "part": "IV",
+  "week": 4,
+  "type": "sentence-analysis",
+  "instruction": "다음 문장에서 명사절을 찾아 [ ]로 묶고, 접속사의 종류를 확인한 후 해석해 보세요.",
+  "problems": [
+    {
+      "id": "syntax-basic-unit17-1",
+      "number": 1,
+      "type": "sentence-analysis",
+      "stem": "I believe that everything happens for a reason.",
+      "answer": {
+        "analysis": "I believe [that everything happens for a reason].",
+        "pattern": "",
+        "translation": "나는 [모든 일은 이유가 있어서 일어난다]고 믿는다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit17-2",
+      "number": 2,
+      "type": "sentence-analysis",
+      "stem": "What is important is your health.",
+      "answer": {
+        "analysis": "[What is important] is your health.",
+        "pattern": "",
+        "translation": "[중요한 것]은 너의 건강이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit17-3",
+      "number": 3,
+      "type": "sentence-analysis",
+      "stem": "The question is whether he told the truth.",
+      "answer": {
+        "analysis": "The question is [whether he told the truth].",
+        "pattern": "",
+        "translation": "문제는 [그가 진실을 말했는지 아닌지]이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit17-4",
+      "number": 4,
+      "type": "sentence-analysis",
+      "stem": "I can't understand what he is saying.",
+      "answer": {
+        "analysis": "I can't understand [what he is saying].",
+        "pattern": "",
+        "translation": "나는 [그가 무슨 말을 하고 있는지] 이해할 수 없다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit17-5",
+      "number": 5,
+      "type": "sentence-analysis",
+      "stem": "That she passed the exam is a miracle.",
+      "answer": {
+        "analysis": "[That she passed the exam] is a miracle.",
+        "pattern": "",
+        "translation": "[그녀가 시험에 합격했다는 것]은 기적이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit17-6",
+      "number": 6,
+      "type": "sentence-analysis",
+      "stem": "Can you tell me if this is the right way to the station?",
+      "answer": {
+        "analysis": "Can you tell me [if this is the right way to the station]?",
+        "pattern": "",
+        "translation": "[이것이 역으로 가는 올바른 길인지 아닌지]",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit17-7",
+      "number": 7,
+      "type": "sentence-analysis",
+      "stem": "My hope is that we can finish this project on time.",
+      "answer": {
+        "analysis": "제게 말해주실 수 있나요? My hope is [that we can finish this project on time].",
+        "pattern": "",
+        "translation": "나의 희망은 [우리가 이 프로젝트를 제시간에 끝",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit17-8",
+      "number": 8,
+      "type": "sentence-analysis",
+      "stem": "What I want to know is your opinion.",
+      "answer": {
+        "analysis": "낼 수 있다]는 것이다. [What I want to know] is your opinion.",
+        "pattern": "",
+        "translation": "[내가 알고 싶은 것]은 너의 의견이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit17-9",
+      "number": 9,
+      "type": "sentence-analysis",
+      "stem": "The tragedy is that he died so young.",
+      "answer": {
+        "analysis": "The tragedy is [that he died so young].",
+        "pattern": "",
+        "translation": "비극은 [그가 너무 젊어서 죽었다]는 것이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit17-10",
+      "number": 10,
+      "type": "sentence-analysis",
+      "stem": "I'm not sure if I can do it.",
+      "answer": {
+        "analysis": "I'm not sure [if I can do it].",
+        "pattern": "",
+        "translation": "나는 [내가 그것을 할 수 있을지 없을지] 확신이 없다.",
+        "notes": ""
+      }
+    }
+  ]
+}

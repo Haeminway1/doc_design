@@ -1,0 +1,503 @@
+{
+  "bookId": "vocab-basic",
+  "day": 59,
+  "theme": "집과 생활 (Home and Living)",
+  "words": [
+    {
+      "word": "residence",
+      "pronunciation": "[rézədəns]",
+      "partOfSpeech": "n.",
+      "meaning": "주택, 거주지",
+      "example": {
+        "en": "The Prime Minister's official residence is at 10 Downing Street.",
+        "ko": "수상의 공식 관저는 다우닝가 10번지에 있다."
+      }
+    },
+    {
+      "word": "dwelling",
+      "pronunciation": "[dwéli&eng;]",
+      "partOfSpeech": "n.",
+      "meaning": "주거, 주택",
+      "example": {
+        "en": "The cave was a primitive dwelling for early humans.",
+        "ko": "동굴은 초기 인류의 원시적인 주거지였다."
+      }
+    },
+    {
+      "word": "abode",
+      "pronunciation": "[əbóud]",
+      "partOfSpeech": "n.",
+      "meaning": "(문어) 거주지, 집",
+      "example": {
+        "en": "Welcome to my humble abode.",
+        "ko": "저의 누추한 집에 오신 것을 환영합니다."
+      }
+    },
+    {
+      "word": "household",
+      "pronunciation": "[háushòuld]",
+      "partOfSpeech": "n.",
+      "meaning": "가정, 가구",
+      "example": {
+        "en": "The average household income has increased.",
+        "ko": "평균 가구 소득이 증가했다."
+      }
+    },
+    {
+      "word": "furniture",
+      "pronunciation": "[fə́ːrniʧər]",
+      "partOfSpeech": "n.",
+      "meaning": "가구",
+      "example": {
+        "en": "We need to buy some new furniture for the living room.",
+        "ko": "우리는 거실에 놓을 새 가구를 좀 사야 한다."
+      }
+    },
+    {
+      "word": "appliance",
+      "pronunciation": "[əpláiəns]",
+      "partOfSpeech": "n.",
+      "meaning": "가전제품",
+      "example": {
+        "en": "The kitchen is equipped with modern appliances.",
+        "ko": "주방에는 현대적인 가전제품이 갖추어져 있다."
+      }
+    },
+    {
+      "word": "utensil",
+      "pronunciation": "[juːténsl]",
+      "partOfSpeech": "n.",
+      "meaning": "(가정용) 기구, 도구",
+      "example": {
+        "en": "Knives, forks, and spoons are eating utensils.",
+        "ko": "칼, 포크, 숟가락은 식사 도구이다."
+      }
+    },
+    {
+      "word": "decor",
+      "pronunciation": "[deikɔ́ːr]",
+      "partOfSpeech": "n.",
+      "meaning": "장식, 인테리어",
+      "example": {
+        "en": "The restaurant has a simple but elegant decor.",
+        "ko": "그 레스토랑은 단순하지만 우아한 인테리어를 가지고 있다."
+      }
+    },
+    {
+      "word": "layout",
+      "pronunciation": "[léiàut]",
+      "partOfSpeech": "n.",
+      "meaning": "배치, 레이아웃",
+      "example": {
+        "en": "I like the open layout of this apartment.",
+        "ko": "나는 이 아파트의 개방형 배치가 마음에 든다."
+      }
+    },
+    {
+      "word": "floor plan",
+      "partOfSpeech": "n.",
+      "meaning": "평면도",
+      "example": {
+        "en": "The architect showed us the floor plan of the new house.",
+        "ko": "건축가는 우리에게 새 집의 평면도를 보여주었다."
+      }
+    },
+    {
+      "word": "kitchen",
+      "pronunciation": "[kíʧin]",
+      "partOfSpeech": "n.",
+      "meaning": "주방",
+      "example": {
+        "en": "The smell of cooking is coming from the kitchen.",
+        "ko": "주방에서 요리하는 냄새가 난다."
+      }
+    },
+    {
+      "word": "bedroom",
+      "pronunciation": "[bédrùːm]",
+      "partOfSpeech": "n.",
+      "meaning": "침실",
+      "example": {
+        "en": "The house has three bedrooms.",
+        "ko": "그 집은 침실이 세 개 있다."
+      }
+    },
+    {
+      "word": "bathroom",
+      "pronunciation": "[bǽθrùːm]",
+      "partOfSpeech": "n.",
+      "meaning": "욕실",
+      "example": {
+        "en": "I'm going to take a shower in the bathroom.",
+        "ko": "나는 욕실에서 샤워할 것이다."
+      }
+    },
+    {
+      "word": "living room",
+      "partOfSpeech": "n.",
+      "meaning": "거실",
+      "example": {
+        "en": "We watched a movie in the living room.",
+        "ko": "우리는 거실에서 영화를 봤다."
+      }
+    },
+    {
+      "word": "dining room",
+      "partOfSpeech": "n.",
+      "meaning": "식당",
+      "example": {
+        "en": "The family eats dinner together in the dining room.",
+        "ko": "가족은 식당에서 함께 저녁을 먹는다."
+      }
+    },
+    {
+      "word": "basement",
+      "pronunciation": "[béismənt]",
+      "partOfSpeech": "n.",
+      "meaning": "지하실",
+      "example": {
+        "en": "We store our old furniture in the basement.",
+        "ko": "우리는 낡은 가구를 지하실에 보관한다."
+      }
+    },
+    {
+      "word": "attic",
+      "pronunciation": "[ǽtik]",
+      "partOfSpeech": "n.",
+      "meaning": "다락방",
+      "example": {
+        "en": "The attic is full of old boxes and forgotten treasures.",
+        "ko": "다락방은 낡은 상자들과 잊혀진 보물들로 가득하다."
+      }
+    },
+    {
+      "word": "garage",
+      "pronunciation": "[gərάːʒ]",
+      "partOfSpeech": "n.",
+      "meaning": "차고",
+      "example": {
+        "en": "He parked his car in the garage.",
+        "ko": "그는 차를 차고에 주차했다."
+      }
+    },
+    {
+      "word": "yard",
+      "pronunciation": "[jɑːrd]",
+      "partOfSpeech": "n.",
+      "meaning": "마당",
+      "example": {
+        "en": "The children are playing in the front yard.",
+        "ko": "아이들이 앞마당에서 놀고 있다."
+      }
+    },
+    {
+      "word": "garden",
+      "pronunciation": "[gάːrdn]",
+      "partOfSpeech": "n.",
+      "meaning": "정원",
+      "example": {
+        "en": "She grows beautiful flowers in her garden.",
+        "ko": "그녀는 정원에서 아름다운 꽃들을 키운다."
+      }
+    },
+    {
+      "word": "patio",
+      "pronunciation": "[pǽtiòu]",
+      "partOfSpeech": "n.",
+      "meaning": "파티오, 테라스",
+      "example": {
+        "en": "We had a barbecue on the patio.",
+        "ko": "우리는 파티오에서 바비큐를 했다."
+      }
+    },
+    {
+      "word": "porch",
+      "pronunciation": "[pɔːrtʃ]",
+      "partOfSpeech": "n.",
+      "meaning": "현관",
+      "example": {
+        "en": "We sat on the porch and watched the sunset.",
+        "ko": "우리는 현관에 앉아 일몰을 보았다."
+      }
+    },
+    {
+      "word": "balcony",
+      "pronunciation": "[bǽlkəni]",
+      "partOfSpeech": "n.",
+      "meaning": "발코니",
+      "example": {
+        "en": "The hotel room has a balcony with a sea view.",
+        "ko": "그 호텔 방에는 바다 전망의 발코니가 있다."
+      }
+    },
+    {
+      "word": "window",
+      "pronunciation": "[wíndou]",
+      "partOfSpeech": "n.",
+      "meaning": "창문",
+      "example": {
+        "en": "Please open the window to let in some fresh air.",
+        "ko": "신선한 공기가 들어오도록 창문을 열어주세요."
+      }
+    },
+    {
+      "word": "door",
+      "pronunciation": "[dɔːr]",
+      "partOfSpeech": "n.",
+      "meaning": "문",
+      "example": {
+        "en": "Don't forget to lock the door when you leave.",
+        "ko": "나갈 때 문 잠그는 것을 잊지 마세요."
+      }
+    },
+    {
+      "word": "roof",
+      "pronunciation": "[ruːf]",
+      "partOfSpeech": "n.",
+      "meaning": "지붕",
+      "example": {
+        "en": "The roof of the house was damaged in the storm.",
+        "ko": "폭풍으로 집의 지붕이 손상되었다."
+      }
+    },
+    {
+      "word": "wall",
+      "pronunciation": "[wɔːl]",
+      "partOfSpeech": "n.",
+      "meaning": "벽",
+      "example": {
+        "en": "He hung a picture on the wall.",
+        "ko": "그는 벽에 그림을 걸었다."
+      }
+    },
+    {
+      "word": "floor",
+      "pronunciation": "[flɔːr]",
+      "partOfSpeech": "n.",
+      "meaning": "바닥, 층",
+      "example": {
+        "en": "The office is on the third floor.",
+        "ko": "사무실은 3층에 있다."
+      }
+    },
+    {
+      "word": "ceiling",
+      "pronunciation": "[síːli&eng;]",
+      "partOfSpeech": "n.",
+      "meaning": "천장",
+      "example": {
+        "en": "The room has a high ceiling.",
+        "ko": "그 방은 천장이 높다."
+      }
+    },
+    {
+      "word": "stairs",
+      "pronunciation": "[stεərz]",
+      "partOfSpeech": "n.",
+      "meaning": "계단",
+      "example": {
+        "en": "Be careful on the stairs; they are very steep.",
+        "ko": "계단이 매우 가파르니 조심하세요."
+      }
+    },
+    {
+      "word": "chore",
+      "pronunciation": "[tʃɔːr]",
+      "partOfSpeech": "n.",
+      "meaning": "(정기적인) 집안일, 허드렛일",
+      "example": {
+        "en": "I have to do my chores before I can go out.",
+        "ko": "나는 나가기 전에 집안일을 해야 한다."
+      }
+    },
+    {
+      "word": "maintenance",
+      "pronunciation": "[méintənəns]",
+      "partOfSpeech": "n.",
+      "meaning": "유지, 보수",
+      "example": {
+        "en": "The building requires regular maintenance.",
+        "ko": "그 건물은 정기적인 보수가 필요하다."
+      }
+    },
+    {
+      "word": "rent",
+      "pronunciation": "[rent]",
+      "partOfSpeech": "n.\n        \n         v.",
+      "meaning": "집세, 임대료\n        \n         임대하다",
+      "example": {
+        "en": "The rent for this apartment is due on the first of the month.",
+        "ko": "이 아파트의 집세는 매월 1일에 납부해야 한다."
+      }
+    },
+    {
+      "word": "lease",
+      "pronunciation": "[liːs]",
+      "partOfSpeech": "n.\n        \n         v.",
+      "meaning": "임대차 계약\n        \n         임대하다",
+      "example": {
+        "en": "We signed a one-year lease for the apartment.",
+        "ko": "우리는 그 아파트에 대해 1년 임대차 계약을 맺었다."
+      }
+    },
+    {
+      "word": "tenant",
+      "pronunciation": "[ténənt]",
+      "partOfSpeech": "n.",
+      "meaning": "세입자",
+      "example": {
+        "en": "The new tenants are moving in next week.",
+        "ko": "새로운 세입자들이 다음 주에 이사 온다."
+      }
+    },
+    {
+      "word": "landlord",
+      "pronunciation": "[lǽndlɔ̀ːrd]",
+      "partOfSpeech": "n.",
+      "meaning": "집주인",
+      "example": {
+        "en": "Our landlord is responsible for repairs.",
+        "ko": "우리 집주인은 수리를 책임진다."
+      }
+    },
+    {
+      "word": "neighbor",
+      "pronunciation": "[néibər]",
+      "partOfSpeech": "n.",
+      "meaning": "이웃",
+      "example": {
+        "en": "We have very friendly neighbors.",
+        "ko": "우리는 매우 친절한 이웃을 두고 있다."
+      }
+    },
+    {
+      "word": "neighborhood",
+      "pronunciation": "[néibərhùd]",
+      "partOfSpeech": "n.",
+      "meaning": "동네, 이웃",
+      "example": {
+        "en": "It's a quiet and safe neighborhood.",
+        "ko": "그곳은 조용하고 안전한 동네이다."
+      }
+    },
+    {
+      "word": "suburb",
+      "pronunciation": "[sʌ́bərb]",
+      "partOfSpeech": "n.",
+      "meaning": "교외",
+      "example": {
+        "en": "Many people commute from the suburbs to work in the city.",
+        "ko": "많은 사람들이 교외에서 도시로 통근한다."
+      }
+    },
+    {
+      "word": "downtown",
+      "pronunciation": "[dáuntáun]",
+      "partOfSpeech": "n.",
+      "meaning": "도심",
+      "example": {
+        "en": "Let's go downtown for dinner.",
+        "ko": "저녁 먹으러 시내에 가자."
+      }
+    },
+    {
+      "word": "urban",
+      "pronunciation": "[ə́ːrbən]",
+      "partOfSpeech": "a.",
+      "meaning": "도시의",
+      "example": {
+        "en": "Urban areas are often crowded and noisy.",
+        "ko": "도시 지역은 종종 붐비고 시끄럽다."
+      }
+    },
+    {
+      "word": "rural",
+      "pronunciation": "[rúərəl]",
+      "partOfSpeech": "a.",
+      "meaning": "시골의",
+      "example": {
+        "en": "He grew up in a rural area.",
+        "ko": "그는 시골 지역에서 자랐다."
+      }
+    },
+    {
+      "word": "domestic",
+      "pronunciation": "[dəméstik]",
+      "partOfSpeech": "a.",
+      "meaning": "가정의; 국내의",
+      "example": {
+        "en": "The airline offers both domestic and international flights.",
+        "ko": "그 항공사는 국내선과 국제선 항공편을 모두 제공한다."
+      }
+    },
+    {
+      "word": "household chores",
+      "partOfSpeech": "n.",
+      "meaning": "집안일",
+      "example": {
+        "en": "Everyone in the family helps with the household chores.",
+        "ko": "가족 모두가 집안일을 돕는다."
+      }
+    },
+    {
+      "word": "housekeeping",
+      "pronunciation": "[háuskìːpi&eng;]",
+      "partOfSpeech": "n.",
+      "meaning": "살림, 가사",
+      "example": {
+        "en": "Good housekeeping can make a home more comfortable.",
+        "ko": "살림을 잘하면 집이 더 편안해질 수 있다."
+      }
+    },
+    {
+      "word": "amenity",
+      "pronunciation": "[əménəti]",
+      "partOfSpeech": "n.",
+      "meaning": "(pl.) 편의 시설",
+      "example": {
+        "en": "The hotel has excellent amenities, including a pool and a gym.",
+        "ko": "그 호텔은 수영장과 체육관을 포함한 훌륭한 편의 시설을 갖추고 있다."
+      }
+    },
+    {
+      "word": "utility",
+      "pronunciation": "[juːtíləti]",
+      "partOfSpeech": "n.",
+      "meaning": "(전기·수도 등의) 공공 서비스; 유용성",
+      "example": {
+        "en": "The rent includes all utilities except for electricity.",
+        "ko": "임대료에는 전기를 제외한 모든 공과금이 포함된다."
+      }
+    },
+    {
+      "word": "domicile",
+      "pronunciation": "[ˈdɒmɪsaɪl]",
+      "partOfSpeech": "noun/verb",
+      "meaning": "주거지, 거주지 (명사) / 거주하다 (동사)",
+      "example": {
+        "en": "The wealthy family chose to domicile in a luxurious penthouse overlooking the city.",
+        "ko": "그 부유한 가족은 도시가 내려다보이는 호화로운 펜트하우스에 거주하기로 했다."
+      }
+    },
+    {
+      "word": "habitable",
+      "pronunciation": "[ˈhæbɪtəbl]",
+      "partOfSpeech": "adjective",
+      "meaning": "거주할 수 있는, 살만한",
+      "example": {
+        "en": "After extensive renovation, the old building was finally deemed habitable by city inspectors.",
+        "ko": "광범위한 보수 공사 후, 그 오래된 건물은 마침내 시 검사관들에 의해 거주 가능한 것으로 판단되었다."
+      }
+    },
+    {
+      "word": "palatial",
+      "pronunciation": "[pəˈleɪʃəl]",
+      "partOfSpeech": "adjective",
+      "meaning": "궁전 같은, 호화로운, 웅장한",
+      "example": {
+        "en": "Their palatial residence featured marble floors, crystal chandeliers, and a grand staircase.",
+        "ko": "그들의 궁전 같은 저택에는 대리석 바닥, 크리스탈 샹들리에, 그리고 웅장한 계단이 있었다."
+      }
+    }
+  ]
+}

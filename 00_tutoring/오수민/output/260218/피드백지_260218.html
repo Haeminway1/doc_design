@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>학습 피드백지 — 오수민 260218</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  html {
+    font-size: 10pt;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400; font-size: 10pt; line-height: 1.7;
+    color: #1a202c; background: #fff !important;
+    text-align: justify !important;
+  }
+  @page { size: A4; margin: 16mm 14mm; }
+
+  .page-break-after { page-break-after: always !important; }
+  .page-break-before { page-break-before: always !important; }
+  .avoid-break { page-break-inside: avoid !important; }
+  h1, h2, h3, h4 { page-break-after: avoid !important; }
+  table { page-break-inside: avoid !important; }
+
+  h1 { font-size: 20pt; font-weight: 700; color: #4A90C4 !important; margin: 20px 0 10px 0; padding-bottom: 6px; border-bottom: 3px solid #4A90C4; line-height: 1.3; }
+  h2 { font-size: 16pt; font-weight: 700; color: #5BA3D9 !important; margin: 18px 0 10px 0; padding-bottom: 4px; border-bottom: 2px solid #D4E5F3; line-height: 1.3; }
+  h3 { font-size: 13pt; font-weight: 700; color: #2d3748 !important; margin: 14px 0 8px 0; line-height: 1.4; }
+  h4 { font-size: 11pt; font-weight: 700; color: #4a5568 !important; margin: 10px 0 6px 0; line-height: 1.4; }
+  p { margin-bottom: 8px; }
+  strong { font-weight: 700; }
+  hr { border: none; border-top: 1px solid #D4E5F3; margin: 20px 0; }
+
+  table { width: 100%; border-collapse: collapse; margin: 12px 0 16px 0; font-size: 9pt; line-height: 1.6; }
+  thead th { background-color: #7BB8E8 !important; color: #fff !important; font-weight: 700; padding: 8px 10px; text-align: left; border: 1px solid #6AABDE; font-size: 9pt; }
+  tbody td { padding: 7px 10px; border: 1px solid #D4E5F3; vertical-align: top; }
+  tbody tr:nth-child(odd) { background-color: #fff !important; }
+  tbody tr:nth-child(even) { background-color: #F4F9FD !important; }
+  tbody td:first-child { font-weight: 500; }
+  .result-correct { color: #38a169 !important; font-weight: 700; }
+  .result-wrong { color: #e53e3e !important; font-weight: 700; }
+
+  .report-header { margin-bottom: 16px; }
+  .report-date { font-size: 10pt; color: #718096 !important; font-weight: 400; margin-bottom: 4px; }
+  .report-title { font-size: 22pt; font-weight: 700; color: #4A90C4 !important; margin-bottom: 6px; line-height: 1.2; border: none; padding: 0; }
+  .report-subtitle { font-size: 12pt; font-weight: 400; color: #4a5568 !important; margin-bottom: 2px; }
+  .report-meta { font-size: 9pt; color: #718096 !important; line-height: 1.8; margin-top: 8px; }
+  .report-meta span { display: inline-block; margin-right: 16px; }
+
+  .section-header { background-color: #5BA3D9 !important; color: #fff !important; padding: 12px 20px; margin: 20px -14mm 14px -14mm; padding-left: 14mm; padding-right: 14mm; font-size: 16pt; font-weight: 700; line-height: 1.3; }
+  .section-header .section-num { font-size: 12pt; font-weight: 300; display: block; margin-bottom: 2px; color: #C5DFEF !important; }
+
+  .severity-high { display: inline-block; background-color: #e53e3e !important; color: #fff !important; font-size: 8pt; font-weight: 700; padding: 1px 8px; border-radius: 10px; }
+  .severity-mid { display: inline-block; background-color: #ed8936 !important; color: #fff !important; font-size: 8pt; font-weight: 700; padding: 1px 8px; border-radius: 10px; }
+  .severity-low { display: inline-block; background-color: #38a169 !important; color: #fff !important; font-size: 8pt; font-weight: 700; padding: 1px 8px; border-radius: 10px; }
+
+  .diagnosis-card { border: 2px solid #B8D4EC; border-radius: 6px; padding: 14px 18px; margin: 14px 0; background-color: #F4F9FD !important; }
+  .diagnosis-card h3 { margin-top: 0; color: #4A90C4 !important; font-size: 12pt; }
+  .priority-order { background-color: #EDF5FC !important; border-left: 4px solid #7BB8E8; padding: 10px 16px; margin: 12px 0; font-size: 10pt; }
+
+  .question-box { background-color: #F4F9FD !important; border-left: 4px solid #7BB8E8; padding: 10px 14px; margin: 8px 0; font-size: 10pt; line-height: 1.7; }
+  .question-box p { margin: 0; }
+
+  .answer-box { background-color: #f0fff4 !important; border-left: 4px solid #38a169; padding: 8px 14px; margin: 8px 0; font-weight: 500; }
+  .grammar-block { background-color: #edf2f7 !important; border: 1px solid #D4E5F3; padding: 12px 16px; margin: 12px 0; font-size: 9pt; line-height: 1.8; white-space: pre-wrap; page-break-inside: avoid !important; }
+  .tip-box { background-color: #fffaf0 !important; border-left: 4px solid #ed8936; padding: 10px 16px; margin: 12px 0; page-break-inside: avoid !important; }
+  .tip-box .tip-label { font-weight: 700; color: #c05621 !important; font-size: 9pt; display: block; margin-bottom: 4px; }
+  .warning-box { background-color: #fff5f5 !important; border-left: 4px solid #e53e3e; padding: 10px 16px; margin: 12px 0; page-break-inside: avoid !important; }
+  .concept-box { background-color: #EDF5FC !important; border: 1px solid #7BB8E8; padding: 12px 16px; margin: 12px 0; page-break-inside: avoid !important; }
+  .concept-box .concept-label { font-weight: 700; color: #4A90C4 !important; font-size: 9pt; display: block; margin-bottom: 6px; }
+
+  .problem-card { border: 1px solid #D4E5F3; border-radius: 4px; padding: 14px 18px; margin: 14px 0; page-break-inside: avoid !important; background-color: #fff !important; }
+  .problem-header { display: flex; align-items: center; margin-bottom: 14px; gap: 12px; }
+  .problem-badge { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background-color: #7BB8E8 !important; color: #fff !important; font-weight: 700; font-size: 12pt; flex-shrink: 0; }
+  .problem-title { font-size: 11pt; font-weight: 700; color: #2d3748 !important; }
+  .problem-source { font-size: 8pt; color: #718096 !important; font-weight: 400; display: block; margin-top: 2px; }
+
+  .hl-key { color: #4A90C4 !important; font-weight: 700; }
+  .hl-wrong { color: #e53e3e !important; font-weight: 700; text-decoration: line-through; }
+  .hl-correct { color: #38a169 !important; font-weight: 700; }
+  .hl-blue { color: #5BA3D9 !important; font-weight: 700; }
+
+  .section-divider { border: none; border-top: 2px solid #D4E5F3; margin: 20px 0; }
+
+  .practice-item { margin: 10px 0; line-height: 2.2; font-size: 9.5pt; }
+  .practice-num { font-weight: 700; color: #4A90C4 !important; margin-right: 6px; }
+
+  @media print {
+    body { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+    .section-header { margin-left: -14mm; margin-right: -14mm; padding-left: 14mm; padding-right: 14mm; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== 첫 페이지: 리포트 헤더 + 학습 요약 ===== -->
+<div class="report-header">
+  <div class="report-date">2026. 02. 18</div>
+  <h1 class="report-title" style="border:none; margin-bottom:6px;">학습 피드백지</h1>
+  <div class="report-subtitle">영어영역 — 어법 &middot; 어휘 &middot; 독해 종합</div>
+  <div class="report-meta">
+    <span><strong>학생</strong> 오수민</span>
+    <span><strong>교재</strong> 2027학년도 VERADICT WINTER M EXAM</span>
+    <span><strong>범위</strong> 어법(1-2번), 어휘(3-4번), 독해(19-20번)</span>
+  </div>
+</div>
+
+<div class="diagnosis-card">
+  <h3>학습 요약</h3>
+  <p style="font-size:10pt; margin-bottom:8px;">
+    전체 6문제 중 오답 <strong>4문제</strong> (정답률 약 33%)
+  </p>
+  <p style="font-size:9.5pt; margin-bottom:4px;">
+    <strong style="color:#38a169;">잘한 점:</strong> 2번(엔트로피 어법)에서 "ways in which"의 관계사+전치사 구조를 정확히 파악했고, 4번(암흑 에너지 어휘)에서 "가속 팽창"과 "decreasing"의 모순을 올바르게 잡아냈습니다. 문법 구조와 문맥 논리에 대한 기본 감각이 있습니다.
+  </p>
+  <p style="font-size:9.5pt; margin-bottom:12px;">
+    <strong style="color:#e53e3e;">아쉬운 점:</strong> 어법에서 접속사 뒤 분사/본동사를 혼동했고(Q1), 어휘에서 나비효과의 핵심 논리(오차 증폭)를 놓쳤습니다(Q3). 독해에서는 두 개념(아름다움 vs 숭고)의 차이를 혼동했고(Q19), 담화 연결어 기반 순서 배열에서 어려움을 보였습니다(Q20).
+  </p>
+
+  <table>
+    <thead>
+      <tr><th>취약 영역</th><th style="width:60px;">문제</th><th style="width:70px;">심각도</th><th>핵심</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>준동사 vs 본동사 구별</strong></td>
+        <td>Q1</td>
+        <td><span class="severity-high">높음</span></td>
+        <td>접속사(While) 뒤에 분사(offering) 사용 &rarr; 본동사(offers) 필요</td>
+      </tr>
+      <tr>
+        <td><strong>문맥 논리 — 인과 방향성</strong></td>
+        <td>Q3</td>
+        <td><span class="severity-mid">보통</span></td>
+        <td>나비효과: 오차는 시간이 지나면 커지는데 "smaller" 놓침</td>
+      </tr>
+      <tr>
+        <td><strong>핵심 개념 대비 파악</strong></td>
+        <td>Q19</td>
+        <td><span class="severity-mid">보통</span></td>
+        <td>아름다움(평화적 편안함)과 숭고(이성의 위대함)를 혼동</td>
+      </tr>
+      <tr>
+        <td><strong>담화 연결어 기반 순서 추론</strong></td>
+        <td>Q20</td>
+        <td><span class="severity-mid">보통</span></td>
+        <td>"However &rarr; Instead &rarr; For instance" 논리 흐름 파악 미흡</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="priority-order">
+  <strong>학습 우선순위:</strong> 분사 vs 본동사 판별 연습 &rarr; 어휘 문맥에서 인과관계 방향 확인 &rarr; 독해 시 대비/대조 구조 주목 &rarr; 담화 연결어 정리
+</div>
+
+<!-- ===== Section 1: 틀린 문제 리스트 ===== -->
+<div class="page-break-before section-header">
+  <span class="section-num">Section 1</span>
+  틀린 문제 리스트
+</div>
+
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">1</div>
+    <div>
+      <div class="problem-title">While절의 동사 형태 오류</div>
+      <span class="problem-source">Q1 — 어법 (Broken Windows Theory)</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?</p>
+    <p style="font-size:9pt; margin-top:6px;">... While the theory <span class="hl-wrong">⑤ offering</span> a simple way to keep neighborhoods safe, we must consider if it treats all citizens fairly ...</p>
+  </div>
+  <div class="answer-box">
+    <strong>정답:</strong> <span class="hl-correct">⑤ offering &rarr; offers</span>
+    <br><strong>학생 선택:</strong> <span class="hl-wrong">④ policing</span> (분사형 형용사를 어법 오류로 오판)
+  </div>
+</div>
+
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">2</div>
+    <div>
+      <div class="problem-title">문맥 반대어 — 오차는 "커지는" 것</div>
+      <span class="problem-source">Q3 — 어휘 (Butterfly Effect)</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>다음 글의 밑줄 친 부분 중, 문맥상 낱말의 의미가 적절하지 않은 것은?</p>
+    <p style="font-size:9pt; margin-top:6px;">... small errors in measuring current temperature or wind speed grow <span class="hl-wrong">④ smaller</span> as time passes ...</p>
+  </div>
+  <div class="answer-box">
+    <strong>정답:</strong> <span class="hl-correct">④ smaller &rarr; larger</span> (나비효과: 작은 오차가 시간이 지나면 증폭됨)
+    <br><strong>학생 선택:</strong> <span class="hl-wrong">②</span> (문맥상 적절한 단어를 오답으로 판단)
+  </div>
+</div>
+
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">3</div>
+    <div>
+      <div class="problem-title">빈칸 추론 — 숭고 vs 아름다움 혼동</div>
+      <span class="problem-source">Q19 — 독해 (The Sublime)</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>다음 글의 빈칸에 들어갈 말로 가장 적절한 것을 고르시오.</p>
+    <p style="font-size:9pt; margin-top:6px;">... the sublime allows us to ________.</p>
+  </div>
+  <div class="answer-box">
+    <strong>정답:</strong> <span class="hl-correct">① recognise the greatness of our rational power</span>
+    <br><strong>학생 선택:</strong> <span class="hl-wrong">⑤ realize that human beings are precious</span> (이성의 "위대함"을 인간의 "소중함"으로 혼동)
+  </div>
+</div>
+
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">4</div>
+    <div>
+      <div class="problem-title">순서 배열 — 담화 연결어 파악 실패</div>
+      <span class="problem-source">Q20 — 독해 (Sapir-Whorf Hypothesis)</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?</p>
+  </div>
+  <div class="answer-box">
+    <strong>정답:</strong> <span class="hl-correct">② (B)&rarr;(A)&rarr;(C)</span>
+    <br><strong>학생 선택:</strong> <span class="hl-wrong">⑤ (C)&rarr;(B)&rarr;(A)</span> ("For instance"를 첫 단락으로 배치 &mdash; 뒷받침할 주장 없음)
+  </div>
+</div>
+
+<!-- ===== Section 2: 해설 파트 ===== -->
+<div class="page-break-before section-header">
+  <span class="section-num">Section 2 &mdash; Part A</span>
+  어법 해설 (테마별 분석)
+</div>
+
+<!-- ========== 테마 1: 분사 vs 본동사 ========== -->
+<h2>테마 1: 접속사절의 동사 형태 &mdash; 분사 vs 본동사</h2>
+
+<div class="concept-box">
+  <span class="concept-label">핵심 개념</span>
+  <p><strong>접속사(While, Although, Because, If, When 등)</strong> 뒤에는 반드시 <strong>"주어 + 본동사(finite verb)"</strong> 형태가 와야 합니다. 분사(~ing / ~ed)만으로는 절을 완성할 수 없습니다.</p>
+  <p style="margin-top:6px;">반면, <strong>접속사 없이</strong> 두 절을 연결할 때는 한쪽을 분사구문으로 만들 수 있습니다.</p>
+</div>
+
+<div class="grammar-block"><h4>판별법</h4>
+① 접속사가 있는가? &rarr; YES &rarr; 뒤에 "주어 + 본동사" 필수
+② 접속사가 없는가? &rarr; 분사(~ing/~ed)로 연결 가능 (분사구문)
+
+<strong>올바른 예:</strong>
+&bull; <span class="hl-correct">While the theory offers</span> a simple way ... (접속사 + 본동사 ✅)
+&bull; <span class="hl-correct">The theory offering</span> a simple way, we must ... (접속사 없음 + 분사 ✅)
+
+<strong>틀린 예:</strong>
+&bull; <span class="hl-wrong">While the theory offering</span> a simple way ... (접속사 + 분사 ❌)</div>
+
+<table>
+  <thead><tr><th>구조</th><th>형태</th><th>예문</th></tr></thead>
+  <tbody>
+    <tr><td>접속사 + 절</td><td>접속사 + S + <strong>V</strong></td><td>Because the company <strong>grows</strong> fast, ...</td></tr>
+    <tr><td>분사구문</td><td><strong>V-ing/V-ed</strong>, S + V</td><td><strong>Growing</strong> fast, the company expanded overseas.</td></tr>
+    <tr><td>후치수식</td><td>N + <strong>V-ing/V-ed</strong></td><td>The company <strong>growing</strong> fast attracted investors.</td></tr>
+  </tbody>
+</table>
+
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석 (Q1)</span>
+  <p><strong>왜 ④ policing을 골랐을까:</strong> "such ④ policing methods"에서 "policing"이 동사의 -ing형이라 분사/본동사 오류로 보았을 가능성이 높습니다. 실제로 ⑤ offering도 -ing형이므로, 같은 유형의 오류를 ④에서 먼저 발견했다고 판단한 것으로 보입니다.</p>
+  <p><strong>오류 패턴:</strong> 형용사적 -ing(policing methods = 치안 방법)과 접속사절 내 분사 오류(While... offering)를 구분하지 못함. "policing"은 명사/형용사로 쓰여 "methods"를 수식하는 것이지, 절의 동사가 아닙니다.</p>
+  <p><strong>집중 포인트:</strong> -ing형이 보이면 무조건 틀린 것이 아닙니다. <strong>접속사(While, Because 등) 뒤의 -ing</strong>만 문제입니다. 접속사 없이 명사를 수식하거나(policing methods, running water), 삽입구 안에서 쓰이는 -ing는 정상입니다. 이 문제의 진짜 오류는 ⑤에서 접속사 While 뒤에 분사 offering을 쓴 것이었습니다.</p>
+</div>
+
+<!-- ===== Section 2 — Part B: 독해/어휘 해설 ===== -->
+<div class="page-break-before section-header">
+  <span class="section-num">Section 2 &mdash; Part B</span>
+  독해 &middot; 어휘 해설 (지문별 분석)
+</div>
+
+<!-- ========== Q3: Butterfly Effect ========== -->
+<h2>Q3: Butterfly Effect (나비효과) &mdash; 어휘</h2>
+
+<div class="concept-box">
+  <h4>1. 한줄 요약</h4>
+  <p>나비효과(카오스 이론의 핵심 개념)를 소개하며, 초기 조건의 아주 작은 변화가 시간이 지나면서 엄청나게 증폭되어 장기 기상 예측을 사실상 불가능하게 만든다는 내용의 지문이다.</p>
+</div>
+
+<div class="grammar-block"><h4>2. 전체 해석 (Full Translation)</h4>
+
+"나비효과"는 카오스 이론과 현대 기상학에서 핵심적인 개념이다. 이것은 한 시스템의 초기 조건에서 아주 작은 변화가 이후의 결과에 엄청난 차이를 가져올 수 있다는 것을 시사한다. 예를 들어, 유명한 비유에 따르면 브라질에서 나비의 날갯짓이 몇 주 후 텍사스에서 토네이도를 유발할 수도 있다. 기상 예측의 맥락에서, 이것은 가장 첨단의 슈퍼컴퓨터조차도 먼 미래를 내다볼 때 심각한 한계에 직면한다는 것을 의미한다. 대기는 주변 환경에 대해 매우 민감하기 때문에, 현재 기온이나 풍속을 측정할 때의 작은 오차가 시간이 지남에 따라 점점 커진다. 비록 날씨가 결정론적인 과학 법칙을 따르지만, 이 극단적인 민감성 때문에 장기 예측은 완벽한 정확도로 달성하기 불가능하다. 기상학자들은 며칠간의 매우 신뢰할 수 있는 단기 예보를 제공할 수 있지만, 대기의 혼돈적 특성 때문에 한 달 후의 날씨가 정확히 어떨지 아는 것은 불가능하다.</div>
+
+<h4>3. 핵심 키워드</h4>
+<table>
+  <thead><tr><th>구분</th><th>표현 및 키워드</th></tr></thead>
+  <tbody>
+    <tr><td><strong>핵심 키워드</strong></td><td>butterfly effect, chaos theory, initial conditions, vast differences, sensitivity</td></tr>
+    <tr><td><strong>정답 방향 (Positive)</strong></td><td>tiny change &rarr; vast differences, grow <strong>larger</strong>, incredibly sensitive, significant limitations</td></tr>
+    <tr><td><strong>반대 방향 (Negative)</strong></td><td>smaller (오답 &mdash; 핵심 논리와 반대), reliable short-term (단기만 가능)</td></tr>
+  </tbody>
+</table>
+
+<div class="tip-box">
+  <h4>4. 구조 및 방향성</h4>
+  <p><span class="severity-low">개념 소개</span> &rarr; <span class="severity-mid">적용</span> &rarr; <span class="severity-high">한계</span></p>
+  <table>
+    <thead><tr><th>단계</th><th>내용</th><th>핵심 표현</th></tr></thead>
+    <tbody>
+      <tr><td>정의</td><td>초기 조건의 작은 변화 &rarr; 이후 결과에 큰 차이</td><td>tiny change, vast differences</td></tr>
+      <tr><td>예시</td><td>브라질 나비 &rarr; 텍사스 토네이도</td><td>butterfly's wings, tornado</td></tr>
+      <tr><td>적용</td><td>기상 예측: 대기의 극단적 민감성</td><td>incredibly sensitive</td></tr>
+      <tr><td>핵심</td><td>작은 오차가 시간이 지나면 <strong>증폭</strong></td><td>grow <strong>larger</strong> (NOT smaller)</td></tr>
+      <tr><td>결론</td><td>단기 예보만 신뢰 가능, 장기 예측 불가</td><td>reliable short-term, impossible</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h4>5. 선지 분석</h4>
+
+<p style="font-size:10pt; margin-bottom:4px;"><strong>Q3.</strong> 다음 글의 밑줄 친 부분 중, 문맥상 낱말의 의미가 적절하지 않은 것은?</p>
+<p style="font-size:9pt; margin-bottom:10px;">학생 선택: <span class="hl-wrong">②</span> &rarr; 정답: <span class="hl-correct">④</span></p>
+
+<div class="answer-box" style="page-break-inside:avoid;">
+  <p><strong>✅ 정답: ④ smaller &rarr; larger</strong></p>
+  <p style="font-size:9pt;"><strong>근거:</strong> 나비효과의 핵심 = "작은 변화가 큰 차이를 만든다(tiny change &rarr; vast differences)." 따라서 오차도 시간이 지나면 커져야(grow larger) 논리가 맞음</p>
+  <p style="font-size:9pt;"><strong>포인트:</strong> 지문 전체의 핵심 논리와 정면으로 모순되는 단어. "grow smaller"는 오차가 줄어든다는 뜻 &rarr; 나비효과의 정반대</p>
+</div>
+
+<div class="warning-box" style="page-break-inside:avoid;">
+  <p><strong>❌ ②  limitations</strong> (학생 선택)</p>
+  <p style="font-size:9pt;"><strong>근거:</strong> "even the most advanced supercomputers face significant limitations" &mdash; "even(~조차도)"이 강조하듯, 아무리 뛰어난 슈퍼컴퓨터도 나비효과 때문에 장기 예측에 한계가 있다는 뜻. 문맥상 완벽히 적절</p>
+  <p style="font-size:9pt;"><strong>포인트:</strong> "even"은 양보/역접 강조어 &mdash; "심지어 최첨단 슈퍼컴퓨터조차" 한계가 있다는 논리. limitations는 이 문맥에 정확히 부합</p>
+</div>
+
+<div style="font-size:9pt; padding-left:16px; margin-bottom:12px; line-height:1.8;">
+  <p>✅ ① change &mdash; "아주 작은 변화(tiny change)"는 나비효과의 출발점 (문맥 적절)</p>
+  <p>✅ ③ incredibly &mdash; 대기가 "매우" 민감하다는 것은 나비효과의 핵심 원인 (문맥 적절)</p>
+  <p>✅ ⑤ impossible &mdash; 나비효과 때문에 장기 예측이 "불가능"하다는 것은 지문의 핵심 결론 (문맥 적절)</p>
+</div>
+
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>왜 ②를 골랐을까:</strong> "even the most advanced supercomputers face significant ② limitations"에서, "가장 첨단의 슈퍼컴퓨터"라는 표현 때문에 "한계(limitations)"가 어울리지 않는다고 판단한 것으로 보입니다. 첨단 기술 = 한계 없음이라는 연상이 작용했을 수 있습니다. 하지만 "even(~조차도)"이 핵심 &mdash; 아무리 뛰어나도 한계가 있다는 양보의 논리입니다.</p>
+  <p><strong>오류 패턴:</strong> 핵심 오답(④ smaller)을 놓치고 ②에서 단어의 느낌에 반응. 지문의 <strong>핵심 논리 흐름</strong>(작은 오차 &rarr; 증폭)을 따라가지 못하고 개별 문장의 어감에만 집중</p>
+  <p><strong>집중 포인트:</strong> 어휘 문제 풀이 전략 &mdash; ① 먼저 <strong>지문의 핵심 논리</strong>(이 지문은 "작은 변화 &rarr; 큰 결과")를 파악하고, ② 이 논리와 <strong>정면으로 모순</strong>되는 단어를 찾으세요. 뉘앙스가 약간 어색한 것보다, 핵심 논리와 방향이 반대인 단어가 정답일 확률이 훨씬 높습니다.</p>
+</div>
+
+<hr class="section-divider">
+
+<!-- ========== Q19: The Sublime ========== -->
+<div class="page-break-before"></div>
+<h2>Q19: The Sublime (숭고) &mdash; 빈칸 추론</h2>
+
+<div class="concept-box">
+  <h4>1. 한줄 요약</h4>
+  <p>칸트 철학에서 '아름다움(beauty)'은 조화로운 대상에서 오는 차분한 쾌감이고, '숭고(sublime)'는 감각을 압도하는 거대한 대상 앞에서 인간 이성의 위대함을 깨닫는 경험이라는 내용의 지문이다.</p>
+</div>
+
+<div class="grammar-block"><h4>2. 전체 해석 (Full Translation)</h4>
+
+임마누엘 칸트의 철학에서 아름다움과 숭고는 두 가지 별개의 경험이다. 아름다움은 대상의 조화와 형태에서 발견되며, 우리에게 차분하고 안정적인 쾌감을 제공한다. 예를 들어, 잘 구성된 꽃이나 평화로운 풍경은 그 비율이 우리의 감각에 완벽하게 맞기 때문에 아름답다고 할 수 있다. 그러나 숭고는 상당히 다르다. 숭고는 거대한 산이나 격렬한 폭풍처럼, 우리의 감각을 초월할 만큼 광대하거나 강력한 무언가와 마주할 때 발생한다. 처음에 이 느낌은 불완전하거나 불편할 수 있는데, 우리가 그러한 위대함을 완전히 파악할 수 없기 때문이다. 하지만 이 경험은 결국 특별한 종류의 쾌감으로 이어진다. 이것은 우리의 몸은 작고 제한적이지만, 인간의 이성은 물리적 세계를 넘어 사고할 힘이 있다는 것을 깨닫게 해준다. 따라서, 단순한 조화를 제공하는 아름다움과 달리, 숭고는 우리에게 ______을(를) 가능하게 한다.</div>
+
+<h4>3. 핵심 키워드</h4>
+<table>
+  <thead><tr><th>구분</th><th>표현 및 키워드</th></tr></thead>
+  <tbody>
+    <tr><td><strong>핵심 키워드</strong></td><td>beauty, sublime, harmony, vast, powerful, reason, beyond the physical world</td></tr>
+    <tr><td><strong>정답 방향 (Positive)</strong></td><td>sublime: exceeds senses, special pleasure, rational power, think beyond, greatness</td></tr>
+    <tr><td><strong>반대 방향 (Negative)</strong></td><td>beauty: calm, stable, harmony, proportions, peaceful landscape (아름다움 특성 &ne; 숭고)</td></tr>
+  </tbody>
+</table>
+
+<div class="tip-box">
+  <h4>4. 구조 및 방향성</h4>
+  <p><span class="severity-low">아름다움 (Beauty)</span> &harr; <span class="severity-high">숭고 (Sublime)</span> &nbsp; (대비-대조 구조)</p>
+  <table>
+    <thead><tr><th>단계</th><th>아름다움 (Beauty)</th><th>숭고 (Sublime)</th></tr></thead>
+    <tbody>
+      <tr><td>원천</td><td>조화, 형태, 비율</td><td>광대함, 강력함</td></tr>
+      <tr><td>예시</td><td>꽃, 평화로운 풍경</td><td>거대한 산, 격렬한 폭풍</td></tr>
+      <tr><td>느낌</td><td>차분하고 안정적인 쾌감</td><td>처음엔 불편 &rarr; 특별한 쾌감</td></tr>
+      <tr><td>결과</td><td>감각에 맞는 편안함</td><td><strong>이성의 위대함 인식</strong></td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h4>5. 선지 분석</h4>
+
+<p style="font-size:10pt; margin-bottom:4px;"><strong>Q19.</strong> 빈칸에 들어갈 말로 가장 적절한 것은?</p>
+<p style="font-size:9pt; margin-bottom:10px;">학생 선택: <span class="hl-wrong">⑤</span> &rarr; 정답: <span class="hl-correct">①</span></p>
+
+<div class="answer-box" style="page-break-inside:avoid;">
+  <p><strong>✅ ① recognise the greatness of our rational power</strong></p>
+  <p style="font-size:9pt;"><strong>근거:</strong> "our human reason has the power to think beyond the physical world"</p>
+  <p style="font-size:9pt;"><strong>해석:</strong> 인간의 이성은 물리적 세계를 넘어 사고할 힘이 있다는 깨달음</p>
+  <p style="font-size:9pt;"><strong>포인트:</strong> "the greatness of our rational power" = "the power to think beyond" &mdash; 숭고 경험의 핵심 결과를 정확히 반영</p>
+</div>
+
+<div class="warning-box" style="page-break-inside:avoid;">
+  <p><strong>❌ ⑤ realize that human beings are precious</strong> (학생 선택)</p>
+  <p style="font-size:9pt;"><strong>근거:</strong> 지문은 "our human reason has the power to think beyond the physical world" &mdash; 인간의 <strong>이성(reason)의 위대함</strong>을 말하지, 인간 존재 자체의 소중함을 말하지 않음</p>
+  <p style="font-size:9pt;"><strong>포인트:</strong> "greatness of rational power(이성의 위대함)" ≠ "human beings are precious(인간은 소중하다)". 대상이 다름 &mdash; 이성의 힘 vs 인간 존재 가치</p>
+</div>
+
+<div style="font-size:9pt; padding-left:16px; margin-bottom:12px; line-height:1.8;">
+  <p>❌ ② feel fear when we see a beautiful flower &mdash; 꽃은 아름다움의 예시이며, 숭고의 감정은 공포가 아닌 이성의 초월적 쾌감</p>
+  <p>❌ ③ ignore the importance of physical senses &mdash; 감각을 "초월"하는 것과 "무시"하는 것은 다름</p>
+  <p>❌ ④ find comfort in a peaceful environment &mdash; 평화로운 환경에서 편안함을 찾는 것은 "아름다움(beauty)"의 특성이지 숭고가 아님</p>
+</div>
+
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>왜 ⑤를 골랐을까:</strong> 지문에서 "our bodies are small and limited, our human reason has the power to think beyond"라는 부분을 읽고, "인간의 힘을 깨닫는다" &rarr; "인간이 소중하다"로 확대 해석한 것으로 보입니다. 하지만 지문이 말하는 것은 인간 존재의 소중함이 아니라, 구체적으로 <strong>이성(rational power)의 위대함</strong>입니다.</p>
+  <p><strong>오류 패턴:</strong> 핵심 키워드 치환 &mdash; "greatness of rational power(이성의 위대함)"를 "human beings are precious(인간은 소중하다)"로 부정확하게 바꿈. 지문의 구체적 표현을 일반적이고 추상적인 의미로 확대 해석</p>
+  <p><strong>집중 포인트:</strong> 빈칸 추론에서 정답은 지문의 <strong>핵심 표현을 그대로 반영</strong>합니다. "이성의 위대함 인식"(①)은 지문의 "the power to think beyond"를 직접 재진술한 것입니다. 비슷해 보이지만 대상이 다른 선지(⑤ 인간의 소중함)에 속지 않으려면, 빈칸 앞뒤 문장의 <strong>핵심 명사(reason, rational power)</strong>를 정확히 추적하세요.</p>
+</div>
+
+<hr class="section-divider">
+
+<!-- ========== Q20: Sapir-Whorf ========== -->
+<div class="page-break-before"></div>
+<h2>Q20: Sapir-Whorf Hypothesis (사피어-워프 가설) &mdash; 순서 배열</h2>
+
+<div class="concept-box">
+  <h4>1. 한줄 요약</h4>
+  <p>사피어-워프 가설의 강한 버전(언어 결정론)이 현대 학자들에 의해 부정되고, 대신 약한 버전(언어적 영향)이 지지되며, 실험적 증거가 이를 뒷받침한다는 내용이다.</p>
+</div>
+
+<div class="grammar-block"><h4>2. 전체 해석 (Full Translation)</h4>
+
+<strong>[주어진 글]</strong> 사피어-워프 가설은 우리가 말하는 언어와 세계를 인식하는 방식 사이의 매혹적인 관계를 탐구한다. 강한 버전은 언어 결정론으로 알려져 있으며, 언어가 우리의 사고를 엄격하게 결정한다고 제안한다. 이 가설은 특정 개념에 대한 구체적 단어가 없다면, 그 개념을 전혀 이해할 수 없다고 주장한다.
+
+<strong>(B)</strong> 그러나 대부분의 현대 심리언어학자들은 이 극단적 견해가 대체로 틀렸다고 주장한다. 그들은 인간이 구체적 단어가 없어도 새로운 개념을 쉽게 이해할 수 있다고 지적한다. 따라서 언어가 우리 사고의 엄격한 감옥 역할을 한다는 생각은 오늘날 과학계에서 거부되었다.
+
+<strong>(A)</strong> 대신, 그들은 언어적 상대성이라 불리는 약한 버전을 지지한다. 이 견해는 언어가 우리의 사고를 통제하지는 않지만, 분명히 일상적인 인지 습관에 영향을 미친다고 제안한다. 그 이유는 우리의 모국어가 환경에서 특정 세부 사항을 더 쉽게 알아차리게 하면서 덜 중요한 것들은 무시하게 만들기 때문이다.
+
+<strong>(C)</strong> 예를 들어, 실험들은 언어가 정신적 과제의 효율성에 영향을 미친다는 것을 보여준다. 많은 색상 이름을 가진 언어의 화자들은 다양한 색조를 다른 사람들보다 훨씬 빠르게 식별할 수 있다. 따라서 언어는 우리의 마음이 실제로 생각할 수 있는 것을 제한하는 고정된 규칙이 아니라, 우리의 초점을 형성하는 유용한 도구이다.</div>
+
+<h4>3. 핵심 키워드</h4>
+<table>
+  <thead><tr><th>구분</th><th>표현 및 키워드</th></tr></thead>
+  <tbody>
+    <tr><td><strong>핵심 키워드</strong></td><td>Sapir-Whorf, linguistic determinism, linguistic relativity, strong/weak version</td></tr>
+    <tr><td><strong>정답 방향 (Positive)</strong></td><td>weak version: influences, affects, helpful tool, shapes our focus</td></tr>
+    <tr><td><strong>반대 방향 (Negative)</strong></td><td>strong version: strictly determines, cannot understand, prison for thoughts, largely incorrect</td></tr>
+  </tbody>
+</table>
+
+<div class="tip-box">
+  <h4>4. 구조 및 방향성 &mdash; 순서 배열 핵심</h4>
+  <p><span class="severity-high">담화 연결어가 순서를 결정한다</span></p>
+  <table>
+    <thead><tr><th>단락</th><th>첫 연결어</th><th>기능</th><th>연결 대상</th></tr></thead>
+    <tbody>
+      <tr><td>주어진 글</td><td>&mdash;</td><td>강한 버전 소개</td><td>&mdash;</td></tr>
+      <tr><td><strong>(B)</strong></td><td><strong>However</strong></td><td>강한 버전 반박</td><td>&larr; 주어진 글의 강한 버전</td></tr>
+      <tr><td><strong>(A)</strong></td><td><strong>Instead</strong></td><td>대안 제시 (약한 버전)</td><td>&larr; (B)의 반박 이후</td></tr>
+      <tr><td><strong>(C)</strong></td><td><strong>For instance</strong></td><td>예시 제공</td><td>&larr; (A)의 약한 버전 뒷받침</td></tr>
+    </tbody>
+  </table>
+  <p style="margin-top:8px;"><strong>정답: (B)&rarr;(A)&rarr;(C) = ②</strong></p>
+</div>
+
+<h4>5. 선지 분석</h4>
+
+<p style="font-size:10pt; margin-bottom:4px;"><strong>Q20.</strong> 주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?</p>
+<p style="font-size:9pt; margin-bottom:10px;">학생 선택: <span class="hl-wrong">⑤</span> &rarr; 정답: <span class="hl-correct">②</span></p>
+
+<div class="answer-box" style="page-break-inside:avoid;">
+  <p><strong>✅ ② (B)&rarr;(A)&rarr;(C)</strong></p>
+  <p style="font-size:9pt;"><strong>근거:</strong> (B) "However" &rarr; 주어진 글의 강한 버전을 반박 / (A) "Instead" &rarr; (B)의 거부 후 대안 제시 / (C) "For instance" &rarr; (A)의 약한 버전에 예시</p>
+  <p style="font-size:9pt;"><strong>포인트:</strong> However(반박) &rarr; Instead(대안) &rarr; For instance(예시) — 완벽한 논리 체인</p>
+</div>
+
+<div class="warning-box" style="page-break-inside:avoid;">
+  <p><strong>❌ ⑤ (C)&rarr;(B)&rarr;(A)</strong> (학생 선택)</p>
+  <p style="font-size:9pt;"><strong>문제점 1:</strong> (C)는 "For instance"로 시작 &mdash; 예시를 제시하려면 앞에 뒷받침할 주장이 있어야 함. 주어진 글은 강한 버전(언어 결정론)을 소개할 뿐, 약한 버전을 주장하지 않으므로 (C)가 바로 뒤에 올 수 없음</p>
+  <p style="font-size:9pt;"><strong>문제점 2:</strong> (B) "However"가 중간에 오면 (C)의 예시를 반박하는 셈인데, (B)는 강한 버전을 반박하는 내용 &mdash; 논리적 대상이 불일치</p>
+  <p style="font-size:9pt;"><strong>문제점 3:</strong> (A) "Instead"가 마지막에 와서 대안을 제시하지만, 뒤에 이를 뒷받침할 예시가 없어 글이 미완결</p>
+</div>
+
+<div style="font-size:9pt; padding-left:16px; margin-bottom:12px; line-height:1.8;">
+  <p>❌ ① (A)&rarr;(C)&rarr;(B) &mdash; (A)의 "they"가 가리키는 "현대 심리언어학자들"은 (B)에서 처음 등장. (A)가 (B) 앞에 오면 지시 대상이 없음</p>
+  <p>❌ ③ (B)&rarr;(C)&rarr;(A) &mdash; "For instance"(예시)가 "Instead"(대안) 앞에 올 수 없음. 예시는 주장 뒤에 와야 함</p>
+  <p>❌ ④ (C)&rarr;(A)&rarr;(B) &mdash; (C)의 "For instance"가 첫 번째로 오면 뒷받침할 주장이 없음</p>
+</div>
+
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>왜 ⑤를 골랐을까:</strong> (C)의 실험 결과("색상 이름이 많은 언어 화자는 색조를 더 빨리 식별")가 주어진 글의 "언어가 사고에 영향"이라는 주제와 직접 연결된다고 느껴, (C)를 첫 번째로 배치한 것으로 보입니다. 하지만 (C)는 "For instance"로 시작하는 <strong>예시</strong>이므로, 반드시 앞에 뒷받침할 주장이 있어야 합니다.</p>
+  <p><strong>오류 패턴:</strong> 내용적 관련성에만 의존 &mdash; "실험 예시가 주제와 가까우니 바로 뒤에 오겠지"라는 판단. 담화 연결어의 <strong>기능적 역할</strong>(예시는 주장 뒤에)을 간과</p>
+  <p><strong>집중 포인트:</strong> 순서 배열 문제 풀이 전략 3단계:<br>
+  &nbsp;&nbsp;① <strong>연결어 표시</strong>: 각 단락 첫 단어(However, Instead, For instance, Therefore 등)에 동그라미<br>
+  &nbsp;&nbsp;② <strong>대명사 추적</strong>: they, this, these, such 등이 가리키는 대상이 이전 단락에 있는지 확인<br>
+  &nbsp;&nbsp;③ <strong>논리 체인</strong>: 반박(However) &rarr; 대안(Instead) &rarr; 예시(For instance)처럼 연결어 간 순서가 자연스러운지 확인. 특히 "For instance/example"은 반드시 주장 <strong>뒤에</strong> 옵니다.</p>
+</div>
+
+<!-- ===== Section 3: 연습문제 ===== -->
+<div class="page-break-before section-header">
+  <span class="section-num">Section 3</span>
+  연습문제
+</div>
+
+<h2>테마: 접속사절의 동사 형태 (분사 vs 본동사) &mdash; 20문제</h2>
+<p style="font-size:9pt; color:#718096; margin-bottom:14px;">접속사 뒤에 본동사가 필요한지, 분사가 적절한지 판별하는 연습입니다.</p>
+
+<div class="practice-item"><span class="practice-num">1.</span> Although the company (expanding / expands) rapidly, profits remain low. &mdash; 괄호 안에서 알맞은 것을 고르시오.</div>
+<div class="practice-item"><span class="practice-num">2.</span> The teacher (standing / stands) by the door greeted every student. &mdash; 괄호 안에서 알맞은 것을 고르시오.</div>
+<div class="practice-item"><span class="practice-num">3.</span> Because the software (containing / contains) a virus, it was immediately removed from the server.</div>
+<div class="practice-item"><span class="practice-num">4.</span> The policy, (received / receiving) widespread support, was quickly implemented.</div>
+<div class="practice-item"><span class="practice-num">5.</span> While the economy (recovering / recovers), unemployment remains stubbornly high.</div>
+<div class="practice-item"><span class="practice-num">6.</span> 다음 문장에서 어법상 틀린 부분을 찾으시오: "Since the factory opening last year, it has created over 500 jobs."</div>
+<div class="practice-item"><span class="practice-num">7.</span> The student (studied / studying) in the library every night passed all her exams with distinction.</div>
+<div class="practice-item"><span class="practice-num">8.</span> If the proposal (meeting / meets) all the requirements, it will be approved by the committee.</div>
+<div class="practice-item"><span class="practice-num">9.</span> 다음 문장에서 어법상 틀린 부분을 찾으시오: "Although the weather being cold, they continued the outdoor event as planned."</div>
+<div class="practice-item"><span class="practice-num">10.</span> The project, (completing / completed) ahead of schedule, impressed every member of the client team.</div>
+<div class="practice-item"><span class="practice-num">11.</span> Unless the government (taking / takes) immediate action, the economic crisis will worsen.</div>
+<div class="practice-item"><span class="practice-num">12.</span> 다음 문장에서 어법상 틀린 부분을 찾으시오: "Before the meeting starting, everyone must sign the attendance sheet."</div>
+<div class="practice-item"><span class="practice-num">13.</span> The report (suggesting / suggests) that renewable energy will dominate the global market by 2040.</div>
+<div class="practice-item"><span class="practice-num">14.</span> (Considered / Considering) the potential risks, the board decided to delay the investment.</div>
+<div class="practice-item"><span class="practice-num">15.</span> 다음 문장에서 어법상 틀린 부분을 찾으시오: "Once the customer receiving the product, they can request a refund within 7 days."</div>
+<div class="practice-item"><span class="practice-num">16.</span> After the rain (stopping / stopped), the sky cleared up beautifully within minutes.</div>
+<div class="practice-item"><span class="practice-num">17.</span> The experiment, (conducted / conducting) by Dr. Lee's team, revealed several surprising results.</div>
+<div class="practice-item"><span class="practice-num">18.</span> 다음 문장에서 어법상 틀린 부분을 찾으시오: "Because the flight delaying for three hours, many passengers missed their connections."</div>
+<div class="practice-item"><span class="practice-num">19.</span> When the sun (setting / sets), the temperature in the desert drops rapidly.</div>
+<div class="practice-item"><span class="practice-num">20.</span> The company (founded / founding) in 2010 has since grown into a global industry leader.</div>
+
+<!-- ===== Section 4: 정답 및 해설 ===== -->
+<div class="page-break-before section-header">
+  <span class="section-num">Section 4</span>
+  정답 및 해설
+</div>
+
+<h2>접속사절의 동사 형태 &mdash; 정답</h2>
+<table>
+  <thead><tr><th style="width:40px;">#</th><th style="width:70px;">정답</th><th>해설</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>expands</td><td>접속사 Although 뒤 &rarr; 주어(company) + 본동사 필수</td></tr>
+    <tr><td>2</td><td>standing</td><td>접속사 없이 명사(teacher) 수식 &rarr; 현재분사 (서 있는 선생님)</td></tr>
+    <tr><td>3</td><td>contains</td><td>접속사 Because 뒤 &rarr; 주어(software) + 본동사 필수</td></tr>
+    <tr><td>4</td><td>receiving</td><td>쉼표 사이 삽입구 &rarr; 분사구문 (지지를 받으며)</td></tr>
+    <tr><td>5</td><td>recovers</td><td>접속사 While 뒤 &rarr; 주어(economy) + 본동사 필수</td></tr>
+    <tr><td>6</td><td>opening &rarr; opened</td><td>접속사 Since 뒤 &rarr; 본동사 필요. "Since the factory opened"</td></tr>
+    <tr><td>7</td><td>studying</td><td>접속사 없이 명사(student) 수식 &rarr; 현재분사</td></tr>
+    <tr><td>8</td><td>meets</td><td>접속사 If 뒤 &rarr; 주어(proposal) + 본동사 필수</td></tr>
+    <tr><td>9</td><td>being &rarr; was</td><td>접속사 Although 뒤 &rarr; 본동사 필요. "Although the weather was cold"</td></tr>
+    <tr><td>10</td><td>completed</td><td>쉼표 사이 삽입구 &rarr; 과거분사 (프로젝트가 완성된)</td></tr>
+    <tr><td>11</td><td>takes</td><td>접속사 Unless 뒤 &rarr; 주어(government) + 본동사 필수</td></tr>
+    <tr><td>12</td><td>starting &rarr; starts</td><td>접속사 Before 뒤 &rarr; 본동사 필요. "Before the meeting starts"</td></tr>
+    <tr><td>13</td><td>suggests</td><td>주절의 유일한 동사 &rarr; 본동사 필수 (report suggests)</td></tr>
+    <tr><td>14</td><td>Considering</td><td>접속사 없이 부대상황 &rarr; 분사구문 "~를 고려하면"</td></tr>
+    <tr><td>15</td><td>receiving &rarr; receives</td><td>접속사 Once 뒤 &rarr; 본동사 필요. "Once the customer receives"</td></tr>
+    <tr><td>16</td><td>stopped</td><td>접속사 After 뒤 &rarr; 주어(rain) + 본동사 필수</td></tr>
+    <tr><td>17</td><td>conducted</td><td>쉼표 사이 삽입구 &rarr; 과거분사 (실험이 수행된)</td></tr>
+    <tr><td>18</td><td>delaying &rarr; was delayed</td><td>접속사 Because 뒤 &rarr; 본동사(수동태) 필요</td></tr>
+    <tr><td>19</td><td>sets</td><td>접속사 When 뒤 &rarr; 주어(sun) + 본동사 필수</td></tr>
+    <tr><td>20</td><td>founded</td><td>접속사 없이 명사(company) 수식 &rarr; 과거분사 (설립된 회사)</td></tr>
+  </tbody>
+</table>
+
+<!-- ===== 푸터 ===== -->
+<hr class="section-divider">
+<p style="text-align: center; color: #a0aec0; font-size: 9pt; margin-top: 30px;">
+  피드백지 작성 완료 &mdash; 2026년 02월 18일
+</p>
+
+</body>
+</html>

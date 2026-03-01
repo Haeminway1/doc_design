@@ -1,0 +1,507 @@
+{
+  "bookId": "vocab-basic",
+  "day": 46,
+  "theme": "사고와 추론 (Thinking and Reasoning)",
+  "words": [
+    {
+      "word": "reasoning",
+      "pronunciation": "[ríːzəni&eng;]",
+      "partOfSpeech": "n.",
+      "meaning": "추론, 추리",
+      "example": {
+        "en": "His line of reasoning was difficult to follow.",
+        "ko": "그의 추론 방식은 따라가기 어려웠다."
+      }
+    },
+    {
+      "word": "rationale",
+      "pronunciation": "[ræ̀ʃənǽl]",
+      "partOfSpeech": "n.",
+      "meaning": "이론적 근거, 이유",
+      "example": {
+        "en": "What is the rationale behind this new policy?",
+        "ko": "이 새로운 정책의 이론적 근거는 무엇입니까?"
+      }
+    },
+    {
+      "word": "premise",
+      "pronunciation": "[prémis]",
+      "partOfSpeech": "n.",
+      "meaning": "(주장의) 전제",
+      "example": {
+        "en": "The argument is based on a false premise.",
+        "ko": "그 주장은 잘못된 전제에 기반을 두고 있다."
+      }
+    },
+    {
+      "word": "conclusion",
+      "pronunciation": "[kənklúːʒən]",
+      "partOfSpeech": "n.",
+      "meaning": "결론",
+      "example": {
+        "en": "What conclusion did you draw from the evidence?",
+        "ko": "그 증거로부터 어떤 결론을 내렸습니까?"
+      }
+    },
+    {
+      "word": "inference",
+      "pronunciation": "[ínfərəns]",
+      "partOfSpeech": "n.",
+      "meaning": "추론",
+      "example": {
+        "en": "We can make an inference about the future based on current trends.",
+        "ko": "우리는 현재의 추세를 바탕으로 미래에 대해 추론할 수 있다."
+      }
+    },
+    {
+      "word": "deduction",
+      "pronunciation": "[didʌ́kʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "연역, 추론; 공제",
+      "example": {
+        "en": "Sherlock Holmes was a master of deduction.",
+        "ko": "셜록 홈스는 연역의 대가였다."
+      }
+    },
+    {
+      "word": "induction",
+      "pronunciation": "[indʌ́kʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "귀납, 유도",
+      "example": {
+        "en": "Scientific theories are often developed through induction.",
+        "ko": "과학 이론은 종종 귀납을 통해 발전된다."
+      }
+    },
+    {
+      "word": "analysis",
+      "pronunciation": "[ənǽləsis]",
+      "partOfSpeech": "n.",
+      "meaning": "분석",
+      "example": {
+        "en": "A detailed analysis of the data is needed.",
+        "ko": "데이터에 대한 상세한 분석이 필요하다."
+      }
+    },
+    {
+      "word": "understanding",
+      "pronunciation": "[ʌ̀ndərstǽndi&eng;]",
+      "partOfSpeech": "n.",
+      "meaning": "이해",
+      "example": {
+        "en": "A mutual understanding is necessary for a good relationship.",
+        "ko": "좋은 관계를 위해서는 상호 이해가 필요하다."
+      }
+    },
+    {
+      "word": "insight",
+      "pronunciation": "[ínsàit]",
+      "partOfSpeech": "n.",
+      "meaning": "통찰력",
+      "example": {
+        "en": "The book provides valuable insights into the author's life.",
+        "ko": "그 책은 작가의 삶에 대한 귀중한 통찰력을 제공한다."
+      }
+    },
+    {
+      "word": "intuition",
+      "pronunciation": "[ìntuːíʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "직관",
+      "example": {
+        "en": "She had an intuition that something was wrong.",
+        "ko": "그녀는 무언가 잘못되었다는 직감이 들었다."
+      }
+    },
+    {
+      "word": "judgment",
+      "pronunciation": "[dʒʌ́dʒmənt]",
+      "partOfSpeech": "n.",
+      "meaning": "판단(력)",
+      "example": {
+        "en": "He showed poor judgment in his decision to invest.",
+        "ko": "그는 투자 결정에 있어 좋지 않은 판단력을 보였다."
+      }
+    },
+    {
+      "word": "discernment",
+      "pronunciation": "[disə́ːrnmənt]",
+      "partOfSpeech": "n.",
+      "meaning": "안목, 분별력",
+      "example": {
+        "en": "She is a woman of great taste and discernment.",
+        "ko": "그녀는 뛰어난 취향과 안목을 가진 여성이다."
+      }
+    },
+    {
+      "word": "knowledge",
+      "pronunciation": "[nάlidʒ]",
+      "partOfSpeech": "n.",
+      "meaning": "지식",
+      "example": {
+        "en": "Knowledge is power.",
+        "ko": "아는 것이 힘이다."
+      }
+    },
+    {
+      "word": "skill",
+      "pronunciation": "[skil]",
+      "partOfSpeech": "n.",
+      "meaning": "기술, 기량",
+      "example": {
+        "en": "Communication is an important skill in any job.",
+        "ko": "의사소통은 어떤 직업에서든 중요한 기술이다."
+      }
+    },
+    {
+      "word": "ability",
+      "pronunciation": "[əbíləti]",
+      "partOfSpeech": "n.",
+      "meaning": "능력",
+      "example": {
+        "en": "He has the ability to solve complex problems.",
+        "ko": "그는 복잡한 문제를 해결할 능력이 있다."
+      }
+    },
+    {
+      "word": "talent",
+      "pronunciation": "[tǽlənt]",
+      "partOfSpeech": "n.",
+      "meaning": "재능",
+      "example": {
+        "en": "She has a natural talent for music.",
+        "ko": "그녀는 음악에 타고난 재능이 있다."
+      }
+    },
+    {
+      "word": "potential",
+      "pronunciation": "[pəténʃəl]",
+      "partOfSpeech": "n.\n       \n        a.",
+      "meaning": "잠재력\n       \n        잠재적인",
+      "example": {
+        "en": "The young athlete has the potential to become a champion.",
+        "ko": "그 젊은 선수는 챔피언이 될 잠재력이 있다."
+      }
+    },
+    {
+      "word": "limitation",
+      "pronunciation": "[lìmətéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "한계, 제약",
+      "example": {
+        "en": "We must be aware of our own limitations.",
+        "ko": "우리는 우리 자신의 한계를 알아야 한다."
+      }
+    },
+    {
+      "word": "ignorance",
+      "pronunciation": "[ígnərəns]",
+      "partOfSpeech": "n.",
+      "meaning": "무지",
+      "example": {
+        "en": "Ignorance of the law is no excuse.",
+        "ko": "법에 대한 무지는 변명이 될 수 없다."
+      }
+    },
+    {
+      "word": "confusion",
+      "pronunciation": "[kənfjúːʒən]",
+      "partOfSpeech": "n.",
+      "meaning": "혼란",
+      "example": {
+        "en": "There was some confusion about who was supposed to pay.",
+        "ko": "누가 돈을 내야 하는지에 대해 약간의 혼란이 있었다."
+      }
+    },
+    {
+      "word": "clarity",
+      "pronunciation": "[klǽrəti]",
+      "partOfSpeech": "n.",
+      "meaning": "명확성",
+      "example": {
+        "en": "The report was written with great clarity and precision.",
+        "ko": "그 보고서는 매우 명확하고 정확하게 작성되었다."
+      }
+    },
+    {
+      "word": "bewilderment",
+      "pronunciation": "[biwíldərmənt]",
+      "partOfSpeech": "n.",
+      "meaning": "어리둥절함, 당혹감",
+      "example": {
+        "en": "She looked at him in bewilderment.",
+        "ko": "그녀는 어리둥절하여 그를 쳐다보았다."
+      }
+    },
+    {
+      "word": "perplexity",
+      "pronunciation": "[pərpléksəti]",
+      "partOfSpeech": "n.",
+      "meaning": "당혹감, 난처함",
+      "example": {
+        "en": "He scratched his head in perplexity.",
+        "ko": "그는 당혹감에 머리를 긁적였다."
+      }
+    },
+    {
+      "word": "contemplation",
+      "pronunciation": "[kὰntempléiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "사색, 명상",
+      "example": {
+        "en": "He sat in quiet contemplation of the beautiful scenery.",
+        "ko": "그는 아름다운 풍경을 조용히 사색하며 앉아 있었다."
+      }
+    },
+    {
+      "word": "meditation",
+      "pronunciation": "[mèdətéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "명상",
+      "example": {
+        "en": "Meditation can help to reduce stress.",
+        "ko": "명상은 스트레스를 줄이는 데 도움이 될 수 있다."
+      }
+    },
+    {
+      "word": "theory",
+      "pronunciation": "[θíːəri]",
+      "partOfSpeech": "n.",
+      "meaning": "이론",
+      "example": {
+        "en": "Einstein's theory of relativity changed our understanding of the universe.",
+        "ko": "아인슈타인의 상대성 이론은 우주에 대한 우리의 이해를 바꾸었다."
+      }
+    },
+    {
+      "word": "concept",
+      "pronunciation": "[kάnsept]",
+      "partOfSpeech": "n.",
+      "meaning": "개념",
+      "example": {
+        "en": "It is a difficult concept to grasp.",
+        "ko": "그것은 파악하기 어려운 개념이다."
+      }
+    },
+    {
+      "word": "notion",
+      "pronunciation": "[nóuʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "개념, 관념",
+      "example": {
+        "en": "He rejected the notion that all people are selfish.",
+        "ko": "그는 모든 사람이 이기적이라는 관념을 거부했다."
+      }
+    },
+    {
+      "word": "idea",
+      "pronunciation": "[aidíːə]",
+      "partOfSpeech": "n.",
+      "meaning": "생각, 아이디어",
+      "example": {
+        "en": "Do you have any idea what time it is?",
+        "ko": "지금 몇 시인지 아세요?"
+      }
+    },
+    {
+      "word": "opinion",
+      "pronunciation": "[əpínjən]",
+      "partOfSpeech": "n.",
+      "meaning": "의견",
+      "example": {
+        "en": "In my opinion, we should wait a little longer.",
+        "ko": "제 의견으로는, 조금 더 기다려야 합니다."
+      }
+    },
+    {
+      "word": "belief",
+      "pronunciation": "[bilíːf]",
+      "partOfSpeech": "n.",
+      "meaning": "믿음, 신념",
+      "example": {
+        "en": "He has a strong belief in the power of positive thinking.",
+        "ko": "그는 긍정적 사고의 힘에 대한 강한 믿음을 가지고 있다."
+      }
+    },
+    {
+      "word": "acumen",
+      "pronunciation": "[əkjúːmən]",
+      "partOfSpeech": "n.",
+      "meaning": "(일에 대한) 감각, 통찰력",
+      "example": {
+        "en": "She has a remarkable business acumen.",
+        "ko": "그녀는 놀라운 사업 감각을 가지고 있다."
+      }
+    },
+    {
+      "word": "deductive",
+      "pronunciation": "[dɪˈdʌktɪv]",
+      "partOfSpeech": "adjective",
+      "meaning": "연역적인, 추론의",
+      "example": {
+        "en": "Sherlock Holmes is famous for his deductive reasoning skills.",
+        "ko": "셜록 홈즈는 그의 연역적 추론 능력으로 유명하다."
+      }
+    },
+    {
+      "word": "syllogism",
+      "pronunciation": "[ˈsɪləˌdʒɪzəm]",
+      "partOfSpeech": "noun",
+      "meaning": "삼단논법",
+      "example": {
+        "en": "The classic syllogism states: All men are mortal; Socrates is a man; therefore, Socrates is mortal.",
+        "ko": "고전적인 삼단논법은 다음과 같다: 모든 인간은 죽는다; 소크라테스는 인간이다; 따라서 소크라테스는 죽는다."
+      }
+    },
+    {
+      "word": "pragmatic",
+      "pronunciation": "[præɡˈmætɪk]",
+      "partOfSpeech": "adjective",
+      "meaning": "실용적인, 실제적인",
+      "example": {
+        "en": "She took a pragmatic approach to solving the complex problem.",
+        "ko": "그녀는 복잡한 문제를 해결하는데 실용적인 접근법을 취했다."
+      }
+    },
+    {
+      "word": "heuristic",
+      "pronunciation": "[hjʊˈrɪstɪk]",
+      "partOfSpeech": "adjective",
+      "meaning": "발견적인, 스스로 발견하게 하는",
+      "example": {
+        "en": "The teacher used heuristic methods to help students discover solutions on their own.",
+        "ko": "교사는 학생들이 스스로 해결책을 발견할 수 있도록 발견적 방법을 사용했다."
+      }
+    },
+    {
+      "word": "axiom",
+      "pronunciation": "[ˈæksiəm]",
+      "partOfSpeech": "noun",
+      "meaning": "공리, 자명한 이치",
+      "example": {
+        "en": "The fundamental axioms of geometry form the basis for more complex theorems.",
+        "ko": "기하학의 기본 공리들은 더 복잡한 정리들의 기초를 형성한다."
+      }
+    },
+    {
+      "word": "fallacy",
+      "pronunciation": "[ˈfæləsi]",
+      "partOfSpeech": "noun",
+      "meaning": "오류, 잘못된 추론",
+      "example": {
+        "en": "The argument contained a logical fallacy that invalidated its conclusion.",
+        "ko": "그 논쟁은 결론을 무효화하는 논리적 오류를 포함하고 있었다."
+      }
+    },
+    {
+      "word": "dialectic",
+      "pronunciation": "[ˌdaɪəˈlɛktɪk]",
+      "partOfSpeech": "noun",
+      "meaning": "변증법, 논리적 토론",
+      "example": {
+        "en": "Hegel's dialectic process involves thesis, antithesis, and synthesis.",
+        "ko": "헤겔의 변증법 과정은 정, 반, 합을 포함한다."
+      }
+    },
+    {
+      "word": "syllogistic",
+      "pronunciation": "[ˌsɪləˈdʒɪstɪk]",
+      "partOfSpeech": "adjective",
+      "meaning": "삼단논법의, 논리적인",
+      "example": {
+        "en": "His syllogistic argument was perfectly structured but based on false premises.",
+        "ko": "그의 삼단논법적 논증은 완벽하게 구조화되었지만 잘못된 전제에 기초했다."
+      }
+    },
+    {
+      "word": "inductive",
+      "pronunciation": "[ɪnˈdʌktɪv]",
+      "partOfSpeech": "adjective",
+      "meaning": "귀납적인",
+      "example": {
+        "en": "Scientists often use inductive reasoning to form general theories from specific observations.",
+        "ko": "과학자들은 종종 특정 관찰로부터 일반적 이론을 형성하기 위해 귀납적 추론을 사용한다."
+      }
+    },
+    {
+      "word": "epistemology",
+      "pronunciation": "[ɪˌpɪstəˈmɒlədʒi]",
+      "partOfSpeech": "noun",
+      "meaning": "인식론",
+      "example": {
+        "en": "The course covers basic concepts in epistemology and the nature of knowledge.",
+        "ko": "이 과정은 인식론의 기본 개념과 지식의 본질을 다룬다."
+      }
+    },
+    {
+      "word": "rationalize",
+      "pronunciation": "[ˈræʃnəlaɪz]",
+      "partOfSpeech": "verb",
+      "meaning": "합리화하다, 이성적으로 설명하다",
+      "example": {
+        "en": "People often try to rationalize their mistakes instead of admitting them.",
+        "ko": "사람들은 종종 실수를 인정하는 대신 합리화하려 한다."
+      }
+    },
+    {
+      "word": "extrapolate",
+      "pronunciation": "[ɪkˈstræpəleɪt]",
+      "partOfSpeech": "verb",
+      "meaning": "추정하다, 추론하다",
+      "example": {
+        "en": "Based on current trends, we can extrapolate future market conditions.",
+        "ko": "현재 추세를 바탕으로, 우리는 미래 시장 상황을 추정할 수 있다."
+      }
+    },
+    {
+      "word": "logical",
+      "pronunciation": "/ˈlɒdʒɪkəl/",
+      "partOfSpeech": "adj.",
+      "meaning": "타당한 추론의 원칙을 따르며 일관되고 증거와 부합하는",
+      "example": {
+        "en": "It is logical to test the hypothesis before drawing conclusions.",
+        "ko": "결론을 내리기 전에 가설을 검증하는 것이 논리적이다."
+      }
+    },
+    {
+      "word": "rationality",
+      "pronunciation": "/ˌræʃəˈnæləti/",
+      "partOfSpeech": "n.",
+      "meaning": "이성이나 논리에 근거하는 성질, 또는 논리적으로 사고하여 타당한 판단을 내리는 능력.",
+      "example": {
+        "en": "Rationality demands that we weigh evidence rather than rely on intuition.",
+        "ko": "합리성은 직관에 의존하기보다 증거를 따져 볼 것을 요구한다."
+      }
+    },
+    {
+      "word": "ratiocination",
+      "pronunciation": "/ˌræʃioʊsəˈneɪʃən/",
+      "partOfSpeech": "n.",
+      "meaning": "엄밀하고 체계적인 추론 과정; 논리적 추론",
+      "example": {
+        "en": "Through careful ratiocination, the philosopher exposed the fallacy in the argument.",
+        "ko": "철저한 추론을 통해 그 철학자는 논증의 오류를 드러냈다."
+      }
+    },
+    {
+      "word": "inferential",
+      "pronunciation": "/ˌɪnfəˈrɛnʃəl/",
+      "partOfSpeech": "adj.",
+      "meaning": "추론에 관한 또는 추론을 수반하는; 직접 관찰이 아니라 증거에서 도출된.",
+      "example": {
+        "en": "The study relies on inferential statistics to reach its conclusions.",
+        "ko": "이 연구는 결론에 도달하기 위해 추론 통계에 의존한다."
+      }
+    },
+    {
+      "word": "generalization",
+      "pronunciation": "/ˌdʒɛnərəlaɪˈzeɪʃən/",
+      "partOfSpeech": "n.",
+      "meaning": "개별 사례에서 이끌어낸 일반적 진술이나 결론; 그러한 결론을 도출하는 행위.",
+      "example": {
+        "en": "Making a sweeping generalization from two interviews is methodologically unsound.",
+        "ko": "두 건의 면담만으로 무리한 일반화를 내리는 것은 방법론적으로 타당하지 않다."
+      }
+    }
+  ]
+}

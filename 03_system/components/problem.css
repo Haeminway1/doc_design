@@ -1,0 +1,179 @@
+/* =================================================================== */
+/* problem.css — 문제 블록 + 선택지 컴포넌트                            */
+/* Vera's Document Studio                                               */
+/* =================================================================== */
+
+/*
+ * 용도: 문법/독해/논리 문제 디스플레이
+ *
+ * 마크업 예시:
+ * <div class="problem" data-id="1" data-type="grammar">
+ *   <div class="problem-header">
+ *     <span class="problem-number">1</span>
+ *     <span class="problem-type-badge">문법</span>
+ *   </div>
+ *   <div class="problem-stem eng-text">
+ *     She _____ to the library every day.
+ *   </div>
+ *   <div class="problem-instruction">빈칸에 알맞은 것을 고르시오.</div>
+ *   <ol class="problem-choices">
+ *     <li>go</li>
+ *     <li>goes</li>
+ *     <li>going</li>
+ *     <li>gone</li>
+ *   </ol>
+ * </div>
+ */
+
+/* --- 문제 컨테이너 --- */
+.problem {
+    margin-bottom: var(--space-2xl) !important;
+    padding: var(--space-lg) !important;
+    border: 1px solid var(--color-border-default) !important;
+    background-color: var(--color-white) !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+}
+
+/* --- 문제 헤더 (번호 + 유형 뱃지) --- */
+.problem-header {
+    display: flex !important;
+    align-items: center !important;
+    gap: var(--space-md) !important;
+    margin-bottom: var(--space-md) !important;
+}
+
+/* --- 문제 번호 (원형) --- */
+.problem-number {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 28px !important;
+    height: 28px !important;
+    background-color: var(--color-accent-primary) !important;
+    color: var(--color-white) !important;
+    font-family: var(--font-eng) !important;
+    font-size: var(--text-md) !important;
+    font-weight: 700 !important;
+    border-radius: 50% !important;
+    flex-shrink: 0 !important;
+}
+
+/* --- 문제 번호 (사각형 변형) --- */
+.problem-number--square {
+    border-radius: var(--radius-sm) !important;
+}
+
+/* --- 문제 유형 뱃지 --- */
+.problem-type-badge {
+    display: inline-block !important;
+    padding: var(--space-xs) var(--space-md) !important;
+    background-color: var(--color-accent-light) !important;
+    color: var(--color-accent-dark) !important;
+    font-size: var(--text-sm) !important;
+    font-weight: 600 !important;
+    border-radius: var(--radius-sm) !important;
+}
+
+/* --- 문제 지문/문장 --- */
+.problem-stem {
+    font-size: var(--text-base) !important;
+    line-height: var(--leading-relaxed) !important;
+    color: var(--color-text-primary) !important;
+    margin-bottom: var(--space-md) !important;
+    text-align: justify !important;
+}
+
+.problem-stem.eng-text {
+    font-family: var(--font-eng) !important;
+    font-size: var(--passage-font-size) !important;
+    line-height: var(--passage-line-height) !important;
+}
+
+/* --- 발문 (지시사항) --- */
+.problem-instruction {
+    font-size: var(--text-sm) !important;
+    color: var(--color-text-secondary) !important;
+    margin-bottom: var(--space-md) !important;
+    font-weight: 500 !important;
+}
+
+/* --- 선택지 리스트 (2열 기본) --- */
+.problem-choices {
+    list-style: none !important;
+    counter-reset: choice !important;
+    padding: 0 !important;
+    margin: var(--space-md) 0 0 0 !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: var(--choice-gap) var(--space-lg) !important;
+    font-size: var(--choice-font-size) !important;
+}
+
+/* --- 선택지 항목 (CSS counter로 ①②③④⑤ 표시) --- */
+.problem-choices li {
+    counter-increment: choice !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: var(--space-sm) !important;
+    padding: var(--space-sm) !important;
+    line-height: var(--leading-normal) !important;
+}
+
+.problem-choices li::before {
+    content: counter(choice) !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 20px !important;
+    height: 20px !important;
+    background-color: var(--color-bg-subtle) !important;
+    color: var(--color-text-primary) !important;
+    font-weight: 600 !important;
+    font-family: var(--font-eng) !important;
+    border-radius: 50% !important;
+    flex-shrink: 0 !important;
+    font-size: var(--text-sm) !important;
+}
+
+/* --- 1열 선택지 (긴 선택지용) --- */
+.problem-choices--single-column {
+    grid-template-columns: 1fr !important;
+}
+
+/* --- 컴팩트 문제 (페이지당 3~4문제) --- */
+.problem--compact {
+    padding: var(--space-md) !important;
+    margin-bottom: var(--space-lg) !important;
+}
+
+.problem--compact .problem-number {
+    width: 24px !important;
+    height: 24px !important;
+    font-size: var(--text-sm) !important;
+}
+
+.problem--compact .problem-stem {
+    font-size: var(--text-sm) !important;
+    line-height: var(--leading-normal) !important;
+    margin-bottom: var(--space-sm) !important;
+}
+
+.problem--compact .problem-choices {
+    font-size: var(--text-sm) !important;
+    gap: var(--space-xs) var(--space-md) !important;
+}
+
+.problem--compact .problem-choices li::before {
+    width: 18px !important;
+    height: 18px !important;
+    font-size: var(--text-xs) !important;
+}
+
+/* --- 인쇄 최적화 --- */
+@media print {
+    .problem {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+    }
+}

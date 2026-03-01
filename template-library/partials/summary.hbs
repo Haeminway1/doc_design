@@ -1,0 +1,44 @@
+{{#if summary.weakAreas.length}}
+<div class="checklist-group avoid-break">
+  <div class="checklist-group-title">복습 체크리스트</div>
+  <ul style="padding: 0; margin: 0;">
+    {{#each summary.weakAreas}}
+    <li class="checklist-item">
+      <span class="checkbox"></span>
+      <span class="severity-{{severity}}">{{severity}}</span>&nbsp;
+      <strong>{{area}}</strong> — {{detail}}
+    </li>
+    {{/each}}
+  </ul>
+</div>
+{{/if}}
+
+{{#if analysis}}
+<div class="diagnosis-card avoid-break" style="margin-top: 16px;">
+  {{#if analysis.strongPoints.length}}
+  <p style="margin: 0 0 4px;"><strong style="color: #38a169;">강점</strong></p>
+  <ul style="padding-left: 18px; margin: 0 0 10px 0;">
+    {{#each analysis.strongPoints}}
+    <li style="margin: 2px 0;">{{this}}</li>
+    {{/each}}
+  </ul>
+  {{/if}}
+  {{#if analysis.weakPoints.length}}
+  <p style="margin: 0 0 4px;"><strong style="color: #e53e3e;">보완할 점</strong></p>
+  <ul style="padding-left: 18px; margin: 0 0 10px 0;">
+    {{#each analysis.weakPoints}}
+    <li style="margin: 2px 0;">{{this}}</li>
+    {{/each}}
+  </ul>
+  {{/if}}
+  {{#if analysis.nextFocus}}
+  <p style="margin: 0 0 4px;"><strong style="color: #4A90C4;">다음 집중 포인트</strong></p>
+  <p style="margin: 0 0 10px 0;">{{analysis.nextFocus}}</p>
+  {{/if}}
+  {{#if analysis.encouragement}}
+  <div class="answer-box" style="margin-top: 8px;">
+    <p style="margin: 0; font-style: italic;">{{analysis.encouragement}}</p>
+  </div>
+  {{/if}}
+</div>
+{{/if}}

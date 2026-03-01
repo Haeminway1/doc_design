@@ -1,0 +1,100 @@
+{
+  "date": "260227",
+  "student": "정재영",
+  "totalImages": 10,
+  "feedbackImages": 1,
+  "images": [
+    {
+      "file": "정재영_260227_01.jpg",
+      "category": "EXCLUDE",
+      "detailCategory": "planner",
+      "confidence": 1,
+      "description": "학습 시간 기록 앱의 스크린샷입니다. 과목별 학습 시간을 보여주는 플래너입니다.",
+      "level": null,
+      "subject": null
+    },
+    {
+      "file": "정재영_260227_02.jpg",
+      "category": "EXCLUDE",
+      "detailCategory": "vocab-test",
+      "confidence": 0.95,
+      "description": "워드마스터 수능2000 단어 시험 결과. 손글씨로 채점됨.",
+      "level": null,
+      "subject": null
+    },
+    {
+      "file": "정재영_260227_03.jpg",
+      "category": "EXCLUDE",
+      "detailCategory": "vocab-test",
+      "confidence": 0.95,
+      "description": "워드마스터 수능2000 단어 시험 결과. 채점된 흔적이 보입니다.",
+      "level": null,
+      "subject": null
+    },
+    {
+      "file": "정재영_260227_04.jpg",
+      "category": "EXCLUDE",
+      "detailCategory": "vocab-test",
+      "confidence": 0.95,
+      "description": "워드마스터 수능2000 단어 시험 결과.",
+      "level": null,
+      "subject": null
+    },
+    {
+      "file": "정재영_260227_05.jpg",
+      "category": "EXCLUDE",
+      "detailCategory": "vocab-test",
+      "confidence": 0.95,
+      "description": "워드마스터 수능2000 단어 시험 결과.",
+      "level": null,
+      "subject": null
+    },
+    {
+      "file": "정재영_260227_06.jpg",
+      "category": "EXCLUDE",
+      "detailCategory": "planner",
+      "confidence": 1,
+      "description": "학습 계획 앱 스크린샷. 수학, 단어, 독해, 논리, 문법 학습 계획이 나열되어 있음.",
+      "level": null,
+      "subject": null
+    },
+    {
+      "file": "정재영_260227_07.jpg",
+      "category": "EXCLUDE",
+      "detailCategory": "irrelevant",
+      "confidence": 1,
+      "description": "학습과 관련 없는 이미지입니다.",
+      "level": null,
+      "subject": null
+    },
+    {
+      "file": "정재영_260227_08.png",
+      "category": "EXCLUDE",
+      "detailCategory": "irrelevant",
+      "confidence": 1,
+      "description": "짱구 캐릭터 이미지",
+      "level": null,
+      "subject": null
+    },
+    {
+      "file": "정재영_260227_09.jpg",
+      "category": "FEEDBACK",
+      "detailCategory": "our-textbook",
+      "confidence": 0.99,
+      "description": "베라진 자체 교재: 베라진 2월 어휘 토너먼트 시험지. 영어 단어 뜻을 한국어로 쓰는 시험.",
+      "level": "intermediate",
+      "subject": "vocab"
+    },
+    {
+      "file": "정재영_260227_10.jpg",
+      "category": "EXCLUDE",
+      "detailCategory": "irrelevant",
+      "confidence": 1,
+      "description": "학습과 무관한 밈 이미지",
+      "level": null,
+      "subject": null
+    }
+  ],
+  "feedbackReady": true,
+  "processedAt": "2026-02-27T12:35:19.830Z"
+}

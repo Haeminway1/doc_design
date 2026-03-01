@@ -1,0 +1,507 @@
+{
+  "bookId": "vocab-basic",
+  "day": 31,
+  "theme": "의학과 건강 (Medicine and Health)",
+  "words": [
+    {
+      "word": "diagnosis",
+      "pronunciation": "[dàiəgnóusis]",
+      "partOfSpeech": "n.",
+      "meaning": "진단",
+      "example": {
+        "en": "The doctor's diagnosis was a common cold.",
+        "ko": "의사의 진단은 흔한 감기였다."
+      }
+    },
+    {
+      "word": "prognosis",
+      "pronunciation": "[prɑgnóusis]",
+      "partOfSpeech": "n.",
+      "meaning": "(병의) 예후",
+      "example": {
+        "en": "The prognosis for the patient is excellent.",
+        "ko": "그 환자의 예후는 아주 좋다."
+      }
+    },
+    {
+      "word": "symptom",
+      "pronunciation": "[símptəm]",
+      "partOfSpeech": "n.",
+      "meaning": "증상",
+      "example": {
+        "en": "A high fever is a common symptom of the flu.",
+        "ko": "고열은 독감의 흔한 증상이다."
+      }
+    },
+    {
+      "word": "syndrome",
+      "pronunciation": "[síndroum]",
+      "partOfSpeech": "n.",
+      "meaning": "증후군",
+      "example": {
+        "en": "Chronic fatigue syndrome can be difficult to diagnose.",
+        "ko": "만성 피로 증후군은 진단하기 어려울 수 있다."
+      }
+    },
+    {
+      "word": "pathology",
+      "pronunciation": "[pəθάlədʒi]",
+      "partOfSpeech": "n.",
+      "meaning": "병리학",
+      "example": {
+        "en": "The pathology report confirmed the presence of cancer cells.",
+        "ko": "병리학 보고서는 암세포의 존재를 확인했다."
+      }
+    },
+    {
+      "word": "anatomy",
+      "pronunciation": "[ənǽtəmi]",
+      "partOfSpeech": "n.",
+      "meaning": "해부학, 해부학적 구조",
+      "example": {
+        "en": "He is studying human anatomy in medical school.",
+        "ko": "그는 의과대학에서 인체 해부학을 공부하고 있다."
+      }
+    },
+    {
+      "word": "physiology",
+      "pronunciation": "[fìziάlədʒi]",
+      "partOfSpeech": "n.",
+      "meaning": "생리학",
+      "example": {
+        "en": "Physiology is the study of how the body functions.",
+        "ko": "생리학은 신체가 어떻게 기능하는지를 연구하는 학문이다."
+      }
+    },
+    {
+      "word": "metabolism",
+      "pronunciation": "[mətǽbəlìzəm]",
+      "partOfSpeech": "n.",
+      "meaning": "신진대사",
+      "example": {
+        "en": "Regular exercise can boost your metabolism.",
+        "ko": "규칙적인 운동은 신진대사를 촉진할 수 있다."
+      }
+    },
+    {
+      "word": "immune",
+      "pronunciation": "[imjúːn]",
+      "partOfSpeech": "a.",
+      "meaning": "면역의, 면역성이 있는",
+      "example": {
+        "en": "The vaccine helps your body build an immune response.",
+        "ko": "백신은 당신의 몸이 면역 반응을 형성하도록 돕는다."
+      }
+    },
+    {
+      "word": "antibody",
+      "pronunciation": "[ǽntibὰdi]",
+      "partOfSpeech": "n.",
+      "meaning": "항체",
+      "example": {
+        "en": "Antibodies are proteins that fight off infection.",
+        "ko": "항체는 감염과 싸우는 단백질이다."
+      }
+    },
+    {
+      "word": "antigen",
+      "pronunciation": "[ǽntidʒən]",
+      "partOfSpeech": "n.",
+      "meaning": "항원",
+      "example": {
+        "en": "An antigen is a substance that triggers an immune response.",
+        "ko": "항원은 면역 반응을 유발하는 물질이다."
+      }
+    },
+    {
+      "word": "virus",
+      "pronunciation": "[váirəs]",
+      "partOfSpeech": "n.",
+      "meaning": "바이러스",
+      "example": {
+        "en": "The common cold is caused by a virus.",
+        "ko": "일반적인 감기는 바이러스에 의해 발생한다."
+      }
+    },
+    {
+      "word": "bacteria",
+      "pronunciation": "[bæktíəriə]",
+      "partOfSpeech": "n.",
+      "meaning": "박테리아, 세균 (pl. of bacterium)",
+      "example": {
+        "en": "Not all bacteria are harmful; some are essential for health.",
+        "ko": "모든 박테리아가 해로운 것은 아니며, 일부는 건강에 필수적이다."
+      }
+    },
+    {
+      "word": "parasite",
+      "pronunciation": "[pǽrəsàit]",
+      "partOfSpeech": "n.",
+      "meaning": "기생충",
+      "example": {
+        "en": "The parasite lives in the host's intestines.",
+        "ko": "그 기생충은 숙주의 장에 산다."
+      }
+    },
+    {
+      "word": "infection",
+      "pronunciation": "[infékʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "감염, 전염병",
+      "example": {
+        "en": "You should clean the wound to prevent infection.",
+        "ko": "감염을 막기 위해 상처를 소독해야 한다."
+      }
+    },
+    {
+      "word": "inflammation",
+      "pronunciation": "[ìnfləméiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "염증",
+      "example": {
+        "en": "The doctor prescribed medicine to reduce the inflammation.",
+        "ko": "의사는 염증을 줄이기 위해 약을 처방했다."
+      }
+    },
+    {
+      "word": "therapeutic",
+      "pronunciation": "[θèrəpjúːtik]",
+      "partOfSpeech": "a.",
+      "meaning": "치료의, 치료법의",
+      "example": {
+        "en": "The spa offers various therapeutic treatments.",
+        "ko": "그 스파는 다양한 치료 요법을 제공한다."
+      }
+    },
+    {
+      "word": "pharmaceutical",
+      "pronunciation": "[fὰːrməsúːtikəl]",
+      "partOfSpeech": "a.\n       \n        n.",
+      "meaning": "제약의\n       \n        (pl.) 의약품",
+      "example": {
+        "en": "The pharmaceutical industry is highly regulated.",
+        "ko": "제약 산업은 매우 엄격하게 규제된다."
+      }
+    },
+    {
+      "word": "antibiotic",
+      "pronunciation": "[æ̀ntibaiάtik]",
+      "partOfSpeech": "n.",
+      "meaning": "항생제",
+      "example": {
+        "en": "The doctor prescribed an antibiotic for the bacterial infection.",
+        "ko": "의사는 세균 감염에 항생제를 처방했다."
+      }
+    },
+    {
+      "word": "anesthetic",
+      "pronunciation": "[æ̀nəsθétik]",
+      "partOfSpeech": "n.\n       \n        a.",
+      "meaning": "마취제\n       \n        마취의",
+      "example": {
+        "en": "The patient was given a local anesthetic before the surgery.",
+        "ko": "환자는 수술 전에 국소 마취제를 투여받았다."
+      }
+    },
+    {
+      "word": "vaccine",
+      "pronunciation": "[væksíːn]",
+      "partOfSpeech": "n.",
+      "meaning": "백신",
+      "example": {
+        "en": "The flu vaccine is recommended for everyone.",
+        "ko": "독감 백신은 모든 사람에게 권장된다."
+      }
+    },
+    {
+      "word": "immunization",
+      "pronunciation": "[ìmjunizéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "예방 접종, 면역 조치",
+      "example": {
+        "en": "Childhood immunization is important for public health.",
+        "ko": "아동기 예방 접종은 공중 보건에 중요하다."
+      }
+    },
+    {
+      "word": "epidemic",
+      "pronunciation": "[èpədémik]",
+      "partOfSpeech": "n.",
+      "meaning": "유행병, 전염병",
+      "example": {
+        "en": "The city was facing a flu epidemic.",
+        "ko": "그 도시는 독감 유행병에 직면해 있었다."
+      }
+    },
+    {
+      "word": "pandemic",
+      "pronunciation": "[pændémik]",
+      "partOfSpeech": "n.",
+      "meaning": "세계적인 유행병",
+      "example": {
+        "en": "The COVID-19 pandemic affected the entire globe.",
+        "ko": "코로나19 팬데믹은 전 세계에 영향을 미쳤다."
+      }
+    },
+    {
+      "word": "contagious",
+      "pronunciation": "[kəntéidʒəs]",
+      "partOfSpeech": "a.",
+      "meaning": "전염성의",
+      "example": {
+        "en": "The disease is highly contagious.",
+        "ko": "그 질병은 전염성이 매우 높다."
+      }
+    },
+    {
+      "word": "chronic",
+      "pronunciation": "[krάnik]",
+      "partOfSpeech": "a.",
+      "meaning": "만성적인",
+      "example": {
+        "en": "He suffers from chronic back pain.",
+        "ko": "그는 만성적인 허리 통증으로 고통받는다."
+      }
+    },
+    {
+      "word": "acute",
+      "pronunciation": "[əkjúːt]",
+      "partOfSpeech": "a.",
+      "meaning": "급성의; 극심한",
+      "example": {
+        "en": "She felt an acute pain in her chest.",
+        "ko": "그녀는 가슴에 극심한 통증을 느꼈다."
+      }
+    },
+    {
+      "word": "benign",
+      "pronunciation": "[bináin]",
+      "partOfSpeech": "a.",
+      "meaning": "(종양이) 양성의; 상냥한",
+      "example": {
+        "en": "The tumor was found to be benign.",
+        "ko": "그 종양은 양성인 것으로 밝혀졌다."
+      }
+    },
+    {
+      "word": "malignant",
+      "pronunciation": "[məlɪ́gnənt]",
+      "partOfSpeech": "a.",
+      "meaning": "(종양이) 악성의",
+      "example": {
+        "en": "A malignant tumor can spread to other parts of the body.",
+        "ko": "악성 종양은 신체의 다른 부위로 퍼질 수 있다."
+      }
+    },
+    {
+      "word": "metastasis",
+      "pronunciation": "[mətǽstəsis]",
+      "partOfSpeech": "n.",
+      "meaning": "(암의) 전이",
+      "example": {
+        "en": "The cancer had reached the stage of metastasis.",
+        "ko": "그 암은 전이 단계에 이르렀다."
+      }
+    },
+    {
+      "word": "surgery",
+      "pronunciation": "[sə́ːrdʒəri]",
+      "partOfSpeech": "n.",
+      "meaning": "수술",
+      "example": {
+        "en": "He needs surgery on his knee.",
+        "ko": "그는 무릎 수술이 필요하다."
+      }
+    },
+    {
+      "word": "operate",
+      "pronunciation": "[άpərèit]",
+      "partOfSpeech": "v.",
+      "meaning": "수술하다; 작동하다",
+      "example": {
+        "en": "The surgeon will operate tomorrow morning.",
+        "ko": "외과의사가 내일 아침에 수술할 것이다."
+      }
+    },
+    {
+      "word": "transplant",
+      "pronunciation": "[trǽnsplæ̀nt]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "이식\n       \n        이식하다",
+      "example": {
+        "en": "He is waiting for a heart transplant.",
+        "ko": "그는 심장 이식을 기다리고 있다."
+      }
+    },
+    {
+      "word": "prosthetic",
+      "pronunciation": "[prɑsθétik]",
+      "partOfSpeech": "a.\n       \n        n.",
+      "meaning": "인공 기관의, 보철의\n       \n        인공 기관",
+      "example": {
+        "en": "After the accident, he was fitted with a prosthetic leg.",
+        "ko": "사고 후, 그는 인공 다리를 착용했다."
+      }
+    },
+    {
+      "word": "therapy",
+      "pronunciation": "[θérəpi]",
+      "partOfSpeech": "n.",
+      "meaning": "치료, 요법",
+      "example": {
+        "en": "Physical therapy can help you recover from an injury.",
+        "ko": "물리 치료는 부상에서 회복하는 데 도움이 될 수 있다."
+      }
+    },
+    {
+      "word": "psychiatry",
+      "pronunciation": "[saikáiətri]",
+      "partOfSpeech": "n.",
+      "meaning": "정신 의학",
+      "example": {
+        "en": "Psychiatry deals with the diagnosis and treatment of mental illness.",
+        "ko": "정신 의학은 정신 질환의 진단과 치료를 다룬다."
+      }
+    },
+    {
+      "word": "psychology",
+      "pronunciation": "[saikάlədʒi]",
+      "partOfSpeech": "n.",
+      "meaning": "심리학",
+      "example": {
+        "en": "Psychology is the scientific study of the mind and behavior.",
+        "ko": "심리학은 마음과 행동에 대한 과학적 연구이다."
+      }
+    },
+    {
+      "word": "neurological",
+      "pronunciation": "[njùərəlάdʒikəl]",
+      "partOfSpeech": "a.",
+      "meaning": "신경학의, 신경의",
+      "example": {
+        "en": "The patient has a neurological disorder.",
+        "ko": "그 환자는 신경계 질환을 앓고 있다."
+      }
+    },
+    {
+      "word": "cardiovascular",
+      "pronunciation": "[kὰːrdiouvǽskjulər]",
+      "partOfSpeech": "a.",
+      "meaning": "심혈관의",
+      "example": {
+        "en": "Regular exercise is good for your cardiovascular health.",
+        "ko": "규칙적인 운동은 심혈관 건강에 좋다."
+      }
+    },
+    {
+      "word": "respiratory",
+      "pronunciation": "[réspərətɔ̀ːri]",
+      "partOfSpeech": "a.",
+      "meaning": "호흡기의",
+      "example": {
+        "en": "Smoking can cause serious respiratory diseases.",
+        "ko": "흡연은 심각한 호흡기 질환을 유발할 수 있다."
+      }
+    },
+    {
+      "word": "digestive",
+      "pronunciation": "[daidʒéstiv]",
+      "partOfSpeech": "a.",
+      "meaning": "소화의",
+      "example": {
+        "en": "The digestive system breaks down food into nutrients.",
+        "ko": "소화계는 음식을 영양소로 분해한다."
+      }
+    },
+    {
+      "word": "endocrine",
+      "pronunciation": "[éndoukrin]",
+      "partOfSpeech": "a.",
+      "meaning": "내분비의",
+      "example": {
+        "en": "The endocrine system produces hormones.",
+        "ko": "내분비계는 호르몬을 생산한다."
+      }
+    },
+    {
+      "word": "skeletal",
+      "pronunciation": "[skélətl]",
+      "partOfSpeech": "a.",
+      "meaning": "골격의, 뼈대의",
+      "example": {
+        "en": "The skeletal system provides structure to the body.",
+        "ko": "골격계는 신체에 구조를 제공한다."
+      }
+    },
+    {
+      "word": "muscular",
+      "pronunciation": "[mʌ́skjulər]",
+      "partOfSpeech": "a.",
+      "meaning": "근육의",
+      "example": {
+        "en": "Weightlifting helps to build muscular strength.",
+        "ko": "역도는 근력을 키우는 데 도움이 된다."
+      }
+    },
+    {
+      "word": "circulatory",
+      "pronunciation": "[sə́ːrkjulətɔ̀ːri]",
+      "partOfSpeech": "a.",
+      "meaning": "순환의",
+      "example": {
+        "en": "The heart is the main organ of the circulatory system.",
+        "ko": "심장은 순환계의 주요 기관이다."
+      }
+    },
+    {
+      "word": "hormonal",
+      "pronunciation": "[hɔːrmóunl]",
+      "partOfSpeech": "a.",
+      "meaning": "호르몬의",
+      "example": {
+        "en": "Teenagers often experience hormonal changes.",
+        "ko": "십 대들은 종종 호르몬 변화를 경험한다."
+      }
+    },
+    {
+      "word": "genetic",
+      "pronunciation": "[dʒənétik]",
+      "partOfSpeech": "a.",
+      "meaning": "유전의, 유전학의",
+      "example": {
+        "en": "Some diseases have a genetic component.",
+        "ko": "일부 질병은 유전적 요소를 가지고 있다."
+      }
+    },
+    {
+      "word": "hereditary",
+      "pronunciation": "[hirédətèri]",
+      "partOfSpeech": "a.",
+      "meaning": "유전적인",
+      "example": {
+        "en": "Baldness can be hereditary.",
+        "ko": "탈모는 유전적일 수 있다."
+      }
+    },
+    {
+      "word": "congenital",
+      "pronunciation": "[kəndʒénətl]",
+      "partOfSpeech": "a.",
+      "meaning": "선천적인",
+      "example": {
+        "en": "The baby was born with a congenital heart defect.",
+        "ko": "그 아기는 선천성 심장 결함을 가지고 태어났다."
+      }
+    },
+    {
+      "word": "pathogenic",
+      "pronunciation": "[pæθəˈdʒenɪk]",
+      "partOfSpeech": "adjective",
+      "meaning": "병원성의, 질병을 일으키는",
+      "example": {
+        "en": "The researchers identified a new pathogenic bacteria strain resistant to conventional antibiotics.",
+        "ko": "연구진들은 기존 항생제에 내성이 있는 새로운 병원성 박테리아 균주를 발견했다."
+      }
+    }
+  ]
+}

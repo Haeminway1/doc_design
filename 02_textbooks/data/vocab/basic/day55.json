@@ -1,0 +1,507 @@
+{
+  "bookId": "vocab-basic",
+  "day": 55,
+  "theme": "음식과 요리 (Food and Cooking)",
+  "words": [
+    {
+      "word": "ingredient",
+      "pronunciation": "[ingríːdiənt]",
+      "partOfSpeech": "n.",
+      "meaning": "재료, 성분",
+      "example": {
+        "en": "The main ingredients of this dish are flour, eggs, and sugar.",
+        "ko": "이 요리의 주재료는 밀가루, 달걀, 설탕이다."
+      }
+    },
+    {
+      "word": "recipe",
+      "pronunciation": "[résəpìː]",
+      "partOfSpeech": "n.",
+      "meaning": "조리법, 레시피",
+      "example": {
+        "en": "I got this recipe from my grandmother.",
+        "ko": "나는 이 조리법을 할머니에게서 얻었다."
+      }
+    },
+    {
+      "word": "cuisine",
+      "pronunciation": "[kwizíːn]",
+      "partOfSpeech": "n.",
+      "meaning": "(특정 지역·국가의) 요리, 요리법",
+      "example": {
+        "en": "I love trying different types of international cuisine.",
+        "ko": "나는 다양한 종류의 세계 요리를 맛보는 것을 좋아한다."
+      }
+    },
+    {
+      "word": "dish",
+      "pronunciation": "[diʃ]",
+      "partOfSpeech": "n.",
+      "meaning": "요리; 접시",
+      "example": {
+        "en": "This is my favorite dish.",
+        "ko": "이것은 내가 가장 좋아하는 요리이다."
+      }
+    },
+    {
+      "word": "meal",
+      "pronunciation": "[miːl]",
+      "partOfSpeech": "n.",
+      "meaning": "식사",
+      "example": {
+        "en": "We had a delicious three-course meal.",
+        "ko": "우리는 맛있는 3코스 식사를 했다."
+      }
+    },
+    {
+      "word": "appetizer",
+      "pronunciation": "[ǽpitàizər]",
+      "partOfSpeech": "n.",
+      "meaning": "전채 요리, 애피타이저",
+      "example": {
+        "en": "We started our meal with a light appetizer.",
+        "ko": "우리는 가벼운 전채 요리로 식사를 시작했다."
+      }
+    },
+    {
+      "word": "entrée",
+      "pronunciation": "[άːntrei]",
+      "partOfSpeech": "n.",
+      "meaning": "주요리, 앙트레",
+      "example": {
+        "en": "For my entrée, I'll have the grilled salmon.",
+        "ko": "주요리로는 구운 연어를 먹겠습니다."
+      }
+    },
+    {
+      "word": "dessert",
+      "pronunciation": "[dizə́ːrt]",
+      "partOfSpeech": "n.",
+      "meaning": "디저트, 후식",
+      "example": {
+        "en": "What would you like for dessert?",
+        "ko": "디저트로 무엇을 드시겠어요?"
+      }
+    },
+    {
+      "word": "beverage",
+      "pronunciation": "[bévəridʒ]",
+      "partOfSpeech": "n.",
+      "meaning": "음료",
+      "example": {
+        "en": "The restaurant offers a wide selection of beverages.",
+        "ko": "그 레스토랑은 다양한 종류의 음료를 제공한다."
+      }
+    },
+    {
+      "word": "grill",
+      "pronunciation": "[gril]",
+      "partOfSpeech": "v.",
+      "meaning": "석쇠에 굽다",
+      "example": {
+        "en": "We grilled some burgers for the barbecue.",
+        "ko": "우리는 바비큐를 위해 버거를 구웠다."
+      }
+    },
+    {
+      "word": "roast",
+      "pronunciation": "[roust]",
+      "partOfSpeech": "v.",
+      "meaning": "(오븐에) 굽다",
+      "example": {
+        "en": "We are having roast chicken for dinner.",
+        "ko": "우리는 저녁으로 구운 닭고기를 먹을 것이다."
+      }
+    },
+    {
+      "word": "bake",
+      "pronunciation": "[beik]",
+      "partOfSpeech": "v.",
+      "meaning": "(빵·케이크 등을) 굽다",
+      "example": {
+        "en": "I love the smell of freshly baked bread.",
+        "ko": "나는 갓 구운 빵 냄새를 좋아한다."
+      }
+    },
+    {
+      "word": "fry",
+      "pronunciation": "[frai]",
+      "partOfSpeech": "v.",
+      "meaning": "튀기다, 볶다",
+      "example": {
+        "en": "Fry the onions until they are golden brown.",
+        "ko": "양파가 황금빛 갈색이 될 때까지 볶으세요."
+      }
+    },
+    {
+      "word": "boil",
+      "pronunciation": "[bɔil]",
+      "partOfSpeech": "v.",
+      "meaning": "끓이다, 삶다",
+      "example": {
+        "en": "Boil the potatoes until they are soft.",
+        "ko": "감자가 부드러워질 때까지 삶으세요."
+      }
+    },
+    {
+      "word": "steam",
+      "pronunciation": "[stiːm]",
+      "partOfSpeech": "v.\n        \n         n.",
+      "meaning": "찌다\n        \n         증기",
+      "example": {
+        "en": "Steaming is a healthy way to cook vegetables.",
+        "ko": "찌는 것은 채소를 요리하는 건강한 방법이다."
+      }
+    },
+    {
+      "word": "simmer",
+      "pronunciation": "[símər]",
+      "partOfSpeech": "v.",
+      "meaning": "뭉근히 끓이다",
+      "example": {
+        "en": "Let the soup simmer for at least an hour.",
+        "ko": "수프를 최소 한 시간 동안 뭉근히 끓이세요."
+      }
+    },
+    {
+      "word": "sauté",
+      "pronunciation": "[soutéi]",
+      "partOfSpeech": "v.",
+      "meaning": "볶다, 소테하다",
+      "example": {
+        "en": "Sauté the garlic and onions in a little olive oil.",
+        "ko": "마늘과 양파를 약간의 올리브유에 볶으세요."
+      }
+    },
+    {
+      "word": "chop",
+      "pronunciation": "[tʃɑp]",
+      "partOfSpeech": "v.",
+      "meaning": "썰다, 다지다",
+      "example": {
+        "en": "Chop the vegetables into small pieces.",
+        "ko": "채소를 작은 조각으로 써세요."
+      }
+    },
+    {
+      "word": "slice",
+      "pronunciation": "[slais]",
+      "partOfSpeech": "v.",
+      "meaning": "얇게 썰다",
+      "example": {
+        "en": "Slice the bread thinly.",
+        "ko": "빵을 얇게 써세요."
+      }
+    },
+    {
+      "word": "dice",
+      "pronunciation": "[dais]",
+      "partOfSpeech": "v.",
+      "meaning": "깍둑썰기하다",
+      "example": {
+        "en": "Dice the carrots and add them to the soup.",
+        "ko": "당근을 깍둑썰기해서 수프에 넣으세요."
+      }
+    },
+    {
+      "word": "mince",
+      "pronunciation": "[mins]",
+      "partOfSpeech": "v.",
+      "meaning": "다지다",
+      "example": {
+        "en": "Mince the garlic finely.",
+        "ko": "마늘을 곱게 다지세요."
+      }
+    },
+    {
+      "word": "grate",
+      "pronunciation": "[greit]",
+      "partOfSpeech": "v.",
+      "meaning": "강판에 갈다",
+      "example": {
+        "en": "Grate the cheese over the pasta.",
+        "ko": "파스타 위에 치즈를 강판에 가세요."
+      }
+    },
+    {
+      "word": "peel",
+      "pronunciation": "[piːl]",
+      "partOfSpeech": "v.",
+      "meaning": "껍질을 벗기다",
+      "example": {
+        "en": "Could you peel the potatoes for me?",
+        "ko": "감자 껍질 좀 벗겨줄 수 있나요?"
+      }
+    },
+    {
+      "word": "whisk",
+      "pronunciation": "[hwisk]",
+      "partOfSpeech": "v.",
+      "meaning": "휘젓다",
+      "example": {
+        "en": "Whisk the eggs and milk together.",
+        "ko": "달걀과 우유를 함께 휘저으세요."
+      }
+    },
+    {
+      "word": "stir",
+      "pronunciation": "[stəːr]",
+      "partOfSpeech": "v.",
+      "meaning": "젓다",
+      "example": {
+        "en": "Stir the sauce occasionally to prevent it from sticking.",
+        "ko": "소스가 눌어붙지 않도록 가끔 저어주세요."
+      }
+    },
+    {
+      "word": "knead",
+      "pronunciation": "[niːd]",
+      "partOfSpeech": "v.",
+      "meaning": "반죽하다",
+      "example": {
+        "en": "Knead the dough until it is smooth and elastic.",
+        "ko": "반죽이 부드럽고 탄력이 생길 때까지 치대세요."
+      }
+    },
+    {
+      "word": "dough",
+      "pronunciation": "[dou]",
+      "partOfSpeech": "n.",
+      "meaning": "반죽",
+      "example": {
+        "en": "Let the dough rise in a warm place.",
+        "ko": "따뜻한 곳에서 반죽을 부풀리세요."
+      }
+    },
+    {
+      "word": "batter",
+      "pronunciation": "[bǽtər]",
+      "partOfSpeech": "n.",
+      "meaning": "(묽은) 반죽",
+      "example": {
+        "en": "Pour the pancake batter onto the hot griddle.",
+        "ko": "뜨거운 번철 위에 팬케이크 반죽을 부으세요."
+      }
+    },
+    {
+      "word": "sauce",
+      "pronunciation": "[sɔːs]",
+      "partOfSpeech": "n.",
+      "meaning": "소스",
+      "example": {
+        "en": "The pasta was served with a rich tomato sauce.",
+        "ko": "파스타는 진한 토마토소스와 함께 나왔다."
+      }
+    },
+    {
+      "word": "gravy",
+      "pronunciation": "[gréivi]",
+      "partOfSpeech": "n.",
+      "meaning": "그레이비소스",
+      "example": {
+        "en": "He poured gravy over his mashed potatoes.",
+        "ko": "그는 으깬 감자 위에 그레이비소스를 부었다."
+      }
+    },
+    {
+      "word": "broth",
+      "pronunciation": "[brɔːθ]",
+      "partOfSpeech": "n.",
+      "meaning": "묽은 수프, 국물",
+      "example": {
+        "en": "Chicken broth is the base for this soup.",
+        "ko": "닭고기 육수는 이 수프의 기본이다."
+      }
+    },
+    {
+      "word": "soup",
+      "pronunciation": "[suːp]",
+      "partOfSpeech": "n.",
+      "meaning": "수프",
+      "example": {
+        "en": "I'd like a bowl of tomato soup, please.",
+        "ko": "토마토 수프 한 그릇 주세요."
+      }
+    },
+    {
+      "word": "stew",
+      "pronunciation": "[stjuː]",
+      "partOfSpeech": "n.",
+      "meaning": "스튜",
+      "example": {
+        "en": "We had a hearty beef stew for dinner.",
+        "ko": "우리는 저녁으로 푸짐한 소고기 스튜를 먹었다."
+      }
+    },
+    {
+      "word": "salad",
+      "pronunciation": "[sǽləd]",
+      "partOfSpeech": "n.",
+      "meaning": "샐러드",
+      "example": {
+        "en": "A green salad is a healthy choice.",
+        "ko": "그린 샐러드는 건강한 선택이다."
+      }
+    },
+    {
+      "word": "dressing",
+      "pronunciation": "[drési&eng;]",
+      "partOfSpeech": "n.",
+      "meaning": "드레싱",
+      "example": {
+        "en": "What kind of dressing would you like on your salad?",
+        "ko": "샐러드에 어떤 종류의 드레싱을 원하세요?"
+      }
+    },
+    {
+      "word": "pastry",
+      "pronunciation": "[péistri]",
+      "partOfSpeech": "n.",
+      "meaning": "페이스트리",
+      "example": {
+        "en": "The bakery sells a variety of delicious pastries.",
+        "ko": "그 빵집은 다양하고 맛있는 페이스트리를 판다."
+      }
+    },
+    {
+      "word": "confection",
+      "pronunciation": "[kənfékʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "설탕 절임, 당과",
+      "example": {
+        "en": "The shop was filled with colorful confections.",
+        "ko": "그 가게는 형형색색의 당과로 가득했다."
+      }
+    },
+    {
+      "word": "nutrient",
+      "pronunciation": "[njúːtriənt]",
+      "partOfSpeech": "n.",
+      "meaning": "영양소",
+      "example": {
+        "en": "Fruits and vegetables are rich in essential nutrients.",
+        "ko": "과일과 채소는 필수 영양소가 풍부하다."
+      }
+    },
+    {
+      "word": "calorie",
+      "pronunciation": "[kǽləri]",
+      "partOfSpeech": "n.",
+      "meaning": "칼로리",
+      "example": {
+        "en": "This meal is low in calories but high in protein.",
+        "ko": "이 식사는 칼로리는 낮지만 단백질은 높다."
+      }
+    },
+    {
+      "word": "protein",
+      "pronunciation": "[próutiːn]",
+      "partOfSpeech": "n.",
+      "meaning": "단백질",
+      "example": {
+        "en": "Meat, fish, and eggs are good sources of protein.",
+        "ko": "고기, 생선, 달걀은 좋은 단백질 공급원이다."
+      }
+    },
+    {
+      "word": "carbohydrate",
+      "pronunciation": "[kὰːrbouháidreit]",
+      "partOfSpeech": "n.",
+      "meaning": "탄수화물",
+      "example": {
+        "en": "Bread, rice, and pasta are high in carbohydrates.",
+        "ko": "빵, 쌀, 파스타는 탄수화물이 많다."
+      }
+    },
+    {
+      "word": "fat",
+      "pronunciation": "[fæt]",
+      "partOfSpeech": "n.",
+      "meaning": "지방",
+      "example": {
+        "en": "A diet high in saturated fat is unhealthy.",
+        "ko": "포화 지방이 많은 식단은 건강에 해롭다."
+      }
+    },
+    {
+      "word": "vitamin",
+      "pronunciation": "[váitəmin]",
+      "partOfSpeech": "n.",
+      "meaning": "비타민",
+      "example": {
+        "en": "Oranges are a good source of vitamin C.",
+        "ko": "오렌지는 비타민 C의 좋은 공급원이다."
+      }
+    },
+    {
+      "word": "nutrition",
+      "pronunciation": "[njuːtríʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "영양",
+      "example": {
+        "en": "Good nutrition is essential for growing children.",
+        "ko": "좋은 영양은 성장기 어린이에게 필수적이다."
+      }
+    },
+    {
+      "word": "diet",
+      "pronunciation": "[dáiət]",
+      "partOfSpeech": "n.",
+      "meaning": "식단, 다이어트",
+      "example": {
+        "en": "I'm trying to eat a balanced diet.",
+        "ko": "나는 균형 잡힌 식단을 섭취하려고 노력 중이다."
+      }
+    },
+    {
+      "word": "vegetarian",
+      "pronunciation": "[vèdʒətέəriən]",
+      "partOfSpeech": "n.",
+      "meaning": "채식주의자",
+      "example": {
+        "en": "As a vegetarian, she doesn't eat meat or fish.",
+        "ko": "채식주의자로서, 그녀는 고기나 생선을 먹지 않는다."
+      }
+    },
+    {
+      "word": "vegan",
+      "pronunciation": "[víːgən]",
+      "partOfSpeech": "n.",
+      "meaning": "완전 채식주의자",
+      "example": {
+        "en": "A vegan diet excludes all animal products, including dairy and eggs.",
+        "ko": "완전 채식 식단은 유제품과 달걀을 포함한 모든 동물성 제품을 배제한다."
+      }
+    },
+    {
+      "word": "culinary",
+      "pronunciation": "[ˈkʌlɪneri]",
+      "partOfSpeech": "adjective",
+      "meaning": "요리의, 요리법과 관련된",
+      "example": {
+        "en": "She pursued her passion for culinary arts at the prestigious cooking academy.",
+        "ko": "그녀는 명문 요리 학교에서 요리 예술에 대한 그녀의 열정을 추구했다."
+      }
+    },
+    {
+      "word": "gastronomic",
+      "pronunciation": "[ˌɡæstrəˈnɑːmɪk]",
+      "partOfSpeech": "adjective",
+      "meaning": "미식의, 요리 예술과 관련된",
+      "example": {
+        "en": "Paris is renowned for its gastronomic excellence and fine dining establishments.",
+        "ko": "파리는 미식의 탁월함과 고급 식당들로 유명하다."
+      }
+    },
+    {
+      "word": "saute",
+      "pronunciation": "/soʊˈteɪ/",
+      "partOfSpeech": "v.",
+      "meaning": "작은 양의 뜨거운 기름을 두른 팬에서 저어가며 빠르게 조리하다",
+      "example": {
+        "en": "Saute the onions in butter until they turn translucent.",
+        "ko": "양파를 버터에 살짝 볶아 투명해질 때까지 익혀라."
+      }
+    }
+  ]
+}

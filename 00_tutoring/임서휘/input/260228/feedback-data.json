@@ -1,0 +1,324 @@
+{
+  "student": "임서휘",
+  "date": "260228",
+  "subject": "어휘",
+  "textbook": "베라진 2월 어휘 토너먼트",
+  "range": "Q.1~100 (Section A: 영→한 1~50, Section B: 한→영 51~100)",
+  "summary": {
+    "totalQ": 100,
+    "wrongQ": 17,
+    "correctRate": "43%",
+    "goodPoints": "precaution(예방), prospect(전망), exchange(교환하다), assumption(가정), definition(정의) 등 핵심 명사·동사 26개를 정확히 암기했고, nervous, jealous, various, fairly, hardly 등 기본 형용사·부사 17개의 철자도 정확합니다.",
+    "badPoints": "100문항 중 40문항을 미작성(모름)하여 기본 어휘량이 부족합니다. 작성한 60문항 중에서도 17문항이 오답으로, 부사 형성 규칙(-ly 변환) 오류 5건, 유사 단어 혼동 4건, 철자 오류 8건이 발견됩니다.",
+    "priority": "기본 어휘 암기량 확보 → 부사 형성 규칙(-ly) 체화 → 혼동 어휘 구분 훈련",
+    "weakAreas": [
+      { "area": "어휘 암기량 부족", "count": 40, "severity": "high", "note": "100문항 중 40문항 미작성 — 기본 어휘 반복 학습 필요" },
+      { "area": "부사 형성 규칙 (-ly)", "count": 5, "severity": "high", "note": "형용사→부사 변환 시 -ly 누락, 철자 변화 규칙 미숙" },
+      { "area": "유사 단어 혼동", "count": 4, "severity": "mid", "note": "election↔선언, pollution↔확산, profession↔교수 등 유사어 구분 실패" },
+      { "area": "영어 철자 오류", "count": 8, "severity": "mid", "note": "prosperous, sequence, species, sacrifice 등 철자 부정확" }
+    ]
+  },
+  "wrongAnswers": [
+    {
+      "q": 13,
+      "selected": "면하다",
+      "correct": "면역의",
+      "type": "의미 혼동",
+      "question": "immune adj. → 한국어 뜻 쓰기",
+      "explanation": "<div class='concept-box'><h4>immune = 면역의, ~에 영향을 받지 않는</h4><p><strong>im-(not) + mune(의무)</strong> → 의무에서 벗어난 → 면역의</p><p>• immune to disease = 질병에 면역인</p><p>• immune system = 면역 체계</p></div><div class='warning-box'><h4>⚠ 면하다 vs 면역의</h4><p><strong>면하다</strong> = to avoid, to escape (위기를 면하다)</p><p><strong>면역의(immune)</strong> = 외부 자극에 영향을 받지 않는 상태</p><p>'면'이라는 글자는 같지만 의미가 완전히 다릅니다.</p></div>",
+      "studentAnalysis": {
+        "whyChosen": "'immune'의 '면(免)'과 '면하다'의 '면'을 연결하여 추측한 것으로 보임",
+        "errorPattern": "어근 일부만 기억하고 전체 의미를 추측",
+        "focusPoint": "immune = '면역의'로 통째로 암기. immunity(면역), immunize(면역시키다) 함께 외우기"
+      }
+    },
+    {
+      "q": 20,
+      "selected": "의인어",
+      "correct": "의식하는, 의식적인",
+      "type": "의미 혼동",
+      "question": "conscious adj. → 한국어 뜻 쓰기",
+      "explanation": "<div class='concept-box'><h4>conscious = 의식하는, 자각하는</h4><p><strong>con-(함께) + sci(알다)</strong> → 함께 아는 → 의식하는</p><p>• be conscious of = ~을 의식하다</p><p>• a conscious decision = 의식적인 결정</p></div><div class='grammar-block'><p><strong>관련 어휘:</strong></p><p>• conscious (adj) 의식하는 ↔ unconscious 무의식의</p><p>• consciousness (n) 의식</p><p>• conscience (n) 양심 ← 철자 주의!</p></div>",
+      "studentAnalysis": {
+        "whyChosen": "'의식'과 관련된 단어임을 어렴풋이 기억했으나 정확한 뜻을 쓰지 못함",
+        "errorPattern": "어근의 느낌만 기억하고 정확한 한국어 대응어를 모름",
+        "focusPoint": "conscious = '의식하는' + be conscious of 구문 함께 암기"
+      }
+    },
+    {
+      "q": 27,
+      "selected": "선언",
+      "correct": "선거",
+      "type": "유사 단어 혼동",
+      "question": "election n. → 한국어 뜻 쓰기",
+      "explanation": "<div class='concept-box'><h4>election = 선거</h4><p><strong>e-(밖으로) + lect(고르다)</strong> → 골라내다 → 선거</p><p>• presidential election = 대통령 선거</p><p>• elect a leader = 지도자를 선출하다</p></div><div class='warning-box'><h4>⚠ 선거 vs 선언</h4><table><tr><th>단어</th><th>뜻</th><th>영어</th></tr><tr><td>선거(選擧)</td><td>대표를 뽑는 행위</td><td><strong>election</strong></td></tr><tr><td>선언(宣言)</td><td>공식적으로 알림</td><td><strong>declaration</strong></td></tr></table><p>'선'자가 같지만 전혀 다른 단어입니다.</p></div>",
+      "studentAnalysis": {
+        "whyChosen": "'선(選/宣)'이라는 한자 음이 같아 선거와 선언을 혼동",
+        "errorPattern": "한자어 음독 유사성에 의한 혼동",
+        "focusPoint": "election = elect(선출하다) + -ion → 선거. declaration = declare(선언하다) + -tion → 선언"
+      }
+    },
+    {
+      "q": 32,
+      "selected": "확산",
+      "correct": "오염",
+      "type": "유사 단어 혼동",
+      "question": "pollution n. → 한국어 뜻 쓰기",
+      "explanation": "<div class='concept-box'><h4>pollution = 오염</h4><p><strong>pollut(더럽히다) + -ion</strong> → 더럽힘 → 오염</p><p>• air pollution = 대기 오염</p><p>• water pollution = 수질 오염</p><p>• pollute (v) 오염시키다 / pollutant (n) 오염 물질</p></div><div class='warning-box'><h4>⚠ 오염 vs 확산</h4><p><strong>오염(pollution)</strong> = 유해 물질로 더러워지는 것</p><p><strong>확산(spread/diffusion)</strong> = 퍼져 나가는 것</p><p>오염이 '확산'될 수는 있지만, pollution 자체의 뜻은 '오염'입니다.</p></div>",
+      "studentAnalysis": {
+        "whyChosen": "오염의 '확산'이라는 연관 개념을 떠올렸으나 pollution 자체의 뜻과 혼동",
+        "errorPattern": "단어의 뜻 대신 연관 개념을 답으로 작성",
+        "focusPoint": "pollution = 오염 (pollute → 오염시키다). spread/diffusion = 확산"
+      }
+    },
+    {
+      "q": 33,
+      "selected": "교수",
+      "correct": "직업, 전문직",
+      "type": "유사 단어 혼동",
+      "question": "profession n. → 한국어 뜻 쓰기",
+      "explanation": "<div class='concept-box'><h4>profession = 직업, 전문직</h4><p><strong>pro-(앞에서) + fess(말하다)</strong> → 공개적으로 선언하다 → (전문 자격을 선언한) 직업</p><p>• medical profession = 의료 전문직</p><p>• professional (adj/n) = 전문적인 / 전문가</p></div><div class='warning-box'><h4>⚠ profession vs professor</h4><table><tr><th>단어</th><th>뜻</th><th>품사</th></tr><tr><td><strong>profession</strong></td><td>직업, 전문직</td><td>명사</td></tr><tr><td><strong>professor</strong></td><td>교수</td><td>명사</td></tr></table><p>어근은 같지만(profess-) 접미사가 다릅니다: -ion(행위/상태) vs -or(사람)</p></div>",
+      "studentAnalysis": {
+        "whyChosen": "profession과 professor의 철자가 유사하여 '교수'로 답함",
+        "errorPattern": "파생어 간 혼동 — 접미사 구분 미숙",
+        "focusPoint": "profession(-ion=것) = 직업, professor(-or=사람) = 교수. 접미사로 구분!"
+      }
+    },
+    {
+      "q": 48,
+      "selected": "제어하는",
+      "correct": "과도한, 지나친",
+      "type": "의미 혼동",
+      "question": "excessive adj. → 한국어 뜻 쓰기",
+      "explanation": "<div class='concept-box'><h4>excessive = 과도한, 지나친</h4><p><strong>ex-(넘어서) + cess(가다)</strong> → 한계를 넘어간 → 과도한</p><p>• excessive spending = 과도한 지출</p><p>• excessive heat = 지나친 더위</p><p>• exceed (v) 초과하다 / excess (n) 초과, 과잉</p></div><div class='warning-box'><h4>⚠ excessive ≠ 제어하는</h4><p><strong>제어하는</strong> = controlling (control의 파생)</p><p><strong>과도한</strong> = excessive (exceed의 파생)</p><p>정반대 방향의 의미입니다.</p></div>",
+      "studentAnalysis": {
+        "whyChosen": "단어의 의미를 기억하지 못하고 ex- 접두사에서 다른 단어를 추측한 것으로 보임",
+        "errorPattern": "모르는 단어에 대한 추측 — 관련 없는 의미 작성",
+        "focusPoint": "excessive = exceed(초과하다)의 형용사형 = 과도한. ex-(밖으로, 넘어서) 기억"
+      }
+    },
+    {
+      "q": 54,
+      "selected": "persporoue",
+      "correct": "prosperous",
+      "type": "철자 오류",
+      "question": "번영하는 adj. → 영어 철자 쓰기",
+      "explanation": "<div class='concept-box'><h4>prosperous [프라스퍼러스]</h4><p><strong>prosper(번영하다) + -ous(형용사)</strong></p><p>철자 분해: <strong>pro-sper-ous</strong></p><p>• a prosperous nation = 번영하는 국가</p><p>• prosper (v) 번영하다 / prosperity (n) 번영</p></div><div class='answer-box'><h4>✅ 올바른 철자</h4><p><strong>p-r-o-s-p-e-r-o-u-s</strong></p><p>학생 작성: persporoue → 자음·모음 순서 뒤바뀜</p></div>",
+      "studentAnalysis": {
+        "whyChosen": "prosper 어근을 알고 있으나 철자 순서를 정확히 기억하지 못함",
+        "errorPattern": "음절 순서 전도 (pro→per, sper→spor)",
+        "focusPoint": "prosper + ous = prosperous. 동사 prosper를 먼저 확실히 외운 뒤 -ous 붙이기"
+      }
+    },
+    {
+      "q": 57,
+      "selected": "common",
+      "correct": "commonly",
+      "type": "품사 혼동 (형용사→부사)",
+      "question": "흔히 adv. → 영어 철자 쓰기",
+      "explanation": "<div class='concept-box'><h4>commonly = 흔히, 일반적으로</h4><p><strong>common(흔한, adj) + -ly = commonly(흔히, adv)</strong></p><p>• It is commonly believed that... = 흔히 ~라고 믿어진다</p></div><div class='warning-box'><h4>⚠ 형용사 vs 부사</h4><p>문제에서 <strong>'흔히 adv.'</strong>라고 품사를 명시했습니다.</p><p><strong>common</strong> = 흔한 (형용사) ← 이것을 적으면 오답!</p><p><strong>commonly</strong> = 흔히 (부사) ← 정답</p></div>",
+      "studentAnalysis": {
+        "whyChosen": "common의 뜻은 알고 있으나 부사형 -ly를 붙이는 것을 간과",
+        "errorPattern": "품사 변환 규칙 미적용 — adv. 표시를 놓침",
+        "focusPoint": "문제의 품사 표시(adj./adv./n./v.)를 반드시 확인! adv. → -ly 붙이기"
+      }
+    },
+    {
+      "q": 58,
+      "selected": "effective",
+      "correct": "effectively",
+      "type": "품사 혼동 (형용사→부사)",
+      "question": "효과적으로 adv. → 영어 철자 쓰기",
+      "explanation": "<div class='concept-box'><h4>effectively = 효과적으로</h4><p><strong>effective(효과적인, adj) + -ly = effectively(효과적으로, adv)</strong></p><p>• communicate effectively = 효과적으로 소통하다</p></div><div class='warning-box'><h4>⚠ 같은 패턴 반복!</h4><p>Q57 common→commonly와 동일한 실수입니다.</p><p>한국어 '~으로' '~하게' '~히' = 영어 부사 = <strong>형용사 + -ly</strong></p></div>",
+      "studentAnalysis": {
+        "whyChosen": "effective는 알지만 -ly를 붙여야 한다는 인식이 부족",
+        "errorPattern": "부사 형성 규칙 미적용 (Q57과 동일 패턴)",
+        "focusPoint": "'~으로/~하게/~히' = adverb = 반드시 -ly 확인!"
+      }
+    },
+    {
+      "q": 68,
+      "selected": "successfuly",
+      "correct": "successfully",
+      "type": "철자 오류 (-lly 규칙)",
+      "question": "성공적으로 adv. → 영어 철자 쓰기",
+      "explanation": "<div class='concept-box'><h4>successfully = 성공적으로</h4><p><strong>successful + -ly = successfully</strong></p><p>⚡ <strong>-ful + -ly = -fully (l이 두 개!)</strong></p><p>• successfully complete = 성공적으로 완료하다</p></div><div class='answer-box'><h4>✅ 철자 규칙</h4><p>success → success<strong>ful</strong> → successful<strong>ly</strong></p><p>-ful로 끝나는 형용사 + ly → <strong>-fully</strong> (ll 유지)</p><p>학생: successfuly (l 1개) → success<strong>fully</strong> (l 2개)</p></div>",
+      "studentAnalysis": {
+        "whyChosen": "-ful + -ly 조합에서 l을 하나 빠뜨림",
+        "errorPattern": "이중 자음 규칙 미숙 (-ful + -ly = -fully)",
+        "focusPoint": "-ful + -ly = -fully: beautifully, carefully, successfully, hopefully 패턴 암기"
+      }
+    },
+    {
+      "q": 69,
+      "selected": "normaly",
+      "correct": "normally",
+      "type": "철자 오류 (-lly 규칙)",
+      "question": "일반적으로 adv. → 영어 철자 쓰기",
+      "explanation": "<div class='concept-box'><h4>normally = 일반적으로, 보통</h4><p><strong>normal + -ly = normally</strong></p><p>⚡ <strong>-al + -ly = -ally (l이 두 개!)</strong></p><p>• I normally wake up at 7. = 나는 보통 7시에 일어난다.</p></div><div class='answer-box'><h4>✅ 철자 규칙</h4><p>norm → norm<strong>al</strong> → normal<strong>ly</strong></p><p>-al로 끝나는 형용사 + ly → <strong>-ally</strong> (ll 유지)</p><p>학생: normaly (l 1개) → normal<strong>ly</strong> (l 2개)</p></div>",
+      "studentAnalysis": {
+        "whyChosen": "-al + -ly 조합에서 l을 하나 빠뜨림 (Q68과 동일 패턴)",
+        "errorPattern": "이중 자음 규칙 미숙 — -al + -ly = -ally",
+        "focusPoint": "-al + -ly = -ally: normally, finally, occasionally, accidentally 패턴 암기"
+      }
+    },
+    {
+      "q": 75,
+      "selected": "softcity",
+      "correct": "sacrifice",
+      "type": "철자 오류 (심각)",
+      "question": "희생 n./v. → 영어 철자 쓰기",
+      "explanation": "<div class='concept-box'><h4>sacrifice [새크리파이스]</h4><p><strong>sacri-(신성한) + fice(만들다)</strong> → 신에게 바치다 → 희생</p><p>철자 분해: <strong>sac-ri-fice</strong></p><p>• make a sacrifice = 희생하다</p><p>• sacrifice one's time = 시간을 희생하다</p></div><div class='answer-box'><h4>✅ 올바른 철자</h4><p><strong>s-a-c-r-i-f-i-c-e</strong> (9글자)</p><p>학생 작성: softcity → 완전히 다른 단어</p><p>발음 [새크리파이스]를 기억하며 철자 연습 필요</p></div>",
+      "studentAnalysis": {
+        "whyChosen": "sacrifice의 철자를 전혀 기억하지 못하고 음감으로 추측",
+        "errorPattern": "단어 철자 미암기 — 소리 기반 추측 실패",
+        "focusPoint": "sacrifice = sacri(신성한) + fice(만들다). 발음과 어원 함께 반복 암기"
+      }
+    },
+    {
+      "q": 80,
+      "selected": "sequance",
+      "correct": "sequence",
+      "type": "철자 오류",
+      "question": "순서 n. → 영어 철자 쓰기",
+      "explanation": "<div class='concept-box'><h4>sequence [시퀀스]</h4><p><strong>sequ-(따르다) + -ence(명사)</strong></p><p>철자 분해: <strong>se-quence</strong></p><p>• in sequence = 순서대로</p><p>• a sequence of events = 일련의 사건들</p></div><div class='answer-box'><h4>✅ 철자 교정</h4><p>학생: sequ<strong>a</strong>nce → 정답: sequ<strong>e</strong>nce</p><p>-ence 접미사: sequ<strong>ence</strong>, differ<strong>ence</strong>, refer<strong>ence</strong></p></div>",
+      "studentAnalysis": {
+        "whyChosen": "-ence와 -ance 접미사를 혼동하여 'a'로 작성",
+        "errorPattern": "-ence vs -ance 접미사 혼동",
+        "focusPoint": "sequence = -ence 그룹. -ance: distance, importance / -ence: sequence, difference"
+      }
+    },
+    {
+      "q": 81,
+      "selected": "specis",
+      "correct": "species",
+      "type": "철자 오류",
+      "question": "종 n. → 영어 철자 쓰기",
+      "explanation": "<div class='concept-box'><h4>species [스피시즈]</h4><p><strong>speci-(보다) + -es</strong> → 겉모습으로 분류한 것 → 종(種)</p><p>⚡ 단수·복수 동형: a species / two species</p><p>• endangered species = 멸종 위기종</p></div><div class='answer-box'><h4>✅ 철자 교정</h4><p>학생: spec<strong>is</strong> → 정답: spec<strong>ies</strong></p><p>-ies 끝: spec<strong>ies</strong> (i 다음에 e가 하나 더!)</p></div>",
+      "studentAnalysis": {
+        "whyChosen": "species의 -ies 부분에서 e를 빠뜨림",
+        "errorPattern": "모음 연속(ie) 누락",
+        "focusPoint": "species = speci + es. 단복수 동형(a species / many species) 함께 기억"
+      }
+    },
+    {
+      "q": 85,
+      "selected": "accident",
+      "correct": "incident, event",
+      "type": "유사 단어 혼동",
+      "question": "사건 n. → 영어 철자 쓰기",
+      "explanation": "<div class='concept-box'><h4>사건 = incident / event</h4><p><strong>incident</strong> = (불쾌한) 사건, 사고 → in-(안으로) + cid(떨어지다)</p><p><strong>event</strong> = (중요한) 사건, 행사 → e-(밖으로) + vent(오다)</p></div><div class='warning-box'><h4>⚠ incident vs accident</h4><table><tr><th>영어</th><th>한국어</th><th>뉘앙스</th></tr><tr><td><strong>incident</strong></td><td>사건</td><td>일반적인 사건·일</td></tr><tr><td><strong>accident</strong></td><td>사고</td><td>뜻하지 않은 사고 (교통사고 등)</td></tr></table><p>사건(incident) ≠ 사고(accident)</p></div>",
+      "studentAnalysis": {
+        "whyChosen": "'사건'과 '사고'를 혼동하여 accident(사고)를 작성",
+        "errorPattern": "한국어 유사어(사건/사고) → 영어 대응어 혼동",
+        "focusPoint": "사건=incident, 사고=accident. 한국어 뜻을 정확히 구분한 뒤 영어 대응"
+      }
+    },
+    {
+      "q": 91,
+      "selected": "analizoe",
+      "correct": "analyze",
+      "type": "철자 오류",
+      "question": "분석하다 v. → 영어 철자 쓰기",
+      "explanation": "<div class='concept-box'><h4>analyze [애널라이즈]</h4><p><strong>ana-(위로) + lyze(풀다)</strong> → 분해하여 살펴보다 → 분석하다</p><p>철자 분해: <strong>a-na-lyze</strong></p><p>• analyze data = 데이터를 분석하다</p><p>• analysis (n) 분석 / analyst (n) 분석가</p></div><div class='answer-box'><h4>✅ 철자 교정</h4><p>학생: an<strong>alizoe</strong> → 정답: an<strong>alyze</strong></p><p>핵심: -<strong>lyze</strong> (y + z + e)</p></div>",
+      "studentAnalysis": {
+        "whyChosen": "analyze의 대략적인 발음은 아나 모음·자음 배열을 정확히 기억하지 못함",
+        "errorPattern": "모음 위치 혼동 (i↔y, 불필요한 o 추가)",
+        "focusPoint": "analyze = ana + lyze. analysis(분석)과 함께 외우면 lyze/lysis 패턴 기억에 도움"
+      }
+    },
+    {
+      "q": 95,
+      "selected": "auto matically",
+      "correct": "automatic",
+      "type": "품사 혼동 (형용사↔부사)",
+      "question": "자동의 adj. → 영어 철자 쓰기",
+      "explanation": "<div class='concept-box'><h4>automatic = 자동의 (형용사)</h4><p><strong>auto-(스스로) + matic(움직이는)</strong></p><p>• automatic door = 자동문</p><p>• automatic update = 자동 업데이트</p></div><div class='warning-box'><h4>⚠ automatic vs automatically</h4><p>문제: '자동의 <strong>adj.</strong>' → 형용사를 요구</p><p><strong>automatic</strong> (adj) = 자동의 ← 정답</p><p><strong>automatically</strong> (adv) = 자동으로 ← 부사 (오답)</p><p>학생은 부사형을 적었고, 철자도 부정확(matically → matical<strong>l</strong>y)</p></div>",
+      "studentAnalysis": {
+        "whyChosen": "automatic과 automatically를 구분하지 못하고 더 긴 형태를 작성",
+        "errorPattern": "품사 표시(adj.) 미확인 + 부사형과 형용사형 혼동",
+        "focusPoint": "adj. = 형용사 요구 → automatic. adv. = 부사 요구 → automatically. 품사 표시 꼭 확인!"
+      }
+    }
+  ],
+  "conceptQuestions": [
+    {
+      "title": "부사 형성 규칙 (-ly 패턴 완전 정복)",
+      "explanation": "<div class='concept-box'><h4>형용사 → 부사 변환 규칙</h4><p>영어에서 부사는 대부분 <strong>형용사 + -ly</strong>로 만듭니다.</p></div><div class='grammar-block'><table><tr><th>규칙</th><th>형용사</th><th>부사</th></tr><tr><td>기본: +ly</td><td>common</td><td>common<strong>ly</strong></td></tr><tr><td>-al +ly = -ally</td><td>normal</td><td>normal<strong>ly</strong> (ll!)</td></tr><tr><td>-ful +ly = -fully</td><td>successful</td><td>successful<strong>ly</strong> (ll!)</td></tr><tr><td>-le → -ly</td><td>simple</td><td>simp<strong>ly</strong></td></tr><tr><td>-y → -ily</td><td>easy</td><td>eas<strong>ily</strong></td></tr><tr><td>-ic → -ically</td><td>automatic</td><td>automat<strong>ically</strong></td></tr></table></div><div class='warning-box'><h4>⚠ 주의! l이 두 개 되는 경우</h4><p>-al + ly = -a<strong>ll</strong>y (normally, finally)</p><p>-ful + ly = -fu<strong>ll</strong>y (successfully, carefully)</p></div>",
+      "examples": [
+        "common → commonly (기본 +ly)",
+        "normal → normally (-al +ly = -ally)",
+        "successful → successfully (-ful +ly = -fully)",
+        "simple → simply (-le → -ly)",
+        "easy → easily (-y → -ily)",
+        "automatic → automatically (-ic → -ically)"
+      ],
+      "confusionPoints": "<div class='warning-box'><h4>시험에서 자주 틀리는 포인트</h4><p>1. 문제의 <strong>품사 표시(adj./adv.)</strong>를 반드시 확인하세요!</p><p>2. -al/-ful로 끝나는 형용사 → 부사로 바꿀 때 <strong>l이 두 개</strong>가 됩니다.</p><p>3. 형용사 자체를 쓰면 오답입니다 (common ≠ commonly).</p></div>",
+      "practiceProblems": [
+        { "sentence": "She sings ________. (아름답게)", "choices": ["① beautiful", "② beautifully", "③ beauty", "④ beautify"], "answer": "②", "explanation": "beautiful(adj) + -ly = beautifully(adv)" },
+        { "sentence": "He solved the problem ________. (쉽게)", "choices": ["① easy", "② easily", "③ ease", "④ easeful"], "answer": "②", "explanation": "easy → eas + ily = easily (-y → -ily 규칙)" },
+        { "sentence": "The project was completed ________. (성공적으로)", "choices": ["① successful", "② successfuly", "③ successfully", "④ success"], "answer": "③", "explanation": "successful + ly = successfully (-ful + ly = -fully, l 두 개)" },
+        { "sentence": "This happens ________. (일반적으로)", "choices": ["① normal", "② normaly", "③ normally", "④ normality"], "answer": "③", "explanation": "normal + ly = normally (-al + ly = -ally, l 두 개)" },
+        { "sentence": "The door opens ________. (자동으로)", "choices": ["① automatic", "② automaticly", "③ automatical", "④ automatically"], "answer": "④", "explanation": "automatic + ally = automatically (-ic → -ically 규칙)" },
+        { "sentence": "She spoke ________. (흔히 = 일상적으로)", "choices": ["① common", "② commonly", "③ commonity", "④ commonful"], "answer": "②", "explanation": "common + ly = commonly (기본 +ly)" },
+        { "sentence": "He drives very ________. (조심스럽게)", "choices": ["① careful", "② carefuly", "③ carefully", "④ careless"], "answer": "③", "explanation": "careful + ly = carefully (-ful + ly = -fully)" },
+        { "sentence": "The medicine worked ________. (효과적으로)", "choices": ["① effective", "② effectivly", "③ effect", "④ effectively"], "answer": "④", "explanation": "effective + ly = effectively (기본 +ly)" },
+        { "sentence": "She ________ agreed to help. (기꺼이)", "choices": ["① willing", "② willingly", "③ willful", "④ will"], "answer": "②", "explanation": "willing + ly = willingly" },
+        { "sentence": "The exam was ________ difficult. (극도로)", "choices": ["① extreme", "② extremly", "③ extremely", "④ extremity"], "answer": "③", "explanation": "extreme → extreme + ly = extremely (-e 유지 후 +ly)" },
+        { "sentence": "He ________ finished the race. (간신히)", "choices": ["① bare", "② barely", "③ bareful", "④ bareness"], "answer": "②", "explanation": "bare + ly = barely" },
+        { "sentence": "The weather changed ________. (갑자기)", "choices": ["① sudden", "② suddeny", "③ suddenly", "④ suddenful"], "answer": "③", "explanation": "sudden + ly = suddenly" },
+        { "sentence": "She ________ won the award. (최근에)", "choices": ["① recent", "② recently", "③ recentful", "④ recental"], "answer": "②", "explanation": "recent + ly = recently" },
+        { "sentence": "They ________ accepted the offer. (감사하게)", "choices": ["① grateful", "② gratefuly", "③ gratefully", "④ gratefulness"], "answer": "③", "explanation": "grateful + ly = gratefully (-ful + ly = -fully)" },
+        { "sentence": "He spoke very ________. (조용히)", "choices": ["① quiet", "② quietly", "③ quietful", "④ quietism"], "answer": "②", "explanation": "quiet + ly = quietly" },
+        { "sentence": "The task was ________ completed. (부분적으로)", "choices": ["① partial", "② partialy", "③ partially", "④ part"], "answer": "③", "explanation": "partial + ly = partially (-al + ly = -ally)" },
+        { "sentence": "She ________ passed the test. (가까스로)", "choices": ["① narrow", "② narrowful", "③ narrowly", "④ narrowness"], "answer": "③", "explanation": "narrow + ly = narrowly" },
+        { "sentence": "He ________ attends meetings. (정기적으로)", "choices": ["① regular", "② regulary", "③ regularly", "④ regularful"], "answer": "③", "explanation": "regular + ly = regularly" },
+        { "sentence": "The system works ________. (기본적으로)", "choices": ["① basic", "② basicly", "③ basical", "④ basically"], "answer": "④", "explanation": "basic + ally = basically (-ic → -ically)" },
+        { "sentence": "She is ________ talented. (놀랍게도)", "choices": ["① incredible", "② incrediblely", "③ incredibly", "④ incredibility"], "answer": "③", "explanation": "incredible → incred + ibly (규칙: -le → -ly, e 탈락)" }
+      ]
+    },
+    {
+      "title": "혼동하기 쉬운 유사 단어 구분",
+      "explanation": "<div class='concept-box'><h4>형태가 비슷하지만 뜻이 다른 단어들</h4><p>영어에는 철자나 발음이 비슷해서 헷갈리기 쉬운 단어 쌍이 많습니다. 정확한 의미 차이를 알아야 시험에서 실수를 방지할 수 있습니다.</p></div><div class='grammar-block'><table><tr><th>혼동 쌍</th><th>단어 A</th><th>단어 B</th></tr><tr><td>선거/선언</td><td>election(선거)</td><td>declaration(선언)</td></tr><tr><td>오염/확산</td><td>pollution(오염)</td><td>diffusion(확산)</td></tr><tr><td>직업/교수</td><td>profession(직업)</td><td>professor(교수)</td></tr><tr><td>사건/사고</td><td>incident(사건)</td><td>accident(사고)</td></tr></table></div>",
+      "examples": [
+        "election(선거) ≠ declaration(선언) — elect=선출하다, declare=선언하다",
+        "pollution(오염) ≠ diffusion(확산) — pollute=더럽히다, diffuse=퍼뜨리다",
+        "profession(직업) ≠ professor(교수) — -ion=것, -or=사람",
+        "incident(사건) ≠ accident(사고) — 일반 사건 vs 뜻밖의 사고"
+      ],
+      "confusionPoints": "<div class='warning-box'><h4>구분 전략</h4><p>1. <strong>접미사</strong>로 구분: -ion(상태/행위) vs -or/-er(사람)</p><p>2. <strong>어근</strong>으로 구분: elect(고르다)→선거 vs declare(알리다)→선언</p><p>3. <strong>한국어 뜻</strong>을 정확히: 사건≠사고, 오염≠확산</p></div>",
+      "practiceProblems": [
+        { "sentence": "The presidential ________ is held every four years.", "choices": ["① election", "② selection", "③ declaration", "④ collection"], "answer": "①", "explanation": "대통령 선거 = presidential election" },
+        { "sentence": "Air ________ is a serious problem in big cities.", "choices": ["① diffusion", "② pollution", "③ explosion", "④ confusion"], "answer": "②", "explanation": "대기 오염 = air pollution" },
+        { "sentence": "Teaching is a noble ________.", "choices": ["① professor", "② profession", "③ procession", "④ professional"], "answer": "②", "explanation": "가르치는 것은 고귀한 직업이다 = profession" },
+        { "sentence": "A car ________ occurred on the highway.", "choices": ["① incident", "② accident", "③ event", "④ occasion"], "answer": "②", "explanation": "교통사고 = car accident (뜻밖의 사고)" },
+        { "sentence": "The police are investigating the ________.", "choices": ["① accident", "② incident", "③ occasion", "④ accident"], "answer": "②", "explanation": "경찰이 사건을 수사 중이다 = incident (일반적 사건)" },
+        { "sentence": "The ________ of independence was signed in 1776.", "choices": ["① election", "② selection", "③ declaration", "④ reflection"], "answer": "③", "explanation": "독립 선언 = declaration of independence" },
+        { "sentence": "He is a ________ of mathematics.", "choices": ["① profession", "② professional", "③ professor", "④ profess"], "answer": "③", "explanation": "수학 교수 = professor of mathematics" },
+        { "sentence": "Water ________ is caused by industrial waste.", "choices": ["① pollution", "② population", "③ position", "④ promotion"], "answer": "①", "explanation": "수질 오염 = water pollution" },
+        { "sentence": "She made a careful ________ from the menu.", "choices": ["① election", "② selection", "③ collection", "④ reflection"], "answer": "②", "explanation": "메뉴에서 신중한 선택 = selection (election은 선거)" },
+        { "sentence": "The ________ of heat occurs through radiation.", "choices": ["① pollution", "② diffusion", "③ confusion", "④ conclusion"], "answer": "②", "explanation": "열의 확산 = diffusion of heat" },
+        { "sentence": "He changed his ________ from lawyer to teacher.", "choices": ["① profession", "② professor", "③ procession", "④ possession"], "answer": "①", "explanation": "직업을 변경 = changed profession" },
+        { "sentence": "The traffic ________ delayed our trip.", "choices": ["① incident", "② accident", "③ event", "④ element"], "answer": "①", "explanation": "교통 사건 = traffic incident (반드시 충돌이 아닌 일반 사건)" },
+        { "sentence": "The ________ results will be announced tonight.", "choices": ["① election", "② selection", "③ reflection", "④ direction"], "answer": "①", "explanation": "선거 결과 = election results" },
+        { "sentence": "Noise ________ affects people's health.", "choices": ["① pollution", "② population", "③ promotion", "④ proportion"], "answer": "①", "explanation": "소음 오염 = noise pollution" },
+        { "sentence": "The ________ marched through the streets.", "choices": ["① profession", "② procession", "③ professor", "④ processing"], "answer": "②", "explanation": "행렬 = procession (profession 직업과 구분!)" },
+        { "sentence": "It was a minor ________, no one was hurt.", "choices": ["① accident", "② incident", "③ event", "④ element"], "answer": "②", "explanation": "사소한 사건 = minor incident" },
+        { "sentence": "She made a public ________ about her decision.", "choices": ["① election", "② reflection", "③ declaration", "④ selection"], "answer": "③", "explanation": "공개 선언 = public declaration" },
+        { "sentence": "The ________ is a highly respected member of society.", "choices": ["① profession", "② professional", "③ professor", "④ proficient"], "answer": "②", "explanation": "전문가 = professional (사람을 가리킴)" },
+        { "sentence": "The rapid ________ of technology changed our lives.", "choices": ["① pollution", "② diffusion", "③ confusion", "④ delusion"], "answer": "②", "explanation": "기술의 급속한 확산 = rapid diffusion" },
+        { "sentence": "A serious ________ happened at the factory.", "choices": ["① incident", "② accident", "③ event", "④ advent"], "answer": "②", "explanation": "심각한 사고 = serious accident (공장에서 뜻밖의 사고)" }
+      ]
+    }
+  ],
+  "grammarTopics": [
+    {
+      "title": "Section A 미작성 단어 18선 (영→한)",
+      "content": "<div class='grammar-block'><table><tr><th>#</th><th>영어</th><th>품사</th><th>한국어 뜻</th><th>예문</th></tr><tr><td>2</td><td><strong>promote</strong></td><td>v.</td><td>홍보하다, 촉진하다, 승진시키다</td><td>promote a product (제품을 홍보하다)</td></tr><tr><td>4</td><td><strong>reserve</strong></td><td>v.</td><td>예약하다, 보존하다</td><td>reserve a seat (좌석을 예약하다)</td></tr><tr><td>5</td><td><strong>revise</strong></td><td>v.</td><td>수정하다, 개정하다</td><td>revise a plan (계획을 수정하다)</td></tr><tr><td>9</td><td><strong>indicate</strong></td><td>v.</td><td>나타내다, 가리키다</td><td>indicate a direction (방향을 가리키다)</td></tr><tr><td>10</td><td><strong>inspect</strong></td><td>v.</td><td>검사하다, 점검하다</td><td>inspect the building (건물을 점검하다)</td></tr><tr><td>11</td><td><strong>intend</strong></td><td>v.</td><td>의도하다, ~할 작정이다</td><td>intend to study (공부할 작정이다)</td></tr><tr><td>12</td><td><strong>invent</strong></td><td>v.</td><td>발명하다</td><td>invent a machine (기계를 발명하다)</td></tr><tr><td>16</td><td><strong>express</strong></td><td>v.</td><td>표현하다</td><td>express feelings (감정을 표현하다)</td></tr><tr><td>17</td><td><strong>commit</strong></td><td>v.</td><td>저지르다, 전념하다</td><td>commit a crime (범죄를 저지르다)</td></tr><tr><td>19</td><td><strong>conduct</strong></td><td>v./n.</td><td>수행하다, 행동</td><td>conduct research (연구를 수행하다)</td></tr><tr><td>21</td><td><strong>consume</strong></td><td>v.</td><td>소비하다, 섭취하다</td><td>consume energy (에너지를 소비하다)</td></tr><tr><td>31</td><td><strong>operation</strong></td><td>n.</td><td>운영, 작전, 수술</td><td>a rescue operation (구조 작전)</td></tr><tr><td>36</td><td><strong>transition</strong></td><td>n.</td><td>전환, 변화</td><td>a smooth transition (원활한 전환)</td></tr><tr><td>42</td><td><strong>applicable</strong></td><td>adj.</td><td>적용 가능한</td><td>applicable to all (모두에게 적용 가능한)</td></tr><tr><td>43</td><td><strong>desirable</strong></td><td>adj.</td><td>바람직한</td><td>a desirable outcome (바람직한 결과)</td></tr><tr><td>45</td><td><strong>profitable</strong></td><td>adj.</td><td>수익성 있는</td><td>a profitable business (수익성 있는 사업)</td></tr><tr><td>46</td><td><strong>sustainable</strong></td><td>adj.</td><td>지속 가능한</td><td>sustainable development (지속 가능한 개발)</td></tr><tr><td>50</td><td><strong>relative</strong></td><td>adj./n.</td><td>상대적인, 친척</td><td>relative importance (상대적 중요성)</td></tr></table></div>"
+    },
+    {
+      "title": "Section B 미작성 단어 22선 (한→영)",
+      "content": "<div class='grammar-block'><table><tr><th>#</th><th>한국어</th><th>품사</th><th>영어</th><th>발음 힌트</th></tr><tr><td>52</td><td>격노한</td><td>adj.</td><td><strong>furious</strong></td><td>[퓨리어스]</td></tr><tr><td>56</td><td>적절하게</td><td>adv.</td><td><strong>properly</strong></td><td>[프라펄리]</td></tr><tr><td>60</td><td>근본적으로</td><td>adv.</td><td><strong>fundamentally</strong></td><td>[펀더멘털리]</td></tr><tr><td>61</td><td>점점 더</td><td>adv.</td><td><strong>increasingly</strong></td><td>[인크리싱리]</td></tr><tr><td>62</td><td>단지</td><td>adv.</td><td><strong>merely</strong></td><td>[미얼리]</td></tr><tr><td>67</td><td>순조롭게</td><td>adv.</td><td><strong>smoothly</strong></td><td>[스무들리]</td></tr><tr><td>70</td><td>널리</td><td>adv.</td><td><strong>widely</strong></td><td>[와이들리]</td></tr><tr><td>71</td><td>파산한</td><td>adj.</td><td><strong>bankrupt</strong></td><td>[뱅크럽트]</td></tr><tr><td>72</td><td>구급하다</td><td>v.</td><td><strong>rescue</strong></td><td>[레스큐]</td></tr><tr><td>78</td><td>동정</td><td>n.</td><td><strong>sympathy</strong></td><td>[심퍼씨]</td></tr><tr><td>82</td><td>땀을 흘리다</td><td>v.</td><td><strong>sweat</strong></td><td>[스웻]</td></tr><tr><td>83</td><td>통계</td><td>n.</td><td><strong>statistics</strong></td><td>[스터티스틱스]</td></tr><tr><td>84</td><td>끝내다</td><td>v.</td><td><strong>complete / finish</strong></td><td>[컴플릿]</td></tr><tr><td>86</td><td>철회하다</td><td>v.</td><td><strong>withdraw</strong></td><td>[위드드로]</td></tr><tr><td>88</td><td>영양, 강조</td><td>n.</td><td><strong>nutrition / emphasis</strong></td><td>[뉴트리션 / 엠퍼시스]</td></tr><tr><td>90</td><td>선동하다, 동요하다</td><td>v.</td><td><strong>agitate</strong></td><td>[애지테이트]</td></tr><tr><td>92</td><td>식욕</td><td>n.</td><td><strong>appetite</strong></td><td>[애퍼타잇]</td></tr><tr><td>93</td><td>일깨우다</td><td>v.</td><td><strong>awaken</strong></td><td>[어웨이큰]</td></tr><tr><td>96</td><td>편견</td><td>n.</td><td><strong>prejudice</strong></td><td>[프레쥬디스]</td></tr><tr><td>98</td><td>경력</td><td>n.</td><td><strong>career</strong></td><td>[커리어]</td></tr><tr><td>99</td><td>(미확인)</td><td>-</td><td>-</td><td>-</td></tr><tr><td>100</td><td>(미확인)</td><td>-</td><td>-</td><td>-</td></tr></table></div>"
+    }
+  ]
+}

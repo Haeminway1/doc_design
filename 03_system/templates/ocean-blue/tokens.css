@@ -1,0 +1,60 @@
+/* =================================================================== */
+/* Ocean Blue Template — Design Tokens                                */
+/* 문법 시리즈 (Bridge + Advanced)                                     */
+/* Vera's Document Studio                                             */
+/* =================================================================== */
+
+/* 이 파일은 base/page-layout.css의 :root 변수를 오버라이드합니다 */
+
+:root {
+    /* --- Accent Colors --- */
+    --color-accent-primary: #345C85 !important;      /* 딥블루 (메인) */
+    --color-accent-light: #E8F1F8 !important;        /* 연한 블루 배경 */
+    --color-accent-dark: #1E3A5F !important;         /* 진한 블루 */
+    --color-accent-secondary: #F2C994 !important;    /* 베이지 (보조) */
+
+    /* --- Semantic Colors --- */
+    --color-concept-bg: #E8F1F8 !important;
+    --color-concept-border: #345C85 !important;
+    --color-example-bg: #FEF9E7 !important;
+    --color-example-border: #F2C994 !important;
+    --color-warning-bg: #FFF4E6 !important;
+    --color-warning-border: #E9A266 !important;
+
+    /* --- Typography --- */
+    --font-accent: 'Playfair Display', serif !important;
+
+    /* --- Shape & Borders --- */
+    --radius-sm: 0px !important;
+    --radius-md: 0px !important;
+    --radius-lg: 0px !important;
+
+    /* Header Style */
+    --header-border-style: solid !important;
+    --header-border-color: var(--color-border-default) !important;
+
+    /* Table Style */
+    --table-header-bg: var(--color-accent-light) !important;
+    --table-header-border: 2px solid var(--color-accent-primary) !important;
+    --table-border-style: solid !important;
+}
+
+/* --- Component Overrides --- */
+
+/* Tip Box - 왼쪽 보더 스타일 */
+.tip-box,
+.concept-box {
+    border-left: 4px solid var(--color-accent-primary) !important;
+    background-color: var(--color-accent-light) !important;
+    border-radius: 0px !important;
+}
+
+/* Table - 상단 굵은 선 */
+table thead {
+    border-top: var(--table-header-border) !important;
+}
+
+/* Cover Background */
+.cover-background-image {
+    background-image: url('../../05_assets/backgrounds/backgroundGMBR.png');
+}

@@ -1,0 +1,99 @@
+{
+  "student": "윤석우",
+  "date": "260225",
+  "subject": "문법",
+  "textbook": "",
+  "range": "",
+  "answers": [
+    {
+      "questionNo": "301",
+      "studentAnswer": "⑤",
+      "correctAnswer": "③",
+      "isCorrect": false,
+      "imageFile": "윤석우_260225_01.jpg",
+      "verified": null,
+      "conflict": null,
+      "allMarks": {
+        "1": "none",
+        "2": "none",
+        "3": "none",
+        "4": "none",
+        "5": "circle"
+      },
+      "usedColorSep": true,
+      "pass1": "⑤",
+      "pass2": null,
+      "reasoning": "빨간마크"
+    },
+    {
+      "questionNo": "302",
+      "studentAnswer": "③",
+      "correctAnswer": "③",
+      "isCorrect": true,
+      "imageFile": "윤석우_260225_01.jpg",
+      "verified": null,
+      "conflict": null,
+      "allMarks": {
+        "1": "none",
+        "2": "none",
+        "3": "circle",
+        "4": "none",
+        "5": "none"
+      },
+      "usedColorSep": true,
+      "pass1": "③",
+      "pass2": null,
+      "reasoning": "빨간마크"
+    },
+    {
+      "questionNo": "1",
+      "studentAnswer": "⑤",
+      "correctAnswer": "?",
+      "isCorrect": null,
+      "imageFile": "윤석우_260225_04.jpg",
+      "verified": null,
+      "conflict": null,
+      "allMarks": {
+        "1": "none",
+        "2": "none",
+        "3": "none",
+        "4": "none",
+        "5": "circle"
+      },
+      "usedColorSep": true,
+      "pass1": "⑤",
+      "pass2": null
+    },
+    {
+      "questionNo": "2",
+      "studentAnswer": "③",
+      "correctAnswer": "?",
+      "isCorrect": null,
+      "imageFile": "윤석우_260225_04.jpg",
+      "verified": null,
+      "conflict": null,
+      "allMarks": {
+        "1": "none",
+        "2": "none",
+        "3": "circle",
+        "4": "none",
+        "5": "none"
+      },
+      "usedColorSep": true,
+      "pass1": "③",
+      "pass2": null
+    }
+  ],
+  "extractedAt": "2026-02-28T16:46:22.907Z",
+  "imageCount": 4,
+  "version": 4,
+  "method": "color-separation-2pass",
+  "stats": {
+    "total": 4,
+    "correct": 1,
+    "wrong": 1,
+    "unknown": 2,
+    "verified": 0,
+    "conflicts": 0
+  }
+}

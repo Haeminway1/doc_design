@@ -1,0 +1,131 @@
+{
+  "bookId": "syntax-basic-unit02",
+  "unit": 2,
+  "title": "2형식 문장 (S + V + C)",
+  "part": "I",
+  "week": 1,
+  "type": "sentence-analysis",
+  "instruction": "다음 문장에서 주어(S), 동사(V), 보어(C)를 찾아 표시하고, 우리말로 해석해 보세요.",
+  "problems": [
+    {
+      "id": "syntax-basic-unit02-1",
+      "number": 1,
+      "type": "sentence-analysis",
+      "stem": "My brother is a police officer.",
+      "answer": {
+        "analysis": "My brother(S) is(V) a police officer(C).",
+        "pattern": "",
+        "translation": "내 남동생은 경찰관이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit02-2",
+      "number": 2,
+      "type": "sentence-analysis",
+      "stem": "The story seems interesting.",
+      "answer": {
+        "analysis": "The story(S) seems(V) interesting(C).",
+        "pattern": "",
+        "translation": "그 이야기는 흥미로워 보인다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit02-3",
+      "number": 3,
+      "type": "sentence-analysis",
+      "stem": "The leaves turned red and yellow.",
+      "answer": {
+        "analysis": "The leaves(S) turned(V) red and yellow(C).",
+        "pattern": "",
+        "translation": "나뭇잎들이 빨갛고 노랗게 변했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit02-4",
+      "number": 4,
+      "type": "sentence-analysis",
+      "stem": "His voice sounds familiar.",
+      "answer": {
+        "analysis": "His voice(S) sounds(V) familiar(C).",
+        "pattern": "",
+        "translation": "그의 목소리가 익숙하게 들린다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit02-5",
+      "number": 5,
+      "type": "sentence-analysis",
+      "stem": "This is my favorite song.",
+      "answer": {
+        "analysis": "This(S) is(V) my favorite song(C).",
+        "pattern": "",
+        "translation": "이것이 내가 가장 좋아하는 노래이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit02-6",
+      "number": 6,
+      "type": "sentence-analysis",
+      "stem": "The food smells delicious.",
+      "answer": {
+        "analysis": "The food(S) smells(V) delicious(C).",
+        "pattern": "",
+        "translation": "그 음식은 맛있는 냄새가 난다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit02-7",
+      "number": 7,
+      "type": "sentence-analysis",
+      "stem": "She stayed calm during the crisis.",
+      "answer": {
+        "analysis": "She(S) stayed(V) calm(C) (during the crisis).",
+        "pattern": "",
+        "translation": "그녀는 위기 동안 침착함을 유지했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit02-8",
+      "number": 8,
+      "type": "sentence-analysis",
+      "stem": "The baby grew quiet.",
+      "answer": {
+        "analysis": "The baby(S) grew(V) quiet(C).",
+        "pattern": "",
+        "translation": "아기가 조용해졌다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit02-9",
+      "number": 9,
+      "type": "sentence-analysis",
+      "stem": "Your advice was very helpful.",
+      "answer": {
+        "analysis": "Your advice(S) was(V) very helpful(C).",
+        "pattern": "",
+        "translation": "너의 조언은 매우 도움이 되었다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit02-10",
+      "number": 10,
+      "type": "sentence-analysis",
+      "stem": "The key is under the mat. (*주의! 이 문장의 형식은 무엇일까요?*)",
+      "answer": {
+        "analysis": "1형식: The key(S) is(V) (under the mat).",
+        "pattern": "",
+        "translation": "열쇠는 매트 아래에 있다. (*'under the mat'은 장소를 나타내는 수식어구입니다. 주어를 보충하는 보어가 아 니므로 1형식입니다. 'is'가 '~에 있다'로 쓰이면 1형식 동사입니다.*)",
+        "notes": ""
+      }
+    }
+  ]
+}

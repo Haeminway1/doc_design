@@ -1,0 +1,807 @@
+{
+  "bookId": "grammar-bridge-ch08",
+  "chapter": "ch08",
+  "title": "명사와 관사",
+  "problems": [
+    {
+      "id": "grammar-bridge-ch08-351",
+      "number": 351,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 밑줄 친 부분 중 어법상 틀린 것은?",
+      "choices": [
+        "researchers",
+        "have",
+        "submitted",
+        "their",
+        "findings"
+      ],
+      "stem": "Each of the ①<u>researchers</u> ②<u>have</u> ③<u>submitted</u> ④<u>their</u> preliminary ⑤<u>findings</u>.",
+      "answer": 2,
+      "explanation": "'Each of + 복수명사' 구문에서 문장의 주어는 단수인 Each입니다. 따라서 동사는 복수형 'have'가 아닌 단수형 has가 되어야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-352",
+      "number": 352,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "that",
+        "those",
+        "it",
+        "them",
+        "one"
+      ],
+      "stem": "The data collected from this experiment is more reliable than _______ from the previous study.",
+      "answer": 1,
+      "explanation": "비교 구문에서 앞에 나온 단수 명사(data)의 반복을 피하기 위해 지시대명사 that을 사용합니다. 'the data from the previous study'를 의미합니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-353",
+      "number": 353,
+      "type": "correct-usage",
+      "instruction": "다음 중 어법상 올바른 문장은?",
+      "choices": [
+        "She completed the entire project by her.",
+        "You should see the evidence for you.",
+        "The discovery, in itself, was remarkable.",
+        "He was beside him with anger.",
+        "Please help you to some coffee."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 3,
+      "explanation": "'in itself'는 '그 자체로, 본질적으로'라는 의미의 올바른 재귀대명사 관용 표현입니다. 나머지는 모두 재귀대명사를 잘못 사용했습니다. (by herself, for yourself, beside himself, help yourselves)"
+    },
+    {
+      "id": "grammar-bridge-ch08-354",
+      "number": 354,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장의 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "Every one",
+        "Each",
+        "Most",
+        "Either",
+        "Neither"
+      ],
+      "stem": "_______ of the team members were satisfied with the results.",
+      "answer": 3,
+      "explanation": "복수 동사 'were'와 어울리는 주어는 Most입니다. 'Most of the team members'는 복수 취급합니다. ①, ②, ④, ⑤는 모두 단수 동사와 함께 쓰여야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-355",
+      "number": 355,
+      "type": "error-identification",
+      "instruction": "다음 중 재귀대명사의 용법이 틀린 것은?",
+      "choices": [
+        "He solved the problem by himself.",
+        "The machine turns off of itself.",
+        "You should judge for yourself.",
+        "She was beside her with joy.",
+        "They helped themselves to dinner."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 4,
+      "explanation": "'제정신이 아니다'라는 의미의 관용 표현은 'beside oneself'입니다. 주어가 'She'이므로 재귀대명사는 herself가 되어야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-356",
+      "number": 356,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "that",
+        "this",
+        "it",
+        "what",
+        "which"
+      ],
+      "stem": "The new research method makes _______ possible to analyze data more efficiently.",
+      "answer": 3,
+      "explanation": "5형식 동사 'makes' 뒤에 긴 진목적어(to analyze...)가 오므로, 가목적어 it을 사용하여 [make it possible to R] 구문을 만들어야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-357",
+      "number": 357,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾은 것은?",
+      "choices": [
+        "Those",
+        "who",
+        "interested",
+        "should register",
+        "어법상 틀린 부분이 없음"
+      ],
+      "stem": "①<u>Those</u> ②<u>who</u> are ③<u>interested</u> in the seminar ④<u>should register</u> ⑤<u>by Friday</u>.",
+      "answer": 5,
+      "explanation": "'Those who ~'는 '~하는 사람들'이라는 의미로 자주 쓰이는 올바른 표현입니다. 문장의 모든 요소가 문법적으로 정확합니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-358",
+      "number": 358,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 부정대명사의 구분이 올바른 것은?",
+      "choices": [
+        "Some students like math, others prefer science.",
+        "Of the three options, I'll choose this one, and you can have another.",
+        "There are two solutions: one is simple, the other is complex.",
+        "Some theories are proven, the others remain hypothetical.",
+        "I tried one method, but I need the another approach."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 3,
+      "explanation": "주어진 대상이 두 개일 때, '하나는 ~이고, 나머지 하나는 ~이다'라고 표현할 때는 one ... the other를 사용합니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-359",
+      "number": 359,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장의 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "was / are",
+        "were / is",
+        "was / is",
+        "were / are",
+        "is / are"
+      ],
+      "stem": "Half of the research _______ completed, but half of the participants _______ still waiting.",
+      "answer": 1,
+      "explanation": "부분/전체 부정대명사는 'of' 뒤의 명사에 수를 일치시킵니다. 'research'는 불가산 명사이므로 단수 동사 was, 'participants'는 복수 명사이므로 복수 동사 are가 맞습니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-360",
+      "number": 360,
+      "type": "error-identification",
+      "instruction": "다음 중 가목적어 it의 용법이 틀린 것은?",
+      "choices": [
+        "I think it important to study hard.",
+        "She found it difficult to understand the theory.",
+        "We consider it necessary to revise the plan.",
+        "They made clear the new policy.",
+        "He believes it possible to solve the problem."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 4,
+      "explanation": "5형식 동사 'made' 뒤에 목적격 보어(clear)와 진목적어(the new policy)가 왔지만, 가목적어 it이 빠져있습니다. 'They made it clear that...' 또는 'They made the new policy clear.'가 되어야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-361",
+      "number": 361,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "is",
+        "are",
+        "was",
+        "were",
+        "be"
+      ],
+      "stem": "Not all scientific theories _______ immediately accepted by the research community.",
+      "answer": 2,
+      "explanation": "부분 부정 구문 'Not all + 복수명사'에서 주어는 복수인 'scientific theories'입니다. 따라서 복수 동사 are를 사용해야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-362",
+      "number": 362,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 밑줄 친 부분을 올바르게 고친 것은?",
+      "choices": [
+        "those of previous researches",
+        "that of previous research",
+        "those of previous research",
+        "that of the previous researches",
+        "수정이 필요 없음"
+      ],
+      "stem": "The methodology of this study is superior to that of previous <u>researches</u>.",
+      "answer": 2,
+      "explanation": "'research'는 불가산 명사이므로 복수형 'researches'를 쓸 수 없습니다. 단수 명사 'methodology'를 대신하는 'that'과 불가산 명사 'research'를 사용한 ②가 올바른 표현입니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-363",
+      "number": 363,
+      "type": "correct-usage",
+      "instruction": "다음 중 어법상 올바른 문장은?",
+      "choices": [
+        "The two scientists supported each other throughout the project.",
+        "The team members encouraged one another during the competition.",
+        "Both researchers collaborated with one another effectively.",
+        "The three colleagues helped each other complete the task.",
+        "All answers are correct."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 5,
+      "explanation": "전통적으로 'each other'는 둘, 'one another'는 셋 이상에 사용하지만, 현대 영어에서는 이 구분이 엄격하지 않아 혼용됩니다. 따라서 모든 문장이 문법적으로 허용됩니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-364",
+      "number": 364,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "seem",
+        "seems",
+        "are",
+        "were",
+        "have been"
+      ],
+      "stem": "Neither of the proposed solutions _______ adequate for solving the complex problem.",
+      "answer": 2,
+      "explanation": "'Neither of + 복수명사' 구문에서 주어는 단수인 Neither입니다. 따라서 3인칭 단수 현재형 동사인 seems가 맞습니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-365",
+      "number": 365,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾은 것은?",
+      "choices": [
+        "announced",
+        "they",
+        "implement",
+        "policy",
+        "month"
+      ],
+      "stem": "The committee ①<u>announced</u> that ②<u>they</u> would ③<u>implement</u> a new ④<u>policy</u> next ⑤<u>month</u>.",
+      "answer": 2,
+      "explanation": "집합명사 'committee'가 하나의 단위체로서 발표하는 것이므로, 단수 대명사인 it으로 받아야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-366",
+      "number": 366,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 지시대명사 'those'의 용법이 올바른 것은?",
+      "choices": [
+        "Those are my books on the table.",
+        "The results were similar to those obtained last year.",
+        "Those students who study hard will succeed.",
+        "I prefer these flowers to those in the garden.",
+        "All answers are correct."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 5,
+      "explanation": "① 지시대명사, ② 반복 회피, ③ 후치 수식, ④ 지시형용사 등 모든 문장에서 'those'가 올바르게 사용되었습니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-367",
+      "number": 367,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "others",
+        "the others",
+        "another",
+        "the other",
+        "other"
+      ],
+      "stem": "Some researchers supported the hypothesis, while _______ remained skeptical.",
+      "answer": 1,
+      "explanation": "정해지지 않은 막연한 다수 중에서 '일부는 ~하고, 다른 일부는 ~하다'라고 할 때는 some ... others 구문을 사용합니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-368",
+      "number": 368,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장의 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "That",
+        "This",
+        "It",
+        "What",
+        "Which"
+      ],
+      "stem": "_______ to learn a foreign language requires dedication and practice.",
+      "answer": 3,
+      "explanation": "to부정사구(to learn...)가 문장의 진짜 주어이므로, 문장 맨 앞에는 가주어 It이 와야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-369",
+      "number": 369,
+      "type": "error-identification",
+      "instruction": "다음 중 선행사-대명사 일치가 틀린 것은?",
+      "choices": [
+        "Every student must submit his or her assignment.",
+        "The team celebrated their victory enthusiastically.",
+        "Each of the participants received their certificate.",
+        "The company announced that it would expand globally.",
+        "All the researchers published their findings."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 3,
+      "explanation": "주어가 단수인 'Each'이므로 소유격 대명사도 단수인 his or her로 받아야 합니다. 'their'는 복수이므로 틀렸습니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-370",
+      "number": 370,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "that",
+        "those",
+        "it",
+        "them",
+        "one"
+      ],
+      "stem": "The symptoms of this disease are different from _______ of the common cold.",
+      "answer": 2,
+      "explanation": "비교 구문에서 앞에 나온 복수 명사(symptoms)의 반복을 피하기 위해 지시대명사 those를 사용합니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-371",
+      "number": 371,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾은 것은?",
+      "choices": [
+        "information",
+        "were",
+        "carefully",
+        "analyzed",
+        "research team"
+      ],
+      "stem": "All of the ①<u>information</u> ②<u>were</u> ③<u>carefully</u> ④<u>analyzed</u> by the ⑤<u>research team</u>.",
+      "answer": 2,
+      "explanation": "'All of + 불가산 명사(information)' 구문은 단수 취급합니다. 따라서 동사는 'were'가 아닌 was가 되어야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-372",
+      "number": 372,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 관용 표현이 올바른 것은?",
+      "choices": [
+        "He completed the work by his own.",
+        "She discovered the truth for herself.",
+        "The problem solved of itself.",
+        "They were beside them with excitement.",
+        "We helped us to the buffet."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "'for oneself'는 '스스로의 힘으로'라는 의미의 올바른 관용 표현입니다. ① by himself, ③ turned off of itself, ④ beside themselves, ⑤ helped themselves가 맞습니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-373",
+      "number": 373,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "that",
+        "this",
+        "it",
+        "what",
+        "which"
+      ],
+      "stem": "Researchers found _______ challenging to replicate the experimental results.",
+      "answer": 3,
+      "explanation": "5형식 동사 'found' 뒤에 긴 진목적어(to replicate...)가 오므로, 가목적어 it을 사용하여 [find it challenging to R] 구문을 만들어야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-374",
+      "number": 374,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장의 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "others",
+        "the others",
+        "another",
+        "the other",
+        "other"
+      ],
+      "stem": "Of the ten candidates, some were qualified, but _______ lacked the necessary experience.",
+      "answer": 2,
+      "explanation": "'Of the ten candidates'라는 한정된 범위 안에서 '일부는 ~하고, 나머지 전부는 ~하다'라고 할 때는 some ... the others를 사용합니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-375",
+      "number": 375,
+      "type": "error-identification",
+      "instruction": "다음 중 어법상 틀린 문장은?",
+      "choices": [
+        "Both of the experiments were successful.",
+        "Either of the methods is acceptable.",
+        "All of the data was collected carefully.",
+        "Most of the students were present.",
+        "Each of the theories are well-supported."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 5,
+      "explanation": "'Each of + 복수명사' 구문은 단수 취급하므로 동사는 'are'가 아닌 is가 되어야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-376",
+      "number": 376,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "them",
+        "themselves",
+        "each other",
+        "one another",
+        "their"
+      ],
+      "stem": "The research team blamed _______ for the failure of the experiment.",
+      "answer": 2,
+      "explanation": "비난하는 주체(The research team)와 비난받는 대상이 동일하므로, 재귀대명사 themselves를 사용해야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-377",
+      "number": 377,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾은 것은?",
+      "choices": [
+        "It",
+        "essential",
+        "understanding",
+        "principles",
+        "scientific research"
+      ],
+      "stem": "①<u>It</u> is ②<u>essential</u> ③<u>understanding</u> the ④<u>principles</u> of ⑤<u>scientific research</u>.",
+      "answer": 3,
+      "explanation": "가주어 'It' 구문에서 진짜 주어 역할은 동명사(understanding)가 아닌 to부정사(to understand)가 하는 것이 일반적입니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-378",
+      "number": 378,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 부분 부정의 의미를 나타내는 것은?",
+      "choices": [
+        "All students did not pass the exam.",
+        "Not all students passed the exam.",
+        "No students passed the exam.",
+        "None of the students passed the exam.",
+        "Students did not all pass the exam."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "Not all...은 '모두 ~인 것은 아니다'라는 의미의 대표적인 부분 부정 표현입니다. ③, ④는 전체 부정입니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-379",
+      "number": 379,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "was",
+        "were",
+        "are",
+        "have been",
+        "will be"
+      ],
+      "stem": "Every one of the participants _______ given a detailed questionnaire.",
+      "answer": 1,
+      "explanation": "'Every one of + 복수명사' 구문에서 주어는 단수인 Every one입니다. 따라서 단수 동사 was가 맞습니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-380",
+      "number": 380,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장의 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "other",
+        "the other",
+        "another",
+        "others",
+        "the others"
+      ],
+      "stem": "This method is not working. We need to find _______ approach.",
+      "answer": 3,
+      "explanation": "정해지지 않은 '또 다른 하나의' 접근법을 의미하므로 another가 가장 적절합니다. 'another'는 'an + other'로 항상 단수 취급합니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-381",
+      "number": 381,
+      "type": "error-identification",
+      "instruction": "다음 중 가주어 it의 용법이 틀린 것은?",
+      "choices": [
+        "It is important to study regularly.",
+        "It remains unclear why this happened.",
+        "It seems that he is right.",
+        "It was him who called you.",
+        "It is studying hard that leads to success."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 4,
+      "explanation": "④와 ⑤는 'It is ~ that' 강조 구문입니다. 강조되는 대상이 주어일 경우, 격에 맞는 주격 대명사를 사용해야 합니다. 따라서 'him'이 아닌 he가 와야 합니다. ①, ②, ③은 가주어-진주어 구문입니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-382",
+      "number": 382,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "was / are",
+        "were / is",
+        "was / is",
+        "were / are",
+        "is / are"
+      ],
+      "stem": "Three-quarters of the experiment _______ completed, but three-quarters of the subjects _______ still being monitored.",
+      "answer": 1,
+      "explanation": "분수 표현은 'of' 뒤의 명사에 수를 일치시킵니다. 'the experiment'는 단수이므로 was, 'the subjects'는 복수이므로 are가 맞습니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-383",
+      "number": 383,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾은 것은?",
+      "choices": [
+        "clear",
+        "all",
+        "must",
+        "submit",
+        "assignments"
+      ],
+      "stem": "The professor made ①<u>clear</u> that ②<u>all</u> students ③<u>must</u> ④<u>submit</u> their ⑤<u>assignments</u>.",
+      "answer": 1,
+      "explanation": "5형식 동사 'made'의 진목적어인 that절이 뒤로 갔으므로, 원래 목적어 자리에는 가목적어 it이 와야 합니다. 'made it clear that...'이 올바른 형태입니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-384",
+      "number": 384,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 지시대명사의 용법이 올바른 것은?",
+      "choices": [
+        "This computer is faster than that I used yesterday.",
+        "The results of this study differ from that of previous research.",
+        "These findings support those obtained in earlier experiments.",
+        "This solution is better than that we tried before.",
+        "The quality of this product exceeds that we expected."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 3,
+      "explanation": "지시대명사 those가 선행사 'findings'를 대신하며 과거분사구 'obtained...'의 후치 수식을 받는 올바른 문장입니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-385",
+      "number": 385,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "always",
+        "never",
+        "seldom",
+        "rarely",
+        "hardly"
+      ],
+      "stem": "Wealth does not _______ bring happiness to people.",
+      "answer": 1,
+      "explanation": "'not'과 전체를 나타내는 부사 always가 결합하여 '항상 ~인 것은 아니다'라는 부분 부정의 의미를 만듭니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-386",
+      "number": 386,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장의 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "its",
+        "their",
+        "it's",
+        "theirs",
+        "itself"
+      ],
+      "stem": "The company values _______ employees and invests in their professional development.",
+      "answer": 1,
+      "explanation": "선행사인 'The company'는 단수이므로, 소유격 대명사도 단수인 its를 사용해야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-387",
+      "number": 387,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 재귀대명사가 불필요한 문장은?",
+      "choices": [
+        "She taught herself to play the piano.",
+        "He introduced himself to the new colleagues.",
+        "They positioned themselves near the entrance.",
+        "I bought myself a new computer.",
+        "We sat ourselves down and began to discuss."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 5,
+      "explanation": "'sit down'은 그 자체로 '앉다'라는 의미를 가지므로 재귀대명사가 필요 없습니다. 'We sat down...'이 자연스러운 표현입니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-388",
+      "number": 388,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "his",
+        "their",
+        "his or her",
+        "its",
+        "one's"
+      ],
+      "stem": "Each researcher brought _______ own equipment to the laboratory.",
+      "answer": 3,
+      "explanation": "주어인 'Each researcher'는 단수이지만 성별을 알 수 없으므로, 원칙적으로 his or her를 사용하여 성 중립적으로 표현하는 것이 가장 정확합니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-389",
+      "number": 389,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾은 것은?",
+      "choices": [
+        "students",
+        "have",
+        "completed",
+        "his",
+        "assignments"
+      ],
+      "stem": "Most of the ①<u>students</u> ②<u>have</u> ③<u>completed</u> ④<u>his</u> ⑤<u>assignments</u>.",
+      "answer": 4,
+      "explanation": "주어인 'Most of the students'는 복수입니다. 따라서 소유격 대명사도 복수인 their로 받아야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-390",
+      "number": 390,
+      "type": "correct-usage",
+      "instruction": "다음 중 어법상 올바른 문장은?",
+      "choices": [
+        "I think important to be honest with others.",
+        "She found difficult to solve the mathematical problem.",
+        "We consider it necessary to review the policy.",
+        "They made possible for everyone to participate.",
+        "He believes essential to maintain high standards."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 3,
+      "explanation": "5형식 동사(consider) 뒤에 긴 진목적어(to review...)가 올 때, 가목적어 it을 반드시 사용해야 합니다. ①, ②, ④, ⑤는 가목적어 'it'이 생략되어 틀린 문장입니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-391",
+      "number": 391,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "by itself",
+        "for itself",
+        "in itself",
+        "of itself",
+        "to itself"
+      ],
+      "stem": "The machine is designed to operate _______ without human intervention.",
+      "answer": 4,
+      "explanation": "'저절로, 자동적으로'라는 의미를 나타내는 재귀대명사 관용 표현은 of itself입니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-392",
+      "number": 392,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장의 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "These",
+        "Those",
+        "They",
+        "People",
+        "Students"
+      ],
+      "stem": "_______ who are interested in the research project should contact the professor.",
+      "answer": 2,
+      "explanation": "관계대명사 'who'의 수식을 받아 '~하는 사람들'이라는 의미를 나타낼 때는 지시대명사 Those를 사용합니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-393",
+      "number": 393,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 선행사가 모호한 문장은?",
+      "choices": [
+        "When John met his teacher, he was very happy.",
+        "The professor gave the student his book.",
+        "After Mary saw her friend, she felt better.",
+        "The manager told his assistant that he was promoted.",
+        "All answers show ambiguous reference."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 5,
+      "explanation": "모든 문장에서 대명사(he, his, she)가 두 명의 다른 사람을 가리킬 가능성이 있어 지칭 대상이 모호합니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-394",
+      "number": 394,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "has / are",
+        "have / is",
+        "has / is",
+        "have / are",
+        "had / were"
+      ],
+      "stem": "A few of the theories _______ been proven, but most _______ still being tested.",
+      "answer": 4,
+      "explanation": "'A few of + 복수명사'는 복수 취급하므로 have, 'most (of the theories)'도 복수 취급하므로 are가 맞습니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-395",
+      "number": 395,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾은 것은?",
+      "choices": [
+        "It",
+        "her",
+        "who",
+        "discovered",
+        "important evidence"
+      ],
+      "stem": "①<u>It</u> was ②<u>her</u> ③<u>who</u> ④<u>discovered</u> the ⑤<u>important evidence</u>.",
+      "answer": 2,
+      "explanation": "'It is ~ that' 강조 구문에서 강조되는 대상이 주어일 경우, 주격 대명사를 사용해야 합니다. 따라서 목적격 'her'를 주격 she로 고쳐야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-396",
+      "number": 396,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 부정대명사의 수 일치가 올바른 것은?",
+      "choices": [
+        "Both of the experiments was successful.",
+        "Neither of the solutions are adequate.",
+        "Each of the participants were interviewed.",
+        "All of the research has been completed.",
+        "Every one of the students were present."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 4,
+      "explanation": "'All of + 불가산 명사(research)'는 단수 취급하므로 단수 동사 has가 맞습니다. ① Both는 복수, ② Neither, ③ Each, ⑤ Every one은 모두 단수 동사를 써야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-397",
+      "number": 397,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "other",
+        "the other",
+        "another",
+        "others",
+        "the others"
+      ],
+      "stem": "There are several options available. You can choose this one, or you can try _______ one.",
+      "answer": 3,
+      "explanation": "여러 개의 정해지지 않은 대상 중에서 '또 다른 하나'를 의미할 때는 another를 사용합니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-398",
+      "number": 398,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장의 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "his",
+        "him",
+        "he",
+        "himself",
+        "his own"
+      ],
+      "stem": "The researcher was so excited about _______ discovery that he shared it immediately.",
+      "answer": 1,
+      "explanation": "명사 'discovery'를 수식하는 소유격 형용사가 필요합니다. 'The researcher'를 받는 소유격은 his입니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-399",
+      "number": 399,
+      "type": "correct-usage",
+      "instruction": "다음 중 어법상 올바른 문장은?",
+      "choices": [
+        "Please help yourself to some refreshments.",
+        "The students solved the problem by themselves.",
+        "The discovery was significant in itself.",
+        "He was beside himself with joy.",
+        "All answers are correct."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 5,
+      "explanation": "① help oneself to(~을 마음껏 먹다), ② by oneself(혼자 힘으로), ③ in itself(그 자체로), ④ beside oneself(제정신이 아닌) 등 모든 문장에서 재귀대명사 관용 표현이 올바르게 사용되었습니다."
+    },
+    {
+      "id": "grammar-bridge-ch08-400",
+      "number": 400,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾은 것은?",
+      "choices": [
+        "this approach",
+        "greater",
+        "those",
+        "of",
+        "traditional methods"
+      ],
+      "stem": "The effectiveness of ①<u>this approach</u> is ②<u>greater</u> than ③<u>those</u> ④<u>of</u> ⑤<u>traditional methods</u>.",
+      "answer": 3,
+      "explanation": "비교 구문에서 앞에 나온 단수 명사 'The effectiveness'의 반복을 피하기 위해서는 복수형 지시대명사 'those'가 아닌 단수형 that을 사용해야 합니다."
+    }
+  ]
+}

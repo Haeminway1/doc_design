@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vera://schemas/problem",
+  "title": "ProblemSet",
+  "description": "문제 세트 — 과목/레벨/단원별 문제 + 정답 + 해설",
+  "type": "object",
+  "required": ["$schema", "meta", "problems"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "const": "vera://schemas/problem",
+      "description": "스키마 식별자"
+    },
+    "meta": {
+      "type": "object",
+      "required": ["subject", "level", "unit", "title"],
+      "additionalProperties": false,
+      "description": "문제 세트 메타데이터",
+      "properties": {
+        "subject": {
+          "type": "string",
+          "enum": ["grammar", "reading", "vocabulary", "logic", "syntax-reading"],
+          "description": "과목 분류"
+        },
+        "level": {
+          "type": "string",
+          "enum": ["basic", "bridge", "intermediate", "advanced"],
+          "description": "난이도 레벨"
+        },
+        "unit": {
+          "type": "string",
+          "description": "챕터/유닛 식별자 (영문소문자, 숫자, 하이픈만 허용)",
+          "pattern": "^[a-z0-9-]+$",
+          "examples": ["ch02", "unit05", "part01"]
+        },
+        "title": {
+          "type": "string",
+          "description": "단원 한글 제목",
+          "examples": ["가정법", "관계대명사"]
+        },
+        "subtitle": {
+          "type": "string",
+          "description": "단원 영문 부제 (선택)",
+          "examples": ["Subjunctive Mood"]
+        }
+      }
+    },
+    "problems": {
+      "type": "array",
+      "minItems": 1,
+      "description": "문제 배열",
+      "items": {
+        "$ref": "#/$defs/Problem"
+      }
+    }
+  },
+  "$defs": {
+    "Problem": {
+      "type": "object",
+      "required": ["id", "number", "type", "instruction", "choices", "answer"],
+      "additionalProperties": false,
+      "description": "개별 문제 정의",
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^[a-z]+-[a-z]+-[a-z0-9]+-[0-9]{3}$",
+          "description": "고유 ID. 형식: {subject}-{level}-{unit}-{3자리번호}",
+          "examples": ["grammar-bridge-ch02-051"]
+        },
+        "number": {
+          "type": "integer",
+          "minimum": 1,
+          "description": "문제 표시 번호 (교재에 표시되는 번호)"
+        },
+        "type": {
+          "type": "string",
+          "enum": [
+            "fill-in-blank",
+            "error-find",
+            "correct-sentence",
+            "rewrite",
+            "ordering",
+            "matching",
+            "true-false"
+          ],
+          "description": "문제 유형"
+        },
+        "stem": {
+          "type": "string",
+          "description": "지문/문장 (빈칸 포함). 없는 문제도 있으므로 선택"
+        },
+        "instruction": {
+          "type": "string",
+          "description": "발문 (다음 빈칸에 들어갈..., 다음 중 어법상 올바른...)",
+          "examples": ["다음 빈칸에 들어갈 가장 적절한 것은?", "다음 중 어법상 올바른 것은?"]
+        },
+        "choices": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "minItems": 2,
+          "maxItems": 5,
+          "description": "선택지 배열. 인덱스 0 = ①"
+        },
+        "answer": {
+          "type": "integer",
+          "minimum": 1,
+          "maximum": 5,
+          "description": "정답 번호 (1-based). ① = 1"
+        },
+        "explanation": {
+          "type": "string",
+          "description": "짧은 해설. 마크다운 허용 (**볼드**, `코드`, - 리스트)"
+        },
+        "difficulty": {
+          "type": "string",
+          "enum": ["easy", "medium", "hard"],
+          "description": "난이도 (선택)"
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "태그 (선택). 문제 분류/필터용",
+          "examples": [["가정법과거완료", "혼합가정법"]]
+        },
+        "choiceLayout": {
+          "type": "string",
+          "enum": ["grid", "single-column"],
+          "default": "grid",
+          "description": "선택지 레이아웃. 긴 선택지는 single-column"
+        }
+      }
+    }
+  }
+}

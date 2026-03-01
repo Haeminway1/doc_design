@@ -1,0 +1,507 @@
+{
+  "bookId": "vocab-basic",
+  "day": 33,
+  "theme": "환경과 자연 (Environment and Nature)",
+  "words": [
+    {
+      "word": "ecosystem",
+      "pronunciation": "[íːkousìstəm]",
+      "partOfSpeech": "n.",
+      "meaning": "생태계",
+      "example": {
+        "en": "Pollution can seriously damage the delicate ecosystem of the river.",
+        "ko": "오염은 강의 섬세한 생태계를 심각하게 손상시킬 수 있다."
+      }
+    },
+    {
+      "word": "biodiversity",
+      "pronunciation": "[bàioudəvə́ːrsəti]",
+      "partOfSpeech": "n.",
+      "meaning": "생물의 다양성",
+      "example": {
+        "en": "The rainforest is known for its rich biodiversity.",
+        "ko": "열대우림은 풍부한 생물 다양성으로 알려져 있다."
+      }
+    },
+    {
+      "word": "habitat",
+      "pronunciation": "[hǽbətæ̀t]",
+      "partOfSpeech": "n.",
+      "meaning": "서식지",
+      "example": {
+        "en": "Deforestation is destroying the natural habitat of many species.",
+        "ko": "삼림 벌채는 많은 종의 자연 서식지를 파괴하고 있다."
+      }
+    },
+    {
+      "word": "conservation",
+      "pronunciation": "[kὰnsərvéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "(자연·문화유산 등의) 보존, 보호",
+      "example": {
+        "en": "Wildlife conservation is important for maintaining biodiversity.",
+        "ko": "야생 동물 보호는 생물 다양성을 유지하는 데 중요하다."
+      }
+    },
+    {
+      "word": "preservation",
+      "pronunciation": "[prèzərvéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "보존, 보호",
+      "example": {
+        "en": "The society is dedicated to the preservation of historic buildings.",
+        "ko": "그 협회는 역사적인 건물의 보존에 헌신한다."
+      }
+    },
+    {
+      "word": "sustainability",
+      "pronunciation": "[səstèinəbíləti]",
+      "partOfSpeech": "n.",
+      "meaning": "지속 가능성",
+      "example": {
+        "en": "Environmental sustainability is a key goal for the 21st century.",
+        "ko": "환경적 지속 가능성은 21세기의 핵심 목표이다."
+      }
+    },
+    {
+      "word": "renewable",
+      "pronunciation": "[rinúːəbl]",
+      "partOfSpeech": "a.",
+      "meaning": "재생 가능한",
+      "example": {
+        "en": "Solar and wind power are forms of renewable energy.",
+        "ko": "태양열과 풍력은 재생 가능 에너지의 형태이다."
+      }
+    },
+    {
+      "word": "deforestation",
+      "pronunciation": "[diːfɔ̀ːristéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "삼림 벌채",
+      "example": {
+        "en": "Deforestation contributes to global warming.",
+        "ko": "삼림 벌채는 지구 온난화의 원인이 된다."
+      }
+    },
+    {
+      "word": "reforestation",
+      "pronunciation": "[rìːfɔ̀ristéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "재조림, 삼림 재생",
+      "example": {
+        "en": "The government launched a reforestation project to restore the damaged area.",
+        "ko": "정부는 손상된 지역을 복원하기 위해 재조림 프로젝트를 시작했다."
+      }
+    },
+    {
+      "word": "erosion",
+      "pronunciation": "[iróuʒən]",
+      "partOfSpeech": "n.",
+      "meaning": "침식",
+      "example": {
+        "en": "Soil erosion is a major problem for farmers.",
+        "ko": "토양 침식은 농부들에게 주요한 문제이다."
+      }
+    },
+    {
+      "word": "pollution",
+      "pronunciation": "[pəlúːʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "오염",
+      "example": {
+        "en": "Air pollution is a serious threat to our health.",
+        "ko": "대기 오염은 우리 건강에 심각한 위협이다."
+      }
+    },
+    {
+      "word": "contamination",
+      "pronunciation": "[kəntæ̀mənéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "오염",
+      "example": {
+        "en": "The contamination of the water supply made many people sick.",
+        "ko": "상수도 오염으로 많은 사람들이 병에 걸렸다."
+      }
+    },
+    {
+      "word": "toxic",
+      "pronunciation": "[tάksik]",
+      "partOfSpeech": "a.",
+      "meaning": "유독성의",
+      "example": {
+        "en": "The factory was fined for releasing toxic chemicals into the river.",
+        "ko": "그 공장은 강에 유독 화학 물질을 방출한 혐의로 벌금을 부과받았다."
+      }
+    },
+    {
+      "word": "hazardous",
+      "pronunciation": "[hǽzərdəs]",
+      "partOfSpeech": "a.",
+      "meaning": "위험한",
+      "example": {
+        "en": "Hazardous waste must be disposed of safely.",
+        "ko": "유해 폐기물은 안전하게 처리되어야 한다."
+      }
+    },
+    {
+      "word": "pesticide",
+      "pronunciation": "[péstəsàid]",
+      "partOfSpeech": "n.",
+      "meaning": "살충제, 농약",
+      "example": {
+        "en": "Some pesticides can be harmful to the environment.",
+        "ko": "일부 살충제는 환경에 해로울 수 있다."
+      }
+    },
+    {
+      "word": "fertilizer",
+      "pronunciation": "[fə́ːrtəlàizər]",
+      "partOfSpeech": "n.",
+      "meaning": "비료",
+      "example": {
+        "en": "Farmers use fertilizer to help their crops grow.",
+        "ko": "농부들은 작물이 자라는 것을 돕기 위해 비료를 사용한다."
+      }
+    },
+    {
+      "word": "organic",
+      "pronunciation": "[ɔːrgǽnik]",
+      "partOfSpeech": "a.",
+      "meaning": "유기농의, 유기체의",
+      "example": {
+        "en": "I try to buy organic fruits and vegetables.",
+        "ko": "나는 유기농 과일과 채소를 사려고 노력한다."
+      }
+    },
+    {
+      "word": "synthetic",
+      "pronunciation": "[sinθétik]",
+      "partOfSpeech": "a.",
+      "meaning": "합성의, 인조의",
+      "example": {
+        "en": "The fabric is made from a synthetic material.",
+        "ko": "그 직물은 합성 소재로 만들어졌다."
+      }
+    },
+    {
+      "word": "decompose",
+      "pronunciation": "[dìːkəmpóuz]",
+      "partOfSpeech": "v.",
+      "meaning": "분해되다, 부패하다",
+      "example": {
+        "en": "Dead leaves decompose and enrich the soil.",
+        "ko": "죽은 잎들은 분해되어 토양을 비옥하게 한다."
+      }
+    },
+    {
+      "word": "biodegradable",
+      "pronunciation": "[bàioudigréidəbl]",
+      "partOfSpeech": "a.",
+      "meaning": "생분해성의 (자연적으로 분해되는)",
+      "example": {
+        "en": "We use biodegradable packaging to reduce waste.",
+        "ko": "우리는 쓰레기를 줄이기 위해 생분해성 포장재를 사용한다."
+      }
+    },
+    {
+      "word": "recycling",
+      "pronunciation": "[riːsáikli&eng;]",
+      "partOfSpeech": "n.",
+      "meaning": "재활용",
+      "example": {
+        "en": "Recycling helps to conserve natural resources.",
+        "ko": "재활용은 천연자원을 보존하는 데 도움이 된다."
+      }
+    },
+    {
+      "word": "waste",
+      "pronunciation": "[weist]",
+      "partOfSpeech": "n.",
+      "meaning": "쓰레기, 폐기물; 낭비",
+      "example": {
+        "en": "The factory produces a lot of industrial waste.",
+        "ko": "그 공장은 많은 산업 폐기물을 생산한다."
+      }
+    },
+    {
+      "word": "landfill",
+      "pronunciation": "[lǽndfìl]",
+      "partOfSpeech": "n.",
+      "meaning": "쓰레기 매립지",
+      "example": {
+        "en": "Most of our household waste goes to a landfill.",
+        "ko": "우리 가정 쓰레기의 대부분은 매립지로 간다."
+      }
+    },
+    {
+      "word": "emission",
+      "pronunciation": "[imíʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "배출, 배기가스",
+      "example": {
+        "en": "The government has set new limits on carbon emissions.",
+        "ko": "정부는 탄소 배출에 대한 새로운 제한을 설정했다."
+      }
+    },
+    {
+      "word": "greenhouse",
+      "pronunciation": "[gríːnhàus]",
+      "partOfSpeech": "n.",
+      "meaning": "온실",
+      "example": {
+        "en": "Carbon dioxide is a major greenhouse gas.",
+        "ko": "이산화탄소는 주요 온실가스이다."
+      }
+    },
+    {
+      "word": "ozone",
+      "pronunciation": "[óuzoun]",
+      "partOfSpeech": "n.",
+      "meaning": "오존",
+      "example": {
+        "en": "The ozone layer protects us from the sun's harmful radiation.",
+        "ko": "오존층은 태양의 해로운 방사선으로부터 우리를 보호한다."
+      }
+    },
+    {
+      "word": "atmosphere",
+      "pronunciation": "[ǽtməsfìər]",
+      "partOfSpeech": "n.",
+      "meaning": "대기; 분위기",
+      "example": {
+        "en": "The Earth's atmosphere is composed of several layers.",
+        "ko": "지구의 대기는 여러 층으로 구성되어 있다."
+      }
+    },
+    {
+      "word": "climate",
+      "pronunciation": "[kláimit]",
+      "partOfSpeech": "n.",
+      "meaning": "기후",
+      "example": {
+        "en": "Climate change is one of the biggest challenges facing the world.",
+        "ko": "기후 변화는 세계가 직면한 가장 큰 도전 중 하나이다."
+      }
+    },
+    {
+      "word": "meteorology",
+      "pronunciation": "[mìːtiərάlədʒi]",
+      "partOfSpeech": "n.",
+      "meaning": "기상학",
+      "example": {
+        "en": "Meteorology is the science of weather forecasting.",
+        "ko": "기상학은 일기 예보의 과학이다."
+      }
+    },
+    {
+      "word": "precipitation",
+      "pronunciation": "[prisìpətéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "강수, 강수량",
+      "example": {
+        "en": "The average annual precipitation in this region is very low.",
+        "ko": "이 지역의 연평균 강수량은 매우 낮다."
+      }
+    },
+    {
+      "word": "humidity",
+      "pronunciation": "[hjuːmídəti]",
+      "partOfSpeech": "n.",
+      "meaning": "습도, 습기",
+      "example": {
+        "en": "The high humidity makes the heat feel even worse.",
+        "ko": "높은 습도는 더위를 더욱 심하게 느끼게 한다."
+      }
+    },
+    {
+      "word": "barometric",
+      "pronunciation": "[bæ̀rəmétrik]",
+      "partOfSpeech": "a.",
+      "meaning": "기압의",
+      "example": {
+        "en": "Changes in barometric pressure can indicate a change in the weather.",
+        "ko": "기압의 변화는 날씨의 변화를 나타낼 수 있다."
+      }
+    },
+    {
+      "word": "altitude",
+      "pronunciation": "[ǽltitjùːd]",
+      "partOfSpeech": "n.",
+      "meaning": "고도",
+      "example": {
+        "en": "The plane was flying at an altitude of 30,000 feet.",
+        "ko": "그 비행기는 3만 피트의 고도로 날고 있었다."
+      }
+    },
+    {
+      "word": "latitude",
+      "pronunciation": "[lǽtitjùːd]",
+      "partOfSpeech": "n.",
+      "meaning": "위도",
+      "example": {
+        "en": "The city is located at a latitude of 37 degrees north.",
+        "ko": "그 도시는 북위 37도에 위치해 있다."
+      }
+    },
+    {
+      "word": "longitude",
+      "pronunciation": "[lάndʒitjùːd]",
+      "partOfSpeech": "n.",
+      "meaning": "경도",
+      "example": {
+        "en": "The prime meridian is at 0 degrees longitude.",
+        "ko": "본초 자오선은 경도 0도에 있다."
+      }
+    },
+    {
+      "word": "topography",
+      "pronunciation": "[təpάgrəfi]",
+      "partOfSpeech": "n.",
+      "meaning": "지형, 지형학",
+      "example": {
+        "en": "The topography of the region is characterized by mountains and valleys.",
+        "ko": "그 지역의 지형은 산과 계곡으로 특징지어진다."
+      }
+    },
+    {
+      "word": "geology",
+      "pronunciation": "[dʒiάlədʒi]",
+      "partOfSpeech": "n.",
+      "meaning": "지질학",
+      "example": {
+        "en": "Geology is the study of the Earth's structure and history.",
+        "ko": "지질학은 지구의 구조와 역사를 연구하는 학문이다."
+      }
+    },
+    {
+      "word": "mineral",
+      "pronunciation": "[mínərəl]",
+      "partOfSpeech": "n.",
+      "meaning": "광물",
+      "example": {
+        "en": "The country is rich in mineral resources such as coal and iron.",
+        "ko": "그 나라는 석탄과 철과 같은 광물 자원이 풍부하다."
+      }
+    },
+    {
+      "word": "sediment",
+      "pronunciation": "[sédəmənt]",
+      "partOfSpeech": "n.",
+      "meaning": "퇴적물, 침전물",
+      "example": {
+        "en": "The river carries sediment downstream.",
+        "ko": "그 강은 퇴적물을 하류로 운반한다."
+      }
+    },
+    {
+      "word": "stratum",
+      "pronunciation": "[stréitəm]",
+      "partOfSpeech": "n.",
+      "meaning": "지층, 계층 (pl. strata)",
+      "example": {
+        "en": "Geologists can study the Earth's history by examining rock strata.",
+        "ko": "지질학자들은 암석 지층을 조사함으로써 지구의 역사를 연구할 수 있다."
+      }
+    },
+    {
+      "word": "volcanic",
+      "pronunciation": "[vɑlkǽnik]",
+      "partOfSpeech": "a.",
+      "meaning": "화산의",
+      "example": {
+        "en": "The island was formed by volcanic activity.",
+        "ko": "그 섬은 화산 활동으로 형성되었다."
+      }
+    },
+    {
+      "word": "seismic",
+      "pronunciation": "[sáizmik]",
+      "partOfSpeech": "a.",
+      "meaning": "지진의",
+      "example": {
+        "en": "The region is known for its high seismic activity.",
+        "ko": "그 지역은 높은 지진 활동으로 알려져 있다."
+      }
+    },
+    {
+      "word": "tectonic",
+      "pronunciation": "[tektάnik]",
+      "partOfSpeech": "a.",
+      "meaning": "(지질) 구조상의",
+      "example": {
+        "en": "Earthquakes are caused by the movement of tectonic plates.",
+        "ko": "지진은 지각판의 움직임에 의해 발생한다."
+      }
+    },
+    {
+      "word": "continental",
+      "pronunciation": "[kὰntənénṭl]",
+      "partOfSpeech": "a.",
+      "meaning": "대륙의",
+      "example": {
+        "en": "The continental drift theory explains how continents move.",
+        "ko": "대륙 이동설은 대륙이 어떻게 움직이는지를 설명한다."
+      }
+    },
+    {
+      "word": "marine",
+      "pronunciation": "[məríːn]",
+      "partOfSpeech": "a.",
+      "meaning": "바다의, 해양의",
+      "example": {
+        "en": "The oil spill was a disaster for marine life.",
+        "ko": "석유 유출은 해양 생물에게 재앙이었다."
+      }
+    },
+    {
+      "word": "aquatic",
+      "pronunciation": "[əkwǽtik]",
+      "partOfSpeech": "a.",
+      "meaning": "물의, 수생의",
+      "example": {
+        "en": "The pond is home to various aquatic plants and animals.",
+        "ko": "그 연못은 다양한 수생 식물과 동물의 서식지이다."
+      }
+    },
+    {
+      "word": "terrestrial",
+      "pronunciation": "[təréstriəl]",
+      "partOfSpeech": "a.",
+      "meaning": "지구의; 육생의",
+      "example": {
+        "en": "Lions are terrestrial animals, meaning they live on land.",
+        "ko": "사자는 육상 동물인데, 이는 그들이 육지에 산다는 것을 의미한다."
+      }
+    },
+    {
+      "word": "arboreal",
+      "pronunciation": "[ɑːrbɔ́ːriəl]",
+      "partOfSpeech": "a.",
+      "meaning": "나무에서 사는, 수목의",
+      "example": {
+        "en": "Monkeys are arboreal animals that spend most of their lives in trees.",
+        "ko": "원숭이는 대부분의 삶을 나무에서 보내는 수상 동물이다."
+      }
+    },
+    {
+      "word": "flora",
+      "pronunciation": "[flɔ́ːrə]",
+      "partOfSpeech": "n.",
+      "meaning": "(특정 지역·시대의) 식물군",
+      "example": {
+        "en": "The book describes the flora and fauna of the island.",
+        "ko": "그 책은 그 섬의 식물군과 동물군을 묘사한다."
+      }
+    },
+    {
+      "word": "biosphere",
+      "pronunciation": "/ˈbaɪ.oʊ.sfɪr/",
+      "partOfSpeech": "n.",
+      "meaning": "지구에서 생명이 존재하는 영역(육지, 물, 하층 대기 포함); 전 세계 모든 생태계의 총합.",
+      "example": {
+        "en": "Satellites help scientists monitor changes in the biosphere over time.",
+        "ko": "위성은 시간이 지남에 따라 생물권의 변화를 관측하는 데 과학자들을 돕는다."
+      }
+    }
+  ]
+}

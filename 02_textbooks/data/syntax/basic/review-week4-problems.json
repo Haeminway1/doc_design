@@ -1,0 +1,1210 @@
+{
+  "bookId": "syntax-basic-review-week4",
+  "week": 4,
+  "title": "[4주차 마무리] 최종 실전! 복합 문장 완벽 분석 (100문제)",
+  "part": "IV",
+  "type": "sentence-analysis",
+  "instruction": "다음 문장에서 절/구 덩어리를 묶어 구조를 파악하고, 핵심 뼈대를 찾아 해석해 보세요.",
+  "problems": [
+    {
+      "id": "syntax-basic-review-week4-1",
+      "number": 1,
+      "type": "sentence-analysis",
+      "stem": "I know that he is the man who won the first prize.",
+      "answer": {
+        "analysis": "",
+        "pattern": "명사절 that + 형용사절 who",
+        "translation": "나는 [그가 {1등 상을 탄} 그 남자라는 것을] 안다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-2",
+      "number": 2,
+      "type": "sentence-analysis",
+      "stem": "What she said at the meeting was that we need a new strategy.",
+      "answer": {
+        "analysis": "",
+        "pattern": "주어 what절 + 보어 that절",
+        "translation": "[그녀가 회의에서 말했던 것은] [우리가 새로운 전략이 필 요하다는 것]이었다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-3",
+      "number": 3,
+      "type": "sentence-analysis",
+      "stem": "Although it was raining heavily, he went out to buy the medicine that his son needed.",
+      "answer": {
+        "analysis": "",
+        "pattern": "부사절 Although + 부사적 to부정사 + 형용사절 that",
+        "translation": "[비록 비가 심하게 내렸지만], 그는 [{그의 아들이 필요로 했던} 약을 사기 위해] 나갔다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-4",
+      "number": 4,
+      "type": "sentence-analysis",
+      "stem": "The reason why I chose this major is that I want to help people who are in need.",
+      "answer": {
+        "analysis": "",
+        "pattern": "형용사절 why + 보어 that절 + 형용사절 who",
+        "translation": "[내가 이 전공을 선택한 이유는] [내가 {어려움에 처한} 사 람들을 돕고 싶다는 것]이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-5",
+      "number": 5,
+      "type": "sentence-analysis",
+      "stem": "I wonder if you can tell me what the problem is.",
+      "answer": {
+        "analysis": "",
+        "pattern": "명사절 if + 명사절 what",
+        "translation": "나는 [당신이 {문제가 무엇인지} 나에게 말해줄 수 있는지] 궁금하다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-6",
+      "number": 6,
+      "type": "sentence-analysis",
+      "stem": "The book, which was published last year, is about a man who travels around the world.",
+      "answer": {
+        "analysis": "",
+        "pattern": "형용사절 which + 형용사절 who",
+        "translation": "[{작년에 출판된} 그 책은] [{전 세계를 여행하는} 한 남자 에] 관한 것이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-7",
+      "number": 7,
+      "type": "sentence-analysis",
+      "stem": "Because he didn't study for the exam, it is natural that he got a bad grade.",
+      "answer": {
+        "analysis": "",
+        "pattern": "부사절 Because + 명사절 that",
+        "translation": "[그가 시험공부를 하지 않았기 때문에], [그가 나쁜 성적을 받은 것은] 당연하다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-8",
+      "number": 8,
+      "type": "sentence-analysis",
+      "stem": "I will never forget the day when I first met the teacher who changed my life.",
+      "answer": {
+        "analysis": "",
+        "pattern": "형용사절 when + 형용사절 who",
+        "translation": "나는 [{내 인생을 바꾼} 선생님을 처음 만났던] 날을 결코 잊지 못할 것이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-9",
+      "number": 9,
+      "type": "sentence-analysis",
+      "stem": "The police are investigating whether the rumor that he was involved in the crime is true.",
+      "answer": {
+        "analysis": "",
+        "pattern": "명사절 whether + 동격 that절",
+        "translation": "경찰은 [{그가 그 범죄에 연루되었다는} 소문이 사실인지 아닌지] 조사하고 있다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-10",
+      "number": 10,
+      "type": "sentence-analysis",
+      "stem": "A person who is afraid of making mistakes can never learn anything new.",
+      "answer": {
+        "analysis": "",
+        "pattern": "형용사절 who + 동명사 making",
+        "translation": "[{실수하는 것을} 두려워하는] 사람은 결코 어떤 새로운 것도 배울 수 없다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-11",
+      "number": 11,
+      "type": "sentence-analysis",
+      "stem": "If you want to know what true happiness is, you should focus on what you have.",
+      "answer": {
+        "analysis": "",
+        "pattern": "부사절 If + 명사절 what + 명사절 what",
+        "translation": "[만약 당신이 {진정한 행복이 무엇인지} 알고 싶다면], 당 신은 [당신이 가진 것에] 집중해야 한다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-12",
+      "number": 12,
+      "type": "sentence-analysis",
+      "stem": "The fact that the earth is getting warmer is a serious problem that we all must face.",
+      "answer": {
+        "analysis": "",
+        "pattern": "동격 that절 + 형용사절 that",
+        "translation": "[지구가 더워지고 있다는] 사실은 [우리 모두가 직면해야 만 하는] 심각한 문제이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-13",
+      "number": 13,
+      "type": "sentence-analysis",
+      "stem": "I met a woman whose job is designing websites for famous companies.",
+      "answer": {
+        "analysis": "",
+        "pattern": "소유격 관계대명사절 whose",
+        "translation": "나는 [직업이 {유명한 회사들의 웹사이트를 디자인하는 것}인] 한 여자를 만났다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-14",
+      "number": 14,
+      "type": "sentence-analysis",
+      "stem": "While I was cleaning my room, I found the letter that I had been looking for.",
+      "answer": {
+        "analysis": "",
+        "pattern": "부사절 While + 형용사절 that",
+        "translation": "[내가 내 방을 청소하는 동안], 나는 [내가 계속 찾고 있었 던] 그 편지를 발견했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-15",
+      "number": 15,
+      "type": "sentence-analysis",
+      "stem": "What is most important in a relationship is that you trust each other.",
+      "answer": {
+        "analysis": "",
+        "pattern": "주어 what절 + 보어 that절",
+        "translation": "[관계에서 가장 중요한 것은] [서로를 신뢰한다는 것]이 다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-16",
+      "number": 16,
+      "type": "sentence-analysis",
+      "stem": "The city where I was born is famous for the beautiful beaches that attract many tourists.",
+      "answer": {
+        "analysis": "",
+        "pattern": "형용사절 where + 형용사절 that",
+        "translation": "[내가 태어난] 도시는 [{많은 관광객을 끄는} 아름다운 해 변으로] 유명하다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-17",
+      "number": 17,
+      "type": "sentence-analysis",
+      "stem": "I didn't realize that the man to whom I was talking was a famous celebrity.",
+      "answer": {
+        "analysis": "",
+        "pattern": "명사절 that + 형용사절 to whom",
+        "translation": "나는 [{내가 이야기하고 있었던} 그 남자가 유명 연예인 이라는 것을] 깨닫지 못했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-18",
+      "number": 18,
+      "type": "sentence-analysis",
+      "stem": "Unless you have a ticket, you cannot enter the concert hall where the band is playing.",
+      "answer": {
+        "analysis": "",
+        "pattern": "부사절 Unless + 형 용사절 where",
+        "translation": "[만약 당신에게 표가 없다면], 당신은 [{그 밴드가 연주하 고 있는} 콘서트홀에] 들어갈 수 없다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-19",
+      "number": 19,
+      "type": "sentence-analysis",
+      "stem": "He explained how he solved the problem that everyone thought was impossible.",
+      "answer": {
+        "analysis": "",
+        "pattern": "명사절 how + 형용사절 that",
+        "translation": "그는 [자신이 {모두가 불가능하다고 생각했던} 그 문제를 어떻게 풀었는지] 설명했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-20",
+      "number": 20,
+      "type": "sentence-analysis",
+      "stem": "After he graduated from college, he got a job at a company which his father had founded.",
+      "answer": {
+        "analysis": "",
+        "pattern": "부사절 After + 형용사절 which",
+        "translation": "[그가 대학을 졸업한 후에], 그는 [{그의 아버지가 설립했 던} 회사에] 취직했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-21",
+      "number": 21,
+      "type": "sentence-analysis",
+      "stem": "I believe that trying your best is more important than winning.",
+      "answer": {
+        "analysis": "",
+        "pattern": "명사절 that + 동명사 trying/winning",
+        "translation": "나는 [[최선을 다하는 것이] [이기는 것]보다 더 중요하다 고] 믿는다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-22",
+      "number": 22,
+      "type": "sentence-analysis",
+      "stem": "The hotel where we stayed during our vacation had a pool that overlooked the ocean.",
+      "answer": {
+        "analysis": "",
+        "pattern": "형용사절 where + 형용사절 that",
+        "translation": "[우리가 휴가 동안 머물렀던] 호텔에는 [바다가 내려다보 이는] 수영장이 있었다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-23",
+      "number": 23,
+      "type": "sentence-analysis",
+      "stem": "Although he has a lot of money, he doesn't know how to enjoy his life.",
+      "answer": {
+        "analysis": "",
+        "pattern": "부사절 Although + 명사절 how",
+        "translation": "[비록 그는 돈이 많지만], 그는 [자신의 인생을 어떻게 즐 겨야 하는지] 모른다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-24",
+      "number": 24,
+      "type": "sentence-analysis",
+      "stem": "I was surprised when I heard the news that our team had won the championship.",
+      "answer": {
+        "analysis": "",
+        "pattern": "부사절 when + 동격 that절",
+        "translation": "나는 [{우리 팀이 우승했다는} 소식을 들었을 때] 놀랐다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-25",
+      "number": 25,
+      "type": "sentence-analysis",
+      "stem": "Can you show me the picture that you took when you were in Paris?",
+      "answer": {
+        "analysis": "",
+        "pattern": "형용사절 that + 부사절 when",
+        "translation": "나에게 [{네가 파리에 있었을 때} 찍었던] 사진을 보여줄 수 있니?",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-26",
+      "number": 26,
+      "type": "sentence-analysis",
+      "stem": "What makes a good leader is the ability to listen to the opinions that others have.",
+      "answer": {
+        "analysis": "",
+        "pattern": "주어 what절 + 형용사적 to부정사 + 형용 사절 that",
+        "translation": "[좋은 리더를 만드는 것은] [{다른 사람들이 가진} 의견을 듣는] 능력이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-27",
+      "number": 27,
+      "type": "sentence-analysis",
+      "stem": "The student who sits in front of me asked a question that nobody could answer.",
+      "answer": {
+        "analysis": "",
+        "pattern": "형용사절 who + 형용사절 that",
+        "translation": "[내 앞에 앉는] 학생이 [아무도 대답할 수 없었던] 질문을 했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-28",
+      "number": 28,
+      "type": "sentence-analysis",
+      "stem": "Since you are here, I want to ask you if you can help me with my report.",
+      "answer": {
+        "analysis": "",
+        "pattern": "부사절 Since + 명사절 if",
+        "translation": "[네가 여기 있으니], 나는 [네가 내 보고서를 도와줄 수 있 는지] 묻고 싶다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-29",
+      "number": 29,
+      "type": "sentence-analysis",
+      "stem": "The main reason why so many people fail is that they give up too easily.",
+      "answer": {
+        "analysis": "",
+        "pattern": "형용사절 why + 보어 that 절",
+        "translation": "[그렇게 많은 사람들이 실패하는 주된 이유는] [그들이 너무 쉽게 포기한다는 것]이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-30",
+      "number": 30,
+      "type": "sentence-analysis",
+      "stem": "The movie, which is based on a true story, tells us that we should never lose hope.",
+      "answer": {
+        "analysis": "",
+        "pattern": "형용사절 which + 명 사절 that",
+        "translation": "[실화에 바탕을 둔] 그 영화는 우리에게 [우리가 절대 희 망을 잃어서는 안 된다고] 말해준다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-31",
+      "number": 31,
+      "type": "sentence-analysis",
+      "stem": "I will give this gift to whoever comes first.",
+      "answer": {
+        "analysis": "",
+        "pattern": "",
+        "translation": "나는 이 선물을 [누구든 먼저 오는 사람에게] 줄 것이다. (복합관계대명사 whoever)",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-32",
+      "number": 32,
+      "type": "sentence-analysis",
+      "stem": "Even though the problem was difficult, she found a way to solve it.",
+      "answer": {
+        "analysis": "",
+        "pattern": "부사절 Even though + 형용사적 to부정사",
+        "translation": "[비록 문제가 어려웠지만], 그녀는 [그것을 해결할] 방법 을 찾았다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-33",
+      "number": 33,
+      "type": "sentence-analysis",
+      "stem": "The moment when I saw her I knew that she was the one.",
+      "answer": {
+        "analysis": "",
+        "pattern": "형용사절 when + 명사절 that",
+        "translation": "[내가 그녀를 본] 순간 나는 [그녀가 바로 그 사람이라는 것을] 알았다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-34",
+      "number": 34,
+      "type": "sentence-analysis",
+      "stem": "I'm not sure what I should do after I finish this project.",
+      "answer": {
+        "analysis": "",
+        "pattern": "명사절 what + 부사절 after",
+        "translation": "나는 [{이 프로젝트를 끝낸 후에} 내가 무엇을 해야 할지] 잘 모르겠다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-35",
+      "number": 35,
+      "type": "sentence-analysis",
+      "stem": "The food that she prepared for the party was so delicious that everyone asked for the recipe.",
+      "answer": {
+        "analysis": "",
+        "pattern": "형용사절 that + so~that 구문",
+        "translation": "[그녀가 파티를 위해 준비한] 음식은 너무 맛있어서 [모 두가 조리법을 물었다].",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-36",
+      "number": 36,
+      "type": "sentence-analysis",
+      "stem": "He is looking for a job that will allow him to use his creativity.",
+      "answer": {
+        "analysis": "",
+        "pattern": "형용사절 that + 목적격 보어 to부정사",
+        "translation": "그는 [{그가 그의 창의력을 사용하도록} 허락해 줄] 직업 을 찾고 있다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-37",
+      "number": 37,
+      "type": "sentence-analysis",
+      "stem": "If you don't know the meaning of a word, you should look it up in a dictionary that has many examples.",
+      "answer": {
+        "analysis": "",
+        "pattern": "부사절 If + 형용사절 that",
+        "translation": "[만약 단어의 의미를 모른다면], 당신은 [{많은 예시를 가 진} 사전에서] 그것을 찾아봐야 한다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-38",
+      "number": 38,
+      "type": "sentence-analysis",
+      "stem": "The evidence that the police found proved that the man was innocent.",
+      "answer": {
+        "analysis": "",
+        "pattern": "형용사절 that + 명사절 that",
+        "translation": "[경찰이 발견한] 증거는 [그 남자가 무죄라는 것을] 증명 했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-39",
+      "number": 39,
+      "type": "sentence-analysis",
+      "stem": "What I learned from my travels is that the world is full of kind people.",
+      "answer": {
+        "analysis": "",
+        "pattern": "주어 what절 + 보어 that절",
+        "translation": "[내가 여행에서 배운 것은] [세상은 친절한 사람들로 가 득하다는 것]이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-40",
+      "number": 40,
+      "type": "sentence-analysis",
+      "stem": "The house in which he lived as a child is now a museum that many people visit.",
+      "answer": {
+        "analysis": "",
+        "pattern": "형용사절 in which + 형용사절 that",
+        "translation": "[그가 어렸을 때 살았던] 집은 이제 [많은 사람들이 방문 하는] 박물관이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-41",
+      "number": 41,
+      "type": "sentence-analysis",
+      "stem": "Before you make a decision, you should consider what the consequences will be.",
+      "answer": {
+        "analysis": "",
+        "pattern": "부사절 Before + 명사절 what",
+        "translation": "[결정을 내리기 전에], 당신은 [결과가 어떠할지를] 고려 해야 한다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-42",
+      "number": 42,
+      "type": "sentence-analysis",
+      "stem": "The woman whose son is a famous actor is very proud of him.",
+      "answer": {
+        "analysis": "",
+        "pattern": "소유격 관계대명사절 whose",
+        "translation": "[아들이 유명 배우인] 그 여성은 그를 매우 자랑스러워한 다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-43",
+      "number": 43,
+      "type": "sentence-analysis",
+      "stem": "As it was a national holiday, most of the stores that are usually crowded were closed.",
+      "answer": {
+        "analysis": "",
+        "pattern": "부사절 As + 형용사절 that",
+        "translation": "[국경일이었기 때문에], [보통 붐비는] 대부분의 상점들 이 문을 닫았다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-44",
+      "number": 44,
+      "type": "sentence-analysis",
+      "stem": "The suggestion that we should postpone the meeting was accepted by everyone.",
+      "answer": {
+        "analysis": "",
+        "pattern": "동격 that절",
+        "translation": "[우리가 회의를 연기해야 한다는] 제안은 모두에게 받아 들여졌다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-45",
+      "number": 45,
+      "type": "sentence-analysis",
+      "stem": "I don't remember the name of the restaurant where we had dinner last night.",
+      "answer": {
+        "analysis": "",
+        "pattern": "형용사절 where",
+        "translation": "나는 [우리가 어젯밤 저녁을 먹었던] 식당의 이름이 기억 나지 않는다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-46",
+      "number": 46,
+      "type": "sentence-analysis",
+      "stem": "The only thing that I want to do right now is to get some sleep.",
+      "answer": {
+        "analysis": "",
+        "pattern": "형용사절 that + 명사적 to부정사",
+        "translation": "[내가 지금 당장 하고 싶은 유일한 것은] [잠을 좀 자는 것]이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-47",
+      "number": 47,
+      "type": "sentence-analysis",
+      "stem": "Although she was very tired, she continued to work on the report that was due the next day.",
+      "answer": {
+        "analysis": "",
+        "pattern": "부사절 Although + 형용 사절 that",
+        "translation": "[비록 그녀는 매우 피곤했지만], 그녀는 [{다음 날이 마감 이었던} 보고서 작업을] 계속했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-48",
+      "number": 48,
+      "type": "sentence-analysis",
+      "stem": "I have a friend who is very good at telling funny stories.",
+      "answer": {
+        "analysis": "",
+        "pattern": "형용사절 who + 동명사 telling",
+        "translation": "나는 [[재미있는 이야기를 하는 것을] 아주 잘하는] 친구 가 있다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-49",
+      "number": 49,
+      "type": "sentence-analysis",
+      "stem": "What we see depends mainly on what we look for.",
+      "answer": {
+        "analysis": "",
+        "pattern": "주어 what절 + 전치사의 목적어 what절",
+        "translation": "[우리가 보는 것은] 주로 [우리가 무엇을 찾는지에] 달려 있다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-50",
+      "number": 50,
+      "type": "sentence-analysis",
+      "stem": "He finally achieved the goal that he had been dreaming of since he was a child.",
+      "answer": {
+        "analysis": "",
+        "pattern": "형용사절 that",
+        "translation": "그는 마침내 [그가 어렸을 때부터 꿈꿔왔던] 목표를 달성 했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-51",
+      "number": 51,
+      "type": "sentence-analysis",
+      "stem": "The article explains why it is important to protect endangered species.",
+      "answer": {
+        "analysis": "",
+        "pattern": "명사절 why + 명사적 to부정사",
+        "translation": "그 기사는 [{멸종 위기 종을 보호하는 것이} 왜 중요한지] 설명한다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-52",
+      "number": 52,
+      "type": "sentence-analysis",
+      "stem": "The man who I thought was my friend betrayed me.",
+      "answer": {
+        "analysis": "",
+        "pattern": "형 용사절 who",
+        "translation": "[내가 친구라고 생각했던] 그 남자가 나를 배신했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-53",
+      "number": 53,
+      "type": "sentence-analysis",
+      "stem": "If you had been there, you would have understood what I was talking about.",
+      "answer": {
+        "analysis": "",
+        "pattern": "부사절 If + 명사절 what",
+        "translation": "[만약 네가 거기에 있었다면], 너는 [내가 무슨 말을 하고 있었는지] 이해했을 것이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-54",
+      "number": 54,
+      "type": "sentence-analysis",
+      "stem": "The news that a new vaccine has been developed gives hope to many people.",
+      "answer": {
+        "analysis": "",
+        "pattern": "동격 that절",
+        "translation": "[새로운 백신이 개발되었다는] 소식은 많은 사람들에게 희망을 준다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-55",
+      "number": 55,
+      "type": "sentence-analysis",
+      "stem": "I was so busy that I forgot that it was my mom's birthday.",
+      "answer": {
+        "analysis": "",
+        "pattern": "so~that 구문 + 명사절 that",
+        "translation": "나는 너무 바빠서 [{그날이 엄마의 생신이라는 것을} 잊 어버렸다].",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-56",
+      "number": 56,
+      "type": "sentence-analysis",
+      "stem": "The park where we used to play has changed so much that I can hardly recognize",
+      "answer": {
+        "analysis": "",
+        "pattern": "형용사절 where + so~that 구문",
+        "translation": "[우리가 놀곤 했던] 공원은 너무 많이 변해서 [나는 거의 알아볼 수가 없다].",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-57",
+      "number": 57,
+      "type": "sentence-analysis",
+      "stem": "This is the book about which we talked yesterday.",
+      "answer": {
+        "analysis": "",
+        "pattern": "형용사절 about which",
+        "translation": "이것이 [우리가 어제 이야기했던] 그 책이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-58",
+      "number": 58,
+      "type": "sentence-analysis",
+      "stem": "Because the information which he gave us was not accurate, we made a big mistake.",
+      "answer": {
+        "analysis": "",
+        "pattern": "부사절 Because + 형용사절 which",
+        "translation": "[{그가 우리에게 준} 정보가 정확하지 않았기 때문에], 우 리는 큰 실수를 했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-59",
+      "number": 59,
+      "type": "sentence-analysis",
+      "stem": "I can't decide which one I should choose.",
+      "answer": {
+        "analysis": "",
+        "pattern": "명 사절 which",
+        "translation": "나는 [내가 어느 것을 선택해야 할지] 결정할 수 없다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-60",
+      "number": 60,
+      "type": "sentence-analysis",
+      "stem": "The success of the project depends on whether everyone cooperates.",
+      "answer": {
+        "analysis": "",
+        "pattern": "명사절 whether",
+        "translation": "프로젝트의 성공은 [모두가 협력하는지 아닌지에] 달려 있다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-61",
+      "number": 61,
+      "type": "sentence-analysis",
+      "stem": "I was reading a book when the phone rang.",
+      "answer": {
+        "analysis": "",
+        "pattern": "부사절 when",
+        "translation": "[전화가 울렸을 때] 나는 책을 읽고 있었다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-62",
+      "number": 62,
+      "type": "sentence-analysis",
+      "stem": "The boy who was injured in the accident is in the hospital where my father works.",
+      "answer": {
+        "analysis": "",
+        "pattern": "형용사절 who + 형용사절 where",
+        "translation": "[사고에서 다친] 소년은 [{나의 아버지가 일하시는} 병원 에] 있다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-63",
+      "number": 63,
+      "type": "sentence-analysis",
+      "stem": "The question is not if we will fail, but if we will try.",
+      "answer": {
+        "analysis": "",
+        "pattern": "명사절 if + 명사절 if",
+        "translation": "문제는 [우리가 실패할 것인지가] 아니라, [우리가 시도 할 것인지]이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-64",
+      "number": 64,
+      "type": "sentence-analysis",
+      "stem": "The manager is looking for someone who has experience in marketing.",
+      "answer": {
+        "analysis": "",
+        "pattern": "형용 사절 who",
+        "translation": "매니저는 [마케팅 경험이 있는] 사람을 찾고 있다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-65",
+      "number": 65,
+      "type": "sentence-analysis",
+      "stem": "While there is life, there is hope, is a saying that has inspired many people.",
+      "answer": {
+        "analysis": "",
+        "pattern": "명사절 While + 형용사절 that",
+        "translation": "[생명이 있는 한, 희망이 있다는 것은] [많은 사람들에게 영감을 준] 격언이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-66",
+      "number": 66,
+      "type": "sentence-analysis",
+      "stem": "What was once considered impossible is now a part of our daily lives.",
+      "answer": {
+        "analysis": "",
+        "pattern": "주어 what절",
+        "translation": "[한때 불가능하다고 여겨졌던 것이] 이제 우리 일상의 일 부이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-67",
+      "number": 67,
+      "type": "sentence-analysis",
+      "stem": "He wore a mask so that no one would recognize him.",
+      "answer": {
+        "analysis": "",
+        "pattern": "부사절 so that",
+        "translation": "그는 [아무도 그를 알아보지 못하도록] 마스크를 썼다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-68",
+      "number": 68,
+      "type": "sentence-analysis",
+      "stem": "The reason I'm calling is to ask you for a favor.",
+      "answer": {
+        "analysis": "",
+        "pattern": "",
+        "translation": "[제가 전화 드린 이유는] [당신에게 부탁 하나를 하기 위 해서]입니다. (형용사절 (that) + 명사적 to부정사)",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-69",
+      "number": 69,
+      "type": "sentence-analysis",
+      "stem": "Even if the whole world is against you, I will always be on your side.",
+      "answer": {
+        "analysis": "",
+        "pattern": "부사절 Even if",
+        "translation": "[설령 전 세계가 당신을 반대하더라도], 나는 항상 당신 편일 것이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-70",
+      "number": 70,
+      "type": "sentence-analysis",
+      "stem": "The police couldn't find any evidence that proved that he was guilty.",
+      "answer": {
+        "analysis": "",
+        "pattern": "형용사절 that + 명사절 that",
+        "translation": "경찰은 [{그가 유죄라는 것을} 증명하는] 어떤 증거도 찾 지 못했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-71",
+      "number": 71,
+      "type": "sentence-analysis",
+      "stem": "Whatever you decide to do, make sure that it is something you are passionate about.",
+      "answer": {
+        "analysis": "",
+        "pattern": "부사절 Whatever + 명사 절 that",
+        "translation": "[네가 무엇을 하기로 결정하든지], [그것이 {네가 열정을 가진} 어떤 것인지] 확실히 해라.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-72",
+      "number": 72,
+      "type": "sentence-analysis",
+      "stem": "The problem with him is that he never listens to the advice that others give him.",
+      "answer": {
+        "analysis": "",
+        "pattern": "보어 that절 + 형용사 절 that",
+        "translation": "그에게 있는 문제는 [그가 결코 {다른 사람들이 그에게 해 주는} 조언을 듣지 않는다는 것]이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-73",
+      "number": 73,
+      "type": "sentence-analysis",
+      "stem": "I have to finish this work before my boss comes back.",
+      "answer": {
+        "analysis": "",
+        "pattern": "부사절 before",
+        "translation": "나는 [나의 상사가 돌아오기 전에] 이 일을 끝내야 한다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-74",
+      "number": 74,
+      "type": "sentence-analysis",
+      "stem": "The letter which I received this morning contained news that shocked me.",
+      "answer": {
+        "analysis": "",
+        "pattern": "형용사절 which + 형용사절 that",
+        "translation": "[오늘 아침 내가 받은] 편지에는 [나를 충격에 빠뜨린] 소 식이 담겨 있었다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-75",
+      "number": 75,
+      "type": "sentence-analysis",
+      "stem": "It is true that laughing is the best medicine.",
+      "answer": {
+        "analysis": "",
+        "pattern": "",
+        "translation": "[[웃는 것이] 최고의 약이라는 것은] 사실이다. (가주어/ 진주어 + 동명사 laughing)",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-76",
+      "number": 76,
+      "type": "sentence-analysis",
+      "stem": "He bought a car that was more expensive than what he could afford.",
+      "answer": {
+        "analysis": "",
+        "pattern": "형용사절 that + 명사절 what",
+        "translation": "그는 [{그가 감당할 수 있는 것}보다 더 비싼] 차를 샀다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-77",
+      "number": 77,
+      "type": "sentence-analysis",
+      "stem": "The company is hiring people who they believe are creative and passionate.",
+      "answer": {
+        "analysis": "",
+        "pattern": "형용사절 who",
+        "translation": "그 회사는 [그들이 창의적이고 열정적이라고 믿는] 사람 들을 고용하고 있다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-78",
+      "number": 78,
+      "type": "sentence-analysis",
+      "stem": "I was about to leave when I remembered that I had forgotten my wallet.",
+      "answer": {
+        "analysis": "",
+        "pattern": "부사절 when + 명사절 that",
+        "translation": "내가 막 떠나려던 참에 [{지갑을 잊었다는 것이} 기억났 다].",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-79",
+      "number": 79,
+      "type": "sentence-analysis",
+      "stem": "The old castle, which stands on the hill, is a place where you can see the whole city.",
+      "answer": {
+        "analysis": "",
+        "pattern": "형용사절 which + 형용사절 where",
+        "translation": "[언덕 위에 서 있는] 그 오래된 성은 [도시 전체를 볼 수 있는] 장소이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-80",
+      "number": 80,
+      "type": "sentence-analysis",
+      "stem": "As soon as she finished her speech, the audience gave her a big hand.",
+      "answer": {
+        "analysis": "",
+        "pattern": "부사절 As soon as",
+        "translation": "[그녀가 연설을 끝내자마자], 청중은 그녀에게 큰 박수를 보냈다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-81",
+      "number": 81,
+      "type": "sentence-analysis",
+      "stem": "The way how he talks to people shows that he is a very kind person.",
+      "answer": {
+        "analysis": "",
+        "pattern": "",
+        "translation": "[그가 사람들에게 말하는] 방식은 [그가 매우 친절한 사 람이라는 것을] 보여준다. (형용사절 (that) + 명사절 that)",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-82",
+      "number": 82,
+      "type": "sentence-analysis",
+      "stem": "Although he is young, he has a lot of experience that is valuable to our company.",
+      "answer": {
+        "analysis": "",
+        "pattern": "부사절 Although + 형용사절 that",
+        "translation": "[비록 그는 젊지만], 그는 [{우리 회사에 가치 있는} 많은 경험을] 가지고 있다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-83",
+      "number": 83,
+      "type": "sentence-analysis",
+      "stem": "I will follow you wherever you go.",
+      "answer": {
+        "analysis": "",
+        "pattern": "",
+        "translation": "나는 [네가 어디를 가든지] 너를 따라갈 것이다. (복합관 계부사 wherever)",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-84",
+      "number": 84,
+      "type": "sentence-analysis",
+      "stem": "What is learned in the cradle is carried to the grave.",
+      "answer": {
+        "analysis": "",
+        "pattern": "주어 what절",
+        "translation": "[요람에서 배운 것이] 무덤까지 간다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-85",
+      "number": 85,
+      "type": "sentence-analysis",
+      "stem": "The problem is not who you are, but what you do.",
+      "answer": {
+        "analysis": "",
+        "pattern": "명사절 who + 명사절 what",
+        "translation": "문제는 [네가 누구인지가] 아니라, [네가 무엇을 하는지] 이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-86",
+      "number": 86,
+      "type": "sentence-analysis",
+      "stem": "I met an old friend whom I hadn't seen for years.",
+      "answer": {
+        "analysis": "",
+        "pattern": "형용사 절 whom",
+        "translation": "나는 [몇 년 동안 보지 못했던] 옛 친구를 만났다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-87",
+      "number": 87,
+      "type": "sentence-analysis",
+      "stem": "In case you need help, here is my phone number.",
+      "answer": {
+        "analysis": "",
+        "pattern": "부사절 In case",
+        "translation": "[도움이 필요할 경우에 대비해서], 여기 내 전화번호가 있 다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-88",
+      "number": 88,
+      "type": "sentence-analysis",
+      "stem": "The story that he told was so funny that we couldn't stop laughing.",
+      "answer": {
+        "analysis": "",
+        "pattern": "형용사절 that + so~that 구문",
+        "translation": "[그가 한] 이야기는 너무 재미있어서 [우리는 웃음을 멈 출 수 없었다].",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-89",
+      "number": 89,
+      "type": "sentence-analysis",
+      "stem": "The fact that he didn't apologize made me even more angry.",
+      "answer": {
+        "analysis": "",
+        "pattern": "동격 that절",
+        "translation": "[그가 사과하지 않았다는] 사실은 나를 훨씬 더 화나게 만 들었다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-90",
+      "number": 90,
+      "type": "sentence-analysis",
+      "stem": "Now that you are here, we can start the meeting.",
+      "answer": {
+        "analysis": "",
+        "pattern": "부사절 Now that",
+        "translation": "[이제 네가 여기 왔으니], 우리는 회의를 시작할 수 있다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-91",
+      "number": 91,
+      "type": "sentence-analysis",
+      "stem": "The building whose roof is red is the library.",
+      "answer": {
+        "analysis": "",
+        "pattern": "소유격 관계대명 사절 whose",
+        "translation": "[지붕이 빨간] 그 건물은 도서관이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-92",
+      "number": 92,
+      "type": "sentence-analysis",
+      "stem": "I will do whatever it takes to achieve my dream.",
+      "answer": {
+        "analysis": "",
+        "pattern": "",
+        "translation": "나는 [{내 꿈을 이루기 위해} 필요한 것은 무엇이든] 할 것이다. (복합관계대명사 whatever + 부사적 to부정사)",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-93",
+      "number": 93,
+      "type": "sentence-analysis",
+      "stem": "The world is a book, and those who do not travel read only one page.",
+      "answer": {
+        "analysis": "",
+        "pattern": "형용사절 who",
+        "translation": "세상은 책이고, [여행하지 않는] 자들은 단지 한 페이지만 을 읽을 뿐이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-94",
+      "number": 94,
+      "type": "sentence-analysis",
+      "stem": "Whether you succeed or not depends on your will.",
+      "answer": {
+        "analysis": "",
+        "pattern": "주어 whether절",
+        "translation": "[네가 성공할지 아닐지는] 너의 의지에 달려있다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-95",
+      "number": 95,
+      "type": "sentence-analysis",
+      "stem": "I was impressed by the way that she handled the difficult situation.",
+      "answer": {
+        "analysis": "",
+        "pattern": "형용사절 that",
+        "translation": "나는 [그녀가 그 어려운 상황을 처리한] 방식에 감명받았 다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-96",
+      "number": 96,
+      "type": "sentence-analysis",
+      "stem": "He acted as if he knew nothing about the plan.",
+      "answer": {
+        "analysis": "",
+        "pattern": "부사절 as if",
+        "translation": "그는 [마치 그 계획에 대해 아무것도 모르는 것처럼] 행동 했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-97",
+      "number": 97,
+      "type": "sentence-analysis",
+      "stem": "The man to whom she is married is a famous musician.",
+      "answer": {
+        "analysis": "",
+        "pattern": "형용사절 to whom",
+        "translation": "[그녀가 결혼한] 남자는 유명한 음악가이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-98",
+      "number": 98,
+      "type": "sentence-analysis",
+      "stem": "No matter how hard you try, you can't finish it in a day.",
+      "answer": {
+        "analysis": "",
+        "pattern": "",
+        "translation": "[아무리 열심히 노력하더라도], 너는 그것을 하루 안에 끝 낼 수 없다. (복합관계부사 No matter how)",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-99",
+      "number": 99,
+      "type": "sentence-analysis",
+      "stem": "The best memory that I have from my childhood is playing with my friends in the field.",
+      "answer": {
+        "analysis": "",
+        "pattern": "형용사절 that + 동명사 playing",
+        "translation": "[내가 어린 시절부터 가진] 최고의 기억은 [들판에서 친 구들과 놀았던 것]이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-review-week4-100",
+      "number": 100,
+      "type": "sentence-analysis",
+      "stem": "This is the last chance that you will get, so make the most of it.",
+      "answer": {
+        "analysis": "",
+        "pattern": "형용사절 that",
+        "translation": "이것은 [네가 얻게 될] 마지막 기회이니, 그것을 최대한 활용해라.",
+        "notes": ""
+      }
+    }
+  ]
+}

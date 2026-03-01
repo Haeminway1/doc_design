@@ -1,0 +1,131 @@
+{
+  "bookId": "syntax-basic-unit09",
+  "unit": 9,
+  "title": "2주차 총정리 (수식어 통합)",
+  "part": "II",
+  "week": 2,
+  "type": "sentence-analysis",
+  "instruction": "다음 문장에서 수식어를 괄호로 묶고, 뼈대의 형식을 밝힌 후 전체 문장을 해석해 보세요.",
+  "problems": [
+    {
+      "id": "syntax-basic-unit09-1",
+      "number": 1,
+      "type": "sentence-analysis",
+      "stem": "In winter, many birds fly south for warmth.",
+      "answer": {
+        "analysis": "(In winter), many birds(S) fly(V) (south) (for warmth).",
+        "pattern": "1형식",
+        "translation": "(겨울에) 많은 새들이 (따뜻함을 위해) (남쪽으로) 날아간다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit09-2",
+      "number": 2,
+      "type": "sentence-analysis",
+      "stem": "The small puppy in the box looked very weak.",
+      "answer": {
+        "analysis": "The small puppy(S) (in the box) looked(V) (very) weak(C).",
+        "pattern": "2형식",
+        "translation": "(상자 안의) 작은 강아지는 (매우) 약해 보였다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit09-3",
+      "number": 3,
+      "type": "sentence-analysis",
+      "stem": "I usually read a few pages of a book before bed.",
+      "answer": {
+        "analysis": "I(S) (usually) read(V) a few pages(O) (of a book) (before bed).",
+        "pattern": "3형식",
+        "translation": "나는 (보통) (잠자리에 들기 전에) (책) 몇 페이지를 읽는다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit09-4",
+      "number": 4,
+      "type": "sentence-analysis",
+      "stem": "The tour guide showed us many historical sites in the city.",
+      "answer": {
+        "analysis": "The tour guide(S) showed(V) us(IO) many historical sites(DO) (in the city).",
+        "pattern": "4형식",
+        "translation": "그 여행 가이드는 우리에게 (그 도시의) 많은 유적지를 보여주었다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit09-5",
+      "number": 5,
+      "type": "sentence-analysis",
+      "stem": "The coach's passionate speech made the players more confident.",
+      "answer": {
+        "analysis": "The coach's passionate speech(S) made(V) the players(O) (more) confident(OC).",
+        "pattern": "5형식",
+        "translation": "감독의 열정적인 연설은 선수들을 (더) 자신감 있게 만들었다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit09-6",
+      "number": 6,
+      "type": "sentence-analysis",
+      "stem": "The old tree in our backyard has stood there for over a century.",
+      "answer": {
+        "analysis": "The old tree(S) (in our backyard) has stood(V) (there) (for over a century).",
+        "pattern": "1형식",
+        "translation": "(우리 뒷마당의) 그 오래된 나무는 (그곳에) (1세기가 넘도록) 서 있었다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit09-7",
+      "number": 7,
+      "type": "sentence-analysis",
+      "stem": "The soup in this restaurant always tastes good on a cold day.",
+      "answer": {
+        "analysis": "The soup(S) (in this restaurant) (always) tastes(V) good(C) (on a cold day).",
+        "pattern": "2형식",
+        "translation": "(이 식당의) 수프는 (추운 날에) (항상) 맛이 좋다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit09-8",
+      "number": 8,
+      "type": "sentence-analysis",
+      "stem": "I completely forgot about the meeting this morning.",
+      "answer": {
+        "analysis": "I(S) (completely) forgot(V) (about the meeting) (this morning).",
+        "pattern": "3형식",
+        "translation": "나는 (오늘 아침에) (그 회의에 대해) (완전히) 잊고 있었다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit09-9",
+      "number": 9,
+      "type": "sentence-analysis",
+      "stem": "My boss sent me an urgent email with an attachment.",
+      "answer": {
+        "analysis": "My boss(S) sent(V) me(IO) an urgent email(DO) (with an attachment).",
+        "pattern": "4형식",
+        "translation": "나의 상사는 나에게 (첨부 파일이 있는) 긴급 이메일을 보냈다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit09-10",
+      "number": 10,
+      "type": "sentence-analysis",
+      "stem": "The unexpected result of the experiment made the scientists very happy.",
+      "answer": {
+        "analysis": "The unexpected result(S) (of the experiment) made(V) the scientists(O) (very) happy(OC).",
+        "pattern": "5형식",
+        "translation": "(그 실험의) 예상치 못한 결과는 과학자들을 (매우) 행복하게 만들었다.",
+        "notes": ""
+      }
+    }
+  ]
+}

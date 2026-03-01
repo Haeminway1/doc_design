@@ -1,0 +1,124 @@
+/* =================================================================== */
+/* Logic Blue Template — Design Tokens                                */
+/* 논리 Basic 템플릿                                                   */
+/* Vera's Document Studio                                             */
+/* =================================================================== */
+
+/* 이 파일은 base/page-layout.css의 :root 변수를 오버라이드합니다 */
+
+:root {
+    /* --- Accent Colors --- */
+    --color-accent-primary: #2563EB !important;      /* 블루600 (메인) */
+    --color-accent-light: #EFF6FF !important;        /* 블루50 */
+    --color-accent-dark: #1E40AF !important;         /* 블루800 */
+    --color-accent-secondary: #10B981 !important;    /* 에메랄드 (보조) */
+
+    /* --- Semantic Colors --- */
+    --color-concept-bg: #EFF6FF !important;
+    --color-concept-border: #2563EB !important;
+    --color-example-bg: #ECFDF5 !important;
+    --color-example-border: #10B981 !important;
+    --color-warning-bg: #FEF3C7 !important;
+    --color-warning-border: #F59E0B !important;
+
+    /* Step Section Colors */
+    --color-step-premise: #DBEAFE !important;
+    --color-step-conclusion: #D1FAE5 !important;
+    --color-step-assumption: #FEF3C7 !important;
+
+    /* --- Typography --- */
+    /* Logic Blue uses Inter for all text */
+
+    /* --- Shape & Borders --- */
+    --radius-sm: 6px !important;
+    --radius-md: 8px !important;
+    --radius-lg: 8px !important;
+
+    /* Header Style */
+    --header-border-style: solid !important;
+    --header-border-color: var(--color-accent-primary) !important;
+
+    /* Table Style */
+    --table-header-bg: var(--color-accent-light) !important;
+    --table-header-border: 2px solid var(--color-accent-primary) !important;
+    --table-border-style: solid !important;
+}
+
+/* --- Component Overrides --- */
+
+/* Rounded Boxes */
+.tip-box,
+.concept-box,
+.example-box,
+.warning-box {
+    border-radius: var(--radius-md) !important;
+}
+
+/* Header - Colored Underline */
+.page-header {
+    border-bottom: 2px solid var(--color-accent-primary) !important;
+}
+
+/* Step Section - 논리 문제 전용 */
+.step-section {
+    border: 1px solid var(--color-border-default) !important;
+    border-radius: var(--radius-md) !important;
+    padding: var(--space-md) !important;
+    margin: var(--space-md) 0 !important;
+    background-color: var(--color-bg-subtle) !important;
+}
+
+.step-premise {
+    background-color: var(--color-step-premise) !important;
+    border-left: 4px solid var(--color-accent-primary) !important;
+    padding: var(--space-sm) var(--space-md) !important;
+    margin: var(--space-sm) 0 !important;
+    border-radius: var(--radius-sm) !important;
+}
+
+.step-conclusion {
+    background-color: var(--color-step-conclusion) !important;
+    border-left: 4px solid var(--color-accent-secondary) !important;
+    padding: var(--space-sm) var(--space-md) !important;
+    margin: var(--space-sm) 0 !important;
+    border-radius: var(--radius-sm) !important;
+}
+
+.step-assumption {
+    background-color: var(--color-step-assumption) !important;
+    border-left: 4px solid var(--color-warning-border) !important;
+    padding: var(--space-sm) var(--space-md) !important;
+    margin: var(--space-sm) 0 !important;
+    border-radius: var(--radius-sm) !important;
+}
+
+/* Logic Label */
+.logic-label {
+    display: inline-block !important;
+    padding: 2px 8px !important;
+    border-radius: 4px !important;
+    font-size: var(--text-sm) !important;
+    font-weight: 600 !important;
+    font-family: var(--font-eng) !important;
+    margin-right: var(--space-xs) !important;
+}
+
+.logic-label.premise {
+    background-color: var(--color-accent-primary) !important;
+    color: white !important;
+}
+
+.logic-label.conclusion {
+    background-color: var(--color-accent-secondary) !important;
+    color: white !important;
+}
+
+.logic-label.assumption {
+    background-color: var(--color-warning-border) !important;
+    color: white !important;
+}
+
+/* Cover Background */
+.cover-background-image {
+    background-image: url('../../05_assets/backgrounds/background4.png');
+}

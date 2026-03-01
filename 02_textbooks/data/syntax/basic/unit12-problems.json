@@ -1,0 +1,131 @@
+{
+  "bookId": "syntax-basic-unit12",
+  "unit": 12,
+  "title": "분사 (현재분사/과거분사)",
+  "part": "III",
+  "week": 3,
+  "type": "sentence-analysis",
+  "instruction": "다음 문장에서 분사(구)를 찾아 [ ]로 묶고, 현재분사인지 과거분사인지 표시한 후 해석해 보세요.",
+  "problems": [
+    {
+      "id": "syntax-basic-unit12-1",
+      "number": 1,
+      "type": "sentence-analysis",
+      "stem": "I received a letter written in English.",
+      "answer": {
+        "analysis": "I received a letter [written in English].",
+        "pattern": "과거분사",
+        "translation": "나는 [영어로 쓰인] 편지를 받았다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit12-2",
+      "number": 2,
+      "type": "sentence-analysis",
+      "stem": "The crying baby wants his mother.",
+      "answer": {
+        "analysis": "The [crying] baby wants his mother.",
+        "pattern": "현재분사",
+        "translation": "그 [울고 있는] 아기는 엄마를 원한다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit12-3",
+      "number": 3,
+      "type": "sentence-analysis",
+      "stem": "The information downloaded from the internet may not be true.",
+      "answer": {
+        "analysis": "The information [downloaded from the internet] may not be true.",
+        "pattern": "과거분사",
+        "translation": "[인터넷에서 다운로",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit12-4",
+      "number": 4,
+      "type": "sentence-analysis",
+      "stem": "The movie was boring.",
+      "answer": {
+        "analysis": "드된] 정보는 사실이 아닐 수도 있다. (현재분사) The movie was [boring].",
+        "pattern": "",
+        "translation": "그 영화는 [지루했다]. (영화가 지루함을 줌)",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit12-5",
+      "number": 5,
+      "type": "sentence-analysis",
+      "stem": "The car parked in front of my house is not mine.",
+      "answer": {
+        "analysis": "The car [parked in front of my house] is not mine.",
+        "pattern": "과거분사",
+        "translation": "[내 집 앞에 주차된] 차는 내 것이 아니",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit12-6",
+      "number": 6,
+      "type": "sentence-analysis",
+      "stem": "There is a sleeping cat on the sofa.",
+      "answer": {
+        "analysis": "다. (현재분사) There is a [sleeping] cat on the sofa.",
+        "pattern": "",
+        "translation": "소파 위에 [자고 있는] 고양이가 있다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit12-7",
+      "number": 7,
+      "type": "sentence-analysis",
+      "stem": "I'm interested in learning new things.",
+      "answer": {
+        "analysis": "I'm [interested] in learning new things.",
+        "pattern": "과거분사",
+        "translation": "나는 새로운 것을 배우는 데 [흥미가 있다]. (내가 흥",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit12-8",
+      "number": 8,
+      "type": "sentence-analysis",
+      "stem": "The boy reading a book in the corner is my brother.",
+      "answer": {
+        "analysis": "미를 느낌) (현재분사) The boy [reading a book in the corner] is my brother.",
+        "pattern": "",
+        "translation": "[구석에서 책을 읽고 있는] 소년은",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit12-9",
+      "number": 9,
+      "type": "sentence-analysis",
+      "stem": "Most of the products made in this factory are exported.",
+      "answer": {
+        "analysis": "내 남동생이다. (과거분사) Most of the products [made in this factory] are exported.",
+        "pattern": "",
+        "translation": "[이 공장에서 만들어진] 제품 대",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit12-10",
+      "number": 10,
+      "type": "sentence-analysis",
+      "stem": "The shocking news spread quickly.",
+      "answer": {
+        "analysis": "부분은 수출된다. (현재분사) The [shocking] news spread quickly.",
+        "pattern": "",
+        "translation": "그 [충격적인] 소식은 빠르게 퍼졌다.",
+        "notes": ""
+      }
+    }
+  ]
+}

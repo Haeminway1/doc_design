@@ -1,0 +1,47 @@
+{
+  "student": "진소윤",
+  "date": "260228",
+  "subject": "독해",
+  "textbook": "vera's flavor 편입영어 독해 bridge편",
+  "range": "Part1 지문 56~60 (15문제), Part2 지문 101~108 (8문제)",
+  "textbookDataHint": "reading/bridge/part01",
+  "summary": {
+    "totalQ": 23,
+    "wrongQ": 1,
+    "correctRate": "96%",
+    "goodPoints": "23문제 중 22문제 정답으로 96%의 높은 정답률을 기록했습니다. Part1 내용파악(지문 56~60)에서 세부 정보를 정확하게 파악했고, Part2 대의파악(지문 101~108)에서는 8문제 전부 정답으로 주제·요지 포착 능력이 뛰어납니다. 젠트리피케이션, 핵심종, 추상미술, 자율무기체계, AI 창의성, 사피어-워프 가설 등 다양한 주제를 모두 정확하게 이해했습니다.",
+    "badPoints": "유일한 오답은 Passage 58(행동경제학/손실 회피)의 적용 문제(58-2)입니다. 지문의 핵심 원리(손실의 고통 > 이득의 기쁨)를 이해했지만, 5개 선지를 '이득 vs 손실' 시나리오로 분류하는 적용 단계에서 실수가 발생했습니다.",
+    "priority": "개념 적용 문제 연습 → 지문의 핵심 원리를 선지의 구체적 상황에 대입하는 훈련",
+    "weakAreas": [
+      {
+        "area": "개념 적용 (Application)",
+        "count": 1,
+        "severity": "low",
+        "note": "핵심 원리를 이해했지만, 선지를 이득/손실로 분류하는 적용 단계에서 실수"
+      }
+    ]
+  },
+  "wrongAnswers": [
+    {
+      "q": 58,
+      "selected": "④",
+      "correct": "⑤",
+      "type": "내용 파악 (개념 적용)",
+      "passage": "Behavioral economics challenges the traditional economic assumption that humans are perfectly rational decision-makers. It incorporates insights from psychology to explain why people often make choices that seem illogical. One of the most well-known concepts in this field is \"loss aversion.\" This principle suggests that for most people, the psychological pain of losing something is twice as powerful as the pleasure of gaining something of equal value. For example, the distress of losing $100 is felt more intensely than the happiness of finding $100. This cognitive bias explains a wide range of behaviors, such as why investors hold on to losing stocks for too long, hoping to avoid realizing a loss, or why people are more motivated by penalties for failure than by rewards for success. Understanding loss aversion helps to explain real-world economic behaviors that seem irrational under the lens of classical economics, which often overlooks the powerful influence of human psychology.",
+      "question": "[58-2] According to the principle of loss aversion, which scenario would likely have the strongest psychological impact on a person?",
+      "choices": [
+        "Receiving an unexpected gift worth $50.",
+        "Earning a $50 bonus at work.",
+        "Finding a $50 bill on the street.",
+        "Getting a $50 discount on a purchase.",
+        "Having a $50 bill stolen from their wallet."
+      ],
+      "explanation": "<div class=\"concept-box\"><h4>한줄 요약</h4><p>행동경제학의 핵심 개념인 <strong>손실 회피(loss aversion)</strong>를 설명하는 지문으로, 동일한 금액이라도 <strong>잃는 고통이 얻는 기쁨보다 약 2배 강하다</strong>는 심리적 편향을 다룬다.</p></div><div class=\"grammar-block\" style=\"text-align: justify;\"><h4>전체 해석</h4><p>행동경제학은 인간이 완벽하게 합리적인 의사결정자라는 전통 경제학의 가정에 도전한다. 행동경제학은 심리학의 통찰을 접목하여, 사람들이 왜 비합리적으로 보이는 선택을 자주 하는지 설명한다. 이 분야에서 가장 잘 알려진 개념 중 하나가 &ldquo;손실 회피(loss aversion)&rdquo;이다. 이 원리에 따르면, 대부분의 사람들에게 <strong>무언가를 잃는 심리적 고통은 동일한 가치의 것을 얻는 즐거움보다 약 두 배 강하다.</strong> 예를 들어, 100달러를 잃었을 때의 괴로움은 100달러를 발견했을 때의 행복보다 더 강렬하게 느껴진다. 이러한 인지 편향은 다양한 행동을 설명해준다 &mdash; 투자자들이 손실을 확정짓지 않으려고 하락하는 주식을 너무 오래 보유하는 이유, 사람들이 성공에 대한 보상보다 실패에 대한 벌칙에 더 동기부여되는 이유 등이 그것이다. 손실 회피를 이해하면, 전통 경제학의 관점에서는 비합리적으로 보이는 실제 경제적 행동들을 설명하는 데 도움이 된다. 전통 경제학은 종종 인간 심리의 강력한 영향을 간과하기 때문이다.</p></div><table class=\"keyword-table\"><thead><tr><th>핵심 표현</th><th>의미</th><th>방향</th></tr></thead><tbody><tr><td><strong>loss aversion</strong></td><td>손실 회피</td><td>핵심 개념</td></tr><tr><td><strong>psychological pain of losing</strong></td><td>잃는 심리적 고통</td><td class=\"negative\">NEGATIVE (강함)</td></tr><tr><td><strong>pleasure of gaining</strong></td><td>얻는 즐거움</td><td class=\"positive\">POSITIVE (약함)</td></tr><tr><td><strong>twice as powerful</strong></td><td>두 배 강력한</td><td>비교 기준</td></tr><tr><td><strong>cognitive bias</strong></td><td>인지 편향</td><td>원인</td></tr><tr><td><strong>irrational</strong></td><td>비합리적인</td><td>전통경제학 관점</td></tr></tbody></table><div class=\"tip-box\"><h4>구조 및 방향성</h4><table class=\"structure-table\"><thead><tr><th>문장</th><th>기능</th><th>방향</th></tr></thead><tbody><tr><td>문장 1~2</td><td>배경 제시: 전통경제학 vs 행동경제학</td><td><span class=\"badge badge-neutral\">CONTRAST</span></td></tr><tr><td>문장 3</td><td>핵심 개념 도입: loss aversion</td><td><span class=\"badge badge-key\">KEY CONCEPT</span></td></tr><tr><td>문장 4</td><td>원리 설명: 손실의 고통 &gt; 이득의 기쁨 (2배)</td><td><span class=\"badge badge-negative\">CORE PRINCIPLE</span></td></tr><tr><td>문장 5</td><td>구체적 예시: $100 잃기 vs $100 찾기</td><td><span class=\"badge badge-neutral\">EXAMPLE</span></td></tr><tr><td>문장 6~7</td><td>적용 사례: 주식 보유, 벌칙 동기부여</td><td><span class=\"badge badge-neutral\">APPLICATION</span></td></tr><tr><td>문장 8</td><td>결론: 전통경제학이 간과하는 심리적 영향</td><td><span class=\"badge badge-negative\">CONCLUSION</span></td></tr></tbody></table></div><div class=\"answer-box\"><h4>✅ 정답: ⑤ Having a $50 bill stolen from their wallet.</h4><p>이 선지는 5개 중 <strong>유일한 &lsquo;손실(LOSS)&rsquo; 시나리오</strong>입니다. 지갑에서 $50를 도난당하는 것은 명백한 금전적 손실이며, 지문에서 &ldquo;the psychological pain of losing something is <strong>twice as powerful</strong> as the pleasure of gaining something of equal value&rdquo;라고 명시했으므로, 손실 시나리오가 이득 시나리오보다 심리적 영향이 훨씬 강합니다.</p></div><div class=\"warning-box\"><h4>❌ 오답: ④ Getting a $50 discount on a purchase. (학생 선택)</h4><p>&lsquo;할인&rsquo;은 소비자 입장에서 <strong>지출이 줄어드는 이득(GAIN)</strong>입니다. &ldquo;할인 = 가격이 깎이는 것&rdquo;이라는 표면적 인상 때문에 &lsquo;손실&rsquo;과 혼동할 수 있지만, 실제로는 원래 지불해야 할 금액보다 적게 내는 것이므로 &lsquo;이득&rsquo;에 해당합니다. 따라서 loss aversion의 적용 대상이 아닙니다.</p></div><div class=\"warning-box\"><h4>❌ 오답: ① Receiving an unexpected gift worth $50.</h4><p>예상치 못한 선물을 받는 것은 명백한 <strong>이득(GAIN)</strong> 시나리오입니다.</p></div><div class=\"warning-box\"><h4>❌ 오답: ② Earning a $50 bonus at work.</h4><p>보너스를 받는 것 역시 <strong>이득(GAIN)</strong> 시나리오입니다.</p></div><div class=\"warning-box\"><h4>❌ 오답: ③ Finding a $50 bill on the street.</h4><p>길에서 돈을 줍는 것은 <strong>이득(GAIN)</strong> 시나리오입니다. 지문의 예시에서도 &ldquo;the happiness of finding $100&rdquo;을 이득의 예로 직접 언급했습니다.</p></div>",
+      "studentAnalysis": {
+        "whyChosen": "④ '할인 받기'를 선택한 이유는, '할인(discount)'이라는 단어가 '가격이 줄어드는 것'이라는 인상을 주기 때문에, 이를 '감소 = 손실'로 잘못 연결했을 가능성이 높습니다. 하지만 할인은 소비자 입장에서 '덜 지출하는 것'이므로 분명한 이득(gain)입니다.",
+        "errorPattern": "표면적 단어 연상 오류 — 'discount(할인)'의 '줄어든다'는 의미를 '손실'로 잘못 연결. 선지를 이득/손실로 먼저 분류하는 단계를 건너뛰고, 단어의 표면적 인상에 의존하여 판단.",
+        "focusPoint": "적용 문제를 풀 때는 반드시 '분류 먼저, 판단 나중' 전략을 사용하세요. 이 문제의 경우: ①②③④는 모두 '돈을 얻는' 시나리오, ⑤만 '돈을 잃는' 시나리오 → loss aversion 원리상 유일한 손실 시나리오(⑤)가 정답."
+      }
+    }
+  ]
+}

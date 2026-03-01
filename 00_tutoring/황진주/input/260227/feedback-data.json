@@ -1,0 +1,316 @@
+{
+  "student": "황진주",
+  "date": "260227",
+  "subject": "문법",
+  "textbook": "자동사 vs 타동사 완벽 정리 (외부 자료)",
+  "range": "개념 학습",
+  "summary": {
+    "totalQ": 0,
+    "wrongQ": 0,
+    "correctRate": "-",
+    "goodPoints": "자동사와 타동사 개념을 외부 자료까지 찾아가며 체계적으로 정리하는 적극적인 학습 태도가 매우 우수합니다. 주요 자동사/타동사 100선을 표로 정리한 것은 효율적인 학습 전략입니다.",
+    "badPoints": "개념 정리 자료만으로는 실전 적용 능력을 확인하기 어렵습니다. 편입영어에서 자주 출제되는 '혼동 동사 쌍'과 '불필요한 전치사 오류' 패턴을 실전 문제로 연습해야 합니다.",
+    "priority": "혼동 동사 쌍(lie/lay, rise/raise) 시제 변화 암기 → 타동사+불필요 전치사 오류 패턴 → 자동사 수동태 불가 원칙",
+    "weakAreas": [
+      { "area": "혼동 동사 쌍", "count": 0, "severity": "high", "note": "lie/lay, rise/raise, sit/set 시제 변화가 편입 단골 출제" },
+      { "area": "타동사 전치사 오류", "count": 0, "severity": "high", "note": "discuss about, mention about, resemble to 등 편입 빈출" },
+      { "area": "자동사 수동태 오류", "count": 0, "severity": "mid", "note": "happen, occur, exist 등은 수동태 불가" }
+    ]
+  },
+  "wrongAnswers": [],
+  "conceptQuestions": [
+    {
+      "title": "자동사 vs 타동사 기본 판별 + 편입 빈출 전치사 오류",
+      "explanation": "<div class=\"concept-box\"><h4>자동사 vs 타동사 핵심 구분법</h4><p><strong>자동사(Intransitive Verb)</strong>: 목적어 없이 주어+동사만으로 완전한 문장. 전치사가 필요할 수 있음.</p><ul><li>She <strong>arrived</strong> at the airport. (arrive + at)</li><li>He <strong>listened</strong> to the music. (listen + to)</li></ul><p><strong>타동사(Transitive Verb)</strong>: 반드시 목적어가 필요. 전치사 없이 바로 목적어.</p><ul><li>She <strong>discussed</strong> the plan. (discuss + 목적어, 전치사 ✕)</li><li>He <strong>mentioned</strong> the problem. (mention + 목적어, 전치사 ✕)</li></ul></div><div class=\"grammar-block\"><h4>편입영어 최빈출 — 타동사인데 전치사를 붙이는 오류</h4><table><thead><tr><th>틀린 표현 ✕</th><th>올바른 표현 ✓</th><th>의미</th></tr></thead><tbody><tr><td>discuss <strong>about</strong></td><td>discuss + 목적어</td><td>~을 토론하다</td></tr><tr><td>mention <strong>about</strong></td><td>mention + 목적어</td><td>~을 언급하다</td></tr><tr><td>resemble <strong>to/with</strong></td><td>resemble + 목적어</td><td>~을 닮다</td></tr><tr><td>enter <strong>into</strong> (장소)</td><td>enter + 목적어</td><td>~에 들어가다</td></tr><tr><td>reach <strong>to/at</strong></td><td>reach + 목적어</td><td>~에 도달하다</td></tr><tr><td>approach <strong>to</strong></td><td>approach + 목적어</td><td>~에 접근하다</td></tr><tr><td>attend <strong>to</strong> (참석)</td><td>attend + 목적어</td><td>~에 참석하다</td></tr><tr><td>marry <strong>with</strong></td><td>marry + 목적어</td><td>~와 결혼하다</td></tr><tr><td>answer <strong>to</strong> (질문)</td><td>answer + 목적어</td><td>~에 답하다</td></tr><tr><td>inhabit <strong>in</strong></td><td>inhabit + 목적어</td><td>~에 거주하다</td></tr></tbody></table></div><div class=\"grammar-block\"><h4>편입영어 최빈출 — 자동사인데 전치사를 빼먹는 오류</h4><table><thead><tr><th>틀린 표현 ✕</th><th>올바른 표현 ✓</th><th>의미</th></tr></thead><tbody><tr><td>arrive + 장소</td><td>arrive <strong>at/in</strong> + 장소</td><td>~에 도착하다</td></tr><tr><td>listen + 목적어</td><td>listen <strong>to</strong> + 목적어</td><td>~을 듣다</td></tr><tr><td>respond + 목적어</td><td>respond <strong>to</strong> + 목적어</td><td>~에 응답하다</td></tr><tr><td>agree + 사람</td><td>agree <strong>with</strong> + 사람</td><td>~에 동의하다</td></tr><tr><td>belong + 사람</td><td>belong <strong>to</strong> + 사람</td><td>~에 속하다</td></tr><tr><td>consist + 요소</td><td>consist <strong>of</strong> + 요소</td><td>~으로 구성되다</td></tr><tr><td>apologize + 사람</td><td>apologize <strong>to</strong> + 사람</td><td>~에게 사과하다</td></tr><tr><td>complain + 내용</td><td>complain <strong>about</strong> + 내용</td><td>~에 대해 불평하다</td></tr><tr><td>object + 내용</td><td>object <strong>to</strong> + 내용</td><td>~에 반대하다</td></tr><tr><td>graduate + 학교</td><td>graduate <strong>from</strong> + 학교</td><td>~을 졸업하다</td></tr></tbody></table></div>",
+      "examples": [
+        "She discussed the issue with her colleagues. (discuss + 목적어, about ✕)",
+        "The children resemble their mother. (resemble + 목적어, to ✕)",
+        "We arrived at the station on time. (arrive + at, 자동사)",
+        "He entered the room quietly. (enter + 목적어, into ✕)",
+        "They agreed with the proposal. (agree + with, 자동사)"
+      ],
+      "exampleSentences": [
+        "그녀는 그 문제를 동료들과 토론했다. → She discussed the issue with her colleagues.",
+        "아이들은 어머니를 닮았다. → The children resemble their mother.",
+        "우리는 제시간에 역에 도착했다. → We arrived at the station on time.",
+        "그는 조용히 방에 들어갔다. → He entered the room quietly.",
+        "그들은 그 제안에 동의했다. → They agreed with the proposal."
+      ],
+      "confusionPoints": "<div class=\"warning-box\"><strong>⚠️ 편입 최다 오답 패턴</strong><p><strong>1. discuss about ✕</strong>: '~에 대해 토론하다'라는 한국어 때문에 about을 붙이고 싶지만, discuss는 타동사!</p><p><strong>2. arrive vs reach</strong>: arrive는 자동사(arrive at), reach는 타동사(reach + 목적어). 둘 다 '도착하다'이지만 문법 구조가 다름!</p><p><strong>3. marry with ✕</strong>: '~와 결혼하다'라서 with가 자연스럽지만, marry는 타동사. 단, be married to는 가능!</p><p><strong>4. attend to ≠ attend</strong>: attend + 목적어 = 참석하다 / attend to + 목적어 = 돌보다, 주의를 기울이다 (의미가 완전히 다름!)</p></div>",
+      "practiceProblems": [
+        {
+          "sentence": "The committee _______ the matter thoroughly at yesterday's meeting.",
+          "choices": ["① discussed about", "② discussed", "③ discussed on", "④ discussed for"],
+          "answer": "②",
+          "explanation": "discuss는 타동사로 목적어를 바로 취한다. 전치사 about/on/for 불필요."
+        },
+        {
+          "sentence": "She _______ her mother in both appearance and personality.",
+          "choices": ["① resembles to", "② resembles with", "③ resembles", "④ is resembled"],
+          "answer": "③",
+          "explanation": "resemble은 타동사로 전치사 없이 목적어를 바로 취한다. 수동태도 불가."
+        },
+        {
+          "sentence": "The train _______ the station five minutes late.",
+          "choices": ["① arrived", "② arrived at", "③ reached at", "④ reached to"],
+          "answer": "②",
+          "explanation": "arrive는 자동사이므로 전치사 at이 필요. reach는 타동사로 전치사 불필요(reached the station)."
+        },
+        {
+          "sentence": "He _______ the classroom without knocking.",
+          "choices": ["① entered into", "② entered in", "③ entered", "④ entered to"],
+          "answer": "③",
+          "explanation": "enter는 타동사로 전치사 없이 목적어를 바로 취한다. enter into는 '계약/협상에 들어가다'라는 다른 의미."
+        },
+        {
+          "sentence": "We should _______ this problem before it gets worse.",
+          "choices": ["① approach to", "② approach for", "③ approach", "④ approach at"],
+          "answer": "③",
+          "explanation": "approach는 타동사로 전치사 없이 목적어를 바로 취한다."
+        },
+        {
+          "sentence": "Did you _______ the conference last week?",
+          "choices": ["① attend to", "② attend at", "③ attend in", "④ attend"],
+          "answer": "④",
+          "explanation": "attend(참석하다)는 타동사. attend to는 '돌보다/주의를 기울이다'로 의미가 다르다."
+        },
+        {
+          "sentence": "She _______ John in a small church ceremony.",
+          "choices": ["① married with", "② married to", "③ married", "④ got married"],
+          "answer": "③",
+          "explanation": "marry는 타동사로 전치사 없이 목적어를 바로 취한다. be/get married to는 가능."
+        },
+        {
+          "sentence": "The students were asked to _______ the teacher's question.",
+          "choices": ["① answer to", "② answer for", "③ answer", "④ answer about"],
+          "answer": "③",
+          "explanation": "answer(질문에 답하다)는 타동사. answer for는 '~에 대해 책임지다'로 의미가 다르다."
+        },
+        {
+          "sentence": "Nobody _______ the fact that he had lied.",
+          "choices": ["① mentioned about", "② mentioned of", "③ mentioned", "④ mentioned on"],
+          "answer": "③",
+          "explanation": "mention은 타동사로 전치사 없이 목적어를 바로 취한다."
+        },
+        {
+          "sentence": "He finally _______ the summit after eight hours of climbing.",
+          "choices": ["① reached to", "② reached at", "③ arrived", "④ reached"],
+          "answer": "④",
+          "explanation": "reach는 타동사로 전치사 없이 목적어를 바로 취한다. arrive는 자동사(arrived at)."
+        },
+        {
+          "sentence": "Many species of birds _______ this island.",
+          "choices": ["① inhabit in", "② inhabit on", "③ inhabit", "④ inhabit at"],
+          "answer": "③",
+          "explanation": "inhabit은 타동사로 전치사 없이 목적어를 바로 취한다."
+        },
+        {
+          "sentence": "She _______ her friend's advice and changed her plan.",
+          "choices": ["① listened", "② listened to", "③ listened at", "④ listened for"],
+          "answer": "②",
+          "explanation": "listen은 자동사로 목적어 앞에 전치사 to가 필요하다."
+        },
+        {
+          "sentence": "The team _______ five members from different departments.",
+          "choices": ["① consists", "② consists of", "③ is consisted of", "④ is consisting of"],
+          "answer": "②",
+          "explanation": "consist of는 자동사구로 수동태 불가. '~으로 구성되다'는 consist of 또는 be composed of."
+        },
+        {
+          "sentence": "I must _______ my teacher for being late.",
+          "choices": ["① apologize", "② apologize to", "③ apologize for", "④ apologize about"],
+          "answer": "②",
+          "explanation": "apologize to + 사람 = ~에게 사과하다. apologize for + 이유 = ~에 대해 사과하다. 여기서는 선생님(사람) 대상."
+        },
+        {
+          "sentence": "The accident _______ at the intersection yesterday.",
+          "choices": ["① was happened", "② was occurred", "③ occurred", "④ had been occurred"],
+          "answer": "③",
+          "explanation": "occur/happen은 자동사로 수동태 불가. '사고가 발생했다'는 능동태만 가능."
+        },
+        {
+          "sentence": "All the books on this shelf _______ the library.",
+          "choices": ["① belong", "② belong to", "③ are belonged to", "④ are belonging to"],
+          "answer": "②",
+          "explanation": "belong to는 자동사구로 수동태 불가, 진행형 불가(상태동사)."
+        },
+        {
+          "sentence": "She _______ her university with honors in 2024.",
+          "choices": ["① graduated", "② graduated from", "③ was graduated", "④ graduated at"],
+          "answer": "②",
+          "explanation": "graduate from + 학교 = ~을 졸업하다. graduate는 자동사로 전치사 from 필요."
+        },
+        {
+          "sentence": "The manager _______ several customers about the product recall.",
+          "choices": ["① contacted to", "② contacted with", "③ contacted", "④ made contact"],
+          "answer": "③",
+          "explanation": "contact은 타동사로 전치사 없이 목적어를 바로 취한다."
+        },
+        {
+          "sentence": "Many people _______ the new policy proposed by the government.",
+          "choices": ["① objected", "② objected to", "③ objected about", "④ objected for"],
+          "answer": "②",
+          "explanation": "object to = ~에 반대하다. object는 자동사로 전치사 to가 필요."
+        },
+        {
+          "sentence": "The survivors could not _______ such a terrible disaster.",
+          "choices": ["① recover", "② recover from", "③ recover of", "④ be recovered from"],
+          "answer": "②",
+          "explanation": "recover from = ~에서 회복하다. recover는 자동사로 전치사 from 필요."
+        }
+      ]
+    },
+    {
+      "title": "혼동 동사 쌍: lie/lay, rise/raise, sit/set",
+      "explanation": "<div class=\"concept-box\"><h4>편입영어 최다 출제 — 혼동 동사 쌍</h4><p>자동사/타동사가 형태만 비슷하고 의미와 시제 변화가 완전히 다른 동사 쌍입니다.</p></div><div class=\"grammar-block\"><h4>핵심 비교표</h4><table><thead><tr><th>구분</th><th>동사</th><th>의미</th><th>현재</th><th>과거</th><th>과거분사</th><th>~ing</th></tr></thead><tbody><tr><td><strong>자동사</strong></td><td>lie</td><td>눕다, 놓여있다</td><td>lie</td><td><strong>lay</strong></td><td><strong>lain</strong></td><td>lying</td></tr><tr><td><strong>타동사</strong></td><td>lay</td><td>~을 놓다, 눕히다</td><td>lay</td><td><strong>laid</strong></td><td><strong>laid</strong></td><td>laying</td></tr><tr><td><strong>자동사</strong></td><td>rise</td><td>오르다, 일어나다</td><td>rise</td><td><strong>rose</strong></td><td><strong>risen</strong></td><td>rising</td></tr><tr><td><strong>타동사</strong></td><td>raise</td><td>~을 올리다, 기르다</td><td>raise</td><td><strong>raised</strong></td><td><strong>raised</strong></td><td>raising</td></tr><tr><td><strong>자동사</strong></td><td>sit</td><td>앉다</td><td>sit</td><td><strong>sat</strong></td><td><strong>sat</strong></td><td>sitting</td></tr><tr><td><strong>타동사</strong></td><td>set</td><td>~을 놓다, 설정하다</td><td>set</td><td><strong>set</strong></td><td><strong>set</strong></td><td>setting</td></tr><tr><td><strong>자동사</strong></td><td>fall</td><td>떨어지다</td><td>fall</td><td><strong>fell</strong></td><td><strong>fallen</strong></td><td>falling</td></tr><tr><td><strong>타동사</strong></td><td>fell</td><td>~을 베다(나무)</td><td>fell</td><td><strong>felled</strong></td><td><strong>felled</strong></td><td>felling</td></tr></tbody></table></div><div class=\"tip-box\"><strong>💡 암기 TIP — lie vs lay 완벽 구분법</strong><p><strong>lie(자동사)</strong>: 주어가 <em>스스로</em> 눕는 것 → 목적어 없음<br>• I <strong>lay</strong> on the bed yesterday. (과거형 lay — 자동사 lie의 과거!)</p><p><strong>lay(타동사)</strong>: 누군가가 <em>무언가를</em> 눕히는 것 → 목적어 있음<br>• She <strong>laid</strong> the baby on the bed. (과거형 laid — 타동사 lay의 과거)</p><p><strong>핵심</strong>: 목적어가 있으면 lay(laid-laid), 없으면 lie(lay-lain)</p></div>",
+      "examples": [
+        "The book lies on the table. (자동사 lie: 놓여있다, 목적어 없음)",
+        "She laid the book on the table. (타동사 lay: ~을 놓다, 목적어 있음)",
+        "The sun rises in the east. (자동사 rise: 오르다, 목적어 없음)",
+        "He raised his hand to ask a question. (타동사 raise: ~을 올리다, 목적어 있음)",
+        "Please sit down here. (자동사 sit: 앉다, 목적어 없음)",
+        "She set the vase on the shelf. (타동사 set: ~을 놓다, 목적어 있음)"
+      ],
+      "exampleSentences": [
+        "그는 어젯밤 소파에 누워있었다. → He lay on the sofa last night. (lie-lay-lain)",
+        "그녀는 아기를 침대에 눕혔다. → She laid the baby on the bed. (lay-laid-laid)",
+        "물가가 급격히 올랐다. → Prices rose sharply. (rise-rose-risen)",
+        "정부가 세금을 올렸다. → The government raised taxes. (raise-raised-raised)",
+        "나뭇잎들이 땅에 떨어졌다. → Leaves fell to the ground. (fall-fell-fallen)"
+      ],
+      "confusionPoints": "<div class=\"warning-box\"><strong>⚠️ 최대 함정 — lie의 과거형 lay ≠ 타동사 lay</strong><p>편입영어에서 가장 많이 틀리는 포인트입니다!</p><ul><li><strong>lie(자동사, 눕다)</strong>의 과거형 = <strong>lay</strong></li><li><strong>lay(타동사, 놓다)</strong>의 현재형 = <strong>lay</strong></li></ul><p>즉, <strong>lay</strong>라는 단어를 보면 두 가지 가능성이 있습니다:</p><ol><li>자동사 lie의 <strong>과거형</strong> → 목적어 없음 (He <strong>lay</strong> on the bed.)</li><li>타동사 lay의 <strong>현재형</strong> → 목적어 있음 (Please <strong>lay</strong> the book here.)</li></ol><p><strong>판별법</strong>: 뒤에 목적어가 있는지 확인!</p></div>",
+      "practiceProblems": [
+        {
+          "sentence": "The cat _______ on the sofa all afternoon yesterday.",
+          "choices": ["① laid", "② lied", "③ lay", "④ lain"],
+          "answer": "③",
+          "explanation": "자동사 lie(눕다)의 과거형은 lay. 목적어 없이 '소파 위에 누워있었다'이므로 자동사."
+        },
+        {
+          "sentence": "She carefully _______ the flowers on the table.",
+          "choices": ["① lay", "② laid", "③ lied", "④ lain"],
+          "answer": "②",
+          "explanation": "타동사 lay(놓다)의 과거형은 laid. the flowers라는 목적어가 있으므로 타동사."
+        },
+        {
+          "sentence": "The sun _______ above the horizon at 6 a.m. this morning.",
+          "choices": ["① raised", "② risen", "③ rose", "④ was risen"],
+          "answer": "③",
+          "explanation": "자동사 rise(오르다)의 과거형은 rose. 태양이 스스로 뜨는 것이므로 자동사."
+        },
+        {
+          "sentence": "The company _______ employees' salaries by 5% last year.",
+          "choices": ["① rose", "② risen", "③ raised", "④ was raised"],
+          "answer": "③",
+          "explanation": "타동사 raise(올리다)의 과거형은 raised. employees' salaries라는 목적어가 있으므로 타동사."
+        },
+        {
+          "sentence": "The dog has been _______ by the fireplace since morning.",
+          "choices": ["① laying", "② lying", "③ lieing", "④ lain"],
+          "answer": "②",
+          "explanation": "자동사 lie(눕다)의 현재분사는 lying. 목적어 없이 '벽난로 옆에 누워있는' 상태이므로 자동사."
+        },
+        {
+          "sentence": "The workers are _______ the foundation for the new building.",
+          "choices": ["① lying", "② laying", "③ lain", "④ lieing"],
+          "answer": "②",
+          "explanation": "타동사 lay(놓다)의 현재분사는 laying. the foundation이라는 목적어가 있으므로 타동사."
+        },
+        {
+          "sentence": "Gas prices have _______ significantly over the past month.",
+          "choices": ["① raised", "② rose", "③ risen", "④ been rising"],
+          "answer": "③",
+          "explanation": "have + 과거분사 = 현재완료. 자동사 rise의 과거분사는 risen. 가격이 스스로 오른 것."
+        },
+        {
+          "sentence": "The teacher asked the students to _______ their hands.",
+          "choices": ["① rise", "② raise", "③ risen", "④ arose"],
+          "answer": "②",
+          "explanation": "타동사 raise(올리다) + their hands(목적어). 학생들이 손을 드는 행위."
+        },
+        {
+          "sentence": "Please _______ down and make yourself comfortable.",
+          "choices": ["① set", "② seat", "③ sit", "④ sat"],
+          "answer": "③",
+          "explanation": "자동사 sit(앉다). 스스로 앉는 행위이므로 자동사. set은 타동사(~을 놓다)."
+        },
+        {
+          "sentence": "She _______ the alarm for 6 o'clock every morning.",
+          "choices": ["① sits", "② sets", "③ sat", "④ seat"],
+          "answer": "②",
+          "explanation": "타동사 set(설정하다) + the alarm(목적어). 알람을 맞추는 행위."
+        },
+        {
+          "sentence": "The letter had _______ unopened on the desk for weeks.",
+          "choices": ["① laid", "② lay", "③ lain", "④ lied"],
+          "answer": "③",
+          "explanation": "had + 과거분사 = 과거완료. 자동사 lie(놓여있다)의 과거분사는 lain. 편지가 스스로 놓여있는 상태."
+        },
+        {
+          "sentence": "The hens _______ three eggs yesterday.",
+          "choices": ["① lay", "② laid", "③ lied", "④ lain"],
+          "answer": "②",
+          "explanation": "타동사 lay(낳다/놓다)의 과거형은 laid. three eggs라는 목적어가 있으므로 타동사."
+        },
+        {
+          "sentence": "A thick fog _______ over the valley when we arrived.",
+          "choices": ["① laid", "② lain", "③ lay", "④ was laying"],
+          "answer": "③",
+          "explanation": "자동사 lie(위치하다)의 과거형은 lay. 안개가 스스로 계곡 위에 깔려있는 상태."
+        },
+        {
+          "sentence": "The level of the river has _______ by two meters since last week.",
+          "choices": ["① raised", "② risen", "③ rose", "④ been raised"],
+          "answer": "②",
+          "explanation": "has + 과거분사 = 현재완료. 자동사 rise의 과거분사는 risen. 수위가 스스로 올라간 것."
+        },
+        {
+          "sentence": "They _______ the flag at dawn every day.",
+          "choices": ["① rise", "② raise", "③ arise", "④ risen"],
+          "answer": "②",
+          "explanation": "타동사 raise(올리다) + the flag(목적어). 국기를 게양하는 행위."
+        },
+        {
+          "sentence": "She was _______ the baby gently in the crib when I walked in.",
+          "choices": ["① lying", "② laying", "③ lain", "④ lied"],
+          "answer": "②",
+          "explanation": "was + ~ing = 과거진행형. 타동사 lay(눕히다)의 ~ing형은 laying. the baby(목적어)가 있으므로 타동사."
+        },
+        {
+          "sentence": "Temperatures _______ to 40 degrees during the heatwave.",
+          "choices": ["① raised", "② rose", "③ risen", "④ were risen"],
+          "answer": "②",
+          "explanation": "자동사 rise(오르다)의 과거형은 rose. 온도가 스스로 올라간 것이므로 자동사."
+        },
+        {
+          "sentence": "He _______ the heavy box on the shelf with great effort.",
+          "choices": ["① set", "② sat", "③ sit", "④ seat"],
+          "answer": "①",
+          "explanation": "타동사 set(놓다)의 과거형은 set(불변). the heavy box(목적어)가 있으므로 타동사."
+        },
+        {
+          "sentence": "Several important issues _______ during the meeting yesterday.",
+          "choices": ["① raised", "② rose", "③ arose", "④ were risen"],
+          "answer": "③",
+          "explanation": "자동사 arise(발생하다)의 과거형은 arose. 이슈가 스스로 발생한 것이므로 자동사."
+        },
+        {
+          "sentence": "The old man _______ on the bench and watched the sunset.",
+          "choices": ["① set", "② sat", "③ sit", "④ seated"],
+          "answer": "②",
+          "explanation": "자동사 sit(앉다)의 과거형은 sat. 스스로 앉은 행위이므로 자동사."
+        }
+      ]
+    }
+  ],
+  "grammarTopics": [
+    {
+      "title": "자동사의 수동태 불가 원칙",
+      "content": "<div class=\"concept-box\"><h4>자동사는 수동태로 쓸 수 없다</h4><p>수동태(be + p.p.)는 목적어를 주어로 바꾸는 구조이므로, <strong>목적어가 없는 자동사는 수동태 불가</strong>입니다.</p></div><div class=\"grammar-block\"><h4>편입 빈출 — 수동태 불가 자동사</h4><table><thead><tr><th>틀린 표현 ✕</th><th>올바른 표현 ✓</th></tr></thead><tbody><tr><td>The accident <strong>was happened</strong>.</td><td>The accident <strong>happened</strong>.</td></tr><tr><td>A problem <strong>was occurred</strong>.</td><td>A problem <strong>occurred</strong>.</td></tr><tr><td>Dinosaurs <strong>were disappeared</strong>.</td><td>Dinosaurs <strong>disappeared</strong>.</td></tr><tr><td>The situation <strong>was existed</strong>.</td><td>The situation <strong>existed</strong>.</td></tr><tr><td>She <strong>was belonged</strong> to the club.</td><td>She <strong>belonged</strong> to the club.</td></tr><tr><td>The team <strong>was consisted</strong> of five.</td><td>The team <strong>consisted</strong> of five.</td></tr></tbody></table></div><div class=\"tip-box\"><strong>💡 판별 TIP</strong><p>'~되다'로 해석된다고 무조건 수동태가 아닙니다!<br><strong>happen, occur, take place, break out, consist of, belong to, emerge, appear, disappear, exist, remain, arise</strong><br>→ 모두 자동사이므로 능동태만 사용!</p></div>"
+    },
+    {
+      "title": "편입 실전 — 자동사/타동사 구별이 핵심인 동사들",
+      "content": "<div class=\"concept-box\"><h4>같은 뜻, 다른 문법 — 짝꿍 동사 정리</h4><p>같은 의미인데 자동사/타동사가 다른 동사들. 편입에서 정확히 구별해야 합니다.</p></div><div class=\"grammar-block\"><table><thead><tr><th>의미</th><th>자동사 (전치사 필요)</th><th>타동사 (전치사 불필요)</th></tr></thead><tbody><tr><td>도착하다</td><td>arrive <strong>at/in</strong></td><td>reach + 목적어</td></tr><tr><td>~에 답하다</td><td>respond <strong>to</strong></td><td>answer + 목적어</td></tr><tr><td>설명하다</td><td>account <strong>for</strong></td><td>explain + 목적어</td></tr><tr><td>말하다</td><td>talk <strong>about</strong></td><td>discuss + 목적어</td></tr><tr><td>들어가다</td><td>go <strong>into</strong></td><td>enter + 목적어</td></tr><tr><td>~에 참석하다</td><td>participate <strong>in</strong></td><td>attend + 목적어</td></tr><tr><td>~에 접근하다</td><td>come close <strong>to</strong></td><td>approach + 목적어</td></tr></tbody></table></div><div class=\"warning-box\"><strong>⚠️ 실전 팁</strong><p>편입 시험에서는 <strong>\"전치사 유무\"</strong>만으로 정답이 갈리는 문제가 매년 출제됩니다. 위 표를 완벽히 암기하세요!</p></div>"
+    }
+  ]
+}

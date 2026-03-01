@@ -1,0 +1,117 @@
+{
+  "student": "조근영",
+  "date": "260225",
+  "subject": "문법",
+  "textbook": "",
+  "range": "",
+  "answers": [
+    {
+      "questionNo": "105",
+      "studentAnswer": "⑤",
+      "correctAnswer": "?",
+      "isCorrect": null,
+      "imageFile": "조근영_260225_01.jpg",
+      "verified": false,
+      "conflict": true,
+      "allMarks": {
+        "1": "none",
+        "2": "none",
+        "3": "none",
+        "4": "none",
+        "5": "circle"
+      },
+      "usedColorSep": true,
+      "pass1": "⑤",
+      "pass2": "①"
+    },
+    {
+      "questionNo": "106",
+      "studentAnswer": "③",
+      "correctAnswer": "?",
+      "isCorrect": null,
+      "imageFile": "조근영_260225_01.jpg",
+      "verified": false,
+      "conflict": true,
+      "allMarks": {
+        "1": "none",
+        "2": "none",
+        "3": "circle",
+        "4": "none"
+      },
+      "usedColorSep": true,
+      "pass1": "③",
+      "pass2": "①"
+    },
+    {
+      "questionNo": "119",
+      "studentAnswer": "1",
+      "correctAnswer": "1",
+      "isCorrect": true,
+      "imageFile": "조근영_260225_02.jpg",
+      "verified": null,
+      "conflict": null,
+      "allMarks": {
+        "1": "black_check",
+        "2": "none",
+        "3": "none",
+        "4": "none",
+        "5": "none"
+      },
+      "usedColorSep": false,
+      "pass1": "1",
+      "pass2": null,
+      "reasoning": "The sentence indicates that 'a full scholarship' was given to the student, which implies a passive voice. Option (1) 'was given' is the correct past tense passive form."
+    },
+    {
+      "questionNo": "120",
+      "studentAnswer": "1",
+      "correctAnswer": "1",
+      "isCorrect": true,
+      "imageFile": "조근영_260225_02.jpg",
+      "verified": null,
+      "conflict": null,
+      "allMarks": {
+        "1": "black_check",
+        "2": "none",
+        "3": "none",
+        "4": "none",
+        "5": "none"
+      },
+      "usedColorSep": false,
+      "pass1": "1",
+      "pass2": null,
+      "reasoning": "The sentence implies that his plan is now 'considered' a stroke of genius. Option (1) 'considered' correctly completes the sentence with a past participle, indicating that the plan is viewed as a stroke of genius. The word 'now' implies that currently or in the present time the plan is being seen this way. Therefore, you need the passive voice version of 현재."
+    },
+    {
+      "questionNo": "136",
+      "studentAnswer": "⑤",
+      "correctAnswer": "?",
+      "isCorrect": null,
+      "imageFile": "조근영_260225_03.png",
+      "verified": null,
+      "conflict": null,
+      "allMarks": {
+        "1": "none",
+        "2": "none",
+        "3": "none",
+        "4": "none",
+        "5": "circle"
+      },
+      "usedColorSep": true,
+      "pass1": "⑤",
+      "pass2": null
+    }
+  ],
+  "extractedAt": "2026-02-28T16:05:33.794Z",
+  "imageCount": 3,
+  "version": 4,
+  "method": "color-separation-2pass",
+  "stats": {
+    "total": 5,
+    "correct": 2,
+    "wrong": 0,
+    "unknown": 3,
+    "verified": 0,
+    "conflicts": 2
+  }
+}

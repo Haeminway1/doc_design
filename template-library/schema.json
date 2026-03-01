@@ -1,0 +1,216 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "FeedbackSheet",
+  "description": "피드백지 JSON 입력 스키마 v1.0",
+  "type": "object",
+  "required": ["student", "meta", "summary", "problems", "themes", "analysis"],
+  "properties": {
+    "student": {
+      "type": "object",
+      "required": ["name", "date"],
+      "properties": {
+        "name":       { "type": "string", "description": "학생 이름" },
+        "date":       { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$", "description": "수업 날짜 YYYY-MM-DD" },
+        "sessionNum": { "type": "number", "description": "수업 회차" }
+      }
+    },
+    "meta": {
+      "type": "object",
+      "required": ["types", "totalProblems", "wrongCount"],
+      "properties": {
+        "types": {
+          "type": "array",
+          "items": { "type": "string", "enum": ["독해", "문법", "구문독해", "논리"] },
+          "minItems": 1,
+          "description": "피드백지에 포함된 과목 유형"
+        },
+        "totalProblems": { "type": "number", "description": "총 문제 수" },
+        "wrongCount":    { "type": "number", "description": "오답 문제 수" },
+        "textbook":      { "type": "string", "description": "교재명" },
+        "scope":         { "type": "string", "description": "학습 범위 (예: Chapter 2, p.40-60)" }
+      }
+    },
+    "summary": {
+      "type": "object",
+      "required": ["goodPoints", "weakPoints"],
+      "properties": {
+        "correctRate": { "type": "string", "description": "정답률 (예: 85%)" },
+        "goodPoints":  { "type": "array", "items": { "type": "string" }, "description": "잘한 점 목록" },
+        "weakPoints":  { "type": "array", "items": { "type": "string" }, "description": "아쉬운 점 목록" },
+        "weakAreas": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["area", "severity", "detail"],
+            "properties": {
+              "area":     { "type": "string" },
+              "severity": { "type": "string", "enum": ["high", "mid", "low"] },
+              "detail":   { "type": "string" }
+            }
+          }
+        },
+        "priorities": { "type": "array", "items": { "type": "string" }, "description": "학습 우선순위" }
+      }
+    },
+    "problems": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["num", "category", "location", "correctAnswer"],
+        "properties": {
+          "num":           { "type": "number" },
+          "category":      { "type": "string", "enum": ["reading", "grammar", "syntax", "logic"] },
+          "location":      { "type": "string", "description": "출처 (예: p.42 Q3)" },
+          "question":      { "type": "string" },
+          "studentAnswer": { "type": "string" },
+          "correctAnswer": { "type": "string" },
+          "errorType":     { "type": "string", "description": "오류 유형 (예: 개념 혼동, 반전 함정)" },
+          "theme":         { "type": "string", "description": "속하는 테마 ID (A|B|C...)" }
+        }
+      }
+    },
+    "themes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "category", "problemNums"],
+        "properties": {
+          "id":          { "type": "string", "description": "테마 ID (A, B, C...)" },
+          "title":       { "type": "string", "description": "테마 제목" },
+          "category":    { "type": "string", "enum": ["reading", "grammar", "syntax", "logic"] },
+          "problemNums": { "type": "array", "items": { "type": "number" } },
+          "concept":     { "type": "string", "description": "concept-box 내용" },
+          "sections": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["heading", "type", "content"],
+              "properties": {
+                "heading": { "type": "string" },
+                "type":    { "type": "string", "enum": ["concept", "grammar-block", "table", "comparison", "flowchart", "warning", "tip"] },
+                "content": { "type": "string", "description": "HTML 콘텐츠" }
+              }
+            }
+          },
+          "wrongAnalysis": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["problemNum", "description"],
+              "properties": {
+                "problemNum":  { "type": "number" },
+                "description": { "type": "string" },
+                "analysis":    { "type": "string" },
+                "studentAnalysis": {
+                  "type": "object",
+                  "required": ["whyChosen", "errorPattern", "focusPoint"],
+                  "properties": {
+                    "whyChosen":    { "type": "string", "description": "왜 이 답을 골랐을까" },
+                    "errorPattern": { "type": "string", "description": "오류 패턴" },
+                    "focusPoint":   { "type": "string", "description": "집중 포인트" }
+                  }
+                }
+              }
+            }
+          },
+          "readingAnalysis": {
+            "type": "object",
+            "description": "독해 전용 5단계 분석",
+            "required": ["summary", "fullTranslation", "keywords", "structure", "choiceAnalysis"],
+            "properties": {
+              "summary":         { "type": "string", "description": "한줄 요약" },
+              "fullTranslation": { "type": "string", "description": "전체 해석" },
+              "keywords": {
+                "type": "object",
+                "properties": {
+                  "core":     { "type": "string", "description": "핵심 표현/키워드" },
+                  "positive": { "type": "string", "description": "정답 방향(Positive) 표현" },
+                  "negative": { "type": "string", "description": "반대 방향(Negative) 표현" }
+                }
+              },
+              "structure": {
+                "type": "object",
+                "properties": {
+                  "direction": { "type": "string", "description": "POSITIVE | NEGATIVE | POSITIVE→NEGATIVE" },
+                  "type":      { "type": "string", "description": "비교-대조 | 원인-결과 | 시간순 | 문제-해결" },
+                  "steps": {
+                    "type": "array",
+                    "items": {
+                      "type": "object",
+                      "properties": {
+                        "stage":   { "type": "string" },
+                        "content": { "type": "string" }
+                      }
+                    }
+                  }
+                }
+              },
+              "choiceAnalysis": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "required": ["num", "correct", "text"],
+                  "properties": {
+                    "num":            { "type": "string", "description": "①②③④⑤" },
+                    "correct":        { "type": "boolean" },
+                    "text":           { "type": "string", "description": "선지 텍스트" },
+                    "evidence":       { "type": "string", "description": "근거 문장" },
+                    "interpretation": { "type": "string", "description": "해석" },
+                    "point":          { "type": "string", "description": "포인트" }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "practices": {
+      "type": "array",
+      "description": "연습문제 세트 (독해 제외)",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "questions", "answers"],
+        "properties": {
+          "id":          { "type": "string" },
+          "title":       { "type": "string" },
+          "instruction": { "type": "string" },
+          "questions": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["num", "text"],
+              "properties": {
+                "num":     { "type": "number" },
+                "text":    { "type": "string" },
+                "choices": { "type": "array", "items": { "type": "string" } }
+              }
+            }
+          },
+          "answers": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": ["num", "answer"],
+              "properties": {
+                "num":         { "type": "number" },
+                "answer":      { "type": "string" },
+                "explanation": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    },
+    "analysis": {
+      "type": "object",
+      "required": ["encouragement"],
+      "properties": {
+        "weakPoints":    { "type": "array", "items": { "type": "string" } },
+        "strongPoints":  { "type": "array", "items": { "type": "string" } },
+        "encouragement": { "type": "string" },
+        "nextFocus":     { "type": "string" }
+      }
+    }
+  }
+}

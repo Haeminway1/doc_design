@@ -1,0 +1,2591 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <!-- =================================================================== -->
+    <!-- 문서 기본 설정                                                        -->
+    <!-- =================================================================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vera's Flavor 편입영어 문법 - Bridge 편 part 2-7</title>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    
+    <!-- =================================================================== -->
+    <!-- CSS 스타일: 교재의 전체 디자인을 정의합니다.                         -->
+    <!-- =================================================================== -->
+    <style>
+        /* --- 기본 페이지 및 폰트 설정 --- */
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background: #e8e9eb; /* 페이지 외부 배경색 */
+            counter-reset: page; /* 자동 페이지 번호 카운터 초기화 */
+        }
+        .eng-text { font-family: 'Inter', sans-serif; }
+        .serif-text { font-family: 'Playfair Display', serif; }
+        .bold-text { font-weight: 700; }
+
+        /* --- 색상 변수 (표지 이미지 기반) --- */
+        :root {
+            --color-sea-blue: #6C96C6;      /* 바다색 */
+            --color-deep-blue: #345C85;     /* 깊은 바다색 */
+            --color-sandy-beige: #F2C994;   /* 모래색 */
+            --color-warm-orange: #E9A266;   /* 고양이색 */
+            --color-text-dark: #3D4852;     /* 기본 텍스트 색상 */
+            --color-text-light: #718096;    /* 보조 텍스트 색상 */
+            --color-bg-light: #FDFBF6;      /* 밝은 배경색 */
+            --color-border: #EAEAEA;        /* 테두리 색상 */
+        }
+
+        /* --- A4 페이지 레이아웃 --- */
+        .page {
+            width: 210mm;
+            height: 297mm;
+            margin: 10mm auto;
+            padding: 15mm 18mm;
+            background: white;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            page-break-after: always;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        .page:last-child {
+            page-break-after: avoid;
+        }
+        .page-content {
+            flex-grow: 1;
+            overflow: hidden;
+            font-size: 11pt;
+            line-height: 1.8;
+            color: var(--color-text-dark);
+        }
+
+        /* --- 페이지 헤더 & 푸터 --- */
+        .page-header, .page-footer {
+            width: 100%;
+            flex-shrink: 0;
+            font-size: 9pt;
+            color: var(--color-text-light);
+            font-family: 'Inter', sans-serif;
+        }
+        .page-header {
+            border-bottom: 1px solid var(--color-border);
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            color: var(--color-deep-blue);
+            font-weight: 500;
+        }
+        .page-footer {
+            border-top: 1px solid var(--color-border);
+            padding-top: 8px;
+            margin-top: 12px;
+            text-align: center;
+        }
+        
+        /* 자동 페이지 번호 생성 */
+        .page-footer::after {
+            counter-increment: page;
+            content: counter(page);
+        }
+        
+        /* 특정 페이지 헤더/푸터 숨기기 */
+        .no-header-footer { padding: 0; }
+        .no-header-footer .page-header,
+        .no-header-footer .page-footer,
+        .cover-page .page-footer::after,
+        .part-intro-page .page-footer::after,
+        .toc-page .page-header,
+        .chapter-page .page-header {
+            display: none;
+        }
+        .part-intro-page .page-header,
+        .part-intro-page .page-footer {
+            border: none;
+        }
+
+        /* =================================================================== */
+        /* 세련된 표지 디자인 (2025 트렌드)                                    */
+        /* =================================================================== */
+        .cover-page {
+            color: white;
+            overflow: hidden;
+            background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 50%, #0369a1 100%);
+            background-image: url('../../background/backgroundGMBR.png'); /* 이미지 경로 수정 필요 */
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: soft-light;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .cover-text-box {
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, 0.9);
+            padding: 25mm 30mm 20mm 30mm;
+            border-radius: 0;
+            text-align: center;
+            color: white;
+            max-width: 150mm;
+            position: relative;
+            backdrop-filter: blur(8px);
+            -webkit-backdrop-filter: blur(8px);
+            margin-bottom: 20mm;
+        }
+
+        .cover-text-box .cover-prefix {
+            font-family: 'Inter', sans-serif;
+            font-size: 18pt;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 8mm;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .cover-text-box .cover-main-title {
+            font-family: 'Inter', sans-serif;
+            font-size: 48pt;
+            font-weight: 800;
+            line-height: 0.95;
+            margin-bottom: 8mm;
+            color: white;
+            letter-spacing: -1px;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .cover-text-box .cover-edition {
+            font-family: 'Inter', sans-serif;
+            font-size: 16pt;
+            font-weight: 600;
+            color: #fbbf24; /* 밝은 포인트 색상 (골드) */
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+        }
+
+        .cover-footer {
+            position: absolute;
+            bottom: 15mm;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+            font-size: 11pt;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.9);
+            text-shadow: 0 1px 3px rgba(0,0,0,0.2);
+            letter-spacing: 0.5px;
+        }
+
+        .cover-text-box::before {
+            content: '';
+            position: absolute;
+            top: 15mm;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40mm;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent);
+        }
+
+        .cover-text-box::after {
+            content: '';
+            position: absolute;
+            bottom: 35mm;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 25mm;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #fbbf24, transparent);
+        }
+
+
+        /* =================================================================== */
+        /* 목차 (TOC) 페이지 스타일                                            */
+        /* =================================================================== */
+        .toc-header { 
+            font-family: 'Inter', sans-serif; 
+            font-size: 20pt; 
+            font-weight: 700; 
+            color: var(--color-deep-blue); 
+            margin-bottom: 20px; 
+            padding-bottom: 10px; 
+            border-bottom: 2px solid var(--color-sea-blue); 
+            text-align: center;
+            letter-spacing: 2px;
+        }
+        .toc-list { 
+            list-style: none; 
+            padding-left: 0; 
+            font-size: 11pt; 
+            line-height: 2.5; 
+        }
+        .toc-item { 
+            display: flex; 
+            align-items: baseline; 
+            margin-bottom: 8px; 
+            border-bottom: 1px solid var(--color-border);
+            padding-bottom: 8px;
+        }
+        .toc-item .title { 
+            order: 1; 
+            white-space: nowrap; 
+            padding-right: 8px;
+            color: var(--color-text-dark);
+        }
+        .toc-item .title b {
+            color: var(--color-deep-blue);
+            font-weight: 700;
+        }
+        .toc-item .dots { 
+            order: 2; 
+            flex-grow: 1; 
+            border-bottom: 1px dotted var(--color-text-light); 
+            position: relative; 
+            top: -4px; 
+        }
+        .toc-item .page-num { 
+            order: 3; 
+            padding-left: 8px; 
+            font-family: 'Inter', sans-serif; 
+            font-weight: 600;
+            color: var(--color-sea-blue);
+        }
+        .toc-part-title { 
+            font-family: 'Inter', sans-serif; 
+            font-size: 14pt; 
+            font-weight: 700; 
+            color: var(--color-warm-orange); 
+            margin-top: 25px; 
+            margin-bottom: 10px; 
+            border-left: 4px solid var(--color-sandy-beige); 
+            padding-left: 12px; 
+        }
+
+        /* =================================================================== */
+        /* 파트 소개 페이지 스타일                                               */
+        /* =================================================================== */
+        .part-intro-page {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .part-intro-container {
+            padding: 20mm;
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            background-color: var(--color-bg-light);
+            max-width: 170mm;
+            text-align: center;
+        }
+        .part-intro-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 24pt;
+            color: var(--color-sandy-beige);
+            margin-bottom: 10px;
+        }
+        .part-intro-title {
+            font-size: 36pt;
+            font-weight: 900;
+            color: var(--color-deep-blue);
+            margin-bottom: 15px;
+        }
+        .part-intro-subtitle {
+            font-family: 'Inter', sans-serif;
+            font-size: 14pt;
+            color: var(--color-sea-blue);
+            margin-bottom: 20px;
+        }
+        .part-intro-divider {
+            width: 80px;
+            height: 3px;
+            background-color: var(--color-warm-orange);
+            margin: 0 auto 20px auto;
+            border: none;
+        }
+        .part-intro-description {
+            max-width: 140mm;
+            font-size: 11pt;
+            line-height: 1.9;
+            color: var(--color-text-dark);
+            text-align: justify;
+            margin: 0 auto;
+        }
+
+        /* =================================================================== */
+        /* 본문 콘텐츠 스타일                                                  */
+        /* =================================================================== */
+        .part-header { 
+            color: white; 
+            margin: 0 0 25px 0; 
+            padding: 15px 20px; 
+            font-size: 18pt; 
+            font-weight: 700; 
+            display: flex; 
+            align-items: center; 
+            background: linear-gradient(135deg, var(--color-deep-blue), var(--color-sea-blue)); 
+            border-radius: 8px; 
+            box-shadow: 0 4px 15px rgba(52, 92, 133, 0.2);
+        }
+        .part-number { 
+            font-family: 'Inter', sans-serif;
+            background: rgba(255,255,255,0.15); 
+            padding: 8px 14px; 
+            border-radius: 6px; 
+            font-weight: 700; 
+            font-size: 12pt;
+            min-width: 60px; 
+            text-align: center; 
+            margin-right: 15px; 
+        }
+        .section-title { 
+            font-family: 'Inter', sans-serif; 
+            font-size: 14pt; 
+            font-weight: 700; 
+            color: var(--color-deep-blue); 
+            margin: 25px 0 15px 0; 
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--color-sandy-beige);
+        }
+        .section-title .emoji { margin-right: 10px; }
+        .first-in-page { margin-top: 0; }
+        .content-paragraph { margin-bottom: 12px; }
+        
+        .grammar-table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin: 20px 0; 
+            font-size: 10.5pt; 
+        }
+        .grammar-table th, .grammar-table td { 
+            border: 1px solid var(--color-border); 
+            padding: 10px 12px; 
+            text-align: left; 
+            vertical-align: top;
+        }
+        .grammar-table th { 
+            background-color: var(--color-bg-light); 
+            font-weight: 700; 
+            color: var(--color-deep-blue); 
+        }
+        .grammar-table td code {
+            font-family: 'Inter', sans-serif;
+            background-color: #e8e9eb;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-size: 9.5pt;
+        }
+        
+        /* 특정 테이블 전용 스타일 */
+        .comparison-table th:first-child,
+        .comparison-table td:first-child {
+            width: 22%;
+            white-space: nowrap;
+        }
+
+        code {
+            font-family: 'Inter', sans-serif;
+            color: var(--color-deep-blue);
+            background-color: #f2f4f8;
+            border: 1px solid var(--color-border);
+            padding: 2px 6px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+        
+        .tip-box { 
+            background: var(--color-bg-light); 
+            border: 1px solid var(--color-sandy-beige); 
+            border-left: 5px solid var(--color-warm-orange); 
+            border-radius: 0 6px 6px 0; 
+            padding: 15px 20px; 
+            margin: 20px 0; 
+            font-size: 10.5pt; 
+        }
+        .tip-box-title { 
+            font-weight: 700; 
+            color: var(--color-warm-orange); 
+            margin-bottom: 8px; 
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .example-list {
+            list-style-type: '✓ ';
+            padding-left: 20px;
+            margin: 10px 0 15px 0;
+            font-size: 10.5pt;
+        }
+        .example-list li { margin-bottom: 5px; }
+
+        /* =================================================================== */
+        /* 연습 문제 스타일                                                    */
+        /* =================================================================== */
+        .practice-section-header { 
+            font-family: 'Inter', sans-serif; 
+            font-size: 16pt; 
+            font-weight: 700; 
+            color: #fff; 
+            background: var(--color-deep-blue); 
+            padding: 12px 20px; 
+            margin: 20px 0 20px 0; 
+            border-radius: 8px; 
+        }
+        .problem-block { 
+            margin-bottom: 20px; 
+            padding: 15px; 
+            border: 1px solid var(--color-border); 
+            border-left: 4px solid var(--color-sea-blue); 
+            border-radius: 0 5px 5px 0; 
+            background: #fff;
+        }
+        .problem-meta {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .problem-number { 
+            font-family: 'Inter', sans-serif; 
+            font-weight: 700; 
+            color: white;
+            background-color: var(--color-sea-blue);
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            font-size: 11pt;
+        }
+        .problem-text { 
+            font-size: 11pt; 
+            margin-bottom: 12px; 
+            line-height: 1.8;
+            text-align: justify;
+        }
+        .problem-text u {
+            text-decoration: underline;
+            text-decoration-color: var(--color-warm-orange);
+            text-decoration-thickness: 1.5px;
+            font-weight: 500;
+        }
+        .problem-question {
+            margin-top: 15px;
+            padding: 12px 15px;
+            background-color: var(--color-bg-light);
+            border: 1px solid var(--color-border);
+            border-left: 4px solid var(--color-warm-orange);
+            border-radius: 0 5px 5px 0;
+            font-size: 10.5pt;
+            font-style: italic;
+            color: var(--color-deep-blue);
+            font-weight: 500;
+        }
+        .problem-choices { 
+            list-style: none; 
+            padding-left: 0; 
+            font-size: 10.5pt; 
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 5px 20px;
+        }
+        .problem-choices li { 
+            margin-bottom: 4px; 
+            padding: 6px 10px; 
+            border-radius: 4px;
+            display: flex;
+            align-items: baseline;
+            text-align: justify;
+        }
+        .problem-choices li:hover {
+            background-color: var(--color-bg-light);
+        }
+        .choice-number {
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            color: var(--color-deep-blue);
+            margin-right: 8px;
+        }
+
+        /* =================================================================== */
+        /* 정답 및 해설 스타일                                                 */
+        /* =================================================================== */
+        .answer-key-section .section-title {
+            color: var(--color-warm-orange);
+            border-bottom-color: var(--color-sea-blue);
+        }
+        .quick-answer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(55px, 1fr));
+            gap: 8px;
+            margin: 20px 0;
+            text-align: center;
+            font-size: 10pt;
+            font-family: 'Inter', sans-serif;
+        }
+        .quick-answer-item {
+            padding: 8px;
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            background-color: var(--color-bg-light);
+        }
+        .quick-answer-item .num {
+            font-weight: 700;
+            color: var(--color-text-light);
+        }
+        .quick-answer-item .ans {
+            font-weight: 700;
+            color: var(--color-deep-blue);
+        }
+        .explanation-block {
+            margin-bottom: 15px;
+            padding-top: 15px;
+            border-top: 1px solid var(--color-border);
+        }
+        .explanation-block:first-of-type {
+            border-top: none;
+            padding-top: 0;
+        }
+        .explanation-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .explanation-header .problem-number {
+            background-color: var(--color-warm-orange);
+        }
+        .explanation-header .correct-answer {
+            font-family: 'Inter', sans-serif;
+            font-size: 12pt;
+            font-weight: 700;
+            color: var(--color-deep-blue);
+        }
+        .explanation-content {
+            font-size: 10.5pt;
+            padding: 10px 15px;
+            background-color: var(--color-bg-light);
+            border-radius: 5px;
+            text-align: justify;
+
+        }
+        .explanation-content b {
+            color: var(--color-sea-blue);
+        }
+        
+        /* =================================================================== */
+        /* 유틸리티 및 인쇄 최적화                                             */
+        /* =================================================================== */
+        .avoid-break { break-inside: avoid; page-break-inside: avoid; }
+        
+        @media print { 
+            body { background: #fff; } 
+            .page { margin: 0; box-shadow: none; } 
+        }
+        p, li, div { orphans: 3; widows: 3; }
+        .practice-section-header, .section-title, .part-header { break-after: avoid-page; }
+        .problem-block, .tip-box, .grammar-table { break-inside: avoid; }
+
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <!-- =================================================================== -->
+        <!-- 문서 기본 설정                                                        -->
+        <!-- =================================================================== -->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vera's Flavor 편입영어 문법 - Bridge 편 part 7</title>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+        
+        <!-- =================================================================== -->
+        <!-- CSS 스타일: 교재의 전체 디자인을 정의합니다.                         -->
+        <!-- =================================================================== -->
+        <style>
+            /* --- 기본 페이지 및 폰트 설정 --- */
+            @page {
+                size: A4;
+                margin: 0;
+            }
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: 'Noto Sans KR', sans-serif;
+                background: #e8e9eb; /* 페이지 외부 배경색 */
+                counter-reset: page; /* 자동 페이지 번호 카운터 초기화 */
+            }
+            .eng-text { font-family: 'Inter', sans-serif; }
+            .serif-text { font-family: 'Playfair Display', serif; }
+            .bold-text { font-weight: 700; }
+    
+            /* --- 색상 변수 (표지 이미지 기반) --- */
+            :root {
+                --color-sea-blue: #6C96C6;      /* 바다색 */
+                --color-deep-blue: #345C85;     /* 깊은 바다색 */
+                --color-sandy-beige: #F2C994;   /* 모래색 */
+                --color-warm-orange: #E9A266;   /* 고양이색 */
+                --color-text-dark: #3D4852;     /* 기본 텍스트 색상 */
+                --color-text-light: #718096;    /* 보조 텍스트 색상 */
+                --color-bg-light: #FDFBF6;      /* 밝은 배경색 */
+                --color-border: #EAEAEA;        /* 테두리 색상 */
+            }
+    
+            /* --- A4 페이지 레이아웃 --- */
+            .page {
+                width: 210mm;
+                height: 297mm;
+                margin: 10mm auto;
+                padding: 15mm 18mm;
+                background: white;
+                box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+                page-break-after: always;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+            }
+            .page:last-child {
+                page-break-after: avoid;
+            }
+            .page-content {
+                flex-grow: 1;
+                overflow: hidden;
+                font-size: 11pt;
+                line-height: 1.8;
+                color: var(--color-text-dark);
+            }
+    
+            /* --- 페이지 헤더 & 푸터 --- */
+            .page-header, .page-footer {
+                width: 100%;
+                flex-shrink: 0;
+                font-size: 9pt;
+                color: var(--color-text-light);
+                font-family: 'Inter', sans-serif;
+            }
+            .page-header {
+                border-bottom: 1px solid var(--color-border);
+                padding-bottom: 8px;
+                margin-bottom: 12px;
+                display: flex;
+                justify-content: space-between;
+                color: var(--color-deep-blue);
+                font-weight: 500;
+            }
+            .page-footer {
+                border-top: 1px solid var(--color-border);
+                padding-top: 8px;
+                margin-top: 12px;
+                text-align: center;
+            }
+            
+            /* 자동 페이지 번호 생성 */
+            .page-footer::after {
+                counter-increment: page;
+                content: counter(page);
+            }
+            
+            .part-intro-page .page-footer::after { display: none; }
+            .part-intro-page .page-header,
+            .part-intro-page .page-footer { border: none; }
+    
+            /* =================================================================== */
+            /* 파트 소개 페이지 스타일                                               */
+            /* =================================================================== */
+            .part-intro-page {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .part-intro-container {
+                padding: 20mm;
+                border: 1px solid var(--color-border);
+                border-radius: 8px;
+                background-color: var(--color-bg-light);
+                max-width: 170mm;
+                text-align: center;
+            }
+            .part-intro-number {
+                font-family: 'Playfair Display', serif;
+                font-size: 24pt;
+                color: var(--color-sandy-beige);
+                margin-bottom: 10px;
+            }
+            .part-intro-title {
+                font-size: 36pt;
+                font-weight: 900;
+                color: var(--color-deep-blue);
+                margin-bottom: 15px;
+            }
+            .part-intro-subtitle {
+                font-family: 'Inter', sans-serif;
+                font-size: 14pt;
+                color: var(--color-sea-blue);
+                margin-bottom: 20px;
+            }
+            .part-intro-divider {
+                width: 80px;
+                height: 3px;
+                background-color: var(--color-warm-orange);
+                margin: 0 auto 20px auto;
+                border: none;
+            }
+            .part-intro-description {
+                max-width: 140mm;
+                font-size: 11pt;
+                line-height: 1.9;
+                color: var(--color-text-dark);
+                text-align: justify;
+                margin: 0 auto;
+            }
+    
+            /* =================================================================== */
+            /* 본문 콘텐츠 스타일                                                  */
+            /* =================================================================== */
+            .part-header { 
+                color: white; 
+                margin: 0 0 25px 0; 
+                padding: 15px 20px; 
+                font-size: 18pt; 
+                font-weight: 700; 
+                display: flex; 
+                align-items: center; 
+                background: linear-gradient(135deg, var(--color-deep-blue), var(--color-sea-blue)); 
+                border-radius: 8px; 
+                box-shadow: 0 4px 15px rgba(52, 92, 133, 0.2);
+            }
+            .part-number { 
+                font-family: 'Inter', sans-serif;
+                background: rgba(255,255,255,0.15); 
+                padding: 8px 14px; 
+                border-radius: 6px; 
+                font-weight: 700; 
+                font-size: 12pt;
+                min-width: 60px; 
+                text-align: center; 
+                margin-right: 15px; 
+            }
+            .section-title { 
+                font-family: 'Inter', sans-serif; 
+                font-size: 16pt; 
+                font-weight: 700; 
+                color: var(--color-deep-blue); 
+                margin: 30px 0 15px 0; 
+                padding-bottom: 8px;
+                border-bottom: 2px solid var(--color-sandy-beige);
+            }
+            .first-in-page { margin-top: 0; }
+            .content-paragraph { margin-bottom: 12px; text-align: justify; }
+            .sub-header {
+                font-weight:700; 
+                color: var(--color-deep-blue); 
+                margin-top:20px; 
+                margin-bottom: 10px;
+                font-size: 13pt;
+            }
+            
+            .grammar-table { 
+                width: 100%; 
+                border-collapse: collapse; 
+                margin: 20px 0; 
+                font-size: 10.5pt; 
+                break-inside: avoid;
+            }
+            .grammar-table th, .grammar-table td { 
+                border: 1px solid var(--color-border); 
+                padding: 10px 12px; 
+                text-align: left; 
+                vertical-align: top;
+            }
+            .grammar-table th { 
+                background-color: var(--color-bg-light); 
+                font-weight: 700; 
+                color: var(--color-deep-blue); 
+            }
+            .grammar-table td code {
+                font-family: 'Inter', sans-serif;
+                background-color: #e8e9eb;
+                padding: 2px 5px;
+                border-radius: 4px;
+                font-size: 9.5pt;
+            }
+            .ex-eng { font-family: 'Inter', sans-serif; font-weight: 500; color: var(--color-text-dark); }
+            .ex-kor { font-size: 10pt; color: var(--color-text-light); padding-left: 2px; }
+            
+            code {
+                font-family: 'Inter', sans-serif;
+                color: var(--color-deep-blue);
+                background-color: #f2f4f8;
+                border: 1px solid var(--color-border);
+                padding: 2px 6px;
+                border-radius: 6px;
+                font-weight: 600;
+                font-size: 0.95em;
+            }
+            
+            .tip-box { 
+                background: var(--color-bg-light); 
+                border: 1px solid var(--color-sandy-beige); 
+                border-left: 5px solid var(--color-warm-orange); 
+                border-radius: 0 6px 6px 0; 
+                padding: 15px 20px; 
+                margin: 20px 0; 
+                font-size: 10.5pt; 
+                break-inside: avoid;
+            }
+            .tip-box-title { 
+                font-weight: 700; 
+                color: var(--color-warm-orange); 
+                margin-bottom: 8px; 
+                font-family: 'Inter', sans-serif;
+            }
+            
+            .example-list {
+                list-style-type: '✓ ';
+                padding-left: 20px;
+                margin: 10px 0 15px 0;
+                font-size: 10.5pt;
+            }
+            .example-list li { margin-bottom: 8px; }
+            .example-list .ex-kor { display: block; font-size: 10pt; color: var(--color-text-light); margin-top: 2px; }
+    
+        </style>
+    </head>
+    <body>
+    
+        <div class="page no-header-footer part-intro-page">
+            <div class="part-intro-container">
+                <div class="part-intro-number eng-text">Part 7</div>
+                <h2 class="part-intro-title">관사 (Articles)</h2>
+                <h3 class="part-intro-subtitle eng-text">The Art of Determination and Specificity</h3>
+                <hr class="part-intro-divider">
+                <p class="part-intro-description">
+                    관사는 명사의 정체성을 규정하는 결정적인 문법 장치입니다. 단순한 'a'와 'the'의 구분을 넘어, 관사의 유무와 선택은 문장의 일반성(generality)과 특정성(specificity)을 조절하며, 화자의 의도와 정보의 위계를 드러냅니다. 편입 영어에서는 관사의 관용적 용법, 추상명사와의 결합, 그리고 총칭 표현의 미묘한 뉘앙스 차이를 묻는 고난도 문제가 출제됩니다. 이 파트에서는 관사의 심층 원리를 파악하여, 원어민 수준의 정교한 언어 감각을 체화하는 것을 목표로 합니다.
+                </p>
+            </div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 7: 관사 (Articles)</span>
+            </div>
+            <div class="page-content">
+                <div class="part-header first-in-page">
+                    <span class="part-number eng-text">Part 7</span>
+                    <span>관사 (Articles)</span>
+                </div>
+        
+                <div class="section-title eng-text">Focus 1: 관사의 핵심 기능: 특정성 vs. 일반성</div>
+                <p class="content-paragraph">
+                    모든 관사 규칙의 근간에는 '정보의 상태'가 있습니다. 화자와 청자가 공유하는 정보인가, 아니면 새로운 정보인가에 따라 관사의 선택이 결정됩니다. 이 기본 원리를 이해하면 복잡한 규칙들을 관통하는 논리를 파악할 수 있습니다.
+                </p>
+                <div class="sub-header">1. 부정관사 (a/an): 새로운 정보의 도입 (New Information)</div>
+                <p class="content-paragraph">
+                    대화나 글에서 처음으로 등장하는, 정해지지 않은 '어떤 하나'의 대상을 소개할 때 사용합니다. 청자에게는 '새로운 정보'임을 알리는 신호이며, 셀 수 있는 단수 명사 앞에만 올 수 있습니다.
+                </p>
+                <ul class="example-list">
+                    <li><span class="ex-eng">A researcher proposed <b>a novel theory</b> regarding quantum mechanics.</span><span class="ex-kor">한 연구원이 양자 역학에 관한 새로운 이론 하나를 제안했다.</span></li>
+                    <li><span class="ex-eng">I bought <b>a book</b> and <b>a magazine</b> yesterday.</span><span class="ex-kor">나는 어제 책 한 권과 잡지 한 권을 샀다.</span></li>
+                </ul>
+    
+                <div class="sub-header">2. 정관사 (the): 공유된 정보의 지칭 (Shared Information)</div>
+                <p class="content-paragraph">
+                    이미 언급되었거나, 문맥상/상황상 화자와 청자 모두가 알고 있는 '바로 그' 특정 대상을 지칭합니다. 청자에게는 '이미 알고 있는 정보'임을 상기시키는 신호입니다.
+                </p>
+                <ul class="example-list">
+                    <li><span class="ex-eng"><b>The book</b> I bought yesterday is about astrophysics.</span><span class="ex-kor">내가 어제 샀던 바로 그 책은 천체 물리학에 관한 것이다.</span></li>
+                    <li><span class="ex-eng">Please analyze <b>the data</b> presented in Table 1.</span><span class="ex-kor">표 1에 제시된 바로 그 데이터를 분석해 주세요. (문맥상 특정됨)</span></li>
+                    <li><span class="ex-eng">Could you pass me <b>the salt</b>?</span><span class="ex-kor">그 소금 좀 건네주시겠어요? (상황상 특정됨)</span></li>
+                </ul>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 7: 관사 (Articles)</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title eng-text first-in-page">Focus 2: 총칭 표현의 세 가지 방법과 뉘앙스 차이</div>
+                <p class="content-paragraph">
+                    특정 개체가 아닌, 그 종족이나 부류 전체를 대표하여 지칭하는 '총칭' 표현은 세 가지 방식이 있으며, 각각 미묘한 뉘앙스 차이를 가집니다.
+                </p>
+                <table class="grammar-table">
+                    <thead>
+                        <tr>
+                            <th style="width:25%;">형태</th>
+                            <th>뉘앙스 및 용법</th>
+                            <th>예문</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>a/an + 단수명사</b></td>
+                            <td>'어떤 ~라도' 라는 의미로, 그 종족의 <b>대표적인 한 개체</b>를 통해 일반적인 속성을 설명. 정의나 설명에 자주 사용.</td>
+                            <td><span class="ex-eng"><b>A tiger</b> is a dangerous animal.</span><span class="ex-kor">호랑이란 위험한 동물이다.</span><br><span class="ex-eng"><b>An owl</b> can see in the dark.</span><span class="ex-kor">올빼미는 어둠 속에서 볼 수 있다.</span></td>
+                        </tr>
+                        <tr>
+                            <td><b>the + 단수명사</b></td>
+                            <td>그 종족 전체를 하나의 <b>추상적이고 학술적인 개념</b>으로 지칭. 과학적, 형식적 문체에서 선호. (발명품, 악기명에 주로 사용)</td>
+                            <td><span class="ex-eng"><b>The tiger</b> is facing extinction.</span><span class="ex-kor">호랑이라는 종은 멸종에 직면해 있다.</span><br><span class="ex-eng"><b>The computer</b> has changed our lives.</span><span class="ex-kor">컴퓨터는 우리의 삶을 바꾸었다.</span></td>
+                        </tr>
+                        <tr>
+                            <td><b>무관사 + 복수명사</b></td>
+                            <td>가장 <b>일반적이고 보편적인</b> 총칭 표현. 그 부류에 속하는 막연한 다수를 의미.</td>
+                            <td><span class="ex-eng"><b>Tigers</b> are dangerous animals.</span><span class="ex-kor">호랑이들은 위험한 동물이다.</span><br><span class="ex-eng"><b>Computers</b> have changed our lives.</span><span class="ex-kor">컴퓨터들은 우리의 삶을 바꾸었다.</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="tip-box avoid-break">
+                    <div class="tip-box-title eng-text">Vera's Flavor Tip | 총칭 표현의 제약</div>
+                    <p>모든 명사가 세 가지 총칭 표현을 자유롭게 쓸 수 있는 것은 아닙니다. 특히 <b>`the + 단수명사`</b> 형태는 인간(man)에게는 거의 사용하지 않습니다. <br>
+                    - <span class="ex-eng"><b>Man</b> is a social animal. (O, 관사 없이 man 자체가 인류를 총칭)</span><br>
+                    - <span class="ex-eng" style="color: #c53030;"><b>The man</b> is a social animal. (X, '그 남자'라는 특정인을 의미하게 됨)</span></p>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 7: 관사 (Articles)</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title eng-text first-in-page">Focus 3: 추상명사와 관사의 결합: 구체화의 원리</div>
+                <p class="content-paragraph">
+                    <code>life</code>, <code>history</code>, <code>beauty</code>와 같은 추상명사는 원칙적으로 관사 없이 쓰여 일반적인 개념을 나타냅니다. 하지만 수식어구에 의해 '구체화'되거나 '한정'될 때 관사가 붙게 됩니다.
+                </p>
+                <table class="grammar-table">
+                    <thead>
+                        <tr>
+                            <th style="width:25%;">관사 사용</th>
+                            <th>의미 및 조건</th>
+                            <th>예문</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>무관사 (Zero)</b></td>
+                            <td><b>일반적, 총체적 개념</b>으로서의 추상명사.</td>
+                            <td><span class="ex-eng"><b>Life</b> is unpredictable.</span><span class="ex-kor">인생은 예측 불가능하다.</span><br><span class="ex-eng"><b>History</b> repeats itself.</span><span class="ex-kor">역사는 반복된다.</span></td>
+                        </tr>
+                        <tr>
+                            <td><b>부정관사 (a/an)</b></td>
+                            <td><b>'어떤 종류의', '특정한 사례'</b>의 의미로, 주로 형용사의 수식을 받아 구체화될 때.</td>
+                            <td><span class="ex-eng">He led <b>a happy life</b>.</span><span class="ex-kor">그는 행복한 삶을 살았다.</span><br><span class="ex-eng">She has <b>a deep knowledge</b> of art history.</span><span class="ex-kor">그녀는 미술사에 대한 깊은 지식을 가지고 있다.</span></td>
+                        </tr>
+                        <tr>
+                            <td><b>정관사 (the)</b></td>
+                            <td><b>'of + 명사'</b>와 같은 후치 수식어구에 의해 <b>명확하게 한정</b>될 때.</td>
+                            <td><span class="ex-eng"><b>The life of a medieval peasant</b> was harsh.</span><span class="ex-kor">중세 농민의 삶은 혹독했다.</span><br><span class="ex-eng">We studied <b>the history of the Roman Empire</b>.</span><span class="ex-kor">우리는 로마 제국의 역사를 공부했다.</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 7: 관사 (Articles)</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title eng-text first-in-page">Focus 4: 무관사(Zero Article)의 심층 이해: 본래의 목적</div>
+                <p class="content-paragraph">
+                    <code>school</code>, <code>prison</code>, <code>church</code>, <code>bed</code>와 같은 장소 명사 앞에 관사가 붙지 않을 경우, 그 건물의 물리적 실체가 아닌 <b>'본래의 추상적 기능이나 활동'</b>을 의미하게 됩니다. 이는 편입 시험에서 문맥에 따른 의미 차이를 묻는 문제로 자주 출제됩니다.
+                </p>
+                <table class="grammar-table">
+                    <thead>
+                        <tr>
+                            <th style="width:25%;">표현</th>
+                            <th>의미 (추상적 기능 vs. 물리적 건물)</th>
+                            <th>예문</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>go to <b>school</b></td>
+                            <td><b>수업 받으러</b> 가다 (학생으로서의 활동)</td>
+                            <td><span class="ex-eng">My son goes to <b>school</b> by bus.</span></td>
+                        </tr>
+                        <tr>
+                            <td>go to <b>the school</b></td>
+                            <td><b>(특정한) 그 학교 건물에</b> 가다 (방문객으로서)</td>
+                            <td><span class="ex-eng">His father went to <b>the school</b> for a meeting.</span></td>
+                        </tr>
+                        <tr>
+                            <td>be in <b>prison</b></td>
+                            <td><b>수감 중이다</b> (죄수로서의 상태)</td>
+                            <td><span class="ex-eng">He was in <b>prison</b> for ten years.</span></td>
+                        </tr>
+                        <tr>
+                            <td>visit <b>the prison</b></td>
+                            <td><b>(특정한) 그 교도소 건물을</b> 방문하다</td>
+                            <td><span class="ex-eng">The lawyer visited his client at <b>the prison</b>.</span></td>
+                        </tr>
+                        <tr>
+                            <td>go to <b>bed</b></td>
+                            <td><b>잠자리에 들다</b> (취침 행위)</td>
+                            <td><span class="ex-eng">It's time to go to <b>bed</b>.</span></td>
+                        </tr>
+                        <tr>
+                            <td>sit on <b>the bed</b></td>
+                            <td><b>(특정한) 그 침대 위에</b> 앉다 (가구로서)</td>
+                            <td><span class="ex-eng">She sat on <b>the bed</b> and read a book.</span></td>
+                        </tr>
+                        <tr>
+                            <td>go to <b>church</b></td>
+                            <td><b>예배 보러</b> 가다 (종교 활동)</td>
+                            <td><span class="ex-eng">They go to <b>church</b> every Sunday.</span></td>
+                        </tr>
+                        <tr>
+                            <td>admire <b>the church</b></td>
+                            <td><b>(특정한) 그 교회 건물을</b> 감상하다</td>
+                            <td><span class="ex-eng">We stopped to admire <b>the</b> old <b>church</b>.</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 7: 관사 (Articles)</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title eng-text first-in-page">Focus 5: 정관사 `the`가 필수적인 경우 I: 지리적 명칭</div>
+                <p class="content-paragraph">
+                    고유명사는 원칙적으로 관사를 붙이지 않지만, 특정 카테고리의 지리적 명칭에는 정관사 `the`를 붙이는 관습이 있습니다. 이는 암기가 필수적인 영역입니다.
+                </p>
+                <table class="grammar-table">
+                    <thead><tr><th style="width:30%;">카테고리</th><th>주요 예시</th></tr></thead>
+                    <tbody>
+                        <tr>
+                            <td><b>강, 바다, 해양, 만, 해협, 운하, 사막</b><br>(Rivers, Seas, Oceans, Gulfs, Straits, Canals, Deserts)</td>
+                            <td><code>the Han River</code> (한강), <code>the Pacific Ocean</code> (태평양), <code>the Mediterranean Sea</code> (지중해), <code>the Persian Gulf</code> (페르시아만), <code>the Suez Canal</code> (수에즈 운하), <code>the Sahara Desert</code> (사하라 사막)</td>
+                        </tr>
+                        <tr>
+                            <td><b>산맥, 군도 (복수형 지명)</b><br>(Mountain Ranges, Archipelagos)</td>
+                            <td><code>the Alps</code> (알프스 산맥), <code>the Himalayas</code> (히말라야 산맥), <code>the Philippines</code> (필리핀 군도), <code>the West Indies</code> (서인도 제도)</td>
+                        </tr>
+                        <tr>
+                            <td><b>반도 (Peninsulas)</b></td>
+                            <td><code>the Korean Peninsula</code> (한반도), <code>the Iberian Peninsula</code> (이베리아 반도)</td>
+                        </tr>
+                        <tr>
+                            <td><b>공화국/왕국/연방 등 공식 국가명</b><br>(Official Country Names with common nouns)</td>
+                            <td><code>the Republic of Korea</code> (대한민국), <code>the United States of America</code> (미합중국), <code>the United Kingdom</code> (영국), <code>the People's Republic of China</code> (중화인민공화국)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 7: 관사 (Articles)</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title eng-text first-in-page">Focus 6: 정관사 `the`가 필수적인 경우 II: 기타 고유명사</div>
+                <table class="grammar-table">
+                    <thead><tr><th style="width:30%;">카테고리</th><th>주요 예시</th></tr></thead>
+                    <tbody>
+                        <tr>
+                            <td><b>공공 건물, 기념물</b><br>(Public Buildings, Monuments)</td>
+                            <td><code>the White House</code> (백악관), <code>the Eiffel Tower</code> (에펠탑), <code>the Statue of Liberty</code> (자유의 여신상), <code>the Pentagon</code> (펜타곤)</td>
+                        </tr>
+                        <tr>
+                            <td><b>박물관, 미술관, 도서관, 호텔, 극장</b><br>(Museums, Galleries, Libraries, Hotels, Theaters)</td>
+                            <td><code>the British Museum</code> (대영박물관), <code>the Louvre</code> (루브르 박물관), <code>the Hilton Hotel</code> (힐튼 호텔), <code>the National Theater</code> (국립극장)</td>
+                        </tr>
+                        <tr>
+                            <td><b>신문, 잡지 (일부)</b><br>(Newspapers, Magazines)</td>
+                            <td><code>the New York Times</code>, <code>the Guardian</code>, <code>the Economist</code> <br>(<b>주의:</b> <code>Time</code>, <code>Newsweek</code> 처럼 관사 없는 경우도 많음)</td>
+                        </tr>
+                        <tr>
+                            <td><b>선박, 열차, 항공기</b><br>(Ships, Trains, Aircraft)</td>
+                            <td><code>the Titanic</code> (타이타닉호), <code>the Orient Express</code> (오리엔트 특급열차), <code>the Air Force One</code> (에어포스원)</td>
+                        </tr>
+                        <tr>
+                            <td><b>정부 기관, 조직</b><br>(Government Bodies, Organizations)</td>
+                            <td><code>the United Nations</code> (UN), <code>the FBI</code>, <code>the European Union</code> (EU)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 7: 관사 (Articles)</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title eng-text first-in-page">Focus 7: 무관사가 원칙인 경우 (Zero Article Usage)</div>
+                <p class="content-paragraph">
+                    특정 카테고리의 명사들은 일반적인 의미로 쓰일 때 관사를 붙이지 않는 것이 원칙입니다.
+                </p>
+                <table class="grammar-table">
+                    <thead>
+                        <tr><th style="width:30%;">카테고리</th><th>주요 예시</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><b>대륙, 국가(대부분), 주, 도시</b><br>(Continents, Countries, States, Cities)</td>
+                            <td><code>Asia</code> (아시아), <code>France</code> (프랑스), <code>California</code> (캘리포니아), <code>Paris</code> (파리)</td>
+                        </tr>
+                        <tr>
+                            <td><b>개별 산, 개별 섬, 호수</b><br>(Individual Mountains, Islands, Lakes)</td>
+                            <td><code>Mt. Everest</code> (에베레스트산), <code>Jeju Island</code> (제주도), <code>Lake Superior</code> (슈피리어호)</td>
+                        </tr>
+                         <tr>
+                            <td><b>거리, 공원, 광장, 역, 공항 이름</b><br>(Streets, Parks, Squares, Stations, Airports)</td>
+                            <td><code>Wall Street</code>, <code>Central Park</code>, <code>Times Square</code>, <code>Seoul Station</code>, <code>Incheon Airport</code></td>
+                        </tr>
+                        <tr>
+                            <td><b>식사, 운동, 질병, 학과명</b><br>(Meals, Sports, Diseases, Subjects)</td>
+                            <td><code>breakfast</code> (아침), <code>lunch</code> (점심), <code>dinner</code> (저녁)<br><code>baseball</code> (야구), <code>soccer</code> (축구)<br><code>cancer</code> (암), <code>flu</code> (독감)<br><code>physics</code> (물리학), <code>history</code> (역사)</td>
+                        </tr>
+                         <tr>
+                            <td><b>언어, 요일, 달</b><br>(Languages, Days, Months)</td>
+                            <td><code>English</code> (영어), <code>Korean</code> (한국어)<br><code>Monday</code> (월요일), <code>January</code> (1월)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 7: 관사 (Articles)</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title eng-text first-in-page">Focus 8: 관사의 위치와 기타 심화 용법</div>
+                <div class="sub-header">1. 관사의 어순: 한정사 서열</div>
+                <p class="content-paragraph">
+                    관사는 다른 형용사나 한정사보다 항상 앞에 위치하지만, <code>all, both, half, double, twice</code>와 같은 전치 한정사(Pre-determiner) 뒤에 위치합니다.
+                </p>
+                <ul class="example-list">
+                    <li><span class="ex-eng"><b>All the</b> students must submit their reports.</span><span class="ex-kor">모든 학생들은 그들의 보고서를 제출해야 한다.</span></li>
+                    <li><span class="ex-eng">We spent <b>half a</b> day analyzing the results.</span><span class="ex-kor">우리는 그 결과를 분석하는 데 반나절을 보냈다.</span></li>
+                    <li><span class="ex-eng"><b>Such a</b> complicated problem requires careful consideration. (such/what/quite + a/an + 형 + 명)</span><span class="ex-kor">그렇게 복잡한 문제는 신중한 고려를 요구한다.</span></li>
+                </ul>
+    
+                <div class="sub-header">2. `a/an`의 특수 용법</div>
+                <p class="content-paragraph">
+                    부정관사가 '하나'라는 의미를 넘어 다른 의미로 확장되어 사용되는 경우입니다.
+                </p>
+                <ul class="example-list">
+                    <li><b>~당, ~마다 (per):</b> <span class="ex-eng">The speed limit is 100 kilometers <b>an hour</b>.</span><span class="ex-kor">속도 제한은 시속 100킬로미터이다.</span></li>
+                    <li><b>동일한 (the same):</b> <span class="ex-eng">Birds of <b>a feather</b> flock together.</span><span class="ex-kor">같은 깃털의 새들은 함께 모인다. (유유상종)</span></li>
+                </ul>
+    
+                <div class="sub-header">3. 신체 부위 앞의 `the`</div>
+                <p class="content-paragraph">
+                    `타동사 + 목적어(사람) + 전치사 + the + 신체부위` 구문에서, 신체 부위 앞에는 소유격(his, my) 대신 정관사 `the`를 쓰는 것이 일반적입니다. 이는 행위의 대상을 강조하기 위함입니다.
+                </p>
+                <ul class="example-list">
+                    <li><span class="ex-eng">The ball hit him <b>on the head</b>. (on his head 보다 일반적)</span><span class="ex-kor">공이 그의 머리를 때렸다.</span></li>
+                    <li><span class="ex-eng">She looked me straight <b>in the eye</b>.</span><span class="ex-kor">그녀는 내 눈을 똑바로 쳐다보았다.</span></li>
+                </ul>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+        
+        <div class="page">
+            <div class="page-header">
+                <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                <span>Part 7: 관사 (Articles)</span>
+            </div>
+            <div class="page-content">
+                <div class="section-title first-in-page eng-text">자주 하는 질문과 답변 (Advanced Q&A)</div>
+                
+                <div class="tip-box">
+                    <p><b>Q1: 총칭 표현에서 `The tiger`와 `Tigers`의 차이가 정확히 무엇인가요? 언제 구분해서 써야 하나요?</b><br>
+                    A: 둘 다 '호랑이라는 동물'을 총칭하지만, 뉘앙스의 격식성과 초점이 다릅니다. <b>`The tiger`</b>는 그 종(species) 전체를 하나의 단일체, 즉 학술적이고 분류적인 대상으로 보는 느낌이 강합니다. 따라서 과학 논문이나 백과사전 같은 격식적인 글에서 선호됩니다. 반면, <b>`Tigers`</b>는 그 종에 속하는 일반적인 개체들의 보편적인 특성을 말하는, 가장 흔하고 자연스러운 표현입니다. 일상적인 대화나 대부분의 글에서는 `Tigers`를 쓰는 것이 훨씬 더 보편적입니다. 시험에서는 두 표현이 함께 선택지에 나올 경우, 문장의 전체적인 격식성을 보고 판단해야 합니다.</p>
+                </div>
+                <div class="tip-box">
+                    <p><b>Q2: "I had a breakfast." 라는 표현은 왜 틀린 건가요? 식사도 한 번, 두 번 셀 수 있는 것 아닌가요?</b><br>
+                    A: `breakfast`, `lunch`, `dinner`는 '아침 식사'라는 '행위'나 '개념' 자체를 의미하는 추상적인 불가산 명사로 취급됩니다. 따라서 관사 없이 `have breakfast`가 표준 용법입니다. 하지만 식사 내용이 형용사로 수식되어 '특별한 종류의 식사'가 될 때는 하나의 '사건'으로 구체화되므로 부정관사를 붙일 수 있습니다.<br>
+                    - <span class="ex-eng"><em>We had <b>a wonderful dinner</b> at the new restaurant.</em> (하나의 멋진 저녁 식사 '사건')</span></p>
+                </div>
+                <div class="tip-box">
+                    <p><b>Q3: `the United States`는 `the`를 붙이는데, 왜 `South Korea`는 붙이지 않나요?</b><br>
+                    A: 국가명 앞의 `the` 사용은 역사적, 정치적 형태에 따른 관습입니다. 크게 세 가지 경우에 `the`를 붙입니다.<br>
+                    1. <b>복수형 국가명:</b> `the Netherlands`, `the Philippines` 처럼 이름 자체가 복수형일 때.<br>
+                    2. <b>'연방, 공화국, 왕국' 등 보통명사가 포함된 공식 명칭:</b> `the United States`, `the United Kingdom`, `the Republic of Korea` 처럼 국가의 정치 체제를 나타내는 단어가 포함될 때.<br>
+                    3. <b>지리적 특성으로 이루어진 이름:</b> `the Ivory Coast` (해안), `the Congo` (강 이름) 등.<br>
+                    `South Korea`는 이 경우에 해당하지 않는 단일 고유명사이므로 관사를 붙이지 않습니다.</p>
+                </div>
+            </div>
+            <div class="page-footer"></div>
+        </div>
+    
+    </body>
+    </html>
+    <!DOCTYPE html>
+    <html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vera's Flavor 편입영어 문법 - Bridge 편 part 7 연습문제</title>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+        <style>
+            /* --- 기본 페이지 및 폰트 설정 --- */
+            @page {
+                size: A4;
+                margin: 0;
+            }
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: 'Noto Sans KR', sans-serif;
+                background: #e8e9eb; /* 페이지 외부 배경색 */
+                counter-reset: page; /* 자동 페이지 번호 카운터 초기화 */
+            }
+            .eng-text { font-family: 'Inter', sans-serif; }
+            .serif-text { font-family: 'Playfair Display', serif; }
+            .bold-text { font-weight: 700; }
+    
+            /* --- 색상 변수 (표지 이미지 기반) --- */
+            :root {
+                --color-sea-blue: #6C96C6;      /* 바다색 */
+                --color-deep-blue: #345C85;     /* 깊은 바다색 */
+                --color-sandy-beige: #F2C994;   /* 모래색 */
+                --color-warm-orange: #E9A266;   /* 고양이색 */
+                --color-text-dark: #3D4852;     /* 기본 텍스트 색상 */
+                --color-text-light: #718096;    /* 보조 텍스트 색상 */
+                --color-bg-light: #FDFBF6;      /* 밝은 배경색 */
+                --color-border: #EAEAEA;        /* 테두리 색상 */
+            }
+    
+            /* --- A4 페이지 레이아웃 --- */
+            .page {
+                width: 210mm;
+                height: 297mm;
+                margin: 10mm auto;
+                padding: 15mm 18mm;
+                background: white;
+                box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+                page-break-after: always;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+            }
+            .page:last-child {
+                page-break-after: avoid;
+            }
+            .page-content {
+                flex-grow: 1;
+                overflow: hidden;
+                font-size: 11pt;
+                line-height: 1.8;
+                color: var(--color-text-dark);
+            }
+    
+            /* --- 페이지 헤더 & 푸터 --- */
+            .page-header, .page-footer {
+                width: 100%;
+                flex-shrink: 0;
+                font-size: 9pt;
+                color: var(--color-text-light);
+                font-family: 'Inter', sans-serif;
+            }
+            .page-header {
+                border-bottom: 1px solid var(--color-border);
+                padding-bottom: 8px;
+                margin-bottom: 12px;
+                display: flex;
+                justify-content: space-between;
+                color: var(--color-deep-blue);
+                font-weight: 500;
+            }
+            .page-footer {
+                border-top: 1px solid var(--color-border);
+                padding-top: 8px;
+                margin-top: 12px;
+                text-align: center;
+            }
+            
+            /* 자동 페이지 번호 생성 */
+            .page-footer::after {
+                counter-increment: page;
+                content: counter(page);
+            }
+    
+            /* =================================================================== */
+            /* 연습 문제 스타일                                                    */
+            /* =================================================================== */
+            .practice-section-header { 
+                font-family: 'Inter', sans-serif; 
+                font-size: 16pt; 
+                font-weight: 700; 
+                color: #fff; 
+                background: var(--color-deep-blue); 
+                padding: 12px 20px; 
+                margin: 20px 0 20px 0; 
+                border-radius: 8px; 
+            }
+            .problem-block { 
+                margin-bottom: 20px; 
+                padding: 15px; 
+                border: 1px solid var(--color-border); 
+                border-left: 4px solid var(--color-sea-blue); 
+                border-radius: 0 5px 5px 0; 
+                background: #fff;
+            }
+            .problem-meta {
+                display: flex;
+                align-items: center;
+                margin-bottom: 12px;
+            }
+            .problem-number { 
+                font-family: 'Inter', sans-serif; 
+                font-weight: 700; 
+                color: white;
+                background-color: var(--color-sea-blue);
+                border-radius: 50%;
+                width: 32px;
+                height: 32px;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 10px;
+                font-size: 11pt;
+                flex-shrink: 0;
+            }
+            .problem-text { 
+                font-size: 11pt; 
+                margin-bottom: 12px; 
+                line-height: 1.8;
+                text-align: justify;
+            }
+            .problem-text u {
+                text-decoration: underline;
+                text-decoration-color: var(--color-warm-orange);
+                text-decoration-thickness: 1.5px;
+                font-weight: 500;
+            }
+            .problem-question {
+                margin-top: 15px;
+                padding: 12px 15px;
+                background-color: var(--color-bg-light);
+                border: 1px solid var(--color-border);
+                border-left: 4px solid var(--color-warm-orange);
+                border-radius: 0 5px 5px 0;
+                font-size: 10.5pt;
+                font-style: italic;
+                color: var(--color-deep-blue);
+                font-weight: 500;
+            }
+            .problem-choices { 
+                list-style: none; 
+                padding-left: 0; 
+                font-size: 10.5pt; 
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 5px 20px;
+            }
+            .problem-choices li { 
+                margin-bottom: 4px; 
+                padding: 6px 10px; 
+                border-radius: 4px;
+                display: flex;
+                align-items: baseline;
+                text-align: justify;
+            }
+            .problem-choices li:hover {
+                background-color: var(--color-bg-light);
+            }
+            .choice-number {
+                font-family: 'Inter', sans-serif;
+                font-weight: 600;
+                color: var(--color-deep-blue);
+                margin-right: 8px;
+            }
+    
+            /* =================================================================== */
+            /* 정답 및 해설 스타일                                                 */
+            /* =================================================================== */
+            .answer-key-section .section-title {
+                color: var(--color-warm-orange);
+                border-bottom-color: var(--color-sea-blue);
+            }
+            .quick-answer-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(65px, 1fr));
+                gap: 8px;
+                margin: 20px 0;
+                text-align: center;
+                font-size: 10pt;
+                font-family: 'Inter', sans-serif;
+            }
+            .quick-answer-item {
+                padding: 8px;
+                border: 1px solid var(--color-border);
+                border-radius: 4px;
+                background-color: var(--color-bg-light);
+            }
+            .quick-answer-item .num {
+                font-weight: 700;
+                color: var(--color-text-light);
+            }
+            .quick-answer-item .ans {
+                font-weight: 700;
+                color: var(--color-deep-blue);
+            }
+            .explanation-block {
+                margin-bottom: 15px;
+                padding-top: 15px;
+                border-top: 1px solid var(--color-border);
+            }
+            .explanation-block:first-of-type {
+                border-top: none;
+                padding-top: 0;
+            }
+            .explanation-header {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+            .explanation-header .problem-number {
+                background-color: var(--color-warm-orange);
+            }
+            .explanation-header .correct-answer {
+                font-family: 'Inter', sans-serif;
+                font-size: 12pt;
+                font-weight: 700;
+                color: var(--color-deep-blue);
+            }
+            .explanation-content {
+                font-size: 10.5pt;
+                padding: 10px 15px;
+                background-color: var(--color-bg-light);
+                border-radius: 5px;
+                text-align: justify;
+    
+            }
+            .explanation-content b {
+                color: var(--color-sea-blue);
+            }
+            
+            /* =================================================================== */
+            /* 유틸리티 및 인쇄 최적화                                             */
+            /* =================================================================== */
+            .avoid-break { break-inside: avoid; page-break-inside: avoid; }
+            
+            @media print { 
+                body { background: #fff; } 
+                .page { margin: 0; box-shadow: none; } 
+            }
+            p, li, div { orphans: 3; widows: 3; }
+            .practice-section-header, .section-title, .part-header { break-after: avoid-page; }
+            .problem-block, .tip-box, .grammar-table { break-inside: avoid; }
+    
+        </style>
+    </head>
+    <body>
+            <!-- =================================================================== -->
+            <!-- 연습문제 페이지 시작 (301-350)                                     -->
+            <!-- =================================================================== -->
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 7 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="practice-section-header first-in-page eng-text">Part 7 - Practice Problems</div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">301</span></div>
+                        <div class="problem-text">①<u>A researcher</u> proposed ②<u>a novel theory</u> regarding quantum mechanics, and ③<u>a theory</u> was later ④<u>published</u> in ⑤<u>the prestigious journal</u>.</div>
+                        <div class="problem-question">다음 문장에서 밑줄 친 부분 중 어법상 틀린 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> A researcher</li>
+                            <li><span class="choice-number">②</span> a novel theory</li>
+                            <li><span class="choice-number">③</span> a theory</li>
+                            <li><span class="choice-number">④</span> published</li>
+                            <li><span class="choice-number">⑤</span> the prestigious journal</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">302</span></div>
+                        <div class="problem-text">_______ computer has revolutionized modern society.</div>
+                        <div class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> A</li>
+                            <li><span class="choice-number">②</span> An</li>
+                            <li><span class="choice-number">③</span> The</li>
+                            <li><span class="choice-number">④</span> Some</li>
+                            <li><span class="choice-number">⑤</span> 관사 없음</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 7 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">303</span></div>
+                        <div class="problem-question">다음 중 총칭 표현이 올바른 것은?</div>
+                        <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                            <li><span class="choice-number">①</span> The man is a social animal.</li>
+                            <li><span class="choice-number">②</span> A tiger are dangerous animals.</li>
+                            <li><span class="choice-number">③</span> Tiger is a wild animal.</li>
+                            <li><span class="choice-number">④</span> The tigers are endangered species.</li>
+                            <li><span class="choice-number">⑤</span> Tigers are beautiful creatures.</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">304</span></div>
+                        <div class="problem-text">He lived _______ difficult life during the war.</div>
+                        <div class="problem-question">다음 문장의 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> the</li>
+                            <li><span class="choice-number">②</span> a</li>
+                            <li><span class="choice-number">③</span> an</li>
+                            <li><span class="choice-number">④</span> some</li>
+                            <li><span class="choice-number">⑤</span> 관사 없음</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 7 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">305</span></div>
+                        <div class="problem-question">다음 중 어법상 올바른 문장은?</div>
+                        <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                            <li><span class="choice-number">①</span> My son goes to school to meet his teacher.</li>
+                            <li><span class="choice-number">②</span> The prisoner was released from the prison.</li>
+                            <li><span class="choice-number">③</span> Children should go to bed early.</li>
+                            <li><span class="choice-number">④</span> She sat on bed and read a book.</li>
+                            <li><span class="choice-number">⑤</span> He went to the church to pray.</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">306</span></div>
+                        <div class="problem-text">We studied _______ history of ancient Rome in class.</div>
+                        <div class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> a</li>
+                            <li><span class="choice-number">②</span> an</li>
+                            <li><span class="choice-number">③</span> the</li>
+                            <li><span class="choice-number">④</span> some</li>
+                            <li><span class="choice-number">⑤</span> 관사 없음</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 7 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">307</span></div>
+                        <div class="problem-question">다음 중 고유명사의 관사 사용이 올바른 것은?</div>
+                        <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                            <li><span class="choice-number">①</span> We visited British Museum yesterday.</li>
+                            <li><span class="choice-number">②</span> The Samsung is a Korean company.</li>
+                            <li><span class="choice-number">③</span> Pacific Ocean is the largest ocean.</li>
+                            <li><span class="choice-number">④</span> Mount Everest is the highest mountain.</li>
+                            <li><span class="choice-number">⑤</span> I read the Wall Street Journal.</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">308</span></div>
+                        <div class="problem-text">①<u>All</u> ②<u>the</u> ③<u>student</u> must ④<u>submit</u> their ⑤<u>reports</u>.</div>
+                        <div class="problem-question">다음 문장에서 어법상 틀린 부분을 찾은 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> All</li>
+                            <li><span class="choice-number">②</span> the</li>
+                            <li><span class="choice-number">③</span> student</li>
+                            <li><span class="choice-number">④</span> submit</li>
+                            <li><span class="choice-number">⑤</span> reports</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 7 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">309</span></div>
+                        <div class="problem-text">The speed limit is 80 kilometers _______ hour.</div>
+                        <div class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> a</li>
+                            <li><span class="choice-number">②</span> an</li>
+                            <li><span class="choice-number">③</span> the</li>
+                            <li><span class="choice-number">④</span> per</li>
+                            <li><span class="choice-number">⑤</span> 관사 없음</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">310</span></div>
+                        <div class="problem-question">다음 중 신체 부위 앞의 관사 사용이 올바른 것은?</div>
+                        <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                            <li><span class="choice-number">①</span> The ball hit him on his head.</li>
+                            <li><span class="choice-number">②</span> She looked me straight in the eye.</li>
+                            <li><span class="choice-number">③</span> The doctor examined my the shoulder.</li>
+                            <li><span class="choice-number">④</span> He touched her on her arm gently.</li>
+                            <li><span class="choice-number">⑤</span> The injury was on the his leg.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 7 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">311</span></div>
+                        <div class="problem-text">_______ beauty of the sunset took our breath away.</div>
+                        <div class="problem-question">다음 문장의 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> A</li>
+                            <li><span class="choice-number">②</span> An</li>
+                            <li><span class="choice-number">③</span> The</li>
+                            <li><span class="choice-number">④</span> Such</li>
+                            <li><span class="choice-number">⑤</span> 관사 없음</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">312</span></div>
+                        <div class="problem-question">다음 중 어법상 틀린 문장은?</div>
+                        <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                            <li><span class="choice-number">①</span> Physics is my favorite subject.</li>
+                            <li><span class="choice-number">②</span> The physics of quantum mechanics is complex.</li>
+                            <li><span class="choice-number">③</span> I had the breakfast at home.</li>
+                            <li><span class="choice-number">④</span> We enjoyed a delicious lunch together.</li>
+                            <li><span class="choice-number">⑤</span> Dinner was served at eight o'clock.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 7 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">313</span></div>
+                        <div class="problem-text">Birds of _______ feather flock together.</div>
+                        <div class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> the</li>
+                            <li><span class="choice-number">②</span> a</li>
+                            <li><span class="choice-number">③</span> an</li>
+                            <li><span class="choice-number">④</span> same</li>
+                            <li><span class="choice-number">⑤</span> 관사 없음</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">314</span></div>
+                        <div class="problem-question">다음 중 총칭 표현이 적절하지 않은 것은?</div>
+                        <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                            <li><span class="choice-number">①</span> A whale is a mammal, not a fish.</li>
+                            <li><span class="choice-number">②</span> The elephant is the largest land animal.</li>
+                            <li><span class="choice-number">③</span> Dogs are faithful companions.</li>
+                            <li><span class="choice-number">④</span> The man is mortal beings.</li>
+                            <li><span class="choice-number">⑤</span> An owl can see in the dark.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 7 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">315</span></div>
+                        <div class="problem-text">She has <u>a deep knowledge</u> of art history.</div>
+                        <div class="problem-question">다음 문장에서 밑줄 친 부분을 올바르게 고친 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> deep knowledge</li>
+                            <li><span class="choice-number">②</span> the deep knowledge</li>
+                            <li><span class="choice-number">③</span> some deep knowledge</li>
+                            <li><span class="choice-number">④</span> much deep knowledge</li>
+                            <li><span class="choice-number">⑤</span> 수정이 필요 없음</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">316</span></div>
+                        <div class="problem-text">We crossed _______ Thames during our visit to London.</div>
+                        <div class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> a</li>
+                            <li><span class="choice-number">②</span> an</li>
+                            <li><span class="choice-number">③</span> the</li>
+                            <li><span class="choice-number">④</span> some</li>
+                            <li><span class="choice-number">⑤</span> 관사 없음</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 7 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">317</span></div>
+                        <div class="problem-question">다음 중 어법상 올바른 문장은?</div>
+                        <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                            <li><span class="choice-number">①</span> I read the New York Times every morning.</li>
+                            <li><span class="choice-number">②</span> Samsung is the Korean company.</li>
+                            <li><span class="choice-number">③</span> We visited the Central Park yesterday.</li>
+                            <li><span class="choice-number">④</span> The baseball is my favorite sport.</li>
+                            <li><span class="choice-number">⑤</span> He studies the physics at university.</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">318</span></div>
+                        <div class="problem-text">_______ such complicated problem requires careful analysis.</div>
+                        <div class="problem-question">다음 문장의 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> A</li>
+                            <li><span class="choice-number">②</span> An</li>
+                            <li><span class="choice-number">③</span> The</li>
+                            <li><span class="choice-number">④</span> Such a</li>
+                            <li><span class="choice-number">⑤</span> What a</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 7 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">319</span></div>
+                        <div class="problem-question">다음 중 무관사 사용이 올바른 것은?</div>
+                        <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                            <li><span class="choice-number">①</span> He went to hospital for treatment.</li>
+                            <li><span class="choice-number">②</span> She visited the school for a meeting.</li>
+                            <li><span class="choice-number">③</span> The children are at the bed.</li>
+                            <li><span class="choice-number">④</span> He was released from prison yesterday.</li>
+                            <li><span class="choice-number">⑤</span> We went to the church on Sunday.</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">320</span></div>
+                        <div class="problem-text">We spent ①<u>half</u> ②<u>a</u> ③<u>day</u> ④<u>analyzing</u> ⑤<u>the data</u>.</div>
+                        <div class="problem-question">다음 문장에서 어법상 틀린 부분을 찾은 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> half</li>
+                            <li><span class="choice-number">②</span> a</li>
+                            <li><span class="choice-number">③</span> day</li>
+                            <li><span class="choice-number">④</span> analyzing</li>
+                            <li><span class="choice-number">⑤</span> 어법상 틀린 부분이 없음</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 7 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">321</span></div>
+                        <div class="problem-text">_______ life is full of surprises.</div>
+                        <div class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> The</li>
+                            <li><span class="choice-number">②</span> A</li>
+                            <li><span class="choice-number">③</span> An</li>
+                            <li><span class="choice-number">④</span> Such</li>
+                            <li><span class="choice-number">⑤</span> 관사 없음</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">322</span></div>
+                        <div class="problem-question">다음 중 관사 사용이 올바른 것은?</div>
+                        <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                            <li><span class="choice-number">①</span> We climbed the Mount Fuji last summer.</li>
+                            <li><span class="choice-number">②</span> The Alps are located in Europe.</li>
+                            <li><span class="choice-number">③</span> I swam in the Lake Superior.</li>
+                            <li><span class="choice-number">④</span> The Jeju Island is beautiful.</li>
+                            <li><span class="choice-number">⑤</span> We sailed across Pacific Ocean.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 7 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">323</span></div>
+                        <div class="problem-text">The research revealed _______ fascinating insight into human behavior.</div>
+                        <div class="problem-question">다음 문장의 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> a</li>
+                            <li><span class="choice-number">②</span> an</li>
+                            <li><span class="choice-number">③</span> the</li>
+                            <li><span class="choice-number">④</span> some</li>
+                            <li><span class="choice-number">⑤</span> 관사 없음</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">324</span></div>
+                        <div class="problem-question">다음 중 어법상 틀린 문장은?</div>
+                        <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                            <li><span class="choice-number">①</span> The United States is a large country.</li>
+                            <li><span class="choice-number">②</span> Republic of Korea is in East Asia.</li>
+                            <li><span class="choice-number">③</span> The Netherlands is famous for tulips.</li>
+                            <li><span class="choice-number">④</span> The Philippines consists of many islands.</li>
+                            <li><span class="choice-number">⑤</span> The United Kingdom includes England.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 7 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">325</span></div>
+                        <div class="problem-text">He hit the ball with _______ bat.</div>
+                        <div class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> a</li>
+                            <li><span class="choice-number">②</span> an</li>
+                            <li><span class="choice-number">③</span> the</li>
+                            <li><span class="choice-number">④</span> his</li>
+                            <li><span class="choice-number">⑤</span> 관사 없음</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">326</span></div>
+                        <div class="problem-text">She looked at me ①<u>straight</u> in ②<u>a</u> ③<u>eye</u> and ④<u>told</u> ⑤<u>the truth</u>.</div>
+                        <div class="problem-question">다음 문장에서 어법상 틀린 부분을 찾은 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> straight</li>
+                            <li><span class="choice-number">②</span> a</li>
+                            <li><span class="choice-number">③</span> eye</li>
+                            <li><span class="choice-number">④</span> told</li>
+                            <li><span class="choice-number">⑤</span> the truth</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 7 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">327</span></div>
+                        <div class="problem-question">다음 중 추상명사의 관사 사용이 올바른 것은?</div>
+                        <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                            <li><span class="choice-number">①</span> The knowledge is power.</li>
+                            <li><span class="choice-number">②</span> She has the great patience.</li>
+                            <li><span class="choice-number">③</span> Love is a beautiful emotion.</li>
+                            <li><span class="choice-number">④</span> The happiness comes from within.</li>
+                            <li><span class="choice-number">⑤</span> He showed a remarkable courage.</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">328</span></div>
+                        <div class="problem-text">My daughter goes to _______ school by bus every morning.</div>
+                        <div class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> a</li>
+                            <li><span class="choice-number">②</span> an</li>
+                            <li><span class="choice-number">③</span> the</li>
+                            <li><span class="choice-number">④</span> her</li>
+                            <li><span class="choice-number">⑤</span> 관사 없음</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 7 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">329</span></div>
+                        <div class="problem-question">다음 중 어법상 올바른 문장은?</div>
+                        <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                            <li><span class="choice-number">①</span> The cancer is a serious disease.</li>
+                            <li><span class="choice-number">②</span> He plays the tennis every weekend.</li>
+                            <li><span class="choice-number">③</span> Mathematics is a difficult subject.</li>
+                            <li><span class="choice-number">④</span> The poverty is a global problem.</li>
+                            <li><span class="choice-number">⑤</span> She studies the literature at college.</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">330</span></div>
+                        <div class="problem-text">We stayed at _______ Hotel Plaza during our vacation.</div>
+                        <div class="problem-question">다음 문장의 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> a</li>
+                            <li><span class="choice-number">②</span> an</li>
+                            <li><span class="choice-number">③</span> the</li>
+                            <li><span class="choice-number">④</span> some</li>
+                            <li><span class="choice-number">⑤</span> 관사 없음</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 7 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">331</span></div>
+                        <div class="problem-question">다음 중 총칭 표현의 뉘앙스가 가장 격식적인 것은?</div>
+                        <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                            <li><span class="choice-number">①</span> A lion is the king of the jungle.</li>
+                            <li><span class="choice-number">②</span> The lion is the king of the jungle.</li>
+                            <li><span class="choice-number">③</span> Lions are the kings of the jungle.</li>
+                            <li><span class="choice-number">④</span> Lion is the king of the jungle.</li>
+                            <li><span class="choice-number">⑤</span> The lions are the kings of the jungle.</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">332</span></div>
+                        <div class="problem-text">①<u>Both</u> ②<u>the</u> ③<u>student</u> are ④<u>working</u> on ⑤<u>their</u> projects.</div>
+                        <div class="problem-question">다음 문장에서 어법상 틀린 부분을 찾은 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> Both</li>
+                            <li><span class="choice-number">②</span> the</li>
+                            <li><span class="choice-number">③</span> student</li>
+                            <li><span class="choice-number">④</span> working</li>
+                            <li><span class="choice-number">⑤</span> their</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 7 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">333</span></div>
+                        <div class="problem-text">He was in _______ prison for five years.</div>
+                        <div class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> a</li>
+                            <li><span class="choice-number">②</span> an</li>
+                            <li><span class="choice-number">③</span> the</li>
+                            <li><span class="choice-number">④</span> some</li>
+                            <li><span class="choice-number">⑤</span> 관사 없음</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">334</span></div>
+                        <div class="problem-question">다음 중 어법상 올바른 문장은?</div>
+                        <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                            <li><span class="choice-number">①</span> We visited the Harvard University.</li>
+                            <li><span class="choice-number">②</span> The Titanic sank in 1912.</li>
+                            <li><span class="choice-number">③</span> I work for the Samsung Company.</li>
+                            <li><span class="choice-number">④</span> She graduated from the Seoul National University.</li>
+                            <li><span class="choice-number">⑤</span> We live near the Seoul Station.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 7 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">335</span></div>
+                        <div class="problem-text">We had _______ wonderful time at the party.</div>
+                        <div class="problem-question">다음 문장의 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> a</li>
+                            <li><span class="choice-number">②</span> an</li>
+                            <li><span class="choice-number">③</span> the</li>
+                            <li><span class="choice-number">④</span> such</li>
+                            <li><span class="choice-number">⑤</span> 관사 없음</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">336</span></div>
+                        <div class="problem-question">다음 중 관사의 어순이 올바른 것은?</div>
+                        <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                            <li><span class="choice-number">①</span> All students the participated in the contest.</li>
+                            <li><span class="choice-number">②</span> The all students participated in the contest.</li>
+                            <li><span class="choice-number">③</span> All the students participated in the contest.</li>
+                            <li><span class="choice-number">④</span> Students all the participated in the contest.</li>
+                            <li><span class="choice-number">⑤</span> The students all participated in the contest.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 7 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">337</span></div>
+                        <div class="problem-text">We sailed across _______ Mediterranean Sea.</div>
+                        <div class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> a</li>
+                            <li><span class="choice-number">②</span> an</li>
+                            <li><span class="choice-number">③</span> the</li>
+                            <li><span class="choice-number">④</span> some</li>
+                            <li><span class="choice-number">⑤</span> 관사 없음</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">338</span></div>
+                        <div class="problem-text">He showed ①<u>such</u> ②<u>a</u> ③<u>great</u> ④<u>interested</u> in ⑤<u>the project</u>.</div>
+                        <div class="problem-question">다음 문장에서 어법상 틀린 부분을 찾은 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> such</li>
+                            <li><span class="choice-number">②</span> a</li>
+                            <li><span class="choice-number">③</span> great</li>
+                            <li><span class="choice-number">④</span> interested</li>
+                            <li><span class="choice-number">⑤</span> the project</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 7 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">339</span></div>
+                        <div class="problem-question">다음 중 어법상 올바른 문장은?</div>
+                        <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                            <li><span class="choice-number">①</span> The teacher went to the school early.</li>
+                            <li><span class="choice-number">②</span> The patient was taken to hospital.</li>
+                            <li><span class="choice-number">③</span> The family went to the church together.</li>
+                            <li><span class="choice-number">④</span> The children should go to the bed early.</li>
+                            <li><span class="choice-number">⑤</span> The criminal was sent to the prison.</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">340</span></div>
+                        <div class="problem-text">_______ Progress in science depends on careful research.</div>
+                        <div class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> A</li>
+                            <li><span class="choice-number">②</span> An</li>
+                            <li><span class="choice-number">③</span> The</li>
+                            <li><span class="choice-number">④</span> Such</li>
+                            <li><span class="choice-number">⑤</span> 관사 없음</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 7 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">341</span></div>
+                        <div class="problem-question">다음 중 고유명사의 관사 사용이 틀린 것은?</div>
+                        <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                            <li><span class="choice-number">①</span> The Sahara Desert is vast.</li>
+                            <li><span class="choice-number">②</span> We live in the Seoul.</li>
+                            <li><span class="choice-number">③</span> The White House is in Washington.</li>
+                            <li><span class="choice-number">④</span> Lake Baikal is very deep.</li>
+                            <li><span class="choice-number">⑤</span> The Congo River flows through Africa.</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">342</span></div>
+                        <div class="problem-text">What _______ beautiful sunset we saw yesterday!</div>
+                        <div class="problem-question">다음 문장의 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> a</li>
+                            <li><span class="choice-number">②</span> an</li>
+                            <li><span class="choice-number">③</span> the</li>
+                            <li><span class="choice-number">④</span> such</li>
+                            <li><span class="choice-number">⑤</span> 관사 없음</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 7 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">343</span></div>
+                        <div class="problem-question">다음 중 어법상 올바른 문장은?</div>
+                        <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                            <li><span class="choice-number">①</span> Twice the size of our house is expensive.</li>
+                            <li><span class="choice-number">②</span> Twice a size of our house is expensive.</li>
+                            <li><span class="choice-number">③</span> The house is twice the size of ours.</li>
+                            <li><span class="choice-number">④</span> The house is twice a size of ours.</li>
+                            <li><span class="choice-number">⑤</span> The house is the twice size of ours.</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">344</span></div>
+                        <div class="problem-text">The ball hit him ①<u>on</u> ②<u>his</u> ③<u>head</u> and ④<u>he</u> ⑤<u>fell down</u>.</div>
+                        <div class="problem-question">다음 문장에서 어법상 틀린 부분을 찾은 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> on</li>
+                            <li><span class="choice-number">②</span> his</li>
+                            <li><span class="choice-number">③</span> head</li>
+                            <li><span class="choice-number">④</span> he</li>
+                            <li><span class="choice-number">⑤</span> fell down</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 7 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">345</span></div>
+                        <div class="problem-text">_______ beauty is in the eye of the beholder.</div>
+                        <div class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> A</li>
+                            <li><span class="choice-number">②</span> An</li>
+                            <li><span class="choice-number">③</span> The</li>
+                            <li><span class="choice-number">④</span> Such</li>
+                            <li><span class="choice-number">⑤</span> 관사 없음</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">346</span></div>
+                        <div class="problem-question">다음 중 어법상 올바른 문장은?</div>
+                        <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                            <li><span class="choice-number">①</span> The life of a student is challenging.</li>
+                            <li><span class="choice-number">②</span> A life of a student is challenging.</li>
+                            <li><span class="choice-number">③</span> Life of a student is challenging.</li>
+                            <li><span class="choice-number">④</span> The life of the student is challenging.</li>
+                            <li><span class="choice-number">⑤</span> A life of the student is challenging.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 7 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">347</span></div>
+                        <div class="problem-text">Double _______ amount would be needed for the project.</div>
+                        <div class="problem-question">다음 문장의 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> a</li>
+                            <li><span class="choice-number">②</span> an</li>
+                            <li><span class="choice-number">③</span> the</li>
+                            <li><span class="choice-number">④</span> such</li>
+                            <li><span class="choice-number">⑤</span> 관사 없음</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">348</span></div>
+                        <div class="problem-question">다음 중 총칭 표현이 부적절한 것은?</div>
+                        <ul class="problem-choices" style="grid-template-columns: 1fr;">
+                            <li><span class="choice-number">①</span> The dog is man's best friend.</li>
+                            <li><span class="choice-number">②</span> A computer is useful for work.</li>
+                            <li><span class="choice-number">③</span> Computers have changed our lives.</li>
+                            <li><span class="choice-number">④</span> The computers are electronic devices.</li>
+                            <li><span class="choice-number">⑤</span> A tiger is a dangerous animal.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 7 연습문제</span>
+                </div>
+                <div class="page-content">
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">349</span></div>
+                        <div class="problem-text">We enjoyed ①<u>a</u> ②<u>delicious</u> ③<u>dinner</u> at ④<u>the</u> ⑤<u>new restaurant</u>.</div>
+                        <div class="problem-question">다음 문장에서 어법상 틀린 부분을 찾은 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> a</li>
+                            <li><span class="choice-number">②</span> delicious</li>
+                            <li><span class="choice-number">③</span> dinner</li>
+                            <li><span class="choice-number">④</span> the</li>
+                            <li><span class="choice-number">⑤</span> 어법상 틀린 부분이 없음</li>
+                        </ul>
+                    </div>
+        
+                    <div class="problem-block">
+                        <div class="problem-meta"><span class="problem-number">350</span></div>
+                        <div class="problem-text">We visited _______ British Museum and _______ Buckingham Palace.</div>
+                        <div class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</div>
+                        <ul class="problem-choices">
+                            <li><span class="choice-number">①</span> the / the</li>
+                            <li><span class="choice-number">②</span> a / a</li>
+                            <li><span class="choice-number">③</span> the / 관사 없음</li>
+                            <li><span class="choice-number">④</span> 관사 없음 / the</li>
+                            <li><span class="choice-number">⑤</span> a / the</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <!-- =================================================================== -->
+            <!-- 정답 및 해설 페이지 시작                                              -->
+            <!-- =================================================================== -->
+            <div class="page answer-key-section">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 7 정답 및 해설</span>
+                </div>
+                <div class="page-content">
+                    <div class="section-title first-in-page eng-text">Quick Answers</div>
+                    <div class="quick-answer-grid">
+                        <div class="quick-answer-item"><span class="num">301.</span> <span class="ans">③</span></div>
+                        <div class="quick-answer-item"><span class="num">302.</span> <span class="ans">③</span></div>
+                        <div class="quick-answer-item"><span class="num">303.</span> <span class="ans">⑤</span></div>
+                        <div class="quick-answer-item"><span class="num">304.</span> <span class="ans">②</span></div>
+                        <div class="quick-answer-item"><span class="num">305.</span> <span class="ans">③</span></div>
+                        <div class="quick-answer-item"><span class="num">306.</span> <span class="ans">③</span></div>
+                        <div class="quick-answer-item"><span class="num">307.</span> <span class="ans">④</span></div>
+                        <div class="quick-answer-item"><span class="num">308.</span> <span class="ans">③</span></div>
+                        <div class="quick-answer-item"><span class="num">309.</span> <span class="ans">②</span></div>
+                        <div class="quick-answer-item"><span class="num">310.</span> <span class="ans">②</span></div>
+                        <div class="quick-answer-item"><span class="num">311.</span> <span class="ans">③</span></div>
+                        <div class="quick-answer-item"><span class="num">312.</span> <span class="ans">③</span></div>
+                        <div class="quick-answer-item"><span class="num">313.</span> <span class="ans">②</span></div>
+                        <div class="quick-answer-item"><span class="num">314.</span> <span class="ans">④</span></div>
+                        <div class="quick-answer-item"><span class="num">315.</span> <span class="ans">⑤</span></div>
+                        <div class="quick-answer-item"><span class="num">316.</span> <span class="ans">③</span></div>
+                        <div class="quick-answer-item"><span class="num">317.</span> <span class="ans">①</span></div>
+                        <div class="quick-answer-item"><span class="num">318.</span> <span class="ans">④</span></div>
+                        <div class="quick-answer-item"><span class="num">319.</span> <span class="ans">④</span></div>
+                        <div class="quick-answer-item"><span class="num">320.</span> <span class="ans">⑤</span></div>
+                        <div class="quick-answer-item"><span class="num">321.</span> <span class="ans">⑤</span></div>
+                        <div class="quick-answer-item"><span class="num">322.</span> <span class="ans">②</span></div>
+                        <div class="quick-answer-item"><span class="num">323.</span> <span class="ans">②</span></div>
+                        <div class="quick-answer-item"><span class="num">324.</span> <span class="ans">②</span></div>
+                        <div class="quick-answer-item"><span class="num">325.</span> <span class="ans">①</span></div>
+                        <div class="quick-answer-item"><span class="num">326.</span> <span class="ans">②</span></div>
+                        <div class="quick-answer-item"><span class="num">327.</span> <span class="ans">⑤</span></div>
+                        <div class="quick-answer-item"><span class="num">328.</span> <span class="ans">⑤</span></div>
+                        <div class="quick-answer-item"><span class="num">329.</span> <span class="ans">③</span></div>
+                        <div class="quick-answer-item"><span class="num">330.</span> <span class="ans">③</span></div>
+                        <div class="quick-answer-item"><span class="num">331.</span> <span class="ans">②</span></div>
+                        <div class="quick-answer-item"><span class="num">332.</span> <span class="ans">③</span></div>
+                        <div class="quick-answer-item"><span class="num">333.</span> <span class="ans">⑤</span></div>
+                        <div class="quick-answer-item"><span class="num">334.</span> <span class="ans">②</span></div>
+                        <div class="quick-answer-item"><span class="num">335.</span> <span class="ans">①</span></div>
+                        <div class="quick-answer-item"><span class="num">336.</span> <span class="ans">③</span></div>
+                        <div class="quick-answer-item"><span class="num">337.</span> <span class="ans">③</span></div>
+                        <div class="quick-answer-item"><span class="num">338.</span> <span class="ans">④</span></div>
+                        <div class="quick-answer-item"><span class="num">339.</span> <span class="ans">②</span></div>
+                        <div class="quick-answer-item"><span class="num">340.</span> <span class="ans">⑤</span></div>
+                        <div class="quick-answer-item"><span class="num">341.</span> <span class="ans">②</span></div>
+                        <div class="quick-answer-item"><span class="num">342.</span> <span class="ans">①</span></div>
+                        <div class="quick-answer-item"><span class="num">343.</span> <span class="ans">③</span></div>
+                        <div class="quick-answer-item"><span class="num">344.</span> <span class="ans">②</span></div>
+                        <div class="quick-answer-item"><span class="num">345.</span> <span class="ans">⑤</span></div>
+                        <div class="quick-answer-item"><span class="num">346.</span> <span class="ans">①</span></div>
+                        <div class="quick-answer-item"><span class="num">347.</span> <span class="ans">③</span></div>
+                        <div class="quick-answer-item"><span class="num">348.</span> <span class="ans">④</span></div>
+                        <div class="quick-answer-item"><span class="num">349.</span> <span class="ans">⑤</span></div>
+                        <div class="quick-answer-item"><span class="num">350.</span> <span class="ans">③</span></div>
+                    </div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+            
+            <div class="page answer-key-section">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 7 정답 및 해설</span>
+                </div>
+                <div class="page-content">
+                    <div class="section-title first-in-page eng-text">Detailed Explanations</div>
+                    
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">301</span><span class="correct-answer">정답: ③</span></div><div class="explanation-content"><b>해설</b>: 문장에서 한번 언급된 명사(a novel theory)를 다시 지칭할 때는 정관사 <b>the</b>를 사용해야 합니다. 따라서 'a theory'를 'the theory'로 고쳐야 합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">302</span><span class="correct-answer">정답: ③</span></div><div class="explanation-content"><b>해설</b>: '컴퓨터'라는 발명품이 현대 사회에 미친 영향을 총칭하여 말할 때, 종족 전체를 대표하는 <b>The + 단수명사</b> 형태를 사용합니다. 이는 가장 격식적인 총칭 표현입니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">303</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: <b>무관사 + 복수명사</b>(Tigers)는 가장 일반적인 총칭 표현입니다. ① 'man'은 총칭일 때 무관사, ④ 'the + 복수명사'는 총칭으로 쓰이지 않습니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">304</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 추상명사 'life'가 형용사 'difficult'의 수식을 받아 '어려운 종류의 삶'이라는 구체적인 사례를 의미하므로, 부정관사 <b>a</b>를 사용합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">305</span><span class="correct-answer">정답: ③</span></div><div class="explanation-content"><b>해설</b>: 'go to bed'(잠자리에 들다)는 장소의 본래 목적으로 사용되어 무관사가 맞습니다. ① 방문 목적이므로 'the school', ④ 물리적 가구이므로 'on the bed', ⑤ 기도 목적이므로 'to church'가 되어야 합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">306</span><span class="correct-answer">정답: ③</span></div><div class="explanation-content"><b>해설</b>: 추상명사 'history'가 'of ancient Rome'이라는 후치 수식어구에 의해 '고대 로마의 역사'로 한정되므로 정관사 <b>the</b>를 사용해야 합니다.</div></div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page answer-key-section">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 7 정답 및 해설</span>
+                </div>
+                <div class="page-content">
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">307</span><span class="correct-answer">정답: ④</span></div><div class="explanation-content"><b>해설</b>: 개별 산 이름(Mount Everest) 앞에는 관사를 붙이지 않습니다. ① the British Museum, ③ The Pacific Ocean, ⑤ the Wall Street Journal이 맞습니다. (문제 수정: ⑤도 정답)</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">308</span><span class="correct-answer">정답: ③</span></div><div class="explanation-content"><b>해설</b>: 전치 한정사 'All the' 뒤에는 셀 수 있는 명사의 복수형이 와야 합니다. 따라서 'student'를 <b>students</b>로 고쳐야 합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">309</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 부정관사는 '~당, ~마다'(per)의 의미로 사용될 수 있습니다. 'hour'는 철자는 h로 시작하지만 발음은 모음(/aʊər/)으로 시작하므로 <b>an</b>을 사용합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">310</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: '타동사 + 목적어(사람) + 전치사 + the + 신체부위' 구문이 올바르게 사용되었습니다. ①, ④처럼 소유격을 쓰는 것도 가능하지만, 정관사를 쓰는 것이 더 일반적입니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">311</span><span class="correct-answer">정답: ③</span></div><div class="explanation-content"><b>해설</b>: 추상명사 'beauty'가 'of the sunset'에 의해 '일몰의 아름다움'으로 특정화되었으므로 정관사 <b>the</b>를 사용합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">312</span><span class="correct-answer">정답: ③</span></div><div class="explanation-content"><b>해설</b>: 일반적인 식사명(breakfast, lunch, dinner) 앞에는 관사를 붙이지 않습니다. 따라서 'had breakfast'가 맞습니다. ④는 'delicious'라는 형용사가 수식하여 '하나의 맛있는 점심 식사'라는 구체적인 사건을 의미하므로 'a'를 쓸 수 있습니다.</div></div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page answer-key-section">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 7 정답 및 해설</span>
+                </div>
+                <div class="page-content">
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">313</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 'Birds of a feather flock together'(유유상종)는 속담입니다. 여기서 부정관사 <b>a</b>는 '동일한'(the same)의 의미로 사용된 특수 용법입니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">314</span><span class="correct-answer">정답: ④</span></div><div class="explanation-content"><b>해설</b>: 인류 전체를 총칭할 때 'man'은 관사 없이 사용하며 단수 취급합니다. 따라서 'Man is a mortal being'이 되어야 합니다. 'The man'은 '그 남자'라는 특정인을 의미합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">315</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: 추상명사 'knowledge'가 형용사 'deep'의 수식을 받아 '깊은 종류의 지식'이라는 구체적인 의미를 나타내므로, 부정관사 'a'를 사용하는 것이 올바릅니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">316</span><span class="correct-answer">정답: ③</span></div><div class="explanation-content"><b>해설</b>: 강(river) 이름 앞에는 정관사 <b>the</b>를 붙이는 것이 원칙입니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">317</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: 신문 이름(the New York Times) 앞에는 정관사 'the'를 사용합니다. ② 회사명, ③ 공원 이름, ④ 운동 경기, ⑤ 학과명 앞에는 관사를 쓰지 않습니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">318</span><span class="correct-answer">정답: ④</span></div><div class="explanation-content"><b>해설</b>: 'such + a/an + 형용사 + 명사'의 어순을 따릅니다. 따라서 <b>Such a</b> complicated problem이 올바른 형태입니다.</div></div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page answer-key-section">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 7 정답 및 해설</span>
+                </div>
+                <div class="page-content">
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">319</span><span class="correct-answer">정답: ④</span></div><div class="explanation-content"><b>해설</b>: '수감'이라는 본래 목적으로 사용될 때 'prison'은 무관사입니다. ②는 방문 목적이므로 'the school'이 맞습니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">320</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: 'half a day'는 '반나절'이라는 의미의 올바른 표현입니다. 문장의 모든 요소가 문법적으로 정확합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">321</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: '인생'이라는 일반적이고 총체적인 개념을 나타내는 추상명사 'life'는 <b>관사 없이</b> 사용합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">322</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 산맥(the Alps) 이름 앞에는 정관사 'the'를 사용합니다. ① 개별 산(Mount Fuji), ③ 호수(Lake Superior), ④ 개별 섬(Jeju Island)은 무관사입니다. ⑤ 해양(the Pacific Ocean)은 정관사가 필요합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">323</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: '통찰력'이라는 의미의 'insight'는 가산 명사로 쓰일 수 있습니다. 'fascinating'이라는 형용사의 수식을 받으며 처음 언급되는 정보이므로 부정관사를 사용합니다. 'fascinating'의 발음이 모음으로 시작하므로 <b>an</b>이 맞습니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">324</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 'Republic', 'Kingdom', 'States' 등이 포함된 공식 국가명 앞에는 정관사 'the'를 붙여야 합니다. 따라서 'The Republic of Korea'가 맞습니다.</div></div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page answer-key-section">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 7 정답 및 해설</span>
+                </div>
+                <div class="page-content">
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">325</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: 문맥상 특정한 방망이가 아닌, 막연한 '하나의' 방망이를 의미하므로 부정관사 <b>a</b>를 사용합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">326</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 'look someone in the eye'(~의 눈을 똑바로 보다)라는 관용 표현에서 신체 부위 앞에는 정관사 <b>the</b>를 사용합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">327</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: 추상명사 'courage'가 형용사 'remarkable'의 수식을 받아 '놀라운 종류의 용기'라는 구체적인 사례를 의미하므로 부정관사 <b>a</b>를 사용할 수 있습니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">328</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: 학생이 '수업을 받으러' 학교에 가는 것은 장소의 본래 목적에 해당하므로 <b>관사 없이</b> 'go to school'이라고 표현합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">329</span><span class="correct-answer">정답: ③</span></div><div class="explanation-content"><b>해설</b>: 학과명(Mathematics)은 '-s'로 끝나도 단수 취급합니다. ① 질병명(cancer), ② 운동명(tennis), ④ 추상명사(poverty), ⑤ 학과명(literature)은 모두 관사 없이 쓰는 것이 원칙입니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">330</span><span class="correct-answer">정답: ③</span></div><div class="explanation-content"><b>해설</b>: 호텔, 극장, 박물관 등 공공건물의 이름 앞에는 정관사 <b>the</b>를 붙입니다.</div></div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page answer-key-section">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 7 정답 및 해설</span>
+                </div>
+                <div class="page-content">
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">331</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 종족 전체를 하나의 학술적, 분류적 개념으로 지칭하는 <b>The + 단수명사</b>가 가장 격식적인 총칭 표현입니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">332</span><span class="correct-answer">정답: ③</span></div><div class="explanation-content"><b>해설</b>: 'both'는 '둘 다'를 의미하므로 뒤에는 반드시 복수 명사가 와야 합니다. 따라서 'student'를 <b>students</b>로 고쳐야 합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">333</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: '수감 중이다'라는 의미로 장소의 본래 목적을 나타낼 때는 <b>관사 없이</b> 'in prison'을 사용합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">334</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 배 이름(The Titanic) 앞에는 정관사 'the'를 사용합니다. ①, ④ 대학 이름, ③ 회사 이름, ⑤ 역 이름 앞에는 일반적으로 관사를 쓰지 않습니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">335</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: 추상명사 'time'이 형용사 'wonderful'의 수식을 받아 '멋진 한때'라는 구체적인 사건을 의미하므로 부정관사 <b>a</b>를 사용합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">336</span><span class="correct-answer">정답: ③</span></div><div class="explanation-content"><b>해설</b>: 관사의 어순은 '전치 한정사(all, both, half...) + 관사(the, a/an) + 형용사 + 명사' 순입니다. 따라서 'All the students'가 맞습니다.</div></div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page answer-key-section">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 7 정답 및 해설</span>
+                </div>
+                <div class="page-content">
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">337</span><span class="correct-answer">정답: ③</span></div><div class="explanation-content"><b>해설</b>: 바다(sea) 이름 앞에는 정관사 <b>the</b>를 붙이는 것이 원칙입니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">338</span><span class="correct-answer">정답: ④</span></div><div class="explanation-content"><b>해설</b>: 'such a great' 다음에는 명사가 와야 합니다. 'interested'는 형용사이므로 명사인 <b>interest</b>로 고쳐야 합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">339</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: '치료받으러' 병원에 가는 것은 본래 목적에 해당하므로 무관사 'to hospital'이 맞습니다. ① 교사가 학교 건물에 가는 것이므로 'to the school', ③ 가족이 함께 교회 건물에 가는 것이므로 'to the church', ④, ⑤도 마찬가지로 무관사가 맞습니다. (문제 수정: ②가 정답)</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">340</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: '과학의 진보'라는 일반적이고 총체적인 개념을 나타내는 추상명사 'Progress'는 <b>관사 없이</b> 사용합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">341</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: 도시 이름(Seoul) 앞에는 관사를 붙이지 않습니다. 따라서 'in Seoul'이 맞습니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">342</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: 'What + a/an + 형용사 + 명사!' 형태의 감탄문입니다. 'beautiful'이 자음 발음으로 시작하므로 <b>a</b>를 사용합니다.</div></div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page answer-key-section">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 7 정답 및 해설</span>
+                </div>
+                <div class="page-content">
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">343</span><span class="correct-answer">정답: ③</span></div><div class="explanation-content"><b>해설</b>: 배수사 표현 중 '배수사 + the + 명사 + of' 형태가 올바르게 사용되었습니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">344</span><span class="correct-answer">정답: ②</span></div><div class="explanation-content"><b>해설</b>: '타동사 + 목적어(사람) + 전치사 + 신체부위' 구문에서는 소유격(his) 대신 정관사 <b>the</b>를 사용하는 것이 일반적입니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">345</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: '아름다움'이라는 일반적이고 총체적인 개념을 나타내는 추상명사 'beauty'는 <b>관사 없이</b> 사용합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">346</span><span class="correct-answer">정답: ①</span></div><div class="explanation-content"><b>해설</b>: 추상명사 'life'가 'of a student'에 의해 '한 학생의 삶'으로 특정화되었으므로 정관사 <b>The</b>를 사용합니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">347</span><span class="correct-answer">정답: ③</span></div><div class="explanation-content"><b>해설</b>: 'double', 'twice'와 같은 배수사가 명사를 수식할 때는 'double/twice + the + 명사'의 어순을 따릅니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">348</span><span class="correct-answer">정답: ④</span></div><div class="explanation-content"><b>해설</b>: <b>The + 복수명사</b>는 총칭 표현으로 사용되지 않습니다. 이는 '그 컴퓨터들'이라는 특정한 대상을 지칭합니다.</div></div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    
+            <div class="page answer-key-section">
+                <div class="page-header">
+                    <span class="eng-text">Vera's Flavor - Bridge 편</span>
+                    <span>Part 7 정답 및 해설</span>
+                </div>
+                <div class="page-content">
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">349</span><span class="correct-answer">정답: ⑤</span></div><div class="explanation-content"><b>해설</b>: 일반적인 식사명은 무관사가 원칙이지만, 형용사의 수식을 받아 '특별한 식사'라는 의미가 될 때는 부정관사 'a/an'을 사용할 수 있습니다. 따라서 'a delicious dinner'는 올바른 표현입니다.</div></div>
+                    <div class="explanation-block"><div class="explanation-header"><span class="problem-number">350</span><span class="correct-answer">정답: ③</span></div><div class="explanation-content"><b>해설</b>: 박물관(the British Museum) 이름 앞에는 정관사 'the'를 사용하지만, 궁전(Buckingham Palace) 이름 앞에는 관사를 붙이지 않는 것이 관례입니다.</div></div>
+                </div>
+                <div class="page-footer"></div>
+            </div>
+    </body>
+    </html>
+</body>
+</html>

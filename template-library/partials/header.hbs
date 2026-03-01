@@ -1,0 +1,62 @@
+<div class="report-header">
+  <div class="report-date">{{student.date}}</div>
+  <div class="report-title">학습 피드백지</div>
+  <div class="report-subtitle">{{student.name}} 학생{{#if student.sessionNum}} · {{student.sessionNum}}회차{{/if}}</div>
+  <div class="report-meta">
+    {{#if meta.textbook}}{{meta.textbook}}{{/if}}{{#if meta.scope}} · {{meta.scope}}{{/if}}
+    &nbsp;|&nbsp; 총 {{meta.totalProblems}}문제 중 {{meta.wrongCount}}문제 오답
+    {{#if summary.correctRate}}&nbsp;|&nbsp; 정답률 {{summary.correctRate}}{{/if}}
+  </div>
+</div>
+
+<div class="diagnosis-card avoid-break">
+  <h4>학습 요약</h4>
+  {{#if summary.goodPoints.length}}
+  <p style="margin: 6px 0 4px;"><strong style="color: #38a169;">잘한 점</strong></p>
+  <ul style="padding-left: 18px; margin: 0 0 8px 0;">
+    {{#each summary.goodPoints}}
+    <li style="margin: 2px 0;">{{this}}</li>
+    {{/each}}
+  </ul>
+  {{/if}}
+  {{#if summary.weakPoints.length}}
+  <p style="margin: 6px 0 4px;"><strong style="color: #e53e3e;">아쉬운 점</strong></p>
+  <ul style="padding-left: 18px; margin: 0 0 8px 0;">
+    {{#each summary.weakPoints}}
+    <li style="margin: 2px 0;">{{this}}</li>
+    {{/each}}
+  </ul>
+  {{/if}}
+  {{#if summary.weakAreas.length}}
+  <p style="margin: 8px 0 6px;"><strong>취약 영역</strong></p>
+  <table>
+    <thead>
+      <tr>
+        <th>영역</th>
+        <th>중요도</th>
+        <th>상세</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each summary.weakAreas}}
+      <tr>
+        <td>{{area}}</td>
+        <td><span class="severity-{{severity}}">{{severity}}</span></td>
+        <td>{{detail}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+  {{/if}}
+</div>
+
+{{#if summary.priorities.length}}
+<div class="priority-order avoid-break">
+  <strong style="color: #4A90C4;">학습 우선순위</strong>
+  <ol style="padding-left: 20px; margin: 6px 0 0 0;">
+    {{#each summary.priorities}}
+    <li style="margin: 3px 0;">{{this}}</li>
+    {{/each}}
+  </ol>
+</div>
+{{/if}}

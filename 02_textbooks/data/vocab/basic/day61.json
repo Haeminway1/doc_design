@@ -1,0 +1,507 @@
+{
+  "bookId": "vocab-basic",
+  "day": 61,
+  "theme": "스포츠와 운동 (Sports and Athletics)",
+  "words": [
+    {
+      "word": "athletics",
+      "pronunciation": "[æθlétiks]",
+      "partOfSpeech": "n.",
+      "meaning": "운동 경기, 육상 경기",
+      "example": {
+        "en": "He excels at athletics, especially running and jumping.",
+        "ko": "그는 운동 경기, 특히 달리기와 점프에 뛰어나다."
+      }
+    },
+    {
+      "word": "tournament",
+      "pronunciation": "[túərnəmənt]",
+      "partOfSpeech": "n.",
+      "meaning": "토너먼트, 선수권 대회",
+      "example": {
+        "en": "The tennis tournament will be held next month.",
+        "ko": "테니스 토너먼트는 다음 달에 열릴 것이다."
+      }
+    },
+    {
+      "word": "championship",
+      "pronunciation": "[tʃǽmpiənʃìp]",
+      "partOfSpeech": "n.",
+      "meaning": "선수권 대회, 우승",
+      "example": {
+        "en": "Their team won the national championship.",
+        "ko": "그들의 팀은 전국 선수권 대회에서 우승했다."
+      }
+    },
+    {
+      "word": "competitor",
+      "pronunciation": "[kəmpétitər]",
+      "partOfSpeech": "n.",
+      "meaning": "경쟁자, 선수",
+      "example": {
+        "en": "She is a fierce competitor who never gives up.",
+        "ko": "그녀는 절대 포기하지 않는 치열한 경쟁자이다."
+      }
+    },
+    {
+      "word": "contestant",
+      "pronunciation": "[kəntéstənt]",
+      "partOfSpeech": "n.",
+      "meaning": "(대회) 참가자",
+      "example": {
+        "en": "There are over 100 contestants in the competition.",
+        "ko": "그 대회에는 100명이 넘는 참가자가 있다."
+      }
+    },
+    {
+      "word": "referee",
+      "pronunciation": "[rèfəríː]",
+      "partOfSpeech": "n.",
+      "meaning": "(축구·농구 등의) 심판",
+      "example": {
+        "en": "The referee blew the whistle to end the game.",
+        "ko": "심판이 경기 종료를 알리는 휘슬을 불었다."
+      }
+    },
+    {
+      "word": "umpire",
+      "pronunciation": "[ʌ́mpaiər]",
+      "partOfSpeech": "n.",
+      "meaning": "(야구·테니스 등의) 심판",
+      "example": {
+        "en": "The umpire's decision is final.",
+        "ko": "심판의 결정은 최종적이다."
+      }
+    },
+    {
+      "word": "spectator",
+      "pronunciation": "[spékteitər]",
+      "partOfSpeech": "n.",
+      "meaning": "(스포츠 경기의) 관중",
+      "example": {
+        "en": "The spectators cheered loudly for their team.",
+        "ko": "관중들은 자신들의 팀을 향해 큰 소리로 응원했다."
+      }
+    },
+    {
+      "word": "audience",
+      "pronunciation": "[ɔ́ːdiəns]",
+      "partOfSpeech": "n.",
+      "meaning": "(공연·강연의) 청중, 관객",
+      "example": {
+        "en": "The audience applauded the figure skater's performance.",
+        "ko": "관객들은 피겨 스케이팅 선수의 연기에 박수를 보냈다."
+      }
+    },
+    {
+      "word": "stadium",
+      "pronunciation": "[stéidiəm]",
+      "partOfSpeech": "n.",
+      "meaning": "경기장",
+      "example": {
+        "en": "The new stadium can hold up to 50,000 people.",
+        "ko": "새 경기장은 최대 5만 명을 수용할 수 있다."
+      }
+    },
+    {
+      "word": "arena",
+      "pronunciation": "[əríːnə]",
+      "partOfSpeech": "n.",
+      "meaning": "(실내) 경기장, 무대",
+      "example": {
+        "en": "The concert was held in a large indoor arena.",
+        "ko": "콘서트는 대형 실내 경기장에서 열렸다."
+      }
+    },
+    {
+      "word": "gymnasium",
+      "pronunciation": "[dʒimnéiziəm]",
+      "partOfSpeech": "n.",
+      "meaning": "체육관",
+      "example": {
+        "en": "The school has a new gymnasium with a basketball court.",
+        "ko": "그 학교에는 농구 코트가 있는 새 체육관이 있다."
+      }
+    },
+    {
+      "word": "coach",
+      "pronunciation": "[koutʃ]",
+      "partOfSpeech": "n.",
+      "meaning": "코치",
+      "example": {
+        "en": "The coach gave the team a motivational speech.",
+        "ko": "코치는 팀에게 동기 부여 연설을 했다."
+      }
+    },
+    {
+      "word": "trainer",
+      "pronunciation": "[tréinər]",
+      "partOfSpeech": "n.",
+      "meaning": "트레이너, 조련사",
+      "example": {
+        "en": "A personal trainer can help you achieve your fitness goals.",
+        "ko": "개인 트레이너는 당신이 피트니스 목표를 달성하도록 도울 수 있다."
+      }
+    },
+    {
+      "word": "amateur",
+      "pronunciation": "[ǽməʧuər]",
+      "partOfSpeech": "n.",
+      "meaning": "아마추어",
+      "example": {
+        "en": "The Olympic Games were originally for amateur athletes.",
+        "ko": "올림픽 경기는 원래 아마추어 선수들을 위한 것이었다."
+      }
+    },
+    {
+      "word": "professional",
+      "pronunciation": "[prəféʃənl]",
+      "partOfSpeech": "n.",
+      "meaning": "프로, 전문가",
+      "example": {
+        "en": "He became a professional golfer at the age of 20.",
+        "ko": "그는 20세에 프로 골퍼가 되었다."
+      }
+    },
+    {
+      "word": "rookie",
+      "pronunciation": "[rúki]",
+      "partOfSpeech": "n.",
+      "meaning": "신인 선수, 신병",
+      "example": {
+        "en": "The rookie player scored the winning goal.",
+        "ko": "그 신인 선수가 결승골을 넣었다."
+      }
+    },
+    {
+      "word": "endurance",
+      "pronunciation": "[indúərəns]",
+      "partOfSpeech": "n.",
+      "meaning": "지구력, 인내력",
+      "example": {
+        "en": "Marathon runners need great endurance.",
+        "ko": "마라톤 주자들은 뛰어난 지구력이 필요하다."
+      }
+    },
+    {
+      "word": "stamina",
+      "pronunciation": "[stǽmənə]",
+      "partOfSpeech": "n.",
+      "meaning": "체력, 스태미나",
+      "example": {
+        "en": "You need a lot of stamina to play a full game of soccer.",
+        "ko": "축구 한 경기를 모두 뛰려면 많은 체력이 필요하다."
+      }
+    },
+    {
+      "word": "agility",
+      "pronunciation": "[ədʒíləti]",
+      "partOfSpeech": "n.",
+      "meaning": "민첩성",
+      "example": {
+        "en": "Gymnasts must have both strength and agility.",
+        "ko": "체조 선수들은 힘과 민첩성을 모두 갖추어야 한다."
+      }
+    },
+    {
+      "word": "flexibility",
+      "pronunciation": "[flèksəbíləti]",
+      "partOfSpeech": "n.",
+      "meaning": "유연성",
+      "example": {
+        "en": "Stretching can improve your flexibility.",
+        "ko": "스트레칭은 유연성을 향상시킬 수 있다."
+      }
+    },
+    {
+      "word": "coordination",
+      "pronunciation": "[kouɔ̀ːrdənéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "협응력, 조정력",
+      "example": {
+        "en": "Dancers need excellent coordination.",
+        "ko": "댄서들은 뛰어난 협응력이 필요하다."
+      }
+    },
+    {
+      "word": "performance",
+      "pronunciation": "[pərfɔ́ːrməns]",
+      "partOfSpeech": "n.",
+      "meaning": "경기력, 성과",
+      "example": {
+        "en": "Her performance in the final was outstanding.",
+        "ko": "결승전에서의 그녀의 경기력은 뛰어났다."
+      }
+    },
+    {
+      "word": "record",
+      "pronunciation": "[rékərd]",
+      "partOfSpeech": "n.",
+      "meaning": "기록",
+      "example": {
+        "en": "She broke the world record for the 100-meter dash.",
+        "ko": "그녀는 100미터 단거리 경주에서 세계 기록을 깼다."
+      }
+    },
+    {
+      "word": "medal",
+      "pronunciation": "[médl]",
+      "partOfSpeech": "n.",
+      "meaning": "메달",
+      "example": {
+        "en": "He won a gold medal in the Olympics.",
+        "ko": "그는 올림픽에서 금메달을 땄다."
+      }
+    },
+    {
+      "word": "trophy",
+      "pronunciation": "[tróufi]",
+      "partOfSpeech": "n.",
+      "meaning": "트로피",
+      "example": {
+        "en": "The winning team was presented with a large silver trophy.",
+        "ko": "우승팀에게는 큰 은색 트로피가 수여되었다."
+      }
+    },
+    {
+      "word": "prize",
+      "pronunciation": "[praiz]",
+      "partOfSpeech": "n.",
+      "meaning": "상, 상품",
+      "example": {
+        "en": "The first prize is a trip to Hawaii.",
+        "ko": "1등 상은 하와이 여행이다."
+      }
+    },
+    {
+      "word": "draw",
+      "pronunciation": "[drɔː]",
+      "partOfSpeech": "n.",
+      "meaning": "무승부",
+      "example": {
+        "en": "The game ended in a 2-2 draw.",
+        "ko": "경기는 2대 2 무승부로 끝났다."
+      }
+    },
+    {
+      "word": "tie",
+      "pronunciation": "[tai]",
+      "partOfSpeech": "n.",
+      "meaning": "동점, 무승부",
+      "example": {
+        "en": "The score is a tie at the end of the third quarter.",
+        "ko": "3쿼터 종료 현재 점수는 동점이다."
+      }
+    },
+    {
+      "word": "score",
+      "pronunciation": "[skɔːr]",
+      "partOfSpeech": "n.",
+      "meaning": "점수",
+      "example": {
+        "en": "What's the final score?",
+        "ko": "최종 점수가 어떻게 되나요?"
+      }
+    },
+    {
+      "word": "goal",
+      "pronunciation": "[goul]",
+      "partOfSpeech": "n.",
+      "meaning": "골, 득점",
+      "example": {
+        "en": "He scored the winning goal in the last minute.",
+        "ko": "그는 마지막 순간에 결승골을 넣었다."
+      }
+    },
+    {
+      "word": "foul",
+      "pronunciation": "[faul]",
+      "partOfSpeech": "n.",
+      "meaning": "파울, 반칙",
+      "example": {
+        "en": "The player was sent off for a serious foul.",
+        "ko": "그 선수는 심각한 반칙으로 퇴장당했다."
+      }
+    },
+    {
+      "word": "violation",
+      "pronunciation": "[vàiəléiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "위반, 반칙",
+      "example": {
+        "en": "A traveling violation in basketball results in a turnover.",
+        "ko": "농구에서 트래블링 위반은 공격권 전환으로 이어진다."
+      }
+    },
+    {
+      "word": "disqualify",
+      "pronunciation": "[diskwάləfài]",
+      "partOfSpeech": "v.",
+      "meaning": "실격시키다",
+      "example": {
+        "en": "The athlete was disqualified for a false start.",
+        "ko": "그 선수는 부정 출발로 실격당했다."
+      }
+    },
+    {
+      "word": "suspend",
+      "pronunciation": "[səspénd]",
+      "partOfSpeech": "v.",
+      "meaning": "출전 정지시키다",
+      "example": {
+        "en": "The player was suspended for three games.",
+        "ko": "그 선수는 3경기 출전 정지를 당했다."
+      }
+    },
+    {
+      "word": "doping",
+      "pronunciation": "[dóupi&eng;]",
+      "partOfSpeech": "n.",
+      "meaning": "도핑",
+      "example": {
+        "en": "He tested positive for doping and was stripped of his medal.",
+        "ko": "그는 도핑 양성 반응이 나와 메달을 박탈당했다."
+      }
+    },
+    {
+      "word": "steroid",
+      "pronunciation": "[stíərɔid]",
+      "partOfSpeech": "n.",
+      "meaning": "스테로이드",
+      "example": {
+        "en": "The use of steroids is banned in most sports.",
+        "ko": "대부분의 스포츠에서 스테로이드 사용은 금지되어 있다."
+      }
+    },
+    {
+      "word": "regulation",
+      "pronunciation": "[règjuléiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "규정",
+      "example": {
+        "en": "The players must follow the regulations of the game.",
+        "ko": "선수들은 경기 규정을 따라야 한다."
+      }
+    },
+    {
+      "word": "calisthenics",
+      "pronunciation": "[ˌkæləsˈθenɪks]",
+      "partOfSpeech": "noun",
+      "meaning": "맨손체조, 체육 운동",
+      "example": {
+        "en": "The athletes perform calisthenics as part of their warm-up routine.",
+        "ko": "운동선수들은 준비운동의 일환으로 맨손체조를 수행합니다."
+      }
+    },
+    {
+      "word": "physiotherapy",
+      "pronunciation": "[ˌfɪzioʊˈθerəpi]",
+      "partOfSpeech": "noun",
+      "meaning": "물리치료",
+      "example": {
+        "en": "After his knee injury, he underwent intensive physiotherapy for six months.",
+        "ko": "무릎 부상 후, 그는 6개월 동안 집중적인 물리치료를 받았습니다."
+      }
+    },
+    {
+      "word": "choreography",
+      "pronunciation": "[ˌkɔriˈɑɡrəfi]",
+      "partOfSpeech": "noun",
+      "meaning": "안무, 무용 구성",
+      "example": {
+        "en": "The figure skating routine featured complex choreography set to classical music.",
+        "ko": "피겨 스케이팅 루틴은 클래식 음악에 맞춘 복잡한 안무를 선보였습니다."
+      }
+    },
+    {
+      "word": "kinematics",
+      "pronunciation": "[ˌkɪnəˈmætɪks]",
+      "partOfSpeech": "noun",
+      "meaning": "운동학, 동역학",
+      "example": {
+        "en": "The coach analyzed the kinematics of the athlete's running technique.",
+        "ko": "코치는 선수의 달리기 기술의 운동학적 측면을 분석했습니다."
+      }
+    },
+    {
+      "word": "biomechanics",
+      "pronunciation": "[ˌbaɪoʊməˈkænɪks]",
+      "partOfSpeech": "noun",
+      "meaning": "생체역학",
+      "example": {
+        "en": "Understanding biomechanics is crucial for preventing sports injuries.",
+        "ko": "생체역학을 이해하는 것은 스포츠 부상 예방에 매우 중요합니다."
+      }
+    },
+    {
+      "word": "anaerobic",
+      "pronunciation": "[ˌænəˈroʊbɪk]",
+      "partOfSpeech": "adjective",
+      "meaning": "무산소성의",
+      "example": {
+        "en": "Sprint training is primarily an anaerobic exercise.",
+        "ko": "단거리 훈련은 주로 무산소성 운동입니다."
+      }
+    },
+    {
+      "word": "proprietary",
+      "pronunciation": "[prəˈpraɪəteri]",
+      "partOfSpeech": "adjective",
+      "meaning": "독점적인, 소유권이 있는",
+      "example": {
+        "en": "The gym uses proprietary training equipment developed by their research team.",
+        "ko": "그 체육관은 자체 연구팀이 개발한 독점적 트레이닝 장비를 사용합니다."
+      }
+    },
+    {
+      "word": "ergogenic",
+      "pronunciation": "[ˌɜːrɡəˈdʒenɪk]",
+      "partOfSpeech": "adjective",
+      "meaning": "운동 능력 향상제의",
+      "example": {
+        "en": "Athletes must be careful about using ergogenic aids in competition.",
+        "ko": "선수들은 경기에서 운동 능력 향상제 사용에 주의해야 합니다."
+      }
+    },
+    {
+      "word": "peloton",
+      "pronunciation": "[ˈpeləˌtɒn]",
+      "partOfSpeech": "noun",
+      "meaning": "자전거 경주의 주력 집단",
+      "example": {
+        "en": "The cyclist managed to break away from the peloton in the final stretch.",
+        "ko": "그 사이클 선수는 마지막 구간에서 주력 집단으로부터 탈출하는데 성공했습니다."
+      }
+    },
+    {
+      "word": "somatotype",
+      "pronunciation": "[səˈmætəˌtaɪp]",
+      "partOfSpeech": "noun",
+      "meaning": "체형, 신체 유형",
+      "example": {
+        "en": "Different sports often favor different somatotypes among athletes.",
+        "ko": "서로 다른 스포츠는 흔히 선수들 간에 서로 다른 체형을 선호합니다."
+      }
+    },
+    {
+      "word": "plyometric",
+      "pronunciation": "[plaɪəˈmetrɪk]",
+      "partOfSpeech": "adjective",
+      "meaning": "플라이오메트릭의 (근력 강화 운동의 일종)",
+      "example": {
+        "en": "Plyometric exercises help athletes develop explosive power.",
+        "ko": "플라이오메트릭 운동은 선수들이 폭발적인 파워를 개발하는 데 도움을 줍니다."
+      }
+    },
+    {
+      "word": "sport",
+      "pronunciation": "/spɔːrt/",
+      "partOfSpeech": "n.",
+      "meaning": "신체적 노력과 기술을 요하며 규칙에 따라 행해지고 흔히 경쟁적으로 이루어지는 활동",
+      "example": {
+        "en": "Soccer is the most popular sport in many countries.",
+        "ko": "축구는 많은 국가에서 가장 인기 있는 스포츠다."
+      }
+    }
+  ]
+}

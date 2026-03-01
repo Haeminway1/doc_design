@@ -1,0 +1,109 @@
+/* =================================================================== */
+/* step-section.css — 논리 단계별 학습 섹션                            */
+/* Vera's Document Studio                                               */
+/* =================================================================== */
+
+/**
+ * Step Section Component
+ *
+ * 용도: 논리 교재의 단계별 학습 구조 (STEP 1, STEP 2 등)
+ *
+ * 마크업 예시:
+ *
+ * <div class="step-section">
+ *   <div class="step-header">
+ *     <span class="step-number">STEP 1</span>
+ *     <span class="step-title">문맥적 이해의 기초</span>
+ *   </div>
+ *   <div class="step-content">
+ *     <p>학습 내용...</p>
+ *   </div>
+ * </div>
+ */
+
+/* --- Step Section 컨테이너 --- */
+.step-section {
+    width: 100% !important;
+    margin: var(--space-xl) 0 !important;
+    border: 1px solid var(--color-border-default) !important;
+    border-radius: var(--radius-md) !important;
+    overflow: hidden !important;
+    break-inside: avoid !important;
+}
+
+/* --- Step Header --- */
+.step-header {
+    display: flex !important;
+    align-items: center !important;
+    gap: var(--space-md) !important;
+    background: var(--color-accent-dark) !important;
+    color: var(--color-white) !important;
+    padding: var(--space-md) var(--space-lg) !important;
+    font-size: var(--text-md) !important;
+    font-weight: 600 !important;
+    break-inside: avoid !important;
+}
+
+/* --- Step Number Badge --- */
+.step-number {
+    display: inline-block !important;
+    font-family: var(--font-eng) !important;
+    font-size: var(--text-base) !important;
+    font-weight: 700 !important;
+    color: var(--color-white) !important;
+    background: var(--color-accent-primary) !important;
+    padding: var(--space-sm) var(--space-md) !important;
+    border-radius: var(--radius-sm) !important;
+    min-width: 70px !important;
+    text-align: center !important;
+}
+
+/* --- Step Title --- */
+.step-title {
+    font-family: var(--font-sans) !important;
+    font-size: var(--text-md) !important;
+    font-weight: 600 !important;
+    color: var(--color-white) !important;
+    flex-grow: 1 !important;
+}
+
+/* --- Step Content --- */
+.step-content {
+    padding: var(--space-lg) !important;
+    background: var(--color-white) !important;
+    font-size: var(--text-base) !important;
+    line-height: var(--leading-normal) !important;
+    color: var(--color-text-primary) !important;
+}
+
+/* --- 연속된 Step Section 간격 --- */
+.step-section + .step-section {
+    margin-top: var(--space-xl) !important;
+}
+
+/* --- Step Section 내부 요소 기본 스타일 --- */
+.step-content p {
+    margin-bottom: var(--space-md) !important;
+}
+
+.step-content ul,
+.step-content ol {
+    margin-left: var(--space-lg) !important;
+    margin-bottom: var(--space-md) !important;
+}
+
+.step-content li {
+    margin-bottom: var(--space-sm) !important;
+}
+
+/* --- 컴팩트 변형 (헤더만 있는 경우) --- */
+.step-section.compact .step-header {
+    padding: var(--space-sm) var(--space-lg) !important;
+    font-size: var(--text-base) !important;
+}
+
+.step-section.compact .step-number {
+    font-size: var(--text-sm) !important;
+    padding: 4px var(--space-sm) !important;
+    min-width: 60px !important;
+}

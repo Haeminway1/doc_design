@@ -1,0 +1,371 @@
+#!/usr/bin/env node
+
+/**
+ * 카카오비즈니스 채팅 이미지 자동 다운로드 스크립트 v2
+ *
+ * 접근 방식 (v2):
+ *   1. 채팅 목록 DOM에서 학생 이름 + React fiber로 chatId 추출
+ *   2. 채팅 로그 API 직접 호출: /api/profiles/{profileId}/chats/{chatId}/chatlogs
+ *   3. type=2(단일 사진), type=27(이미지묶음)의 secureUrl/secureImageUrls로 다운로드
+ *
+ * 사용법: node 04_scripts/download-kakao-images.js [--days N] [--student 이름]
+ *   - 브라우저가 CDP 포트 18800으로 열려 있어야 함
+ *   - 카카오비즈니스에 로그인된 상태여야 함
+ *   --days N    : 최근 N일 이미지 (기본 2 = 어제+오늘)
+ *   --student   : 특정 학생만 처리
+ */
+
+const puppeteer = require('puppeteer');
+const fs = require('fs');
+const path = require('path');
+const https = require('https');
+const http = require('http');
+
+const sleep = (ms) => new Promise(resolve => setTimeout(resolve, ms));
+
+// ── CLI 인자 파싱 ──
+const args = process.argv.slice(2);
+const daysArg = args.indexOf('--days') !== -1 ? parseInt(args[args.indexOf('--days') + 1], 10) : 2;
+const studentArg = args.indexOf('--student') !== -1 ? args[args.indexOf('--student') + 1] : null;
+
+// ── 설정 ──
+const CONFIG = {
+  profileId: '_xjYlxan',
+  baseDir: path.join(__dirname, '..', '00_tutoring'),
+  cdpUrl: 'http://127.0.0.1:18800',
+  chatListUrl: 'https://business.kakao.com/_xjYlxan/chats',
+  apiBase: 'https://business.kakao.com',
+
+  // 제외할 학생 (이탈/x 표시)
+  excludedStudents: [
+    'x유연우', 'x박민교', 'x하나윤', 'x임소희', 'x강예슬',
+    'x정민혁', 'x양지수', 'x이연율', '김의진', '김해민(조교)',
+  ],
+
+  // 최근 N일 이미지 가져오기
+  days: daysArg,
+
+  // 동시 다운로드 제한
+  concurrentDownloads: 3,
+};
+
+// ── 유틸리티 ──
+
+/** YYMMDD 포맷 */
+function formatDate(date) {
+  const y = date.getFullYear().toString().slice(2);
+  const m = String(date.getMonth() + 1).padStart(2, '0');
+  const d = String(date.getDate()).padStart(2, '0');
+  return `${y}${m}${d}`;
+}
+
+/** 학생 이름에서 괄호 내용 제거: "김지환(26.02.09)" -> "김지환" */
+function cleanStudentName(fullName) {
+  return fullName.replace(/\(.*$/, '').trim();
+}
+
+/** N일 전 자정(00:00:00) 타임스탬프 (ms) */
+function daysAgoMidnight(days) {
+  const d = new Date();
+  d.setDate(d.getDate() - (days - 1));
+  d.setHours(0, 0, 0, 0);
+  return d.getTime();
+}
+
+/** 이미지 다운로드 (URL -> 파일) */
+function downloadImage(url, filepath) {
+  return new Promise((resolve, reject) => {
+    const client = url.startsWith('https') ? https : http;
+    const req = client.get(url, { timeout: 30000 }, (res) => {
+      if (res.statusCode >= 300 && res.statusCode < 400 && res.headers.location) {
+        return downloadImage(res.headers.location, filepath).then(resolve).catch(reject);
+      }
+      if (res.statusCode !== 200) {
+        res.resume();
+        return reject(new Error(`HTTP ${res.statusCode}`));
+      }
+      const stream = fs.createWriteStream(filepath);
+      res.pipe(stream);
+      stream.on('finish', () => { stream.close(); resolve(); });
+      stream.on('error', (err) => { fs.unlink(filepath, () => {}); reject(err); });
+    });
+    req.on('error', reject);
+    req.on('timeout', () => { req.destroy(); reject(new Error('timeout')); });
+  });
+}
+
+/** 폴더 생성 (재귀) */
+function ensureDir(dirPath) {
+  if (!fs.existsSync(dirPath)) {
+    fs.mkdirSync(dirPath, { recursive: true });
+    console.log(`  📁 폴더 생성: ${dirPath}`);
+  }
+  return dirPath;
+}
+
+/** MIME -> 확장자 */
+function mimeToExt(mime) {
+  if (!mime) return '.jpg';
+  if (mime.includes('png')) return '.png';
+  if (mime.includes('webp')) return '.webp';
+  return '.jpg';
+}
+
+// ── 메인 ──
+
+async function main() {
+  console.log('🚀 카카오비즈니스 이미지 다운로드 v2\n');
+  console.log(`📅 최근 ${CONFIG.days}일 이미지 대상`);
+  if (studentArg) console.log(`👤 대상 학생: ${studentArg}`);
+  console.log('');
+
+  const cutoffTime = daysAgoMidnight(CONFIG.days);
+  console.log(`⏰ 기준 시각: ${new Date(cutoffTime).toLocaleString('ko-KR')}\n`);
+
+  // 1) 브라우저 연결
+  console.log('🔗 브라우저 연결 중...');
+  const browser = await puppeteer.connect({
+    browserURL: CONFIG.cdpUrl,
+    defaultViewport: null,
+  });
+
+  const pages = await browser.pages();
+  // 채팅 목록 페이지를 정확히 찾기 (채팅방 /chats/123... 이 아닌 /chats 만)
+  let page = pages.find(p => {
+    const url = p.url();
+    return url.includes('business.kakao.com') && url.endsWith('/chats');
+  }) || pages.find(p => p.url().includes('business.kakao.com'));
+
+  if (!page) {
+    page = await browser.newPage();
+  }
+
+  // 채팅 목록으로 이동 (목록이 아닌 페이지에 있으면)
+  if (!page.url().endsWith('/chats')) {
+    console.log('  📍 채팅 목록으로 이동...');
+    await page.goto(CONFIG.chatListUrl, { waitUntil: 'networkidle2' });
+  }
+  console.log('✅ 브라우저 연결 완료\n');
+
+  // 3) ReactVirtualized 리스트 로딩 대기
+  console.log('📋 채팅 목록 로딩 중...');
+  await page.waitForSelector('[role="grid"] [role="row"] li a.link_chat', { timeout: 15000 });
+  await sleep(2000);
+
+  // 4) 학생 목록 + chatId 추출 (React fiber에서 chatId 읽기)
+  const students = await page.evaluate((excluded) => {
+    const items = document.querySelectorAll('[role="grid"] [role="row"] > li');
+    const result = [];
+
+    items.forEach(li => {
+      const nameEl = li.querySelector('strong.tit_info span.txt_name');
+      if (!nameEl) return;
+
+      const fullName = nameEl.textContent.trim();
+      const cleanName = fullName.replace(/\(.*$/, '').trim();
+
+      // 제외 대상 필터링
+      if (excluded.some(ex => {
+        const exClean = ex.replace(/\(.*$/, '').trim();
+        return fullName.includes(ex) || cleanName === exClean || fullName.startsWith('x');
+      })) return;
+
+      // React fiber에서 chatId 추출
+      const linkEl = li.querySelector('a.link_chat');
+      let chatId = null;
+
+      if (linkEl) {
+        const fiberKey = Object.keys(linkEl).find(k => k.startsWith('__reactFiber$'));
+        if (fiberKey) {
+          let fiber = linkEl[fiberKey];
+          for (let i = 0; i < 20 && fiber; i++) {
+            const props = fiber.memoizedProps || fiber.pendingProps;
+            if (props?.chat && typeof props.chat.get === 'function') {
+              chatId = props.chat.get('id');
+              break;
+            }
+            fiber = fiber.return;
+          }
+        }
+      }
+
+      if (chatId) {
+        result.push({ fullName, cleanName, chatId });
+      }
+    });
+
+    return result;
+  }, CONFIG.excludedStudents);
+
+  console.log(`✅ 활성 학생: ${students.length}명\n`);
+  students.forEach((s, i) => console.log(`  ${i + 1}. ${s.fullName} (chat: ${s.chatId})`));
+  console.log('');
+
+  if (students.length === 0) {
+    console.log('⚠️  학생이 0명입니다. 페이지 로딩을 확인해주세요.');
+    return;
+  }
+
+  // 필터: 특정 학생만
+  const targetStudents = studentArg
+    ? students.filter(s => s.cleanName === studentArg || s.fullName.includes(studentArg))
+    : students;
+
+  if (studentArg && targetStudents.length === 0) {
+    console.log(`⚠️  "${studentArg}" 학생을 찾을 수 없습니다.`);
+    return;
+  }
+
+  // 5) 각 학생의 채팅 로그 API 호출 → 이미지 추출 → 다운로드
+  let totalDownloaded = 0;
+
+  for (const student of targetStudents) {
+    console.log(`\n👤 ${student.fullName}`);
+
+    try {
+      // 채팅 로그 API 호출 (브라우저 세션 쿠키 사용)
+      const chatlogs = await page.evaluate(async (profileId, chatId) => {
+        const res = await fetch(
+          `/api/profiles/${profileId}/chats/${chatId}/chatlogs?size=200`,
+          { credentials: 'include' }
+        );
+        if (!res.ok) return { error: `API ${res.status}` };
+        return res.json();
+      }, CONFIG.profileId, student.chatId);
+
+      if (chatlogs.error) {
+        console.log(`  ❌ API 오류: ${chatlogs.error}`);
+        continue;
+      }
+
+      if (!chatlogs.items || chatlogs.items.length === 0) {
+        console.log('  📭 메시지 없음');
+        continue;
+      }
+
+      // 이미지 메시지 필터링 (type 2 = 단일 사진, type 27 = 이미지묶음)
+      // 학생이 보낸 것만 (author_id !== profileId), 기간 내
+      const imageMessages = chatlogs.items.filter(msg => {
+        if (msg.type !== 2 && msg.type !== 27) return false;
+        if (msg.author_id === CONFIG.profileId) return false; // 선생님이 보낸 건 제외
+        if (msg.send_at < cutoffTime) return false; // 기간 외
+        return true;
+      });
+
+      if (imageMessages.length === 0) {
+        console.log(`  📷 최근 ${CONFIG.days}일 이미지 없음`);
+        continue;
+      }
+
+      // 이미지 URL 수집
+      const imageUrls = [];
+
+      for (const msg of imageMessages) {
+        const att = msg.attachment || {};
+        const sendDate = new Date(msg.send_at);
+        const dateStr = formatDate(sendDate);
+
+        if (msg.type === 2) {
+          // 단일 사진: secureUrl 사용
+          const url = att.secureUrl;
+          const ext = mimeToExt(att.mt);
+          if (url) {
+            imageUrls.push({ url, ext, dateStr, w: att.w, h: att.h, size: att.s });
+          }
+        } else if (msg.type === 27) {
+          // 이미지묶음: secureImageUrls 배열
+          const urls = att.secureImageUrls || [];
+          const mimeTypes = att.mtl || [];
+          const widths = att.wl || [];
+          const heights = att.hl || [];
+          const sizes = att.sl || [];
+
+          urls.forEach((url, idx) => {
+            if (url) {
+              imageUrls.push({
+                url,
+                ext: mimeToExt(mimeTypes[idx]),
+                dateStr,
+                w: widths[idx],
+                h: heights[idx],
+                size: sizes[idx],
+              });
+            }
+          });
+        }
+      }
+
+      console.log(`  📷 이미지 ${imageUrls.length}개 발견 (${imageMessages.length}개 메시지)`);
+
+      if (imageUrls.length === 0) continue;
+
+      // 날짜별 그룹핑
+      const byDate = {};
+      for (const img of imageUrls) {
+        if (!byDate[img.dateStr]) byDate[img.dateStr] = [];
+        byDate[img.dateStr].push(img);
+      }
+
+      // 날짜별 다운로드
+      let studentDownloaded = 0;
+
+      for (const [dateStr, imgs] of Object.entries(byDate)) {
+        const folderPath = ensureDir(
+          path.join(CONFIG.baseDir, student.cleanName, 'input', dateStr)
+        );
+
+        // 기존 파일 수 확인 (이어서 번호 매기기)
+        const existingFiles = fs.readdirSync(folderPath)
+          .filter(f => /\.(jpg|jpeg|png|webp)$/i.test(f));
+        let seq = existingFiles.length;
+
+        for (const img of imgs) {
+          seq++;
+          const filename = `${student.cleanName}_${dateStr}_${String(seq).padStart(2, '0')}${img.ext}`;
+          const filepath = path.join(folderPath, filename);
+
+          // 중복 방지
+          if (fs.existsSync(filepath)) {
+            console.log(`  ⏭️  이미 존재: ${filename}`);
+            continue;
+          }
+
+          try {
+            await downloadImage(img.url, filepath);
+            const stat = fs.statSync(filepath);
+            if (stat.size === 0) {
+              fs.unlinkSync(filepath);
+              console.log(`  ❌ 빈 파일 삭제: ${filename}`);
+              seq--;
+            } else {
+              const sizeKB = Math.round(stat.size / 1024);
+              const dim = img.w && img.h ? ` ${img.w}x${img.h}` : '';
+              console.log(`  ✅ ${filename} (${sizeKB}KB${dim})`);
+              studentDownloaded++;
+            }
+          } catch (err) {
+            console.log(`  ❌ 다운로드 실패: ${filename} - ${err.message}`);
+            seq--;
+          }
+        }
+      }
+
+      totalDownloaded += studentDownloaded;
+      console.log(`  📊 ${studentDownloaded}/${imageUrls.length}개 다운로드`);
+
+    } catch (err) {
+      console.log(`  ❌ 오류: ${err.message}`);
+    }
+  }
+
+  console.log(`\n\n✅ 완료! 총 ${totalDownloaded}개 이미지 다운로드`);
+  console.log(`📁 저장 위치: ${CONFIG.baseDir}/\n`);
+}
+
+// 실행
+if (require.main === module) {
+  main().catch(err => {
+    console.error('❌ 치명적 오류:', err);
+    process.exit(1);
+  });
+}

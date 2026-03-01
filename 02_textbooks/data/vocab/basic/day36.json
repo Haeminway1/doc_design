@@ -1,0 +1,507 @@
+{
+  "bookId": "vocab-basic",
+  "day": 36,
+  "theme": "움직임과 이동 (Movement and Motion)",
+  "words": [
+    {
+      "word": "locomotion",
+      "pronunciation": "[lòukəmóuʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "운동, 이동",
+      "example": {
+        "en": "The evolution of locomotion was a key step for animals moving onto land.",
+        "ko": "이동 능력의 진화는 동물이 육지로 올라오는 데 핵심적인 단계였다."
+      }
+    },
+    {
+      "word": "propulsion",
+      "pronunciation": "[prəpʌ́lʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "추진(력)",
+      "example": {
+        "en": "The jet engine provides propulsion for the aircraft.",
+        "ko": "제트 엔진은 항공기에 추진력을 제공한다."
+      }
+    },
+    {
+      "word": "acceleration",
+      "pronunciation": "[æksèlərèiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "가속",
+      "example": {
+        "en": "The sports car is known for its rapid acceleration.",
+        "ko": "그 스포츠카는 빠른 가속력으로 유명하다."
+      }
+    },
+    {
+      "word": "deceleration",
+      "pronunciation": "[diːsèlərèiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "감속",
+      "example": {
+        "en": "The pilot began the deceleration for a smooth landing.",
+        "ko": "조종사는 부드러운 착륙을 위해 감속을 시작했다."
+      }
+    },
+    {
+      "word": "kinetic",
+      "pronunciation": "[kinétik]",
+      "partOfSpeech": "a.",
+      "meaning": "운동의",
+      "example": {
+        "en": "Kinetic energy is the energy of motion.",
+        "ko": "운동 에너지는 움직임의 에너지이다."
+      }
+    },
+    {
+      "word": "static",
+      "pronunciation": "[stǽtik]",
+      "partOfSpeech": "a.",
+      "meaning": "정적인, 고정된",
+      "example": {
+        "en": "The population has remained static for several years.",
+        "ko": "인구는 몇 년 동안 정체 상태를 유지해 왔다."
+      }
+    },
+    {
+      "word": "dynamic",
+      "pronunciation": "[dainǽmik]",
+      "partOfSpeech": "a.",
+      "meaning": "동적인, 역동적인",
+      "example": {
+        "en": "He has a dynamic and energetic personality.",
+        "ko": "그는 역동적이고 활기찬 성격을 가지고 있다."
+      }
+    },
+    {
+      "word": "oscillate",
+      "pronunciation": "[άsəlèit]",
+      "partOfSpeech": "v.",
+      "meaning": "진동하다, 왕복하다",
+      "example": {
+        "en": "The pendulum oscillated back and forth.",
+        "ko": "그 추는 앞뒤로 진동했다."
+      }
+    },
+    {
+      "word": "vibrate",
+      "pronunciation": "[váibreit]",
+      "partOfSpeech": "v.",
+      "meaning": "진동하다, 떨다",
+      "example": {
+        "en": "The ground vibrated during the earthquake.",
+        "ko": "지진 동안 땅이 진동했다."
+      }
+    },
+    {
+      "word": "rotate",
+      "pronunciation": "[róuteit]",
+      "partOfSpeech": "v.",
+      "meaning": "회전하다, 자전하다",
+      "example": {
+        "en": "The Earth rotates on its axis once a day.",
+        "ko": "지구는 하루에 한 번 자전축을 중심으로 회전한다."
+      }
+    },
+    {
+      "word": "revolve",
+      "pronunciation": "[rivάlv]",
+      "partOfSpeech": "v.",
+      "meaning": "공전하다, 회전하다",
+      "example": {
+        "en": "The Earth revolves around the Sun.",
+        "ko": "지구는 태양 주위를 공전한다."
+      }
+    },
+    {
+      "word": "orbit",
+      "pronunciation": "[ɔ́ːrbit]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "궤도\n       \n        궤도를 돌다",
+      "example": {
+        "en": "The moon orbits the Earth.",
+        "ko": "달은 지구의 궤도를 돈다."
+      }
+    },
+    {
+      "word": "circumnavigate",
+      "pronunciation": "[sə̀ːrkəmnǽvəgèit]",
+      "partOfSpeech": "v.",
+      "meaning": "(세계를) 일주하다",
+      "example": {
+        "en": "Magellan was the first to circumnavigate the globe.",
+        "ko": "마젤란은 세계를 최초로 일주했다."
+      }
+    },
+    {
+      "word": "traverse",
+      "pronunciation": "[trəvə́ːrs]",
+      "partOfSpeech": "v.",
+      "meaning": "가로지르다, 횡단하다",
+      "example": {
+        "en": "The explorers traversed the vast desert.",
+        "ko": "탐험가들은 광활한 사막을 횡단했다."
+      }
+    },
+    {
+      "word": "migrate",
+      "pronunciation": "[máigreit]",
+      "partOfSpeech": "v.",
+      "meaning": "이주하다, 이동하다",
+      "example": {
+        "en": "Birds migrate south for the winter.",
+        "ko": "새들은 겨울을 나기 위해 남쪽으로 이동한다."
+      }
+    },
+    {
+      "word": "nomadic",
+      "pronunciation": "[noumǽdik]",
+      "partOfSpeech": "a.",
+      "meaning": "유목의, 방랑의",
+      "example": {
+        "en": "Nomadic tribes move from place to place to find pasture.",
+        "ko": "유목 부족은 목초지를 찾아 이곳저곳으로 이동한다."
+      }
+    },
+    {
+      "word": "sedentary",
+      "pronunciation": "[sédntèri]",
+      "partOfSpeech": "a.",
+      "meaning": "정주하는, 앉아서 일하는",
+      "example": {
+        "en": "A sedentary lifestyle can lead to health problems.",
+        "ko": "앉아서 생활하는 방식은 건강 문제로 이어질 수 있다."
+      }
+    },
+    {
+      "word": "mobile",
+      "pronunciation": "[móubl]",
+      "partOfSpeech": "a.",
+      "meaning": "이동하는, 이동식의",
+      "example": {
+        "en": "Mobile phones have changed the way we communicate.",
+        "ko": "휴대폰은 우리가 소통하는 방식을 바꾸었다."
+      }
+    },
+    {
+      "word": "stationary",
+      "pronunciation": "[stéiʃənèri]",
+      "partOfSpeech": "a.",
+      "meaning": "움직이지 않는, 정지된",
+      "example": {
+        "en": "The car was stationary at the red light.",
+        "ko": "그 차는 빨간불에 정지해 있었다."
+      }
+    },
+    {
+      "word": "ambulatory",
+      "pronunciation": "[ǽmbjulətɔ̀ːri]",
+      "partOfSpeech": "a.",
+      "meaning": "보행의, 이동하는",
+      "example": {
+        "en": "After the surgery, the patient was ambulatory within a day.",
+        "ko": "수술 후, 그 환자는 하루 만에 걸을 수 있었다."
+      }
+    },
+    {
+      "word": "meandering",
+      "pronunciation": "[miǽndəri&eng;]",
+      "partOfSpeech": "a.",
+      "meaning": "구불구불한",
+      "example": {
+        "en": "A meandering river flowed through the valley.",
+        "ko": "구불구불한 강이 계곡을 따라 흘렀다."
+      }
+    },
+    {
+      "word": "circuitous",
+      "pronunciation": "[sərkjúːətəs]",
+      "partOfSpeech": "a.",
+      "meaning": "우회하는, 완곡한",
+      "example": {
+        "en": "We took a circuitous route to avoid the traffic.",
+        "ko": "우리는 교통 체증을 피하기 위해 우회로를 택했다."
+      }
+    },
+    {
+      "word": "direct",
+      "pronunciation": "[dirékt]",
+      "partOfSpeech": "a.",
+      "meaning": "직접적인, 직행의",
+      "example": {
+        "en": "Is there a direct flight to New York?",
+        "ko": "뉴욕행 직항편이 있나요?"
+      }
+    },
+    {
+      "word": "linear",
+      "pronunciation": "[líniər]",
+      "partOfSpeech": "a.",
+      "meaning": "직선의, 선형의",
+      "example": {
+        "en": "The graph shows a linear relationship between the two variables.",
+        "ko": "그 그래프는 두 변수 사이의 선형 관계를 보여준다."
+      }
+    },
+    {
+      "word": "curved",
+      "pronunciation": "[kəːrvd]",
+      "partOfSpeech": "a.",
+      "meaning": "곡선의, 구부러진",
+      "example": {
+        "en": "The road has many curved sections.",
+        "ko": "그 도로는 구부러진 구간이 많다."
+      }
+    },
+    {
+      "word": "serpentine",
+      "pronunciation": "[sə́ːrpəntìːn]",
+      "partOfSpeech": "a.",
+      "meaning": "뱀처럼 구불구불한",
+      "example": {
+        "en": "The serpentine path led up the mountain.",
+        "ko": "구불구불한 길이 산 위로 이어졌다."
+      }
+    },
+    {
+      "word": "zigzag",
+      "pronunciation": "[zígæ̀g]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "지그재그\n       \n        지그재그로 나아가다",
+      "example": {
+        "en": "The path zigzagged down the steep hill.",
+        "ko": "그 길은 가파른 언덕을 지그재그로 내려갔다."
+      }
+    },
+    {
+      "word": "stride",
+      "pronunciation": "[straid]",
+      "partOfSpeech": "v.\n       \n        n.",
+      "meaning": "성큼성큼 걷다\n       \n        큰 걸음",
+      "example": {
+        "en": "He strode confidently into the room.",
+        "ko": "그는 자신감 있게 방으로 성큼성큼 걸어 들어갔다."
+      }
+    },
+    {
+      "word": "stroll",
+      "pronunciation": "[stroul]",
+      "partOfSpeech": "v.\n       \n        n.",
+      "meaning": "거닐다, 산책하다\n       \n        산책",
+      "example": {
+        "en": "They went for a stroll in the park.",
+        "ko": "그들은 공원으로 산책을 갔다."
+      }
+    },
+    {
+      "word": "march",
+      "pronunciation": "[mɑːrtʃ]",
+      "partOfSpeech": "v.\n       \n        n.",
+      "meaning": "행진하다\n       \n        행진",
+      "example": {
+        "en": "The soldiers marched in perfect formation.",
+        "ko": "군인들은 완벽한 대형으로 행진했다."
+      }
+    },
+    {
+      "word": "crawl",
+      "pronunciation": "[krɔːl]",
+      "partOfSpeech": "v.",
+      "meaning": "기어가다",
+      "example": {
+        "en": "The baby is just learning to crawl.",
+        "ko": "아기는 이제 막 기는 것을 배우고 있다."
+      }
+    },
+    {
+      "word": "creep",
+      "pronunciation": "[kriːp]",
+      "partOfSpeech": "v.",
+      "meaning": "살금살금 움직이다",
+      "example": {
+        "en": "He crept silently up the stairs.",
+        "ko": "그는 조용히 계단을 살금살금 올라갔다."
+      }
+    },
+    {
+      "word": "slither",
+      "pronunciation": "[slíðər]",
+      "partOfSpeech": "v.",
+      "meaning": "(뱀처럼) 스르르 나아가다",
+      "example": {
+        "en": "The snake slithered through the grass.",
+        "ko": "뱀이 풀밭을 스르르 기어갔다."
+      }
+    },
+    {
+      "word": "glide",
+      "pronunciation": "[glaid]",
+      "partOfSpeech": "v.",
+      "meaning": "미끄러지듯 가다",
+      "example": {
+        "en": "The skater glided gracefully across the ice.",
+        "ko": "스케이트 선수는 얼음 위를 우아하게 미끄러지듯 나아갔다."
+      }
+    },
+    {
+      "word": "dive",
+      "pronunciation": "[daiv]",
+      "partOfSpeech": "v.",
+      "meaning": "다이빙하다, 뛰어들다",
+      "example": {
+        "en": "She dived into the pool.",
+        "ko": "그녀는 수영장으로 뛰어들었다."
+      }
+    },
+    {
+      "word": "leap",
+      "pronunciation": "[liːp]",
+      "partOfSpeech": "v.\n       \n        n.",
+      "meaning": "뛰어오르다\n       \n        도약",
+      "example": {
+        "en": "The frog leaped onto a lily pad.",
+        "ko": "개구리가 수련 잎 위로 뛰어올랐다."
+      }
+    },
+    {
+      "word": "bound",
+      "pronunciation": "[baund]",
+      "partOfSpeech": "v.",
+      "meaning": "껑충껑충 뛰다",
+      "example": {
+        "en": "The deer bounded across the field.",
+        "ko": "사슴이 들판을 가로질러 껑충껑충 뛰어갔다."
+      }
+    },
+    {
+      "word": "hop",
+      "pronunciation": "[hɑp]",
+      "partOfSpeech": "v.",
+      "meaning": "깡충깡충 뛰다",
+      "example": {
+        "en": "The rabbit hopped away into the bushes.",
+        "ko": "토끼가 덤불 속으로 깡충깡충 뛰어갔다."
+      }
+    },
+    {
+      "word": "skip",
+      "pronunciation": "[skip]",
+      "partOfSpeech": "v.",
+      "meaning": "깡충깡충 뛰다, 건너뛰다",
+      "example": {
+        "en": "The little girl skipped down the path.",
+        "ko": "어린 소녀가 길을 따라 깡충깡충 뛰어갔다."
+      }
+    },
+    {
+      "word": "gallop",
+      "pronunciation": "[gǽləp]",
+      "partOfSpeech": "v.",
+      "meaning": "(말이) 전속력으로 달리다",
+      "example": {
+        "en": "The horse galloped across the plain.",
+        "ko": "말이 평원을 가로질러 전속력으로 달렸다."
+      }
+    },
+    {
+      "word": "trot",
+      "pronunciation": "[trɑt]",
+      "partOfSpeech": "v.",
+      "meaning": "(말이) 속보로 가다",
+      "example": {
+        "en": "The horse trotted along the trail.",
+        "ko": "말이 오솔길을 따라 속보로 갔다."
+      }
+    },
+    {
+      "word": "sprint",
+      "pronunciation": "[sprint]",
+      "partOfSpeech": "v.\n       \n        n.",
+      "meaning": "전력 질주하다\n       \n        단거리 경주",
+      "example": {
+        "en": "The runner sprinted to the finish line.",
+        "ko": "그 주자는 결승선을 향해 전력 질주했다."
+      }
+    },
+    {
+      "word": "jog",
+      "pronunciation": "[dʒɑg]",
+      "partOfSpeech": "v.",
+      "meaning": "조깅하다",
+      "example": {
+        "en": "I jog in the park every morning.",
+        "ko": "나는 매일 아침 공원에서 조깅한다."
+      }
+    },
+    {
+      "word": "stumble",
+      "pronunciation": "[stʌ́mbl]",
+      "partOfSpeech": "v.",
+      "meaning": "비틀거리다, 발이 걸리다",
+      "example": {
+        "en": "He stumbled on a rock and fell.",
+        "ko": "그는 돌에 발이 걸려 넘어졌다."
+      }
+    },
+    {
+      "word": "stagger",
+      "pronunciation": "[stǽgər]",
+      "partOfSpeech": "v.",
+      "meaning": "비틀거리다, 휘청거리다",
+      "example": {
+        "en": "The injured man staggered to his feet.",
+        "ko": "부상당한 남자는 비틀거리며 일어섰다."
+      }
+    },
+    {
+      "word": "perambulate",
+      "pronunciation": "[pəˈræmbjəleɪt]",
+      "partOfSpeech": "verb",
+      "meaning": "천천히 걷다, 산책하다, (특히 공식적으로) 순찰하다",
+      "example": {
+        "en": "The security guard perambulated through the quiet corridors of the museum after hours.",
+        "ko": "경비원은 박물관 폐관 후 조용한 복도를 천천히 순찰했다."
+      }
+    },
+    {
+      "word": "undulate",
+      "pronunciation": "[ˈʌndjuleɪt]",
+      "partOfSpeech": "verb",
+      "meaning": "물결치다, 파도치듯 움직이다",
+      "example": {
+        "en": "The wheat fields undulated in the gentle breeze.",
+        "ko": "밀밭이 부드러운 바람에 물결치듯 움직였다."
+      }
+    },
+    {
+      "word": "meander",
+      "pronunciation": "[miˈændər]",
+      "partOfSpeech": "verb",
+      "meaning": "구불구불 흐르다, 돌아다니다, 방황하다",
+      "example": {
+        "en": "The river meandered through the peaceful valley.",
+        "ko": "강이 평화로운 계곡을 구불구불 흐르며 지나갔다."
+      }
+    },
+    {
+      "word": "flow",
+      "pronunciation": "/floʊ/",
+      "partOfSpeech": "n.",
+      "meaning": "액체·기체·교통이 특정 방향으로 꾸준하고 계속되는 움직임",
+      "example": {
+        "en": "Engineers adjusted the valves to control the flow of water through the canal.",
+        "ko": "기사들은 수로를 통과하는 물의 흐름을 조절하기 위해 밸브를 조정했다."
+      }
+    },
+    {
+      "word": "transit",
+      "pronunciation": "/ˈtrænzɪt/",
+      "partOfSpeech": "n.",
+      "meaning": "사람이나 화물을 한 곳에서 다른 곳으로 옮기거나 어떤 장소를 통과하는 행위 또는 과정",
+      "example": {
+        "en": "The goods were damaged in transit despite careful packaging.",
+        "ko": "세심한 포장에도 불구하고 그 화물은 운송 중에 손상되었다."
+      }
+    }
+  ]
+}

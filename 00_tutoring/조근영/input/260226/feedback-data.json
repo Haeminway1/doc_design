@@ -1,0 +1,285 @@
+{
+  "student": "조근영",
+  "date": "260226",
+  "subject": "문법",
+  "textbook": "수동태 · 조동사 (외부 문법 교재 + Vera's Flavor Bridge)",
+  "range": "문법 Q113~Q152 / 문장삽입 Q165~Q200 / 독해 Q068~Q326",
+  "summary": {
+    "totalQ": 46,
+    "wrongQ": 9,
+    "correctRate": "80%",
+    "goodPoints": "수동태 기본 전환(3·4형식)과 be known to/for/as/by 관용 표현을 안정적으로 구분함. 조동사 should/must 기본 문제(Q151-152)를 정확히 풀이하고, 문장 삽입에서 would rather, cannot be too, should 생략 등 조동사 표현을 활용한 문제(Q189, Q193, Q194)도 안정적으로 해결. 고난도 독해 빈칸 완성(Q285 Agamben, Q286 Baudrillard)을 정확히 분석하는 등 학술 지문 독해력 우수",
+    "badPoints": "지각/사역동사 수동태 보어 판별(Q127, Q128)에서 능동/수동 구분과 to부정사 삽입 규칙 미적용. 자동사(occur) 수동태 불가 판별 실패(Q150). 문장 삽입 문제에서 연결어(However, Instead, Despite this)와 지시어(here, The evidence, This discovery) 분석 없이 직감에 의존하여 5문제 오답. 외부 교재 독해 4문제(Q068, Q085, Q086, Q126) 추가 오답 확인",
+    "priority": "문장 삽입 연결어/지시어 전략 → 지각·사역동사 수동태 보어 → 자동사 수동태 불가 판별",
+    "weakAreas": [
+      { "area": "문장 삽입 연결어/지시어 분석", "count": 5, "severity": "high", "note": "Despite this, However, Instead 등 연결어와 here, The evidence 등 지시어의 앞뒤 관계를 분석하지 않고 감각에 의존" },
+      { "area": "지각·사역동사 수동태 보어", "count": 2, "severity": "high", "note": "수동태 안의 보어 능동/수동 판별 실패 + make 수동태 to 삽입 규칙 미적용" },
+      { "area": "독해 빈칸 추론/주제 파악", "count": 4, "severity": "mid", "note": "외부 교재 독해에서 지문 핵심 주제와 빈칸 키워드 매칭 부족 (Q068, Q085, Q086, Q126)" },
+      { "area": "자동사 수동태 불가", "count": 1, "severity": "mid", "note": "occur, happen, pertain 등 자동사의 수동태 불가 원칙 적용 실패" },
+      { "area": "be known as vs for", "count": 1, "severity": "low", "note": "칭호/별명(as)과 이유/특징(for) 혼동" }
+    ]
+  },
+  "wrongAnswers": [
+    {
+      "q": 127,
+      "selected": "⑤",
+      "correct": "③",
+      "type": "지각동사 수동태 전환",
+      "question": "Although the suspect denied any involvement, he was noticed ___ his left foot uncontrollably whenever the victim's name was brought up.",
+      "choices": ["① tap", "② tapped", "③ to tap", "④ tapping", "⑤ to be tapped"],
+      "explanation": "<div class='concept-box'><strong>핵심: 지각동사 수동태에서 보어의 태(Voice)</strong><p>지각동사(see, hear, notice, watch, feel) + O + V 구문을 수동태로 전환할 때, 보어의 형태가 바뀝니다.</p><table><tr><th>능동태</th><th>수동태</th></tr><tr><td>notice + O + <strong>V(원형)</strong></td><td>O + be noticed + <strong>to V</strong></td></tr><tr><td>notice + O + <strong>V-ing</strong></td><td>O + be noticed + <strong>V-ing</strong></td></tr></table><p>보어가 능동인지 수동인지는 <em>주어와 보어의 의미관계</em>로 판단합니다.</p></div><div class='grammar-block'><strong>능동 vs 수동 보어 판별법</strong><table><tr><th>질문</th><th>결과</th><th>형태</th></tr><tr><td>주어가 동작을 <strong>직접 수행</strong>?</td><td>능동</td><td>to V / V-ing</td></tr><tr><td>주어가 동작을 <strong>당하는</strong> 것?</td><td>수동</td><td>to be p.p.</td></tr></table><p>이 문제: he가 발을 두드리는 <strong>주체</strong> → 능동 → <strong>to tap</strong></p></div><div class='answer-box'><strong>정답 ③ to tap</strong><br>he was noticed <strong>to tap</strong> his left foot = 그가 발을 두드리는 것이 목격되었다 (능동 보어)</div><div class='warning-box'><strong>오답 ⑤ to be tapped</strong><br>\"he was noticed to be tapped\" = 그가 두드려지는 것이 목격되었다 → 의미 부적합. 용의자(he)는 발을 두드리는 <strong>주체</strong>이지 당하는 대상이 아님.</div>",
+      "studentAnalysis": {
+        "whyChosen": "수동태 문장이므로 보어도 수동(to be p.p.)이어야 한다고 기계적으로 판단. '수동태 + 수동 보어'라는 공식에 갇힘",
+        "errorPattern": "능동/수동 이중 판별 실패 — 문장 전체의 태(수동)와 보어의 태(능동/수동)를 구별 못함",
+        "focusPoint": "수동태 문장이라도 보어는 주어와의 의미관계로 독립 판단! '주어가 이 동작을 하는가, 당하는가?'를 항상 먼저 확인"
+      }
+    },
+    {
+      "q": 128,
+      "selected": "①",
+      "correct": "③",
+      "type": "사역동사 수동태 전환",
+      "question": "The ancient ritual was strictly governed by tradition. No one was ___ to speak during the ceremony, and everyone was ___ to follow the high priest's gestures precisely.",
+      "choices": ["① allowed / made", "② let / made", "③ allowed / made to", "④ let to / made to", "⑤ made / allowed"],
+      "explanation": "<div class='concept-box'><strong>핵심: 사역동사 수동태 — allow vs make의 to 차이</strong></div><div class='grammar-block'><table><tr><th>동사</th><th>능동태</th><th>수동태</th><th>to 변화</th></tr><tr><td><strong>allow</strong></td><td>allow + O + <strong>to V</strong></td><td>be allowed + <strong>to V</strong></td><td>to 원래 있음 → 유지</td></tr><tr><td><strong>make</strong></td><td>make + O + <strong>V(원형)</strong></td><td>be made + <strong>to V</strong></td><td>원형 → <strong>to 삽입</strong></td></tr><tr><td><strong>let</strong></td><td>let + O + <strong>V(원형)</strong></td><td>be <strong>allowed</strong> + to V</td><td>let 수동 불가 → allowed 대체</td></tr></table></div><div class='tip-box'><strong>풀이 과정</strong><br>1. 첫 번째 빈칸: \"was ___ to speak\" → be allowed to V ✓<br>2. 두 번째 빈칸: \"was ___ to follow\" → be made <strong>to</strong> follow ✓<br>→ ③ allowed / made to</div><div class='answer-box'><strong>정답 ③ allowed / made to</strong><br>No one was <strong>allowed</strong> to speak. (allow 수동 — to 유지)<br>Everyone was <strong>made to</strong> follow. (make 수동 — to 삽입)</div><div class='warning-box'><strong>오답 ① allowed / made</strong><br>\"everyone was made follow\"은 비문법적!<br>make 수동태에서는 반드시 <strong>to</strong>가 삽입되어야 합니다.<br>능동: made everyone <strong>follow</strong> (원형) → 수동: was made <strong>to follow</strong></div>",
+      "studentAnalysis": {
+        "whyChosen": "첫 빈칸 'allowed to speak'은 정확히 판단했으나, 두 번째 빈칸에서 'was made follow'도 가능하다고 착각. make가 능동에서 원형을 쓰므로 수동에서도 원형이 유지된다고 오해",
+        "errorPattern": "사역동사 수동태 to 삽입 규칙 불완전 — allow(원래 to → 유지)와 make(원래 원형 → to 삽입)의 차이를 놓침",
+        "focusPoint": "make 수동태 = be made TO V. 능동에서 원형이라도 수동에서는 반드시 to 삽입!"
+      }
+    },
+    {
+      "q": 135,
+      "selected": "①",
+      "correct": "③",
+      "type": "관용적 수동태 표현 (be known as/for)",
+      "question": "Aristotle made significant contributions to human knowledge. Because of his status as a teacher to Alexander the Great, he is sometimes known ___ the \"tutor of the world's conqueror.\"",
+      "choices": ["① for", "② to", "③ as", "④ by", "⑤ with"],
+      "explanation": "<div class='concept-box'><strong>핵심: be known + 전치사별 의미 차이</strong></div><div class='grammar-block'><table><tr><th>표현</th><th>의미</th><th>뒤에 오는 것</th><th>예문</th></tr><tr><td><strong>be known as</strong></td><td>~<strong>로서</strong> 알려지다</td><td>직함, 별명, 역할</td><td>He is known <u>as</u> \"the king of pop.\"</td></tr><tr><td><strong>be known for</strong></td><td>~<strong>으로</strong> 유명하다</td><td>특성, 업적, 특산물</td><td>Korea is known <u>for</u> K-pop.</td></tr><tr><td><strong>be known to</strong></td><td>~<strong>에게</strong> 알려지다</td><td>사람, 집단</td><td>The fact is known <u>to</u> everyone.</td></tr><tr><td><strong>be known by</strong></td><td>~<strong>으로</strong> 판단되다</td><td>판단 기준</td><td>A tree is known <u>by</u> its fruit.</td></tr></table></div><div class='tip-box'><strong>판별법: 빈칸 뒤 명사의 성격</strong><br>• <strong>별명·칭호·직함</strong> → <code>as</code> (\"the tutor\", \"the king\")<br>• <strong>이유·특징</strong> → <code>for</code> (beauty, cuisine)<br>• <strong>사람·집단</strong> → <code>to</code> (everyone, scientists)<br>• <strong>판단 수단</strong> → <code>by</code> (its fruit, their actions)</div><div class='answer-box'><strong>정답 ③ as</strong><br>\"the tutor of the world's conqueror\"는 <strong>별명/칭호</strong> → as<br>해석: 그는 때때로 \"세계 정복자의 가정교사\"<strong>로서</strong> 알려져 있다.</div><div class='warning-box'><strong>오답 ① for</strong><br>be known for는 유명한 <strong>이유·특징</strong>에 사용<br>• \"He is known <u>for</u> his contributions\" (O) — 이유<br>• \"He is known <u>for</u> the tutor\" (X) — tutor는 칭호!<br><br>\"~때문에 유명하다\" → for / \"~라는 이름으로\" → as</div>",
+      "studentAnalysis": {
+        "whyChosen": "'~으로 유명하다/알려지다'라는 한국어 해석에 이끌려 for를 선택. 뒤에 칭호(the tutor)가 오면 as를 써야 한다는 점을 놓침",
+        "errorPattern": "유사 표현 혼동 — 한국어 '~으로'가 for와 as 모두에 대응되는데, 한국어 의미에만 의존하여 구분 실패",
+        "focusPoint": "빈칸 뒤를 먼저 보기: 이름/칭호 → as, 이유/특성 → for. 한국어 '~으로'에 속지 말 것"
+      }
+    },
+    {
+      "q": 150,
+      "selected": "①",
+      "correct": "③",
+      "type": "오류 파악 (자동사 수동태 불가)",
+      "question": "다음 밑줄 친 부분 중 어법상 틀린 것을 고르시오. \"The original data ①was retained for the final report, and it was noted that ②several unexpected incidents ③had been occurred during the trial period, which ④ultimately led the committee to revise the entire protocol.\"",
+      "choices": ["① was retained", "② several unexpected incidents", "③ had been occurred", "④ ultimately led"],
+      "explanation": "<div class='concept-box'><strong>핵심: 자동사(intransitive verb)는 수동태 불가</strong><p><strong>occur</strong>는 자동사로, 목적어를 취하지 않습니다. 따라서 수동태(be + p.p.)로 쓸 수 없습니다.</p></div><div class='grammar-block'><strong>자동사 vs 타동사 수동태 판별</strong><table><tr><th>동사</th><th>유형</th><th>능동태</th><th>수동태</th></tr><tr><td>retain</td><td>타동사</td><td>They retained the data.</td><td>The data was retained. ✓</td></tr><tr><td>occur</td><td><strong>자동사</strong></td><td>An error occurred.</td><td>An error was occurred. ✗</td></tr><tr><td>lead</td><td>타동사</td><td>This led them to revise.</td><td>They were led to revise. ✓</td></tr></table><br><strong>수동태 불가 자동사 목록:</strong><br>occur, happen, appear, disappear, arise, emerge, exist, belong, consist, result, pertain, correspond, take place</div><div class='tip-box'><strong>판별법: '~을/를' 테스트</strong><br>• '사건<u>을</u> 발생시키다(occur)' → 어색! → 자동사 → 수동태 불가<br>• '데이터<u>를</u> 보관하다(retain)' → 자연스러움! → 타동사 → 수동태 가능<br><br>수정: had been occurred → <strong>had occurred</strong> (능동)</div><div class='answer-box'><strong>정답 ③ had been occurred</strong><br>occur는 자동사 → 수동태 불가!<br>올바른 형태: <strong>had occurred</strong> (과거완료 능동)</div><div class='warning-box'><strong>함정 ① was retained</strong><br>retain(보관하다)은 <strong>타동사</strong> → 수동태 가능<br>\"The data was retained\" = 데이터가 보관되었다 → 정상적인 수동태 표현</div>",
+      "studentAnalysis": {
+        "whyChosen": "'was retained'가 수동태라는 점에만 집중하여 오류로 판단. retain이 타동사인지 자동사인지 확인하지 않고, '수동태 = 의심 대상'이라는 편향에 빠짐",
+        "errorPattern": "자동사/타동사 구분 미확인 — 수동태 형태 자체를 의심하되, 어떤 동사가 수동태 불가인지 판별하지 못함",
+        "focusPoint": "occur, happen, appear, arise, exist, belong 등은 자동사 → 절대 수동태 불가! '~을/를' 테스트로 빠르게 판별"
+      }
+    },
+    {
+      "q": 165,
+      "selected": "⑤",
+      "correct": "②",
+      "type": "문장 삽입",
+      "passage": "The championship match had come down to its final minutes, and the score remained tied. ( ① ) Our star striker, Leo, received a brilliant through pass and found himself one-on-one with the goalkeeper. ( ② ) However, instead of taking a simple, straightforward shot, he attempted an elaborate trick shot that sailed over the crossbar. ( ③ ) The crowd fell silent as the referee blew the final whistle, and the opposing team celebrated their victory. ( ④) In the end, everyone agreed that Leo's overconfidence in that crucial moment had cost us the championship. ( ⑤ )",
+      "question": "[주어진 문장] He could have secured the win with a much easier play.",
+      "choices": ["① ①번 위치", "② ②번 위치", "③ ③번 위치", "④ ④번 위치", "⑤ ⑤번 위치"],
+      "explanation": "<div class='concept-box'><strong>한줄 요약: 챔피언십 결승에서 스타 스트라이커 Leo가 과신으로 쉬운 기회를 날린 이야기</strong><br><em>문법 포인트: could have p.p. = ~할 수도 있었다 (과거 미실현 가능성)</em></div><div class='grammar-block' style='text-align: justify;'><strong>지문 흐름 분석</strong><br><br>① 경기 막판, 동점 상황<br>② Leo가 골키퍼와 1:1 찬스 → <strong>[쉬운 플레이로 이길 수 있었다]</strong><br>③ <em>However, instead of</em> 간단한 슛 → 트릭샷 시도 → 실패<br>④ 관중 침묵, 상대팀 승리<br>⑤ Leo의 과신이 챔피언십을 날렸다</div><div class='tip-box'><strong>삽입 전략 — 연결어 역추적</strong><br>① 삽입 문장: \"He <strong>could have</strong> secured the win with <strong>a much easier play</strong>.\"<br>→ '쉬운 플레이로도 이길 수 있었다' = <strong>미실현 대안</strong> 제시<br><br>② 지문의 \"However, <strong>instead of</strong> taking a simple shot\"<br>→ <strong>instead of</strong>가 대안(삽입문)과 실제 행동(trick shot)을 대비<br><br>③ 따라서 삽입문은 <strong>instead of 바로 앞</strong> = ② 위치</div><div class='answer-box'><strong>정답 ② ②번 위치</strong><br>1:1 찬스 → <strong>[쉬운 플레이로 이길 수 있었다]</strong> → 그러나 트릭샷 시도 → 실패<br>미실현 대안(could have) → 실제 행동(instead of) 대비 완성</div><div class='warning-box'><strong>오답 ⑤ ⑤번 위치</strong><br>⑤에 넣으면: \"과신이 챔피언십을 날렸다\" → \"쉬운 플레이로 이길 수 있었다\"<br>→ 의미상 가능하나, 지문의 <strong>'instead of'가 삽입문과 연결되지 않음</strong>. 문장 삽입의 핵심은 연결어와의 논리적 연결!</div>",
+      "studentAnalysis": {
+        "whyChosen": "전체 이야기가 끝난 후 마지막에 '~할 수도 있었는데'라는 후회를 배치하는 것이 자연스럽다고 판단",
+        "errorPattern": "연결어 무시 — 'However, instead of'라는 대비 구조가 삽입문과 연결됨을 파악하지 못하고, 거시적 의미 흐름에만 의존",
+        "focusPoint": "문장 삽입 시 However/Instead/Despite 등 연결어를 먼저 찾고, 삽입 문장이 그 연결어의 대비 대상이 되는지 확인"
+      }
+    },
+    {
+      "q": 171,
+      "selected": "⑤",
+      "correct": "②",
+      "type": "문장 삽입",
+      "passage": "The weather forecast is not promising. ( ① ) Meteorologists are predicting heavy rain. ( ② ) Despite this, my friend is still determined to go mountain hiking. ( ③ ) The mountain trails can become extremely dangerous in such conditions. ( ④ ) Ignoring such a clear warning could lead to a serious accident. ( ⑤ )",
+      "question": "[주어진 문장] You had better reconsider your plan and stay indoors.",
+      "choices": ["① ①번 위치", "② ②번 위치", "③ ③번 위치", "④ ④번 위치", "⑤ ⑤번 위치"],
+      "explanation": "<div class='concept-box'><strong>한줄 요약: 폭우 예보에도 등산을 강행하려는 친구에 대한 충고</strong><br><em>문법 포인트: had better = ~하는 게 좋겠다 (강한 충고/경고)</em></div><div class='grammar-block' style='text-align: justify;'><strong>지문 흐름 분석</strong><br><br>① 일기예보 안 좋음<br>② 폭우 예측 → <strong>[실내에 있으라는 충고]</strong><br>③ <em>Despite this</em>, 친구가 여전히 등산 고집<br>④ 산길 위험<br>⑤ 경고 무시 시 사고 위험</div><div class='tip-box'><strong>삽입 전략 — 역접 연결어 'Despite this' 역추적</strong><br>① 'Despite this' = ~에도 불구하고 → <strong>바로 앞 문장</strong>을 역접으로 받음<br>② 삽입문: \"You had better reconsider your plan\" = 재고 충고<br>③ Despite this + 등산 고집 = 충고에도 <strong>불구하고</strong> 고집<br>→ 삽입문이 Despite this 바로 앞(②)에 와야 역접 완성</div><div class='answer-box'><strong>정답 ② ②번 위치</strong><br>폭우 예보 → <strong>[재고 충고]</strong> → 그럼에도 등산 고집 → 산길 위험 → 사고 위험<br>'Despite this'가 삽입문(충고)을 정확히 역접으로 받음</div><div class='warning-box'><strong>오답 ⑤ ⑤번 위치</strong><br>⑤에 넣으면: \"경고 무시 → 사고\" → \"재고 충고\"<br>→ 이미 결론이 난 뒤 충고 → <strong>'Despite this'의 지시 대상이 사라짐</strong>. 충고가 없으면 '이에도 불구하고'가 성립하지 않음.</div>",
+      "studentAnalysis": {
+        "whyChosen": "모든 위험 요소 나열 후 마지막에 결론으로 충고를 배치하는 것이 자연스럽다고 판단",
+        "errorPattern": "연결어 무시 — 'Despite this'의 지시 대상을 분석하지 않고 거시적 의미 흐름에만 의존",
+        "focusPoint": "문장 삽입 시 Despite/However/Therefore 등 연결어를 먼저 찾고, 삽입 문장이 그 연결어 바로 앞에 와야 하는지 확인"
+      }
+    },
+    {
+      "q": 173,
+      "selected": "③",
+      "correct": "②",
+      "type": "문장 삽입",
+      "passage": "This part of the city looks nothing like it used to. ( ① ) Where there were once wide, open fields, there are now rows of towering buildings and congested roads. ( ② ) Children used to chase butterflies through the meadows that stretched as far as the eye could see. ( ③ ) All of that has been replaced by concrete highways and commercial complexes. ( ④ ) It is hard to believe that this bustling district was once a quiet countryside. ( ⑤ )",
+      "question": "[주어진 문장] My friends and I used to play hide-and-seek here until the sun went down.",
+      "choices": ["① ①번 위치", "② ②번 위치", "③ ③번 위치", "④ ④번 위치", "⑤ ⑤번 위치"],
+      "explanation": "<div class='concept-box'><strong>한줄 요약: 과거의 한적한 들판이 현대 도시로 변한 풍경에 대한 회상</strong><br><em>문법 포인트: used to + V = 과거 습관/상태 (지금은 아님)</em></div><div class='grammar-block' style='text-align: justify;'><strong>지문 흐름 분석</strong><br><br>① 도시가 예전과 전혀 다르다<br>② 넓은 들판 → 지금은 고층 빌딩과 도로 → <strong>[여기서 숨바꼭질했다]</strong><br>③ 아이들이 초원에서 나비를 잡았다<br>④ 모든 것이 콘크리트 고속도로로 대체<br>⑤ 여기가 시골이었다니 믿기 어렵다</div><div class='tip-box'><strong>삽입 전략 — 지시어 'here' 역추적</strong><br>① 삽입 문장: \"My friends and I used to play hide-and-seek <strong>here</strong>\"<br>→ <strong>'here'</strong>는 구체적 장소를 가리킴 → 앞에 장소 설명이 있어야 함<br><br>② ② 바로 앞: \"wide, open <strong>fields</strong>\" → fields에서 숨바꼭질 = 자연스러움!<br>② 바로 뒤: \"Children used to chase butterflies\" → 또 다른 어린 시절 회상 → 자연 연결<br><br>③ 과거 회상 흐름: 들판 설명 → 숨바꼭질(삽입) → 나비 잡기 → 모두 사라짐</div><div class='answer-box'><strong>정답 ② ②번 위치</strong><br>예전 들판 → <strong>[숨바꼭질 회상]</strong> → 나비 잡던 기억 → 모두 사라짐<br>'here' = 바로 앞의 'wide, open fields'를 받아 자연스럽게 연결</div><div class='warning-box'><strong>오답 ③ ③번 위치</strong><br>③에 넣으면: \"나비 잡기\" → \"숨바꼭질\" → \"All of that\"<br>→ <strong>'here'가 가리킬 장소(wide open fields)와 거리가 멀어짐</strong>. 지시어는 선행사와 가까울수록 자연스러움.<br>또한 뒤의 'All of that'이 받는 과거 회상이 분절됨.</div>",
+      "studentAnalysis": {
+        "whyChosen": "나비 잡기 회상 뒤에 또 다른 회상(숨바꼭질)을 이어 붙이면 자연스럽다고 판단",
+        "errorPattern": "지시어 분석 부족 — 'here'가 가리키는 구체적 장소(fields)와의 거리를 고려하지 않음",
+        "focusPoint": "지시어(here, this, that)가 있으면 → 먼저 '무엇을 가리키는가?' 확인 → 가리키는 대상 바로 뒤에 삽입"
+      }
+    },
+    {
+      "q": 175,
+      "selected": "②",
+      "correct": "③",
+      "type": "문장 삽입",
+      "passage": "The project deadline was fast approaching, and the pressure was mounting. ( ① ) The team members decided to pull an all-nighter to finalize the presentation. ( ② ) By the early hours of the morning, however, their concentration had noticeably declined. ( ③ ) Research consistently shows that a well-rested mind produces far better results than one deprived of sleep. ( ④ ) Unfortunately, the final presentation was riddled with errors that could easily have been avoided. ( ⑤ )",
+      "question": "[주어진 문장] They had better not sacrifice their sleep for work, as it could be counterproductive.",
+      "choices": ["① ①번 위치", "② ②번 위치", "③ ③번 위치", "④ ④번 위치", "⑤ ⑤번 위치"],
+      "explanation": "<div class='concept-box'><strong>한줄 요약: 밤샘 작업의 역효과 — 수면을 희생하면 오히려 비생산적</strong><br><em>문법 포인트: had better not = ~하지 않는 게 좋겠다 (강한 충고)</em></div><div class='grammar-block' style='text-align: justify;'><strong>지문 흐름 분석 (논리적 순서)</strong><br><br>① 마감 압박<br>② 밤샘 결정<br>③ 새벽, 집중력 저하 (문제 발생) → <strong>[수면 포기 충고]</strong><br>④ 연구 결과: 충분한 수면 = 더 나은 성과 (근거)<br>⑤ 결국 오류투성이 발표 (결과)</div><div class='tip-box'><strong>삽입 전략 — 논리적 순서: 문제 → 충고 → 근거 → 결과</strong><br>① 삽입 문장: \"수면을 희생하지 않는 게 좋겠다, <strong>비생산적일 수 있으므로</strong>\"<br>→ 이것은 <strong>충고(advice)</strong> 문장<br><br>② 충고가 들어갈 자리:<br>• 앞에 <strong>문제</strong>(집중력 저하)가 제시되어야 설득력 있음<br>• 뒤에 <strong>근거</strong>(연구 결과)가 이어져야 충고를 뒷받침<br>→ ③ 위치: 문제(집중력 ↓) → 충고 → 근거(연구) → 결과(오류)</div><div class='answer-box'><strong>정답 ③ ③번 위치</strong><br>밤샘 → 집중력 저하 → <strong>[수면 포기 충고]</strong> → 연구 근거 → 오류 발생<br>문제 → 충고 → 근거 → 결과의 논리적 순서 완성</div><div class='warning-box'><strong>오답 ② ②번 위치</strong><br>②에 넣으면: \"밤샘 결정\" → \"수면 포기하지 마라\" → \"집중력 저하\"<br>→ 아직 <strong>문제(집중력 저하)가 발생하기 전에</strong> 충고<br>충고는 문제가 드러난 <strong>후에</strong> 나와야 설득력 있음!</div>",
+      "studentAnalysis": {
+        "whyChosen": "밤샘 결정 직후에 '그러지 마라'는 충고를 배치하면 시간적으로 자연스럽다고 판단",
+        "errorPattern": "논리적 순서 무시 — 충고는 문제 제시 후에 나와야 설득력이 있는데, 문제 발생 전에 배치",
+        "focusPoint": "충고/조언 문장 삽입 시: 반드시 '문제 → 충고 → 근거' 순서를 확인! 문제가 나오지 않은 상태에서 충고는 어색"
+      }
+    },
+    {
+      "q": 185,
+      "selected": "①",
+      "correct": "③",
+      "type": "문장 삽입",
+      "passage": "An archaeological team recently uncovered a series of ancient artifacts near the riverbank. ( ① ) The initial assessment suggested that the site had been used by nomadic tribes as a temporary resting place. ( ② ) However, further carbon dating of the pottery and stone tools revealed origins far older than anyone had anticipated. ( ③ ) This discovery challenged the long-standing assumption that the region had only served as a seasonal migration route. ( ④ ) The team immediately began planning a more extensive excavation of the site. ( ⑤ )",
+      "question": "[주어진 문장] The evidence suggested that a permanent settlement existed there over two thousand years ago.",
+      "choices": ["① ①번 위치", "② ②번 위치", "③ ③번 위치", "④ ④번 위치", "⑤ ⑤번 위치"],
+      "explanation": "<div class='concept-box'><strong>한줄 요약: 고고학 팀이 탄소 연대 측정으로 유목민 가설을 뒤집는 과정</strong><br><em>문법 포인트: suggest(ed) that + S + V (보고/추측의 suggest = 과거형 OK)</em></div><div class='grammar-block' style='text-align: justify;'><strong>지문 흐름 분석</strong><br><br>① 유물 발견<br>② 초기 평가: 유목민 임시 거처 (가설 A)<br>③ 탄소 연대 측정 → 예상보다 훨씬 오래됨 → <strong>[영구 정착지 증거]</strong><br>④ 이 발견이 기존 가설을 뒤집음<br>⑤ 대규모 발굴 계획</div><div class='tip-box'><strong>삽입 전략 — 지시어 이중 연결</strong><br>① 삽입 문장: \"<strong>The evidence</strong> suggested that a <strong>permanent settlement</strong> existed...\"<br><br>② <strong>앞 연결</strong>: 'The evidence' = 무슨 증거? → ③ 앞의 carbon dating 결과!<br>③ <strong>뒤 연결</strong>: 'This discovery' (④ 첫 문장) = 무슨 발견? → 삽입문의 영구 정착지 발견!<br><br>④ 내용 대비: permanent settlement(영구 정착지) ↔ nomadic tribes(유목민) / temporary(임시)<br>→ 가설 A를 뒤집는 가설 B 제시</div><div class='answer-box'><strong>정답 ③ ③번 위치</strong><br>탄소 측정 결과 → <strong>[영구 정착지 증거]</strong> → 이 발견이 기존 가설 뒤집음<br>'The evidence' ← carbon dating / 'This discovery' → 삽입문</div><div class='warning-box'><strong>오답 ① ①번 위치</strong><br>①에 넣으면: \"유물 발견\" → \"영구 정착지 증거\" → \"유목민 가설\"<br>→ <strong>'The evidence'가 가리킬 내용(carbon dating)이 아직 등장 전!</strong><br>지시어는 가리키는 내용 <strong>뒤에</strong> 와야 합니다.</div>",
+      "studentAnalysis": {
+        "whyChosen": "유물 발견 직후에 '영구 정착지 증거'라는 결론을 바로 제시하는 것이 자연스럽다고 판단",
+        "errorPattern": "지시어 분석 부족 — 'The evidence'가 구체적으로 무엇을 가리키는지 확인하지 않고 내용만으로 판단",
+        "focusPoint": "The evidence/This discovery 등 지시어가 있으면 → '무엇을 가리키는가?' 확인 → 가리키는 내용 바로 뒤에 삽입"
+      }
+    }
+  ],
+  "conceptQuestions": [
+    {
+      "title": "지각동사·사역동사의 수동태 전환",
+      "explanation": "<div class='concept-box'><strong>지각동사·사역동사 수동태 전환 총정리</strong><p>핵심 두 가지: ①원형→to부정사 전환 여부, ②보어의 능동/수동 판별</p></div><div class='grammar-block'><strong>1. 지각동사 수동태</strong><table><tr><th>능동태</th><th>수동태</th></tr><tr><td>S + see/hear/notice + O + <strong>V</strong></td><td>O + be seen/heard/noticed + <strong>to V</strong></td></tr><tr><td>S + see/hear/notice + O + <strong>V-ing</strong></td><td>O + be seen/heard/noticed + <strong>V-ing</strong></td></tr></table><br><strong>2. 사역동사 수동태</strong><table><tr><th>능동태</th><th>수동태</th></tr><tr><td>make + O + <strong>V</strong></td><td>be made + <strong>to V</strong> (to 삽입!)</td></tr><tr><td>allow + O + <strong>to V</strong></td><td>be allowed + <strong>to V</strong> (유지)</td></tr><tr><td>let + O + <strong>V</strong></td><td>be <strong>allowed</strong> + to V (대체)</td></tr></table></div>",
+      "examples": [
+        "He was seen to enter the building. (지각 수동, 능동보어)",
+        "The children were heard singing. (지각 수동, V-ing 유지)",
+        "She was made to apologize. (make 수동, to 삽입)",
+        "He was not allowed to go. (let → allowed 대체)"
+      ],
+      "exampleSentences": [
+        "They saw him cross the street. → He was seen to cross the street.",
+        "The teacher made us rewrite. → We were made to rewrite.",
+        "They let the prisoner go. → The prisoner was allowed to go."
+      ],
+      "confusionPoints": "<div class='warning-box'><strong>핵심 혼동 3가지</strong><br>1. 수동태 문장이라도 보어는 주어와의 의미관계로 따로 판단<br>2. make: 능동=원형 → 수동=to V (to 삽입!)<br>3. let은 수동태 불가 → be allowed to로 대체</div>",
+      "practiceProblems": [
+        {"sentence": "The thief was seen ___ the building through the back door.", "choices": ["① enter", "② entered", "③ to enter", "④ to be entered"], "answer": "③", "explanation": "지각(see) 수동 + 능동 보어 → to enter"},
+        {"sentence": "The patient was heard ___ in pain throughout the night.", "choices": ["① moan", "② moaned", "③ to be moaned", "④ moaning"], "answer": "④", "explanation": "지각(hear) 수동 + V-ing(진행) → moaning"},
+        {"sentence": "The students were made ___ the entire chapter before the exam.", "choices": ["① memorize", "② to memorize", "③ memorizing", "④ to be memorized"], "answer": "②", "explanation": "make 수동 → be made to V"},
+        {"sentence": "The workers were not allowed ___ the site without helmets.", "choices": ["① enter", "② to enter", "③ entering", "④ to be entered"], "answer": "②", "explanation": "allow 수동 → be allowed to V"},
+        {"sentence": "A strange noise was heard ___ from the abandoned warehouse.", "choices": ["① come", "② to come", "③ came", "④ to be come"], "answer": "②", "explanation": "지각(hear) 수동 + 능동 보어 → to come"},
+        {"sentence": "The suspect was observed ___ money into his bag.", "choices": ["① put", "② to put", "③ putting", "④ to be put"], "answer": "③", "explanation": "지각(observe) 수동 + V-ing(진행) → putting"},
+        {"sentence": "The recruits were made ___ a strict fitness test.", "choices": ["① take", "② to take", "③ taking", "④ taken"], "answer": "②", "explanation": "make 수동 → be made to V"},
+        {"sentence": "The boy was noticed ___ nervously during the interview.", "choices": ["① fidget", "② fidgeted", "③ to be fidgeted", "④ fidgeting"], "answer": "④", "explanation": "지각(notice) 수동 + V-ing → fidgeting"},
+        {"sentence": "Employees were not permitted ___ personal calls during work.", "choices": ["① make", "② to make", "③ making", "④ to be made"], "answer": "②", "explanation": "permit 수동 → be permitted to V"},
+        {"sentence": "The car was seen ___ away at high speed.", "choices": ["① drive", "② to drive", "③ driven", "④ to be driven"], "answer": "②", "explanation": "지각(see) 수동 + 능동 → to drive (차가 달려나감)"},
+        {"sentence": "The prisoners were never ___ to leave early.", "choices": ["① made", "② forced", "③ allowed", "④ let"], "answer": "③", "explanation": "let 수동 불가 → be allowed to로 대체"},
+        {"sentence": "She was watched ___ the vase with extreme care.", "choices": ["① handle", "② to handle", "③ handling", "④ to be handled"], "answer": "②", "explanation": "지각(watch) 수동 + 능동 → to handle"},
+        {"sentence": "The children were made ___ up their rooms.", "choices": ["① clean", "② to clean", "③ cleaning", "④ to be cleaned"], "answer": "②", "explanation": "make 수동 → be made to clean"},
+        {"sentence": "The bridge was felt ___ during the earthquake.", "choices": ["① shake", "② to shake", "③ shaking", "④ to be shaken"], "answer": "②", "explanation": "지각(feel) 수동 + 능동 → to shake"},
+        {"sentence": "No one was ___ to leave until the investigation ended.", "choices": ["① let", "② made", "③ allowed", "④ had"], "answer": "③", "explanation": "let 수동 불가 → be allowed to"},
+        {"sentence": "The old building was seen ___ down by the crew.", "choices": ["① tear", "② to tear", "③ tearing", "④ to be torn"], "answer": "④", "explanation": "지각(see) 수동 + 수동 보어 (건물이 철거당함) → to be torn"},
+        {"sentence": "The soldiers were made ___ in line for hours.", "choices": ["① stand", "② to stand", "③ standing", "④ to be stood"], "answer": "②", "explanation": "make 수동 → be made to stand"},
+        {"sentence": "He was heard ___ the piano beautifully.", "choices": ["① play", "② to play", "③ to be played", "④ played"], "answer": "②", "explanation": "지각(hear) 수동 + 능동 → to play"},
+        {"sentence": "The company was made ___ millions in damages.", "choices": ["① pay", "② to pay", "③ paying", "④ to be paid"], "answer": "②", "explanation": "make 수동 → be made to pay"},
+        {"sentence": "The child was spotted ___ alone near the river.", "choices": ["① wander", "② to wander", "③ wandering", "④ to be wandered"], "answer": "③", "explanation": "지각(spot) 수동 + V-ing(진행) → wandering"}
+      ]
+    },
+    {
+      "title": "be known to / for / as / by 완벽 구분",
+      "explanation": "<div class='concept-box'><strong>be known + 전치사 4종 정리</strong><br><strong>as</strong> = ~로서 (자격·별명) / <strong>for</strong> = ~으로 (이유·특징) / <strong>to</strong> = ~에게 (대상) / <strong>by</strong> = ~으로 (판단 수단)</div>",
+      "examples": [
+        "She is known as 'the Iron Lady.' (별명 → as)",
+        "Japan is known for its cherry blossoms. (특징 → for)",
+        "This fact is known to every student. (대상 → to)",
+        "A person is known by the company they keep. (기준 → by)"
+      ],
+      "exampleSentences": [
+        "그는 '물리학의 아버지'로서 알려져 있다. → He is known as 'the father of physics.'",
+        "이 도시는 아름다운 해변으로 유명하다. → This city is known for its beautiful beaches.",
+        "그 비밀은 소수에게만 알려져 있다. → The secret is known to only a few people."
+      ],
+      "confusionPoints": "<div class='warning-box'><strong>가장 자주 혼동: as vs for</strong><br>• known <u>as</u> a great teacher — 선생님<strong>이라는 자격</strong>으로<br>• known <u>for</u> his teaching skills — 교수 능력<strong>때문에</strong><br><br>뒤에 사람/직함/별명 → as / 추상명사/특성 → for</div>",
+      "practiceProblems": [
+        {"sentence": "Einstein is known ___ one of the greatest physicists.", "choices": ["① for", "② to", "③ as", "④ by"], "answer": "③", "explanation": "칭호/자격 → as"},
+        {"sentence": "Switzerland is known ___ its chocolate and watches.", "choices": ["① as", "② for", "③ to", "④ by"], "answer": "②", "explanation": "유명한 특징 → for"},
+        {"sentence": "The suspect's identity is known only ___ the police.", "choices": ["① as", "② for", "③ by", "④ to"], "answer": "④", "explanation": "대상(~에게) → to"},
+        {"sentence": "A man is known ___ the friends he keeps.", "choices": ["① as", "② for", "③ to", "④ by"], "answer": "④", "explanation": "판단 수단 → by"},
+        {"sentence": "Marie Curie is known ___ the first woman to win a Nobel Prize.", "choices": ["① for", "② as", "③ to", "④ by"], "answer": "②", "explanation": "자격/칭호 → as"},
+        {"sentence": "This region is known ___ its spicy cuisine.", "choices": ["① as", "② to", "③ for", "④ by"], "answer": "③", "explanation": "특징/이유 → for"},
+        {"sentence": "The disease is known ___ doctors but not yet ___ the public.", "choices": ["① as / for", "② to / to", "③ for / by", "④ by / to"], "answer": "②", "explanation": "대상(~에게) → to / to"},
+        {"sentence": "Shakespeare is known ___ 'the Bard of Avon.'", "choices": ["① for", "② to", "③ by", "④ as"], "answer": "④", "explanation": "별명 → as"},
+        {"sentence": "Australia is known ___ its unique wildlife.", "choices": ["① as", "② for", "③ to", "④ by"], "answer": "②", "explanation": "유명한 이유 → for"},
+        {"sentence": "The painting's value was known only ___ a handful of experts.", "choices": ["① for", "② as", "③ to", "④ by"], "answer": "③", "explanation": "대상(~에게) → to"},
+        {"sentence": "He is known ___ a strict but fair judge.", "choices": ["① for", "② as", "③ to", "④ by"], "answer": "②", "explanation": "역할/자격 → as"},
+        {"sentence": "Venice is known ___ its romantic canals.", "choices": ["① as", "② by", "③ for", "④ to"], "answer": "③", "explanation": "특징 → for"},
+        {"sentence": "A tree is known ___ its fruit, a person ___ their actions.", "choices": ["① as/as", "② for/for", "③ by/by", "④ to/to"], "answer": "③", "explanation": "판단 수단 → by / by"},
+        {"sentence": "The drug is known ___ professionals ___ an effective treatment.", "choices": ["① to / as", "② for / by", "③ as / to", "④ by / for"], "answer": "①", "explanation": "대상(to) + 자격(as)"},
+        {"sentence": "Socrates is known ___ the father of Western philosophy.", "choices": ["① for", "② as", "③ by", "④ to"], "answer": "②", "explanation": "칭호 → as"},
+        {"sentence": "Korea is well known ___ its rapid economic development.", "choices": ["① as", "② to", "③ by", "④ for"], "answer": "④", "explanation": "이유 → for"},
+        {"sentence": "The syndrome is known ___ its distinctive symptoms.", "choices": ["① for", "② as", "③ by", "④ to"], "answer": "③", "explanation": "식별 수단 → by"},
+        {"sentence": "The island, known ___ 'the pearl of the Indian Ocean,' attracts tourists.", "choices": ["① for", "② to", "③ by", "④ as"], "answer": "④", "explanation": "별명 → as"},
+        {"sentence": "His generosity is known ___ all who have worked with him.", "choices": ["① as", "② for", "③ to", "④ by"], "answer": "③", "explanation": "대상(~에게) → to"},
+        {"sentence": "The city is known ___ its historical significance.", "choices": ["① as", "② for", "③ to", "④ by"], "answer": "②", "explanation": "이유/특성 → for"}
+      ]
+    },
+    {
+      "title": "should의 숨은 용법 (감정적 판단·if절·lest절)",
+      "explanation": "<div class='concept-box'><strong>should의 3가지 숨은 용법</strong><p>should는 '~해야 한다' 외에도 편입 필수 3가지 용법이 있습니다.</p></div><div class='grammar-block'><table><tr><th>용법</th><th>구조</th><th>의미</th><th>예문</th></tr><tr><td><strong>감정적 판단</strong></td><td>It is strange/surprising/odd that S <strong>should</strong> V</td><td>~하다니 (의외·놀라움)</td><td>It is odd that he <u>should</u> forget.</td></tr><tr><td><strong>만약의 대비 (if절)</strong></td><td>If S <strong>should</strong> V, ...</td><td>혹시 ~한다면</td><td>If you <u>should</u> need help, call me.</td></tr><tr><td><strong>lest절</strong></td><td>S + V + lest S <strong>(should)</strong> V</td><td>~하지 않도록</td><td>He ran lest he <u>should</u> be late.</td></tr></table><br><strong>+ 요구/제안/명령 동사의 that절</strong><br>suggest, insist, recommend, demand, require, propose, request + that + S + <strong>(should) + 동사원형</strong><br>→ should 생략 시 동사원형만 남음 (3인칭 단수여도!)</div>",
+      "examples": [
+        "It is surprising that she should make such a mistake. (감정적 판단 — ~하다니)",
+        "If you should need any help, please contact us. (만약의 대비)",
+        "He studied hard lest he should fail the exam. (lest — ~하지 않도록)",
+        "The doctor suggested that the patient (should) rest more. (요구동사 + should 생략)"
+      ],
+      "exampleSentences": [
+        "그가 그런 행동을 하다니 이상하다. → It is strange that he should behave like that.",
+        "혹시 도움이 필요하시면 연락 주세요. → If you should need any help, please let me know.",
+        "그는 시험에 떨어지지 않도록 열심히 공부했다. → He studied hard lest he should fail."
+      ],
+      "confusionPoints": "<div class='warning-box'><strong>핵심 혼동 포인트</strong><br>1. 감정적 판단의 should ≠ 의무의 should — 'It is strange that he should...' = '~하다니' (놀라움)<br>2. lest절의 should는 <strong>생략 가능</strong> — lest he (should) fail<br>3. 요구/제안 동사 that절: should 생략 시 <strong>동사원형</strong>만 남음 — He insists that she <strong>leave</strong> (leaves X)</div>",
+      "practiceProblems": [
+        {"sentence": "It is surprising that she ___ make such a careless mistake on the final exam.", "choices": ["① should", "② would", "③ could", "④ might"], "answer": "①", "explanation": "감정적 판단(surprising) + that절 → should (~하다니)"},
+        {"sentence": "It is strange that he ___ refuse such a generous offer.", "choices": ["① would", "② should", "③ could", "④ will"], "answer": "②", "explanation": "감정적 판단(strange) + that절 → should"},
+        {"sentence": "It is unfortunate that the government ___ have ignored the warnings.", "choices": ["① should", "② would", "③ must", "④ might"], "answer": "①", "explanation": "감정적 판단(unfortunate) + should have p.p. (~했다니)"},
+        {"sentence": "It is odd that the train ___ be late on a perfectly clear day.", "choices": ["① will", "② would", "③ should", "④ must"], "answer": "③", "explanation": "감정적 판단(odd) + that절 → should"},
+        {"sentence": "It is a shame that so many talented artists ___ struggle to earn a living.", "choices": ["① would", "② could", "③ might", "④ should"], "answer": "④", "explanation": "감정적 판단(a shame) + that절 → should"},
+        {"sentence": "If you ___ need any further information, please contact our office.", "choices": ["① should", "② would", "③ could", "④ will"], "answer": "①", "explanation": "if절의 should = 혹시 ~한다면 (만약의 대비)"},
+        {"sentence": "If anyone ___ call while I am out, please take a message.", "choices": ["① will", "② would", "③ should", "④ might"], "answer": "③", "explanation": "if절의 should = 혹시 ~한다면"},
+        {"sentence": "If it ___ rain tomorrow, the outdoor event will be moved indoors.", "choices": ["① should", "② would", "③ will", "④ could"], "answer": "①", "explanation": "if절의 should = 혹시 ~한다면"},
+        {"sentence": "If the package ___ arrive damaged, please notify us within 48 hours.", "choices": ["① will", "② would", "③ could", "④ should"], "answer": "④", "explanation": "if절의 should = 만약 ~한다면"},
+        {"sentence": "He saved money diligently lest he ___ face financial difficulties.", "choices": ["① would", "② should", "③ could", "④ might"], "answer": "②", "explanation": "lest절 → should (~하지 않도록)"},
+        {"sentence": "She whispered lest she ___ wake the sleeping baby.", "choices": ["① should", "② would", "③ could", "④ might"], "answer": "①", "explanation": "lest절 → should (~깨우지 않도록)"},
+        {"sentence": "They took extra precautions lest the secret ___ be revealed.", "choices": ["① would", "② could", "③ should", "④ might"], "answer": "③", "explanation": "lest절 → should (~드러나지 않도록)"},
+        {"sentence": "He wore a disguise lest anyone ___ recognize him.", "choices": ["① would", "② should", "③ could", "④ will"], "answer": "②", "explanation": "lest절 → should (~알아보지 않도록)"},
+        {"sentence": "The committee recommended that the proposal ___ before the deadline.", "choices": ["① is reviewed", "② be reviewed", "③ was reviewed", "④ has been reviewed"], "answer": "②", "explanation": "recommend that + 동사원형 수동 = be reviewed"},
+        {"sentence": "The manager insisted that every employee ___ the safety training.", "choices": ["① completes", "② completed", "③ complete", "④ completing"], "answer": "③", "explanation": "insist that + 동사원형 = complete"},
+        {"sentence": "The doctor suggested that the patient ___ more exercise.", "choices": ["① gets", "② got", "③ get", "④ will get"], "answer": "③", "explanation": "suggest that + 동사원형 = get"},
+        {"sentence": "It is imperative that the suspect ___ until the investigation ends.", "choices": ["① is not released", "② not be released", "③ will not release", "④ not released"], "answer": "②", "explanation": "imperative that + not + 동사원형 수동 = not be released"},
+        {"sentence": "The professor demanded that all assignments ___ by midnight.", "choices": ["① are submitted", "② were submitted", "③ be submitted", "④ will be submitted"], "answer": "③", "explanation": "demand that + 동사원형 수동 = be submitted"},
+        {"sentence": "It is vital that the company ___ its environmental regulations.", "choices": ["① follows", "② followed", "③ follow", "④ has followed"], "answer": "③", "explanation": "vital that + 동사원형 = follow"},
+        {"sentence": "The board proposed that the CEO ___ pending the investigation.", "choices": ["① steps down", "② stepped down", "③ step down", "④ would step down"], "answer": "③", "explanation": "propose that + 동사원형 = step down"}
+      ]
+    }
+  ],
+  "grammarTopics": [
+    {
+      "title": "조동사 + have p.p. 핵심 정리",
+      "content": "<div class='concept-box'><strong>과거에 대한 추측·후회·비난: 조동사 + have p.p.</strong></div><div class='grammar-block'><table><tr><th>표현</th><th>의미</th><th>예문</th></tr><tr><td><strong>must have p.p.</strong></td><td>~했음에 틀림없다 (강한 추측)</td><td>They <u>must have gone</u> out.</td></tr><tr><td><strong>cannot have p.p.</strong></td><td>~했을 리가 없다 (부정 추측)</td><td>He <u>cannot have forgotten</u>.</td></tr><tr><td><strong>may/might have p.p.</strong></td><td>~했을지도 모른다</td><td>I <u>may have left</u> my keys.</td></tr><tr><td><strong>should have p.p.</strong></td><td>~했어야 했다 (후회)</td><td>You <u>should have told</u> me.</td></tr><tr><td><strong>could have p.p.</strong></td><td>~할 수도 있었다</td><td>You <u>could have been</u> injured.</td></tr><tr><td><strong>need not have p.p.</strong></td><td>~할 필요 없었다 (했다)</td><td>You <u>need not have worried</u>.</td></tr></table></div><div class='tip-box'><strong>주의:</strong> must have p.p.의 부정은 'must not have p.p.'가 아니라 <strong>cannot have p.p.</strong>입니다!</div>"
+    },
+    {
+      "title": "당위 형용사(Mandative Adjectives)와 should 생략",
+      "content": "<div class='concept-box'><strong>It is + 당위 형용사 + that + S + (should) + 동사원형</strong></div><div class='grammar-block'><strong>당위 형용사 목록</strong><br>• 의무: necessary, essential, mandatory, compulsory, required<br>• 권고: advisable, desirable, recommended<br>• 적절: appropriate, proper, fitting, natural<br>• 긴급: important, vital, crucial, imperative, urgent, critical<br><br><strong>예문:</strong><br>• It is vital that the data <strong>(should) be</strong> analyzed immediately.<br>• It is essential that he <strong>leave</strong> now. (leaves X → 동사원형!)</div><div class='tip-box'>that절 안에서 should 생략 시 <strong>동사원형</strong>만 남음. 3인칭 단수여도 동사원형!</div>"
+    },
+    {
+      "title": "자동사 수동태 불가 — 주의 동사 목록",
+      "content": "<div class='concept-box'><strong>자동사(intransitive verb)는 목적어가 없으므로 수동태 불가!</strong></div><div class='grammar-block'><table><tr><th>자동사</th><th>의미</th><th>오류 예시 ✗</th><th>올바른 형태 ✓</th></tr><tr><td>occur</td><td>발생하다</td><td>was occurred</td><td>occurred</td></tr><tr><td>happen</td><td>일어나다</td><td>was happened</td><td>happened</td></tr><tr><td>appear</td><td>나타나다</td><td>was appeared</td><td>appeared</td></tr><tr><td>disappear</td><td>사라지다</td><td>was disappeared</td><td>disappeared</td></tr><tr><td>arise</td><td>발생하다</td><td>was arisen</td><td>arose</td></tr><tr><td>emerge</td><td>나타나다</td><td>was emerged</td><td>emerged</td></tr><tr><td>exist</td><td>존재하다</td><td>was existed</td><td>existed</td></tr><tr><td>belong (to)</td><td>속하다</td><td>was belonged</td><td>belonged</td></tr><tr><td>consist (of)</td><td>구성되다</td><td>was consisted</td><td>consisted</td></tr><tr><td>result (from/in)</td><td>초래하다</td><td>was resulted</td><td>resulted</td></tr><tr><td>pertain (to)</td><td>관련되다</td><td>was pertained</td><td>pertained</td></tr><tr><td>correspond (to)</td><td>부합하다</td><td>was corresponded</td><td>corresponded</td></tr></table></div><div class='tip-box'><strong>판별법: '~을/를' 테스트</strong><br>동사 뒤에 '~을/를'이 자연스러우면 타동사(수동 가능), 어색하면 자동사(수동 불가).<br>• retain(보관하다) → 데이터<u>를</u> 보관하다 → 타동사 ✓<br>• occur(발생하다) → 사건<u>을</u> 발생하다 → 어색! → 자동사 ✗</div><div class='warning-box'><strong>주의: take place도 수동태 불가!</strong><br>The meeting <strong>took place</strong> yesterday. (O)<br>The meeting <strong>was taken place</strong> yesterday. (X)</div>"
+    }
+  ]
+}

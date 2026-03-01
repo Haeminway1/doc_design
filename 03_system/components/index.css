@@ -1,0 +1,72 @@
+/* =================================================================== */
+/* components/index.css — 컴포넌트 통합 임포트                          */
+/* Vera's Document Studio                                               */
+/* =================================================================== */
+
+/*
+ * 용도: 모든 교재 컴포넌트를 한 번에 임포트
+ *
+ * 사용법:
+ * <link rel="stylesheet" href="03_system/components/index.css">
+ *
+ * 또는 개별 컴포넌트만 선택:
+ * <link rel="stylesheet" href="03_system/components/problem.css">
+ */
+
+/* --- 1. 표지 --- */
+@import url('./cover.css');
+
+/* --- 2. 목차 --- */
+@import url('./toc.css');
+
+/* --- 3. 섹션 제목 --- */
+@import url('./section-title.css');
+
+/* --- 4. 문제 --- */
+@import url('./problem.css');
+
+/* --- 5. 해설 --- */
+@import url('./explanation.css');
+
+/* --- 6. 정답표 --- */
+@import url('./answer-grid.css');
+
+/* --- 7. 개념 박스 --- */
+@import url('./concept-box.css');
+
+/* --- 8. 팁 박스 --- */
+@import url('./tip-box.css');
+
+/*
+ * 컴포넌트 목록:
+ *
+ * 1. cover.css - 표지 페이지 (4가지 변형)
+ *    - .cover-page, .cover--border-frame, .cover--overlay,
+ *      .cover--minimal, .cover--full-bleed
+ *
+ * 2. toc.css - 목차
+ *    - .toc, .toc-list, .toc-item, .toc-list--two-columns
+ *
+ * 3. section-title.css - 섹션/챕터 제목
+ *    - .chapter-title, .section-title, .subsection-title,
+ *      .section-title--boxed, .section-title--centered
+ *
+ * 4. problem.css - 문제 블록
+ *    - .problem, .problem-choices, .problem--compact,
+ *      .problem-choices--single-column
+ *
+ * 5. explanation.css - 정답 해설
+ *    - .explanation, .explanation--compact
+ *
+ * 6. answer-grid.css - 정답표
+ *    - .answer-grid, .answer-grid-table--5-columns,
+ *      .answer-grid-table--3-columns, .answer-grid--inline
+ *
+ * 7. concept-box.css - 개념 정의 박스
+ *    - .concept-box, .concept-box--example, .concept-box--warning,
+ *      .concept-box--error
+ *
+ * 8. tip-box.css - Vera's Tip 박스
+ *    - .tip-box, .tip-box--warning, .tip-box--memo,
+ *      .tip-box--strategy
+ */

@@ -1,0 +1,27 @@
+{
+    "id": "ocean-blue",
+    "name": "Ocean Blue",
+    "description": "문법 시리즈 (Bridge + Advanced) 템플릿. 딥블루와 베이지의 클래식한 조화. 샤프한 모서리와 보더 프레임 표지가 특징.",
+    "version": "1.0.0",
+    "author": "Vera's Flavor",
+    "fonts": {
+        "heading": "Inter",
+        "body": "Noto Sans KR",
+        "accent": "Playfair Display"
+    },
+    "palette": {
+        "primary": "#345C85",
+        "primaryLight": "#6C96C6",
+        "secondary": "#F2C994",
+        "accent": "#E9A266"
+    },
+    "coverStyle": "border-frame",
+    "borderRadius": "0px",
+    "headerStyle": "underline",
+    "usedBy": [
+        "문법_bridge_part1.html",
+        "문법_bridge_part2.html",
+        "문법_advanced.html",
+        "2-2.html ~ 2-9.html"
+    ]
+}

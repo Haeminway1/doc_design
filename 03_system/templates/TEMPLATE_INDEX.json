@@ -1,0 +1,79 @@
+{
+  "version": "1.0.0",
+  "description": "편입영어 교재 디자인 템플릿 인덱스 - 각 교재가 어떤 템플릿을 사용하는지 매핑",
+  "lastUpdated": "2026-02-16",
+  "templates": {
+    "ocean-blue": {
+      "name": "Ocean Blue",
+      "primaryColor": "#345C85",
+      "textbooks": [
+        "문법_bridge_part1.html",
+        "문법_bridge_part2.html",
+        "문법_advanced.html",
+        "2-2.html",
+        "2-3.html",
+        "2-4.html",
+        "2-5.html",
+        "2-6.html",
+        "2-7.html",
+        "2-8.html",
+        "2-9.html"
+      ]
+    },
+    "royal-purple": {
+      "name": "Royal Purple",
+      "primaryColor": "#9B59B6",
+      "textbooks": [
+        "[편입영어]독해_basic편.html"
+      ]
+    },
+    "earth-tone": {
+      "name": "Earth Tone",
+      "primaryColor": "#4B5358",
+      "textbooks": [
+        "[편입영어]독해_bridge.html"
+      ]
+    },
+    "sky-academic": {
+      "name": "Sky Academic",
+      "primaryColor": "#0284C7",
+      "textbooks": [
+        "[편입영어]독해_intermediate.html",
+        "[편입영어]보카_basic(1-70).html"
+      ]
+    },
+    "mint-sky": {
+      "name": "Mint Sky",
+      "primaryColor": "#63B3ED",
+      "textbooks": [
+        "[편입영어]구문독해_bridge (1).html"
+      ]
+    },
+    "logic-blue": {
+      "name": "Logic Blue",
+      "primaryColor": "#2563EB",
+      "textbooks": [
+        "[편입영어]논리_basic.html"
+      ]
+    }
+  },
+  "textbookMapping": {
+    "문법_bridge_part1.html": "ocean-blue",
+    "문법_bridge_part2.html": "ocean-blue",
+    "문법_advanced.html": "ocean-blue",
+    "2-2.html": "ocean-blue",
+    "2-3.html": "ocean-blue",
+    "2-4.html": "ocean-blue",
+    "2-5.html": "ocean-blue",
+    "2-6.html": "ocean-blue",
+    "2-7.html": "ocean-blue",
+    "2-8.html": "ocean-blue",
+    "2-9.html": "ocean-blue",
+    "[편입영어]독해_basic편.html": "royal-purple",
+    "[편입영어]독해_bridge.html": "earth-tone",
+    "[편입영어]독해_intermediate.html": "sky-academic",
+    "[편입영어]보카_basic(1-70).html": "sky-academic",
+    "[편입영어]구문독해_bridge (1).html": "mint-sky",
+    "[편입영어]논리_basic.html": "logic-blue"
+  }
+}

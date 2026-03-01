@@ -1,0 +1,90 @@
+{{#with readingAnalysis}}
+{{!-- Step 1: 한줄 요약 --}}
+<div class="concept-box avoid-break">
+  <span class="concept-label">한줄 요약</span>
+  <p>{{summary}}</p>
+</div>
+
+{{!-- Step 2: 전체 해석 --}}
+<h4>전체 해석</h4>
+<div class="passage-box">
+  {{fullTranslation}}
+</div>
+
+{{!-- Step 3: 핵심 키워드 --}}
+<h4>핵심 키워드</h4>
+<table class="expression-table avoid-break">
+  <thead>
+    <tr>
+      <th>구분</th>
+      <th>표현 및 키워드</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#if keywords.core}}
+    <tr>
+      <td>핵심 키워드</td>
+      <td>{{keywords.core}}</td>
+    </tr>
+    {{/if}}
+    {{#if keywords.positive}}
+    <tr>
+      <td><span class="direction-badge direction-positive">Positive</span> 정답 방향</td>
+      <td>{{keywords.positive}}</td>
+    </tr>
+    {{/if}}
+    {{#if keywords.negative}}
+    <tr>
+      <td><span class="direction-badge direction-negative">Negative</span> 반대 방향</td>
+      <td>{{keywords.negative}}</td>
+    </tr>
+    {{/if}}
+  </tbody>
+</table>
+
+{{!-- Step 4: 구조 및 방향성 --}}
+<h4>구조 및 방향성</h4>
+<div class="avoid-break" style="margin: 8px 0;">
+  {{#if structure.direction}}
+  <span class="direction-badge {{directionClass structure.direction}}">{{structure.direction}}</span>
+  {{/if}}
+  {{#if structure.type}}
+  <span style="font-size: 9pt; color: #4a5568; margin-left: 6px;">구조 유형: <strong>{{structure.type}}</strong></span>
+  {{/if}}
+</div>
+{{#if structure.steps.length}}
+<div class="flowchart avoid-break">
+  {{#each structure.steps}}
+  <div class="flow-step">
+    <span class="step-label">{{stage}}</span>
+    <div class="step-sub">{{content}}</div>
+  </div>
+  {{#unless @last}}<div class="flow-arrow">↓</div>{{/unless}}
+  {{/each}}
+</div>
+{{/if}}
+
+{{!-- Step 5: 선지 분석 --}}
+<h4>선지 분석</h4>
+{{#each choiceAnalysis}}
+<div class="avoid-break" style="border: 1px solid #D4E5F3; border-radius: 4px; padding: 10px 14px; margin: 8px 0; background-color: {{#if correct}}#f0fff4{{else}}#fff{{/if}};">
+  <div style="display: flex; align-items: flex-start; gap: 8px;">
+    <span style="font-size: 13pt; font-weight: 700; {{#if correct}}color: #38a169;{{else}}color: #e53e3e;{{/if}} flex-shrink: 0;">
+      {{#if correct}}✅{{else}}❌{{/if}} {{num}}
+    </span>
+    <div style="flex: 1;">
+      <p style="margin: 0 0 4px 0;">{{text}}</p>
+      {{#if evidence}}
+      <p style="font-size: 8.5pt; color: #4a5568; margin: 3px 0;"><strong>근거:</strong> {{evidence}}</p>
+      {{/if}}
+      {{#if interpretation}}
+      <p style="font-size: 8.5pt; color: #4a5568; margin: 3px 0;"><strong>해석:</strong> {{interpretation}}</p>
+      {{/if}}
+      {{#if point}}
+      <p style="font-size: 8.5pt; color: #718096; margin: 3px 0;"><strong>포인트:</strong> {{point}}</p>
+      {{/if}}
+    </div>
+  </div>
+</div>
+{{/each}}
+{{/with}}

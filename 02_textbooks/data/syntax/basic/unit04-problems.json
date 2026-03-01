@@ -1,0 +1,131 @@
+{
+  "bookId": "syntax-basic-unit04",
+  "unit": 4,
+  "title": "4형식과 5형식",
+  "part": "I",
+  "week": 1,
+  "type": "sentence-analysis",
+  "instruction": "다음 문장이 4형식인지 5형식인지 밝히고, 문장 성분을 표시한 후 해석해 보세요.",
+  "problems": [
+    {
+      "id": "syntax-basic-unit04-1",
+      "number": 1,
+      "type": "sentence-analysis",
+      "stem": "My dad made me a kite.",
+      "answer": {
+        "analysis": "My dad(S) made(V) me(IO) a kite(DO).",
+        "pattern": "4형식",
+        "translation": "아빠는 나에게 연을 만들어 주셨다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit04-2",
+      "number": 2,
+      "type": "sentence-analysis",
+      "stem": "This song makes me energetic.",
+      "answer": {
+        "analysis": "This song(S) makes(V) me(O) energetic(OC).",
+        "pattern": "5형식",
+        "translation": "이 노래는 나를 활기차게 만든다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit04-3",
+      "number": 3,
+      "type": "sentence-analysis",
+      "stem": "She asked me a difficult question.",
+      "answer": {
+        "analysis": "She(S) asked(V) me(IO) a difficult question(DO).",
+        "pattern": "4형식",
+        "translation": "그녀는 나에게 어려운 질문을 했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit04-4",
+      "number": 4,
+      "type": "sentence-analysis",
+      "stem": "We elected him our class president.",
+      "answer": {
+        "analysis": "We(S) elected(V) him(O) our class president(OC).",
+        "pattern": "5형식",
+        "translation": "우리는 그를 우리 반 회장으로 뽑았다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit04-5",
+      "number": 5,
+      "type": "sentence-analysis",
+      "stem": "The teacher taught us many things.",
+      "answer": {
+        "analysis": "The teacher(S) taught(V) us(IO) many things(DO).",
+        "pattern": "4형식",
+        "translation": "선생님은 우리에게 많은 것들을 가르쳐 주셨다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit04-6",
+      "number": 6,
+      "type": "sentence-analysis",
+      "stem": "I found this book very useful.",
+      "answer": {
+        "analysis": "I(S) found(V) this book(O) very useful(OC).",
+        "pattern": "5형식",
+        "translation": "나는 이 책이 매우 유용하다는 것을 알게 되었다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit04-7",
+      "number": 7,
+      "type": "sentence-analysis",
+      "stem": "Could you lend me your pen?",
+      "answer": {
+        "analysis": "you(S) Could lend(V) me(IO) your pen(DO)?",
+        "pattern": "4형식",
+        "translation": "저에게 펜을 빌려줄 수 있나요?",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit04-8",
+      "number": 8,
+      "type": "sentence-analysis",
+      "stem": "People call New York 'The Big Apple'.",
+      "answer": {
+        "analysis": "People(S) call(V) New York(O) 'The Big Apple'(OC).",
+        "pattern": "5형식",
+        "translation": "사람들은 뉴욕을 '빅 애플'이라고 부른다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit04-9",
+      "number": 9,
+      "type": "sentence-analysis",
+      "stem": "He cooked his family a wonderful dinner.",
+      "answer": {
+        "analysis": "He(S) cooked(V) his family(IO) a wonderful dinner(DO).",
+        "pattern": "4형식",
+        "translation": "그는 가족에게 멋진 저녁을 요리해 주었다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit04-10",
+      "number": 10,
+      "type": "sentence-analysis",
+      "stem": "You should keep your password secret.",
+      "answer": {
+        "analysis": "You(S) should keep(V) your password(O) secret(OC).",
+        "pattern": "5형식",
+        "translation": "당신은 비밀번호를 비밀로 유지해야 한다.",
+        "notes": ""
+      }
+    }
+  ]
+}

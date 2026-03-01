@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>학습 피드백지 — 이민희 260222</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+
+  /* =============================================================
+     피드백지 공통 CSS v2.0 — Teal & Warm 팔레트
+     Primary Dark: #2c6975 | Primary Light: #68b2a0
+     Accent Blue: #1a6fc4 | Red: #e53e3e | Green: #2f855a
+     ============================================================= */
+
+  /* ===== RESET & BASE ===== */
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html {
+    font-size: 9.5pt;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 9.5pt;
+    line-height: 1.65;
+    color: #1a202c;
+    background: #f7fafa !important;
+    orphans: 3; widows: 3;
+  }
+
+  @page { size: A4; margin: 15mm 13mm; }
+
+  /* ===== PAGE BREAK ===== */
+  .page-break-after { page-break-after: always !important; }
+  .page-break-before { page-break-before: always !important; }
+  .avoid-break { page-break-inside: avoid !important; break-inside: avoid !important; }
+  h1, h2, h3, h4 { page-break-after: avoid !important; }
+  table, .concept-box, .tip-box, .warning-box, .answer-box, .grammar-block,
+  .problem-card, .diagnosis-card {
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+
+  /* ===== HEADINGS ===== */
+  h1 {
+    font-size: 18pt; font-weight: 700; color: #2c6975 !important;
+    margin: 16px 0 8px 0; padding-bottom: 5px;
+    border-bottom: 2.5px solid #2c6975; line-height: 1.3;
+  }
+  h2 {
+    font-size: 14pt; font-weight: 700; color: #2c6975 !important;
+    margin: 14px 0 8px 0; padding-bottom: 3px;
+    border-bottom: 1.5px solid #d0e4df; line-height: 1.3;
+  }
+  h3 {
+    font-size: 12pt; font-weight: 700; color: #2d3748 !important;
+    margin: 12px 0 6px 0; line-height: 1.4;
+  }
+  h4 {
+    font-size: 10pt; font-weight: 700; color: #4a5568 !important;
+    margin: 8px 0 5px 0; line-height: 1.4;
+  }
+  p { margin-bottom: 6px; }
+  strong { font-weight: 700; }
+  hr { border: none; border-top: 1px solid #d0e4df; margin: 16px 0; }
+
+  /* ===== TABLES ===== */
+  table {
+    width: 100%; border-collapse: collapse;
+    margin: 10px 0 12px 0; font-size: 8.5pt; line-height: 1.55;
+  }
+  thead th {
+    background-color: #68b2a0 !important; color: #fff !important;
+    font-weight: 700; padding: 6px 8px; text-align: left;
+    border: 1px solid #5aa090; font-size: 8.5pt;
+  }
+  tbody td {
+    padding: 5px 8px; border: 1px solid #d0e4df; vertical-align: top;
+  }
+  tbody tr:nth-child(odd) { background-color: #fff !important; }
+  tbody tr:nth-child(even) { background-color: #f0f7f5 !important; }
+  tbody td:first-child { font-weight: 500; }
+
+  .result-correct { color: #2f855a !important; font-weight: 700; }
+  .result-wrong { color: #e53e3e !important; font-weight: 700; }
+
+  /* ===== REPORT HEADER (첫 페이지) ===== */
+  .report-header { margin-bottom: 14px; }
+  .report-date { font-size: 9.5pt; color: #718096 !important; font-weight: 400; margin-bottom: 3px; }
+  .report-title {
+    font-size: 20pt; font-weight: 700; color: #2c6975 !important;
+    margin-bottom: 5px; line-height: 1.2; border: none; padding: 0;
+  }
+  .report-subtitle { font-size: 11pt; font-weight: 400; color: #4a5568 !important; margin-bottom: 2px; }
+  .report-meta { font-size: 8.5pt; color: #718096 !important; line-height: 1.8; margin-top: 6px; }
+  .report-meta span { display: inline-block; margin-right: 14px; }
+
+  /* ===== SECTION HEADER BAR ===== */
+  .section-header {
+    background-color: #2c6975 !important; color: #fff !important;
+    padding: 10px 20px; margin: 16px -13mm 12px -13mm;
+    padding-left: 16mm; padding-right: 13mm;
+    font-size: 14pt; font-weight: 700; line-height: 1.3;
+  }
+  .section-header .section-num {
+    font-size: 11pt; font-weight: 300; display: block;
+    margin-bottom: 1px; color: #9fcfc2 !important;
+  }
+
+  /* ===== SEVERITY BADGES ===== */
+  .severity-high {
+    display: inline-block; background-color: #e53e3e !important; color: #fff !important;
+    font-size: 7.5pt; font-weight: 700; padding: 1px 8px; border-radius: 10px;
+  }
+  .severity-mid {
+    display: inline-block; background-color: #ed8936 !important; color: #fff !important;
+    font-size: 7.5pt; font-weight: 700; padding: 1px 8px; border-radius: 10px;
+  }
+  .severity-low {
+    display: inline-block; background-color: #2f855a !important; color: #fff !important;
+    font-size: 7.5pt; font-weight: 700; padding: 1px 8px; border-radius: 10px;
+  }
+
+  /* ===== DIAGNOSIS CARD (학습 요약) ===== */
+  .diagnosis-card {
+    border: 1.5px solid #a8cec5; border-radius: 16px;
+    padding: 12px 16px; margin: 12px 0; background-color: #fff !important;
+  }
+  .diagnosis-card h3 { margin-top: 0; color: #2c6975 !important; font-size: 11pt; }
+  .priority-order {
+    background-color: #eaf3f0 !important; border-left: 3px solid #68b2a0;
+    padding: 8px 14px; margin: 10px 0; font-size: 9.5pt; border-radius: 0 12px 12px 0;
+  }
+
+  /* ===== QUESTION BOX ===== */
+  .question-box {
+    background-color: #f0f7f5 !important; border-left: 3px solid #68b2a0;
+    padding: 8px 12px; margin: 6px 0; font-size: 9.5pt; line-height: 1.65;
+    border-radius: 0 12px 12px 0;
+  }
+  .question-box p { margin: 0; }
+
+  /* ===== ANSWER BOX ===== */
+  .answer-box {
+    background-color: #f0fff4 !important; border-left: 3px solid #2f855a;
+    padding: 6px 12px; margin: 6px 0; font-weight: 500;
+    border-radius: 0 12px 12px 0;
+  }
+
+  /* ===== GRAMMAR BLOCK ===== */
+  .grammar-block {
+    background-color: #f0f4f3 !important; border: 1px solid #d0e4df;
+    padding: 10px 14px; margin: 10px 0; border-radius: 12px;
+    font-size: 8.5pt; line-height: 1.75; white-space: pre-wrap;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+
+  /* ===== TIP BOX ===== */
+  .tip-box {
+    background-color: #fffaf0 !important; border-left: 3px solid #ed8936;
+    padding: 8px 14px; margin: 10px 0; border-radius: 0 12px 12px 0;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+  .tip-box .tip-label {
+    font-weight: 700; color: #c05621 !important; font-size: 8.5pt;
+    display: block; margin-bottom: 3px;
+  }
+
+  /* ===== WARNING BOX ===== */
+  .warning-box {
+    background-color: #fff5f5 !important; border-left: 3px solid #e53e3e;
+    padding: 8px 14px; margin: 10px 0; border-radius: 0 12px 12px 0;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+  .warning-box .warning-label {
+    font-weight: 700; color: #e53e3e !important; font-size: 8.5pt;
+    display: block; margin-bottom: 3px;
+  }
+
+  /* ===== CONCEPT BOX ===== */
+  .concept-box {
+    background-color: #eaf3f0 !important; border: 1px solid #68b2a0;
+    padding: 10px 14px; margin: 10px 0; border-radius: 12px;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+  .concept-box .concept-label {
+    font-weight: 700; color: #2c6975 !important; font-size: 8.5pt;
+    display: block; margin-bottom: 4px;
+  }
+
+  /* ===== PROBLEM CARD ===== */
+  .problem-card {
+    border: 1px solid #d0e4df; border-radius: 14px;
+    padding: 12px 16px; margin: 10px 0;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+    background-color: #fff !important;
+  }
+  .problem-header {
+    display: flex; align-items: center; margin-bottom: 10px; gap: 10px;
+  }
+  .problem-badge {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 32px; height: 32px; border-radius: 50%;
+    background-color: #68b2a0 !important; color: #fff !important;
+    font-weight: 700; font-size: 11pt; flex-shrink: 0;
+  }
+  .problem-title {
+    font-size: 10pt; font-weight: 700; color: #2d3748 !important;
+  }
+  .problem-source {
+    font-size: 7.5pt; color: #718096 !important; font-weight: 400;
+    display: block; margin-top: 1px;
+  }
+
+  /* ===== HIGHLIGHT ===== */
+  .hl-key { color: #2c6975 !important; font-weight: 700; }
+  .hl-wrong { color: #e53e3e !important; font-weight: 700; text-decoration: line-through; }
+  .hl-correct { color: #2f855a !important; font-weight: 700; }
+  .hl-blue { color: #1a6fc4 !important; font-weight: 700; }
+
+  /* ===== FLOWCHART ===== */
+  .flowchart { margin: 12px 0; page-break-inside: avoid !important; }
+  .flow-step {
+    background-color: #eaf3f0 !important; border: 1px solid #a8cec5;
+    border-radius: 12px; padding: 8px 14px; margin-bottom: 3px; font-size: 9pt;
+  }
+  .flow-step .step-label { font-weight: 700; color: #2c6975 !important; margin-right: 8px; }
+  .flow-step .step-sub {
+    padding-left: 20px; font-size: 8.5pt; color: #4a5568 !important;
+    margin-top: 3px; line-height: 1.65;
+  }
+  .flow-arrow { text-align: center; font-size: 13pt; color: #68b2a0 !important; line-height: 1.2; margin: 2px 0; }
+
+  /* ===== CHECKLIST ===== */
+  .checklist-group { margin-bottom: 12px; page-break-inside: avoid !important; }
+  .checklist-group-title {
+    font-size: 10pt; font-weight: 700; color: #2c6975 !important;
+    margin-bottom: 6px; padding: 3px 0; border-bottom: 1px solid #d0e4df;
+  }
+  .checklist-item {
+    display: flex; align-items: flex-start; gap: 6px;
+    padding: 3px 0; font-size: 9pt; line-height: 1.55;
+  }
+  .checkbox {
+    display: inline-block; width: 13px; height: 13px; min-width: 13px;
+    border: 1.5px solid #a0aec0; border-radius: 3px; margin-top: 2px;
+  }
+
+  /* ===== SECTION DIVIDER ===== */
+  .section-divider { border: none; border-top: 1.5px solid #d0e4df; margin: 16px 0; }
+
+  /* ===== VARIANT CHOICES ===== */
+  .variant-choices { padding-left: 18px; font-size: 8.5pt; line-height: 1.75; margin: 3px 0; }
+
+  /* ===== GROUP ROW ===== */
+  .group-row td {
+    background-color: #eaf3f0 !important; font-weight: 700;
+    color: #2c6975 !important; border-bottom: 2px solid #68b2a0;
+  }
+
+  /* ===== COMPARE TABLE ===== */
+  .compare-table thead th:nth-child(2) { background-color: #5aa090 !important; }
+  .compare-table thead th:nth-child(3) { background-color: #2f855a !important; }
+
+  /* ===== EXPRESSION TABLE ===== */
+  .expression-table td:first-child { white-space: nowrap; font-weight: 700; }
+
+  /* ===== MARKER ===== */
+  .marker-o { color: #2f855a !important; font-weight: 700; }
+  .marker-x { color: #e53e3e !important; font-weight: 700; }
+
+  /* ===== PASSAGE BLOCK (독해 지문) ===== */
+  .passage-block {
+    background-color: #f7fafa !important; border: 1px solid #d0e4df;
+    border-left: 3px solid #68b2a0;
+    padding: 12px 16px; margin: 10px 0; border-radius: 0 12px 12px 0;
+    font-size: 9pt; line-height: 1.85;
+    text-align: justify !important;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+
+  /* ===== CHOICES LIST ===== */
+  .choices-list {
+    margin: 8px 0; font-size: 9pt; line-height: 1.85;
+  }
+  .choices-list .choice-item { padding: 1px 0; }
+  .choice-correct { color: #2f855a !important; font-weight: 700; }
+  .choice-wrong { color: #e53e3e !important; font-weight: 700; text-decoration: line-through; }
+
+  /* ===== PRINT OPTIMIZATION ===== */
+  @media print {
+    body { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; background: #fff !important; }
+    .section-header { margin-left: -13mm; margin-right: -13mm; padding-left: 16mm; padding-right: 13mm; }
+  }
+
+</style>
+</head>
+<body>
+
+<div class="report-header">
+  <div class="report-date">2026. 02. 22</div>
+  <h1 class="report-title" style="border:none; margin-bottom:6px;">학습 피드백지</h1>
+  <div class="report-subtitle">문법 — Vera's Flavor 독해 Basic / Vera's Secret Flavor 문법</div>
+  <div class="report-meta">
+    <span><strong>학생</strong> 이민희</span>
+    <span><strong>교재</strong> Vera's Flavor 독해 Basic / Vera's Secret Flavor 문법</span>
+    <span><strong>범위</strong> 독해 Part 1 지문 15, 16, 29, 30 + 문법 Q17 + 7강·8강 연습문제</span>
+  </div>
+</div>
+
+<div class="diagnosis-card">
+  <h3>학습 요약</h3>
+  <p style="font-size:10pt; margin-bottom:8px;">
+    전체 12문제 중 오답 <strong>1문제</strong> (정답률 약 92%)
+  </p>
+  <p style="font-size:9.5pt; margin-bottom:4px;">
+    <strong style="color:#38a169;">잘한 점:</strong> 독해 지문 4개(15, 16, 29, 30) 총 12문제 전부 정답으로 안정적인 독해 실력을 보여줌. 특히 주제 파악, 세부 정보 확인, 추론 문제를 고르게 잘 풀었음. 7강·8강 문법 연습문제도 대부분 정확하게 분석함.
+  </p>
+  <p style="font-size:9.5pt; margin-bottom:12px;">
+    <strong style="color:#e53e3e;">아쉬운 점:</strong> 문법에서 삽입구(동격 분사구문)의 구조를 파악하지 못해 불필요한 주어를 포함한 선지를 선택함 (Q17).
+  </p>
+  
+  <table>
+    <thead>
+      <tr><th>취약 영역</th><th style="width:60px;">문제 수</th><th style="width:70px;">심각도</th><th>핵심</th></tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td><strong>삽입 분사구문 (Reduced Relative Clause)</strong></td>
+        <td>1문제</td>
+        <td><span class="severity-high">높음</span></td>
+        <td>동격 위치에서 분사구문이 사용될 때, 주어 없이 분사로 시작해야 하는 구조를 인식하지 못함</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="priority-order">
+  <strong>학습 우선순위:</strong> 분사구문(특히 삽입 분사구문) 구조 파악
+</div>
+
+<div class="page-break-before section-header">
+  <span class="section-num">Section 1</span>
+  틀린 문제 리스트
+</div>
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">1</div>
+    <div>
+      <div class="problem-title">삽입 분사구문 (문법)</div>
+      <span class="problem-source">17번</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>다음 빈칸에 들어갈 가장 적절한 것은?</p>
+  </div>
+  <div style="margin:8px 0; font-size:9.5pt;">
+    <span class="hl-wrong">학생 답: ①</span> &rarr;
+    <span class="hl-correct">정답: ③</span>
+  </div>
+</div>
+
+<div class="page-break-before section-header">
+  <span class="section-num">Section 2</span>
+  해설 파트
+</div>
+<h2>17번 — 삽입 분사구문 (문법)</h2>
+<div class="passage-block">Dopamine, ______ to be the brain chemical that signals pleasure, turns out to have more to do with wanting than with liking.</div>
+<div class="question-box" style="margin-top:12px;">
+  <p><strong>다음 빈칸에 들어갈 가장 적절한 것은?</strong></p>
+</div><div class="choices-list">
+  <div class="choice-item" class="choice-wrong">① it has long been reputed</div>
+  <div class="choice-item">② has long been reputed</div>
+  <div class="choice-item" class="choice-correct">③ long been reputed</div>
+  <div class="choice-item">④ long reputed</div>
+</div>
+<div class="concept-box"><span class="concept-label">핵심 개념: 삽입 분사구문 (Appositive Participial Phrase)</span><p>명사 바로 뒤에 <strong>콤마(,)로 둘러싸인 구</strong>가 올 때, 이것은 <strong>삽입구(동격 표현)</strong>이다.</p><p>관계대명사절을 줄인 <strong>분사구문</strong>이 이 자리에 올 수 있다.</p></div>
+
+<h4>축약 과정 (Reduction)</h4>
+<table><thead><tr><th>단계</th><th>형태</th><th>설명</th></tr></thead><tbody><tr><td><strong>원래 형태</strong></td><td>Dopamine, <strong>which has long been reputed</strong> to be...</td><td>관계대명사절 (주격 which + has been p.p.)</td></tr><tr><td><strong>1단계 축약</strong></td><td>Dopamine, <strong>having long been reputed</strong> to be...</td><td>which 삭제 + has → having</td></tr><tr><td><strong>2단계 축약</strong></td><td>Dopamine, <strong>long been reputed</strong> to be...</td><td>having 생략 (완료 분사구문 추가 축약)</td></tr></tbody></table>
+
+<div class="grammar-block"><strong>왜 ①번은 틀린가?</strong>
+
+① "it has long been reputed"
+→ 콤마 사이에 <strong>완전한 절(S+V)</strong>이 들어가면 문법적으로 틀림
+→ 접속사나 관계대명사 없이 두 절을 콤마로 연결하면 <strong>comma splice(쉼표 연결 오류)</strong>
+→ "Dopamine" 다음에 "it"이 오면 주어가 중복됨
+
+<strong>왜 ②번도 부적절한가?</strong>
+② "has long been reputed"
+→ 주어 없는 동사(has)가 바로 오면 문법적으로 불완전
+→ 분사구문이 아닌 동사원형이므로 삽입구로 부적절
+
+<strong>왜 ③번이 정답인가?</strong>
+③ "long been reputed"
+→ 완료 분사구문의 축약형 (having been → been)
+→ 콤마 사이 삽입 분사구문으로 완벽한 구조
+→ Dopamine, (having) long been reputed to be... , turns out to...</div>
+
+<div class="answer-box"><strong>정답: ③ long been reputed</strong><br>삽입 분사구문 = 콤마 + <strong>분사(~ing / p.p. / having p.p.)</strong> + 콤마<br>Dopamine, <strong>long been reputed</strong> to be the brain chemical that signals pleasure, turns out to...</div>
+
+<div class="tip-box"><span class="tip-label">핵심 판별법</span><p><strong>콤마, ______, 콤마</strong> 구조가 보이면:</p><p>1. 빈칸에 <strong>주어(S)</strong>가 있으면 → 관계대명사절이어야 함 (which/who + V)</p><p>2. 빈칸에 <strong>주어 없이 분사</strong>로 시작하면 → 분사구문 (축약형)</p><p>3. <strong>접속사·관계사 없이 S+V</strong>가 오면 → comma splice 오류!</p></div>
+
+<div class="warning-box"><span class="warning-label">오답 ① 함정 분석</span><p>①번 "it has long been reputed"를 선택한 이유:</p><p>→ "접속사 + 주어 + 동사" 구조가 필요하다고 생각했지만, 실제로는 <strong>삽입 분사구문</strong> 자리</p><p>→ 콤마 사이에 완전한 절이 오려면 <strong>관계대명사(which)</strong>가 반드시 필요</p><p>→ "it"은 Dopamine을 다시 가리키는 불필요한 대명사 → 문법 오류</p></div>
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>왜 이 답을 골랐을까:</strong> 콤마 사이에 들어갈 내용으로 '주어+동사' 구조(it has long been reputed)를 선택함. 완전한 절이 필요하다고 판단한 듯하나, 삽입구 위치에서는 접속사/관계사 없이 절이 올 수 없다는 규칙을 간과함.</p>
+  <p><strong>오류 패턴:</strong> 삽입구 구조 미인식 — 콤마로 둘러싸인 삽입 위치에서 '분사구문'과 '완전한 절'을 구별하지 못하는 패턴. 주어가 있어야 안정적이라고 느끼는 경향.</p>
+  <p><strong>집중 포인트:</strong> 콤마, ______, 콤마 구조를 보면 → (1) 관계대명사절(which/who + V) 또는 (2) 분사구문(~ing / p.p.) 두 가지만 가능하다는 것을 기억하기. 절대로 접속사/관계사 없이 S+V를 넣지 않기.</p>
+</div>
+
+
+<div class="page-break-before section-header">
+  <span class="section-num">보충</span>
+  문법 보충 설명
+</div>
+<div class="concept-box">
+  <span class="concept-label">삽입 분사구문 (Appositive Participial Phrase) 총정리</span>
+  <div class="concept-box"><span class="concept-label">삽입 분사구문이란?</span><p>명사 바로 뒤에 <strong>콤마로 둘러싸여</strong> 추가 정보를 제공하는 분사구문.</p><p>관계대명사절을 축약한 형태로, <strong>동격(appositive)</strong> 역할을 한다.</p></div>
+
+<h4>축약 과정 3단계</h4>
+<table><thead><tr><th>단계</th><th>능동</th><th>수동</th></tr></thead><tbody><tr><td><strong>관계대명사절</strong></td><td>The man, <strong>who lives</strong> next door, ...</td><td>The book, <strong>which was written</strong> in 1990, ...</td></tr><tr><td><strong>분사구문</strong></td><td>The man, <strong>living</strong> next door, ...</td><td>The book, <strong>written</strong> in 1990, ...</td></tr><tr><td><strong>완료 분사구문</strong></td><td>The man, <strong>having lived</strong> here for 10 years, ...</td><td>The book, <strong>(having been) written</strong> in 1990, ...</td></tr></tbody></table>
+
+<h4>핵심 판별법</h4>
+<div class="grammar-block"><strong>콤마, ______, 콤마</strong> 구조에서 빈칸에 올 수 있는 것:
+
+✅ 분사구문: ~ing / p.p. / having p.p.
+   → The city, <strong>founded</strong> in 1850, has grown rapidly.
+
+✅ 관계대명사절: which/who/that + V
+   → The city, <strong>which was founded</strong> in 1850, has grown rapidly.
+
+❌ 접속사 없이 S + V (comma splice 오류!)
+   → The city, <strong>it was founded</strong> in 1850, has grown rapidly. ← 틀림!</div>
+
+<div class="tip-box"><span class="tip-label">시험 포인트</span><p>편입 시험에서 삽입 분사구문은 자주 출제되는 고난도 문법 포인트!</p><p>특히 <strong>완료 수동 분사구문</strong>의 축약 형태를 주의:</p><p>which has been reputed → having been reputed → <strong>been reputed</strong> → 앞에 부사 추가 시 <strong>long been reputed</strong></p></div>
+</div>
+
+<div class="page-break-before section-header">
+  <span class="section-num">개념 보충</span>
+  개념 보충 학습
+</div>
+<h2>1. 삽입 분사구문 (Appositive Participial Phrase)</h2>
+<div class="concept-box"><span class="concept-label">개념 정리: 삽입 분사구문</span><p>명사 뒤 콤마 사이에 위치하여 부가 설명을 하는 분사구문.</p><p>관계대명사(who/which) + be동사를 생략하여 만든다.</p></div>
+<div class="grammar-block">The professor, known for his research, gave a lecture. (= who is known)
+The city, founded in 1776, celebrates its anniversary every year. (= which was founded)
+Einstein, having developed the theory of relativity, became world-famous. (= who had developed)
+The bridge, built over 100 years ago, still stands strong. (= which was built)
+My grandmother, raised in the countryside, loves nature. (= who was raised)
+</div>
+<h4>예문 연습</h4>
+<div class="grammar-block">1. 그 교수는, 연구로 유명한, 강의를 했다. → The professor, known for his research, gave a lecture.
+2. 그 도시는, 1776년에 설립된, 매년 기념일을 축하한다. → The city, founded in 1776, celebrates its anniversary.
+3. 아인슈타인은, 상대성 이론을 개발한, 세계적으로 유명해졌다. → Einstein, having developed the theory of relativity, became famous.
+4. 그 다리는, 100년 전에 지어진, 여전히 튼튼하다. → The bridge, built over 100 years ago, still stands strong.
+</div>
+<div class="warning-box"><span class="warning-label">헷갈리는 포인트</span><p><strong>1. 분사구문 vs 완전한 절:</strong></p><p>콤마 사이에 주어+동사가 오면 반드시 관계대명사(who/which)가 필요!</p><p><span style="color:#e53e3e">✗</span> The man, <strong>he lives</strong> next door, is kind. (comma splice!)</p><p><span style="color:#2f855a">✓</span> The man, <strong>living</strong> next door, is kind.</p><p><span style="color:#2f855a">✓</span> The man, <strong>who lives</strong> next door, is kind.</p><p><strong>2. 현재분사 vs 과거분사:</strong></p><p>능동 → ~ing: The girl, <strong>singing</strong> a song, smiled.</p><p>수동 → p.p.: The window, <strong>broken</strong> by the ball, needs repair.</p><p><strong>3. having p.p.의 축약:</strong></p><p>having been + p.p. → been + p.p. (having 생략 가능)</p><p>having been written → (having) been written → written</p></div>
+<div class="page-break-before section-header">
+  <span class="section-num">연습 1</span>
+  삽입 분사구문 (Appositive Participial Phrase) 연습문제 (20문제)
+</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>1.</strong> The novel, ______ in the 19th century, is still widely read today.</p><div class="variant-choices">① it was written&nbsp;&nbsp;&nbsp;② written&nbsp;&nbsp;&nbsp;③ writing&nbsp;&nbsp;&nbsp;④ was written&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>2.</strong> The athlete, ______ for his speed, won the gold medal.</p><div class="variant-choices">① he is known&nbsp;&nbsp;&nbsp;② knowing&nbsp;&nbsp;&nbsp;③ known&nbsp;&nbsp;&nbsp;④ is known&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>3.</strong> Marie Curie, ______ two Nobel Prizes, remains an inspiration.</p><div class="variant-choices">① having won&nbsp;&nbsp;&nbsp;② she won&nbsp;&nbsp;&nbsp;③ winning&nbsp;&nbsp;&nbsp;④ has won&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>4.</strong> The house, ______ by a famous architect, attracts many visitors.</p><div class="variant-choices">① designing&nbsp;&nbsp;&nbsp;② it was designed&nbsp;&nbsp;&nbsp;③ designed&nbsp;&nbsp;&nbsp;④ which designing&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>5.</strong> The students, ______ by the exam results, celebrated loudly.</p><div class="variant-choices">① encouraging&nbsp;&nbsp;&nbsp;② they were encouraged&nbsp;&nbsp;&nbsp;③ encouraged&nbsp;&nbsp;&nbsp;④ to encourage&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>6.</strong> Vitamin C, ______ to boost immunity, is found in citrus fruits.</p><div class="variant-choices">① it is believed&nbsp;&nbsp;&nbsp;② believing&nbsp;&nbsp;&nbsp;③ believed&nbsp;&nbsp;&nbsp;④ believes&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>7.</strong> The company, ______ in 1995, has grown into a global corporation.</p><div class="variant-choices">① founding&nbsp;&nbsp;&nbsp;② founded&nbsp;&nbsp;&nbsp;③ it founded&nbsp;&nbsp;&nbsp;④ was founded&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>8.</strong> The river, ______ through the city center, provides water to millions.</p><div class="variant-choices">① flowed&nbsp;&nbsp;&nbsp;② it flows&nbsp;&nbsp;&nbsp;③ flowing&nbsp;&nbsp;&nbsp;④ having flowed&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>9.</strong> The painting, ______ to be a forgery, was removed from the gallery.</p><div class="variant-choices">① discovering&nbsp;&nbsp;&nbsp;② it was discovered&nbsp;&nbsp;&nbsp;③ discovered&nbsp;&nbsp;&nbsp;④ having discovering&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>10.</strong> The teacher, ______ with the students' progress, gave them a reward.</p><div class="variant-choices">① pleased&nbsp;&nbsp;&nbsp;② pleasing&nbsp;&nbsp;&nbsp;③ she was pleased&nbsp;&nbsp;&nbsp;④ to please&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>11.</strong> The bridge, ______ to withstand earthquakes, survived the disaster.</p><div class="variant-choices">① it designed&nbsp;&nbsp;&nbsp;② designing&nbsp;&nbsp;&nbsp;③ designed&nbsp;&nbsp;&nbsp;④ has designed&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>12.</strong> Napoleon, ______ most of Europe, was eventually defeated at Waterloo.</p><div class="variant-choices">① conquered&nbsp;&nbsp;&nbsp;② having conquered&nbsp;&nbsp;&nbsp;③ he conquered&nbsp;&nbsp;&nbsp;④ conquering&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>13.</strong> The report, ______ by the committee, was submitted to the board.</p><div class="variant-choices">① preparing&nbsp;&nbsp;&nbsp;② prepared&nbsp;&nbsp;&nbsp;③ it prepared&nbsp;&nbsp;&nbsp;④ having preparing&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>14.</strong> Shakespeare, ______ as the greatest playwright, wrote 37 plays.</p><div class="variant-choices">① regarding&nbsp;&nbsp;&nbsp;② he is regarded&nbsp;&nbsp;&nbsp;③ regarded&nbsp;&nbsp;&nbsp;④ has regarded&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>15.</strong> The old library, ______ of rare books, was a treasure trove for scholars.</p><div class="variant-choices">① consisting&nbsp;&nbsp;&nbsp;② consisted&nbsp;&nbsp;&nbsp;③ it consists&nbsp;&nbsp;&nbsp;④ having consist&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>16.</strong> Penicillin, ______ by Alexander Fleming in 1928, revolutionized medicine.</p><div class="variant-choices">① discovering&nbsp;&nbsp;&nbsp;② it was discovered&nbsp;&nbsp;&nbsp;③ discovered&nbsp;&nbsp;&nbsp;④ to discover&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>17.</strong> The volcano, ______ dormant for centuries, suddenly erupted last year.</p><div class="variant-choices">① it remained&nbsp;&nbsp;&nbsp;② remained&nbsp;&nbsp;&nbsp;③ remaining&nbsp;&nbsp;&nbsp;④ having remained&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>18.</strong> The city, ______ for its beautiful architecture, draws tourists from around the world.</p><div class="variant-choices">① it is famous&nbsp;&nbsp;&nbsp;② famous&nbsp;&nbsp;&nbsp;③ faming&nbsp;&nbsp;&nbsp;④ to fame&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>19.</strong> The astronaut, ______ extensive training, was ready for the space mission.</p><div class="variant-choices">① completing&nbsp;&nbsp;&nbsp;② completed&nbsp;&nbsp;&nbsp;③ having completed&nbsp;&nbsp;&nbsp;④ she completed&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>20.</strong> The Great Wall of China, ______ over many centuries, is a UNESCO World Heritage Site.</p><div class="variant-choices">① building&nbsp;&nbsp;&nbsp;② it was built&nbsp;&nbsp;&nbsp;③ built&nbsp;&nbsp;&nbsp;④ having building&nbsp;&nbsp;&nbsp;</div>
+<div class="page-break-before">
+  <h3>연습 1. 삽입 분사구문 (Appositive Participial Phrase) 정답 및 해설</h3>
+  <table>
+    <thead><tr><th style="width:30px;">#</th><th style="width:80px;">정답</th><th>해설</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>②</td><td>수동 분사구문: which was written → written. 콤마 사이에 주어 없이 과거분사.</td></tr>
+      <tr><td>2</td><td>③</td><td>수동 분사구문: who is known → known. 선수가 '알려진' 것이므로 수동.</td></tr>
+      <tr><td>3</td><td>①</td><td>완료 분사구문: who had won → having won. 노벨상 수상이 본동사보다 먼저 일어남.</td></tr>
+      <tr><td>4</td><td>③</td><td>수동 분사구문: which was designed → designed. 집이 '설계된' 것이므로 수동.</td></tr>
+      <tr><td>5</td><td>③</td><td>감정 분사: 학생들이 '격려받은' 것이므로 과거분사 encouraged.</td></tr>
+      <tr><td>6</td><td>③</td><td>수동 분사구문: which is believed → believed. 비타민C가 '믿어지는' 것이므로 수동.</td></tr>
+      <tr><td>7</td><td>②</td><td>수동 분사구문: which was founded → founded. 회사가 '설립된' 것이므로 수동.</td></tr>
+      <tr><td>8</td><td>③</td><td>능동 분사구문: which flows → flowing. 강이 스스로 '흐르는' 것이므로 능동.</td></tr>
+      <tr><td>9</td><td>③</td><td>수동 분사구문: which was discovered → discovered. 그림이 '발견된' 것이므로 수동.</td></tr>
+      <tr><td>10</td><td>①</td><td>감정 분사: 선생님이 '기뻐한' 것이므로 과거분사 pleased. (감정의 주체 = 과거분사)</td></tr>
+      <tr><td>11</td><td>③</td><td>수동 분사구문: which was designed → designed. 다리가 '설계된' 것이므로 수동.</td></tr>
+      <tr><td>12</td><td>②</td><td>완료 분사구문: 정복이 패배보다 먼저 → having conquered. 나폴레옹이 능동적으로 정복했으므로 능동.</td></tr>
+      <tr><td>13</td><td>②</td><td>수동 분사구문: which was prepared → prepared. 보고서가 '준비된' 것이므로 수동.</td></tr>
+      <tr><td>14</td><td>③</td><td>수동 분사구문: who is regarded → regarded. 셰익스피어가 '여겨지는' 것이므로 수동.</td></tr>
+      <tr><td>15</td><td>①</td><td>능동 분사구문: which consists → consisting. consist는 능동으로만 사용(수동태 불가).</td></tr>
+      <tr><td>16</td><td>③</td><td>수동 분사구문: which was discovered → discovered. 페니실린이 '발견된' 것이므로 수동.</td></tr>
+      <tr><td>17</td><td>④</td><td>완료 분사구문: remain은 자동사이므로 having remained. 수백 년간 휴면 상태였던 것이 작년 분화보다 먼저이므로 완료형.</td></tr>
+      <tr><td>18</td><td>②</td><td>형용사 삽입: which is famous → famous. be동사 뒤 형용사도 삽입구로 사용 가능.</td></tr>
+      <tr><td>19</td><td>③</td><td>완료 분사구문: 훈련 완료가 준비 상태보다 먼저 → having completed. 우주비행사가 능동적으로 훈련을 마침.</td></tr>
+      <tr><td>20</td><td>③</td><td>수동 분사구문: which was built → built. 만리장성이 '지어진' 것이므로 수동.</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<hr class="section-divider">
+<p style="text-align: center; color: #a0aec0; font-size: 9pt; margin-top: 30px;">
+  피드백지 작성 완료 — 2026. 02. 22
+</p>
+</body>
+</html>

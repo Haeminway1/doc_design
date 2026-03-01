@@ -1,0 +1,108 @@
+{
+  "student": "진소윤",
+  "date": "260221",
+  "subject": "독해",
+  "textbook": "vera's flavor 편입영어 독해 bridge편",
+  "range": "Passage 1~15 (1-1번 ~ 15-3번)",
+  "summary": {
+    "totalQ": 45,
+    "wrongQ": 3,
+    "correctRate": "93%",
+    "goodPoints": "45문항 중 42문항 정답으로 독해 기본기가 매우 탄탄함. 15개 지문 중 13개 지문에서 전 문항 정답을 기록. CRISPR(P1), 미세플라스틱(P2), 1인가구(P3), 건축(P5), 더닝-크루거(P7), 마이크로바이옴(P8·12), DeFi(P9), 15분 도시(P10), 성장 마인드셋(P11), 르네상스(P13), 머니볼(P15) 등 다양한 주제의 지문을 정확히 파악함.",
+    "badPoints": "Passage 14(사피어-워프 가설)에서 2문항 연속 오답 — 강한 버전/온건한 버전의 속성을 뒤바꿔 기억하고, 지문에 직접 언급된 예시가 아닌 배경지식 기반 선지를 선택. Passage 6(로제타석)에서는 해독 도구(그리스어)와 해독 결과(소리 체계)를 혼동.",
+    "priority": "대조 구조의 속성 정밀 매칭 → 지문 내 직접 예시 식별 → 인과관계(도구 vs 결과) 정확히 구분",
+    "weakAreas": [
+      {
+        "area": "대조 구조 속성 매칭",
+        "count": 1,
+        "severity": "high",
+        "note": "강한/온건한 버전의 속성(수용/불신)을 정반대로 배정"
+      },
+      {
+        "area": "지문 내 예시 정확 식별",
+        "count": 1,
+        "severity": "mid",
+        "note": "지문에 없는 예시(대명사)를 배경지식으로 선택"
+      },
+      {
+        "area": "인과관계 구분",
+        "count": 1,
+        "severity": "mid",
+        "note": "해독 도구(그리스어)를 상형문자의 본질로 혼동"
+      }
+    ]
+  },
+  "wrongAnswers": [
+    {
+      "q": 63,
+      "selected": "⑤",
+      "correct": "①",
+      "type": "세부 내용 파악",
+      "passage": "The decipherment of the Rosetta Stone was a monumental breakthrough in the field of Egyptology. Discovered in 1799 by French soldiers in Egypt, the stone is a fragment of a larger stele inscribed with a decree issued in 196 BC. Its immense importance lies in the fact that the decree is written in three different scripts: Egyptian hieroglyphs, used for priestly documents; Demotic script, the common script of ancient Egypt; and Ancient Greek, which was the language of the administration. Since Ancient Greek was well understood by scholars, the stone provided a key to unlocking the meaning of the other two unknown scripts. The final breakthrough came in the 1820s, largely thanks to the brilliant work of the French scholar Jean-François Champollion. He correctly deduced that hieroglyphs were not purely symbolic but represented a complex system of alphabetic and syllabic sounds, paving the way for the translation of countless other ancient Egyptian texts.",
+      "question": "6-3. According to the passage, Champollion's key insight was that hieroglyphs were...",
+      "choices": [
+        "a system representing a combination of sounds.",
+        "purely symbolic pictures of objects.",
+        "a less complicated version of Demotic script.",
+        "only used for recording financial transactions.",
+        "a direct translation of the Ancient Greek alphabet."
+      ],
+      "explanation": "\n<div class=\"concept-box\">\n  <h4>1. 한줄 요약</h4>\n  <p>로제타석의 발견과 해독 과정을 설명하며, 프랑스 학자 샹폴리옹이 이집트 상형문자가 순수한 상징이 아니라 <strong>알파벳·음절 소리의 복합 체계</strong>임을 밝혀낸 핵심 통찰을 다루는 글이다.</p>\n</div>\n\n<div class=\"grammar-block\" style=\"text-align:justify; white-space:normal;\">\n  <h4>2. 전체 해석 (Full Translation)</h4>\n  <p>로제타석의 해독은 이집트학 분야에서 기념비적인 돌파구였다. 1799년 이집트에서 프랑스 군인들에 의해 발견된 이 돌은 기원전 196년에 발표된 칙령이 새겨진 더 큰 석비의 조각이다. 이 돌의 엄청난 중요성은 칙령이 <strong>세 가지 다른 문자 체계</strong>로 기록되어 있다는 사실에 있다: 성직 문서에 사용된 이집트 상형문자(hieroglyphs), 고대 이집트의 일반 문자인 데모틱(Demotic) 문자, 그리고 행정 언어였던 고대 그리스어. 고대 그리스어는 학자들이 잘 이해하고 있었기 때문에, 이 돌은 나머지 두 미지의 문자를 해독하는 <strong>열쇠</strong>를 제공했다. 최종 돌파구는 1820년대에 프랑스 학자 장프랑수아 샹폴리옹(Jean-François Champollion)의 뛰어난 연구 덕분에 이루어졌다. <strong>그는 상형문자가 순수한 상징이 아니라 알파벳과 음절 소리의 복합 체계를 나타낸다는 것을 정확히 추론해냈으며</strong>, 이는 수많은 고대 이집트 문헌의 번역을 위한 길을 열었다.</p>\n</div>\n\n<table>\n  <thead>\n    <tr><th>구분</th><th>표현 및 키워드</th></tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>핵심 키워드</strong></td><td>decipherment(해독), Rosetta Stone, hieroglyphs(상형문자), Demotic script, Champollion, syllabic sounds(음절 소리)</td></tr>\n    <tr><td><strong>정답 방향 (Positive)</strong></td><td>\"not purely symbolic but represented a complex system of alphabetic and syllabic sounds\" — 알파벳+음절 소리의 복합 체계</td></tr>\n    <tr><td><strong>반대 방향 (Negative)</strong></td><td>\"direct translation of Greek\"(그리스어 직역), \"purely symbolic\"(순수 상징) — 지문이 명시적으로 부정하거나 언급하지 않는 내용</td></tr>\n  </tbody>\n</table>\n\n<div class=\"tip-box\">\n  <h4>4. 구조 및 방향성</h4>\n  <p><span class=\"severity-low\">POSITIVE — 발견 → 중요성 → 해독 과정 → 핵심 통찰</span></p>\n  <table>\n    <thead><tr><th>단계</th><th>문장</th><th>기능</th></tr></thead>\n    <tbody>\n      <tr><td>1문장</td><td>로제타석 해독 = 이집트학의 기념비적 돌파구</td><td>주제 도입</td></tr>\n      <tr><td>2문장</td><td>1799년 프랑스 군인이 발견, 196 BC 칙령 석비</td><td>발견 배경</td></tr>\n      <tr><td>3문장</td><td>세 가지 문자로 기록 — 상형문자, 데모틱, 그리스어</td><td>중요성 설명</td></tr>\n      <tr><td>4문장</td><td>그리스어가 해독의 열쇠 제공</td><td>해독 원리</td></tr>\n      <tr><td>5문장</td><td>1820년대 샹폴리옹의 돌파구</td><td>최종 해독</td></tr>\n      <tr><td><strong>6문장</strong></td><td>상형문자 = 알파벳+음절 소리의 복합 체계</td><td><strong>핵심 통찰 (정답 근거)</strong></td></tr>\n    </tbody>\n  </table>\n</div>\n\n<div class=\"answer-box\">\n  <h4>✅ 정답: ① a system representing a combination of sounds.</h4>\n  <p><strong>근거:</strong> \"He correctly deduced that hieroglyphs were not purely symbolic but represented a complex system of alphabetic and syllabic sounds\"</p>\n  <p><strong>해석:</strong> 그는 상형문자가 순수한 상징이 아니라 알파벳과 음절 소리의 복합 체계를 나타낸다는 것을 정확히 추론해냈다.</p>\n  <p><strong>포인트:</strong> \"a combination of sounds\"는 지문의 \"alphabetic and syllabic sounds\"를 요약한 표현. 상형문자의 본질이 '소리의 조합 체계'라는 것이 샹폴리옹의 핵심 발견.</p>\n</div>\n\n<div class=\"warning-box\" style=\"border-left-color: #e53e3e !important;\">\n  <h4>❌ 오답: ② purely symbolic pictures of objects.</h4>\n  <p><strong>근거:</strong> 지문은 \"not purely symbolic\"이라고 명시적으로 부정함.</p>\n  <p><strong>포인트:</strong> 이것은 샹폴리옹 이전의 통념이며, 그가 뒤집은 바로 그 오해이다.</p>\n</div>\n\n<div class=\"warning-box\" style=\"border-left-color: #e53e3e !important;\">\n  <h4>❌ 오답: ③ a less complicated version of Demotic script.</h4>\n  <p><strong>근거:</strong> 지문에서 상형문자와 데모틱은 같은 칙령의 서로 다른 문자 체계로 소개됨.</p>\n  <p><strong>포인트:</strong> 상형문자가 데모틱의 '간단한 버전'이라는 관계는 지문에 전혀 없다.</p>\n</div>\n\n<div class=\"warning-box\" style=\"border-left-color: #e53e3e !important;\">\n  <h4>❌ 오답: ④ only used for recording financial transactions.</h4>\n  <p><strong>근거:</strong> 지문은 \"priestly documents\"(성직 문서)와 행정 칙령(decree)을 언급하지, 재정 거래 기록은 언급하지 않음.</p>\n  <p><strong>포인트:</strong> 지문에 전혀 등장하지 않는 내용.</p>\n</div>\n\n<div class=\"warning-box\" style=\"border-left-color: #e53e3e !important;\">\n  <h4>❌ 오답: ⑤ a direct translation of the Ancient Greek alphabet. [학생 선택]</h4>\n  <p><strong>근거:</strong> 로제타석에 그리스어가 함께 새겨져 있었지만, 이는 상형문자를 해독하는 <strong>도구</strong>였을 뿐이다. 상형문자가 그리스어 알파벳의 '직접 번역'이라는 내용은 없음.</p>\n  <p><strong>해석:</strong> 그리스어는 해독의 열쇠(key)였지, 상형문자 = 그리스어 번역이 아니다.</p>\n  <p><strong>포인트:</strong> \"그리스어로 상형문자를 해독했다\"와 \"상형문자는 그리스어의 번역이다\"는 전혀 다른 명제. A를 이용해 B를 이해한 것 ≠ B는 A의 복사본.</p>\n</div>\n",
+      "studentAnalysis": {
+        "whyChosen": "지문에서 그리스어가 상형문자 해독의 '열쇠(key)'로 사용되었다는 내용을 읽고, '그리스어로 해독했다 = 상형문자는 그리스어의 번역이다'로 논리적 비약을 한 것으로 보입니다. 로제타석에 세 가지 문자가 같은 내용으로 기록되어 있다는 사실도 '번역(translation)' 연상을 강화했을 가능성이 있습니다.",
+        "errorPattern": "인과관계 혼동 — '해독 도구(열쇠)'와 '해독 결과(본질)'를 등치. \"그리스어 → 해독 도구\"를 \"상형문자 = 그리스어 번역\"으로 오독.",
+        "focusPoint": "'A를 이용해 B를 해독했다'와 'B는 A의 번역이다'는 전혀 다른 의미입니다. 지문에서 도구와 결과를 구분하세요. Champollion의 핵심 발견은 마지막 문장 \"not purely symbolic but represented a complex system of alphabetic and syllabic sounds\"에 정확히 서술되어 있으니, 정답 근거를 여기서 찾으세요."
+      }
+    },
+    {
+      "q": 142,
+      "selected": "③",
+      "correct": "②",
+      "type": "세부 내용 파악",
+      "passage": "The Sapir-Whorf hypothesis, also known as the principle of linguistic relativity, proposes a fascinating relationship between language and thought. In its strongest form, the hypothesis argues that the language we speak determines the way we think and perceive the world. A more moderate and widely accepted version suggests that language influences, rather than determines, our thought processes. For example, some languages have multiple words for different types of snow, which may allow their speakers to perceive and distinguish between these types more readily than speakers of a language with only one word for snow. Similarly, the way a language handles color terms can affect how its speakers categorize and remember colors. While the deterministic version of the hypothesis is largely discredited, the idea that language can shape our cognition and focus our attention on certain aspects of reality continues to be an influential concept in linguistics, psychology, and anthropology.",
+      "question": "14-2. According to the passage, what is the difference between the strong and moderate versions of the Sapir-Whorf hypothesis?",
+      "choices": [
+        "The strong version focuses on grammar, while the moderate version focuses on vocabulary.",
+        "The strong version claims language determines thought, while the moderate version suggests it influences thought.",
+        "The strong version is widely accepted, while the moderate version is discredited.",
+        "The strong version applies only to ancient languages, while the moderate version applies to modern ones.",
+        "The strong version was proposed by Sapir, while the moderate version was proposed by Whorf."
+      ],
+      "explanation": "\n<div class=\"concept-box\">\n  <h4>1. 한줄 요약</h4>\n  <p>사피어-워프 가설(언어 상대성 원리)의 두 가지 버전 — 언어가 사고를 <strong>'결정'</strong>한다는 강한 버전과 <strong>'영향'</strong>을 준다는 온건한 버전 — 을 대조하고, 눈·색채 어휘 등의 예시로 이를 뒷받침하는 글이다.</p>\n</div>\n\n<div class=\"grammar-block\" style=\"text-align:justify; white-space:normal;\">\n  <h4>2. 전체 해석 (Full Translation)</h4>\n  <p>사피어-워프 가설은 언어 상대성의 원리로도 알려져 있으며, 언어와 사고 사이의 매혹적인 관계를 제안한다. <strong>가장 강한 형태에서, 이 가설은 우리가 사용하는 언어가 우리의 사고방식과 세계를 인식하는 방식을 결정한다(determines)고 주장한다.</strong> <strong>더 온건하고 널리 받아들여진 버전은 언어가 우리의 사고 과정을 결정하기보다는 영향을 미친다(influences)고 제안한다.</strong> 예를 들어, 일부 언어는 다양한 종류의 눈에 대해 여러 단어를 가지고 있어, 그 언어의 화자들이 눈에 대해 하나의 단어만 가진 언어의 화자보다 이러한 종류들을 더 쉽게 인지하고 구별할 수 있게 해줄 수 있다. 마찬가지로, 한 언어가 색채 용어를 다루는 방식은 그 화자들이 색을 분류하고 기억하는 방식에 영향을 미칠 수 있다. <strong>이 가설의 결정론적 버전(=강한 버전)은 대체로 신뢰를 잃었지만(largely discredited)</strong>, 언어가 우리의 인지를 형성하고 현실의 특정 측면에 주의를 집중시킬 수 있다는 아이디어는 언어학, 심리학, 인류학에서 계속 영향력 있는 개념으로 남아 있다.</p>\n</div>\n\n<table>\n  <thead>\n    <tr><th>구분</th><th>표현 및 키워드</th></tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>핵심 키워드</strong></td><td>Sapir-Whorf hypothesis, linguistic relativity, determines vs influences, deterministic version, discredited</td></tr>\n    <tr><td><strong>정답 방향 (Positive)</strong></td><td>\"strongest form: determines\" vs \"moderate: influences\" — 두 버전의 핵심 차이가 '결정'과 '영향'</td></tr>\n    <tr><td><strong>반대 방향 (Negative)</strong></td><td>\"strong = widely accepted\"(거짓, 실제로는 discredited), \"moderate = discredited\"(거짓, 실제로는 widely accepted) — 속성이 정반대</td></tr>\n  </tbody>\n</table>\n\n<div class=\"tip-box\">\n  <h4>4. 구조 및 방향성</h4>\n  <p><span class=\"severity-mid\">가설 소개 → 강한 버전 → 온건한 버전 → 예시 → 평가/결론</span></p>\n  <table>\n    <thead><tr><th>단계</th><th>문장</th><th>기능</th></tr></thead>\n    <tbody>\n      <tr><td>1문장</td><td>사피어-워프 가설 소개</td><td>주제 도입</td></tr>\n      <tr><td><strong>2문장</strong></td><td>강한 버전: 언어가 사고를 <strong>결정(determines)</strong></td><td><strong>대조 대상 1 (정답 근거)</strong></td></tr>\n      <tr><td><strong>3문장</strong></td><td>온건한 버전: 언어가 사고에 <strong>영향(influences)</strong></td><td><strong>대조 대상 2 (정답 근거)</strong></td></tr>\n      <tr><td>4문장</td><td>눈(snow)의 다양한 단어 예시</td><td>증거 1</td></tr>\n      <tr><td>5문장</td><td>색채(color) 용어 예시</td><td>증거 2</td></tr>\n      <tr><td>6문장</td><td>결정론적 버전 = discredited / 온건한 영향력 유지</td><td>평가·결론</td></tr>\n    </tbody>\n  </table>\n</div>\n\n<div class=\"answer-box\">\n  <h4>✅ 정답: ② The strong version claims language determines thought, while the moderate version suggests it influences thought.</h4>\n  <p><strong>근거 1:</strong> \"In its strongest form, the hypothesis argues that the language we speak <strong>determines</strong> the way we think and perceive the world.\"</p>\n  <p><strong>근거 2:</strong> \"A more moderate and widely accepted version suggests that language <strong>influences</strong>, rather than determines, our thought processes.\"</p>\n  <p><strong>해석:</strong> 강한 버전은 언어가 사고를 '결정한다', 온건한 버전은 '영향을 미친다'고 주장한다.</p>\n  <p><strong>포인트:</strong> determines(결정) vs influences(영향) — 이 한 단어의 차이가 두 버전을 구분하는 핵심이다.</p>\n</div>\n\n<div class=\"warning-box\" style=\"border-left-color: #e53e3e !important;\">\n  <h4>❌ 오답: ① The strong version focuses on grammar, while the moderate version focuses on vocabulary.</h4>\n  <p><strong>근거:</strong> 지문에 문법(grammar)과 어휘(vocabulary)의 구분은 전혀 없음.</p>\n  <p><strong>포인트:</strong> 두 버전의 차이는 '언어의 어느 영역'이 아니라 '영향의 강도'(결정 vs 영향)에 있다.</p>\n</div>\n\n<div class=\"warning-box\" style=\"border-left-color: #e53e3e !important;\">\n  <h4>❌ 오답: ③ The strong version is widely accepted, while the moderate version is discredited. [학생 선택]</h4>\n  <p><strong>근거:</strong> 지문은 <strong>정반대</strong>로 서술함: \"A more moderate and <strong>widely accepted</strong> version\" + \"the <strong>deterministic</strong> version... is <strong>largely discredited</strong>\"</p>\n  <p><strong>해석:</strong> 온건한 버전이 '널리 수용'되고, 결정론적(=강한) 버전이 '신뢰를 잃음'. ③은 이를 정확히 뒤바꿈.</p>\n  <p><strong>포인트:</strong> 선지 ③은 두 버전의 수용도(acceptance)를 <strong>정반대</strong>로 뒤집어 놓았다. 'deterministic version = strong version'이라는 등치를 파악하는 것이 핵심.</p>\n</div>\n\n<div class=\"warning-box\" style=\"border-left-color: #e53e3e !important;\">\n  <h4>❌ 오답: ④ The strong version applies only to ancient languages, while the moderate version applies to modern ones.</h4>\n  <p><strong>근거:</strong> 지문에 고대/현대 언어 구분은 전혀 없음.</p>\n  <p><strong>포인트:</strong> 두 버전의 차이는 적용 대상(언어 종류)이 아니라 영향의 강도(결정 vs 영향)이다.</p>\n</div>\n\n<div class=\"warning-box\" style=\"border-left-color: #e53e3e !important;\">\n  <h4>❌ 오답: ⑤ The strong version was proposed by Sapir, while the moderate version was proposed by Whorf.</h4>\n  <p><strong>근거:</strong> 지문은 두 학자의 역할 분담을 설명하지 않으며, 가설을 'Sapir-Whorf hypothesis'로 통칭할 뿐.</p>\n  <p><strong>포인트:</strong> 누가 어떤 버전을 제안했는지는 지문에 전혀 언급되지 않았다.</p>\n</div>\n",
+      "studentAnalysis": {
+        "whyChosen": "지문 마지막에서 'the deterministic version of the hypothesis is largely discredited'를 읽고 '신뢰를 잃은 버전이 있다'는 것은 기억했으나, 어떤 버전이 신뢰를 잃었는지(deterministic = 강한 버전) 혼동한 것으로 보입니다. 'deterministic'이라는 단어가 '강한 버전(strongest form)'을 지칭한다는 연결을 놓쳤을 가능성이 높습니다.",
+        "errorPattern": "속성 뒤바꿈 — 두 대상(강한/온건)의 속성(수용/불신)을 정반대로 배정. 'widely accepted'와 'discredited'를 잘못된 버전에 연결.",
+        "focusPoint": "대조 구문에서는 각 대상의 속성을 정확히 매칭하세요. 'determines'(결정) → 강한 버전 → discredited(신뢰 상실). 'influences'(영향) → 온건한 버전 → widely accepted(널리 수용됨). 특히 'deterministic version'이 '강한 버전'의 다른 표현임을 파악하는 것이 핵심입니다."
+      }
+    },
+    {
+      "q": 143,
+      "selected": "④",
+      "correct": "②",
+      "type": "세부 내용 파악",
+      "passage": "The Sapir-Whorf hypothesis, also known as the principle of linguistic relativity, proposes a fascinating relationship between language and thought. In its strongest form, the hypothesis argues that the language we speak determines the way we think and perceive the world. A more moderate and widely accepted version suggests that language influences, rather than determines, our thought processes. For example, some languages have multiple words for different types of snow, which may allow their speakers to perceive and distinguish between these types more readily than speakers of a language with only one word for snow. Similarly, the way a language handles color terms can affect how its speakers categorize and remember colors. While the deterministic version of the hypothesis is largely discredited, the idea that language can shape our cognition and focus our attention on certain aspects of reality continues to be an influential concept in linguistics, psychology, and anthropology.",
+      "question": "14-3. Which of the following examples is used in the passage to illustrate linguistic relativity?",
+      "choices": [
+        "The different ways languages form past tense verbs.",
+        "The varying number of words for snow in different languages.",
+        "The complexity of kinship terms in some cultures.",
+        "The use of formal and informal pronouns.",
+        "The direction in which a language is written."
+      ],
+      "explanation": "\n<div class=\"concept-box\">\n  <h4>1. 한줄 요약</h4>\n  <p>사피어-워프 가설(언어 상대성 원리)의 두 가지 버전을 대조하고, <strong>눈(snow)의 다양한 표현</strong>과 <strong>색채(color) 용어</strong>라는 두 가지 구체적 예시로 언어가 인지에 미치는 영향을 설명하는 글이다.</p>\n</div>\n\n<div class=\"grammar-block\" style=\"text-align:justify; white-space:normal;\">\n  <h4>2. 전체 해석 (Full Translation)</h4>\n  <p>사피어-워프 가설은 언어 상대성의 원리로도 알려져 있으며, 언어와 사고 사이의 매혹적인 관계를 제안한다. 가장 강한 형태에서, 이 가설은 우리가 사용하는 언어가 우리의 사고방식과 세계를 인식하는 방식을 결정한다고 주장한다. 더 온건하고 널리 받아들여진 버전은 언어가 우리의 사고 과정을 결정하기보다는 영향을 미친다고 제안한다. <strong>예를 들어, 일부 언어는 다양한 종류의 눈에 대해 여러 단어를 가지고 있어, 그 언어의 화자들이 눈에 대해 하나의 단어만 가진 언어의 화자보다 이러한 종류들을 더 쉽게 인지하고 구별할 수 있게 해줄 수 있다.</strong> <strong>마찬가지로, 한 언어가 색채 용어를 다루는 방식은 그 화자들이 색을 분류하고 기억하는 방식에 영향을 미칠 수 있다.</strong> 이 가설의 결정론적 버전은 대체로 신뢰를 잃었지만, 언어가 우리의 인지를 형성하고 현실의 특정 측면에 주의를 집중시킬 수 있다는 아이디어는 언어학, 심리학, 인류학에서 계속 영향력 있는 개념으로 남아 있다.</p>\n</div>\n\n<table>\n  <thead>\n    <tr><th>구분</th><th>표현 및 키워드</th></tr>\n  </thead>\n  <tbody>\n    <tr><td><strong>핵심 키워드</strong></td><td>multiple words for snow(눈의 다양한 단어), color terms(색채 용어), perceive and distinguish(인지하고 구별)</td></tr>\n    <tr><td><strong>정답 방향 (Positive)</strong></td><td>\"some languages have multiple words for different types of snow\" — 지문에 'For example'로 직접 제시된 첫 번째 예시</td></tr>\n    <tr><td><strong>반대 방향 (Negative)</strong></td><td>\"formal and informal pronouns\"(공식/비공식 대명사), \"past tense verbs\"(과거시제), \"kinship terms\"(친족 용어) — 지문에 전혀 언급되지 않은 내용</td></tr>\n  </tbody>\n</table>\n\n<div class=\"tip-box\">\n  <h4>4. 구조 및 방향성</h4>\n  <p><span class=\"severity-low\">가설 → 대조 → 예시 1(눈) → 예시 2(색채) → 평가</span></p>\n  <table>\n    <thead><tr><th>단계</th><th>문장</th><th>기능</th></tr></thead>\n    <tbody>\n      <tr><td>1문장</td><td>사피어-워프 가설 소개</td><td>주제 도입</td></tr>\n      <tr><td>2-3문장</td><td>강한 버전 vs 온건한 버전</td><td>대조</td></tr>\n      <tr><td><strong>4문장</strong></td><td>\"For example\" — 눈(snow)의 다양한 단어</td><td><strong>예시 1 (정답 근거)</strong></td></tr>\n      <tr><td><strong>5문장</strong></td><td>\"Similarly\" — 색채(color) 용어</td><td><strong>예시 2</strong></td></tr>\n      <tr><td>6문장</td><td>결정론적 버전 신뢰 상실, 온건한 영향력 유지</td><td>평가·결론</td></tr>\n    </tbody>\n  </table>\n</div>\n\n<div class=\"answer-box\">\n  <h4>✅ 정답: ② The varying number of words for snow in different languages.</h4>\n  <p><strong>근거:</strong> \"For example, some languages have multiple words for different types of snow, which may allow their speakers to perceive and distinguish between these types more readily than speakers of a language with only one word for snow.\"</p>\n  <p><strong>해석:</strong> 예를 들어, 일부 언어는 눈의 종류에 대해 여러 단어를 가지고 있어, 화자들이 더 쉽게 구별할 수 있다.</p>\n  <p><strong>포인트:</strong> 지문에 \"For example\"로 시작되는 첫 번째 예시가 바로 눈(snow)의 다양한 단어이다. 이것이 언어 상대성을 예증하는 대표적 사례.</p>\n</div>\n\n<div class=\"warning-box\" style=\"border-left-color: #e53e3e !important;\">\n  <h4>❌ 오답: ① The different ways languages form past tense verbs.</h4>\n  <p><strong>근거:</strong> 지문에 과거시제 동사(past tense verbs)에 대한 언급 없음.</p>\n  <p><strong>포인트:</strong> 지문의 예시는 어휘(눈, 색채) 수준이지, 문법(시제) 수준이 아니다.</p>\n</div>\n\n<div class=\"warning-box\" style=\"border-left-color: #e53e3e !important;\">\n  <h4>❌ 오답: ③ The complexity of kinship terms in some cultures.</h4>\n  <p><strong>근거:</strong> 지문에 친족 용어(kinship terms)에 대한 언급 없음.</p>\n  <p><strong>포인트:</strong> 친족 용어는 언어학에서 자주 논의되는 주제이나, 이 지문에서는 다루지 않았다.</p>\n</div>\n\n<div class=\"warning-box\" style=\"border-left-color: #e53e3e !important;\">\n  <h4>❌ 오답: ④ The use of formal and informal pronouns. [학생 선택]</h4>\n  <p><strong>근거:</strong> 지문에 공식/비공식 대명사(formal/informal pronouns)에 대한 언급이 전혀 없음.</p>\n  <p><strong>해석:</strong> 존댓말/반말의 대명사 구분(예: 프랑스어 tu/vous, 독일어 du/Sie)은 언어학에서 흔히 논의되는 주제이지만, 이 지문에서는 언급되지 않았다.</p>\n  <p><strong>포인트:</strong> 세부 내용 파악 문제에서는 배경지식이 아니라 <strong>지문에 직접 언급된 내용</strong>만 정답이 된다. 이 지문의 예시는 오직 ①눈(snow)의 다양한 표현, ②색채(color) 용어의 차이 — 이 두 가지뿐이다.</p>\n</div>\n\n<div class=\"warning-box\" style=\"border-left-color: #e53e3e !important;\">\n  <h4>❌ 오답: ⑤ The direction in which a language is written.</h4>\n  <p><strong>근거:</strong> 지문에 언어의 쓰기 방향(direction of writing)에 대한 언급 없음.</p>\n  <p><strong>포인트:</strong> 지문에 전혀 없는 내용.</p>\n</div>\n",
+      "studentAnalysis": {
+        "whyChosen": "'언어가 사고에 영향을 미친다'는 가설의 예시로 '공식/비공식 대명사 사용'이 직관적으로 그럴듯하게 느껴졌을 수 있습니다. 많은 언어학 개론서에서 대명사의 존댓말/반말 구분(tu/vous, du/Sie)을 언어-문화 관계의 예시로 다루기 때문에, 수업이나 배경지식에 기반한 추측을 한 것으로 보입니다.",
+        "errorPattern": "배경지식 투영 — 지문에 직접 언급된 예시(눈, 색채)가 아닌, 일반적으로 알고 있는 언어학 상식을 선지에 매칭. '지문에 있는 것' vs '내가 아는 것'을 구분하지 못함.",
+        "focusPoint": "세부 내용 파악 문제에서는 반드시 지문에 직접 언급된 내용만 정답이 됩니다. 아무리 그럴듯하고 정확한 사실이라도 '이 지문'에 없으면 오답입니다. 풀이 전략: 선지를 보기 전에 지문에서 해당 내용(예시, 차이점 등)을 먼저 찾고, 그 후에 선지와 대조하세요."
+      }
+    }
+  ],
+  "starredCorrect": [
+    {
+      "q": 43,
+      "selected": "④",
+      "note": "구독 경제 모델에 기업이 끌리는 이유를 묻는 문제. 정답(④ 안정적이고 예측 가능한 수입원)을 맞혔으나 별표를 침. 지문 근거: 'drawn by the promise of predictable, recurring revenue and deeper customer relationships.' 선지 ③ 'It requires less marketing and innovation'은 오히려 지문이 부정하는 내용(intense market competition forces companies to constantly innovate)이므로 혼동 주의."
+    }
+  ],
+  "grammarTopics": []
+}

@@ -1,0 +1,143 @@
+/* =================================================================== */
+/* word-entry.css — 보카 단어 엔트리 컴포넌트                           */
+/* Vera's Document Studio                                               */
+/* =================================================================== */
+
+/**
+ * 보카 단어 엔트리
+ *
+ * 용도: 어휘집 단어 상세 정보 (단어, 발음, 품사, 뜻, 예문, 관련어)
+ *
+ * 마크업 예시:
+ * <div class="word-entry" data-word="transform">
+ *   <div class="word-header">
+ *     <h3 class="word-title eng-text">transform</h3>
+ *     <span class="word-pronunciation">[trænsfɔːrm]</span>
+ *     <span class="word-pos">v.</span>
+ *   </div>
+ *   <div class="word-body">
+ *     <p class="word-meaning">변화시키다, 변형하다</p>
+ *     <div class="word-example">
+ *       <p class="example-en eng-text">Technology has transformed our lives.</p>
+ *       <p class="example-ko">기술이 우리의 삶을 변화시켰다.</p>
+ *     </div>
+ *     <div class="word-related">
+ *       <strong>관련어:</strong> transformation (n. 변형)
+ *     </div>
+ *   </div>
+ * </div>
+ */
+
+.word-entry {
+    margin: var(--space-lg) 0 !important;
+    padding: var(--space-lg) !important;
+    border: 1px solid var(--color-border-default) !important;
+    border-radius: var(--radius-md) !important;
+    background-color: var(--color-bg-page) !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+}
+
+.word-header {
+    display: flex !important;
+    align-items: baseline !important;
+    gap: var(--space-md) !important;
+    margin-bottom: var(--space-md) !important;
+    padding-bottom: var(--space-md) !important;
+    border-bottom: 2px solid var(--color-accent-primary) !important;
+}
+
+.word-title {
+    font-size: var(--text-xl) !important;
+    font-weight: 700 !important;
+    color: var(--color-accent-dark) !important;
+    font-family: var(--font-eng) !important;
+    margin: 0 !important;
+}
+
+.word-pronunciation {
+    font-size: var(--text-base) !important;
+    color: var(--color-text-muted) !important;
+    font-family: var(--font-eng) !important;
+    font-style: italic !important;
+}
+
+.word-pos {
+    font-size: var(--text-sm) !important;
+    font-weight: 600 !important;
+    color: var(--color-white) !important;
+    background-color: var(--color-accent-secondary) !important;
+    padding: 2px 8px !important;
+    border-radius: var(--radius-sm) !important;
+    font-family: var(--font-eng) !important;
+    margin-left: auto !important;
+}
+
+.word-body {
+    font-size: var(--text-base) !important;
+    line-height: var(--leading-normal) !important;
+}
+
+.word-meaning {
+    font-size: var(--text-md) !important;
+    font-weight: 600 !important;
+    color: var(--color-text-primary) !important;
+    margin-bottom: var(--space-md) !important;
+}
+
+.word-example {
+    margin: var(--space-md) 0 !important;
+    padding: var(--space-md) !important;
+    background-color: var(--color-example-bg) !important;
+    border-left: 3px solid var(--color-example-border) !important;
+    border-radius: var(--radius-sm) !important;
+}
+
+.example-en {
+    font-family: var(--font-eng) !important;
+    font-size: var(--text-base) !important;
+    color: var(--color-text-primary) !important;
+    margin-bottom: var(--space-sm) !important;
+    line-height: var(--leading-normal) !important;
+}
+
+.example-ko {
+    font-size: var(--text-sm) !important;
+    color: var(--color-text-secondary) !important;
+    margin: 0 !important;
+    line-height: var(--leading-tight) !important;
+}
+
+.word-related {
+    margin-top: var(--space-md) !important;
+    padding-top: var(--space-md) !important;
+    border-top: 1px solid var(--color-border-default) !important;
+    font-size: var(--text-sm) !important;
+    color: var(--color-text-secondary) !important;
+}
+
+.word-related strong {
+    color: var(--color-accent-dark) !important;
+    font-weight: 600 !important;
+}
+
+.word-related .eng-text {
+    font-family: var(--font-eng) !important;
+}
+
+/* 컴팩트 변형 (간소화된 보카 리스트용) */
+.word-entry--compact {
+    padding: var(--space-md) !important;
+}
+
+.word-entry--compact .word-title {
+    font-size: var(--text-lg) !important;
+}
+
+.word-entry--compact .word-meaning {
+    font-size: var(--text-base) !important;
+}
+
+.word-entry--compact .word-example {
+    padding: var(--space-sm) var(--space-md) !important;
+}

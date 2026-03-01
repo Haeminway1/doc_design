@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>학습 피드백지 — 박지율 260220</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  html {
+    font-size: 10pt;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400; font-size: 10pt; line-height: 1.7;
+    color: #1a202c; background: #fff !important;
+    text-align: justify !important;
+  }
+  @page { size: A4; margin: 16mm 14mm; }
+
+  .page-break-after { page-break-after: always !important; }
+  .page-break-before { page-break-before: always !important; }
+  .avoid-break { page-break-inside: avoid !important; }
+  h1, h2, h3, h4 { page-break-after: avoid !important; }
+  table { page-break-inside: avoid !important; }
+
+  h1 { font-size: 20pt; font-weight: 700; color: #4A90C4 !important; margin: 20px 0 10px 0; padding-bottom: 6px; border-bottom: 3px solid #4A90C4; line-height: 1.3; }
+  h2 { font-size: 16pt; font-weight: 700; color: #5BA3D9 !important; margin: 18px 0 10px 0; padding-bottom: 4px; border-bottom: 2px solid #D4E5F3; line-height: 1.3; }
+  h3 { font-size: 13pt; font-weight: 700; color: #2d3748 !important; margin: 14px 0 8px 0; line-height: 1.4; }
+  h4 { font-size: 11pt; font-weight: 700; color: #4a5568 !important; margin: 10px 0 6px 0; line-height: 1.4; }
+  p { margin-bottom: 8px; }
+  strong { font-weight: 700; }
+  hr { border: none; border-top: 1px solid #D4E5F3; margin: 20px 0; }
+
+  table { width: 100%; border-collapse: collapse; margin: 12px 0 16px 0; font-size: 9pt; line-height: 1.6; }
+  thead th { background-color: #7BB8E8 !important; color: #fff !important; font-weight: 700; padding: 8px 10px; text-align: left; border: 1px solid #6AABDE; font-size: 9pt; }
+  tbody td { padding: 7px 10px; border: 1px solid #D4E5F3; vertical-align: top; }
+  tbody tr:nth-child(odd) { background-color: #fff !important; }
+  tbody tr:nth-child(even) { background-color: #F4F9FD !important; }
+  tbody td:first-child { font-weight: 500; }
+  .result-correct { color: #38a169 !important; font-weight: 700; }
+  .result-wrong { color: #e53e3e !important; font-weight: 700; }
+
+  .report-header { margin-bottom: 16px; }
+  .report-date { font-size: 10pt; color: #718096 !important; font-weight: 400; margin-bottom: 4px; }
+  .report-title { font-size: 22pt; font-weight: 700; color: #4A90C4 !important; margin-bottom: 6px; line-height: 1.2; border: none; padding: 0; }
+  .report-subtitle { font-size: 12pt; font-weight: 400; color: #4a5568 !important; margin-bottom: 2px; }
+  .report-meta { font-size: 9pt; color: #718096 !important; line-height: 1.8; margin-top: 8px; }
+  .report-meta span { display: inline-block; margin-right: 16px; }
+
+  .section-header { background-color: #5BA3D9 !important; color: #fff !important; padding: 12px 20px; margin: 20px -14mm 14px -14mm; padding-left: 14mm; padding-right: 14mm; font-size: 16pt; font-weight: 700; line-height: 1.3; }
+  .section-header .section-num { font-size: 12pt; font-weight: 300; display: block; margin-bottom: 2px; color: #C5DFEF !important; }
+
+  .severity-high { display: inline-block; background-color: #e53e3e !important; color: #fff !important; font-size: 8pt; font-weight: 700; padding: 1px 8px; border-radius: 10px; }
+  .severity-mid { display: inline-block; background-color: #ed8936 !important; color: #fff !important; font-size: 8pt; font-weight: 700; padding: 1px 8px; border-radius: 10px; }
+  .severity-low { display: inline-block; background-color: #38a169 !important; color: #fff !important; font-size: 8pt; font-weight: 700; padding: 1px 8px; border-radius: 10px; }
+
+  .diagnosis-card { border: 2px solid #B8D4EC; border-radius: 6px; padding: 14px 18px; margin: 14px 0; background-color: #F4F9FD !important; }
+  .diagnosis-card h3 { margin-top: 0; color: #4A90C4 !important; font-size: 12pt; }
+  .priority-order { background-color: #EDF5FC !important; border-left: 4px solid #7BB8E8; padding: 10px 16px; margin: 12px 0; font-size: 10pt; }
+
+  .question-box { background-color: #F4F9FD !important; border-left: 4px solid #7BB8E8; padding: 10px 14px; margin: 8px 0; font-size: 10pt; line-height: 1.7; }
+  .question-box p { margin: 0; }
+
+  .answer-box { background-color: #f0fff4 !important; border-left: 4px solid #38a169; padding: 8px 14px; margin: 8px 0; font-weight: 500; }
+  .grammar-block { background-color: #edf2f7 !important; border: 1px solid #D4E5F3; padding: 12px 16px; margin: 12px 0; font-size: 9pt; line-height: 1.8; white-space: pre-wrap; page-break-inside: avoid !important; }
+  .tip-box { background-color: #fffaf0 !important; border-left: 4px solid #ed8936; padding: 10px 16px; margin: 12px 0; page-break-inside: avoid !important; }
+  .tip-box .tip-label { font-weight: 700; color: #c05621 !important; font-size: 9pt; display: block; margin-bottom: 4px; }
+  .warning-box { background-color: #fff5f5 !important; border-left: 4px solid #e53e3e; padding: 10px 16px; margin: 12px 0; page-break-inside: avoid !important; }
+  .warning-box .warning-label { font-weight: 700; color: #e53e3e !important; font-size: 9pt; display: block; margin-bottom: 4px; }
+  .concept-box { background-color: #EDF5FC !important; border: 1px solid #7BB8E8; padding: 12px 16px; margin: 12px 0; page-break-inside: avoid !important; }
+  .concept-box .concept-label { font-weight: 700; color: #4A90C4 !important; font-size: 9pt; display: block; margin-bottom: 6px; }
+
+  .problem-card { border: 1px solid #D4E5F3; border-radius: 4px; padding: 14px 18px; margin: 14px 0; page-break-inside: avoid !important; background-color: #fff !important; }
+  .problem-header { display: flex; align-items: center; margin-bottom: 14px; gap: 12px; }
+  .problem-badge { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background-color: #7BB8E8 !important; color: #fff !important; font-weight: 700; font-size: 12pt; flex-shrink: 0; }
+  .problem-title { font-size: 11pt; font-weight: 700; color: #2d3748 !important; }
+  .problem-source { font-size: 8pt; color: #718096 !important; font-weight: 400; display: block; margin-top: 2px; }
+
+  .hl-key { color: #4A90C4 !important; font-weight: 700; }
+  .hl-wrong { color: #e53e3e !important; font-weight: 700; text-decoration: line-through; }
+  .hl-correct { color: #38a169 !important; font-weight: 700; }
+  .hl-blue { color: #5BA3D9 !important; font-weight: 700; }
+
+  .flowchart { margin: 16px 0; page-break-inside: avoid !important; }
+  .flow-step { background-color: #EDF5FC !important; border: 1px solid #B8D4EC; border-radius: 4px; padding: 10px 16px; margin-bottom: 4px; font-size: 9.5pt; }
+  .flow-step .step-label { font-weight: 700; color: #4A90C4 !important; margin-right: 8px; }
+  .flow-step .step-sub { padding-left: 24px; font-size: 9pt; color: #4a5568 !important; margin-top: 4px; line-height: 1.7; }
+  .flow-arrow { text-align: center; font-size: 14pt; color: #7BB8E8 !important; line-height: 1.2; margin: 2px 0; }
+
+  .section-divider { border: none; border-top: 2px solid #D4E5F3; margin: 20px 0; }
+
+  .practice-item { margin: 10px 0; line-height: 2.2; font-size: 9.5pt; }
+  .practice-num { font-weight: 700; color: #4A90C4 !important; margin-right: 6px; }
+
+  .variant-choices { padding-left: 20px; font-size: 9pt; line-height: 1.8; margin: 4px 0; }
+
+  .group-row td { background-color: #EDF5FC !important; font-weight: 700; color: #4A90C4 !important; border-bottom: 2px solid #7BB8E8; }
+
+  .marker-o { color: #38a169 !important; font-weight: 700; }
+  .marker-x { color: #e53e3e !important; font-weight: 700; }
+
+  @media print {
+    body { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+    .section-header { margin-left: -14mm; margin-right: -14mm; padding-left: 14mm; padding-right: 14mm; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== 첫 페이지: 리포트 헤더 + 학습 요약 ===== -->
+<div class="report-header">
+  <div class="report-date">2026. 02. 20</div>
+  <h1 class="report-title" style="border:none; margin-bottom:6px;">학습 피드백지</h1>
+  <div class="report-subtitle">문법 &mdash; 수동태 (Passive Voice)</div>
+  <div class="report-meta">
+    <span><strong>학생</strong> 박지율</span>
+    <span><strong>교재</strong> 문법 연습 문제 Basic</span>
+    <span><strong>범위</strong> 수동태 변환, 수동태 시제, 수동태 어법</span>
+  </div>
+</div>
+
+<div class="diagnosis-card">
+  <h3>학습 요약</h3>
+  <p style="font-size:10pt; margin-bottom:8px;">
+    전체 약 10문제 중 오답 <strong>3문제</strong> (정답률 약 70%)
+  </p>
+  <p style="font-size:9.5pt; margin-bottom:4px;">
+    <strong style="color:#38a169;">잘한 점:</strong> 기본 수동태 구조(be + p.p.)를 이해하고 있으며, Q21(was built), Q22(are held), Q9(will be painted) 등 단순 시제 수동태 변환을 정확하게 수행했습니다. 현재완료 수동태(has been built)도 Q11에서 정확히 완성했고, 노트에 수일치/자동사/타동사를 꼼꼼하게 정리한 것이 인상적입니다.
+  </p>
+  <p style="font-size:9.5pt; margin-bottom:4px;">
+    <strong style="color:#4A90C4;">학습 시간:</strong> 2/19 기준 총 7시간 (문법 2시간 53분 + 단어 4시간 7분) &mdash; 충분한 투자입니다.
+  </p>
+  <p style="font-size:9.5pt; margin-bottom:12px;">
+    <strong style="color:#e53e3e;">아쉬운 점:</strong> 수동태 변환 시 원문의 시제를 그대로 유지해야 하는 원칙을 놓쳤습니다. Q10에서 과거시제 put을 현재시제 are put으로 변환했고, Q25에서 과거 시점(last weekend)인데 현재완료 수동태(has been shown)를 사용했습니다.
+  </p>
+
+  <table>
+    <thead>
+      <tr><th>취약 영역</th><th style="width:65px;">문제</th><th style="width:70px;">심각도</th><th>핵심</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>수동태 시제 일치</strong></td>
+        <td>Q10, Q25</td>
+        <td><span class="severity-high">높음</span></td>
+        <td>원문 시제를 수동태에 반영하지 못함 (과거&rarr;현재, 과거&rarr;현재완료)</td>
+      </tr>
+      <tr>
+        <td><strong>4형식 수동태 변환</strong></td>
+        <td>Q23</td>
+        <td><span class="severity-mid">보통</span></td>
+        <td>4형식(SVOO) 수동태의 두 가지 방법에서 혼동</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="priority-order">
+  <strong>학습 우선순위:</strong> 수동태 시제 일치 원칙 (시간 부사 확인) &rarr; 4형식(SVOO) 수동태 변환 &rarr; 불규칙 동사(put-put-put) 시제 판별
+</div>
+
+<!-- ===== Section 1: 틀린 문제 리스트 ===== -->
+<div class="page-break-before section-header">
+  <span class="section-num">Section 1</span>
+  틀린 문제 리스트
+</div>
+
+<!-- 문제 1 -->
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">1</div>
+    <div>
+      <div class="problem-title">수동태 시제 불일치 &mdash; 과거를 현재로 변환</div>
+      <span class="problem-source">Q10 &mdash; 수동태 변환</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>다음 문장을 수동태로 바꾸시오.</p>
+    <p style="font-size:9pt; margin-top:6px;">Amy <strong>put</strong> the plates on the table.</p>
+  </div>
+  <div class="answer-box">
+    <strong>정답:</strong> <span class="hl-correct">The plates were put on the table by Amy.</span>
+    <br><strong>학생 답:</strong> <span class="hl-wrong">The plates are put on the table by Amy.</span> (과거 &rarr; 현재로 잘못 변환)
+  </div>
+</div>
+
+<!-- 문제 2 -->
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">2</div>
+    <div>
+      <div class="problem-title">현재완료 수동태 시제 혼동</div>
+      <span class="problem-source">Q25 &mdash; 괄호 안 동사 활용</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>괄호 안의 동사를 활용하여 빈칸에 알맞은 말을 쓰시오.</p>
+    <p style="font-size:9pt; margin-top:6px;">The family album __________ Martha <strong>last weekend</strong> by her grandma. (show)</p>
+  </div>
+  <div class="answer-box">
+    <strong>정답:</strong> <span class="hl-correct">was shown</span> (last weekend = 과거 시점 &rarr; 과거 수동태)
+    <br><strong>학생 답:</strong> <span class="hl-wrong">has been shown</span> (현재완료 수동태 &mdash; "last weekend"와 함께 쓸 수 없음)
+  </div>
+</div>
+
+<!-- 문제 3 -->
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">3</div>
+    <div>
+      <div class="problem-title">4형식 수동태 변환 &mdash; 선지 검토 혼동</div>
+      <span class="problem-source">Q23 &mdash; 수동태 변환 (4형식)</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>다음 문장을 수동태로 바꾸시오.</p>
+    <p style="font-size:9pt; margin-top:6px;">He gave Lisa a free ticket.</p>
+  </div>
+  <div class="answer-box">
+    <strong>정답:</strong> <span class="hl-correct">Lisa was given a free ticket by him.</span> (간접목적어를 주어로)
+    <br>또는: A free ticket was given <strong>to</strong> Lisa by him. (직접목적어를 주어로 &mdash; 전치사 to 필요)
+  </div>
+</div>
+
+<!-- ===== Section 2: 해설 파트 ===== -->
+<div class="page-break-before section-header">
+  <span class="section-num">Section 2</span>
+  해설 파트
+</div>
+
+<!-- ========== 테마 1: 수동태 시제 일치 ========== -->
+<h2>테마 1: 수동태 시제 일치 &mdash; Q10, Q25</h2>
+
+<div class="concept-box">
+  <span class="concept-label">핵심 개념</span>
+  <p>수동태로 변환할 때, <strong>원문의 시제를 그대로 유지</strong>해야 합니다. 능동태가 과거이면 수동태도 과거, 현재완료이면 수동태도 현재완료입니다. 시제를 결정하는 가장 확실한 단서는 <strong>시간 부사</strong>(yesterday, last week, since, already 등)입니다.</p>
+</div>
+
+<h3>시제별 수동태 공식</h3>
+<table>
+  <thead><tr><th>시제</th><th>능동태</th><th>수동태</th><th>예문</th></tr></thead>
+  <tbody>
+    <tr><td><strong>현재</strong></td><td>S + V(s) + O</td><td>S + am/is/are + p.p.</td><td>cleans &rarr; is cleaned</td></tr>
+    <tr><td><strong>과거</strong></td><td>S + V-ed + O</td><td>S + was/were + p.p.</td><td>cleaned &rarr; was cleaned</td></tr>
+    <tr><td><strong>미래</strong></td><td>S + will V + O</td><td>S + will be + p.p.</td><td>will clean &rarr; will be cleaned</td></tr>
+    <tr><td><strong>현재완료</strong></td><td>S + have/has p.p. + O</td><td>S + have/has been + p.p.</td><td>has cleaned &rarr; has been cleaned</td></tr>
+    <tr><td><strong>과거완료</strong></td><td>S + had p.p. + O</td><td>S + had been + p.p.</td><td>had cleaned &rarr; had been cleaned</td></tr>
+  </tbody>
+</table>
+
+<h3>Q10 오답 분석</h3>
+<div class="grammar-block"><strong>능동태:</strong> Amy <span class="hl-key">put</span> the plates on the table.
+&rarr; put은 <strong>과거형</strong> (put &ndash; put &ndash; put 불규칙)
+
+<strong>수동태 (정답):</strong> The plates <span class="hl-correct">were put</span> on the table by Amy.
+&rarr; 과거 수동태 = was/were + p.p.  &rarr;  plates(복수) = were
+
+<strong>학생 오답:</strong> The plates <span class="hl-wrong">are put</span> on the table by Amy.
+&rarr; 현재 수동태로 변환 &mdash; 원문이 과거인데 현재로 바꿈</div>
+
+<h3>Q25 오답 분석</h3>
+<div class="grammar-block"><strong>원문:</strong> The family album _____ Martha <span class="hl-key">last weekend</span> by her grandma. (show)
+
+&rarr; "last weekend" = <strong>과거의 특정 시점</strong>
+&rarr; 과거 수동태 <span class="hl-correct">was shown</span>이 정답
+
+<strong>학생 오답:</strong> <span class="hl-wrong">has been shown</span> (현재완료 수동태)
+&rarr; 현재완료는 과거 특정 시점(last weekend, yesterday, in 2020)과 함께 쓸 수 <strong>없음</strong></div>
+
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">판별 팁: 시간 부사로 시제 결정하기</span>
+  <p>수동태 문제를 만나면, <strong>가장 먼저 시간 부사를 찾아 밑줄</strong>을 그으세요.</p>
+  <table>
+    <thead><tr><th>시간 부사</th><th>시제</th><th>수동태 be동사</th></tr></thead>
+    <tbody>
+      <tr><td>yesterday, last ~, ago, in + 과거연도</td><td><strong>과거</strong></td><td>was / were</td></tr>
+      <tr><td>already, just, yet, since, for, recently</td><td><strong>현재완료</strong></td><td>have / has been</td></tr>
+      <tr><td>every day, usually, always</td><td><strong>현재</strong></td><td>am / is / are</td></tr>
+      <tr><td>tomorrow, next ~, soon</td><td><strong>미래</strong></td><td>will be</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="warning-box" style="page-break-inside:avoid;">
+  <span class="warning-label">주의: put-put-put 불규칙 동사</span>
+  <p>put처럼 현재형과 과거형이 <strong>동일한</strong> 불규칙 동사는 문맥(시간 부사, 전후 시제)으로 시제를 판단해야 합니다.</p>
+  <table>
+    <thead><tr><th>현재형</th><th>과거형</th><th>과거분사</th></tr></thead>
+    <tbody>
+      <tr><td>put</td><td>put</td><td>put</td></tr>
+      <tr><td>cut</td><td>cut</td><td>cut</td></tr>
+      <tr><td>set</td><td>set</td><td>set</td></tr>
+      <tr><td>shut</td><td>shut</td><td>shut</td></tr>
+      <tr><td>hit</td><td>hit</td><td>hit</td></tr>
+      <tr><td>let</td><td>let</td><td>let</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석 (Q10)</span>
+  <p><strong>왜 are put을 썼을까:</strong> put이 현재형과 과거형이 동일한 불규칙 동사이기 때문에, 원문의 "put"을 현재형으로 오인하고 현재 수동태(are put)로 변환한 것으로 보입니다.</p>
+  <p><strong>오류 패턴:</strong> 불규칙 동사 시제 오판 &mdash; put-put-put 동사에서 문맥을 통한 시제 판별을 하지 않음</p>
+  <p><strong>집중 포인트:</strong> put처럼 3단 변화가 동일한 동사가 나오면, 반드시 <strong>문맥</strong>(시간 부사, 전후 문장의 시제)으로 시제를 판단하세요. 일반적으로 "Amy put..."은 과거 서술로 해석합니다. 시간 부사가 없더라도, 서술문 맥락에서 put은 대부분 과거형입니다.</p>
+</div>
+
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석 (Q25)</span>
+  <p><strong>왜 has been shown을 썼을까:</strong> 수동태 공식을 외우는 과정에서 "have/has been + p.p."가 가장 인상적으로 남아, 기계적으로 적용한 것으로 보입니다. "last weekend"라는 과거 시점 표현을 확인하지 않았습니다.</p>
+  <p><strong>오류 패턴:</strong> 시간 부사 무시 &mdash; "last weekend"가 과거 특정 시점을 가리키는 결정적 단서인데, 이를 무시하고 현재완료를 사용</p>
+  <p><strong>집중 포인트:</strong> 수동태 문제를 풀 때, 가장 먼저 <strong>"시간 부사"를 찾아 밑줄</strong>을 긋는 습관을 들이세요. last ~, yesterday, ago, in + 과거연도가 보이면 &rarr; 무조건 was/were + p.p.입니다.</p>
+</div>
+
+<hr class="section-divider">
+
+<!-- ========== 테마 2: 4형식 수동태 변환 ========== -->
+<h2>테마 2: 4형식(SVOO) 수동태 변환 &mdash; Q23</h2>
+
+<div class="concept-box">
+  <span class="concept-label">핵심 개념</span>
+  <p>4형식 문장(<strong>주어 + 동사 + 간접목적어(IO) + 직접목적어(DO)</strong>)은 <strong>두 가지 방법</strong>으로 수동태를 만들 수 있습니다. 간접목적어를 주어로 올리거나, 직접목적어를 주어로 올릴 수 있습니다.</p>
+</div>
+
+<div class="grammar-block"><strong>4형식 수동태 변환 공식</strong>
+
+<span class="hl-key">능동태:</span> He gave <span class="hl-blue">Lisa</span>(IO) <span class="hl-key">a free ticket</span>(DO).
+
+<span class="hl-correct">방법 1: 간접목적어(IO)를 주어로</span>
+&rarr; Lisa was given a free ticket by him.
+   (전치사 불필요)
+
+<span class="hl-correct">방법 2: 직접목적어(DO)를 주어로</span>
+&rarr; A free ticket was given <strong>to</strong> Lisa by him.
+   (전치사 to 필요!)</div>
+
+<h3>4형식 동사별 전치사</h3>
+<table>
+  <thead><tr><th>전치사</th><th>동사</th><th>예문 (DO 주어)</th></tr></thead>
+  <tbody>
+    <tr><td><strong>to</strong></td><td>give, show, send, teach, tell, lend, offer</td><td>A gift was given <strong>to</strong> her.</td></tr>
+    <tr><td><strong>for</strong></td><td>buy, make, cook, get, find</td><td>A cake was made <strong>for</strong> him.</td></tr>
+  </tbody>
+</table>
+
+<div class="flowchart">
+  <div class="flow-step">
+    <span class="step-label">Step 1</span> 4형식 확인: S + V + IO(사람) + DO(사물)
+  </div>
+  <div class="flow-arrow">&darr;</div>
+  <div class="flow-step">
+    <span class="step-label">Step 2</span> 무엇을 주어로 올릴지 선택: IO(사람) 또는 DO(사물)
+  </div>
+  <div class="flow-arrow">&darr;</div>
+  <div class="flow-step">
+    <span class="step-label">Step 3-A</span> IO가 주어 &rarr; IO + was/were + p.p. + DO (전치사 불필요)
+    <div class="step-sub">Lisa was given a free ticket by him.</div>
+  </div>
+  <div class="flow-arrow">&darr;</div>
+  <div class="flow-step">
+    <span class="step-label">Step 3-B</span> DO가 주어 &rarr; DO + was/were + p.p. + <strong>to/for</strong> + IO
+    <div class="step-sub">A free ticket was given <strong>to</strong> Lisa by him.</div>
+  </div>
+</div>
+
+<div class="warning-box" style="page-break-inside:avoid;">
+  <span class="warning-label">주의: 전치사 to vs for</span>
+  <p>직접목적어(DO)를 주어로 올릴 때, 간접목적어 앞에 <strong>전치사</strong>를 반드시 넣어야 합니다. give/send/show 등은 <strong>to</strong>, buy/make/cook 등은 <strong>for</strong>를 씁니다. 전치사를 빠뜨리면 오답입니다.</p>
+</div>
+
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석 (Q23)</span>
+  <p><strong>왜 헷갈렸을까:</strong> 4형식 수동태는 변환 방법이 두 가지이기 때문에, 선지를 비교하며 어떤 것이 올바른 형태인지 혼란이 생긴 것으로 보입니다.</p>
+  <p><strong>오류 패턴:</strong> IO 주어 방식과 DO 주어 방식을 혼동 &mdash; 두 방법의 구조적 차이(전치사 유무)를 명확히 구분하지 못함</p>
+  <p><strong>집중 포인트:</strong> 4형식 수동태는 <strong>두 가지 정답</strong>이 있다는 것을 기억하세요. IO가 주어면 전치사 없이, DO가 주어면 전치사(to/for)가 반드시 필요합니다. 시험에서는 IO를 주어로 올리는 방법 1이 더 자주 출제됩니다.</p>
+</div>
+
+<!-- ===== Section 3: 연습문제 ===== -->
+<div class="page-break-before section-header">
+  <span class="section-num">연습 A</span>
+  수동태 시제 일치 연습문제 (20문제)
+</div>
+
+<div class="question-box"><p>다음 문장을 수동태로 바꾸거나, 빈칸에 알맞은 수동태 형태를 쓰시오. 시간 부사에 주의하세요.</p></div>
+
+<div class="practice-item"><span class="practice-num">1.</span> She wrote the letter yesterday. &rarr; The letter __________ yesterday.</div>
+<div class="practice-item"><span class="practice-num">2.</span> They have already finished the project. &rarr; The project __________ already.</div>
+<div class="practice-item"><span class="practice-num">3.</span> He will send the package tomorrow. &rarr; The package __________ tomorrow.</div>
+<div class="practice-item"><span class="practice-num">4.</span> My mother cooked dinner last night. &rarr; Dinner __________ last night by my mother.</div>
+<div class="practice-item"><span class="practice-num">5.</span> The company has hired 50 new employees since January. &rarr; 50 new employees __________ since January.</div>
+<div class="practice-item"><span class="practice-num">6.</span> 다음 중 어법상 올바른 문장을 고르시오.<br>
+  <span class="variant-choices">(a) The bridge was built in 1990.<br>(b) The bridge has been built in 1990.<br>(c) The bridge is built in 1990.</span></div>
+<div class="practice-item"><span class="practice-num">7.</span> They cut the tree down last week. &rarr; The tree __________ last week.</div>
+<div class="practice-item"><span class="practice-num">8.</span> She has read the book three times. &rarr; The book __________ three times.</div>
+<div class="practice-item"><span class="practice-num">9.</span> He set the alarm clock every morning. &rarr; The alarm clock __________ every morning by him.</div>
+<div class="practice-item"><span class="practice-num">10.</span> We had completed the work before the deadline. &rarr; The work __________ before the deadline.</div>
+<div class="practice-item"><span class="practice-num">11.</span> 다음 문장에서 틀린 부분을 찾아 고치시오: "The window has been broken by Tom yesterday."</div>
+<div class="practice-item"><span class="practice-num">12.</span> Scientists discovered a new species in 2023. &rarr; A new species __________ in 2023.</div>
+<div class="practice-item"><span class="practice-num">13.</span> 다음 중 어법상 올바른 문장을 고르시오.<br>
+  <span class="variant-choices">(a) The car has been repaired last Monday.<br>(b) The car was repaired last Monday.<br>(c) The car is repaired last Monday.</span></div>
+<div class="practice-item"><span class="practice-num">14.</span> She has just submitted the report. &rarr; The report __________ just.</div>
+<div class="practice-item"><span class="practice-num">15.</span> They will announce the results next week. &rarr; The results __________ next week.</div>
+<div class="practice-item"><span class="practice-num">16.</span> He hit the ball hard in the final game. &rarr; The ball __________ hard in the final game.</div>
+<div class="practice-item"><span class="practice-num">17.</span> 다음 문장에서 틀린 부분을 찾아 고치시오: "This photo is taken by my father three years ago."</div>
+<div class="practice-item"><span class="practice-num">18.</span> The students had already read the novel before the exam. &rarr; The novel __________ before the exam.</div>
+<div class="practice-item"><span class="practice-num">19.</span> 괄호 안에서 알맞은 것을 고르시오: The homework (is finished / was finished / has been finished) by the students two hours ago.</div>
+<div class="practice-item"><span class="practice-num">20.</span> 괄호 안에서 알맞은 것을 고르시오: The museum (was visited / has been visited / is visited) by thousands of people since it opened.</div>
+
+<!-- ===== 연습 B ===== -->
+<div class="page-break-before section-header">
+  <span class="section-num">연습 B</span>
+  4형식(SVOO) 수동태 변환 연습문제 (20문제)
+</div>
+
+<div class="question-box"><p>다음 문장을 수동태로 바꾸시오. 간접목적어(IO)를 주어로 하거나, 직접목적어(DO)를 주어로 하여 변환하세요. 전치사(to/for)에 주의하세요.</p></div>
+
+<div class="practice-item"><span class="practice-num">1.</span> He gave her a beautiful necklace. &rarr; She __________ a beautiful necklace by him.</div>
+<div class="practice-item"><span class="practice-num">2.</span> She taught the children English. &rarr; The children __________ English by her.</div>
+<div class="practice-item"><span class="practice-num">3.</span> They sent me a birthday card. &rarr; I __________ a birthday card by them.</div>
+<div class="practice-item"><span class="practice-num">4.</span> My mom made me a sandwich. &rarr; A sandwich __________ me by my mom.</div>
+<div class="practice-item"><span class="practice-num">5.</span> He bought his daughter a new bicycle. &rarr; A new bicycle __________ his daughter by him.</div>
+<div class="practice-item"><span class="practice-num">6.</span> 다음 문장을 두 가지 수동태로 바꾸시오: The teacher showed the students a video.<br>
+  <span class="variant-choices">(a) The students __________<br>(b) A video __________</span></div>
+<div class="practice-item"><span class="practice-num">7.</span> She told him the truth. &rarr; He __________ the truth by her.</div>
+<div class="practice-item"><span class="practice-num">8.</span> They offered us a great deal. &rarr; We __________ a great deal by them.</div>
+<div class="practice-item"><span class="practice-num">9.</span> 다음 중 어법상 올바른 문장을 고르시오.<br>
+  <span class="variant-choices">(a) A letter was sent her by me.<br>(b) A letter was sent to her by me.<br>(c) A letter was sent for her by me.</span></div>
+<div class="practice-item"><span class="practice-num">10.</span> He cooked his family a wonderful dinner. &rarr; A wonderful dinner __________ his family by him.</div>
+<div class="practice-item"><span class="practice-num">11.</span> 다음 문장에서 틀린 부분을 찾아 고치시오: "A new toy was bought to the child by his parents."</div>
+<div class="practice-item"><span class="practice-num">12.</span> She gave the dog some food. &rarr; The dog __________ some food by her.</div>
+<div class="practice-item"><span class="practice-num">13.</span> They will teach us Korean history. &rarr; We __________ Korean history by them.</div>
+<div class="practice-item"><span class="practice-num">14.</span> He has sent her three emails this week. &rarr; She __________ three emails this week.</div>
+<div class="practice-item"><span class="practice-num">15.</span> 다음 중 어법상 틀린 문장을 고르시오.<br>
+  <span class="variant-choices">(a) She was given a prize by the principal.<br>(b) A prize was given to she by the principal.<br>(c) A prize was given to her by the principal.</span></div>
+<div class="practice-item"><span class="practice-num">16.</span> My father made me a wooden chair. &rarr; I __________ a wooden chair by my father.</div>
+<div class="practice-item"><span class="practice-num">17.</span> 다음 문장을 두 가지 수동태로 바꾸시오: She showed me her new painting.<br>
+  <span class="variant-choices">(a) I __________<br>(b) Her new painting __________</span></div>
+<div class="practice-item"><span class="practice-num">18.</span> They lent him some money. &rarr; He __________ some money by them.</div>
+<div class="practice-item"><span class="practice-num">19.</span> 괄호 안에서 알맞은 것을 고르시오: A new laptop was bought (to / for) her by her parents.</div>
+<div class="practice-item"><span class="practice-num">20.</span> He will give the winner a trophy. &rarr; The winner __________ a trophy by him.</div>
+
+<!-- ===== Section 4: 정답 및 해설 ===== -->
+<div class="page-break-before section-header">
+  <span class="section-num">Section 4</span>
+  정답 및 해설
+</div>
+
+<h3 style="color:#4A90C4; margin-bottom:12px;">연습 A. 수동태 시제 일치 &mdash; 정답</h3>
+<table>
+  <thead><tr><th style="width:30px;">#</th><th style="width:160px;">정답</th><th>해설</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>was written</td><td>wrote(과거) &rarr; was + p.p., "yesterday" = 과거</td></tr>
+    <tr><td>2</td><td>has been finished</td><td>have finished(현재완료) &rarr; has been + p.p., "already" = 현재완료</td></tr>
+    <tr><td>3</td><td>will be sent</td><td>will send(미래) &rarr; will be + p.p., "tomorrow" = 미래</td></tr>
+    <tr><td>4</td><td>was cooked</td><td>cooked(과거) &rarr; was + p.p., "last night" = 과거</td></tr>
+    <tr><td>5</td><td>have been hired</td><td>have hired(현재완료) &rarr; have been + p.p., "since" = 현재완료</td></tr>
+    <tr><td>6</td><td>(a) was built</td><td>"in 1990" = 과거 특정 시점 &rarr; 과거 수동태</td></tr>
+    <tr><td>7</td><td>was cut down</td><td>cut(과거) &rarr; was + p.p., cut-cut-cut 불규칙, "last week" = 과거</td></tr>
+    <tr><td>8</td><td>has been read</td><td>has read(현재완료) &rarr; has been + p.p.</td></tr>
+    <tr><td>9</td><td>was set</td><td>set(과거) &rarr; was + p.p., set-set-set 불규칙</td></tr>
+    <tr><td>10</td><td>had been completed</td><td>had completed(과거완료) &rarr; had been + p.p.</td></tr>
+    <tr><td>11</td><td>has been &rarr; was</td><td>"yesterday" = 과거 &rarr; 현재완료 사용 불가, was broken</td></tr>
+    <tr><td>12</td><td>was discovered</td><td>discovered(과거) &rarr; was + p.p., "in 2023" = 과거</td></tr>
+    <tr><td>13</td><td>(b) was repaired</td><td>"last Monday" = 과거 &rarr; 과거 수동태</td></tr>
+    <tr><td>14</td><td>has just been submitted</td><td>has submitted(현재완료) &rarr; has been + p.p., "just" = 현재완료</td></tr>
+    <tr><td>15</td><td>will be announced</td><td>will announce(미래) &rarr; will be + p.p., "next week" = 미래</td></tr>
+    <tr><td>16</td><td>was hit</td><td>hit(과거) &rarr; was + p.p., hit-hit-hit 불규칙</td></tr>
+    <tr><td>17</td><td>is &rarr; was</td><td>"three years ago" = 과거 &rarr; was taken</td></tr>
+    <tr><td>18</td><td>had already been read</td><td>had read(과거완료) &rarr; had been + p.p.</td></tr>
+    <tr><td>19</td><td>was finished</td><td>"two hours ago" = 과거 특정 시점 &rarr; 과거 수동태</td></tr>
+    <tr><td>20</td><td>has been visited</td><td>"since it opened" = 현재완료 &rarr; has been + p.p.</td></tr>
+  </tbody>
+</table>
+
+<div class="page-break-before"></div>
+<h3 style="color:#4A90C4; margin-bottom:12px;">연습 B. 4형식(SVOO) 수동태 변환 &mdash; 정답</h3>
+<table>
+  <thead><tr><th style="width:30px;">#</th><th style="width:200px;">정답</th><th>해설</th></tr></thead>
+  <tbody>
+    <tr><td>1</td><td>was given</td><td>IO 주어: She was given a necklace</td></tr>
+    <tr><td>2</td><td>were taught</td><td>IO 주어: The children were taught English</td></tr>
+    <tr><td>3</td><td>was sent</td><td>IO 주어: I was sent a birthday card</td></tr>
+    <tr><td>4</td><td>was made for</td><td>DO 주어: make &rarr; 전치사 for</td></tr>
+    <tr><td>5</td><td>was bought for</td><td>DO 주어: buy &rarr; 전치사 for</td></tr>
+    <tr><td>6</td><td>(a) were shown a video<br>(b) was shown to the students</td><td>IO/DO 두 가지 방법. show &rarr; to</td></tr>
+    <tr><td>7</td><td>was told</td><td>IO 주어: He was told the truth</td></tr>
+    <tr><td>8</td><td>were offered</td><td>IO 주어: We were offered a great deal</td></tr>
+    <tr><td>9</td><td>(b) was sent to her</td><td>DO 주어: send &rarr; 전치사 to</td></tr>
+    <tr><td>10</td><td>was cooked for</td><td>DO 주어: cook &rarr; 전치사 for</td></tr>
+    <tr><td>11</td><td>to &rarr; for</td><td>buy &rarr; 전치사 for (bought for the child)</td></tr>
+    <tr><td>12</td><td>was given</td><td>IO 주어: The dog was given some food</td></tr>
+    <tr><td>13</td><td>will be taught</td><td>미래 수동태: will be + p.p.</td></tr>
+    <tr><td>14</td><td>has been sent</td><td>현재완료 수동태: has been + p.p.</td></tr>
+    <tr><td>15</td><td>(b) 틀림</td><td>전치사 뒤에는 목적격 필요: to she &rarr; to her</td></tr>
+    <tr><td>16</td><td>was made</td><td>IO 주어: I was made a chair</td></tr>
+    <tr><td>17</td><td>(a) was shown her new painting<br>(b) was shown to me</td><td>IO/DO 두 가지 방법. show &rarr; to</td></tr>
+    <tr><td>18</td><td>was lent</td><td>IO 주어: He was lent some money</td></tr>
+    <tr><td>19</td><td>for</td><td>buy &rarr; 전치사 for</td></tr>
+    <tr><td>20</td><td>will be given</td><td>미래 수동태: will be + p.p.</td></tr>
+  </tbody>
+</table>
+
+<!-- ===== 푸터 ===== -->
+<hr class="section-divider">
+<p style="text-align: center; color: #a0aec0; font-size: 9pt; margin-top: 30px;">
+  피드백지 작성 완료 &mdash; 2026년 02월 20일
+</p>
+
+</body>
+</html>

@@ -1,0 +1,256 @@
+{
+  "bookId": "grammar-advanced-ch03",
+  "chapter": "ch03",
+  "title": "주어-동사 일치의 모든 예외 사항",
+  "problems": [
+    {
+      "id": "grammar-advanced-51",
+      "number": 51,
+      "type": "error-identification",
+      "stem": "The proliferation of digital devices, along with the widespread availability of high-speed internet, have fundamentally transformed the media landscape.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "have → has (주어는 The proliferation)",
+      "explanation": "have → has (주어는 The proliferation)"
+    },
+    {
+      "id": "grammar-advanced-52",
+      "number": 52,
+      "type": "error-identification",
+      "stem": "Neither the project manager nor the lead engineers was able to identify the root cause of the system failure until the external audit was conducted.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "was → were (동사에 가까운 주어는 engineers)",
+      "explanation": "was → were (동사에 가까운 주어는 engineers)"
+    },
+    {
+      "id": "grammar-advanced-53",
+      "number": 53,
+      "type": "error-identification",
+      "stem": "A significant portion of the rainforest, which are home to millions of unique species, is being destroyed at an alarming rate due to illegal logging.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "are → is (선행사는 the rainforest)",
+      "explanation": "are → is (선행사는 the rainforest)"
+    },
+    {
+      "id": "grammar-advanced-54",
+      "number": 54,
+      "type": "error-identification",
+      "stem": "The number of applicants for the position have exceeded our expectations, suggesting a high level of interest in the role.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "have → has (The number of + 단수V)",
+      "explanation": "have → has (The number of + 단수V)"
+    },
+    {
+      "id": "grammar-advanced-55",
+      "number": 55,
+      "type": "fill-in-blank",
+      "stem": "Every one of the students who were selected for the advanced program ________ required to submit a research proposal by the end of the semester.",
+      "choices": [
+        "is",
+        "are",
+        "was",
+        "were"
+      ],
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "answer": 1,
+      "explanation": "(A) (주어는 Every one, 단수)"
+    },
+    {
+      "id": "grammar-advanced-56",
+      "number": 56,
+      "type": "error-identification",
+      "stem": "The government, despite facing opposition from various interest groups, claim that the new tax policy will ultimately benefit the economy as a whole.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "claim → claims (주어는 The government, 단일체)",
+      "explanation": "claim → claims (주어는 The government, 단일체)"
+    },
+    {
+      "id": "grammar-advanced-57",
+      "number": 57,
+      "type": "error-identification",
+      "stem": "Three-quarters of the planet's surface are covered by water, yet only a small fraction of it are fresh water suitable for human consumption.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "are → is (주어: surface), are → is (주어: it)",
+      "explanation": "are → is (주어: surface), are → is (주어: it)"
+    },
+    {
+      "id": "grammar-advanced-58",
+      "number": 58,
+      "type": "error-identification",
+      "stem": "The CEO, together with the board of directors, are responsible for setting the company's long-term strategic goals.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "are → is (주어는 The CEO)",
+      "explanation": "are → is (주어는 The CEO)"
+    },
+    {
+      "id": "grammar-advanced-59",
+      "number": 59,
+      "type": "error-identification",
+      "stem": "There, in the dusty archives of the old library, was a collection of manuscripts that contained previously unknown details about the city's history.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "No Error (주어는 a collection, 단수)",
+      "explanation": "No Error (주어는 a collection, 단수)"
+    },
+    {
+      "id": "grammar-advanced-60",
+      "number": 60,
+      "type": "error-identification",
+      "stem": "Not only the structural integrity of the bridge but also the safety of the commuters depend on the immediate implementation of these repairs.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "depend → depends (동사에 가까운 주어는 the safety)",
+      "explanation": "depend → depends (동사에 가까운 주어는 the safety)"
+    },
+    {
+      "id": "grammar-advanced-61",
+      "number": 61,
+      "type": "fill-in-blank",
+      "stem": "The majority of the committee believes that the current approach is ineffective; the rest of the members, however, ________ convinced that it needs more time.",
+      "choices": [
+        "is",
+        "are",
+        "has been",
+        "have been"
+      ],
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "answer": 2,
+      "explanation": "(B) (주어는 the rest of the members, 복수)"
+    },
+    {
+      "id": "grammar-advanced-62",
+      "number": 62,
+      "type": "error-identification",
+      "stem": "One hundred dollars are not a huge amount to spend on a quality pair of shoes that will last for years.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "are → is (하나의 총액)",
+      "explanation": "are → is (하나의 총액)"
+    },
+    {
+      "id": "grammar-advanced-63",
+      "number": 63,
+      "type": "error-identification",
+      "stem": "The team of researchers, after years of painstaking work, have finally published their findings in a prestigious scientific journal.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "have → has (주어는 The team, 단일체)",
+      "explanation": "have → has (주어는 The team, 단일체)"
+    },
+    {
+      "id": "grammar-advanced-64",
+      "number": 64,
+      "type": "error-identification",
+      "stem": "All of the equipment in the laboratories, some of which are highly sophisticated, needs to be calibrated annually to ensure accuracy.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "are → is (선행사는 equipment, 불가산)",
+      "explanation": "are → is (선행사는 equipment, 불가산)"
+    },
+    {
+      "id": "grammar-advanced-65",
+      "number": 65,
+      "type": "error-identification",
+      "stem": "Either the raw data from the experiment or the final analysis of the results contain a critical error that invalidates the conclusion.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "contain → contains (동사에 가까운 주어는 the final analysis)",
+      "explanation": "contain → contains (동사에 가까운 주어는 the final analysis)"
+    },
+    {
+      "id": "grammar-advanced-66",
+      "number": 66,
+      "type": "fill-in-blank",
+      "stem": "The complexity of the issues discussed in the report, ranging from economic policy to international relations, ________ it difficult for the average reader to grasp.",
+      "choices": [
+        "make",
+        "makes",
+        "has made",
+        "have made"
+      ],
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "answer": 2,
+      "explanation": "(B) (주어는 The complexity)"
+    },
+    {
+      "id": "grammar-advanced-67",
+      "number": 67,
+      "type": "error-identification",
+      "stem": "A number of the new regulations has been challenged in court by corporations arguing that they are unconstitutional.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "has → have (A number of + 복수V)",
+      "explanation": "has → have (A number of + 복수V)"
+    },
+    {
+      "id": "grammar-advanced-68",
+      "number": 68,
+      "type": "error-identification",
+      "stem": "The media's coverage of the political scandal, including countless hours of television commentary and thousands of articles, have influenced public opinion significantly.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "have → has (주어는 The media's coverage)",
+      "explanation": "have → has (주어는 The media's coverage)"
+    },
+    {
+      "id": "grammar-advanced-69",
+      "number": 69,
+      "type": "error-identification",
+      "stem": "Most of the blame for the project's failure have been placed on the former manager, who has since resigned.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "have → has (blame은 불가산 명사)",
+      "explanation": "have → has (blame은 불가산 명사)"
+    },
+    {
+      "id": "grammar-advanced-70",
+      "number": 70,
+      "type": "error-identification",
+      "stem": "The pair of gloves that was left on the bench do not belong to anyone on our team.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "do → does (주어는 The pair)",
+      "explanation": "do → does (주어는 The pair)"
+    },
+    {
+      "id": "grammar-advanced-71",
+      "number": 71,
+      "type": "error-identification",
+      "stem": "The company's workforce, more than half of whom is approaching retirement age, present a significant challenge for future planning.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "is → are, present → presents",
+      "explanation": "is → are, present → presents"
+    },
+    {
+      "id": "grammar-advanced-72",
+      "number": 72,
+      "type": "error-identification",
+      "stem": "Not the politicians but the public are ultimately responsible for the state of the environment.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "are → is (B(the public)에 일치)",
+      "explanation": "are → is (B(the public)에 일치)"
+    },
+    {
+      "id": "grammar-advanced-73",
+      "number": 73,
+      "type": "fill-in-blank",
+      "stem": "Each of the defendants accused of participating in the fraud scheme ________ pleaded not guilty.",
+      "choices": [
+        "has",
+        "have",
+        "is",
+        "are"
+      ],
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "answer": 1,
+      "explanation": "(A) (주어는 Each, 단수)"
+    },
+    {
+      "id": "grammar-advanced-74",
+      "number": 74,
+      "type": "error-identification",
+      "stem": "The series of events that led to the financial crisis is complex and multifaceted, involving failures at multiple levels of the regulatory system.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "No Error (주어는 The series)",
+      "explanation": "No Error (주어는 The series)"
+    },
+    {
+      "id": "grammar-advanced-75",
+      "number": 75,
+      "type": "error-identification",
+      "stem": "What worries the economists most are the combination of rising inflation and stagnant wage growth, a phenomenon known as stagflation.",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 고치시오.",
+      "answer": "are → is (주어는 What절, 단수 취급)",
+      "explanation": "are → is (주어는 What절, 단수 취급)"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+    "id": "mint-sky",
+    "name": "Mint Sky",
+    "description": "구문독해 Bridge 템플릿. 민트스카이와 민트의 상쾌한 조화. 구문 분석 하이라이트 강조와 Noto Serif KR이 특징.",
+    "version": "1.0.0",
+    "author": "Vera's Flavor",
+    "fonts": {
+        "heading": "Inter",
+        "body": "Noto Sans KR",
+        "accent": "Noto Serif KR"
+    },
+    "palette": {
+        "primary": "#63B3ED",
+        "primaryLight": "#F7FAFC",
+        "secondary": "#81E6D9",
+        "accent": "#2D3748"
+    },
+    "coverStyle": "minimal",
+    "borderRadius": "6px",
+    "headerStyle": "colored-underline",
+    "usedBy": [
+        "[편입영어]구문독해_bridge (1).html"
+    ]
+}

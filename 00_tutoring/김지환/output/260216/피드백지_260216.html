@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>학습 피드백지 — 김지환 260216</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  /* =============================================================
+     피드백지 공통 CSS v1.0 — 파스텔 하늘색 팔레트
+     ============================================================= */
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+  html {
+    font-size: 10pt;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400; font-size: 10pt; line-height: 1.7;
+    color: #1a202c; background: #fff !important;
+    text-align: justify !important;
+  }
+  @page { size: A4; margin: 16mm 14mm; }
+
+  .page-break-after { page-break-after: always !important; }
+  .page-break-before { page-break-before: always !important; }
+  .avoid-break { page-break-inside: avoid !important; }
+  h1, h2, h3, h4 { page-break-after: avoid !important; }
+  table { page-break-inside: avoid !important; }
+
+  h1 { font-size: 20pt; font-weight: 700; color: #4A90C4 !important; margin: 20px 0 10px 0; padding-bottom: 6px; border-bottom: 3px solid #4A90C4; line-height: 1.3; }
+  h2 { font-size: 16pt; font-weight: 700; color: #5BA3D9 !important; margin: 18px 0 10px 0; padding-bottom: 4px; border-bottom: 2px solid #D4E5F3; line-height: 1.3; }
+  h3 { font-size: 13pt; font-weight: 700; color: #2d3748 !important; margin: 14px 0 8px 0; line-height: 1.4; }
+  h4 { font-size: 11pt; font-weight: 700; color: #4a5568 !important; margin: 10px 0 6px 0; line-height: 1.4; }
+  p { margin-bottom: 8px; }
+  strong { font-weight: 700; }
+  hr { border: none; border-top: 1px solid #D4E5F3; margin: 20px 0; }
+
+  table { width: 100%; border-collapse: collapse; margin: 12px 0 16px 0; font-size: 9pt; line-height: 1.6; }
+  thead th { background-color: #7BB8E8 !important; color: #fff !important; font-weight: 700; padding: 8px 10px; text-align: left; border: 1px solid #6AABDE; font-size: 9pt; }
+  tbody td { padding: 7px 10px; border: 1px solid #D4E5F3; vertical-align: top; }
+  tbody tr:nth-child(odd) { background-color: #fff !important; }
+  tbody tr:nth-child(even) { background-color: #F4F9FD !important; }
+  tbody td:first-child { font-weight: 500; }
+  .result-correct { color: #38a169 !important; font-weight: 700; }
+  .result-wrong { color: #e53e3e !important; font-weight: 700; }
+
+  .report-header { margin-bottom: 16px; }
+  .report-date { font-size: 10pt; color: #718096 !important; font-weight: 400; margin-bottom: 4px; }
+  .report-title { font-size: 22pt; font-weight: 700; color: #4A90C4 !important; margin-bottom: 6px; line-height: 1.2; border: none; padding: 0; }
+  .report-subtitle { font-size: 12pt; font-weight: 400; color: #4a5568 !important; margin-bottom: 2px; }
+  .report-meta { font-size: 9pt; color: #718096 !important; line-height: 1.8; margin-top: 8px; }
+  .report-meta span { display: inline-block; margin-right: 16px; }
+
+  .section-header { background-color: #5BA3D9 !important; color: #fff !important; padding: 12px 20px; margin: 20px -14mm 14px -14mm; padding-left: 14mm; padding-right: 14mm; font-size: 16pt; font-weight: 700; line-height: 1.3; }
+  .section-header .section-num { font-size: 12pt; font-weight: 300; display: block; margin-bottom: 2px; color: #C5DFEF !important; }
+
+  .severity-high { display: inline-block; background-color: #e53e3e !important; color: #fff !important; font-size: 8pt; font-weight: 700; padding: 1px 8px; border-radius: 10px; }
+  .severity-mid { display: inline-block; background-color: #ed8936 !important; color: #fff !important; font-size: 8pt; font-weight: 700; padding: 1px 8px; border-radius: 10px; }
+  .severity-low { display: inline-block; background-color: #38a169 !important; color: #fff !important; font-size: 8pt; font-weight: 700; padding: 1px 8px; border-radius: 10px; }
+
+  .diagnosis-card { border: 2px solid #B8D4EC; border-radius: 6px; padding: 14px 18px; margin: 14px 0; background-color: #F4F9FD !important; }
+  .diagnosis-card h3 { margin-top: 0; color: #4A90C4 !important; font-size: 12pt; }
+  .priority-order { background-color: #EDF5FC !important; border-left: 4px solid #7BB8E8; padding: 10px 16px; margin: 12px 0; font-size: 10pt; }
+
+  .question-box { background-color: #F4F9FD !important; border-left: 4px solid #7BB8E8; padding: 10px 14px; margin: 8px 0; font-size: 10pt; line-height: 1.7; }
+  .question-box p { margin: 0; }
+
+  .answer-box { background-color: #f0fff4 !important; border-left: 4px solid #38a169; padding: 8px 14px; margin: 8px 0; font-weight: 500; }
+  .grammar-block { background-color: #edf2f7 !important; border: 1px solid #D4E5F3; padding: 12px 16px; margin: 12px 0; font-size: 9pt; line-height: 1.8; white-space: pre-wrap; page-break-inside: avoid !important; }
+  .tip-box { background-color: #fffaf0 !important; border-left: 4px solid #ed8936; padding: 10px 16px; margin: 12px 0; page-break-inside: avoid !important; }
+  .tip-box .tip-label { font-weight: 700; color: #c05621 !important; font-size: 9pt; display: block; margin-bottom: 4px; }
+  .warning-box { background-color: #fff5f5 !important; border-left: 4px solid #e53e3e; padding: 10px 16px; margin: 12px 0; page-break-inside: avoid !important; }
+  .warning-box .warning-label { font-weight: 700; color: #e53e3e !important; font-size: 9pt; display: block; margin-bottom: 4px; }
+  .concept-box { background-color: #EDF5FC !important; border: 1px solid #7BB8E8; padding: 12px 16px; margin: 12px 0; page-break-inside: avoid !important; }
+  .concept-box .concept-label { font-weight: 700; color: #4A90C4 !important; font-size: 9pt; display: block; margin-bottom: 6px; }
+
+  .problem-card { border: 1px solid #D4E5F3; border-radius: 4px; padding: 14px 18px; margin: 14px 0; page-break-inside: avoid !important; background-color: #fff !important; }
+  .problem-header { display: flex; align-items: center; margin-bottom: 14px; gap: 12px; }
+  .problem-badge { display: inline-flex; align-items: center; justify-content: center; width: 36px; height: 36px; border-radius: 50%; background-color: #7BB8E8 !important; color: #fff !important; font-weight: 700; font-size: 12pt; flex-shrink: 0; }
+  .problem-title { font-size: 11pt; font-weight: 700; color: #2d3748 !important; }
+  .problem-source { font-size: 8pt; color: #718096 !important; font-weight: 400; display: block; margin-top: 2px; }
+
+  .hl-key { color: #4A90C4 !important; font-weight: 700; }
+  .hl-wrong { color: #e53e3e !important; font-weight: 700; text-decoration: line-through; }
+  .hl-correct { color: #38a169 !important; font-weight: 700; }
+  .hl-blue { color: #5BA3D9 !important; font-weight: 700; }
+
+  .section-divider { border: none; border-top: 2px solid #D4E5F3; margin: 20px 0; }
+
+  .choice-item { padding: 4px 0 4px 16px; font-size: 9.5pt; line-height: 1.7; }
+  .choice-item.correct { color: #38a169 !important; }
+  .choice-item.wrong { color: #e53e3e !important; }
+  .choice-label { font-weight: 700; margin-right: 4px; }
+
+  @media print {
+    body { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; }
+    .section-header { margin-left: -14mm; margin-right: -14mm; padding-left: 14mm; padding-right: 14mm; }
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== 첫 페이지: 리포트 헤더 + 학습 요약 ===== -->
+<div class="report-header">
+  <div class="report-date">2026. 02. 16</div>
+  <h1 class="report-title" style="border:none; margin-bottom:6px;">학습 피드백지</h1>
+  <div class="report-subtitle">독해 — Part 1 내용파악</div>
+  <div class="report-meta">
+    <span><strong>학생</strong> 김지환</span>
+    <span><strong>교재</strong> Vera's Flavor 편입영어 독해 Bridge편</span>
+    <span><strong>범위</strong> Part 1 내용파악 (Passage 9, 14, 24, 27, 34, 37, 46-50)</span>
+  </div>
+</div>
+
+<div class="diagnosis-card">
+  <h3>학습 요약</h3>
+  <p style="font-size:10pt; margin-bottom:8px;">
+    전체 33문제 중 오답 <strong>7문제</strong> (정답률 약 79%)
+  </p>
+  <p style="font-size:9.5pt; margin-bottom:4px;">
+    <strong style="color:#38a169;">잘한 점:</strong> 11개 지문 중 6개 지문(P9, P14, P27, P37, P46, P47)을 완벽하게 풀었으며, 전반적인 내용 파악 능력이 양호합니다. 특히 과학/기술 지문(DeFi, 생물정화, 실크로드)에서 안정적인 독해력을 보여주었습니다.
+  </p>
+  <p style="font-size:9.5pt; margin-bottom:12px;">
+    <strong style="color:#e53e3e;">아쉬운 점:</strong> 두 개념을 대비하는 지문(P24 선형/순환 경제, P50 강한/약한 가설)에서 핵심 차이를 반대로 이해하는 실수가 반복되었습니다. NOT 문제(P49)에서도 지문에 언급된 내용을 '없는 것'으로 잘못 판단했습니다.
+  </p>
+
+  <table>
+    <thead>
+      <tr><th>취약 영역</th><th style="width:60px;">문제 수</th><th style="width:70px;">심각도</th><th>핵심</th></tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>대비/대조 구조 파악</strong></td>
+        <td>3문제</td>
+        <td><span class="severity-high">높음</span></td>
+        <td>두 개념의 특성을 반대로 매칭 (P24-1, P50-2, P50-3)</td>
+      </tr>
+      <tr>
+        <td><strong>용어/개념 정확한 구분</strong></td>
+        <td>2문제</td>
+        <td><span class="severity-mid">보통</span></td>
+        <td>유사 기법 간 혼동: fragmentation vs metafiction (P34-2, P34-3)</td>
+      </tr>
+      <tr>
+        <td><strong>NOT/EXCEPT 문제 유형</strong></td>
+        <td>1문제</td>
+        <td><span class="severity-mid">보통</span></td>
+        <td>지문에 언급된 내용을 NOT으로 잘못 선택 (P49-3)</td>
+      </tr>
+      <tr>
+        <td><strong>세부 정보 식별</strong></td>
+        <td>1문제</td>
+        <td><span class="severity-low">낮음</span></td>
+        <td>"부정적 영향" 요인 혼동: 섬유소 식단 vs 항생제 (P48-3)</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="priority-order">
+  <strong>학습 우선순위:</strong> 대비/대조 구조 정밀 독해 &rarr; 용어/기법 정의 매칭 &rarr; NOT 문제 풀이법
+</div>
+
+<!-- ===== Section 1: 틀린 문제 리스트 ===== -->
+<div class="page-break-before section-header">
+  <span class="section-num">Section 1</span>
+  틀린 문제 리스트
+</div>
+
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">1</div>
+    <div>
+      <div class="problem-title">선형 vs 순환 경제의 핵심 차이</div>
+      <span class="problem-source">Passage 24 — 24-1</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>What is the main difference between a linear and a circular economy as stated in the passage?</p>
+  </div>
+  <div class="answer-box">
+    <strong>정답:</strong> <span class="hl-correct">③</span> Linear economies follow a "take-make-dispose" pattern, while circular economies aim to eliminate waste.
+    <br><strong>학생 선택:</strong> <span class="hl-wrong">④</span> (선형/순환의 자원 특성을 반대로 매칭)
+  </div>
+</div>
+
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">2</div>
+    <div>
+      <div class="problem-title">메타픽션의 정의</div>
+      <span class="problem-source">Passage 34 — 34-2</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>Which literary technique is described as deliberately highlighting a work's artificial nature?</p>
+  </div>
+  <div class="answer-box">
+    <strong>정답:</strong> <span class="hl-correct">④ Metafiction</span>
+    <br><strong>학생 선택:</strong> <span class="hl-wrong">② Fragmentation</span> (파편화와 메타픽션 혼동)
+  </div>
+</div>
+
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">3</div>
+    <div>
+      <div class="problem-title">포스트모더니즘 문학의 특징</div>
+      <span class="problem-source">Passage 34 — 34-3</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>According to the passage, postmodern literature is characterized by which of the following?</p>
+  </div>
+  <div class="answer-box">
+    <strong>정답:</strong> <span class="hl-correct">③</span> The presentation of multiple, conflicting viewpoints
+    <br><strong>학생 선택:</strong> <span class="hl-wrong">②</span> A single, coherent narrative structure (포스트모더니즘의 정반대 특성)
+  </div>
+</div>
+
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">4</div>
+    <div>
+      <div class="problem-title">장내 미생물 균형의 부정적 요인</div>
+      <span class="problem-source">Passage 48 — 48-3</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>According to the passage, what can have a negative impact on the balance of the gut microbiome?</p>
+  </div>
+  <div class="answer-box">
+    <strong>정답:</strong> <span class="hl-correct">④ The use of antibiotics</span>
+    <br><strong>학생 선택:</strong> <span class="hl-wrong">② A diet high in fiber</span> (섬유소 식단은 긍정적 역할)
+  </div>
+</div>
+
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">5</div>
+    <div>
+      <div class="problem-title">스마트 시티 응용의 NOT 예시</div>
+      <span class="problem-source">Passage 49 — 49-3</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>Which of the following is NOT given as an example of a smart city application?</p>
+  </div>
+  <div class="answer-box">
+    <strong>정답:</strong> <span class="hl-correct">③ Creating personalized public education programs</span> (지문에 언급 없음)
+    <br><strong>학생 선택:</strong> <span class="hl-wrong">④</span> Optimizing the distribution of electrical energy (지문에 명시됨)
+  </div>
+</div>
+
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">6</div>
+    <div>
+      <div class="problem-title">사피어-워프 가설: 강한 vs 약한 버전</div>
+      <span class="problem-source">Passage 50 — 50-2</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>What is the main difference between the "strong" and "weak" versions of the hypothesis?</p>
+  </div>
+  <div class="answer-box">
+    <strong>정답:</strong> <span class="hl-correct">②</span> The strong version claims language determines thought, while the weak version claims it only influences thought.
+    <br><strong>학생 선택:</strong> <span class="hl-wrong">③</span> (강한/약한 버전의 학계 지지를 반대로 이해)
+  </div>
+</div>
+
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">7</div>
+    <div>
+      <div class="problem-title">현대 언어학자들의 견해</div>
+      <span class="problem-source">Passage 50 — 50-3</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>According to the passage, what is the general view of modern linguists regarding the hypothesis?</p>
+  </div>
+  <div class="answer-box">
+    <strong>정답:</strong> <span class="hl-correct">③</span> They tend to support the weak version, which suggests language influences thought.
+    <br><strong>학생 선택:</strong> <span class="hl-wrong">②</span> They universally accept the strong version (지문과 정반대)
+  </div>
+</div>
+
+<!-- ===== Section 2: 해설 파트 ===== -->
+<div class="page-break-before section-header">
+  <span class="section-num">Section 2</span>
+  해설 파트 — 지문별 분석
+</div>
+
+<!-- ========== Passage 24 ========== -->
+<h2>Passage 24: Circular Economy (순환 경제)</h2>
+
+<div class="concept-box">
+  <h4>1. 한줄 요약</h4>
+  <p>기존의 선형 경제 모델("take-make-dispose")의 문제점(자원 고갈, 환경 오염)을 지적하고, 이에 대한 지속 가능한 대안으로 순환 경제의 3대 원칙과 궁극적 목표를 소개하는 지문이다.</p>
+</div>
+
+<div class="grammar-block"><h4>2. 전체 해석 (Full Translation)</h4>
+
+전통적인 경제 모델은 선형적이며, 흔히 "가져다-만들고-버리기(take-make-dispose)"로 요약된다. 자원은 지구에서 추출되고, 제품으로 제조된 후, 사용 후에는 폐기물로 버려진다. 이러한 접근 방식은 심각한 자원 고갈과 환경 오염을 초래했다. 이에 반해, 순환 경제는 지속 가능한 대안을 제시한다. 이것은 설계 단계부터 회복적이고 재생적인 생산과 소비의 모델이다. 순환 경제의 핵심 원칙은 폐기물과 오염을 설계 단계에서 제거하고, 제품과 자재를 가능한 한 오래 사용하며, 자연 시스템을 재생하는 것이다. 예를 들어, 제품을 버리는 대신 쉽게 수리, 재사용 또는 재제조할 수 있도록 설계할 수 있다. 이러한 전환은 경제 활동을 유한 자원의 소비로부터 분리(decouple)하여, 더 회복력 있고 지속 가능한 미래를 만드는 것을 목표로 한다.</div>
+
+<h4>3. 핵심 키워드</h4>
+<table>
+  <thead><tr><th>구분</th><th>표현 및 키워드</th></tr></thead>
+  <tbody>
+    <tr><td><strong>핵심 키워드</strong></td><td>take-make-dispose, circular economy, restorative, regenerative by design, decouple</td></tr>
+    <tr><td><strong>정답 방향 (Positive)</strong></td><td>sustainable, resilient, repair, reuse, remanufacturing, regenerate natural systems</td></tr>
+    <tr><td><strong>반대 방향 (Negative)</strong></td><td>linear, depletion, pollution, discarded, waste, finite resources</td></tr>
+  </tbody>
+</table>
+
+<div class="tip-box">
+  <h4>4. 구조 및 방향성</h4>
+  <p><span class="severity-high">NEGATIVE</span> &rarr; <span class="severity-low">POSITIVE</span> &nbsp; (문제 제기 &rarr; 대안 제시)</p>
+  <table>
+    <thead><tr><th>단계</th><th>내용</th></tr></thead>
+    <tbody>
+      <tr><td>도입</td><td>선형 경제 모델 설명: "take-make-dispose"</td></tr>
+      <tr><td>문제</td><td>자원 고갈(depletion)과 환경 오염(pollution) 초래</td></tr>
+      <tr><td>전환</td><td>"In contrast" &mdash; 순환 경제라는 지속 가능한 대안 소개</td></tr>
+      <tr><td>핵심</td><td>순환 경제 3대 원칙: 폐기물 제거 / 오래 사용 / 자연 재생</td></tr>
+      <tr><td>예시</td><td>수리, 재사용, 재제조를 위한 설계</td></tr>
+      <tr><td>결론</td><td>경제 활동과 유한 자원 소비의 분리(decouple)</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h4>5. 선지 분석</h4>
+<p style="font-size:10pt; margin-bottom:4px;"><strong>24-1.</strong> What is the main difference between a linear and a circular economy as stated in the passage?</p>
+<p style="font-size:9pt; margin-bottom:10px;">학생 선택: <span class="hl-wrong">④</span> &rarr; 정답: <span class="hl-correct">③</span></p>
+
+<div class="answer-box" style="page-break-inside:avoid;">
+  <p><strong>✅ ③ Linear economies follow a "take-make-dispose" pattern, while circular economies aim to eliminate waste.</strong></p>
+  <p style="font-size:9pt;"><strong>근거:</strong> "The traditional economic model is linear, often summarized as 'take-make-dispose'" + "The core principles of a circular economy are to design out waste and pollution"</p>
+  <p style="font-size:9pt;"><strong>해석:</strong> 선형 경제는 "가져다-만들고-버리기" 패턴, 순환 경제는 폐기물 제거가 목표</p>
+  <p style="font-size:9pt;"><strong>포인트:</strong> 지문의 핵심 대조를 가장 직접적으로 반영한 선지</p>
+</div>
+
+<div class="warning-box" style="page-break-inside:avoid;">
+  <p><strong>❌ ④ Linear economies are based on renewable resources, while circular economies use finite resources.</strong> (학생 선택)</p>
+  <p style="font-size:9pt;"><strong>근거:</strong> 지문: "Resources are extracted from the earth" + "the consumption of finite resources" &mdash; 유한 자원을 사용하는 것은 선형 경제</p>
+  <p style="font-size:9pt;"><strong>해석:</strong> 선형 경제가 재생 자원 기반이라는 것은 지문과 정반대</p>
+  <p style="font-size:9pt;"><strong>포인트:</strong> 선형/순환의 자원 특성이 뒤바뀐 <strong>반전 함정 선지</strong>. "renewable vs finite" 키워드에 낚이지 말고 지문에서 어느 쪽이 유한 자원을 쓰는지 확인해야 함</p>
+</div>
+
+<div style="font-size:9pt; padding-left:16px; margin-bottom:12px; line-height:1.8;">
+  <p>❌ ① Linear economies focus on services, while circular economies focus on goods. &mdash; 지문에 서비스 vs 상품 대비 없음</p>
+  <p>❌ ② Linear economies prioritize profit, while circular economies prioritize social welfare. &mdash; 이윤이나 사회복지 언급 없음</p>
+  <p>❌ ⑤ Linear economies are a modern concept, while circular economies are a traditional model. &mdash; 지문에서 선형 경제를 "traditional"이라 함 &rarr; 정반대</p>
+</div>
+
+<p style="font-size:9pt; color:#718096; margin-bottom:4px;"><strong>24-2.</strong> 학생 ③ &rarr; <span class="result-correct">정답 ✅</span> (Keeping materials and products in continuous use)</p>
+<p style="font-size:9pt; color:#718096; margin-bottom:12px;"><strong>24-3.</strong> 학생 ② &rarr; <span class="result-correct">정답 ✅</span> (To create a future that is more sustainable and resilient)</p>
+
+<hr class="section-divider">
+
+<!-- ========== Passage 34 ========== -->
+<div class="page-break-before"></div>
+<h2>Passage 34: Postmodern Literature (포스트모더니즘 문학)</h2>
+
+<div class="concept-box">
+  <h4>1. 한줄 요약</h4>
+  <p>모더니즘에서 벗어난 포스트모더니즘 문학의 핵심 특징(유희적 톤, 파편화, 상호텍스트성, 메타픽션)과 다원적 관점 수용, 거대 서사 거부를 소개하는 지문이다.</p>
+</div>
+
+<div class="grammar-block"><h4>2. 전체 해석 (Full Translation)</h4>
+
+포스트모더니즘 문학은 20세기 중반에 등장하여 모더니즘의 원칙에서 크게 벗어난 흐름을 보인다. 모더니즘이 현대 세계에서 의미와 일관성의 상실을 종종 한탄했다면, 포스트모더니즘은 이를 오히려 축하하는 경향이 있다. 포스트모더니즘 문학의 핵심 특징은 유희적이고 아이러니한 톤이다. 이 문학은 파편화(fragmentation) 기법을 자주 사용하는데, 이는 서사를 단절된 조각들로 분해하는 것이다. 또한 상호텍스트성(intertextuality), 즉 다른 텍스트를 참조하는 기법도 활용한다. 또 다른 특징은 메타픽션(metafiction)으로, 작품이 의도적으로 자신이 예술 작품이라는 사실에 주의를 환기시키며, 허구와 현실의 경계를 흐리게 만든다. 포스트모더니즘 작가들은 단일하고 객관적인 진실이라는 개념에 도전하며, 대신 다수의, 종종 모순되는 관점들의 세계를 제시한다. 그들은 거대 서사(grand narratives) &mdash; 문화가 역사와 현실을 설명하기 위해 사용하는 포괄적인 이야기들 &mdash; 에 의문을 제기하고, 대신 미니 서사와 주관적 경험에 초점을 맞춘다.</div>
+
+<h4>3. 핵심 키워드</h4>
+<table>
+  <thead><tr><th>구분</th><th>표현 및 키워드</th></tr></thead>
+  <tbody>
+    <tr><td><strong>핵심 키워드</strong></td><td>postmodernism, fragmentation, intertextuality, metafiction, grand narratives, mini-narratives</td></tr>
+    <tr><td><strong>정답 방향 (Positive)</strong></td><td>celebrates, playful, ironic, multiple perspectives, subjective experiences</td></tr>
+    <tr><td><strong>반대 방향 (Negative)</strong></td><td>lamented (모더니즘 특성), loss of meaning, coherence, single objective truth</td></tr>
+  </tbody>
+</table>
+
+<div class="tip-box">
+  <h4>4. 구조 및 방향성</h4>
+  <p><span class="severity-mid">비교-대조</span> &rarr; <span class="severity-low">정보 제공</span></p>
+  <table>
+    <thead><tr><th>단계</th><th>내용</th></tr></thead>
+    <tbody>
+      <tr><td>도입</td><td>포스트모더니즘은 모더니즘에서 크게 벗어남</td></tr>
+      <tr><td>대조</td><td>모더니즘(한탄) vs 포스트모더니즘(축하)</td></tr>
+      <tr><td>기법 1</td><td>파편화(fragmentation): 서사를 단절된 조각으로 분해</td></tr>
+      <tr><td>기법 2</td><td>상호텍스트성(intertextuality): 다른 텍스트 참조</td></tr>
+      <tr><td>기법 3</td><td>메타픽션(metafiction): 작품이 스스로를 예술이라 인식시킴</td></tr>
+      <tr><td>핵심</td><td>단일 진실 거부, 다원적/모순적 관점 수용</td></tr>
+      <tr><td>결론</td><td>거대 서사 의문 &rarr; 미니 서사/주관적 경험 중시</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h4>5. 선지 분석</h4>
+
+<p style="font-size:10pt; margin-bottom:4px;"><strong>34-2.</strong> Which literary technique is described as deliberately highlighting a work's artificial nature?</p>
+<p style="font-size:9pt; margin-bottom:10px;">학생 선택: <span class="hl-wrong">②</span> &rarr; 정답: <span class="hl-correct">④</span></p>
+
+<div class="answer-box" style="page-break-inside:avoid;">
+  <p><strong>✅ ④ Metafiction</strong></p>
+  <p style="font-size:9pt;"><strong>근거:</strong> "metafiction, where the work deliberately draws attention to its own status as a work of art"</p>
+  <p style="font-size:9pt;"><strong>해석:</strong> 메타픽션은 작품이 의도적으로 자신이 예술 작품이라는 사실에 주의를 환기시키는 기법</p>
+  <p style="font-size:9pt;"><strong>포인트:</strong> "deliberately highlighting artificial nature" = "deliberately draws attention to its own status as a work of art" &mdash; 거의 동일 표현의 패러프레이즈</p>
+</div>
+
+<div class="warning-box" style="page-break-inside:avoid;">
+  <p><strong>❌ ② Fragmentation</strong> (학생 선택)</p>
+  <p style="font-size:9pt;"><strong>근거:</strong> "fragmentation, where the narrative is broken into disjointed pieces"</p>
+  <p style="font-size:9pt;"><strong>해석:</strong> 파편화는 서사를 단절된 조각으로 분해하는 기법 &mdash; 서사 <em>구조</em>에 관한 것</p>
+  <p style="font-size:9pt;"><strong>포인트:</strong> fragmentation(파편화) = 서사 구조 분절, metafiction(메타픽션) = 작품의 자기인식. 둘을 구분해야 함!</p>
+</div>
+
+<div style="font-size:9pt; padding-left:16px; margin-bottom:12px; line-height:1.8;">
+  <p>❌ ① Intertextuality &mdash; 상호텍스트성은 "다른 텍스트를 참조하는 것"이지 인위성 강조가 아님</p>
+  <p>❌ ③ Irony &mdash; 아이러니는 톤/어조에 관한 것으로 작품의 인위적 본질 강조와 무관</p>
+  <p>❌ ⑤ Grand narrative &mdash; 거대 서사는 문학 기법이 아니라 포스트모더니즘이 의문을 제기하는 대상</p>
+</div>
+
+<hr class="section-divider">
+
+<p style="font-size:10pt; margin-bottom:4px;"><strong>34-3.</strong> According to the passage, postmodern literature is characterized by which of the following?</p>
+<p style="font-size:9pt; margin-bottom:10px;">학생 선택: <span class="hl-wrong">②</span> &rarr; 정답: <span class="hl-correct">③</span></p>
+
+<div class="answer-box" style="page-break-inside:avoid;">
+  <p><strong>✅ ③ The presentation of multiple, conflicting viewpoints</strong></p>
+  <p style="font-size:9pt;"><strong>근거:</strong> "presenting a world of multiple, often contradictory, perspectives"</p>
+  <p style="font-size:9pt;"><strong>해석:</strong> 다수의, 종종 모순되는 관점들의 세계를 제시한다</p>
+  <p style="font-size:9pt;"><strong>포인트:</strong> multiple + contradictory = multiple + conflicting &mdash; 동의어 패러프레이즈</p>
+</div>
+
+<div class="warning-box" style="page-break-inside:avoid;">
+  <p><strong>❌ ② A single, coherent narrative structure</strong> (학생 선택)</p>
+  <p style="font-size:9pt;"><strong>근거:</strong> "fragmentation, where the narrative is broken into disjointed pieces"</p>
+  <p style="font-size:9pt;"><strong>해석:</strong> 포스트모더니즘은 서사를 파편화시킴 &rarr; "single, coherent"는 정반대</p>
+  <p style="font-size:9pt;"><strong>포인트:</strong> 지문이 "파편화"를 핵심 기법으로 제시 &mdash; "단일하고 일관된 서사 구조"는 오히려 전통적 서사의 특징. 반대 함정 선지!</p>
+</div>
+
+<div style="font-size:9pt; padding-left:16px; margin-bottom:12px; line-height:1.8;">
+  <p>❌ ① A serious and mournful tone &mdash; 지문: "playful and ironic tone" (유희적/아이러니). "serious and mournful"은 오히려 모더니즘의 특성</p>
+  <p>❌ ④ A clear distinction between fiction and reality &mdash; 지문: "blurring the line between fiction and reality" (경계를 흐리게 함) &rarr; 정반대</p>
+  <p>❌ ⑤ An attempt to establish a universal truth &mdash; 지문: "challenge the idea of a single, objective truth" (단일 진실에 도전) &rarr; 정반대</p>
+</div>
+
+<p style="font-size:9pt; color:#718096; margin-bottom:12px;"><strong>34-1.</strong> 학생 ③ &rarr; <span class="result-correct">정답 ✅</span> (Modernism seeks objective truth, while postmodernism questions it)</p>
+
+<hr class="section-divider">
+
+<!-- ========== Passage 48 ========== -->
+<div class="page-break-before"></div>
+<h2>Passage 48: Gut Microbiome (장내 미생물)</h2>
+
+<div class="concept-box">
+  <h4>1. 한줄 요약</h4>
+  <p>장내 미생물군(gut microbiome)의 구성과 다양한 건강상 역할(소화, 면역, 정신건강)을 설명하고, 균형에 영향을 미치는 요인(식단, 스트레스, 항생제)을 소개하는 지문이다.</p>
+</div>
+
+<div class="grammar-block"><h4>2. 전체 해석 (Full Translation)</h4>
+
+인간의 장내 미생물군은 우리의 소화관에 서식하는 수조 개의 미생물 &mdash; 세균, 바이러스, 곰팡이 &mdash; 로 이루어진 거대한 공동체를 말한다. 오랫동안 이 미생물들은 수동적인 방관자로 여겨졌지만, 과학적 연구는 인간 건강에서 이들의 결정적인 역할을 밝혀냈다. 이 복잡한 생태계는 우리 몸이 스스로 분해할 수 없는 특정 섬유소 같은 음식 성분을 분해하여 소화를 돕고, 비타민 K와 B 비타민 같은 필수 비타민의 합성을 도와준다. 소화 기능을 넘어, 장내 미생물군은 면역 체계의 발달과 기능에 필수적이며, 유익한 미생물과 해로운 병원체를 구별하도록 면역 체계를 훈련시킨다. 더 나아가, 최근 연구는 장 건강과 정신적 웰빙 사이의 강한 연관성을 제시하며, 이를 "장-뇌 축(gut-brain axis)"이라 부른다. 식단, 스트레스, 항생제 사용과 같은 요인들은 미생물군의 균형을 크게 변화시켜 우리의 전반적인 건강에 영향을 미칠 수 있다.</div>
+
+<h4>3. 핵심 키워드</h4>
+<table>
+  <thead><tr><th>구분</th><th>표현 및 키워드</th></tr></thead>
+  <tbody>
+    <tr><td><strong>핵심 키워드</strong></td><td>gut microbiome, trillions of microorganisms, digestive tracts, immune system, gut-brain axis</td></tr>
+    <tr><td><strong>정답 방향 (Positive)</strong></td><td>critical role, aids in digestion, synthesis of essential vitamins, integral, training immune system</td></tr>
+    <tr><td><strong>반대 방향 (Negative)</strong></td><td>passive bystanders (과거 인식), alter the balance, diet/stress/antibiotic use</td></tr>
+  </tbody>
+</table>
+
+<div class="tip-box">
+  <h4>4. 구조 및 방향성</h4>
+  <p><span class="severity-low">POSITIVE</span> &rarr; <span class="severity-mid">WARNING</span> &nbsp; (역할 소개 &rarr; 경고)</p>
+  <table>
+    <thead><tr><th>단계</th><th>내용</th></tr></thead>
+    <tbody>
+      <tr><td>도입</td><td>장내 미생물군 정의 (수조 개의 미생물)</td></tr>
+      <tr><td>전환</td><td>과거(수동적 방관자) &rarr; 현재(결정적 역할 발견)</td></tr>
+      <tr><td>역할 1</td><td>소화 보조: 섬유소 분해, 필수 비타민(K, B) 합성</td></tr>
+      <tr><td>역할 2</td><td>면역 체계 발달: 유익균/유해균 구별 훈련</td></tr>
+      <tr><td>역할 3</td><td>정신건강 연관: "장-뇌 축(gut-brain axis)"</td></tr>
+      <tr><td>경고</td><td>식단, 스트레스, 항생제 &rarr; 균형 교란 가능</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h4>5. 선지 분석</h4>
+
+<p style="font-size:10pt; margin-bottom:4px;"><strong>48-3.</strong> According to the passage, what can have a negative impact on the balance of the gut microbiome?</p>
+<p style="font-size:9pt; margin-bottom:10px;">학생 선택: <span class="hl-wrong">②</span> &rarr; 정답: <span class="hl-correct">④</span></p>
+
+<div class="answer-box" style="page-break-inside:avoid;">
+  <p><strong>✅ ④ The use of antibiotics</strong></p>
+  <p style="font-size:9pt;"><strong>근거:</strong> "Factors like diet, stress, and antibiotic use can significantly alter the balance of the microbiome"</p>
+  <p style="font-size:9pt;"><strong>해석:</strong> 항생제 사용이 미생물군의 균형을 크게 변화시킬 수 있다</p>
+  <p style="font-size:9pt;"><strong>포인트:</strong> "antibiotic use"가 명시적으로 부정적 요인으로 언급됨. 항생제는 유해균뿐 아니라 유익균까지 파괴하여 균형을 깨뜨림</p>
+</div>
+
+<div class="warning-box" style="page-break-inside:avoid;">
+  <p><strong>❌ ② A diet high in fiber</strong> (학생 선택)</p>
+  <p style="font-size:9pt;"><strong>근거:</strong> 지문: "breaking down food components that our bodies cannot, such as certain fibers" &mdash; 장내 미생물이 섬유소를 분해하는 것은 긍정적 소화 보조 기능</p>
+  <p style="font-size:9pt;"><strong>해석:</strong> 식이섬유가 풍부한 식단은 미생물에게 분해할 재료를 제공하는 것이지 균형을 해치는 것이 아님</p>
+  <p style="font-size:9pt;"><strong>포인트:</strong> "diet"은 균형에 영향을 미치는 요인으로 언급되었지만, "식이섬유가 풍부한 식단"은 일반적으로 긍정적. 선지의 "diet high in fiber"와 지문의 "diet" (일반적 식단 변화)를 구분해야 함!</p>
+</div>
+
+<div style="font-size:9pt; padding-left:16px; margin-bottom:12px; line-height:1.8;">
+  <p>❌ ① Regular exercise &mdash; 지문에 운동 관련 언급 전혀 없음</p>
+  <p>❌ ③ The consumption of vitamins &mdash; 비타민 합성은 미생물의 기능이며, 비타민 섭취가 균형을 해친다는 내용 없음</p>
+  <p>❌ ⑤ A strong immune system &mdash; 장내 미생물이 면역 체계를 강화하는 관계이지, 면역이 미생물을 해치는 관계가 아님</p>
+</div>
+
+<p style="font-size:9pt; color:#718096; margin-bottom:4px;"><strong>48-1.</strong> 학생 ③ &rarr; <span class="result-correct">정답 ✅</span> (A community of microorganisms living in the digestive system)</p>
+<p style="font-size:9pt; color:#718096; margin-bottom:12px;"><strong>48-2.</strong> 학생 ② &rarr; <span class="result-correct">정답 ✅</span> (It helps produce essential vitamins)</p>
+
+<hr class="section-divider">
+
+<!-- ========== Passage 49 ========== -->
+<div class="page-break-before"></div>
+<h2>Passage 49: Smart City (스마트 시티)</h2>
+
+<div class="concept-box">
+  <h4>1. 한줄 요약</h4>
+  <p>스마트 시티의 정의(센서와 데이터를 활용한 도시 관리)와 구체적 응용 사례들(교통, 에너지, 폐기물, 조명)을 소개하면서, 데이터 프라이버시와 감시에 대한 우려도 함께 제시하는 지문이다.</p>
+</div>
+
+<div class="grammar-block"><h4>2. 전체 해석 (Full Translation)</h4>
+
+"스마트 시티"란 다양한 종류의 전자적 방법과 센서를 사용하여 데이터를 수집하는 도시 지역을 말한다. 그 데이터에서 얻은 인사이트는 자산, 자원, 서비스를 효율적으로 관리하는 데 사용된다. 궁극적인 목표는 시민들의 삶의 질을 향상시키는 것이다. 예를 들어, 스마트 교통 관리 시스템은 센서와 카메라를 사용하여 실시간으로 교통 흐름을 모니터링하고, 혼잡을 줄이기 위해 신호등 타이밍을 조정할 수 있다. 스마트 전력망은 에너지 분배를 최적화하여 낭비를 줄이고 정전을 방지할 수 있다. 다른 응용 사례로는 공공 쓰레기통에 센서를 설치하여 가득 차면 위생 부서에 알리는 스마트 폐기물 관리와, 주변에 사람이 없으면 조도를 낮추어 에너지를 절약하는 스마트 조명이 있다. 이 개념이 더 지속 가능하고 효율적인 도시 미래를 약속하는 한편, 데이터 프라이버시, 보안, 기술적 감시의 가능성에 대한 우려도 제기된다.</div>
+
+<h4>3. 핵심 키워드</h4>
+<table>
+  <thead><tr><th>구분</th><th>표현 및 키워드</th></tr></thead>
+  <tbody>
+    <tr><td><strong>핵심 키워드</strong></td><td>smart city, sensors, data collection, electronic methods, quality of life</td></tr>
+    <tr><td><strong>정답 방향 (Positive)</strong></td><td>efficiently, optimize, reduce congestion/waste, prevent blackouts, save energy, sustainable</td></tr>
+    <tr><td><strong>반대 방향 (Negative)</strong></td><td>concerns, data privacy, security, technological surveillance</td></tr>
+  </tbody>
+</table>
+
+<div class="tip-box">
+  <h4>4. 구조 및 방향성</h4>
+  <p><span class="severity-low">POSITIVE</span> &rarr; <span class="severity-mid">CAUTION</span> &nbsp; (장점 소개 &rarr; 우려 제기)</p>
+  <table>
+    <thead><tr><th>단계</th><th>내용</th><th>키워드</th></tr></thead>
+    <tbody>
+      <tr><td>정의</td><td>센서 + 데이터 수집하는 도시</td><td>sensors, data</td></tr>
+      <tr><td>목표</td><td>시민 삶의 질 향상</td><td>quality of life</td></tr>
+      <tr><td>예시 1</td><td>스마트 교통: 신호등 조정 &rarr; 혼잡 감소</td><td>traffic, congestion</td></tr>
+      <tr><td>예시 2</td><td>스마트 전력망: 에너지 최적화 &rarr; 정전 방지</td><td>grids, energy</td></tr>
+      <tr><td>예시 3</td><td>스마트 폐기물: 쓰레기통 센서 &rarr; 위생 부서 알림</td><td>waste, sanitation</td></tr>
+      <tr><td>예시 4</td><td>스마트 조명: 사람 없으면 조도 낮춤</td><td>lighting, dims</td></tr>
+      <tr><td>우려</td><td>데이터 프라이버시, 보안, 감시</td><td>privacy, surveillance</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h4>5. 선지 분석</h4>
+
+<p style="font-size:10pt; margin-bottom:4px;"><strong>49-3.</strong> Which of the following is NOT given as an example of a smart city application?</p>
+<p style="font-size:9pt; margin-bottom:10px;">학생 선택: <span class="hl-wrong">④</span> &rarr; 정답: <span class="hl-correct">③</span></p>
+
+<div class="answer-box" style="page-break-inside:avoid;">
+  <p><strong>✅ ③ Creating personalized public education programs</strong> (NOT = 정답)</p>
+  <p style="font-size:9pt;"><strong>근거:</strong> 지문의 4가지 예시: 교통, 에너지, 폐기물, 조명 &mdash; 교육 관련 언급이 전혀 없음</p>
+  <p style="font-size:9pt;"><strong>해석:</strong> "맞춤형 공교육 프로그램"은 지문에서 한 번도 언급되지 않은 내용</p>
+  <p style="font-size:9pt;"><strong>포인트:</strong> NOT 문제는 "지문에 없는 것"을 찾는 것. 4개 예시를 체크리스트처럼 확인하면 교육만 빠짐</p>
+</div>
+
+<div class="warning-box" style="page-break-inside:avoid;">
+  <p><strong>❌ ④ Optimizing the distribution of electrical energy</strong> (학생 선택 &mdash; 언급됨!)</p>
+  <p style="font-size:9pt;"><strong>근거:</strong> "Smart grids can optimize energy distribution"</p>
+  <p style="font-size:9pt;"><strong>해석:</strong> 스마트 전력망이 에너지 분배를 최적화한다 &rarr; 명시적으로 언급됨</p>
+  <p style="font-size:9pt;"><strong>포인트:</strong> "energy distribution" = "distribution of electrical energy" &mdash; 동일 내용의 패러프레이즈. NOT 문제에서 지문에 있는 내용을 선택하면 오답!</p>
+</div>
+
+<div style="font-size:9pt; padding-left:16px; margin-bottom:12px; line-height:1.8;">
+  <p>❌ ① Adjusting traffic lights to ease congestion &mdash; 지문에 명시됨: "adjusting traffic light timings to reduce congestion"</p>
+  <p>❌ ② Notifying sanitation crews when trash bins are full &mdash; 지문에 명시됨: "sensors in public bins notify sanitation departments when they are full"</p>
+  <p>❌ ⑤ Dimming streetlights to conserve power &mdash; 지문에 명시됨: "smart lighting that dims when no one is around to save energy"</p>
+</div>
+
+<p style="font-size:9pt; color:#718096; margin-bottom:4px;"><strong>49-1.</strong> 학생 ③ &rarr; <span class="result-correct">정답 ✅</span> (To enhance the quality of life through efficient resource management)</p>
+<p style="font-size:9pt; color:#718096; margin-bottom:12px;"><strong>49-2.</strong> 학생 ① &rarr; <span class="result-correct">정답 ✅</span> (The use of sensors and data collection)</p>
+
+<hr class="section-divider">
+
+<!-- ========== Passage 50 ========== -->
+<div class="page-break-before"></div>
+<h2>Passage 50: Sapir-Whorf Hypothesis (사피어-워프 가설)</h2>
+
+<div class="concept-box">
+  <h4>1. 한줄 요약</h4>
+  <p>사피어-워프 가설(언어 상대성)의 두 버전 &mdash; 강한 버전(언어가 사고를 결정)과 약한 버전(언어가 사고에 영향) &mdash; 을 설명하고, 현대 언어학자들이 약한 버전을 지지한다는 내용의 지문이다.</p>
+</div>
+
+<div class="grammar-block"><h4>2. 전체 해석 (Full Translation)</h4>
+
+사피어-워프 가설은 언어 상대성으로도 알려져 있으며, 한 사람이 말하는 언어와 그 사람이 세계를 인식하고 이해하는 방식 사이의 관계를 탐구한다. 이 가설은 흔히 두 가지 버전으로 제시된다: "강한" 버전과 "약한" 버전이다. 강한 버전은 언어 결정론(linguistic determinism)이라 불리며, 언어가 사고를 "결정(determines)"하고 언어적 범주가 인지적 범주를 제한하고 규정한다고 주장한다. 이 관점에 따르면, 사람들은 자신의 언어가 허용하는 방식으로만 사고할 수 있다. 그러나 이 버전은 현대 언어학자들에게 널리 받아들여지지 않는다. 약한 버전인 언어적 영향(linguistic influence)이 더 선호된다. 이것은 언어가 사고에 "영향을 미치며(influences)" 언어적 범주가 개인의 인식과 판단에 영향을 줄 수 있지만, 사고를 완전히 결정하지는 않는다고 제안한다. 예를 들어, 파란색의 다양한 색조를 표현하는 많은 단어를 가진 언어의 화자는 그 색조들을 더 능숙하게 구별할 수 있을 것이다.</div>
+
+<h4>3. 핵심 키워드</h4>
+<table>
+  <thead><tr><th>구분</th><th>표현 및 키워드</th></tr></thead>
+  <tbody>
+    <tr><td><strong>핵심 키워드</strong></td><td>Sapir-Whorf hypothesis, linguistic relativity, strong/weak version, linguistic determinism, linguistic influence</td></tr>
+    <tr><td><strong>정답 방향 (Positive)</strong></td><td>weak version: influences, affect, more favored, adept at distinguishing</td></tr>
+    <tr><td><strong>반대 방향 (Negative)</strong></td><td>strong version: determines, limit, define, not widely accepted</td></tr>
+  </tbody>
+</table>
+
+<div class="tip-box">
+  <h4>4. 구조 및 방향성</h4>
+  <p><span class="severity-mid">대비-대조</span> &nbsp; (강한 버전 vs 약한 버전)</p>
+  <table>
+    <thead><tr><th>단계</th><th>내용</th><th>핵심 동사</th></tr></thead>
+    <tbody>
+      <tr><td>도입</td><td>사피어-워프 가설 소개 (언어와 인식의 관계)</td><td>&mdash;</td></tr>
+      <tr><td>강한 버전</td><td>언어 결정론: 언어가 사고를 결정</td><td><strong>determines</strong></td></tr>
+      <tr><td>평가 1</td><td>"not widely accepted by modern linguists"</td><td>비주류</td></tr>
+      <tr><td>약한 버전</td><td>언어적 영향: 언어가 사고에 영향</td><td><strong>influences</strong></td></tr>
+      <tr><td>평가 2</td><td>"is more favored"</td><td>주류</td></tr>
+      <tr><td>예시</td><td>파란색 어휘가 풍부한 언어 &rarr; 색조 구별 능력 향상</td><td>&mdash;</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<h4>5. 선지 분석</h4>
+
+<p style="font-size:10pt; margin-bottom:4px;"><strong>50-2.</strong> What is the main difference between the "strong" and "weak" versions of the hypothesis?</p>
+<p style="font-size:9pt; margin-bottom:10px;">학생 선택: <span class="hl-wrong">③</span> &rarr; 정답: <span class="hl-correct">②</span></p>
+
+<div class="answer-box" style="page-break-inside:avoid;">
+  <p><strong>✅ ② The strong version claims language determines thought, while the weak version claims it only influences thought.</strong></p>
+  <p style="font-size:9pt;"><strong>근거:</strong> "the strong version... argues that language 'determines' thought" + "The weak version... suggests that language 'influences' thought"</p>
+  <p style="font-size:9pt;"><strong>해석:</strong> 강한 버전은 언어가 사고를 결정, 약한 버전은 영향만 줌</p>
+  <p style="font-size:9pt;"><strong>포인트:</strong> <strong>determines vs. influences</strong> &mdash; 이 두 동사의 차이가 두 버전을 구분하는 핵심</p>
+</div>
+
+<div class="warning-box" style="page-break-inside:avoid;">
+  <p><strong>❌ ③ The strong version is supported by modern linguists, while the weak version is not.</strong> (학생 선택)</p>
+  <p style="font-size:9pt;"><strong>근거:</strong> "this version is not widely accepted by modern linguists. The weak version... is more favored."</p>
+  <p style="font-size:9pt;"><strong>해석:</strong> 강한 버전이 받아들여지지 않고, 약한 버전이 선호됨 &rarr; 선지 ③은 정확히 반대</p>
+  <p style="font-size:9pt;"><strong>포인트:</strong> 두 버전의 <strong>"학계 지지 방향"을 반대로 매칭</strong>한 함정. "not widely accepted" = 강한 버전, "more favored" = 약한 버전임을 정확히 파악해야 함</p>
+</div>
+
+<div style="font-size:9pt; padding-left:16px; margin-bottom:12px; line-height:1.8;">
+  <p>❌ ① The strong version applies to written language, while the weak version applies to spoken language. &mdash; 지문에 문어/구어 구분 없음</p>
+  <p>❌ ④ The strong version focuses on vocabulary, while the weak version focuses on grammar. &mdash; 지문에 어휘/문법 구분 없음</p>
+  <p>❌ ⑤ The strong version was proposed by Sapir, and the weak version was proposed by Whorf. &mdash; 지문에 각 버전의 제안자 구분 없음</p>
+</div>
+
+<hr class="section-divider">
+
+<p style="font-size:10pt; margin-bottom:4px;"><strong>50-3.</strong> According to the passage, what is the general view of modern linguists regarding the hypothesis?</p>
+<p style="font-size:9pt; margin-bottom:10px;">학생 선택: <span class="hl-wrong">②</span> &rarr; 정답: <span class="hl-correct">③</span></p>
+
+<div class="answer-box" style="page-break-inside:avoid;">
+  <p><strong>✅ ③ They tend to support the weak version, which suggests language influences thought.</strong></p>
+  <p style="font-size:9pt;"><strong>근거:</strong> "The weak version, linguistic influence, is more favored."</p>
+  <p style="font-size:9pt;"><strong>해석:</strong> 약한 버전인 언어적 영향이 더 선호된다</p>
+  <p style="font-size:9pt;"><strong>포인트:</strong> "more favored" = "tend to support" &mdash; 정확한 패러프레이즈</p>
+</div>
+
+<div class="warning-box" style="page-break-inside:avoid;">
+  <p><strong>❌ ② They universally accept the strong version (linguistic determinism).</strong> (학생 선택)</p>
+  <p style="font-size:9pt;"><strong>근거:</strong> "this version is not widely accepted by modern linguists"</p>
+  <p style="font-size:9pt;"><strong>해석:</strong> 강한 버전은 널리 받아들여지지 않음 &mdash; "universally accept"는 정반대</p>
+  <p style="font-size:9pt;"><strong>포인트:</strong> 50-2와 같은 실수 반복 &mdash; 강한 버전과 약한 버전의 <strong>학계 평가를 혼동</strong>. "not widely accepted" ≠ "universally accept"</p>
+</div>
+
+<div style="font-size:9pt; padding-left:16px; margin-bottom:12px; line-height:1.8;">
+  <p>❌ ① They completely reject both versions of the hypothesis. &mdash; 약한 버전은 선호됨 &rarr; 둘 다 거부한다는 것은 사실과 다름</p>
+  <p>❌ ④ They believe the hypothesis only applies to ancient, extinct languages. &mdash; 지문에 고대 언어/사멸 언어 언급 없음</p>
+  <p>❌ ⑤ They are still debating which version is more plausible, with no clear consensus. &mdash; 지문은 분명히 약한 버전이 선호된다고 명시 &rarr; 합의가 존재함</p>
+</div>
+
+<p style="font-size:9pt; color:#718096; margin-bottom:12px;"><strong>50-1.</strong> 학생 ③ &rarr; <span class="result-correct">정답 ✅</span> (How language affects a person's perception of reality)</p>
+
+<!-- ===== 푸터 ===== -->
+<hr class="section-divider">
+<p style="text-align: center; color: #a0aec0; font-size: 9pt; margin-top: 30px;">
+  피드백지 작성 완료 &mdash; 2026년 02월 16일
+</p>
+
+</body>
+</html>

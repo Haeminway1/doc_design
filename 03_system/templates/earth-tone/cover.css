@@ -1,0 +1,68 @@
+/* =================================================================== */
+/* Earth Tone Template — Cover Page Styles                            */
+/* 독해 Bridge Minimal 표지                                            */
+/* Vera's Document Studio                                             */
+/* =================================================================== */
+
+.cover-page {
+    background-color: #F5F5F0 !important;
+    background-image: url('../../05_assets/backgrounds/background1.png') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 25mm !important;
+    position: relative !important;
+}
+
+/* Minimal Border Box */
+.cover-frame {
+    border: 2px solid var(--color-accent-primary) !important;
+    padding: 18mm !important;
+    background-color: #FFFFFF !important;
+    width: 100% !important;
+    max-width: 150mm !important;
+    text-align: center !important;
+}
+
+/* Cover Title */
+.cover-main-title {
+    font-family: var(--font-eng) !important;
+    font-size: var(--cover-title-size) !important;
+    color: var(--color-accent-primary) !important;
+    font-weight: 700 !important;
+    margin-bottom: 6mm !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.3pt !important;
+}
+
+/* Cover Subtitle */
+.cover-subtitle {
+    font-family: var(--font-sans) !important;
+    font-size: var(--cover-subtitle-size) !important;
+    color: var(--color-accent-dark) !important;
+    font-weight: 400 !important;
+    margin-bottom: 10mm !important;
+    line-height: 1.4 !important;
+}
+
+/* Cover Brand */
+.cover-brand {
+    font-family: var(--font-eng) !important;
+    font-size: var(--cover-brand-size) !important;
+    color: var(--color-accent-secondary) !important;
+    font-weight: 500 !important;
+    letter-spacing: 1.5pt !important;
+    margin-top: 12mm !important;
+}
+
+/* Cover Accent Line - thin */
+.cover-accent-line {
+    width: 50mm !important;
+    height: 1px !important;
+    background-color: var(--color-accent-primary) !important;
+    margin: 5mm auto !important;
+}

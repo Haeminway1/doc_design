@@ -1,0 +1,197 @@
+/* =================================================================== */
+/* concept-box.css — 개념 정의 박스 컴포넌트                            */
+/* Vera's Document Studio                                               */
+/* =================================================================== */
+
+/*
+ * 용도: 핵심 개념, 정의, 공식 설명
+ *
+ * 마크업 예시:
+ * <div class="concept-box">
+ *   <div class="concept-box-title">현재완료 시제</div>
+ *   <div class="concept-box-content">
+ *     <p><strong>have/has + p.p.</strong> 형태로 과거부터 현재까지
+ *     이어지는 동작이나 상태를 나타냅니다.</p>
+ *     <ul>
+ *       <li>완료: "막 ~했다"</li>
+ *       <li>경험: "~한 적이 있다"</li>
+ *       <li>계속: "~해 왔다"</li>
+ *     </ul>
+ *   </div>
+ * </div>
+ */
+
+/* --- 개념 박스 컨테이너 --- */
+.concept-box {
+    margin: var(--space-xl) 0 !important;
+    padding: var(--space-lg) !important;
+    background-color: var(--color-concept-bg) !important;
+    border-left: 4px solid var(--color-concept-border) !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+}
+
+/* --- 개념 박스 제목 --- */
+.concept-box-title {
+    font-size: var(--text-lg) !important;
+    font-weight: 700 !important;
+    color: var(--color-accent-dark) !important;
+    margin-bottom: var(--space-md) !important;
+    padding-bottom: var(--space-sm) !important;
+    border-bottom: 1px solid var(--color-concept-border) !important;
+}
+
+/* --- 개념 박스 내용 --- */
+.concept-box-content {
+    font-size: var(--text-base) !important;
+    line-height: var(--leading-relaxed) !important;
+    color: var(--color-text-primary) !important;
+}
+
+.concept-box-content p {
+    margin-bottom: var(--space-md) !important;
+    text-align: justify !important;
+}
+
+.concept-box-content p:last-child {
+    margin-bottom: 0 !important;
+}
+
+.concept-box-content ul,
+.concept-box-content ol {
+    margin-left: var(--space-xl) !important;
+    margin-bottom: var(--space-md) !important;
+}
+
+.concept-box-content li {
+    margin-bottom: var(--space-sm) !important;
+}
+
+.concept-box-content strong,
+.concept-box-content b {
+    color: var(--color-concept-border) !important;
+    font-weight: 700 !important;
+}
+
+/* --- 개념 박스 내 공식/패턴 --- */
+.concept-formula {
+    display: block !important;
+    margin: var(--space-md) 0 !important;
+    padding: var(--space-md) !important;
+    background-color: var(--color-white) !important;
+    border: 1px solid var(--color-concept-border) !important;
+    font-family: var(--font-eng) !important;
+    font-size: var(--text-md) !important;
+    font-weight: 600 !important;
+    text-align: center !important;
+    color: var(--color-accent-dark) !important;
+}
+
+/* --- 개념 박스 내 예문 --- */
+.concept-example {
+    margin: var(--space-md) 0 !important;
+    padding-left: var(--space-lg) !important;
+    border-left: 2px solid var(--color-concept-border) !important;
+    font-size: var(--text-sm) !important;
+    line-height: var(--leading-normal) !important;
+}
+
+.concept-example.eng-text {
+    font-family: var(--font-eng) !important;
+}
+
+/* --- 개념 박스 내 비교표 --- */
+.concept-table {
+    width: 100% !important;
+    margin: var(--space-md) 0 !important;
+    border-collapse: collapse !important;
+    font-size: var(--text-sm) !important;
+}
+
+.concept-table th {
+    background-color: var(--color-white) !important;
+    color: var(--color-concept-border) !important;
+    font-weight: 700 !important;
+    padding: var(--space-sm) !important;
+    border: 1px solid var(--color-concept-border) !important;
+    text-align: center !important;
+}
+
+.concept-table td {
+    padding: var(--space-sm) !important;
+    border: 1px solid var(--color-concept-border) !important;
+    background-color: var(--color-white) !important;
+    vertical-align: top !important;
+}
+
+/* --- 변형: 예제 박스 (초록 계열) --- */
+.concept-box--example {
+    background-color: var(--color-example-bg) !important;
+    border-left-color: var(--color-example-border) !important;
+}
+
+.concept-box--example .concept-box-title {
+    color: var(--color-example-border) !important;
+    border-bottom-color: var(--color-example-border) !important;
+}
+
+.concept-box--example .concept-formula {
+    border-color: var(--color-example-border) !important;
+}
+
+.concept-box--example strong,
+.concept-box--example b {
+    color: var(--color-example-border) !important;
+}
+
+/* --- 변형: 주의 박스 (노란 계열) --- */
+.concept-box--warning {
+    background-color: var(--color-warning-bg) !important;
+    border-left-color: var(--color-warning-border) !important;
+}
+
+.concept-box--warning .concept-box-title {
+    color: var(--color-warning-border) !important;
+    border-bottom-color: var(--color-warning-border) !important;
+}
+
+.concept-box--warning .concept-formula {
+    border-color: var(--color-warning-border) !important;
+}
+
+.concept-box--warning strong,
+.concept-box--warning b {
+    color: var(--color-warning-border) !important;
+}
+
+/* --- 변형: 오류 박스 (빨간 계열) --- */
+.concept-box--error {
+    background-color: var(--color-error-bg) !important;
+    border-left-color: var(--color-error-border) !important;
+}
+
+.concept-box--error .concept-box-title {
+    color: var(--color-error-border) !important;
+    border-bottom-color: var(--color-error-border) !important;
+}
+
+.concept-box--error .concept-formula {
+    border-color: var(--color-error-border) !important;
+}
+
+.concept-box--error strong,
+.concept-box--error b {
+    color: var(--color-error-border) !important;
+}
+
+/* --- 인쇄 최적화 --- */
+@media print {
+    .concept-box {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+    }
+
+    .concept-table {
+        break-inside: auto !important;
+    }
+}

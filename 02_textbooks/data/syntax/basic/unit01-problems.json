@@ -1,0 +1,131 @@
+{
+  "bookId": "syntax-basic-unit01",
+  "unit": 1,
+  "title": "1형식 문장 (S + V)",
+  "part": "I",
+  "week": 1,
+  "type": "sentence-analysis",
+  "instruction": "다음 문장에서 주어(S)와 동사(V)를 찾아 표시하고, 우리말로 해석해 보세요.",
+  "problems": [
+    {
+      "id": "syntax-basic-unit01-1",
+      "number": 1,
+      "type": "sentence-analysis",
+      "stem": "The baby is sleeping.",
+      "answer": {
+        "analysis": "The baby(S) is sleeping(V).",
+        "pattern": "",
+        "translation": "아기가 자고 있다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit01-2",
+      "number": 2,
+      "type": "sentence-analysis",
+      "stem": "My dog runs fast.",
+      "answer": {
+        "analysis": "My dog(S) runs(V) (fast).",
+        "pattern": "",
+        "translation": "내 개는 빠르게 달린다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit01-3",
+      "number": 3,
+      "type": "sentence-analysis",
+      "stem": "Water boils at 100 degrees Celsius.",
+      "answer": {
+        "analysis": "Water(S) boils(V) (at 100 degrees Celsius).",
+        "pattern": "",
+        "translation": "물은 섭씨 100도에서 끓는다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit01-4",
+      "number": 4,
+      "type": "sentence-analysis",
+      "stem": "He lived in a small village.",
+      "answer": {
+        "analysis": "He(S) lived(V) (in a small village).",
+        "pattern": "",
+        "translation": "그는 작은 마을에 살았다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit01-5",
+      "number": 5,
+      "type": "sentence-analysis",
+      "stem": "An accident happened yesterday.",
+      "answer": {
+        "analysis": "An accident(S) happened(V) (yesterday).",
+        "pattern": "",
+        "translation": "어제 사고가 발생했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit01-6",
+      "number": 6,
+      "type": "sentence-analysis",
+      "stem": "The leaves fall in autumn.",
+      "answer": {
+        "analysis": "The leaves(S) fall(V) (in autumn).",
+        "pattern": "",
+        "translation": "나뭇잎들은 가을에 떨어진다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit01-7",
+      "number": 7,
+      "type": "sentence-analysis",
+      "stem": "I wake up early every day.",
+      "answer": {
+        "analysis": "I(S) wake up(V) (early) (every day).",
+        "pattern": "",
+        "translation": "나는 매일 일찍 일어난다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit01-8",
+      "number": 8,
+      "type": "sentence-analysis",
+      "stem": "The train departed on time.",
+      "answer": {
+        "analysis": "The train(S) departed(V) (on time).",
+        "pattern": "",
+        "translation": "기차는 정시에 출발했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit01-9",
+      "number": 9,
+      "type": "sentence-analysis",
+      "stem": "She talks on the phone for hours.",
+      "answer": {
+        "analysis": "She(S) talks(V) (on the phone) (for hours).",
+        "pattern": "",
+        "translation": "그녀는 몇 시간 동안 통화한다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit01-10",
+      "number": 10,
+      "type": "sentence-analysis",
+      "stem": "The world changes constantly.",
+      "answer": {
+        "analysis": "The world(S) changes(V) (constantly).",
+        "pattern": "",
+        "translation": "세상은 끊임없이 변한다.",
+        "notes": ""
+      }
+    }
+  ]
+}

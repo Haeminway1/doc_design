@@ -1,0 +1,65 @@
+/* =================================================================== */
+/* rule-box.css — 문법 공식/규칙 박스 컴포넌트                         */
+/* Vera's Document Studio                                               */
+/* =================================================================== */
+
+/**
+ * 문법 공식/규칙 박스
+ *
+ * 용도: 문법 공식, 패턴, 핵심 규칙 강조 (중앙 정렬)
+ *
+ * 마크업 예시:
+ * <div class="rule-box">
+ *   <p>If + S + <b>과거동사</b>, S + <b>would/could/might + R</b></p>
+ * </div>
+ */
+
+.rule-box {
+    background-color: var(--color-concept-bg) !important;
+    border: 2px solid var(--color-concept-border) !important;
+    border-radius: var(--radius-md) !important;
+    padding: var(--space-lg) var(--space-xl) !important;
+    margin: var(--space-xl) 0 !important;
+    text-align: center !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+}
+
+.rule-box p {
+    font-size: var(--text-md) !important;
+    line-height: var(--leading-tight) !important;
+    color: var(--color-text-primary) !important;
+    margin-bottom: var(--space-sm) !important;
+    font-family: var(--font-eng) !important;
+}
+
+.rule-box p:last-child {
+    margin-bottom: 0 !important;
+}
+
+.rule-box b,
+.rule-box strong {
+    color: var(--color-accent-dark) !important;
+    font-weight: 700 !important;
+}
+
+.rule-box .eng-text {
+    font-family: var(--font-eng) !important;
+}
+
+/* 여러 공식이 있을 때 구분선 */
+.rule-box hr {
+    border: none !important;
+    border-top: 1px solid var(--color-concept-border) !important;
+    margin: var(--space-md) 0 !important;
+}
+
+/* 작은 크기 변형 (보조 규칙용) */
+.rule-box--small {
+    padding: var(--space-md) var(--space-lg) !important;
+    margin: var(--space-md) 0 !important;
+}
+
+.rule-box--small p {
+    font-size: var(--text-base) !important;
+}

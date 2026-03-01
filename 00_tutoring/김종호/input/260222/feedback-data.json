@@ -1,0 +1,177 @@
+{
+  "student": "김종호",
+  "date": "260222",
+  "subject": "문법",
+  "textbook": "기출로적중 (문법) / Vera's Flavor 독해",
+  "range": "문법 POINT 4-1 (간접의문문) + 독해 PART 2 18~23번",
+  "summary": {
+    "totalQ": 16,
+    "wrongQ": 1,
+    "correctRate": "94%",
+    "goodPoints": "독해 PART 2 18~23번 전문 정답! 지문 독해력이 안정적으로 성장하고 있음. 문법도 간접의문문 10문제 중 9문제 정답으로 높은 정답률. 4번 문제도 빨간펜으로 스스로 수정하여 정답을 찾아낸 자기교정 능력이 인상적.",
+    "badPoints": "간접의문문 어순에서 첫 시도 시 직접의문문 어순을 적용하는 실수 발생. 자기교정에 성공했지만, 첫 시도에서 자동 적용되려면 '의문사 + S + V' 공식의 반복 훈련이 필요.",
+    "priority": "간접의문문 어순 (의문사 + S + V) 자동화 → 직접의문문 vs 간접의문문 즉각 구별",
+    "weakAreas": [
+      { "area": "간접의문문 어순", "count": 1, "severity": "mid", "note": "'의문사 + S + V' 어순 미적용 → 자기교정 성공 (개념은 알지만 자동화 부족)" }
+    ]
+  },
+  "wrongAnswers": [
+    {
+      "q": 4,
+      "selected": "where the library found",
+      "correct": "where I can find the library",
+      "type": "간접의문문 어순",
+      "question": "간접의문문으로 바꿔 쓰시오 (도서관을 어디서 찾을 수 있는지)",
+      "explanation": "<div class=\"concept-box\"><span class=\"concept-label\">핵심 개념: 간접의문문 어순</span><p>간접의문문은 <strong class=\"hl-key\">의문사 + 주어 + 동사</strong> 순서로 쓴다.</p><p>직접의문문처럼 주어-동사를 도치하지 않는 것이 핵심!</p></div>\n\n<table class=\"compare-table\"><thead><tr><th>구분</th><th>직접의문문</th><th>간접의문문</th></tr></thead><tbody><tr><td><strong>어순</strong></td><td>의문사 + <strong class=\"hl-wrong\">동사 + 주어</strong></td><td>의문사 + <strong class=\"hl-correct\">주어 + 동사</strong></td></tr><tr><td><strong>예시</strong></td><td>Where <strong class=\"hl-wrong\">can I find</strong> the library?</td><td>I wonder where <strong class=\"hl-correct\">I can find</strong> the library.</td></tr><tr><td><strong>문장부호</strong></td><td>물음표 (?)</td><td>마침표 (.) — 전체 문장이 평서문이면</td></tr></tbody></table>\n\n<h4>종호의 답 변화 과정</h4>\n<div class=\"flowchart\"><div class=\"flow-step\"><span class=\"step-label\">처음 작성</span> <span class=\"hl-wrong\">where the library found</span><div class=\"step-sub\">문제점 1: 주어(I) 누락 — 누가 찾는지 빠져 있음<br>문제점 2: 조동사(can) 누락<br>문제점 3: found(과거형) 사용 → find(원형)이어야 함<br>문제점 4: the library가 주어 자리에 → 수동태처럼 읽힘</div></div><div class=\"flow-arrow\">&#8595;</div><div class=\"flow-step\"><span class=\"step-label\">빨간펜 수정</span> <span class=\"hl-correct\">where I can find the library</span><div class=\"step-sub\">의문사(where) + 주어(I) + 동사(can find) + 목적어(the library) &#10004;</div></div></div>\n\n<div class=\"answer-box\"><strong>정답: where I can find the library</strong><br>간접의문문 공식: <strong>의문사 + S + V</strong><br>I don't know <strong class=\"hl-correct\">where I can find the library</strong>.</div>\n\n<div class=\"warning-box\"><span class=\"warning-label\">자주 하는 실수</span><p>1. <span class=\"hl-wrong\">where can I find</span> → 직접의문문 어순을 그대로 사용 (도치 금지!)</p><p>2. <span class=\"hl-wrong\">where the library found</span> → 주어·목적어 위치 뒤바뀜 + 능동/수동 혼동</p><p>3. <span class=\"hl-wrong\">where is the library</span> → 직접의문문 자체를 삽입</p></div>",
+      "studentAnalysis": {
+        "whyChosen": "직접의문문 'Where can I find the library?'를 간접의문문으로 바꾸면서, 의문사 뒤에 바로 목적어(the library)를 주어처럼 배치하고 동사만 붙이는 패턴으로 작성. 주어(I)와 조동사(can)를 빠뜨렸고, find를 과거형 found로 잘못 씀.",
+        "errorPattern": "직접의문문 어순 혼동 + 주어 누락 — 간접의문문에서 '의문사 + S + V' 공식이 아직 자동화되지 않은 상태",
+        "focusPoint": "빨간펜으로 스스로 교정한 점은 매우 긍정적! 개념 자체는 이해하고 있으나, 첫 시도에서 바로 적용하려면 '의문사 + 주어 + 동사' 순서를 반복 연습해야 함. 특히 주어를 빠뜨리지 않도록 주의."
+      }
+    }
+  ],
+  "conceptQuestions": [
+    {
+      "title": "간접의문문 (Indirect Questions)",
+      "explanation": "<div class=\"concept-box\"><span class=\"concept-label\">간접의문문이란?</span><p><strong>의문문이 다른 문장 안에 포함</strong>되어 명사절 역할을 하는 것.</p><p>주절(I wonder, Do you know, Tell me 등) + <strong class=\"hl-key\">의문사 + 주어 + 동사</strong></p></div>\n\n<h4>핵심 공식</h4>\n<table><thead><tr><th>유형</th><th>직접의문문</th><th>간접의문문</th></tr></thead><tbody><tr><td><strong>의문사 의문문</strong></td><td>Where does he live?</td><td>I know <strong class=\"hl-correct\">where he lives</strong>.</td></tr><tr><td><strong>의문사 의문문</strong></td><td>What did she buy?</td><td>Tell me <strong class=\"hl-correct\">what she bought</strong>.</td></tr><tr><td><strong>의문사 = 주어</strong></td><td>Who broke the window?</td><td>I wonder <strong class=\"hl-correct\">who broke the window</strong>. (어순 변화 없음!)</td></tr><tr><td><strong>Yes/No 의문문</strong></td><td>Is he a student?</td><td>I wonder <strong class=\"hl-correct\">if[whether] he is</strong> a student.</td></tr></tbody></table>\n\n<h4>3대 변환 규칙</h4>\n<div class=\"grammar-block\">1. 어순 변환: 의문사 + <strong>주어 + 동사</strong> (도치 해제!)\n   Where does he live? → where <strong>he lives</strong>\n\n2. do/does/did 제거 + 동사 원래 형태로\n   What did she buy? → what <strong>she bought</strong>\n   Where does he live? → where <strong>he lives</strong>\n\n3. 시제·인칭 일치: 주절이 과거면 종속절도 과거\n   I wondered where he <strong>lived</strong>.</div>",
+      "examples": [
+        "I don't know where he lives. (O) / I don't know where does he live. (X)",
+        "Tell me what you want. (O) / Tell me what do you want. (X)",
+        "She asked me if I was okay. (O) / She asked me was I okay. (X)",
+        "Do you know who broke the window? (O) — 의문사=주어이므로 어순 변화 없음",
+        "I wonder when the train arrives. (O) / I wonder when does the train arrive. (X)"
+      ],
+      "exampleSentences": [
+        "나는 그가 어디 사는지 모른다. → I don't know where he lives.",
+        "그녀가 뭘 샀는지 말해줘. → Tell me what she bought.",
+        "그가 학생인지 궁금하다. → I wonder if he is a student.",
+        "누가 창문을 깼는지 아니? → Do you know who broke the window?",
+        "기차가 언제 도착하는지 알려줘. → Let me know when the train arrives.",
+        "그들이 왜 떠났는지 이해 못 하겠어. → I can't understand why they left."
+      ],
+      "confusionPoints": "<div class=\"warning-box\"><span class=\"warning-label\">헷갈리는 포인트</span><p><strong>1. 의문사가 주어인 경우:</strong> 어순이 바뀌지 않는다!<br><span class=\"hl-correct\">Who broke the window?</span> → I wonder <span class=\"hl-correct\">who broke the window.</span> (그대로!)</p><p><strong>2. if vs whether:</strong> 동사의 목적어일 때 둘 다 가능, 전치사 뒤/to부정사 앞은 whether만<br>I wonder <span class=\"hl-correct\">if[whether]</span> he will come. / I'm not sure about <span class=\"hl-correct\">whether</span> he will come.</p><p><strong>3. 간접의문문 안의 do/does/did는 사라진다:</strong><br><span class=\"hl-wrong\">I wonder where does he live.</span> → <span class=\"hl-correct\">I wonder where he lives.</span></p></div>",
+      "practiceProblems": [
+        {
+          "sentence": "I don't know ______ (그가 어디 사는지).",
+          "choices": ["① where does he live", "② where he lives", "③ where he does live", "④ where is he living"],
+          "answer": "②",
+          "explanation": "간접의문문 어순: 의문사 + S + V → where he lives"
+        },
+        {
+          "sentence": "Tell me ______ (너는 무엇을 원하는지).",
+          "choices": ["① what do you want", "② what you do want", "③ what you want", "④ what want you"],
+          "answer": "③",
+          "explanation": "간접의문문에서 do 제거 + 어순 정상화 → what you want"
+        },
+        {
+          "sentence": "Do you know ______ (그녀가 언제 올 건지)?",
+          "choices": ["① when will she come", "② when she will come", "③ when does she come", "④ when she does come"],
+          "answer": "②",
+          "explanation": "간접의문문: when + S + V → when she will come"
+        },
+        {
+          "sentence": "I wonder ______ (누가 이 편지를 보냈는지).",
+          "choices": ["① who did send this letter", "② who sent this letter", "③ who this letter sent", "④ whom sent this letter"],
+          "answer": "②",
+          "explanation": "의문사(who)가 주어 → 어순 변화 없음! who sent this letter"
+        },
+        {
+          "sentence": "Can you tell me ______ (도서관이 어디 있는지)?",
+          "choices": ["① where is the library", "② where the library is", "③ where does the library", "④ the library is where"],
+          "answer": "②",
+          "explanation": "간접의문문: where + S + V → where the library is"
+        },
+        {
+          "sentence": "She asked me ______ (내가 학생인지).",
+          "choices": ["① if I was a student", "② if was I a student", "③ that I was a student", "④ if I a student was"],
+          "answer": "①",
+          "explanation": "Yes/No 의문문 → if/whether + S + V → if I was a student"
+        },
+        {
+          "sentence": "I have no idea ______ (이것이 얼마인지).",
+          "choices": ["① how much is this", "② how much does this cost", "③ how much this costs", "④ how much this does cost"],
+          "answer": "③",
+          "explanation": "간접의문문: how much + S + V, does 제거 → how much this costs"
+        },
+        {
+          "sentence": "Nobody knows ______ (그가 왜 떠났는지).",
+          "choices": ["① why did he leave", "② why he did leave", "③ why he left", "④ why left he"],
+          "answer": "③",
+          "explanation": "간접의문문: did 제거 + 동사 과거형 복원 → why he left"
+        },
+        {
+          "sentence": "Please tell me ______ (몇 시인지).",
+          "choices": ["① what time is it", "② what time it is", "③ what time does it", "④ it is what time"],
+          "answer": "②",
+          "explanation": "간접의문문: what time + S + V → what time it is"
+        },
+        {
+          "sentence": "I'm not sure ______ (그가 올지 안 올지).",
+          "choices": ["① whether he will come", "② whether will he come", "③ that he will come", "④ if will he come"],
+          "answer": "①",
+          "explanation": "whether/if + S + V → whether he will come (도치 금지)"
+        },
+        {
+          "sentence": "Do you remember ______ (우리가 어디서 만났는지)?",
+          "choices": ["① where did we meet", "② where we met", "③ where we did meet", "④ where met we"],
+          "answer": "②",
+          "explanation": "간접의문문: did 제거 + meet → met → where we met"
+        },
+        {
+          "sentence": "I want to know ______ (그 영화가 언제 시작하는지).",
+          "choices": ["① when does the movie start", "② when the movie starts", "③ when starts the movie", "④ the movie when starts"],
+          "answer": "②",
+          "explanation": "간접의문문: does 제거 + start → starts → when the movie starts"
+        },
+        {
+          "sentence": "Could you explain ______ (이것이 어떻게 작동하는지)?",
+          "choices": ["① how does this work", "② how this works", "③ how this does work", "④ this how works"],
+          "answer": "②",
+          "explanation": "간접의문문: does 제거 + work → works → how this works"
+        },
+        {
+          "sentence": "I can't understand ______ (그녀가 왜 화가 났는지).",
+          "choices": ["① why is she angry", "② why she is angry", "③ why angry is she", "④ she why is angry"],
+          "answer": "②",
+          "explanation": "간접의문문: be동사 도치 해제 → why she is angry"
+        },
+        {
+          "sentence": "He didn't tell me ______ (그가 어디 갈 건지).",
+          "choices": ["① where will he go", "② where would he go", "③ where he would go", "④ where he will go"],
+          "answer": "③",
+          "explanation": "주절 과거(didn't) → 시제 일치: will → would → where he would go"
+        },
+        {
+          "sentence": "They asked ______ (우리가 준비됐는지).",
+          "choices": ["① if we were ready", "② if were we ready", "③ that we were ready", "④ whether were we ready"],
+          "answer": "①",
+          "explanation": "Yes/No 의문문 + 과거 시제 → if we were ready"
+        },
+        {
+          "sentence": "I'd like to know ______ (이 버스가 어디로 가는지).",
+          "choices": ["① where does this bus go", "② where this bus goes", "③ where goes this bus", "④ this bus where goes"],
+          "answer": "②",
+          "explanation": "간접의문문: does 제거 + go → goes → where this bus goes"
+        },
+        {
+          "sentence": "The question is ______ (우리가 그것을 감당할 수 있는지).",
+          "choices": ["① whether can we afford it", "② whether we can afford it", "③ if can we afford it", "④ can we whether afford it"],
+          "answer": "②",
+          "explanation": "보어 역할 간접의문문: whether + S + V → whether we can afford it"
+        },
+        {
+          "sentence": "She wondered ______ (무엇이 일어났는지).",
+          "choices": ["① what did happen", "② what happened", "③ what was happened", "④ what it happened"],
+          "answer": "②",
+          "explanation": "의문사(what) = 주어 → 어순 변화 없음! what happened"
+        },
+        {
+          "sentence": "I'm curious about ______ (그가 얼마나 많은 언어를 말하는지).",
+          "choices": ["① how many languages does he speak", "② how many languages he speaks", "③ how many languages he does speak", "④ he speaks how many languages"],
+          "answer": "②",
+          "explanation": "간접의문문: does 제거 + speak → speaks → how many languages he speaks"
+        }
+      ]
+    }
+  ]
+}

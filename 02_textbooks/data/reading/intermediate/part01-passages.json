@@ -1,0 +1,886 @@
+{
+  "bookId": "reading-intermediate",
+  "part": "1",
+  "passages": [
+    {
+      "id": "reading-intermediate-p1",
+      "number": 1,
+      "title": "",
+      "text": "The philosophical inquiry into epistemology fundamentally questions the nature of knowledge itself. It scrutinizes what constitutes justified true belief, a definition that has long served as a cornerstone of Western thought. However, the so-called Gettier problems, introduced in the mid-20th century, presented compelling counterexamples. These scenarios illustrate situations where an individual holds a justified true belief that, intuitively, still does not seem to be knowledge. The critical element in these paradoxes is the presence of a certain kind of luck, where the justification for the belief, though valid, is not causally connected to the fact that makes the belief true. This disconnect forces philosophers to reconsider the sufficiency of the traditional tripartite definition of knowledge. Consequently, contemporary epistemologists have proposed various alternatives, such as reliabilism or virtue epistemology, to address this perceived deficiency. Each new theory attempts to forge a more robust link between belief and truth, thereby immunizing the definition of knowledge against the corrosive effects of epistemic luck.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q1",
+          "number": "1",
+          "text": "What is the main idea of this passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Epistemology is the most important branch of Western philosophy.",
+            "The Gettier problems have completely invalidated traditional epistemology.",
+            "Contemporary philosophers prefer reliabilism over traditional definitions of knowledge.",
+            "The traditional definition of knowledge as justified true belief faces challenges that have led to new epistemological theories.",
+            "Epistemic luck is the primary concern in all philosophical debates about knowledge."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p2",
+      "number": 2,
+      "title": "",
+      "text": "In the realm of quantum mechanics, the principle of superposition represents a profound departure from classical physics. It posits that any two or more quantum states can be added together, or \"superposed,\" and the result will be another valid quantum state. Consequently, a particle can be in multiple locations or states simultaneously until a measurement is made. This act of measurement, which forces the particle into a single definite state, is a phenomenon that has perplexed physicists and philosophers alike, leading to various interpretations like the Copenhagen interpretation and the many-worlds theory. The former suggests that the wave function, representing all possible states, collapses upon observation. In contrast, the many-worlds theory proposes that all possible outcomes of the measurement actually occur, each in its own separate universe. The ontological implications of these interpretations are staggering, challenging our fundamental understanding of reality. The debate continues to fuel research into the very foundations of the universe.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q2",
+          "number": "2",
+          "text": "Which of the following best summarizes the central theme of this passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Classical physics is superior to quantum mechanics in explaining natural phenomena.",
+            "The Copenhagen interpretation is the most widely accepted theory in quantum mechanics.",
+            "Quantum superposition and measurement present fundamental challenges to our understanding of reality.",
+            "The many-worlds theory has been proven to be more accurate than other quantum interpretations.",
+            "Wave function collapse is the key to solving all problems in quantum mechanics."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p3",
+      "number": 3,
+      "title": "",
+      "text": "Literary deconstruction, a school of thought pioneered by Jacques Derrida, challenges the traditional view of language as a stable and transparent medium for conveying meaning. It argues that language is inherently unstable, full of contradictions and multiple meanings that cannot be resolved into a single, authoritative interpretation. Deconstructionists focus on the \"aporia,\" or the points of undecidability in a text, to reveal its underlying assumptions and ideological biases. The objective is not to destroy the text but to open it up to a limitless play of interpretations, dismantling the hierarchical oppositions (like speech over writing) that have structured Western metaphysics. This process, known as \"différance,\" involves the endless deferral of meaning. Therefore, a definitive reading of any text is deemed impossible. This approach has been both highly influential and intensely controversial, fundamentally altering the landscape of literary criticism and theory. It invites readers to become active co-creators of meaning rather than passive recipients.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q3",
+          "number": "3",
+          "text": "What is the primary purpose of this passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "To argue that deconstruction is the only valid method of literary analysis.",
+            "To explain how deconstruction challenges traditional views of language and meaning.",
+            "To demonstrate why Jacques Derrida is the most important literary theorist.",
+            "To prove that texts have no meaning whatsoever.",
+            "To show that Western metaphysics is fundamentally flawed."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p4",
+      "number": 4,
+      "title": "",
+      "text": "The study of neuroplasticity has revolutionized our understanding of the human brain, demonstrating its remarkable ability to reorganize itself throughout an individual's life. Previously, the adult brain was considered a static, unchangeable organ, with its neural pathways fixed in early development. However, extensive research has shown that the brain can form new neural connections and prune old ones in response to experience, learning, and even injury. This dynamic capacity for change, enabling the brain to compensate for damage and adjust its activities in response to new situations, is fundamental to learning and memory. For instance, the brains of musicians show enlarged areas dedicated to motor control and auditory processing. Similarly, stroke victims can often regain lost functions as different parts of the brain take over the roles of the damaged areas. This ongoing process of rewiring underscores the fact that our brains are not merely passive hardware. They are living, adaptable systems constantly being shaped by our interactions with the world.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q4",
+          "number": "4",
+          "text": "Which of the following best captures the main point of this passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The human brain reaches its peak development in early childhood.",
+            "Musicians have fundamentally different brain structures than other people.",
+            "Stroke victims can never fully recover their lost cognitive abilities.",
+            "The brain's ability to reorganize itself throughout life has transformed our understanding of neural function.",
+            "Neural pathways are completely fixed once they are established in development."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p5",
+      "number": 5,
+      "title": "",
+      "text": "The concept of the \"panopticon,\" as conceived by the philosopher Jeremy Bentham and later analyzed by Michel Foucault, serves as a powerful metaphor for modern disciplinary power. The architectural design involves a central tower from which a single guard can observe all the inmates of a prison, who are isolated in their individual cells. Crucially, the inmates cannot know whether they are being watched at any given moment. This uncertainty, which ensures that the prisoners behave as if they are under constant surveillance, internalizes the disciplinary gaze, making external coercion largely unnecessary. Foucault argued that this model of power extends beyond the prison to other institutions like schools, hospitals, and factories. In these settings, power is not wielded by a sovereign but is diffused throughout the social body, operating through subtle mechanisms of observation and normalization. The individual becomes both the subject and the object of this pervasive power. Thus, the panopticon illustrates a shift from spectacular, public punishment to a more efficient, internalized form of social control.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q5",
+          "number": "5",
+          "text": "What is the central idea presented in this passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Prisons are the most effective institutions for maintaining social order.",
+            "Jeremy Bentham was primarily concerned with architectural innovation.",
+            "The panopticon concept reveals how modern power operates through internalized surveillance rather than external force.",
+            "Michel Foucault disagreed with all of Jeremy Bentham's philosophical ideas.",
+            "Schools and hospitals should be modeled after prison systems."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p6",
+      "number": 6,
+      "title": "",
+      "text": "In evolutionary biology, the Red Queen hypothesis proposes a compelling explanation for the prevalence of sexual reproduction. The name is derived from Lewis Carroll's *Through the Looking-Glass*, where the Red Queen tells Alice, \"it takes all the running you can do, to keep in the same place.\" This hypothesis suggests that organisms must constantly adapt, evolve, and proliferate not merely to gain an advantage, but simply to survive while pitted against ever-evolving opposing organisms in a constantly changing environment. For co-evolving species, such as hosts and their parasites, the continuous evolutionary arms race means that a genetic advantage gained by one is quickly countered by an adaptation in the other. Sexual reproduction, by creating novel gene combinations in each generation, provides the necessary variation for the host to keep up. Asexual organisms, which produce genetically identical offspring, are more vulnerable to being overcome by rapidly evolving parasites. Therefore, the immense metabolic cost of sex is justified by the crucial advantage it provides in this perpetual struggle. This dynamic interplay is a central theme in the study of co-evolution.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q6",
+          "number": "6",
+          "text": "Which of the following best expresses the main argument of this passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Sexual reproduction is always superior to asexual reproduction in all circumstances.",
+            "The Red Queen hypothesis explains why sexual reproduction persists despite its costs through evolutionary arms races.",
+            "Lewis Carroll's literary works have had a profound impact on scientific theory.",
+            "Parasites are the primary driving force behind all evolutionary changes.",
+            "Asexual organisms will eventually become extinct due to their genetic limitations."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p7",
+      "number": 7,
+      "title": "",
+      "text": "The sublime, as an aesthetic category, was a subject of profound interest to 18th-century philosophers like Edmund Burke and Immanuel Kant. It is distinguished from the beautiful, which is associated with harmony, order, and pleasure. In contrast, the sublime pertains to experiences that evoke awe, terror, and a sense of being overwhelmed by something vast, powerful, or obscure. Burke, in his treatise, linked the sublime to feelings of pain and danger, arguing that these emotions, when experienced from a safe distance, can produce a powerful form of delight. For him, vastness, infinity, and magnificence were key sources of the sublime. Kant, on the other hand, located the sublime not in the external object itself but in the mind of the subject. He argued that our inability to grasp the magnitude of nature reveals the superiority of our own reason. The experience of the sublime thus becomes a testament to human freedom and moral capacity.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q7",
+          "number": "7",
+          "text": "What is the primary focus of this passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "To prove that Burke's theory of the sublime is superior to Kant's theory.",
+            "To explain the concept of the sublime and how two key philosophers understood it differently.",
+            "To argue that beautiful experiences are more important than sublime ones.",
+            "To demonstrate that 18th-century philosophy was primarily concerned with aesthetics.",
+            "To show that human reason is incapable of understanding natural phenomena."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p8",
+      "number": 8,
+      "title": "",
+      "text": "The legal principle of *habeas corpus*, Latin for \"that you have the body,\" is a fundamental bulwark against arbitrary detention. It is a recourse in law through which a person can report an unlawful detention or imprisonment to a court and request that the court order the custodian of the person, usually a prison official, to bring the prisoner to court to determine if the detention is lawful. The writ of *habeas corpus* is one of the most important instruments for safeguarding individual freedom against arbitrary state action. Its historical origins, tracing back to the Magna Carta of 1215 and solidified in English law by the Habeas Corpus Act of 1679, underscore a long-standing struggle to subordinate sovereign power to the rule of law. The suspension of this writ has often been a controversial feature of emergency powers enacted by governments during times of war or rebellion. Without it, a government could imprison individuals indefinitely without trial or justification. This makes its preservation a critical issue for any society that values civil liberties. The principle ensures that no one is held without a valid legal reason.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q8",
+          "number": "8",
+          "text": "What is the main theme of this passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The Magna Carta was the most important legal document in history.",
+            "Emergency powers are necessary for governments during wartime.",
+            "Habeas corpus is a crucial legal protection against unlawful detention that has deep historical roots.",
+            "English law has had more influence than any other legal system.",
+            "Civil liberties are less important than national security concerns."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p9",
+      "number": 9,
+      "title": "",
+      "text": "Stochastic terrorism is a concept that describes a form of incitement to violence that is indirect and difficult to prosecute. It involves the use of mass media to demonize a particular group or individual in a way that is likely to inspire a violent act by a lone, often unstable, actor. The person making the inflammatory statements does not issue a direct command for violence. Instead, they use coded language and repeated vilification, creating a climate of hatred in which a violent act becomes a statistical probability, though the specific perpetrator and timing remain unpredictable. The term \"stochastic\" refers to this random, probabilistic nature. This indirect link provides the instigator with plausible deniability, as they can claim their words were misinterpreted. Prosecuting such cases is challenging because it requires proving a direct causal link between the speech and the subsequent act of violence. This phenomenon poses a significant threat to democratic societies by eroding public discourse and endangering targeted communities.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q9",
+          "number": "9",
+          "text": "Which of the following best summarizes the key concept discussed in this passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Mass media should be completely regulated to prevent any form of violence.",
+            "Stochastic terrorism describes how indirect incitement can probabilistically lead to violence while providing perpetrators with deniability.",
+            "Direct commands for violence are more dangerous than indirect suggestions.",
+            "Democratic societies are inherently vulnerable to all forms of terrorism.",
+            "Legal systems are inadequate for dealing with modern forms of communication."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p10",
+      "number": 10,
+      "title": "",
+      "text": "The hermeneutic circle is a central concept in the theory of interpretation, particularly associated with philosophers like Heidegger and Gadamer. It describes the process of understanding a text, where one's comprehension of the parts is dependent on an understanding of the whole, and vice versa. An interpreter begins with a preliminary, often vague, conception of the text's overall meaning. This initial \"fore-understanding,\" which is shaped by the interpreter's own historical and cultural context, guides the interpretation of individual sentences and words. As the parts are analyzed, the initial understanding of the whole is revised and refined. This refined understanding of the whole, in turn, provides a new context for re-interpreting the parts. This back-and-forth movement is not a vicious circle of faulty logic but a dynamic and productive process of deepening comprehension. The goal is not to escape the circle but to enter into it correctly, engaging in a \"fusion of horizons\" between the interpreter and the text.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q10",
+          "number": "10",
+          "text": "What is the central idea of this passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The hermeneutic circle represents a logical fallacy that should be avoided in interpretation.",
+            "Heidegger and Gadamer disagreed fundamentally about the nature of textual interpretation.",
+            "Understanding a text involves a productive circular process between comprehending parts and the whole.",
+            "Cultural context has no role in the interpretation of texts.",
+            "The goal of interpretation is to achieve complete objectivity free from personal bias."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p11",
+      "number": 11,
+      "title": "",
+      "text": "The economic theory of comparative advantage, first articulated by David Ricardo, provides the foundational argument for free trade among nations. It posits that even if one country can produce all goods more efficiently than another, both countries can still benefit from trade. The key is not absolute advantage but comparative advantage, which refers to the ability to produce a good at a lower opportunity cost than another producer. A country should specialize in producing and exporting the goods for which it has the lowest opportunity cost, while importing goods that other countries can produce more cheaply in relative terms. This specialization leads to a more efficient allocation of global resources and an increase in total world output. For example, even if a skilled lawyer is also a faster typist than her assistant, it is in her interest to focus on legal work and hire the assistant for typing. The same logic applies to countries, maximizing collective economic well-being. This principle remains a cornerstone of international trade theory, despite ongoing debates about its real-world application and distributional effects.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q11",
+          "number": "11",
+          "text": "What is the main argument presented in this passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Free trade always benefits wealthy countries more than developing nations.",
+            "Countries should only trade goods they cannot produce domestically.",
+            "Comparative advantage theory demonstrates how mutual benefits from trade arise even when one party has absolute advantages.",
+            "David Ricardo's theories have been completely disproven by modern economics.",
+            "International trade is harmful to global economic development."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p12",
+      "number": 12,
+      "title": "",
+      "text": "In astrophysics, a gravitational lens is a distribution of matter, such as a galaxy cluster, that bends the light from a distant source as it travels towards an observer. This effect, predicted by Albert Einstein's general theory of relativity, occurs because the gravitational field of a massive object warps spacetime. Light rays passing near the object are deflected, much like an optical lens focuses light. Depending on the alignment of the source, the massive lensing object, and the observer, the light from the source may be distorted into arcs or even multiple separate images. One of the most famous examples is the Einstein Cross, where a single distant quasar appears as four distinct images around a foreground galaxy. Gravitational lensing is a powerful tool for astronomers. It allows them to study the distribution of dark matter, which does not emit light but whose gravitational effects are observable. It also enables the observation of extremely distant galaxies that would otherwise be too faint to see.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q12",
+          "number": "12",
+          "text": "Which of the following best captures the main purpose of this passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "To prove that Einstein's theory of relativity is incorrect.",
+            "To explain how gravitational lensing works and its applications in astronomy.",
+            "To argue that dark matter does not actually exist.",
+            "To demonstrate that optical lenses and gravitational lenses function identically.",
+            "To show that distant galaxies are impossible to observe without special equipment."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p13",
+      "number": 13,
+      "title": "",
+      "text": "The philosophical thought experiment known as the \"Ship of Theseus\" raises profound questions about identity and persistence over time. The paradox asks whether an object that has had all of its components replaced remains fundamentally the same object. In the classic formulation, the ship of the hero Theseus is preserved by the Athenians, who gradually replace its old, decaying planks with new ones. Eventually, no original plank remains, prompting the question of whether the restored ship is still the same Ship of Theseus. To complicate matters, imagine that someone collected all the old planks and reassembled them. Which of the two ships, the restored one or the reassembled one, is the true Ship of Theseus? There is no easy answer, and philosophers have proposed various criteria for identity, such as spatiotemporal continuity, component composition, or functional integrity. This puzzle challenges our intuitive notions of what it means for something, including ourselves, to persist through change. It highlights the complex relationship between an object and its constituent parts.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q13",
+          "number": "13",
+          "text": "What is the primary philosophical issue addressed in this passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Whether ancient Greek ships were built with superior craftsmanship.",
+            "The problem of determining identity and persistence when all components of an object are replaced.",
+            "Why the Athenians were particularly interested in preserving historical artifacts.",
+            "The superiority of functional integrity over other criteria for identity.",
+            "The impossibility of solving any philosophical paradoxes."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p14",
+      "number": 14,
+      "title": "",
+      "text": "The concept of \"memes,\" as introduced by Richard Dawkins in his 1976 book *The Selfish Gene*, proposes a cultural analogue to biological genes. A meme is defined as a unit of cultural transmission, or a unit of imitation and replication. Examples include tunes, ideas, catchphrases, clothing fashions, and architectural styles. Just as genes propagate themselves in the gene pool by leaping from body to body via sperm or eggs, so memes propagate themselves in the meme pool by leaping from brain to brain via a process that, in the broad sense, can be called imitation. Memes compete with one another for limited resources, such as attention and memory space. Successful memes are those that are easily remembered, communicated, and adopted by others. This theory provides a framework for understanding cultural evolution through principles of variation, selection, and retention. However, the analogy to genetics is not perfect, as cultural transmission is often intentional and transformative, unlike the high-fidelity replication of genes.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q14",
+          "number": "14",
+          "text": "What is the central concept explained in this passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Biological genes are superior to cultural memes in terms of transmission accuracy.",
+            "Richard Dawkins's *The Selfish Gene* is primarily about cultural evolution.",
+            "Memes represent a framework for understanding cultural transmission and evolution analogous to genetic processes.",
+            "Cultural transmission is identical to biological inheritance in all respects.",
+            "Competition between ideas always leads to the survival of the best concepts."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p15",
+      "number": 15,
+      "title": "",
+      "text": "The bystander effect is a social psychological phenomenon in which individuals are less likely to offer help to a victim when other people are present. The greater the number of bystanders, the less likely it is that any one of them will help. This diffusion of responsibility occurs because each individual feels that someone else will or should intervene. The ambiguity of the situation, where it might not be clear if assistance is genuinely needed, also contributes to inaction, as people are often hesitant to risk embarrassment by misinterpreting the situation. Classic experiments have shown that a lone individual is far more likely to report smoke pouring into a room than a group of three. The presence of others can create a model for inaction, as everyone looks to others for cues on how to behave. Overcoming the bystander effect requires recognizing the phenomenon and making a conscious decision to take personal responsibility. This principle has important implications for public safety and emergency response training.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q15",
+          "number": "15",
+          "text": "Which of the following best summarizes the main idea of this passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "People are naturally selfish and unwilling to help others in emergency situations.",
+            "Large groups are always more effective at responding to emergencies than individuals.",
+            "The presence of other people can paradoxically reduce the likelihood of helping behavior due to psychological factors.",
+            "Emergency response training is ineffective in real-world situations.",
+            "Ambiguous situations never require intervention from bystanders."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p16",
+      "number": 16,
+      "title": "",
+      "text": "The historical development of cartography reflects humanity's evolving understanding of the world and its place within it. Early maps were often symbolic and spiritual rather than geographically accurate, representing cosmological beliefs more than physical reality. The Greeks were among the first to apply scientific principles to mapmaking, using astronomy and geometry to estimate the Earth's circumference. It was during the Age of Discovery, however, that cartography underwent a revolution, driven by the need for precise navigational charts for long-distance sea voyages. The invention of the printing press allowed for the wider dissemination of maps, standardizing geographical knowledge. Mercator's projection, while distorting the size of landmasses near the poles, became invaluable for navigation because it preserved the angles of direction. In the modern era, satellite imagery and Geographic Information Systems (GIS) have enabled a level of accuracy and detail previously unimaginable. Each map, therefore, is not just a tool but a cultural artifact, encoding the knowledge, ambitions, and biases of its time.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q16",
+          "number": "16",
+          "text": "What is the overarching theme of this passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Ancient Greek maps were more accurate than medieval European maps.",
+            "The printing press was the most important invention in the history of cartography.",
+            "Cartography has evolved from symbolic representation to scientific precision, reflecting changing human understanding.",
+            "Satellite imagery has made all previous forms of mapmaking obsolete.",
+            "Maps are purely objective representations of geographical reality."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p17",
+      "number": 17,
+      "title": "",
+      "text": "The Sapir-Whorf hypothesis, in its strongest form, posits that the language one speaks determines the very nature of one's thoughts. This concept, known as linguistic determinism, suggests that individuals who speak different languages perceive and understand the world in fundamentally different ways. A weaker version, linguistic relativity, argues that language merely influences, rather than determines, thought and perception. For example, the claim that the Inuit have numerous words for snow, enabling them to perceive finer distinctions than an English speaker could, is often cited as evidence, though the factual basis of this specific claim is debated. Proponents argue that grammatical structures, such as the presence or absence of a future tense, can shape a speaker's orientation toward the future. Critics, however, point to the ease of translation between languages and the existence of universal human concepts as evidence against strong determinism. While the strong version of the hypothesis is now largely discredited, the weaker version continues to inspire research into the complex interplay between language, culture, and cognition. The debate highlights the profound question of how the tools we use to describe reality in turn shape it.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q17",
+          "number": "17",
+          "text": "What is the main focus of this passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "To prove that linguistic determinism is the correct theory of language and thought.",
+            "To examine the debate over whether and how language influences human thought and perception.",
+            "To demonstrate that the Inuit language is superior to English in describing natural phenomena.",
+            "To argue that translation between languages is impossible.",
+            "To show that all human cognitive concepts are universal across cultures."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p18",
+      "number": 18,
+      "title": "",
+      "text": "In political philosophy, the concept of the \"veil of ignorance\" is a moral reasoning device proposed by John Rawls in his theory of justice. To devise fair principles for society, Rawls asks us to imagine ourselves in an \"original position\" behind this veil. Behind the veil, you know nothing of yourself and your natural abilities, or your position in society. You are ignorant of your race, sex, intelligence, wealth, and even your conception of what constitutes a good life, a condition which prevents you from designing principles that are biased in your own favor. From this impartial standpoint, Rawls argues, any rational person would choose two fundamental principles of justice. The first guarantees equal basic liberties for all citizens, and the second ensures that social and economic inequalities are arranged to be of the greatest benefit to the least-advantaged members of society. The veil of ignorance thus serves as a thought experiment to help us identify what a truly just society would look like. It forces a perspective of impartiality, which is the essence of fairness.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q18",
+          "number": "18",
+          "text": "What is the primary purpose of the \"veil of ignorance\" concept described in this passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "To prove that social inequalities are always unjust.",
+            "To demonstrate that rational decision-making is impossible.",
+            "To provide a method for determining fair principles of justice by removing personal bias.",
+            "To argue that individual characteristics are irrelevant to social organization.",
+            "To show that John Rawls's theory is superior to all other theories of justice."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p19",
+      "number": 19,
+      "title": "",
+      "text": "The Cambrian explosion refers to a relatively short evolutionary period, about 541 million years ago, during which most major animal phyla appear in the fossil record. This event marks a dramatic burst of evolutionary innovation that is unparalleled in Earth's history. Before this period, life was dominated by simple, single-celled or small multicellular organisms. The sudden appearance of a vast diversity of complex animal forms, including organisms with shells, exoskeletons, and appendages, has long been a source of scientific debate and inquiry. Several hypotheses have been proposed to explain this rapid diversification. These include environmental factors, such as an increase in atmospheric oxygen, as well as genetic factors, like the evolution of the Hox gene toolkit which controls body plan development. The development of predator-prey relationships may also have fueled an evolutionary arms race, accelerating the pace of change. Understanding the triggers of the Cambrian explosion is key to understanding the fundamental processes that shape the evolution of life.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q19",
+          "number": "19",
+          "text": "Which of the following best expresses the central theme of this passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The Cambrian explosion proves that evolution occurs gradually over long periods.",
+            "Simple organisms are superior to complex organisms in terms of survival.",
+            "The Cambrian explosion represents a unique period of rapid evolutionary diversification that scientists continue to study.",
+            "Environmental factors are the only important drivers of evolutionary change.",
+            "The fossil record provides no useful information about ancient life forms."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p20",
+      "number": 20,
+      "title": "",
+      "text": "The psychological state of \"flow,\" as described by Mihaly Csikszentmihalyi, is a condition of complete absorption in an activity. It is a state in which people are so involved in what they are doing that nothing else seems to matter. The experience is so enjoyable that people will continue to do it even at great cost, for the sheer sake of doing it. Characterized by intense focus, a merging of action and awareness, and a loss of self-consciousness, this optimal experience is often achieved when a person's skills are fully involved in overcoming a challenge that is just about manageable. If the challenge is too great, one becomes anxious; if it is too easy, one becomes bored. The state of flow, therefore, exists in the delicate balance between challenge and skill. This concept has been applied to various fields, including education, sports, and workplace design, to enhance performance and satisfaction. Achieving flow is considered a key component of a happy and creative life.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q20",
+          "number": "20",
+          "text": "What is the main concept explained in this passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "People should avoid challenging activities to maintain psychological well-being.",
+            "Flow represents a psychological state of optimal experience achieved through balanced challenge and skill.",
+            "Mihaly Csikszentmihalyi invented the concept of happiness.",
+            "Self-consciousness is essential for peak performance in any activity.",
+            "Workplace design has no impact on employee satisfaction or performance."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p21",
+      "number": 21,
+      "title": "",
+      "text": "The aesthetic movement of the late 19th century, with its mantra \"art for art's sake,\" represented a radical rebellion against the didactic and moralistic conventions of Victorianism. Proponents like Oscar Wilde argued that art should be judged on its own terms, by its beauty and formal qualities, rather than for any underlying moral or political message. This perspective posited art as autonomous, existing in a realm separate from the mundane concerns of everyday life. The primary duty of the artist, therefore, was not to instruct or improve society but to create beautiful objects, an endeavor that was considered its own justification. This philosophy led to an emphasis on sensuousness, symbolism, and stylistic refinement. The movement was often associated with decadence and a rejection of bourgeois norms, which caused considerable controversy. Despite its relatively short lifespan, Aestheticism had a profound influence on modernism, paving the way for abstract art and other movements that prioritized form over content. It fundamentally shifted the conversation about the purpose and value of art.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q21",
+          "number": "21",
+          "text": "Which of the following best captures the main idea of this passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Oscar Wilde was the most important figure in 19th-century literature.",
+            "The Aesthetic movement challenged Victorian values by advocating for art's independence from moral and social purposes.",
+            "Abstract art is superior to realistic representation in all circumstances.",
+            "19th-century society was completely opposed to all forms of artistic expression.",
+            "The Aesthetic movement had no lasting impact on subsequent artistic developments."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p22",
+      "number": 22,
+      "title": "",
+      "text": "The prisoner's dilemma is a canonical example of a game analyzed in game theory that shows why two completely rational individuals might not cooperate, even if it appears that it is in their best interests to do so. In the scenario, two accomplices are arrested and held in separate cells, unable to communicate. The prosecutors lack sufficient evidence to convict them on the principal charge but have enough to convict both on a lesser charge. Each prisoner is offered a deal: betray the other and go free, but only if the other remains silent, a choice that carries significant risk. If both betray each other, they each serve a moderate sentence. If both remain silent, they both serve a minimal sentence on the lesser charge. The dilemma arises because, from an individual's perspective, betrayal is the dominant strategy regardless of what the other does. The outcome, however, is that both prisoners betray each other and end up with a worse result than if they had cooperated.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q22",
+          "number": "22",
+          "text": "What is the central lesson of the prisoner's dilemma described in this passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Cooperation is always the best strategy in any competitive situation.",
+            "Rational individual decision-making can lead to outcomes that are worse for all parties involved.",
+            "Game theory has no applications to real-world scenarios.",
+            "Communication between parties always prevents suboptimal outcomes.",
+            "Legal systems are designed to encourage cooperation between criminals."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p23",
+      "number": 23,
+      "title": "",
+      "text": "Chaos theory is a branch of mathematics focusing on the behavior of dynamical systems that are highly sensitive to initial conditions. This sensitivity is popularly referred to as the butterfly effect. The name stems from the idea that the flap of a butterfly's wings in Brazil could, in theory, set off a tornado in Texas. While the direct causality is metaphorical, the underlying principle is that in complex, non-linear systems, minuscule changes in the starting point can lead to vastly different outcomes, making long-term prediction impossible. This stands in stark contrast to the deterministic universe envisioned by Newtonian physics, where the future state of a system can be perfectly calculated given complete knowledge of its present state. Chaos is not randomness; chaotic systems are deterministic, but their behavior is fundamentally unpredictable in practice. This theory has found applications in numerous fields, including meteorology, economics, and biology, to model phenomena that were previously intractable. It reveals a universe where order and unpredictability are deeply intertwined.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q23",
+          "number": "23",
+          "text": "What is the primary message of this passage about chaos theory?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Chaos theory proves that the universe is completely random and unpredictable.",
+            "Newtonian physics provides a complete and accurate description of all natural phenomena.",
+            "Complex systems can be deterministic yet unpredictable due to sensitivity to initial conditions.",
+            "The butterfly effect means that butterflies can actually cause tornadoes.",
+            "Mathematical models are useless for understanding real-world phenomena."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p24",
+      "number": 24,
+      "title": "",
+      "text": "The concept of biopolitics, as elaborated by the philosopher Michel Foucault, refers to the way modern states regulate their populations by managing life processes such as birth, death, health, and sanitation. This form of power, which Foucault termed \"biopower,\" emerged in the 18th century and marked a shift from the older sovereign power that was primarily concerned with the right to take life (to kill). Biopower, in contrast, is focused on fostering and administering life. It operates not through overt force but through a vast array of institutions and knowledge systems, such as public health, demography, and insurance, which aim to optimize the vitality of the collective body of the population. The state becomes a manager of life, seeking to ensure a healthy, productive, and orderly populace. This control is often subtle and presented as beneficial, making it a particularly pervasive and effective form of governance. Foucault's analysis reveals how deeply political power is invested in the biological existence of human beings. It challenges us to critically examine practices that seem to be purely about well-being.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q24",
+          "number": "24",
+          "text": "What is the main argument presented in this passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Modern states are primarily concerned with military power and territorial control.",
+            "Michel Foucault advocated for the abolition of all forms of government.",
+            "Biopower represents a shift toward managing populations through life-sustaining rather than life-threatening means.",
+            "Public health systems are completely independent from political power structures.",
+            "The 18th century marked the decline of all forms of political authority."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p25",
+      "number": 25,
+      "title": "",
+      "text": "The placebo effect is a well-documented phenomenon where a patient experiences real therapeutic benefits from an inert substance or sham treatment, simply because they believe it is effective. This powerful intersection of mind and body challenges traditional models of medicine. The effect is not merely \"in the patient's head\"; it can trigger measurable physiological changes, such as the release of endorphins or alterations in brain activity. The mechanisms behind this effect are complex and not fully understood, involving a combination of psychological factors like expectation and conditioning, and neurobiological pathways that translate belief into physical change. For this reason, clinical trials for new drugs must include a placebo control group to distinguish the drug's specific pharmacological effects from the placebo effect. Understanding and harnessing this effect could open new avenues for treatment that leverage the body's own healing capabilities. It underscores the critical role of the patient's mindset and the therapeutic context in the healing process. The phenomenon demonstrates that perception can profoundly alter physical reality.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q25",
+          "number": "25",
+          "text": "Which of the following best summarizes the central point of this passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The placebo effect proves that all medical treatments are purely psychological.",
+            "Clinical trials are unnecessary for testing the effectiveness of new medications.",
+            "The placebo effect demonstrates the complex interaction between belief and physical healing processes.",
+            "Traditional medicine is completely inadequate for treating any medical conditions.",
+            "Patients should never be informed about the possibility of receiving placebo treatments."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p26",
+      "number": 26,
+      "title": "",
+      "text": "The Great Vowel Shift was a massive sound change affecting the long vowels of English during the 15th to 18th centuries. In this systematic shift, all the long vowels were raised, meaning the tongue was positioned higher in the mouth during their articulation. The highest long vowels, /iː/ (as in \"meet\") and /uː/ (as in \"boot\"), could not be raised further and instead became diphthongs. This profound phonetic transformation, the causes of which are still debated by historical linguists, is the primary reason why the spelling of English words often diverges so sharply from their pronunciation. For example, the word \"bite\" was originally pronounced with a vowel sound similar to the \"ee\" in \"meet,\" but the shift changed it to the diphthong we use today. The shift occurred after English spelling had become largely standardized, leading to the current orthographic inconsistencies. It is a key event that separates Middle English from Modern English. Understanding this shift is crucial for deciphering the history and structure of the English language.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q26",
+          "number": "26",
+          "text": "What is the main topic of this passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The superiority of Middle English pronunciation over Modern English.",
+            "A major historical sound change that explains inconsistencies in English spelling and pronunciation.",
+            "The role of standardized spelling in preventing language change.",
+            "Why English should adopt a completely phonetic spelling system.",
+            "The influence of foreign languages on English pronunciation patterns."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p27",
+      "number": 27,
+      "title": "",
+      "text": "The philosophical doctrine of Stoicism, which flourished in ancient Greece and Rome, offered a comprehensive system for achieving eudaimonia, or a state of human flourishing and tranquility. The Stoics taught that virtue is the only true good and that external things like health, wealth, and pleasure are indifferent, having no value in themselves. The key to a good life, they argued, lies in living in accordance with nature and reason. A central practice of Stoicism is the \"dichotomy of control,\" which involves distinguishing between what is within our power to change and what is not, and focusing our energy solely on the former. Our judgments, impulses, and attitudes are within our control, while our bodies, reputations, and the actions of others are not. By accepting what we cannot change with equanimity, we can achieve a state of inner peace, or *apatheia*, that is immune to the vicissitudes of fortune. This practical philosophy has seen a resurgence in modern times as a guide for cultivating resilience and mental fortitude. It provides a powerful framework for navigating life's challenges.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q27",
+          "number": "27",
+          "text": "Which of the following best expresses the core message of this passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Ancient Greek and Roman societies were superior to modern civilization.",
+            "Wealth and health are the most important factors in achieving happiness.",
+            "Stoicism offers a philosophical approach to well-being through accepting what we cannot control and focusing on what we can.",
+            "Emotions should be completely eliminated from human experience.",
+            "Modern psychology has rendered ancient philosophical systems obsolete."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p28",
+      "number": 28,
+      "title": "",
+      "text": "The uncanny, or \"das Unheimliche\" as theorized by Sigmund Freud, describes a peculiar kind of frightening experience that arises when something familiar suddenly becomes strange and unsettling. It is not about outright horror but about a subtle intellectual uncertainty that can be deeply disturbing. Freud analyzed this feeling, tracing it back to repressed infantile complexes and primitive beliefs that have been surmounted but are momentarily revived. He argued that the uncanny is that class of the frightening which leads back to what is known of old and long familiar, a process he illustrates with examples like the fear of doubles (doppelgängers), the return of the dead, and the idea of a live doll. These phenomena blur the line between imagination and reality, causing a unsettling feeling of cognitive dissonance. The experience occurs when a repressed memory or belief resurfaces, making the familiar seem alien. This concept has been highly influential in literary and film theory, used to analyze works that evoke a sense of eerie discomfort. It reveals the hidden anxieties that lie just beneath the surface of our conscious minds.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q28",
+          "number": "28",
+          "text": "What is the primary focus of this passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "To prove that Freud's psychological theories are completely accurate.",
+            "To explain the concept of the uncanny as a psychological phenomenon involving the disturbing return of the familiar.",
+            "To argue that horror literature is based entirely on childhood fears.",
+            "To demonstrate that literary theory is more important than psychology.",
+            "To show that repressed memories are always harmful to mental health."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p29",
+      "number": 29,
+      "title": "",
+      "text": "The concept of path dependence in economics and social sciences explains how past decisions or events can constrain later choices, even if the circumstances that shaped the original decision are no longer relevant. A classic example is the QWERTY keyboard layout. It was designed in the 19th century to prevent the mechanical keys of early typewriters from jamming, not for typing efficiency. Once this standard was established and people were trained on it, switching to a more efficient layout became prohibitively costly due to network effects and retraining expenses, locking in a suboptimal technology. This \"lock-in\" effect demonstrates that history matters; small, contingent events in the past can have large and persistent consequences. The sequence of events is often more important than the outcome's inherent superiority. Path dependence challenges the assumption that institutions and technologies always evolve toward the most efficient state. It shows that societies can get stuck on inefficient paths simply because of their history.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q29",
+          "number": "29",
+          "text": "What is the central concept illustrated by the QWERTY keyboard example?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Technological innovation always leads to optimal outcomes.",
+            "The QWERTY layout is the most efficient keyboard design ever created.",
+            "Historical decisions can lock societies into suboptimal systems regardless of better alternatives.",
+            "Economic efficiency is the primary driver of all technological adoption.",
+            "Network effects have no influence on technology adoption patterns."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p30",
+      "number": 30,
+      "title": "",
+      "text": "The theory of punctuated equilibrium, proposed by paleontologists Niles Eldredge and Stephen Jay Gould, offers a revision to the traditional Darwinian model of gradual evolution. The conventional view, known as phyletic gradualism, holds that evolutionary change occurs slowly and steadily over long periods. In contrast, punctuated equilibrium posits that most species exhibit long periods of \"stasis,\" where they change very little. These extended periods of stability are then \"punctuated\" by rare, rapid bursts of evolutionary change and speciation, often triggered by significant environmental shifts. According to this model, the fossil record's apparent gaps are not imperfections but a true representation of the evolutionary process. New species arise quickly in geological terms, often in small, isolated populations, which is why transitional fossils are scarce. This theory does not contradict Darwinism but offers a different perspective on its tempo and mode. It suggests that evolution's pace is not constant but variable, with long stretches of calm followed by brief, transformative storms.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q30",
+          "number": "30",
+          "text": "Which of the following best summarizes the main idea of this passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Punctuated equilibrium completely disproves Darwin's theory of evolution.",
+            "Fossil records are too incomplete to provide any useful information about evolution.",
+            "Evolution occurs through long periods of stability interrupted by rapid bursts of change rather than constant gradual change.",
+            "Environmental changes have no impact on evolutionary processes.",
+            "All species evolve at exactly the same rate throughout geological time."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p31",
+      "number": 31,
+      "title": "",
+      "text": "The philosophical problem of induction, most famously articulated by David Hume, questions the rational basis for our beliefs about the unobserved. We routinely infer that the future will resemble the past; for example, we believe the sun will rise tomorrow because it always has. Hume pointed out that this inference is not based on deductive reasoning, as it is not a logical contradiction for the future to be different. Nor can it be justified by experience, he argued, because to do so would be to assume the very principle we are trying to prove—that the past is a reliable guide to the future—which is a form of circular reasoning. This challenge strikes at the heart of the scientific method, which relies on generalizing from specific observations to form universal laws. Hume's conclusion was not that we should abandon inductive reasoning, but that its foundation is custom and habit rather than pure reason. The problem remains a central topic in epistemology and the philosophy of science. It forces us to confront the limits of human knowledge and justification.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q31",
+          "number": "31",
+          "text": "What is the primary philosophical issue addressed in this passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Whether David Hume was the greatest philosopher in history.",
+            "The difficulty of rationally justifying our belief that the future will resemble the past.",
+            "Why scientific methods are superior to all other forms of knowledge acquisition.",
+            "The proof that inductive reasoning should be completely abandoned.",
+            "The demonstration that deductive reasoning is always more reliable than inductive reasoning."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p32",
+      "number": 32,
+      "title": "",
+      "text": "The concept of cultural hegemony, developed by the Marxist philosopher Antonio Gramsci, offers a nuanced explanation for the persistence of capitalism in advanced Western societies. Gramsci sought to understand why the working-class revolutions predicted by Marx had not occurred. He argued that the ruling class maintains its dominance not primarily through force or coercion, but through the dissemination of its own values and beliefs, which become the \"common sense\" of society. This ideological control, which is exercised through institutions like the media, education system, and religious organizations, persuades the subordinate classes to accept the existing social order as natural and inevitable. Consequently, the oppressed consent to their own oppression, making a violent overthrow of the system unnecessary for the rulers. Gramsci's theory emphasizes the importance of a \"war of position\"—a long-term struggle to challenge and replace the dominant ideology with a counter-hegemony. This requires intellectuals to help articulate a new worldview for the working class.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q32",
+          "number": "32",
+          "text": "What is the main argument of this passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Antonio Gramsci completely rejected all of Karl Marx's economic theories.",
+            "Cultural hegemony explains how ruling classes maintain power through ideological control rather than force alone.",
+            "Working-class revolutions are impossible in any form of society.",
+            "Educational institutions have no role in shaping political consciousness.",
+            "Violent overthrow is the only effective method for social change."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p33",
+      "number": 33,
+      "title": "",
+      "text": "The psychological phenomenon of cognitive dissonance, first proposed by Leon Festinger, occurs when a person holds two or more contradictory beliefs, ideas, or values, or is confronted by new information that conflicts with existing beliefs. This internal inconsistency creates a state of mental discomfort. To reduce this discomfort, individuals are motivated to change one or more of the conflicting elements, a process that can lead to rationalization, denial, or a shift in attitude. For example, a person who smokes but knows it is unhealthy might either quit smoking, downplay the health risks, or convince themselves that the pleasure of smoking outweighs the risks. The drive to reduce dissonance is a powerful motivator of human behavior and thought. It explains why people often go to great lengths to justify their choices and commitments, even when faced with contrary evidence. Understanding this principle is crucial for fields like marketing, persuasion, and therapy.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q33",
+          "number": "33",
+          "text": "Which of the following best describes the main concept presented in this passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "People always make rational decisions based on complete information.",
+            "Cognitive dissonance describes the mental discomfort from conflicting beliefs and the motivation to resolve such conflicts.",
+            "Leon Festinger proved that human behavior is completely predictable.",
+            "Contradictory beliefs never cause any psychological stress in healthy individuals.",
+            "Marketing and persuasion techniques have no basis in psychological research."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p34",
+      "number": 34,
+      "title": "",
+      "text": "In the field of linguistics, Universal Grammar (UG) is a theory, most famously associated with Noam Chomsky, which posits that the ability to learn language is innate and hardwired into the human brain. Chomsky argued that the linguistic input children receive is too poor and fragmented to account for the rapidity and uniformity with which they acquire their native language. This is known as the \"poverty of the stimulus\" argument. Therefore, he proposed the existence of an underlying linguistic structure, a set of universal principles and parameters common to all human languages, that guides the language acquisition process. For example, all languages have nouns and verbs, and the \"head directionality\" parameter determines whether a language places heads before or after their complements (e.g., verb-object vs. object-verb). Children do not learn these principles; they are born with them. The task of the child is simply to learn the specific vocabulary and set the parameters for their particular language. While controversial, the theory of UG has profoundly shaped the direction of modern linguistics.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q34",
+          "number": "34",
+          "text": "What is the central claim of Universal Grammar theory described in this passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "All human languages are identical in structure and vocabulary.",
+            "Children learn language entirely through imitation and repetition.",
+            "Language acquisition is guided by innate universal principles common to all humans.",
+            "Noam Chomsky invented the concept of human language.",
+            "Linguistic input from parents is sufficient to explain language acquisition."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p35",
+      "number": 35,
+      "title": "",
+      "text": "The tragedy of the commons is an economic and social dilemma that describes a situation where individual users, acting independently according to their own self-interest, behave contrary to the common good of all users by depleting or spoiling a shared resource through their collective action. The concept was popularized by ecologist Garrett Hardin in a 1968 essay. He used the example of a pasture open to all local herders. Each herder, seeking to maximize their own gain, has an incentive to add more and more cattle to their herd, even though the cumulative effect of these individual rational decisions is the degradation and eventual destruction of the shared pasture. The logic is that the benefit of adding one more animal accrues to the individual herder, while the cost of overgrazing is shared by all. This dynamic applies to many modern environmental problems, such as overfishing, air pollution, and climate change. Solving the tragedy of the commons typically requires some form of regulation, privatization, or community-based management to align individual incentives with the collective good.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q35",
+          "number": "35",
+          "text": "What is the primary lesson illustrated by the tragedy of the commons?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Private ownership always leads to better resource management than shared ownership.",
+            "Individual rational behavior can collectively lead to outcomes that harm everyone's interests.",
+            "Environmental problems are impossible to solve through any form of intervention.",
+            "Garrett Hardin proved that all economic theories are fundamentally flawed.",
+            "Herders are naturally irresponsible stewards of land resources."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p36",
+      "number": 36,
+      "title": "",
+      "text": "The philosophical movement of existentialism, which gained prominence in the mid-20th century through thinkers like Jean-Paul Sartre and Albert Camus, is fundamentally concerned with the nature of human freedom and responsibility. A core tenet of existentialism is that \"existence precedes essence.\" This means that humans are born without a predetermined purpose or nature; they are thrown into the world as a \"blank slate.\" It is through their choices and actions that they create their own essence or identity, a radical freedom that is both exhilarating and terrifying. This freedom comes with the profound responsibility to live authentically, by making choices that are true to oneself rather than conforming to external pressures or societal norms. The feeling of anxiety or \"angst\" is seen as an inevitable consequence of recognizing this total freedom and responsibility. For existentialists, to flee from this responsibility by blaming circumstances or others is to live in \"bad faith.\" Ultimately, the movement champions the individual's struggle to create meaning in a meaningless, absurd world.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q36",
+          "number": "36",
+          "text": "Which of the following best captures the essence of existentialist philosophy described in this passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Humans are completely determined by their biological and social circumstances.",
+            "Jean-Paul Sartre and Albert Camus were primarily concerned with political revolution.",
+            "Humans create their own identity and meaning through free choices, which brings both liberation and responsibility.",
+            "Anxiety is a mental disorder that should be eliminated through medication.",
+            "Society should dictate all individual choices to ensure maximum happiness."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p37",
+      "number": 37,
+      "title": "",
+      "text": "The historical phenomenon known as the \"Columbian Exchange\" refers to the widespread transfer of plants, animals, culture, human populations, technology, diseases, and ideas between the Americas, West Africa, and the Old World in the 15th and 16th centuries. This exchange was a direct consequence of Christopher Columbus's voyages and the subsequent European colonization of the Americas. It was one of the most significant events in the history of world ecology, agriculture, and culture. The introduction of New World crops like potatoes, maize, and tomatoes to the Old World had a profound impact on its population growth and diet, while the transfer of Old World livestock like horses and cattle transformed American societies. However, the exchange was not entirely beneficial. The transmission of Old World diseases, such as smallpox and measles, to which Native American populations had no immunity, caused a catastrophic demographic collapse. This biological transfer had far more devastating consequences than any military conquest. The Columbian Exchange irrevocably connected the two hemispheres and created the modern world as we know it.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q37",
+          "number": "37",
+          "text": "What is the central theme of this passage about the Columbian Exchange?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Christopher Columbus was primarily motivated by scientific curiosity about new lands.",
+            "The Columbian Exchange represents a massive bidirectional transfer that fundamentally transformed both hemispheres.",
+            "European military conquests were the most significant aspect of American colonization.",
+            "Native American societies had no impact on European development.",
+            "The exchange of ideas was more important than the exchange of biological materials."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p38",
+      "number": 38,
+      "title": "",
+      "text": "The Baader-Meinhof phenomenon, also known as the frequency illusion, is a cognitive bias in which, after noticing something for the first time, there is a tendency to notice it more often, leading one to believe that it has an increased frequency of occurrence. This effect is a result of two psychological processes working together. The first is selective attention, where your brain, once it has a new word, thing, or idea in its awareness, is primed to notice it again. The second is confirmation bias, which is the tendency to interpret new evidence as confirmation of one's existing beliefs or theories, making each new sighting seem like further proof of the object's sudden ubiquity. You might learn a new word and then suddenly see it everywhere in books and articles. In reality, the frequency has not changed; only your ability to perceive it has. This illusion highlights the subjective nature of our perception and how our brains actively filter and interpret reality. It demonstrates that we don't just passively observe the world but actively construct our experience of it.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q38",
+          "number": "38",
+          "text": "What is the main point illustrated by the Baader-Meinhof phenomenon?",
+          "type": "reading-comprehension",
+          "choices": [
+            "New words and concepts actually do become more common after we first encounter them.",
+            "Our perception of frequency can be distorted by cognitive biases, making things seem more common than they actually are.",
+            "Selective attention is a harmful psychological process that should be eliminated.",
+            "The frequency of events in the world is constantly changing in unpredictable ways.",
+            "Human perception provides an accurate and objective view of reality."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p39",
+      "number": 39,
+      "title": "",
+      "text": "The concept of \"liquid modernity,\" coined by sociologist Zygmunt Bauman, describes the condition of constant mobility and change in contemporary society. Bauman argues that we have moved from a \"solid\" phase of modernity, characterized by stable structures like the nation-state, the traditional family, and long-term employment, to a \"liquid\" phase. In this new phase, social forms are no longer able to maintain their shape for long because they decompose and melt faster than the time it takes to cast them. The individual, freed from the traditional bonds and securities of the solid era, must now navigate a world of fleeting opportunities and transient relationships, a state that generates both unprecedented liberty and profound anxiety. This liquidity affects all aspects of life, from work and relationships to identity itself, which becomes a project of constant reinvention rather than a given. The primary imperative in liquid modernity is to remain flexible and adaptable, ready to change at a moment's notice. Bauman's theory provides a powerful lens for understanding the precariousness and uncertainty that define much of contemporary human experience.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q39",
+          "number": "39",
+          "text": "Which of the following best summarizes Bauman's concept of liquid modernity?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Contemporary society has returned to more traditional and stable social structures.",
+            "Modern society is characterized by constant change and instability, replacing previous stable structures.",
+            "Zygmunt Bauman believed that social change is impossible in modern times.",
+            "Traditional families and nation-states have become stronger in contemporary society.",
+            "Individual identity is now more fixed and determined than in previous historical periods."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "reading-intermediate-p40",
+      "number": 40,
+      "title": "",
+      "text": "The Dunning-Kruger effect is a cognitive bias whereby people with low ability at a task overestimate their ability. It is related to the metacognitive inability of the unskilled to recognize their own ineptitude. Conversely, highly skilled individuals may underestimate their relative competence, erroneously assuming that tasks which are easy for them are also easy for others. This cognitive bias, which was first described by social psychologists David Dunning and Justin Kruger, stems from the fact that the skills needed to produce a correct response are often the very same skills needed to recognize a correct response. Thus, incompetent individuals suffer a dual burden: not only do they reach erroneous conclusions and make unfortunate choices, but their incompetence robs them of the ability to realize it. Improving the skills of the participants, and thus increasing their metacognitive competence, helped them recognize the limitations of their own abilities. The effect underscores the importance of self-awareness and the difficulty of accurately assessing one's own knowledge and skills.",
+      "part": "1",
+      "questions": [
+        {
+          "id": "reading-intermediate-q40",
+          "number": "40",
+          "text": "What is the central insight of the Dunning-Kruger effect described in this passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Highly skilled people are always aware of their superior abilities.",
+            "People with low ability in a task often cannot recognize their own incompetence due to the same deficits that make them incompetent.",
+            "Self-assessment accuracy is unrelated to actual skill level in any domain.",
+            "David Dunning and Justin Kruger proved that all psychological research is unreliable.",
+            "Metacognitive skills have no relationship to task performance."
+          ]
+        }
+      ]
+    }
+  ]
+}

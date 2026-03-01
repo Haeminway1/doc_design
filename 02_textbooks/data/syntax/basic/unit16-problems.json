@@ -1,0 +1,131 @@
+{
+  "bookId": "syntax-basic-unit16",
+  "unit": 16,
+  "title": "관계대명사절 (형용사절)",
+  "part": "IV",
+  "week": 4,
+  "type": "sentence-analysis",
+  "instruction": "다음 문장에서 관계대명사절을 찾아 [ ]로 묶고, 우리말로 해석해 보세요.",
+  "problems": [
+    {
+      "id": "syntax-basic-unit16-1",
+      "number": 1,
+      "type": "sentence-analysis",
+      "stem": "The woman who works at the bank is my aunt.",
+      "answer": {
+        "analysis": "The woman [who works at the bank] is my aunt.",
+        "pattern": "",
+        "translation": "은행에서 일하는 그 여자는 나의 이모이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit16-2",
+      "number": 2,
+      "type": "sentence-analysis",
+      "stem": "I want to buy the jacket which I saw in the magazine.",
+      "answer": {
+        "analysis": "I want to buy the jacket [which I saw in the magazine].",
+        "pattern": "",
+        "translation": "나는 내가 잡지에서 봤던 그 재킷을 사고 싶",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit16-3",
+      "number": 3,
+      "type": "sentence-analysis",
+      "stem": "The man that you talked to is a famous actor.",
+      "answer": {
+        "analysis": "다. The man [that you talked to] is a famous actor.",
+        "pattern": "",
+        "translation": "네가 이야기했던 그 남자는 유명한 배우이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit16-4",
+      "number": 4,
+      "type": "sentence-analysis",
+      "stem": "This is the key that opens the front door.",
+      "answer": {
+        "analysis": "This is the key [that opens the front door].",
+        "pattern": "",
+        "translation": "이것은 현관문을 여는 열쇠이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit16-5",
+      "number": 5,
+      "type": "sentence-analysis",
+      "stem": "The food which my mom cooked was delicious.",
+      "answer": {
+        "analysis": "The food [which my mom cooked] was delicious.",
+        "pattern": "",
+        "translation": "우리 엄마가 요리했던 음식은 맛있었다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit16-6",
+      "number": 6,
+      "type": "sentence-analysis",
+      "stem": "I have a friend who can speak four languages.",
+      "answer": {
+        "analysis": "I have a friend [who can speak four languages].",
+        "pattern": "",
+        "translation": "나는 4개 국어를 할 수 있는 친구가 있다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit16-7",
+      "number": 7,
+      "type": "sentence-analysis",
+      "stem": "The email that you sent me didn't arrive.",
+      "answer": {
+        "analysis": "The email [that you sent me] didn't arrive.",
+        "pattern": "",
+        "translation": "네가 나에게 보냈던 이메일이 도착하지 않았다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit16-8",
+      "number": 8,
+      "type": "sentence-analysis",
+      "stem": "He told a story that wasn't true.",
+      "answer": {
+        "analysis": "He told a story [that wasn't true].",
+        "pattern": "",
+        "translation": "그는 사실이 아닌 이야기를 했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit16-9",
+      "number": 9,
+      "type": "sentence-analysis",
+      "stem": "The dog which is barking loudly belongs to my neighbor.",
+      "answer": {
+        "analysis": "The dog [which is barking loudly] belongs to my neighbor.",
+        "pattern": "",
+        "translation": "시끄럽게 짖고 있는 저 개는 내 이웃의 것",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit16-10",
+      "number": 10,
+      "type": "sentence-analysis",
+      "stem": "The people who live in this city are worried about air pollution.",
+      "answer": {
+        "analysis": "이다. The people [who live in this city] are worried about air pollution.",
+        "pattern": "",
+        "translation": "이 도시에 사는 사람들은 대기 오",
+        "notes": ""
+      }
+    }
+  ]
+}

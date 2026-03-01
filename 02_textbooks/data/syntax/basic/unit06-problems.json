@@ -1,0 +1,131 @@
+{
+  "bookId": "syntax-basic-unit06",
+  "unit": 6,
+  "title": "전치사구 걷어내기",
+  "part": "II",
+  "week": 2,
+  "type": "sentence-analysis",
+  "instruction": "다음 문장에서 전치사구를 모두 찾아 괄호로 묶고, 문장의 뼈대(S, V, O, C)를 분석한 후 해석해 보세요.",
+  "problems": [
+    {
+      "id": "syntax-basic-unit06-1",
+      "number": 1,
+      "type": "sentence-analysis",
+      "stem": "The cat is sleeping under the table.",
+      "answer": {
+        "analysis": "The cat(S) is sleeping(V) (under the table).",
+        "pattern": "",
+        "translation": "고양이가 (테이블 아래에서) 자고 있다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit06-2",
+      "number": 2,
+      "type": "sentence-analysis",
+      "stem": "I received a letter from my friend in Canada.",
+      "answer": {
+        "analysis": "I(S) received(V) a letter(O) (from my friend) (in Canada).",
+        "pattern": "",
+        "translation": "나는 (캐나다에 있는) 내 친구로부터 편지를 받았다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit06-3",
+      "number": 3,
+      "type": "sentence-analysis",
+      "stem": "The man in the blue shirt is my teacher.",
+      "answer": {
+        "analysis": "The man(S) (in the blue shirt) is(V) my teacher(C).",
+        "pattern": "",
+        "translation": "(파란 셔츠를 입은) 그 남자는 나의 선생님이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit06-4",
+      "number": 4,
+      "type": "sentence-analysis",
+      "stem": "She put the book on the shelf.",
+      "answer": {
+        "analysis": "She(S) put(V) the book(O) (on the shelf).",
+        "pattern": "",
+        "translation": "그녀는 그 책을 (선반 위에) 놓았다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit06-5",
+      "number": 5,
+      "type": "sentence-analysis",
+      "stem": "We talked for hours about our future.",
+      "answer": {
+        "analysis": "We(S) talked(V) (for hours) (about our future).",
+        "pattern": "",
+        "translation": "우리는 (몇 시간 동안) (우리의 미래에 대해) 이야기했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit06-6",
+      "number": 6,
+      "type": "sentence-analysis",
+      "stem": "The picture on the wall was painted by my sister.",
+      "answer": {
+        "analysis": "The picture(S) (on the wall) was painted(V) (by my sister).",
+        "pattern": "",
+        "translation": "(벽에 걸린) 그 그림은 나의 여동생에 의해 그려졌다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit06-7",
+      "number": 7,
+      "type": "sentence-analysis",
+      "stem": "He is the CEO of a large company.",
+      "answer": {
+        "analysis": "He(S) is(V) the CEO(C) (of a large company).",
+        "pattern": "",
+        "translation": "그는 (큰 회사의) CEO이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit06-8",
+      "number": 8,
+      "type": "sentence-analysis",
+      "stem": "I will meet you in front of the library at 3 p.m.",
+      "answer": {
+        "analysis": "I(S) will meet(V) you(O) (in front of the library) (at 3 p.m.).",
+        "pattern": "",
+        "translation": "나는 (오후 3시에) (도서관 앞에서) 너를 만날 것이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit06-9",
+      "number": 9,
+      "type": "sentence-analysis",
+      "stem": "The people in this town are very kind.",
+      "answer": {
+        "analysis": "The people(S) (in this town) are(V) very kind(C).",
+        "pattern": "",
+        "translation": "(이 마을의) 사람들은 매우 친절하다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit06-10",
+      "number": 10,
+      "type": "sentence-analysis",
+      "stem": "A cup of tea in the afternoon relaxes me.",
+      "answer": {
+        "analysis": "A cup(S) (of tea) (in the afternoon) relaxes(V) me(O).",
+        "pattern": "",
+        "translation": "(오후에 마시는) (차) 한 잔은 나를 편안하게 해준다. 문장을 다채롭게 만드는 '부사'의 역할 전치사구와 함께 문장을 꾸며주는 대표적인 수식어가 바로 부사(Adverb)입니다. 부사는 문장에서 동사, 형용 사, 다른 부사, 또는 문장 전체를 꾸며주며 의미를 더욱 풍부하게 만듭니다. 부사의 역할과 위치 동사 수식: He runs fast. (그는 빨리 달린다.) 형용사 수식: She is very kind. (그녀는 매우 친절하다.) 다른 부사 수식: He runs very fast. (그는 매우 빨리 달린다.) 문장 전체 수식:Luckily, I found my wallet. (운 좋게도, 나는 지갑을 찾았다.) 부사는 문장에서 필수 성분이 아니므로, 전치사구처럼 괄호로 묶어 걷어내면 문장 뼈대를 파악하기가 훨씬 쉬 워집니다. 어로 처리하세요! 예제",
+        "notes": ""
+      }
+    }
+  ]
+}

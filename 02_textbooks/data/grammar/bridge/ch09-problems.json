@@ -1,0 +1,806 @@
+{
+  "bookId": "grammar-bridge-ch09",
+  "chapter": "ch09",
+  "title": "형용사와 부사",
+  "problems": [
+    {
+      "id": "grammar-bridge-ch09-401",
+      "number": 401,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 밑줄 친 부분 중 어법상 틀린 것은?",
+      "choices": [
+        "Never before",
+        "had",
+        "witnessed",
+        "a groundbreaking",
+        "discoveries"
+      ],
+      "stem": "①<u>Never before</u> ②<u>had</u> the scientific community ③<u>witnessed</u> such ④<u>a groundbreaking</u> ⑤<u>discoveries</u>.",
+      "answer": 5,
+      "explanation": "'such a' 다음에는 셀 수 있는 단수 명사가 와야 합니다. 따라서 복수형 'discoveries'를 단수형 discovery로 고쳐야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-402",
+      "number": 402,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "the scientists did",
+        "did the scientists",
+        "the scientists could",
+        "could the scientists",
+        "the scientists were able to"
+      ],
+      "stem": "Only after conducting extensive research _______ publish their findings.",
+      "answer": 2,
+      "explanation": "'Only + 부사구(after...)'가 문장 맨 앞에 위치했으므로, 주절에서 주어와 동사가 의문문 어순으로 도치되어야 합니다. 따라서 did the scientists가 올바른 형태입니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-403",
+      "number": 403,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 강조 구문이 올바른 것은?",
+      "choices": [
+        "It was studying hard that led to his success.",
+        "It is during the exam that students feel nervous.",
+        "It was the professor that explained the theory clearly.",
+        "It is in the laboratory that experiments are conducted.",
+        "All answers are correct."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 5,
+      "explanation": "① 동명사구(주어), ② 부사구, ③ 명사(주어), ④ 부사구 등 다양한 문장 성분이 'It is/was ~ that' 구문을 통해 올바르게 강조되었습니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-404",
+      "number": 404,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾은 것은?",
+      "choices": [
+        "who",
+        "discovered",
+        "important",
+        "evidence",
+        "It was him"
+      ],
+      "stem": "It was <u>him</u> ①<u>who</u> ②<u>discovered</u> the ③<u>important</u> ④<u>evidence</u> for the ⑤<u>theory</u>.",
+      "answer": 5,
+      "explanation": "'It is ~ that' 강조 구문에서 강조되는 대상이 주어일 경우, 주격 대명사를 사용해야 합니다. 따라서 목적격 'him'을 주격 he로 고쳐 'It was he'가 되어야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-405",
+      "number": 405,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "it was",
+        "was it",
+        "that it was",
+        "was",
+        "it has been"
+      ],
+      "stem": "So profound _______ the impact of his research that it revolutionized the entire field.",
+      "answer": 4,
+      "explanation": "'So + 형용사/부사'가 문두로 나오면 주어와 동사가 도치됩니다. 주어는 'the impact of his research'이므로, 그 뒤에 동사 was가 와야 합니다. 'So profound was the impact...' 구문이 됩니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-406",
+      "number": 406,
+      "type": "error-identification",
+      "instruction": "다음 중 병렬 구조가 틀린 문장은?",
+      "choices": [
+        "The research requires analyzing data and writing reports.",
+        "She is known for her intelligence and being creative.",
+        "The project involves both theoretical study and practical application.",
+        "The students must read the material, understand the concepts, and apply them.",
+        "The professor emphasized the importance of accuracy and precision."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "병렬 구조 위반입니다. 'her intelligence'(명사구)와 'being creative'(동명사구)가 등위접속사 'and'로 연결되어 형태가 다릅니다. 'her intelligence and creativity'(명사+명사)로 수정해야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-407",
+      "number": 407,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장의 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "so did",
+        "neither did",
+        "nor did",
+        "either did",
+        "also did"
+      ],
+      "stem": "The control group showed no improvement, and _______ the experimental group.",
+      "answer": 2,
+      "explanation": "앞 문장이 부정문('no improvement')이므로, 이에 동의할 때는 neither 또는 nor를 사용합니다. 'neither + 조동사(did) + 주어'의 어순이 맞습니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-408",
+      "number": 408,
+      "type": "inversion",
+      "instruction": "다음 중 도치가 불필요한 문장은?",
+      "choices": [
+        "Never have I seen such a beautiful sunset.",
+        "Only you can solve this difficult problem.",
+        "Seldom does he make mistakes in his work.",
+        "Not only did she study hard, but she also helped others.",
+        "Little did we know about the consequences."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "'Only'가 문두에 나오더라도, 주어(you)를 직접 수식할 경우에는 도치가 발생하지 않습니다. 나머지 문장은 모두 부정어구가 문두에 위치하여 도치가 필요합니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-409",
+      "number": 409,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "they conducted",
+        "conducting",
+        "they were conducting",
+        "conducted",
+        "being conducted"
+      ],
+      "stem": "While _______ the experiment, the researchers discovered an unexpected result.",
+      "answer": 2,
+      "explanation": "부사절에서 주절의 주어(the researchers)와 동일한 주어 및 be동사가 생략될 수 있습니다. 'While (they were) conducting...'에서 'they were'가 생략된 형태입니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-410",
+      "number": 410,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾은 것은?",
+      "choices": [
+        "that",
+        "the theory",
+        "was correct",
+        "were",
+        "overwhelming"
+      ],
+      "stem": "The evidence ①<u>that</u> ②<u>the theory</u> ③<u>was correct</u> ④<u>were</u> ⑤<u>overwhelming</u>.",
+      "answer": 4,
+      "explanation": "이 문장의 주어는 단수인 'The evidence'입니다. 'that the theory was correct'는 주어를 설명하는 동격절입니다. 따라서 동사는 복수형 'were'가 아닌 단수형 was가 되어야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-411",
+      "number": 411,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 동격 that과 관계대명사 that을 올바르게 구분한 것은?",
+      "choices": [
+        "The fact that he discovered is important. (동격)",
+        "The theory that explains the phenomenon is complex. (관계대명사)",
+        "The news that the experiment succeeded spread quickly. (동격)",
+        "The book that contains the information is missing. (관계대명사)",
+        "All distinctions are correct."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 5,
+      "explanation": "동격 that 뒤에는 완전한 문장이 오고, 관계대명사 that 뒤에는 불완전한 문장이 옵니다. 모든 보기의 구분이 정확합니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-412",
+      "number": 412,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "did they analyze",
+        "they analyzed",
+        "they did analyze",
+        "analyzed they",
+        "they have analyzed"
+      ],
+      "stem": "Not only _______ the data thoroughly, but they also proposed a new methodology.",
+      "answer": 1,
+      "explanation": "부정어구 'Not only'가 문두에 위치했으므로, 첫 번째 절에서 주어와 동사가 도치되어야 합니다. 일반동사 'analyzed'이므로 did they analyze가 올바른 형태입니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-413",
+      "number": 413,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 밑줄 친 부분을 올바르게 고친 것은?",
+      "choices": [
+        "lie the secrets",
+        "lies the secret",
+        "lying the secrets",
+        "are lying the secrets",
+        "수정이 필요 없음"
+      ],
+      "stem": "Among the ancient manuscripts <u>lies the secrets</u> of forgotten civilizations.",
+      "answer": 1,
+      "explanation": "장소 부사구(Among...)가 문두에 와서 주어와 동사가 도치되었습니다. 주어는 복수인 'the secrets'이므로, 동사도 복수형인 lie가 되어야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-414",
+      "number": 414,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 강조 구문과 가주어-진주어 구문을 올바르게 구분한 것은?",
+      "choices": [
+        "It was during the meeting that the decision was made. (강조)",
+        "It is true that science requires patience. (가주어-진주어)",
+        "It was the professor who inspired the students. (강조)",
+        "It is important to verify the results. (가주어-진주어)",
+        "All distinctions are correct."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 5,
+      "explanation": "'It is/was...that/who...'을 생략했을 때 문장이 성립하면 강조 구문, 성립하지 않으면 가주어-진주어 구문입니다. 모든 보기의 구분이 정확합니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-415",
+      "number": 415,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "was",
+        "were",
+        "did",
+        "had",
+        "have"
+      ],
+      "stem": "The research methodology was innovative, and so _______ the conclusions.",
+      "answer": 2,
+      "explanation": "앞 문장의 긍정 내용에 동의하는 'So + V + S' 구문입니다. 주어인 'the conclusions'가 복수이므로, be동사도 복수형인 were를 사용해야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-416",
+      "number": 416,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장의 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "he was discouraged",
+        "discouraging",
+        "discouraged",
+        "being discouraged",
+        "he discouraged"
+      ],
+      "stem": "Though _______ by criticism, the scientist continued his research.",
+      "answer": 3,
+      "explanation": "양보의 부사절에서 주절의 주어와 동일한 주어(the scientist)와 be동사(was)가 생략된 형태입니다. 따라서 'Though (he was) discouraged...'가 됩니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-417",
+      "number": 417,
+      "type": "correct-usage",
+      "instruction": "다음 중 어법상 올바른 문장은?",
+      "choices": [
+        "The theory that the professor explained it was complex.",
+        "The belief that hard work pays off motivates students.",
+        "The hypothesis that we tested yesterday proved correct.",
+        "The assumption that underlies this approach is questionable.",
+        "All answers except ① are correct."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 5,
+      "explanation": "① 관계대명사절에서 선행사(The theory)를 받는 대명사 'it'을 중복해서 사용했으므로 틀렸습니다. ②, ③, ④는 각각 동격, 관계대명사, 관계대명사 구문이 올바르게 사용되었습니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-418",
+      "number": 418,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "strongly",
+        "indeed",
+        "really",
+        "certainly",
+        "빈칸 없음"
+      ],
+      "stem": "The professor did _______ emphasize the importance of accurate data collection.",
+      "answer": 5,
+      "explanation": "'did + 동사원형(emphasize)'은 그 자체로 '정말로 강조했다'는 의미를 가지는 동사 강조 구문입니다. 여기에 다른 강조 부사를 추가하면 의미가 중복되어 어색해집니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-419",
+      "number": 419,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾은 것은?",
+      "choices": [
+        "Hardly",
+        "had",
+        "begun",
+        "than",
+        "results"
+      ],
+      "stem": "①<u>Hardly</u> ②<u>had</u> the experiment ③<u>begun</u> ④<u>than</u> unexpected ⑤<u>results</u> appeared.",
+      "answer": 4,
+      "explanation": "'~하자마자 ...했다'는 의미의 구문은 'Hardly/Scarcely... when/before...' 또는 'No sooner... than...'입니다. 'Hardly'와 'than'은 함께 쓸 수 없습니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-420",
+      "number": 420,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 병렬 구조가 올바른 것은?",
+      "choices": [
+        "The study aims to identify problems and solving them effectively.",
+        "Research requires not only patience but also being persistent.",
+        "The scientist both analyzed the data and interpreted the results.",
+        "Students should read carefully, think critically, and to write clearly.",
+        "The project involves collecting data, analyzing results, and drawing conclusions."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 5,
+      "explanation": "동명사구 'collecting data', 'analyzing results', 'drawing conclusions'가 'and'로 올바르게 병렬 연결되었습니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-421",
+      "number": 421,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "a renowned physicist",
+        "who is a renowned physicist",
+        "being a renowned physicist",
+        "he is a renowned physicist",
+        "that is a renowned physicist"
+      ],
+      "stem": "Dr. Smith, _______, will deliver the keynote address.",
+      "answer": 1,
+      "explanation": "'Dr. Smith'를 부연 설명하는 동격 표현입니다. 명사구인 'a renowned physicist'가 가장 간결하고 적절합니다. (문제 수정: 436번과 중복)"
+    },
+    {
+      "id": "grammar-bridge-ch09-422",
+      "number": 422,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장의 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "correct",
+        "to be correct",
+        "correcting",
+        "corrected",
+        "correctly"
+      ],
+      "stem": "Were this hypothesis _______, the implications would be significant.",
+      "answer": 1,
+      "explanation": "가정법 과거에서 'If'가 생략되면 'Were + S + 보어/to R' 형태로 도치됩니다. 'If this hypothesis were correct'에서 'If'가 생략된 구문이므로 보어인 correct가 와야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-423",
+      "number": 423,
+      "type": "inversion",
+      "instruction": "다음 중 완전 도치가 올바른 것은?",
+      "choices": [
+        "In the garden grows beautiful flowers.",
+        "Down the hill it rolled quickly.",
+        "Here comes the professor with his students.",
+        "There sits the famous scientist at his desk.",
+        "All answers are correct."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 3,
+      "explanation": "'Here/There + V + S' 구문에서 주어(the professor)와 동사(comes)의 수가 일치합니다. ①은 주어가 복수(flowers)이므로 'grow', ②는 주어가 대명사(it)이므로 도치되지 않아야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-424",
+      "number": 424,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾은 것은?",
+      "choices": [
+        "Little",
+        "did",
+        "realized",
+        "the significance",
+        "the discovery"
+      ],
+      "stem": "①<u>Little</u> ②<u>did</u> we ③<u>realized</u> ④<u>the significance</u> of ⑤<u>the discovery</u>.",
+      "answer": 3,
+      "explanation": "부정어 도치 구문에서 조동사 'did'가 이미 과거 시제를 나타내므로, 뒤따르는 본동사는 원형인 realize가 되어야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-425",
+      "number": 425,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "others prefer",
+        "others",
+        "the others prefer",
+        "another prefers",
+        "the other prefer"
+      ],
+      "stem": "Some students prefer theoretical study; _______, practical application.",
+      "answer": 2,
+      "explanation": "세미콜론(;) 뒤에서 앞 문장의 동사구 'prefer'가 생략된 형태입니다. 막연한 다수 중 '다른 사람들'을 의미하므로 others가 맞습니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-426",
+      "number": 426,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 동사 강조가 올바른 것은?",
+      "choices": [
+        "She does studies very hard every day.",
+        "He did completed the project on time.",
+        "We do appreciate your help.",
+        "They does work efficiently.",
+        "I did went to the conference yesterday."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 3,
+      "explanation": "동사 강조는 'do/does/did + 동사원형'의 형태를 따릅니다. 'We do appreciate'는 올바른 형태입니다. 나머지는 동사원형 규칙을 위반했습니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-427",
+      "number": 427,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장의 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "which",
+        "that",
+        "what",
+        "where",
+        "how"
+      ],
+      "stem": "The premise _______ all scientific inquiry should be objective is widely accepted.",
+      "answer": 2,
+      "explanation": "추상명사 'premise'(전제)의 구체적인 내용을 설명하는 완전한 절이 뒤따르므로, 동격 접속사 that이 필요합니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-428",
+      "number": 428,
+      "type": "error-identification",
+      "instruction": "다음 중 생략 구문이 틀린 것은?",
+      "choices": [
+        "When in doubt, consult the manual.",
+        "She understands the theory better than he does.",
+        "You can participate if you want to.",
+        "While studying abroad, he learned many languages.",
+        "Although was difficult, the task was completed."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 5,
+      "explanation": "부사절에서 '주어+be동사'가 생략될 때, 주어만 생략할 수는 없습니다. 'Although (it was) difficult'가 되어야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-429",
+      "number": 429,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "did we understand",
+        "we understood",
+        "we did understand",
+        "understood we",
+        "we have understood"
+      ],
+      "stem": "Not until the experiment was completed _______ the significance of the results.",
+      "answer": 1,
+      "explanation": "'Not until + 부사절'이 문두에 위치하면, 주절에서 주어와 동사가 도치됩니다. 따라서 did we understand가 올바른 어순입니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-430",
+      "number": 430,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾은 것은?",
+      "choices": [
+        "both",
+        "analyzed",
+        "and",
+        "drew",
+        "conclusion"
+      ],
+      "stem": "The research team ①<u>both</u> ②<u>analyzed</u> the data ③<u>and</u> ④<u>drew</u> ⑤<u>conclusion</u> from it.",
+      "answer": 5,
+      "explanation": "'결론을 내리다'는 의미의 관용 표현은 'draw conclusions'로, 일반적으로 복수형을 사용합니다. 따라서 conclusions로 수정해야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-431",
+      "number": 431,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 'It is/was ~ that' 강조 구문에서 강조할 수 없는 것은?",
+      "choices": [
+        "주어 (subject)",
+        "목적어 (object)",
+        "부사구 (adverbial phrase)",
+        "동사 (verb)",
+        "보어 (complement)"
+      ],
+      "answer": 4,
+      "explanation": "'It is/was ~ that' 강조 구문은 주어, 목적어, 부사(구/절), 보어 등을 강조할 수 있지만, 동사는 직접 강조할 수 없습니다. 동사 강조는 'do/does/did'를 사용합니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-432",
+      "number": 432,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "planned",
+        "plan",
+        "planning",
+        "to plan",
+        "been planning"
+      ],
+      "stem": "Had the researchers _______ more carefully, they would have avoided the error.",
+      "answer": 1,
+      "explanation": "가정법 과거완료에서 'If'가 생략되면 'Had + S + p.p.' 형태로 도치됩니다. 따라서 과거분사인 planned가 와야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-433",
+      "number": 433,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장의 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "which",
+        "that",
+        "what",
+        "how",
+        "when"
+      ],
+      "stem": "The idea _______ creativity can be taught is gaining acceptance.",
+      "answer": 2,
+      "explanation": "추상명사 'idea'의 구체적인 내용을 설명하는 완전한 절이 뒤따르므로, 동격 접속사 that이 필요합니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-434",
+      "number": 434,
+      "type": "correct-usage",
+      "instruction": "다음 중 어법상 올바른 문장은?",
+      "choices": [
+        "On the table was laying several important documents.",
+        "In the corner of the room stands an ancient statue.",
+        "Under the bridge flows the river peacefully.",
+        "Through the forest runs several hiking trails.",
+        "Across the field were walking the students quietly."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "장소 부사구 도치에서 주어(an ancient statue)와 동사(stands)의 수가 일치합니다. ①, ④는 복수 주어이므로 복수 동사(grow, run)가 와야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-435",
+      "number": 435,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾은 것은?",
+      "choices": [
+        "Should",
+        "needed",
+        "assistance",
+        "do not hesitate",
+        "contact us"
+      ],
+      "stem": "①<u>Should</u> you ②<u>needed</u> any ③<u>assistance</u>, please ④<u>do not hesitate</u> to ⑤<u>contact us</u>.",
+      "answer": 2,
+      "explanation": "가정법 미래에서 'If'가 생략되어 도치될 경우, 'Should + S + 동사원형'의 어순을 따릅니다. 따라서 'needed'를 need로 고쳐야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-436",
+      "number": 436,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "the brilliant physicist",
+        "who was a brilliant physicist",
+        "a brilliant physicist",
+        "being a brilliant physicist",
+        "that was a brilliant physicist"
+      ],
+      "stem": "Einstein, _______, revolutionized our understanding of space and time.",
+      "answer": 3,
+      "explanation": "'Einstein'을 부연 설명하는 동격 표현으로, 명사구인 a brilliant physicist가 가장 간결하고 적절합니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-437",
+      "number": 437,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 병렬 구조가 올바른 것은?",
+      "choices": [
+        "The project requires both dedication and to work hard.",
+        "She is not only intelligent but also works creatively.",
+        "Students must read the material, understand it, and applying the concepts.",
+        "The research involves analyzing data and interpretation of results.",
+        "The study aims to identify problems and propose solutions."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 5,
+      "explanation": "to부정사 'to identify'와 '(to) propose'가 병렬 구조를 이루고 있습니다. 두 번째 to는 생략 가능합니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-438",
+      "number": 438,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "have we seen",
+        "we have seen",
+        "we saw",
+        "did we saw",
+        "we did see"
+      ],
+      "stem": "Rarely _______ such dedication to scientific research.",
+      "answer": 1,
+      "explanation": "부정부사 'Rarely'가 문두에 위치했으므로, 주어와 동사가 도치되어야 합니다. 문맥상 현재완료 시제가 적절하므로 have we seen이 맞습니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-439",
+      "number": 439,
+      "type": "error-identification",
+      "instruction": "다음 중 동격 that과 관계대명사 that의 구분이 틀린 것은?",
+      "choices": [
+        "The theory that Einstein proposed was revolutionary. (관계대명사)",
+        "The fact that water boils at 100°C is well-known. (동격)",
+        "The book that contains the information is missing. (관계대명사)",
+        "The belief that he was innocent proved wrong. (관계대명사)",
+        "The news that the project succeeded was exciting. (동격)"
+      ],
+      "choiceLayout": "single-column",
+      "answer": 4,
+      "explanation": "'that he was innocent'는 'belief'의 구체적인 내용을 설명하는 완전한 절이므로 동격절입니다. 관계대명사절로 잘못 구분되었습니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-440",
+      "number": 440,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "did",
+        "was",
+        "has",
+        "had",
+        "would"
+      ],
+      "stem": "The experiment was successful, and so _______ the follow-up study.",
+      "answer": 2,
+      "explanation": "앞 문장의 동사가 be동사 'was'이므로, 긍정 동의를 나타낼 때도 동일한 be동사를 사용합니다. 주어 'the follow-up study'가 단수이므로 was가 맞습니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-441",
+      "number": 441,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾은 것은?",
+      "choices": [
+        "Neither",
+        "did",
+        "nor",
+        "showed",
+        "significant"
+      ],
+      "stem": "①<u>Neither</u> ②<u>did</u> the control group ③<u>nor</u> the experimental group ④<u>showed</u> ⑤<u>significant</u> improvement.",
+      "answer": 2,
+      "explanation": "'Neither A nor B' 구문이 주어로 쓰일 때는 도치가 발생하지 않습니다. 따라서 조동사 'did'는 불필요합니다. 'Neither the control group nor the experimental group showed...'가 올바른 문장입니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-442",
+      "number": 442,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 생략이 올바른 것은?",
+      "choices": [
+        "If necessary, the experiment will be repeated.",
+        "Though difficult, the problem was solved eventually.",
+        "When completed, the report will be submitted.",
+        "While important, the detail was overlooked.",
+        "All ellipses are correct."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 5,
+      "explanation": "모든 문장에서 부사절의 '주어+be동사'가 올바르게 생략되었습니다. (If it is necessary, Though it was difficult 등)"
+    },
+    {
+      "id": "grammar-bridge-ch09-443",
+      "number": 443,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "should",
+        "would",
+        "could",
+        "might",
+        "will"
+      ],
+      "stem": "Under no circumstances _______ the confidential data be disclosed.",
+      "answer": 1,
+      "explanation": "'어떤 상황에서도 ~해서는 안 된다'는 강한 금지를 나타내는 부정어구 'Under no circumstances' 뒤에는 의무를 나타내는 조동사 should가 도치되는 것이 가장 자연스럽습니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-444",
+      "number": 444,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장의 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "which",
+        "that",
+        "what",
+        "whether",
+        "how"
+      ],
+      "stem": "The hypothesis _______ life exists on other planets remains unproven.",
+      "answer": 2,
+      "explanation": "추상명사 'hypothesis'(가설)의 구체적인 내용을 설명하는 완전한 절이 뒤따르므로, 동격 접속사 that이 필요합니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-445",
+      "number": 445,
+      "type": "inversion",
+      "instruction": "다음 중 도치 구문이 틀린 것은?",
+      "choices": [
+        "Away flew the bird into the blue sky.",
+        "Here come the students from the laboratory.",
+        "There goes the bell for the next class.",
+        "Up climbed the researchers to the mountain peak.",
+        "Out rushed the scientists from the building."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 2,
+      "explanation": "장소/방향 부사구 도치에서 주어(the students)가 복수이므로 동사도 복수형인 come이 되어야 합니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-446",
+      "number": 446,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "prove",
+        "proved",
+        "proving",
+        "to prove",
+        "proof"
+      ],
+      "stem": "The researchers did _______ that their methodology was sound.",
+      "answer": 1,
+      "explanation": "동사를 강조하는 'did' 뒤에는 반드시 동사원형이 와야 합니다. 따라서 prove가 맞습니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-447",
+      "number": 447,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾은 것은?",
+      "choices": [
+        "not until",
+        "the final experiment",
+        "that",
+        "realized",
+        "어법상 틀린 부분이 없음"
+      ],
+      "stem": "It was ①<u>not until</u> ②<u>the final experiment</u> ③<u>that</u> the researchers ④<u>realized</u> the ⑤<u>significance</u>.",
+      "answer": 5,
+      "explanation": "'It was not until A that B' 구문은 'A하고 나서야 비로소 B했다'는 의미의 올바른 강조 구문입니다. (문제 수정: ⑤가 정답)"
+    },
+    {
+      "id": "grammar-bridge-ch09-448",
+      "number": 448,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 병렬 구조에서 상관접속사가 올바르게 사용된 것은?",
+      "choices": [
+        "Either the hypothesis is correct, or it needs modification.",
+        "Both the data analysis and to interpret results are important.",
+        "Neither did the theory explain the phenomenon nor predict outcomes.",
+        "Not only the students but also teacher were impressed.",
+        "Whether studying theory or practical application, both are necessary."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 1,
+      "explanation": "'Either A or B' 구문에서 A와 B가 모두 완전한 절의 형태로 올바르게 병렬 연결되었습니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-449",
+      "number": 449,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장의 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": [
+        "which",
+        "that",
+        "what",
+        "how",
+        "why"
+      ],
+      "stem": "The conclusion _______ more research is needed was unanimously accepted.",
+      "answer": 2,
+      "explanation": "추상명사 'conclusion'(결론)의 구체적인 내용을 설명하는 완전한 절이 뒤따르므로, 동격 접속사 that이 필요합니다."
+    },
+    {
+      "id": "grammar-bridge-ch09-450",
+      "number": 450,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 특수구문이 모두 올바른 문장은?",
+      "choices": [
+        "Not only did the experiment succeed, but it also provided new insights.",
+        "So important was the discovery that it changed scientific thinking.",
+        "The scientist, a Nobel Prize winner, presented groundbreaking research.",
+        "Were the conditions different, the results would have varied.",
+        "All sentences are grammatically correct."
+      ],
+      "choiceLayout": "single-column",
+      "answer": 5,
+      "explanation": "① 부정어 도치, ② 보어 도치, ③ 동격, ④ 가정법 도치 등 모든 문장에서 특수구문이 문법적으로 올바르게 사용되었습니다."
+    }
+  ]
+}

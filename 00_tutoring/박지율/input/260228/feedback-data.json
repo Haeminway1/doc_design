@@ -1,0 +1,233 @@
+{
+  "student": "박지율",
+  "date": "260228",
+  "subject": "문법",
+  "textbook": "Vera's Flavor 문법 연습 + 2019년 6월 고3 모의고사",
+  "range": "Q18(문법), Q30(어휘), Q32(독해)",
+  "summary": {
+    "totalQ": 4,
+    "wrongQ": 3,
+    "correctRate": "25%",
+    "goodPoints": "Q21 함축 의미 추론 문제를 정확히 맞추며 지문의 핵심 논지(활동 vs 결과)를 파악하는 능력을 보여줌. 동명사 관용표현을 별도 노트로 정리하는 등 자기주도적 학습 태도가 돋보임.",
+    "badPoints": "to부정사와 동명사의 용법 차이를 구분하지 못하고, 어휘 문제에서 문법적 관점만 확인하여 단어의 의미 파악을 놓침. 독해 빈칸추론에서 키워드 매칭에 의존하여 지문의 논리 구조 파악이 부족함.",
+    "priority": "동명사 vs to부정사 용법 체화 → 어휘 의미 중심 판단 습관 → 독해 빈칸추론 논리 구조 분석",
+    "weakAreas": [
+      { "area": "동명사 vs to부정사", "count": 1, "severity": "high", "note": "미래 지향 명사(dream) 뒤 보어를 동명사로 잘못 씀" },
+      { "area": "어휘 의미 파악", "count": 1, "severity": "high", "note": "forbid 의미를 몰라 문맥 판단에 실패" },
+      { "area": "독해 논리 구조", "count": 1, "severity": "mid", "note": "빈칸 단서(In other words) 활용이 부족함" }
+    ]
+  },
+  "wrongAnswers": [
+    {
+      "q": 18,
+      "selected": "becoming (동명사)",
+      "correct": "to be (to부정사)",
+      "type": "동명사 vs to부정사 (주관식)",
+      "question": "다음은 미나에 대한 정보를 나타낸 표이다. 표에 나온 표현을 활용하여 문장을 완성하시오. (1) Mina's dream is ___.",
+      "explanation": "<div class=\"concept-box\"><h4>핵심 개념: 주격 보어 — 동명사 vs to부정사</h4><p>주어가 <strong>dream, goal, plan, wish, hope, aim</strong> 등 <em>미래 지향적</em> 명사일 때, 보어로 <strong>to부정사</strong>를 씁니다.</p><ul><li><strong>My dream is to be a doctor.</strong> (○ 자연스러움)</li><li><strong>My dream is being a doctor.</strong> (△ 비문은 아니지만 어색)</li></ul></div><div class=\"grammar-block\"><h4>판별법: 주어 명사의 성격을 확인하라</h4><table><thead><tr><th>주어 명사</th><th>성격</th><th>보어</th><th>예시</th></tr></thead><tbody><tr><td>dream, goal, plan, wish</td><td>미래 지향</td><td><strong>to부정사</strong></td><td>My goal is <strong>to finish</strong> by June.</td></tr><tr><td>hobby, job, habit</td><td>현재 반복</td><td><strong>동명사</strong></td><td>My hobby is <strong>collecting</strong> stamps.</td></tr></tbody></table></div><div class=\"tip-box\"><h4>기억법</h4><p><strong>dream = 꿈 = 아직 안 일어난 것 = 미래 → to부정사</strong></p><p>to부정사의 'to'는 \"~쪽으로 향하는\" 미래 방향성을 가집니다. 반면 동명사(-ing)는 \"이미 하고 있는\" 현재/과거 느낌입니다.</p></div><div class=\"answer-box\"><h4>정답</h4><p>Mina's dream is <strong>to be</strong> a fashion designer.</p><p>또는: Mina's dream is <strong>to become</strong> a fashion designer.</p></div><div class=\"warning-box\"><h4>오답: becoming a fashion designer</h4><p>동명사 'becoming'은 완전한 문법 오류는 아니지만, dream의 미래 지향적 성격과 맞지 않아 어색합니다. 시험에서는 <strong>to부정사가 정답</strong>으로 인정됩니다.</p></div>",
+      "studentAnalysis": {
+        "whyChosen": "동명사와 to부정사 모두 명사 역할을 하므로, 'dream is' 뒤에 동명사(becoming)를 자연스럽게 사용함. to부정사의 '미래 지향' 뉘앙스를 인지하지 못한 상태.",
+        "errorPattern": "동명사/to부정사 무차별 사용 — 두 형태의 의미 차이(미래 vs 현재)를 구분하지 않음",
+        "focusPoint": "주어 명사의 성격(dream, goal = 미래 → to부정사 / hobby, job = 현재 → 동명사)을 먼저 파악하는 습관을 들이세요."
+      }
+    },
+    {
+      "q": 30,
+      "selected": "⑤",
+      "correct": "③",
+      "type": "문맥상 어휘",
+      "passage": "Sometimes the awareness that one is distrusted can provide the necessary incentive for self-reflection. An employee who ① realizes she isn't being trusted by her co-workers with shared responsibilities at work ② might, upon reflection, identify areas where she has consistently let others down or failed to follow through on previous commitments. Others' distrust of her might then ③ forbid her to perform her share of the duties in a way that ④ makes her more worthy of their trust. But distrust of one who is ⑤ sincere in her efforts to be a trustworthy and dependable person can be disorienting and might cause her to doubt her own perceptions and to distrust herself. Consider, for instance, a teenager whose parents are suspicious and distrustful when she goes out at night, even if she has been forthright about her plans and is not breaking any agreed-upon rules, her identity as a respectable moral subject is undermined by a pervasive parental attitude that expects deceit and betrayal.",
+      "question": "다음 글의 밑줄 친 부분 중, 문맥상 낱말의 쓰임이 적절하지 않은 것은?",
+      "choices": [
+        "realizes",
+        "might",
+        "forbid",
+        "makes",
+        "sincere"
+      ],
+      "explanation": "<div class=\"concept-box\"><h4>한줄 요약</h4><p>불신(distrust)이 자기반성의 동기가 되어 <strong>긍정적</strong>으로 작용할 수 있지만, 진심으로 노력하는 사람에 대한 불신은 자아를 <strong>흔들 수</strong> 있다.</p></div><div class=\"grammar-block\" style=\"text-align: justify;\"><h4>전체 해석</h4><p>때때로 자신이 신뢰받지 못하고 있다는 인식은 자기반성에 필요한 동기를 제공할 수 있다. 직장에서 공동 책임을 가진 동료들로부터 신뢰받지 못하고 있음을 ① <u>인식하는(realizes)</u> 직원은, 숙고해 보면, 자신이 지속적으로 다른 사람들을 실망시키거나 이전의 약속을 이행하지 못한 영역을 ② <u>~할 수도 있다(might)</u> 확인하게 된다. 다른 사람들의 불신은 그 후 그녀가 자신의 몫의 의무를 그들의 신뢰에 더 합당하게 수행하도록 ③ <u>강제할(force ← forbid는 오류)</u> 수 있다. 그러나 신뢰할 만하고 의지할 수 있는 사람이 되려는 노력에 ⑤ <u>진심인(sincere)</u> 사람에 대한 불신은 혼란스럽게 할 수 있으며, 그녀로 하여금 자신의 인식을 의심하고 스스로를 불신하게 만들 수 있다.</p></div><div class=\"tip-box\"><h4>핵심 키워드</h4><table><thead><tr><th>키워드</th><th>의미</th><th>방향</th></tr></thead><tbody><tr><td>distrust / distrusted</td><td>불신</td><td>부정</td></tr><tr><td>incentive for self-reflection</td><td>자기반성의 동기</td><td>긍정 전환</td></tr><tr><td>let others down</td><td>실망시키다</td><td>부정</td></tr><tr><td>more worthy of their trust</td><td>신뢰에 더 합당한</td><td>긍정</td></tr><tr><td>disorienting</td><td>혼란스럽게 하는</td><td>부정</td></tr></tbody></table></div><div class=\"tip-box\"><h4>구조 및 방향성</h4><table><thead><tr><th>구간</th><th>기능</th><th>방향</th></tr></thead><tbody><tr><td>1~2문장: 불신 → 자기반성 동기</td><td>주제 제시</td><td>POSITIVE ↗</td></tr><tr><td>3문장: 불신 → 더 열심히 수행하도록</td><td>구체화</td><td>POSITIVE ↗ (③이 여기서 부적절)</td></tr><tr><td>But 이하: 진심인 사람에 대한 불신</td><td>대조/반전</td><td>NEGATIVE ↘</td></tr></tbody></table></div><div class=\"answer-box\"><h4>정답: ③ forbid → force</h4><p><strong>forbid</strong>: ~를 금지하다 (= prohibit, ban)</p><p><strong>force</strong>: ~를 강제하다 (= compel, make)</p><p>문맥: \"다른 사람의 불신이 그녀로 하여금 의무를 더 잘 수행하도록 [강제하다]\" → <strong>force</strong>가 맞음</p><p>\"금지하다(forbid)\"면 의무 수행을 못 하게 되므로 문맥과 정반대 의미</p></div><div class=\"warning-box\"><h4>오답 ⑤ sincere — 적절한 단어</h4><p><strong>sincere</strong>: 진심의, 진정성 있는</p><p>\"신뢰할 만한 사람이 되려는 노력에 진심인(sincere) 사람\" → 문맥상 완벽히 적절합니다.</p><p>sincere가 부적절해 보인 이유: 앞의 부정적 맥락(distrust, disorienting)에 이끌려 긍정 단어가 틀렸다고 오판</p></div>",
+      "studentAnalysis": {
+        "whyChosen": "forbid의 정확한 의미를 몰라서 ③을 판단하지 못했고, 문법적 관점(수일치, 시제)으로만 5개 선지를 검토하여 모두 이상 없다고 판단. 느낌상 ⑤ sincere가 부정적 맥락과 어울리지 않는다고 생각하여 선택.",
+        "errorPattern": "어휘 의미 무시 + 문법적 관점 편향 — 문맥상 어휘 문제에서 단어 뜻 대신 문법만 체크하는 실수",
+        "focusPoint": "이 유형은 '의미' 문제입니다. 밑줄 친 단어의 사전적 뜻을 먼저 떠올리고, 그 뜻이 문맥 흐름(긍정/부정)과 맞는지 확인하세요. 모르는 단어가 나오면 소거법보다 문맥 방향성으로 추론하세요."
+      }
+    },
+    {
+      "q": 32,
+      "selected": "⑤",
+      "correct": "①",
+      "type": "빈칸 추론",
+      "passage": "Through recent decades, academic archaeologists have been urged to conduct their research and excavations according to hypothesis-testing procedures. It has been argued that we should construct our general theories, deduce testable propositions and prove or disprove them against the sampled data. In fact, the application of this 'scientific method' often ran into difficulties. The data have a tendency to lead to unexpected questions, problems and issues. Thus, archaeologists claiming to follow hypothesis-testing procedures found themselves having to create a fiction. In practice, their work and theoretical conclusions partly developed _______________. In other words, they already knew the data when they decided upon an interpretation. But in presenting their work they rewrote the script, placing the theory first and claiming to have tested it against data which they discovered, as in an experiment under laboratory conditions.",
+      "question": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "choices": [
+        "from the data which they had discovered",
+        "from comparisons of data in other fields",
+        "to explore more sites for their future studies",
+        "by supposing possible theoretical frameworks",
+        "by observing the hypothesis-testing procedures"
+      ],
+      "explanation": "<div class=\"concept-box\"><h4>한줄 요약</h4><p>고고학자들은 가설 검증 절차를 따른다고 주장하지만, 실제로는 <strong>이미 발견한 데이터를 기반으로</strong> 결론을 내린 뒤 사후에 이론적 틀을 씌웠다.</p></div><div class=\"grammar-block\" style=\"text-align: justify;\"><h4>전체 해석</h4><p>최근 수십 년간, 학술 고고학자들은 가설 검증 절차에 따라 연구와 발굴을 수행하도록 촉구받아 왔다. 일반 이론을 구축하고, 검증 가능한 명제를 연역적으로 도출하며, 표본 데이터에 대해 이를 증명하거나 반증해야 한다고 주장되어 왔다. 사실, 이 '과학적 방법'의 적용은 종종 어려움에 부딪혔다. 데이터는 예상치 못한 질문, 문제, 쟁점으로 이어지는 경향이 있다. 따라서, 가설 검증 절차를 따른다고 주장하는 고고학자들은 허구를 만들어야 하는 자신을 발견했다. 실제로, 그들의 연구와 이론적 결론은 부분적으로 <strong>[이미 발견한 데이터로부터]</strong> 발전했다. 다시 말해, 그들은 해석을 결정할 때 이미 데이터를 알고 있었다. 그러나 연구를 발표할 때 그들은 각본을 다시 썼는데, 이론을 먼저 놓고 그것을 자신들이 발견한 데이터로 실험실 실험에서처럼 검증했다고 주장했다.</p></div><div class=\"tip-box\"><h4>핵심 키워드</h4><table><thead><tr><th>표현</th><th>의미</th><th>방향</th></tr></thead><tbody><tr><td>hypothesis-testing procedures</td><td>가설 검증 절차</td><td>이상(理想)</td></tr><tr><td>ran into difficulties</td><td>어려움에 봉착</td><td>현실(부정)</td></tr><tr><td>create a fiction</td><td>허구를 만들다</td><td>현실(부정)</td></tr><tr><td>already knew the data</td><td>이미 데이터를 알았다</td><td>핵심 근거</td></tr><tr><td>rewrote the script</td><td>각본을 다시 썼다</td><td>사후 포장</td></tr></tbody></table></div><div class=\"tip-box\"><h4>구조 및 방향성</h4><table><thead><tr><th>구간</th><th>기능</th><th>방향</th></tr></thead><tbody><tr><td>1~2문장: 가설 검증 따라야</td><td>일반적 주장 (이상)</td><td>POSITIVE</td></tr><tr><td>In fact ~ difficulties</td><td>현실 반전</td><td>NEGATIVE</td></tr><tr><td>Thus ~ create a fiction</td><td>결과: 허구 생성</td><td>NEGATIVE</td></tr><tr><td>In practice, [빈칸]</td><td>실제 상황 = 빈칸</td><td>핵심</td></tr><tr><td>In other words ~ already knew</td><td>빈칸 부연 설명</td><td>= 빈칸 해석 단서</td></tr><tr><td>But ~ rewrote the script</td><td>사후 포장 대조</td><td>NEGATIVE</td></tr></tbody></table><p><strong>빈칸 단서</strong>: \"In other words\" = 빈칸을 바꿔 말하면 → \"they already knew the data when they decided upon an interpretation\" → 빈칸 = \"이미 발견한 데이터에서 발전했다\"</p></div><div class=\"answer-box\"><h4>정답: ① from the data which they had discovered</h4><p>\"이미 발견한 데이터로부터\" → 바로 다음 문장 \"they already knew the data\"와 정확히 일치</p><p><strong>had discovered</strong>(과거완료) = 해석을 결정하기 <em>전에 이미</em> 데이터를 발견했다는 시간 순서 표현</p></div><div class=\"warning-box\"><h4>오답 ⑤: by observing the hypothesis-testing procedures</h4><p>\"가설 검증 절차를 관찰함으로써\" → 지문의 핵심은 고고학자들이 가설 검증 절차를 실제로는 <strong>따르지 않았다</strong>는 것입니다.</p><p>\"create a fiction(허구를 만들다)\"이라고 표현할 정도로 가설 검증은 허구적 포장이었습니다. ⑤는 지문의 주장과 정반대.</p></div>",
+      "studentAnalysis": {
+        "whyChosen": "지문에 반복 등장하는 'hypothesis-testing procedures'라는 키워드에 이끌려, 선지 ⑤에서 같은 표현을 발견하고 매칭함. 지문이 실제로는 이 절차를 '비판'하고 있다는 반전 구조를 놓침.",
+        "errorPattern": "키워드 매칭 오류 — 지문에 나온 핵심 표현을 선지에서 그대로 찾아 고르는 습관. 지문의 논조(긍정/부정/비판)를 확인하지 않음.",
+        "focusPoint": "'In other words', 'That is', 'In short' 같은 빈칸 해석 단서(paraphrase marker)를 먼저 찾으세요. 빈칸 바로 뒤 문장이 빈칸의 의미를 풀어 설명하는 경우가 매우 많습니다."
+      }
+    }
+  ],
+  "starredCorrect": [
+    {
+      "q": 21,
+      "selected": "⑤",
+      "note": "정답이지만 지문 분석에 시간이 많이 걸렸고 확신이 부족했던 문제. 'Garbage in, garbage out'의 함축 의미를 '활동 중심 프로세스의 비효율'로 정확히 파악했으나, 선지 ④(Activities drawn from false information produce failure)와 ⑤ 사이에서 고민한 흔적이 있음."
+    }
+  ],
+  "conceptQuestions": [
+    {
+      "title": "동명사 vs to부정사 판별법",
+      "explanation": "<div class=\"concept-box\"><h4>동명사(-ing) vs to부정사(to V) — 핵심 구분법</h4><p>영어에서 동명사와 to부정사는 모두 명사 역할을 하지만, <strong>의미 뉘앙스</strong>가 다릅니다.</p><ul><li><strong>to부정사</strong>: 미래 지향, 아직 하지 않은 것 (plan, hope, want, decide, wish, dream)</li><li><strong>동명사</strong>: 현재/과거 지향, 이미 하고 있거나 한 것 (enjoy, mind, avoid, finish, keep)</li></ul></div><div class=\"grammar-block\"><h4>동명사만 목적어로 취하는 동사 (mega feps)</h4><table><thead><tr><th>동사</th><th>의미</th><th>예문</th></tr></thead><tbody><tr><td>mind</td><td>꺼리다</td><td>Do you mind <strong>waiting</strong>?</td></tr><tr><td>enjoy</td><td>즐기다</td><td>I enjoy <strong>reading</strong>.</td></tr><tr><td>give up</td><td>포기하다</td><td>She gave up <strong>smoking</strong>.</td></tr><tr><td>avoid</td><td>피하다</td><td>He avoided <strong>answering</strong>.</td></tr><tr><td>finish</td><td>끝내다</td><td>I finished <strong>studying</strong>.</td></tr><tr><td>escape</td><td>벗어나다</td><td>He escaped <strong>being caught</strong>.</td></tr><tr><td>practice</td><td>연습하다</td><td>She practices <strong>playing</strong> piano.</td></tr><tr><td>suggest</td><td>제안하다</td><td>He suggested <strong>going</strong> out.</td></tr></tbody></table></div><div class=\"grammar-block\"><h4>to부정사만 목적어로 취하는 동사</h4><table><thead><tr><th>동사</th><th>의미</th><th>예문</th></tr></thead><tbody><tr><td>want</td><td>원하다</td><td>I want <strong>to go</strong>.</td></tr><tr><td>hope</td><td>바라다</td><td>She hopes <strong>to pass</strong>.</td></tr><tr><td>decide</td><td>결정하다</td><td>We decided <strong>to leave</strong>.</td></tr><tr><td>plan</td><td>계획하다</td><td>They plan <strong>to visit</strong>.</td></tr><tr><td>offer</td><td>제안하다</td><td>He offered <strong>to help</strong>.</td></tr><tr><td>agree</td><td>동의하다</td><td>She agreed <strong>to come</strong>.</td></tr><tr><td>expect</td><td>기대하다</td><td>I expect <strong>to win</strong>.</td></tr><tr><td>refuse</td><td>거절하다</td><td>He refused <strong>to pay</strong>.</td></tr></tbody></table></div><div class=\"grammar-block\"><h4>주격 보어: 주어 명사의 성격에 따라 결정</h4><table><thead><tr><th>주어 명사</th><th>성격</th><th>보어</th></tr></thead><tbody><tr><td>dream, goal, plan, wish, aim</td><td>미래 지향</td><td>to부정사</td></tr><tr><td>hobby, job, habit, task</td><td>현재 반복</td><td>동명사</td></tr></tbody></table></div><div class=\"grammar-block\"><h4>동명사 관용표현 (노트 정리 내용 복습)</h4><table><thead><tr><th>표현</th><th>의미</th></tr></thead><tbody><tr><td>be good/bad at Ving</td><td>~을 잘하다/못하다</td></tr><tr><td>be tired of Ving</td><td>~에 지치다</td></tr><tr><td>look forward to Ving</td><td>~을 기대하다</td></tr><tr><td>get used to Ving</td><td>~에 익숙해지다</td></tr><tr><td>be worth Ving</td><td>~할 가치가 있다</td></tr><tr><td>cannot help Ving</td><td>~하지 않을 수 없다</td></tr><tr><td>spend 시간 Ving</td><td>~하며 시간을 보내다</td></tr><tr><td>have trouble Ving</td><td>~하는 데 어려움을 겪다</td></tr><tr><td>It's no use Ving</td><td>~해봐야 소용없다</td></tr></tbody></table><p><strong>주의</strong>: look forward to, get used to, be used to의 <strong>to는 전치사</strong>이므로 뒤에 동명사(-ing)가 옵니다!</p></div>",
+      "examples": [
+        "My dream is to become a pilot. (dream = 미래 → to부정사)",
+        "Her hobby is collecting vintage records. (hobby = 현재 → 동명사)",
+        "I decided to study abroad. (decide + to V)",
+        "She enjoys swimming in the ocean. (enjoy + Ving)",
+        "He looks forward to meeting you. (look forward to + Ving)"
+      ],
+      "exampleSentences": [
+        "나의 목표는 올해 안에 토익 900점을 넘는 것이다. → My goal is to score over 900 on TOEIC this year.",
+        "그녀의 취미는 주말마다 등산하는 것이다. → Her hobby is hiking on weekends.",
+        "나는 혼자 여행하는 것을 즐긴다. → I enjoy traveling alone.",
+        "그들은 새 집으로 이사하기로 결정했다. → They decided to move to a new house.",
+        "나는 그를 다시 만나기를 기대한다. → I look forward to seeing him again."
+      ],
+      "confusionPoints": "<div class=\"warning-box\"><h4>헷갈리기 쉬운 포인트</h4><p><strong>1. to가 전치사인지 to부정사인지 구분!</strong></p><ul><li>look forward <strong>to</strong> Ving (전치사 to → 동명사)</li><li>want <strong>to</strong> V (to부정사 → 원형)</li></ul><p><strong>2. remember, forget, stop — 의미가 달라지는 동사</strong></p><ul><li>remember + Ving = (과거에) ~한 것을 기억하다</li><li>remember + to V = (미래에) ~할 것을 기억하다</li><li>stop + Ving = ~하는 것을 멈추다</li><li>stop + to V = ~하기 위해 멈추다</li></ul><p><strong>3. 주격 보어에서의 판단</strong></p><ul><li>주어가 dream, goal이면 → to부정사 (becoming ❌ → to become ✅)</li><li>주어가 hobby, job이면 → 동명사 (to collect ❌ → collecting ✅)</li></ul></div>",
+      "practiceProblems": [
+        {
+          "sentence": "My plan is ___ Europe next summer.",
+          "choices": ["① visit", "② visiting", "③ to visit", "④ visited"],
+          "answer": "③",
+          "explanation": "plan = 미래 계획 → to부정사. My plan is to visit."
+        },
+        {
+          "sentence": "Her hobby is ___ stamps from different countries.",
+          "choices": ["① collect", "② collecting", "③ to collect", "④ collected"],
+          "answer": "②",
+          "explanation": "hobby = 현재 반복 활동 → 동명사. Her hobby is collecting."
+        },
+        {
+          "sentence": "I enjoy ___ novels before bed.",
+          "choices": ["① read", "② to read", "③ reading", "④ to reading"],
+          "answer": "③",
+          "explanation": "enjoy + 동명사(-ing). I enjoy reading."
+        },
+        {
+          "sentence": "They decided ___ to a new city for work.",
+          "choices": ["① move", "② moving", "③ moved", "④ to move"],
+          "answer": "④",
+          "explanation": "decide + to부정사. They decided to move."
+        },
+        {
+          "sentence": "She avoided ___ the difficult question during the interview.",
+          "choices": ["① answer", "② to answer", "③ answering", "④ answered"],
+          "answer": "③",
+          "explanation": "avoid + 동명사(-ing). She avoided answering."
+        },
+        {
+          "sentence": "His goal is ___ a world-renowned scientist.",
+          "choices": ["① become", "② becoming", "③ to become", "④ became"],
+          "answer": "③",
+          "explanation": "goal = 미래 목표 → to부정사. His goal is to become."
+        },
+        {
+          "sentence": "I don't mind ___ for you at the café.",
+          "choices": ["① wait", "② to wait", "③ waited", "④ waiting"],
+          "answer": "④",
+          "explanation": "mind + 동명사(-ing). I don't mind waiting."
+        },
+        {
+          "sentence": "We hope ___ the project by next Friday.",
+          "choices": ["① finish", "② finishing", "③ to finish", "④ finished"],
+          "answer": "③",
+          "explanation": "hope + to부정사. We hope to finish."
+        },
+        {
+          "sentence": "She suggested ___ to the new Italian restaurant downtown.",
+          "choices": ["① go", "② going", "③ to go", "④ gone"],
+          "answer": "②",
+          "explanation": "suggest + 동명사(-ing). She suggested going."
+        },
+        {
+          "sentence": "My wish is ___ around the world someday.",
+          "choices": ["① travel", "② traveling", "③ to travel", "④ traveled"],
+          "answer": "③",
+          "explanation": "wish = 미래 소망 → to부정사. My wish is to travel."
+        },
+        {
+          "sentence": "He keeps ___ the same grammar mistake in every essay.",
+          "choices": ["① make", "② to make", "③ made", "④ making"],
+          "answer": "④",
+          "explanation": "keep + 동명사(-ing). He keeps making."
+        },
+        {
+          "sentence": "They agreed ___ us with the community project.",
+          "choices": ["① help", "② helping", "③ to help", "④ helped"],
+          "answer": "③",
+          "explanation": "agree + to부정사. They agreed to help."
+        },
+        {
+          "sentence": "I can't imagine ___ without my smartphone for a week.",
+          "choices": ["① live", "② to live", "③ lived", "④ living"],
+          "answer": "④",
+          "explanation": "imagine + 동명사(-ing). I can't imagine living."
+        },
+        {
+          "sentence": "Her job is ___ English to elementary school children.",
+          "choices": ["① teach", "② teaching", "③ to teach", "④ taught"],
+          "answer": "②",
+          "explanation": "job = 현재 직업 → 동명사. Her job is teaching."
+        },
+        {
+          "sentence": "I look forward to ___ you at the conference next month.",
+          "choices": ["① meet", "② to meet", "③ meeting", "④ met"],
+          "answer": "③",
+          "explanation": "look forward to + 동명사(-ing). to는 전치사이므로 뒤에 동명사가 옵니다."
+        },
+        {
+          "sentence": "She offered ___ me to the airport early in the morning.",
+          "choices": ["① drive", "② driving", "③ to drive", "④ driven"],
+          "answer": "③",
+          "explanation": "offer + to부정사. She offered to drive."
+        },
+        {
+          "sentence": "They considered ___ a new house in the suburbs.",
+          "choices": ["① buy", "② to buy", "③ bought", "④ buying"],
+          "answer": "④",
+          "explanation": "consider + 동명사(-ing). They considered buying."
+        },
+        {
+          "sentence": "I remember ___ this movie when I was a child.",
+          "choices": ["① watch", "② watching", "③ to watch", "④ watched"],
+          "answer": "②",
+          "explanation": "remember + 동명사 = 과거에 ~한 것을 기억하다. I remember watching."
+        },
+        {
+          "sentence": "Don't forget ___ the door before you leave.",
+          "choices": ["① lock", "② locking", "③ to lock", "④ locked"],
+          "answer": "③",
+          "explanation": "forget + to부정사 = 미래에 ~할 것을 잊지 마라. Don't forget to lock."
+        },
+        {
+          "sentence": "She is used to ___ up early for her morning jog.",
+          "choices": ["① get", "② to get", "③ getting", "④ got"],
+          "answer": "③",
+          "explanation": "be used to + 동명사(-ing) = ~에 익숙하다. to는 전치사입니다."
+        }
+      ]
+    }
+  ],
+  "grammarTopics": [
+    {
+      "title": "문맥상 어휘 적절성 판단법",
+      "content": "<div class=\"concept-box\"><h4>문맥상 어휘 문제 풀이 전략</h4><p>이 유형은 <strong>문법이 아닌 의미</strong>를 묻는 문제입니다. 문법적으로 모두 정상이므로, 단어의 <strong>사전적 의미</strong>와 <strong>문맥 방향</strong>을 기준으로 판단해야 합니다.</p></div><div class=\"grammar-block\"><h4>3단계 풀이법</h4><table><thead><tr><th>단계</th><th>행동</th><th>예시 (Q30)</th></tr></thead><tbody><tr><td>1단계</td><td>밑줄 친 단어의 뜻 확인</td><td>forbid = 금지하다 / force = 강제하다</td></tr><tr><td>2단계</td><td>해당 문장의 맥락 방향 파악 (긍정? 부정?)</td><td>불신 → 더 열심히 하게 만듦 = 긍정적 효과</td></tr><tr><td>3단계</td><td>단어 뜻 ↔ 맥락 방향 일치 여부 확인</td><td>forbid(금지) ≠ 긍정적 효과 → 부적절!</td></tr></tbody></table></div><div class=\"tip-box\"><h4>모르는 단어가 나왔을 때</h4><p>단어 뜻을 모르면 바로 넘기지 말고:</p><ol><li>해당 문장의 <strong>앞뒤 문장</strong>에서 방향성(긍정/부정) 파악</li><li>밑줄 단어 자리에 <strong>방향에 맞는 뜻</strong>을 넣어 보기</li><li>만약 방향이 맞으면 → 적절 (넘기기)</li><li>방향이 안 맞으면 → 부적절 후보!</li></ol></div><div class=\"warning-box\"><h4>흔한 실수</h4><p><strong>문법만 체크하는 실수</strong>: 이 유형에서 수일치, 시제, 태를 아무리 확인해도 답이 나오지 않습니다. 5개 선지 모두 문법적으로 정상이기 때문입니다.</p><p><strong>감으로 고르는 실수</strong>: \"뭔가 어색해 보여서\" 고르면 오답 확률이 높습니다. 반드시 단어 뜻 + 문맥 방향으로 근거를 잡으세요.</p></div>"
+    }
+  ]
+}

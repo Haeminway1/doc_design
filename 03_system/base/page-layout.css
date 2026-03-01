@@ -1,0 +1,258 @@
+/* =================================================================== */
+/* page-layout.css — A4 페이지 컨테이너 + 헤더/푸터                      */
+/* Vera's Document Studio                                               */
+/* =================================================================== */
+
+/* --- 디자인 토큰 --- */
+:root {
+    /* Neutral (전 산출물 공통) */
+    --color-white: #FFFFFF;
+    --color-bg-page: #FFFFFF;
+    --color-bg-screen: #E9ECF0;
+    --color-bg-subtle: #F7F8FA;
+    --color-bg-muted: #F1F3F5;
+
+    --color-text-primary: #1F2937;
+    --color-text-secondary: #4B5563;
+    --color-text-muted: #9CA3AF;
+
+    --color-border-default: #E5E7EB;
+    --color-border-strong: #D1D5DB;
+
+    /* Accent (템플릿에서 오버라이드) */
+    --color-accent-primary: #2563EB;
+    --color-accent-light: #EFF6FF;
+    --color-accent-dark: #1E3A8A;
+    --color-accent-secondary: #F59E0B;
+
+    /* Semantic */
+    --color-concept-bg: #F0F9FF;
+    --color-concept-border: #0EA5E9;
+    --color-example-bg: #F7FEE7;
+    --color-example-border: #22C55E;
+    --color-warning-bg: #FEF3C7;
+    --color-warning-border: #F59E0B;
+    --color-error-bg: #FEE2E2;
+    --color-error-border: #EF4444;
+
+    /* Typography */
+    --font-sans: 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    --font-eng: 'Inter', sans-serif;
+    --font-accent: 'Playfair Display', serif;
+    --font-serif: 'Noto Serif KR', serif;
+    --font-serif-eng: 'Merriweather', serif;
+
+    --text-xs: 7.5pt;
+    --text-sm: 8.5pt;
+    --text-base: 10pt;
+    --text-md: 10.5pt;
+    --text-lg: 12pt;
+    --text-xl: 14pt;
+    --text-2xl: 18pt;
+    --text-3xl: 24pt;
+
+    --leading-tight: 1.3;
+    --leading-normal: 1.5;
+    --leading-relaxed: 1.7;
+
+    /* Spacing */
+    --page-width: 210mm;
+    --page-height: 297mm;
+    --page-padding-y: 15mm;
+    --page-padding-x: 18mm;
+
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 12px;
+    --space-lg: 16px;
+    --space-xl: 24px;
+    --space-2xl: 32px;
+
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
+
+    /* Header / Footer */
+    --header-height: 8mm;
+    --footer-height: 6mm;
+    --header-font-size: 8.5pt;
+    --footer-font-size: 7.5pt;
+
+    /* Cover */
+    --cover-title-size: 36pt;
+    --cover-subtitle-size: 18pt;
+    --cover-brand-size: 14pt;
+
+    /* Passage (영문 지문) */
+    --passage-font-size: 10pt;
+    --passage-line-height: 1.6;
+
+    /* Choices (선택지) */
+    --choice-font-size: 9.5pt;
+    --choice-gap: 4px;
+
+    /* Highlight */
+    --highlight-key-color: #1E3A8A;
+    --highlight-bg-color: #FEF3C7;
+    --highlight-bg-text: #92400E;
+    --highlight-eng-color: #0EA5E9;
+}
+
+/* --- A4 페이지 컨테이너 --- */
+.page {
+    width: var(--page-width);
+    min-height: var(--page-height);
+    margin: 10mm auto;
+    padding: var(--page-padding-y) var(--page-padding-x);
+    background: var(--color-bg-page);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    page-break-after: always;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.page:last-child {
+    page-break-after: avoid;
+}
+
+/* --- 페이지 콘텐츠 영역 --- */
+.page-content {
+    flex-grow: 1;
+    overflow: visible;
+    font-size: var(--text-base);
+    line-height: var(--leading-normal);
+    color: var(--color-text-primary);
+}
+
+/* --- 컴팩트 디자인 (교재/문제집) --- */
+.page.compact-design {
+    padding: 12mm;
+}
+
+.page.compact-design .page-content {
+    font-size: var(--text-base);
+    line-height: var(--leading-normal);
+}
+
+/* --- 여유 디자인 (제안서/리포트) --- */
+.page.spacious-design {
+    padding: 20mm 18mm;
+}
+
+.page.spacious-design .page-content {
+    font-size: 12pt;
+    line-height: 1.6;
+}
+
+/* --- 헤더 & 푸터 --- */
+.page-header {
+    width: 100%;
+    flex-shrink: 0;
+    font-size: var(--header-font-size);
+    color: var(--color-text-muted);
+    font-family: var(--font-eng);
+}
+
+.page-header {
+    border-bottom: 1px solid var(--color-border-default);
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--color-accent-dark);
+    font-weight: 500;
+}
+
+.page-footer {
+    position: absolute;
+    bottom: var(--page-padding-y);
+    left: var(--page-padding-x);
+    right: var(--page-padding-x);
+    border-top: 1px solid var(--color-border-default);
+    padding-top: 6px;
+    text-align: center;
+    font-size: var(--footer-font-size);
+}
+
+/* 자동 페이지 번호 */
+.page-footer::after {
+    counter-increment: page;
+    content: counter(page);
+}
+
+/* 헤더/푸터 숨기기 */
+.no-header-footer { padding: 0; }
+.no-header-footer .page-header,
+.no-header-footer .page-footer { display: none; }
+
+.cover-page .page-footer::after,
+.part-intro-page .page-footer::after,
+.toc-page .page-header,
+.chapter-page .page-header { display: none; }
+
+.part-intro-page .page-header,
+.part-intro-page .page-footer { border: none; }
+
+/* --- 기본 타이포그래피 --- */
+h1 {
+    font-size: var(--text-3xl);
+    font-weight: 700;
+    color: var(--color-text-primary);
+    margin-bottom: 8mm;
+}
+
+h2 {
+    font-size: var(--text-2xl);
+    font-weight: 600;
+    color: var(--color-text-primary);
+    margin: 6mm 0 3mm 0;
+}
+
+h3 {
+    font-size: var(--text-xl);
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    margin: 5mm 0 2mm 0;
+}
+
+h4 {
+    font-size: var(--text-lg);
+    font-weight: 600;
+    color: var(--color-text-secondary);
+    margin: 4mm 0 2mm 0;
+}
+
+p {
+    margin-bottom: 3mm;
+    text-align: justify;
+}
+
+ul, ol {
+    margin-left: 5mm;
+    margin-bottom: 4mm;
+}
+
+li {
+    margin-bottom: 2mm;
+}
+
+table {
+    width: 100%;
+    margin: 4mm 0;
+    font-size: var(--text-base);
+}
+
+th, td {
+    border: 1px solid var(--color-border-default);
+    padding: 3mm;
+    text-align: left;
+    vertical-align: top;
+}
+
+th {
+    background-color: var(--color-bg-subtle);
+    font-weight: 600;
+    color: var(--color-text-primary);
+}

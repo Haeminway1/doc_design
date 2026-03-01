@@ -1,0 +1,131 @@
+{
+  "bookId": "syntax-basic-unit05",
+  "unit": 5,
+  "title": "1주차 총정리 (1~5형식)",
+  "part": "I",
+  "week": 1,
+  "type": "sentence-analysis",
+  "instruction": "다음 문장의 형식을 밝히고, 각 문장 성분(S, V, O, C, IO, DO, OC)을 표시한 후 해석하시오.",
+  "problems": [
+    {
+      "id": "syntax-basic-unit05-1",
+      "number": 1,
+      "type": "sentence-analysis",
+      "stem": "The birds are singing in the trees.",
+      "answer": {
+        "analysis": "The birds(S) are singing(V) (in the trees).",
+        "pattern": "1형식",
+        "translation": "새들이 나무에서 노래하고 있다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit05-2",
+      "number": 2,
+      "type": "sentence-analysis",
+      "stem": "This coffee smells wonderful.",
+      "answer": {
+        "analysis": "This coffee(S) smells(V) wonderful(C).",
+        "pattern": "2형식",
+        "translation": "이 커피는 멋진 향이 난다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit05-3",
+      "number": 3,
+      "type": "sentence-analysis",
+      "stem": "My friend sent me a postcard from Paris.",
+      "answer": {
+        "analysis": "My friend(S) sent(V) me(IO) a postcard(DO) (from Paris).",
+        "pattern": "4형식",
+        "translation": "내 친구가 파리에서 나에게 엽서를 보냈다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit05-4",
+      "number": 4,
+      "type": "sentence-analysis",
+      "stem": "We painted the fence white.",
+      "answer": {
+        "analysis": "We(S) painted(V) the fence(O) white(OC).",
+        "pattern": "5형식",
+        "translation": "우리는 그 울타리를 하얗게 칠했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit05-5",
+      "number": 5,
+      "type": "sentence-analysis",
+      "stem": "I don't understand the question.",
+      "answer": {
+        "analysis": "I(S) don't understand(V) the question(O).",
+        "pattern": "3형식",
+        "translation": "나는 그 질문을 이해하지 못한다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit05-6",
+      "number": 6,
+      "type": "sentence-analysis",
+      "stem": "The story seems true.",
+      "answer": {
+        "analysis": "The story(S) seems(V) true(C).",
+        "pattern": "2형식",
+        "translation": "그 이야기는 사실인 것 같다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit05-7",
+      "number": 7,
+      "type": "sentence-analysis",
+      "stem": "The manager offered him a new job.",
+      "answer": {
+        "analysis": "The manager(S) offered(V) him(IO) a new job(DO).",
+        "pattern": "4형식",
+        "translation": "매니저는 그에게 새로운 일자리를 제안했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit05-8",
+      "number": 8,
+      "type": "sentence-analysis",
+      "stem": "The sun rises in the east.",
+      "answer": {
+        "analysis": "The sun(S) rises(V) (in the east).",
+        "pattern": "1형식",
+        "translation": "해는 동쪽에서 뜬다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit05-9",
+      "number": 9,
+      "type": "sentence-analysis",
+      "stem": "His parents named him Alex.",
+      "answer": {
+        "analysis": "His parents(S) named(V) him(O) Alex(OC).",
+        "pattern": "5형식",
+        "translation": "그의 부모는 그의 이름을 알렉스라고 지었다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit05-10",
+      "number": 10,
+      "type": "sentence-analysis",
+      "stem": "The company built a new factory last year.",
+      "answer": {
+        "analysis": "The company(S) built(V) a new factory(O) (last year).",
+        "pattern": "3형식",
+        "translation": "그 회사는 작년에 새 공장을 지었다.",
+        "notes": ""
+      }
+    }
+  ]
+}

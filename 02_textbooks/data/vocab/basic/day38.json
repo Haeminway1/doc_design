@@ -1,0 +1,507 @@
+{
+  "bookId": "vocab-basic",
+  "day": 38,
+  "theme": "공간과 위치 (Space and Position)",
+  "words": [
+    {
+      "word": "spatial",
+      "pronunciation": "[spéiʃəl]",
+      "partOfSpeech": "a.",
+      "meaning": "공간의, 공간적인",
+      "example": {
+        "en": "Architects need good spatial awareness.",
+        "ko": "건축가는 좋은 공간 지각력이 필요하다."
+      }
+    },
+    {
+      "word": "dimensional",
+      "pronunciation": "[diménʃənl]",
+      "partOfSpeech": "a.",
+      "meaning": "차원의",
+      "example": {
+        "en": "A cube is a three-dimensional object.",
+        "ko": "정육면체는 3차원 물체이다."
+      }
+    },
+    {
+      "word": "coordinates",
+      "pronunciation": "[kouɔ́ːrdənits]",
+      "partOfSpeech": "n.",
+      "meaning": "좌표",
+      "example": {
+        "en": "The pilot entered the coordinates into the navigation system.",
+        "ko": "조종사는 항법 장치에 좌표를 입력했다."
+      }
+    },
+    {
+      "word": "proximity",
+      "pronunciation": "[prɑksíməti]",
+      "partOfSpeech": "n.",
+      "meaning": "근접, 가까움",
+      "example": {
+        "en": "The hotel's proximity to the airport makes it a popular choice.",
+        "ko": "공항과의 근접성 때문에 그 호텔은 인기 있는 선택이다."
+      }
+    },
+    {
+      "word": "vicinity",
+      "pronunciation": "[visínəti]",
+      "partOfSpeech": "n.",
+      "meaning": "부근, 인근",
+      "example": {
+        "en": "There are several good restaurants in the vicinity of the station.",
+        "ko": "역 부근에는 좋은 식당이 여러 곳 있다."
+      }
+    },
+    {
+      "word": "adjacent",
+      "pronunciation": "[ədʒéisnt]",
+      "partOfSpeech": "a.",
+      "meaning": "인접한, 가까운",
+      "example": {
+        "en": "We stayed in adjacent rooms at the hotel.",
+        "ko": "우리는 호텔의 인접한 방에 묵었다."
+      }
+    },
+    {
+      "word": "contiguous",
+      "pronunciation": "[kəntígjuəs]",
+      "partOfSpeech": "a.",
+      "meaning": "인접한, 접촉하는",
+      "example": {
+        "en": "The 48 contiguous states of the USA share borders.",
+        "ko": "미국의 인접한 48개 주는 국경을 공유한다."
+      }
+    },
+    {
+      "word": "remote",
+      "pronunciation": "[rimóut]",
+      "partOfSpeech": "a.",
+      "meaning": "외진, 먼",
+      "example": {
+        "en": "They live in a remote village in the mountains.",
+        "ko": "그들은 산속 외진 마을에 산다."
+      }
+    },
+    {
+      "word": "distant",
+      "pronunciation": "[dístənt]",
+      "partOfSpeech": "a.",
+      "meaning": "먼",
+      "example": {
+        "en": "We could see the distant mountains from our window.",
+        "ko": "우리는 창문에서 먼 산들을 볼 수 있었다."
+      }
+    },
+    {
+      "word": "peripheral",
+      "pronunciation": "[pərífərəl]",
+      "partOfSpeech": "a.",
+      "meaning": "주변의, 지엽적인",
+      "example": {
+        "en": "The peripheral areas of the city have less public transport.",
+        "ko": "도시의 주변 지역은 대중교통이 더 적다."
+      }
+    },
+    {
+      "word": "central",
+      "pronunciation": "[séntrəl]",
+      "partOfSpeech": "a.",
+      "meaning": "중심의, 중앙의",
+      "example": {
+        "en": "The central issue is the lack of funding.",
+        "ko": "핵심 문제는 자금 부족이다."
+      }
+    },
+    {
+      "word": "marginal",
+      "pronunciation": "[mάːrdʒənl]",
+      "partOfSpeech": "a.",
+      "meaning": "미미한, 중요하지 않은; 주변부의",
+      "example": {
+        "en": "There was only a marginal improvement in his condition.",
+        "ko": "그의 상태에는 미미한 개선만 있었다."
+      }
+    },
+    {
+      "word": "interior",
+      "pronunciation": "[intíəriər]",
+      "partOfSpeech": "n.\n       \n        a.",
+      "meaning": "내부\n       \n        내부의",
+      "example": {
+        "en": "The interior of the house was beautifully decorated.",
+        "ko": "그 집의 내부는 아름답게 장식되어 있었다."
+      }
+    },
+    {
+      "word": "exterior",
+      "pronunciation": "[ikstíəriər]",
+      "partOfSpeech": "n.\n       \n        a.",
+      "meaning": "외부\n       \n        외부의",
+      "example": {
+        "en": "The exterior of the building needs painting.",
+        "ko": "그 건물의 외부는 페인트칠이 필요하다."
+      }
+    },
+    {
+      "word": "superficial",
+      "pronunciation": "[sùːpərfíʃəl]",
+      "partOfSpeech": "a.",
+      "meaning": "표면의, 피상적인",
+      "example": {
+        "en": "He has only a superficial knowledge of the subject.",
+        "ko": "그는 그 주제에 대해 피상적인 지식만 가지고 있다."
+      }
+    },
+    {
+      "word": "profound",
+      "pronunciation": "[prəfáund]",
+      "partOfSpeech": "a.",
+      "meaning": "깊은, 심오한",
+      "example": {
+        "en": "Her speech had a profound impact on everyone.",
+        "ko": "그녀의 연설은 모든 사람에게 깊은 영향을 미쳤다."
+      }
+    },
+    {
+      "word": "shallow",
+      "pronunciation": "[ʃǽlou]",
+      "partOfSpeech": "a.",
+      "meaning": "얕은",
+      "example": {
+        "en": "The children were playing in the shallow end of the pool.",
+        "ko": "아이들은 수영장의 얕은 쪽에서 놀고 있었다."
+      }
+    },
+    {
+      "word": "deep",
+      "pronunciation": "[diːp]",
+      "partOfSpeech": "a.",
+      "meaning": "깊은",
+      "example": {
+        "en": "The ocean is very deep in this area.",
+        "ko": "이 지역의 바다는 매우 깊다."
+      }
+    },
+    {
+      "word": "elevated",
+      "pronunciation": "[éləvèitid]",
+      "partOfSpeech": "a.",
+      "meaning": "높은, 고상한",
+      "example": {
+        "en": "The house is in an elevated position overlooking the sea.",
+        "ko": "그 집은 바다가 내려다보이는 높은 위치에 있다."
+      }
+    },
+    {
+      "word": "horizontal",
+      "pronunciation": "[hɔ̀ːrəzάntl]",
+      "partOfSpeech": "a.",
+      "meaning": "수평의",
+      "example": {
+        "en": "Draw a horizontal line across the page.",
+        "ko": "페이지를 가로지르는 수평선을 그리세요."
+      }
+    },
+    {
+      "word": "vertical",
+      "pronunciation": "[və́ːrtikəl]",
+      "partOfSpeech": "a.",
+      "meaning": "수직의",
+      "example": {
+        "en": "The cliff has a steep vertical drop.",
+        "ko": "그 절벽은 가파른 수직 낙차를 가지고 있다."
+      }
+    },
+    {
+      "word": "diagonal",
+      "pronunciation": "[daiǽgənl]",
+      "partOfSpeech": "a.",
+      "meaning": "대각선의",
+      "example": {
+        "en": "The path runs on a diagonal across the park.",
+        "ko": "그 길은 공원을 가로지르는 대각선으로 나 있다."
+      }
+    },
+    {
+      "word": "perpendicular",
+      "pronunciation": "[pə̀ːrpəndíkjulər]",
+      "partOfSpeech": "a.",
+      "meaning": "수직의",
+      "example": {
+        "en": "The wall is perpendicular to the floor.",
+        "ko": "벽은 바닥과 수직이다."
+      }
+    },
+    {
+      "word": "intersect",
+      "pronunciation": "[ìntərsékt]",
+      "partOfSpeech": "v.",
+      "meaning": "교차하다",
+      "example": {
+        "en": "The two lines intersect at a right angle.",
+        "ko": "두 선은 직각으로 교차한다."
+      }
+    },
+    {
+      "word": "converge",
+      "pronunciation": "[kənvə́ːrdʒ]",
+      "partOfSpeech": "v.",
+      "meaning": "모이다, 수렴하다",
+      "example": {
+        "en": "The two rivers converge to form a larger one.",
+        "ko": "두 강은 모여서 더 큰 강을 형성한다."
+      }
+    },
+    {
+      "word": "symmetrical",
+      "pronunciation": "[simétrikəl]",
+      "partOfSpeech": "a.",
+      "meaning": "대칭적인",
+      "example": {
+        "en": "A butterfly's wings are symmetrical.",
+        "ko": "나비의 날개는 대칭적이다."
+      }
+    },
+    {
+      "word": "asymmetrical",
+      "pronunciation": "[èisəmétrikəl]",
+      "partOfSpeech": "a.",
+      "meaning": "비대칭적인",
+      "example": {
+        "en": "The artist is known for her asymmetrical designs.",
+        "ko": "그 예술가는 비대칭적인 디자인으로 유명하다."
+      }
+    },
+    {
+      "word": "proportional",
+      "pronunciation": "[prəpɔ́ːrʃənl]",
+      "partOfSpeech": "a.",
+      "meaning": "비례하는",
+      "example": {
+        "en": "The punishment should be proportional to the crime.",
+        "ko": "처벌은 범죄에 비례해야 한다."
+      }
+    },
+    {
+      "word": "disproportionate",
+      "pronunciation": "[dìsprəpɔ́ːrʃənət]",
+      "partOfSpeech": "a.",
+      "meaning": "불균형의",
+      "example": {
+        "en": "A disproportionate amount of time was spent on minor details.",
+        "ko": "사소한 세부 사항에 불균형적으로 많은 시간이 소요되었다."
+      }
+    },
+    {
+      "word": "circumference",
+      "pronunciation": "[sərkʌ́mfərəns]",
+      "partOfSpeech": "n.",
+      "meaning": "원주, 둘레",
+      "example": {
+        "en": "What is the circumference of the Earth?",
+        "ko": "지구의 둘레는 얼마인가?"
+      }
+    },
+    {
+      "word": "diameter",
+      "pronunciation": "[daiǽmətər]",
+      "partOfSpeech": "n.",
+      "meaning": "지름",
+      "example": {
+        "en": "The circle has a diameter of 10 centimeters.",
+        "ko": "그 원은 지름이 10센티미터이다."
+      }
+    },
+    {
+      "word": "radius",
+      "pronunciation": "[réidiəs]",
+      "partOfSpeech": "n.",
+      "meaning": "반지름",
+      "example": {
+        "en": "The radius is half the diameter.",
+        "ko": "반지름은 지름의 절반이다."
+      }
+    },
+    {
+      "word": "perimeter",
+      "pronunciation": "[pərímətər]",
+      "partOfSpeech": "n.",
+      "meaning": "(도형의) 둘레",
+      "example": {
+        "en": "We walked the perimeter of the park.",
+        "ko": "우리는 공원 둘레를 걸었다."
+      }
+    },
+    {
+      "word": "area",
+      "pronunciation": "[έəriə]",
+      "partOfSpeech": "n.",
+      "meaning": "면적; 지역",
+      "example": {
+        "en": "The area of the rectangle is length times width.",
+        "ko": "직사각형의 면적은 가로 곱하기 세로이다."
+      }
+    },
+    {
+      "word": "capacity",
+      "pronunciation": "[kəpǽsəti]",
+      "partOfSpeech": "n.",
+      "meaning": "용량, 수용력",
+      "example": {
+        "en": "The stadium has a seating capacity of 50,000.",
+        "ko": "그 경기장은 5만 명의 좌석 수용력을 가지고 있다."
+      }
+    },
+    {
+      "word": "magnitude",
+      "pronunciation": "[mǽgnitjùːd]",
+      "partOfSpeech": "n.",
+      "meaning": "(엄청난) 규모, 중요도; (지진의) 강도",
+      "example": {
+        "en": "We did not realize the magnitude of the problem.",
+        "ko": "우리는 그 문제의 규모를 깨닫지 못했다."
+      }
+    },
+    {
+      "word": "orientation",
+      "pronunciation": "[ɔ̀ːrientéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "방향, 지향",
+      "example": {
+        "en": "The building has a southern orientation to maximize sunlight.",
+        "ko": "그 건물은 햇빛을 극대화하기 위해 남향으로 지어졌다."
+      }
+    },
+    {
+      "word": "direction",
+      "pronunciation": "[dirékʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "방향",
+      "example": {
+        "en": "Which direction is the station?",
+        "ko": "역은 어느 방향인가요?"
+      }
+    },
+    {
+      "word": "bearing",
+      "pronunciation": "[bέəri&eng;]",
+      "partOfSpeech": "n.",
+      "meaning": "방향, 방위",
+      "example": {
+        "en": "The ship changed its bearing and headed north.",
+        "ko": "그 배는 방향을 바꿔 북쪽으로 향했다."
+      }
+    },
+    {
+      "word": "cardinal",
+      "pronunciation": "[kάːrdənl]",
+      "partOfSpeech": "a.\n       \n        n.",
+      "meaning": "가장 중요한, 기본적인\n       \n        (pl.) 기본 방위 (동서남북)",
+      "example": {
+        "en": "The four cardinal points are North, South, East, and West.",
+        "ko": "네 가지 기본 방위는 동, 서, 남, 북이다."
+      }
+    },
+    {
+      "word": "compass",
+      "pronunciation": "[kʌ́mpəs]",
+      "partOfSpeech": "n.",
+      "meaning": "나침반",
+      "example": {
+        "en": "A compass is used for finding direction.",
+        "ko": "나침반은 방향을 찾는 데 사용된다."
+      }
+    },
+    {
+      "word": "navigate",
+      "pronunciation": "[nǽvəgèit]",
+      "partOfSpeech": "v.",
+      "meaning": "길을 찾다, 항해하다",
+      "example": {
+        "en": "He navigated the ship through the storm.",
+        "ko": "그는 폭풍 속에서 배를 항해했다."
+      }
+    },
+    {
+      "word": "chart",
+      "pronunciation": "[tʃɑːrt]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "해도, 지도; 도표\n       \n        지도를 만들다",
+      "example": {
+        "en": "The sailors used a chart to navigate the seas.",
+        "ko": "선원들은 바다를 항해하기 위해 해도를 사용했다."
+      }
+    },
+    {
+      "word": "survey",
+      "pronunciation": "[sərvéi]",
+      "partOfSpeech": "v.\n       \n        n.",
+      "meaning": "측량하다; 조사하다\n       \n        [sə́ːrvei] 측량; 조사",
+      "example": {
+        "en": "They are surveying the land for a new road.",
+        "ko": "그들은 새 도로를 위해 땅을 측량하고 있다."
+      }
+    },
+    {
+      "word": "territory",
+      "pronunciation": "[térətɔ̀ːri]",
+      "partOfSpeech": "n.",
+      "meaning": "영토, 지역",
+      "example": {
+        "en": "The lion marked its territory.",
+        "ko": "사자는 자신의 영역을 표시했다."
+      }
+    },
+    {
+      "word": "boundary",
+      "pronunciation": "[báundəri]",
+      "partOfSpeech": "n.",
+      "meaning": "경계(선)",
+      "example": {
+        "en": "The river forms the boundary between the two countries.",
+        "ko": "그 강은 두 나라 사이의 경계를 이룬다."
+      }
+    },
+    {
+      "word": "proximal",
+      "pronunciation": "[ˈprɑːksɪməl]",
+      "partOfSpeech": "adjective",
+      "meaning": "근접한, (신체 부위가) 중심부에 가까운",
+      "example": {
+        "en": "The proximal end of the bone connects to the shoulder joint.",
+        "ko": "뼈의 근위부는 어깨 관절과 연결된다."
+      }
+    },
+    {
+      "word": "equidistant",
+      "pronunciation": "[ˌiːkwɪˈdɪstənt]",
+      "partOfSpeech": "adjective",
+      "meaning": "등거리의, 같은 거리에 있는",
+      "example": {
+        "en": "The three satellites are equidistant from the Earth's surface.",
+        "ko": "세 위성은 지구 표면으로부터 같은 거리에 있다."
+      }
+    },
+    {
+      "word": "interstice",
+      "pronunciation": "[ɪnˈtɜːrstɪs]",
+      "partOfSpeech": "noun",
+      "meaning": "틈새, 간극, 공극",
+      "example": {
+        "en": "Water slowly seeped through the interstices between the rocks.",
+        "ko": "물이 천천히 바위 사이의 틈새로 스며들었다."
+      }
+    },
+    {
+      "word": "ubiquitous",
+      "pronunciation": "[juːˈbɪkwɪtəs]",
+      "partOfSpeech": "adjective",
+      "meaning": "어디에나 있는, 편재하는",
+      "example": {
+        "en": "Mobile phones have become ubiquitous in modern society.",
+        "ko": "휴대폰은 현대 사회에서 어디에나 있는 것이 되었다."
+      }
+    }
+  ]
+}

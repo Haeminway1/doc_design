@@ -1,0 +1,507 @@
+{
+  "bookId": "vocab-basic",
+  "day": 47,
+  "theme": "기억과 망각 (Memory and Forgetting)",
+  "words": [
+    {
+      "word": "amnesia",
+      "pronunciation": "[æmˈniːʒə]",
+      "partOfSpeech": "noun",
+      "meaning": "기억상실증, 건망증",
+      "example": {
+        "en": "After the accident, he suffered from temporary amnesia.",
+        "ko": "사고 후, 그는 일시적인 기억상실증을 앓았다."
+      }
+    },
+    {
+      "word": "reminisce",
+      "pronunciation": "[ˌremɪˈnɪs]",
+      "partOfSpeech": "verb",
+      "meaning": "추억에 잠기다, 회상하다",
+      "example": {
+        "en": "The elderly couple spent hours reminiscing about their youth.",
+        "ko": "노부부는 젊은 시절을 회상하며 수 시간을 보냈다."
+      }
+    },
+    {
+      "word": "mnemonic",
+      "pronunciation": "[nɪˈmɒnɪk]",
+      "partOfSpeech": "adjective/noun",
+      "meaning": "기억을 돕는; 기억술",
+      "example": {
+        "en": "Students use mnemonic devices to remember complex formulas.",
+        "ko": "학생들은 복잡한 공식을 기억하기 위해 기억술 장치를 사용한다."
+      }
+    },
+    {
+      "word": "obliterate",
+      "pronunciation": "[əˈblɪtəreɪt]",
+      "partOfSpeech": "verb",
+      "meaning": "(흔적을) 완전히 지우다, 없애다",
+      "example": {
+        "en": "Time had obliterated most of his childhood memories.",
+        "ko": "시간이 그의 어린 시절 기억들을 대부분 지워버렸다."
+      }
+    },
+    {
+      "word": "nostalgia",
+      "pronunciation": "[nɒˈstældʒə]",
+      "partOfSpeech": "noun",
+      "meaning": "향수, 옛날을 그리워함",
+      "example": {
+        "en": "The old photograph filled her with nostalgia for her college days.",
+        "ko": "그 오래된 사진은 그녀를 대학 시절에 대한 향수로 가득 채웠다."
+      }
+    },
+    {
+      "word": "memory",
+      "pronunciation": "/ˈmɛməri/",
+      "partOfSpeech": "n.",
+      "meaning": "기억, 기억력; 추억",
+      "example": {
+        "en": "Memory declines when sleep is restricted.",
+        "ko": "수면이 제한되면 기억력이 저하된다."
+      }
+    },
+    {
+      "word": "remember",
+      "pronunciation": "/rɪˈmɛmbər/",
+      "partOfSpeech": "v.",
+      "meaning": "기억하다, 기억해내다",
+      "example": {
+        "en": "I can’t remember where I put my keys after the lecture.",
+        "ko": "강의 후에 열쇠를 어디에 뒀는지 기억이 나지 않는다."
+      }
+    },
+    {
+      "word": "forgetting",
+      "pronunciation": "/fə(r)ˈɡɛtɪ&eng;/",
+      "partOfSpeech": "n.",
+      "meaning": "망각, 잊음",
+      "example": {
+        "en": "Rapid forgetting occurred without rehearsal.",
+        "ko": "반복 연습이 없자 빠른 망각이 일어났다."
+      }
+    },
+    {
+      "word": "recall",
+      "pronunciation": "/ˈriːkɔːl/",
+      "partOfSpeech": "n.",
+      "meaning": "회상, 상기",
+      "example": {
+        "en": "Free recall requires listing the words without prompts.",
+        "ko": "자유 회상은 단서 없이 단어들을 떠올려 나열해야 한다."
+      }
+    },
+    {
+      "word": "retrieval",
+      "pronunciation": "/rɪˈtriːvəl/",
+      "partOfSpeech": "n.",
+      "meaning": "회수, 복구; (정보의) 검색",
+      "example": {
+        "en": "Strong cues can speed retrieval from long-term memory.",
+        "ko": "강력한 단서는 장기기억에서의 인출을 빠르게 할 수 있다."
+      }
+    },
+    {
+      "word": "encoding",
+      "pronunciation": "/ɛnˈkoʊdɪ&eng;/",
+      "partOfSpeech": "n.",
+      "meaning": "부호화, 암호화",
+      "example": {
+        "en": "Deep semantic encoding improves later test scores.",
+        "ko": "의미를 깊이 있게 부호화하면 이후 시험 점수가 향상된다."
+      }
+    },
+    {
+      "word": "storage",
+      "pronunciation": "/ˈstɔːrɪdʒ/",
+      "partOfSpeech": "n.",
+      "meaning": "저장, 보관",
+      "example": {
+        "en": "Long-term storage depends on distributed cortical networks.",
+        "ko": "장기 저장은 분산된 대뇌 피질 네트워크에 의존한다."
+      }
+    },
+    {
+      "word": "consolidation",
+      "pronunciation": "/kənˌsɑːlɪˈdeɪʃən/",
+      "partOfSpeech": "n.",
+      "meaning": "통합, 강화",
+      "example": {
+        "en": "Sleep after learning promotes consolidation.",
+        "ko": "학습 후 수면은 기억 공고화를 촉진한다."
+      }
+    },
+    {
+      "word": "reconsolidation",
+      "pronunciation": "/ˌriːkənˌsɑːlɪˈdeɪʃən/",
+      "partOfSpeech": "n.",
+      "meaning": "재강화, 재통합",
+      "example": {
+        "en": "When a memory is reactivated, it undergoes reconsolidation and can be updated.",
+        "ko": "기억이 재활성화되면 재공고화 과정을 거치며 수정될 수 있다."
+      }
+    },
+    {
+      "word": "interference",
+      "pronunciation": "/ˌɪntərˈfɪrəns/",
+      "partOfSpeech": "n.",
+      "meaning": "방해, 간섭",
+      "example": {
+        "en": "Proactive interference made it hard to learn the new password.",
+        "ko": "선행 간섭 때문에 새 비밀번호를 배우기가 어려웠다."
+      }
+    },
+    {
+      "word": "suppression",
+      "pronunciation": "/səˈprɛʃən/",
+      "partOfSpeech": "n.",
+      "meaning": "억제, 억압, 진압",
+      "example": {
+        "en": "Through suppression, she tried not to think about the traumatic event.",
+        "ko": "억제를 통해 그녀는 그 충격적인 사건을 떠올리지 않으려 했다."
+      }
+    },
+    {
+      "word": "inhibition",
+      "pronunciation": "/ˌɪnhɪˈbɪʃən/",
+      "partOfSpeech": "n.",
+      "meaning": "억제, 금지",
+      "example": {
+        "en": "Inhibition helps prevent irrelevant memories from intruding during recall.",
+        "ko": "억제는 회상 중에 관련 없는 기억이 침입하는 것을 막아준다."
+      }
+    },
+    {
+      "word": "rehearsal",
+      "pronunciation": "/rɪˈhɜːrsəl/",
+      "partOfSpeech": "n.",
+      "meaning": "예행연습, 리허설",
+      "example": {
+        "en": "Maintenance rehearsal kept the phone number in mind for a few seconds.",
+        "ko": "유지 리허설 덕분에 그는 몇 초 동안 전화번호를 머릿속에 유지했다."
+      }
+    },
+    {
+      "word": "chunking",
+      "pronunciation": "/ˈtʃʌ&eng;kɪ&eng;/",
+      "partOfSpeech": "n.",
+      "meaning": "덩어리로 묶기",
+      "example": {
+        "en": "Chunking digits into dates made them easier to remember.",
+        "ko": "숫자를 날짜처럼 덩어리로 묶으니 더 쉽게 기억되었다."
+      }
+    },
+    {
+      "word": "cue",
+      "pronunciation": "/kjuː/",
+      "partOfSpeech": "n.",
+      "meaning": "신호, 단서",
+      "example": {
+        "en": "The smell of cinnamon served as a powerful retrieval cue.",
+        "ko": "계피 냄새가 강력한 인출 단서로 작용했다."
+      }
+    },
+    {
+      "word": "reminder",
+      "pronunciation": "/rɪˈmaɪndər/",
+      "partOfSpeech": "n.",
+      "meaning": "상기시키는 것, 알림",
+      "example": {
+        "en": "I set a phone reminder to review the vocabulary so I wouldn’t forget it after class.",
+        "ko": "수업 후 잊지 않도록 어휘를 복습하라고 휴대폰 알림을 설정했다."
+      }
+    },
+    {
+      "word": "trace",
+      "pronunciation": "/treɪs/",
+      "partOfSpeech": "n.",
+      "meaning": "자취, 흔적",
+      "example": {
+        "en": "After the long vacation, only a faint trace of the formula remained in his memory.",
+        "ko": "긴 방학 후에 그 공식은 그의 기억에 희미한 흔적만 남아 있었다."
+      }
+    },
+    {
+      "word": "flashbulb",
+      "pronunciation": "/ˈflæʃˌbʌlb/",
+      "partOfSpeech": "adj.",
+      "meaning": "섬광처럼 순간적이고 생생한",
+      "example": {
+        "en": "Many people have flashbulb memories of where they were when the news broke.",
+        "ko": "많은 사람들이 그 소식이 전해졌을 때 자신이 어디에 있었는지에 대한 선명한 섬광기억을 갖고 있다."
+      }
+    },
+    {
+      "word": "familiarity",
+      "pronunciation": "/fəˌmɪliˈærəti/",
+      "partOfSpeech": "n.",
+      "meaning": "친숙함, 익숙함",
+      "example": {
+        "en": "Familiarity with the material improves recognition even when recall fails.",
+        "ko": "자료에 대한 친숙함은 회상이 실패할 때에도 재인을 향상시킨다."
+      }
+    },
+    {
+      "word": "reminiscence",
+      "pronunciation": "/ˌrɛmɪˈnɪsəns/",
+      "partOfSpeech": "n.",
+      "meaning": "추억, 회상",
+      "example": {
+        "en": "During the reunion, conversation turned into gentle reminiscence about their school days.",
+        "ko": "동창회에서 대화는 학창 시절에 대한 잔잔한 회고로 이어졌다."
+      }
+    },
+    {
+      "word": "schema",
+      "pronunciation": "/ˈskiːmə/",
+      "partOfSpeech": "n.",
+      "meaning": "개요, 도식",
+      "example": {
+        "en": "His schema for restaurants made it easier to remember the sequence of events during dinner.",
+        "ko": "식당에 대한 그의 스키마는 저녁 식사 중 사건의 순서를 기억하기 쉽게 해 주었다."
+      }
+    },
+    {
+      "word": "blackout",
+      "pronunciation": "/ˈblækˌaʊt/",
+      "partOfSpeech": "n.",
+      "meaning": "정전; 일시적인 기억 상실",
+      "example": {
+        "en": "After the accident he experienced a brief blackout and couldn’t recall the moments before the crash.",
+        "ko": "사고 후 그는 잠깐의 기억상실을 겪어 충돌 직전의 순간을 기억하지 못했다."
+      }
+    },
+    {
+      "word": "lapse",
+      "pronunciation": "/læps/",
+      "partOfSpeech": "n.",
+      "meaning": "(사소한) 실수, 착오; (시간의) 경과",
+      "example": {
+        "en": "She made a simple mistake due to a momentary lapse of memory during the test.",
+        "ko": "시험 중 순간적인 기억 공백으로 그녀는 단순한 실수를 했다."
+      }
+    },
+    {
+      "word": "remembrance",
+      "pronunciation": "/rɪˈmɛmbrəns/",
+      "partOfSpeech": "n.",
+      "meaning": "기념, 추모; 기억",
+      "example": {
+        "en": "The ceremony is held in remembrance of those who are no longer with us.",
+        "ko": "그 의식은 우리 곁에 더 이상 없는 이들을 기억하기 위해 거행된다."
+      }
+    },
+    {
+      "word": "eidetic",
+      "pronunciation": "/aɪˈdɛtɪk/",
+      "partOfSpeech": "adj.",
+      "meaning": "사진처럼 선명한, 직관적인",
+      "example": {
+        "en": "With near-eidetic imagery, he could recall page layouts exactly after a single glance.",
+        "ko": "거의 사진 같은 심상을 지닌 그는 한 번 훑어본 뒤에도 페이지 배치를 정확히 떠올릴 수 있었다."
+      }
+    },
+    {
+      "word": "transience",
+      "pronunciation": "/ˈtrænziəns/",
+      "partOfSpeech": "n.",
+      "meaning": "일시적임, 덧없음",
+      "example": {
+        "en": "Because of transience, details of the lecture faded within days.",
+        "ko": "덧없음 때문에, 강의의 세부 사항이 며칠 만에 희미해졌다."
+      }
+    },
+    {
+      "word": "blocking",
+      "pronunciation": "/ˈblɑːkɪ&eng;/",
+      "partOfSpeech": "n.",
+      "meaning": "막기, 차단",
+      "example": {
+        "en": "I knew the actor’s name, but blocking left me stuck in a tip‑of‑the‑tongue moment.",
+        "ko": "배우 이름이 분명히 떠올랐지만, 회상 차단 때문에 혀끝 현상에 빠졌다."
+      }
+    },
+    {
+      "word": "misattribution",
+      "pronunciation": "/ˌmɪsˌætrɪˈbjuːʃən/",
+      "partOfSpeech": "n.",
+      "meaning": "출처 오인, 잘못된 귀속",
+      "example": {
+        "en": "Misattribution led him to credit a childhood memory to a photo he had seen online.",
+        "ko": "출처 오인 때문에 그는 어린 시절의 기억을 온라인에서 본 사진에서 온 것으로 착각했다."
+      }
+    },
+    {
+      "word": "suggestibility",
+      "pronunciation": "/səˌdʒestəˈbɪləti/",
+      "partOfSpeech": "n.",
+      "meaning": "피암시성, 영향을 받기 쉬움",
+      "example": {
+        "en": "Under suggestibility, the witness accepted leading questions and later remembered events that never occurred.",
+        "ko": "피암시성으로 인해 목격자는 유도 질문을 받아들이고, 나중에 실제로 일어나지 않은 일을 기억했다고 믿었다."
+      }
+    },
+    {
+      "word": "persistence",
+      "pronunciation": "/pərˈsɪstəns/",
+      "partOfSpeech": "n.",
+      "meaning": "끈기, 지속성",
+      "example": {
+        "en": "The persistence of traumatic memories disrupted his sleep for months.",
+        "ko": "외상 기억의 지속성 때문에 그는 몇 달 동안 잠을 제대로 이루지 못했다."
+      }
+    },
+    {
+      "word": "hippocampus",
+      "pronunciation": "/ˌhɪpəˈkæmpəs/",
+      "partOfSpeech": "n.",
+      "meaning": "해마 (뇌의 기억 담당 부분)",
+      "example": {
+        "en": "Damage to the hippocampus impairs the encoding of new episodic memories.",
+        "ko": "해마가 손상되면 새로운 일화적 기억의 부호화가 저하된다."
+      }
+    },
+    {
+      "word": "primacy",
+      "pronunciation": "/ˈpraɪməsi/",
+      "partOfSpeech": "n.",
+      "meaning": "최우선, 으뜸",
+      "example": {
+        "en": "The primacy effect made students remember the first few vocabulary words best.",
+        "ko": "초두 효과 때문에 학생들은 첫 몇 개의 어휘를 가장 잘 기억했다."
+      }
+    },
+    {
+      "word": "recency",
+      "pronunciation": "/ˈriːsənsi/",
+      "partOfSpeech": "n.",
+      "meaning": "최근임, 새로움",
+      "example": {
+        "en": "In free recall, recency boosted memory for the last items on the list.",
+        "ko": "자유 회상에서 최근성 효과가 목록의 마지막 항목들에 대한 기억을 높였다."
+      }
+    },
+    {
+      "word": "elaboration",
+      "pronunciation": "/ɪˌlæbəˈreɪʃən/",
+      "partOfSpeech": "n.",
+      "meaning": "상세한 설명, 정교화",
+      "example": {
+        "en": "Using elaboration, she linked each term to a personal story to improve retention.",
+        "ko": "정교화를 통해 각 용어를 개인적 이야기와 연결하자 기억 유지가 향상되었다."
+      }
+    },
+    {
+      "word": "confabulation",
+      "pronunciation": "/kənˌfæbjʊˈleɪʃən/",
+      "partOfSpeech": "n.",
+      "meaning": "작화(증), 이야기 꾸며내기",
+      "example": {
+        "en": "Patients with frontal damage may tell confident but false stories—a classic confabulation.",
+        "ko": "전두엽 손상 환자는 자신 있게 말하지만 사실이 아닌 이야기를 만들어내는데, 이는 전형적인 작화이다."
+      }
+    },
+    {
+      "word": "engram",
+      "pronunciation": "/ˈɛ&eng;ɡræm/",
+      "partOfSpeech": "n.",
+      "meaning": "기억 흔적, 엔그램",
+      "example": {
+        "en": "Researchers aim to identify the engram by tagging neurons active during learning.",
+        "ko": "연구자들은 학습 중 활성화된 뉴런을 표지하여 기억 흔적, 즉 엔그램을 규명하려 한다."
+      }
+    },
+    {
+      "word": "forget",
+      "pronunciation": "/fərˈɡet/",
+      "partOfSpeech": "v.",
+      "meaning": "잊다, 잊어버리다",
+      "example": {
+        "en": "We forget names quickly when we don’t rehearse them.",
+        "ko": "반복하지 않으면 이름을 빨리 잊는다."
+      }
+    },
+    {
+      "word": "relearning",
+      "pronunciation": "/ˌriːˈlɜːrnɪ&eng;/",
+      "partOfSpeech": "n.",
+      "meaning": "재학습, 다시 배우기",
+      "example": {
+        "en": "On the final, her relearning of the formulas took far fewer trials, indicating strong savings despite earlier forgetting.",
+        "ko": "기말고사에서 그녀는 공식을 다시 배우는 데 시도 횟수가 훨씬 적게 들었고, 이는 이전의 망각에도 불구하고 강한 절약 효과를 의미했다."
+      }
+    },
+    {
+      "word": "episodic",
+      "pronunciation": "/ˌepɪˈzɑːdɪk/",
+      "partOfSpeech": "adj.",
+      "meaning": "일화적인, 여러 편으로 된",
+      "example": {
+        "en": "Recalling your first day at college, where you sat and how you felt, draws on episodic memory.",
+        "ko": "대학 첫날에 어디에 앉았고 어떤 기분이었는지 떠올리는 것은 일화기억을 활용하는 것이다."
+      }
+    },
+    {
+      "word": "procedural",
+      "pronunciation": "/prəˈsiːdʒərəl/",
+      "partOfSpeech": "adj.",
+      "meaning": "절차상의, 절차적인",
+      "example": {
+        "en": "Riding a bicycle after years without practice relies on procedural memory rather than conscious recall.",
+        "ko": "수년간 연습하지 않았어도 자전거를 타는 것은 의식적 회상보다 절차기억에 의존한다."
+      }
+    },
+    {
+      "word": "metamemory",
+      "pronunciation": "/ˌmetəˈmeməri/",
+      "partOfSpeech": "n.",
+      "meaning": "상위기억 (자신의 기억에 대한 지식)",
+      "example": {
+        "en": "Accurately predicting which terms you will remember on the quiz reflects strong metamemory.",
+        "ko": "퀴즈에서 어떤 용어를 기억해낼지 정확히 예측하는 것은 뛰어난 메타기억을 반영한다."
+      }
+    },
+    {
+      "word": "forgetting curve",
+      "pronunciation": "/fərˈɡɛtɪ&eng; kɝːv/",
+      "partOfSpeech": "n.",
+      "meaning": "망각 곡선",
+      "example": {
+        "en": "The forgetting curve showed that without review, she forgot most of the new vocabulary within two days.",
+        "ko": "복습이 없으면 이틀 안에 새 어휘의 대부분을 잊는다는 것을 망각곡선이 보여 주었다."
+      }
+    },
+    {
+      "word": "spacing effect",
+      "pronunciation": "/ˈspeɪsɪ&eng; ɪˈfɛkt/",
+      "partOfSpeech": "n.",
+      "meaning": "간격 효과",
+      "example": {
+        "en": "Thanks to the spacing effect, studying 20 minutes each day produced better long-term retention than a two-hour cram the night before.",
+        "ko": "간격 효과 덕분에 매일 20분씩 공부하는 것이 시험 전날 두 시간 벼락치기보다 장기 기억에 더 효과적이었다."
+      }
+    },
+    {
+      "word": "spaced repetition",
+      "pronunciation": "/speɪst ˌrɛpɪˈtɪʃən/",
+      "partOfSpeech": "n.",
+      "meaning": "간격 반복",
+      "example": {
+        "en": "She used spaced repetition with increasing intervals—1 day, 3 days, 1 week—to keep the formulas from fading.",
+        "ko": "그녀는 1일, 3일, 1주일처럼 점차 간격을 늘리는 간격 반복을 사용해 공식을 잊지 않도록 했다."
+      }
+    },
+    {
+      "word": "overlearning",
+      "pronunciation": "/ˌoʊvərˈlɝːnɪ&eng;/",
+      "partOfSpeech": "n.",
+      "meaning": "과잉 학습",
+      "example": {
+        "en": "He overlearned the CPR steps so he could perform them automatically in an emergency.",
+        "ko": "그는 비상 상황에서도 자동으로 수행할 수 있도록 심폐소생술 절차를 과잉학습했다."
+      }
+    }
+  ]
+}

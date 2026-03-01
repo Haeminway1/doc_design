@@ -1,0 +1,805 @@
+/* --- style block 1 --- */
+
+        /* =================================================================== */
+        /* # Mission Brief (Final Version 3.0)
+        /*   - Persona: ENTJ, Perfectionist HTML Designer
+        /*   - Task: Finalize with reinforced summary, isolated test page, and redesigned 3x3 answer key.
+        /*   - Status: All directives executed. Optimal layout achieved.
+        /* =================================================================== */
+
+        /* =================================================================== */
+        /* 1. A4 규격 구현 및 기본 설정 (Based on basic_structure_v2.html) */
+        /* =================================================================== */
+        @page {
+            size: A4;
+            margin: 0;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-print-color-adjust: exact !important;
+            color-adjust: exact !important;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background: #f0f2f5;
+            /* 화면에서 페이지 구분을 위함 */
+            counter-reset: page;
+        }
+
+        .page {
+            width: 210mm;
+            min-height: 297mm;
+            /* 스크린 뷰를 위해 min-height 사용 */
+            height: 297mm;
+            /* 인쇄 시에는 고정 높이 */
+            margin: 20mm auto;
+            padding: 20mm 20mm 25mm 20mm;
+            /* 상, 좌우, 하 */
+            background: white;
+            page-break-after: always;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .page:last-child {
+            page-break-after: avoid;
+        }
+
+        .page-content {
+            flex-grow: 1;
+        }
+
+        /* 페이지 번호 */
+        .page-footer {
+            text-align: center;
+            font-size: 9pt;
+            color: #888;
+            padding-top: 10mm;
+        }
+
+        .page-footer::after {
+            counter-increment: page;
+            content: counter(page);
+        }
+
+        .no-header-footer .page-footer {
+            display: none;
+        }
+
+        .no-header-footer {
+            padding: 0;
+        }
+
+        .page-start {
+            break-before: page;
+        }
+
+        /* 인쇄 최적화 */
+        @media print {
+            body {
+                background: white;
+            }
+
+            .page {
+                margin: 0;
+                box-shadow: none;
+                min-height: 297mm;
+                height: 297mm;
+            }
+        }
+
+        /* 페이지 분할 제어 (Based on html_design_guideline.md) */
+        p,
+        li,
+        div {
+            orphans: 3;
+            widows: 3;
+        }
+
+        .avoid-break {
+            break-inside: avoid;
+            page-break-inside: avoid;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            break-after: avoid;
+            page-break-after: avoid;
+        }
+
+        table,
+        figure,
+        blockquote {
+            break-inside: avoid;
+            page-break-inside: avoid;
+        }
+
+        /* =================================================================== */
+        /* 2. 디자인 시스템 (Theme: Mint/Sky Blue, Rounded) */
+        /* =================================================================== */
+        :root {
+            --font-main: 'Noto Sans KR', sans-serif;
+            --font-serif: 'Noto Serif KR', serif;
+
+            --color-primary: #63b3ed;
+            /* Sky Blue */
+            --color-secondary: #81e6d9;
+            /* Mint */
+            --color-heading: #2c5282;
+            /* Dark Blue */
+            --color-text: #2d3748;
+            --color-muted: #718096;
+            --color-border: #e2e8f0;
+            --color-bg-light: #f7fafc;
+            --color-star: #f6e05e;
+
+            --radius-sm: 4px;
+            --radius-md: 8px;
+            --radius-lg: 12px;
+
+            --measure: 65ch;
+            /* 가독성 좋은 줄 길이 */
+            --leading: 1.7;
+            /* 넉넉한 행간 */
+            --body-size: 10pt;
+        }
+
+        body {
+            font-size: var(--body-size);
+            line-height: var(--leading);
+            color: var(--color-text);
+        }
+
+        /* =================================================================== */
+        /* 3. 컴포넌트 디자인 */
+        /* =================================================================== */
+
+        /* 표지 페이지 (v3) */
+        .cover-page {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            background-color: #345C85;
+            background-image: url('../../../05_assets/backgrounds/bridge.png');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .cover-main-content {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cover-title {
+            font-family: var(--font-serif);
+            font-size: 28pt;
+            font-weight: 700;
+            color: white;
+            margin-bottom: 0.5rem;
+            /* text-shadow removed: causes dark boxes in Puppeteer PDF */
+        }
+
+        .cover-subtitle {
+            font-size: 18pt;
+            color: white;
+            margin-bottom: 3rem;
+            /* text-shadow removed: causes dark boxes in Puppeteer PDF */
+        }
+
+        .cover-author {
+            flex-shrink: 0;
+            padding-bottom: 2rem;
+            font-size: 12pt;
+            color: white;
+            /* text-shadow removed: causes dark boxes in Puppeteer PDF */
+        }
+
+        /* 파트 구분 페이지 (v3) */
+        .part-opener {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            height: 100%;
+        }
+
+        .part-title {
+            font-size: 20pt;
+            color: var(--color-muted);
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+        }
+
+        .part-subtitle {
+            font-family: var(--font-serif);
+            font-size: 32pt;
+            color: var(--color-heading);
+            font-weight: 700;
+            display: inline-block;
+            position: relative;
+            padding-bottom: 1.5rem;
+        }
+
+        .part-subtitle::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            width: 80px;
+            height: 4px;
+            background-color: var(--color-primary);
+            border-radius: 2px;
+        }
+
+        /* 유닛/테스팅포인트 헤더 */
+        .unit-header {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .unit-header h1 {
+            font-family: var(--font-serif);
+            font-size: 22pt;
+            color: var(--color-heading);
+            margin: 0;
+        }
+
+        .testing-point-header {
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .testing-point-header h2 {
+            font-size: 16pt;
+            color: var(--color-heading);
+            margin: 0 0 0.5rem 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .testing-point-header h2::before {
+            content: '';
+            display: inline-block;
+            width: 8px;
+            height: 24px;
+            background-color: var(--color-primary);
+            margin-right: 1rem;
+            border-radius: var(--radius-sm);
+        }
+
+        .meta-info {
+            font-size: 9pt;
+            color: var(--color-muted);
+            padding-left: 24px;
+        }
+
+        .meta-info .stars {
+            color: var(--color-star);
+            letter-spacing: 1px;
+        }
+
+        /* 핵심 개념/전략 박스 */
+        .concept-box {
+            background-color: var(--color-bg-light);
+            border: 1px solid var(--color-border);
+            padding: 1rem 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: var(--radius-md);
+        }
+
+        .concept-box p {
+            margin: 0;
+            max-width: 100%;
+        }
+
+        .concept-box strong {
+            color: var(--color-heading);
+        }
+
+        /* 예제 및 분석 */
+        .example-analysis {
+            margin: 1.5rem 0;
+            padding: 1.2rem;
+            border-left: 4px solid var(--color-secondary);
+            background-color: #fff;
+        }
+
+        .example-analysis p {
+            margin-bottom: 0.5em;
+            max-width: 100%;
+        }
+
+        .example-analysis .label {
+            font-weight: 700;
+            color: var(--color-heading);
+        }
+
+        .example-analysis .process {
+            font-size: 9.5pt;
+            color: var(--color-muted);
+            padding-left: 1em;
+        }
+
+        .example-analysis .answer {
+            font-weight: 700;
+            color: var(--color-primary);
+        }
+
+        /* 테이블 */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: 9.5pt;
+        }
+
+        thead {
+            display: table-header-group;
+        }
+
+        th,
+        td {
+            border: 1px solid var(--color-border);
+            padding: 0.6rem;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background-color: var(--color-bg-light);
+            font-weight: 700;
+            border-radius: var(--radius-md) var(--radius-md) 0 0;
+        }
+
+        tr:last-child td:first-child {
+            border-bottom-left-radius: var(--radius-md);
+        }
+
+        tr:last-child td:last-child {
+            border-bottom-right-radius: var(--radius-md);
+        }
+
+        /* 핵심 공식/함정 박스 */
+        .rule-box,
+        .trap-box {
+            padding: 1rem 1.5rem;
+            margin: 2rem 0;
+            border: 1px solid var(--color-primary);
+            background-color: #fff;
+            border-radius: var(--radius-md);
+            text-align: center;
+        }
+
+        .rule-box p {
+            font-weight: 700;
+            font-size: 11pt;
+            color: var(--color-heading);
+            margin: 0;
+        }
+
+        .trap-box {
+            border-color: #e53e3e;
+        }
+
+        .trap-box h4 {
+            color: #c53030;
+            margin: 0 0 0.5rem 0;
+        }
+
+        .trap-box p {
+            font-size: 9.5pt;
+            margin: 0;
+        }
+
+        .trap-box code {
+            background-color: #fed7d7;
+        }
+
+        /* 연습 문제 */
+        .exercise-section {
+            margin-top: 2.5rem;
+        }
+
+        .exercise-section h3 {
+            font-family: var(--font-serif);
+            font-size: 14pt;
+            color: var(--color-heading);
+            border-bottom: 2px solid var(--color-secondary);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .exercise-section ol {
+            list-style-type: none;
+            padding-left: 0;
+            counter-reset: exercise-counter;
+        }
+
+        /* 연속 번호가 필요한 실전 모의고사와 정답지 전체를 감싸는 래퍼입니다. */
+        /* 이 래퍼들이 페이지 분할과 상관없이 카운터를 단 한 번만 초기화합니다. */
+        .continuous-numbering-exercise {
+            counter-reset: exercise-counter;
+        }
+
+        /* [핵심] 연속 번호 래퍼 안에 있는 exercise-section ol 태그에 대해서만 */
+        /* 기본 counter-reset 규칙을 무효화(none)합니다. */
+        /* 이렇게 하면, 이 목록들은 상위 래퍼의 카운터를 계속해서 이어받게 됩니다. */
+        .continuous-numbering-exercise .exercise-section ol {
+            counter-reset: none;
+        }
+
+        /* 정답 섹션도 마찬가지로, 기본 ol 태그의 리셋을 무효화합니다. */
+        .continuous-numbering-answers .answer-block ol {
+            counter-reset: none;
+        }
+
+        .exercise-section ol li {
+            counter-increment: exercise-counter;
+            margin-bottom: 1.2rem;
+            padding-left: 2.5em;
+            position: relative;
+        }
+
+        .exercise-section ol li::before {
+            content: counter(exercise-counter);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 1.8em;
+            height: 1.8em;
+            line-height: 1.8em;
+            text-align: center;
+            font-weight: 700;
+            color: var(--color-primary);
+            background-color: var(--color-bg-light);
+            border: 1px solid var(--color-border);
+            border-radius: 50%;
+        }
+
+        .exercise-section .difficulty {
+            font-size: 8pt;
+            font-weight: 700;
+            color: white;
+            padding: 2px 8px;
+            border-radius: var(--radius-lg);
+            margin-left: 0.5rem;
+            vertical-align: middle;
+        }
+
+        .difficulty.mid {
+            background-color: #d69e2e;
+        }
+
+        .difficulty.high {
+            background-color: #c53030;
+        }
+
+        /* 정리 페이지 (New) */
+        .final-review-section h3 {
+            font-family: var(--font-serif);
+            font-size: 14pt;
+            color: var(--color-heading);
+            border-bottom: 2px solid var(--color-secondary);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .final-review-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .review-item {
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-md);
+            padding: 1rem 1.5rem;
+            background-color: #fff;
+        }
+
+        .review-item h4 {
+            font-size: 12pt;
+            color: var(--color-heading);
+            margin: 0 0 1rem 0;
+        }
+
+        .review-item p {
+            font-size: 9.5pt;
+            color: var(--color-text);
+            line-height: 1.6;
+            margin: 0;
+            max-width: 100%;
+        }
+
+        /* 정답 섹션 (v4 - Redesigned) */
+        .answer-section h2 {
+            font-family: var(--font-serif);
+            color: var(--color-heading);
+            margin-top: 0;
+            border-bottom: 2px solid var(--color-primary);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .answer-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .answer-block {
+            break-inside: avoid;
+            background-color: var(--color-bg-light);
+            border: 1px solid var(--color-border);
+            border-radius: var(--radius-md);
+            box-shadow: none;
+        }
+
+        .answer-block h4 {
+            font-size: 11pt;
+            color: var(--color-heading);
+            margin: 0;
+            padding: 0.75rem 1rem;
+            background-color: #fff;
+            border-bottom: 1px solid var(--color-border);
+            border-radius: var(--radius-md) var(--radius-md) 0 0;
+        }
+
+        .answer-block ol {
+            list-style: none;
+            padding: 1rem;
+            font-size: 10pt;
+            counter-reset: answer-item-counter;
+        }
+
+        /* [예외 규칙 1] 실전 모의고사 답지 전체를 감싸는 래퍼입니다. */
+        /* 이 래퍼는 페이지 분할과 상관없이 '실전 모의고사 답지' 카운터를 단 한 번만 초기화합니다. */
+        .mock-test-answers {
+            counter-reset: answer-item-counter;
+        }
+
+        /* [예외 규칙 2 - 핵심] 실전 모의고사 래퍼 안에 있는 answer-block ol에 대해서만 */
+        /* 기본 counter-reset 규칙을 무효화(none)합니다. */
+        /* 이를 통해 이 목록들은 상위 래퍼의 카운터를 계속해서 이어받게 됩니다. */
+        .mock-test-answers .answer-block ol {
+            counter-reset: none;
+        }
+
+        .answer-block li {
+            padding-left: 2em;
+            position: relative;
+            counter-increment: answer-item-counter;
+            margin-bottom: 0.4rem;
+        }
+
+        .answer-block li::before {
+            content: counter(answer-item-counter, decimal-leading-zero);
+            position: absolute;
+            left: 0;
+            font-weight: 700;
+            color: var(--color-muted);
+            font-size: 9pt;
+        }
+
+        /* 기타 유틸리티 */
+        hr {
+            border: 0;
+            border-top: 1px solid var(--color-border);
+            margin: 2rem 0;
+        }
+
+        code {
+            font-family: 'D2Coding', 'Courier New', monospace;
+            background-color: #e2e8f0;
+            padding: 2px 5px;
+            border-radius: var(--radius-sm);
+            font-size: 9.5pt;
+        }
+
+        /* =================================================================== */
+        /* # CSS 수정 사항 (v3.2)
+        /* =================================================================== */
+
+        /* 선택지 스타일 (v3 - Redesigned) */
+        /* 기존 underline bold 스타일을 세련된 하이라이트로 변경 */
+        .choice {
+            font-weight: bold;
+            background-color: #cdf5f0;
+            /* Mint highlight */
+            padding: 1px 5px;
+            border-radius: var(--radius-sm);
+        }
+
+        /* 문제와 선지 사이의 수직 간격을 확보하여 가독성 향상 */
+        .choices-line {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 0.75rem;
+            /* Increased vertical space */
+            padding-left: 0.2em;
+        }
+
+        /* =================================================================== */
+        /* 5. 수직 여백 시스템 (Vertical Spacing System)
+        /* =================================================================== */
+        .spacer {
+            display: block;
+            width: 100%;
+            /* 스페이서 자체의 불필요한 마진/패딩 제거 */
+            margin: 0;
+            padding: 0;
+            /* 내용이 없음을 명확히 함 */
+            font-size: 0;
+            line-height: 0;
+        }
+
+        /* 한 줄 미만 여백 (약 0.5줄) */
+        .spacer-sm {
+            height: calc(var(--leading) * 0.5em);
+            /* 1.7 * 0.5 = 0.85em */
+        }
+
+        /* 한 줄 여백 */
+        .spacer-md {
+            height: calc(var(--leading) * 1em);
+            /* 1.7em */
+        }
+
+        /* 두 줄 여백 */
+        .spacer-lg {
+            height: calc(var(--leading) * 2em);
+            /* 3.4em */
+        }
+
+        /* 세 줄 여백 */
+        .spacer-xl {
+            height: calc(var(--leading) * 3em);
+            /* 5.1em */
+        }
+
+        /* =================================================================== */
+        /* 6. 상세 해설 페이지 스타일 (v2.0 - Sophisticated)
+        /* =================================================================== */
+        .detailed-answer-section h2 {
+            font-family: var(--font-serif);
+            font-size: 18pt;
+            color: var(--color-heading);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.8rem;
+            border-bottom: 2px solid var(--color-primary);
+        }
+
+        .detailed-answer-item {
+            padding: 1.5rem 0;
+            border-top: 1px solid var(--color-border);
+        }
+
+        .detailed-answer-item:first-of-type {
+            border-top: none;
+            padding-top: 0;
+        }
+
+        .detailed-answer-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .detailed-answer-number {
+            font-family: var(--font-serif);
+            font-size: 22pt;
+            color: var(--color-heading);
+            line-height: 1;
+            flex-shrink: 0;
+        }
+
+        .answer-label {
+            display: flex;
+            align-items: center;
+            font-size: 12pt;
+            font-weight: 700;
+        }
+
+        .answer-label::before {
+            content: '✔';
+            color: var(--color-secondary);
+            font-size: 14pt;
+            margin-right: 0.75rem;
+        }
+
+        .answer-text {
+            background-color: #ebf8ff;
+            /* Lighter blue */
+            color: #2c5282;
+            /* Darker blue */
+            padding: 4px 10px;
+            border-radius: var(--radius-sm);
+            font-family: 'D2Coding', 'Courier New', monospace;
+        }
+
+        .answer-detail-block {
+            margin-top: 1rem;
+            padding-left: 3.2rem;
+            /* Align with content after number */
+        }
+
+        .answer-detail-block h4 {
+            display: flex;
+            align-items: center;
+            font-size: 10pt;
+            font-weight: 700;
+            color: var(--color-muted);
+            margin-bottom: 0.5rem;
+        }
+
+        .answer-detail-block h4::before {
+            font-size: 14pt;
+            line-height: 1;
+            margin-right: 0.5rem;
+            color: var(--color-muted);
+        }
+
+        .answer-translation h4::before {
+            content: '“';
+            font-style: italic;
+        }
+
+        .answer-explanation h4::before {
+            content: '🔍';
+        }
+
+        .answer-translation p {
+            font-size: 9.5pt;
+            color: var(--color-muted);
+            font-style: italic;
+            line-height: 1.6;
+        }
+
+        .answer-explanation p {
+            font-size: 10pt;
+            line-height: 1.8;
+        }
+
+        .answer-explanation strong {
+            font-weight: 700;
+            color: var(--color-heading);
+            background-color: #cdf5f0;
+            /* Mint highlight */
+            padding: 1px 4px;
+            border-radius: var(--radius-sm);
+        }
+    
+
+/* --- style block 2 --- */
+
+                    .question-prompt {
+                        text-align: justify;
+                        margin-bottom: 0.8rem;
+                        line-height: 1.8;
+                    }
+
+                    .mock-test-opener-title {
+                        font-family: var(--font-serif);
+                        font-size: 36pt;
+                        color: var(--color-heading);
+                        font-weight: 700;
+                        margin-top: 0.5rem;
+                    }
+                
+

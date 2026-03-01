@@ -1,0 +1,131 @@
+{
+  "bookId": "syntax-basic-unit13",
+  "unit": 13,
+  "title": "분사구문",
+  "part": "III",
+  "week": 3,
+  "type": "sentence-analysis",
+  "instruction": "다음 문장에서 분사구문을 찾아 [ ]로 묶고, 문맥에 맞게 자연스럽게 해석해 보세요.",
+  "problems": [
+    {
+      "id": "syntax-basic-unit13-1",
+      "number": 1,
+      "type": "sentence-analysis",
+      "stem": "Entering the room, I saw him sleeping.",
+      "answer": {
+        "analysis": "[Entering the room], I saw him sleeping.",
+        "pattern": "",
+        "translation": "방에 들어갔을 때, 나는 그가 자고 있는 것을 보았다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit13-2",
+      "number": 2,
+      "type": "sentence-analysis",
+      "stem": "Being very tired, I decided to take a rest.",
+      "answer": {
+        "analysis": "[Being very tired], I decided to take a rest.",
+        "pattern": "",
+        "translation": "매우 피곤했기 때문에, 나는 휴식을 취하기로 결정했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit13-3",
+      "number": 3,
+      "type": "sentence-analysis",
+      "stem": "Taking a walk in the park, I met an old friend.",
+      "answer": {
+        "analysis": "[Taking a walk in the park], I met an old friend.",
+        "pattern": "",
+        "translation": "공원에서 산책을 하다가, 나는 옛 친구를 만났다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit13-4",
+      "number": 4,
+      "type": "sentence-analysis",
+      "stem": "Not having a car, she usually uses the subway.",
+      "answer": {
+        "analysis": "[Not having a car], she usually uses the subway.",
+        "pattern": "",
+        "translation": "차가 없기 때문에, 그녀는 보통 지하철을 이용한다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit13-5",
+      "number": 5,
+      "type": "sentence-analysis",
+      "stem": "The storm hit the city, causing a lot of damage.",
+      "answer": {
+        "analysis": "The storm hit the city, [causing a lot of damage].",
+        "pattern": "",
+        "translation": "폭풍이 도시를 덮쳐, 많은 피해를 야기했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit13-6",
+      "number": 6,
+      "type": "sentence-analysis",
+      "stem": "Finished with his work, he went home.",
+      "answer": {
+        "analysis": "[Finished with his work], he went home.",
+        "pattern": "",
+        "translation": "일을 끝냈기 때문에, 그는 집으로 갔다. (Being이 생략된 수동",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit13-7",
+      "number": 7,
+      "type": "sentence-analysis",
+      "stem": "Following the map, we found the treasure.",
+      "answer": {
+        "analysis": "분사구문) [Following the map], we found the treasure.",
+        "pattern": "",
+        "translation": "지도를 따라가서, 우리는 보물을 찾았다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit13-8",
+      "number": 8,
+      "type": "sentence-analysis",
+      "stem": "He hurt his leg, playing soccer.",
+      "answer": {
+        "analysis": "He hurt his leg, [playing soccer].",
+        "pattern": "",
+        "translation": "그는 축구를 하다가 다리를 다쳤다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit13-9",
+      "number": 9,
+      "type": "sentence-analysis",
+      "stem": "Seen from a distance, the rock looks like a human face.",
+      "answer": {
+        "analysis": "[Seen from a distance], the rock looks like a human face.",
+        "pattern": "",
+        "translation": "멀리서 보면, 그 바위는 사람 얼굴처럼 보인",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit13-10",
+      "number": 10,
+      "type": "sentence-analysis",
+      "stem": "Having finished dinner, we watched a movie.",
+      "answer": {
+        "analysis": "다. [Having finished dinner], we watched a movie.",
+        "pattern": "",
+        "translation": "저녁 식사를 마친 후에, 우리는 영화를 봤다. (완료 분",
+        "notes": ""
+      }
+    }
+  ]
+}

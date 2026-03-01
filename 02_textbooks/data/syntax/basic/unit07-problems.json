@@ -1,0 +1,131 @@
+{
+  "bookId": "syntax-basic-unit07",
+  "unit": 7,
+  "title": "부사 걷어내기",
+  "part": "II",
+  "week": 2,
+  "type": "sentence-analysis",
+  "instruction": "다음 문장에서 부사(구)를 모두 찾아 괄호로 묶고, 문장의 뼈대를 분석한 후 해석해 보세요.",
+  "problems": [
+    {
+      "id": "syntax-basic-unit07-1",
+      "number": 1,
+      "type": "sentence-analysis",
+      "stem": "She sings beautifully.",
+      "answer": {
+        "analysis": "She(S) sings(V) (beautifully).",
+        "pattern": "",
+        "translation": "그녀는 (아름답게) 노래한다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit07-2",
+      "number": 2,
+      "type": "sentence-analysis",
+      "stem": "I will definitely call you later.",
+      "answer": {
+        "analysis": "I(S) (definitely) will call(V) you(O) (later).",
+        "pattern": "",
+        "translation": "나는 (나중에) (반드시) 너에게 전화할게.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit07-3",
+      "number": 3,
+      "type": "sentence-analysis",
+      "stem": "The sun is shining brightly today.",
+      "answer": {
+        "analysis": "The sun(S) is shining(V) (brightly) (today).",
+        "pattern": "",
+        "translation": "(오늘) 해가 (밝게) 빛나고 있다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit07-4",
+      "number": 4,
+      "type": "sentence-analysis",
+      "stem": "He carefully read the instructions.",
+      "answer": {
+        "analysis": "He(S) (carefully) read(V) the instructions(O).",
+        "pattern": "",
+        "translation": "그는 (조심스럽게) 설명서를 읽었다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit07-5",
+      "number": 5,
+      "type": "sentence-analysis",
+      "stem": "We often go to the movies on weekends.",
+      "answer": {
+        "analysis": "We(S) (often) go(V) (to the movies) (on weekends).",
+        "pattern": "",
+        "translation": "우리는 (주말에) (자주) 영화 보러 간다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit07-6",
+      "number": 6,
+      "type": "sentence-analysis",
+      "stem": "The new restaurant is incredibly popular.",
+      "answer": {
+        "analysis": "The new restaurant(S) is(V) (incredibly) popular(C).",
+        "pattern": "",
+        "translation": "그 새로운 식당은 (믿을 수 없을 정도로) 인기가 많다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit07-7",
+      "number": 7,
+      "type": "sentence-analysis",
+      "stem": "He suddenly changed his mind.",
+      "answer": {
+        "analysis": "He(S) (suddenly) changed(V) his mind(O).",
+        "pattern": "",
+        "translation": "그는 (갑자기) 마음을 바꿨다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit07-8",
+      "number": 8,
+      "type": "sentence-analysis",
+      "stem": "I almost missed the train this morning.",
+      "answer": {
+        "analysis": "I(S) (almost) missed(V) the train(O) (this morning).",
+        "pattern": "",
+        "translation": "나는 (오늘 아침에) 기차를 (거의) 놓칠 뻔했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit07-9",
+      "number": 9,
+      "type": "sentence-analysis",
+      "stem": "Honestly, I don't like this idea.",
+      "answer": {
+        "analysis": "(Honestly), I(S) don't like(V) this idea(O).",
+        "pattern": "",
+        "translation": "(솔직히), 나는 이 아이디어를 좋아하지 않는다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit07-10",
+      "number": 10,
+      "type": "sentence-analysis",
+      "stem": "They lived happily ever after.",
+      "answer": {
+        "analysis": "They(S) lived(V) (happily) (ever after).",
+        "pattern": "",
+        "translation": "그들은 (그 후로 영원히) (행복하게) 살았다. 보여도 당황하지 마세요. 수식어를 괄호로 묶으면 숨어있던 문장의 뼈대(S, V, O, C)가 선명하게 드러납니다. 이 훈련은 길고 어려운 문장을 정확하게 해석하는 데 가장 중요한 과정입니다. 괄호 치기 순서 핵심: 괄호를 치고 나면 문장이 \"누가 ~이다\", \"누가 ~한다\", \"누가 ~을 한다\" 등 우리가 배운 1~5형식 중 하나로 단순화됩니다. 예제",
+        "notes": ""
+      }
+    }
+  ]
+}

@@ -1,0 +1,507 @@
+{
+  "bookId": "vocab-basic",
+  "day": 27,
+  "theme": "같음과 다름 (Similarity and Difference)",
+  "words": [
+    {
+      "word": "same",
+      "pronunciation": "[seim]",
+      "partOfSpeech": "a.",
+      "meaning": "같은, 동일한",
+      "example": {
+        "en": "We went to the same high school.",
+        "ko": "우리는 같은 고등학교에 다녔다."
+      }
+    },
+    {
+      "word": "identical",
+      "pronunciation": "[aidéntikəl]",
+      "partOfSpeech": "a.",
+      "meaning": "동일한, 똑같은",
+      "example": {
+        "en": "The two paintings look identical to me.",
+        "ko": "그 두 그림은 내게는 똑같아 보인다."
+      }
+    },
+    {
+      "word": "equivalent",
+      "pronunciation": "[ikwívələnt]",
+      "partOfSpeech": "a.\n       \n        n.",
+      "meaning": "(가치·의미 등이) 동등한, 맞먹는\n       \n        동등한 것",
+      "example": {
+        "en": "One dollar is equivalent to about 1,300 won.",
+        "ko": "1달러는 약 1,300원과 동등한 가치가 있다."
+      }
+    },
+    {
+      "word": "similar",
+      "pronunciation": "[símələr]",
+      "partOfSpeech": "a.",
+      "meaning": "비슷한, 유사한",
+      "example": {
+        "en": "My brother and I have similar tastes in music.",
+        "ko": "나의 형과 나는 음악 취향이 비슷하다."
+      }
+    },
+    {
+      "word": "alike",
+      "pronunciation": "[əláik]",
+      "partOfSpeech": "a.\n       \n        ad.",
+      "meaning": "(명사 앞에는 안 씀) 비슷한, 서로 같은\n       \n        비슷하게",
+      "example": {
+        "en": "The twin sisters look very much alike.",
+        "ko": "그 쌍둥이 자매는 매우 비슷하게 생겼다."
+      }
+    },
+    {
+      "word": "analogous",
+      "pronunciation": "[ənǽləgəs]",
+      "partOfSpeech": "a.",
+      "meaning": "유사한, 비슷한",
+      "example": {
+        "en": "The human brain is sometimes said to be analogous to a computer.",
+        "ko": "인간의 뇌는 때때로 컴퓨터와 유사하다고 말해진다."
+      }
+    },
+    {
+      "word": "parallel",
+      "pronunciation": "[pǽrəlèl]",
+      "partOfSpeech": "a.\n       \n        n.",
+      "meaning": "평행한; 유사한\n       \n        유사한 것, 필적하는 것",
+      "example": {
+        "en": "There are interesting parallels between the two novels.",
+        "ko": "그 두 소설 사이에는 흥미로운 유사점들이 있다."
+      }
+    },
+    {
+      "word": "corresponding",
+      "pronunciation": "[kɔ̀ːrispάndi&eng;]",
+      "partOfSpeech": "a.",
+      "meaning": "상응하는, 해당되는",
+      "example": {
+        "en": "As the temperature rises, there is a corresponding increase in demand for ice cream.",
+        "ko": "기온이 올라감에 따라 아이스크림 수요도 그에 상응하여 증가한다."
+      }
+    },
+    {
+      "word": "homogeneous",
+      "pronunciation": "[hòumədʒíːniəs]",
+      "partOfSpeech": "a.",
+      "meaning": "동종의, 동질의",
+      "example": {
+        "en": "The population of the small town is very homogeneous.",
+        "ko": "그 작은 마을의 인구는 매우 동질적이다."
+      }
+    },
+    {
+      "word": "uniform",
+      "pronunciation": "[júːnəfɔ̀ːrm]",
+      "partOfSpeech": "a.\n       \n        n.",
+      "meaning": "균일한, 한결같은\n       \n        제복, 유니폼",
+      "example": {
+        "en": "The paint should be applied in a smooth, uniform layer.",
+        "ko": "페인트는 부드럽고 균일한 층으로 칠해야 한다."
+      }
+    },
+    {
+      "word": "consistent",
+      "pronunciation": "[kənsístənt]",
+      "partOfSpeech": "a.",
+      "meaning": "일관된, 한결같은; ~와 일치하는",
+      "example": {
+        "en": "His actions are not consistent with his words.",
+        "ko": "그의 행동은 그의 말과 일치하지 않는다."
+      }
+    },
+    {
+      "word": "equal",
+      "pronunciation": "[íːkwəl]",
+      "partOfSpeech": "a.\n       \n        n.",
+      "meaning": "같은, 동등한, 평등한\n       \n        동등한 것",
+      "example": {
+        "en": "All people should have equal rights.",
+        "ko": "모든 사람은 동등한 권리를 가져야 한다."
+      }
+    },
+    {
+      "word": "tantamount",
+      "pronunciation": "[tǽntəmàunt]",
+      "partOfSpeech": "a.",
+      "meaning": "(나쁜 효과가) ~와 마찬가지의, 동등한",
+      "example": {
+        "en": "His silence was tantamount to an admission of guilt.",
+        "ko": "그의 침묵은 유죄를 인정하는 것과 마찬가지였다."
+      }
+    },
+    {
+      "word": "different",
+      "pronunciation": "[dífərənt]",
+      "partOfSpeech": "a.",
+      "meaning": "다른",
+      "example": {
+        "en": "They have very different opinions on the matter.",
+        "ko": "그들은 그 문제에 대해 매우 다른 의견을 가지고 있다."
+      }
+    },
+    {
+      "word": "distinct",
+      "pronunciation": "[distí&eng;kt]",
+      "partOfSpeech": "a.",
+      "meaning": "뚜렷이 다른, 별개의; 뚜렷한, 분명한",
+      "example": {
+        "en": "There are two distinct types of this disease.",
+        "ko": "이 질병에는 뚜렷이 다른 두 가지 유형이 있다."
+      }
+    },
+    {
+      "word": "diverse",
+      "pronunciation": "[daivə́ːrs]",
+      "partOfSpeech": "a.",
+      "meaning": "다양한, 다른",
+      "example": {
+        "en": "The city has a very diverse population.",
+        "ko": "그 도시는 매우 다양한 인구를 가지고 있다."
+      }
+    },
+    {
+      "word": "various",
+      "pronunciation": "[vέəriəs]",
+      "partOfSpeech": "a.",
+      "meaning": "다양한, 여러 가지의",
+      "example": {
+        "en": "The store sells various kinds of cheese.",
+        "ko": "그 가게는 다양한 종류의 치즈를 판다."
+      }
+    },
+    {
+      "word": "disparate",
+      "pronunciation": "[díspərət]",
+      "partOfSpeech": "a.",
+      "meaning": "(본질적으로) 다른, 이질적인",
+      "example": {
+        "en": "The book brings together disparate ideas from different fields.",
+        "ko": "그 책은 다른 분야의 이질적인 아이디어들을 한데 모은다."
+      }
+    },
+    {
+      "word": "heterogeneous",
+      "pronunciation": "[hètərədʒíːniəs]",
+      "partOfSpeech": "a.",
+      "meaning": "이질적인, 여러 다른 종류들로 이뤄진",
+      "example": {
+        "en": "New York is a very heterogeneous city.",
+        "ko": "뉴욕은 매우 이질적인 도시이다."
+      }
+    },
+    {
+      "word": "variant",
+      "pronunciation": "[vέəriənt]",
+      "partOfSpeech": "a.\n       \n        n.",
+      "meaning": "다른, 변종의\n       \n        변형, 이형",
+      "example": {
+        "en": "A new variant of the virus has been discovered.",
+        "ko": "그 바이러스의 새로운 변종이 발견되었다."
+      }
+    },
+    {
+      "word": "discrepancy",
+      "pronunciation": "[diskrépənsi]",
+      "partOfSpeech": "n.",
+      "meaning": "(같아야 할 것들 사이의) 차이, 불일치",
+      "example": {
+        "en": "There is a discrepancy between the two accounts of the event.",
+        "ko": "그 사건에 대한 두 가지 설명 사이에는 차이가 있다."
+      }
+    },
+    {
+      "word": "disparity",
+      "pronunciation": "[dispǽrəti]",
+      "partOfSpeech": "n.",
+      "meaning": "(특히 불공평한) 차이",
+      "example": {
+        "en": "There is a growing disparity between the rich and the poor.",
+        "ko": "부자와 가난한 사람 사이의 격차가 커지고 있다."
+      }
+    },
+    {
+      "word": "gap",
+      "pronunciation": "[gæp]",
+      "partOfSpeech": "n.",
+      "meaning": "격차, 차이; 틈",
+      "example": {
+        "en": "The gap between the two teams is not very wide.",
+        "ko": "두 팀 간의 격차는 그리 크지 않다."
+      }
+    },
+    {
+      "word": "gulf",
+      "pronunciation": "[gʌlf]",
+      "partOfSpeech": "n.",
+      "meaning": "(의견·생활 방식 등의) 큰 격차; 만(灣)",
+      "example": {
+        "en": "There is a wide gulf between the two generations.",
+        "ko": "두 세대 사이에는 큰 격차가 있다."
+      }
+    },
+    {
+      "word": "chasm",
+      "pronunciation": "[kǽzəm]",
+      "partOfSpeech": "n.",
+      "meaning": "(땅·바위의) 아주 깊은 틈; (사람·집단 사이의) 큰 차이",
+      "example": {
+        "en": "A deep chasm has opened up between the two political parties.",
+        "ko": "두 정당 사이에 깊은 균열이 생겼다."
+      }
+    },
+    {
+      "word": "unique",
+      "pronunciation": "[juːníːk]",
+      "partOfSpeech": "a.",
+      "meaning": "독특한, 유일무이한",
+      "example": {
+        "en": "Each person's fingerprint is unique.",
+        "ko": "각 사람의 지문은 유일무이하다."
+      }
+    },
+    {
+      "word": "peculiar",
+      "pronunciation": "[pikjúːliər]",
+      "partOfSpeech": "a.",
+      "meaning": "독특한, 기묘한",
+      "example": {
+        "en": "The food had a peculiar taste.",
+        "ko": "그 음식은 독특한 맛이 났다."
+      }
+    },
+    {
+      "word": "distinctive",
+      "pronunciation": "[distí&eng;ktiv]",
+      "partOfSpeech": "a.",
+      "meaning": "독특한, 특유의",
+      "example": {
+        "en": "The bird has a distinctive yellow marking on its head.",
+        "ko": "그 새는 머리에 독특한 노란색 무늬가 있다."
+      }
+    },
+    {
+      "word": "special",
+      "pronunciation": "[spéʃəl]",
+      "partOfSpeech": "a.",
+      "meaning": "특별한",
+      "example": {
+        "en": "This is a very special occasion for our family.",
+        "ko": "오늘은 우리 가족에게 매우 특별한 날이다."
+      }
+    },
+    {
+      "word": "particular",
+      "pronunciation": "[pərtíkjulər]",
+      "partOfSpeech": "a.",
+      "meaning": "특정한; 특별한, 까다로운",
+      "example": {
+        "en": "Is there a particular type of car you are looking for?",
+        "ko": "당신이 찾고 있는 특정한 종류의 차가 있나요?"
+      }
+    },
+    {
+      "word": "specific",
+      "pronunciation": "[spisífik]",
+      "partOfSpeech": "a.",
+      "meaning": "구체적인, 명확한, 특정한",
+      "example": {
+        "en": "Could you be more specific about what you mean?",
+        "ko": "무슨 뜻인지 좀 더 구체적으로 말씀해주시겠어요?"
+      }
+    },
+    {
+      "word": "abnormal",
+      "pronunciation": "[æbnɔ́ːrməl]",
+      "partOfSpeech": "a.",
+      "meaning": "비정상적인, 이상한",
+      "example": {
+        "en": "The doctor found an abnormal growth in his lung.",
+        "ko": "의사는 그의 폐에서 비정상적인 종양을 발견했다."
+      }
+    },
+    {
+      "word": "unusual",
+      "pronunciation": "[ʌnjúːʒuəl]",
+      "partOfSpeech": "a.",
+      "meaning": "특이한, 드문",
+      "example": {
+        "en": "It's unusual for him to be late.",
+        "ko": "그가 늦는 것은 드문 일이다."
+      }
+    },
+    {
+      "word": "odd",
+      "pronunciation": "[ɑd]",
+      "partOfSpeech": "a.",
+      "meaning": "이상한, 기묘한; 홀수의",
+      "example": {
+        "en": "I heard an odd noise coming from outside.",
+        "ko": "나는 밖에서 나는 이상한 소리를 들었다."
+      }
+    },
+    {
+      "word": "weird",
+      "pronunciation": "[wiərd]",
+      "partOfSpeech": "a.",
+      "meaning": "기이한, 기묘한",
+      "example": {
+        "en": "I had a really weird dream last night.",
+        "ko": "나는 어젯밤에 정말 기이한 꿈을 꾸었다."
+      }
+    },
+    {
+      "word": "bizarre",
+      "pronunciation": "[bizάːr]",
+      "partOfSpeech": "a.",
+      "meaning": "기이한, 특이한",
+      "example": {
+        "en": "The story was too bizarre to be true.",
+        "ko": "그 이야기는 너무 기이해서 사실일 리가 없었다."
+      }
+    },
+    {
+      "word": "eccentric",
+      "pronunciation": "[ikséntrik]",
+      "partOfSpeech": "a.",
+      "meaning": "괴짜인, 별난",
+      "example": {
+        "en": "My eccentric aunt wears a different colored sock on each foot.",
+        "ko": "나의 괴짜 이모는 양쪽 발에 다른 색깔의 양말을 신는다."
+      }
+    },
+    {
+      "word": "queer",
+      "pronunciation": "[kwiər]",
+      "partOfSpeech": "a.",
+      "meaning": "기묘한, 별난",
+      "example": {
+        "en": "There was something queer about the way he looked at her.",
+        "ko": "그가 그녀를 쳐다보는 방식에는 뭔가 기묘한 것이 있었다."
+      }
+    },
+    {
+      "word": "quaint",
+      "pronunciation": "[kweint]",
+      "partOfSpeech": "a.",
+      "meaning": "(옛것이 지닌) 진기한, 독특한",
+      "example": {
+        "en": "We stayed in a quaint little cottage in the countryside.",
+        "ko": "우리는 시골의 진기하고 작은 오두막에 묵었다."
+      }
+    },
+    {
+      "word": "sundry",
+      "pronunciation": "[sʌ́ndri]",
+      "partOfSpeech": "a.",
+      "meaning": "(격식) 여러 가지의, 잡다한",
+      "example": {
+        "en": "The store sells sundry items, from books to kitchenware.",
+        "ko": "그 가게는 책에서부터 주방용품에 이르기까지 여러 가지 물품을 판다."
+      }
+    },
+    {
+      "word": "assorted",
+      "pronunciation": "[əsɔ́ːrtid]",
+      "partOfSpeech": "a.",
+      "meaning": "여러 가지 종류의, 다채로운",
+      "example": {
+        "en": "The box contained an assorted collection of chocolates.",
+        "ko": "그 상자에는 여러 가지 종류의 초콜릿이 들어 있었다."
+      }
+    },
+    {
+      "word": "miscellaneous",
+      "pronunciation": "[mìsəléiniəs]",
+      "partOfSpeech": "a.",
+      "meaning": "여러 가지 종류의, 잡다한",
+      "example": {
+        "en": "The report covers miscellaneous topics.",
+        "ko": "그 보고서는 여러 가지 잡다한 주제를 다룬다."
+      }
+    },
+    {
+      "word": "compare",
+      "pronunciation": "[kəmpέər]",
+      "partOfSpeech": "v.",
+      "meaning": "비교하다, 비유하다",
+      "example": {
+        "en": "Don't compare yourself to others.",
+        "ko": "자신을 다른 사람과 비교하지 마세요."
+      }
+    },
+    {
+      "word": "contrast",
+      "pronunciation": "[kəntrǽst]",
+      "partOfSpeech": "v.\n       \n        n.",
+      "meaning": "대조하다, 대비시키다\n       \n        [kάntræst] 대조, 대비",
+      "example": {
+        "en": "Her actions contrast sharply with her words.",
+        "ko": "그녀의 행동은 그녀의 말과 극명하게 대조된다."
+      }
+    },
+    {
+      "word": "differentiate",
+      "pronunciation": "[dìfərénʃièit]",
+      "partOfSpeech": "v.",
+      "meaning": "구별하다, 구분 짓다",
+      "example": {
+        "en": "It's important to differentiate between fact and opinion.",
+        "ko": "사실과 의견을 구별하는 것이 중요하다."
+      }
+    },
+    {
+      "word": "distinguish",
+      "pronunciation": "[distí&eng;gwiʃ]",
+      "partOfSpeech": "v.",
+      "meaning": "구별하다, 식별하다",
+      "example": {
+        "en": "I can't distinguish one twin from the other.",
+        "ko": "나는 쌍둥이 중 한 명과 다른 한 명을 구별할 수 없다."
+      }
+    },
+    {
+      "word": "discriminate",
+      "pronunciation": "[diskrímənèit]",
+      "partOfSpeech": "v.",
+      "meaning": "식별하다; 차별하다",
+      "example": {
+        "en": "The device can discriminate between different types of sound.",
+        "ko": "그 장치는 다른 종류의 소리를 식별할 수 있다."
+      }
+    },
+    {
+      "word": "deviate",
+      "pronunciation": "[díːvièit]",
+      "partOfSpeech": "v.",
+      "meaning": "(표준·예상에서) 벗어나다, 빗나가다",
+      "example": {
+        "en": "He never deviates from his daily routine.",
+        "ko": "그는 자신의 일상에서 절대 벗어나지 않는다."
+      }
+    },
+    {
+      "word": "diverge",
+      "pronunciation": "[daivə́ːrdʒ]",
+      "partOfSpeech": "v.",
+      "meaning": "(다른 방향으로) 갈라지다; (의견 등이) 나뉘다",
+      "example": {
+        "en": "The path diverges into two separate trails here.",
+        "ko": "길은 여기서 두 개의 별도 오솔길로 갈라진다."
+      }
+    },
+    {
+      "word": "resemble",
+      "pronunciation": "[rizémbl]",
+      "partOfSpeech": "v.",
+      "meaning": "~을 닮다, ~와 비슷하다",
+      "example": {
+        "en": "She closely resembles her older sister.",
+        "ko": "그녀는 그녀의 언니를 매우 닮았다."
+      }
+    }
+  ]
+}

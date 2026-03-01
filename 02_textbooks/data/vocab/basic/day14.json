@@ -1,0 +1,503 @@
+{
+  "bookId": "vocab-basic",
+  "day": 14,
+  "theme": "금융, 투자, 재산 (Finance, Investment, and Property)",
+  "words": [
+    {
+      "word": "finance",
+      "pronunciation": "[fáinæns]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "금융, 재정; 자금\n       \n        자금을 대다",
+      "example": {
+        "en": "He works in the finance department of a large corporation.",
+        "ko": "그는 대기업의 재무 부서에서 일한다."
+      }
+    },
+    {
+      "word": "investment",
+      "pronunciation": "[invéstmənt]",
+      "partOfSpeech": "n.",
+      "meaning": "투자, 투자 자금",
+      "example": {
+        "en": "Real estate can be a good long-term investment.",
+        "ko": "부동산은 좋은 장기 투자가 될 수 있다."
+      }
+    },
+    {
+      "word": "capital",
+      "pronunciation": "[kǽpətl]",
+      "partOfSpeech": "n.",
+      "meaning": "자본, 자본금; 수도; 대문자",
+      "example": {
+        "en": "The startup is trying to raise capital to expand its business.",
+        "ko": "그 스타트업은 사업을 확장하기 위해 자본을 조달하려고 노력하고 있다."
+      }
+    },
+    {
+      "word": "fund",
+      "pronunciation": "[fʌnd]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "기금, 자금\n       \n        자금을 대다",
+      "example": {
+        "en": "The project is funded by a government grant.",
+        "ko": "그 프로젝트는 정부 보조금으로 자금을 지원받는다."
+      }
+    },
+    {
+      "word": "stock",
+      "pronunciation": "[stɑk]",
+      "partOfSpeech": "n.",
+      "meaning": "주식; 재고; 가축",
+      "example": {
+        "en": "She invested her savings in the stock market.",
+        "ko": "그녀는 저축한 돈을 주식 시장에 투자했다."
+      }
+    },
+    {
+      "word": "share",
+      "pronunciation": "[ʃεər]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "주식; 몫, 지분\n       \n        공유하다",
+      "example": {
+        "en": "He owns 1,000 shares in the company.",
+        "ko": "그는 그 회사의 주식 1,000주를 소유하고 있다."
+      }
+    },
+    {
+      "word": "bond",
+      "pronunciation": "[bɑnd]",
+      "partOfSpeech": "n.",
+      "meaning": "채권; 유대감; 접착제",
+      "example": {
+        "en": "Government bonds are considered a safe investment.",
+        "ko": "국채는 안전한 투자로 간주된다."
+      }
+    },
+    {
+      "word": "dividend",
+      "pronunciation": "[dívədènd]",
+      "partOfSpeech": "n.",
+      "meaning": "(주식의) 배당금",
+      "example": {
+        "en": "The company announced a higher dividend for its shareholders.",
+        "ko": "그 회사는 주주들에게 더 높은 배당금을 지급한다고 발표했다."
+      }
+    },
+    {
+      "word": "portfolio",
+      "pronunciation": "[pɔːrtfóuliòu]",
+      "partOfSpeech": "n.",
+      "meaning": "포트폴리오 (보유 중인 주식·채권 등의 목록)",
+      "example": {
+        "en": "A financial advisor helps you build a diverse investment portfolio.",
+        "ko": "재무 상담사는 당신이 다양한 투자 포트폴리오를 구성하도록 돕는다."
+      }
+    },
+    {
+      "word": "speculation",
+      "pronunciation": "[spèkjuléiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "(금융) 투기; 추측",
+      "example": {
+        "en": "He lost a lot of money through stock market speculation.",
+        "ko": "그는 주식 시장 투기로 많은 돈을 잃었다."
+      }
+    },
+    {
+      "word": "venture",
+      "pronunciation": "[véntʃər]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "(위험을 무릅쓰고 하는) 모험적 사업, 벤처\n       \n        과감히 ~하다",
+      "example": {
+        "en": "The new business venture was a huge success.",
+        "ko": "그 새로운 벤처 사업은 대성공이었다."
+      }
+    },
+    {
+      "word": "profit",
+      "pronunciation": "[prάfit]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "이익, 수익\n       \n        이익을 얻다",
+      "example": {
+        "en": "The company made a huge profit last year.",
+        "ko": "그 회사는 작년에 막대한 이익을 냈다."
+      }
+    },
+    {
+      "word": "revenue",
+      "pronunciation": "[révənjùː]",
+      "partOfSpeech": "n.",
+      "meaning": "(정부·기관의) 수익, 세입",
+      "example": {
+        "en": "The company's annual revenue exceeded $1 billion.",
+        "ko": "그 회사의 연간 수익은 10억 달러를 초과했다."
+      }
+    },
+    {
+      "word": "income",
+      "pronunciation": "[ínkʌm]",
+      "partOfSpeech": "n.",
+      "meaning": "소득, 수입",
+      "example": {
+        "en": "His monthly income is not enough to support his family.",
+        "ko": "그의 월 소득은 가족을 부양하기에 충분하지 않다."
+      }
+    },
+    {
+      "word": "earning",
+      "pronunciation": "[ə́ːrni&eng;]",
+      "partOfSpeech": "n.",
+      "meaning": "(pl.) 소득, 수입; 이익",
+      "example": {
+        "en": "The company's earnings have increased for five consecutive quarters.",
+        "ko": "그 회사의 이익은 5분기 연속 증가했다."
+      }
+    },
+    {
+      "word": "loss",
+      "pronunciation": "[lɔːs]",
+      "partOfSpeech": "n.",
+      "meaning": "손실, 손해",
+      "example": {
+        "en": "The company reported a net loss of $5 million.",
+        "ko": "그 회사는 5백만 달러의 순손실을 보고했다."
+      }
+    },
+    {
+      "word": "margin",
+      "pronunciation": "[mάːrdʒin]",
+      "partOfSpeech": "n.",
+      "meaning": "이윤, 마진; 여백; 차이",
+      "example": {
+        "en": "The company operates on very thin profit margins.",
+        "ko": "그 회사는 매우 적은 이윤으로 운영된다."
+      }
+    },
+    {
+      "word": "lucrative",
+      "pronunciation": "[lúːkrətiv]",
+      "partOfSpeech": "a.",
+      "meaning": "수익성이 좋은, 돈벌이가 되는",
+      "example": {
+        "en": "He left his job for a more lucrative position in another company.",
+        "ko": "그는 다른 회사에 있는 더 수익성 좋은 자리를 위해 직장을 그만뒀다."
+      }
+    },
+    {
+      "word": "budget",
+      "pronunciation": "[bʌ́dʒit]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "예산\n       \n        예산을 세우다",
+      "example": {
+        "en": "We need to stick to a tight budget this month.",
+        "ko": "우리는 이번 달에 빠듯한 예산을 지켜야 한다."
+      }
+    },
+    {
+      "word": "expenditure",
+      "pronunciation": "[ikspéndiʧər]",
+      "partOfSpeech": "n.",
+      "meaning": "지출, 비용, 경비",
+      "example": {
+        "en": "The government is trying to cut public expenditure.",
+        "ko": "정부는 공공 지출을 삭감하려고 노력하고 있다."
+      }
+    },
+    {
+      "word": "currency",
+      "pronunciation": "[kə́ːrənsi]",
+      "partOfSpeech": "n.",
+      "meaning": "통화, 화폐",
+      "example": {
+        "en": "The local currency has lost value against the dollar.",
+        "ko": "현지 통화는 달러 대비 가치가 하락했다."
+      }
+    },
+    {
+      "word": "exchange rate",
+      "partOfSpeech": "n.",
+      "meaning": "환율",
+      "example": {
+        "en": "What is the current exchange rate between the euro and the dollar?",
+        "ko": "유로와 달러 간의 현재 환율은 얼마입니까?"
+      }
+    },
+    {
+      "word": "transaction",
+      "pronunciation": "[trænsǽkʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "거래, 매매",
+      "example": {
+        "en": "All financial transactions are recorded in the ledger.",
+        "ko": "모든 금융 거래는 원장에 기록된다."
+      }
+    },
+    {
+      "word": "mortgage",
+      "pronunciation": "[mɔ́ːrgidʒ]",
+      "partOfSpeech": "n.",
+      "meaning": "(주택) 담보 대출, 모기지",
+      "example": {
+        "en": "They took out a 30-year mortgage to buy their house.",
+        "ko": "그들은 집을 사기 위해 30년 만기 주택 담보 대출을 받았다."
+      }
+    },
+    {
+      "word": "interest rate",
+      "partOfSpeech": "n.",
+      "meaning": "금리, 이자율",
+      "example": {
+        "en": "The central bank lowered the interest rate to stimulate the economy.",
+        "ko": "중앙은행은 경제를 활성화하기 위해 금리를 인하했다."
+      }
+    },
+    {
+      "word": "credit",
+      "pronunciation": "[krédit]",
+      "partOfSpeech": "n.",
+      "meaning": "신용 (거래); 융자; 학점",
+      "example": {
+        "en": "He has a good credit history, so he can easily get a loan.",
+        "ko": "그는 신용 기록이 좋아서 쉽게 대출을 받을 수 있다."
+      }
+    },
+    {
+      "word": "debit",
+      "pronunciation": "[débit]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "(통장에서의) 인출(액)\n       \n        인출하다",
+      "example": {
+        "en": "The amount will be debited from your account automatically.",
+        "ko": "그 금액은 당신의 계좌에서 자동으로 인출될 것입니다."
+      }
+    },
+    {
+      "word": "collateral",
+      "pronunciation": "[kəlǽtərəl]",
+      "partOfSpeech": "n.",
+      "meaning": "(대출) 담보물",
+      "example": {
+        "en": "He used his house as collateral for the loan.",
+        "ko": "그는 대출을 위해 자신의 집을 담보로 사용했다."
+      }
+    },
+    {
+      "word": "hedge",
+      "pronunciation": "[hedʒ]",
+      "partOfSpeech": "v.\n       \n        n.",
+      "meaning": "(금전적 손실에 대한) 대비책을 세우다\n       \n        울타리, 방지책",
+      "example": {
+        "en": "Investors use various strategies to hedge against risk.",
+        "ko": "투자자들은 위험에 대비하기 위해 다양한 전략을 사용한다."
+      }
+    },
+    {
+      "word": "audit",
+      "pronunciation": "[ɔ́ːdit]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "(회계) 감사\n       \n        감사하다",
+      "example": {
+        "en": "The company undergoes an external audit every year.",
+        "ko": "그 회사는 매년 외부 회계 감사를 받는다."
+      }
+    },
+    {
+      "word": "tax",
+      "pronunciation": "[tæks]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "세금\n       \n        세금을 부과하다",
+      "example": {
+        "en": "The government collects taxes to pay for public services.",
+        "ko": "정부는 공공 서비스를 위해 세금을 걷는다."
+      }
+    },
+    {
+      "word": "tariff",
+      "pronunciation": "[tǽrif]",
+      "partOfSpeech": "n.",
+      "meaning": "관세",
+      "example": {
+        "en": "The government imposed a high tariff on imported cars.",
+        "ko": "정부는 수입차에 높은 관세를 부과했다."
+      }
+    },
+    {
+      "word": "property",
+      "pronunciation": "[prάpərti]",
+      "partOfSpeech": "n.",
+      "meaning": "재산, 자산; 부동산; 속성",
+      "example": {
+        "en": "The storm caused significant damage to property.",
+        "ko": "그 폭풍은 재산에 상당한 피해를 입혔다."
+      }
+    },
+    {
+      "word": "estate",
+      "pronunciation": "[istéit]",
+      "partOfSpeech": "n.",
+      "meaning": "(상속) 재산; 사유지, 단지",
+      "example": {
+        "en": "He left his entire estate to his children.",
+        "ko": "그는 전 재산을 자녀들에게 남겼다."
+      }
+    },
+    {
+      "word": "real estate",
+      "partOfSpeech": "n.",
+      "meaning": "부동산",
+      "example": {
+        "en": "He works as a real estate agent.",
+        "ko": "그는 부동산 중개인으로 일한다."
+      }
+    },
+    {
+      "word": "asset management",
+      "partOfSpeech": "n.",
+      "meaning": "자산 관리",
+      "example": {
+        "en": "He works for a global asset management firm.",
+        "ko": "그는 글로벌 자산 운용사에서 근무한다."
+      }
+    },
+    {
+      "word": "wealth",
+      "pronunciation": "[welθ]",
+      "partOfSpeech": "n.",
+      "meaning": "부, 재산",
+      "example": {
+        "en": "The book explains how to build long-term wealth.",
+        "ko": "그 책은 장기적인 부를 쌓는 방법을 설명한다."
+      }
+    },
+    {
+      "word": "fortune",
+      "pronunciation": "[fɔ́ːrʧən]",
+      "partOfSpeech": "n.",
+      "meaning": "(많은) 재산, 부; 운",
+      "example": {
+        "en": "He made his fortune in the oil industry.",
+        "ko": "그는 석유 산업에서 재산을 모았다."
+      }
+    },
+    {
+      "word": "inheritance",
+      "pronunciation": "[inhéritəns]",
+      "partOfSpeech": "n.",
+      "meaning": "상속 재산, 유산",
+      "example": {
+        "en": "She received a large inheritance from her grandfather.",
+        "ko": "그녀는 할아버지로부터 많은 유산을 받았다."
+      }
+    },
+    {
+      "word": "bequest",
+      "pronunciation": "[bikwést]",
+      "partOfSpeech": "n.",
+      "meaning": "유증, 유산 (유언에 의해 남겨진 재산)",
+      "example": {
+        "en": "He left a generous bequest to his favorite charity.",
+        "ko": "그는 가장 좋아하는 자선 단체에 후한 유산을 남겼다."
+      }
+    },
+    {
+      "word": "pension",
+      "pronunciation": "[pénʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "연금",
+      "example": {
+        "en": "He lives comfortably on his pension.",
+        "ko": "그는 연금으로 편안하게 생활한다."
+      }
+    },
+    {
+      "word": "insurance",
+      "pronunciation": "[inʃúərəns]",
+      "partOfSpeech": "n.",
+      "meaning": "보험",
+      "example": {
+        "en": "It is wise to have health insurance.",
+        "ko": "건강 보험에 가입하는 것이 현명하다."
+      }
+    },
+    {
+      "word": "premium",
+      "pronunciation": "[príːmiəm]",
+      "partOfSpeech": "n.",
+      "meaning": "보험료; 할증료; 아주 높은 품질",
+      "example": {
+        "en": "You have to pay an annual premium for your car insurance.",
+        "ko": "당신은 자동차 보험료를 매년 납부해야 한다."
+      }
+    },
+    {
+      "word": "claim",
+      "pronunciation": "[kleim]",
+      "partOfSpeech": "v.\n       \n        n.",
+      "meaning": "요구하다, 주장하다\n       \n        (보험금) 청구; 주장",
+      "example": {
+        "en": "He filed a claim with his insurance company after the accident.",
+        "ko": "그는 사고 후 보험사에 보험금을 청구했다."
+      }
+    },
+    {
+      "word": "deposit",
+      "pronunciation": "[dipάzit]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "보증금; 예금; 퇴적물\n       \n        예금하다",
+      "example": {
+        "en": "We had to pay a deposit to rent the apartment.",
+        "ko": "우리는 아파트를 임대하기 위해 보증금을 내야 했다."
+      }
+    },
+    {
+      "word": "withdrawal",
+      "pronunciation": "[wiðdrɔ́ːəl]",
+      "partOfSpeech": "n.",
+      "meaning": "(예금의) 인출",
+      "example": {
+        "en": "You can make a withdrawal from any ATM.",
+        "ko": "어떤 ATM에서든 인출할 수 있습니다."
+      }
+    },
+    {
+      "word": "philanthropy",
+      "pronunciation": "[filǽnθrəpi]",
+      "partOfSpeech": "n.",
+      "meaning": "박애, 자선 활동",
+      "example": {
+        "en": "The foundation is known for its philanthropy.",
+        "ko": "그 재단은 자선 활동으로 알려져 있다."
+      }
+    },
+    {
+      "word": "donation",
+      "pronunciation": "[dounéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "기부, 기증",
+      "example": {
+        "en": "The museum was built with a generous donation from a local businessman.",
+        "ko": "그 박물관은 지역 사업가의 후한 기부로 지어졌다."
+      }
+    },
+    {
+      "word": "charity",
+      "pronunciation": "[tʃǽrəti]",
+      "partOfSpeech": "n.",
+      "meaning": "자선 단체; 자선",
+      "example": {
+        "en": "All proceeds from the event will go to charity.",
+        "ko": "행사 수익금 전액은 자선 단체에 기부될 것입니다."
+      }
+    },
+    {
+      "word": "endowment",
+      "pronunciation": "[indáumənt]",
+      "partOfSpeech": "n.",
+      "meaning": "(대학·기관 등에의) 기부, 기증 재산",
+      "example": {
+        "en": "The university has a large endowment fund.",
+        "ko": "그 대학은 많은 기부 기금을 가지고 있다."
+      }
+    }
+  ]
+}

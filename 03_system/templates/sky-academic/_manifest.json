@@ -1,0 +1,25 @@
+{
+    "id": "sky-academic",
+    "name": "Sky Academic",
+    "description": "독해 Intermediate + 보카 템플릿. 스카이블루와 앰버의 밝고 학구적인 분위기. Full-bleed 표지와 짝수행 배경이 특징.",
+    "version": "1.0.0",
+    "author": "Vera's Flavor",
+    "fonts": {
+        "heading": "Inter",
+        "body": "Noto Sans KR",
+        "accent": "Inter"
+    },
+    "palette": {
+        "primary": "#0284C7",
+        "primaryLight": "#F0F9FF",
+        "secondary": "#FBBF24",
+        "accent": "#0369A1"
+    },
+    "coverStyle": "full-bleed",
+    "borderRadius": "6px",
+    "headerStyle": "thin-line",
+    "usedBy": [
+        "[편입영어]독해_intermediate.html",
+        "[편입영어]보카_basic(1-70).html"
+    ]
+}

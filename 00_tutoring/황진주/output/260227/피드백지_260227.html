@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>학습 피드백지 — 황진주 260227</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+
+  /* =============================================================
+     피드백지 공통 CSS v2.0 — Teal & Warm 팔레트
+     Primary Dark: #2c6975 | Primary Light: #68b2a0
+     Accent Blue: #1a6fc4 | Red: #e53e3e | Green: #2f855a
+     ============================================================= */
+
+  /* ===== RESET & BASE ===== */
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html {
+    font-size: 9.5pt;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 9.5pt;
+    line-height: 1.65;
+    color: #1a202c;
+    background: #f7fafa !important;
+    orphans: 3; widows: 3;
+  }
+
+  @page { size: A4; margin: 15mm 13mm; }
+
+  /* ===== PAGE BREAK ===== */
+  .page-break-after { page-break-after: always !important; }
+  .page-break-before { page-break-before: always !important; }
+  .avoid-break { page-break-inside: avoid !important; break-inside: avoid !important; }
+  h1, h2, h3, h4 { page-break-after: avoid !important; }
+  table, .concept-box, .tip-box, .warning-box, .answer-box, .grammar-block,
+  .problem-card, .diagnosis-card {
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+
+  /* ===== HEADINGS ===== */
+  h1 {
+    font-size: 18pt; font-weight: 700; color: #2c6975 !important;
+    margin: 16px 0 8px 0; padding-bottom: 5px;
+    border-bottom: 2.5px solid #2c6975; line-height: 1.3;
+  }
+  h2 {
+    font-size: 14pt; font-weight: 700; color: #2c6975 !important;
+    margin: 14px 0 8px 0; padding-bottom: 3px;
+    border-bottom: 1.5px solid #d0e4df; line-height: 1.3;
+  }
+  h3 {
+    font-size: 12pt; font-weight: 700; color: #2d3748 !important;
+    margin: 12px 0 6px 0; line-height: 1.4;
+  }
+  h4 {
+    font-size: 10pt; font-weight: 700; color: #4a5568 !important;
+    margin: 8px 0 5px 0; line-height: 1.4;
+  }
+  p { margin-bottom: 6px; }
+  strong { font-weight: 700; }
+  hr { border: none; border-top: 1px solid #d0e4df; margin: 16px 0; }
+
+  /* ===== TABLES ===== */
+  table {
+    width: 100%; border-collapse: collapse;
+    margin: 10px 0 12px 0; font-size: 8.5pt; line-height: 1.55;
+  }
+  thead th {
+    background-color: #68b2a0 !important; color: #fff !important;
+    font-weight: 700; padding: 6px 8px; text-align: left;
+    border: 1px solid #5aa090; font-size: 8.5pt;
+  }
+  tbody td {
+    padding: 5px 8px; border: 1px solid #d0e4df; vertical-align: top;
+  }
+  tbody tr:nth-child(odd) { background-color: #fff !important; }
+  tbody tr:nth-child(even) { background-color: #f0f7f5 !important; }
+  tbody td:first-child { font-weight: 500; }
+
+  .result-correct { color: #2f855a !important; font-weight: 700; }
+  .result-wrong { color: #e53e3e !important; font-weight: 700; }
+
+  /* ===== REPORT HEADER (첫 페이지) ===== */
+  .report-header { margin-bottom: 14px; }
+  .report-date { font-size: 9.5pt; color: #718096 !important; font-weight: 400; margin-bottom: 3px; }
+  .report-title {
+    font-size: 20pt; font-weight: 700; color: #2c6975 !important;
+    margin-bottom: 5px; line-height: 1.2; border: none; padding: 0;
+  }
+  .report-subtitle { font-size: 11pt; font-weight: 400; color: #4a5568 !important; margin-bottom: 2px; }
+  .report-meta { font-size: 8.5pt; color: #718096 !important; line-height: 1.8; margin-top: 6px; }
+  .report-meta span { display: inline-block; margin-right: 14px; }
+
+  /* ===== SECTION HEADER BAR ===== */
+  .section-header {
+    background-color: #2c6975 !important; color: #fff !important;
+    padding: 10px 20px; margin: 16px -13mm 12px -13mm;
+    padding-left: 16mm; padding-right: 13mm;
+    font-size: 14pt; font-weight: 700; line-height: 1.3;
+  }
+  .section-header .section-num {
+    font-size: 11pt; font-weight: 300; display: block;
+    margin-bottom: 1px; color: #9fcfc2 !important;
+  }
+
+  /* ===== SEVERITY BADGES ===== */
+  .severity-high {
+    display: inline-block; background-color: #e53e3e !important; color: #fff !important;
+    font-size: 7.5pt; font-weight: 700; padding: 1px 8px; border-radius: 10px;
+  }
+  .severity-mid {
+    display: inline-block; background-color: #ed8936 !important; color: #fff !important;
+    font-size: 7.5pt; font-weight: 700; padding: 1px 8px; border-radius: 10px;
+  }
+  .severity-low {
+    display: inline-block; background-color: #2f855a !important; color: #fff !important;
+    font-size: 7.5pt; font-weight: 700; padding: 1px 8px; border-radius: 10px;
+  }
+
+  /* ===== DIAGNOSIS CARD (학습 요약) ===== */
+  .diagnosis-card {
+    border: 1.5px solid #a8cec5; border-radius: 16px;
+    padding: 12px 16px; margin: 12px 0; background-color: #fff !important;
+  }
+  .diagnosis-card h3 { margin-top: 0; color: #2c6975 !important; font-size: 11pt; }
+  .priority-order {
+    background-color: #eaf3f0 !important; border-left: 3px solid #68b2a0;
+    padding: 8px 14px; margin: 10px 0; font-size: 9.5pt; border-radius: 0 12px 12px 0;
+  }
+
+  /* ===== QUESTION BOX ===== */
+  .question-box {
+    background-color: #f0f7f5 !important; border-left: 3px solid #68b2a0;
+    padding: 8px 12px; margin: 6px 0; font-size: 9.5pt; line-height: 1.65;
+    border-radius: 0 12px 12px 0;
+  }
+  .question-box p { margin: 0; }
+
+  /* ===== ANSWER BOX ===== */
+  .answer-box {
+    background-color: #f0fff4 !important; border-left: 3px solid #2f855a;
+    padding: 6px 12px; margin: 6px 0; font-weight: 500;
+    border-radius: 0 12px 12px 0;
+  }
+
+  /* ===== GRAMMAR BLOCK ===== */
+  .grammar-block {
+    background-color: #f0f4f3 !important; border: 1px solid #d0e4df;
+    padding: 10px 14px; margin: 10px 0; border-radius: 12px;
+    font-size: 8.5pt; line-height: 1.75; white-space: pre-wrap;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+
+  /* ===== TIP BOX ===== */
+  .tip-box {
+    background-color: #fffaf0 !important; border-left: 3px solid #ed8936;
+    padding: 8px 14px; margin: 10px 0; border-radius: 0 12px 12px 0;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+  .tip-box .tip-label {
+    font-weight: 700; color: #c05621 !important; font-size: 8.5pt;
+    display: block; margin-bottom: 3px;
+  }
+
+  /* ===== WARNING BOX ===== */
+  .warning-box {
+    background-color: #fff5f5 !important; border-left: 3px solid #e53e3e;
+    padding: 8px 14px; margin: 10px 0; border-radius: 0 12px 12px 0;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+  .warning-box .warning-label {
+    font-weight: 700; color: #e53e3e !important; font-size: 8.5pt;
+    display: block; margin-bottom: 3px;
+  }
+
+  /* ===== CONCEPT BOX ===== */
+  .concept-box {
+    background-color: #eaf3f0 !important; border: 1px solid #68b2a0;
+    padding: 10px 14px; margin: 10px 0; border-radius: 12px;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+  .concept-box .concept-label {
+    font-weight: 700; color: #2c6975 !important; font-size: 8.5pt;
+    display: block; margin-bottom: 4px;
+  }
+
+  /* ===== PROBLEM CARD ===== */
+  .problem-card {
+    border: 1px solid #d0e4df; border-radius: 14px;
+    padding: 12px 16px; margin: 10px 0;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+    background-color: #fff !important;
+  }
+  .problem-header {
+    display: flex; align-items: center; margin-bottom: 10px; gap: 10px;
+  }
+  .problem-badge {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 32px; height: 32px; border-radius: 50%;
+    background-color: #68b2a0 !important; color: #fff !important;
+    font-weight: 700; font-size: 11pt; flex-shrink: 0;
+  }
+  .problem-title {
+    font-size: 10pt; font-weight: 700; color: #2d3748 !important;
+  }
+  .problem-source {
+    font-size: 7.5pt; color: #718096 !important; font-weight: 400;
+    display: block; margin-top: 1px;
+  }
+
+  /* ===== HIGHLIGHT ===== */
+  .hl-key { color: #2c6975 !important; font-weight: 700; }
+  .hl-wrong { color: #e53e3e !important; font-weight: 700; text-decoration: line-through; }
+  .hl-correct { color: #2f855a !important; font-weight: 700; }
+  .hl-blue { color: #1a6fc4 !important; font-weight: 700; }
+
+  /* ===== FLOWCHART ===== */
+  .flowchart { margin: 12px 0; page-break-inside: avoid !important; }
+  .flow-step {
+    background-color: #eaf3f0 !important; border: 1px solid #a8cec5;
+    border-radius: 12px; padding: 8px 14px; margin-bottom: 3px; font-size: 9pt;
+  }
+  .flow-step .step-label { font-weight: 700; color: #2c6975 !important; margin-right: 8px; }
+  .flow-step .step-sub {
+    padding-left: 20px; font-size: 8.5pt; color: #4a5568 !important;
+    margin-top: 3px; line-height: 1.65;
+  }
+  .flow-arrow { text-align: center; font-size: 13pt; color: #68b2a0 !important; line-height: 1.2; margin: 2px 0; }
+
+  /* ===== CHECKLIST ===== */
+  .checklist-group { margin-bottom: 12px; page-break-inside: avoid !important; }
+  .checklist-group-title {
+    font-size: 10pt; font-weight: 700; color: #2c6975 !important;
+    margin-bottom: 6px; padding: 3px 0; border-bottom: 1px solid #d0e4df;
+  }
+  .checklist-item {
+    display: flex; align-items: flex-start; gap: 6px;
+    padding: 3px 0; font-size: 9pt; line-height: 1.55;
+  }
+  .checkbox {
+    display: inline-block; width: 13px; height: 13px; min-width: 13px;
+    border: 1.5px solid #a0aec0; border-radius: 3px; margin-top: 2px;
+  }
+
+  /* ===== SECTION DIVIDER ===== */
+  .section-divider { border: none; border-top: 1.5px solid #d0e4df; margin: 16px 0; }
+
+  /* ===== VARIANT CHOICES ===== */
+  .variant-choices { padding-left: 18px; font-size: 8.5pt; line-height: 1.75; margin: 3px 0; }
+
+  /* ===== GROUP ROW ===== */
+  .group-row td {
+    background-color: #eaf3f0 !important; font-weight: 700;
+    color: #2c6975 !important; border-bottom: 2px solid #68b2a0;
+  }
+
+  /* ===== COMPARE TABLE ===== */
+  .compare-table thead th:nth-child(2) { background-color: #5aa090 !important; }
+  .compare-table thead th:nth-child(3) { background-color: #2f855a !important; }
+
+  /* ===== EXPRESSION TABLE ===== */
+  .expression-table td:first-child { white-space: nowrap; font-weight: 700; }
+
+  /* ===== MARKER ===== */
+  .marker-o { color: #2f855a !important; font-weight: 700; }
+  .marker-x { color: #e53e3e !important; font-weight: 700; }
+
+  /* ===== PASSAGE BLOCK (독해 지문) ===== */
+  .passage-block {
+    background-color: #f7fafa !important; border: 1px solid #d0e4df;
+    border-left: 3px solid #68b2a0;
+    padding: 12px 16px; margin: 10px 0; border-radius: 0 12px 12px 0;
+    font-size: 9pt; line-height: 1.85;
+    text-align: justify !important;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+
+  /* Allow long passages to break across pages */
+  .passage-block--long {
+    page-break-inside: auto !important; break-inside: auto !important;
+  }
+
+  /* Legacy .page container fallback (pre-v2 feedback HTMLs) */
+  .page {
+    min-height: 297mm;
+    height: auto;
+    overflow: visible;
+  }
+  .page-content {
+    overflow: visible;
+  }
+
+  /* ===== CHOICES LIST ===== */
+  .choices-list {
+    margin: 8px 0; font-size: 9pt; line-height: 1.85;
+  }
+  .choices-list .choice-item { padding: 1px 0; }
+  .choice-correct { color: #2f855a !important; font-weight: 700; }
+  .choice-wrong { color: #e53e3e !important; font-weight: 700; text-decoration: line-through; }
+
+  /* ===== PRINT OPTIMIZATION ===== */
+  @media print {
+    body { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; background: #fff !important; }
+    .section-header { margin-left: -13mm; margin-right: -13mm; padding-left: 16mm; padding-right: 13mm; }
+  }
+
+</style>
+</head>
+<body>
+
+<div class="report-header">
+  <div class="report-date">2026. 02. 27</div>
+  <h1 class="report-title" style="border:none; margin-bottom:6px;">학습 피드백지</h1>
+  <div class="report-subtitle">문법 — 자동사 vs 타동사 완벽 정리 (외부 자료)</div>
+  <div class="report-meta">
+    <span><strong>학생</strong> 황진주</span>
+    <span><strong>교재</strong> 자동사 vs 타동사 완벽 정리 (외부 자료)</span>
+    <span><strong>범위</strong> 개념 학습</span>
+  </div>
+</div>
+
+<div class="diagnosis-card">
+  <h3>학습 요약</h3>
+  <p style="font-size:10pt; margin-bottom:8px;">
+    전체 0문제 중 오답 <strong>0문제</strong> (정답률 약 -)
+  </p>
+  <p style="font-size:9.5pt; margin-bottom:4px;">
+    <strong style="color:#38a169;">잘한 점:</strong> 자동사와 타동사 개념을 외부 자료까지 찾아가며 체계적으로 정리하는 적극적인 학습 태도가 매우 우수합니다. 주요 자동사/타동사 100선을 표로 정리한 것은 효율적인 학습 전략입니다.
+  </p>
+  <p style="font-size:9.5pt; margin-bottom:12px;">
+    <strong style="color:#e53e3e;">아쉬운 점:</strong> 개념 정리 자료만으로는 실전 적용 능력을 확인하기 어렵습니다. 편입영어에서 자주 출제되는 '혼동 동사 쌍'과 '불필요한 전치사 오류' 패턴을 실전 문제로 연습해야 합니다.
+  </p>
+  
+  <table>
+    <thead>
+      <tr><th>취약 영역</th><th style="width:60px;">문제 수</th><th style="width:70px;">심각도</th><th>핵심</th></tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td><strong>혼동 동사 쌍</strong></td>
+        <td>0문제</td>
+        <td><span class="severity-high">높음</span></td>
+        <td>lie/lay, rise/raise, sit/set 시제 변화가 편입 단골 출제</td>
+      </tr>
+      <tr>
+        <td><strong>타동사 전치사 오류</strong></td>
+        <td>0문제</td>
+        <td><span class="severity-high">높음</span></td>
+        <td>discuss about, mention about, resemble to 등 편입 빈출</td>
+      </tr>
+      <tr>
+        <td><strong>자동사 수동태 오류</strong></td>
+        <td>0문제</td>
+        <td><span class="severity-mid">보통</span></td>
+        <td>happen, occur, exist 등은 수동태 불가</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="priority-order">
+  <strong>학습 우선순위:</strong> 혼동 동사 쌍(lie/lay, rise/raise) 시제 변화 암기 → 타동사+불필요 전치사 오류 패턴 → 자동사 수동태 불가 원칙
+</div>
+
+<div class="page-break-before section-header">
+  <span class="section-num">Section 1</span>
+  틀린 문제 리스트
+</div>
+
+<div class="page-break-before section-header">
+  <span class="section-num">Section 2</span>
+  해설 파트
+</div>
+
+
+<div class="page-break-before section-header">
+  <span class="section-num">보충</span>
+  문법 보충 설명
+</div>
+<div class="concept-box">
+  <span class="concept-label">자동사의 수동태 불가 원칙</span>
+  <div class="concept-box"><h4>자동사는 수동태로 쓸 수 없다</h4><p>수동태(be + p.p.)는 목적어를 주어로 바꾸는 구조이므로, <strong>목적어가 없는 자동사는 수동태 불가</strong>입니다.</p></div><div class="grammar-block"><h4>편입 빈출 — 수동태 불가 자동사</h4><table><thead><tr><th>틀린 표현 ✕</th><th>올바른 표현 ✓</th></tr></thead><tbody><tr><td>The accident <strong>was happened</strong>.</td><td>The accident <strong>happened</strong>.</td></tr><tr><td>A problem <strong>was occurred</strong>.</td><td>A problem <strong>occurred</strong>.</td></tr><tr><td>Dinosaurs <strong>were disappeared</strong>.</td><td>Dinosaurs <strong>disappeared</strong>.</td></tr><tr><td>The situation <strong>was existed</strong>.</td><td>The situation <strong>existed</strong>.</td></tr><tr><td>She <strong>was belonged</strong> to the club.</td><td>She <strong>belonged</strong> to the club.</td></tr><tr><td>The team <strong>was consisted</strong> of five.</td><td>The team <strong>consisted</strong> of five.</td></tr></tbody></table></div><div class="tip-box"><strong>💡 판별 TIP</strong><p>'~되다'로 해석된다고 무조건 수동태가 아닙니다!<br><strong>happen, occur, take place, break out, consist of, belong to, emerge, appear, disappear, exist, remain, arise</strong><br>→ 모두 자동사이므로 능동태만 사용!</p></div>
+</div>
+<div class="concept-box">
+  <span class="concept-label">편입 실전 — 자동사/타동사 구별이 핵심인 동사들</span>
+  <div class="concept-box"><h4>같은 뜻, 다른 문법 — 짝꿍 동사 정리</h4><p>같은 의미인데 자동사/타동사가 다른 동사들. 편입에서 정확히 구별해야 합니다.</p></div><div class="grammar-block"><table><thead><tr><th>의미</th><th>자동사 (전치사 필요)</th><th>타동사 (전치사 불필요)</th></tr></thead><tbody><tr><td>도착하다</td><td>arrive <strong>at/in</strong></td><td>reach + 목적어</td></tr><tr><td>~에 답하다</td><td>respond <strong>to</strong></td><td>answer + 목적어</td></tr><tr><td>설명하다</td><td>account <strong>for</strong></td><td>explain + 목적어</td></tr><tr><td>말하다</td><td>talk <strong>about</strong></td><td>discuss + 목적어</td></tr><tr><td>들어가다</td><td>go <strong>into</strong></td><td>enter + 목적어</td></tr><tr><td>~에 참석하다</td><td>participate <strong>in</strong></td><td>attend + 목적어</td></tr><tr><td>~에 접근하다</td><td>come close <strong>to</strong></td><td>approach + 목적어</td></tr></tbody></table></div><div class="warning-box"><strong>⚠️ 실전 팁</strong><p>편입 시험에서는 <strong>"전치사 유무"</strong>만으로 정답이 갈리는 문제가 매년 출제됩니다. 위 표를 완벽히 암기하세요!</p></div>
+</div>
+
+<div class="page-break-before section-header">
+  <span class="section-num">개념 보충</span>
+  개념 보충 학습
+</div>
+<h2>1. 자동사 vs 타동사 기본 판별 + 편입 빈출 전치사 오류</h2>
+<div class="concept-box"><h4>자동사 vs 타동사 핵심 구분법</h4><p><strong>자동사(Intransitive Verb)</strong>: 목적어 없이 주어+동사만으로 완전한 문장. 전치사가 필요할 수 있음.</p><ul><li>She <strong>arrived</strong> at the airport. (arrive + at)</li><li>He <strong>listened</strong> to the music. (listen + to)</li></ul><p><strong>타동사(Transitive Verb)</strong>: 반드시 목적어가 필요. 전치사 없이 바로 목적어.</p><ul><li>She <strong>discussed</strong> the plan. (discuss + 목적어, 전치사 ✕)</li><li>He <strong>mentioned</strong> the problem. (mention + 목적어, 전치사 ✕)</li></ul></div><div class="grammar-block"><h4>편입영어 최빈출 — 타동사인데 전치사를 붙이는 오류</h4><table><thead><tr><th>틀린 표현 ✕</th><th>올바른 표현 ✓</th><th>의미</th></tr></thead><tbody><tr><td>discuss <strong>about</strong></td><td>discuss + 목적어</td><td>~을 토론하다</td></tr><tr><td>mention <strong>about</strong></td><td>mention + 목적어</td><td>~을 언급하다</td></tr><tr><td>resemble <strong>to/with</strong></td><td>resemble + 목적어</td><td>~을 닮다</td></tr><tr><td>enter <strong>into</strong> (장소)</td><td>enter + 목적어</td><td>~에 들어가다</td></tr><tr><td>reach <strong>to/at</strong></td><td>reach + 목적어</td><td>~에 도달하다</td></tr><tr><td>approach <strong>to</strong></td><td>approach + 목적어</td><td>~에 접근하다</td></tr><tr><td>attend <strong>to</strong> (참석)</td><td>attend + 목적어</td><td>~에 참석하다</td></tr><tr><td>marry <strong>with</strong></td><td>marry + 목적어</td><td>~와 결혼하다</td></tr><tr><td>answer <strong>to</strong> (질문)</td><td>answer + 목적어</td><td>~에 답하다</td></tr><tr><td>inhabit <strong>in</strong></td><td>inhabit + 목적어</td><td>~에 거주하다</td></tr></tbody></table></div><div class="grammar-block"><h4>편입영어 최빈출 — 자동사인데 전치사를 빼먹는 오류</h4><table><thead><tr><th>틀린 표현 ✕</th><th>올바른 표현 ✓</th><th>의미</th></tr></thead><tbody><tr><td>arrive + 장소</td><td>arrive <strong>at/in</strong> + 장소</td><td>~에 도착하다</td></tr><tr><td>listen + 목적어</td><td>listen <strong>to</strong> + 목적어</td><td>~을 듣다</td></tr><tr><td>respond + 목적어</td><td>respond <strong>to</strong> + 목적어</td><td>~에 응답하다</td></tr><tr><td>agree + 사람</td><td>agree <strong>with</strong> + 사람</td><td>~에 동의하다</td></tr><tr><td>belong + 사람</td><td>belong <strong>to</strong> + 사람</td><td>~에 속하다</td></tr><tr><td>consist + 요소</td><td>consist <strong>of</strong> + 요소</td><td>~으로 구성되다</td></tr><tr><td>apologize + 사람</td><td>apologize <strong>to</strong> + 사람</td><td>~에게 사과하다</td></tr><tr><td>complain + 내용</td><td>complain <strong>about</strong> + 내용</td><td>~에 대해 불평하다</td></tr><tr><td>object + 내용</td><td>object <strong>to</strong> + 내용</td><td>~에 반대하다</td></tr><tr><td>graduate + 학교</td><td>graduate <strong>from</strong> + 학교</td><td>~을 졸업하다</td></tr></tbody></table></div>
+<div class="grammar-block">She discussed the issue with her colleagues. (discuss + 목적어, about ✕)
+The children resemble their mother. (resemble + 목적어, to ✕)
+We arrived at the station on time. (arrive + at, 자동사)
+He entered the room quietly. (enter + 목적어, into ✕)
+They agreed with the proposal. (agree + with, 자동사)
+</div>
+<h4>예문 연습</h4>
+<div class="grammar-block">1. 그녀는 그 문제를 동료들과 토론했다. → She discussed the issue with her colleagues.
+2. 아이들은 어머니를 닮았다. → The children resemble their mother.
+3. 우리는 제시간에 역에 도착했다. → We arrived at the station on time.
+4. 그는 조용히 방에 들어갔다. → He entered the room quietly.
+5. 그들은 그 제안에 동의했다. → They agreed with the proposal.
+</div>
+<div class="warning-box"><strong>⚠️ 편입 최다 오답 패턴</strong><p><strong>1. discuss about ✕</strong>: '~에 대해 토론하다'라는 한국어 때문에 about을 붙이고 싶지만, discuss는 타동사!</p><p><strong>2. arrive vs reach</strong>: arrive는 자동사(arrive at), reach는 타동사(reach + 목적어). 둘 다 '도착하다'이지만 문법 구조가 다름!</p><p><strong>3. marry with ✕</strong>: '~와 결혼하다'라서 with가 자연스럽지만, marry는 타동사. 단, be married to는 가능!</p><p><strong>4. attend to ≠ attend</strong>: attend + 목적어 = 참석하다 / attend to + 목적어 = 돌보다, 주의를 기울이다 (의미가 완전히 다름!)</p></div>
+<div class="page-break-before section-header">
+  <span class="section-num">연습 1</span>
+  자동사 vs 타동사 기본 판별 + 편입 빈출 전치사 오류 연습문제 (20문제)
+</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>1.</strong> The committee _______ the matter thoroughly at yesterday's meeting.</p><div class="variant-choices">① discussed about&nbsp;&nbsp;&nbsp;② discussed&nbsp;&nbsp;&nbsp;③ discussed on&nbsp;&nbsp;&nbsp;④ discussed for&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>2.</strong> She _______ her mother in both appearance and personality.</p><div class="variant-choices">① resembles to&nbsp;&nbsp;&nbsp;② resembles with&nbsp;&nbsp;&nbsp;③ resembles&nbsp;&nbsp;&nbsp;④ is resembled&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>3.</strong> The train _______ the station five minutes late.</p><div class="variant-choices">① arrived&nbsp;&nbsp;&nbsp;② arrived at&nbsp;&nbsp;&nbsp;③ reached at&nbsp;&nbsp;&nbsp;④ reached to&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>4.</strong> He _______ the classroom without knocking.</p><div class="variant-choices">① entered into&nbsp;&nbsp;&nbsp;② entered in&nbsp;&nbsp;&nbsp;③ entered&nbsp;&nbsp;&nbsp;④ entered to&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>5.</strong> We should _______ this problem before it gets worse.</p><div class="variant-choices">① approach to&nbsp;&nbsp;&nbsp;② approach for&nbsp;&nbsp;&nbsp;③ approach&nbsp;&nbsp;&nbsp;④ approach at&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>6.</strong> Did you _______ the conference last week?</p><div class="variant-choices">① attend to&nbsp;&nbsp;&nbsp;② attend at&nbsp;&nbsp;&nbsp;③ attend in&nbsp;&nbsp;&nbsp;④ attend&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>7.</strong> She _______ John in a small church ceremony.</p><div class="variant-choices">① married with&nbsp;&nbsp;&nbsp;② married to&nbsp;&nbsp;&nbsp;③ married&nbsp;&nbsp;&nbsp;④ got married&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>8.</strong> The students were asked to _______ the teacher's question.</p><div class="variant-choices">① answer to&nbsp;&nbsp;&nbsp;② answer for&nbsp;&nbsp;&nbsp;③ answer&nbsp;&nbsp;&nbsp;④ answer about&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>9.</strong> Nobody _______ the fact that he had lied.</p><div class="variant-choices">① mentioned about&nbsp;&nbsp;&nbsp;② mentioned of&nbsp;&nbsp;&nbsp;③ mentioned&nbsp;&nbsp;&nbsp;④ mentioned on&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>10.</strong> He finally _______ the summit after eight hours of climbing.</p><div class="variant-choices">① reached to&nbsp;&nbsp;&nbsp;② reached at&nbsp;&nbsp;&nbsp;③ arrived&nbsp;&nbsp;&nbsp;④ reached&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>11.</strong> Many species of birds _______ this island.</p><div class="variant-choices">① inhabit in&nbsp;&nbsp;&nbsp;② inhabit on&nbsp;&nbsp;&nbsp;③ inhabit&nbsp;&nbsp;&nbsp;④ inhabit at&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>12.</strong> She _______ her friend's advice and changed her plan.</p><div class="variant-choices">① listened&nbsp;&nbsp;&nbsp;② listened to&nbsp;&nbsp;&nbsp;③ listened at&nbsp;&nbsp;&nbsp;④ listened for&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>13.</strong> The team _______ five members from different departments.</p><div class="variant-choices">① consists&nbsp;&nbsp;&nbsp;② consists of&nbsp;&nbsp;&nbsp;③ is consisted of&nbsp;&nbsp;&nbsp;④ is consisting of&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>14.</strong> I must _______ my teacher for being late.</p><div class="variant-choices">① apologize&nbsp;&nbsp;&nbsp;② apologize to&nbsp;&nbsp;&nbsp;③ apologize for&nbsp;&nbsp;&nbsp;④ apologize about&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>15.</strong> The accident _______ at the intersection yesterday.</p><div class="variant-choices">① was happened&nbsp;&nbsp;&nbsp;② was occurred&nbsp;&nbsp;&nbsp;③ occurred&nbsp;&nbsp;&nbsp;④ had been occurred&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>16.</strong> All the books on this shelf _______ the library.</p><div class="variant-choices">① belong&nbsp;&nbsp;&nbsp;② belong to&nbsp;&nbsp;&nbsp;③ are belonged to&nbsp;&nbsp;&nbsp;④ are belonging to&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>17.</strong> She _______ her university with honors in 2024.</p><div class="variant-choices">① graduated&nbsp;&nbsp;&nbsp;② graduated from&nbsp;&nbsp;&nbsp;③ was graduated&nbsp;&nbsp;&nbsp;④ graduated at&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>18.</strong> The manager _______ several customers about the product recall.</p><div class="variant-choices">① contacted to&nbsp;&nbsp;&nbsp;② contacted with&nbsp;&nbsp;&nbsp;③ contacted&nbsp;&nbsp;&nbsp;④ made contact&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>19.</strong> Many people _______ the new policy proposed by the government.</p><div class="variant-choices">① objected&nbsp;&nbsp;&nbsp;② objected to&nbsp;&nbsp;&nbsp;③ objected about&nbsp;&nbsp;&nbsp;④ objected for&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>20.</strong> The survivors could not _______ such a terrible disaster.</p><div class="variant-choices">① recover&nbsp;&nbsp;&nbsp;② recover from&nbsp;&nbsp;&nbsp;③ recover of&nbsp;&nbsp;&nbsp;④ be recovered from&nbsp;&nbsp;&nbsp;</div>
+<div class="page-break-before">
+  <h3>연습 1. 자동사 vs 타동사 기본 판별 + 편입 빈출 전치사 오류 정답 및 해설</h3>
+  <table>
+    <thead><tr><th style="width:30px;">#</th><th style="width:80px;">정답</th><th>해설</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>②</td><td>discuss는 타동사로 목적어를 바로 취한다. 전치사 about/on/for 불필요.</td></tr>
+      <tr><td>2</td><td>③</td><td>resemble은 타동사로 전치사 없이 목적어를 바로 취한다. 수동태도 불가.</td></tr>
+      <tr><td>3</td><td>②</td><td>arrive는 자동사이므로 전치사 at이 필요. reach는 타동사로 전치사 불필요(reached the station).</td></tr>
+      <tr><td>4</td><td>③</td><td>enter는 타동사로 전치사 없이 목적어를 바로 취한다. enter into는 '계약/협상에 들어가다'라는 다른 의미.</td></tr>
+      <tr><td>5</td><td>③</td><td>approach는 타동사로 전치사 없이 목적어를 바로 취한다.</td></tr>
+      <tr><td>6</td><td>④</td><td>attend(참석하다)는 타동사. attend to는 '돌보다/주의를 기울이다'로 의미가 다르다.</td></tr>
+      <tr><td>7</td><td>③</td><td>marry는 타동사로 전치사 없이 목적어를 바로 취한다. be/get married to는 가능.</td></tr>
+      <tr><td>8</td><td>③</td><td>answer(질문에 답하다)는 타동사. answer for는 '~에 대해 책임지다'로 의미가 다르다.</td></tr>
+      <tr><td>9</td><td>③</td><td>mention은 타동사로 전치사 없이 목적어를 바로 취한다.</td></tr>
+      <tr><td>10</td><td>④</td><td>reach는 타동사로 전치사 없이 목적어를 바로 취한다. arrive는 자동사(arrived at).</td></tr>
+      <tr><td>11</td><td>③</td><td>inhabit은 타동사로 전치사 없이 목적어를 바로 취한다.</td></tr>
+      <tr><td>12</td><td>②</td><td>listen은 자동사로 목적어 앞에 전치사 to가 필요하다.</td></tr>
+      <tr><td>13</td><td>②</td><td>consist of는 자동사구로 수동태 불가. '~으로 구성되다'는 consist of 또는 be composed of.</td></tr>
+      <tr><td>14</td><td>②</td><td>apologize to + 사람 = ~에게 사과하다. apologize for + 이유 = ~에 대해 사과하다. 여기서는 선생님(사람) 대상.</td></tr>
+      <tr><td>15</td><td>③</td><td>occur/happen은 자동사로 수동태 불가. '사고가 발생했다'는 능동태만 가능.</td></tr>
+      <tr><td>16</td><td>②</td><td>belong to는 자동사구로 수동태 불가, 진행형 불가(상태동사).</td></tr>
+      <tr><td>17</td><td>②</td><td>graduate from + 학교 = ~을 졸업하다. graduate는 자동사로 전치사 from 필요.</td></tr>
+      <tr><td>18</td><td>③</td><td>contact은 타동사로 전치사 없이 목적어를 바로 취한다.</td></tr>
+      <tr><td>19</td><td>②</td><td>object to = ~에 반대하다. object는 자동사로 전치사 to가 필요.</td></tr>
+      <tr><td>20</td><td>②</td><td>recover from = ~에서 회복하다. recover는 자동사로 전치사 from 필요.</td></tr>
+    </tbody>
+  </table>
+</div>
+<h2>2. 혼동 동사 쌍: lie/lay, rise/raise, sit/set</h2>
+<div class="concept-box"><h4>편입영어 최다 출제 — 혼동 동사 쌍</h4><p>자동사/타동사가 형태만 비슷하고 의미와 시제 변화가 완전히 다른 동사 쌍입니다.</p></div><div class="grammar-block"><h4>핵심 비교표</h4><table><thead><tr><th>구분</th><th>동사</th><th>의미</th><th>현재</th><th>과거</th><th>과거분사</th><th>~ing</th></tr></thead><tbody><tr><td><strong>자동사</strong></td><td>lie</td><td>눕다, 놓여있다</td><td>lie</td><td><strong>lay</strong></td><td><strong>lain</strong></td><td>lying</td></tr><tr><td><strong>타동사</strong></td><td>lay</td><td>~을 놓다, 눕히다</td><td>lay</td><td><strong>laid</strong></td><td><strong>laid</strong></td><td>laying</td></tr><tr><td><strong>자동사</strong></td><td>rise</td><td>오르다, 일어나다</td><td>rise</td><td><strong>rose</strong></td><td><strong>risen</strong></td><td>rising</td></tr><tr><td><strong>타동사</strong></td><td>raise</td><td>~을 올리다, 기르다</td><td>raise</td><td><strong>raised</strong></td><td><strong>raised</strong></td><td>raising</td></tr><tr><td><strong>자동사</strong></td><td>sit</td><td>앉다</td><td>sit</td><td><strong>sat</strong></td><td><strong>sat</strong></td><td>sitting</td></tr><tr><td><strong>타동사</strong></td><td>set</td><td>~을 놓다, 설정하다</td><td>set</td><td><strong>set</strong></td><td><strong>set</strong></td><td>setting</td></tr><tr><td><strong>자동사</strong></td><td>fall</td><td>떨어지다</td><td>fall</td><td><strong>fell</strong></td><td><strong>fallen</strong></td><td>falling</td></tr><tr><td><strong>타동사</strong></td><td>fell</td><td>~을 베다(나무)</td><td>fell</td><td><strong>felled</strong></td><td><strong>felled</strong></td><td>felling</td></tr></tbody></table></div><div class="tip-box"><strong>💡 암기 TIP — lie vs lay 완벽 구분법</strong><p><strong>lie(자동사)</strong>: 주어가 <em>스스로</em> 눕는 것 → 목적어 없음<br>• I <strong>lay</strong> on the bed yesterday. (과거형 lay — 자동사 lie의 과거!)</p><p><strong>lay(타동사)</strong>: 누군가가 <em>무언가를</em> 눕히는 것 → 목적어 있음<br>• She <strong>laid</strong> the baby on the bed. (과거형 laid — 타동사 lay의 과거)</p><p><strong>핵심</strong>: 목적어가 있으면 lay(laid-laid), 없으면 lie(lay-lain)</p></div>
+<div class="grammar-block">The book lies on the table. (자동사 lie: 놓여있다, 목적어 없음)
+She laid the book on the table. (타동사 lay: ~을 놓다, 목적어 있음)
+The sun rises in the east. (자동사 rise: 오르다, 목적어 없음)
+He raised his hand to ask a question. (타동사 raise: ~을 올리다, 목적어 있음)
+Please sit down here. (자동사 sit: 앉다, 목적어 없음)
+She set the vase on the shelf. (타동사 set: ~을 놓다, 목적어 있음)
+</div>
+<h4>예문 연습</h4>
+<div class="grammar-block">1. 그는 어젯밤 소파에 누워있었다. → He lay on the sofa last night. (lie-lay-lain)
+2. 그녀는 아기를 침대에 눕혔다. → She laid the baby on the bed. (lay-laid-laid)
+3. 물가가 급격히 올랐다. → Prices rose sharply. (rise-rose-risen)
+4. 정부가 세금을 올렸다. → The government raised taxes. (raise-raised-raised)
+5. 나뭇잎들이 땅에 떨어졌다. → Leaves fell to the ground. (fall-fell-fallen)
+</div>
+<div class="warning-box"><strong>⚠️ 최대 함정 — lie의 과거형 lay ≠ 타동사 lay</strong><p>편입영어에서 가장 많이 틀리는 포인트입니다!</p><ul><li><strong>lie(자동사, 눕다)</strong>의 과거형 = <strong>lay</strong></li><li><strong>lay(타동사, 놓다)</strong>의 현재형 = <strong>lay</strong></li></ul><p>즉, <strong>lay</strong>라는 단어를 보면 두 가지 가능성이 있습니다:</p><ol><li>자동사 lie의 <strong>과거형</strong> → 목적어 없음 (He <strong>lay</strong> on the bed.)</li><li>타동사 lay의 <strong>현재형</strong> → 목적어 있음 (Please <strong>lay</strong> the book here.)</li></ol><p><strong>판별법</strong>: 뒤에 목적어가 있는지 확인!</p></div>
+<div class="page-break-before section-header">
+  <span class="section-num">연습 2</span>
+  혼동 동사 쌍: lie/lay, rise/raise, sit/set 연습문제 (20문제)
+</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>1.</strong> The cat _______ on the sofa all afternoon yesterday.</p><div class="variant-choices">① laid&nbsp;&nbsp;&nbsp;② lied&nbsp;&nbsp;&nbsp;③ lay&nbsp;&nbsp;&nbsp;④ lain&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>2.</strong> She carefully _______ the flowers on the table.</p><div class="variant-choices">① lay&nbsp;&nbsp;&nbsp;② laid&nbsp;&nbsp;&nbsp;③ lied&nbsp;&nbsp;&nbsp;④ lain&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>3.</strong> The sun _______ above the horizon at 6 a.m. this morning.</p><div class="variant-choices">① raised&nbsp;&nbsp;&nbsp;② risen&nbsp;&nbsp;&nbsp;③ rose&nbsp;&nbsp;&nbsp;④ was risen&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>4.</strong> The company _______ employees' salaries by 5% last year.</p><div class="variant-choices">① rose&nbsp;&nbsp;&nbsp;② risen&nbsp;&nbsp;&nbsp;③ raised&nbsp;&nbsp;&nbsp;④ was raised&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>5.</strong> The dog has been _______ by the fireplace since morning.</p><div class="variant-choices">① laying&nbsp;&nbsp;&nbsp;② lying&nbsp;&nbsp;&nbsp;③ lieing&nbsp;&nbsp;&nbsp;④ lain&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>6.</strong> The workers are _______ the foundation for the new building.</p><div class="variant-choices">① lying&nbsp;&nbsp;&nbsp;② laying&nbsp;&nbsp;&nbsp;③ lain&nbsp;&nbsp;&nbsp;④ lieing&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>7.</strong> Gas prices have _______ significantly over the past month.</p><div class="variant-choices">① raised&nbsp;&nbsp;&nbsp;② rose&nbsp;&nbsp;&nbsp;③ risen&nbsp;&nbsp;&nbsp;④ been rising&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>8.</strong> The teacher asked the students to _______ their hands.</p><div class="variant-choices">① rise&nbsp;&nbsp;&nbsp;② raise&nbsp;&nbsp;&nbsp;③ risen&nbsp;&nbsp;&nbsp;④ arose&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>9.</strong> Please _______ down and make yourself comfortable.</p><div class="variant-choices">① set&nbsp;&nbsp;&nbsp;② seat&nbsp;&nbsp;&nbsp;③ sit&nbsp;&nbsp;&nbsp;④ sat&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>10.</strong> She _______ the alarm for 6 o'clock every morning.</p><div class="variant-choices">① sits&nbsp;&nbsp;&nbsp;② sets&nbsp;&nbsp;&nbsp;③ sat&nbsp;&nbsp;&nbsp;④ seat&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>11.</strong> The letter had _______ unopened on the desk for weeks.</p><div class="variant-choices">① laid&nbsp;&nbsp;&nbsp;② lay&nbsp;&nbsp;&nbsp;③ lain&nbsp;&nbsp;&nbsp;④ lied&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>12.</strong> The hens _______ three eggs yesterday.</p><div class="variant-choices">① lay&nbsp;&nbsp;&nbsp;② laid&nbsp;&nbsp;&nbsp;③ lied&nbsp;&nbsp;&nbsp;④ lain&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>13.</strong> A thick fog _______ over the valley when we arrived.</p><div class="variant-choices">① laid&nbsp;&nbsp;&nbsp;② lain&nbsp;&nbsp;&nbsp;③ lay&nbsp;&nbsp;&nbsp;④ was laying&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>14.</strong> The level of the river has _______ by two meters since last week.</p><div class="variant-choices">① raised&nbsp;&nbsp;&nbsp;② risen&nbsp;&nbsp;&nbsp;③ rose&nbsp;&nbsp;&nbsp;④ been raised&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>15.</strong> They _______ the flag at dawn every day.</p><div class="variant-choices">① rise&nbsp;&nbsp;&nbsp;② raise&nbsp;&nbsp;&nbsp;③ arise&nbsp;&nbsp;&nbsp;④ risen&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>16.</strong> She was _______ the baby gently in the crib when I walked in.</p><div class="variant-choices">① lying&nbsp;&nbsp;&nbsp;② laying&nbsp;&nbsp;&nbsp;③ lain&nbsp;&nbsp;&nbsp;④ lied&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>17.</strong> Temperatures _______ to 40 degrees during the heatwave.</p><div class="variant-choices">① raised&nbsp;&nbsp;&nbsp;② rose&nbsp;&nbsp;&nbsp;③ risen&nbsp;&nbsp;&nbsp;④ were risen&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>18.</strong> He _______ the heavy box on the shelf with great effort.</p><div class="variant-choices">① set&nbsp;&nbsp;&nbsp;② sat&nbsp;&nbsp;&nbsp;③ sit&nbsp;&nbsp;&nbsp;④ seat&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>19.</strong> Several important issues _______ during the meeting yesterday.</p><div class="variant-choices">① raised&nbsp;&nbsp;&nbsp;② rose&nbsp;&nbsp;&nbsp;③ arose&nbsp;&nbsp;&nbsp;④ were risen&nbsp;&nbsp;&nbsp;</div>
+<p style="line-height:2.0; font-size:9.5pt; margin-bottom:2px;"><strong>20.</strong> The old man _______ on the bench and watched the sunset.</p><div class="variant-choices">① set&nbsp;&nbsp;&nbsp;② sat&nbsp;&nbsp;&nbsp;③ sit&nbsp;&nbsp;&nbsp;④ seated&nbsp;&nbsp;&nbsp;</div>
+<div class="page-break-before">
+  <h3>연습 2. 혼동 동사 쌍: lie/lay, rise/raise, sit/set 정답 및 해설</h3>
+  <table>
+    <thead><tr><th style="width:30px;">#</th><th style="width:80px;">정답</th><th>해설</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>③</td><td>자동사 lie(눕다)의 과거형은 lay. 목적어 없이 '소파 위에 누워있었다'이므로 자동사.</td></tr>
+      <tr><td>2</td><td>②</td><td>타동사 lay(놓다)의 과거형은 laid. the flowers라는 목적어가 있으므로 타동사.</td></tr>
+      <tr><td>3</td><td>③</td><td>자동사 rise(오르다)의 과거형은 rose. 태양이 스스로 뜨는 것이므로 자동사.</td></tr>
+      <tr><td>4</td><td>③</td><td>타동사 raise(올리다)의 과거형은 raised. employees' salaries라는 목적어가 있으므로 타동사.</td></tr>
+      <tr><td>5</td><td>②</td><td>자동사 lie(눕다)의 현재분사는 lying. 목적어 없이 '벽난로 옆에 누워있는' 상태이므로 자동사.</td></tr>
+      <tr><td>6</td><td>②</td><td>타동사 lay(놓다)의 현재분사는 laying. the foundation이라는 목적어가 있으므로 타동사.</td></tr>
+      <tr><td>7</td><td>③</td><td>have + 과거분사 = 현재완료. 자동사 rise의 과거분사는 risen. 가격이 스스로 오른 것.</td></tr>
+      <tr><td>8</td><td>②</td><td>타동사 raise(올리다) + their hands(목적어). 학생들이 손을 드는 행위.</td></tr>
+      <tr><td>9</td><td>③</td><td>자동사 sit(앉다). 스스로 앉는 행위이므로 자동사. set은 타동사(~을 놓다).</td></tr>
+      <tr><td>10</td><td>②</td><td>타동사 set(설정하다) + the alarm(목적어). 알람을 맞추는 행위.</td></tr>
+      <tr><td>11</td><td>③</td><td>had + 과거분사 = 과거완료. 자동사 lie(놓여있다)의 과거분사는 lain. 편지가 스스로 놓여있는 상태.</td></tr>
+      <tr><td>12</td><td>②</td><td>타동사 lay(낳다/놓다)의 과거형은 laid. three eggs라는 목적어가 있으므로 타동사.</td></tr>
+      <tr><td>13</td><td>③</td><td>자동사 lie(위치하다)의 과거형은 lay. 안개가 스스로 계곡 위에 깔려있는 상태.</td></tr>
+      <tr><td>14</td><td>②</td><td>has + 과거분사 = 현재완료. 자동사 rise의 과거분사는 risen. 수위가 스스로 올라간 것.</td></tr>
+      <tr><td>15</td><td>②</td><td>타동사 raise(올리다) + the flag(목적어). 국기를 게양하는 행위.</td></tr>
+      <tr><td>16</td><td>②</td><td>was + ~ing = 과거진행형. 타동사 lay(눕히다)의 ~ing형은 laying. the baby(목적어)가 있으므로 타동사.</td></tr>
+      <tr><td>17</td><td>②</td><td>자동사 rise(오르다)의 과거형은 rose. 온도가 스스로 올라간 것이므로 자동사.</td></tr>
+      <tr><td>18</td><td>①</td><td>타동사 set(놓다)의 과거형은 set(불변). the heavy box(목적어)가 있으므로 타동사.</td></tr>
+      <tr><td>19</td><td>③</td><td>자동사 arise(발생하다)의 과거형은 arose. 이슈가 스스로 발생한 것이므로 자동사.</td></tr>
+      <tr><td>20</td><td>②</td><td>자동사 sit(앉다)의 과거형은 sat. 스스로 앉은 행위이므로 자동사.</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<hr class="section-divider">
+<p style="text-align: center; color: #a0aec0; font-size: 9pt; margin-top: 30px;">
+  피드백지 작성 완료 — 2026. 02. 27
+</p>
+</body>
+</html>

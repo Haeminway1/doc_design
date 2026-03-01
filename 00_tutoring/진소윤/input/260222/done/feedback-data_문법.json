@@ -1,0 +1,378 @@
+{
+  "student": "진소윤",
+  "date": "260222",
+  "subject": "문법",
+  "textbook": "Grammar Bridge Part 1",
+  "range": "Ch.1~4 연습문제 Q1~Q12",
+  "textbookDataHint": "grammar/bridge/ch01",
+  "summary": {
+    "totalQ": 12,
+    "wrongQ": 4,
+    "correctRate": "67%",
+    "goodPoints": "자동사/타동사 기본 구분(Q1 reach, Q5 lie/lay, Q6 rise/raise)과 혼동 동사 쌍의 활용(Q3 await, Q4 enter, Q9 apologize for, Q10 comprise)은 정확하게 처리했습니다. Ch.4 혼동 동사 파트는 확실히 잡혀 있습니다.",
+    "badPoints": "전치사를 붙이면 안 되는 '완전타동사'(discuss, mention, marry)에서 3문제 연속 오답이 나왔습니다. 또한 감각동사(felt) 뒤에 형용사가 와야 한다는 2형식 보어 규칙도 아직 불안정합니다.",
+    "priority": "완전타동사 전치사 오용 패턴 집중 학습 → 2형식 감각동사 보어 규칙 복습",
+    "weakAreas": [
+      {
+        "area": "완전타동사 + 전치사 오용",
+        "count": 3,
+        "severity": "high",
+        "note": "discuss about(Q2), mentioned about(Q7), marry with(Q8) — 한국어 해석의 조사('~에 대해', '~와') 때문에 전치사를 붙이는 오류"
+      },
+      {
+        "area": "2형식 감각동사 보어 (형용사 vs 부사)",
+        "count": 1,
+        "severity": "mid",
+        "note": "felt + 형용사(comfortable)가 맞지만, incredibly(부사)가 앞에 있어 혼동"
+      }
+    ]
+  },
+  "wrongAnswers": [
+    {
+      "q": 2,
+      "selected": "미표기",
+      "correct": "①",
+      "type": "밑줄 어법 (완전타동사)",
+      "passage": "During the weekly team meeting, the manager brought up a critical issue. For nearly an hour, they continued to ①discuss about the potential consequences of each option. They needed to come to a consensus quickly, ensuring that everyone had a chance to ②voice their opinion and that the discussion ③remained productive and focused on ④finding a viable solution.",
+      "question": "Which part is grammatically incorrect?",
+      "choices": ["① discuss about", "② voice", "③ remained", "④ finding", "⑤ No error"],
+      "explanation": "<div class=\"concept-box\"><h4>핵심: discuss는 타동사 — 전치사 about 불필요</h4><p><strong>discuss</strong>는 '~에 대해 토론하다'라는 의미가 동사 자체에 포함된 <strong>완전타동사</strong>입니다. 우리말로 '~에 대해'라고 해석되기 때문에 about을 붙이고 싶지만, 영어에서는 전치사 없이 목적어를 바로 취합니다.</p></div><div class=\"grammar-block\"><table><tr><th>표현</th><th>O / X</th><th>이유</th></tr><tr><td>discuss <strong>the issue</strong></td><td><strong>O</strong></td><td>타동사 + 목적어 (정상)</td></tr><tr><td><s>discuss <strong>about</strong> the issue</s></td><td><strong>X</strong></td><td>타동사에 불필요한 전치사</td></tr><tr><td>talk <strong>about</strong> the issue</td><td><strong>O</strong></td><td>talk은 자동사 → about 필요</td></tr></table></div><div class=\"tip-box\"><h4>헷갈리는 포인트</h4><p>같은 문장에서 ②voice(의견을 표하다 — 타동사 O), ③remained(~한 상태로 남다 — 2형식 O), ④finding(동명사 — focused on + -ing O)은 모두 정상입니다. 네 선지가 전부 문법적으로 괜찮아 보이면, <strong>'전치사가 붙으면 안 되는 타동사'</strong>를 먼저 찾으세요.</p></div><div class=\"answer-box\"><h4>정답: ① discuss about → discuss로 수정</h4><p>discuss the potential consequences가 올바른 표현입니다.</p></div>",
+      "studentAnalysis": {
+        "whyChosen": "discuss는 '토론하다'인데 한국어로 '~에 대해 토론하다'라고 하기 때문에 about이 자연스럽게 느껴짐. 같은 문장에 있는 다른 선지들(voice, remained, finding)은 익숙한 형태라 더 의심이 안 감.",
+        "errorPattern": "완전타동사 + 전치사 오용 미인지 — 한국어 조사 간섭",
+        "focusPoint": "'~에 대해'로 해석되는 동사 = 반드시 전치사 없이! discuss, mention, address, consider 등. 반면 talk about, complain about은 자동사라 전치사 필요."
+      }
+    },
+    {
+      "q": 7,
+      "selected": "미표기",
+      "correct": "③",
+      "type": "밑줄 어법 (완전타동사)",
+      "passage": "The customer service representative listened patiently as the client ①complained about the faulty product. She ②apologized for the inconvenience and then ③mentioned about the company's return policy, guiding him through the process. Her professional attitude helped to ④calm the angry customer.",
+      "question": "Which part is grammatically incorrect?",
+      "choices": ["① complained about", "② apologized for", "③ mentioned about", "④ calm", "⑤ No error"],
+      "explanation": "<div class=\"concept-box\"><h4>핵심: mention은 타동사 — 전치사 about 불필요</h4><p><strong>mention</strong>은 '~을 언급하다'라는 의미의 <strong>완전타동사</strong>입니다. discuss와 마찬가지로 동사 자체에 'about'의 의미가 포함되어 있으므로 전치사 없이 목적어를 바로 취합니다.</p></div><div class=\"grammar-block\"><table><tr><th>동사</th><th>자/타</th><th>올바른 예시</th><th>틀린 예시</th></tr><tr><td><strong>mention</strong></td><td>타동사</td><td>mention the policy</td><td><s>mention about the policy</s></td></tr><tr><td><strong>complain</strong></td><td>자동사</td><td>complain <strong>about</strong> the product</td><td>—</td></tr><tr><td><strong>apologize</strong></td><td>자동사</td><td>apologize <strong>for</strong> the error</td><td>—</td></tr></table></div><div class=\"tip-box\"><h4>헷갈리는 포인트: 같은 문장 안에 about이 2번</h4><p>이 문제가 교묘한 이유: ①complained <strong>about</strong>(O)이 바로 앞에 있어서, ③mentioned <strong>about</strong>도 자연스럽게 느껴집니다. 하지만 complain은 <strong>자동사</strong>라 about이 필요하고, mention은 <strong>타동사</strong>라 about이 불필요합니다.</p><p><strong>판별법</strong>: 동사 뒤에 '~을/를'을 붙여보세요.<br>- '불평하다' → '그것<strong>을</strong> 불평하다' (어색) → 자동사 → about 필요<br>- '언급하다' → '그것<strong>을</strong> 언급하다' (자연스러움) → 타동사 → about 불필요</p></div><div class=\"answer-box\"><h4>정답: ③ mentioned about → mentioned로 수정</h4><p>mentioned the company's return policy가 올바른 표현입니다.</p></div>",
+      "studentAnalysis": {
+        "whyChosen": "같은 문장에 ①complained about이 정상적으로 쓰여 있어서, ③mentioned about도 같은 패턴으로 보임. 'about + 명사' 구조가 반복되니 둘 다 맞아 보이는 착시 효과.",
+        "errorPattern": "유사 구조 착시 — 자동사(complain)의 about과 타동사(mention)의 about을 구분하지 못함",
+        "focusPoint": "같은 문장에 전치사가 여러 번 나오면, 각 동사가 자동사인지 타동사인지 개별적으로 확인. '~을/를' 테스트가 가장 빠른 판별법."
+      }
+    },
+    {
+      "q": 8,
+      "selected": "미표기",
+      "correct": "①",
+      "type": "밑줄 어법 (완전타동사)",
+      "passage": "My grandfather often shares stories about his youth. He told me he knew he wanted to ①marry with her the moment he saw her. They ②got married two years later. They have ③lived in the same house for over fifty years and have ④faced many challenges together.",
+      "question": "Which part is grammatically incorrect?",
+      "choices": ["① marry with her", "② got married", "③ lived", "④ faced", "⑤ No error"],
+      "explanation": "<div class=\"concept-box\"><h4>핵심: marry는 타동사 — 전치사 with 불필요</h4><p><strong>marry</strong>는 '~와 결혼하다'라는 의미의 <strong>완전타동사</strong>입니다. 한국어의 '~와'에 이끌려 with를 붙이기 쉽지만, 영어에서는 전치사 없이 목적어를 바로 취합니다.</p></div><div class=\"grammar-block\"><table><tr><th>표현</th><th>의미</th><th>구조</th></tr><tr><td><strong>marry</strong> someone</td><td>~와 결혼하다 (동작)</td><td>타동사 + 목적어</td></tr><tr><td><strong>be married to</strong> someone</td><td>~와 결혼한 상태이다</td><td>형용사 + 전치사</td></tr><tr><td><strong>get married (to</strong> someone<strong>)</strong></td><td>결혼하다 (행위)</td><td>동사 + 형용사 (+ 전치사)</td></tr></table></div><div class=\"tip-box\"><h4>헷갈리는 포인트: marry vs. be married to vs. got married</h4><p>이 문제에서 ②got married(O)가 바로 다음 문장에 나옵니다. 'married' 앞에 'got'이 있으면 '결혼하다'라는 행위를 나타내며, 뒤에 'to someone'이 올 수 있습니다. 하지만 <strong>동사 marry</strong> 자체를 쓸 때는 전치사 없이 바로 목적어!</p><p>- He wanted to <strong>marry her</strong>. (O) — 동사 marry<br>- They <strong>got married</strong>. (O) — get + 형용사<br>- <s>He wanted to marry <strong>with</strong> her.</s> (X)</p></div><div class=\"answer-box\"><h4>정답: ① marry with her → marry her로 수정</h4><p>marry는 타동사이므로 전치사 with 없이 목적어를 직접 취합니다.</p></div>",
+      "studentAnalysis": {
+        "whyChosen": "'결혼하다'의 '~와'가 영어의 with로 직역되어 marry with가 자연스럽게 느껴짐. 바로 뒤 문장에 got married가 있어서, ①도 비슷한 구조로 착각할 수 있음.",
+        "errorPattern": "한국어 조사 직역 간섭 — '~와 결혼하다'의 '와' → with",
+        "focusPoint": "marry = 타동사 (전치사 X). be married to = 형용사 구문 (to O). 동사 marry 뒤에 with/to 절대 안 붙음!"
+      }
+    },
+    {
+      "q": 12,
+      "selected": "미표기",
+      "correct": "②",
+      "type": "빈칸 (2형식 감각동사 보어)",
+      "passage": "After a long day of hiking, the soft mattress in the cabin felt incredibly ________ to the tired adventurers.",
+      "question": "다음 빈칸에 들어갈 가장 적절한 것은?",
+      "choices": ["① comfort", "② comfortable", "③ comfortably", "④ comforting", "⑤ to comfort"],
+      "explanation": "<div class=\"concept-box\"><h4>핵심: felt = 감각동사 → 뒤에 형용사(주격보어)가 온다</h4><p><strong>feel/felt</strong>이 '~하게 느껴지다'라는 의미로 쓰이면 <strong>2형식 연결동사(linking verb)</strong>입니다. 연결동사 뒤에는 주어를 설명하는 <strong>형용사(주격보어)</strong>가 와야 합니다.</p></div><div class=\"grammar-block\"><table><tr><th>동사</th><th>역할</th><th>뒤에 오는 것</th><th>예시</th></tr><tr><td>feel</td><td>연결동사 (2형식)</td><td><strong>형용사</strong></td><td>The mattress felt <strong>comfortable</strong>.</td></tr><tr><td>feel</td><td>일반동사 (3형식)</td><td>목적어</td><td>She felt <strong>the fabric</strong>.</td></tr></table><br><table><tr><th>선지</th><th>품사</th><th>적합 여부</th></tr><tr><td>① comfort</td><td>명사/동사</td><td>X — 보어 자리에 동사원형 불가</td></tr><tr><td><strong>② comfortable</strong></td><td><strong>형용사</strong></td><td><strong>O — 연결동사 + 형용사</strong></td></tr><tr><td>③ comfortably</td><td>부사</td><td>X — 부사는 보어가 될 수 없음</td></tr><tr><td>④ comforting</td><td>형용사(현재분사)</td><td>△ — '위로가 되는'이라는 의미로 문맥상 부자연스러움</td></tr><tr><td>⑤ to comfort</td><td>to부정사</td><td>X — 보어 자리에 to부정사 부적합</td></tr></table></div><div class=\"tip-box\"><h4>헷갈리는 포인트: incredibly가 이미 있는데?</h4><p>'felt <strong>incredibly</strong> ________' 구조에서 incredibly(부사)가 이미 있으니 뒤에도 부사(comfortably)가 와야 할 것 같은 느낌이 듭니다. 하지만 <strong>incredibly는 빈칸의 형용사를 수식하는 부사</strong>입니다.</p><p>구조: felt + [incredibly(부사) + <strong>comfortable(형용사)</strong>]<br>= 매트리스가 [믿을 수 없이 편안하게] 느껴졌다</p><p><strong>감각동사 판별법</strong>: 동사를 <strong>be</strong>로 바꿔보세요. 말이 되면 연결동사 → 형용사!<br>- The mattress <strong>was</strong> incredibly comfortable. (O) → felt도 형용사 필요!</p></div><div class=\"answer-box\"><h4>정답: ② comfortable</h4><p>felt는 2형식 감각동사로, 주격보어인 형용사 comfortable이 정답입니다.</p></div>",
+      "studentAnalysis": {
+        "whyChosen": "빈칸 앞에 incredibly(부사)가 있어서, '부사 + 부사' 조합인 comfortably가 어울릴 것 같은 착시. 또는 '위로가 되는'이라는 뉘앙스의 comforting과 '편안한' comfortable 사이에서 혼동.",
+        "errorPattern": "감각동사(연결동사) 뒤 보어 품사 혼동 — 부사 수식어에 이끌려 부사를 선택하거나, 현재분사 형용사(comforting)와 일반 형용사(comfortable) 구분 불안정",
+        "focusPoint": "감각동사(look, sound, smell, taste, feel) + 형용사! be동사 치환법으로 확인. incredibly는 형용사를 꾸미는 부사일 뿐, 빈칸에 영향을 주지 않음."
+      }
+    }
+  ],
+  "starredCorrect": [],
+  "conceptQuestions": [
+    {
+      "title": "전치사를 붙이면 안 되는 완전타동사 vs. 전치사가 필요한 자동사",
+      "explanation": "<div class=\"concept-box\"><h4>핵심 개념</h4><p>한국어로 '~에 대해', '~와', '~에' 등의 조사가 붙는 표현이라도, 영어에서 <strong>타동사</strong>이면 전치사 없이 목적어를 바로 취합니다. 반면, 비슷한 뜻의 <strong>자동사</strong>는 전치사가 필요합니다.</p><p>이 구분이 편입 시험에서 가장 자주 출제되는 포인트입니다.</p></div><div class=\"grammar-block\"><h4>타동사 (전치사 X) vs. 자동사 (전치사 O) 비교표</h4><table><tr><th>의미</th><th>타동사 (전치사 X)</th><th>자동사 (전치사 O)</th></tr><tr><td>토론하다</td><td><strong>discuss</strong> the issue</td><td><strong>talk about</strong> the issue</td></tr><tr><td>언급하다</td><td><strong>mention</strong> the fact</td><td><strong>speak of</strong> the fact</td></tr><tr><td>결혼하다</td><td><strong>marry</strong> someone</td><td><strong>get married to</strong> someone</td></tr><tr><td>들어가다</td><td><strong>enter</strong> the room</td><td><strong>go into</strong> the room</td></tr><tr><td>도착하다</td><td><strong>reach</strong> the city</td><td><strong>arrive at</strong> the city</td></tr><tr><td>참석하다</td><td><strong>attend</strong> the meeting</td><td><strong>be present at</strong> the meeting</td></tr><tr><td>접근하다</td><td><strong>approach</strong> the building</td><td><strong>come close to</strong> the building</td></tr><tr><td>연락하다</td><td><strong>contact</strong> the manager</td><td><strong>get in touch with</strong> the manager</td></tr><tr><td>닮다</td><td><strong>resemble</strong> her mother</td><td><strong>look like</strong> her mother</td></tr></table></div><div class=\"tip-box\"><h4>판별법: '~을/를' 테스트</h4><p>동사 뒤에 '~을/를'을 붙여 자연스러우면 <strong>타동사</strong>(전치사 X)입니다.</p><p>- '토론하다' → '그것<strong>을</strong> 토론하다' (자연스러움) → discuss (Vt) → 전치사 X<br>- '불평하다' → '그것<strong>을</strong> 불평하다' (어색) → complain (Vi) → about 필요<br>- '언급하다' → '그것<strong>을</strong> 언급하다' (자연스러움) → mention (Vt) → 전치사 X<br>- '사과하다' → '그것<strong>을</strong> 사과하다' (어색) → apologize (Vi) → for 필요</p></div><div class=\"warning-box\"><h4>주의: enter into는 예외적으로 가능</h4><p><strong>enter the room</strong> (물리적 장소) — 전치사 X<br><strong>enter into a contract</strong> (추상적: 계약 체결) — into O<br><strong>enter into negotiations</strong> (추상적: 협상 시작) — into O</p></div>",
+      "examples": [
+        "They discussed the matter for hours. (O) / They discussed about the matter. (X)",
+        "She mentioned the problem briefly. (O) / She mentioned about the problem. (X)",
+        "He married her last year. (O) / He married with her. (X)",
+        "We reached the summit. (O) / We reached to the summit. (X)",
+        "She attended the meeting. (O) / She attended at the meeting. (X)"
+      ],
+      "exampleSentences": [
+        "그들은 그 문제에 대해 토론했다. → They discussed the problem.",
+        "그녀는 그 사실을 언급했다. → She mentioned the fact.",
+        "그는 그녀와 결혼했다. → He married her.",
+        "우리는 마침내 도시에 도착했다. → We finally reached the city.",
+        "그녀는 그 건물에 접근했다. → She approached the building."
+      ],
+      "confusionPoints": "<div class=\"warning-box\"><h4>가장 헷갈리는 함정: 같은 문장에 자동사+전치사와 타동사가 섞여 있을 때</h4><p>Q7처럼 한 문장에 <strong>complained about</strong>(자동사 — about O)과 <strong>mentioned about</strong>(타동사 — about X)이 동시에 나오면, about이 반복되니 둘 다 맞아 보입니다.</p><p><strong>해결법</strong>: 각 동사를 개별적으로 '~을/를' 테스트하세요. 문장 전체의 패턴에 속지 마세요!</p></div>",
+      "practiceProblems": [
+        {
+          "sentence": "The students eagerly ______ the new topic during the seminar.",
+          "choices": ["① discussed about", "② discussed", "③ discussed on", "④ discussed for"],
+          "answer": "②",
+          "explanation": "discuss는 타동사로 전치사 없이 목적어를 바로 취한다."
+        },
+        {
+          "sentence": "She quietly ______ the library and found a seat near the window.",
+          "choices": ["① entered into", "② entered to", "③ entered", "④ entered in"],
+          "answer": "③",
+          "explanation": "enter는 물리적 장소에 들어갈 때 타동사로 전치사 없이 쓴다."
+        },
+        {
+          "sentence": "The CEO briefly ______ the upcoming merger during the press conference.",
+          "choices": ["① mentioned about", "② mentioned on", "③ mentioned", "④ mentioned of"],
+          "answer": "③",
+          "explanation": "mention은 타동사로 전치사 없이 목적어를 바로 취한다."
+        },
+        {
+          "sentence": "After dating for five years, he finally decided to ______ her.",
+          "choices": ["① marry with", "② marry to", "③ marry", "④ marry for"],
+          "answer": "③",
+          "explanation": "marry는 타동사로 전치사 없이 목적어를 바로 취한다."
+        },
+        {
+          "sentence": "The rescue team ______ the remote village after a ten-hour journey.",
+          "choices": ["① reached to", "② reached at", "③ arrived", "④ reached"],
+          "answer": "④",
+          "explanation": "reach는 타동사로 전치사 없이 목적어를 바로 취한다. arrive는 자동사라 arrive at/in을 써야 한다."
+        },
+        {
+          "sentence": "All employees must ______ the weekly safety meeting without exception.",
+          "choices": ["① attend at", "② attend to", "③ attend in", "④ attend"],
+          "answer": "④",
+          "explanation": "attend는 타동사로 전치사 없이 목적어를 바로 취한다."
+        },
+        {
+          "sentence": "The two companies decided to ______ a joint venture agreement.",
+          "choices": ["① enter", "② enter into", "③ enter to", "④ enter for"],
+          "answer": "②",
+          "explanation": "enter into는 추상적 의미(계약, 협정 시작)에 사용. 물리적 장소가 아니므로 enter into가 정답."
+        },
+        {
+          "sentence": "The little girl ______ her grandmother in many ways.",
+          "choices": ["① resembles with", "② resembles to", "③ resembles", "④ resembles of"],
+          "answer": "③",
+          "explanation": "resemble은 타동사로 전치사 없이 목적어를 바로 취한다."
+        },
+        {
+          "sentence": "Please ______ the manager if you have any questions about the project.",
+          "choices": ["① contact with", "② contact to", "③ contact", "④ contact for"],
+          "answer": "③",
+          "explanation": "contact는 타동사로 전치사 없이 목적어를 바로 취한다."
+        },
+        {
+          "sentence": "The ship slowly ______ the harbor as the sun was setting.",
+          "choices": ["① approached to", "② approached at", "③ approached for", "④ approached"],
+          "answer": "④",
+          "explanation": "approach는 타동사로 전치사 없이 목적어를 바로 취한다."
+        },
+        {
+          "sentence": "The professor ______ the theory in detail during yesterday's lecture.",
+          "choices": ["① explained about", "② explained", "③ explained on", "④ explained for"],
+          "answer": "②",
+          "explanation": "explain은 3형식 타동사로 전치사 없이 목적어를 바로 취한다. explain + O + to 사람 구조."
+        },
+        {
+          "sentence": "We need to ______ this problem before the deadline.",
+          "choices": ["① address to", "② address about", "③ address", "④ address on"],
+          "answer": "③",
+          "explanation": "address는 '다루다, 처리하다'의 의미로 타동사. 전치사 없이 목적어를 바로 취한다."
+        },
+        {
+          "sentence": "She ______ a wealthy businessman when she was twenty-five.",
+          "choices": ["① married with", "② got married", "③ married", "④ married to"],
+          "answer": "③",
+          "explanation": "marry는 타동사로 전치사 없이 목적어를 바로 취한다. got married 뒤에는 to가 필요."
+        },
+        {
+          "sentence": "He never ______ the accident that happened during his childhood.",
+          "choices": ["① mentioned about", "② mentioned of", "③ mentioned", "④ mentioned on"],
+          "answer": "③",
+          "explanation": "mention은 타동사로 전치사 없이 목적어를 바로 취한다."
+        },
+        {
+          "sentence": "The committee will ______ the proposed changes at the next meeting.",
+          "choices": ["① discuss about", "② discuss on", "③ discuss", "④ discuss over"],
+          "answer": "③",
+          "explanation": "discuss는 타동사로 전치사 없이 목적어를 바로 취한다."
+        },
+        {
+          "sentence": "She is happily ______ a doctor who works at the city hospital.",
+          "choices": ["① married with", "② married to", "③ married for", "④ marry to"],
+          "answer": "②",
+          "explanation": "be married to는 '~와 결혼한 상태'를 나타내는 형용사 구문. 동사 marry와 달리 전치사 to가 필요."
+        },
+        {
+          "sentence": "The journalist ______ the politician's controversial remarks in her article.",
+          "choices": ["① mentioned", "② mentioned about", "③ mentioned on", "④ mentioned over"],
+          "answer": "①",
+          "explanation": "mention은 타동사로 전치사 없이 목적어를 바로 취한다."
+        },
+        {
+          "sentence": "Despite the bad weather, the hikers ______ the campsite before dark.",
+          "choices": ["① reached to", "② arrived to", "③ reached", "④ reached at"],
+          "answer": "③",
+          "explanation": "reach는 타동사로 전치사 없이 목적어를 바로 취한다."
+        },
+        {
+          "sentence": "She ______ the meeting to her colleagues, but nobody seemed to have heard about it.",
+          "choices": ["① mentioned about", "② mentioned", "③ talked", "④ discussed about"],
+          "answer": "②",
+          "explanation": "mention은 타동사. mentioned the meeting to her colleagues (4형식X, 3형식+to 구문)."
+        },
+        {
+          "sentence": "They ______ the new policy in great detail during the conference.",
+          "choices": ["① discussed about", "② talked", "③ discussed", "④ spoke"],
+          "answer": "③",
+          "explanation": "discuss는 타동사로 전치사 없이 목적어를 바로 취한다. talk/speak는 자동사라 about이 필요."
+        }
+      ]
+    },
+    {
+      "title": "2형식 감각동사 (look, sound, smell, taste, feel) + 형용사 보어",
+      "explanation": "<div class=\"concept-box\"><h4>핵심 개념</h4><p>감각동사(look, sound, smell, taste, feel)가 <strong>'~하게 보이다/들리다/느껴지다'</strong>의 의미로 쓰이면 <strong>2형식 연결동사</strong>입니다. 연결동사 뒤에는 주어를 설명하는 <strong>형용사(주격보어)</strong>가 와야 합니다. 부사가 아닙니다!</p></div><div class=\"grammar-block\"><h4>감각동사의 두 얼굴</h4><table><tr><th>동사</th><th>연결동사 (2형식) → 형용사</th><th>일반동사 (3형식) → 목적어</th></tr><tr><td>feel</td><td>The silk feels <strong>smooth</strong>. (매끄럽게 느껴지다)</td><td>She felt <strong>the fabric</strong>. (만져보다)</td></tr><tr><td>look</td><td>You look <strong>tired</strong>. (피곤해 보이다)</td><td>He looked at <strong>the picture</strong>. (바라보다)</td></tr><tr><td>taste</td><td>The soup tastes <strong>salty</strong>. (짠맛이 나다)</td><td>The chef tasted <strong>the sauce</strong>. (맛보다)</td></tr><tr><td>smell</td><td>The flower smells <strong>sweet</strong>. (달콤한 냄새가 나다)</td><td>She smelled <strong>the perfume</strong>. (냄새를 맡다)</td></tr><tr><td>sound</td><td>That sounds <strong>great</strong>. (좋게 들리다)</td><td>—</td></tr></table></div><div class=\"tip-box\"><h4>판별법: be동사 치환</h4><p>감각동사를 <strong>be동사</strong>로 바꿔서 말이 되면 → 연결동사 → <strong>형용사</strong> 필요!</p><p>- The mattress felt comfortable. → The mattress <strong>was</strong> comfortable. (O) → 형용사!<br>- She felt the fabric. → She <strong>was</strong> the fabric. (X) → 일반동사 → 목적어!</p></div><div class=\"warning-box\"><h4>주의: 부사 수식어에 속지 마세요!</h4><p><strong>incredibly, extremely, very, quite</strong> 같은 부사가 빈칸 앞에 있으면, 빈칸에도 부사가 와야 할 것 같은 착각이 생깁니다. 하지만 이 부사들은 <strong>빈칸의 형용사를 수식</strong>하는 것일 뿐!</p><p>- felt [incredibly + <strong>comfortable(형용사)</strong>] = 믿을 수 없이 편안한<br>- looked [extremely + <strong>tired(형용사)</strong>] = 극도로 피곤한</p></div>",
+      "examples": [
+        "The music sounds beautiful. (O) / The music sounds beautifully. (X)",
+        "This cake tastes delicious. (O) / This cake tastes deliciously. (X)",
+        "The flowers smell wonderful. (O) / The flowers smell wonderfully. (X)",
+        "She looks happy. (O) / She looks happily. (X)",
+        "The blanket feels incredibly soft. (O) / The blanket feels incredibly softly. (X)"
+      ],
+      "exampleSentences": [
+        "그 음악은 아름답게 들린다. → The music sounds beautiful.",
+        "이 케이크는 맛있다(맛있게 느껴진다). → This cake tastes delicious.",
+        "꽃에서 좋은 냄새가 난다. → The flowers smell wonderful.",
+        "그녀는 행복해 보인다. → She looks happy.",
+        "그 담요는 믿을 수 없이 부드럽게 느껴진다. → The blanket feels incredibly soft."
+      ],
+      "confusionPoints": "<div class=\"warning-box\"><h4>comfortable vs. comforting 구분</h4><p><strong>comfortable</strong>: (사물/상황이) 편안한 → '주어 자체의 속성'<br><strong>comforting</strong>: (사람에게) 위로가 되는 → '주어가 다른 대상에게 미치는 영향'</p><p>- The mattress felt <strong>comfortable</strong>. (매트리스 자체가 편안한) ✓<br>- Her words were <strong>comforting</strong>. (그녀의 말이 위로가 되는) ✓<br>- The mattress felt <strong>comforting</strong>. (매트리스가 위로가 되는?) △ 문맥상 어색</p></div>",
+      "practiceProblems": [
+        {
+          "sentence": "The freshly baked bread smells absolutely ________ from the kitchen.",
+          "choices": ["① deliciously", "② delicious", "③ deliciousness", "④ to be delicious"],
+          "answer": "②",
+          "explanation": "smell은 연결동사. 형용사 delicious가 보어로 와야 한다. absolutely는 형용사를 수식하는 부사."
+        },
+        {
+          "sentence": "After the renovation, the old house looked surprisingly ________.",
+          "choices": ["① modernly", "② modern", "③ modernize", "④ modernization"],
+          "answer": "②",
+          "explanation": "look은 연결동사. 형용사 modern이 보어. surprisingly는 형용사를 수식하는 부사."
+        },
+        {
+          "sentence": "The new song by the band sounds extremely ________ to many listeners.",
+          "choices": ["① appealingly", "② appeal", "③ appealing", "④ to appeal"],
+          "answer": "③",
+          "explanation": "sound는 연결동사. 현재분사 형용사 appealing이 보어. extremely는 형용사를 수식."
+        },
+        {
+          "sentence": "The herbal tea tasted rather ________ to those who tried it for the first time.",
+          "choices": ["① bitterly", "② bitter", "③ bitterness", "④ to be bitter"],
+          "answer": "②",
+          "explanation": "taste는 연결동사. 형용사 bitter가 보어. rather는 형용사를 수식하는 부사."
+        },
+        {
+          "sentence": "The silk fabric feels incredibly ________ against the skin.",
+          "choices": ["① smooth", "② smoothly", "③ smoothness", "④ smoothing"],
+          "answer": "①",
+          "explanation": "feel은 연결동사. 형용사 smooth가 보어. incredibly는 형용사를 수식하는 부사."
+        },
+        {
+          "sentence": "Her voice sounded unusually ________ during the phone call.",
+          "choices": ["① calmly", "② calm", "③ calming", "④ calmness"],
+          "answer": "②",
+          "explanation": "sound는 연결동사. 형용사 calm이 보어. unusually는 형용사를 수식."
+        },
+        {
+          "sentence": "The old cheese in the fridge smelled absolutely ________.",
+          "choices": ["① terribly", "② terrible", "③ terribleness", "④ to be terrible"],
+          "answer": "②",
+          "explanation": "smell은 연결동사. 형용사 terrible이 보어. absolutely는 형용사를 수식."
+        },
+        {
+          "sentence": "The patient looked considerably ________ after the surgery.",
+          "choices": ["① weakly", "② weaken", "③ weak", "④ weakness"],
+          "answer": "③",
+          "explanation": "look은 연결동사. 형용사 weak가 보어. considerably는 형용사를 수식."
+        },
+        {
+          "sentence": "The water in the hot spring felt perfectly ________ for swimming.",
+          "choices": ["① warmly", "② warm", "③ warming", "④ warmth"],
+          "answer": "②",
+          "explanation": "feel은 연결동사. 형용사 warm이 보어. perfectly는 형용사를 수식."
+        },
+        {
+          "sentence": "The dessert tasted ________, so everyone asked for the recipe.",
+          "choices": ["① amazingly", "② amazing", "③ amazement", "④ to amaze"],
+          "answer": "②",
+          "explanation": "taste는 연결동사. 형용사 amazing이 보어."
+        },
+        {
+          "sentence": "His excuse sounded completely ________ to the teacher.",
+          "choices": ["① ridiculously", "② ridiculous", "③ ridiculousness", "④ ridicule"],
+          "answer": "②",
+          "explanation": "sound는 연결동사. 형용사 ridiculous가 보어. completely는 형용사를 수식."
+        },
+        {
+          "sentence": "The homemade soup smelled incredibly ________ on the cold winter day.",
+          "choices": ["① invitingly", "② inviting", "③ invitation", "④ to invite"],
+          "answer": "②",
+          "explanation": "smell은 연결동사. 현재분사 형용사 inviting이 보어."
+        },
+        {
+          "sentence": "The baby's skin feels extremely ________.",
+          "choices": ["① softly", "② soft", "③ softness", "④ soften"],
+          "answer": "②",
+          "explanation": "feel은 연결동사. 형용사 soft가 보어."
+        },
+        {
+          "sentence": "The classroom looked remarkably ________ after the students cleaned it.",
+          "choices": ["① tidily", "② tidy", "③ tidiness", "④ to tidy"],
+          "answer": "②",
+          "explanation": "look은 연결동사. 형용사 tidy가 보어. remarkably는 형용사를 수식."
+        },
+        {
+          "sentence": "The medicine tasted extremely ________, but it cured the illness.",
+          "choices": ["① bitterly", "② bitter", "③ bitterness", "④ to be bitter"],
+          "answer": "②",
+          "explanation": "taste는 연결동사. 형용사 bitter가 보어."
+        },
+        {
+          "sentence": "This new perfume smells quite ________ and refreshing.",
+          "choices": ["① pleasantly", "② pleasant", "③ pleasure", "④ pleasing"],
+          "answer": "②",
+          "explanation": "smell은 연결동사. 형용사 pleasant가 보어. quite는 형용사를 수식."
+        },
+        {
+          "sentence": "The proposal sounds ________, but we need more details.",
+          "choices": ["① promisingly", "② promising", "③ promise", "④ promised"],
+          "answer": "②",
+          "explanation": "sound는 연결동사. 현재분사 형용사 promising이 보어."
+        },
+        {
+          "sentence": "The worn-out couch felt incredibly ________ despite its appearance.",
+          "choices": ["① comfortably", "② comfortable", "③ comforting", "④ comfort"],
+          "answer": "②",
+          "explanation": "feel은 연결동사. 형용사 comfortable이 보어. incredibly는 형용사를 수식."
+        },
+        {
+          "sentence": "The abandoned house looked rather ________ in the moonlight.",
+          "choices": ["① eerily", "② eerie", "③ eeriness", "④ to be eerie"],
+          "answer": "②",
+          "explanation": "look은 연결동사. 형용사 eerie가 보어. rather는 형용사를 수식."
+        },
+        {
+          "sentence": "The final product tasted absolutely ________ to all the judges.",
+          "choices": ["① wonderfully", "② wonderful", "③ wonder", "④ wondering"],
+          "answer": "②",
+          "explanation": "taste는 연결동사. 형용사 wonderful이 보어. absolutely는 형용사를 수식."
+        }
+      ]
+    }
+  ],
+  "grammarTopics": []
+}

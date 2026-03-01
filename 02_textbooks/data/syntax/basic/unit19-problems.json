@@ -1,0 +1,131 @@
+{
+  "bookId": "syntax-basic-unit19",
+  "unit": 19,
+  "title": "[최종 실전] 모든 절이 담긴 문장 완벽 분석",
+  "part": "IV",
+  "week": 4,
+  "type": "sentence-analysis",
+  "instruction": "최종 보스 문장입니다. 모든 지식을 동원하여 문장을 분석하고 해석해 보세요.",
+  "problems": [
+    {
+      "id": "syntax-basic-unit19-1",
+      "number": 1,
+      "type": "sentence-analysis",
+      "stem": "Although I know that he is busy, I wonder if he will come to the party.",
+      "answer": {
+        "analysis": "Although I know [명사절] that he is busy, I(S) wonder(V) [명사절] if he will come to the party(O).",
+        "pattern": "부사절",
+        "translation": "비록 나는 그가 바쁘다는 것을 알지만, 나는 그가 파티에 올지 안 올지 궁금하다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit19-2",
+      "number": 2,
+      "type": "sentence-analysis",
+      "stem": "The teacher told the students that the exam would cover everything that they had learned.",
+      "answer": {
+        "analysis": "The teacher(S) told(V) the students(IO) [명사절] that the exam would cover everything [형용사절] that they had learned(DO).",
+        "pattern": "",
+        "translation": "선생님은 학생들에게 시험이 그들이 배운 모든 것을 다룰 것이라고 말했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit19-3",
+      "number": 3,
+      "type": "sentence-analysis",
+      "stem": "What surprised me was that the man who looked so poor donated a lot of money.",
+      "answer": {
+        "analysis": "What surprised me(S) was(V) [명사절] that the man [형용사절] who looked so poor donated a lot of money(C).",
+        "pattern": "명사절",
+        "translation": "나를 놀라게 한 것은 그렇게 가난해 보였던 그 남자가 많은 돈을 기부했다는",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit19-4",
+      "number": 4,
+      "type": "sentence-analysis",
+      "stem": "If you want to be a person who is respected by others, you should first respect them.",
+      "answer": {
+        "analysis": "것이었다. (부사절) If you want to be a person [형용사절] who is respected by others, you(S) should first respect(V) them(O).",
+        "pattern": "",
+        "translation": "만약 당신이 다른 사람들에게 존경받는 사람이 되기를 원한다면, 당신은 먼저 그들을",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit19-5",
+      "number": 5,
+      "type": "sentence-analysis",
+      "stem": "I bought the computer which my friend recommended because I believed that it was a good product.",
+      "answer": {
+        "analysis": "존중해야 한다. I(S) bought(V) the computer(O) [형용사절] which my friend recommended (부사절) because I believed [명사절] that it was a good product.",
+        "pattern": "",
+        "translation": "나는 내 친구가 추천했던 그 컴퓨터를 샀는데, 왜냐하면",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit19-6",
+      "number": 6,
+      "type": "sentence-analysis",
+      "stem": "The rumor that the famous actor will retire is not true. (*주의: 동격의 that절*)",
+      "answer": {
+        "analysis": "나는 그것이 좋은 제품이라고 믿었기 때문이다. The rumor(S) [동격의 that절] that the famous actor will retire is(V) not true(C).",
+        "pattern": "",
+        "translation": "그 유명한 배우가",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit19-7",
+      "number": 7,
+      "type": "sentence-analysis",
+      "stem": "I don't know the reason why she left without saying anything.",
+      "answer": {
+        "analysis": "은퇴할 것이라는 소문은 사실이 아니다. I(S) don't know(V) the reason(O) [형용사절] why she left without saying anything.",
+        "pattern": "",
+        "translation": "나는 그녀가 아",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit19-8",
+      "number": 8,
+      "type": "sentence-analysis",
+      "stem": "While I was reading a book, I found a sentence that I couldn't understand.",
+      "answer": {
+        "analysis": "무 말 없이 떠난 이유를 모르겠다. (부사절) While I was reading a book, I(S) found(V) a sentence(O) [형용사절] that I couldn't understand.",
+        "pattern": "",
+        "translation": "내가 책을 읽는 동안, 나는 내가 이해할 수 없는 문장을 발견했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit19-9",
+      "number": 9,
+      "type": "sentence-analysis",
+      "stem": "The fact that he lied to everyone makes me think that he is not a trustworthy person.",
+      "answer": {
+        "analysis": "The fact(S) [동격의 that절] that he lied to everyone makes(V) me(O) think that he is not a trustworthy person(OC).",
+        "pattern": "",
+        "translation": "그가 모든 사람에게 거짓말을 했다는 사실은 내가 그가 신뢰할 수 없는 사람이라",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit19-10",
+      "number": 10,
+      "type": "sentence-analysis",
+      "stem": "I will never forget the moment when I first met the person who changed my life.",
+      "answer": {
+        "analysis": "고 생각하게 만든다. I(S) will never forget(V) the moment(O) [형용사절] when I first met the person [형용사절] who changed my life.",
+        "pattern": "",
+        "translation": "나는 내 인생을 바꾼 그 사람을 처음 만났던 순간을 결코 잊지 못할 것이다.",
+        "notes": ""
+      }
+    }
+  ]
+}

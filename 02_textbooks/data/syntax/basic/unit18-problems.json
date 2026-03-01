@@ -1,0 +1,131 @@
+{
+  "bookId": "syntax-basic-unit18",
+  "unit": 18,
+  "title": "부사절 (시간, 이유, 조건, 양보)",
+  "part": "IV",
+  "week": 4,
+  "type": "sentence-analysis",
+  "instruction": "다음 문장에서 부사절을 찾아 [ ]로 묶고, 우리말로 해석해 보세요.",
+  "problems": [
+    {
+      "id": "syntax-basic-unit18-1",
+      "number": 1,
+      "type": "sentence-analysis",
+      "stem": "When you are in Rome, do as the Romans do.",
+      "answer": {
+        "analysis": "[When you are in Rome], do as the Romans do.",
+        "pattern": "",
+        "translation": "로마에 있을 때는, 로마인들이 하는 대로 해라.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit18-2",
+      "number": 2,
+      "type": "sentence-analysis",
+      "stem": "I couldn't go to the party because I had a cold.",
+      "answer": {
+        "analysis": "I couldn't go to the party [because I had a cold].",
+        "pattern": "",
+        "translation": "나는 감기에 걸렸기 때문에 파티에 갈 수 없었다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit18-3",
+      "number": 3,
+      "type": "sentence-analysis",
+      "stem": "If you need my help, please let me know.",
+      "answer": {
+        "analysis": "[If you need my help], please let me know.",
+        "pattern": "",
+        "translation": "만약 내 도움이 필요하면, 내게 알려줘.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit18-4",
+      "number": 4,
+      "type": "sentence-analysis",
+      "stem": "Although he tried his best, he failed the exam.",
+      "answer": {
+        "analysis": "[Although he tried his best], he failed the exam.",
+        "pattern": "",
+        "translation": "비록 그는 최선을 다했지만, 시험에 떨어졌다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit18-5",
+      "number": 5,
+      "type": "sentence-analysis",
+      "stem": "I will wait here until you come back.",
+      "answer": {
+        "analysis": "I will wait here [until you come back].",
+        "pattern": "",
+        "translation": "나는 네가 돌아올 때까지 여기서 기다릴 것이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit18-6",
+      "number": 6,
+      "type": "sentence-analysis",
+      "stem": "He started to learn guitar after he watched the movie.",
+      "answer": {
+        "analysis": "He started to learn guitar [after he watched the movie].",
+        "pattern": "",
+        "translation": "그는 그 영화를 본 후에 기타를 배우기 시작",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit18-7",
+      "number": 7,
+      "type": "sentence-analysis",
+      "stem": "As I have no money, I cannot buy it.",
+      "answer": {
+        "analysis": "했다. [As I have no money], I cannot buy it.",
+        "pattern": "",
+        "translation": "나는 돈이 없기 때문에, 그것을 살 수 없다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit18-8",
+      "number": 8,
+      "type": "sentence-analysis",
+      "stem": "You will succeed if you don't give up.",
+      "answer": {
+        "analysis": "You will succeed [if you don't give up].",
+        "pattern": "",
+        "translation": "만약 네가 포기하지 않는다면, 너는 성공할 것이다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit18-9",
+      "number": 9,
+      "type": "sentence-analysis",
+      "stem": "While she was cooking, her husband was cleaning the house.",
+      "answer": {
+        "analysis": "[While she was cooking], her husband was cleaning the house.",
+        "pattern": "",
+        "translation": "그녀가 요리하는 동안, 그녀의 남편",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit18-10",
+      "number": 10,
+      "type": "sentence-analysis",
+      "stem": "He looks young though he is over forty.",
+      "answer": {
+        "analysis": "은 집을 청소하고 있었다. He looks young [though he is over forty].",
+        "pattern": "",
+        "translation": "그는 비록 40세가 넘었지만 젊어 보인다.",
+        "notes": ""
+      }
+    }
+  ]
+}

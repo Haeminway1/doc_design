@@ -1,0 +1,131 @@
+{
+  "bookId": "syntax-basic-unit11",
+  "unit": 11,
+  "title": "to부정사 (형용사/부사 역할)",
+  "part": "III",
+  "week": 3,
+  "type": "sentence-analysis",
+  "instruction": "다음 문장에서 형용사/부사 역할을 하는 to부정사구를 찾아 [ ]로 묶고, 그 역할을 (형용사/부사)로 표시한 후 해석해 보세요.",
+  "problems": [
+    {
+      "id": "syntax-basic-unit11-1",
+      "number": 1,
+      "type": "sentence-analysis",
+      "stem": "I have something important to tell you.",
+      "answer": {
+        "analysis": "I have something important [to tell you].",
+        "pattern": "형용사",
+        "translation": "나는 당신에게 [말할] 중요한 것이 있다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit11-2",
+      "number": 2,
+      "type": "sentence-analysis",
+      "stem": "She went to the store to buy some milk.",
+      "answer": {
+        "analysis": "She went to the store [to buy some milk].",
+        "pattern": "부사",
+        "translation": "그녀는 [우유를 좀 사기 위해서] 가게에 갔다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit11-3",
+      "number": 3,
+      "type": "sentence-analysis",
+      "stem": "He was happy to see his family again.",
+      "answer": {
+        "analysis": "He was happy [to see his family again].",
+        "pattern": "부사",
+        "translation": "그는 그의 가족을 다시 [만나서] 행복했다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit11-4",
+      "number": 4,
+      "type": "sentence-analysis",
+      "stem": "This water is not safe to drink.",
+      "answer": {
+        "analysis": "This water is not safe [to drink].",
+        "pattern": "부사",
+        "translation": "이 물은 [마시기에] 안전하지 않다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit11-5",
+      "number": 5,
+      "type": "sentence-analysis",
+      "stem": "We need a plan to solve this problem.",
+      "answer": {
+        "analysis": "We need a plan [to solve this problem].",
+        "pattern": "형용사",
+        "translation": "우리는 이 문제를 [해결할] 계획이 필요하다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit11-6",
+      "number": 6,
+      "type": "sentence-analysis",
+      "stem": "I woke up to find myself famous.",
+      "answer": {
+        "analysis": "I woke up [to find myself famous].",
+        "pattern": "부사",
+        "translation": "나는 잠에서 깨어 [유명해진 나 자신을 발견했다].",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit11-7",
+      "number": 7,
+      "type": "sentence-analysis",
+      "stem": "He must be a genius to answer that question.",
+      "answer": {
+        "analysis": "He must be a genius [to answer that question].",
+        "pattern": "부사",
+        "translation": "그 질문에 [답하다니] 그는 천재임에 틀림없다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit11-8",
+      "number": 8,
+      "type": "sentence-analysis",
+      "stem": "There is no chair to sit on.",
+      "answer": {
+        "analysis": "There is no chair [to sit on].",
+        "pattern": "형용사",
+        "translation": "[앉을] 의자가 없다.",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit11-9",
+      "number": 9,
+      "type": "sentence-analysis",
+      "stem": "She is studying hard to pass the exam.",
+      "answer": {
+        "analysis": "She is studying hard [to pass the exam].",
+        "pattern": "부사",
+        "translation": "그녀는 시험에 [합격하기 위해서] 열심히 공부하고 있",
+        "notes": ""
+      }
+    },
+    {
+      "id": "syntax-basic-unit11-10",
+      "number": 10,
+      "type": "sentence-analysis",
+      "stem": "I'm sorry to bother you.",
+      "answer": {
+        "analysis": "다. (부사) I'm sorry [to bother you].",
+        "pattern": "",
+        "translation": "당신을 [방해해서] 죄송합니다.",
+        "notes": ""
+      }
+    }
+  ]
+}

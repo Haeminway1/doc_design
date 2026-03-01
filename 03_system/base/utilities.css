@@ -1,0 +1,86 @@
+/* =================================================================== */
+/* utilities.css — 유틸리티 클래스                                       */
+/* Vera's Document Studio                                               */
+/* =================================================================== */
+
+/* --- 텍스트 유틸리티 --- */
+.eng-text { font-family: var(--font-eng); }
+.serif-text { font-family: var(--font-accent); }
+.bold-text { font-weight: 700; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-muted { color: var(--color-text-muted); }
+.font-bold { font-weight: 700; }
+
+/* --- 간격 유틸리티 --- */
+.mt-1 { margin-top: var(--space-xs); }
+.mt-2 { margin-top: var(--space-sm); }
+.mt-3 { margin-top: var(--space-md); }
+.mt-4 { margin-top: var(--space-lg); }
+.mb-1 { margin-bottom: var(--space-xs); }
+.mb-2 { margin-bottom: var(--space-sm); }
+.mb-3 { margin-bottom: var(--space-md); }
+.mb-4 { margin-bottom: var(--space-lg); }
+
+.spacer-sm { height: 2mm; }
+.spacer    { height: 4mm; }
+.spacer-lg { height: 8mm; }
+
+/* --- 하이라이트 3종 (강조 규칙 엄수) --- */
+/* 페이지당 강조 10개 이하, 단락당 2개 이하, 문장당 1개 이하 */
+
+/* 1. 핵심 용어 강조 (딥블루) */
+.highlight-key {
+    color: #1E3A8A;
+    font-weight: 600;
+}
+
+/* 2. 배경 하이라이트 (형광펜) */
+.highlight-bg {
+    background: #FEF3C7;
+    color: #92400E;
+    padding: 1pt 3pt;
+    border-radius: 2px;
+    font-weight: 500;
+}
+
+/* 3. 영문 강조 (스카이블루) */
+.highlight-eng {
+    color: #0EA5E9;
+    font-weight: 500;
+}
+
+/* --- 추가 하이라이트 변형 --- */
+.highlight-concept {
+    color: #F97316;
+    font-weight: 600;
+}
+
+.highlight-answer {
+    color: #22C55E;
+    font-weight: 600;
+}
+
+.highlight-strong {
+    background: #FEF3C7;
+    color: #92400E;
+    font-weight: 700;
+    padding: 2pt 4pt;
+    border-radius: 3px;
+    border-left: 3px solid #F59E0B;
+}
+
+/* --- 박스 유틸리티 --- */
+.border {
+    border: 1px solid var(--color-border-default);
+    padding: 3mm;
+    border-radius: var(--radius-sm);
+}
+
+.bg-light {
+    background-color: var(--color-bg-subtle);
+}
+
+.bg-muted {
+    background-color: var(--color-bg-muted);
+}

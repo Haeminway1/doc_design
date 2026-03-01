@@ -1,0 +1,507 @@
+{
+  "bookId": "vocab-basic",
+  "day": 42,
+  "theme": "소리와 음성 (Sound and Voice)",
+  "words": [
+    {
+      "word": "acoustic",
+      "pronunciation": "[əkúːstik]",
+      "partOfSpeech": "a.",
+      "meaning": "음향의, 청각의",
+      "example": {
+        "en": "The acoustic properties of the concert hall are excellent.",
+        "ko": "그 콘서트홀의 음향 특성은 훌륭하다."
+      }
+    },
+    {
+      "word": "resonance",
+      "pronunciation": "[rézənəns]",
+      "partOfSpeech": "n.",
+      "meaning": "공명, 울림",
+      "example": {
+        "en": "The resonance of his deep voice filled the large hall.",
+        "ko": "그의 깊은 목소리의 울림이 큰 홀을 가득 채웠다."
+      }
+    },
+    {
+      "word": "reverberation",
+      "pronunciation": "[rivə̀ːrbəréiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "잔향, 반향",
+      "example": {
+        "en": "The reverberation of the gong continued for several seconds.",
+        "ko": "징의 잔향은 몇 초 동안 계속되었다."
+      }
+    },
+    {
+      "word": "echo",
+      "pronunciation": "[ékou]",
+      "partOfSpeech": "n.\n       \n        v.",
+      "meaning": "메아리, 반향\n       \n        메아리치다",
+      "example": {
+        "en": "We shouted into the canyon and heard the echo of our voices.",
+        "ko": "우리는 협곡에 대고 소리쳤고 우리 목소리의 메아리를 들었다."
+      }
+    },
+    {
+      "word": "amplification",
+      "pronunciation": "[æ̀mpləfikéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "증폭",
+      "example": {
+        "en": "The sound system provides amplification for the entire stadium.",
+        "ko": "음향 시스템은 경기장 전체에 증폭된 소리를 제공한다."
+      }
+    },
+    {
+      "word": "pitch",
+      "pronunciation": "[pitʃ]",
+      "partOfSpeech": "n.",
+      "meaning": "음의 높이",
+      "example": {
+        "en": "The singer has a perfect pitch and can hit very high notes.",
+        "ko": "그 가수는 완벽한 음감을 가지고 있으며 매우 높은 음을 낼 수 있다."
+      }
+    },
+    {
+      "word": "timbre",
+      "pronunciation": "[tǽmbər]",
+      "partOfSpeech": "n.",
+      "meaning": "음색",
+      "example": {
+        "en": "The violin and the viola have a similar timbre.",
+        "ko": "바이올린과 비올라는 비슷한 음색을 가지고 있다."
+      }
+    },
+    {
+      "word": "harmony",
+      "pronunciation": "[hάːrməni]",
+      "partOfSpeech": "n.",
+      "meaning": "화음, 조화",
+      "example": {
+        "en": "The choir sang in beautiful four-part harmony.",
+        "ko": "합창단은 아름다운 4부 화음으로 노래했다."
+      }
+    },
+    {
+      "word": "melody",
+      "pronunciation": "[mélədi]",
+      "partOfSpeech": "n.",
+      "meaning": "멜로디, 선율",
+      "example": {
+        "en": "It's a simple song with a memorable melody.",
+        "ko": "그것은 기억에 남는 멜로디를 가진 간단한 노래이다."
+      }
+    },
+    {
+      "word": "rhythm",
+      "pronunciation": "[ríðəm]",
+      "partOfSpeech": "n.",
+      "meaning": "리듬, 율동",
+      "example": {
+        "en": "The rhythm of the drums made everyone want to dance.",
+        "ko": "드럼의 리듬은 모두가 춤추고 싶게 만들었다."
+      }
+    },
+    {
+      "word": "cadence",
+      "pronunciation": "[kéidns]",
+      "partOfSpeech": "n.",
+      "meaning": "(목소리의) 억양, 리듬",
+      "example": {
+        "en": "He spoke with the gentle cadence of a Southern accent.",
+        "ko": "그는 남부 억양의 부드러운 리듬으로 말했다."
+      }
+    },
+    {
+      "word": "tempo",
+      "pronunciation": "[témpou]",
+      "partOfSpeech": "n.",
+      "meaning": "템포, 속도",
+      "example": {
+        "en": "The conductor increased the tempo in the final section of the music.",
+        "ko": "지휘자는 음악의 마지막 부분에서 템포를 높였다."
+      }
+    },
+    {
+      "word": "beat",
+      "pronunciation": "[biːt]",
+      "partOfSpeech": "n.",
+      "meaning": "박자, 비트",
+      "example": {
+        "en": "The song has a fast, upbeat beat.",
+        "ko": "그 노래는 빠르고 경쾌한 비트를 가지고 있다."
+      }
+    },
+    {
+      "word": "percussion",
+      "pronunciation": "[pərkʌ́ʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "타악기",
+      "example": {
+        "en": "The band features a talented percussion section.",
+        "ko": "그 밴드는 재능 있는 타악기 섹션을 특징으로 한다."
+      }
+    },
+    {
+      "word": "vibration",
+      "pronunciation": "[vaibréiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "진동",
+      "example": {
+        "en": "Sound travels as vibrations through the air.",
+        "ko": "소리는 공기를 통해 진동으로 전달된다."
+      }
+    },
+    {
+      "word": "frequency",
+      "pronunciation": "[fríːkwənsi]",
+      "partOfSpeech": "n.",
+      "meaning": "주파수, 빈도",
+      "example": {
+        "en": "The frequency of the sound wave determines its pitch.",
+        "ko": "음파의 주파수는 음의 높이를 결정한다."
+      }
+    },
+    {
+      "word": "wavelength",
+      "pronunciation": "[wéivlè&eng;kθ]",
+      "partOfSpeech": "n.",
+      "meaning": "파장",
+      "example": {
+        "en": "Red light has a longer wavelength than blue light.",
+        "ko": "적색광은 청색광보다 파장이 더 길다."
+      }
+    },
+    {
+      "word": "decibel",
+      "pronunciation": "[désəbəl]",
+      "partOfSpeech": "n.",
+      "meaning": "데시벨 (소리의 크기 단위)",
+      "example": {
+        "en": "A jet engine can produce sounds over 140 decibels.",
+        "ko": "제트 엔진은 140데시벨이 넘는 소리를 낼 수 있다."
+      }
+    },
+    {
+      "word": "noise",
+      "pronunciation": "[nɔiz]",
+      "partOfSpeech": "n.",
+      "meaning": "소음",
+      "example": {
+        "en": "Please don't make so much noise.",
+        "ko": "너무 시끄럽게 하지 마세요."
+      }
+    },
+    {
+      "word": "silence",
+      "pronunciation": "[sáiləns]",
+      "partOfSpeech": "n.",
+      "meaning": "고요, 침묵",
+      "example": {
+        "en": "A deep silence fell over the forest.",
+        "ko": "깊은 고요가 숲을 뒤덮었다."
+      }
+    },
+    {
+      "word": "whisper",
+      "pronunciation": "[hwíspər]",
+      "partOfSpeech": "v.\n       \n        n.",
+      "meaning": "속삭이다\n       \n        속삭임",
+      "example": {
+        "en": "She leaned over and whispered something in his ear.",
+        "ko": "그녀는 몸을 숙여 그의 귀에 무언가를 속삭였다."
+      }
+    },
+    {
+      "word": "murmur",
+      "pronunciation": "[mə́ːrmər]",
+      "partOfSpeech": "v.",
+      "meaning": "속삭이다, 중얼거리다",
+      "example": {
+        "en": "The students murmured their complaints to each other.",
+        "ko": "학생들은 서로에게 불평을 중얼거렸다."
+      }
+    },
+    {
+      "word": "mumble",
+      "pronunciation": "[mʌ́mbl]",
+      "partOfSpeech": "v.",
+      "meaning": "중얼거리다",
+      "example": {
+        "en": "He mumbled an apology without looking at me.",
+        "ko": "그는 나를 쳐다보지도 않고 사과를 중얼거렸다."
+      }
+    },
+    {
+      "word": "articulate",
+      "pronunciation": "[ɑːrtíkjulèit]",
+      "partOfSpeech": "v.\n       \n        a.",
+      "meaning": "분명히 말하다\n       \n        말을 분명히 하는",
+      "example": {
+        "en": "She is a highly articulate and intelligent speaker.",
+        "ko": "그녀는 매우 말을 분명히 하고 지적인 연설가이다."
+      }
+    },
+    {
+      "word": "enunciate",
+      "pronunciation": "[inʌ́nsièit]",
+      "partOfSpeech": "v.",
+      "meaning": "(또렷이) 발음하다",
+      "example": {
+        "en": "Actors must learn to enunciate their words clearly.",
+        "ko": "배우들은 단어를 또렷하게 발음하는 법을 배워야 한다."
+      }
+    },
+    {
+      "word": "pronunciation",
+      "pronunciation": "[prənʌ̀nsiéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "발음",
+      "example": {
+        "en": "Good pronunciation is important for clear communication.",
+        "ko": "좋은 발음은 명확한 의사소통에 중요하다."
+      }
+    },
+    {
+      "word": "accent",
+      "pronunciation": "[ǽksent]",
+      "partOfSpeech": "n.",
+      "meaning": "악센트, 말씨",
+      "example": {
+        "en": "He speaks English with a strong German accent.",
+        "ko": "그는 강한 독일 억양으로 영어를 말한다."
+      }
+    },
+    {
+      "word": "dialect",
+      "pronunciation": "[dáiəlèkt]",
+      "partOfSpeech": "n.",
+      "meaning": "방언, 사투리",
+      "example": {
+        "en": "The people in this region speak a distinct dialect.",
+        "ko": "이 지역 사람들은 독특한 방언을 사용한다."
+      }
+    },
+    {
+      "word": "vernacular",
+      "pronunciation": "[vərnǽkjulər]",
+      "partOfSpeech": "n.",
+      "meaning": "(특정 지역·집단의) 일상어, 방언",
+      "example": {
+        "en": "The novel is written in the vernacular of the American South.",
+        "ko": "그 소설은 미국 남부의 일상어로 쓰여 있다."
+      }
+    },
+    {
+      "word": "eloquent",
+      "pronunciation": "[éləkwənt]",
+      "partOfSpeech": "a.",
+      "meaning": "유창한, 설득력 있는",
+      "example": {
+        "en": "The president delivered an eloquent speech on the importance of unity.",
+        "ko": "대통령은 단결의 중요성에 대해 설득력 있는 연설을 했다."
+      }
+    },
+    {
+      "word": "fluent",
+      "pronunciation": "[flúːənt]",
+      "partOfSpeech": "a.",
+      "meaning": "유창한",
+      "example": {
+        "en": "She is fluent in both English and Spanish.",
+        "ko": "그녀는 영어와 스페인어 모두에 유창하다."
+      }
+    },
+    {
+      "word": "stammering",
+      "pronunciation": "[stǽməri&eng;]",
+      "partOfSpeech": "n.",
+      "meaning": "말더듬",
+      "example": {
+        "en": "He developed a stammer after the traumatic event.",
+        "ko": "그는 충격적인 사건 이후에 말을 더듬게 되었다."
+      }
+    },
+    {
+      "word": "stuttering",
+      "pronunciation": "[stʌ́təri&eng;]",
+      "partOfSpeech": "n.",
+      "meaning": "말더듬",
+      "example": {
+        "en": "Speech therapy can help people who suffer from stuttering.",
+        "ko": "언어 치료는 말을 더듬는 사람들에게 도움이 될 수 있다."
+      }
+    },
+    {
+      "word": "mute",
+      "pronunciation": "[mjuːt]",
+      "partOfSpeech": "a.",
+      "meaning": "무언의, 말을 못하는",
+      "example": {
+        "en": "He remained mute when they asked him questions.",
+        "ko": "그들이 질문을 했을 때 그는 계속 침묵을 지켰다."
+      }
+    },
+    {
+      "word": "vocal",
+      "pronunciation": "[vóukəl]",
+      "partOfSpeech": "a.",
+      "meaning": "목소리의",
+      "example": {
+        "en": "The singer is known for her impressive vocal range.",
+        "ko": "그 가수는 인상적인 음역으로 유명하다."
+      }
+    },
+    {
+      "word": "soprano",
+      "pronunciation": "[səprǽnou]",
+      "partOfSpeech": "n.",
+      "meaning": "소프라노",
+      "example": {
+        "en": "The soprano's high notes were crystal clear.",
+        "ko": "소프라노의 고음은 수정처럼 맑았다."
+      }
+    },
+    {
+      "word": "alto",
+      "pronunciation": "[ǽltou]",
+      "partOfSpeech": "n.",
+      "meaning": "알토",
+      "example": {
+        "en": "She has a deep, rich alto voice.",
+        "ko": "그녀는 깊고 풍부한 알토 목소리를 가지고 있다."
+      }
+    },
+    {
+      "word": "tenor",
+      "pronunciation": "[ténər]",
+      "partOfSpeech": "n.",
+      "meaning": "테너",
+      "example": {
+        "en": "The famous tenor sang the lead role in the opera.",
+        "ko": "그 유명한 테너는 오페라에서 주역을 맡아 노래했다."
+      }
+    },
+    {
+      "word": "bass",
+      "pronunciation": "[beis]",
+      "partOfSpeech": "n.",
+      "meaning": "베이스",
+      "example": {
+        "en": "His deep bass voice resonated throughout the church.",
+        "ko": "그의 깊은 베이스 목소리가 교회 전체에 울려 퍼졌다."
+      }
+    },
+    {
+      "word": "baritone",
+      "pronunciation": "[bǽritòun]",
+      "partOfSpeech": "n.",
+      "meaning": "바리톤",
+      "example": {
+        "en": "The baritone's voice was warm and powerful.",
+        "ko": "바리톤의 목소리는 따뜻하고 힘찼다."
+      }
+    },
+    {
+      "word": "choir",
+      "pronunciation": "[kwaiər]",
+      "partOfSpeech": "n.",
+      "meaning": "합창단",
+      "example": {
+        "en": "The school choir won the national competition.",
+        "ko": "학교 합창단이 전국 대회에서 우승했다."
+      }
+    },
+    {
+      "word": "chorus",
+      "pronunciation": "[kɔ́ːrəs]",
+      "partOfSpeech": "n.",
+      "meaning": "합창, 후렴구",
+      "example": {
+        "en": "The audience sang along with the chorus.",
+        "ko": "관객들은 후렴구를 따라 불렀다."
+      }
+    },
+    {
+      "word": "solo",
+      "pronunciation": "[sóulou]",
+      "partOfSpeech": "n.",
+      "meaning": "독주, 독창",
+      "example": {
+        "en": "The guitarist performed an amazing solo.",
+        "ko": "기타리스트는 놀라운 독주를 선보였다."
+      }
+    },
+    {
+      "word": "duet",
+      "pronunciation": "[duːét]",
+      "partOfSpeech": "n.",
+      "meaning": "이중주, 이중창",
+      "example": {
+        "en": "They sang a beautiful duet together.",
+        "ko": "그들은 함께 아름다운 이중창을 불렀다."
+      }
+    },
+    {
+      "word": "ensemble",
+      "pronunciation": "[ɑːnsάːmbl]",
+      "partOfSpeech": "n.",
+      "meaning": "앙상블, 합주단",
+      "example": {
+        "en": "The string ensemble played a piece by Mozart.",
+        "ko": "현악 앙상블이 모차르트의 곡을 연주했다."
+      }
+    },
+    {
+      "word": "cacophony",
+      "pronunciation": "[kəˈkɑːfəni]",
+      "partOfSpeech": "noun",
+      "meaning": "불협화음, 귀에 거슬리는 소리들",
+      "example": {
+        "en": "The street was filled with the cacophony of car horns and construction noise.",
+        "ko": "거리는 자동차 경적과 공사 소음의 불협화음으로 가득했다."
+      }
+    },
+    {
+      "word": "mellifluous",
+      "pronunciation": "[məˈlɪfluəs]",
+      "partOfSpeech": "adjective",
+      "meaning": "달콤하고 부드러운 (소리나 목소리가)",
+      "example": {
+        "en": "Her mellifluous voice captivated the entire audience.",
+        "ko": "그녀의 달콤하고 부드러운 목소리는 전체 청중을 사로잡았다."
+      }
+    },
+    {
+      "word": "sonorous",
+      "pronunciation": "[ˈsɑːnərəs]",
+      "partOfSpeech": "adjective",
+      "meaning": "울리는 듯한, 響亮한, 우렁찬 (소리가)",
+      "example": {
+        "en": "The actor's sonorous voice filled the theater without need for amplification.",
+        "ko": "그 배우의 우렁찬 목소리는 확성 장치 없이도 극장을 가득 채웠다."
+      }
+    },
+    {
+      "word": "shout",
+      "pronunciation": "/ʃaʊt/",
+      "partOfSpeech": "v.",
+      "meaning": "멀리서나 소음 속에서도 들리도록 매우 크게 말하다",
+      "example": {
+        "en": "He had to shout to be heard over the music.",
+        "ko": "그는 음악 소리에 묻히지 않으려 크게 소리쳐야 했다."
+      }
+    },
+    {
+      "word": "scream",
+      "pronunciation": "/skriːm/",
+      "partOfSpeech": "v.",
+      "meaning": "특히 두려움·고통·흥분으로 날카롭고 큰 소리를 지르다",
+      "example": {
+        "en": "The crowd screamed when the roller coaster dropped.",
+        "ko": "롤러코스터가 떨어지자 관중이 비명을 질렀다."
+      }
+    }
+  ]
+}

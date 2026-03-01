@@ -1,0 +1,69 @@
+/* =================================================================== */
+/* Mint Sky Template — Cover Page Styles                              */
+/* 구문독해 Bridge Minimal 표지                                        */
+/* Vera's Document Studio                                             */
+/* =================================================================== */
+
+.cover-page {
+    background-color: #F7FAFC !important;
+    background-image: url('../../05_assets/backgrounds/bridge.png') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: 25mm !important;
+    position: relative !important;
+}
+
+/* Minimal Border Box */
+.cover-frame {
+    border: 2px solid var(--color-accent-primary) !important;
+    padding: 18mm !important;
+    background-color: #FFFFFF !important;
+    width: 100% !important;
+    max-width: 150mm !important;
+    text-align: center !important;
+    border-radius: var(--radius-md) !important;
+}
+
+/* Cover Title */
+.cover-main-title {
+    font-family: var(--font-eng) !important;
+    font-size: var(--cover-title-size) !important;
+    color: var(--color-accent-dark) !important;
+    font-weight: 700 !important;
+    margin-bottom: 6mm !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.3pt !important;
+}
+
+/* Cover Subtitle - Noto Serif KR */
+.cover-subtitle {
+    font-family: var(--font-accent) !important;
+    font-size: var(--cover-subtitle-size) !important;
+    color: var(--color-accent-primary) !important;
+    font-weight: 500 !important;
+    margin-bottom: 10mm !important;
+    line-height: 1.4 !important;
+}
+
+/* Cover Brand */
+.cover-brand {
+    font-family: var(--font-eng) !important;
+    font-size: var(--cover-brand-size) !important;
+    color: var(--color-accent-secondary) !important;
+    font-weight: 600 !important;
+    letter-spacing: 1.5pt !important;
+    margin-top: 12mm !important;
+}
+
+/* Cover Accent Line */
+.cover-accent-line {
+    width: 60mm !important;
+    height: 2px !important;
+    background-color: var(--color-accent-primary) !important;
+    margin: 6mm auto !important;
+}

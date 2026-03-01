@@ -1,0 +1,24 @@
+<div class="problem-card avoid-break">
+  <div class="problem-header">
+    <div class="problem-badge">{{num}}</div>
+    <div>
+      <div class="problem-title">
+        {{#if theme}}[테마 {{theme}}]&nbsp;{{/if}}{{#if errorType}}<span class="severity-{{#if (eq errorType '개념 오류')}}high{{else if (eq errorType '반전 함정')}}mid{{else}}low{{/if}}">{{errorType}}</span>{{/if}}
+      </div>
+      {{#if location}}<span class="problem-source">출처: {{location}}</span>{{/if}}
+    </div>
+  </div>
+  {{#if question}}
+  <div class="question-box">{{question}}</div>
+  {{/if}}
+  <div style="display: flex; gap: 12px; margin-top: 8px; font-size: 9pt;">
+    {{#if studentAnswer}}
+    <div style="flex: 1;">
+      <span class="result-wrong">✗ 학생 답: {{studentAnswer}}</span>
+    </div>
+    {{/if}}
+    <div style="flex: 1;">
+      <span class="result-correct">✓ 정답: {{correctAnswer}}</span>
+    </div>
+  </div>
+</div>

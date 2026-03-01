@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Images
+*.jpeg
+*.jpg
+*.png
+*.gif
+*.webp
+*.bmp
+*.tiff
+*.svg
+
+# Output files (regeneratable)
+02_textbooks/output/
+00_tutoring/*/output/*.html
+00_tutoring/*/output/*.pdf
+01_print-bundle/output/
+
+# IDE
+.vscode/
+.idea/
+
+# OMC internal
+.omc/

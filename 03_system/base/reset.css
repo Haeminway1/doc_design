@@ -1,0 +1,46 @@
+/* =================================================================== */
+/* reset.css — A4 인쇄용 리셋 + @page 설정                              */
+/* Vera's Document Studio                                               */
+/* =================================================================== */
+
+@page {
+    size: A4;
+    margin: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+    background: #E9ECF0;
+    counter-reset: page;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+/* 페이지 브레이크 제어 */
+h1, h2, h3 {
+    break-after: avoid-page;
+}
+
+table, .component-box, .problem, .passage, .word-entry, .explanation {
+    break-inside: avoid;
+}
+
+p, li {
+    orphans: 3;
+    widows: 3;
+}

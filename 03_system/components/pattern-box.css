@@ -1,0 +1,136 @@
+/* =================================================================== */
+/* pattern-box.css — 논리 연결어 패턴 박스                             */
+/* Vera's Document Studio                                               */
+/* =================================================================== */
+
+/**
+ * Pattern Box Component
+ *
+ * 용도: 논리 교재의 연결어/접속사 패턴 표시용 박스
+ *
+ * 마크업 예시:
+ *
+ * <div class="pattern-box">
+ *   <div class="pattern-box-title">Chapter 03. 원인과 결과 (Cause and Effect)</div>
+ *   <div class="pattern-description">
+ *     <strong>[핵심 이미지]</strong> 하나의 사건이 다른 사건을 불러일으키는 이미지
+ *   </div>
+ *   <div class="connectors-section">
+ *     <strong>[주요 연결어]</strong>
+ *     <div class="connectors">
+ *       <span class="connector">because</span>
+ *       <span class="connector">therefore</span>
+ *       <span class="connector">as a result</span>
+ *       <span class="connector-meaning">~때문에</span>
+ *       <span class="connector-meaning">따라서</span>
+ *     </div>
+ *   </div>
+ * </div>
+ */
+
+/* --- Pattern Box 컨테이너 --- */
+.pattern-box {
+    width: 100% !important;
+    background: var(--color-concept-bg) !important;
+    border: 2px solid var(--color-concept-border) !important;
+    border-radius: var(--radius-md) !important;
+    padding: var(--space-lg) !important;
+    margin: var(--space-xl) 0 !important;
+    break-inside: avoid !important;
+}
+
+/* --- Pattern 제목 --- */
+.pattern-box-title {
+    font-family: var(--font-eng) !important;
+    font-size: var(--text-lg) !important;
+    font-weight: 700 !important;
+    color: var(--color-accent-dark) !important;
+    margin-bottom: var(--space-md) !important;
+    line-height: var(--leading-tight) !important;
+}
+
+/* --- Pattern 설명 --- */
+.pattern-description {
+    font-size: var(--text-base) !important;
+    color: var(--color-text-primary) !important;
+    margin-bottom: var(--space-md) !important;
+    line-height: var(--leading-normal) !important;
+}
+
+/* --- 연결어 섹션 컨테이너 --- */
+.connectors-section {
+    margin-top: var(--space-md) !important;
+}
+
+/* --- 연결어 목록 컨테이너 --- */
+.connectors {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: var(--space-sm) !important;
+    margin-top: var(--space-sm) !important;
+}
+
+/* --- 개별 연결어 뱃지 --- */
+.connector {
+    display: inline-block !important;
+    font-family: var(--font-eng) !important;
+    font-size: var(--text-sm) !important;
+    font-weight: 600 !important;
+    color: var(--color-white) !important;
+    background: var(--color-accent-primary) !important;
+    padding: var(--space-xs) var(--space-md) !important;
+    border-radius: var(--radius-sm) !important;
+    white-space: nowrap !important;
+}
+
+/* --- 연결어 뜻 (한글 번역) --- */
+.connector-meaning {
+    display: inline-block !important;
+    font-family: var(--font-sans) !important;
+    font-size: var(--text-sm) !important;
+    font-weight: 500 !important;
+    color: var(--color-text-secondary) !important;
+    background: var(--color-accent-light) !important;
+    padding: var(--space-xs) var(--space-md) !important;
+    border-radius: var(--radius-sm) !important;
+    border: 1px solid var(--color-accent-primary) !important;
+    white-space: nowrap !important;
+}
+
+/* --- Pattern Box 내부 요소 스타일 --- */
+.pattern-box strong {
+    color: var(--color-accent-dark) !important;
+    font-weight: 600 !important;
+}
+
+.pattern-box ul,
+.pattern-box ol {
+    margin-left: var(--space-lg) !important;
+    margin-top: var(--space-sm) !important;
+    margin-bottom: var(--space-md) !important;
+}
+
+.pattern-box li {
+    margin-bottom: var(--space-xs) !important;
+    line-height: var(--leading-normal) !important;
+}
+
+/* --- 컴팩트 변형 (연결어만 표시) --- */
+.pattern-box.compact {
+    padding: var(--space-md) !important;
+}
+
+.pattern-box.compact .pattern-box-title {
+    font-size: var(--text-md) !important;
+    margin-bottom: var(--space-sm) !important;
+}
+
+.pattern-box.compact .connectors {
+    gap: 6px !important;
+}
+
+.pattern-box.compact .connector,
+.pattern-box.compact .connector-meaning {
+    font-size: var(--text-xs) !important;
+    padding: 3px var(--space-sm) !important;
+}

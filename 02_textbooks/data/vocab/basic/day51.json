@@ -1,0 +1,507 @@
+{
+  "bookId": "vocab-basic",
+  "day": 51,
+  "theme": "발전과 퇴보 (Progress and Regression)",
+  "words": [
+    {
+      "word": "evolution",
+      "pronunciation": "[èvəlúːʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "진화, 발전",
+      "example": {
+        "en": "The book is about the evolution of the human species.",
+        "ko": "그 책은 인류의 진화에 관한 것이다."
+      }
+    },
+    {
+      "word": "progression",
+      "pronunciation": "[prəgréʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "진행, 진전",
+      "example": {
+        "en": "The natural progression of the disease can be slowed with medication.",
+        "ko": "질병의 자연적인 진행은 약물로 늦출 수 있다."
+      }
+    },
+    {
+      "word": "refinement",
+      "pronunciation": "[rifáinmənt]",
+      "partOfSpeech": "n.",
+      "meaning": "개선, 정제",
+      "example": {
+        "en": "The design needs a little more refinement.",
+        "ko": "그 디자인은 조금 더 개선이 필요하다."
+      }
+    },
+    {
+      "word": "maturation",
+      "pronunciation": "[mæ̀ʧəréiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "성숙",
+      "example": {
+        "en": "The wine requires a long period of maturation.",
+        "ko": "그 와인은 긴 숙성 기간이 필요하다."
+      }
+    },
+    {
+      "word": "flourishing",
+      "pronunciation": "[flə́ːriʃi&eng;]",
+      "partOfSpeech": "a.",
+      "meaning": "번창하는",
+      "example": {
+        "en": "The city has a flourishing arts scene.",
+        "ko": "그 도시는 번창하는 예술계를 가지고 있다."
+      }
+    },
+    {
+      "word": "thriving",
+      "pronunciation": "[θráivi&eng;]",
+      "partOfSpeech": "a.",
+      "meaning": "번성하는",
+      "example": {
+        "en": "The business is thriving in the new location.",
+        "ko": "그 사업은 새로운 위치에서 번성하고 있다."
+      }
+    },
+    {
+      "word": "prospering",
+      "pronunciation": "[prάspəri&eng;]",
+      "partOfSpeech": "a.",
+      "meaning": "번영하는",
+      "example": {
+        "en": "The prospering economy created many new jobs.",
+        "ko": "번영하는 경제는 많은 새로운 일자리를 창출했다."
+      }
+    },
+    {
+      "word": "blooming",
+      "pronunciation": "[blúːmi&eng;]",
+      "partOfSpeech": "a.",
+      "meaning": "꽃피는, 번성하는",
+      "example": {
+        "en": "The tech industry is a blooming sector of the economy.",
+        "ko": "기술 산업은 경제의 번성하는 부문이다."
+      }
+    },
+    {
+      "word": "blossoming",
+      "pronunciation": "[blάsəmi&eng;]",
+      "partOfSpeech": "a.",
+      "meaning": "꽃피는, 발전하는",
+      "example": {
+        "en": "She is a blossoming young artist with a bright future.",
+        "ko": "그녀는 밝은 미래를 가진 발전하는 젊은 예술가이다."
+      }
+    },
+    {
+      "word": "declining",
+      "pronunciation": "[dikláini&eng;]",
+      "partOfSpeech": "a.",
+      "meaning": "쇠퇴하는",
+      "example": {
+        "en": "The declining industry is facing many challenges.",
+        "ko": "쇠퇴하는 산업은 많은 도전에 직면해 있다."
+      }
+    },
+    {
+      "word": "deteriorating",
+      "pronunciation": "[ditìəriəréiti&eng;]",
+      "partOfSpeech": "a.",
+      "meaning": "악화되는",
+      "example": {
+        "en": "His health has been deteriorating for several months.",
+        "ko": "그의 건강은 몇 달 동안 악화되어 왔다."
+      }
+    },
+    {
+      "word": "degenerating",
+      "pronunciation": "[didʒénərèiti&eng;]",
+      "partOfSpeech": "a.",
+      "meaning": "퇴보하는",
+      "example": {
+        "en": "The debate quickly degenerated into a shouting match.",
+        "ko": "그 토론은 금세 고함치는 싸움으로 퇴보했다."
+      }
+    },
+    {
+      "word": "regressing",
+      "pronunciation": "[rigrési&eng;]",
+      "partOfSpeech": "a.",
+      "meaning": "퇴행하는",
+      "example": {
+        "en": "Under stress, he started regressing to childish behavior.",
+        "ko": "스트레스를 받자 그는 유치한 행동으로 퇴행하기 시작했다."
+      }
+    },
+    {
+      "word": "retreating",
+      "pronunciation": "[ritríːti&eng;]",
+      "partOfSpeech": "a.",
+      "meaning": "후퇴하는",
+      "example": {
+        "en": "The retreating army left behind their equipment.",
+        "ko": "후퇴하는 군대는 장비를 남겨두고 갔다."
+      }
+    },
+    {
+      "word": "receding",
+      "pronunciation": "[risíːdi&eng;]",
+      "partOfSpeech": "a.",
+      "meaning": "물러나는, 약해지는",
+      "example": {
+        "en": "He is worried about his receding hairline.",
+        "ko": "그는 뒤로 물러나는 헤어라인을 걱정하고 있다."
+      }
+    },
+    {
+      "word": "diminishing",
+      "pronunciation": "[dəmíniʃi&eng;]",
+      "partOfSpeech": "a.",
+      "meaning": "감소하는",
+      "example": {
+        "en": "The law of diminishing returns states that adding more input will eventually yield smaller increases in output.",
+        "ko": "수확 체감의 법칙은 더 많은 투입을 추가하면 결국 생산량 증가가 더 작아질 것이라고 말한다."
+      }
+    },
+    {
+      "word": "shrinking",
+      "pronunciation": "[ʃrí&eng;ki&eng;]",
+      "partOfSpeech": "a.",
+      "meaning": "줄어드는",
+      "example": {
+        "en": "The shrinking market has forced many companies to close.",
+        "ko": "줄어드는 시장은 많은 회사들이 문을 닫게 만들었다."
+      }
+    },
+    {
+      "word": "contracting",
+      "pronunciation": "[kəntrǽkti&eng;]",
+      "partOfSpeech": "a.",
+      "meaning": "수축하는",
+      "example": {
+        "en": "The contracting economy led to widespread unemployment.",
+        "ko": "수축하는 경제는 광범위한 실업으로 이어졌다."
+      }
+    },
+    {
+      "word": "withering",
+      "pronunciation": "[wíðəri&eng;]",
+      "partOfSpeech": "a.",
+      "meaning": "시드는",
+      "example": {
+        "en": "The plants are withering in the hot sun.",
+        "ko": "식물들이 뜨거운 햇볕에 시들고 있다."
+      }
+    },
+    {
+      "word": "wilting",
+      "pronunciation": "[wílti&eng;]",
+      "partOfSpeech": "a.",
+      "meaning": "시드는",
+      "example": {
+        "en": "The wilting flowers needed water.",
+        "ko": "시들어가는 꽃들은 물이 필요했다."
+      }
+    },
+    {
+      "word": "fading",
+      "pronunciation": "[féidi&eng;]",
+      "partOfSpeech": "a.",
+      "meaning": "사라져가는",
+      "example": {
+        "en": "His hope of winning was fading fast.",
+        "ko": "이기리라는 그의 희망은 빠르게 사라져가고 있었다."
+      }
+    },
+    {
+      "word": "decaying",
+      "pronunciation": "[dikéii&eng;]",
+      "partOfSpeech": "a.",
+      "meaning": "썩어가는, 쇠퇴하는",
+      "example": {
+        "en": "The decaying old house was a sad sight.",
+        "ko": "썩어가는 낡은 집은 슬픈 광경이었다."
+      }
+    },
+    {
+      "word": "rotting",
+      "pronunciation": "[rάti&eng;]",
+      "partOfSpeech": "a.",
+      "meaning": "썩어가는",
+      "example": {
+        "en": "The smell of rotting fruit filled the air.",
+        "ko": "썩어가는 과일 냄새가 공기를 가득 채웠다."
+      }
+    },
+    {
+      "word": "stagnation",
+      "pronunciation": "[stægnéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "침체, 정체",
+      "example": {
+        "en": "The country's economy is suffering from stagnation.",
+        "ko": "그 나라의 경제는 침체로 고통받고 있다."
+      }
+    },
+    {
+      "word": "renovation",
+      "pronunciation": "[rènəvéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "개조, 혁신",
+      "example": {
+        "en": "The old building is undergoing extensive renovation.",
+        "ko": "그 낡은 건물은 대대적인 개조 공사를 겪고 있다."
+      }
+    },
+    {
+      "word": "restoration",
+      "pronunciation": "[rèstəréiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "복원, 복구",
+      "example": {
+        "en": "The restoration of the ancient painting took years.",
+        "ko": "그 고대 그림의 복원에는 수년이 걸렸다."
+      }
+    },
+    {
+      "word": "revitalization",
+      "pronunciation": "[rìːvàitəlizéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "재활성화, 경기 부양",
+      "example": {
+        "en": "The project aims for the economic revitalization of the city.",
+        "ko": "그 프로젝트는 도시의 경제 재활성화를 목표로 한다."
+      }
+    },
+    {
+      "word": "rejuvenation",
+      "pronunciation": "[ridʒùːvənéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "회춘, 활기 되찾기",
+      "example": {
+        "en": "The spa offers treatments for skin rejuvenation.",
+        "ko": "그 스파는 피부 회춘을 위한 트리트먼트를 제공한다."
+      }
+    },
+    {
+      "word": "regeneration",
+      "pronunciation": "[ridʒènəréiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "재생, 갱생",
+      "example": {
+        "en": "The urban regeneration project transformed the old industrial area.",
+        "ko": "도시 재생 프로젝트는 낡은 공업 지역을 변화시켰다."
+      }
+    },
+    {
+      "word": "renewal",
+      "pronunciation": "[rinúːəl]",
+      "partOfSpeech": "n.",
+      "meaning": "갱신, 재개",
+      "example": {
+        "en": "Spring is a time of renewal and new beginnings.",
+        "ko": "봄은 갱신과 새로운 시작의 시간이다."
+      }
+    },
+    {
+      "word": "reform",
+      "pronunciation": "[rifɔ́ːrm]",
+      "partOfSpeech": "n.",
+      "meaning": "개혁",
+      "example": {
+        "en": "The government is planning a major reform of the education system.",
+        "ko": "정부는 교육 시스템의 대대적인 개혁을 계획하고 있다."
+      }
+    },
+    {
+      "word": "transformation",
+      "pronunciation": "[træ̀nsfərméiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "변형, 변화",
+      "example": {
+        "en": "The city has undergone a complete transformation in the last decade.",
+        "ko": "그 도시는 지난 10년 동안 완전한 변화를 겪었다."
+      }
+    },
+    {
+      "word": "metamorphosis",
+      "pronunciation": "[mètəmɔ́ːrfəsis]",
+      "partOfSpeech": "n.",
+      "meaning": "변태, 변형",
+      "example": {
+        "en": "The metamorphosis of a caterpillar into a butterfly is a wonder of nature.",
+        "ko": "애벌레가 나비로 변태하는 것은 자연의 경이로움이다."
+      }
+    },
+    {
+      "word": "revolution",
+      "pronunciation": "[rèvəlúːʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "혁명",
+      "example": {
+        "en": "The Industrial Revolution changed the world forever.",
+        "ko": "산업 혁명은 세상을 영원히 바꾸었다."
+      }
+    },
+    {
+      "word": "transition",
+      "pronunciation": "[trænzíʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "이행, 과도기",
+      "example": {
+        "en": "The country is in a period of transition from dictatorship to democracy.",
+        "ko": "그 나라는 독재에서 민주주의로 이행하는 과도기에 있다."
+      }
+    },
+    {
+      "word": "conversion",
+      "pronunciation": "[kənvə́ːrʒən]",
+      "partOfSpeech": "n.",
+      "meaning": "전환, 개조",
+      "example": {
+        "en": "The conversion of the old factory into apartments was a success.",
+        "ko": "낡은 공장을 아파트로 개조한 것은 성공적이었다."
+      }
+    },
+    {
+      "word": "modification",
+      "pronunciation": "[mὰdəfikéiʃən]",
+      "partOfSpeech": "n.",
+      "meaning": "수정, 변경",
+      "example": {
+        "en": "We need to make some modifications to the original plan.",
+        "ko": "우리는 원래 계획에 몇 가지 수정을 해야 한다."
+      }
+    },
+    {
+      "word": "adjustment",
+      "pronunciation": "[ədʒʌ́stmənt]",
+      "partOfSpeech": "n.",
+      "meaning": "조정, 적응",
+      "example": {
+        "en": "She made a few minor adjustments to the design.",
+        "ko": "그녀는 디자인에 몇 가지 사소한 조정을 했다."
+      }
+    },
+    {
+      "word": "regressive",
+      "pronunciation": "[rɪˈɡresɪv]",
+      "partOfSpeech": "adjective",
+      "meaning": "퇴행적인, 퇴보하는",
+      "example": {
+        "en": "The critics argued that the new tax system was regressive and unfair to lower-income families.",
+        "ko": "비평가들은 새로운 세금 제도가 퇴행적이며 저소득 가정에 불공평하다고 주장했다."
+      }
+    },
+    {
+      "word": "burgeoning",
+      "pronunciation": "[ˈbɜːrdʒənɪ&eng;]",
+      "partOfSpeech": "adjective",
+      "meaning": "급성장하는, 빠르게 발전하는",
+      "example": {
+        "en": "The burgeoning technology sector created thousands of new jobs.",
+        "ko": "급성장하는 기술 분야는 수천 개의 새로운 일자리를 창출했다."
+      }
+    },
+    {
+      "word": "obsolescent",
+      "pronunciation": "[ˌɒbsəˈlesnt]",
+      "partOfSpeech": "adjective",
+      "meaning": "노후화되어가는, 쓸모없게 되어가는",
+      "example": {
+        "en": "Many traditional skills are becoming obsolescent due to automation.",
+        "ko": "자동화로 인해 많은 전통적인 기술들이 노후화되어가고 있다."
+      }
+    },
+    {
+      "word": "degenerate",
+      "pronunciation": "[dɪˈdʒenəreɪt]",
+      "partOfSpeech": "verb",
+      "meaning": "퇴화하다, 악화되다",
+      "example": {
+        "en": "Without proper maintenance, the building began to degenerate rapidly.",
+        "ko": "적절한 관리가 없어서 건물이 급속히 퇴화되기 시작했다."
+      }
+    },
+    {
+      "word": "stagnant",
+      "pronunciation": "[ˈstæɡnənt]",
+      "partOfSpeech": "adjective",
+      "meaning": "정체된, 발전이 없는",
+      "example": {
+        "en": "The economy remained stagnant despite various stimulus measures.",
+        "ko": "다양한 경기부양책에도 불구하고 경제는 정체된 상태로 남아있었다."
+      }
+    },
+    {
+      "word": "atrophy",
+      "pronunciation": "[ˈætrəfi]",
+      "partOfSpeech": "verb",
+      "meaning": "퇴화하다, 위축되다",
+      "example": {
+        "en": "Muscles will atrophy if not regularly exercised.",
+        "ko": "근육은 정기적으로 운동하지 않으면 퇴화할 것이다."
+      }
+    },
+    {
+      "word": "resurgent",
+      "pronunciation": "[rɪˈsɜːrdʒənt]",
+      "partOfSpeech": "adjective",
+      "meaning": "부활하는, 재기하는",
+      "example": {
+        "en": "The company made a resurgent comeback after years of decline.",
+        "ko": "그 회사는 수년간의 쇠퇴 후에 부활하여 컴백했다."
+      }
+    },
+    {
+      "word": "retrograde",
+      "pronunciation": "[ˈretrəɡreɪd]",
+      "partOfSpeech": "adjective",
+      "meaning": "퇴보하는, 후퇴하는",
+      "example": {
+        "en": "Many viewed the new legislation as a retrograde step.",
+        "ko": "많은 사람들이 새로운 법안을 퇴보하는 조치로 보았다."
+      }
+    },
+    {
+      "word": "flourish",
+      "pronunciation": "[ˈflʌrɪʃ]",
+      "partOfSpeech": "verb",
+      "meaning": "번성하다, 발전하다",
+      "example": {
+        "en": "Small businesses began to flourish in the improving economy.",
+        "ko": "소규모 사업체들이 개선되는 경제 속에서 번성하기 시작했다."
+      }
+    },
+    {
+      "word": "decadent",
+      "pronunciation": "[ˈdekədənt]",
+      "partOfSpeech": "adjective",
+      "meaning": "퇴폐적인, 쇠퇴하는",
+      "example": {
+        "en": "The once-great empire had become decadent and weak.",
+        "ko": "한때 위대했던 제국이 퇴폐적이고 약해졌다."
+      }
+    },
+    {
+      "word": "upgrade",
+      "pronunciation": "/ˈʌpɡreɪd/",
+      "partOfSpeech": "v.",
+      "meaning": "기능·성능·등급을 더 높은 수준으로 올리다; 최신 버전으로 개선하다.",
+      "example": {
+        "en": "The company upgraded its servers to handle the surge in traffic.",
+        "ko": "회사는 급증한 트래픽을 처리하기 위해 서버를 업그레이드했다."
+      }
+    },
+    {
+      "word": "downgrade",
+      "pronunciation": "/ˈdaʊnɡreɪd/",
+      "partOfSpeech": "v.",
+      "meaning": "등급·지위·중요성을 낮추다; 격하(강등)하다.",
+      "example": {
+        "en": "The agency downgraded the country's credit rating to BBB+.",
+        "ko": "그 기관은 그 나라의 신용등급을 BBB+로 강등했다."
+      }
+    }
+  ]
+}

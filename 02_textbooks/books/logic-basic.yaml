@@ -1,0 +1,56 @@
+# logic-basic — 논리 Basic
+book:
+  title: "편입영어 논리 Basic 편"
+  author: "Vera's Flavor"
+  style: logic-basic
+  series: logic-basic
+
+pages:
+  - type: structural
+    src: logic/basic/cover.html
+  - type: content
+    src: logic/basic/ch01-content-01.html
+  - type: content
+    src: logic/basic/ch01-content-02.html
+  - type: content
+    src: logic/basic/ch01-content-03.html
+  - type: content
+    src: logic/basic/ch01-content-04.html
+  - type: content
+    src: logic/basic/ch01-content-05.html
+  - type: problems
+    src: logic/basic/ch01-problems.json
+    layout: two-per-page
+  - type: problems
+    src: logic/basic/ch02-problems.json
+    layout: two-per-page
+  - type: content
+    src: logic/basic/ch03-content-01.html
+  - type: content
+    src: logic/basic/ch03-content-02.html
+  - type: content
+    src: logic/basic/ch03-content-03.html
+  - type: content
+    src: logic/basic/ch03-content-04.html
+  - type: content
+    src: logic/basic/ch03-content-05.html
+  - type: problems
+    src: logic/basic/ch03-problems.json
+    layout: two-per-page
+  - type: content
+    src: logic/basic/ch04-content-01.html
+  - type: problems
+    src: logic/basic/ch04-problems.json
+    layout: two-per-page
+  - type: content
+    src: logic/basic/ch05-content-01.html
+  - type: problems
+    src: logic/basic/ch05-problems.json
+    layout: two-per-page
+  - type: problems
+    src: logic/basic/ch06-problems.json
+    layout: two-per-page
+  - type: vocabulary
+    src: logic/basic/vocabulary.json
+  - type: answer-grid
+    src: logic/basic/ch01-problems.json

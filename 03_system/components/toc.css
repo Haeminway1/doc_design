@@ -1,0 +1,148 @@
+/* =================================================================== */
+/* toc.css — 목차 컴포넌트                                              */
+/* Vera's Document Studio                                               */
+/* =================================================================== */
+
+/*
+ * 용도: 교재 목차 (Table of Contents)
+ *
+ * 마크업 예시:
+ * <div class="page toc-page">
+ *   <div class="page-content">
+ *     <h1 class="toc-title">목차</h1>
+ *     <ol class="toc-list">
+ *       <li class="toc-item">
+ *         <span class="toc-item-number">1</span>
+ *         <span class="toc-item-title">동사의 시제</span>
+ *         <span class="toc-item-dots"></span>
+ *         <span class="toc-item-page">12</span>
+ *       </li>
+ *     </ol>
+ *   </div>
+ * </div>
+ */
+
+/* --- 목차 컨테이너 --- */
+.toc {
+    width: 100% !important;
+    margin-bottom: var(--space-2xl) !important;
+}
+
+/* --- 목차 제목 --- */
+.toc-title {
+    font-family: var(--font-eng) !important;
+    font-size: var(--text-3xl) !important;
+    font-weight: 700 !important;
+    color: var(--color-accent-primary) !important;
+    text-align: center !important;
+    margin-bottom: var(--space-xl) !important;
+    padding-bottom: var(--space-md) !important;
+    border-bottom: 2px solid var(--color-accent-primary) !important;
+    letter-spacing: 2px !important;
+}
+
+/* --- 목차 리스트 --- */
+.toc-list {
+    list-style: none !important;
+    padding-left: 0 !important;
+    margin: 0 !important;
+    font-size: var(--text-base) !important;
+    line-height: var(--leading-relaxed) !important;
+}
+
+/* --- 목차 항목 --- */
+.toc-item {
+    display: flex !important;
+    align-items: baseline !important;
+    justify-content: space-between !important;
+    margin-bottom: var(--space-md) !important;
+    padding-bottom: var(--space-sm) !important;
+    border-bottom: 1px solid var(--color-border-default) !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+}
+
+/* --- 넘버링 --- */
+.toc-item-number {
+    font-family: var(--font-eng) !important;
+    font-weight: 700 !important;
+    color: var(--color-accent-primary) !important;
+    margin-right: var(--space-md) !important;
+    flex-shrink: 0 !important;
+    min-width: 25px !important;
+}
+
+/* --- 제목 --- */
+.toc-item-title {
+    flex-grow: 1 !important;
+    color: var(--color-text-primary) !important;
+    padding-right: var(--space-sm) !important;
+}
+
+.toc-item-title b,
+.toc-item-title strong {
+    color: var(--color-accent-dark) !important;
+    font-weight: 700 !important;
+}
+
+/* --- 점선 리더 --- */
+.toc-item-dots {
+    flex-grow: 1 !important;
+    border-bottom: 1px dotted var(--color-text-muted) !important;
+    margin: 0 var(--space-sm) !important;
+    position: relative !important;
+    top: -4px !important;
+}
+
+/* --- 페이지 번호 --- */
+.toc-item-page {
+    font-family: var(--font-eng) !important;
+    font-weight: 600 !important;
+    color: var(--color-accent-primary) !important;
+    padding-left: var(--space-sm) !important;
+    flex-shrink: 0 !important;
+    text-align: right !important;
+    min-width: 30px !important;
+}
+
+/* --- 파트 제목 (그룹 헤더) --- */
+.toc-part-title {
+    font-family: var(--font-eng) !important;
+    font-size: var(--text-xl) !important;
+    font-weight: 700 !important;
+    color: var(--color-accent-secondary) !important;
+    margin-top: var(--space-xl) !important;
+    margin-bottom: var(--space-md) !important;
+    padding: var(--space-sm) var(--space-md) !important;
+    background-color: var(--color-accent-light) !important;
+    border-left: 4px solid var(--color-accent-secondary) !important;
+    break-before: avoid !important;
+    break-after: avoid !important;
+}
+
+.toc-part-title:first-child {
+    margin-top: 0 !important;
+}
+
+/* --- 2단 레이아웃 (옵션) --- */
+.toc-list.toc-list--two-columns {
+    column-count: 2 !important;
+    column-gap: var(--space-2xl) !important;
+}
+
+.toc-list.toc-list--two-columns .toc-part-title {
+    break-before: column !important;
+}
+
+/* --- 인쇄 최적화 --- */
+@media print {
+    .toc-item {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+    }
+
+    .toc-part-title {
+        break-after: avoid !important;
+        page-break-after: avoid !important;
+    }
+}
