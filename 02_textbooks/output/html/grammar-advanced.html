@@ -1,0 +1,3042 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>편입영어 문법 Advanced 편</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;700&family=Merriweather:wght@400;700&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+
+/* === Minimal CSS variables for injected vera-core components === */
+/* Source: 03_system/base/page-layout.css :root block (declarations only) */
+:root {
+  /* Colors */
+  --color-white: #FFFFFF;
+  --color-bg-subtle: #F7F8FA;
+  --color-text-primary: #1F2937;
+  --color-text-muted: #9CA3AF;
+  --color-border-default: #E5E7EB;
+  --color-border-strong: #D1D5DB;
+  --color-accent-primary: #2563EB;
+  --color-accent-dark: #1E3A8A;
+  --color-accent-secondary: #F59E0B;
+  --color-example-bg: #F7FEE7;
+  --color-example-border: #22C55E;
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 16px;
+  --space-xl: 24px;
+  --space-2xl: 32px;
+  /* Typography */
+  --font-eng: 'Inter', sans-serif;
+  --text-xs: 7.5pt;
+  --text-sm: 8.5pt;
+  --text-base: 10pt;
+  --text-md: 10.5pt;
+  --text-lg: 12pt;
+  --text-xl: 14pt;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.7;
+  /* Borders */
+  --radius-sm: 4px;
+}
+/* --- style block 1 --- */
+
+        /* --- 기본 페이지 및 폰트 설정 --- */
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            line-height: 1.7;
+            color: #34495E; /* 기본 텍스트 색상 */
+            background: #f0f2f5;
+            counter-reset: page; /* 🔥 자동 페이지 번호 카운터 초기화 */
+        }
+        .eng-text { font-family: 'Inter', sans-serif; }
+        .bold-text { font-weight: 700; }
+        b { font-weight: 700; }
+
+        /* --- A4 페이지 레이아웃 --- */
+        .page {
+            width: 210mm;
+            height: 297mm;
+            margin: 10mm auto;
+            padding: 15mm 18mm;
+            background: white;
+            box-shadow: none;
+            page-break-after: always;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        .page:last-child {
+            page-break-after: avoid;
+        }
+        .page-content {
+            flex-grow: 1;
+            overflow: hidden;
+        }
+
+        /* --- 페이지 헤더 & 푸터 --- */
+        .page-header, .page-footer {
+            width: 100%;
+            flex-shrink: 0;
+            font-size: 11px;
+            color: #7F8C8D;
+            font-family: 'Inter', sans-serif;
+        }
+        .page-header {
+            border-bottom: 1px solid #BDC3C7;
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            color: #2C3E50;
+        }
+        .page-footer {
+            border-top: 1px solid #BDC3C7;
+            padding-top: 8px;
+            margin-top: 12px;
+            text-align: center;
+        }
+        
+        /* 🔥 자동 페이지 번호 생성 */
+        .page-footer::after {
+            counter-increment: page; /* 각 페이지마다 카운터 1씩 증가 */
+            content: counter(page);   /* 현재 카운터 값을 텍스트로 출력 */
+        }
+        
+        /* 🔥 표지 페이지와 특정 페이지에서 헤더/푸터 숨기기 */
+        .no-header-footer .page-header,
+        .no-header-footer .page-footer,
+        .cover-page-modern .page-footer::after {
+            display: none;
+        }
+        .no-header-footer {
+            padding: 0;
+        }
+
+        /* =================================================================== */
+        /* 템플릿 1-B: 배경 이미지 표지 스타일 (Vera's Flavor 맞춤)             */
+        /* =================================================================== */
+        .cover-page-modern {
+            color: white;
+            overflow: hidden;
+            background-color: #2C3E50; /* 이미지 없을 경우 대비한 인디고 색상 */
+            background-image: url('../../../05_assets/backgrounds/background9.png'); /* 배경 이미지 경로 */
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .cover-page-modern .cover-author,
+        .cover-page-modern .cover-title-container,
+        .cover-page-modern .cover-slogan {
+            position: absolute;
+            z-index: 2; 
+            /* text-shadow removed: causes dark boxes in Puppeteer PDF */
+        }
+
+        .cover-page-modern .cover-author {
+            bottom: 110mm;
+            left: 0mm;
+            transform: rotate(-90deg) translateX(-50%);
+            transform-origin: bottom left;
+            font-size: 14px;
+            letter-spacing: 4px;
+            color: #cce5f5;
+        }
+        .cover-page-modern .cover-title-container {
+            top: 45mm;
+            left: 20mm;
+            text-align: left;
+        }
+        .cover-page-modern .cover-prefix {
+            font-family: 'Inter', sans-serif;
+            font-size: 24px;
+            font-weight: 500;
+            margin-bottom: 5px;
+            color: #e8f4fd;
+        }
+        .cover-page-modern .cover-main-title {
+            font-size: 84px;
+            font-weight: 900;
+            line-height: 1.0;
+            letter-spacing: -4px;
+            margin: 0;
+        }
+        .cover-page-modern .cover-edition {
+            font-family: 'Inter', sans-serif;
+            font-size: 36px;
+            font-weight: 600;
+            margin-top: 15px;
+            color: #E9C46A; /* 골드 옐로우 */
+        }
+
+        .cover-page-modern .cover-slogan {
+            bottom: 20mm;
+            left: 20mm;
+            font-size: 16px;
+            text-align: left;
+            line-height: 1.5;
+            color: #ddeef9;
+        }
+
+        /* --- 콘텐츠 스타일 --- */
+        .toc-header { font-family: 'Inter', sans-serif; font-size: 22px; font-weight: 600; color: #2C3E50; margin-bottom: 20px; padding-bottom: 10px; border-bottom: 2px solid #3498DB; }
+        .toc-list { list-style: none; padding-left: 0; font-size: 12.5px; line-height: 2.2; }
+        .toc-item { display: flex; align-items: baseline; margin-bottom: 5px; }
+        .toc-item .title { order: 1; white-space: nowrap; padding-right: 5px; }
+        .toc-item .dots { order: 2; flex-grow: 1; border-bottom: 1px dotted #BDC3C7; position: relative; top: -4px; }
+        .toc-item .page-num { order: 3; padding-left: 5px; font-family: 'Inter', sans-serif; }
+        .toc-part-title { font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 700; color: #3498DB; margin-top: 20px; margin-bottom: 5px; border-left: 3px solid #E9C46A; padding-left: 10px; }
+        .toc-sub-item { padding-left: 20px; font-size: 12px; color: #6c757d; line-height: 1.8; }
+	    .chapter-header { color: white; margin: 0 0 20px 0; padding: 12px 15px; font-size: 18px; font-weight: 600; display: flex; align-items: center; background: #3498DB; border-radius: 8px; }
+        .chapter-number { background: #d4e9f7; padding: 7px 11px; border-radius: 6px; font-weight: 700; min-width: 60px; text-align: center; margin-right: 12px; }
+        .section-title { font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 600; color: #2C3E50; margin: 20px 0 12px 0; padding: 8px 12px; background: #ECF0F1; border-left: 3px solid #3498DB; border-radius: 0 6px 6px 0; }
+        .first-in-page { margin-top: 0; }
+        .content-paragraph { margin-bottom: 10px; font-size: 12.5px; line-height: 1.75; }
+        .example-list { list-style: none; padding-left: 15px; margin-bottom: 15px; }
+        .example-list li { background: #f8f9fa; border: 1px solid #e9ecef; padding: 6px 10px; margin-bottom: 4px; border-radius: 4px; font-size: 12px; }
+        .practice-section-header { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #fff; background: #2C3E50; padding: 10px 15px; margin: 20px 0 15px 0; border-radius: 8px; }
+        .problem-block { margin-bottom: 15px; padding: 12px; border: 1px solid #e0e0e0; border-left: 3px solid #E9C46A; border-radius: 0 5px 5px 0; }
+        .problem-number { font-family: 'Inter', sans-serif; font-weight: 600; color: #3498DB; margin-right: 5px; font-size: 12.5px; }
+        .problem-text { font-size: 12px; margin-bottom: 8px; line-height: 1.6; }
+        .problem-choices { list-style: none; padding-left: 0; font-size: 11.5px; }
+        .problem-choices li { margin-bottom: 4px; padding: 5px 8px; }
+        
+        /* --- 추가 커스텀 스타일 --- */
+        .part-title-page { display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; height: 100%; }
+        .part-title-page .part-number { font-family: 'Inter', sans-serif; font-size: 24px; font-weight: 600; color: #3498DB; margin-bottom: 10px; }
+        .part-title-page .part-main-title { font-size: 36px; font-weight: 700; color: #2C3E50; line-height: 1.3; }
+        .key-concept-box { background: #eff6ff; border-left: 4px solid #3498DB; padding: 15px 20px; margin: 20px 0; font-size: 12.5px; }
+        .key-concept-box .key-concept-title { font-weight: 700; color: #2C3E50; margin-bottom: 8px; font-size: 14px; }
+        .example-block { background: #f8f9fa; border: 1px solid #e9ecef; padding: 12px 15px; margin: 10px 0 15px 0; border-radius: 4px; font-size: 12px; line-height: 1.6; }
+        .example-block .example-label { font-weight: 600; color: #059669; margin-right: 8px; }
+        .highlight { background-color: #fff3cd; padding: 0 4px; border-radius: 3px; font-weight: 600; }
+        
+        /* --- 정답 및 해설 스타일 --- */
+        .answer-key-header { font-family: 'Inter', sans-serif; font-size: 16px; font-weight: 600; color: #fff; background: #059669; padding: 10px 15px; margin: 0 0 15px 0; border-radius: 8px; }
+        .answer-list { list-style: none; padding: 0; column-count: 2; column-gap: 20px; }
+        .answer-item { break-inside: avoid; padding: 8px 0; border-bottom: 1px dotted #e0e0e0; font-size: 11.5px; line-height: 1.6; }
+        .answer-item:last-child { border-bottom: none; }
+        .answer-number { font-family: 'Inter', sans-serif; font-weight: 700; color: #3498DB; margin-right: 8px; }
+        .answer-explanation .fix-label { font-weight: 700; color: #C0392B; }
+        .answer-explanation .answer-label { font-weight: 700; color: #28a745; }
+
+        /* --- 프린트 최적화 --- */
+        @media print { 
+            body { background: #fff; } 
+            .page { margin: 0; box-shadow: none; } 
+            p, li, div, blockquote { orphans: 3; widows: 3; }
+            .section-title, .chapter-header, .practice-section-header { break-after: avoid-page; }
+            .problem-block, .key-concept-box, .example-block, .answer-item { break-inside: avoid-page; }
+        }
+    
+
+
+/* === vera-core component: answer-grid.css === */
+/* =================================================================== */
+/* answer-grid.css — 정답 그리드 컴포넌트                               */
+/* Vera's Document Studio                                               */
+/* =================================================================== */
+
+/*
+ * 용도: 문제집 정답표 (10열 그리드 또는 3x3 그리드)
+ *
+ * 마크업 예시 (10열):
+ * <div class="answer-grid">
+ *   <h3 class="answer-grid-title">정답</h3>
+ *   <div class="answer-grid-table">
+ *     <div class="answer-grid-item">
+ *       <span class="answer-grid-number">1</span>
+ *       <span class="answer-grid-answer">②</span>
+ *     </div>
+ *     <!-- 반복 -->
+ *   </div>
+ * </div>
+ */
+
+/* --- 정답 그리드 컨테이너 --- */
+.answer-grid {
+    margin: var(--space-2xl) 0 !important;
+    padding: var(--space-lg) !important;
+    background-color: var(--color-bg-subtle) !important;
+    border: 2px solid var(--color-accent-primary) !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+}
+
+/* --- 정답 그리드 제목 --- */
+.answer-grid-title {
+    font-family: var(--font-eng) !important;
+    font-size: var(--text-xl) !important;
+    font-weight: 700 !important;
+    color: var(--color-accent-dark) !important;
+    text-align: center !important;
+    margin-bottom: var(--space-lg) !important;
+    padding-bottom: var(--space-sm) !important;
+    border-bottom: 1px solid var(--color-border-strong) !important;
+    letter-spacing: 2px !important;
+    text-transform: uppercase !important;
+}
+
+/* --- 정답 그리드 테이블 (10열 기본) --- */
+.answer-grid-table {
+    display: grid !important;
+    grid-template-columns: repeat(10, 1fr) !important;
+    gap: var(--space-sm) !important;
+}
+
+/* --- 정답 그리드 항목 --- */
+.answer-grid-item {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: var(--space-sm) !important;
+    background-color: var(--color-white) !important;
+    border: 1px solid var(--color-border-default) !important;
+    text-align: center !important;
+}
+
+/* --- 문제 번호 --- */
+.answer-grid-number {
+    font-family: var(--font-eng) !important;
+    font-size: var(--text-xs) !important;
+    font-weight: 500 !important;
+    color: var(--color-text-muted) !important;
+    margin-bottom: var(--space-xs) !important;
+}
+
+/* --- 정답 번호 --- */
+.answer-grid-answer {
+    font-family: var(--font-eng) !important;
+    font-size: var(--text-md) !important;
+    font-weight: 700 !important;
+    color: var(--color-accent-primary) !important;
+}
+
+/* --- 5열 변형 (문제 수가 적을 때) --- */
+.answer-grid-table--5-columns {
+    grid-template-columns: repeat(5, 1fr) !important;
+}
+
+/* --- 3열 변형 (큰 표시) --- */
+.answer-grid-table--3-columns {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: var(--space-md) !important;
+}
+
+.answer-grid-table--3-columns .answer-grid-item {
+    padding: var(--space-md) !important;
+}
+
+.answer-grid-table--3-columns .answer-grid-number {
+    font-size: var(--text-sm) !important;
+}
+
+.answer-grid-table--3-columns .answer-grid-answer {
+    font-size: var(--text-lg) !important;
+}
+
+/* --- 컴팩트 정답표 (간격 좁게) --- */
+.answer-grid--compact {
+    padding: var(--space-md) !important;
+    margin: var(--space-lg) 0 !important;
+}
+
+.answer-grid--compact .answer-grid-title {
+    font-size: var(--text-lg) !important;
+    margin-bottom: var(--space-md) !important;
+}
+
+.answer-grid--compact .answer-grid-table {
+    gap: var(--space-xs) !important;
+}
+
+.answer-grid--compact .answer-grid-item {
+    padding: var(--space-xs) !important;
+}
+
+.answer-grid--compact .answer-grid-number {
+    font-size: 7pt !important;
+    margin-bottom: 2px !important;
+}
+
+.answer-grid--compact .answer-grid-answer {
+    font-size: var(--text-sm) !important;
+}
+
+/* --- 인라인 정답표 (한 줄로) --- */
+.answer-grid--inline {
+    padding: var(--space-md) !important;
+    background-color: var(--color-white) !important;
+    border: 1px solid var(--color-border-default) !important;
+}
+
+.answer-grid--inline .answer-grid-title {
+    display: inline !important;
+    border-bottom: none !important;
+    margin-bottom: 0 !important;
+    margin-right: var(--space-md) !important;
+    padding-bottom: 0 !important;
+    font-size: var(--text-base) !important;
+}
+
+.answer-grid--inline .answer-grid-table {
+    display: inline-flex !important;
+    flex-wrap: wrap !important;
+    gap: var(--space-md) !important;
+}
+
+.answer-grid--inline .answer-grid-item {
+    flex-direction: row !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    gap: var(--space-xs) !important;
+}
+
+.answer-grid--inline .answer-grid-number {
+    margin-bottom: 0 !important;
+}
+
+.answer-grid--inline .answer-grid-number::after {
+    content: '.' !important;
+}
+
+/* --- 인쇄 최적화 --- */
+@media print {
+    .answer-grid {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+    }
+}
+
+/* === vera-core component: explanation.css === */
+/* =================================================================== */
+/* explanation.css — 정답 해설 컴포넌트                                 */
+/* Vera's Document Studio                                               */
+/* =================================================================== */
+
+/*
+ * 용도: 문제 정답 및 해설 표시
+ *
+ * 마크업 예시:
+ * <div class="explanation" data-problem-id="1">
+ *   <div class="explanation-header">
+ *     <span class="problem-number">1</span>
+ *     <span class="answer-badge">②</span>
+ *   </div>
+ *   <div class="explanation-body">
+ *     <p>주어가 3인칭 단수(She)이고 every day로 습관적 행위를 나타내므로
+ *     현재시제 3인칭 단수형 goes가 정답입니다.</p>
+ *   </div>
+ * </div>
+ */
+
+/* --- 해설 컨테이너 --- */
+.explanation {
+    margin-bottom: var(--space-xl) !important;
+    padding: var(--space-lg) !important;
+    background-color: var(--color-bg-subtle) !important;
+    border-left: 4px solid var(--color-accent-primary) !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+}
+
+/* --- 해설 헤더 (문제 번호 + 정답) --- */
+.explanation-header {
+    display: flex !important;
+    align-items: center !important;
+    gap: var(--space-md) !important;
+    margin-bottom: var(--space-md) !important;
+}
+
+/* --- 문제 번호 (원형, 해설용) --- */
+.explanation .problem-number {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 24px !important;
+    height: 24px !important;
+    background-color: var(--color-accent-dark) !important;
+    color: var(--color-white) !important;
+    font-family: var(--font-eng) !important;
+    font-size: var(--text-sm) !important;
+    font-weight: 700 !important;
+    border-radius: 50% !important;
+    flex-shrink: 0 !important;
+}
+
+/* --- 정답 뱃지 --- */
+.answer-badge {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: var(--space-xs) var(--space-md) !important;
+    background-color: var(--color-accent-secondary) !important;
+    color: var(--color-white) !important;
+    font-family: var(--font-eng) !important;
+    font-size: var(--text-md) !important;
+    font-weight: 700 !important;
+    border-radius: var(--radius-sm) !important;
+}
+
+/* --- 해설 본문 --- */
+.explanation-body {
+    font-size: var(--text-base) !important;
+    line-height: var(--leading-relaxed) !important;
+    color: var(--color-text-primary) !important;
+}
+
+.explanation-body p {
+    margin-bottom: var(--space-md) !important;
+    text-align: justify !important;
+}
+
+.explanation-body p:last-child {
+    margin-bottom: 0 !important;
+}
+
+.explanation-body ul,
+.explanation-body ol {
+    margin-left: var(--space-xl) !important;
+    margin-bottom: var(--space-md) !important;
+}
+
+.explanation-body li {
+    margin-bottom: var(--space-sm) !important;
+}
+
+/* --- 해설 내 강조 텍스트 --- */
+.explanation-body strong,
+.explanation-body b {
+    color: var(--color-accent-dark) !important;
+    font-weight: 700 !important;
+}
+
+.explanation-body em,
+.explanation-body i {
+    color: var(--color-accent-primary) !important;
+    font-style: italic !important;
+}
+
+/* --- 해설 내 예문 블록 --- */
+.explanation-example {
+    margin: var(--space-md) 0 !important;
+    padding: var(--space-md) !important;
+    background-color: var(--color-example-bg) !important;
+    border-left: 3px solid var(--color-example-border) !important;
+    font-size: var(--text-sm) !important;
+    line-height: var(--leading-normal) !important;
+}
+
+.explanation-example.eng-text {
+    font-family: var(--font-eng) !important;
+}
+
+/* --- 컴팩트 해설 (페이지당 5개) --- */
+.explanation--compact {
+    padding: var(--space-md) !important;
+    margin-bottom: var(--space-md) !important;
+}
+
+.explanation--compact .explanation-header {
+    margin-bottom: var(--space-sm) !important;
+}
+
+.explanation--compact .problem-number {
+    width: 20px !important;
+    height: 20px !important;
+    font-size: var(--text-xs) !important;
+}
+
+.explanation--compact .answer-badge {
+    padding: 2px var(--space-sm) !important;
+    font-size: var(--text-sm) !important;
+}
+
+.explanation--compact .explanation-body {
+    font-size: var(--text-sm) !important;
+    line-height: var(--leading-normal) !important;
+}
+
+.explanation--compact .explanation-body p {
+    margin-bottom: var(--space-sm) !important;
+}
+
+/* --- 인쇄 최적화 --- */
+@media print {
+    .explanation {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+    }
+}
+
+
+/* === assemble.js layout overrides === */
+
+/* 양쪽 정렬 전역 적용 */
+.problem-text, .content-paragraph, .page-content p {
+  text-align: justify !important;
+}
+
+/* 문제 3등분 균일 배치 (풀이 공간 확보) */
+.problem-block {
+  min-height: auto !important;
+  box-sizing: border-box;
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+}
+
+/* 누락 클래스 기본 스타일 (book CSS에 없을 경우 적용) */
+.problem-meta {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.problem-question {
+  margin-bottom: 6px !important;
+  font-weight: 500;
+  font-size: 8pt !important;
+}
+.problem-text {
+  font-size: 8pt !important;
+  line-height: 1.5 !important;
+  margin-bottom: 6px !important;
+}
+.problem-choices, .problem-choices li {
+  font-size: 8pt !important;
+}
+.problem-choices {
+  gap: 2px 12px !important;
+  margin-top: 4px !important;
+}
+.problem-choices li {
+  margin-bottom: 1px !important;
+  padding: 2px 4px !important;
+  line-height: 1.4 !important;
+}
+
+/* Prevent double numbering when choices already have circled numbers in HTML */
+.problem-choices--html-numbered li::before {
+  display: none !important;
+}
+
+/* Text answers in answer grid (error-identification type) */
+.answer-grid-item--text {
+  grid-column: span 2;
+  flex-direction: row !important;
+  gap: 8px;
+}
+.answer-grid-item--text .answer-grid-answer {
+  font-size: 10px !important;
+  font-weight: 500 !important;
+  text-align: left !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 120px;
+}
+
+/* === Page overflow fix: allow content to grow beyond 297mm === */
+.page {
+  height: auto !important;
+  min-height: 297mm !important;
+  overflow: visible !important;
+}
+
+.page-content {
+  overflow: visible !important;
+}
+
+@media print {
+  .page {
+    height: auto !important;
+    min-height: 297mm !important;
+    overflow: visible !important;
+  }
+  .page-content {
+    overflow: visible !important;
+  }
+}
+
+/* Chapter divider page styling */
+.chapter-divider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 250mm;
+  text-align: center;
+}
+.chapter-divider-number {
+  font-size: 18pt;
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--color-deep-blue, #345C85);
+  margin-bottom: 16mm;
+}
+.chapter-divider-title {
+  font-size: 28pt;
+  font-weight: 700;
+  color: var(--color-deep-blue, #345C85);
+  margin-bottom: 8mm;
+}
+.chapter-divider-subtitle {
+  font-size: 12pt;
+  font-weight: 400;
+  color: var(--color-text-light, #718096);
+}
+
+/* Vol2 ch10 CSS compatibility — part2-only classes */
+.example-list {
+  list-style-type: '✓ ';
+  padding-left: 20px;
+  margin: 10px 0 15px 0;
+  font-size: 10.5pt;
+}
+.example-list li { margin-bottom: 5px; }
+
+code {
+  font-family: 'Inter', sans-serif;
+  color: var(--color-deep-blue, #345C85);
+  background-color: #f2f4f8;
+  border: 1px solid var(--color-border, #EAEAEA);
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95em;
+}
+
+.comparison-table th:first-child,
+.comparison-table td:first-child {
+  width: 22%;
+  white-space: nowrap;
+}
+
+/* part2 header class aliases (safety net) */
+.part-header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--color-deep-blue, #345C85);
+}
+.part-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 24pt;
+  font-weight: 700;
+  color: var(--color-deep-blue, #345C85);
+}
+
+/* Fix double numbering: ol.problem-choices has browser default decimal + inline circled numbers */
+.problem-choices {
+  list-style: none !important;
+  padding-left: 0 !important;
+}
+.problem-choices li {
+  list-style: none !important;
+}
+
+/* Fallback passage styles (when book CSS uses different selectors) */
+.passage-body {
+  font-size: 9pt !important;
+  line-height: 1.8 !important;
+  margin-bottom: 1.5em !important;
+  text-align: justify !important;
+}
+.passage-body.eng-text {
+  font-family: 'Inter', sans-serif !important;
+}
+.passage-vocab-title {
+  font-size: 10pt !important;
+  font-weight: 700 !important;
+  margin-bottom: 8px !important;
+}
+
+/* Fallback vocab styles */
+.vocab-item {
+  display: flex !important;
+  gap: 8px !important;
+  font-size: 8.5pt !important;
+  line-height: 1.6 !important;
+}
+.vocab-word {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 600 !important;
+}
+.vocab-meaning {
+  color: #475569 !important;
+}
+
+/* Fix problem-number size consistency */
+.problem-number {
+  font-size: 9pt !important;
+  font-weight: 600 !important;
+}
+
+  </style>
+</head>
+<body>
+<div class="page no-header-footer cover-page-modern">
+        <div class="cover-author">VeraJin Academy</div>
+        <div class="cover-title-container">
+            <div class="cover-prefix">Vera's Flavor</div>
+            <h1 class="cover-main-title">
+                편입영어 문법<br>
+            </h1>
+            <div class="cover-edition">Advanced 편</div>
+        </div>
+        <div class="cover-slogan">
+            편입 시험 출제 가능한 모든 문법 포인트<br>
+            + 함정 유형 완벽 대비
+        </div>
+    </div>
+
+<div class="page">
+        <div class="page-header">
+            <span>Vera's Flavor 편입영어 문법 Advanced 편</span>
+            <span>Table of Contents</span>
+        </div>
+        <div class="page-content">
+            <div class="toc-header">CONTENTS</div>
+            
+            <div class="toc-part-title">PART I: 문장의 기본 구조와 고급 변형 (문제 1-100)</div>
+            <ul class="toc-list">
+                <li class="toc-item"><span class="title"><b>Chapter 1:</b> 복합 문장 구조의 완벽 분석</span><span class="dots"></span><span class="page-num">5</span></li>
+                <li class="toc-item"><span class="title"><b>Chapter 2:</b> 5형식의 고급 변형과 특수 구문</span><span class="dots"></span><span class="page-num">26</span></li>
+                <li class="toc-item"><span class="title"><b>Chapter 3:</b> 주어-동사 일치의 모든 예외 사항</span><span class="dots"></span><span class="page-num">51</span></li>
+                <li class="toc-item"><span class="title"><b>Chapter 4:</b> 특수 어순과 도치 구문 마스터</span><span class="dots"></span><span class="page-num">76</span></li>
+            </ul>
+
+            <div class="toc-part-title">PART II: 시제와 법의 완벽 마스터 (문제 101-250)</div>
+            <ul class="toc-list">
+                <li class="toc-item"><span class="title"><b>Chapter 5:</b> 시제 일치의 모든 예외와 특수 상황</span><span class="dots"></span><span class="page-num">101</span></li>
+                <li class="toc-item"><span class="title"><b>Chapter 6:</b> 완료 시제의 세밀한 구분</span><span class="dots"></span><span class="page-num">131</span></li>
+                <li class="toc-item"><span class="title"><b>Chapter 7:</b> 진행형의 고급 활용과 제약</span><span class="dots"></span><span class="page-num">161</span></li>
+                <li class="toc-item"><span class="title"><b>Chapter 8:</b> 가정법의 완전 정복</span><span class="dots"></span><span class="page-num">186</span></li>
+                <li class="toc-item"><span class="title"><b>Chapter 9:</b> 조동사의 고급 용법과 추측 표현</span><span class="dots"></span><span class="page-num">226</span></li>
+            </ul>
+
+            <div class="toc-part-title">PART III: 준동사의 심화 마스터 (문제 251-450)</div>
+            <ul class="toc-list">
+                <li class="toc-item"><span class="title"><b>Chapter 10:</b> 부정사의 모든 용법과 특수 구문</span><span class="dots"></span><span class="page-num">251</span></li>
+                <li class="toc-item"><span class="title"><b>Chapter 11:</b> 동명사의 고급 활용과 미묘한 차이</span><span class="dots"></span><span class="page-num">291</span></li>
+                <li class="toc-item"><span class="title"><b>Chapter 12:</b> 분사와 분사구문의 완전 분석</span><span class="dots"></span><span class="page-num">331</span></li>
+                <li class="toc-item"><span class="title"><b>Chapter 13:</b> 준동사 복합 구문과 특수 용법</span><span class="dots"></span><span class="page-num">391</span></li>
+            </ul>
+        </div>
+        <div class="page-footer"></div>
+    </div>
+
+<div class="page">
+        <div class="page-header">
+            <span>Vera's Flavor 편입영어 문법 Advanced 편</span>
+            <span>Table of Contents</span>
+        </div>
+        <div class="page-content">
+            <div class="toc-header">CONTENTS (Continued)</div>
+            
+            <div class="toc-part-title">PART IV: 관계사와 접속사의 고급 활용 (문제 451-600)</div>
+            <ul class="toc-list">
+                <li class="toc-item"><span class="title"><b>Chapter 14:</b> 관계대명사의 모든 변형과 특수 용법</span><span class="dots"></span><span class="page-num">451</span></li>
+                <li class="toc-item"><span class="title"><b>Chapter 15:</b> 관계부사와 복합관계부사 마스터</span><span class="dots"></span><span class="page-num">491</span></li>
+                <li class="toc-item"><span class="title"><b>Chapter 16:</b> 명사절과 부사절의 고급 문법</span><span class="dots"></span><span class="page-num">521</span></li>
+                <li class="toc-item"><span class="title"><b>Chapter 17:</b> 특수 접속사와 접속 표현</span><span class="dots"></span><span class="page-num">571</span></li>
+            </ul>
+
+            <div class="toc-part-title">PART V: 비교와 특수 구문 (문제 601-750)</div>
+            <ul class="toc-list">
+                <li class="toc-item"><span class="title"><b>Chapter 18:</b> 비교급과 최상급의 모든 변형</span><span class="dots"></span><span class="page-num">601</span></li>
+                <li class="toc-item"><span class="title"><b>Chapter 19:</b> 특수 구문과 강조 표현</span><span class="dots"></span><span class="page-num">651</span></li>
+                <li class="toc-item"><span class="title"><b>Chapter 20:</b> 생략과 대용, 특수 어법</span><span class="dots"></span><span class="page-num">701</span></li>
+            </ul>
+
+            <div class="toc-part-title">PART VI: 편입 고빈출 어법과 실전 문제 (문제 751-1000)</div>
+            <ul class="toc-list">
+                <li class="toc-item"><span class="title"><b>Chapter 21:</b> 편입 빈출 어법 총정리</span><span class="dots"></span><span class="page-num">751</span></li>
+                <li class="toc-item"><span class="title"><b>Chapter 22:</b> 최고난도 종합 문제</span><span class="dots"></span><span class="page-num">851</span></li>
+            </ul>
+        </div>
+        <div class="page-footer"></div>
+    </div>
+
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+<div class="chapter-header first-in-page">
+                <span class="chapter-number">CH 1</span>
+                <span>복합 문장 구조의 완벽 분석</span>
+            </div>
+            <p class="content-paragraph">Advanced 레벨의 독해와 문법 문제에서 가장 먼저 마주하는 장벽은 문장의 핵심 구조, 즉 주어(S)와 동사(V)를 한눈에 파악하는 능력입니다. 출제자는 의도적으로 수많은 수식어구와 절을 삽입하여 문장의 뼈대를 가립니다. 이 챕터에서는 어떤 복잡한 문장이라도 그 구조를 해부하고 분석하는 능력을 완성합니다.</p>
+
+            <div class="section-title">1.1 다중 절 구조와 주절-종속절 관계</div>
+            <div class="key-concept-box">
+                <div class="key-concept-title">핵심 개념</div>
+                문장의 주인인 <b>주절(Main Clause)</b>과 주절을 보조하는 <b>종속절(Subordinate Clause)</b>을 구분하는 것이 핵심입니다. 주절은 그 자체로 완전한 문장이지만, 종속절은 접속사, 관계사, 의문사 등에 이끌려 명사, 형용사, 부사의 역할을 합니다.
+            </div>
+            <p class="content-paragraph"><b>세부 내용 및 함정 분석:</b></p>
+            <ol>
+                <li><b>주절 식별의 기준</b>: 문장 전체에서 가장 핵심적인 내용을 담고 있으며, 종속 접속사(<i>that, because, if...</i>)나 관계사(<i>who, which, that...</i>) 없이 독립적으로 존재할 수 있는 부분을 찾습니다.
+                    <div class="example-block">
+                        <span class="example-label">예시:</span><i>The hypothesis, <b>which many scholars had dismissed as mere speculation</b>, eventually proved to be correct after years of empirical research.</i><br>
+                        → <b>주절</b>: <i>The hypothesis eventually proved to be correct.</i>
+                    </div>
+                </li>
+                <li><b>종속절의 중첩</b>: 하나의 주절에 여러 개의 종속절이 붙거나, 종속절 안에 또 다른 종속절이 포함되는 구조에 익숙해져야 합니다.
+                    <div class="example-block">
+                        <span class="example-label">예시:</span><i>The reason <b>that he failed</b> is <b>that he believed [what everyone told him]</b>.</i><br>
+                        → <b>주절</b>: <i>The reason is that...</i>
+                    </div>
+                </li>
+                <li><b>함정: 주어와 동사 사이의 거리</b>: 출제자는 주어와 동사 사이에 긴 수식어구(전치사구, 분사구, 관계사절)를 삽입하여 수일치 판단을 방해합니다.
+                    <div class="example-block">
+                        <span class="example-label">예시:</span><i>The <span class="highlight">discovery</span> of new manuscripts, detailing the daily lives of people who lived during the medieval period, <span class="highlight">has</span> fundamentally altered our understanding of the era.</i><br>
+                        → <b>주어</b>: <i>The discovery</i> (단수) → <b>동사</b>: <i>has altered</i> (단수)
+                    </div>
+                </li>
+            </ol>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+<div class="section-title first-in-page">1.2 병렬 구조의 완벽성과 일치 원칙</div>
+            <div class="key-concept-box">
+                <div class="key-concept-title">핵심 개념</div>
+                등위접속사(<i>and, but, or</i>)나 상관접속사(<i>not only A but also B</i>), 비교 구문 등으로 연결되는 요소들은 문법적 형태(Form)와 논리적 기능(Function)이 동일해야 합니다. Advanced 레벨에서는 단순한 형태 맞추기를 넘어, 의미적, 논리적 병렬성까지 요구합니다.
+            </div>
+            <p class="content-paragraph"><b>세부 내용 및 함정 분석:</b></p>
+            <ol>
+                <li><b>형태적 병렬성 (Structural Parallelism)</b>: 가장 기본적인 원칙입니다.
+                    <div class="example-block">
+                        <span class="example-label">오류:</span><i>The report criticized the company for <b>violating</b> environmental laws, <b>exploiting</b> its workers, and <b>its failure to disclose</b> financial risks.</i> (X)<br>
+                        <span class="example-label">수정:</span><i>...for <b>violating</b>..., <b>exploiting</b>..., and <b>failing</b> to disclose...</i> (O)
+                    </div>
+                </li>
+                <li><b>논리적 병렬성 (Logical Parallelism)</b>: 연결되는 대상들이 의미적으로 대등해야 합니다.
+                    <div class="example-block">
+                        <span class="example-label">오류:</span><i>The applicants were judged on their academic records, professional experience, and <b>whether they were enthusiastic</b>.</i> (X)<br>
+                        <span class="example-label">수정:</span><i>...on their academic records, professional experience, and <b>enthusiasm</b>.</i> (O)
+                    </div>
+                </li>
+                <li><b>고급 함정: 반복과 생략</b>: 병렬 구조에서 기능어(전치사, 관사, to부정사의 to)를 반복할지 생략할지는 명확성과 스타일에 따라 결정됩니다.
+                    <div class="example-block">
+                        <span class="example-label">오류:</span><i>The system was designed <b>to</b> increase efficiency and <b>reducing</b> costs.</i> (X)<br>
+                        <span class="example-label">수정:</span><i>...to increase efficiency and <b>reduce</b> costs.</i> (O)
+                    </div>
+                </li>
+            </ol>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+<div class="section-title">1.3 삽입구와 동격어의 고급 활용</div>
+            <div class="key-concept-box">
+                <div class="key-concept-title">핵심 개념</div>
+                콤마(,), 대시(—), 괄호() 사이에 들어가는 삽입구(Parenthetical Phrase)와 명사를 부연 설명하는 동격(Appositive)은 문장의 주된 흐름을 방해하는 요소로 작용합니다. 이들을 괄호로 묶어내고 문장의 뼈대를 보는 것이 중요합니다.
+            </div>
+            <ol>
+                <li><b>동격절 (Appositive Clause)</b>: <i>that</i>이 이끄는 완전한 절이 <i>the fact, the idea, the belief</i> 등 추상명사를 설명합니다. 관계대명사 <i>that</i>과 혼동하지 않도록 주의해야 합니다.
+                    <div class="example-block">
+                        <span class="example-label">동격절:</span><i>The <b>fact <span class="highlight">that the universe is expanding</span></b> is well-established.</i> (뒤에 완전한 문장)<br>
+                        <span class="example-label">관계절:</span><i>The <b>fact <span class="highlight">that he mentioned</span></b> was incorrect.</i> (mentioned의 목적어 없음)
+                    </div>
+                </li>
+            </ol>
+            <div class="section-title first-in-page">1.4 강조 구문의 변형과 도치</div>
+            <div class="key-concept-box">
+                <div class="key-concept-title">핵심 개념</div>
+                <i>It-Cleft</i> 구문 (<i>It is/was ~ that...</i>)은 문장의 특정 성분(주어, 목적어, 부사구)을 강조하기 위해 사용됩니다. 이 구문의 구조적 정확성과 시제 일치가 주요 평가 포인트입니다.
+            </div>
+            <p class="content-paragraph"><b>세부 내용 및 함정 분석:</b></p>
+            <ol>
+                <li><b>구조</b>: <b>It + be동사 + 강조 대상 + that/who(m) + 나머지 문장 요소</b>
+                    <div class="example-block">
+                        <span class="example-label">예시:</span><i>It was <b>yesterday</b> that the CEO signed the contract.</i>
+                    </div>
+                </li>
+                <li><b>고급 함정: 시제와 수일치</b>
+                    <div class="example-block">
+                        <span class="example-label">오류:</span><i>It <b>is</b> the documents that <b>was</b> stolen from the archive.</i> (X)<br>
+                        <span class="example-label">수정:</span><i>It <b>was</b> the documents that <b>were</b> stolen from the archive.</i> (O)
+                    </div>
+                </li>
+            </ol>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+<div class="section-title">1.5 문장 성분의 생략과 복원 (Ellipsis)</div>
+            <div class="key-concept-box">
+                <div class="key-concept-title">핵심 개념</div>
+                영어는 반복을 피하기 위해 문맥상 추론 가능한 요소를 생략하는 경향이 있습니다. 생략된 부분을 정확히 복원할 수 있어야 문장의 의미를 오해하지 않습니다.
+            </div>
+            <p class="content-paragraph"><b>세부 내용 및 함정 분석:</b></p>
+            <ol>
+                <li><b>비교 구문에서의 생략</b>: <i>than</i>이나 <i>as</i> 뒤에서 반복되는 동사나 구가 생략됩니다.
+                    <div class="example-block">
+                        <span class="example-label">함정:</span><i>I trust him more than <b>her</b>.</i> (→ I trust her.)<br>
+                        <span class="example-label">함정:</span><i>I trust him more than <b>she</b>.</i> (→ she trusts him.)
+                    </div>
+                </li>
+                <li><b>병렬 구조에서의 생략 (Gapping)</b>: 등위접속사로 연결된 절에서 반복되는 동사가 생략됩니다.
+                    <div class="example-block">
+                        <span class="example-label">예시:</span><i>The legal team will handle the litigation, and the marketing team, the public relations.</i> (생략된 동사: will handle)
+                    </div>
+                </li>
+            </ol>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-advanced-1" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">1</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The assertion that the company's new algorithms, which were developed at great expense and with considerable expertise, is capable of predicting market trends with 95% accuracy has been met with significant skepticism from industry analysts.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-2" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">2</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">It was during the final, exhaustive phase of the investigation that the auditors, who had been working tirelessly for weeks, finally uncovering a complex network of shell corporations used for tax evasion.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-3" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">3</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The primary objectives of the new urban renewal project are to revitalize the downtown area, the preservation of historical landmarks, and creating more green spaces for public use.</div>
+
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-advanced-4" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">4</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">Despite the fact which the evidence was overwhelmingly against him, the defendant continued to maintain his innocence throughout the trial, a decision that ultimately alienated the jury.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-5" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">5</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The committee's recommendation that all employees ① undergo mandatory ethics training and ② that a new oversight body is established ③ were met with resistance from senior management, ④ who argued it was an overreach of authority.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-6" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">6</span>
+    </div>
+    <p class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</p>
+    <div class="problem-text eng-text">The philosopher argued that consciousness, a phenomenon that has puzzled thinkers for centuries, cannot be fully explained by neurobiology alone, nor ________ by computational models of the brain.</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① it can be</li>
+      <li>② can it be</li>
+      <li>③ it can</li>
+      <li>④ can it</li>
+    </ol>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-advanced-7" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">7</span>
+    </div>
+    <p class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</p>
+    <div class="problem-text eng-text">A significant portion of the legislation, encompassing regulations on data privacy and consumer rights that have been debated for months, ________ still awaiting final approval from the senate.</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① is</li>
+      <li>② are</li>
+      <li>③ has been</li>
+      <li>④ have been</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-8" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">8</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The belief, however irrational it may seem to modern sensibilities, that celestial bodies influence human destiny were once a cornerstone of both scientific and philosophical thought.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-9" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">9</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">To fully appreciate the author's intricate narrative structure requires not only a close reading of the text but also understand the complex historical context in which it was written.</div>
+
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-advanced-10" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">10</span>
+    </div>
+    <p class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</p>
+    <div class="problem-text eng-text">It is the CEO's unwavering commitment to innovation, rather than the company's vast financial resources, that ________ the primary driver of its sustained success over the past decade.</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① is</li>
+      <li>② are</li>
+      <li>③ has been</li>
+      <li>④ have been</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-11" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">11</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The professor's lecture on quantum entanglement, a concept that even Einstein famously called "spooky action at a distance," left many students feeling more confused than they have been before.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-12" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">12</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The company's strategy involves minimizing operational costs, the maximization of market share, and to enhance brand loyalty through targeted advertising campaigns.</div>
+
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-advanced-13" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">13</span>
+    </div>
+    <p class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</p>
+    <div class="problem-text eng-text">That the board of directors approved the risky merger without adequate due diligence, a failure that later led to financial ruin, ________ now the subject of a major shareholder lawsuit.</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① is</li>
+      <li>② are</li>
+      <li>③ was</li>
+      <li>④ were</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-14" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">14</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">Rarely the scientific community has witnessed a breakthrough so profound that it fundamentally alters our understanding of the universe's origins.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-15" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">15</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The diplomat was praised for his ability to negotiate complex treaties, his deep understanding of international law, and how skillfully he navigated cultural differences.</div>
+
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-advanced-16" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">16</span>
+    </div>
+    <p class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</p>
+    <div class="problem-text eng-text">It was the lead scientist, not her assistants, who first noticed the anomaly in the data, a discovery that ________ the entire course of the research.</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① alter</li>
+      <li>② alters</li>
+      <li>③ altered</li>
+      <li>④ have altered</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-17" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">17</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The notion that economic prosperity can be achieved at the expense of environmental protection is a dangerous fallacy that have been repeatedly debunked by empirical evidence.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-18" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">18</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The new software allows users to customize their interface, to integrate various third-party applications, and that they can secure their data with end-to-end encryption.</div>
+
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-advanced-19" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">19</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The collection of essays, written by various authors from diverse backgrounds and which address a wide range of contemporary issues, offer a compelling snapshot of our times.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-20" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">20</span>
+    </div>
+    <p class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</p>
+    <div class="problem-text eng-text">It is precisely by confronting and analyzing our past failures, however painful the process might be, ________ we can hope to avoid repeating them in the future.</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① which</li>
+      <li>② what</li>
+      <li>③ that</li>
+      <li>④ when</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-21" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">21</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The fact that the CEO, despite numerous warnings from his financial advisors, continued to invest heavily in a volatile market are often cited as the primary reason for the company's collapse.</div>
+
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-advanced-22" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">22</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The curriculum is designed to provide students with a solid foundation in theoretical physics and equipping them with the practical skills necessary for laboratory research.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-23" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">23</span>
+    </div>
+    <p class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</p>
+    <div class="problem-text eng-text">The realization that the planet's resources are finite and that sustainable practices must be adopted ________ a fundamental shift in global economic policy.</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① demand</li>
+      <li>② demands</li>
+      <li>③ have demanded</li>
+      <li>④ are demanding</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-24" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">24</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">Under no circumstances the confidential data of our clients should be shared with any third party without their explicit, written consent.</div>
+
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-advanced-25" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">25</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The archaeological team's discovery of a previously unknown civilization, one whose artifacts suggest a sophisticated understanding of astronomy, have forced historians to reconsider their timelines of early human development.</div>
+
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+<div class="chapter-header first-in-page">
+                <span class="chapter-number">CH 2</span>
+                <span>5형식의 고급 변형과 특수 구문</span>
+            </div>
+            <p class="content-paragraph">5형식(S+V+O+OC)은 주어가 목적어를 특정 상태로 만들거나, 인식하거나, 여기도록 하는 복잡한 인과 및 인식 관계를 표현하는 데 필수적인 구조입니다. Advanced 레벨에서는 이 기본 구조를 넘어서, 다양한 동사와 결합된 5형식의 미묘한 의미 차이를 이해하고, 수동태 전환 시의 형태 변화, 그리고 가목적어 `it`을 활용한 고급 구문을 완벽하게 구사하는 능력이 요구됩니다. 이 챕터에서는 5형식 구문의 모든 변형과 함정을 마스터합니다.</p>
+
+            <div class="section-title">2.1 4형식↔5형식 전환의 미묘한 차이점</div>
+            <div class="key-concept-box">
+                <div class="key-concept-title">핵심 개념</div>
+                일부 동사(<i>make, find, call, get</i> 등)는 4형식(S+V+IO+DO)과 5형식(S+V+O+OC) 양쪽으로 쓰일 수 있지만, 그 의미는 완전히 달라집니다. 핵심 구분 기준은 <b>목적어(O)와 그 뒤에 오는 요소의 관계</b>입니다. 5형식에서는 <b>O = OC</b> 관계가 성립하지만, 4형식에서는 <b>IO ≠ DO</b> 관계입니다.
+            </div>
+            <div class="example-block">
+                <span class="example-label">4형식:</span><i>She made her son a sandwich.</i> (아들 ≠ 샌드위치)<br>
+                <span class="example-label">5형식:</span><i>She made her son a doctor.</i> (아들 = 의사)
+            </div>
+
+            <div class="section-title">2.2 의사주어 it의 모든 용법과 함정</div>
+            <div class="key-concept-box">
+                <div class="key-concept-title">핵심 개념</div>
+                가주어/가목적어 `it`은 문장의 균형을 맞추기 위해 긴 주어나 목적어 대신 사용하는 자리 표시자(placeholder)입니다. 특히 5형식 구문에서 가목적어 `it`의 활용은 최상위권 변별력 문제로 자주 출제됩니다.
+            </div>
+            <p class="content-paragraph"><b>구조: S + V (make, find, think...) + it (가목적어) + OC + to-V / that절 (진목적어)</b></p>
+            <div class="example-block">
+                <span class="example-label">오류:</span><i>Technology has made possible to connect with people worldwide.</i> (X)<br>
+                <span class="example-label">수정:</span><i>Technology has made <b>it</b> possible to connect with people worldwide.</i> (O)
+            </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+<div class="section-title first-in-page">2.3 존재문(there 구문)의 고급 변형</div>
+            <div class="key-concept-box">
+                <div class="key-concept-title">핵심 개념</div>
+                `There is/are` 구문은 '~이 있다'는 존재를 나타냅니다. Advanced 레벨에서는 `be`동사 외에 다양한 존재, 발생, 등장의 의미를 가진 자동사들(`remain, exist, seem, appear, arise` 등)과 결합된 `There` 구문을 이해해야 합니다.
+            </div>
+            <div class="example-block">
+                <span class="example-label">예시:</span><i>There <b>remain</b> several unresolved issues.</i><br>
+                <span class="example-label">수일치:</span><i>There <b>are</b> a book and a pen on the desk.</i> (주어: a book and a pen)
+            </div>
+
+            <div class="section-title">2.4 감정동사와 지각동사의 특수 활용</div>
+            <div class="key-concept-box">
+                <div class="key-concept-title">핵심 개념</div>
+                지각동사와 감정/상태 변화를 유발하는 동사들은 5형식 구조에서 목적격 보어로 특정 형태(원형부정사, 분사 등)를 요구합니다. 목적어와 목적격 보어의 능동/수동 관계를 파악하는 것이 핵심입니다.
+            </div>
+            <p class="content-paragraph"><b>지각동사 (see, watch, hear...): S + V + O + V(원형) / V-ing / p.p.</b></p>
+            <div class="example-block">
+                <span class="example-label">능동(완료):</span><i>I saw him <b>cross</b> the street.</i><br>
+                <span class="example-label">능동(진행):</span><i>I saw him <b>crossing</b> the street.</i><br>
+                <span class="example-label">수동:</span><i>I heard my name <b>called</b> from behind.</i>
+            </div>
+
+            <div class="section-title">2.5 사역동사의 능동-수동 전환</div>
+            <div class="key-concept-box">
+                <div class="key-concept-title">핵심 개념</div>
+                사역동사(<i>make, have, let</i>)는 목적어에게 특정 동작을 하도록 '시키다'는 의미를 가집니다. 이 구문이 수동태로 전환될 때의 형태 변화는 최상위권 문법 문제의 핵심입니다.
+            </div>
+            <p class="content-paragraph"><b>수동태로의 전환: `make`의 경우 숨어있던 `to`가 나타납니다.</b></p>
+            <div class="example-block">
+                <span class="example-label">능동:</span><i>The professor <b>made</b> the students <b>write</b> an essay.</i><br>
+                <span class="example-label">수동:</span><i>The students <b>were made to write</b> an essay by the professor.</i> (O)
+            </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-advanced-26" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">26</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The new regulations, intended to curb market speculation, have made much more difficult for smaller companies to secure the necessary funding for expansion.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-27" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">27</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">Having been stranded on the deserted island for weeks, the survivors felt the ground to shake violently as the volcano, long thought dormant, began to erupt.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-28" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">28</span>
+    </div>
+    <p class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</p>
+    <div class="problem-text eng-text">There seems to have been a number of critical documents relating to the merger ________ from the server just hours before the investigation began.</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① remove</li>
+      <li>② removing</li>
+      <li>③ removed</li>
+      <li>④ to remove</li>
+    </ol>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-advanced-29" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">29</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The CEO had his legal team to review the contract meticulously before signing it, leaving no room for potential loopholes or ambiguities.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-30" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">30</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The complexity of the algorithm makes that almost impossible for anyone without a background in advanced mathematics to fully comprehend its inner workings.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-31" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">31</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">After a thorough review, the oversight committee found the new security protocols not only inadequate but also is a potential threat to user privacy.</div>
+
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-advanced-32" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">32</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The protestors were not let to enter the city hall, so they gathered on the front steps, chanting slogans and demanding to speak with the mayor.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-33" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">33</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">There are, according to the latest geological survey, a vast reservoir of untapped oil lies beneath the arctic shelf, a discovery that could have profound geopolitical implications.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-34" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">34</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">To ensure the data's integrity, the researchers got every participant signed a consent form and to complete a preliminary questionnaire.</div>
+
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-advanced-35" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">35</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The sudden resignation of the CFO left the entire company in a state of confusion and wondering about its future financial stability.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-36" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">36</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The manager made it clear for all employees that any breach of the new confidentiality agreement would result in immediate termination.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-37" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">37</span>
+    </div>
+    <p class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</p>
+    <div class="problem-text eng-text">We watched the ancient castle, which had stood for centuries, ________ to rubble by the earthquake in a matter of minutes.</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① reduce</li>
+      <li>② reducing</li>
+      <li>③ to be reduced</li>
+      <li>④ reduced</li>
+    </ol>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-advanced-38" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">38</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The government's new policy is intended to get more people use public transportation, thereby reducing traffic congestion and carbon emissions.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-39" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">39</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The investigation revealed that the company had for years made its employees to work in unsafe conditions without adequate protective gear.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-40" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">40</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">There now exists compelling evidence suggests that the Vikings may have reached North America almost 500 years before Columbus.</div>
+
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-advanced-41" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">41</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The facilitator found it surprisingly difficult to get the two opposing parties agree on even the most basic terms for the negotiation.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-42" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">42</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The students were made submit their assignments electronically by midnight, a rule that was strictly enforced by the professor.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-43" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">43</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">I distinctly remember to hear someone call my name, but when I turned around, there was no one in sight.</div>
+
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-advanced-44" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">44</span>
+    </div>
+    <p class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</p>
+    <div class="problem-text eng-text">The new software is so complex that many users find ________ to navigate its features without consulting the manual.</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① that impossible</li>
+      <li>② it impossible</li>
+      <li>③ impossible it</li>
+      <li>④ impossible</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-45" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">45</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">There is a growing number of evidence that indicates a strong correlation between chronic stress and the onset of autoimmune diseases.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-46" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">46</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The director had the actors rehearsing the scene repeatedly until he was satisfied with their performance, pushing them to their creative limits.</div>
+
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-advanced-47" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">47</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The lockdown forced millions of people work from home, a shift that has permanently altered our perception of the traditional office environment.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-48" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">48</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The president called the new trade agreement a historic achievement, one that he believed would usher in an era of unprecedented prosperity.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-49" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">49</span>
+    </div>
+    <p class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</p>
+    <div class="problem-text eng-text">We found the hotel's promise of a "luxurious experience" ________, as the service was slow and the rooms were poorly maintained.</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① to be misleading</li>
+      <li>② was misleading</li>
+      <li>③ misleadingly</li>
+      <li>④ to mislead</li>
+    </ol>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-advanced-50" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">50</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The defendant was seen enter the building at approximately 10 PM, just minutes before the crime was committed, according to three separate witnesses.</div>
+
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+<div class="chapter-header first-in-page">
+                <span class="chapter-number">CH 3</span>
+                <span>주어-동사 일치의 모든 예외 사항</span>
+            </div>
+            <p class="content-paragraph">주어와 동사의 수일치는 영어 문법의 가장 기본 원칙이지만, 편입 영어에서는 이 원칙을 교묘하게 파고드는 예외적인 경우와 복잡한 구조를 집중적으로 출제합니다. 주어와 동사 사이에 긴 수식어구를 삽입하거나, 집합명사, 부분표현, 상관접속사 등 혼동하기 쉬운 주어를 사용하여 수험생의 정확한 문장 분석 능력을 평가합니다. 이 챕터에서는 모든 수일치 함정을 완벽하게 간파하는 능력을 기릅니다.</p>
+
+            <div class="section-title">3.1 거리에 의한 일치 오류 방지</div>
+            <div class="key-concept-box">
+                <div class="key-concept-title">핵심 개념</div>
+                동사 바로 앞에 있는 명사가 아니라, 문장 전체의 의미를 이끄는 핵심 주어(Head Noun)를 찾아 동사의 수를 일치시켜야 합니다.
+            </div>
+            <div class="example-block">
+                <span class="example-label">예시:</span><i>The <span class="highlight">quality</span> of the new semiconductor chips ... <b>is</b> exceptional.</i> (주어: quality)
+            </div>
+
+            <div class="section-title">3.2 집합명사와 단복수 일치의 미묘함</div>
+            <div class="key-concept-box">
+                <div class="key-concept-title">핵심 개념</div>
+                `family`, `team`, `committee` 등 집합명사는 문맥에 따라 단수(하나의 단위) 또는 복수(구성원 개개인)로 취급될 수 있습니다.
+            </div>
+            <div class="example-block">
+                <span class="example-label">단수:</span><i>The <b>committee has</b> reached a unanimous decision.</i> (하나의 단위)<br>
+                <span class="example-label">복수:</span><i>The <b>committee are</b> still debating the final details.</i> (구성원들)
+            </div>
+
+            <div class="section-title">3.3 분량·시간·거리 표현의 일치</div>
+            <div class="key-concept-box">
+                <div class="key-concept-title">핵심 개념</div>
+                시간, 거리, 금액, 무게 등의 단위가 하나의 덩어리나 총량으로 간주될 때는 단수 동사를 사용합니다.
+            </div>
+            <div class="example-block">
+                <span class="example-label">예시:</span><i>Ten million dollars <b>is</b> a huge sum of money.</i> (하나의 총액)
+            </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+<div class="section-title first-in-page">3.4 부분표현(분수·백분율)과 일치</div>
+            <div class="key-concept-box">
+                <div class="key-concept-title">핵심 개념</div>
+                `most of`, `some of`, `all of`, `분수 of`, `% of` 등 부분/전체를 나타내는 표현은 `of` 뒤에 오는 명사의 수에 동사를 일치시킵니다.
+            </div>
+            <div class="example-block">
+                <span class="example-label">불가산:</span><i>Half of the <b>information was</b> inaccurate.</i><br>
+                <span class="example-label">복수:</span><i>Half of the <b>students have</b> already left.</i><br>
+                <span class="example-label">A number of:</span><i><b>A number of</b> issues <b>have</b> arisen.</i> (많은)<br>
+                <span class="example-label">The number of:</span><i><b>The number of</b> issues <b>has</b> increased.</i> (~의 수)
+            </div>
+
+            <div class="section-title">3.5 상관접속사와 일치 원칙</div>
+            <div class="key-concept-box">
+                <div class="key-concept-title">핵심 개념</div>
+                상관접속사로 연결된 주어의 수일치는 접속사의 종류에 따라 규칙이 다릅니다.
+            </div>
+            <p class="content-paragraph"><b>1. 근자 일치 (Proximity Rule)</b>: `Either A or B`, `Neither A nor B`, `Not only A but also B` 구문에서는 동사에 더 가까운 주어(B)에 수를 일치시킵니다.</p>
+            <div class="example-block">
+                <span class="example-label">예시:</span><i>Neither the employees nor the <b>manager wants</b> to work overtime.</i>
+            </div>
+            <p class="content-paragraph"><b>2. 원자 일치</b>: `A as well as B`, `A along with B` 구문에서는 항상 첫 번째 주어(A)에 수를 일치시킵니다.</p>
+            <div class="example-block">
+                <span class="example-label">예시:</span><i>The <b>CEO</b>, as well as his advisors, <b>is</b> expected to attend the meeting.</i>
+            </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-advanced-51" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">51</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The proliferation of digital devices, along with the widespread availability of high-speed internet, have fundamentally transformed the media landscape.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-52" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">52</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">Neither the project manager nor the lead engineers was able to identify the root cause of the system failure until the external audit was conducted.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-53" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">53</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">A significant portion of the rainforest, which are home to millions of unique species, is being destroyed at an alarming rate due to illegal logging.</div>
+
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-advanced-54" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">54</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The number of applicants for the position have exceeded our expectations, suggesting a high level of interest in the role.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-55" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">55</span>
+    </div>
+    <p class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</p>
+    <div class="problem-text eng-text">Every one of the students who were selected for the advanced program ________ required to submit a research proposal by the end of the semester.</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① is</li>
+      <li>② are</li>
+      <li>③ was</li>
+      <li>④ were</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-56" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">56</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The government, despite facing opposition from various interest groups, claim that the new tax policy will ultimately benefit the economy as a whole.</div>
+
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-advanced-57" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">57</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">Three-quarters of the planet's surface are covered by water, yet only a small fraction of it are fresh water suitable for human consumption.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-58" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">58</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The CEO, together with the board of directors, are responsible for setting the company's long-term strategic goals.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-59" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">59</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">There, in the dusty archives of the old library, was a collection of manuscripts that contained previously unknown details about the city's history.</div>
+
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-advanced-60" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">60</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">Not only the structural integrity of the bridge but also the safety of the commuters depend on the immediate implementation of these repairs.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-61" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">61</span>
+    </div>
+    <p class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</p>
+    <div class="problem-text eng-text">The majority of the committee believes that the current approach is ineffective; the rest of the members, however, ________ convinced that it needs more time.</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① is</li>
+      <li>② are</li>
+      <li>③ has been</li>
+      <li>④ have been</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-62" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">62</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">One hundred dollars are not a huge amount to spend on a quality pair of shoes that will last for years.</div>
+
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-advanced-63" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">63</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The team of researchers, after years of painstaking work, have finally published their findings in a prestigious scientific journal.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-64" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">64</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">All of the equipment in the laboratories, some of which are highly sophisticated, needs to be calibrated annually to ensure accuracy.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-65" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">65</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">Either the raw data from the experiment or the final analysis of the results contain a critical error that invalidates the conclusion.</div>
+
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-advanced-66" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">66</span>
+    </div>
+    <p class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</p>
+    <div class="problem-text eng-text">The complexity of the issues discussed in the report, ranging from economic policy to international relations, ________ it difficult for the average reader to grasp.</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① make</li>
+      <li>② makes</li>
+      <li>③ has made</li>
+      <li>④ have made</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-67" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">67</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">A number of the new regulations has been challenged in court by corporations arguing that they are unconstitutional.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-68" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">68</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The media's coverage of the political scandal, including countless hours of television commentary and thousands of articles, have influenced public opinion significantly.</div>
+
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-advanced-69" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">69</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">Most of the blame for the project's failure have been placed on the former manager, who has since resigned.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-70" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">70</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The pair of gloves that was left on the bench do not belong to anyone on our team.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-71" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">71</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The company's workforce, more than half of whom is approaching retirement age, present a significant challenge for future planning.</div>
+
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-advanced-72" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">72</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">Not the politicians but the public are ultimately responsible for the state of the environment.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-73" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">73</span>
+    </div>
+    <p class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</p>
+    <div class="problem-text eng-text">Each of the defendants accused of participating in the fraud scheme ________ pleaded not guilty.</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① has</li>
+      <li>② have</li>
+      <li>③ is</li>
+      <li>④ are</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-74" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">74</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The series of events that led to the financial crisis is complex and multifaceted, involving failures at multiple levels of the regulatory system.</div>
+
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-advanced-75" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">75</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">What worries the economists most are the combination of rising inflation and stagnant wage growth, a phenomenon known as stagflation.</div>
+
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+<div class="chapter-header first-in-page">
+                <span class="chapter-number">CH 4</span>
+                <span>특수 어순과 도치 구문 마스터</span>
+            </div>
+            <p class="content-paragraph">도치(Inversion)는 주어와 동사(또는 조동사)의 정상적인 어순을 바꾸는 것으로, 문장을 강조하거나 특정 문법적 구조를 형성하기 위해 사용됩니다. 특히 부정어 도치와 가정법 도치는 편입 시험에서 문법적 지식의 깊이를 측정하는 단골 출제 유형입니다. 이 챕터에서는 모든 도치 구문의 조건과 형태를 완벽하게 마스터합니다.</p>
+
+            <div class="section-title">4.1 부정어 도치</div>
+            <div class="key-concept-box">
+                <div class="key-concept-title">핵심 개념</div>
+                부정의 의미를 갖는 부사(구/절)가 문장 맨 앞으로 이동할 때, 주절의 주어와 조동사(또는 be/have 동사)가 의문문처럼 도치됩니다.
+            </div>
+            <p class="content-paragraph"><b>구조: 부정어구 + 조동사/be/have + S + V(본동사)</b></p>
+            <div class="example-block">
+                <span class="example-label">예시:</span><i><b>Little did she realize</b> the danger she was in.</i><br>
+                <span class="example-label">Not until:</span><i>Not until the investigation was complete <b>was the truth revealed</b>.</i> (주절에서 도치)
+            </div>
+
+            <div class="section-title">4.2 가정법 조건절 도치</div>
+            <div class="key-concept-box">
+                <div class="key-concept-title">핵심 개념</div>
+                가정법 문장에서 접속사 `if`를 생략하면, 주어와 동사(were, had, should)가 도치됩니다.
+            </div>
+            <div class="example-block">
+                <span class="example-label">과거:</span><i>If I were you...</i> → <i><b>Were I</b> you...</i><br>
+                <span class="example-label">과거완료:</span><i>If I had known...</i> → <i><b>Had I</b> known...</i><br>
+                <span class="example-label">미래:</span><i>If you should need...</i> → <i><b>Should you</b> need...</i>
+            </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+<div class="section-title first-in-page">4.3 비교급 도치와 so/such 도치</div>
+            <div class="key-concept-box">
+                <div class="key-concept-title">핵심 개념</div>
+                강조를 위해 `so + 형용사/부사` 또는 `such + be`가 문두로 나갈 때 도치가 발생합니다.
+            </div>
+            <div class="example-block">
+                <span class="example-label">So 도치:</span><i><b>So intense was the heat</b> that the roads began to melt.</i><br>
+                <span class="example-label">Such 도치:</span><i><b>Such was his reputation</b> that no one dared to challenge him.</i>
+            </div>
+
+            <div class="section-title">4.4 장소·방향 부사구 도치</div>
+            <div class="key-concept-box">
+                <div class="key-concept-title">핵심 개념</div>
+                장소나 방향을 나타내는 부사구(전치사구)가 문두로 이동하면, 주어와 자동사가 도치될 수 있습니다. 단, 주어가 대명사일 경우에는 도치되지 않습니다.
+            </div>
+            <div class="example-block">
+                <span class="example-label">도치 O:</span><i>On top of the hill <b>stands an ancient fortress</b>.</i> (주어: 명사)<br>
+                <span class="example-label">도치 X:</span><i>Down the street <b>it came</b>.</i> (주어: 대명사)
+            </div>
+
+            <div class="section-title">4.5 감탄문과 간접의문문</div>
+            <div class="key-concept-box">
+                <div class="key-concept-title">핵심 개념</div>
+                다른 절의 일부로 포함되는 간접의문문은 평서문 어순(`주어+동사`)을 따릅니다.
+            </div>
+            <div class="example-block">
+                <span class="example-label">직접의문문:</span><i>What <b>is the problem</b>?</i><br>
+                <span class="example-label">간접의문문:</span><i>I don't know <b>what the problem is</b>.</i> (O)<br>
+                <span class="example-label">오류:</span><i>I don't know <b>what is the problem</b>.</i> (X)
+            </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-advanced-76" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">76</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">Under no circumstances employees are permitted to share their security credentials with anyone, regardless of their rank or position.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-77" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">77</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">So profound the implications of the discovery were that the scientific community took nearly a decade to fully accept them.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-78" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">78</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">Had the regulator acted more decisively, not only the financial crisis could have been averted but also public trust in the banking system might have been preserved.</div>
+
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-advanced-79" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">79</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The report fails to address the crucial question of how can the new policy be implemented without causing significant disruption to existing operations.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-80" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">80</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">Rarely in the history of modern medicine a single invention has had such a transformative impact on public health as the development of vaccines.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-81" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">81</span>
+    </div>
+    <p class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</p>
+    <div class="problem-text eng-text">On the wall of the ancient tomb ________ intricate hieroglyphs depicting the life and death of a forgotten pharaoh.</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① was</li>
+      <li>② were</li>
+      <li>③ has been</li>
+      <li>④ have been</li>
+    </ol>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-advanced-82" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">82</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">Only by understanding the historical context of the novel one can fully appreciate the depth of its social commentary.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-83" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">83</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">Such was the chaos after the earthquake that the government struggled to provide even basic necessities to its citizens.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-84" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">84</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The committee is investigating why did the safety protocols fail and who is ultimately responsible for the oversight.</div>
+
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-advanced-85" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">85</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">No sooner the CEO had finished his speech than the company's stock price began to plummet.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-86" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">86</span>
+    </div>
+    <p class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</p>
+    <div class="problem-text eng-text">________ aware of the potential risks, they would have never approved the project in the first place.</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① They had been</li>
+      <li>② Had they been</li>
+      <li>③ They were</li>
+      <li>④ Were they</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-87" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">87</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">In the valley below the towering mountains a small, isolated village lies, seemingly untouched by the passage of time.</div>
+
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-advanced-88" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">88</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">Not for a single moment I did doubt his loyalty, even when all the evidence seemed to point against him.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-89" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">89</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The question of what constitutes "intelligence" and how can it be measured accurately remains a subject of intense debate among psychologists.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-90" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">90</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">Little the board of directors knew that their decision to merge with the rival company would eventually lead to its downfall.</div>
+
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-advanced-91" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">91</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">Into the crowded courtroom he walked, exuding an air of confidence that seemed to defy the gravity of the charges against him.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-92" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">92</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">Not only the new regulations are difficult to interpret, but they also impose a significant financial burden on small businesses.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-93" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">93</span>
+    </div>
+    <p class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</p>
+    <div class="problem-text eng-text">Should you require any further clarification on this matter, ________ hesitate to contact my office directly.</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① do not</li>
+      <li>② you should not</li>
+      <li>③ not</li>
+      <li>④ you do not</li>
+    </ol>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-advanced-94" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">94</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The police asked the witness to describe exactly what did he see on the night of the incident.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-95" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">95</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">Hardly the sun had risen when the rescue team began their search for the missing hikers in the treacherous mountain terrain.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-96" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">96</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">On no account you should provide personal information to anyone over the phone, even if they claim to be from your bank.</div>
+
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-advanced-97" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">97</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">The issue is not who is to blame, but rather what steps should be taken now to mitigate the damage.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-98" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">98</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">So skillfully the artist manipulated light and shadow that her paintings seemed almost three-dimensional.</div>
+
+  </div>
+
+  <div class="problem-block" data-id="grammar-advanced-99" data-type="error-identification">
+    <div class="problem-meta">
+      <span class="problem-number">99</span>
+    </div>
+    <p class="problem-question">다음 문장에서 어법상 틀린 부분을 찾아 고치시오.</p>
+    <div class="problem-text eng-text">Not until all other options had been exhausted the committee did agree to consider such a drastic measure.</div>
+
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-advanced-100" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">100</span>
+    </div>
+    <p class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</p>
+    <div class="problem-text eng-text">Were the government to implement a universal basic income, the potential economic and social consequences ________ profound.</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① are</li>
+      <li>② would be</li>
+      <li>③ will be</li>
+      <li>④ were</li>
+    </ol>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="answer-grid">
+    <h3 class="answer-grid-title">정답</h3>
+    <div class="answer-grid-table">
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">1</span>
+        <span class="answer-grid-answer">is → are (주어는 복수인 algorithms)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">2</span>
+        <span class="answer-grid-answer">uncovering → uncovered (that절의 동사가 필요)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">3</span>
+        <span class="answer-grid-answer">the preservation of → to preserve (to-V 병렬 구조 일치)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">4</span>
+        <span class="answer-grid-answer">which → that (동격절을 이끄는 접속사는 that)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">5</span>
+        <span class="answer-grid-answer">is established → be established, were → was</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">6</span>
+        <span class="answer-grid-answer">②</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">7</span>
+        <span class="answer-grid-answer">①</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">8</span>
+        <span class="answer-grid-answer">were → was (주어는 단수인 The belief)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">9</span>
+        <span class="answer-grid-answer">understand → understanding (명사구와 병렬)</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">10</span>
+        <span class="answer-grid-answer">③</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">11</span>
+        <span class="answer-grid-answer">have been → were (주절 시제 left(과거)와 일치)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">12</span>
+        <span class="answer-grid-answer">the maximization of → maximizing, to enhance → enhancing</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">13</span>
+        <span class="answer-grid-answer">①</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">14</span>
+        <span class="answer-grid-answer">the scientific community has → has the scientific community</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">15</span>
+        <span class="answer-grid-answer">how skillfully he navigated → his skillful navigation of</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">16</span>
+        <span class="answer-grid-answer">③</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">17</span>
+        <span class="answer-grid-answer">have been → has been (선행사는 a dangerous fallacy)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">18</span>
+        <span class="answer-grid-answer">that they can secure → to secure (to-V 병렬)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">19</span>
+        <span class="answer-grid-answer">which address → addressing, offer → offers</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">20</span>
+        <span class="answer-grid-answer">③</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">21</span>
+        <span class="answer-grid-answer">are → is (주어는 The fact)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">22</span>
+        <span class="answer-grid-answer">equipping → to equip (to provide와 병렬)</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">23</span>
+        <span class="answer-grid-answer">②</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">24</span>
+        <span class="answer-grid-answer">the confidential data... should → should the confidential data...</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">25</span>
+        <span class="answer-grid-answer">have forced → has forced (주어는 discovery)</span>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="answer-grid">
+    <h3 class="answer-grid-title">정답</h3>
+    <div class="answer-grid-table">
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">26</span>
+        <span class="answer-grid-answer">made → made it (가목적어 it 누락)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">27</span>
+        <span class="answer-grid-answer">to shake → shake / shaking (지각동사 felt + O + V원형/Ving)</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">28</span>
+        <span class="answer-grid-answer">③</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">29</span>
+        <span class="answer-grid-answer">to review → review (사역동사 have + O + V원형)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">30</span>
+        <span class="answer-grid-answer">that → it (가목적어는 it)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">31</span>
+        <span class="answer-grid-answer">is → a potential threat (병렬 구조)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">32</span>
+        <span class="answer-grid-answer">let to enter → allowed to enter (let의 수동태)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">33</span>
+        <span class="answer-grid-answer">are → is, lies → lying</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">34</span>
+        <span class="answer-grid-answer">signed → to sign (get + O + to-V)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">35</span>
+        <span class="answer-grid-answer">wondering → wonder (병렬 구조)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">36</span>
+        <span class="answer-grid-answer">for → to (make it clear to sb)</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">37</span>
+        <span class="answer-grid-answer">④</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">38</span>
+        <span class="answer-grid-answer">use → to use (get + O + to-V)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">39</span>
+        <span class="answer-grid-answer">to work → work (make + O + V원형)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">40</span>
+        <span class="answer-grid-answer">suggests → suggesting (현재분사 수식)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">41</span>
+        <span class="answer-grid-answer">agree → to agree (get + O + to-V)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">42</span>
+        <span class="answer-grid-answer">submit → to submit (be made to-V)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">43</span>
+        <span class="answer-grid-answer">to hear → hearing (remember + V-ing)</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">44</span>
+        <span class="answer-grid-answer">②</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">45</span>
+        <span class="answer-grid-answer">No Error (주어 evidence에 동사 is 일치)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">46</span>
+        <span class="answer-grid-answer">rehearsing → rehearse (have + O + V원형)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">47</span>
+        <span class="answer-grid-answer">work → to work (force + O + to-V)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">48</span>
+        <span class="answer-grid-answer">No Error (call O OC 구조)</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">49</span>
+        <span class="answer-grid-answer">①</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">50</span>
+        <span class="answer-grid-answer">enter → to enter (be seen to-V)</span>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="answer-grid">
+    <h3 class="answer-grid-title">정답</h3>
+    <div class="answer-grid-table">
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">51</span>
+        <span class="answer-grid-answer">have → has (주어는 The proliferation)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">52</span>
+        <span class="answer-grid-answer">was → were (동사에 가까운 주어는 engineers)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">53</span>
+        <span class="answer-grid-answer">are → is (선행사는 the rainforest)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">54</span>
+        <span class="answer-grid-answer">have → has (The number of + 단수V)</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">55</span>
+        <span class="answer-grid-answer">①</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">56</span>
+        <span class="answer-grid-answer">claim → claims (주어는 The government, 단일체)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">57</span>
+        <span class="answer-grid-answer">are → is (주어: surface), are → is (주어: it)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">58</span>
+        <span class="answer-grid-answer">are → is (주어는 The CEO)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">59</span>
+        <span class="answer-grid-answer">No Error (주어는 a collection, 단수)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">60</span>
+        <span class="answer-grid-answer">depend → depends (동사에 가까운 주어는 the safety)</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">61</span>
+        <span class="answer-grid-answer">②</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">62</span>
+        <span class="answer-grid-answer">are → is (하나의 총액)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">63</span>
+        <span class="answer-grid-answer">have → has (주어는 The team, 단일체)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">64</span>
+        <span class="answer-grid-answer">are → is (선행사는 equipment, 불가산)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">65</span>
+        <span class="answer-grid-answer">contain → contains (동사에 가까운 주어는 the final analysis)</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">66</span>
+        <span class="answer-grid-answer">②</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">67</span>
+        <span class="answer-grid-answer">has → have (A number of + 복수V)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">68</span>
+        <span class="answer-grid-answer">have → has (주어는 The media's coverage)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">69</span>
+        <span class="answer-grid-answer">have → has (blame은 불가산 명사)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">70</span>
+        <span class="answer-grid-answer">do → does (주어는 The pair)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">71</span>
+        <span class="answer-grid-answer">is → are, present → presents</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">72</span>
+        <span class="answer-grid-answer">are → is (B(the public)에 일치)</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">73</span>
+        <span class="answer-grid-answer">①</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">74</span>
+        <span class="answer-grid-answer">No Error (주어는 The series)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">75</span>
+        <span class="answer-grid-answer">are → is (주어는 What절, 단수 취급)</span>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>편입영어 문법 Advanced 편</span>
+  </div>
+  <div class="page-content">
+  <div class="answer-grid">
+    <h3 class="answer-grid-title">정답</h3>
+    <div class="answer-grid-table">
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">76</span>
+        <span class="answer-grid-answer">employees are → are employees</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">77</span>
+        <span class="answer-grid-answer">profound the implications... were → profound were the implications...</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">78</span>
+        <span class="answer-grid-answer">the financial crisis could → could the financial crisis</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">79</span>
+        <span class="answer-grid-answer">how can the new policy be → how the new policy can be</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">80</span>
+        <span class="answer-grid-answer">a single invention has → has a single invention</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">81</span>
+        <span class="answer-grid-answer">②</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">82</span>
+        <span class="answer-grid-answer">one can → can one</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">83</span>
+        <span class="answer-grid-answer">No Error</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">84</span>
+        <span class="answer-grid-answer">why did the safety protocols fail → why the safety protocols failed</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">85</span>
+        <span class="answer-grid-answer">the CEO had → had the CEO</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">86</span>
+        <span class="answer-grid-answer">②</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">87</span>
+        <span class="answer-grid-answer">a small... village lies → lies a small... village</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">88</span>
+        <span class="answer-grid-answer">I did → did I</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">89</span>
+        <span class="answer-grid-answer">how can it be → how it can be</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">90</span>
+        <span class="answer-grid-answer">the board... knew → did the board... know</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">91</span>
+        <span class="answer-grid-answer">No Error (주어가 대명사이므로 도치 X)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">92</span>
+        <span class="answer-grid-answer">the new regulations are → are the new regulations</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">93</span>
+        <span class="answer-grid-answer">①</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">94</span>
+        <span class="answer-grid-answer">what did he see → what he saw</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">95</span>
+        <span class="answer-grid-answer">the sun had → had the sun</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">96</span>
+        <span class="answer-grid-answer">you should → should you</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">97</span>
+        <span class="answer-grid-answer">No Error (간접의문문 어순)</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">98</span>
+        <span class="answer-grid-answer">the artist manipulated → did the artist manipulate</span>
+      </div>
+      <div class="answer-grid-item answer-grid-item--text">
+        <span class="answer-grid-number">99</span>
+        <span class="answer-grid-answer">the committee did → did the committee</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">100</span>
+        <span class="answer-grid-answer">②</span>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,3624 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>문법 Bridge - 의문사 (Interrogatives)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;700&family=Merriweather:wght@400;700&family=Noto+Serif+KR:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+
+/* === Minimal CSS variables for injected vera-core components === */
+/* Source: 03_system/base/page-layout.css :root block (declarations only) */
+:root {
+  /* Colors */
+  --color-white: #FFFFFF;
+  --color-bg-subtle: #F7F8FA;
+  --color-text-primary: #1F2937;
+  --color-text-muted: #9CA3AF;
+  --color-border-default: #E5E7EB;
+  --color-border-strong: #D1D5DB;
+  --color-accent-primary: #2563EB;
+  --color-accent-dark: #1E3A8A;
+  --color-accent-secondary: #F59E0B;
+  --color-example-bg: #F7FEE7;
+  --color-example-border: #22C55E;
+  /* Spacing */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 12px;
+  --space-lg: 16px;
+  --space-xl: 24px;
+  --space-2xl: 32px;
+  /* Typography */
+  --font-eng: 'Inter', sans-serif;
+  --text-xs: 7.5pt;
+  --text-sm: 8.5pt;
+  --text-base: 10pt;
+  --text-md: 10.5pt;
+  --text-lg: 12pt;
+  --text-xl: 14pt;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.7;
+  /* Borders */
+  --radius-sm: 4px;
+}
+/* --- style block 1 --- */
+
+        /* --- 기본 페이지 및 폰트 설정 --- */
+        @page {
+            size: A4;
+            margin: 0;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background: #e8e9eb; /* 페이지 외부 배경색 */
+            counter-reset: page; /* 자동 페이지 번호 카운터 초기화 */
+        }
+        .eng-text { font-family: 'Inter', sans-serif; }
+        .serif-text { font-family: 'Playfair Display', serif; }
+        .bold-text { font-weight: 700; }
+
+        /* --- 색상 변수 (표지 이미지 기반) --- */
+        :root {
+            --color-sea-blue: #6C96C6;      /* 바다색 */
+            --color-deep-blue: #345C85;     /* 깊은 바다색 */
+            --color-sandy-beige: #F2C994;   /* 모래색 */
+            --color-warm-orange: #E9A266;   /* 고양이색 */
+            --color-text-dark: #3D4852;     /* 기본 텍스트 색상 */
+            --color-text-light: #718096;    /* 보조 텍스트 색상 */
+            --color-bg-light: #FDFBF6;      /* 밝은 배경색 */
+            --color-border: #EAEAEA;        /* 테두리 색상 */
+        }
+
+        /* --- A4 페이지 레이아웃 --- */
+        .page {
+            width: 210mm;
+            height: 297mm;
+            margin: 10mm auto;
+            padding: 15mm 18mm;
+            background: white;
+            box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+            page-break-after: always;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+        .page:last-child {
+            page-break-after: avoid;
+        }
+        .page-content {
+            flex-grow: 1;
+            overflow: hidden;
+            font-size: 11pt;
+            line-height: 1.8;
+            color: var(--color-text-dark);
+        }
+
+        /* --- 페이지 헤더 & 푸터 --- */
+        .page-header, .page-footer {
+            width: 100%;
+            flex-shrink: 0;
+            font-size: 9pt;
+            color: var(--color-text-light);
+            font-family: 'Inter', sans-serif;
+        }
+        .page-header {
+            border-bottom: 1px solid var(--color-border);
+            padding-bottom: 8px;
+            margin-bottom: 12px;
+            display: flex;
+            justify-content: space-between;
+            color: var(--color-deep-blue);
+            font-weight: 500;
+        }
+        .page-footer {
+            border-top: 1px solid var(--color-border);
+            padding-top: 8px;
+            margin-top: 12px;
+            text-align: center;
+        }
+        
+        /* 자동 페이지 번호 생성 */
+        .page-footer::after {
+            counter-increment: page;
+            content: counter(page);
+        }
+        
+        /* 특정 페이지 헤더/푸터 숨기기 */
+        .no-header-footer { padding: 0; }
+        .no-header-footer .page-header,
+        .no-header-footer .page-footer,
+        .cover-page .page-footer::after,
+        .part-intro-page .page-footer::after,
+        .toc-page .page-header,
+        .chapter-page .page-header {
+            display: none;
+        }
+        .part-intro-page .page-header,
+        .part-intro-page .page-footer {
+            border: none;
+        }
+
+        /* =================================================================== */
+        /* 세련된 표지 디자인 (2025 트렌드)                                    */
+        /* =================================================================== */
+        .cover-page {
+            color: white;
+            overflow: hidden;
+            background-color: #0284c7;
+            background-image: url('../../../05_assets/backgrounds/backgroundGMBR.png'), linear-gradient(135deg, #0ea5e9 0%, #0284c7 50%, #0369a1 100%);
+            background-size: cover;
+            background-position: center;
+            background-blend-mode: soft-light;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .cover-text-box {
+            background: transparent;
+            border: 2px solid rgba(255, 255, 255, 0.9);
+            padding: 25mm 30mm 20mm 30mm;
+            border-radius: 0;
+            text-align: center;
+            color: white;
+            max-width: 150mm;
+            position: relative;
+            /* backdrop-filter removed: breaks Puppeteer PDF */
+            margin-bottom: 20mm;
+        }
+
+        .cover-text-box .cover-prefix {
+            font-family: 'Inter', sans-serif;
+            font-size: 18pt;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.85);
+            margin-bottom: 8mm;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .cover-text-box .cover-main-title {
+            font-family: 'Inter', sans-serif;
+            font-size: 48pt;
+            font-weight: 800;
+            line-height: 0.95;
+            margin-bottom: 8mm;
+            color: white;
+            letter-spacing: -1px;
+            /* text-shadow removed: causes dark boxes in Puppeteer PDF */
+        }
+
+        .cover-text-box .cover-edition {
+            font-family: 'Inter', sans-serif;
+            font-size: 16pt;
+            font-weight: 600;
+            color: #fbbf24; /* 밝은 포인트 색상 (골드) */
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            /* text-shadow removed: causes dark boxes in Puppeteer PDF */
+        }
+
+        .cover-footer {
+            position: absolute;
+            bottom: 15mm;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+            font-size: 11pt;
+            font-weight: 400;
+            color: rgba(255, 255, 255, 0.9);
+            /* text-shadow removed: causes dark boxes in Puppeteer PDF */
+            letter-spacing: 0.5px;
+        }
+
+        .cover-text-box::before {
+            content: '';
+            position: absolute;
+            top: 15mm;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 40mm;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent);
+        }
+
+        .cover-text-box::after {
+            content: '';
+            position: absolute;
+            bottom: 35mm;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 25mm;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #fbbf24, transparent);
+        }
+
+
+        /* =================================================================== */
+        /* 목차 (TOC) 페이지 스타일                                            */
+        /* =================================================================== */
+        .toc-header { 
+            font-family: 'Inter', sans-serif; 
+            font-size: 20pt; 
+            font-weight: 700; 
+            color: var(--color-deep-blue); 
+            margin-bottom: 20px; 
+            padding-bottom: 10px; 
+            border-bottom: 2px solid var(--color-sea-blue); 
+            text-align: center;
+            letter-spacing: 2px;
+        }
+        .toc-list { 
+            list-style: none; 
+            padding-left: 0; 
+            font-size: 11pt; 
+            line-height: 2.5; 
+        }
+        .toc-item { 
+            display: flex; 
+            align-items: baseline; 
+            margin-bottom: 8px; 
+            border-bottom: 1px solid var(--color-border);
+            padding-bottom: 8px;
+        }
+        .toc-item .title { 
+            order: 1; 
+            white-space: nowrap; 
+            padding-right: 8px;
+            color: var(--color-text-dark);
+        }
+        .toc-item .title b {
+            color: var(--color-deep-blue);
+            font-weight: 700;
+        }
+        .toc-item .dots { 
+            order: 2; 
+            flex-grow: 1; 
+            border-bottom: 1px dotted var(--color-text-light); 
+            position: relative; 
+            top: -4px; 
+        }
+        .toc-item .page-num { 
+            order: 3; 
+            padding-left: 8px; 
+            font-family: 'Inter', sans-serif; 
+            font-weight: 600;
+            color: var(--color-sea-blue);
+        }
+        .toc-part-title { 
+            font-family: 'Inter', sans-serif; 
+            font-size: 14pt; 
+            font-weight: 700; 
+            color: var(--color-warm-orange); 
+            margin-top: 25px; 
+            margin-bottom: 10px; 
+            border-left: 4px solid var(--color-sandy-beige); 
+            padding-left: 12px; 
+        }
+
+        /* =================================================================== */
+        /* 파트 소개 페이지 스타일                                               */
+        /* =================================================================== */
+        .part-intro-page {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .part-intro-container {
+            padding: 20mm;
+            border: 1px solid var(--color-border);
+            border-radius: 8px;
+            background-color: var(--color-bg-light);
+            max-width: 170mm;
+            text-align: center;
+        }
+        .part-intro-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 24pt;
+            color: var(--color-sandy-beige);
+            margin-bottom: 10px;
+        }
+        .part-intro-title {
+            font-size: 36pt;
+            font-weight: 900;
+            color: var(--color-deep-blue);
+            margin-bottom: 15px;
+        }
+        .part-intro-subtitle {
+            font-family: 'Inter', sans-serif;
+            font-size: 14pt;
+            color: var(--color-sea-blue);
+            margin-bottom: 20px;
+        }
+        .part-intro-divider {
+            width: 80px;
+            height: 3px;
+            background-color: var(--color-warm-orange);
+            margin: 0 auto 20px auto;
+            border: none;
+        }
+        .part-intro-description {
+            max-width: 140mm;
+            font-size: 11pt;
+            line-height: 1.9;
+            color: var(--color-text-dark);
+            text-align: justify;
+            margin: 0 auto;
+        }
+
+        /* =================================================================== */
+        /* 본문 콘텐츠 스타일                                                  */
+        /* =================================================================== */
+        .part-header { 
+            color: white; 
+            margin: 0 0 25px 0; 
+            padding: 15px 20px; 
+            font-size: 18pt; 
+            font-weight: 700; 
+            display: flex; 
+            align-items: center; 
+            background: linear-gradient(135deg, var(--color-deep-blue), var(--color-sea-blue)); 
+            border-radius: 8px; 
+            box-shadow: 0 4px 15px rgba(52, 92, 133, 0.2);
+        }
+        .part-number { 
+            font-family: 'Inter', sans-serif;
+            background: rgba(255,255,255,0.15); 
+            padding: 8px 14px; 
+            border-radius: 6px; 
+            font-weight: 700; 
+            font-size: 12pt;
+            min-width: 60px; 
+            text-align: center; 
+            margin-right: 15px; 
+        }
+        .section-title { 
+            font-family: 'Inter', sans-serif; 
+            font-size: 14pt; 
+            font-weight: 700; 
+            color: var(--color-deep-blue); 
+            margin: 25px 0 15px 0; 
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--color-sandy-beige);
+        }
+        .section-title .emoji { margin-right: 10px; }
+        .first-in-page { margin-top: 0; }
+        .content-paragraph { margin-bottom: 12px; }
+        
+        .grammar-table { 
+            width: 100%; 
+            border-collapse: collapse; 
+            margin: 20px 0; 
+            font-size: 10.5pt; 
+        }
+        .grammar-table th, .grammar-table td { 
+            border: 1px solid var(--color-border); 
+            padding: 10px 12px; 
+            text-align: left; 
+            vertical-align: top;
+        }
+        .grammar-table th { 
+            background-color: var(--color-bg-light); 
+            font-weight: 700; 
+            color: var(--color-deep-blue); 
+        }
+        .grammar-table td code {
+            font-family: 'Inter', sans-serif;
+            background-color: #e8e9eb;
+            padding: 2px 5px;
+            border-radius: 4px;
+            font-size: 9.5pt;
+        }
+        
+        /* 특정 테이블 전용 스타일 */
+        .comparison-table th:first-child,
+        .comparison-table td:first-child {
+            width: 22%;
+            white-space: nowrap;
+        }
+
+        code {
+            font-family: 'Inter', sans-serif;
+            color: var(--color-deep-blue);
+            background-color: #f2f4f8;
+            border: 1px solid var(--color-border);
+            padding: 2px 6px;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.95em;
+        }
+        
+        .tip-box { 
+            background: var(--color-bg-light); 
+            border: 1px solid var(--color-sandy-beige); 
+            border-left: 5px solid var(--color-warm-orange); 
+            border-radius: 0 6px 6px 0; 
+            padding: 15px 20px; 
+            margin: 20px 0; 
+            font-size: 10.5pt; 
+        }
+        .tip-box-title { 
+            font-weight: 700; 
+            color: var(--color-warm-orange); 
+            margin-bottom: 8px; 
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .example-list {
+            list-style-type: '✓ ';
+            padding-left: 20px;
+            margin: 10px 0 15px 0;
+            font-size: 10.5pt;
+        }
+        .example-list li { margin-bottom: 5px; }
+
+        /* =================================================================== */
+        /* 연습 문제 스타일                                                    */
+        /* =================================================================== */
+        .practice-section-header { 
+            font-family: 'Inter', sans-serif; 
+            font-size: 16pt; 
+            font-weight: 700; 
+            color: #fff; 
+            background: var(--color-deep-blue); 
+            padding: 12px 20px; 
+            margin: 20px 0 20px 0; 
+            border-radius: 8px; 
+        }
+        .problem-block { 
+            margin-bottom: 20px; 
+            padding: 15px; 
+            border: 1px solid var(--color-border); 
+            border-left: 4px solid var(--color-sea-blue); 
+            border-radius: 0 5px 5px 0; 
+            background: #fff;
+        }
+        .problem-meta {
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+        }
+        .problem-number { 
+            font-family: 'Inter', sans-serif; 
+            font-weight: 700; 
+            color: white;
+            background-color: var(--color-sea-blue);
+            border-radius: 50%;
+            width: 28px;
+            height: 28px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 10px;
+            font-size: 11pt;
+        }
+        .problem-text { 
+            font-size: 11pt; 
+            margin-bottom: 12px; 
+            line-height: 1.8;
+        }
+        .problem-text u {
+            text-decoration: underline;
+            text-decoration-color: var(--color-warm-orange);
+            text-decoration-thickness: 1.5px;
+            font-weight: 500;
+        }
+        .problem-question {
+            margin-top: 15px;
+            padding: 12px 15px;
+            background-color: var(--color-bg-light);
+            border: 1px solid var(--color-border);
+            border-left: 4px solid var(--color-warm-orange);
+            border-radius: 0 5px 5px 0;
+            font-size: 10.5pt;
+            font-style: italic;
+            color: var(--color-deep-blue);
+            font-weight: 500;
+        }
+        .problem-choices { 
+            list-style: none; 
+            padding-left: 0; 
+            font-size: 10.5pt; 
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 5px 20px;
+        }
+        .problem-choices li { 
+            margin-bottom: 4px; 
+            padding: 6px 10px; 
+            border-radius: 4px;
+            display: flex;
+            align-items: baseline;
+        }
+        .problem-choices li:hover {
+            background-color: var(--color-bg-light);
+        }
+        .choice-number {
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            color: var(--color-deep-blue);
+            margin-right: 8px;
+        }
+
+        /* =================================================================== */
+        /* 정답 및 해설 스타일                                                 */
+        /* =================================================================== */
+        .answer-key-section .section-title {
+            color: var(--color-warm-orange);
+            border-bottom-color: var(--color-sea-blue);
+        }
+        .quick-answer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(55px, 1fr));
+            gap: 8px;
+            margin: 20px 0;
+            text-align: center;
+            font-size: 10pt;
+            font-family: 'Inter', sans-serif;
+        }
+        .quick-answer-item {
+            padding: 8px;
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            background-color: var(--color-bg-light);
+        }
+        .quick-answer-item .num {
+            font-weight: 700;
+            color: var(--color-text-light);
+        }
+        .quick-answer-item .ans {
+            font-weight: 700;
+            color: var(--color-deep-blue);
+        }
+        .explanation-block {
+            margin-bottom: 15px;
+            padding-top: 15px;
+            border-top: 1px solid var(--color-border);
+        }
+        .explanation-block:first-of-type {
+            border-top: none;
+            padding-top: 0;
+        }
+        .explanation-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .explanation-header .problem-number {
+            background-color: var(--color-warm-orange);
+        }
+        .explanation-header .correct-answer {
+            font-family: 'Inter', sans-serif;
+            font-size: 12pt;
+            font-weight: 700;
+            color: var(--color-deep-blue);
+        }
+        .explanation-content {
+            font-size: 10.5pt;
+            padding: 10px 15px;
+            background-color: var(--color-bg-light);
+            border-radius: 5px;
+        }
+        .explanation-content b {
+            color: var(--color-sea-blue);
+        }
+        
+        /* =================================================================== */
+        /* 유틸리티 및 인쇄 최적화                                             */
+        /* =================================================================== */
+        .avoid-break { break-inside: avoid; page-break-inside: avoid; }
+        
+        @media print { 
+            body { background: #fff; } 
+            .page { margin: 0; box-shadow: none; } 
+        }
+        p, li, div { orphans: 3; widows: 3; }
+        .practice-section-header, .section-title, .part-header { break-after: avoid-page; }
+        .problem-block, .tip-box, .grammar-table { break-inside: avoid; }
+
+    
+
+/* --- style block 2 --- */
+
+            /* --- 기본 페이지 및 폰트 설정 --- */
+            @page {
+                size: A4;
+                margin: 0;
+            }
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                font-family: 'Noto Sans KR', sans-serif;
+                background: #e8e9eb; /* 페이지 외부 배경색 */
+                counter-reset: page; /* 자동 페이지 번호 카운터 초기화 */
+            }
+            .eng-text { font-family: 'Inter', sans-serif; }
+            .serif-text { font-family: 'Playfair Display', serif; }
+            .bold-text { font-weight: 700; }
+    
+            /* --- 색상 변수 (표지 이미지 기반) --- */
+            :root {
+                --color-sea-blue: #6C96C6;      /* 바다색 */
+                --color-deep-blue: #345C85;     /* 깊은 바다색 */
+                --color-sandy-beige: #F2C994;   /* 모래색 */
+                --color-warm-orange: #E9A266;   /* 고양이색 */
+                --color-text-dark: #3D4852;     /* 기본 텍스트 색상 */
+                --color-text-light: #718096;    /* 보조 텍스트 색상 */
+                --color-bg-light: #FDFBF6;      /* 밝은 배경색 */
+                --color-border: #EAEAEA;        /* 테두리 색상 */
+            }
+    
+            /* --- A4 페이지 레이아웃 --- */
+            .page {
+                width: 210mm;
+                height: 297mm;
+                margin: 10mm auto;
+                padding: 15mm 18mm;
+                background: white;
+                box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+                page-break-after: always;
+                display: flex;
+                flex-direction: column;
+                position: relative;
+            }
+            .page:last-child {
+                page-break-after: avoid;
+            }
+            .page-content {
+                flex-grow: 1;
+                overflow: hidden;
+                font-size: 11pt;
+                line-height: 1.8;
+                color: var(--color-text-dark);
+            }
+    
+            /* --- 페이지 헤더 & 푸터 --- */
+            .page-header, .page-footer {
+                width: 100%;
+                flex-shrink: 0;
+                font-size: 9pt;
+                color: var(--color-text-light);
+                font-family: 'Inter', sans-serif;
+            }
+            .page-header {
+                border-bottom: 1px solid var(--color-border);
+                padding-bottom: 8px;
+                margin-bottom: 12px;
+                display: flex;
+                justify-content: space-between;
+                color: var(--color-deep-blue);
+                font-weight: 500;
+            }
+            .page-footer {
+                border-top: 1px solid var(--color-border);
+                padding-top: 8px;
+                margin-top: 12px;
+                text-align: center;
+            }
+            
+            /* 자동 페이지 번호 생성 */
+            .page-footer::after {
+                counter-increment: page;
+                content: counter(page);
+            }
+            
+            /* 특정 페이지 헤더/푸터 숨기기 */
+            .no-header-footer { padding: 0; }
+            .no-header-footer .page-header,
+            .no-header-footer .page-footer,
+            .cover-page .page-footer::after,
+            .part-intro-page .page-footer::after,
+            .toc-page .page-header,
+            .chapter-page .page-header {
+                display: none;
+            }
+            .part-intro-page .page-header,
+            .part-intro-page .page-footer {
+                border: none;
+            }
+    
+            /* =================================================================== */
+            /* 세련된 표지 디자인 (2025 트렌드)                                    */
+            /* =================================================================== */
+            .cover-page {
+                color: white;
+                overflow: hidden;
+                background: linear-gradient(135deg, #0ea5e9 0%, #0284c7 50%, #0369a1 100%);
+                background-image: url('../../../05_assets/backgrounds/backgroundGMBR.png'); /* 이미지 경로 수정 필요 */
+                background-size: cover;
+                background-position: center;
+                background-blend-mode: soft-light;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+            }
+    
+            .cover-text-box {
+                background: transparent;
+                border: 2px solid rgba(255, 255, 255, 0.9);
+                padding: 25mm 30mm 20mm 30mm;
+                border-radius: 0;
+                text-align: center;
+                color: white;
+                max-width: 150mm;
+                position: relative;
+                /* backdrop-filter removed: breaks Puppeteer PDF */
+                margin-bottom: 20mm;
+            }
+    
+            .cover-text-box .cover-prefix {
+                font-family: 'Inter', sans-serif;
+                font-size: 18pt;
+                font-weight: 500;
+                color: rgba(255, 255, 255, 0.85);
+                margin-bottom: 8mm;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+    
+            .cover-text-box .cover-main-title {
+                font-family: 'Inter', sans-serif;
+                font-size: 48pt;
+                font-weight: 800;
+                line-height: 0.95;
+                margin-bottom: 8mm;
+                color: white;
+                letter-spacing: -1px;
+                /* text-shadow removed: causes dark boxes in Puppeteer PDF */
+            }
+    
+            .cover-text-box .cover-edition {
+                font-family: 'Inter', sans-serif;
+                font-size: 16pt;
+                font-weight: 600;
+                color: #fbbf24; /* 밝은 포인트 색상 (골드) */
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                /* text-shadow removed: causes dark boxes in Puppeteer PDF */
+            }
+    
+            .cover-footer {
+                position: absolute;
+                bottom: 15mm;
+                left: 0;
+                width: 100%;
+                text-align: center;
+                font-family: 'Inter', sans-serif;
+                font-size: 11pt;
+                font-weight: 400;
+                color: rgba(255, 255, 255, 0.9);
+                /* text-shadow removed: causes dark boxes in Puppeteer PDF */
+                letter-spacing: 0.5px;
+            }
+    
+            .cover-text-box::before {
+                content: '';
+                position: absolute;
+                top: 15mm;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 40mm;
+                height: 2px;
+                background: linear-gradient(90deg, transparent, rgba(255,255,255,0.6), transparent);
+            }
+    
+            .cover-text-box::after {
+                content: '';
+                position: absolute;
+                bottom: 35mm;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 25mm;
+                height: 1px;
+                background: linear-gradient(90deg, transparent, #fbbf24, transparent);
+            }
+    
+    
+            /* =================================================================== */
+            /* 목차 (TOC) 페이지 스타일                                            */
+            /* =================================================================== */
+            .toc-header { 
+                font-family: 'Inter', sans-serif; 
+                font-size: 20pt; 
+                font-weight: 700; 
+                color: var(--color-deep-blue); 
+                margin-bottom: 20px; 
+                padding-bottom: 10px; 
+                border-bottom: 2px solid var(--color-sea-blue); 
+                text-align: center;
+                letter-spacing: 2px;
+            }
+            .toc-list { 
+                list-style: none; 
+                padding-left: 0; 
+                font-size: 11pt; 
+                line-height: 2.5; 
+            }
+            .toc-item { 
+                display: flex; 
+                align-items: baseline; 
+                margin-bottom: 8px; 
+                border-bottom: 1px solid var(--color-border);
+                padding-bottom: 8px;
+            }
+            .toc-item .title { 
+                order: 1; 
+                white-space: nowrap; 
+                padding-right: 8px;
+                color: var(--color-text-dark);
+            }
+            .toc-item .title b {
+                color: var(--color-deep-blue);
+                font-weight: 700;
+            }
+            .toc-item .dots { 
+                order: 2; 
+                flex-grow: 1; 
+                border-bottom: 1px dotted var(--color-text-light); 
+                position: relative; 
+                top: -4px; 
+            }
+            .toc-item .page-num { 
+                order: 3; 
+                padding-left: 8px; 
+                font-family: 'Inter', sans-serif; 
+                font-weight: 600;
+                color: var(--color-sea-blue);
+            }
+            .toc-part-title { 
+                font-family: 'Inter', sans-serif; 
+                font-size: 14pt; 
+                font-weight: 700; 
+                color: var(--color-warm-orange); 
+                margin-top: 25px; 
+                margin-bottom: 10px; 
+                border-left: 4px solid var(--color-sandy-beige); 
+                padding-left: 12px; 
+            }
+    
+            /* =================================================================== */
+            /* 파트 소개 페이지 스타일                                               */
+            /* =================================================================== */
+            .part-intro-page {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .part-intro-container {
+                padding: 20mm;
+                border: 1px solid var(--color-border);
+                border-radius: 8px;
+                background-color: var(--color-bg-light);
+                max-width: 170mm;
+                text-align: center;
+            }
+            .part-intro-number {
+                font-family: 'Playfair Display', serif;
+                font-size: 24pt;
+                color: var(--color-sandy-beige);
+                margin-bottom: 10px;
+            }
+            .part-intro-title {
+                font-size: 36pt;
+                font-weight: 900;
+                color: var(--color-deep-blue);
+                margin-bottom: 15px;
+            }
+            .part-intro-subtitle {
+                font-family: 'Inter', sans-serif;
+                font-size: 14pt;
+                color: var(--color-sea-blue);
+                margin-bottom: 20px;
+            }
+            .part-intro-divider {
+                width: 80px;
+                height: 3px;
+                background-color: var(--color-warm-orange);
+                margin: 0 auto 20px auto;
+                border: none;
+            }
+            .part-intro-description {
+                max-width: 140mm;
+                font-size: 11pt;
+                line-height: 1.9;
+                color: var(--color-text-dark);
+                text-align: justify;
+                margin: 0 auto;
+            }
+    
+            /* =================================================================== */
+            /* 본문 콘텐츠 스타일                                                  */
+            /* =================================================================== */
+            .part-header { 
+                color: white; 
+                margin: 0 0 25px 0; 
+                padding: 15px 20px; 
+                font-size: 18pt; 
+                font-weight: 700; 
+                display: flex; 
+                align-items: center; 
+                background: linear-gradient(135deg, var(--color-deep-blue), var(--color-sea-blue)); 
+                border-radius: 8px; 
+                box-shadow: 0 4px 15px rgba(52, 92, 133, 0.2);
+            }
+            .part-number { 
+                font-family: 'Inter', sans-serif;
+                background: rgba(255,255,255,0.15); 
+                padding: 8px 14px; 
+                border-radius: 6px; 
+                font-weight: 700; 
+                font-size: 12pt;
+                min-width: 60px; 
+                text-align: center; 
+                margin-right: 15px; 
+            }
+            .section-title { 
+                font-family: 'Inter', sans-serif; 
+                font-size: 14pt; 
+                font-weight: 700; 
+                color: var(--color-deep-blue); 
+                margin: 25px 0 15px 0; 
+                padding-bottom: 8px;
+                border-bottom: 2px solid var(--color-sandy-beige);
+            }
+            .section-title .emoji { margin-right: 10px; }
+            .first-in-page { margin-top: 0; }
+            .content-paragraph { margin-bottom: 12px; }
+            
+            .grammar-table { 
+                width: 100%; 
+                border-collapse: collapse; 
+                margin: 20px 0; 
+                font-size: 10.5pt; 
+            }
+            .grammar-table th, .grammar-table td { 
+                border: 1px solid var(--color-border); 
+                padding: 10px 12px; 
+                text-align: left; 
+                vertical-align: top;
+            }
+            .grammar-table th { 
+                background-color: var(--color-bg-light); 
+                font-weight: 700; 
+                color: var(--color-deep-blue); 
+            }
+            .grammar-table td code {
+                font-family: 'Inter', sans-serif;
+                background-color: #e8e9eb;
+                padding: 2px 5px;
+                border-radius: 4px;
+                font-size: 9.5pt;
+            }
+            
+            /* 특정 테이블 전용 스타일 */
+            .comparison-table th:first-child,
+            .comparison-table td:first-child {
+                width: 22%;
+                white-space: nowrap;
+            }
+    
+            code {
+                font-family: 'Inter', sans-serif;
+                color: var(--color-deep-blue);
+                background-color: #f2f4f8;
+                border: 1px solid var(--color-border);
+                padding: 2px 6px;
+                border-radius: 6px;
+                font-weight: 600;
+                font-size: 0.95em;
+            }
+            
+            .tip-box { 
+                background: var(--color-bg-light); 
+                border: 1px solid var(--color-sandy-beige); 
+                border-left: 5px solid var(--color-warm-orange); 
+                border-radius: 0 6px 6px 0; 
+                padding: 15px 20px; 
+                margin: 20px 0; 
+                font-size: 10.5pt; 
+            }
+            .tip-box-title { 
+                font-weight: 700; 
+                color: var(--color-warm-orange); 
+                margin-bottom: 8px; 
+                font-family: 'Inter', sans-serif;
+            }
+            
+            .example-list {
+                list-style-type: '✓ ';
+                padding-left: 20px;
+                margin: 10px 0 15px 0;
+                font-size: 10.5pt;
+            }
+            .example-list li { margin-bottom: 5px; }
+    
+            /* =================================================================== */
+            /* 연습 문제 스타일                                                    */
+            /* =================================================================== */
+            .practice-section-header { 
+                font-family: 'Inter', sans-serif; 
+                font-size: 16pt; 
+                font-weight: 700; 
+                color: #fff; 
+                background: var(--color-deep-blue); 
+                padding: 12px 20px; 
+                margin: 20px 0 20px 0; 
+                border-radius: 8px; 
+            }
+            .problem-block { 
+                margin-bottom: 20px; 
+                padding: 15px; 
+                border: 1px solid var(--color-border); 
+                border-left: 4px solid var(--color-sea-blue); 
+                border-radius: 0 5px 5px 0; 
+                background: #fff;
+            }
+            .problem-meta {
+                display: flex;
+                align-items: center;
+                margin-bottom: 12px;
+            }
+            .problem-number { 
+                font-family: 'Inter', sans-serif; 
+                font-weight: 700; 
+                color: white;
+                background-color: var(--color-sea-blue);
+                border-radius: 50%;
+                width: 28px;
+                height: 28px;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                margin-right: 10px;
+                font-size: 11pt;
+            }
+            .problem-text { 
+                font-size: 11pt; 
+                margin-bottom: 12px; 
+                line-height: 1.8;
+                text-align: justify;
+            }
+            .problem-text u {
+                text-decoration: underline;
+                text-decoration-color: var(--color-warm-orange);
+                text-decoration-thickness: 1.5px;
+                font-weight: 500;
+            }
+            .problem-question {
+                margin-top: 15px;
+                padding: 12px 15px;
+                background-color: var(--color-bg-light);
+                border: 1px solid var(--color-border);
+                border-left: 4px solid var(--color-warm-orange);
+                border-radius: 0 5px 5px 0;
+                font-size: 10.5pt;
+                font-style: italic;
+                color: var(--color-deep-blue);
+                font-weight: 500;
+            }
+            .problem-choices { 
+                list-style: none; 
+                padding-left: 0; 
+                font-size: 10.5pt; 
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                gap: 5px 20px;
+            }
+            .problem-choices li { 
+                margin-bottom: 4px; 
+                padding: 6px 10px; 
+                border-radius: 4px;
+                display: flex;
+                align-items: baseline;
+                text-align: justify;
+            }
+            .problem-choices li:hover {
+                background-color: var(--color-bg-light);
+            }
+            .choice-number {
+                font-family: 'Inter', sans-serif;
+                font-weight: 600;
+                color: var(--color-deep-blue);
+                margin-right: 8px;
+            }
+    
+            /* =================================================================== */
+            /* 정답 및 해설 스타일                                                 */
+            /* =================================================================== */
+            .answer-key-section .section-title {
+                color: var(--color-warm-orange);
+                border-bottom-color: var(--color-sea-blue);
+            }
+            .quick-answer-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(55px, 1fr));
+                gap: 8px;
+                margin: 20px 0;
+                text-align: center;
+                font-size: 10pt;
+                font-family: 'Inter', sans-serif;
+            }
+            .quick-answer-item {
+                padding: 8px;
+                border: 1px solid var(--color-border);
+                border-radius: 4px;
+                background-color: var(--color-bg-light);
+            }
+            .quick-answer-item .num {
+                font-weight: 700;
+                color: var(--color-text-light);
+            }
+            .quick-answer-item .ans {
+                font-weight: 700;
+                color: var(--color-deep-blue);
+            }
+            .explanation-block {
+                margin-bottom: 15px;
+                padding-top: 15px;
+                border-top: 1px solid var(--color-border);
+            }
+            .explanation-block:first-of-type {
+                border-top: none;
+                padding-top: 0;
+            }
+            .explanation-header {
+                display: flex;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+            .explanation-header .problem-number {
+                background-color: var(--color-warm-orange);
+            }
+            .explanation-header .correct-answer {
+                font-family: 'Inter', sans-serif;
+                font-size: 12pt;
+                font-weight: 700;
+                color: var(--color-deep-blue);
+            }
+            .explanation-content {
+                font-size: 10.5pt;
+                padding: 10px 15px;
+                background-color: var(--color-bg-light);
+                border-radius: 5px;
+                text-align: justify;
+    
+            }
+            .explanation-content b {
+                color: var(--color-sea-blue);
+            }
+            
+            /* =================================================================== */
+            /* 유틸리티 및 인쇄 최적화                                             */
+            /* =================================================================== */
+            .avoid-break { break-inside: avoid; page-break-inside: avoid; }
+            
+            @media print { 
+                body { background: #fff; } 
+                .page { margin: 0; box-shadow: none; } 
+            }
+            p, li, div { orphans: 3; widows: 3; }
+            .practice-section-header, .section-title, .part-header { break-after: avoid-page; }
+            .problem-block, .tip-box, .grammar-table { break-inside: avoid; }
+    
+        
+
+
+/* === vera-core component: answer-grid.css === */
+/* =================================================================== */
+/* answer-grid.css — 정답 그리드 컴포넌트                               */
+/* Vera's Document Studio                                               */
+/* =================================================================== */
+
+/*
+ * 용도: 문제집 정답표 (10열 그리드 또는 3x3 그리드)
+ *
+ * 마크업 예시 (10열):
+ * <div class="answer-grid">
+ *   <h3 class="answer-grid-title">정답</h3>
+ *   <div class="answer-grid-table">
+ *     <div class="answer-grid-item">
+ *       <span class="answer-grid-number">1</span>
+ *       <span class="answer-grid-answer">②</span>
+ *     </div>
+ *     <!-- 반복 -->
+ *   </div>
+ * </div>
+ */
+
+/* --- 정답 그리드 컨테이너 --- */
+.answer-grid {
+    margin: var(--space-2xl) 0 !important;
+    padding: var(--space-lg) !important;
+    background-color: var(--color-bg-subtle) !important;
+    border: 2px solid var(--color-accent-primary) !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+}
+
+/* --- 정답 그리드 제목 --- */
+.answer-grid-title {
+    font-family: var(--font-eng) !important;
+    font-size: var(--text-xl) !important;
+    font-weight: 700 !important;
+    color: var(--color-accent-dark) !important;
+    text-align: center !important;
+    margin-bottom: var(--space-lg) !important;
+    padding-bottom: var(--space-sm) !important;
+    border-bottom: 1px solid var(--color-border-strong) !important;
+    letter-spacing: 2px !important;
+    text-transform: uppercase !important;
+}
+
+/* --- 정답 그리드 테이블 (10열 기본) --- */
+.answer-grid-table {
+    display: grid !important;
+    grid-template-columns: repeat(10, 1fr) !important;
+    gap: var(--space-sm) !important;
+}
+
+/* --- 정답 그리드 항목 --- */
+.answer-grid-item {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: var(--space-sm) !important;
+    background-color: var(--color-white) !important;
+    border: 1px solid var(--color-border-default) !important;
+    text-align: center !important;
+}
+
+/* --- 문제 번호 --- */
+.answer-grid-number {
+    font-family: var(--font-eng) !important;
+    font-size: var(--text-xs) !important;
+    font-weight: 500 !important;
+    color: var(--color-text-muted) !important;
+    margin-bottom: var(--space-xs) !important;
+}
+
+/* --- 정답 번호 --- */
+.answer-grid-answer {
+    font-family: var(--font-eng) !important;
+    font-size: var(--text-md) !important;
+    font-weight: 700 !important;
+    color: var(--color-accent-primary) !important;
+}
+
+/* --- 5열 변형 (문제 수가 적을 때) --- */
+.answer-grid-table--5-columns {
+    grid-template-columns: repeat(5, 1fr) !important;
+}
+
+/* --- 3열 변형 (큰 표시) --- */
+.answer-grid-table--3-columns {
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: var(--space-md) !important;
+}
+
+.answer-grid-table--3-columns .answer-grid-item {
+    padding: var(--space-md) !important;
+}
+
+.answer-grid-table--3-columns .answer-grid-number {
+    font-size: var(--text-sm) !important;
+}
+
+.answer-grid-table--3-columns .answer-grid-answer {
+    font-size: var(--text-lg) !important;
+}
+
+/* --- 컴팩트 정답표 (간격 좁게) --- */
+.answer-grid--compact {
+    padding: var(--space-md) !important;
+    margin: var(--space-lg) 0 !important;
+}
+
+.answer-grid--compact .answer-grid-title {
+    font-size: var(--text-lg) !important;
+    margin-bottom: var(--space-md) !important;
+}
+
+.answer-grid--compact .answer-grid-table {
+    gap: var(--space-xs) !important;
+}
+
+.answer-grid--compact .answer-grid-item {
+    padding: var(--space-xs) !important;
+}
+
+.answer-grid--compact .answer-grid-number {
+    font-size: 7pt !important;
+    margin-bottom: 2px !important;
+}
+
+.answer-grid--compact .answer-grid-answer {
+    font-size: var(--text-sm) !important;
+}
+
+/* --- 인라인 정답표 (한 줄로) --- */
+.answer-grid--inline {
+    padding: var(--space-md) !important;
+    background-color: var(--color-white) !important;
+    border: 1px solid var(--color-border-default) !important;
+}
+
+.answer-grid--inline .answer-grid-title {
+    display: inline !important;
+    border-bottom: none !important;
+    margin-bottom: 0 !important;
+    margin-right: var(--space-md) !important;
+    padding-bottom: 0 !important;
+    font-size: var(--text-base) !important;
+}
+
+.answer-grid--inline .answer-grid-table {
+    display: inline-flex !important;
+    flex-wrap: wrap !important;
+    gap: var(--space-md) !important;
+}
+
+.answer-grid--inline .answer-grid-item {
+    flex-direction: row !important;
+    padding: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    gap: var(--space-xs) !important;
+}
+
+.answer-grid--inline .answer-grid-number {
+    margin-bottom: 0 !important;
+}
+
+.answer-grid--inline .answer-grid-number::after {
+    content: '.' !important;
+}
+
+/* --- 인쇄 최적화 --- */
+@media print {
+    .answer-grid {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+    }
+}
+
+/* === vera-core component: explanation.css === */
+/* =================================================================== */
+/* explanation.css — 정답 해설 컴포넌트                                 */
+/* Vera's Document Studio                                               */
+/* =================================================================== */
+
+/*
+ * 용도: 문제 정답 및 해설 표시
+ *
+ * 마크업 예시:
+ * <div class="explanation" data-problem-id="1">
+ *   <div class="explanation-header">
+ *     <span class="problem-number">1</span>
+ *     <span class="answer-badge">②</span>
+ *   </div>
+ *   <div class="explanation-body">
+ *     <p>주어가 3인칭 단수(She)이고 every day로 습관적 행위를 나타내므로
+ *     현재시제 3인칭 단수형 goes가 정답입니다.</p>
+ *   </div>
+ * </div>
+ */
+
+/* --- 해설 컨테이너 --- */
+.explanation {
+    margin-bottom: var(--space-xl) !important;
+    padding: var(--space-lg) !important;
+    background-color: var(--color-bg-subtle) !important;
+    border-left: 4px solid var(--color-accent-primary) !important;
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+}
+
+/* --- 해설 헤더 (문제 번호 + 정답) --- */
+.explanation-header {
+    display: flex !important;
+    align-items: center !important;
+    gap: var(--space-md) !important;
+    margin-bottom: var(--space-md) !important;
+}
+
+/* --- 문제 번호 (원형, 해설용) --- */
+.explanation .problem-number {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 24px !important;
+    height: 24px !important;
+    background-color: var(--color-accent-dark) !important;
+    color: var(--color-white) !important;
+    font-family: var(--font-eng) !important;
+    font-size: var(--text-sm) !important;
+    font-weight: 700 !important;
+    border-radius: 50% !important;
+    flex-shrink: 0 !important;
+}
+
+/* --- 정답 뱃지 --- */
+.answer-badge {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding: var(--space-xs) var(--space-md) !important;
+    background-color: var(--color-accent-secondary) !important;
+    color: var(--color-white) !important;
+    font-family: var(--font-eng) !important;
+    font-size: var(--text-md) !important;
+    font-weight: 700 !important;
+    border-radius: var(--radius-sm) !important;
+}
+
+/* --- 해설 본문 --- */
+.explanation-body {
+    font-size: var(--text-base) !important;
+    line-height: var(--leading-relaxed) !important;
+    color: var(--color-text-primary) !important;
+}
+
+.explanation-body p {
+    margin-bottom: var(--space-md) !important;
+    text-align: justify !important;
+}
+
+.explanation-body p:last-child {
+    margin-bottom: 0 !important;
+}
+
+.explanation-body ul,
+.explanation-body ol {
+    margin-left: var(--space-xl) !important;
+    margin-bottom: var(--space-md) !important;
+}
+
+.explanation-body li {
+    margin-bottom: var(--space-sm) !important;
+}
+
+/* --- 해설 내 강조 텍스트 --- */
+.explanation-body strong,
+.explanation-body b {
+    color: var(--color-accent-dark) !important;
+    font-weight: 700 !important;
+}
+
+.explanation-body em,
+.explanation-body i {
+    color: var(--color-accent-primary) !important;
+    font-style: italic !important;
+}
+
+/* --- 해설 내 예문 블록 --- */
+.explanation-example {
+    margin: var(--space-md) 0 !important;
+    padding: var(--space-md) !important;
+    background-color: var(--color-example-bg) !important;
+    border-left: 3px solid var(--color-example-border) !important;
+    font-size: var(--text-sm) !important;
+    line-height: var(--leading-normal) !important;
+}
+
+.explanation-example.eng-text {
+    font-family: var(--font-eng) !important;
+}
+
+/* --- 컴팩트 해설 (페이지당 5개) --- */
+.explanation--compact {
+    padding: var(--space-md) !important;
+    margin-bottom: var(--space-md) !important;
+}
+
+.explanation--compact .explanation-header {
+    margin-bottom: var(--space-sm) !important;
+}
+
+.explanation--compact .problem-number {
+    width: 20px !important;
+    height: 20px !important;
+    font-size: var(--text-xs) !important;
+}
+
+.explanation--compact .answer-badge {
+    padding: 2px var(--space-sm) !important;
+    font-size: var(--text-sm) !important;
+}
+
+.explanation--compact .explanation-body {
+    font-size: var(--text-sm) !important;
+    line-height: var(--leading-normal) !important;
+}
+
+.explanation--compact .explanation-body p {
+    margin-bottom: var(--space-sm) !important;
+}
+
+/* --- 인쇄 최적화 --- */
+@media print {
+    .explanation {
+        break-inside: avoid !important;
+        page-break-inside: avoid !important;
+    }
+}
+
+
+/* === assemble.js layout overrides === */
+
+/* 양쪽 정렬 전역 적용 */
+.problem-text, .content-paragraph, .page-content p {
+  text-align: justify !important;
+}
+
+/* 문제 3등분 균일 배치 (풀이 공간 확보) */
+.problem-block {
+  min-height: auto !important;
+  box-sizing: border-box;
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+}
+
+/* 누락 클래스 기본 스타일 (book CSS에 없을 경우 적용) */
+.problem-meta {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.problem-question {
+  margin-bottom: 6px !important;
+  font-weight: 500;
+  font-size: 8pt !important;
+}
+.problem-text {
+  font-size: 8pt !important;
+  line-height: 1.5 !important;
+  margin-bottom: 6px !important;
+}
+.problem-choices, .problem-choices li {
+  font-size: 8pt !important;
+}
+.problem-choices {
+  gap: 2px 12px !important;
+  margin-top: 4px !important;
+}
+.problem-choices li {
+  margin-bottom: 1px !important;
+  padding: 2px 4px !important;
+  line-height: 1.4 !important;
+}
+
+/* Prevent double numbering when choices already have circled numbers in HTML */
+.problem-choices--html-numbered li::before {
+  display: none !important;
+}
+
+/* Text answers in answer grid (error-identification type) */
+.answer-grid-item--text {
+  grid-column: span 2;
+  flex-direction: row !important;
+  gap: 8px;
+}
+.answer-grid-item--text .answer-grid-answer {
+  font-size: 10px !important;
+  font-weight: 500 !important;
+  text-align: left !important;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 120px;
+}
+
+/* === Page overflow fix: allow content to grow beyond 297mm === */
+.page {
+  height: auto !important;
+  min-height: 297mm !important;
+  overflow: visible !important;
+}
+
+.page-content {
+  overflow: visible !important;
+}
+
+@media print {
+  .page {
+    height: auto !important;
+    min-height: 297mm !important;
+    overflow: visible !important;
+  }
+  .page-content {
+    overflow: visible !important;
+  }
+}
+
+/* Chapter divider page styling */
+.chapter-divider {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 250mm;
+  text-align: center;
+}
+.chapter-divider-number {
+  font-size: 18pt;
+  font-weight: 300;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--color-deep-blue, #345C85);
+  margin-bottom: 16mm;
+}
+.chapter-divider-title {
+  font-size: 28pt;
+  font-weight: 700;
+  color: var(--color-deep-blue, #345C85);
+  margin-bottom: 8mm;
+}
+.chapter-divider-subtitle {
+  font-size: 12pt;
+  font-weight: 400;
+  color: var(--color-text-light, #718096);
+}
+
+/* Vol2 ch10 CSS compatibility — part2-only classes */
+.example-list {
+  list-style-type: '✓ ';
+  padding-left: 20px;
+  margin: 10px 0 15px 0;
+  font-size: 10.5pt;
+}
+.example-list li { margin-bottom: 5px; }
+
+code {
+  font-family: 'Inter', sans-serif;
+  color: var(--color-deep-blue, #345C85);
+  background-color: #f2f4f8;
+  border: 1px solid var(--color-border, #EAEAEA);
+  padding: 2px 6px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 0.95em;
+}
+
+.comparison-table th:first-child,
+.comparison-table td:first-child {
+  width: 22%;
+  white-space: nowrap;
+}
+
+/* part2 header class aliases (safety net) */
+.part-header {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid var(--color-deep-blue, #345C85);
+}
+.part-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 24pt;
+  font-weight: 700;
+  color: var(--color-deep-blue, #345C85);
+}
+
+/* Fix double numbering: ol.problem-choices has browser default decimal + inline circled numbers */
+.problem-choices {
+  list-style: none !important;
+  padding-left: 0 !important;
+}
+.problem-choices li {
+  list-style: none !important;
+}
+
+/* Fallback passage styles (when book CSS uses different selectors) */
+.passage-body {
+  font-size: 9pt !important;
+  line-height: 1.8 !important;
+  margin-bottom: 1.5em !important;
+  text-align: justify !important;
+}
+.passage-body.eng-text {
+  font-family: 'Inter', sans-serif !important;
+}
+.passage-vocab-title {
+  font-size: 10pt !important;
+  font-weight: 700 !important;
+  margin-bottom: 8px !important;
+}
+
+/* Fallback vocab styles */
+.vocab-item {
+  display: flex !important;
+  gap: 8px !important;
+  font-size: 8.5pt !important;
+  line-height: 1.6 !important;
+}
+.vocab-word {
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 600 !important;
+}
+.vocab-meaning {
+  color: #475569 !important;
+}
+
+/* Fix problem-number size consistency */
+.problem-number {
+  font-size: 9pt !important;
+  font-weight: 600 !important;
+}
+
+  </style>
+</head>
+<body>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>문법 Bridge - 의문사 (Interrogatives)</span>
+  </div>
+  <div class="page-content">
+<div class="avoid-break">
+                <h4 style="font-weight:700; color: var(--color-deep-blue); margin-top:20px; margin-bottom: 10px;">3. 의문부사 (Interrogative Adverb)</h4>
+                <p class="content-paragraph">
+                    <b>역할:</b> 문장 내에서 <b>부사</b>의 역할을 합니다. 즉, 동사, 형용사, 다른 부사 또는 문장 전체를 수식하며 시간, 장소, 이유, 방법, 정도 등에 대한 질문을 던집니다.<br>
+                    <b>종류:</b> <code>when</code> (언제), <code>where</code> (어디서), <code>why</code> (왜), <code>how</code> (어떻게, 얼마나)<br>
+                    <b>특징:</b> 의문부사는 문장의 필수 성분(주어, 목적어, 보어)이 아니므로, 의문부사 뒤에는 주어, 동사를 갖춘 <b>완전한 문장</b>이 이어집니다.
+                </p>
+                <ul class="example-list mb-md" style="margin-top:-5px;">
+                    <li><b>When</b> did you arrive? (너는 언제 도착했니?) - <code>When</code> 뒤에 <code>you(S) + did arrive(V)</code>의 완전한 구조</li>
+                    <li><b>Why</b> is she crying? (그녀는 왜 울고 있니?) - <code>Why</code> 뒤에 <code>she(S) + is crying(V)</code>의 완전한 구조</li>
+                </ul>
+            </div>
+            <div class="tip-box first-in-page">
+                <div class="tip-box-title eng-text"><span class="emoji">🎯</span>vera's flavor tip</div>
+                <p class="content-paragraph">
+                    편입 문법을 공부하다 보면 헷갈리는 포인트들이 꼭 있죠? vera가 여러분의 학습 효율을 극대화할 꿀팁을 알려드릴게요!
+                </p>
+                
+                <h4 style="font-weight:700; color: var(--color-deep-blue); margin-top:20px; margin-bottom: 10px;">1. `who` vs. `whom` 초간단 구별법: he/him 대입법!</h4>
+                <p style="font-size: 10.5pt;">
+                    `who`는 주격, `whom`은 목적격... 머리로는 알지만 막상 문제에 나오면 헷갈리죠? 이럴 땐 질문에 대한 <b>예상 답변</b>을 생각하고, 그 자리에 <code style="color:var(--color-sea-blue); font-weight:700;">he</code>가 어울리면 `who`, <code style="color:var(--color-warm-orange); font-weight:700;">him</code>이 어울리면 `whom`을 쓰면 99% 해결됩니다!
+                </p>
+                <ul class="example-list">
+                    <li><b>문제:</b> (Who / Whom) did you meet yesterday?<br>
+                        <b>→ 예상 답변:</b> I met <b><span style="color:var(--color-warm-orange);">him</span></b> yesterday. (`him`이 자연스럽죠?) → <b>정답: Whom</b></li>
+                    <li style="margin-top:5px;"><b>문제:</b> (Who / Whom) wrote this novel?<br>
+                        <b>→ 예상 답변:</b> <b><span style="color:var(--color-sea-blue);">He</span></b> wrote this novel. (`he`가 자연스럽죠?) → <b>정답: Who</b></li>
+                </ul>
+
+                <h4 style="font-weight:700; color: var(--color-deep-blue); margin-top:20px; margin-bottom: 10px;">2. 간접의문문 어순, "의주동"만 기억하세요!</h4>
+                <p style="font-size: 10.5pt;">
+                    간접의문문 어순은 편입 시험의 단골 출제 포인트입니다. 헷갈릴 땐 이 주문을 외워보세요. <b>"간접의문문은 평서문 어순을 사랑해! 의! 주! 동!"</b>
+                </p>
+                <ul class="example-list">
+                    <li><b>직접의문문:</b> Where <b>is the library</b>? (동사 + 주어)</li>
+                    <li><b>간접의문문:</b> Can you tell me where <b>the library is</b>? (의문사 + 주어 + 동사)</li>
+                </ul>
+                <p style="font-size: 10.5pt; margin-top: -5px;">
+                    의문문이 다른 문장 속으로 쏙 들어가는 순간, 더 이상 물음표의 주인이 아니게 됩니다. 그래서 얌전하게 평서문(주어+동사)의 옷으로 갈아입는다고 생각하면 절대 잊어버리지 않을 거예요!
+                </p>
+            </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>문법 Bridge - 의문사 (Interrogatives)</span>
+  </div>
+  <div class="page-content">
+<div class="section-title eng-text first-in-page"><span class="emoji">📊</span>중요 도표 및 비교표</div>
+            <h4 style="font-weight:700; color: var(--color-deep-blue); margin-top:20px; margin-bottom: 10px;">1. 의문사 종류별 기능 및 예문 비교표</h4>
+            <table class="grammar-table">
+                <thead>
+                    <tr><th style="width:18%;">구분</th><th>의문사</th><th>기능 및 역할</th><th>예문</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td><b>의문대명사</b><br><small>(명사 역할)</small></td>
+                        <td><code>who</code><br><code>whom</code><br><code>what</code><br><code>which</code><br><code>whose</code></td>
+                        <td><b>사람(주격)</b><br><b>사람(목적격)</b><br><b>사물/내용</b><br><b>사람/사물(선택)</b><br><b>사람(소유대명사)</b></td>
+                        <td><b>Who</b> called me?<br><b>Whom</b> did you see?<br><b>What</b> happened?<br><b>Which</b> is your favorite?<br><b>Whose</b> is this umbrella?</td>
+                    </tr>
+                    <tr><td><b>의문형용사</b><br><small>(명사 수식)</small></td>
+                        <td><code>what</code><br><code>which</code><br><code>whose</code></td>
+                        <td><b>'무슨'</b> + 명사<br><b>'어느'</b> + 명사<br><b>'누구의'</b> + 명사</td>
+                        <td><b>What time</b> is it now?<br><b>Which way</b> should we go?<br><b>Whose book</b> are you reading?</td>
+                    </tr>
+                    <tr><td><b>의문부사</b><br><small>(부사 역할)</small></td>
+                        <td><code>when</code><br><code>where</code><br><code>why</code><br><code>how</code></td>
+                        <td><b>시간</b> (언제)<br><b>장소</b> (어디서)<br><b>이유</b> (왜)<br><b>방법/정도</b> (어떻게)</td>
+                        <td><b>When</b> does the movie start?<br><b>Where</b> do you live?<br><b>Why</b> did you say that?<br><b>How</b> was your trip?</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h4 style="font-weight:700; color: var(--color-deep-blue); margin-top:20px; margin-bottom: 10px;">2. 'what' vs. 'which' 핵심 차이 비교표</h4>
+            <table class="grammar-table comparison-table">
+                <thead><tr><th>구분</th><th><code>what</code></th><th><code>which</code></th></tr></thead>
+                <tbody>
+                    <tr><td><b>선택 범위</b></td><td><b>막연하고 제한 없는</b> 범위</td><td><b>한정되고 명확한</b> 범위 (주로 둘 이상)</td></tr>
+                    <tr><td><b>핵심 뉘앙스</b></td><td>"무엇?" (종류, 정체)</td><td>"어느 것?" (선택)</td></tr>
+                    <tr><td><b>예문<br>(형용사)</b></td><td><b>What sport</b> do you like?<br>(세상의 모든 스포츠 중)</td><td><b>Which sport</b> do you prefer, soccer or baseball? (축구와 야구 중)</td></tr>
+                    <tr><td><b>예문<br>(대명사)</b></td><td><b>What</b> is your favorite food?<br>(세상의 모든 음식 중)</td><td>Here are two options. <b>Which</b> do you want? (두 가지 선택지 중)</td></tr>
+                </tbody>
+            </table>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>문법 Bridge - 의문사 (Interrogatives)</span>
+  </div>
+  <div class="page-content">
+<div class="section-title eng-text first-in-page"><span class="emoji">📚</span>상세 예시</div>
+            <h4 style="font-weight:700; color: var(--color-deep-blue); margin-top:20px; margin-bottom: 10px;">1. 의문대명사 (Who, Whom, Whose, What, Which) 심층 분석</h4>
+            <ul class="example-list">
+                <li><b><code>who</code> (주격: 누가):</b> <b>Who</b> is responsible for this project? / <b>Who</b> ate the last piece of cake?</li>
+                <li><b><code>whom</code> (목적격: 누구를, 누구에게):</b> To <b>whom</b> should I send this package? / The man <b>whom</b> I respect is my father.</li>
+                <li><b><code>whose</code> (소유격/소유대명사: 누구의 / 누구의 것):</b>
+                    <ul style="list-style-type: '- '; padding-left:20px; margin-top:5px; margin-bottom:5px;">
+                        <li><b>Whose jacket</b> is this? (의문형용사)</li>
+                        <li>This pen is mine. <b>Whose</b> is that? (의문대명사)</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <h4 style="font-weight:700; color: var(--color-deep-blue); margin-top:20px; margin-bottom: 10px;">2. 의문부사 (When, Where, Why, How) 심층 분석</h4>
+            <p class="content-paragraph">특히 <code>how</code>는 다른 단어와 결합하여 다양한 의미를 만듭니다.</p>
+            <table class="grammar-table" style="font-size:10pt;">
+                <tbody>
+                    <tr><td><code>how long</code> (기간/길이)</td><td><b>How long</b> will the meeting last?</td></tr>
+                    <tr><td><code>how far</code> (거리)</td><td><b>How far</b> is your home from here?</td></tr>
+                    <tr><td><code>how often</code> (빈도)</td><td><b>How often</b> do you go to the gym?</td></tr>
+                    <tr><td><code>how many</code> (+ 복수 가산 명사)</td><td><b>How many</b> students are in your class?</td></tr>
+                    <tr><td><code>how much</code> (+ 불가산 명사)</td><td><b>How much</b> sugar do you need?</td></tr>
+                    <tr><td><code>how come</code> (왜, 어째서 - 구어체)</td><td><b>How come</b> you didn't come to the party? (뒤에 평서문 어순)</td></tr>
+                </tbody>
+            </table>
+            
+            <h4 style="font-weight:700; color: var(--color-deep-blue); margin-top:20px; margin-bottom: 10px;">3. 간접의문문 (Indirect Questions) 완벽 해설</h4>
+            <p class="content-paragraph">간접의문문은 의문문이 다른 문장의 일부(주어, 목적어, 보어)로 사용되는 것을 말합니다. 핵심은 <b>[의문사 + 주어 + 동사]</b> 어순입니다.</p>
+            <ul class="example-list">
+                <li>I don't know <b>what his job is</b>. (직접: What is his job?)</li>
+                <li><b>(주의) `think, believe` 동사와 결합 시:</b> <b>Where</b> do you think <b>he is</b>? (의문사가 문장 맨 앞으로 이동)</li>
+            </ul>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>문법 Bridge - 의문사 (Interrogatives)</span>
+  </div>
+  <div class="page-content">
+<div class="section-title eng-text first-in-page"><span class="emoji">💡</span>자주 하는 질문과 답변</div>
+            
+            <div class="tip-box">
+                <p><b>Q1: `who`와 `whom`은 꼭 구분해서 써야 하나요? 현대 영어에서는 어떻게 쓰이나요?</b><br>
+                A: 매우 중요한 질문입니다. 격식적인 글쓰기(학술 논문, 비즈니스 문서)나 편입 시험과 같은 표준화된 시험에서는 `who`(주격)와 `whom`(목적격)의 구분이 여전히 중요합니다. 특히 `to whom`, `for whom`과 같이 전치사 바로 뒤에는 반드시 `whom`을 써야 합니다. 하지만 일상적인 대화에서는 목적격 자리에도 `who`를 쓰는 경향이 매우 강합니다. 결론적으로, <b>편입 수험생이라면 문법적 정확성을 위해 반드시 구분해서 사용하는 법을 익혀야 합니다.</b></p>
+            </div>
+            <div class="tip-box">
+                <p><b>Q2: 간접의문문에서 `think`, `believe` 같은 동사가 쓰일 때 왜 의문사가 문장 맨 앞으로 가나요?</b><br>
+                A: 논리적으로 생각해보면 쉽습니다. "Where do you think he is?"라는 질문에 대한 기대 답변은 "Yes, I do."가 아니라 "I think he is <b>at the library</b>."와 같이 장소에 대한 정보입니다. 즉, 이 문장의 핵심 질문은 '생각하는지 여부'가 아니라 '**어디에** 있는지'입니다. 따라서 질문의 핵심인 의문사(Where)가 문장 전체를 이끌기 위해 맨 앞으로 나가는 것입니다.</p>
+            </div>
+            <div class="tip-box">
+                <p><b>Q3: 간접의문문에서 `if`와 `whether`는 완전히 똑같이 쓸 수 있나요?</b><br>
+                A: 대부분 바꿔 쓸 수 있지만, `whether`만 써야 하는 경우가 있습니다.<br>
+                1. <b>전치사의 목적어:</b> We talked about <b>whether</b> we should go. (about if X)<br>
+                2. <b>to부정사 앞:</b> The question is <b>whether to stay</b> or leave. (if to X)<br>
+                3. <b>`or not`이 바로 뒤에 붙을 때:</b> I don't care <b>whether or not</b> you agree. (if or not X)</p>
+            </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>문법 Bridge - 의문사 (Interrogatives)</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-bridge-ch10-1" data-type="correct-usage">
+    <div class="problem-meta">
+      <span class="problem-number">1</span>
+    </div>
+    <p class="problem-question">다음 중 밑줄 친 부분이 문법적으로 올바른 것은?</p>
+    <ol class="problem-choices problem-choices--html-numbered problem-choices--single-column">
+      <li>① I wonder what time does the train arrive at the station.</li>
+      <li>② Could you tell me which department you work for?</li>
+      <li>③ Do you know where is the nearest hospital located?</li>
+      <li>④ I'm not sure how many people are there in the meeting room.</li>
+      <li>⑤ Please explain why did he suddenly quit his job.</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-bridge-ch10-2" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">2</span>
+    </div>
+    <p class="problem-question">다음 문장을 간접의문문으로 바꿀 때 가장 적절한 것은?</p>
+    <div class="problem-text eng-text">"How long will the project take?"</div>
+    <ol class="problem-choices problem-choices--html-numbered problem-choices--single-column">
+      <li>① I want to know how long will the project take.</li>
+      <li>② I want to know how long the project will take.</li>
+      <li>③ I want to know how long does the project take.</li>
+      <li>④ I want to know the project how long will take.</li>
+      <li>⑤ I want to know how long will take the project.</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-bridge-ch10-3" data-type="correct-usage">
+    <div class="problem-meta">
+      <span class="problem-number">3</span>
+    </div>
+    <p class="problem-question">다음 중 어법상 올바른 문장은?</p>
+    <ol class="problem-choices problem-choices--html-numbered problem-choices--single-column">
+      <li>① Can you guess what does she do for a living?</li>
+      <li>② I have no idea where did they go last night.</li>
+      <li>③ Nobody knows when will the results be announced.</li>
+      <li>④ The teacher asked who had completed the assignment.</li>
+      <li>⑤ I wonder why is he always late to meetings.</li>
+    </ol>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>문법 Bridge - 의문사 (Interrogatives)</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-bridge-ch10-4" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">4</span>
+    </div>
+    <p class="problem-question">빈칸에 들어갈 가장 적절한 것은?</p>
+    <div class="problem-text eng-text">"The journalist asked the politician _______ about the new policy."</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① what did he think</li>
+      <li>② what he thought</li>
+      <li>③ what he thinks</li>
+      <li>④ what does he think</li>
+      <li>⑤ what was he thinking</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-bridge-ch10-5" data-type="correct-usage">
+    <div class="problem-meta">
+      <span class="problem-number">5</span>
+    </div>
+    <p class="problem-question">다음 대화에서 B의 응답이 문법적으로 올바른 것은?</p>
+    <div class="problem-text eng-text">A: "Do you remember where we parked the car?"<br> B: ____________</div>
+    <ol class="problem-choices problem-choices--html-numbered problem-choices--single-column">
+      <li>① I think where we parked it near the fountain.</li>
+      <li>② I think we parked it where near the fountain.</li>
+      <li>③ I think we parked it near the fountain where.</li>
+      <li>④ Where I think we parked it near the fountain.</li>
+      <li>⑤ I think we parked it near the fountain.</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-bridge-ch10-6" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">6</span>
+    </div>
+    <p class="problem-question">다음 중 밑줄 친 부분을 올바르게 수정한 것은?</p>
+    <div class="problem-text eng-text">"I can't figure out <b>how does this machine work</b> properly."</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① how this machine works</li>
+      <li>② how works this machine</li>
+      <li>③ how this machine does work</li>
+      <li>④ how does work this machine</li>
+      <li>⑤ this machine how works</li>
+    </ol>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>문법 Bridge - 의문사 (Interrogatives)</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-bridge-ch10-7" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">7</span>
+    </div>
+    <p class="problem-question">다음 문장에서 문법적 오류가 있는 것은?</p>
+    <ol class="problem-choices problem-choices--html-numbered problem-choices--single-column">
+      <li>① I wonder what time the store closes on Sundays.</li>
+      <li>② Can you tell me where the bus station is located?</li>
+      <li>③ Do you know how much does this book cost?</li>
+      <li>④ Nobody understands why he made that decision.</li>
+      <li>⑤ I'm curious about what she said at the meeting.</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-bridge-ch10-8" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">8</span>
+    </div>
+    <p class="problem-question">빈칸에 들어갈 가장 적절한 것은?</p>
+    <div class="problem-text eng-text">"The detective wanted to know _______ the crime scene."</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① who was present at</li>
+      <li>② who present was at</li>
+      <li>③ at who was present</li>
+      <li>④ present who was at</li>
+      <li>⑤ who at was present</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-bridge-ch10-9" data-type="correct-usage">
+    <div class="problem-meta">
+      <span class="problem-number">9</span>
+    </div>
+    <p class="problem-question">다음 중 의미와 문법이 모두 올바른 것은?</p>
+    <ol class="problem-choices problem-choices--html-numbered problem-choices--single-column">
+      <li>① I asked him where was he going tonight.</li>
+      <li>② I asked him where he was going tonight.</li>
+      <li>③ I asked him where he is going tonight.</li>
+      <li>④ I asked him where is he going tonight.</li>
+      <li>⑤ I asked him he was going where tonight.</li>
+    </ol>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>문법 Bridge - 의문사 (Interrogatives)</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-bridge-ch10-10" data-type="correct-usage">
+    <div class="problem-meta">
+      <span class="problem-number">10</span>
+    </div>
+    <p class="problem-question">밑줄 친 부분이 문법적으로 올바른 것은?</p>
+    <div class="problem-text eng-text">A: "I'm looking for someone to help with the project."<br> B: "Do you know _______ might be interested?"</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① who do you think</li>
+      <li>② who you think</li>
+      <li>③ you think who</li>
+      <li>④ do you think who</li>
+      <li>⑤ who thinks you</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-bridge-ch10-11" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">11</span>
+    </div>
+    <p class="problem-question">다음 빈칸에 들어갈 가장 적절한 것은?</p>
+    <div class="problem-text eng-text">"_______ do you think will win the championship this year?"</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① Who</li>
+      <li>② Whom</li>
+      <li>③ Whose</li>
+      <li>④ Which</li>
+      <li>⑤ What</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-bridge-ch10-12" data-type="correct-usage">
+    <div class="problem-meta">
+      <span class="problem-number">12</span>
+    </div>
+    <p class="problem-question">다음 중 문법적으로 올바른 것은?</p>
+    <ol class="problem-choices problem-choices--html-numbered problem-choices--single-column">
+      <li>① To who should I address this letter?</li>
+      <li>② To whom should I address this letter?</li>
+      <li>③ Who should I address this letter to?</li>
+      <li>④ Whom should I address this letter?</li>
+      <li>⑤ and ③ are both correct.</li>
+    </ol>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>문법 Bridge - 의문사 (Interrogatives)</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-bridge-ch10-13" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">13</span>
+    </div>
+    <p class="problem-question">빈칸에 들어갈 가장 적절한 것은?</p>
+    <div class="problem-text eng-text">"The person _______ you were speaking with is my supervisor."</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① who</li>
+      <li>② whom</li>
+      <li>③ whose</li>
+      <li>④ which</li>
+      <li>⑤ what</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-bridge-ch10-14" data-type="correct-usage">
+    <div class="problem-meta">
+      <span class="problem-number">14</span>
+    </div>
+    <p class="problem-question">다음 문장에서 문법적으로 올바른 것은?</p>
+    <ol class="problem-choices problem-choices--html-numbered problem-choices--single-column">
+      <li>① Who did you invite to the party?</li>
+      <li>② Whom did you invite to the party?</li>
+      <li>③ Who you invited to the party?</li>
+      <li>④ Whom you invited to the party?</li>
+      <li>⑤ and ② are both acceptable in modern English.</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-bridge-ch10-15" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">15</span>
+    </div>
+    <p class="problem-question">다음 중 격식적 글쓰기에 가장 적절한 것은?</p>
+    <ol class="problem-choices problem-choices--html-numbered problem-choices--single-column">
+      <li>① Who are you waiting for?</li>
+      <li>② Whom are you waiting for?</li>
+      <li>③ For who are you waiting?</li>
+      <li>④ For whom are you waiting?</li>
+      <li>⑤ You are waiting for who?</li>
+    </ol>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>문법 Bridge - 의문사 (Interrogatives)</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-bridge-ch10-16" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">16</span>
+    </div>
+    <p class="problem-question">빈칸에 들어갈 가장 적절한 것은?</p>
+    <div class="problem-text eng-text">"I wonder _______ she consulted before making that decision."</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① who</li>
+      <li>② whom</li>
+      <li>③ whose</li>
+      <li>④ which</li>
+      <li>⑤ what</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-bridge-ch10-17" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">17</span>
+    </div>
+    <p class="problem-question">다음 중 문법적으로 가장 정확한 것은?</p>
+    <ol class="problem-choices problem-choices--html-numbered problem-choices--single-column">
+      <li>① Who do you think I should talk to?</li>
+      <li>② Whom do you think I should talk to?</li>
+      <li>③ To whom do you think I should talk?</li>
+      <li>④ Who I should talk to do you think?</li>
+      <li>⑤ and ③ are equally correct.</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-bridge-ch10-18" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">18</span>
+    </div>
+    <p class="problem-question">다음 문장에서 문법적 오류가 있는 것은?</p>
+    <ol class="problem-choices problem-choices--html-numbered problem-choices--single-column">
+      <li>① Who called while I was out?</li>
+      <li>② Whom did you see at the conference?</li>
+      <li>③ I don't know who to trust anymore.</li>
+      <li>④ With who are you planning to travel?</li>
+      <li>⑤ Whose car did you borrow yesterday?</li>
+    </ol>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>문법 Bridge - 의문사 (Interrogatives)</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-bridge-ch10-19" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">19</span>
+    </div>
+    <p class="problem-question">빈칸에 들어갈 가장 적절한 것은?</p>
+    <div class="problem-text eng-text">"The committee will decide _______ to nominate for the award."</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① who</li>
+      <li>② whom</li>
+      <li>③ whose</li>
+      <li>④ which</li>
+      <li>⑤ what</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-bridge-ch10-20" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">20</span>
+    </div>
+    <p class="problem-question">다음 대화에서 문법적으로 가장 정확한 응답은?</p>
+    <div class="problem-text eng-text">A: "Someone called for you earlier."<br> B: _______ ?</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① Who was it</li>
+      <li>② Whom was it</li>
+      <li>③ Who it was</li>
+      <li>④ Whom it was</li>
+      <li>⑤ Whose was it</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-bridge-ch10-21" data-type="paraphrase">
+    <div class="problem-meta">
+      <span class="problem-number">21</span>
+    </div>
+    <p class="problem-question">다음 중 의미상 가장 자연스러운 것은?</p>
+    <ol class="problem-choices problem-choices--html-numbered problem-choices--single-column">
+      <li>① What color do you prefer, red or blue?</li>
+      <li>② Which color do you prefer, red or blue?</li>
+      <li>③ What time does the meeting start?</li>
+      <li>④ Which time does the meeting start?</li>
+      <li>⑤ and ③ are both natural.</li>
+    </ol>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>문법 Bridge - 의문사 (Interrogatives)</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-bridge-ch10-22" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">22</span>
+    </div>
+    <p class="problem-question">빈칸에 들어갈 가장 적절한 것은?</p>
+    <div class="problem-text eng-text">"_______ of these books would you recommend for a beginner?"</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① What</li>
+      <li>② Which</li>
+      <li>③ Who</li>
+      <li>④ Whose</li>
+      <li>⑤ When</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-bridge-ch10-23" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">23</span>
+    </div>
+    <p class="problem-question">다음 중 문맥상 가장 적절한 것은?</p>
+    <div class="problem-text eng-text">상황: 친구가 수많은 영화 장르 중에서 선호하는 것을 물어볼 때</div>
+    <ol class="problem-choices problem-choices--html-numbered problem-choices--single-column">
+      <li>① What kind of movies do you like?</li>
+      <li>② Which kind of movies do you like?</li>
+      <li>③ What movies do you like?</li>
+      <li>④ Which movies do you like?</li>
+      <li>⑤ and ③ are equally appropriate.</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-bridge-ch10-24" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">24</span>
+    </div>
+    <p class="problem-question">다음 대화에서 가장 자연스러운 질문은?</p>
+    <div class="problem-text eng-text">A: "I'm thinking about buying a smartphone."<br> B: _______ ?</div>
+    <ol class="problem-choices problem-choices--html-numbered problem-choices--single-column">
+      <li>① What brand are you considering</li>
+      <li>② Which brand are you considering</li>
+      <li>③ What brands do you prefer</li>
+      <li>④ Which smartphone do you want</li>
+      <li>⑤ All are equally natural.</li>
+    </ol>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>문법 Bridge - 의문사 (Interrogatives)</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-bridge-ch10-25" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">25</span>
+    </div>
+    <p class="problem-question">빈칸에 들어갈 가장 적절한 것은?</p>
+    <div class="problem-text eng-text">"I can't decide _______ subject to major in at university."</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① what</li>
+      <li>② which</li>
+      <li>③ whose</li>
+      <li>④ who</li>
+      <li>⑤ when</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-bridge-ch10-26" data-type="correct-usage">
+    <div class="problem-meta">
+      <span class="problem-number">26</span>
+    </div>
+    <p class="problem-question">다음 중 의미상 올바른 구별은?</p>
+    <ol class="problem-choices problem-choices--html-numbered problem-choices--single-column">
+      <li>① What = 무한한 선택지, Which = 한정된 선택지</li>
+      <li>② What = 한정된 선택지, Which = 무한한 선택지</li>
+      <li>③ What과 Which는 항상 교체 가능하다</li>
+      <li>④ What은 사물, Which는 사람에만 사용</li>
+      <li>⑤ What은 단수, Which는 복수에만 사용</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-bridge-ch10-27" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">27</span>
+    </div>
+    <p class="problem-question">다음 상황에서 가장 적절한 질문은?</p>
+    <div class="problem-text eng-text">상황: 메뉴에 3가지 파스타가 있을 때</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① What pasta do you want?</li>
+      <li>② Which pasta do you want?</li>
+      <li>③ Whose pasta do you want?</li>
+      <li>④ When pasta do you want?</li>
+      <li>⑤ and ② are equally appropriate.</li>
+    </ol>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>문법 Bridge - 의문사 (Interrogatives)</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-bridge-ch10-28" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">28</span>
+    </div>
+    <p class="problem-question">빈칸에 들어갈 가장 적절한 것은?</p>
+    <div class="problem-text eng-text">"_______ is your favorite season, and why do you like it?"</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① What</li>
+      <li>② Which</li>
+      <li>③ Who</li>
+      <li>④ When</li>
+      <li>⑤ Where</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-bridge-ch10-29" data-type="paraphrase">
+    <div class="problem-meta">
+      <span class="problem-number">29</span>
+    </div>
+    <p class="problem-question">다음 중 문법적으로 올바르고 의미가 자연스러운 것은?</p>
+    <ol class="problem-choices problem-choices--html-numbered problem-choices--single-column">
+      <li>① Which do you think is the best solution?</li>
+      <li>② What do you think is the best solution?</li>
+      <li>③ Which solution do you think is the best?</li>
+      <li>④ What solution do you think is the best?</li>
+      <li>⑤ All are correct and natural.</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-bridge-ch10-30" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">30</span>
+    </div>
+    <p class="problem-question">다음 대화에서 가장 적절한 것은?</p>
+    <div class="problem-text eng-text">A: "There are two routes to the airport."<br> B: _______ ?</div>
+    <ol class="problem-choices problem-choices--html-numbered problem-choices--single-column">
+      <li>① What is faster</li>
+      <li>② Which is faster</li>
+      <li>③ What one is faster</li>
+      <li>④ Which one is faster</li>
+      <li>⑤ and ④ are both appropriate.</li>
+    </ol>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>문법 Bridge - 의문사 (Interrogatives)</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-bridge-ch10-31" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">31</span>
+    </div>
+    <p class="problem-question">다음 중 밑줄 친 부분이 의문대명사로 사용된 것은?</p>
+    <ol class="problem-choices problem-choices--html-numbered problem-choices--single-column">
+      <li>① What time do you usually wake up?</li>
+      <li>② What happened at the meeting?</li>
+      <li>③ Which book are you currently reading?</li>
+      <li>④ Whose car is parked outside?</li>
+      <li>⑤ How many students attended the lecture?</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-bridge-ch10-32" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">32</span>
+    </div>
+    <p class="problem-question">다음 문장에서 문법적 기능이 나머지와 다른 것은?</p>
+    <ol class="problem-choices problem-choices--html-numbered problem-choices--single-column">
+      <li>① What is your name?</li>
+      <li>② What book are you reading?</li>
+      <li>③ Which do you prefer?</li>
+      <li>④ Whose is this umbrella?</li>
+      <li>⑤ Who called you yesterday?</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-bridge-ch10-33" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">33</span>
+    </div>
+    <p class="problem-question">빈칸에 들어갈 가장 적절한 것은?</p>
+    <div class="problem-text eng-text">"I don't know _______ to choose from these options."</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① what</li>
+      <li>② which</li>
+      <li>③ whose</li>
+      <li>④ who</li>
+      <li>⑤ when</li>
+    </ol>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>문법 Bridge - 의문사 (Interrogatives)</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-bridge-ch10-34" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">34</span>
+    </div>
+    <p class="problem-question">다음 중 whose가 의문대명사로 사용된 것은?</p>
+    <ol class="problem-choices problem-choices--html-numbered problem-choices--single-column">
+      <li>① Whose car did you borrow?</li>
+      <li>② Whose is this jacket?</li>
+      <li>③ Whose opinion matters most?</li>
+      <li>④ Whose house are we visiting?</li>
+      <li>⑤ Whose responsibility is it?</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-bridge-ch10-35" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">35</span>
+    </div>
+    <p class="problem-question">다음 문장에서 밑줄 친 부분의 문법적 역할은?</p>
+    <div class="problem-text eng-text">"<b>Which of the candidates</b> do you think is most qualified?"</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① 주어</li>
+      <li>② 목적어</li>
+      <li>③ 보어</li>
+      <li>④ 부사어</li>
+      <li>⑤ 관계사</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-bridge-ch10-36" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">36</span>
+    </div>
+    <p class="problem-question">빈칸에 들어갈 가장 적절한 것은?</p>
+    <div class="problem-text eng-text">"_______ makes you think he's the right person for the job?"</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① What</li>
+      <li>② Which</li>
+      <li>③ Who</li>
+      <li>④ Whose</li>
+      <li>⑤ When</li>
+    </ol>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>문법 Bridge - 의문사 (Interrogatives)</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-bridge-ch10-37" data-type="correct-usage">
+    <div class="problem-meta">
+      <span class="problem-number">37</span>
+    </div>
+    <p class="problem-question">다음 중 문법적 구조가 올바른 것은?</p>
+    <ol class="problem-choices problem-choices--html-numbered problem-choices--single-column">
+      <li>① What do you think about it?</li>
+      <li>② What about it do you think?</li>
+      <li>③ About what do you think it?</li>
+      <li>④ You think what about it?</li>
+      <li>⑤ Think what do you about it?</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-bridge-ch10-38" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">38</span>
+    </div>
+    <p class="problem-question">다음 문장에서 whose의 기능은?</p>
+    <div class="problem-text eng-text">"Whose idea was it to start this project?"</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① 의문대명사 (소유격)</li>
+      <li>② 의문형용사</li>
+      <li>③ 관계대명사</li>
+      <li>④ 의문부사</li>
+      <li>⑤ 접속사</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-bridge-ch10-39" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">39</span>
+    </div>
+    <p class="problem-question">빈칸에 들어갈 가장 적절한 것은?</p>
+    <div class="problem-text eng-text">"I wonder _______ made this delicious cake."</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① who</li>
+      <li>② whom</li>
+      <li>③ whose</li>
+      <li>④ which</li>
+      <li>⑤ what</li>
+    </ol>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>문법 Bridge - 의문사 (Interrogatives)</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-bridge-ch10-40" data-type="paraphrase">
+    <div class="problem-meta">
+      <span class="problem-number">40</span>
+    </div>
+    <p class="problem-question">다음 중 문법적으로 올바르면서 의미가 자연스러운 것은?</p>
+    <ol class="problem-choices problem-choices--html-numbered problem-choices--single-column">
+      <li>① What person do you admire most?</li>
+      <li>② Which person do you admire most?</li>
+      <li>③ Who do you admire most?</li>
+      <li>④ Whose do you admire most?</li>
+      <li>⑤ and ③ are both correct.</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-bridge-ch10-41" data-type="paraphrase">
+    <div class="problem-meta">
+      <span class="problem-number">41</span>
+    </div>
+    <p class="problem-question">다음 중 how가 포함된 표현의 의미가 잘못된 것은?</p>
+    <ol class="problem-choices problem-choices--html-numbered problem-choices--single-column">
+      <li>① how long - 기간, 길이</li>
+      <li>② how far - 거리</li>
+      <li>③ how often - 빈도</li>
+      <li>④ how much - 가격, 양(불가산명사)</li>
+      <li>⑤ how many - 양(불가산명사)</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-bridge-ch10-42" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">42</span>
+    </div>
+    <p class="problem-question">빈칸에 들어갈 가장 적절한 것은?</p>
+    <div class="problem-text eng-text">"_______ have you been learning English?"</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① How long</li>
+      <li>② How far</li>
+      <li>③ How often</li>
+      <li>④ How much</li>
+      <li>⑤ How many</li>
+    </ol>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>문법 Bridge - 의문사 (Interrogatives)</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-bridge-ch10-43" data-type="correct-usage">
+    <div class="problem-meta">
+      <span class="problem-number">43</span>
+    </div>
+    <p class="problem-question">다음 중 문법적으로 올바른 것은?</p>
+    <ol class="problem-choices problem-choices--html-numbered problem-choices--single-column">
+      <li>① How come you didn't tell me earlier?</li>
+      <li>② How come didn't you tell me earlier?</li>
+      <li>③ How come you not tell me earlier?</li>
+      <li>④ How come you don't told me earlier?</li>
+      <li>⑤ How come did you not tell me earlier?</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-bridge-ch10-44" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">44</span>
+    </div>
+    <p class="problem-question">빈칸에 들어갈 가장 적절한 것은?</p>
+    <div class="problem-text eng-text">"_______ water do you drink every day?"</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① How many</li>
+      <li>② How much</li>
+      <li>③ How long</li>
+      <li>④ How often</li>
+      <li>⑤ How far</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-bridge-ch10-45" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">45</span>
+    </div>
+    <p class="problem-question">다음 중 의문부사 뒤에 완전한 문장이 오지 않은 것은?</p>
+    <ol class="problem-choices problem-choices--html-numbered problem-choices--single-column">
+      <li>① When did you arrive here?</li>
+      <li>② Where do you live?</li>
+      <li>③ Why are you crying?</li>
+      <li>④ How was your trip?</li>
+      <li>⑤ What happened yesterday?</li>
+    </ol>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>문법 Bridge - 의문사 (Interrogatives)</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-bridge-ch10-46" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">46</span>
+    </div>
+    <p class="problem-question">다음 대화에서 가장 적절한 질문은?</p>
+    <div class="problem-text eng-text">A: "I go to the gym."<br> B: _______ ?</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① How long do you go</li>
+      <li>② How often do you go</li>
+      <li>③ How much do you go</li>
+      <li>④ How many do you go</li>
+      <li>⑤ How far do you go</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-bridge-ch10-47" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">47</span>
+    </div>
+    <p class="problem-question">빈칸에 들어갈 가장 적절한 것은?</p>
+    <div class="problem-text eng-text">"_______ is it from your house to the university?"</div>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① How long</li>
+      <li>② How far</li>
+      <li>③ How often</li>
+      <li>④ How much</li>
+      <li>⑤ How many</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-bridge-ch10-48" data-type="correct-usage">
+    <div class="problem-meta">
+      <span class="problem-number">48</span>
+    </div>
+    <p class="problem-question">다음 중 어법상 올바른 것은?</p>
+    <ol class="problem-choices problem-choices--html-numbered problem-choices--single-column">
+      <li>① I don't know where does he live.</li>
+      <li>② I don't know where he lives.</li>
+      <li>③ I don't know he lives where.</li>
+      <li>④ I don't know does he live where.</li>
+      <li>⑤ Where I don't know he lives.</li>
+    </ol>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>문법 Bridge - 의문사 (Interrogatives)</span>
+  </div>
+  <div class="page-content">
+  <div class="problem-block" data-id="grammar-bridge-ch10-49" data-type="fill-in-blank">
+    <div class="problem-meta">
+      <span class="problem-number">49</span>
+    </div>
+    <p class="problem-question">다음 문장에서 문법적 기능이 다른 것은?</p>
+    <ol class="problem-choices problem-choices--html-numbered problem-choices--single-column">
+      <li>① When will the conference begin?</li>
+      <li>② I asked when the conference would begin.</li>
+      <li>③ Where are you going for vacation?</li>
+      <li>④ What time is the meeting scheduled?</li>
+      <li>⑤ Why did she decide to quit her job?</li>
+    </ol>
+  </div>
+
+  <div class="problem-block" data-id="grammar-bridge-ch10-50" data-type="correct-usage">
+    <div class="problem-meta">
+      <span class="problem-number">50</span>
+    </div>
+    <p class="problem-question">다음 중 의미와 문법이 모두 올바른 것은?</p>
+    <ol class="problem-choices problem-choices--html-numbered">
+      <li>① How many money do you need?</li>
+      <li>② How much money do you need?</li>
+      <li>③ How long money do you need?</li>
+      <li>④ How often money do you need?</li>
+      <li>⑤ How far money do you need?</li>
+    </ol>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>문법 Bridge - 의문사 (Interrogatives)</span>
+  </div>
+  <div class="page-content">
+  <div class="answer-grid">
+    <h3 class="answer-grid-title">정답</h3>
+    <div class="answer-grid-table">
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">1</span>
+        <span class="answer-grid-answer">②</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">2</span>
+        <span class="answer-grid-answer">②</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">3</span>
+        <span class="answer-grid-answer">④</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">4</span>
+        <span class="answer-grid-answer">②</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">5</span>
+        <span class="answer-grid-answer">⑤</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">6</span>
+        <span class="answer-grid-answer">①</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">7</span>
+        <span class="answer-grid-answer">③</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">8</span>
+        <span class="answer-grid-answer">①</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">9</span>
+        <span class="answer-grid-answer">②</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">10</span>
+        <span class="answer-grid-answer">②</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">11</span>
+        <span class="answer-grid-answer">①</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">12</span>
+        <span class="answer-grid-answer">⑤</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">13</span>
+        <span class="answer-grid-answer">②</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">14</span>
+        <span class="answer-grid-answer">⑤</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">15</span>
+        <span class="answer-grid-answer">④</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">16</span>
+        <span class="answer-grid-answer">②</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">17</span>
+        <span class="answer-grid-answer">⑤</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">18</span>
+        <span class="answer-grid-answer">④</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">19</span>
+        <span class="answer-grid-answer">②</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">20</span>
+        <span class="answer-grid-answer">①</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">21</span>
+        <span class="answer-grid-answer">⑤</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">22</span>
+        <span class="answer-grid-answer">②</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">23</span>
+        <span class="answer-grid-answer">⑤</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">24</span>
+        <span class="answer-grid-answer">①</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">25</span>
+        <span class="answer-grid-answer">①</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">26</span>
+        <span class="answer-grid-answer">①</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">27</span>
+        <span class="answer-grid-answer">②</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">28</span>
+        <span class="answer-grid-answer">①</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">29</span>
+        <span class="answer-grid-answer">⑤</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">30</span>
+        <span class="answer-grid-answer">⑤</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">31</span>
+        <span class="answer-grid-answer">②</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">32</span>
+        <span class="answer-grid-answer">②</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">33</span>
+        <span class="answer-grid-answer">②</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">34</span>
+        <span class="answer-grid-answer">②</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">35</span>
+        <span class="answer-grid-answer">②</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">36</span>
+        <span class="answer-grid-answer">①</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">37</span>
+        <span class="answer-grid-answer">①</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">38</span>
+        <span class="answer-grid-answer">②</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">39</span>
+        <span class="answer-grid-answer">①</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">40</span>
+        <span class="answer-grid-answer">⑤</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">41</span>
+        <span class="answer-grid-answer">⑤</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">42</span>
+        <span class="answer-grid-answer">①</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">43</span>
+        <span class="answer-grid-answer">①</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">44</span>
+        <span class="answer-grid-answer">②</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">45</span>
+        <span class="answer-grid-answer">⑤</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">46</span>
+        <span class="answer-grid-answer">②</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">47</span>
+        <span class="answer-grid-answer">②</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">48</span>
+        <span class="answer-grid-answer">②</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">49</span>
+        <span class="answer-grid-answer">④</span>
+      </div>
+      <div class="answer-grid-item">
+        <span class="answer-grid-number">50</span>
+        <span class="answer-grid-answer">②</span>
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>문법 Bridge - 의문사 (Interrogatives)</span>
+  </div>
+  <div class="page-content">
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-1">
+    <div class="explanation-header">
+      <span class="problem-number">1</span>
+      <span class="answer-badge">정답: ②</span>
+    </div>
+    <div class="explanation-body">
+      <p>간접의문문에서는 '의문사 + 주어 + 동사' 어순을 사용합니다.<br>                - ① what time the train arrives (✗ does the train arrive)<br>                - ③ where the nearest hospital is (✗ is the nearest hospital)<br>                - ④ how many people there are (✗ are there)<br>                - ⑤ why he suddenly quit (✗ did he suddenly quit)</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-2">
+    <div class="explanation-header">
+      <span class="problem-number">2</span>
+      <span class="answer-badge">정답: ②</span>
+    </div>
+    <div class="explanation-body">
+      <p>간접의문문에서는 의문사 다음에 주어(the project) + 동사(will take) 순서가 와야 합니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-3">
+    <div class="explanation-header">
+      <span class="problem-number">3</span>
+      <span class="answer-badge">정답: ④</span>
+    </div>
+    <div class="explanation-body">
+      <p>간접의문문에서는 평서문 어순을 사용해야 합니다. ④만이 올바른 어순입니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-4">
+    <div class="explanation-header">
+      <span class="problem-number">4</span>
+      <span class="answer-badge">정답: ②</span>
+    </div>
+    <div class="explanation-body">
+      <p>간접의문문에서는 'what + 주어(he) + 동사(thought)' 어순이며, 시제 일치에 따라 과거형을 사용합니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-5">
+    <div class="explanation-header">
+      <span class="problem-number">5</span>
+      <span class="answer-badge">정답: ⑤</span>
+    </div>
+    <div class="explanation-body">
+      <p>간접의문문에서 where은 부사구를 이끌므로, 완전한 문장 구조가 와야 합니다.</p>
+    </div>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>문법 Bridge - 의문사 (Interrogatives)</span>
+  </div>
+  <div class="page-content">
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-6">
+    <div class="explanation-header">
+      <span class="problem-number">6</span>
+      <span class="answer-badge">정답: ①</span>
+    </div>
+    <div class="explanation-body">
+      <p>간접의문문에서는 'how + 주어(this machine) + 동사(works)' 어순입니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-7">
+    <div class="explanation-header">
+      <span class="problem-number">7</span>
+      <span class="answer-badge">정답: ③</span>
+    </div>
+    <div class="explanation-body">
+      <p>'how much does this book cost' → 'how much this book costs'가 정확합니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-8">
+    <div class="explanation-header">
+      <span class="problem-number">8</span>
+      <span class="answer-badge">정답: ①</span>
+    </div>
+    <div class="explanation-body">
+      <p>간접의문문에서 'who + 동사(was) + 보어/부사구(present at)'가 올바른 어순입니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-9">
+    <div class="explanation-header">
+      <span class="problem-number">9</span>
+      <span class="answer-badge">정답: ②</span>
+    </div>
+    <div class="explanation-body">
+      <p>간접의문문 어순과 시제 일치가 모두 올바른 문장입니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-10">
+    <div class="explanation-header">
+      <span class="problem-number">10</span>
+      <span class="answer-badge">정답: ②</span>
+    </div>
+    <div class="explanation-body">
+      <p>간접의문문에서는 'who you think'가 올바른 어순입니다.</p>
+    </div>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>문법 Bridge - 의문사 (Interrogatives)</span>
+  </div>
+  <div class="page-content">
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-11">
+    <div class="explanation-header">
+      <span class="problem-number">11</span>
+      <span class="answer-badge">정답: ①</span>
+    </div>
+    <div class="explanation-body">
+      <p>'Who do you think'에서 who는 주어 역할을 하므로 주격 who를 사용합니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-12">
+    <div class="explanation-header">
+      <span class="problem-number">12</span>
+      <span class="answer-badge">정답: ⑤</span>
+    </div>
+    <div class="explanation-body">
+      <p>전치사 to 뒤에는 목적격 whom을 쓰는 것이 격식적으로 정확하지만, 현대 영어에서는 문장 끝에 전치사를 두고 who를 쓰는 것도 허용됩니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-13">
+    <div class="explanation-header">
+      <span class="problem-number">13</span>
+      <span class="answer-badge">정답: ②</span>
+    </div>
+    <div class="explanation-body">
+      <p>전치사 with의 목적어 역할을 하므로 목적격 whom을 사용합니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-14">
+    <div class="explanation-header">
+      <span class="problem-number">14</span>
+      <span class="answer-badge">정답: ⑤</span>
+    </div>
+    <div class="explanation-body">
+      <p>직접의문문에서는 현대 영어에서 who와 whom 모두 허용되지만, whom이 격식적으로 더 정확합니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-15">
+    <div class="explanation-header">
+      <span class="problem-number">15</span>
+      <span class="answer-badge">정답: ④</span>
+    </div>
+    <div class="explanation-body">
+      <p>격식적 글쓰기에서는 전치사를 앞으로 이동시키고 whom을 사용하는 것이 가장 적절합니다.</p>
+    </div>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>문법 Bridge - 의문사 (Interrogatives)</span>
+  </div>
+  <div class="page-content">
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-16">
+    <div class="explanation-header">
+      <span class="problem-number">16</span>
+      <span class="answer-badge">정답: ②</span>
+    </div>
+    <div class="explanation-body">
+      <p>consult의 목적어 역할을 하므로 목적격 whom을 사용합니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-17">
+    <div class="explanation-header">
+      <span class="problem-number">17</span>
+      <span class="answer-badge">정답: ⑤</span>
+    </div>
+    <div class="explanation-body">
+      <p>② (간접의문문에서 목적격 사용)와 ③ (전치사 전치 + 목적격) 모두 문법적으로 정확합니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-18">
+    <div class="explanation-header">
+      <span class="problem-number">18</span>
+      <span class="answer-badge">정답: ④</span>
+    </div>
+    <div class="explanation-body">
+      <p>전치사 with 뒤에는 whom을 써야 합니다. 'With whom are you planning to travel?'이 정확합니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-19">
+    <div class="explanation-header">
+      <span class="problem-number">19</span>
+      <span class="answer-badge">정답: ②</span>
+    </div>
+    <div class="explanation-body">
+      <p>nominate의 목적어 역할을 하므로 목적격 whom을 사용합니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-20">
+    <div class="explanation-header">
+      <span class="problem-number">20</span>
+      <span class="answer-badge">정답: ①</span>
+    </div>
+    <div class="explanation-body">
+      <p>직접의문문에서 who가 주어 역할을 하므로 주격 who를 사용합니다.</p>
+    </div>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>문법 Bridge - 의문사 (Interrogatives)</span>
+  </div>
+  <div class="page-content">
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-21">
+    <div class="explanation-header">
+      <span class="problem-number">21</span>
+      <span class="answer-badge">정답: ⑤</span>
+    </div>
+    <div class="explanation-body">
+      <p>② red와 blue라는 한정된 선택지가 있으므로 which가 자연스럽고, ③ 시간을 물을 때는 관습적으로 what을 사용합니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-22">
+    <div class="explanation-header">
+      <span class="problem-number">22</span>
+      <span class="answer-badge">정답: ②</span>
+    </div>
+    <div class="explanation-body">
+      <p>'these books' 중에서 선택하는 한정된 범위이므로 which를 사용합니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-23">
+    <div class="explanation-header">
+      <span class="problem-number">23</span>
+      <span class="answer-badge">정답: ⑤</span>
+    </div>
+    <div class="explanation-body">
+      <p>수많은 영화 장르 중에서 일반적인 선호를 묻는 것이므로 what이 적절합니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-24">
+    <div class="explanation-header">
+      <span class="problem-number">24</span>
+      <span class="answer-badge">정답: ①</span>
+    </div>
+    <div class="explanation-body">
+      <p>막연한 브랜드 선호를 묻는 것이므로 what이 더 자연스럽습니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-25">
+    <div class="explanation-header">
+      <span class="problem-number">25</span>
+      <span class="answer-badge">정답: ①</span>
+    </div>
+    <div class="explanation-body">
+      <p>대학 전공은 무한히 많은 선택지 중에서 고르는 것이므로 what이 적절합니다.</p>
+    </div>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>문법 Bridge - 의문사 (Interrogatives)</span>
+  </div>
+  <div class="page-content">
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-26">
+    <div class="explanation-header">
+      <span class="problem-number">26</span>
+      <span class="answer-badge">정답: ①</span>
+    </div>
+    <div class="explanation-body">
+      <p>what은 무한하거나 제한 없는 선택지, which는 한정된 선택지에서 사용됩니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-27">
+    <div class="explanation-header">
+      <span class="problem-number">27</span>
+      <span class="answer-badge">정답: ②</span>
+    </div>
+    <div class="explanation-body">
+      <p>메뉴에 있는 3가지 파스타라는 한정된 선택지이므로 which가 적절합니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-28">
+    <div class="explanation-header">
+      <span class="problem-number">28</span>
+      <span class="answer-badge">정답: ①</span>
+    </div>
+    <div class="explanation-body">
+      <p>4계절이라는 한정된 범위이지만, 일반적인 선호를 묻는 관용적 표현으로 what을 사용합니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-29">
+    <div class="explanation-header">
+      <span class="problem-number">29</span>
+      <span class="answer-badge">정답: ⑤</span>
+    </div>
+    <div class="explanation-body">
+      <p>문맥에 따라 모두 사용 가능합니다. 한정된 해결책들 중에서는 which, 일반적인 해결책을 물을 때는 what을 사용합니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-30">
+    <div class="explanation-header">
+      <span class="problem-number">30</span>
+      <span class="answer-badge">정답: ⑤</span>
+    </div>
+    <div class="explanation-body">
+      <p>두 개의 경로라는 명시된 선택지가 있으므로 which를 사용하며, one을 포함하거나 생략 모두 가능합니다.</p>
+    </div>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>문법 Bridge - 의문사 (Interrogatives)</span>
+  </div>
+  <div class="page-content">
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-31">
+    <div class="explanation-header">
+      <span class="problem-number">31</span>
+      <span class="answer-badge">정답: ②</span>
+    </div>
+    <div class="explanation-body">
+      <p>②에서 What은 주어 역할을 하는 의문대명사이고, 나머지는 모두 명사를 수식하는 의문형용사입니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-32">
+    <div class="explanation-header">
+      <span class="problem-number">32</span>
+      <span class="answer-badge">정답: ②</span>
+    </div>
+    <div class="explanation-body">
+      <p>②는 의문형용사(What이 book을 수식), 나머지는 모두 의문대명사입니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-33">
+    <div class="explanation-header">
+      <span class="problem-number">33</span>
+      <span class="answer-badge">정답: ②</span>
+    </div>
+    <div class="explanation-body">
+      <p>여러 옵션 중에서 선택하는 상황이므로 which가 적절합니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-34">
+    <div class="explanation-header">
+      <span class="problem-number">34</span>
+      <span class="answer-badge">정답: ②</span>
+    </div>
+    <div class="explanation-body">
+      <p>②에서 Whose는 단독으로 사용되어 소유대명사 역할을 하는 의문대명사입니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-35">
+    <div class="explanation-header">
+      <span class="problem-number">35</span>
+      <span class="answer-badge">정답: ②</span>
+    </div>
+    <div class="explanation-body">
+      <p>'Which of the candidates'는 동사 think의 목적어 역할을 합니다.</p>
+    </div>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>문법 Bridge - 의문사 (Interrogatives)</span>
+  </div>
+  <div class="page-content">
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-36">
+    <div class="explanation-header">
+      <span class="problem-number">36</span>
+      <span class="answer-badge">정답: ①</span>
+    </div>
+    <div class="explanation-body">
+      <p>주어 자리에 오는 의문대명사로 What이 적절합니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-37">
+    <div class="explanation-header">
+      <span class="problem-number">37</span>
+      <span class="answer-badge">정답: ①</span>
+    </div>
+    <div class="explanation-body">
+      <p>'What do you think about it?'이 가장 자연스러운 어순입니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-38">
+    <div class="explanation-header">
+      <span class="problem-number">38</span>
+      <span class="answer-badge">정답: ②</span>
+    </div>
+    <div class="explanation-body">
+      <p>'Whose idea'에서 Whose는 idea를 수식하는 의문형용사입니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-39">
+    <div class="explanation-header">
+      <span class="problem-number">39</span>
+      <span class="answer-badge">정답: ①</span>
+    </div>
+    <div class="explanation-body">
+      <p>케이크를 만든 사람을 묻는 것이므로 주어 역할의 who가 적절합니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-40">
+    <div class="explanation-header">
+      <span class="problem-number">40</span>
+      <span class="answer-badge">정답: ⑤</span>
+    </div>
+    <div class="explanation-body">
+      <p>①과 ③ 모두 문법적으로 올바르며 의미도 자연스럽습니다.</p>
+    </div>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>문법 Bridge - 의문사 (Interrogatives)</span>
+  </div>
+  <div class="page-content">
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-41">
+    <div class="explanation-header">
+      <span class="problem-number">41</span>
+      <span class="answer-badge">정답: ⑤</span>
+    </div>
+    <div class="explanation-body">
+      <p>'how many'는 가산명사와 함께 사용되며, 불가산명사와는 'how much'를 사용합니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-42">
+    <div class="explanation-header">
+      <span class="problem-number">42</span>
+      <span class="answer-badge">정답: ①</span>
+    </div>
+    <div class="explanation-body">
+      <p>영어 학습 기간을 묻는 것이므로 'How long'이 적절합니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-43">
+    <div class="explanation-header">
+      <span class="problem-number">43</span>
+      <span class="answer-badge">정답: ①</span>
+    </div>
+    <div class="explanation-body">
+      <p>'How come' 뒤에는 평서문 어순이 옵니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-44">
+    <div class="explanation-header">
+      <span class="problem-number">44</span>
+      <span class="answer-badge">정답: ②</span>
+    </div>
+    <div class="explanation-body">
+      <p>water는 불가산명사이므로 'How much'를 사용합니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-45">
+    <div class="explanation-header">
+      <span class="problem-number">45</span>
+      <span class="answer-badge">정답: ⑤</span>
+    </div>
+    <div class="explanation-body">
+      <p>⑤에서 What은 의문대명사로 주어 역할을 하므로, 뒤에 완전한 문장이 오지 않습니다.</p>
+    </div>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+<div class="page">
+  <div class="page-header">
+    <span class="eng-text">Vera's Flavor</span>
+    <span>문법 Bridge - 의문사 (Interrogatives)</span>
+  </div>
+  <div class="page-content">
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-46">
+    <div class="explanation-header">
+      <span class="problem-number">46</span>
+      <span class="answer-badge">정답: ②</span>
+    </div>
+    <div class="explanation-body">
+      <p>헬스장을 가는 빈도를 묻는 것이므로 'How often'이 적절합니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-47">
+    <div class="explanation-header">
+      <span class="problem-number">47</span>
+      <span class="answer-badge">정답: ②</span>
+    </div>
+    <div class="explanation-body">
+      <p>거리를 묻는 질문이므로 'How far'가 적절합니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-48">
+    <div class="explanation-header">
+      <span class="problem-number">48</span>
+      <span class="answer-badge">정답: ②</span>
+    </div>
+    <div class="explanation-body">
+      <p>간접의문문에서는 평서문 어순을 사용해야 합니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-49">
+    <div class="explanation-header">
+      <span class="problem-number">49</span>
+      <span class="answer-badge">정답: ④</span>
+    </div>
+    <div class="explanation-body">
+      <p>④는 의문형용사(What이 time을 수식), 나머지는 모두 의문부사입니다.</p>
+    </div>
+  </div>
+
+  <div class="explanation explanation--compact" data-problem-id="grammar-bridge-ch10-50">
+    <div class="explanation-header">
+      <span class="problem-number">50</span>
+      <span class="answer-badge">정답: ②</span>
+    </div>
+    <div class="explanation-body">
+      <p>money는 불가산명사이므로 'How much'와 함께 사용해야 합니다.</p>
+    </div>
+  </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+
+</body>
+</html>
