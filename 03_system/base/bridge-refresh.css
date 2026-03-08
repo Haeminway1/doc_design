@@ -140,6 +140,7 @@ body {
 }
 
 .page-footer {
+    width: auto !important;
     padding-top: 6px !important;
     border-top: 0.6px solid #ddd6c8 !important;
     color: #2D2D2D !important;
