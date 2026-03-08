@@ -5,60 +5,60 @@
 /* =================================================================== */
 
 :root {
-    --color-accent-primary: #2B8C81 !important;
-    --color-accent-light: #EDF5F3 !important;
-    --color-accent-dark: #1E5F58 !important;
-    --color-accent-secondary: #E9C46A !important;
+    --color-accent-primary: #2B8C81;
+    --color-accent-light: #EDF5F3;
+    --color-accent-dark: #1E5F58;
+    --color-accent-secondary: #E9C46A;
 
-    --color-concept-bg: #EDF5F3 !important;
-    --color-concept-border: #2B8C81 !important;
-    --color-example-bg: #F8F9FA !important;
-    --color-example-border: #E9C46A !important;
-    --color-warning-bg: #FFF8E1 !important;
-    --color-warning-border: #E9C46A !important;
+    --color-concept-bg: #EDF5F3;
+    --color-concept-border: #2B8C81;
+    --color-example-bg: #F8F9FA;
+    --color-example-border: #E9C46A;
+    --color-warning-bg: #FFF8E1;
+    --color-warning-border: #E9C46A;
 
-    --font-accent: 'Noto Serif KR', serif !important;
+    --font-accent: 'Noto Serif KR', serif;
 
-    --radius-sm: 4px !important;
-    --radius-md: 6px !important;
-    --radius-lg: 8px !important;
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 8px;
 
-    --header-border-style: solid !important;
-    --header-border-color: #BDC3C7 !important;
+    --header-border-style: solid;
+    --header-border-color: #BDC3C7;
 
-    --table-header-bg: var(--color-accent-primary) !important;
-    --table-header-border: 1px solid var(--color-accent-primary) !important;
-    --table-border-style: solid !important;
+    --table-header-bg: var(--color-accent-primary);
+    --table-header-border: 1px solid var(--color-accent-primary);
+    --table-border-style: solid;
 }
 
 .page-header {
-    border-bottom: 1px solid #BDC3C7 !important;
-    color: #2C3E50 !important;
+    border-bottom: 1px solid #BDC3C7;
+    color: #2C3E50;
 }
 
 .chapter-title,
 .section-title .section-number,
 .problem-number,
 .word-title {
-    color: var(--color-accent-dark) !important;
+    color: var(--color-accent-dark);
 }
 
 .tip-box,
 .concept-box {
-    border-left: 4px solid var(--color-accent-primary) !important;
-    background-color: var(--color-concept-bg) !important;
-    border-radius: 0 var(--radius-md) var(--radius-md) 0 !important;
+    border-left: 4px solid var(--color-accent-primary);
+    background-color: var(--color-concept-bg);
+    border-radius: 0 var(--radius-md) var(--radius-md) 0;
 }
 
 .example-block,
 .word-example {
-    background-color: var(--color-example-bg) !important;
-    border-left: 3px solid var(--color-example-border) !important;
-    border-radius: var(--radius-sm) !important;
+    background-color: var(--color-example-bg);
+    border-left: 3px solid var(--color-example-border);
+    border-radius: var(--radius-sm);
 }
 
 table thead th {
-    background-color: var(--color-accent-primary) !important;
-    color: var(--color-white) !important;
+    background-color: var(--color-accent-primary);
+    color: var(--color-white);
 }
 

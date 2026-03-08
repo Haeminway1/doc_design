@@ -8,35 +8,35 @@
 
 :root {
     /* --- Accent Colors --- */
-    --color-accent-primary: #4B5358 !important;      /* 차콜 (Pantone 2025) */
-    --color-accent-light: #EAE6E1 !important;        /* 연한 베이지 */
-    --color-accent-dark: #2F3437 !important;         /* 진한 차콜 */
-    --color-accent-secondary: #A2B2A4 !important;    /* 민트그레이 (보조) */
+    --color-accent-primary: #4B5358;      /* 차콜 (Pantone 2025) */
+    --color-accent-light: #EAE6E1;        /* 연한 베이지 */
+    --color-accent-dark: #2F3437;         /* 진한 차콜 */
+    --color-accent-secondary: #A2B2A4;    /* 민트그레이 (보조) */
 
     /* --- Semantic Colors --- */
-    --color-concept-bg: #EAE6E1 !important;
-    --color-concept-border: #4B5358 !important;
-    --color-example-bg: #F4F5F0 !important;
-    --color-example-border: #A2B2A4 !important;
-    --color-warning-bg: #FEF9E7 !important;
-    --color-warning-border: #D4AF37 !important;
+    --color-concept-bg: #EAE6E1;
+    --color-concept-border: #4B5358;
+    --color-example-bg: #F4F5F0;
+    --color-example-border: #A2B2A4;
+    --color-warning-bg: #FEF9E7;
+    --color-warning-border: #D4AF37;
 
     /* --- Typography --- */
-    --font-serif-eng: 'Inter', sans-serif !important;
+    --font-serif-eng: 'Inter', sans-serif;
 
     /* --- Shape & Borders --- */
-    --radius-sm: 0px !important;
-    --radius-md: 0px !important;
-    --radius-lg: 0px !important;
+    --radius-sm: 0px;
+    --radius-md: 0px;
+    --radius-lg: 0px;
 
     /* Header Style - 점선 */
-    --header-border-style: dotted !important;
-    --header-border-color: var(--color-accent-primary) !important;
+    --header-border-style: dotted;
+    --header-border-color: var(--color-accent-primary);
 
     /* Table Style - 최소 라인 */
-    --table-header-bg: transparent !important;
-    --table-header-border: 1px solid var(--color-accent-primary) !important;
-    --table-border-style: none !important;
+    --table-header-bg: transparent;
+    --table-header-border: 1px solid var(--color-accent-primary);
+    --table-border-style: none;
 }
 
 /* --- Component Overrides --- */
@@ -45,40 +45,40 @@
 .tip-box,
 .concept-box,
 .example-box {
-    border: 1px solid var(--color-accent-primary) !important;
-    background-color: transparent !important;
-    border-radius: 0px !important;
+    border: 1px solid var(--color-accent-primary);
+    background-color: transparent;
+    border-radius: 0px;
 }
 
 /* Header - 점선 구분 */
 .page-header {
-    border-bottom: 2px dotted var(--color-accent-primary) !important;
+    border-bottom: 2px dotted var(--color-accent-primary);
 }
 
 /* Table - 최소 라인 (헤더만 테두리) */
 table {
-    border: none !important;
+    border: none;
 }
 
 table thead {
-    border-bottom: var(--table-header-border) !important;
+    border-bottom: var(--table-header-border);
 }
 
 table tbody tr {
-    border: none !important;
+    border: none;
 }
 
 table td,
 table th {
-    border: none !important;
-    border-bottom: 1px solid var(--color-border-default) !important;
+    border: none;
+    border-bottom: 1px solid var(--color-border-default);
 }
 
 /* English Text */
 .passage,
 .eng-text {
-    font-family: var(--font-eng) !important;
-    font-style: normal !important;
+    font-family: var(--font-eng);
+    font-style: normal;
 }
 
 /* Cover Background */

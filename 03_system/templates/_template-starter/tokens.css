@@ -12,55 +12,55 @@
 :root {
     /* --- Accent Colors ---
      * 템플릿의 메인 컬러를 정의합니다.
-     * !important를 반드시 사용하여 PDF 렌더링 시 강제 적용하세요.
+     * bridge-refresh.css가 최종 cascade를 처리하므로 !important는 사용하지 마세요.
      */
-    --color-accent-primary: #2563EB !important;      /* 메인 컬러 (제목, 강조, 보더) */
-    --color-accent-light: #EFF6FF !important;        /* 연한 배경색 (박스, 테이블) */
-    --color-accent-dark: #1E3A8A !important;         /* 진한 컬러 (헤더, 중요 텍스트) */
-    --color-accent-secondary: #F59E0B !important;    /* 보조 컬러 (악센트, 하이라이트) */
+    --color-accent-primary: #2563EB;      /* 메인 컬러 (제목, 강조, 보더) */
+    --color-accent-light: #EFF6FF;        /* 연한 배경색 (박스, 테이블) */
+    --color-accent-dark: #1E3A8A;         /* 진한 컬러 (헤더, 중요 텍스트) */
+    --color-accent-secondary: #F59E0B;    /* 보조 컬러 (악센트, 하이라이트) */
 
     /* --- Semantic Colors ---
      * 개념 박스, 예제 박스, 경고 박스 등에 사용되는 색상입니다.
      * 필요한 경우에만 오버라이드하세요.
      */
-    /* --color-concept-bg: #F0F9FF !important; */
-    /* --color-concept-border: #0EA5E9 !important; */
-    /* --color-example-bg: #F7FEE7 !important; */
-    /* --color-example-border: #22C55E !important; */
-    /* --color-warning-bg: #FEF3C7 !important; */
-    /* --color-warning-border: #F59E0B !important; */
+    /* --color-concept-bg: #F0F9FF; */
+    /* --color-concept-border: #0EA5E9; */
+    /* --color-example-bg: #F7FEE7; */
+    /* --color-example-border: #22C55E; */
+    /* --color-warning-bg: #FEF3C7; */
+    /* --color-warning-border: #F59E0B; */
 
     /* --- Typography ---
      * 폰트 패밀리를 변경할 경우 지정하세요.
      * 기본값: Inter, Noto Sans KR, Playfair Display
      */
-    /* --font-sans: 'Noto Sans KR', sans-serif !important; */
-    /* --font-eng: 'Inter', sans-serif !important; */
-    /* --font-accent: 'Playfair Display', serif !important; */
-    /* --font-serif: 'Noto Serif KR', serif !important; */
-    /* --font-serif-eng: 'Merriweather', serif !important; */
+    /* --font-sans: 'Noto Sans KR', sans-serif; */
+    /* --font-eng: 'Inter', sans-serif; */
+    /* --font-accent: 'Playfair Display', serif; */
+    /* --font-serif: 'Noto Serif KR', serif; */
+    /* --font-serif-eng: 'Merriweather', serif; */
 
     /* --- Shape & Borders ---
      * 모서리 라운딩 정도를 지정합니다.
      * 0px: 샤프한 모서리, 6px: 약간 라운드, 8px: 라운드
      */
-    /* --radius-sm: 4px !important; */
-    /* --radius-md: 6px !important; */
-    /* --radius-lg: 8px !important; */
+    /* --radius-sm: 4px; */
+    /* --radius-md: 6px; */
+    /* --radius-lg: 8px; */
 
     /* --- Header Style ---
      * 헤더 하단 보더 스타일을 지정합니다.
      * solid: 실선, dotted: 점선
      */
-    /* --header-border-style: solid !important; */
-    /* --header-border-color: var(--color-border-default) !important; */
+    /* --header-border-style: solid; */
+    /* --header-border-color: var(--color-border-default); */
 
     /* --- Table Style ---
      * 테이블 헤더 배경색과 보더를 지정합니다.
      */
-    /* --table-header-bg: var(--color-accent-light) !important; */
-    /* --table-header-border: 2px solid var(--color-accent-primary) !important; */
-    /* --table-border-style: solid !important; */
+    /* --table-header-bg: var(--color-accent-light); */
+    /* --table-header-border: 2px solid var(--color-accent-primary); */
+    /* --table-border-style: solid; */
 }
 
 /* --- Component Overrides ---
@@ -73,21 +73,21 @@
 .concept-box,
 .example-box,
 .warning-box {
-    border-radius: var(--radius-md) !important;
+    border-radius: var(--radius-md);
 }
 */
 
 /* 헤더 - 보더 스타일 변경 예시 */
 /*
 .page-header {
-    border-bottom: 2px solid var(--color-accent-primary) !important;
+    border-bottom: 2px solid var(--color-accent-primary);
 }
 */
 
 /* 테이블 - 짝수행 배경 적용 예시 */
 /*
 table tbody tr:nth-child(even) {
-    background-color: var(--color-bg-subtle) !important;
+    background-color: var(--color-bg-subtle);
 }
 */
 

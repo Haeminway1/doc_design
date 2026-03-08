@@ -8,35 +8,35 @@
 
 :root {
     /* --- Accent Colors --- */
-    --color-accent-primary: #0284C7 !important;      /* 스카이600 (메인) */
-    --color-accent-light: #F0F9FF !important;        /* 스카이50 */
-    --color-accent-dark: #0369A1 !important;         /* 스카이700 */
-    --color-accent-secondary: #FBBF24 !important;    /* 앰버 (보조) */
+    --color-accent-primary: #0284C7;      /* 스카이600 (메인) */
+    --color-accent-light: #F0F9FF;        /* 스카이50 */
+    --color-accent-dark: #0369A1;         /* 스카이700 */
+    --color-accent-secondary: #FBBF24;    /* 앰버 (보조) */
 
     /* --- Semantic Colors --- */
-    --color-concept-bg: #F0F9FF !important;
-    --color-concept-border: #0284C7 !important;
-    --color-example-bg: #FEF3C7 !important;
-    --color-example-border: #FBBF24 !important;
-    --color-warning-bg: #FFF7ED !important;
-    --color-warning-border: #FB923C !important;
+    --color-concept-bg: #F0F9FF;
+    --color-concept-border: #0284C7;
+    --color-example-bg: #FEF3C7;
+    --color-example-border: #FBBF24;
+    --color-warning-bg: #FFF7ED;
+    --color-warning-border: #FB923C;
 
     /* --- Typography --- */
     /* Sky Academic uses Inter for all text */
 
     /* --- Shape & Borders --- */
-    --radius-sm: 4px !important;
-    --radius-md: 6px !important;
-    --radius-lg: 6px !important;
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-lg: 6px;
 
     /* Header Style - 가는 실선 */
-    --header-border-style: solid !important;
-    --header-border-color: var(--color-border-default) !important;
+    --header-border-style: solid;
+    --header-border-color: var(--color-border-default);
 
     /* Table Style */
-    --table-header-bg: var(--color-accent-light) !important;
-    --table-header-border: 2px solid var(--color-accent-primary) !important;
-    --table-border-style: solid !important;
+    --table-header-bg: var(--color-accent-light);
+    --table-header-border: 2px solid var(--color-accent-primary);
+    --table-border-style: solid;
 }
 
 /* --- Component Overrides --- */
@@ -46,21 +46,21 @@
 .concept-box,
 .example-box,
 .warning-box {
-    border-radius: var(--radius-md) !important;
+    border-radius: var(--radius-md);
 }
 
 /* Header - 가는 실선 */
 .page-header {
-    border-bottom: 1px solid var(--color-border-default) !important;
+    border-bottom: 1px solid var(--color-border-default);
 }
 
 /* Table - 상단선 + 짝수행 배경 */
 table thead {
-    border-top: var(--table-header-border) !important;
+    border-top: var(--table-header-border);
 }
 
 table tbody tr:nth-child(even) {
-    background-color: var(--color-bg-subtle) !important;
+    background-color: var(--color-bg-subtle);
 }
 
 /* Cover Background */

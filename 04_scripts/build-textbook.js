@@ -673,7 +673,26 @@ function sanitizeLegacyPalette(html) {
     .replace(/#F3E5F5/gi, '#EEF3FA')
     .replace(/#CE93D8/gi, '#7B9CC5')
     .replace(/#7B1FA2/gi, '#1B2A4A')
-    .replace(/#9333EA/gi, '#1B2A4A');
+    .replace(/#9333EA/gi, '#1B2A4A')
+    // Strip linear-gradient to first solid color
+    .replace(/linear-gradient\([^)]*,\s*(#[0-9a-fA-F]{3,8})\s*\)/gi, '$1')
+    // Strip remaining linear-gradient patterns
+    .replace(/linear-gradient\([^)]*\)/gi, '#1B2A4A')
+    // Strip box-shadow inline
+    .replace(/box-shadow\s*:\s*[^;"]+/gi, 'box-shadow: none')
+    // Strip rgba to solid
+    .replace(/rgba\(\s*(\d+)\s*,\s*(\d+)\s*,\s*(\d+)\s*,\s*[\d.]+\s*\)/gi, (_, r, g, b) => {
+      const hex = '#' + [r, g, b].map(v => Number(v).toString(16).padStart(2, '0')).join('');
+      return hex;
+    })
+    // Large border-radius (cosmetic cards) -> subtle
+    .replace(/border-radius\s*:\s*1[2-9]px/gi, 'border-radius: 6px')
+    .replace(/border-radius\s*:\s*[2-9]\dpx/gi, 'border-radius: 6px')
+    // Strip !important from :root variable declarations so bridge-refresh wins
+    .replace(/(--color-[a-z-]+:\s*[^;]+?)\s*!important/gi, '$1')
+    .replace(/(--radius-[a-z-]+:\s*[^;]+?)\s*!important/gi, '$1')
+    .replace(/(--table-[a-z-]+:\s*[^;]+?)\s*!important/gi, '$1')
+    .replace(/(--header-[a-z-]+:\s*[^;]+?)\s*!important/gi, '$1');
 }
 
 function extractLegacyPagePayload(html) {
