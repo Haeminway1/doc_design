@@ -1,55 +1,104 @@
-# grammar-bridge-ch03 — 문법 Bridge 준동사
+version: 2
 book:
-  title: "문법 Bridge - 준동사"
-  author: "Vera's Flavor"
-  style: grammar-bridge-part1
-  series: grammar-bridge
-  part: 3
-
+  id: grammar-bridge-ch03
+  title: 문법 Bridge - 준동사
+  shortTitle: 문법 Bridge
+  author: Vera's Flavor
+  brand: Vera's Flavor
+  legacyStyle: grammar-bridge-part1
+  subject: grammar
+  level: bridge
+  theme: sky-academic
 pages:
-  - type: content
-    src: grammar/bridge/ch03-content-01.html
-  - type: content
-    src: grammar/bridge/ch03-content-02.html
-  - type: content
-    src: grammar/bridge/ch03-content-03.html
-  - type: content
-    src: grammar/bridge/ch03-content-04.html
-  - type: content
-    src: grammar/bridge/ch03-content-05.html
-  - type: content
-    src: grammar/bridge/ch03-content-06.html
-  - type: content
-    src: grammar/bridge/ch03-content-07.html
-  - type: content
-    src: grammar/bridge/ch03-content-08.html
-  - type: content
-    src: grammar/bridge/ch03-content-09.html
-  - type: content
-    src: grammar/bridge/ch03-content-10.html
-  - type: content
-    src: grammar/bridge/ch03-content-11.html
-  - type: content
-    src: grammar/bridge/ch03-content-12.html
-  - type: content
-    src: grammar/bridge/ch03-content-13.html
-  - type: content
-    src: grammar/bridge/ch03-content-14.html
-  - type: content
-    src: grammar/bridge/ch03-content-15.html
-  - type: content
-    src: grammar/bridge/ch03-content-16.html
-  - type: content
-    src: grammar/bridge/ch03-content-17.html
-  - type: content
-    src: grammar/bridge/ch03-content-18.html
-  - type: content
-    src: grammar/bridge/ch03-content-19.html
-  - type: problems
-    src: grammar/bridge/ch03-problems.json
-    layout: two-per-page
-  - type: answer-grid
-    src: grammar/bridge/ch03-problems.json
-  - type: explanations
-    src: grammar/bridge/ch03-problems.json
+  - kind: cover
+    id: auto-cover
+  - kind: legacy-page
+    id: content-1-ch03-content-01
+    source:
+      path: grammar/bridge/ch03-content-01.html
+  - kind: legacy-page
+    id: content-2-ch03-content-02
+    source:
+      path: grammar/bridge/ch03-content-02.html
+  - kind: legacy-page
+    id: content-3-ch03-content-03
+    source:
+      path: grammar/bridge/ch03-content-03.html
+  - kind: legacy-page
+    id: content-4-ch03-content-04
+    source:
+      path: grammar/bridge/ch03-content-04.html
+  - kind: legacy-page
+    id: content-5-ch03-content-05
+    source:
+      path: grammar/bridge/ch03-content-05.html
+  - kind: legacy-page
+    id: content-6-ch03-content-06
+    source:
+      path: grammar/bridge/ch03-content-06.html
+  - kind: legacy-page
+    id: content-7-ch03-content-07
+    source:
+      path: grammar/bridge/ch03-content-07.html
+  - kind: legacy-page
+    id: content-8-ch03-content-08
+    source:
+      path: grammar/bridge/ch03-content-08.html
+  - kind: legacy-page
+    id: content-9-ch03-content-09
+    source:
+      path: grammar/bridge/ch03-content-09.html
+  - kind: legacy-page
+    id: content-10-ch03-content-10
+    source:
+      path: grammar/bridge/ch03-content-10.html
+  - kind: legacy-page
+    id: content-11-ch03-content-11
+    source:
+      path: grammar/bridge/ch03-content-11.html
+  - kind: legacy-page
+    id: content-12-ch03-content-12
+    source:
+      path: grammar/bridge/ch03-content-12.html
+  - kind: legacy-page
+    id: content-13-ch03-content-13
+    source:
+      path: grammar/bridge/ch03-content-13.html
+  - kind: legacy-page
+    id: content-14-ch03-content-14
+    source:
+      path: grammar/bridge/ch03-content-14.html
+  - kind: legacy-page
+    id: content-15-ch03-content-15
+    source:
+      path: grammar/bridge/ch03-content-15.html
+  - kind: legacy-page
+    id: content-16-ch03-content-16
+    source:
+      path: grammar/bridge/ch03-content-16.html
+  - kind: legacy-page
+    id: content-17-ch03-content-17
+    source:
+      path: grammar/bridge/ch03-content-17.html
+  - kind: legacy-page
+    id: content-18-ch03-content-18
+    source:
+      path: grammar/bridge/ch03-content-18.html
+  - kind: legacy-page
+    id: content-19-ch03-content-19
+    source:
+      path: grammar/bridge/ch03-content-19.html
+  - kind: problem-set
+    id: problems-20-ch03-problems
     layout: compact
+    source:
+      path: grammar/bridge/ch03-problems.json
+  - kind: answer-grid
+    id: answers-21-ch03-problems
+    source:
+      path: grammar/bridge/ch03-problems.json
+  - kind: explanations
+    id: explanations-22-ch03-problems
+    layout: compact
+    source:
+      path: grammar/bridge/ch03-problems.json

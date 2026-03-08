@@ -1,29 +1,52 @@
-# grammar-bridge-ch02 — 문법 Bridge 가정법 (Conditional Mood)
+version: 2
 book:
-  title: "문법 Bridge - 가정법 (Conditional Mood)"
-  author: "Vera's Flavor"
-  style: grammar-bridge-part1
-  series: grammar-bridge
-  part: 2
-
+  id: grammar-bridge-ch02
+  title: 문법 Bridge - 가정법 (Conditional Mood)
+  shortTitle: 문법 Bridge
+  author: Vera's Flavor
+  brand: Vera's Flavor
+  legacyStyle: grammar-bridge-part1
+  subject: grammar
+  level: bridge
+  theme: sky-academic
 pages:
-  - type: content
-    src: grammar/bridge/ch02-content-01.html
-  - type: content
-    src: grammar/bridge/ch02-content-02.html
-  - type: content
-    src: grammar/bridge/ch02-content-03.html
-  - type: content
-    src: grammar/bridge/ch02-content-04.html
-  - type: content
-    src: grammar/bridge/ch02-content-05.html
-  - type: content
-    src: grammar/bridge/ch02-content-06.html
-  - type: problems
-    src: grammar/bridge/ch02-problems.json
-    layout: two-per-page
-  - type: answer-grid
-    src: grammar/bridge/ch02-problems.json
-  - type: explanations
-    src: grammar/bridge/ch02-problems.json
+  - kind: cover
+    id: auto-cover
+  - kind: legacy-page
+    id: content-1-ch02-content-01
+    source:
+      path: grammar/bridge/ch02-content-01.html
+  - kind: legacy-page
+    id: content-2-ch02-content-02
+    source:
+      path: grammar/bridge/ch02-content-02.html
+  - kind: legacy-page
+    id: content-3-ch02-content-03
+    source:
+      path: grammar/bridge/ch02-content-03.html
+  - kind: legacy-page
+    id: content-4-ch02-content-04
+    source:
+      path: grammar/bridge/ch02-content-04.html
+  - kind: legacy-page
+    id: content-5-ch02-content-05
+    source:
+      path: grammar/bridge/ch02-content-05.html
+  - kind: legacy-page
+    id: content-6-ch02-content-06
+    source:
+      path: grammar/bridge/ch02-content-06.html
+  - kind: problem-set
+    id: problems-7-ch02-problems
     layout: compact
+    source:
+      path: grammar/bridge/ch02-problems.json
+  - kind: answer-grid
+    id: answers-8-ch02-problems
+    source:
+      path: grammar/bridge/ch02-problems.json
+  - kind: explanations
+    id: explanations-9-ch02-problems
+    layout: compact
+    source:
+      path: grammar/bridge/ch02-problems.json

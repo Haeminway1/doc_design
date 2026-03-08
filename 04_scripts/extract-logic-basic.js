@@ -14,9 +14,9 @@ const ROOT = path.resolve(__dirname, '..');
 const SOURCE = path.join(ROOT, '02_textbooks', 'source', '[편입영어]논리_basic.html');
 const DATA_DIR = path.join(ROOT, '02_textbooks', 'data', 'logic', 'basic');
 const CONTENT_DIR = path.join(ROOT, '02_textbooks', 'content', 'logic', 'basic');
-const BOOKS_DIR = path.join(ROOT, '02_textbooks', 'books');
+const LEGACY_BOOKS_DIR = path.join(ROOT, '02_textbooks', 'books_legacy');
 
-[DATA_DIR, CONTENT_DIR, BOOKS_DIR].forEach(d => fs.mkdirSync(d, { recursive: true }));
+[DATA_DIR, CONTENT_DIR, LEGACY_BOOKS_DIR].forEach(d => fs.mkdirSync(d, { recursive: true }));
 
 const CIRCLED = { '①': 1, '②': 2, '③': 3, '④': 4, '⑤': 5 };
 
@@ -52,90 +52,90 @@ for (const ch of chapters) {
 }
 console.log(`  📋 Chapters found: ${uniqueChapters.length}`);
 
-// --- 2. Extract problems ---
+// --- 2. Extract problems and answers with chapter scope ---
 const problems = [];
+const problemIndex = new Map();
+let currentChapterForProblems = 1;
 
-$('div.problem').each((i, el) => {
-  const $el = $(el);
+$('div.page').each((i, pageEl) => {
+  const $page = $(pageEl);
 
-  // Get problem number
-  const numText = $el.find('.problem-number').text().trim();
-  const numMatch = numText.match(/(\d+)/);
-  if (!numMatch) return;
-  const number = parseInt(numMatch[1]);
+  const chHeader = $page.find('.chapter-header .chapter-number').text().trim();
+  const chMatch = chHeader.match(/(\d+)/);
+  if (chMatch) currentChapterForProblems = parseInt(chMatch[1], 10);
 
-  // Get problem text (English passage)
-  const stemEl = $el.find('.problem-text');
-  let stem = '';
-  if (stemEl.length > 0) {
-    stem = stemEl.html()
-      .replace(/\s+/g, ' ')
-      .trim();
-  }
+  $page.find('div.problem').each((j, el) => {
+    const $el = $(el);
 
-  // Get instruction
-  const instructionEl = $el.find('.problem-instruction, .problem-question');
-  let instruction = instructionEl.text().trim() || '';
+    const numText = $el.find('.problem-number').text().trim();
+    const numMatch = numText.match(/(\d+)/);
+    if (!numMatch) return;
+    const number = parseInt(numMatch[1], 10);
 
-  // Get choices
-  const choices = [];
-  $el.find('.problem-choices li, .choices li').each((j, li) => {
-    let text = $(li).text().trim();
-    text = text.replace(/^[①②③④⑤]\s*/, '');
-    choices.push(text);
+    let stem = '';
+    const stemEl = $el.find('.problem-text');
+    if (stemEl.length > 0) {
+      stem = stemEl.html()
+        .replace(/\s+/g, ' ')
+        .trim();
+    }
+
+    const instructionEl = $el.find('.problem-instruction, .problem-question');
+    const instruction = instructionEl.text().trim() || '';
+
+    const choices = [];
+    $el.find('.problem-choices li, .choices li').each((k, li) => {
+      let text = $(li).text().trim();
+      text = text.replace(/^[①②③④⑤]\s*/, '');
+      choices.push(text);
+    });
+
+    let type = 'reading-comprehension';
+    if (instruction.includes('빈칸') || instruction.includes('blank')) {
+      type = 'fill-in-blank';
+    } else if (instruction.includes('제목') || instruction.includes('title')) {
+      type = 'title-selection';
+    } else if (instruction.includes('요지') || instruction.includes('주제') || instruction.includes('main idea')) {
+      type = 'main-idea';
+    } else if (instruction.includes('순서') || instruction.includes('order')) {
+      type = 'sentence-ordering';
+    } else if (instruction.includes('삽입') || instruction.includes('insert')) {
+      type = 'sentence-insertion';
+    }
+
+    const chapterKey = `ch${String(currentChapterForProblems).padStart(2, '0')}`;
+    const problem = {
+      id: `logic-basic-${chapterKey}-${number}`,
+      chapter: chapterKey,
+      number,
+      type,
+      stem,
+    };
+    if (instruction) problem.instruction = instruction;
+    if (choices.length > 0) problem.choices = choices;
+
+    problems.push(problem);
+    problemIndex.set(`${chapterKey}:${number}`, problem);
   });
 
-  // Determine type based on instruction
-  let type = 'reading-comprehension';
-  if (instruction.includes('빈칸') || instruction.includes('blank')) {
-    type = 'fill-in-blank';
-  } else if (instruction.includes('제목') || instruction.includes('title')) {
-    type = 'title-selection';
-  } else if (instruction.includes('요지') || instruction.includes('주제') || instruction.includes('main idea')) {
-    type = 'main-idea';
-  } else if (instruction.includes('순서') || instruction.includes('order')) {
-    type = 'sentence-ordering';
-  } else if (instruction.includes('삽입') || instruction.includes('insert')) {
-    type = 'sentence-insertion';
-  }
-
-  const problem = {
-    id: `logic-basic-${number}`,
-    number,
-    type,
-    stem,
-  };
-  if (instruction) problem.instruction = instruction;
-  if (choices.length > 0) problem.choices = choices;
-
-  problems.push(problem);
+  $page.find('div.answer-block').each((j, el) => {
+    const $el = $(el);
+    const ansNumText = $el.find('.ans-num').first().text().trim();
+    const numMatch = ansNumText.match(/(\d+)/);
+    if (!numMatch) return;
+    const number = parseInt(numMatch[1], 10);
+    const ansMatch = ansNumText.match(/정답\s*([①②③④⑤])/);
+    const answer = ansMatch ? CIRCLED[ansMatch[1]] : '';
+    const explanation = $el.find('.ans-explanation, .ans-text').text().trim() || '';
+    const chapterKey = `ch${String(currentChapterForProblems).padStart(2, '0')}`;
+    const prob = problemIndex.get(`${chapterKey}:${number}`);
+    if (!prob) return;
+    if (answer !== '') prob.answer = answer;
+    if (explanation) prob.explanation = explanation;
+  });
 });
 
 console.log(`  📝 Problems: ${problems.length}`);
-
-// --- 3. Extract answers ---
-$('div.answer-block').each((i, el) => {
-  const $el = $(el);
-  const ansNumText = $el.find('.ans-num').text().trim();
-  const numMatch = ansNumText.match(/(\d+)/);
-  if (!numMatch) return;
-  const number = parseInt(numMatch[1]);
-
-  // Parse answer number (e.g., "001. 정답 ②")
-  const ansMatch = ansNumText.match(/정답\s*([①②③④⑤])/);
-  const answer = ansMatch ? CIRCLED[ansMatch[1]] : '';
-
-  // Get explanation
-  const explEl = $el.find('.ans-explanation, .ans-text');
-  const explanation = explEl.text().trim() || '';
-
-  const prob = problems.find(p => p.number === number);
-  if (prob) {
-    prob.answer = answer;
-    if (explanation) prob.explanation = explanation;
-  }
-});
-
 console.log(`  ✅ Answers merged`);
 
 // --- 4. Extract vocabulary sections ---
@@ -208,55 +208,17 @@ $('div.page').each((i, el) => {
   });
 });
 
-// --- 6. Extract content pages (non-problem, non-answer, non-vocab-only) ---
-const contentPages = [];
-currentChapter = 1;
-
-$('div.page').each((i, el) => {
-  const $el = $(el);
-
-  // Track chapter
-  const chHeader = $el.find('.chapter-header .chapter-number').text().trim();
-  const chMatch = chHeader.match(/(\d+)/);
-  if (chMatch) currentChapter = parseInt(chMatch[1]);
-
-  // Skip special pages
-  if ($el.hasClass('cover-page')) return;
-  if ($el.hasClass('answer-section')) return;
-  if ($el.find('.toc-main-title').length > 0) return;
-  if ($el.find('.cover-content').length > 0) return;
-
-  // Check for content markers (section titles, note boxes, etc.)
-  const $content = $el.find('.page-content');
-  if ($content.length === 0) return;
-
-  const hasSection = $content.find('.section-title, .note-box, .chapter-header').length > 0;
-  const hasVocabOnly = $content.find('.vocabulary-section').length > 0 && !hasSection;
-  const hasProblems = $content.find('.problem').length > 0;
-
-  // We want pages that have content explanations (sections, notes, etc.)
-  // but not pure problem pages or pure vocab pages
-  if (hasSection && !hasProblems) {
-    contentPages.push({
-      chapter: currentChapter,
-      html: $content.html().trim(),
-    });
-  }
-});
-
-console.log(`  📄 Content pages: ${contentPages.length}`);
-
-// --- 7. Write output files ---
+// --- 6. Write output files ---
 
 // Per-chapter problem JSON
 for (const ch of uniqueChapters) {
-  const nums = chapterProblems[ch.number] || [];
-  const chProbs = problems.filter(p => nums.includes(p.number));
+  const chapterKey = `ch${String(ch.number).padStart(2, '0')}`;
+  const chProbs = problems.filter(p => p.chapter === chapterKey);
   if (chProbs.length === 0) continue;
 
   const data = {
-    bookId: `logic-basic-ch${String(ch.number).padStart(2, '0')}`,
-    chapter: `ch${String(ch.number).padStart(2, '0')}`,
+    bookId: `logic-basic-${chapterKey}`,
+    chapter: chapterKey,
     title: ch.title,
     problems: chProbs,
   };
@@ -276,42 +238,33 @@ if (vocabulary.length > 0) {
   console.log(`  💾 Vocabulary JSON written`);
 }
 
-// Content HTML
-const chapterContentMap = {};
-for (const cp of contentPages) {
-  if (!chapterContentMap[cp.chapter]) chapterContentMap[cp.chapter] = [];
-  chapterContentMap[cp.chapter].push(cp.html);
-}
-
-for (const [chNum, pages] of Object.entries(chapterContentMap)) {
-  for (let i = 0; i < pages.length; i++) {
-    const outPath = path.join(CONTENT_DIR, `ch${String(chNum).padStart(2, '0')}-content-${String(i + 1).padStart(2, '0')}.html`);
-    fs.writeFileSync(outPath, pages[i], 'utf8');
-  }
-}
-console.log(`  💾 Content HTML files written`);
-
-// YAML manifest
+// Preserve full source pages for rendering. logic-basic has mixed pages where
+// unit explanations, vocabulary, and problems coexist, so source-page
+// preservation is the only lossless extraction mode for this book.
 const yamlPages = [];
-for (const ch of uniqueChapters) {
-  const chId = `ch${String(ch.number).padStart(2, '0')}`;
-  const contentCount = (chapterContentMap[ch.number] || []).length;
+let tocCount = 0;
+$('div.page').each((i, el) => {
+  const $page = $(el);
+  const pageIndex = String(i + 1).padStart(3, '0');
+  const isCover = $page.hasClass('cover-page') || $page.find('.cover-content').length > 0;
+  const isToc = $page.find('.toc-main-title, .toc-header').length > 0;
+  let fileName = `page-${pageIndex}.html`;
+  let type = 'content';
 
-  for (let i = 1; i <= contentCount; i++) {
-    yamlPages.push(`  - type: content\n    src: logic/basic/${chId}-content-${String(i).padStart(2, '0')}.html`);
+  if (isCover) {
+    fileName = 'cover.html';
+    type = 'structural';
+  } else if (isToc) {
+    tocCount += 1;
+    fileName = tocCount === 1 ? 'toc.html' : `toc-${String(tocCount).padStart(2, '0')}.html`;
+    type = 'structural';
   }
 
-  const chNums = chapterProblems[ch.number] || [];
-  if (chNums.length > 0) {
-    yamlPages.push(`  - type: problems\n    src: logic/basic/${chId}-problems.json\n    layout: two-per-page`);
-  }
-}
+  fs.writeFileSync(path.join(CONTENT_DIR, fileName), $.html($page), 'utf8');
+  yamlPages.push(`  - type: ${type}\n    src: logic/basic/${fileName}`);
+});
 
-if (vocabulary.length > 0) {
-  yamlPages.push(`  - type: vocabulary\n    src: logic/basic/vocabulary.json`);
-}
-
-yamlPages.push(`  - type: answer-grid\n    src: logic/basic/ch01-problems.json`);
+console.log(`  💾 Full-page HTML files written`);
 
 const yaml = `# logic-basic — 논리 Basic
 book:
@@ -324,6 +277,6 @@ pages:
 ${yamlPages.join('\n')}
 `;
 
-fs.writeFileSync(path.join(BOOKS_DIR, 'logic-basic.yaml'), yaml, 'utf8');
-console.log(`  💾 Manifest written`);
+fs.writeFileSync(path.join(LEGACY_BOOKS_DIR, 'logic-basic.yaml'), yaml, 'utf8');
+console.log(`  💾 Legacy manifest written`);
 console.log('  ✅ Done: 논리 Basic');

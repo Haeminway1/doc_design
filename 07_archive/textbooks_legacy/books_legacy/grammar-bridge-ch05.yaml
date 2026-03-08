@@ -1,0 +1,55 @@
+# grammar-bridge-ch05 — 문법 Bridge 접속사
+book:
+  title: "문법 Bridge - 접속사"
+  author: "Vera's Flavor"
+  template: ocean-blue
+  series: grammar-bridge
+  part: 5
+
+pages:
+  - type: content
+    src: grammar/bridge/ch05-content-01.html
+  - type: content
+    src: grammar/bridge/ch05-content-02.html
+  - type: content
+    src: grammar/bridge/ch05-content-03.html
+  - type: content
+    src: grammar/bridge/ch05-content-04.html
+  - type: content
+    src: grammar/bridge/ch05-content-05.html
+  - type: content
+    src: grammar/bridge/ch05-content-06.html
+  - type: content
+    src: grammar/bridge/ch05-content-07.html
+  - type: content
+    src: grammar/bridge/ch05-content-08.html
+  - type: content
+    src: grammar/bridge/ch05-content-09.html
+  - type: content
+    src: grammar/bridge/ch05-content-10.html
+  - type: content
+    src: grammar/bridge/ch05-content-11.html
+  - type: content
+    src: grammar/bridge/ch05-content-12.html
+  - type: content
+    src: grammar/bridge/ch05-content-13.html
+  - type: content
+    src: grammar/bridge/ch05-content-14.html
+  - type: content
+    src: grammar/bridge/ch05-content-15.html
+  - type: content
+    src: grammar/bridge/ch05-content-16.html
+  - type: content
+    src: grammar/bridge/ch05-content-17.html
+  - type: content
+    src: grammar/bridge/ch05-content-18.html
+  - type: content
+    src: grammar/bridge/ch05-content-19.html
+  - type: problems
+    src: grammar/bridge/ch05-problems.json
+    layout: two-per-page
+  - type: answer-grid
+    src: grammar/bridge/ch05-problems.json
+  - type: explanations
+    src: grammar/bridge/ch05-problems.json
+    layout: compact

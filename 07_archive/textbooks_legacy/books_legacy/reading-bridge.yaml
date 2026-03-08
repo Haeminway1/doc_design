@@ -1,0 +1,20 @@
+# reading-bridge — 편입영어 독해 Bridge 편
+book:
+  title: "편입영어 독해 Bridge 편"
+  author: "Vera's Flavor"
+  template: earth-tone
+  series: reading-bridge
+
+pages:
+  - type: passages
+    src: reading/bridge/part01-passages.json
+  - type: passages
+    src: reading/bridge/part02-passages.json
+  - type: passages
+    src: reading/bridge/part03-passages.json
+  - type: passages
+    src: reading/bridge/part04-passages.json
+  - type: passages
+    src: reading/bridge/part05-passages.json
+  - type: passages
+    src: reading/bridge/part06-passages.json

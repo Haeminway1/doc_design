@@ -9,9 +9,9 @@ const cheerio = require('cheerio');
 const ROOT = path.resolve(__dirname, '..');
 const SOURCE = path.join(ROOT, '02_textbooks', 'source', '[편입영어]보카_basic(1-70).html');
 const DATA_DIR = path.join(ROOT, '02_textbooks', 'data', 'vocab', 'basic');
-const BOOKS_DIR = path.join(ROOT, '02_textbooks', 'books');
+const LEGACY_BOOKS_DIR = path.join(ROOT, '02_textbooks', 'books_legacy');
 
-[DATA_DIR, BOOKS_DIR].forEach(d => fs.mkdirSync(d, { recursive: true }));
+[DATA_DIR, LEGACY_BOOKS_DIR].forEach(d => fs.mkdirSync(d, { recursive: true }));
 
 console.log('📘 Extracting: 보카 Basic');
 
@@ -115,6 +115,6 @@ pages:
 ${yamlPages.join('\n')}
 `;
 
-fs.writeFileSync(path.join(BOOKS_DIR, 'vocab-basic.yaml'), yaml, 'utf8');
-console.log(`  💾 Manifest written`);
+fs.writeFileSync(path.join(LEGACY_BOOKS_DIR, 'vocab-basic.yaml'), yaml, 'utf8');
+console.log(`  💾 Legacy manifest written`);
 console.log('  ✅ Done: 보카 Basic');

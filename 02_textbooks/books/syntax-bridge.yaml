@@ -1,750 +1,1484 @@
-# syntax-bridge — 구문독해 Bridge
+version: 2
 book:
-  title: "편입영어 구문독해 Bridge 편"
-  author: "Vera's Flavor"
-  style: syntax-bridge
-  series: syntax-bridge
-
+  id: syntax-bridge
+  title: 편입영어 구문독해 Bridge 편
+  shortTitle: 구문독해 Bridge
+  author: Vera's Flavor
+  brand: Vera's Flavor
+  legacyStyle: syntax-bridge
+  subject: syntax
+  level: bridge
+  theme: sky-academic
 pages:
-  - type: structural
-    src: syntax/bridge/cover.html
-  - type: content
-    src: syntax/bridge/unit01-content-01.html
-  - type: content
-    src: syntax/bridge/unit01-content-02.html
-  - type: content
-    src: syntax/bridge/unit01-content-03.html
-  - type: content
-    src: syntax/bridge/unit01-content-04.html
-  - type: content
-    src: syntax/bridge/unit01-content-05.html
-  - type: problems
-    src: syntax/bridge/unit01-problems.json
-    layout: two-per-page
-  - type: content
-    src: syntax/bridge/unit02-content-01.html
-  - type: content
-    src: syntax/bridge/unit02-content-02.html
-  - type: content
-    src: syntax/bridge/unit02-content-03.html
-  - type: content
-    src: syntax/bridge/unit02-content-04.html
-  - type: content
-    src: syntax/bridge/unit02-content-05.html
-  - type: content
-    src: syntax/bridge/unit02-content-06.html
-  - type: content
-    src: syntax/bridge/unit02-content-07.html
-  - type: content
-    src: syntax/bridge/unit02-content-08.html
-  - type: content
-    src: syntax/bridge/unit02-content-09.html
-  - type: content
-    src: syntax/bridge/unit02-content-10.html
-  - type: content
-    src: syntax/bridge/unit02-content-11.html
-  - type: content
-    src: syntax/bridge/unit02-content-12.html
-  - type: content
-    src: syntax/bridge/unit02-content-13.html
-  - type: content
-    src: syntax/bridge/unit02-content-14.html
-  - type: content
-    src: syntax/bridge/unit02-content-15.html
-  - type: content
-    src: syntax/bridge/unit02-content-16.html
-  - type: content
-    src: syntax/bridge/unit02-content-17.html
-  - type: content
-    src: syntax/bridge/unit02-content-18.html
-  - type: content
-    src: syntax/bridge/unit02-content-19.html
-  - type: content
-    src: syntax/bridge/unit02-content-20.html
-  - type: problems
-    src: syntax/bridge/unit02-problems.json
-    layout: two-per-page
-  - type: content
-    src: syntax/bridge/unit03-content-01.html
-  - type: content
-    src: syntax/bridge/unit03-content-02.html
-  - type: content
-    src: syntax/bridge/unit03-content-03.html
-  - type: content
-    src: syntax/bridge/unit03-content-04.html
-  - type: content
-    src: syntax/bridge/unit03-content-05.html
-  - type: content
-    src: syntax/bridge/unit03-content-06.html
-  - type: content
-    src: syntax/bridge/unit03-content-07.html
-  - type: content
-    src: syntax/bridge/unit03-content-08.html
-  - type: problems
-    src: syntax/bridge/unit03-problems.json
-    layout: two-per-page
-  - type: content
-    src: syntax/bridge/unit04-content-01.html
-  - type: content
-    src: syntax/bridge/unit04-content-02.html
-  - type: content
-    src: syntax/bridge/unit04-content-03.html
-  - type: content
-    src: syntax/bridge/unit04-content-04.html
-  - type: content
-    src: syntax/bridge/unit04-content-05.html
-  - type: content
-    src: syntax/bridge/unit04-content-06.html
-  - type: content
-    src: syntax/bridge/unit04-content-07.html
-  - type: content
-    src: syntax/bridge/unit04-content-08.html
-  - type: content
-    src: syntax/bridge/unit04-content-09.html
-  - type: content
-    src: syntax/bridge/unit04-content-10.html
-  - type: content
-    src: syntax/bridge/unit04-content-11.html
-  - type: problems
-    src: syntax/bridge/unit04-problems.json
-    layout: two-per-page
-  - type: content
-    src: syntax/bridge/unit05-content-01.html
-  - type: content
-    src: syntax/bridge/unit05-content-02.html
-  - type: content
-    src: syntax/bridge/unit05-content-03.html
-  - type: content
-    src: syntax/bridge/unit05-content-04.html
-  - type: content
-    src: syntax/bridge/unit05-content-05.html
-  - type: content
-    src: syntax/bridge/unit05-content-06.html
-  - type: content
-    src: syntax/bridge/unit05-content-07.html
-  - type: content
-    src: syntax/bridge/unit05-content-08.html
-  - type: content
-    src: syntax/bridge/unit05-content-09.html
-  - type: content
-    src: syntax/bridge/unit05-content-10.html
-  - type: content
-    src: syntax/bridge/unit05-content-11.html
-  - type: content
-    src: syntax/bridge/unit05-content-12.html
-  - type: content
-    src: syntax/bridge/unit05-content-13.html
-  - type: content
-    src: syntax/bridge/unit05-content-14.html
-  - type: problems
-    src: syntax/bridge/unit05-problems.json
-    layout: two-per-page
-  - type: content
-    src: syntax/bridge/unit06-content-01.html
-  - type: content
-    src: syntax/bridge/unit06-content-02.html
-  - type: content
-    src: syntax/bridge/unit06-content-03.html
-  - type: content
-    src: syntax/bridge/unit06-content-04.html
-  - type: content
-    src: syntax/bridge/unit06-content-05.html
-  - type: content
-    src: syntax/bridge/unit06-content-06.html
-  - type: content
-    src: syntax/bridge/unit06-content-07.html
-  - type: content
-    src: syntax/bridge/unit06-content-08.html
-  - type: content
-    src: syntax/bridge/unit06-content-09.html
-  - type: content
-    src: syntax/bridge/unit06-content-10.html
-  - type: problems
-    src: syntax/bridge/unit06-problems.json
-    layout: two-per-page
-  - type: content
-    src: syntax/bridge/unit07-content-01.html
-  - type: content
-    src: syntax/bridge/unit07-content-02.html
-  - type: content
-    src: syntax/bridge/unit07-content-03.html
-  - type: content
-    src: syntax/bridge/unit07-content-04.html
-  - type: content
-    src: syntax/bridge/unit07-content-05.html
-  - type: content
-    src: syntax/bridge/unit07-content-06.html
-  - type: content
-    src: syntax/bridge/unit07-content-07.html
-  - type: content
-    src: syntax/bridge/unit07-content-08.html
-  - type: content
-    src: syntax/bridge/unit07-content-09.html
-  - type: problems
-    src: syntax/bridge/unit07-problems.json
-    layout: two-per-page
-  - type: content
-    src: syntax/bridge/unit08-content-01.html
-  - type: content
-    src: syntax/bridge/unit08-content-02.html
-  - type: content
-    src: syntax/bridge/unit08-content-03.html
-  - type: content
-    src: syntax/bridge/unit08-content-04.html
-  - type: content
-    src: syntax/bridge/unit08-content-05.html
-  - type: content
-    src: syntax/bridge/unit08-content-06.html
-  - type: content
-    src: syntax/bridge/unit08-content-07.html
-  - type: content
-    src: syntax/bridge/unit08-content-08.html
-  - type: content
-    src: syntax/bridge/unit08-content-09.html
-  - type: content
-    src: syntax/bridge/unit08-content-10.html
-  - type: content
-    src: syntax/bridge/unit08-content-11.html
-  - type: content
-    src: syntax/bridge/unit08-content-12.html
-  - type: content
-    src: syntax/bridge/unit08-content-13.html
-  - type: content
-    src: syntax/bridge/unit08-content-14.html
-  - type: content
-    src: syntax/bridge/unit08-content-15.html
-  - type: problems
-    src: syntax/bridge/unit08-problems.json
-    layout: two-per-page
-  - type: content
-    src: syntax/bridge/unit09-content-01.html
-  - type: content
-    src: syntax/bridge/unit09-content-02.html
-  - type: content
-    src: syntax/bridge/unit09-content-03.html
-  - type: content
-    src: syntax/bridge/unit09-content-04.html
-  - type: content
-    src: syntax/bridge/unit09-content-05.html
-  - type: content
-    src: syntax/bridge/unit09-content-06.html
-  - type: problems
-    src: syntax/bridge/unit09-problems.json
-    layout: two-per-page
-  - type: content
-    src: syntax/bridge/unit10-content-01.html
-  - type: content
-    src: syntax/bridge/unit10-content-02.html
-  - type: content
-    src: syntax/bridge/unit10-content-03.html
-  - type: content
-    src: syntax/bridge/unit10-content-04.html
-  - type: content
-    src: syntax/bridge/unit10-content-05.html
-  - type: content
-    src: syntax/bridge/unit10-content-06.html
-  - type: content
-    src: syntax/bridge/unit10-content-07.html
-  - type: content
-    src: syntax/bridge/unit10-content-08.html
-  - type: content
-    src: syntax/bridge/unit10-content-09.html
-  - type: content
-    src: syntax/bridge/unit10-content-10.html
-  - type: content
-    src: syntax/bridge/unit10-content-11.html
-  - type: content
-    src: syntax/bridge/unit10-content-12.html
-  - type: content
-    src: syntax/bridge/unit10-content-13.html
-  - type: content
-    src: syntax/bridge/unit10-content-14.html
-  - type: content
-    src: syntax/bridge/unit10-content-15.html
-  - type: content
-    src: syntax/bridge/unit10-content-16.html
-  - type: content
-    src: syntax/bridge/unit10-content-17.html
-  - type: content
-    src: syntax/bridge/unit10-content-18.html
-  - type: content
-    src: syntax/bridge/unit10-content-19.html
-  - type: content
-    src: syntax/bridge/unit10-content-20.html
-  - type: content
-    src: syntax/bridge/unit10-content-21.html
-  - type: content
-    src: syntax/bridge/unit10-content-22.html
-  - type: content
-    src: syntax/bridge/unit10-content-23.html
-  - type: content
-    src: syntax/bridge/unit10-content-24.html
-  - type: content
-    src: syntax/bridge/unit10-content-25.html
-  - type: content
-    src: syntax/bridge/unit10-content-26.html
-  - type: content
-    src: syntax/bridge/unit10-content-27.html
-  - type: content
-    src: syntax/bridge/unit10-content-28.html
-  - type: content
-    src: syntax/bridge/unit10-content-29.html
-  - type: content
-    src: syntax/bridge/unit10-content-30.html
-  - type: content
-    src: syntax/bridge/unit10-content-31.html
-  - type: content
-    src: syntax/bridge/unit10-content-32.html
-  - type: content
-    src: syntax/bridge/unit10-content-33.html
-  - type: content
-    src: syntax/bridge/unit10-content-34.html
-  - type: content
-    src: syntax/bridge/unit10-content-35.html
-  - type: content
-    src: syntax/bridge/unit10-content-36.html
-  - type: content
-    src: syntax/bridge/unit10-content-37.html
-  - type: content
-    src: syntax/bridge/unit10-content-38.html
-  - type: content
-    src: syntax/bridge/unit10-content-39.html
-  - type: content
-    src: syntax/bridge/unit10-content-40.html
-  - type: content
-    src: syntax/bridge/unit10-content-41.html
-  - type: content
-    src: syntax/bridge/unit10-content-42.html
-  - type: content
-    src: syntax/bridge/unit10-content-43.html
-  - type: content
-    src: syntax/bridge/unit10-content-44.html
-  - type: content
-    src: syntax/bridge/unit10-content-45.html
-  - type: content
-    src: syntax/bridge/unit10-content-46.html
-  - type: content
-    src: syntax/bridge/unit10-content-47.html
-  - type: content
-    src: syntax/bridge/unit10-content-48.html
-  - type: content
-    src: syntax/bridge/unit10-content-49.html
-  - type: content
-    src: syntax/bridge/unit10-content-50.html
-  - type: content
-    src: syntax/bridge/unit10-content-51.html
-  - type: content
-    src: syntax/bridge/unit10-content-52.html
-  - type: content
-    src: syntax/bridge/unit10-content-53.html
-  - type: content
-    src: syntax/bridge/unit10-content-54.html
-  - type: content
-    src: syntax/bridge/unit10-content-55.html
-  - type: content
-    src: syntax/bridge/unit10-content-56.html
-  - type: content
-    src: syntax/bridge/unit10-content-57.html
-  - type: content
-    src: syntax/bridge/unit10-content-58.html
-  - type: content
-    src: syntax/bridge/unit10-content-59.html
-  - type: content
-    src: syntax/bridge/unit10-content-60.html
-  - type: content
-    src: syntax/bridge/unit10-content-61.html
-  - type: content
-    src: syntax/bridge/unit10-content-62.html
-  - type: content
-    src: syntax/bridge/unit10-content-63.html
-  - type: content
-    src: syntax/bridge/unit10-content-64.html
-  - type: content
-    src: syntax/bridge/unit10-content-65.html
-  - type: content
-    src: syntax/bridge/unit10-content-66.html
-  - type: content
-    src: syntax/bridge/unit10-content-67.html
-  - type: content
-    src: syntax/bridge/unit10-content-68.html
-  - type: content
-    src: syntax/bridge/unit10-content-69.html
-  - type: content
-    src: syntax/bridge/unit10-content-70.html
-  - type: content
-    src: syntax/bridge/unit10-content-71.html
-  - type: content
-    src: syntax/bridge/unit10-content-72.html
-  - type: content
-    src: syntax/bridge/unit10-content-73.html
-  - type: content
-    src: syntax/bridge/unit10-content-74.html
-  - type: content
-    src: syntax/bridge/unit10-content-75.html
-  - type: content
-    src: syntax/bridge/unit10-content-76.html
-  - type: content
-    src: syntax/bridge/unit10-content-77.html
-  - type: content
-    src: syntax/bridge/unit10-content-78.html
-  - type: content
-    src: syntax/bridge/unit10-content-79.html
-  - type: content
-    src: syntax/bridge/unit10-content-80.html
-  - type: content
-    src: syntax/bridge/unit10-content-81.html
-  - type: content
-    src: syntax/bridge/unit10-content-82.html
-  - type: content
-    src: syntax/bridge/unit10-content-83.html
-  - type: content
-    src: syntax/bridge/unit10-content-84.html
-  - type: content
-    src: syntax/bridge/unit10-content-85.html
-  - type: content
-    src: syntax/bridge/unit10-content-86.html
-  - type: content
-    src: syntax/bridge/unit10-content-87.html
-  - type: content
-    src: syntax/bridge/unit10-content-88.html
-  - type: content
-    src: syntax/bridge/unit10-content-89.html
-  - type: content
-    src: syntax/bridge/unit10-content-90.html
-  - type: content
-    src: syntax/bridge/unit10-content-91.html
-  - type: content
-    src: syntax/bridge/unit10-content-92.html
-  - type: content
-    src: syntax/bridge/unit10-content-93.html
-  - type: content
-    src: syntax/bridge/unit10-content-94.html
-  - type: content
-    src: syntax/bridge/unit10-content-95.html
-  - type: content
-    src: syntax/bridge/unit10-content-96.html
-  - type: content
-    src: syntax/bridge/unit10-content-97.html
-  - type: content
-    src: syntax/bridge/unit10-content-98.html
-  - type: content
-    src: syntax/bridge/unit10-content-99.html
-  - type: content
-    src: syntax/bridge/unit10-content-100.html
-  - type: content
-    src: syntax/bridge/unit10-content-101.html
-  - type: content
-    src: syntax/bridge/unit10-content-102.html
-  - type: content
-    src: syntax/bridge/unit10-content-103.html
-  - type: content
-    src: syntax/bridge/unit10-content-104.html
-  - type: content
-    src: syntax/bridge/unit10-content-105.html
-  - type: content
-    src: syntax/bridge/unit10-content-106.html
-  - type: content
-    src: syntax/bridge/unit10-content-107.html
-  - type: content
-    src: syntax/bridge/unit10-content-108.html
-  - type: content
-    src: syntax/bridge/unit10-content-109.html
-  - type: content
-    src: syntax/bridge/unit10-content-110.html
-  - type: content
-    src: syntax/bridge/unit10-content-111.html
-  - type: content
-    src: syntax/bridge/unit10-content-112.html
-  - type: content
-    src: syntax/bridge/unit10-content-113.html
-  - type: content
-    src: syntax/bridge/unit10-content-114.html
-  - type: content
-    src: syntax/bridge/unit10-content-115.html
-  - type: content
-    src: syntax/bridge/unit10-content-116.html
-  - type: content
-    src: syntax/bridge/unit10-content-117.html
-  - type: content
-    src: syntax/bridge/unit10-content-118.html
-  - type: content
-    src: syntax/bridge/unit10-content-119.html
-  - type: content
-    src: syntax/bridge/unit10-content-120.html
-  - type: content
-    src: syntax/bridge/unit10-content-121.html
-  - type: content
-    src: syntax/bridge/unit10-content-122.html
-  - type: content
-    src: syntax/bridge/unit10-content-123.html
-  - type: content
-    src: syntax/bridge/unit10-content-124.html
-  - type: content
-    src: syntax/bridge/unit10-content-125.html
-  - type: content
-    src: syntax/bridge/unit10-content-126.html
-  - type: content
-    src: syntax/bridge/unit10-content-127.html
-  - type: content
-    src: syntax/bridge/unit10-content-128.html
-  - type: content
-    src: syntax/bridge/unit10-content-129.html
-  - type: content
-    src: syntax/bridge/unit10-content-130.html
-  - type: content
-    src: syntax/bridge/unit10-content-131.html
-  - type: content
-    src: syntax/bridge/unit10-content-132.html
-  - type: content
-    src: syntax/bridge/unit10-content-133.html
-  - type: content
-    src: syntax/bridge/unit10-content-134.html
-  - type: content
-    src: syntax/bridge/unit10-content-135.html
-  - type: content
-    src: syntax/bridge/unit10-content-136.html
-  - type: content
-    src: syntax/bridge/unit10-content-137.html
-  - type: content
-    src: syntax/bridge/unit10-content-138.html
-  - type: content
-    src: syntax/bridge/unit10-content-139.html
-  - type: content
-    src: syntax/bridge/unit10-content-140.html
-  - type: content
-    src: syntax/bridge/unit10-content-141.html
-  - type: content
-    src: syntax/bridge/unit10-content-142.html
-  - type: content
-    src: syntax/bridge/unit10-content-143.html
-  - type: content
-    src: syntax/bridge/unit10-content-144.html
-  - type: content
-    src: syntax/bridge/unit10-content-145.html
-  - type: content
-    src: syntax/bridge/unit10-content-146.html
-  - type: content
-    src: syntax/bridge/unit10-content-147.html
-  - type: content
-    src: syntax/bridge/unit10-content-148.html
-  - type: content
-    src: syntax/bridge/unit10-content-149.html
-  - type: content
-    src: syntax/bridge/unit10-content-150.html
-  - type: content
-    src: syntax/bridge/unit10-content-151.html
-  - type: content
-    src: syntax/bridge/unit10-content-152.html
-  - type: content
-    src: syntax/bridge/unit10-content-153.html
-  - type: content
-    src: syntax/bridge/unit10-content-154.html
-  - type: content
-    src: syntax/bridge/unit10-content-155.html
-  - type: content
-    src: syntax/bridge/unit10-content-156.html
-  - type: content
-    src: syntax/bridge/unit10-content-157.html
-  - type: content
-    src: syntax/bridge/unit10-content-158.html
-  - type: content
-    src: syntax/bridge/unit10-content-159.html
-  - type: content
-    src: syntax/bridge/unit10-content-160.html
-  - type: content
-    src: syntax/bridge/unit10-content-161.html
-  - type: content
-    src: syntax/bridge/unit10-content-162.html
-  - type: content
-    src: syntax/bridge/unit10-content-163.html
-  - type: content
-    src: syntax/bridge/unit10-content-164.html
-  - type: content
-    src: syntax/bridge/unit10-content-165.html
-  - type: content
-    src: syntax/bridge/unit10-content-166.html
-  - type: content
-    src: syntax/bridge/unit10-content-167.html
-  - type: content
-    src: syntax/bridge/unit10-content-168.html
-  - type: content
-    src: syntax/bridge/unit10-content-169.html
-  - type: content
-    src: syntax/bridge/unit10-content-170.html
-  - type: content
-    src: syntax/bridge/unit10-content-171.html
-  - type: content
-    src: syntax/bridge/unit10-content-172.html
-  - type: content
-    src: syntax/bridge/unit10-content-173.html
-  - type: content
-    src: syntax/bridge/unit10-content-174.html
-  - type: content
-    src: syntax/bridge/unit10-content-175.html
-  - type: content
-    src: syntax/bridge/unit10-content-176.html
-  - type: content
-    src: syntax/bridge/unit10-content-177.html
-  - type: content
-    src: syntax/bridge/unit10-content-178.html
-  - type: content
-    src: syntax/bridge/unit10-content-179.html
-  - type: content
-    src: syntax/bridge/unit10-content-180.html
-  - type: content
-    src: syntax/bridge/unit10-content-181.html
-  - type: content
-    src: syntax/bridge/unit10-content-182.html
-  - type: content
-    src: syntax/bridge/unit10-content-183.html
-  - type: content
-    src: syntax/bridge/unit10-content-184.html
-  - type: content
-    src: syntax/bridge/unit10-content-185.html
-  - type: content
-    src: syntax/bridge/unit10-content-186.html
-  - type: content
-    src: syntax/bridge/unit10-content-187.html
-  - type: content
-    src: syntax/bridge/unit10-content-188.html
-  - type: content
-    src: syntax/bridge/unit10-content-189.html
-  - type: content
-    src: syntax/bridge/unit10-content-190.html
-  - type: content
-    src: syntax/bridge/unit10-content-191.html
-  - type: content
-    src: syntax/bridge/unit10-content-192.html
-  - type: content
-    src: syntax/bridge/unit10-content-193.html
-  - type: content
-    src: syntax/bridge/unit10-content-194.html
-  - type: content
-    src: syntax/bridge/unit10-content-195.html
-  - type: content
-    src: syntax/bridge/unit10-content-196.html
-  - type: content
-    src: syntax/bridge/unit10-content-197.html
-  - type: content
-    src: syntax/bridge/unit10-content-198.html
-  - type: content
-    src: syntax/bridge/unit10-content-199.html
-  - type: content
-    src: syntax/bridge/unit10-content-200.html
-  - type: content
-    src: syntax/bridge/unit10-content-201.html
-  - type: content
-    src: syntax/bridge/unit10-content-202.html
-  - type: content
-    src: syntax/bridge/unit10-content-203.html
-  - type: content
-    src: syntax/bridge/unit10-content-204.html
-  - type: content
-    src: syntax/bridge/unit10-content-205.html
-  - type: content
-    src: syntax/bridge/unit10-content-206.html
-  - type: content
-    src: syntax/bridge/unit10-content-207.html
-  - type: content
-    src: syntax/bridge/unit10-content-208.html
-  - type: content
-    src: syntax/bridge/unit10-content-209.html
-  - type: content
-    src: syntax/bridge/unit10-content-210.html
-  - type: content
-    src: syntax/bridge/unit10-content-211.html
-  - type: content
-    src: syntax/bridge/unit10-content-212.html
-  - type: content
-    src: syntax/bridge/unit10-content-213.html
-  - type: content
-    src: syntax/bridge/unit10-content-214.html
-  - type: content
-    src: syntax/bridge/unit10-content-215.html
-  - type: content
-    src: syntax/bridge/unit10-content-216.html
-  - type: content
-    src: syntax/bridge/unit10-content-217.html
-  - type: content
-    src: syntax/bridge/unit10-content-218.html
-  - type: content
-    src: syntax/bridge/unit10-content-219.html
-  - type: content
-    src: syntax/bridge/unit10-content-220.html
-  - type: content
-    src: syntax/bridge/unit10-content-221.html
-  - type: content
-    src: syntax/bridge/unit10-content-222.html
-  - type: content
-    src: syntax/bridge/unit10-content-223.html
-  - type: content
-    src: syntax/bridge/unit10-content-224.html
-  - type: content
-    src: syntax/bridge/unit10-content-225.html
-  - type: content
-    src: syntax/bridge/unit10-content-226.html
-  - type: content
-    src: syntax/bridge/unit10-content-227.html
-  - type: content
-    src: syntax/bridge/unit10-content-228.html
-  - type: content
-    src: syntax/bridge/unit10-content-229.html
-  - type: content
-    src: syntax/bridge/unit10-content-230.html
-  - type: content
-    src: syntax/bridge/unit10-content-231.html
-  - type: content
-    src: syntax/bridge/unit10-content-232.html
-  - type: content
-    src: syntax/bridge/unit10-content-233.html
-  - type: content
-    src: syntax/bridge/unit10-content-234.html
-  - type: content
-    src: syntax/bridge/unit10-content-235.html
-  - type: content
-    src: syntax/bridge/unit10-content-236.html
-  - type: content
-    src: syntax/bridge/unit10-content-237.html
-  - type: content
-    src: syntax/bridge/unit10-content-238.html
-  - type: content
-    src: syntax/bridge/unit10-content-239.html
-  - type: content
-    src: syntax/bridge/unit10-content-240.html
-  - type: content
-    src: syntax/bridge/unit10-content-241.html
-  - type: content
-    src: syntax/bridge/unit10-content-242.html
-  - type: content
-    src: syntax/bridge/unit10-content-243.html
-  - type: content
-    src: syntax/bridge/unit10-content-244.html
-  - type: content
-    src: syntax/bridge/unit10-content-245.html
-  - type: content
-    src: syntax/bridge/unit10-content-246.html
-  - type: content
-    src: syntax/bridge/unit10-content-247.html
-  - type: content
-    src: syntax/bridge/unit10-content-248.html
-  - type: content
-    src: syntax/bridge/unit10-content-249.html
-  - type: content
-    src: syntax/bridge/unit10-content-250.html
-  - type: content
-    src: syntax/bridge/unit10-content-251.html
-  - type: content
-    src: syntax/bridge/unit10-content-252.html
-  - type: content
-    src: syntax/bridge/unit10-content-253.html
-  - type: content
-    src: syntax/bridge/unit10-content-254.html
-  - type: content
-    src: syntax/bridge/unit10-content-255.html
-  - type: content
-    src: syntax/bridge/unit10-content-256.html
-  - type: content
-    src: syntax/bridge/unit10-content-257.html
-  - type: problems
-    src: syntax/bridge/unit10-problems.json
-    layout: two-per-page
+  - kind: cover
+    id: auto-cover
+  - kind: legacy-page
+    id: content-1-unit01-content-01
+    source:
+      path: syntax/bridge/unit01-content-01.html
+  - kind: legacy-page
+    id: content-2-unit01-content-02
+    source:
+      path: syntax/bridge/unit01-content-02.html
+  - kind: legacy-page
+    id: content-3-unit01-content-03
+    source:
+      path: syntax/bridge/unit01-content-03.html
+  - kind: legacy-page
+    id: content-4-unit01-content-04
+    source:
+      path: syntax/bridge/unit01-content-04.html
+  - kind: legacy-page
+    id: content-5-unit01-content-05
+    source:
+      path: syntax/bridge/unit01-content-05.html
+  - kind: problem-set
+    id: problems-6-unit01-problems
+    layout: compact
+    source:
+      path: syntax/bridge/unit01-problems.json
+  - kind: legacy-page
+    id: content-7-unit02-content-01
+    source:
+      path: syntax/bridge/unit02-content-01.html
+  - kind: legacy-page
+    id: content-8-unit02-content-02
+    source:
+      path: syntax/bridge/unit02-content-02.html
+  - kind: legacy-page
+    id: content-9-unit02-content-03
+    source:
+      path: syntax/bridge/unit02-content-03.html
+  - kind: legacy-page
+    id: content-10-unit02-content-04
+    source:
+      path: syntax/bridge/unit02-content-04.html
+  - kind: legacy-page
+    id: content-11-unit02-content-05
+    source:
+      path: syntax/bridge/unit02-content-05.html
+  - kind: legacy-page
+    id: content-12-unit02-content-06
+    source:
+      path: syntax/bridge/unit02-content-06.html
+  - kind: legacy-page
+    id: content-13-unit02-content-07
+    source:
+      path: syntax/bridge/unit02-content-07.html
+  - kind: legacy-page
+    id: content-14-unit02-content-08
+    source:
+      path: syntax/bridge/unit02-content-08.html
+  - kind: legacy-page
+    id: content-15-unit02-content-09
+    source:
+      path: syntax/bridge/unit02-content-09.html
+  - kind: legacy-page
+    id: content-16-unit02-content-10
+    source:
+      path: syntax/bridge/unit02-content-10.html
+  - kind: legacy-page
+    id: content-17-unit02-content-11
+    source:
+      path: syntax/bridge/unit02-content-11.html
+  - kind: legacy-page
+    id: content-18-unit02-content-12
+    source:
+      path: syntax/bridge/unit02-content-12.html
+  - kind: legacy-page
+    id: content-19-unit02-content-13
+    source:
+      path: syntax/bridge/unit02-content-13.html
+  - kind: legacy-page
+    id: content-20-unit02-content-14
+    source:
+      path: syntax/bridge/unit02-content-14.html
+  - kind: legacy-page
+    id: content-21-unit02-content-15
+    source:
+      path: syntax/bridge/unit02-content-15.html
+  - kind: legacy-page
+    id: content-22-unit02-content-16
+    source:
+      path: syntax/bridge/unit02-content-16.html
+  - kind: legacy-page
+    id: content-23-unit02-content-17
+    source:
+      path: syntax/bridge/unit02-content-17.html
+  - kind: legacy-page
+    id: content-24-unit02-content-18
+    source:
+      path: syntax/bridge/unit02-content-18.html
+  - kind: legacy-page
+    id: content-25-unit02-content-19
+    source:
+      path: syntax/bridge/unit02-content-19.html
+  - kind: legacy-page
+    id: content-26-unit02-content-20
+    source:
+      path: syntax/bridge/unit02-content-20.html
+  - kind: problem-set
+    id: problems-27-unit02-problems
+    layout: compact
+    source:
+      path: syntax/bridge/unit02-problems.json
+  - kind: legacy-page
+    id: content-28-unit03-content-01
+    source:
+      path: syntax/bridge/unit03-content-01.html
+  - kind: legacy-page
+    id: content-29-unit03-content-02
+    source:
+      path: syntax/bridge/unit03-content-02.html
+  - kind: legacy-page
+    id: content-30-unit03-content-03
+    source:
+      path: syntax/bridge/unit03-content-03.html
+  - kind: legacy-page
+    id: content-31-unit03-content-04
+    source:
+      path: syntax/bridge/unit03-content-04.html
+  - kind: legacy-page
+    id: content-32-unit03-content-05
+    source:
+      path: syntax/bridge/unit03-content-05.html
+  - kind: legacy-page
+    id: content-33-unit03-content-06
+    source:
+      path: syntax/bridge/unit03-content-06.html
+  - kind: legacy-page
+    id: content-34-unit03-content-07
+    source:
+      path: syntax/bridge/unit03-content-07.html
+  - kind: legacy-page
+    id: content-35-unit03-content-08
+    source:
+      path: syntax/bridge/unit03-content-08.html
+  - kind: problem-set
+    id: problems-36-unit03-problems
+    layout: compact
+    source:
+      path: syntax/bridge/unit03-problems.json
+  - kind: legacy-page
+    id: content-37-unit04-content-01
+    source:
+      path: syntax/bridge/unit04-content-01.html
+  - kind: legacy-page
+    id: content-38-unit04-content-02
+    source:
+      path: syntax/bridge/unit04-content-02.html
+  - kind: legacy-page
+    id: content-39-unit04-content-03
+    source:
+      path: syntax/bridge/unit04-content-03.html
+  - kind: legacy-page
+    id: content-40-unit04-content-04
+    source:
+      path: syntax/bridge/unit04-content-04.html
+  - kind: legacy-page
+    id: content-41-unit04-content-05
+    source:
+      path: syntax/bridge/unit04-content-05.html
+  - kind: legacy-page
+    id: content-42-unit04-content-06
+    source:
+      path: syntax/bridge/unit04-content-06.html
+  - kind: legacy-page
+    id: content-43-unit04-content-07
+    source:
+      path: syntax/bridge/unit04-content-07.html
+  - kind: legacy-page
+    id: content-44-unit04-content-08
+    source:
+      path: syntax/bridge/unit04-content-08.html
+  - kind: legacy-page
+    id: content-45-unit04-content-09
+    source:
+      path: syntax/bridge/unit04-content-09.html
+  - kind: legacy-page
+    id: content-46-unit04-content-10
+    source:
+      path: syntax/bridge/unit04-content-10.html
+  - kind: legacy-page
+    id: content-47-unit04-content-11
+    source:
+      path: syntax/bridge/unit04-content-11.html
+  - kind: problem-set
+    id: problems-48-unit04-problems
+    layout: compact
+    source:
+      path: syntax/bridge/unit04-problems.json
+  - kind: legacy-page
+    id: content-49-unit05-content-01
+    source:
+      path: syntax/bridge/unit05-content-01.html
+  - kind: legacy-page
+    id: content-50-unit05-content-02
+    source:
+      path: syntax/bridge/unit05-content-02.html
+  - kind: legacy-page
+    id: content-51-unit05-content-03
+    source:
+      path: syntax/bridge/unit05-content-03.html
+  - kind: legacy-page
+    id: content-52-unit05-content-04
+    source:
+      path: syntax/bridge/unit05-content-04.html
+  - kind: legacy-page
+    id: content-53-unit05-content-05
+    source:
+      path: syntax/bridge/unit05-content-05.html
+  - kind: legacy-page
+    id: content-54-unit05-content-06
+    source:
+      path: syntax/bridge/unit05-content-06.html
+  - kind: legacy-page
+    id: content-55-unit05-content-07
+    source:
+      path: syntax/bridge/unit05-content-07.html
+  - kind: legacy-page
+    id: content-56-unit05-content-08
+    source:
+      path: syntax/bridge/unit05-content-08.html
+  - kind: legacy-page
+    id: content-57-unit05-content-09
+    source:
+      path: syntax/bridge/unit05-content-09.html
+  - kind: legacy-page
+    id: content-58-unit05-content-10
+    source:
+      path: syntax/bridge/unit05-content-10.html
+  - kind: legacy-page
+    id: content-59-unit05-content-11
+    source:
+      path: syntax/bridge/unit05-content-11.html
+  - kind: legacy-page
+    id: content-60-unit05-content-12
+    source:
+      path: syntax/bridge/unit05-content-12.html
+  - kind: legacy-page
+    id: content-61-unit05-content-13
+    source:
+      path: syntax/bridge/unit05-content-13.html
+  - kind: legacy-page
+    id: content-62-unit05-content-14
+    source:
+      path: syntax/bridge/unit05-content-14.html
+  - kind: problem-set
+    id: problems-63-unit05-problems
+    layout: compact
+    source:
+      path: syntax/bridge/unit05-problems.json
+  - kind: legacy-page
+    id: content-64-unit06-content-01
+    source:
+      path: syntax/bridge/unit06-content-01.html
+  - kind: legacy-page
+    id: content-65-unit06-content-02
+    source:
+      path: syntax/bridge/unit06-content-02.html
+  - kind: legacy-page
+    id: content-66-unit06-content-03
+    source:
+      path: syntax/bridge/unit06-content-03.html
+  - kind: legacy-page
+    id: content-67-unit06-content-04
+    source:
+      path: syntax/bridge/unit06-content-04.html
+  - kind: legacy-page
+    id: content-68-unit06-content-05
+    source:
+      path: syntax/bridge/unit06-content-05.html
+  - kind: legacy-page
+    id: content-69-unit06-content-06
+    source:
+      path: syntax/bridge/unit06-content-06.html
+  - kind: legacy-page
+    id: content-70-unit06-content-07
+    source:
+      path: syntax/bridge/unit06-content-07.html
+  - kind: legacy-page
+    id: content-71-unit06-content-08
+    source:
+      path: syntax/bridge/unit06-content-08.html
+  - kind: legacy-page
+    id: content-72-unit06-content-09
+    source:
+      path: syntax/bridge/unit06-content-09.html
+  - kind: legacy-page
+    id: content-73-unit06-content-10
+    source:
+      path: syntax/bridge/unit06-content-10.html
+  - kind: problem-set
+    id: problems-74-unit06-problems
+    layout: compact
+    source:
+      path: syntax/bridge/unit06-problems.json
+  - kind: legacy-page
+    id: content-75-unit07-content-01
+    source:
+      path: syntax/bridge/unit07-content-01.html
+  - kind: legacy-page
+    id: content-76-unit07-content-02
+    source:
+      path: syntax/bridge/unit07-content-02.html
+  - kind: legacy-page
+    id: content-77-unit07-content-03
+    source:
+      path: syntax/bridge/unit07-content-03.html
+  - kind: legacy-page
+    id: content-78-unit07-content-04
+    source:
+      path: syntax/bridge/unit07-content-04.html
+  - kind: legacy-page
+    id: content-79-unit07-content-05
+    source:
+      path: syntax/bridge/unit07-content-05.html
+  - kind: legacy-page
+    id: content-80-unit07-content-06
+    source:
+      path: syntax/bridge/unit07-content-06.html
+  - kind: legacy-page
+    id: content-81-unit07-content-07
+    source:
+      path: syntax/bridge/unit07-content-07.html
+  - kind: legacy-page
+    id: content-82-unit07-content-08
+    source:
+      path: syntax/bridge/unit07-content-08.html
+  - kind: legacy-page
+    id: content-83-unit07-content-09
+    source:
+      path: syntax/bridge/unit07-content-09.html
+  - kind: problem-set
+    id: problems-84-unit07-problems
+    layout: compact
+    source:
+      path: syntax/bridge/unit07-problems.json
+  - kind: legacy-page
+    id: content-85-unit08-content-01
+    source:
+      path: syntax/bridge/unit08-content-01.html
+  - kind: legacy-page
+    id: content-86-unit08-content-02
+    source:
+      path: syntax/bridge/unit08-content-02.html
+  - kind: legacy-page
+    id: content-87-unit08-content-03
+    source:
+      path: syntax/bridge/unit08-content-03.html
+  - kind: legacy-page
+    id: content-88-unit08-content-04
+    source:
+      path: syntax/bridge/unit08-content-04.html
+  - kind: legacy-page
+    id: content-89-unit08-content-05
+    source:
+      path: syntax/bridge/unit08-content-05.html
+  - kind: legacy-page
+    id: content-90-unit08-content-06
+    source:
+      path: syntax/bridge/unit08-content-06.html
+  - kind: legacy-page
+    id: content-91-unit08-content-07
+    source:
+      path: syntax/bridge/unit08-content-07.html
+  - kind: legacy-page
+    id: content-92-unit08-content-08
+    source:
+      path: syntax/bridge/unit08-content-08.html
+  - kind: legacy-page
+    id: content-93-unit08-content-09
+    source:
+      path: syntax/bridge/unit08-content-09.html
+  - kind: legacy-page
+    id: content-94-unit08-content-10
+    source:
+      path: syntax/bridge/unit08-content-10.html
+  - kind: legacy-page
+    id: content-95-unit08-content-11
+    source:
+      path: syntax/bridge/unit08-content-11.html
+  - kind: legacy-page
+    id: content-96-unit08-content-12
+    source:
+      path: syntax/bridge/unit08-content-12.html
+  - kind: legacy-page
+    id: content-97-unit08-content-13
+    source:
+      path: syntax/bridge/unit08-content-13.html
+  - kind: legacy-page
+    id: content-98-unit08-content-14
+    source:
+      path: syntax/bridge/unit08-content-14.html
+  - kind: legacy-page
+    id: content-99-unit08-content-15
+    source:
+      path: syntax/bridge/unit08-content-15.html
+  - kind: problem-set
+    id: problems-100-unit08-problems
+    layout: compact
+    source:
+      path: syntax/bridge/unit08-problems.json
+  - kind: legacy-page
+    id: content-101-unit09-content-01
+    source:
+      path: syntax/bridge/unit09-content-01.html
+  - kind: legacy-page
+    id: content-102-unit09-content-02
+    source:
+      path: syntax/bridge/unit09-content-02.html
+  - kind: legacy-page
+    id: content-103-unit09-content-03
+    source:
+      path: syntax/bridge/unit09-content-03.html
+  - kind: legacy-page
+    id: content-104-unit09-content-04
+    source:
+      path: syntax/bridge/unit09-content-04.html
+  - kind: legacy-page
+    id: content-105-unit09-content-05
+    source:
+      path: syntax/bridge/unit09-content-05.html
+  - kind: legacy-page
+    id: content-106-unit09-content-06
+    source:
+      path: syntax/bridge/unit09-content-06.html
+  - kind: problem-set
+    id: problems-107-unit09-problems
+    layout: compact
+    source:
+      path: syntax/bridge/unit09-problems.json
+  - kind: legacy-page
+    id: content-108-unit10-content-01
+    source:
+      path: syntax/bridge/unit10-content-01.html
+  - kind: legacy-page
+    id: content-109-unit10-content-02
+    source:
+      path: syntax/bridge/unit10-content-02.html
+  - kind: legacy-page
+    id: content-110-unit10-content-03
+    source:
+      path: syntax/bridge/unit10-content-03.html
+  - kind: legacy-page
+    id: content-111-unit10-content-04
+    source:
+      path: syntax/bridge/unit10-content-04.html
+  - kind: legacy-page
+    id: content-112-unit10-content-05
+    source:
+      path: syntax/bridge/unit10-content-05.html
+  - kind: legacy-page
+    id: content-113-unit10-content-06
+    source:
+      path: syntax/bridge/unit10-content-06.html
+  - kind: legacy-page
+    id: content-114-unit10-content-07
+    source:
+      path: syntax/bridge/unit10-content-07.html
+  - kind: legacy-page
+    id: content-115-unit10-content-08
+    source:
+      path: syntax/bridge/unit10-content-08.html
+  - kind: legacy-page
+    id: content-116-unit10-content-09
+    source:
+      path: syntax/bridge/unit10-content-09.html
+  - kind: legacy-page
+    id: content-117-unit10-content-10
+    source:
+      path: syntax/bridge/unit10-content-10.html
+  - kind: legacy-page
+    id: content-118-unit10-content-11
+    source:
+      path: syntax/bridge/unit10-content-11.html
+  - kind: legacy-page
+    id: content-119-unit10-content-12
+    source:
+      path: syntax/bridge/unit10-content-12.html
+  - kind: legacy-page
+    id: content-120-unit10-content-13
+    source:
+      path: syntax/bridge/unit10-content-13.html
+  - kind: legacy-page
+    id: content-121-unit10-content-14
+    source:
+      path: syntax/bridge/unit10-content-14.html
+  - kind: legacy-page
+    id: content-122-unit10-content-15
+    source:
+      path: syntax/bridge/unit10-content-15.html
+  - kind: legacy-page
+    id: content-123-unit10-content-16
+    source:
+      path: syntax/bridge/unit10-content-16.html
+  - kind: legacy-page
+    id: content-124-unit10-content-17
+    source:
+      path: syntax/bridge/unit10-content-17.html
+  - kind: legacy-page
+    id: content-125-unit10-content-18
+    source:
+      path: syntax/bridge/unit10-content-18.html
+  - kind: legacy-page
+    id: content-126-unit10-content-19
+    source:
+      path: syntax/bridge/unit10-content-19.html
+  - kind: legacy-page
+    id: content-127-unit10-content-20
+    source:
+      path: syntax/bridge/unit10-content-20.html
+  - kind: legacy-page
+    id: content-128-unit10-content-21
+    source:
+      path: syntax/bridge/unit10-content-21.html
+  - kind: legacy-page
+    id: content-129-unit10-content-22
+    source:
+      path: syntax/bridge/unit10-content-22.html
+  - kind: legacy-page
+    id: content-130-unit10-content-23
+    source:
+      path: syntax/bridge/unit10-content-23.html
+  - kind: legacy-page
+    id: content-131-unit10-content-24
+    source:
+      path: syntax/bridge/unit10-content-24.html
+  - kind: legacy-page
+    id: content-132-unit10-content-25
+    source:
+      path: syntax/bridge/unit10-content-25.html
+  - kind: legacy-page
+    id: content-133-unit10-content-26
+    source:
+      path: syntax/bridge/unit10-content-26.html
+  - kind: legacy-page
+    id: content-134-unit10-content-27
+    source:
+      path: syntax/bridge/unit10-content-27.html
+  - kind: legacy-page
+    id: content-135-unit10-content-28
+    source:
+      path: syntax/bridge/unit10-content-28.html
+  - kind: legacy-page
+    id: content-136-unit10-content-29
+    source:
+      path: syntax/bridge/unit10-content-29.html
+  - kind: legacy-page
+    id: content-137-unit10-content-30
+    source:
+      path: syntax/bridge/unit10-content-30.html
+  - kind: legacy-page
+    id: content-138-unit10-content-31
+    source:
+      path: syntax/bridge/unit10-content-31.html
+  - kind: legacy-page
+    id: content-139-unit10-content-32
+    source:
+      path: syntax/bridge/unit10-content-32.html
+  - kind: legacy-page
+    id: content-140-unit10-content-33
+    source:
+      path: syntax/bridge/unit10-content-33.html
+  - kind: legacy-page
+    id: content-141-unit10-content-34
+    source:
+      path: syntax/bridge/unit10-content-34.html
+  - kind: legacy-page
+    id: content-142-unit10-content-35
+    source:
+      path: syntax/bridge/unit10-content-35.html
+  - kind: legacy-page
+    id: content-143-unit10-content-36
+    source:
+      path: syntax/bridge/unit10-content-36.html
+  - kind: legacy-page
+    id: content-144-unit10-content-37
+    source:
+      path: syntax/bridge/unit10-content-37.html
+  - kind: legacy-page
+    id: content-145-unit10-content-38
+    source:
+      path: syntax/bridge/unit10-content-38.html
+  - kind: legacy-page
+    id: content-146-unit10-content-39
+    source:
+      path: syntax/bridge/unit10-content-39.html
+  - kind: legacy-page
+    id: content-147-unit10-content-40
+    source:
+      path: syntax/bridge/unit10-content-40.html
+  - kind: legacy-page
+    id: content-148-unit10-content-41
+    source:
+      path: syntax/bridge/unit10-content-41.html
+  - kind: legacy-page
+    id: content-149-unit10-content-42
+    source:
+      path: syntax/bridge/unit10-content-42.html
+  - kind: legacy-page
+    id: content-150-unit10-content-43
+    source:
+      path: syntax/bridge/unit10-content-43.html
+  - kind: legacy-page
+    id: content-151-unit10-content-44
+    source:
+      path: syntax/bridge/unit10-content-44.html
+  - kind: legacy-page
+    id: content-152-unit10-content-45
+    source:
+      path: syntax/bridge/unit10-content-45.html
+  - kind: legacy-page
+    id: content-153-unit10-content-46
+    source:
+      path: syntax/bridge/unit10-content-46.html
+  - kind: legacy-page
+    id: content-154-unit10-content-47
+    source:
+      path: syntax/bridge/unit10-content-47.html
+  - kind: legacy-page
+    id: content-155-unit10-content-48
+    source:
+      path: syntax/bridge/unit10-content-48.html
+  - kind: legacy-page
+    id: content-156-unit10-content-49
+    source:
+      path: syntax/bridge/unit10-content-49.html
+  - kind: legacy-page
+    id: content-157-unit10-content-50
+    source:
+      path: syntax/bridge/unit10-content-50.html
+  - kind: legacy-page
+    id: content-158-unit10-content-51
+    source:
+      path: syntax/bridge/unit10-content-51.html
+  - kind: legacy-page
+    id: content-159-unit10-content-52
+    source:
+      path: syntax/bridge/unit10-content-52.html
+  - kind: legacy-page
+    id: content-160-unit10-content-53
+    source:
+      path: syntax/bridge/unit10-content-53.html
+  - kind: legacy-page
+    id: content-161-unit10-content-54
+    source:
+      path: syntax/bridge/unit10-content-54.html
+  - kind: legacy-page
+    id: content-162-unit10-content-55
+    source:
+      path: syntax/bridge/unit10-content-55.html
+  - kind: legacy-page
+    id: content-163-unit10-content-56
+    source:
+      path: syntax/bridge/unit10-content-56.html
+  - kind: legacy-page
+    id: content-164-unit10-content-57
+    source:
+      path: syntax/bridge/unit10-content-57.html
+  - kind: legacy-page
+    id: content-165-unit10-content-58
+    source:
+      path: syntax/bridge/unit10-content-58.html
+  - kind: legacy-page
+    id: content-166-unit10-content-59
+    source:
+      path: syntax/bridge/unit10-content-59.html
+  - kind: legacy-page
+    id: content-167-unit10-content-60
+    source:
+      path: syntax/bridge/unit10-content-60.html
+  - kind: legacy-page
+    id: content-168-unit10-content-61
+    source:
+      path: syntax/bridge/unit10-content-61.html
+  - kind: legacy-page
+    id: content-169-unit10-content-62
+    source:
+      path: syntax/bridge/unit10-content-62.html
+  - kind: legacy-page
+    id: content-170-unit10-content-63
+    source:
+      path: syntax/bridge/unit10-content-63.html
+  - kind: legacy-page
+    id: content-171-unit10-content-64
+    source:
+      path: syntax/bridge/unit10-content-64.html
+  - kind: legacy-page
+    id: content-172-unit10-content-65
+    source:
+      path: syntax/bridge/unit10-content-65.html
+  - kind: legacy-page
+    id: content-173-unit10-content-66
+    source:
+      path: syntax/bridge/unit10-content-66.html
+  - kind: legacy-page
+    id: content-174-unit10-content-67
+    source:
+      path: syntax/bridge/unit10-content-67.html
+  - kind: legacy-page
+    id: content-175-unit10-content-68
+    source:
+      path: syntax/bridge/unit10-content-68.html
+  - kind: legacy-page
+    id: content-176-unit10-content-69
+    source:
+      path: syntax/bridge/unit10-content-69.html
+  - kind: legacy-page
+    id: content-177-unit10-content-70
+    source:
+      path: syntax/bridge/unit10-content-70.html
+  - kind: legacy-page
+    id: content-178-unit10-content-71
+    source:
+      path: syntax/bridge/unit10-content-71.html
+  - kind: legacy-page
+    id: content-179-unit10-content-72
+    source:
+      path: syntax/bridge/unit10-content-72.html
+  - kind: legacy-page
+    id: content-180-unit10-content-73
+    source:
+      path: syntax/bridge/unit10-content-73.html
+  - kind: legacy-page
+    id: content-181-unit10-content-74
+    source:
+      path: syntax/bridge/unit10-content-74.html
+  - kind: legacy-page
+    id: content-182-unit10-content-75
+    source:
+      path: syntax/bridge/unit10-content-75.html
+  - kind: legacy-page
+    id: content-183-unit10-content-76
+    source:
+      path: syntax/bridge/unit10-content-76.html
+  - kind: legacy-page
+    id: content-184-unit10-content-77
+    source:
+      path: syntax/bridge/unit10-content-77.html
+  - kind: legacy-page
+    id: content-185-unit10-content-78
+    source:
+      path: syntax/bridge/unit10-content-78.html
+  - kind: legacy-page
+    id: content-186-unit10-content-79
+    source:
+      path: syntax/bridge/unit10-content-79.html
+  - kind: legacy-page
+    id: content-187-unit10-content-80
+    source:
+      path: syntax/bridge/unit10-content-80.html
+  - kind: legacy-page
+    id: content-188-unit10-content-81
+    source:
+      path: syntax/bridge/unit10-content-81.html
+  - kind: legacy-page
+    id: content-189-unit10-content-82
+    source:
+      path: syntax/bridge/unit10-content-82.html
+  - kind: legacy-page
+    id: content-190-unit10-content-83
+    source:
+      path: syntax/bridge/unit10-content-83.html
+  - kind: legacy-page
+    id: content-191-unit10-content-84
+    source:
+      path: syntax/bridge/unit10-content-84.html
+  - kind: legacy-page
+    id: content-192-unit10-content-85
+    source:
+      path: syntax/bridge/unit10-content-85.html
+  - kind: legacy-page
+    id: content-193-unit10-content-86
+    source:
+      path: syntax/bridge/unit10-content-86.html
+  - kind: legacy-page
+    id: content-194-unit10-content-87
+    source:
+      path: syntax/bridge/unit10-content-87.html
+  - kind: legacy-page
+    id: content-195-unit10-content-88
+    source:
+      path: syntax/bridge/unit10-content-88.html
+  - kind: legacy-page
+    id: content-196-unit10-content-89
+    source:
+      path: syntax/bridge/unit10-content-89.html
+  - kind: legacy-page
+    id: content-197-unit10-content-90
+    source:
+      path: syntax/bridge/unit10-content-90.html
+  - kind: legacy-page
+    id: content-198-unit10-content-91
+    source:
+      path: syntax/bridge/unit10-content-91.html
+  - kind: legacy-page
+    id: content-199-unit10-content-92
+    source:
+      path: syntax/bridge/unit10-content-92.html
+  - kind: legacy-page
+    id: content-200-unit10-content-93
+    source:
+      path: syntax/bridge/unit10-content-93.html
+  - kind: legacy-page
+    id: content-201-unit10-content-94
+    source:
+      path: syntax/bridge/unit10-content-94.html
+  - kind: legacy-page
+    id: content-202-unit10-content-95
+    source:
+      path: syntax/bridge/unit10-content-95.html
+  - kind: legacy-page
+    id: content-203-unit10-content-96
+    source:
+      path: syntax/bridge/unit10-content-96.html
+  - kind: legacy-page
+    id: content-204-unit10-content-97
+    source:
+      path: syntax/bridge/unit10-content-97.html
+  - kind: legacy-page
+    id: content-205-unit10-content-98
+    source:
+      path: syntax/bridge/unit10-content-98.html
+  - kind: legacy-page
+    id: content-206-unit10-content-99
+    source:
+      path: syntax/bridge/unit10-content-99.html
+  - kind: legacy-page
+    id: content-207-unit10-content-100
+    source:
+      path: syntax/bridge/unit10-content-100.html
+  - kind: legacy-page
+    id: content-208-unit10-content-101
+    source:
+      path: syntax/bridge/unit10-content-101.html
+  - kind: legacy-page
+    id: content-209-unit10-content-102
+    source:
+      path: syntax/bridge/unit10-content-102.html
+  - kind: legacy-page
+    id: content-210-unit10-content-103
+    source:
+      path: syntax/bridge/unit10-content-103.html
+  - kind: legacy-page
+    id: content-211-unit10-content-104
+    source:
+      path: syntax/bridge/unit10-content-104.html
+  - kind: legacy-page
+    id: content-212-unit10-content-105
+    source:
+      path: syntax/bridge/unit10-content-105.html
+  - kind: legacy-page
+    id: content-213-unit10-content-106
+    source:
+      path: syntax/bridge/unit10-content-106.html
+  - kind: legacy-page
+    id: content-214-unit10-content-107
+    source:
+      path: syntax/bridge/unit10-content-107.html
+  - kind: legacy-page
+    id: content-215-unit10-content-108
+    source:
+      path: syntax/bridge/unit10-content-108.html
+  - kind: legacy-page
+    id: content-216-unit10-content-109
+    source:
+      path: syntax/bridge/unit10-content-109.html
+  - kind: legacy-page
+    id: content-217-unit10-content-110
+    source:
+      path: syntax/bridge/unit10-content-110.html
+  - kind: legacy-page
+    id: content-218-unit10-content-111
+    source:
+      path: syntax/bridge/unit10-content-111.html
+  - kind: legacy-page
+    id: content-219-unit10-content-112
+    source:
+      path: syntax/bridge/unit10-content-112.html
+  - kind: legacy-page
+    id: content-220-unit10-content-113
+    source:
+      path: syntax/bridge/unit10-content-113.html
+  - kind: legacy-page
+    id: content-221-unit10-content-114
+    source:
+      path: syntax/bridge/unit10-content-114.html
+  - kind: legacy-page
+    id: content-222-unit10-content-115
+    source:
+      path: syntax/bridge/unit10-content-115.html
+  - kind: legacy-page
+    id: content-223-unit10-content-116
+    source:
+      path: syntax/bridge/unit10-content-116.html
+  - kind: legacy-page
+    id: content-224-unit10-content-117
+    source:
+      path: syntax/bridge/unit10-content-117.html
+  - kind: legacy-page
+    id: content-225-unit10-content-118
+    source:
+      path: syntax/bridge/unit10-content-118.html
+  - kind: legacy-page
+    id: content-226-unit10-content-119
+    source:
+      path: syntax/bridge/unit10-content-119.html
+  - kind: legacy-page
+    id: content-227-unit10-content-120
+    source:
+      path: syntax/bridge/unit10-content-120.html
+  - kind: legacy-page
+    id: content-228-unit10-content-121
+    source:
+      path: syntax/bridge/unit10-content-121.html
+  - kind: legacy-page
+    id: content-229-unit10-content-122
+    source:
+      path: syntax/bridge/unit10-content-122.html
+  - kind: legacy-page
+    id: content-230-unit10-content-123
+    source:
+      path: syntax/bridge/unit10-content-123.html
+  - kind: legacy-page
+    id: content-231-unit10-content-124
+    source:
+      path: syntax/bridge/unit10-content-124.html
+  - kind: legacy-page
+    id: content-232-unit10-content-125
+    source:
+      path: syntax/bridge/unit10-content-125.html
+  - kind: legacy-page
+    id: content-233-unit10-content-126
+    source:
+      path: syntax/bridge/unit10-content-126.html
+  - kind: legacy-page
+    id: content-234-unit10-content-127
+    source:
+      path: syntax/bridge/unit10-content-127.html
+  - kind: legacy-page
+    id: content-235-unit10-content-128
+    source:
+      path: syntax/bridge/unit10-content-128.html
+  - kind: legacy-page
+    id: content-236-unit10-content-129
+    source:
+      path: syntax/bridge/unit10-content-129.html
+  - kind: legacy-page
+    id: content-237-unit10-content-130
+    source:
+      path: syntax/bridge/unit10-content-130.html
+  - kind: legacy-page
+    id: content-238-unit10-content-131
+    source:
+      path: syntax/bridge/unit10-content-131.html
+  - kind: legacy-page
+    id: content-239-unit10-content-132
+    source:
+      path: syntax/bridge/unit10-content-132.html
+  - kind: legacy-page
+    id: content-240-unit10-content-133
+    source:
+      path: syntax/bridge/unit10-content-133.html
+  - kind: legacy-page
+    id: content-241-unit10-content-134
+    source:
+      path: syntax/bridge/unit10-content-134.html
+  - kind: legacy-page
+    id: content-242-unit10-content-135
+    source:
+      path: syntax/bridge/unit10-content-135.html
+  - kind: legacy-page
+    id: content-243-unit10-content-136
+    source:
+      path: syntax/bridge/unit10-content-136.html
+  - kind: legacy-page
+    id: content-244-unit10-content-137
+    source:
+      path: syntax/bridge/unit10-content-137.html
+  - kind: legacy-page
+    id: content-245-unit10-content-138
+    source:
+      path: syntax/bridge/unit10-content-138.html
+  - kind: legacy-page
+    id: content-246-unit10-content-139
+    source:
+      path: syntax/bridge/unit10-content-139.html
+  - kind: legacy-page
+    id: content-247-unit10-content-140
+    source:
+      path: syntax/bridge/unit10-content-140.html
+  - kind: legacy-page
+    id: content-248-unit10-content-141
+    source:
+      path: syntax/bridge/unit10-content-141.html
+  - kind: legacy-page
+    id: content-249-unit10-content-142
+    source:
+      path: syntax/bridge/unit10-content-142.html
+  - kind: legacy-page
+    id: content-250-unit10-content-143
+    source:
+      path: syntax/bridge/unit10-content-143.html
+  - kind: legacy-page
+    id: content-251-unit10-content-144
+    source:
+      path: syntax/bridge/unit10-content-144.html
+  - kind: legacy-page
+    id: content-252-unit10-content-145
+    source:
+      path: syntax/bridge/unit10-content-145.html
+  - kind: legacy-page
+    id: content-253-unit10-content-146
+    source:
+      path: syntax/bridge/unit10-content-146.html
+  - kind: legacy-page
+    id: content-254-unit10-content-147
+    source:
+      path: syntax/bridge/unit10-content-147.html
+  - kind: legacy-page
+    id: content-255-unit10-content-148
+    source:
+      path: syntax/bridge/unit10-content-148.html
+  - kind: legacy-page
+    id: content-256-unit10-content-149
+    source:
+      path: syntax/bridge/unit10-content-149.html
+  - kind: legacy-page
+    id: content-257-unit10-content-150
+    source:
+      path: syntax/bridge/unit10-content-150.html
+  - kind: legacy-page
+    id: content-258-unit10-content-151
+    source:
+      path: syntax/bridge/unit10-content-151.html
+  - kind: legacy-page
+    id: content-259-unit10-content-152
+    source:
+      path: syntax/bridge/unit10-content-152.html
+  - kind: legacy-page
+    id: content-260-unit10-content-153
+    source:
+      path: syntax/bridge/unit10-content-153.html
+  - kind: legacy-page
+    id: content-261-unit10-content-154
+    source:
+      path: syntax/bridge/unit10-content-154.html
+  - kind: legacy-page
+    id: content-262-unit10-content-155
+    source:
+      path: syntax/bridge/unit10-content-155.html
+  - kind: legacy-page
+    id: content-263-unit10-content-156
+    source:
+      path: syntax/bridge/unit10-content-156.html
+  - kind: legacy-page
+    id: content-264-unit10-content-157
+    source:
+      path: syntax/bridge/unit10-content-157.html
+  - kind: legacy-page
+    id: content-265-unit10-content-158
+    source:
+      path: syntax/bridge/unit10-content-158.html
+  - kind: legacy-page
+    id: content-266-unit10-content-159
+    source:
+      path: syntax/bridge/unit10-content-159.html
+  - kind: legacy-page
+    id: content-267-unit10-content-160
+    source:
+      path: syntax/bridge/unit10-content-160.html
+  - kind: legacy-page
+    id: content-268-unit10-content-161
+    source:
+      path: syntax/bridge/unit10-content-161.html
+  - kind: legacy-page
+    id: content-269-unit10-content-162
+    source:
+      path: syntax/bridge/unit10-content-162.html
+  - kind: legacy-page
+    id: content-270-unit10-content-163
+    source:
+      path: syntax/bridge/unit10-content-163.html
+  - kind: legacy-page
+    id: content-271-unit10-content-164
+    source:
+      path: syntax/bridge/unit10-content-164.html
+  - kind: legacy-page
+    id: content-272-unit10-content-165
+    source:
+      path: syntax/bridge/unit10-content-165.html
+  - kind: legacy-page
+    id: content-273-unit10-content-166
+    source:
+      path: syntax/bridge/unit10-content-166.html
+  - kind: legacy-page
+    id: content-274-unit10-content-167
+    source:
+      path: syntax/bridge/unit10-content-167.html
+  - kind: legacy-page
+    id: content-275-unit10-content-168
+    source:
+      path: syntax/bridge/unit10-content-168.html
+  - kind: legacy-page
+    id: content-276-unit10-content-169
+    source:
+      path: syntax/bridge/unit10-content-169.html
+  - kind: legacy-page
+    id: content-277-unit10-content-170
+    source:
+      path: syntax/bridge/unit10-content-170.html
+  - kind: legacy-page
+    id: content-278-unit10-content-171
+    source:
+      path: syntax/bridge/unit10-content-171.html
+  - kind: legacy-page
+    id: content-279-unit10-content-172
+    source:
+      path: syntax/bridge/unit10-content-172.html
+  - kind: legacy-page
+    id: content-280-unit10-content-173
+    source:
+      path: syntax/bridge/unit10-content-173.html
+  - kind: legacy-page
+    id: content-281-unit10-content-174
+    source:
+      path: syntax/bridge/unit10-content-174.html
+  - kind: legacy-page
+    id: content-282-unit10-content-175
+    source:
+      path: syntax/bridge/unit10-content-175.html
+  - kind: legacy-page
+    id: content-283-unit10-content-176
+    source:
+      path: syntax/bridge/unit10-content-176.html
+  - kind: legacy-page
+    id: content-284-unit10-content-177
+    source:
+      path: syntax/bridge/unit10-content-177.html
+  - kind: legacy-page
+    id: content-285-unit10-content-178
+    source:
+      path: syntax/bridge/unit10-content-178.html
+  - kind: legacy-page
+    id: content-286-unit10-content-179
+    source:
+      path: syntax/bridge/unit10-content-179.html
+  - kind: legacy-page
+    id: content-287-unit10-content-180
+    source:
+      path: syntax/bridge/unit10-content-180.html
+  - kind: legacy-page
+    id: content-288-unit10-content-181
+    source:
+      path: syntax/bridge/unit10-content-181.html
+  - kind: legacy-page
+    id: content-289-unit10-content-182
+    source:
+      path: syntax/bridge/unit10-content-182.html
+  - kind: legacy-page
+    id: content-290-unit10-content-183
+    source:
+      path: syntax/bridge/unit10-content-183.html
+  - kind: legacy-page
+    id: content-291-unit10-content-184
+    source:
+      path: syntax/bridge/unit10-content-184.html
+  - kind: legacy-page
+    id: content-292-unit10-content-185
+    source:
+      path: syntax/bridge/unit10-content-185.html
+  - kind: legacy-page
+    id: content-293-unit10-content-186
+    source:
+      path: syntax/bridge/unit10-content-186.html
+  - kind: legacy-page
+    id: content-294-unit10-content-187
+    source:
+      path: syntax/bridge/unit10-content-187.html
+  - kind: legacy-page
+    id: content-295-unit10-content-188
+    source:
+      path: syntax/bridge/unit10-content-188.html
+  - kind: legacy-page
+    id: content-296-unit10-content-189
+    source:
+      path: syntax/bridge/unit10-content-189.html
+  - kind: legacy-page
+    id: content-297-unit10-content-190
+    source:
+      path: syntax/bridge/unit10-content-190.html
+  - kind: legacy-page
+    id: content-298-unit10-content-191
+    source:
+      path: syntax/bridge/unit10-content-191.html
+  - kind: legacy-page
+    id: content-299-unit10-content-192
+    source:
+      path: syntax/bridge/unit10-content-192.html
+  - kind: legacy-page
+    id: content-300-unit10-content-193
+    source:
+      path: syntax/bridge/unit10-content-193.html
+  - kind: legacy-page
+    id: content-301-unit10-content-194
+    source:
+      path: syntax/bridge/unit10-content-194.html
+  - kind: legacy-page
+    id: content-302-unit10-content-195
+    source:
+      path: syntax/bridge/unit10-content-195.html
+  - kind: legacy-page
+    id: content-303-unit10-content-196
+    source:
+      path: syntax/bridge/unit10-content-196.html
+  - kind: legacy-page
+    id: content-304-unit10-content-197
+    source:
+      path: syntax/bridge/unit10-content-197.html
+  - kind: legacy-page
+    id: content-305-unit10-content-198
+    source:
+      path: syntax/bridge/unit10-content-198.html
+  - kind: legacy-page
+    id: content-306-unit10-content-199
+    source:
+      path: syntax/bridge/unit10-content-199.html
+  - kind: legacy-page
+    id: content-307-unit10-content-200
+    source:
+      path: syntax/bridge/unit10-content-200.html
+  - kind: legacy-page
+    id: content-308-unit10-content-201
+    source:
+      path: syntax/bridge/unit10-content-201.html
+  - kind: legacy-page
+    id: content-309-unit10-content-202
+    source:
+      path: syntax/bridge/unit10-content-202.html
+  - kind: legacy-page
+    id: content-310-unit10-content-203
+    source:
+      path: syntax/bridge/unit10-content-203.html
+  - kind: legacy-page
+    id: content-311-unit10-content-204
+    source:
+      path: syntax/bridge/unit10-content-204.html
+  - kind: legacy-page
+    id: content-312-unit10-content-205
+    source:
+      path: syntax/bridge/unit10-content-205.html
+  - kind: legacy-page
+    id: content-313-unit10-content-206
+    source:
+      path: syntax/bridge/unit10-content-206.html
+  - kind: legacy-page
+    id: content-314-unit10-content-207
+    source:
+      path: syntax/bridge/unit10-content-207.html
+  - kind: legacy-page
+    id: content-315-unit10-content-208
+    source:
+      path: syntax/bridge/unit10-content-208.html
+  - kind: legacy-page
+    id: content-316-unit10-content-209
+    source:
+      path: syntax/bridge/unit10-content-209.html
+  - kind: legacy-page
+    id: content-317-unit10-content-210
+    source:
+      path: syntax/bridge/unit10-content-210.html
+  - kind: legacy-page
+    id: content-318-unit10-content-211
+    source:
+      path: syntax/bridge/unit10-content-211.html
+  - kind: legacy-page
+    id: content-319-unit10-content-212
+    source:
+      path: syntax/bridge/unit10-content-212.html
+  - kind: legacy-page
+    id: content-320-unit10-content-213
+    source:
+      path: syntax/bridge/unit10-content-213.html
+  - kind: legacy-page
+    id: content-321-unit10-content-214
+    source:
+      path: syntax/bridge/unit10-content-214.html
+  - kind: legacy-page
+    id: content-322-unit10-content-215
+    source:
+      path: syntax/bridge/unit10-content-215.html
+  - kind: legacy-page
+    id: content-323-unit10-content-216
+    source:
+      path: syntax/bridge/unit10-content-216.html
+  - kind: legacy-page
+    id: content-324-unit10-content-217
+    source:
+      path: syntax/bridge/unit10-content-217.html
+  - kind: legacy-page
+    id: content-325-unit10-content-218
+    source:
+      path: syntax/bridge/unit10-content-218.html
+  - kind: legacy-page
+    id: content-326-unit10-content-219
+    source:
+      path: syntax/bridge/unit10-content-219.html
+  - kind: legacy-page
+    id: content-327-unit10-content-220
+    source:
+      path: syntax/bridge/unit10-content-220.html
+  - kind: legacy-page
+    id: content-328-unit10-content-221
+    source:
+      path: syntax/bridge/unit10-content-221.html
+  - kind: legacy-page
+    id: content-329-unit10-content-222
+    source:
+      path: syntax/bridge/unit10-content-222.html
+  - kind: legacy-page
+    id: content-330-unit10-content-223
+    source:
+      path: syntax/bridge/unit10-content-223.html
+  - kind: legacy-page
+    id: content-331-unit10-content-224
+    source:
+      path: syntax/bridge/unit10-content-224.html
+  - kind: legacy-page
+    id: content-332-unit10-content-225
+    source:
+      path: syntax/bridge/unit10-content-225.html
+  - kind: legacy-page
+    id: content-333-unit10-content-226
+    source:
+      path: syntax/bridge/unit10-content-226.html
+  - kind: legacy-page
+    id: content-334-unit10-content-227
+    source:
+      path: syntax/bridge/unit10-content-227.html
+  - kind: legacy-page
+    id: content-335-unit10-content-228
+    source:
+      path: syntax/bridge/unit10-content-228.html
+  - kind: legacy-page
+    id: content-336-unit10-content-229
+    source:
+      path: syntax/bridge/unit10-content-229.html
+  - kind: legacy-page
+    id: content-337-unit10-content-230
+    source:
+      path: syntax/bridge/unit10-content-230.html
+  - kind: legacy-page
+    id: content-338-unit10-content-231
+    source:
+      path: syntax/bridge/unit10-content-231.html
+  - kind: legacy-page
+    id: content-339-unit10-content-232
+    source:
+      path: syntax/bridge/unit10-content-232.html
+  - kind: legacy-page
+    id: content-340-unit10-content-233
+    source:
+      path: syntax/bridge/unit10-content-233.html
+  - kind: legacy-page
+    id: content-341-unit10-content-234
+    source:
+      path: syntax/bridge/unit10-content-234.html
+  - kind: legacy-page
+    id: content-342-unit10-content-235
+    source:
+      path: syntax/bridge/unit10-content-235.html
+  - kind: legacy-page
+    id: content-343-unit10-content-236
+    source:
+      path: syntax/bridge/unit10-content-236.html
+  - kind: legacy-page
+    id: content-344-unit10-content-237
+    source:
+      path: syntax/bridge/unit10-content-237.html
+  - kind: legacy-page
+    id: content-345-unit10-content-238
+    source:
+      path: syntax/bridge/unit10-content-238.html
+  - kind: legacy-page
+    id: content-346-unit10-content-239
+    source:
+      path: syntax/bridge/unit10-content-239.html
+  - kind: legacy-page
+    id: content-347-unit10-content-240
+    source:
+      path: syntax/bridge/unit10-content-240.html
+  - kind: legacy-page
+    id: content-348-unit10-content-241
+    source:
+      path: syntax/bridge/unit10-content-241.html
+  - kind: legacy-page
+    id: content-349-unit10-content-242
+    source:
+      path: syntax/bridge/unit10-content-242.html
+  - kind: legacy-page
+    id: content-350-unit10-content-243
+    source:
+      path: syntax/bridge/unit10-content-243.html
+  - kind: legacy-page
+    id: content-351-unit10-content-244
+    source:
+      path: syntax/bridge/unit10-content-244.html
+  - kind: legacy-page
+    id: content-352-unit10-content-245
+    source:
+      path: syntax/bridge/unit10-content-245.html
+  - kind: legacy-page
+    id: content-353-unit10-content-246
+    source:
+      path: syntax/bridge/unit10-content-246.html
+  - kind: legacy-page
+    id: content-354-unit10-content-247
+    source:
+      path: syntax/bridge/unit10-content-247.html
+  - kind: legacy-page
+    id: content-355-unit10-content-248
+    source:
+      path: syntax/bridge/unit10-content-248.html
+  - kind: legacy-page
+    id: content-356-unit10-content-249
+    source:
+      path: syntax/bridge/unit10-content-249.html
+  - kind: legacy-page
+    id: content-357-unit10-content-250
+    source:
+      path: syntax/bridge/unit10-content-250.html
+  - kind: legacy-page
+    id: content-358-unit10-content-251
+    source:
+      path: syntax/bridge/unit10-content-251.html
+  - kind: legacy-page
+    id: content-359-unit10-content-252
+    source:
+      path: syntax/bridge/unit10-content-252.html
+  - kind: legacy-page
+    id: content-360-unit10-content-253
+    source:
+      path: syntax/bridge/unit10-content-253.html
+  - kind: legacy-page
+    id: content-361-unit10-content-254
+    source:
+      path: syntax/bridge/unit10-content-254.html
+  - kind: legacy-page
+    id: content-362-unit10-content-255
+    source:
+      path: syntax/bridge/unit10-content-255.html
+  - kind: legacy-page
+    id: content-363-unit10-content-256
+    source:
+      path: syntax/bridge/unit10-content-256.html
+  - kind: legacy-page
+    id: content-364-unit10-content-257
+    source:
+      path: syntax/bridge/unit10-content-257.html
+  - kind: problem-set
+    id: problems-365-unit10-problems
+    layout: compact
+    source:
+      path: syntax/bridge/unit10-problems.json

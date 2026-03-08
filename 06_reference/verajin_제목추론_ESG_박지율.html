@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+@page {
+    size: A4;
+    margin: 22mm 18mm 20mm 18mm;
+    @bottom-center {
+        content: "— " counter(page) " —";
+        font-family: 'Noto Sans CJK KR', sans-serif;
+        font-size: 8pt;
+        color: #999;
+    }
+}
+@page :first { @bottom-center { content: none; } }
+
+body {
+    font-family: 'Noto Sans CJK KR', sans-serif;
+    font-size: 10pt;
+    line-height: 1.7;
+    color: #2D2D2D;
+}
+
+.cover {
+    page-break-after: always;
+    text-align: center;
+    padding-top: 65mm;
+}
+.cover .brand { font-family: 'Noto Serif CJK KR', serif; font-size: 36pt; font-weight: bold; color: #1B2A4A; letter-spacing: 3px; }
+.cover .gold-line { width: 120px; height: 2px; background: #C5A55A; margin: 16px auto; }
+.cover .main-title { font-size: 22pt; font-weight: bold; color: #1B2A4A; margin: 8px 0; }
+.cover .sub { font-size: 12pt; color: #888; font-weight: 300; margin: 4px 0; }
+.cover .topic { font-size: 11pt; color: #666; margin: 4px 0; line-height: 1.8; }
+.cover .edition { font-size: 11pt; font-weight: bold; color: #C5A55A; margin-top: 25px; }
+.cover .slogan { font-size: 10pt; color: #999; font-weight: 300; }
+.cover .part-label { display: inline-block; background: #1B2A4A; color: white; padding: 4px 16px; font-size: 10pt; font-weight: bold; letter-spacing: 2px; margin-bottom: 8px; }
+.cover .student-name {
+    margin-top: 35px;
+    font-size: 13pt;
+    color: #1B2A4A;
+    font-weight: bold;
+    border: 2px solid #C5A55A;
+    display: inline-block;
+    padding: 6px 24px;
+    border-radius: 4px;
+}
+
+.section-title {
+    margin-top: 5mm; padding-top: 3mm;
+    border-top: 2.5px solid #1B2A4A;
+    font-size: 15pt; font-weight: bold; color: #1B2A4A;
+    margin-bottom: 2mm; padding-bottom: 3mm;
+    border-bottom: 1px solid #C5A55A;
+}
+.subsection { font-size: 12pt; font-weight: bold; color: #2C5F8A; margin-top: 6mm; margin-bottom: 3mm; }
+.subsection::before { content: "■ "; }
+
+.eng-passage {
+    font-family: 'Noto Serif CJK KR', 'Georgia', serif;
+    font-size: 9.5pt; line-height: 1.85; color: #333;
+    margin: 3mm 4mm; padding: 5mm 6mm;
+    background: #FAFAF7; border-left: 3px solid #C5A55A;
+}
+.eng-passage .keyword {
+    background: linear-gradient(transparent 55%, #BBDEFB 55%);
+    font-weight: bold;
+}
+.eng-passage .contrast {
+    background: linear-gradient(transparent 55%, #FFCDD2 55%);
+}
+.eng-passage .term {
+    background: linear-gradient(transparent 55%, #C8E6C9 55%);
+}
+
+.body-text { font-size: 9.5pt; line-height: 1.8; margin-bottom: 3mm; text-align: justify; }
+
+.answer-banner {
+    background: #1B2A4A; color: white;
+    padding: 4mm 6mm; margin: 4mm 0;
+    font-size: 11pt; font-weight: bold;
+    text-align: center; border-radius: 4px;
+}
+.answer-banner .num { color: #C5A55A; font-size: 14pt; }
+
+.option-box {
+    margin: 2mm 0 2mm 4mm;
+    font-size: 9.5pt;
+    line-height: 1.9;
+}
+.option-box .correct {
+    color: #1565C0; font-weight: bold;
+    background: #E3F2FD; padding: 2px 6px; border-radius: 3px;
+}
+.option-box .wrong { color: #999; }
+.option-box .attractive { color: #E65100; font-weight: bold; }
+.option-box .analysis {
+    margin-left: 20px; font-size: 9pt; color: #555; margin-bottom: 2mm;
+}
+
+.logic-box {
+    background: #E8EAF6; border-left: 3px solid #283593;
+    padding: 4mm 5mm; margin: 3mm 0;
+    font-size: 9pt; color: #1A237E; line-height: 1.8;
+}
+
+.structure-box {
+    background: #FFF3E0; border-left: 3px solid #E65100;
+    padding: 4mm 5mm; margin: 3mm 0;
+    font-size: 9pt; line-height: 1.8;
+}
+
+.tip-box {
+    background: #F1F8E9; border-left: 3px solid #33691E;
+    padding: 3mm 4mm; margin: 3mm 0;
+    font-size: 9pt; color: #33691E;
+}
+.trap-box {
+    background: #FFEBEE; border-left: 3px solid #B71C1C;
+    padding: 3mm 4mm; margin: 3mm 0; font-size: 9pt;
+}
+.trap-box .label { font-weight: bold; color: #B71C1C; }
+
+.vocab-table {
+    width: 100%; border-collapse: collapse; font-size: 9pt; margin: 2mm 0 4mm 0;
+}
+.vocab-table th { background: #1B2A4A; color: white; padding: 5px 8px; font-size: 8.5pt; text-align: center; }
+.vocab-table td { padding: 4px 8px; border-bottom: 0.5px solid #ddd; vertical-align: top; }
+.vocab-table tr:nth-child(even) { background: #FAFAF7; }
+.vocab-table .word { font-weight: bold; white-space: nowrap; width: 22%; }
+.vocab-table .meaning { width: 25%; }
+.vocab-table .example { font-style: italic; color: #777; font-size: 8.5pt; width: 53%; }
+
+.bg-block { margin: 2mm 0 3mm 0; }
+.bg-block h4 { font-size: 10pt; color: #2D2D2D; margin: 4mm 0 1mm 0; }
+.bg-block p { font-size: 9.5pt; line-height: 1.75; margin: 1mm 0 2mm 0; }
+
+.compare-table {
+    width: 100%; border-collapse: collapse; font-size: 8.5pt; margin: 3mm 0;
+}
+.compare-table th { background: #1B2A4A; color: white; padding: 5px 6px; text-align: center; }
+.compare-table td { padding: 5px 6px; border: 0.5px solid #ccc; text-align: center; line-height: 1.5; }
+.compare-table tr:nth-child(even) { background: #F5F5F5; }
+
+.page-break { page-break-before: always; }
+.header-bar { text-align: center; font-size: 7.5pt; color: #C5A55A; border-bottom: 0.3px solid #C5A55A; padding-bottom: 2mm; margin-bottom: 5mm; }
+.footer-line { margin-top: 15mm; padding-top: 4mm; border-top: 0.5px solid #ccc; text-align: center; font-size: 8.5pt; color: #C5A55A; }
+
+.sentence-map {
+    background: #F3E5F5;
+    border: 1.5px solid #CE93D8;
+    padding: 4mm 5mm;
+    margin: 3mm 0;
+    font-size: 8.5pt;
+    line-height: 2;
+}
+.sentence-map .s-label {
+    display: inline-block;
+    background: #7B1FA2;
+    color: white;
+    padding: 1px 6px;
+    border-radius: 3px;
+    font-size: 7.5pt;
+    font-weight: bold;
+    margin-right: 3px;
+}
+.sentence-map .s-pos { color: #1565C0; font-weight: bold; }
+.sentence-map .s-neg { color: #B71C1C; font-weight: bold; }
+.sentence-map .s-turn { color: #E65100; font-weight: bold; }
+</style>
+</head>
+<body>
+
+<!-- ═══════ COVER ═══════ -->
+<div class="cover">
+    <div class="brand">verajin</div>
+    <div class="gold-line"></div>
+    <div class="main-title">편입영어 배경지식 특강</div>
+    <div class="sub">Background Knowledge Series</div>
+    <div style="height: 6mm;"></div>
+    <div class="part-label">제목 추론 (Title)</div>
+    <div style="height: 10mm;"></div>
+    <div class="topic">[Passage 104] ESG Investing: Promises and Practical Challenges</div>
+    <div style="height: 6mm;"></div>
+    <div class="sub" style="font-size:10pt; color:#666;">제목 추론 유형은 글 전체의 <b>핵심 주제(main topic)</b>를 포괄하는 제목을 고르는 문제입니다.<br>
+    부분적 내용만 다루는 선택지 vs. 글 전체를 아우르는 선택지를 구별하는 것이 핵심!</div>
+    <div style="height: 18mm;"></div>
+    <div class="gold-line"></div>
+    <div class="edition">2026 EDITION</div>
+    <div class="slogan">독해에 맛을 더하다</div>
+    <div class="student-name">박지율</div>
+</div>
+
+<!-- ═══════════════════════════════════ -->
+<!-- PASSAGE 104: ESG                   -->
+<!-- ═══════════════════════════════════ -->
+<div class="header-bar">verajin &nbsp;|&nbsp; Vera's Flavor 제목 추론 &nbsp;|&nbsp; 2026 EDITION</div>
+<div class="section-title">[Passage 104] ESG Investing</div>
+
+<div class="subsection">원문 지문</div>
+<div class="eng-passage">
+<span class="keyword">ESG, which stands for Environmental, Social, and Governance,</span> has become a major framework for evaluating corporate responsibility and <span class="keyword">sustainable investment</span>. In theory, companies with high ESG scores are better managed, more conscious of their long-term risks, and therefore more attractive to investors. <span class="contrast">However,</span> a growing chorus of critics raises concerns about its practical application. <span class="contrast">A primary challenge</span> is the lack of standardized metrics for measuring ESG performance, leading to inconsistent and sometimes <span class="contrast">misleading ratings</span>. This ambiguity allows for <span class="term">"greenwashing,"</span> where companies can selectively report positive data to project a sustainable image without making substantive changes to their operations. <span class="contrast">Consequently,</span> while the intention behind ESG is <span class="s-pos">commendable</span>, its real-world impact is often <span class="contrast">debated</span>, with questions remaining about whether it truly drives <span class="keyword">meaningful corporate change</span> or merely serves as a <span class="contrast">sophisticated marketing tool</span>.
+</div>
+
+<div class="subsection">지문 구조 분석 (Sentence Map)</div>
+<div class="sentence-map">
+<span class="s-label">S1</span> ESG = Environmental, Social, Governance → 기업 책임·지속가능 투자 평가 프레임워크 <span class="s-pos">[도입: ESG 소개]</span><br>
+<span class="s-label">S2</span> 이론적으로, ESG 점수 높은 기업 = 더 잘 관리됨, 투자자에게 매력적 <span class="s-pos">[긍정: 이론적 장점]</span><br>
+<span class="s-label">S3</span> <span class="s-turn">However,</span> 비평가들이 실질적 적용에 대한 우려 제기 <span class="s-neg">[전환: 문제 제기]</span><br>
+<span class="s-label">S4</span> 핵심 문제 = 표준화된 측정 기준 부재 → 불일치·오해 소지 있는 평가 <span class="s-neg">[문제점 1: 측정 기준]</span><br>
+<span class="s-label">S5</span> 이 모호성 → <b>"greenwashing"</b> 허용 (긍정적 데이터만 선별 보고) <span class="s-neg">[문제점 2: 그린워싱]</span><br>
+<span class="s-label">S6</span> <span class="s-turn">Consequently,</span> ESG 의도는 칭찬할 만하지만 → 실제 영향은 논쟁적 <span class="s-neg">[결론: 의문 제기]</span><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→ 의미 있는 변화 vs. 세련된 마케팅 도구?
+</div>
+
+<div class="subsection">지문 해석</div>
+<div class="body-text">
+ESG, 즉 환경(Environmental), 사회(Social), 지배구조(Governance)는 기업의 사회적 책임과 지속 가능한 투자를 평가하는 주요 프레임워크가 되었다. 이론적으로, ESG 점수가 높은 기업은 더 잘 관리되고, 장기적 위험에 대해 더 의식적이며, 따라서 투자자에게 더 매력적이다.
+</div>
+<div class="body-text">
+<b>그러나(However),</b> 점점 더 많은 비평가들이 ESG의 실질적 적용에 대해 우려를 제기하고 있다. <b>주요 문제점은</b> ESG 성과를 측정하기 위한 표준화된 기준(metrics)의 부재인데, 이로 인해 일관성 없고 때로는 오해의 소지가 있는 평가(ratings)가 만들어진다. 이러한 모호성(ambiguity)은 <b>"그린워싱(greenwashing)"</b>을 허용하는데, 이는 기업이 실질적인 운영 변화 없이 긍정적인 데이터만 선별적으로 보고하여 지속 가능한 이미지를 투사하는 것이다.
+</div>
+<div class="body-text">
+<b>결과적으로(Consequently),</b> ESG 뒤에 있는 의도는 칭찬할 만하지만(commendable), 그것의 실제 영향력은 종종 논쟁의 대상이 되며, ESG가 진정으로 의미 있는 기업 변화를 이끄는지, 아니면 단지 세련된 마케팅 도구에 불과한지에 대한 의문이 남아 있다.
+</div>
+
+<div class="subsection">문제 풀이</div>
+<div class="body-text"><b>104. Which of the following would be the most appropriate title for the passage?</b></div>
+
+<div class="option-box">
+<span class="wrong">① ESG: The New Standard for Corporate Success</span>
+<div class="analysis">→ ESG가 "기업 성공의 새 기준"이라고? 지문은 ESG를 <b>긍정적으로만</b> 보지 않는다. "However" 이후로 대부분 문제점을 다루고 있으므로, ①은 지문의 <b>전반부(이론적 장점)</b>만 반영한 편향된 제목.</div>
+
+<span class="wrong">② The Rise of Socially Responsible Investing</span>
+<div class="analysis">→ "사회적 책임 투자의 부상"은 ESG의 역사적 성장을 다룬 제목인데, 이 지문은 ESG의 <b>성장 과정</b>이 아니라 <b>이론 vs. 현실의 괴리</b>를 다루고 있다. 지문의 핵심인 "문제점/한계"가 빠져 있음.</div>
+
+<span class="attractive">③ Greenwashing: How Companies Deceive the Public</span>
+<div class="analysis">→ <b>매력적 오답!</b> 그린워싱은 지문에서 언급되지만, 이것은 ESG의 여러 문제점 중 <b>하나의 예시</b>일 뿐이다. 지문의 핵심 주제는 "ESG 전체의 약속과 한계"이지, "그린워싱으로 기업이 대중을 속이는 방법"이 아니다. 부분(greenwashing)을 전체(ESG)로 확대한 오답.</div>
+
+<span class="correct">④ ESG Investing: Promises and Practical Challenges</span>
+<div class="analysis">→ ✅ <b>정답!</b> "Promises(약속)" = 이론적 장점 (S1-S2) + "Practical Challenges(현실적 문제)" = However 이후의 비판 (S3-S6). 지문 <b>전체의 양면(긍정 + 부정)</b>을 정확히 포괄하는 제목.</div>
+
+<span class="wrong">⑤ The History and Evolution of Corporate Governance</span>
+<div class="analysis">→ "기업 지배구조의 역사와 진화"? 지문은 ESG의 <b>역사</b>를 다루지 않는다. Governance는 ESG의 세 요소 중 하나일 뿐이며, 지문의 주제와 범위가 전혀 다름.</div>
+</div>
+
+<div class="answer-banner">정답: <span class="num">④</span> &nbsp; ESG Investing: Promises and Practical Challenges</div>
+
+<div class="trap-box">
+<span class="label">⚠️ ③번이 매력적 오답인 이유 — "부분 ≠ 전체" 원칙</span><br><br>
+지문에서 그린워싱(greenwashing)은 <b>ESG의 문제점을 설명하는 하나의 예시</b>로 등장한다. 하지만 이 지문의 주제는:<br><br>
+• ESG의 <b>이론적 장점</b> (잘 관리됨, 투자자에게 매력적) — S1~S2<br>
+• ESG의 <b>현실적 문제점</b> (표준 부재, 불일치한 평가, 그린워싱) — S3~S5<br>
+• ESG의 <b>진정한 효과에 대한 의문</b> — S6<br><br>
+즉, 그린워싱은 "ESG 문제점"이라는 큰 범주의 <b>한 부분</b>이다. 제목은 글 <b>전체</b>를 아우르는 것이어야 하므로, 부분만 다룬 ③은 오답이고, 전체("약속 + 도전")를 담은 ④가 정답이다.
+</div>
+
+<div class="subsection">핵심 어휘</div>
+<table class="vocab-table">
+<tr><th>어휘</th><th>뜻</th><th>예문</th></tr>
+<tr><td class="word">ESG</td><td class="meaning">환경·사회·지배구조</td><td class="example">ESG scores influence investment decisions globally.</td></tr>
+<tr><td class="word">sustainable</td><td class="meaning">지속 가능한</td><td class="example">Sustainable investment has gained popularity in recent years.</td></tr>
+<tr><td class="word">framework</td><td class="meaning">프레임워크, 체계</td><td class="example">ESG provides a framework for evaluating companies.</td></tr>
+<tr><td class="word">metrics</td><td class="meaning">측정 기준, 지표</td><td class="example">There are no standardized metrics for ESG performance.</td></tr>
+<tr><td class="word">inconsistent</td><td class="meaning">일관성 없는</td><td class="example">Different agencies produce inconsistent ratings.</td></tr>
+<tr><td class="word">misleading</td><td class="meaning">오해의 소지가 있는</td><td class="example">The data was misleading and hard to interpret.</td></tr>
+<tr><td class="word">ambiguity</td><td class="meaning">모호성, 애매함</td><td class="example">The ambiguity of the rules led to confusion.</td></tr>
+<tr><td class="word">greenwashing</td><td class="meaning">위장 환경주의</td><td class="example">Greenwashing misleads consumers about sustainability.</td></tr>
+<tr><td class="word">selectively</td><td class="meaning">선별적으로</td><td class="example">Companies selectively report favorable data.</td></tr>
+<tr><td class="word">substantive</td><td class="meaning">실질적인, 본질적인</td><td class="example">No substantive changes were made to the policy.</td></tr>
+<tr><td class="word">commendable</td><td class="meaning">칭찬할 만한, 훌륭한</td><td class="example">The intention behind the initiative is commendable.</td></tr>
+<tr><td class="word">sophisticated</td><td class="meaning">세련된, 정교한</td><td class="example">It may merely be a sophisticated marketing tool.</td></tr>
+<tr><td class="word">chorus</td><td class="meaning">(비평의) 합창, 다수의 목소리</td><td class="example">A growing chorus of critics voiced concerns.</td></tr>
+</table>
+
+<div class="subsection">배경지식: ESG와 지속가능 투자</div>
+<div class="bg-block">
+
+<h4>1. ESG란 무엇인가?</h4>
+<p>ESG는 기업을 평가할 때 재무적 성과 외에 <b>환경(Environmental), 사회(Social), 지배구조(Governance)</b>의 세 가지 비재무적 요소를 고려하는 투자·경영 프레임워크이다.</p>
+<table class="compare-table">
+<tr><th style="width:12%;">요소</th><th style="width:20%;">영문</th><th style="width:68%;">주요 내용</th></tr>
+<tr><td><b>E</b></td><td>Environmental<br>(환경)</td><td>탄소 배출, 에너지 효율, 폐기물 관리, 기후변화 대응, 생태계 보호</td></tr>
+<tr><td><b>S</b></td><td>Social<br>(사회)</td><td>노동 관행, 다양성·포용성, 인권, 지역사회 관계, 제품 안전성</td></tr>
+<tr><td><b>G</b></td><td>Governance<br>(지배구조)</td><td>이사회 구성, 경영진 보수, 주주 권리, 투명성, 반부패</td></tr>
+</table>
+
+<h4>2. ESG의 등장 배경</h4>
+<p>ESG라는 용어는 2004년 UN 보고서 <b>"Who Cares Wins"</b>에서 처음 공식적으로 사용되었다. 이 보고서는 금융 기관이 투자 결정에 환경·사회·지배구조 요소를 통합해야 한다고 제안했다. 이후 2006년 <b>UN PRI(책임투자원칙)</b>가 출범하면서 ESG 투자가 본격적으로 확산되었다. 최근에는 기후변화 위기와 사회적 불평등 심화로 ESG에 대한 관심이 폭발적으로 증가했다.</p>
+
+<h4>3. Greenwashing (그린워싱) — 핵심 개념</h4>
+<p>그린워싱은 <b>"green(친환경)" + "whitewashing(세탁/분식)"</b>의 합성어로, 기업이 실제로는 환경에 부정적인 영향을 미치면서도 마케팅이나 PR을 통해 친환경적인 이미지를 만들어내는 행위를 말한다.</p>
+<p><b>대표적 사례:</b><br>
+• <b>폭스바겐 "디젤게이트" (2015):</b> 배출가스 테스트를 조작하면서 "클린 디젤"을 홍보한 사건<br>
+• <b>패스트패션 업체:</b> "지속 가능한 컬렉션" 출시하면서 대량 생산·폐기 구조는 유지<br>
+• <b>석유 기업:</b> 소규모 재생에너지 투자를 대대적으로 홍보하면서 화석연료 사업 확대</p>
+<p>지문에서 그린워싱은 ESG 시스템의 <b>허점(loophole)</b>을 보여주는 사례로 등장한다. 표준화된 측정 기준이 없기 때문에 기업이 "좋아 보이는 데이터만 골라서 보고"할 수 있다는 것이다.</p>
+
+<h4>4. ESG 찬반 논쟁</h4>
+<table class="compare-table">
+<tr><th style="width:50%;">ESG 지지 (Proponents)</th><th style="width:50%;">ESG 비판 (Critics)</th></tr>
+<tr><td>기업의 장기적 지속가능성 촉진</td><td>표준화된 측정 기준 부재 (lack of standardized metrics)</td></tr>
+<tr><td>투자자에게 비재무적 리스크 정보 제공</td><td>평가 기관마다 점수가 달라 일관성 부족</td></tr>
+<tr><td>기업의 사회적 책임 의식 제고</td><td>그린워싱(greenwashing) 허용</td></tr>
+<tr><td>기후변화 대응에 기여</td><td>실질적 변화 없이 "이미지 세탁" 수단으로 전락 가능</td></tr>
+<tr><td>소비자·직원의 기대에 부응</td><td>수익성 저해 가능 (비용 증가)</td></tr>
+</table>
+
+<h4>5. 지문의 핵심 논리 구조: "In theory... However..."</h4>
+<p>이 지문은 편입영어에서 매우 빈출되는 <b>"이론 vs. 현실" 대비 구조</b>를 가지고 있다:<br><br>
+<b>전반부 (S1-S2):</b> "In theory, ~" → ESG의 이론적 약속(promise)<br>
+<b>전환점 (S3):</b> "However, ~" → 현실적 문제 제기<br>
+<b>후반부 (S4-S6):</b> 구체적 문제점 나열 + 결론적 의문<br><br>
+이 구조를 파악하면 제목은 <b>"약속(이론) + 문제점(현실)"</b>을 모두 담아야 한다는 것을 알 수 있다. ④번 "Promises and Practical Challenges"가 정확히 이 구조를 반영한다.</p>
+</div>
+
+<!-- ═══════ 제목 추론 공략법 ═══════ -->
+<div class="page-break"></div>
+<div class="header-bar">verajin &nbsp;|&nbsp; Vera's Flavor 제목 추론 &nbsp;|&nbsp; 2026 EDITION</div>
+<div class="section-title">BONUS &nbsp;|&nbsp; 제목 추론 유형 공략 총정리</div>
+
+<div class="subsection">제목 추론 풀이 3단계</div>
+
+<div class="logic-box">
+<b>STEP 1. 글의 전체 구조를 파악한다</b><br>
+→ 도입(주제 제시) → 전개(세부 설명/논거) → 전환(반론/대조) → 결론<br>
+→ 이 지문: ESG 소개 → 이론적 장점 → <b>However</b> → 문제점들 → 의문 제기<br><br>
+
+<b>STEP 2. 글 전체를 관통하는 핵심 키워드를 찾는다</b><br>
+→ 반복·변형되는 단어: ESG, sustainable, metrics, greenwashing, debated<br>
+→ 이 지문의 핵심 대립: <b>"commendable intention" vs. "practical challenges"</b><br><br>
+
+<b>STEP 3. 선택지에서 "글 전체"를 포괄하는 것을 고른다</b><br>
+→ 전반부만 반영? ❌ (①②)<br>
+→ 부분만 반영? ❌ (③)<br>
+→ 주제와 무관? ❌ (⑤)<br>
+→ 전체(긍정+부정) 반영? ✅ (④)
+</div>
+
+<div class="subsection">제목 추론 오답 유형 5가지</div>
+<table class="compare-table">
+<tr><th style="width:8%;">유형</th><th style="width:25%;">오답 패턴</th><th style="width:32%;">이번 문제 예시</th><th style="width:35%;">판별법</th></tr>
+<tr><td><b>1</b></td><td>한쪽 면만 반영<br>(One-Sided)</td><td>① "New Standard for Success"<br>→ 긍정면만</td><td>"However/But" 뒤 내용이 빠졌는지 확인</td></tr>
+<tr><td><b>2</b></td><td>부분을 전체로<br>(Part for Whole)</td><td>③ "Greenwashing"<br>→ 예시 하나만</td><td>해당 내용이 글 전체인지, 한 문단의 예시인지 확인</td></tr>
+<tr><td><b>3</b></td><td>범위 불일치<br>(Scope Mismatch)</td><td>② "Rise of Investing"<br>→ 역사적 성장</td><td>글이 "성장 과정"을 다루는지 "현재 상태 분석"인지 확인</td></tr>
+<tr><td><b>4</b></td><td>주제 이탈<br>(Off-Topic)</td><td>⑤ "History of Governance"<br>→ ESG와 다른 주제</td><td>글의 첫 문장과 마지막 문장의 키워드와 일치하는지 확인</td></tr>
+<tr><td><b>5</b></td><td>과도한 일반화<br>(Over-Generalization)</td><td>해당 없음</td><td>글의 구체적 주제보다 너무 넓은 범위를 다루는지 확인</td></tr>
+</table>
+
+<div class="subsection">"However" 구조 — 편입영어 최빈출 패턴</div>
+<div class="bg-block">
+<p>이 지문처럼 <b>"긍정적 소개 → However → 문제점/한계 → 의문 제기"</b> 구조는 편입영어에서 가장 자주 나오는 글 구조 중 하나이다. 이 패턴에서:</p>
+
+<p><b>주제 파악 문제:</b> "그러나(However)" 이후의 내용이 보통 글의 <b>진짜 초점</b>이다. 하지만 제목은 양쪽 모두를 반영해야 한다.</p>
+
+<p><b>빈칸 추론 문제:</b> "However" 전후에 빈칸이 나올 확률이 높다.</p>
+
+<p><b>주장·요지 파악 문제:</b> 마지막 문장의 핵심 메시지가 글의 요지인 경우가 많다.<br>
+→ 이 지문: "ESG가 진정한 변화를 이끄는지, 마케팅 도구인지 의문이 남는다"</p>
+
+<p><b>이 구조가 자주 나오는 주제:</b> ESG/환경, AI/기술, 소셜미디어, 세계화(globalization), 원격근무 등 — 모두 <b>"약속(promise) vs. 현실(reality)"</b>의 양면성이 있는 주제들이다.</p>
+</div>
+
+<div class="subsection">편입영어 제목 추론 빈출 주제</div>
+<table class="compare-table">
+<tr><th style="width:30%;">빈출 주제</th><th style="width:35%;">전형적 구조</th><th style="width:35%;">예상 제목 패턴</th></tr>
+<tr><td><b>ESG / 친환경 투자</b></td><td>이론적 약속 → 현실적 한계</td><td>"Promises and Challenges"</td></tr>
+<tr><td><b>AI / 자동화</b></td><td>편리함 → 일자리 위협/윤리 문제</td><td>"Benefits and Risks"</td></tr>
+<tr><td><b>소셜미디어</b></td><td>연결성 → 고립/정신건강 문제</td><td>"Connection or Isolation?"</td></tr>
+<tr><td><b>세계화 (Globalization)</b></td><td>경제 성장 → 불평등/문화 상실</td><td>"Progress at What Cost?"</td></tr>
+<tr><td><b>원격근무 (Remote Work)</b></td><td>유연성 → 소통/경계 문제</td><td>"Flexibility vs. Fragmentation"</td></tr>
+<tr><td><b>유전자 편집 (CRISPR)</b></td><td>의학적 가능성 → 윤리적 우려</td><td>"Scientific Promise, Ethical Dilemma"</td></tr>
+</table>
+
+<div class="tip-box">
+<b>📌 지율이를 위한 핵심 정리:</b><br><br>
+1. <b>제목 = 글 전체의 요약</b>이다. 한쪽 면(긍정 또는 부정)만 반영하면 오답.<br>
+2. <b>그린워싱은 "예시"</b>이지 "주제"가 아니다. 제목은 상위 개념을 골라야 한다.<br>
+3. <b>"In theory... However..."</b> 구조를 보면 → 제목은 반드시 <b>양면</b>을 담아야 한다.<br>
+4. 마지막 문장에서 필자의 <b>진짜 메시지</b>를 확인하라 → "meaningful change or marketing tool?"
+</div>
+
+<div class="footer-line">
+© 2026 verajin &nbsp;|&nbsp; 독해에 맛을 더하다 &nbsp;|&nbsp; 박지율
+</div>
+
+</body>
+</html>

@@ -1,450 +1,816 @@
-# grammar-bridge-vol1 — 문법 Bridge Volume 1
+version: 2
 book:
-  title: "Vera's Flavor 편입영어 문법 Bridge Vol.1"
-  author: "Vera's Flavor"
-  style: grammar-bridge-part1
-  series: grammar-bridge
-  volume: 1
-
+  id: grammar-bridge-vol1
+  title: Vera's Flavor 편입영어 문법 Bridge Vol.1
+  shortTitle: 문법 Bridge
+  author: Vera's Flavor
+  brand: Vera's Flavor
+  legacyStyle: grammar-bridge-part1
+  subject: grammar
+  level: bridge
+  theme: ocean-blue
 pages:
-  - type: structural
-    src: grammar/bridge/vol1-cover.html
-  - type: structural
-    src: grammar/bridge/vol1-toc.html
-
-  # ── Chapter 1: 동사 ──
-  - type: chapter-divider
-    chapter: "Part 1"
-    title: "동사"
-    subtitle: "자동사와 타동사 · 5형식 · 상태/동작동사 · 혼동동사"
-  - type: content
-    src: grammar/bridge/ch01-content-01.html
-  - type: content
-    src: grammar/bridge/ch01-content-02.html
-  - type: content
-    src: grammar/bridge/ch01-content-03.html
-  - type: content
-    src: grammar/bridge/ch01-content-04.html
-  - type: content
-    src: grammar/bridge/ch01-content-05.html
-  - type: content
-    src: grammar/bridge/ch01-content-06.html
-  - type: content
-    src: grammar/bridge/ch01-content-07.html
-  - type: content
-    src: grammar/bridge/ch01-content-08.html
-  - type: content
-    src: grammar/bridge/ch01-content-09.html
-  - type: content
-    src: grammar/bridge/ch01-content-10.html
-  - type: content
-    src: grammar/bridge/ch01-content-11.html
-  - type: content
-    src: grammar/bridge/ch01-content-12.html
-  - type: content
-    src: grammar/bridge/ch01-content-13.html
-  - type: content
-    src: grammar/bridge/ch01-content-14.html
-  - type: content
-    src: grammar/bridge/ch01-content-15.html
-  - type: problems
-    src: grammar/bridge/ch01-problems.json
-    layout: two-per-page
-    range: [1, 50]
-  - type: answer-grid
-    src: grammar/bridge/ch01-problems.json
-    range: [1, 50]
-  - type: explanations
-    src: grammar/bridge/ch01-problems.json
+  - kind: cover
+    id: auto-cover
+  - kind: legacy-page
+    id: structural-1-vol1-cover
+    source:
+      path: grammar/bridge/vol1-cover.html
+  - kind: legacy-page
+    id: structural-2-vol1-toc
+    source:
+      path: grammar/bridge/vol1-toc.html
+  - kind: chapter-opener
+    id: chapter-3
+    title: 동사
+    subtitle: Part 1
+  - kind: legacy-page
+    id: content-4-ch01-content-01
+    source:
+      path: grammar/bridge/ch01-content-01.html
+  - kind: legacy-page
+    id: content-5-ch01-content-02
+    source:
+      path: grammar/bridge/ch01-content-02.html
+  - kind: legacy-page
+    id: content-6-ch01-content-03
+    source:
+      path: grammar/bridge/ch01-content-03.html
+  - kind: legacy-page
+    id: content-7-ch01-content-04
+    source:
+      path: grammar/bridge/ch01-content-04.html
+  - kind: legacy-page
+    id: content-8-ch01-content-05
+    source:
+      path: grammar/bridge/ch01-content-05.html
+  - kind: legacy-page
+    id: content-9-ch01-content-06
+    source:
+      path: grammar/bridge/ch01-content-06.html
+  - kind: legacy-page
+    id: content-10-ch01-content-07
+    source:
+      path: grammar/bridge/ch01-content-07.html
+  - kind: legacy-page
+    id: content-11-ch01-content-08
+    source:
+      path: grammar/bridge/ch01-content-08.html
+  - kind: legacy-page
+    id: content-12-ch01-content-09
+    source:
+      path: grammar/bridge/ch01-content-09.html
+  - kind: legacy-page
+    id: content-13-ch01-content-10
+    source:
+      path: grammar/bridge/ch01-content-10.html
+  - kind: legacy-page
+    id: content-14-ch01-content-11
+    source:
+      path: grammar/bridge/ch01-content-11.html
+  - kind: legacy-page
+    id: content-15-ch01-content-12
+    source:
+      path: grammar/bridge/ch01-content-12.html
+  - kind: legacy-page
+    id: content-16-ch01-content-13
+    source:
+      path: grammar/bridge/ch01-content-13.html
+  - kind: legacy-page
+    id: content-17-ch01-content-14
+    source:
+      path: grammar/bridge/ch01-content-14.html
+  - kind: legacy-page
+    id: content-18-ch01-content-15
+    source:
+      path: grammar/bridge/ch01-content-15.html
+  - kind: problem-set
+    id: problems-19-ch01-problems
     layout: compact
-    range: [1, 50]
-
-  # ── Chapter 2: 시제 ──
-  - type: chapter-divider
-    chapter: "Part 2"
-    title: "시제"
-    subtitle: "현재 · 과거 · 미래 · 완료 · 시제 일치"
-  - type: content
-    src: grammar/bridge/ch01-content-16.html
-  - type: content
-    src: grammar/bridge/ch01-content-17.html
-  - type: content
-    src: grammar/bridge/ch01-content-18.html
-  - type: content
-    src: grammar/bridge/ch01-content-19.html
-  - type: content
-    src: grammar/bridge/ch01-content-20.html
-  - type: content
-    src: grammar/bridge/ch01-content-21.html
-  - type: content
-    src: grammar/bridge/ch01-content-22.html
-  - type: content
-    src: grammar/bridge/ch01-content-23.html
-  - type: content
-    src: grammar/bridge/ch01-content-24.html
-  - type: content
-    src: grammar/bridge/ch01-content-25.html
-  - type: content
-    src: grammar/bridge/ch01-content-26.html
-  - type: content
-    src: grammar/bridge/ch01-content-27.html
-  - type: content
-    src: grammar/bridge/ch01-content-28.html
-  - type: content
-    src: grammar/bridge/ch01-content-29.html
-  - type: content
-    src: grammar/bridge/ch01-content-30.html
-  - type: problems
-    src: grammar/bridge/ch01-problems.json
-    layout: two-per-page
-    range: [51, 100]
-  - type: answer-grid
-    src: grammar/bridge/ch01-problems.json
-    range: [51, 100]
-  - type: explanations
-    src: grammar/bridge/ch01-problems.json
+    range:
+      - 1
+      - 50
+    source:
+      path: grammar/bridge/ch01-problems.json
+  - kind: answer-grid
+    id: answers-20-ch01-problems
+    range:
+      - 1
+      - 50
+    source:
+      path: grammar/bridge/ch01-problems.json
+  - kind: explanations
+    id: explanations-21-ch01-problems
     layout: compact
-    range: [51, 100]
-
-  # ── Chapter 3: 수동태 ──
-  - type: chapter-divider
-    chapter: "Part 3"
-    title: "수동태"
-    subtitle: "관점의 마술 · 시제별 · 형식별 · 특수구문"
-  - type: content
-    src: grammar/bridge/ch01-content-31.html
-  - type: content
-    src: grammar/bridge/ch01-content-32.html
-  - type: content
-    src: grammar/bridge/ch01-content-33.html
-  - type: content
-    src: grammar/bridge/ch01-content-34.html
-  - type: content
-    src: grammar/bridge/ch01-content-35.html
-  - type: content
-    src: grammar/bridge/ch01-content-36.html
-  - type: content
-    src: grammar/bridge/ch01-content-37.html
-  - type: content
-    src: grammar/bridge/ch01-content-38.html
-  - type: content
-    src: grammar/bridge/ch01-content-39.html
-  - type: content
-    src: grammar/bridge/ch01-content-40.html
-  - type: content
-    src: grammar/bridge/ch01-content-41.html
-  - type: content
-    src: grammar/bridge/ch01-content-42.html
-  - type: content
-    src: grammar/bridge/ch01-content-43.html
-  - type: content
-    src: grammar/bridge/ch01-content-44.html
-  - type: content
-    src: grammar/bridge/ch01-content-45.html
-  - type: content
-    src: grammar/bridge/ch01-content-46.html
-  - type: content
-    src: grammar/bridge/ch01-content-47.html
-  - type: content
-    src: grammar/bridge/ch01-content-48.html
-  - type: content
-    src: grammar/bridge/ch01-content-49.html
-  - type: content
-    src: grammar/bridge/ch01-content-50.html
-  - type: content
-    src: grammar/bridge/ch01-content-51.html
-  - type: content
-    src: grammar/bridge/ch01-content-52.html
-  - type: content
-    src: grammar/bridge/ch01-content-53.html
-  - type: problems
-    src: grammar/bridge/ch01-problems.json
-    layout: two-per-page
-    range: [101, 150]
-  - type: answer-grid
-    src: grammar/bridge/ch01-problems.json
-    range: [101, 150]
-  - type: explanations
-    src: grammar/bridge/ch01-problems.json
+    range:
+      - 1
+      - 50
+    source:
+      path: grammar/bridge/ch01-problems.json
+  - kind: chapter-opener
+    id: chapter-22
+    title: 시제
+    subtitle: Part 2
+  - kind: legacy-page
+    id: content-23-ch01-content-16
+    source:
+      path: grammar/bridge/ch01-content-16.html
+  - kind: legacy-page
+    id: content-24-ch01-content-17
+    source:
+      path: grammar/bridge/ch01-content-17.html
+  - kind: legacy-page
+    id: content-25-ch01-content-18
+    source:
+      path: grammar/bridge/ch01-content-18.html
+  - kind: legacy-page
+    id: content-26-ch01-content-19
+    source:
+      path: grammar/bridge/ch01-content-19.html
+  - kind: legacy-page
+    id: content-27-ch01-content-20
+    source:
+      path: grammar/bridge/ch01-content-20.html
+  - kind: legacy-page
+    id: content-28-ch01-content-21
+    source:
+      path: grammar/bridge/ch01-content-21.html
+  - kind: legacy-page
+    id: content-29-ch01-content-22
+    source:
+      path: grammar/bridge/ch01-content-22.html
+  - kind: legacy-page
+    id: content-30-ch01-content-23
+    source:
+      path: grammar/bridge/ch01-content-23.html
+  - kind: legacy-page
+    id: content-31-ch01-content-24
+    source:
+      path: grammar/bridge/ch01-content-24.html
+  - kind: legacy-page
+    id: content-32-ch01-content-25
+    source:
+      path: grammar/bridge/ch01-content-25.html
+  - kind: legacy-page
+    id: content-33-ch01-content-26
+    source:
+      path: grammar/bridge/ch01-content-26.html
+  - kind: legacy-page
+    id: content-34-ch01-content-27
+    source:
+      path: grammar/bridge/ch01-content-27.html
+  - kind: legacy-page
+    id: content-35-ch01-content-28
+    source:
+      path: grammar/bridge/ch01-content-28.html
+  - kind: legacy-page
+    id: content-36-ch01-content-29
+    source:
+      path: grammar/bridge/ch01-content-29.html
+  - kind: legacy-page
+    id: content-37-ch01-content-30
+    source:
+      path: grammar/bridge/ch01-content-30.html
+  - kind: problem-set
+    id: problems-38-ch01-problems
     layout: compact
-    range: [101, 150]
-
-  # ── Chapter 4: 조동사 (NO PROBLEMS - they don't exist in source) ──
-  - type: chapter-divider
-    chapter: "Part 4"
-    title: "조동사"
-    subtitle: "기본 개념 · 추측과 후회 · 기타 표현"
-  - type: content
-    src: grammar/bridge/ch01-content-54.html
-  - type: content
-    src: grammar/bridge/ch01-content-55.html
-  - type: content
-    src: grammar/bridge/ch01-content-56.html
-  - type: content
-    src: grammar/bridge/ch01-content-57.html
-  - type: content
-    src: grammar/bridge/ch01-content-58.html
-  - type: content
-    src: grammar/bridge/ch01-content-59.html
-  - type: content
-    src: grammar/bridge/ch01-content-60.html
-  - type: content
-    src: grammar/bridge/ch01-content-61.html
-  - type: content
-    src: grammar/bridge/ch01-content-62.html
-  # No problems/answer-grid/explanations — source has no problems for this topic
-
-  # ── Chapter 5: 접속사 ──
-  - type: chapter-divider
-    chapter: "Part 5"
-    title: "접속사"
-    subtitle: "종류와 원칙 · 종속접속사 · 독특한 접속사"
-  - type: content
-    src: grammar/bridge/ch01-content-63.html
-  - type: content
-    src: grammar/bridge/ch01-content-64.html
-  - type: content
-    src: grammar/bridge/ch01-content-65.html
-  - type: content
-    src: grammar/bridge/ch01-content-66.html
-  - type: content
-    src: grammar/bridge/ch01-content-67.html
-  - type: content
-    src: grammar/bridge/ch01-content-68.html
-  - type: content
-    src: grammar/bridge/ch01-content-69.html
-  - type: content
-    src: grammar/bridge/ch01-content-70.html
-  - type: content
-    src: grammar/bridge/ch01-content-71.html
-  - type: content
-    src: grammar/bridge/ch01-content-72.html
-  - type: content
-    src: grammar/bridge/ch01-content-73.html
-  - type: problems
-    src: grammar/bridge/ch01-problems.json
-    layout: two-per-page
-    range: [201, 250]
-  - type: answer-grid
-    src: grammar/bridge/ch01-problems.json
-    range: [201, 250]
-  - type: explanations
-    src: grammar/bridge/ch01-problems.json
+    range:
+      - 51
+      - 100
+    source:
+      path: grammar/bridge/ch01-problems.json
+  - kind: answer-grid
+    id: answers-39-ch01-problems
+    range:
+      - 51
+      - 100
+    source:
+      path: grammar/bridge/ch01-problems.json
+  - kind: explanations
+    id: explanations-40-ch01-problems
     layout: compact
-    range: [201, 250]
-
-  # ── Chapter 6: 접속부사 ──
-  - type: chapter-divider
-    chapter: "Part 6"
-    title: "접속부사"
-    subtitle: "구두점의 기본 개념"
-  - type: content
-    src: grammar/bridge/ch01-content-74.html
-  - type: content
-    src: grammar/bridge/ch01-content-75.html
-  - type: content
-    src: grammar/bridge/ch01-content-76.html
-  - type: content
-    src: grammar/bridge/ch01-content-77.html
-  - type: content
-    src: grammar/bridge/ch01-content-78.html
-  - type: content
-    src: grammar/bridge/ch01-content-79.html
-  - type: content
-    src: grammar/bridge/ch01-content-80.html
-  - type: problems
-    src: grammar/bridge/ch01-problems.json
-    layout: two-per-page
-    range: [251, 300]
-  - type: answer-grid
-    src: grammar/bridge/ch01-problems.json
-    range: [251, 300]
-  - type: explanations
-    src: grammar/bridge/ch01-problems.json
+    range:
+      - 51
+      - 100
+    source:
+      path: grammar/bridge/ch01-problems.json
+  - kind: chapter-opener
+    id: chapter-41
+    title: 수동태
+    subtitle: Part 3
+  - kind: legacy-page
+    id: content-42-ch01-content-31
+    source:
+      path: grammar/bridge/ch01-content-31.html
+  - kind: legacy-page
+    id: content-43-ch01-content-32
+    source:
+      path: grammar/bridge/ch01-content-32.html
+  - kind: legacy-page
+    id: content-44-ch01-content-33
+    source:
+      path: grammar/bridge/ch01-content-33.html
+  - kind: legacy-page
+    id: content-45-ch01-content-34
+    source:
+      path: grammar/bridge/ch01-content-34.html
+  - kind: legacy-page
+    id: content-46-ch01-content-35
+    source:
+      path: grammar/bridge/ch01-content-35.html
+  - kind: legacy-page
+    id: content-47-ch01-content-36
+    source:
+      path: grammar/bridge/ch01-content-36.html
+  - kind: legacy-page
+    id: content-48-ch01-content-37
+    source:
+      path: grammar/bridge/ch01-content-37.html
+  - kind: legacy-page
+    id: content-49-ch01-content-38
+    source:
+      path: grammar/bridge/ch01-content-38.html
+  - kind: legacy-page
+    id: content-50-ch01-content-39
+    source:
+      path: grammar/bridge/ch01-content-39.html
+  - kind: legacy-page
+    id: content-51-ch01-content-40
+    source:
+      path: grammar/bridge/ch01-content-40.html
+  - kind: legacy-page
+    id: content-52-ch01-content-41
+    source:
+      path: grammar/bridge/ch01-content-41.html
+  - kind: legacy-page
+    id: content-53-ch01-content-42
+    source:
+      path: grammar/bridge/ch01-content-42.html
+  - kind: legacy-page
+    id: content-54-ch01-content-43
+    source:
+      path: grammar/bridge/ch01-content-43.html
+  - kind: legacy-page
+    id: content-55-ch01-content-44
+    source:
+      path: grammar/bridge/ch01-content-44.html
+  - kind: legacy-page
+    id: content-56-ch01-content-45
+    source:
+      path: grammar/bridge/ch01-content-45.html
+  - kind: legacy-page
+    id: content-57-ch01-content-46
+    source:
+      path: grammar/bridge/ch01-content-46.html
+  - kind: legacy-page
+    id: content-58-ch01-content-47
+    source:
+      path: grammar/bridge/ch01-content-47.html
+  - kind: legacy-page
+    id: content-59-ch01-content-48
+    source:
+      path: grammar/bridge/ch01-content-48.html
+  - kind: legacy-page
+    id: content-60-ch01-content-49
+    source:
+      path: grammar/bridge/ch01-content-49.html
+  - kind: legacy-page
+    id: content-61-ch01-content-50
+    source:
+      path: grammar/bridge/ch01-content-50.html
+  - kind: legacy-page
+    id: content-62-ch01-content-51
+    source:
+      path: grammar/bridge/ch01-content-51.html
+  - kind: legacy-page
+    id: content-63-ch01-content-52
+    source:
+      path: grammar/bridge/ch01-content-52.html
+  - kind: legacy-page
+    id: content-64-ch01-content-53
+    source:
+      path: grammar/bridge/ch01-content-53.html
+  - kind: problem-set
+    id: problems-65-ch01-problems
     layout: compact
-    range: [251, 300]
-
-  # ── Chapter 7: 전치사 ──
-  - type: chapter-divider
-    chapter: "Part 7"
-    title: "전치사"
-    subtitle: "시간 · 장소 · 방향 · 수단 · 관용표현 · 출제 포인트"
-  - type: content
-    src: grammar/bridge/ch01-content-81.html
-  - type: content
-    src: grammar/bridge/ch01-content-82.html
-  - type: content
-    src: grammar/bridge/ch01-content-83.html
-  - type: content
-    src: grammar/bridge/ch01-content-84.html
-  - type: content
-    src: grammar/bridge/ch01-content-85.html
-  - type: content
-    src: grammar/bridge/ch01-content-86.html
-  - type: content
-    src: grammar/bridge/ch01-content-87.html
-  - type: content
-    src: grammar/bridge/ch01-content-88.html
-  - type: content
-    src: grammar/bridge/ch01-content-89.html
-  - type: content
-    src: grammar/bridge/ch01-content-90.html
-  - type: content
-    src: grammar/bridge/ch01-content-91.html
-  - type: content
-    src: grammar/bridge/ch01-content-92.html
-  - type: content
-    src: grammar/bridge/ch01-content-93.html
-  - type: content
-    src: grammar/bridge/ch01-content-94.html
-  - type: content
-    src: grammar/bridge/ch01-content-95.html
-  - type: content
-    src: grammar/bridge/ch01-content-96.html
-  - type: problems
-    src: grammar/bridge/ch01-problems.json
-    layout: two-per-page
-    range: [301, 350]
-  - type: answer-grid
-    src: grammar/bridge/ch01-problems.json
-    range: [301, 350]
-  - type: explanations
-    src: grammar/bridge/ch01-problems.json
+    range:
+      - 101
+      - 150
+    source:
+      path: grammar/bridge/ch01-problems.json
+  - kind: answer-grid
+    id: answers-66-ch01-problems
+    range:
+      - 101
+      - 150
+    source:
+      path: grammar/bridge/ch01-problems.json
+  - kind: explanations
+    id: explanations-67-ch01-problems
     layout: compact
-    range: [301, 350]
-
-  # ── Chapter 8: 관계사 ──
-  - type: chapter-divider
-    chapter: "Part 8"
-    title: "관계사"
-    subtitle: "기본 개념 · 관계대명사/부사 · 복합관계사"
-  - type: content
-    src: grammar/bridge/ch01-content-97.html
-  - type: content
-    src: grammar/bridge/ch01-content-98.html
-  - type: content
-    src: grammar/bridge/ch01-content-99.html
-  - type: content
-    src: grammar/bridge/ch01-content-100.html
-  - type: content
-    src: grammar/bridge/ch01-content-101.html
-  - type: content
-    src: grammar/bridge/ch01-content-102.html
-  - type: content
-    src: grammar/bridge/ch01-content-103.html
-  - type: problems
-    src: grammar/bridge/ch01-problems.json
-    layout: two-per-page
-    range: [351, 400]
-  - type: answer-grid
-    src: grammar/bridge/ch01-problems.json
-    range: [351, 400]
-  - type: explanations
-    src: grammar/bridge/ch01-problems.json
+    range:
+      - 101
+      - 150
+    source:
+      path: grammar/bridge/ch01-problems.json
+  - kind: chapter-opener
+    id: chapter-68
+    title: 조동사
+    subtitle: Part 4
+  - kind: legacy-page
+    id: content-69-ch01-content-54
+    source:
+      path: grammar/bridge/ch01-content-54.html
+  - kind: legacy-page
+    id: content-70-ch01-content-55
+    source:
+      path: grammar/bridge/ch01-content-55.html
+  - kind: legacy-page
+    id: content-71-ch01-content-56
+    source:
+      path: grammar/bridge/ch01-content-56.html
+  - kind: legacy-page
+    id: content-72-ch01-content-57
+    source:
+      path: grammar/bridge/ch01-content-57.html
+  - kind: legacy-page
+    id: content-73-ch01-content-58
+    source:
+      path: grammar/bridge/ch01-content-58.html
+  - kind: legacy-page
+    id: content-74-ch01-content-59
+    source:
+      path: grammar/bridge/ch01-content-59.html
+  - kind: legacy-page
+    id: content-75-ch01-content-60
+    source:
+      path: grammar/bridge/ch01-content-60.html
+  - kind: legacy-page
+    id: content-76-ch01-content-61
+    source:
+      path: grammar/bridge/ch01-content-61.html
+  - kind: legacy-page
+    id: content-77-ch01-content-62
+    source:
+      path: grammar/bridge/ch01-content-62.html
+  - kind: chapter-opener
+    id: chapter-78
+    title: 접속사
+    subtitle: Part 5
+  - kind: legacy-page
+    id: content-79-ch01-content-63
+    source:
+      path: grammar/bridge/ch01-content-63.html
+  - kind: legacy-page
+    id: content-80-ch01-content-64
+    source:
+      path: grammar/bridge/ch01-content-64.html
+  - kind: legacy-page
+    id: content-81-ch01-content-65
+    source:
+      path: grammar/bridge/ch01-content-65.html
+  - kind: legacy-page
+    id: content-82-ch01-content-66
+    source:
+      path: grammar/bridge/ch01-content-66.html
+  - kind: legacy-page
+    id: content-83-ch01-content-67
+    source:
+      path: grammar/bridge/ch01-content-67.html
+  - kind: legacy-page
+    id: content-84-ch01-content-68
+    source:
+      path: grammar/bridge/ch01-content-68.html
+  - kind: legacy-page
+    id: content-85-ch01-content-69
+    source:
+      path: grammar/bridge/ch01-content-69.html
+  - kind: legacy-page
+    id: content-86-ch01-content-70
+    source:
+      path: grammar/bridge/ch01-content-70.html
+  - kind: legacy-page
+    id: content-87-ch01-content-71
+    source:
+      path: grammar/bridge/ch01-content-71.html
+  - kind: legacy-page
+    id: content-88-ch01-content-72
+    source:
+      path: grammar/bridge/ch01-content-72.html
+  - kind: legacy-page
+    id: content-89-ch01-content-73
+    source:
+      path: grammar/bridge/ch01-content-73.html
+  - kind: problem-set
+    id: problems-90-ch01-problems
     layout: compact
-    range: [351, 400]
-
-  # ── Chapter 9: 분사 ──
-  - type: chapter-divider
-    chapter: "Part 9"
-    title: "분사"
-    subtitle: "기본 개념 · 비교표 · 분사구문 · FAQ"
-  - type: content
-    src: grammar/bridge/ch01-content-104.html
-  - type: content
-    src: grammar/bridge/ch01-content-105.html
-  - type: content
-    src: grammar/bridge/ch01-content-106.html
-  - type: content
-    src: grammar/bridge/ch01-content-107.html
-  - type: content
-    src: grammar/bridge/ch01-content-108.html
-  - type: content
-    src: grammar/bridge/ch01-content-109.html
-  - type: content
-    src: grammar/bridge/ch01-content-110.html
-  - type: content
-    src: grammar/bridge/ch01-content-111.html
-  - type: content
-    src: grammar/bridge/ch01-content-112.html
-  - type: content
-    src: grammar/bridge/ch01-content-113.html
-  - type: problems
-    src: grammar/bridge/ch01-problems.json
-    layout: two-per-page
-    range: [401, 450]
-  - type: answer-grid
-    src: grammar/bridge/ch01-problems.json
-    range: [401, 450]
-  - type: explanations
-    src: grammar/bridge/ch01-problems.json
+    range:
+      - 201
+      - 250
+    source:
+      path: grammar/bridge/ch01-problems.json
+  - kind: answer-grid
+    id: answers-91-ch01-problems
+    range:
+      - 201
+      - 250
+    source:
+      path: grammar/bridge/ch01-problems.json
+  - kind: explanations
+    id: explanations-92-ch01-problems
     layout: compact
-    range: [401, 450]
-
-  # ── Chapter 10: 부정사 ──
-  - type: chapter-divider
-    chapter: "Part 10"
-    title: "부정사"
-    subtitle: "기본 개념 · 비교표 · 심화 학습 · FAQ · 관용 표현"
-  - type: content
-    src: grammar/bridge/ch01-content-114.html
-  - type: content
-    src: grammar/bridge/ch01-content-115.html
-  - type: content
-    src: grammar/bridge/ch01-content-116.html
-  - type: content
-    src: grammar/bridge/ch01-content-117.html
-  - type: content
-    src: grammar/bridge/ch01-content-118.html
-  - type: content
-    src: grammar/bridge/ch01-content-119.html
-  - type: content
-    src: grammar/bridge/ch01-content-120.html
-  - type: content
-    src: grammar/bridge/ch01-content-121.html
-  - type: content
-    src: grammar/bridge/ch01-content-122.html
-  - type: problems
-    src: grammar/bridge/ch01-problems.json
-    layout: two-per-page
-    range: [451, 500]
-  - type: answer-grid
-    src: grammar/bridge/ch01-problems.json
-    range: [451, 500]
-  - type: explanations
-    src: grammar/bridge/ch01-problems.json
+    range:
+      - 201
+      - 250
+    source:
+      path: grammar/bridge/ch01-problems.json
+  - kind: chapter-opener
+    id: chapter-93
+    title: 접속부사
+    subtitle: Part 6
+  - kind: legacy-page
+    id: content-94-ch01-content-74
+    source:
+      path: grammar/bridge/ch01-content-74.html
+  - kind: legacy-page
+    id: content-95-ch01-content-75
+    source:
+      path: grammar/bridge/ch01-content-75.html
+  - kind: legacy-page
+    id: content-96-ch01-content-76
+    source:
+      path: grammar/bridge/ch01-content-76.html
+  - kind: legacy-page
+    id: content-97-ch01-content-77
+    source:
+      path: grammar/bridge/ch01-content-77.html
+  - kind: legacy-page
+    id: content-98-ch01-content-78
+    source:
+      path: grammar/bridge/ch01-content-78.html
+  - kind: legacy-page
+    id: content-99-ch01-content-79
+    source:
+      path: grammar/bridge/ch01-content-79.html
+  - kind: legacy-page
+    id: content-100-ch01-content-80
+    source:
+      path: grammar/bridge/ch01-content-80.html
+  - kind: problem-set
+    id: problems-101-ch01-problems
     layout: compact
-    range: [451, 500]
-
-  # ── Chapter 11: 동명사 ──
-  - type: chapter-divider
-    chapter: "Part 11"
-    title: "동명사"
-    subtitle: "기본 개념 · 비교표 · 심화 학습 · FAQ"
-  - type: content
-    src: grammar/bridge/ch01-content-123.html
-  - type: content
-    src: grammar/bridge/ch01-content-124.html
-  - type: content
-    src: grammar/bridge/ch01-content-125.html
-  - type: content
-    src: grammar/bridge/ch01-content-126.html
-  - type: content
-    src: grammar/bridge/ch01-content-127.html
-  - type: content
-    src: grammar/bridge/ch01-content-128.html
-  - type: content
-    src: grammar/bridge/ch01-content-129.html
-  - type: content
-    src: grammar/bridge/ch01-content-130.html
-  - type: problems
-    src: grammar/bridge/ch01-problems.json
-    layout: two-per-page
-    range: [501, 550]
-  - type: answer-grid
-    src: grammar/bridge/ch01-problems.json
-    range: [501, 550]
-  - type: explanations
-    src: grammar/bridge/ch01-problems.json
+    range:
+      - 251
+      - 300
+    source:
+      path: grammar/bridge/ch01-problems.json
+  - kind: answer-grid
+    id: answers-102-ch01-problems
+    range:
+      - 251
+      - 300
+    source:
+      path: grammar/bridge/ch01-problems.json
+  - kind: explanations
+    id: explanations-103-ch01-problems
     layout: compact
-    range: [501, 550]
+    range:
+      - 251
+      - 300
+    source:
+      path: grammar/bridge/ch01-problems.json
+  - kind: chapter-opener
+    id: chapter-104
+    title: 전치사
+    subtitle: Part 7
+  - kind: legacy-page
+    id: content-105-ch01-content-81
+    source:
+      path: grammar/bridge/ch01-content-81.html
+  - kind: legacy-page
+    id: content-106-ch01-content-82
+    source:
+      path: grammar/bridge/ch01-content-82.html
+  - kind: legacy-page
+    id: content-107-ch01-content-83
+    source:
+      path: grammar/bridge/ch01-content-83.html
+  - kind: legacy-page
+    id: content-108-ch01-content-84
+    source:
+      path: grammar/bridge/ch01-content-84.html
+  - kind: legacy-page
+    id: content-109-ch01-content-85
+    source:
+      path: grammar/bridge/ch01-content-85.html
+  - kind: legacy-page
+    id: content-110-ch01-content-86
+    source:
+      path: grammar/bridge/ch01-content-86.html
+  - kind: legacy-page
+    id: content-111-ch01-content-87
+    source:
+      path: grammar/bridge/ch01-content-87.html
+  - kind: legacy-page
+    id: content-112-ch01-content-88
+    source:
+      path: grammar/bridge/ch01-content-88.html
+  - kind: legacy-page
+    id: content-113-ch01-content-89
+    source:
+      path: grammar/bridge/ch01-content-89.html
+  - kind: legacy-page
+    id: content-114-ch01-content-90
+    source:
+      path: grammar/bridge/ch01-content-90.html
+  - kind: legacy-page
+    id: content-115-ch01-content-91
+    source:
+      path: grammar/bridge/ch01-content-91.html
+  - kind: legacy-page
+    id: content-116-ch01-content-92
+    source:
+      path: grammar/bridge/ch01-content-92.html
+  - kind: legacy-page
+    id: content-117-ch01-content-93
+    source:
+      path: grammar/bridge/ch01-content-93.html
+  - kind: legacy-page
+    id: content-118-ch01-content-94
+    source:
+      path: grammar/bridge/ch01-content-94.html
+  - kind: legacy-page
+    id: content-119-ch01-content-95
+    source:
+      path: grammar/bridge/ch01-content-95.html
+  - kind: legacy-page
+    id: content-120-ch01-content-96
+    source:
+      path: grammar/bridge/ch01-content-96.html
+  - kind: problem-set
+    id: problems-121-ch01-problems
+    layout: compact
+    range:
+      - 301
+      - 350
+    source:
+      path: grammar/bridge/ch01-problems.json
+  - kind: answer-grid
+    id: answers-122-ch01-problems
+    range:
+      - 301
+      - 350
+    source:
+      path: grammar/bridge/ch01-problems.json
+  - kind: explanations
+    id: explanations-123-ch01-problems
+    layout: compact
+    range:
+      - 301
+      - 350
+    source:
+      path: grammar/bridge/ch01-problems.json
+  - kind: chapter-opener
+    id: chapter-124
+    title: 관계사
+    subtitle: Part 8
+  - kind: legacy-page
+    id: content-125-ch01-content-97
+    source:
+      path: grammar/bridge/ch01-content-97.html
+  - kind: legacy-page
+    id: content-126-ch01-content-98
+    source:
+      path: grammar/bridge/ch01-content-98.html
+  - kind: legacy-page
+    id: content-127-ch01-content-99
+    source:
+      path: grammar/bridge/ch01-content-99.html
+  - kind: legacy-page
+    id: content-128-ch01-content-100
+    source:
+      path: grammar/bridge/ch01-content-100.html
+  - kind: legacy-page
+    id: content-129-ch01-content-101
+    source:
+      path: grammar/bridge/ch01-content-101.html
+  - kind: legacy-page
+    id: content-130-ch01-content-102
+    source:
+      path: grammar/bridge/ch01-content-102.html
+  - kind: legacy-page
+    id: content-131-ch01-content-103
+    source:
+      path: grammar/bridge/ch01-content-103.html
+  - kind: problem-set
+    id: problems-132-ch01-problems
+    layout: compact
+    range:
+      - 351
+      - 400
+    source:
+      path: grammar/bridge/ch01-problems.json
+  - kind: answer-grid
+    id: answers-133-ch01-problems
+    range:
+      - 351
+      - 400
+    source:
+      path: grammar/bridge/ch01-problems.json
+  - kind: explanations
+    id: explanations-134-ch01-problems
+    layout: compact
+    range:
+      - 351
+      - 400
+    source:
+      path: grammar/bridge/ch01-problems.json
+  - kind: chapter-opener
+    id: chapter-135
+    title: 분사
+    subtitle: Part 9
+  - kind: legacy-page
+    id: content-136-ch01-content-104
+    source:
+      path: grammar/bridge/ch01-content-104.html
+  - kind: legacy-page
+    id: content-137-ch01-content-105
+    source:
+      path: grammar/bridge/ch01-content-105.html
+  - kind: legacy-page
+    id: content-138-ch01-content-106
+    source:
+      path: grammar/bridge/ch01-content-106.html
+  - kind: legacy-page
+    id: content-139-ch01-content-107
+    source:
+      path: grammar/bridge/ch01-content-107.html
+  - kind: legacy-page
+    id: content-140-ch01-content-108
+    source:
+      path: grammar/bridge/ch01-content-108.html
+  - kind: legacy-page
+    id: content-141-ch01-content-109
+    source:
+      path: grammar/bridge/ch01-content-109.html
+  - kind: legacy-page
+    id: content-142-ch01-content-110
+    source:
+      path: grammar/bridge/ch01-content-110.html
+  - kind: legacy-page
+    id: content-143-ch01-content-111
+    source:
+      path: grammar/bridge/ch01-content-111.html
+  - kind: legacy-page
+    id: content-144-ch01-content-112
+    source:
+      path: grammar/bridge/ch01-content-112.html
+  - kind: legacy-page
+    id: content-145-ch01-content-113
+    source:
+      path: grammar/bridge/ch01-content-113.html
+  - kind: problem-set
+    id: problems-146-ch01-problems
+    layout: compact
+    range:
+      - 401
+      - 450
+    source:
+      path: grammar/bridge/ch01-problems.json
+  - kind: answer-grid
+    id: answers-147-ch01-problems
+    range:
+      - 401
+      - 450
+    source:
+      path: grammar/bridge/ch01-problems.json
+  - kind: explanations
+    id: explanations-148-ch01-problems
+    layout: compact
+    range:
+      - 401
+      - 450
+    source:
+      path: grammar/bridge/ch01-problems.json
+  - kind: chapter-opener
+    id: chapter-149
+    title: 부정사
+    subtitle: Part 10
+  - kind: legacy-page
+    id: content-150-ch01-content-114
+    source:
+      path: grammar/bridge/ch01-content-114.html
+  - kind: legacy-page
+    id: content-151-ch01-content-115
+    source:
+      path: grammar/bridge/ch01-content-115.html
+  - kind: legacy-page
+    id: content-152-ch01-content-116
+    source:
+      path: grammar/bridge/ch01-content-116.html
+  - kind: legacy-page
+    id: content-153-ch01-content-117
+    source:
+      path: grammar/bridge/ch01-content-117.html
+  - kind: legacy-page
+    id: content-154-ch01-content-118
+    source:
+      path: grammar/bridge/ch01-content-118.html
+  - kind: legacy-page
+    id: content-155-ch01-content-119
+    source:
+      path: grammar/bridge/ch01-content-119.html
+  - kind: legacy-page
+    id: content-156-ch01-content-120
+    source:
+      path: grammar/bridge/ch01-content-120.html
+  - kind: legacy-page
+    id: content-157-ch01-content-121
+    source:
+      path: grammar/bridge/ch01-content-121.html
+  - kind: legacy-page
+    id: content-158-ch01-content-122
+    source:
+      path: grammar/bridge/ch01-content-122.html
+  - kind: problem-set
+    id: problems-159-ch01-problems
+    layout: compact
+    range:
+      - 451
+      - 500
+    source:
+      path: grammar/bridge/ch01-problems.json
+  - kind: answer-grid
+    id: answers-160-ch01-problems
+    range:
+      - 451
+      - 500
+    source:
+      path: grammar/bridge/ch01-problems.json
+  - kind: explanations
+    id: explanations-161-ch01-problems
+    layout: compact
+    range:
+      - 451
+      - 500
+    source:
+      path: grammar/bridge/ch01-problems.json
+  - kind: chapter-opener
+    id: chapter-162
+    title: 동명사
+    subtitle: Part 11
+  - kind: legacy-page
+    id: content-163-ch01-content-123
+    source:
+      path: grammar/bridge/ch01-content-123.html
+  - kind: legacy-page
+    id: content-164-ch01-content-124
+    source:
+      path: grammar/bridge/ch01-content-124.html
+  - kind: legacy-page
+    id: content-165-ch01-content-125
+    source:
+      path: grammar/bridge/ch01-content-125.html
+  - kind: legacy-page
+    id: content-166-ch01-content-126
+    source:
+      path: grammar/bridge/ch01-content-126.html
+  - kind: legacy-page
+    id: content-167-ch01-content-127
+    source:
+      path: grammar/bridge/ch01-content-127.html
+  - kind: legacy-page
+    id: content-168-ch01-content-128
+    source:
+      path: grammar/bridge/ch01-content-128.html
+  - kind: legacy-page
+    id: content-169-ch01-content-129
+    source:
+      path: grammar/bridge/ch01-content-129.html
+  - kind: legacy-page
+    id: content-170-ch01-content-130
+    source:
+      path: grammar/bridge/ch01-content-130.html
+  - kind: problem-set
+    id: problems-171-ch01-problems
+    layout: compact
+    range:
+      - 501
+      - 550
+    source:
+      path: grammar/bridge/ch01-problems.json
+  - kind: answer-grid
+    id: answers-172-ch01-problems
+    range:
+      - 501
+      - 550
+    source:
+      path: grammar/bridge/ch01-problems.json
+  - kind: explanations
+    id: explanations-173-ch01-problems
+    layout: compact
+    range:
+      - 501
+      - 550
+    source:
+      path: grammar/bridge/ch01-problems.json

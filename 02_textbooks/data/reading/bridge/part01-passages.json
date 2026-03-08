@@ -20,7 +20,9 @@
             "To exclusively diagnose genetic diseases",
             "To clone organisms for agricultural purposes",
             "To analyze the entire human genome sequence"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 CRISPR-Cas9을 \"유기체의 DNA를 정밀하게 변경할 수 있게 해주는\" \"분자 가위\"라고 설명하며, 이는 DNA 편집 도구로서의 기능을 명확히 합니다."
         },
         {
           "id": "reading-bridge-q1-2",
@@ -33,7 +35,9 @@
             "The possibility of making heritable changes to human DNA",
             "The risk of the Cas9 enzyme cutting the wrong DNA sequence",
             "The intellectual property disputes among scientists"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 가장 논쟁적인 문제로 \"인간 생식세포 편집\"을 언급하며, 이러한 변경이 다음 세대로 유전될 수 있다는 점을 가장 큰 윤리적 우려로 제시합니다."
         },
         {
           "id": "reading-bridge-q1-3",
@@ -46,7 +50,9 @@
             "CRISPR-Cas9 technology is only used for improving crops.",
             "Changes made through human germline editing can be inherited.",
             "The use of CRISPR-Cas9 has sparked debate in the scientific community."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 CRISPR-Cas9이 유전적 결함 수정, 질병 치료, 농작물 개선 등 다양한 분야에 가능성을 열었다고 했으므로, 농작물 개선에만 사용된다는 것은 사실이 아닙니다."
         }
       ],
       "vocabulary": [
@@ -86,7 +92,9 @@
             "The sources and ecological impact of marine microplastics",
             "The benefits of using microbeads in cosmetic products",
             "The regulations governing industrial plastic waste"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 미세플라스틱의 출처(1차, 2차)와 그것이 해양 생태계에 미치는 영향(섭취, 독성 물질 농축, 생물농축)을 포괄적으로 다루고 있습니다."
         },
         {
           "id": "reading-bridge-q2-2",
@@ -99,7 +107,9 @@
             "They are mainly found in cosmetic products like face wash.",
             "They are less harmful to marine life than primary microplastics.",
             "They cannot absorb toxins from the water."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 2차 미세플라스틱이 \"병이나 봉투 같은 더 큰 플라스틱 쓰레기가 분해되어 생성된다\"고 명확히 설명합니다."
         },
         {
           "id": "reading-bridge-q2-3",
@@ -112,7 +122,9 @@
             "The creation of new primary microplastics in the ocean",
             "The immediate death of plankton that ingest plastic",
             "The removal of toxic pollutants from the ocean water"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 생물농축을 \"더 작은 유기체가 더 큰 유기체에게 먹히면서 플라스틱과 관련 독소가 먹이 사슬 위로 이동하는 과정\"이라고 설명합니다."
         }
       ],
       "vocabulary": [
@@ -152,7 +164,9 @@
             "A decrease in the price of urban housing",
             "Reduced demand for home appliances",
             "A shift towards rural living"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 1인 가구 증가가 \"개인을 대상으로 하는 기업들과 함께 '솔로 이코노미'의 성장을 촉진했다\"고 명시적으로 언급합니다."
         },
         {
           "id": "reading-bridge-q3-2",
@@ -165,7 +179,9 @@
             "Increased loneliness and social isolation",
             "A decline in technological innovation",
             "A reduction in public transportation use"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 사회적 차원에서 \"증가하는 외로움과 사회적 고립에 대한 우려가 커지고 있다\"고 언급하며, 이것이 사회적 과제임을 보여줍니다."
         },
         {
           "id": "reading-bridge-q3-3",
@@ -178,7 +194,9 @@
             "An increase in the number of elderly people",
             "The expansion of suburban areas",
             "People prioritizing their professional lives"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 1인 가구 증가 요인으로 늦은 결혼, 고령화, 개인의 경력과 독립성 강조를 언급했지만, 교외 지역의 확장은 언급하지 않았습니다."
         }
       ],
       "vocabulary": [
@@ -214,7 +232,9 @@
             "Providing recurring access to services for a regular fee",
             "Encouraging customers to purchase products in bulk",
             "Offering products exclusively through physical stores"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 구독 경제를 \"일회성 소유 모델에서 정기적인 요금을 내고 반복적으로 접근하는 모델로의 전환\"이라고 정의합니다."
         },
         {
           "id": "reading-bridge-q4-2",
@@ -227,7 +247,9 @@
             "Consumers feeling overwhelmed by too many monthly payments",
             "A decline in the quality of subscription-based products",
             "The technical difficulty of managing multiple subscriptions"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 \"구독 피로\"를 \"소비자들이 매달 지불하는 서비스 수에 압도되어 비필수적인 것들을 취소하기 시작하는 것\"이라고 설명합니다."
         },
         {
           "id": "reading-bridge-q4-3",
@@ -240,7 +262,9 @@
             "It requires less marketing and innovation.",
             "It provides a stable and predictable source of income.",
             "It is less competitive than traditional business models."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 기업들이 \"예측 가능하고 반복적인 수익\"의 가능성 때문에 구독 모델에 매력을 느낀다고 설명합니다."
         }
       ],
       "vocabulary": [
@@ -280,7 +304,9 @@
             "To reduce a building to its essential components to achieve serenity",
             "To use a wide variety of bright colors and materials",
             "To prioritize the quantity of rooms over their quality"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 미니멀리즘 건축이 \"평온함을 달성하기 위해 건물을 본질적인 요소로 축소하는 것\"을 목표로 한다고 설명합니다."
         },
         {
           "id": "reading-bridge-q5-2",
@@ -293,7 +319,9 @@
             "The use of a limited selection of materials",
             "A focus on clean lines and pure forms",
             "The intention to create a sense of tranquility"
-          ]
+          ],
+          "answer": 1,
+          "explanation": "미니멀리즘 건축은 \"비본질적인 것을 제거\"하고 \"깨끗한 선\"을 강조하므로, 화려하고 장식적인 요소의 사용은 그 특징이 아닙니다."
         },
         {
           "id": "reading-bridge-q5-3",
@@ -306,7 +334,9 @@
             "removing unnecessary elements to reduce distractions.",
             "making buildings look identical to each other.",
             "using materials that are easy to clean."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 \"주의를 산만하게 하는 것들을 제거하고\" \"비본질적인 것을 벗겨냄으로써\" 인간 경험을 풍요롭게 한다고 제안합니다."
         }
       ],
       "vocabulary": [
@@ -346,7 +376,9 @@
             "It contained a decree from a very famous pharaoh.",
             "It presented the same text in three different scripts, one of which was known.",
             "It was the first time Demotic script had ever been found."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "로제타석의 중요성은 동일한 텍스트가 알려진 언어(고대 그리스어)를 포함한 세 가지 다른 문자로 쓰여 있어 해독의 열쇠를 제공했다는 점에 있습니다."
         },
         {
           "id": "reading-bridge-q6-2",
@@ -359,7 +391,9 @@
             "An ancient Egyptian priest",
             "Jean-François Champollion",
             "The ruler who issued the decree"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 \"프랑스 학자 장프랑수아 샹폴리옹의 뛰어난 연구 덕분에 최종적인 돌파구가 마련되었다\"고 명시하고 있습니다."
         },
         {
           "id": "reading-bridge-q6-3",
@@ -372,7 +406,9 @@
             "a less complicated version of Demotic script.",
             "only used for recording financial transactions.",
             "a direct translation of the Ancient Greek alphabet."
-          ]
+          ],
+          "answer": 1,
+          "explanation": "샹폴리옹은 상형문자가 순전히 상징적인 것이 아니라 \"알파벳 및 음절 소리의 복잡한 체계\"를 나타낸다고 정확하게 추론했습니다."
         }
       ],
       "vocabulary": [
@@ -412,7 +448,9 @@
             "Individuals with low competence often overestimate their skills.",
             "Experts are unable to teach their skills to others.",
             "Most people can accurately assess their own abilities."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "더닝-크루거 효과의 핵심은 \"능력이 낮은 사람들이 자신의 능력을 과대평가하는 경향\"이 있다는 것입니다."
         },
         {
           "id": "reading-bridge-q7-2",
@@ -425,7 +463,9 @@
             "They are not interested in comparing themselves to others.",
             "They lack the metacognitive skills to evaluate their performance.",
             "They are often criticized by those with lower abilities."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 유능한 사람들이 \"자신에게 쉬운 과제가 다른 사람들에게도 쉬울 것이라고 가정\"하기 때문에 자신의 능력을 과소평가할 수 있다고 설명합니다."
         },
         {
           "id": "reading-bridge-q7-3",
@@ -438,7 +478,9 @@
             "social conformity.",
             "self-awareness.",
             "creative thinking."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "이 효과는 자신의 결함을 인지하는 능력(초인지)의 부족과 관련이 있으므로, 근본적으로 자기 인식(self-awareness)의 문제입니다."
         }
       ],
       "vocabulary": [
@@ -478,7 +520,9 @@
             "To provide a list of diseases caused by viruses and fungi",
             "To describe how to eliminate all microorganisms from the body",
             "To compare the human microbiome with that of other animals"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 인간 마이크로바이옴의 개념을 정의하고, 그것이 건강에 중요한 역할을 한다는 점을 설명하는 것을 주된 목적으로 합니다."
         },
         {
           "id": "reading-bridge-q8-2",
@@ -491,7 +535,9 @@
             "It assists in breaking down certain foods and regulating immunity.",
             "It is solely responsible for causing autoimmune diseases.",
             "It protects the body by attacking all foreign microbes without distinction."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 마이크로바이옴이 \"우리 몸이 분해할 수 없는 음식을 소화하고\", \"면역 체계를 조절하는\" 등의 중요한 역할을 한다고 언급합니다."
         },
         {
           "id": "reading-bridge-q8-3",
@@ -504,7 +550,9 @@
             "A healthy microbiome has a symbiotic relationship with the human body.",
             "The microbiome's primary function is to cause disease.",
             "The composition of the microbiome is permanent and never changes."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 건강한 마이크로바이옴과 인체 사이의 \"우리 건강에 결정적인 공생 관계\"를 강조합니다."
         }
       ],
       "vocabulary": [
@@ -544,7 +592,9 @@
             "To make cryptocurrency trading illegal",
             "To limit financial services to a select group of users",
             "To replace blockchain technology with a more secure system"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "DeFi는 \"은행과 같은 중앙 중개 기관 없이 운영되는 개방적이고 무허가적인 금융 시스템을 만드는 것\"을 목표로 합니다."
         },
         {
           "id": "reading-bridge-q9-2",
@@ -557,7 +607,9 @@
             "Government-controlled databases",
             "Public blockchains like Ethereum",
             "Peer-to-peer file-sharing networks"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 DeFi 애플리케이션이 \"주로 이더리움과 같은 공용 블록체인에서 실행된다\"고 명시합니다."
         },
         {
           "id": "reading-bridge-q9-3",
@@ -570,7 +622,9 @@
             "The exclusion of people without bank accounts",
             "Vulnerabilities in the underlying smart contracts",
             "Overly strict government regulations"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 DeFi의 위험 요소로 \"스마트 계약 취약성, 시장 변동성, 규제 불확실성\"을 언급합니다."
         }
       ],
       "vocabulary": [
@@ -610,7 +664,9 @@
             "To concentrate all commercial activity in a single downtown area",
             "To design cities exclusively for remote workers",
             "To expand highways to reduce traffic congestion"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "15분 도시의 핵심 아이디어는 \"모든 주민이 집에서 15분 도보 또는 자전거 거리 내에서 일상 필수품에 접근할 수 있도록 보장하는 것\"입니다."
         },
         {
           "id": "reading-bridge-q10-2",
@@ -623,7 +679,9 @@
             "To reduce reliance on automobiles and promote sustainability",
             "To encourage residents to move to rural areas",
             "To make long-distance commuting more efficient"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "주요 목표 중 하나는 \"자동차에 대한 의존도를 줄여\" \"더 지속 가능하고 환경 친화적인 생활 방식을 촉진하는 것\"입니다."
         },
         {
           "id": "reading-bridge-q10-3",
@@ -636,7 +694,9 @@
             "encouraging more local interaction through walking and cycling.",
             "building large, centralized community centers.",
             "implementing a neighborhood surveillance system."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 \"걷기와 자전거 타기를 장려함으로써 사람들이 지역에서 더 많이 상호작용하게 되어 더 강한 공동체 의식을 조성한다\"고 제안합니다."
         }
       ],
       "vocabulary": [
@@ -676,7 +736,9 @@
             "To explain the concept of the growth mindset and its educational benefits.",
             "To provide a biography of the psychologist Carol Dweck.",
             "To argue that intelligence is genetically predetermined."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "이 글은 '성장 마인드셋'의 개념을 소개하고, 그것이 학업 성취도, 동기 부여 등에 미치는 긍정적인 교육적 이점을 설명하는 것을 주된 목적으로 합니다."
         },
         {
           "id": "reading-bridge-q11-2",
@@ -689,7 +751,9 @@
             "They believe their effort was insufficient.",
             "They are more likely to give up without persisting.",
             "They ask for help from educators and peers."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 고정 마인드셋을 가진 사람들이 \"좌절에 직면했을 때 쉽게 포기하는(give up easily when faced with setbacks)\" 경향이 있다고 명시합니다."
         },
         {
           "id": "reading-bridge-q11-3",
@@ -702,7 +766,9 @@
             "Increased ability to cope with difficulties.",
             "A guaranteed path to financial success.",
             "A positive attitude towards challenges."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 학업 성취도, 동기 부여, 회복탄력성 향상을 이점으로 언급했지만, '보장된 경제적 성공'에 대해서는 언급하지 않았습니다."
         }
       ],
       "vocabulary": [
@@ -742,7 +808,9 @@
             "The importance of the gut microbiome for human health.",
             "The history of medical research on microorganisms.",
             "The link between diet and immune system disorders."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 장내 마이크로바이옴이 소화, 비타민 합성, 면역 조절 및 정신 건강에 미치는 중요한 역할을 포괄적으로 다루고 있습니다."
         },
         {
           "id": "reading-bridge-q12-2",
@@ -755,7 +823,9 @@
             "A communication link between gut bacteria and the brain.",
             "A type of beneficial bacteria found in the digestive system.",
             "A term for the physical structure of the intestines."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 '장-뇌 축'을 \"장과 뇌 사이의 강력한 연결(a strong connection between the gut and the brain)\"이라고 명확히 설명합니다."
         },
         {
           "id": "reading-bridge-q12-3",
@@ -768,7 +838,9 @@
             "Directly controlling muscle movement.",
             "Influencing mood and mental states.",
             "Helping to regulate the immune system."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 소화, 비타민 합성, 면역 조절, 기분 영향 등을 기능으로 언급했지만, '근육 움직임을 직접 제어한다'는 내용은 없습니다."
         }
       ],
       "vocabulary": [
@@ -808,7 +880,9 @@
             "The political structure of 14th-century Italy.",
             "The decline of the medieval scholastic tradition.",
             "The biography of the humanist scholar Petrarch."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 르네상스가 인문주의(humanism)의 부활에 의해 촉진되었으며, 인문주의가 르네상스 시대의 사상과 문화에 어떤 영향을 미쳤는지를 중심으로 설명합니다."
         },
         {
           "id": "reading-bridge-q13-2",
@@ -821,7 +895,9 @@
             "The advancement of modern scientific methods.",
             "The rediscovery and study of classical Greek and Roman texts.",
             "The development of new economic theories."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 인문주의 학자들이 중세의 신학적 관심에서 벗어나 \"고대 그리스와 로마의 고전 텍스트와 철학에 대한 새로운 관심\"을 가졌다고 설명합니다."
         },
         {
           "id": "reading-bridge-q13-3",
@@ -834,7 +910,9 @@
             "anthropocentric",
             "dogmatic",
             "mystical"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 인문주의의 세계관을 \"인간 중심적인(anthropocentric)\"이라고 직접적으로 언급하며, 이는 인간의 잠재력과 성취를 찬양하는 것이었습니다."
         }
       ],
       "vocabulary": [
@@ -874,7 +952,9 @@
             "The language one speaks can influence their perception and thought.",
             "Learning multiple languages leads to a higher intelligence.",
             "The vocabulary for colors is universal across all cultures."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문의 핵심 아이디어는 사피어-워프 가설, 즉 우리가 사용하는 언어가 우리의 인식과 사고에 영향을 미칠 수 있다는 것입니다."
         },
         {
           "id": "reading-bridge-q14-2",
@@ -887,7 +967,9 @@
             "The strong version is widely accepted, while the moderate version is discredited.",
             "The strong version applies only to ancient languages, while the moderate version applies to modern ones.",
             "The strong version was proposed by Sapir, while the moderate version was proposed by Whorf."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 강한 버전은 언어가 사고를 '결정한다(determines)'고 주장하는 반면, 온건한 버전은 '영향을 미친다(influences)'고 주장한다고 명확히 구분합니다."
         },
         {
           "id": "reading-bridge-q14-3",
@@ -900,7 +982,9 @@
             "The complexity of kinship terms in some cultures.",
             "The use of formal and informal pronouns.",
             "The direction in which a language is written."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 언어적 상대성의 예시로 \"다른 언어에서 눈에 대한 단어 수가 다른 것\"을 들어, 이것이 인식에 영향을 줄 수 있음을 보여줍니다."
         }
       ],
       "vocabulary": [
@@ -940,7 +1024,9 @@
             "The biography of general manager Billy Beane.",
             "The impact of data analytics on sports, exemplified by \"Moneyball.\"",
             "A comparison of different player evaluation metrics."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 '머니볼' 사례를 통해 데이터 분석이 스포츠, 특히 팀 구성과 전략 수립에 어떤 혁명적인 영향을 미쳤는지를 중점적으로 다룹니다."
         },
         {
           "id": "reading-bridge-q15-2",
@@ -953,7 +1039,9 @@
             "Their traditional scouts had all retired.",
             "They were mandated to do so by the league.",
             "They had a surplus of statistically-minded players."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 오클랜드 애슬레틱스가 \"심각하게 제한된 예산에 직면하여(Faced with a severely limited budget)\" 머니볼 전략을 채택했다고 명시합니다."
         },
         {
           "id": "reading-bridge-q15-3",
@@ -966,7 +1054,9 @@
             "Evaluating players based on objective statistical analysis.",
             "Building a team with the highest possible payroll.",
             "Focusing solely on a player's defensive skills."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 세이버메트릭스가 \"객관적이고, 종종 간과되는 통계\"에 초점을 맞춘 엄격한 통계적 접근법이라고 설명합니다."
         }
       ],
       "vocabulary": [
@@ -1006,7 +1096,9 @@
             "Qubits can exist in multiple states at once, while bits can only be in one.",
             "Qubits are more stable and less prone to errors.",
             "Qubits are used for data storage, while bits are used for processing."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 큐비트가 중첩 원리에 따라 '0, 1, 또는 동시에 둘 다'로 존재할 수 있는 반면, 고전 비트는 0 또는 1 중 하나의 상태만 가질 수 있다고 설명합니다."
         },
         {
           "id": "reading-bridge-q16-2",
@@ -1019,7 +1111,9 @@
             "The phenomenon where a qubit can be in a combination of states simultaneously.",
             "A mathematical algorithm for factoring large numbers.",
             "The process of linking multiple classical computers together."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 중첩(superposition)을 \"큐비트가 0, 1, 또는 동시에 둘 다로 존재할 수 있게 하는\" 현상으로 명확하게 정의합니다."
         },
         {
           "id": "reading-bridge-q16-3",
@@ -1032,7 +1126,9 @@
             "The lack of problems that quantum computers can solve.",
             "The slow processing speed of individual qubits.",
             "The ethical concerns surrounding quantum technology."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 \"큐비트의 섬세한 양자 상태를 유지하는 것\"이 환경 요인에 의해 쉽게 방해받기 때문에 중요한 공학적 과제라고 언급합니다."
         }
       ],
       "vocabulary": [
@@ -1072,7 +1168,9 @@
             "To restore ecosystems to a self-sustaining condition.",
             "To eliminate all human intervention in nature.",
             "To focus conservation efforts on plant life only."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 재야생화가 \"생태계 전체를 더 자가 조절적인 상태로 복원하는 것\"을 목표로 한다고 설명합니다."
         },
         {
           "id": "reading-bridge-q17-2",
@@ -1085,7 +1183,9 @@
             "A species that has been newly discovered by scientists.",
             "The first species to be protected by conservation laws.",
             "A species that is easy to reintroduce into the wild."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 핵심종을 \"그들의 풍부함에 비해 환경에 불균형적으로 큰 영향을 미치는\" 종으로 정의합니다."
         },
         {
           "id": "reading-bridge-q17-3",
@@ -1098,7 +1198,9 @@
             "The complete disappearance of beavers.",
             "The recovery of vegetation previously overgrazed by elk.",
             "The drying up of the park's rivers."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 늑대 재도입이 엘크 개체 수를 조절했고, 그 결과 \"과도하게 방목된 초목이 회복되기 시작했다\"고 설명합니다."
         }
       ],
       "vocabulary": [
@@ -1138,7 +1240,9 @@
             "To explain the characteristics of Post-Impressionism and its departure from Impressionism.",
             "To list all the artists associated with the Post-Impressionist movement.",
             "To describe the techniques used in creating museum-quality art."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 후기 인상주의가 인상주의에서 벗어나 개인적 감정, 상징, 구조를 강조한 특징들을 설명하는 것을 주된 목적으로 합니다."
         },
         {
           "id": "reading-bridge-q18-2",
@@ -1151,7 +1255,9 @@
             "He sought to emphasize the underlying structure and form of subjects.",
             "He painted exclusively historical and mythological scenes.",
             "He rejected the use of oil paints in favor of watercolors."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 세잔이 \"자신의 주제의 기저에 있는 구조와 기하학에 집중했다\"고 명시하며, 이는 인상주의의 목표와 다릅니다."
         },
         {
           "id": "reading-bridge-q18-3",
@@ -1164,7 +1270,9 @@
             "They shared a desire to go beyond the limits of Impressionism.",
             "They focused exclusively on painting natural landscapes.",
             "They rejected the use of symbolic meaning in their art."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 후기 인상주의 화가들이 \"인상주의의 객관적 관찰을 넘어서 예술의 경계를 확장하려는 공통된 열망을 공유했다\"고 말합니다."
         }
       ],
       "vocabulary": [
@@ -1204,7 +1312,9 @@
             "The concept of loss aversion in behavioral economics.",
             "Strategies for successful stock market investing.",
             "The role of happiness in financial decisions."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 행동 경제학의 핵심 개념 중 하나인 '손실 회피'를 정의하고, 그 예시와 적용 사례를 중심으로 설명하고 있습니다."
         },
         {
           "id": "reading-bridge-q19-2",
@@ -1217,7 +1327,9 @@
             "irrationally sell winning stocks too early.",
             "avoid all forms of financial risk.",
             "make decisions based purely on rational calculation."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 손실 회피를 \"동등한 이익의 즐거움보다 손실의 고통을 더 강력하게 느끼는 인간의 경향\"이라고 정의합니다."
         },
         {
           "id": "reading-bridge-q19-3",
@@ -1230,7 +1342,9 @@
             "Framing a price difference as a surcharge to be avoided.",
             "Creating a complex investment portfolio to diversify risk.",
             "Providing customers with detailed statistical information."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 마케팅의 예시로, 동일한 금액 차이라도 '할인'이라는 이득보다 '추가 요금'이라는 손실을 피하는 방식으로 제시하는 것이 더 효과적이라고 설명합니다."
         }
       ],
       "vocabulary": [
@@ -1270,7 +1384,9 @@
             "Understanding the Concept of Social Capital",
             "How to Build a Close-Knit Neighborhood",
             "The History of Sociological Theories"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 '사회적 자본'의 개념을 정의하고, 그 가치와 긍정적 및 부정적 측면을 설명하는 것을 주된 내용으로 합니다."
         },
         {
           "id": "reading-bridge-q20-2",
@@ -1283,7 +1399,9 @@
             "In government institutions and laws.",
             "In the relationships and networks between people.",
             "In the physical infrastructure of a community."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 사회적 자본이 \"개인들 간의 관계 속에 내재되어 있다(embedded in the relationships among individuals)\"고 명확히 밝힙니다."
         },
         {
           "id": "reading-bridge-q20-3",
@@ -1296,7 +1414,9 @@
             "A guaranteed increase in personal income.",
             "Willingness of community members to cooperate.",
             "Access to emotional support from others."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 사회적 자본의 이점으로 공동체 문제 해결, 기회 접근, 협력, 정서적 지원 등을 언급했지만, '보장된 개인 소득 증가'는 언급하지 않았습니다."
         }
       ],
       "vocabulary": [
@@ -1336,7 +1456,9 @@
             "It is too complex for most researchers to operate.",
             "It may lead to the creation of uncontrollable artificial intelligence.",
             "It relies on algorithms that are not yet fully understood."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 양자 컴퓨터가 현재의 암호화 시스템을 빠르게 해독할 수 있어 현대 암호 기술에 \"중대한 위협\"이 된다고 명시합니다."
         },
         {
           "id": "reading-bridge-q21-2",
@@ -1349,7 +1471,9 @@
             "It can represent both 0 and 1 at the same time.",
             "It processes information much slower than a classical bit.",
             "It is used in quantum computers instead of classical bits."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 큐비트가 중첩을 통해 한 번에 방대한 계산을 가능하게 한다고 설명하므로, 고전 비트보다 느리다는 것은 사실이 아닙니다."
         },
         {
           "id": "reading-bridge-q21-3",
@@ -1362,7 +1486,9 @@
             "A new type of algorithm called Shor's algorithm.",
             "Encryption methods that are secure against quantum attacks.",
             "A global network to monitor quantum computing activities."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 양자 컴퓨터의 위협에 대응하여 \"양자 저항 암호(quantum-resistant cryptography)\"를 개발하고 있다고 언급합니다."
         }
       ],
       "vocabulary": [
@@ -1402,7 +1528,9 @@
             "They compete with sea urchins for kelp as a food source.",
             "They maintain the ecosystem's balance by controlling the sea urchin population.",
             "They are the most abundant species in the North Pacific."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 해달이 성게 개체 수를 통제함으로써 켈프 숲의 건강과 안정을 보장하여 생태계의 균형을 유지한다고 설명합니다."
         },
         {
           "id": "reading-bridge-q22-2",
@@ -1415,7 +1543,9 @@
             "The overall biodiversity of the area would increase.",
             "Small fish would lose their primary predator.",
             "The coastal ecosystem would remain largely unchanged."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 해달이 없으면 성게가 켈프를 게걸스럽게 먹어치워 켈프 숲을 파괴할 것이라고 설명합니다."
         },
         {
           "id": "reading-bridge-q22-3",
@@ -1428,7 +1558,9 @@
             "Its absence can cause a dramatic change in the ecosystem.",
             "It primarily helps to build the physical structure of a habitat.",
             "It is typically a plant, like kelp."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 \"핵심종이 없다면, 생태계는 극적으로 달라지거나 완전히 존재하지 않게 될 것\"이라고 정의합니다."
         }
       ],
       "vocabulary": [
@@ -1468,7 +1600,9 @@
             "A social space distinct from home and work.",
             "A virtual community found on the internet.",
             "A designated area for political protests."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 '제3의 장소'를 \"가정('제1의 장소')과 직장('제2의 장소')과 분리된 사회적 환경\"으로 명확하게 정의합니다."
         },
         {
           "id": "reading-bridge-q23-2",
@@ -1481,7 +1615,9 @@
             "Allowing people to build new relationships.",
             "Serving as a neutral ground for social interaction.",
             "Promoting civic engagement."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 공동체 의식 함양, 관계 형성, 시민 참여 증진 등을 기능으로 언급했지만, '공식적인 교육' 기회 제공은 언급하지 않았습니다."
         },
         {
           "id": "reading-bridge-q23-3",
@@ -1494,7 +1630,9 @@
             "Modern suburban residents.",
             "Sociologist Ray Oldenburg.",
             "A cafe owner's association."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 이 용어가 \"사회학자 레이 올덴버그에 의해 만들어졌다(Coined by sociologist Ray Oldenburg)\"고 명시합니다."
         }
       ],
       "vocabulary": [
@@ -1534,7 +1672,9 @@
             "Linear economies follow a \"take-make-dispose\" pattern, while circular economies aim to eliminate waste.",
             "Linear economies are based on renewable resources, while circular economies use finite resources.",
             "Linear economies are a modern concept, while circular economies are a traditional model."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 선형 경제를 \"채취-생산-폐기\" 모델로, 순환 경제는 \"쓰레기를 원천적으로 제거\"하는 것을 목표로 한다고 대조합니다."
         },
         {
           "id": "reading-bridge-q24-2",
@@ -1547,7 +1687,9 @@
             "Keeping materials and products in continuous use.",
             "Disposing of all waste in designated landfills.",
             "Separating economic growth from environmental concerns."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 순환 경제의 핵심 원칙 중 하나로 \"제품과 자재를 가능한 한 오랫동안 계속 사용하도록 유지하는 것\"을 명시합니다."
         },
         {
           "id": "reading-bridge-q24-3",
@@ -1560,7 +1702,9 @@
             "To lower the cost of raw materials for businesses.",
             "To encourage consumers to buy new products more frequently.",
             "To move all manufacturing processes overseas."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 순환 경제 모델의 목표가 \"더 탄력 있고 지속 가능한 미래를 만드는 것\"이라고 마지막 문장에서 밝힙니다."
         }
       ],
       "vocabulary": [
@@ -1600,7 +1744,9 @@
             "The influence of Japanese art on European artists.",
             "A collection of Ukiyo-e prints owned by Claude Monet.",
             "The European style of art that influenced Japan."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 '자포니즘'을 \"일본 미술이 유럽 예술가들에게 미친 영향\"을 지칭하는 용어라고 설명합니다."
         },
         {
           "id": "reading-bridge-q25-2",
@@ -1613,7 +1759,9 @@
             "A focus on historical and religious subjects.",
             "Asymmetrical compositions and flat areas of color.",
             "The exclusive use of black and white ink."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 우키요에 판화의 특징으로 \"비대칭적인 구성\"과 \"생생한 색의 평평한 면\" 등을 언급합니다."
         },
         {
           "id": "reading-bridge-q25-3",
@@ -1626,7 +1774,9 @@
             "Leonardo da Vinci",
             "Vincent van Gogh",
             "Artists of the Impressionist movement"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 모네, 드가, 반 고흐를 영향을 받은 예술가로 언급했지만, 르네상스 시대의 레오나르도 다빈치는 언급하지 않았습니다."
         }
       ],
       "vocabulary": [
@@ -1666,7 +1816,9 @@
             "It was established mainly for diplomatic missions.",
             "It was the first paved road connecting Europe and Asia.",
             "It was primarily used for seasonal migration of peoples."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 실크로드가 단순한 무역로를 넘어 \"문화, 종교, 기술 교류를 위한 필수적인 통로\"였다고 명시합니다."
         },
         {
           "id": "reading-bridge-q26-2",
@@ -1679,7 +1831,9 @@
             "The printing press.",
             "Papermaking.",
             "The production of silk."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 \"중국의 발명품인 제지술(papermaking)\"이 실크로드를 따라 서쪽으로 이동했다고 구체적인 예시를 듭니다."
         },
         {
           "id": "reading-bridge-q26-3",
@@ -1692,7 +1846,9 @@
             "The transmission of Buddhism from India to East Asia.",
             "The introduction of Zoroastrianism to China.",
             "The development of Hinduism in Central Asia."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 종교 교류의 예시로 \"불교가 발상지인 인도에서 중국과 나머지 동아시아로 퍼져나갔다\"고 명확하게 언급합니다."
         }
       ],
       "vocabulary": [
@@ -1732,7 +1888,9 @@
             "A phenomenon where people perform better when being observed.",
             "A cognitive shortcut that helps in making quick decisions.",
             "A state of confusion caused by having too much information."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 더닝-크루거 효과를 \"능력이 낮은 사람들이 자신의 능력을 과대평가하는 경향이 있는 인지 편향\"이라고 정의합니다."
         },
         {
           "id": "reading-bridge-q27-2",
@@ -1745,7 +1903,9 @@
             "They believe that confidence is more important than actual skill.",
             "They compare themselves only to those who are even less skilled.",
             "They are taught from a young age to always be self-assured."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 무능한 사람들이 자신의 수행 능력을 정확하게 평가하는 데 필요한 \"메타인지 능력\"이 부족하기 때문이라고 설명합니다."
         },
         {
           "id": "reading-bridge-q27-3",
@@ -1758,7 +1918,9 @@
             "They may underestimate their competence relative to others.",
             "They are immune to all forms of cognitive bias.",
             "They believe that most tasks are difficult for everyone."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 고도로 숙련된 개인들이 \"자신에게 쉬운 과업이 다른 사람들에게도 쉬울 것이라고 잘못 가정\"하여 자신의 상대적 능력을 과소평가할 수 있다고 설명합니다."
         }
       ],
       "vocabulary": [
@@ -1798,7 +1960,9 @@
             "A community of microorganisms living in the digestive tract.",
             "A medical condition related to poor digestion.",
             "A set of vitamins essential for human health."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 장내 미생물 군집을 \"소화관에 서식하는 방대하고 다양한 미생물 군집\"이라고 정의합니다."
         },
         {
           "id": "reading-bridge-q28-2",
@@ -1811,7 +1975,9 @@
             "Regulating the human immune system.",
             "Breaking down all types of food consumed.",
             "Helping the body distinguish harmful pathogens."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 장내 미생물 군집이 '특정 섬유질'과 같은 일부 식품 성분의 소화를 돕는다고 했지만, '모든 종류의 음식'을 분해한다고는 하지 않았습니다."
         },
         {
           "id": "reading-bridge-q28-3",
@@ -1824,7 +1990,9 @@
             "Homeostasis",
             "Symbiosis",
             "Inflammation"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 장내 미생물 군집의 불균형을 \"디스바이오시스(dysbiosis)로 알려진 상태\"라고 명시합니다."
         }
       ],
       "vocabulary": [
@@ -1864,7 +2032,9 @@
             "Linguistic structure and linguistic function.",
             "Linguistic universalism and linguistic specificity.",
             "Linguistic competence and linguistic performance."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 사피어-워프 가설의 두 가지 형태로 '강한' 버전인 \"언어 결정론(linguistic determinism)\"과 '약한' 버전인 \"언어 상대성(linguistic relativity)\"을 제시합니다."
         },
         {
           "id": "reading-bridge-q29-2",
@@ -1877,7 +2047,9 @@
             "It is less accepted than the \"weak\" version.",
             "It has been proven correct by studies on color perception.",
             "It is a new theory that is gaining popularity."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 '약한' 버전이 \"오늘날 더 널리 받아들여진다\"고 말하며, 이는 '강한' 버전이 상대적으로 덜 받아들여진다는 것을 의미합니다."
         },
         {
           "id": "reading-bridge-q29-3",
@@ -1890,7 +2062,9 @@
             "The structure of a language's grammar reflects its culture's social hierarchy.",
             "Having more words for colors may improve the ability to differentiate them.",
             "The number of words in a language's vocabulary is declining."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 언어 상대성의 예시로, \"색깔에 대해 더 뚜렷한 단어를 가진 언어의 화자들이 그 색깔들의 미묘한 차이를 더 잘 구별한다\"는 연구 결과를 제시합니다."
         }
       ],
       "vocabulary": [
@@ -1930,7 +2104,9 @@
             "Large, chimney-like rock formations made of salt.",
             "Cold seeps on the ocean floor that release methane.",
             "Areas on the seafloor where sunlight supports photosynthesis."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 열수구를 \"지열로 가열된 물이 분출되는 해저의 균열\"이라고 첫 문장에서 명확히 정의합니다."
         },
         {
           "id": "reading-bridge-q30-2",
@@ -1943,7 +2119,9 @@
             "Chemosynthesis, using chemical energy from the vents.",
             "Bioluminescence produced by giant tube worms.",
             "The direct absorption of heat as an energy source."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 열수구의 생명체가 광합성이 아닌 \"화학합성(chemosynthesis)\"에 기반을 두고 있으며, 황화수소 같은 화합물로부터 화학 에너지를 이용한다고 설명합니다."
         },
         {
           "id": "reading-bridge-q30-3",
@@ -1956,7 +2134,9 @@
             "Complete darkness.",
             "Abundant sunlight.",
             "Presence of mineral-rich water."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 열수구 환경의 특징으로 고압, 극한의 온도, 완전한 어둠, 광물이 풍부한 물을 언급했지만, '풍부한 햇빛'은 언급하지 않았습니다."
         }
       ],
       "vocabulary": [
@@ -1996,7 +2176,9 @@
             "The passive reception of new information",
             "A teaching method focused on group discussion",
             "The skill of reading assignments at a high speed"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 메타인지를 \"종종 '자신의 생각에 대해 생각하는 것'으로 묘사된다\"고 명확히 정의합니다."
         },
         {
           "id": "reading-bridge-q31-2",
@@ -2009,7 +2191,9 @@
             "Setting goals and monitoring one's own understanding",
             "Completing tasks as quickly as possible without review",
             "Memorizing key terms without understanding their context"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 메타인지 전략의 예시로 \"구체적인 목표를 설정하고\", \"주기적으로 멈춰서 주요 아이디어를 제대로 파악하고 있는지 자문한다\"고 설명합니다."
         },
         {
           "id": "reading-bridge-q31-3",
@@ -2022,7 +2206,9 @@
             "A temporary boost in short-term memory",
             "Improved academic results and better information retention",
             "Greater enjoyment of social activities related to school"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 메타인지 전략의 이점으로 \"향상된 학업 성취도, 더 나은 정보 기억력, 그리고 복잡한 주제에 대한 더 깊은 이해\"를 언급합니다."
         }
       ],
       "vocabulary": [
@@ -2062,7 +2248,9 @@
             "The excessive and improper use of antibiotics",
             "The high cost of modern medical treatments",
             "The decline in global sanitation standards"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 항생제 내성이 \"인간과 농업 모두에서 이러한 약물들의 남용과 오용\"에 의해 가속화된다고 명시합니다."
         },
         {
           "id": "reading-bridge-q32-2",
@@ -2075,7 +2263,9 @@
             "The bacteria transform into a completely new species.",
             "The antibiotics become stronger and more effective over time.",
             "The human body develops a natural immunity to the bacteria."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 \"민감한 것들은 죽지만 내성이 있는 균주들은 살아남아 증식할 수 있다\"고 설명하며 자연선택 과정을 보여줍니다."
         },
         {
           "id": "reading-bridge-q32-3",
@@ -2088,7 +2278,9 @@
             "The development of entirely new viral diseases.",
             "Routine surgeries could become highly dangerous.",
             "The effectiveness of cornerstone modern medicines is reduced."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 항생제 내성의 결과로 다양한 박테리아 관련 문제를 언급했지만, '바이러스성' 질병의 발생은 언급하지 않았습니다."
         }
       ],
       "vocabulary": [
@@ -2128,7 +2320,9 @@
             "A condition of being free from disturbing passions",
             "A philosophical belief in the pointlessness of existence",
             "A feeling of constant, irrational anger"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 아파테이아를 \"파괴적인 감정이나 격정의 방해로부터 자유로운 평정심 또는 평온의 상태\"라고 정의합니다."
         },
         {
           "id": "reading-bridge-q33-2",
@@ -2141,7 +2335,9 @@
             "A lack of social interaction and community",
             "False judgments about what is good or bad",
             "The influence of non-Stoic philosophical schools"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 스토아학파가 파괴적인 감정이 \"무엇이 진정으로 좋고 나쁜지에 대한 그릇된 판단\"에서 비롯된다고 믿었다고 설명합니다."
         },
         {
           "id": "reading-bridge-q33-3",
@@ -2154,7 +2350,9 @@
             "Suppressing all feelings, both positive and negative",
             "Focusing solely on accumulating wealth and status",
             "Engaging in intense physical exercise to distract the mind"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 \"이성을 사용하여 우리가 통제할 수 있는 것과 통제할 수 없는 것을 구별함으로써\" 아파테이아를 성취할 수 있다고 제안합니다."
         }
       ],
       "vocabulary": [
@@ -2194,7 +2392,9 @@
             "Modernism seeks objective truth, while postmodernism questions it.",
             "Postmodernism focuses on grand narratives, while modernism focuses on mini-narratives.",
             "Postmodern literature emerged before modern literature."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 포스트모더니즘이 \"단일하고 객관적인 진실이라는 개념에 도전한다\"고 설명하며, 이는 암묵적으로 진실을 추구했던 모더니즘과 대조됩니다."
         },
         {
           "id": "reading-bridge-q34-2",
@@ -2207,7 +2407,9 @@
             "Irony",
             "Metafiction",
             "Grand narrative"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 메타픽션을 \"작품이 예술 작품으로서의 자신의 지위에 의도적으로 주의를 끄는 것\"이라고 정의합니다."
         },
         {
           "id": "reading-bridge-q34-3",
@@ -2220,7 +2422,9 @@
             "The presentation of multiple, conflicting viewpoints",
             "A clear distinction between fiction and reality",
             "An attempt to establish a universal truth"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 포스트모던 작가들이 \"다수의, 종종 모순적인 관점들의 세계를 제시한다\"고 명시합니다."
         }
       ],
       "vocabulary": [
@@ -2260,7 +2464,9 @@
             "The primary goal of extreme sports is to experience the \"flow\" state.",
             "Only highly skilled professionals should ever attempt extreme sports.",
             "Extreme sports have become less popular due to their inherent dangers."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 익스트림 스포츠 참여가 단순한 스릴 추구가 아니라, '플로우' 경험이나 자기 발견과 같은 \"훨씬 더 복잡한 동기\"에서 비롯된다고 주장합니다."
         },
         {
           "id": "reading-bridge-q35-2",
@@ -2273,7 +2479,9 @@
             "a disregard for one's own skills.",
             "a brief moment of realizing the danger.",
             "a competitive drive to be the best."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 '플로우'를 \"활동에 완전히 몰입하는 상태(a state of complete absorption in an activity)\"라고 정의합니다."
         },
         {
           "id": "reading-bridge-q35-3",
@@ -2286,7 +2494,9 @@
             "Increased feelings of competence and self-efficacy",
             "Developing a higher tolerance for physical pain",
             "Learning to work effectively in a team"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 익스트림 스포츠를 통해 \"심오한 유능감과 자기 효능감\"을 얻을 수 있다고 언급하며, 이를 주요 심리적 이점으로 제시합니다."
         }
       ],
       "vocabulary": [
@@ -2326,7 +2536,9 @@
             "The journey along the Silk Road was too dangerous to be truly effective.",
             "It was mainly used for the spread of Chinese technology to the East.",
             "The Silk Road's economic impact has been greatly exaggerated by historians."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 실크로드의 진정한 유산이 경제적 영향뿐만 아니라 \"문화적, 종교적, 기술적 교류\"의 통로로서의 역할에 있다고 강조합니다."
         },
         {
           "id": "reading-bridge-q36-2",
@@ -2339,7 +2551,9 @@
             "Papermaking",
             "The steam engine",
             "The telescope"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 \"제지술(papermaking)과 화약 같은 기술 혁신이 중국에서 서양으로 이동했다\"고 명확히 언급합니다."
         },
         {
           "id": "reading-bridge-q36-3",
@@ -2352,7 +2566,9 @@
             "military alliance.",
             "information superhighway.",
             "international airport."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 실크로드를 \"세계 최초의 위대한 정보 고속도로(information superhighway)\"에 비유하며, 상품뿐 아니라 아이디어와 문화가 오갔음을 강조합니다."
         }
       ],
       "vocabulary": [
@@ -2392,7 +2608,9 @@
             "To physically remove waste from a site",
             "To study the metabolism of bacteria and fungi",
             "To develop new chemical treatments for pollution"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 생물정화를 \"살아있는 유기체를 활용하여 오염 물질을 분해하거나 중화시키는\" 환경 정화 전략이라고 정의합니다."
         },
         {
           "id": "reading-bridge-q37-2",
@@ -2405,7 +2623,9 @@
             "Creating compost for agricultural use",
             "Neutralizing acid rain in forests",
             "Reducing carbon emissions from factories"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 생물정화의 가장 잘 알려진 적용 사례로 \"기름 유출 사고를 정화하는 것\"을 들며, 박테리아가 원유를 분해한다고 설명합니다."
         },
         {
           "id": "reading-bridge-q37-3",
@@ -2418,7 +2638,9 @@
             "It requires specific environmental conditions to be effective.",
             "It introduces harmful new organisms into the ecosystem.",
             "It is a much slower process than any traditional method."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 생물정화의 효과가 \"온도, 산소 수준, 그리고 필요한 영양소의 존재와 같은 환경 조건에 크게 의존한다\"고 언급합니다."
         }
       ],
       "vocabulary": [
@@ -2458,7 +2680,9 @@
             "A system where the government provides all jobs",
             "An economy based solely on manufacturing",
             "The requirement for all workers to have a university degree"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 긱 경제를 \"정규직 대신 단기 계약이나 프리랜서 업무가 만연한 것\"이 특징인 경제 모델이라고 정의합니다."
         },
         {
           "id": "reading-bridge-q38-2",
@@ -2471,7 +2695,9 @@
             "Flexibility and autonomy",
             "Guaranteed minimum wage",
             "Strong legal protections"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 긱 경제가 노동자들에게 \"근무 시간의 유연성과 자기 자신이 사장이 되는 자율성\"을 제공한다고 명시합니다."
         },
         {
           "id": "reading-bridge-q38-3",
@@ -2484,7 +2710,9 @@
             "The absence of job security and benefits like health insurance",
             "Too much supervision from platform managers",
             "The difficulty in communicating directly with customers"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 긱 노동자들이 \"고용 안정성, 건강 보험과 같은 혜택, 법적 보호가 부족하다\"고 설명하며, 이것이 주요 단점임을 지적합니다."
         }
       ],
       "vocabulary": [
@@ -2524,7 +2752,9 @@
             "To capture the momentary sensory effect of a scene",
             "To follow the strict rules of the traditional art academies",
             "To create abstract art with no connection to reality"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 인상주의 화가들의 주된 목표가 \"한 장면의 순간적이고 감각적인 효과—'인상'—를 포착하는 것\"이었다고 밝힙니다."
         },
         {
           "id": "reading-bridge-q39-2",
@@ -2537,7 +2767,9 @@
             "Choosing subject matter from everyday life",
             "A smooth, highly polished and finished surface",
             "Focusing on the changing qualities of light"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 인상주의가 \"매우 공들여 마무리되고 세밀한 스타일\"을 거부했다고 설명하므로, 매끄럽고 다듬어진 표면은 인상주의의 특징이 아닙니다."
         },
         {
           "id": "reading-bridge-q39-3",
@@ -2550,7 +2782,9 @@
             "It was criticized for looking unfinished and unprofessional.",
             "It was praised for its technical perfection and detail.",
             "It was accepted only after the artists explained their theories."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 인상주의가 초기에 \"미완성이고 아마추어 같다\"는 이유로 비평가들로부터 혹독한 비판을 받았다고 설명합니다."
         }
       ],
       "vocabulary": [
@@ -2590,7 +2824,9 @@
             "The process of memory loss due to aging",
             "The brain's capacity to reorganize itself based on experience",
             "The part of the brain responsible for controlling muscles"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 신경가소성을 \"경험에 반응하여 뇌가 그 구조와 기능을 변화시키고 적응하는\" 능력, 즉 스스로를 재구성하는 능력으로 정의합니다."
         },
         {
           "id": "reading-bridge-q40-2",
@@ -2603,7 +2839,9 @@
             "Throughout a person's entire life",
             "Primarily when a person is sleeping",
             "Only in individuals with exceptional intelligence"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 \"이 과정은 개인의 일생에 걸쳐 일어난다(throughout a person's entire life)\"고 명시하며, 성인 뇌가 고정되어 있다는 믿음이 틀렸음을 강조합니다."
         },
         {
           "id": "reading-bridge-q40-3",
@@ -2616,7 +2854,9 @@
             "Learning and recovery from injury",
             "Breathing and heart rate regulation",
             "Emotional response and reflex actions"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 신경가소성이 \"학습과 기억\"의 근본적인 메커니즘이며, \"뇌 손상으로부터의 회복\"에도 중요하다고 명확하게 언급합니다."
         }
       ],
       "vocabulary": [
@@ -2656,7 +2896,9 @@
             "To diagnose genetic diseases without altering genes",
             "To replicate DNA for cloning purposes",
             "To analyze the ethical implications of genetic research"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 CRISPR-Cas9을 \"유기체의 DNA에 정밀한 변화를 줄 수 있게 해주는\" \"분자 가위\"라고 설명합니다."
         },
         {
           "id": "reading-bridge-q41-2",
@@ -2669,7 +2911,9 @@
             "It acts as a pair of scissors to cut the DNA.",
             "It carries the new gene to be inserted.",
             "It identifies faulty genes for removal."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 Cas9 효소가 \"특정 위치에서 DNA를 자른다\"고 명시하며, 가위 역할을 한다고 설명합니다."
         },
         {
           "id": "reading-bridge-q41-3",
@@ -2682,7 +2926,9 @@
             "The possibility of altering human genes in a way that can be inherited",
             "The debate over intellectual property rights for the technology",
             "The risk of the technology being used for biological warfare"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 \"인간 배아계에 유전될 수 있는 변화를 만드는 가능성\"이 주요 윤리적 문제라고 언급합니다."
         }
       ],
       "vocabulary": [
@@ -2722,7 +2968,9 @@
             "Sunken ships and other large debris",
             "Widely dispersed microplastics",
             "Discarded fishing nets and equipment"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 쓰레기 섬이 고체 섬이 아니며, \"대부분이 마이크로플라스틱으로 구성되어 있다\"고 명시적으로 설명합니다."
         },
         {
           "id": "reading-bridge-q42-2",
@@ -2735,7 +2983,9 @@
             "The plastic is too toxic to handle safely.",
             "There is no available technology for collecting plastics.",
             "Marine animals actively interfere with cleanup equipment."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 \"그 엄청난 크기와 쓰레기가 넓고 깊은 물기둥에 퍼져 있다는 사실\"이 정화 작업을 어렵게 만든다고 설명합니다."
         },
         {
           "id": "reading-bridge-q42-3",
@@ -2748,7 +2998,9 @@
             "They are smaller than five millimeters in diameter.",
             "They are visible as a large, solid island from space.",
             "They can introduce harmful substances into the food chain."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 쓰레기 섬이 \"고체 섬이 아니\"며 \"분산된 지역\"이라고 밝혔으므로, 우주에서 거대한 고체 섬으로 보인다는 설명은 사실이 아닙니다."
         }
       ],
       "vocabulary": [
@@ -2788,7 +3040,9 @@
             "Tourists who travel to many different countries for a short period.",
             "Immigrants who completely assimilate into a new culture.",
             "People who study different cultures in an academic setting."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 TCK를 \"부모의 문화 밖에서 성장기의 상당 부분을 보낸 개인들\"이라고 정의합니다."
         },
         {
           "id": "reading-bridge-q43-2",
@@ -2801,7 +3055,9 @@
             "A feeling of not truly belonging anywhere",
             "An inability to build relationships with people from other cultures",
             "A strong sense of attachment to one specific place"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 TCK들이 \"정체성의 뿌리 없음에 대한 느낌으로 어려움을 겪을 수 있다\"고 언급하며, 이는 어디에도 진정으로 속하지 못하는 느낌을 의미합니다."
         },
         {
           "id": "reading-bridge-q43-3",
@@ -2814,7 +3070,9 @@
             "The academic field that studies cross-cultural experiences.",
             "The unique cultural space created from the experiences of living between cultures.",
             "The future culture that will emerge from the mixing of all current cultures."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 '제3의 문화'를 TCK들이 여러 문화를 경험하며 형성하는 \"독특한 사이 공간\"이라고 설명합니다."
         }
       ],
       "vocabulary": [
@@ -2854,7 +3112,9 @@
             "To shift all manufacturing jobs overseas",
             "To increase the consumption of raw materials",
             "To make products cheaper by reducing their quality"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 순환 경제가 \"쓰레기를 최소화하고 자원 사용을 극대화하도록 설계된\" 시스템이라고 설명합니다."
         },
         {
           "id": "reading-bridge-q44-2",
@@ -2867,7 +3127,9 @@
             "It follows a pattern of production, use, and disposal.",
             "It designs products to be easily repaired and reused.",
             "It aims to eliminate environmental pollution completely."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 선형 경제가 \"채취-제조-폐기('take-make-dispose')\" 패턴을 따른다고 명시합니다."
         },
         {
           "id": "reading-bridge-q44-3",
@@ -2880,7 +3142,9 @@
             "Reusing products for as long as possible",
             "Finding new sources of raw materials to exploit",
             "Recovering and regenerating materials from used products"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "순환 경제는 자원 소비를 줄이는 것을 목표로 하므로, 새로운 원자재 공급원을 찾아 개발하는 것은 그 원칙과 상반됩니다."
         }
       ],
       "vocabulary": [
@@ -2920,7 +3184,9 @@
             "To create art that was purely decorative and ornate",
             "To merge fine arts with practical crafts and technology",
             "To focus solely on painting and sculpture"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 바우하우스의 핵심 철학이 \"예술, 공예, 기술을 통합하는 것\"이었다고 명확히 밝힙니다."
         },
         {
           "id": "reading-bridge-q45-2",
@@ -2933,7 +3199,9 @@
             "Bright, chaotic colors and abstract forms",
             "Simple geometric forms and minimal decoration",
             "A style that mimics classical Greek and Roman art"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 바우하우스 미학이 \"깔끔한 선, 단순한 기하학적 형태, 그리고 불필요한 장식의 부재\"로 특징지어진다고 설명합니다."
         },
         {
           "id": "reading-bridge-q45-3",
@@ -2946,7 +3214,9 @@
             "They were handmade and unique, never to be replicated.",
             "They prioritized artistic expression over practicality.",
             "They were often decorated with historical symbols."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 바우하우스가 \"대량 생산이 가능하면서도 미학적으로 만족스러운 디자인\"을 우선시했다고 언급하여, 유용성과 대량 생산을 모두 고려했음을 추론할 수 있습니다."
         }
       ],
       "vocabulary": [
@@ -2986,7 +3256,9 @@
             "That it was only used for a very short time.",
             "That it was mainly used to transport wool to China.",
             "That it had little impact on cultural development."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 실크로드가 \"하나의 긴 고속도로\"라는 오해를 바로잡으며, 실제로는 \"상호 연결된 무역로의 광대한 네트워크\"였다고 설명합니다."
         },
         {
           "id": "reading-bridge-q46-2",
@@ -2999,7 +3271,9 @@
             "A wide range of ideas, beliefs, and technologies",
             "Official government decrees and laws",
             "Animal species for trade and agriculture"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 상업적 상품 외에 \"사상, 신념, 기술\" 등이 전파되었다고 명시적으로 언급합니다."
         },
         {
           "id": "reading-bridge-q46-3",
@@ -3012,7 +3286,9 @@
             "It led to the isolation of Eastern and Western cultures.",
             "It greatly influenced the development of civilizations through trade and cultural exchange.",
             "It proved that land-based trade was more efficient than sea-based trade."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 실크로드가 \"유럽에서 아시아에 이르는 문명의 발전에 지대한 영향을 미쳤다\"고 결론 내립니다."
         }
       ],
       "vocabulary": [
@@ -3052,7 +3328,9 @@
             "Confidence is directly proportional to a person's actual skill.",
             "Most people can accurately assess their own abilities.",
             "Only experts can recognize incompetence in others."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 더닝-크루거 효과를 \"능력이 낮은 사람들이 자신의 기술 수준을 과대평가하는 경향\"이라고 정의합니다."
         },
         {
           "id": "reading-bridge-q47-2",
@@ -3065,7 +3343,9 @@
             "They may believe their skills are more common than they actually are.",
             "They often refuse to teach others what they know.",
             "They have an accurate and objective view of their competence."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 능력이 뛰어난 개인들이 \"자신에게 쉬운 과제가 다른 사람들에게도 쉽다고 잘못 가정\"하여 자신의 능력이 실제보다 더 보편적이라고 믿을 수 있다고 설명합니다."
         },
         {
           "id": "reading-bridge-q47-3",
@@ -3078,7 +3358,9 @@
             "They are often unaware of their own lack of skill.",
             "They assume that most tasks are difficult for everyone.",
             "They have low confidence in their abilities."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 능력이 낮은 사람들에 대해 \"자신의 무능함을 인식할 자기 인식이 부족한 경우가 많다\"고 설명합니다."
         }
       ],
       "vocabulary": [
@@ -3118,7 +3400,9 @@
             "A community of microorganisms living in the digestive system",
             "A specific vitamin produced by the body",
             "A part of the brain that controls hunger"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 장내 미생물 군집을 \"소화관에 서식하는 미생물 군집\"이라고 명확히 정의합니다."
         },
         {
           "id": "reading-bridge-q48-2",
@@ -3131,7 +3415,9 @@
             "It regulates the body's heart rate.",
             "It is responsible for filtering blood.",
             "It stores excess fat from food."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 장내 미생물 군집이 \"비타민 K 및 B군 비타민과 같은 필수 비타민의 합성을 돕는다\"고 명시적으로 언급합니다."
         },
         {
           "id": "reading-bridge-q48-3",
@@ -3144,7 +3430,9 @@
             "The consumption of vitamins",
             "The use of antibiotics",
             "A strong immune system"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 \"식단, 스트레스, 그리고 항생제 사용\"과 같은 요인들이 미생물 군집의 균형에 부정적인 영향을 미칠 수 있다고 설명합니다."
         }
       ],
       "vocabulary": [
@@ -3184,7 +3472,9 @@
             "To enhance the quality of life through efficient resource management",
             "To replace all human jobs with automated systems",
             "To promote the use of private cars over public transport"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 스마트 시티의 궁극적인 목표가 \"시민들의 삶의 질을 향상시키는 것\"이며, 이는 효율적인 자원 관리를 통해 달성된다고 설명합니다."
         },
         {
           "id": "reading-bridge-q49-2",
@@ -3197,7 +3487,9 @@
             "The expansion of public parks and green spaces",
             "The development of new forms of paper currency",
             "The implementation of stricter laws and regulations"
-          ]
+          ],
+          "answer": 1,
+          "explanation": "지문은 스마트 시티가 \"다양한 유형의 전자 방식과 센서를 사용하여 데이터를 수집한다\"고 정의하며, 이것이 운영의 핵심 기술임을 보여줍니다."
         },
         {
           "id": "reading-bridge-q49-3",
@@ -3210,7 +3502,9 @@
             "Creating personalized public education programs",
             "Optimizing the distribution of electrical energy",
             "Dimming streetlights to conserve power"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 스마트 교통, 스마트 그리드, 스마트 쓰레기 관리, 스마트 조명을 예시로 들었지만, '개인화된 공교육 프로그램'은 언급하지 않았습니다."
         }
       ],
       "vocabulary": [
@@ -3250,7 +3544,9 @@
             "How language affects a person's perception of reality",
             "Why children learn languages more easily than adults",
             "The process of translating from one language to another"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 사피어-워프 가설이 \"사람이 사용하는 언어와 그들이 세계를 인식하고 이해하는 방식 사이의 관계\"를 탐구한다고 설명합니다."
         },
         {
           "id": "reading-bridge-q50-2",
@@ -3263,7 +3559,9 @@
             "The strong version is supported by modern linguists, while the weak version is not.",
             "The strong version focuses on vocabulary, while the weak version focuses on grammar.",
             "The strong version was proposed by Sapir, and the weak version was proposed by Whorf."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 강한 버전은 언어가 사고를 '결정한다(determines)'고 주장하는 반면, 약한 버전은 '영향을 미친다(influences)'고 주장한다고 명확히 구분합니다."
         },
         {
           "id": "reading-bridge-q50-3",
@@ -3276,7 +3574,9 @@
             "They tend to support the weak version, which suggests language influences thought.",
             "They believe the hypothesis only applies to ancient, extinct languages.",
             "They are still debating which version is more plausible, with no clear consensus."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 강한 버전이 \"널리 받아들여지지 않는다\"고 말하며, 약한 버전이 \"더 선호된다\"고 언급하여, 현대 언어학자들이 약한 버전을 지지하는 경향이 있음을 보여줍니다."
         }
       ],
       "vocabulary": [
@@ -3316,7 +3616,9 @@
             "The need to act according to one's own will.",
             "The need for financial security and stability.",
             "The need to be effective in one's actions."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 자기결정성 이론의 세 가지 핵심 욕구로 자율성, 유능성, 관계성을 언급했습니다. '재정적 안정'은 포함되지 않습니다."
         },
         {
           "id": "reading-bridge-q51-2",
@@ -3329,7 +3631,9 @@
             "To create a new model for corporate management and leadership.",
             "To compare intrinsic and extrinsic motivation in children.",
             "To criticize traditional theories of behavioral psychology."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 이 이론이 \"개인의 선택과 행동의 기저에 있는 심리적 욕구에 초점을 맞춘다\"고 설명하며, 인간의 동기를 유발하는 근본적인 심리적 욕구를 규명하는 것이 목적임을 보여줍니다."
         },
         {
           "id": "reading-bridge-q51-3",
@@ -3342,7 +3646,9 @@
             "Individuals will seek more autonomy to compensate for the loss.",
             "Individuals will develop stronger intrinsic motivation.",
             "Individuals will become more effective in their professional lives."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 세 가지 욕구가 \"좌절되면, 동기 저하와 심리적 고통으로 이어질 수 있다\"고 설명합니다. 관계성도 이 중 하나이므로, 충족되지 않으면 동기 저하와 심리적 불편함을 겪을 수 있습니다."
         }
       ],
       "vocabulary": [
@@ -3382,7 +3688,9 @@
             "The function of REM sleep in strengthening skill-based memories.",
             "The process of learning to play a musical instrument.",
             "The difference between procedural and declarative memory."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 수면, 특히 렘수면이 절차 기억(기술 기반 기억)을 공고화하는 데 어떤 역할을 하는지에 초점을 맞추고 있습니다."
         },
         {
           "id": "reading-bridge-q52-2",
@@ -3395,7 +3703,9 @@
             "The brain repeats the neural activity patterns related to a new skill.",
             "The brain creates entirely new neural pathways unrelated to recent experiences.",
             "The brain focuses solely on consolidating emotional memories."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 렘수면 중에 뇌가 \"새로 배운 기술과 관련된 신경 패턴을 재생하며\" 뉴런 간의 연결을 강화한다고 명시적으로 설명합니다."
         },
         {
           "id": "reading-bridge-q52-3",
@@ -3408,7 +3718,9 @@
             "Practicing a new skill is more important than sleeping afterwards.",
             "A student learning a new dance routine would benefit from a good night's sleep.",
             "Memory consolidation only occurs while a person is awake."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 렘수면이 기술과 습관 같은 절차 기억을 공고화한다고 했습니다. 새로운 댄스 루틴을 배우는 것은 절차 기억에 해당하므로, 숙면이 도움이 될 것이라고 추론할 수 있습니다."
         }
       ],
       "vocabulary": [
@@ -3448,7 +3760,9 @@
             "The use of reason as the main source of authority.",
             "The importance of tradition in maintaining social order.",
             "The rejection of all forms of government."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 계몽주의 운동의 핵심이 \"이성을 권위와 정당성의 주요 원천으로 옹호했다\"고 명확히 밝히고 있습니다."
         },
         {
           "id": "reading-bridge-q53-2",
@@ -3461,7 +3775,9 @@
             "To accumulate wealth for the ruling class.",
             "To safeguard the inherent rights of individuals.",
             "To exercise absolute power granted by a divine entity."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 존 로크가 \"정부는 개인의 고유한 권리를 보호하기 위해 존재한다\"고 주장했다고 설명합니다."
         },
         {
           "id": "reading-bridge-q53-3",
@@ -3474,7 +3790,9 @@
             "were based on emotional and spiritual insights",
             "advocated for a society without any laws or rules",
             "were only accepted by a small, isolated group of scholars"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 계몽주의 사상이 \"군주와 교회의 기존 권력 구조에 근본적으로 도전했기\" 때문에 급진적으로 여겨졌음을 시사합니다."
         }
       ],
       "vocabulary": [
@@ -3514,7 +3832,9 @@
             "The loss of cultural meaning when translating certain words.",
             "The high cost associated with professional translation services.",
             "The slow speed of translating long literary works."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 번역의 주요 문제로, 특정 문화에 깊이 뿌리내린 단어들을 번역할 때 \"문화적 의미가 손실되는 것\"을 다루고 있습니다."
         },
         {
           "id": "reading-bridge-q54-2",
@@ -3527,7 +3847,9 @@
             "It describes a culturally specific concept without a direct single-word equivalent in other languages.",
             "It is a forbidden word that is not allowed to be translated.",
             "It can only be understood by native speakers of Danish."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 'hygge'와 같은 단어가 \"목표 언어에 직접적인 일대일 대응어가 없는 문화적으로 특수한 개념\"이기 때문에 번역이 어렵다고 설명합니다."
         },
         {
           "id": "reading-bridge-q54-3",
@@ -3540,7 +3862,9 @@
             "To replace the word with a concept from the translator's own culture.",
             "To choose between a detailed explanation and a less nuanced but more fluent translation.",
             "To consult the original author for a proper translation."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 번역가가 \"긴 설명을 통해 원문의 의미를 보존하는 것과, 유창함을 위해 일부 뉘앙스를 희생하는 것 사이에서 선택해야 한다\"고 명시합니다."
         }
       ],
       "vocabulary": [
@@ -3580,7 +3904,9 @@
             "Anyone can participate in esports regardless of their age.",
             "Esports are more entertaining to watch than many traditional sports.",
             "The video games used in esports are technologically advanced."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문에서 e스포츠 지지자들은 \"e스포츠가 전통적인 스포츠와 유사하게 엄청난 기술, 전략적 사고, 그리고 혹독한 훈련을 요구한다\"고 주장합니다."
         },
         {
           "id": "reading-bridge-q55-2",
@@ -3593,7 +3919,9 @@
             "The absence of significant physical activity and athleticism.",
             "The high cost of equipment needed to compete.",
             "The limited number of professional esports players."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문에서 반대자들은 e스포츠가 \"전신 운동 능력이 부족하다\"며 \"신체적 활동 요건\"에 의문을 제기하는 것을 주요 우려 사항으로 듭니다."
         },
         {
           "id": "reading-bridge-q55-3",
@@ -3606,7 +3934,9 @@
             "The emphasis on whole-body physical fitness.",
             "The risk of physical injury during competition.",
             "A long history of inclusion in the Olympic Games."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 e스포츠 선수들이 \"종종 팀으로 경쟁하며, 팀워크와 소통을 증진시킨다\"고 말하며, 이는 전통적인 팀 스포츠와 공유하는 측면입니다."
         }
       ],
       "vocabulary": [
@@ -3646,7 +3976,9 @@
             "A government program aimed at reducing crime rates in cities.",
             "The decline of a neighborhood due to lack of investment.",
             "The establishment of art galleries and cafes in suburban areas."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 젠트리피케이션을 \"더 부유한 개인들이 저소득 지역으로 이주하여 상당한 경제적, 사회적 변화를 이끄는\" 과정으로 정의합니다."
         },
         {
           "id": "reading-bridge-q56-2",
@@ -3659,7 +3991,9 @@
             "An increase in available low-income housing.",
             "Investment in local infrastructure and building renovation.",
             "A reduction in the number of local businesses."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 젠트리피케이션의 긍정적 효과로 \"기반 시설에 대한 투자, 방치된 건물의 보수, 범죄율 감소\" 등을 언급합니다."
         },
         {
           "id": "reading-bridge-q56-3",
@@ -3672,7 +4006,9 @@
             "A decline in the quality of public services.",
             "The closure of new businesses like boutiques.",
             "A lack of interest from wealthier individuals."
-          ]
+          ],
+          "answer": 1,
+          "explanation": "지문은 젠트리피케이션의 주요 단점으로, 집값 상승으로 인해 \"원래의 주민들이 자신들의 공동체에서 밀려나는 것(displacement)\"을 지적합니다."
         }
       ],
       "vocabulary": [
@@ -3712,7 +4048,9 @@
             "It is always a predator at the top of the food chain.",
             "It can survive in any type of environment.",
             "It directly feeds on every other species in its habitat."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 핵심종을 \"그 풍부함에 비해 자연 환경에 불균형적으로 큰 영향을 미치는 종\"으로 정의합니다."
         },
         {
           "id": "reading-bridge-q57-2",
@@ -3725,7 +4063,9 @@
             "They control the population of sea urchins by eating them.",
             "They are the primary food source for large marine mammals.",
             "They clean the ocean floor by removing debris."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 해달이 \"성게를 먹고 산다\"고 명시하며, 이를 통해 성게 개체 수를 조절하는 것이 직접적인 역할임을 보여줍니다."
         },
         {
           "id": "reading-bridge-q57-3",
@@ -3738,7 +4078,9 @@
             "The overall biodiversity of the ecosystem would decline.",
             "Other predators would take the place of the sea otters.",
             "The ecosystem would remain stable and unchanged."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "해달이 사라지면 성게가 폭발적으로 증가해 켈프 숲을 파괴하고, 켈프 숲에 의존하는 다른 종들도 사라져 전반적인 생물 다양성이 감소할 것입니다."
         }
       ],
       "vocabulary": [
@@ -3778,7 +4120,9 @@
             "People are always motivated by the potential for large financial rewards.",
             "All human economic decisions are irrational and unpredictable.",
             "Behavioral economics is primarily concerned with stock market investments."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 행동 경제학의 핵심 개념인 '손실 회피'를 정의하고, 그 예시와 적용 사례를 중심으로 설명하고 있습니다."
         },
         {
           "id": "reading-bridge-q58-2",
@@ -3791,7 +4135,9 @@
             "Finding a $50 bill on the street.",
             "Getting a $50 discount on a purchase.",
             "Having a $50 bill stolen from their wallet."
-          ]
+          ],
+          "answer": 5,
+          "explanation": "손실 회피 원리에 따르면, 사람들은 같은 금액의 이득보다 손실에서 더 강한 감정적 충격을 받으므로, 50달러를 잃는 것이 가장 큰 영향을 미칠 것입니다."
         },
         {
           "id": "reading-bridge-q58-3",
@@ -3804,7 +4150,9 @@
             "The psychological biases affecting human decisions",
             "The impact of government regulation",
             "The calculation of interest rates"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 전통 경제학이 \"종종 인간 심리의 강력한 영향을 간과한다\"고 언급하며, 이는 인간의 결정에 영향을 미치는 심리적 편향을 고려하지 못함을 시사합니다."
         }
       ],
       "vocabulary": [
@@ -3844,7 +4192,9 @@
             "It uses non-representational forms and colors to express ideas or emotions.",
             "It was only popular for a very short period in the 19th century.",
             "It was created primarily for commercial photography."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 추상 미술이 \"현실 세계의 시각적 참조와는 독립적으로 존재하는 구성을 만들기 위해\" 비구상적인 형태와 색을 사용했다고 설명합니다."
         },
         {
           "id": "reading-bridge-q59-2",
@@ -3857,7 +4207,9 @@
             "Patrons and buyers demanded a new and exciting style of art.",
             "They wanted to create art that was easier for everyone to understand.",
             "There was a shortage of traditional art supplies like oil paints."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 \"사진의 발명이 세상을 사실적으로 묘사하는 것을 쓸모없게 만들었다고 느꼈다\"는 점을 추상 미술의 등장 원인 중 하나로 언급합니다."
         },
         {
           "id": "reading-bridge-q59-3",
@@ -3870,7 +4222,9 @@
             "To communicate profound emotions or spiritual ideas directly to the viewer.",
             "To prove that art could be created without any skill.",
             "To revive the artistic styles of the Renaissance."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 추상 예술가들이 \"순수한 형태와 색의 언어를 통해 관객에게 감정과 아이디어를 불러일으키는 것\"을 목표로 했다고 설명합니다."
         }
       ],
       "vocabulary": [
@@ -3910,7 +4264,9 @@
             "To find and attack targets without direct human intervention.",
             "To negotiate peace treaties between warring nations.",
             "To defend military bases from cyberattacks."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 자율 무기 시스템을 \"직접적인 인간의 통제 없이 독립적으로 목표물을 수색, 식별, 교전할 수 있는 무기\"라고 정의합니다."
         },
         {
           "id": "reading-bridge-q60-2",
@@ -3923,7 +4279,9 @@
             "They eliminate the need for international laws of war.",
             "They can be easily reprogrammed by enemy forces.",
             "They make the decision to go to war easier."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문에서 지지자들은 AWS가 \"위험한 상황에서 인간 병사를 대체함으로써 군인 사상자를 줄일 수 있다\"고 주장합니다."
         },
         {
           "id": "reading-bridge-q60-3",
@@ -3936,7 +4294,9 @@
             "The difficulty of determining who is responsible if the system makes a fatal error.",
             "The systems' inability to move quickly on the battlefield.",
             "The fear that AWS would be less effective than human soldiers."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 반대자들이 제기하는 핵심적인 윤리적 문제로, \"만약 AWS가 실수를 저지른다면, 누가 책임이 있는가?\"라는 책임 소재의 문제를 언급합니다."
         }
       ],
       "vocabulary": [
@@ -3976,7 +4336,9 @@
             "They are designed to fit a patient's specific anatomy.",
             "They are significantly less expensive to manufacture.",
             "They completely eliminate the need for surgery."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 3D 프린팅 임플란트가 CT 스캔이나 MRI 데이터를 사용하여 \"환자 특화된 임플란트\"를 제작할 수 있어 완벽한 맞춤이 가능하다고 설명합니다."
         },
         {
           "id": "reading-bridge-q61-2",
@@ -3989,7 +4351,9 @@
             "Improved integration with bone and tissue",
             "Reduced risk of post-surgical infection",
             "Better long-term stability"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 수술 시간 단축, 빠른 치유, 뼈와의 통합 개선, 장기적 안정성 등을 이점으로 언급했지만, '수술 후 감염 위험 감소'는 언급하지 않았습니다."
         },
         {
           "id": "reading-bridge-q61-3",
@@ -4002,7 +4366,9 @@
             "The patient's genetic information",
             "Manufacturer's standard design templates",
             "Previous surgical records of similar cases"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 환자 맞춤형 임플란트를 제작하는 데 \"CT 스캔이나 MRI로부터 얻은 데이터\"가 사용된다고 명확히 설명합니다."
         }
       ],
       "vocabulary": [
@@ -4042,7 +4408,9 @@
             "To act as a final backup for the world's other seed banks.",
             "To sell rare seeds to international collectors.",
             "To develop new plant species in a controlled environment."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 스발바르 종자 저장고가 \"전 세계 다른 종자 은행들의 최종 백업 역할\"을 한다고 명확히 기술합니다."
         },
         {
           "id": "reading-bridge-q62-2",
@@ -4055,7 +4423,9 @@
             "It is situated near major agricultural centers.",
             "The political neutrality of the region prevents conflicts.",
             "The mountain offers protection from solar radiation."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 저장고가 \"북극의 산 깊은 곳에 지어져 있어, 자연적 냉동 조건을 제공한다\"고 위치의 이점을 설명합니다."
         },
         {
           "id": "reading-bridge-q62-3",
@@ -4068,7 +4438,9 @@
             "It helps maintain the current market price of food crops.",
             "It provides a source of income for developing nations.",
             "It is a legal requirement by international law."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 유전적 다양성이 \"변화하는 기후에 적응하고 새로운 해충에 저항할 수 있는 새로운 작물 품종을 개발하는 데 매우 중요하다\"고 언급합니다."
         }
       ],
       "vocabulary": [
@@ -4108,7 +4480,9 @@
             "The mechanisms behind the spread of fake news",
             "The financial benefits of creating fake news",
             "The technical aspects of social media algorithms"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 가짜 뉴스의 정의와 그것이 '에코 챔버' 효과와 '확증 편향'을 통해 확산되는 메커니즘을 중심으로 설명합니다."
         },
         {
           "id": "reading-bridge-q63-2",
@@ -4121,7 +4495,9 @@
             "A process where algorithms show users content that reinforces their views.",
             "The physical design of newsrooms that prevents outside opinions.",
             "A psychological disorder caused by excessive social media use."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 '에코 챔버' 효과를 \"알고리즘이 사용자에게 기존의 신념과 일치하는 콘텐츠를 보여주는\" 과정으로 설명합니다."
         },
         {
           "id": "reading-bridge-q63-3",
@@ -4134,7 +4510,9 @@
             "is supported by official government sources",
             "aligns with people's pre-existing beliefs",
             "is difficult to distinguish from entertainment"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 사람들이 자신의 기존 신념을 확인시켜주는 정보를 선호하는 경향(확증 편향) 때문에 가짜 뉴스가 효과적으로 퍼진다고 제안합니다."
         }
       ],
       "vocabulary": [
@@ -4174,7 +4552,9 @@
             "To attract environmentally conscious consumers.",
             "To create a new market for luxury goods.",
             "To exclusively promote non-profit organizations."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 그린 마케팅의 목표가 \"환경을 의식하는 소비자들의 증가하는 부분에 어필하는 것\"이라고 명확히 밝힙니다."
         },
         {
           "id": "reading-bridge-q64-2",
@@ -4187,7 +4567,9 @@
             "genuinely reduces its negative impact on the environment",
             "deceptively presents itself as more eco-friendly than it actually is",
             "collaborates with competitors to improve industry standards"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 그린워싱을 \"회사가 실제보다 더 환경 친화적인 것처럼 기만적으로 자신을 포장하는\" 행위라고 정의합니다."
         },
         {
           "id": "reading-bridge-q64-3",
@@ -4200,7 +4582,9 @@
             "Purchase products with the most attractive green packaging.",
             "Rely solely on advertisements for product information.",
             "Be critical and seek evidence to support environmental claims."
-          ]
+          ],
+          "answer": 5,
+          "explanation": "지문은 소비자들이 \"비판적이고 회사의 주장을 검증하기 위해 특정 인증이나 데이터를 찾는 것이 중요하다\"고 조언합니다."
         }
       ],
       "vocabulary": [
@@ -4240,7 +4624,9 @@
             "The depiction of subjects from multiple viewpoints at once.",
             "The return to artistic standards of the Renaissance.",
             "The exclusive focus on painting natural landscapes."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 입체파 화가들이 \"동시에 여러 시점에서 주제를 묘사했다\"고 설명하며, 이것이 핵심 혁신임을 보여줍니다."
         },
         {
           "id": "reading-bridge-q65-2",
@@ -4253,7 +4639,9 @@
             "Salvador Dalí and René Magritte",
             "Pablo Picasso and Georges Braque",
             "Henri Matisse and André Derain"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 입체파 운동이 \"파블로 피카소와 조르주 브라크에 의해 개척되었다\"고 명시적으로 언급합니다."
         },
         {
           "id": "reading-bridge-q65-3",
@@ -4266,7 +4654,9 @@
             "The use of a single, fixed perspective.",
             "The depiction of purely emotional and dreamlike states.",
             "The creation of large-scale public sculptures."
-          ]
+          ],
+          "answer": 1,
+          "explanation": "지문은 분석적 큐비즘이 \"색보다는 형태의 기저 구조에 관람자의 주의를 집중시켰다\"고 설명합니다."
         }
       ],
       "vocabulary": [
@@ -4306,7 +4696,9 @@
             "Their significant security vulnerabilities",
             "Their rapid technological obsolescence",
             "Their high energy consumption"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 IoT 기기가 편리함을 제공하지만 \"상당한 보안 취약점을 야기한다\"고 지적하며, 이를 주된 우려 사항으로 다룹니다."
         },
         {
           "id": "reading-bridge-q66-2",
@@ -4319,7 +4711,9 @@
             "They are often designed without basic security measures.",
             "They are only used by technologically savvy individuals.",
             "They automatically install security updates every day."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 많은 IoT 기기들이 \"종종 기본적인 보안 조치를 소홀히 한다\"고 설명하며, 이것이 해커의 표적이 되는 이유라고 말합니다."
         },
         {
           "id": "reading-bridge-q66-3",
@@ -4332,7 +4726,9 @@
             "A government agency that regulates the internet.",
             "A network of compromised devices used for cyberattacks.",
             "A marketplace for buying and selling used IoT devices."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 '봇넷'을 \"대규모 사이버 공격을 감행하는 데 사용되는, 탈취된 장치들의 네트워크\"라고 명확하게 정의합니다."
         }
       ],
       "vocabulary": [
@@ -4372,7 +4768,9 @@
             "The military conquests that it facilitated.",
             "The dynamic cultural exchange between civilizations.",
             "The creation of a single, unified empire in Asia."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 실크로드의 진정한 유산이 상품 교환을 넘어 \"문명 간의 역동적인 문화 교류\"에 있다고 결론 내립니다."
         },
         {
           "id": "reading-bridge-q67-2",
@@ -4385,7 +4783,9 @@
             "The spread of Buddhism from India to China.",
             "The movement of democratic ideals from Greece to India.",
             "The transfer of steelmaking technology from Europe to China."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 불교, 예술 양식, 그리고 \"제지술과 화약 같은 기술\"이 실크로드를 통해 전파된 예시로 언급합니다."
         },
         {
           "id": "reading-bridge-q67-3",
@@ -4398,7 +4798,9 @@
             "the standardization of a single language for trade",
             "the frequent outbreak of wars over trade routes",
             "the preservation of cultures in complete isolation"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 \"그리스와 로마의 예술적 모티프가... 독특한 혼합 양식을 만들어냈다\"고 설명하며, 문화 교류가 새로운 예술 양식을 낳았음을 보여줍니다."
         }
       ],
       "vocabulary": [
@@ -4438,7 +4840,9 @@
             "A real health improvement from a treatment with no active ingredient.",
             "A method for making medications taste better.",
             "The process of testing drugs on animals before humans."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 플라시보 효과를 \"실제 치료 가치가 없는 치료를 받은 후 실제 건강 개선을 경험하는 현상\"이라고 정의합니다."
         },
         {
           "id": "reading-bridge-q68-2",
@@ -4451,7 +4855,9 @@
             "An increase in heart rate",
             "The production of new antibodies",
             "A reduction in blood sugar levels"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 플라시보 효과가 \"신체의 자연적인 통증 완화제인 엔도르핀의 방출\"과 같은 생리적 변화를 유발할 수 있다고 명시합니다."
         },
         {
           "id": "reading-bridge-q68-3",
@@ -4464,7 +4870,9 @@
             "They guarantee that all participants in a study will be cured.",
             "They allow patients to choose whether they receive the real drug or a placebo.",
             "They are required by law for all types of scientific experiments."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 플라시보 대조 시험이 \"관찰된 이점이 단순히 암시의 힘이 아니라 약물 자체 때문인지 확인\"하게 해주므로 연구의 '황금 표준'이라고 설명합니다."
         }
       ],
       "vocabulary": [
@@ -4504,7 +4912,9 @@
             "To replace all public services with automated systems.",
             "To encourage citizens to move to rural areas.",
             "To create more public parks and green spaces."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 스마트 시티의 목표가 \"데이터를 사용하여 자산, 자원, 서비스를 효율적으로 관리하는 것\"이라고 설명합니다."
         },
         {
           "id": "reading-bridge-q69-2",
@@ -4517,7 +4927,9 @@
             "Optimized traffic flow",
             "Increased citizen participation in politics",
             "Free public transportation for all residents"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 스마트 시티의 잠재적 이점으로 \"최적화된 교통 흐름, 에너지 소비 감소, 더 반응적인 공공 서비스\" 등을 언급합니다."
         },
         {
           "id": "reading-bridge-q69-3",
@@ -4530,7 +4942,9 @@
             "The public's resistance to new technologies.",
             "Finding enough skilled workers to manage the systems.",
             "Balancing efficiency with the protection of privacy."
-          ]
+          ],
+          "answer": 5,
+          "explanation": "지문은 스마트 시티의 주된 과제로 \"기술적 효율성과 개인 사생활 보호 사이의 균형을 맞추는 것\"이라고 마지막 문장에서 명시합니다."
         }
       ],
       "vocabulary": [
@@ -4570,7 +4984,9 @@
             "Learning a new language can improve one's memory.",
             "The complexity of a language reflects the intelligence of its speakers.",
             "Language is a purely biological instinct, not a cultural tool."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 사피어-워프 가설이 \"우리가 사용하는 언어와 우리가 세계를 인식하는 방식 사이에 흥미로운 연관성\"을 제안한다고 소개합니다."
         },
         {
           "id": "reading-bridge-q70-2",
@@ -4583,7 +4999,9 @@
             "The strong version claims language determines thought, while the weak version claims it only influences thought.",
             "The strong version was proposed by Sapir, while the weak version was proposed by Whorf.",
             "The strong version is widely accepted today, while the weak version has been rejected."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 강한 버전은 언어가 사고를 '결정한다(determines)'고 주장하는 반면, 약한 버전은 '영향을 미친다(influences)'고 주장한다고 명확히 구분합니다."
         },
         {
           "id": "reading-bridge-q70-3",
@@ -4596,7 +5014,9 @@
             "It contradicts the principles of human evolution.",
             "It is considered too rigid and is not supported by enough evidence.",
             "It only explains the structure of European languages."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 대부분의 현대 언어학자들이 강한 버전을 \"너무 경직되고 충분한 증거가 부족하기 때문에\" 거부했다고 명확하게 기술합니다."
         }
       ],
       "vocabulary": [
@@ -4636,7 +5056,9 @@
             "The pros and cons of early second language education",
             "The role of parental involvement in bilingualism",
             "The history of the critical period hypothesis"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 조기 외국어 교육의 장점(두뇌 수용성, 인지 능력 향상)과 단점(인지 과부하, 모국어 발달 저해 가능성)을 모두 논하고 있습니다."
         },
         {
           "id": "reading-bridge-q71-2",
@@ -4649,7 +5071,9 @@
             "Increased emotional intelligence",
             "Enhanced mental flexibility",
             "Superior mathematical skills"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 조기 이중 언어 사용이 \"향상된 문제 해결 능력과 더 큰 정신적 유연성\"과 같은 인지 능력 향상과 관련이 있다고 명시합니다."
         },
         {
           "id": "reading-bridge-q71-3",
@@ -4662,7 +5086,9 @@
             "The possibility of hindering native language development",
             "The lack of standardized tests for young learners",
             "The negative impact on social skills"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 일부 교육자들이 \"제2언어를 너무 일찍 도입하는 것이 아이의 모국어 발달을 저해할 수 있다\"는 우려를 표명한다고 언급합니다."
         }
       ],
       "vocabulary": [
@@ -4702,7 +5128,9 @@
             "To enhance the immune system immediately",
             "To promote long-term health",
             "To accelerate wound healing"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 단기적인 스트레스 반응 동안 코르티솔이 \"염증을 억제하고 에너지를 보존하는\" 이로운 기능을 할 수 있다고 설명합니다."
         },
         {
           "id": "reading-bridge-q72-2",
@@ -4715,7 +5143,9 @@
             "A decreased vulnerability to infections",
             "A lower count of essential white blood cells",
             "An improved ability to handle future stress"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 장기간 높은 수치의 코르티솔이 \"감염과 싸우는 데 도움을 주는 백혈구인 림프구의 수를 낮춤으로써\" 면역 체계의 효과를 억제할 수 있다고 설명합니다."
         },
         {
           "id": "reading-bridge-q72-3",
@@ -4728,7 +5158,9 @@
             "Cortisol is the only hormone involved in the stress response.",
             "People with chronic stress heal from injuries more quickly.",
             "The immune system is not affected by psychological states."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 단기 스트레스 반응(이로움)과 장기 스트레스 반응(해로움)의 효과가 다르다고 설명하므로, 신체의 반응이 근본적으로 다르다는 것을 추론할 수 있습니다."
         }
       ],
       "vocabulary": [
@@ -4768,7 +5200,9 @@
             "The inclusion of all residents in political life",
             "The separation of powers between executive and legislative branches",
             "The rule of a monarch advised by a council of citizens"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 아테네 민주주의가 \"직접 민주주의였으며, 이는 시민들이 직접 법안에 투표했음을 의미한다\"고 설명합니다."
         },
         {
           "id": "reading-bridge-q73-2",
@@ -4781,7 +5215,9 @@
             "Men who had finished military service",
             "Foreign residents living in Athens",
             "Adult males born in Athens"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 \"여성, 노예, 그리고 메틱(외국인 거주자)\"이 정치 과정에서 완전히 배제되었다고 명확히 밝힙니다."
         },
         {
           "id": "reading-bridge-q73-3",
@@ -4794,7 +5230,9 @@
             "It was an exclusive system that benefited a minority of the population.",
             "It gave equal political rights to men and women.",
             "It was primarily designed to manage foreign relations."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 참여가 \"인구의 작은 일부\"에게만 제한되었으며, \"소수를 위한 민주주의\"였다고 결론 내립니다."
         }
       ],
       "vocabulary": [
@@ -4834,7 +5272,9 @@
             "Metaphors are essential tools that shape human thought and reality.",
             "Language would be more precise without the use of metaphors.",
             "Conceptualizing argument as a dance is more effective than as a war."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 은유가 단순한 수사적 표현이 아니라 \"우리가 세상을 개념화하고 생각을 구조화하는 데 근본적\"이라고 주장합니다."
         },
         {
           "id": "reading-bridge-q74-2",
@@ -4847,7 +5287,9 @@
             "\"He shot down my entire proposal.\"",
             "\"We are in step with each other.\"",
             "\"That's a balanced perspective.\""
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 \"논쟁은 전쟁이다\" 은유의 예시로 \"누군가의 아이디어를 격추시키는 것(shooting down someone's ideas)\"을 직접 언급합니다."
         },
         {
           "id": "reading-bridge-q74-3",
@@ -4860,7 +5302,9 @@
             "Illogical",
             "Competitive",
             "Silent"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 논쟁을 춤으로 생각한다면 \"파트너, 리듬, 그리고 함께 아름다운 것을 만드는 것\"에 대해 이야기할 것이라고 말하며, 이는 협력적인 접근 방식을 암시합니다."
         }
       ],
       "vocabulary": [
@@ -4900,7 +5344,9 @@
             "To advertise the use of antidepressant medications",
             "To describe the phenomenon of a \"runner's high\"",
             "To recommend a specific workout routine for stress relief"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 엔도르핀 방출, 신경전달물질 농도 증가, 심리적 효과 등 운동이 정신 건강에 긍정적인 영향을 미치는 다양한 '메커니즘'을 설명합니다."
         },
         {
           "id": "reading-bridge-q75-2",
@@ -4913,7 +5359,9 @@
             "Cortisol",
             "Endorphins",
             "Lymphocytes"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 \"엔도르핀은 신체의 자연적인 진통제이자 기분 상승제\"라고 명확하게 설명합니다."
         },
         {
           "id": "reading-bridge-q75-3",
@@ -4926,7 +5374,9 @@
             "By helping to divert attention from negative thought patterns",
             "By promoting social interaction in a group setting",
             "By releasing hormones that induce a state of sleep"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 운동이 \"부정적인 생각과 걱정의 흐름을 방해하는 데 도움을 줌으로써\" 움직이는 명상처럼 기능할 수 있다고 설명합니다."
         }
       ],
       "vocabulary": [
@@ -4966,7 +5416,9 @@
             "To restore the natural functions of an entire ecosystem",
             "To study the behavior of apex predators in captivity",
             "To increase human management of wilderness areas"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 재야생화가 \"생태계 전체를 더 자가 조절적인 상태로 복원하는 것\"을 목표로 한다고 설명합니다."
         },
         {
           "id": "reading-bridge-q76-2",
@@ -4979,7 +5431,9 @@
             "A species that has been newly discovered by scientists",
             "A species that is kept in a zoo for conservation",
             "The first species to be reintroduced into a habitat"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 핵심종을 \"그들의 풍부함에 비해 환경에 불균형적으로 큰 영향을 미치는\" 종으로 정의합니다."
         },
         {
           "id": "reading-bridge-q76-3",
@@ -4992,7 +5446,9 @@
             "An increase in human intervention in the park",
             "The recovery of vegetation previously eaten by elk",
             "The extinction of the local elk population"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 늑대 재도입이 엘크 개체 수를 조절했고, 그 결과 \"과도하게 방목된 초목이 회복되기 시작했다\"고 설명합니다."
         }
       ],
       "vocabulary": [
@@ -5032,7 +5488,9 @@
             "It now focuses exclusively on the cost of internet services.",
             "It has become irrelevant due to widespread internet access.",
             "It refers only to the difference in internet connection speeds."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 디지털 격차의 개념이 초기의 '접근성 격차'에서 \"디지털 기술을 효과적으로 사용하는 능력의 격차\"를 포함하도록 확장되었다고 설명합니다."
         },
         {
           "id": "reading-bridge-q77-2",
@@ -5045,7 +5503,9 @@
             "The disparity in digital literacy and skills",
             "The high cost of software updates",
             "The physical distance from internet servers"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 현대의 디지털 격차가 물리적 접근성 외에 \"디지털 문해력과 기술의 격차\"를 주요 구성 요소로 포함한다고 명시합니다."
         },
         {
           "id": "reading-bridge-q77-3",
@@ -5058,7 +5518,9 @@
             "It forces governments to lower the cost of technology.",
             "It can worsen existing socioeconomic disadvantages.",
             "It encourages more people to learn traditional trades."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 기술 격차가 \"이미 불리한 처지에 있는 사람들이 더욱 뒤처지는 악순환을 만든다\"고 설명하며, 기존의 사회경제적 불이익을 악화시킬 수 있음을 보여줍니다."
         }
       ],
       "vocabulary": [
@@ -5098,7 +5560,9 @@
             "The careers of Kahneman and Tversky",
             "Strategies for investing in the stock market",
             "The difference between behavioral and classical psychology"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 행동 경제학의 핵심 개념인 '손실 회피'를 정의하고, 그 예시와 적용 사례를 중심으로 설명하고 있습니다."
         },
         {
           "id": "reading-bridge-q78-2",
@@ -5111,7 +5575,9 @@
             "Finding a $50 bill on the street",
             "Winning $50 in a lottery",
             "Losing a $50 bill from one's wallet"
-          ]
+          ],
+          "answer": 5,
+          "explanation": "손실 회피 원리에 따르면, 사람들은 같은 금액의 이득보다 손실에서 더 강한 감정적 충격을 받으므로, 50달러를 잃는 것이 가장 큰 영향을 미칠 것입니다."
         },
         {
           "id": "reading-bridge-q78-3",
@@ -5124,7 +5590,9 @@
             "The psychological biases affecting human decisions",
             "The impact of government regulation",
             "The calculation of interest rates"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 전통 경제학이 \"종종 인간 심리의 강력한 영향을 간과한다\"고 언급하며, 이는 인간의 결정에 영향을 미치는 심리적 편향을 고려하지 못함을 시사합니다."
         }
       ],
       "vocabulary": [
@@ -5164,7 +5632,9 @@
             "To capture the immediate and transient effects of light",
             "To follow the strict rules set by the French Academy",
             "To paint exclusively within their indoor studios"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 인상주의 화가들의 주된 목표가 \"한 장면의 순간적이고 감각적인 효과—'인상'—를 포착하는 것\"이었다고 밝힙니다."
         },
         {
           "id": "reading-bridge-q79-2",
@@ -5177,7 +5647,9 @@
             "Painting subjects from memory",
             "The use of distinct, visible brushstrokes",
             "A focus on creating perfectly balanced compositions"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 인상주의가 \"매우 공들여 마무리되고 세밀한 스타일\"을 거부했다고 설명하므로, 매끄럽고 다듬어진 표면은 인상주의의 특징이 아닙니다."
         },
         {
           "id": "reading-bridge-q79-3",
@@ -5190,7 +5662,9 @@
             "Impressionist painters used more traditional techniques.",
             "Academic artists were the first to paint *en plein air*.",
             "Impressionism was immediately celebrated by art critics."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 인상주의가 야외 풍경과 변화하는 빛에 초점을 맞춘 반면, 아카데미 예술은 실내 작업과 역사적 주제를 선호했다고 명확히 대조합니다."
         }
       ],
       "vocabulary": [
@@ -5230,7 +5704,9 @@
             "The components and health benefits of the Mediterranean diet",
             "A guide to losing weight quickly and effectively",
             "The history of food preservation in Mediterranean countries"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 지중해 식단의 구성 요소(식물성 식품, 올리브유 등)와 그것이 건강에 미치는 긍정적인 영향(심혈관 질환 위험 감소 등)을 상세히 설명합니다."
         },
         {
           "id": "reading-bridge-q80-2",
@@ -5243,7 +5719,9 @@
             "A high intake of processed foods",
             "A reliance on plant-based foods and olive oil",
             "Daily consumption of high-fat dairy products"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 지중해 식단의 기초가 \"식물성 식품에 기반을 두고\" 있으며, 주된 지방 공급원이 \"올리브유\"라고 명시합니다."
         },
         {
           "id": "reading-bridge-q80-3",
@@ -5256,7 +5734,9 @@
             "A reduced risk of heart and blood vessel diseases",
             "The complete elimination of cholesterol from the body",
             "An improved ability to digest dairy products"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 이 식단이 \"심혈관 질환의 낮은 위험과 강력하게 연관되어 있다\"고 명확하게 언급합니다."
         }
       ],
       "vocabulary": [
@@ -5296,7 +5776,9 @@
             "It is significantly more fuel-efficient for long-term missions.",
             "It does not require electricity from solar panels to operate.",
             "It can be used for both atmospheric and space travel."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 이온 엔진이 \"연료 효율성이 원초적인 힘보다 더 중요한\" 장거리 임무에 이상적이라고 설명하며, 높은 연료 효율성을 주요 장점으로 꼽습니다."
         },
         {
           "id": "reading-bridge-q81-2",
@@ -5309,7 +5791,9 @@
             "A chemical reaction is used to burn the fuel for thrust.",
             "Positively charged ions are created from the gas.",
             "An electrostatic field accelerates the ions."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 이온 엔진이 '전기 추진' 방식이며, 연료를 연소시키는 '화학 반응'은 전통적인 화학 로켓의 방식이라고 대조하여 설명합니다."
         },
         {
           "id": "reading-bridge-q81-3",
@@ -5322,7 +5806,9 @@
             "Rapidly maneuvering a spacecraft to avoid debris.",
             "Missions requiring exploration of deep space over a long period.",
             "Landing probes on planets with strong gravity."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 이온 엔진이 약하지만 꾸준한 추력을 제공하므로 \"장기간의 심우주 탐사 임무\"에 가장 적합하다고 명시합니다."
         }
       ],
       "vocabulary": [
@@ -5362,7 +5848,9 @@
             "They require a large amount of land to be effective.",
             "The technology for them is not yet fully developed.",
             "They produce harmful byproducts during operation."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 태양광 및 풍력 발전의 주요 문제점으로 \"간헐성(intermittency)\"을 지적하며, 이는 전력 생산이 \"일관되지 않고 예측 불가능하다\"는 것을 의미합니다."
         },
         {
           "id": "reading-bridge-q82-2",
@@ -5375,7 +5863,9 @@
             "Using systems that can store energy for later use.",
             "Moving energy production facilities to sunnier and windier locations.",
             "Relying solely on one type of renewable energy."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 간헐성 문제의 해결책으로 \"대규모 에너지 저장 시스템\"을 제시하며, 배터리나 양수 발전을 예로 듭니다."
         },
         {
           "id": "reading-bridge-q82-3",
@@ -5388,7 +5878,9 @@
             "It helps to efficiently manage the flow of electricity.",
             "It is a type of advanced battery technology.",
             "It works by predicting weather patterns."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 스마트 그리드가 \"네트워크 전반에 걸쳐 공급과 수요의 균형을 지능적으로 맞춤으로써\" 에너지 소비를 관리한다고 설명하며, 이는 전기 흐름의 효율적 관리를 의미합니다."
         }
       ],
       "vocabulary": [
@@ -5428,7 +5920,9 @@
             "Conflict resulting from different customs and beliefs.",
             "A lack of diverse skills and perspectives.",
             "The refusal of immigrants to learn the new language."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 다문화 사회의 어려움으로 \"언어, 사회 규범, 종교적 신념, 가치의 차이에서 비롯되는 문화적 마찰\"을 언급하며, 이는 갈등으로 이어질 수 있습니다."
         },
         {
           "id": "reading-bridge-q83-2",
@@ -5441,7 +5935,9 @@
             "Active measures to foster mutual understanding.",
             "Keeping different cultural groups separate to avoid conflict.",
             "Focusing only on the economic benefits of diversity."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 성공적인 통합이 단순한 관용을 넘어 \"상호 이해를 증진하기 위한 적극적인 노력\"을 필요로 한다고 주장합니다."
         },
         {
           "id": "reading-bridge-q83-3",
@@ -5454,7 +5950,9 @@
             "Establishing policies that are inclusive of all groups.",
             "Encouraging one group's values to become dominant.",
             "Fostering dialogue between communities."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 포용적인 정책, 문화 간 교육, 상호작용 공간 등을 조화 촉진 방법으로 제시했지만, 한 집단의 가치가 지배적이 되도록 장려하는 것은 언급하지 않았습니다."
         }
       ],
       "vocabulary": [
@@ -5494,7 +5992,9 @@
             "The negative impacts of CSR on corporate profitability.",
             "The historical development of Corporate Social Responsibility.",
             "A comparison of CSR practices in different countries."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 기업이 CSR을 채택하는 동기가 윤리적 책임감뿐만 아니라, 브랜드 이미지 제고, 인재 유치 등 다양한 '전략적 이유'가 있음을 중심으로 설명합니다."
         },
         {
           "id": "reading-bridge-q84-2",
@@ -5507,7 +6007,9 @@
             "A guaranteed increase in short-term profits.",
             "The elimination of all business risks.",
             "Direct government funding for business operations."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 CSR이 \"최고의 인재를 유치하고 유지하는 강력한 도구\"가 될 수 있다고 명시하며, 이를 전략적 이점으로 제시합니다."
         },
         {
           "id": "reading-bridge-q84-3",
@@ -5520,7 +6022,9 @@
             "a decision that is unpopular with its employees.",
             "a blend of ethical concerns and business strategy.",
             "a practice that only large corporations can afford."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 CSR의 동기가 \"진정한 선행의 욕구\"와 \"전략적 고려\" 모두에 의해 유발될 수 있다고 설명하며, 이는 윤리적 우려와 사업 전략의 혼합임을 시사합니다."
         }
       ],
       "vocabulary": [
@@ -5560,7 +6064,9 @@
             "A design that appears fragmented and disordered.",
             "The exclusive use of natural and traditional materials.",
             "A focus on creating calm and peaceful spaces."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 해체주의 건축을 \"가시적인 파편화와 건물 구조의 조작\" 및 \"통제된 혼돈의 모습\"으로 특징짓습니다."
         },
         {
           "id": "reading-bridge-q85-2",
@@ -5573,7 +6079,9 @@
             "The need for buildings to be safe and stable.",
             "Conventional notions of architectural harmony and order.",
             "The importance of a building's location."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 해체주의 건축가들이 \"조화, 안정성, 대칭과 같은 전통적인 개념에 도전한다\"고 명확히 언급합니다."
         },
         {
           "id": "reading-bridge-q85-3",
@@ -5586,7 +6094,9 @@
             "completely hide the building's structural elements.",
             "reassemble architectural components in a novel way.",
             "return to the principles of classical architecture."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 '해체'의 목표가 \"기본적인 건축 요소를 가져와 새롭고 종종 방향을 잃게 하는 방식으로 재조립하는 것\"이라고 설명합니다."
         }
       ],
       "vocabulary": [
@@ -5626,7 +6136,9 @@
             "The development of new transportation methods.",
             "The exchange of cultures and ideas between civilizations.",
             "The military conflicts that arose over control of the routes."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 실크로드의 가장 지속적인 유산이 상품 교역을 넘어 \"문명 간의 문화와 사상 교류\"에 있다고 주장합니다."
         },
         {
           "id": "reading-bridge-q86-2",
@@ -5639,7 +6151,9 @@
             "The technology of papermaking.",
             "The concept of democracy.",
             "Agricultural techniques for growing rice."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 \"제지술, 인쇄술, 화약과 같은 중국의 혁신\"이 서쪽으로 전파된 예시로 명시적으로 언급합니다."
         },
         {
           "id": "reading-bridge-q86-3",
@@ -5652,7 +6166,9 @@
             "a phenomenon that was less important than trade.",
             "a mutual exchange that influenced both East and West.",
             "a source of conflict that weakened many empires."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 문화 확산이 \"쌍방향 길(two-way street)\"이었다고 표현하며, 동양과 서양 모두에게 영향을 미친 상호 교류였음을 강조합니다."
         }
       ],
       "vocabulary": [
@@ -5692,7 +6208,9 @@
             "Techniques for managing anxiety and boredom.",
             "The importance of relaxation for mental health.",
             "A comparison of different learning theories."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 '몰입 상태(flow state)'를 정의하고, 그 조건과 특징, 이점을 설명하며 활동에 깊이 관여하는 심리적 상태를 중심으로 다룹니다."
         },
         {
           "id": "reading-bridge-q87-2",
@@ -5705,7 +6223,9 @@
             "There must be a good match between the task's difficulty and one's ability.",
             "The activity must be performed in complete silence.",
             "The person must be in a state of passive relaxation."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 몰입 상태에 들어가기 위한 핵심 조건으로 \"과제의 인지된 도전과 자신의 기술 사이의 균형을 찾는 것\"을 명시합니다."
         },
         {
           "id": "reading-bridge-q87-3",
@@ -5718,7 +6238,9 @@
             "A heightened sense of self-consciousness.",
             "The feeling that the activity is intrinsically enjoyable.",
             "A sense of anxiety about the outcome."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 몰입 상태에서는 \"활동 자체가 보상이 된다\"고 설명하며, 이는 활동이 내재적으로 즐겁게 느껴진다는 것을 의미합니다."
         }
       ],
       "vocabulary": [
@@ -5758,7 +6280,9 @@
             "To argue that the deep sea is the most diverse habitat on Earth.",
             "To compare bioluminescence with other forms of light.",
             "To detail the anatomy of the anglerfish."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문의 주된 목적은 생물 발광이 먹이 유인, 방어, 위장, 의사소통 등 심해 생물의 생존에 어떤 다양한 기능을 하는지 설명하는 것입니다."
         },
         {
           "id": "reading-bridge-q88-2",
@@ -5771,7 +6295,9 @@
             "Generating heat to stay warm.",
             "Communicating with other creatures.",
             "Camouflaging an animal."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 생물 발광의 기능으로 먹이 유인, 포식자 위협, 위장, 의사소통을 언급했지만, 체온 유지를 위한 열 발생은 언급하지 않았습니다."
         },
         {
           "id": "reading-bridge-q88-3",
@@ -5784,7 +6310,9 @@
             "It is a dark environment where producing light provides an advantage.",
             "It is warmer than the surface of the ocean.",
             "It is an easy place for animals to find food and mates."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 심해를 \"햇빛이 침투할 수 없는 영원한 어둠\"이라고 묘사하며, 이러한 환경에서 빛을 내는 능력이 생존에 이점을 제공함을 보여줍니다."
         }
       ],
       "vocabulary": [
@@ -5824,7 +6352,9 @@
             "Learning a new language can change a person's personality.",
             "The complexity of a language is related to the intelligence of its speakers.",
             "Thought is possible without any form of language."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 사피어-워프 가설이 \"사람이 사용하는 언어와 그들이 세계를 이해하는 방식 사이의 복잡한 관계\"를 탐구한다고 소개합니다."
         },
         {
           "id": "reading-bridge-q89-2",
@@ -5837,7 +6367,9 @@
             "The strong version claims language determines thought, while the weak version says it influences it.",
             "The strong version was proposed by Sapir, the weak by Whorf.",
             "The strong version focuses on vocabulary, the weak on grammar."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 '강한' 버전은 언어가 사고를 '지배한다(dictates)'고 주장하는 반면, '약한' 버전은 '영향을 미친다(influences)'고 주장한다고 명확히 구분합니다."
         },
         {
           "id": "reading-bridge-q89-3",
@@ -5850,7 +6382,9 @@
             "They would believe that rain is the most important weather phenomenon.",
             "Their language would be considered superior to others.",
             "They would be unable to think about weather in general terms."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문의 파란색 예시 논리에 따르면, 비의 종류에 대한 단어가 많은 언어 사용자는 강우의 다양한 변화를 더 잘 인식할 가능성이 높다고 추론할 수 있습니다."
         }
       ],
       "vocabulary": [
@@ -5890,7 +6424,9 @@
             "To assess students' abilities in playing video games.",
             "To reduce the amount of homework assigned to students.",
             "To teach students how to design their own games."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 교육에서 게임화의 목표가 \"학생들의 참여와 동기를 높이는 것\"이라고 명시합니다."
         },
         {
           "id": "reading-bridge-q90-2",
@@ -5903,7 +6439,9 @@
             "Earning points for completing an activity.",
             "Taking standardized final exams.",
             "Reading textbooks without interaction."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 게임화의 요소로 \"포인트, 배지, 리더보드\" 등을 구체적으로 언급합니다."
         },
         {
           "id": "reading-bridge-q90-3",
@@ -5916,7 +6454,9 @@
             "It is only effective for very young children.",
             "It often leads to unhealthy competition among students.",
             "It requires students to have advanced technology skills."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 비판가들의 우려를 인용하며, 게임화가 \"제대로 설계되지 않으면 학습에서 학생들의 주의를 분산시킬 수 있다\"고 지적합니다."
         }
       ],
       "vocabulary": [
@@ -5956,7 +6496,9 @@
             "Storing long-term memories of learned material",
             "Managing complex cognitive skills like attention and reasoning",
             "Creating a feeling of nervousness before a test"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 전두엽 피질이 \"작업 기억, 주의력, 논리적 추론과 같은 고차원적 사고 능력\"을 담당한다고 명시합니다."
         },
         {
           "id": "reading-bridge-q91-2",
@@ -5969,7 +6511,9 @@
             "They help in organizing thoughts more clearly under pressure.",
             "They improve a student's logical reasoning skills.",
             "They reduce the physical symptoms of anxiety."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 스트레스 호르몬이 \"뇌의 전두엽 피질의 정상적인 기능을 방해할 수 있다\"고 설명합니다."
         },
         {
           "id": "reading-bridge-q91-3",
@@ -5982,7 +6526,9 @@
             "Psychological factors can be as important as one's level of knowledge.",
             "The \"fight or flight\" response helps students perform better on exams.",
             "Test anxiety only affects students who have not studied enough."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 \"학업 성취는 오로지 지식의 반영이 아니라 심리적 상태에 의해서도 크게 영향을 받는다\"고 결론 내리며, 심리적 요인의 중요성을 강조합니다."
         }
       ],
       "vocabulary": [
@@ -6022,7 +6568,9 @@
             "The ethical and privacy challenges of DTC genetic testing",
             "How to choose the best genetic testing company",
             "The laws regulating the sale of genetic data"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 DTC 유전자 검사의 이점을 간략히 언급한 후, 개인정보보호와 유전적 차별과 같은 \"윤리적 문제\"를 중심으로 논의를 전개합니다."
         },
         {
           "id": "reading-bridge-q92-2",
@@ -6035,7 +6583,9 @@
             "The use of genetic information to unfairly treat individuals",
             "The high cost associated with DTC genetic tests",
             "The emotional distress from learning about health risks"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 '유전적 차별'의 예시로 \"보험 회사나 고용주가 유전 정보를 이용하여 보장이나 고용 기회를 거부하는 것\"을 듭니다."
         },
         {
           "id": "reading-bridge-q92-3",
@@ -6048,7 +6598,9 @@
             "The consumer's genetic data could be exposed through a security breach.",
             "The test results may cause psychological anxiety in the consumer.",
             "The data could be used by insurance companies to refuse service."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 데이터 유출, 제3자 판매, 고용주나 보험사에 의한 사용을 위험으로 언급했지만, 검사 결과가 유발하는 심리적 불안은 직접 언급하지 않았습니다."
         }
       ],
       "vocabulary": [
@@ -6088,7 +6640,9 @@
             "Government positions and pensions",
             "Manufacturing, commerce, and finance",
             "Artistic and cultural patronage"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 산업 부르주아지 계급이 \"제조업, 상업, 금융으로부터 부를 얻었다\"고 명확히 설명합니다."
         },
         {
           "id": "reading-bridge-q93-2",
@@ -6101,7 +6655,9 @@
             "As a model for future economic success",
             "As politically insignificant and weak",
             "As patrons of high art and culture"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 귀족 계급이 부르주아지를 \"교양이 부족하고 물질주의적이라고 보며 경멸했다\"고 서술합니다."
         },
         {
           "id": "reading-bridge-q93-3",
@@ -6114,7 +6670,9 @@
             "Social status became solely determined by one's birth.",
             "Tensions arose between the old aristocracy and the new bourgeoisie.",
             "The bourgeoisie's wealth came from industry rather than land."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 귀족의 지위는 출생에 의해 결정되었지만, 부르주아지의 지위는 경제적 성공에 기반하여 새로운 사회적 이동성이 생겨났다고 설명하므로, 사회적 지위가 오직 출생에 의해서만 결정되었다는 진술은 사실이 아닙니다."
         }
       ],
       "vocabulary": [
@@ -6154,7 +6712,9 @@
             "To provide a detailed grammatical guide for an endangered language",
             "To criticize the use of technology in preserving languages",
             "To list all the languages that are currently endangered"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 언어 소멸 위기의 심각성과 그로 인한 손실을 설명하고, 이에 대응하기 위한 '언어 부흥 노력'의 방법들을 소개합니다."
         },
         {
           "id": "reading-bridge-q94-2",
@@ -6167,7 +6727,9 @@
             "A school where children learn only in an endangered language",
             "A book containing the history of a lost language",
             "A meeting of linguists from around the world"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 '언어 둥지'를 \"아이들이 소멸 위기 언어로만 교육받는\" 몰입 학교라고 명확히 설명합니다."
         },
         {
           "id": "reading-bridge-q94-3",
@@ -6180,7 +6742,9 @@
             "Knowledge passed down from ancestors",
             "A piece of collective human heritage",
             "A specific vocabulary and grammar system"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 언어 소멸 시 문화적 세계관, 조상의 지식, 인류 유산이 사라진다고 했지만, '경제 및 무역 기회'의 손실은 언급하지 않았습니다."
         }
       ],
       "vocabulary": [
@@ -6220,7 +6784,9 @@
             "The financial outcomes are often more negative than positive.",
             "It guarantees a long-term increase in tourism.",
             "The bidding process for the Olympics is unfair."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 올림픽 개최가 막대한 비용, 예산 초과, 유지비가 많이 드는 시설, 장기 부채 등 부정적인 재정적 결과를 낳는 경우가 많다고 주장합니다."
         },
         {
           "id": "reading-bridge-q95-2",
@@ -6233,7 +6799,9 @@
             "Costly and rarely used facilities left after the Olympics",
             "Corrupt officials involved in the planning process",
             "The official mascots of the Olympic Games"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 '흰 코끼리'를 \"올림픽 이후 거의 사용되지 않거나 버려져 매년 수백만 달러의 유지비가 드는 비싼 시설\"이라고 설명합니다."
         },
         {
           "id": "reading-bridge-q95-3",
@@ -6246,7 +6814,9 @@
             "The guaranteed materialization of projected economic benefits",
             "Improved infrastructure that can be used after the event",
             "The sale of abandoned venues to private companies"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 올림픽을 위해 건설된 \"새로운 기반 시설\"이 긍정적인 '유산'이 될 수 있다고 언급합니다."
         }
       ],
       "vocabulary": [
@@ -6286,7 +6856,9 @@
             "To create a state of impartiality for choosing principles of justice",
             "To test people's knowledge of philosophical concepts",
             "To help people understand their own personal biases"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 '무지의 베일'의 목적이 개인적 상황에 대한 모든 지식을 가려 \"공정한 입장에서 정의의 원칙을 선택하게\" 하는 것이라고 설명합니다."
         },
         {
           "id": "reading-bridge-q96-2",
@@ -6299,7 +6871,9 @@
             "Principles that abolish all forms of government",
             "Principles that offer protection for the weakest in society",
             "Principles that prioritize economic efficiency above all else"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 롤스가 베일 뒤에 있는 합리적인 사람은 자신이 최하층에 속할 가능성 때문에 \"사회의 가장 취약한 구성원을 보호하는 원칙\"을 선택할 것이라고 주장했다고 말합니다."
         },
         {
           "id": "reading-bridge-q96-3",
@@ -6312,7 +6886,9 @@
             "A person's financial situation",
             "A person's social standing",
             "A person's capacity for rational thought"
-          ]
+          ],
+          "answer": 5,
+          "explanation": "지문은 베일이 인종, 성별, 부, 재능 등을가려진다고 설명합니다. 그러나 이 사고 실험은 '합리적인 사람'이 선택을 내리는 것을 전제로 하므로, 합리적으로 생각하는 능력 자체는 가려지지 않는다고 보아야 합니다."
         }
       ],
       "vocabulary": [
@@ -6352,7 +6928,9 @@
             "An area with a high concentration of tiny, suspended plastic particles",
             "A deep-ocean trench filled with industrial waste",
             "A temporary accumulation of debris that disperses quickly"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 쓰레기 섬이 고체 섬이 아니며, 대신 \"주로 미세플라스틱으로 구성되어... 표면이나 바로 아래에 부유하고 있다\"고 설명합니다. 이는 작고 부유하는 플라스틱 입자들이 고농도로 모여 있는 지역이라는 설명과 일치합니다."
         },
         {
           "id": "reading-bridge-q97-2",
@@ -6365,7 +6943,9 @@
             "They block sunlight from reaching marine plants.",
             "They are too large for most animals to swallow.",
             "They dissolve in the water, poisoning it directly."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 \"해양 동물들이 종종 작은 플라스틱 조각을 먹이로 착각한다\"고 언급하며, 이 플라스틱이 \"주변 물에서 독성 오염물질을 흡수하고 농축할 수 있다\"고 설명합니다."
         },
         {
           "id": "reading-bridge-q97-3",
@@ -6378,7 +6958,9 @@
             "The plastic items are too large to be collected by ships.",
             "The area is protected by international environmental laws.",
             "The vastness of the area and the small size of the plastic particles."
-          ]
+          ],
+          "answer": 5,
+          "explanation": "지문은 정화 작업의 어려움에 대해 \"그 광대한 크기와 미세플라스틱이 너무 작아 쉽게 걸러낼 수 없다는 사실\" 때문이라고 명시합니다."
         }
       ],
       "vocabulary": [
@@ -6418,7 +7000,9 @@
             "To capture the momentary effects of light and atmosphere",
             "To protest against the academic art establishment",
             "To create art with deep symbolic meaning"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 인상주의 화가들이 \"빛과 대기의 덧없는 효과를 포착하는 것\"에 초점을 맞추었다고 명시적으로 설명합니다."
         },
         {
           "id": "reading-bridge-q98-2",
@@ -6431,7 +7015,9 @@
             "He focused exclusively on the geometric shapes found in nature.",
             "He rejected the use of vibrant colors in his paintings.",
             "He tried to paint scenes as objectively and scientifically as possible."
-          ]
+          ],
+          "answer": 1,
+          "explanation": "지문은 반 고흐가 \"시각적 현실보다는 자신의 내적 감정을 전달하기 위해 색과 형태를 사용했다\"고 설명합니다."
         },
         {
           "id": "reading-bridge-q98-3",
@@ -6444,7 +7030,9 @@
             "It established a single, dominant style for all of modern art.",
             "It moved art from objective depiction to subjective expression.",
             "It was a short-lived movement with little long-term influence."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 후기 인상주의가 \"객관적인 시각적 표현에서 더 주관적이고 개인적인 표현으로의 중추적인 전환\"을 이루었다고 결론 내립니다."
         }
       ],
       "vocabulary": [
@@ -6484,7 +7072,9 @@
             "The information is available only to a select few.",
             "Copies of the ledger are shared across many computers.",
             "It can only be used for financial transactions."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지문은 '분산된'의 의미를 \"하나의 중앙 위치에 저장되는 대신, 원장 사본이 컴퓨터 네트워크에 걸쳐 복사되고 퍼져 있다\"고 정의합니다."
         },
         {
           "id": "reading-bridge-q99-2",
@@ -6497,7 +7087,9 @@
             "Once data is recorded, it cannot be changed or removed.",
             "It is encrypted, so no one can read the information.",
             "It is stored physically rather than digitally."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 '불변의' 원장의 핵심 특징을 \"일단 데이터가 기록되면, 그것은 변경되거나 제거될 수 없다\"고 설명합니다."
         },
         {
           "id": "reading-bridge-q99-3",
@@ -6510,7 +7102,9 @@
             "Verifying digital identities",
             "Improving voting systems",
             "Recording cryptocurrency transactions"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 블록체인의 잠재적 응용 분야로 공급망 관리, 투표 시스템, 디지털 신원 확인, 암호화폐 거래를 언급했지만, 소셜 미디어 플랫폼 제작은 언급하지 않았습니다."
         }
       ],
       "vocabulary": [
@@ -6550,7 +7144,9 @@
             "A government program to provide housing for low-income families",
             "The decline of a neighborhood due to rising crime rates",
             "The preservation of a neighborhood's historical culture"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "지문은 젠트리피케이션을 \"더 부유한 개인들과 기업들이 역사적으로 덜 부유한 동네로 이주하는\" 과정으로 정의합니다."
         },
         {
           "id": "reading-bridge-q100-2",
@@ -6563,7 +7159,9 @@
             "The displacement of long-time residents",
             "A lack of new business investment",
             "The deterioration of buildings"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 젠트리피케이션의 주요 부정적 결과로, 집값 상승으로 인한 \"오랜 기간 거주해 온 주민들의 이주(displacement)\"를 명확히 언급합니다."
         },
         {
           "id": "reading-bridge-q100-3",
@@ -6576,7 +7174,9 @@
             "The renovation of buildings and a reduction in crime",
             "The establishment of rent control to protect residents",
             "A reduction in the number of businesses in the area"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지문은 젠트리피케이션의 초기 긍정적 효과로 \"개조된 건물, 감소된 범죄율, 그리고 새로운 지역 사업체 및 편의 시설\"을 언급합니다."
         }
       ],
       "vocabulary": [

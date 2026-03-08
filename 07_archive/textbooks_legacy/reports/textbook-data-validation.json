@@ -1,0 +1,414 @@
+{
+  "generatedAt": "2026-03-08T11:31:46.154Z",
+  "issueCount": 0,
+  "warningCount": 0,
+  "books": [
+    {
+      "bookId": "grammar-advanced",
+      "manifestPath": "/Users/haemin/projects/doc_design/02_textbooks/books/grammar-advanced.yaml",
+      "pageCounts": {
+        "legacyPage": 13,
+        "problemSet": 4,
+        "passageSet": 0,
+        "vocabularySet": 0,
+        "answerGrid": 4,
+        "explanations": 0
+      },
+      "source": {
+        "sourceFile": "[편입영어]문법_advanced.html",
+        "sourcePath": "/Users/haemin/projects/doc_design/02_textbooks/source/[편입영어]문법_advanced.html",
+        "totalPages": 38,
+        "coverPages": 0,
+        "tocPages": 2,
+        "answerPages": 4,
+        "problemPages": 20,
+        "contentPages": 31,
+        "mixedPages": 0,
+        "vocabOnlyPages": 0
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "bookId": "grammar-basic",
+      "manifestPath": "/Users/haemin/projects/doc_design/02_textbooks/books/grammar-basic.yaml",
+      "pageCounts": {
+        "legacyPage": 35,
+        "problemSet": 4,
+        "passageSet": 0,
+        "vocabularySet": 0,
+        "answerGrid": 1,
+        "explanations": 4
+      },
+      "source": null,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "bookId": "grammar-bridge-ch01",
+      "manifestPath": "/Users/haemin/projects/doc_design/02_textbooks/books/grammar-bridge-ch01.yaml",
+      "pageCounts": {
+        "legacyPage": 130,
+        "problemSet": 1,
+        "passageSet": 0,
+        "vocabularySet": 0,
+        "answerGrid": 1,
+        "explanations": 1
+      },
+      "source": null,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "bookId": "grammar-bridge-ch02",
+      "manifestPath": "/Users/haemin/projects/doc_design/02_textbooks/books/grammar-bridge-ch02.yaml",
+      "pageCounts": {
+        "legacyPage": 6,
+        "problemSet": 1,
+        "passageSet": 0,
+        "vocabularySet": 0,
+        "answerGrid": 1,
+        "explanations": 1
+      },
+      "source": null,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "bookId": "grammar-bridge-ch03",
+      "manifestPath": "/Users/haemin/projects/doc_design/02_textbooks/books/grammar-bridge-ch03.yaml",
+      "pageCounts": {
+        "legacyPage": 19,
+        "problemSet": 1,
+        "passageSet": 0,
+        "vocabularySet": 0,
+        "answerGrid": 1,
+        "explanations": 1
+      },
+      "source": null,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "bookId": "grammar-bridge-ch04",
+      "manifestPath": "/Users/haemin/projects/doc_design/02_textbooks/books/grammar-bridge-ch04.yaml",
+      "pageCounts": {
+        "legacyPage": 13,
+        "problemSet": 1,
+        "passageSet": 0,
+        "vocabularySet": 0,
+        "answerGrid": 1,
+        "explanations": 1
+      },
+      "source": null,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "bookId": "grammar-bridge-ch05",
+      "manifestPath": "/Users/haemin/projects/doc_design/02_textbooks/books/grammar-bridge-ch05.yaml",
+      "pageCounts": {
+        "legacyPage": 19,
+        "problemSet": 1,
+        "passageSet": 0,
+        "vocabularySet": 0,
+        "answerGrid": 1,
+        "explanations": 1
+      },
+      "source": null,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "bookId": "grammar-bridge-ch06",
+      "manifestPath": "/Users/haemin/projects/doc_design/02_textbooks/books/grammar-bridge-ch06.yaml",
+      "pageCounts": {
+        "legacyPage": 12,
+        "problemSet": 1,
+        "passageSet": 0,
+        "vocabularySet": 0,
+        "answerGrid": 1,
+        "explanations": 1
+      },
+      "source": null,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "bookId": "grammar-bridge-ch07",
+      "manifestPath": "/Users/haemin/projects/doc_design/02_textbooks/books/grammar-bridge-ch07.yaml",
+      "pageCounts": {
+        "legacyPage": 9,
+        "problemSet": 1,
+        "passageSet": 0,
+        "vocabularySet": 0,
+        "answerGrid": 1,
+        "explanations": 1
+      },
+      "source": null,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "bookId": "grammar-bridge-ch08",
+      "manifestPath": "/Users/haemin/projects/doc_design/02_textbooks/books/grammar-bridge-ch08.yaml",
+      "pageCounts": {
+        "legacyPage": 8,
+        "problemSet": 1,
+        "passageSet": 0,
+        "vocabularySet": 0,
+        "answerGrid": 1,
+        "explanations": 1
+      },
+      "source": null,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "bookId": "grammar-bridge-ch09",
+      "manifestPath": "/Users/haemin/projects/doc_design/02_textbooks/books/grammar-bridge-ch09.yaml",
+      "pageCounts": {
+        "legacyPage": 7,
+        "problemSet": 1,
+        "passageSet": 0,
+        "vocabularySet": 0,
+        "answerGrid": 1,
+        "explanations": 1
+      },
+      "source": null,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "bookId": "grammar-bridge-ch10",
+      "manifestPath": "/Users/haemin/projects/doc_design/02_textbooks/books/grammar-bridge-ch10.yaml",
+      "pageCounts": {
+        "legacyPage": 5,
+        "problemSet": 1,
+        "passageSet": 0,
+        "vocabularySet": 0,
+        "answerGrid": 1,
+        "explanations": 1
+      },
+      "source": null,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "bookId": "grammar-bridge-ch11",
+      "manifestPath": "/Users/haemin/projects/doc_design/02_textbooks/books/grammar-bridge-ch11.yaml",
+      "pageCounts": {
+        "legacyPage": 2,
+        "problemSet": 0,
+        "passageSet": 0,
+        "vocabularySet": 0,
+        "answerGrid": 0,
+        "explanations": 0
+      },
+      "source": null,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "bookId": "grammar-bridge-vol1",
+      "manifestPath": "/Users/haemin/projects/doc_design/02_textbooks/books/grammar-bridge-vol1.yaml",
+      "pageCounts": {
+        "legacyPage": 132,
+        "problemSet": 10,
+        "passageSet": 0,
+        "vocabularySet": 0,
+        "answerGrid": 10,
+        "explanations": 10
+      },
+      "source": null,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "bookId": "grammar-bridge-vol2",
+      "manifestPath": "/Users/haemin/projects/doc_design/02_textbooks/books/grammar-bridge-vol2.yaml",
+      "pageCounts": {
+        "legacyPage": 99,
+        "problemSet": 9,
+        "passageSet": 0,
+        "vocabularySet": 0,
+        "answerGrid": 9,
+        "explanations": 9
+      },
+      "source": null,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "bookId": "logic-basic",
+      "manifestPath": "/Users/haemin/projects/doc_design/02_textbooks/books/logic-basic.yaml",
+      "pageCounts": {
+        "legacyPage": 115,
+        "problemSet": 0,
+        "passageSet": 0,
+        "vocabularySet": 0,
+        "answerGrid": 0,
+        "explanations": 0
+      },
+      "source": {
+        "sourceFile": "[편입영어]논리_basic.html",
+        "sourcePath": "/Users/haemin/projects/doc_design/02_textbooks/source/[편입영어]논리_basic.html",
+        "totalPages": 115,
+        "coverPages": 1,
+        "tocPages": 6,
+        "answerPages": 24,
+        "problemPages": 70,
+        "contentPages": 84,
+        "mixedPages": 70,
+        "vocabOnlyPages": 2
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "bookId": "reading-basic",
+      "manifestPath": "/Users/haemin/projects/doc_design/02_textbooks/books/reading-basic.yaml",
+      "pageCounts": {
+        "legacyPage": 0,
+        "problemSet": 0,
+        "passageSet": 6,
+        "vocabularySet": 0,
+        "answerGrid": 0,
+        "explanations": 0
+      },
+      "source": {
+        "sourceFile": "[편입영어]독해_basic편.html",
+        "sourcePath": "/Users/haemin/projects/doc_design/02_textbooks/source/[편입영어]독해_basic편.html",
+        "totalPages": 545,
+        "coverPages": 1,
+        "tocPages": 1,
+        "answerPages": 0,
+        "problemPages": 501,
+        "contentPages": 531,
+        "mixedPages": 0,
+        "vocabOnlyPages": 0
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "bookId": "reading-bridge",
+      "manifestPath": "/Users/haemin/projects/doc_design/02_textbooks/books/reading-bridge.yaml",
+      "pageCounts": {
+        "legacyPage": 0,
+        "problemSet": 0,
+        "passageSet": 6,
+        "vocabularySet": 0,
+        "answerGrid": 0,
+        "explanations": 0
+      },
+      "source": {
+        "sourceFile": "[편입영어]독해_bridge.html",
+        "sourcePath": "/Users/haemin/projects/doc_design/02_textbooks/source/[편입영어]독해_bridge.html",
+        "totalPages": 465,
+        "coverPages": 1,
+        "tocPages": 0,
+        "answerPages": 57,
+        "problemPages": 400,
+        "contentPages": 0,
+        "mixedPages": 0,
+        "vocabOnlyPages": 0
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "bookId": "reading-intermediate",
+      "manifestPath": "/Users/haemin/projects/doc_design/02_textbooks/books/reading-intermediate.yaml",
+      "pageCounts": {
+        "legacyPage": 76,
+        "problemSet": 0,
+        "passageSet": 10,
+        "vocabularySet": 0,
+        "answerGrid": 0,
+        "explanations": 0
+      },
+      "source": {
+        "sourceFile": "[편입영어]독해_intermediate.html",
+        "sourcePath": "/Users/haemin/projects/doc_design/02_textbooks/source/[편입영어]독해_intermediate.html",
+        "totalPages": 288,
+        "coverPages": 1,
+        "tocPages": 1,
+        "answerPages": 10,
+        "problemPages": 200,
+        "contentPages": 276,
+        "mixedPages": 10,
+        "vocabOnlyPages": 0
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "bookId": "syntax-basic",
+      "manifestPath": "/Users/haemin/projects/doc_design/02_textbooks/books/syntax-basic.yaml",
+      "pageCounts": {
+        "legacyPage": 0,
+        "problemSet": 23,
+        "passageSet": 0,
+        "vocabularySet": 0,
+        "answerGrid": 0,
+        "explanations": 0
+      },
+      "source": null,
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "bookId": "syntax-bridge",
+      "manifestPath": "/Users/haemin/projects/doc_design/02_textbooks/books/syntax-bridge.yaml",
+      "pageCounts": {
+        "legacyPage": 355,
+        "problemSet": 10,
+        "passageSet": 0,
+        "vocabularySet": 0,
+        "answerGrid": 0,
+        "explanations": 0
+      },
+      "source": {
+        "sourceFile": "[편입영어]구문독해_bridge (1).html",
+        "sourcePath": "/Users/haemin/projects/doc_design/02_textbooks/source/[편입영어]구문독해_bridge (1).html",
+        "totalPages": 391,
+        "coverPages": 1,
+        "tocPages": 0,
+        "answerPages": 21,
+        "problemPages": 98,
+        "contentPages": 359,
+        "mixedPages": 0,
+        "vocabOnlyPages": 0
+      },
+      "issues": [],
+      "warnings": []
+    },
+    {
+      "bookId": "vocab-basic",
+      "manifestPath": "/Users/haemin/projects/doc_design/02_textbooks/books/vocab-basic.yaml",
+      "pageCounts": {
+        "legacyPage": 0,
+        "problemSet": 0,
+        "passageSet": 0,
+        "vocabularySet": 70,
+        "answerGrid": 0,
+        "explanations": 0
+      },
+      "source": {
+        "sourceFile": "[편입영어]보카_basic(1-70).html",
+        "sourcePath": "/Users/haemin/projects/doc_design/02_textbooks/source/[편입영어]보카_basic(1-70).html",
+        "totalPages": 844,
+        "coverPages": 1,
+        "tocPages": 2,
+        "answerPages": 0,
+        "problemPages": 0,
+        "contentPages": 701,
+        "mixedPages": 0,
+        "vocabOnlyPages": 700
+      },
+      "issues": [],
+      "warnings": []
+    }
+  ]
+}

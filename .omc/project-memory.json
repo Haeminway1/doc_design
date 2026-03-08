@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "lastScanned": 1772267920402,
+  "lastScanned": 1772976936048,
   "projectRoot": "/Users/haemin/projects/doc_design",
   "techStack": {
     "languages": [
@@ -26,7 +26,14 @@
       "study": "node 04_scripts/generate-study-pdf.js",
       "print": "node 04_scripts/images-to-pdf.js",
       "assemble": "node 04_scripts/assemble.js",
-      "validate": "node 04_scripts/validate-schema.js"
+      "validate": "node 04_scripts/validate-schema.js",
+      "validate:textbooks:data": "node 04_scripts/validate-textbook-data.js",
+      "audit:textbooks:trace": "node 04_scripts/audit-textbook-source-trace.js",
+      "audit:textbooks:render": "node 04_scripts/audit-render-integrity.js",
+      "migrate:textbook:v2": "node 04_scripts/migrate-textbook-manifest-v2.js",
+      "build:textbook:v2": "node 04_scripts/build-textbook-v2.js",
+      "pdf:textbook:v2": "node 04_scripts/generate-textbook-pdf-v2.js",
+      "reextract:textbooks": "node 04_scripts/reextract-textbooks.js"
     }
   },
   "conventions": {
@@ -39,6 +46,7 @@
     "isMonorepo": false,
     "workspaces": [],
     "mainDirectories": [
+      "__tests__",
       "docs"
     ],
     "gitBranches": {
@@ -48,34 +56,27 @@
   },
   "customNotes": [],
   "directoryMap": {
-    "00_tutoring": {
-      "path": "00_tutoring",
-      "purpose": null,
-      "fileCount": 1,
-      "lastAccessed": 1772267920382,
-      "keyFiles": [
-        "tracking.json"
-      ]
-    },
     "01_print-bundle": {
       "path": "01_print-bundle",
       "purpose": null,
       "fileCount": 0,
-      "lastAccessed": 1772267920386,
+      "lastAccessed": 1772976936029,
       "keyFiles": []
     },
     "02_textbooks": {
       "path": "02_textbooks",
       "purpose": null,
-      "fileCount": 1,
-      "lastAccessed": 1772267920386,
-      "keyFiles": []
+      "fileCount": 2,
+      "lastAccessed": 1772976936029,
+      "keyFiles": [
+        "SSOT_TEXTBOOK_SYSTEM_V2.md"
+      ]
     },
     "03_system": {
       "path": "03_system",
       "purpose": null,
       "fileCount": 1,
-      "lastAccessed": 1772267920386,
+      "lastAccessed": 1772976936034,
       "keyFiles": [
         "vera-core.css"
       ]
@@ -83,28 +84,28 @@
     "04_scripts": {
       "path": "04_scripts",
       "purpose": null,
-      "fileCount": 43,
-      "lastAccessed": 1772267920386,
+      "fileCount": 54,
+      "lastAccessed": 1772976936035,
       "keyFiles": [
         "_temp_check.js",
         "_temp_extract.js",
         "_temp_mapping.js",
         "assemble.js",
-        "debug-kakao-chatroom.js"
+        "audit-render-integrity.js"
       ]
     },
     "05_assets": {
       "path": "05_assets",
       "purpose": null,
       "fileCount": 0,
-      "lastAccessed": 1772267920386,
+      "lastAccessed": 1772976936035,
       "keyFiles": []
     },
     "06_reference": {
       "path": "06_reference",
       "purpose": null,
       "fileCount": 3,
-      "lastAccessed": 1772267920386,
+      "lastAccessed": 1772976936035,
       "keyFiles": [
         "PDF_DESIGN_GUIDE.md",
         "편입영어_교재_리팩토링_분석보고서.md",
@@ -115,7 +116,7 @@
       "path": "07_archive",
       "purpose": null,
       "fileCount": 20,
-      "lastAccessed": 1772267920386,
+      "lastAccessed": 1772976936037,
       "keyFiles": [
         "VERADICT 구문독해.pdf",
         "VERADICT 구문독해_final.pdf",
@@ -124,11 +125,20 @@
         "aaa.jpeg"
       ]
     },
+    "__tests__": {
+      "path": "__tests__",
+      "purpose": "Test files",
+      "fileCount": 1,
+      "lastAccessed": 1772976936037,
+      "keyFiles": [
+        "normalize-feedback-data.test.js"
+      ]
+    },
     "automation": {
       "path": "automation",
       "purpose": null,
       "fileCount": 3,
-      "lastAccessed": 1772267920386,
+      "lastAccessed": 1772976936038,
       "keyFiles": [
         "README.md",
         "config.js",
@@ -139,7 +149,7 @@
       "path": "docs",
       "purpose": "Documentation",
       "fileCount": 1,
-      "lastAccessed": 1772267920386,
+      "lastAccessed": 1772976936038,
       "keyFiles": [
         "카카오채팅_이미지_자동다운로드_기술명세서.md"
       ]
@@ -148,7 +158,7 @@
       "path": "student_chats",
       "purpose": null,
       "fileCount": 18,
-      "lastAccessed": 1772267920387,
+      "lastAccessed": 1772976936038,
       "keyFiles": [
         "김예은.json",
         "김지환.json",
@@ -161,7 +171,7 @@
       "path": "template-library",
       "purpose": null,
       "fileCount": 3,
-      "lastAccessed": 1772267920387,
+      "lastAccessed": 1772976936039,
       "keyFiles": [
         "README.md",
         "render.js",
@@ -172,7 +182,7 @@
       "path": "고등영문법_실력편_pages",
       "purpose": null,
       "fileCount": 20,
-      "lastAccessed": 1772267920387,
+      "lastAccessed": 1772976936039,
       "keyFiles": [
         "page_096.pdf",
         "page_097.pdf",
@@ -185,25 +195,14 @@
       "path": "02_textbooks/data",
       "purpose": "Data files",
       "fileCount": 0,
-      "lastAccessed": 1772267920387,
+      "lastAccessed": 1772976936039,
       "keyFiles": []
-    },
-    "02_textbooks/schemas": {
-      "path": "02_textbooks/schemas",
-      "purpose": "Schema definitions",
-      "fileCount": 5,
-      "lastAccessed": 1772267920387,
-      "keyFiles": [
-        "book-manifest.schema.json",
-        "passage.schema.json",
-        "problem.schema.json"
-      ]
     },
     "03_system/components": {
       "path": "03_system/components",
       "purpose": "UI components",
       "fileCount": 27,
-      "lastAccessed": 1772267920387,
+      "lastAccessed": 1772976936040,
       "keyFiles": [
         "COMPLETION_REPORT.md",
         "COMPONENTS_INDEX.md",
@@ -214,7 +213,7 @@
       "path": "automation/utils",
       "purpose": "Utility functions",
       "fileCount": 4,
-      "lastAccessed": 1772267920387,
+      "lastAccessed": 1772976936041,
       "keyFiles": [
         "drive-client.js",
         "kakao-client.js",
@@ -222,6 +221,307 @@
       ]
     }
   },
-  "hotPaths": [],
+  "hotPaths": [
+    {
+      "path": "03_system/base/bridge-refresh.css",
+      "accessCount": 70,
+      "lastAccessed": 1772982225263,
+      "type": "file"
+    },
+    {
+      "path": "04_scripts/assemble.js",
+      "accessCount": 54,
+      "lastAccessed": 1772980123481,
+      "type": "directory"
+    },
+    {
+      "path": "",
+      "accessCount": 21,
+      "lastAccessed": 1772982263919,
+      "type": "directory"
+    },
+    {
+      "path": "02_textbooks/output_v2/html_src/reading-basic.html",
+      "accessCount": 11,
+      "lastAccessed": 1772981810003,
+      "type": "directory"
+    },
+    {
+      "path": "02_textbooks/books",
+      "accessCount": 10,
+      "lastAccessed": 1772982337314,
+      "type": "directory"
+    },
+    {
+      "path": "03_system",
+      "accessCount": 9,
+      "lastAccessed": 1772979341015,
+      "type": "directory"
+    },
+    {
+      "path": "02_textbooks/output_v2/html_src",
+      "accessCount": 9,
+      "lastAccessed": 1772980645114,
+      "type": "directory"
+    },
+    {
+      "path": "02_textbooks/books/reading-basic.yaml",
+      "accessCount": 6,
+      "lastAccessed": 1772979349630,
+      "type": "file"
+    },
+    {
+      "path": "04_scripts",
+      "accessCount": 6,
+      "lastAccessed": 1772982262551,
+      "type": "directory"
+    },
+    {
+      "path": "02_textbooks/books/grammar-bridge-ch01.yaml",
+      "accessCount": 5,
+      "lastAccessed": 1772978981525,
+      "type": "file"
+    },
+    {
+      "path": "02_textbooks",
+      "accessCount": 5,
+      "lastAccessed": 1772980667147,
+      "type": "directory"
+    },
+    {
+      "path": "02_textbooks/content",
+      "accessCount": 5,
+      "lastAccessed": 1772980697230,
+      "type": "directory"
+    },
+    {
+      "path": "02_textbooks/output_v2/html_src/grammar-bridge-ch01.html",
+      "accessCount": 5,
+      "lastAccessed": 1772980711078,
+      "type": "directory"
+    },
+    {
+      "path": "verajin_제목추론_ESG_박지율.html",
+      "accessCount": 4,
+      "lastAccessed": 1772978965018,
+      "type": "file"
+    },
+    {
+      "path": "02_textbooks/books/syntax-bridge.yaml",
+      "accessCount": 4,
+      "lastAccessed": 1772978981938,
+      "type": "file"
+    },
+    {
+      "path": "03_system/components/tip-box.css",
+      "accessCount": 4,
+      "lastAccessed": 1772980082235,
+      "type": "file"
+    },
+    {
+      "path": "03_system/components/answer-grid.css",
+      "accessCount": 4,
+      "lastAccessed": 1772980084147,
+      "type": "file"
+    },
+    {
+      "path": "03_system/components/section-title.css",
+      "accessCount": 4,
+      "lastAccessed": 1772980085514,
+      "type": "file"
+    },
+    {
+      "path": "03_system/base/page-layout.css",
+      "accessCount": 3,
+      "lastAccessed": 1772978672993,
+      "type": "file"
+    },
+    {
+      "path": "03_system/templates/royal-purple/tokens.css",
+      "accessCount": 3,
+      "lastAccessed": 1772978943728,
+      "type": "file"
+    },
+    {
+      "path": "03_system/components",
+      "accessCount": 3,
+      "lastAccessed": 1772980879171,
+      "type": "directory"
+    },
+    {
+      "path": "04_scripts/generate-textbook-pdf-v2.js",
+      "accessCount": 3,
+      "lastAccessed": 1772982089579,
+      "type": "file"
+    },
+    {
+      "path": "03_system/templates/TEMPLATE_INDEX.json",
+      "accessCount": 2,
+      "lastAccessed": 1772978490647,
+      "type": "file"
+    },
+    {
+      "path": "03_system/templates/sky-academic/sky-academic.css",
+      "accessCount": 2,
+      "lastAccessed": 1772978564025,
+      "type": "file"
+    },
+    {
+      "path": "03_system/templates/sky-academic/tokens.css",
+      "accessCount": 2,
+      "lastAccessed": 1772978566663,
+      "type": "file"
+    },
+    {
+      "path": "03_system/vera-core.css",
+      "accessCount": 2,
+      "lastAccessed": 1772978626453,
+      "type": "file"
+    },
+    {
+      "path": "02_textbooks/styles/syntax-bridge.css",
+      "accessCount": 2,
+      "lastAccessed": 1772978698818,
+      "type": "directory"
+    },
+    {
+      "path": "03_system/templates/logic-blue/tokens.css",
+      "accessCount": 2,
+      "lastAccessed": 1772978944020,
+      "type": "file"
+    },
+    {
+      "path": "02_textbooks/styles",
+      "accessCount": 2,
+      "lastAccessed": 1772979184004,
+      "type": "directory"
+    },
+    {
+      "path": "04_scripts/check-textbook-v2.js",
+      "accessCount": 2,
+      "lastAccessed": 1772982081588,
+      "type": "file"
+    },
+    {
+      "path": "04_scripts/audit-render-integrity.js",
+      "accessCount": 2,
+      "lastAccessed": 1772982082455,
+      "type": "file"
+    },
+    {
+      "path": "02_textbooks/books/reading-bridge.yaml",
+      "accessCount": 1,
+      "lastAccessed": 1772977011105,
+      "type": "file"
+    },
+    {
+      "path": "02_textbooks/books/logic-basic.yaml",
+      "accessCount": 1,
+      "lastAccessed": 1772977011996,
+      "type": "file"
+    },
+    {
+      "path": "02_textbooks/books/vocab-basic.yaml",
+      "accessCount": 1,
+      "lastAccessed": 1772977012117,
+      "type": "file"
+    },
+    {
+      "path": "03_system/components/cover.css",
+      "accessCount": 1,
+      "lastAccessed": 1772977018732,
+      "type": "file"
+    },
+    {
+      "path": "03_system/components/concept-box.css",
+      "accessCount": 1,
+      "lastAccessed": 1772977019131,
+      "type": "file"
+    },
+    {
+      "path": "03_system/components/problem.css",
+      "accessCount": 1,
+      "lastAccessed": 1772977019818,
+      "type": "file"
+    },
+    {
+      "path": "03_system/components/passage.css",
+      "accessCount": 1,
+      "lastAccessed": 1772977020228,
+      "type": "file"
+    },
+    {
+      "path": "03_system/templates/ocean-blue/ocean-blue.css",
+      "accessCount": 1,
+      "lastAccessed": 1772977036780,
+      "type": "file"
+    },
+    {
+      "path": "03_system/templates/logic-blue/logic-blue.css",
+      "accessCount": 1,
+      "lastAccessed": 1772977037605,
+      "type": "file"
+    },
+    {
+      "path": "03_system/templates/royal-purple/royal-purple.css",
+      "accessCount": 1,
+      "lastAccessed": 1772977037691,
+      "type": "file"
+    },
+    {
+      "path": "03_system/templates/grammar-teal/grammar-teal.css",
+      "accessCount": 1,
+      "lastAccessed": 1772977038421,
+      "type": "file"
+    },
+    {
+      "path": "03_system/templates/ocean-blue/tokens.css",
+      "accessCount": 1,
+      "lastAccessed": 1772977043591,
+      "type": "file"
+    },
+    {
+      "path": "03_system/templates/grammar-teal/tokens.css",
+      "accessCount": 1,
+      "lastAccessed": 1772977044967,
+      "type": "file"
+    },
+    {
+      "path": "03_system/templates/earth-tone/tokens.css",
+      "accessCount": 1,
+      "lastAccessed": 1772977045563,
+      "type": "file"
+    },
+    {
+      "path": "02_textbooks/content/syntax",
+      "accessCount": 1,
+      "lastAccessed": 1772978681959,
+      "type": "directory"
+    },
+    {
+      "path": "02_textbooks/styles/reading-basic.css",
+      "accessCount": 1,
+      "lastAccessed": 1772978733912,
+      "type": "directory"
+    },
+    {
+      "path": "03_system/templates",
+      "accessCount": 1,
+      "lastAccessed": 1772979152529,
+      "type": "directory"
+    },
+    {
+      "path": "02_textbooks/content/grammar",
+      "accessCount": 1,
+      "lastAccessed": 1772980709575,
+      "type": "directory"
+    },
+    {
+      "path": "02_textbooks/output_v2/html_src/logic-basic.html",
+      "accessCount": 1,
+      "lastAccessed": 1772980773723,
+      "type": "directory"
+    }
+  ],
   "userDirectives": []
 }

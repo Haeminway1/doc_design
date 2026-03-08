@@ -1,0 +1,238 @@
+# logic-basic — 논리 Basic
+book:
+  title: "편입영어 논리 Basic 편"
+  author: "Vera's Flavor"
+  template: logic-blue
+  series: logic-basic
+
+pages:
+  - type: structural
+    src: logic/basic/cover.html
+  - type: structural
+    src: logic/basic/toc.html
+  - type: content
+    src: logic/basic/page-003.html
+  - type: content
+    src: logic/basic/page-004.html
+  - type: content
+    src: logic/basic/page-005.html
+  - type: content
+    src: logic/basic/page-006.html
+  - type: content
+    src: logic/basic/page-007.html
+  - type: content
+    src: logic/basic/page-008.html
+  - type: content
+    src: logic/basic/page-009.html
+  - type: content
+    src: logic/basic/page-010.html
+  - type: content
+    src: logic/basic/page-011.html
+  - type: content
+    src: logic/basic/page-012.html
+  - type: content
+    src: logic/basic/page-013.html
+  - type: content
+    src: logic/basic/page-014.html
+  - type: content
+    src: logic/basic/page-015.html
+  - type: content
+    src: logic/basic/page-016.html
+  - type: content
+    src: logic/basic/page-017.html
+  - type: content
+    src: logic/basic/page-018.html
+  - type: content
+    src: logic/basic/page-019.html
+  - type: content
+    src: logic/basic/page-020.html
+  - type: content
+    src: logic/basic/page-021.html
+  - type: content
+    src: logic/basic/page-022.html
+  - type: content
+    src: logic/basic/page-023.html
+  - type: content
+    src: logic/basic/page-024.html
+  - type: structural
+    src: logic/basic/toc-02.html
+  - type: content
+    src: logic/basic/page-026.html
+  - type: content
+    src: logic/basic/page-027.html
+  - type: content
+    src: logic/basic/page-028.html
+  - type: content
+    src: logic/basic/page-029.html
+  - type: content
+    src: logic/basic/page-030.html
+  - type: content
+    src: logic/basic/page-031.html
+  - type: content
+    src: logic/basic/page-032.html
+  - type: content
+    src: logic/basic/page-033.html
+  - type: content
+    src: logic/basic/page-034.html
+  - type: content
+    src: logic/basic/page-035.html
+  - type: content
+    src: logic/basic/page-036.html
+  - type: content
+    src: logic/basic/page-037.html
+  - type: content
+    src: logic/basic/page-038.html
+  - type: content
+    src: logic/basic/page-039.html
+  - type: content
+    src: logic/basic/page-040.html
+  - type: content
+    src: logic/basic/page-041.html
+  - type: content
+    src: logic/basic/page-042.html
+  - type: content
+    src: logic/basic/page-043.html
+  - type: structural
+    src: logic/basic/toc-03.html
+  - type: content
+    src: logic/basic/page-045.html
+  - type: content
+    src: logic/basic/page-046.html
+  - type: content
+    src: logic/basic/page-047.html
+  - type: content
+    src: logic/basic/page-048.html
+  - type: content
+    src: logic/basic/page-049.html
+  - type: content
+    src: logic/basic/page-050.html
+  - type: content
+    src: logic/basic/page-051.html
+  - type: content
+    src: logic/basic/page-052.html
+  - type: content
+    src: logic/basic/page-053.html
+  - type: content
+    src: logic/basic/page-054.html
+  - type: content
+    src: logic/basic/page-055.html
+  - type: content
+    src: logic/basic/page-056.html
+  - type: content
+    src: logic/basic/page-057.html
+  - type: content
+    src: logic/basic/page-058.html
+  - type: content
+    src: logic/basic/page-059.html
+  - type: content
+    src: logic/basic/page-060.html
+  - type: content
+    src: logic/basic/page-061.html
+  - type: structural
+    src: logic/basic/toc-04.html
+  - type: content
+    src: logic/basic/page-063.html
+  - type: content
+    src: logic/basic/page-064.html
+  - type: content
+    src: logic/basic/page-065.html
+  - type: content
+    src: logic/basic/page-066.html
+  - type: content
+    src: logic/basic/page-067.html
+  - type: content
+    src: logic/basic/page-068.html
+  - type: content
+    src: logic/basic/page-069.html
+  - type: content
+    src: logic/basic/page-070.html
+  - type: content
+    src: logic/basic/page-071.html
+  - type: content
+    src: logic/basic/page-072.html
+  - type: content
+    src: logic/basic/page-073.html
+  - type: content
+    src: logic/basic/page-074.html
+  - type: content
+    src: logic/basic/page-075.html
+  - type: content
+    src: logic/basic/page-076.html
+  - type: content
+    src: logic/basic/page-077.html
+  - type: content
+    src: logic/basic/page-078.html
+  - type: content
+    src: logic/basic/page-079.html
+  - type: structural
+    src: logic/basic/toc-05.html
+  - type: content
+    src: logic/basic/page-081.html
+  - type: content
+    src: logic/basic/page-082.html
+  - type: content
+    src: logic/basic/page-083.html
+  - type: content
+    src: logic/basic/page-084.html
+  - type: content
+    src: logic/basic/page-085.html
+  - type: content
+    src: logic/basic/page-086.html
+  - type: content
+    src: logic/basic/page-087.html
+  - type: content
+    src: logic/basic/page-088.html
+  - type: content
+    src: logic/basic/page-089.html
+  - type: content
+    src: logic/basic/page-090.html
+  - type: content
+    src: logic/basic/page-091.html
+  - type: content
+    src: logic/basic/page-092.html
+  - type: content
+    src: logic/basic/page-093.html
+  - type: content
+    src: logic/basic/page-094.html
+  - type: content
+    src: logic/basic/page-095.html
+  - type: content
+    src: logic/basic/page-096.html
+  - type: content
+    src: logic/basic/page-097.html
+  - type: structural
+    src: logic/basic/toc-06.html
+  - type: content
+    src: logic/basic/page-099.html
+  - type: content
+    src: logic/basic/page-100.html
+  - type: content
+    src: logic/basic/page-101.html
+  - type: content
+    src: logic/basic/page-102.html
+  - type: content
+    src: logic/basic/page-103.html
+  - type: content
+    src: logic/basic/page-104.html
+  - type: content
+    src: logic/basic/page-105.html
+  - type: content
+    src: logic/basic/page-106.html
+  - type: content
+    src: logic/basic/page-107.html
+  - type: content
+    src: logic/basic/page-108.html
+  - type: content
+    src: logic/basic/page-109.html
+  - type: content
+    src: logic/basic/page-110.html
+  - type: content
+    src: logic/basic/page-111.html
+  - type: content
+    src: logic/basic/page-112.html
+  - type: content
+    src: logic/basic/page-113.html
+  - type: content
+    src: logic/basic/page-114.html
+  - type: content
+    src: logic/basic/page-115.html

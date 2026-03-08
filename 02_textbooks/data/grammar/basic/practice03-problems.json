@@ -1,0 +1,177 @@
+{
+  "bookId": "grammar-basic",
+  "chapter": "practice03",
+  "title": "Practice 3: 부정사 기출문제 TYPE (A)",
+  "problems": [
+    {
+      "id": "grammar-basic-practice03-001",
+      "number": 1,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "Kids are supposed to not staying in school after five.",
+      "choices": [],
+      "answer": "to not staying → not to stay",
+      "explanation": "be supposed to 뒤에는 동사원형이 와야 하므로 staying은 틀립니다. 또한 to부정사의 부정은 not to V 형태이므로, 'to not staying'을 'not to stay'로 고쳐야 합니다."
+    },
+    {
+      "id": "grammar-basic-practice03-002",
+      "number": 2,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "He faked his past in order to securing the job.",
+      "choices": [],
+      "answer": "securing → secure",
+      "explanation": "in order to는 목적을 나타내는 to부정사 구문으로, 뒤에 동사원형이 와야 합니다. 동명사(securing)가 아닌 원형(secure)이 올바른 형태입니다."
+    },
+    {
+      "id": "grammar-basic-practice03-003",
+      "number": 3,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "They came to this island so as to dig up the ruins.",
+      "choices": [],
+      "answer": "오류 없음 (정답 문장)",
+      "explanation": "이 문장은 문법적으로 올바릅니다. 'so as to + 동사원형'은 목적을 나타내는 부정사 구문으로 정확하게 사용되었습니다. 기출문제에서 정답 문장으로 출제된 것으로, 오류가 없는 문장입니다."
+    },
+    {
+      "id": "grammar-basic-practice03-004",
+      "number": 4,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "It is no use to continue this discussion.",
+      "choices": [],
+      "answer": "to continue → continuing",
+      "explanation": "It is no use 뒤에는 동명사(V-ing)가 와야 합니다. to부정사를 쓸 수 없으므로 'to continue'를 'continuing'으로 고쳐야 합니다. 'It is no use V-ing'는 '~해봤자 소용없다'라는 뜻의 관용 표현입니다."
+    },
+    {
+      "id": "grammar-basic-practice03-005",
+      "number": 5,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "I make it a rule to play tennis every other day.",
+      "choices": [],
+      "answer": "오류 없음 (정답 문장)",
+      "explanation": "이 문장은 문법적으로 올바릅니다. 'make it a rule to V'는 '~하는 것을 규칙으로 삼다'라는 관용 표현으로, 가목적어 it + 진목적어 to부정사 구문이 정확하게 사용되었습니다."
+    },
+    {
+      "id": "grammar-basic-practice03-006",
+      "number": 6,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "I happened to meet her in the elevator.",
+      "choices": [],
+      "answer": "오류 없음 (정답 문장)",
+      "explanation": "이 문장은 문법적으로 올바릅니다. 'happen to V'는 '우연히 ~하다'라는 뜻으로, to부정사가 정확하게 사용되었습니다."
+    },
+    {
+      "id": "grammar-basic-practice03-007",
+      "number": 7,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "The controversy is unlikely to die down.",
+      "choices": [],
+      "answer": "오류 없음 (정답 문장)",
+      "explanation": "이 문장은 문법적으로 올바릅니다. 'be unlikely to V'는 '~할 것 같지 않다'라는 뜻으로, to부정사가 정확하게 사용되었습니다."
+    },
+    {
+      "id": "grammar-basic-practice03-008",
+      "number": 8,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "To be wise about the health benefits of sports ensures a healthy lifestyle. Regular exercise will help one's personality being positive.",
+      "choices": [],
+      "answer": "being → (to) be",
+      "explanation": "help는 목적격보어로 동사원형 또는 to부정사를 취합니다. 'help + O + V(원형)/to V' 구문이므로, 동명사 being이 아닌 'be' 또는 'to be'로 고쳐야 합니다."
+    },
+    {
+      "id": "grammar-basic-practice03-009",
+      "number": 9,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "Many of the poor, unable of finding work all year round, and therefore unable of buying food everyday, has to manage their hunger by to fast on alternate days.",
+      "choices": [],
+      "answer": "unable of → unable to / by to fast → by fasting",
+      "explanation": "unable은 전치사 of가 아닌 to부정사와 결합합니다(unable to V). 또한 전치사 by 뒤에는 동명사가 와야 하므로 'by to fast'는 'by fasting'으로 고쳐야 합니다. 추가로 주어가 Many이므로 has는 have가 되어야 합니다."
+    },
+    {
+      "id": "grammar-basic-practice03-010",
+      "number": 10,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "The crowd at the bus station turned out very large that the candidate was willing to delivering an impromptu speech.",
+      "choices": [],
+      "answer": "to delivering → to deliver",
+      "explanation": "be willing to 뒤에는 동사원형이 와야 합니다. to부정사의 to 뒤에 동명사(delivering)를 쓸 수 없으므로 'to deliver'로 고쳐야 합니다. 참고로 'turned out very large that'도 'turned out so large that'이 자연스럽습니다."
+    },
+    {
+      "id": "grammar-basic-practice03-011",
+      "number": 11,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "It is no wonder that the majority of smokers have tried at some time in their lives to quit.",
+      "choices": [],
+      "answer": "오류 없음 (정답 문장)",
+      "explanation": "이 문장은 문법적으로 올바릅니다. 'It is no wonder that ~'은 '~은 놀라운 일이 아니다'라는 구문이고, 'try to V'(~하려고 노력하다)도 정확하게 사용되었습니다."
+    },
+    {
+      "id": "grammar-basic-practice03-012",
+      "number": 12,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "A classic stereotype is that men are better at math than women, but there have been little solid evidence to explain this.",
+      "choices": [],
+      "answer": "have been → has been",
+      "explanation": "evidence는 불가산명사이므로 단수 취급합니다. 따라서 'there have been'이 아닌 'there has been'이 올바릅니다. 참고로 little은 불가산명사와 함께 쓰여 '거의 없는'이라는 뜻입니다."
+    },
+    {
+      "id": "grammar-basic-practice03-013",
+      "number": 13,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "The combination of counting and breathing is so relaxing that it's almost impossible to remaining angry.",
+      "choices": [],
+      "answer": "remaining → remain",
+      "explanation": "to부정사의 to 뒤에는 동사원형이 와야 합니다. 'impossible to V' 구문에서 동명사(remaining)가 아닌 원형(remain)을 써야 합니다."
+    },
+    {
+      "id": "grammar-basic-practice03-014",
+      "number": 14,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "The members of the US police force who have most contact with the public is uniformed officers, who patrol in cars and are the first arriving when a crime reported.",
+      "choices": [],
+      "answer": "arriving → to arrive",
+      "explanation": "서수(the first, the second 등) 뒤에는 to부정사가 와야 합니다. 'the first to V' 구문이므로 'the first arriving'을 'the first to arrive'로 고쳐야 합니다. 참고로 주어 The members가 복수이므로 is → are도 수정이 필요합니다."
+    },
+    {
+      "id": "grammar-basic-practice03-015",
+      "number": 15,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "All relationships rely on an ability to create and maintain social ties. Defects can be disabling, and become apparent as disorders such as autism and schizophrenia.",
+      "choices": [],
+      "answer": "오류 없음 (정답 문장)",
+      "explanation": "이 문장은 문법적으로 올바릅니다. 'an ability to V'(~할 능력), 'rely on'(~에 의존하다), 'become apparent as'(~로 드러나다) 등이 모두 정확하게 사용되었습니다."
+    },
+    {
+      "id": "grammar-basic-practice03-016",
+      "number": 16,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "She talks out loud about all her options, which is such distracting that I can't concentrate on anything.",
+      "choices": [],
+      "answer": "such → so",
+      "explanation": "'so + 형용사 + that' 구문입니다. such는 'such + (a/an) + 명사 + that' 구조에서 쓰이고, 형용사(distracting) 앞에는 so를 써야 합니다. 따라서 'such distracting'을 'so distracting'으로 고쳐야 합니다."
+    },
+    {
+      "id": "grammar-basic-practice03-017",
+      "number": 17,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "The multi-store model of memory is too simple explaining complex human memory.",
+      "choices": [],
+      "answer": "simple explaining → simple to explain",
+      "explanation": "'too + 형용사 + to V' 구문입니다. too ~ to V는 '너무 ~해서 ...할 수 없다'라는 뜻으로, 동명사(explaining)가 아닌 to부정사(to explain)를 써야 합니다."
+    }
+  ]
+}

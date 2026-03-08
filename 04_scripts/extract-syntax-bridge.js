@@ -13,9 +13,9 @@ const ROOT = path.resolve(__dirname, '..');
 const SOURCE = path.join(ROOT, '02_textbooks', 'source', '[편입영어]구문독해_bridge (1).html');
 const DATA_DIR = path.join(ROOT, '02_textbooks', 'data', 'syntax', 'bridge');
 const CONTENT_DIR = path.join(ROOT, '02_textbooks', 'content', 'syntax', 'bridge');
-const BOOKS_DIR = path.join(ROOT, '02_textbooks', 'books');
+const LEGACY_BOOKS_DIR = path.join(ROOT, '02_textbooks', 'books_legacy');
 
-[DATA_DIR, CONTENT_DIR, BOOKS_DIR].forEach(d => fs.mkdirSync(d, { recursive: true }));
+[DATA_DIR, CONTENT_DIR, LEGACY_BOOKS_DIR].forEach(d => fs.mkdirSync(d, { recursive: true }));
 
 // Unit definitions (from HTML structure)
 const UNITS = [
@@ -214,6 +214,6 @@ pages:
 ${yamlPages.join('\n')}
 `;
 
-fs.writeFileSync(path.join(BOOKS_DIR, 'syntax-bridge.yaml'), yamlStr, 'utf8');
-console.log(`  💾 Manifest written`);
+fs.writeFileSync(path.join(LEGACY_BOOKS_DIR, 'syntax-bridge.yaml'), yamlStr, 'utf8');
+console.log(`  💾 Legacy manifest written`);
 console.log('  ✅ Done: 구문독해 Bridge');

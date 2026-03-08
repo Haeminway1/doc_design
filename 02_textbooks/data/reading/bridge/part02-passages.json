@@ -8,7 +8,23 @@
       "title": "",
       "text": "The question of whether artificial intelligence can be genuinely creative is a subject of intense debate. Proponents argue that AI, by analyzing vast datasets of human-created works, can learn the underlying patterns and generate novel outputs that are indistinguishable from human art or music. They point to AI systems that compose symphonies or create paintings as evidence of emergent creativity. However, critics contend that this is not true creativity but sophisticated mimicry. They argue that genuine creativity requires consciousness, intention, and subjective experience, which AI currently lacks. From this perspective, an AI is merely a tool that recombines existing elements in complex ways, without any real understanding or emotional investment. The core of the issue lies in defining creativity itself: is it the novelty of the product, or the nature of the process and the mind behind it?",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q101",
+          "number": "101",
+          "text": "What is the main topic of the passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The technical process of how AI generates art",
+            "The superiority of human creativity over machines",
+            "The philosophical debate on the nature of AI's creativity",
+            "The potential of AI to replace human artists in the future",
+            "The ethical considerations of using AI in creative fields"
+          ],
+          "answer": 3,
+          "explanation": "글은 AI의 창의성에 대한 찬반 양론을 제시하며, 창의성의 본질에 대한 철학적 논쟁을 다루고 있습니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "proponents",
@@ -38,7 +54,23 @@
       "title": "",
       "text": "In the field of conservation biology, the concept of \"biodiversity hotspots\" is a crucial strategic tool. These are regions that have a high concentration of endemic species—plants and animals found nowhere else on Earth—and are also under severe threat of habitat loss. The logic behind focusing on these hotspots is pragmatic and urgent. With limited resources for conservation, it is more effective to prioritize areas where the greatest number of unique species can be protected with a single effort. By safeguarding these critical zones, conservationists aim to prevent a disproportionately large number of extinctions. While this approach is not without its critics, who argue it may neglect other important ecosystems, the hotspot strategy remains a cornerstone of global conservation efforts, directing attention and funding where they can have the most immediate and significant impact.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q102",
+          "number": "102",
+          "text": "What is the primary purpose of the passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "To list all the biodiversity hotspots in the world",
+            "To criticize the strategy of focusing on biodiversity hotspots",
+            "To explain the concept and strategic importance of biodiversity hotspots",
+            "To compare the biodiversity of hotspots with other ecosystems",
+            "To advocate for an increase in funding for all conservation projects"
+          ],
+          "answer": 3,
+          "explanation": "글의 주된 목적은 '생물다양성 핫스팟'의 개념을 정의하고, 한정된 자원으로 보존 효과를 극대화하는 전략적 중요성을 설명하는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "conservation",
@@ -64,7 +96,23 @@
       "title": "",
       "text": "Social media platforms, designed to connect people, ironically often create \"echo chambers.\" This phenomenon occurs because the algorithms that curate our news feeds are programmed to show us content we are likely to engage with. As a result, users are predominantly exposed to information and opinions that confirm their existing beliefs. Dissenting or alternative viewpoints are filtered out, not by a censor, but by the subtle mechanics of personalization. This constant reinforcement can lead to increased political and social polarization, as individuals become more convinced of the absolute correctness of their own perspective and less tolerant of others. The echo chamber effect insulates users from diverse perspectives, creating a distorted view of reality where one's own opinion appears to be the consensus, thereby hindering constructive public discourse.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q103",
+          "number": "103",
+          "text": "What is the main point of the passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Social media is an effective tool for political campaigns.",
+            "Algorithms on social media help users discover diverse content.",
+            "Social media platforms intentionally censor dissenting opinions.",
+            "The personalization features of social media can foster ideological isolation.",
+            "The primary cause of political polarization is traditional media."
+          ],
+          "answer": 4,
+          "explanation": "글의 요지는 소셜 미디어의 개인화 알고리즘이 사용자를 비슷한 의견에만 노출시켜 이념적 고립과 양극화를 심화시킬 수 있다는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "ironically",
@@ -94,7 +142,23 @@
       "title": "",
       "text": "ESG, which stands for Environmental, Social, and Governance, has become a major framework for evaluating corporate responsibility and sustainable investment. In theory, companies with high ESG scores are better managed, more conscious of their long-term risks, and therefore more attractive to investors. However, a growing chorus of critics raises concerns about its practical application. A primary challenge is the lack of standardized metrics for measuring ESG performance, leading to inconsistent and sometimes misleading ratings. This ambiguity allows for \"greenwashing,\" where companies can selectively report positive data to project a sustainable image without making substantive changes to their operations. Consequently, while the intention behind ESG is commendable, its real-world impact is often debated, with questions remaining about whether it truly drives meaningful corporate change or merely serves as a sophisticated marketing tool.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q104",
+          "number": "104",
+          "text": "Which of the following would be the most appropriate title for the passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "ESG: The New Standard for Corporate Success",
+            "The Rise of Socially Responsible Investing",
+            "Greenwashing: How Companies Deceive the Public",
+            "ESG Investing: Promises and Practical Challenges",
+            "The History and Evolution of Corporate Governance"
+          ],
+          "answer": 4,
+          "explanation": "글은 ESG의 긍정적 취지(약속)와 함께 표준화 부재, 그린워싱 등 실제 적용상의 어려움(현실적 과제)을 모두 다루고 있습니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "sustainable",
@@ -124,7 +188,23 @@
       "title": "",
       "text": "At the heart of Jean-Paul Sartre's existentialist philosophy is the concept of \"engagement\" (l'engagement). For Sartre, human beings are \"condemned to be free,\" meaning we are thrown into the world without a predetermined essence or divine plan. This radical freedom comes with an equally radical responsibility. Engagement is the active choice to commit oneself to a project, a cause, or a way of life, and in doing so, to create one's own values and meaning. It is the opposite of passive observation or bad faith—the act of pretending we are not free. By engaging with the world, whether through political action, artistic creation, or personal relationships, individuals define not only themselves but also their vision of what humanity ought to be. Thus, every choice is a weighty one, as it carries the burden of defining meaning in a meaningless universe.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q105",
+          "number": "105",
+          "text": "According to the passage, what is the core idea of \"engagement\" in Sartre's philosophy?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Accepting a predetermined fate without resistance",
+            "Passively observing the world to understand its nature",
+            "Creating personal meaning and value through active commitment",
+            "Following a divine plan to achieve a moral life",
+            "Escaping from the burden of freedom and responsibility"
+          ],
+          "answer": 3,
+          "explanation": "글은 사르트르의 '앙가주망'이 미리 정해진 본질이 없는 세상에서 능동적인 선택과 헌신을 통해 스스로의 가치와 의미를 만들어내는 행위임을 설명합니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "existentialist",
@@ -150,7 +230,23 @@
       "title": "",
       "text": "The placebo effect is a fascinating phenomenon where a patient's physical or mental health improves after receiving a treatment with no actual therapeutic value, such as a sugar pill. This effect is not merely imagined; it can trigger real physiological changes, such as the release of endorphins, the body's natural painkillers. The power of the placebo effect lies in the intricate connection between the mind and the body. A patient's belief in a treatment, the trust in their doctor, and the ritual of the medical process itself can all combine to create a powerful expectation of healing. This expectation can, in turn, influence brain chemistry and bodily functions. Understanding the placebo effect is crucial, not to promote fake treatments, but to harness the psychological and social aspects of healing to make real medical treatments even more effective.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q106",
+          "number": "106",
+          "text": "What is the main idea of the passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Sugar pills are an effective alternative to modern medicine.",
+            "The placebo effect is purely a psychological illusion with no real effects.",
+            "The mind's expectation of healing can cause tangible physiological changes.",
+            "Doctors should use placebos more frequently to reduce healthcare costs.",
+            "The placebo effect only works on patients who are not seriously ill."
+          ],
+          "answer": 3,
+          "explanation": "글의 핵심은 치료에 대한 믿음과 기대가 엔도르핀 분비와 같은 실제 생리적 변화를 유발할 수 있다는, 즉 마음의 기대가 치유를 일으킬 수 있다는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "therapeutic",
@@ -176,7 +272,23 @@
       "title": "",
       "text": "Gentrification is a complex urban process whereby wealthier individuals move into lower-income neighborhoods, leading to significant economic and social transformations. Initially, this influx can bring positive changes, such as investment in infrastructure, renovation of housing, and the arrival of new businesses, which can increase property values and reduce crime rates. However, this process often has a detrimental side effect. As rents and property taxes rise, the original, often long-term, residents and small businesses may be priced out and forced to relocate. This displacement can erode the neighborhood's original culture and social fabric, replacing it with a more homogeneous, affluent community. Consequently, gentrification is often viewed as a double-edged sword, sparking debates about urban development, social equity, and the right to the city.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q107",
+          "number": "107",
+          "text": "What is the author's main point about gentrification?",
+          "type": "reading-comprehension",
+          "choices": [
+            "It is a universally beneficial process for urban renewal.",
+            "It is a primary cause of increased crime rates in cities.",
+            "It brings both positive revitalization and negative displacement.",
+            "It exclusively benefits the original residents of a neighborhood.",
+            "It is a process that can be easily controlled by city planning."
+          ],
+          "answer": 3,
+          "explanation": "글은 젠트리피케이션이 기반 시설 투자와 같은 긍정적 재활성화와 함께, 기존 주민들의 이주라는 부정적 결과를 동시에 가져오는 양면성을 지적합니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "whereby",
@@ -202,7 +314,23 @@
       "title": "",
       "text": "The Sapir-Whorf hypothesis, also known as linguistic relativity, posits a fascinating link between the language we speak and the way we perceive the world. The strong version of this hypothesis suggests that language determines thought, meaning that our cognitive categories and processes are dictated by our linguistic structures. For example, a language that lacks a word for a certain concept would make it impossible for its speakers to think about that concept. However, most linguists today favor a weaker version, which proposes that language influences, rather than determines, thought. Under this view, language acts as a lens that can shape our perception and focus our attention on certain aspects of reality. While the extent of this influence is still debated, the hypothesis challenges the idea of a universal human experience, suggesting our realities might be subtly colored by the grammars and vocabularies we inherit.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q108",
+          "number": "108",
+          "text": "What is the central theme of the passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The universal structure of all human languages",
+            "The theory that language can shape human perception and thought",
+            "The reasons why some languages have more words than others",
+            "The process of how children acquire their first language",
+            "The debate over the best method for translating between languages"
+          ],
+          "answer": 2,
+          "explanation": "글의 중심 주제는 '사피어-워프 가설', 즉 우리가 사용하는 언어가 우리의 사고와 세계 인식을 형성할 수 있다는 이론입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "posits",
@@ -228,7 +356,23 @@
       "title": "",
       "text": "In 18th-century aesthetics, particularly within Romanticism, the concept of the \"sublime\" was distinguished from the merely \"beautiful.\" While beauty was associated with qualities like harmony, order, and pleasure, the sublime referred to an experience of awe, terror, and overwhelming power, often evoked by the vastness and ferocity of nature. Think of a viewer standing before a raging sea, a towering mountain range, or a violent storm. This experience is not simply pleasant; it is a mixture of fear and admiration that makes the individual feel small and insignificant, yet simultaneously expands their mind and sense of being. Philosophers like Edmund Burke argued that the sublime, by confronting us with our own limitations in the face of immense power, provides a unique and profound emotional thrill that beauty alone cannot offer.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q109",
+          "number": "109",
+          "text": "What is the passage mainly about?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The artistic techniques used by Romantic painters",
+            "The differences between 18th-century and modern art",
+            "The philosophical distinction between the beautiful and the sublime",
+            "The influence of nature on the development of philosophy",
+            "The reasons for the popularity of landscape painting"
+          ],
+          "answer": 3,
+          "explanation": "글은 18세기 미학에서 조화로운 '아름다움'과 경외와 공포를 동반하는 '숭고함'을 어떻게 철학적으로 구분했는지를 중점적으로 설명합니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "aesthetics",
@@ -254,7 +398,23 @@
       "title": "",
       "text": "The concept of \"soft power,\" coined by political scientist Joseph Nye, describes a country's ability to influence others without using coercion or payment. Unlike \"hard power,\" which relies on military force or economic sanctions, soft power operates through attraction and persuasion. A nation's soft power stems from three main sources: its culture (in places where it is attractive to others), its political values (when it lives up to them at home and abroad), and its foreign policies (when they are seen as legitimate and having moral authority). For instance, a country with a vibrant film industry, respected democratic institutions, and a reputation for humanitarian aid can win allies and foster cooperation more effectively than through threats. In an increasingly interconnected world, the skillful use of soft power is becoming an indispensable component of international relations and diplomacy.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q110",
+          "number": "110",
+          "text": "What is the main purpose of this passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "To compare the military strength of different nations",
+            "To argue that hard power is no longer effective",
+            "To criticize countries that rely on economic sanctions",
+            "To define and explain the concept of soft power",
+            "To list the most culturally influential countries"
+          ],
+          "answer": 4,
+          "explanation": "글의 주된 목적은 '소프트 파워'의 개념을 정의하고, 그것이 문화, 정치적 가치, 외교 정책에서 비롯되며 현대 국제 관계에서 중요함을 설명하는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "coercion",
@@ -280,7 +440,23 @@
       "title": "",
       "text": "In the realm of educational psychology, a significant debate revolves around the impact of standardized testing. Proponents argue that these tests provide an objective measure of student performance and hold schools accountable. However, a growing body of research suggests a considerable downside. The intense focus on preparing for these exams can lead to a curriculum that \"teaches to the test,\" prioritizing rote memorization over deep conceptual understanding. This system, while seemingly efficient, often comes at the cost of stifling creativity and critical thinking, which are essential skills for the 21st century. Educators are increasingly calling for a more holistic approach to assessment, one that values diverse student talents and fosters a genuine love for learning, rather than a mere ability to select the correct bubble on an answer sheet.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q111",
+          "number": "111",
+          "text": "다음 글의 요지로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "표준화된 시험은 학생들의 창의력과 비판적 사고력 함양을 저해할 수 있다.",
+            "표준화된 시험은 학교의 책무성을 강화하는 가장 효과적인 수단이다.",
+            "미래 사회에 가장 필요한 능력은 암기력이다.",
+            "학생 평가에 대한 새로운 접근법이 이미 성공적으로 정착되었다.",
+            "객관적인 학생 평가는 교육의 질을 보장하는 핵심 요소이다."
+          ],
+          "answer": 1,
+          "explanation": "글의 요지는 표준화된 시험 준비에 대한 과도한 집중이 기계적 암기를 조장하고, 창의력과 비판적 사고력 같은 필수적인 능력 함양을 저해할 수 있다는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "proponents",
@@ -306,7 +482,23 @@
       "title": "",
       "text": "Preventive medicine, which focuses on averting diseases before they occur, represents a paradigm shift from the traditional reactive model of healthcare. Its socioeconomic value is immense yet often underestimated. By promoting lifestyle changes, vaccinations, and regular screenings, preventive care can significantly reduce the incidence of chronic illnesses like heart disease, diabetes, and certain cancers. This not only leads to a healthier population and improved quality of life but also yields substantial economic benefits. A nation that invests in prevention can lower its long-term healthcare expenditures, as treating advanced diseases is far more costly than preventing them. Furthermore, a healthier workforce is a more productive one, contributing to overall economic growth. Thus, viewing preventive medicine not as a cost but as a strategic investment is crucial for sustainable national development.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q112",
+          "number": "112",
+          "text": "다음 글의 주제로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "the high cost of treating chronic diseases",
+            "the socioeconomic importance of preventive medicine",
+            "the historical development of modern healthcare",
+            "the role of vaccinations in public health",
+            "the challenges in implementing preventive care"
+          ],
+          "answer": 2,
+          "explanation": "글의 주제는 예방의학이 질병 발생을 줄여 국민 건강을 증진시킬 뿐만 아니라, 장기적인 의료비 절감과 노동 생산성 향상을 통해 사회경제적으로 매우 중요하다는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "averting",
@@ -332,7 +524,23 @@
       "title": "",
       "text": "Popular culture, encompassing everything from music and film to fashion and social media trends, is a powerful force that shapes societal norms and values. While some critics dismiss it as trivial or superficial, its influence is undeniable. Popular culture often serves as a mirror, reflecting the anxieties, aspirations, and prevailing ideologies of a society at a particular moment. More than just a reflection, it can also be an agent of change. Controversial films or viral social media campaigns can spark national conversations on sensitive topics like social justice and inequality, challenging the status quo and pushing for progress. By providing a shared frame of reference, it fosters a sense of collective identity, for better or worse. Understanding popular culture is, therefore, essential to comprehending the dynamics of contemporary society.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q113",
+          "number": "113",
+          "text": "다음 글의 제목으로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The Negative Effects of Social Media",
+            "Popular Culture: A Reflection and Shaper of Society",
+            "The Decline of Traditional Art Forms",
+            "How to Analyze Contemporary Films",
+            "The Gap Between High Culture and Popular Culture"
+          ],
+          "answer": 2,
+          "explanation": "글은 대중문화가 사회를 반영하는 '거울'이자, 사회 변화를 이끄는 '형성자'로서의 이중적 역할을 한다는 점을 설명하고 있으므로, 이 제목이 가장 적절합니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "encompassing",
@@ -358,7 +566,23 @@
       "title": "",
       "text": "The global dominance of English is an undeniable reality of our interconnected world. It functions as the primary language of international business, science, and diplomacy. However, this linguistic ascendancy has a profound and often overlooked consequence: the accelerated decline of minority and indigenous languages. As English proficiency becomes synonymous with economic opportunity and social mobility, communities may feel pressured to abandon their native tongues. Each language that disappears represents an irreversible loss of unique cultural heritage, wisdom, and a distinct way of understanding the world. Therefore, while embracing English as a practical tool for global communication, it is imperative that we also create robust policies and educational initiatives to protect and revitalize the world's linguistic diversity. The goal should not be monolingual uniformity but a multilingual world where different voices can coexist and enrich one another.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q114",
+          "number": "114",
+          "text": "다음 글의 목적으로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "to argue for the universal adoption of English",
+            "to analyze the grammatical structure of indigenous languages",
+            "to celebrate the cultural achievements of English-speaking countries",
+            "to urge for the preservation of linguistic diversity alongside the use of English",
+            "to criticize communities for abandoning their native languages"
+          ],
+          "answer": 4,
+          "explanation": "글은 영어의 세계적 지배력을 인정하면서도, 그로 인한 소수 언어 소멸의 심각성을 지적하며 영어 사용과 함께 언어 다양성을 보존하기 위한 노력을 촉구하고 있습니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "ascendancy",
@@ -384,7 +608,23 @@
       "title": "",
       "text": "The commercialization of professional sports has transformed athletes into global celebrities and franchises into billion-dollar enterprises. This hyper-commercialized environment, however, raises critical questions about the integrity of sport. When financial stakes are astronomically high, the \"win-at-all-costs\" mentality can overshadow the principles of fair play and sportsmanship. Issues such as performance-enhancing drugs, match-fixing, and the exploitation of young athletes become more prevalent. Furthermore, the relentless focus on marketability and entertainment value can alienate loyal fans who cherish the pure competition and tradition of the game. While commercial success is not inherently negative, it is crucial for governing bodies to implement stronger regulations and ethical guidelines to ensure that the core values of sport are not sacrificed at the altar of profit.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q115",
+          "number": "115",
+          "text": "다음 글의 요지로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "프로 스포츠의 상업화는 선수들의 경기력 향상에 기여했다.",
+            "팬들의 충성심은 프로 스포츠 구단의 가장 중요한 자산이다.",
+            "과도한 상업화는 스포츠의 본질적인 가치를 훼손할 위험이 있다.",
+            "스포츠는 현대 사회에서 가장 유망한 사업 분야 중 하나이다.",
+            "스포츠 관련 규제는 산업의 성장을 저해하는 요소이다."
+          ],
+          "answer": 3,
+          "explanation": "글의 요지는 프로 스포츠의 과도한 상업화가 '승리 지상주의'를 부추겨 페어플레이 정신과 같은 스포츠의 본질적인 가치를 훼손할 위험이 있다는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "commercialization",
@@ -410,7 +650,23 @@
       "title": "",
       "text": "The rise of the \"gig economy,\" facilitated by digital platforms connecting freelance labor with on-demand tasks, has been hailed as the future of work. It promises flexibility for workers and efficiency for companies. However, this narrative often obscures a more precarious reality. Many gig workers lack the fundamental protections afforded to traditional employees, such as minimum wage, health insurance, and paid sick leave. Their income can be unpredictable, and the constant pressure to find the next \"gig\" can lead to significant stress and financial instability. The algorithmic management employed by these platforms can also feel dehumanizing, reducing workers to a set of performance metrics. While the gig economy offers opportunities, we must critically examine its structure and advocate for policies that guarantee fair labor standards and a social safety net for this growing segment of the workforce.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q116",
+          "number": "116",
+          "text": "다음 글의 요지로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The gig economy provides workers with ultimate freedom and high income.",
+            "Digital platforms are the most efficient way to manage a workforce.",
+            "The gig economy, despite its benefits, presents serious challenges to worker security.",
+            "Traditional employment models are becoming obsolete in the modern era.",
+            "Algorithmic management improves fairness in worker evaluation."
+          ],
+          "answer": 3,
+          "explanation": "글은 긱 경제가 유연성이라는 이점을 제공하지만, 최저 임금이나 건강 보험 같은 기본적인 보호 장치가 없어 노동자의 안정성에 심각한 문제를 제기한다고 지적합니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "facilitated",
@@ -436,7 +692,23 @@
       "title": "",
       "text": "Rewilding is an ambitious conservation strategy that aims to restore ecosystems to their natural, self-regulating state. Unlike traditional conservation, which often focuses on protecting a single species or a specific habitat, rewilding takes a broader approach. It involves reintroducing \"keystone species\"—animals like wolves or beavers whose presence has a cascading effect on the entire ecosystem. For example, reintroducing wolves can control deer populations, allowing vegetation to recover, which in turn benefits birds and insects. This process helps to increase biodiversity and enhance the ecosystem's resilience to climate change. While rewilding projects face challenges, such as human-wildlife conflict and the need for large, unfragmented landscapes, they offer a powerful vision for a wilder, more functional, and self-sustaining planet.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q117",
+          "number": "117",
+          "text": "다음 글의 주제로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "the dangers of reintroducing predator species",
+            "the primary causes of climate change",
+            "rewilding as a holistic approach to ecosystem restoration",
+            "the importance of protecting single endangered species",
+            "the economic benefits of biodiversity"
+          ],
+          "answer": 3,
+          "explanation": "글의 주제는 단일 종 보호를 넘어 핵심종 재도입 등을 통해 생태계 전체를 복원하려는 총체적 접근법으로서의 '재야생화' 전략입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "rewilding",
@@ -462,7 +734,23 @@
       "title": "",
       "text": "The transition from a product-based to a subscription-based economy is reshaping consumer behavior and our very concept of ownership. Companies from software giants to car manufacturers are increasingly shifting their models, offering access to services rather than selling standalone products. For consumers, this can mean lower upfront costs and continuous updates. However, it also creates a state of \"permanent temporary ownership.\" You may pay for a service indefinitely but never truly own the asset. This model raises concerns about long-term costs, which can eventually exceed the price of a one-time purchase. Furthermore, consumers become dependent on the provider for access and are vulnerable to sudden price hikes or service termination. This fundamental shift requires consumers to be more vigilant, carefully evaluating the long-term financial and practical implications of \"renting\" their lifestyle.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q118",
+          "number": "118",
+          "text": "다음 글의 제목으로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The Benefits of a Product-Based Economy",
+            "How to Launch a Successful Subscription Service",
+            "The End of Ownership?: The Rise of the Subscription Model",
+            "Why Software Updates Are Crucial for Consumers",
+            "The Best Subscription Services on the Market"
+          ],
+          "answer": 3,
+          "explanation": "글은 구독 경제로의 전환이 '소유'의 개념을 바꾸고 있으며, 소비자들이 자산을 영구적으로 소유하지 못하는 문제점을 지적하므로, 이 제목이 가장 적절합니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "subscription-based",
@@ -488,7 +776,23 @@
       "title": "",
       "text": "In our fast-paced, high-stress modern world, the ancient philosophy of Stoicism is experiencing a remarkable resurgence. Stoicism, founded in ancient Greece, teaches the development of self-control and fortitude as a means of overcoming destructive emotions. Its core principle is to differentiate between what we can control and what we cannot. We cannot control external events—the traffic, the weather, the actions of others—but we can control our own responses and judgments about these events. By focusing our energy on our own thoughts and actions, we can achieve a state of inner peace, or *apatheia*. This is not about suppressing emotion, but about maintaining tranquility by not being overwhelmed by it. The practical wisdom of Stoicism offers a timeless toolkit for navigating the anxieties and uncertainties of contemporary life with greater resilience and calm.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q119",
+          "number": "119",
+          "text": "다음 글의 목적으로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "to trace the historical origins of Greek philosophy",
+            "to criticize the emotional nature of modern society",
+            "to explain how Stoic principles can be applied to modern life",
+            "to compare Stoicism with other ancient philosophies",
+            "to warn against the dangers of suppressing emotions"
+          ],
+          "answer": 3,
+          "explanation": "글의 목적은 스토아 철학의 핵심 원리(통제 가능한 것과 불가능한 것의 구분)를 소개하고, 이것이 현대 생활의 불안을 다스리는 데 어떻게 적용될 수 있는지 설명하는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "resurgence",
@@ -514,7 +818,23 @@
       "title": "",
       "text": "The concept of the \"15-minute city\" is gaining traction in urban planning circles worldwide. The central idea is to create neighborhoods where residents can access all their essential needs—work, shopping, education, healthcare, and leisure—within a 15-minute walk or bike ride from their homes. This model aims to move away from the car-centric design that has dominated city development for the past century. By promoting \"hyper proximity,\" the 15-minute city seeks to reduce traffic congestion and carbon emissions, fostering a more sustainable and environmentally friendly urban existence. Moreover, it is designed to enhance the quality of life by encouraging active transport, strengthening local communities, and giving residents back the time once lost to long commutes. It represents a human-centered vision for the future of our cities.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q120",
+          "number": "120",
+          "text": "다음 글의 제목으로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The History of Car-Centric City Design",
+            "Challenges of Urban Overpopulation",
+            "15-Minute City: A Blueprint for a Livable Future",
+            "The Economic Impact of Reducing Commute Times",
+            "How to Choose a Neighborhood for Your Family"
+          ],
+          "answer": 3,
+          "explanation": "글은 '15분 도시' 개념을 소개하며, 이것이 지속 가능하고 인간 중심적인 도시의 미래를 위한 청사진(blueprint)임을 강조하므로 이 제목이 가장 적절합니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "gaining",
@@ -540,7 +860,23 @@
       "title": "",
       "text": "The proliferation of big data has created a significant paradox in modern society. On one hand, the analysis of vast datasets allows companies to offer highly personalized services and targeted advertising, enhancing user convenience and creating economic value. For instance, streaming services recommend movies based on viewing history, and e-commerce sites suggest products tailored to individual preferences. On the other hand, this constant collection of personal information—from browsing habits to geographical locations—raises profound privacy concerns. The potential for data breaches, misuse of information by third parties, and the creation of detailed personal profiles without explicit consent present a serious threat to individual autonomy. This tension highlights a fundamental conflict between the pursuit of technological efficiency and the preservation of the fundamental right to privacy.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q121",
+          "number": "121",
+          "text": "What is the main topic of the passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The economic benefits of the technology industry",
+            "The evolution of personalized advertising techniques",
+            "The technical challenges of analyzing big data",
+            "The dilemma between the utility of big data and privacy risks",
+            "The role of government in regulating data collection"
+          ],
+          "answer": 4,
+          "explanation": "글의 주제는 빅데이터가 제공하는 개인화된 서비스의 유용성과, 그 과정에서 발생하는 개인정보 침해 위험 사이의 딜레마를 다루는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "proliferation",
@@ -566,7 +902,23 @@
       "title": "",
       "text": "The international community faces immense difficulty in forging a unified and effective response to climate change. The primary cause of this challenge lies in the conflicting interests between developed and developing nations. Developed countries, historically the largest emitters of greenhouse gases, advocate for universal and stringent emission cuts. However, developing nations argue that such measures would unfairly stifle their economic growth, which is heavily reliant on fossil fuels. They contend that developed nations bear a greater historical responsibility and should therefore take the lead in reductions and provide financial and technological support. This fundamental disagreement over equity and responsibility, often termed \"common but differentiated responsibilities,\" results in protracted negotiations and watered-down commitments, significantly hindering the collective global effort required to address the climate crisis adequately.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q122",
+          "number": "122",
+          "text": "What is the main idea of the passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Developed nations are solely responsible for climate change.",
+            "Technological innovation is the only solution to the climate crisis.",
+            "Disagreements over responsibility obstruct global climate action.",
+            "Developing countries prioritize environmental protection over economic growth.",
+            "International climate agreements have been largely successful."
+          ],
+          "answer": 3,
+          "explanation": "글의 요지는 기후 변화 대응에 있어 선진국과 개발도상국 간의 책임 소재와 형평성에 대한 근본적인 의견 불일치가 효과적인 국제 공조를 방해하고 있다는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "forging",
@@ -592,7 +944,23 @@
       "title": "",
       "text": "The demographic shift towards an aging population is often viewed through the lens of its challenges, such as increased healthcare costs and pension burdens. However, this trend is also fostering a significant economic opportunity: the rise of the \"silver economy.\" This term refers to the market for goods and services tailored to the needs and preferences of senior citizens. As people live longer and healthier lives, they constitute a growing consumer group with substantial purchasing power. The silver economy encompasses a wide range of sectors, from specialized healthcare and wellness services to accessible housing, senior-friendly technology, and leisure and travel industries. Consequently, what is perceived as a societal burden is simultaneously acting as a catalyst for innovation and the creation of new markets, driving economic growth in previously underdeveloped sectors.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q123",
+          "number": "123",
+          "text": "Which of the following is the most suitable title for the passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The Challenges of a Graying Society",
+            "The Silver Economy: An Opportunity in an Aging World",
+            "Healthcare Innovations for the Elderly",
+            "The Decline of Purchasing Power in Old Age",
+            "How Technology is Helping Senior Citizens"
+          ],
+          "answer": 2,
+          "explanation": "글은 고령화 사회를 문제로만 볼 것이 아니라, 노년층을 대상으로 하는 '실버 경제'라는 새로운 경제적 기회로 보아야 한다는 점을 강조하므로 이 제목이 가장 적절합니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "demographic",
@@ -618,7 +986,23 @@
       "title": "",
       "text": "The rise of the \"gig economy,\" facilitated by digital platforms connecting service providers with customers, has fundamentally altered traditional employment structures. For workers, this model offers unprecedented flexibility and autonomy, allowing them to choose their own hours and assignments. However, this flexibility comes at a significant cost. Most platform companies classify their workers as \"independent contractors\" rather than \"employees.\" This legal distinction is crucial, as it exempts companies from providing essential benefits such as minimum wage, overtime pay, health insurance, and paid sick leave. As a result, many gig workers find themselves in a precarious position, lacking the job security and social safety net afforded to traditional employees. The core issue, therefore, is the tension between the modern desire for flexible work and the enduring need for worker protections and rights.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q124",
+          "number": "124",
+          "text": "What is the main purpose of the passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "To promote the benefits of working in the gig economy",
+            "To compare different digital labor platforms",
+            "To explain the legal classification of independent contractors",
+            "To analyze the conflict between flexibility and security for platform workers",
+            "To criticize governments for not regulating the gig economy"
+          ],
+          "answer": 4,
+          "explanation": "글의 주된 목적은 긱 경제가 제공하는 '유연성'이라는 장점과, 그로 인해 발생하는 고용 '안정성' 부족이라는 단점 사이의 갈등을 분석하는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "unprecedented",
@@ -644,7 +1028,23 @@
       "title": "",
       "text": "The notion of historical objectivity is a complex and debated concept. While historians strive to present an accurate and impartial account of the past based on evidence, complete objectivity is arguably unattainable. The primary reason is that history is not merely a collection of facts but an interpretation of them. Historians are influenced by their own perspectives, cultural backgrounds, and the prevailing theories of their time. Furthermore, the historical record itself is incomplete and often biased. The sources that survive—whether written documents, artifacts, or oral traditions—often represent the views of the powerful or the literate, leaving the stories of marginalized groups untold. Consequently, what we understand as \"history\" is often a constructed narrative, shaped by the choices of the historian and the limitations of the available evidence, rather than a pure reflection of past reality.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q125",
+          "number": "125",
+          "text": "What is the main idea of the passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Historians should only use written documents as evidence.",
+            "The stories of marginalized groups are the most important part of history.",
+            "History is an interpretation of the past, making pure objectivity difficult.",
+            "Modern historians are more objective than those in the past.",
+            "A complete historical record of the past will soon be available."
+          ],
+          "answer": 3,
+          "explanation": "글의 요지는 역사가가 자신의 관점과 불완전한 사료를 바탕으로 과거를 해석하기 때문에, 순수한 객관성을 달성하기는 어렵다는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "objectivity",
@@ -670,7 +1070,23 @@
       "title": "",
       "text": "Gentrification is a complex urban process whereby wealthier individuals and businesses move into historically less affluent neighborhoods. This influx of investment often leads to visible improvements, such as renovated buildings, new shops, and enhanced public spaces, which can increase property values and reduce crime rates. However, these changes trigger a significant and often painful consequence: the displacement of long-term, lower-income residents. As rents and property taxes rise to reflect the neighborhood's newfound desirability, the original inhabitants are often priced out of their own communities. This not only causes economic hardship but also erodes the area's original cultural fabric and social networks. Thus, gentrification presents a complex urban dilemma, where economic revitalization for some comes at the high social cost of displacement for others.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q126",
+          "number": "126",
+          "text": "What is the primary purpose of the passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "To encourage investment in underdeveloped neighborhoods",
+            "To document the history of a specific urban area",
+            "To explain the causes and dual consequences of gentrification",
+            "To propose solutions for affordable housing in cities",
+            "To celebrate the reduction of crime rates in urban centers"
+          ],
+          "answer": 3,
+          "explanation": "글의 목적은 젠트리피케이션의 원인(부유층 유입)과 그로 인한 이중적 결과(물리적 환경 개선과 원주민 축출)를 설명하는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "affluent",
@@ -696,7 +1112,23 @@
       "title": "",
       "text": "The placebo effect is a fascinating phenomenon where a patient experiences real health improvements after receiving a treatment with no actual therapeutic value, such as a sugar pill. The cause of this effect is not the substance itself, but rather the patient's belief and expectation. When a person believes they are receiving an effective treatment, their brain can trigger the release of natural pain-relieving chemicals like endorphins and alter bodily functions such as heart rate and blood pressure. This psychological mechanism can produce measurable physiological changes, demonstrating a powerful connection between the mind and the body. The placebo effect is not just a trick of the mind; it is a genuine psychobiological event. For this reason, it is a critical factor that must be controlled for in clinical trials to determine a new drug's true effectiveness.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q127",
+          "number": "127",
+          "text": "What is the main topic of the passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The process of conducting clinical trials",
+            "The chemical composition of placebo pills",
+            "The mind-body connection in medical treatment",
+            "The definition, cause, and significance of the placebo effect",
+            "The ethical problems of using placebos in medicine"
+          ],
+          "answer": 4,
+          "explanation": "글의 주제는 플라시보 효과의 정의, 그것이 환자의 믿음과 기대라는 원인에 의해 발생한다는 점, 그리고 임상시험에서 중요한 역할을 한다는 의의를 종합적으로 다루는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "therapeutic",
@@ -722,7 +1154,23 @@
       "title": "",
       "text": "The advent of Massive Open Online Courses (MOOCs) has been hailed as a revolution in education, promising to democratize learning by offering university-level instruction to anyone with an internet connection, often for free. The primary cause for their rise is the scalability of digital technology, which allows a single course to reach hundreds of thousands of students globally. This has undeniably expanded access to knowledge, breaking down geographical and financial barriers. However, the initial euphoria has been tempered by significant challenges. The most notable effect is the extremely low completion rate, with most learners dropping out before finishing a course. Furthermore, the value of MOOC credentials in the job market remains ambiguous compared to traditional university degrees. Thus, while MOOCs represent a powerful tool for accessible education, their effectiveness as a substitute for formal higher education is still a subject of debate.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q128",
+          "number": "128",
+          "text": "Which of the following is the most suitable title for the passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The High Cost of University Education",
+            "MOOCs: A Promise of Access and the Challenge of Completion",
+            "Why Traditional Degrees are Still Superior",
+            "The Technology Behind Online Learning Platforms",
+            "How to Succeed in a Massive Open Online Course"
+          ],
+          "answer": 2,
+          "explanation": "글은 MOOCs가 교육 접근성을 높인다는 '약속'과 함께, 낮은 수료율이라는 '어려움'을 동시에 가지고 있음을 보여주므로 이 제목이 가장 적절합니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "advent",
@@ -748,7 +1196,23 @@
       "title": "",
       "text": "In the contemporary digital media landscape, individuals are increasingly confined within \"echo chambers\" or \"filter bubbles.\" The primary cause of this phenomenon is the algorithmic curation of content on social media platforms and search engines. These algorithms are designed to show users content that aligns with their past behavior and expressed preferences. The intended effect is to increase user engagement by providing a personalized and agreeable information stream. However, an unintended and more damaging consequence is the reinforcement of existing beliefs and the exclusion of opposing viewpoints. By being constantly exposed only to confirming information, users can become more polarized in their opinions and less tolerant of different perspectives. This process ultimately undermines critical thinking and hinders the healthy public discourse necessary for a functioning democracy.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q129",
+          "number": "129",
+          "text": "What is the main idea of the passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Algorithms are making the internet more user-friendly.",
+            "Social media platforms should be banned to protect democracy.",
+            "Algorithmic content filtering can lead to intellectual isolation and polarization.",
+            "Users are solely responsible for diversifying their information sources.",
+            "Echo chambers are a natural result of human psychology."
+          ],
+          "answer": 3,
+          "explanation": "글의 요지는 알고리즘에 의한 콘텐츠 필터링이 사용자를 비슷한 의견에만 노출시켜 지적 고립을 유발하고, 이는 사회적 양극화로 이어진다는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "confined",
@@ -774,7 +1238,23 @@
       "title": "",
       "text": "Recent global events, such as pandemics and geopolitical conflicts, have starkly revealed the vulnerabilities of highly globalized supply chains. For decades, companies pursued efficiency and cost reduction by sourcing materials and manufacturing goods in diverse, geographically distant locations. This system, known as \"just-in-time\" manufacturing, relied on predictable and stable global logistics. The primary effect of major disruptions to this system is widespread product shortages and significant price inflation, as seen with semiconductors and medical supplies. A crucial secondary consequence is a strategic shift in corporate and national policy. Many are now moving away from pure efficiency and toward resilience, exploring strategies like \"reshoring\" (bringing manufacturing back to the home country) or \"near-shoring\" (moving it to nearby countries) to create more robust and less fragile supply networks.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q130",
+          "number": "130",
+          "text": "What is the main topic of the passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The benefits of \"just-in-time\" manufacturing",
+            "The impact of supply chain disruptions and the resulting strategic shifts",
+            "The role of logistics in the global economy",
+            "The causes of recent geopolitical conflicts",
+            "A comparison of reshoring and near-shoring strategies"
+          ],
+          "answer": 2,
+          "explanation": "글의 주제는 최근 사건들로 드러난 공급망의 붕괴가 미친 영향(제품 부족, 인플레이션)과, 그 결과로 기업들이 회복탄력성을 중시하는 전략적 변화를 모색하게 되었다는 점입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "starkly",
@@ -800,7 +1280,23 @@
       "title": "",
       "text": "The dream of establishing human colonies on the Moon or Mars captivates the public imagination, often portrayed as humanity's next great leap. However, beyond the immense technological challenges of such an endeavor, lie profound ethical and practical questions that are seldom addressed. Who would govern these off-world settlements? What legal frameworks would apply? The allocation of resources, the potential for exploitation, and the psychological toll on colonists present unprecedented hurdles. Furthermore, is it morally justifiable to invest trillions of dollars in space colonization when pressing issues like climate change, poverty, and disease persist on Earth? Before we venture to build new worlds, we must critically examine the societal structures and values we would carry with us. A failure to do so could mean we are not escaping Earth's problems, but merely exporting them to the stars.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q131",
+          "number": "131",
+          "text": "다음 글의 목적으로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "To raise critical questions about the feasibility and ethics of space colonization",
+            "To explain the technological advancements needed for Mars travel",
+            "To advocate for the immediate colonization of the Moon and Mars",
+            "To discuss the general history of human space exploration",
+            "To compare the environmental conditions of the Moon and Mars"
+          ],
+          "answer": 1,
+          "explanation": "글의 목적은 우주 식민지화의 기술적 문제를 넘어, 통치, 법률, 자원 분배, 윤리 등 간과되고 있는 비판적인 질문들을 제기하는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "captivates",
@@ -826,7 +1322,23 @@
       "title": "",
       "text": "Urban agriculture, the practice of cultivating food in and around cities, is increasingly hailed as a solution to food insecurity and a way to reconnect urban dwellers with nature. Rooftop gardens and vertical farms are celebrated for reducing food miles, recycling urban waste, and providing fresh produce. While these benefits are valid, it is crucial to maintain a realistic perspective. Urban agriculture cannot be a panacea for the complex issue of global food supply. The scale of production is often limited, and the energy costs for high-tech vertical farms can be substantial, sometimes outweighing the environmental benefits of reduced transportation. Moreover, it primarily benefits communities that can afford the initial investment and space, potentially widening the gap in food access rather than closing it. Therefore, while a valuable supplement, urban agriculture should be seen as one component of a much larger, more systemic approach to food security.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q132",
+          "number": "132",
+          "text": "다음 글의 요지로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Urban agriculture is the ultimate solution to global food shortages.",
+            "The environmental costs of urban agriculture always exceed its benefits.",
+            "Urban agriculture has limitations and is not a complete solution for food security.",
+            "High-tech vertical farms are the most efficient form of urban agriculture.",
+            "The primary goal of urban agriculture is to increase property values in cities."
+          ],
+          "answer": 3,
+          "explanation": "글의 요지는 도시 농업이 이점도 있지만, 생산 규모의 한계와 비용 문제 등으로 인해 식량 안보에 대한 완전한 해결책이 아니라 보완책으로 보아야 한다는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "hailed",
@@ -852,7 +1364,23 @@
       "title": "",
       "text": "The line between cultural appreciation and cultural appropriation has become a focal point of contemporary social discourse. Appreciation is characterized by a genuine desire to understand and learn about a culture, engaging with it respectfully and with its context in mind. It involves honoring the source culture and often includes collaboration or permission. In contrast, appropriation typically involves members of a dominant culture taking elements from a minority culture without understanding or respecting their original meaning, often for personal gain, profit, or fashion. This act can trivialize sacred traditions, perpetuate harmful stereotypes, and erase the contributions of the original creators. The core issue is not the sharing of culture itself—which is a natural part of human interaction—but the power dynamics at play. When a dominant group borrows from a marginalized one, it strips the cultural elements of their significance and continues a cycle of exploitation.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q133",
+          "number": "133",
+          "text": "다음 글의 주제로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The historical evolution of cultural exchange",
+            "The positive impacts of cultural globalization",
+            "The distinction between cultural appreciation and appropriation",
+            "The process of creating new cultural traditions",
+            "The legal consequences of cultural appropriation"
+          ],
+          "answer": 3,
+          "explanation": "글의 주제는 존중을 바탕으로 한 '문화적 감상'과, 권력 관계 속에서 의미를 무시하고 요소를 가져오는 '문화적 전유' 사이의 차이점을 명확히 구별하는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "appropriation",
@@ -878,7 +1406,23 @@
       "title": "",
       "text": "The rise of cryptocurrencies presents a fundamental paradox for the financial world. Born from a desire for decentralization and freedom from traditional banking systems, their core appeal lies in their autonomy. However, for cryptocurrencies like Bitcoin to achieve mainstream acceptance and stability, they increasingly require the very thing they were designed to avoid: institutional adoption and regulation. Large investment banks, corporations, and even governments are exploring how to integrate digital assets, which lends them legitimacy but also subjects them to oversight and control. This integration creates a tension between the original cypherpunk ethos of anonymity and independence, and the market's demand for security, transparency, and accountability. The future of cryptocurrency may therefore not be a radical overthrow of the old system, but a complex and perhaps compromised coexistence with it.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q134",
+          "number": "134",
+          "text": "다음 글의 제목으로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The Technical Guide to Cryptocurrency Mining",
+            "The Unstoppable Rise of a Decentralized World",
+            "Cryptocurrency: The Inevitable Clash with Regulation",
+            "Why Traditional Banks Fear Digital Currencies",
+            "A History of Bitcoin's Early Anonymity"
+          ],
+          "answer": 3,
+          "explanation": "글은 암호화폐가 주류로 인정받기 위해 본래 피하고자 했던 제도권의 '규제'와 필연적으로 충돌하게 되는 역설을 다루므로 이 제목이 가장 적절합니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "paradox",
@@ -904,7 +1448,23 @@
       "title": "",
       "text": "Utilitarianism, the ethical theory that advocates for actions that produce the greatest good for the greatest number, appears intuitively appealing. Its focus on maximizing overall happiness seems a rational basis for moral decision-making. However, this principle harbors a significant flaw: the potential for the \"tyranny of the majority.\" In a purely utilitarian calculation, the profound suffering of a minority can be deemed acceptable if it leads to a slightly greater pleasure for a large majority. This approach fails to protect fundamental individual rights and justice, which should not be contingent on popular opinion or a cost-benefit analysis of happiness. For instance, sacrificing one innocent person to appease a mob and prevent a riot might be justified under a strict utilitarian view, but it strikes most of us as morally abhorrent. True ethical frameworks must therefore incorporate inviolable rights and duties that cannot be overridden by simple calculations of collective utility.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q135",
+          "number": "135",
+          "text": "필자가 다음 글에서 주장하는 바로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Utilitarianism is the most rational ethical framework for modern society.",
+            "The happiness of the majority should always be the top priority.",
+            "Ethical decisions must protect individual rights, not just maximize collective happiness.",
+            "The concept of \"good\" is too subjective to be measured effectively.",
+            "Utilitarian principles are the foundation of all modern legal systems."
+          ],
+          "answer": 3,
+          "explanation": "필자는 공리주의가 '다수의 폭정'을 통해 소수의 권리를 침해할 수 있다고 비판하며, 진정한 윤리 체계는 집단적 행복 극대화뿐만 아니라 개인의 권리를 반드시 보호해야 한다고 주장합니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "utilitarianism",
@@ -930,7 +1490,23 @@
       "title": "",
       "text": "Imposter syndrome, the persistent feeling of being a fraud despite evidence of success, is often framed as a personal psychological flaw—a lack of confidence to be overcome by the individual. This perspective, however, is incomplete and potentially harmful. It ignores the systemic and environmental factors that cultivate these feelings of inadequacy. Workplaces that foster hyper-competitiveness, lack clear feedback mechanisms, or are dominated by a homogenous culture can make anyone who differs from the norm feel like an outsider and an imposter. For women, people of color, and other underrepresented groups, this feeling is often exacerbated by societal biases and a lack of role models. Therefore, addressing imposter syndrome requires more than just individual self-help strategies. It demands that we create more inclusive, supportive, and transparent environments where a diverse range of talents can be recognized and feel they truly belong.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q136",
+          "number": "136",
+          "text": "다음 글의 요지로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Imposter syndrome is a rare condition affecting only a few individuals.",
+            "Individuals are solely responsible for overcoming their feelings of inadequacy.",
+            "Addressing imposter syndrome requires systemic and environmental changes, not just individual effort.",
+            "The most effective way to combat imposter syndrome is through increased competition.",
+            "Imposter syndrome primarily stems from a person's lack of actual skills or competence."
+          ],
+          "answer": 3,
+          "explanation": "글의 요지는 가면 증후군이 개인의 문제를 넘어, 과도한 경쟁이나 획일적인 문화 같은 시스템적, 환경적 요인에 의해 유발되므로, 해결책 역시 개인의 노력을 넘어선 환경 개선을 요구한다는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "imposter",
@@ -956,7 +1532,23 @@
       "title": "",
       "text": "The restoration of ancient artworks is a field fraught with controversy, balancing on a fine line between preservation and alteration. On one side of the debate are the purists, who argue that any intervention beyond basic cleaning and stabilization compromises the artwork's historical integrity. For them, the damage and decay accumulated over centuries are part of the object's authentic story and should be preserved as such. On the other side are those who advocate for a more interventionist approach. They contend that restoration, when done carefully by experts, can help viewers appreciate the artwork as the artist originally intended, revealing faded colors and repairing damage that obscures its beauty. The central conflict lies in defining \"authenticity.\" Is it the object as it exists now, shaped by time, or is it a reconstruction of its presumed original state? This ongoing debate ensures that every restoration project is a complex negotiation between history, aesthetics, and ethics.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q137",
+          "number": "137",
+          "text": "다음 글의 주제로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The chemical processes used in modern art restoration",
+            "The debate over the proper approach to restoring ancient art",
+            "The rising market value of restored historical artifacts",
+            "A historical overview of famous art forgeries",
+            "The importance of digital technology in art preservation"
+          ],
+          "answer": 2,
+          "explanation": "글의 주제는 예술품 복원에 있어 역사적 진실성을 중시하는 입장과 예술가의 원래 의도를 복원하려는 입장 사이의 논쟁을 다루는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "fraught",
@@ -982,7 +1574,23 @@
       "title": "",
       "text": "The emergence of \"deepfake\" technology, which uses artificial intelligence to create highly realistic but fabricated videos and audio, represents a significant threat to our information ecosystem. While it may have some creative applications, its potential for misuse is alarming. Deepfakes can be weaponized to spread disinformation on an unprecedented scale, creating convincing fraudulent evidence to manipulate public opinion, defame individuals, or even incite political instability. Imagine a fabricated video of a world leader announcing a declaration of war, or a fake audio clip of a CEO admitting to fraud. The ease with which such content can be created and distributed means that our collective ability to distinguish truth from fiction is being severely eroded. It is imperative that we develop robust technological tools for detection, promote digital literacy education, and establish clear legal and ethical guidelines to mitigate the dangers before they undermine the very foundations of trust in society.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q138",
+          "number": "138",
+          "text": "다음 글의 목적으로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "To promote the use of deepfake technology in the entertainment industry",
+            "To explain the technical workings of artificial intelligence",
+            "To celebrate the creative possibilities of new digital tools",
+            "To warn about the societal dangers of deepfake technology and urge action",
+            "To analyze the stock market impact of technological disinformation"
+          ],
+          "answer": 4,
+          "explanation": "글의 목적은 딥페이크 기술이 허위 정보 확산, 명예훼손 등 사회에 미치는 심각한 위험을 경고하고, 탐지 기술 개발과 같은 대응책 마련을 촉구하는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "fabricated",
@@ -1008,7 +1616,23 @@
       "title": "",
       "text": "The Sapir-Whorf hypothesis, in its strongest form, posits that the language one speaks determines the nature of one's thought. This concept, known as linguistic determinism, suggests that we are prisoners of our native tongue, unable to conceive of concepts that are not encoded in its vocabulary or grammar. For example, a culture lacking words for specific numbers might be incapable of complex mathematical thought. However, this strong version of the hypothesis has been largely discredited by modern linguists and cognitive scientists. Evidence shows that humans can think beyond the confines of their language; we can learn new languages, coin new terms, and understand concepts for which we have no single word. A more moderate and widely accepted version, known as linguistic relativity, now prevails. It suggests that language does not determine thought but *influences* it, shaping our perception, memory, and attention in subtle ways. Language is not a prison, but a lens that colors how we see the world.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q139",
+          "number": "139",
+          "text": "다음 글의 제목으로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "How to Learn a New Language Effectively",
+            "The Universal Grammar Shared by All Languages",
+            "Sapir-Whorf: From Deterministic Prison to Influential Lens",
+            "The Flaws in Modern Linguistic Theories",
+            "The Extinction of Indigenous Languages"
+          ],
+          "answer": 3,
+          "explanation": "글은 사피어-워프 가설이 언어가 사고를 가두는 '결정론적 감옥'이라는 초기 개념에서, 사고에 영향을 미치는 '영향력 있는 렌즈'라는 온건한 개념으로 변화했음을 보여주므로 이 제목이 가장 적절합니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "posits",
@@ -1034,7 +1658,23 @@
       "title": "",
       "text": "Stroll through many modern city centers, and you may encounter benches with prominent armrests to prevent sleeping, or metal studs embedded in flat surfaces to deter skateboarders. This is \"defensive architecture,\" also known as hostile architecture, and it is a deliberate urban design strategy. Proponents argue that it maintains order, prevents crime, and protects property by discouraging loitering and other \"undesirable\" activities. However, this perspective fundamentally misunderstands the nature of public space. Public spaces should be inclusive and accessible to all members of society. By designing them to exclude certain groups, particularly the homeless and young people, we are not solving social problems but merely hiding them from view. Defensive architecture treats the symptoms—like people sleeping on benches—rather than the root causes, such as poverty and lack of housing. It is a hostile and divisive approach that fosters exclusion and erodes a city's sense of community.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q140",
+          "number": "140",
+          "text": "필자가 다음 글을 통해 전달하려는 메시지로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Defensive architecture is an effective tool for crime prevention.",
+            "Urban design should prioritize property protection above all else.",
+            "Defensive architecture is an unethical practice that fails to address root social issues.",
+            "The homeless population should be provided with designated public spaces.",
+            "Modern cities are becoming safer thanks to new design strategies."
+          ],
+          "answer": 3,
+          "explanation": "필자는 방어적 건축이 노숙인 문제와 같은 근본적인 사회 문제를 해결하지 않고 단지 눈에 보이지 않게 숨기는 비윤리적인 행태라고 비판하는 메시지를 전달하고 있습니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "prominent",
@@ -1060,7 +1700,23 @@
       "title": "",
       "text": "The dream of establishing human colonies on the Moon or Mars captivates the public imagination, often portrayed as humanity's next great leap. However, beyond the immense technological challenges of such an endeavor, lie profound ethical and practical questions that are seldom addressed. Who would govern these off-world settlements? What legal frameworks would apply? The allocation of resources, the potential for exploitation, and the psychological toll on colonists present unprecedented hurdles. Furthermore, is it morally justifiable to invest trillions of dollars in space colonization when pressing issues like climate change, poverty, and disease persist on Earth? Before we venture to build new worlds, we must critically examine the societal structures and values we would carry with us. A failure to do so could mean we are not escaping Earth's problems, but merely exporting them to the stars.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q141",
+          "number": "141",
+          "text": "다음 글의 목적으로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "To raise critical questions about the feasibility and ethics of space colonization",
+            "To explain the technological advancements needed for Mars travel",
+            "To advocate for the immediate colonization of the Moon and Mars",
+            "To discuss the general history of human space exploration",
+            "To compare the environmental conditions of the Moon and Mars"
+          ],
+          "answer": 1,
+          "explanation": "글의 목적은 우주 식민지화의 기술적 문제를 넘어, 통치, 법률, 자원 분배, 윤리 등 간과되고 있는 비판적인 질문들을 제기하는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "captivates",
@@ -1086,7 +1742,23 @@
       "title": "",
       "text": "Urban agriculture, the practice of cultivating food in and around cities, is increasingly hailed as a solution to food insecurity and a way to reconnect urban dwellers with nature. Rooftop gardens and vertical farms are celebrated for reducing food miles, recycling urban waste, and providing fresh produce. While these benefits are valid, it is crucial to maintain a realistic perspective. Urban agriculture cannot be a panacea for the complex issue of global food supply. The scale of production is often limited, and the energy costs for high-tech vertical farms can be substantial, sometimes outweighing the environmental benefits of reduced transportation. Moreover, it primarily benefits communities that can afford the initial investment and space, potentially widening the gap in food access rather than closing it. Therefore, while a valuable supplement, urban agriculture should be seen as one component of a much larger, more systemic approach to food security.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q142",
+          "number": "142",
+          "text": "다음 글의 요지로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Urban agriculture is the ultimate solution to global food shortages.",
+            "The environmental costs of urban agriculture always exceed its benefits.",
+            "Urban agriculture has limitations and is not a complete solution for food security.",
+            "High-tech vertical farms are the most efficient form of urban agriculture.",
+            "The primary goal of urban agriculture is to increase property values in cities."
+          ],
+          "answer": 3,
+          "explanation": "글의 요지는 도시 농업이 이점도 있지만, 생산 규모의 한계와 비용 문제 등으로 인해 식량 안보에 대한 완전한 해결책이 아니라 보완책으로 보아야 한다는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "hailed",
@@ -1112,7 +1784,23 @@
       "title": "",
       "text": "The line between cultural appreciation and cultural appropriation has become a focal point of contemporary social discourse. Appreciation is characterized by a genuine desire to understand and learn about a culture, engaging with it respectfully and with its context in mind. It involves honoring the source culture and often includes collaboration or permission. In contrast, appropriation typically involves members of a dominant culture taking elements from a minority culture without understanding or respecting their original meaning, often for personal gain, profit, or fashion. This act can trivialize sacred traditions, perpetuate harmful stereotypes, and erase the contributions of the original creators. The core issue is not the sharing of culture itself—which is a natural part of human interaction—but the power dynamics at play. When a dominant group borrows from a marginalized one, it strips the cultural elements of their significance and continues a cycle of exploitation.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q143",
+          "number": "143",
+          "text": "다음 글의 주제로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The historical evolution of cultural exchange",
+            "The positive impacts of cultural globalization",
+            "The distinction between cultural appreciation and appropriation",
+            "The process of creating new cultural traditions",
+            "The legal consequences of cultural appropriation"
+          ],
+          "answer": 3,
+          "explanation": "글의 주제는 존중을 바탕으로 한 '문화적 감상'과, 권력 관계 속에서 의미를 무시하고 요소를 가져오는 '문화적 전유' 사이의 차이점을 명확히 구별하는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "appropriation",
@@ -1138,7 +1826,23 @@
       "title": "",
       "text": "The rise of cryptocurrencies presents a fundamental paradox for the financial world. Born from a desire for decentralization and freedom from traditional banking systems, their core appeal lies in their autonomy. However, for cryptocurrencies like Bitcoin to achieve mainstream acceptance and stability, they increasingly require the very thing they were designed to avoid: institutional adoption and regulation. Large investment banks, corporations, and even governments are exploring how to integrate digital assets, which lends them legitimacy but also subjects them to oversight and control. This integration creates a tension between the original cypherpunk ethos of anonymity and independence, and the market's demand for security, transparency, and accountability. The future of cryptocurrency may therefore not be a radical overthrow of the old system, but a complex and perhaps compromised coexistence with it.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q144",
+          "number": "144",
+          "text": "다음 글의 제목으로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The Technical Guide to Cryptocurrency Mining",
+            "The Unstoppable Rise of a Decentralized World",
+            "Cryptocurrency: The Inevitable Clash with Regulation",
+            "Why Traditional Banks Fear Digital Currencies",
+            "A History of Bitcoin's Early Anonymity"
+          ],
+          "answer": 3,
+          "explanation": "글은 암호화폐가 주류로 인정받기 위해 본래 피하고자 했던 제도권의 '규제'와 필연적으로 충돌하게 되는 역설을 다루므로 이 제목이 가장 적절합니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "paradox",
@@ -1164,7 +1868,23 @@
       "title": "",
       "text": "Utilitarianism, the ethical theory that advocates for actions that produce the greatest good for the greatest number, appears intuitively appealing. Its focus on maximizing overall happiness seems a rational basis for moral decision-making. However, this principle harbors a significant flaw: the potential for the \"tyranny of the majority.\" In a purely utilitarian calculation, the profound suffering of a minority can be deemed acceptable if it leads to a slightly greater pleasure for a large majority. This approach fails to protect fundamental individual rights and justice, which should not be contingent on popular opinion or a cost-benefit analysis of happiness. For instance, sacrificing one innocent person to appease a mob and prevent a riot might be justified under a strict utilitarian view, but it strikes most of us as morally abhorrent. True ethical frameworks must therefore incorporate inviolable rights and duties that cannot be overridden by simple calculations of collective utility.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q145",
+          "number": "145",
+          "text": "필자가 다음 글에서 주장하는 바로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Utilitarianism is the most rational ethical framework for modern society.",
+            "The happiness of the majority should always be the top priority.",
+            "Ethical decisions must protect individual rights, not just maximize collective happiness.",
+            "The concept of \"good\" is too subjective to be measured effectively.",
+            "Utilitarian principles are the foundation of all modern legal systems."
+          ],
+          "answer": 3,
+          "explanation": "필자는 공리주의가 '다수의 폭정'을 통해 소수의 권리를 침해할 수 있다고 비판하며, 진정한 윤리 체계는 집단적 행복 극대화뿐만 아니라 개인의 권리를 반드시 보호해야 한다고 주장합니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "utilitarianism",
@@ -1190,7 +1910,23 @@
       "title": "",
       "text": "Imposter syndrome, the persistent feeling of being a fraud despite evidence of success, is often framed as a personal psychological flaw—a lack of confidence to be overcome by the individual. This perspective, however, is incomplete and potentially harmful. It ignores the systemic and environmental factors that cultivate these feelings of inadequacy. Workplaces that foster hyper-competitiveness, lack clear feedback mechanisms, or are dominated by a homogenous culture can make anyone who differs from the norm feel like an outsider and an imposter. For women, people of color, and other underrepresented groups, this feeling is often exacerbated by societal biases and a lack of role models. Therefore, addressing imposter syndrome requires more than just individual self-help strategies. It demands that we create more inclusive, supportive, and transparent environments where a diverse range of talents can be recognized and feel they truly belong.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q146",
+          "number": "146",
+          "text": "다음 글의 요지로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Imposter syndrome is a rare condition affecting only a few individuals.",
+            "Individuals are solely responsible for overcoming their feelings of inadequacy.",
+            "Addressing imposter syndrome requires systemic and environmental changes, not just individual effort.",
+            "The most effective way to combat imposter syndrome is through increased competition.",
+            "Imposter syndrome primarily stems from a person's lack of actual skills or competence."
+          ],
+          "answer": 3,
+          "explanation": "글의 요지는 가면 증후군이 개인의 문제를 넘어, 과도한 경쟁이나 획일적인 문화 같은 시스템적, 환경적 요인에 의해 유발되므로, 해결책 역시 개인의 노력을 넘어선 환경 개선을 요구한다는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "imposter",
@@ -1216,7 +1952,23 @@
       "title": "",
       "text": "The restoration of ancient artworks is a field fraught with controversy, balancing on a fine line between preservation and alteration. On one side of the debate are the purists, who argue that any intervention beyond basic cleaning and stabilization compromises the artwork's historical integrity. For them, the damage and decay accumulated over centuries are part of the object's authentic story and should be preserved as such. On the other side are those who advocate for a more interventionist approach. They contend that restoration, when done carefully by experts, can help viewers appreciate the artwork as the artist originally intended, revealing faded colors and repairing damage that obscures its beauty. The central conflict lies in defining \"authenticity.\" Is it the object as it exists now, shaped by time, or is it a reconstruction of its presumed original state? This ongoing debate ensures that every restoration project is a complex negotiation between history, aesthetics, and ethics.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q147",
+          "number": "147",
+          "text": "다음 글의 주제로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The chemical processes used in modern art restoration",
+            "The debate over the proper approach to restoring ancient art",
+            "The rising market value of restored historical artifacts",
+            "A historical overview of famous art forgeries",
+            "The importance of digital technology in art preservation"
+          ],
+          "answer": 2,
+          "explanation": "글의 주제는 예술품 복원에 있어 역사적 진실성을 중시하는 입장과 예술가의 원래 의도를 복원하려는 입장 사이의 논쟁을 다루는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "fraught",
@@ -1242,7 +1994,23 @@
       "title": "",
       "text": "The emergence of \"deepfake\" technology, which uses artificial intelligence to create highly realistic but fabricated videos and audio, represents a significant threat to our information ecosystem. While it may have some creative applications, its potential for misuse is alarming. Deepfakes can be weaponized to spread disinformation on an unprecedented scale, creating convincing fraudulent evidence to manipulate public opinion, defame individuals, or even incite political instability. Imagine a fabricated video of a world leader announcing a declaration of war, or a fake audio clip of a CEO admitting to fraud. The ease with which such content can be created and distributed means that our collective ability to distinguish truth from fiction is being severely eroded. It is imperative that we develop robust technological tools for detection, promote digital literacy education, and establish clear legal and ethical guidelines to mitigate the dangers before they undermine the very foundations of trust in society.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q148",
+          "number": "148",
+          "text": "다음 글의 목적으로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "To promote the use of deepfake technology in the entertainment industry",
+            "To explain the technical workings of artificial intelligence",
+            "To celebrate the creative possibilities of new digital tools",
+            "To warn about the societal dangers of deepfake technology and urge action",
+            "To analyze the stock market impact of technological disinformation"
+          ],
+          "answer": 4,
+          "explanation": "글의 목적은 딥페이크 기술이 허위 정보 확산, 명예훼손 등 사회에 미치는 심각한 위험을 경고하고, 탐지 기술 개발과 같은 대응책 마련을 촉구하는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "fabricated",
@@ -1268,7 +2036,23 @@
       "title": "",
       "text": "The Sapir-Whorf hypothesis, in its strongest form, posits that the language one speaks determines the nature of one's thought. This concept, known as linguistic determinism, suggests that we are prisoners of our native tongue, unable to conceive of concepts that are not encoded in its vocabulary or grammar. For example, a culture lacking words for specific numbers might be incapable of complex mathematical thought. However, this strong version of the hypothesis has been largely discredited by modern linguists and cognitive scientists. Evidence shows that humans can think beyond the confines of their language; we can learn new languages, coin new terms, and understand concepts for which we have no single word. A more moderate and widely accepted version, known as linguistic relativity, now prevails. It suggests that language does not determine thought but *influences* it, shaping our perception, memory, and attention in subtle ways. Language is not a prison, but a lens that colors how we see the world.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q149",
+          "number": "149",
+          "text": "다음 글의 제목으로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "How to Learn a New Language Effectively",
+            "The Universal Grammar Shared by All Languages",
+            "Sapir-Whorf: From Deterministic Prison to Influential Lens",
+            "The Flaws in Modern Linguistic Theories",
+            "The Extinction of Indigenous Languages"
+          ],
+          "answer": 3,
+          "explanation": "글은 사피어-워프 가설이 언어가 사고를 가두는 '결정론적 감옥'이라는 초기 개념에서, 사고에 영향을 미치는 '영향력 있는 렌즈'라는 온건한 개념으로 변화했음을 보여주므로 이 제목이 가장 적절합니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "posits",
@@ -1294,7 +2078,23 @@
       "title": "",
       "text": "Stroll through many modern city centers, and you may encounter benches with prominent armrests to prevent sleeping, or metal studs embedded in flat surfaces to deter skateboarders. This is \"defensive architecture,\" also known as hostile architecture, and it is a deliberate urban design strategy. Proponents argue that it maintains order, prevents crime, and protects property by discouraging loitering and other \"undesirable\" activities. However, this perspective fundamentally misunderstands the nature of public space. Public spaces should be inclusive and accessible to all members of society. By designing them to exclude certain groups, particularly the homeless and young people, we are not solving social problems but merely hiding them from view. Defensive architecture treats the symptoms—like people sleeping on benches—rather than the root causes, such as poverty and lack of housing. It is a hostile and divisive approach that fosters exclusion and erodes a city's sense of community.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q150",
+          "number": "150",
+          "text": "필자가 다음 글을 통해 전달하려는 메시지로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Defensive architecture is an effective tool for crime prevention.",
+            "Urban design should prioritize property protection above all else.",
+            "Defensive architecture is an unethical practice that fails to address root social issues.",
+            "The homeless population should be provided with designated public spaces.",
+            "Modern cities are becoming safer thanks to new design strategies."
+          ],
+          "answer": 3,
+          "explanation": "필자는 방어적 건축이 노숙인 문제와 같은 근본적인 사회 문제를 해결하지 않고 단지 눈에 보이지 않게 숨기는 비윤리적인 행태라고 비판하는 메시지를 전달하고 있습니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "prominent",
@@ -1320,7 +2120,23 @@
       "title": "",
       "text": "In many educational settings, maintaining student motivation remains a significant challenge. Traditional methods often fail to engage students who are accustomed to the dynamic, interactive nature of digital entertainment. To address this, educators are increasingly turning to \"gamification,\" the application of game-design elements and principles in non-game contexts. This approach incorporates features like points, badges, leaderboards, and narrative structures into learning activities. The goal is not to turn education into a game, but to leverage the psychological drivers that make games so compelling: a sense of achievement, competition, and immediate feedback. By making learning more interactive and rewarding, gamification can foster a more positive attitude towards academic tasks and boost intrinsic motivation, ultimately leading to improved engagement and learning outcomes.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q151",
+          "number": "151",
+          "text": "다음 글의 목적으로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "To criticize the excessive use of digital games among students",
+            "To compare the effectiveness of various educational theories",
+            "To propose gamification as a solution for low student motivation",
+            "To explain the technical process of developing educational games",
+            "To analyze the negative psychological effects of competition in classrooms"
+          ],
+          "answer": 3,
+          "explanation": "글의 목적은 학생들의 동기 부여 저하 문제에 대한 해결책으로, 게임의 원리를 학습에 적용하는 '게임화(gamification)'를 제안하는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "gamification",
@@ -1346,7 +2162,23 @@
       "title": "",
       "text": "The narrative surrounding obesity has traditionally placed the burden of responsibility squarely on the individual. It is often framed as a simple matter of personal choice—eat less, move more. However, this perspective dangerously oversimplifies a complex issue. A growing body of evidence suggests that societal and environmental factors play a crucial role. For instance, the prevalence of \"food deserts\" in low-income neighborhoods, where access to fresh, healthy food is limited, makes nutritious eating difficult. Furthermore, the relentless marketing of high-calorie, low-nutrient foods targets vulnerable populations, including children. To effectively combat the obesity epidemic, we must shift our focus from blaming individuals to addressing these broader social determinants. This requires policy changes, community-based interventions, and corporate accountability to create an environment where healthy choices are the easy choices.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q152",
+          "number": "152",
+          "text": "다음 글의 요지로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Obesity is primarily caused by a lack of individual willpower.",
+            "The government should ban the marketing of all high-calorie foods.",
+            "Addressing obesity requires a focus on social and environmental factors, not just individual blame.",
+            "Low-income neighborhoods have higher rates of obesity due to genetic predispositions.",
+            "Personal responsibility is the most effective tool in preventing chronic diseases."
+          ],
+          "answer": 3,
+          "explanation": "글의 요지는 비만 문제를 개인의 책임으로만 돌리는 것을 비판하며, '음식 사막'과 같은 사회적, 환경적 요인에 대한 접근이 필요하다고 주장하는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "squarely",
@@ -1372,7 +2204,23 @@
       "title": "",
       "text": "In cinematic language, color is rarely just a decorative element; it is a powerful tool for storytelling. Directors meticulously plan color palettes to evoke specific emotions, convey symbolic meanings, and guide the audience's attention. For example, the use of warm colors like red and orange can create a sense of passion, danger, or warmth, depending on the context. Conversely, cool colors such as blue and green often signify calmness, isolation, or melancholy. A sudden shift in the color scheme can signal a pivotal change in the narrative or a character's internal state. Some films use a desaturated, almost black-and-white palette to reflect a grim, oppressive world, while bursts of vibrant color might represent moments of hope or freedom. Understanding this visual subtext allows for a deeper appreciation of the artistry involved in filmmaking.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q153",
+          "number": "153",
+          "text": "다음 글의 주제로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The historical evolution of color in cinema",
+            "The technical aspects of color grading in post-production",
+            "The role of color as a symbolic storytelling device in film",
+            "The psychological effects of different colors on human behavior",
+            "The comparison between black-and-white and color films"
+          ],
+          "answer": 3,
+          "explanation": "글의 주제는 영화에서 색이 단순한 장식 요소를 넘어, 감정 유발, 의미 전달 등 상징적인 스토리텔링 장치로서 어떤 역할을 하는지를 설명하는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "meticulously",
@@ -1398,7 +2246,23 @@
       "title": "",
       "text": "Every two weeks, a language dies with its last speaker. This rapid loss of linguistic diversity represents more than just the disappearance of words; it is an erosion of collective human heritage. Each language is a unique vessel of culture, history, and a particular way of seeing the world. It contains traditional knowledge about medicine, ecology, and survival that has been accumulated over centuries. When a language is lost, this irreplaceable knowledge is often lost with it. Therefore, the preservation of minority and endangered languages is not merely an academic exercise but a crucial task for humanity. Efforts to revitalize these languages through documentation, education, and community support are essential to safeguarding our shared cultural wealth and maintaining the rich tapestry of human expression.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q154",
+          "number": "154",
+          "text": "다음 글의 요지로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Learning multiple languages can improve cognitive function.",
+            "The dominance of English is the primary cause of language extinction.",
+            "Preserving endangered languages is vital for protecting cultural heritage and knowledge.",
+            "The most effective way to save a language is through written documentation.",
+            "Language death is a natural and unavoidable part of social evolution."
+          ],
+          "answer": 3,
+          "explanation": "글의 요지는 언어의 소멸이 단순한 단어의 사라짐이 아니라, 그 언어에 담긴 고유한 문화유산과 지식의 손실이므로 소멸 위기 언어 보존이 매우 중요하다는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "linguistic",
@@ -1424,7 +2288,23 @@
       "title": "",
       "text": "For centuries, practices like yoga and meditation have been associated with spiritual and mental well-being. Today, scientific research is providing concrete evidence to support these ancient claims. Studies show that regular engagement in these mind-body practices can have profound physiological effects. For instance, meditation has been linked to a reduction in cortisol, the body's primary stress hormone, and can lead to structural changes in brain regions associated with memory and emotional regulation. Similarly, the controlled breathing and physical postures of yoga help to calm the autonomic nervous system, shifting it from a \"fight-or-flight\" state to a \"rest-and-digest\" mode. This combination of mental focus and physical movement offers a powerful, non-pharmacological approach to managing stress, anxiety, and improving overall mental clarity.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q155",
+          "number": "155",
+          "text": "다음 글의 주제로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The origins of yoga and meditation in ancient Eastern religions",
+            "The scientific basis for the stress-reducing effects of yoga and meditation",
+            "A comparison of the physical benefits of yoga versus traditional exercise",
+            "The growing popularity of alternative medicine in Western societies",
+            "The challenges of conducting scientific research on spiritual practices"
+          ],
+          "answer": 2,
+          "explanation": "글의 주제는 요가와 명상이 스트레스 호르몬 감소, 뇌 구조 변화 등 정신 건강에 긍정적인 영향을 미친다는 점을 뒷받침하는 과학적 근거를 제시하는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "concrete",
@@ -1450,7 +2330,23 @@
       "title": "",
       "text": "In the digital age, our personal information is more accessible and persistent than ever before. Every search, purchase, and social media post contributes to a vast digital footprint that can be difficult to manage or erase. This permanence raises significant privacy concerns, as past mistakes or irrelevant information can haunt individuals indefinitely. In response to this problem, the concept of the \"right to be forgotten\" has emerged, particularly in European law. This principle grants individuals the right, under certain conditions, to request that search engines and other data controllers remove links to personal information about them. The aim is not to rewrite history but to allow people to move on from past events that are no longer relevant, ensuring that their digital identity does not perpetually define their present and future. This right represents a crucial step in rebalancing the power between individuals and data giants.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q156",
+          "number": "156",
+          "text": "다음 글의 목적으로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "To argue for the complete deregulation of the internet",
+            "To explain the concept and importance of the \"right to be forgotten\"",
+            "To teach users how to permanently delete their social media accounts",
+            "To criticize technology companies for collecting user data",
+            "To compare data privacy laws in Europe and the United States"
+          ],
+          "answer": 2,
+          "explanation": "글의 목적은 디지털 시대의 프라이버시 문제를 해결하기 위해 등장한 '잊힐 권리'의 개념을 정의하고, 그것이 왜 중요한지를 설명하는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "persistent",
@@ -1476,7 +2372,23 @@
       "title": "",
       "text": "Cities are often significantly warmer than surrounding rural areas, a phenomenon known as the \"urban heat island\" effect. This temperature difference is primarily caused by the vast surfaces of concrete and asphalt that absorb and retain solar radiation more effectively than natural landscapes. Additionally, waste heat from buildings, industrial processes, and vehicles contributes to the warming. The consequences are not trivial; they include increased energy consumption for cooling, elevated levels of air pollution, and heat-related health risks for residents. Fortunately, there are effective strategies to mitigate this effect. Implementing \"green infrastructure,\" such as planting more trees, creating parks, and installing green roofs, can provide shade and cool the air through evapotranspiration. Using reflective materials for pavements and roofs can also help by reflecting more sunlight back into the atmosphere. These solutions can make cities more sustainable and livable.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q157",
+          "number": "157",
+          "text": "다음 글의 제목으로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The Causes and Dangers of Air Pollution",
+            "Urban Heat Islands: A Growing Problem and Its Solutions",
+            "The Benefits of Living in a Rural Area",
+            "How to Reduce Energy Consumption in Buildings",
+            "The History of Urban Planning and Development"
+          ],
+          "answer": 2,
+          "explanation": "글은 '도시 열섬' 현상의 원인과 문제점을 제시하고, 녹색 기반 시설과 같은 해결책을 함께 다루고 있으므로 이 제목이 가장 적절합니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "retain",
@@ -1502,7 +2414,23 @@
       "title": "",
       "text": "The rise of the gig economy, characterized by short-term contracts and freelance work as opposed to permanent jobs, has fundamentally reshaped the labor market. Proponents champion it as a model of flexibility and entrepreneurial opportunity. For workers, it offers autonomy over their schedules and the ability to choose their projects. For companies, it provides a way to access specialized skills on demand without the overhead costs of full-time employees. However, this model is not without its critics. They point to the precarious nature of gig work, which often lacks the job security, benefits like health insurance and paid leave, and legal protections afforded to traditional employees. This creates a workforce that is potentially more vulnerable to economic downturns and exploitation. Thus, the gig economy presents a complex duality of empowerment and instability.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q158",
+          "number": "158",
+          "text": "다음 글의 주제로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The advantages of traditional full-time employment",
+            "The legal challenges of classifying gig workers",
+            "The role of technology in creating the gig economy",
+            "The dual nature of the gig economy: flexibility versus instability",
+            "The decline of entrepreneurship in the modern age"
+          ],
+          "answer": 4,
+          "explanation": "글의 주제는 긱 경제가 제공하는 유연성이라는 장점과, 고용 불안정성이라는 단점이라는 이중적인 성격을 설명하는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "proponents",
@@ -1528,7 +2456,23 @@
       "title": "",
       "text": "In 17th and 18th century Europe, coffeehouses emerged as significant social and intellectual centers. Far more than just places to drink a new, exotic beverage, they became the hubs of communication and debate. Known as \"penny universities\" in England, a customer could pay a penny for a cup of coffee and gain access to a wealth of information, including newspapers, journals, and lively discussions on politics, science, and literature. Unlike the rigid, hierarchical social structures of the time, coffeehouses were relatively egalitarian spaces where men from different social classes could mingle and exchange ideas. This environment fostered critical thinking and the formation of public opinion, playing a vital role in the intellectual movement known as the Enlightenment. They were, in essence, the incubators of modern civil society.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q159",
+          "number": "159",
+          "text": "다음 글의 주제로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The economic impact of the coffee trade in Europe",
+            "The architectural design of 18th-century coffeehouses",
+            "The historical role of coffeehouses as centers for public discourse",
+            "The health benefits of drinking coffee",
+            "The competition between coffeehouses and traditional taverns"
+          ],
+          "answer": 3,
+          "explanation": "글의 주제는 17-18세기 커피하우스가 단순한 음료 판매점을 넘어, 다양한 계층이 모여 토론하며 여론을 형성하는 공론의 장으로서 수행했던 역사적 역할입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "beverage",
@@ -1554,7 +2498,23 @@
       "title": "",
       "text": "Impostor syndrome is a psychological pattern in which an individual doubts their skills, talents, or accomplishments and has a persistent internalized fear of being exposed as a \"fraud.\" Despite external evidence of their competence, those experiencing it remain convinced that they are undeserving of their success. This phenomenon is not a mental disorder but is particularly common among high-achieving individuals. It often stems from perfectionistic tendencies or growing up in a family that placed a heavy emphasis on achievement. Overcoming impostor syndrome involves consciously acknowledging one's expertise and accomplishments. Strategies include tracking personal successes, reframing negative thoughts, and understanding that it is acceptable not to know everything. Seeking support from mentors or peers can also help to provide an external perspective, validating one's abilities and normalizing these feelings of self-doubt.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q160",
+          "number": "160",
+          "text": "다음 글의 요지로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Impostor syndrome is a rare mental disorder that requires clinical treatment.",
+            "High achievement is the only cause of developing impostor syndrome.",
+            "People with impostor syndrome can overcome it by acknowledging their abilities and seeking support.",
+            "The most effective way to deal with self-doubt is to ignore negative feelings.",
+            "Impostor syndrome primarily affects individuals in non-creative fields."
+          ],
+          "answer": 3,
+          "explanation": "글의 요지는 가면 증후군이 정신 질환이 아니며, 자신의 능력을 인정하고 주변의 지지를 구하는 등의 전략을 통해 극복할 수 있다는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "persistent",
@@ -1580,7 +2540,23 @@
       "title": "",
       "text": "Brain-Computer Interface (BCI) technology represents a direct communication pathway between an enhanced or wired brain and an external device. For years, this was the realm of science fiction, but it is rapidly becoming a clinical reality. Early applications have shown remarkable promise, primarily in the medical field. For instance, BCIs have enabled individuals with severe paralysis to control prosthetic limbs or communicate their thoughts by translating neural signals into text. Beyond medicine, rudimentary BCI systems are being explored in gaming and virtual reality to create more immersive experiences. However, the technology is still in its infancy. Significant challenges remain, including the invasiveness of some implant procedures, the speed and accuracy of signal processing, and profound ethical questions about cognitive privacy and enhancement. Thus, while its potential is vast, the current state of BCI is one of cautious but rapid advancement.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q161",
+          "number": "161",
+          "text": "다음 글의 주제로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The ethical dilemmas of advanced BCI technology",
+            "The commercialization of BCI in the gaming industry",
+            "The historical development of brain-related science fiction",
+            "The current progress and remaining challenges of BCI technology",
+            "The superiority of non-invasive BCI procedures over invasive ones"
+          ],
+          "answer": 4,
+          "explanation": "글의 주제는 BCI 기술의 의료 분야 등에서의 현재 진전 상황과 함께, 침습성, 정확성, 윤리 문제 등 아직 남아있는 도전 과제들을 종합적으로 다루는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "interface",
@@ -1606,7 +2582,23 @@
       "title": "",
       "text": "Sustainable tourism is often defined as tourism that takes full account of its current and future economic, social, and environmental impacts, addressing the needs of visitors, the industry, the environment, and host communities. This is not merely about planting a few trees or reusing hotel towels. True sustainability in tourism requires a multi-faceted approach. For example, it involves ensuring that tourism revenues directly benefit the local economy, rather than being funneled out to international corporations. It also means actively working to preserve the natural ecosystems and biodiversity that attract visitors in the first place. Furthermore, it demands a deep respect for local cultures and traditions, promoting authentic intercultural understanding instead of commercializing or trivializing them. Without these integrated efforts, tourism can easily degrade the very destinations it promotes.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q162",
+          "number": "162",
+          "text": "다음 글의 요지로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "International corporations play a vital role in promoting sustainable tourism.",
+            "Sustainable tourism's primary goal is to maximize economic benefits for investors.",
+            "Effective sustainable tourism depends on the integration of economic, environmental, and cultural preservation.",
+            "Tourists are solely responsible for practicing sustainable behaviors when they travel.",
+            "Reusing hotel amenities is the most critical aspect of sustainable tourism."
+          ],
+          "answer": 3,
+          "explanation": "글의 요지는 진정한 지속가능한 관광이 되기 위해서는 경제적 혜택, 환경 보존, 문화 존중이라는 세 가지 요소가 통합적으로 고려되어야 한다는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "sustainable",
@@ -1632,7 +2624,23 @@
       "title": "",
       "text": "The values of individualism and collectivism represent two contrasting cultural orientations that shape societies and the individuals within them. Individualistic cultures, prevalent in many Western nations, emphasize personal achievement, uniqueness, and self-reliance. In these societies, the rights and autonomy of the individual are held paramount. Conversely, collectivistic cultures, common in many parts of Asia and Africa, prioritize group harmony, loyalty, and interdependence. The needs and goals of the group—be it the family, community, or company—are considered more important than individual desires. Many modern societies are experiencing a dynamic tension between these two poles. Globalization and digital communication are increasingly exposing people to different cultural values, forcing a re-evaluation of traditional norms and creating a complex social landscape where both individual aspirations and communal responsibilities must be navigated.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q163",
+          "number": "163",
+          "text": "다음 글의 제목으로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The Superiority of Individualistic Cultures",
+            "The Historical Origins of Collectivism",
+            "A Balancing Act: Individualism vs. Collectivism in Modern Society",
+            "How Globalization Weakens Community Bonds",
+            "The Role of Family in Collectivistic Nations"
+          ],
+          "answer": 3,
+          "explanation": "글은 개인주의와 공동체주의의 특징을 대조하고, 현대 사회가 이 두 가치 사이에서 겪는 긴장과 균형 잡기의 필요성을 다루므로 이 제목이 가장 적절합니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "orientations",
@@ -1658,7 +2666,23 @@
       "title": "",
       "text": "In today's saturated market, consumers are not just buying products; they are buying into stories. This is the core principle behind the power of brand storytelling. A shoe company might not just sell footwear, but tell a story of ethical material sourcing and its mission to support artisans in developing countries. A coffee brand could narrate the journey of its beans from a specific family-owned farm in the mountains of Colombia to the customer's cup. These narratives do more than just list features or benefits. They create an emotional connection, build trust, and give the brand a distinct identity that resonates with consumers' values. By weaving a compelling story around a product, companies can transform a simple commodity into a meaningful experience, fostering a sense of loyalty that transcends price and function.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q164",
+          "number": "164",
+          "text": "다음 글의 주제로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The challenges of marketing in a saturated market",
+            "The importance of ethical sourcing in product manufacturing",
+            "The power of narrative in building brand identity and loyalty",
+            "A comparison between product features and brand stories",
+            "The evolution of consumer behavior in the digital age"
+          ],
+          "answer": 3,
+          "explanation": "글의 주제는 제품에 대한 이야기를 통해 소비자와 감정적 유대를 형성하고 브랜드 정체성과 충성도를 구축하는 브랜드 스토리텔링의 힘입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "saturated",
@@ -1684,7 +2708,23 @@
       "title": "",
       "text": "Niccolò Machiavelli's 16th-century work, *The Prince*, has given rise to the term \"Machiavellianism,\" often associated with cunning, manipulation, and a disregard for morality in the pursuit of power. The infamous phrase \"the ends justify the means\" is frequently attributed to his philosophy. However, a purely cynical reading may oversimplify his arguments. Many modern interpretations suggest that Machiavelli was not advocating for cruelty for its own sake, but rather presenting a pragmatic analysis of how power works in the real world. He argued that a ruler, to maintain the state and ensure its stability, must sometimes act in ways that would be considered immoral for a private citizen. In this view, Machiavellianism is less about pure evil and more about a form of political realism—the difficult, sometimes morally compromising, choices leaders must make for the greater good of their nation.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q165",
+          "number": "165",
+          "text": "다음 글의 요지로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Machiavelli's political theories are outdated and irrelevant in modern politics.",
+            "The core of Machiavellianism is the justification of cruelty for personal gain.",
+            "Modern interpretations view Machiavellianism as a form of political pragmatism rather than simple immorality.",
+            "\"The ends justify the means\" is a phrase that Machiavelli himself never actually wrote.",
+            "Effective leaders must always adhere to the same moral codes as private citizens."
+          ],
+          "answer": 3,
+          "explanation": "글의 요지는 마키아벨리즘을 단순한 비도덕성으로 보기보다는, 국가 유지를 위해 때로는 비도덕적인 선택을 해야 한다는 정치적 현실주의 또는 실용주의로 보는 현대적 해석이 있다는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "cunning",
@@ -1710,7 +2750,23 @@
       "title": "",
       "text": "In music theory, the terms consonance and dissonance describe the relative stability of sounds played together. Consonant intervals are typically perceived as pleasant and stable, providing a sense of resolution or rest. In contrast, dissonant intervals create a feeling of tension, clash, or a need to resolve to a more stable chord. While listeners might instinctively prefer consonance, dissonance is not a \"mistake\" or an undesirable element. In fact, it is a fundamental tool for composers across genres, from classical symphonies to modern jazz. Dissonance builds suspense and emotional intensity. The journey from a tense, dissonant chord to a calm, consonant one can create a powerful emotional arc for the listener. Without the strategic use of dissonance, music would lack much of its dynamic character, depth, and forward momentum.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q166",
+          "number": "166",
+          "text": "다음 글의 주제로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The historical evolution of musical harmony",
+            "The superiority of consonant sounds in popular music",
+            "The essential role of dissonance in creating musical tension and dynamism",
+            "A guide to composing music for beginners",
+            "The physics behind musical sound waves"
+          ],
+          "answer": 3,
+          "explanation": "글의 주제는 음악에서 불협화음이 실수가 아니라, 긴장감과 역동성을 만들어내는 필수적인 역할을 한다는 점을 설명하는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "consonance",
@@ -1736,7 +2792,23 @@
       "title": "",
       "text": "The placebo effect is most famously observed in medicine, where an inert substance, like a sugar pill, can produce real physiological improvements simply because the patient believes it will. However, the power of expectation extends far beyond the clinical setting. Consider a student who believes a particular pen is their \"lucky pen\"; they may feel more confident and perform better on an exam while using it. Similarly, an athlete who performs a specific pre-game ritual might experience reduced anxiety and enhanced focus, leading to better performance. These examples illustrate that our mindset—our beliefs and expectations—can have a tangible and powerful influence on our abilities and outcomes in various aspects of life. The mechanism is not magic, but a complex interplay of psychology and physiology, where belief can unlock potential that was already there.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q167",
+          "number": "167",
+          "text": "다음 글의 요지로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The placebo effect is a fraudulent practice in modern medicine.",
+            "Beliefs and expectations can significantly impact performance and outcomes in daily life.",
+            "\"Lucky\" items and rituals have scientifically proven magical powers.",
+            "The placebo effect only works on people who are easily deceived.",
+            "The primary function of the placebo effect is to reduce physical pain."
+          ],
+          "answer": 2,
+          "explanation": "글의 요지는 플라시보 효과가 의학을 넘어 일상생활에서도 나타나며, 우리의 믿음과 기대가 실제 성과와 결과에 중대한 영향을 미칠 수 있다는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "inert",
@@ -1762,7 +2834,23 @@
       "title": "",
       "text": "Sociologist Ray Oldenburg introduced the concept of \"third places\" to describe the vital public spaces that exist apart from our two most common social environments: the home (the \"first place\") and the workplace (the \"second place\"). Third places include cafes, libraries, parks, pubs, and community centers. These are neutral grounds where people can gather, interact, and build relationships informally. Unlike home or work, attendance is not obligatory, and they foster a sense of inclusivity and social equality. They serve as the anchors of community life, facilitating social cohesion and providing a foundation for a functioning civil society. In an era of increasing urbanization and digital isolation, the health and availability of these third places are more critical than ever for fostering a sense of belonging and combating loneliness.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q168",
+          "number": "168",
+          "text": "다음 글의 제목으로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The Decline of the Modern Workplace",
+            "Home Sweet Home: The Importance of the First Place",
+            "Third Places: The Unsung Heroes of Community Life",
+            "How to Design Better Parks and Libraries",
+            "The Negative Impacts of Urbanization on Society"
+          ],
+          "answer": 3,
+          "explanation": "글은 '제3의 장소'가 공동체 생활의 닻 역할을 하며 사회적 유대를 촉진하는, 드러나지 않지만 매우 중요한 공간임을 강조하므로 이 제목이 가장 적절합니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "vital",
@@ -1788,7 +2876,23 @@
       "title": "",
       "text": "The Sapir-Whorf hypothesis posits a fascinating link between the language we speak and the way we perceive and understand the world. It exists in two forms: a \"strong\" version, known as linguistic determinism, which claims that language dictates our thoughts, and a \"weak\" version, linguistic relativity, which suggests that language merely influences our thinking. While the strong version is largely discredited by modern linguists, the weak version has found considerable support. For example, studies have shown that speakers of languages that have distinct words for light blue and dark blue are quicker to distinguish between shades of the color. Similarly, languages that assign grammatical gender to inanimate objects can subtly shape how speakers think about those objects. This suggests that the vocabulary and structure of our native tongue provide a framework that can shape, though not imprison, our cognitive processes.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q169",
+          "number": "169",
+          "text": "다음 글의 주제로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The reasons for the failure of linguistic determinism",
+            "The intricate connection between language and cognitive perception",
+            "The process of acquiring a second language",
+            "The universal grammar structure found in all languages",
+            "The challenges of translating between different languages"
+          ],
+          "answer": 2,
+          "explanation": "글의 주제는 사피어-워프 가설을 중심으로, 언어가 우리의 인지적 인식에 어떻게 영향을 미치는지 그 복잡한 연관성을 탐구하는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "posits",
@@ -1814,7 +2918,23 @@
       "title": "",
       "text": "For decades, the gut was seen primarily as a simple digestive tube. However, recent scientific discoveries are revealing a far more complex picture. A sophisticated communication network, known as the gut-brain axis, directly links the emotional and cognitive centers of the brain with the gastrointestinal system. The trillions of microbes residing in our gut, collectively called the microbiome, are key players in this dialogue. Studies have demonstrated that the composition of this gut flora can influence mood and behavior. For instance, certain probiotic bacteria have been shown to reduce symptoms of anxiety and stress in both animal and human trials. This emerging field of research suggests that maintaining a healthy gut microbiome through diet and lifestyle is not just important for digestion, but is also a critical factor for promoting mental and neurological well-being.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q170",
+          "number": "170",
+          "text": "다음 글의 요지로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The human digestive system is simpler than previously thought.",
+            "A healthy gut microbiome is essential for both digestive function and mental health.",
+            "Probiotics are a guaranteed cure for all psychological disorders.",
+            "The brain has complete and unilateral control over the digestive system.",
+            "A balanced diet's only benefit is to provide the body with energy."
+          ],
+          "answer": 2,
+          "explanation": "글의 요지는 장내 미생물군집이 소화 기능뿐만 아니라, '장-뇌 축'을 통해 정신 및 신경 건강에도 필수적인 역할을 한다는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "sophisticated",
@@ -1840,7 +2960,23 @@
       "title": "",
       "text": "Resilience, the capacity to recover quickly from difficulties, is often misperceived as an innate personality trait. However, a growing body of research in educational psychology suggests that resilience is not something one is simply born with; rather, it is a skill that can be actively cultivated. Educational environments play a crucial role in this process. By providing students with a supportive network, teaching them constructive coping mechanisms, and creating opportunities to face and overcome manageable challenges, schools can help foster this vital attribute. The goal is not to shield students from all adversity but to equip them with the tools to navigate it effectively. Therefore, pedagogical strategies that integrate emotional and social learning are becoming increasingly important in modern education, aiming to build students who are not only academically proficient but also mentally robust.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q171",
+          "number": "171",
+          "text": "Which of the following is the main idea of the passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The primary causes of student stress and adversity",
+            "The innate personality traits that define a resilient individual",
+            "The concept of resilience as a learnable skill fostered through education",
+            "The limitations of the modern education system in student support",
+            "A historical overview of research on resilience in psychology"
+          ],
+          "answer": 3,
+          "explanation": "글의 요지는 회복탄력성이 타고나는 것이 아니라, 교육적 환경을 통해 길러질 수 있는 학습 가능한 기술이라는 개념을 설명하는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "resilience",
@@ -1866,7 +3002,23 @@
       "title": "",
       "text": "The connection between the gut microbiome and mental health represents a paradigm shift in neuroscience and psychiatry. Traditionally, mental health disorders like depression and anxiety have been treated primarily through psychotropic medications that target brain chemistry. While effective for many, this approach doesn't work for everyone and can have significant side effects. In contrast, emerging research focuses on the \"gut-brain axis,\" a complex communication network linking the gastrointestinal tract and the central nervous system. Studies suggest that the composition of our gut bacteria can influence mood and behavior. This has led to novel therapeutic strategies, such as the use of probiotics and dietary changes, aimed at modulating the gut microbiome to improve mental well-being. This approach offers a less invasive, more holistic alternative to conventional treatments.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q172",
+          "number": "172",
+          "text": "What is the primary purpose of the passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "To argue for the universal replacement of medication with probiotics",
+            "To explain the chemical composition of psychotropic drugs",
+            "To detail the anatomy of the central nervous system",
+            "To compare traditional and emerging approaches to mental health treatment",
+            "To criticize the slow adoption of new medical technologies"
+          ],
+          "answer": 4,
+          "explanation": "글의 목적은 뇌 화학에 초점을 맞춘 전통적인 정신 건강 치료법과, '장-뇌 축'을 이용하는 새로운 접근법을 비교하여 설명하는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "paradigm",
@@ -1892,7 +3044,23 @@
       "title": "",
       "text": "Public art, encompassing everything from monumental sculptures in city plazas to murals on community walls, serves a dual function that often creates a dynamic tension. On one hand, it is intended to enhance the aesthetic quality of public spaces, providing visual pleasure and beautifying the urban landscape. This decorative role helps to create a sense of place and civic identity. On the other hand, public art can act as a powerful medium for social commentary and political expression. It can challenge viewers' perspectives, provoke dialogue on sensitive issues, and give voice to marginalized communities. While the former function is generally welcomed for its contribution to urban appeal, the latter can be controversial, sparking public debate. The true value of public art may lie in its ability to navigate this balance between being a source of beauty and a catalyst for conversation.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q173",
+          "number": "173",
+          "text": "Which of the following would be the most suitable title for the passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The History of Monumental Sculptures",
+            "The Controversies Surrounding Public Funding for Art",
+            "Public Art: A Blend of Aesthetics and Social Commentary",
+            "How to Become a Successful Public Artist",
+            "The Economic Impact of Art on Urban Renewal"
+          ],
+          "answer": 3,
+          "explanation": "글은 공공미술이 가진 미적 기능과 사회적 논평 기능이라는 이중적 역할을 설명하며, 이 두 가지의 혼합이 그 가치를 이룬다고 말하므로 이 제목이 가장 적절합니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "encompassing",
@@ -1918,7 +3086,23 @@
       "title": "",
       "text": "The language of poetry is fundamentally different from the language of prose in its use of suggestion and ambiguity. While prose typically aims for clarity and directness, communicating information in a straightforward manner, poetry thrives on connotation and multiplicity of meaning. A poet selects words not just for their denotative, or dictionary, meaning, but for the web of associations, emotions, and ideas they evoke. This is achieved through literary devices like metaphor, simile, and symbolism, which invite the reader to look beyond the literal surface. The resulting ambiguity is not a flaw but a feature; it creates a richer, more personal experience for the reader, who becomes a co-creator of meaning. Therefore, reading poetry is an active process of interpretation, requiring an engagement with language that is both intellectual and emotional.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q174",
+          "number": "174",
+          "text": "What is the main topic of the passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The historical development of poetic forms",
+            "The process of publishing a book of poetry",
+            "The key differences between famous poets",
+            "The connotative and suggestive nature of poetic language",
+            "The rules of grammar and syntax in prose writing"
+          ],
+          "answer": 4,
+          "explanation": "글의 주제는 시적 언어가 직접적인 의미보다는 함축적이고 암시적인 의미를 통해 풍부한 해석을 가능하게 하는 본질적인 특성을 가지고 있다는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "ambiguity",
@@ -1944,7 +3128,23 @@
       "title": "",
       "text": "When considering the role of physical activity in child development, it is useful to distinguish between structured sports and unstructured free play. Structured sports, such as soccer leagues or gymnastics classes, are organized by adults and involve rules, specific skill instruction, and competition. These activities are excellent for developing discipline, teamwork, and the ability to handle winning and losing. In contrast, unstructured free play involves children inventing their own games and rules in environments like parks or backyards. This type of play is crucial for fostering creativity, problem-solving skills, and social negotiation as children must collaborate to create and sustain their own play world. While both forms of activity are beneficial, a healthy balance is essential. Over-emphasis on structured sports may stifle a child's imagination, whereas a complete lack of structure can limit their development of discipline and resilience in competitive settings.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q175",
+          "number": "175",
+          "text": "What is the author's main point in the passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Structured sports are more beneficial for children than unstructured play.",
+            "Unstructured play is the most important factor in a child's creative development.",
+            "Children should avoid competitive sports to prevent emotional distress.",
+            "Both structured sports and free play offer distinct and important developmental benefits.",
+            "Parents should not be involved in their children's physical activities."
+          ],
+          "answer": 4,
+          "explanation": "글의 요점은 체계적인 스포츠와 비체계적인 자유 놀이가 각각 규율과 창의성 등 고유하고 중요한 발달상의 이점을 제공하며, 둘 사이의 건강한 균형이 필수적이라는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "distinguish",
@@ -1970,7 +3170,23 @@
       "title": "",
       "text": "The rise of remote work is reshaping the economic and social landscapes of urban and suburban areas, but in markedly different ways. For major cities, the shift could pose a significant challenge. The decline in daily commuters threatens the ecosystem of businesses—restaurants, shops, and services—that depend on office workers. It may also lead to a decrease in demand for commercial real estate, potentially lowering property values. On the other hand, suburban and smaller communities may experience a renaissance. The influx of remote workers, seeking more space and a lower cost of living, can boost local economies, revitalize main streets, and increase the local tax base. This decentralization of the workforce presents both a period of difficult adjustment for traditional urban centers and an opportunity for growth in previously overlooked suburban regions.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q176",
+          "number": "176",
+          "text": "What is the passage mainly about?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The technological tools required for effective remote work",
+            "The psychological benefits of working from home",
+            "The contrasting impacts of remote work on urban and suburban areas",
+            "The history of the traditional five-day work week",
+            "Government policies designed to encourage remote work"
+          ],
+          "answer": 3,
+          "explanation": "글의 주된 내용은 원격 근무의 증가가 도시 지역에는 위협이 될 수 있는 반면, 교외 지역에는 부흥의 기회가 되는 대조적인 영향을 미친다는 점입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "markedly",
@@ -1996,7 +3212,23 @@
       "title": "",
       "text": "\"Rewilding\" is an ambitious conservation strategy that aims to restore ecosystems to their natural, uncultivated state. Unlike traditional conservation, which often focuses on protecting a single species or a specific habitat, rewilding takes a broader, more holistic approach. The primary goal is to reinstate natural processes and reduce human management, allowing nature to take its own course. This often involves reintroducing \"keystone species\"—animals like wolves or beavers whose presence has a disproportionately large effect on their environment. By reintroducing these species, rewilding seeks to trigger a cascade of ecological benefits, such as increased biodiversity, improved water quality, and more resilient landscapes. While promising, the approach is not without challenges, including potential conflicts with human activities like farming and the difficulty of predicting long-term ecological outcomes.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q177",
+          "number": "177",
+          "text": "What is the primary purpose of the passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "To argue against the reintroduction of predator species",
+            "To compare the diets of various keystone species",
+            "To provide a historical account of land use changes",
+            "To explain the concept, goals, and challenges of rewilding",
+            "To detail a specific rewilding project in North America"
+          ],
+          "answer": 4,
+          "explanation": "글의 목적은 '재야생화'의 개념을 정의하고, 그 목표(생태계 복원)와 방법(핵심종 재도입), 그리고 당면 과제(인간과의 갈등)를 종합적으로 설명하는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "rewilding",
@@ -2022,7 +3254,23 @@
       "title": "",
       "text": "The advent of the \"gig economy\" has fundamentally altered traditional notions of employment. Characterized by short-term contracts or freelance work as opposed to permanent jobs, this model offers unprecedented flexibility. Workers can often choose their own hours and projects, which is a significant advantage for those seeking autonomy or a better work-life balance. However, this flexibility comes at a cost. Gig workers typically lack the job security, benefits (such as health insurance and paid leave), and legal protections afforded to traditional employees. This creates a precarious existence for many, who face income instability and an absence of a long-term career path. Consequently, the gig economy presents a complex duality: it is a source of liberation for some, but a trap of instability for others, sparking ongoing debate about the future of labor rights.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q178",
+          "number": "178",
+          "text": "Which of the following best summarizes the author's view of the gig economy?",
+          "type": "reading-comprehension",
+          "choices": [
+            "It is a wholly positive evolution in the modern workforce.",
+            "It is an unsustainable economic model destined to fail.",
+            "It offers both significant freedom and considerable instability.",
+            "It primarily benefits large corporations at the expense of workers.",
+            "It is a temporary trend that will soon be replaced by traditional employment."
+          ],
+          "answer": 3,
+          "explanation": "저자는 긱 경제가 유연성이라는 상당한 자유를 제공하지만, 동시에 고용 불안정이라는 상당한 불안정성을 수반하는 이중적인 성격을 가지고 있다고 요약합니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "advent",
@@ -2048,7 +3296,23 @@
       "title": "",
       "text": "Archaeology has been revolutionized by the application of LiDAR (Light Detection and Ranging) technology. This remote sensing method works by firing rapid pulses of laser light at a surface—typically the ground from an aircraft—and measuring the time it takes for each pulse to return. The resulting data can be used to generate incredibly detailed three-dimensional maps of the terrain. LiDAR's key advantage is its ability to \"see\" through dense forest canopies. By filtering out the laser returns that bounce off vegetation, archaeologists can reveal the subtle contours of the ground beneath, uncovering hidden ruins, ancient road systems, and agricultural terraces that are invisible to the naked eye. This has led to the discovery of entire lost cities and has fundamentally changed our understanding of the scale and complexity of ancient civilizations.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q179",
+          "number": "179",
+          "text": "What is the main purpose of this passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "To compare LiDAR with other archaeological dating methods",
+            "To explain how LiDAR technology is transforming archaeology",
+            "To discuss the high cost and limitations of using aircraft in research",
+            "To provide a detailed biography of the inventor of LiDAR",
+            "To warn about the potential environmental impact of laser technology"
+          ],
+          "answer": 2,
+          "explanation": "글의 주된 목적은 LiDAR 기술이 어떻게 숲을 투과하여 숨겨진 유적을 발견하게 함으로써 고고학 분야를 변화시키고 있는지를 설명하는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "revolutionized",
@@ -2074,7 +3338,23 @@
       "title": "",
       "text": "Effective altruism is a philosophical and social movement that advocates for using evidence and reason to determine the most effective ways to improve the world. Proponents of this movement argue that good intentions are not enough. Instead of donating to charities based on emotional appeal or personal connection, they suggest a more analytical approach. This involves researching and comparing different causes and interventions to identify which ones will do the most good with a given amount of resources. For example, an effective altruist might calculate whether a donation would save more lives if directed toward providing mosquito nets in a malaria-prone region versus funding a high-tech medical research project. The ultimate goal is to maximize positive impact, ensuring that efforts to help others are not just well-intentioned but also genuinely effective.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q180",
+          "number": "180",
+          "text": "What is the central idea of the passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The emotional motivations behind charitable giving",
+            "A critique of modern philanthropic organizations",
+            "The importance of donating to local community charities",
+            "The definition and methodology of effective altruism",
+            "The technical challenges of medical research funding"
+          ],
+          "answer": 4,
+          "explanation": "글의 중심 아이디어는 감정이 아닌 증거와 이성을 통해 가장 효과적인 선행을 추구하는 '효과적 이타주의'의 정의와 방법론을 설명하는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "altruism",
@@ -2100,7 +3380,23 @@
       "title": "",
       "text": "Quantum cryptography represents a paradigm shift in securing communications. Unlike traditional encryption methods that rely on mathematical complexity, it is based on the principles of quantum mechanics. The core idea involves encoding information in quantum states of particles, such as photons. The security of this method stems from a fundamental law of physics: the act of observing a quantum system inevitably disturbs it. Therefore, if an eavesdropper attempts to intercept the quantum key being transmitted, their measurement will alter the photons' states. This alteration is immediately detectable by the legitimate recipients, who can then discard the compromised key and generate a new one. This \"unhackable\" nature makes quantum cryptography a promising solution for future data security, especially in an era where quantum computers threaten to break current encryption standards.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q181",
+          "number": "181",
+          "text": "다음 글의 주제로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The historical development of encryption techniques",
+            "The fundamental principles of quantum mechanics",
+            "The role of photons in modern physics",
+            "Quantum cryptography as a highly secure communication method",
+            "The limitations and challenges of quantum computing"
+          ],
+          "answer": 4,
+          "explanation": "글의 주제는 양자 암호 통신이 양자 역학 원리를 이용하여 도청이 불가능한, 매우 안전한 통신 방법임을 설명하는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "cryptography",
@@ -2126,7 +3422,23 @@
       "title": "",
       "text": "The world's oceans are facing a silent but severe threat: acidification. As human activities release vast amounts of carbon dioxide (CO2) into the atmosphere, about a quarter of it is absorbed by the oceans. When CO2 dissolves in seawater, it forms carbonic acid, which lowers the ocean's pH, making it more acidic. This change has profound consequences for marine ecosystems. Many marine organisms, including corals, oysters, and clams, rely on carbonate ions to build their shells and skeletons. However, increased acidity reduces the availability of these ions, making it difficult for these creatures to grow and survive. The weakening of these foundational species can trigger a domino effect, disrupting entire marine food webs and threatening the livelihoods of millions of people who depend on the ocean. The ongoing trend of ocean acidification poses a critical danger to marine biodiversity and stability.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q182",
+          "number": "182",
+          "text": "다음 글의 요지로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The ocean is a primary source of food for humanity.",
+            "Ocean acidification, caused by CO2 absorption, seriously endangers marine life.",
+            "Technological solutions are needed to reduce CO2 emissions.",
+            "The chemical composition of seawater is naturally unstable.",
+            "Coral reefs are the most important part of marine ecosystems."
+          ],
+          "answer": 2,
+          "explanation": "글의 요지는 인간 활동으로 인한 CO2 흡수가 해양 산성화를 유발하고, 이는 껍질을 만드는 해양 생물에게 심각한 위협이 되어 생태계 전체를 위험에 빠뜨린다는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "acidification",
@@ -2152,7 +3464,23 @@
       "title": "",
       "text": "In the digital age, we are increasingly living within \"filter bubbles,\" personalized universes of information created by algorithms. Online platforms, from social media to search engines, track our past behavior—our clicks, likes, and shares—to predict what we want to see next. While this can be convenient, it has a significant downside. By selectively showing us content that aligns with our existing beliefs and preferences, these algorithms isolate us from differing viewpoints and challenging information. This intellectual isolation can reinforce our biases, leading to greater societal polarization and a diminished capacity for empathetic, cross-ideological dialogue. When we are only exposed to echoes of our own voice, the foundations of a healthy democracy, which relies on informed debate and mutual understanding, are put at risk. The convenience of personalization comes at the cost of a fragmented and less tolerant society.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q183",
+          "number": "183",
+          "text": "다음 글의 제목으로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The Benefits of Personalized Online Content",
+            "How Algorithms Shape Our Digital World",
+            "Filter Bubbles: A Threat to Democratic Society",
+            "The Rise of Social Media and Information Sharing",
+            "Techniques for Escaping Intellectual Isolation"
+          ],
+          "answer": 3,
+          "explanation": "글은 필터 버블이 사용자를 다른 관점으로부터 고립시켜 양극화를 심화시키고, 이는 건강한 민주주의의 기반을 위협한다고 주장하므로 이 제목이 가장 적절합니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "filter",
@@ -2178,7 +3506,23 @@
       "title": "",
       "text": "A social enterprise is a unique type of organization that blends the commercial strategies of a business with a mission for social, ethical, or environmental change. Unlike traditional charities that rely primarily on donations, social enterprises aim to be financially self-sustaining by generating revenue from selling goods or services. However, their primary purpose is not to maximize profits for shareholders, but to reinvest their earnings back into their social or environmental objectives. For example, a coffee shop might employ individuals facing barriers to employment, or a clothing brand might use its profits to fund clean water projects in developing countries. This dual objective of achieving both financial viability and positive social impact distinguishes social enterprises as an innovative model for addressing some of society's most pressing problems.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q184",
+          "number": "184",
+          "text": "다음 글의 목적으로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "To criticize the limitations of traditional charities",
+            "To promote a new government-funded social program",
+            "To explain the concept and function of social enterprises",
+            "To provide a guide for starting a successful business",
+            "To analyze the financial performance of non-profit organizations"
+          ],
+          "answer": 3,
+          "explanation": "글의 목적은 상업적 전략과 사회적 사명을 결합하여 재정적 자립과 사회적 영향력이라는 이중 목표를 추구하는 '사회적 기업'의 개념과 기능을 설명하는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "blends",
@@ -2204,7 +3548,23 @@
       "title": "",
       "text": "The Cold War, a prolonged period of geopolitical tension between the United States and the Soviet Union, was fundamentally an ideological conflict. It pitted the capitalist, democratic West against the communist, totalitarian East. While direct large-scale fighting between the two superpowers was avoided, the struggle manifested in proxy wars, an arms race, and intense propaganda campaigns across the globe. This historical period, which ended with the dissolution of the Soviet Union in 1991, offers more than just a history lesson. It serves as a stark reminder of the dangers of ideological rigidity and the division of the world into opposing blocs. The legacy of the Cold War continues to shape contemporary international relations, from lingering regional conflicts to the challenges of nuclear proliferation. Understanding this era is crucial for navigating today's complex world, reminding us that dialogue and diplomacy are far superior to confrontation.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q185",
+          "number": "185",
+          "text": "다음 글의 필자가 주장하는 바로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The Cold War was primarily a military, not an ideological, conflict.",
+            "The dissolution of the Soviet Union has resolved all major global conflicts.",
+            "The history of the Cold War provides critical lessons for contemporary international politics.",
+            "The United States was solely responsible for initiating the Cold War.",
+            "Proxy wars are an ineffective way to conduct foreign policy."
+          ],
+          "answer": 3,
+          "explanation": "필자는 냉전의 역사가 단순한 과거사가 아니라, 이데올로기적 경직성의 위험을 상기시키며 현대 국제 정치를 이해하는 데 중요한 교훈을 제공한다고 주장합니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "geopolitical",
@@ -2230,7 +3590,23 @@
       "title": "",
       "text": "The rise of \"slow fashion\" offers a conscious alternative to the dominant \"fast fashion\" industry. Fast fashion is characterized by the rapid production of inexpensive, trendy clothing, which encourages a culture of disposability. This model has severe environmental and ethical consequences, including massive textile waste, water pollution from dyes, and poor labor conditions in garment factories. In response, the slow fashion movement advocates for a more sustainable and mindful approach to clothing. It emphasizes quality over quantity, timeless designs over fleeting trends, and ethical production processes. Consumers are encouraged to buy fewer items of higher quality, repair clothes instead of discarding them, and support local artisans and brands that are transparent about their supply chains. Ultimately, slow fashion is not just about clothes; it's a philosophy that promotes respect for the environment, the producers, and the consumer.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q186",
+          "number": "186",
+          "text": "다음 글의 주제로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The economic benefits of the fast fashion industry",
+            "A comparison of modern and traditional clothing design",
+            "The growing popularity of vintage clothing among young people",
+            "The principles and goals of the slow fashion movement",
+            "The impact of textile waste on global pollution"
+          ],
+          "answer": 4,
+          "explanation": "글의 주제는 패스트 패션의 대안으로 등장한 '슬로우 패션' 운동의 핵심 원칙(질, 지속성, 윤리성)과 목표(의식적인 소비)를 설명하는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "disposability",
@@ -2256,7 +3632,23 @@
       "title": "",
       "text": "In our hyper-connected world, the pressure to be constantly available and responsive can be overwhelming. The endless stream of notifications, emails, and social media updates contributes to mental fatigue, anxiety, and a decreased ability to focus. A \"digital detox\" is a conscious decision to step away from this digital noise for a period of time. It involves intentionally refraining from using electronic devices like smartphones and computers to reconnect with the world offline. The goal is not to abandon technology forever, but to reset one's relationship with it. By taking a break, individuals can reduce stress, improve sleep quality, enhance their concentration, and foster more meaningful in-person interactions. A digital detox serves as a powerful tool for reclaiming one's time and mental space, ultimately promoting greater overall well-being.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q187",
+          "number": "187",
+          "text": "다음 글의 목적으로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "To advertise a new application for managing notifications",
+            "To argue for the permanent abandonment of technology",
+            "To explain the benefits of taking a break from digital devices",
+            "To analyze the psychological effects of social media use",
+            "To provide a history of communication technology"
+          ],
+          "answer": 3,
+          "explanation": "글의 목적은 '디지털 디톡스'의 개념을 소개하고, 스트레스 감소, 집중력 향상 등 디지털 기기로부터 잠시 벗어나는 것이 가져다주는 이점을 설명하는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "hyper-connected",
@@ -2282,7 +3674,23 @@
       "title": "",
       "text": "Gentrification is a complex urban process that transforms neighborhoods, often with mixed results. It typically begins when more affluent individuals or developers invest in a lower-income urban area, attracted by its character and affordable property. This influx of investment leads to the renovation of buildings, the opening of new businesses like cafes and boutiques, and overall improvements in infrastructure. On the surface, this revitalization can seem entirely positive, reducing crime rates and increasing property values. However, this same process has a significant downside. As property values and rents rise, the original, less affluent residents are often priced out of their own community, leading to their displacement. This can disrupt long-standing social networks and erase the cultural identity of the neighborhood that initially made it attractive. Thus, gentrification remains a contentious issue, sparking debate about urban development, social equity, and the very soul of a city.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q188",
+          "number": "188",
+          "text": "다음 글의 제목으로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The History of Urban Planning in America",
+            "Gentrification: A Double-Edged Sword of Urban Change",
+            "How to Increase Property Values in Your Neighborhood",
+            "The Decline of Cultural Identity in Modern Cities",
+            "The Positive Impacts of Real Estate Investment"
+          ],
+          "answer": 2,
+          "explanation": "글은 젠트리피케이션이 도시 활성화라는 긍정적 측면과 원주민 축출이라는 부정적 측면을 모두 가진 '양날의 검'과 같음을 보여주므로 이 제목이 가장 적절합니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "affluent",
@@ -2308,7 +3716,23 @@
       "title": "",
       "text": "The Sapir-Whorf hypothesis, a key concept in linguistics, proposes a fascinating link between language and thought. In its stronger form, it suggests that the language we speak determines the way we perceive and understand the world. A weaker, more widely accepted version posits that language influences, rather than determines, our thought processes and worldview. For example, a language that has multiple distinct words for different types of snow might lead its speakers to perceive and categorize snow with more nuance than speakers of a language with only one word for it. Similarly, the grammatical structures of a language, such as how it marks time or gender, can shape how its speakers think about these concepts. While the extent of this influence is still debated among scholars, the hypothesis compellingly argues that language is not merely a tool for expressing pre-existing thoughts, but a framework that actively shapes them.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q189",
+          "number": "189",
+          "text": "다음 글의 요지로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "All languages share a universal grammatical structure.",
+            "Language is a reflection of culture, not a shaper of it.",
+            "The language one speaks can influence one's perception of reality.",
+            "Learning a new language is the best way to improve cognitive skills.",
+            "The number of words in a language determines its complexity."
+          ],
+          "answer": 3,
+          "explanation": "글의 요지는 사피어-워프 가설에 따르면, 우리가 사용하는 언어가 현실을 인식하는 방식에 영향을 미칠 수 있다는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "posits",
@@ -2334,7 +3758,23 @@
       "title": "",
       "text": "In international relations, power is often categorized into two forms: \"hard power\" and \"soft power.\" Hard power is the ability to influence others through coercion, typically using military force or economic sanctions. It is a command-and-control approach based on threats and inducements. In contrast, soft power, a term coined by political scientist Joseph Nye, is the ability to attract and persuade others to want what you want. It arises from the attractiveness of a country's culture, political ideals, and policies. For instance, a country can wield soft power through its popular films and music, its commitment to democracy and human rights, or its foreign aid programs. While hard power forces compliance, soft power co-opts others, making them willing partners. In today's interconnected world, where traditional force is often costly and counterproductive, the effective use of soft power is increasingly seen as a crucial component of a successful foreign policy.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q190",
+          "number": "190",
+          "text": "다음 글의 주제로 가장 적절한 것은?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The superiority of military force in foreign policy",
+            "The concept and importance of soft power",
+            "The economic consequences of using hard power",
+            "The life and work of political scientist Joseph Nye",
+            "The role of culture in international trade"
+          ],
+          "answer": 2,
+          "explanation": "글의 주제는 강제력을 사용하는 '하드 파워'와 대조하여, 매력을 통해 설득하는 '소프트 파워'의 개념을 정의하고 현대 사회에서의 그 중요성을 설명하는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "coercion",
@@ -2360,7 +3800,23 @@
       "title": "",
       "text": "The philosophy of Stoicism, founded in ancient Athens, offers a timeless guide to navigating life's challenges. Its central tenet is the distinction between what we can control and what we cannot. External events—such as other people's opinions, our health, or our wealth—are ultimately beyond our direct control. In contrast, our own thoughts, judgments, and responses are entirely within our power. The Stoics taught that true tranquility, or *apatheia*, is achieved by focusing our energy solely on what we can control: our inner world. By accepting external events with equanimity and mastering our internal responses, we can maintain a state of inner peace regardless of our circumstances. This is not a philosophy of passive resignation, but one of active, internal empowerment.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q191",
+          "number": "191",
+          "text": "What is the main idea of the passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Stoicism teaches that wealth and health are the most important goals in life.",
+            "The core principle of Stoicism is achieving inner peace by controlling one's own judgments.",
+            "Stoicism is a pessimistic philosophy that encourages giving up on one's goals.",
+            "The primary goal of a Stoic is to control external events and other people.",
+            "Stoicism was a short-lived philosophy with little modern relevance."
+          ],
+          "answer": 2,
+          "explanation": "글의 요지는 스토아 철학의 핵심이 우리가 통제할 수 없는 외부 사건이 아닌, 통제할 수 있는 우리 자신의 판단과 반응에 집중함으로써 내면의 평화를 얻는 것이라는 점입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "tenet",
@@ -2386,7 +3842,23 @@
       "title": "",
       "text": "The \"tragedy of the commons\" is an economic theory that describes how individuals acting in their own rational self-interest can ultimately deplete a shared, limited resource, even when it is clear that doing so is not in anyone's long-term interest. The classic example involves a common pasture shared by multiple herders. Each herder is incentivized to add more of their own cattle to the pasture, as they receive the full benefit from their own animals, while the cost of overgrazing is distributed among all users. This logic leads every herder to maximize their herd, which inevitably results in the destruction of the pasture, harming everyone. This concept serves as a powerful metaphor for a wide range of modern environmental problems, such as overfishing, deforestation, and air pollution, where individual gain leads to collective ruin.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q192",
+          "number": "192",
+          "text": "What is the central theme of the passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The benefits of privatizing all shared resources",
+            "A theory explaining how individual self-interest can lead to collective resource destruction",
+            "The history of cattle herding in medieval Europe",
+            "The most effective government regulations for environmental protection",
+            "The importance of cooperation in achieving personal success"
+          ],
+          "answer": 2,
+          "explanation": "글의 중심 주제는 '공유지의 비극'이라는 이론으로, 개인의 합리적인 이기심 추구가 어떻게 집단적인 자원 파괴로 이어지는지를 설명하는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "tragedy",
@@ -2412,7 +3884,23 @@
       "title": "",
       "text": "The concept of a \"growth mindset,\" as developed by psychologist Carol Dweck, has had a profound impact on education. It contrasts with a \"fixed mindset.\" Individuals with a fixed mindset believe their intelligence and abilities are static, unchangeable traits. This leads them to avoid challenges and view failure as a definitive statement of their limitations. In contrast, those with a growth mindset believe that their abilities can be developed through dedication and hard work. They embrace challenges as opportunities to learn and see failure not as a sign of unintelligence but as a springboard for growth. Dweck's research shows that fostering a growth mindset in students can lead to greater motivation, resilience, and ultimately, higher achievement. The key is to praise effort and strategy rather than innate talent.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q193",
+          "number": "193",
+          "text": "What is the main idea of the passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Intelligence is a fixed trait that cannot be changed.",
+            "Praising children for their talent is the best way to build confidence.",
+            "A growth mindset, which sees ability as developable, fosters learning and resilience.",
+            "Failure should be avoided at all costs in an educational setting.",
+            "The concept of mindset is too theoretical to be applied in real classrooms."
+          ],
+          "answer": 3,
+          "explanation": "글의 요지는 능력이 고정되어 있다고 믿는 '고정형 사고방식'과 달리, 노력을 통해 능력이 개발될 수 있다고 믿는 '성장형 사고방식'이 학습과 회복탄력성을 증진시킨다는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "profound",
@@ -2438,7 +3926,23 @@
       "title": "",
       "text": "The \"uncanny valley\" is a hypothesis in the field of aesthetics and robotics. The concept suggests that as a robot or animation becomes more human-like in its appearance and motion, our emotional response becomes increasingly positive and empathetic. However, there is a point at which the resemblance becomes very close, but not quite perfect. At this point, our positive emotional response abruptly turns into a strong feeling of revulsion or strangeness. This dip in our affinity is the \"uncanny valley.\" Examples include androids with subtly unnatural movements or computer-generated characters with realistic skin but lifeless eyes. The theory posits that once the resemblance becomes virtually indistinguishable from a healthy human, our emotional response becomes positive once again. This phenomenon presents a significant challenge for designers of robots and animated characters.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q194",
+          "number": "194",
+          "text": "What is the primary purpose of the passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "To promote the use of robots in everyday life",
+            "To explain a theory about human emotional response to human-like figures",
+            "To criticize the design of modern animated characters",
+            "To discuss the technical challenges of building advanced androids",
+            "To argue that humans instinctively fear all forms of technology"
+          ],
+          "answer": 2,
+          "explanation": "글의 주된 목적은 로봇이나 애니메이션이 인간과 매우 흡사하지만 완벽하지 않을 때 사람들이 혐오감을 느끼는 '불쾌한 골짜기' 이론을 설명하는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "uncanny",
@@ -2464,7 +3968,23 @@
       "title": "",
       "text": "The \"observer effect\" in physics, particularly in quantum mechanics, is a principle that challenges our classical understanding of reality. It states that the mere act of observing or measuring a phenomenon inevitably changes that phenomenon. For example, to measure the position of an electron, one must interact with it, perhaps by bouncing a photon of light off it. This interaction necessarily imparts energy to the electron, altering its momentum and thus its future position. It is impossible to know both the exact position and the exact momentum of a particle simultaneously—a concept known as the Heisenberg Uncertainty Principle. This is not a limitation of our measurement tools; it is a fundamental property of the universe. The observer is not a passive bystander but an active participant in the reality being observed.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q195",
+          "number": "195",
+          "text": "What is the main idea of the passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "Scientists need more advanced tools to measure particles accurately.",
+            "The act of observation is a fundamental part of the reality it measures.",
+            "The Heisenberg Uncertainty Principle has been proven incorrect.",
+            "Quantum mechanics is too complex for anyone to truly understand.",
+            "The observer effect only applies to subatomic particles and has no broader implications."
+          ],
+          "answer": 2,
+          "explanation": "글의 요지는 양자역학의 '관찰자 효과'에 따라, 현상을 관찰하는 행위 자체가 그 현상을 변화시키는, 현실을 구성하는 근본적인 일부라는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "inevitably",
@@ -2490,7 +4010,23 @@
       "title": "",
       "text": "The concept of \"nudge theory,\" popularized by Richard Thaler and Cass Sunstein, has become influential in public policy and behavioral economics. A \"nudge\" is any aspect of the choice architecture that alters people's behavior in a predictable way without forbidding any options or significantly changing their economic incentives. For instance, placing healthy food options at eye level in a cafeteria is a nudge; it doesn't ban junk food, but it makes the healthier choice easier and more likely. Similarly, automatically enrolling employees in a retirement savings plan, while allowing them to opt out, dramatically increases participation rates. The core idea is that by understanding human cognitive biases, we can design environments that gently steer people toward better decisions for themselves and society, a philosophy known as \"libertarian paternalism.\"",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q196",
+          "number": "196",
+          "text": "What is the primary purpose of the passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "To criticize the manipulation of consumer choices",
+            "To compare different theories of behavioral economics",
+            "To explain the concept and application of nudge theory",
+            "To advocate for stricter government regulation of personal choices",
+            "To provide a guide for making better financial decisions"
+          ],
+          "answer": 3,
+          "explanation": "글의 주된 목적은 선택의 자유를 제한하지 않으면서도 환경 설계를 통해 사람들의 행동을 긍정적인 방향으로 유도하는 '넛지 이론'의 개념과 적용 사례를 설명하는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "nudge",
@@ -2516,7 +4052,23 @@
       "title": "",
       "text": "The \"Great Man\" theory of history, popular in the 19th century, posits that history can be largely explained by the impact of great men, or heroes: highly influential and unique individuals who, due to their natural attributes such as charisma, intelligence, or political skill, used their power in a way that had a decisive historical impact. This perspective suggests that figures like Napoleon, Caesar, or Churchill single-handedly shaped the course of events. However, this view has been largely discredited by modern historians. They argue that it oversimplifies history by ignoring the profound influence of broader social, economic, and technological forces. A leader, no matter how great, is a product of their time and operates within the constraints and opportunities presented by their society. Thus, a more comprehensive view sees history as a complex interplay between individual agency and larger structural forces.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q197",
+          "number": "197",
+          "text": "What is the main idea of the passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "History is primarily shaped by the actions of influential individuals.",
+            "Modern historical analysis rejects the \"Great Man\" theory in favor of a more complex view.",
+            "Napoleon and Caesar are the two most important figures in world history.",
+            "Social and economic forces have no real impact on the course of history.",
+            "The \"Great Man\" theory is the most accurate way to understand historical events."
+          ],
+          "answer": 2,
+          "explanation": "글의 요지는 역사가 위대한 개인에 의해서만 결정된다는 '위인론'을 비판하며, 현대 역사학은 개인의 역할과 더 넓은 사회적 힘의 상호작용을 고려하는 복합적인 관점을 선호한다는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "posits",
@@ -2542,7 +4094,23 @@
       "title": "",
       "text": "The concept of \"emotional intelligence\" (EQ) has gained significant recognition as a key determinant of success in life, often considered as important as traditional intelligence (IQ). EQ refers to the ability to perceive, control, and evaluate emotions—both in oneself and in others. It encompasses four main attributes: self-awareness, self-management, social awareness, and relationship management. An individual with high EQ can recognize their own emotional state and its effect on others (self-awareness), control impulsive feelings and behaviors (self-management), understand the emotions and needs of others (social awareness), and effectively manage interactions to build strong relationships (relationship management). Unlike IQ, which is believed to be relatively stable throughout life, emotional intelligence can be learned and developed, making it a crucial skill for personal and professional growth.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q198",
+          "number": "198",
+          "text": "What is the primary purpose of the passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "To argue that IQ is more important than EQ for success",
+            "To provide a historical overview of intelligence testing",
+            "To define emotional intelligence and explain its key components",
+            "To criticize the modern emphasis on emotional expression",
+            "To offer a step-by-step guide to improving one's EQ"
+          ],
+          "answer": 3,
+          "explanation": "글의 주된 목적은 '감성 지능(EQ)'을 정의하고, 그것이 자기인식, 자기관리, 사회적인식, 관계관리라는 네 가지 핵심 요소로 구성되어 있음을 설명하는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "determinant",
@@ -2568,7 +4136,23 @@
       "title": "",
       "text": "The \"bystander effect\" is a social psychological phenomenon where individuals are less likely to offer help to a victim when other people are present. The greater the number of bystanders, the less likely it is that any one of them will help. This counterintuitive effect is believed to be caused by two main factors. The first is \"diffusion of responsibility,\" where each bystander's sense of responsibility to act is diluted by the presence of others. They assume someone else will intervene. The second factor is \"social influence\"; individuals monitor the reactions of others to gauge how they should act. If no one else is reacting with alarm, people may interpret the situation as a non-emergency. This phenomenon highlights the powerful, and sometimes negative, influence of group dynamics on individual moral behavior.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q199",
+          "number": "199",
+          "text": "What is the main topic of the passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "The importance of helping others in an emergency",
+            "A psychological theory explaining why people fail to help in groups",
+            "The legal consequences of failing to intervene in a crisis",
+            "A comparison of individual and group moral standards",
+            "Techniques for effective emergency response"
+          ],
+          "answer": 2,
+          "explanation": "글의 주제는 '방관자 효과'라는 사회심리학적 이론으로, 집단 속에서 사람들이 왜 위기에 처한 사람을 돕지 않게 되는지를 책임의 분산과 사회적 영향이라는 요인을 통해 설명하는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "bystander",
@@ -2594,7 +4178,23 @@
       "title": "",
       "text": "The concept of a \"circular economy\" offers a powerful alternative to the traditional linear economic model of \"take, make, dispose.\" In a linear economy, resources are extracted, manufactured into products, and then discarded as waste, leading to resource depletion and pollution. The circular economy, in contrast, is restorative and regenerative by design. Its core principles are to design out waste and pollution, keep products and materials in use for as long as possible, and regenerate natural systems. This involves shifting business models toward leasing, repairing, reusing, and recycling. For example, a company might lease a washing machine to a customer and be responsible for its maintenance and eventual take-back, ensuring that its components are reused or recycled. This approach aims to decouple economic growth from the consumption of finite resources, creating a more sustainable and resilient economic system.",
       "part": "2",
-      "questions": [],
+      "questions": [
+        {
+          "id": "reading-bridge-q200",
+          "number": "200",
+          "text": "What is the primary purpose of the passage?",
+          "type": "reading-comprehension",
+          "choices": [
+            "To criticize the high cost of recycling programs",
+            "To explain the principles and goals of the circular economy",
+            "To promote increased consumption to boost economic growth",
+            "To analyze the history of industrial manufacturing",
+            "To provide a guide for investing in sustainable companies"
+          ],
+          "answer": 2,
+          "explanation": "글의 주된 목적은 전통적인 선형 경제의 대안으로, 폐기물을 최소화하고 자원을 계속 사용하며 자연 시스템을 재생시키는 '순환 경제'의 원리와 목표를 설명하는 것입니다."
+        }
+      ],
       "vocabulary": [
         {
           "word": "linear",

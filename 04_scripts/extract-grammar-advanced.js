@@ -14,9 +14,9 @@ const ROOT = path.resolve(__dirname, '..');
 const SOURCE = path.join(ROOT, '02_textbooks', 'source', '[편입영어]문법_advanced.html');
 const DATA_DIR = path.join(ROOT, '02_textbooks', 'data', 'grammar', 'advanced');
 const CONTENT_DIR = path.join(ROOT, '02_textbooks', 'content', 'grammar', 'advanced');
-const BOOKS_DIR = path.join(ROOT, '02_textbooks', 'books');
+const LEGACY_BOOKS_DIR = path.join(ROOT, '02_textbooks', 'books_legacy');
 
-[DATA_DIR, CONTENT_DIR, BOOKS_DIR].forEach(d => fs.mkdirSync(d, { recursive: true }));
+[DATA_DIR, CONTENT_DIR, LEGACY_BOOKS_DIR].forEach(d => fs.mkdirSync(d, { recursive: true }));
 
 const CIRCLED = { '①': 1, '②': 2, '③': 3, '④': 4, '⑤': 5 };
 const LETTER_TO_NUM = { 'A': 1, 'B': 2, 'C': 3, 'D': 4, 'E': 5 };
@@ -250,7 +250,7 @@ for (const [chNum, pages] of Object.entries(chapterContent)) {
 console.log(`  💾 Content HTML files written`);
 
 // YAML manifest — skip if already exists (manually curated manifests take precedence)
-const manifestPath = path.join(BOOKS_DIR, 'grammar-advanced.yaml');
+const manifestPath = path.join(LEGACY_BOOKS_DIR, 'grammar-advanced.yaml');
 if (fs.existsSync(manifestPath)) {
   console.log(`  ⏭️  Manifest already exists, skipping (data-only extraction)`);
   console.log(`     To regenerate manifest, delete ${manifestPath} first`);
@@ -282,6 +282,6 @@ pages:
 ${yamlPages.join('\n')}
 `;
   fs.writeFileSync(manifestPath, yaml, 'utf8');
-  console.log(`  💾 Manifest written (first-time generation)`);
+  console.log(`  💾 Legacy manifest written (first-time generation)`);
 }
 console.log('  ✅ Done: 문법 Advanced');

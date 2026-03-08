@@ -1,0 +1,357 @@
+{
+  "bookId": "grammar-basic",
+  "chapter": "practice01",
+  "title": "Practice 1: 분사 연습문제",
+  "problems": [
+    {
+      "id": "grammar-basic-practice01-001",
+      "number": 1,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "People become less discouraging when they realize that they themselves can help making a better future.",
+      "choices": [],
+      "answer": "discouraging → discouraged",
+      "explanation": "주어 'People'은 감정을 느끼는 대상이므로 현재분사(discouraging, ~을 낙담시키는)가 아닌 과거분사 'discouraged(낙담한)'를 써야 합니다. 감정 분사에서 사람이 주어일 때는 과거분사(-ed), 사물·원인이 주어일 때는 현재분사(-ing)를 사용합니다."
+    },
+    {
+      "id": "grammar-basic-practice01-002",
+      "number": 2,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "The students became so interested in rain forests where they decided to get a closer look at a real rain forest.",
+      "choices": [],
+      "answer": "where → that",
+      "explanation": "'so ~ that ...' 구문으로 '너무 ~해서 ...하다'의 의미를 나타내야 합니다. 'where'는 장소를 나타내는 관계부사이므로 여기서는 문맥상 적절하지 않으며, 결과를 나타내는 접속사 'that'이 와야 합니다."
+    },
+    {
+      "id": "grammar-basic-practice01-003",
+      "number": 3,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "Most wedding customs are observed in the U.S. today began in other countries and past centuries.",
+      "choices": [],
+      "answer": "are observed → observed",
+      "explanation": "'observed in the U.S. today'는 주어 'Most wedding customs'를 수식하는 과거분사구입니다. 본동사는 'began'이므로, 'are observed'라고 쓰면 동사가 두 개가 되어 문장 구조가 깨집니다. 수동의 의미를 가진 과거분사 'observed'만 써서 후치 수식해야 합니다."
+    },
+    {
+      "id": "grammar-basic-practice01-004",
+      "number": 4,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "Roosevelt served four terms and after his death during his last term in office, a law restricted the number of terms a president could serve was passed.",
+      "choices": [],
+      "answer": "restricted → restricting",
+      "explanation": "'a law'가 주어이고 'was passed'가 본동사인 문장에서, 'restricted'를 쓰면 동사가 중복됩니다. 'a law'를 수식하면서 '제한하는'이라는 능동의 의미를 나타내려면 현재분사 'restricting'을 써야 합니다. 법률이 대통령 임기 횟수를 능동적으로 제한하는 것이므로 현재분사가 적절합니다."
+    },
+    {
+      "id": "grammar-basic-practice01-005",
+      "number": 5,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "Barney told Fred that he was going to Nick's Garage to get his tank filled up with gas.",
+      "choices": [],
+      "answer": "오류 없음 — 정답 문장",
+      "explanation": "이 문장은 문법적으로 올바릅니다. 'get + 목적어 + 과거분사(filled)' 구문은 사역의 의미로 '탱크를 가스로 채우게 하다'를 올바르게 표현합니다. 오류가 없는 정답 문장(함정 문제)입니다."
+    },
+    {
+      "id": "grammar-basic-practice01-006",
+      "number": 6,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "Some vitamins are harmful if taking above their levels, but others are not.",
+      "choices": [],
+      "answer": "taking → taken",
+      "explanation": "비타민은 '섭취되는' 대상이므로 수동의 의미를 가진 과거분사 'taken'을 써야 합니다. 'if taken above their levels'는 'if they are taken above their levels'의 분사구문으로, 주어(vitamins)가 동작을 받는 수동 관계이므로 과거분사가 적절합니다."
+    },
+    {
+      "id": "grammar-basic-practice01-007",
+      "number": 7,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "The program can be very frustrated to people who want to speak to an actual person immediate.",
+      "choices": [],
+      "answer": "frustrated → frustrating",
+      "explanation": "주어 'The program'은 사물로서 감정을 유발하는 원인입니다. 따라서 '좌절감을 주는'이라는 능동의 의미를 가진 현재분사 'frustrating'을 써야 합니다. 과거분사 'frustrated'는 감정을 느끼는 사람에게 쓰는 표현입니다. (참고: 'immediate → immediately'도 부사 오류이지만 분사 오류가 핵심입니다.)"
+    },
+    {
+      "id": "grammar-basic-practice01-008",
+      "number": 8,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "There is an underwater pyramid located off the coast of the island of Yonaguni, Japan that remains a mystery.",
+      "choices": [],
+      "answer": "오류 없음 — 정답 문장",
+      "explanation": "이 문장은 문법적으로 올바릅니다. 'located off the coast'는 과거분사구로 'pyramid'를 수식하고, 'that remains a mystery'는 관계대명사절로 'pyramid'를 수식합니다. 모든 구조가 적절하므로 오류가 없는 정답 문장(함정 문제)입니다."
+    },
+    {
+      "id": "grammar-basic-practice01-009",
+      "number": 9,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "Thousands of pieces of shiny metal were surrounded this unusual formation.",
+      "choices": [],
+      "answer": "were surrounded → surrounded",
+      "explanation": "'Thousands of pieces of shiny metal'이 주어이고 'this unusual formation'이 목적어인 능동 구문입니다. 'surrounded'를 본동사(과거형)로 써서 '수천 조각의 반짝이는 금속이 이 특이한 구조물을 둘러싸고 있었다'로 표현해야 합니다. 'were surrounded'는 수동태인데, 뒤에 목적어가 바로 올 수 없습니다."
+    },
+    {
+      "id": "grammar-basic-practice01-010",
+      "number": 10,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "While teaching at Princeton University, he once decided not to wear socks when he went to lectures, as shown in pictures still keeping at the school.",
+      "choices": [],
+      "answer": "keeping → kept",
+      "explanation": "사진(pictures)은 '보관되는' 대상이므로 수동의 의미를 가진 과거분사 'kept'을 써야 합니다. 현재분사 'keeping'은 능동의 의미('보관하는')인데, 사진이 스스로 보관할 수 없으므로 의미상 맞지 않습니다."
+    },
+    {
+      "id": "grammar-basic-practice01-011",
+      "number": 11,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "A more interested concept is to think about what would really happen if ordinary people possess ESP.",
+      "choices": [],
+      "answer": "interested → interesting",
+      "explanation": "주어 'concept(개념)'은 사물이므로 감정을 유발하는 현재분사 'interesting(흥미로운)'을 써야 합니다. 과거분사 'interested(흥미를 느끼는)'는 감정을 느끼는 사람에게 쓰는 표현입니다. 감정 분사에서 사물 주어 → -ing, 사람 주어 → -ed가 원칙입니다."
+    },
+    {
+      "id": "grammar-basic-practice01-012",
+      "number": 12,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "A ballot is a piece of paper listing the candidates for president. The votes are counted and the person who gets the most votes become the new class president.",
+      "choices": [],
+      "answer": "become → becomes",
+      "explanation": "주어는 'the person'으로 3인칭 단수이므로 동사도 단수형 'becomes'를 써야 합니다. 관계대명사절 'who gets the most votes'는 삽입절이므로 주어-동사 수일치에 영향을 주지 않습니다. (참고: 'listing'은 현재분사로 'paper'를 올바르게 수식하고 있습니다.)"
+    },
+    {
+      "id": "grammar-basic-practice01-013",
+      "number": 13,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "When a salmon finds the exact streams in which it was born with highly developed sense of smell, it lay eggs in the streams.",
+      "choices": [],
+      "answer": "lay → lays",
+      "explanation": "주어 'it(a salmon)'은 3인칭 단수이고 현재 시제 문맥이므로 동사 'lay(알을 낳다)'의 3인칭 단수 현재형 'lays'를 써야 합니다. 'lay'는 'lie(눕다)'의 과거형이기도 하므로 혼동하기 쉽지만, 여기서는 '알을 낳다(lay-laid-laid)'의 현재형이 필요합니다."
+    },
+    {
+      "id": "grammar-basic-practice01-014",
+      "number": 14,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "Many large cities have very tall buildings calling skyscrapers.",
+      "choices": [],
+      "answer": "calling → called",
+      "explanation": "건물(buildings)은 '불리는' 대상이므로 수동의 의미를 가진 과거분사 'called(~라고 불리는)'를 써야 합니다. 현재분사 'calling(~라고 부르는)'은 능동의 의미인데, 건물이 스스로 자신을 부를 수 없으므로 의미가 맞지 않습니다."
+    },
+    {
+      "id": "grammar-basic-practice01-015",
+      "number": 15,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "Although 79.5% of the South African population is black, the people are from various ethnic groups spoken different Bantu languages.",
+      "choices": [],
+      "answer": "spoken → speaking",
+      "explanation": "민족 집단(ethnic groups)이 다른 반투어를 '말하는' 것이므로 능동의 의미를 가진 현재분사 'speaking'을 써야 합니다. 과거분사 'spoken'은 수동의 의미('말해진')인데, 사람 집단이 언어를 능동적으로 사용하는 것이므로 현재분사가 적절합니다."
+    },
+    {
+      "id": "grammar-basic-practice01-016",
+      "number": 16,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "Because he had been particularly impressive and charming, I could feel my heart beat and my mouth go dry when my turn came.",
+      "choices": [],
+      "answer": "오류 없음 — 정답 문장",
+      "explanation": "이 문장은 문법적으로 올바릅니다. 'impressive'는 '인상적인, 감동을 주는'이라는 형용사로, 주어 'he'가 다른 사람에게 강한 인상을 주는 사람임을 설명합니다. 'charming(매력적인)'과 병렬로 연결되어 자연스럽습니다. 'feel + 목적어 + 동사원형(beat/go)'은 지각동사 구문으로 정확합니다."
+    },
+    {
+      "id": "grammar-basic-practice01-017",
+      "number": 17,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "The most valuable pearls are the round ones seeing in jewelry stores but some are uneven or flat in shape.",
+      "choices": [],
+      "answer": "seeing → seen",
+      "explanation": "진주(ones)는 보석 가게에서 '보이는(발견되는)' 대상이므로 수동의 의미를 가진 과거분사 'seen'을 써야 합니다. 현재분사 'seeing'은 능동의 의미('보는')인데, 진주가 스스로 볼 수 없으므로 과거분사로 수정해야 합니다."
+    },
+    {
+      "id": "grammar-basic-practice01-018",
+      "number": 18,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "Beverbrook had printed an insulted editorial a few days earlier.",
+      "choices": [],
+      "answer": "insulted → insulting",
+      "explanation": "사설(editorial)은 사물로서 '모욕적인 내용을 담고 있는' 것이므로 능동의 의미를 가진 현재분사 'insulting(모욕적인)'을 써야 합니다. 과거분사 'insulted(모욕당한)'는 감정을 느끼는 사람에게 쓰는 표현이며, 사설 자체가 모욕을 당할 수 없습니다."
+    },
+    {
+      "id": "grammar-basic-practice01-019",
+      "number": 19,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "He designs health service delivery methods for an organization making up of six hospitals, several thousand physicians, and almost a million potential patients.",
+      "choices": [],
+      "answer": "making → made",
+      "explanation": "'be made up of(~로 구성되다)'는 수동 표현입니다. 조직(organization)은 '구성되는' 대상이므로 과거분사 'made up of'를 써야 합니다. 현재분사 'making up of'는 능동의 의미로, 숙어 구조에도 맞지 않습니다."
+    },
+    {
+      "id": "grammar-basic-practice01-020",
+      "number": 20,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "So far, they have provided invaluable data on how human bodies react in crashes and have contributed greatly to improving vehicle design.",
+      "choices": [],
+      "answer": "오류 없음 — 정답 문장",
+      "explanation": "이 문장은 문법적으로 올바릅니다. 'have provided'와 'have contributed'는 현재완료 시제로 병렬 구조를 이루고, 'contribute to + -ing'는 올바른 표현이며, 'improving'은 전치사 to의 목적어인 동명사로 정확합니다."
+    },
+    {
+      "id": "grammar-basic-practice01-021",
+      "number": 21,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "Children copy the way how their parents walk. You can see this in families strolling down the street and it has obvious disadvantages if they pick up on their parents' bad habits.",
+      "choices": [],
+      "answer": "the way how → the way 또는 how",
+      "explanation": "'the way'와 'how'는 함께 쓸 수 없습니다. 'the way their parents walk' 또는 'how their parents walk'로 써야 합니다. 'the way how'는 관계부사의 이중 사용으로 문법적 오류입니다."
+    },
+    {
+      "id": "grammar-basic-practice01-022",
+      "number": 22,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "For Westerners, Asia is an object of curiosity, with filmmakers often turned to the Orient for inspiration.",
+      "choices": [],
+      "answer": "turned → turning",
+      "explanation": "'with + 목적어 + 분사' 구문에서, 영화제작자(filmmakers)가 동양으로 '눈을 돌리는' 능동 주체이므로 현재분사 'turning'을 써야 합니다. 과거분사 'turned'는 수동의 의미인데, filmmakers가 능동적으로 행동하는 것이므로 현재분사가 적절합니다."
+    },
+    {
+      "id": "grammar-basic-practice01-023",
+      "number": 23,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "One of the most important weapons using during the Second World War was not a weapon against people, but a drug against disease.",
+      "choices": [],
+      "answer": "using → used",
+      "explanation": "무기(weapons)는 전쟁 중에 '사용되는' 대상이므로 수동의 의미를 가진 과거분사 'used'를 써야 합니다. 현재분사 'using'은 능동의 의미('사용하는')인데, 무기가 스스로 자신을 사용할 수 없으므로 과거분사로 수정해야 합니다."
+    },
+    {
+      "id": "grammar-basic-practice01-024",
+      "number": 24,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "Seen his strong interest in this game of 22 men chasing after a ball, I decided to sit down and concentrate on the game.",
+      "choices": [],
+      "answer": "Seen → Seeing",
+      "explanation": "분사구문의 의미상 주어는 주절의 주어 'I'입니다. 'I'는 관심을 '보는' 능동 주체이므로 현재분사 'Seeing'을 써야 합니다. 과거분사 'Seen'은 수동의 의미('보여진')인데, 'I'가 능동적으로 보는 행위를 하는 것이므로 현재분사가 적절합니다."
+    },
+    {
+      "id": "grammar-basic-practice01-025",
+      "number": 25,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "If leaving untreated, your pet dog could even die.",
+      "choices": [],
+      "answer": "leaving → left",
+      "explanation": "주절의 주어 'your pet dog'는 치료를 '받지 않는(방치되는)' 대상이므로 수동의 의미를 가진 과거분사 'left'를 써야 합니다. 'If left untreated'는 'If it is left untreated'의 분사구문으로, 수동 관계이므로 과거분사가 적절합니다."
+    },
+    {
+      "id": "grammar-basic-practice01-026",
+      "number": 26,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "\"I'll give you my two pennies for that tomato,\" said the boy, pointed to a beautiful, large, ripe fruit hanging on the vine.",
+      "choices": [],
+      "answer": "pointed → pointing",
+      "explanation": "소년(the boy)이 토마토를 '가리키는' 능동 주체이므로 현재분사 'pointing'을 써야 합니다. 'said the boy, pointing to ~'는 동시 동작을 나타내는 분사구문으로, 소년이 능동적으로 가리키는 것이므로 현재분사가 적절합니다."
+    },
+    {
+      "id": "grammar-basic-practice01-027",
+      "number": 27,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "Giving a choice, most people would want to spend their lives doing things that they want.",
+      "choices": [],
+      "answer": "Giving → Given",
+      "explanation": "주절의 주어 'most people'은 선택권을 '주어지는(부여받는)' 대상이므로 수동의 의미를 가진 과거분사 'Given'을 써야 합니다. 'Given a choice'는 'If they are given a choice'의 분사구문으로, 수동 관계이므로 과거분사가 적절합니다."
+    },
+    {
+      "id": "grammar-basic-practice01-028",
+      "number": 28,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "Brainstorming is roughly defined as any group activity involved the pursuit of new ideas.",
+      "choices": [],
+      "answer": "involved → involving",
+      "explanation": "활동(activity)이 새로운 아이디어의 추구를 '포함하는' 능동 주체이므로 현재분사 'involving'을 써야 합니다. 과거분사 'involved'는 'be involved in'처럼 전치사 in과 함께 수동으로 쓰거나, 후치 수식 시에는 능동의 의미를 가진 현재분사 'involving'이 적절합니다."
+    },
+    {
+      "id": "grammar-basic-practice01-029",
+      "number": 29,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "However, no one knew why the food stayed fresh when treating that way.",
+      "choices": [],
+      "answer": "treating → treated",
+      "explanation": "음식(food)은 그런 방식으로 '처리되는' 대상이므로 수동의 의미를 가진 과거분사 'treated'를 써야 합니다. 'when treated that way'는 'when it was treated that way'의 분사구문으로, 수동 관계이므로 과거분사가 적절합니다."
+    },
+    {
+      "id": "grammar-basic-practice01-030",
+      "number": 30,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "When offering the right kind of support, they can potentially avoid to suffer from the common problems rooted in girls' low self-esteem.",
+      "choices": [],
+      "answer": "offering → offered",
+      "explanation": "주절의 주어 'they'는 올바른 지원을 '제공받는' 대상이므로 수동의 의미를 가진 과거분사 'offered'를 써야 합니다. 'When offered the right kind of support'는 'When they are offered the right kind of support'의 분사구문입니다. (참고: 'avoid to suffer → avoid suffering'도 오류이지만, 분사 오류가 핵심입니다.)"
+    },
+    {
+      "id": "grammar-basic-practice01-031",
+      "number": 31,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "Researchers found that the women were assigned to follow a low-fat diet did not have any additional protection against cancer or heart disease, and their weight was about the same as those following their usual diet.",
+      "choices": [],
+      "answer": "were assigned → assigned",
+      "explanation": "'assigned to follow a low-fat diet'는 'the women'을 수식하는 과거분사구입니다. 본동사는 'did not have'이므로, 'were assigned'라고 쓰면 동사가 두 개가 되어 문장 구조가 깨집니다. 수동의 의미를 가진 과거분사 'assigned'만 써서 후치 수식해야 합니다."
+    },
+    {
+      "id": "grammar-basic-practice01-032",
+      "number": 32,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "Keep the windows closed and use air conditioners when possible.",
+      "choices": [],
+      "answer": "오류 없음 — 정답 문장",
+      "explanation": "이 문장은 문법적으로 올바릅니다. 'keep + 목적어 + 과거분사(closed)'는 '목적어를 ~된 상태로 유지하다'의 올바른 5형식 구문이며, 'when possible'은 'when it is possible'의 축약으로 정확합니다."
+    },
+    {
+      "id": "grammar-basic-practice01-033",
+      "number": 33,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "You are sitting on an airplane in economy class and another passenger seating very close to you coughs and sneezes continually throughout the flight.",
+      "choices": [],
+      "answer": "seating → seated",
+      "explanation": "'another passenger seated very close to you'에서 과거분사 'seated'는 '앉아 있는'이라는 상태를 나타냅니다. 'seat'은 타동사로 '~를 앉히다'의 의미이므로, 사람이 앉아 있는 상태를 표현할 때는 수동의 과거분사 'seated'를 써야 합니다. 또는 'sitting'으로 써도 됩니다."
+    },
+    {
+      "id": "grammar-basic-practice01-034",
+      "number": 34,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "The editor at once sent the journalist a telegram instructing him to find out the exact number of steps and the height of the wall.",
+      "choices": [],
+      "answer": "오류 없음 — 정답 문장",
+      "explanation": "이 문장은 문법적으로 올바릅니다. 'instructing him to find out'은 현재분사구로 'a telegram'을 수식하며, 전보가 지시를 '담고 있는' 능동의 의미이므로 현재분사 사용이 적절합니다. 4형식 구문 'sent the journalist a telegram'도 올바릅니다."
+    },
+    {
+      "id": "grammar-basic-practice01-035",
+      "number": 35,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "Founded in large numbers in the Amazon River, these fish sometimes attack injured people and animals in the water.",
+      "choices": [],
+      "answer": "Founded → Found",
+      "explanation": "'found'는 'find(발견하다)'의 과거분사이고, 'founded'는 'found(설립하다)'의 과거분사입니다. 물고기는 아마존 강에서 '발견되는' 것이지 '설립되는' 것이 아니므로, 'find'의 과거분사 'Found'를 써야 합니다. find-found-found vs. found-founded-founded를 구별해야 합니다."
+    }
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vera://schemas/content-document-v2",
+  "title": "ContentDocumentV2",
+  "type": "object",
+  "required": ["version", "blocks"],
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "type": "integer",
+      "const": 2
+    },
+    "blocks": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/Block"
+      }
+    }
+  },
+  "$defs": {
+    "ListItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "html": { "type": "string" },
+        "text": { "type": "string" }
+      }
+    },
+    "TableCell": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "html": { "type": "string" },
+        "text": { "type": "string" },
+        "className": { "type": "string" }
+      }
+    },
+    "Block": {
+      "type": "object",
+      "required": ["type"],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": [
+            "chapter-title",
+            "section-title",
+            "subsection-title",
+            "paragraph",
+            "markdown",
+            "list",
+            "table",
+            "concept-box",
+            "tip-box",
+            "example-block",
+            "html"
+          ]
+        },
+        "number": { "type": "string" },
+        "title": { "type": "string" },
+        "subtitle": { "type": "string" },
+        "variant": { "type": "string" },
+        "className": { "type": "string" },
+        "lang": {
+          "type": "string",
+          "enum": ["ko", "en"]
+        },
+        "html": { "type": "string" },
+        "text": { "type": "string" },
+        "markdown": { "type": "string" },
+        "ordered": { "type": "boolean" },
+        "items": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ListItem"
+          }
+        },
+        "headers": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "rows": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/TableCell"
+            }
+          }
+        },
+        "caption": { "type": "string" },
+        "body": { "type": "string" },
+        "sentence": { "type": "string" },
+        "analysis": { "type": "string" }
+      }
+    }
+  }
+}

@@ -1,0 +1,31 @@
+# grammar-bridge-ch09 — 문법 Bridge 형용사와 부사
+book:
+  title: "문법 Bridge - 형용사와 부사"
+  author: "Vera's Flavor"
+  template: ocean-blue
+  series: grammar-bridge
+  part: 9
+
+pages:
+  - type: content
+    src: grammar/bridge/ch09-content-01.html
+  - type: content
+    src: grammar/bridge/ch09-content-02.html
+  - type: content
+    src: grammar/bridge/ch09-content-03.html
+  - type: content
+    src: grammar/bridge/ch09-content-04.html
+  - type: content
+    src: grammar/bridge/ch09-content-05.html
+  - type: content
+    src: grammar/bridge/ch09-content-06.html
+  - type: content
+    src: grammar/bridge/ch09-content-07.html
+  - type: problems
+    src: grammar/bridge/ch09-problems.json
+    layout: two-per-page
+  - type: answer-grid
+    src: grammar/bridge/ch09-problems.json
+  - type: explanations
+    src: grammar/bridge/ch09-problems.json
+    layout: compact

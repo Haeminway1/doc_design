@@ -1,56 +1,472 @@
-# logic-basic — 논리 Basic
+version: 2
 book:
-  title: "편입영어 논리 Basic 편"
-  author: "Vera's Flavor"
-  style: logic-basic
-  series: logic-basic
-
+  id: logic-basic
+  title: 편입영어 논리 Basic 편
+  shortTitle: 논리 Basic
+  author: Vera's Flavor
+  brand: Vera's Flavor
+  legacyStyle: logic-basic
+  subject: logic
+  level: basic
+  theme: logic-blue
 pages:
-  - type: structural
-    src: logic/basic/cover.html
-  - type: content
-    src: logic/basic/ch01-content-01.html
-  - type: content
-    src: logic/basic/ch01-content-02.html
-  - type: content
-    src: logic/basic/ch01-content-03.html
-  - type: content
-    src: logic/basic/ch01-content-04.html
-  - type: content
-    src: logic/basic/ch01-content-05.html
-  - type: problems
-    src: logic/basic/ch01-problems.json
-    layout: two-per-page
-  - type: problems
-    src: logic/basic/ch02-problems.json
-    layout: two-per-page
-  - type: content
-    src: logic/basic/ch03-content-01.html
-  - type: content
-    src: logic/basic/ch03-content-02.html
-  - type: content
-    src: logic/basic/ch03-content-03.html
-  - type: content
-    src: logic/basic/ch03-content-04.html
-  - type: content
-    src: logic/basic/ch03-content-05.html
-  - type: problems
-    src: logic/basic/ch03-problems.json
-    layout: two-per-page
-  - type: content
-    src: logic/basic/ch04-content-01.html
-  - type: problems
-    src: logic/basic/ch04-problems.json
-    layout: two-per-page
-  - type: content
-    src: logic/basic/ch05-content-01.html
-  - type: problems
-    src: logic/basic/ch05-problems.json
-    layout: two-per-page
-  - type: problems
-    src: logic/basic/ch06-problems.json
-    layout: two-per-page
-  - type: vocabulary
-    src: logic/basic/vocabulary.json
-  - type: answer-grid
-    src: logic/basic/ch01-problems.json
+  - kind: legacy-page
+    id: structural-1-cover
+    source:
+      path: logic/basic/cover.html
+  - kind: legacy-page
+    id: structural-2-toc
+    source:
+      path: logic/basic/toc.html
+  - kind: legacy-page
+    id: content-3-page-003
+    source:
+      path: logic/basic/page-003.html
+  - kind: legacy-page
+    id: content-4-page-004
+    source:
+      path: logic/basic/page-004.html
+  - kind: legacy-page
+    id: content-5-page-005
+    source:
+      path: logic/basic/page-005.html
+  - kind: legacy-page
+    id: content-6-page-006
+    source:
+      path: logic/basic/page-006.html
+  - kind: legacy-page
+    id: content-7-page-007
+    source:
+      path: logic/basic/page-007.html
+  - kind: legacy-page
+    id: content-8-page-008
+    source:
+      path: logic/basic/page-008.html
+  - kind: legacy-page
+    id: content-9-page-009
+    source:
+      path: logic/basic/page-009.html
+  - kind: legacy-page
+    id: content-10-page-010
+    source:
+      path: logic/basic/page-010.html
+  - kind: legacy-page
+    id: content-11-page-011
+    source:
+      path: logic/basic/page-011.html
+  - kind: legacy-page
+    id: content-12-page-012
+    source:
+      path: logic/basic/page-012.html
+  - kind: legacy-page
+    id: content-13-page-013
+    source:
+      path: logic/basic/page-013.html
+  - kind: legacy-page
+    id: content-14-page-014
+    source:
+      path: logic/basic/page-014.html
+  - kind: legacy-page
+    id: content-15-page-015
+    source:
+      path: logic/basic/page-015.html
+  - kind: legacy-page
+    id: content-16-page-016
+    source:
+      path: logic/basic/page-016.html
+  - kind: legacy-page
+    id: content-17-page-017
+    source:
+      path: logic/basic/page-017.html
+  - kind: legacy-page
+    id: content-18-page-018
+    source:
+      path: logic/basic/page-018.html
+  - kind: legacy-page
+    id: content-19-page-019
+    source:
+      path: logic/basic/page-019.html
+  - kind: legacy-page
+    id: content-20-page-020
+    source:
+      path: logic/basic/page-020.html
+  - kind: legacy-page
+    id: content-21-page-021
+    source:
+      path: logic/basic/page-021.html
+  - kind: legacy-page
+    id: content-22-page-022
+    source:
+      path: logic/basic/page-022.html
+  - kind: legacy-page
+    id: content-23-page-023
+    source:
+      path: logic/basic/page-023.html
+  - kind: legacy-page
+    id: content-24-page-024
+    source:
+      path: logic/basic/page-024.html
+  - kind: legacy-page
+    id: structural-25-toc-02
+    source:
+      path: logic/basic/toc-02.html
+  - kind: legacy-page
+    id: content-26-page-026
+    source:
+      path: logic/basic/page-026.html
+  - kind: legacy-page
+    id: content-27-page-027
+    source:
+      path: logic/basic/page-027.html
+  - kind: legacy-page
+    id: content-28-page-028
+    source:
+      path: logic/basic/page-028.html
+  - kind: legacy-page
+    id: content-29-page-029
+    source:
+      path: logic/basic/page-029.html
+  - kind: legacy-page
+    id: content-30-page-030
+    source:
+      path: logic/basic/page-030.html
+  - kind: legacy-page
+    id: content-31-page-031
+    source:
+      path: logic/basic/page-031.html
+  - kind: legacy-page
+    id: content-32-page-032
+    source:
+      path: logic/basic/page-032.html
+  - kind: legacy-page
+    id: content-33-page-033
+    source:
+      path: logic/basic/page-033.html
+  - kind: legacy-page
+    id: content-34-page-034
+    source:
+      path: logic/basic/page-034.html
+  - kind: legacy-page
+    id: content-35-page-035
+    source:
+      path: logic/basic/page-035.html
+  - kind: legacy-page
+    id: content-36-page-036
+    source:
+      path: logic/basic/page-036.html
+  - kind: legacy-page
+    id: content-37-page-037
+    source:
+      path: logic/basic/page-037.html
+  - kind: legacy-page
+    id: content-38-page-038
+    source:
+      path: logic/basic/page-038.html
+  - kind: legacy-page
+    id: content-39-page-039
+    source:
+      path: logic/basic/page-039.html
+  - kind: legacy-page
+    id: content-40-page-040
+    source:
+      path: logic/basic/page-040.html
+  - kind: legacy-page
+    id: content-41-page-041
+    source:
+      path: logic/basic/page-041.html
+  - kind: legacy-page
+    id: content-42-page-042
+    source:
+      path: logic/basic/page-042.html
+  - kind: legacy-page
+    id: content-43-page-043
+    source:
+      path: logic/basic/page-043.html
+  - kind: legacy-page
+    id: structural-44-toc-03
+    source:
+      path: logic/basic/toc-03.html
+  - kind: legacy-page
+    id: content-45-page-045
+    source:
+      path: logic/basic/page-045.html
+  - kind: legacy-page
+    id: content-46-page-046
+    source:
+      path: logic/basic/page-046.html
+  - kind: legacy-page
+    id: content-47-page-047
+    source:
+      path: logic/basic/page-047.html
+  - kind: legacy-page
+    id: content-48-page-048
+    source:
+      path: logic/basic/page-048.html
+  - kind: legacy-page
+    id: content-49-page-049
+    source:
+      path: logic/basic/page-049.html
+  - kind: legacy-page
+    id: content-50-page-050
+    source:
+      path: logic/basic/page-050.html
+  - kind: legacy-page
+    id: content-51-page-051
+    source:
+      path: logic/basic/page-051.html
+  - kind: legacy-page
+    id: content-52-page-052
+    source:
+      path: logic/basic/page-052.html
+  - kind: legacy-page
+    id: content-53-page-053
+    source:
+      path: logic/basic/page-053.html
+  - kind: legacy-page
+    id: content-54-page-054
+    source:
+      path: logic/basic/page-054.html
+  - kind: legacy-page
+    id: content-55-page-055
+    source:
+      path: logic/basic/page-055.html
+  - kind: legacy-page
+    id: content-56-page-056
+    source:
+      path: logic/basic/page-056.html
+  - kind: legacy-page
+    id: content-57-page-057
+    source:
+      path: logic/basic/page-057.html
+  - kind: legacy-page
+    id: content-58-page-058
+    source:
+      path: logic/basic/page-058.html
+  - kind: legacy-page
+    id: content-59-page-059
+    source:
+      path: logic/basic/page-059.html
+  - kind: legacy-page
+    id: content-60-page-060
+    source:
+      path: logic/basic/page-060.html
+  - kind: legacy-page
+    id: content-61-page-061
+    source:
+      path: logic/basic/page-061.html
+  - kind: legacy-page
+    id: structural-62-toc-04
+    source:
+      path: logic/basic/toc-04.html
+  - kind: legacy-page
+    id: content-63-page-063
+    source:
+      path: logic/basic/page-063.html
+  - kind: legacy-page
+    id: content-64-page-064
+    source:
+      path: logic/basic/page-064.html
+  - kind: legacy-page
+    id: content-65-page-065
+    source:
+      path: logic/basic/page-065.html
+  - kind: legacy-page
+    id: content-66-page-066
+    source:
+      path: logic/basic/page-066.html
+  - kind: legacy-page
+    id: content-67-page-067
+    source:
+      path: logic/basic/page-067.html
+  - kind: legacy-page
+    id: content-68-page-068
+    source:
+      path: logic/basic/page-068.html
+  - kind: legacy-page
+    id: content-69-page-069
+    source:
+      path: logic/basic/page-069.html
+  - kind: legacy-page
+    id: content-70-page-070
+    source:
+      path: logic/basic/page-070.html
+  - kind: legacy-page
+    id: content-71-page-071
+    source:
+      path: logic/basic/page-071.html
+  - kind: legacy-page
+    id: content-72-page-072
+    source:
+      path: logic/basic/page-072.html
+  - kind: legacy-page
+    id: content-73-page-073
+    source:
+      path: logic/basic/page-073.html
+  - kind: legacy-page
+    id: content-74-page-074
+    source:
+      path: logic/basic/page-074.html
+  - kind: legacy-page
+    id: content-75-page-075
+    source:
+      path: logic/basic/page-075.html
+  - kind: legacy-page
+    id: content-76-page-076
+    source:
+      path: logic/basic/page-076.html
+  - kind: legacy-page
+    id: content-77-page-077
+    source:
+      path: logic/basic/page-077.html
+  - kind: legacy-page
+    id: content-78-page-078
+    source:
+      path: logic/basic/page-078.html
+  - kind: legacy-page
+    id: content-79-page-079
+    source:
+      path: logic/basic/page-079.html
+  - kind: legacy-page
+    id: structural-80-toc-05
+    source:
+      path: logic/basic/toc-05.html
+  - kind: legacy-page
+    id: content-81-page-081
+    source:
+      path: logic/basic/page-081.html
+  - kind: legacy-page
+    id: content-82-page-082
+    source:
+      path: logic/basic/page-082.html
+  - kind: legacy-page
+    id: content-83-page-083
+    source:
+      path: logic/basic/page-083.html
+  - kind: legacy-page
+    id: content-84-page-084
+    source:
+      path: logic/basic/page-084.html
+  - kind: legacy-page
+    id: content-85-page-085
+    source:
+      path: logic/basic/page-085.html
+  - kind: legacy-page
+    id: content-86-page-086
+    source:
+      path: logic/basic/page-086.html
+  - kind: legacy-page
+    id: content-87-page-087
+    source:
+      path: logic/basic/page-087.html
+  - kind: legacy-page
+    id: content-88-page-088
+    source:
+      path: logic/basic/page-088.html
+  - kind: legacy-page
+    id: content-89-page-089
+    source:
+      path: logic/basic/page-089.html
+  - kind: legacy-page
+    id: content-90-page-090
+    source:
+      path: logic/basic/page-090.html
+  - kind: legacy-page
+    id: content-91-page-091
+    source:
+      path: logic/basic/page-091.html
+  - kind: legacy-page
+    id: content-92-page-092
+    source:
+      path: logic/basic/page-092.html
+  - kind: legacy-page
+    id: content-93-page-093
+    source:
+      path: logic/basic/page-093.html
+  - kind: legacy-page
+    id: content-94-page-094
+    source:
+      path: logic/basic/page-094.html
+  - kind: legacy-page
+    id: content-95-page-095
+    source:
+      path: logic/basic/page-095.html
+  - kind: legacy-page
+    id: content-96-page-096
+    source:
+      path: logic/basic/page-096.html
+  - kind: legacy-page
+    id: content-97-page-097
+    source:
+      path: logic/basic/page-097.html
+  - kind: legacy-page
+    id: structural-98-toc-06
+    source:
+      path: logic/basic/toc-06.html
+  - kind: legacy-page
+    id: content-99-page-099
+    source:
+      path: logic/basic/page-099.html
+  - kind: legacy-page
+    id: content-100-page-100
+    source:
+      path: logic/basic/page-100.html
+  - kind: legacy-page
+    id: content-101-page-101
+    source:
+      path: logic/basic/page-101.html
+  - kind: legacy-page
+    id: content-102-page-102
+    source:
+      path: logic/basic/page-102.html
+  - kind: legacy-page
+    id: content-103-page-103
+    source:
+      path: logic/basic/page-103.html
+  - kind: legacy-page
+    id: content-104-page-104
+    source:
+      path: logic/basic/page-104.html
+  - kind: legacy-page
+    id: content-105-page-105
+    source:
+      path: logic/basic/page-105.html
+  - kind: legacy-page
+    id: content-106-page-106
+    source:
+      path: logic/basic/page-106.html
+  - kind: legacy-page
+    id: content-107-page-107
+    source:
+      path: logic/basic/page-107.html
+  - kind: legacy-page
+    id: content-108-page-108
+    source:
+      path: logic/basic/page-108.html
+  - kind: legacy-page
+    id: content-109-page-109
+    source:
+      path: logic/basic/page-109.html
+  - kind: legacy-page
+    id: content-110-page-110
+    source:
+      path: logic/basic/page-110.html
+  - kind: legacy-page
+    id: content-111-page-111
+    source:
+      path: logic/basic/page-111.html
+  - kind: legacy-page
+    id: content-112-page-112
+    source:
+      path: logic/basic/page-112.html
+  - kind: legacy-page
+    id: content-113-page-113
+    source:
+      path: logic/basic/page-113.html
+  - kind: legacy-page
+    id: content-114-page-114
+    source:
+      path: logic/basic/page-114.html
+  - kind: legacy-page
+    id: content-115-page-115
+    source:
+      path: logic/basic/page-115.html

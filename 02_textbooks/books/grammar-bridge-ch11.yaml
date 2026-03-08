@@ -1,0 +1,22 @@
+version: 2
+book:
+  id: grammar-bridge-ch11
+  title: 문법 Bridge - 가정법 (Conditional Mood)
+  shortTitle: 문법 Bridge
+  author: Vera's Flavor
+  brand: Vera's Flavor
+  legacyStyle: grammar-bridge-part2
+  subject: grammar
+  level: bridge
+  theme: sky-academic
+pages:
+  - kind: cover
+    id: auto-cover
+  - kind: legacy-page
+    id: content-1-ch11-content-01
+    source:
+      path: grammar/bridge/ch11-content-01.html
+  - kind: legacy-page
+    id: content-2-ch11-content-02
+    source:
+      path: grammar/bridge/ch11-content-02.html

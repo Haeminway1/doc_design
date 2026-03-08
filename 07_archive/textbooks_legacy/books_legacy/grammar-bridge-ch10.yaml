@@ -1,0 +1,27 @@
+# grammar-bridge-ch10 — 문법 Bridge Part 1: 의문사
+book:
+  title: "문법 Bridge - 의문사 (Interrogatives)"
+  author: "Vera's Flavor"
+  template: ocean-blue
+  series: grammar-bridge
+  part: 1
+
+pages:
+  - type: content
+    src: grammar/bridge/ch10-content-01.html
+  - type: content
+    src: grammar/bridge/ch10-content-02.html
+  - type: content
+    src: grammar/bridge/ch10-content-03.html
+  - type: content
+    src: grammar/bridge/ch10-content-04.html
+  - type: content
+    src: grammar/bridge/ch10-content-05.html
+  - type: problems
+    src: grammar/bridge/ch10-problems.json
+    layout: two-per-page
+  - type: answer-grid
+    src: grammar/bridge/ch10-problems.json
+  - type: explanations
+    src: grammar/bridge/ch10-problems.json
+    layout: compact

@@ -1,0 +1,194 @@
+{
+  "summary": {
+    "books": 22,
+    "passed": 22,
+    "failed": 0
+  },
+  "books": [
+    {
+      "bookId": "grammar-advanced",
+      "manifest": "02_textbooks/books/grammar-advanced.yaml",
+      "html": "02_textbooks/output_v2/html/grammar-advanced.html",
+      "status": "pass",
+      "issues": [],
+      "checks": []
+    },
+    {
+      "bookId": "grammar-basic",
+      "manifest": "02_textbooks/books/grammar-basic.yaml",
+      "html": "02_textbooks/output_v2/html/grammar-basic.html",
+      "status": "pass",
+      "issues": [],
+      "checks": []
+    },
+    {
+      "bookId": "grammar-bridge-ch01",
+      "manifest": "02_textbooks/books/grammar-bridge-ch01.yaml",
+      "html": "02_textbooks/output_v2/html/grammar-bridge-ch01.html",
+      "status": "pass",
+      "issues": [],
+      "checks": []
+    },
+    {
+      "bookId": "grammar-bridge-ch02",
+      "manifest": "02_textbooks/books/grammar-bridge-ch02.yaml",
+      "html": "02_textbooks/output_v2/html/grammar-bridge-ch02.html",
+      "status": "pass",
+      "issues": [],
+      "checks": []
+    },
+    {
+      "bookId": "grammar-bridge-ch03",
+      "manifest": "02_textbooks/books/grammar-bridge-ch03.yaml",
+      "html": "02_textbooks/output_v2/html/grammar-bridge-ch03.html",
+      "status": "pass",
+      "issues": [],
+      "checks": []
+    },
+    {
+      "bookId": "grammar-bridge-ch04",
+      "manifest": "02_textbooks/books/grammar-bridge-ch04.yaml",
+      "html": "02_textbooks/output_v2/html/grammar-bridge-ch04.html",
+      "status": "pass",
+      "issues": [],
+      "checks": []
+    },
+    {
+      "bookId": "grammar-bridge-ch05",
+      "manifest": "02_textbooks/books/grammar-bridge-ch05.yaml",
+      "html": "02_textbooks/output_v2/html/grammar-bridge-ch05.html",
+      "status": "pass",
+      "issues": [],
+      "checks": []
+    },
+    {
+      "bookId": "grammar-bridge-ch06",
+      "manifest": "02_textbooks/books/grammar-bridge-ch06.yaml",
+      "html": "02_textbooks/output_v2/html/grammar-bridge-ch06.html",
+      "status": "pass",
+      "issues": [],
+      "checks": []
+    },
+    {
+      "bookId": "grammar-bridge-ch07",
+      "manifest": "02_textbooks/books/grammar-bridge-ch07.yaml",
+      "html": "02_textbooks/output_v2/html/grammar-bridge-ch07.html",
+      "status": "pass",
+      "issues": [],
+      "checks": []
+    },
+    {
+      "bookId": "grammar-bridge-ch08",
+      "manifest": "02_textbooks/books/grammar-bridge-ch08.yaml",
+      "html": "02_textbooks/output_v2/html/grammar-bridge-ch08.html",
+      "status": "pass",
+      "issues": [],
+      "checks": []
+    },
+    {
+      "bookId": "grammar-bridge-ch09",
+      "manifest": "02_textbooks/books/grammar-bridge-ch09.yaml",
+      "html": "02_textbooks/output_v2/html/grammar-bridge-ch09.html",
+      "status": "pass",
+      "issues": [],
+      "checks": []
+    },
+    {
+      "bookId": "grammar-bridge-ch10",
+      "manifest": "02_textbooks/books/grammar-bridge-ch10.yaml",
+      "html": "02_textbooks/output_v2/html/grammar-bridge-ch10.html",
+      "status": "pass",
+      "issues": [],
+      "checks": []
+    },
+    {
+      "bookId": "grammar-bridge-ch11",
+      "manifest": "02_textbooks/books/grammar-bridge-ch11.yaml",
+      "html": "02_textbooks/output_v2/html/grammar-bridge-ch11.html",
+      "status": "pass",
+      "issues": [],
+      "checks": []
+    },
+    {
+      "bookId": "grammar-bridge-vol1",
+      "manifest": "02_textbooks/books/grammar-bridge-vol1.yaml",
+      "html": "02_textbooks/output_v2/html/grammar-bridge-vol1.html",
+      "status": "pass",
+      "issues": [],
+      "checks": []
+    },
+    {
+      "bookId": "grammar-bridge-vol2",
+      "manifest": "02_textbooks/books/grammar-bridge-vol2.yaml",
+      "html": "02_textbooks/output_v2/html/grammar-bridge-vol2.html",
+      "status": "pass",
+      "issues": [],
+      "checks": []
+    },
+    {
+      "bookId": "logic-basic",
+      "manifest": "02_textbooks/books/logic-basic.yaml",
+      "html": "02_textbooks/output_v2/html/logic-basic.html",
+      "status": "pass",
+      "issues": [],
+      "checks": []
+    },
+    {
+      "bookId": "reading-basic",
+      "manifest": "02_textbooks/books/reading-basic.yaml",
+      "html": "02_textbooks/output_v2/html/reading-basic.html",
+      "status": "pass",
+      "issues": [],
+      "checks": [
+        "passages expected=601 actualClusters=601 actualPassages=601",
+        "questions expected=801 actualInClusters=801"
+      ]
+    },
+    {
+      "bookId": "reading-bridge",
+      "manifest": "02_textbooks/books/reading-bridge.yaml",
+      "html": "02_textbooks/output_v2/html/reading-bridge.html",
+      "status": "pass",
+      "issues": [],
+      "checks": [
+        "passages expected=600 actualClusters=600 actualPassages=600",
+        "questions expected=800 actualInClusters=800"
+      ]
+    },
+    {
+      "bookId": "reading-intermediate",
+      "manifest": "02_textbooks/books/reading-intermediate.yaml",
+      "html": "02_textbooks/output_v2/html/reading-intermediate.html",
+      "status": "pass",
+      "issues": [],
+      "checks": [
+        "passages expected=360 actualClusters=360 actualPassages=360",
+        "questions expected=360 actualInClusters=360"
+      ]
+    },
+    {
+      "bookId": "syntax-basic",
+      "manifest": "02_textbooks/books/syntax-basic.yaml",
+      "html": "02_textbooks/output_v2/html/syntax-basic.html",
+      "status": "pass",
+      "issues": [],
+      "checks": []
+    },
+    {
+      "bookId": "syntax-bridge",
+      "manifest": "02_textbooks/books/syntax-bridge.yaml",
+      "html": "02_textbooks/output_v2/html/syntax-bridge.html",
+      "status": "pass",
+      "issues": [],
+      "checks": []
+    },
+    {
+      "bookId": "vocab-basic",
+      "manifest": "02_textbooks/books/vocab-basic.yaml",
+      "html": "02_textbooks/output_v2/html/vocab-basic.html",
+      "status": "pass",
+      "issues": [],
+      "checks": []
+    }
+  ]
+}

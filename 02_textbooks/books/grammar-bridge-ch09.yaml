@@ -1,31 +1,56 @@
-# grammar-bridge-ch09 — 문법 Bridge 형용사와 부사
+version: 2
 book:
-  title: "문법 Bridge - 형용사와 부사"
-  author: "Vera's Flavor"
-  style: grammar-bridge-part1
-  series: grammar-bridge
-  part: 9
-
+  id: grammar-bridge-ch09
+  title: 문법 Bridge - 형용사와 부사
+  shortTitle: 문법 Bridge
+  author: Vera's Flavor
+  brand: Vera's Flavor
+  legacyStyle: grammar-bridge-part2
+  subject: grammar
+  level: bridge
+  theme: sky-academic
 pages:
-  - type: content
-    src: grammar/bridge/ch09-content-01.html
-  - type: content
-    src: grammar/bridge/ch09-content-02.html
-  - type: content
-    src: grammar/bridge/ch09-content-03.html
-  - type: content
-    src: grammar/bridge/ch09-content-04.html
-  - type: content
-    src: grammar/bridge/ch09-content-05.html
-  - type: content
-    src: grammar/bridge/ch09-content-06.html
-  - type: content
-    src: grammar/bridge/ch09-content-07.html
-  - type: problems
-    src: grammar/bridge/ch09-problems.json
-    layout: two-per-page
-  - type: answer-grid
-    src: grammar/bridge/ch09-problems.json
-  - type: explanations
-    src: grammar/bridge/ch09-problems.json
+  - kind: cover
+    id: auto-cover
+  - kind: legacy-page
+    id: content-1-ch09-content-01
+    source:
+      path: grammar/bridge/ch09-content-01.html
+  - kind: legacy-page
+    id: content-2-ch09-content-02
+    source:
+      path: grammar/bridge/ch09-content-02.html
+  - kind: legacy-page
+    id: content-3-ch09-content-03
+    source:
+      path: grammar/bridge/ch09-content-03.html
+  - kind: legacy-page
+    id: content-4-ch09-content-04
+    source:
+      path: grammar/bridge/ch09-content-04.html
+  - kind: legacy-page
+    id: content-5-ch09-content-05
+    source:
+      path: grammar/bridge/ch09-content-05.html
+  - kind: legacy-page
+    id: content-6-ch09-content-06
+    source:
+      path: grammar/bridge/ch09-content-06.html
+  - kind: legacy-page
+    id: content-7-ch09-content-07
+    source:
+      path: grammar/bridge/ch09-content-07.html
+  - kind: problem-set
+    id: problems-8-ch09-problems
     layout: compact
+    source:
+      path: grammar/bridge/ch09-problems.json
+  - kind: answer-grid
+    id: answers-9-ch09-problems
+    source:
+      path: grammar/bridge/ch09-problems.json
+  - kind: explanations
+    id: explanations-10-ch09-problems
+    layout: compact
+    source:
+      path: grammar/bridge/ch09-problems.json

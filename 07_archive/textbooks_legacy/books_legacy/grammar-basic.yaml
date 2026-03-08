@@ -1,0 +1,138 @@
+# grammar-basic — 문법 Basic
+book:
+  title: "편입영어 문법 Basic 편"
+  author: "Vera's Flavor"
+  style: grammar-basic
+  series: grammar-basic
+
+pages:
+  - type: structural
+    src: grammar/basic/cover.html
+  - type: structural
+    src: grammar/basic/toc.html
+  - type: structural
+    src: grammar/basic/toc-2.html
+
+  # CH1 명사 [B1]
+  - type: content
+    src: grammar/basic/ch01-content-01.html
+  - type: content
+    src: grammar/basic/ch01-content-02.html
+
+  # CH2 관사 [B1]
+  - type: content
+    src: grammar/basic/ch02-content-01.html
+
+  # CH3 대명사 [B1]
+  - type: content
+    src: grammar/basic/ch03-content-01.html
+
+  # CH4 형용사와 부사 [B2]
+  - type: content
+    src: grammar/basic/ch04-content-01.html
+  - type: content
+    src: grammar/basic/ch04-content-02.html
+  - type: content
+    src: grammar/basic/ch04-content-03.html
+  - type: content
+    src: grammar/basic/ch04-content-04.html
+
+  # CH5 전치사 [B3]
+  - type: content
+    src: grammar/basic/ch05-content-01.html
+  - type: content
+    src: grammar/basic/ch05-content-02.html
+  - type: content
+    src: grammar/basic/ch05-content-03.html
+
+  # CH6 접속사 [B3]
+  - type: content
+    src: grammar/basic/ch06-content-01.html
+  - type: content
+    src: grammar/basic/ch06-content-02.html
+
+  # CH7 수일치 및 주요 구문 [B4]
+  - type: content
+    src: grammar/basic/ch07-content-01.html
+  - type: content
+    src: grammar/basic/ch07-content-02.html
+
+  # CH8 동사의 이해 [C1]
+  - type: content
+    src: grammar/basic/ch08-content-01.html
+
+  # CH9 부정사 [C1]
+  - type: content
+    src: grammar/basic/ch09-content-01.html
+  - type: content
+    src: grammar/basic/ch09-content-02.html
+  - type: content
+    src: grammar/basic/ch09-content-03.html
+  - type: content
+    src: grammar/basic/ch09-content-04.html
+
+  # CH10 동명사 [C2]
+  - type: content
+    src: grammar/basic/ch10-content-01.html
+  - type: content
+    src: grammar/basic/ch10-content-02.html
+
+  # CH11 분사 [C3]
+  - type: content
+    src: grammar/basic/ch11-content-01.html
+  - type: content
+    src: grammar/basic/ch11-content-02.html
+  - type: content
+    src: grammar/basic/ch11-content-03.html
+
+  # CH12 관계사 [C4]
+  - type: content
+    src: grammar/basic/ch12-content-01.html
+  - type: content
+    src: grammar/basic/ch12-content-02.html
+  - type: content
+    src: grammar/basic/ch12-content-03.html
+  - type: content
+    src: grammar/basic/ch12-content-04.html
+
+  # 특강1: 비교
+  - type: content
+    src: grammar/basic/sl01-content-01.html
+
+  # 특강2: 도치
+  - type: content
+    src: grammar/basic/sl02-content-01.html
+  - type: content
+    src: grammar/basic/sl02-content-02.html
+
+  # Practice 문제
+  - type: problems
+    src: grammar/basic/practice01-problems.json
+    layout: three-per-page
+  - type: problems
+    src: grammar/basic/practice02-problems.json
+    layout: three-per-page
+  - type: problems
+    src: grammar/basic/practice03-problems.json
+    layout: three-per-page
+  - type: problems
+    src: grammar/basic/practice04-problems.json
+    layout: three-per-page
+
+  # 정답 그리드 (객관식만)
+  - type: answer-grid
+    src: grammar/basic/practice04-problems.json
+
+  # 해설
+  - type: explanations
+    src: grammar/basic/practice01-problems.json
+    layout: compact
+  - type: explanations
+    src: grammar/basic/practice02-problems.json
+    layout: compact
+  - type: explanations
+    src: grammar/basic/practice03-problems.json
+    layout: compact
+  - type: explanations
+    src: grammar/basic/practice04-problems.json
+    layout: compact

@@ -98,7 +98,7 @@
     display: block !important;
     margin-bottom: var(--space-md) !important;
     letter-spacing: 2px !important;
-    text-transform: uppercase !important;
+    text-transform: none !important;
 }
 
 /* --- 변형: 배경 박스형 섹션 제목 --- */

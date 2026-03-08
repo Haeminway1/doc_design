@@ -441,7 +441,7 @@ function buildHead() {
 
     body {
       font-family: 'Noto Sans KR', sans-serif;
-      background: #f0f2f5;
+      background: #f2f2f0;
       counter-reset: page;
     }
 
@@ -469,7 +469,7 @@ function buildHead() {
     .page-footer {
       text-align: center;
       font-size: 9pt;
-      color: #888;
+      color: #111111;
       padding-top: 10mm;
     }
 
@@ -515,14 +515,15 @@ function buildHead() {
       --font-main: 'Noto Sans KR', sans-serif;
       --font-serif: 'Noto Serif KR', serif;
 
-      --color-primary: #63b3ed;   /* Sky Blue */
-      --color-secondary: #81e6d9; /* Mint */
-      --color-heading: #2c5282;   /* Dark Blue */
-      --color-text: #2d3748;
-      --color-muted: #718096;
-      --color-border: #e2e8f0;
-      --color-bg-light: #f7fafc;
-      --color-star: #f6e05e;
+      --color-primary: #111111;
+      --color-secondary: #111111;
+      --color-heading: #111111;
+      --color-text: #111111;
+      --color-muted: #111111;
+      --color-border: #ddd6c8;
+      --color-bg-light: #faf8f2;
+      --color-star: #f4e3a0;
+      --color-red: #c84c4c;
 
       --radius-sm: 4px;
       --radius-md: 8px;
@@ -539,6 +540,10 @@ function buildHead() {
       color: var(--color-text);
     }
 
+    body * {
+      color: #111111;
+    }
+
     /* =================================================================== */
     /* 3. 컴포넌트 디자인 */
     /* =================================================================== */
@@ -548,7 +553,7 @@ function buildHead() {
       display: flex;
       flex-direction: column;
       text-align: center;
-      background: linear-gradient(135deg, #ebf8ff 0%, #e6fffa 50%, #f0fff4 100%);
+      background: #faf8f2;
     }
 
     .cover-main-content {
@@ -594,7 +599,7 @@ function buildHead() {
 
     .eng-text {
       font-family: 'Inter', sans-serif;
-      font-style: italic;
+      font-style: normal;
     }
 
     /* 파트 구분 페이지 */
@@ -737,11 +742,11 @@ function buildHead() {
     }
 
     .trap-box {
-      border-color: #e53e3e;
+      border-color: var(--color-red);
     }
 
     .trap-box h4 {
-      color: #c53030;
+      color: var(--color-red);
       margin: 0 0 0.5rem 0;
     }
 
@@ -909,8 +914,8 @@ function buildHead() {
     }
 
     .answer-text {
-      background-color: #ebf8ff;
-      color: #2c5282;
+      background-color: #eef7ff;
+      color: #111111;
       padding: 4px 10px;
       border-radius: var(--radius-sm);
       font-family: 'D2Coding', 'Courier New', monospace;
@@ -962,7 +967,7 @@ function buildHead() {
     .answer-explanation strong {
       font-weight: 700;
       color: var(--color-heading);
-      background-color: rgba(129, 230, 217, 0.3);
+      background-color: #f4e3a0;
       padding: 1px 4px;
       border-radius: var(--radius-sm);
     }
@@ -976,7 +981,7 @@ function buildHead() {
 
     code {
       font-family: 'D2Coding', 'Courier New', monospace;
-      background-color: #e2e8f0;
+      background-color: #ddd6c8;
       padding: 2px 5px;
       border-radius: var(--radius-sm);
       font-size: 9.5pt;
@@ -984,7 +989,7 @@ function buildHead() {
 
     .choice {
       font-weight: bold;
-      background-color: rgba(129, 230, 217, 0.3);
+      background-color: #f4e3a0;
       padding: 1px 5px;
       border-radius: var(--radius-sm);
     }

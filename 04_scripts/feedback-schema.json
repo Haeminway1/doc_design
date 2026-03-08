@@ -93,12 +93,12 @@
         "required": ["q", "selected", "correct", "type", "question", "explanation"],
         "properties": {
           "q": {
-            "type": "integer",
-            "description": "문제 번호"
+            "type": ["integer", "string"],
+            "description": "문제 번호 (정수 또는 복합번호 문자열, 예: 1, '76-2')"
           },
           "selected": {
-            "type": "string",
-            "description": "학생이 선택한 답 (예: '③')"
+            "type": ["string", "null"],
+            "description": "학생이 선택한 답 (예: '③'). 미선택 시 null"
           },
           "correct": {
             "type": "string",
@@ -155,8 +155,8 @@
         "required": ["q", "selected", "note"],
         "properties": {
           "q": {
-            "type": "integer",
-            "description": "문제 번호"
+            "type": ["integer", "string"],
+            "description": "문제 번호 (정수 또는 복합번호 문자열, 예: 1, '76-2')"
           },
           "selected": {
             "type": "string",

@@ -20,14 +20,33 @@ function gogRun(args) {
   }
 }
 
+function parseDriveId(output) {
+  try {
+    const parsed = JSON.parse(output);
+    return (
+      parsed?.id ||
+      parsed?.fileId ||
+      parsed?.folderId ||
+      parsed?.file?.id ||
+      parsed?.folder?.id ||
+      null
+    );
+  } catch (_) {
+    return null;
+  }
+}
+
 /**
  * List files/folders in a Drive folder.
  * Returns array of { id, name, mimeType }
  */
 function listFolder(folderId) {
   try {
-    const output = gogRun(`ls --json "${folderId}"`);
-    return JSON.parse(output);
+    const output = gogRun(`ls --json --parent="${folderId}"`);
+    const parsed = JSON.parse(output);
+    if (Array.isArray(parsed)) return parsed;
+    if (parsed && Array.isArray(parsed.files)) return parsed.files;
+    return [];
   } catch (err) {
     log.warn(`listFolder failed for ${folderId}: ${err.message}`);
     return [];
@@ -39,13 +58,12 @@ function listFolder(folderId) {
  * Returns the uploaded file's Drive ID.
  */
 function upload(filePath, parentId) {
-  const output = gogRun(`upload "${filePath}" "${parentId}" --json`);
-  try {
-    const result = JSON.parse(output);
-    return result.id || result.fileId || output;
-  } catch {
-    return output;
+  const output = gogRun(`upload "${filePath}" --parent="${parentId}" --json`);
+  const id = parseDriveId(output);
+  if (!id) {
+    throw new Error(`upload 응답에서 파일 ID 추출 실패: ${output.slice(0, 200)}`);
   }
+  return id;
 }
 
 /**
@@ -53,13 +71,12 @@ function upload(filePath, parentId) {
  * Returns the new folder's Drive ID.
  */
 function createFolder(name, parentId) {
-  const output = gogRun(`mkdir "${name}" "${parentId}" --json`);
-  try {
-    const result = JSON.parse(output);
-    return result.id || result.folderId || output;
-  } catch {
-    return output;
+  const output = gogRun(`mkdir "${name}" --parent="${parentId}" --json`);
+  const id = parseDriveId(output);
+  if (!id) {
+    throw new Error(`mkdir 응답에서 폴더 ID 추출 실패: ${output.slice(0, 200)}`);
   }
+  return id;
 }
 
 /**

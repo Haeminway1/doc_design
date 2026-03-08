@@ -8,7 +8,37 @@
       "title": "",
       "text": "Glass is one of the few materials that can be recycled endlessly without loss of quality. ( ① ) When glass products are collected and sent to the recycling plant, they are crushed into small pieces called cullet. ( ② ) The cullet is then mixed with raw materials like sand and soda ash and melted in a furnace. ( ③ ) The resulting mixture can be molded into new bottles and jars identical to the originals. ( ④ ) In fact, using cullet reduces the energy required to melt the batch because it melts at a lower temperature. ( ⑤ ) For this reason, recycling glass not only conserves resources but also cuts greenhouse-gas emissions.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-1",
+          "number": "1",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? This process saves about 30 percent of the energy needed to make glass from virgin materials.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 5,
+          "explanation": "④에서 파유리(cullet)가 더 낮은 온도에서 녹아 에너지를 절약한다고 설명. 주어진 문장의 'This process'는 이 에너지 절약 과정을 가리키며, ⑤의 'For this reason'과 연결되어 전체적인 결론을 이끌어냄."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "cullet",
+          "meaning": "유리 파편"
+        },
+        {
+          "word": "furnace",
+          "meaning": "용광로"
+        },
+        {
+          "word": "conserve",
+          "meaning": "보존하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p2",
@@ -16,7 +46,37 @@
       "title": "",
       "text": "Most adults need between seven and nine hours of sleep each night, yet surveys show that many people fall short of this target. ( ① ) Chronic lack of sleep has been linked to a higher risk of heart disease, obesity, and depression. ( ② ) Laboratory studies also reveal that reaction times slow dramatically after extended wakefulness. ( ③ ) Drivers who have been awake for 20 hours perform about as poorly as those with a blood-alcohol level of 0.08 percent. ( ④ ) Consequently, drowsy driving is responsible for thousands of accidents each year. ( ⑤ ) Getting consistent, high-quality rest is therefore one of the simplest ways to protect both physical and mental health.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-2",
+          "number": "2",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Even a single night of poor sleep can impair memory and judgment the following day.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 2,
+          "explanation": "앞 문장의 a higher risk of heart disease, obesity, and depression 부분의 부정적인 결과들이 Even a single night 으로 이어지며 부정적 결과가 재언급 됨."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "impair",
+          "meaning": "손상시키다"
+        },
+        {
+          "word": "chronic",
+          "meaning": "만성적인"
+        },
+        {
+          "word": "drowsy",
+          "meaning": "졸린"
+        }
+      ]
     },
     {
       "id": "reading-basic-p3",
@@ -24,7 +84,37 @@
       "title": "",
       "text": "Coral reefs owe their brilliant colors to symbiotic algae that live inside coral tissue. ( ① ) When ocean temperatures rise, corals become stressed and expel these algae. ( ② ) Without their colorful partners, the corals turn ghostly white, a phenomenon known as bleaching. ( ③ ) Bleached corals are weaker and more susceptible to disease. ( ④ ) Large-scale bleaching events have become more frequent over the past three decades, threatening reef ecosystems worldwide. ( ⑤ ) Scientists warn that limiting global warming is essential to preserve these biodiverse habitats.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-3",
+          "number": "3",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? If temperatures remain elevated, the algae may never return, causing the coral to die.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 4,
+          "explanation": "③에서 산호가 약해지고 질병에 취약해진다고 설명. 주어진 문장은 '온도가 계속 높으면'이라는 조건 하에 산호가 죽는 최악의 결과를 제시. 이는 ④ 뒤의 '대규모 백화 현상'의 직접적 원인이 됨."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "symbiotic",
+          "meaning": "공생의"
+        },
+        {
+          "word": "expel",
+          "meaning": "내쫓다"
+        },
+        {
+          "word": "susceptible",
+          "meaning": "취약한"
+        }
+      ]
     },
     {
       "id": "reading-basic-p4",
@@ -32,7 +122,37 @@
       "title": "",
       "text": "Battery technology has improved rapidly in recent years. ( ① ) Modern lithium-ion packs store more energy while weighing less than their predecessors. ( ② ) As ranges climb above 500 kilometers per charge, so-called range anxiety begins to fade. ( ③ ) Governments are also expanding charging-station networks along major highways. ( ④ ) In addition, many countries now offer tax credits or rebates to purchasers of electric vehicles. ( ⑤ ) Analysts predict that electric cars could account for half of all new car sales by 2030.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-4",
+          "number": "4",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? As a result, more drivers feel confident making the switch to electric models.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 5,
+          "explanation": "①~④는 전기차로의 전환을 유도하는 긍정적 요인들(기술 발전, 주행거리 불안 해소, 충전소 확대, 보조금)을 나열함. 주어진 문장은 이 모든 요인들의 '결과'로 운전자들이 자신감을 얻는다는 내용이므로, 모든 요인이 언급된 후이자 최종 전망 전인 ⑤가 가장 적절."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "predecessor",
+          "meaning": "이전 모델, 선임자"
+        },
+        {
+          "word": "range anxiety",
+          "meaning": "주행거리 불안"
+        },
+        {
+          "word": "rebate",
+          "meaning": "환급"
+        }
+      ]
     },
     {
       "id": "reading-basic-p5",
@@ -40,7 +160,37 @@
       "title": "",
       "text": "In the late nineteenth century, a group of young painters broke away from the rigid rules of France's art academies. ( ① ) They began painting outdoors to capture changing light and atmosphere. ( ② ) Critics at the time dismissed their loose brushstrokes and bright colors as unfinished and childish. ( ③ ) Nevertheless, the public slowly warmed to their fresh perspective. ( ④ ) Today works by Monet, Renoir, and Degas are celebrated worldwide. ( ⑤ ) Their movement forever altered the course of modern art.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-5",
+          "number": "5",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Instead of striving for photographic realism, they sought to convey the fleeting impressions of a moment.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 1,
+          "explanation": "1번 문장 앞의 이전의 학파를 부정한다는 내용이 나옴. 이걸 이어서 주어진 문장에 기존의 형태를 부수고 새로운 자기들만의 방식을 찾는다는 내용이 주어진 문장 뒷부분과 1번뒷 문장으로 이어져야 자연스러움."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "strive for",
+          "meaning": "~을 위해 노력하다"
+        },
+        {
+          "word": "fleeting",
+          "meaning": "순식간의"
+        },
+        {
+          "word": "rigid",
+          "meaning": "엄격한"
+        }
+      ]
     },
     {
       "id": "reading-basic-p6",
@@ -48,7 +198,37 @@
       "title": "",
       "text": "Plastic trash does not disappear once it enters the ocean. ( ① ) Waves and sunlight gradually break larger items into tiny fragments called microplastics. ( ② ) These fragments can travel vast distances, turning up on remote Arctic beaches and deep-sea trenches alike. ( ③ ) Studies have detected microplastics in seafood, table salt, and even drinking water. ( ④ ) Because plastics attract toxic chemicals, they may concentrate pollutants as they move through the food chain. ( ⑤ ) Reducing single-use plastics on land is therefore critical for protecting marine life.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-6",
+          "number": "6",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? These particles are small enough to be ingested by plankton at the very base of the oceanic food web.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 3,
+          "explanation": "②에서 미세플라스틱의 광범위한 확산을 언급. 주어진 문장은 'These particles'를 받아 먹이사슬의 최하위인 플랑크톤에게 섭취될 만큼 작다고 설명. 이는 ③ 뒤의 '해산물, 소금 등에서 발견'된다는 내용의 시작점이 됨."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "ingest",
+          "meaning": "섭취하다"
+        },
+        {
+          "word": "fragment",
+          "meaning": "파편, 조각"
+        },
+        {
+          "word": "pollutant",
+          "meaning": "오염물질"
+        }
+      ]
     },
     {
       "id": "reading-basic-p7",
@@ -56,7 +236,37 @@
       "title": "",
       "text": "Centuries ago, trade in China grew so brisk that bulky metal coins became impractical. ( ① ) Merchants began leaving their heavy currency with trusted agents and receiving paper receipts instead. ( ② ) Over time, these receipts started circulating hand-to-hand as payment for goods. ( ③ ) The government soon recognized the convenience of this system and issued officially sanctioned notes. ( ④ ) Counterfeiting remained a persistent challenge, prompting the use of special dyes and intricate designs. ( ⑤ ) The innovation later spread along the Silk Road, influencing monetary systems across Eurasia.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-7",
+          "number": "7",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? This practice laid the groundwork for what we now call paper money.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 2,
+          "explanation": "①에서 상인들이 '종이 영수증'을 받기 시작했다고 설명. 주어진 문장의 'This practice'가 이 행위를 가리키며, 이것이 '지폐의 기원'이 되었다고 설명. ② 뒤에서 'these receipts'가 화폐처럼 유통되기 시작했다는 내용으로 이어짐."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "brisk",
+          "meaning": "활발한"
+        },
+        {
+          "word": "impractical",
+          "meaning": "비실용적인"
+        },
+        {
+          "word": "sanctioned",
+          "meaning": "승인된"
+        }
+      ]
     },
     {
       "id": "reading-basic-p8",
@@ -64,7 +274,37 @@
       "title": "",
       "text": "Sharing personal information online has never been easier—or riskier. ( ① ) Social-media platforms generate revenue by collecting user data and selling targeted advertisements. ( ② ) Meanwhile, data breaches at major corporations have exposed millions of customers' records. ( ③ ) As public concern mounts, several governments have enacted strict privacy laws requiring companies to obtain explicit consent before gathering data. ( ④ ) Critics argue that enforcement remains uneven and penalties too lenient. ( ⑤ ) Ultimately, users must stay vigilant and adjust privacy settings to safeguard their digital identities.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-8",
+          "number": "8",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? In theory, these regulations give individuals more control over how their information is used.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 4,
+          "explanation": "③에서 정부가 개인정보 보호법을 제정했다는 사실을 언급. 주어진 문장은 'these regulations'를 받아 그 법의 이론적 목적을 설명함. ④ 뒤의 'Critics argue'는 이 이론과 현실의 차이를 지적하며 반론을 제기함."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "breach",
+          "meaning": "(데이터) 유출"
+        },
+        {
+          "word": "enact",
+          "meaning": "제정하다"
+        },
+        {
+          "word": "lenient",
+          "meaning": "관대한"
+        }
+      ]
     },
     {
       "id": "reading-basic-p9",
@@ -72,7 +312,37 @@
       "title": "",
       "text": "Wildfires play a natural role in many forest ecosystems. ( ① ) Low-intensity burns clear away dead vegetation, making room for new growth. ( ② ) Decades of aggressive fire suppression, however, have allowed flammable material to accumulate. ( ③ ) As a result, today's fires often burn hotter and spread faster than historical ones. ( ④ ) Fire ecologists now advocate selective thinning and controlled burns to restore healthier conditions. ( ⑤ ) Communities located near forests must adapt to increased smoke and the potential for sudden evacuations.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-9",
+          "number": "9",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Climate change further complicates the picture by lengthening fire seasons and drying out soils.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 4,
+          "explanation": "③에서 산불이 더 뜨거워지고 빨리 퍼지는 원인을 설명. 주어진 문장은 '기후 변화'가 이 상황을 '더욱 복잡하게' 만든다고 추가적인 악화 요인을 제시. 이는 ④ 뒤의 해결책 모색으로 자연스럽게 연결됨."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "suppression",
+          "meaning": "진압"
+        },
+        {
+          "word": "flammable",
+          "meaning": "가연성의"
+        },
+        {
+          "word": "advocate",
+          "meaning": "옹호하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p10",
@@ -80,7 +350,37 @@
       "title": "",
       "text": "Volunteering delivers benefits that extend beyond the recipients of charitable work. ( ① ) Studies show that people who volunteer regularly report higher life satisfaction. ( ② ) The act of giving time fosters a sense of purpose and social connection. ( ③ ) It can even lower stress by shifting attention away from personal worries. ( ④ ) Retirement counselors therefore encourage seniors to find volunteer roles that match their interests and skills. ( ⑤ ) Simple acts of service can create ripple effects that strengthen entire communities.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-10",
+          "number": "10",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Psychologists also note improvements in mental health, including reduced symptoms of anxiety and depression.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 4,
+          "explanation": "①, ②, ③은 자원봉사의 긍정적 효과(삶의 만족도, 목적의식, 스트레스 감소)를 나열함. 주어진 문장은 'also'를 사용해 '정신 건강 개선'이라는 추가적인 이점을 제시하므로, 모든 이점이 언급된 후이자 결론적 조언 전인 ④가 적절."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "recipient",
+          "meaning": "수혜자"
+        },
+        {
+          "word": "foster",
+          "meaning": "조성하다, 키우다"
+        },
+        {
+          "word": "ripple effect",
+          "meaning": "파급 효과"
+        }
+      ]
     },
     {
       "id": "reading-basic-p11",
@@ -88,7 +388,37 @@
       "title": "",
       "text": "Antibiotic-resistant bacteria are spreading rapidly worldwide. ( ① ) Hospitals report rising cases where conventional drugs no longer work. ( ② ) Public-health officials warn that routine surgeries could become high-risk procedures. ( ③ ) Efforts to curb overuse of antibiotics in livestock and improve stewardship in clinics are under way. ( ④ ) Researchers are also racing to develop novel treatments, but progress remains slow. ( ⑤ ) The situation demands a multi-pronged approach involving governments, doctors, and the public.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-11",
+          "number": "11",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Without decisive global action, even minor infections could once again become deadly.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 3,
+          "explanation": "②까지 항생제 내성의 심각한 상황을 경고. 주어진 문장은 '결정적 조치 없이는' 사소한 감염도 치명적일 수 있다는 강력한 경고로, ③ 뒤의 대응 노력(curb overuse)의 당위성을 부여함."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "decisive",
+          "meaning": "결정적인"
+        },
+        {
+          "word": "curb",
+          "meaning": "억제하다"
+        },
+        {
+          "word": "stewardship",
+          "meaning": "(자산, 조직 등의) 관리"
+        }
+      ]
     },
     {
       "id": "reading-basic-p12",
@@ -96,7 +426,37 @@
       "title": "",
       "text": "Mindfulness meditation is becoming a popular tool for managing workplace stress. ( ① ) Studies show regular practice enhances focus and emotional regulation. ( ② ) Corporate wellness programs now include short guided sessions before meetings. ( ③ ) Experts caution, however, that sustained benefits require consistent practice over months. ( ④ ) Even so, many employees report feeling calmer and more productive. ( ⑤ ) The key is consistency, not duration.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-12",
+          "number": "12",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? In fact, a brief daily session can significantly lower stress hormone levels.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 3,
+          "explanation": "②에서 기업들이 짧은 명상 세션을 도입한다고 설명. 주어진 문장은 'In fact'를 통해 이 짧은 세션의 구체적인 생리학적 효과(스트레스 호르몬 감소)를 부연 설명함. ③ 뒤의 'however'는 이 단기 효과와 대조되는 장기적 효과를 언급."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "regulation",
+          "meaning": "조절"
+        },
+        {
+          "word": "sustained",
+          "meaning": "지속적인"
+        },
+        {
+          "word": "duration",
+          "meaning": "지속 시간"
+        }
+      ]
     },
     {
       "id": "reading-basic-p13",
@@ -104,7 +464,37 @@
       "title": "",
       "text": "Thanks to 3-D printing, manufacturers can move from design to prototype in a single afternoon. ( ① ) Traditional tooling often takes weeks and significant capital investment. ( ② ) By contrast, a digital file can be sent directly to a printer on the factory floor. ( ③ ) As a result, smaller firms can compete with larger rivals by iterating products at lightning speed. ( ④ ) Analysts predict the technology will reshape supply chains over the next decade. ( ⑤ ) The shift from mass production to mass customization is already under way.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-13",
+          "number": "13",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? This capability allows factories to pivot quickly when customer demand shifts unexpectedly.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 3,
+          "explanation": "②에서 디지털 파일을 프린터로 직접 보낼 수 있다는 장점을 설명. 주어진 문장의 'This capability'가 이를 가리키며, 그 덕분에 수요 변화에 '빨리 대응'할 수 있다는 결과를 설명. 이는 ③ 뒤의 소규모 기업 경쟁력 강화로 이어짐."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "prototype",
+          "meaning": "시제품"
+        },
+        {
+          "word": "pivot",
+          "meaning": "(중심축을 두고) 회전하다, 방향을 바꾸다"
+        },
+        {
+          "word": "iterate",
+          "meaning": "반복하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p14",
@@ -112,7 +502,37 @@
       "title": "",
       "text": "Music therapy is gaining traction as a complementary treatment for dementia. ( ① ) Rhythms and melodies engage brain regions involved in memory and emotion. ( ② ) Sessions often involve singing familiar songs or tapping to a beat. ( ③ ) Therapists use these moments to stimulate conversation and foster social connection. ( ④ ) Early evidence suggests this approach can reduce agitation and improve quality of life. ( ⑤ ) The goal is not to cure the disease, but to enhance well-being.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-14",
+          "number": "14",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Remarkably, patients who struggle to recall loved ones' names can still sing entire songs from their youth.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 3,
+          "explanation": "②에서 익숙한 노래를 부르는 세션을 설명. 주어진 문장은 'Remarkably'를 통해 이 세션에서 나타나는 놀라운 현상(기억상실 환자가 노래를 부름)을 구체적으로 묘사함. ③ 뒤의 'these moments'가 바로 이 현상을 가리킴."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "traction",
+          "meaning": "견인, 인기"
+        },
+        {
+          "word": "complementary",
+          "meaning": "보완적인"
+        },
+        {
+          "word": "agitation",
+          "meaning": "불안, 동요"
+        }
+      ]
     },
     {
       "id": "reading-basic-p15",
@@ -120,7 +540,37 @@
       "title": "",
       "text": "Delivering aid to remote disaster zones remains a logistical nightmare. ( ① ) Roads are frequently blocked and power outages disable communication. ( ② ) Drones equipped with GPS are emerging as a solution. ( ③ ) Pilot programs in Rwanda have already delivered blood to rural clinics via autonomous aircraft. ( ④ ) International agencies are now exploring scale-up to other regions. ( ⑤ ) The technology promises to revolutionize humanitarian response.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-15",
+          "number": "15",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? As a result, life-saving supplies can arrive within hours instead of days.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 3,
+          "explanation": "②에서 드론이 해결책으로 등장. 주어진 문장은 그 '결과'로 구호품 도착 시간이 단축된다고 설명. ③ 뒤의 르완다 사례는 이 결과에 대한 구체적인 증거가 됨."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "logistical",
+          "meaning": "물류의"
+        },
+        {
+          "word": "autonomous",
+          "meaning": "자율적인"
+        },
+        {
+          "word": "humanitarian",
+          "meaning": "인도주의적인"
+        }
+      ]
     },
     {
       "id": "reading-basic-p16",
@@ -128,7 +578,37 @@
       "title": "",
       "text": "Modern astronomy generates more images than professionals can analyze. ( ① ) Online platforms invite ordinary citizens to classify galaxies or spot exoplanet transits. ( ② ) Their contributions have led to several unexpected discoveries, including a new type of star cluster. ( ③ ) Participants also gain firsthand experience with scientific methodology. ( ④ ) The model demonstrates how crowd-sourced science can accelerate progress. ( ⑤ ) This approach is now being applied to fields like biology and climate science.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-16",
+          "number": "16",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Collectively, these volunteers can sift through data far faster than professional researchers alone.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 2,
+          "explanation": "①에서 시민 과학 플랫폼을 소개. 주어진 문장은 'these volunteers'가 전문가보다 데이터를 더 빨리 처리할 수 있다는 핵심 장점을 설명. ② 뒤의 'Their contributions'가 이 빠른 처리 덕분에 가능해진 발견들을 언급."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "sift through",
+          "meaning": "샅샅이 살피다"
+        },
+        {
+          "word": "transit",
+          "meaning": "(행성의) 통과"
+        },
+        {
+          "word": "crowd-sourced",
+          "meaning": "크라우드소싱된"
+        }
+      ]
     },
     {
       "id": "reading-basic-p17",
@@ -136,7 +616,37 @@
       "title": "",
       "text": "The universe seems to contain five times more dark matter than ordinary matter. ( ① ) Astronomers infer its presence from the way galaxies rotate and light bends. ( ② ) Sensitive detectors are buried deep underground to avoid cosmic radiation. ( ③ ) Some theorists propose that dark matter may interact only through gravity. ( ④ ) Future missions in space hope to gather new clues. ( ⑤ ) The mystery remains one of the biggest puzzles in physics.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-17",
+          "number": "17",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Yet despite decades of searching, no experiment has conclusively detected a single particle.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 3,
+          "explanation": "②에서 암흑물질 탐지기 설치를 언급. 주어진 문장은 'Yet'을 통해 수십 년간의 탐색 노력에도 불구하고 '아무것도 탐지하지 못했다'는 반전 결과를 제시. 이는 ③ 뒤의 새로운 이론 제시로 이어짐."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "infer",
+          "meaning": "추론하다"
+        },
+        {
+          "word": "conclusively",
+          "meaning": "결정적으로"
+        },
+        {
+          "word": "theorist",
+          "meaning": "이론가"
+        }
+      ]
     },
     {
       "id": "reading-basic-p18",
@@ -144,7 +654,37 @@
       "title": "",
       "text": "Cities are experimenting with strategies to combat the urban heat-island effect. ( ① ) Cool roofs coated with reflective paint bounce sunlight back into the atmosphere. ( ② ) Replacing asphalt with permeable, light-colored pavements also helps. ( ③ ) Community groups advocate for expanding green spaces along streets. ( ④ ) Such measures not only reduce cooling costs but also improve air quality. ( ⑤ ) These initiatives show how urban design can mitigate climate change impacts.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-18",
+          "number": "18",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Planting even two trees per house can lower neighborhood temperatures by several degrees.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 4,
+          "explanation": "③에서 녹지 공간 확장을 주장. 주어진 문장은 나무 심기의 구체적인 온도 저감 효과를 제시. ④ 뒤의 'Such measures'는 앞서 언급된 지붕, 포장, 나무 심기 등을 모두 포함하는 요약."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "combat",
+          "meaning": "싸우다, 방지하다"
+        },
+        {
+          "word": "permeable",
+          "meaning": "투과성의"
+        },
+        {
+          "word": "mitigate",
+          "meaning": "완화하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p19",
@@ -152,7 +692,37 @@
       "title": "",
       "text": "Smartphone apps now connect consumers with restaurants that have surplus food nearing closing time. ( ① ) Users can purchase unsold meals at steep discounts, saving money while reducing waste. ( ② ) Participating eateries benefit by recovering some costs that would otherwise be lost. ( ③ ) Environmental advocates applaud the model for its simplicity. ( ④ ) Developers plan to expand the service to include supermarkets and bakeries next. ( ⑤ ) This shows the power of technology to address social problems.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-19",
+          "number": "19",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? In just one year, participating restaurants diverted over two million meals from landfills.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 4,
+          "explanation": "③까지 앱 모델의 장점을 설명. 주어진 문장은 구체적인 성과(2백만 끼니 절약)를 제시하며 앞 내용들을 뒷받침. ④ 뒤의 'Developers plan to expand'는 이 성공에 기반한 향후 계획을 설명."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "surplus",
+          "meaning": "잉여의, 남는"
+        },
+        {
+          "word": "divert",
+          "meaning": "전환하다"
+        },
+        {
+          "word": "applaud",
+          "meaning": "박수갈채를 보내다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p20",
@@ -160,7 +730,37 @@
       "title": "",
       "text": "Scientists have engineered enzymes that break down PET plastic in a matter of hours. ( ① ) The discovery emerged from studying microbes living in a recycling plant. ( ② ) By tweaking the enzyme’s structure, researchers dramatically sped up the reaction. ( ③ ) Pilot facilities are now testing the process on shredded beverage bottles. ( ④ ) If successful, it could shift the economics of plastic reuse worldwide. ( ⑤ ) This breakthrough offers a potential solution to a major environmental problem.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-20",
+          "number": "20",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Scaled up, the technique could recycle billions of bottles currently deemed unrecoverable.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 4,
+          "explanation": "③에서 파일럿 시설 테스트를 언급. 주어진 문장은 이 기술이 '대규모로 확장될 경우'의 잠재력을 설명. ④ 뒤의 'If successful'은 이 잠재력이 실현될 경우의 경제적 파급 효과를 설명."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "enzyme",
+          "meaning": "효소"
+        },
+        {
+          "word": "tweak",
+          "meaning": "수정하다, 변경하다"
+        },
+        {
+          "word": "deem",
+          "meaning": "~로 여기다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p21",
@@ -168,7 +768,37 @@
       "title": "",
       "text": "Archaeologists studying the Nazca culture in Peru have uncovered an extensive system of underground aqueducts. ( ① ) Called puquios, the spiraling shafts drew groundwater to the surface through simple gravity. ( ② ) They were lined with stones to prevent collapse and capped with vents that eased maintenance. ( ③ ) The ingenuity of the design kept water flowing even during prolonged droughts. ( ④ ) Without such engineering, large-scale settlement in the desert plain would have been impossible. ( ⑤ ) Today several of the aqueducts still function, supplying nearby villages.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-21",
+          "number": "21",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? These channels allowed farmers to harvest two crops a year in an otherwise arid climate.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 4,
+          "explanation": "③에서 수로의 독창적 설계를 칭찬. 주어진 문장은 'These channels'를 받아 그 수로 덕분에 가능해진 농업적 성과(연 2회 수확)를 설명. 이는 ④ 뒤의 'such engineering'이 없었다면 정착이 불가능했다는 결론으로 이어짐."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "aqueduct",
+          "meaning": "수로"
+        },
+        {
+          "word": "arid",
+          "meaning": "건조한"
+        },
+        {
+          "word": "ingenuity",
+          "meaning": "독창성"
+        }
+      ]
     },
     {
       "id": "reading-basic-p22",
@@ -176,7 +806,37 @@
       "title": "",
       "text": "Job seekers often rehearse answers to common interview questions, but they sometimes overlook body language. ( ① ) Recruiters say posture, gestures, and facial expressions can speak louder than any résumé bullet. ( ② ) Fidgeting or crossing arms, by contrast, may signal discomfort or defensiveness. ( ③ ) Because first impressions form within seconds, nonverbal cues deserve equal preparation time. ( ④ ) Practicing in front of a mirror or recording oneself can help identify habits that need adjustment. ( ⑤ ) Mastering these silent signals can tip the balance when candidates have similar qualifications.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-22",
+          "number": "22",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Keeping steady eye contact, for instance, shows confidence without a single word.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 2,
+          "explanation": "①에서 비언어적 신호의 중요성을 언급. 주어진 문장은 그 예시로 '눈맞춤'을 제시. ② 뒤의 'by contrast'는 이 긍정적 예시와 대조되는 부정적 예시(꼼지락거림)를 제시."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "rehearse",
+          "meaning": "예행연습하다"
+        },
+        {
+          "word": "fidget",
+          "meaning": "꼼지락거리다"
+        },
+        {
+          "word": "nonverbal cue",
+          "meaning": "비언어적 신호"
+        }
+      ]
     },
     {
       "id": "reading-basic-p23",
@@ -184,7 +844,37 @@
       "title": "",
       "text": "Electrolyzers split water into hydrogen and oxygen using renewable electricity. ( ① ) When operated during periods of excess solar or wind power, they help stabilize the grid. ( ② ) Storing the hydrogen effectively turns clean electricity into a transportable fuel. ( ③ ) Researchers are now developing catalytic membranes that slash production costs. ( ④ ) Countries like Germany plan to build “hydrogen valleys” where industry, heating, and transport all run on the fuel. ( ⑤ ) Critics note, however, that large-scale deployment requires vast amounts of freshwater.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-23",
+          "number": "23",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? The resulting gas can then be fed directly into existing natural-gas pipelines.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 3,
+          "explanation": "②에서 수소를 저장하여 운송 가능한 연료로 만든다고 설명. 주어진 문장은 이 '가스'를 기존 파이프라인에 직접 공급할 수 있다는 활용 방안을 제시. ③ 뒤의 연구 개발 내용과 자연스럽게 연결됨."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "electrolyzer",
+          "meaning": "전기분해장치"
+        },
+        {
+          "word": "catalytic",
+          "meaning": "촉매의"
+        },
+        {
+          "word": "deployment",
+          "meaning": "배치, 전개"
+        }
+      ]
     },
     {
       "id": "reading-basic-p24",
@@ -192,7 +882,37 @@
       "title": "",
       "text": "Economists use the term sunk cost fallacy to describe irrational decision-making. ( ① ) Imagine buying an expensive concert ticket and then falling ill on the day of the show. ( ② ) Rationally, staying home would maximize comfort without changing the fact that the ticket is paid for. ( ③ ) Many concertgoers still drag themselves to the venue despite feeling miserable. ( ④ ) Psychologists suggest that admitting a loss feels like accepting failure, triggering defensive behavior. ( ⑤ ) Recognizing this bias is the first step toward making objectively better choices.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-24",
+          "number": "24",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Yet people often keep pouring time or money into a doomed endeavor simply because they have already invested so much.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 4,
+          "explanation": "③에서 비합리적인 행동(아픈데 콘서트 감)의 예시를 제시. 주어진 문장은 'Yet'을 통해 이러한 비합리적 행동의 일반적인 경향을 설명. ④ 뒤의 내용은 이 행동의 심리학적 원인을 분석."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "sunk cost fallacy",
+          "meaning": "매몰 비용 오류"
+        },
+        {
+          "word": "doomed",
+          "meaning": "운이 다한"
+        },
+        {
+          "word": "objectively",
+          "meaning": "객관적으로"
+        }
+      ]
     },
     {
       "id": "reading-basic-p25",
@@ -200,7 +920,37 @@
       "title": "",
       "text": "Wild bee populations are declining across several continents. ( ① ) Habitat loss, disease, and climate change all contribute to the trend. ( ② ) A growing body of evidence also implicates a class of pesticides called neonicotinoids. ( ③ ) Laboratory tests show these chemicals impair bees’ navigation and reproduction. ( ④ ) Several countries have restricted their use pending further research. ( ⑤ ) Farmers are experimenting with flowering buffer strips to provide alternative forage near fields.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-25",
+          "number": "25",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? If pollinator numbers continue to drop, yields of almonds, apples, and many other crops could plummet.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 4,
+          "explanation": "③에서 살충제가 벌의 번식에 미치는 해로운 영향을 설명. 주어진 문장은 이로 인해 '수분 매개자 수가 감소하면' 농작물 수확량이 급감할 수 있다는 결과를 경고. ④ 뒤의 규제 조치는 이러한 경고에 대한 대응."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "pollinator",
+          "meaning": "꽃가루 매개자"
+        },
+        {
+          "word": "implicate",
+          "meaning": "(나쁜 것의) 원인임을 보여주다"
+        },
+        {
+          "word": "forage",
+          "meaning": "먹이"
+        }
+      ]
     },
     {
       "id": "reading-basic-p26",
@@ -208,7 +958,37 @@
       "title": "",
       "text": "The shipping industry is eyeing autonomous cargo ships as a way to cut costs and emissions. ( ① ) Crews account for a significant portion of operating expenses on long voyages. ( ② ) Remote monitoring centers on shore would take over many navigation tasks. ( ③ ) Machine-learning algorithms continuously update routes to avoid storms and congested lanes. ( ④ ) Regulatory agencies still need to draft safety standards before pilot projects can proceed. ( ⑤ ) Analysts predict commercial deployment before the end of the decade.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-26",
+          "number": "26",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Advanced radar and lidar arrays enable the vessels to detect obstacles even in dense fog.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 4,
+          "explanation": "③까지 자율 운항 선박의 기술적 측면을 설명. 주어진 문장은 'Advanced radar and lidar'가 어떻게 악천후 속에서도 장애물을 탐지하는지 구체적인 기술을 추가 설명. 이는 ④ 뒤의 규제 논의와 연결됨."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "autonomous",
+          "meaning": "자율의"
+        },
+        {
+          "word": "lidar",
+          "meaning": "라이다(레이저 레이더)"
+        },
+        {
+          "word": "deployment",
+          "meaning": "배치"
+        }
+      ]
     },
     {
       "id": "reading-basic-p27",
@@ -216,7 +996,37 @@
       "title": "",
       "text": "Debate persists over whether William Shakespeare wrote all the works attributed to him. ( ① ) Skeptics argue that a man of modest education could not produce such erudite texts. ( ② ) Others propose that nobles like Edward de Vere may have used Shakespeare as a front. ( ③ ) Mainstream scholars counter that surviving records align with the Stratford man’s authorship. ( ④ ) Regardless of the debate, the plays continue to captivate audiences worldwide. ( ⑤ ) Literary puzzles like this remind us how little survives of any writer’s personal life.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-27",
+          "number": "27",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Supporters of the theory point to inconsistencies in spelling and vocabulary across the plays.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 3,
+          "explanation": "②에서 다른 작가 대필설을 제기. 주어진 문장은 'the theory'를 지지하는 근거로 '철자법과 어휘의 불일치'를 제시. ③ 뒤의 주류 학자들의 반박과 자연스럽게 대립 구도를 형성."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "attribute to",
+          "meaning": "~의 덕분으로 보다"
+        },
+        {
+          "word": "erudite",
+          "meaning": "박식한"
+        },
+        {
+          "word": "inconsistency",
+          "meaning": "불일치"
+        }
+      ]
     },
     {
       "id": "reading-basic-p28",
@@ -224,7 +1034,37 @@
       "title": "",
       "text": "Microfinance institutions provide tiny loans to people who lack collateral. ( ① ) Interest rates are higher than traditional bank loans but still lower than informal lenders. ( ② ) Group liability helps ensure repayment because peers monitor one another. ( ③ ) Longitudinal studies show that access to credit increases women’s decision-making power at home. ( ④ ) Critics caution that debt can become burdensome if profits fail to materialize. ( ⑤ ) Many NGOs now pair loans with basic business-skills training.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-28",
+          "number": "28",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Borrowers typically invest in livestock or start small shops, boosting household income.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 3,
+          "explanation": "②에서 그룹 책임 제도를 설명. 주어진 문장은 대출자들이 대출금으로 '무엇을 하는지' 구체적인 용도를 설명. 이는 ③ 뒤의 여성 권한 증가라는 사회적 효과로 이어짐."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "collateral",
+          "meaning": "담보"
+        },
+        {
+          "word": "liability",
+          "meaning": "책임"
+        },
+        {
+          "word": "longitudinal",
+          "meaning": "장기적인"
+        }
+      ]
     },
     {
       "id": "reading-basic-p29",
@@ -232,7 +1072,37 @@
       "title": "",
       "text": "A space elevator would rely on an ultra-long cable stretching from Earth’s surface to geostationary orbit. ( ① ) Freight climbers could ascend the ribbon using electric motors powered from the ground. ( ② ) Atmospheric lightning, micrometeoroids, and orbital debris pose significant hazards to the structure. ( ③ ) Economists argue that once built, the elevator could slash the cost of launching satellites. ( ④ ) Despite decades of conceptual work, materials science remains the primary obstacle. ( ⑤ ) Several teams are racing to produce fibers with the necessary strength-to-weight ratio.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-29",
+          "number": "29",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? To overcome tensile stresses, engineers propose using a carbon-nanotube composite far stronger than steel.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 5,
+          "explanation": "④에서 재료 과학이 주된 장애물임을 언급. 주어진 문장은 이 장애물, 즉 '인장 응력'을 극복하기 위한 구체적인 해결책(탄소나노튜브)을 제시. ⑤ 뒤의 내용은 이 해결책을 개발하려는 경쟁을 설명."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "tensile stress",
+          "meaning": "인장 응력"
+        },
+        {
+          "word": "geostationary",
+          "meaning": "정지궤도의"
+        },
+        {
+          "word": "obstacle",
+          "meaning": "장애물"
+        }
+      ]
     },
     {
       "id": "reading-basic-p30",
@@ -240,7 +1110,37 @@
       "title": "",
       "text": "The term digital nomad describes a growing segment of the workforce. ( ① ) Rising broadband availability and relaxed visa policies make it easier to work from Bali one month and Berlin the next. ( ② ) Coworking spaces cater to the community by offering short-term memberships and networking events. ( ③ ) Critics contend that the lifestyle can blur boundaries between labor and leisure. ( ④ ) Host cities, meanwhile, debate whether the influx stimulates the local economy or drives up rents. ( ⑤ ) Some countries now issue special visas that require proof of remote income.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-30",
+          "number": "30",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? These itinerant professionals combine work and travel, relying on laptops and a steady internet connection.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 1,
+          "explanation": "글의 첫 문장에서 '디지털 노마드'를 정의. 주어진 문장은 'These itinerant professionals'를 받아 그들의 특징(노트북, 인터넷 의존)을 설명하며 정의를 보충. ① 뒤에서 이들의 생활 방식이 가능해진 배경을 설명."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "itinerant",
+          "meaning": "떠돌아다니는"
+        },
+        {
+          "word": "contend",
+          "meaning": "주장하다"
+        },
+        {
+          "word": "influx",
+          "meaning": "유입"
+        }
+      ]
     },
     {
       "id": "reading-basic-p31",
@@ -248,7 +1148,37 @@
       "title": "",
       "text": "Berries owe their vivid colors to compounds known as anthocyanins. ( ① ) These antioxidants neutralize free radicals linked to aging and disease. ( ② ) Clinical trials indicate that regular consumption improves blood vessel function. ( ③ ) Blueberries, strawberries, and blackcurrants each supply a unique blend of phytochemicals. ( ④ ) Freezing the fruit shortly after harvest preserves most nutrients. ( ⑤ ) Processed jams, however, often contain added sugar that offsets potential health gains.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-31",
+          "number": "31",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Nutritionists recommend eating a handful of mixed berries three times a week.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 3,
+          "explanation": "②에서 베리류의 건강상 이점을 설명. 주어진 문장은 이를 바탕으로 구체적인 섭취 권장량을 제시. ③ 뒤의 내용은 다양한 베리류의 성분을 설명하며 앞선 내용을 뒷받침."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "anthocyanin",
+          "meaning": "안토시아닌"
+        },
+        {
+          "word": "neutralize",
+          "meaning": "중화하다"
+        },
+        {
+          "word": "phytochemical",
+          "meaning": "파이토케미컬"
+        }
+      ]
     },
     {
       "id": "reading-basic-p32",
@@ -256,7 +1186,37 @@
       "title": "",
       "text": "Virtual classrooms kept education running during the pandemic. ( ① ) Students appreciated the flexibility of logging in from home. ( ② ) Yet many reported feelings of isolation and screen fatigue. ( ③ ) Technical glitches such as poor audio can derail discussion. ( ④ ) Hybrid models that blend online lectures with periodic in-person sessions aim to capture the best of both worlds. ( ⑤ ) Universities are now redesigning curricula to suit multiple delivery modes.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-32",
+          "number": "32",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Teachers also lament the difficulty of reading body language through tiny webcam windows.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 4,
+          "explanation": "③에서 기술적 결함을 언급. 주어진 문장은 'also'를 사용해 교사들이 겪는 또 다른 어려움(몸짓 읽기)을 추가. ④ 뒤의 하이브리드 모델은 이러한 문제들에 대한 해결책으로 제시됨."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "lament",
+          "meaning": "한탄하다"
+        },
+        {
+          "word": "glitch",
+          "meaning": "작은 문제, 결함"
+        },
+        {
+          "word": "curricula",
+          "meaning": "커리큘럼(복수형)"
+        }
+      ]
     },
     {
       "id": "reading-basic-p33",
@@ -264,7 +1224,37 @@
       "title": "",
       "text": "During World War II, codebreakers at Bletchley Park faced the daunting Enigma cipher. ( ① ) Polish mathematicians had laid crucial groundwork by reconstructing an early machine. ( ② ) Alan Turing and his colleagues built electromechanical bombes that tested thousands of key settings every minute. ( ③ ) Daily intelligence gleaned from decrypted messages guided Allied convoys around U-boat wolf packs. ( ④ ) Secrecy surrounding the project persisted for decades after the war. ( ⑤ ) Historians continue to debate how much the efforts influenced postwar computing.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-33",
+          "number": "33",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Their success shortened the war in Europe by an estimated two years.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 4,
+          "explanation": "③에서 암호 해독으로 얻은 정보의 활용 사례를 설명. 주어진 문장은 'Their success'를 받아 이 성공이 전쟁에 미친 거시적인 영향(2년 단축)을 요약. ④ 뒤의 내용은 전후의 비밀 유지에 대해 서술."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "cipher",
+          "meaning": "암호"
+        },
+        {
+          "word": "glean",
+          "meaning": "(정보를) 얻다, 모으다"
+        },
+        {
+          "word": "convoy",
+          "meaning": "호송대"
+        }
+      ]
     },
     {
       "id": "reading-basic-p34",
@@ -272,7 +1262,37 @@
       "title": "",
       "text": "Residential water use places significant strain on municipal supplies in arid regions. ( ① ) Installing low-flow fixtures is one strategy to reduce consumption. ( ② ) Another involves capturing rainfall in rooftop tanks for later use. ( ③ ) Local codes require separate plumbing to prevent cross-contamination with drinking water. ( ④ ) Homeowners who adopt these measures often see utility bills drop by a third. ( ⑤ ) Community workshops teach residents how to maintain small-scale systems safely.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-34",
+          "number": "34",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Greywater from sinks and showers can irrigate gardens after simple filtration.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 3,
+          "explanation": "②에서 빗물 저장 탱크를 언급. 주어진 문장은 싱크대와 샤워기에서 나온 물(Greywater)을 재활용하는 또 다른 방법을 제시. ③ 뒤의 'Local codes'는 이러한 재활용 시스템에 필요한 규제를 설명."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "strain",
+          "meaning": "부담"
+        },
+        {
+          "word": "fixture",
+          "meaning": "설비"
+        },
+        {
+          "word": "cross-contamination",
+          "meaning": "교차 오염"
+        }
+      ]
     },
     {
       "id": "reading-basic-p35",
@@ -280,7 +1300,37 @@
       "title": "",
       "text": "Bioluminescence—the production of light by living organisms—evolved multiple times across the tree of life. ( ① ) Marine environments host the greatest diversity, from plankton to predators nearly a meter long. ( ② ) The chemical reaction typically involves luciferin substrates and the enzyme luciferase. ( ③ ) Scientists are exploring medical applications such as tracking cancer cells in mice. ( ④ ) Bio-artists have even engineered glowing houseplants using bacterial genes. ( ⑤ ) These experiments raise ethical questions about gene editing for aesthetic purposes.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-35",
+          "number": "35",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Fireflies use the glow to identify mates, while deep-sea squid rely on it for camouflage.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 2,
+          "explanation": "①에서 생물 발광의 다양성을 언급. 주어진 문장은 그 발광의 '목적'이 종에 따라 다름(짝짓기, 위장)을 예시로 설명. ② 뒤의 내용은 발광의 화학적 원리를 설명."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "bioluminescence",
+          "meaning": "생물 발광"
+        },
+        {
+          "word": "luciferin",
+          "meaning": "루시페린"
+        },
+        {
+          "word": "aesthetic",
+          "meaning": "미적인"
+        }
+      ]
     },
     {
       "id": "reading-basic-p36",
@@ -288,7 +1338,37 @@
       "title": "",
       "text": "Economists increasingly study social capital alongside traditional indicators like GDP. ( ① ) Trust facilitates transactions by reducing the need for costly contracts and oversight. ( ② ) Comparative studies reveal that regions where neighbors routinely cooperate experience faster growth. ( ③ ) Policy makers therefore invest in programs that encourage civic participation, from volunteering to local referenda. ( ④ ) Measuring intangible qualities such as trust remains methodologically challenging. ( ⑤ ) Critics caution that cultural factors can distort cross-country comparisons.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-36",
+          "number": "36",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Nations with higher rates of interpersonal trust tend to attract more foreign investment.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 3,
+          "explanation": "②에서 신뢰와 협력이 성장을 촉진함을 설명. 주어진 문장은 이를 국가 단위로 확장하여 '대인 신뢰도'가 외국인 투자 유치에 미치는 영향을 보여줌. ③ 뒤의 정책 입안자들의 노력으로 이어짐."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "social capital",
+          "meaning": "사회적 자본"
+        },
+        {
+          "word": "facilitate",
+          "meaning": "용이하게 하다"
+        },
+        {
+          "word": "intangible",
+          "meaning": "무형의"
+        }
+      ]
     },
     {
       "id": "reading-basic-p37",
@@ -296,7 +1376,37 @@
       "title": "",
       "text": "NASA’s Ingenuity helicopter made history as the first powered aircraft on another world. ( ① ) The 1.8-kilogram craft endured freezing nights thanks to a small solar-charged battery. ( ② ) Its carbon-fiber rotors spin five times faster than those of Earth helicopters to compensate for the thin atmosphere. ( ③ ) Early test hops gathered aerial images that complement the Perseverance rover’s ground-level views. ( ④ ) Mission planners will use these photos to chart safer routes and identify science targets. ( ⑤ ) The technology could pave the way for larger aerial scouts on future missions.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-37",
+          "number": "37",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Engineers hope later flights will navigate rugged Martian terrain beyond the original landing zone.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 5,
+          "explanation": "④에서 수집된 사진의 활용 계획을 설명. 주어진 문장은 'later flights'를 통해 이 헬리콥터의 향후 임무와 희망을 구체적으로 제시. ⑤ 뒤의 내용은 이 기술의 장기적인 비전을 요약."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "rugged",
+          "meaning": "험준한"
+        },
+        {
+          "word": "compensate for",
+          "meaning": "~을 보상하다"
+        },
+        {
+          "word": "scout",
+          "meaning": "정찰병"
+        }
+      ]
     },
     {
       "id": "reading-basic-p38",
@@ -304,7 +1414,37 @@
       "title": "",
       "text": "UNESCO’s Intangible Cultural Heritage list includes practices like Korean pansori singing and Mexican Day of the Dead rituals. ( ① ) Nomination requires demonstrating that the tradition is passed down through generations. ( ② ) Communities must also outline plans to safeguard the practice in the future. ( ③ ) Critics argue that formal listing can freeze cultures in time, discouraging natural evolution. ( ④ ) Governments sometimes politicize the process to promote national branding. ( ⑤ ) Scholars call for greater participation by practitioners in decision-making.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-38",
+          "number": "38",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Such recognition can revitalize dwindling traditions by attracting funding and tourism.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 3,
+          "explanation": "②에서 등재 요건을 설명. 주어진 문장의 'Such recognition'은 유네스코 등재를 가리키며, 그것이 가져오는 긍정적 효과(자금, 관광 유치)를 설명. ③ 뒤의 비판은 이 긍정적 측면과 대조됨."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "revitalize",
+          "meaning": "활력을 불어넣다"
+        },
+        {
+          "word": "dwindling",
+          "meaning": "줄어드는"
+        },
+        {
+          "word": "practitioner",
+          "meaning": "실행자, 종사자"
+        }
+      ]
     },
     {
       "id": "reading-basic-p39",
@@ -312,7 +1452,37 @@
       "title": "",
       "text": "Balancing electricity supply and demand is more complex with intermittent renewables. ( ① ) Demand-response programs encourage consumers to adjust usage when the grid is strained. ( ② ) Smart appliances receive real-time price signals that automate these shifts with minimal inconvenience. ( ③ ) Large industrial facilities participate by pausing non-essential processes for short intervals. ( ④ ) Economists estimate that widespread adoption could negate the need for several peak-load power plants. ( ⑤ ) Privacy advocates, however, worry about utilities collecting detailed household data.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-39",
+          "number": "39",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? During heatwaves, the utility offers bill credits to customers who temporarily raise thermostat settings.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 2,
+          "explanation": "①에서 수요-반응 프로그램을 소개. 주어진 문장은 폭염 시 요금 할인이라는 구체적인 소비자 참여 예시를 제공. ② 뒤의 스마트 가전은 이 프로그램을 자동화하는 기술을 설명."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "intermittent",
+          "meaning": "간헐적인"
+        },
+        {
+          "word": "utility",
+          "meaning": "공공기업 (전력, 수도 등)"
+        },
+        {
+          "word": "negate",
+          "meaning": "무효화하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p40",
@@ -320,7 +1490,37 @@
       "title": "",
       "text": "Children who grow up speaking two languages often outperform monolingual peers on certain cognitive tests. ( ① ) They show particular advantages in delaying gratification and ignoring distractions. ( ② ) Lifelong bilinguals also exhibit a later onset of dementia symptoms on average. ( ③ ) Educators argue that early exposure yields the most pronounced benefits. ( ④ ) Immersion programs therefore introduce second languages as early as kindergarten. ( ⑤ ) Some parents worry about initial confusion, but studies suggest such effects are temporary.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-40",
+          "number": "40",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Researchers attribute the effect to strengthened neural pathways involved in task-switching and attention control.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 2,
+          "explanation": "①에서 이중 언어 사용 아동의 인지적 이점을 언급. 주어진 문장은 'the effect'를 받아 그 원인이 '신경 경로 강화'에 있다고 설명. ② 뒤의 내용은 또 다른 장기적 이점(치매 지연)을 추가."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "outperform",
+          "meaning": "~보다 실적이 좋다"
+        },
+        {
+          "word": "gratification",
+          "meaning": "만족감"
+        },
+        {
+          "word": "pronounced",
+          "meaning": "확연한"
+        }
+      ]
     },
     {
       "id": "reading-basic-p41",
@@ -328,7 +1528,37 @@
       "title": "",
       "text": "Commercial aviation is responsible for roughly 2 percent of global CO₂ emissions. ( ① ) Engineers are therefore exploring sustainable aviation fuel made from waste cooking oil and agricultural residues. ( ② ) Several airlines have begun blending small amounts into regular kerosene on selected routes. ( ③ ) Scaling production remains challenging because feedstock supplies are scattered. ( ④ ) Governments are examining tax incentives to attract new biorefineries. ( ⑤ ) Without policy support, analysts fear widespread adoption could take decades.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-41",
+          "number": "41",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? That fuel can cut lifecycle carbon emissions by up to 80 percent compared with conventional jet A.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 2,
+          "explanation": "①에서 지속가능한 항공유(SAF)를 소개. 주어진 문장의 'That fuel'이 이를 받으며, 탄소 감축 효과를 구체적으로 설명. ② 뒤의 내용은 이 연료의 실제 사용 사례를 제시."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "residue",
+          "meaning": "잔여물"
+        },
+        {
+          "word": "feedstock",
+          "meaning": "원료"
+        },
+        {
+          "word": "biorefinery",
+          "meaning": "바이오 정제소"
+        }
+      ]
     },
     {
       "id": "reading-basic-p42",
@@ -336,7 +1566,37 @@
       "title": "",
       "text": "Researchers recently dated cave markings in Spain to more than 60,000 years ago—well before modern humans arrived in Europe. ( ① ) The ocher stains line the entrance to a stalactite chamber. ( ② ) Microscopic analysis shows they did not form through natural mineral seepage. ( ③ ) If confirmed, the discovery would make Neanderthals the first known cave artists. ( ④ ) Critics argue that contamination might have skewed the age estimates. ( ⑤ ) Further sampling is planned to settle the debate.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-42",
+          "number": "42",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? The pigments appear deliberately mixed, suggesting symbolic intent.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 3,
+          "explanation": "②에서 얼룩이 자연 현상이 아님을 밝힘. 주어진 문장은 '의도적으로 혼합된 안료'라는 추가 분석 결과를 제시하며, 이는 ③ 뒤의 '네안데르탈 예술가'라는 가설의 직접적인 근거가 됨."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "pigment",
+          "meaning": "안료"
+        },
+        {
+          "word": "ocher",
+          "meaning": "황토"
+        },
+        {
+          "word": "seepage",
+          "meaning": "침투, 누수"
+        }
+      ]
     },
     {
       "id": "reading-basic-p43",
@@ -344,7 +1604,37 @@
       "title": "",
       "text": "Individual investors often underestimate the power of compound interest. ( ① ) A person who deposits 100 dollars a month at 6 percent annual return will have about 200,000 dollars after 40 years. ( ② ) By contrast, someone who waits ten years to begin must save almost double to catch up. ( ③ ) Financial-literacy courses now use interactive graphs to illustrate the concept. ( ④ ) Policymakers hope better education will narrow retirement-savings gaps. ( ⑤ ) Automatic enrollment in workplace plans is also gaining traction.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-43",
+          "number": "43",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? This exponential curve explains why starting early yields disproportionately large gains.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 3,
+          "explanation": "②에서 일찍 시작하는 것과 늦게 시작하는 것의 차이를 예시로 보여줌. 주어진 문장은 'This exponential curve'를 통해 이 차이가 발생하는 원리(복리 곡선)를 설명. ③ 뒤의 내용은 이 개념을 교육하는 방법을 설명."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "exponential",
+          "meaning": "기하급수적인"
+        },
+        {
+          "word": "disproportionately",
+          "meaning": "불균형적으로"
+        },
+        {
+          "word": "enrollment",
+          "meaning": "등록"
+        }
+      ]
     },
     {
       "id": "reading-basic-p44",
@@ -352,7 +1642,37 @@
       "title": "",
       "text": "Deepfake videos have grown so convincing that politicians worry about disinformation campaigns. ( ① ) Early detection tools focused on irregular blinking patterns, but creators quickly patched that flaw. ( ② ) Researchers are therefore turning to more granular biometric markers. ( ③ ) Initial tests show the method flags forgeries with 94 percent accuracy. ( ④ ) Social-media platforms plan to integrate the technology before major elections. ( ⑤ ) Civil-rights groups insist that transparency about false positives is essential.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-44",
+          "number": "44",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Algorithms now examine light reflections in the eyes—details so subtle that human reviewers miss them.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 3,
+          "explanation": "②에서 더 세분화된 생체 표식으로 전환한다고 언급. 주어진 문장은 그 구체적인 방법으로 '눈의 빛 반사'를 분석하는 알고리즘을 설명. ③ 뒤의 내용은 이 방법의 초기 테스트 결과를 제시."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "deepfake",
+          "meaning": "딥페이크"
+        },
+        {
+          "word": "granular",
+          "meaning": "세분화된"
+        },
+        {
+          "word": "forgery",
+          "meaning": "위조"
+        }
+      ]
     },
     {
       "id": "reading-basic-p45",
@@ -360,7 +1680,37 @@
       "title": "",
       "text": "El Niño refers to the periodic warming of surface waters in the eastern Pacific. ( ① ) The phenomenon disrupts atmospheric circulation on a global scale. ( ② ) Meteorologists use ocean-buoy data and satellite imagery to predict its onset months in advance. ( ③ ) Governments rely on these forecasts to allocate disaster-relief funds. ( ④ ) La Niña, the cooler counterpart, triggers almost opposite weather anomalies. ( ⑤ ) Understanding both cycles remains crucial for climate-adaptation planning.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-45",
+          "number": "45",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? During an El Niño year, fisheries off Peru often collapse while floods strike normally arid regions.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 2,
+          "explanation": "①에서 엘니뇨가 전 지구적 대기 순환을 방해한다고 설명. 주어진 문장은 그 구체적인 영향으로 페루 어장의 붕괴와 건조 지역의 홍수를 예시로 듦. ② 뒤의 내용은 이러한 현상을 예측하는 방법을 설명."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "fishery",
+          "meaning": "어업, 어장"
+        },
+        {
+          "word": "onset",
+          "meaning": "시작"
+        },
+        {
+          "word": "anomaly",
+          "meaning": "변칙, 이례"
+        }
+      ]
     },
     {
       "id": "reading-basic-p46",
@@ -368,7 +1718,37 @@
       "title": "",
       "text": "Fermented foods such as kimchi and kefir teem with live bacteria. ( ① ) Dietitians note that regular consumption increases microbial diversity in the gut. ( ② ) A recent clinical trial linked higher diversity to reduced inflammation markers. ( ③ ) Scientists caution, however, that benefits vary depending on individual genetics. ( ④ ) Ultra-processed foods, by contrast, appear to diminish beneficial species. ( ⑤ ) Public-health campaigns now encourage adding at least one fermented item to daily meals.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-46",
+          "number": "46",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? These microbes convert fibers into short-chain fatty acids that nourish the intestinal lining.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 2,
+          "explanation": "①에서 발효 식품이 장내 미생물 다양성을 높인다고 설명. 주어진 문장은 'These microbes'가 어떻게 장 건강에 기여하는지 그 메커니즘을 설명. ② 뒤의 임상시험은 이 메커니즘의 결과(염증 감소)를 뒷받침."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "fermented",
+          "meaning": "발효된"
+        },
+        {
+          "word": "intestinal lining",
+          "meaning": "장 내벽"
+        },
+        {
+          "word": "diminish",
+          "meaning": "줄이다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p47",
@@ -376,7 +1756,37 @@
       "title": "",
       "text": "Gray wolves were reintroduced to Yellowstone National Park in 1995 after a 70-year absence. ( ① ) Their return initially sparked concern among ranchers and outfitters. ( ② ) Over time, data showed elk herds becoming more vigilant and less stationary. ( ③ ) The resulting vegetation recovery boosted habitats for songbirds and beavers. ( ④ ) Tourists now flock to the park hoping to glimpse a wolf pack at dawn. ( ⑤ ) Balancing conservation and local livelihoods remains an ongoing challenge.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-47",
+          "number": "47",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Ecologists credit the predators with reducing overbrowsing and allowing willow and aspen to rebound.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 3,
+          "explanation": "②에서 늑대 복원 후 엘크의 행동 변화를 설명. 주어진 문장은 이 포식자(predators)가 초목에 미친 긍정적 효과를 설명. ③ 뒤의 'The resulting vegetation recovery'가 바로 이 효과를 가리킴."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "overbrowsing",
+          "meaning": "과도한 섭식"
+        },
+        {
+          "word": "rebound",
+          "meaning": "회복하다"
+        },
+        {
+          "word": "vigilant",
+          "meaning": "경계하는"
+        }
+      ]
     },
     {
       "id": "reading-basic-p48",
@@ -384,7 +1794,37 @@
       "title": "",
       "text": "Nanoplastics measure under one micrometer—small enough to slip between human cells. ( ① ) Recent studies detected the particles in blood, lungs, and cerebrospinal fluid. ( ② ) Toxicologists are investigating whether they trigger oxidative stress or inflammation. ( ③ ) Regulations currently target only larger microplastics because detection methods for nanoscale fragments are new. ( ④ ) Consumer advocates urge companies to phase out plastic microbeads in cosmetics. ( ⑤ ) Developing standardized testing remains a top priority.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-48",
+          "number": "48",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Scientists even found traces in placental tissue, indicating potential exposure before birth.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 2,
+          "explanation": "①에서 나노플라스틱이 혈액, 폐 등에서 발견되었다고 언급. 주어진 문장은 '심지어 태반 조직에서도' 발견되었다고 하여 문제의 심각성을 심화시킴. ② 뒤의 내용은 이러한 발견에 따른 독성학자들의 우려를 설명."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "placental",
+          "meaning": "태반의"
+        },
+        {
+          "word": "oxidative stress",
+          "meaning": "산화 스트레스"
+        },
+        {
+          "word": "phase out",
+          "meaning": "단계적으로 중단하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p49",
@@ -392,7 +1832,37 @@
       "title": "",
       "text": "Renaissance painters revolutionized visual art through the systematic use of linear perspective. ( ① ) Filippo Brunelleschi famously demonstrated the technique with a painted panel of Florence’s Baptistery. ( ② ) His experiment inspired artists like Masaccio and Piero della Francesca. ( ③ ) The mathematical principles later spread across Europe via printed treatises. ( ④ ) Modern architects still study these texts to understand spatial illusion. ( ⑤ ) Digital-rendering software now automates the calculations in seconds.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-49",
+          "number": "49",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? By plotting lines that converge toward a single vanishing point, they achieved unprecedented depth on flat panels.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 1,
+          "explanation": "글의 첫 문장에서 선형 원근법을 소개. 주어진 문장은 소실점을 이용해 '어떻게' 깊이감을 만들어냈는지 그 원리를 구체적으로 설명. ① 뒤의 내용은 이 기법을 시연한 브루넬레스키의 예시로 이어짐."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "converge",
+          "meaning": "수렴하다"
+        },
+        {
+          "word": "unprecedented",
+          "meaning": "전례 없는"
+        },
+        {
+          "word": "treatise",
+          "meaning": "논문"
+        }
+      ]
     },
     {
       "id": "reading-basic-p50",
@@ -400,7 +1870,37 @@
       "title": "",
       "text": "Finland conducted a nationwide trial of universal basic income from 2017 to 2018. ( ① ) Two thousand unemployed citizens received a monthly stipend with no work requirements. ( ② ) Researchers tracked variables such as job-seeking behavior and mental health. ( ③ ) Critics argued that the sample size was too small to draw firm conclusions. ( ④ ) Other countries, including Canada and Spain, have announced smaller-scale pilots. ( ⑤ ) Economists debate whether unconditional cash transfers can replace fragmented welfare systems.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-50",
+          "number": "50",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Preliminary data showed participants reported lower stress despite minimal changes in employment.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 3,
+          "explanation": "②에서 연구 변수들을 추적했다고 설명. 주어진 문장은 그 '예비 데이터' 결과를 제시. ③ 뒤의 비판은 이 데이터의 한계를 지적."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "stipend",
+          "meaning": "급료, 수당"
+        },
+        {
+          "word": "preliminary",
+          "meaning": "예비의"
+        },
+        {
+          "word": "fragmented",
+          "meaning": "단편적인"
+        }
+      ]
     },
     {
       "id": "reading-basic-p51",
@@ -408,7 +1908,37 @@
       "title": "",
       "text": "As cyberattacks grow more sophisticated, companies are ditching the traditional perimeter model. ( ① ) Zero-trust architecture treats both internal and external networks as potentially hostile. ( ② ) Implementation involves strong authentication, micro-segmentation, and continuous monitoring. ( ③ ) Migrating legacy systems poses technical hurdles and cultural resistance. ( ④ ) The U.S. federal government has mandated agencies to adopt zero-trust by 2027. ( ⑤ ) Vendors now market turnkey solutions, though experts warn no framework is foolproof.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-51",
+          "number": "51",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Instead of assuming anyone inside the firewall is trustworthy, the framework verifies every request.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 2,
+          "explanation": "①에서 제로 트러스트 아키텍처를 정의. 주어진 문장은 방화벽 내부도 신뢰하지 않고 '모든 요청을 검증한다'는 핵심 원칙을 설명. ② 뒤의 내용은 이 원칙을 구현하는 구체적인 방법들을 나열."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "perimeter",
+          "meaning": "주변, 경계"
+        },
+        {
+          "word": "hostile",
+          "meaning": "적대적인"
+        },
+        {
+          "word": "turnkey solution",
+          "meaning": "일괄 해결책"
+        }
+      ]
     },
     {
       "id": "reading-basic-p52",
@@ -416,7 +1946,37 @@
       "title": "",
       "text": "Researchers in Japan have identified a bacterial strain that degrades polyethylene faster than previously recorded. ( ① ) The microbes attach to the plastic’s surface and secrete enzymes that break polymer chains. ( ② ) Laboratory experiments reduced film mass by 30 percent within six weeks. ( ③ ) Field trials are planned in controlled seawater tanks to assess ecological impacts. ( ④ ) Critics worry that releasing engineered organisms could create unforeseen imbalances. ( ⑤ ) Stringent containment protocols are being drafted before outdoor deployment.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-52",
+          "number": "52",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? If scalable, the approach could complement cleanup efforts focused on larger debris.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 5,
+          "explanation": "④에서 공학 유기체 방출에 대한 우려를 언급. 주어진 문장은 이 접근법이 '대규모 쓰레기 정화 노력을 보완'할 수 있다는 잠재적 이점을 제시하며, ⑤ 뒤의 엄격한 프로토콜 논의의 균형을 맞춤."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "strain",
+          "meaning": "종, 품종"
+        },
+        {
+          "word": "secrete",
+          "meaning": "분비하다"
+        },
+        {
+          "word": "stringent",
+          "meaning": "엄격한"
+        }
+      ]
     },
     {
       "id": "reading-basic-p53",
@@ -424,7 +1984,37 @@
       "title": "",
       "text": "Impostor syndrome refers to the persistent belief that one’s success is undeserved. ( ① ) Sufferers attribute accomplishments to luck or external help rather than ability. ( ② ) Psychologists link the phenomenon to perfectionism and minority status in a workplace. ( ③ ) Cognitive-behavioral therapy teaches clients to reframe negative self-talk. ( ④ ) Peer-support groups also provide a safe space to discuss hidden doubts. ( ⑤ ) Employers stand to benefit from addressing the issue through mentorship programs.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-53",
+          "number": "53",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Ironically, high achievers in competitive fields are especially susceptible to the feeling.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 2,
+          "explanation": "①에서 가면 증후군을 정의. 주어진 문장은 '아이러니하게도' 경쟁 분야의 성공한 사람들이 특히 이 감정에 취약하다고 하여 현상의 범위를 특정함. ② 뒤의 내용은 이 현상의 심리학적 원인을 분석."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "impostor syndrome",
+          "meaning": "가면 증후군"
+        },
+        {
+          "word": "susceptible",
+          "meaning": "~에 취약한"
+        },
+        {
+          "word": "reframe",
+          "meaning": "재구성하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p54",
@@ -432,7 +2022,37 @@
       "title": "",
       "text": "In 2017, observatories detected gravitational waves from merging neutron stars for the first time. ( ① ) Within two seconds, telescopes around the world spotted a faint optical flash. ( ② ) Spectroscopic data confirmed the presence of heavy elements like gold and platinum. ( ③ ) The multi-messenger event opened a new era of coordinated astronomy. ( ④ ) Future detectors with greater sensitivity may reveal mergers at cosmological distances. ( ⑤ ) Such observations could refine the Hubble constant by providing independent distance measures.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-54",
+          "number": "54",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? The collision briefly outshone every star in the galaxy at gamma-ray wavelengths.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 2,
+          "explanation": "①에서 광학적 섬광을 포착했다고 설명. 주어진 문장은 이 충돌이 '감마선 파장에서 은하 전체보다 밝았다'고 하여 사건의 규모를 강조. ② 뒤의 분광 데이터는 이 사건의 또 다른 관측 결과."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "outshine",
+          "meaning": "~보다 더 빛나다"
+        },
+        {
+          "word": "spectroscopic",
+          "meaning": "분광학의"
+        },
+        {
+          "word": "cosmological",
+          "meaning": "우주론적인"
+        }
+      ]
     },
     {
       "id": "reading-basic-p55",
@@ -440,7 +2060,37 @@
       "title": "",
       "text": "Several U.S. cities have adopted ranked-choice voting in local elections. ( ① ) Voters order candidates by preference instead of choosing just one. ( ② ) If no contender wins a majority, the least-popular name is eliminated and ballots are redistributed. ( ③ ) Critics say the process can confuse first-time voters and slow results. ( ④ ) Early studies show increased civility during campaigns where the system is used. ( ⑤ ) State-level implementation remains politically contentious.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-55",
+          "number": "55",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Proponents argue it encourages candidates to appeal to a broader electorate rather than a narrow base.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 4,
+          "explanation": "③에서 비판론을 제시. 주어진 문장은 'Proponents'(지지자들)의 주장을 제시하며 비판과 대조를 이룸. ④ 뒤의 내용은 이 제도의 긍정적 효과에 대한 초기 연구 결과를 제시."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "electorate",
+          "meaning": "유권자"
+        },
+        {
+          "word": "contender",
+          "meaning": "경쟁자"
+        },
+        {
+          "word": "contentious",
+          "meaning": "논쟁적인"
+        }
+      ]
     },
     {
       "id": "reading-basic-p56",
@@ -448,7 +2098,37 @@
       "title": "",
       "text": "American Sign Language evolved independently rather than as a signed version of English. ( ① ) Its syntax places topic markers at the beginning of clauses. ( ② ) Verb agreement is shown by directing hand motions toward referents in space. ( ③ ) Linguists classify ASL as a fully fledged language with complex morphology. ( ④ ) Deaf communities continue to enrich the lexicon with new signs for technology terms. ( ⑤ ) Recognition of sign languages in law improves access to education and services.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-56",
+          "number": "56",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Facial expressions and body movements serve grammatical roles absent in spoken tongues.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 3,
+          "explanation": "②에서 동사 일치 방식을 설명. 주어진 문장은 '얼굴 표정과 몸짓'이 구어에 없는 문법적 역할을 한다고 추가 설명. ③ 뒤의 내용은 ASL을 완전한 언어로 분류하는 근거가 됨."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "syntax",
+          "meaning": "통사론, 구문"
+        },
+        {
+          "word": "fully fledged",
+          "meaning": "완전히 발달한"
+        },
+        {
+          "word": "lexicon",
+          "meaning": "어휘"
+        }
+      ]
     },
     {
       "id": "reading-basic-p57",
@@ -456,7 +2136,37 @@
       "title": "",
       "text": "Concrete is the most widely used construction material on Earth. ( ① ) Cracks allow water and salts to corrode the steel reinforcement inside. ( ② ) Maintenance and repair add billions of dollars to infrastructure costs annually. ( ③ ) Engineers are experimenting with mixes that contain bacteria or microcapsules. ( ④ ) Early field tests on bridges show reduced crack width after freeze-thaw cycles. ( ⑤ ) Regulatory codes have yet to address long-term durability of these novel concretes.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-57",
+          "number": "57",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Embedded capsules filled with healing agents rupture when cracks form, sealing the damage.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 4,
+          "explanation": "③에서 자가 치유 콘크리트 실험을 소개. 주어진 문장은 '내장된 캡슐'이 어떻게 작동하는지 그 메커니즘을 설명. ④ 뒤의 내용은 이 메커니즘의 실제 테스트 결과를 보여줌."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "rupture",
+          "meaning": "파열하다"
+        },
+        {
+          "word": "corrode",
+          "meaning": "부식시키다"
+        },
+        {
+          "word": "durability",
+          "meaning": "내구성"
+        }
+      ]
     },
     {
       "id": "reading-basic-p58",
@@ -464,7 +2174,37 @@
       "title": "",
       "text": "The Kula ring is a ceremonial exchange system practiced in Papua New Guinea’s Trobriand Islands. ( ① ) Participants travel great lengths by canoe to trade shell necklaces and armbands. ( ② ) The items never remain with one owner but circulate clockwise and counterclockwise. ( ③ ) Anthropologist Bronisław Malinowski documented the practice in the early twentieth century. ( ④ ) His work challenged Western notions that economics is purely material. ( ⑤ ) Modern researchers analyze how the tradition adapts to tourism and cash economies.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-58",
+          "number": "58",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Gift exchanges create social obligations that bind clans together across vast ocean distances.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 3,
+          "explanation": "②에서 교환 물품이 계속 순환한다고 설명. 주어진 문장은 이 선물 교환이 '사회적 의무'를 만들어 부족을 결속시킨다고 그 사회적 기능을 설명. ③ 뒤의 내용은 이 관행을 기록한 인류학자를 소개."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "ceremonial",
+          "meaning": "의식의"
+        },
+        {
+          "word": "obligation",
+          "meaning": "의무"
+        },
+        {
+          "word": "anthropologist",
+          "meaning": "인류학자"
+        }
+      ]
     },
     {
       "id": "reading-basic-p59",
@@ -472,7 +2212,37 @@
       "title": "",
       "text": "Vaping rates among teenagers have surged despite age restrictions. ( ① ) Manufacturers advertise e-cigarettes as safer alternatives to traditional smoking. ( ② ) Studies indicate nicotine disrupts brain development during adolescence. ( ③ ) Some jurisdictions have introduced flavor bans and stricter sales enforcement. ( ④ ) Opponents argue prohibition could push youth toward unregulated black-market cartridges. ( ⑤ ) Long-term health impacts of inhaling vaporized chemicals remain uncertain.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-59",
+          "number": "59",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Public-health officials warn the products’ fruity flavors make them particularly appealing to adolescents.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 3,
+          "explanation": "②에서 니코틴의 유해성을 언급. 주어진 문장은 '과일 맛'이 청소년에게 특히 매력적이라는 공중 보건 당국의 경고를 추가. 이는 ③ 뒤의 '맛 금지' 조치의 직접적인 배경이 됨."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "vaping",
+          "meaning": "전자담배 흡연"
+        },
+        {
+          "word": "jurisdiction",
+          "meaning": "관할 구역"
+        },
+        {
+          "word": "cartridge",
+          "meaning": "카트리지"
+        }
+      ]
     },
     {
       "id": "reading-basic-p60",
@@ -480,7 +2250,37 @@
       "title": "",
       "text": "Soft robotics draws inspiration from octopus arms and elephant trunks. ( ① ) Traditional metal actuators struggle to interact safely with delicate objects. ( ② ) Silicone shells embedded with elastic fibers can twist, bend, and grip. ( ③ ) Researchers envision applications in minimally invasive surgery and disaster-site search. ( ④ ) Challenges include integrating sensors that can stretch without breaking. ( ⑤ ) Efficient power sources are also needed to untether robots from bulky compressors.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-60",
+          "number": "60",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Instead of rigid joints, these machines rely on pressurized air to achieve fluid, lifelike motions.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 2,
+          "explanation": "①에서 전통 로봇의 한계를 지적. 주어진 문장은 '경직된 관절 대신' 압축 공기를 사용한다는 소프트 로봇의 핵심 원리를 설명. ② 뒤의 내용은 이 원리를 구현하는 구체적인 재료(실리콘)를 설명."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "actuator",
+          "meaning": "작동기"
+        },
+        {
+          "word": "envision",
+          "meaning": "상상하다"
+        },
+        {
+          "word": "untether",
+          "meaning": "(묶인 것을) 풀다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p61",
@@ -488,7 +2288,37 @@
       "title": "",
       "text": "Portable water filters let hikers drink safely from streams, reducing the weight they must carry. ( ① ) Early models strained a litre per minute, and this speed convinced backpackers to leave bulky canteens behind. ( ② ) However, clogged membranes can slow flow to a trickle, and these frustrations tempt users to skip filtration. ( ③ ) In these cases, illness risk returns. ( ④ ) As a result, adoption climbs. ( ⑤ ) Such convenience changed route planning.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-61",
+          "number": "61",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Field tests show that back-flush valves clear sediment in under a minute, and such maintenance restores flow rate.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 3,
+          "explanation": "②에서 필터 막힘 문제를 제기. 주어진 문장은 '역세척 밸브'라는 해결책과 그 효과를 설명. ③ 뒤의 문장은 이 해결책으로 인해 발생하는 질병 위험 감소를 설명."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "strain",
+          "meaning": "걸러내다"
+        },
+        {
+          "word": "canteen",
+          "meaning": "물통"
+        },
+        {
+          "word": "sediment",
+          "meaning": "침전물"
+        }
+      ]
     },
     {
       "id": "reading-basic-p62",
@@ -496,7 +2326,37 @@
       "title": "",
       "text": "Quantum-dot displays promise richer colours while consuming less power than conventional LCDs. ( ① ) Researchers first suspended nano-crystals in polymer films, and these layers converted blue LED light into precise hues. ( ② ) However, some cadmium-based dots leach heavy metals during disposal, and these hazards trigger recycling fees. ( ③ ) In these markets, costs rise. ( ④ ) As a result, TV makers switch suppliers. ( ⑤ ) Such precision dazzled reviewers.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-62",
+          "number": "62",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Next-generation indium-phosphide dots match colour purity without toxic elements, and such chemistry clears regulatory hurdles.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 4,
+          "explanation": "③에서 카드뮴 기반 퀀텀닷의 유해성 문제를 제기. 주어진 문장은 '차세대' 인듐-인화물 닷이 이 문제를 해결한다고 설명. ④ 뒤의 'As a result'는 이 해결책 덕분에 TV 제조사들이 공급업체를 바꾼다는 결과를 보여줌."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "quantum-dot",
+          "meaning": "양자점"
+        },
+        {
+          "word": "leach",
+          "meaning": "침출되다"
+        },
+        {
+          "word": "hurdle",
+          "meaning": "장애물"
+        }
+      ]
     },
     {
       "id": "reading-basic-p63",
@@ -504,7 +2364,37 @@
       "title": "",
       "text": "DNA barcoding lets ecologists identify species from tiny tissue samples within hours. ( ① ) Portable sequencers now fit in a backpack, and such mobility brings labs to rainforests. ( ② ) However, database gaps mean that 20 percent of reads return “unknown,” and these blind spots hamper conservation plans. ( ③ ) In these gaps, funding falters. ( ④ ) As a result, match rates climb. ( ⑤ ) These gadgets upend fieldwork logistics.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-63",
+          "number": "63",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Consequently, citizen scientists upload reference genomes from museum specimens, and such crowdsourcing fills taxonomic voids.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 4,
+          "explanation": "③에서 데이터베이스 공백 문제를 언급. 주어진 문장은 'Consequently'를 통해 시민 과학자들이 이 공백을 메우는 해결책을 제시. ④ 뒤의 'As a result'는 이 해결책의 긍정적 결과를 설명."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "sequencer",
+          "meaning": "염기서열 분석기"
+        },
+        {
+          "word": "hamper",
+          "meaning": "방해하다"
+        },
+        {
+          "word": "taxonomic",
+          "meaning": "분류학의"
+        }
+      ]
     },
     {
       "id": "reading-basic-p64",
@@ -512,7 +2402,37 @@
       "title": "",
       "text": "Electric scooters offer a last-mile option but often clog sidewalks of busy downtowns. ( ① ) Start-ups first flooded streets overnight, and these sudden roll-outs delighted commuters. ( ② ) However, pedestrians complained about blocked ramps, and these grievances sparked nightly impound sweeps. ( ③ ) In these raids, fleets shrank. ( ④ ) As a result, city councils renew permits. ( ⑤ ) Such novelty spiked ridership.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-64",
+          "number": "64",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Geofenced slow-zones now cut speed near schools, and such controls reduce accidents.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 4,
+          "explanation": "③에서 스쿠터 압수라는 강경 조치를 설명. 주어진 문장은 '지오펜싱된 저속 구역'이라는 보다 기술적인 해결책을 제시. ④ 뒤의 'As a result'는 이러한 조치들 덕분에 시의회가 허가를 갱신한다는 결론으로 이어짐."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "clog",
+          "meaning": "막다"
+        },
+        {
+          "word": "geofenced",
+          "meaning": "지오펜싱된"
+        },
+        {
+          "word": "impound",
+          "meaning": "압수하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p65",
@@ -520,7 +2440,37 @@
       "title": "",
       "text": "Peer-to-peer car-sharing platforms utilise idle vehicles. ( ① ) Early adopters earned enough to offset car payments, and these testimonies fuelled word-of-mouth growth. ( ② ) However, insurance loopholes once left accidents in limbo, and these horrors scared away hosts. ( ③ ) In these lawsuits, payouts dragged. ( ④ ) Consequently, listings surge. ( ⑤ ) Such momentum caught automakers’ attention.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-65",
+          "number": "65",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Blockchain smart contracts now timestamp hand-offs and embed coverage terms, and such clarity speeds claims.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 4,
+          "explanation": "③에서 보험 처리 지연 문제를 언급. 주어진 문장은 '블록체인 스마트 계약'이라는 기술적 해결책과 그 효과를 설명. ④ 뒤의 'Consequently'는 이 해결책으로 인해 리스팅이 급증했다는 결과를 보여줌."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "utilise",
+          "meaning": "활용하다"
+        },
+        {
+          "word": "loophole",
+          "meaning": "허점"
+        },
+        {
+          "word": "limbo",
+          "meaning": "불확실한 상태"
+        }
+      ]
     },
     {
       "id": "reading-basic-p66",
@@ -528,7 +2478,37 @@
       "title": "",
       "text": "Algae biofuel research aims to replace diesel without occupying arable land. ( ① ) Open ponds capture CO₂ from flue gases, and such synergy cuts feedstock costs. ( ② ) However, wild strains invade ponds and out-compete high-lipid cultures, slashing yields. ( ③ ) In these seasons, harvest tanks run empty. ( ④ ) As a result, pilot plants scale up. ( ⑤ ) These savings lure utilities.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-66",
+          "number": "66",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Therefore, photobioreactors with UV-sterilised inlets now shield cultures, and such containment doubles oil output.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 4,
+          "explanation": "③에서 야생 균주 침입 문제를 제기. 주어진 문장은 'Therefore'를 통해 '광생물반응기'라는 해결책과 그 효과를 설명. ④ 뒤의 'As a result'는 이 해결책 덕분에 파일럿 플랜트가 확장된다는 결과를 보여줌."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "arable",
+          "meaning": "경작 가능한"
+        },
+        {
+          "word": "synergy",
+          "meaning": "시너지"
+        },
+        {
+          "word": "photobioreactor",
+          "meaning": "광생물반응기"
+        }
+      ]
     },
     {
       "id": "reading-basic-p67",
@@ -536,7 +2516,37 @@
       "title": "",
       "text": "AI chatbots handle customer inquiries 24 hours a day, freeing human agents for complex cases. ( ① ) Retailers first deployed bots to answer order-tracking questions, and these successes cut call-centre queues by half. ( ② ) However, sentiment analysis sometimes misreads sarcasm, and these errors escalate complaints. ( ③ ) In these transcripts, brand scores dip. ( ④ ) Consequently, satisfaction metrics recover. ( ⑤ ) Such ROI pleased CFOs.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-67",
+          "number": "67",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Hybrid workflows now route negative tones to live staff within 30 seconds, and such triage calms tempers.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 4,
+          "explanation": "③에서 챗봇의 감정 분석 오류 문제를 제기. 주어진 문장은 '하이브리드 워크플로우'라는 해결책을 제시. ④ 뒤의 'Consequently'는 이 해결책으로 인해 만족도가 회복된다는 결과를 보여줌."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "inquiry",
+          "meaning": "문의"
+        },
+        {
+          "word": "triage",
+          "meaning": "분류"
+        },
+        {
+          "word": "metric",
+          "meaning": "측정 기준"
+        }
+      ]
     },
     {
       "id": "reading-basic-p68",
@@ -544,7 +2554,37 @@
       "title": "",
       "text": "Carbon-offset markets let firms invest in reforestation to balance residual emissions. ( ① ) Early schemes measured plots once a decade, and these lax rules allowed paper credits to multiply. ( ② ) However, satellite audits found that 15 percent of credited forests had already burned, and these scandals tanked certificate prices. ( ③ ) In these crashes, buyers paused. ( ④ ) As a result, volumes rebound. ( ⑤ ) Such over-issuance masked deforestation.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-68",
+          "number": "68",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Consequently, registries now require real-time canopy monitoring, and such transparency rebuilds trust.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 4,
+          "explanation": "③에서 신용 인증서 시장 붕괴를 설명. 주어진 문장은 'Consequently'를 통해 '실시간 모니터링'이라는 신뢰 회복 조치를 제시. ④ 뒤의 'As a result'는 이 조치로 인해 거래량이 회복된다는 결과를 보여줌."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "offset",
+          "meaning": "상쇄하다"
+        },
+        {
+          "word": "lax",
+          "meaning": "느슨한"
+        },
+        {
+          "word": "canopy",
+          "meaning": "수관(숲의 윗부분)"
+        }
+      ]
     },
     {
       "id": "reading-basic-p69",
@@ -552,7 +2592,37 @@
       "title": "",
       "text": "Wearable exoskeletons assist factory workers in lifting heavy loads, reducing injuries. ( ① ) Initial prototypes halved back-strain reports, and these gains caught regulators’ attention. ( ② ) However, stiff joints restrict bending, and these limitations slow workflows. ( ③ ) In these trials, managers complain. ( ④ ) Consequently, units roll out across warehouses. ( ⑤ ) Such evidence shaped safety grants.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-69",
+          "number": "69",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Soft-robotic actuators now flex with human motion, and such comfort boosts throughput.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 4,
+          "explanation": "③에서 경직된 관절 문제를 제기. 주어진 문장은 '소프트 로봇 액추에이터'라는 해결책과 그 효과를 설명. ④ 뒤의 'Consequently'는 이 해결책 덕분에 제품이 널리 보급된다는 결과를 보여줌."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "exoskeleton",
+          "meaning": "외골격"
+        },
+        {
+          "word": "actuator",
+          "meaning": "작동기"
+        },
+        {
+          "word": "throughput",
+          "meaning": "처리량"
+        }
+      ]
     },
     {
       "id": "reading-basic-p70",
@@ -560,7 +2630,37 @@
       "title": "",
       "text": "Underground farms use stacked LED racks to grow greens year-round beneath cities. ( ① ) During trials, chefs praised pesticide-free basil delivered within hours, and these endorsements filled order books. ( ② ) However, cooling costs spike when heat from lamps accumulates, and these bills erase margins. ( ③ ) In these basements, thermostats struggle. ( ④ ) As a result, profit returns. ( ⑤ ) Such freshness sets premium prices.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-70",
+          "number": "70",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Heat-exchange ducts now redirect warmth to neighbouring offices, and such symbiosis offsets energy use.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 4,
+          "explanation": "③에서 냉각 비용 문제를 제기. 주어진 문장은 '열 교환 덕트'라는 해결책과 그 효과를 설명. ④ 뒤의 'As a result'는 이 해결책으로 인해 수익성이 돌아온다는 결과를 보여줌."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "duct",
+          "meaning": "도관, 관"
+        },
+        {
+          "word": "symbiosis",
+          "meaning": "공생"
+        },
+        {
+          "word": "offset",
+          "meaning": "상쇄하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p71",
@@ -568,7 +2668,37 @@
       "title": "",
       "text": "Corporate carbon-offset programs plant monoculture pine forests that sequester CO₂ quickly but offer scant habitat diversity. ( ① ) Ecologists advocate mixed-species projects using native seedlings that mature more slowly yet resist pests and wildfire. ( ② ) Accounting frameworks still reward tons captured per dollar, ignoring resilience metrics. ( ③ ) Some companies now purchase “biodiversity credits” alongside carbon certificates, aligning climate and conservation goals. ( ④ ) Sustainable reforestation depends on metrics that value ecological complexity instead of chase short-term numbers. ( ⑤ )",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-71",
+          "number": "71",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Regulatory clarity could accelerate this trend by integrating both into one ledger.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 4,
+          "explanation": "③에서 기업들이 탄소 배출권과 생물다양성 배출권을 함께 구매하는 추세를 언급. 주어진 문장은 '이러한 추세'를 가속화할 수 있는 정책적 방안(통합 원장)을 제시. ④ 뒤의 내용은 지속가능한 재조림의 조건을 요약."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "monoculture",
+          "meaning": "단일 경작"
+        },
+        {
+          "word": "sequester",
+          "meaning": "격리하다"
+        },
+        {
+          "word": "ledger",
+          "meaning": "원장, 기록"
+        }
+      ]
     },
     {
       "id": "reading-basic-p72",
@@ -576,7 +2706,37 @@
       "title": "",
       "text": "Crowds cheer robotic exoskeleton races where paraplegic athletes sprint down stadium tracks. ( ① ) The spectacle raises awareness, yet most rehab clinics cannot afford six-figure suits. ( ② ) Engineers test 3-D-printed joints that cut costs by two-thirds, but regulatory approvals lag behind innovation. ( ③ ) Charity trials demonstrate life-changing mobility, though battery weight still strains shoulders after extended use. ( ④ ) Insurers remain cautious without long-term durability data. ( ⑤ )",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-72",
+          "number": "72",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Closing the accessibility gap will require funding models that scale assistance universally.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 5,
+          "explanation": "①~④는 접근성 격차의 여러 측면(비용, 규제, 기술적 한계)을 설명. 주어진 문장은 이 모든 문제를 해결하기 위해 '보편적 지원'을 확장하는 펀딩 모델이 필요하다는 결론을 제시."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "paraplegic",
+          "meaning": "하반신 마비의"
+        },
+        {
+          "word": "exoskeleton",
+          "meaning": "외골격"
+        },
+        {
+          "word": "universally",
+          "meaning": "보편적으로"
+        }
+      ]
     },
     {
       "id": "reading-basic-p73",
@@ -584,7 +2744,37 @@
       "title": "",
       "text": "Coastal cities raise seawalls to block storm surges, yet impermeable barriers reflect wave energy that scours adjacent beaches. ( ① ) Marine architects propose “living breakwaters” built from oyster reefs that grow thicker each season. ( ② ) Pilot sites reduce erosion and revive fisheries, but construction timelines outlast most political cycles. ( ③ ) Voters often demand visible cement before the next election, pushing bureaucrats toward quick fixes. ( ④ ) This highlights a classic conflict between short-term politics and long-term ecological solutions. ( ⑤ )",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-73",
+          "number": "73",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Policy continuity will depend on communication campaigns that highlight long-term payoffs.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 5,
+          "explanation": "④에서 단기 정치와 장기 생태 해결책 사이의 갈등을 요약. 주어진 문장은 이 갈등을 해결하기 위해 '장기적 이익을 강조'하는 캠페인이 필요하다는 결론적 제안을 함."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "impermeable",
+          "meaning": "불투과성의"
+        },
+        {
+          "word": "scour",
+          "meaning": "침식시키다"
+        },
+        {
+          "word": "payoff",
+          "meaning": "이익, 보상"
+        }
+      ]
     },
     {
       "id": "reading-basic-p74",
@@ -592,7 +2782,37 @@
       "title": "",
       "text": "Augmented-reality glasses overlay repair manuals onto factory machines, slashing downtime for novice technicians. ( ① ) Productivity charts rise, but union leaders worry that skill devaluation will justify staff reductions. ( ② ) Management counters that AR up-skills workers faster, qualifying them for higher-tier tasks. ( ③ ) Economists note that technology often polarizes labor markets unless accompanied by retraining programs. ( ④ ) The debate highlights the dual nature of automation. ( ⑤ )",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-74",
+          "number": "74",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Sustainable adoption thus hinges on HR strategies that share efficiency gains rather than erode employment quality.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 5,
+          "explanation": "④에서 자동화의 이중적 성격에 대한 논쟁을 요약. 주어진 문장은 '따라서' 지속 가능한 도입은 고용의 질을 잠식하는 대신 '효율성 이익을 공유'하는 전략에 달려있다는 결론을 제시."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "slash",
+          "meaning": "대폭 줄이다"
+        },
+        {
+          "word": "devaluation",
+          "meaning": "평가절하"
+        },
+        {
+          "word": "polarize",
+          "meaning": "양극화하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p75",
@@ -600,7 +2820,37 @@
       "title": "",
       "text": "Invasive lionfish devour juvenile reef fish across the Caribbean, yet their flesh is safe and tasty. ( ① ) Chefs promote “eat the enemy” campaigns, turning ecological menace into gourmet entrée. ( ② ) Fishing tournaments offer cash prizes, but scuba gear limits catch volume compared with the species’ explosive reproduction. ( ③ ) Marine biologists caution that culinary demand must persist past trend cycles to dent populations. ( ④ ) This requires consistent marketing and distribution efforts. ( ⑤ )",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-75",
+          "number": "75",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Success will depend on supply chains that keep demand sustained from reef to restaurant.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 5,
+          "explanation": "④에서 지속적인 수요의 필요성을 언급. 주어진 문장은 이를 달성하기 위한 구체적인 방법으로 '산지에서 식당까지 이어지는 공급망'을 제시하며 글을 마무리."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "invasive",
+          "meaning": "침입성의"
+        },
+        {
+          "word": "menace",
+          "meaning": "위협"
+        },
+        {
+          "word": "dent",
+          "meaning": "움푹 들어가게 하다, 줄이다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p76",
@@ -608,7 +2858,37 @@
       "title": "",
       "text": "Digital twins of entire cities run inside supercomputers, testing where floodwaters will collect after record rain. ( ① ) Mayors preview evacuation routes months before clouds gather. ( ② ) Yet unequal data coverage means informal settlements often appear as blank spots, erasing vulnerable populations from simulations. ( ③ ) Civic technologists push for participatory mapping workshops using smartphones and drones. ( ④ ) This approach helps fill the data gaps. ( ⑤ )",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-76",
+          "number": "76",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Resilience analytics must therefore include overlooked neighborhoods to be truly effective.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 5,
+          "explanation": "④에서 데이터 격차를 메우는 접근법을 설명. 주어진 문장은 '따라서' 진정으로 효과적이려면 '소외된 지역을 포함해야 한다'는 결론을 내림."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "digital twin",
+          "meaning": "디지털 트윈"
+        },
+        {
+          "word": "resilience",
+          "meaning": "회복력"
+        },
+        {
+          "word": "participatory",
+          "meaning": "참여의"
+        }
+      ]
     },
     {
       "id": "reading-basic-p77",
@@ -616,7 +2896,37 @@
       "title": "",
       "text": "Gig-economy grocery shoppers race to beat 15-minute delivery promises, weaving scooters through traffic. ( ① ) Insurance premiums skyrocket, but drivers keep phones mounted on handlebars to track constantly updating routes. ( ② ) City officials debate speed-governor mandates, while platforms test batching orders to reduce mileage. ( ③ ) These measures aim to balance speed with safety. ( ④ ) However, the core incentive structure remains unchanged. ( ⑤ )",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-77",
+          "number": "77",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Worker safety ultimately rests on algorithms that favor sustainable pacing instead of reward reckless haste.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 5,
+          "explanation": "④에서 핵심 인센티브 구조가 변하지 않았다고 지적. 주어진 문장은 '궁극적으로' 근로자 안전은 무모한 속도를 보상하는 대신 '지속 가능한 속도를 선호'하는 알고리즘에 달려있다는 근본적인 해결책을 제시."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "gig-economy",
+          "meaning": "긱 경제"
+        },
+        {
+          "word": "mandate",
+          "meaning": "명령, 지시"
+        },
+        {
+          "word": "reckless",
+          "meaning": "무모한"
+        }
+      ]
     },
     {
       "id": "reading-basic-p78",
@@ -624,7 +2934,37 @@
       "title": "",
       "text": "DNA-editing tools let conservationists contemplate “gene-drive” mosquitoes engineered to resist malaria parasites. ( ① ) Field releases could slash disease burden, yet ecological side-effects remain uncertain. ( ② ) Critics cite past biological controls that backfired, such as cane toads overrunning Australia. ( ③ ) Regulators weigh the moral cost of inaction against potential unintended cascades. ( ④ ) Decision frameworks must balance urgent public health with biodiversity ethics. ( ⑤ )",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-78",
+          "number": "78",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Prudent governance will arise from consultations that weigh cross-species risks before deployment.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 5,
+          "explanation": "④에서 다양한 이해관계를 저울질해야 하는 의사결정 프레임워크를 언급. 주어진 문장은 신중한 거버넌스는 '배포 전 종간 위험을 평가'하는 협의에서 나올 것이라는 결론을 제시."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "contemplate",
+          "meaning": "고려하다"
+        },
+        {
+          "word": "prudent",
+          "meaning": "신중한"
+        },
+        {
+          "word": "cascade",
+          "meaning": "연쇄 효과"
+        }
+      ]
     },
     {
       "id": "reading-basic-p79",
@@ -632,7 +2972,37 @@
       "title": "",
       "text": "Remote-sensing satellites detect methane plumes invisible to pilots flying overhead. ( ① ) Oil companies pledge rapid repairs, yet subcontractor crews can take weeks to arrive. ( ② ) A start-up now pairs leak alarms with local drone operators who carry epoxy patches, shrinking response times to hours. ( ③ ) Regulatory credits reward enterprises that meet reduction targets. ( ④ ) Climate advocates warn that monitoring without fines invites green-washing. ( ⑤ )",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-79",
+          "number": "79",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Effective mitigation stems from rules that couple accountability measures alongside transparency.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 5,
+          "explanation": "④에서 벌금 없는 모니터링의 한계를 지적. 주어진 문장은 효과적인 완화는 투명성과 함께 '책임 조치'를 결합하는 규칙에서 비롯된다는 결론을 제시."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "plume",
+          "meaning": "(연기 등의) 기둥"
+        },
+        {
+          "word": "mitigation",
+          "meaning": "완화"
+        },
+        {
+          "word": "accountability",
+          "meaning": "책임"
+        }
+      ]
     },
     {
       "id": "reading-basic-p80",
@@ -640,7 +3010,37 @@
       "title": "",
       "text": "Language-learning apps bombard users with daily streak counters and cartoon trophies, funnelling them toward multiple-choice drills. ( ① ) Linguists argue that passive recognition differs from active recall needed for spontaneous conversation. ( ② ) Some platforms now integrate AI chat partners that adapt to learner errors in real time. ( ③ ) Early studies show higher speaking confidence but also highlight over-politeness compared with real-world slang. ( ④ ) This suggests a gap between the app's world and reality. ( ⑤ )",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-80",
+          "number": "80",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Pedagogical value depends on dialogue engines that approximate street speech.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 5,
+          "explanation": "④에서 앱의 세계와 현실 사이의 격차를 지적. 주어진 문장은 교육적 가치는 '실제 구어에 근접한' 대화 엔진에 달려있다는 결론을 내림."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "bombard",
+          "meaning": "퍼붓다"
+        },
+        {
+          "word": "pedagogical",
+          "meaning": "교육학적인"
+        },
+        {
+          "word": "approximate",
+          "meaning": "~와 비슷하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p81",
@@ -648,7 +3048,37 @@
       "title": "",
       "text": "Art forgers have grown more sophisticated with access to industrial pigments and antique canvases. ( ① ) Traditional authentication relies on X-ray fluorescence and provenance documents. ( ② ) Disputes arise when scientific tests contradict family archives. ( ③ ) Museums increasingly enlist computer vision to analyze brush-stroke micro-patterns. ( ④ ) Legal battles can drag on for years, leaving paintings in storage. ( ⑤ ) The stakes are high because a single verdict can swing prices by millions.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-81",
+          "number": "81",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Machine-learning experts now train generative adversarial networks to recreate missing portions, aiding curators in spotting inconsistencies.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 4,
+          "explanation": "③에서 컴퓨터 비전 분석을 언급. 주어진 문장은 이를 더 발전시킨 '생성적 적대 신경망(GAN)' 기술을 소개. ④ 뒤의 법적 분쟁 내용과 대비됨."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "forger",
+          "meaning": "위조범"
+        },
+        {
+          "word": "provenance",
+          "meaning": "출처, 유래"
+        },
+        {
+          "word": "curator",
+          "meaning": "큐레이터"
+        }
+      ]
     },
     {
       "id": "reading-basic-p82",
@@ -656,7 +3086,37 @@
       "title": "",
       "text": "Vertical farms stack hydroponic trays inside climate-controlled warehouses. ( ① ) Automation handles seeding, nutrient dosing, and harvesting. ( ② ) Energy remains the largest operating cost, particularly for lighting. ( ③ ) Advocates say proximity to cities slashes food-mile emissions. ( ④ ) Critics question whether the model can scale beyond leafy greens. ( ⑤ ) Government grants support pilots that pair farms with rooftop solar panels.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-82",
+          "number": "82",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? LED arrays tuned to specific wavelengths maximize photosynthesis while cutting electricity use.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 3,
+          "explanation": "②에서 조명으로 인한 에너지 비용 문제를 제기. 주어진 문장은 '특정 파장에 맞춰진 LED'가 이 문제를 해결하는 구체적인 기술임을 설명. ③ 뒤의 내용은 도시 근접성의 또 다른 이점을 설명."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "hydroponic",
+          "meaning": "수경재배의"
+        },
+        {
+          "word": "dosing",
+          "meaning": "투여"
+        },
+        {
+          "word": "proximity",
+          "meaning": "근접성"
+        }
+      ]
     },
     {
       "id": "reading-basic-p83",
@@ -664,7 +3124,37 @@
       "title": "",
       "text": "Cognitive-load theory argues that working memory has limited capacity. ( ① ) Overloading students with extraneous information hinders learning. ( ② ) Multimedia presentations that mix flashing text and loud music are prime offenders. ( ③ ) Clear visuals and concise narration lower extraneous demands. ( ④ ) Online course platforms therefore include features like adjustable playback speed. ( ⑤ ) Research shows that spacing content improves long-term retention.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-83",
+          "number": "83",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? To reduce load, designers break lessons into short segments followed by low-stakes quizzes.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 4,
+          "explanation": "③에서 인지 부하를 줄이는 일반적인 방법을 설명. 주어진 문장은 '부하를 줄이기 위해' 수업을 짧게 나누고 퀴즈를 활용하는 구체적인 설계 전략을 제시. ④ 뒤의 내용은 이러한 전략을 지원하는 플랫폼 기능을 설명."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "extraneous",
+          "meaning": "관련 없는"
+        },
+        {
+          "word": "low-stakes",
+          "meaning": "부담이 적은"
+        },
+        {
+          "word": "retention",
+          "meaning": "보유, 기억"
+        }
+      ]
     },
     {
       "id": "reading-basic-p84",
@@ -672,7 +3162,37 @@
       "title": "",
       "text": "The EU plans to introduce a carbon-border adjustment mechanism in 2026. ( ① ) The policy targets steel, cement, and aluminum initially. ( ② ) Officials fear “carbon leakage” if companies relocate factories to countries with lax rules. ( ③ ) Trading partners warn the tariff could spark retaliation. ( ④ ) Analysts say the measure may incentivize cleaner production abroad. ( ⑤ ) Details of free-allocation phase-outs are still under negotiation.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-84",
+          "number": "84",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Importers must purchase certificates matching the embedded emissions of each shipment.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 2,
+          "explanation": "①에서 정책 대상을 명시. 주어진 문장은 수입업자가 '어떻게' 이 정책을 준수해야 하는지(인증서 구매) 그 메커니즘을 설명. ② 뒤의 내용은 이 정책의 배경이 되는 '탄소 누출' 우려를 설명."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "embedded",
+          "meaning": "내재된"
+        },
+        {
+          "word": "lax",
+          "meaning": "느슨한"
+        },
+        {
+          "word": "retaliation",
+          "meaning": "보복"
+        }
+      ]
     },
     {
       "id": "reading-basic-p85",
@@ -680,7 +3200,37 @@
       "title": "",
       "text": "Microcredit is celebrated for expanding access to finance, yet interest charges draw criticism. ( ① ) Traditional banks spread administrative costs over large loans. ( ② ) Micro-lenders, in contrast, visit remote villages to collect weekly payments. ( ③ ) Technology like mobile wallets lowers some operating expenses. ( ④ ) Regulators debate imposing caps that might shrink credit supply. ( ⑤ ) Borrowers’ ability to graduate to formal banking remains an open question.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-85",
+          "number": "85",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? High default risk and small loan size explain rates that often exceed 30 percent annually.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 3,
+          "explanation": "②에서 소액 대출 기관의 높은 운영 비용을 암시. 주어진 문장은 '높은 채무 불이행 위험과 소액 대출 규모'가 왜 높은 이자율로 이어지는지 그 이유를 명확히 설명. ③ 뒤의 내용은 기술을 통한 비용 절감 노력을 설명."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "microcredit",
+          "meaning": "소액 대출"
+        },
+        {
+          "word": "default",
+          "meaning": "채무 불이행"
+        },
+        {
+          "word": "cap",
+          "meaning": "상한선"
+        }
+      ]
     },
     {
       "id": "reading-basic-p86",
@@ -688,7 +3238,37 @@
       "title": "",
       "text": "Zero-waste grocery stores are popping up in major cities. ( ① ) The concept aligns with circular-economy principles. ( ② ) Suppliers must adjust logistics to deliver goods in reusable bulk tubs. ( ③ ) Consumer surveys show initial curiosity but concern over convenience. ( ④ ) Some retailers host workshops on DIY cleaners to build community. ( ⑤ ) Mainstream chains experiment with refill stations for detergents.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-86",
+          "number": "86",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Customers bring containers from home and pay by weight, eliminating single-use packaging.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 2,
+          "explanation": "①에서 제로 웨이스트 상점의 개념을 소개. 주어진 문장은 고객이 '어떻게' 이 시스템에 참여하는지(개인 용기 사용, 무게 단위 결제) 구체적인 방식을 설명. ② 뒤의 내용은 이로 인해 발생하는 공급업체의 변화를 설명."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "zero-waste",
+          "meaning": "쓰레기 없는"
+        },
+        {
+          "word": "align with",
+          "meaning": "~와 일치하다"
+        },
+        {
+          "word": "detergent",
+          "meaning": "세제"
+        }
+      ]
     },
     {
       "id": "reading-basic-p87",
@@ -696,7 +3276,37 @@
       "title": "",
       "text": "Gravitational microlensing occurs when a foreground star bends light from a more distant object. ( ① ) Unlike transit and radial-velocity methods, it does not require repeated observations. ( ② ) Survey telescopes monitor millions of stars toward the galactic bulge. ( ③ ) Timing the brightening curve reveals the mass of the unseen companion. ( ④ ) Upcoming missions like Roman Space Telescope will expand the catalog. ( ⑤ ) Microlensing is also sensitive to rogue planets unbound to any star.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-87",
+          "number": "87",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? The technique has already uncovered a Jupiter-sized planet orbiting a star 25,000 light-years away.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 4,
+          "explanation": "③에서 이 기술로 동반 천체의 질량을 밝혀낸다고 설명. 주어진 문장은 'The technique'을 받아 이미 이 기술로 행성을 발견한 구체적인 성공 사례를 제시. ④ 뒤의 내용은 이 성공에 기반한 향후 임무를 설명."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "microlensing",
+          "meaning": "미세중력렌즈 효과"
+        },
+        {
+          "word": "galactic bulge",
+          "meaning": "은하 팽대부"
+        },
+        {
+          "word": "rogue planet",
+          "meaning": "떠돌이 행성"
+        }
+      ]
     },
     {
       "id": "reading-basic-p88",
@@ -704,7 +3314,37 @@
       "title": "",
       "text": "Asynchronous programming prevents web apps from freezing during long tasks. ( ① ) Classic Ajax requests rely on event listeners to handle server responses. ( ② ) Nested callbacks, however, lead to code that is hard to maintain—often called “callback hell.” ( ③ ) Modern JavaScript introduces the async/await syntax built on top of promises. ( ④ ) Browser support is nearly universal, reducing the need for polyfills. ( ⑤ ) Debugging tools now visualize pending tasks on the event loop.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-88",
+          "number": "88",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Promises make the flow easier to reason about by chaining callbacks in sequence.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 3,
+          "explanation": "②에서 '콜백 지옥'이라는 문제를 제기. 주어진 문장은 'Promise'가 이 문제를 해결하는 방법을 설명. ③ 뒤의 내용은 이 Promise를 기반으로 한 더 현대적인 문법(async/await)을 소개."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "asynchronous",
+          "meaning": "비동기적인"
+        },
+        {
+          "word": "callback",
+          "meaning": "콜백 (함수)"
+        },
+        {
+          "word": "polyfill",
+          "meaning": "폴리필"
+        }
+      ]
     },
     {
       "id": "reading-basic-p89",
@@ -712,7 +3352,37 @@
       "title": "",
       "text": "Immune checkpoint inhibitors unleash T cells against cancer. ( ① ) They block proteins like PD-1 that normally act as brakes. ( ② ) Side effects can include autoimmune reactions in skin and gut. ( ③ ) Biomarkers help oncologists select patients most likely to benefit. ( ④ ) Combination therapies with radiation are under clinical trial. ( ⑤ ) High treatment cost remains a barrier in low-income countries.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-89",
+          "number": "89",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Yet only tumors with high mutational burden tend to respond robustly to such drugs.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 4,
+          "explanation": "③에서 바이오마커를 통해 환자를 선별한다고 설명. 주어진 문장은 'Yet'을 통해, 이러한 약물에 '돌연변이 부담이 높은 종양만' 잘 반응한다는 한계 또는 조건을 추가 설명. ④ 뒤의 내용은 이 한계를 극복하기 위한 병용 요법 연구를 설명."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "inhibitor",
+          "meaning": "억제제"
+        },
+        {
+          "word": "mutational",
+          "meaning": "돌연변이의"
+        },
+        {
+          "word": "oncologist",
+          "meaning": "종양학자"
+        }
+      ]
     },
     {
       "id": "reading-basic-p90",
@@ -720,7 +3390,37 @@
       "title": "",
       "text": "Several nations are piloting central bank digital currencies (CBDCs). ( ① ) Unlike decentralized cryptocurrencies, CBDCs represent a direct claim on the state. ( ② ) Offline-payment functionality is being tested for disaster scenarios. ( ③ ) Programmable features could enable stimulus payments that expire after six months. ( ④ ) Commercial banks worry about deposit flight if citizens hold funds directly with the central bank. ( ⑤ ) International standards for cross-border interoperability are still evolving.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-90",
+          "number": "90",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Central banks promise privacy layers, but skeptics fear real-time monitoring of every purchase.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 4,
+          "explanation": "③에서 프로그래밍 가능한 기능의 예를 설명. 주어진 문장은 프라이버시에 대한 약속과 감시에 대한 우려라는 상반된 시각을 제시. ④ 뒤의 내용은 상업 은행의 또 다른 우려를 설명."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "decentralized",
+          "meaning": "분산된"
+        },
+        {
+          "word": "stimulus",
+          "meaning": "경기 부양"
+        },
+        {
+          "word": "interoperability",
+          "meaning": "상호운용성"
+        }
+      ]
     },
     {
       "id": "reading-basic-p91",
@@ -728,7 +3428,37 @@
       "title": "",
       "text": "African films are gaining global attention at festivals like Cannes. ( ① ) Directors blend traditional storytelling with modern social issues. ( ② ) Limited budgets force creative solutions such as natural lighting and community actors. ( ③ ) Government incentives vary widely across the continent. ( ④ ) Piracy remains a challenge to revenue generation. ( ⑤ ) Training programs aim to build a skilled technical workforce.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-91",
+          "number": "91",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Streaming platforms are funding local projects to meet regional content quotas.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 4,
+          "explanation": "③에서 정부 인센티브를 언급. 주어진 문장은 스트리밍 플랫폼의 자금 지원이라는 또 다른 긍정적 요인을 추가. ④ 뒤의 불법 복제 문제는 이러한 긍정적 흐름에 대한 도전 과제를 제시."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "quota",
+          "meaning": "할당량"
+        },
+        {
+          "word": "piracy",
+          "meaning": "불법 복제"
+        },
+        {
+          "word": "revenue",
+          "meaning": "수익"
+        }
+      ]
     },
     {
       "id": "reading-basic-p92",
@@ -736,7 +3466,37 @@
       "title": "",
       "text": "Electronic transistors face physical limits as sizes shrink below 3 nanometers. ( ① ) Researchers explore optical waveguides etched onto silicon. ( ② ) Integration hurdles include aligning light sources with on-chip modulators. ( ③ ) Hybrid architectures pair photonic cores with traditional processors. ( ④ ) Venture capital is pouring into startups promising AI accelerators. ( ⑤ ) Foundries are racing to adapt lithography tools for new materials.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-92",
+          "number": "92",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? By routing electrons as photons, chips could compute at terahertz frequencies with lower heat.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 2,
+          "explanation": "①에서 광도파관 연구를 소개. 주어진 문장은 전자를 광자로 라우팅함으로써 얻을 수 있는 이점(속도, 저발열)을 설명. ② 뒤의 내용은 이 기술의 통합 장애물을 설명."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "transistor",
+          "meaning": "트랜지스터"
+        },
+        {
+          "word": "waveguide",
+          "meaning": "도파관"
+        },
+        {
+          "word": "foundry",
+          "meaning": "주조 공장 (반도체)"
+        }
+      ]
     },
     {
       "id": "reading-basic-p93",
@@ -744,7 +3504,37 @@
       "title": "",
       "text": "Mountain gorillas once hovered near extinction with fewer than 300 individuals. ( ① ) A coalition of governments and NGOs established transboundary parks. ( ② ) Strict guidelines limit group sizes and viewing times. ( ③ ) Local communities receive a share of permit fees to discourage poaching. ( ④ ) Population surveys now count more than 1,000 gorillas. ( ⑤ ) Climate change threatens to shift bamboo flowering seasons, a key food source.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-93",
+          "number": "93",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? The resulting tourist revenue funds ranger patrols and veterinary care.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 4,
+          "explanation": "③에서 지역 사회에 허가 수수료를 공유한다고 설명. 주어진 문장은 그 '결과로 발생한 관광 수입'이 어떻게 보존 활동에 재투자되는지 구체적으로 설명. ④ 뒤의 내용은 이 모든 노력의 결과인 개체 수 증가를 보여줌."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "hover",
+          "meaning": "맴돌다"
+        },
+        {
+          "word": "coalition",
+          "meaning": "연합"
+        },
+        {
+          "word": "poaching",
+          "meaning": "밀렵"
+        }
+      ]
     },
     {
       "id": "reading-basic-p94",
@@ -752,7 +3542,37 @@
       "title": "",
       "text": "Lithium-sulfur batteries promise triple the energy density of today’s lithium-ion cells. ( ① ) Elemental sulfur is abundant and inexpensive compared with cobalt. ( ② ) Shuttle effects, where polysulfides migrate to the anode, cause rapid capacity fade. ( ③ ) Researchers coat cathodes with porous carbon hosts to trap intermediates. ( ④ ) Automotive companies hope prototypes will meet safety standards within a decade. ( ⑤ ) Recycling pathways remain underdeveloped for sulfur-rich chemistries.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-94",
+          "number": "94",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Sulfur’s insulating nature makes fast charging without dendrite formation especially tricky.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 4,
+          "explanation": "③에서 셔틀 효과를 막는 방법을 설명. 주어진 문장은 황의 '절연성'이 빠른 충전을 어렵게 만든다는 또 다른 기술적 과제를 제시. ④ 뒤의 내용은 자동차 회사들의 희망을 서술."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "insulating",
+          "meaning": "절연성의"
+        },
+        {
+          "word": "dendrite",
+          "meaning": "수지상 결정"
+        },
+        {
+          "word": "cathode",
+          "meaning": "음극"
+        }
+      ]
     },
     {
       "id": "reading-basic-p95",
@@ -760,7 +3580,37 @@
       "title": "",
       "text": "mRNA vaccines are temperature sensitive during transport. ( ① ) Multi-dose vials complicate inventory management because opened vials expire quickly. ( ② ) Logisticians employ passive containers with phase-change materials. ( ③ ) Real-time data loggers transmit excursions via satellite. ( ④ ) Drones deliver last-mile shipments over rough terrain. ( ⑤ ) Post-pandemic, the cold-chain network could serve other biologics.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-95",
+          "number": "95",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Solar-powered fridges in rural clinics keep doses within the required 2-8 °C range.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 3,
+          "explanation": "②에서 수동적 보관 용기를 설명. 주어진 문장은 '태양광 냉장고'라는 능동적이고 구체적인 해결책을 제시. ③ 뒤의 실시간 데이터 로거는 또 다른 기술적 보완책."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "vial",
+          "meaning": "작은 병"
+        },
+        {
+          "word": "logistician",
+          "meaning": "물류 전문가"
+        },
+        {
+          "word": "excursion",
+          "meaning": "(정상 범위) 이탈"
+        }
+      ]
     },
     {
       "id": "reading-basic-p96",
@@ -768,7 +3618,37 @@
       "title": "",
       "text": "Companies adopt AI résumé screeners to handle large applicant pools. ( ① ) Vendors claim their algorithms reduce human bias. ( ② ) Training data often reflect historical hiring patterns. ( ③ ) Regulators propose requiring impact assessments before deployment. ( ④ ) Open-source toolkits can test models for disparate impact. ( ⑤ ) Some firms revert to random lotteries to ensure fairness.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-96",
+          "number": "96",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Audit studies found résumés with identical qualifications but minority-coded names received fewer interview requests.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 3,
+          "explanation": "②에서 훈련 데이터가 역사적 편향을 반영한다고 지적. 주어진 문장은 이 편향을 보여주는 구체적인 '감사 연구' 결과를 제시. ③ 뒤의 내용은 이러한 문제에 대한 규제 당국의 대응을 설명."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "audit",
+          "meaning": "감사"
+        },
+        {
+          "word": "disparate impact",
+          "meaning": "차별적 영향"
+        },
+        {
+          "word": "lottery",
+          "meaning": "추첨"
+        }
+      ]
     },
     {
       "id": "reading-basic-p97",
@@ -776,7 +3656,37 @@
       "title": "",
       "text": "Tourist hotspots in Hawaii and Palau ban certain sunscreens. ( ① ) Mineral filters like non-nano zinc oxide sit on the skin’s surface. ( ② ) Consumers complain of white residue unlike clear chemical lotions. ( ③ ) Cosmetic chemists add tinted iron oxides to improve aesthetics. ( ④ ) Dermatologists stress applying enough product regardless of type. ( ⑤ ) Reef-safe certification labels aim to guide shoppers.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-97",
+          "number": "97",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? These formulations omit oxybenzone and octinoxate, chemicals linked to coral bleaching.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 1,
+          "explanation": "글의 첫 문장에서 특정 선크림 금지를 언급. 주어진 문장은 'These formulations'를 받아 금지된 선크림이 산호 백화와 관련된 화학물질을 포함하고 있음을 설명. ① 뒤의 내용은 대안인 미네랄 필터를 설명."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "formulation",
+          "meaning": "처방, 배합"
+        },
+        {
+          "word": "residue",
+          "meaning": "잔여물"
+        },
+        {
+          "word": "dermatologist",
+          "meaning": "피부과 의사"
+        }
+      ]
     },
     {
       "id": "reading-basic-p98",
@@ -784,7 +3694,37 @@
       "title": "",
       "text": "Classical conditioning underpins much of modern advertising. ( ① ) Pairing a soft-drink logo with upbeat music elicits positive emotions. ( ② ) Repeated exposure forms an association between brand and pleasure. ( ③ ) Regulatory agencies limit ads during children’s TV programming. ( ④ ) Companies now target adults via personalized streaming playlists. ( ⑤ ) Measuring subconscious reactions uses tools like facial EMG and eye-tracking.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-98",
+          "number": "98",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Over time, merely hearing the jingle can trigger cravings even without seeing the product.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 3,
+          "explanation": "②에서 반복 노출이 연관성을 형성한다고 설명. 주어진 문장은 '시간이 지나면서' 징글만 들어도 갈망을 유발한다는 고전적 조건화의 심화 단계를 설명. ③ 뒤의 내용은 이러한 광고의 규제에 대해 서술."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "underpin",
+          "meaning": "뒷받침하다"
+        },
+        {
+          "word": "elicit",
+          "meaning": "이끌어내다"
+        },
+        {
+          "word": "subconscious",
+          "meaning": "잠재의식의"
+        }
+      ]
     },
     {
       "id": "reading-basic-p99",
@@ -792,7 +3732,37 @@
       "title": "",
       "text": "Sinuous stadium roofs and twisting skyscrapers dominate skylines. ( ① ) Algorithms optimize structural strength while minimizing material usage. ( ② ) 3-D printing of formwork accelerates construction of complex shapes. ( ③ ) Building-information models integrate mechanical systems early in the design. ( ④ ) Critics argue such aesthetics can ignore local cultural context. ( ⑤ ) Regulations struggle to keep pace with unconventional geometries.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-99",
+          "number": "99",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Parametric tools let architects iterate thousands of options by tweaking a few input curves.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 2,
+          "explanation": "①에서 알고리즘 최적화를 설명. 주어진 문장은 '파라메트릭 도구'가 건축가에게 수천 개의 옵션을 반복하게 해준다는 구체적인 설계 과정을 추가 설명. ② 뒤의 내용은 건설 단계의 기술을 설명."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "sinuous",
+          "meaning": "구불구불한"
+        },
+        {
+          "word": "formwork",
+          "meaning": "거푸집"
+        },
+        {
+          "word": "geometry",
+          "meaning": "기하학적 구조"
+        }
+      ]
     },
     {
       "id": "reading-basic-p100",
@@ -800,7 +3770,37 @@
       "title": "",
       "text": "Virtual-reality headsets immerse users visually and aurally. ( ① ) Handheld controllers vibrate to signal collisions and gunfire. ( ② ) Researchers develop lightweight gloves with arrays of electroactive pads. ( ③ ) Firmware adjusts feedback based on game physics engines. ( ④ ) Training simulations for surgeons and pilots demand high-fidelity touch cues. ( ⑤ ) Consumer adoption hinges on affordability and hygiene considerations.",
       "part": "4",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q4-100",
+          "number": "100",
+          "text": "주어진 문장이 들어갈 가장 적절한 위치는? Pulses simulate texture, allowing users to feel virtual objects as rough, smooth, or springy.",
+          "type": "sentence-insertion",
+          "choices": [
+            "①",
+            "②",
+            "③",
+            "④",
+            "⑤"
+          ],
+          "answer": 3,
+          "explanation": "②에서 햅틱 장갑 개발을 언급. 주어진 문장은 '펄스'가 어떻게 질감을 시뮬레이션하는지 그 작동 원리를 설명. ③ 뒤의 펌웨어는 이 피드백을 조정하는 역할을 함."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "aurally",
+          "meaning": "청각적으로"
+        },
+        {
+          "word": "electroactive",
+          "meaning": "전기 활성의"
+        },
+        {
+          "word": "hinge on",
+          "meaning": "~에 달려 있다"
+        }
+      ]
     }
   ]
 }

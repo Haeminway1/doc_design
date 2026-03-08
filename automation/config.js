@@ -26,6 +26,7 @@ module.exports = {
     '박수빈': '1pmDAQyzzsMfrz5TXwRj9YnLvj9EXIfGY',
     '김예은': '1eQla9xd_OB6gWPu_uv3JSEgy6x73QJSw',
     '정재영': '1MV29rJhKyn494H_-bap9oozaodxvQYFI',
+    '김주원': '134gQFvZFth5INwAy1M5E634ZyJWqgtte',
     '김지환': '1nJR29BaHAfVr9DC8coi5OOoDVYK2YfSs',
     '박은지': '1uLabzEfN9gREJuwNnZ_3gfjZRB_q5AUx',
     '박민교': '1ZK7Tpr7blutTy5iVfSjdOI4DF6vzmn3e',

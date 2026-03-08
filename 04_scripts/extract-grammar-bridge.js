@@ -15,7 +15,7 @@ const ROOT = path.resolve(__dirname, '..');
 const SOURCE_DIR = path.join(ROOT, '02_textbooks', 'source');
 const DATA_DIR = path.join(ROOT, '02_textbooks', 'data', 'grammar', 'bridge');
 const CONTENT_DIR = path.join(ROOT, '02_textbooks', 'content', 'grammar', 'bridge');
-const BOOKS_DIR = path.join(ROOT, '02_textbooks', 'books');
+const LEGACY_BOOKS_DIR = path.join(ROOT, '02_textbooks', 'books_legacy');
 
 // Chapter mapping: file → chapter info
 const CHAPTER_MAP = {
@@ -38,7 +38,7 @@ if (!fileArg) {
 }
 
 // Ensure directories exist
-[DATA_DIR, CONTENT_DIR, BOOKS_DIR].forEach(d => fs.mkdirSync(d, { recursive: true }));
+[DATA_DIR, CONTENT_DIR, LEGACY_BOOKS_DIR].forEach(d => fs.mkdirSync(d, { recursive: true }));
 
 if (fileArg === 'all') {
   for (const id of Object.keys(CHAPTER_MAP)) {
@@ -107,7 +107,7 @@ function extractFile(fileId) {
 
   // 7. Write YAML manifest
   const yaml = generateManifest(info, problems.length, contentPages.length);
-  const yamlPath = path.join(BOOKS_DIR, `grammar-bridge-${info.chapter}.yaml`);
+  const yamlPath = path.join(LEGACY_BOOKS_DIR, `grammar-bridge-${info.chapter}.yaml`);
   fs.writeFileSync(yamlPath, yaml, 'utf8');
   console.log(`  💾 ${yamlPath}`);
 

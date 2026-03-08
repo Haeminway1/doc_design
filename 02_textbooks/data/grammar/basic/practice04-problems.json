@@ -1,0 +1,257 @@
+{
+  "bookId": "grammar-basic",
+  "chapter": "practice04",
+  "title": "Practice 4: 전치사와 접속사 연습문제 [B3]",
+  "problems": [
+    {
+      "id": "grammar-basic-practice04-001",
+      "number": 1,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 빈칸에 옳은 것을 고르시오.",
+      "stem": "(A) As she grows older, Liza looks _____ her mother.\n(B) The passengers blamed the airline _____ the delay.",
+      "choices": ["① as - at", "② on - to", "③ like - for", "④ as if - with"],
+      "answer": 3,
+      "explanation": "(A) look like + 명사 = '~처럼 보이다'입니다. look as는 뒤에 절(S+V)이 와야 합니다. (B) blame A for B = 'A를 B 때문에 비난하다'는 고정 표현입니다. 따라서 like - for가 정답입니다."
+    },
+    {
+      "id": "grammar-basic-practice04-002",
+      "number": 2,
+      "type": "fill-in-blank",
+      "instruction": "밑줄 친 곳에 공통으로 들어갈 단어는?",
+      "stem": "(A) I am _____ friendly terms with her.\n(B) If you want to be mature, you need to reflect _____ yourself about what you've done so far.",
+      "choices": ["① on", "② to", "③ under", "④ from"],
+      "answer": 1,
+      "explanation": "(A) on friendly terms with = '~와 친한 사이'라는 고정 표현입니다. (B) reflect on = '~에 대해 반성/성찰하다'라는 구동사입니다. 두 표현 모두 전치사 on을 사용합니다."
+    },
+    {
+      "id": "grammar-basic-practice04-003",
+      "number": 3,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 옳은 것을 고르시오.",
+      "stem": "Those who are accused _____ a crime cannot be interrogated with their lawyers not being present.",
+      "choices": ["① with", "② of", "③ for", "④ from"],
+      "answer": 2,
+      "explanation": "be accused of = '~로 기소/고발되다'는 고정 표현입니다. accuse A of B(A를 B로 고발하다)의 수동태 형태로, 전치사 of가 필요합니다."
+    },
+    {
+      "id": "grammar-basic-practice04-004",
+      "number": 4,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 알맞은 것을 고르시오.",
+      "stem": "They went to London _____ the vacation and stayed there _____ three weeks.",
+      "choices": ["① for - for", "② during - during", "③ for - during", "④ during - for"],
+      "answer": 4,
+      "explanation": "during은 '특정 기간 동안'이라는 뜻으로 the vacation처럼 특정 명사 앞에 씁니다. for는 '숫자+기간' 앞에 써서 기간의 길이를 나타냅니다. 따라서 during the vacation, for three weeks가 올바릅니다."
+    },
+    {
+      "id": "grammar-basic-practice04-005",
+      "number": 5,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 알맞은 것을 고르시오.",
+      "stem": "Tom has been the manager of the sales department (A)_____ six years ever since he (B)_____ to the city",
+      "choices": ["① during - has moved", "② during - moved", "③ for - has moved", "④ for - moved"],
+      "answer": 4,
+      "explanation": "(A) 'six years'는 숫자+기간이므로 for를 씁니다(during은 특정 기간명 앞에 사용). (B) ever since(~이래로) 뒤의 종속절은 과거시제를 씁니다. 주절이 현재완료(has been)이고, since절의 동작은 과거 한 시점이므로 moved가 맞습니다."
+    },
+    {
+      "id": "grammar-basic-practice04-006",
+      "number": 6,
+      "type": "sentence-selection",
+      "instruction": "우리말을 영어로 옮긴 것 중 가장 어색한 것을 고르시오.",
+      "stem": "",
+      "choices": ["① 그녀는 양파만 먹는다.\n→ She eats anything but onions.", "② 이 책은 지구 온난화의 결과로 일어날 것 같은 기후 변화들에 대해서 주로 다루고 있다.\n→ This books is mainly concerned with climate changes that are likely to take place due to global warming.", "③ 길모퉁이에 우연히도 경찰관이 있어서, 나는 그에게 길을 물어볼 수 있었다.\n→ There happened to be a policeman on the corner to whom I could ask the way.", "④ 그 임무는 그의 선임자가 직면했던 것과 다르지 않다.\n→ The task is not different from that which his predecessor faced."],
+      "answer": 1,
+      "explanation": "① 'anything but'은 '~을 제외한 모든 것'이라는 뜻입니다. 'She eats anything but onions'는 '양파를 제외한 모든 것을 먹는다'라는 의미로, '양파만 먹는다'와 정반대입니다. '양파만 먹는다'는 'She eats nothing but onions'로 표현해야 합니다."
+    },
+    {
+      "id": "grammar-basic-practice04-007",
+      "number": 7,
+      "type": "sentence-selection",
+      "instruction": "다음 중 문법적으로 틀린 문장을 고르시오.",
+      "stem": "",
+      "choices": ["① Have you seen him since we last met?", "② I wonder whether he will come or not.", "③ Our greatest glory is not in never falling but in rising every time we fall.", "④ A valley is an area of low land among two mountains."],
+      "answer": 4,
+      "explanation": "among은 '3개 이상' 사이에서 사용하고, between은 '2개' 사이에서 사용합니다. two mountains(두 산)이므로 among이 아닌 between을 써야 합니다. 'A valley is an area of low land between two mountains'가 올바릅니다."
+    },
+    {
+      "id": "grammar-basic-practice04-008",
+      "number": 8,
+      "type": "sentence-selection",
+      "instruction": "다음 중 문법적으로 옳은 문장은?",
+      "stem": "",
+      "choices": ["① Thoughts are expressed by mean of words.", "② Despite of all our efforts to save the school, the authorities decided to close it.", "③ The children seemed tiny beside him.", "④ Accused for a two million dollar investment fraud, a former businessman has gone on trial."],
+      "answer": 3,
+      "explanation": "① by means of(~에 의해)가 올바른 표현으로, mean → means로 고쳐야 합니다. ② despite는 전치사로 단독 사용하며, 'despite of'는 틀린 표현입니다(in spite of는 가능). ④ be accused of가 올바른 표현으로, for → of로 고쳐야 합니다. ③은 'beside + 명사'(~옆에)가 정확하게 사용된 올바른 문장입니다."
+    },
+    {
+      "id": "grammar-basic-practice04-009",
+      "number": 9,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈 칸에 적절한 전치사를 고르시오.",
+      "stem": "(A) We supply the company _____ TVs.\n(B) We provide food _____ the hungry.\n(C) Students are going to be provided _____ efficient and effective ways to study English.",
+      "choices": ["① to - with - to", "② with - to - for", "③ with - for - with", "④ for - with - with"],
+      "answer": 3,
+      "explanation": "(A) supply A with B = 'A에게 B를 공급하다'. (B) provide A for B = 'B를 위해 A를 제공하다' (provide food for the hungry). (C) be provided with = '~을 제공받다' (provide A with B의 수동태). 따라서 with - for - with가 정답입니다."
+    },
+    {
+      "id": "grammar-basic-practice04-010",
+      "number": 10,
+      "type": "sentence-selection",
+      "instruction": "다음 문장에 대한 영작으로 옳은 것을 고르시오.",
+      "stem": "그녀는 지나간 실수들이 생각났다.",
+      "choices": ["① She reminds the past mistakes.", "② She is reminded of the past mistakes.", "③ She reminds that past mistakes.", "④ She reminds of the past mistakes."],
+      "answer": 2,
+      "explanation": "remind는 'remind A of B(A에게 B를 상기시키다)'의 구조로 사용합니다. '생각이 났다'는 수동 의미이므로 'be reminded of'가 올바릅니다. ①③④는 remind의 어법에 맞지 않는 틀린 표현입니다."
+    },
+    {
+      "id": "grammar-basic-practice04-011",
+      "number": 11,
+      "type": "sentence-selection",
+      "instruction": "다음 중 옳은 문장은?",
+      "stem": "",
+      "choices": ["① Burglars broke into her house and robbed all the money.", "② He admits to have robbed the bank last Sunday.", "③ His car was robbed of the stranger.", "④ They robbed the clients of $3 million."],
+      "answer": 4,
+      "explanation": "rob A of B = 'A에게서 B를 강탈하다'가 올바른 구문입니다. ① rob은 '사람/장소'를 목적어로 취하며, 'rob money'처럼 물건을 직접 목적어로 쓸 수 없습니다(steal money가 올바름). ② admit to having robbed가 올바른 형태입니다. ③ rob의 수동태는 'A was robbed of B by ~'이므로 구조가 틀립니다."
+    },
+    {
+      "id": "grammar-basic-practice04-012",
+      "number": 12,
+      "type": "sentence-selection",
+      "instruction": "다음 중 옳지 않은 문장은?",
+      "stem": "",
+      "choices": ["① I don't blame you for running away.", "② The minister was praised for his acuteness in the analysis.", "③ He was charged with violating the employee's privacy.", "④ They convicted him with lying in his testimony."],
+      "answer": 4,
+      "explanation": "convict A of B = 'A에게 B의 유죄를 선고하다'가 올바른 표현입니다. with가 아닌 of를 써야 하므로 'convicted him of lying'이 맞습니다. ① blame A for B, ② be praised for, ③ be charged with는 모두 올바른 전치사 조합입니다."
+    },
+    {
+      "id": "grammar-basic-practice04-013",
+      "number": 13,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈 칸에 적절한 전치사를 고르시오.",
+      "stem": "(A) Aside _____ breaking their bones, they are always suffering from muscle aches and various complications.\n(B) Many employers receive a large number of resumes in response _____ job advertisements.\n(C) The judge ruled in favor _____ the plaintiff.",
+      "choices": ["① from - to - of", "② from - about - for", "③ with - to - for", "④ with - about - of"],
+      "answer": 1,
+      "explanation": "(A) aside from = '~외에도, ~을 제외하고'. (B) in response to = '~에 대한 응답으로'. (C) in favor of = '~에 유리하게, ~을 지지하여'. 세 표현 모두 고정된 전치사 조합이므로 from - to - of가 정답입니다."
+    },
+    {
+      "id": "grammar-basic-practice04-014",
+      "number": 14,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 옳은 것을 고르시오.",
+      "stem": "Learn to save now, _____ you may want in old age.",
+      "choices": ["① and", "② if", "③ therefore", "④ or"],
+      "answer": 4,
+      "explanation": "'명령문 + or + S V' 구문은 '~해라, 그렇지 않으면 …할 것이다'라는 의미입니다. '지금 절약하는 법을 배워라, 그렇지 않으면 노년에 궁핍해질 것이다'가 문맥상 자연스럽습니다. want는 여기서 '부족하다, 궁핍하다'라는 뜻입니다."
+    },
+    {
+      "id": "grammar-basic-practice04-015",
+      "number": 15,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 옳은 것을 고르시오.",
+      "stem": "David _____ loves Joan nor wants to marry her.",
+      "choices": ["① not only", "② either", "③ but", "④ neither"],
+      "answer": 4,
+      "explanation": "neither A nor B = 'A도 B도 아닌'이라는 상관접속사입니다. 뒤에 nor가 있으므로 앞에는 neither가 와야 합니다. 'David는 Joan을 사랑하지도, 그녀와 결혼하기를 원하지도 않는다'라는 의미입니다."
+    },
+    {
+      "id": "grammar-basic-practice04-016",
+      "number": 16,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 옳은 것을 고르시오.",
+      "stem": "_____ John didn't have a car, his sister lent him hers.",
+      "choices": ["① That", "② Why", "③ Since", "④ While"],
+      "answer": 3,
+      "explanation": "Since는 이유를 나타내는 접속사로 '~이기 때문에'라는 뜻입니다. 'John이 차가 없었기 때문에 그의 누나가 차를 빌려주었다'라는 인과관계가 문맥상 자연스럽습니다. While(~하는 동안/반면에)은 이유를 나타낼 수 없습니다."
+    },
+    {
+      "id": "grammar-basic-practice04-017",
+      "number": 17,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 옳은 것을 고르시오.",
+      "stem": "The answer to the question is meaningless _____ you discover it by yourself.",
+      "choices": ["① if", "② unless", "③ without", "④ when"],
+      "answer": 2,
+      "explanation": "unless = 'if ~ not'으로 '~하지 않는 한'이라는 뜻입니다. '네가 스스로 발견하지 않는 한 그 답은 무의미하다'라는 의미가 문맥상 가장 적절합니다. without은 전치사이므로 절(S+V)을 이끌 수 없습니다."
+    },
+    {
+      "id": "grammar-basic-practice04-018",
+      "number": 18,
+      "type": "fill-in-blank",
+      "instruction": "다음 세 문장 속에 있는 빈칸에 들어갈 단어를 차례대로 짝지은 것으로 가장 올바른 것은?",
+      "stem": "(A) You must take care _____ you should catch a cold.\n(B) _____ you have no objection, I will come tomorrow.\n(C) Strange _____ it sounded, the teacher's remark encouraged me.",
+      "choices": ["① but - Unless - how", "② but - Unless - as", "③ lest - If - how", "④ lest - If - however"],
+      "answer": 3,
+      "explanation": "(A) lest ~ should = '~하지 않도록'이라는 뜻의 접속사입니다. 'take care lest you should catch a cold'는 '감기 걸리지 않도록 조심해라'라는 의미입니다. (B) 'If you have no objection'은 '반대가 없으면'이라는 조건절입니다(Unless + no objection은 이중부정이 되어 부적절). (C) 'Strange how it sounded'에서 how는 감탄/정도를 나타내는 부사로, '아무리 이상하게 들렸더라도'라는 양보의 의미를 전달합니다."
+    },
+    {
+      "id": "grammar-basic-practice04-019",
+      "number": 19,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈 칸에 적절한 것은?",
+      "stem": "(A) Peter is looking for a job in _____ advertising or public relations.\n(B) _____ he was far away, I wanted his help.",
+      "choices": ["① nor - Despite", "② neither - In spite of", "③ both - Even if", "④ either - Even though"],
+      "answer": 4,
+      "explanation": "(A) either A or B = 'A 또는 B 중 하나'라는 상관접속사입니다. 뒤에 or가 있으므로 either가 와야 합니다. (B) Even though + 절 = '비록 ~이지만'으로 양보를 나타냅니다. Despite/In spite of 뒤에는 명사(구)가 와야 하므로 절(he was far away)을 이끌 수 없습니다."
+    },
+    {
+      "id": "grammar-basic-practice04-020",
+      "number": 20,
+      "type": "sentence-selection",
+      "instruction": "다음 중 옳은 문장은?",
+      "stem": "",
+      "choices": ["① I like swimming and to dance.", "② I'm majoring in computer science and architect.", "③ I listen to the music or watch movies in my free time.", "④ Talking is much easier than to behave."],
+      "answer": 3,
+      "explanation": "병렬 구조(parallel structure)에서는 접속사로 연결되는 요소의 문법적 형태가 일치해야 합니다. ③은 'listen to ~ or watch ~'로 동사원형끼리 병렬이 올바릅니다. ① swimming(동명사)과 to dance(부정사) 혼용, ② computer science(학문)과 architect(사람)는 의미적 병렬 오류(architecture가 올바름), ④ Talking(동명사)과 to behave(부정사) 혼용이 문제입니다."
+    },
+    {
+      "id": "grammar-basic-practice04-021",
+      "number": 21,
+      "type": "underline-error",
+      "instruction": "다음 중 옳지 않은 것은?",
+      "stem": "You must ①complete all of the tax forms ②given in the brochure and ③submitted them ④by tomorrow.",
+      "choices": ["①", "②", "③", "④"],
+      "answer": 3,
+      "explanation": "must 뒤에 complete와 and로 병렬 연결되는 동사는 원형이어야 합니다. 'must complete ~ and submit them'이 올바른 형태입니다. submitted(과거형/과거분사)가 아닌 submit(원형)이 와야 합니다."
+    },
+    {
+      "id": "grammar-basic-practice04-022",
+      "number": 22,
+      "type": "underline-error",
+      "instruction": "다음 중 옳지 않은 것은?",
+      "stem": "①While he was ②in the army, he ③learned both English ④as well as Spanish.",
+      "choices": ["①", "②", "③", "④"],
+      "answer": 4,
+      "explanation": "both A and B가 올바른 상관접속사입니다. both와 as well as를 함께 쓸 수 없습니다. 'both English and Spanish' 또는 'English as well as Spanish'로 고쳐야 합니다. 따라서 ④ as well as가 틀린 부분입니다."
+    },
+    {
+      "id": "grammar-basic-practice04-023",
+      "number": 23,
+      "type": "sentence-selection",
+      "instruction": "다음 중 어법상 잘못된 것은?",
+      "stem": "",
+      "choices": ["① The refugees had neither food nor shelter.", "② Either he or you are responsible for the accident.", "③ You should be sound on body as well as in mind.", "④ Not just the books but the furniture are for sale."],
+      "answer": 3,
+      "explanation": "'sound in body and in mind'(몸도 마음도 건강한)가 올바른 표현입니다. sound(건강한)와 함께 쓰는 전치사는 in이므로, 'on body'를 'in body'로 고쳐야 합니다. ① neither A nor B, ② Either A or B + 동사는 B에 수일치(you are), ④ Not just A but B + 동사는 B에 수일치(furniture is가 원칙이나 구어체에서 허용되기도 함) — ③이 가장 명확한 오류입니다."
+    },
+    {
+      "id": "grammar-basic-practice04-024",
+      "number": 24,
+      "type": "underline-error",
+      "instruction": "다음 중 옳지 않은 부분을 고르시오.",
+      "stem": "①Despite concerns ②that such an exercise would ③lead to discontent, the mayor contends that it would harmonize rather than ④unnerves the citizen as a whole.",
+      "choices": ["①", "②", "③", "④"],
+      "answer": 4,
+      "explanation": "rather than 뒤에는 앞의 동사와 같은 형태가 와야 합니다. 앞에 would harmonize(조동사+원형)가 있으므로 rather than 뒤에도 원형 unnerve가 와야 합니다. unnerves(3인칭 단수 현재)는 병렬 구조에 맞지 않습니다."
+    },
+    {
+      "id": "grammar-basic-practice04-025",
+      "number": 25,
+      "type": "correct-count",
+      "instruction": "다음 중 적절한 것의 개수는?",
+      "stem": "When others ①be around, people tend to assume that someone else will do something to help the victim. Contrary to ②what seems logical, the larger the number of bystanders ③are, the less likely people ④are to help. If someone finds himself in an emergency, and he is unlucky ⑤enough to have many people around, a social psychologist recommends that he ⑥points at one particular person, and tell him or her to call 911 or ⑦carrying out some definite actions. Once a single person approaches ⑧to the victim, other people will also stop ⑨ignoring the emergency.",
+      "choices": ["① 3개", "② 4개", "③ 6개", "④ 7개"],
+      "answer": 2,
+      "explanation": "각 항목 분석: ① be → are (틀림, 주어 others에 맞게 복수 동사 필요). ② what seems logical (맞음, 관계대명사 what 정상 사용). ③ are → is (틀림, the number of는 단수 취급). ④ are (맞음, people은 복수). ⑤ enough (맞음, 형용사+enough+to V 구문). ⑥ points → point (틀림, recommend that + S + 동사원형, 당위의 subjunctive). ⑦ carrying → carry (틀림, tell him to call ~ or carry, 병렬 구조). ⑧ to → 삭제 (틀림, approach는 타동사로 전치사 불필요). ⑨ ignoring (맞음, stop + V-ing = '~을 멈추다'). 적절한 것: ②④⑤⑨ = 4개."
+    }
+  ]
+}

@@ -38,7 +38,7 @@
     color: var(--color-accent-secondary) !important;
     margin-bottom: var(--space-md) !important;
     letter-spacing: 1px !important;
-    text-transform: uppercase !important;
+    text-transform: none !important;
 }
 
 .tip-box-title::before {

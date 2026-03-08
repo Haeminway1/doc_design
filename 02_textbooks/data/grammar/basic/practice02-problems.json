@@ -1,0 +1,337 @@
+{
+  "bookId": "grammar-basic",
+  "chapter": "practice02",
+  "title": "Practice 2: 부정사/동명사 연습문제",
+  "problems": [
+    {
+      "id": "grammar-basic-practice02-001",
+      "number": 1,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "Seeing shooting stars in the dark sky are fascinating.",
+      "choices": [],
+      "answer": "are → is",
+      "explanation": "주어가 동명사구 'Seeing shooting stars in the dark sky'로 단수 취급하므로 동사도 단수형 'is'를 써야 합니다. 동명사(구)가 주어일 때는 항상 단수 동사를 사용합니다."
+    },
+    {
+      "id": "grammar-basic-practice02-002",
+      "number": 2,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "After watch the commercial I came to consider to buy the item.",
+      "choices": [],
+      "answer": "watch → watching",
+      "explanation": "전치사 'after' 뒤에는 동명사가 와야 하므로 'watch'를 'watching'으로 고쳐야 합니다. 전치사의 목적어로는 동사원형이 올 수 없고, 반드시 동명사(-ing) 형태를 써야 합니다. (참고: 'consider to buy → consider buying'도 오류이지만, 전치사+동명사가 더 기본적인 오류입니다.)"
+    },
+    {
+      "id": "grammar-basic-practice02-003",
+      "number": 3,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "My favorite way to relax is to take a long bath.",
+      "choices": [],
+      "answer": "오류 없음 — 정답 문장",
+      "explanation": "이 문장은 문법적으로 올바릅니다. 'to relax'는 형용사적 용법의 to부정사로 'way'를 수식하고, 'to take a long bath'는 보어 역할의 to부정사입니다. 'My favorite way to relax = to take a long bath'로 완전한 문장 구조입니다."
+    },
+    {
+      "id": "grammar-basic-practice02-004",
+      "number": 4,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "To answer the questions perfect require further effort.",
+      "choices": [],
+      "answer": "require → requires",
+      "explanation": "주어가 to부정사구 'To answer the questions perfect(ly)'로 단수 취급하므로 동사도 단수형 'requires'를 써야 합니다. to부정사(구)가 주어일 때는 항상 단수 동사를 사용합니다. (참고: 'perfect → perfectly'도 부사 오류이지만, 수일치가 핵심입니다.)"
+    },
+    {
+      "id": "grammar-basic-practice02-005",
+      "number": 5,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "He pretended to not like her and walked quickly away.",
+      "choices": [],
+      "answer": "to not like → not to like",
+      "explanation": "to부정사의 부정은 'not to + 동사원형' 어순이 올바른 형태입니다. 'to not like'는 분리 부정사(split infinitive)로, 편입영어 문법에서는 'not to like'가 정확한 표현입니다."
+    },
+    {
+      "id": "grammar-basic-practice02-006",
+      "number": 6,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "My roommate told me take out the trash.",
+      "choices": [],
+      "answer": "me take → me to take",
+      "explanation": "'tell + 목적어 + to부정사' 구문에서 to가 빠졌습니다. 'tell'은 목적격 보어로 to부정사를 취하는 동사이므로 'told me to take out the trash'로 써야 합니다. 사역동사(make, let, have)와 달리 tell은 to부정사가 필요합니다."
+    },
+    {
+      "id": "grammar-basic-practice02-007",
+      "number": 7,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "Tell me how to go to the market.",
+      "choices": [],
+      "answer": "오류 없음 — 정답 문장",
+      "explanation": "이 문장은 문법적으로 올바릅니다. '의문사 + to부정사' 구문인 'how to go to the market'은 명사구로서 'tell'의 직접목적어 역할을 합니다. 'Tell me + 의문사 + to부정사'는 올바른 4형식 구문이며, 'how to go to'는 '어떻게 가는지'라는 의미로 정확합니다."
+    },
+    {
+      "id": "grammar-basic-practice02-008",
+      "number": 8,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "It's impossible for me eating all this food.",
+      "choices": [],
+      "answer": "eating → to eat",
+      "explanation": "'It is + 형용사 + for + 목적격 + to부정사' 구문에서 to부정사가 와야 합니다. 가주어 it이 진주어 to부정사를 대신하는 구문이므로 'It's impossible for me to eat all this food'로 써야 합니다. 동명사(eating)는 이 구문에 쓸 수 없습니다."
+    },
+    {
+      "id": "grammar-basic-practice02-009",
+      "number": 9,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "He insisted my bring him a cup of water.",
+      "choices": [],
+      "answer": "my bring → my bringing 또는 on my bringing",
+      "explanation": "'insist on + 동명사' 구문에서 동명사의 의미상 주어는 소유격을 쓰며, 동사도 동명사 형태여야 합니다. 'He insisted on my bringing him a cup of water'로 써야 합니다. 동명사 앞의 의미상 주어는 소유격(my), 동사는 동명사(bringing)가 올바릅니다."
+    },
+    {
+      "id": "grammar-basic-practice02-010",
+      "number": 10,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "We look forward to your next visit.",
+      "choices": [],
+      "answer": "오류 없음 — 정답 문장",
+      "explanation": "이 문장은 문법적으로 올바릅니다. 'look forward to'에서 to는 전치사이므로 뒤에 명사(your next visit)가 올 수 있습니다. 동명사가 아닌 일반 명사도 전치사 to의 목적어로 쓸 수 있으므로 올바른 문장입니다."
+    },
+    {
+      "id": "grammar-basic-practice02-011",
+      "number": 11,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "Nancy is interested in to play the piano.",
+      "choices": [],
+      "answer": "to play → playing",
+      "explanation": "전치사 'in' 뒤에는 동명사가 와야 하므로 to부정사 'to play'가 아닌 동명사 'playing'을 써야 합니다. 'be interested in + 동명사/명사'가 올바른 구문이며, 전치사 뒤에 to부정사는 올 수 없습니다."
+    },
+    {
+      "id": "grammar-basic-practice02-012",
+      "number": 12,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "We plan to watching the movie together.",
+      "choices": [],
+      "answer": "to watching → to watch",
+      "explanation": "'plan'은 to부정사를 목적어로 취하는 동사이므로 'plan to + 동사원형'으로 써야 합니다. 'to watching'은 전치사 to + 동명사로 잘못 쓴 것이며, 여기서 to는 부정사의 to이므로 뒤에 동사원형 'watch'가 와야 합니다."
+    },
+    {
+      "id": "grammar-basic-practice02-013",
+      "number": 13,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "They decided not to be cancelled the program.",
+      "choices": [],
+      "answer": "not to be cancelled the program → not to cancel the program",
+      "explanation": "'decide + to부정사'에서 주어 'They'가 프로그램을 취소하지 않기로 결정한 것이므로 능동태 'not to cancel the program'을 써야 합니다. 수동태 'to be cancelled'를 쓰면 뒤에 목적어 'the program'이 올 수 없고, 의미상으로도 맞지 않습니다."
+    },
+    {
+      "id": "grammar-basic-practice02-014",
+      "number": 14,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "Age doesn't matter when it comes to enjoy music.",
+      "choices": [],
+      "answer": "enjoy → enjoying",
+      "explanation": "'when it comes to'에서 to는 전치사이므로 뒤에 동명사가 와야 합니다. 'when it comes to enjoying music'이 올바른 표현입니다. 이 숙어에서 to를 부정사의 to로 착각하기 쉬우나, 전치사 to이므로 동명사(-ing)가 필요합니다."
+    },
+    {
+      "id": "grammar-basic-practice02-015",
+      "number": 15,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "There is no knowing the future.",
+      "choices": [],
+      "answer": "오류 없음 — 정답 문장",
+      "explanation": "이 문장은 문법적으로 올바릅니다. 'There is no + 동명사'는 '~할 수 없다'는 의미의 관용 표현입니다. 'There is no knowing the future'는 '미래를 알 수 없다'라는 뜻으로 올바른 구문입니다."
+    },
+    {
+      "id": "grammar-basic-practice02-016",
+      "number": 16,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "I can't afford to feed my children.",
+      "choices": [],
+      "answer": "오류 없음 — 정답 문장",
+      "explanation": "이 문장은 문법적으로 올바릅니다. 'afford + to부정사'는 '~할 여유가 있다'의 올바른 구문이며, 'can't afford to feed my children'은 '아이들을 먹일 여유가 없다'라는 뜻으로 정확합니다."
+    },
+    {
+      "id": "grammar-basic-practice02-017",
+      "number": 17,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "He appears to know the real culprit.",
+      "choices": [],
+      "answer": "오류 없음 — 정답 문장",
+      "explanation": "이 문장은 문법적으로 올바릅니다. 'appear + to부정사'는 '~인 것 같다'의 올바른 구문이며, 'He appears to know the real culprit'는 '그는 진짜 범인을 아는 것 같다'라는 뜻으로 정확합니다."
+    },
+    {
+      "id": "grammar-basic-practice02-018",
+      "number": 18,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "The coffee beans smell like dark chocolate.",
+      "choices": [],
+      "answer": "오류 없음 — 정답 문장",
+      "explanation": "이 문장은 문법적으로 올바릅니다. 'smell like + 명사'는 '~같은 냄새가 나다'의 올바른 표현입니다. 감각동사 smell은 2형식에서 보어를 취하며, 'like dark chocolate'는 전치사구로 올바르게 사용되었습니다."
+    },
+    {
+      "id": "grammar-basic-practice02-019",
+      "number": 19,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "The doctor advised her not smoking.",
+      "choices": [],
+      "answer": "not smoking → not to smoke",
+      "explanation": "'advise + 목적어 + to부정사' 구문에서 to부정사의 부정형 'not to smoke'를 써야 합니다. 'advise'가 목적어(her)를 취할 때는 목적격 보어로 to부정사를 사용하므로 'advised her not to smoke'가 올바른 표현입니다."
+    },
+    {
+      "id": "grammar-basic-practice02-020",
+      "number": 20,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "I need a house to live.",
+      "choices": [],
+      "answer": "to live → to live in",
+      "explanation": "'a house to live in'에서 to부정사가 명사 'house'를 수식하는 형용사적 용법입니다. 'live'는 자동사이므로 'house'와의 관계를 나타내기 위해 전치사 'in'이 필요합니다. '살 집' = 'a house to live in'으로 전치사를 빠뜨리면 안 됩니다."
+    },
+    {
+      "id": "grammar-basic-practice02-021",
+      "number": 21,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "She appreciated invite her to the party.",
+      "choices": [],
+      "answer": "invite → being invited",
+      "explanation": "'appreciate'는 동명사를 목적어로 취하는 동사이며, 주어 'She'는 파티에 '초대받는' 대상이므로 수동 동명사 'being invited'를 써야 합니다. 'She appreciated being invited to the party'가 올바른 표현입니다."
+    },
+    {
+      "id": "grammar-basic-practice02-022",
+      "number": 22,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "It was stupid for him to drive a car without wear a seatbelt.",
+      "choices": [],
+      "answer": "wear → wearing",
+      "explanation": "전치사 'without' 뒤에는 동명사가 와야 하므로 동사원형 'wear'가 아닌 동명사 'wearing'을 써야 합니다. 전치사의 목적어로는 동사원형이 올 수 없고, 반드시 동명사(-ing) 형태를 사용해야 합니다. (참고: 사람의 성격/행동 평가 시 'of him'이 더 적절하지만, 전치사+동명사가 핵심 오류입니다.)"
+    },
+    {
+      "id": "grammar-basic-practice02-023",
+      "number": 23,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "She has raising money with a view to help the poor.",
+      "choices": [],
+      "answer": "help → helping",
+      "explanation": "'with a view to'에서 to는 전치사이므로 뒤에 동명사가 와야 합니다. 'with a view to helping the poor'가 올바른 표현입니다. 이 숙어에서 to를 부정사의 to로 착각하기 쉬우나, 전치사 to이므로 동명사(-ing)가 필요합니다. (참고: 'has raising → has been raising'도 오류이지만, 전치사 to + 동명사가 핵심입니다.)"
+    },
+    {
+      "id": "grammar-basic-practice02-024",
+      "number": 24,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "The box was so heavy to carry.",
+      "choices": [],
+      "answer": "so → too",
+      "explanation": "'too + 형용사 + to부정사'는 '너무 ~해서 ...할 수 없다'의 올바른 구문입니다. 'so + 형용사'는 'that절'과 함께 쓰거나 단독으로 쓰이지만, to부정사와 직접 연결되지 않습니다. 'The box was too heavy to carry'로 써야 합니다."
+    },
+    {
+      "id": "grammar-basic-practice02-025",
+      "number": 25,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "John is so mean that he never shares anything with us.",
+      "choices": [],
+      "answer": "오류 없음 — 정답 문장",
+      "explanation": "이 문장은 문법적으로 올바릅니다. 'so + 형용사 + that절'은 '너무 ~해서 ...하다'의 올바른 구문이며, 'John is so mean that he never shares anything with us'는 정확한 문장 구조입니다."
+    },
+    {
+      "id": "grammar-basic-practice02-026",
+      "number": 26,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "I finished to read the novel written by him.",
+      "choices": [],
+      "answer": "to read → reading",
+      "explanation": "'finish'는 동명사만을 목적어로 취하는 동사(megapsfied 동사)이므로 to부정사 'to read'가 아닌 동명사 'reading'을 써야 합니다. finish, enjoy, mind, avoid, deny, practice 등은 동명사만 목적어로 취합니다."
+    },
+    {
+      "id": "grammar-basic-practice02-027",
+      "number": 27,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "My cat remained so silently that no one noticed his existence.",
+      "choices": [],
+      "answer": "silently → silent",
+      "explanation": "'remain'은 2형식 불완전 자동사(연결동사)로 보어가 필요합니다. 보어 자리에는 부사(silently)가 아닌 형용사 'silent'가 와야 합니다. 'remained silent'는 '조용한 상태로 있었다'라는 의미로, 주어의 상태를 설명하는 형용사 보어가 적절합니다."
+    },
+    {
+      "id": "grammar-basic-practice02-028",
+      "number": 28,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "He is good at speak English.",
+      "choices": [],
+      "answer": "speak → speaking",
+      "explanation": "전치사 'at' 뒤에는 동명사가 와야 하므로 동사원형 'speak'가 아닌 동명사 'speaking'을 써야 합니다. 'be good at + 동명사/명사'가 올바른 구문이며, 전치사 뒤에 동사원형은 올 수 없습니다."
+    },
+    {
+      "id": "grammar-basic-practice02-029",
+      "number": 29,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "My grandmother is known to enjoy reading books when she was a child.",
+      "choices": [],
+      "answer": "to enjoy → to have enjoyed",
+      "explanation": "주절은 현재 시제('is known')이고 종속절은 과거 시제('when she was a child')이므로, 과거의 행동을 나타내기 위해 완료 부정사 'to have enjoyed'를 써야 합니다. 단순 부정사 'to enjoy'는 주절과 같은 시점의 행동을 나타내므로 과거 시점과 맞지 않습니다."
+    },
+    {
+      "id": "grammar-basic-practice02-030",
+      "number": 30,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "He is very busy to do his homework.",
+      "choices": [],
+      "answer": "to do → doing 또는 (in) doing",
+      "explanation": "'be busy + 동명사'가 올바른 구문으로 '~하느라 바쁘다'의 의미입니다. 'be busy to do'는 잘못된 표현이며, 'He is very busy doing his homework'으로 써야 합니다. busy 뒤에는 to부정사가 아닌 동명사가 옵니다."
+    },
+    {
+      "id": "grammar-basic-practice02-031",
+      "number": 31,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "It took me a lot of time to make students understand the theory.",
+      "choices": [],
+      "answer": "오류 없음 — 정답 문장",
+      "explanation": "이 문장은 문법적으로 올바릅니다. 'It takes + 사람 + 시간 + to부정사'는 '~하는 데 ...시간이 걸리다'의 올바른 구문이며, 'make + 목적어 + 동사원형(understand)'는 사역동사 구문으로 정확합니다."
+    },
+    {
+      "id": "grammar-basic-practice02-032",
+      "number": 32,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "This book is worth reading.",
+      "choices": [],
+      "answer": "오류 없음 — 정답 문장",
+      "explanation": "이 문장은 문법적으로 올바릅니다. 'be worth + 동명사'는 '~할 가치가 있다'의 올바른 구문입니다. worth 뒤에는 동명사가 오며, 'This book is worth reading'은 정확한 표현입니다."
+    },
+    {
+      "id": "grammar-basic-practice02-033",
+      "number": 33,
+      "type": "error-identification",
+      "instruction": "다음 문장에서 문법적으로 잘못된 부분을 찾아 고치시오.",
+      "stem": "The officer admits to tamper with his traffic accident records last week.",
+      "choices": [],
+      "answer": "admits to tamper → admits to having tampered 또는 admitted to tampering",
+      "explanation": "'admit to'에서 to는 전치사이므로 뒤에 동명사가 와야 합니다. 또한 'last week'이라는 과거 시점의 행위이므로 'admits to having tampered with' 또는 과거 시제 'admitted to tampering with'가 적절합니다. 전치사 to 뒤에 동사원형 'tamper'는 올 수 없습니다."
+    }
+  ]
+}

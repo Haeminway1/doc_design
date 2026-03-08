@@ -19,9 +19,9 @@ const pdfParse = require('pdf-parse');
 const ROOT = path.resolve(__dirname, '..');
 const PDF_PATH = path.join(ROOT, "Vera's Flavor 편입영어_ 구문독해 Basic.pdf");
 const DATA_DIR = path.join(ROOT, '02_textbooks', 'data', 'syntax', 'basic');
-const BOOKS_DIR = path.join(ROOT, '02_textbooks', 'books');
+const LEGACY_BOOKS_DIR = path.join(ROOT, '02_textbooks', 'books_legacy');
 
-[DATA_DIR, BOOKS_DIR].forEach(d => fs.mkdirSync(d, { recursive: true }));
+[DATA_DIR, LEGACY_BOOKS_DIR].forEach(d => fs.mkdirSync(d, { recursive: true }));
 
 // ─── Unit Definitions ────────────────────────────────────────────────────────
 const UNITS = [
@@ -229,8 +229,8 @@ async function main() {
     yamlLines.push(`    src: syntax/basic/review-week${r.week}-problems.json`);
   }
 
-  fs.writeFileSync(path.join(BOOKS_DIR, 'syntax-basic.yaml'), yamlLines.join('\n') + '\n', 'utf-8');
-  console.log(`  💾 YAML manifest: syntax-basic.yaml`);
+  fs.writeFileSync(path.join(LEGACY_BOOKS_DIR, 'syntax-basic.yaml'), yamlLines.join('\n') + '\n', 'utf-8');
+  console.log(`  💾 Legacy YAML manifest: syntax-basic.yaml`);
 
   // ─── 6. Validation Summary ───────────────────────────────────────────────
   console.log(`\n  📊 Summary:`);

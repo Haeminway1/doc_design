@@ -217,7 +217,7 @@ node 04_scripts/validate-feedback.js 학생명 YYMMDD
 ```bash
 node 04_scripts/generate-feedback-from-json.js 학생명 YYMMDD
 ```
-→ `00_tutoring/학생명/output/YYMMDD/피드백지_YYMMDD.html`
+→ `00_tutoring/학생명/output/YYMMDD/{학생}_피드백지_{YYMMDD}_{과목}.html`
 
 ---
 
@@ -225,21 +225,29 @@ node 04_scripts/generate-feedback-from-json.js 학생명 YYMMDD
 ```bash
 node 04_scripts/generate-study-pdf.js 학생명 YYMMDD
 ```
-→ `00_tutoring/학생명/output/YYMMDD/피드백지_YYMMDD.pdf`
+→ `00_tutoring/학생명/output/YYMMDD/{학생}_피드백지_{YYMMDD}_{과목}.pdf`
 
 ---
 
-### Step 8: 구글 드라이브 업로드
+### Step 8: 구글 드라이브 업로드 (자동화됨)
+verajin 파이프라인이 자동으로 처리:
+- **입력 이미지**: N2 정오표 전송 전에 `00_tutoring/{학생}/{YYMMDD}/` 폴더를 Drive에 업로드 + Discord에 링크 포함
+- **피드백 PDF**: N3 전달 후 학생 Drive 피드백자료 폴더에 자동 업로드
+
+수동 실행 시:
 ```bash
-gog drive upload 파일경로.pdf --parent 폴더ID --name 피드백지_YYMMDD.pdf --no-input
+# 피드백 PDF 업로드
+node ~/projects/doc_design/automation/pipeline/06-uploader.js --file 00_tutoring/학생명/output/YYMMDD/{학생}_피드백지_{YYMMDD}_{과목}.pdf --student 학생명
+
+# 입력 이미지 업로드 (verajin)
+node -e "require('./scripts/lib/drive-uploader').uploadInputFolder('학생명','YYMMDD','~/projects/doc_design/00_tutoring/학생명/input/YYMMDD')"
 ```
-폴더 찾기: `gog drive search "학생명 학생" --json` → 피드백/피드백지 서브폴더 ID 확인
 
 ---
 
 ### 트래킹
 `00_tutoring/tracking.json` — 학생별 날짜, 오답, 제작상태, PDF경로, 드라이브 업로드 여부 기록
-- 출력: `00_tutoring/{학생이름}/output/YYMMDD/피드백지_YYMMDD.pdf`
+- 출력: `00_tutoring/{학생이름}/output/YYMMDD/{학생}_피드백지_{YYMMDD}_{과목}.pdf`
 - **피드백지 템플릿 필수 사용**: `03_system/templates/피드백지_template.html`의 CSS 복사
 - **피드백지 가이드라인 준수**: `06_reference/guideline/feedback_guideline.md`
 - **일관성 원칙**: 같은 학생 내에서는 항상 동일한 디자인 적용 (학생별로는 달라도 무방)

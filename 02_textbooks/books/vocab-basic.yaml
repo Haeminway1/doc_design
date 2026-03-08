@@ -1,154 +1,364 @@
-# vocab-basic — 보카 Basic (DAY 1-70)
+version: 2
 book:
-  title: "VOCA 365: 기출 어휘 완전 정복 Basic"
-  author: "Vera's Flavor"
-  style: vocab-basic
-  series: vocab-basic
-
+  id: vocab-basic
+  title: 'VOCA 365: 기출 어휘 완전 정복 Basic'
+  shortTitle: VOCA Basic
+  author: Vera's Flavor
+  brand: Vera's Flavor
+  legacyStyle: vocab-basic
+  subject: vocabulary
+  level: basic
+  theme: sky-academic
 pages:
-  - type: structural
-    src: vocab/basic/cover.html
-  - type: structural
-    src: vocab/basic/toc.html
-  - type: structural
-    src: vocab/basic/toc-2.html
-  - type: vocabulary
-    src: vocab/basic/day01.json
-  - type: vocabulary
-    src: vocab/basic/day02.json
-  - type: vocabulary
-    src: vocab/basic/day03.json
-  - type: vocabulary
-    src: vocab/basic/day04.json
-  - type: vocabulary
-    src: vocab/basic/day05.json
-  - type: vocabulary
-    src: vocab/basic/day06.json
-  - type: vocabulary
-    src: vocab/basic/day07.json
-  - type: vocabulary
-    src: vocab/basic/day08.json
-  - type: vocabulary
-    src: vocab/basic/day09.json
-  - type: vocabulary
-    src: vocab/basic/day10.json
-  - type: vocabulary
-    src: vocab/basic/day11.json
-  - type: vocabulary
-    src: vocab/basic/day12.json
-  - type: vocabulary
-    src: vocab/basic/day13.json
-  - type: vocabulary
-    src: vocab/basic/day14.json
-  - type: vocabulary
-    src: vocab/basic/day15.json
-  - type: vocabulary
-    src: vocab/basic/day16.json
-  - type: vocabulary
-    src: vocab/basic/day17.json
-  - type: vocabulary
-    src: vocab/basic/day18.json
-  - type: vocabulary
-    src: vocab/basic/day19.json
-  - type: vocabulary
-    src: vocab/basic/day20.json
-  - type: vocabulary
-    src: vocab/basic/day21.json
-  - type: vocabulary
-    src: vocab/basic/day22.json
-  - type: vocabulary
-    src: vocab/basic/day23.json
-  - type: vocabulary
-    src: vocab/basic/day24.json
-  - type: vocabulary
-    src: vocab/basic/day25.json
-  - type: vocabulary
-    src: vocab/basic/day26.json
-  - type: vocabulary
-    src: vocab/basic/day27.json
-  - type: vocabulary
-    src: vocab/basic/day28.json
-  - type: vocabulary
-    src: vocab/basic/day29.json
-  - type: vocabulary
-    src: vocab/basic/day30.json
-  - type: vocabulary
-    src: vocab/basic/day31.json
-  - type: vocabulary
-    src: vocab/basic/day32.json
-  - type: vocabulary
-    src: vocab/basic/day33.json
-  - type: vocabulary
-    src: vocab/basic/day34.json
-  - type: vocabulary
-    src: vocab/basic/day35.json
-  - type: vocabulary
-    src: vocab/basic/day36.json
-  - type: vocabulary
-    src: vocab/basic/day37.json
-  - type: vocabulary
-    src: vocab/basic/day38.json
-  - type: vocabulary
-    src: vocab/basic/day39.json
-  - type: vocabulary
-    src: vocab/basic/day40.json
-  - type: vocabulary
-    src: vocab/basic/day41.json
-  - type: vocabulary
-    src: vocab/basic/day42.json
-  - type: vocabulary
-    src: vocab/basic/day43.json
-  - type: vocabulary
-    src: vocab/basic/day44.json
-  - type: vocabulary
-    src: vocab/basic/day45.json
-  - type: vocabulary
-    src: vocab/basic/day46.json
-  - type: vocabulary
-    src: vocab/basic/day47.json
-  - type: vocabulary
-    src: vocab/basic/day48.json
-  - type: vocabulary
-    src: vocab/basic/day49.json
-  - type: vocabulary
-    src: vocab/basic/day50.json
-  - type: vocabulary
-    src: vocab/basic/day51.json
-  - type: vocabulary
-    src: vocab/basic/day52.json
-  - type: vocabulary
-    src: vocab/basic/day53.json
-  - type: vocabulary
-    src: vocab/basic/day54.json
-  - type: vocabulary
-    src: vocab/basic/day55.json
-  - type: vocabulary
-    src: vocab/basic/day56.json
-  - type: vocabulary
-    src: vocab/basic/day57.json
-  - type: vocabulary
-    src: vocab/basic/day58.json
-  - type: vocabulary
-    src: vocab/basic/day59.json
-  - type: vocabulary
-    src: vocab/basic/day60.json
-  - type: vocabulary
-    src: vocab/basic/day61.json
-  - type: vocabulary
-    src: vocab/basic/day62.json
-  - type: vocabulary
-    src: vocab/basic/day63.json
-  - type: vocabulary
-    src: vocab/basic/day64.json
-  - type: vocabulary
-    src: vocab/basic/day65.json
-  - type: vocabulary
-    src: vocab/basic/day66.json
-  - type: vocabulary
-    src: vocab/basic/day67.json
-  - type: vocabulary
-    src: vocab/basic/day68.json
-  - type: vocabulary
-    src: vocab/basic/day69.json
-  - type: vocabulary
-    src: vocab/basic/day70.json
+  - kind: cover
+    id: auto-cover
+  - kind: vocabulary-set
+    id: vocabulary-1-day01
+    layout: compact
+    source:
+      path: vocab/basic/day01.json
+  - kind: vocabulary-set
+    id: vocabulary-2-day02
+    layout: compact
+    source:
+      path: vocab/basic/day02.json
+  - kind: vocabulary-set
+    id: vocabulary-3-day03
+    layout: compact
+    source:
+      path: vocab/basic/day03.json
+  - kind: vocabulary-set
+    id: vocabulary-4-day04
+    layout: compact
+    source:
+      path: vocab/basic/day04.json
+  - kind: vocabulary-set
+    id: vocabulary-5-day05
+    layout: compact
+    source:
+      path: vocab/basic/day05.json
+  - kind: vocabulary-set
+    id: vocabulary-6-day06
+    layout: compact
+    source:
+      path: vocab/basic/day06.json
+  - kind: vocabulary-set
+    id: vocabulary-7-day07
+    layout: compact
+    source:
+      path: vocab/basic/day07.json
+  - kind: vocabulary-set
+    id: vocabulary-8-day08
+    layout: compact
+    source:
+      path: vocab/basic/day08.json
+  - kind: vocabulary-set
+    id: vocabulary-9-day09
+    layout: compact
+    source:
+      path: vocab/basic/day09.json
+  - kind: vocabulary-set
+    id: vocabulary-10-day10
+    layout: compact
+    source:
+      path: vocab/basic/day10.json
+  - kind: vocabulary-set
+    id: vocabulary-11-day11
+    layout: compact
+    source:
+      path: vocab/basic/day11.json
+  - kind: vocabulary-set
+    id: vocabulary-12-day12
+    layout: compact
+    source:
+      path: vocab/basic/day12.json
+  - kind: vocabulary-set
+    id: vocabulary-13-day13
+    layout: compact
+    source:
+      path: vocab/basic/day13.json
+  - kind: vocabulary-set
+    id: vocabulary-14-day14
+    layout: compact
+    source:
+      path: vocab/basic/day14.json
+  - kind: vocabulary-set
+    id: vocabulary-15-day15
+    layout: compact
+    source:
+      path: vocab/basic/day15.json
+  - kind: vocabulary-set
+    id: vocabulary-16-day16
+    layout: compact
+    source:
+      path: vocab/basic/day16.json
+  - kind: vocabulary-set
+    id: vocabulary-17-day17
+    layout: compact
+    source:
+      path: vocab/basic/day17.json
+  - kind: vocabulary-set
+    id: vocabulary-18-day18
+    layout: compact
+    source:
+      path: vocab/basic/day18.json
+  - kind: vocabulary-set
+    id: vocabulary-19-day19
+    layout: compact
+    source:
+      path: vocab/basic/day19.json
+  - kind: vocabulary-set
+    id: vocabulary-20-day20
+    layout: compact
+    source:
+      path: vocab/basic/day20.json
+  - kind: vocabulary-set
+    id: vocabulary-21-day21
+    layout: compact
+    source:
+      path: vocab/basic/day21.json
+  - kind: vocabulary-set
+    id: vocabulary-22-day22
+    layout: compact
+    source:
+      path: vocab/basic/day22.json
+  - kind: vocabulary-set
+    id: vocabulary-23-day23
+    layout: compact
+    source:
+      path: vocab/basic/day23.json
+  - kind: vocabulary-set
+    id: vocabulary-24-day24
+    layout: compact
+    source:
+      path: vocab/basic/day24.json
+  - kind: vocabulary-set
+    id: vocabulary-25-day25
+    layout: compact
+    source:
+      path: vocab/basic/day25.json
+  - kind: vocabulary-set
+    id: vocabulary-26-day26
+    layout: compact
+    source:
+      path: vocab/basic/day26.json
+  - kind: vocabulary-set
+    id: vocabulary-27-day27
+    layout: compact
+    source:
+      path: vocab/basic/day27.json
+  - kind: vocabulary-set
+    id: vocabulary-28-day28
+    layout: compact
+    source:
+      path: vocab/basic/day28.json
+  - kind: vocabulary-set
+    id: vocabulary-29-day29
+    layout: compact
+    source:
+      path: vocab/basic/day29.json
+  - kind: vocabulary-set
+    id: vocabulary-30-day30
+    layout: compact
+    source:
+      path: vocab/basic/day30.json
+  - kind: vocabulary-set
+    id: vocabulary-31-day31
+    layout: compact
+    source:
+      path: vocab/basic/day31.json
+  - kind: vocabulary-set
+    id: vocabulary-32-day32
+    layout: compact
+    source:
+      path: vocab/basic/day32.json
+  - kind: vocabulary-set
+    id: vocabulary-33-day33
+    layout: compact
+    source:
+      path: vocab/basic/day33.json
+  - kind: vocabulary-set
+    id: vocabulary-34-day34
+    layout: compact
+    source:
+      path: vocab/basic/day34.json
+  - kind: vocabulary-set
+    id: vocabulary-35-day35
+    layout: compact
+    source:
+      path: vocab/basic/day35.json
+  - kind: vocabulary-set
+    id: vocabulary-36-day36
+    layout: compact
+    source:
+      path: vocab/basic/day36.json
+  - kind: vocabulary-set
+    id: vocabulary-37-day37
+    layout: compact
+    source:
+      path: vocab/basic/day37.json
+  - kind: vocabulary-set
+    id: vocabulary-38-day38
+    layout: compact
+    source:
+      path: vocab/basic/day38.json
+  - kind: vocabulary-set
+    id: vocabulary-39-day39
+    layout: compact
+    source:
+      path: vocab/basic/day39.json
+  - kind: vocabulary-set
+    id: vocabulary-40-day40
+    layout: compact
+    source:
+      path: vocab/basic/day40.json
+  - kind: vocabulary-set
+    id: vocabulary-41-day41
+    layout: compact
+    source:
+      path: vocab/basic/day41.json
+  - kind: vocabulary-set
+    id: vocabulary-42-day42
+    layout: compact
+    source:
+      path: vocab/basic/day42.json
+  - kind: vocabulary-set
+    id: vocabulary-43-day43
+    layout: compact
+    source:
+      path: vocab/basic/day43.json
+  - kind: vocabulary-set
+    id: vocabulary-44-day44
+    layout: compact
+    source:
+      path: vocab/basic/day44.json
+  - kind: vocabulary-set
+    id: vocabulary-45-day45
+    layout: compact
+    source:
+      path: vocab/basic/day45.json
+  - kind: vocabulary-set
+    id: vocabulary-46-day46
+    layout: compact
+    source:
+      path: vocab/basic/day46.json
+  - kind: vocabulary-set
+    id: vocabulary-47-day47
+    layout: compact
+    source:
+      path: vocab/basic/day47.json
+  - kind: vocabulary-set
+    id: vocabulary-48-day48
+    layout: compact
+    source:
+      path: vocab/basic/day48.json
+  - kind: vocabulary-set
+    id: vocabulary-49-day49
+    layout: compact
+    source:
+      path: vocab/basic/day49.json
+  - kind: vocabulary-set
+    id: vocabulary-50-day50
+    layout: compact
+    source:
+      path: vocab/basic/day50.json
+  - kind: vocabulary-set
+    id: vocabulary-51-day51
+    layout: compact
+    source:
+      path: vocab/basic/day51.json
+  - kind: vocabulary-set
+    id: vocabulary-52-day52
+    layout: compact
+    source:
+      path: vocab/basic/day52.json
+  - kind: vocabulary-set
+    id: vocabulary-53-day53
+    layout: compact
+    source:
+      path: vocab/basic/day53.json
+  - kind: vocabulary-set
+    id: vocabulary-54-day54
+    layout: compact
+    source:
+      path: vocab/basic/day54.json
+  - kind: vocabulary-set
+    id: vocabulary-55-day55
+    layout: compact
+    source:
+      path: vocab/basic/day55.json
+  - kind: vocabulary-set
+    id: vocabulary-56-day56
+    layout: compact
+    source:
+      path: vocab/basic/day56.json
+  - kind: vocabulary-set
+    id: vocabulary-57-day57
+    layout: compact
+    source:
+      path: vocab/basic/day57.json
+  - kind: vocabulary-set
+    id: vocabulary-58-day58
+    layout: compact
+    source:
+      path: vocab/basic/day58.json
+  - kind: vocabulary-set
+    id: vocabulary-59-day59
+    layout: compact
+    source:
+      path: vocab/basic/day59.json
+  - kind: vocabulary-set
+    id: vocabulary-60-day60
+    layout: compact
+    source:
+      path: vocab/basic/day60.json
+  - kind: vocabulary-set
+    id: vocabulary-61-day61
+    layout: compact
+    source:
+      path: vocab/basic/day61.json
+  - kind: vocabulary-set
+    id: vocabulary-62-day62
+    layout: compact
+    source:
+      path: vocab/basic/day62.json
+  - kind: vocabulary-set
+    id: vocabulary-63-day63
+    layout: compact
+    source:
+      path: vocab/basic/day63.json
+  - kind: vocabulary-set
+    id: vocabulary-64-day64
+    layout: compact
+    source:
+      path: vocab/basic/day64.json
+  - kind: vocabulary-set
+    id: vocabulary-65-day65
+    layout: compact
+    source:
+      path: vocab/basic/day65.json
+  - kind: vocabulary-set
+    id: vocabulary-66-day66
+    layout: compact
+    source:
+      path: vocab/basic/day66.json
+  - kind: vocabulary-set
+    id: vocabulary-67-day67
+    layout: compact
+    source:
+      path: vocab/basic/day67.json
+  - kind: vocabulary-set
+    id: vocabulary-68-day68
+    layout: compact
+    source:
+      path: vocab/basic/day68.json
+  - kind: vocabulary-set
+    id: vocabulary-69-day69
+    layout: compact
+    source:
+      path: vocab/basic/day69.json
+  - kind: vocabulary-set
+    id: vocabulary-70-day70
+    layout: compact
+    source:
+      path: vocab/basic/day70.json

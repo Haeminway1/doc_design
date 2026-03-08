@@ -20,7 +20,9 @@
             "An experience of finding a lost wallet",
             "How to get a driver's license",
             "Dangers on the sidewalk"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "잃어버린 지갑을 발견하고 주인에게 돌려준 경험이 글의 중심 내용"
         },
         {
           "id": "reading-basic-q1-2",
@@ -33,7 +35,9 @@
             "She took it to the police station.",
             "She called the owner directly.",
             "She walked past it."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "당황했지만 길 건너편 경찰서에 가서 지갑을 주었다고 나옴"
         },
         {
           "id": "reading-basic-q1-3",
@@ -46,7 +50,27 @@
             "지갑 주인은 수진이에게 고마움을 표현했다.",
             "경찰관이 수진이에게 보상을 주었다.",
             "수진이는 옳은 일을 한 자신을 자랑스러워했다."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "지갑 주인이 학교로 보상을 보냈다고 했으므로, 경찰관이 준 것이 아님"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "realize",
+          "meaning": "깨닫다"
+        },
+        {
+          "word": "panic",
+          "meaning": "공황, 당황"
+        },
+        {
+          "word": "honest",
+          "meaning": "정직한"
+        },
+        {
+          "word": "reward",
+          "meaning": "보상, 사례"
         }
       ]
     },
@@ -68,7 +92,9 @@
             "How to Eat Pizza",
             "The History of Pizza",
             "Dangers in the Kitchen"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "마이크가 요리 수업에 참여해 피자를 만든 즐거운 경험을 다룸"
         },
         {
           "id": "reading-basic-q2-2",
@@ -81,7 +107,9 @@
             "마이크는 피자를 오븐에 넣는 것을 잊었다.",
             "마이크는 자신이 만든 피자가 아주 맛있다고 생각했다.",
             "요리사가 마이크의 피자를 대신 만들어 주었다."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "자신이 만든 피자를 먹고 \"most delicious\"라고 생각했음"
         },
         {
           "id": "reading-basic-q2-3",
@@ -94,7 +122,27 @@
             "Pepperoni",
             "Olives",
             "Mushrooms"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "토마토소스, 치즈, 페퍼로니, 버섯은 언급되었지만 올리브는 언급되지 않음"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "recipe",
+          "meaning": "요리법, 레시피"
+        },
+        {
+          "word": "messy",
+          "meaning": "지저분한, 엉망인"
+        },
+        {
+          "word": "apron",
+          "meaning": "앞치마"
+        },
+        {
+          "word": "delicious",
+          "meaning": "맛있는"
         }
       ]
     },
@@ -116,7 +164,9 @@
             "The difficulties of cleaning a cage",
             "How to buy a healthy hamster",
             "Animals that are active at night"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "글쓴이가 애완 햄스터 초코를 키우는 경험에 대해 이야기하고 있음"
         },
         {
           "id": "reading-basic-q3-2",
@@ -129,7 +179,9 @@
             "During the day",
             "At night",
             "When the writer is at school"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "본문에 \"when the night comes, he becomes very active\"라고 명시됨"
         },
         {
           "id": "reading-basic-q3-3",
@@ -142,7 +194,27 @@
             "햄스터는 밤에 쳇바퀴를 돌린다.",
             "글쓴이는 초코를 2년 전에 샀다.",
             "글쓴이는 애완동물을 돌보는 것에 보람을 느낀다."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "햄스터를 언제 샀는지에 대한 정보는 글에 나와 있지 않음"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "creature",
+          "meaning": "생물, 동물"
+        },
+        {
+          "word": "cage",
+          "meaning": "우리, 새장"
+        },
+        {
+          "word": "observe",
+          "meaning": "관찰하다"
+        },
+        {
+          "word": "responsible",
+          "meaning": "책임이 있는"
         }
       ]
     },
@@ -164,7 +236,9 @@
             "To complain about a boring weekend",
             "To give information about board games",
             "To explain how to read to the elderly"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "요양원에서 자원봉사를 한 경험을 시간 순서에 따라 묘사하고 있음"
         },
         {
           "id": "reading-basic-q4-2",
@@ -177,7 +251,9 @@
             "Serving lunch",
             "Cleaning the rooms",
             "Talking with elderly people"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "신문 읽기, 보드게임, 점심 배식은 언급되었지만 방 청소는 언급되지 않음"
         },
         {
           "id": "reading-basic-q4-3",
@@ -190,7 +266,27 @@
             "proud and confident",
             "a little nervous",
             "angry and upset"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "본문에 \"I was a little nervous\"라고 직접적으로 언급됨"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "volunteer",
+          "meaning": "자원봉사(자)"
+        },
+        {
+          "word": "nursing home",
+          "meaning": "요양원"
+        },
+        {
+          "word": "elderly",
+          "meaning": "나이가 지긋한, 어르신들"
+        },
+        {
+          "word": "valuable",
+          "meaning": "가치 있는, 소중한"
         }
       ]
     },
@@ -212,7 +308,9 @@
             "A Beautiful Snowy Day",
             "My Favorite Season",
             "A Fun Snowball Fight"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "첫눈이 내린 날의 아름다운 풍경과 글쓴이의 감상을 다루고 있음"
         },
         {
           "id": "reading-basic-q5-2",
@@ -225,7 +323,9 @@
             "글쓴이는 밖으로 나가 눈싸움을 했다.",
             "글쓴이는 따뜻한 코코아를 마셨다.",
             "눈은 모든 것을 하얀 담요처럼 덮었다."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "눈덩이를 만들어 나무에 던졌다고 했지, 다른 사람과 눈싸움을 했다는 내용은 없음"
         },
         {
           "id": "reading-basic-q5-3",
@@ -238,7 +338,27 @@
             "sad and lonely",
             "loud and exciting",
             "busy and tired"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "따뜻한 코코아를 마시며 눈을 보는 상황에서 느끼는 '아늑하고 편안한' 감정을 의미"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "flake",
+          "meaning": "(눈)송이"
+        },
+        {
+          "word": "blanket",
+          "meaning": "담요"
+        },
+        {
+          "word": "atmosphere",
+          "meaning": "분위기"
+        },
+        {
+          "word": "cozy",
+          "meaning": "아늑한, 편안한"
         }
       ]
     },
@@ -260,7 +380,9 @@
             "The rules of the 100-meter race",
             "The importance of being on the winning team",
             "The different teams at school"
-          ]
+          ],
+          "answer": 1,
+          "explanation": "운동회 날 겪은 여러 가지 일과 느낌을 중심으로 서술하고 있음"
         },
         {
           "id": "reading-basic-q6-2",
@@ -273,7 +395,9 @@
             "The relay race",
             "The long jump",
             "All the events"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "100미터 경주에서는 졌지만, 이어달리기에서는 이겼다고 나옴"
         },
         {
           "id": "reading-basic-q6-3",
@@ -286,7 +410,27 @@
             "글쓴이는 100미터 달리기에서 1등을 했다.",
             "글쓴이는 이어달리기의 마지막 주자였다.",
             "글쓴이는 운동회가 끝난 후 매우 슬펐다."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "본문에 \"I was the last runner for my team\"이라고 명시됨"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "compete",
+          "meaning": "경쟁하다, 참가하다"
+        },
+        {
+          "word": "relay race",
+          "meaning": "이어달리기"
+        },
+        {
+          "word": "cheer",
+          "meaning": "응원하다"
+        },
+        {
+          "word": "effort",
+          "meaning": "노력"
         }
       ]
     },
@@ -308,7 +452,9 @@
             "A Mysterious Kitchen Noise",
             "How to Train a Puppy",
             "A Scary Dream"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "밤에 부엌에서 들려온 정체불명의 소리가 글의 핵심 사건임"
         },
         {
           "id": "reading-basic-q7-2",
@@ -321,7 +467,9 @@
             "A little scared",
             "Bored and sleepy",
             "Angry and annoyed"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "본문에 \"My heart started beating faster\", \"I was so scared\" 등의 표현이 나옴"
         },
         {
           "id": "reading-basic-q7-3",
@@ -334,7 +482,31 @@
             "The wind outside",
             "A new puppy",
             "A ghost"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "소리의 정체는 카운터 위 과자를 꺼내려던 강아지였음"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "creak",
+          "meaning": "삐걱거리는 소리"
+        },
+        {
+          "word": "investigate",
+          "meaning": "조사하다"
+        },
+        {
+          "word": "tiptoe",
+          "meaning": "발끝으로 살금살금 걷다"
+        },
+        {
+          "word": "relieved",
+          "meaning": "안도하는"
+        },
+        {
+          "word": "source",
+          "meaning": "근원, 출처"
         }
       ]
     },
@@ -356,7 +528,9 @@
             "To compare apartment life and house life",
             "To sell gardening tools and seeds",
             "To complain about living in an apartment"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "가족이 아파트 발코니에서 작은 정원을 가꾸기 시작한 경험을 설명함"
         },
         {
           "id": "reading-basic-q8-2",
@@ -369,7 +543,9 @@
             "Basil",
             "Carrots",
             "Herbs"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "체리 토마토, 상추, 허브(바질)는 심었지만 당근은 언급되지 않음"
         },
         {
           "id": "reading-basic-q8-3",
@@ -382,7 +558,27 @@
             "the knowledge about soil",
             "the feeling of happiness",
             "the need for water"
-          ]
+          ],
+          "answer": 1,
+          "explanation": "싹이 나기까지 기다리는 상황에서 필요한 '차분하게 기다리는 능력'을 의미"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "gardening",
+          "meaning": "원예, 정원 가꾸기"
+        },
+        {
+          "word": "soil",
+          "meaning": "흙, 토양"
+        },
+        {
+          "word": "patience",
+          "meaning": "인내심, 참을성"
+        },
+        {
+          "word": "sprout",
+          "meaning": "싹, 싹이 트다"
         }
       ]
     },
@@ -404,7 +600,9 @@
             "To the library",
             "To the Natural History Museum",
             "To the park"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "글의 첫 문장에 \"Natural History Museum\"에 갔다고 명시됨"
         },
         {
           "id": "reading-basic-q9-2",
@@ -417,7 +615,9 @@
             "The huge T-Rex skeleton",
             "The fossils of plants",
             "The friendly museum staff"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "본문에 \"huge Tyrannosaurus Rex skeleton\"을 보고 매우 감명받았다고 서술됨"
         },
         {
           "id": "reading-basic-q9-3",
@@ -430,7 +630,27 @@
             "트리케라톱스는 뿔이 세 개 달려 있었다.",
             "글쓴이는 공룡 전시가 지루하다고 생각했다.",
             "박물관에는 고대 식물 화석도 있었다."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "글의 마지막에 \"It was a fascinating day\"라고 하며 매우 흥미로운 하루였다고 했으므로, 지루했다는 것은 틀린 설명"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "exhibit",
+          "meaning": "전시, 전시품"
+        },
+        {
+          "word": "skeleton",
+          "meaning": "뼈대, 골격"
+        },
+        {
+          "word": "fossil",
+          "meaning": "화석"
+        },
+        {
+          "word": "ancient",
+          "meaning": "고대의"
         }
       ]
     },
@@ -452,7 +672,9 @@
             "The effects of playing computer games",
             "How many hours doctors sleep",
             "The different stages of sleep"
-          ]
+          ],
+          "answer": 1,
+          "explanation": "글 전체가 수면이 우리 몸과 뇌에 왜 중요한지를 여러 근거를 들어 설명하고 있음"
         },
         {
           "id": "reading-basic-q10-2",
@@ -465,7 +687,9 @@
             "Becoming a better student",
             "A bad mood",
             "Forgetting what you learned"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "잠을 못 자면 집중을 못 해 학업에 방해가 되므로, 더 나은 학생이 된다는 것은 잠 부족의 결과가 아님"
         },
         {
           "id": "reading-basic-q10-3",
@@ -478,7 +702,27 @@
             "8~10시간",
             "11~12시간",
             "정해진 시간이 없다."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "본문에 \"teenagers need about 8 to 10 hours of sleep\"라고 명시됨"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "essential",
+          "meaning": "필수적인, 극히 중요한"
+        },
+        {
+          "word": "concentrate",
+          "meaning": "집중하다"
+        },
+        {
+          "word": "affect",
+          "meaning": "영향을 미치다"
+        },
+        {
+          "word": "recharge",
+          "meaning": "재충전하다"
         }
       ]
     },
@@ -500,7 +744,9 @@
             "Visiting a history museum",
             "Reading a history book",
             "Making a map of a village"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "역사 숙제로 '가계도 만들기'를 했다는 내용이 글의 중심"
         },
         {
           "id": "reading-basic-q11-2",
@@ -513,7 +759,9 @@
             "글쓴이는 숙제를 하면서 조상에 대해 많은 것을 알게 되었다.",
             "글쓴이는 숙제를 위해 컬러 사진을 사용했다.",
             "글쓴이는 부모님을 인터뷰했다."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "조부모님을 인터뷰하며 조상에 대한 흥미로운 사실들을 발견했다고 나옴"
         },
         {
           "id": "reading-basic-q11-3",
@@ -526,7 +774,27 @@
             "It was a valuable and meaningful experience.",
             "It was too difficult to finish.",
             "Disappointed with the result."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "글의 마지막에 \"이 프로젝트는 내가 누구인지, 어디서 왔는지 이해하도록 도와주었다\"고 하며 가치 있고 의미 있는 경험이었음을 알 수 있음"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "assignment",
+          "meaning": "과제, 숙제"
+        },
+        {
+          "word": "interview",
+          "meaning": "인터뷰하다, 면담하다"
+        },
+        {
+          "word": "discover",
+          "meaning": "발견하다"
+        },
+        {
+          "word": "ancestor",
+          "meaning": "조상, 선조"
         }
       ]
     },
@@ -548,7 +816,9 @@
             "How to travel around the world",
             "The geography of Brazil",
             "The history of the postal service"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "우표 수집이 왜 재미있고 무엇을 배울 수 있는지에 대한 글"
         },
         {
           "id": "reading-basic-q12-2",
@@ -561,7 +831,9 @@
             "His friends all have the same hobby.",
             "He wants to be a designer.",
             "He likes using a magnifying glass."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "본문에 \"Collecting stamps is a fun way to learn about geography and culture\"라고 명시됨"
         },
         {
           "id": "reading-basic-q12-3",
@@ -574,7 +846,27 @@
             "글쓴이가 가장 좋아하는 우표는 브라질의 펭귄 우표이다.",
             "글쓴이는 우표를 통해 지리와 문화를 배운다.",
             "글쓴이는 돋보기를 사용해 우표를 관찰한다."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "가장 좋아하는 우표는 브라질의 '투칸(toucan)' 우표라고 했으므로 펭귄 우표는 틀린 설명"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "fascinated",
+          "meaning": "매료된, 마음을 다 빼앗긴"
+        },
+        {
+          "word": "building",
+          "meaning": "건물"
+        },
+        {
+          "word": "rare",
+          "meaning": "희귀한, 드문"
+        },
+        {
+          "word": "culture",
+          "meaning": "문화"
         }
       ]
     },
@@ -596,7 +888,9 @@
             "To share a fun experience of learning a language with an app",
             "To complain about the difficulty of learning Japanese",
             "To advertise a new language school"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "언어 학습 앱을 사용해 일본어를 재미있게 배우는 경험을 공유하고 있음"
         },
         {
           "id": "reading-basic-q13-2",
@@ -609,7 +903,9 @@
             "Matching words with pictures",
             "Watching full anime movies",
             "Comparing the user's voice to a native speaker's"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "게임, 퀴즈, 발음 연습 기능은 언급되었지만, 애니메이션 영화 전체를 보는 기능은 언급되지 않음"
         },
         {
           "id": "reading-basic-q13-3",
@@ -622,7 +918,27 @@
             "학교 시험을 잘 보기 위해서",
             "애니메이션을 좋아하기 때문에",
             "부모님이 시켜서"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "글의 첫 문장에 \"I have always wanted to learn Japanese because I love anime\"라고 명시됨"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "download",
+          "meaning": "다운로드하다"
+        },
+        {
+          "word": "pronunciation",
+          "meaning": "발음"
+        },
+        {
+          "word": "convenient",
+          "meaning": "편리한"
+        },
+        {
+          "word": "greeting",
+          "meaning": "인사"
         }
       ]
     },
@@ -644,7 +960,9 @@
             "They threw her a surprise party.",
             "They went on a trip with her.",
             "They sent her a letter."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "가족들이 할머니를 위해 '깜짝 파티(surprise party)'를 열어주었다고 나옴"
         },
         {
           "id": "reading-basic-q14-2",
@@ -657,7 +975,9 @@
             "생일 카드 만들기",
             "엄마와 함께 케이크 굽기",
             "할머니를 파티 장소로 모셔오기"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "본문에 \"My mom and I baked a special sweet potato cake\"라고 명시됨"
         },
         {
           "id": "reading-basic-q14-3",
@@ -670,7 +990,31 @@
             "She was shocked and very happy.",
             "She was too tired to enjoy the party.",
             "She pretended not to be surprised."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "본문에 \"She was so shocked and happy\"라고 명시됨"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "role",
+          "meaning": "역할"
+        },
+        {
+          "word": "relative",
+          "meaning": "친척"
+        },
+        {
+          "word": "present",
+          "meaning": "선물"
+        },
+        {
+          "word": "preparation",
+          "meaning": "준비"
+        },
+        {
+          "word": "worthwhile",
+          "meaning": "~할 가치가 있는"
         }
       ]
     },
@@ -692,7 +1036,9 @@
             "How Trees Produce Oxygen",
             "My Favorite Day of the Year",
             "The Problem of Air Pollution"
-          ]
+          ],
+          "answer": 1,
+          "explanation": "식목일에 학교에서 나무를 심은 행사에 대한 글"
         },
         {
           "id": "reading-basic-q15-2",
@@ -705,7 +1051,9 @@
             "They become homes for animals.",
             "They clean the water.",
             "They make our environment greener."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "산소 생산, 그늘 제공, 동물의 집 역할은 언급되었지만, 물을 깨끗하게 한다는 내용은 언급되지 않음"
         },
         {
           "id": "reading-basic-q15-3",
@@ -718,7 +1066,31 @@
             "글쓴이의 반은 소나무를 심었다.",
             "글쓴이는 흙으로 나무뿌리를 덮는 것을 도왔다.",
             "선생님은 나무가 빨리 자라지 않을 것이라고 말했다."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "본문에 \"I helped cover the roots with soil\"이라고 명시됨"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "Arbor Day",
+          "meaning": "식목일"
+        },
+        {
+          "word": "vital",
+          "meaning": "필수적인, 매우 중요한"
+        },
+        {
+          "word": "produce",
+          "meaning": "생산하다"
+        },
+        {
+          "word": "soil",
+          "meaning": "흙, 토양"
+        },
+        {
+          "word": "accomplishment",
+          "meaning": "성취, 업적"
         }
       ]
     },
@@ -740,7 +1112,9 @@
             "A father's love for his child",
             "The best parks for bike riding",
             "How to choose a good bike"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "어린 시절 자전거를 배우던 날의 기억을 상세히 묘사하고 있음"
         },
         {
           "id": "reading-basic-q16-2",
@@ -753,7 +1127,9 @@
             "He encouraged him not to give up.",
             "He fixed the broken bike.",
             "He rode the bike for him."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "아빠가 넘어져도 괜찮다며 계속 격려해 주었다고(\"encouraged me\") 나옴"
         },
         {
           "id": "reading-basic-q16-3",
@@ -766,7 +1142,27 @@
             "자유로움과 성취감 (freedom and achievement)",
             "두려움과 걱정 (fear and worry)",
             "분노와 실망 (anger and disappointment)"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "본문에 \"a feeling of pure freedom and achievement\"라고 명시됨"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "balance",
+          "meaning": "균형"
+        },
+        {
+          "word": "scrape",
+          "meaning": "긁히다, 찰과상을 입다"
+        },
+        {
+          "word": "encourage",
+          "meaning": "격려하다, 용기를 북돋우다"
+        },
+        {
+          "word": "achievement",
+          "meaning": "성취, 달성"
         }
       ]
     },
@@ -788,7 +1184,9 @@
             "To an aquarium",
             "To a park",
             "To a farm"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "글의 첫 문장과 제목에서 '수족관(aquarium)'에 갔음을 알 수 있음"
         },
         {
           "id": "reading-basic-q17-2",
@@ -801,7 +1199,9 @@
             "The gift shop",
             "The underwater tunnel",
             "The penguin exhibit"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "본문에 \"My favorite part was the underwater tunnel\"이라고 명시됨"
         },
         {
           "id": "reading-basic-q17-3",
@@ -814,7 +1214,27 @@
             "돌고래들은 똑똑하고 놀라운 묘기를 보여주었다.",
             "글쓴이는 바다를 보호할 필요가 없다고 생각했다.",
             "수중 터널을 걸을 때 물고기들이 주변에서 헤엄쳤다."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "글의 마지막에 \"바다를 보호하는 것의 중요성에 대해 많이 배웠다\"고 했으므로, 보호할 필요가 없다고 생각했다는 것은 틀린 설명"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "marine",
+          "meaning": "바다의, 해양의"
+        },
+        {
+          "word": "graceful",
+          "meaning": "우아한"
+        },
+        {
+          "word": "intelligent",
+          "meaning": "똑똑한, 지능이 높은"
+        },
+        {
+          "word": "educational",
+          "meaning": "교육적인"
         }
       ]
     },
@@ -836,7 +1256,9 @@
             "He sprained his ankle.",
             "He got a perfect score on a test.",
             "He lost his school bag."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "축구를 하다가 발목을 삐었다고(\"sprained his ankle\") 나옴"
         },
         {
           "id": "reading-basic-q18-2",
@@ -849,7 +1271,9 @@
             "He taught Jiho how to play soccer.",
             "He visited Jiho in the hospital every day.",
             "He bought him new crutches."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "학교 갈 때 지호의 가방을 들어주는 등 도움을 주었다고 나옴"
         },
         {
           "id": "reading-basic-q18-3",
@@ -862,7 +1286,27 @@
             "It is important to have many friends.",
             "Friends should always play together.",
             "You should not trust your friends."
-          ]
+          ],
+          "answer": 1,
+          "explanation": "'어려울 때 친구가 진짜 친구다'라는 속담으로, 도움이 필요할 때 도와주는 친구가 진정한 친구라는 의미"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "sprain",
+          "meaning": "(발목, 손목 등을) 삐다"
+        },
+        {
+          "word": "crutches",
+          "meaning": "목발"
+        },
+        {
+          "word": "grateful",
+          "meaning": "고마워하는, 감사하는"
+        },
+        {
+          "word": "difficult",
+          "meaning": "어려운"
         }
       ]
     },
@@ -884,7 +1328,9 @@
             "A special kind of spicy soup",
             "A traditional Korean dance",
             "The name of a famous Korean chef"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "늦가을에 겨울을 대비해 많은 양의 김치를 담그는 전통이라고 설명됨"
         },
         {
           "id": "reading-basic-q19-2",
@@ -897,7 +1343,9 @@
             "생강 (ginger)",
             "설탕 (sugar)",
             "글쓴이의 역할은 양념을 배추 잎 사이에 바르는 것이었다."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "고춧가루, 마늘, 생강은 언급되었지만 설탕은 언급되지 않음"
         },
         {
           "id": "reading-basic-q19-3",
@@ -910,7 +1358,31 @@
             "It is a cultural heritage that connects people.",
             "It is a competition to make the best kimchi.",
             "It is a good way to sell kimchi."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "글의 마지막에 \"음식을 만드는 것 이상으로, 가족과 지역 사회를 하나로 묶는 문화유산\"이라고 생각함"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "tradition",
+          "meaning": "전통"
+        },
+        {
+          "word": "quantity",
+          "meaning": "양, 수량"
+        },
+        {
+          "word": "expert",
+          "meaning": "전문가"
+        },
+        {
+          "word": "ingredient",
+          "meaning": "재료, 성분"
+        },
+        {
+          "word": "heritage",
+          "meaning": "유산"
         }
       ]
     },
@@ -932,7 +1404,9 @@
             "How to lose weight by skipping meals",
             "The history of breakfast foods",
             "Different breakfast menus around the world"
-          ]
+          ],
+          "answer": 1,
+          "explanation": "글 전체가 아침 식사를 왜 먹어야 하는지, 그 중요성에 대해 설명하고 있음"
         },
         {
           "id": "reading-basic-q20-2",
@@ -945,7 +1419,9 @@
             "It makes you gain weight quickly.",
             "It saves you time in the morning.",
             "It makes you want to eat more snacks."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "본문에 \"Eating a healthy breakfast helps you concentrate better at school\"이라고 명시됨"
         },
         {
           "id": "reading-basic-q20-3",
@@ -958,7 +1434,31 @@
             "아침 식사는 뇌와 몸에 에너지를 공급한다.",
             "아침 식사는 항상 거창하게 먹어야 한다.",
             "아침 식사를 거르면 건강에 좋지 않은 간식을 먹게 될 수 있다."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "본문에 \"You don't need a big meal\"이라며 시리얼, 과일, 토스트 같은 간단한 식사도 괜찮다고 했으므로, 항상 거창하게 먹어야 한다는 것은 틀린 설명"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "skip",
+          "meaning": "거르다, 건너뛰다"
+        },
+        {
+          "word": "fuel",
+          "meaning": "연료"
+        },
+        {
+          "word": "concentrate",
+          "meaning": "집중하다"
+        },
+        {
+          "word": "diet",
+          "meaning": "식단, 식습관"
+        },
+        {
+          "word": "difference",
+          "meaning": "차이"
         }
       ]
     },
@@ -980,7 +1480,9 @@
             "To give students a day off",
             "To teach students how to make new things",
             "To let students buy new school supplies"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "자선 단체를 위한 기금을 마련하기 위해(\"to raise money for a local charity\") 벼룩시장을 열었다고 나옴"
         },
         {
           "id": "reading-basic-q21-2",
@@ -993,7 +1495,9 @@
             "They made a colorful sign.",
             "They gave out free snacks.",
             "They moved their table to a different spot."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "친구가 \"colorful sign\"을 만들어 더 많은 손님을 끌었다고 나옴"
         },
         {
           "id": "reading-basic-q21-3",
@@ -1006,7 +1510,27 @@
             "처음부터 많은 사람들이 그들의 가게를 방문했다.",
             "그들은 번 돈을 모두 자선 단체에 기부했다.",
             "그들은 총 5만 원을 벌었다."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "처음에는 사람들이 많이 오지 않아 실망했다고(\"a bit disappointed\") 했으므로, 처음부터 많이 왔다는 것은 틀린 설명"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "charity",
+          "meaning": "자선 단체"
+        },
+        {
+          "word": "participate",
+          "meaning": "참가하다"
+        },
+        {
+          "word": "disappointed",
+          "meaning": "실망한"
+        },
+        {
+          "word": "donate",
+          "meaning": "기부하다"
         }
       ]
     },
@@ -1028,7 +1552,9 @@
             "How to Prepare for a Hike",
             "The Different Trails of Mount Seorak",
             "Family Picnics"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "등산 과정의 어려움과 정상에 올랐을 때의 보람을 다루고 있으므로 '도전적이지만 보람 있는 등산'이 적절함"
         },
         {
           "id": "reading-basic-q22-2",
@@ -1041,7 +1567,9 @@
             "He promised to buy him a gift.",
             "He said they could go home.",
             "He showed him a map."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "아빠가 정상에서의 경치가 그럴 만한 가치가 있을 것이라고(\"The view from the top will be worth it\") 말하며 격려함"
         },
         {
           "id": "reading-basic-q22-3",
@@ -1054,7 +1582,31 @@
             "calm → nervous",
             "hopeful → disappointed",
             "angry → relieved"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "처음에는 힘들고 지쳐서 포기하고 싶었지만(\"tired and discouraged\"), 정상에 오른 후에는 자랑스럽고 행복한(\"proud and happy\") 감정을 느낌"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "goal",
+          "meaning": "목표"
+        },
+        {
+          "word": "steep",
+          "meaning": "가파른"
+        },
+        {
+          "word": "view",
+          "meaning": "경치, 전망"
+        },
+        {
+          "word": "strength",
+          "meaning": "힘"
+        },
+        {
+          "word": "summit",
+          "meaning": "정상, 꼭대기"
         }
       ]
     },
@@ -1076,7 +1628,9 @@
             "The job of a flight attendant",
             "How airplanes fly",
             "The different types of airplanes"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "제주도 여행을 배경으로, 비행기를 처음 타 본 경험을 상세히 묘사하고 있음"
         },
         {
           "id": "reading-basic-q23-2",
@@ -1089,7 +1643,9 @@
             "The ocean and many ships",
             "The inside of the cockpit",
             "The stars and the moon"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "이륙 후 집과 차가 작아지고, 곧 구름 위를 날았다고(\"flying above the clouds\") 나옴"
         },
         {
           "id": "reading-basic-q23-3",
@@ -1102,7 +1658,31 @@
             "비행기는 구름 위를 날았다.",
             "비행시간은 3시간이 걸렸다.",
             "착륙은 매우 부드러웠다."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "본문에 \"we were flying above the clouds\"라고 명시됨"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "board",
+          "meaning": "탑승하다"
+        },
+        {
+          "word": "take off",
+          "meaning": "이륙하다"
+        },
+        {
+          "word": "flight attendant",
+          "meaning": "객실 승무원"
+        },
+        {
+          "word": "bumpy",
+          "meaning": "울퉁불퉁한, 덜컹거리는"
+        },
+        {
+          "word": "unforgettable",
+          "meaning": "잊을 수 없는"
         }
       ]
     },
@@ -1124,7 +1704,9 @@
             "It was boring.",
             "It was difficult.",
             "It was better than video games."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "글의 첫 문장에 \"I used to think reading was boring\"이라고 명시됨"
         },
         {
           "id": "reading-basic-q24-2",
@@ -1137,7 +1719,9 @@
             "His friends told him to read more.",
             "He won a book in a contest.",
             "He wanted to learn new words."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "엄마가 준 '나니아 연대기'라는 마법 같은 이야기를 읽고 독서에 대한 생각이 바뀜"
         },
         {
           "id": "reading-basic-q24-3",
@@ -1150,7 +1734,31 @@
             "'나니아 연대기'는 네 명의 아이들에 대한 이야기이다.",
             "글쓴이는 책을 읽은 후 다시는 비디오 게임을 하지 않았다.",
             "글쓴이는 책을 다 읽는 데 일주일이 걸렸다."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "본문에 \"The book was about four children who discover a magical land\"라고 명시됨"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "prefer",
+          "meaning": "~을 더 좋아하다, 선호하다"
+        },
+        {
+          "word": "wardrobe",
+          "meaning": "옷장"
+        },
+        {
+          "word": "captivated",
+          "meaning": "마음을 사로잡힌"
+        },
+        {
+          "word": "character",
+          "meaning": "등장인물"
+        },
+        {
+          "word": "magic",
+          "meaning": "마법"
         }
       ]
     },
@@ -1172,7 +1780,9 @@
             "Biography (전기)",
             "News report (뉴스 기사)",
             "Poem (시)"
-          ]
+          ],
+          "answer": 1,
+          "explanation": "동물을 의인화하여 교훈을 주는 이야기이므로 '우화'에 해당함"
         },
         {
           "id": "reading-basic-q25-2",
@@ -1185,7 +1795,9 @@
             "The city was too noisy.",
             "He was scared of the dangers in the city.",
             "The city mouse was not kind to him."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "고양이와 개들 때문에 겁에 질려서(\"terrified\") 시골로 돌아가기로 결심함"
         },
         {
           "id": "reading-basic-q25-3",
@@ -1198,7 +1810,31 @@
             "맛있는 음식을 친구와 나눠 먹어야 한다.",
             "항상 새로운 것을 시도해야 한다.",
             "고양이는 쥐에게 매우 위험한 동물이다."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "시골쥐의 마지막 말 \"I would rather eat my simple food in peace than have your fine food in fear\"가 이야기의 핵심 교훈임"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "cousin",
+          "meaning": "사촌"
+        },
+        {
+          "word": "poor",
+          "meaning": "가난한, 초라한"
+        },
+        {
+          "word": "terrified",
+          "meaning": "겁에 질린, 무서워하는"
+        },
+        {
+          "word": "rather A than B",
+          "meaning": "B하느니 차라리 A하겠다"
+        },
+        {
+          "word": "in peace",
+          "meaning": "평화롭게"
         }
       ]
     },
@@ -1220,7 +1856,9 @@
             "The problems that can happen in a friendship",
             "How to make new friends at school",
             "Why secrets are important"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "글 전체가 좋은 친구가 되기 위한 조건, 즉 '좋은 친구의 자질'에 대해 설명하고 있음"
         },
         {
           "id": "reading-basic-q26-2",
@@ -1233,7 +1871,9 @@
             "They are always honest.",
             "They only talk about themselves.",
             "They are supportive."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "좋은 친구는 자신의 문제에 대해 잘 들어주는 사람(\"a good listener\")이라고 했으므로, 자기 얘기만 하는 것은 좋은 친구의 자질이 아님"
         },
         {
           "id": "reading-basic-q26-3",
@@ -1246,7 +1886,27 @@
             "친구 사이에는 비밀이 없어야 한다.",
             "우정은 쉽게 변할 수 있다.",
             "친구는 두 명만 사귀어야 한다."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "'우정은 쌍방향 길이다'라는 의미로, 상대방에게 좋은 친구가 되어주기를 바란다면 나 자신도 그래야 한다는 상호적인 관계를 의미함"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "trust",
+          "meaning": "신뢰하다, 믿다"
+        },
+        {
+          "word": "judge",
+          "meaning": "판단하다"
+        },
+        {
+          "word": "loyal",
+          "meaning": "충실한, 의리 있는"
+        },
+        {
+          "word": "precious",
+          "meaning": "소중한, 귀중한"
         }
       ]
     },
@@ -1268,7 +1928,9 @@
             "How to make honey at home",
             "The life cycle of a flower",
             "Why bees are disappearing"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "여왕벌, 수벌, 일벌 등 군집 내에서 각 꿀벌이 맡은 다른 역할에 대해 설명하고 있음"
         },
         {
           "id": "reading-basic-q27-2",
@@ -1281,7 +1943,9 @@
             "To defend the hive",
             "To lay eggs",
             "To lead the worker bees"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "본문에 \"Her only job is to lay eggs\"라고 명시됨"
         },
         {
           "id": "reading-basic-q27-3",
@@ -1294,7 +1958,35 @@
             "대부분의 벌은 일벌이다.",
             "일벌은 꽃에서 꿀과 꽃가루를 모은다.",
             "꿀벌은 인간을 위해 꿀을 만든다."
-          ]
+          ],
+          "answer": 5,
+          "explanation": "꿀은 겨울을 나기 위한 자신들의 식량(\"their food for the winter\")이라고 했으므로, 인간을 위해 만든다는 것은 틀린 설명"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "colony",
+          "meaning": "군집, 집단"
+        },
+        {
+          "word": "lay eggs",
+          "meaning": "알을 낳다"
+        },
+        {
+          "word": "nectar",
+          "meaning": "(꽃의) 꿀"
+        },
+        {
+          "word": "pollen",
+          "meaning": "꽃가루"
+        },
+        {
+          "word": "defend",
+          "meaning": "방어하다, 지키다"
+        },
+        {
+          "word": "creature",
+          "meaning": "생물"
         }
       ]
     },
@@ -1316,7 +2008,9 @@
             "A webtoon artist",
             "A computer programmer",
             "A teacher"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "글의 첫 문장에 \"I want to be a webtoon artist\"라고 명시됨"
         },
         {
           "id": "reading-basic-q28-2",
@@ -1329,7 +2023,9 @@
             "The ability to sing well",
             "Knowledge of digital tools",
             "Hard work"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "그림 실력, 이야기 아이디어, 디지털 도구 사용법, 노력 등은 언급되었지만 노래 실력은 언급되지 않음"
         },
         {
           "id": "reading-basic-q28-3",
@@ -1342,7 +2038,31 @@
             "목표가 뚜렷하고 노력하는 자세를 가졌다.",
             "남의 말을 잘 듣지 않고 고집이 세다.",
             "쉽게 포기하고 변덕이 심하다."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "자신의 꿈이 무엇인지 명확히 알고, 그것을 이루기 위해 무엇을 해야 하는지 구체적으로 계획하고 노력하려는 자세를 보임"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "digital",
+          "meaning": "디지털의"
+        },
+        {
+          "word": "engaging",
+          "meaning": "마음을 사로잡는, 매력적인"
+        },
+        {
+          "word": "plot",
+          "meaning": "줄거리, 구성"
+        },
+        {
+          "word": "competitive",
+          "meaning": "경쟁이 치열한"
+        },
+        {
+          "word": "achieve",
+          "meaning": "성취하다, 이루다"
         }
       ]
     },
@@ -1364,7 +2084,9 @@
             "The positive effects of laughter",
             "How to make other people laugh",
             "The science behind endorphins"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "웃음이 우리 몸과 마음에 미치는 여러 가지 긍정적인 효과에 대해 설명하고 있음"
         },
         {
           "id": "reading-basic-q29-2",
@@ -1377,7 +2099,9 @@
             "Endorphins",
             "Vitamins",
             "Tears"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "웃을 때 우리 몸은 엔도르핀이라는 화학 물질을 방출한다고(\"releases chemicals called endorphins\") 나옴"
         },
         {
           "id": "reading-basic-q29-3",
@@ -1390,7 +2114,31 @@
             "근육을 이완시킨다.",
             "기억력을 향상시킨다.",
             "사람들과의 관계를 좋게 한다."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "고통 완화, 면역력 향상, 근육 이완, 관계 강화 등은 언급되었지만 기억력 향상은 언급되지 않음"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "laughter",
+          "meaning": "웃음"
+        },
+        {
+          "word": "effect",
+          "meaning": "효과, 영향"
+        },
+        {
+          "word": "release",
+          "meaning": "방출하다"
+        },
+        {
+          "word": "immune system",
+          "meaning": "면역 체계"
+        },
+        {
+          "word": "health",
+          "meaning": "건강"
         }
       ]
     },
@@ -1412,7 +2160,9 @@
             "A bottle with a letter inside",
             "A sailor's hat",
             "A piece of a shipwreck"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "해변에서 편지가 든 유리병을 발견했다고 나옴"
         },
         {
           "id": "reading-basic-q30-2",
@@ -1425,7 +2175,9 @@
             "A message from a sailor in a storm",
             "A list of things to do on a ship",
             "A poem about the sea"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "1985년 폭풍우에 갇힌 선원이 쓴 편지였음"
         },
         {
           "id": "reading-basic-q30-3",
@@ -1438,7 +2190,31 @@
             "편지는 1985년에 쓰여졌다.",
             "편지를 쓴 선원은 폭풍우에서 살아남았다.",
             "핀은 편지를 경찰서에 가져다주었다."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "편지에 \"his ship was caught in a big storm in 1985\"라고 쓰여 있었음"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "faded",
+          "meaning": "색이 바랜, 희미해진"
+        },
+        {
+          "word": "sailor",
+          "meaning": "선원, 뱃사람"
+        },
+        {
+          "word": "survive",
+          "meaning": "살아남다, 생존하다"
+        },
+        {
+          "word": "wonder",
+          "meaning": "경이로움, 놀라움"
+        },
+        {
+          "word": "treasure",
+          "meaning": "보물"
         }
       ]
     },
@@ -1460,7 +2236,9 @@
             "The friendship between the writer and Minho",
             "How to become a good actor",
             "The importance of winning"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "학교 연극에 참여한 경험을 중심으로 글이 전개됨"
         },
         {
           "id": "reading-basic-q31-2",
@@ -1473,7 +2251,9 @@
             "The Tortoise",
             "The Fox",
             "A Tree"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "본문에 \"I was chosen to play the role of the Tortoise\"라고 명시됨"
         },
         {
           "id": "reading-basic-q31-3",
@@ -1486,7 +2266,31 @@
             "민호는 빠르고 거만한 산토끼 연기를 잘했다.",
             "글쓴이는 연극 당일 대사를 모두 잊어버렸다.",
             "관객들은 거북이가 결승선을 통과했을 때 환호했다."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "본문에 \"I remembered all my lines\"라고 했으므로, 대사를 잊어버렸다는 것은 틀린 설명"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "tortoise",
+          "meaning": "거북이"
+        },
+        {
+          "word": "hare",
+          "meaning": "산토끼"
+        },
+        {
+          "word": "confident",
+          "meaning": "자신감 있는"
+        },
+        {
+          "word": "arrogant",
+          "meaning": "거만한, 오만한"
+        },
+        {
+          "word": "audience",
+          "meaning": "관객, 청중"
         }
       ]
     },
@@ -1508,7 +2312,9 @@
             "To create a new smartphone app",
             "To fix a broken phone",
             "To teach his parents how to use a smartphone"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "선생님이 내준 숙제는 하루 동안 스마트폰 없이 지내는 것이었음"
         },
         {
           "id": "reading-basic-q32-2",
@@ -1521,7 +2327,9 @@
             "Anxious and uncomfortable",
             "Excited and hopeful",
             "Bored and sleepy"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "본문에 \"I felt anxious\"라고 명시되어 있으며, 주머니에서 계속 폰을 찾는 등 불안하고 불편한 모습을 보임"
         },
         {
           "id": "reading-basic-q32-3",
@@ -1534,7 +2342,27 @@
             "오랫동안 읽고 싶었던 책을 읽었다.",
             "늦잠을 자지 않고 일찍 일어났다.",
             "스마트폰 사용을 조절해야겠다고 깨달았다."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "스마트폰 알람이 없어서 늦잠을 잤다고(\"woke up late\") 했으므로, 일찍 일어났다는 것은 틀린 설명"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "impossible",
+          "meaning": "불가능한"
+        },
+        {
+          "word": "anxious",
+          "meaning": "불안한, 걱정하는"
+        },
+        {
+          "word": "notice",
+          "meaning": "알아차리다, 주목하다"
+        },
+        {
+          "word": "valuable",
+          "meaning": "가치 있는, 소중한"
         }
       ]
     },
@@ -1556,7 +2384,9 @@
             "An explanation of the Northern Lights",
             "The dangers of solar particles",
             "The different colors of the rainbow"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "오로라가 무엇인지, 원인, 관련된 전설, 관측 장소 등을 설명하고 있음"
         },
         {
           "id": "reading-basic-q33-2",
@@ -1569,7 +2399,9 @@
             "In high-latitude regions near the Arctic",
             "Under the ocean",
             "On the sun itself"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "본문에 \"usually seen in the high-latitude regions around the Arctic\"이라고 명시됨"
         },
         {
           "id": "reading-basic-q33-3",
@@ -1582,7 +2414,31 @@
             "옛날 사람들은 오로라의 원인을 정확히 알고 있었다.",
             "오로라는 항상 똑같은 모양으로 나타난다.",
             "오로라는 붉은색으로만 보인다."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "본문에 \"It happens when electrically charged particles from the sun enter the Earth's atmosphere\"라고 명시됨"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "natural",
+          "meaning": "자연의"
+        },
+        {
+          "word": "phenomenon",
+          "meaning": "현상"
+        },
+        {
+          "word": "particle",
+          "meaning": "입자"
+        },
+        {
+          "word": "atmosphere",
+          "meaning": "대기"
+        },
+        {
+          "word": "spectacular",
+          "meaning": "장관을 이루는, 극적인"
         }
       ]
     },
@@ -1604,7 +2460,9 @@
             "He won it at a school fair.",
             "His friend gave it to him.",
             "He bought it at a pet store."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "학교 축제에서 금붕어를 탔다고(\"won a goldfish at a school fair\") 나옴"
         },
         {
           "id": "reading-basic-q34-2",
@@ -1617,7 +2475,9 @@
             "The writer didn't take care of it properly.",
             "The fishbowl was too big.",
             "A cat ate it."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "너무 많은 먹이를 주고 물을 자주 갈아주지 않는 등 제대로 돌보지 못했다고(\"didn't take care of a fish properly\") 나옴"
         },
         {
           "id": "reading-basic-q34-3",
@@ -1630,7 +2490,35 @@
             "Taking care of a pet is a big responsibility.",
             "He should never have a pet again.",
             "Crying does not help solve problems."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "글의 마지막에 \"taking care of a living creature is a big responsibility\"라는 교훈을 배웠다고 명시됨"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "goldfish",
+          "meaning": "금붕어"
+        },
+        {
+          "word": "fishbowl",
+          "meaning": "어항"
+        },
+        {
+          "word": "properly",
+          "meaning": "제대로, 적절하게"
+        },
+        {
+          "word": "heartbroken",
+          "meaning": "비통해하는, 가슴이 찢어지는"
+        },
+        {
+          "word": "creature",
+          "meaning": "생물"
+        },
+        {
+          "word": "responsibility",
+          "meaning": "책임"
         }
       ]
     },
@@ -1652,7 +2540,9 @@
             "The different ways to open a door",
             "Why people should be more positive",
             "The definition of gratitude"
-          ]
+          ],
+          "answer": 1,
+          "explanation": "글 전체가 '감사합니다'라는 말이 왜 중요하고 어떤 힘을 가졌는지 설명하고 있음"
         },
         {
           "id": "reading-basic-q35-2",
@@ -1665,7 +2555,9 @@
             "It makes them feel confused.",
             "It makes them feel sorry.",
             "It costs them money."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "본문에 \"it makes them feel valued and respected\"라고 명시됨"
         },
         {
           "id": "reading-basic-q35-3",
@@ -1678,7 +2570,31 @@
             "삶의 긍정적인 면에 집중하게 하고 더 행복하게 만든다.",
             "시험을 더 잘 보게 해준다.",
             "다른 사람들을 이기게 해준다."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "본문에 \"It helps you focus on the positive things in your life and can make you feel happier\"라고 명시됨"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "gratitude",
+          "meaning": "감사, 고마움"
+        },
+        {
+          "word": "appreciate",
+          "meaning": "고마워하다, 진가를 알아보다"
+        },
+        {
+          "word": "valued",
+          "meaning": "소중한, 귀한"
+        },
+        {
+          "word": "encourage",
+          "meaning": "격려하다, 부추기다"
+        },
+        {
+          "word": "difference",
+          "meaning": "차이"
         }
       ]
     },
@@ -1700,7 +2616,9 @@
             "He made a simple mistake and got a lower grade.",
             "He forgot to write his name on the paper.",
             "He failed the test completely."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "간단한 계산 실수를 해서 A 대신 B를 받았기 때문에 실망했다고 나옴"
         },
         {
           "id": "reading-basic-q36-2",
@@ -1713,7 +2631,9 @@
             "She told him to learn from his mistake.",
             "She offered to do his homework for him.",
             "She told him to give up on math."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "누나가 실수로부터 배우는 것이 중요하다고(\"learn from it\") 조언함"
         },
         {
           "id": "reading-basic-q36-3",
@@ -1726,7 +2646,31 @@
             "시험 점수가 그 사람의 모든 것을 결정한다.",
             "실수로부터 배우고 다음을 준비하는 것이 중요하다.",
             "누나에게 불평하는 것은 도움이 되지 않는다."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "누나의 조언을 통해 실수에서 배우고 다음을 준비하는 것이 중요하다는 교훈을 얻음"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "calculation",
+          "meaning": "계산"
+        },
+        {
+          "word": "mistake",
+          "meaning": "실수"
+        },
+        {
+          "word": "disappointed",
+          "meaning": "실망한"
+        },
+        {
+          "word": "complain",
+          "meaning": "불평하다"
+        },
+        {
+          "word": "define",
+          "meaning": "규정하다, 정의하다"
         }
       ]
     },
@@ -1748,7 +2692,9 @@
             "The underground root network that connects trees",
             "A book about the secret life of trees",
             "A new kind of computer network"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "나무들을 연결하는 지하의 뿌리 네트워크를 \"Wood Wide Web\"이라고 부른다고 설명함"
         },
         {
           "id": "reading-basic-q37-2",
@@ -1761,7 +2707,9 @@
             "By making sounds",
             "By changing their colors",
             "They cannot talk to each other."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "뿌리 네트워크를 통해 화학 신호를 보내 \"대화\"한다고 나옴"
         },
         {
           "id": "reading-basic-q37-3",
@@ -1774,7 +2722,31 @@
             "한 나무가 공격을 받으면 이웃 나무에게 경고를 보낼 수 있다.",
             "나무는 서로 돕는 공동체를 이루고 있다.",
             "나무는 오직 자기 자신만을 위해 살아간다."
-          ]
+          ],
+          "answer": 5,
+          "explanation": "나무들은 서로 영양분을 나누고 경고를 보내는 등 서로 돕는 공동체라고 했으므로, 자기 자신만을 위해 살아간다는 것은 틀린 설명"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "complex",
+          "meaning": "복잡한"
+        },
+        {
+          "word": "network",
+          "meaning": "망, 네트워크"
+        },
+        {
+          "word": "nutrient",
+          "meaning": "영양분"
+        },
+        {
+          "word": "produce",
+          "meaning": "생산하다"
+        },
+        {
+          "word": "community",
+          "meaning": "공동체"
         }
       ]
     },
@@ -1796,7 +2768,9 @@
             "To earn money and gain experience",
             "Because his parents told him to",
             "To get free bread"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "스스로 돈을 벌고 직업 경험을 얻고 싶어서(\"earn my own money and gain some work experience\") 일을 시작함"
         },
         {
           "id": "reading-basic-q38-2",
@@ -1809,7 +2783,9 @@
             "Washing the dishes",
             "Packing bread and cookies for customers",
             "Delivering bread to houses"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "주된 임무는 빵과 쿠키를 봉투에 포장하는 것이라고(\"pack bread and cookies into bags\") 나옴"
         },
         {
           "id": "reading-basic-q38-3",
@@ -1822,7 +2798,31 @@
             "돈을 버는 것의 가치",
             "맛있는 빵을 굽는 기술",
             "깨끗하고 단정하게 유지하는 것의 중요성"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "책임감, 소통 능력, 돈의 가치 등은 배웠지만, 빵을 굽는 기술을 배웠다는 내용은 언급되지 않음"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "duty",
+          "meaning": "임무, 의무"
+        },
+        {
+          "word": "tidy",
+          "meaning": "깔끔한, 정돈된"
+        },
+        {
+          "word": "atmosphere",
+          "meaning": "분위기"
+        },
+        {
+          "word": "responsible",
+          "meaning": "책임감 있는"
+        },
+        {
+          "word": "paycheck",
+          "meaning": "급료, 봉급"
         }
       ]
     },
@@ -1844,7 +2844,9 @@
             "The Japanese art of flower arrangement",
             "The Japanese art of calligraphy",
             "The Japanese art of sword fighting"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "글의 첫 문장에 \"Origami is the Japanese art of paper folding\"이라고 정의됨"
         },
         {
           "id": "reading-basic-q39-2",
@@ -1857,7 +2859,9 @@
             "It improves your cooking skills.",
             "It helps improve concentration.",
             "It teaches you how to use scissors."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "본문에 \"It helps improve concentration\"이라고 명시됨"
         },
         {
           "id": "reading-basic-q39-3",
@@ -1870,7 +2874,27 @@
             "가장 유명한 종이접기 모양은 종이배이다.",
             "종이학 천 마리를 접으면 돈을 많이 벌게 된다는 전설이 있다.",
             "종이접기는 주로 둥근 모양의 종이를 사용한다."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "본문에 \"it teaches patience\"라고 명시됨"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "beneficial",
+          "meaning": "유익한, 이로운"
+        },
+        {
+          "word": "concentration",
+          "meaning": "집중력"
+        },
+        {
+          "word": "instruction",
+          "meaning": "설명, 지시"
+        },
+        {
+          "word": "legend",
+          "meaning": "전설"
         }
       ]
     },
@@ -1892,7 +2916,9 @@
             "A big cloud covers the Sun.",
             "The Sun moves away from the Earth.",
             "The Earth stops spinning."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "달이 태양과 지구 사이를 지나갈 때 일어난다고 설명됨"
         },
         {
           "id": "reading-basic-q40-2",
@@ -1905,7 +2931,9 @@
             "The sun's rays can damage your eyes.",
             "It can make you feel cold.",
             "It is against the law."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "본문에 \"The sun's rays can permanently damage your eyes\"라고 명시됨"
         },
         {
           "id": "reading-basic-q40-3",
@@ -1918,7 +2946,35 @@
             "특수 안경이나 바늘구멍 사진기 사용하기",
             "망원경으로 보기",
             "창문을 통해 보기"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "본문에 \"use special eclipse glasses or a pinhole projector\"라고 명시됨"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "astronomical",
+          "meaning": "천문학의"
+        },
+        {
+          "word": "partially",
+          "meaning": "부분적으로"
+        },
+        {
+          "word": "shadow",
+          "meaning": "그림자"
+        },
+        {
+          "word": "dangerous",
+          "meaning": "위험한"
+        },
+        {
+          "word": "damage",
+          "meaning": "손상시키다"
+        },
+        {
+          "word": "permanently",
+          "meaning": "영구적으로"
         }
       ]
     },
@@ -1940,7 +2996,9 @@
             "Reporter",
             "Designer",
             "Publisher"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "본문에 \"As a reporter, my job is to find interesting stories\"라고 명시됨"
         },
         {
           "id": "reading-basic-q41-2",
@@ -1953,7 +3011,9 @@
             "It helps make a lot of money.",
             "It is a rewarding experience.",
             "It teaches teamwork."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "글쓰기 능력 향상, 마감 준수, 보람, 팀워크 등은 언급되었지만 돈을 버는 것과는 관련이 없음"
         },
         {
           "id": "reading-basic-q41-3",
@@ -1966,7 +3026,31 @@
             "글쓴이는 지난달에 학교 축제에 대한 기사를 썼다.",
             "신문 동아리에는 기자, 편집자, 사진 기자 등 다양한 역할이 있다.",
             "신문 동아리 활동은 일이 적고 매우 쉽다."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "기자, 편집자, 사진 기자 등 다양한 역할이 있다고 설명함"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "publish",
+          "meaning": "발행하다, 출판하다"
+        },
+        {
+          "word": "edition",
+          "meaning": "(간행물의) 판, 호"
+        },
+        {
+          "word": "interview",
+          "meaning": "인터뷰하다"
+        },
+        {
+          "word": "deadline",
+          "meaning": "마감 기한"
+        },
+        {
+          "word": "rewarding",
+          "meaning": "보람 있는"
         }
       ]
     },
@@ -1988,7 +3072,9 @@
             "To give advice on what to wear in winter",
             "To explain why leaves change color",
             "To compare summer and winter"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "봄, 여름, 가을, 겨울 각 계절의 특징과 아름다움을 묘사하고 있음"
         },
         {
           "id": "reading-basic-q42-2",
@@ -2001,7 +3087,9 @@
             "Autumn",
             "Winter",
             "All year round"
-          ]
+          ],
+          "answer": 1,
+          "explanation": "본문에 \"Spring is a time... flowers bloom\"이라고 명시됨"
         },
         {
           "id": "reading-basic-q42-3",
@@ -2014,7 +3102,31 @@
             "가을에는 나뭇잎이 초록색으로 변한다.",
             "겨울은 춥고 때로는 눈이 온다.",
             "글쓴이는 모든 계절의 매력을 즐긴다."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "가을에는 나뭇잎이 빨강, 노랑, 주황색으로 변한다고 했으므로 초록색으로 변한다는 것은 틀린 설명"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "bloom",
+          "meaning": "꽃이 피다"
+        },
+        {
+          "word": "crisp",
+          "meaning": "(공기가) 상쾌한, 쌀쌀한"
+        },
+        {
+          "word": "harvest",
+          "meaning": "수확, 추수"
+        },
+        {
+          "word": "unique",
+          "meaning": "독특한, 고유의"
+        },
+        {
+          "word": "charm",
+          "meaning": "매력"
         }
       ]
     },
@@ -2036,7 +3148,9 @@
             "How to become a librarian",
             "The rules you must follow in a library",
             "The most popular books in the library"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "도서관이 책을 빌리는 곳 이상의 다양한 서비스와 혜택을 제공하는 장소임을 설명하고 있음"
         },
         {
           "id": "reading-basic-q43-2",
@@ -2049,7 +3163,9 @@
             "Free Wi-Fi and computers",
             "Selling coffee and snacks",
             "Events like story time and workshops"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "책 대여, 공부 장소, 와이파이, 행사 등은 언급되었지만 커피나 간식을 파는 기능은 언급되지 않음"
         },
         {
           "id": "reading-basic-q43-3",
@@ -2062,7 +3178,31 @@
             "지식과 상상력의 세계를 열어주는 귀중한 자원이기 때문에",
             "친구들과 자유롭게 떠들며 놀 수 있어서",
             "항상 조용하고 사람이 없어서"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "글의 마지막에 \"A library is a valuable resource... It opens up a world of knowledge and imagination\"이라고 요약하고 있음"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "explore",
+          "meaning": "탐험하다"
+        },
+        {
+          "word": "borrow",
+          "meaning": "빌리다"
+        },
+        {
+          "word": "workshop",
+          "meaning": "워크숍, 공동 연구회"
+        },
+        {
+          "word": "resource",
+          "meaning": "자원, 자료"
+        },
+        {
+          "word": "imagination",
+          "meaning": "상상력"
         }
       ]
     },
@@ -2084,7 +3224,9 @@
             "She met her teacher, Anne Sullivan.",
             "She wrote her first book.",
             "She traveled around the world."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "아기 때 심각한 병으로 인해 시력과 청력을 모두 잃었다고(\"left her both blind and deaf\") 나옴"
         },
         {
           "id": "reading-basic-q44-2",
@@ -2097,7 +3239,9 @@
             "Helen's best friend",
             "Helen's teacher",
             "The president of her college"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "헬렌에게 세상을 가르쳐준 선생님 이었음"
         },
         {
           "id": "reading-basic-q44-3",
@@ -2110,7 +3254,31 @@
             "용기와 굳은 결심이 있다면 어떤 어려움도 극복할 수 있다.",
             "대학 교육은 성공에 필수적이다.",
             "유명한 작가가 되는 것은 어렵다."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "글의 마지막에 \"with courage and determination, we can overcome any obstacle\"라고 교훈을 명시하고 있음"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "blind",
+          "meaning": "눈이 먼"
+        },
+        {
+          "word": "deaf",
+          "meaning": "귀가 먹은"
+        },
+        {
+          "word": "Braille",
+          "meaning": "(맹인용) 점자"
+        },
+        {
+          "word": "determination",
+          "meaning": "결심, 투지"
+        },
+        {
+          "word": "obstacle",
+          "meaning": "장애물, 난관"
         }
       ]
     },
@@ -2132,7 +3300,9 @@
             "The importance and benefits of teamwork",
             "How to be a good leader",
             "The best way to plan a project"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "농구 경기를 예시로 들어 팀워크의 중요성과 여러 장점을 설명하고 있음"
         },
         {
           "id": "reading-basic-q45-2",
@@ -2145,7 +3315,9 @@
             "We can combine different skills and ideas.",
             "We can finish the work faster without planning.",
             "We can make one person do all the work."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "본문에 \"we can combine our different skills and ideas\"라고 명시됨"
         },
         {
           "id": "reading-basic-q45-3",
@@ -2158,7 +3330,31 @@
             "항상 내 의견을 주장할 수 있다.",
             "다양한 기술과 아이디어를 합칠 수 있다.",
             "더 나은 결과를 만들어 낸다."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "팀워크는 다른 사람의 의견을 듣고 타협하는 법을 가르쳐준다고 했으므로, 항상 내 의견만 주장하는 것은 팀워크의 장점이 아님"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "essential",
+          "meaning": "필수적인"
+        },
+        {
+          "word": "combine",
+          "meaning": "결합하다"
+        },
+        {
+          "word": "compromise",
+          "meaning": "타협하다"
+        },
+        {
+          "word": "respect",
+          "meaning": "존중하다"
+        },
+        {
+          "word": "result",
+          "meaning": "결과"
         }
       ]
     },
@@ -2180,7 +3376,9 @@
             "A small owl",
             "A person",
             "The rain"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "커튼을 열어보니 창가에 작은 올빼미가 앉아 있었다고 나옴"
         },
         {
           "id": "reading-basic-q46-2",
@@ -2193,7 +3391,9 @@
             "A little scared",
             "Bored",
             "Angry"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "본문에 \"I felt a bit scared\"라고 명시됨"
         },
         {
           "id": "reading-basic-q46-3",
@@ -2206,7 +3406,31 @@
             "funny and humorous (재미있고 유머러스한)",
             "magical and mysterious (마법 같고 신비로운)",
             "romantic and sweet (낭만적이고 달콤한)"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "한밤중에 예기치 않은 올빼미의 방문은 마법 같고 신비로운 분위기를 자아냄"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "tapping",
+          "meaning": "톡톡 두드리는 소리"
+        },
+        {
+          "word": "ignore",
+          "meaning": "무시하다"
+        },
+        {
+          "word": "curtain",
+          "meaning": "커튼"
+        },
+        {
+          "word": "surprise",
+          "meaning": "놀라움"
+        },
+        {
+          "word": "unexpected",
+          "meaning": "예기치 않은, 뜻밖의"
         }
       ]
     },
@@ -2228,7 +3452,9 @@
             "The history of chocolate",
             "The different types of chocolate",
             "The economy of Central America"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "고대 중앙아메리카에서 시작되어 유럽을 거쳐 오늘날에 이르기까지 초콜릿의 변천 과정을 설명하고 있음"
         },
         {
           "id": "reading-basic-q47-2",
@@ -2241,7 +3467,9 @@
             "It was mixed with milk and sugar.",
             "It was served cold with ice.",
             "It was eaten as a bar."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "마야와 아즈텍인들은 쓰고 거품이 많은 음료를 만들었다고 나옴"
         },
         {
           "id": "reading-basic-q47-3",
@@ -2254,7 +3482,31 @@
             "스페인 탐험가들은 유럽에 설탕을 가져갔다.",
             "초콜릿은 처음부터 모든 사람이 즐길 수 있는 음식이었다.",
             "오늘날 우리가 먹는 초콜릿과 옛날 초콜릿 음료는 맛이 똑같다."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "본문에 \"They believed cacao was a gift from the gods\"라고 명시됨"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "ancient",
+          "meaning": "고대의"
+        },
+        {
+          "word": "bitter",
+          "meaning": "(맛이) 쓴"
+        },
+        {
+          "word": "luxury",
+          "meaning": "사치, 호화로움"
+        },
+        {
+          "word": "invent",
+          "meaning": "발명하다"
+        },
+        {
+          "word": "afford",
+          "meaning": "(~을 살) 형편이 되다, 여유가 되다"
         }
       ]
     },
@@ -2276,7 +3528,9 @@
             "Science projects",
             "Talking to the teacher",
             "Making mistakes"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "글의 첫 문장에 \"I have a big fear of public speaking\"이라고 명시됨"
         },
         {
           "id": "reading-basic-q48-2",
@@ -2289,7 +3543,9 @@
             "He decided not to go to school.",
             "He read a book about public speaking.",
             "He drank a lot of water."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "발표 전날 거울 앞에서 연습하고 대본 카드(\"cue cards\")를 만들었다고 나옴"
         },
         {
           "id": "reading-basic-q48-3",
@@ -2302,7 +3558,35 @@
             "sad and lonely (슬프고 외로운)",
             "relieved and proud (안도하고 자랑스러운)",
             "confused and worried (혼란스럽고 걱정되는)"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "두려움을 이겨내고 발표를 성공적으로 마친 후 안도감과 자랑스러움을(\"relieved and proud\") 느낌"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "presentation",
+          "meaning": "발표"
+        },
+        {
+          "word": "blank",
+          "meaning": "텅 빈, 백지의"
+        },
+        {
+          "word": "cue card",
+          "meaning": "(발표자를 위한) 대본 카드"
+        },
+        {
+          "word": "shaky",
+          "meaning": "떨리는"
+        },
+        {
+          "word": "confident",
+          "meaning": "자신감 있는"
+        },
+        {
+          "word": "relieved",
+          "meaning": "안도하는"
         }
       ]
     },
@@ -2324,7 +3608,9 @@
             "How do birds fly?",
             "What do birds eat?",
             "How do birds build nests?"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "글 전체가 새가 어떻게 날 수 있는지 그 원리를 여러 가지 측면에서 설명하고 있음"
         },
         {
           "id": "reading-basic-q49-2",
@@ -2337,7 +3623,9 @@
             "They eat very little food.",
             "They have feathers.",
             "Their wings have a special shape."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "가벼운 뼈, 강력한 근육, 깃털, 날개 모양은 언급되었지만, 음식을 적게 먹는다는 내용은 언급되지 않음"
         },
         {
           "id": "reading-basic-q49-3",
@@ -2350,7 +3638,31 @@
             "쉽게 부러진다.",
             "근육이 많이 붙어 있다.",
             "깃털로 덮여 있다."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "본문에 \"Many of their bones are hollow, which makes their skeletons much lighter\"라고 명시됨"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "design",
+          "meaning": "설계하다, 디자인하다"
+        },
+        {
+          "word": "hollow",
+          "meaning": "속이 빈"
+        },
+        {
+          "word": "mammal",
+          "meaning": "포유동물"
+        },
+        {
+          "word": "steer",
+          "meaning": "조종하다"
+        },
+        {
+          "word": "aerodynamic",
+          "meaning": "공기 역학의"
         }
       ]
     },
@@ -2372,7 +3684,9 @@
             "He wrote a letter to his future self.",
             "He made a time capsule.",
             "He gave a presentation about his dream."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "미래의 자신에게 편지를 쓰는(\"write a letter to our future selves\") 활동을 함"
         },
         {
           "id": "reading-basic-q50-2",
@@ -2385,7 +3699,9 @@
             "His favorite food",
             "His worry about math",
             "Questions for his future self"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "수의사라는 꿈, 친구 소라, 수학에 대한 걱정 등은 썼지만, 좋아하는 음식에 대한 내용은 언급되지 않음"
         },
         {
           "id": "reading-basic-q50-3",
@@ -2398,7 +3714,31 @@
             "On his birthday",
             "On graduation day",
             "He will never open it."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "타임캡슐을 3년 후 졸업식 날(\"on our graduation day in three years\") 열어볼 것이라고 나옴"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "current",
+          "meaning": "현재의"
+        },
+        {
+          "word": "time capsule",
+          "meaning": "타임캡슐"
+        },
+        {
+          "word": "graduation",
+          "meaning": "졸업"
+        },
+        {
+          "word": "veterinarian",
+          "meaning": "수의사"
+        },
+        {
+          "word": "worry",
+          "meaning": "걱정"
         }
       ]
     },
@@ -2420,7 +3760,9 @@
             "A language that uses hands, face, and body to communicate",
             "A simple way to say \"hello\" and \"goodbye\"",
             "A written language for deaf people"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "손짓, 얼굴 표정, 몸짓을 사용해 의사소통하는 완전한 언어라고 설명함"
         },
         {
           "id": "reading-basic-q51-2",
@@ -2433,7 +3775,9 @@
             "American Sign Language and British Sign Language are identical.",
             "Sign language uses only hand gestures.",
             "Different countries have their own sign languages."
-          ]
+          ],
+          "answer": 5,
+          "explanation": "미국 수화와 영국 수화가 다른 것처럼, 나라마다 고유의 수화가 있다고(\"different countries have their own sign languages\") 명시됨"
         },
         {
           "id": "reading-basic-q51-3",
@@ -2446,7 +3790,31 @@
             "더 좋은 직업을 쉽게 구할 수 있다.",
             "청각 장애를 가진 사람들과 소통하는 데 도움이 된다.",
             "손과 얼굴 표정을 사용하는 새로운 언어를 배우게 된다."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "새로운 공동체와 소통, 다양한 삶의 방식 이해 등은 언급되었지만, 직업을 구하기 쉽다는 내용은 없음"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "gesture",
+          "meaning": "몸짓, 제스처"
+        },
+        {
+          "word": "facial expression",
+          "meaning": "얼굴 표정"
+        },
+        {
+          "word": "communicate",
+          "meaning": "의사소통하다"
+        },
+        {
+          "word": "universal",
+          "meaning": "보편적인, 세계적인"
+        },
+        {
+          "word": "interact",
+          "meaning": "소통하다, 교류하다"
         }
       ]
     },
@@ -2468,7 +3836,9 @@
             "The weather suddenly turned bad.",
             "They saw a wild animal.",
             "They ran out of food."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "일기예보가 틀리고 갑자기 날씨가 나빠져 비바람이 몰아쳤다고 나옴"
         },
         {
           "id": "reading-basic-q52-2",
@@ -2481,7 +3851,9 @@
             "Fish they caught from the river",
             "Cold sandwiches",
             "They skipped dinner."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "모닥불을 피울 수 없어서 차가운 샌드위치를 먹었다고(\"had to eat cold sandwiches\") 나옴"
         },
         {
           "id": "reading-basic-q52-3",
@@ -2494,7 +3866,35 @@
             "예상치 못한 상황에 항상 대비해야 한다.",
             "샌드위치는 최고의 캠핑 음식이다.",
             "캠핑은 다시는 가지 말아야 한다."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "글의 마지막에 \"it taught us to always be prepared for unexpected situations\"라고 교훈을 명시함"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "campsite",
+          "meaning": "야영지, 캠핑장"
+        },
+        {
+          "word": "forecast",
+          "meaning": "예보"
+        },
+        {
+          "word": "huddle",
+          "meaning": "옹기종기 모이다"
+        },
+        {
+          "word": "leak",
+          "meaning": "(물, 빛 등이) 새다"
+        },
+        {
+          "word": "expect",
+          "meaning": "기대하다, 예상하다"
+        },
+        {
+          "word": "adventure",
+          "meaning": "모험"
         }
       ]
     },
@@ -2516,7 +3916,9 @@
             "To be a road for trade",
             "To mark the center of the country",
             "To show the emperor's power"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "북쪽 유목민들의 침략으로부터 중국을 보호하는 것이 주된 목적이었다고(\"to protect China from invasions\") 나옴"
         },
         {
           "id": "reading-basic-q53-2",
@@ -2529,7 +3931,9 @@
             "It was built over many centuries.",
             "Millions of people worked to build it.",
             "It is now a famous tourist site."
-          ]
+          ],
+          "answer": 1,
+          "explanation": "하나의 단일한 벽이 아니라 여러 벽과 요새의 연속이라고(\"not a single wall but a series of walls\") 했으므로, 단일한 벽이라는 설명은 틀림"
         },
         {
           "id": "reading-basic-q53-3",
@@ -2542,7 +3946,35 @@
             "중국의 오랜 역사와 인내심",
             "북방 유목민과의 평화",
             "현대 건축 기술의 우수성"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "글의 마지막에 \"a symbol of China's long history and the perseverance of its people\"이라고 명시됨"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "structure",
+          "meaning": "구조물"
+        },
+        {
+          "word": "fortification",
+          "meaning": "요새, 방어 시설"
+        },
+        {
+          "word": "purpose",
+          "meaning": "목적"
+        },
+        {
+          "word": "invasion",
+          "meaning": "침략, 침입"
+        },
+        {
+          "word": "attraction",
+          "meaning": "명소, 명물"
+        },
+        {
+          "word": "perseverance",
+          "meaning": "인내, 끈기"
         }
       ]
     },
@@ -2564,7 +3996,9 @@
             "To exercise our jaw muscles",
             "To cool down our brain",
             "To wake ourselves up"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "최근 이론은 하품이 뇌를 식히는 데 도움을 준다는 것이라고 설명함"
         },
         {
           "id": "reading-basic-q54-2",
@@ -2577,7 +4011,9 @@
             "something that is difficult to understand.",
             "something that is good for your health.",
             "something that happens only when you are tired."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "'전염성이 있는'이라는 의미로, 한 사람에게서 다른 사람에게 쉽게 퍼지는 것을 뜻함"
         },
         {
           "id": "reading-basic-q54-3",
@@ -2590,7 +4026,31 @@
             "하품이 전염되는 이유는 아직 아무도 모른다.",
             "피곤할 때 뇌의 온도가 올라갈 수 있다.",
             "하품의 원인에 대한 과학적 이론은 변한 적이 없다."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "피곤할 때 뇌 온도가 올라갈 수 있고, 이것이 하품을 더 많이 하는 이유일 수 있다고 설명함"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "yawn",
+          "meaning": "하품하다"
+        },
+        {
+          "word": "oxygen",
+          "meaning": "산소"
+        },
+        {
+          "word": "cool down",
+          "meaning": "식히다"
+        },
+        {
+          "word": "temperature",
+          "meaning": "온도"
+        },
+        {
+          "word": "contagious",
+          "meaning": "전염성이 있는"
         }
       ]
     },
@@ -2612,7 +4072,9 @@
             "It only sold packaged goods.",
             "It was cleaner and more modern.",
             "The prices were fixed."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "시장은 붐비고 시끄러웠지만 활기와 에너지가 넘쳤다고 묘사됨"
         },
         {
           "id": "reading-basic-q55-2",
@@ -2625,7 +4087,9 @@
             "How to pick fresh fish and bargain",
             "How to find the exit",
             "How to avoid the crowds"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "할머니가 신선한 생선을 고르는 법과 가격을 흥정하는 법을 가르쳐주었다고 나옴"
         },
         {
           "id": "reading-basic-q55-3",
@@ -2638,7 +4102,27 @@
             "쇼핑하기에 매우 편리하다는 점",
             "사람 사이의 정과 문화를 느낄 수 있는 장소라는 점",
             "항상 조용하고 깨끗하다는 점"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "글의 마지막에 \"a place full of human connection and culture\"라고 결론 내리고 있음"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "vendor",
+          "meaning": "노점상, 행상인"
+        },
+        {
+          "word": "spice",
+          "meaning": "향신료, 양념"
+        },
+        {
+          "word": "bargain",
+          "meaning": "흥정하다"
+        },
+        {
+          "word": "connection",
+          "meaning": "연결, 관계"
         }
       ]
     },
@@ -2660,7 +4144,9 @@
             "Egg → Larva → Pupa → Butterfly",
             "Pupa → Egg → Larva → Butterfly",
             "Egg → Butterfly → Larva → Pupa"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "알(egg) → 애벌레(larva) → 번데기(pupa) → 나비(butterfly) 순서로 설명됨"
         },
         {
           "id": "reading-basic-q56-2",
@@ -2673,7 +4159,9 @@
             "To eat and grow",
             "To form a chrysalis immediately",
             "To sleep all day"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "애벌레의 주된 임무는 먹고 자라는 것이라고(\"main job is to eat and grow\") 명시됨"
         },
         {
           "id": "reading-basic-q56-3",
@@ -2686,7 +4174,31 @@
             "Caterpillar",
             "Pupa",
             "Butterfly"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "번데기 단계는 \"pupa stage\"라고 하며, 번데기 자체는 \"pupa\" 또는 \"chrysalis\"라고 함"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "transformation",
+          "meaning": "변화, 변신"
+        },
+        {
+          "word": "metamorphosis",
+          "meaning": "탈바꿈, 변태"
+        },
+        {
+          "word": "stage",
+          "meaning": "단계"
+        },
+        {
+          "word": "larva",
+          "meaning": "애벌레, 유충"
+        },
+        {
+          "word": "emerge",
+          "meaning": "나오다, 나타나다"
         }
       ]
     },
@@ -2708,7 +4220,9 @@
             "She made and put up \"Lost Dog\" posters.",
             "She walked around the city with the dog.",
             "She posted about the dog on the internet."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "강아지 사진과 전화번호를 넣은 '주인 찾는 개' 포스터를 만들어 동네에 붙였다고 나옴"
         },
         {
           "id": "reading-basic-q57-2",
@@ -2721,7 +4235,9 @@
             "An elderly man",
             "Lily's neighbor",
             "The poster didn't work, so they don't know."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "몇 블록 떨어진 곳에 사는 할아버지(\"an elderly man\")가 주인으로 밝혀짐"
         },
         {
           "id": "reading-basic-q57-3",
@@ -2734,7 +4250,31 @@
             "Happy to keep the dog forever",
             "Disappointed that the owner was found",
             "Worried that the dog would get lost again"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "스파키와 헤어지는 것은 슬펐지만, 집을 찾는 것을 도와줄 수 있어서 기뻤다고(\"sad to say goodbye... but she was happy that she could help\") 나옴"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "collar",
+          "meaning": "목걸이, 칼라"
+        },
+        {
+          "word": "approach",
+          "meaning": "다가가다, 접근하다"
+        },
+        {
+          "word": "neighborhood",
+          "meaning": "동네, 이웃"
+        },
+        {
+          "word": "elderly",
+          "meaning": "나이가 지긋한"
+        },
+        {
+          "word": "relieved",
+          "meaning": "안도하는"
         }
       ]
     },
@@ -2756,7 +4296,9 @@
             "How to become a journalist.",
             "The history of newspapers.",
             "The problems with social media."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "글 전체가 종이 신문을 읽는 것의 여러 가지 이점에 대해 설명하고 있음"
         },
         {
           "id": "reading-basic-q58-2",
@@ -2769,7 +4311,9 @@
             "It is free for everyone.",
             "It has more pictures.",
             "It is updated every minute."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "전문 기자들이 쓰고 편집자들이 확인하기 때문에(\"written by professional journalists and checked by editors\") 정보가 더 신뢰할 만하다고 함"
         },
         {
           "id": "reading-basic-q58-3",
@@ -2782,7 +4326,31 @@
             "더 많은 정보를 가진 시민이 되게 한다.",
             "소셜 미디어보다 더 빨리 소식을 접할 수 있다.",
             "신뢰할 만한 정보를 얻을 수 있다."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "정보의 신뢰성, 어휘력 향상, 세상 이해 등은 언급되었지만, 소셜 미디어보다 빠르다는 내용은 없음"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "benefit",
+          "meaning": "이점, 혜택"
+        },
+        {
+          "word": "journalist",
+          "meaning": "기자"
+        },
+        {
+          "word": "reliable",
+          "meaning": "신뢰할 수 있는, 믿을 만한"
+        },
+        {
+          "word": "comprehension",
+          "meaning": "이해력"
+        },
+        {
+          "word": "citizen",
+          "meaning": "시민"
         }
       ]
     },
@@ -2804,7 +4372,9 @@
             "Its calm and safe weather",
             "Its unique sea animals",
             "A portal to another dimension"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "많은 배와 비행기가 미스터리하게 사라진 것으로 유명하다고(\"famous for a mystery: many ships and airplanes have reportedly disappeared\") 나옴"
         },
         {
           "id": "reading-basic-q59-2",
@@ -2817,7 +4387,9 @@
             "Bad weather like hurricanes",
             "A secret government base",
             "The ships and planes were invisible."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "과학자들은 허리케인과 같은 악천후(\"bad weather, including many hurricanes\")를 논리적인 설명으로 제시함"
         },
         {
           "id": "reading-basic-q59-3",
@@ -2830,7 +4402,35 @@
             "버뮤다 삼각지대는 세상에서 가장 위험한 곳이므로 가서는 안 된다.",
             "사라진 배와 비행기에 대한 모든 이야기는 사실이다.",
             "버뮤다 삼각지대의 미스터리는 영원히 풀리지 않을 것이다."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "글의 마지막 부분에서 미스터리는 흥미롭지만, 현실은 초자연적이기보다는 악천후 등 현실적인 이유일 가능성이 높다고 서술함"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "region",
+          "meaning": "지역, 지방"
+        },
+        {
+          "word": "mystery",
+          "meaning": "미스터리, 수수께끼"
+        },
+        {
+          "word": "disappear",
+          "meaning": "사라지다"
+        },
+        {
+          "word": "exaggerate",
+          "meaning": "과장하다"
+        },
+        {
+          "word": "reality",
+          "meaning": "현실, 실제"
+        },
+        {
+          "word": "supernatural",
+          "meaning": "초자연적인"
         }
       ]
     },
@@ -2852,7 +4452,9 @@
             "The feeling someone forms about you when they first meet you",
             "A test you have to pass to make a friend",
             "A gift you give to a new person"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "누군가를 처음 만났을 때 그 사람에 대해 형성되는 느낌이나 의견이라고(\"the feeling or opinion someone forms about you when they meet you for the first time\") 정의됨"
         },
         {
           "id": "reading-basic-q60-2",
@@ -2865,7 +4467,9 @@
             "Talk a lot about yourself",
             "Have good posture",
             "Be a good listener"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "미소, 눈 맞춤, 좋은 자세, 경청은 언급되었지만, 자기 자신에 대해 많이 이야기하라는 팁은 없음. 오히려 경청하라고 조언함"
         },
         {
           "id": "reading-basic-q60-3",
@@ -2878,7 +4482,31 @@
             "다른 사람을 존중하는 것처럼 보이기 때문에",
             "옷이 더 잘 어울려 보이기 때문에",
             "더 똑똑해 보이기 때문에"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "바른 자세는 당신을 더 자신감 있어 보이게 만든다고(\"makes you look more self-assured\") 함"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "impression",
+          "meaning": "인상"
+        },
+        {
+          "word": "genuine",
+          "meaning": "진짜의, 진실한"
+        },
+        {
+          "word": "approachable",
+          "meaning": "다가가기 쉬운, 친근한"
+        },
+        {
+          "word": "posture",
+          "meaning": "자세"
+        },
+        {
+          "word": "slouch",
+          "meaning": "구부정하게 서다/앉다"
         }
       ]
     },
@@ -2900,7 +4528,9 @@
             "A giant wooden horse filled with Greek soldiers",
             "A statue of the Greek hero Odysseus",
             "A new type of weapon"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "그리스 병사들로 가득 찬 거대한 목마라고 설명됨"
         },
         {
           "id": "reading-basic-q61-2",
@@ -2913,7 +4543,9 @@
             "To use it as a boat to go home",
             "To offer it as a sacrifice to the gods",
             "To use it as a watchtower"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "트로이인들을 속여 성 안으로 들어가기 위한 계략이었음"
         },
         {
           "id": "reading-basic-q61-3",
@@ -2926,7 +4558,31 @@
             "목마 안에는 아무도 없었다.",
             "그리스 병사들은 밤에 목마에서 나와 성문을 열었다.",
             "이 이야기는 지혜를 사용해 적을 이기는 것의 상징이다."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "목마 안에는 그리스 병사들이 숨어 있었다고(\"filled with Greek soldiers\") 했으므로, 아무도 없었다는 것은 틀린 설명"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "legend",
+          "meaning": "전설"
+        },
+        {
+          "word": "victory",
+          "meaning": "승리"
+        },
+        {
+          "word": "celebrate",
+          "meaning": "축하하다, 기념하다"
+        },
+        {
+          "word": "conquer",
+          "meaning": "정복하다"
+        },
+        {
+          "word": "symbol",
+          "meaning": "상징"
         }
       ]
     },
@@ -2948,7 +4604,9 @@
             "Water is essential, and we must conserve it.",
             "Many people in the world have enough water.",
             "How to find clean water."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "물의 중요성을 설명하고, 우리가 물을 아껴 써야 한다고 주장하고 있음"
         },
         {
           "id": "reading-basic-q62-2",
@@ -2961,7 +4619,9 @@
             "Turning off the tap while brushing teeth",
             "Drinking bottled water instead of tap water",
             "Being mindful of water usage"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "짧은 샤워, 양치할 때 물 잠그기, 새는 수도꼭지 고치기는 언급되었지만, 병에 든 물을 마시라는 내용은 없음"
         },
         {
           "id": "reading-basic-q62-3",
@@ -2974,7 +4634,35 @@
             "체온 조절하기",
             "뼈를 튼튼하게 만들기",
             "생명 유지에 필수적인 역할 하기"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "음식 소화, 영양분 운반, 체온 조절은 언급되었지만, 뼈를 튼튼하게 한다는 내용은 없음"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "digest",
+          "meaning": "소화하다"
+        },
+        {
+          "word": "take for granted",
+          "meaning": "~을 당연하게 여기다"
+        },
+        {
+          "word": "limited",
+          "meaning": "한정된, 제한된"
+        },
+        {
+          "word": "shortage",
+          "meaning": "부족, 결핍"
+        },
+        {
+          "word": "conserve",
+          "meaning": "아끼다, 보존하다"
+        },
+        {
+          "word": "count",
+          "meaning": "중요하다, 가치가 있다"
         }
       ]
     },
@@ -2996,7 +4684,9 @@
             "He danced.",
             "He sang in a band.",
             "He played the piano."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "밴드에서 리드 싱어로서 노래를 불렀다고(\"I was the lead singer\") 나옴"
         },
         {
           "id": "reading-basic-q63-2",
@@ -3009,7 +4699,9 @@
             "Nervous and excited",
             "Angry and upset",
             "Confident and proud"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "무대에 오르기 전 심장이 두근거렸다고(\"my heart was pounding\") 했으므로 긴장되고 흥분된 상태였음"
         },
         {
           "id": "reading-basic-q63-3",
@@ -3022,7 +4714,31 @@
             "다른 사람들보다 더 뛰어난 재능을 보여주는 것",
             "자신의 열정을 다른 사람들과 나누는 것",
             "많은 관객들 앞에서 유명해지는 것"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "글의 마지막에 \"The most important thing was sharing our passion with others\"라고 명시됨"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "talent",
+          "meaning": "재능"
+        },
+        {
+          "word": "comedian",
+          "meaning": "코미디언, 희극 배우"
+        },
+        {
+          "word": "participate",
+          "meaning": "참가하다"
+        },
+        {
+          "word": "pound",
+          "meaning": "(심장이) 두근거리다"
+        },
+        {
+          "word": "passion",
+          "meaning": "열정"
         }
       ]
     },
@@ -3044,7 +4760,9 @@
             "Building nests with sand",
             "Flying for a short distance",
             "Talking to other fish"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "문어의 가장 놀라운 능력 중 하나는 피부색과 질감을 바꾸는 위장술이라고나옴"
         },
         {
           "id": "reading-basic-q64-2",
@@ -3057,7 +4775,9 @@
             "It bites its enemy with sharp teeth.",
             "It hides inside its shell.",
             "It swims faster than any other creature."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "위험에 처하면 먹물 구름을 내뿜어 적을 혼란시킨다고 나옴"
         },
         {
           "id": "reading-basic-q64-3",
@@ -3070,7 +4790,31 @@
             "문어는 심장이 한 개이고 피는 붉은색이다.",
             "문어의 팔에는 맛을 보고 만질 수 있는 빨판이 있다.",
             "문어는 위장과 생존의 대가이다."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "문어는 심장이 세 개이고 피는 파란색이라고 했으므로, 심장이 한 개이고 피가 붉은색이라는 설명은 틀림"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "tentacle",
+          "meaning": "촉수"
+        },
+        {
+          "word": "sucker",
+          "meaning": "빨판"
+        },
+        {
+          "word": "ability",
+          "meaning": "능력"
+        },
+        {
+          "word": "camouflage",
+          "meaning": "위장"
+        },
+        {
+          "word": "disguise",
+          "meaning": "변장, 위장"
         }
       ]
     },
@@ -3092,7 +4836,9 @@
             "A character in a book",
             "A type of pen used for writing letters",
             "A teacher who teaches English"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "멀리 사는 사람과 정기적으로 편지를 주고받는 친구라고 설명됨"
         },
         {
           "id": "reading-basic-q65-2",
@@ -3105,7 +4851,9 @@
             "Canada",
             "Australia",
             "New Zealand"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "시드니에 사는 호주 소년 레오라고 나옴"
         },
         {
           "id": "reading-basic-q65-3",
@@ -3118,7 +4866,31 @@
             "세상 반대편에 있는 새로운 친구",
             "호주로 여행 갈 수 있는 기회",
             "편지와 사진을 통한 즐거운 교류"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "영어 실력 향상, 문화 이해, 새로운 친구를 얻는 것 등은 언급되었지만, 호주 여행 기회를 얻었다는 내용은 없음"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "pen pal",
+          "meaning": "펜팔 친구"
+        },
+        {
+          "word": "regularly",
+          "meaning": "정기적으로"
+        },
+        {
+          "word": "receive",
+          "meaning": "받다"
+        },
+        {
+          "word": "backyard",
+          "meaning": "뒷마당"
+        },
+        {
+          "word": "culture",
+          "meaning": "문화"
         }
       ]
     },
@@ -3140,7 +4912,9 @@
             "Alexander Graham Bell",
             "Samuel Morse",
             "The Wright brothers"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "알렉산더 그레이엄 벨이 전화기를 발명한 것으로 알려져 있음"
         },
         {
           "id": "reading-basic-q66-2",
@@ -3153,7 +4927,9 @@
             "\"Mr. Watson, come here. I want to see you.\"",
             "\"One small step for man.\"",
             "\"What hath God wrought?\""
-          ]
+          ],
+          "answer": 3,
+          "explanation": "최초의 통화 내용은 \"Mr. Watson, come here. I want to see you.\"였음"
         },
         {
           "id": "reading-basic-q66-3",
@@ -3166,7 +4942,35 @@
             "비둘기를 이용한 통신",
             "소리를 질러서 전달하기",
             "스마트폰 앱"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "전화기 발명 전에는 편지나 전보를 사용했다고 나옴"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "communication",
+          "meaning": "의사소통, 통신"
+        },
+        {
+          "word": "telegraph",
+          "meaning": "전신기"
+        },
+        {
+          "word": "inventor",
+          "meaning": "발명가"
+        },
+        {
+          "word": "assistant",
+          "meaning": "조수, 보조원"
+        },
+        {
+          "word": "device",
+          "meaning": "장치"
+        },
+        {
+          "word": "invention",
+          "meaning": "발명, 발명품"
         }
       ]
     },
@@ -3188,7 +4992,9 @@
             "The thrill of roller coasters",
             "The water rides",
             "The souvenir shops"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "글의 첫 문장에 \"I love the thrill of roller coasters\"라고 명시됨"
         },
         {
           "id": "reading-basic-q67-2",
@@ -3201,7 +5007,9 @@
             "The bumper cars",
             "The Ferris wheel",
             "The haunted house"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "대관람차 꼭대기에서 공원 전체를 볼 수 있었다고 나옴"
         },
         {
           "id": "reading-basic-q67-3",
@@ -3214,7 +5022,31 @@
             "excited and happy",
             "scared and worried",
             "bored and sleepy"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "'스릴', '너무 재미있었다', '극도로 행복했다' 등의 표현을 통해 신나고 행복한 기분임을 알 수 있음"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "amusement park",
+          "meaning": "놀이공원"
+        },
+        {
+          "word": "thrill",
+          "meaning": "스릴, 흥분"
+        },
+        {
+          "word": "scream",
+          "meaning": "소리 지르다"
+        },
+        {
+          "word": "dizzy",
+          "meaning": "어지러운"
+        },
+        {
+          "word": "classic",
+          "meaning": "고전적인, 전형적인"
         }
       ]
     },
@@ -3236,7 +5068,9 @@
             "It is not biodegradable and causes pollution.",
             "It is difficult to make.",
             "There is not enough plastic in the world."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "대부분의 플라스틱이 자연 분해되지 않아 환경 오염을 일으키는 것이 큰 문제라고 설명함"
         },
         {
           "id": "reading-basic-q68-2",
@@ -3249,7 +5083,9 @@
             "They can mistake it for food or get tangled in it.",
             "It makes it hard for them to see.",
             "It cleans the ocean."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "해양 동물들이 플라스틱을 먹이로 착각하거나 플라스틱에 몸이 얽힐 수 있다고(\"mistake plastic bags for food or get tangled\") 나옴"
         },
         {
           "id": "reading-basic-q68-3",
@@ -3262,7 +5098,31 @@
             "플라스틱을 올바르게 재활용하기",
             "플라스틱 제품을 전혀 사용하지 않기",
             "재사용 가능한 커피컵 사용하기"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "재사용 가능한 제품 사용, 재활용 등은 제안되었지만, 플라스틱 제품을 전혀 사용하지 말라는 극단적인 제안은 없음"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "material",
+          "meaning": "재료, 물질"
+        },
+        {
+          "word": "biodegradable",
+          "meaning": "생분해성의 (자연적으로 분해되는)"
+        },
+        {
+          "word": "tangled",
+          "meaning": "얽힌"
+        },
+        {
+          "word": "reduce",
+          "meaning": "줄이다"
+        },
+        {
+          "word": "reusable",
+          "meaning": "재사용할 수 있는"
         }
       ]
     },
@@ -3284,7 +5144,9 @@
             "Bake a cake",
             "Do their homework",
             "Fix the oven"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "친구와 함께 케이크를 구우려고(\"decided to bake a cake\") 했다고 나옴"
         },
         {
           "id": "reading-basic-q69-2",
@@ -3297,7 +5159,9 @@
             "The cake was burnt.",
             "The fire alarm went off.",
             "The house was filled with smoke."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "밀가루를 쏟고, 계란을 흘리고, 케이크를 태우는 등 여러 사건이 있었지만, 화재경보기가 울렸다는 내용은 언급되지 않음"
         },
         {
           "id": "reading-basic-q69-3",
@@ -3310,7 +5174,35 @@
             "요리법을 잘 따라야 한다.",
             "친구와는 함께 요리하면 안 된다.",
             "어지르는 것은 재미있다."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "글의 마지막에 \"follow the recipe carefully!\"라는 교훈을 배웠다고 명시됨"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "spill",
+          "meaning": "엎지르다, 흘리다"
+        },
+        {
+          "word": "drip",
+          "meaning": "뚝뚝 떨어지다"
+        },
+        {
+          "word": "burnt",
+          "meaning": "(불에) 탄"
+        },
+        {
+          "word": "mess",
+          "meaning": "엉망, 뒤죽박죽"
+        },
+        {
+          "word": "disaster",
+          "meaning": "재앙, 큰 실패"
+        },
+        {
+          "word": "recipe",
+          "meaning": "요리법, 레시피"
         }
       ]
     },
@@ -3332,7 +5224,9 @@
             "How our brain processes information",
             "The different flavors we can taste",
             "How to protect our senses"
-          ]
+          ],
+          "answer": 1,
+          "explanation": "시각, 청각, 후각, 미각, 촉각이라는 다섯 가지 감각과 각각의 기능에 대해 설명하고 있음"
         },
         {
           "id": "reading-basic-q70-2",
@@ -3345,7 +5239,9 @@
             "Smell",
             "Taste",
             "Touch"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "연기 냄새처럼 후각이 위험을 경고해 줄 수 있다고(\"smell, which can warn us of danger (like smoke)\") 나옴"
         },
         {
           "id": "reading-basic-q70-3",
@@ -3358,7 +5254,35 @@
             "피부는 우리에게 촉각을 느끼게 해준다.",
             "혀는 냄새를 맡는 역할을 한다.",
             "다섯 가지 감각은 각각 독립적으로 작용한다."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "피부가 우리에게 촉각을 느끼게 해준다고(\"Our skin gives us the sense of touch\") 명시됨"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "sense",
+          "meaning": "감각"
+        },
+        {
+          "word": "sight",
+          "meaning": "시각"
+        },
+        {
+          "word": "hearing",
+          "meaning": "청각"
+        },
+        {
+          "word": "smell",
+          "meaning": "후각"
+        },
+        {
+          "word": "taste",
+          "meaning": "미각"
+        },
+        {
+          "word": "touch",
+          "meaning": "촉각"
         }
       ]
     },
@@ -3380,7 +5304,9 @@
             "By using body movements and facial expressions",
             "By using puppets",
             "By speaking very softly"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "말을 사용하지 않고 몸짓과 얼굴 표정으로 이야기를 전달한다고 나옴"
         },
         {
           "id": "reading-basic-q71-2",
@@ -3393,7 +5319,9 @@
             "Because it is a tradition with no reason",
             "To protect their skin from the sun",
             "To look like a clown"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "얼굴 표정을 더 명확하게 보이게 하기 위해 흰색 분장을 한다고 함"
         },
         {
           "id": "reading-basic-q71-3",
@@ -3406,7 +5334,31 @@
             "마임 배우가 되려면 뛰어난 신체 조절 능력이 필요하다.",
             "마임은 항상 재미있기만 한 예술 형식이다.",
             "마임 배우는 보통 흑백 의상을 입는다."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "재미있을 수도 있고 감동적일 수도 있다고 했으므로, 항상 재미있기만 하다는 것은 틀린 설명"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "performer",
+          "meaning": "공연자, 연기자"
+        },
+        {
+          "word": "invisible",
+          "meaning": "보이지 않는"
+        },
+        {
+          "word": "illusion",
+          "meaning": "환상, 착각"
+        },
+        {
+          "word": "typically",
+          "meaning": "보통, 일반적으로"
+        },
+        {
+          "word": "imagination",
+          "meaning": "상상력"
         }
       ]
     },
@@ -3428,7 +5380,9 @@
             "A type of house made of glass",
             "A problem caused by too much rain",
             "The changing of the seasons"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "대기 중의 가스들이 열을 가두어 지구를 따뜻하게 유지하는 자연적인 과정이라고 설명됨"
         },
         {
           "id": "reading-basic-q72-2",
@@ -3441,7 +5395,9 @@
             "By releasing too much carbon dioxide from burning fossil fuels",
             "By building more greenhouses",
             "By reflecting more sunlight back to space"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "인간이 화석 연료를 태워 너무 많은 이산화탄소를 배출함으로써 온실 효과를 강화시킨다고 나옴"
         },
         {
           "id": "reading-basic-q72-3",
@@ -3454,7 +5410,31 @@
             "주로 온실 작물에 영향을 미치기 때문에",
             "온실처럼 초록색으로 보이기 때문에",
             "과학자가 온실에서 살았기 때문에"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "대기 중 가스들이 온실의 유리벽처럼 열을 가두는 역할을 하기 때문임"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "reflect",
+          "meaning": "반사하다"
+        },
+        {
+          "word": "absorb",
+          "meaning": "흡수하다"
+        },
+        {
+          "word": "atmosphere",
+          "meaning": "대기"
+        },
+        {
+          "word": "fossil fuels",
+          "meaning": "화석 연료"
+        },
+        {
+          "word": "climate change",
+          "meaning": "기후 변화"
         }
       ]
     },
@@ -3476,7 +5456,9 @@
             "Cooperation and Fun",
             "Academic Excellence",
             "Artistic Expression"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "운동회의 주제가 '협동과 재미'였다고 명시됨"
         },
         {
           "id": "reading-basic-q73-2",
@@ -3489,7 +5471,9 @@
             "A three-legged race",
             "A game where students got wet",
             "A game that required untangling"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "인간 매듭, 물 전달하기 게임은 묘사되었지만, 2인 3각 경주는 언급되지 않음"
         },
         {
           "id": "reading-basic-q73-3",
@@ -3502,7 +5486,31 @@
             "다른 학년 학생들과 팀워크를 다지고 새로운 친구를 사귄 것",
             "선생님께 칭찬받은 것",
             "물에 젖지 않고 게임을 마친 것"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "글의 마지막에 \"a great way to build teamwork and make new friends from different grades\"라고 명시됨"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "cooperation",
+          "meaning": "협동, 협력"
+        },
+        {
+          "word": "untangle",
+          "meaning": "(얽힌 것을) 풀다"
+        },
+        {
+          "word": "chaotic",
+          "meaning": "혼돈스러운, 무질서한"
+        },
+        {
+          "word": "hilarious",
+          "meaning": "아주 우스운, 재미있는"
+        },
+        {
+          "word": "teamwork",
+          "meaning": "팀워크, 협동 작업"
         }
       ]
     },
@@ -3524,7 +5532,9 @@
             "Robbing from the rich and giving to the poor",
             "Being a cruel sheriff",
             "Writing stories about heroes"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "부자에게서 도둑질하여 가난한 사람들에게 나눠주는 것으로 유명했다고 나옴"
         },
         {
           "id": "reading-basic-q74-2",
@@ -3537,7 +5547,9 @@
             "Robin Hood's group of followers",
             "A group of famous archers",
             "The poor people who received money"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "로빈 후드를 따르는 무리를 '메리 멘'이라고 불렀다고 나옴"
         },
         {
           "id": "reading-basic-q74-3",
@@ -3550,7 +5562,35 @@
             "존 왕자는 가난한 사람들에게 매우 친절했다.",
             "로빈 후드는 부자들을 도와 가난한 사람들을 괴롭혔다.",
             "로빈 후드는 노팅엄의 보안관이었다."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "로빈 후드는 전문적인 궁수, 즉 활을 매우 잘 쏘는 사람이었다고 나옴"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "folklore",
+          "meaning": "민속, 민간 전승"
+        },
+        {
+          "word": "archer",
+          "meaning": "궁수, 활 쏘는 사람"
+        },
+        {
+          "word": "greedy",
+          "meaning": "탐욕스러운"
+        },
+        {
+          "word": "tax",
+          "meaning": "세금을 부과하다"
+        },
+        {
+          "word": "injustice",
+          "meaning": "불의, 부당함"
+        },
+        {
+          "word": "outlaw",
+          "meaning": "무법자, 법의 보호를 받지 못하는 사람"
         }
       ]
     },
@@ -3572,7 +5612,9 @@
             "Flour, milk, eggs, and sugar",
             "Flour, yeast, salt, and oil",
             "Water, yeast, salt, and sugar"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "빵을 만드는 네 가지 간단한 재료로 밀가루, 물, 이스트, 소금을 언급함"
         },
         {
           "id": "reading-basic-q75-2",
@@ -3585,7 +5627,9 @@
             "To develop the gluten and make the dough smooth",
             "To cool down the dough",
             "To mix in the yeast"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "반죽을 주무르는 것은 글루텐을 발달시켜 빵의 구조를 만들고 반죽을 부드럽게 하기 위함이라고 설명됨"
         },
         {
           "id": "reading-basic-q75-3",
@@ -3598,7 +5642,31 @@
             "빵을 굽는 데 특별한 도구가 필요 없기 때문에",
             "빵 굽는 냄새가 사람들을 행복하게 만들기 때문에",
             "빵을 만드는 데 시간이 거의 걸리지 않기 때문에"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "간단한 재료들이 인내와 여러 과정을 거쳐 놀라운 결과물인 빵으로 변신하는 전체 과정이 마법 같다는 의미임"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "ingredient",
+          "meaning": "재료, 성분"
+        },
+        {
+          "word": "patience",
+          "meaning": "인내심"
+        },
+        {
+          "word": "dough",
+          "meaning": "밀가루 반죽"
+        },
+        {
+          "word": "knead",
+          "meaning": "(반죽을) 이기다, 주무르다"
+        },
+        {
+          "word": "profound",
+          "meaning": "깊은, 심오한"
         }
       ]
     },
@@ -3620,7 +5688,9 @@
             "A space laboratory and home for astronauts that orbits Earth",
             "A powerful telescope in space",
             "A rocket used for launching satellites"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "지구 궤도를 도는 우주비행사들의 집이자 과학 실험실이라고 설명됨"
         },
         {
           "id": "reading-basic-q76-2",
@@ -3633,7 +5703,9 @@
             "Because of microgravity.",
             "They wear special floating suits.",
             "It is part of their training."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "미세 중력 때문에 우주비행사들이 걷는 대신 떠다닌다고 나옴"
         },
         {
           "id": "reading-basic-q76-3",
@@ -3646,7 +5718,35 @@
             "우주비행사들은 ISS에서 과학 실험을 수행한다.",
             "ISS에서의 생활은 지구에서의 생활과 매우 다르다.",
             "우주비행사들은 잠을 잘 때 몸을 묶어야 한다."
-          ]
+          ],
+          "answer": 1,
+          "explanation": "미국, 러시아, 일본, 유럽, 캐나다 5개 우주 기관의 협력 프로젝트라고 했으므로, 한 국가가 만들었다는 것은 틀린 설명"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "orbit",
+          "meaning": "~의 궤도를 돌다"
+        },
+        {
+          "word": "laboratory",
+          "meaning": "실험실"
+        },
+        {
+          "word": "astronaut",
+          "meaning": "우주비행사"
+        },
+        {
+          "word": "collaborative",
+          "meaning": "협력적인, 공동의"
+        },
+        {
+          "word": "cooperation",
+          "meaning": "협력, 협동"
+        },
+        {
+          "word": "conduct",
+          "meaning": "수행하다"
         }
       ]
     },
@@ -3668,7 +5768,9 @@
             "To focus on the positive side of things",
             "To want more water",
             "To be realistic"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "물이 반쯤 찬 컵을 보고도 긍정적인 면에 집중하는 낙관주의자의 태도를 의미함"
         },
         {
           "id": "reading-basic-q77-2",
@@ -3681,7 +5783,9 @@
             "They can predict the future.",
             "They are always happy.",
             "They don't need to work hard."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "연구에 따르면 낙관주의자들은 종종 더 건강하고 스트레스를 덜 받는다고 나옴"
         },
         {
           "id": "reading-basic-q77-3",
@@ -3694,7 +5798,35 @@
             "문제를 무시하는 것이 행복의 비결이다.",
             "물을 항상 반 이상 채워 마셔야 한다.",
             "성공은 오직 운에 달려 있다."
-          ]
+          ],
+          "answer": 1,
+          "explanation": "글 전체가 긍정적인 사고방식이 건강, 스트레스, 목표 달성 등 삶의 여러 측면에 좋은 영향을 줄 수 있다고 설명하고 있음"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "optimism",
+          "meaning": "낙관주의"
+        },
+        {
+          "word": "pessimism",
+          "meaning": "비관주의"
+        },
+        {
+          "word": "impact",
+          "meaning": "영향, 충격"
+        },
+        {
+          "word": "attitude",
+          "meaning": "태도"
+        },
+        {
+          "word": "resilient",
+          "meaning": "회복력 있는, 탄력 있는"
+        },
+        {
+          "word": "proactive",
+          "meaning": "주도적인, 적극적인"
         }
       ]
     },
@@ -3716,7 +5848,9 @@
             "A type of bee",
             "A person who keeps bees",
             "A type of fruit"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "한 식물에서 다른 식물로 꽃가루를 옮기는 동물이라고 정의됨"
         },
         {
           "id": "reading-basic-q78-2",
@@ -3729,7 +5863,9 @@
             "They help produce a large portion of our food.",
             "They keep other harmful insects away.",
             "They are a symbol of hard work."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "우리가 먹는 음식의 약 3분의 1이 벌의 수분 활동에 의존한다고 나옴"
         },
         {
           "id": "reading-basic-q78-3",
@@ -3742,7 +5878,35 @@
             "기후 변화",
             "너무 많은 꿀의 생산",
             "인간의 활동"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "서식지 감소, 살충제, 기후 변화는 원인으로 언급되었지만, 꿀을 너무 많이 생산하는 것은 원인으로 언급되지 않음"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "ecosystem",
+          "meaning": "생태계"
+        },
+        {
+          "word": "pollinator",
+          "meaning": "꽃가루 매개자"
+        },
+        {
+          "word": "pollen",
+          "meaning": "꽃가루"
+        },
+        {
+          "word": "population",
+          "meaning": "개체 수, 인구"
+        },
+        {
+          "word": "decline",
+          "meaning": "감소, 하락"
+        },
+        {
+          "word": "pesticide",
+          "meaning": "살충제, 농약"
         }
       ]
     },
@@ -3764,7 +5928,9 @@
             "His mom left him alone.",
             "He fell asleep in the store.",
             "He went to the wrong floor."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "장난감을 보기 위해 엄마 손을 잠시 놓았다가 길을 잃었다고 나옴"
         },
         {
           "id": "reading-basic-q79-2",
@@ -3777,7 +5943,9 @@
             "A kind store employee",
             "His dad",
             "He found her by himself."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "친절한 가게 직원이 아이를 발견하고 고객 서비스 센터로 데려가 안내 방송을 해주었음"
         },
         {
           "id": "reading-basic-q79-3",
@@ -3790,7 +5958,27 @@
             "모르는 사람을 절대 따라가면 안 된다.",
             "붐비는 장소에서는 부모님 곁에 꼭 붙어 있어야 한다.",
             "울면 문제가 해결된다."
-          ]
+          ],
+          "answer": 4,
+          "explanation": "글의 마지막에 \"how important it is to stay close to my parents in a crowded place\"라는 교훈을 배웠다고 명시됨"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "department store",
+          "meaning": "백화점"
+        },
+        {
+          "word": "panic",
+          "meaning": "극심한 공포, 공황"
+        },
+        {
+          "word": "employee",
+          "meaning": "직원"
+        },
+        {
+          "word": "announcement",
+          "meaning": "안내 방송, 발표"
         }
       ]
     },
@@ -3812,7 +6000,9 @@
             "How to win an argument.",
             "Why you should always make eye contact.",
             "The difference between talking and speaking."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "글 전체가 좋은 대화가가 되기 위해 잘 말하는 것만큼이나 잘 듣는 것이 중요하며, 그 방법들을 설명하고 있음"
         },
         {
           "id": "reading-basic-q80-2",
@@ -3825,7 +6015,9 @@
             "Pay full attention",
             "Interrupt the speaker",
             "Try to understand their feelings"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "상대방이 말하는 동안 끼어들거나 대답을 생각하지 말라고 조언함"
         },
         {
           "id": "reading-basic-q80-3",
@@ -3838,7 +6030,31 @@
             "상대방의 말에서 틀린 점을 찾아내는 것",
             "대화 중에 내 대답을 미리 생각하는 것",
             "고개를 계속 끄덕이는 것"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "단순히 기다리는 것이 아니라, 상대방에게 온전히 주의를 기울이는 능동적인 과정이라고 설명함"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "conversationalist",
+          "meaning": "대화를 잘하는 사람"
+        },
+        {
+          "word": "attention",
+          "meaning": "주의, 주목"
+        },
+        {
+          "word": "interrupt",
+          "meaning": "방해하다, 끼어들다"
+        },
+        {
+          "word": "reply",
+          "meaning": "대답, 응답"
+        },
+        {
+          "word": "practice",
+          "meaning": "연습"
         }
       ]
     },
@@ -3860,7 +6076,9 @@
             "How to become a professional musician",
             "The history of classical music",
             "Why children should learn songs"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "음악의 힘과 이점에 대해 설명하고 있음"
         },
         {
           "id": "reading-basic-q81-2",
@@ -3873,7 +6091,9 @@
             "It helps us speak foreign languages.",
             "It makes our brain smaller.",
             "It has no effect on the brain."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "음악이 뇌의 화학 작용을 바꾸고 엔도르핀을 분비시킨다고 명시됨"
         },
         {
           "id": "reading-basic-q81-3",
@@ -3886,7 +6106,31 @@
             "키가 더 크게 자라도록 도와준다.",
             "기억력 향상에 도움이 된다.",
             "우리를 기분 좋게 만들어준다."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "협응력 향상, 규율과 인내심 등은 언급되었지만, 키가 크는 것과는 관련이 없음"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "anxious",
+          "meaning": "불안한"
+        },
+        {
+          "word": "chemistry",
+          "meaning": "화학, 화학 작용"
+        },
+        {
+          "word": "coordination",
+          "meaning": "조정, 협응"
+        },
+        {
+          "word": "discipline",
+          "meaning": "규율, 훈련"
+        },
+        {
+          "word": "folk music",
+          "meaning": "민속 음악"
         }
       ]
     },
@@ -3908,7 +6152,9 @@
             "New York, America in the 20th century",
             "Paris, France in the 17th century",
             "London, England in the 18th century"
-          ]
+          ],
+          "answer": 1,
+          "explanation": "18세기 이탈리아 나폴리에서 시작되었다고 명시됨"
         },
         {
           "id": "reading-basic-q82-2",
@@ -3921,7 +6167,9 @@
             "It was the biggest pizza ever made.",
             "It was made by the queen herself.",
             "It was the first pizza with cheese."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "이탈리아 국기의 색깔을 나타내는 재료를 사용했다고 설명됨"
         },
         {
           "id": "reading-basic-q82-3",
@@ -3934,7 +6182,27 @@
             "피자는 처음부터 전 세계적으로 인기가 있었다.",
             "피자 마르게리타는 프랑스 국기를 상징한다.",
             "이탈리아 이민자들은 피자를 미국에 가져오지 않았다."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "2차 대전 후 미국 군인들이 피자에 대한 사랑을 가져왔다고 나옴"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "portable",
+          "meaning": "휴대할 수 있는"
+        },
+        {
+          "word": "represent",
+          "meaning": "나타내다, 상징하다"
+        },
+        {
+          "word": "immigrant",
+          "meaning": "이민자"
+        },
+        {
+          "word": "soldier",
+          "meaning": "군인"
         }
       ]
     },
@@ -3956,7 +6224,9 @@
             "The flower section",
             "The tool shed",
             "The greenhouse"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "글쓴이가 가장 좋아하는 부분은 꽃 섹션이라고 명시됨"
         },
         {
           "id": "reading-basic-q83-2",
@@ -3969,7 +6239,9 @@
             "How to sell flowers",
             "How to build a greenhouse",
             "How to make flower arrangements"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "씨앗 심는 법과 채소가 언제 익었는지 알아보는 법을 가르쳐주었음"
         },
         {
           "id": "reading-basic-q83-3",
@@ -3982,7 +6254,27 @@
             "정원 가꾸기는 시간과 노력이 필요하지만 그만한 가치가 있다.",
             "정원에서는 꽃만 키워야 한다.",
             "정원 일은 할머니만 할 수 있다."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "시간과 노력이 필요하지만 아름다움과 음식이라는 보상을 준다는 의미"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "sunflower",
+          "meaning": "해바라기"
+        },
+        {
+          "word": "lavender",
+          "meaning": "라벤더"
+        },
+        {
+          "word": "recognize",
+          "meaning": "알아보다, 인식하다"
+        },
+        {
+          "word": "patience",
+          "meaning": "인내심"
         }
       ]
     },
@@ -4004,7 +6296,9 @@
             "Messages from the future",
             "Problems with our brain",
             "Stories we create when we're awake"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "꿈은 잠들 때 마음속에서 일어나는 이미지, 감정, 생각의 연속이라고 정의됨"
         },
         {
           "id": "reading-basic-q84-2",
@@ -4017,7 +6311,9 @@
             "During REM sleep",
             "Just before we wake up",
             "Throughout the entire night"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "대부분의 꿈은 REM 수면 중에 일어난다고 명시됨"
         },
         {
           "id": "reading-basic-q84-3",
@@ -4030,7 +6326,31 @@
             "REM 수면 중에는 우리 몸이 마비된다.",
             "어떤 사람들은 꿈을 선명히 기억하고, 어떤 사람들은 바로 잊는다.",
             "꿈은 행복하거나 무섭거나 이상할 수 있다."
-          ]
+          ],
+          "answer": 2,
+          "explanation": "과학자들은 여전히 꿈을 완전히 이해하지 못한다고 했으므로, 모든 것을 이해한다는 것은 틀린 설명"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "sequence",
+          "meaning": "연속, 순서"
+        },
+        {
+          "word": "organize",
+          "meaning": "정리하다, 조직하다"
+        },
+        {
+          "word": "paralyzed",
+          "meaning": "마비된"
+        },
+        {
+          "word": "prevent",
+          "meaning": "방지하다, 막다"
+        },
+        {
+          "word": "mystery",
+          "meaning": "수수께끼, 신비"
         }
       ]
     },
@@ -4052,7 +6372,9 @@
             "Cook dinner",
             "Carry light objects",
             "Answer simple questions"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "헬퍼는 여러 가지 일을 할 수 있었지만, 요리는 언급되지 않음"
         },
         {
           "id": "reading-basic-q85-2",
@@ -4065,7 +6387,9 @@
             "\"Jupiter is the largest planet in our solar system.\"",
             "\"I don't know.\"",
             "\"Saturn is the largest planet.\""
-          ]
+          ],
+          "answer": 3,
+          "explanation": "\"Jupiter is the largest planet in our solar system\"이라고 답했음"
         },
         {
           "id": "reading-basic-q85-3",
@@ -4078,7 +6402,27 @@
             "병원, 가정, 사무실 등 다양한 곳에서",
             "우주 정거장에서만",
             "공장에서만"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "병원, 가정, 사무실 등 다양한 곳에서 사용된다고 설명됨"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "navigate",
+          "meaning": "길을 찾아가다, 항해하다"
+        },
+        {
+          "word": "recognize",
+          "meaning": "인식하다, 알아보다"
+        },
+        {
+          "word": "impressive",
+          "meaning": "인상적인"
+        },
+        {
+          "word": "various",
+          "meaning": "다양한"
         }
       ]
     },
@@ -4100,7 +6444,9 @@
             "Creating new jobs",
             "Making trash bins look nicer",
             "Reducing the size of homes"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "환경 보호와 자원 절약이 주된 이점으로 언급됨"
         },
         {
           "id": "reading-basic-q86-2",
@@ -4113,7 +6459,9 @@
             "20 trees and 10,000 gallons of water",
             "17 trees but no water",
             "7,000 trees and 17 gallons of water"
-          ]
+          ],
+          "answer": 1,
+          "explanation": "종이 1톤을 재활용하면 나무 17그루와 물 7,000갤런을 절약할 수 있다고 명시됨"
         },
         {
           "id": "reading-basic-q86-3",
@@ -4126,7 +6474,35 @@
             "사람들이 참여해서 쓰레기를 분리하고 올바른 곳에 버려야 한다.",
             "재활용 공장을 더 많이 지어야 한다.",
             "재활용 가능한 제품만 생산해야 한다."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "사람들이 참여해서 쓰레기를 분리하고 올바른 곳에 버려야 효과적이라고 함"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "waste",
+          "meaning": "쓰레기, 폐기물"
+        },
+        {
+          "word": "landfill",
+          "meaning": "매립지"
+        },
+        {
+          "word": "collect",
+          "meaning": "수집하다"
+        },
+        {
+          "word": "sort",
+          "meaning": "분류하다"
+        },
+        {
+          "word": "process",
+          "meaning": "처리하다, 가공하다"
+        },
+        {
+          "word": "participate",
+          "meaning": "참여하다"
         }
       ]
     },
@@ -4148,7 +6524,9 @@
             "In the garden",
             "In the garage",
             "In the library"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "할아버지의 다락방에서 발견했다고 명시됨"
         },
         {
           "id": "reading-basic-q87-2",
@@ -4161,7 +6539,9 @@
             "His travels around the world",
             "His opinions about politics",
             "His recipes for cooking"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "일상생활, 미래에 대한 희망, 할머니에 대한 사랑을 썼다고 나옴"
         },
         {
           "id": "reading-basic-q87-3",
@@ -4174,7 +6554,31 @@
             "손으로 쓴 글이 얼마나 소중하고 중요한 기억을 보존할 수 있는지",
             "1950년대가 지금보다 더 좋은 시대였다는 것",
             "사랑은 나이가 들면 변한다는 것"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "손으로 쓴 글이 얼마나 소중하고 중요한 기억을 보존할 수 있는지 깨달았음"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "attic",
+          "meaning": "다락방"
+        },
+        {
+          "word": "handwriting",
+          "meaning": "손글씨"
+        },
+        {
+          "word": "engagement ring",
+          "meaning": "약혼 반지"
+        },
+        {
+          "word": "precious",
+          "meaning": "소중한"
+        },
+        {
+          "word": "preserve",
+          "meaning": "보존하다"
         }
       ]
     },
@@ -4196,7 +6600,9 @@
             "Up to 3,000 miles",
             "Up to 4,000 miles",
             "Up to 5,000 miles"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "최대 3,000마일을 여행한다고 명시됨"
         },
         {
           "id": "reading-basic-q88-2",
@@ -4209,7 +6615,9 @@
             "It takes multiple generations to complete the journey.",
             "They travel alone, not in groups.",
             "They only travel during the winter."
-          ]
+          ],
+          "answer": 3,
+          "explanation": "여행을 시작한 나비와 끝내는 나비가 다르며, 여러 세대에 걸쳐 완성된다는 점이 특이함"
         },
         {
           "id": "reading-basic-q88-3",
@@ -4222,7 +6630,31 @@
             "유전적 기억",
             "GPS 기술",
             "자연적인 능력"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "태양, 자기장, 유전적 기억은 언급되었지만, GPS 기술은 언급되지 않음"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "incredible",
+          "meaning": "믿을 수 없는, 놀라운"
+        },
+        {
+          "word": "delicate",
+          "meaning": "연약한, 섬세한"
+        },
+        {
+          "word": "multiple",
+          "meaning": "다수의, 여러 개의"
+        },
+        {
+          "word": "mate",
+          "meaning": "짝짓기하다"
+        },
+        {
+          "word": "navigate",
+          "meaning": "길을 찾아가다"
         }
       ]
     },
@@ -4244,7 +6676,9 @@
             "Because the king is the most important piece",
             "Because it was invented by a king",
             "Because it is very expensive to play"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "전략, 인내심, 깊은 사고가 필요하기 때문이라고 설명됨"
         },
         {
           "id": "reading-basic-q89-2",
@@ -4257,7 +6691,9 @@
             "Knight",
             "Queen",
             "Pawn"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "나이트가 L자 모양으로 움직인다고 명시됨"
         },
         {
           "id": "reading-basic-q89-3",
@@ -4270,7 +6706,31 @@
             "몇 수 앞을 내다보는 능력",
             "작은 것을 희생해서 큰 것을 얻는 지혜",
             "상대방과 빨리 친해지는 방법"
-          ]
+          ],
+          "answer": 5,
+          "explanation": "집중력, 문제해결능력 등은 언급되었지만, 상대방과 빨리 친해지는 방법은 언급되지 않음"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "bishop",
+          "meaning": "(체스의) 비숍"
+        },
+        {
+          "word": "rook",
+          "meaning": "(체스의) 룩"
+        },
+        {
+          "word": "knight",
+          "meaning": "(체스의) 나이트"
+        },
+        {
+          "word": "opening",
+          "meaning": "(체스의) 오프닝"
+        },
+        {
+          "word": "problem-solving",
+          "meaning": "문제 해결"
         }
       ]
     },
@@ -4292,7 +6752,9 @@
             "Sunlight passing through water droplets and splitting into colors",
             "Reflection from the ground",
             "Magic in the sky"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "햇빛이 물방울을 통과하면서 여러 색깔로 나뉘어지는 것이 원인"
         },
         {
           "id": "reading-basic-q90-2",
@@ -4305,7 +6767,9 @@
             "The sun must be behind you and there must be water droplets in front",
             "There must be clouds everywhere",
             "It must be winter"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "태양이 뒤에 있고 앞에 물방울이 있어야 한다고 명시됨"
         },
         {
           "id": "reading-basic-q90-3",
@@ -4318,7 +6782,31 @@
             "바깥쪽: 파란색, 안쪽: 노란색",
             "바깥쪽: 초록색, 안쪽: 주황색",
             "바깥쪽: 노란색, 안쪽: 파란색"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "바깥쪽이 빨간색, 안쪽이 보라색이라고 명시됨"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "phenomenon",
+          "meaning": "현상 (복수: phenomena)"
+        },
+        {
+          "word": "spectrum",
+          "meaning": "스펙트럼, 빛의 띠"
+        },
+        {
+          "word": "prism",
+          "meaning": "프리즘"
+        },
+        {
+          "word": "refraction",
+          "meaning": "굴절"
+        },
+        {
+          "word": "double rainbow",
+          "meaning": "이중 무지개"
         }
       ]
     },
@@ -4340,7 +6828,9 @@
             "Paper painting",
             "Paper tearing",
             "Paper gluing"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "종이접기를 의미한다고 정의됨"
         },
         {
           "id": "reading-basic-q91-2",
@@ -4353,7 +6843,9 @@
             "Paper and tape",
             "Colored paper and markers",
             "Any kind of paper and tools"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "전통적인 종이접기에서는 정사각형 종이 한 장만 허용됨"
         },
         {
           "id": "reading-basic-q91-3",
@@ -4366,7 +6858,31 @@
             "교실을 조용하게 만들기 때문에",
             "예술 작품을 만들 수 있기 때문에",
             "종이를 아낄 수 있기 때문에"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "기하학과 분수 이해에 도움이 되기 때문이라고 설명됨"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "material",
+          "meaning": "재료"
+        },
+        {
+          "word": "complex",
+          "meaning": "복잡한"
+        },
+        {
+          "word": "precision",
+          "meaning": "정확성, 정밀함"
+        },
+        {
+          "word": "reasoning",
+          "meaning": "추론, 논리적 사고"
+        },
+        {
+          "word": "meditative",
+          "meaning": "명상적인"
         }
       ]
     },
@@ -4388,7 +6904,9 @@
             "It was free for everyone",
             "It was the largest museum in the city",
             "It only had dinosaur bones"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "방문객들이 실험할 수 있는 인터랙티브 전시물이 있어서 특별했음"
         },
         {
           "id": "reading-basic-q92-2",
@@ -4401,7 +6919,9 @@
             "It can tell time",
             "It is dangerous to touch",
             "It was invented yesterday"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "진자는 항상 같은 높이로 되돌아간다고 배웠음"
         },
         {
           "id": "reading-basic-q92-3",
@@ -4414,7 +6934,31 @@
             "천체 투영관",
             "공룡 전시관",
             "선물 가게"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "천체 투영관이 가장 좋아하는 곳이었다고 명시됨"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "exhibit",
+          "meaning": "전시물"
+        },
+        {
+          "word": "pendulum",
+          "meaning": "진자, 추"
+        },
+        {
+          "word": "erupt",
+          "meaning": "분출하다"
+        },
+        {
+          "word": "narrator",
+          "meaning": "내레이터, 해설자"
+        },
+        {
+          "word": "galaxy",
+          "meaning": "은하"
         }
       ]
     },
@@ -4436,7 +6980,9 @@
             "She missed her bus",
             "She lost her wallet",
             "She felt sick"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "무거운 장바구니를 들고 다니는 데 어려움을 겪고 있었음"
         },
         {
           "id": "reading-basic-q93-2",
@@ -4449,7 +6995,9 @@
             "He carried her bags and helped her get on the bus",
             "He bought her groceries",
             "He gave her directions"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "가방을 들어주고 버스에 타는 것을 도와주었음"
         },
         {
           "id": "reading-basic-q93-3",
@@ -4462,7 +7010,31 @@
             "친절함은 위험하다는 뜻",
             "친절함은 가끔만 해야 한다는 뜻",
             "친절함은 돈으로 살 수 있다는 뜻"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "친절한 행동을 보면 다른 사람들도 친절해지고 싶어진다는 의미"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "manage",
+          "meaning": "처리하다, 다루다"
+        },
+        {
+          "word": "hesitation",
+          "meaning": "주저함, 망설임"
+        },
+        {
+          "word": "gratitude",
+          "meaning": "감사함"
+        },
+        {
+          "word": "tremendous",
+          "meaning": "엄청난, 거대한"
+        },
+        {
+          "word": "contagious",
+          "meaning": "전염성이 있는"
         }
       ]
     },
@@ -4484,7 +7056,9 @@
             "Rome, Italy in 776 BC",
             "Sparta, Greece in 776 BC",
             "Troy, Greece in 776 BC"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "기원전 776년 그리스 올림피아에서 첫 고대 올림픽이 열렸음"
         },
         {
           "id": "reading-basic-q94-2",
@@ -4497,7 +7071,9 @@
             "The prize given to winners",
             "The oath taken by athletes",
             "The opening ceremony"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "올림픽 기간 중 모든 전쟁이 중단되는 기간이었음"
         },
         {
           "id": "reading-basic-q94-3",
@@ -4510,7 +7086,31 @@
             "고대에는 4년마다 열렸다",
             "고대에는 겨울 경기가 없었다",
             "고대에는 전 세계에서 선수들이 참가했다"
-          ]
+          ],
+          "answer": 5,
+          "explanation": "고대 올림픽은 그리스에서만 열렸고, 전 세계에서 참가한 것은 현대 올림픽부터임"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "ancient",
+          "meaning": "고대의"
+        },
+        {
+          "word": "compete",
+          "meaning": "경쟁하다, 출전하다"
+        },
+        {
+          "word": "naked",
+          "meaning": "벌거벗은"
+        },
+        {
+          "word": "educator",
+          "meaning": "교육자"
+        },
+        {
+          "word": "revive",
+          "meaning": "되살리다, 부활시키다"
         }
       ]
     },
@@ -4532,7 +7132,9 @@
             "He watched videos online",
             "He asked his friends for advice",
             "He didn't prepare at all"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "어머니가 면접 질문을 연습하는 것을 도와주었음"
         },
         {
           "id": "reading-basic-q95-2",
@@ -4545,7 +7147,9 @@
             "About his grades in school",
             "About his future career plans",
             "About his salary expectations"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "책에 대한 경험과 근무 가능한 시간에 대해 물어보았음"
         },
         {
           "id": "reading-basic-q95-3",
@@ -4558,7 +7162,27 @@
             "책을 좋아하고 서점에서 일하는 것이 완벽할 것 같아서",
             "친구가 추천해서",
             "다른 일자리가 없어서"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "책을 좋아하고 서점에서 일하는 것이 완벽할 것 같다고 답했음"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "professionally",
+          "meaning": "전문적으로"
+        },
+        {
+          "word": "manager",
+          "meaning": "매니저, 관리자"
+        },
+        {
+          "word": "experience",
+          "meaning": "경험"
+        },
+        {
+          "word": "availability",
+          "meaning": "가능한 시간, 여유"
         }
       ]
     },
@@ -4580,7 +7204,9 @@
             "It stops working entirely",
             "It only dreams",
             "It shrinks in size"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "잠들 때 뇌는 매우 바쁘게 기억을 처리하고 몸을 회복시킨다고 설명됨"
         },
         {
           "id": "reading-basic-q96-2",
@@ -4593,7 +7219,9 @@
             "Trouble concentrating, making decisions, and controlling emotions",
             "Increased energy levels",
             "Better health overall"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "집중력, 의사결정, 감정 조절에 문제가 생긴다고 명시됨"
         },
         {
           "id": "reading-basic-q96-3",
@@ -4606,7 +7234,35 @@
             "매일 같은 시간에 잠자리에 들고 잠자기 전 스크린 피하기",
             "가능한 한 적게 자기",
             "낮에 많이 자기"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "매일 같은 시간에 잠자리에 들고 잠자기 전 스크린을 피하는 것이 좋은 수면 습관"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "mystery",
+          "meaning": "수수께끼, 신비"
+        },
+        {
+          "word": "inactive",
+          "meaning": "비활성의, 움직이지 않는"
+        },
+        {
+          "word": "stage",
+          "meaning": "단계, 단계"
+        },
+        {
+          "word": "immune system",
+          "meaning": "면역 체계"
+        },
+        {
+          "word": "consequence",
+          "meaning": "결과, 영향"
+        },
+        {
+          "word": "deprivation",
+          "meaning": "부족, 결핍"
         }
       ]
     },
@@ -4628,7 +7284,9 @@
             "Ruth accidentally created them when she ran out of baker's chocolate",
             "A chocolate company invented them",
             "They were brought from Europe"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "제빵용 초콜릿이 떨어져서 우연히 만들어졌음"
         },
         {
           "id": "reading-basic-q97-2",
@@ -4641,7 +7299,9 @@
             "She expected them to disappear",
             "She expected them to change color",
             "She expected nothing special"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "초콜릿 조각들이 녹아서 초콜릿 쿠키가 될 것이라고 예상했음"
         },
         {
           "id": "reading-basic-q97-3",
@@ -4654,7 +7314,31 @@
             "레시피를 공짜로 주었다",
             "네슬레와 공동으로 사업을 시작했다",
             "네슬레에서 일하기 시작했다"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "평생 초콜릿을 공급받는 조건으로 레시피를 팔았음"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "accident",
+          "meaning": "우연, 사고"
+        },
+        {
+          "word": "baker's chocolate",
+          "meaning": "제빵용 초콜릿"
+        },
+        {
+          "word": "semi-sweet",
+          "meaning": "세미 스위트의 (약간 단)"
+        },
+        {
+          "word": "dough",
+          "meaning": "반죽"
+        },
+        {
+          "word": "eventually",
+          "meaning": "결국, 마침내"
         }
       ]
     },
@@ -4676,7 +7360,9 @@
             "They only contain books now",
             "They are less important now",
             "They are exactly the same"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "고대에는 부유한 사람과 학자들만 이용했지만, 지금은 모든 사람이 이용함"
         },
         {
           "id": "reading-basic-q98-2",
@@ -4689,7 +7375,9 @@
             "Only reading programs",
             "Just a quiet place to study",
             "Only internet access"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "DVD, 컴퓨터, 워크숍, 메이커스페이스, 지역 행사 등 다양한 서비스 제공"
         },
         {
           "id": "reading-basic-q98-3",
@@ -4702,7 +7390,35 @@
             "다양한 문화 행사를 제공한다",
             "최신 영화를 무료로 상영해준다",
             "전문 사서가 도움을 제공한다"
-          ]
+          ],
+          "answer": 4,
+          "explanation": "최신 영화 무료 상영은 언급되지 않음"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "gateway",
+          "meaning": "관문, 입구"
+        },
+        {
+          "word": "scholar",
+          "meaning": "학자"
+        },
+        {
+          "word": "workshop",
+          "meaning": "워크숍, 강습회"
+        },
+        {
+          "word": "makerspace",
+          "meaning": "메이커스페이스 (창작 공간)"
+        },
+        {
+          "word": "librarian",
+          "meaning": "사서"
+        },
+        {
+          "word": "evolve",
+          "meaning": "발전하다, 진화하다"
         }
       ]
     },
@@ -4724,7 +7440,9 @@
             "Only speak when you're perfect",
             "Don't talk to other students",
             "Focus only on reading"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "실수를 두려워하지 말라고 조언했음"
         },
         {
           "id": "reading-basic-q99-2",
@@ -4737,7 +7455,9 @@
             "By traveling to Spain immediately",
             "By taking more classes",
             "By avoiding all practice"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "스페인어 영화를 보고 스페인어 음악을 들으며 연습했음"
         },
         {
           "id": "reading-basic-q99-3",
@@ -4750,7 +7470,31 @@
             "대학 입학에 도움이 되는 요소",
             "무엇이든 배울 수 있다는 자신감",
             "완벽한 스페인어 실력"
-          ]
+          ],
+          "answer": 5,
+          "explanation": "완벽한 스페인어 실력을 얻었다는 언급은 없고, 간단한 대화 정도만 할 수 있다고 함"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "rewarding",
+          "meaning": "보람 있는"
+        },
+        {
+          "word": "challenge",
+          "meaning": "도전"
+        },
+        {
+          "word": "grammar",
+          "meaning": "문법"
+        },
+        {
+          "word": "pronunciation",
+          "meaning": "발음"
+        },
+        {
+          "word": "subtitle",
+          "meaning": "자막"
         }
       ]
     },
@@ -4772,7 +7516,9 @@
             "How to read novels",
             "How to make friends",
             "How to change colors"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "보조바퀴 없이 자전거 타는 법을 배웠음"
         },
         {
           "id": "reading-basic-q100-2",
@@ -4785,7 +7531,9 @@
             "Mixed feelings – sad about summer ending but excited about new challenges",
             "Worried and scared",
             "Indifferent"
-          ]
+          ],
+          "answer": 3,
+          "explanation": "여름이 끝나는 것은 슬프지만 새로운 도전에 대해서는 흥미롭다는 복합적인 감정"
         },
         {
           "id": "reading-basic-q100-3",
@@ -4798,7 +7546,31 @@
             "자전거 타기는 어렵다",
             "학교는 재미없다",
             "부모님의 도움 없이는 아무것도 할 수 없다"
-          ]
+          ],
+          "answer": 2,
+          "explanation": "시간이 빨리 지나가므로 매 순간을 소중히 여기고 새로운 것에 도전해야 한다는 교훈"
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "memorable",
+          "meaning": "기억에 남는"
+        },
+        {
+          "word": "accomplish",
+          "meaning": "성취하다"
+        },
+        {
+          "word": "curious",
+          "meaning": "궁금한, 호기심 있는"
+        },
+        {
+          "word": "adventure",
+          "meaning": "모험"
+        },
+        {
+          "word": "appreciate",
+          "meaning": "감사하다, 소중히 여기다"
         }
       ]
     }

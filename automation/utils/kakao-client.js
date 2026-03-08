@@ -71,8 +71,15 @@ async function getStudentList() {
 /**
  * Get recent chat messages for a specific student.
  * Returns array of { text, isImage, timestamp }
+ *
+ * 🚫 TEMPORARILY DISABLED (2026-03-02)
+ * 이유: 채팅방 진입 시 메시지가 "읽음" 처리되어 의도치 않은 읽씹이 발생함.
+ * 재개하려면 아래 throw 문을 제거하고 원래 로직의 주석을 해제하면 됩니다.
  */
 async function getChatMessages(studentName) {
+  throw new Error(`getChatMessages DISABLED: 채팅방 진입이 일시 중지되었습니다 (읽씹 방지). 학생: ${studentName}`);
+
+  /* --- 원래 로직 (비활성화) ---
   if (!page) await connect();
 
   // Click the student's chat room
@@ -108,6 +115,7 @@ async function getChatMessages(studentName) {
 
   log.info(`Got ${messages.length} messages for ${studentName}`);
   return messages;
+  --- */
 }
 
 /**

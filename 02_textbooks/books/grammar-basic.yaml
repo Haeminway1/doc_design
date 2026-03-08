@@ -1,0 +1,196 @@
+version: 2
+book:
+  id: grammar-basic
+  title: 편입영어 문법 Basic 편
+  shortTitle: 문법 Basic
+  author: Vera's Flavor
+  brand: Vera's Flavor
+  legacyStyle: grammar-basic
+  subject: grammar
+  level: basic
+  theme: grammar-teal
+pages:
+  - kind: legacy-page
+    id: structural-1-cover
+    source:
+      path: grammar/basic/cover.html
+  - kind: legacy-page
+    id: structural-2-toc
+    source:
+      path: grammar/basic/toc.html
+  - kind: legacy-page
+    id: structural-3-toc-2
+    source:
+      path: grammar/basic/toc-2.html
+  - kind: legacy-page
+    id: content-4-ch01-content-01
+    source:
+      path: grammar/basic/ch01-content-01.html
+  - kind: legacy-page
+    id: content-5-ch01-content-02
+    source:
+      path: grammar/basic/ch01-content-02.html
+  - kind: legacy-page
+    id: content-6-ch02-content-01
+    source:
+      path: grammar/basic/ch02-content-01.html
+  - kind: legacy-page
+    id: content-7-ch03-content-01
+    source:
+      path: grammar/basic/ch03-content-01.html
+  - kind: legacy-page
+    id: content-8-ch04-content-01
+    source:
+      path: grammar/basic/ch04-content-01.html
+  - kind: legacy-page
+    id: content-9-ch04-content-02
+    source:
+      path: grammar/basic/ch04-content-02.html
+  - kind: legacy-page
+    id: content-10-ch04-content-03
+    source:
+      path: grammar/basic/ch04-content-03.html
+  - kind: legacy-page
+    id: content-11-ch04-content-04
+    source:
+      path: grammar/basic/ch04-content-04.html
+  - kind: legacy-page
+    id: content-12-ch05-content-01
+    source:
+      path: grammar/basic/ch05-content-01.html
+  - kind: legacy-page
+    id: content-13-ch05-content-02
+    source:
+      path: grammar/basic/ch05-content-02.html
+  - kind: legacy-page
+    id: content-14-ch05-content-03
+    source:
+      path: grammar/basic/ch05-content-03.html
+  - kind: legacy-page
+    id: content-15-ch06-content-01
+    source:
+      path: grammar/basic/ch06-content-01.html
+  - kind: legacy-page
+    id: content-16-ch06-content-02
+    source:
+      path: grammar/basic/ch06-content-02.html
+  - kind: legacy-page
+    id: content-17-ch07-content-01
+    source:
+      path: grammar/basic/ch07-content-01.html
+  - kind: legacy-page
+    id: content-18-ch07-content-02
+    source:
+      path: grammar/basic/ch07-content-02.html
+  - kind: legacy-page
+    id: content-19-ch08-content-01
+    source:
+      path: grammar/basic/ch08-content-01.html
+  - kind: legacy-page
+    id: content-20-ch09-content-01
+    source:
+      path: grammar/basic/ch09-content-01.html
+  - kind: legacy-page
+    id: content-21-ch09-content-02
+    source:
+      path: grammar/basic/ch09-content-02.html
+  - kind: legacy-page
+    id: content-22-ch09-content-03
+    source:
+      path: grammar/basic/ch09-content-03.html
+  - kind: legacy-page
+    id: content-23-ch09-content-04
+    source:
+      path: grammar/basic/ch09-content-04.html
+  - kind: legacy-page
+    id: content-24-ch10-content-01
+    source:
+      path: grammar/basic/ch10-content-01.html
+  - kind: legacy-page
+    id: content-25-ch10-content-02
+    source:
+      path: grammar/basic/ch10-content-02.html
+  - kind: legacy-page
+    id: content-26-ch11-content-01
+    source:
+      path: grammar/basic/ch11-content-01.html
+  - kind: legacy-page
+    id: content-27-ch11-content-02
+    source:
+      path: grammar/basic/ch11-content-02.html
+  - kind: legacy-page
+    id: content-28-ch11-content-03
+    source:
+      path: grammar/basic/ch11-content-03.html
+  - kind: legacy-page
+    id: content-29-ch12-content-01
+    source:
+      path: grammar/basic/ch12-content-01.html
+  - kind: legacy-page
+    id: content-30-ch12-content-02
+    source:
+      path: grammar/basic/ch12-content-02.html
+  - kind: legacy-page
+    id: content-31-ch12-content-03
+    source:
+      path: grammar/basic/ch12-content-03.html
+  - kind: legacy-page
+    id: content-32-ch12-content-04
+    source:
+      path: grammar/basic/ch12-content-04.html
+  - kind: legacy-page
+    id: content-33-sl01-content-01
+    source:
+      path: grammar/basic/sl01-content-01.html
+  - kind: legacy-page
+    id: content-34-sl02-content-01
+    source:
+      path: grammar/basic/sl02-content-01.html
+  - kind: legacy-page
+    id: content-35-sl02-content-02
+    source:
+      path: grammar/basic/sl02-content-02.html
+  - kind: problem-set
+    id: problems-36-practice01-problems
+    layout: compact
+    source:
+      path: grammar/basic/practice01-problems.json
+  - kind: problem-set
+    id: problems-37-practice02-problems
+    layout: compact
+    source:
+      path: grammar/basic/practice02-problems.json
+  - kind: problem-set
+    id: problems-38-practice03-problems
+    layout: compact
+    source:
+      path: grammar/basic/practice03-problems.json
+  - kind: problem-set
+    id: problems-39-practice04-problems
+    layout: compact
+    source:
+      path: grammar/basic/practice04-problems.json
+  - kind: answer-grid
+    id: answers-40-practice04-problems
+    source:
+      path: grammar/basic/practice04-problems.json
+  - kind: explanations
+    id: explanations-41-practice01-problems
+    layout: compact
+    source:
+      path: grammar/basic/practice01-problems.json
+  - kind: explanations
+    id: explanations-42-practice02-problems
+    layout: compact
+    source:
+      path: grammar/basic/practice02-problems.json
+  - kind: explanations
+    id: explanations-43-practice03-problems
+    layout: compact
+    source:
+      path: grammar/basic/practice03-problems.json
+  - kind: explanations
+    id: explanations-44-practice04-problems
+    layout: compact
+    source:
+      path: grammar/basic/practice04-problems.json

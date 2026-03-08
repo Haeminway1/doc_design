@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "vera://schemas/book-manifest-v2",
+  "title": "BookManifestV2",
+  "type": "object",
+  "required": ["version", "book", "pages"],
+  "additionalProperties": false,
+  "properties": {
+    "version": {
+      "type": "integer",
+      "const": 2
+    },
+    "book": {
+      "type": "object",
+      "required": ["id", "title", "author", "subject", "level", "theme"],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "shortTitle": { "type": "string" },
+        "author": { "type": "string" },
+        "brand": { "type": "string" },
+        "legacyStyle": { "type": "string" },
+        "subject": {
+          "type": "string",
+          "enum": ["grammar", "reading", "vocabulary", "logic", "syntax"]
+        },
+        "level": {
+          "type": "string",
+          "enum": ["basic", "bridge", "intermediate", "advanced"]
+        },
+        "theme": { "type": "string" },
+        "cover": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "variant": {
+              "type": "string",
+              "enum": ["border-frame", "overlay", "minimal", "full-bleed"]
+            },
+            "mainTitle": { "type": "string" },
+            "edition": { "type": "string" }
+          }
+        }
+      }
+    },
+    "pages": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/PageEntry"
+      }
+    }
+  },
+  "$defs": {
+    "SourceRef": {
+      "type": "object",
+      "required": ["path"],
+      "additionalProperties": false,
+      "properties": {
+        "path": { "type": "string" }
+      }
+    },
+    "TocItem": {
+      "type": "object",
+      "required": ["title"],
+      "additionalProperties": false,
+      "properties": {
+        "number": { "type": "string" },
+        "group": { "type": "string" },
+        "title": { "type": "string" },
+        "page": { "type": "string" }
+      }
+    },
+    "PageEntry": {
+      "type": "object",
+      "required": ["kind"],
+      "additionalProperties": false,
+      "properties": {
+        "kind": {
+          "type": "string",
+          "enum": [
+            "cover",
+            "toc",
+            "chapter-opener",
+            "content",
+            "problem-set",
+            "passage-set",
+            "vocabulary-set",
+            "answer-grid",
+            "explanations",
+            "legacy-page"
+          ]
+        },
+        "id": { "type": "string" },
+        "title": { "type": "string" },
+        "subtitle": { "type": "string" },
+        "variant": { "type": "string" },
+        "layout": {
+          "type": "string",
+          "enum": ["default", "compact", "single-column"]
+        },
+        "columns": {
+          "type": "integer",
+          "enum": [1, 2]
+        },
+        "items": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/TocItem"
+          }
+        },
+        "range": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "integer"
+          }
+        },
+        "source": {
+          "$ref": "#/$defs/SourceRef"
+        },
+        "meta": {
+          "type": "object"
+        }
+      }
+    }
+  }
+}

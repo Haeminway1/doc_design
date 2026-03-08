@@ -15,9 +15,9 @@ const ROOT = path.resolve(__dirname, '..');
 const SOURCE = path.join(ROOT, '02_textbooks', 'source', '[편입영어]문법_bridge_part2.html');
 const DATA_DIR = path.join(ROOT, '02_textbooks', 'data', 'grammar', 'bridge');
 const CONTENT_DIR = path.join(ROOT, '02_textbooks', 'content', 'grammar', 'bridge');
-const BOOKS_DIR = path.join(ROOT, '02_textbooks', 'books');
+const LEGACY_BOOKS_DIR = path.join(ROOT, '02_textbooks', 'books_legacy');
 
-[DATA_DIR, CONTENT_DIR, BOOKS_DIR].forEach(d => fs.mkdirSync(d, { recursive: true }));
+[DATA_DIR, CONTENT_DIR, LEGACY_BOOKS_DIR].forEach(d => fs.mkdirSync(d, { recursive: true }));
 
 const CIRCLED = { '①': 1, '②': 2, '③': 3, '④': 4, '⑤': 5 };
 
@@ -142,7 +142,8 @@ $('div.page').each((i, el) => {
 
   // Check if this is a Part 1 content page
   const headerText = $el.find('.page-header span').last().text().trim();
-  if (!headerText.includes('Part 1: 의문사')) return;
+  const partHeader = $el.find('.part-header span').last().text().trim();
+  if (!headerText.includes('Part 1: 의문사') && !partHeader.includes('의문사')) return;
 
   if ($el.hasClass('no-header-footer')) return;
   if ($el.hasClass('cover-page')) return;
@@ -202,7 +203,7 @@ book:
 pages:
 ${part1Pages}`;
 
-fs.writeFileSync(path.join(BOOKS_DIR, 'grammar-bridge-ch10.yaml'), part1Yaml, 'utf8');
+fs.writeFileSync(path.join(LEGACY_BOOKS_DIR, 'grammar-bridge-ch10.yaml'), part1Yaml, 'utf8');
 console.log(`  💾 Files written: ch10-problems.json, ${part1ContentPages.length} content files, grammar-bridge-ch10.yaml`);
 
 // =============================================================================
@@ -272,7 +273,7 @@ book:
 pages:
 ${part2Pages}`;
 
-fs.writeFileSync(path.join(BOOKS_DIR, 'grammar-bridge-ch11.yaml'), part2Yaml, 'utf8');
+fs.writeFileSync(path.join(LEGACY_BOOKS_DIR, 'grammar-bridge-ch11.yaml'), part2Yaml, 'utf8');
 console.log(`  💾 Files written: ${part2ContentPages.length} content files, grammar-bridge-ch11.yaml`);
 
 console.log('\n✅ Done: 문법 Bridge Part 2 HTML extraction complete');

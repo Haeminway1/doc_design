@@ -4,8 +4,11 @@
 /* =================================================================== */
 
 /* --- 텍스트 유틸리티 --- */
-.eng-text { font-family: var(--font-eng); }
-.serif-text { font-family: var(--font-accent); }
+.eng-text {
+    font-family: var(--font-eng) !important;
+    font-style: normal !important;
+}
+.serif-text { font-family: var(--font-accent) !important; }
 .bold-text { font-weight: 700; }
 .text-center { text-align: center; }
 .text-right { text-align: right; }

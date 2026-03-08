@@ -144,6 +144,24 @@ const LAYOUT_OVERRIDES = `
   }
 }
 
+/* Cover and part-divider pages: restore fixed height for centering */
+.page.cover-page,
+.page.part-divider-page {
+  height: 297mm !important;
+  min-height: 297mm !important;
+  max-height: 297mm !important;
+  overflow: hidden !important;
+}
+@media print {
+  .page.cover-page,
+  .page.part-divider-page {
+    height: 297mm !important;
+    min-height: 297mm !important;
+    max-height: 297mm !important;
+    overflow: hidden !important;
+  }
+}
+
 /* Chapter divider page styling */
 .chapter-divider {
   display: flex;
@@ -158,13 +176,13 @@ const LAYOUT_OVERRIDES = `
   font-weight: 300;
   letter-spacing: 4px;
   text-transform: uppercase;
-  color: var(--color-deep-blue, #345C85);
+  color: var(--color-deep-blue, #1B2A4A);
   margin-bottom: 16mm;
 }
 .chapter-divider-title {
   font-size: 28pt;
   font-weight: 700;
-  color: var(--color-deep-blue, #345C85);
+  color: var(--color-deep-blue, #1B2A4A);
   margin-bottom: 8mm;
 }
 .chapter-divider-subtitle {
@@ -184,7 +202,7 @@ const LAYOUT_OVERRIDES = `
 
 code {
   font-family: 'Inter', sans-serif;
-  color: var(--color-deep-blue, #345C85);
+  color: var(--color-deep-blue, #1B2A4A);
   background-color: #f2f4f8;
   border: 1px solid var(--color-border, #EAEAEA);
   padding: 2px 6px;
@@ -206,13 +224,13 @@ code {
   gap: 12px;
   margin-bottom: 15px;
   padding-bottom: 10px;
-  border-bottom: 3px solid var(--color-deep-blue, #345C85);
+  border-bottom: 3px solid var(--color-deep-blue, #1B2A4A);
 }
 .part-number {
   font-family: 'Playfair Display', serif;
   font-size: 24pt;
   font-weight: 700;
-  color: var(--color-deep-blue, #345C85);
+  color: var(--color-deep-blue, #1B2A4A);
 }
 
 /* Fix double numbering: ol.problem-choices has browser default decimal + inline circled numbers */
@@ -407,13 +425,13 @@ function resolveCSS(book) {
   /* Colors */
   --color-white: #FFFFFF;
   --color-bg-subtle: #F7F8FA;
-  --color-text-primary: #1F2937;
+  --color-text-primary: #2D2D2D;
   --color-text-muted: #9CA3AF;
   --color-border-default: #E5E7EB;
   --color-border-strong: #D1D5DB;
-  --color-accent-primary: #2563EB;
-  --color-accent-dark: #1E3A8A;
-  --color-accent-secondary: #F59E0B;
+  --color-accent-primary: #1B2A4A;
+  --color-accent-dark: #1B2A4A;
+  --color-accent-secondary: #C5A55A;
   --color-example-bg: #F7FEE7;
   --color-example-border: #22C55E;
   /* Spacing */
@@ -615,6 +633,14 @@ function renderPassages(page, book) {
       `      <li class="vocab-item"><span class="vocab-word">${v.word}</span><span class="vocab-meaning">${v.meaning}</span></li>`
     ).join('\n');
 
+    const vocabSection = vocabItems
+      ? `    <div class="passage-vocab">
+      <h4 class="passage-vocab-title">Vocabulary</h4>
+      <ul class="vocab-list">
+${vocabItems}
+      </ul>
+    </div>` : '';
+
     const passageHtml = `  <article class="passage" data-id="${passage.id}">
     <header class="passage-header">
       <span class="passage-number">[지문 ${passage.number}]</span>
@@ -623,12 +649,7 @@ function renderPassages(page, book) {
     <div class="passage-body eng-text">
       <p>${passage.text}</p>
     </div>
-    <div class="passage-vocab">
-      <h4 class="passage-vocab-title">Vocabulary</h4>
-      <ul class="vocab-list">
-${vocabItems}
-      </ul>
-    </div>
+${vocabSection}
   </article>`;
 
     html += wrapPage(passageHtml, book);

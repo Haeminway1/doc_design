@@ -1,24 +1,38 @@
-# reading-bridge — 편입영어 독해 Bridge 편
+version: 2
 book:
-  title: "편입영어 독해 Bridge 편"
-  author: "Vera's Flavor"
-  style: reading-bridge
-  series: reading-bridge
-
+  id: reading-bridge
+  title: 편입영어 독해 Bridge 편
+  shortTitle: 독해 Bridge
+  author: Vera's Flavor
+  brand: Vera's Flavor
+  legacyStyle: reading-bridge
+  subject: reading
+  level: bridge
+  theme: sky-academic
 pages:
-  - type: structural
-    src: reading/bridge/cover.html
-  - type: structural
-    src: reading/bridge/toc.html
-  - type: passages
-    src: reading/bridge/part01-passages.json
-  - type: passages
-    src: reading/bridge/part02-passages.json
-  - type: passages
-    src: reading/bridge/part03-passages.json
-  - type: passages
-    src: reading/bridge/part04-passages.json
-  - type: passages
-    src: reading/bridge/part05-passages.json
-  - type: passages
-    src: reading/bridge/part06-passages.json
+  - kind: cover
+    id: auto-cover
+  - kind: passage-set
+    id: passages-1-part01-passages
+    source:
+      path: reading/bridge/part01-passages.json
+  - kind: passage-set
+    id: passages-2-part02-passages
+    source:
+      path: reading/bridge/part02-passages.json
+  - kind: passage-set
+    id: passages-3-part03-passages
+    source:
+      path: reading/bridge/part03-passages.json
+  - kind: passage-set
+    id: passages-4-part04-passages
+    source:
+      path: reading/bridge/part04-passages.json
+  - kind: passage-set
+    id: passages-5-part05-passages
+    source:
+      path: reading/bridge/part05-passages.json
+  - kind: passage-set
+    id: passages-6-part06-passages
+    source:
+      path: reading/bridge/part06-passages.json

@@ -1,0 +1,20 @@
+# reading-basic — 편입영어 독해 Basic 편
+book:
+  title: "편입영어 독해 Basic 편"
+  author: "Vera's Flavor"
+  template: royal-purple
+  series: reading-basic
+
+pages:
+  - type: passages
+    src: reading/basic/part01-passages.json
+  - type: passages
+    src: reading/basic/part02-passages.json
+  - type: passages
+    src: reading/basic/part03-passages.json
+  - type: passages
+    src: reading/basic/part04-passages.json
+  - type: passages
+    src: reading/basic/part05-passages.json
+  - type: passages
+    src: reading/basic/part06-passages.json

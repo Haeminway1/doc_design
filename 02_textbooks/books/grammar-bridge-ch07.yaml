@@ -1,35 +1,64 @@
-# grammar-bridge-ch07 — 문법 Bridge 특수구문
+version: 2
 book:
-  title: "문법 Bridge - 특수구문"
-  author: "Vera's Flavor"
-  style: grammar-bridge-part1
-  series: grammar-bridge
-  part: 7
-
+  id: grammar-bridge-ch07
+  title: 문법 Bridge - 특수구문
+  shortTitle: 문법 Bridge
+  author: Vera's Flavor
+  brand: Vera's Flavor
+  legacyStyle: grammar-bridge-part2
+  subject: grammar
+  level: bridge
+  theme: sky-academic
 pages:
-  - type: content
-    src: grammar/bridge/ch07-content-01.html
-  - type: content
-    src: grammar/bridge/ch07-content-02.html
-  - type: content
-    src: grammar/bridge/ch07-content-03.html
-  - type: content
-    src: grammar/bridge/ch07-content-04.html
-  - type: content
-    src: grammar/bridge/ch07-content-05.html
-  - type: content
-    src: grammar/bridge/ch07-content-06.html
-  - type: content
-    src: grammar/bridge/ch07-content-07.html
-  - type: content
-    src: grammar/bridge/ch07-content-08.html
-  - type: content
-    src: grammar/bridge/ch07-content-09.html
-  - type: problems
-    src: grammar/bridge/ch07-problems.json
-    layout: two-per-page
-  - type: answer-grid
-    src: grammar/bridge/ch07-problems.json
-  - type: explanations
-    src: grammar/bridge/ch07-problems.json
+  - kind: cover
+    id: auto-cover
+  - kind: legacy-page
+    id: content-1-ch07-content-01
+    source:
+      path: grammar/bridge/ch07-content-01.html
+  - kind: legacy-page
+    id: content-2-ch07-content-02
+    source:
+      path: grammar/bridge/ch07-content-02.html
+  - kind: legacy-page
+    id: content-3-ch07-content-03
+    source:
+      path: grammar/bridge/ch07-content-03.html
+  - kind: legacy-page
+    id: content-4-ch07-content-04
+    source:
+      path: grammar/bridge/ch07-content-04.html
+  - kind: legacy-page
+    id: content-5-ch07-content-05
+    source:
+      path: grammar/bridge/ch07-content-05.html
+  - kind: legacy-page
+    id: content-6-ch07-content-06
+    source:
+      path: grammar/bridge/ch07-content-06.html
+  - kind: legacy-page
+    id: content-7-ch07-content-07
+    source:
+      path: grammar/bridge/ch07-content-07.html
+  - kind: legacy-page
+    id: content-8-ch07-content-08
+    source:
+      path: grammar/bridge/ch07-content-08.html
+  - kind: legacy-page
+    id: content-9-ch07-content-09
+    source:
+      path: grammar/bridge/ch07-content-09.html
+  - kind: problem-set
+    id: problems-10-ch07-problems
     layout: compact
+    source:
+      path: grammar/bridge/ch07-problems.json
+  - kind: answer-grid
+    id: answers-11-ch07-problems
+    source:
+      path: grammar/bridge/ch07-problems.json
+  - kind: explanations
+    id: explanations-12-ch07-problems
+    layout: compact
+    source:
+      path: grammar/bridge/ch07-problems.json

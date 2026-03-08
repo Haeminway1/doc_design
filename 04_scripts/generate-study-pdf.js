@@ -16,10 +16,19 @@ const projectRoot = path.resolve(__dirname, '..');
 let htmlAbsPath, pdfAbsPath;
 
 if (dateStr) {
-  // 날짜별 경로: 00_tutoring/{학생이름}/output/{YYMMDD}/피드백지_{YYMMDD}.html
+  // 날짜별 경로: 00_tutoring/{학생이름}/output/{YYMMDD}/
   const dateDir = path.resolve(projectRoot, '00_tutoring', studentName, 'output', dateStr);
-  htmlAbsPath = path.resolve(dateDir, `피드백지_${dateStr}.html`);
-  pdfAbsPath = path.resolve(dateDir, `피드백지_${dateStr}.pdf`);
+  // feedback-data.json에서 과목 읽기
+  const jsonPath = path.resolve(projectRoot, '00_tutoring', studentName, 'input', dateStr, 'feedback-data.json');
+  let subject = '';
+  if (fs.existsSync(jsonPath)) {
+    try {
+      const feedbackData = JSON.parse(fs.readFileSync(jsonPath, 'utf-8'));
+      subject = feedbackData.subject || '';
+    } catch {}
+  }
+  htmlAbsPath = path.resolve(dateDir, `${studentName}_피드백지_${dateStr}_${subject}.html`);
+  pdfAbsPath = path.resolve(dateDir, `${studentName}_피드백지_${dateStr}_${subject}.pdf`);
 } else {
   // 레거시 경로 (날짜 없이)
   const studentDir = path.resolve(projectRoot, '00_tutoring', studentName, 'output');

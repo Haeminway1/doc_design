@@ -1,0 +1,50 @@
+/* =================================================================== */
+/* Grammar Teal Template — Cover Page Styles                          */
+/* 문법 Basic 표지                                                     */
+/* Vera's Document Studio                                             */
+/* =================================================================== */
+
+.cover-page {
+    background-color: #1E5F58 !important;
+    background-image: url('../../05_assets/backgrounds/background9.png') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    padding: 24mm !important;
+    position: relative !important;
+}
+
+.cover-brand {
+    font-family: var(--font-eng) !important;
+    font-size: var(--cover-brand-size) !important;
+    color: #B8E6DF !important;
+    letter-spacing: 2pt !important;
+    text-transform: uppercase !important;
+    margin-bottom: 18mm !important;
+}
+
+.cover-main-title {
+    font-size: 34pt !important;
+    font-weight: 800 !important;
+    color: #FFFFFF !important;
+    line-height: 1.1 !important;
+    margin-bottom: 6mm !important;
+}
+
+.cover-edition {
+    font-family: var(--font-eng) !important;
+    font-size: 18pt !important;
+    font-weight: 700 !important;
+    color: #E9C46A !important;
+    margin-bottom: 20mm !important;
+}
+
+.cover-author {
+    margin-top: auto !important;
+    font-size: 12pt !important;
+    color: #D4F0EC !important;
+    letter-spacing: 1.5pt !important;
+}

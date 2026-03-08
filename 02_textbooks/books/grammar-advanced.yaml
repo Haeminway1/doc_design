@@ -1,54 +1,100 @@
-# grammar-advanced — 문법 Advanced
+version: 2
 book:
-  title: "편입영어 문법 Advanced 편"
-  author: "Vera's Flavor"
-  style: grammar-advanced
-  series: grammar-advanced
-
+  id: grammar-advanced
+  title: 편입영어 문법 Advanced 편
+  shortTitle: 문법 Advanced
+  author: Vera's Flavor
+  brand: Vera's Flavor
+  legacyStyle: grammar-advanced
+  subject: grammar
+  level: advanced
+  theme: ocean-blue
 pages:
-  - type: structural
-    src: grammar/advanced/cover.html
-  - type: structural
-    src: grammar/advanced/toc.html
-  - type: structural
-    src: grammar/advanced/toc-2.html
-  - type: content
-    src: grammar/advanced/ch01-content-01.html
-  - type: content
-    src: grammar/advanced/ch01-content-02.html
-  - type: content
-    src: grammar/advanced/ch01-content-03.html
-  - type: content
-    src: grammar/advanced/ch01-content-04.html
-  - type: problems
-    src: grammar/advanced/ch01-problems.json
-    layout: three-per-page
-  - type: content
-    src: grammar/advanced/ch02-content-01.html
-  - type: content
-    src: grammar/advanced/ch02-content-02.html
-  - type: problems
-    src: grammar/advanced/ch02-problems.json
-    layout: three-per-page
-  - type: content
-    src: grammar/advanced/ch03-content-01.html
-  - type: content
-    src: grammar/advanced/ch03-content-02.html
-  - type: problems
-    src: grammar/advanced/ch03-problems.json
-    layout: three-per-page
-  - type: content
-    src: grammar/advanced/ch04-content-01.html
-  - type: content
-    src: grammar/advanced/ch04-content-02.html
-  - type: problems
-    src: grammar/advanced/ch04-problems.json
-    layout: three-per-page
-  - type: answer-grid
-    src: grammar/advanced/ch01-problems.json
-  - type: answer-grid
-    src: grammar/advanced/ch02-problems.json
-  - type: answer-grid
-    src: grammar/advanced/ch03-problems.json
-  - type: answer-grid
-    src: grammar/advanced/ch04-problems.json
+  - kind: legacy-page
+    id: structural-1-cover
+    source:
+      path: grammar/advanced/cover.html
+  - kind: legacy-page
+    id: structural-2-toc
+    source:
+      path: grammar/advanced/toc.html
+  - kind: legacy-page
+    id: structural-3-toc-2
+    source:
+      path: grammar/advanced/toc-2.html
+  - kind: legacy-page
+    id: content-4-ch01-content-01
+    source:
+      path: grammar/advanced/ch01-content-01.html
+  - kind: legacy-page
+    id: content-5-ch01-content-02
+    source:
+      path: grammar/advanced/ch01-content-02.html
+  - kind: legacy-page
+    id: content-6-ch01-content-03
+    source:
+      path: grammar/advanced/ch01-content-03.html
+  - kind: legacy-page
+    id: content-7-ch01-content-04
+    source:
+      path: grammar/advanced/ch01-content-04.html
+  - kind: problem-set
+    id: problems-8-ch01-problems
+    layout: compact
+    source:
+      path: grammar/advanced/ch01-problems.json
+  - kind: legacy-page
+    id: content-9-ch02-content-01
+    source:
+      path: grammar/advanced/ch02-content-01.html
+  - kind: legacy-page
+    id: content-10-ch02-content-02
+    source:
+      path: grammar/advanced/ch02-content-02.html
+  - kind: problem-set
+    id: problems-11-ch02-problems
+    layout: compact
+    source:
+      path: grammar/advanced/ch02-problems.json
+  - kind: legacy-page
+    id: content-12-ch03-content-01
+    source:
+      path: grammar/advanced/ch03-content-01.html
+  - kind: legacy-page
+    id: content-13-ch03-content-02
+    source:
+      path: grammar/advanced/ch03-content-02.html
+  - kind: problem-set
+    id: problems-14-ch03-problems
+    layout: compact
+    source:
+      path: grammar/advanced/ch03-problems.json
+  - kind: legacy-page
+    id: content-15-ch04-content-01
+    source:
+      path: grammar/advanced/ch04-content-01.html
+  - kind: legacy-page
+    id: content-16-ch04-content-02
+    source:
+      path: grammar/advanced/ch04-content-02.html
+  - kind: problem-set
+    id: problems-17-ch04-problems
+    layout: compact
+    source:
+      path: grammar/advanced/ch04-problems.json
+  - kind: answer-grid
+    id: answers-18-ch01-problems
+    source:
+      path: grammar/advanced/ch01-problems.json
+  - kind: answer-grid
+    id: answers-19-ch02-problems
+    source:
+      path: grammar/advanced/ch02-problems.json
+  - kind: answer-grid
+    id: answers-20-ch03-problems
+    source:
+      path: grammar/advanced/ch03-problems.json
+  - kind: answer-grid
+    id: answers-21-ch04-problems
+    source:
+      path: grammar/advanced/ch04-problems.json

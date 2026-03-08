@@ -6,7 +6,7 @@
  * Usage: node 04_scripts/generate-feedback-from-json.js <학생이름> <YYMMDD>
  *
  * Input:  00_tutoring/<학생이름>/input/<YYMMDD>/feedback-data.json
- * Output: 00_tutoring/<학생이름>/output/<YYMMDD>/피드백지_<YYMMDD>.html
+ * Output: 00_tutoring/<학생이름>/output/<YYMMDD>/<학생이름>_피드백지_<YYMMDD>_<과목>.html
  */
 
 const fs = require('fs');
@@ -27,7 +27,6 @@ const projectRoot = path.resolve(__dirname, '..');
 const inputDir = path.join(projectRoot, '00_tutoring', studentName, 'input', dateStr);
 const outputDir = path.join(projectRoot, '00_tutoring', studentName, 'output', dateStr);
 const jsonPath = path.join(inputDir, 'feedback-data.json');
-const htmlPath = path.join(outputDir, `피드백지_${dateStr}.html`);
 
 if (!fs.existsSync(jsonPath)) {
   console.error(`JSON 파일 없음: ${jsonPath}`);
@@ -37,8 +36,14 @@ if (!fs.existsSync(jsonPath)) {
 fs.mkdirSync(outputDir, { recursive: true });
 
 // ─── Read Data ──────────────────────────────────────────────────────────────
-const data = JSON.parse(fs.readFileSync(jsonPath, 'utf-8'));
-console.log(`[${studentName}] JSON 로드 완료: ${data.wrongAnswers.length}개 오답`);
+const { normalizeFeedbackData } = require('./normalize-feedback-data');
+const rawData = JSON.parse(fs.readFileSync(jsonPath, 'utf-8'));
+const data = normalizeFeedbackData(rawData);
+console.log(`[${studentName}] JSON 로드 + 정규화 완료: ${data.wrongAnswers.length}개 오답`);
+
+// ─── Output filename: 학생이름_피드백지_날짜_과목.html ─────────────────────
+const subject = data.subject || '';
+const htmlPath = path.join(outputDir, `${studentName}_피드백지_${dateStr}_${subject}.html`);
 
 // ─── Textbook Data Enrichment ────────────────────────────────────────────────
 if (data.textbookDataHint) {
@@ -92,6 +97,179 @@ function formatDate(yymmdd) {
 }
 
 const CIRCLE_NUMS = ['①', '②', '③', '④', '⑤'];
+
+function toCircleChoiceToken(value) {
+  if (value == null) return '';
+  const raw = String(value).trim();
+  if (!raw) return '';
+  const circle = raw.match(/[①②③④⑤]/);
+  if (circle) return circle[0];
+  const num = raw.match(/(^|[^0-9])([1-5])([^0-9]|$)/);
+  if (num) return CIRCLE_NUMS[Number(num[2]) - 1] || raw;
+  return raw;
+}
+
+function normalizeChoiceToken(value) {
+  const circle = toCircleChoiceToken(value);
+  if (circle) return circle;
+  return value == null ? '' : String(value).trim();
+}
+
+function stripLeadingChoiceToken(text) {
+  return String(text)
+    .replace(/^\s*(?:[①②③④⑤⑥⑦⑧⑨⑩ⓐⓑⓒⓓⓔ]|\(?\d+\)?[.)]?)\s*/, '')
+    .trim();
+}
+
+function classifyQuestionDomain(wa) {
+  const type = String(wa?.type || '').toLowerCase();
+  const qtext = String(wa?.question || '').toLowerCase();
+  const readingHints = ['독해', '함축', '주제', '제목', '빈칸', '순서', '삽입', '요약', '지문', '의미'];
+  const grammarHints = ['문법', '어법', '구문', '수동태', '시제', '분사', '준동사', '동명사', 'to부정사', '관계사'];
+
+  // 우선순위: 문제 "유형(type)"을 질문 문장(question)보다 신뢰
+  const typeHasGrammar = grammarHints.some(k => type.includes(k));
+  const typeHasReading = readingHints.some(k => type.includes(k));
+  if (typeHasGrammar && !typeHasReading) return 'grammar';
+  if (typeHasReading && !typeHasGrammar) return 'reading';
+  if (typeHasGrammar && typeHasReading) return 'grammar';
+
+  const questionHasGrammar = grammarHints.some(k => qtext.includes(k));
+  const questionHasReading = readingHints.some(k => qtext.includes(k));
+  if (questionHasGrammar && !questionHasReading) return 'grammar';
+  if (questionHasReading && !questionHasGrammar) return 'reading';
+  if (questionHasGrammar && questionHasReading) return 'grammar';
+
+  return 'other';
+}
+
+/**
+ * explanation 텍스트 마커 → HTML 변환
+ *
+ * 입력 형식 (Agent 3 출력):
+ *   1. 한줄요약 (concept-box): 내용...
+ *   2. 전체해석 (grammar-block): 내용...
+ *   3. 핵심키워드 테이블: Positive - ...; Negative - ...
+ *   4. 구조 및 방향성 (tip-box): 내용...
+ *   5. 선지분석: answer-box (②): 내용... warning-box (①): 내용...
+ *
+ * 출력: 각 마커를 해당 CSS 클래스의 <div>로 래핑
+ */
+function parseExplanationToHtml(text) {
+  if (!text) return '';
+  const raw = String(text).replace(/\r\n/g, '\n').trim();
+  if (!raw) return '';
+  // 이미 HTML 태그가 있으면 그대로 반환
+  if (/<div\s+class=/.test(raw)) return raw;
+
+  let html = '';
+  const numberedSections = raw.match(/(?:^|\n)\s*[1-5]\.\s*[\s\S]*?(?=(?:\n\s*[1-5]\.\s*)|$)/g);
+  const sections = numberedSections && numberedSections.length > 0
+    ? numberedSections
+    : raw.split(/\n{2,}/);
+
+  for (const section of sections) {
+    const trimmed = section.trim();
+    if (!trimmed) continue;
+
+    // 1. 한줄요약 (concept-box):
+    if (/^\d+\.\s*한줄\s*요약(?:\s*\(concept-box\))?\s*[:：-]/i.test(trimmed)) {
+      const content = trimmed.replace(/^\d+\.\s*한줄\s*요약(?:\s*\(concept-box\))?\s*[:：-]\s*/i, '');
+      html += `\n<div class="concept-box"><span class="concept-label">한줄 요약</span>\n<p>${esc(content)}</p>\n</div>`;
+      continue;
+    }
+
+    // 2. 전체해석 (grammar-block):
+    if (/^\d+\.\s*전체\s*해석(?:\s*\(grammar-block\))?\s*[:：-]/i.test(trimmed)) {
+      const content = trimmed.replace(/^\d+\.\s*전체\s*해석(?:\s*\(grammar-block\))?\s*[:：-]\s*/i, '');
+      html += `\n<div class="grammar-block">${esc(content)}</div>`;
+      continue;
+    }
+
+    // 3. 핵심키워드 테이블:
+    if (/^\d+\.\s*핵심\s*키워드\s*테이블\s*[:：]/i.test(trimmed)) {
+      const content = trimmed.replace(/^\d+\.\s*핵심\s*키워드\s*테이블\s*[:：]\s*/i, '');
+      let positive = '';
+      let negative = '';
+      const lines = content.split('\n').map(l => l.trim()).filter(Boolean);
+      const row = lines.find(l => l.startsWith('|') && !/^\|\s*[-:]/.test(l) && !/positive/i.test(l));
+      if (row) {
+        const cells = row.split('|').map(c => c.trim()).filter(Boolean);
+        positive = cells[0] || '';
+        negative = cells[1] || '';
+      } else {
+        const posMatch = content.match(/Positive\s*[-–—:：]\s*([^;\n]*)/i);
+        const negMatch = content.match(/Negative\s*[-–—:：]\s*(.*)/i);
+        positive = posMatch ? posMatch[1].trim().replace(/[.;]$/, '') : '';
+        negative = negMatch ? negMatch[1].trim().replace(/[.;]$/, '') : '';
+      }
+      html += `\n<div class="tip-box" style="page-break-inside:avoid;">`;
+      html += `\n  <span class="tip-label">핵심 키워드</span>`;
+      if (positive) html += `\n  <p><strong style="color:#2f855a;">Positive:</strong> ${esc(positive)}</p>`;
+      if (negative) html += `\n  <p><strong style="color:#e53e3e;">Negative:</strong> ${esc(negative)}</p>`;
+      if (!positive && !negative) html += `\n  <p>${esc(content)}</p>`;
+      html += `\n</div>`;
+      continue;
+    }
+
+    // 4. 구조 및 방향성 (tip-box):
+    if (/^\d+\.\s*구조\s*(및|&)\s*방향성(?:\s*\(tip-box\))?\s*[:：]/i.test(trimmed)) {
+      const content = trimmed.replace(/^\d+\.\s*구조\s*(및|&)\s*방향성(?:\s*\(tip-box\))?\s*[:：]\s*/i, '');
+      const lines = content.split('\n').map(l => l.trim()).filter(Boolean);
+      const rows = lines
+        .filter(l => l.startsWith('|'))
+        .map(l => l.split('|').map(c => c.trim()).filter(Boolean))
+        .filter(cells =>
+          cells.length >= 2 &&
+          !cells.every(c => /^[-:]+$/.test(c)) &&
+          !/문장|기능|방향성/.test(cells.join(' '))
+        );
+      html += `\n<div class="tip-box" style="page-break-inside:avoid;">`;
+      html += `\n  <span class="tip-label">구조 및 방향성</span>`;
+      if (rows.length > 0) {
+        html += `\n  <table><thead><tr><th>문장</th><th>기능</th><th>방향성</th></tr></thead><tbody>`;
+        for (const cells of rows) {
+          html += `\n    <tr><td>${esc(cells[0] || '')}</td><td>${esc(cells[1] || '')}</td><td>${esc(cells[2] || '')}</td></tr>`;
+        }
+        html += `\n  </tbody></table>`;
+      } else {
+        const sentences = content.split(/\.\s+(?=[가-힣A-Z])/).filter(Boolean);
+        for (const s of sentences) {
+          const clean = s.trim().replace(/\.$/, '');
+          if (clean) html += `\n  <p>${esc(clean)}.</p>`;
+        }
+      }
+      html += `\n</div>`;
+      continue;
+    }
+
+    // 5. 선지분석: answer-box / warning-box 혼합
+    if (/^\d+\.\s*선지\s*분석\s*[:：]/i.test(trimmed)) {
+      const content = trimmed.replace(/^\d+\.\s*선지\s*분석\s*[:：]\s*/i, '');
+      const boxRegex = /(answer-box|warning-box)\s*\(([^)]*)\)\s*[:：-]\s*([\s\S]*?)(?=(?:answer-box|warning-box)\s*\(|$)/gi;
+      let found = false;
+      let m;
+      while ((m = boxRegex.exec(content)) !== null) {
+        found = true;
+        const kind = m[1].toLowerCase();
+        const label = toCircleChoiceToken(m[2]) || m[2].trim();
+        const body = m[3].trim().replace(/\s+/g, ' ');
+        if (kind === 'answer-box') {
+          html += `\n<div class="answer-box"><span class="answer-label">정답 ${esc(label)}</span>\n<p>${esc(body)}</p>\n</div>`;
+        } else {
+          html += `\n<div class="warning-box"><span class="warning-label">오답 ${esc(label)}</span>\n<p>${esc(body)}</p>\n</div>`;
+        }
+      }
+      if (!found) html += `\n<p>${esc(content)}</p>`;
+      continue;
+    }
+
+    // 기타: 일반 단락
+    html += `\n<p>${esc(trimmed).replace(/\n/g, '<br>')}</p>`;
+  }
+
+  return html || `<p>${esc(raw).replace(/\n/g, '<br>')}</p>`;
+}
 
 function severityBadge(level) {
   const map = {
@@ -275,6 +453,12 @@ function getCSS() {
   }
   .warning-box .warning-label {
     font-weight: 700; color: #e53e3e !important; font-size: 8.5pt;
+    display: block; margin-bottom: 3px;
+  }
+
+  /* ===== ANSWER LABEL ===== */
+  .answer-box .answer-label {
+    font-weight: 700; color: #2f855a !important; font-size: 8.5pt;
     display: block; margin-bottom: 3px;
   }
 
@@ -479,6 +663,8 @@ function buildWrongAnswersList(d) {
 </div>`;
 
   d.wrongAnswers.forEach((wa, i) => {
+    const selectedLabel = normalizeChoiceToken(wa.selected);
+    const correctLabel = normalizeChoiceToken(wa.correct);
     html += `
 <div class="problem-card">
   <div class="problem-header">
@@ -492,8 +678,8 @@ function buildWrongAnswersList(d) {
     <p>${esc(wa.question)}</p>
   </div>
   <div style="margin:8px 0; font-size:9.5pt;">
-    <span class="hl-wrong">학생 답: ${esc(wa.selected)}</span> &rarr;
-    <span class="hl-correct">정답: ${esc(wa.correct)}</span>
+    <span class="hl-wrong">학생 답: ${esc(selectedLabel || wa.selected)}</span> &rarr;
+    <span class="hl-correct">정답: ${esc(correctLabel || wa.correct)}</span>
   </div>
 </div>`;
   });
@@ -508,10 +694,17 @@ function buildExplanations(d) {
   해설 파트
 </div>`;
 
+  let prevDomain = null;
   d.wrongAnswers.forEach((wa, i) => {
+    const domain = classifyQuestionDomain(wa);
     // 각 문제 해설은 새 페이지에서 시작
     if (i > 0) {
       html += `\n<div class="page-break-before"></div>`;
+    }
+    if (domain !== prevDomain && domain !== 'other') {
+      const title = domain === 'reading' ? '독해 해설' : '문법/구문 해설';
+      html += `\n<h3 style="margin:0 0 10px 0; color:#2c6975;">${title}</h3>`;
+      prevDomain = domain;
     }
     // 소제목
     html += `\n<h2>${wa.q}번 — ${esc(wa.type)}</h2>`;
@@ -534,22 +727,24 @@ function buildExplanations(d) {
 
     if (wa.choices && wa.choices.length > 0) {
       html += `<div class="choices-list">`;
+      const normalizedCorrect = normalizeChoiceToken(wa.correct);
+      const normalizedSelected = normalizeChoiceToken(wa.selected);
       wa.choices.forEach((c, j) => {
         const num = CIRCLE_NUMS[j] || `(${j + 1})`;
-        const isCorrect = wa.correct === num;
-        const isSelected = wa.selected === num;
+        const isCorrect = normalizedCorrect === num;
+        const isSelected = normalizedSelected === num;
         let cls = '';
         if (isCorrect) cls = ' class="choice-correct"';
         else if (isSelected) cls = ' class="choice-wrong"';
         // Strip leading circle number if choice text already contains one
-        const choiceText = String(c).replace(/^[①②③④⑤⑥⑦⑧⑨⑩ⓐⓑⓒⓓⓔ]\s*/, '');
+        const choiceText = stripLeadingChoiceToken(c);
         html += `\n  <div class="choice-item"${cls}>${num} ${esc(choiceText)}</div>`;
       });
       html += `\n</div>`;
     }
 
-    // 해설 HTML (5단계 분석 등 — JSON에서 직접 삽입)
-    html += `\n${wa.explanation}`;
+    // 해설 HTML (5단계 분석 등 — 텍스트 마커를 HTML 컴포넌트로 변환)
+    html += parseExplanationToHtml(wa.explanation);
 
     // 학생 답 분석
     if (wa.studentAnalysis) {

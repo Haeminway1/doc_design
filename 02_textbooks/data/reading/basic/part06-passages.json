@@ -8,7 +8,37 @@
       "title": "",
       "text": "On many social-media platforms, algorithms curate content based on the traces you leave: every like, share, and pause becomes data. At first this feels designed just for you, a friendly concierge who knows your taste. Yet the selections grow narrower with each interaction, shutting out unfamiliar viewpoints. Over days and months you forget how much of the world lies outside that bright rectangle. Researchers call this the “echo-chamber” effect, because your own opinions bounce back at you, louder every time. The same sentence from a stranger appears so often that it starts to feel like statistical truth. In reality the sample is hopelessly biased: all you are hearing is yourself. Each digital echo returns, ________ the belief that produced it.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-1",
+          "number": "1",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "diluting",
+            "reinforcing",
+            "disregarding",
+            "postponing",
+            "regulating"
+          ],
+          "answer": 2,
+          "explanation": "메아리처럼 자신의 의견이 되돌아오므로 믿음을 '강화'함."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "curate",
+          "meaning": "큐레이션하다, 엄선하다"
+        },
+        {
+          "word": "concierge",
+          "meaning": "콘시어지, 안내인"
+        },
+        {
+          "word": "biased",
+          "meaning": "편향된"
+        }
+      ]
     },
     {
       "id": "reading-basic-p2",
@@ -16,7 +46,37 @@
       "title": "",
       "text": "Many professionals equate a swollen calendar with productivity, but the two are not identical. People proudly recount how many meetings they attended, e-mails they answered, and notifications they dismissed before breakfast. Strangely, the most mission-critical task often remains untouched at the end of such frantic days. Psychologists label the phenomenon “structured procrastination”: the mind seeks busy work to avoid the truly important. Because the small duties provide an immediate sense of accomplishment, they trick the brain into believing progress has been made. Meanwhile, the high-impact project gathers dust, its deadline inching closer in silence. The busier you feel, the easier it becomes to justify postponement. Paradoxically, activity can camouflage ________.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-2",
+          "number": "2",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "indifference",
+            "avoidance",
+            "expertise",
+            "resilience",
+            "curiosity"
+          ],
+          "answer": 2,
+          "explanation": "바쁜 활동은 중요한 일을 '회피'하기 위한 위장."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "equate",
+          "meaning": "동일시하다"
+        },
+        {
+          "word": "frantic",
+          "meaning": "정신없이 서두는"
+        },
+        {
+          "word": "camouflage",
+          "meaning": "위장하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p3",
@@ -24,7 +84,37 @@
       "title": "",
       "text": "Shoppers often reach for a green-tinted bag bearing the word “biodegradable” and feel virtuous. The term suggests that the plastic will harmlessly melt back into nature, but chemistry is less forgiving. Many so-called biodegradable plastics only fragment into smaller pieces when exposed to sunlight. These micro-particles drift into rivers, then oceans, where they are ingested by plankton and fish. The fragments travel up the food chain, eventually landing on our dinner plates. Every grocery purchase, therefore, becomes part of a planetary circulation system we rarely notice. Environmental scientists warn that the reassuring label may actually increase consumption. The promise of effortless disposal can create ________, dulling the motivation to reduce single-use plastics in the first place.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-3",
+          "number": "3",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "urgency",
+            "complacency",
+            "scarcity",
+            "synergy",
+            "transparency"
+          ],
+          "answer": 2,
+          "explanation": "쉬운 폐기 약속은 '현실 안주'를 만들어 문제의식을 둔화시킴."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "virtuous",
+          "meaning": "덕이 높은, 고결한"
+        },
+        {
+          "word": "fragment",
+          "meaning": "파편이 되다"
+        },
+        {
+          "word": "complacency",
+          "meaning": "현실 안주, 자기만족"
+        }
+      ]
     },
     {
       "id": "reading-basic-p4",
@@ -32,7 +122,37 @@
       "title": "",
       "text": "College students preparing for exams often reread a chapter the night before the test, convinced that repetition equals mastery. The lines do appear familiar, and familiarity feels safe. Cognitive studies, however, show that massed rereading produces shallow traces in long-term memory. Spacing study sessions several days apart leads to stronger neural connections. When time intervenes, the brain must reconstruct the concept, an effortful process that deepens encoding. The illusion created by immediate repetition seduces learners into closing the book too early. They misinterpret smooth reading for retention. Ironically, the comfort of familiarity can be a predictor of ________ on the actual exam.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-4",
+          "number": "4",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "uncertainty",
+            "proficiency",
+            "failure",
+            "curiosity",
+            "improvement"
+          ],
+          "answer": 3,
+          "explanation": "친숙함의 착각은 실제 시험에서의 '실패'를 예측하게 함."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "massed",
+          "meaning": "집중된"
+        },
+        {
+          "word": "intervene",
+          "meaning": "개입하다"
+        },
+        {
+          "word": "retention",
+          "meaning": "보유, 기억"
+        }
+      ]
     },
     {
       "id": "reading-basic-p5",
@@ -40,7 +160,37 @@
       "title": "",
       "text": "Wind turbines spinning over a sunlit ridge symbolize a fossil-free future. Yet even the windiest valley can experience calm days, and solar panels nap beneath thick clouds. Energy analysts caution that renewables must be paired with storage or backup sources. Otherwise, the grid could falter precisely when hospitals and data centers need power most. Batteries, pumped-hydro reservoirs, and smart demand management each solve part of the puzzle. None is trivial to fund or deploy at scale, but postponing them risks outages that erode public trust. Celebrating the rapid growth of green generation is justified, but forgetting the need for resilience would leave the transition ________.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-5",
+          "number": "5",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "incomplete",
+            "economical",
+            "accelerated",
+            "guaranteed",
+            "obsolete"
+          ],
+          "answer": 1,
+          "explanation": "저장/백업 없이 재생에너지로의 전환은 '미완성'임."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "falter",
+          "meaning": "흔들리다, 불안정해지다"
+        },
+        {
+          "word": "trivial",
+          "meaning": "사소한"
+        },
+        {
+          "word": "resilience",
+          "meaning": "회복력"
+        }
+      ]
     },
     {
       "id": "reading-basic-p6",
@@ -48,7 +198,37 @@
       "title": "",
       "text": "In a lecture hall, it is easy to spot the student scrolling through social media; in virtual classrooms, distraction hides behind every browser tab. Studies tracking keyboard activity reveal that learners switch windows every forty seconds on average. Each switch carries a cognitive cost: attention wanders, and working memory must reload the topic when it returns. Participants report feeling efficient, yet post-test scores tell another story. Multitasking particularly hampers the transfer of complex concepts that require sustained focus. Ironically, the freedom afforded by online platforms can undermine the very flexibility they promise. Without deliberate self-regulation, digital learning can become a sophisticated form of ________.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-6",
+          "number": "6",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "exploration",
+            "escapism",
+            "collaboration",
+            "mentorship",
+            "automation"
+          ],
+          "answer": 2,
+          "explanation": "디지털 학습은 집중 대신 '현실 도피'의 수단이 될 수 있음."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "hamper",
+          "meaning": "방해하다"
+        },
+        {
+          "word": "self-regulation",
+          "meaning": "자기 조절"
+        },
+        {
+          "word": "escapism",
+          "meaning": "현실 도피"
+        }
+      ]
     },
     {
       "id": "reading-basic-p7",
@@ -56,7 +236,37 @@
       "title": "",
       "text": "Ask a painter to create anything and she may stare at a blank canvas for days; give her only three colors and a single brush and new ideas often bloom. Innovation researchers have observed this paradox across domains from product design to jazz improvisation. Constraints eliminate infinite possibilities, allowing the mind to dive deeper into a narrower pool. The process is akin to sculpting: removing marble reveals form. When boundaries are absent, choices multiply until decision fatigue sets in. Conversely, a rule as simple as “no digital instruments” can spark novel soundscapes. In this sense, limitation is not the enemy of imagination but a catalyst. A small cage can provide the necessary friction to ________ creativity.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-7",
+          "number": "7",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "stifle",
+            "ignite",
+            "conceal",
+            "imitate",
+            "postpone"
+          ],
+          "answer": 2,
+          "explanation": "제약은 오히려 창의성에 '불을 붙이는' 촉매제 역할을 함."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "constraint",
+          "meaning": "제약"
+        },
+        {
+          "word": "akin to",
+          "meaning": "~와 유사한"
+        },
+        {
+          "word": "catalyst",
+          "meaning": "촉매제"
+        }
+      ]
     },
     {
       "id": "reading-basic-p8",
@@ -64,7 +274,37 @@
       "title": "",
       "text": "After a restless night, minor annoyances—the barking dog, the slow elevator—feel like personal insults. Neuroscientists trace this irritability to the amygdala, the brain’s alarm center, which becomes more reactive when sleep-deprived. Meanwhile, the prefrontal cortex, responsible for emotional regulation, reduces its inhibitory control. The result is a hair-trigger temperament that misreads neutral faces as hostile. Chronic sleep debt compounds the problem, elevating baseline stress hormones and weakening immune defenses. Yet many adults brag about functioning on five hours, equating fatigue with dedication. They do not realize that their frayed patience taxes colleagues and family alike. A single full night of rest can restore balance, underscoring that sleep is a prerequisite, not a luxury, for ________ social interaction.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-8",
+          "number": "8",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "volatile",
+            "equitable",
+            "harmonious",
+            "superficial",
+            "competitive"
+          ],
+          "answer": 3,
+          "explanation": "수면 부족은 짜증을 유발하므로, 충분한 수면은 '조화로운' 상호작용의 전제조건."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "irritability",
+          "meaning": "과민함, 짜증"
+        },
+        {
+          "word": "inhibitory",
+          "meaning": "억제성의"
+        },
+        {
+          "word": "frayed",
+          "meaning": "해어진, 신경이 곤두선"
+        }
+      ]
     },
     {
       "id": "reading-basic-p9",
@@ -72,7 +312,37 @@
       "title": "",
       "text": "City planners often justify planting street trees by citing reduced air pollution and lower summer temperatures. These benefits are measurable, but residents may notice an even subtler change: a lift in mood during daily commutes. Surveys show that exposure to greenery correlates with lower levels of anxiety and rumination. MRI scans support the self-reports, revealing decreased activity in brain regions linked to depressive thought loops after a walk in a leafy neighborhood. Scientists suspect that the fractal patterns of leaves engage the eye in gentle, restorative ways. From a policy standpoint, a tree costs less than a counseling session. Investing in urban canopy is therefore both environmentally and psychologically prudent. Failing to consider mental health outcomes would mean undervaluing trees’ most human ________.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-9",
+          "number": "9",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "liability",
+            "obstacle",
+            "dividend",
+            "alternative",
+            "metaphor"
+          ],
+          "answer": 3,
+          "explanation": "정신 건강 개선 효과는 나무가 주는 인간적인 '이익(배당)'."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "rumination",
+          "meaning": "반추(되새김 생각)"
+        },
+        {
+          "word": "restorative",
+          "meaning": "회복시키는"
+        },
+        {
+          "word": "dividend",
+          "meaning": "배당금, 이익"
+        }
+      ]
     },
     {
       "id": "reading-basic-p10",
@@ -80,7 +350,37 @@
       "title": "",
       "text": "In scientific publishing, positive results travel faster than negative ones. Journals prefer stories where the experimental drug works, the theory predicts perfectly, or the survey unveils a dramatic trend. Studies that find no effect languish in file drawers, unseen by peers. This imbalance can mislead future researchers who base their hypotheses on what appears to be a consistent success record. When ten labs test a therapy and only the two successful trials are printed, the literature quietly exaggerates efficacy. Policymakers and investors then allocate resources on incomplete evidence. Critics argue that until null findings become publishable, the edifice of knowledge will rest on selectively reported bricks. The prestige economy of academia thus unintentionally nurtures ________.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-10",
+          "number": "10",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "rigor",
+            "confidence",
+            "distortion",
+            "consensus",
+            "serendipity"
+          ],
+          "answer": 3,
+          "explanation": "긍정적 결과만 출판하는 경향은 지식의 '왜곡'을 낳음."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "languish",
+          "meaning": "시들해지다"
+        },
+        {
+          "word": "edifice",
+          "meaning": "(지식 등의) 체계, 건물"
+        },
+        {
+          "word": "distortion",
+          "meaning": "왜곡"
+        }
+      ]
     },
     {
       "id": "reading-basic-p11",
@@ -88,7 +388,37 @@
       "title": "",
       "text": "During the pandemic, many employees discovered that video meetings demand a different kind of attention than face-to-face discussions. Participants must stare directly at a lens to appear engaged, yet also monitor a grid of tiny rectangles for subtle facial cues. Psychologists dub this posture “continuous partial gaze,” a cognitively expensive stance seldom required in physical rooms. Over hours, the unbroken eye contact leads to muscle strain and heightened self-consciousness. At the same time, the ever-present mute button forces speakers to over-enunciate, boosting vocal fatigue. Unlike an office table, a screen offers no peripheral vision for quick mental breaks; every glance to a second monitor feels like a public betrayal. Ironically, the technology meant to replicate presence can amplify social pressure. Consequently, multiple studies link prolonged video conferencing with cognitive ________.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-11",
+          "number": "11",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "alertness",
+            "overload",
+            "resilience",
+            "eagerness",
+            "nostalgia"
+          ],
+          "answer": 2,
+          "explanation": "화상 회의의 여러 피로 요인은 '인지적 과부하'를 유발."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "dub",
+          "meaning": "별명을 붙이다"
+        },
+        {
+          "word": "over-enunciate",
+          "meaning": "과장해서 발음하다"
+        },
+        {
+          "word": "overload",
+          "meaning": "과부하"
+        }
+      ]
     },
     {
       "id": "reading-basic-p12",
@@ -96,7 +426,37 @@
       "title": "",
       "text": "Early investors in cryptocurrency often describe the thrill of watching prices double overnight. Market apps flash celebratory fireworks, and online forums overflow with tales of spontaneous wealth. Yet each upward spike lures more speculators whose fear of missing out inflates demand further. Economists warn that feedback loops of emotion rather than fundamentals drive many of these rallies. When values plunge, newcomers exit en masse, leaving late buyers with steep losses. The pattern repeats with new coins because the memory of risk fades faster than the lure of easy gain. The cheerful digital confetti can therefore create an illusion of financial ________ that the underlying volatility does not support.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-12",
+          "number": "12",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "security",
+            "liquidity",
+            "anonymity",
+            "taxation",
+            "philanthropy"
+          ],
+          "answer": 1,
+          "explanation": "변동성 높은 시장의 축하 연출은 재정적 '안정'에 대한 착각을 만듦."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "spontaneous",
+          "meaning": "자발적인, 즉흥적인"
+        },
+        {
+          "word": "en masse",
+          "meaning": "떼를 지어, 집단으로"
+        },
+        {
+          "word": "volatility",
+          "meaning": "변동성"
+        }
+      ]
     },
     {
       "id": "reading-basic-p13",
@@ -104,7 +464,37 @@
       "title": "",
       "text": "Seawater absorbs roughly a quarter of the carbon dioxide humans release each year. This uptake slows atmospheric warming, but it alters ocean chemistry, lowering pH in a process called acidification. Coral skeletons built from calcium carbonate dissolve more easily under acidic conditions, weakening entire reef structures. Fish larvae that rely on the reefs for shelter struggle to survive, disrupting food webs that support millions of people. The chain reaction illustrates how one invisible chemical shift can cascade through visible ecosystems. Marine biologists now monitor shell thickness in mollusks as a proxy for overall health. Ignoring the subtle chemical signals would mean overlooking a threat destined to ________ the decline of coastal biodiversity.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-13",
+          "number": "13",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "reverse",
+            "accelerate",
+            "disguise",
+            "localize",
+            "trivialize"
+          ],
+          "answer": 2,
+          "explanation": "해양 산성화는 연쇄 반응을 통해 생물다양성 감소를 '가속화'함."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "uptake",
+          "meaning": "흡수"
+        },
+        {
+          "word": "mollusk",
+          "meaning": "연체동물"
+        },
+        {
+          "word": "proxy",
+          "meaning": "대리, 지표"
+        }
+      ]
     },
     {
       "id": "reading-basic-p14",
@@ -112,7 +502,37 @@
       "title": "",
       "text": "Community organizers often recruit volunteers by emphasizing altruism, yet surveys show personal benefit is an equally powerful motivator. People who lend their skills at food banks or tutoring programs report heightened life satisfaction weeks later. Neurologists attribute the glow to increased activity in reward circuits similar to those triggered by monetary bonuses. Even small acts, such as delivering groceries to an elderly neighbor, can spark the effect. Crucially, the boost persists longer than the pleasure of buying material goods. This suggests that time, not money, may be the more efficient currency of happiness. Paradoxically, serving others becomes a reliable pathway to one’s own emotional ________.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-14",
+          "number": "14",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "exhaustion",
+            "turmoil",
+            "well-being",
+            "detachment",
+            "indifference"
+          ],
+          "answer": 3,
+          "explanation": "타인을 돕는 행위는 역설적으로 자신의 정서적 '행복'으로 이어짐."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "altruism",
+          "meaning": "이타주의"
+        },
+        {
+          "word": "attribute to",
+          "meaning": "~의 덕분으로 돌리다"
+        },
+        {
+          "word": "well-being",
+          "meaning": "행복, 안녕"
+        }
+      ]
     },
     {
       "id": "reading-basic-p15",
@@ -120,7 +540,37 @@
       "title": "",
       "text": "News consumers claim they want impartial coverage, but click-through rates tell another story. Headlines framed to confirm existing beliefs consistently outperform neutral summaries. Editors face pressure from metrics dashboards that update in real time, rewarding sensationalism with advertising revenue. Over months, algorithmic feedback nudges entire outlets toward ideological edges. The cycle erodes public trust because each side perceives the other as increasingly extreme. Media ethicists warn that without structural changes, the commercial model will continue to bias story selection. In this environment, genuine journalistic ________ becomes the costliest commodity of all.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-15",
+          "number": "15",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "brevity",
+            "neutrality",
+            "humor",
+            "redundancy",
+            "suspense"
+          ],
+          "answer": 2,
+          "explanation": "상업적 모델은 언론의 '중립성'을 희생시킴."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "impartial",
+          "meaning": "공정한"
+        },
+        {
+          "word": "sensationalism",
+          "meaning": "선정주의"
+        },
+        {
+          "word": "neutrality",
+          "meaning": "중립성"
+        }
+      ]
     },
     {
       "id": "reading-basic-p16",
@@ -128,7 +578,37 @@
       "title": "",
       "text": "Wearable fitness trackers promise to nudge users toward healthier lifestyles by measuring every step and heartbeat. Initial data spikes often motivate bursts of enthusiasm: people park farther away, take lunchtime walks, and compete with friends for badge icons. Within months, however, activity levels frequently return to baseline. Behavioral economists suggest that external rewards crowd out intrinsic motivation; users exercise for points rather than pleasure. Once the novelty wanes, the device feels more like a watchdog than a coach, and daily goals become negotiable. Ironically, precise measurement can relieve people of personal responsibility by outsourcing judgment to an algorithm. Without complementary habit-building strategies, quantified health may fail to improve long-term ________.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-16",
+          "number": "16",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "compliance",
+            "metabolism",
+            "flexibility",
+            "inheritance",
+            "diagnosis"
+          ],
+          "answer": 1,
+          "explanation": "외부 보상에만 의존하면 장기적인 건강 행동 '준수'에 실패할 수 있음."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "nudge",
+          "meaning": "(특정 방향으로) 유도하다"
+        },
+        {
+          "word": "intrinsic",
+          "meaning": "내재적인"
+        },
+        {
+          "word": "compliance",
+          "meaning": "준수, 따름"
+        }
+      ]
     },
     {
       "id": "reading-basic-p17",
@@ -136,7 +616,37 @@
       "title": "",
       "text": "Ancient orators memorized hours-long speeches by imagining grand buildings filled with vivid objects—a flaming sword on the staircase, a singing bird beside a column. Modern cognitive scientists confirm that spatial storytelling leverages the brain’s natural talent for navigation. Each object serves as a mental hook from which facts can hang, forming durable associative chains. Students who replace rote rehearsal with such imagery recall material weeks later with minimal review. The method, known as the memory palace, scales from grocery lists to legal arguments. Practice is required, but the investment yields an almost unfair academic advantage. By converting abstract data into concrete scenes, learners strengthen ________ between disparate ideas.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-17",
+          "number": "17",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "conflicts",
+            "associations",
+            "hierarchies",
+            "distractions",
+            "authorities"
+          ],
+          "answer": 2,
+          "explanation": "기억 궁전은 이질적인 아이디어들 사이에 '연관성'을 강화함."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "orator",
+          "meaning": "연설가"
+        },
+        {
+          "word": "leverage",
+          "meaning": "활용하다"
+        },
+        {
+          "word": "disparate",
+          "meaning": "이질적인"
+        }
+      ]
     },
     {
       "id": "reading-basic-p18",
@@ -144,7 +654,37 @@
       "title": "",
       "text": "Popular self-help books praise the power of micro-habits—tiny actions so easy they evade resistance. Floss just one tooth, write one sentence, or perform two push-ups, the authors advise. The logic is that starting small lowers the activation energy for behavior change. Over time, the brain begins to expect the sequence and extends it without conscious effort. Critics argue that microscopic steps lack ambition, but data reveal surprising persistence rates. Once initiated, a behavior chain often grows until it resembles the very goal it once tiptoed toward. Thus, microscopic routines can generate disproportionate ________ that compound into large-scale transformation.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-18",
+          "number": "18",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "momentum",
+            "distraction",
+            "entropy",
+            "complacency",
+            "backlash"
+          ],
+          "answer": 1,
+          "explanation": "아주 작은 습관이 큰 변화를 이끄는 '추진력'을 만들어냄."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "evade",
+          "meaning": "피하다"
+        },
+        {
+          "word": "disproportionate",
+          "meaning": "불균형적으로 큰"
+        },
+        {
+          "word": "momentum",
+          "meaning": "가속도, 탄력"
+        }
+      ]
     },
     {
       "id": "reading-basic-p19",
@@ -152,7 +692,37 @@
       "title": "",
       "text": "Ride-sharing apps advertise flexible schedules and entrepreneurial freedom, yet drivers’ earnings fluctuate daily with surge pricing. A single traffic jam or vehicle repair can wipe out a week’s profit margin, transferring risk from company to contractor. Because algorithms adjust fares in opaque ways, predicting income becomes a statistical gamble. Sociologists note that financial instability bleeds into health outcomes when workers postpone medical check-ups to keep cars on the road. Conventional safety nets like paid leave seldom apply to independent contractors. Policymakers debate portable benefits funded through platform fees, but implementation lags behind industry growth. Until structural protections emerge, gig-economy labor will remain synonymous with economic ________.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-19",
+          "number": "19",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "certainty",
+            "philanthropy",
+            "uncertainty",
+            "monopoly",
+            "abundance"
+          ],
+          "answer": 3,
+          "explanation": "긱 경제 노동은 구조적 보호 장치 없이는 경제적 '불확실성'과 동의어."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "fluctuate",
+          "meaning": "변동하다"
+        },
+        {
+          "word": "opaque",
+          "meaning": "불투명한"
+        },
+        {
+          "word": "synonymous with",
+          "meaning": "~와 동의어인"
+        }
+      ]
     },
     {
       "id": "reading-basic-p20",
@@ -160,7 +730,37 @@
       "title": "",
       "text": "Streaming services boast catalogs that dwarf any physical video store in history. Paradoxically, viewers often spend longer browsing thumbnails than watching shows. Recommendation algorithms prioritize popularity, gradually steering attention toward a handful of blockbuster titles. Independent films buried deep in the menu receive fewer clicks, feeding data back into the popularity loop. Cultural critics worry that a near-infinite shelf still converges on a narrow slice of content. Without editorial interventions, the long tail of creativity may wither from neglect. Digital abundance does not guarantee artistic ________ if discovery tools reward only what is already trending.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-20",
+          "number": "20",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "visibility",
+            "conformity",
+            "chronology",
+            "censorship",
+            "solemnity"
+          ],
+          "answer": 1,
+          "explanation": "알고리즘이 인기작만 추천하면 독립 영화의 '가시성'이 보장되지 않음."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "dwarf",
+          "meaning": "왜소하게 만들다"
+        },
+        {
+          "word": "converge on",
+          "meaning": "~으로 수렴하다"
+        },
+        {
+          "word": "visibility",
+          "meaning": "가시성, 눈에 잘 띔"
+        }
+      ]
     },
     {
       "id": "reading-basic-p21",
@@ -168,7 +768,37 @@
       "title": "",
       "text": "Debates over AI-generated artwork often focus on the novelty of machine creativity, yet a quieter question lingers in legal circles: Who owns the resulting images? Training datasets scrape millions of photos without explicit permission, blending styles in ways no human could track. Artists complain that their signature brushstrokes reappear in uncanny composites. Meanwhile, tech companies argue that the output is transformative and therefore free of infringement. Courts struggle because copyright law was drafted for human authorship, not probabilistic diffusion models. Until precedent emerges, platforms monetize the gray area by selling subscription credits. The uncertainty encourages rapid experimentation but discourages serious investment from traditional galleries. The lack of clear guidelines risks creating a cultural commons where value is extracted without ________ to the original creators.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-21",
+          "number": "21",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "tribute",
+            "access",
+            "relevance",
+            "hostility",
+            "nostalgia"
+          ],
+          "answer": 1,
+          "explanation": "AI 예술은 원작자에 대한 '헌사(보상)' 없이 가치를 추출할 위험이 있음."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "uncanny",
+          "meaning": "기묘한"
+        },
+        {
+          "word": "infringement",
+          "meaning": "침해"
+        },
+        {
+          "word": "tribute",
+          "meaning": "헌사, 공물"
+        }
+      ]
     },
     {
       "id": "reading-basic-p22",
@@ -176,7 +806,37 @@
       "title": "",
       "text": "Memory feels like a recording, yet psychologists demonstrate that each recollection rewrites the past. When you tell a friend about last year’s vacation, sensory fragments fuse with present emotions, updating the neural file. Over dozens of retellings, your anecdote drifts subtly from reality, favoring coherent narrative over messy truth. Eyewitness testimony therefore grows less reliable with rehearsal, not more. Courtrooms that treat confident recall as gold standard misunderstand the pliability of the brain. Researchers advise asking witnesses for free narratives before any discussion introduces bias. Ironically, the very act of securing evidence may corrupt it. Justice systems must adapt or risk convictions built on memories that feel vivid yet remain ________.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-22",
+          "number": "22",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "malleable",
+            "indelible",
+            "symmetrical",
+            "peripheral",
+            "tangible"
+          ],
+          "answer": 1,
+          "explanation": "기억은 회상할 때마다 재구성되므로 생생하게 느껴져도 '가변적'임."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "recollection",
+          "meaning": "회상"
+        },
+        {
+          "word": "pliability",
+          "meaning": "유연성"
+        },
+        {
+          "word": "malleable",
+          "meaning": "가변적인, 영향을 잘 받는"
+        }
+      ]
     },
     {
       "id": "reading-basic-p23",
@@ -184,7 +844,37 @@
       "title": "",
       "text": "Fast-fashion retailers release new collections weekly, seducing consumers with rock-bottom prices. Garments stitched from cheap synthetics tear after a handful of washes, driving shoppers back for replacements. Landfills now receive truckloads of discarded clothing every minute, and microfibers shed during laundry contaminate waterways. Environmental campaigns urge buyers to choose quality over quantity, yet social-media influencers flaunt hauls that reward volume. Governments debate extended producer responsibility fees, hoping to shift disposal costs upstream. Without economic signals, the cycle of buy-wear-dump will persist. Critics warn that celebrating affordability without factoring externalities amounts to subsidizing ________ waste.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-23",
+          "number": "23",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "durable",
+            "disposable",
+            "ceremonial",
+            "strategic",
+            "medicinal"
+          ],
+          "answer": 2,
+          "explanation": "패스트 패션은 '일회용' 쓰레기를 양산하는 시스템."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "seduce",
+          "meaning": "유혹하다"
+        },
+        {
+          "word": "externality",
+          "meaning": "외부 효과"
+        },
+        {
+          "word": "disposable",
+          "meaning": "일회용의"
+        }
+      ]
     },
     {
       "id": "reading-basic-p24",
@@ -192,7 +882,37 @@
       "title": "",
       "text": "Urban heat islands make summertime temperatures in dense neighborhoods several degrees higher than in nearby suburbs. Asphalt absorbs sunlight by day and releases it slowly after sunset, trapping residents in an invisible oven. Elderly people without air conditioning face elevated risks of heatstroke. City officials plant reflective roofs and pocket parks, but results lag behind rising emissions. Energy demand spikes as millions crank up cooling units, stressing aging grids. Ironically, the extra electricity often comes from fossil-fuel plants that emit more heat-trapping gases. Mitigation must therefore address both surface materials and energy sources. Ignoring the feedback loop would treat symptoms while ________ the root cause.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-24",
+          "number": "24",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "amplifying",
+            "diagnosing",
+            "alleviating",
+            "forecasting",
+            "resolving"
+          ],
+          "answer": 1,
+          "explanation": "냉방을 위해 화석연료를 더 쓰는 것은 근본 원인을 '증폭'시키는 것."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "mitigation",
+          "meaning": "완화"
+        },
+        {
+          "word": "feedback loop",
+          "meaning": "피드백 루프"
+        },
+        {
+          "word": "amplify",
+          "meaning": "증폭시키다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p25",
@@ -200,7 +920,37 @@
       "title": "",
       "text": "Thousands of satellites orbit Earth, providing navigation, weather data, and broadband signals. Each launch, however, leaves behind fragments when stages collide or explode. Even paint chips traveling at orbital speed can puncture spacecraft hulls, creating more debris in a chain reaction known as Kessler Syndrome. Astronomers worry that a densely shrouded sky will obscure telescope observations and jeopardize future missions. Proposed solutions include harpoons, drag sails, and laser nudges, but none have scaled commercially. Meanwhile, private companies rush to deploy mega-constellations, multiplying traffic ten-fold. Failure to enact binding regulations could render low-Earth orbit ________ for decades.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-25",
+          "number": "25",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "navigable",
+            "irrelevant",
+            "pristine",
+            "hazardous",
+            "transparent"
+          ],
+          "answer": 4,
+          "explanation": "우주 쓰레기 증가는 저궤도를 '위험하게' 만들 수 있음."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "shrouded",
+          "meaning": "뒤덮인"
+        },
+        {
+          "word": "jeopardize",
+          "meaning": "위태롭게 하다"
+        },
+        {
+          "word": "hazardous",
+          "meaning": "위험한"
+        }
+      ]
     },
     {
       "id": "reading-basic-p26",
@@ -208,7 +958,37 @@
       "title": "",
       "text": "Antibiotics revolutionized medicine, yet their success fostered complacency. Doctors once prescribed them for viral colds at patient insistence, accelerating resistance evolution. Bacteria swap genetic instructions like trading cards, spreading immunity across species. New drugs enter the market slowly because profits are slim compared with chronic-disease treatments. Public health campaigns stress completing prescriptions, but misinformation online promotes halving doses to \"avoid chemicals.\" Laboratories race to develop phage therapies that target microbes with surgical precision. Unless stewardship improves, researchers warn of a post-antibiotic era where minor cuts become lethal. Overuse today could forfeit tomorrow’s miracle cures to microbial ________.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-26",
+          "number": "26",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "vulnerability",
+            "dominance",
+            "dormancy",
+            "gratitude",
+            "equilibrium"
+          ],
+          "answer": 2,
+          "explanation": "항생제 남용은 내성균의 '우세'를 초래함."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "forfeit",
+          "meaning": "몰수당하다"
+        },
+        {
+          "word": "stewardship",
+          "meaning": "관리"
+        },
+        {
+          "word": "dominance",
+          "meaning": "우세, 지배"
+        }
+      ]
     },
     {
       "id": "reading-basic-p27",
@@ -216,7 +996,37 @@
       "title": "",
       "text": "Remote work promised quiet focus for introverts, but home offices teem with distractions of another kind. Doorbells ring, children demand snacks, and neighbors drill holes during video calls. Boundaries between professional and personal life blur when the dining table doubles as a desk. Paradoxically, some employees now overwork to prove they are not slacking off. Slack pings replace hallway conversations, extending the workday into late evening. Employers experiment with \"focus Fridays\" and asynchronous updates, yet culture shifts slowly. Without intentional routines, the flexibility that once seemed liberating can morph into time-zone-less ________.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-27",
+          "number": "27",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "autonomy",
+            "chaos",
+            "ritual",
+            "leisure",
+            "sanctuary"
+          ],
+          "answer": 2,
+          "explanation": "경계 없는 재택근무의 유연성은 '혼돈'으로 변질될 수 있음."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "teem with",
+          "meaning": "~으로 가득하다"
+        },
+        {
+          "word": "morph into",
+          "meaning": "~으로 변하다"
+        },
+        {
+          "word": "chaos",
+          "meaning": "혼돈"
+        }
+      ]
     },
     {
       "id": "reading-basic-p28",
@@ -224,7 +1034,37 @@
       "title": "",
       "text": "High-school curricula often omit financial literacy, leaving teenagers to learn about credit cards through marketing emails. Interest-free grace periods lure novices into spending beyond their means. Compound interest works against them when balances roll over, snowballing into debt that shadows early adulthood. Smartphones make transactions frictionless, masking the psychological pain that cash once imposed. Economists argue that informed consent in lending requires understanding exponential math, not just signature boxes. Absent mandatory education, the convenience of plastic can translate into years of repayment. Teaching students the true cost of borrowing would illuminate the hidden price tag on ________ consumption.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-28",
+          "number": "28",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "deferred",
+            "frugal",
+            "ethical",
+            "instantaneous",
+            "communal"
+          ],
+          "answer": 1,
+          "explanation": "신용카드 소비는 실제 지불을 '유예'하는 소비."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "omit",
+          "meaning": "생략하다"
+        },
+        {
+          "word": "frictionless",
+          "meaning": "마찰이 없는"
+        },
+        {
+          "word": "deferred",
+          "meaning": "연기된, 미뤄진"
+        }
+      ]
     },
     {
       "id": "reading-basic-p29",
@@ -232,7 +1072,37 @@
       "title": "",
       "text": "Coffee enjoys a wellness halo thanks to studies linking moderate consumption with reduced disease risk. Headlines, however, often exaggerate correlational findings, presenting daily lattes as lifesaving medicine. Dietary researchers struggle to isolate caffeine effects from confounding lifestyle variables. Meanwhile, high-sugar flavored drinks dominate café menus, blurring the line between beverage and dessert. When health claims drive sales, scaling up portion sizes becomes profitable marketing. Public discourse rarely distinguishes black coffee from whipped-cream concoctions. By treating all forms equally, consumers risk embracing sugary excess under the banner of antioxidant virtue, a decision that ________ the original research.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-29",
+          "number": "29",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "vindicates",
+            "misrepresents",
+            "replicates",
+            "validates",
+            "codifies"
+          ],
+          "answer": 2,
+          "explanation": "설탕이 많은 커피를 건강 음료로 여기는 것은 연구를 '왜곡'하는 것."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "halo",
+          "meaning": "후광"
+        },
+        {
+          "word": "confounding",
+          "meaning": "교란하는"
+        },
+        {
+          "word": "misrepresent",
+          "meaning": "잘못 표현하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p30",
@@ -240,7 +1110,37 @@
       "title": "",
       "text": "Deep underground in Norway’s Svalbard archipelago lies a vault storing seeds from around the globe. The facility, chilled by permafrost, acts as insurance against crop failure from climate change or war. Every envelope contains genetic diversity painstakingly collected by local farmers over centuries. Yet some critics argue that preservation without cultivation risks freezing biodiversity in a museum, disconnected from evolving pests. Others counter that rescue copies are indispensable when political turmoil destroys regional stocks. Regular withdrawals and deposits mimic a savings account: living seeds must germinate periodically to stay viable. Treating the vault as a static archive would ignore its role as an active ________ of agricultural resilience.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-30",
+          "number": "30",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "exhibit",
+            "ledger",
+            "engine",
+            "relic",
+            "monument"
+          ],
+          "answer": 3,
+          "explanation": "씨앗 저장고는 정적인 보관소가 아닌 농업 회복력의 능동적 '동력'."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "archipelago",
+          "meaning": "군도"
+        },
+        {
+          "word": "painstakingly",
+          "meaning": "공들여"
+        },
+        {
+          "word": "engine",
+          "meaning": "엔진, 동력"
+        }
+      ]
     },
     {
       "id": "reading-basic-p31",
@@ -248,7 +1148,37 @@
       "title": "",
       "text": "Virtual-reality clinics now help patients confront fears ranging from public speaking to flying. Therapists control every variable: turbulence intensity, audience size, even the hum of an airplane engine. Because the scenarios unfold in a headset, exposure can stop the moment distress rises too high, keeping treatment safe. Each session nudges the patient’s tolerance a little further, building confidence that spills into real-world situations. Decades of research show that facing a phobia in small, repeatable steps rewires neural threat pathways. The headset merely provides a convenient stage for the oldest principle in behavioral science. Recovery hinges on ________ exposure, not on graphic fidelity.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-31",
+          "number": "31",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "instantaneous",
+            "nostalgic",
+            "gradual",
+            "chaotic",
+            "deceptive"
+          ],
+          "answer": 3,
+          "explanation": "공포증 치료는 '점진적' 노출에 달려 있음."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "confront",
+          "meaning": "맞서다"
+        },
+        {
+          "word": "hinge on",
+          "meaning": "~에 달려있다"
+        },
+        {
+          "word": "gradual",
+          "meaning": "점진적인"
+        }
+      ]
     },
     {
       "id": "reading-basic-p32",
@@ -256,7 +1186,37 @@
       "title": "",
       "text": "Affordable DNA kits promise to reveal ancestry secrets with a cheek swab and a postage stamp. Colorful pie charts arrive weeks later, assigning percentages to regions your grandparents never visited. Some users upload raw data to third-party sites that compare genetic markers for disease risk. Privacy experts caution that once sequenced, your genome cannot be ‘‘changed like a password.’’ Insurance companies and law enforcement already explore ways to mine public databases. Family ties also complicate consent: your profile inadvertently exposes relatives who never took the test. Enthusiasm for personal genomics therefore outpaces safeguards, widening the door to potential data ________.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-32",
+          "number": "32",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "monopoly",
+            "breach",
+            "synergy",
+            "parity",
+            "redemption"
+          ],
+          "answer": 2,
+          "explanation": "유전체 정보는 잠재적 데이터 '유출/침해' 위험을 수반함."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "swab",
+          "meaning": "면봉"
+        },
+        {
+          "word": "inadvertently",
+          "meaning": "무심코, 우연히"
+        },
+        {
+          "word": "breach",
+          "meaning": "침해, 위반"
+        }
+      ]
     },
     {
       "id": "reading-basic-p33",
@@ -264,7 +1224,37 @@
       "title": "",
       "text": "Start-ups envision swarms of autonomous drones zipping above traffic to deliver take-out meals in under ten minutes. Early pilots succeeded in suburban cul-de-sacs, but dense downtown airspace poses harder problems. Rooftop wind shear rattles navigation sensors; pedestrians dislike constant propeller noise. City planners warn that sky lanes could become as jammed as streets if left unregulated. Historians note that automobiles were once welcomed as a cure for horse-drawn chaos—until they created their own gridlock. Unless authorities coordinate flight corridors and sharing protocols, drone deliveries may simply relocate urban ________ from asphalt to open air.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-33",
+          "number": "33",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "tranquility",
+            "congestion",
+            "heritage",
+            "illumination",
+            "sanitation"
+          ],
+          "answer": 2,
+          "explanation": "드론 배달은 도시의 '혼잡'을 하늘로 옮길 뿐일 수 있음."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "envision",
+          "meaning": "상상하다"
+        },
+        {
+          "word": "gridlock",
+          "meaning": "교통 정체"
+        },
+        {
+          "word": "congestion",
+          "meaning": "혼잡"
+        }
+      ]
     },
     {
       "id": "reading-basic-p34",
@@ -272,7 +1262,37 @@
       "title": "",
       "text": "Forest rangers once relied on lookout towers and binoculars to spot illegal logging, reacting days after chainsaws roared. Today, satellites circle the equator every ninety minutes, photographing the same hillside again within hours. Algorithms compare pixel changes to flag tree loss in near real time, sending alerts to smartphones thousands of kilometers away. Rapid response teams can seize equipment before trunks even hit the ground. Conservationists celebrate the technology but remind donors that prosecution still depends on local courts. Eyes in the sky deter wrongdoing only when followed by consequences on earth. High-resolution imagery alone cannot stop ________ logging.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-34",
+          "number": "34",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "ceremonial",
+            "illegal",
+            "seasonal",
+            "sustainable",
+            "decorative"
+          ],
+          "answer": 2,
+          "explanation": "감시 기술만으로는 '불법' 벌목을 막을 수 없음."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "prosecution",
+          "meaning": "기소, 고발"
+        },
+        {
+          "word": "deter",
+          "meaning": "단념시키다"
+        },
+        {
+          "word": "illegal",
+          "meaning": "불법적인"
+        }
+      ]
     },
     {
       "id": "reading-basic-p35",
@@ -280,7 +1300,37 @@
       "title": "",
       "text": "Open-plan offices were marketed as collaborative playgrounds where serendipitous encounters spark innovation. Instead, many workers retreat behind noise-canceling headphones to escape chatter and ringing phones. Studies using wearable sensors show that face-to-face interaction actually declines after walls come down. Constant auditory interruption forces the brain to context-switch, draining glucose with each pivot. Over time employees schedule meetings just to secure a quiet conference room for focused tasks. Companies now install “privacy pods,” reinventing cubicles they demolished a decade earlier. The journey illustrates how aesthetics can override ergonomics, with architecture quietly eroding cognitive ________.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-35",
+          "number": "35",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "productivity",
+            "hierarchy",
+            "immunity",
+            "hospitality",
+            "satire"
+          ],
+          "answer": 1,
+          "explanation": "개방형 사무실은 인지적 '생산성'을 저해할 수 있음."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "serendipitous",
+          "meaning": "우연한"
+        },
+        {
+          "word": "ergonomics",
+          "meaning": "인간 공학"
+        },
+        {
+          "word": "productivity",
+          "meaning": "생산성"
+        }
+      ]
     },
     {
       "id": "reading-basic-p36",
@@ -288,7 +1338,37 @@
       "title": "",
       "text": "Micro-loan programs lend tiny amounts of capital to entrepreneurs ignored by traditional banks, often women in rural villages. A few hundred dollars can purchase a sewing machine, turning spare rooms into tailoring studios that clothe neighbors and generate income. When repayments recycle into new loans, entire communities diversify beyond subsistence agriculture. Researchers track increases in children’s school attendance and household nutrition following credit access. Critics argue that debt of any size can trap borrowers if markets shrink, but default rates remain low compared with commercial portfolios. By coupling finance with peer mentorship, micro-lenders aim to foster economic ________ rather than profit alone.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-36",
+          "number": "36",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "surveillance",
+            "empowerment",
+            "stagnation",
+            "departure",
+            "discrepancy"
+          ],
+          "answer": 2,
+          "explanation": "소액 대출은 경제적 '역량 강화'를 목표로 함."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "subsistence",
+          "meaning": "최저 생활"
+        },
+        {
+          "word": "portfolio",
+          "meaning": "포트폴리오"
+        },
+        {
+          "word": "empowerment",
+          "meaning": "역량 강화"
+        }
+      ]
     },
     {
       "id": "reading-basic-p37",
@@ -296,7 +1376,37 @@
       "title": "",
       "text": "Police departments deploy predictive models that rank neighborhoods by likelihood of future crime based on historical records. Proponents claim scarce patrols are allocated more efficiently; civil-rights groups counter that past arrests reflect biased policing, not objective danger. Feedback loops arise when heightened patrol presence generates more reports, feeding the algorithm fresh justification to stay. Transparency audits reveal that seemingly neutral variables—like school truancy or broken windows—act as proxies for race and income. Reformers propose community oversight and rigorous fairness metrics before algorithms influence resource allocation. Without safeguards, predictive policing risks perpetuating statistical ________ under the guise of mathematics.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-37",
+          "number": "37",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "literacy",
+            "ambiguity",
+            "bias",
+            "serenity",
+            "immunity"
+          ],
+          "answer": 3,
+          "explanation": "예측 치안은 통계적 '편향'을 영속화할 위험이 있음."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "truancy",
+          "meaning": "무단결석"
+        },
+        {
+          "word": "proxy",
+          "meaning": "대리, 대용물"
+        },
+        {
+          "word": "bias",
+          "meaning": "편향"
+        }
+      ]
     },
     {
       "id": "reading-basic-p38",
@@ -304,7 +1414,37 @@
       "title": "",
       "text": "Scrolling a bright phone screen in bed feels harmless, yet blue-wavelength light tells the suprachiasmatic nucleus that noon has arrived. Melatonin release stalls, delaying the cascade of physiological changes that prepare cells for repair. Researchers liken nighttime screen time to a mini-time-zone jump executed daily, confusing internal clocks. Sleep depth suffers even when total hours appear sufficient, leaving people foggy and irritable by afternoon. Sales of amber glasses and ‘‘dark mode’’ apps soar, but behavior change lags behind convenience. True recovery requires respecting the evolutionary bargain struck with sunset. Artificial illumination that extends waking hours ultimately ________ circadian rhythms.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-38",
+          "number": "38",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "stabilizes",
+            "disrupts",
+            "fortifies",
+            "romanticizes",
+            "calibrates"
+          ],
+          "answer": 2,
+          "explanation": "인공조명은 일주기 리듬을 '교란'함."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "stall",
+          "meaning": "교착 상태에 빠지다"
+        },
+        {
+          "word": "circadian rhythm",
+          "meaning": "일주기 리듬"
+        },
+        {
+          "word": "disrupt",
+          "meaning": "교란하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p39",
@@ -312,7 +1452,37 @@
       "title": "",
       "text": "Amateur mycologists armed with smartphone cameras now upload mushroom sightings to global databases. Geo-tagged photos let experts verify species and issue warnings about poisonous look-alikes. Aggregate maps reveal fungal migrations triggered by climate change, offering clues to forest health. The hobby thus evolves into a crowdsourced sensor network spanning continents at virtually no cost. Data quality improves as machine-learning filters sift blurry images before they reach taxonomists. Still, sustained participation hinges on feedback loops that credit contributors for discoveries. The scientific value of citizen observations depends on careful ________ of thousands of tiny data points.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-39",
+          "number": "39",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "mystification",
+            "aggregation",
+            "depletion",
+            "litigation",
+            "isolation"
+          ],
+          "answer": 2,
+          "explanation": "시민 과학의 가치는 데이터의 신중한 '수집/집계'에 달려 있음."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "mycologist",
+          "meaning": "균학자"
+        },
+        {
+          "word": "taxonomist",
+          "meaning": "분류학자"
+        },
+        {
+          "word": "aggregation",
+          "meaning": "집합, 집계"
+        }
+      ]
     },
     {
       "id": "reading-basic-p40",
@@ -320,7 +1490,37 @@
       "title": "",
       "text": "E-textbooks weigh nothing and embed interactive quizzes, yet many students still lug printed volumes across campus. Cognitive scientists suggest that tactile page turning anchors spatial memory, letting learners recall a formula’s approximate location on the paper. Screens encourage scrolling, which flattens the mental map into one continuous ribbon. Frequent notifications also fracture concentration, prompting re-reading that feels familiar but shallow. Hybrid courses that supply PDF chapters alongside hard copies find that exam scores correlate with print usage. Educators debate whether design tweaks can close the gap without killing convenience. Until evidence emerges, digital reading may continue to lag behind print in academic ________.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-40",
+          "number": "40",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "retention",
+            "inflation",
+            "ornamentation",
+            "accreditation",
+            "fragmentation"
+          ],
+          "answer": 1,
+          "explanation": "디지털 읽기는 학문적 '기억/보유' 측면에서 뒤처질 수 있음."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "lug",
+          "meaning": "힘들게 나르다"
+        },
+        {
+          "word": "tactile",
+          "meaning": "촉각의"
+        },
+        {
+          "word": "retention",
+          "meaning": "보유, 기억"
+        }
+      ]
     },
     {
       "id": "reading-basic-p41",
@@ -328,7 +1528,37 @@
       "title": "",
       "text": "Massive cargo ships crisscross the world’s oceans twenty-four hours a day, their engines emitting a low rumble that carries for hundreds of kilometers underwater. Biologists once thought the din harmless, but hydrophone records now reveal a steady upward creep in background noise since the 1960s. Baleen whales use infrasonic calls to locate mates and feeding grounds, yet those signals fade beneath the mechanical hum. Some pods shorten their songs; others raise the volume, expending precious energy. Calves that stray too far can lose contact entirely, reducing survival odds. Conservationists propose slower cruising speeds and bubble-wrap propellers as partial fixes. Until shipping lanes quiet down, industrial acoustics will keep ________ the voices of the planet’s largest singers.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-41",
+          "number": "41",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "amplifying",
+            "masking",
+            "decorating",
+            "fabricating",
+            "prolonging"
+          ],
+          "answer": 2,
+          "explanation": "산업 소음이 고래의 소리를 '가린다(masking)'."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "din",
+          "meaning": "소음"
+        },
+        {
+          "word": "infrasonic",
+          "meaning": "초저주파의"
+        },
+        {
+          "word": "masking",
+          "meaning": "가리는"
+        }
+      ]
     },
     {
       "id": "reading-basic-p42",
@@ -336,7 +1566,37 @@
       "title": "",
       "text": "Scrolling through social media, you see vacations on white-sand beaches, home-cooked dinners plated like magazine covers, and gym selfies lit by flattering dawn light. Psychologists call these curated feeds “highlight reels,” because they omit mundane struggles that fill most lives. Repeated exposure skews perception, making ordinary routines feel inadequate by comparison. Users try to keep up, staging their own portraits for the algorithm’s approval. Paradoxically, the more effort invested in perfect images, the more alienated individuals report feeling afterward. Mental-health surveys link heavy platform usage with rising anxiety and body dissatisfaction. The endless parade of curated perfection subtly ________ our sense of what is normal.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-42",
+          "number": "42",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "clarifies",
+            "distorts",
+            "reinforces",
+            "echoes",
+            "preserves"
+          ],
+          "answer": 2,
+          "explanation": "완벽하게 연출된 피드는 정상에 대한 우리의 감각을 '왜곡한다(distorts)'."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "curated",
+          "meaning": "엄선된"
+        },
+        {
+          "word": "mundane",
+          "meaning": "평범한, 일상적인"
+        },
+        {
+          "word": "distort",
+          "meaning": "왜곡하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p43",
@@ -344,7 +1604,37 @@
       "title": "",
       "text": "Towering racks of lettuce glow beneath LED panels in city warehouses, promising farm-fresh produce steps from apartment doors. Vertical farming consumes less land and shortens supply chains, but electricity costs still dwarf those of sunlit fields. Engineers tinker with spectrum tunings and recycled heat, inching toward grid parity. Investors fund pilot sites attached to grocery stores, hoping foot traffic offsets high capital outlay. Critics warn that exotic salads for affluent neighborhoods will not solve global hunger. Proponents counter that technology costs historically fall once scale and learning curves kick in. Whether stacked gardens can feed megacities ultimately hinges on the economic ________ of kilowatt-powered sunlight.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-43",
+          "number": "43",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "inevitability",
+            "fragility",
+            "viability",
+            "hostility",
+            "uniformity"
+          ],
+          "answer": 3,
+          "explanation": "수직 농장의 성공은 경제적 '실행 가능성(viability)'에 달려 있음."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "dwarf",
+          "meaning": "왜소하게 만들다"
+        },
+        {
+          "word": "affluent",
+          "meaning": "부유한"
+        },
+        {
+          "word": "viability",
+          "meaning": "생존 능력, 실행 가능성"
+        }
+      ]
     },
     {
       "id": "reading-basic-p44",
@@ -352,7 +1642,37 @@
       "title": "",
       "text": "Scientists once assumed plastic broke down completely after decades in landfills, but advanced spectroscopy now detects fragments smaller than a red blood cell in human organs. Microplastics enter through drinking water, processed foods, and even the air we breathe. Laboratory mice exposed to similar particles exhibit inflammatory responses and altered gene expression. Epidemiologists caution that translation to human disease remains preliminary, yet public concern has already spiked. Beverage companies advertise “micro-filter” bottles while cities debate upgraded filtration plants. Without systemic reductions in single-use packaging, however, the global reservoir of polymer dust will only grow. Each shopping trip adds another invisible speck that quietly ________ inside living tissue.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-44",
+          "number": "44",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "dissipates",
+            "accumulates",
+            "evaporates",
+            "incubates",
+            "substitutes"
+          ],
+          "answer": 2,
+          "explanation": "미세플라스틱은 보이지 않게 체내에 '축적된다(accumulates)'."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "spectroscopy",
+          "meaning": "분광학"
+        },
+        {
+          "word": "epidemiologist",
+          "meaning": "역학자"
+        },
+        {
+          "word": "accumulate",
+          "meaning": "축적되다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p45",
@@ -360,7 +1680,37 @@
       "title": "",
       "text": "A fashion label releases a line inspired by Indigenous beadwork, complete with runway models and glossy billboards. Social-media backlash erupts within hours, accusing the brand of lifting motifs without permission or profit-sharing. Company spokespeople defend the collection as “homage,” citing admiration for native artistry. Cultural historians respond that symbolism divorced from original stories risks flattening centuries of meaning. Dialogue workshops between designers and tribal councils show that respectful collaboration is possible when royalties and storytelling are shared. Absent those measures, aesthetic borrowing becomes commercial exploitation. In cultural exchange, appreciation without ________ is easily mistaken for appropriation.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-45",
+          "number": "45",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "context",
+            "motive",
+            "revenue",
+            "patience",
+            "geography"
+          ],
+          "answer": 1,
+          "explanation": "'맥락(context)' 없는 감상은 문화 도용으로 오해받기 쉬움."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "Indigenous",
+          "meaning": "토착의"
+        },
+        {
+          "word": "homage",
+          "meaning": "경의, 존경"
+        },
+        {
+          "word": "appropriation",
+          "meaning": "도용, 전유"
+        }
+      ]
     },
     {
       "id": "reading-basic-p46",
@@ -368,7 +1718,37 @@
       "title": "",
       "text": "Satellite constellations now photograph wheat fields every three days, translating subtle shifts in greenness into biomass estimates. Agronomists overlay moisture data and soil chemistry to forecast yields months before harvest. Early warnings let cooperatives lock in futures contracts and pre-position grain storage, smoothing price swings. Extension agents text farmers tailored advice about nitrogen or irrigation tweaks, saving both money and groundwater. Yet the torrent of data can overwhelm smallholders lacking broadband or analytics skills. Partnerships with local co-ops aim to bridge the gap by providing dashboard printouts at weekly meetings. Real-time imagery thus becomes a tool to ________ resource use, not merely to observe it.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-46",
+          "number": "46",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "jeopardize",
+            "obscure",
+            "optimize",
+            "romanticize",
+            "improvise"
+          ],
+          "answer": 3,
+          "explanation": "실시간 이미지는 자원 사용을 관찰하는 것을 넘어 '최적화하는(optimize)' 도구."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "agronomist",
+          "meaning": "농학자"
+        },
+        {
+          "word": "smallholder",
+          "meaning": "소작농"
+        },
+        {
+          "word": "optimize",
+          "meaning": "최적화하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p47",
@@ -376,7 +1756,37 @@
       "title": "",
       "text": "When a city’s subway shuts down after midnight, bartenders, nurses, and security guards scramble for rideshare apps that surge prices in lockstep. Transportation planners argue that twenty-four-hour transit would increase operating costs, yet spreadsheets seldom capture the social expense of stranded workers. Late-night service trials in several metros showed modest ridership but significant reductions in drunk-driving incidents. Emergency crews reported faster hospital transfers because roads carried fewer private cars. Opponents claim empty trains waste electricity, but renewable grids can accommodate off-peak demand. A resilient metropolis depends on mobility at all hours, especially for those who keep it running. Ignoring overnight travel needs erodes the system’s overall ________.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-47",
+          "number": "47",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "congestion",
+            "luxury",
+            "resilience",
+            "anonymity",
+            "velocity"
+          ],
+          "answer": 3,
+          "explanation": "야간 교통을 무시하는 것은 시스템 전체의 '회복탄력성(resilience)'을 약화시킴."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "scramble for",
+          "meaning": "~을 차지하려고 다투다"
+        },
+        {
+          "word": "stranded",
+          "meaning": "오도 가도 못하게 된"
+        },
+        {
+          "word": "resilience",
+          "meaning": "회복력"
+        }
+      ]
     },
     {
       "id": "reading-basic-p48",
@@ -384,7 +1794,37 @@
       "title": "",
       "text": "Tuna stocks once seemed inexhaustible, yet industrial fleets now chase dwindling schools across the Pacific with helicopters and sonar buoys. Biologists warn that reproductive adults are being removed faster than juveniles can mature. International quotas exist on paper, but enforcement falters thousands of miles offshore. Some governments subsidize fuel, effectively paying vessels to overfish shared waters. Consumer guides encourage “pole-and-line caught” alternatives, but supply is thin relative to sushi demand. History shows that fisheries collapse suddenly after a long plateau, leaving coastal economies jobless overnight. Continuing current catch rates invites ecological and economic ________ disguised as prosperity.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-48",
+          "number": "48",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "insight",
+            "harmony",
+            "collapse",
+            "migration",
+            "recuperation"
+          ],
+          "answer": 3,
+          "explanation": "현재의 어획률은 생태적, 경제적 '붕괴(collapse)'를 초래할 수 있음."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "inexhaustible",
+          "meaning": "고갈되지 않는"
+        },
+        {
+          "word": "plateau",
+          "meaning": "안정기, 정체기"
+        },
+        {
+          "word": "collapse",
+          "meaning": "붕괴"
+        }
+      ]
     },
     {
       "id": "reading-basic-p49",
@@ -392,7 +1832,37 @@
       "title": "",
       "text": "Music-streaming services boast catalogs of sixty million songs, yet most users cycle through algorithmic playlists that mirror yesterday’s choices. Recommendation engines weight recent skips and repeats, nudging people toward familiar chords. Ethnomusicologists lament that rare folk recordings sink unnoticed, while major-label hits dominate discovery feeds. Casual listeners may never realize the breadth they are missing, assuming the platform’s curation equals the world’s output. Experiments that inject random tracks show brief spikes in user engagement and subscription retention. Surprise appears to be an undervalued ingredient in digital entertainment. Over-personalization, for all its convenience, throttles musical ________.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-49",
+          "number": "49",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "redundancy",
+            "predictability",
+            "serendipity",
+            "notoriety",
+            "rigidity"
+          ],
+          "answer": 3,
+          "explanation": "과도한 개인화는 음악적 '뜻밖의 발견(serendipity)'을 억제함."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "ethnomusicologist",
+          "meaning": "민족음악학자"
+        },
+        {
+          "word": "throttle",
+          "meaning": "목을 조르다, 억제하다"
+        },
+        {
+          "word": "serendipity",
+          "meaning": "뜻밖의 발견"
+        }
+      ]
     },
     {
       "id": "reading-basic-p50",
@@ -400,7 +1870,37 @@
       "title": "",
       "text": "News reports on climate change often toggle between apocalyptic floods and record-setting heatwaves. Psychologists studying “eco-anxiety” find that overwhelming imagery can paralyze action, causing viewers to tune out or despair. Community organizers therefore pair sobering statistics with attainable steps, such as neighborhood solar co-ops or tree-planting drives. Small victories build collective efficacy, reinforcing the belief that individual choices matter. Without constructive outlets, fear curdles into resignation and social withdrawal. Media outlets that prioritize clicks over empowerment risk deepening the malaise they describe. Catastrophe framed without agency breeds psychological ________ rather than mobilization.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-50",
+          "number": "50",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "urgency",
+            "paralysis",
+            "catharsis",
+            "celebration",
+            "perspective"
+          ],
+          "answer": 2,
+          "explanation": "행동의 여지 없이 재앙만 보여주는 것은 심리적 '마비(paralysis)'를 낳음."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "apocalyptic",
+          "meaning": "종말론적인"
+        },
+        {
+          "word": "curdle into",
+          "meaning": "~으로 굳어지다"
+        },
+        {
+          "word": "paralysis",
+          "meaning": "마비"
+        }
+      ]
     },
     {
       "id": "reading-basic-p51",
@@ -408,7 +1908,37 @@
       "title": "",
       "text": "The human brain is remarkably adept at filtering out irrelevant sensory information. In a bustling café, you can focus on a single conversation while the clatter of dishes and the murmur of other patrons fade into the background. This ability, known as the \"cocktail party effect,\" allows us to navigate complex social environments. However, this same filtering mechanism can make us blind to gradual changes. We may not notice a slowly worsening leak in the ceiling or the subtle decline in a colleague's performance. Our perceptual system is wired to detect sudden shifts, not creeping transformations. Therefore, what serves as an advantage in one context—ignoring constant, predictable stimuli—can become a significant ________ in another.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-51",
+          "number": "51",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "asset",
+            "liability",
+            "distraction",
+            "motivation",
+            "luxury"
+          ],
+          "answer": 2,
+          "explanation": "점진적 변화를 감지 못하는 것은 '불리한 점(liability)'이 됨."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "adept at",
+          "meaning": "~에 능숙한"
+        },
+        {
+          "word": "bustling",
+          "meaning": "붐비는"
+        },
+        {
+          "word": "liability",
+          "meaning": "부담, 불리한 점"
+        }
+      ]
     },
     {
       "id": "reading-basic-p52",
@@ -416,7 +1946,37 @@
       "title": "",
       "text": "In the digital age, information is abundant, but wisdom is scarce. The internet provides instant answers to factual questions, from the capital of Mongolia to the boiling point of water. Yet, this easy access can discourage the deeper, more effortful thinking required for true understanding. We collect facts without connecting them, mistaking a full memory for a developed mind. The challenge is not finding information but evaluating it, synthesizing disparate sources, and applying knowledge to novel problems. This process requires patience and critical thought—qualities that the fast-paced, notification-driven digital world often undermines. Consequently, while we may be more informed than any previous generation, we are not necessarily more ________.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-52",
+          "number": "52",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "connected",
+            "efficient",
+            "creative",
+            "wise",
+            "popular"
+          ],
+          "answer": 4,
+          "explanation": "정보는 많아졌지만, 반드시 더 '현명해진(wise)' 것은 아님."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "abundant",
+          "meaning": "풍부한"
+        },
+        {
+          "word": "synthesize",
+          "meaning": "종합하다"
+        },
+        {
+          "word": "wise",
+          "meaning": "현명한"
+        }
+      ]
     },
     {
       "id": "reading-basic-p53",
@@ -424,7 +1984,37 @@
       "title": "",
       "text": "The concept of \"food miles\"—the distance food travels from farm to plate—has become a popular shorthand for environmental impact. Consumers often choose local produce, assuming it has a smaller carbon footprint. However, a comprehensive lifecycle analysis reveals a more complex picture. For many foods, transportation accounts for only a small fraction of total emissions. The energy used in farming, processing, and storage is often far more significant. A tomato grown in a heated greenhouse in a cold climate, for instance, may have a larger footprint than one shipped from a sunnier region, even after accounting for transport. Therefore, focusing solely on distance can be misleading. A more effective approach to reducing the environmental cost of our food is to consider the ________ of production, not just the location.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-53",
+          "number": "53",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "speed",
+            "price",
+            "method",
+            "tradition",
+            "packaging"
+          ],
+          "answer": 3,
+          "explanation": "중요한 것은 생산 '방식(method)'이지 장소가 아님."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "shorthand",
+          "meaning": "속기, 약칭"
+        },
+        {
+          "word": "comprehensive",
+          "meaning": "포괄적인"
+        },
+        {
+          "word": "method",
+          "meaning": "방법"
+        }
+      ]
     },
     {
       "id": "reading-basic-p54",
@@ -432,7 +2022,37 @@
       "title": "",
       "text": "Many team-building exercises, such as trust falls or escape rooms, are designed to foster collaboration. While these activities can be enjoyable, their effects on workplace dynamics are often short-lived. The skills practiced in an artificial, high-stakes game do not always transfer to the mundane realities of office life. A person who cooperates to solve a puzzle may still hoard information or avoid difficult conversations back at their desk. True teamwork is not built in a single afternoon. It grows from consistent, daily habits: clear communication, mutual respect, and shared accountability for outcomes. These are cultivated over time through real projects and challenges, not just through ________.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-54",
+          "number": "54",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "individual effort",
+            "simulated exercises",
+            "hierarchical structures",
+            "financial incentives",
+            "written policies"
+          ],
+          "answer": 2,
+          "explanation": "진정한 팀워크는 '모의 훈련(simulated exercises)'만으로 길러지지 않음."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "foster",
+          "meaning": "조성하다"
+        },
+        {
+          "word": "hoard",
+          "meaning": "사재기하다, 축적하다"
+        },
+        {
+          "word": "simulated",
+          "meaning": "모의의"
+        }
+      ]
     },
     {
       "id": "reading-basic-p55",
@@ -440,7 +2060,37 @@
       "title": "",
       "text": "The rise of automation has fueled anxieties about mass unemployment. While it is true that robots and AI are replacing certain types of manual and routine cognitive labor, history shows that technological change also creates new jobs. The invention of the automobile displaced blacksmiths and carriage makers, but it also created millions of jobs in manufacturing, road construction, and the service industry. Similarly, the computer revolution eliminated many clerical roles but spawned new professions in software development and IT support. The primary challenge is not a permanent lack of work, but rather the need for workforce ________. Education systems and job training programs must adapt to equip people with the skills required for the new roles that emerge alongside new technologies.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-55",
+          "number": "55",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "regulation",
+            "reduction",
+            "transition",
+            "surveillance",
+            "satisfaction"
+          ],
+          "answer": 3,
+          "explanation": "기술 변화는 노동력의 '전환(transition)'을 요구함."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "displace",
+          "meaning": "대체하다"
+        },
+        {
+          "word": "spawn",
+          "meaning": "낳다, 야기하다"
+        },
+        {
+          "word": "transition",
+          "meaning": "전환, 이행"
+        }
+      ]
     },
     {
       "id": "reading-basic-p56",
@@ -448,7 +2098,37 @@
       "title": "",
       "text": "In the world of architecture, the phrase \"form follows function\" has long been a guiding principle. It suggests that the shape of a building or object should be primarily based upon its intended purpose. This idea was a reaction against the ornate and decorative styles of the 19th century, where aesthetics often took precedence over practicality. Proponents of this principle argue that a well-designed object, from a simple chair to a massive skyscraper, achieves its beauty through its efficiency and fitness for purpose. However, critics contend that a strict adherence to this rule can lead to sterile, uninspired designs that ignore the human need for beauty and delight. They argue that the best designs achieve a ________ between form and function, where neither is sacrificed for the other.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-56",
+          "number": "56",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "separation",
+            "conflict",
+            "hierarchy",
+            "balance",
+            "repetition"
+          ],
+          "answer": 4,
+          "explanation": "최고의 디자인은 형태와 기능 사이의 '균형(balance)'을 이룸."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "ornate",
+          "meaning": "화려하게 장식된"
+        },
+        {
+          "word": "precedence",
+          "meaning": "우선"
+        },
+        {
+          "word": "sterile",
+          "meaning": "개성 없는, 불모의"
+        }
+      ]
     },
     {
       "id": "reading-basic-p57",
@@ -456,7 +2136,37 @@
       "title": "",
       "text": "The \"bystander effect\" is a well-documented social psychological phenomenon in which individuals are less likely to offer help to a victim when other people are present. The greater the number of bystanders, the less likely it is that any one of them will help. This occurs due to a \"diffusion of responsibility,\" where each person assumes that someone else will intervene. Additionally, people often look to others for cues on how to behave. If no one else is reacting to an emergency, individuals may interpret the situation as less serious than it actually is. This pluralistic ignorance can lead to tragic inaction. Understanding this effect is the first step to overcoming it; by being aware of this tendency, individuals can make a conscious choice to ________.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-57",
+          "number": "57",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "follow the crowd",
+            "wait for instructions",
+            "assess the danger",
+            "take personal responsibility",
+            "avoid eye contact"
+          ],
+          "answer": 4,
+          "explanation": "방관자 효과를 극복하려면 '개인적 책임(personal responsibility)'을 져야 함."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "bystander",
+          "meaning": "방관자"
+        },
+        {
+          "word": "diffusion",
+          "meaning": "분산, 확산"
+        },
+        {
+          "word": "pluralistic ignorance",
+          "meaning": "다원적 무지"
+        }
+      ]
     },
     {
       "id": "reading-basic-p58",
@@ -464,7 +2174,37 @@
       "title": "",
       "text": "The concept of a \"growth mindset,\" popularized by psychologist Carol Dweck, posits that abilities and intelligence can be developed through dedication and hard work. This contrasts with a \"fixed mindset,\" which assumes that these qualities are innate and unchangeable. Students with a growth mindset tend to embrace challenges, persist in the face of setbacks, and see effort as a path to mastery. They are more likely to learn from criticism and find inspiration in the success of others. Conversely, those with a fixed mindset often avoid challenges to prevent failure, give up easily, and feel threatened by the success of their peers. The implications for education are profound. By praising effort and strategy rather than just intelligence or talent, teachers and parents can help cultivate a growth mindset in children, thereby fostering a lifelong love of ________.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-58",
+          "number": "58",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "competition",
+            "learning",
+            "comfort",
+            "validation",
+            "perfection"
+          ],
+          "answer": 2,
+          "explanation": "성장형 사고방식은 평생의 '학습(learning)'에 대한 사랑을 기름."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "posit",
+          "meaning": "상정하다, 가정하다"
+        },
+        {
+          "word": "innate",
+          "meaning": "타고난"
+        },
+        {
+          "word": "cultivate",
+          "meaning": "함양하다, 기르다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p59",
@@ -472,7 +2212,37 @@
       "title": "",
       "text": "The placebo effect is a fascinating phenomenon where a patient experiences real improvements in their condition after receiving a treatment with no active therapeutic properties, such as a sugar pill. This effect is not merely \"in the patient's head\"; studies have shown measurable physiological changes, such as the release of endorphins, in response to a placebo. The patient's belief in the treatment and the positive expectations communicated by the doctor play a crucial role. This highlights the powerful connection between the mind and body. The placebo effect demonstrates that our ________ can have a direct and tangible impact on our physical health.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-59",
+          "number": "59",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "diet",
+            "genetics",
+            "social status",
+            "physical environment",
+            "beliefs and expectations"
+          ],
+          "answer": 5,
+          "explanation": "우리의 '믿음과 기대(beliefs and expectations)'가 신체 건강에 영향을 미침."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "placebo",
+          "meaning": "위약, 가짜 약"
+        },
+        {
+          "word": "physiological",
+          "meaning": "생리적인"
+        },
+        {
+          "word": "tangible",
+          "meaning": "실질적인, 만질 수 있는"
+        }
+      ]
     },
     {
       "id": "reading-basic-p60",
@@ -480,7 +2250,37 @@
       "title": "",
       "text": "In ecology, a keystone species is a species that has a disproportionately large effect on its natural environment relative to its abundance. The removal of a keystone species can cause a dramatic shift in the ecosystem, often leading to a decrease in biodiversity. For example, sea otters in the Pacific Northwest are a keystone species because they prey on sea urchins. Without the otters, the sea urchin population would explode and devour the kelp forests, destroying the habitat for many other species. Thus, the presence of a relatively small number of sea otters is crucial for maintaining the ________ of the entire kelp forest ecosystem.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-60",
+          "number": "60",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "temperature",
+            "simplicity",
+            "profitability",
+            "stability",
+            "isolation"
+          ],
+          "answer": 4,
+          "explanation": "핵심종은 전체 생태계의 '안정성(stability)'을 유지하는 데 중요함."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "keystone species",
+          "meaning": "핵심종"
+        },
+        {
+          "word": "disproportionately",
+          "meaning": "불균형적으로"
+        },
+        {
+          "word": "stability",
+          "meaning": "안정성"
+        }
+      ]
     },
     {
       "id": "reading-basic-p61",
@@ -488,7 +2288,35 @@
       "title": "",
       "text": "Portable translation earbuds now stream simultaneous subtitles into a wearer’s ear, bridging language gaps on business trips. Early adopters rave about friction-free networking, yet linguists warn that idioms and humor often survive only in cultural context. A Japanese pun rendered literally into English can drain a joke of its sparkle, leaving awkward silence. Overreliance on machine output may therefore lull travelers into thinking they grasp subtle cues. Diplomatic schools still mandate months of immersion because live rapport grows from shared references, not mere syntax. Technology shines when vocabulary is all that separates speakers, but diplomacy depends on more than nouns and verbs. To avoid faux pas, globetrotters must remember to ________ instead of blindly trusting silicon interpreters.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-61",
+          "number": "61",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "read the room",
+            "mute device latency",
+            "memorize word lists",
+            "ignore body language",
+            "replace local guides"
+          ]
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "simultaneous",
+          "meaning": "동시의"
+        },
+        {
+          "word": "rapport",
+          "meaning": "라포, 친밀한 관계"
+        },
+        {
+          "word": "read the room",
+          "meaning": "분위기를 파악하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p62",
@@ -496,7 +2324,37 @@
       "title": "",
       "text": "Countries rich in sunshine and coastline plan to ship “green hydrogen” abroad by converting it to ammonia, loading it onto tankers, and cracking it back on arrival. Engineers celebrate the carbon-free energy loop, but economists highlight volatility in fertilizer demand that already dictates ammonia prices. A bumper grain season can spike consumption, while drought depresses it, complicating revenue forecasts. Energy planners therefore urge separate market mechanisms to stabilize cash flow. Insurance products might buffer producers against swings unrelated to their fuel customers. Absent hedging tools, investors could flee the sector after a single price crash. Long-term viability rests on policies that ________ rather than magnify commodity shocks.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-62",
+          "number": "62",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "smooth cross-sector risk",
+            "chase speculative highs",
+            "mirror past subsidies",
+            "cap export volumes",
+            "ignore price signals"
+          ],
+          "answer": 1,
+          "explanation": "정책은 '부문 간 위험을 완화(smooth cross-sector risk)'해야 함."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "volatility",
+          "meaning": "변동성"
+        },
+        {
+          "word": "bumper",
+          "meaning": "풍작의"
+        },
+        {
+          "word": "smooth cross-sector risk",
+          "meaning": "부문 간 위험을 완화하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p63",
@@ -504,7 +2362,37 @@
       "title": "",
       "text": "Telemedicine boomed during lockdowns as clinicians diagnosed rashes and coughs over video chat. Rural patients saved hours of travel, yet physicians noticed that subtle tremors or gait changes often go unseen through a webcam. High-resolution cameras help, but they cannot replicate hands-on palpation or measure joint resistance. Hybrid care models now combine remote check-ins with periodic in-person exams. Hospitals allocate scarce appointment slots to complex cases flagged by digital triage. The goal is not to digitize everything but to delegate routine monitoring to pixels, freeing human touch for nuanced puzzles. Success hinges on workflows that ________ instead of replace physical assessment.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-63",
+          "number": "63",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "blend both modalities",
+            "delay urgent referrals",
+            "eliminate bedside manners",
+            "monetize prescription renewals",
+            "downplay tactile evidence"
+          ],
+          "answer": 1,
+          "explanation": "성공적인 원격의료는 '두 양식을 혼합(blend both modalities)'해야 함."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "gait",
+          "meaning": "걸음걸이"
+        },
+        {
+          "word": "palpation",
+          "meaning": "촉진"
+        },
+        {
+          "word": "blend both modalities",
+          "meaning": "두 양식을 혼합하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p64",
@@ -512,7 +2400,37 @@
       "title": "",
       "text": "Crowd-funded science platforms let amateur donors bankroll niche experiments that struggle to win grants. A project mapping urban bee diversity raised enough money to outfit volunteers with portable DNA sequencers. Data flooded in from window boxes and rooftop hives, revealing unexpected pollinator highways. Traditional funding agencies took note and provided follow-up awards. Yet some critics argue that popularity contests favor photogenic creatures over vital microbes hidden in soil. Democratizing research dollars is laudable only if mechanisms guide enthusiasm toward societal need. Designers are adding expert review panels to rank proposals before campaign launch. The reforms aim to ________ between public passion and scientific rigor.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-64",
+          "number": "64",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "strike a balance",
+            "silence donor voices",
+            "replicate elite bias",
+            "overfund viral memes",
+            "detach peer feedback"
+          ],
+          "answer": 1,
+          "explanation": "대중의 열정과 과학적 엄밀함 사이의 '균형을 맞춰야(strike a balance)' 함."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "bankroll",
+          "meaning": "자금을 대다"
+        },
+        {
+          "word": "laudable",
+          "meaning": "칭찬할 만한"
+        },
+        {
+          "word": "strike a balance",
+          "meaning": "균형을 맞추다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p65",
@@ -520,7 +2438,37 @@
       "title": "",
       "text": "Gecko-inspired adhesives cling to glass without glue, relying on microscopic hairs that exploit van der Waals forces. Engineers printing synthetic versions claim future skyscraper cleaners will stroll up windows like reptiles. Field tests, however, reveal rapid performance drops when dust coats the material. Nature solves this by shedding skin, presenting fresh pads after each climb. Researchers now prototype peel-away film layers to mimic the renewal process. Commercial success will depend on products that maintain grip across months of grime and rain. Practical deployment thus requires designs that ________ rather than crumble under urban conditions.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-65",
+          "number": "65",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "endure real-world wear",
+            "mimic lab humidity",
+            "dissolve in rainfall",
+            "maximize single use",
+            "ignore particulate matter"
+          ],
+          "answer": 1,
+          "explanation": "실용적인 배치는 '실제 마모를 견디는(endure real-world wear)' 디자인을 요구함."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "exploit",
+          "meaning": "이용하다"
+        },
+        {
+          "word": "grime",
+          "meaning": "때, 먼지"
+        },
+        {
+          "word": "endure real-world wear",
+          "meaning": "실제 마모를 견디다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p66",
@@ -528,7 +2476,37 @@
       "title": "",
       "text": "Cyber-security teams once built moats around corporate networks, trusting firewalls to bar outsiders. Remote work shattered the perimeter as laptops log in from cafés and smartphones sync inboxes on public Wi-Fi. \"Zero-trust\" frameworks now verify every request regardless of location, encrypting micro-chunks of data in transit. The architecture reduces blast radius when credentials leak, but employees grumble about constant authentication prompts. Usability studies reveal that frequent log-ins increase risky behaviors like writing passwords on sticky notes. Effective defense therefore demands interfaces that ________ while enforcing strict protocols.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-66",
+          "number": "66",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "minimize user friction",
+            "isolate admin dashboards",
+            "duplicate legacy servers",
+            "reward weak shortcuts",
+            "broadcast access tokens"
+          ],
+          "answer": 1,
+          "explanation": "효과적인 보안은 '사용자 마찰을 최소화(minimize user friction)'해야 함."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "moat",
+          "meaning": "해자"
+        },
+        {
+          "word": "grumble",
+          "meaning": "불평하다"
+        },
+        {
+          "word": "minimize user friction",
+          "meaning": "사용자 마찰을 최소화하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p67",
@@ -536,7 +2514,37 @@
       "title": "",
       "text": "Peregrine falcons have colonized skyscrapers, trading cliff ledges for steel beams with comparable height and thermal updrafts. Residents cheer Instagram-ready hatchlings but fret over pigeon feathers drifting onto balconies. Urban ecologists argue that apex predators can rebalance city ecosystems by thinning rodents. Authorities install nest boxes to steer raptors away from air-intake vents. Coexistence hinges on building codes that accommodate wildlife without compromising ventilation. Design guidelines must therefore ________ between human comfort and avian habitat.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-67",
+          "number": "67",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "carve out compromise",
+            "mandate glass facades",
+            "suppress nesting noise",
+            "export breeding pairs",
+            "ban rooftop gardens"
+          ],
+          "answer": 1,
+          "explanation": "인간의 편안함과 조류 서식지 사이의 '타협점을 만들어야(carve out compromise)' 함."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "ledge",
+          "meaning": "선반 모양의 지형"
+        },
+        {
+          "word": "fret over",
+          "meaning": "~에 대해 초조해하다"
+        },
+        {
+          "word": "carve out compromise",
+          "meaning": "타협점을 만들다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p68",
@@ -544,7 +2552,37 @@
       "title": "",
       "text": "Seedlings grown aboard the International Space Station twist their roots in circles, confused by microgravity’s lack of down. LED chambers adjust red-blue ratios to encourage normal leaf development, yet water still clings to roots in floating bubbles. Botanists explore rotational planters that simulate gravity through spin, but hardware mass limits launch capacity. The ultimate goal is a self-sustaining lunar greenhouse where astronauts harvest salad beside regolith. Early prototypes suggest that plants can adapt if environmental cues overlap enough with Earth standards. Breakthroughs will come from cultivation systems that ________ the absence of gravity’s guidance.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-68",
+          "number": "68",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "compensate for weightlessness",
+            "replicate zero-gene traits",
+            "perpetuate root confusion",
+            "standardize seed sterilization",
+            "abandon photosynthesis research"
+          ],
+          "answer": 1,
+          "explanation": "성공적인 우주 농업은 '무중력을 보완(compensate for weightlessness)'해야 함."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "seedling",
+          "meaning": "묘목"
+        },
+        {
+          "word": "regolith",
+          "meaning": "표토"
+        },
+        {
+          "word": "compensate for weightlessness",
+          "meaning": "무중력을 보완하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p69",
@@ -552,7 +2590,37 @@
       "title": "",
       "text": "Makers in developing countries salvage e-waste motherboards to build open-source weather stations for farmers. Solder fumes and inconsistent part quality challenge workshop safety, yet the low-cost sensors outperform absent infrastructure. Training manuals translated into local languages empower high-school clubs to repair circuits without outsourcing. Agricultural yield forecasts improve as micro-climate data fill blank spots between official towers. NGOs distributing kits must still budget for replacement chips when lightning fries prototypes. Longevity will hinge on supply chains that ________ rather than disrupt circular-economy ideals.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-69",
+          "number": "69",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "reinforce local repair",
+            "mandate fresh imports",
+            "inflate component costs",
+            "centralize maintenance hubs",
+            "prohibit donor feedback"
+          ],
+          "answer": 1,
+          "explanation": "지속 가능성은 '지역 수리를 강화(reinforce local repair)'하는 공급망에 달려 있음."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "salvage",
+          "meaning": "구조하다, 재활용하다"
+        },
+        {
+          "word": "outperform",
+          "meaning": "~보다 성능이 뛰어나다"
+        },
+        {
+          "word": "reinforce local repair",
+          "meaning": "지역 수리를 강화하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p70",
@@ -560,7 +2628,37 @@
       "title": "",
       "text": "Art museums experiment with scent diffusers and tactile displays to engage visitors beyond sight. A gallery pairing cedar aroma with a landscape painting recorded longer dwell times and richer verbal descriptions. Neuroscientists explain that multi-sensory stimuli activate associative memory networks, deepening emotional imprint. Critics counter that adding layers risks overshadowing the artwork’s original intent. Curators reply that controlled accents can revive dull collections for new audiences. Pilot programs will succeed only if interventions ________ instead of dominate aesthetic experience.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-70",
+          "number": "70",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "complement visual meaning",
+            "monetize souvenir sales",
+            "drown subtle palettes",
+            "randomize odor bursts",
+            "erase curatorial notes"
+          ],
+          "answer": 1,
+          "explanation": "개입은 시각적 의미를 지배하는 대신 '보완해야(complement visual meaning)' 함."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "tactile",
+          "meaning": "촉각의"
+        },
+        {
+          "word": "overshadow",
+          "meaning": "그림자를 드리우다"
+        },
+        {
+          "word": "complement visual meaning",
+          "meaning": "시각적 의미를 보완하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p71",
@@ -568,7 +2666,37 @@
       "title": "",
       "text": "Electric-vehicle makers tout “vegan leather” interiors manufactured from petroleum-based polyurethane. While no animals are harmed, lifecycle analyses reveal higher energy demand and end-of-life microplastic shedding compared with responsibly raised cowhide. Material scientists prototype cactus and mushroom composites as biodegradable alternatives, but scale remains limited. Marketing slogans risk green-washing complex trade-offs into simple virtue signals. Regulators consider labeling standards that score upholstery on emissions, durability, and recyclability. Informed consumers could then choose seats backed by numbers rather than buzzwords. True sustainability will arise from labels that ________ across multiple impact categories.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-71",
+          "number": "71",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "weigh trade-offs transparently",
+            "spotlight single metrics",
+            "favor dominant suppliers",
+            "ignore disposal phases",
+            "enforce color uniformity"
+          ],
+          "answer": 1,
+          "explanation": "진정한 지속가능성은 '이해득실을 투명하게 따지는(weigh trade-offs transparently)' 라벨에서 나옴."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "tout",
+          "meaning": "내세우다"
+        },
+        {
+          "word": "green-washing",
+          "meaning": "위장 환경주의"
+        },
+        {
+          "word": "weigh trade-offs transparently",
+          "meaning": "이해득실을 투명하게 따지다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p72",
@@ -576,7 +2704,37 @@
       "title": "",
       "text": "NASA’s Artemis program plans to mine lunar ice for rocket fuel, reducing payload mass launched from Earth. Planetary ethicists argue that water serves not only engineering goals but also future tourism, research, and possible settlements. Establishing extraction quotas before habitation patterns evolve could unfairly lock stakeholders out. Historical precedent on Antarctica shows that early treaties shape centuries of governance. Multilateral negotiations therefore seek adaptive frameworks that revisit allocations as knowledge grows. The challenge is crafting rules that ________ while avoiding resource rushes.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-72",
+          "number": "72",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "leave room for evolution",
+            "guarantee static shares",
+            "duplicate colonial models",
+            "prioritize corporate bids",
+            "postpone legal clarity"
+          ],
+          "answer": 1,
+          "explanation": "규칙은 자원 경쟁을 피하면서도 '진화의 여지를 남겨야(leave room for evolution)' 함."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "payload",
+          "meaning": "탑재량"
+        },
+        {
+          "word": "multilateral",
+          "meaning": "다자간의"
+        },
+        {
+          "word": "leave room for evolution",
+          "meaning": "진화의 여지를 남기다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p73",
@@ -584,7 +2742,37 @@
       "title": "",
       "text": "Millions watched a viral video of an AI composing Bach-style chorales in seconds. Musicians praised the harmonic accuracy yet felt uneasy about jobs teaching beginner exercises. Education researchers found that students who used the tool to generate practice pieces improved sight-reading faster. Conversely, some began skipping theory drills, trusting the algorithm to fill gaps. The outcome hinges on framing AI as a partner that augments rather than replaces skill acquisition. Curriculum designers now include reflection prompts asking why each chord progression works. The objective is an ecosystem where algorithms ________, not supplant it.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-73",
+          "number": "73",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "scaffold and extend human creativity",
+            "erase and overwrite human creativity",
+            "patent historic styles of human creativity",
+            "discourage improvisation in human creativity",
+            "commodify sheet music for human creativity"
+          ],
+          "answer": 1,
+          "explanation": "알고리즘은 인간의 창의성을 대체하는 것이 아니라 '발판을 놓고 확장해야(scaffold and extend)' 함."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "chorale",
+          "meaning": "합창곡"
+        },
+        {
+          "word": "augment",
+          "meaning": "증강하다"
+        },
+        {
+          "word": "scaffold and extend",
+          "meaning": "발판을 놓고 확장하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p74",
@@ -592,7 +2780,37 @@
       "title": "",
       "text": "Public parks install outdoor gyms with pull-up bars and ellipticals, aiming to democratize fitness. Surveys show initial spikes in use, but maintenance neglect soon rusts bearings and deters visitors. Paint chips invite graffiti, and broken pedals turn equipment into hazards. A successful model in Copenhagen contracts neighborhood associations to conduct weekly inspections funded by micro-taxes on nearby cafés. Vandalism fell as locals felt ownership over the amenity. Replication elsewhere will depend on governance structures that ________ instead of outsourcing upkeep indefinitely.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-74",
+          "number": "74",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "foster community stewardship",
+            "privatize green spaces",
+            "restrict citizen access",
+            "mandate corporate branding",
+            "rotate installation sites"
+          ],
+          "answer": 1,
+          "explanation": "성공적인 공공 시설은 '공동체 주인의식을 길러야(foster community stewardship)' 함."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "democratize",
+          "meaning": "민주화하다, 대중화하다"
+        },
+        {
+          "word": "amenity",
+          "meaning": "편의 시설"
+        },
+        {
+          "word": "foster community stewardship",
+          "meaning": "공동체 주인의식을 기르다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p75",
@@ -600,7 +2818,37 @@
       "title": "",
       "text": "Computer-generated imagery brings dinosaurs to life on screen, yet paleontologists caution that skin color remains speculative. Artists choose vibrant feathers to captivate audiences, and these depictions quickly seep into textbooks. Students internalize hues unsupported by fossil pigment analyses, skewing perception of prehistoric ecosystems. Collaborations between studios and researchers could annotate films with uncertainty ranges, teaching the provisional nature of science. Otherwise, aesthetic choices masquerade as facts. Educational accuracy demands portrayals that ________ instead of cement conjecture.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-75",
+          "number": "75",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "highlight evidentiary limits",
+            "freeze popular myths",
+            "valorize bold palettes",
+            "dismiss scientific advice",
+            "monetize factual gaps"
+          ],
+          "answer": 1,
+          "explanation": "교육적 정확성은 추측을 확정하는 대신 '증거의 한계를 강조해야(highlight evidentiary limits)' 함."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "speculative",
+          "meaning": "추측에 근거한"
+        },
+        {
+          "word": "provisional",
+          "meaning": "임시적인, 잠정적인"
+        },
+        {
+          "word": "highlight evidentiary limits",
+          "meaning": "증거의 한계를 강조하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p76",
@@ -608,7 +2856,37 @@
       "title": "",
       "text": "Smart thermostats schedule heating cycles to shave peak-hour demand, rewarding users with lower bills. Grid operators cheer reduced strain, yet privacy advocates worry about aggregated data revealing household routines. Burglars might infer vacation absences by analyzing temperature logs leaked online. Device makers add on-board encryption chips and anonymize cloud analytics. Consumer trust will hinge on safeguards that ________ without stifling energy innovation.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-76",
+          "number": "76",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "protect behavioral patterns",
+            "harvest granular metadata",
+            "upcharge basic security",
+            "disable remote updates",
+            "require paper statements"
+          ],
+          "answer": 1,
+          "explanation": "소비자 신뢰는 에너지 혁신을 저해하지 않으면서 '행동 패턴을 보호하는(protect behavioral patterns)' 안전장치에 달려 있음."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "shave",
+          "meaning": "줄이다, 깎다"
+        },
+        {
+          "word": "stifle",
+          "meaning": "억누르다"
+        },
+        {
+          "word": "protect behavioral patterns",
+          "meaning": "행동 패턴을 보호하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p77",
@@ -616,7 +2894,37 @@
       "title": "",
       "text": "Researchers implant flexible electrodes into paralyzed patients’ spinal cords, restoring partial hand motion when coupled with machine-learning decoders. Videos of regained ability draw tears, yet long-term biocompatibility hurdles remain. Scar tissue can insulate contacts, degrading signal strength over months. Engineers explore hydrogel coatings that release anti-inflammatory molecules on demand. Trials succeed when hardware and biology negotiate a delicate compromise. Therapies will scale only through materials that ________ immune rejection.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-77",
+          "number": "77",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "coexist peacefully inside",
+            "trigger chronic swelling",
+            "skip regulatory review",
+            "break down overnight",
+            "block nutrient flow"
+          ],
+          "answer": 1,
+          "explanation": "치료법은 면역 거부 반응을 유발하는 대신 '내부에서 평화롭게 공존하는(coexist peacefully inside)' 재료를 통해 확장될 것."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "biocompatibility",
+          "meaning": "생체 적합성"
+        },
+        {
+          "word": "insulate",
+          "meaning": "절연하다"
+        },
+        {
+          "word": "coexist peacefully inside",
+          "meaning": "내부에서 평화롭게 공존하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p78",
@@ -624,7 +2932,37 @@
       "title": "",
       "text": "As newsrooms shrink, reporters mine social platforms for eyewitness footage of breaking events. Verification units geolocate video shadows to confirm authenticity before publication. The process races against misinformation farms uploading deep-fake clips. Artificial-intelligence detectors flag odd pixel artifacts, but adversaries iterate fast. Journalism schools now teach “open-source intelligence” alongside shorthand. Maintaining credibility will require workflows that ________ amid an arms race of deception.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-78",
+          "number": "78",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "evolve in real time",
+            "outsource every check",
+            "rely on gut instinct",
+            "embargo live streams",
+            "ignore crowd input"
+          ],
+          "answer": 1,
+          "explanation": "신뢰도를 유지하려면 기만과의 군비 경쟁 속에서 '실시간으로 진화하는(evolve in real time)' 워크플로우가 필요함."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "geolocate",
+          "meaning": "위치를 파악하다"
+        },
+        {
+          "word": "adversary",
+          "meaning": "적수"
+        },
+        {
+          "word": "evolve in real time",
+          "meaning": "실시간으로 진화하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p79",
@@ -632,7 +2970,37 @@
       "title": "",
       "text": "High-altitude balloons carrying internet routers promise to connect remote ranches, yet ground antennas must track swaying payloads across the sky. Mechanical gimbals prove expensive, so inventors develop software beam-forming that electronically steers reception. Early adopters applaud smoother Zoom calls, but lightning storms occasionally fry hardware. Insurance firms hesitate to underwrite devices without multi-year failure stats. Commercial rollout will depend on warranties that ________ against rare but costly damage.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-79",
+          "number": "79",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "hedge user investment",
+            "waive manufacturer liability",
+            "inflate subscription fees",
+            "throttle bandwidth limits",
+            "discourage rural coverage"
+          ],
+          "answer": 1,
+          "explanation": "상업적 출시는 드물지만 비용이 많이 드는 손상에 대비해 '사용자 투자를 보호하는(hedge user investment)' 보증에 달려 있음."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "gimbal",
+          "meaning": "짐벌(수평 유지 장치)"
+        },
+        {
+          "word": "underwrite",
+          "meaning": "(보험을) 인수하다"
+        },
+        {
+          "word": "hedge user investment",
+          "meaning": "사용자 투자를 보호하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p80",
@@ -640,7 +3008,37 @@
       "title": "",
       "text": "Virtual reality arcades advertise full-body haptic suits that simulate raindrops and recoil. Gamers queue for sensations previously belonging to theme parks, yet session time caps keep lines moving. Developers study whether intense immersion accelerates motion sickness adaptation or merely masks discomfort. Longitudinal data could guide design of home systems with milder feedback loops. Product viability hinges on experiences that excite without exhausting. Designers must craft games that ________ rather than overwhelm sensory channels.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-80",
+          "number": "80",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "balance stimulation levels",
+            "guarantee perpetual novelty",
+            "mandate rapid spins",
+            "prioritize visual clutter",
+            "eliminate calibration menus"
+          ],
+          "answer": 1,
+          "explanation": "디자이너는 감각 채널을 압도하기보다 '자극 수준의 균형을 맞추는(balance stimulation levels)' 게임을 만들어야 함."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "haptic",
+          "meaning": "촉각의"
+        },
+        {
+          "word": "recoil",
+          "meaning": "반동"
+        },
+        {
+          "word": "balance stimulation levels",
+          "meaning": "자극 수준의 균형을 맞추다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p81",
@@ -648,7 +3046,37 @@
       "title": "",
       "text": "Corporate carbon-offset programs plant monoculture pine forests that sequester CO₂ quickly but offer scant habitat diversity. Ecologists advocate mixed-species projects using native seedlings that mature more slowly yet resist pests and wildfire. Accounting frameworks still reward tons captured per dollar, ignoring resilience metrics. Some companies now purchase “biodiversity credits” alongside carbon certificates, aligning climate and conservation goals. Regulatory clarity could accelerate this trend by integrating both into one ledger. Sustainable reforestation depends on metrics that ________ instead of chase short-term numbers.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-81",
+          "number": "81",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "value ecological complexity",
+            "favor rapid tonnage",
+            "downgrade species richness",
+            "overlook soil health",
+            "replicate plantation models"
+          ],
+          "answer": 1,
+          "explanation": "지속가능한 재조림은 단기적인 수치보다 '생태적 복잡성을 가치 있게 여기는(value ecological complexity)' 지표에 달려 있음."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "monoculture",
+          "meaning": "단일 경작"
+        },
+        {
+          "word": "scant",
+          "meaning": "부족한"
+        },
+        {
+          "word": "value ecological complexity",
+          "meaning": "생태적 복잡성을 가치 있게 여기다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p82",
@@ -656,7 +3084,37 @@
       "title": "",
       "text": "Crowds cheer robotic exoskeleton races where paraplegic athletes sprint down stadium tracks. The spectacle raises awareness, yet most rehab clinics cannot afford six-figure suits. Engineers test 3-D-printed joints that cut costs by two-thirds, but regulatory approvals lag behind innovation. Charity trials demonstrate life-changing mobility, though battery weight still strains shoulders after extended use. Insurers remain cautious without long-term durability data. Closing the accessibility gap will require funding models that ________ beyond headline-grabbing prototypes.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-82",
+          "number": "82",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "scale assistance universally",
+            "chase viral publicity",
+            "restrict clinical access",
+            "inflate subscription fees",
+            "sideline occupational therapy"
+          ],
+          "answer": 1,
+          "explanation": "접근성 격차를 해소하려면 시제품을 넘어 '보편적으로 지원을 확장하는(scale assistance universally)' 펀딩 모델이 필요함."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "paraplegic",
+          "meaning": "하반신 마비의"
+        },
+        {
+          "word": "six-figure",
+          "meaning": "여섯 자리 수의(십만 단위)"
+        },
+        {
+          "word": "scale assistance universally",
+          "meaning": "지원을 보편적으로 확장하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p83",
@@ -664,7 +3122,37 @@
       "title": "",
       "text": "Coastal cities raise seawalls to block storm surges, yet impermeable barriers reflect wave energy that scours adjacent beaches. Marine architects propose “living breakwaters” built from oyster reefs that grow thicker each season. Pilot sites reduce erosion and revive fisheries, but construction timelines outlast most political cycles. Voters often demand visible cement before the next election, pushing bureaucrats toward quick fixes. Policy continuity will depend on communication campaigns that ________ of ecological infrastructure.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-83",
+          "number": "83",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "highlight long-term payoffs",
+            "promise instant defense",
+            "sideline local fishers",
+            "neglect maintenance budgets",
+            "reject natural solutions"
+          ],
+          "answer": 1,
+          "explanation": "정책의 연속성은 생태 기반 시설의 '장기적 이익을 강조하는(highlight long-term payoffs)' 캠페인에 달려 있음."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "impermeable",
+          "meaning": "불투과성의"
+        },
+        {
+          "word": "scour",
+          "meaning": "침식시키다"
+        },
+        {
+          "word": "highlight long-term payoffs",
+          "meaning": "장기적 이익을 강조하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p84",
@@ -672,7 +3160,37 @@
       "title": "",
       "text": "Augmented-reality glasses overlay repair manuals onto factory machines, slashing downtime for novice technicians. Productivity charts rise, but union leaders worry that skill devaluation will justify staff reductions. Management counters that AR up-skills workers faster, qualifying them for higher-tier tasks. Economists note that technology often polarizes labor markets unless accompanied by retraining programs. Sustainable adoption thus hinges on HR strategies that ________ rather than erode employment quality.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-84",
+          "number": "84",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "share efficiency gains",
+            "lock wages downward",
+            "hide algorithmic metrics",
+            "freeze career ladders",
+            "outsource core expertise"
+          ],
+          "answer": 1,
+          "explanation": "지속 가능한 도입은 고용의 질을 잠식하는 대신 '효율성 이익을 공유하는(share efficiency gains)' HR 전략에 달려 있음."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "slash",
+          "meaning": "대폭 줄이다"
+        },
+        {
+          "word": "devaluation",
+          "meaning": "평가절하"
+        },
+        {
+          "word": "share efficiency gains",
+          "meaning": "효율성 이익을 공유하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p85",
@@ -680,7 +3198,37 @@
       "title": "",
       "text": "Invasive lionfish devour juvenile reef fish across the Caribbean, yet their flesh is safe and tasty. Chefs promote “eat the enemy” campaigns, turning ecological menace into gourmet entrée. Fishing tournaments offer cash prizes, but scuba gear limits catch volume compared with the species’ explosive reproduction. Marine biologists caution that culinary demand must persist past trend cycles to dent populations. Success will depend on supply chains that ________ from reef to restaurant.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-85",
+          "number": "85",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "keep demand sustained",
+            "spike prices briefly",
+            "exclude local fishers",
+            "glamorize short videos",
+            "ban culinary schools"
+          ],
+          "answer": 1,
+          "explanation": "성공은 산호초에서 식당까지 '수요를 지속시키는(keep demand sustained)' 공급망에 달려 있음."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "invasive",
+          "meaning": "침입성의"
+        },
+        {
+          "word": "menace",
+          "meaning": "위협"
+        },
+        {
+          "word": "keep demand sustained",
+          "meaning": "수요를 지속시키다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p86",
@@ -688,7 +3236,37 @@
       "title": "",
       "text": "Digital twins of entire cities run inside supercomputers, testing where floodwaters will collect after record rain. Mayors preview evacuation routes months before clouds gather. Yet unequal data coverage means informal settlements often appear as blank spots, erasing vulnerable populations from simulations. Civic technologists push for participatory mapping workshops using smartphones and drones. Resilience analytics must therefore ________ the people most at risk.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-86",
+          "number": "86",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "include overlooked neighborhoods",
+            "model highways only",
+            "anonymize hazard zones",
+            "delay field validation",
+            "privatize spatial data"
+          ],
+          "answer": 1,
+          "explanation": "회복력 분석은 진정으로 효과적이려면 '소외된 지역을 포함해야(include overlooked neighborhoods)' 함."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "digital twin",
+          "meaning": "디지털 트윈"
+        },
+        {
+          "word": "informal settlement",
+          "meaning": "비공식 정착지"
+        },
+        {
+          "word": "include overlooked neighborhoods",
+          "meaning": "소외된 지역을 포함하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p87",
@@ -696,7 +3274,37 @@
       "title": "",
       "text": "Gig-economy grocery shoppers race to beat 15-minute delivery promises, weaving scooters through traffic. Insurance premiums skyrocket, but drivers keep phones mounted on handlebars to track constantly updating routes. City officials debate speed-governor mandates, while platforms test batching orders to reduce mileage. Worker safety ultimately rests on algorithms that ________ instead of reward reckless haste.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-87",
+          "number": "87",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "favor sustainable pacing",
+            "gamify tight deadlines",
+            "hide delivery metrics",
+            "penalize cautious turns",
+            "downplay accident rates"
+          ],
+          "answer": 1,
+          "explanation": "근로자 안전은 무모한 서두름을 보상하는 대신 '지속 가능한 속도를 선호하는(favor sustainable pacing)' 알고리즘에 달려 있음."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "gig-economy",
+          "meaning": "긱 경제"
+        },
+        {
+          "word": "mandate",
+          "meaning": "명령, 지시"
+        },
+        {
+          "word": "favor sustainable pacing",
+          "meaning": "지속 가능한 속도를 선호하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p88",
@@ -704,7 +3312,37 @@
       "title": "",
       "text": "DNA-editing tools let conservationists contemplate “gene-drive” mosquitoes engineered to resist malaria parasites. Field releases could slash disease burden, yet ecological side-effects remain uncertain. Critics cite past biological controls that backfired, such as cane toads overrunning Australia. Regulators weigh the moral cost of inaction against potential unintended cascades. Decision frameworks must balance urgent public health with biodiversity ethics. Prudent governance will arise from consultations that ________ before deployment.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-88",
+          "number": "88",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "weigh cross-species risks",
+            "bypass ethical review",
+            "guarantee zero mutation",
+            "commercialize patents first",
+            "isolate lab findings"
+          ],
+          "answer": 1,
+          "explanation": "신중한 거버넌스는 배포 전에 '종간 위험을 평가하는(weigh cross-species risks)' 협의에서 비롯될 것."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "contemplate",
+          "meaning": "고려하다"
+        },
+        {
+          "word": "prudent",
+          "meaning": "신중한"
+        },
+        {
+          "word": "weigh cross-species risks",
+          "meaning": "종간 위험을 평가하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p89",
@@ -712,7 +3350,37 @@
       "title": "",
       "text": "Remote-sensing satellites detect methane plumes invisible to pilots flying overhead. Oil companies pledge rapid repairs, yet subcontractor crews can take weeks to arrive. A start-up now pairs leak alarms with local drone operators who carry epoxy patches, shrinking response times to hours. Regulatory credits reward enterprises that meet reduction targets. Climate advocates warn that monitoring without fines invites green-washing. Effective mitigation stems from rules that ________ alongside transparency.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-89",
+          "number": "89",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "couple accountability measures",
+            "postpone penalty schemes",
+            "showcase glossy dashboards",
+            "fragment jurisdiction lines",
+            "exclude third-party audits"
+          ],
+          "answer": 1,
+          "explanation": "효과적인 완화는 투명성과 함께 '책임 조치를 결합하는(couple accountability measures)' 규칙에서 비롯됨."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "plume",
+          "meaning": "(연기 등의) 기둥"
+        },
+        {
+          "word": "mitigation",
+          "meaning": "완화"
+        },
+        {
+          "word": "couple accountability measures",
+          "meaning": "책임 조치를 결합하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p90",
@@ -720,7 +3388,37 @@
       "title": "",
       "text": "Language-learning apps bombard users with daily streak counters and cartoon trophies, funnelling them toward multiple-choice drills. Linguists argue that passive recognition differs from active recall needed for spontaneous conversation. Some platforms now integrate AI chat partners that adapt to learner errors in real time. Early studies show higher speaking confidence but also highlight over-politeness compared with real-world slang. Pedagogical value depends on dialogue engines that ________.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-90",
+          "number": "90",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "approximate street speech",
+            "freeze formal scripts",
+            "mute corrective feedback",
+            "award random badges",
+            "obscure pronunciation hints"
+          ],
+          "answer": 1,
+          "explanation": "교육적 가치는 '실제 구어에 근접하는(approximate street speech)' 대화 엔진에 달려 있음."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "bombard",
+          "meaning": "퍼붓다"
+        },
+        {
+          "word": "pedagogical",
+          "meaning": "교육학적인"
+        },
+        {
+          "word": "approximate street speech",
+          "meaning": "실제 구어에 근접하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p91",
@@ -728,7 +3426,37 @@
       "title": "",
       "text": "Blockchain advocates tout decentralized finance as environmentally benign, yet verifying transactions on certain networks now consumes more electricity than small nations. Renewable-energy credits partially offset emissions, but critics say offsets merely shuffle carbon on paper. Energy policy analysts call for protocols that reward efficiency improvements and penalize wasteful consensus mechanisms. New “proof-of-stake” models show promise, though adoption lags entrenched interests. Transparent dashboards could display real-time wattage, pressuring miners to migrate to greener grids. Planet-wide digital ledgers should not undermine planetary health. Sustainable crypto-economies will hinge on accounting systems that ________ across environmental dimensions.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-91",
+          "number": "91",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "weigh emissions holistically",
+            "track tokens publicly",
+            "expand hash incentives",
+            "ignore electricity markets",
+            "celebrate record prices"
+          ],
+          "answer": 1,
+          "explanation": "지속 가능한 암호 경제는 환경적 차원에서 '배출량을 총체적으로 평가하는(weigh emissions holistically)' 회계 시스템에 달려 있음."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "benign",
+          "meaning": "무해한"
+        },
+        {
+          "word": "entrenched",
+          "meaning": "견고한, 확립된"
+        },
+        {
+          "word": "weigh emissions holistically",
+          "meaning": "배출량을 총체적으로 평가하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p92",
@@ -736,7 +3464,37 @@
       "title": "",
       "text": "Start-ups offer AI voice-cloning that can mimic anyone after a minute of audio, opening doors for personalized assistants and movie dubbing. Journalists, however, warn of phone scams where relatives’ voices plead for urgent cash. Deep-fake election robocalls already sow distrust, hinting at larger disinformation campaigns. Legislators debate consent registries and watermark mandates, but enforcement across borders remains murky. Audio forensics teams race to develop spectral signatures that flag synthetic intonation. Public education about verification lags behind adoption curves. Safeguarding civil discourse will require guardrails that ________ in the era of synthetic speech.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-92",
+          "number": "92",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "safeguard public trust",
+            "monetize vocal likeness",
+            "silence whistle-blowers",
+            "blur identity lines",
+            "exaggerate novelty claims"
+          ],
+          "answer": 1,
+          "explanation": "시민 담론을 보호하려면 합성 음성 시대에 '대중의 신뢰를 보호하는(safeguard public trust)' 안전장치가 필요함."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "dubbing",
+          "meaning": "더빙"
+        },
+        {
+          "word": "murky",
+          "meaning": "흐린, 불분명한"
+        },
+        {
+          "word": "safeguard public trust",
+          "meaning": "대중의 신뢰를 보호하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p93",
@@ -744,7 +3502,37 @@
       "title": "",
       "text": "Beachfront towns rebrand as “digital-nomad havens,” offering free coworking passes to lure remote developers. Rental apps soon list studio flats at tourist prices, pushing teachers and fishers toward inland commutes. Local councils propose tiered tax rates to funnel revenue into affordable housing, but enforcement proves tricky when leases go private. Community organizers host dialogue circles where newcomers and longtime residents share neighborhood histories. Sociologists observe that cultural friction eases when both groups volunteer in the same cleanup drives. Balancing economic influx with social cohesion depends on zoning and taxation tools that ________ instead of pricing locals out.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-93",
+          "number": "93",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "protect local affordability",
+            "mirror global demand",
+            "amplify short-stay profits",
+            "mandate digital visas",
+            "glamorize remote luxury"
+          ],
+          "answer": 1,
+          "explanation": "경제적 유입과 사회적 결속의 균형은 '지역의 구매력을 보호하는(protect local affordability)' 도구에 달려 있음."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "haven",
+          "meaning": "안식처"
+        },
+        {
+          "word": "cohesion",
+          "meaning": "결속"
+        },
+        {
+          "word": "protect local affordability",
+          "meaning": "지역의 구매력을 보호하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p94",
@@ -752,7 +3540,37 @@
       "title": "",
       "text": "Agricultural feedlots boost growth by adding low-dose antibiotics to grain, a practice veterinarians decry as a breeding ground for superbugs. Residues seep into waterways, where resistant genes hop between species. Some supermarket chains now source “antibiotic-free” meat, but labeling inconsistencies confuse shoppers. Pilot programs vaccinate livestock against common infections, reducing prophylactic pill counts. Policymakers debate import tariffs on drug-dependent beef to level competitive costs. A post-antibiotic menu will emerge only through standards that ________ for both barn and biosphere.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-94",
+          "number": "94",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "reserve critical antibiotics",
+            "halve daily rations",
+            "intensify feedlot density",
+            "subsidize broad-spectrum use",
+            "obscure residue tests"
+          ],
+          "answer": 1,
+          "explanation": "항생제 이후 시대의 메뉴는 축사와 생물권 모두를 위해 '필수 항생제를 보존하는(reserve critical antibiotics)' 기준을 통해 나타날 것."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "feedlot",
+          "meaning": "가축 사육장"
+        },
+        {
+          "word": "decry",
+          "meaning": "비난하다"
+        },
+        {
+          "word": "reserve critical antibiotics",
+          "meaning": "필수 항생제를 보존하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p95",
@@ -760,7 +3578,37 @@
       "title": "",
       "text": "Carebots in elder-care facilities dispense medication reminders, but residents still crave human laughter over synthetic chirps. Trials show improved adherence yet stagnant loneliness scores. Designers add plush exteriors and customizable voices, hoping to trigger emotional warmth. Gerontologists caution that genuine companionship arises from unpredictable stories and tactile nuance. Staffing ratios rarely improve when robots arrive, feeding fears of high-tech isolation. Success will hinge on deployment models that ________ rather than sideline caregivers.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-95",
+          "number": "95",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "complement human touch",
+            "replace night shifts",
+            "gamify pill intake",
+            "harvest patient data",
+            "dictate social schedules"
+          ],
+          "answer": 1,
+          "explanation": "성공은 간병인을 소외시키는 대신 '인간의 손길을 보완하는(complement human touch)' 배치 모델에 달려 있음."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "adherence",
+          "meaning": "준수"
+        },
+        {
+          "word": "gerontologist",
+          "meaning": "노인학자"
+        },
+        {
+          "word": "complement human touch",
+          "meaning": "인간의 손길을 보완하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p96",
@@ -768,7 +3616,37 @@
       "title": "",
       "text": "Restoring drained urban peatlands could lock away gigatons of CO₂ and buffer neighborhoods against flash floods. Yet real-estate developers eye the reclaimed land for high-rise projects promising tax revenue. Ecologists map methane fluxes to show that water-logged soils must remain saturated to stay net-negative in emissions. Community workshops explore boardwalk parks that offer recreation without excavation. Funding proposals bundle carbon credits with green-space grants, aligning environmental and civic goals. Long-term climate strategy depends on land-use rules that ________ for generations.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-96",
+          "number": "96",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "store carbon naturally",
+            "drain wetlands annually",
+            "expedite concrete pours",
+            "privatize public marshes",
+            "normalize peat fires"
+          ],
+          "answer": 1,
+          "explanation": "장기 기후 전략은 여러 세대에 걸쳐 '자연적으로 탄소를 저장하는(store carbon naturally)' 토지 이용 규칙에 달려 있음."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "peatland",
+          "meaning": "이탄지"
+        },
+        {
+          "word": "buffer",
+          "meaning": "완충하다"
+        },
+        {
+          "word": "store carbon naturally",
+          "meaning": "자연적으로 탄소를 저장하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p97",
@@ -776,7 +3654,37 @@
       "title": "",
       "text": "Quantum-computing headlines trumpet imminent breakthroughs in cryptography and drug discovery, but lab prototypes still struggle with error rates. Venture capital pours in on rumored milestones, inflating valuations beyond near-term capacity. Researchers temper hype with roadmaps detailing qubit fidelity thresholds needed for commercial advantage. Government grants prioritize noise-mitigation techniques over glossy demos. Industry credibility will rise only when progress reports ________ with realistic timelines.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-97",
+          "number": "97",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "align investor expectations",
+            "mask technical hurdles",
+            "accelerate press leaks",
+            "conflate bits and qubits",
+            "assume faultless gates"
+          ],
+          "answer": 1,
+          "explanation": "산업 신뢰도는 진행 보고서가 '투자자 기대를 조정하는(align investor expectations)' 경우에만 상승할 것."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "trumpet",
+          "meaning": "과시하다"
+        },
+        {
+          "word": "temper",
+          "meaning": "완화하다"
+        },
+        {
+          "word": "align investor expectations",
+          "meaning": "투자자 기대를 조정하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p98",
@@ -784,7 +3692,37 @@
       "title": "",
       "text": "Engineers test spacecraft lasers that melt aluminum shards in orbit, turning debris into propellant for on-board thrusters. The circular-fuel concept could defray cleanup costs by powering itself with trash. Material analyses must verify plume toxicity to sensitive telescope lenses nearby. Insurance underwriters await collision-risk models before backing salvage fleets. Diplomatic channels negotiate salvage rights for fragments originating from multiple nations. Viable space sanitation will rest on treaties that ________ instead of stoke sovereignty disputes.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-98",
+          "number": "98",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "recycle debris on-orbit",
+            "abandon cleanup entirely",
+            "weaponize beam arrays",
+            "ignore liability chains",
+            "patent orbital trash"
+          ],
+          "answer": 1,
+          "explanation": "실행 가능한 우주 위생은 주권 분쟁을 부추기는 대신 '궤도상에서 파편을 재활용하는(recycle debris on-orbit)' 조약에 달려 있음."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "shard",
+          "meaning": "파편"
+        },
+        {
+          "word": "defray",
+          "meaning": "부담하다, 지불하다"
+        },
+        {
+          "word": "recycle debris on-orbit",
+          "meaning": "궤도상에서 파편을 재활용하다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p99",
@@ -792,7 +3730,37 @@
       "title": "",
       "text": "Start-ups selling cricket protein bars position insects as climate-friendly steak alternatives. Early adopters cite nutty flavor, but surveys reveal queasiness tied to cultural perception rather than taste. Celebrity chefs experiment with ant-dust garnishes on haute cuisine, slowly shifting luxury norms. Classroom programs where students raise mealworms demystify chitin crunch. Scaling edible-insect markets will hinge on marketing that ________ beyond eco-jargon.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-99",
+          "number": "99",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "shifts dietary norms",
+            "shames meat eaters",
+            "hides ingredient lists",
+            "outlaws shellfish analogs",
+            "skews nutrition labels"
+          ],
+          "answer": 1,
+          "explanation": "식용 곤충 시장의 확장은 환경 용어를 넘어 '식문화 규범을 바꾸는(shifts dietary norms)' 마케팅에 달려 있음."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "queasiness",
+          "meaning": "메스꺼움"
+        },
+        {
+          "word": "haute cuisine",
+          "meaning": "고급 요리"
+        },
+        {
+          "word": "shifts dietary norms",
+          "meaning": "식문화 규범을 바꾸다"
+        }
+      ]
     },
     {
       "id": "reading-basic-p100",
@@ -800,7 +3768,37 @@
       "title": "",
       "text": "Wave-energy converters promise round-the-clock power, unlike sunlight-dependent panels, yet saltwater corrosion chews through metal joints. Engineers trial composite polymers and self-healing coatings inspired by squid beaks. Maintenance crews schedule dives during calm tides, but storms can demolish moorings overnight. Predictive sensors relay strain data to shore, triggering preemptive shutdowns. Lenders demand decade-long durability studies before financing coastal arrays. Commercial viability depends on devices that ________ under relentless surf.",
       "part": "6",
-      "questions": []
+      "questions": [
+        {
+          "id": "reading-basic-q6-100",
+          "number": "100",
+          "text": "",
+          "type": "reading-comprehension",
+          "choices": [
+            "withstand marine forces",
+            "fold after hurricanes",
+            "resell excess rust",
+            "inflate insurance rates",
+            "prefer freshwater sites"
+          ],
+          "answer": 1,
+          "explanation": "상업적 생존 가능성은 끊임없는 파도 속에서 '해양의 힘을 견디는(withstand marine forces)' 장치에 달려 있음."
+        }
+      ],
+      "vocabulary": [
+        {
+          "word": "corrosion",
+          "meaning": "부식"
+        },
+        {
+          "word": "preemptive",
+          "meaning": "선제적인"
+        },
+        {
+          "word": "withstand marine forces",
+          "meaning": "해양의 힘을 견디다"
+        }
+      ]
     }
   ]
 }

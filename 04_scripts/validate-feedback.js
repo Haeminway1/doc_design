@@ -74,7 +74,8 @@ if (dupes.length > 0) {
 (data.wrongAnswers || []).forEach((wa, idx) => {
   const prefix = `wrongAnswers[${idx}] Q${wa.q}`;
   if (!wa.q && wa.q !== 0) errors.push(`[FIELD] ${prefix}: q 필드 누락`);
-  if (!wa.selected) errors.push(`[FIELD] ${prefix}: selected 필드 누락`);
+  if (wa.selected === undefined) errors.push(`[FIELD] ${prefix}: selected 필드 누락`);
+  // selected: null은 미선택(미응답)으로 허용
   if (!wa.correct) errors.push(`[FIELD] ${prefix}: correct 필드 누락`);
   if (!wa.explanation) warnings.push(`[FIELD] ${prefix}: explanation 필드 누락`);
   if (!wa.studentAnalysis) warnings.push(`[FIELD] ${prefix}: studentAnalysis 필드 누락`);

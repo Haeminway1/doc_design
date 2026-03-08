@@ -7,7 +7,13 @@
     "study": "node 04_scripts/generate-study-pdf.js",
     "print": "node 04_scripts/images-to-pdf.js",
     "assemble": "node 04_scripts/assemble.js",
-    "validate": "node 04_scripts/validate-schema.js"
+    "validate": "node 04_scripts/validate-schema.js",
+    "validate:textbooks:data": "node 04_scripts/validate-textbook-data.js",
+    "audit:textbooks:trace": "node 04_scripts/audit-textbook-source-trace.js",
+    "audit:textbooks:render": "node 04_scripts/audit-render-integrity.js",
+    "build:textbook": "node 04_scripts/build-textbook.js",
+    "pdf:textbook": "node 04_scripts/generate-textbook-pdf.js",
+    "reextract:textbooks": "node 04_scripts/reextract-textbooks.js"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.78.0",

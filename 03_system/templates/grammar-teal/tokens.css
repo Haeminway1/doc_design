@@ -1,0 +1,64 @@
+/* =================================================================== */
+/* Grammar Teal Template — Design Tokens                              */
+/* 문법 Basic 템플릿                                                   */
+/* Vera's Document Studio                                             */
+/* =================================================================== */
+
+:root {
+    --color-accent-primary: #2B8C81 !important;
+    --color-accent-light: #EDF5F3 !important;
+    --color-accent-dark: #1E5F58 !important;
+    --color-accent-secondary: #E9C46A !important;
+
+    --color-concept-bg: #EDF5F3 !important;
+    --color-concept-border: #2B8C81 !important;
+    --color-example-bg: #F8F9FA !important;
+    --color-example-border: #E9C46A !important;
+    --color-warning-bg: #FFF8E1 !important;
+    --color-warning-border: #E9C46A !important;
+
+    --font-accent: 'Noto Serif KR', serif !important;
+
+    --radius-sm: 4px !important;
+    --radius-md: 6px !important;
+    --radius-lg: 8px !important;
+
+    --header-border-style: solid !important;
+    --header-border-color: #BDC3C7 !important;
+
+    --table-header-bg: var(--color-accent-primary) !important;
+    --table-header-border: 1px solid var(--color-accent-primary) !important;
+    --table-border-style: solid !important;
+}
+
+.page-header {
+    border-bottom: 1px solid #BDC3C7 !important;
+    color: #2C3E50 !important;
+}
+
+.chapter-title,
+.section-title .section-number,
+.problem-number,
+.word-title {
+    color: var(--color-accent-dark) !important;
+}
+
+.tip-box,
+.concept-box {
+    border-left: 4px solid var(--color-accent-primary) !important;
+    background-color: var(--color-concept-bg) !important;
+    border-radius: 0 var(--radius-md) var(--radius-md) 0 !important;
+}
+
+.example-block,
+.word-example {
+    background-color: var(--color-example-bg) !important;
+    border-left: 3px solid var(--color-example-border) !important;
+    border-radius: var(--radius-sm) !important;
+}
+
+table thead th {
+    background-color: var(--color-accent-primary) !important;
+    color: var(--color-white) !important;
+}
+

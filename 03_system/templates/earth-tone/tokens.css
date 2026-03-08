@@ -22,7 +22,7 @@
     --color-warning-border: #D4AF37 !important;
 
     /* --- Typography --- */
-    --font-serif-eng: 'Merriweather', serif !important;
+    --font-serif-eng: 'Inter', sans-serif !important;
 
     /* --- Shape & Borders --- */
     --radius-sm: 0px !important;
@@ -74,10 +74,11 @@ table th {
     border-bottom: 1px solid var(--color-border-default) !important;
 }
 
-/* English Text - Merriweather */
+/* English Text */
 .passage,
 .eng-text {
-    font-family: var(--font-serif-eng) !important;
+    font-family: var(--font-eng) !important;
+    font-style: normal !important;
 }
 
 /* Cover Background */

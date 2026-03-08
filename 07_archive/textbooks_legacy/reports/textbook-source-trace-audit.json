@@ -1,0 +1,1828 @@
+{
+  "summary": {
+    "books": 21,
+    "passed": 21,
+    "failed": 0
+  },
+  "books": [
+    {
+      "bookId": "grammar-advanced",
+      "manifest": "02_textbooks/books/grammar-advanced.yaml",
+      "pageCount": 21,
+      "pageKinds": {
+        "legacy-page": 13,
+        "problem-set": 4,
+        "answer-grid": 4
+      },
+      "output": {
+        "html": "02_textbooks/output_v2/html/grammar-advanced.html",
+        "pdf": "02_textbooks/output_v2/pdf/grammar-advanced.pdf"
+      },
+      "sourceAudit": {
+        "mode": "full-html",
+        "path": "02_textbooks/source/[편입영어]문법_advanced.html",
+        "exists": true,
+        "stats": {
+          "pageCount": 38,
+          "problemBlocks": 0,
+          "numberedProblemBlocks": 0,
+          "unnumberedProblemBlocks": 0,
+          "answerSections": 0,
+          "sectionTitles": 20
+        },
+        "markers": [
+          {
+            "text": "1.1 다중 절 구조와 주절-종속절 관계",
+            "foundInOutput": true
+          },
+          {
+            "text": "1.2 병렬 구조의 완벽성과 일치 원칙",
+            "foundInOutput": true
+          },
+          {
+            "text": "1.3 삽입구와 동격어의 고급 활용",
+            "foundInOutput": true
+          }
+        ]
+      },
+      "extractedHtmlMarker": {
+        "sourcePath": "grammar/advanced/ch01-content-01.html",
+        "marker": "1.1 다중 절 구조와 주절-종속절 관계",
+        "foundInOutput": true
+      },
+      "jsonAssetSummary": [
+        {
+          "path": "grammar/advanced/ch01-problems.json",
+          "kind": "problems",
+          "count": 25,
+          "answers": 25,
+          "explanations": 25,
+          "sampleIds": [
+            "grammar-advanced-1",
+            "grammar-advanced-2"
+          ]
+        },
+        {
+          "path": "grammar/advanced/ch02-problems.json",
+          "kind": "problems",
+          "count": 25,
+          "answers": 25,
+          "explanations": 25,
+          "sampleIds": [
+            "grammar-advanced-26",
+            "grammar-advanced-27"
+          ]
+        },
+        {
+          "path": "grammar/advanced/ch03-problems.json",
+          "kind": "problems",
+          "count": 25,
+          "answers": 25,
+          "explanations": 25,
+          "sampleIds": [
+            "grammar-advanced-51",
+            "grammar-advanced-52"
+          ]
+        },
+        {
+          "path": "grammar/advanced/ch04-problems.json",
+          "kind": "problems",
+          "count": 25,
+          "answers": 25,
+          "explanations": 25,
+          "sampleIds": [
+            "grammar-advanced-76",
+            "grammar-advanced-77"
+          ]
+        }
+      ],
+      "missingAssets": [],
+      "checks": {
+        "manifestExists": true,
+        "outputHtmlExists": true,
+        "outputPdfExists": true,
+        "manifestSourcesResolved": true,
+        "extractedHtmlMarkerPreserved": true,
+        "sourceMarkersPreserved": true,
+        "sourceExists": true
+      },
+      "status": "pass",
+      "failures": [],
+      "notes": []
+    },
+    {
+      "bookId": "grammar-basic",
+      "manifest": "02_textbooks/books/grammar-basic.yaml",
+      "pageCount": 44,
+      "pageKinds": {
+        "legacy-page": 35,
+        "problem-set": 4,
+        "answer-grid": 1,
+        "explanations": 4
+      },
+      "output": {
+        "html": "02_textbooks/output_v2/html/grammar-basic.html",
+        "pdf": "02_textbooks/output_v2/pdf/grammar-basic.pdf"
+      },
+      "sourceAudit": {
+        "mode": "pdf",
+        "path": "02_textbooks/source/vera's flavor 편입영어 문법 basic편(개선) (1).pdf",
+        "exists": true
+      },
+      "extractedHtmlMarker": {
+        "sourcePath": "grammar/basic/ch01-content-01.html",
+        "marker": "1-1. 가산명사와 불가산명사",
+        "foundInOutput": true
+      },
+      "jsonAssetSummary": [
+        {
+          "path": "grammar/basic/practice01-problems.json",
+          "kind": "problems",
+          "count": 35,
+          "answers": 35,
+          "explanations": 35,
+          "sampleIds": [
+            "grammar-basic-practice01-001",
+            "grammar-basic-practice01-002"
+          ]
+        },
+        {
+          "path": "grammar/basic/practice02-problems.json",
+          "kind": "problems",
+          "count": 33,
+          "answers": 33,
+          "explanations": 33,
+          "sampleIds": [
+            "grammar-basic-practice02-001",
+            "grammar-basic-practice02-002"
+          ]
+        },
+        {
+          "path": "grammar/basic/practice03-problems.json",
+          "kind": "problems",
+          "count": 17,
+          "answers": 17,
+          "explanations": 17,
+          "sampleIds": [
+            "grammar-basic-practice03-001",
+            "grammar-basic-practice03-002"
+          ]
+        },
+        {
+          "path": "grammar/basic/practice04-problems.json",
+          "kind": "problems",
+          "count": 25,
+          "answers": 25,
+          "explanations": 25,
+          "sampleIds": [
+            "grammar-basic-practice04-001",
+            "grammar-basic-practice04-002"
+          ]
+        }
+      ],
+      "missingAssets": [],
+      "checks": {
+        "manifestExists": true,
+        "outputHtmlExists": true,
+        "outputPdfExists": true,
+        "manifestSourcesResolved": true,
+        "extractedHtmlMarkerPreserved": true,
+        "sourceMarkersPreserved": true,
+        "sourceExists": true
+      },
+      "status": "pass",
+      "failures": [],
+      "notes": [
+        "PDF 원본이라 source 표본 문구 보존 검사는 생략"
+      ]
+    },
+    {
+      "bookId": "grammar-bridge-ch01",
+      "manifest": "02_textbooks/books/grammar-bridge-ch01.yaml",
+      "pageCount": 133,
+      "pageKinds": {
+        "legacy-page": 130,
+        "problem-set": 1,
+        "answer-grid": 1,
+        "explanations": 1
+      },
+      "output": {
+        "html": "02_textbooks/output_v2/html/grammar-bridge-ch01.html",
+        "pdf": "02_textbooks/output_v2/pdf/grammar-bridge-ch01.pdf"
+      },
+      "sourceAudit": {
+        "mode": "shared-split-html",
+        "path": "02_textbooks/source/[편입영어]문법_bridge_part1.html",
+        "exists": true,
+        "stats": {
+          "pageCount": 501,
+          "problemBlocks": 0,
+          "numberedProblemBlocks": 0,
+          "unnumberedProblemBlocks": 0,
+          "answerSections": 0,
+          "sectionTitles": 259
+        }
+      },
+      "extractedHtmlMarker": {
+        "sourcePath": "grammar/bridge/ch01-content-01.html",
+        "marker": "1.1. Intransitive Verb (Vi) - 자동사",
+        "foundInOutput": true
+      },
+      "jsonAssetSummary": [
+        {
+          "path": "grammar/bridge/ch01-problems.json",
+          "kind": "problems",
+          "count": 500,
+          "answers": 500,
+          "explanations": 500,
+          "sampleIds": [
+            "grammar-bridge-ch01-1",
+            "grammar-bridge-ch01-2"
+          ]
+        },
+        {
+          "path": "grammar/bridge/ch01-problems.json",
+          "kind": "problems",
+          "count": 500,
+          "answers": 500,
+          "explanations": 500,
+          "sampleIds": [
+            "grammar-bridge-ch01-1",
+            "grammar-bridge-ch01-2"
+          ]
+        },
+        {
+          "path": "grammar/bridge/ch01-problems.json",
+          "kind": "problems",
+          "count": 500,
+          "answers": 500,
+          "explanations": 500,
+          "sampleIds": [
+            "grammar-bridge-ch01-1",
+            "grammar-bridge-ch01-2"
+          ]
+        }
+      ],
+      "missingAssets": [],
+      "checks": {
+        "manifestExists": true,
+        "outputHtmlExists": true,
+        "outputPdfExists": true,
+        "manifestSourcesResolved": true,
+        "extractedHtmlMarkerPreserved": true,
+        "sourceMarkersPreserved": true,
+        "sourceExists": true
+      },
+      "status": "pass",
+      "failures": [],
+      "notes": [
+        "여러 교재가 하나의 HTML source를 공유하므로 source 표본 문구 검사는 volume 단위에서만 수행"
+      ]
+    },
+    {
+      "bookId": "grammar-bridge-ch02",
+      "manifest": "02_textbooks/books/grammar-bridge-ch02.yaml",
+      "pageCount": 9,
+      "pageKinds": {
+        "legacy-page": 6,
+        "problem-set": 1,
+        "answer-grid": 1,
+        "explanations": 1
+      },
+      "output": {
+        "html": "02_textbooks/output_v2/html/grammar-bridge-ch02.html",
+        "pdf": "02_textbooks/output_v2/pdf/grammar-bridge-ch02.pdf"
+      },
+      "sourceAudit": {
+        "mode": "shared-split-html",
+        "path": "02_textbooks/source/[편입영어]문법_bridge_part1.html",
+        "exists": true,
+        "stats": {
+          "pageCount": 501,
+          "problemBlocks": 0,
+          "numberedProblemBlocks": 0,
+          "unnumberedProblemBlocks": 0,
+          "answerSections": 0,
+          "sectionTitles": 259
+        }
+      },
+      "extractedHtmlMarker": {
+        "sourcePath": "grammar/bridge/ch02-content-01.html",
+        "marker": "📖가정법의 심층 이해: 시제 이동과 심리적 거리감",
+        "foundInOutput": true
+      },
+      "jsonAssetSummary": [
+        {
+          "path": "grammar/bridge/ch02-problems.json",
+          "kind": "problems",
+          "count": 50,
+          "answers": 50,
+          "explanations": 50,
+          "sampleIds": [
+            "grammar-bridge-ch02-51",
+            "grammar-bridge-ch02-52"
+          ]
+        },
+        {
+          "path": "grammar/bridge/ch02-problems.json",
+          "kind": "problems",
+          "count": 50,
+          "answers": 50,
+          "explanations": 50,
+          "sampleIds": [
+            "grammar-bridge-ch02-51",
+            "grammar-bridge-ch02-52"
+          ]
+        },
+        {
+          "path": "grammar/bridge/ch02-problems.json",
+          "kind": "problems",
+          "count": 50,
+          "answers": 50,
+          "explanations": 50,
+          "sampleIds": [
+            "grammar-bridge-ch02-51",
+            "grammar-bridge-ch02-52"
+          ]
+        }
+      ],
+      "missingAssets": [],
+      "checks": {
+        "manifestExists": true,
+        "outputHtmlExists": true,
+        "outputPdfExists": true,
+        "manifestSourcesResolved": true,
+        "extractedHtmlMarkerPreserved": true,
+        "sourceMarkersPreserved": true,
+        "sourceExists": true
+      },
+      "status": "pass",
+      "failures": [],
+      "notes": [
+        "여러 교재가 하나의 HTML source를 공유하므로 source 표본 문구 검사는 volume 단위에서만 수행"
+      ]
+    },
+    {
+      "bookId": "grammar-bridge-ch03",
+      "manifest": "02_textbooks/books/grammar-bridge-ch03.yaml",
+      "pageCount": 22,
+      "pageKinds": {
+        "legacy-page": 19,
+        "problem-set": 1,
+        "answer-grid": 1,
+        "explanations": 1
+      },
+      "output": {
+        "html": "02_textbooks/output_v2/html/grammar-bridge-ch03.html",
+        "pdf": "02_textbooks/output_v2/pdf/grammar-bridge-ch03.pdf"
+      },
+      "sourceAudit": {
+        "mode": "shared-split-html",
+        "path": "02_textbooks/source/[편입영어]문법_bridge_part1.html",
+        "exists": true,
+        "stats": {
+          "pageCount": 501,
+          "problemBlocks": 0,
+          "numberedProblemBlocks": 0,
+          "unnumberedProblemBlocks": 0,
+          "answerSections": 0,
+          "sectionTitles": 259
+        }
+      },
+      "extractedHtmlMarker": {
+        "sourcePath": "grammar/bridge/ch03-content-01.html",
+        "marker": "Focus 1: 형용사의 핵심 용법과 그 한계",
+        "foundInOutput": true
+      },
+      "jsonAssetSummary": [
+        {
+          "path": "grammar/bridge/ch03-problems.json",
+          "kind": "problems",
+          "count": 50,
+          "answers": 50,
+          "explanations": 50,
+          "sampleIds": [
+            "grammar-bridge-ch03-101",
+            "grammar-bridge-ch03-102"
+          ]
+        },
+        {
+          "path": "grammar/bridge/ch03-problems.json",
+          "kind": "problems",
+          "count": 50,
+          "answers": 50,
+          "explanations": 50,
+          "sampleIds": [
+            "grammar-bridge-ch03-101",
+            "grammar-bridge-ch03-102"
+          ]
+        },
+        {
+          "path": "grammar/bridge/ch03-problems.json",
+          "kind": "problems",
+          "count": 50,
+          "answers": 50,
+          "explanations": 50,
+          "sampleIds": [
+            "grammar-bridge-ch03-101",
+            "grammar-bridge-ch03-102"
+          ]
+        }
+      ],
+      "missingAssets": [],
+      "checks": {
+        "manifestExists": true,
+        "outputHtmlExists": true,
+        "outputPdfExists": true,
+        "manifestSourcesResolved": true,
+        "extractedHtmlMarkerPreserved": true,
+        "sourceMarkersPreserved": true,
+        "sourceExists": true
+      },
+      "status": "pass",
+      "failures": [],
+      "notes": [
+        "여러 교재가 하나의 HTML source를 공유하므로 source 표본 문구 검사는 volume 단위에서만 수행"
+      ]
+    },
+    {
+      "bookId": "grammar-bridge-ch04",
+      "manifest": "02_textbooks/books/grammar-bridge-ch04.yaml",
+      "pageCount": 16,
+      "pageKinds": {
+        "legacy-page": 13,
+        "problem-set": 1,
+        "answer-grid": 1,
+        "explanations": 1
+      },
+      "output": {
+        "html": "02_textbooks/output_v2/html/grammar-bridge-ch04.html",
+        "pdf": "02_textbooks/output_v2/pdf/grammar-bridge-ch04.pdf"
+      },
+      "sourceAudit": {
+        "mode": "shared-split-html",
+        "path": "02_textbooks/source/[편입영어]문법_bridge_part1.html",
+        "exists": true,
+        "stats": {
+          "pageCount": 501,
+          "problemBlocks": 0,
+          "numberedProblemBlocks": 0,
+          "unnumberedProblemBlocks": 0,
+          "answerSections": 0,
+          "sectionTitles": 259
+        }
+      },
+      "extractedHtmlMarker": {
+        "sourcePath": "grammar/bridge/ch04-content-01.html",
+        "marker": "Focus 1: 부사의 역할과 형태 (The Role and Form of Adverbs)",
+        "foundInOutput": true
+      },
+      "jsonAssetSummary": [
+        {
+          "path": "grammar/bridge/ch04-problems.json",
+          "kind": "problems",
+          "count": 50,
+          "answers": 50,
+          "explanations": 50,
+          "sampleIds": [
+            "grammar-bridge-ch04-151",
+            "grammar-bridge-ch04-152"
+          ]
+        },
+        {
+          "path": "grammar/bridge/ch04-problems.json",
+          "kind": "problems",
+          "count": 50,
+          "answers": 50,
+          "explanations": 50,
+          "sampleIds": [
+            "grammar-bridge-ch04-151",
+            "grammar-bridge-ch04-152"
+          ]
+        },
+        {
+          "path": "grammar/bridge/ch04-problems.json",
+          "kind": "problems",
+          "count": 50,
+          "answers": 50,
+          "explanations": 50,
+          "sampleIds": [
+            "grammar-bridge-ch04-151",
+            "grammar-bridge-ch04-152"
+          ]
+        }
+      ],
+      "missingAssets": [],
+      "checks": {
+        "manifestExists": true,
+        "outputHtmlExists": true,
+        "outputPdfExists": true,
+        "manifestSourcesResolved": true,
+        "extractedHtmlMarkerPreserved": true,
+        "sourceMarkersPreserved": true,
+        "sourceExists": true
+      },
+      "status": "pass",
+      "failures": [],
+      "notes": [
+        "여러 교재가 하나의 HTML source를 공유하므로 source 표본 문구 검사는 volume 단위에서만 수행"
+      ]
+    },
+    {
+      "bookId": "grammar-bridge-ch05",
+      "manifest": "02_textbooks/books/grammar-bridge-ch05.yaml",
+      "pageCount": 22,
+      "pageKinds": {
+        "legacy-page": 19,
+        "problem-set": 1,
+        "answer-grid": 1,
+        "explanations": 1
+      },
+      "output": {
+        "html": "02_textbooks/output_v2/html/grammar-bridge-ch05.html",
+        "pdf": "02_textbooks/output_v2/pdf/grammar-bridge-ch05.pdf"
+      },
+      "sourceAudit": {
+        "mode": "shared-split-html",
+        "path": "02_textbooks/source/[편입영어]문법_bridge_part1.html",
+        "exists": true,
+        "stats": {
+          "pageCount": 501,
+          "problemBlocks": 0,
+          "numberedProblemBlocks": 0,
+          "unnumberedProblemBlocks": 0,
+          "answerSections": 0,
+          "sectionTitles": 259
+        }
+      },
+      "extractedHtmlMarker": {
+        "sourcePath": "grammar/bridge/ch05-content-01.html",
+        "marker": "Focus 1: 원급, 비교급, 최상급의 기본 형성 원리 I",
+        "foundInOutput": true
+      },
+      "jsonAssetSummary": [
+        {
+          "path": "grammar/bridge/ch05-problems.json",
+          "kind": "problems",
+          "count": 50,
+          "answers": 50,
+          "explanations": 50,
+          "sampleIds": [
+            "grammar-bridge-ch05-201",
+            "grammar-bridge-ch05-202"
+          ]
+        },
+        {
+          "path": "grammar/bridge/ch05-problems.json",
+          "kind": "problems",
+          "count": 50,
+          "answers": 50,
+          "explanations": 50,
+          "sampleIds": [
+            "grammar-bridge-ch05-201",
+            "grammar-bridge-ch05-202"
+          ]
+        },
+        {
+          "path": "grammar/bridge/ch05-problems.json",
+          "kind": "problems",
+          "count": 50,
+          "answers": 50,
+          "explanations": 50,
+          "sampleIds": [
+            "grammar-bridge-ch05-201",
+            "grammar-bridge-ch05-202"
+          ]
+        }
+      ],
+      "missingAssets": [],
+      "checks": {
+        "manifestExists": true,
+        "outputHtmlExists": true,
+        "outputPdfExists": true,
+        "manifestSourcesResolved": true,
+        "extractedHtmlMarkerPreserved": true,
+        "sourceMarkersPreserved": true,
+        "sourceExists": true
+      },
+      "status": "pass",
+      "failures": [],
+      "notes": [
+        "여러 교재가 하나의 HTML source를 공유하므로 source 표본 문구 검사는 volume 단위에서만 수행"
+      ]
+    },
+    {
+      "bookId": "grammar-bridge-ch06",
+      "manifest": "02_textbooks/books/grammar-bridge-ch06.yaml",
+      "pageCount": 15,
+      "pageKinds": {
+        "legacy-page": 12,
+        "problem-set": 1,
+        "answer-grid": 1,
+        "explanations": 1
+      },
+      "output": {
+        "html": "02_textbooks/output_v2/html/grammar-bridge-ch06.html",
+        "pdf": "02_textbooks/output_v2/pdf/grammar-bridge-ch06.pdf"
+      },
+      "sourceAudit": {
+        "mode": "shared-split-html",
+        "path": "02_textbooks/source/[편입영어]문법_bridge_part1.html",
+        "exists": true,
+        "stats": {
+          "pageCount": 501,
+          "problemBlocks": 0,
+          "numberedProblemBlocks": 0,
+          "unnumberedProblemBlocks": 0,
+          "answerSections": 0,
+          "sectionTitles": 259
+        }
+      },
+      "extractedHtmlMarker": {
+        "sourcePath": "grammar/bridge/ch06-content-01.html",
+        "marker": "Focus 1: 가산성의 스펙트럼 (The Countability Spectrum)",
+        "foundInOutput": true
+      },
+      "jsonAssetSummary": [
+        {
+          "path": "grammar/bridge/ch06-problems.json",
+          "kind": "problems",
+          "count": 50,
+          "answers": 50,
+          "explanations": 50,
+          "sampleIds": [
+            "grammar-bridge-ch06-251",
+            "grammar-bridge-ch06-252"
+          ]
+        },
+        {
+          "path": "grammar/bridge/ch06-problems.json",
+          "kind": "problems",
+          "count": 50,
+          "answers": 50,
+          "explanations": 50,
+          "sampleIds": [
+            "grammar-bridge-ch06-251",
+            "grammar-bridge-ch06-252"
+          ]
+        },
+        {
+          "path": "grammar/bridge/ch06-problems.json",
+          "kind": "problems",
+          "count": 50,
+          "answers": 50,
+          "explanations": 50,
+          "sampleIds": [
+            "grammar-bridge-ch06-251",
+            "grammar-bridge-ch06-252"
+          ]
+        }
+      ],
+      "missingAssets": [],
+      "checks": {
+        "manifestExists": true,
+        "outputHtmlExists": true,
+        "outputPdfExists": true,
+        "manifestSourcesResolved": true,
+        "extractedHtmlMarkerPreserved": true,
+        "sourceMarkersPreserved": true,
+        "sourceExists": true
+      },
+      "status": "pass",
+      "failures": [],
+      "notes": [
+        "여러 교재가 하나의 HTML source를 공유하므로 source 표본 문구 검사는 volume 단위에서만 수행"
+      ]
+    },
+    {
+      "bookId": "grammar-bridge-ch07",
+      "manifest": "02_textbooks/books/grammar-bridge-ch07.yaml",
+      "pageCount": 12,
+      "pageKinds": {
+        "legacy-page": 9,
+        "problem-set": 1,
+        "answer-grid": 1,
+        "explanations": 1
+      },
+      "output": {
+        "html": "02_textbooks/output_v2/html/grammar-bridge-ch07.html",
+        "pdf": "02_textbooks/output_v2/pdf/grammar-bridge-ch07.pdf"
+      },
+      "sourceAudit": {
+        "mode": "shared-split-html",
+        "path": "02_textbooks/source/[편입영어]문법_bridge_part1.html",
+        "exists": true,
+        "stats": {
+          "pageCount": 501,
+          "problemBlocks": 0,
+          "numberedProblemBlocks": 0,
+          "unnumberedProblemBlocks": 0,
+          "answerSections": 0,
+          "sectionTitles": 259
+        }
+      },
+      "extractedHtmlMarker": {
+        "sourcePath": "grammar/bridge/ch07-content-01.html",
+        "marker": "Focus 1: 관사의 핵심 기능: 특정성 vs. 일반성",
+        "foundInOutput": true
+      },
+      "jsonAssetSummary": [
+        {
+          "path": "grammar/bridge/ch07-problems.json",
+          "kind": "problems",
+          "count": 50,
+          "answers": 50,
+          "explanations": 50,
+          "sampleIds": [
+            "grammar-bridge-ch07-301",
+            "grammar-bridge-ch07-302"
+          ]
+        },
+        {
+          "path": "grammar/bridge/ch07-problems.json",
+          "kind": "problems",
+          "count": 50,
+          "answers": 50,
+          "explanations": 50,
+          "sampleIds": [
+            "grammar-bridge-ch07-301",
+            "grammar-bridge-ch07-302"
+          ]
+        },
+        {
+          "path": "grammar/bridge/ch07-problems.json",
+          "kind": "problems",
+          "count": 50,
+          "answers": 50,
+          "explanations": 50,
+          "sampleIds": [
+            "grammar-bridge-ch07-301",
+            "grammar-bridge-ch07-302"
+          ]
+        }
+      ],
+      "missingAssets": [],
+      "checks": {
+        "manifestExists": true,
+        "outputHtmlExists": true,
+        "outputPdfExists": true,
+        "manifestSourcesResolved": true,
+        "extractedHtmlMarkerPreserved": true,
+        "sourceMarkersPreserved": true,
+        "sourceExists": true
+      },
+      "status": "pass",
+      "failures": [],
+      "notes": [
+        "여러 교재가 하나의 HTML source를 공유하므로 source 표본 문구 검사는 volume 단위에서만 수행"
+      ]
+    },
+    {
+      "bookId": "grammar-bridge-ch08",
+      "manifest": "02_textbooks/books/grammar-bridge-ch08.yaml",
+      "pageCount": 11,
+      "pageKinds": {
+        "legacy-page": 8,
+        "problem-set": 1,
+        "answer-grid": 1,
+        "explanations": 1
+      },
+      "output": {
+        "html": "02_textbooks/output_v2/html/grammar-bridge-ch08.html",
+        "pdf": "02_textbooks/output_v2/pdf/grammar-bridge-ch08.pdf"
+      },
+      "sourceAudit": {
+        "mode": "shared-split-html",
+        "path": "02_textbooks/source/[편입영어]문법_bridge_part1.html",
+        "exists": true,
+        "stats": {
+          "pageCount": 501,
+          "problemBlocks": 0,
+          "numberedProblemBlocks": 0,
+          "unnumberedProblemBlocks": 0,
+          "answerSections": 0,
+          "sectionTitles": 259
+        }
+      },
+      "extractedHtmlMarker": {
+        "sourcePath": "grammar/bridge/ch08-content-01.html",
+        "marker": "Focus 1: 선행사-대명사 일치 (Antecedent-Pronoun Agreement)",
+        "foundInOutput": true
+      },
+      "jsonAssetSummary": [
+        {
+          "path": "grammar/bridge/ch08-problems.json",
+          "kind": "problems",
+          "count": 50,
+          "answers": 50,
+          "explanations": 50,
+          "sampleIds": [
+            "grammar-bridge-ch08-351",
+            "grammar-bridge-ch08-352"
+          ]
+        },
+        {
+          "path": "grammar/bridge/ch08-problems.json",
+          "kind": "problems",
+          "count": 50,
+          "answers": 50,
+          "explanations": 50,
+          "sampleIds": [
+            "grammar-bridge-ch08-351",
+            "grammar-bridge-ch08-352"
+          ]
+        },
+        {
+          "path": "grammar/bridge/ch08-problems.json",
+          "kind": "problems",
+          "count": 50,
+          "answers": 50,
+          "explanations": 50,
+          "sampleIds": [
+            "grammar-bridge-ch08-351",
+            "grammar-bridge-ch08-352"
+          ]
+        }
+      ],
+      "missingAssets": [],
+      "checks": {
+        "manifestExists": true,
+        "outputHtmlExists": true,
+        "outputPdfExists": true,
+        "manifestSourcesResolved": true,
+        "extractedHtmlMarkerPreserved": true,
+        "sourceMarkersPreserved": true,
+        "sourceExists": true
+      },
+      "status": "pass",
+      "failures": [],
+      "notes": [
+        "여러 교재가 하나의 HTML source를 공유하므로 source 표본 문구 검사는 volume 단위에서만 수행"
+      ]
+    },
+    {
+      "bookId": "grammar-bridge-ch09",
+      "manifest": "02_textbooks/books/grammar-bridge-ch09.yaml",
+      "pageCount": 10,
+      "pageKinds": {
+        "legacy-page": 7,
+        "problem-set": 1,
+        "answer-grid": 1,
+        "explanations": 1
+      },
+      "output": {
+        "html": "02_textbooks/output_v2/html/grammar-bridge-ch09.html",
+        "pdf": "02_textbooks/output_v2/pdf/grammar-bridge-ch09.pdf"
+      },
+      "sourceAudit": {
+        "mode": "shared-split-html",
+        "path": "02_textbooks/source/[편입영어]문법_bridge_part1.html",
+        "exists": true,
+        "stats": {
+          "pageCount": 501,
+          "problemBlocks": 0,
+          "numberedProblemBlocks": 0,
+          "unnumberedProblemBlocks": 0,
+          "answerSections": 0,
+          "sectionTitles": 259
+        }
+      },
+      "extractedHtmlMarker": {
+        "sourcePath": "grammar/bridge/ch09-content-01.html",
+        "marker": "Focus 1: 도치 구문 (Inversion) I - 의문문 어순 도치",
+        "foundInOutput": true
+      },
+      "jsonAssetSummary": [
+        {
+          "path": "grammar/bridge/ch09-problems.json",
+          "kind": "problems",
+          "count": 50,
+          "answers": 50,
+          "explanations": 50,
+          "sampleIds": [
+            "grammar-bridge-ch09-401",
+            "grammar-bridge-ch09-402"
+          ]
+        },
+        {
+          "path": "grammar/bridge/ch09-problems.json",
+          "kind": "problems",
+          "count": 50,
+          "answers": 50,
+          "explanations": 50,
+          "sampleIds": [
+            "grammar-bridge-ch09-401",
+            "grammar-bridge-ch09-402"
+          ]
+        },
+        {
+          "path": "grammar/bridge/ch09-problems.json",
+          "kind": "problems",
+          "count": 50,
+          "answers": 50,
+          "explanations": 50,
+          "sampleIds": [
+            "grammar-bridge-ch09-401",
+            "grammar-bridge-ch09-402"
+          ]
+        }
+      ],
+      "missingAssets": [],
+      "checks": {
+        "manifestExists": true,
+        "outputHtmlExists": true,
+        "outputPdfExists": true,
+        "manifestSourcesResolved": true,
+        "extractedHtmlMarkerPreserved": true,
+        "sourceMarkersPreserved": true,
+        "sourceExists": true
+      },
+      "status": "pass",
+      "failures": [],
+      "notes": [
+        "여러 교재가 하나의 HTML source를 공유하므로 source 표본 문구 검사는 volume 단위에서만 수행"
+      ]
+    },
+    {
+      "bookId": "grammar-bridge-ch10",
+      "manifest": "02_textbooks/books/grammar-bridge-ch10.yaml",
+      "pageCount": 8,
+      "pageKinds": {
+        "legacy-page": 5,
+        "problem-set": 1,
+        "answer-grid": 1,
+        "explanations": 1
+      },
+      "output": {
+        "html": "02_textbooks/output_v2/html/grammar-bridge-ch10.html",
+        "pdf": "02_textbooks/output_v2/pdf/grammar-bridge-ch10.pdf"
+      },
+      "sourceAudit": {
+        "mode": "shared-split-html",
+        "path": "02_textbooks/source/[편입영어]문법_bridge_part2.html",
+        "exists": true,
+        "stats": {
+          "pageCount": 45,
+          "problemBlocks": 0,
+          "numberedProblemBlocks": 0,
+          "unnumberedProblemBlocks": 0,
+          "answerSections": 0,
+          "sectionTitles": 15
+        }
+      },
+      "extractedHtmlMarker": {
+        "sourcePath": "grammar/bridge/ch10-content-01.html",
+        "marker": "📖의문사의 기본 개념",
+        "foundInOutput": true
+      },
+      "jsonAssetSummary": [
+        {
+          "path": "grammar/bridge/ch10-problems.json",
+          "kind": "problems",
+          "count": 50,
+          "answers": 50,
+          "explanations": 50,
+          "sampleIds": [
+            "grammar-bridge-ch10-1",
+            "grammar-bridge-ch10-2"
+          ]
+        },
+        {
+          "path": "grammar/bridge/ch10-problems.json",
+          "kind": "problems",
+          "count": 50,
+          "answers": 50,
+          "explanations": 50,
+          "sampleIds": [
+            "grammar-bridge-ch10-1",
+            "grammar-bridge-ch10-2"
+          ]
+        },
+        {
+          "path": "grammar/bridge/ch10-problems.json",
+          "kind": "problems",
+          "count": 50,
+          "answers": 50,
+          "explanations": 50,
+          "sampleIds": [
+            "grammar-bridge-ch10-1",
+            "grammar-bridge-ch10-2"
+          ]
+        }
+      ],
+      "missingAssets": [],
+      "checks": {
+        "manifestExists": true,
+        "outputHtmlExists": true,
+        "outputPdfExists": true,
+        "manifestSourcesResolved": true,
+        "extractedHtmlMarkerPreserved": true,
+        "sourceMarkersPreserved": true,
+        "sourceExists": true
+      },
+      "status": "pass",
+      "failures": [],
+      "notes": [
+        "여러 교재가 하나의 HTML source를 공유하므로 source 표본 문구 검사는 volume 단위에서만 수행"
+      ]
+    },
+    {
+      "bookId": "grammar-bridge-vol1",
+      "manifest": "02_textbooks/books/grammar-bridge-vol1.yaml",
+      "pageCount": 173,
+      "pageKinds": {
+        "legacy-page": 132,
+        "chapter-opener": 11,
+        "problem-set": 10,
+        "answer-grid": 10,
+        "explanations": 10
+      },
+      "output": {
+        "html": "02_textbooks/output_v2/html/grammar-bridge-vol1.html",
+        "pdf": "02_textbooks/output_v2/pdf/grammar-bridge-vol1.pdf"
+      },
+      "sourceAudit": {
+        "mode": "full-html",
+        "path": "02_textbooks/source/[편입영어]문법_bridge_part1.html",
+        "exists": true,
+        "stats": {
+          "pageCount": 501,
+          "problemBlocks": 0,
+          "numberedProblemBlocks": 0,
+          "unnumberedProblemBlocks": 0,
+          "answerSections": 0,
+          "sectionTitles": 259
+        },
+        "markers": [
+          {
+            "text": "1.1. Intransitive Verb (Vi) - 자동사",
+            "foundInOutput": true
+          },
+          {
+            "text": "1.2. Transitive Verb (Vt) - 타동사",
+            "foundInOutput": true
+          },
+          {
+            "text": "2.1. 1형식: S + V (주어 + 완전자동사)",
+            "foundInOutput": true
+          }
+        ]
+      },
+      "extractedHtmlMarker": {
+        "sourcePath": "grammar/bridge/ch01-content-01.html",
+        "marker": "1.1. Intransitive Verb (Vi) - 자동사",
+        "foundInOutput": true
+      },
+      "jsonAssetSummary": [
+        {
+          "path": "grammar/bridge/ch01-problems.json",
+          "kind": "problems",
+          "count": 500,
+          "answers": 500,
+          "explanations": 500,
+          "sampleIds": [
+            "grammar-bridge-ch01-1",
+            "grammar-bridge-ch01-2"
+          ]
+        },
+        {
+          "path": "grammar/bridge/ch01-problems.json",
+          "kind": "problems",
+          "count": 500,
+          "answers": 500,
+          "explanations": 500,
+          "sampleIds": [
+            "grammar-bridge-ch01-1",
+            "grammar-bridge-ch01-2"
+          ]
+        },
+        {
+          "path": "grammar/bridge/ch01-problems.json",
+          "kind": "problems",
+          "count": 500,
+          "answers": 500,
+          "explanations": 500,
+          "sampleIds": [
+            "grammar-bridge-ch01-1",
+            "grammar-bridge-ch01-2"
+          ]
+        },
+        {
+          "path": "grammar/bridge/ch01-problems.json",
+          "kind": "problems",
+          "count": 500,
+          "answers": 500,
+          "explanations": 500,
+          "sampleIds": [
+            "grammar-bridge-ch01-1",
+            "grammar-bridge-ch01-2"
+          ]
+        }
+      ],
+      "missingAssets": [],
+      "checks": {
+        "manifestExists": true,
+        "outputHtmlExists": true,
+        "outputPdfExists": true,
+        "manifestSourcesResolved": true,
+        "extractedHtmlMarkerPreserved": true,
+        "sourceMarkersPreserved": true,
+        "sourceExists": true
+      },
+      "status": "pass",
+      "failures": [],
+      "notes": []
+    },
+    {
+      "bookId": "grammar-bridge-vol2",
+      "manifest": "02_textbooks/books/grammar-bridge-vol2.yaml",
+      "pageCount": 136,
+      "pageKinds": {
+        "legacy-page": 100,
+        "chapter-opener": 9,
+        "problem-set": 9,
+        "answer-grid": 9,
+        "explanations": 9
+      },
+      "output": {
+        "html": "02_textbooks/output_v2/html/grammar-bridge-vol2.html",
+        "pdf": "02_textbooks/output_v2/pdf/grammar-bridge-vol2.pdf"
+      },
+      "sourceAudit": {
+        "mode": "full-html",
+        "path": "02_textbooks/source/[편입영어]문법_bridge_part2.html",
+        "exists": true,
+        "stats": {
+          "pageCount": 45,
+          "problemBlocks": 0,
+          "numberedProblemBlocks": 0,
+          "unnumberedProblemBlocks": 0,
+          "answerSections": 0,
+          "sectionTitles": 15
+        },
+        "markers": [
+          {
+            "text": "📖의문사의 기본 개념",
+            "foundInOutput": true
+          },
+          {
+            "text": "📊중요 도표 및 비교표",
+            "foundInOutput": true
+          },
+          {
+            "text": "📚상세 예시",
+            "foundInOutput": true
+          }
+        ]
+      },
+      "extractedHtmlMarker": {
+        "sourcePath": "grammar/bridge/ch02-content-01.html",
+        "marker": "📖가정법의 심층 이해: 시제 이동과 심리적 거리감",
+        "foundInOutput": true
+      },
+      "jsonAssetSummary": [
+        {
+          "path": "grammar/bridge/ch02-problems.json",
+          "kind": "problems",
+          "count": 50,
+          "answers": 50,
+          "explanations": 50,
+          "sampleIds": [
+            "grammar-bridge-ch02-51",
+            "grammar-bridge-ch02-52"
+          ]
+        },
+        {
+          "path": "grammar/bridge/ch02-problems.json",
+          "kind": "problems",
+          "count": 50,
+          "answers": 50,
+          "explanations": 50,
+          "sampleIds": [
+            "grammar-bridge-ch02-51",
+            "grammar-bridge-ch02-52"
+          ]
+        },
+        {
+          "path": "grammar/bridge/ch02-problems.json",
+          "kind": "problems",
+          "count": 50,
+          "answers": 50,
+          "explanations": 50,
+          "sampleIds": [
+            "grammar-bridge-ch02-51",
+            "grammar-bridge-ch02-52"
+          ]
+        },
+        {
+          "path": "grammar/bridge/ch03-problems.json",
+          "kind": "problems",
+          "count": 50,
+          "answers": 50,
+          "explanations": 50,
+          "sampleIds": [
+            "grammar-bridge-ch03-101",
+            "grammar-bridge-ch03-102"
+          ]
+        }
+      ],
+      "missingAssets": [],
+      "checks": {
+        "manifestExists": true,
+        "outputHtmlExists": true,
+        "outputPdfExists": true,
+        "manifestSourcesResolved": true,
+        "extractedHtmlMarkerPreserved": true,
+        "sourceMarkersPreserved": true,
+        "sourceExists": true
+      },
+      "status": "pass",
+      "failures": [],
+      "notes": []
+    },
+    {
+      "bookId": "logic-basic",
+      "manifest": "02_textbooks/books/logic-basic.yaml",
+      "pageCount": 115,
+      "pageKinds": {
+        "legacy-page": 115
+      },
+      "output": {
+        "html": "02_textbooks/output_v2/html/logic-basic.html",
+        "pdf": "02_textbooks/output_v2/pdf/logic-basic.pdf"
+      },
+      "sourceAudit": {
+        "mode": "full-html",
+        "path": "02_textbooks/source/[편입영어]논리_basic.html",
+        "exists": true,
+        "stats": {
+          "pageCount": 115,
+          "problemBlocks": 120,
+          "numberedProblemBlocks": 118,
+          "unnumberedProblemBlocks": 2,
+          "answerSections": 24,
+          "sectionTitles": 106
+        },
+        "markers": [
+          {
+            "text": "01. 어휘의 중요성",
+            "foundInOutput": true
+          },
+          {
+            "text": "02. 문맥 안에서 이해하라 (Understand in the Context)",
+            "foundInOutput": true
+          },
+          {
+            "text": "03. 단순 암기 VS 문맥적 이해",
+            "foundInOutput": true
+          }
+        ]
+      },
+      "extractedHtmlMarker": {
+        "sourcePath": "logic/basic/page-003.html",
+        "marker": "01. 어휘의 중요성",
+        "foundInOutput": true
+      },
+      "jsonAssetSummary": [],
+      "missingAssets": [],
+      "checks": {
+        "manifestExists": true,
+        "outputHtmlExists": true,
+        "outputPdfExists": true,
+        "manifestSourcesResolved": true,
+        "extractedHtmlMarkerPreserved": true,
+        "sourceMarkersPreserved": true,
+        "sourceExists": true
+      },
+      "status": "pass",
+      "failures": [],
+      "notes": [
+        "source problem block 120개 중 번호 없는 설명용 example block 2개 포함"
+      ]
+    },
+    {
+      "bookId": "reading-basic",
+      "manifest": "02_textbooks/books/reading-basic.yaml",
+      "pageCount": 36,
+      "pageKinds": {
+        "legacy-page": 30,
+        "passage-set": 6
+      },
+      "output": {
+        "html": "02_textbooks/output_v2/html/reading-basic.html",
+        "pdf": "02_textbooks/output_v2/pdf/reading-basic.pdf"
+      },
+      "sourceAudit": {
+        "mode": "full-html",
+        "path": "02_textbooks/source/[편입영어]독해_basic편.html",
+        "exists": true,
+        "stats": {
+          "pageCount": 545,
+          "problemBlocks": 0,
+          "numberedProblemBlocks": 0,
+          "unnumberedProblemBlocks": 0,
+          "answerSections": 0,
+          "sectionTitles": 0
+        },
+        "markers": []
+      },
+      "extractedHtmlMarker": null,
+      "jsonAssetSummary": [
+        {
+          "path": "reading/basic/part01-passages.json",
+          "kind": "passages",
+          "count": 100,
+          "questions": 300,
+          "answers": 300,
+          "explanations": 300,
+          "sampleIds": [
+            "reading-basic-p1",
+            "reading-basic-p2"
+          ]
+        },
+        {
+          "path": "reading/basic/part02-passages.json",
+          "kind": "passages",
+          "count": 100,
+          "questions": 100,
+          "answers": 100,
+          "explanations": 100,
+          "sampleIds": [
+            "reading-basic-p1",
+            "reading-basic-p2"
+          ]
+        },
+        {
+          "path": "reading/basic/part03-passages.json",
+          "kind": "passages",
+          "count": 100,
+          "questions": 100,
+          "answers": 100,
+          "explanations": 100,
+          "sampleIds": [
+            "reading-basic-p1",
+            "reading-basic-p2"
+          ]
+        },
+        {
+          "path": "reading/basic/part04-passages.json",
+          "kind": "passages",
+          "count": 100,
+          "questions": 100,
+          "answers": 100,
+          "explanations": 100,
+          "sampleIds": [
+            "reading-basic-p1",
+            "reading-basic-p2"
+          ]
+        }
+      ],
+      "missingAssets": [],
+      "checks": {
+        "manifestExists": true,
+        "outputHtmlExists": true,
+        "outputPdfExists": true,
+        "manifestSourcesResolved": true,
+        "extractedHtmlMarkerPreserved": true,
+        "sourceMarkersPreserved": true,
+        "sourceExists": true
+      },
+      "status": "pass",
+      "failures": [],
+      "notes": []
+    },
+    {
+      "bookId": "reading-bridge",
+      "manifest": "02_textbooks/books/reading-bridge.yaml",
+      "pageCount": 8,
+      "pageKinds": {
+        "cover": 1,
+        "toc": 1,
+        "passage-set": 6
+      },
+      "output": {
+        "html": "02_textbooks/output_v2/html/reading-bridge.html",
+        "pdf": "02_textbooks/output_v2/pdf/reading-bridge.pdf"
+      },
+      "sourceAudit": {
+        "mode": "full-html",
+        "path": "02_textbooks/source/[편입영어]독해_bridge.html",
+        "exists": true,
+        "stats": {
+          "pageCount": 465,
+          "problemBlocks": 0,
+          "numberedProblemBlocks": 0,
+          "unnumberedProblemBlocks": 0,
+          "answerSections": 0,
+          "sectionTitles": 0
+        },
+        "markers": []
+      },
+      "extractedHtmlMarker": null,
+      "jsonAssetSummary": [
+        {
+          "path": "reading/bridge/part01-passages.json",
+          "kind": "passages",
+          "count": 100,
+          "questions": 300,
+          "answers": 300,
+          "explanations": 300,
+          "sampleIds": [
+            "reading-bridge-p1",
+            "reading-bridge-p2"
+          ]
+        },
+        {
+          "path": "reading/bridge/part02-passages.json",
+          "kind": "passages",
+          "count": 100,
+          "questions": 100,
+          "answers": 100,
+          "explanations": 100,
+          "sampleIds": [
+            "reading-bridge-p101",
+            "reading-bridge-p102"
+          ]
+        },
+        {
+          "path": "reading/bridge/part03-passages.json",
+          "kind": "passages",
+          "count": 100,
+          "questions": 100,
+          "answers": 100,
+          "explanations": 100,
+          "sampleIds": [
+            "reading-bridge-p201",
+            "reading-bridge-p202"
+          ]
+        },
+        {
+          "path": "reading/bridge/part04-passages.json",
+          "kind": "passages",
+          "count": 100,
+          "questions": 100,
+          "answers": 100,
+          "explanations": 100,
+          "sampleIds": [
+            "reading-bridge-p301",
+            "reading-bridge-p302"
+          ]
+        }
+      ],
+      "missingAssets": [],
+      "checks": {
+        "manifestExists": true,
+        "outputHtmlExists": true,
+        "outputPdfExists": true,
+        "manifestSourcesResolved": true,
+        "extractedHtmlMarkerPreserved": true,
+        "sourceMarkersPreserved": true,
+        "sourceExists": true
+      },
+      "status": "pass",
+      "failures": [],
+      "notes": []
+    },
+    {
+      "bookId": "reading-intermediate",
+      "manifest": "02_textbooks/books/reading-intermediate.yaml",
+      "pageCount": 88,
+      "pageKinds": {
+        "legacy-page": 78,
+        "passage-set": 10
+      },
+      "output": {
+        "html": "02_textbooks/output_v2/html/reading-intermediate.html",
+        "pdf": "02_textbooks/output_v2/pdf/reading-intermediate.pdf"
+      },
+      "sourceAudit": {
+        "mode": "full-html",
+        "path": "02_textbooks/source/[편입영어]독해_intermediate.html",
+        "exists": true,
+        "stats": {
+          "pageCount": 288,
+          "problemBlocks": 0,
+          "numberedProblemBlocks": 0,
+          "unnumberedProblemBlocks": 0,
+          "answerSections": 0,
+          "sectionTitles": 0
+        },
+        "markers": []
+      },
+      "extractedHtmlMarker": null,
+      "jsonAssetSummary": [
+        {
+          "path": "reading/intermediate/part01-passages.json",
+          "kind": "passages",
+          "count": 40,
+          "questions": 40,
+          "answers": 40,
+          "explanations": 0,
+          "sampleIds": [
+            "reading-intermediate-p1",
+            "reading-intermediate-p2"
+          ]
+        },
+        {
+          "path": "reading/intermediate/part02-passages.json",
+          "kind": "passages",
+          "count": 40,
+          "questions": 40,
+          "answers": 40,
+          "explanations": 0,
+          "sampleIds": [
+            "reading-intermediate-p41",
+            "reading-intermediate-p42"
+          ]
+        },
+        {
+          "path": "reading/intermediate/part03-passages.json",
+          "kind": "passages",
+          "count": 40,
+          "questions": 40,
+          "answers": 40,
+          "explanations": 0,
+          "sampleIds": [
+            "reading-intermediate-p81",
+            "reading-intermediate-p82"
+          ]
+        },
+        {
+          "path": "reading/intermediate/part04-passages.json",
+          "kind": "passages",
+          "count": 40,
+          "questions": 40,
+          "answers": 40,
+          "explanations": 0,
+          "sampleIds": [
+            "reading-intermediate-p121",
+            "reading-intermediate-p122"
+          ]
+        }
+      ],
+      "missingAssets": [],
+      "checks": {
+        "manifestExists": true,
+        "outputHtmlExists": true,
+        "outputPdfExists": true,
+        "manifestSourcesResolved": true,
+        "extractedHtmlMarkerPreserved": true,
+        "sourceMarkersPreserved": true,
+        "sourceExists": true
+      },
+      "status": "pass",
+      "failures": [],
+      "notes": []
+    },
+    {
+      "bookId": "syntax-basic",
+      "manifest": "02_textbooks/books/syntax-basic.yaml",
+      "pageCount": 27,
+      "pageKinds": {
+        "chapter-opener": 4,
+        "problem-set": 23
+      },
+      "output": {
+        "html": "02_textbooks/output_v2/html/syntax-basic.html",
+        "pdf": "02_textbooks/output_v2/pdf/syntax-basic.pdf"
+      },
+      "sourceAudit": {
+        "mode": "pdf",
+        "path": "Vera's Flavor 편입영어_ 구문독해 Basic.pdf",
+        "exists": true
+      },
+      "extractedHtmlMarker": null,
+      "jsonAssetSummary": [
+        {
+          "path": "syntax/basic/unit01-problems.json",
+          "kind": "problems",
+          "count": 10,
+          "answers": 10,
+          "explanations": 0,
+          "sampleIds": [
+            "syntax-basic-unit01-1",
+            "syntax-basic-unit01-2"
+          ]
+        },
+        {
+          "path": "syntax/basic/unit02-problems.json",
+          "kind": "problems",
+          "count": 10,
+          "answers": 10,
+          "explanations": 0,
+          "sampleIds": [
+            "syntax-basic-unit02-1",
+            "syntax-basic-unit02-2"
+          ]
+        },
+        {
+          "path": "syntax/basic/unit03-problems.json",
+          "kind": "problems",
+          "count": 10,
+          "answers": 10,
+          "explanations": 0,
+          "sampleIds": [
+            "syntax-basic-unit03-1",
+            "syntax-basic-unit03-2"
+          ]
+        },
+        {
+          "path": "syntax/basic/unit04-problems.json",
+          "kind": "problems",
+          "count": 10,
+          "answers": 10,
+          "explanations": 0,
+          "sampleIds": [
+            "syntax-basic-unit04-1",
+            "syntax-basic-unit04-2"
+          ]
+        }
+      ],
+      "missingAssets": [],
+      "checks": {
+        "manifestExists": true,
+        "outputHtmlExists": true,
+        "outputPdfExists": true,
+        "manifestSourcesResolved": true,
+        "extractedHtmlMarkerPreserved": true,
+        "sourceMarkersPreserved": true,
+        "sourceExists": true
+      },
+      "status": "pass",
+      "failures": [],
+      "notes": [
+        "PDF 원본이라 source 표본 문구 보존 검사는 생략"
+      ]
+    },
+    {
+      "bookId": "syntax-bridge",
+      "manifest": "02_textbooks/books/syntax-bridge.yaml",
+      "pageCount": 366,
+      "pageKinds": {
+        "legacy-page": 356,
+        "problem-set": 10
+      },
+      "output": {
+        "html": "02_textbooks/output_v2/html/syntax-bridge.html",
+        "pdf": "02_textbooks/output_v2/pdf/syntax-bridge.pdf"
+      },
+      "sourceAudit": {
+        "mode": "full-html",
+        "path": "02_textbooks/source/[편입영어]구문독해_bridge (1).html",
+        "exists": true,
+        "stats": {
+          "pageCount": 391,
+          "problemBlocks": 0,
+          "numberedProblemBlocks": 0,
+          "unnumberedProblemBlocks": 0,
+          "answerSections": 0,
+          "sectionTitles": 0
+        },
+        "markers": []
+      },
+      "extractedHtmlMarker": null,
+      "jsonAssetSummary": [
+        {
+          "path": "syntax/bridge/unit01-problems.json",
+          "kind": "problems",
+          "count": 15,
+          "answers": 0,
+          "explanations": 0,
+          "sampleIds": [
+            "syntax-bridge-unit01-1",
+            "syntax-bridge-unit01-2"
+          ]
+        },
+        {
+          "path": "syntax/bridge/unit02-problems.json",
+          "kind": "problems",
+          "count": 107,
+          "answers": 0,
+          "explanations": 0,
+          "sampleIds": [
+            "syntax-bridge-unit02-1",
+            "syntax-bridge-unit02-2"
+          ]
+        },
+        {
+          "path": "syntax/bridge/unit03-problems.json",
+          "kind": "problems",
+          "count": 45,
+          "answers": 0,
+          "explanations": 0,
+          "sampleIds": [
+            "syntax-bridge-unit03-1",
+            "syntax-bridge-unit03-2"
+          ]
+        },
+        {
+          "path": "syntax/bridge/unit04-problems.json",
+          "kind": "problems",
+          "count": 70,
+          "answers": 0,
+          "explanations": 0,
+          "sampleIds": [
+            "syntax-bridge-unit04-1",
+            "syntax-bridge-unit04-2"
+          ]
+        }
+      ],
+      "missingAssets": [],
+      "checks": {
+        "manifestExists": true,
+        "outputHtmlExists": true,
+        "outputPdfExists": true,
+        "manifestSourcesResolved": true,
+        "extractedHtmlMarkerPreserved": true,
+        "sourceMarkersPreserved": true,
+        "sourceExists": true
+      },
+      "status": "pass",
+      "failures": [],
+      "notes": []
+    },
+    {
+      "bookId": "vocab-basic",
+      "manifest": "02_textbooks/books/vocab-basic.yaml",
+      "pageCount": 73,
+      "pageKinds": {
+        "legacy-page": 3,
+        "vocabulary-set": 70
+      },
+      "output": {
+        "html": "02_textbooks/output_v2/html/vocab-basic.html",
+        "pdf": "02_textbooks/output_v2/pdf/vocab-basic.pdf"
+      },
+      "sourceAudit": {
+        "mode": "full-html",
+        "path": "02_textbooks/source/[편입영어]보카_basic(1-70).html",
+        "exists": true,
+        "stats": {
+          "pageCount": 844,
+          "problemBlocks": 0,
+          "numberedProblemBlocks": 0,
+          "unnumberedProblemBlocks": 0,
+          "answerSections": 0,
+          "sectionTitles": 0
+        },
+        "markers": []
+      },
+      "extractedHtmlMarker": null,
+      "jsonAssetSummary": [
+        {
+          "path": "vocab/basic/day01.json",
+          "kind": "words",
+          "count": 50,
+          "sampleIds": [
+            "era",
+            "epoch",
+            "age"
+          ]
+        },
+        {
+          "path": "vocab/basic/day02.json",
+          "kind": "words",
+          "count": 50,
+          "sampleIds": [
+            "creed",
+            "doctrine",
+            "dogma"
+          ]
+        },
+        {
+          "path": "vocab/basic/day03.json",
+          "kind": "words",
+          "count": 50,
+          "sampleIds": [
+            "rite",
+            "occasion",
+            "festival"
+          ]
+        },
+        {
+          "path": "vocab/basic/day04.json",
+          "kind": "words",
+          "count": 50,
+          "sampleIds": [
+            "politics",
+            "state",
+            "nation"
+          ]
+        }
+      ],
+      "missingAssets": [],
+      "checks": {
+        "manifestExists": true,
+        "outputHtmlExists": true,
+        "outputPdfExists": true,
+        "manifestSourcesResolved": true,
+        "extractedHtmlMarkerPreserved": true,
+        "sourceMarkersPreserved": true,
+        "sourceExists": true
+      },
+      "status": "pass",
+      "failures": [],
+      "notes": []
+    }
+  ]
+}

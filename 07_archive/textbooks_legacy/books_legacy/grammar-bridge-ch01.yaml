@@ -1,0 +1,277 @@
+# grammar-bridge-ch01 — 문법 Bridge Part 1: 문장의 기본 구조
+book:
+  title: "문법 Bridge - 문장의 기본 구조"
+  author: "Vera's Flavor"
+  template: ocean-blue
+  series: grammar-bridge
+  part: 1
+
+pages:
+  - type: content
+    src: grammar/bridge/ch01-content-01.html
+  - type: content
+    src: grammar/bridge/ch01-content-02.html
+  - type: content
+    src: grammar/bridge/ch01-content-03.html
+  - type: content
+    src: grammar/bridge/ch01-content-04.html
+  - type: content
+    src: grammar/bridge/ch01-content-05.html
+  - type: content
+    src: grammar/bridge/ch01-content-06.html
+  - type: content
+    src: grammar/bridge/ch01-content-07.html
+  - type: content
+    src: grammar/bridge/ch01-content-08.html
+  - type: content
+    src: grammar/bridge/ch01-content-09.html
+  - type: content
+    src: grammar/bridge/ch01-content-10.html
+  - type: content
+    src: grammar/bridge/ch01-content-11.html
+  - type: content
+    src: grammar/bridge/ch01-content-12.html
+  - type: content
+    src: grammar/bridge/ch01-content-13.html
+  - type: content
+    src: grammar/bridge/ch01-content-14.html
+  - type: content
+    src: grammar/bridge/ch01-content-15.html
+  - type: content
+    src: grammar/bridge/ch01-content-16.html
+  - type: content
+    src: grammar/bridge/ch01-content-17.html
+  - type: content
+    src: grammar/bridge/ch01-content-18.html
+  - type: content
+    src: grammar/bridge/ch01-content-19.html
+  - type: content
+    src: grammar/bridge/ch01-content-20.html
+  - type: content
+    src: grammar/bridge/ch01-content-21.html
+  - type: content
+    src: grammar/bridge/ch01-content-22.html
+  - type: content
+    src: grammar/bridge/ch01-content-23.html
+  - type: content
+    src: grammar/bridge/ch01-content-24.html
+  - type: content
+    src: grammar/bridge/ch01-content-25.html
+  - type: content
+    src: grammar/bridge/ch01-content-26.html
+  - type: content
+    src: grammar/bridge/ch01-content-27.html
+  - type: content
+    src: grammar/bridge/ch01-content-28.html
+  - type: content
+    src: grammar/bridge/ch01-content-29.html
+  - type: content
+    src: grammar/bridge/ch01-content-30.html
+  - type: content
+    src: grammar/bridge/ch01-content-31.html
+  - type: content
+    src: grammar/bridge/ch01-content-32.html
+  - type: content
+    src: grammar/bridge/ch01-content-33.html
+  - type: content
+    src: grammar/bridge/ch01-content-34.html
+  - type: content
+    src: grammar/bridge/ch01-content-35.html
+  - type: content
+    src: grammar/bridge/ch01-content-36.html
+  - type: content
+    src: grammar/bridge/ch01-content-37.html
+  - type: content
+    src: grammar/bridge/ch01-content-38.html
+  - type: content
+    src: grammar/bridge/ch01-content-39.html
+  - type: content
+    src: grammar/bridge/ch01-content-40.html
+  - type: content
+    src: grammar/bridge/ch01-content-41.html
+  - type: content
+    src: grammar/bridge/ch01-content-42.html
+  - type: content
+    src: grammar/bridge/ch01-content-43.html
+  - type: content
+    src: grammar/bridge/ch01-content-44.html
+  - type: content
+    src: grammar/bridge/ch01-content-45.html
+  - type: content
+    src: grammar/bridge/ch01-content-46.html
+  - type: content
+    src: grammar/bridge/ch01-content-47.html
+  - type: content
+    src: grammar/bridge/ch01-content-48.html
+  - type: content
+    src: grammar/bridge/ch01-content-49.html
+  - type: content
+    src: grammar/bridge/ch01-content-50.html
+  - type: content
+    src: grammar/bridge/ch01-content-51.html
+  - type: content
+    src: grammar/bridge/ch01-content-52.html
+  - type: content
+    src: grammar/bridge/ch01-content-53.html
+  - type: content
+    src: grammar/bridge/ch01-content-54.html
+  - type: content
+    src: grammar/bridge/ch01-content-55.html
+  - type: content
+    src: grammar/bridge/ch01-content-56.html
+  - type: content
+    src: grammar/bridge/ch01-content-57.html
+  - type: content
+    src: grammar/bridge/ch01-content-58.html
+  - type: content
+    src: grammar/bridge/ch01-content-59.html
+  - type: content
+    src: grammar/bridge/ch01-content-60.html
+  - type: content
+    src: grammar/bridge/ch01-content-61.html
+  - type: content
+    src: grammar/bridge/ch01-content-62.html
+  - type: content
+    src: grammar/bridge/ch01-content-63.html
+  - type: content
+    src: grammar/bridge/ch01-content-64.html
+  - type: content
+    src: grammar/bridge/ch01-content-65.html
+  - type: content
+    src: grammar/bridge/ch01-content-66.html
+  - type: content
+    src: grammar/bridge/ch01-content-67.html
+  - type: content
+    src: grammar/bridge/ch01-content-68.html
+  - type: content
+    src: grammar/bridge/ch01-content-69.html
+  - type: content
+    src: grammar/bridge/ch01-content-70.html
+  - type: content
+    src: grammar/bridge/ch01-content-71.html
+  - type: content
+    src: grammar/bridge/ch01-content-72.html
+  - type: content
+    src: grammar/bridge/ch01-content-73.html
+  - type: content
+    src: grammar/bridge/ch01-content-74.html
+  - type: content
+    src: grammar/bridge/ch01-content-75.html
+  - type: content
+    src: grammar/bridge/ch01-content-76.html
+  - type: content
+    src: grammar/bridge/ch01-content-77.html
+  - type: content
+    src: grammar/bridge/ch01-content-78.html
+  - type: content
+    src: grammar/bridge/ch01-content-79.html
+  - type: content
+    src: grammar/bridge/ch01-content-80.html
+  - type: content
+    src: grammar/bridge/ch01-content-81.html
+  - type: content
+    src: grammar/bridge/ch01-content-82.html
+  - type: content
+    src: grammar/bridge/ch01-content-83.html
+  - type: content
+    src: grammar/bridge/ch01-content-84.html
+  - type: content
+    src: grammar/bridge/ch01-content-85.html
+  - type: content
+    src: grammar/bridge/ch01-content-86.html
+  - type: content
+    src: grammar/bridge/ch01-content-87.html
+  - type: content
+    src: grammar/bridge/ch01-content-88.html
+  - type: content
+    src: grammar/bridge/ch01-content-89.html
+  - type: content
+    src: grammar/bridge/ch01-content-90.html
+  - type: content
+    src: grammar/bridge/ch01-content-91.html
+  - type: content
+    src: grammar/bridge/ch01-content-92.html
+  - type: content
+    src: grammar/bridge/ch01-content-93.html
+  - type: content
+    src: grammar/bridge/ch01-content-94.html
+  - type: content
+    src: grammar/bridge/ch01-content-95.html
+  - type: content
+    src: grammar/bridge/ch01-content-96.html
+  - type: content
+    src: grammar/bridge/ch01-content-97.html
+  - type: content
+    src: grammar/bridge/ch01-content-98.html
+  - type: content
+    src: grammar/bridge/ch01-content-99.html
+  - type: content
+    src: grammar/bridge/ch01-content-100.html
+  - type: content
+    src: grammar/bridge/ch01-content-101.html
+  - type: content
+    src: grammar/bridge/ch01-content-102.html
+  - type: content
+    src: grammar/bridge/ch01-content-103.html
+  - type: content
+    src: grammar/bridge/ch01-content-104.html
+  - type: content
+    src: grammar/bridge/ch01-content-105.html
+  - type: content
+    src: grammar/bridge/ch01-content-106.html
+  - type: content
+    src: grammar/bridge/ch01-content-107.html
+  - type: content
+    src: grammar/bridge/ch01-content-108.html
+  - type: content
+    src: grammar/bridge/ch01-content-109.html
+  - type: content
+    src: grammar/bridge/ch01-content-110.html
+  - type: content
+    src: grammar/bridge/ch01-content-111.html
+  - type: content
+    src: grammar/bridge/ch01-content-112.html
+  - type: content
+    src: grammar/bridge/ch01-content-113.html
+  - type: content
+    src: grammar/bridge/ch01-content-114.html
+  - type: content
+    src: grammar/bridge/ch01-content-115.html
+  - type: content
+    src: grammar/bridge/ch01-content-116.html
+  - type: content
+    src: grammar/bridge/ch01-content-117.html
+  - type: content
+    src: grammar/bridge/ch01-content-118.html
+  - type: content
+    src: grammar/bridge/ch01-content-119.html
+  - type: content
+    src: grammar/bridge/ch01-content-120.html
+  - type: content
+    src: grammar/bridge/ch01-content-121.html
+  - type: content
+    src: grammar/bridge/ch01-content-122.html
+  - type: content
+    src: grammar/bridge/ch01-content-123.html
+  - type: content
+    src: grammar/bridge/ch01-content-124.html
+  - type: content
+    src: grammar/bridge/ch01-content-125.html
+  - type: content
+    src: grammar/bridge/ch01-content-126.html
+  - type: content
+    src: grammar/bridge/ch01-content-127.html
+  - type: content
+    src: grammar/bridge/ch01-content-128.html
+  - type: content
+    src: grammar/bridge/ch01-content-129.html
+  - type: content
+    src: grammar/bridge/ch01-content-130.html
+  - type: problems
+    src: grammar/bridge/ch01-problems.json
+    layout: two-per-page
+  - type: answer-grid
+    src: grammar/bridge/ch01-problems.json
+  - type: explanations
+    src: grammar/bridge/ch01-problems.json
+    layout: compact
