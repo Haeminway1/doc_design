@@ -35,18 +35,18 @@
     --font-serif: 'Noto Sans KR', 'Malgun Gothic', sans-serif;
     --font-serif-eng: 'Inter', sans-serif;
 
-    --text-xs: 7.2pt;
-    --text-sm: 8pt;
-    --text-base: 8pt;
-    --text-md: 8.8pt;
+    --text-xs: 7.5pt;
+    --text-sm: 8.5pt;
+    --text-base: 9.5pt;
+    --text-md: 10pt;
     --text-lg: 11pt;
     --text-xl: 13.5pt;
     --text-2xl: 18pt;
     --text-3xl: 25pt;
 
-    --leading-tight: 1.28;
-    --leading-normal: 1.48;
-    --leading-relaxed: 1.62;
+    --leading-tight: 1.35;
+    --leading-normal: 1.65;
+    --leading-relaxed: 1.75;
 
     --page-padding-y: 14mm;
     --page-padding-x: 16mm;
@@ -54,11 +54,11 @@
     --radius-md: 10px;
     --radius-lg: 14px;
 
-    --passage-font-size: 8.7pt;
-    --passage-line-height: 1.68;
-    --choice-font-size: 8pt;
+    --passage-font-size: 9.5pt;
+    --passage-line-height: 1.85;
+    --choice-font-size: 9pt;
     --header-font-size: 7.8pt;
-    --footer-font-size: 7.1pt;
+    --footer-font-size: 7.4pt;
 }
 
 body {
@@ -142,9 +142,13 @@ body {
 .page-footer {
     width: auto !important;
     padding-top: 6px !important;
-    border-top: 0.6px solid #ddd6c8 !important;
-    color: #2D2D2D !important;
+    border-top: 0.5px solid #ccc !important;
+    color: #C5A55A !important;
     font-size: 7.4pt !important;
+}
+
+.page-footer * {
+    color: #C5A55A !important;
 }
 
 .page-content p,
@@ -166,8 +170,8 @@ body {
 .comparison-table td,
 .grammar-table td,
 .grammar-table th {
-    font-size: 8pt !important;
-    line-height: 1.5 !important;
+    font-size: 9.5pt !important;
+    line-height: 1.7 !important;
 }
 
 .section-title,
@@ -267,15 +271,15 @@ body {
     padding: 0 !important;
     border-radius: 0 !important;
     background: transparent !important;
-    font-size: 7.8pt !important;
-    line-height: 1.35 !important;
+    font-size: 9pt !important;
+    line-height: 1.45 !important;
     color: var(--color-text-secondary) !important;
 }
 
 .problem-stem {
     margin-top: 0 !important;
-    font-size: 8.2pt !important;
-    line-height: 1.4 !important;
+    font-size: 9.5pt !important;
+    line-height: 1.55 !important;
     color: var(--color-navy-deep) !important;
     font-weight: 600 !important;
     flex: 1 !important;
@@ -287,14 +291,14 @@ body {
 }
 
 .problem-stem.eng-text {
-    font-size: 8.4pt !important;
-    line-height: 1.5 !important;
+    font-size: 9.5pt !important;
+    line-height: 1.6 !important;
     font-weight: 500 !important;
 }
 
 .problem-choices {
     gap: 0 !important;
-    font-size: 7.8pt !important;
+    font-size: 9pt !important;
     margin-top: 2px !important;
     width: 100% !important;
 }
@@ -371,9 +375,10 @@ body {
 
 .passage-body,
 .passage-body p {
-    font-size: 8.6pt !important;
-    line-height: 1.65 !important;
-    color: #2D2D2D !important;
+    font-family: 'Noto Serif KR', Georgia, serif !important;
+    font-size: 9.5pt !important;
+    line-height: 1.85 !important;
+    color: #333333 !important;
 }
 
 .passage-vocab {
@@ -535,8 +540,8 @@ body {
 .explanation-body,
 .explanation-body p,
 .explanation-body li {
-    font-size: 8pt !important;
-    line-height: 1.52 !important;
+    font-size: 9.5pt !important;
+    line-height: 1.7 !important;
 }
 
 .tip-box,
@@ -550,26 +555,83 @@ body {
 
 .tip-box-title,
 .concept-box-title {
-    font-size: 9pt !important;
+    font-size: 10pt !important;
 }
 
 .tip-box {
-    background: #eef7ff !important;
-    border-left-color: var(--color-sky) !important;
+    background: #F1F8E9 !important;
+    border-left-color: #33691E !important;
     color: #2D2D2D !important;
 }
 
-.concept-box,
+.concept-box {
+    background: #E8EAF6 !important;
+    border-left-color: #1B2A4A !important;
+    color: #2D2D2D !important;
+}
+
 .rule-box {
-    background: #FAFAF7 !important;
-    border-left-color: var(--color-yellow) !important;
+    background: #FFF3E0 !important;
+    border-left-color: #C5A55A !important;
     color: #2D2D2D !important;
 }
 
 .warning-box {
-    background: #fff2f2 !important;
-    border-left-color: var(--color-red) !important;
+    background: #FFEBEE !important;
+    border-left-color: #B71C1C !important;
     color: #2D2D2D !important;
+}
+
+/* === verajin 추가 박스 유형 === */
+.logic-box {
+    background: #E8EAF6 !important;
+    border-left: 3px solid #283593 !important;
+    padding: 4mm 5mm !important;
+    margin: 3mm 0 !important;
+    font-size: 9pt !important;
+    color: #1A237E !important;
+    line-height: 1.8 !important;
+    border-radius: 0 !important;
+}
+
+.structure-box {
+    background: #FFF3E0 !important;
+    border-left: 3px solid #E65100 !important;
+    padding: 4mm 5mm !important;
+    margin: 3mm 0 !important;
+    font-size: 9pt !important;
+    line-height: 1.8 !important;
+    border-radius: 0 !important;
+}
+
+.trap-box {
+    background: #FFEBEE !important;
+    border-left: 3px solid #B71C1C !important;
+    padding: 3mm 4mm !important;
+    margin: 3mm 0 !important;
+    font-size: 9pt !important;
+    border-radius: 0 !important;
+}
+
+.trap-box .label {
+    font-weight: bold !important;
+    color: #B71C1C !important;
+}
+
+.answer-banner {
+    background: #1B2A4A !important;
+    color: #ffffff !important;
+    padding: 4mm 6mm !important;
+    margin: 4mm 0 !important;
+    font-size: 11pt !important;
+    font-weight: bold !important;
+    text-align: center !important;
+    border-radius: 4px !important;
+}
+
+.answer-banner .num {
+    color: #C5A55A !important;
+    font-size: 14pt !important;
 }
 
 .word-title {
@@ -579,48 +641,59 @@ body {
 .word-meaning,
 .word-example,
 .word-related {
-    font-size: 8pt !important;
+    font-size: 9pt !important;
 }
 
-.grammar-table th,
-.comparison-table th,
-table th {
-    background: #FAFAF7 !important;
-    color: #1B2A4A !important;
+.page-content .grammar-table th,
+.page-content .comparison-table th,
+.page-content table th {
+    background: #1B2A4A !important;
+    color: #ffffff !important;
+    padding: 5px 8px !important;
+    font-size: 8.5pt !important;
+    text-align: center !important;
+    font-weight: 700 !important;
 }
 
-.grammar-table td,
-.comparison-table td,
-table td {
+.page-content .grammar-table td,
+.page-content .comparison-table td,
+.page-content table td {
     border-color: #ddd6c8 !important;
+    border-bottom: 0.5px solid #ddd !important;
+    padding: 4px 8px !important;
+    vertical-align: top !important;
 }
 
-.grammar-table tr:nth-child(even) td,
-.comparison-table tr:nth-child(even) td,
-table tr:nth-child(even) td {
+.page-content .grammar-table tr:nth-child(even) td,
+.page-content .comparison-table tr:nth-child(even) td,
+.page-content table tr:nth-child(even) td {
     background: #FAFAF7 !important;
 }
 
-/* === Passage Highlights (솔리드 배경 — Puppeteer PDF 호환) === */
-.hl-passage-blue {
+/* === Passage Highlights (verajin 스타일 — 솔리드 하단 밑줄) === */
+.hl-passage-blue,
+.keyword {
     background: #E8F4FD !important;
-    padding: 1px 2px !important;
-    border-radius: 2px !important;
+    border-bottom: 2px solid #BBDEFB !important;
+    padding: 0 2px !important;
+    font-weight: bold !important;
 }
-.hl-passage-red {
+.hl-passage-red,
+.contrast {
     background: #FDE8E8 !important;
-    padding: 1px 2px !important;
-    border-radius: 2px !important;
+    border-bottom: 2px solid #FFCDD2 !important;
+    padding: 0 2px !important;
 }
-.hl-passage-green {
+.hl-passage-green,
+.term {
     background: #E8F8F0 !important;
-    padding: 1px 2px !important;
-    border-radius: 2px !important;
+    border-bottom: 2px solid #C8E6C9 !important;
+    padding: 0 2px !important;
 }
 .hl-passage-gold {
     background: #FDF6E3 !important;
-    padding: 1px 2px !important;
-    border-radius: 2px !important;
+    border-bottom: 2px solid #f4e3a0 !important;
+    padding: 0 2px !important;
 }
 
 /* === Legacy Content Classes (logic-basic, grammar 등) === */
@@ -663,8 +736,8 @@ table tr:nth-child(even) td {
     border-left: 3px solid var(--color-gold) !important;
     border-radius: 0 !important;
     margin-bottom: 2mm !important;
-    font-size: 8.5pt !important;
-    line-height: 1.5 !important;
+    font-size: 9.5pt !important;
+    line-height: 1.7 !important;
 }
 
 .definition {
@@ -689,8 +762,8 @@ table tr:nth-child(even) td {
     counter-increment: list-counter !important;
     padding: 2px 4px 2px 28px !important;
     position: relative !important;
-    font-size: 8.2pt !important;
-    line-height: 1.5 !important;
+    font-size: 9.5pt !important;
+    line-height: 1.65 !important;
     background: transparent !important;
     border: 0 !important;
     border-radius: 0 !important;

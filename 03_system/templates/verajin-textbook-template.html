@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>Vera's Flavor — 교재 디자인 템플릿 v2</title>
+<style>
+/* ═══════════════════════════════════════════════════════════ */
+/* verajin Textbook Design System v2.0                        */
+/* Based on: verajin_제목추론_ESG_박지율.html                    */
+/* Colors: Navy #1B2A4A · Gold #C5A55A · Text #2D2D2D         */
+/* ═══════════════════════════════════════════════════════════ */
+
+@page {
+    size: A4;
+    margin: 22mm 18mm 20mm 18mm;
+    @bottom-center {
+        content: "— " counter(page) " —";
+        font-family: 'Noto Sans KR', sans-serif;
+        font-size: 8pt;
+        color: #999;
+    }
+}
+@page :first { @bottom-center { content: none; } }
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 10pt;
+    line-height: 1.7;
+    color: #2D2D2D;
+    background: #fff;
+}
+
+/* ═══════ COVER ═══════ */
+.cover {
+    page-break-after: always;
+    text-align: center;
+    padding-top: 60mm;
+    min-height: 297mm;
+}
+.cover .brand {
+    font-family: 'Noto Serif KR', 'Playfair Display', serif;
+    font-size: 36pt;
+    font-weight: bold;
+    color: #1B2A4A;
+    letter-spacing: 3px;
+}
+.cover .gold-line {
+    width: 120px;
+    height: 2px;
+    background: #C5A55A;
+    margin: 16px auto;
+}
+.cover .main-title {
+    font-size: 22pt;
+    font-weight: bold;
+    color: #1B2A4A;
+    margin: 8px 0;
+}
+.cover .sub {
+    font-size: 12pt;
+    color: #888;
+    font-weight: 300;
+    margin: 4px 0;
+}
+.cover .part-label {
+    display: inline-block;
+    background: #1B2A4A;
+    color: white;
+    padding: 4px 16px;
+    font-size: 10pt;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 12px 0 8px;
+}
+.cover .edition {
+    font-size: 11pt;
+    font-weight: bold;
+    color: #C5A55A;
+    margin-top: 30px;
+}
+.cover .slogan {
+    font-size: 10pt;
+    color: #999;
+    font-weight: 300;
+}
+.cover .author-name {
+    margin-top: 30px;
+    font-size: 13pt;
+    color: #1B2A4A;
+    font-weight: bold;
+    border: 2px solid #C5A55A;
+    display: inline-block;
+    padding: 6px 24px;
+    border-radius: 4px;
+}
+.cover .footer-brand {
+    margin-top: 12px;
+    font-size: 8pt;
+    color: #C5A55A;
+}
+
+/* ═══════ HEADER & FOOTER ═══════ */
+.header-bar {
+    text-align: center;
+    font-size: 7.5pt;
+    color: #C5A55A;
+    border-bottom: 0.3px solid #C5A55A;
+    padding-bottom: 2mm;
+    margin-bottom: 5mm;
+}
+.footer-line {
+    margin-top: auto;
+    padding-top: 4mm;
+    border-top: 0.5px solid #ccc;
+    text-align: center;
+    font-size: 8.5pt;
+    color: #C5A55A;
+}
+
+/* ═══════ PAGE BREAK ═══════ */
+.page-break { page-break-before: always; }
+
+/* ═══════ SECTION TITLES ═══════ */
+.section-title {
+    margin-top: 5mm;
+    padding-top: 3mm;
+    border-top: 2.5px solid #1B2A4A;
+    font-size: 15pt;
+    font-weight: bold;
+    color: #1B2A4A;
+    margin-bottom: 2mm;
+    padding-bottom: 3mm;
+    border-bottom: 1px solid #C5A55A;
+}
+
+.subsection {
+    font-size: 12pt;
+    font-weight: bold;
+    color: #2C5F8A;
+    margin-top: 6mm;
+    margin-bottom: 3mm;
+}
+.subsection::before { content: "■ "; }
+
+.sub-subsection {
+    font-size: 10.5pt;
+    font-weight: bold;
+    color: #1B2A4A;
+    margin-top: 4mm;
+    margin-bottom: 2mm;
+}
+
+/* ═══════ BODY TEXT ═══════ */
+.body-text {
+    font-size: 9.5pt;
+    line-height: 1.8;
+    margin-bottom: 3mm;
+    text-align: justify;
+}
+
+/* ═══════ ENGLISH PASSAGE ═══════ */
+.eng-passage {
+    font-family: 'Noto Serif KR', 'Georgia', serif;
+    font-size: 9.5pt;
+    line-height: 1.85;
+    color: #333;
+    margin: 3mm 0;
+    padding: 5mm 6mm;
+    background: #FAFAF7;
+    border-left: 3px solid #C5A55A;
+}
+
+/* ═══════ KEYWORD HIGHLIGHTS (gradient underline) ═══════ */
+.keyword {
+    background: linear-gradient(transparent 55%, #BBDEFB 55%);
+    font-weight: bold;
+}
+.contrast {
+    background: linear-gradient(transparent 55%, #FFCDD2 55%);
+}
+.term {
+    background: linear-gradient(transparent 55%, #C8E6C9 55%);
+}
+.marker-gold {
+    background: linear-gradient(transparent 55%, #FFE082 55%);
+    font-weight: bold;
+}
+
+/* ═══════ COLOR-CODED BOXES (6종) ═══════ */
+
+/* 1. Concept Box — 남색 (핵심 개념) */
+.concept-box {
+    background: #E8EAF6;
+    border-left: 3px solid #1B2A4A;
+    padding: 4mm 5mm;
+    margin: 3mm 0;
+    font-size: 9.5pt;
+    line-height: 1.75;
+}
+.concept-box .box-title {
+    font-weight: bold;
+    color: #1B2A4A;
+    font-size: 10pt;
+    margin-bottom: 2mm;
+}
+
+/* 2. Logic Box — 진남색 (논리 구조) */
+.logic-box {
+    background: #E8EAF6;
+    border-left: 3px solid #283593;
+    padding: 4mm 5mm;
+    margin: 3mm 0;
+    font-size: 9pt;
+    color: #1A237E;
+    line-height: 1.8;
+}
+
+/* 3. Structure Box — 주황 (문장 구조) */
+.structure-box {
+    background: #FFF3E0;
+    border-left: 3px solid #E65100;
+    padding: 4mm 5mm;
+    margin: 3mm 0;
+    font-size: 9.5pt;
+    line-height: 1.8;
+}
+
+/* 4. Tip Box — 초록 (팁/요약) */
+.tip-box {
+    background: #F1F8E9;
+    border-left: 3px solid #33691E;
+    padding: 3mm 4mm;
+    margin: 3mm 0;
+    font-size: 9pt;
+    color: #33691E;
+}
+
+/* 5. Warning/Trap Box — 빨강 (주의/함정) */
+.trap-box {
+    background: #FFEBEE;
+    border-left: 3px solid #B71C1C;
+    padding: 3mm 4mm;
+    margin: 3mm 0;
+    font-size: 9pt;
+}
+.trap-box .label {
+    font-weight: bold;
+    color: #B71C1C;
+}
+
+/* 6. Example Box — 아이보리+금색 (예시/예문) */
+.example-box {
+    background: #FAFAF7;
+    border-left: 3px solid #C5A55A;
+    padding: 3mm 5mm;
+    margin: 3mm 0;
+    font-size: 9.5pt;
+    line-height: 1.75;
+}
+.example-box .ex-label {
+    font-weight: bold;
+    color: #C5A55A;
+    font-size: 8.5pt;
+    margin-bottom: 1mm;
+}
+
+/* ═══════ SENTENCE MAP (구조 분석) ═══════ */
+.sentence-map {
+    background: #EEF3FA;
+    border: 1.5px solid #7B9CC5;
+    padding: 4mm 5mm;
+    margin: 3mm 0;
+    font-size: 8.5pt;
+    line-height: 2;
+    border-radius: 4px;
+}
+.sentence-map .s-label {
+    display: inline-block;
+    background: #1B2A4A;
+    color: white;
+    padding: 1px 6px;
+    border-radius: 3px;
+    font-size: 7.5pt;
+    font-weight: bold;
+    margin-right: 3px;
+}
+.sentence-map .s-pos { color: #1565C0; font-weight: bold; }
+.sentence-map .s-neg { color: #B71C1C; font-weight: bold; }
+.sentence-map .s-turn { color: #E65100; font-weight: bold; }
+
+/* ═══════ GRAMMAR BLOCKS ═══════ */
+.grammar-rule {
+    background: #FAFAF7;
+    border: 1px solid #ddd6c8;
+    border-top: 3px solid #1B2A4A;
+    padding: 4mm 5mm;
+    margin: 4mm 0;
+    font-size: 9.5pt;
+    line-height: 1.75;
+}
+.grammar-rule .rule-title {
+    font-size: 11pt;
+    font-weight: bold;
+    color: #1B2A4A;
+    margin-bottom: 2mm;
+}
+
+.pattern-formula {
+    text-align: center;
+    font-size: 11pt;
+    font-weight: bold;
+    color: #1B2A4A;
+    padding: 3mm 0;
+    margin: 2mm 0;
+    background: #F5F5F0;
+    border-radius: 4px;
+    letter-spacing: 0.5px;
+}
+.pattern-formula .gold { color: #C5A55A; }
+.pattern-formula .blue { color: #2C5F8A; }
+
+/* ═══════ TABLES ═══════ */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9pt;
+    margin: 3mm 0 4mm 0;
+}
+.data-table th {
+    background: #1B2A4A;
+    color: white;
+    padding: 5px 8px;
+    font-size: 8.5pt;
+    text-align: center;
+    font-weight: 700;
+}
+.data-table td {
+    padding: 5px 8px;
+    border-bottom: 0.5px solid #ddd;
+    vertical-align: top;
+    line-height: 1.6;
+}
+.data-table tr:nth-child(even) { background: #FAFAF7; }
+.data-table .col-label { font-weight: bold; white-space: nowrap; }
+
+.compare-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 8.5pt;
+    margin: 3mm 0;
+}
+.compare-table th {
+    background: #1B2A4A;
+    color: white;
+    padding: 5px 6px;
+    text-align: center;
+}
+.compare-table td {
+    padding: 5px 6px;
+    border: 0.5px solid #ccc;
+    text-align: center;
+    line-height: 1.5;
+}
+.compare-table tr:nth-child(even) { background: #F5F5F5; }
+
+/* ═══════ PROBLEM (객관식) ═══════ */
+.problem-block {
+    margin: 4mm 0;
+    padding: 4mm 5mm;
+    border: 1px solid #ddd6c8;
+    border-radius: 4px;
+    background: #fff;
+}
+.problem-num {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 24px;
+    height: 24px;
+    padding: 0 8px;
+    background: #1B2A4A;
+    color: #fff;
+    font-size: 8pt;
+    font-weight: 700;
+    border-radius: 999px;
+    margin-right: 6px;
+}
+.problem-instruction {
+    font-size: 9pt;
+    color: #555;
+    margin-bottom: 2mm;
+}
+.problem-stem {
+    font-size: 9.5pt;
+    line-height: 1.6;
+    color: #1B2A4A;
+    font-weight: 600;
+    margin-bottom: 2mm;
+}
+.problem-stem.eng {
+    font-family: 'Noto Serif KR', 'Georgia', serif;
+    font-weight: 500;
+    color: #333;
+}
+.choices {
+    list-style: none;
+    padding: 0;
+    margin: 2mm 0;
+    font-size: 9pt;
+}
+.choices li {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    padding: 1.5px 0;
+    line-height: 1.5;
+}
+.choices .circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 16px;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #C5A55A;
+    border-radius: 50%;
+    font-size: 7pt;
+    font-weight: 700;
+    color: #1B2A4A;
+    flex-shrink: 0;
+}
+
+/* ═══════ ANSWER SECTION ═══════ */
+.answer-banner {
+    background: #1B2A4A;
+    color: white;
+    padding: 4mm 6mm;
+    margin: 4mm 0;
+    font-size: 11pt;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 4px;
+}
+.answer-banner .num { color: #C5A55A; font-size: 14pt; }
+
+.option-box {
+    margin: 2mm 0 2mm 4mm;
+    font-size: 9.5pt;
+    line-height: 1.9;
+}
+.option-box .correct {
+    color: #1565C0;
+    font-weight: bold;
+    background: #E3F2FD;
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+.option-box .wrong { color: #999; }
+.option-box .attractive { color: #E65100; font-weight: bold; }
+.option-box .analysis {
+    margin-left: 20px;
+    font-size: 9pt;
+    color: #555;
+    margin-bottom: 2mm;
+}
+
+/* ═══════ ANSWER GRID (정답표) ═══════ */
+.answer-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 2px;
+    margin: 4mm 0;
+    font-size: 8pt;
+}
+.answer-grid .ag-num {
+    text-align: center;
+    padding: 3px;
+    background: #1B2A4A;
+    color: white;
+    font-weight: 700;
+}
+.answer-grid .ag-ans {
+    text-align: center;
+    padding: 3px;
+    border: 0.5px solid #ddd;
+    font-weight: 600;
+    color: #1B2A4A;
+}
+
+/* ═══════ VOCABULARY ═══════ */
+.vocab-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9pt;
+    margin: 2mm 0 4mm 0;
+}
+.vocab-table th {
+    background: #1B2A4A;
+    color: white;
+    padding: 5px 8px;
+    font-size: 8.5pt;
+    text-align: center;
+}
+.vocab-table td {
+    padding: 4px 8px;
+    border-bottom: 0.5px solid #ddd;
+    vertical-align: top;
+}
+.vocab-table tr:nth-child(even) { background: #FAFAF7; }
+.vocab-table .word { font-weight: bold; white-space: nowrap; width: 22%; }
+.vocab-table .meaning { width: 25%; }
+.vocab-table .example { font-style: italic; color: #777; font-size: 8.5pt; width: 53%; }
+
+/* ═══════ TOC ═══════ */
+.toc-title {
+    font-size: 18pt;
+    font-weight: 800;
+    color: #1B2A4A;
+    margin-bottom: 3mm;
+    border-bottom: 2px solid #C5A55A;
+    padding-bottom: 3mm;
+}
+.toc-part {
+    background: #1B2A4A;
+    color: white;
+    padding: 3mm 5mm;
+    font-size: 11pt;
+    font-weight: bold;
+    margin: 4mm 0 2mm;
+    border-radius: 4px;
+}
+.toc-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 2mm 0;
+    border-bottom: 0.5px dotted #ddd;
+    font-size: 9.5pt;
+}
+.toc-item .toc-page {
+    color: #C5A55A;
+    font-weight: 600;
+    min-width: 30px;
+    text-align: right;
+}
+
+/* ═══════ UTILITIES ═══════ */
+.indent { margin-left: 5mm; }
+.mt-2 { margin-top: 2mm; }
+.mt-4 { margin-top: 4mm; }
+.mb-2 { margin-bottom: 2mm; }
+.mb-4 { margin-bottom: 4mm; }
+.text-center { text-align: center; }
+.text-navy { color: #1B2A4A; }
+.text-gold { color: #C5A55A; }
+.text-muted { color: #999; }
+.bold { font-weight: bold; }
+.spacer { height: 6mm; }
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- COVER PAGE                                              -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="cover">
+    <div class="brand">verajin</div>
+    <div class="gold-line"></div>
+    <div class="main-title">편입영어 문법 Bridge</div>
+    <div class="sub">Grammar Bridge Series</div>
+    <div style="height: 6mm;"></div>
+    <div class="part-label">CHAPTER 1</div>
+    <div style="height: 4mm;"></div>
+    <div class="sub" style="font-size: 14pt; color: #1B2A4A; font-weight: bold;">문장의 기본 구조</div>
+    <div style="height: 20mm;"></div>
+    <div class="gold-line"></div>
+    <div class="edition">2026 EDITION</div>
+    <div class="slogan">문법에 맛을 더하다</div>
+    <div class="author-name">Vera's Flavor</div>
+    <div class="footer-brand">verajin &nbsp;|&nbsp; Vera's Flavor 문법 Bridge &nbsp;|&nbsp; 2026 EDITION</div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- TABLE OF CONTENTS                                       -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="header-bar">verajin &nbsp;|&nbsp; Vera's Flavor 문법 Bridge &nbsp;|&nbsp; 2026 EDITION</div>
+
+<div class="toc-title">CONTENTS</div>
+
+<div class="toc-part">PART I: 문장의 기본 구조 (문제 1-50)</div>
+<div class="toc-item"><span><b>Chapter 1:</b> 문장의 뼈대 — 자동사와 타동사</span><span class="toc-page">3</span></div>
+<div class="toc-item"><span><b>Chapter 2:</b> 문장의 5가지 맛 — 5형식</span><span class="toc-page">12</span></div>
+<div class="toc-item"><span><b>Chapter 3:</b> 주어-동사 수일치</span><span class="toc-page">25</span></div>
+
+<div class="toc-part">PART II: 시제와 법 (문제 51-100)</div>
+<div class="toc-item"><span><b>Chapter 4:</b> 현재·과거·미래 시제</span><span class="toc-page">38</span></div>
+<div class="toc-item"><span><b>Chapter 5:</b> 완료 시제의 모든 것</span><span class="toc-page">50</span></div>
+
+<div class="toc-part">PART III: 준동사 (문제 101-150)</div>
+<div class="toc-item"><span><b>Chapter 6:</b> 부정사의 용법과 특수 구문</span><span class="toc-page">62</span></div>
+<div class="toc-item"><span><b>Chapter 7:</b> 동명사와 분사</span><span class="toc-page">75</span></div>
+
+<div class="footer-line">verajin &nbsp;|&nbsp; 문법에 맛을 더하다</div>
+
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- GRAMMAR CONTENT PAGE — 설명                             -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="page-break"></div>
+<div class="header-bar">verajin &nbsp;|&nbsp; Vera's Flavor 문법 Bridge &nbsp;|&nbsp; Ch.1 문장의 기본 구조</div>
+
+<div class="section-title">Ch. 1 &nbsp; 문장의 뼈대: 자동사와 타동사</div>
+
+<div class="subsection">자동사 (Intransitive Verb)</div>
+
+<div class="body-text">
+<span class="keyword">자동사</span>는 스스로 완전한 의미를 전달할 수 있어, 동작의 대상인 <b>목적어(Object)가 필요 없는 동사</b>입니다. 주어의 동작이나 상태가 주어 자신에게서 끝납니다. 수동태로 사용할 수 없다는 점이 핵심입니다.
+</div>
+
+<div class="tip-box">
+<b>📌 Vera's Tip: 자동사 vs 타동사 판별법</b><br><br>
+동사 뒤에 <b>'~을/를'</b>을 붙여보세요. 말이 어색하면 자동사일 확률이 높습니다.<br>
+"사고가 일어났다"는 자연스럽지만, "사고를 일어나다"는 어색하죠? 따라서 happen은 자동사입니다.
+</div>
+
+<table class="data-table">
+<tr><th>기능/의미</th><th>주요 자동사 목록</th></tr>
+<tr><td class="col-label">왕래발착</td><td>go, come, arrive, depart, start, leave, return, travel, journey, migrate</td></tr>
+<tr><td class="col-label">발생/존재</td><td>happen, occur, take place, arise, exist, appear, disappear, vanish, emerge, develop</td></tr>
+<tr><td class="col-label">기타 동작</td><td>work, function, operate, rise, fall, lie, sit, wait, laugh, talk, shine, flow, sleep</td></tr>
+<tr><td class="col-label">중요성</td><td>matter, count, work (효과가 있다), pay (이익이 되다), do (충분하다)</td></tr>
+</table>
+
+<div class="subsection">타동사 (Transitive Verb)</div>
+
+<div class="body-text">
+<span class="keyword">타동사</span>는 동작의 대상인 <b>목적어가 반드시 필요한 동사</b>입니다. 목적어 없이는 문장이 불완전합니다. 수동태로 전환할 수 있다는 특징이 있습니다.
+</div>
+
+<div class="grammar-rule">
+<div class="rule-title">핵심 규칙: 자동사 ≠ 수동태</div>
+자동사는 목적어가 없으므로 수동태로 만들 수 <b>없습니다</b>.<br><br>
+<span style="color: #B71C1C;">✗</span> The accident <b>was happened</b> yesterday. (happen = 자동사)<br>
+<span style="color: #33691E;">✓</span> The accident <b>happened</b> yesterday.
+</div>
+
+<div class="concept-box">
+<div class="box-title">핵심 개념: 자·타 혼동 동사</div>
+같은 동사가 자동사·타동사 양쪽으로 쓰이는 경우가 많습니다. 문맥에 따라 판별해야 합니다.
+</div>
+
+<div class="compare-table">
+<table style="width:100%; border-collapse:collapse;">
+<tr><th style="background:#1B2A4A;color:white;padding:5px 8px;width:15%;">동사</th><th style="background:#1B2A4A;color:white;padding:5px 8px;width:42%;">자동사 (Vi)</th><th style="background:#1B2A4A;color:white;padding:5px 8px;width:43%;">타동사 (Vt)</th></tr>
+<tr><td style="padding:5px 8px;border:0.5px solid #ccc;font-weight:bold;">run</td><td style="padding:5px 8px;border:0.5px solid #ccc;">He <b>runs</b> every morning. (달리다)</td><td style="padding:5px 8px;border:0.5px solid #ccc;">She <b>runs</b> a company. (운영하다)</td></tr>
+<tr style="background:#F5F5F5;"><td style="padding:5px 8px;border:0.5px solid #ccc;font-weight:bold;">grow</td><td style="padding:5px 8px;border:0.5px solid #ccc;">Plants <b>grow</b> fast. (자라다)</td><td style="padding:5px 8px;border:0.5px solid #ccc;">They <b>grow</b> rice. (재배하다)</td></tr>
+<tr><td style="padding:5px 8px;border:0.5px solid #ccc;font-weight:bold;">move</td><td style="padding:5px 8px;border:0.5px solid #ccc;">The car <b>moved</b> slowly. (움직이다)</td><td style="padding:5px 8px;border:0.5px solid #ccc;">The speech <b>moved</b> the audience. (감동시키다)</td></tr>
+</table>
+</div>
+
+<div class="trap-box">
+<span class="label">⚠️ 주의: 자동사인데 전치사 빠뜨리는 함정</span><br><br>
+<span style="color:#B71C1C;">✗</span> We <b>arrived</b> the airport. → arrive는 자동사! 전치사 필요<br>
+<span style="color:#33691E;">✓</span> We <b>arrived at</b> the airport.<br><br>
+같은 패턴: <b>listen to</b>, <b>wait for</b>, <b>look at</b>, <b>depend on</b>, <b>consist of</b>
+</div>
+
+<div class="footer-line">verajin &nbsp;|&nbsp; 문법에 맛을 더하다 &nbsp;|&nbsp; Vera's Flavor</div>
+
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- READING CONTENT PAGE — 독해 지문+해설                     -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="page-break"></div>
+<div class="header-bar">verajin &nbsp;|&nbsp; Vera's Flavor 독해 Bridge &nbsp;|&nbsp; 2026 EDITION</div>
+
+<div class="section-title">[Passage 42] The Paradox of Choice</div>
+
+<div class="subsection">원문 지문</div>
+<div class="eng-passage">
+In modern <span class="keyword">consumer societies</span>, individuals are often presented with an <span class="keyword">overwhelming number of options</span> in nearly every domain of life. <span class="contrast">However,</span> research suggests that having too many choices can lead to <span class="contrast">decision paralysis</span> and decreased satisfaction. Psychologist Barry Schwartz coined the term <span class="term">"the paradox of choice"</span> to describe this phenomenon. When consumers face a vast array of products, the cognitive effort required to evaluate each option can become <span class="contrast">exhausting</span>. Moreover, after making a decision, people are more likely to experience <span class="contrast">regret</span>, constantly wondering whether they could have made a <span class="keyword">better selection</span>. This suggests that <span class="keyword">simplicity and curation</span> may ultimately contribute more to consumer well-being than unlimited freedom of choice.
+</div>
+
+<div class="subsection">지문 구조 분석 (Sentence Map)</div>
+<div class="sentence-map">
+<span class="s-label">S1</span> 현대 소비사회 → 거의 모든 영역에서 <b>압도적 선택지</b> 제공 <span class="s-pos">[도입: 현상 소개]</span><br>
+<span class="s-label">S2</span> <span class="s-turn">However,</span> 연구 결과: 선택지 과다 → <b>결정 마비 + 만족도 저하</b> <span class="s-neg">[전환: 문제 제기]</span><br>
+<span class="s-label">S3</span> Barry Schwartz → <b>"선택의 역설(paradox of choice)"</b> 용어 제시 <span class="s-neg">[근거: 학자 인용]</span><br>
+<span class="s-label">S4</span> 방대한 상품 → 인지적 노력 = <b>탈진(exhausting)</b> <span class="s-neg">[문제점 1: 인지 과부하]</span><br>
+<span class="s-label">S5</span> 결정 후 → <b>후회(regret)</b> 경험 ↑ <span class="s-neg">[문제점 2: 결정 후 후회]</span><br>
+<span class="s-label">S6</span> <b>단순함과 큐레이션</b> → 무제한 선택보다 행복에 기여 <span class="s-pos">[결론: 해결 방향]</span>
+</div>
+
+<div class="subsection">지문 해석</div>
+<div class="body-text">
+현대 소비 사회에서 개인은 삶의 거의 모든 영역에서 <b>압도적인 수의 선택지</b>를 접하게 된다. <b>그러나(However),</b> 연구에 따르면 너무 많은 선택지를 갖는 것은 <b>결정 마비(decision paralysis)</b>와 만족도 저하를 초래할 수 있다. 심리학자 배리 슈워츠는 이 현상을 설명하기 위해 <b>"선택의 역설(the paradox of choice)"</b>이라는 용어를 만들었다.
+</div>
+<div class="body-text">
+소비자가 방대한 상품 배열에 직면할 때, 각 옵션을 평가하는 데 필요한 인지적 노력은 <b>기진맥진하게</b> 될 수 있다. 게다가, 결정을 내린 후에도 사람들은 <b>후회</b>를 경험할 가능성이 높아져, 더 나은 선택을 할 수 있었는지 끊임없이 고민하게 된다. 이는 <b>단순함과 큐레이션</b>이 궁극적으로 무제한의 선택 자유보다 소비자의 행복에 더 많이 기여할 수 있음을 시사한다.
+</div>
+
+<div class="subsection">핵심 어휘</div>
+<table class="vocab-table">
+<tr><th>어휘</th><th>뜻</th><th>예문</th></tr>
+<tr><td class="word">overwhelming</td><td class="meaning">압도적인</td><td class="example">The number of options was overwhelming.</td></tr>
+<tr><td class="word">paralysis</td><td class="meaning">마비, 정지</td><td class="example">Decision paralysis affects many consumers.</td></tr>
+<tr><td class="word">paradox</td><td class="meaning">역설, 모순</td><td class="example">The paradox of choice describes this dilemma.</td></tr>
+<tr><td class="word">cognitive</td><td class="meaning">인지적인</td><td class="example">Cognitive effort increases with more options.</td></tr>
+<tr><td class="word">curation</td><td class="meaning">큐레이션, 선별</td><td class="example">Curation helps reduce decision fatigue.</td></tr>
+</table>
+
+<div class="footer-line">verajin &nbsp;|&nbsp; 독해에 맛을 더하다 &nbsp;|&nbsp; Vera's Flavor</div>
+
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- PROBLEM PAGE — 문제                                     -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="page-break"></div>
+<div class="header-bar">verajin &nbsp;|&nbsp; Vera's Flavor 문법 Bridge &nbsp;|&nbsp; Ch.1 문장의 기본 구조</div>
+
+<div class="section-title">Ch. 1 &nbsp; 실전 문제</div>
+
+<div class="problem-block">
+    <div>
+        <span class="problem-num">1</span>
+        <span class="problem-instruction">다음 빈칸에 들어갈 가장 적절한 것은?</span>
+    </div>
+    <div class="problem-stem eng mt-2">
+        The research team, after months of hard work, finally managed to develop a groundbreaking new material. The lead scientist prepared to present their findings at the conference. After a long flight, he finally _______ the city where the conference was being held.
+    </div>
+    <ul class="choices mt-2">
+        <li><span class="circle">1</span> reached to</li>
+        <li><span class="circle">2</span> reached at</li>
+        <li><span class="circle">3</span> arrived</li>
+        <li><span class="circle">4</span> reached</li>
+        <li><span class="circle">5</span> arrived to</li>
+    </ul>
+</div>
+
+<div class="problem-block">
+    <div>
+        <span class="problem-num">2</span>
+        <span class="problem-instruction">어법상 틀린 부분이 있는 것은?</span>
+    </div>
+    <div class="problem-stem eng mt-2">
+        Which part is grammatically incorrect? During the weekly team meeting, the manager brought up a critical issue. For nearly an hour, they continued to ① <u>discuss about</u> the potential consequences of each option. They needed to come to a consensus quickly, ensuring that everyone had a chance to ② <u>voice</u> their opinion and that the discussion ③ <u>remained</u> productive and focused on ④ <u>finding</u> a viable solution.
+    </div>
+    <ul class="choices mt-2">
+        <li><span class="circle">1</span> discuss about</li>
+        <li><span class="circle">2</span> voice</li>
+        <li><span class="circle">3</span> remained</li>
+        <li><span class="circle">4</span> finding</li>
+        <li><span class="circle">5</span> No error</li>
+    </ul>
+</div>
+
+<div class="problem-block">
+    <div>
+        <span class="problem-num">3</span>
+        <span class="problem-instruction">다음 빈칸에 들어갈 가장 적절한 것은?</span>
+    </div>
+    <div class="problem-stem eng mt-2">
+        The entire nation was filled with anticipation. The final election results were about to be announced. The citizens eagerly _______ the official declaration from the election committee, a moment that would shape the country's future.
+    </div>
+    <ul class="choices mt-2">
+        <li><span class="circle">1</span> waited</li>
+        <li><span class="circle">2</span> awaited for</li>
+        <li><span class="circle">3</span> waited to</li>
+        <li><span class="circle">4</span> awaited</li>
+        <li><span class="circle">5</span> were waited</li>
+    </ul>
+</div>
+
+<div class="footer-line">verajin &nbsp;|&nbsp; 문법에 맛을 더하다 &nbsp;|&nbsp; Vera's Flavor</div>
+
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- ANSWER PAGE — 정답 + 해설                                -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="page-break"></div>
+<div class="header-bar">verajin &nbsp;|&nbsp; Vera's Flavor 문법 Bridge &nbsp;|&nbsp; Ch.1 정답 및 해설</div>
+
+<div class="section-title">Ch. 1 &nbsp; 정답 및 해설</div>
+
+<!-- 정답표 -->
+<div class="subsection">정답표</div>
+<div class="answer-grid">
+    <div class="ag-num">1</div><div class="ag-num">2</div><div class="ag-num">3</div><div class="ag-num">4</div><div class="ag-num">5</div><div class="ag-num">6</div><div class="ag-num">7</div><div class="ag-num">8</div><div class="ag-num">9</div><div class="ag-num">10</div>
+    <div class="ag-ans">④</div><div class="ag-ans">①</div><div class="ag-ans">④</div><div class="ag-ans">②</div><div class="ag-ans">③</div><div class="ag-ans">①</div><div class="ag-ans">④</div><div class="ag-ans">②</div><div class="ag-ans">③</div><div class="ag-ans">①</div>
+</div>
+
+<div class="spacer"></div>
+
+<!-- Q1 해설 -->
+<div class="answer-banner">정답: <span class="num">④</span> &nbsp; reached</div>
+
+<div class="concept-box">
+<div class="box-title">핵심 개념: reach vs. arrive</div>
+<b>reach</b>는 <b>타동사</b> → 전치사 없이 목적어 바로 연결<br>
+<b>arrive</b>는 <b>자동사</b> → 반드시 <b>at/in</b> 전치사 필요<br><br>
+reach + 장소 (O) &nbsp;|&nbsp; arrive at/in + 장소 (O)<br>
+<span style="color:#B71C1C;">reach to (X)</span> &nbsp;|&nbsp; <span style="color:#B71C1C;">arrive + 장소 바로 (X)</span>
+</div>
+
+<div class="option-box">
+<span class="wrong">① reached to</span>
+<div class="analysis">→ reach는 타동사이므로 전치사 to 불필요. "reached to"는 비문.</div>
+
+<span class="wrong">② reached at</span>
+<div class="analysis">→ reach는 타동사. 전치사 at은 arrive와 함께 씀.</div>
+
+<span class="wrong">③ arrived</span>
+<div class="analysis">→ arrive는 자동사이므로 뒤에 "the city"를 바로 받을 수 없음. "arrived in the city"여야 함.</div>
+
+<span class="correct">④ reached</span>
+<div class="analysis">→ ✅ reach(타동사) + the city(목적어). 전치사 없이 바로 목적어 연결. 정답!</div>
+
+<span class="wrong">⑤ arrived to</span>
+<div class="analysis">→ arrive는 at/in과 함께 쓰이며, to는 쓰지 않음.</div>
+</div>
+
+<div class="spacer"></div>
+
+<!-- Q2 해설 -->
+<div class="answer-banner">정답: <span class="num">①</span> &nbsp; discuss about → discuss</div>
+
+<div class="structure-box">
+<b>문장 구조 분석:</b><br><br>
+they continued to <span style="color:#B71C1C;"><b>① discuss about</b></span> the potential consequences<br>
+→ discuss는 <b>타동사</b>이므로 전치사 about이 불필요<br>
+→ <span style="color:#33691E;"><b>discuss the potential consequences</b></span>가 올바름
+</div>
+
+<div class="body-text">
+<b>discuss</b>는 대표적인 "전치사 없이 쓰는 타동사"입니다. "~에 대해 논의하다"라는 뜻에 이끌려 "discuss about"으로 쓰는 실수가 매우 빈번합니다.
+</div>
+
+<div class="trap-box">
+<span class="label">⚠️ 편입영어 초빈출: 전치사 없이 쓰는 타동사</span><br><br>
+<b>discuss</b> (논의하다) — <span style="color:#B71C1C;">discuss about (X)</span><br>
+<b>mention</b> (언급하다) — <span style="color:#B71C1C;">mention about (X)</span><br>
+<b>enter</b> (들어가다) — <span style="color:#B71C1C;">enter into (X)</span> *(계약 체결 시 예외)*<br>
+<b>attend</b> (참석하다) — <span style="color:#B71C1C;">attend to (X)</span> *(주의하다 뜻 예외)*<br>
+<b>reach</b> (도달하다) — <span style="color:#B71C1C;">reach to (X)</span><br>
+<b>marry</b> (결혼하다) — <span style="color:#B71C1C;">marry with (X)</span><br>
+<b>resemble</b> (닮다) — <span style="color:#B71C1C;">resemble to/with (X)</span>
+</div>
+
+<div class="footer-line">verajin &nbsp;|&nbsp; 문법에 맛을 더하다 &nbsp;|&nbsp; Vera's Flavor</div>
+
+
+<!-- ═══════════════════════════════════════════════════════ -->
+<!-- SYNTAX PAGE — 구문독해                                    -->
+<!-- ═══════════════════════════════════════════════════════ -->
+<div class="page-break"></div>
+<div class="header-bar">verajin &nbsp;|&nbsp; Vera's Flavor 구문독해 Bridge &nbsp;|&nbsp; 2026 EDITION</div>
+
+<div class="section-title">구문 분석: 5형식 문장의 목적격 보어</div>
+
+<div class="subsection">핵심 패턴</div>
+
+<div class="pattern-formula">
+    S + V + O + <span class="gold">O.C</span> &nbsp; (목적격 보어)
+</div>
+
+<div class="body-text">
+5형식 문장에서 <span class="keyword">목적격 보어(O.C)</span>는 목적어의 상태·동작·정체를 보충 설명합니다. 목적격 보어 자리에 올 수 있는 것: <b>명사, 형용사, to부정사, 원형부정사, 분사</b>.
+</div>
+
+<div class="example-box">
+<div class="ex-label">예시 1 — 형용사 보어</div>
+The news made <b>everyone</b> <span class="marker-gold">nervous</span>.<br>
+→ S(The news) + V(made) + O(everyone) + O.C(<b>nervous</b> = 형용사)
+</div>
+
+<div class="example-box">
+<div class="ex-label">예시 2 — to부정사 보어</div>
+The teacher encouraged <b>the students</b> <span class="marker-gold">to participate</span>.<br>
+→ S(The teacher) + V(encouraged) + O(the students) + O.C(<b>to participate</b> = to부정사)
+</div>
+
+<div class="example-box">
+<div class="ex-label">예시 3 — 원형부정사 보어 (사역동사)</div>
+The manager had <b>his assistant</b> <span class="marker-gold">prepare</span> the documents.<br>
+→ S(The manager) + V(had) + O(his assistant) + O.C(<b>prepare</b> = 원형부정사)
+</div>
+
+<div class="logic-box">
+<b>사역동사·지각동사의 보어 선택 규칙:</b><br><br>
+<b>make / have / let</b> + O + <b>원형부정사</b> (능동) / <b>p.p.</b> (수동)<br>
+<b>see / hear / feel</b> + O + <b>원형부정사</b> (완료) / <b>-ing</b> (진행) / <b>p.p.</b> (수동)<br><br>
+→ O와 O.C의 관계가 <b>능동</b>이면 원형부정사/-ing, <b>수동</b>이면 p.p.
+</div>
+
+<table class="data-table">
+<tr><th>동사 유형</th><th>능동 (O가 ~하다)</th><th>수동 (O가 ~당하다)</th></tr>
+<tr><td class="col-label">사역 (make)</td><td>make + O + <b>V원형</b></td><td>make + O + <b>p.p.</b></td></tr>
+<tr><td class="col-label">사역 (have)</td><td>have + O + <b>V원형</b></td><td>have + O + <b>p.p.</b></td></tr>
+<tr><td class="col-label">사역 (let)</td><td>let + O + <b>V원형</b></td><td>(거의 안 씀)</td></tr>
+<tr><td class="col-label">지각 (see)</td><td>see + O + <b>V원형/-ing</b></td><td>see + O + <b>p.p.</b></td></tr>
+<tr><td class="col-label">지각 (hear)</td><td>hear + O + <b>V원형/-ing</b></td><td>hear + O + <b>p.p.</b></td></tr>
+</table>
+
+<div class="tip-box">
+<b>📌 수동태 전환 시 주의!</b><br>
+사역/지각동사가 수동태로 바뀌면 원형부정사 → <b>to부정사</b>로 변환됩니다.<br><br>
+He <b>made</b> me <b>clean</b> the room. (능동: 원형부정사)<br>
+→ I was <b>made</b> <b>to clean</b> the room. (수동: to부정사)<br><br>
+단, <b>let</b>은 수동태에서 "be allowed to"로 대체합니다.
+</div>
+
+<div class="footer-line">verajin &nbsp;|&nbsp; 구문독해에 맛을 더하다 &nbsp;|&nbsp; Vera's Flavor</div>
+
+</body>
+</html>

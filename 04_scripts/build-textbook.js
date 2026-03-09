@@ -643,20 +643,15 @@ function sanitizeLegacyPalette(html) {
     .replace(/#0369a1/gi, '#1B2A4A')
     .replace(/#27ae60/gi, '#c5a55a')
     .replace(/#2ecc71/gi, '#f4e3a0')
-    .replace(/#33691e/gi, '#c5a55a')
+    // verajin 박스 색상 보존: #33691e(tip), #e65100(structure), #b71c1c(trap),
+    // #283593(logic), #1a237e(logic-text), #e8eaf6(concept-bg), #f1f8e9(tip-bg),
+    // #ffebee(warning-bg), #FFF3E0(structure-bg), #F1F8E9(tip-bg) — 리맵핑 제거
     .replace(/#16a34a/gi, '#c5a55a')
     .replace(/#10b981/gi, '#5ca9e6')
     .replace(/#e9a266/gi, '#c5a55a')
-    .replace(/#e65100/gi, '#c5a55a')
     .replace(/#c0392b/gi, '#c84c4c')
-    .replace(/#b71c1c/gi, '#c84c4c')
     .replace(/#ef4444/gi, '#c84c4c')
-    .replace(/#283593/gi, '#1B2A4A')
-    .replace(/#1a237e/gi, '#1B2A4A')
-    .replace(/#e8eaf6/gi, '#FAFAF7')
     .replace(/#e9f7fd/gi, '#eef7ff')
-    .replace(/#f1f8e9/gi, '#FAFAF7')
-    .replace(/#ffebee/gi, '#fff2f2')
     // Legacy blue accents -> Navy
     .replace(/#2563EB/gi, '#1B2A4A')
     .replace(/#1E3A8A/gi, '#1B2A4A')
@@ -674,10 +669,15 @@ function sanitizeLegacyPalette(html) {
     .replace(/#CE93D8/gi, '#7B9CC5')
     .replace(/#7B1FA2/gi, '#1B2A4A')
     .replace(/#9333EA/gi, '#1B2A4A')
-    // Strip linear-gradient to first solid color
-    .replace(/linear-gradient\([^)]*,\s*(#[0-9a-fA-F]{3,8})\s*\)/gi, '$1')
-    // Strip remaining linear-gradient patterns
-    .replace(/linear-gradient\([^)]*\)/gi, '#1B2A4A')
+    // Preserve gradient underline highlights (transparent XX%, #color XX%)
+    // Strip other linear-gradient to first solid color
+    .replace(/linear-gradient\(([^)]*)\)/gi, (match, inner) => {
+      // Keep underline-style highlights: linear-gradient(transparent 55%, #BBDEFB 55%)
+      if (/transparent\s+\d+%/.test(inner)) return match;
+      // Extract first solid color from other gradients
+      const colorMatch = inner.match(/#[0-9a-fA-F]{3,8}/);
+      return colorMatch ? colorMatch[0] : '#1B2A4A';
+    })
     // Strip box-shadow inline
     .replace(/box-shadow\s*:\s*[^;"]+/gi, 'box-shadow: none')
     // Strip rgba to solid

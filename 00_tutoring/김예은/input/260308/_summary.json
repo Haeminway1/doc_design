@@ -1,0 +1,46 @@
+{
+  "date": "260308",
+  "student": "김예은",
+  "totalImages": 4,
+  "feedbackImages": 3,
+  "images": [
+    {
+      "file": "김예은_260308_01.jpg",
+      "category": "EXCLUDE",
+      "detailCategory": "planner",
+      "confidence": 1,
+      "description": "손글씨로 작성된 학습 플래너 이미지입니다.",
+      "level": null,
+      "subject": null
+    },
+    {
+      "file": "김예은_260308_02.jpg",
+      "category": "FEEDBACK",
+      "detailCategory": "external-textbook",
+      "confidence": 1,
+      "description": "학생이 외부 교재의 문제에 답을 표시했습니다. 정관사 the를 넣는 문제에 답을 고르고 the를 써넣음.",
+      "level": "intermediate",
+      "subject": "문법"
+    },
+    {
+      "file": "김예은_260308_03.png",
+      "category": "FEEDBACK",
+      "detailCategory": "external-textbook",
+      "confidence": 0.9,
+      "description": "학생이 외부 교재의 문제에 답을 표시했습니다. 어법상 틀린 것을 고르는 문제.",
+      "level": "bridge",
+      "subject": "문법"
+    },
+    {
+      "file": "김예은_260308_04.jpg",
+      "category": "FEEDBACK",
+      "detailCategory": "external-textbook",
+      "confidence": 1,
+      "description": "외부 교재이며, 문제 풀이 흔적(정답 표시)이 있습니다.",
+      "level": "intermediate",
+      "subject": "문법"
+    }
+  ],
+  "feedbackReady": true,
+  "processedAt": "2026-03-08T15:31:27.582Z"
+}

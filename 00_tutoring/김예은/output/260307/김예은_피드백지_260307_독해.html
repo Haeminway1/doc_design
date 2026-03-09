@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>학습 피드백지 — 김예은 260307</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+
+  /* =============================================================
+     피드백지 공통 CSS v2.0 — Teal & Warm 팔레트
+     Primary Dark: #2c6975 | Primary Light: #68b2a0
+     Accent Blue: #1a6fc4 | Red: #e53e3e | Green: #2f855a
+     ============================================================= */
+
+  /* ===== RESET & BASE ===== */
+  *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html {
+    font-size: 9.5pt;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    font-size: 9.5pt;
+    line-height: 1.65;
+    color: #1a202c;
+    background: #f7fafa !important;
+    orphans: 3; widows: 3;
+  }
+
+  @page { size: A4; margin: 15mm 13mm; }
+
+  /* ===== PAGE BREAK ===== */
+  .page-break-after { page-break-after: always !important; }
+  .page-break-before { page-break-before: always !important; }
+  .avoid-break { page-break-inside: avoid !important; break-inside: avoid !important; }
+  h1, h2, h3, h4 { page-break-after: avoid !important; }
+  table, .concept-box, .tip-box, .warning-box, .answer-box, .grammar-block,
+  .problem-card, .diagnosis-card {
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+
+  /* ===== HEADINGS ===== */
+  h1 {
+    font-size: 18pt; font-weight: 700; color: #2c6975 !important;
+    margin: 16px 0 8px 0; padding-bottom: 5px;
+    border-bottom: 2.5px solid #2c6975; line-height: 1.3;
+  }
+  h2 {
+    font-size: 14pt; font-weight: 700; color: #2c6975 !important;
+    margin: 14px 0 8px 0; padding-bottom: 3px;
+    border-bottom: 1.5px solid #d0e4df; line-height: 1.3;
+  }
+  h3 {
+    font-size: 12pt; font-weight: 700; color: #2d3748 !important;
+    margin: 12px 0 6px 0; line-height: 1.4;
+  }
+  h4 {
+    font-size: 10pt; font-weight: 700; color: #4a5568 !important;
+    margin: 8px 0 5px 0; line-height: 1.4;
+  }
+  p { margin-bottom: 6px; }
+  strong { font-weight: 700; }
+  hr { border: none; border-top: 1px solid #d0e4df; margin: 16px 0; }
+
+  /* ===== TABLES ===== */
+  table {
+    width: 100%; border-collapse: collapse;
+    margin: 10px 0 12px 0; font-size: 8.5pt; line-height: 1.55;
+  }
+  thead th {
+    background-color: #68b2a0 !important; color: #fff !important;
+    font-weight: 700; padding: 6px 8px; text-align: left;
+    border: 1px solid #5aa090; font-size: 8.5pt;
+  }
+  tbody td {
+    padding: 5px 8px; border: 1px solid #d0e4df; vertical-align: top;
+  }
+  tbody tr:nth-child(odd) { background-color: #fff !important; }
+  tbody tr:nth-child(even) { background-color: #f0f7f5 !important; }
+  tbody td:first-child { font-weight: 500; }
+
+  .result-correct { color: #2f855a !important; font-weight: 700; }
+  .result-wrong { color: #e53e3e !important; font-weight: 700; }
+
+  /* ===== REPORT HEADER (첫 페이지) ===== */
+  .report-header { margin-bottom: 14px; }
+  .report-date { font-size: 9.5pt; color: #718096 !important; font-weight: 400; margin-bottom: 3px; }
+  .report-title {
+    font-size: 20pt; font-weight: 700; color: #2c6975 !important;
+    margin-bottom: 5px; line-height: 1.2; border: none; padding: 0;
+  }
+  .report-subtitle { font-size: 11pt; font-weight: 400; color: #4a5568 !important; margin-bottom: 2px; }
+  .report-meta { font-size: 8.5pt; color: #718096 !important; line-height: 1.8; margin-top: 6px; }
+  .report-meta span { display: inline-block; margin-right: 14px; }
+
+  /* ===== SECTION HEADER BAR ===== */
+  .section-header {
+    background-color: #2c6975 !important; color: #fff !important;
+    padding: 10px 20px; margin: 16px -13mm 12px -13mm;
+    padding-left: 16mm; padding-right: 13mm;
+    font-size: 14pt; font-weight: 700; line-height: 1.3;
+  }
+  .section-header .section-num {
+    font-size: 11pt; font-weight: 300; display: block;
+    margin-bottom: 1px; color: #9fcfc2 !important;
+  }
+
+  /* ===== SEVERITY BADGES ===== */
+  .severity-high {
+    display: inline-block; background-color: #e53e3e !important; color: #fff !important;
+    font-size: 7.5pt; font-weight: 700; padding: 1px 8px; border-radius: 10px;
+  }
+  .severity-mid {
+    display: inline-block; background-color: #ed8936 !important; color: #fff !important;
+    font-size: 7.5pt; font-weight: 700; padding: 1px 8px; border-radius: 10px;
+  }
+  .severity-low {
+    display: inline-block; background-color: #2f855a !important; color: #fff !important;
+    font-size: 7.5pt; font-weight: 700; padding: 1px 8px; border-radius: 10px;
+  }
+
+  /* ===== DIAGNOSIS CARD (학습 요약) ===== */
+  .diagnosis-card {
+    border: 1.5px solid #a8cec5; border-radius: 16px;
+    padding: 12px 16px; margin: 12px 0; background-color: #fff !important;
+  }
+  .diagnosis-card h3 { margin-top: 0; color: #2c6975 !important; font-size: 11pt; }
+  .priority-order {
+    background-color: #eaf3f0 !important; border-left: 3px solid #68b2a0;
+    padding: 8px 14px; margin: 10px 0; font-size: 9.5pt; border-radius: 0 12px 12px 0;
+  }
+
+  /* ===== QUESTION BOX ===== */
+  .question-box {
+    background-color: #f0f7f5 !important; border-left: 3px solid #68b2a0;
+    padding: 8px 12px; margin: 6px 0; font-size: 9.5pt; line-height: 1.65;
+    border-radius: 0 12px 12px 0;
+  }
+  .question-box p { margin: 0; }
+
+  /* ===== ANSWER BOX ===== */
+  .answer-box {
+    background-color: #f0fff4 !important; border-left: 3px solid #2f855a;
+    padding: 6px 12px; margin: 6px 0; font-weight: 500;
+    border-radius: 0 12px 12px 0;
+  }
+
+  /* ===== GRAMMAR BLOCK ===== */
+  .grammar-block {
+    background-color: #f0f4f3 !important; border: 1px solid #d0e4df;
+    padding: 10px 14px; margin: 10px 0; border-radius: 12px;
+    font-size: 8.5pt; line-height: 1.75; white-space: pre-wrap;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+
+  /* ===== TIP BOX ===== */
+  .tip-box {
+    background-color: #fffaf0 !important; border-left: 3px solid #ed8936;
+    padding: 8px 14px; margin: 10px 0; border-radius: 0 12px 12px 0;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+  .tip-box .tip-label {
+    font-weight: 700; color: #c05621 !important; font-size: 8.5pt;
+    display: block; margin-bottom: 3px;
+  }
+
+  /* ===== WARNING BOX ===== */
+  .warning-box {
+    background-color: #fff5f5 !important; border-left: 3px solid #e53e3e;
+    padding: 8px 14px; margin: 10px 0; border-radius: 0 12px 12px 0;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+  .warning-box .warning-label {
+    font-weight: 700; color: #e53e3e !important; font-size: 8.5pt;
+    display: block; margin-bottom: 3px;
+  }
+
+  /* ===== ANSWER LABEL ===== */
+  .answer-box .answer-label {
+    font-weight: 700; color: #2f855a !important; font-size: 8.5pt;
+    display: block; margin-bottom: 3px;
+  }
+
+  /* ===== CONCEPT BOX ===== */
+  .concept-box {
+    background-color: #eaf3f0 !important; border: 1px solid #68b2a0;
+    padding: 10px 14px; margin: 10px 0; border-radius: 12px;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+  .concept-box .concept-label {
+    font-weight: 700; color: #2c6975 !important; font-size: 8.5pt;
+    display: block; margin-bottom: 4px;
+  }
+
+  /* ===== PROBLEM CARD ===== */
+  .problem-card {
+    border: 1px solid #d0e4df; border-radius: 14px;
+    padding: 12px 16px; margin: 10px 0;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+    background-color: #fff !important;
+  }
+  .problem-header {
+    display: flex; align-items: center; margin-bottom: 10px; gap: 10px;
+  }
+  .problem-badge {
+    display: inline-flex; align-items: center; justify-content: center;
+    width: 32px; height: 32px; border-radius: 50%;
+    background-color: #68b2a0 !important; color: #fff !important;
+    font-weight: 700; font-size: 11pt; flex-shrink: 0;
+  }
+  .problem-title {
+    font-size: 10pt; font-weight: 700; color: #2d3748 !important;
+  }
+  .problem-source {
+    font-size: 7.5pt; color: #718096 !important; font-weight: 400;
+    display: block; margin-top: 1px;
+  }
+
+  /* ===== HIGHLIGHT ===== */
+  .hl-key { color: #2c6975 !important; font-weight: 700; }
+  .hl-wrong { color: #e53e3e !important; font-weight: 700; text-decoration: line-through; }
+  .hl-correct { color: #2f855a !important; font-weight: 700; }
+  .hl-blue { color: #1a6fc4 !important; font-weight: 700; }
+
+  /* ===== FLOWCHART ===== */
+  .flowchart { margin: 12px 0; page-break-inside: avoid !important; }
+  .flow-step {
+    background-color: #eaf3f0 !important; border: 1px solid #a8cec5;
+    border-radius: 12px; padding: 8px 14px; margin-bottom: 3px; font-size: 9pt;
+  }
+  .flow-step .step-label { font-weight: 700; color: #2c6975 !important; margin-right: 8px; }
+  .flow-step .step-sub {
+    padding-left: 20px; font-size: 8.5pt; color: #4a5568 !important;
+    margin-top: 3px; line-height: 1.65;
+  }
+  .flow-arrow { text-align: center; font-size: 13pt; color: #68b2a0 !important; line-height: 1.2; margin: 2px 0; }
+
+  /* ===== CHECKLIST ===== */
+  .checklist-group { margin-bottom: 12px; page-break-inside: avoid !important; }
+  .checklist-group-title {
+    font-size: 10pt; font-weight: 700; color: #2c6975 !important;
+    margin-bottom: 6px; padding: 3px 0; border-bottom: 1px solid #d0e4df;
+  }
+  .checklist-item {
+    display: flex; align-items: flex-start; gap: 6px;
+    padding: 3px 0; font-size: 9pt; line-height: 1.55;
+  }
+  .checkbox {
+    display: inline-block; width: 13px; height: 13px; min-width: 13px;
+    border: 1.5px solid #a0aec0; border-radius: 3px; margin-top: 2px;
+  }
+
+  /* ===== SECTION DIVIDER ===== */
+  .section-divider { border: none; border-top: 1.5px solid #d0e4df; margin: 16px 0; }
+
+  /* ===== VARIANT CHOICES ===== */
+  .variant-choices { padding-left: 18px; font-size: 8.5pt; line-height: 1.75; margin: 3px 0; }
+
+  /* ===== GROUP ROW ===== */
+  .group-row td {
+    background-color: #eaf3f0 !important; font-weight: 700;
+    color: #2c6975 !important; border-bottom: 2px solid #68b2a0;
+  }
+
+  /* ===== COMPARE TABLE ===== */
+  .compare-table thead th:nth-child(2) { background-color: #5aa090 !important; }
+  .compare-table thead th:nth-child(3) { background-color: #2f855a !important; }
+
+  /* ===== EXPRESSION TABLE ===== */
+  .expression-table td:first-child { white-space: nowrap; font-weight: 700; }
+
+  /* ===== MARKER ===== */
+  .marker-o { color: #2f855a !important; font-weight: 700; }
+  .marker-x { color: #e53e3e !important; font-weight: 700; }
+
+  /* ===== PASSAGE BLOCK (독해 지문) ===== */
+  .passage-block {
+    background-color: #f7fafa !important; border: 1px solid #d0e4df;
+    border-left: 3px solid #68b2a0;
+    padding: 12px 16px; margin: 10px 0; border-radius: 0 12px 12px 0;
+    font-size: 9pt; line-height: 1.85;
+    text-align: justify !important;
+    page-break-inside: avoid !important; break-inside: avoid !important;
+  }
+
+  /* Allow long passages to break across pages */
+  .passage-block--long {
+    page-break-inside: auto !important; break-inside: auto !important;
+  }
+
+  /* Legacy .page container fallback (pre-v2 feedback HTMLs) */
+  .page {
+    min-height: 297mm;
+    height: auto;
+    overflow: visible;
+  }
+  .page-content {
+    overflow: visible;
+  }
+
+  /* ===== CHOICES LIST ===== */
+  .choices-list {
+    margin: 8px 0; font-size: 9pt; line-height: 1.85;
+  }
+  .choices-list .choice-item { padding: 1px 0; }
+  .choice-correct { color: #2f855a !important; font-weight: 700; }
+  .choice-wrong { color: #e53e3e !important; font-weight: 700; text-decoration: line-through; }
+
+  /* ===== PRINT OPTIMIZATION ===== */
+  @media print {
+    body { -webkit-print-color-adjust: exact !important; print-color-adjust: exact !important; background: #fff !important; }
+    .section-header { margin-left: -13mm; margin-right: -13mm; padding-left: 16mm; padding-right: 13mm; }
+  }
+
+</style>
+</head>
+<body>
+
+<div class="report-header">
+  <div class="report-date">2026. 03. 07</div>
+  <h1 class="report-title" style="border:none; margin-bottom:6px;">학습 피드백지</h1>
+  <div class="report-subtitle">독해 — reading/intermediate</div>
+  <div class="report-meta">
+    <span><strong>학생</strong> 김예은</span>
+    <span><strong>교재</strong> reading/intermediate</span>
+    <span><strong>범위</strong> 84~012.</span>
+  </div>
+</div>
+
+<div class="diagnosis-card">
+  <h3>학습 요약</h3>
+  <p style="font-size:10pt; margin-bottom:8px;">
+    전체 48문제 중 오답 <strong>2문제</strong> (정답률 약 96%)
+  </p>
+  <p style="font-size:9.5pt; margin-bottom:4px;">
+    <strong style="color:#38a169;">잘한 점:</strong> (자동 생성 실패) 기본 오답 리스트를 우선 제공합니다.
+  </p>
+  <p style="font-size:9.5pt; margin-bottom:12px;">
+    <strong style="color:#e53e3e;">아쉬운 점:</strong> (자동 생성 실패) 상세 해설 분석을 불러오지 못했습니다.
+  </p>
+  
+</div>
+
+<div class="priority-order">
+  <strong>학습 우선순위:</strong> 오답 문항의 정답 근거 문장을 먼저 확인하고 재검토하세요.
+</div>
+
+<div class="page-break-before section-header">
+  <span class="section-num">Section 1</span>
+  틀린 문제 리스트
+</div>
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">1</div>
+    <div>
+      <div class="problem-title">어휘 추론</div>
+      <span class="problem-source">018번</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>When James worked in the office, his job was sedentary. In contrast, when he became a reporter, he was almost away from his desk.</p>
+  </div>
+  <div style="margin:8px 0; font-size:9.5pt;">
+    <span class="hl-wrong">학생 답: moving around a lot</span> &rarr;
+    <span class="hl-correct">정답: ?</span>
+  </div>
+</div>
+<div class="problem-card">
+  <div class="problem-header">
+    <div class="problem-badge">2</div>
+    <div>
+      <div class="problem-title">어휘 추론</div>
+      <span class="problem-source">016번</span>
+    </div>
+  </div>
+  <div class="question-box">
+    <p>문맥상 밑줄 친 'agitated'의 의미로 가장 적절한 것을 고르시오.</p>
+  </div>
+  <div style="margin:8px 0; font-size:9.5pt;">
+    <span class="hl-wrong">학생 답: very nervous</span> &rarr;
+    <span class="hl-correct">정답: ?</span>
+  </div>
+</div>
+
+<div class="page-break-before section-header">
+  <span class="section-num">Section 2</span>
+  해설 파트
+</div>
+<h2>018번 — 어휘 추론</h2>
+<div class="passage-block">When James worked in the office, his job was sedentary. In contrast, when he became a reporter, he was almost away from his desk.</div>
+<div class="question-box" style="margin-top:12px;">
+  <p><strong>When James worked in the office, his job was sedentary. In contrast, when he became a reporter, he was almost away from his desk.</strong></p>
+</div><div class="choices-list">
+  <div class="choice-item">① well paid</div>
+  <div class="choice-item">② sitting a lot</div>
+  <div class="choice-item">③ moving around a lot</div>
+  <div class="choice-item">④ exciting</div>
+</div>
+<p>자동 해설 생성 실패로 기본 오답 데이터만 표시합니다.</p>
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>어디서 막혔을까:</strong> 자동 생성 실패</p>
+  <p><strong>오류 패턴:</strong> 자동 생성 실패</p>
+  <p><strong>집중 포인트:</strong> 자동 생성 실패</p>
+</div>
+<div class="page-break-before"></div>
+<h3 style="margin:0 0 10px 0; color:#2c6975;">독해 해설</h3>
+<h2>016번 — 어휘 추론</h2>
+<div class="passage-block">When Marcus entered the classroom, he felt calm. However, as soon as he opened the test paper, he began to feel agitated.</div>
+<div class="question-box" style="margin-top:12px;">
+  <p><strong>문맥상 밑줄 친 'agitated'의 의미로 가장 적절한 것을 고르시오.</strong></p>
+</div><div class="choices-list">
+  <div class="choice-item">① very nervous</div>
+  <div class="choice-item">② peaceful</div>
+  <div class="choice-item">③ angry</div>
+  <div class="choice-item">④ confused</div>
+</div>
+<p>자동 해설 생성 실패로 기본 오답 데이터만 표시합니다.</p>
+<div class="tip-box" style="page-break-inside:avoid;">
+  <span class="tip-label">학생 답 분석</span>
+  <p><strong>어디서 막혔을까:</strong> 자동 생성 실패</p>
+  <p><strong>오류 패턴:</strong> 자동 생성 실패</p>
+  <p><strong>집중 포인트:</strong> 자동 생성 실패</p>
+</div>
+
+
+
+
+<hr class="section-divider">
+<p style="text-align: center; color: #a0aec0; font-size: 9pt; margin-top: 30px;">
+  피드백지 작성 완료 — 2026. 03. 07
+</p>
+</body>
+</html>

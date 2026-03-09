@@ -1,0 +1,84 @@
+{
+  "student": "김예은",
+  "date": "260307",
+  "subject": "독해",
+  "textbook": "reading/intermediate",
+  "range": "84~012.",
+  "summary": {
+    "totalQ": 48,
+    "wrongQ": 2,
+    "correctRate": "96%",
+    "goodPoints": "(자동 생성 실패) 기본 오답 리스트를 우선 제공합니다.",
+    "badPoints": "(자동 생성 실패) 상세 해설 분석을 불러오지 못했습니다.",
+    "priority": "오답 문항의 정답 근거 문장을 먼저 확인하고 재검토하세요.",
+    "weakAreas": []
+  },
+  "wrongAnswers": [
+    {
+      "q": "018",
+      "selected": "moving around a lot",
+      "correct": "?",
+      "type": "어휘 추론",
+      "question": "When James worked in the office, his job was sedentary. In contrast, when he became a reporter, he was almost away from his desk.",
+      "passage": "When James worked in the office, his job was sedentary. In contrast, when he became a reporter, he was almost away from his desk.",
+      "choices": [
+        "well paid",
+        "sitting a lot",
+        "moving around a lot",
+        "exciting"
+      ],
+      "explanation": "자동 해설 생성 실패로 기본 오답 데이터만 표시합니다.",
+      "studentAnalysis": {
+        "whyChosen": "자동 생성 실패",
+        "errorPattern": "자동 생성 실패",
+        "focusPoint": "자동 생성 실패"
+      },
+      "summary": "",
+      "fullInterpretation": "",
+      "keywords": {
+        "positive": [],
+        "negative": []
+      },
+      "directionAnalysis": "",
+      "optionAnalysis": "",
+      "correctExplanation": "",
+      "wrongExplanation": "",
+      "whyChosen": "자동 생성 실패",
+      "mistakePattern": "자동 생성 실패",
+      "focusPoint": "자동 생성 실패"
+    },
+    {
+      "q": "016",
+      "selected": "very nervous",
+      "correct": "?",
+      "type": "어휘 추론",
+      "question": "문맥상 밑줄 친 'agitated'의 의미로 가장 적절한 것을 고르시오.",
+      "passage": "When Marcus entered the classroom, he felt calm. However, as soon as he opened the test paper, he began to feel agitated.",
+      "choices": [
+        "very nervous",
+        "peaceful",
+        "angry",
+        "confused"
+      ],
+      "explanation": "자동 해설 생성 실패로 기본 오답 데이터만 표시합니다.",
+      "studentAnalysis": {
+        "whyChosen": "자동 생성 실패",
+        "errorPattern": "자동 생성 실패",
+        "focusPoint": "자동 생성 실패"
+      },
+      "summary": "",
+      "fullInterpretation": "",
+      "keywords": {
+        "positive": [],
+        "negative": []
+      },
+      "directionAnalysis": "",
+      "optionAnalysis": "",
+      "correctExplanation": "",
+      "wrongExplanation": "",
+      "whyChosen": "자동 생성 실패",
+      "mistakePattern": "자동 생성 실패",
+      "focusPoint": "자동 생성 실패"
+    }
+  ]
+}
