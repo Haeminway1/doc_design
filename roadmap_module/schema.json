@@ -1,0 +1,163 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "RoadmapContent",
+  "description": "AI가 생성해야 하는 로드맵 콘텐츠 JSON 스키마. HTML은 생성하지 않고 이 구조의 JSON만 생성.",
+  "type": "object",
+  "required": ["studentName", "subtitle", "profile", "analysis", "strategies", "roadmapTitle", "phases", "schedule", "finalMessage"],
+  "properties": {
+    "studentName": {
+      "type": "string",
+      "description": "학생 이름",
+      "examples": ["이연율"]
+    },
+    "subtitle": {
+      "type": "string",
+      "description": "로드맵 부제목 - 학생의 핵심 전략을 한 줄로 요약",
+      "examples": ["어휘 집중 강화를 통한 상위권 도약 전략"]
+    },
+    "profile": {
+      "type": "object",
+      "description": "학생 프로필 정보",
+      "required": ["sleepPattern", "strengths", "keyChallenge"],
+      "properties": {
+        "sleepPattern": {
+          "type": "string",
+          "description": "기상/취침 시간",
+          "examples": ["08:15 기상 / 01:30 취침"]
+        },
+        "strengths": {
+          "type": "string",
+          "description": "학생의 강점",
+          "examples": ["독해/문법 기본기 보유"]
+        },
+        "keyChallenge": {
+          "type": "string",
+          "description": "핵심 과제 (가장 중요한 약점)",
+          "examples": ["절대적인 어휘량 부족"]
+        }
+      }
+    },
+    "analysis": {
+      "type": "object",
+      "description": "현황 분석 (학생 상태에 대한 진단)",
+      "required": ["title", "content"],
+      "properties": {
+        "title": {
+          "type": "string",
+          "description": "분석 제목 (비유적 표현 권장)",
+          "examples": ["분석: 연료가 부족한 고성능 엔진"]
+        },
+        "content": {
+          "type": "string",
+          "description": "분석 본문. <span class=\"bold\">강조할 부분</span> 마크업 사용 가능.",
+          "examples": ["연율 학생은 문장을 구조적으로 파악하는 엔진의 성능은 이미 일정 수준에 도달했습니다..."]
+        }
+      }
+    },
+    "strategies": {
+      "type": "array",
+      "description": "핵심 전략 목록 (2~3개 권장)",
+      "minItems": 2,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "required": ["title", "content"],
+        "properties": {
+          "title": {
+            "type": "string",
+            "examples": ["전략 1: 「어휘 FIRST」 원칙 확립"]
+          },
+          "content": {
+            "type": "string",
+            "description": "전략 설명. <span class=\"bold\">강조 부분</span> 마크업 사용 가능."
+          }
+        }
+      }
+    },
+    "roadmapTitle": {
+      "type": "string",
+      "description": "2페이지 로드맵 섹션 제목",
+      "examples": ["어휘력 폭발을 위한 3단계 로드맵"]
+    },
+    "phases": {
+      "type": "array",
+      "description": "3단계 로드맵 (정확히 3개)",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "required": ["name", "period", "items"],
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Phase 영문명",
+            "examples": ["Phase 1: Critical Mass"]
+          },
+          "period": {
+            "type": "string",
+            "description": "기간 및 한글 부제",
+            "examples": ["~1개월: 어휘 임계량 돌파기"]
+          },
+          "items": {
+            "type": "array",
+            "description": "세부 항목 (3~5개). [목표], [학습], [결과] 태그 권장. <span class=\"tag\">강조</span> 마크업 사용 가능.",
+            "minItems": 2,
+            "maxItems": 6,
+            "items": { "type": "string" }
+          }
+        }
+      }
+    },
+    "schedule": {
+      "type": "array",
+      "description": "주간 학습 계획표. 각 행은 시간대별로 7요일의 활동을 개별 지정. rowspan/colspan 개념 없이 각 셀이 독립적.",
+      "minItems": 4,
+      "maxItems": 15,
+      "items": {
+        "type": "object",
+        "required": ["time", "mon", "tue", "wed", "thu", "fri", "sat", "sun"],
+        "properties": {
+          "time": {
+            "type": "string",
+            "description": "시간대 (HH:MM-HH:MM)",
+            "examples": ["09:00-12:30"]
+          },
+          "mon": { "$ref": "#/$defs/scheduleCell" },
+          "tue": { "$ref": "#/$defs/scheduleCell" },
+          "wed": { "$ref": "#/$defs/scheduleCell" },
+          "thu": { "$ref": "#/$defs/scheduleCell" },
+          "fri": { "$ref": "#/$defs/scheduleCell" },
+          "sat": { "$ref": "#/$defs/scheduleCell" },
+          "sun": { "$ref": "#/$defs/scheduleCell" }
+        }
+      }
+    },
+    "finalMessage": {
+      "type": "string",
+      "description": "마지막 격려 메시지. <span class=\"emphasis\">강조</span> 마크업 사용 가능."
+    }
+  },
+  "$defs": {
+    "scheduleCell": {
+      "type": "object",
+      "required": ["label", "type"],
+      "properties": {
+        "label": {
+          "type": "string",
+          "description": "셀 주요 텍스트 (활동명)",
+          "examples": ["어휘 집중 학습", "점심 및 휴식", "알바"]
+        },
+        "detail": {
+          "type": "string",
+          "description": "셀 보조 텍스트 (선택). 줄바꿈은 \\n",
+          "examples": ["새 단어 암기\n어원 분석"]
+        },
+        "type": {
+          "type": "string",
+          "description": "셀 색상 유형",
+          "enum": ["vocab", "reading", "grammar", "review", "break", "work", "test", "sleep"]
+        }
+      }
+    }
+  }
+}

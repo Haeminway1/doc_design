@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{studentName}} 학생 맞춤형 합격 로드맵</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700;900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --font-display: 'Playfair Display', serif;
+            --font-kr: 'Noto Sans KR', sans-serif;
+            --font-mono: 'DM Mono', monospace;
+
+            --ink: #1a1a2e;
+            --ink-soft: #2d2d44;
+            --ink-muted: #4a4a5a;
+            --gold: #c5a572;
+            --gold-dark: #a68a5b;
+            --gold-light: #d4bc8b;
+            --gold-pale: #f5f0e8;
+            --gold-wash: #faf7f2;
+
+            --text: #1a1a2e;
+            --text-mid: #4a4a5a;
+            --text-soft: #7a7a8a;
+            --text-muted: #a0a0aa;
+
+            --paper: #fafaf7;
+            --card: #ffffff;
+            --border: #e8e6e1;
+            --border-light: #f0eee9;
+            --divider: #d8d5ce;
+
+            --correct: #2d7a4f;
+            --correct-bg: #edf5f0;
+            --warn: #b8860b;
+            --warn-bg: #fdf8ec;
+            --danger: #943434;
+            --danger-bg: #faf0f0;
+
+            /* Schedule cells — muted, sophisticated */
+            --cell-vocab-bg: #f8f3e8; --cell-vocab: #8b7355;
+            --cell-reading-bg: #eef2f7; --cell-reading: #4a6fa5;
+            --cell-grammar-bg: #f0eef5; --cell-grammar: #5a4f7a;
+            --cell-review-bg: #edf5f0; --cell-review: #3d7a5a;
+            --cell-break-bg: #f5f5f3; --cell-break: #999;
+            --cell-work-bg: #f3eef5; --cell-work: #6b4f8a;
+            --cell-test-bg: #f5eeee; --cell-test: #8a4f4f;
+            --cell-sleep-bg: #f0f0ee; --cell-sleep: #aaa;
+        }
+
+        @page { size: A4; margin: 0; }
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-print-color-adjust: exact !important; color-adjust: exact !important; }
+
+        body {
+            font-family: var(--font-kr);
+            line-height: 1.8;
+            color: var(--text);
+            background: #e8e6e1;
+            font-size: 9.5pt;
+        }
+
+        /* ── Page ── */
+        .page {
+            width: 210mm; min-height: 297mm;
+            margin: 10mm auto;
+            padding: 24mm 22mm 20mm;
+            background: var(--card);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+            display: flex; flex-direction: column;
+            position: relative;
+            page-break-after: always;
+        }
+        .page:last-child { page-break-after: avoid; }
+        .page-body { flex: 1; }
+
+        .page-accent {
+            position: absolute; top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--gold), var(--gold-dark), var(--ink));
+        }
+
+        .page-footer {
+            display: flex; justify-content: space-between; align-items: center;
+            padding-top: 12px; margin-top: 20px;
+            border-top: 0.5px solid var(--divider);
+            font-size: 7.5pt; color: var(--text-muted);
+            letter-spacing: 0.3px;
+        }
+        .page-footer .brand {
+            font-family: var(--font-display);
+            font-weight: 600;
+            font-size: 8pt;
+            color: var(--gold-dark);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        /* ── Hero (Page 1) ── */
+        .hero {
+            text-align: center;
+            padding-bottom: 28px;
+            margin-bottom: 28px;
+            border-bottom: 0.5px solid var(--divider);
+        }
+        .hero-eyebrow {
+            font-family: var(--font-display);
+            font-size: 8pt;
+            font-weight: 500;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 12px;
+        }
+        .hero-title {
+            font-family: var(--font-kr);
+            font-size: 24pt;
+            font-weight: 900;
+            color: var(--ink);
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+        .hero-sub {
+            font-size: 10.5pt;
+            font-weight: 300;
+            color: var(--text-soft);
+            letter-spacing: 0.5px;
+        }
+        .hero-rule {
+            width: 40px; height: 2px;
+            background: var(--gold);
+            margin: 18px auto 0;
+        }
+
+        /* ── Section Header ── */
+        .section-header {
+            display: flex; align-items: center; gap: 16px;
+            margin: 0 0 22px 0;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--ink);
+        }
+        .section-header.first { margin-top: 0; }
+        .section-num {
+            font-family: var(--font-display);
+            font-weight: 800;
+            font-size: 28pt;
+            color: var(--gold);
+            line-height: 1;
+            min-width: 40px;
+        }
+        .section-divider {
+            width: 1px; height: 28px;
+            background: var(--divider);
+        }
+        .section-title {
+            font-size: 13pt;
+            font-weight: 700;
+            color: var(--ink);
+            letter-spacing: -0.2px;
+        }
+
+        /* ── Profile Card ── */
+        .profile-card {
+            display: grid; grid-template-columns: 1fr 1fr;
+            gap: 0;
+            border: 0.5px solid var(--border);
+            margin-bottom: 24px;
+        }
+        .profile-item {
+            font-size: 9pt;
+            padding: 12px 18px;
+            display: flex; align-items: baseline; gap: 10px;
+            border-bottom: 0.5px solid var(--border-light);
+        }
+        .profile-item:nth-child(odd) { border-right: 0.5px solid var(--border-light); }
+        .profile-item:nth-last-child(-n+2) { border-bottom: none; }
+        .profile-label {
+            font-weight: 700;
+            color: var(--ink);
+            min-width: 65px;
+            font-size: 8pt;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+        }
+        .profile-value { color: var(--text-mid); }
+        .profile-highlight {
+            background: var(--ink);
+            color: var(--gold-pale);
+            padding: 2px 12px;
+            font-weight: 600;
+            font-size: 8.5pt;
+            letter-spacing: 0.3px;
+        }
+
+        /* ── Analysis & Strategy ── */
+        .analysis-box {
+            background: var(--gold-wash);
+            border-left: 3px solid var(--gold);
+            padding: 18px 22px;
+            margin-bottom: 18px;
+        }
+        .analysis-box h4 {
+            font-size: 10.5pt;
+            font-weight: 700;
+            color: var(--ink);
+            margin-bottom: 8px;
+        }
+        .analysis-box p {
+            font-size: 9.5pt;
+            line-height: 1.85;
+            color: var(--text-mid);
+        }
+        .analysis-box .bold { font-weight: 700; color: var(--ink); }
+
+        .strategy-box {
+            border: 0.5px solid var(--border);
+            padding: 16px 20px;
+            margin-bottom: 10px;
+            position: relative;
+        }
+        .strategy-box::before {
+            content: '';
+            position: absolute; left: 0; top: 0; bottom: 0;
+            width: 3px; background: var(--gold);
+        }
+        .strategy-box h4 {
+            font-size: 10pt;
+            font-weight: 700;
+            color: var(--ink);
+            margin-bottom: 5px;
+        }
+        .strategy-box p {
+            font-size: 9pt;
+            line-height: 1.85;
+            color: var(--text-mid);
+        }
+
+        /* ── Timeline (Page 2) ── */
+        .timeline {
+            position: relative;
+            padding: 8px 0 8px 56px;
+        }
+        .timeline::before {
+            content: '';
+            position: absolute; left: 22px; top: 0; bottom: 0;
+            width: 1px;
+            background: var(--divider);
+        }
+
+        .phase {
+            position: relative;
+            margin-bottom: 30px;
+            page-break-inside: avoid;
+        }
+        .phase:last-child { margin-bottom: 0; }
+
+        .phase-dot {
+            position: absolute; left: -42px; top: 4px;
+            width: 20px; height: 20px;
+            border: 2px solid var(--gold);
+            background: var(--card);
+            z-index: 1;
+            display: flex; align-items: center; justify-content: center;
+        }
+        .phase-dot::after {
+            content: '';
+            width: 6px; height: 6px;
+            background: var(--gold);
+        }
+        .phase:nth-child(2) .phase-dot { border-color: var(--ink-soft); }
+        .phase:nth-child(2) .phase-dot::after { background: var(--ink-soft); }
+        .phase:nth-child(3) .phase-dot { border-color: var(--correct); }
+        .phase:nth-child(3) .phase-dot::after { background: var(--correct); }
+
+        .phase-header {
+            display: flex; align-items: baseline; gap: 14px;
+            margin-bottom: 8px;
+        }
+        .phase-name {
+            font-family: var(--font-display);
+            font-size: 15pt;
+            font-weight: 700;
+            color: var(--ink);
+            letter-spacing: -0.3px;
+        }
+        .phase-period {
+            font-family: var(--font-mono);
+            font-size: 8pt;
+            color: var(--text-soft);
+            letter-spacing: 0.5px;
+        }
+
+        .phase-body {
+            background: var(--paper);
+            border: 0.5px solid var(--border);
+            padding: 16px 20px;
+        }
+        .phase-body ul { list-style: none; padding: 0; }
+        .phase-body li {
+            font-size: 9.5pt;
+            padding: 4px 0 4px 18px;
+            position: relative;
+            line-height: 1.75;
+            color: var(--text-mid);
+        }
+        .phase-body li::before {
+            content: '';
+            position: absolute; left: 0; top: 11px;
+            width: 6px; height: 1px;
+            background: var(--gold);
+        }
+        .phase:nth-child(2) .phase-body li::before { background: var(--ink-soft); }
+        .phase:nth-child(3) .phase-body li::before { background: var(--correct); }
+        .phase-body .tag { font-weight: 700; color: var(--ink); }
+
+        /* ── Schedule Table (Page 3) ── */
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 8pt;
+            text-align: center;
+            table-layout: fixed;
+            border: 0.5px solid var(--border);
+        }
+        .schedule-table th {
+            background: var(--ink);
+            color: var(--gold-pale);
+            font-weight: 500;
+            padding: 10px 4px;
+            font-size: 8.5pt;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-right: 0.5px solid var(--ink-soft);
+        }
+        .schedule-table th:first-child {
+            width: 11%;
+            letter-spacing: 0.5px;
+        }
+        .schedule-table th:last-child { border-right: none; }
+        .schedule-table td {
+            padding: 7px 3px;
+            vertical-align: middle;
+            border-bottom: 0.5px solid var(--border-light);
+            border-right: 0.5px solid var(--border-light);
+        }
+        .schedule-table td:first-child {
+            font-family: var(--font-mono);
+            font-weight: 500;
+            font-size: 7.5pt;
+            color: var(--text-soft);
+            background: var(--paper);
+            border-right: 0.5px solid var(--border);
+            letter-spacing: 0.3px;
+        }
+        .schedule-table tr:last-child td { border-bottom: none; }
+
+        .cell-label {
+            display: block;
+            font-weight: 700;
+            font-size: 8pt;
+            margin-bottom: 1px;
+            line-height: 1.3;
+        }
+        .cell-detail {
+            display: block;
+            font-size: 7pt;
+            color: var(--text-muted);
+            line-height: 1.3;
+        }
+
+        .cell-vocab    { background: var(--cell-vocab-bg); }
+        .cell-vocab .cell-label { color: var(--cell-vocab); }
+        .cell-reading  { background: var(--cell-reading-bg); }
+        .cell-reading .cell-label { color: var(--cell-reading); }
+        .cell-grammar  { background: var(--cell-grammar-bg); }
+        .cell-grammar .cell-label { color: var(--cell-grammar); }
+        .cell-review   { background: var(--cell-review-bg); }
+        .cell-review .cell-label { color: var(--cell-review); }
+        .cell-break    { background: var(--cell-break-bg); }
+        .cell-break .cell-label { color: var(--cell-break); font-weight: 400; }
+        .cell-work     { background: var(--cell-work-bg); }
+        .cell-work .cell-label { color: var(--cell-work); }
+        .cell-test     { background: var(--cell-test-bg); }
+        .cell-test .cell-label { color: var(--cell-test); }
+        .cell-sleep    { background: var(--cell-sleep-bg); color: var(--cell-sleep); font-style: italic; font-size: 7.5pt; }
+
+        /* ── Final Message ── */
+        .final-message {
+            margin-top: 24px;
+            padding: 22px 30px;
+            border: 0.5px solid var(--border);
+            background: var(--gold-wash);
+            text-align: center;
+            position: relative;
+        }
+        .final-message::before,
+        .final-message::after {
+            content: '';
+            position: absolute; left: 50%; transform: translateX(-50%);
+            width: 40px; height: 1px;
+            background: var(--gold);
+        }
+        .final-message::before { top: -1px; }
+        .final-message::after { bottom: -1px; }
+        .final-message p {
+            font-size: 10pt;
+            line-height: 2;
+            color: var(--text-mid);
+        }
+        .final-message .emphasis {
+            font-weight: 700;
+            color: var(--gold-dark);
+        }
+
+        @media print {
+            body { background: white; }
+            .page { margin: 0; box-shadow: none; }
+        }
+        .no-break { page-break-inside: avoid; }
+    </style>
+</head>
+<body>
+
+    <!-- PAGE 1 -->
+    <div class="page">
+        <div class="page-accent"></div>
+        <div class="page-body">
+
+            <div class="hero">
+                <p class="hero-eyebrow">Personalized Roadmap</p>
+                <h1 class="hero-title">{{studentName}} 학생 맞춤형 합격 로드맵</h1>
+                <p class="hero-sub">{{subtitle}}</p>
+                <div class="hero-rule"></div>
+            </div>
+
+            <div class="section-header first">
+                <span class="section-num">01</span>
+                <span class="section-divider"></span>
+                <span class="section-title">현황 분석 및 핵심 전략</span>
+            </div>
+
+            <div class="profile-card no-break">
+                <div class="profile-item">
+                    <span class="profile-label">학생명</span>
+                    <span class="profile-value">{{studentName}}</span>
+                </div>
+                <div class="profile-item">
+                    <span class="profile-label">수면 패턴</span>
+                    <span class="profile-value">{{profile.sleepPattern}}</span>
+                </div>
+                <div class="profile-item">
+                    <span class="profile-label">강점</span>
+                    <span class="profile-value">{{profile.strengths}}</span>
+                </div>
+                <div class="profile-item">
+                    <span class="profile-label">핵심 과제</span>
+                    <span class="profile-highlight">{{profile.keyChallenge}}</span>
+                </div>
+            </div>
+
+            <div class="analysis-box no-break">
+                <h4>{{analysis.title}}</h4>
+                <p>{{analysis.content}}</p>
+            </div>
+
+            <!-- REPEAT:strategies -->
+            <div class="strategy-box no-break">
+                <h4>{{strategy.title}}</h4>
+                <p>{{strategy.content}}</p>
+            </div>
+            <!-- /REPEAT:strategies -->
+
+        </div>
+        <div class="page-footer">
+            <span class="brand">Vera Jin Academy</span>
+            <span>Page 1 / 3</span>
+        </div>
+    </div>
+
+    <!-- PAGE 2 -->
+    <div class="page">
+        <div class="page-accent"></div>
+        <div class="page-body">
+
+            <div class="section-header first">
+                <span class="section-num">02</span>
+                <span class="section-divider"></span>
+                <span class="section-title">{{roadmapTitle}}</span>
+            </div>
+
+            <div class="timeline">
+                <!-- REPEAT:phases -->
+                <div class="phase">
+                    <div class="phase-dot"></div>
+                    <div class="phase-header">
+                        <span class="phase-name">{{phase.name}}</span>
+                        <span class="phase-period">{{phase.period}}</span>
+                    </div>
+                    <div class="phase-body">
+                        <ul>
+                            <!-- REPEAT:phase.items -->
+                            <li>{{item}}</li>
+                            <!-- /REPEAT:phase.items -->
+                        </ul>
+                    </div>
+                </div>
+                <!-- /REPEAT:phases -->
+            </div>
+
+        </div>
+        <div class="page-footer">
+            <span class="brand">Vera Jin Academy</span>
+            <span>Page 2 / 3</span>
+        </div>
+    </div>
+
+    <!-- PAGE 3 -->
+    <div class="page">
+        <div class="page-accent"></div>
+        <div class="page-body">
+
+            <div class="section-header first">
+                <span class="section-num">03</span>
+                <span class="section-divider"></span>
+                <span class="section-title">{{studentName}} 맞춤형 주간 학습 계획표</span>
+            </div>
+
+            <!-- SCHEDULE -->
+            <table class="schedule-table">
+                <thead>
+                    <tr>
+                        <th>시간</th>
+                        <th>월</th>
+                        <th>화</th>
+                        <th>수</th>
+                        <th>목</th>
+                        <th>금</th>
+                        <th>토</th>
+                        <th>일</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- SCHEDULE_BODY: renderer.js가 생성 -->
+                </tbody>
+            </table>
+            <!-- /SCHEDULE -->
+
+            <div class="final-message no-break">
+                <p>{{finalMessage}}</p>
+            </div>
+
+        </div>
+        <div class="page-footer">
+            <span class="brand">Vera Jin Academy</span>
+            <span>Page 3 / 3</span>
+        </div>
+    </div>
+
+</body>
+</html>
