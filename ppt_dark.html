@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25년 3월 고1 모의고사 분석</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Noto+Sans+KR:wght@400;500;700&display=swap');
+
+        body, html {
+            margin: 0; padding: 0; width: 100%; height: 100%;
+            background-color: #0d1b2a; font-family: 'Poppins', 'Noto Sans KR', sans-serif;
+            overflow: hidden;
+        }
+
+        .presentation-screen {
+            width: 100%; height: 100%; background-color: #1B263B;
+            display: flex; justify-content: center; align-items: center; position: relative;
+        }
+
+        .slide {
+            width: 98%; height: 95%; max-width: 1600px;
+            padding: 10px 40px 30px 40px; box-sizing: border-box;
+            display: none; flex-direction: column; justify-content: flex-start;
+            color: #F0F2F5; opacity: 0; transition: opacity 0.3s ease-in-out; position: absolute;
+        }
+
+        .slide.active { display: flex; opacity: 1; }
+        
+        .slide-header {
+            color: #FFC371; font-size: 1.6rem; font-weight: 700;
+            margin-bottom: 10px; border-bottom: 1px solid rgba(255, 195, 113, 0.3);
+            padding-bottom: 5px; flex-shrink: 0; display: flex; align-items: center; gap: 15px;
+        }
+
+        .header-tag {
+            font-size: 0.9rem; background-color: rgba(255,255,255,0.1);
+            padding: 3px 10px; border-radius: 10px; color: #ccc; font-weight: 400;
+        }
+
+        .slide-content {
+            flex-grow: 1; display: flex; flex-direction: column; justify-content: center;
+        }
+
+        .text-box {
+            background-color: rgba(0, 0, 0, 0.25); padding: 25px 35px;
+            border-radius: 10px; font-size: 1.65rem; line-height: 1.65;
+            text-align: justify; border-left: 6px solid #4CC9F0;
+            height: 100%; overflow-y: auto; word-break: keep-all;
+        }
+        
+        .insertion-box {
+            background-color: rgba(255, 195, 113, 0.15); border: 2px solid #FFC371;
+            padding: 15px 20px; border-radius: 8px; margin-bottom: 15px;
+            font-size: 1.6rem; color: #FFC371; font-weight: 500;
+        }
+
+        .options-box { display: flex; flex-direction: column; gap: 10px; max-width: 950px; margin: 0 auto; }
+        .option-item {
+            background-color: rgba(255,255,255,0.05); padding: 15px 25px;
+            border-radius: 10px; font-size: 1.3rem; border: 2px solid transparent; transition: 0.2s; cursor: pointer;
+        }
+        .correct-reveal { border-color: #FFC371 !important; background-color: rgba(255, 195, 113, 0.15) !important; font-weight: 700; color: #FFC371 !important; }
+
+        .check-btn {
+            margin-top: 20px; background-color: #4CC9F0; color: #1B263B;
+            border: none; padding: 12px 30px; border-radius: 25px;
+            font-weight: 700; cursor: pointer; font-size: 1.2rem; align-self: center;
+        }
+
+        .highlight { color: #FFC371; font-weight: 700; }
+        .blue { color: #4CC9F0; font-weight: 700; }
+        .underline { text-decoration: underline; text-underline-offset: 5px; text-decoration-color: #FFC371; }
+        .vocab-note { font-size: 1rem; color: #aaa; margin-top: 15px; text-align: right; }
+
+        .title-card { align-items: center; justify-content: center; text-align: center; }
+        
+        .navigation {
+            position: fixed; bottom: 15px; left: 50%; transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.6); padding: 5px 15px;
+            border-radius: 30px; display: flex; align-items: center; gap: 15px; z-index: 100;
+        }
+        .nav-btn {
+            background: none; border: 1px solid #FFC371; color: #FFC371;
+            font-size: 0.8rem; padding: 4px 10px; border-radius: 15px; cursor: pointer;
+        }
+        #page-counter { color: #FFC371; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+
+    <div class="presentation-screen">
+
+        <!-- Title Slide -->
+        <div class="slide title-card active">
+            <h1 style="font-size: 3.5rem; color: #FFC371; margin-bottom: 1rem;">2025학년도 3월 고1 모의고사</h1>
+            <p style="font-size: 2rem;">실전 독해 분석 (20~24번, 29~40번)</p>
+        </div>
+
+        <!-- 20. Text -->
+        <div class="slide">
+            <div class="slide-header">20번. 필자의 주장 <span class="header-tag">Passage</span></div>
+            <div class="slide-content">
+                <div class="text-box">
+                    Improving your gestural communication involves more than just knowing when to nod or shake hands. It's about using gestures to complement your spoken messages, adding layers of meaning to your words. Open-handed gestures, for example, can indicate honesty, creating an atmosphere of trust. You invite openness and collaboration when you speak with your palms facing up. This simple yet powerful gesture can make others feel more comfortable and willing to engage in conversation. But be careful of the trap of over-gesturing. Too many hand movements can distract from your message, drawing attention away from your words. Imagine a speaker whose hands move quickly like birds, their message lost in the chaos of their gestures. Balance is key. Your gestures should highlight your words, not overshadow them.
+                </div>
+            </div>
+        </div>
+        <!-- 20. Options -->
+        <div class="slide" id="q20-ans">
+            <div class="slide-header">20번. 선지 확인</div>
+            <div class="slide-content">
+                <div class="options-box">
+                    <div class="option-item">① 메시지를 잘 전달하기 위해서 열린 마음을 지녀야 한다.</div>
+                    <div class="option-item" id="a20">② 효과적인 의사소통을 위해 몸짓을 적절히 사용해야 한다.</div>
+                    <div class="option-item">③ 청중의 반응을 파악하기 위해 그들의 몸짓에 주목해야 한다.</div>
+                    <div class="option-item">④ 전달하고자 하는 것을 감추기보다 직접적으로 표현해야 한다.</div>
+                    <div class="option-item">⑤ 상대방을 설득하기 위해서는 메시지를 반복적으로 강조해야 한다.</div>
+                    <button class="check-btn" onclick="reveal('q20-ans', 'a20')">정답 확인</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 21. Text -->
+        <div class="slide">
+            <div class="slide-header">21번. 함축 의미 추론 <span class="header-tag">3점 / Passage</span></div>
+            <div class="slide-content">
+                <div class="text-box">
+                    Assuming gene editing in humans proves to be safe and effective, it might seem logical, even preferable, to correct disease-causing mutations at the earliest possible stage of life, before harmful genes begin causing serious problems. Yet once it becomes possible to transform an embryo's mutated genes into "normal" ones, there will certainly be temptations to upgrade normal genes to superior versions. Should we begin editing genes in unborn children to lower their lifetime risk of heart disease or cancer? What about giving unborn children beneficial features, like greater strength and increased mental abilities, or changing physical characteristics, like eye and hair color? The pursuit for perfection seems almost natural to human nature, but if we <span class="highlight underline">start down this slippery slope</span>, we may not like where we end up.
+                    <div class="vocab-note">* mutation: 돌연변이 ** embryo: 배아</div>
+                </div>
+            </div>
+        </div>
+        <!-- 21. Options -->
+        <div class="slide" id="q21-ans">
+            <div class="slide-header">21번. 선지 확인</div>
+            <div class="slide-content">
+                <div class="options-box">
+                    <div class="option-item" id="a21">① allow genetic alterations to upgrade humans</div>
+                    <div class="option-item">② stick to the traditional beliefs in human nature</div>
+                    <div class="option-item">③ resist the temptation to change genes in humans</div>
+                    <div class="option-item">④ fail to reduce the risk of suffering from diseases</div>
+                    <div class="option-item">⑤ consider more about the moral issues of genetics</div>
+                    <button class="check-btn" onclick="reveal('q21-ans', 'a21')">정답 확인</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 22. Text -->
+        <div class="slide">
+            <div class="slide-header">22번. 요지 추론 <span class="header-tag">Passage</span></div>
+            <div class="slide-content">
+                <div class="text-box">
+                    The science we learn in grade school is a collection of certainties about the natural world — the earth goes around the sun, DNA carries the information of an organism, and so on. Only when you start to learn the practice of science do you realize that each of these "facts" was hard won through a succession of logical inferences based upon many observations or experiments. The process of science is less about collecting pieces of knowledge than it is about reducing the uncertainties in what we know. Our uncertainties can be greater or lesser for any given piece of knowledge depending upon where we are in that process — today we are quite certain of how an apple will fall from a tree, but our understanding of the turbulent fluid flow remains a work in progress after more than a century of effort.
+                    <div class="vocab-note">* inference: 추론 ** turbulent fluid flow: 난류 유동</div>
+                </div>
+            </div>
+        </div>
+        <!-- 22. Options -->
+        <div class="slide" id="q22-ans">
+            <div class="slide-header">22번. 선지 확인</div>
+            <div class="slide-content">
+                <div class="options-box">
+                    <div class="option-item" id="a22">① 과학은 현재의 지식에 대한 불확실함을 줄이는 과정이다.</div>
+                    <div class="option-item">② 관찰과 실험 과정에서 우연히 얻어진 과학적 사실이 많다.</div>
+                    <div class="option-item">③ 학생들에게 다양한 연구 방법을 가르치는 것이 중요하다.</div>
+                    <div class="option-item">④ 과학 연구에서는 정확한 실험 과정 설계가 핵심이다.</div>
+                    <div class="option-item">⑤ 과학은 분산된 지식을 수집하여 통합하는 학문이다.</div>
+                    <button class="check-btn" onclick="reveal('q22-ans', 'a22')">정답 확인</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 23. Text -->
+        <div class="slide">
+            <div class="slide-header">23번. 주제 추론 <span class="header-tag">Passage</span></div>
+            <div class="slide-content">
+                <div class="text-box">
+                    There is a wealth of evidence that when parents, teachers, supervisors, and coaches are perceived as involved and caring, people feel happier and more motivated. And it is not just those people with power — we need to feel valued and respected by peers and coworkers. Thus, when the need for relatedness is met, motivation and internalization are fueled, provided that support for autonomy and competence are also there. If we are trying to motivate others, a caring relationship is a crucial basis from which to begin. And when we are trying to motivate ourselves, doing things to enhance a sense of connectedness to others can be crucial to long-term persistence. So exercise with a friend, call someone when you have a difficult decision to make, and be there as a support for others as they take on challenges.
+                    <div class="vocab-note">* autonomy: 자율성 ** persistence: 지속</div>
+                </div>
+            </div>
+        </div>
+        <!-- 23. Options -->
+        <div class="slide" id="q23-ans">
+            <div class="slide-header">23번. 선지 확인</div>
+            <div class="slide-content">
+                <div class="options-box">
+                    <div class="option-item">① ways of getting out of dependent relationships</div>
+                    <div class="option-item">② necessity of independent decision-making for happier life</div>
+                    <div class="option-item">③ key factors required for boosting a competitive atmosphere</div>
+                    <div class="option-item">④ challenges in maintaining lasting bonds with family members</div>
+                    <div class="option-item" id="a23">⑤ importance of building connected relationships in motivation</div>
+                    <button class="check-btn" onclick="reveal('q23-ans', 'a23')">정답 확인</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 24. Text -->
+        <div class="slide">
+            <div class="slide-header">24번. 제목 추론 <span class="header-tag">Passage</span></div>
+            <div class="slide-content">
+                <div class="text-box">
+                    Modern brain-scanning techniques such as fMRI (functional Magnetic Resonance Imaging) have revealed that reading aloud lights up many areas of the brain. There is intense activity in areas associated with pronunciation and hearing the sound of the spoken response, which strengthens the connective structures of your brain cells for more brainpower. This leads to an overall improvement in concentration. Reading aloud is also a good way to develop your public speaking skills because it forces you to read each and every word — something people don't often do when reading quickly, or reading in silence. Children, in particular, should be encouraged to read aloud because the brain is wired for learning through connections that are created by positive stimulation, such as singing, touching, and reading aloud.
+                    <div class="vocab-note">* stimulation: 자극</div>
+                </div>
+            </div>
+        </div>
+        <!-- 24. Options -->
+        <div class="slide" id="q24-ans">
+            <div class="slide-header">24번. 선지 확인</div>
+            <div class="slide-content">
+                <div class="options-box">
+                    <div class="option-item" id="a24">① Reading Aloud: Improving Brainpower and Speaking Skills</div>
+                    <div class="option-item">② Reading Practices: Shortcuts to Academic Achievements</div>
+                    <div class="option-item">③ Improve Your Writing Skills Through Reading Aloud</div>
+                    <div class="option-item">④ How Your Brain Changes When You Read in Silence</div>
+                    <div class="option-item">⑤ Techniques for Faster and More Effective Reading</div>
+                    <button class="check-btn" onclick="reveal('q24-ans', 'a24')">정답 확인</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 29. Text -->
+        <div class="slide">
+            <div class="slide-header">29번. 어법 추론 <span class="header-tag">Passage</span></div>
+            <div class="slide-content">
+                <div class="text-box">
+                    Routines enable athletes to evaluate competition conditions. For example, bouncing a ball in a volleyball service routine ① <u>supplies</u> the server with information about the ball, the floor, and the state of her muscles. This information can then be used to ② <u>properly</u> prepare for her serve. Routines also enable athletes to adjust and fine-tune their preparations ③ <u>based</u> on those evaluations or in pursuit of a particular competitive goal. This adaptation can involve adjustment to the conditions, rivals, competitive situation, or internal influences ④ <u>what</u> can affect performance. Just like adjusting a race-car engine to the conditions of the track, air temperature, and weather, routines adjust all competitive components ⑤ <u>to achieve</u> proper performance.
+                    <div class="vocab-note">* component: 구성 요소</div>
+                </div>
+            </div>
+        </div>
+        <!-- 29. Options -->
+        <div class="slide" id="q29-ans">
+            <div class="slide-header">29번. 정답 확인</div>
+            <div class="slide-content">
+                <div class="options-box">
+                    <div class="option-item">① supplies</div>
+                    <div class="option-item">② properly</div>
+                    <div class="option-item">③ based</div>
+                    <div class="option-item" id="a29">④ what (→ that/which)</div>
+                    <div class="option-item">⑤ to achieve</div>
+                    <button class="check-btn" onclick="reveal('q29-ans', 'a29')">정답 확인</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 30. Text -->
+        <div class="slide">
+            <div class="slide-header">30번. 어휘 추론 <span class="header-tag">3점 / Passage</span></div>
+            <div class="slide-content">
+                <div class="text-box">
+                    Promotion deals with consumer psychology. We can't ① <u>force</u> people to think one way or another, and the clever marketer knows that promotion is used to provide information in the most clear, honest, and simple fashion possible. By doing so, the possibility of increasing sales goes up. Gone are the days when promotions were done in order to ② <u>fool</u> the consumer into purchasing something. The long-term effect of getting a consumer to buy something they did not really want or need wasn't good. In fact, consumers fooled once can do ③ <u>damage</u> to sales as they relate their experience to others. Instead, marketers now know that their goal is to ④ <u>identify</u> the consumers who are most likely to appreciate a good or service, and to promote that good or service in a way that makes the value clear to the consumer. Therefore, marketers must know where the ⑤ <u>uninterested</u> consumers are, and how to reach them.
+                </div>
+            </div>
+        </div>
+        <!-- 30. Options -->
+        <div class="slide" id="q30-ans">
+            <div class="slide-header">30번. 정답 확인</div>
+            <div class="slide-content">
+                <div class="options-box">
+                    <div class="option-item">① force</div>
+                    <div class="option-item">② fool</div>
+                    <div class="option-item">③ damage</div>
+                    <div class="option-item">④ identify</div>
+                    <div class="option-item" id="a30">⑤ uninterested (→ interested / target)</div>
+                    <button class="check-btn" onclick="reveal('q30-ans', 'a30')">정답 확인</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 31. Text -->
+        <div class="slide">
+            <div class="slide-header">31번. 빈칸 추론 <span class="header-tag">Passage</span></div>
+            <div class="slide-content">
+                <div class="text-box">
+                    Plato argued that when you see something that strikes you as beautiful, you are really just seeing a partial reflection of true beauty, just as a painting or even a photograph only captures part of the real thing. True beauty, or what Plato calls the Form of Beauty, has no particular color, shape, or size. Rather, it is a(n) <span class="highlight">________________</span> idea, like the number five. You can make drawings of the number five in blue or red ink, big or small, but the number five itself is none of those things. It has no physical form. Think of the idea of a triangle, for example. Although it has no particular color or size, it somehow lies within each and every triangle you see. Plato thought the same was true of beauty. The Form of Beauty somehow lies within each and every beautiful thing you see.
+                </div>
+            </div>
+        </div>
+        <!-- 31. Options -->
+        <div class="slide" id="q31-ans">
+            <div class="slide-header">31번. 선지 확인</div>
+            <div class="slide-content">
+                <div class="options-box">
+                    <div class="option-item" id="a31">① abstract</div>
+                    <div class="option-item">② practical</div>
+                    <div class="option-item">③ imperfect</div>
+                    <div class="option-item">④ visualized</div>
+                    <div class="option-item">⑤ changeable</div>
+                    <button class="check-btn" onclick="reveal('q31-ans', 'a31')">정답 확인</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 32. Text -->
+        <div class="slide">
+            <div class="slide-header">32번. 빈칸 추론 <span class="header-tag">Passage</span></div>
+            <div class="slide-content">
+                <div class="text-box">
+                    As you listen to your child in an emotional moment, be aware that <span class="highlight">________________</span> usually works better than asking questions to get a conversation rolling. You may ask your child "Why do you feel sad?" and she may not have a clue. As a child, she may not have an answer on the tip of her tongue. Maybe she's feeling sad about her parents' arguments, or because she feels overtired, or she's worried about a piano recital. But she may or may not be able to explain any of this. And even when she does come up with an answer, she might be worried that the answer is not good enough to justify the feeling. Under these circumstances, a series of questions can just make a child silent. It's better to simply reflect what you notice. You can say, "You seem a little tired today," or, "I noticed that you frowned when I mentioned the recital," and wait for her response.
+                </div>
+            </div>
+        </div>
+        <!-- 32. Options -->
+        <div class="slide" id="q32-ans">
+            <div class="slide-header">32번. 선지 확인</div>
+            <div class="slide-content">
+                <div class="options-box">
+                    <div class="option-item">① giving quick advice</div>
+                    <div class="option-item">② pushing her for answers</div>
+                    <div class="option-item" id="a32">③ sharing simple observations</div>
+                    <div class="option-item">④ telling your own life stories</div>
+                    <div class="option-item">⑤ leaving her alone to cool down</div>
+                    <button class="check-btn" onclick="reveal('q32-ans', 'a32')">정답 확인</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 33. Text -->
+        <div class="slide">
+            <div class="slide-header">33번. 빈칸 추론 <span class="header-tag">3점 / Passage</span></div>
+            <div class="slide-content">
+                <div class="text-box">
+                    Our skin conducts electricity more or less efficiently, depending on our emotions. We know that when we're emotionally stimulated — stressed, sad, any intense emotion, really — our bodies sweat a tiny bit, so little we might not even notice. And when those tiny drops of sweat appear, our skin gets more electrically conductive. This change in sweat gland activity happens completely without your conscious mind having much say in the matter. If you feel emotionally intense, you're going to notice an increase in sweat gland activity. This is particularly useful from a scientific viewpoint, because it allows us to put an objective value on a subjective state of mind. We can actually <span class="highlight">________________</span> by tracking how your body subconsciously sweats, by running a bit of electricity through your skin. We can then turn the subjective, subconscious experience of emotional intensity into an objective number by figuring out how good your skin gets at transferring an electrical current.
+                    <div class="vocab-note">* sweat gland: 땀샘</div>
+                </div>
+            </div>
+        </div>
+        <!-- 33. Options -->
+        <div class="slide" id="q33-ans">
+            <div class="slide-header">33번. 선지 확인</div>
+            <div class="slide-content">
+                <div class="options-box">
+                    <div class="option-item">① limit reactions of hormones</div>
+                    <div class="option-item">② control the electrical current</div>
+                    <div class="option-item">③ improve your skin conditions</div>
+                    <div class="option-item" id="a33">④ measure your emotional state</div>
+                    <div class="option-item">⑤ diversify emotional experiences</div>
+                    <button class="check-btn" onclick="reveal('q33-ans', 'a33')">정답 확인</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 34. Text -->
+        <div class="slide">
+            <div class="slide-header">34번. 빈칸 추론 <span class="header-tag">3점 / Passage</span></div>
+            <div class="slide-content">
+                <div class="text-box">
+                    Plants can communicate, although not in the same way we do. Some express their discontent through scents. You know that smell that hangs in the air after you've mowed the lawn? Yeah, that's actually an SOS. Some plants use sound. Yes, sound, though at a frequency that we can't hear. Researchers experimented with plants and microphones to see if they could record any trouble calls. They found that plants produce a high-frequency clicking noise when stressed and can make different sounds for different stressors. The sound a plant makes when it's not getting watered differs from the one it'll make when a leaf is cut. However, it's worth noting that experts don't think plants are crying out in pain. It's more likely that these reactions are knee-jerk survival actions. Plants are living organisms, and their main objective is to survive. Scents and sounds are their tools for <span class="highlight">________________</span>.
+                    <div class="vocab-note">* scent: 냄새 ** mow: (잔디를) 깎다 *** knee-jerk: 자동적인</div>
+                </div>
+            </div>
+        </div>
+        <!-- 34. Options -->
+        <div class="slide" id="q34-ans">
+            <div class="slide-header">34번. 선지 확인</div>
+            <div class="slide-content">
+                <div class="options-box">
+                    <div class="option-item" id="a34">① defending against things that might harm them</div>
+                    <div class="option-item">② showing their support for neighboring plants</div>
+                    <div class="option-item">③ hiding their pains and dissatisfaction</div>
+                    <div class="option-item">④ sharing nutrients with other plants</div>
+                    <div class="option-item">⑤ changing their genetic structure</div>
+                    <button class="check-btn" onclick="reveal('q34-ans', 'a34')">정답 확인</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 35. Text -->
+        <div class="slide">
+            <div class="slide-header">35번. 무관한 문장 <span class="header-tag">Passage</span></div>
+            <div class="slide-content">
+                <div class="text-box">
+                    What does it mean for a character to be a hero as opposed to a villain? In artistic and entertainment descriptions, it's essential for the author to establish a positive relationship between a protagonist and the audience. ① In order for tragedy or misfortune to draw out an emotional response in viewers, the character must be adjusted so as to be recognizable as either friend or enemy. ② Likewise, the line between friends and enemies is not clear in reality. ③ Whether the portrayal is fictional or documentary, we must feel that the protagonist is someone whose actions benefit us; the protagonist is, or would be, a worthy companion or valued ally. ④ Violent action films are often filled with dozens of incidental deaths of minor characters that draw out little response in the audience. ⑤ In order to feel strong emotions, the audience must be emotionally invested in a character as either ally or enemy.
+                    <div class="vocab-note">* villain: 악당 ** protagonist: 주인공</div>
+                </div>
+            </div>
+        </div>
+        <!-- 35. Options -->
+        <div class="slide" id="q35-ans">
+            <div class="slide-header">35번. 정답 확인</div>
+            <div class="slide-content">
+                <div class="options-box">
+                    <div class="option-item">① 번 문장</div>
+                    <div class="option-item" id="a35">② 번 문장</div>
+                    <div class="option-item">③ 번 문장</div>
+                    <div class="option-item">④ 번 문장</div>
+                    <div class="option-item">⑤ 번 문장</div>
+                    <button class="check-btn" onclick="reveal('q35-ans', 'a35')">정답 확인</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 36. Text -->
+        <div class="slide">
+            <div class="slide-header">36번. 순서 배열 <span class="header-tag">3점 / Passage</span></div>
+            <div class="slide-content">
+                <div class="text-box">
+                    Let's assume that at least some animals are capable of thinking despite lacking a language.<br><br>
+                    (A) This doesn't imply that squirrels lack concepts, simply that they don't need them for this concrete form of thinking. For us to be able to say that an animal has concepts, we have to show not just that she's capable of thinking, but also that she has certain specific abilities.<br><br>
+                    (B) To do this, in principle she doesn't need a concept of branch nor a concept of tree. It might be enough for her to have, for example, the ability to think in images; to make a mental map of the tree where she can imagine and try out different routes.<br><br>
+                    (C) This doesn't necessarily mean that they possess concepts, for some forms of thought may be nonconceptual. We can imagine, for instance, a squirrel who is planning how to get from the branch she's currently standing on to a branch from the tree in front.
+                    <div class="vocab-note">* squirrel: 다람쥐</div>
+                </div>
+            </div>
+        </div>
+        <!-- 36. Options -->
+        <div class="slide" id="q36-ans">
+            <div class="slide-header">36번. 정답 확인</div>
+            <div class="slide-content">
+                <div class="options-box">
+                    <div class="option-item">① (A) - (C) - (B)</div>
+                    <div class="option-item">② (B) - (A) - (C)</div>
+                    <div class="option-item">③ (B) - (C) - (A)</div>
+                    <div class="option-item">④ (C) - (A) - (B)</div>
+                    <div class="option-item" id="a36">⑤ (C) - (B) - (A)</div>
+                    <button class="check-btn" onclick="reveal('q36-ans', 'a36')">정답 확인</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 37. Text -->
+        <div class="slide">
+            <div class="slide-header">37번. 순서 배열 <span class="header-tag">Passage</span></div>
+            <div class="slide-content">
+                <div class="text-box">
+                    Cartilage is extremely important for the healthy functioning of a joint, especially if that joint bears weight, like your knee.<br><br>
+                    (A) This squeezing of joint fluid into and out of the cartilage helps it respond to the off-and-on pressure of walking without breaking under the pressure.<br><br>
+                    (B) The cartilage in your left knee then "drinks in" synovial fluid, in much the same way that a sponge soaks up liquid when put in water. When you take another step and transfer the weight back onto your left leg, much of the fluid squeezes out of the cartilage.<br><br>
+                    (C) Imagine for a moment that you're looking into the inner workings of your left knee as you walk down the street. When you shift your weight from your left leg to your right, the pressure on your left knee is released.
+                    <div class="vocab-note">* cartilage: 연골 ** synovial fluid: 윤활액</div>
+                </div>
+            </div>
+        </div>
+        <!-- 37. Options -->
+        <div class="slide" id="q37-ans">
+            <div class="slide-header">37번. 정답 확인</div>
+            <div class="slide-content">
+                <div class="options-box">
+                    <div class="option-item">① (A) - (C) - (B)</div>
+                    <div class="option-item">② (B) - (A) - (C)</div>
+                    <div class="option-item">③ (B) - (C) - (A)</div>
+                    <div class="option-item">④ (C) - (A) - (B)</div>
+                    <div class="option-item" id="a37">⑤ (C) - (B) - (A)</div>
+                    <button class="check-btn" onclick="reveal('q37-ans', 'a37')">정답 확인</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 38. Text -->
+        <div class="slide">
+            <div class="slide-header">38번. 문장 삽입 <span class="header-tag">Passage</span></div>
+            <div class="slide-content">
+                <div class="text-box">
+                    <div class="insertion-box">Rather, it is self-constructed as kids play with other kids.</div>
+                    Piaget argued that children's understanding of morality is like their understanding of those water glasses: we can't say that it is innate or kids learn it directly from adults. Piaget put the same amount of water into two different glasses: a tall narrow glass and a wide glass, then asked kids to compare two glasses. ( ① ) Kids younger than six or seven usually say that the tall narrow glass now holds more water, because the level is higher. ( ② ) And when they are ready, they figure out the conservation of volume for themselves just by playing with cups of water. ( ③ ) ( ④ ) Taking turns in a game is like pouring water back and forth between glasses. ( ⑤ ) Once kids have reached the age of five or six, then playing games and working things out together will help them learn about fairness far more effectively than any teaching from adults.
+                    <div class="vocab-note">* innate: 타고난 ** conservation: 보존</div>
+                </div>
+            </div>
+        </div>
+        <!-- 38. Options -->
+        <div class="slide" id="q38-ans">
+            <div class="slide-header">38번. 정답 확인</div>
+            <div class="slide-content">
+                <div class="options-box" style="flex-direction: row; flex-wrap: wrap; justify-content: center;">
+                    <div class="option-item">①</div><div class="option-item">②</div>
+                    <div class="option-item" id="a38">③</div>
+                    <div class="option-item">④</div><div class="option-item">⑤</div>
+                    <button class="check-btn" onclick="reveal('q38-ans', 'a38')">정답 확인</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 39. Text -->
+        <div class="slide">
+            <div class="slide-header">39번. 문장 삽입 <span class="header-tag">Passage</span></div>
+            <div class="slide-content">
+                <div class="text-box">
+                    <div class="insertion-box">But all this wisdom about how to deal with heat, accumulated over centuries of practical experience, is all too often ignored.</div>
+                    The rise of air-conditioning accelerated the construction of sealed boxes, where the building's only airflow is through the filtered ducts of the air-conditioning unit. It doesn't have to be this way. Look at any old building in a hot climate, whether it's in Sicily or Marrakesh or Tehran. ( ① ) Architects understood the importance of shade, airflow, light colors. ( ② ) They oriented buildings to capture cool breezes and block the worst heat of the afternoon. ( ③ ) They built with thick walls and white roofs and transoms over doors to encourage airflow. ( ④ ) Anyone who has ever spent a few minutes in a mudbrick house in Tucson, or walked on the narrow streets of old Seville, knows how well these construction methods work. ( ⑤ ) In this sense, air-conditioning is not just a technology of personal comfort; it is also a technology of forgetting.
+                    <div class="vocab-note">* accumulate: 축적하다 ** duct: (배)관 *** transom: 채광창</div>
+                </div>
+            </div>
+        </div>
+        <!-- 39. Options -->
+        <div class="slide" id="q39-ans">
+            <div class="slide-header">39번. 정답 확인</div>
+            <div class="slide-content">
+                <div class="options-box" style="flex-direction: row; flex-wrap: wrap; justify-content: center;">
+                    <div class="option-item">①</div><div class="option-item">②</div><div class="option-item">③</div>
+                    <div class="option-item">④</div><div class="option-item" id="a39">⑤</div>
+                    <button class="check-btn" onclick="reveal('q39-ans', 'a39')">정답 확인</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 40. Text -->
+        <div class="slide">
+            <div class="slide-header">40번. 요약문 완성 <span class="header-tag">Passage</span></div>
+            <div class="slide-content">
+                <div class="text-box">
+                    In the course of trying to solve a problem with an invention, you may encounter a brick wall of resistance when you try to think your way logically through the problem. Such logical thinking is a linear type of process, which uses our reasoning skills. This works fine when we're operating in the area of what we know or have experienced. However, when we need to deal with new information, ideas, and viewpoints, linear thinking will often come up short. On the other hand, creativity by definition involves the application of new information to old problems and the conception of new viewpoints and ideas. For this you will be most effective if you learn to operate in a nonlinear manner; that is, use your creative brain. Stated differently, if you think in a linear manner, you'll tend to be conservative and keep coming up with techniques which are already known. This, of course, is just what you don't want.
+                    <div class="vocab-note">* linear: 선형의 ** conservative: 보수적인</div>
+                </div>
+            </div>
+        </div>
+        <!-- 40. Options -->
+        <div class="slide" id="q40-ans">
+            <div class="slide-header">40번. 정답 확인</div>
+            <div class="slide-content">
+                <div class="options-box">
+                    <div class="insertion-box" style="color: white; font-size: 1.3rem;">(A) thinking works well with familiar problems but falls short in dealing with new ideas, for which creative thinking is needed to come up with (B) solutions.</div>
+                    <div class="option-item" id="a40">① Logical ...... innovative</div>
+                    <div class="option-item">② Flexible ...... instant</div>
+                    <div class="option-item">③ Logical ...... proven</div>
+                    <div class="option-item">④ Flexible ...... superior</div>
+                    <div class="option-item">⑤ Logical ...... collaborative</div>
+                    <button class="check-btn" onclick="reveal('q40-ans', 'a40')">정답 확인</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Navigation -->
+    <div class="navigation">
+        <button id="prevBtn" class="nav-btn">Prev</button>
+        <span id="page-counter">1 / 35</span>
+        <button id="nextBtn" class="nav-btn">Next</button>
+        <button id="fullscreenBtn" class="nav-btn">Full Screen</button>
+    </div>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const pageCounter = document.getElementById('page-counter');
+        const fullscreenBtn = document.getElementById('fullscreenBtn');
+        
+        let currentSlide = 0;
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => { slide.classList.remove('active'); });
+            slides[index].classList.add('active');
+            pageCounter.textContent = `${index + 1} / ${totalSlides}`;
+        }
+
+        function reveal(slideId, ansId) {
+            document.getElementById(slideId).classList.add('reveal');
+            document.getElementById(ansId).classList.add('correct-reveal');
+        }
+
+        nextBtn.addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        });
+
+        prevBtn.addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            showSlide(currentSlide);
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === ' ') { e.preventDefault(); nextBtn.click(); }
+            else if (e.key === 'ArrowLeft') { e.preventDefault(); prevBtn.click(); }
+        });
+        
+        function toggleFullScreen() {
+            if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen();
+            } else {
+                if (document.exitFullscreen) document.exitFullscreen();
+            }
+        }
+
+        fullscreenBtn.addEventListener('click', toggleFullScreen);
+        document.addEventListener('fullscreenchange', () => {
+            fullscreenBtn.textContent = document.fullscreenElement ? 'Exit' : 'Full Screen';
+        });
+
+        showSlide(currentSlide);
+    </script>
+</body>
+</html>
