@@ -1,0 +1,1084 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홍길동 학생 성적 심층 분석표</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700;900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --font-display: 'Playfair Display', serif;
+            --font-kr: 'Noto Sans KR', sans-serif;
+            --font-mono: 'DM Mono', monospace;
+
+            --ink: #1a1a2e;
+            --ink-soft: #2d2d44;
+            --ink-muted: #4a4a5a;
+            --gold: #c5a572;
+            --gold-dark: #a68a5b;
+            --gold-light: #d4bc8b;
+            --gold-pale: #f5f0e8;
+            --gold-wash: #faf7f2;
+
+            --text: #1a1a2e;
+            --text-mid: #4a4a5a;
+            --text-soft: #7a7a8a;
+            --text-muted: #a0a0aa;
+
+            --paper: #fafaf7;
+            --card: #ffffff;
+            --border: #e8e6e1;
+            --border-light: #f0eee9;
+            --divider: #d8d5ce;
+
+            --correct: #2d7a4f;
+            --correct-soft: #edf5f0;
+            --warn: #b8860b;
+            --warn-soft: #fdf8ec;
+            --danger: #943434;
+            --danger-soft: #faf0f0;
+        }
+
+        @page { size: A4; margin: 0; }
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-print-color-adjust: exact !important; color-adjust: exact !important; }
+
+        body {
+            font-family: var(--font-kr);
+            line-height: 1.8;
+            color: var(--text);
+            background: #e8e6e1;
+            font-size: 9.5pt;
+        }
+
+        /* ── Page ── */
+        .page {
+            width: 210mm; min-height: 297mm;
+            margin: 10mm auto;
+            padding: 18mm 22mm 16mm;
+            background: var(--card);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+            display: flex; flex-direction: column;
+            position: relative;
+            page-break-after: always;
+        }
+        .page:last-child { page-break-after: avoid; }
+        .page-body { flex: 1; }
+
+        .page-accent {
+            position: absolute; top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--gold), var(--gold-dark), var(--ink));
+        }
+
+        .page-header {
+            text-align: center;
+            padding-bottom: 14px;
+            margin-bottom: 22px;
+            border-bottom: 1px solid var(--ink);
+            position: relative;
+        }
+        .page-header h1 {
+            font-family: var(--font-kr);
+            font-size: 15pt;
+            font-weight: 700;
+            color: var(--ink);
+            letter-spacing: -0.3px;
+        }
+        .page-header::after {
+            content: '';
+            position: absolute; bottom: -1px; left: 50%; transform: translateX(-50%);
+            width: 40px; height: 2px;
+            background: var(--gold);
+        }
+
+        .page-footer {
+            display: flex; justify-content: space-between; align-items: center;
+            padding-top: 12px; margin-top: 20px;
+            border-top: 0.5px solid var(--divider);
+            font-size: 7.5pt; color: var(--text-muted);
+            letter-spacing: 0.3px;
+        }
+        .page-footer .brand {
+            font-family: var(--font-display);
+            font-weight: 600;
+            font-size: 8pt;
+            color: var(--gold-dark);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        /* ── Student Card ── */
+        .student-card {
+            text-align: center;
+            border: 0.5px solid var(--border);
+            padding: 16px 20px;
+            margin-bottom: 18px;
+            position: relative;
+        }
+        .student-card::before {
+            content: '';
+            position: absolute; top: -1px; left: 50%; transform: translateX(-50%);
+            width: 60px; height: 2px;
+            background: var(--gold);
+        }
+        .student-card .name {
+            font-size: 18pt;
+            font-weight: 900;
+            color: var(--ink);
+        }
+        .student-card .exam-name {
+            font-size: 10pt;
+            color: var(--text-soft);
+            margin-top: 4px;
+        }
+        .student-card .date {
+            font-family: var(--font-mono);
+            font-size: 8pt;
+            color: var(--text-muted);
+            margin-top: 4px;
+            letter-spacing: 0.5px;
+        }
+
+        /* ── Section Header ── */
+        .section-header {
+            display: flex; align-items: center; gap: 16px;
+            margin: 24px 0 18px 0;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--ink);
+        }
+        .section-header.first { margin-top: 0; }
+        .section-num {
+            font-family: var(--font-display);
+            font-weight: 800;
+            font-size: 24pt;
+            color: var(--gold);
+            line-height: 1;
+            min-width: 34px;
+        }
+        .section-divider {
+            width: 1px; height: 24px;
+            background: var(--divider);
+        }
+        .section-title {
+            font-size: 12pt;
+            font-weight: 700;
+            color: var(--ink);
+        }
+
+        h3 {
+            font-size: 10pt;
+            font-weight: 700;
+            color: var(--ink);
+            margin: 20px 0 10px;
+            padding-left: 14px;
+            position: relative;
+        }
+        h3::before {
+            content: '';
+            position: absolute; left: 0; top: 2px; bottom: 2px;
+            width: 2px; background: var(--gold);
+        }
+
+        /* ── Score Overview ── */
+        .score-overview {
+            display: grid; grid-template-columns: 1fr 1fr 1fr;
+            gap: 0;
+            border: 0.5px solid var(--border);
+            margin-bottom: 16px;
+        }
+        .score-card {
+            text-align: center;
+            padding: 18px 12px;
+            border-right: 0.5px solid var(--border-light);
+        }
+        .score-card:last-child { border-right: none; }
+        .score-card .score-label {
+            font-size: 8pt;
+            color: var(--text-soft);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+        .score-card .score-value {
+            font-family: var(--font-display);
+            font-size: 30pt;
+            font-weight: 800;
+            color: var(--ink);
+            line-height: 1;
+        }
+        .score-card .score-unit {
+            font-family: var(--font-kr);
+            font-size: 10pt;
+            font-weight: 300;
+            color: var(--text-muted);
+        }
+        .score-card.primary {
+            background: var(--ink);
+        }
+        .score-card.primary .score-label { color: var(--gold-light); }
+        .score-card.primary .score-value { color: var(--gold-pale); }
+        .score-card.primary .score-unit { color: var(--gold-dark); }
+
+        /* ── Donut Charts ── */
+        .donut-charts {
+            display: flex; justify-content: center;
+            gap: 0;
+            margin: 10px 0 16px;
+            padding: 14px 0;
+            border: 0.5px solid var(--border);
+            background: var(--paper);
+        }
+        .donut-item {
+            display: flex; flex-direction: column; align-items: center;
+            gap: 6px;
+            flex: 1;
+            padding: 8px 0;
+            position: relative;
+        }
+        .donut-item + .donut-item::before {
+            content: '';
+            position: absolute; left: 0; top: 20%; bottom: 20%;
+            width: 0.5px;
+            background: var(--border);
+        }
+        .donut-badge {
+            font-family: var(--font-display);
+            font-size: 9pt;
+            font-weight: 700;
+            color: var(--gold-pale);
+            background: var(--ink);
+            width: 22px; height: 22px;
+            display: flex; align-items: center; justify-content: center;
+            line-height: 1;
+        }
+        .donut-item svg { display: block; }
+        .donut-name {
+            font-size: 10pt;
+            font-weight: 700;
+            color: var(--ink);
+            margin-top: 4px;
+        }
+        .donut-score {
+            font-family: var(--font-mono);
+            font-size: 8.5pt;
+            color: var(--text-soft);
+        }
+
+        /* ── Summary ── */
+        .summary-card {
+            background: var(--paper);
+            border: 0.5px solid var(--border);
+            padding: 18px 22px;
+            margin-bottom: 16px;
+        }
+        .summary-card p {
+            font-size: 10pt;
+            line-height: 1.9;
+            color: var(--text-mid);
+        }
+
+        /* ── OX Grid ── */
+        .ox-grid {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 5px;
+            margin-bottom: 20px;
+        }
+        .ox-cell {
+            text-align: center;
+            padding: 7px 2px;
+            font-size: 8pt;
+            border: 0.5px solid var(--border);
+        }
+        .ox-cell .ox-q {
+            font-family: var(--font-mono);
+            font-weight: 500;
+            font-size: 8.5pt;
+            display: block;
+            margin-bottom: 1px;
+        }
+        .ox-cell.is-correct {
+            background: var(--correct-soft);
+            border-color: #c8ddd0;
+        }
+        .ox-cell.is-correct .ox-q { color: var(--correct); }
+        .ox-cell.is-incorrect {
+            background: var(--danger-soft);
+            border-color: #e0cece;
+        }
+        .ox-cell.is-incorrect .ox-q { color: var(--danger); }
+
+        /* ── OX Table ── */
+        .ox-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 9pt;
+            text-align: center;
+            border: 0.5px solid var(--border);
+        }
+        .ox-table th {
+            background: var(--ink);
+            color: var(--gold-pale);
+            font-weight: 500;
+            padding: 10px 6px;
+            font-size: 8.5pt;
+            letter-spacing: 0.5px;
+            border-right: 0.5px solid var(--ink-soft);
+        }
+        .ox-table th:last-child { border-right: none; }
+        .ox-table td {
+            padding: 8px 6px;
+            border-bottom: 0.5px solid var(--border-light);
+            vertical-align: middle;
+        }
+        .ox-table tr:last-child td { border-bottom: none; }
+        .ox-table tr:nth-child(even) td { background: var(--paper); }
+
+        .ox-table .q-num {
+            font-family: var(--font-mono);
+            font-weight: 500;
+            color: var(--text-soft);
+        }
+        .ox-table .q-type {
+            font-size: 8pt;
+            color: var(--text-soft);
+        }
+        .ox-table .correct { color: var(--correct); font-weight: 700; }
+        .ox-table .incorrect { color: var(--danger); font-weight: 700; }
+        .ox-table .student-wrong { color: var(--danger); font-weight: 500; }
+        .ox-table .no-answer { color: var(--text-muted); }
+
+        /* ── Analysis Cards ── */
+        .analysis-card {
+            border: 0.5px solid var(--border);
+            padding: 18px 22px;
+            margin-bottom: 14px;
+            page-break-inside: avoid;
+        }
+        .analysis-card h4 {
+            font-size: 10pt;
+            font-weight: 700;
+            color: var(--ink);
+            margin-bottom: 8px;
+        }
+        .analysis-card p {
+            font-size: 9.5pt;
+            line-height: 1.85;
+            color: var(--text-mid);
+        }
+        .analysis-card ul {
+            padding-left: 16px;
+            margin-top: 6px;
+        }
+        .analysis-card li {
+            font-size: 9.5pt;
+            margin-bottom: 3px;
+            color: var(--text-mid);
+            line-height: 1.75;
+        }
+
+        .wrong-item {
+            display: flex; gap: 14px;
+            padding: 14px 18px;
+            background: var(--danger-soft);
+            border-left: 3px solid var(--danger);
+            margin-bottom: 8px;
+            font-size: 9.5pt;
+            page-break-inside: avoid;
+        }
+        .wrong-item .q-badge {
+            font-family: var(--font-mono);
+            font-weight: 500;
+            color: var(--danger);
+            min-width: 30px;
+            font-size: 9pt;
+        }
+        .wrong-item .q-explanation {
+            color: var(--text-mid);
+            line-height: 1.75;
+        }
+
+        .correct-note {
+            padding: 10px 18px;
+            background: var(--correct-soft);
+            border-left: 3px solid var(--correct);
+            margin-bottom: 8px;
+            font-size: 9pt;
+            color: var(--text-mid);
+        }
+
+        /* ── Solution ── */
+        .solution-box {
+            background: var(--gold-wash);
+            border-left: 3px solid var(--gold);
+            padding: 18px 22px;
+            margin-bottom: 12px;
+            page-break-inside: avoid;
+        }
+        .solution-box .priority-badge {
+            display: inline-block;
+            font-family: var(--font-mono);
+            font-size: 7.5pt;
+            font-weight: 500;
+            color: var(--gold-pale);
+            background: var(--ink);
+            padding: 2px 10px;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+        .solution-box h4 {
+            font-size: 10.5pt;
+            font-weight: 700;
+            color: var(--ink);
+            margin-bottom: 6px;
+        }
+        .solution-box ul { padding-left: 16px; }
+        .solution-box li {
+            font-size: 9.5pt;
+            margin-bottom: 3px;
+            color: var(--text-mid);
+            line-height: 1.75;
+        }
+
+        .encouragement-box {
+            margin-top: 22px;
+            padding: 24px 30px;
+            border: 0.5px solid var(--border);
+            background: var(--gold-wash);
+            text-align: center;
+            position: relative;
+        }
+        .encouragement-box::before,
+        .encouragement-box::after {
+            content: '';
+            position: absolute; left: 50%; transform: translateX(-50%);
+            width: 40px; height: 1px;
+            background: var(--gold);
+        }
+        .encouragement-box::before { top: -1px; }
+        .encouragement-box::after { bottom: -1px; }
+        .encouragement-box p {
+            font-size: 10pt;
+            line-height: 2;
+            color: var(--text-mid);
+        }
+        .encouragement-box .emphasis {
+            font-weight: 700;
+            color: var(--gold-dark);
+        }
+
+        @media print {
+            body { background: white; }
+            .page { margin: 0; box-shadow: none; }
+        }
+        .no-break { page-break-inside: avoid; }
+    </style>
+</head>
+<body>
+
+    <!-- PAGE 1: 종합 평가 -->
+    <div class="page">
+        <div class="page-accent"></div>
+        <div class="page-body">
+
+            <div class="page-header">
+                <h1>성적 심층 분석표</h1>
+            </div>
+
+            <div class="student-card no-break">
+                <div class="name">홍길동 학생</div>
+                <div class="exam-name">2025 편입학 대비 영어 레벨테스트 2</div>
+                <div class="date">2026-03-08</div>
+            </div>
+
+            <div class="section-header first">
+                <span class="section-num">01</span>
+                <span class="section-divider"></span>
+                <span class="section-title">종합 평가</span>
+            </div>
+
+            <div class="score-overview no-break">
+                <div class="score-card primary">
+                    <div class="score-label">총점</div>
+                    <div class="score-value">55<span class="score-unit"> / 100</span></div>
+                </div>
+                <div class="score-card">
+                    <div class="score-label">정답률</div>
+                    <div class="score-value">55<span class="score-unit">%</span></div>
+                </div>
+                <div class="score-card">
+                    <div class="score-label">정답 / 전체</div>
+                    <div class="score-value">22<span class="score-unit"> / 40</span></div>
+                </div>
+            </div>
+
+            <h3>영역별 성취도</h3>
+            <div class="donut-charts no-break">
+                <div class="donut-item">
+    <span class="donut-badge">1</span>
+    <svg width="170" height="170" viewBox="0 0 170 170">
+        <defs>
+            <linearGradient id="donut-grad-0" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#c2410c"/>
+                <stop offset="50%" stop-color="#ea580c"/>
+                <stop offset="100%" stop-color="#d97706"/>
+            </linearGradient>
+        </defs>
+        <circle cx="85" cy="85" r="62" fill="none" stroke="#e8e6e1" stroke-width="22"/>
+        <circle cx="85" cy="85" r="62" fill="none" stroke="url(#donut-grad-0)" stroke-width="22"
+                stroke-dasharray="155.8 389.6"
+                stroke-linecap="round" transform="rotate(-90 85 85)"/>
+        <text x="85" y="79" text-anchor="middle" font-family="Playfair Display,serif" font-size="34" font-weight="800" fill="#1a1a2e">40%</text>
+        <text x="85" y="101" text-anchor="middle" font-family="DM Mono,monospace" font-size="14" fill="#7a7a8a">4/10</text>
+    </svg>
+    <span class="donut-name">어법</span>
+</div>
+<div class="donut-item">
+    <span class="donut-badge">2</span>
+    <svg width="170" height="170" viewBox="0 0 170 170">
+        <defs>
+            <linearGradient id="donut-grad-1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#b45309"/>
+                <stop offset="50%" stop-color="#d97706"/>
+                <stop offset="100%" stop-color="#ca8a04"/>
+            </linearGradient>
+        </defs>
+        <circle cx="85" cy="85" r="62" fill="none" stroke="#e8e6e1" stroke-width="22"/>
+        <circle cx="85" cy="85" r="62" fill="none" stroke="url(#donut-grad-1)" stroke-width="22"
+                stroke-dasharray="233.7 389.6"
+                stroke-linecap="round" transform="rotate(-90 85 85)"/>
+        <text x="85" y="79" text-anchor="middle" font-family="Playfair Display,serif" font-size="34" font-weight="800" fill="#1a1a2e">60%</text>
+        <text x="85" y="101" text-anchor="middle" font-family="DM Mono,monospace" font-size="14" fill="#7a7a8a">6/10</text>
+    </svg>
+    <span class="donut-name">어휘</span>
+</div>
+<div class="donut-item">
+    <span class="donut-badge">3</span>
+    <svg width="170" height="170" viewBox="0 0 170 170">
+        <defs>
+            <linearGradient id="donut-grad-2" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#b45309"/>
+                <stop offset="50%" stop-color="#d97706"/>
+                <stop offset="100%" stop-color="#ca8a04"/>
+            </linearGradient>
+        </defs>
+        <circle cx="85" cy="85" r="62" fill="none" stroke="#e8e6e1" stroke-width="22"/>
+        <circle cx="85" cy="85" r="62" fill="none" stroke="url(#donut-grad-2)" stroke-width="22"
+                stroke-dasharray="233.7 389.6"
+                stroke-linecap="round" transform="rotate(-90 85 85)"/>
+        <text x="85" y="79" text-anchor="middle" font-family="Playfair Display,serif" font-size="34" font-weight="800" fill="#1a1a2e">60%</text>
+        <text x="85" y="101" text-anchor="middle" font-family="DM Mono,monospace" font-size="14" fill="#7a7a8a">12/20</text>
+    </svg>
+    <span class="donut-name">장문독해</span>
+</div>
+
+            </div>
+
+            <h3>종합 소견</h3>
+            <div class="summary-card">
+                <p>홍길동 학생은 전체 40문항 중 22문항을 맞춰 55%의 정답률을 보였습니다. 전형적인 중위권 성적으로, 어법이 가장 취약하고 어휘·독해는 기본기는 있으나 불안정합니다. 전 영역 균형 보강이 필요합니다.</p>
+            </div>
+
+        </div>
+        <div class="page-footer">
+            <span class="brand">Vera Jin Academy</span>
+            <span>Page 1 / 8</span>
+        </div>
+    </div>
+
+    <!-- PAGE 2: 정오표 -->
+    <div class="page">
+        <div class="page-accent"></div>
+        <div class="page-body">
+
+            <div class="page-header">
+                <h1>상세 점수 및 정오표</h1>
+            </div>
+
+            <div class="section-header first">
+                <span class="section-num">02</span>
+                <span class="section-divider"></span>
+                <span class="section-title">전체 문항 채점 결과</span>
+            </div>
+
+            <div class="ox-grid">
+                <div class="ox-cell is-correct">
+                    <span class="ox-q">1</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-incorrect">
+                    <span class="ox-q">2</span>
+                    <span>X</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">3</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-incorrect">
+                    <span class="ox-q">4</span>
+                    <span>X</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">5</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-incorrect">
+                    <span class="ox-q">6</span>
+                    <span>X</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">7</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-incorrect">
+                    <span class="ox-q">8</span>
+                    <span>X</span>
+                </div>
+<div class="ox-cell is-incorrect">
+                    <span class="ox-q">9</span>
+                    <span>X</span>
+                </div>
+<div class="ox-cell is-incorrect">
+                    <span class="ox-q">10</span>
+                    <span>X</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">11</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">12</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-incorrect">
+                    <span class="ox-q">13</span>
+                    <span>X</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">14</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">15</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">16</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-incorrect">
+                    <span class="ox-q">17</span>
+                    <span>X</span>
+                </div>
+<div class="ox-cell is-incorrect">
+                    <span class="ox-q">18</span>
+                    <span>X</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">19</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-incorrect">
+                    <span class="ox-q">20</span>
+                    <span>X</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">21</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">22</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-incorrect">
+                    <span class="ox-q">23</span>
+                    <span>X</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">24</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">25</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">26</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-incorrect">
+                    <span class="ox-q">27</span>
+                    <span>X</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">28</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-incorrect">
+                    <span class="ox-q">29</span>
+                    <span>X</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">30</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">31</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-incorrect">
+                    <span class="ox-q">32</span>
+                    <span>X</span>
+                </div>
+<div class="ox-cell is-incorrect">
+                    <span class="ox-q">33</span>
+                    <span>X</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">34</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-incorrect">
+                    <span class="ox-q">35</span>
+                    <span>X</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">36</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-incorrect">
+                    <span class="ox-q">37</span>
+                    <span>X</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">38</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-incorrect">
+                    <span class="ox-q">39</span>
+                    <span>X</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">40</span>
+                    <span>O</span>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="page-footer">
+            <span class="brand">Vera Jin Academy</span>
+            <span>Page 2 / 8</span>
+        </div>
+    </div>
+
+        <div class="page">
+        <div class="page-accent"></div>
+        <div class="page-body">
+            <div class="page-header"><h1>문항별 상세 채점표</h1></div>
+            <table class="ox-table">
+                <thead><tr><th style="width:8%">번호</th><th style="width:12%">유형</th><th style="width:10%">정답</th><th style="width:10%">제출</th><th style="width:10%">결과</th></tr></thead>
+                <tbody>
+<tr><td class="q-num">1</td><td class="q-type">어법</td><td>D</td><td class="">D</td><td class="correct">O</td></tr>
+<tr><td class="q-num">2</td><td class="q-type">어법</td><td>D</td><td class="student-wrong">A</td><td class="incorrect">X</td></tr>
+<tr><td class="q-num">3</td><td class="q-type">어법</td><td>D</td><td class="">D</td><td class="correct">O</td></tr>
+<tr><td class="q-num">4</td><td class="q-type">어법</td><td>A</td><td class="student-wrong">B</td><td class="incorrect">X</td></tr>
+<tr><td class="q-num">5</td><td class="q-type">어법</td><td>B</td><td class="">B</td><td class="correct">O</td></tr>
+<tr><td class="q-num">6</td><td class="q-type">어법</td><td>C</td><td class="student-wrong">A</td><td class="incorrect">X</td></tr>
+<tr><td class="q-num">7</td><td class="q-type">어법</td><td>C</td><td class="">C</td><td class="correct">O</td></tr>
+<tr><td class="q-num">8</td><td class="q-type">어법</td><td>A</td><td class="student-wrong">C</td><td class="incorrect">X</td></tr>
+<tr><td class="q-num">9</td><td class="q-type">어법</td><td>B</td><td class="student-wrong">A</td><td class="incorrect">X</td></tr>
+<tr><td class="q-num">10</td><td class="q-type">어법</td><td>C</td><td class="student-wrong">A</td><td class="incorrect">X</td></tr>
+<tr><td class="q-num">11</td><td class="q-type">어휘</td><td>C</td><td class="">C</td><td class="correct">O</td></tr>
+<tr><td class="q-num">12</td><td class="q-type">어휘</td><td>B</td><td class="">B</td><td class="correct">O</td></tr>
+<tr><td class="q-num">13</td><td class="q-type">어휘</td><td>C</td><td class="student-wrong">A</td><td class="incorrect">X</td></tr>
+<tr><td class="q-num">14</td><td class="q-type">어휘</td><td>D</td><td class="">D</td><td class="correct">O</td></tr>
+<tr><td class="q-num">15</td><td class="q-type">어휘</td><td>D</td><td class="">D</td><td class="correct">O</td></tr>
+<tr><td class="q-num">16</td><td class="q-type">어휘</td><td>A</td><td class="">A</td><td class="correct">O</td></tr>
+<tr><td class="q-num">17</td><td class="q-type">어휘</td><td>B</td><td class="student-wrong">A</td><td class="incorrect">X</td></tr>
+<tr><td class="q-num">18</td><td class="q-type">어휘</td><td>A</td><td class="student-wrong">C</td><td class="incorrect">X</td></tr>
+<tr><td class="q-num">19</td><td class="q-type">어휘</td><td>C</td><td class="">C</td><td class="correct">O</td></tr>
+<tr><td class="q-num">20</td><td class="q-type">어휘</td><td>A</td><td class="student-wrong">B</td><td class="incorrect">X</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="page-footer">
+            <span class="brand">Vera Jin Academy</span>
+            <span>Page 3 / 8</span>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="page-accent"></div>
+        <div class="page-body">
+            <div class="page-header"><h1>문항별 상세 채점표</h1></div>
+            <table class="ox-table">
+                <thead><tr><th style="width:8%">번호</th><th style="width:12%">유형</th><th style="width:10%">정답</th><th style="width:10%">제출</th><th style="width:10%">결과</th></tr></thead>
+                <tbody>
+<tr><td class="q-num">21</td><td class="q-type">장문독해</td><td>C</td><td class="">C</td><td class="correct">O</td></tr>
+<tr><td class="q-num">22</td><td class="q-type">장문독해</td><td>B</td><td class="">B</td><td class="correct">O</td></tr>
+<tr><td class="q-num">23</td><td class="q-type">장문독해</td><td>C</td><td class="student-wrong">A</td><td class="incorrect">X</td></tr>
+<tr><td class="q-num">24</td><td class="q-type">장문독해</td><td>B</td><td class="">B</td><td class="correct">O</td></tr>
+<tr><td class="q-num">25</td><td class="q-type">장문독해</td><td>C</td><td class="">C</td><td class="correct">O</td></tr>
+<tr><td class="q-num">26</td><td class="q-type">장문독해</td><td>D</td><td class="">D</td><td class="correct">O</td></tr>
+<tr><td class="q-num">27</td><td class="q-type">장문독해</td><td>C</td><td class="student-wrong">A</td><td class="incorrect">X</td></tr>
+<tr><td class="q-num">28</td><td class="q-type">장문독해</td><td>C</td><td class="">C</td><td class="correct">O</td></tr>
+<tr><td class="q-num">29</td><td class="q-type">장문독해</td><td>C</td><td class="student-wrong">A</td><td class="incorrect">X</td></tr>
+<tr><td class="q-num">30</td><td class="q-type">장문독해</td><td>B</td><td class="">B</td><td class="correct">O</td></tr>
+<tr><td class="q-num">31</td><td class="q-type">장문독해</td><td>C</td><td class="">C</td><td class="correct">O</td></tr>
+<tr><td class="q-num">32</td><td class="q-type">장문독해</td><td>A</td><td class="student-wrong">B</td><td class="incorrect">X</td></tr>
+<tr><td class="q-num">33</td><td class="q-type">장문독해</td><td>B</td><td class="student-wrong">A</td><td class="incorrect">X</td></tr>
+<tr><td class="q-num">34</td><td class="q-type">장문독해</td><td>C</td><td class="">C</td><td class="correct">O</td></tr>
+<tr><td class="q-num">35</td><td class="q-type">장문독해</td><td>B</td><td class="student-wrong">A</td><td class="incorrect">X</td></tr>
+<tr><td class="q-num">36</td><td class="q-type">장문독해</td><td>C</td><td class="">C</td><td class="correct">O</td></tr>
+<tr><td class="q-num">37</td><td class="q-type">장문독해</td><td>C</td><td class="student-wrong">A</td><td class="incorrect">X</td></tr>
+<tr><td class="q-num">38</td><td class="q-type">장문독해</td><td>C</td><td class="">C</td><td class="correct">O</td></tr>
+<tr><td class="q-num">39</td><td class="q-type">장문독해</td><td>A</td><td class="student-wrong">B</td><td class="incorrect">X</td></tr>
+<tr><td class="q-num">40</td><td class="q-type">장문독해</td><td>A</td><td class="">A</td><td class="correct">O</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="page-footer">
+            <span class="brand">Vera Jin Academy</span>
+            <span>Page 4 / 8</span>
+        </div>
+    </div>
+
+
+
+    <div class="page">
+        <div class="page-accent"></div>
+        <div class="page-body">
+            <div class="page-header"><h1>어법 영역 분석</h1></div>
+            <div class="section-header first">
+                <span class="section-num">03</span>
+                <span class="section-divider"></span>
+                <span class="section-title">어법 분석 (4/10, 40%)</span>
+            </div>
+            <div class="analysis-card no-break">
+                <h4>영역 개요</h4>
+                <p>어법 영역에서 10문항 중 4문항을 맞춰 40%의 정답률을 기록했습니다. 기본 문법은 부분적으로 이해하고 있으나, 가정법·도치·시제 등 핵심 구조에서 취약점이 드러납니다.</p>
+            </div>
+<div class="wrong-item">
+                <span class="q-badge">Q2</span>
+                <div class="q-explanation">
+                    <strong>정답: D / 제출: A</strong><br>
+                    분사구문에서 주절 주어와 분사 주어가 다를 때 독립분사구문을 써야 합니다. ④번 forecasted는 forecast가 올바른 과거분사 형태입니다.
+                </div>
+            </div>
+<div class="wrong-item">
+                <span class="q-badge">Q4</span>
+                <div class="q-explanation">
+                    <strong>정답: A / 제출: B</strong><br>
+                    insist that + 주어 + 동사원형 (가정법 현재)을 사용해야 합니다. attends가 아니라 attend가 맞습니다.
+                </div>
+            </div>
+<div class="wrong-item">
+                <span class="q-badge">Q6</span>
+                <div class="q-explanation">
+                    <strong>정답: C / 제출: A</strong><br>
+                    도치 구문에서 Not until이 문두에 오면 주어-동사 도치가 필요합니다. did the audience discover가 정답입니다.
+                </div>
+            </div>
+<div class="wrong-item">
+                <span class="q-badge">Q8</span>
+                <div class="q-explanation">
+                    <strong>정답: A / 제출: C</strong><br>
+                    the more~, the more~ 비교급 구문입니다. the more adept가 정답이며, 비교급 강조 구문의 기본 패턴을 익혀야 합니다.
+                </div>
+            </div>
+<div class="correct-note">외 2문항 오답 (상세 채점표 참조)</div>
+<div class="correct-note">어법 영역에서 4문항 정답 처리되었습니다.</div>
+            <div class="analysis-card no-break">
+                <h4>학습 포인트</h4>
+                <ul>
+                    <li>가정법 현재 (insist/recommend/imperative that + 원형) 패턴 집중 학습</li>
+                    <li>도치 구문 유형별 정리 (부정 부사, only, not until 등)</li>
+                    <li>분사구문의 능동(~ing)/수동(p.p.) 구별 연습</li>
+                    <li>the 비교급, the 비교급 구문 반복 훈련</li>
+                </ul>
+            </div>
+        </div>
+        <div class="page-footer">
+            <span class="brand">Vera Jin Academy</span>
+            <span>Page 5 / 8</span>
+        </div>
+    </div>
+<div class="page">
+        <div class="page-accent"></div>
+        <div class="page-body">
+            <div class="page-header"><h1>어휘 영역 분석</h1></div>
+            <div class="section-header first">
+                <span class="section-num">04</span>
+                <span class="section-divider"></span>
+                <span class="section-title">어휘 분석 (6/10, 60%)</span>
+            </div>
+            <div class="analysis-card no-break">
+                <h4>영역 개요</h4>
+                <p>어휘 영역에서 10문항 중 6문항을 맞춰 60%를 기록했습니다. 기본 어휘력은 갖추고 있으나 고난도 유의어 구별과 문맥 적합 어휘 판단에서 실수가 있습니다.</p>
+            </div>
+<div class="wrong-item">
+                <span class="q-badge">Q13</span>
+                <div class="q-explanation">
+                    <strong>정답: C / 제출: A</strong><br>
+                    adroit는 '능숙한(skillful)'이라는 뜻입니다. clumsy(서투른)와 반의어 관계이며, dexterous와 유의어입니다.
+                </div>
+            </div>
+<div class="wrong-item">
+                <span class="q-badge">Q17</span>
+                <div class="q-explanation">
+                    <strong>정답: B / 제출: A</strong><br>
+                    resolute는 '단호한, 굳건한'이라는 뜻입니다. determined, unwavering과 유의어이며, 문맥상 setbacks에도 불구하고 끝까지 해낸 것을 나타냅니다.
+                </div>
+            </div>
+<div class="wrong-item">
+                <span class="q-badge">Q18</span>
+                <div class="q-explanation">
+                    <strong>정답: A / 제출: C</strong><br>
+                    poignant는 '가슴 아픈, 애절한'이라는 뜻입니다. 사랑과 상실의 이야기라는 문맥에서 touching, moving과 유사합니다.
+                </div>
+            </div>
+<div class="wrong-item">
+                <span class="q-badge">Q20</span>
+                <div class="q-explanation">
+                    <strong>정답: A / 제출: B</strong><br>
+                    substantive는 '실질적인, 본질적인'이라는 뜻입니다. 빈 수사학과 대비되는 맥락에서 meaningful, significant와 유사합니다.
+                </div>
+            </div>
+<div class="correct-note">어휘 영역에서 6문항 정답 처리되었습니다.</div>
+            <div class="analysis-card no-break">
+                <h4>학습 포인트</h4>
+                <ul>
+                    <li>편입 고빈출 형용사 300개 집중 암기 (유의어 그룹별)</li>
+                    <li>문맥 단서를 활용한 어휘 추론 연습</li>
+                    <li>반의어 짝 학습으로 의미 변별력 강화</li>
+                    <li>매일 어휘 테스트 20개 (누적 복습)</li>
+                </ul>
+            </div>
+        </div>
+        <div class="page-footer">
+            <span class="brand">Vera Jin Academy</span>
+            <span>Page 6 / 8</span>
+        </div>
+    </div>
+<div class="page">
+        <div class="page-accent"></div>
+        <div class="page-body">
+            <div class="page-header"><h1>장문독해 영역 분석</h1></div>
+            <div class="section-header first">
+                <span class="section-num">05</span>
+                <span class="section-divider"></span>
+                <span class="section-title">장문독해 분석 (12/20, 60%)</span>
+            </div>
+            <div class="analysis-card no-break">
+                <h4>영역 개요</h4>
+                <p>장문독해 영역에서 20문항 중 11문항을 맞춰 55%를 기록했습니다. 쉬운 주제 파악은 가능하나, 추론·세부 정보·어휘 유추 문제에서 오답이 집중됩니다.</p>
+            </div>
+<div class="wrong-item">
+                <span class="q-badge">Q23</span>
+                <div class="q-explanation">
+                    <strong>정답: C / 제출: A</strong><br>
+                    스토아 철학의 핵심 목표를 묻는 문제입니다. 'inner peace and resilience'가 정답이며, 지문의 'apatheia(평정)'와 연결됩니다.
+                </div>
+            </div>
+<div class="wrong-item">
+                <span class="q-badge">Q27</span>
+                <div class="q-explanation">
+                    <strong>정답: C / 제출: A</strong><br>
+                    긱 이코노미에서 근로자 혜택을 묻는 문제입니다. 'Greater autonomy over work schedule'이 정답이며, 지문의 'set their own hours'와 직결됩니다.
+                </div>
+            </div>
+<div class="wrong-item">
+                <span class="q-badge">Q29</span>
+                <div class="q-explanation">
+                    <strong>정답: C / 제출: A</strong><br>
+                    긱 이코노미의 핵심 쟁점을 추론하는 문제입니다. 유연성과 장기 안정성 간의 갈등이 지문 전체의 구조적 대립입니다.
+                </div>
+            </div>
+<div class="wrong-item">
+                <span class="q-badge">Q33</span>
+                <div class="q-explanation">
+                    <strong>정답: B / 제출: A</strong><br>
+                    paramount의 이유를 묻는 문제입니다. 우주의 운명을 이해하는 데 결정적이라는 지문의 마지막 문장이 근거입니다.
+                </div>
+            </div>
+<div class="correct-note">외 3문항 오답 (상세 채점표 참조)</div>
+<div class="correct-note">장문독해 영역에서 12문항 정답 처리되었습니다.</div>
+            <div class="analysis-card no-break">
+                <h4>학습 포인트</h4>
+                <ul>
+                    <li>지문의 핵심 논지(thesis) 파악 훈련 — 서론/결론 집중 읽기</li>
+                    <li>추론 문제 유형 연습: 지문 근거를 반드시 찾는 습관</li>
+                    <li>선택지 소거법 훈련: 오답의 함정 패턴 분류</li>
+                    <li>매일 2지문씩 시간 제한 풀이 + 오답 분석</li>
+                </ul>
+            </div>
+        </div>
+        <div class="page-footer">
+            <span class="brand">Vera Jin Academy</span>
+            <span>Page 7 / 8</span>
+        </div>
+    </div>
+
+
+    <!-- LAST PAGE: 솔루션 -->
+    <div class="page">
+        <div class="page-accent"></div>
+        <div class="page-body">
+
+            <div class="page-header">
+                <h1>종합 솔루션 및 학습 전략</h1>
+            </div>
+
+            <div class="section-header first">
+                <span class="section-num">06</span>
+                <span class="section-divider"></span>
+                <span class="section-title">맞춤형 학습 솔루션</span>
+            </div>
+
+            <div class="summary-card">
+                <p>홍길동 학생은 전체 40문항 중 22문항을 맞춰 55%의 정답률을 보였습니다. 전형적인 중위권 성적으로, 어법이 가장 취약하고 어휘·독해는 기본기는 있으나 불안정합니다. 전 영역 균형 보강이 필요합니다.</p>
+            </div>
+
+            <div class="solution-box no-break">
+                <span class="priority-badge">PRIORITY 1</span>
+                <h4>어법 체계적 보강 (최우선)</h4>
+                <ul>
+                    <li>가정법·도치·분사구문 3대 취약 유형 집중 훈련</li>
+                    <li>매일 어법 문제 10문항 + 오답 노트 필수 작성</li>
+                    <li>문법 규칙을 예문 3개씩 암기하여 체화</li>
+                </ul>
+            </div>
+<div class="solution-box no-break">
+                <span class="priority-badge">PRIORITY 2</span>
+                <h4>독해 정확도 향상</h4>
+                <ul>
+                    <li>추론/세부 정보 문제 유형별 집중 풀이</li>
+                    <li>지문 구조 분석 훈련: 주제문·근거문 표시하며 읽기</li>
+                    <li>매일 편입 기출 독해 2지문씩 정독 + 오답 분석</li>
+                </ul>
+            </div>
+<div class="solution-box no-break">
+                <span class="priority-badge">PRIORITY 3</span>
+                <h4>어휘력 확장</h4>
+                <ul>
+                    <li>편입 고빈출 형용사/동사 300개 집중 암기</li>
+                    <li>유의어·반의어 그룹 학습으로 변별력 강화</li>
+                    <li>어원(접두사/접미사) 기반 파생어 학습</li>
+                </ul>
+            </div>
+
+
+            <div class="encouragement-box no-break">
+                <p><span class="emphasis">길동 학생</span>은 기본기를 갖추고 있어 체계적 보강만으로 큰 폭의 성적 향상이 가능합니다. 어법 패턴 학습과 독해 정확도 훈련에 집중한다면, <span class="emphasis">목표 대학 합격</span>은 충분히 달성 가능합니다. 화이팅!</p>
+            </div>
+
+        </div>
+        <div class="page-footer">
+            <span class="brand">Vera Jin Academy</span>
+            <span>Page 8 / 8</span>
+        </div>
+    </div>
+
+</body>
+</html>

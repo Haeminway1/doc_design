@@ -1,0 +1,1348 @@
+{
+  "examName": "2025년도 편입학 대비 영어 레벨 테스트 (레벨테스트2)",
+  "totalQuestions": 40,
+  "pointsPerQuestion": 2.5,
+  "questionTypes": {
+    "어법": {
+      "start": 1,
+      "end": 10,
+      "total": 10
+    },
+    "어휘": {
+      "start": 11,
+      "end": 20,
+      "total": 10
+    },
+    "장문독해": {
+      "start": 21,
+      "end": 40,
+      "total": 20
+    }
+  },
+  "questions": [
+    {
+      "number": 1,
+      "type": "어법",
+      "content": "The committee, comprised of experts from various fields, ① is expected to release ② its findings next month, ③ which will address the economic impact of the new policy and ④ recommending several courses of action.",
+      "options": {
+        "A": "is expected to release",
+        "B": "its findings",
+        "C": "which will address",
+        "D": "recommending"
+      },
+      "correct": "D",
+      "explanation": "등위접속사 and가 연결하는 병렬 구조를 묻는 문제입니다. 관계대명사절 내에서 조동사 will 뒤에 동사원형 address가 왔으므로, and 뒤에도 동사원형인 recommend가 와야 합니다. 따라서 recommending을 recommend로 고쳐야 합니다.",
+      "testedSkill": "등위접속사 병렬 구조 (Parallelism)",
+      "difficulty": "중",
+      "wrongChoiceAnalysis": {
+        "A": {
+          "whyChosen": "수동태 is expected가 어색하다고 느낌",
+          "weakness": "5형식 동사 expect의 수동태 구조 (be expected to-v) 이해 부족",
+          "studyAdvice": "5형식 동사의 수동태 전환 및 보어 형태(to 부정사)를 복습하세요."
+        },
+        "B": {
+          "whyChosen": "대명사 its가 복수형이어야 한다고 착각함",
+          "weakness": "집합명사(committee)의 단수/복수 취급 규칙 혼동",
+          "studyAdvice": "하나의 단일체로 쓰일 때 단수 취급하는 집합명사의 특징을 학습하세요."
+        },
+        "C": {
+          "whyChosen": "관계대명사 which의 계속적 용법을 틀렸다고 생각함",
+          "weakness": "관계대명사 계속적 용법의 선행사 파악 능력 부족",
+          "studyAdvice": "콤마 뒤에 쓰이는 which가 앞의 명사(findings)를 수식하는 구조를 연습하세요."
+        }
+      }
+    },
+    {
+      "number": 2,
+      "type": "어법",
+      "content": "① Despite the storm warnings, many residents chose to remain in their homes, ② a decision they would later regret ③ when the floodwaters began to rise much faster ④ than had been forecasted.",
+      "options": {
+        "A": "Despite",
+        "B": "a decision",
+        "C": "when",
+        "D": "than had been forecasted"
+      },
+      "correct": "D",
+      "explanation": "동사 forecast의 과거 및 과거분사형은 forecast입니다. forecasted는 비표준어이거나 엄격한 문법 시험에서 오답으로 처리됩니다. 따라서 than had been forecast로 고쳐야 합니다.",
+      "testedSkill": "불규칙 동사의 3단 변화 (과거분사 형태)",
+      "difficulty": "상",
+      "wrongChoiceAnalysis": {
+        "A": {
+          "whyChosen": "전치사 Despite 뒤에 명사구가 오는 것을 접속사 Although와 혼동함",
+          "weakness": "전치사와 접속사의 구별",
+          "studyAdvice": "Despite/In spite of (전치사)와 Although/Though (접속사)의 차이를 명확히 암기하세요."
+        },
+        "B": {
+          "whyChosen": "명사 a decision이 갑자기 나온 구조를 이해하지 못함",
+          "weakness": "동격 구조 파악 능력 부족",
+          "studyAdvice": "앞 문장 전체나 일부를 부연 설명하는 동격 명사구의 쓰임을 학습하세요."
+        },
+        "C": {
+          "whyChosen": "관계부사나 접속사 when의 쓰임을 의심함",
+          "weakness": "시간의 부사절 접속사 이해 부족",
+          "studyAdvice": "특정 시점을 나타내는 부사절 접속사 when의 용법을 복습하세요."
+        }
+      }
+    },
+    {
+      "number": 3,
+      "type": "어법",
+      "content": "① Had the researcher access to more advanced equipment, he ② would have been able to complete the experiment ③ much more efficiently and with a higher degree of ④ accurate.",
+      "options": {
+        "A": "Had the researcher access",
+        "B": "would have been able to",
+        "C": "much more efficiently",
+        "D": "accurate"
+      },
+      "correct": "D",
+      "explanation": "전치사 of 뒤에는 명사가 와야 합니다. accurate는 형용사이므로 명사인 accuracy로 고쳐야 합���다. (a higher degree of accuracy)",
+      "testedSkill": "품사 자리 (전치사 뒤 명사)",
+      "difficulty": "하",
+      "wrongChoiceAnalysis": {
+        "A": {
+          "whyChosen": "If가 생략된 가정법 도치 구문을 알아보지 못함",
+          "weakness": "가정법 과거/과거완료의 도치 구조 이해 부족",
+          "studyAdvice": "If가 생략될 때 조동사/be동사/have동사가 주어 앞으로 도치되는 규칙을 학습하세요."
+        },
+        "B": {
+          "whyChosen": "가정법 주절의 시제 형태를 틀렸다고 생각함",
+          "weakness": "가정법 과거완료 주절 공식 (would have p.p) 혼동",
+          "studyAdvice": "가정법 과거와 과거완료의 조건절-주절 시제 짝맞추기를 복습하세요."
+        },
+        "C": {
+          "whyChosen": "비교급 강조 부사 much의 쓰임을 모름",
+          "weakness": "비교급 수식 부사 (much, even, still, far, a lot) 암기 부족",
+          "studyAdvice": "비교급을 강조할 수 있는 부사와 원급을 강조하는 부사(very)를 구분하여 암기하세요."
+        }
+      }
+    },
+    {
+      "number": 4,
+      "type": "어법",
+      "content": "The manager insisted that every employee ① attends the mandatory safety training session, ② regardless of their previous experience, to ensure ③ compliance with the new company-wide ④ protocols.",
+      "options": {
+        "A": "attends",
+        "B": "regardless of",
+        "C": "compliance",
+        "D": "protocols"
+      },
+      "correct": "A",
+      "explanation": "주절에 당위성을 나타내는 동사(insist)가 오고 that절의 내용이 '~해야 한다'는 당위의 의미를 가질 때, that절의 동사는 '(should) + 동사원형'을 써야 합니다. 따라서 attends를 attend로 고쳐야 합니다.",
+      "testedSkill": "당위성 동사 뒤 that절의 동사원형 (Subjunctive mood)",
+      "difficulty": "중",
+      "wrongChoiceAnalysis": {
+        "B": {
+          "whyChosen": "전치사구 regardless of의 형태나 의미를 모름",
+          "weakness": "복합 전치사 암기 부족",
+          "studyAdvice": "'~에 상관없이'라는 뜻의 regardless of 등 빈출 전치사구를 암기하세요."
+        },
+        "C": {
+          "whyChosen": "ensure 뒤에 명사 목적어가 오는 것을 어색하게 느낌",
+          "weakness": "타동사 ensure의 목적어 형태 파악 부족",
+          "studyAdvice": "ensure가 명사나 that절을 목적어로 취할 수 있음을 확인하��요."
+        },
+        "D": {
+          "whyChosen": "protocol이라는 어휘의 복수형이 틀렸다고 생각함",
+          "weakness": "가산/불가산 명사 구분 혼동",
+          "studyAdvice": "규정, 절차를 뜻하는 protocol은 가산명사로 복수형이 가능함을 숙지하세요."
+        }
+      }
+    },
+    {
+      "number": 5,
+      "type": "어법",
+      "content": "Not until the final act of the play ________ the true identity of the mysterious benefactor.\n① the audience discovered\n② did the audience discover\n③ the audience did discover\n④ discovered the audience",
+      "options": {
+        "A": "the audience discovered",
+        "B": "did the audience discover",
+        "C": "the audience did discover",
+        "D": "discovered the audience"
+      },
+      "correct": "B",
+      "explanation": "부정어구(Not until ~)가 문장 맨 앞으로 강조되어 도치된 구문입니다. 부정어 도치 시에는 의문문 어순(조동사/be동사/do동사 + 주어 + 동사원형)을 따라야 하므로 'did the audience discover'가 정답입니다.",
+      "testedSkill": "부정어 강조 도치 (Inversion)",
+      "difficulty": "중",
+      "wrongChoiceAnalysis": {
+        "A": {
+          "whyChosen": "도치 규��을 모르고 평서문 어순을 고름",
+          "weakness": "부정어 도치 구문 인식 불가",
+          "studyAdvice": "문두에 부정어(Not, Never, Hardly 등)가 올 때 발생하는 주어-동사 도치 규칙을 학습하세요."
+        },
+        "C": {
+          "whyChosen": "강조의 do를 주어 뒤에 쓰는 것으로 착각함",
+          "weakness": "도치 어순(조동사+주어+동사)에 대한 정확한 이해 부족",
+          "studyAdvice": "도치 시 조동사(did)가 반드시 주어 앞으로 나가야 함을 명심하세요."
+        },
+        "D": {
+          "whyChosen": "일반동사 자체가 주어 앞으로 나가는 것으로 착각함",
+          "weakness": "일반동사 도치와 be동사 도치의 차이 혼동",
+          "studyAdvice": "일반동사는 직접 도치되지 않고 do/does/did를 사용한다는 점을 복습하세요."
+        }
+      }
+    },
+    {
+      "number": 6,
+      "type": "어법",
+      "content": "The ancient manuscript, ________ in a forgotten monastery, is believed to contain secrets lost for centuries.\n① that was unearthed\n② having unearthed\n③ unearthed\n④ which unearthed",
+      "options": {
+        "A": "that was unearthed",
+        "B": "having unearthed",
+        "C": "unearthed",
+        "D": "which unearthed"
+      },
+      "correct": "C",
+      "explanation": "명사(The ancient manuscript) 뒤에서 수식하는 분사구문 자리입니다. 원고가 '발굴되는' 수동의 의미이므로 과거분사 unearthed가 적절합니다. (which was unearthed에서 주격관계대명사+be동사가 생략된 형태)",
+      "testedSkill": "분사의 능동/수동 구별 및 후치 수식",
+      "difficulty": "중",
+      "wrongChoiceAnalysis": {
+        "A": {
+          "whyChosen": "관계대명사절로 수식하려 했으나 콤마 제약을 모름",
+          "weakness": "관계대명사 that의 계속적 용법 불가 규칙 모름",
+          "studyAdvice": "콤마(,) 뒤에는 관계대명사 that을 쓸 수 없다는 기본 규칙을 암기하세요."
+        },
+        "B": {
+          "whyChosen": "완료 분사구문을 써야 한다고 착각함",
+          "weakness": "분사의 능동/수동태 구별 부족 (having p.p는 능동)",
+          "studyAdvice": "목적어가 없으므로 수동형 분사(p.p 또는 having been p.p)가 필요함을 학습하세요."
+        },
+        "D": {
+          "whyChosen": "관계대명사 which를 썼으나 태(수동태)를 틀림",
+          "weakness": "관계사절 내 동사의 태(능동/수동) 일치 부족",
+          "studyAdvice": "which was unearthed가 되어야 문법적으로 맞음을 확인하세요."
+        }
+      }
+    },
+    {
+      "number": 7,
+      "type": "어법",
+      "content": "The professor recommended that the student ________ her thesis to focus on a more specific aspect of sociolinguistics.\n① revises\n② to revise\n③ revise\n④ has revised",
+      "options": {
+        "A": "revises",
+        "B": "to revise",
+        "C": "revise",
+        "D": "has revised"
+      },
+      "correct": "C",
+      "explanation": "제안, 요구, 주장, 명령을 나타내는 당위성 동사(recommend) 뒤의 that절에서는 '(should) + 동사원형'을 사용합니다. 주어가 3인칭 단수(the student)이더라도 동사원형인 revise를 써야 합니다.",
+      "testedSkill": "당위성 동사 뒤 that절의 동사원형",
+      "difficulty": "하",
+      "wrongChoiceAnalysis": {
+        "A": {
+          "whyChosen": "주어가 3인칭 단수(the student)이므로 현재형 -s를 붙임",
+          "weakness": "당위성 동사 구문의 예외적 수일치 규칙 모름",
+          "studyAdvice": "suggest, recommend, insist 등의 동사 뒤 that절에는 should가 생략되어 동사원형이 온다는 것을 암기하��요."
+        },
+        "B": {
+          "whyChosen": "recommend A to B 구조와 혼동하여 that절 안에 to부정사를 씀",
+          "weakness": "접속사 that절 내부의 동사 형태 이해 부족",
+          "studyAdvice": "that절 안에는 반드시 주어와 정동사가 와야 함을 복습하세요."
+        },
+        "D": {
+          "whyChosen": "시제를 현재완료로 써야 한다고 착각함",
+          "weakness": "당위성 구문의 시제 일치 예외 규칙 모름",
+          "studyAdvice": "당위성을 나타낼 때는 시제와 무관하게 동사원형을 쓴다는 점을 명심하세요."
+        }
+      }
+    },
+    {
+      "number": 8,
+      "type": "어법",
+      "content": "The more he practiced, ________ he became at articulating his complex ideas to a general audience.\n① the more adept\n② so much adept\n③ as adept as\n④ more adept than",
+      "options": {
+        "A": "the more adept",
+        "B": "so much adept",
+        "C": "as adept as",
+        "D": "more adept than"
+      },
+      "correct": "A",
+      "explanation": "'~하면 할수록, 더욱 ~하다'라는 의미의 'The 비교급 ~, the 비교급 ~' 구문입니다. 앞 절에 The more가 있으므로 뒤 절에도 the + 비교급 형태인 the more adept가 와야 합니다.",
+      "testedSkill": "The 비교급, the 비교급 구문",
+      "difficulty": "하",
+      "wrongChoiceAnalysis": {
+        "B": {
+          "whyChosen": "단순히 강조하는 부사구를 고름",
+          "weakness": "상관 접속사/비교 구문의 짝맞추기 부족",
+          "studyAdvice": "The 비교급 구문은 반드시 양쪽 모두 The + 비교급 형태를 취해야 함을 학습하세요."
+        },
+        "C": {
+          "whyChosen": "원급 비교(as ~ as) 구문과 혼동함",
+          "weakness": "비교급과 원급 구문의 혼용",
+          "studyAdvice": "앞에 The 비교급이 나왔으므로 뒤에도 원급이 아닌 비교급이 와야 함을 기억하세요."
+        },
+        "D": {
+          "whyChosen": "비교급은 맞으나 정관사 the를 누락함",
+          "weakness": "The 비교급 구문에서 the의 필수성 간과",
+          "studyAdvice": "이 구문에서는 비교급 앞에 반드시 the를 붙여야 함을 복습하세요."
+        }
+      }
+    },
+    {
+      "number": 9,
+      "type": "어법",
+      "content": "It is imperative that a solution ________ before the situation escalates further.\n① is found\n② be found\n③ to be found\n④ has been found",
+      "options": {
+        "A": "is found",
+        "B": "be found",
+        "C": "to be found",
+        "D": "has been found"
+      },
+      "correct": "B",
+      "explanation": "이성적 판단이나 당위성을 나타내는 형용사(imperative, essential, necessary 등) 뒤의 that절에는 '(should) + 동사원형'이 옵니다. 주어(a solution)가 발견되는 수동의 의미이므로 (should) be found가 정답입니다.",
+      "testedSkill": "당위성 형용사 뒤 that절의 동사원형 및 수동태",
+      "difficulty": "중",
+      "wrongChoiceAnalysis": {
+        "A": {
+          "whyChosen": "일반적인 수동태 시제 일치로 생각하여 is를 고름",
+          "weakness": "당위성 형용사 구문의 동사원형 규칙 모름",
+          "studyAdvice": "It is imperative/essential that S + (should) + 동사원형 구문을 암기하세요."
+        },
+        "C": {
+          "whyChosen": "that절 안에 동사 대신 to부정사를 씀",
+          "weakness": "접속사 that절의 구조(주어+동사) 이해 부족",
+          "studyAdvice": "that절은 명사절이므로 내부에 반드시 정동사가 필요함을 복습하세요."
+        },
+        "D": {
+          "whyChosen": "완료 시제가 필요하다고 착각함",
+          "weakness": "당위성 구문에서의 시제 예외 규칙 모름",
+          "studyAdvice": "당위성을 나타내는 that절에서는 시제 일치를 시키지 않고 동사원형을 씁니다."
+        }
+      }
+    },
+    {
+      "number": 10,
+      "type": "어법",
+      "content": "________ for his contributions to quantum physics, he remained a humble and accessible mentor to his students.\n① To be celebrated worldwide\n② While celebrating worldwide\n③ Celebrated worldwide\n④ Having celebrated worldwide",
+      "options": {
+        "A": "To be celebrated worldwide",
+        "B": "While celebrating worldwide",
+        "C": "Celebrated worldwide",
+        "D": "Having celebrated worldwide"
+      },
+      "correct": "C",
+      "explanation": "분사구문 문제입니다. 주절의 주어(he)가 양자 물리학에 대한 공헌으로 전 세계적으로 '칭송받는' 수동의 대상이므로 과거분사 Celebrated로 시작해야 합니다. (Being celebrated에서 Being이 생략된 형태)",
+      "testedSkill": "분사구문의 능동/수동 구별",
+      "difficulty": "중",
+      "wrongChoiceAnalysis": {
+        "A": {
+          "whyChosen": "목적을 나타내는 to부정사 부사적 용법으로 착각함",
+          "weakness": "문맥상 원인/이유를 나타내는 분사구문과 목적의 to부정사 구별 부족",
+          "studyAdvice": "문맥상 '~하기 위해서'가 아니라 '~로 칭송받았기 때문에/받음에도'의 의미이므로 분사구문이 적절함을 파악하세요."
+        },
+        "B": {
+          "whyChosen": "접속사 While 뒤에 능동형 분사를 씀",
+          "weakness": "분사구문의 태(능동/수동) 파악 오류",
+          "studyAdvice": "주어(he)가 축하를 '하는' 것이 아니라 '받는' 것이므로 수동형이 필요합니다."
+        },
+        "D": {
+          "whyChosen": "완료 분사구문을 썼으나 능동태를 고름",
+          "weakness": "완료 분사구문의 수동태(Having been p.p) 형태 모름",
+          "studyAdvice": "Having p.p는 능동이므로 목적어가 필요합니다. 수동의 의미를 가지려면 Having been celebrated가 되어야 합니다."
+        }
+      }
+    },
+    {
+      "number": 11,
+      "type": "어휘",
+      "content": "The lawyer's trenchant analysis of the case exposed the flaws in the prosecution's argument.\n① vague\n② lengthy\n③ incisive\n④ biased",
+      "options": {
+        "A": "vague",
+        "B": "lengthy",
+        "C": "incisive",
+        "D": "biased"
+      },
+      "correct": "C",
+      "explanation": "trenchant는 '정곡을 찌르는, 날카로운, 예리한'이라는 뜻으로, 동의어는 incisive(예리한, 기민한)입니다. 변호사의 '날카로운' 분석이 검찰 주장의 결함을 폭로했다는 문맥입니다.",
+      "testedSkill": "고급 어휘 동의어 파악",
+      "difficulty": "상",
+      "wrongChoiceAnalysis": {
+        "A": {
+          "whyChosen": "단어 뜻을 모르고 반대 의미를 유추함",
+          "weakness": "trenchant 어휘 지식 부족",
+          "studyAdvice": "vague는 '모호한'이라는 뜻으로 문맥상 결함을 폭로할 수 없습니다. 편입 빈출 고급 어휘를 암기하세요."
+        },
+        "B": {
+          "whyChosen": "분석이 길었다고 임의로 추론함",
+          "weakness": "문맥 추론 오류 및 어휘력 부족",
+          "studyAdvice": "lengthy(긴, 장황한)는 논리적 결함을 짚어내는 핵심 단어가 아닙니다."
+        },
+        "D": {
+          "whyChosen": "변호사라는 단어에서 편향적일 것이라 추측함",
+          "weakness": "주관적 배경지식 개입",
+          "studyAdvice": "biased(편향된)는 긍정적 결과(결함 폭로)를 이끌어내는 분석의 수식어로 부적절합니다."
+        }
+      }
+    },
+    {
+      "number": 12,
+      "type": "어휘",
+      "content": "The CEO's profligate spending habits were a major cause of the company's financial downturn.\n① secretive\n② extravagant\n③ cautious\n④ strategic",
+      "options": {
+        "A": "secretive",
+        "B": "extravagant",
+        "C": "cautious",
+        "D": "strategic"
+      },
+      "correct": "B",
+      "explanation": "profligate는 '낭비하는, 방탕한'이라는 뜻으로, 동의어는 extravagant(낭비하는, 사치스러운)입니다. 재정 악화(financial downturn)의 원인이 되는 소비 습관이므로 '낭비하는'이 문맥상 맞습니다.",
+      "testedSkill": "문맥을 통한 동의어 추론",
+      "difficulty": "상",
+      "wrongChoiceAnalysis": {
+        "A": {
+          "whyChosen": "비밀스러운 지출이 문제였을 것이라 상상함",
+          "weakness": "profligate 어휘 지식 부족",
+          "studyAdvice": "secretive(비밀스러운)보다 재정 악화의 직접적 원인인 '낭비'와 관련된 단어를 찾아야 합니다."
+        },
+        "C": {
+          "whyChosen": "단어 뜻을 반대로 유추함",
+          "weakness": "문맥 논리(인과관계) 파악 실패",
+          "studyAdvice": "cautious(조심스러운) 소비 습관은 재정 악화의 원인이 될 수 없습니다."
+        },
+        "D": {
+          "whyChosen": "CEO의 행동이므로 전략적일 것이라 착각함",
+          "weakness": "부정적 결과(downturn)와 어울리지 않는 긍정적 어휘 선택",
+          "studyAdvice": "strategic(전략적인)은 긍정적 뉘앙스이므로 문맥에 맞지 않습니다."
+        }
+      }
+    },
+    {
+      "number": 13,
+      "type": "어휘",
+      "content": "The diplomat's adroit handling of the sensitive negotiations prevented a major international crisis.\n① clumsy\n② forceful\n③ skillful\n④ hesitant",
+      "options": {
+        "A": "clumsy",
+        "B": "forceful",
+        "C": "skillful",
+        "D": "hesitant"
+      },
+      "correct": "C",
+      "explanation": "adroit는 '능숙한, 기민한'이라는 뜻으로, 동의어는 skillful입니다. 국제 위기를 예방(prevented)했으므로 긍정적이고 능숙한 대처가 문맥에 부합합니다.",
+      "testedSkill": "어휘 동의어 및 문맥 파악",
+      "difficulty": "중",
+      "wrongChoiceAnalysis": {
+        "A": {
+          "whyChosen": "단어 뜻을 반대로 앎",
+          "weakness": "adroit의 반의어(clumsy: 서투른) 선택",
+          "studyAdvice": "위기를 막았다는 긍정적 결과와 호응하는 단어를 골라야 합니다."
+        },
+        "B": {
+          "whyChosen": "외교관이 강압적으로 해결했을 것이라 추측함",
+          "weakness": "adroit의 정확한 의미 모름",
+          "studyAdvice": "forceful(강압적인)은 민감한 협상(sensitive negotiations)을 다루는 방식으로는 위기를 초래할 수 있습니다."
+        },
+        "D": {
+          "whyChosen": "신중하게 주저하며 대처했다고 착각함",
+          "weakness": "hesitant(주저하는)의 부정적 뉘앙스 파악 못함",
+          "studyAdvice": "성공적인 협상 결과를 이끈 단어로는 능숙함(skillful)이 가장 적절합니다."
+        }
+      }
+    },
+    {
+      "number": 14,
+      "type": "어휘",
+      "content": "The artist's work was a pastiche of various historical styles, yet it felt entirely original.\n① a critique\n② a rejection\n③ a forerunner\n④ a medley",
+      "options": {
+        "A": "a critique",
+        "B": "a rejection",
+        "C": "a forerunner",
+        "D": "a medley"
+      },
+      "correct": "D",
+      "explanation": "pastiche는 '혼합물, 모방 작품'이라는 뜻으로, 여러 스타일이 섞�� 있다는 문맥에서 a medley(혼합물, 메들리)와 가장 의미가 가깝습니다.",
+      "testedSkill": "고급 어휘 동의어 파악",
+      "difficulty": "상",
+      "wrongChoiceAnalysis": {
+        "A": {
+          "whyChosen": "다양한 스타일을 비판한 작품이라 유추함",
+          "weakness": "pastiche 어휘 지식 부족",
+          "studyAdvice": "critique(비평)는 여러 스타일을 섞어 만든 작품이라는 문맥과 거리가 있습니다."
+        },
+        "B": {
+          "whyChosen": "역사적 스타일을 거부하여 독창적이라 생각함",
+          "weakness": "of various historical styles와의 연결성 간과",
+          "studyAdvice": "rejection(거부) of styles라면 그 스타일들이 작품 안에 존재하지 않아야 합니다."
+        },
+        "C": {
+          "whyChosen": "독창적(original)이라는 말에 꽂혀 선구자라 생각함",
+          "weakness": "forerunner(선구자)의 쓰임새 오류",
+          "studyAdvice": "작품 자체가 여러 스타일의 '선구자'가 될 수는 없습니다."
+        }
+      }
+    },
+    {
+      "number": 15,
+      "type": "어휘",
+      "content": "The ancient philosopher's teachings were often abstruse, requiring deep contemplation to fully grasp.\n① straightforward\n② inspiring\n③ popular\n④ recondite",
+      "options": {
+        "A": "straightforward",
+        "B": "inspiring",
+        "C": "popular",
+        "D": "recondite"
+      },
+      "correct": "D",
+      "explanation": "abstruse는 '난해한, 심오한'이라는 뜻입니다. 뒤에 '완전히 이해하기 위해 깊은 사색이 필요하다'는 문맥이 이를 뒷받침합니다. 동의어는 recondite(많이 알려지지 않은, 난해한)입니다.",
+      "testedSkill": "문맥을 통한 고급 어휘 동의어 추론",
+      "difficulty": "상",
+      "wrongChoiceAnalysis": {
+        "A": {
+          "whyChosen": "단어 뜻을 반대로 유추함",
+          "weakness": "abstruse의 반의어(straightforward: 간단한, 쉬운) 선택",
+          "studyAdvice": "깊은 사색이 필요하다는 단서(requiring deep contemplation)와 모순됩니다."
+        },
+        "B": {
+          "whyChosen": "철학자의 가르침이므로 영감을 줄 것이라 생각함",
+          "weakness": "문맥적 단서 무시 및 주관적 추론",
+          "studyAdvice": "inspiring(영감을 주는)은 이해하기 어렵다는 뒤의 설명과 직접적 연관이 없습니다."
+        },
+        "C": {
+          "whyChosen": "유명��� 철학자일 것이라 임의로 추측함",
+          "weakness": "popular(대중적인)의 의미와 문맥 불일치",
+          "studyAdvice": "대중적이라면 깊은 사색 없이도 쉽게 이해되어야 합니다."
+        }
+      }
+    },
+    {
+      "number": 16,
+      "type": "어휘",
+      "content": "The documentary did not shy away from the ________ realities of life in the war-torn region.\n① grim\n② serene\n③ trivial\n④ jubilant",
+      "options": {
+        "A": "grim",
+        "B": "serene",
+        "C": "trivial",
+        "D": "jubilant"
+      },
+      "correct": "A",
+      "explanation": "전쟁으로 짓밟힌 지역(war-torn region)의 현실은 암울하고 끔찍할 것입니다. 따라서 '암울한, 엄숙한'을 뜻하는 grim이 가장 적절합니다.",
+      "testedSkill": "문맥에 맞는 형용사 추론",
+      "difficulty": "하",
+      "wrongChoiceAnalysis": {
+        "B": {
+          "whyChosen": "단어 뜻을 모르고 찍음",
+          "weakness": "serene(평온한) 어휘 지식 부족",
+          "studyAdvice": "전쟁 지역의 현실과 평온함은 모순됩니다. 기본 형용사 어휘를 보충하세요."
+        },
+        "C": {
+          "whyChosen": "사소한 현실을 다뤘다고 생각함",
+          "weakness": "trivial(사소한)과 전쟁의 심각성 간의 괴리 파악 못함",
+          "studyAdvice": "다큐멘터리가 피하지 않고(did not shy away) 다룰 정도면 사소한 문제가 아닙니다."
+        },
+        "D": {
+          "whyChosen": "단어 뜻을 완전히 반대로 앎",
+          "weakness": "jubilant(환희에 찬) 어휘 지식 부족",
+          "studyAdvice": "전쟁 지역의 현실이 환희에 찰 수는 없습니다."
+        }
+      }
+    },
+    {
+      "number": 17,
+      "type": "어휘",
+      "content": "Despite the initial setbacks, the research team remained ________ and eventually achieved a breakthrough.\n① disheartened\n② resolute\n③ ambivalent\n④ complacent",
+      "options": {
+        "A": "disheartened",
+        "B": "resolute",
+        "C": "ambivalent",
+        "D": "complacent"
+      },
+      "correct": "B",
+      "explanation": "Despite(~에도 불구하고)라는 역접 전치사와 eventually achieved a breakthrough(결국 돌파구를 마련했다)라는 긍정적 결과를 통해, 초기 차질(setbacks)에도 불구하고 팀이 '단호한, 결연한(resolute)' 태도를 유지했음을 알 수 있습니다.",
+      "testedSkill": "역접 논리 및 문맥상 어휘 추론",
+      "difficulty": "중",
+      "wrongChoiceAnalysis": {
+        "A": {
+          "whyChosen": "차질(setbacks) 때문에 낙담했을 것이라 생각함",
+          "weakness": "Despite가 이끄는 역접 논리 파악 실패",
+          "studyAdvice": "초기 차질에도 '불구하고' 성공했으므로 빈칸에는 긍정적/의지적인 단어가 와야 합니다."
+        },
+        "C": {
+          "whyChosen": "어려움 속에서 갈등했을 것이라 추측함",
+          "weakness": "ambivalent(양가감정의, 불확실한)의 정확한 뉘앙스 모름",
+          "studyAdvice": "불확실한 태도로는 돌파구를 달성하기 어렵습니다."
+        },
+        "D": {
+          "whyChosen": "단어 뜻을 긍정적으로 오해함",
+          "weakness": "complacent(현실에 안주하는, 자기만족적인)의 부정적 의미 모름",
+          "studyAdvice": "complacent는 발전을 저해하는 태도이므로 돌파구 달성과 어울리지 않습니다."
+        }
+      }
+    },
+    {
+      "number": 18,
+      "type": "어휘",
+      "content": "The novel is a ________ tale of love and loss, set against the backdrop of the Russian Revolution.\n① poignant\n② hilarious\n③ mundane\n④ technical",
+      "options": {
+        "A": "poignant",
+        "B": "hilarious",
+        "C": "mundane",
+        "D": "technical"
+      },
+      "correct": "A",
+      "explanation": "사랑과 상실(love and loss), 그리고 러시아 혁명이라는 비극적 배경을 고려할 때, 소설은 '가슴 아픈, 감동적인(poignant)' 이야기일 것입니다.",
+      "testedSkill": "문맥적 분위기에 맞는 형용사 추론",
+      "difficulty": "중",
+      "wrongChoiceAnalysis": {
+        "B": {
+          "whyChosen": "단어 뜻을 모르고 찍음",
+          "weakness": "hilarious(매우 우스운) 어휘 지식 부족",
+          "studyAdvice": "상실(loss)과 혁명이라는 무거운 주제와 코미디는 어울리지 않습니다."
+        },
+        "C": {
+          "whyChosen": "일상적인 이야기라 생각함",
+          "weakness": "mundane(평범한, 일상적인)과 혁명 배경의 괴리",
+          "studyAdvice": "러시아 혁명이라는 거대한 역사적 배경 속의 사랑과 상실은 평범하기 어렵습니다."
+        },
+        "D": {
+          "whyChosen": "소설의 기법이 기술적이라 착각함",
+          "weakness": "technical(기술적인)과 문학적 감상의 부조화",
+          "studyAdvice": "사랑과 상실의 이야기를 수식하기에는 감정을 나타내는 형용사가 적절합니다."
+        }
+      }
+    },
+    {
+      "number": 19,
+      "type": "어휘",
+      "content": "The government's attempts to ________ the rebellion through force only served to strengthen the resolve of the insurgents.\n① foment\n② condone\n③ quell\n④ laud",
+      "options": {
+        "A": "foment",
+        "B": "condone",
+        "C": "quell",
+        "D": "laud"
+      },
+      "correct": "C",
+      "explanation": "정부가 무력(through force)을 사용하여 반란(rebellion)을 '진압하다(quell)'하려고 시도했으나 오히려 반군을 강화시켰다는 문맥입니다.",
+      "testedSkill": "동사 어휘 및 문맥 추론",
+      "difficulty": "중",
+      "wrongChoiceAnalysis": {
+        "A": {
+          "whyChosen": "단어 뜻을 반대로 앎",
+          "weakness": "foment(조장하다, 선동하다) 어휘 지식 부족",
+          "studyAdvice": "정부가 무력으로 반란을 선동한다는 것은 논리적으로 맞지 않습니다."
+        },
+        "B": {
+          "whyChosen": "무력으로 용서했다고 착각함",
+          "weakness": "condone(용납하다, 묵과하다)과 through force의 모순",
+          "studyAdvice": "무력을 사용하는 것은 묵과하는 행위가 아닙니다."
+        },
+        "D": {
+          "whyChosen": "단어 뜻을 모름",
+          "weakness": "laud(칭찬하다) 어휘 지식 부족",
+          "studyAdvice": "정부가 반란을 무력으로 칭찬할 수는 없습니다."
+        }
+      }
+    },
+    {
+      "number": 20,
+      "type": "어휘",
+      "content": "His speech was filled with platitudes and empty rhetoric, lacking any ________ insight or original thought.\n① substantive\n② derivative\n③ superficial\n④ contentious",
+      "options": {
+        "A": "substantive",
+        "B": "derivative",
+        "C": "superficial",
+        "D": "contentious"
+      },
+      "correct": "A",
+      "explanation": "연설이 진부한 말(platitudes)과 공허한 수사(empty rhetoric)로 가득 차 있다고 했으므로, 결여된(lacking) 것은 '실질적인(substantive)' 통찰력입니다.",
+      "testedSkill": "대조 논리를 통한 어휘 추론",
+      "difficulty": "중",
+      "wrongChoiceAnalysis": {
+        "B": {
+          "whyChosen": "독창적(original)의 반대말을 고름",
+          "weakness": "lacking의 부정 논리 파악 실패",
+          "studyAdvice": "lacking 뒤에는 긍정적인 단어가 와야 합니다. derivative(파생적인, 새롭지 않은)가 부족하다는 것은 말이 안 됩니다."
+        },
+        "C": {
+          "whyChosen": "empty와 비슷한 단어를 고름",
+          "weakness": "lacking의 부정 논리 파악 실패",
+          "studyAdvice": "superficial(피상적인) 통찰력이 부족한 것이 아니라, 피상적인 말로 가득 찬 것입니다."
+        },
+        "D": {
+          "whyChosen": "논쟁적인 통찰력이 없다고 생각함",
+          "weakness": "contentious(논쟁을 초래하는)와 문맥의 부조화",
+          "studyAdvice": "진부함(platitudes)과 대비되는 것은 실질적이고 깊이 있는 내용입니다."
+        }
+      }
+    },
+    {
+      "number": 21,
+      "type": "장문독해",
+      "content": "The concept of 'biomimicry'—innovation inspired by nature—is gaining significant traction in fields ranging from engineering to materials science. Rather than viewing nature as a resource to be plundered, biomimicry sees it as a mentor. For instance, the aerodynamic design of Japan's Shinkansen bullet train was modeled on the beak of a kingfisher, allowing it to exit tunnels without creating a loud sonic boom. Similarly, Velcro was invented after a Swiss engineer observed how burdock seeds clung to his dog's fur. These examples highlight a fundamental shift in design philosophy: solving human problems by emulating the time-tested patterns and strategies of the natural world.\n\nWhat is the main purpose of the passage?\n① To criticize the exploitation of natural resources.\n② To provide a historical account of the Shinkansen train.\n③ To introduce and illustrate the concept of biomimicry.\n④ To compare the efficiency of natural and man-made designs.",
+      "options": {
+        "A": "To criticize the exploitation of natural resources.",
+        "B": "To provide a historical account of the Shinkansen train.",
+        "C": "To introduce and illustrate the concept of biomimicry.",
+        "D": "To compare the efficiency of natural and man-made designs."
+      },
+      "correct": "C",
+      "explanation": "이 글은 첫 문장에서 '생체모방(biomimicry)'의 개념을 소개하고, 신칸센과 벨크로라는 구체적인 예시를 통해 이 개념이 어떻게 인간의 문제를 해결하는지 설명(illustrate)하고 있습니다. 따라서 글의 주된 목적은 생체모방 개념의 소개와 예증입니다.",
+      "testedSkill": "글의 주제 및 목적 파악",
+      "difficulty": "하",
+      "wrongChoiceAnalysis": {
+        "A": {
+          "whyChosen": "자연을 약탈할 자원으로 보지 않는다는 문장에 꽂힘",
+          "weakness": "지엽적 세부사항을 전체 주제로 착각",
+          "studyAdvice": "도입부의 배경 설명(자연 착취 비판)이 글 전체의 핵심 목적은 아님을 구분하는 연습을 하세요."
+        },
+        "B": {
+          "whyChosen": "신칸센 예시가 인상 깊어서 고름",
+          "weakness": "예시와 주제의 혼동",
+          "studyAdvice": "신칸센은 생체모방을 설명하기 위한 하나의 예시일 뿐, 글의 목적이 될 수 없습니다."
+        },
+        "D": {
+          "whyChosen": "자연과 인간의 디자인을 비교한다고 생각함",
+          "weakness": "글의 전개 방식 오해",
+          "studyAdvice": "글은 자연의 디자인을 '모방'하여 인간의 문제를 해결한다는 것이지, 둘의 효율성을 '비교'하는 것이 아닙니다."
+        }
+      }
+    },
+    {
+      "number": 22,
+      "type": "장문독해",
+      "content": "The concept of 'biomimicry'—innovation inspired by nature—is gaining significant traction in fields ranging from engineering to materials science. Rather than viewing nature as a resource to be plundered, biomimicry sees it as a mentor. For instance, the aerodynamic design of Japan's Shinkansen bullet train was modeled on the beak of a kingfisher, allowing it to exit tunnels without creating a loud sonic boom. Similarly, Velcro was invented after a Swiss engineer observed how burdock seeds clung to his dog's fur. These examples highlight a fundamental shift in design philosophy: solving human problems by emulating the time-tested patterns and strategies of the natural world.\n\nThe author mentions Velcro to ________.\n① show the limitations of biomimicry\n② provide an example of a successful nature-inspired invention\n③ discuss the challenges of materials science\n④ explain a complex engineering principle",
+      "options": {
+        "A": "show the limitations of biomimicry",
+        "B": "provide an example of a successful nature-inspired invention",
+        "C": "discuss the challenges of materials science",
+        "D": "explain a complex engineering principle"
+      },
+      "correct": "B",
+      "explanation": "저자는 신칸센에 이어 'Similarly(마찬가지로)'라는 연결어를 사용하여 벨크로(Velcro)를 언급합니다. 이는 자연(우엉 씨앗)에서 영감을 얻어 성공적으로 발명된 생체모방의 또 다른 예시를 제공하기 위함입니다.",
+      "testedSkill": "세부 정보 및 예시의 기능 파악",
+      "difficulty": "하",
+      "wrongChoiceAnalysis": {
+        "A": {
+          "whyChosen": "생체모방의 한계를 지적하는 글이라 오해함",
+          "weakness": "글의 긍정적 논조 파악 실패",
+          "studyAdvice": "글 전체가 생체모방의 유용성을 강조하고 있으므로 한계를 보여준다는 선택지는 오답입니다."
+        },
+        "C": {
+          "whyChosen": "첫 문장의 materials science를 보고 연결지음",
+          "weakness": "단어 맞추기식 독해",
+          "studyAdvice": "벨크로가 재료 과학의 '도전 과제'를 논하기 위해 쓰인 것이 아니라 '성공 사례'로 쓰였음을 파악하세요."
+        },
+        "D": {
+          "whyChosen": "엔지니어가 발명했다는 내용 때문에 고름",
+          "weakness": "예시의 구체적 목적 파악 부족",
+          "studyAdvice": "벨크로 발명 과정은 복잡한 공학 원리를 설명하기 위함이 아니라 자연 모방의 단순한 예시입니다."
+        }
+      }
+    },
+    {
+      "number": 23,
+      "type": "장문독해",
+      "content": "The Stoic philosophy of ancient Greece and Rome offers a compelling framework for navigating the complexities of modern life. At its core, Stoicism teaches the development of self-control and fortitude as a means of overcoming destructive emotions. The philosophy proposes that while we cannot control external events, we can control our responses to them. This dichotomy between what is within our control (our thoughts, judgments, and actions) and what is not (external events, the actions of others) is central to Stoic practice. By focusing our energy on what we can control, we can achieve a state of 'apatheia,' or tranquility, free from overwhelming anxiety and emotional turmoil. It is not about suppressing emotion, but rather about transforming it through rational thought and perspective.\n\nAccording to the passage, what is the primary goal of Stoicism?\n① To eliminate all emotions.\n② To gain control over external events.\n③ To achieve a state of inner peace and resilience.\n④ To predict and prepare for future adversities.",
+      "options": {
+        "A": "To eliminate all emotions.",
+        "B": "To gain control over external events.",
+        "C": "To achieve a state of inner peace and resilience.",
+        "D": "To predict and prepare for future adversities."
+      },
+      "correct": "C",
+      "explanation": "지문에서 스토아 철학의 목표는 통제할 수 있는 것에 에너지를 집중함으로써 압도적인 불안과 감정적 혼란으로부터 자유로운 평온의 상태('apatheia,' or tranquility)를 달성하는 것이라고 명시하고 있습니다. 이는 내면의 평화와 회복력(inner peace and resilience)을 의미합니다.",
+      "testedSkill": "세부 정보 및 핵심 목표 파악",
+      "difficulty": "중",
+      "wrongChoiceAnalysis": {
+        "A": {
+          "whyChosen": "감정을 극복한다는 내용을 감정 제거로 오해함",
+          "weakness": "마지막 문장(It is not about suppressing emotion...) 독해 누락",
+          "studyAdvice": "지문에서 명시적으로 부정한 내용(감정 억압/제거가 아님)을 정답으로 고르지 않도록 주의하세요."
+        },
+        "B": {
+          "whyChosen": "통제(control)라는 단어에 집중함",
+          "weakness": "통제 대상에 대한 오독",
+          "studyAdvice": "지문은 외부 사건(external events)은 통제할 수 '없다'고 분명히 밝히고 있습니다."
+        },
+        "D": {
+          "whyChosen": "미래의 역경을 대비하는 철학일 것이라 상상함",
+          "weakness": "지문에 없는 내용 추론",
+          "studyAdvice": "미래 예측에 대한 언급은 지문에 없습니다. 본문에 근거하여 답을 찾으세요."
+        }
+      }
+    },
+    {
+      "number": 24,
+      "type": "장문독해",
+      "content": "The Stoic philosophy of ancient Greece and Rome offers a compelling framework for navigating the complexities of modern life. At its core, Stoicism teaches the development of self-control and fortitude as a means of overcoming destructive emotions. The philosophy proposes that while we cannot control external events, we can control our responses to them. This dichotomy between what is within our control (our thoughts, judgments, and actions) and what is not (external events, the actions of others) is central to Stoic practice. By focusing our energy on what we can control, we can achieve a state of 'apatheia,' or tranquility, free from overwhelming anxiety and emotional turmoil. It is not about suppressing emotion, but rather about transforming it through rational thought and perspective.\n\nWhich of the following is NOT within a person's control, according to Stoic philosophy?\n① One's opinion about a political event.\n② The outcome of a job interview.\n③ The decision to act with integrity.\n④ One's judgment of another person's character.",
+      "options": {
+        "A": "One's opinion about a political event.",
+        "B": "The outcome of a job interview.",
+        "C": "The decision to act with integrity.",
+        "D": "One's judgment of another person's character."
+      },
+      "correct": "B",
+      "explanation": "지문에 따르면 통제할 수 없는 것(what is not within our control)은 '외부 사건(external events)과 타인의 행동'입니다. 면접의 결과(The outcome of a job interview)는 면접관(타인)의 결정과 외부 상황에 달려 있으므로 개인이 통제할 수 없는 외부 사건에 해당합니다. 반면 의견, 결정, 판단은 통제 가능한 내면적 요소입니다.",
+      "testedSkill": "세부 정보의 구체적 상황 적용 및 추론",
+      "difficulty": "중",
+      "wrongChoiceAnalysis": {
+        "A": {
+          "whyChosen": "정치적 사건은 통제 불가라고 생각함",
+          "weakness": "사건 자체와 사건에 대한 '의견(opinion)'의 구분 실패",
+          "studyAdvice": "정치적 사건 자체는 통제 불가지만, 그에 대한 나의 '의견(thoughts)'은 통제 가능합니다."
+        },
+        "C": {
+          "whyChosen": "정직하게 행동하는 것이 어렵다고 생각함",
+          "weakness": "지문의 분류 기준(thoughts, judgments, actions) 적용 실패",
+          "studyAdvice": "행동(actions)과 결정(decision)은 지문에서 명시한 통제 가능한 영역입니다."
+        },
+        "D": {
+          "whyChosen": "타인의 성격은 통제 불가라고 생각함",
+          "weakness": "타인의 성격과 나의 '판단(judgment)'의 구분 실패",
+          "studyAdvice": "타인 자체는 통제 불��지만, 타인에 대한 나의 '판단'은 내 통제 하에 있습니다."
+        }
+      }
+    },
+    {
+      "number": 25,
+      "type": "장문독해",
+      "content": "The Stoic philosophy of ancient Greece and Rome offers a compelling framework for navigating the complexities of modern life. At its core, Stoicism teaches the development of self-control and fortitude as a means of overcoming destructive emotions. The philosophy proposes that while we cannot control external events, we can control our responses to them. This dichotomy between what is within our control (our thoughts, judgments, and actions) and what is not (external events, the actions of others) is central to Stoic practice. By focusing our energy on what we can control, we can achieve a state of 'apatheia,' or tranquility, free from overwhelming anxiety and emotional turmoil. It is not about suppressing emotion, but rather about transforming it through rational thought and perspective.\n\nThe word \"dichotomy\" in the passage is closest in meaning to ________.\n① harmony\n② confusion\n③ division\n④ similarity",
+      "options": {
+        "A": "harmony",
+        "B": "confusion",
+        "C": "division",
+        "D": "similarity"
+      },
+      "correct": "C",
+      "explanation": "문맥상 '통제할 수 있는 것'과 '통제할 수 없는 것' 사이의 뚜렷한 구분이나 양분을 설명하고 있습니다. dichotomy는 '이분법, 양분'이라는 뜻이므로 division(분할, 구분)과 가장 의미가 가깝습니다.",
+      "testedSkill": "문맥상 어휘 의미 파악",
+      "difficulty": "중",
+      "wrongChoiceAnalysis": {
+        "A": {
+          "whyChosen": "평온(tranquility)이라는 단어 때문에 조화를 떠올림",
+          "weakness": "해당 단어가 수식하는 문장 구조 파악 실패",
+          "studyAdvice": "dichotomy는 between A and B 구조와 쓰여 두 가지의 대립/구분을 나타냅니다."
+        },
+        "B": {
+          "whyChosen": "단어 뜻을 모르고 혼란스러울 것이라 찍음",
+          "weakness": "dichotomy 어휘 지식 부족",
+          "studyAdvice": "접두사 di-(둘)를 통해 두 개로 나뉜다는 뉘앙스를 유추하는 연습을 하세요."
+        },
+        "D": {
+          "whyChosen": "두 가지가 비슷하다고 착각함",
+          "weakness": "통제 가능한 것과 불가능한 것의 대조적 관계 파악 실패",
+          "studyAdvice": "문맥상 두 개념은 완전히 반대되는 것이므로 유사성(similarity)은 오답입니다."
+        }
+      }
+    },
+    {
+      "number": 26,
+      "type": "장문독해",
+      "content": "The rise of the \"gig economy\" represents one of the most significant transformations in the labor market in decades. Characterized by short-term contracts and freelance work as opposed to permanent jobs, it offers both unprecedented flexibility and profound instability. Proponents argue that this model empowers workers, allowing them to be their own bosses, set their own hours, and pursue a variety of interests. For companies, it provides a nimble workforce that can scale up or down as needed, reducing the costs associated with traditional employment, such as benefits and payroll taxes.\nHowever, critics paint a much bleaker picture. They contend that the gig economy erodes worker protections, leading to a precarious existence without the safety nets of sick pay, retirement plans, or health insurance. The intense competition on digital platforms can drive down wages, and the lack of a traditional workplace isolates individuals, hindering the formation of unions and collective bargaining efforts. As this economic model continues to expand, the debate intensifies over how to balance its innovative potential with the fundamental need for worker security.\n\nWhat is the primary purpose of the passage?\n① To advocate for the expansion of the gig economy.\n② To provide a step-by-step guide to becoming a freelance worker.\n③ To criticize companies for exploiting their workers.\n④ To present a balanced overview of the gig economy's pros and cons.",
+      "options": {
+        "A": "To advocate for the expansion of the gig economy.",
+        "B": "To provide a step-by-step guide to becoming a freelance worker.",
+        "C": "To criticize companies for exploiting their workers.",
+        "D": "To present a balanced overview of the gig economy's pros and cons."
+      },
+      "correct": "D",
+      "explanation": "첫 번째 문단에서는 긱 경제의 장점(Proponents argue~)을, 두 번째 문단에서는 단점(However, critics paint~)을 다루고 있으며, 마지막 문장에서 이 둘 사이의 균형(balance)에 대한 논쟁을 언급합니다. 따라서 긱 경제의 장단점을 균형 있게 개괄하는 것이 글의 목적입니다.",
+      "testedSkill": "글의 목적 및 전체 구조 파악",
+      "difficulty": "중",
+      "wrongChoiceAnalysis": {
+        "A": {
+          "whyChosen": "첫 문단의 긍정적 내용만 기억함",
+          "weakness": "글의 후반부 역접(However) 논리 무시",
+          "studyAdvice": "글 전체의 구조를 파악할 때 특정 문단에만 치우치지 말고 전체적인 흐름을 보세요."
+        },
+        "B": {
+          "whyChosen": "프리랜서라는 단어만 보고 실용서로 착각함",
+          "weakness": "글의 장르 및 목적 파악 실패",
+          "studyAdvice": "이 글은 경제 현상에 대한 분석글이지 가이드북이 아닙니다."
+        },
+        "C": {
+          "whyChosen": "두 번째 문단의 비판적 내용에 깊이 공감함",
+          "weakness": "글쓴이의 객관적 태도를 주관적 비판으로 오해",
+          "studyAdvice": "저자는 비평가들(critics)의 의견을 전달할 뿐, 기업을 직접적으로 비난하는 것이 주 목적이 아닙니다."
+        }
+      }
+    },
+    {
+      "number": 27,
+      "type": "장문독해",
+      "content": "The rise of the \"gig economy\" represents one of the most significant transformations in the labor market in decades. Characterized by short-term contracts and freelance work as opposed to permanent jobs, it offers both unprecedented flexibility and profound instability. Proponents argue that this model empowers workers, allowing them to be their own bosses, set their own hours, and pursue a variety of interests. For companies, it provides a nimble workforce that can scale up or down as needed, reducing the costs associated with traditional employment, such as benefits and payroll taxes.\nHowever, critics paint a much bleaker picture. They contend that the gig economy erodes worker protections, leading to a precarious existence without the safety nets of sick pay, retirement plans, or health insurance. The intense competition on digital platforms can drive down wages, and the lack of a traditional workplace isolates individuals, hindering the formation of unions and collective bargaining efforts. As this economic model continues to expand, the debate intensifies over how to balance its innovative potential with the fundamental need for worker security.\n\nAccording to the passage, which of the following is a benefit of the gig economy for workers?\n① Guaranteed long-term income.\n② Comprehensive health insurance.\n③ Greater autonomy over their work schedule.\n④ Strong support from labor unions.",
+      "options": {
+        "A": "Guaranteed long-term income.",
+        "B": "Comprehensive health insurance.",
+        "C": "Greater autonomy over their work schedule.",
+        "D": "Strong support from labor unions."
+      },
+      "correct": "C",
+      "explanation": "첫 번째 문단에서 긱 경제 지지자들은 노동자들이 스스로 상사가 되고 '자신의 근무 시간을 설정(set their own hours)'할 수 있게 해준다고 주장합니다. 이는 작업 일정에 대한 더 큰 자율성(Greater autonomy over their work schedule)을 의미합니다.",
+      "testedSkill": "세부 정보 파악 (장점)",
+      "difficulty": "하",
+      "wrongChoiceAnalysis": {
+        "A": {
+          "whyChosen": "경제 모델이므로 수입이 보장될 것이라 착각함",
+          "weakness": "지문 내용과 반대되는 추론",
+          "studyAdvice": "지문에서 긱 경제는 '단기 계약(short-term contracts)'과 '불안정성(instability)'을 특징으로 한다고 명시했습니다."
+        },
+        "B": {
+          "whyChosen": "건강 보험이 제공될 것이라 상상함",
+          "weakness": "비판점(단점)을 장점으로 오인",
+          "studyAdvice": "두 번째 문단에서 건강 보험(health insurance) 같은 안전망이 '없다(without)'고 비판하고 있습니다."
+        },
+        "D": {
+          "whyChosen": "노동조합이 노동자를 도울 것이라 생각함",
+          "weakness": "비판점(단점)을 장점으로 오인",
+          "studyAdvice": "지문은 긱 경제가 노동조합 결성을 '방해한다(hindering the formation of unions)'고 명시했습니다."
+        }
+      }
+    },
+    {
+      "number": 28,
+      "type": "장문독해",
+      "content": "The rise of the \"gig economy\" represents one of the most significant transformations in the labor market in decades. Characterized by short-term contracts and freelance work as opposed to permanent jobs, it offers both unprecedented flexibility and profound instability. Proponents argue that this model empowers workers, allowing them to be their own bosses, set their own hours, and pursue a variety of interests. For companies, it provides a nimble workforce that can scale up or down as needed, reducing the costs associated with traditional employment, such as benefits and payroll taxes.\nHowever, critics paint a much bleaker picture. They contend that the gig economy erodes worker protections, leading to a precarious existence without the safety nets of sick pay, retirement plans, or health insurance. The intense competition on digital platforms can drive down wages, and the lack of a traditional workplace isolates individuals, hindering the formation of unions and collective bargaining efforts. As this economic model continues to expand, the debate intensifies over how to balance its innovative potential with the fundamental need for worker security.\n\nThe word \"precarious\" in the second paragraph is closest in meaning to ________.\n① profitable\n② liberated\n③ uncertain\n④ collaborative",
+      "options": {
+        "A": "profitable",
+        "B": "liberated",
+        "C": "uncertain",
+        "D": "collaborative"
+      },
+      "correct": "C",
+      "explanation": "precarious는 '불안정한, 위태로운'이라는 뜻입니다. 문맥상 병가, 퇴직 연금, 건강 보험 같은 안전망이 없는(without the safety nets) 삶을 묘사하므로, uncertain(불확실한, 불안정한)이 가장 적절한 동의어입니다.",
+      "testedSkill": "문맥상 어휘 의미 파악",
+      "difficulty": "중",
+      "wrongChoiceAnalysis": {
+        "A": {
+          "whyChosen": "긱 경제가 돈이 될 것이라 생각함",
+          "weakness": "두 번째 문단의 부정적 논조 파악 실패",
+          "studyAdvice": "critics(비평가들)가 묘사하는 bleaker picture(더 암울한 상황)에 해당하는 부정적 단어를 찾아야 합니다."
+        },
+        "B": {
+          "whyChosen": "자유로운 프리랜서의 삶을 떠올림",
+          "weakness": "첫 문단의 장점과 두 번째 문단의 단점 혼동",
+          "studyAdvice": "liberated(해방된)는 첫 문단의 장점에 어울리는 단어이며, 안전망이 없는 위태로운 상황과는 맞지 않습니다."
+        },
+        "D": {
+          "whyChosen": "플랫폼에서 협력할 것이라 상상함",
+          "weakness": "지문의 구체적 내용(isolates individuals)과 모순",
+          "studyAdvice": "지문은 오히려 개인을 고립시킨다(isolates)고 했으므로 협력적(collaborative)이라는 단어는 오답입니다."
+        }
+      }
+    },
+    {
+      "number": 29,
+      "type": "장문독해",
+      "content": "The rise of the \"gig economy\" represents one of the most significant transformations in the labor market in decades. Characterized by short-term contracts and freelance work as opposed to permanent jobs, it offers both unprecedented flexibility and profound instability. Proponents argue that this model empowers workers, allowing them to be their own bosses, set their own hours, and pursue a variety of interests. For companies, it provides a nimble workforce that can scale up or down as needed, reducing the costs associated with traditional employment, such as benefits and payroll taxes.\nHowever, critics paint a much bleaker picture. They contend that the gig economy erodes worker protections, leading to a precarious existence without the safety nets of sick pay, retirement plans, or health insurance. The intense competition on digital platforms can drive down wages, and the lack of a traditional workplace isolates individuals, hindering the formation of unions and collective bargaining efforts. As this economic model continues to expand, the debate intensifies over how to balance its innovative potential with the fundamental need for worker security.\n\nIt can be inferred from the passage that a major point of contention regarding the gig economy is ________.\n① the technology used by digital platforms\n② the quality of services provided by gig workers\n③ the conflict between worker flexibility and long-term security\n④ the environmental impact of increased freelance work",
+      "options": {
+        "A": "the technology used by digital platforms",
+        "B": "the quality of services provided by gig workers",
+        "C": "the conflict between worker flexibility and long-term security",
+        "D": "the environmental impact of increased freelance work"
+      },
+      "correct": "C",
+      "explanation": "마지막 문장에서 긱 경제의 '혁신적 잠재력(유연성 등)'과 '노동자 안보(worker security)에 대한 근본적 필요성' 사이의 균형을 맞추는 방법에 대한 논쟁이 격렬해지고 있다고 했습니다. 따라서 주요 쟁점은 노동자의 유연성과 장기적 안정성 사이의 갈등입니다.",
+      "testedSkill": "핵심 쟁점 추론",
+      "difficulty": "중",
+      "wrongChoiceAnalysis": {
+        "A": {
+          "whyChosen": "디지털 플랫폼이라는 단어에 꽂힘",
+          "weakness": "지엽적 단어를 핵심 쟁점으로 착각",
+          "studyAdvice": "플랫폼 기술 자체에 대한 논쟁이 아니라, 그 플랫폼이 야기하는 노동 환경의 변화가 쟁점입니다."
+        },
+        "B": {
+          "whyChosen": "서비스 품질이 문제일 것이라 상상함",
+          "weakness": "지문에 언급되지 않은 내용 추론",
+          "studyAdvice": "긱 노동자가 제공하는 서비스의 질에 대한 언급은 지문에 전혀 없습니다."
+        },
+        "D": {
+          "whyChosen": "환경 문제를 다루는 글이라 착각함",
+          "weakness": "지문에 언급되지 않은 내용 추론",
+          "studyAdvice": "환경적 영향(environmental impact)은 본문에서 다루지 않은 외부 지식입니다."
+        }
+      }
+    },
+    {
+      "number": 30,
+      "type": "장문독해",
+      "content": "Dark matter and dark energy are two of the greatest enigmas in modern cosmology. Together, they are believed to constitute about 95% of the universe's total mass-energy content, yet their nature remains a complete mystery. Dark matter, which accounts for about 27% of the universe, does not emit, absorb, or reflect any electromagnetic radiation, making it invisible to our telescopes. Its existence is inferred only through its gravitational effects on visible matter, such as the rotation of galaxies and the bending of light from distant objects. Without the extra gravitational pull of dark matter, galaxies would fly apart.\nDark energy, on the other hand, is even more perplexing. It makes up roughly 68% of the universe and is hypothesized to be the force driving the accelerated expansion of the cosmos. While Albert Einstein's theory of general relativity allows for the existence of such a repulsive force, its origin and properties are unknown. Scientists are exploring various theories, from a property of space itself (the \"cosmological constant\") to new, undiscovered energy fields. Unraveling the secrets of dark matter and dark energy is a paramount goal of 21st-century physics, as it holds the key to understanding the ultimate fate of our universe.\n\nWhat is the main difference between dark matter and dark energy discussed in the passage?\n① Dark matter is visible, while dark energy is not.\n② Dark matter causes gravitational attraction, while dark energy causes cosmic expansion.\n③ Dark matter is a new discovery, while dark energy was predicted by Einstein.\n④ Dark matter constitutes a larger portion of the universe than dark energy.",
+      "options": {
+        "A": "Dark matter is visible, while dark energy is not.",
+        "B": "Dark matter causes gravitational attraction, while dark energy causes cosmic expansion.",
+        "C": "Dark matter is a new discovery, while dark energy was predicted by Einstein.",
+        "D": "Dark matter constitutes a larger portion of the universe than dark energy."
+      },
+      "correct": "B",
+      "explanation": "지문에서 암흑 물질(Dark matter)은 은하를 묶어두는 '중력적 끌어당김(gravitational pull)'을 제공한다고 했고, 암흑 에너지(Dark energy)는 우주의 '가속 팽창을 주도하는 힘(force driving the accelerated expansion)'이라고 설명했습니다. 이것이 두 개념의 가장 핵심적인 기능적 차이입니다.",
+      "testedSkill": "두 대상의 핵심 차이점 비교 및 세부 정보 파악",
+      "difficulty": "중",
+      "wrongChoiceAnalysis": {
+        "A": {
+          "whyChosen": "암흑 물질이 가시적 물질에 영향을 준다는 내용을 오독함",
+          "weakness": "세부 정보 오독 (invisible을 visible로 착각)",
+          "studyAdvice": "지문에서 암흑 물질은 망원경에 보이지 않는다(invisible to our telescopes)고 명시했습니다."
+        },
+        "C": {
+          "whyChosen": "아인슈타인 언급을 보고 암흑 에너지만 오래된 개념이라 생각함",
+          "weakness": "발견 시기에 대한 근거 없는 추론",
+          "studyAdvice": "지문은 아인슈타인의 이론이 암흑 에너지의 존재를 허용한다고 했을 뿐, 암흑 물질이 새로운 발견이라고 비교하지 않았습니다."
+        },
+        "D": {
+          "whyChosen": "비율 수치를 반대로 기억함",
+          "weakness": "수치 정보 파악 오류",
+          "studyAdvice": "지문에서 암흑 물질은 27%, 암흑 에너지는 68%를 차지한다고 했으므로 암흑 에너지가 더 큰 비중을 차지합니다."
+        }
+      }
+    },
+    {
+      "number": 31,
+      "type": "장문독해",
+      "content": "Dark matter and dark energy are two of the greatest enigmas in modern cosmology. Together, they are believed to constitute about 95% of the universe's total mass-energy content, yet their nature remains a complete mystery. Dark matter, which accounts for about 27% of the universe, does not emit, absorb, or reflect any electromagnetic radiation, making it invisible to our telescopes. Its existence is inferred only through its gravitational effects on visible matter, such as the rotation of galaxies and the bending of light from distant objects. Without the extra gravitational pull of dark matter, galaxies would fly apart.\nDark energy, on the other hand, is even more perplexing. It makes up roughly 68% of the universe and is hypothesized to be the force driving the accelerated expansion of the cosmos. While Albert Einstein's theory of general relativity allows for the existence of such a repulsive force, its origin and properties are unknown. Scientists are exploring various theories, from a property of space itself (the \"cosmological constant\") to new, undiscovered energy fields. Unraveling the secrets of dark matter and dark energy is a paramount goal of 21st-century physics, as it holds the key to understanding the ultimate fate of our universe.\n\nHow do scientists know that dark matter exists?\n① By directly observing it with powerful telescopes.\n② By detecting the radiation it emits.\n③ By observing its gravitational influence on visible objects.\n�� By creating it in particle accelerators.",
+      "options": {
+        "A": "By directly observing it with powerful telescopes.",
+        "B": "By detecting the radiation it emits.",
+        "C": "By observing its gravitational influence on visible objects.",
+        "D": "By creating it in particle accelerators."
+      },
+      "correct": "C",
+      "explanation": "지문에서 암흑 물질의 존재는 '가시적 물질에 미치는 중력적 효과(gravitational effects on visible matter)를 통해서만 추론된다(inferred only through)'고 명시하고 있습니다.",
+      "testedSkill": "세부 정보 파악",
+      "difficulty": "하",
+      "wrongChoiceAnalysis": {
+        "A": {
+          "whyChosen": "망원경(telescopes)이라는 단어만 보고 고름",
+          "weakness": "부정어(invisible) 간과",
+          "studyAdvice": "지문에서 망원경에 보이지 않는다(invisible to our telescopes)고 명확히 밝혔습니다."
+        },
+        "B": {
+          "whyChosen": "방사선(radiation)이라는 단어만 보고 고름",
+          "weakness": "부정어(does not emit) 간과",
+          "studyAdvice": "지문에서 전자기 복사를 방출하지 않는다(does not emit... radiation)고 했습니다."
+        },
+        "D": {
+          "whyChosen": "입자 가속기에서 만들었을 것이라 상상함",
+          "weakness": "지문에 없는 외부 지식/상상 개입",
+          "studyAdvice": "입자 가속기(particle accelerators)에 대한 언급은 지문에 전혀 없습니다."
+        }
+      }
+    },
+    {
+      "number": 32,
+      "type": "장문독해",
+      "content": "Dark matter and dark energy are two of the greatest enigmas in modern cosmology. Together, they are believed to constitute about 95% of the universe's total mass-energy content, yet their nature remains a complete mystery. Dark matter, which accounts for about 27% of the universe, does not emit, absorb, or reflect any electromagnetic radiation, making it invisible to our telescopes. Its existence is inferred only through its gravitational effects on visible matter, such as the rotation of galaxies and the bending of light from distant objects. Without the extra gravitational pull of dark matter, galaxies would fly apart.\nDark energy, on the other hand, is even more perplexing. It makes up roughly 68% of the universe and is hypothesized to be the force driving the accelerated expansion of the cosmos. While Albert Einstein's theory of general relativity allows for the existence of such a repulsive force, its origin and properties are unknown. Scientists are exploring various theories, from a property of space itself (the \"cosmological constant\") to new, undiscovered energy fields. Unraveling the secrets of dark matter and dark energy is a paramount goal of 21st-century physics, as it holds the key to understanding the ultimate fate of our universe.\n\nThe passage suggests that a universe without dark energy would ________.\n① be expanding at a slower rate or not at all\n② be much smaller than it is today\n③ have no visible matter\n④ be gravitationally unstable",
+      "options": {
+        "A": "be expanding at a slower rate or not at all",
+        "B": "be much smaller than it is today",
+        "C": "have no visible matter",
+        "D": "be gravitationally unstable"
+      },
+      "correct": "A",
+      "explanation": "지문에서 암흑 에너지는 '우주의 가속 팽창을 주도하는 힘(force driving the accelerated expansion)'이라고 가설이 세워져 있습니다. 따라서 이 힘이 없다면 우주는 더 느리게 팽창하거나 팽창하지 않을 것이라고 논리적으로 추론할 수 있습니다.",
+      "testedSkill": "인과 관계를 바탕으로 한 논리적 추론",
+      "difficulty": "상",
+      "wrongChoiceAnalysis": {
+        "B": {
+          "whyChosen": "팽창하지 않으니 크기가 작을 것이라 단정함",
+          "weakness": "현재 상태와 과거/미래 상태의 혼동",
+          "studyAdvice": "팽창 속도의 문제이지, 현재 우주의 절대적 크기가 작아진다고 단정할 수는 없습니다."
+        },
+        "C": {
+          "whyChosen": "암흑 에너지가 가시적 물질을 만든다고 착각함",
+          "weakness": "암흑 물질과 암흑 에너지의 역할 혼동",
+          "studyAdvice": "가시적 물질에 영향을 주는 것은 암흑 에너지보다는 암흑 물질(중력 효과)과 관련이 깊습니다."
+        },
+        "D": {
+          "whyChosen": "중력적으로 불안정해질 것이라 생각함",
+          "weakness": "암흑 물질과 암흑 에너지의 역할 혼동",
+          "studyAdvice": "중력적 안정성(은하가 흩어지지 않게 함)을 제공하는 것은 암흑 에너지(밀어내는 힘)가 아니라 암흑 물질(끌어당기는 힘)입니다."
+        }
+      }
+    },
+    {
+      "number": 33,
+      "type": "장문독해",
+      "content": "Dark matter and dark energy are two of the greatest enigmas in modern cosmology. Together, they are believed to constitute about 95% of the universe's total mass-energy content, yet their nature remains a complete mystery. Dark matter, which accounts for about 27% of the universe, does not emit, absorb, or reflect any electromagnetic radiation, making it invisible to our telescopes. Its existence is inferred only through its gravitational effects on visible matter, such as the rotation of galaxies and the bending of light from distant objects. Without the extra gravitational pull of dark matter, galaxies would fly apart.\nDark energy, on the other hand, is even more perplexing. It makes up roughly 68% of the universe and is hypothesized to be the force driving the accelerated expansion of the cosmos. While Albert Einstein's theory of general relativity allows for the existence of such a repulsive force, its origin and properties are unknown. Scientists are exploring various theories, from a property of space itself (the \"cosmological constant\") to new, undiscovered energy fields. Unraveling the secrets of dark matter and dark energy is a paramount goal of 21st-century physics, as it holds the key to understanding the ultimate fate of our universe.\n\nThe author describes the quest to understand these phenomena as \"paramount\" because ________.\n① it will allow for interstellar travel\n② it is crucial for determining the future of the cosmos\n③ it will disprove Einstein's theories\n④ it can provide a new source of energy",
+      "options": {
+        "A": "it will allow for interstellar travel",
+        "B": "it is crucial for determining the future of the cosmos",
+        "C": "it will disprove Einstein's theories",
+        "D": "it can provide a new source of energy"
+      },
+      "correct": "B",
+      "explanation": "마지막 문장에서 이 비밀을 푸는 것이 가장 중요한(paramount) 목표인 이유는 '우리 우주의 궁극적인 운명을 이해하는 열쇠를 쥐고 있기 때문(holds the key to understanding the ultimate fate of our universe)'이라고 명시되어 있습니다. 이는 우주의 미래를 결정하는 데 중요하다는 의미입니다.",
+      "testedSkill": "특정 어휘 사용의 이유 및 세부 정보 파악",
+      "difficulty": "하",
+      "wrongChoiceAnalysis": {
+        "A": {
+          "whyChosen": "우주 관련 글이므로 성간 여행이 가능해질 것이라 상상함",
+          "weakness": "지문에 없는 SF적 상상 개입",
+          "studyAdvice": "성간 여행(interstellar travel)에 대한 언급은 지문에 없습니다."
+        },
+        "C": {
+          "whyChosen": "아인슈타인 이론을 반박하기 위함이라 착각함",
+          "weakness": "지문 내용 오독",
+          "studyAdvice": "지문은 아인슈타인의 이론이 암흑 에너지의 존재를 '허용한다(allows for)'고 했지, 반박(disprove)한다고 하지 않았습니다."
+        },
+        "D": {
+          "whyChosen": "에너지라는 단어 때문에 새로운 에너지원이 될 것이라 생각함",
+          "weakness": "과학적 용어(Dark energy)를 일상적 자원(source of energy)으로 오해",
+          "studyAdvice": "암흑 에너지는 우주 팽창의 원동력이지 인간이 사용할 수 있는 새로운 에너지원이라는 언급은 없습니다."
+        }
+      }
+    },
+    {
+      "number": 34,
+      "type": "장문독해",
+      "content": "The placebo effect is a fascinating and powerful demonstration of the mind-body connection. It occurs when a patient experiences real physiological or psychological improvements after receiving a treatment with no active therapeutic element, such as a sugar pill or a saline injection. The key factor is the patient's belief in the treatment's efficacy. This belief can trigger the brain to release endorphins, which are natural painkillers, or modulate neurotransmitter levels, leading to reduced symptoms of pain, depression, or Parkinson's disease.\nWhile some once dismissed the placebo effect as imaginary, modern brain imaging techniques have provided concrete evidence of its physiological impact. Studies have shown that placebos can activate the same brain regions as actual drugs. This has profound implications for medicine. It highlights the critical role of the patient-practitioner relationship, trust, and positive expectations in the healing process. However, it also raises complex ethical questions. Is it acceptable for a doctor to prescribe a placebo? How can researchers design clinical trials that account for the placebo effect without withholding potentially effective treatments from control groups? These questions are central to ongoing debates in medical ethics and research methodology.\n\nWhat is the primary topic of the passage?\n① The history of sugar pills in medicine.\n② The ethical dilemmas of clinical trials.\n③ The nature, evidence, and implications of the placebo effect.\n④ The chemical composition of endorphins.",
+      "options": {
+        "A": "The history of sugar pills in medicine.",
+        "B": "The ethical dilemmas of clinical trials.",
+        "C": "The nature, evidence, and implications of the placebo effect.",
+        "D": "The chemical composition of endorphins."
+      },
+      "correct": "C",
+      "explanation": "이 글은 플라시보 효과의 본질(1문단: 환자의 믿음과 생리적 변화), 증거(2문단 초반: 뇌 영상 기술), 그리고 의학적/윤리적 시사점(2문단 후반: 의사-환자 관계 및 ���리적 질문)을 포괄적으로 다루고 있습니다.",
+      "testedSkill": "글의 전체 주제 파악",
+      "difficulty": "중",
+      "wrongChoiceAnalysis": {
+        "A": {
+          "whyChosen": "설탕 알약(sugar pill)이라는 단어에 꽂힘",
+          "weakness": "예시를 전체 주제로 착각",
+          "studyAdvice": "설탕 알약은 플라시보의 한 예시일 뿐, 글 전체가 그 역사를 다루고 있지는 않습니다."
+        },
+        "B": {
+          "whyChosen": "마지막 문단의 윤리적 딜레마가 인상 깊었음",
+          "weakness": "글의 일부(후반부) 내용만으로 주제를 한정함",
+          "studyAdvice": "임상 시험의 윤리적 딜레마는 플라시보 효과가 제기하는 여러 시사점 중 하나일 뿐입니다."
+        },
+        "D": {
+          "whyChosen": "엔돌핀(endorphins) 언급을 보고 과학적 분석 글이라 생각함",
+          "weakness": "지엽적 세부사항을 주제로 착각",
+          "studyAdvice": "엔돌핀의 화학적 구성에 대한 설명은 지문에 전혀 등장하지 않습니다."
+        }
+      }
+    },
+    {
+      "number": 35,
+      "type": "장문독해",
+      "content": "The placebo effect is a fascinating and powerful demonstration of the mind-body connection. It occurs when a patient experiences real physiological or psychological improvements after receiving a treatment with no active therapeutic element, such as a sugar pill or a saline injection. The key factor is the patient's belief in the treatment's efficacy. This belief can trigger the brain to release endorphins, which are natural painkillers, or modulate neurotransmitter levels, leading to reduced symptoms of pain, depression, or Parkinson's disease.\nWhile some once dismissed the placebo effect as imaginary, modern brain imaging techniques have provided concrete evidence of its physiological impact. Studies have shown that placebos can activate the same brain regions as actual drugs. This has profound implications for medicine. It highlights the critical role of the patient-practitioner relationship, trust, and positive expectations in the healing process. However, it also raises complex ethical questions. Is it acceptable for a doctor to prescribe a placebo? How can researchers design clinical trials that account for the placebo effect without withholding potentially effective treatments from control groups? These questions are central to ongoing debates in medical ethics and research methodology.\n\nAccording to the passage, the placebo effect is primarily driven by ________.\n① the chemical properties of the placebo\n② the patient's conviction that the treatment will work\n③ the doctor's medical expertise\n④ the release of stress hormones in the brain",
+      "options": {
+        "A": "the chemical properties of the placebo",
+        "B": "the patient's conviction that the treatment will work",
+        "C": "the doctor's medical expertise",
+        "D": "the release of stress hormones in the brain"
+      },
+      "correct": "B",
+      "explanation": "첫 번째 문단에서 플라시보 효과를 일으키는 핵심 요인(key factor)은 '치료의 효능에 대한 환자의 믿음(the patient's belief in the treatment's efficacy)'이라고 명시하고 있습니다. conviction은 belief와 동의어입니다.",
+      "testedSkill": "세부 정보 파악 및 패러프레이징 인식",
+      "difficulty": "하",
+      "wrongChoiceAnalysis": {
+        "A": {
+          "whyChosen": "플라시보 자체에 약효가 있다고 착각함",
+          "weakness": "지문 내용과 정반대의 이해",
+          "studyAdvice": "지문에서 플라시보는 '활성 치료 성분이 없는(no active therapeutic element)' 것이라고 명시했습니다."
+        },
+        "C": {
+          "whyChosen": "의사와의 관계가 중요하다고 해서 의사의 전문성을 고름",
+          "weakness": "핵심 원인(belief)과 부차적 요인(relationship)의 혼동",
+          "studyAdvice": "의사와의 관계는 믿음을 형성하는 데 도움을 줄 뿐, 직접적인 원동력은 환자의 '믿음'입니다."
+        },
+        "D": {
+          "whyChosen": "호르몬 방출이라는 내용이 기억남",
+          "weakness": "세부 정보 오독 (스트레스 호르몬 vs 엔돌핀)",
+          "studyAdvice": "지문에서는 스트레스 호르몬이 아니라 진통제 역할을 하는 엔돌핀(endorphins)이 방출된다고 했습니다."
+        }
+      }
+    },
+    {
+      "number": 36,
+      "type": "장문독해",
+      "content": "The placebo effect is a fascinating and powerful demonstration of the mind-body connection. It occurs when a patient experiences real physiological or psychological improvements after receiving a treatment with no active therapeutic element, such as a sugar pill or a saline injection. The key factor is the patient's belief in the treatment's efficacy. This belief can trigger the brain to release endorphins, which are natural painkillers, or modulate neurotransmitter levels, leading to reduced symptoms of pain, depression, or Parkinson's disease.\nWhile some once dismissed the placebo effect as imaginary, modern brain imaging techniques have provided concrete evidence of its physiological impact. Studies have shown that placebos can activate the same brain regions as actual drugs. This has profound implications for medicine. It highlights the critical role of the patient-practitioner relationship, trust, and positive expectations in the healing process. However, it also raises complex ethical questions. Is it acceptable for a doctor to prescribe a placebo? How can researchers design clinical trials that account for the placebo effect without withholding potentially effective treatments from control groups? These questions are central to ongoing debates in medical ethics and research methodology.\n\nThe passage suggests that modern brain imaging has ________.\n① proven the placebo effect to be purely psychological\n② made it easier to conduct clinical trials\n③ validated the placebo effect as a real physiological phenomenon\n④ revealed that placebos are more effective than actual drugs",
+      "options": {
+        "A": "proven the placebo effect to be purely psychological",
+        "B": "made it easier to conduct clinical trials",
+        "C": "validated the placebo effect as a real physiological phenomenon",
+        "D": "revealed that placebos are more effective than actual drugs"
+      },
+      "correct": "C",
+      "explanation": "두 번째 문단에서 현대 뇌 영상 기술은 플라시보 효과가 상상에 불과하다는 주장을 일축하고, 그것의 '생리적 영향에 대한 구체적인 증거를 제공했다(provided concrete evidence of its physiological impact)'고 설명합니다. 즉, 실제 생리적 현상임을 입증(validated)한 것입니다.",
+      "testedSkill": "세부 정보 파악 및 문맥적 의미 이해",
+      "difficulty": "중",
+      "wrongChoiceAnalysis": {
+        "A": {
+          "whyChosen": "플라시보가 마음의 문제라고만 생각함",
+          "weakness": "지문의 핵심 주장(physiological impact) 파악 실패",
+          "studyAdvice": "지문은 플라시보가 순수하게 심리적인 것(purely psychological)이 아니라 실제 뇌의 생리적 변화를 일으킨다고 강조합니다."
+        },
+        "B": {
+          "whyChosen": "임상 시험(clinical trials) 단어를 보고 연결함",
+          "weakness": "서로 다른 문장의 내용을 부적절하게 연결",
+          "studyAdvice": "뇌 영상 기술이 임상 시험을 더 쉽게 만들었다는 언급은 없습니다. 임상 시험은 윤리적 딜레마 부분에서 언급됩니다."
+        },
+        "D": {
+          "whyChosen": "플라시보가 실제 약과 같은 뇌 부위를 활성화한다는 내��을 과장해서 해석함",
+          "weakness": "비교급(more effective)의 근거 없는 추론",
+          "studyAdvice": "실제 약과 '같은(same)' 뇌 부위를 활성화한다고 했지, 실제 약보다 '더 효과적(more effective)'이라고 하지는 않았습니다."
+        }
+      }
+    },
+    {
+      "number": 37,
+      "type": "장문독해",
+      "content": "The placebo effect is a fascinating and powerful demonstration of the mind-body connection. It occurs when a patient experiences real physiological or psychological improvements after receiving a treatment with no active therapeutic element, such as a sugar pill or a saline injection. The key factor is the patient's belief in the treatment's efficacy. This belief can trigger the brain to release endorphins, which are natural painkillers, or modulate neurotransmitter levels, leading to reduced symptoms of pain, depression, or Parkinson's disease.\nWhile some once dismissed the placebo effect as imaginary, modern brain imaging techniques have provided concrete evidence of its physiological impact. Studies have shown that placebos can activate the same brain regions as actual drugs. This has profound implications for medicine. It highlights the critical role of the patient-practitioner relationship, trust, and positive expectations in the healing process. However, it also raises complex ethical questions. Is it acceptable for a doctor to prescribe a placebo? How can researchers design clinical trials that account for the placebo effect without withholding potentially effective treatments from control groups? These questions are central to ongoing debates in medical ethics and research methodology.\n\nWhich of the following is NOT mentioned as an ethical issue related to the placebo effect?\n① Whether doctors should intentionally deceive patients with placebos.\n② How to manage patient expectations in a clinical setting.\n③ The high cost of manufacturing placebos for research.\n④ How to structure control groups in studies without denying them treatment.",
+      "options": {
+        "A": "Whether doctors should intentionally deceive patients with placebos.",
+        "B": "How to manage patient expectations in a clinical setting.",
+        "C": "The high cost of manufacturing placebos for research.",
+        "D": "How to structure control groups in studies without denying them treatment."
+      },
+      "correct": "C",
+      "explanation": "지문의 마지막 부분에서 제기된 윤리적 질문은 '의사가 플라시보를 처방하는 것이 용인되는가(환자 기만 문제)'와 '대조군에게 잠재적으로 효과적인 치료를 보류하지 ��고 어떻게 임상 시험을 설계할 것인가'입니다. 플라시보 제조의 높은 비용(high cost)에 대한 언급은 지문에 전혀 없습니다.",
+      "testedSkill": "부정 세부 정보 파악 (Not True)",
+      "difficulty": "하",
+      "wrongChoiceAnalysis": {
+        "A": {
+          "whyChosen": "기만(deceive)이라는 단어가 지문에 직접 없어서 고름",
+          "weakness": "의미적 패러프레이징 인식 부족",
+          "studyAdvice": "'의사가 플라시보를 처방하는 것이 용인되는가'라는 질문 자체가 환자에게 가짜 약을 진짜처럼 주는 기만행위에 대한 윤리적 고민을 담고 있습니다."
+        },
+        "B": {
+          "whyChosen": "기대 관리라는 말이 윤리적 문제인지 헷갈림",
+          "weakness": "문맥상 포괄적 의미 파악 부족",
+          "studyAdvice": "환자의 긍정적 기대(positive expectations)가 치유에 중요하다고 했으므로, 이를 임상에서 어떻게 다룰지는 윤리적/방법론적 논의에 포함됩니다."
+        },
+        "D": {
+          "whyChosen": "대조군(control groups) 설계가 윤리적 문제인지 몰랐음",
+          "weakness": "지문에 명시된 질문 독해 누락",
+          "studyAdvice": "지문에서 'without withholding potentially effective treatments from control groups'라고 명확히 윤리적 딜레마로 제시했습니다."
+        }
+      }
+    },
+    {
+      "number": 38,
+      "type": "장문독해",
+      "content": "In literary theory, the concept of the \"unreliable narrator\" refers to a narrator whose credibility has been seriously compromised. This narrator might be naive, mentally unstable, biased, or deliberately deceptive. The use of such a narrator forces readers to question the version of events presented and to actively participate in the construction of the \"true\" story. Instead of passively receiving information, the reader must become a detective, sifting through evidence, identifying inconsistencies, and judging the narrator's motives.\nThis technique creates a profound sense of irony and ambiguity. The gap between the narrator's perception of reality and the reality suggested by the text's subtext is where much of the story's meaning resides. For example, in Kazuo Ishiguro's The Remains of the Day, the butler Stevens narrates his life with a veneer of professional dignity, but the reader gradually pieces together a portrait of a man in deep denial about his personal and political failings. The power of the unreliable narrator lies in this ability to reveal a deeper truth not through direct statement, but through the very fabric of the narrator's flawed and filtered consciousness.\n\nWhat is the main function of an unreliable narrator in a story?\n① To provide a clear and objective account of events.\n② To guide the reader to a simple moral conclusion.\n③ To challenge the reader to critically evaluate the narrative.\n④ To ensure the plot is easy to follow.",
+      "options": {
+        "A": "To provide a clear and objective account of events.",
+        "B": "To guide the reader to a simple moral conclusion.",
+        "C": "To challenge the reader to critically evaluate the narrative.",
+        "D": "To ensure the plot is easy to follow."
+      },
+      "correct": "C",
+      "explanation": "첫 번째 문단에서 신뢰할 수 없는 화자는 독자로 하여금 제시된 사건의 버전에 의문을 제기하고(question), 수동적으로 정보를 받는 대신 탐정처럼 증거를 살피고 모순을 찾아내며 적극적으로 참여하게(actively participate) 만든다고 설명합니다. 이는 독자��� 서사를 비판적으로 평가하도록 도전(challenge)하는 기능입니다.",
+      "testedSkill": "문학적 장치의 핵심 기능 파악",
+      "difficulty": "중",
+      "wrongChoiceAnalysis": {
+        "A": {
+          "whyChosen": "화자(narrator)의 일반적 역할로 착각함",
+          "weakness": "unreliable(신뢰할 수 없는)이라는 핵심 수식어 간과",
+          "studyAdvice": "신뢰할 수 없는 화자는 주관적이고 편향되어 있으므로 명확하고 객관적인(clear and objective) 설명을 제공하지 않습니다."
+        },
+        "B": {
+          "whyChosen": "문학 작품은 교훈을 준다고 생각함",
+          "weakness": "지문에 없는 도덕적 결론 유추",
+          "studyAdvice": "이 기법은 모호성(ambiguity)을 창출하므로 단순한 도덕적 결론(simple moral conclusion)으로 이끌지 않습니다."
+        },
+        "D": {
+          "whyChosen": "독자가 탐정이 된다는 것을 플롯이 재밌고 쉽다는 뜻으로 오해함",
+          "weakness": "독자의 능동적 역할(active participation)의 의미 오독",
+          "studyAdvice": "독자가 증거를 가려내고 모순을 찾아야 하므로 플롯을 따라가기 쉽지(easy to follow) 않습니다."
+        }
+      }
+    },
+    {
+      "number": 39,
+      "type": "장문독해",
+      "content": "In literary theory, the concept of the \"unreliable narrator\" refers to a narrator whose credibility has been seriously compromised. This narrator might be naive, mentally unstable, biased, or deliberately deceptive. The use of such a narrator forces readers to question the version of events presented and to actively participate in the construction of the \"true\" story. Instead of passively receiving information, the reader must become a detective, sifting through evidence, identifying inconsistencies, and judging the narrator's motives.\nThis technique creates a profound sense of irony and ambiguity. The gap between the narrator's perception of reality and the reality suggested by the text's subtext is where much of the story's meaning resides. For example, in Kazuo Ishiguro's The Remains of the Day, the butler Stevens narrates his life with a veneer of professional dignity, but the reader gradually pieces together a portrait of a man in deep denial about his personal and political failings. The power of the unreliable narrator lies in this ability to reveal a deeper truth not through direct statement, but through the very fabric of the narrator's flawed and filtered consciousness.\n\nThe passage uses the example of The Remains of the Day to illustrate ________.\n① how a narrator's self-deception can reveal a deeper truth\n② a story with a simple and trustworthy narrator\n③ the commercial failure of novels with complex themes\n④ a narrator who is intentionally lying to the reader for malicious reasons",
+      "options": {
+        "A": "how a narrator's self-deception can reveal a deeper truth",
+        "B": "a story with a simple and trustworthy narrator",
+        "C": "the commercial failure of novels with complex themes",
+        "D": "a narrator who is intentionally lying to the reader for malicious reasons"
+      },
+      "correct": "A",
+      "explanation": "지문에서 '남아있는 나날'의 화자 스티븐스는 자신의 실패에 대해 '깊은 부정(deep denial)' 상태에 있으며, 독자는 그의 결함 있는 의식을 통해 '더 깊은 진실(deeper truth)'을 발견하게 된다고 설명합니다. 즉, 화자의 자기 기만(self-deception)이 어떻게 진실을 드러내는지를 보여주는 예시입니다.",
+      "testedSkill": "예시의 목적 및 문맥적 의미 파악",
+      "difficulty": "중",
+      "wrongChoiceAnalysis": {
+        "B": {
+          "whyChosen": "집사(butler)라는 직업에서 신뢰감을 느낌",
+          "weakness": "예시가 속한 문단의 핵심 주제(unreliable narrator) 망각",
+          "studyAdvice": "이 예시는 '신뢰할 수 없는 화자'를 설명하기 위한 것이므로 trustworthy(신뢰할 수 있는)는 정반대의 오답입니다."
+        },
+        "C": {
+          "whyChosen": "복잡한 주제의 소설은 안 팔릴 것이라 상상함",
+          "weakness": "지문에 없는 상업적 결과 추론",
+          "studyAdvice": "소설의 상업적 성공이나 실패(commercial failure)에 대한 언급은 지문에 전혀 없습니다."
+        },
+        "D": {
+          "whyChosen": "신뢰할 수 없다는 것을 악의적인 거짓말로만 해석함",
+          "weakness": "화자의 상태(deep denial)에 대한 오독",
+          "studyAdvice": "스티븐스는 악의적으로 거짓말(malicious reasons)을 하는 것이 아니라, 스스로 현실을 부정(denial)하고 있는 자기 기만 상태입니다."
+        }
+      }
+    },
+    {
+      "number": 40,
+      "type": "장문독해",
+      "content": "In literary theory, the concept of the \"unreliable narrator\" refers to a narrator whose credibility has been seriously compromised. This narrator might be naive, mentally unstable, biased, or deliberately deceptive. The use of such a narrator forces readers to question the version of events presented and to actively participate in the construction of the \"true\" story. Instead of passively receiving information, the reader must become a detective, sifting through evidence, identifying inconsistencies, and judging the narrator's motives.\nThis technique creates a profound sense of irony and ambiguity. The gap between the narrator's perception of reality and the reality suggested by the text's subtext is where much of the story's meaning resides. For example, in Kazuo Ishiguro's The Remains of the Day, the butler Stevens narrates his life with a veneer of professional dignity, but the reader gradually pieces together a portrait of a man in deep denial about his personal and political failings. The power of the unreliable narrator lies in this ability to reveal a deeper truth not through direct statement, but through the very fabric of the narrator's flawed and filtered consciousness.\n\nIt can be inferred from the passage that a story with an unreliable narrator often requires ________.\n① a second reading to be fully understood\n② knowledge of the author's personal life\n③ a passive and trusting approach from the reader\n④ a straightforward and linear plot structure",
+      "options": {
+        "A": "a second reading to be fully understood",
+        "B": "knowledge of the author's personal life",
+        "C": "a passive and trusting approach from the reader",
+        "D": "a straightforward and linear plot structure"
+      },
+      "correct": "A",
+      "explanation": "지문에서 독자는 수동적으로 정보를 받아들이는 대신 '탐정'이 되어 증거를 살피고 모순을 찾아내며 서서히 진실을 조각맞춤(gradually pieces together)해야 한다고 했습니다. 이러한 적극적이고 분석적인 독서 과정은 표면적 이야기 이면의 진실을 파악하기 위해 종종 재독(a second reading)이나 깊이 있는 반복 읽기를 요구한다는 것을 논리적으로 추론할 수 있습니다.",
+      "testedSkill": "독자의 역할에 기반한 논리적 추론",
+      "difficulty": "상",
+      "wrongChoiceAnalysis": {
+        "B": {
+          "whyChosen": "작가의 의도를 알아야 한다고 생각함",
+          "weakness": "지문에 근거하지 않은 외부 지식 개입",
+          "studyAdvice": "지문은 텍스트 내부의 모순과 화자의 동기를 분석하라고 했지, 작가의 사생활(personal life)을 알라고 하지 않았습니다."
+        },
+        "C": {
+          "whyChosen": "소설은 그냥 믿고 읽어야 한다고 생각함",
+          "weakness": "지문의 핵심 주장과 정반대의 선택",
+          "studyAdvice": "지문에서 명시적으로 '수동적으로 정보를 받는 대신(Instead of passively receiving information)'이라고 했습니다."
+        },
+        "D": {
+          "whyChosen": "화자가 복잡하니 플롯이라도 단순해야 한다고 상상함",
+          "weakness": "아이러니와 모호성(ambiguity)의 특징 무시",
+          "studyAdvice": "모순을 찾고 이면의 진실을 재구성해야 하는 이야기는 단순하고 직선적인(straightforward and linear) 플롯을 가지기 어렵습니다."
+        }
+      }
+    }
+  ],
+  "generatedAt": "2026-03-08",
+  "generatedBy": "gemini-3.1-pro-preview",
+  "officialAnswers": {
+    "1": "D",
+    "2": "D",
+    "3": "D",
+    "4": "A",
+    "5": "B",
+    "6": "C",
+    "7": "C",
+    "8": "A",
+    "9": "B",
+    "10": "C",
+    "11": "C",
+    "12": "B",
+    "13": "C",
+    "14": "D",
+    "15": "D",
+    "16": "A",
+    "17": "B",
+    "18": "A",
+    "19": "C",
+    "20": "A",
+    "21": "C",
+    "22": "B",
+    "23": "C",
+    "24": "B",
+    "25": "C",
+    "26": "D",
+    "27": "C",
+    "28": "C",
+    "29": "C",
+    "30": "B",
+    "31": "C",
+    "32": "A",
+    "33": "B",
+    "34": "C",
+    "35": "B",
+    "36": "C",
+    "37": "C",
+    "38": "C",
+    "39": "A",
+    "40": "A"
+  }
+}
