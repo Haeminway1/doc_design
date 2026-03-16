@@ -1,0 +1,20 @@
+.xd-callout {
+  margin: var(--xd-space-md) 0 !important;
+  padding: var(--xd-space-sm) var(--xd-space-md) !important;
+  border: var(--xd-rule-regular) solid var(--xd-color-callout-note-line) !important;
+  background: var(--xd-color-callout-note-bg) !important;
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+}
+
+.xd-callout__title {
+  margin: 0 0 var(--xd-space-xs) !important;
+  font-size: var(--xd-text-md) !important;
+  font-weight: 700 !important;
+  color: var(--xd-color-accent-strong) !important;
+}
+
+.xd-callout--warn {
+  border-color: var(--xd-color-callout-warn-line) !important;
+  background: var(--xd-color-callout-warn-bg) !important;
+}

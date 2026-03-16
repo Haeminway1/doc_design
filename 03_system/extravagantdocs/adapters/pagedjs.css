@@ -1,0 +1,72 @@
+.pagedjs_page .xd-page,
+.pagedjs_page .xd-page__sheet {
+  width: auto !important;
+  min-height: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+}
+
+.pagedjs_page .xd-page__header,
+.pagedjs_page .xd-page__footer {
+  display: none !important;
+}
+
+.pagedjs_page .xd-page__body {
+  min-height: auto !important;
+}
+
+@page {
+  size: A4;
+  margin:
+    var(--xd-margin-top)
+    var(--xd-margin-right)
+    var(--xd-margin-bottom)
+    var(--xd-margin-left);
+
+  @top-left {
+    content: string(xd-running-title, first);
+    font-size: var(--xd-header-font-size);
+    color: var(--xd-color-muted);
+    border-bottom: var(--xd-rule-thin) solid var(--xd-color-line);
+    padding-bottom: 2mm;
+    vertical-align: bottom;
+  }
+
+  @top-right {
+    content: string(xd-running-section, first);
+    font-size: var(--xd-header-font-size);
+    color: var(--xd-color-muted);
+    border-bottom: var(--xd-rule-thin) solid var(--xd-color-line);
+    padding-bottom: 2mm;
+    vertical-align: bottom;
+  }
+
+  @bottom-center {
+    content: counter(page);
+    font-size: var(--xd-footer-font-size);
+    color: var(--xd-color-muted);
+    border-top: var(--xd-rule-thin) solid var(--xd-color-line);
+    padding-top: 2mm;
+    vertical-align: top;
+  }
+}
+
+@page :left {
+  margin-left: 17mm;
+  margin-right: 13mm;
+}
+
+@page :right {
+  margin-left: 13mm;
+  margin-right: 17mm;
+}
+
+@page xd-cover {
+  margin: 0;
+}
+
+.xd-cover-page {
+  page: xd-cover;
+}

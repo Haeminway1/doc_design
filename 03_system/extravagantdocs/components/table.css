@@ -1,0 +1,48 @@
+.xd-table-wrap {
+  margin: var(--xd-space-lg) 0 !important;
+}
+
+.xd-table {
+  width: 100% !important;
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+}
+
+.xd-table caption {
+  margin-bottom: var(--xd-space-xs) !important;
+  font-size: var(--xd-text-md) !important;
+  font-weight: 600 !important;
+  text-align: left !important;
+  color: var(--xd-color-ink-soft) !important;
+}
+
+.xd-table thead {
+  display: table-header-group;
+}
+
+.xd-table thead th {
+  padding: var(--xd-space-xs) var(--xd-space-sm) !important;
+  border: var(--xd-rule-thin) solid var(--xd-color-line-strong) !important;
+  background: var(--xd-color-table-head-bg) !important;
+  color: var(--xd-color-accent-strong) !important;
+  font-size: var(--xd-text-md) !important;
+  font-weight: 700 !important;
+  text-align: left !important;
+}
+
+.xd-table tbody tr:nth-child(even) td {
+  background: var(--xd-color-table-band) !important;
+}
+
+.xd-table td {
+  padding: var(--xd-space-xs) var(--xd-space-sm) !important;
+  border: var(--xd-rule-thin) solid var(--xd-color-line) !important;
+  vertical-align: top !important;
+  word-break: keep-all !important;
+}
+
+.xd-table__num {
+  width: 16mm !important;
+  text-align: center !important;
+  font-family: var(--xd-font-latin) !important;
+}

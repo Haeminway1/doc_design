@@ -1,0 +1,162 @@
+# extravagantdocs Changelog
+
+## 2026-03-15
+
+- Finished the next migration wave and brought the remaining textbook families onto non-destructive `-xd` manifests:
+  - `grammar-basic-xd`
+  - `grammar-advanced-xd`
+  - `logic-basic-xd`
+  - `reading-bridge-xd`
+  - `reading-intermediate-xd`
+  - `syntax-bridge-xd`
+- Added standalone `grammar-bridge` chapter migrations so every current chapter-level manifest also has an `extravagantdocs` path:
+  - `grammar-bridge-ch01-xd`
+  - `grammar-bridge-ch03-xd`
+  - `grammar-bridge-ch04-xd`
+  - `grammar-bridge-ch05-xd`
+  - `grammar-bridge-ch06-xd`
+  - `grammar-bridge-ch07-xd`
+  - `grammar-bridge-ch08-xd`
+  - `grammar-bridge-ch09-xd`
+  - `grammar-bridge-ch10-xd`
+  - `grammar-bridge-ch11-xd`
+- Generated paged-native HTML, runtime preview HTML, and paged PDF outputs for each migrated book
+- Hardened migration validation so it matches the actual `extravagantdocs` renderer contract:
+  - `audit-render-integrity.js` now treats every `extravagantdocs` book as `html_src` output
+  - `audit-textbook-source-trace.js` now treats every `extravagantdocs` book as paged-output aware
+  - normalized `grammar-bridge` builds now skip exact source marker matching that would otherwise create false negatives
+- Added a repository-level migration inventory:
+  - new `12-migration-catalog.md`
+- Expanded template and specimen docs so future migrations can reuse the current `exam-paper` path instead of inventing new per-book logic
+- Verified the full current migration set with:
+  - `node 04_scripts/validate-extravagantdocs-migration.js`
+  - result: 22 `extravagantdocs` books, all validation scripts passing
+- Started the first repository-wide visual QA sweep:
+  - improved generic paged cover visibility for `exam-paper` books
+  - added `audit-pdf-page-anomalies.js` to detect suspicious blank interior pages in paged PDFs
+  - recorded the initial `exam-paper` blank interstitial page issue under `docs/incidents/2026-03-15-exam-paper-blank-interstitial-pages.md`
+- Closed the first `exam-paper` paged blank-page blocker:
+  - bare legacy fragments without `.page` wrappers now render through paged-native legacy artifacts instead of falling back to runtime `.page` shells
+  - paged fixed legacy artifacts no longer carry `break-after: page`
+  - paged fixed legacy artifacts no longer use an oversized `297mm` min-height contract that could create blank spill pages
+  - `detailed-answer-section` legacy fragments now render as paged flow sections, which removed the last remaining blank interior page in `syntax-bridge-xd`
+  - representative anomaly audit now passes for both `grammar-basic-xd` and `syntax-bridge-xd`
+  - `explanation-problem` legacy fragments now also render as paged flow sections where appropriate, which stabilized `reading-intermediate-xd`
+  - `audit-pdf-page-anomalies.js` now recognizes answer-grid style numeric/choice pages as content-bearing and no longer flags valid quick-answer pages as suspicious blanks
+  - current repository-wide anomaly sweep passes for all 22 `-xd` books
+- Closed the next frontmatter isolation drift in paged-native:
+  - paged cover artifacts now end with an explicit page break so first body sections cannot share the same physical page
+  - raw legacy TOC fragments now get promoted to paged fixed TOC pages instead of flowing as plain legacy HTML
+  - legacy TOC `.page-number` markup is stripped in paged-native so old page numbers cannot spill into a blank extra page
+  - verified on representative books:
+    - `reading-bridge-xd`
+    - `logic-basic-xd`
+    - `vocab-basic-xd`
+- Added the next reusable TOC migration rule:
+  - semantic legacy TOC fragments can now be upgraded into system TOC markup during build instead of staying as raw legacy HTML
+  - verified on `grammar-advanced-xd`
+  - representative structured-family sweep also revalidated:
+    - `reading-basic-xd`
+    - `syntax-basic-xd`
+    - `grammar-advanced-xd`
+- Closed the next semantic TOC migration gap:
+  - wrapper-less semantic TOC fragments now upgrade correctly even when the source has no `.page-content` shell
+  - inline legacy gradients now sanitize to deterministic solid fallback colors during build instead of leaking non-PDF-safe styling into paged review
+  - verified on:
+    - `grammar-basic-xd`
+    - `logic-basic-xd`
+    - `syntax-bridge-xd`
+  - representative anomaly sweep for that batch now passes cleanly
+- Added a reusable structural QA gate for migrated books:
+  - new `audit-extravagantdocs-structure.js`
+  - validates cover / TOC / opener / quick-answer / detailed-explanation presence and minimum ordering from paged-native HTML
+  - calibrated to ignore `grammar-bridge` endmatter opener copy when checking quick-answer versus detailed-explanation order
+  - current full-catalog run passes for all 22 `-xd` books
+  - wired into `validate-extravagantdocs-migration.js`
+- Added a reusable short-drill layout rule:
+  - `layoutRules.problemColumns`
+  - enables an opt-in two-column problem-set layout for short-stem workbook pages
+  - first enabled on `syntax-basic-xd`
+- Fixed a family-wide `exam-paper` template selector drift:
+  - template CSS had been targeting `.xd-template-exam`, while real paged outputs use `body.style-template-exam-paper`
+  - corrected the selector contract so template-specific opener, vocab intro, answer, and short-drill layout rules now actually apply
+  - revalidated on:
+    - `syntax-basic-xd`
+    - `vocab-basic-xd`
+    - `reading-intermediate-xd`
+- Added reusable reading/vocabulary-family polish rules:
+  - `layoutRules.insertExplanationOpener` can inject a generated opener after the cover for explanation-heavy books
+  - `layoutRules.explanationOpenerTitle` / `layoutRules.explanationOpenerSubtitle` tune that opener copy per book
+  - `vocabulary-set` pages now surface `DAY` and `theme` metadata as a system intro block instead of hiding them in source data
+  - verified on:
+    - `reading-intermediate-xd`
+    - `vocab-basic-xd`
+- Fixed the next shared reading-family drift:
+  - passage-cluster questions now pass through the same `problem--xd` renderer contract as standalone problem sets
+  - reusable problem spacing, gutter, number badge, and choice-list styling was promoted into the shared `exam-paper` template instead of staying trapped in `grammar-bridge` bridge CSS
+  - revalidated on:
+    - `reading-basic-xd`
+    - `reading-bridge-xd`
+- Added a shared flow-answer styling rule for explanation-heavy books:
+  - `explanation-problem` legacy fragments now inherit system number-badge, spacing, and label emphasis in the shared `exam-paper` template
+  - revalidated on:
+    - `reading-intermediate-xd`
+- Hardened PDF anomaly automation against write-read races:
+  - `audit-pdf-page-anomalies.js` now retries transient `pdftotext` trailer/xref/empty-stream failures that can happen when the audit runs immediately after PDF generation
+  - recorded in validation automation docs so the retry behavior is part of the documented contract
+
+## 2026-03-10
+
+- Established the `docs/` architecture under `03_system/extravagantdocs/`
+- Recorded the current layer contracts across Foundation, Page System, Components, Templates, and Renderers
+- Registered `grammar-bridge-ch02-xd` as the first specimen document
+- Recorded the shift away from runtime-to-paged transformation toward a native `paged-native` build path
+- Added explicit content-model, terminology, and integrity docs for `Bridge Grammar`
+- Added non-destructive `grammar-bridge-vol1-xd` and `grammar-bridge-vol2-xd` manifests
+- Standardized `Bridge Grammar` editorial labels to `Chapter` terminology
+- Added an audit script for `Bridge Grammar` editorial/source mapping and surfaced the current `Chapter 4 조동사` problem-set gap
+- Recovered `Chapter 4 조동사` problems `151-200` from the legacy rendered HTML and restored the missing range in `ch01-problems.json`
+- Added `Bridge Grammar` volume canonicalization for `xd` builds:
+  - remove duplicated legacy cover emission
+  - regenerate TOC from legacy source instead of emitting raw legacy TOC pages
+  - keep chapter problems inline but move quick answers and detailed explanations to end matter
+  - normalize chapter prefixes inside legacy headings using editorial chapter metadata
+  - suppress inline highlight styling inside tables
+  - allow tip-only legacy fragments to flow inline in `paged-native`
+- Added chunked paged export for full-volume `grammar-bridge` rendering:
+  - render frontmatter, chapters, and endmatter as separate paged chunks
+  - merge chunk PDFs into a single volume PDF
+  - re-apply continuous page numbering after merge
+  - keep TOC and chapter opener pages as fixed paged artifacts instead of flow blocks
+- Refined `grammar-bridge` paged volume visuals:
+  - remove stray TOC header text in paged PDF
+  - vertically center chapter opener typography
+  - increase top breathing room on problem-set pages
+  - restore fixed-page inner padding in paged-native so TOC and legacy tables no longer push to the right edge
+  - move legacy explanation pages back to paged section rendering so blank spill pages and carried footer lines disappear
+  - remove duplicate small chapter eyebrow above the main explanation section titles
+  - slightly increase default print margins for binding-safe volume output
+  - move paged-native chapter openers to dedicated opener sections instead of fixed `.page` artifacts
+  - split `연습문제` openers into standalone paged chunks so they cannot attach to the bottom of the previous page
+  - add manifest-level `layoutRules.startSubsectionOnNewPage` so subsection transitions can be explicitly forced onto new pages per book
+- Added renderer parity governance:
+  - new `09-render-parity.md`
+  - new incident logging under `docs/incidents/`
+  - review gate now requires parity and incident documentation for renderer regressions
+- Added reusable migration and validation documentation:
+  - new `10-migration-playbook.md`
+  - new `11-validation-automation.md`
+  - review gate now requires running the migration validator before visual approval
+- Switched `grammar-bridge` volume review truth to paged-native:
+  - `bookId.html` now points to paged-native for `grammar-bridge-vol1-xd` and `grammar-bridge-vol2-xd`
+  - runtime remains available as `bookId-runtime.html`
+- Added `syntax-basic-xd` as the first clean structured workbook migration:
+  - non-destructive `-xd` manifest
+  - `exam-paper` template reuse without a bridge
+  - paged-native HTML and PDF outputs generated
+  - new `specimens/syntax-basic.md`
+- Added two more structured `exam-paper` migrations:
+  - `reading-basic-xd`
+  - `vocab-basic-xd`
+  - both generate paged-native HTML and paged PDF successfully
+  - both pass the migration validator after source-trace and output-path audit updates

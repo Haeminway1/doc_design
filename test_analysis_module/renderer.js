@@ -81,12 +81,22 @@ function renderAnalysis(scoringData, aiContent) {
  * @param {number} pointsPerQuestion - 문항당 배점 (기본: 2.5)
  * @returns {Object} scoringData
  */
-function generateScoringData(studentAnswers, officialAnswers, questionTypes, pointsPerQuestion) {
-    pointsPerQuestion = pointsPerQuestion || 2.5;
+function generateScoringData(studentAnswers, officialAnswers, questionTypes, pointsPerQuestionOrExamData) {
+    // 수능형 변동 배점 지원: examData 객체가 넘어오면 pointsMap 사용
+    var examData = null;
+    var defaultPoints = 2.5;
+    if (pointsPerQuestionOrExamData && typeof pointsPerQuestionOrExamData === 'object') {
+        examData = pointsPerQuestionOrExamData;
+        defaultPoints = examData.defaultPoints || examData.pointsPerQuestion || 2.5;
+    } else {
+        defaultPoints = pointsPerQuestionOrExamData || 2.5;
+    }
 
     var results = []; // { number, type, correct, student, mark }
     var correctCount = 0;
     var totalQuestions = 0;
+    var totalScore = 0;
+    var totalPossible = 0;
     var sectionStats = {}; // { sectionName: { correct, total, percentage } }
 
     // 문항 유형별 초기화
@@ -112,26 +122,27 @@ function generateScoringData(studentAnswers, officialAnswers, questionTypes, poi
         var official = officialAnswers[q] || officialAnswers[String(q)] || null;
         var student = studentAnswers[q] || studentAnswers[String(q)] || null;
         var qType = getQuestionTypeFromRegistry(q, questionTypes);
+        var pts = (examData && examData.pointsMap && examData.pointsMap[String(q)])
+            ? examData.pointsMap[String(q)] : defaultPoints;
         var mark;
 
         if (official === null) {
             mark = '-';
-        } else if (student === null) {
-            mark = 'X';
-            totalQuestions++;
-            if (sectionStats[qType]) sectionStats[qType].total++;
-        } else if (student === official) {
-            mark = 'O';
-            correctCount++;
-            totalQuestions++;
-            if (sectionStats[qType]) {
-                sectionStats[qType].correct++;
-                sectionStats[qType].total++;
-            }
         } else {
-            mark = 'X';
             totalQuestions++;
+            totalPossible += pts;
             if (sectionStats[qType]) sectionStats[qType].total++;
+
+            if (student === null) {
+                mark = 'X';
+            } else if (student === official) {
+                mark = 'O';
+                correctCount++;
+                totalScore += pts;
+                if (sectionStats[qType]) sectionStats[qType].correct++;
+            } else {
+                mark = 'X';
+            }
         }
 
         results.push({
@@ -154,9 +165,9 @@ function generateScoringData(studentAnswers, officialAnswers, questionTypes, poi
         results: results,
         correctCount: correctCount,
         totalQuestions: totalQuestions,
-        totalScore: correctCount * pointsPerQuestion,
-        totalPossible: maxQ * pointsPerQuestion,
-        pointsPerQuestion: pointsPerQuestion,
+        totalScore: totalScore,
+        totalPossible: totalPossible,
+        pointsPerQuestion: defaultPoints,
         sectionStats: sectionStats
     };
 }
@@ -328,24 +339,30 @@ function renderSectionPages(html, sectionAnalyses, sectionStats, sectionCount, o
         var sa = sectionAnalyses[i];
         var stats = sectionStats[sa.sectionName] || { correct: 0, total: 0, percentage: 0 };
 
-        // 오답 항목 HTML (대표 문항 최대 4개)
-        var MAX_WRONG_DISPLAY = 4;
         var wrongHtml = '';
         if (sa.wrongItems) {
-            var wrongCount = Math.min(sa.wrongItems.length, MAX_WRONG_DISPLAY);
-            for (var w = 0; w < wrongCount; w++) {
+            for (var w = 0; w < sa.wrongItems.length; w++) {
                 var wi = sa.wrongItems[w];
-                wrongHtml += '<div class="wrong-item">\n' +
-                    '                <span class="q-badge">Q' + wi.number + '</span>\n' +
-                    '                <div class="q-explanation">\n' +
-                    '                    <strong>정답: ' + escapeHtml(wi.correct) + ' / 제출: ' + escapeHtml(wi.student) + '</strong><br>\n' +
-                    '                    ' + escapeHtml(wi.explanation) + '\n' +
-                    '                </div>\n' +
-                    '            </div>\n';
+                if (wi.grouped) {
+                    // 유형별 그룹 표시
+                    wrongHtml += '<div class="wrong-item">\n' +
+                        '                <span class="q-badge">' + escapeHtml(wi.label) + '</span>\n' +
+                        '                <div class="q-explanation">\n' +
+                        '                    ' + escapeHtml(wi.explanation) + '\n' +
+                        '                </div>\n' +
+                        '            </div>\n';
+                } else {
+                    // 개별 문항 표시 (기존 호환)
+                    wrongHtml += '<div class="wrong-item">\n' +
+                        '                <span class="q-badge">Q' + wi.number + '</span>\n' +
+                        '                <div class="q-explanation">\n' +
+                        '                    <strong>정답: ' + escapeHtml(wi.correct) + ' / 제출: ' + escapeHtml(wi.student) + '</strong><br>\n' +
+                        '                    ' + escapeHtml(wi.explanation) + '\n' +
+                        '                </div>\n' +
+                        '            </div>\n';
+                }
             }
-            if (sa.wrongItems.length > MAX_WRONG_DISPLAY) {
-                var remaining = sa.wrongItems.length - MAX_WRONG_DISPLAY;
-                wrongHtml += '<div class="correct-note">외 ' + remaining + '문항 오답 (상세 채점표 참조)</div>\n';
+            if (false) { // 그룹 모드에서는 잔여 표시 불필요
             }
         }
 
@@ -477,7 +494,14 @@ function getQuestionTypeFromRegistry(qNum, questionTypes) {
     if (!questionTypes) return '기타';
     for (var typeName in questionTypes) {
         var info = questionTypes[typeName];
-        if (info.start <= qNum && qNum <= info.end) {
+        // 비연속 범위 (questions 배열) 지원
+        if (info.questions) {
+            if (info.questions.indexOf(qNum) !== -1) {
+                return typeName;
+            }
+        }
+        // 연속 범위 (start/end) 호환
+        else if (info.start <= qNum && qNum <= info.end) {
             return typeName;
         }
     }

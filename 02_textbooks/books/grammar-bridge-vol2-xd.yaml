@@ -1,0 +1,14 @@
+extends: grammar-bridge-vol2.yaml
+book:
+  id: grammar-bridge-vol2-xd
+  styleSystem: extravagantdocs
+  styleTemplate: grammar-bridge
+  styleBridge: grammar-bridge
+  reviewRenderer: paged-native
+  layoutRules:
+    startSubsectionOnNewPage: true
+  coverArt: 05_assets/backgrounds/grammar-bridge-ch02-cover.png
+  cover:
+    label: GRAMMAR BRIDGE
+    mainTitle: Vol. 2
+    edition: CHAPTER 12-20

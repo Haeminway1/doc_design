@@ -1,0 +1,40 @@
+@page {
+  size: A4;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--xd-font-body) !important;
+  font-size: var(--xd-text-body) !important;
+  line-height: var(--xd-leading-body) !important;
+  color: var(--xd-color-ink) !important;
+  background: #e4e2dd !important;
+  counter-reset: xd-page;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}

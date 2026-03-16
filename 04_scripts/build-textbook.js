@@ -28,7 +28,7 @@ html, body {
 }
 
 body {
-  background: var(--color-bg-screen, #E9ECF0);
+  background: #e4e2dd;
 }
 
 #textbook-pages {
@@ -46,15 +46,19 @@ html[data-textbook-ready="true"] #textbook-pages {
 
 .page.page--fixed,
 .page.page--paginated {
-  height: var(--page-height) !important;
-  min-height: var(--page-height) !important;
-  max-height: var(--page-height) !important;
+  height: var(--page-height, var(--xd-page-height, 297mm)) !important;
+  min-height: var(--page-height, var(--xd-page-height, 297mm)) !important;
+  max-height: var(--page-height, var(--xd-page-height, 297mm)) !important;
   overflow: hidden !important;
 }
 
 .page.page--fixed:not(.no-header-footer),
 .page.page--paginated:not(.no-header-footer) {
-  padding: var(--page-padding-y) var(--page-padding-x) !important;
+  padding:
+    var(--page-padding-top, var(--page-padding-y, var(--xd-margin-top, 11mm)))
+    var(--page-padding-right, var(--page-padding-x, var(--xd-margin-right, 14mm)))
+    var(--page-padding-bottom, var(--page-padding-y, var(--xd-margin-bottom, 18mm)))
+    var(--page-padding-left, var(--page-padding-x, var(--xd-margin-left, 14mm))) !important;
 }
 
 .page.page--paginated {
@@ -65,7 +69,11 @@ html[data-textbook-ready="true"] #textbook-pages {
 .page.page--fixed:not(.no-header-footer) .page-content,
 .page.page--paginated .page-content {
   overflow: hidden !important;
-  padding: 2mm 1mm 3mm !important;
+  padding:
+    var(--content-padding-top, var(--xd-content-pad-top, 0.5mm))
+    var(--content-padding-right, var(--xd-content-pad-right, 0.5mm))
+    var(--content-padding-bottom, var(--xd-content-pad-bottom, 2.5mm))
+    var(--content-padding-left, var(--xd-content-pad-left, 0.5mm)) !important;
   flex: 1 1 auto !important;
   min-height: 0 !important;
 }
@@ -78,14 +86,25 @@ html[data-textbook-ready="true"] #textbook-pages {
   margin-top: auto !important;
 }
 
+.page.page--paginated .page-content {
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+.page.page--paginated .page-distribution-spacer {
+  flex: 1 1 0 !important;
+  min-height: 0 !important;
+}
+
 .page.page--runtime-overflow {
   outline: 2px solid #dc2626;
   outline-offset: -2px;
 }
 
 .page-footer .page-footer-text {
-  position: absolute;
-  left: 0;
+  position: static;
+  display: block;
+  text-align: center;
 }
 
 .flow-block {
@@ -111,10 +130,10 @@ html[data-textbook-ready="true"] #textbook-pages {
 }
 
 .chapter-opener-label {
-  font-family: var(--font-eng);
-  font-size: var(--text-xl);
-  color: var(--color-text-muted);
-  margin-bottom: var(--space-md);
+  font-family: var(--font-eng, var(--xd-font-latin));
+  font-size: var(--text-xl, var(--xd-text-xl));
+  color: var(--color-text-muted, var(--xd-color-muted));
+  margin-bottom: var(--space-md, var(--xd-space-md));
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -122,7 +141,7 @@ html[data-textbook-ready="true"] #textbook-pages {
 .chapter-opener-title {
   font-size: 30pt;
   font-weight: 700;
-  color: var(--color-accent-dark);
+  color: var(--color-accent-dark, var(--xd-color-accent-strong));
 }
 `;
 
@@ -173,6 +192,28 @@ const PAGINATION_SCRIPT = `
       return shell;
     }
 
+    function appendBlock(shell, block) {
+      const clone = block.cloneNode(true);
+      const spacer = document.createElement('div');
+      spacer.className = 'page-distribution-spacer';
+      shell.content.appendChild(clone);
+      shell.content.appendChild(spacer);
+      return { clone, spacer };
+    }
+
+    function removeBlock(shell, pair) {
+      if (pair.clone.parentNode === shell.content) {
+        shell.content.removeChild(pair.clone);
+      }
+      if (pair.spacer.parentNode === shell.content) {
+        shell.content.removeChild(pair.spacer);
+      }
+    }
+
+    function shellHasBlocks(shell) {
+      return Boolean(shell.content.querySelector('.flow-block'));
+    }
+
     function pageFits(shell) {
       return shell.page.scrollHeight <= shell.page.clientHeight + 1;
     }
@@ -195,26 +236,23 @@ const PAGINATION_SCRIPT = `
       let shell = createLivePage(section);
 
       blocks.forEach((block) => {
-        let clone = block.cloneNode(true);
-        shell.content.appendChild(clone);
+        let pair = appendBlock(shell, block);
 
         if (pageFits(shell)) {
           return;
         }
 
-        shell.content.removeChild(clone);
+        removeBlock(shell, pair);
 
-        if (!shell.content.children.length) {
-          clone = block.cloneNode(true);
-          shell.content.appendChild(clone);
+        if (!shellHasBlocks(shell)) {
+          pair = appendBlock(shell, block);
           registerOverflow(section, block, shell.page);
           shell = createLivePage(section);
           return;
         }
 
         shell = createLivePage(section);
-        clone = block.cloneNode(true);
-        shell.content.appendChild(clone);
+        pair = appendBlock(shell, block);
 
         if (!pageFits(shell)) {
           registerOverflow(section, block, shell.page);
@@ -222,7 +260,7 @@ const PAGINATION_SCRIPT = `
         }
       });
 
-      if (!shell.content.children.length) {
+      if (!shellHasBlocks(shell)) {
         shell.page.remove();
       }
     });
@@ -256,15 +294,25 @@ function renderInline(value) {
   return String(value);
 }
 
+function decodeBasicHtmlEntities(value) {
+  return String(value ?? '')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&amp;/g, '&');
+}
+
 function renderMultilineText(value) {
   if (value == null) return '';
   const raw = String(value).trim();
   if (!raw) return '';
-  if (/<(p|div|br|ul|ol|table|blockquote|strong|em|span)\b/i.test(raw)) {
-    return raw;
+  const decoded = decodeBasicHtmlEntities(raw);
+  if (/<(p|div|br|ul|ol|table|blockquote|strong|em|span|u|b|i|del|sup|sub)\b/i.test(decoded)) {
+    return decoded;
   }
 
-  return raw
+  return decoded
     .split(/\n{2,}/)
     .map((paragraph) => `<p>${escapeHtml(paragraph).replace(/\n/g, '<br>')}</p>`)
     .join('\n');
@@ -411,9 +459,64 @@ function inferLegacyStyleId(book) {
   return '';
 }
 
-function resolveStyles(book, pages) {
+function usesExtravagantDocs(book) {
+  return book && book.styleSystem === 'extravagantdocs';
+}
+
+function isLayoutRuleEnabled(book, ...ruleNames) {
+  const rules = (book && book.layoutRules) || {};
+  return ruleNames.some((name) => Boolean(rules && rules[name]));
+}
+
+function resolveLegacyTemplatePath(book) {
+  return path.join(SYSTEM_DIR, 'templates', book.theme, `${book.theme}.css`);
+}
+
+function resolveExtravagantTemplatePath(book) {
+  const templateId = book.styleTemplate || 'exam-paper';
+  return path.join(SYSTEM_DIR, 'extravagantdocs', 'templates', templateId, `${templateId}.css`);
+}
+
+function resolveStyles(book, pages, options = {}) {
+  const { runtime = true, adapter = '' } = options;
+  if (usesExtravagantDocs(book)) {
+    const corePath = path.join(SYSTEM_DIR, 'extravagantdocs', 'extravagantdocs.css');
+    const browserPrintPath = path.join(SYSTEM_DIR, 'extravagantdocs', 'adapters', 'browser-print.css');
+    const templatePath = resolveExtravagantTemplatePath(book);
+    const adapterPath = adapter
+      ? path.join(SYSTEM_DIR, 'extravagantdocs', 'adapters', `${adapter}.css`)
+      : '';
+    const bridgeId = book.styleBridge || '';
+    const bridgePath = bridgeId
+      ? path.join(SYSTEM_DIR, 'extravagantdocs', 'bridges', `${bridgeId}.css`)
+      : '';
+
+    if (!fs.existsSync(templatePath)) {
+      throw new Error(`Extravagantdocs template not found: ${templatePath}`);
+    }
+
+    const styleChunks = [
+      resolveImports(corePath),
+      resolveImports(templatePath),
+      resolveImports(browserPrintPath),
+    ];
+
+    if (adapterPath && fs.existsSync(adapterPath)) {
+      styleChunks.push(resolveImports(adapterPath));
+    }
+
+    if (bridgePath && fs.existsSync(bridgePath)) {
+      styleChunks.push(resolveImports(bridgePath));
+    }
+
+    if (runtime) {
+      styleChunks.push(RUNTIME_CSS);
+    }
+    return styleChunks.join('\n\n');
+  }
+
   const corePath = path.join(SYSTEM_DIR, 'vera-core.css');
-  const templatePath = path.join(SYSTEM_DIR, 'templates', book.theme, `${book.theme}.css`);
+  const templatePath = resolveLegacyTemplatePath(book);
   const refreshPath = path.join(SYSTEM_DIR, 'base', 'bridge-refresh.css');
   if (!fs.existsSync(templatePath)) {
     throw new Error(`Template not found: ${templatePath}`);
@@ -436,12 +539,55 @@ function resolveStyles(book, pages) {
     styleChunks.push(resolveImports(refreshPath));
   }
 
-  styleChunks.push(RUNTIME_CSS);
+  if (runtime) {
+    styleChunks.push(RUNTIME_CSS);
+  }
   return styleChunks.join('\n\n');
 }
 
 function readYaml(filePath) {
   return yaml.load(fs.readFileSync(filePath, 'utf8'));
+}
+
+function mergeManifest(baseManifest, overrideManifest) {
+  return {
+    ...baseManifest,
+    ...overrideManifest,
+    book: {
+      ...(baseManifest.book || {}),
+      ...(overrideManifest.book || {}),
+    },
+    pages: Array.isArray(overrideManifest.pages) ? overrideManifest.pages : baseManifest.pages,
+  };
+}
+
+function loadManifest(manifestPath, seen = new Set()) {
+  const resolvedPath = path.resolve(manifestPath);
+  if (seen.has(resolvedPath)) {
+    throw new Error(`Manifest extends cycle detected: ${resolvedPath}`);
+  }
+  seen.add(resolvedPath);
+
+  const manifest = readYaml(resolvedPath);
+  if (!manifest || typeof manifest !== 'object') {
+    throw new Error(`Invalid manifest: ${resolvedPath}`);
+  }
+
+  if (!manifest.extends) {
+    seen.delete(resolvedPath);
+    return manifest;
+  }
+
+  const basePath = path.resolve(path.dirname(resolvedPath), manifest.extends);
+  if (!fileExists(basePath)) {
+    throw new Error(`Extended manifest not found: ${basePath}`);
+  }
+
+  const baseManifest = loadManifest(basePath, seen);
+  const overrideManifest = { ...manifest };
+  delete overrideManifest.extends;
+  seen.delete(resolvedPath);
+  return mergeManifest(baseManifest, overrideManifest);
 }
 
 function readJson(filePath) {
@@ -513,9 +659,19 @@ function validateManifest(manifest, manifestPath) {
     }
   });
 
-  const templatePath = path.join(SYSTEM_DIR, 'templates', manifest.book.theme || '', `${manifest.book.theme || ''}.css`);
-  if (!fileExists(templatePath)) {
-    errors.push(`theme CSS not found: ${templatePath}`);
+  if (usesExtravagantDocs(manifest.book)) {
+    const templatePath = resolveExtravagantTemplatePath(manifest.book);
+    if (!manifest.book.styleTemplate) {
+      errors.push('book.styleTemplate is required when book.styleSystem is extravagantdocs');
+    }
+    if (!fileExists(templatePath)) {
+      errors.push(`extravagantdocs template CSS not found: ${templatePath}`);
+    }
+  } else {
+    const templatePath = resolveLegacyTemplatePath(manifest.book);
+    if (!fileExists(templatePath)) {
+      errors.push(`theme CSS not found: ${templatePath}`);
+    }
   }
 
   manifest.pages.forEach((page, index) => {
@@ -545,6 +701,192 @@ function isCoverLikePage(page) {
   return /(^|\/)cover(?:[-_a-z0-9]*)?\.html$/i.test(page.source.path);
 }
 
+function isGrammarBridgeVolumeBook(book) {
+  return /^grammar-bridge-vol[12](?:-xd)?$/i.test(String(book && book.id || ''));
+}
+
+function isGrammarBridgeXdVolume(book) {
+  return usesExtravagantDocs(book)
+    && book.styleBridge === 'grammar-bridge'
+    && isGrammarBridgeVolumeBook(book);
+}
+
+function isGrammarBridgeStructuralCoverPage(page) {
+  return page
+    && page.kind === 'legacy-page'
+    && /(^|\/)vol[12]-cover\.html$/i.test(String(page.source && page.source.path || ''));
+}
+
+function isGrammarBridgeStructuralTocPage(page) {
+  return page
+    && page.kind === 'legacy-page'
+    && /(^|\/)vol[12]-toc\.html$/i.test(String(page.source && page.source.path || ''));
+}
+
+function detectGrammarBridgeTipOnlyPage(page) {
+  if (!page || page.kind !== 'legacy-page' || !page.source || !page.source.path) {
+    return false;
+  }
+  const absPath = path.join(CONTENT_DIR, page.source.path);
+  if (!fileExists(absPath)) {
+    return false;
+  }
+  const html = stripLegacyEmoji(sanitizeLegacyPalette(fs.readFileSync(absPath, 'utf8')));
+  const $ = cheerio.load(`<div class="xd-bridge-tip-probe">${html}</div>`, null, false);
+  const $root = $('.xd-bridge-tip-probe');
+  const tipCount = $root.children('.tip-box').length;
+  const headingCount = $root.children('.section-title, .part-header').length;
+  return tipCount === 1 && headingCount === 0;
+}
+
+function parseGrammarBridgeTocItems(book, sourcePath) {
+  const absPath = path.join(CONTENT_DIR, sourcePath);
+  if (!fileExists(absPath)) {
+    return [];
+  }
+
+  const html = fs.readFileSync(absPath, 'utf8');
+  const $ = cheerio.load(html);
+  return $('.toc-item').map((_, el) => {
+    const $item = $(el);
+    const rawNumber = getTextContent($item.find('.title b').first()).replace(/:$/, '');
+    const chapterLabel = normalizeGrammarBridgeChapterLabel(book, {}, rawNumber);
+    const title = getTextContent($item.find('.title').clone().find('b').remove().end());
+    const pageNo = getTextContent($item.find('.page-num').first());
+    return {
+      number: chapterLabel,
+      title,
+      page: pageNo
+    };
+  }).get().filter((item) => item.title);
+}
+
+function createGrammarBridgeGeneratedTocPage(book, sourcePath) {
+  const items = parseGrammarBridgeTocItems(book, sourcePath);
+  if (!items.length) {
+    return null;
+  }
+
+  return {
+    kind: 'toc',
+    id: `${book.id}-generated-toc`,
+    title: 'Contents',
+    columns: 2,
+    generatedBy: 'grammar-bridge-legacy-toc',
+    items
+  };
+}
+
+function preprocessGrammarBridgeVolumePages(book, pages) {
+  const coverIndex = pages.findIndex((page) => page.kind === 'cover');
+  const legacyTocPage = pages.find((page) => isGrammarBridgeStructuralTocPage(page));
+  const generatedTocPage = legacyTocPage
+    ? createGrammarBridgeGeneratedTocPage(book, legacyTocPage.source.path)
+    : null;
+
+  const filteredPages = pages
+    .filter((page) => !isGrammarBridgeStructuralCoverPage(page))
+    .filter((page) => !isGrammarBridgeStructuralTocPage(page));
+
+  const mainPages = [];
+  const endMatterPages = [];
+  let currentChapter = null;
+  let lastContentPage = null;
+  let chapterSectionIndex = 0;
+
+  filteredPages.forEach((page) => {
+    if (page.kind === 'chapter-opener') {
+      currentChapter = {
+        title: page.title || '',
+        subtitle: page.subtitle || ''
+      };
+      lastContentPage = null;
+      chapterSectionIndex = 0;
+      mainPages.push(page);
+      return;
+    }
+
+    const nextPage = {
+      ...page,
+      meta: {
+        ...(page.meta || {})
+      }
+    };
+
+    if (currentChapter && ['problem-set', 'answer-grid', 'explanations'].includes(nextPage.kind)) {
+      nextPage.meta.chapterTitle = currentChapter.title;
+      nextPage.meta.chapterSubtitle = currentChapter.subtitle;
+      const chapterLabel = [currentChapter.subtitle, currentChapter.title].filter(Boolean).join(' · ');
+      if (nextPage.kind === 'problem-set') {
+        nextPage.title = nextPage.title || `${chapterLabel} 연습문제`;
+      }
+      if (nextPage.kind === 'answer-grid') {
+        nextPage.title = nextPage.title || `${chapterLabel} 빠른 정답`;
+      }
+      if (nextPage.kind === 'explanations') {
+        nextPage.title = nextPage.title || `${chapterLabel} 상세 해설`;
+      }
+    }
+
+    if (nextPage.kind === 'legacy-page' && currentChapter) {
+      nextPage.meta.chapterTitle = currentChapter.title;
+      nextPage.meta.chapterSubtitle = currentChapter.subtitle;
+      const isTipOnly = detectGrammarBridgeTipOnlyPage(nextPage);
+      nextPage.meta.tipOnly = isTipOnly;
+      if (isTipOnly && lastContentPage) {
+        nextPage.meta.inlineTip = true;
+      } else if (!isTipOnly) {
+        chapterSectionIndex += 1;
+        nextPage.meta.chapterSectionIndex = chapterSectionIndex;
+        if (isLayoutRuleEnabled(book, 'startSubsectionOnNewPage', 'startSectionOnNewPage')) {
+          nextPage.meta.startSubsectionOnNewPage = true;
+        }
+      }
+      lastContentPage = nextPage;
+    } else if (nextPage.kind === 'problem-set') {
+      lastContentPage = null;
+    }
+
+    if (nextPage.kind === 'problem-set') {
+      mainPages.push({
+        kind: 'chapter-opener',
+        id: `${nextPage.id}-opener`,
+        title: `${currentChapter ? currentChapter.title : ''} 연습문제`,
+        subtitle: currentChapter ? currentChapter.subtitle : 'Practice',
+        variant: 'practice'
+      });
+      mainPages.push(nextPage);
+      return;
+    }
+
+    if (['answer-grid', 'explanations'].includes(nextPage.kind)) {
+      endMatterPages.push(nextPage);
+      return;
+    }
+
+    mainPages.push(nextPage);
+  });
+
+  const finalPages = [...mainPages];
+  if (generatedTocPage) {
+    const insertIndex = coverIndex === -1 ? 0 : 1;
+    finalPages.splice(insertIndex, 0, generatedTocPage);
+  }
+
+  if (endMatterPages.length) {
+    finalPages.push({
+      kind: 'chapter-opener',
+      id: `${book.id}-endmatter`,
+      title: '빠른 정답 & 상세 해설',
+      subtitle: 'Answer Key',
+      variant: 'endmatter'
+    });
+    finalPages.push(...endMatterPages);
+  }
+
+  return finalPages;
+}
+
 function ensureDefaultPages(book, pages) {
   const normalizedPages = normalizePageSequence(Array.isArray(pages) ? [...pages] : []);
   if (!normalizedPages.length || !isCoverLikePage(normalizedPages[0])) {
@@ -553,14 +895,92 @@ function ensureDefaultPages(book, pages) {
       id: `${book.id}-auto-cover`
     });
   }
+  if (isGrammarBridgeXdVolume(book)) {
+    return preprocessGrammarBridgeVolumePages(book, normalizedPages);
+  }
+  if (isLayoutRuleEnabled(book, 'insertExplanationOpener')) {
+    return preprocessExplanationOpenerPages(book, normalizedPages);
+  }
   return normalizedPages;
 }
 
+function preprocessExplanationOpenerPages(book, pages) {
+  const normalizedPages = [...pages];
+  const coverIndex = normalizedPages.findIndex((page) => isCoverLikePage(page));
+  const firstContentPage = normalizedPages.find((page) => page.kind !== 'cover');
+  if (!firstContentPage) {
+    return normalizedPages;
+  }
+
+  const insertIndex = coverIndex === -1 ? 0 : coverIndex + 1;
+  const alreadyHasOpener = normalizedPages[insertIndex] && normalizedPages[insertIndex].kind === 'chapter-opener';
+  if (alreadyHasOpener) {
+    return normalizedPages;
+  }
+
+  const rules = (book && book.layoutRules) || {};
+  normalizedPages.splice(insertIndex, 0, {
+    kind: 'chapter-opener',
+    id: `${book.id}-explanation-opener`,
+    title: rules.explanationOpenerTitle || '상세 해설',
+    subtitle: rules.explanationOpenerSubtitle || 'Answer & Analysis',
+  });
+
+  return normalizedPages;
+}
+
+function getProblemSetPageClass(book, page = {}) {
+  const classes = ['compact-design', 'xd-problem-set-page'];
+  const problemColumns = Number(((book || {}).layoutRules || {}).problemColumns || 0);
+  if (problemColumns === 2) {
+    classes.push('xd-problem-set-page--two-column');
+  }
+  return classes.join(' ');
+}
+
 function renderPageShellStart(classNames) {
-  return `<div class="${classNames.join(' ')}">`;
+  return `<div class="${classNames.filter(Boolean).join(' ')}">`;
+}
+
+function addClassesToFirstPageDiv(html, extraClasses = []) {
+  const classesToAdd = extraClasses.filter(Boolean);
+  if (!classesToAdd.length) {
+    return html;
+  }
+
+  return String(html || '').replace(/<div class="([^"]*\bpage\b[^"]*)"/, (match, className) => {
+    const merged = Array.from(new Set(`${className} ${classesToAdd.join(' ')}`.trim().split(/\s+/)));
+    return `<div class="${merged.join(' ')}"`;
+  });
+}
+
+function stripLegacyPageNumberMarkup(html) {
+  return String(html || '').replace(/\s*<div class="page-number">[\s\S]*?<\/div>\s*/g, '\n');
 }
 
 function renderCoverPage(page, book) {
+  if (usesExtravagantDocs(book) && book.styleTemplate === 'grammar-bridge') {
+    const cover = book.cover || {};
+    const mainTitle = cover.mainTitle || book.title;
+    const edition = cover.edition || '2026 EDITION';
+    const label = cover.label || 'GRAMMAR BRIDGE';
+    const artUrl = getCoverArtUrl(book);
+    return `
+${renderPageShellStart(['page', 'page--fixed', 'cover-page', 'no-header-footer', 'xd-gb-cover'])}
+  <div class="xd-gb-cover__frame">
+    <img class="xd-gb-cover__art" src="${artUrl}" alt="">
+    <div class="xd-gb-cover__overlay">
+      <div class="xd-gb-cover__brand">Vera's Flavor</div>
+      <div class="xd-gb-cover__rule"></div>
+      <div class="xd-gb-cover__label">${escapeHtml(label)}</div>
+      <div class="xd-gb-cover__title">${escapeHtml(mainTitle)}</div>
+      <div class="xd-gb-cover__edition">${escapeHtml(edition)}</div>
+    </div>
+  </div>
+</div>
+`;
+  }
+
   const cover = book.cover || {};
   const variant = page.variant || cover.variant || 'minimal';
   const mainTitle = cover.mainTitle || book.title;
@@ -577,7 +997,46 @@ ${renderPageShellStart(['page', 'page--fixed', 'cover-page', 'no-header-footer',
 `;
 }
 
+function renderPagedCoverPage(page, book) {
+  if (usesExtravagantDocs(book) && book.styleTemplate === 'grammar-bridge') {
+    const cover = book.cover || {};
+    const mainTitle = cover.mainTitle || book.title;
+    const edition = cover.edition || '2026 EDITION';
+    const label = cover.label || 'GRAMMAR BRIDGE';
+    const artUrl = getCoverArtUrl(book);
+    return `
+<section class="xd-paged-cover xd-gb-cover xd-gb-cover--paged-native" style="--xd-cover-image: url('${artUrl}');">
+  <div class="xd-gb-cover__overlay">
+    <div class="xd-gb-cover__brand">Vera's Flavor</div>
+    <div class="xd-gb-cover__rule"></div>
+    <div class="xd-gb-cover__label">${escapeHtml(label)}</div>
+    <div class="xd-gb-cover__title">${escapeHtml(mainTitle)}</div>
+    <div class="xd-gb-cover__edition">${escapeHtml(edition)}</div>
+  </div>
+</section>
+`;
+  }
+
+  const cover = book.cover || {};
+  const mainTitle = cover.mainTitle || book.title;
+  const edition = cover.edition || book.level;
+  return `
+<section class="xd-paged-cover">
+  <div class="cover-layout">
+    <div class="cover-brand">${escapeHtml(book.brand || book.author)}</div>
+    <div class="cover-main-title">${escapeHtml(mainTitle)}</div>
+    <div class="cover-edition">${escapeHtml(edition)}</div>
+    <div class="cover-author">${escapeHtml(book.author)}</div>
+  </div>
+</section>
+`;
+}
+
 function renderTocPage(page) {
+  if (page.generatedBy === 'grammar-bridge-legacy-toc') {
+    return renderGrammarBridgeTocPage(page);
+  }
+
   const columnsClass = page.columns === 2 ? ' toc-list--two-columns' : '';
   const items = (page.items || []).map((item) => {
     const number = item.number ? `<span class="toc-item-number">${escapeHtml(item.number)}</span>` : '';
@@ -611,26 +1070,171 @@ ${items}
 `;
 }
 
+function canUpgradeLegacyTocHtml(html) {
+  const source = String(html || '');
+  return /\btoc-part-title\b/.test(source)
+    && /\btoc-list\b/.test(source)
+    && /\bpage-num\b/.test(source);
+}
+
+function renderUpgradedLegacyTocPage(page, book, html) {
+  const $ = cheerio.load(String(html || ''));
+  const title = $('.toc-header').first().text().trim()
+    || (/(^|\/)toc[-_0-9a-z]*\d\.html$/i.test(String(page.source && page.source.path || '')) ? 'CONTENTS (Continued)' : '')
+    || page.title
+    || 'Contents';
+  const $container = $('.page-content').first().length ? $('.page-content').first() : $('body');
+
+  const sections = [];
+  let currentTitle = '';
+  let currentItems = [];
+
+  const flush = () => {
+    if (!currentTitle && !currentItems.length) return;
+    sections.push({
+      title: currentTitle,
+      items: currentItems,
+    });
+    currentTitle = '';
+    currentItems = [];
+  };
+
+  $container.children().each((_, element) => {
+    const $el = $(element);
+    if ($el.hasClass('toc-header')) {
+      return;
+    }
+    if ($el.hasClass('toc-part-title')) {
+      flush();
+      currentTitle = $el.text().trim();
+      return;
+    }
+    if ($el.hasClass('toc-list')) {
+      const items = $el.find('.toc-item').map((__, itemEl) => {
+        const $item = $(itemEl);
+        return {
+          title: $item.find('.title').text().replace(/\s+/g, ' ').trim(),
+          page: $item.find('.page-num').text().trim(),
+        };
+      }).get().filter((item) => item.title);
+      currentItems.push(...items);
+    }
+  });
+  flush();
+
+  const sectionsHtml = sections.map((section) => {
+    const itemsHtml = section.items.map((item) => `
+        <li class="toc-item">
+          <span class="toc-item-title">${escapeHtml(item.title)}</span>
+          <span class="toc-item-dots"></span>
+          <span class="toc-item-page">${escapeHtml(item.page || '')}</span>
+        </li>`).join('\n');
+
+    return `
+      <section class="toc-upgraded-section">
+        <h2 class="toc-upgraded-part-title">${escapeHtml(section.title || '')}</h2>
+        <ol class="toc-list">
+${itemsHtml}
+        </ol>
+      </section>`;
+  }).join('\n');
+
+  return `
+${renderPageShellStart(['page', 'page--fixed', 'toc-page', 'no-header-footer', 'toc-page--upgraded'])}
+  <div class="page-content">
+    <div class="toc toc--upgraded-legacy">
+      <h1 class="toc-title">${escapeHtml(title)}</h1>
+${sectionsHtml}
+    </div>
+  </div>
+</div>
+`;
+}
+
+function renderGrammarBridgeTocPage(page, options = {}) {
+  const paged = options.paged === true;
+  const items = (page.items || []).map((item) => `
+      <li class="xd-gb-toc__item">
+        <span class="xd-gb-toc__chapter">${escapeHtml(item.number || '')}</span>
+        <span class="xd-gb-toc__entry-title">${escapeHtml(item.title || '')}</span>
+        <span class="xd-gb-toc__page">${escapeHtml(item.page || '')}</span>
+      </li>`).join('\n');
+
+  const body = `
+  <div class="xd-gb-toc">
+    <div class="xd-gb-toc__eyebrow">Grammar Bridge</div>
+    <h1 class="xd-gb-toc__title">${escapeHtml(page.title || 'Contents')}</h1>
+    <ol class="xd-gb-toc__list">
+${items}
+    </ol>
+  </div>`;
+
+  if (paged) {
+    return `
+${createPagedRunningMarkers({ author: "Vera's Flavor", title: page.title || 'Contents' }, {
+  headerLeft: 'Grammar Bridge',
+  headerRight: page.title || 'Contents'
+})}
+<section class="xd-paged-section xd-paged-section--toc" data-section-id="${escapeHtml(page.id || 'toc')}">
+${body}
+</section>`;
+  }
+
+  return `
+${renderPageShellStart(['page', 'page--fixed', 'toc-page', 'xd-gb-toc-page', 'no-header-footer'])}
+  <div class="page-content">
+${body}
+  </div>
+</div>
+`;
+}
+
 function renderChapterOpener(page) {
   return `
-${renderPageShellStart(['page', 'page--fixed', 'chapter-page'])}
-  <div class="page-header">
-    <span>${escapeHtml(page.subtitle || '')}</span>
-    <span></span>
-  </div>
+${renderPageShellStart(['page', 'page--fixed', 'chapter-page', 'no-header-footer', page.variant ? `chapter-page--${escapeHtml(page.variant)}` : ''])}
   <div class="page-content">
     <div class="chapter-opener-body">
       <div class="chapter-opener-label">${escapeHtml(page.subtitle || '')}</div>
       <div class="chapter-opener-title">${escapeHtml(page.title || '')}</div>
     </div>
   </div>
-  <div class="page-footer"></div>
 </div>
 `;
 }
 
+function applyPagedFixedPageStyle(html, pageName) {
+  return String(html || '').replace(
+    /<div class="([^"]*\bpage\b[^"]*)">/,
+    `<div class="$1" style="page: ${escapeHtml(pageName)};">`
+  );
+}
+
+function renderPagedFixedChapterOpener(page) {
+  return applyPagedFixedPageStyle(renderChapterOpener(page), 'xd-opener');
+}
+
+function renderPagedChapterOpener(page) {
+  const variantClass = page.variant ? ` xd-paged-opener--${escapeHtml(page.variant)}` : '';
+  return `
+<section class="xd-paged-opener${variantClass}" data-page-kind="chapter-opener" data-page-id="${escapeHtml(page.id || '')}">
+  <div class="xd-paged-opener__body">
+    <div class="chapter-opener-label">${escapeHtml(page.subtitle || '')}</div>
+    <div class="chapter-opener-title">${escapeHtml(page.title || '')}</div>
+  </div>
+</section>
+`;
+}
+
+function renderPagedFixedTocPage(page) {
+  return applyPagedFixedPageStyle(renderGrammarBridgeTocPage(page), 'xd-fixed');
+}
+
 function sanitizeLegacyPalette(html) {
   return String(html || '')
+    .replace(/linear-gradient\(([^)]*)\)/gi, (_, inner) => {
+      const colorMatch = String(inner || '').match(/(#[0-9a-fA-F]{3,8}|var\(--[^)]+\))/);
+      return colorMatch ? colorMatch[1] : '#1B2A4A';
+    })
     .replace(/var\(--color-deep-blue\)/g, 'var(--color-navy-deep)')
     .replace(/var\(--color-sea-blue\)/g, 'var(--color-sky)')
     .replace(/var\(--color-warm-orange\)/g, 'var(--color-gold)')
@@ -695,8 +1299,14 @@ function sanitizeLegacyPalette(html) {
     .replace(/(--header-[a-z-]+:\s*[^;]+?)\s*!important/gi, '$1');
 }
 
+function stripLegacyEmoji(html) {
+  return String(html || '')
+    .replace(/<span[^>]*class=["'][^"']*\bemoji\b[^"']*["'][^>]*>[\s\S]*?<\/span>/gi, '')
+    .replace(/<span[^>]*class=["'][^"']*\bemoji\b[^"']*["'][^>]*\/>/gi, '');
+}
+
 function extractLegacyPagePayload(html) {
-  const $ = cheerio.load(sanitizeLegacyPalette(html));
+  const $ = cheerio.load(stripLegacyEmoji(sanitizeLegacyPalette(html)));
   const $page = $('.page').first();
   if (!$page.length) return null;
 
@@ -720,60 +1330,390 @@ function extractLegacyPagePayload(html) {
   };
 }
 
-function renderLegacyPage(page, book) {
-  const absPath = path.join(CONTENT_DIR, page.source.path);
-  const html = sanitizeLegacyPalette(fs.readFileSync(absPath, 'utf8').trim());
-  const legacyPayload = extractLegacyPagePayload(html);
+function getTextContent($node) {
+  return $node.text().replace(/\s+/g, ' ').trim();
+}
 
-  if (isCoverLikePage(page)) {
-    return renderCoverPage(page, book);
+function splitGrammarBridgeLabel(value) {
+  const parts = String(value || '').split(/\s+-\s+/).map((item) => item.trim()).filter(Boolean);
+  return {
+    main: parts[0] || String(value || '').trim(),
+    sub: parts[1] || ''
+  };
+}
+
+function extractNumericSuffix(value) {
+  const match = String(value || '').match(/(\d+)/);
+  return match ? Number(match[1]) : null;
+}
+
+function resolveGrammarBridgeEditorialChapterNumber(book, page, rawLabel = '') {
+  const bookId = String(book && book.id || '');
+  const sourcePath = String(page && page.source && page.source.path || '');
+  const sourceMatch = sourcePath.match(/grammar\/bridge\/ch(\d{2})-/);
+  const rawNumber = extractNumericSuffix(rawLabel);
+  const metaNumber = extractNumericSuffix(page && page.meta && page.meta.chapterSubtitle || '');
+
+  if (/^grammar-bridge-vol2(?:-xd)?$/.test(bookId)) {
+    if (metaNumber !== null) {
+      return metaNumber;
+    }
+    if (sourceMatch) {
+      return Number(sourceMatch[1]) + 10;
+    }
+    if (rawNumber !== null) {
+      return rawNumber >= 12 ? rawNumber : rawNumber + 10;
+    }
   }
 
-  if (legacyPayload && /(^|\/)toc(?:[-_a-z0-9]*)?\.html$/i.test(page.source.path)) {
-    return html;
+  if (/^grammar-bridge-vol1(?:-xd)?$/.test(bookId)) {
+    return metaNumber !== null ? metaNumber : rawNumber;
   }
 
-  if (legacyPayload && legacyPayload.contentHtml) {
-    const pageClasses = ['page', 'page--fixed', 'legacy-page'];
-    if (page.layout === 'compact') {
-      pageClasses.push('compact-design');
+  if (/^grammar-bridge-ch(0[2-9]|10)(?:-xd)?$/.test(bookId)) {
+    const bundleNo = sourceMatch ? Number(sourceMatch[1]) : extractNumericSuffix(bookId);
+    if (bundleNo !== null) {
+      return bundleNo + 10;
+    }
+  }
+
+  if (rawLabel && /^Part\s+\d+/i.test(rawLabel) && rawNumber !== null) {
+    return rawNumber;
+  }
+
+  return null;
+}
+
+function normalizeGrammarBridgeChapterLabel(book, page, rawLabel = '') {
+  const chapterNo = resolveGrammarBridgeEditorialChapterNumber(book, page, rawLabel);
+  if (chapterNo === null) {
+    return String(rawLabel || '').trim();
+  }
+  return `Chapter ${chapterNo}`;
+}
+
+function normalizeGrammarBridgeLegacyHtml(book, page, html) {
+  const normalizedHtml = String(html || '')
+    .replace(/(<span[^>]*class=["'][^"']*\bpart-number\b[^"']*["'][^>]*>)\s*Part\s+(\d+)\s*(<\/span>)/gi, (match, open, number, close) => {
+      return `${open}${normalizeGrammarBridgeChapterLabel(book, page, `Part ${number}`)}${close}`;
+    })
+    .replace(/(<b>)\s*Part\s+(\d+)\s*(:\s*<\/b>)/gi, (match, open, number, close) => {
+      return `${open}${normalizeGrammarBridgeChapterLabel(book, page, `Part ${number}`)}${close}`;
+    });
+
+  const chapterNo = resolveGrammarBridgeEditorialChapterNumber(book, page, '');
+  if (chapterNo === null) {
+    return normalizedHtml;
+  }
+
+  const $ = cheerio.load(`<div class="xd-gb-normalize-root">${normalizedHtml}</div>`, null, false);
+  const chapterSectionIndex = Number(page && page.meta && page.meta.chapterSectionIndex || 0);
+  const $sectionTitle = $('.xd-gb-normalize-root').find('.section-title').first();
+
+  if (chapterSectionIndex && $sectionTitle.length) {
+    const currentHtml = $sectionTitle.html() || '';
+    const nextHtml = currentHtml.replace(
+      /^(\s*(?:<span[^>]*class=["'][^"']*\bemoji\b[^"']*["'][^>]*>[\s\S]*?<\/span>\s*)?)(\d+(?:\.\d+)+(?:\.)?)/,
+      (match, prefix) => `${prefix}${chapterNo}.${chapterSectionIndex}.`
+    );
+    if (nextHtml !== currentHtml) {
+      $sectionTitle.html(nextHtml);
+    }
+  }
+
+  $('.xd-gb-normalize-root')
+    .find('.section-title, .subsection-title, .chapter-header, h1, h2, h3, h4')
+    .each((_, el) => {
+      const $el = $(el);
+      const currentHtml = $el.html() || '';
+      let nextHtml = currentHtml
+        .replace(
+          /^(\s*(?:<span[^>]*class=["'][^"']*\bemoji\b[^"']*["'][^>]*>[\s\S]*?<\/span>\s*)?)(\d+)((?:\.\d+)+(?:\.)?)/,
+          (match, prefix, rawTop, suffix) => `${prefix}${chapterNo}${suffix}`
+        )
+        .replace(
+          /^(\s*)(Ch(?:apter)?\.?\s*)(\d+)(\b)/i,
+          (match, prefix, label) => `${prefix}${label}${chapterNo}`
+        );
+
+      if (nextHtml !== currentHtml) {
+        $el.html(nextHtml);
+      }
+    });
+
+  return $('.xd-gb-normalize-root').html().trim();
+}
+
+function getCoverArtUrl(book) {
+  const coverPath = book.coverArt
+    ? path.join(ROOT, book.coverArt)
+    : path.join(ROOT, '05_assets', 'backgrounds', 'extravagantdocs-grammar-bridge-cover.svg');
+  return pathToFileURL(coverPath).href;
+}
+
+function collectGrammarBridgeGroups($, $container) {
+  const intro = [];
+  const groups = [];
+  let current = null;
+
+  $container.contents().each((_, node) => {
+    const $node = $(node);
+    if (node.type === 'text') {
+      const text = $node.text().trim();
+      if (!text) return;
+      const paragraph = `<p>${escapeHtml(text)}</p>`;
+      if (current) current.items.push(paragraph);
+      else intro.push(paragraph);
+      return;
     }
 
-    const forwardedClasses = legacyPayload.classes.filter((className) => ![
-      'page',
-      'page-number',
-      'cover-page',
-      'no-header-footer',
-    ].includes(className));
-    pageClasses.push(...forwardedClasses);
+    if (node.type !== 'tag') {
+      return;
+    }
 
-    const headerLeft = escapeHtml(page.meta && page.meta.headerLeft ? page.meta.headerLeft : (legacyPayload.headerLeft || book.author));
-    const headerRight = escapeHtml(page.meta && page.meta.headerRight ? page.meta.headerRight : (legacyPayload.headerRight || book.title));
-    const footerValue = page.meta && page.meta.footerText ? page.meta.footerText : legacyPayload.footerText;
-    const footerText = footerValue ? `<span class="page-footer-text">${escapeHtml(footerValue)}</span>` : '';
+    if ($node.is('style') || $node.hasClass('emoji') || $node.hasClass('tip-box-title') || $node.hasClass('section-title') || $node.hasClass('part-header')) {
+      return;
+    }
 
-    return `
-${renderPageShellStart(pageClasses)}
-  <div class="page-header">
-    <span>${headerLeft}</span>
-    <span>${headerRight}</span>
-  </div>
-  <div class="page-content">
-${legacyPayload.contentHtml}
-  </div>
-  <div class="page-footer">${footerText}</div>
-</div>
-`;
+    if ($node.is('h4')) {
+      current = {
+        title: getTextContent($node),
+        items: []
+      };
+      groups.push(current);
+      return;
+    }
+
+    const html = $.html(node).trim();
+    if (!html) return;
+
+    if (current) current.items.push(html);
+    else intro.push(html);
+  });
+
+  return {
+    introHtml: intro.join('\n'),
+    groups
+  };
+}
+
+function collectGrammarBridgeTipCards($, $root) {
+  return $root.children('.tip-box').map((_, el) => {
+    const $tip = $(el);
+    const firstParagraph = $tip.find('p').first();
+    const bold = firstParagraph.find('b').first().text().trim();
+    const title = bold.replace(/^Q\d+\s*:\s*/i, '').trim() || 'Key Point';
+    return {
+      title,
+      items: [$tip.html().trim()]
+    };
+  }).get();
+}
+
+function splitHtmlLines(html) {
+  return String(html || '')
+    .replace(/^<p[^>]*>/i, '')
+    .replace(/<\/p>$/i, '')
+    .split(/<br\s*\/?>/i)
+    .map((line) => line.replace(/\u00a0/g, ' ').trim())
+    .filter(Boolean);
+}
+
+function renderStructuredGrammarCardGrid($, $table) {
+  const cards = [];
+  const rows = $table.find('tbody > tr').toArray();
+
+  for (let index = 0; index < rows.length; index += 2) {
+    const $formulaRow = $(rows[index]);
+    const $exampleRow = $(rows[index + 1]);
+    const formulaCells = $formulaRow.find('td');
+    const exampleCells = $exampleRow.find('td');
+
+    if (formulaCells.length < 4 || exampleCells.length < 2) {
+      continue;
+    }
+
+    cards.push({
+      title: getTextContent(formulaCells.eq(0)),
+      ifFormula: (formulaCells.eq(1).html() || '').trim(),
+      mainFormula: (formulaCells.eq(2).html() || '').trim(),
+      meaning: (formulaCells.eq(3).html() || '')
+        .replace(/<br\s*\/?>/gi, ' ')
+        .replace(/<[^>]+>/g, ' ')
+        .replace(/\s+/g, ' ')
+        .trim(),
+      ifExample: (exampleCells.eq(0).html() || '').trim(),
+      mainExample: (exampleCells.eq(1).html() || '').trim()
+    });
   }
 
-  const pageClasses = ['page', 'page--fixed', 'legacy-page'];
-  if (page.layout === 'compact') {
-    pageClasses.push('compact-design');
+  if (!cards.length) {
+    return $.html($table);
   }
 
-  const headerLeft = escapeHtml(page.meta && page.meta.headerLeft ? page.meta.headerLeft : book.author);
-  const headerRight = escapeHtml(page.meta && page.meta.headerRight ? page.meta.headerRight : book.title);
-  const footerText = page.meta && page.meta.footerText ? `<span class="page-footer-text">${escapeHtml(page.meta.footerText)}</span>` : '';
+  return `
+<div class="xd-gb-formula-grid">
+  ${cards.map((card) => `
+  <article class="xd-gb-formula-card">
+    <div class="xd-gb-formula-card__head">
+      <h3 class="xd-gb-formula-card__title">${escapeHtml(card.title)}</h3>
+      <div class="xd-gb-formula-card__meaning">${escapeHtml(card.meaning)}</div>
+    </div>
+    <div class="xd-gb-formula-card__body">
+      <div class="xd-gb-formula-card__row">
+        <div class="xd-gb-formula-card__label">If절</div>
+        <div class="xd-gb-formula-card__formula">${card.ifFormula}</div>
+        <div class="xd-gb-formula-card__example">${card.ifExample}</div>
+      </div>
+      <div class="xd-gb-formula-card__row">
+        <div class="xd-gb-formula-card__label">주절</div>
+        <div class="xd-gb-formula-card__formula">${card.mainFormula}</div>
+        <div class="xd-gb-formula-card__example">${card.mainExample}</div>
+      </div>
+    </div>
+  </article>`).join('\n')}
+</div>`;
+}
+
+function renderGrammarBridgeFocusExample(html) {
+  const lines = splitHtmlLines(html);
+  if (!lines.length) {
+    return '';
+  }
+
+  const [lead, ...rest] = lines;
+  return `
+<div class="xd-gb-focus-example">
+  <div class="xd-gb-focus-example__lead">${lead}</div>
+  ${rest.length ? `<div class="xd-gb-focus-example__steps">
+    ${rest.map((line) => `<div class="xd-gb-focus-example__step">${line.replace(/^→\s*/, '')}</div>`).join('\n')}
+  </div>` : ''}
+</div>`;
+}
+
+function renderGrammarBridgeFaqGroup(group) {
+  const sourceHtml = (group.items || []).join('\n');
+  const $ = cheerio.load(`<div class="xd-gb-faq-root">${sourceHtml}</div>`, null, false);
+  const rawHtml = $('.xd-gb-faq-root').find('p').first().html() || $('.xd-gb-faq-root').html() || '';
+  const lines = splitHtmlLines(rawHtml);
+  const paragraphs = [];
+  const bullets = [];
+
+  lines.forEach((line, index) => {
+    let current = line;
+    if (index === 0) {
+      current = current.replace(/<b>[\s\S]*?<\/b>/i, '').trim();
+    }
+    current = current.replace(/^A:\s*/i, '').trim();
+    if (!current) {
+      return;
+    }
+    if (/^(•|·|&bull;|&#8226;|→)\s*/i.test(current)) {
+      bullets.push(current.replace(/^(•|·|&bull;|&#8226;|→)\s*/i, '').trim());
+      return;
+    }
+    paragraphs.push(current);
+  });
+
+  return `
+<article class="xd-gb-group xd-gb-group--faq">
+  <div class="xd-gb-group__body">
+    <div class="xd-gb-faq-card">
+      <div class="xd-gb-faq-card__eyebrow">FAQ</div>
+      <div class="xd-gb-faq-card__question">${escapeHtml(group.title || '')}</div>
+      <div class="xd-gb-faq-card__answer">
+        ${paragraphs.map((paragraph) => `<p>${paragraph}</p>`).join('\n')}
+        ${bullets.length ? `<ul class="xd-gb-faq-list">
+          ${bullets.map((item) => `<li>${item}</li>`).join('\n')}
+        </ul>` : ''}
+      </div>
+    </div>
+  </div>
+</article>`;
+}
+
+function transformGrammarBridgeGroupItems(items) {
+  const sourceHtml = (items || []).map((item) => String(item)
+    .replace(/<br>\s*(\([^<]+\))/gi, '<span class="xd-gb-inline-note">$1</span>')
+    .replace(/margin-top:-10px;/gi, '')
+  ).join('\n');
+
+  const $ = cheerio.load(`<div class="xd-gb-transform-root">${sourceHtml}</div>`, null, false);
+  const $root = $('.xd-gb-transform-root');
+
+  $root.find('.structured-grammar-table').each((_, el) => {
+    const $table = $(el);
+    $table.replaceWith(renderStructuredGrammarCardGrid($, $table));
+  });
+
+  $root.find('p').each((_, el) => {
+    const $paragraph = $(el);
+    const style = ($paragraph.attr('style') || '').toLowerCase();
+    if (style.includes('background')) {
+      $paragraph.replaceWith(renderGrammarBridgeFocusExample($.html($paragraph)));
+      return;
+    }
+    $paragraph.removeAttr('style');
+  });
+
+  $root.find('ul, li, h4, div, table, tr, td, th').removeAttr('style');
+  $root.find('.emoji, .tip-box-title').remove();
+
+  return $root.html().trim();
+}
+
+function renderGrammarBridgeGroup(group, context = {}) {
+  if (context.isFaqPage) {
+    return renderGrammarBridgeFaqGroup(group);
+  }
+
+  const items = transformGrammarBridgeGroupItems(group.items || []);
+  return `
+<article class="xd-gb-group">
+  <h2 class="xd-gb-group__title">${escapeHtml(group.title || '')}</h2>
+  <div class="xd-gb-group__body">
+${items}
+  </div>
+</article>`;
+}
+
+function renderGrammarBridgeLegacyPage(page, book, html) {
+  const $ = cheerio.load(`<div class="xd-gb-fragment">${html}</div>`, null, false);
+  const $root = $('.xd-gb-fragment');
+  const $partHeader = $root.children('.part-header').first();
+  const rawPartNumber = getTextContent($partHeader.find('.part-number').first());
+  const partNumber = normalizeGrammarBridgeChapterLabel(book, page, rawPartNumber);
+  const partLabelRaw = getTextContent($partHeader.clone().find('.part-number').remove().end());
+  const partLabel = splitGrammarBridgeLabel(partLabelRaw);
+  const sectionTitle = getTextContent($root.children('.section-title').first());
+
+  let pageLabel = '';
+  let introHtml = '';
+  let groups = [];
+
+  if ($root.children('.tip-box').length > 1) {
+    groups = collectGrammarBridgeTipCards($, $root);
+  } else if ($root.children('.tip-box').length === 1 && !$root.children('.section-title').length) {
+    const $tip = $root.children('.tip-box').first();
+    pageLabel = getTextContent($tip.children('.tip-box-title').first()) || 'Vera Insight';
+    const collected = collectGrammarBridgeGroups($, $tip);
+    introHtml = collected.introHtml;
+    groups = collected.groups;
+  } else {
+    const collected = collectGrammarBridgeGroups($, $root);
+    introHtml = collected.introHtml;
+    groups = collected.groups;
+  }
+
+  const displayTitle = sectionTitle || pageLabel || partLabel.main || book.title;
+  const displaySub = partLabel.sub || '';
+  const pageClasses = ['page', 'page--fixed', 'legacy-page', 'xd-gb-page'];
+  pageClasses.push(groups.length >= 2 ? 'xd-gb-page--balanced' : 'xd-gb-page--editorial');
+  const isFaqPage = /자주 하는 질문/.test(displayTitle);
+
+  const headerLeft = escapeHtml(book.shortTitle || book.brand || book.author);
+  const headerRight = escapeHtml(partLabel.main || book.title);
+  const eyebrow = [partNumber, displaySub].filter(Boolean).join(' / ');
 
   return `
 ${renderPageShellStart(pageClasses)}
@@ -782,14 +1722,323 @@ ${renderPageShellStart(pageClasses)}
     <span>${headerRight}</span>
   </div>
   <div class="page-content">
-${html}
+    <div class="xd-gb-shell">
+      <div class="xd-gb-shell__intro">
+        ${eyebrow ? `<div class="xd-gb-shell__eyebrow">${escapeHtml(eyebrow)}</div>` : ''}
+        <h1 class="xd-gb-shell__title">${escapeHtml(displayTitle)}</h1>
+        ${introHtml ? `<div class="xd-gb-shell__lede">${introHtml}</div>` : ''}
+      </div>
+      ${groups.length ? `<div class="xd-gb-shell__groups">
+${groups.map((group) => `${renderGrammarBridgeGroup(group, { isFaqPage })}\n<div class="xd-gb-group-spacer"></div>`).join('\n')}
+      </div>` : ''}
+    </div>
+  </div>
+  <div class="page-footer"></div>
+</div>
+`;
+}
+
+function createPagedRunningMarkers(book, options = {}) {
+  const headerLeft = options.headerLeft || book.author;
+  const headerRight = options.headerRight || book.title;
+  return `
+<div class="xd-paged-running-source xd-paged-running-source--left">${escapeHtml(headerLeft)}</div>
+<div class="xd-paged-running-source xd-paged-running-source--right">${escapeHtml(headerRight)}</div>`;
+}
+
+function createPagedSection(sectionId, pageClass, book, blocks, options = {}) {
+  const sectionClasses = ['xd-paged-section'];
+  if (pageClass) {
+    sectionClasses.push(...String(pageClass).split(/\s+/).filter(Boolean));
+  }
+  if (options.variant) {
+    sectionClasses.push(`xd-paged-section--${options.variant}`);
+  }
+
+  const titleHtml = options.title
+    ? `<h2 class="xd-paged-section__title">${escapeHtml(options.title)}</h2>`
+    : '';
+  const bodyHtml = blocks.map((block, index) => `<div class="flow-block" data-block-id="${escapeHtml(`${sectionId}-${index + 1}`)}">${block}</div>`).join('\n');
+
+  return `
+${createPagedRunningMarkers(book, options)}
+<section class="${sectionClasses.join(' ')}" data-section-id="${escapeHtml(sectionId)}">
+  ${titleHtml}
+${bodyHtml}
+</section>`;
+}
+
+function renderGrammarBridgeLegacyPaged(page, book, html) {
+  const $ = cheerio.load(`<div class="xd-gb-fragment">${html}</div>`, null, false);
+  const $root = $('.xd-gb-fragment');
+  const $partHeader = $root.children('.part-header').first();
+  const rawPartNumber = getTextContent($partHeader.find('.part-number').first());
+  const partNumber = normalizeGrammarBridgeChapterLabel(book, page, rawPartNumber);
+  const partLabelRaw = getTextContent($partHeader.clone().find('.part-number').remove().end());
+  const partLabel = splitGrammarBridgeLabel(partLabelRaw);
+  const sectionTitle = getTextContent($root.children('.section-title').first());
+
+  let pageLabel = '';
+  let introHtml = '';
+  let groups = [];
+
+  if ($root.children('.tip-box').length > 1) {
+    groups = collectGrammarBridgeTipCards($, $root);
+  } else if ($root.children('.tip-box').length === 1 && !$root.children('.section-title').length) {
+    const $tip = $root.children('.tip-box').first();
+    pageLabel = getTextContent($tip.children('.tip-box-title').first()) || 'Vera Insight';
+    const collected = collectGrammarBridgeGroups($, $tip);
+    introHtml = collected.introHtml;
+    groups = collected.groups;
+  } else {
+    const collected = collectGrammarBridgeGroups($, $root);
+    introHtml = collected.introHtml;
+    groups = collected.groups;
+  }
+
+  const displayTitle = sectionTitle || pageLabel || partLabel.main || book.title;
+  const displaySub = partLabel.sub || '';
+  const isFaqPage = /자주 하는 질문/.test(displayTitle);
+  const content = `
+<div class="xd-gb-shell ${groups.length >= 2 ? 'xd-gb-shell--balanced' : 'xd-gb-shell--editorial'}">
+  <div class="xd-gb-shell__intro">
+    <h1 class="xd-gb-shell__title">${escapeHtml(displayTitle)}</h1>
+    ${introHtml ? `<div class="xd-gb-shell__lede">${introHtml}</div>` : ''}
+  </div>
+  ${groups.length ? `<div class="xd-gb-shell__groups">
+${groups.map((group) => renderGrammarBridgeGroup(group, { isFaqPage })).join('\n')}
+  </div>` : ''}
+</div>`;
+
+  const sectionClasses = [
+    'xd-paged-section',
+    'xd-paged-section--legacy',
+    groups.length >= 2 ? 'xd-paged-section--balanced' : 'xd-paged-section--editorial'
+  ];
+  if (page && page.meta && page.meta.startSubsectionOnNewPage) {
+    sectionClasses.push('xd-paged-section--isolated');
+  }
+
+  return `
+${createPagedRunningMarkers(book, {
+  headerLeft: book.shortTitle || book.brand || book.author,
+  headerRight: partLabel.main || book.title
+})}
+<section class="${sectionClasses.join(' ')}" data-section-id="${escapeHtml(page.id || '')}">
+${content}
+</section>`;
+}
+
+function renderGrammarBridgeInlineTipPaged(page, book, html) {
+  const $ = cheerio.load(`<div class="xd-gb-fragment">${html}</div>`, null, false);
+  const $tip = $('.xd-gb-fragment').children('.tip-box').first();
+  if (!$tip.length) {
+    return renderGrammarBridgeLegacyPaged(page, book, html);
+  }
+
+  const collected = collectGrammarBridgeGroups($, $tip);
+  const title = getTextContent($tip.children('.tip-box-title').first()) || "Vera's Flavor Tip";
+  const inlineBlocks = [
+    '<article class="xd-gb-inline-tip-card">',
+    `  <h2 class="xd-gb-inline-tip-card__title">${escapeHtml(title)}</h2>`,
+    collected.introHtml ? `  <div class="xd-gb-inline-tip-card__lede">${collected.introHtml}</div>` : '',
+    ...collected.groups.map((group) => renderGrammarBridgeGroup(group)),
+    '</article>'
+  ].filter(Boolean).join('\n');
+
+  return `
+<section class="xd-gb-inline-tip" data-section-id="${escapeHtml(page.id || '')}">
+  ${inlineBlocks}
+</section>`;
+}
+
+function renderFixedLegacyMarkup(page, book, contentHtml, options = {}) {
+  const pageClasses = ['page', 'page--fixed', 'legacy-page'];
+  if (page.layout === 'compact') {
+    pageClasses.push('compact-design');
+  }
+  if (options.extraClasses) {
+    pageClasses.push(...options.extraClasses);
+  }
+
+  const headerLeft = escapeHtml(options.headerLeft || book.author);
+  const headerRight = escapeHtml(options.headerRight || book.title);
+  const footerValue = options.footerText || '';
+  const footerText = footerValue ? `<span class="page-footer-text">${escapeHtml(footerValue)}</span>` : '';
+
+  return `
+${renderPageShellStart(pageClasses)}
+  <div class="page-header">
+    <span>${headerLeft}</span>
+    <span>${headerRight}</span>
+  </div>
+  <div class="page-content">
+${contentHtml}
   </div>
   <div class="page-footer">${footerText}</div>
 </div>
 `;
 }
 
+function renderPagedFixedLegacySection(page, book, contentHtml, options = {}) {
+  const footerValue = options.footerText || '';
+  const footerText = footerValue ? `<span class="xd-paged-fixed-legacy__footer-text">${escapeHtml(footerValue)}</span>` : '';
+  const extraClasses = Array.isArray(options.extraClasses) ? options.extraClasses.filter(Boolean) : [];
+  return `
+<section class="${['xd-paged-fixed-legacy', ...extraClasses].join(' ')}" data-page-kind="legacy-page" data-page-id="${escapeHtml(page.id || '')}">
+  <div class="xd-paged-fixed-legacy__header">
+    <span>${escapeHtml(options.headerLeft || book.author)}</span>
+    <span>${escapeHtml(options.headerRight || book.title)}</span>
+  </div>
+  <div class="xd-paged-fixed-legacy__content">
+${contentHtml}
+  </div>
+  <div class="xd-paged-fixed-legacy__footer">${footerText}</div>
+</section>`;
+}
+
+function isFlowFriendlyLegacyPagedHtml(html) {
+  return /\bdetailed-answer-section\b/.test(String(html || ''))
+    || /\bexplanation-problem\b/.test(String(html || ''));
+}
+
+function renderLegacyPage(page, book, options = {}) {
+  const absPath = path.join(CONTENT_DIR, page.source.path);
+  let html = stripLegacyEmoji(sanitizeLegacyPalette(fs.readFileSync(absPath, 'utf8').trim()));
+  if (/^grammar-bridge-vol[12](?:-xd)?$/.test(String(book.id || '')) || /^grammar-bridge-ch(0[2-9]|10)(?:-xd)?$/.test(String(book.id || ''))) {
+    html = normalizeGrammarBridgeLegacyHtml(book, page, html);
+  }
+  const legacyPayload = extractLegacyPagePayload(html);
+  const mode = options.renderer || 'runtime';
+
+  if (usesExtravagantDocs(book) && book.styleBridge === 'grammar-bridge') {
+    if (mode === 'paged-native' && page.meta && page.meta.inlineTip) {
+      return renderGrammarBridgeInlineTipPaged(page, book, html);
+    }
+    if (mode === 'paged-native') {
+      return renderGrammarBridgeLegacyPaged(page, book, html);
+    }
+    return renderGrammarBridgeLegacyPage(page, book, html);
+  }
+
+  if (isCoverLikePage(page)) {
+    return mode === 'paged-native' ? renderPagedCoverPage(page, book) : renderCoverPage(page, book);
+  }
+
+  if (/(^|\/)toc(?:[-_a-z0-9]*)?\.html$/i.test(page.source.path)) {
+    if (canUpgradeLegacyTocHtml(html)) {
+      return renderUpgradedLegacyTocPage(page, book, html);
+    }
+    if (mode === 'paged-native') {
+      return addClassesToFirstPageDiv(stripLegacyPageNumberMarkup(html), ['page--fixed', 'toc-page', 'no-header-footer']);
+    }
+    return html;
+  }
+
+  if (mode === 'paged-native' && legacyPayload && legacyPayload.contentHtml) {
+    if (isFlowFriendlyLegacyPagedHtml(legacyPayload.contentHtml)) {
+      return `
+${createPagedRunningMarkers(book, {
+  headerLeft: page.meta && page.meta.headerLeft ? page.meta.headerLeft : (legacyPayload.headerLeft || book.author),
+  headerRight: page.meta && page.meta.headerRight ? page.meta.headerRight : (legacyPayload.headerRight || book.title)
+})}
+<section class="xd-paged-section xd-paged-section--legacy xd-paged-section--legacy-flow" data-section-id="${escapeHtml(page.id || '')}">
+${legacyPayload.contentHtml}
+</section>`;
+    }
+    if (usesExtravagantDocs(book)) {
+      return renderPagedFixedLegacySection(page, book, legacyPayload.contentHtml, {
+        headerLeft: page.meta && page.meta.headerLeft ? page.meta.headerLeft : (legacyPayload.headerLeft || book.author),
+        headerRight: page.meta && page.meta.headerRight ? page.meta.headerRight : (legacyPayload.headerRight || book.title),
+        footerText: page.meta && page.meta.footerText ? page.meta.footerText : legacyPayload.footerText,
+      });
+    }
+    return `
+${createPagedRunningMarkers(book, {
+  headerLeft: page.meta && page.meta.headerLeft ? page.meta.headerLeft : (legacyPayload.headerLeft || book.author),
+  headerRight: page.meta && page.meta.headerRight ? page.meta.headerRight : (legacyPayload.headerRight || book.title)
+})}
+<section class="xd-paged-section xd-paged-section--legacy" data-section-id="${escapeHtml(page.id || '')}">
+${legacyPayload.contentHtml}
+</section>`;
+  }
+
+  if (legacyPayload && legacyPayload.contentHtml) {
+    const forwardedClasses = legacyPayload.classes.filter((className) => ![
+      'page',
+      'page-number',
+      'cover-page',
+      'no-header-footer',
+    ].includes(className));
+    if (mode === 'paged-native') {
+      return renderPagedFixedLegacySection(page, book, legacyPayload.contentHtml, {
+        headerLeft: page.meta && page.meta.headerLeft ? page.meta.headerLeft : (legacyPayload.headerLeft || book.author),
+        headerRight: page.meta && page.meta.headerRight ? page.meta.headerRight : (legacyPayload.headerRight || book.title),
+        footerText: page.meta && page.meta.footerText ? page.meta.footerText : legacyPayload.footerText,
+        extraClasses: forwardedClasses,
+      });
+    }
+    return renderFixedLegacyMarkup(page, book, legacyPayload.contentHtml, {
+      headerLeft: page.meta && page.meta.headerLeft ? page.meta.headerLeft : (legacyPayload.headerLeft || book.author),
+      headerRight: page.meta && page.meta.headerRight ? page.meta.headerRight : (legacyPayload.headerRight || book.title),
+      footerText: page.meta && page.meta.footerText ? page.meta.footerText : legacyPayload.footerText,
+      extraClasses: forwardedClasses,
+    });
+  }
+
+  if (mode === 'paged-native') {
+    if (isFlowFriendlyLegacyPagedHtml(html)) {
+      return `
+${createPagedRunningMarkers(book, {
+  headerLeft: page.meta && page.meta.headerLeft ? page.meta.headerLeft : book.author,
+  headerRight: page.meta && page.meta.headerRight ? page.meta.headerRight : book.title
+})}
+<section class="xd-paged-section xd-paged-section--legacy xd-paged-section--legacy-flow" data-section-id="${escapeHtml(page.id || '')}">
+${html}
+</section>`;
+    }
+    return renderPagedFixedLegacySection(page, book, html, {
+      headerLeft: page.meta && page.meta.headerLeft ? page.meta.headerLeft : book.author,
+      headerRight: page.meta && page.meta.headerRight ? page.meta.headerRight : book.title,
+      footerText: page.meta && page.meta.footerText ? page.meta.footerText : '',
+    });
+  }
+
+  return renderFixedLegacyMarkup(page, book, html, {
+    headerLeft: page.meta && page.meta.headerLeft ? page.meta.headerLeft : book.author,
+    headerRight: page.meta && page.meta.headerRight ? page.meta.headerRight : book.title,
+    footerText: page.meta && page.meta.footerText ? page.meta.footerText : '',
+  });
+}
+
 function renderProblem(problem, options = {}) {
+  if (options.styleSystem === 'extravagantdocs') {
+    const compactClass = options.compact ? ' problem--compact' : '';
+    const choiceClass = problem.choiceLayout === 'single-column' || options.singleColumn ? ' problem-choices--single-column' : '';
+    const instruction = problem.instruction ? `<div class="problem-instruction">${renderInline(problem.instruction)}</div>` : '';
+    const stemClass = problem.stem && /[A-Za-z]/.test(problem.stem) ? 'problem-stem eng-text' : 'problem-stem';
+    const circled = ['', '①', '②', '③', '④', '⑤'];
+    const choices = (problem.choices || []).map((choice, index) => `
+      <li>
+        <span class="problem-choice-marker">${circled[index + 1] || `${index + 1}.`}</span>
+        <span class="problem-choice-text">${escapeHtml(normalizeChoice(choice))}</span>
+      </li>`).join('');
+
+    return `
+<article class="problem problem--xd${compactClass}" data-problem-id="${escapeHtml(problem.id || '')}">
+  <div class="problem-shell">
+    <div class="problem-gutter">
+      <span class="problem-number">${escapeHtml(problem.number)}</span>
+    </div>
+    <div class="problem-body">
+      ${instruction}
+      <div class="${stemClass}">${renderMultilineText(problem.stem || problem.text || '')}</div>
+      ${(problem.choices || []).length ? `<ol class="problem-choices${choiceClass}">${choices}</ol>` : ''}
+    </div>
+  </div>
+</article>`;
+  }
+
   const compactClass = options.compact ? ' problem--compact' : '';
   const extraClass = options.extraClass ? ` ${options.extraClass}` : '';
   const choiceClass = problem.choiceLayout === 'single-column' || options.singleColumn ? ' problem-choices--single-column' : '';
@@ -839,13 +2088,14 @@ ${vocabItems}
 </article>`;
 }
 
-function renderPassageCluster(passage) {
+function renderPassageCluster(passage, options = {}) {
   const questions = Array.isArray(passage.questions) ? passage.questions : [];
   const questionsHtml = questions.map((question) => renderProblem(question, {
     compact: true,
     typeBadge: 'Question',
     extraClass: 'problem--within-passage',
-    singleColumn: true
+    singleColumn: true,
+    styleSystem: options.styleSystem || ''
   })).join('\n');
 
   return `
@@ -897,7 +2147,30 @@ function renderWordEntry(word, options = {}) {
 </article>`;
 }
 
-function renderAnswerGrid(problems) {
+function renderVocabularySectionIntro(data, page = {}) {
+  const parts = [];
+  if (data && data.day) {
+    parts.push(`DAY ${String(data.day).padStart(2, '0')}`);
+  }
+  if (page.title) {
+    parts.push(page.title);
+  }
+
+  const eyebrow = parts.join(' · ');
+  const theme = data && data.theme ? data.theme : '';
+
+  if (!eyebrow && !theme) {
+    return '';
+  }
+
+  return `
+<section class="xd-vocab-intro">
+  ${eyebrow ? `<div class="xd-vocab-intro__eyebrow">${escapeHtml(eyebrow)}</div>` : ''}
+  ${theme ? `<h2 class="xd-vocab-intro__title">${escapeHtml(theme)}</h2>` : ''}
+</section>`;
+}
+
+function renderAnswerGrid(problems, options = {}) {
   const items = problems.map((problem) => `
       <div class="answer-grid-item">
         <span class="answer-grid-number">${escapeHtml(problem.number)}</span>
@@ -906,7 +2179,7 @@ function renderAnswerGrid(problems) {
 
   return `
 <div class="answer-grid">
-  <h3 class="answer-grid-title">정답</h3>
+  <h3 class="answer-grid-title">${escapeHtml(options.title || '빠른 정답')}</h3>
   <div class="answer-grid-table">
 ${items}
   </div>
@@ -925,6 +2198,14 @@ function renderExplanation(problem) {
     ${explanationHtml}
   </div>
 </div>`;
+}
+
+function chunkItems(items, size) {
+  const chunks = [];
+  for (let i = 0; i < items.length; i += size) {
+    chunks.push(items.slice(i, i + size));
+  }
+  return chunks;
 }
 
 function renderTable(block) {
@@ -1005,7 +2286,119 @@ function filterRange(items, range) {
   return items.filter((item) => Number(item.number) >= start && Number(item.number) <= end);
 }
 
-function renderPageToArtifact(page, book) {
+function renderPageToArtifact(page, book, options = {}) {
+  const renderer = options.renderer || 'runtime';
+  if (renderer === 'paged-native') {
+    if (page.kind === 'cover') {
+      return { fixed: [], flows: [], paged: [renderPagedCoverPage(page, book)] };
+    }
+    if (page.kind === 'toc') {
+      if (usesExtravagantDocs(book) && book.styleTemplate === 'grammar-bridge') {
+        return { fixed: [], flows: [], paged: [renderPagedFixedTocPage(page)] };
+      }
+      return { fixed: [], flows: [], paged: [renderGrammarBridgeTocPage(page, { paged: true })] };
+    }
+    if (page.kind === 'chapter-opener') {
+      return {
+        fixed: [],
+        flows: [],
+        paged: [renderPagedChapterOpener(page)]
+      };
+    }
+    if (page.kind === 'legacy-page') {
+      return { fixed: [], flows: [], paged: [renderLegacyPage(page, book, { renderer })] };
+    }
+    if (page.kind === 'content') {
+      const doc = readJson(path.join(CONTENT_DIR, page.source.path));
+      const blocks = (doc.blocks || []).map(renderContentBlock);
+      return {
+        fixed: [],
+        flows: [],
+        paged: [createPagedSection(page.id || path.basename(page.source.path, '.json'), page.layout === 'compact' ? 'compact-design' : '', book, blocks, {
+          headerRight: page.title || book.title
+        })]
+      };
+    }
+    if (page.kind === 'problem-set') {
+      const data = readJson(path.join(DATA_DIR, page.source.path));
+      const problems = filterRange(data.problems || [], page.range);
+      const blocks = problems.map((problem) => renderProblem(problem, {
+        compact: page.layout === 'compact',
+        singleColumn: page.layout === 'single-column',
+        styleSystem: usesExtravagantDocs(book) ? 'extravagantdocs' : ''
+      }));
+      return {
+        fixed: [],
+        flows: [],
+        paged: [createPagedSection(page.id || path.basename(page.source.path, '.json'), getProblemSetPageClass(book, page), book, blocks, {
+          headerRight: page.title || book.title
+        })]
+      };
+    }
+    if (page.kind === 'passage-set') {
+      const data = readJson(path.join(DATA_DIR, page.source.path));
+      const paged = [];
+      (data.passages || []).forEach((passage) => {
+        paged.push(createPagedSection(`${page.id || 'passage'}-${passage.number}`, 'passage-cluster-page', book, [renderPassageCluster(passage, {
+          styleSystem: usesExtravagantDocs(book) ? 'extravagantdocs' : ''
+        })], {
+          headerRight: page.title || book.title
+        }));
+      });
+      return { fixed: [], flows: [], paged };
+    }
+    if (page.kind === 'vocabulary-set') {
+      const data = readJson(path.join(DATA_DIR, page.source.path));
+      const words = Array.isArray(data.words) ? data.words : [];
+      const blocks = [];
+      const introBlock = renderVocabularySectionIntro(data, page);
+      if (introBlock) blocks.push(introBlock);
+      blocks.push(...words.map((word) => renderWordEntry(word, { compact: page.layout === 'compact' })));
+      const headerRight = data.day ? `DAY ${String(data.day).padStart(2, '0')}` : (page.title || 'Vocabulary');
+      return {
+        fixed: [],
+        flows: [],
+        paged: [createPagedSection(page.id || path.basename(page.source.path, '.json'), '', book, blocks, {
+          headerRight,
+        })]
+      };
+    }
+    if (page.kind === 'answer-grid') {
+      const data = readJson(path.join(DATA_DIR, page.source.path));
+      const problems = filterRange(data.problems || [], page.range);
+      return {
+        fixed: [],
+        flows: [],
+        paged: [createPagedSection(page.id || path.basename(page.source.path, '.json'), 'xd-answer-grid-page', book, [renderAnswerGrid(problems, {
+          title: page.title || '빠른 정답'
+        })], {
+          headerRight: page.title || '정답',
+          title: page.title || '빠른 정답',
+          variant: 'answers'
+        })]
+      };
+    }
+    if (page.kind === 'explanations') {
+      const data = readJson(path.join(DATA_DIR, page.source.path));
+      const problems = filterRange(data.problems || [], page.range).filter((problem) => problem.explanation);
+      const blocks = usesExtravagantDocs(book)
+        ? chunkItems(problems.map(renderExplanation), 2).map((pair) => `
+<div class="explanation-pair">
+  ${pair.join('\n')}
+</div>`)
+        : problems.map(renderExplanation);
+      return {
+        fixed: [],
+        flows: [],
+        paged: [createPagedSection(page.id || path.basename(page.source.path, '.json'), usesExtravagantDocs(book) ? 'xd-explanations-page' : '', book, blocks, {
+          headerRight: page.title || '해설',
+          title: page.title || '상세 해설',
+          variant: 'explanations'
+        })]
+      };
+    }
+  }
+
   if (page.kind === 'cover') {
     return { fixed: [renderCoverPage(page, book)], flows: [] };
   }
@@ -1029,10 +2422,16 @@ function renderPageToArtifact(page, book) {
   if (page.kind === 'problem-set') {
     const data = readJson(path.join(DATA_DIR, page.source.path));
     const problems = filterRange(data.problems || [], page.range);
-    const blocks = problems.map((problem) => renderProblem(problem, { compact: page.layout === 'compact', singleColumn: page.layout === 'single-column' }));
+    const blocks = problems.map((problem) => renderProblem(problem, {
+      compact: page.layout === 'compact',
+      singleColumn: page.layout === 'single-column',
+      styleSystem: usesExtravagantDocs(book) ? 'extravagantdocs' : ''
+    }));
     return {
       fixed: [],
-      flows: [createFlowSection(page.id || path.basename(page.source.path, '.json'), 'compact-design', book, blocks, { footerText: page.title || '' })]
+      flows: [createFlowSection(page.id || path.basename(page.source.path, '.json'), getProblemSetPageClass(book, page), book, blocks, {
+        headerRight: page.title || book.title
+      })]
     };
   }
   if (page.kind === 'passage-set') {
@@ -1040,7 +2439,9 @@ function renderPageToArtifact(page, book) {
     const fixed = [];
     const flows = [];
     (data.passages || []).forEach((passage) => {
-      flows.push(createFlowSection(`${page.id || 'passage'}-${passage.number}`, 'passage-cluster-page', book, [renderPassageCluster(passage)], {
+      flows.push(createFlowSection(`${page.id || 'passage'}-${passage.number}`, 'passage-cluster-page', book, [renderPassageCluster(passage, {
+        styleSystem: usesExtravagantDocs(book) ? 'extravagantdocs' : ''
+      })], {
         footerText: page.meta && page.meta.label ? `${page.meta.label} ${page.meta.title || ''}`.trim() : ''
       }));
     });
@@ -1049,7 +2450,10 @@ function renderPageToArtifact(page, book) {
   if (page.kind === 'vocabulary-set') {
     const data = readJson(path.join(DATA_DIR, page.source.path));
     const words = Array.isArray(data.words) ? data.words : [];
-    const blocks = words.map((word) => renderWordEntry(word, { compact: page.layout === 'compact' }));
+    const blocks = [];
+    const introBlock = renderVocabularySectionIntro(data, page);
+    if (introBlock) blocks.push(introBlock);
+    blocks.push(...words.map((word) => renderWordEntry(word, { compact: page.layout === 'compact' })));
     const labelParts = [];
     if (data.day) labelParts.push(`DAY ${String(data.day).padStart(2, '0')}`);
     if (data.theme) labelParts.push(data.theme);
@@ -1066,49 +2470,63 @@ function renderPageToArtifact(page, book) {
     const problems = filterRange(data.problems || [], page.range);
     return {
       fixed: [],
-      flows: [createFlowSection(page.id || path.basename(page.source.path, '.json'), '', book, [renderAnswerGrid(problems)], {
-        footerText: page.title || '정답'
+      flows: [createFlowSection(page.id || path.basename(page.source.path, '.json'), 'xd-answer-grid-page', book, [renderAnswerGrid(problems, {
+        title: page.title || '빠른 정답'
+      })], {
+        headerRight: page.title || '정답'
       })]
     };
   }
   if (page.kind === 'explanations') {
     const data = readJson(path.join(DATA_DIR, page.source.path));
     const problems = filterRange(data.problems || [], page.range).filter((problem) => problem.explanation);
-    const blocks = problems.map(renderExplanation);
+    const blocks = usesExtravagantDocs(book)
+      ? chunkItems(problems.map(renderExplanation), 2).map((pair) => `
+<div class="explanation-pair">
+  ${pair.join('\n')}
+</div>`)
+      : problems.map(renderExplanation);
     return {
       fixed: [],
-      flows: [createFlowSection(page.id || path.basename(page.source.path, '.json'), '', book, blocks, {
-        footerText: page.title || '해설'
+      flows: [createFlowSection(page.id || path.basename(page.source.path, '.json'), usesExtravagantDocs(book) ? 'xd-explanations-page' : '', book, blocks, {
+        headerRight: page.title || '해설'
       })]
     };
   }
   throw new Error(`Unsupported page kind: ${page.kind}`);
 }
 
-function buildBook(bookId) {
+function buildBook(bookId, options = {}) {
   const manifestPath = path.join(BOOKS_DIR, `${bookId}.yaml`);
   if (!fileExists(manifestPath)) {
     throw new Error(`Manifest not found: ${manifestPath}`);
   }
 
-  const manifest = readYaml(manifestPath);
+  const manifest = loadManifest(manifestPath);
   const validationErrors = validateManifest(manifest, manifestPath);
   if (validationErrors.length) {
     throw new Error(validationErrors.join('\n'));
   }
 
   const pages = ensureDefaultPages(manifest.book, manifest.pages);
-  const css = resolveStyles(manifest.book, pages);
+  const renderer = options.renderer || 'runtime';
+  const css = resolveStyles(manifest.book, pages, {
+    runtime: renderer !== 'paged-native',
+    adapter: renderer === 'paged-native' ? 'paged-native' : ''
+  });
   const fixedPages = [];
   const flowSections = [];
+  const pagedSections = [];
 
   pages.forEach((page) => {
-    const rendered = renderPageToArtifact(page, manifest.book);
+    const rendered = renderPageToArtifact(page, manifest.book, { renderer });
     fixedPages.push(...rendered.fixed);
     flowSections.push(...rendered.flows);
+    pagedSections.push(...(rendered.paged || []));
   });
 
-  const html = `<!DOCTYPE html>
+  const html = renderer === 'paged-native'
+    ? `<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
@@ -1119,7 +2537,51 @@ function buildBook(bookId) {
 ${css}
   </style>
 </head>
-<body>
+<body class="${escapeHtml([
+    usesExtravagantDocs(manifest.book) ? 'style-system-extravagantdocs' : 'style-system-legacy',
+    manifest.book.styleTemplate ? `style-template-${manifest.book.styleTemplate}` : '',
+    manifest.book.subject ? `subject-${manifest.book.subject}` : '',
+    'renderer-paged-native'
+  ].filter(Boolean).join(' '))}">
+${pagedSections.join('\n')}
+  <script src="file://${path.join(ROOT, 'node_modules', 'pagedjs', 'dist', 'paged.polyfill.js')}"></script>
+  <script>
+window.PagedConfig = window.PagedConfig || {};
+window.PagedConfig.auto = true;
+document.addEventListener('DOMContentLoaded', function () {
+  var checkReady = setInterval(function () {
+    if (document.querySelector('.pagedjs_pages')) {
+      clearInterval(checkReady);
+      window.__TEXTBOOK_READY__ = true;
+      document.documentElement.dataset.textbookReady = 'true';
+    }
+  }, 200);
+  setTimeout(function () {
+    clearInterval(checkReady);
+    if (!window.__TEXTBOOK_READY__) {
+      window.__TEXTBOOK_READY__ = true;
+    }
+  }, 120000);
+});
+  </script>
+</body>
+</html>`
+    : `<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>${escapeHtml(manifest.book.title)}</title>
+  ${FONT_LINKS}
+  <style>
+${css}
+  </style>
+</head>
+<body class="${escapeHtml([
+    usesExtravagantDocs(manifest.book) ? 'style-system-extravagantdocs' : 'style-system-legacy',
+    manifest.book.styleTemplate ? `style-template-${manifest.book.styleTemplate}` : '',
+    manifest.book.subject ? `subject-${manifest.book.subject}` : ''
+  ].filter(Boolean).join(' '))}">
   <div id="textbook-pages">
 ${fixedPages.join('\n')}
   </div>
@@ -1133,16 +2595,33 @@ ${PAGINATION_SCRIPT}
 </html>`;
 
   fs.mkdirSync(OUTPUT_HTML_DIR, { recursive: true });
-  const outputPath = path.join(OUTPUT_HTML_DIR, `${bookId}.html`);
-  fs.writeFileSync(outputPath, html, 'utf8');
-  console.log(`  ✅ HTML: ${outputPath}`);
+  const reviewRenderer = manifest.book.reviewRenderer || 'runtime';
+  const writeTargets = [];
+
+  if (renderer === 'paged-native') {
+    if (reviewRenderer === 'paged-native') {
+      writeTargets.push(path.join(OUTPUT_HTML_DIR, `${bookId}.html`));
+    }
+    writeTargets.push(path.join(OUTPUT_HTML_DIR, `${bookId}-paged-native.html`));
+  } else if (reviewRenderer === 'paged-native') {
+    writeTargets.push(path.join(OUTPUT_HTML_DIR, `${bookId}-runtime.html`));
+  } else {
+    writeTargets.push(path.join(OUTPUT_HTML_DIR, `${bookId}.html`));
+  }
+
+  writeTargets.forEach((outputPath) => {
+    fs.writeFileSync(outputPath, html, 'utf8');
+    console.log(`  ✅ HTML: ${outputPath}`);
+  });
 }
 
 function main() {
   const args = process.argv.slice(2);
   const bookFlag = args.indexOf('--book');
+  const rendererFlag = args.indexOf('--renderer');
+  const renderer = rendererFlag !== -1 && args[rendererFlag + 1] ? args[rendererFlag + 1] : 'runtime';
   if (bookFlag === -1 || !args[bookFlag + 1]) {
-    console.error('Usage: node 04_scripts/build-textbook.js --book <bookId|all>');
+    console.error('Usage: node 04_scripts/build-textbook.js --book <bookId|all> [--renderer runtime|paged-native]');
     process.exit(1);
   }
 
@@ -1152,13 +2631,26 @@ function main() {
     files.forEach((file) => {
       const bookId = file.replace(/\.yaml$/, '');
       console.log(`\n📘 Building: ${bookId}`);
-      buildBook(bookId);
+      buildBook(bookId, { renderer });
     });
     return;
   }
 
   console.log(`\n📘 Building: ${bookArg}`);
-  buildBook(bookArg);
+  buildBook(bookArg, { renderer });
 }
 
-main();
+if (require.main === module) {
+  main();
+}
+
+module.exports = {
+  buildBook,
+  readYaml,
+  loadManifest,
+  fileExists,
+  validateManifest,
+  ensureDefaultPages,
+  resolveStyles,
+  usesExtravagantDocs,
+};

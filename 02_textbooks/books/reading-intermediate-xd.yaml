@@ -1,0 +1,14 @@
+extends: reading-intermediate.yaml
+book:
+  id: reading-intermediate-xd
+  styleSystem: extravagantdocs
+  styleTemplate: exam-paper
+  reviewRenderer: paged-native
+  layoutRules:
+    insertExplanationOpener: true
+    explanationOpenerTitle: 상세 해설
+    explanationOpenerSubtitle: Answer & Analysis
+  cover:
+    variant: minimal
+    mainTitle: 독해 INTERMEDIATE
+    edition: 2026 EDITION

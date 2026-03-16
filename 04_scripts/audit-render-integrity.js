@@ -2,20 +2,17 @@
 
 const fs = require('fs');
 const path = require('path');
-const yaml = require('js-yaml');
 const cheerio = require('cheerio');
+const { loadManifest, usesExtravagantDocs } = require('./build-textbook.js');
 
 const ROOT = path.resolve(__dirname, '..');
 const BOOKS_DIR = path.join(ROOT, '02_textbooks', 'books');
 const DATA_DIR = path.join(ROOT, '02_textbooks', 'data');
 const HTML_DIR = path.join(ROOT, '02_textbooks', 'output', 'html');
+const HTML_SRC_DIR = path.join(ROOT, '02_textbooks', 'output', 'html_src');
 const REPORTS_DIR = path.join(ROOT, '02_textbooks', 'reports');
 const REPORT_JSON = path.join(REPORTS_DIR, 'textbook-render-integrity.json');
 const REPORT_MD = path.join(REPORTS_DIR, 'textbook-render-integrity.md');
-
-function readYaml(filePath) {
-  return yaml.load(fs.readFileSync(filePath, 'utf8'));
-}
 
 function readJson(filePath) {
   return JSON.parse(fs.readFileSync(filePath, 'utf8'));
@@ -25,11 +22,19 @@ function normalizeText(text) {
   return String(text || '').replace(/\s+/g, ' ').trim();
 }
 
+function resolveAuditHtmlPath(manifest) {
+  const bookId = manifest.book.id;
+  if (usesExtravagantDocs(manifest.book)) {
+    return path.join(HTML_SRC_DIR, `${bookId}.html`);
+  }
+  return path.join(HTML_DIR, `${bookId}.html`);
+}
+
 function analyzeBook(fileName) {
   const manifestPath = path.join(BOOKS_DIR, fileName);
-  const manifest = readYaml(manifestPath);
+  const manifest = loadManifest(manifestPath);
   const bookId = manifest.book.id;
-  const htmlPath = path.join(HTML_DIR, `${bookId}.html`);
+  const htmlPath = resolveAuditHtmlPath(manifest);
   const htmlExists = fs.existsSync(htmlPath);
   const html = htmlExists ? fs.readFileSync(htmlPath, 'utf8') : '';
   const $ = htmlExists ? cheerio.load(html) : null;
@@ -153,7 +158,11 @@ function renderMarkdown(results) {
 
 function main() {
   fs.mkdirSync(REPORTS_DIR, { recursive: true });
-  const files = fs.readdirSync(BOOKS_DIR).filter((name) => name.endsWith('.yaml')).sort();
+  const requestedBookIds = process.argv.slice(2).filter(Boolean);
+  const files = fs.readdirSync(BOOKS_DIR)
+    .filter((name) => name.endsWith('.yaml'))
+    .filter((name) => requestedBookIds.length === 0 || requestedBookIds.includes(path.basename(name, '.yaml')))
+    .sort();
   const results = files.map(analyzeBook);
   const summary = {
     books: results.length,

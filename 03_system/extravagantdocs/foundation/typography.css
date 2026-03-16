@@ -1,0 +1,59 @@
+body,
+p,
+li,
+td,
+th {
+  font-family: var(--xd-font-body) !important;
+  font-size: var(--xd-text-body) !important;
+  line-height: var(--xd-leading-body) !important;
+  color: var(--xd-color-ink) !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--xd-font-heading) !important;
+  color: var(--xd-color-ink) !important;
+  line-height: var(--xd-leading-tight) !important;
+  break-after: avoid-page !important;
+  page-break-after: avoid !important;
+}
+
+h1 {
+  font-size: var(--xd-text-2xl) !important;
+  margin: 0 0 var(--xd-space-lg) !important;
+}
+
+h2 {
+  font-size: var(--xd-text-xl) !important;
+  margin: var(--xd-space-xl) 0 var(--xd-space-md) !important;
+}
+
+h3 {
+  font-size: var(--xd-text-lg) !important;
+  margin: var(--xd-space-lg) 0 var(--xd-space-sm) !important;
+}
+
+p,
+ul,
+ol,
+dl {
+  margin: 0 0 var(--xd-space-sm) !important;
+}
+
+ul,
+ol {
+  padding-left: 5mm;
+}
+
+strong,
+b {
+  font-weight: 700;
+}
+
+.xd-latin {
+  font-family: var(--xd-font-latin) !important;
+}

@@ -2409,6 +2409,809 @@
       "explanation": "빈칸에는 '어떠한 상태를 유지했다'는 의미의 동사가 필요합니다. `remain`은 2형식 자동사로 뒤에 형용사 보어(`stable`)를 취할 수 있으며, 수동태로 쓰지 않습니다. 따라서 능동태 remained가 정답입니다."
     },
     {
+      "id": "grammar-bridge-ch01-151",
+      "number": 151,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장에서 밑줄 친 부사가 수식하는 대상으로 가장 적절한 것은?",
+      "choices": [
+        "동사 was",
+        "형용사 successful",
+        "명사 experiment",
+        "부사 statistically",
+        "문장 전체"
+      ],
+      "answer": 2,
+      "explanation": "<p>부사 remarkably(놀라울 정도로)는 형용사 successful(성공적인)을 수식하여 그 정도를 강조합니다.</p>",
+      "stem": "<p>\"The experiment was &lt;u&gt;remarkably&lt;/u&gt; successful, yielding results that were statistically significant.\"</p>"
+    },
+    {
+      "id": "grammar-bridge-ch01-152",
+      "number": 152,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 어법상 올바른 문장은?",
+      "choices": [
+        "Seldom does the company announce such significant changes without prior notice.",
+        "Hardly had I arrived home when the phone rang.",
+        "Little did she knew about the complexity of the situation.",
+        "Never I have encountered such a dedicated researcher.",
+        "Scarcely the meeting had begun than the fire alarm went off."
+      ],
+      "answer": 1,
+      "explanation": "<p>부정부사 Seldom이 문두에 와서 주어(the company)와 동사(announce)가 does...announce 형태로 올바르게 도치되었습니다. ②→when, ③→know, ④→Never have I, ⑤→when.</p>",
+      "choiceLayout": "single-column"
+    },
+    {
+      "id": "grammar-bridge-ch01-153",
+      "number": 153,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "choices": [
+        "very / much",
+        "much / very",
+        "very / very",
+        "much / much",
+        "so / too"
+      ],
+      "answer": 2,
+      "explanation": "<p>과거분사 confused는 much로 수식하고, 감정을 나타내는 과거분사 interested는 예외적으로 very로 수식할 수 있습니다.</p>",
+      "stem": "<p>The students were _______ confused by the professor's explanation, but they were _______ interested in the topic to ask further questions.</p>"
+    },
+    {
+      "id": "grammar-bridge-ch01-154",
+      "number": 154,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 빈도부사의 위치가 어법상 잘못된 것은?",
+      "choices": [
+        "She usually arrives at the office before 9 AM.",
+        "The researchers have always been careful about data accuracy.",
+        "Sometimes are the results not what we expected.",
+        "He is never satisfied with mediocre performance.",
+        "We will often discuss these issues in our meetings."
+      ],
+      "answer": 3,
+      "explanation": "<p>Sometimes는 문두, 문중, 문미에 올 수 있지만, 문두에 올 경우 주어와 동사가 도치되지 않습니다. 올바른 문장은 'Sometimes the results are not...'입니다.</p>",
+      "choiceLayout": "single-column"
+    },
+    {
+      "id": "grammar-bridge-ch01-155",
+      "number": 155,
+      "type": "fill-in-blank",
+      "instruction": "다음 대화에서 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "choices": [
+        "high / high",
+        "highly / highly",
+        "high / highly",
+        "highly / high",
+        "high / very"
+      ],
+      "answer": 3,
+      "explanation": "<p>첫 번째 빈칸은 물리적으로 '높이' 날았다는 의미이므로 high가, 두 번째 빈칸은 '매우' 숙련되었다는 추상적인 정도를 나타내므로 highly가 적절합니다.</p>",
+      "stem": "A: \"The helicopter flew _______ over the mountain peaks.\"<br> B: \"Yes, and the pilot was _______ skilled to navigate through such difficult terrain.\""
+    },
+    {
+      "id": "grammar-bridge-ch01-156",
+      "number": 156,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 의미가 다른 하나는?",
+      "choices": [
+        "Only she understood the professor's lecture.",
+        "She only understood the professor's lecture.",
+        "She understood only the professor's lecture.",
+        "She understood the professor's lecture only.",
+        "She understood the only professor's lecture."
+      ],
+      "answer": 5,
+      "explanation": "<p>⑤에서 only는 형용사로 명사 professor를 수식하여 '유일한 교수'라는 의미입니다. 나머지는 모두 부사로 각각 다른 대상을 수식합니다.</p>",
+      "choiceLayout": "single-column"
+    },
+    {
+      "id": "grammar-bridge-ch01-157",
+      "number": 157,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "choices": [
+        "yet / yet / still",
+        "already / still / yet",
+        "still / already / yet",
+        "yet / already / still",
+        "already / yet / still"
+      ],
+      "answer": 1,
+      "explanation": "<p>의문문에서는 '벌써'라는 의미의 yet, 부정문에서는 '아직'이라는 의미의 yet, 그리고 '여전히' 진행 중인 상황을 나타낼 때는 still을 사용합니다.</p>",
+      "stem": "A: \"Has the research team published their findings _______?\"<br> B: \"No, they haven't completed the peer review process _______. They're _______ working on revisions.\""
+    },
+    {
+      "id": "grammar-bridge-ch01-158",
+      "number": 158,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장에서 부사들의 배열이 어법상 가장 자연스러운 것은?",
+      "choices": [
+        "The scientists worked carefully in the laboratory yesterday.",
+        "The scientists worked in the laboratory carefully yesterday.",
+        "The scientists worked yesterday carefully in the laboratory.",
+        "Yesterday the scientists worked carefully in the laboratory.",
+        "In the laboratory the scientists worked yesterday carefully."
+      ],
+      "answer": 2,
+      "explanation": "<p>일반적인 부사 순서는 '장소(in the laboratory) &gt; 방법(carefully) &gt; 시간(yesterday)'입니다. ①도 가능하지만, 짧은 방법부사는 동사 바로 뒤에 오는 것이 더 자연스럽습니다.</p>",
+      "choiceLayout": "single-column"
+    },
+    {
+      "id": "grammar-bridge-ch01-159",
+      "number": 159,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 어법상 올바른 문장은?",
+      "choices": [
+        "The problem is too complex to solve it easily.",
+        "She is intelligent enough solving this equation.",
+        "The lecture was so boring that many students fell asleep.",
+        "He is too young for understanding advanced concepts.",
+        "The equipment is enough sensitive to detect minor changes."
+      ],
+      "answer": 3,
+      "explanation": "<p>so...that 구문이 결과를 나타내며 올바르게 사용되었습니다. ① to solve 뒤의 it은 불필요, ② enough to solve, ④ too young to understand, ⑤ sensitive enough.</p>",
+      "choiceLayout": "single-column"
+    },
+    {
+      "id": "grammar-bridge-ch01-160",
+      "number": 160,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장을 부정부사 'Never'로 시작하도록 바꾼 것 중 올바른 것은?",
+      "choices": [
+        "Never I have seen such dedication in a student.",
+        "Never have I seen such dedication in a student.",
+        "Never I saw such dedication in a student.",
+        "Never did I have seen such dedication in a student.",
+        "Never had I seen such dedication in a student."
+      ],
+      "answer": 2,
+      "explanation": "<p>부정부사 Never가 문두로 오면서, 조동사 have가 주어 I 앞으로 이동하여 'Never have I seen...' 형태가 됩니다.</p>",
+      "stem": "<p>\"I have never seen such dedication in a student.\"</p>",
+      "choiceLayout": "single-column"
+    },
+    {
+      "id": "grammar-bridge-ch01-161",
+      "number": 161,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장에서 밑줄 친 부분의 의미로 가장 적절한 것은?",
+      "choices": [
+        "고급 학생들조차도 이 개념에 어려움을 겪었다",
+        "고급 학생들은 이 개념에 어려움을 겪기까지 했다",
+        "고급 학생들만이 이 개념에 어려움을 겪었다",
+        "고급 학생들은 이 개념을 이해하기도 했다",
+        "고급 학생들은 특히 이 개념에 어려움을 겪었다"
+      ],
+      "answer": 1,
+      "explanation": "<p>even이 명사구 'advanced students'를 직접 수식하므로, '~조차도'라는 의미로 해석하는 것이 가장 정확합니다.</p>",
+      "stem": "<p>\"The professor said that &lt;u&gt;even advanced students&lt;/u&gt; struggled with this concept.\"</p>",
+      "choiceLayout": "single-column"
+    },
+    {
+      "id": "grammar-bridge-ch01-162",
+      "number": 162,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 어법상 올바른 문장은?",
+      "choices": [
+        "Not until the experiment was completed did we realize the significance.",
+        "Not until the experiment was completed we realized the significance.",
+        "Not until did the experiment complete we realized the significance.",
+        "Not until was the experiment completed did we realize the significance.",
+        "Not until the experiment completed did we realize the significance."
+      ],
+      "answer": 1,
+      "explanation": "<p>'Not until + 부사구/절'이 문두에 오면, 주절에서 주어와 동사가 도치됩니다. 따라서 'did we realize'가 올바른 형태입니다.</p>",
+      "choiceLayout": "single-column"
+    },
+    {
+      "id": "grammar-bridge-ch01-163",
+      "number": 163,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장에서 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "choices": [
+        "very",
+        "quite",
+        "rather",
+        "so",
+        "too"
+      ],
+      "answer": 4,
+      "explanation": "<p>뒤에 that절이 이어져 결과를 나타내고 있으므로, '매우 ~해서 ...하다'라는 의미의 so...that 구문을 만드는 so가 정답입니다.</p>",
+      "stem": "<p>The research findings were _______ significant that they revolutionized our understanding of the phenomenon.</p>"
+    },
+    {
+      "id": "grammar-bridge-ch01-164",
+      "number": 164,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 방법부사의 위치가 어법상 가장 자연스러운 것은?",
+      "choices": [
+        "She quickly solved the mathematical problem.",
+        "She solved quickly the mathematical problem.",
+        "She solved the mathematical problem quickly.",
+        "Quickly she solved the mathematical problem.",
+        "She solved the quickly mathematical problem."
+      ],
+      "answer": 3,
+      "explanation": "<p>방법부사(quickly)는 일반적으로 동사+목적어 뒤에 위치하는 것이 가장 자연스럽습니다. ①, ④도 문법적으로 가능하지만 ③이 가장 일반적입니다.</p>",
+      "choiceLayout": "single-column"
+    },
+    {
+      "id": "grammar-bridge-ch01-165",
+      "number": 165,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "choices": [
+        "hard / hard",
+        "hardly / hardly",
+        "hard / hardly",
+        "hardly / hard",
+        "hard / never"
+      ],
+      "answer": 3,
+      "explanation": "<p>'열심히' 일했다는 의미이므로 hard, '거의 믿을 수 없었다'는 부정적 의미이므로 hardly가 적절합니다.</p>",
+      "stem": "<p>\"Despite working _______ for months, the team could _______ believe they had finally achieved their goal.\"</p>"
+    },
+    {
+      "id": "grammar-bridge-ch01-166",
+      "number": 166,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 어법상 올바른 문장은?",
+      "choices": [
+        "I have already finished my assignment yesterday.",
+        "She has been recently promoted to manager.",
+        "We have just completed the project this morning.",
+        "They have lately been working on the proposal.",
+        "He has never before experienced such success."
+      ],
+      "answer": 5,
+      "explanation": "<p>never before는 현재완료 시제와 함께 '이전에는 결코 ~한 적이 없다'는 의미로 잘 어울립니다. ①, ③은 명백한 과거 시점 부사(yesterday, this morning)와 현재완료를 함께 쓸 수 없습니다.</p>",
+      "choiceLayout": "single-column"
+    },
+    {
+      "id": "grammar-bridge-ch01-167",
+      "number": 167,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장에서 밑줄 친 부사의 의미로 가장 적절한 것은?",
+      "choices": [
+        "넓게",
+        "해외에서",
+        "널리",
+        "공개적으로",
+        "멀리"
+      ],
+      "answer": 2,
+      "explanation": "<p>abroad는 '해외에서' 또는 '해외로'라는 의미를 가진 장소부사입니다.</p>",
+      "stem": "<p>\"The conference will be held &lt;u&gt;abroad&lt;/u&gt; next year.\"</p>"
+    },
+    {
+      "id": "grammar-bridge-ch01-168",
+      "number": 168,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 어법상 올바른 문장은?",
+      "choices": [
+        "Only when the results were analyzed did we understand the implications.",
+        "Only when the results were analyzed we understood the implications.",
+        "Only when were the results analyzed did we understand the implications.",
+        "Only when the results analyzed did we understand the implications.",
+        "Only when did the results analyze we understood the implications."
+      ],
+      "answer": 1,
+      "explanation": "<p>'Only when + 부사절'이 문두에 오면 주절에서 도치가 발생해야 합니다. 따라서 'did we understand'가 올바른 형태입니다.</p>",
+      "choiceLayout": "single-column"
+    },
+    {
+      "id": "grammar-bridge-ch01-169",
+      "number": 169,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 어법상 잘못된 문장은?",
+      "choices": [
+        "The presentation was very interesting.",
+        "He was very surprised by the news.",
+        "The results were very disappointing.",
+        "She felt very pleased with her performance.",
+        "The data was very analyzed by experts."
+      ],
+      "answer": 5,
+      "explanation": "<p>very는 동사를 직접 수식할 수 없습니다. 따라서 'The data was analyzed very carefully'와 같이 다른 부사를 수식하거나, 'The analysis was very thorough'와 같이 형용사를 수식해야 합니다.</p>",
+      "choiceLayout": "single-column"
+    },
+    {
+      "id": "grammar-bridge-ch01-170",
+      "number": 170,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 의미상 가장 적절한 문장은?",
+      "choices": [
+        "He always doesn't come to class on time.",
+        "He doesn't always come to class on time.",
+        "He never always comes to class on time.",
+        "Always he doesn't come to class on time.",
+        "He comes always not to class on time."
+      ],
+      "answer": 2,
+      "explanation": "<p>'not always'는 '항상 ~인 것은 아니다'라는 의미의 부분 부정을 나타냅니다. ①의 'always not'은 어색한 표현입니다.</p>",
+      "choiceLayout": "single-column"
+    },
+    {
+      "id": "grammar-bridge-ch01-171",
+      "number": 171,
+      "type": "fill-in-blank",
+      "instruction": "다음 대화에서 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "choices": [
+        "late / late / lately",
+        "lately / lately / late",
+        "late / lately / late",
+        "lately / late / lately",
+        "late / late / late"
+      ],
+      "answer": 1,
+      "explanation": "<p>첫 번째 빈칸은 '늦게' 도착했다는 의미의 late, 두 번째도 '늦게' 도착하는지를 묻는 late, 마지막은 '최근에'라는 의미의 lately가 적절합니다.</p>",
+      "stem": "A: \"Dr. Smith arrived _______ for the meeting yesterday.\"<br> B: \"Has he been arriving _______ to meetings _______?\""
+    },
+    {
+      "id": "grammar-bridge-ch01-172",
+      "number": 172,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 어법상 올바른 문장은?",
+      "choices": [
+        "She works more carefully than before.",
+        "He arrived more early than expected.",
+        "The machine operates more efficiently than the old one.",
+        "They spoke more quietly in the library.",
+        "She answered more correctly than others."
+      ],
+      "answer": 3,
+      "explanation": "<p>-ly로 끝나는 부사는 more를 붙여 비교급을 만듭니다. ② early의 비교급은 earlier입니다. ⑤ correctly는 more correctly가 맞습니다. (문제 수정: ①, ③, ④, ⑤ 모두 가능. ②가 명백한 오류)</p>",
+      "choiceLayout": "single-column"
+    },
+    {
+      "id": "grammar-bridge-ch01-173",
+      "number": 173,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 어법상 올바른 문장은?",
+      "choices": [
+        "No sooner had the lecture begun than students started taking notes.",
+        "No sooner the lecture had begun than students started taking notes.",
+        "No sooner had the lecture begun when students started taking notes.",
+        "No sooner did the lecture begin than students started taking notes.",
+        "No sooner the lecture began than students started taking notes."
+      ],
+      "answer": 1,
+      "explanation": "<p>'No sooner ~ than ...' 구문은 '~하자마자 ...했다'는 의미로, No sooner 뒤에는 과거완료 도치(had + S + p.p.)가 오는 것이 일반적입니다.</p>",
+      "choiceLayout": "single-column"
+    },
+    {
+      "id": "grammar-bridge-ch01-174",
+      "number": 174,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장에서 밑줄 친 부분을 문두로 이동시킬 때 올바른 것은?",
+      "choices": [
+        "Only after extensive analysis the team discovered the error.",
+        "Only after extensive analysis did the team discover the error.",
+        "Only after extensive analysis discovered the team the error.",
+        "Only after extensive analysis was the error discovered by the team.",
+        "Only after extensive analysis the error was discovered by the team."
+      ],
+      "answer": 2,
+      "explanation": "<p>'Only after + 부사구'가 문두로 나오면 주절에서 도치가 발생합니다. 일반동사 discovered이므로 'did the team discover'가 올바른 형태입니다.</p>",
+      "stem": "<p>\"The team discovered the error &lt;u&gt;only after extensive analysis&lt;/u&gt;.\"</p>",
+      "choiceLayout": "single-column"
+    },
+    {
+      "id": "grammar-bridge-ch01-175",
+      "number": 175,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "choices": [
+        "much / very",
+        "very / much",
+        "much / much",
+        "very / very",
+        "so / too"
+      ],
+      "answer": 3,
+      "explanation": "<p>과거분사 improved와 encouraged는 모두 much로 수식하는 것이 원칙입니다. encouraged는 감정 형용사로 very도 가능하지만, much가 더 격식적이고 강한 의미를 전달합니다.</p>",
+      "stem": "<p>The patients were _______ improved after the new treatment, and the doctors were _______ encouraged by the results.</p>"
+    },
+    {
+      "id": "grammar-bridge-ch01-176",
+      "number": 176,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 어법상 잘못된 것은?",
+      "choices": [
+        "She spoke softly to avoid waking the baby.",
+        "The experiment was conducted systematic.",
+        "He answered the question confidently.",
+        "The project was completed successfully.",
+        "They worked diligently throughout the night."
+      ],
+      "answer": 2,
+      "explanation": "<p>동사 conduct를 수식하기 위해서는 형용사 systematic이 아니라 부사 systematically가 와야 합니다.</p>",
+      "choiceLayout": "single-column"
+    },
+    {
+      "id": "grammar-bridge-ch01-177",
+      "number": 177,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 어법상 가장 자연스러운 문장은?",
+      "choices": [
+        "The researchers presented their findings clearly at the conference yesterday.",
+        "The researchers presented clearly their findings at the conference yesterday.",
+        "The researchers presented their findings at the conference clearly yesterday.",
+        "The researchers clearly presented their findings at the conference yesterday.",
+        "At the conference the researchers presented their findings clearly yesterday."
+      ],
+      "answer": 1,
+      "explanation": "<p>'방법(clearly) &gt; 장소(at the conference) &gt; 시간(yesterday)' 순서가 가장 일반적이지만, 긴 부사구들 사이에서 짧은 부사는 동사 가까이 위치할 수 있습니다. ④도 가능하지만 ①이 더 자연스럽습니다.</p>",
+      "choiceLayout": "single-column"
+    },
+    {
+      "id": "grammar-bridge-ch01-178",
+      "number": 178,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 어법상 올바른 문장은?",
+      "choices": [
+        "Little she knew about the consequences of her decision.",
+        "Little did she know about the consequences of her decision.",
+        "Little she did know about the consequences of her decision.",
+        "Little knew she about the consequences of her decision.",
+        "Little does she knew about the consequences of her decision."
+      ],
+      "answer": 2,
+      "explanation": "<p>부정부사 Little이 문두에 오면 주어와 동사가 도치됩니다. 과거 시제이므로 'did she know'가 올바른 형태입니다.</p>",
+      "choiceLayout": "single-column"
+    },
+    {
+      "id": "grammar-bridge-ch01-179",
+      "number": 179,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장에서 밑줄 친 부사의 역할로 가장 적절한 것은?",
+      "choices": [
+        "빈도를 나타냄",
+        "확신을 나타냄",
+        "정도를 나타냄",
+        "방법을 나타냄",
+        "시간을 나타냄"
+      ],
+      "answer": 2,
+      "explanation": "<p>certainly는 '확실히, 틀림없이'라는 의미로, 화자의 확신을 나타내는 문장부사입니다.</p>",
+      "stem": "<p>\"The professor &lt;u&gt;certainly&lt;/u&gt; knows how to explain complex theories.\"</p>"
+    },
+    {
+      "id": "grammar-bridge-ch01-180",
+      "number": 180,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "choices": [
+        "closely / nearly",
+        "nearly / closely",
+        "close / near",
+        "near / close",
+        "closely / closely"
+      ],
+      "answer": 1,
+      "explanation": "<p>'면밀하게' 조사했다는 의미이므로 closely, '거의' 동일하다는 의미이므로 nearly가 적절합니다.</p>",
+      "stem": "<p>The scientists examined the specimen _______ and found that it was _______ identical to the reference sample.</p>"
+    },
+    {
+      "id": "grammar-bridge-ch01-181",
+      "number": 181,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 어법상 올바른 문장은?",
+      "choices": [
+        "Rarely do scientists achieve such breakthrough results.",
+        "Rarely scientists achieve such breakthrough results.",
+        "Rarely achieve scientists such breakthrough results.",
+        "Rarely scientists do achieve such breakthrough results.",
+        "Rarely do achieve scientists such breakthrough results."
+      ],
+      "answer": 1,
+      "explanation": "<p>부정부사 Rarely가 문두에 오면 주어(scientists)와 동사(achieve)가 do...achieve 형태로 도치됩니다.</p>",
+      "choiceLayout": "single-column"
+    },
+    {
+      "id": "grammar-bridge-ch01-182",
+      "number": 182,
+      "type": "fill-in-blank",
+      "instruction": "다음 문장에서 'particularly'가 수식하는 것은?",
+      "choices": [
+        "students",
+        "were",
+        "interested",
+        "advanced",
+        "methods"
+      ],
+      "answer": 3,
+      "explanation": "<p>particularly(특히)는 형용사(분사) interested를 수식하여 '특히 관심이 있는'이라는 의미를 만듭니다.</p>",
+      "stem": "<p>\"The students were particularly interested in the advanced research methods.\"</p>"
+    },
+    {
+      "id": "grammar-bridge-ch01-183",
+      "number": 183,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 어법상 올바른 문장은?",
+      "choices": [
+        "He recently has completed his dissertation.",
+        "She has recently been appointed as director.",
+        "They recently have been working on the project.",
+        "We recently have received the approval.",
+        "I recently have been studying for the exam."
+      ],
+      "answer": 2,
+      "explanation": "<p>recently와 같은 부사는 현재완료 시제에서 조동사 have와 본동사(또는 been) 사이에 위치합니다. 따라서 'has recently been'이 올바른 어순입니다.</p>",
+      "choiceLayout": "single-column"
+    },
+    {
+      "id": "grammar-bridge-ch01-184",
+      "number": 184,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 어법상 올바른 문장은?",
+      "choices": [
+        "Having completed the experiment, carefully the data was analyzed.",
+        "Having completed the experiment, the data was carefully analyzed.",
+        "Carefully having completed the experiment, the data was analyzed.",
+        "Having carefully completed the experiment, analyzed was the data.",
+        "Having completed carefully the experiment, the data was analyzed."
+      ],
+      "answer": 2,
+      "explanation": "<p>분사구문이 끝난 후, 주절은 완전한 문장 구조를 가져야 합니다. 주절 'the data was carefully analyzed'에서 부사 carefully의 위치가 가장 자연스럽습니다.</p>",
+      "choiceLayout": "single-column"
+    },
+    {
+      "id": "grammar-bridge-ch01-185",
+      "number": 185,
+      "type": "fill-in-blank",
+      "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "choices": [
+        "most / mostly",
+        "mostly / most",
+        "most / most",
+        "mostly / mostly",
+        "mainly / most"
+      ],
+      "answer": 2,
+      "explanation": "<p>'주로'라는 의미의 부사는 mostly, '가장'이라는 의미의 최상급 부사는 most입니다.</p>",
+      "stem": "<p>The audience consisted _______ of graduate students, and they were the _______ attentive group the professor had ever taught.</p>"
+    },
+    {
+      "id": "grammar-bridge-ch01-186",
+      "number": 186,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 가장 강조적인 의미를 가진 문장은?",
+      "choices": [
+        "She definitely will succeed in her research.",
+        "She will definitely succeed in her research.",
+        "She will succeed definitely in her research.",
+        "She will succeed in her research definitely.",
+        "Definitely, she will succeed in her research."
+      ],
+      "answer": 5,
+      "explanation": "<p>문장부사를 문두에 위치시키고 콤마를 찍는 것이 문장 전체를 강조하는 가장 강한 표현입니다.</p>",
+      "choiceLayout": "single-column"
+    },
+    {
+      "id": "grammar-bridge-ch01-187",
+      "number": 187,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 어법상 올바른 문장은?",
+      "choices": [
+        "Under no circumstances should students cheat on exams.",
+        "Under no circumstances students should cheat on exams.",
+        "Under no circumstances should cheat students on exams.",
+        "Under no circumstances students should not cheat on exams.",
+        "Under no circumstances should students not cheat on exams."
+      ],
+      "answer": 1,
+      "explanation": "<p>부정부사구 Under no circumstances가 문두에 오면 주어와 동사가 도치되어야 합니다. 'should students cheat'가 올바른 어순입니다.</p>",
+      "choiceLayout": "single-column"
+    },
+    {
+      "id": "grammar-bridge-ch01-188",
+      "number": 188,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 어법상 올바른 문장은?",
+      "choices": [
+        "The new method is much more effective than the previous one.",
+        "The new method is very more effective than the previous one.",
+        "The new method is too more effective than the previous one.",
+        "The new method is quite more effective than the previous one.",
+        "The new method is so more effective than the previous one."
+      ],
+      "answer": 1,
+      "explanation": "<p>비교급(more effective)을 강조할 때는 much, far, even, still, a lot 등을 사용합니다. very는 비교급을 수식할 수 없습니다.</p>",
+      "choiceLayout": "single-column"
+    },
+    {
+      "id": "grammar-bridge-ch01-189",
+      "number": 189,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 어법상 올바른 문장은?",
+      "choices": [
+        "She almost read the entire book in one day.",
+        "She read almost the entire book in one day.",
+        "She read the almost entire book in one day.",
+        "She read the entire almost book in one day.",
+        "Almost she read the entire book in one day."
+      ],
+      "answer": 2,
+      "explanation": "<p>almost는 수식하는 대상 바로 앞에 위치해야 합니다. '거의 책 전체를'이라는 의미이므로 'almost the entire book'이 가장 자연스럽습니다.</p>",
+      "choiceLayout": "single-column"
+    },
+    {
+      "id": "grammar-bridge-ch01-190",
+      "number": 190,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 의미가 가장 강한 것은?",
+      "choices": [
+        "He frequently makes mistakes.",
+        "He often makes mistakes.",
+        "He usually makes mistakes.",
+        "He always makes mistakes.",
+        "He sometimes makes mistakes."
+      ],
+      "answer": 4,
+      "explanation": "<p>always는 100%의 빈도를 나타내므로 의미가 가장 강합니다. (always &gt; usually &gt; frequently &gt; often &gt; sometimes)</p>",
+      "choiceLayout": "single-column"
+    },
+    {
+      "id": "grammar-bridge-ch01-191",
+      "number": 191,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 어법상 가장 자연스러운 문장은?",
+      "choices": [
+        "The professor spoke clearly and slowly during the lecture in the auditorium yesterday.",
+        "The professor spoke clearly and slowly in the auditorium during the lecture yesterday.",
+        "The professor spoke clearly and slowly yesterday during the lecture in the auditorium.",
+        "Yesterday the professor spoke clearly and slowly during the lecture in the auditorium.",
+        "In the auditorium the professor spoke clearly and slowly during the lecture yesterday."
+      ],
+      "answer": 2,
+      "explanation": "<p>'방법(clearly and slowly) &gt; 장소(in the auditorium) &gt; 시간(during the lecture yesterday)' 순서가 가장 자연스럽습니다.</p>",
+      "choiceLayout": "single-column"
+    },
+    {
+      "id": "grammar-bridge-ch01-192",
+      "number": 192,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 어법상 잘못된 문장은?",
+      "choices": [
+        "The medicine worked effectively on all patients.",
+        "She efficiently organized the conference materials.",
+        "The team cooperated successfully on the project.",
+        "He specifically requested additional information.",
+        "The results were significantly different from previous studies."
+      ],
+      "answer": 5,
+      "explanation": "<p>모든 문장에서 부사가 동사 또는 형용사를 올바르게 수식하고 있습니다. (문제 수정: 모든 문장이 올바름)</p>",
+      "choiceLayout": "single-column"
+    },
+    {
+      "id": "grammar-bridge-ch01-193",
+      "number": 193,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 어법상 올바른 문장은?",
+      "choices": [
+        "Should you need any assistance, please contact us immediately.",
+        "Should you need any assistance, contact us please immediately.",
+        "You should need any assistance, please contact us immediately.",
+        "Should need you any assistance, please contact us immediately.",
+        "Should you any assistance need, please contact us immediately."
+      ],
+      "answer": 1,
+      "explanation": "<p>가정법 미래에서 If가 생략되면 주어와 조동사 should가 도치됩니다. 'If you should need...'가 'Should you need...'로 바뀐 올바른 문장입니다.</p>",
+      "choiceLayout": "single-column"
+    },
+    {
+      "id": "grammar-bridge-ch01-194",
+      "number": 194,
+      "type": "fill-in-blank",
+      "instruction": "다음 대화에서 B의 답변 중 어법상 올바른 것은?",
+      "choices": [
+        "\"Yes, she did it.\"",
+        "\"Yes, she did carefully.\"",
+        "\"Yes, she did so.\"",
+        "\"Yes, she completed.\"",
+        "\"Yes, carefully she did.\""
+      ],
+      "answer": 3,
+      "explanation": "<p>so는 앞서 언급된 동사구(complete the assignment carefully)를 대신하는 대부사로 사용될 수 있습니다. 'Yes, she did so.'는 'Yes, she completed the assignment carefully.'를 의미합니다.</p>",
+      "stem": "A: \"Did she complete the assignment carefully?\"<br> B: _______"
+    },
+    {
+      "id": "grammar-bridge-ch01-195",
+      "number": 195,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 어법상 올바른 문장은?",
+      "choices": [
+        "He suggested carefully reviewing the proposal.",
+        "He suggested reviewing carefully the proposal.",
+        "He carefully suggested reviewing the proposal.",
+        "He suggested reviewing the proposal carefully.",
+        "모든 문장이 올바름"
+      ],
+      "answer": 5,
+      "explanation": "<p>부사는 동명사를 수식할 때 동명사 앞(①), 동명사구 뒤(④), 또는 본동사 앞(③)에 위치할 수 있습니다. 문맥상 모두 가능합니다.</p>",
+      "choiceLayout": "single-column"
+    },
+    {
+      "id": "grammar-bridge-ch01-196",
+      "number": 196,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 의미상 가장 적절한 문장은?",
+      "choices": [
+        "The theory is very extremely important.",
+        "The theory is quite very important.",
+        "The theory is extremely important.",
+        "The theory is too very important.",
+        "The theory is so very important."
+      ],
+      "answer": 3,
+      "explanation": "<p>very와 extremely는 모두 정도를 나타내는 강조부사로, 함께 사용하는 것은 어색하며 의미상 중복됩니다.</p>",
+      "choiceLayout": "single-column"
+    },
+    {
+      "id": "grammar-bridge-ch01-197",
+      "number": 197,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 어법상 올바른 문장은?",
+      "choices": [
+        "The experiment was carefully conducted by experienced researchers.",
+        "The experiment was conducted carefully by experienced researchers.",
+        "Carefully the experiment was conducted by experienced researchers.",
+        "The experiment carefully was conducted by experienced researchers.",
+        "모든 문장이 올바름"
+      ],
+      "answer": 5,
+      "explanation": "<p>수동태 문장에서 방법부사는 'be + p.p.' 사이(①), p.p. 뒤(②), 또는 문장 맨 앞(③)에 올 수 있습니다. 모두 문법적으로 가능합니다.</p>",
+      "choiceLayout": "single-column"
+    },
+    {
+      "id": "grammar-bridge-ch01-198",
+      "number": 198,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 어법상 올바른 문장은?",
+      "choices": [
+        "The student who always studies hard will succeed.",
+        "The student who studies always hard will succeed.",
+        "The student who studies hard always will succeed.",
+        "The always student who studies hard will succeed.",
+        "The student always who studies hard will succeed."
+      ],
+      "answer": 1,
+      "explanation": "<p>관계대명사절 내에서도 빈도부사 always는 일반동사 studies 앞에 위치하는 것이 가장 자연스럽습니다.</p>",
+      "choiceLayout": "single-column"
+    },
+    {
+      "id": "grammar-bridge-ch01-199",
+      "number": 199,
+      "type": "fill-in-blank",
+      "instruction": "다음 중 어법상 올바른 문장은?",
+      "choices": [
+        "Fortunately, the weather improved before the outdoor experiment.",
+        "The weather, fortunately, improved before the outdoor experiment.",
+        "The weather improved, fortunately, before the outdoor experiment.",
+        "The weather improved before the outdoor experiment, fortunately.",
+        "모든 문장이 올바름"
+      ],
+      "answer": 5,
+      "explanation": "<p>Fortunately와 같은 문장부사는 문장 맨 앞, 주어와 동사 사이(콤마와 함께), 또는 문장 맨 뒤 등 다양한 위치에 올 수 있습니다.</p>",
+      "choiceLayout": "single-column"
+    },
+    {
+      "id": "grammar-bridge-ch01-200",
+      "number": 200,
+      "type": "fill-in-blank",
+      "instruction": "다음 글에서 어법상 잘못된 부분은?",
+      "choices": [
+        "observed",
+        "closely",
+        "carefully",
+        "much",
+        "previously"
+      ],
+      "answer": 4,
+      "explanation": "<p>비교급(significant than...)을 수식할 때는 very가 아닌 much를 사용해야 합니다. 하지만 여기서는 'significant'가 원급이므로 'much more significant'가 되거나, 문맥상 'very significant'가 되어야 합니다. 'much significant'는 틀린 표현입니다.</p>",
+      "stem": "<p>\"Never before had scientists ①&lt;u&gt;observed&lt;/u&gt; such a phenomenon so ②&lt;u&gt;closely&lt;/u&gt;. The team ③&lt;u&gt;carefully&lt;/u&gt; analyzed the data and found that the results were ④&lt;u&gt;much&lt;/u&gt; significant than ⑤&lt;u&gt;previously&lt;/u&gt; thought.\"</p>"
+    },
+    {
       "id": "grammar-bridge-ch01-201",
       "number": 201,
       "type": "fill-in-blank",

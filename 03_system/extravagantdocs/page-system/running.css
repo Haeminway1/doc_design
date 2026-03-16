@@ -1,0 +1,24 @@
+.xd-running-left,
+.xd-running-right {
+  display: inline-block !important;
+}
+
+.xd-running-left {
+  float: left !important;
+}
+
+.xd-running-right {
+  float: right !important;
+}
+
+.xd-running-clear {
+  clear: both !important;
+}
+
+.xd-running-title {
+  string-set: xd-running-title content() !important;
+}
+
+.xd-running-section {
+  string-set: xd-running-section content() !important;
+}

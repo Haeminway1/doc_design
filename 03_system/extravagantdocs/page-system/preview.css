@@ -1,0 +1,16 @@
+@media screen {
+  .xd-preview-stack {
+    padding: 10mm 0 16mm !important;
+  }
+}
+
+@media print {
+  .xd-page {
+    margin: 0 !important;
+    border: 0 !important;
+  }
+
+  .xd-preview-stack {
+    padding: 0 !important;
+  }
+}

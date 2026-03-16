@@ -1,0 +1,25 @@
+@media print {
+  html,
+  body {
+    background: var(--xd-color-paper) !important;
+  }
+
+  * {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
+
+.xd-print-only {
+  display: none !important;
+}
+
+@media print {
+  .xd-print-only {
+    display: block !important;
+  }
+
+  .xd-no-print {
+    display: none !important;
+  }
+}

@@ -23,7 +23,7 @@ pages:
   - kind: chapter-opener
     id: chapter-3
     title: 동사
-    subtitle: Part 1
+    subtitle: Chapter 1
   - kind: legacy-page
     id: content-4-ch01-content-01
     source:
@@ -110,7 +110,7 @@ pages:
   - kind: chapter-opener
     id: chapter-22
     title: 시제
-    subtitle: Part 2
+    subtitle: Chapter 2
   - kind: legacy-page
     id: content-23-ch01-content-16
     source:
@@ -197,7 +197,7 @@ pages:
   - kind: chapter-opener
     id: chapter-41
     title: 수동태
-    subtitle: Part 3
+    subtitle: Chapter 3
   - kind: legacy-page
     id: content-42-ch01-content-31
     source:
@@ -316,7 +316,7 @@ pages:
   - kind: chapter-opener
     id: chapter-68
     title: 조동사
-    subtitle: Part 4
+    subtitle: Chapter 4
   - kind: legacy-page
     id: content-69-ch01-content-54
     source:
@@ -353,10 +353,33 @@ pages:
     id: content-77-ch01-content-62
     source:
       path: grammar/bridge/ch01-content-62.html
+  - kind: problem-set
+    id: problems-78-ch01-problems
+    layout: compact
+    range:
+      - 151
+      - 200
+    source:
+      path: grammar/bridge/ch01-problems.json
+  - kind: answer-grid
+    id: answers-79-ch01-problems
+    range:
+      - 151
+      - 200
+    source:
+      path: grammar/bridge/ch01-problems.json
+  - kind: explanations
+    id: explanations-80-ch01-problems
+    layout: compact
+    range:
+      - 151
+      - 200
+    source:
+      path: grammar/bridge/ch01-problems.json
   - kind: chapter-opener
-    id: chapter-78
+    id: chapter-81
     title: 접속사
-    subtitle: Part 5
+    subtitle: Chapter 5
   - kind: legacy-page
     id: content-79-ch01-content-63
     source:
@@ -427,7 +450,7 @@ pages:
   - kind: chapter-opener
     id: chapter-93
     title: 접속부사
-    subtitle: Part 6
+    subtitle: Chapter 6
   - kind: legacy-page
     id: content-94-ch01-content-74
     source:
@@ -482,7 +505,7 @@ pages:
   - kind: chapter-opener
     id: chapter-104
     title: 전치사
-    subtitle: Part 7
+    subtitle: Chapter 7
   - kind: legacy-page
     id: content-105-ch01-content-81
     source:
@@ -573,7 +596,7 @@ pages:
   - kind: chapter-opener
     id: chapter-124
     title: 관계사
-    subtitle: Part 8
+    subtitle: Chapter 8
   - kind: legacy-page
     id: content-125-ch01-content-97
     source:
@@ -628,7 +651,7 @@ pages:
   - kind: chapter-opener
     id: chapter-135
     title: 분사
-    subtitle: Part 9
+    subtitle: Chapter 9
   - kind: legacy-page
     id: content-136-ch01-content-104
     source:
@@ -695,7 +718,7 @@ pages:
   - kind: chapter-opener
     id: chapter-149
     title: 부정사
-    subtitle: Part 10
+    subtitle: Chapter 10
   - kind: legacy-page
     id: content-150-ch01-content-114
     source:
@@ -758,7 +781,7 @@ pages:
   - kind: chapter-opener
     id: chapter-162
     title: 동명사
-    subtitle: Part 11
+    subtitle: Chapter 11
   - kind: legacy-page
     id: content-163-ch01-content-123
     source:

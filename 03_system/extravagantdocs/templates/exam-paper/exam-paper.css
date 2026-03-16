@@ -1,0 +1,280 @@
+@import url('tokens.css');
+
+body.style-template-exam-paper .xd-paged-cover,
+body.style-template-exam-paper .page.cover-page {
+  background: #ffffff !important;
+}
+
+body.style-template-exam-paper .xd-paged-cover .cover-main-title,
+body.style-template-exam-paper .page.cover-page .cover-main-title {
+  font-family: "Playfair Display", "Times New Roman", serif !important;
+}
+
+body.style-template-exam-paper .xd-paged-opener .chapter-opener-title,
+body.style-template-exam-paper .chapter-page .chapter-opener-title {
+  font-family: "Playfair Display", "Times New Roman", serif !important;
+}
+
+body.style-template-exam-paper .xd-paged-opener--practice .chapter-opener-title,
+body.style-template-exam-paper .chapter-page--practice .chapter-opener-title,
+body.style-template-exam-paper .xd-paged-opener--endmatter .chapter-opener-title,
+body.style-template-exam-paper .chapter-page--endmatter .chapter-opener-title {
+  font-size: 20pt !important;
+}
+
+body.style-template-exam-paper .xd-page__header {
+  color: var(--xd-color-accent-strong) !important;
+}
+
+body.style-template-exam-paper .xd-section__title {
+  border-bottom-color: var(--xd-color-accent-strong) !important;
+}
+
+body.style-template-exam-paper .xd-question__number {
+  color: var(--xd-color-accent-strong) !important;
+}
+
+body.style-template-exam-paper .problem {
+  margin: 0 0 4.8mm !important;
+  padding: 0 0 3.4mm !important;
+  border-bottom: var(--xd-rule-thin) solid var(--xd-color-line) !important;
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+  background: transparent !important;
+}
+
+body.style-template-exam-paper .problem--xd .problem-shell {
+  display: grid !important;
+  grid-template-columns: 11mm 1fr !important;
+  gap: 4.4mm !important;
+}
+
+body.style-template-exam-paper .problem--xd .problem-gutter {
+  padding-top: 0.8mm !important;
+}
+
+body.style-template-exam-paper .problem-number {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-width: 8.5mm !important;
+  height: 8.5mm !important;
+  border: var(--xd-rule-thin) solid #111111 !important;
+  background: #111111 !important;
+  font-family: var(--xd-font-latin) !important;
+  font-size: 8pt !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+}
+
+body.style-template-exam-paper .problem-type-badge {
+  display: inline-flex !important;
+  align-items: center !important;
+  min-height: 5.5mm !important;
+  padding: 0.5mm 2mm !important;
+  border: var(--xd-rule-thin) solid var(--xd-color-line) !important;
+  background: #f7f4eb !important;
+  font-size: 7.7pt !important;
+  line-height: 1.2 !important;
+  color: var(--xd-color-muted) !important;
+}
+
+body.style-template-exam-paper .problem-instruction {
+  margin: 0 0 1.8mm !important;
+  font-size: 9.1pt !important;
+  line-height: 1.45 !important;
+  font-weight: 600 !important;
+  color: #20242b !important;
+}
+
+body.style-template-exam-paper .problem-stem {
+  margin: 0 0 2.8mm !important;
+  font-size: 10.2pt !important;
+  line-height: 1.7 !important;
+  color: var(--xd-color-ink) !important;
+}
+
+body.style-template-exam-paper .problem-choices {
+  margin: 0 !important;
+  padding-left: 4mm !important;
+  list-style: none !important;
+  columns: 2;
+  column-gap: 8mm;
+}
+
+body.style-template-exam-paper .problem-choices--single-column {
+  columns: 1;
+}
+
+body.style-template-exam-paper .problem-choices li {
+  display: grid !important;
+  grid-template-columns: 7mm 1fr !important;
+  align-items: start !important;
+  gap: 2.4mm !important;
+  margin: 0 0 3.6mm !important;
+  padding-left: 1.6mm !important;
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+  font-size: 8.5pt !important;
+  line-height: 1.72 !important;
+}
+
+body.style-template-exam-paper .problem-choice-marker {
+  font-family: var(--xd-font-latin) !important;
+  font-size: 8pt !important;
+  font-weight: 700 !important;
+  color: var(--xd-color-accent-strong) !important;
+}
+
+body.style-template-exam-paper .problem-choice-text {
+  color: var(--xd-color-ink-soft) !important;
+}
+
+body.style-template-exam-paper .problem:last-child,
+body.style-template-exam-paper .problem-choices li:last-child {
+  margin-bottom: 0 !important;
+}
+
+body.style-template-exam-paper .detailed-answer-section {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body.style-template-exam-paper .detailed-answer-section > h2 {
+  margin: 0 0 3.2mm !important;
+  font-size: 16pt !important;
+  line-height: 1.18 !important;
+}
+
+body.style-template-exam-paper .detailed-answer-item {
+  margin: 0 0 3.2mm !important;
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+}
+
+body.style-template-exam-paper .detailed-answer-item:last-child {
+  margin-bottom: 0 !important;
+}
+
+body.style-template-exam-paper .detailed-answer-header {
+  margin-bottom: 1.6mm !important;
+}
+
+body.style-template-exam-paper .detailed-answer-number {
+  width: 7mm !important;
+  height: 7mm !important;
+  font-size: 9pt !important;
+  line-height: 1 !important;
+}
+
+body.style-template-exam-paper .answer-label,
+body.style-template-exam-paper .answer-text {
+  font-size: 9.1pt !important;
+  line-height: 1.4 !important;
+}
+
+body.style-template-exam-paper .answer-detail-block h4 {
+  margin: 0 0 1mm !important;
+  font-size: 9pt !important;
+  line-height: 1.25 !important;
+}
+
+body.style-template-exam-paper .answer-detail-block p {
+  margin: 0 !important;
+  font-size: 8.9pt !important;
+  line-height: 1.48 !important;
+}
+
+body.style-template-exam-paper .answer-translation,
+body.style-template-exam-paper .answer-explanation {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body.style-template-exam-paper .explanation-problem {
+  margin: 0 0 4.2mm !important;
+  padding: 0 0 3.4mm !important;
+  border-bottom: var(--xd-rule-thin) solid var(--xd-color-line) !important;
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+}
+
+body.style-template-exam-paper .explanation-number {
+  display: inline-flex !important;
+  align-items: center !important;
+  min-height: 6.4mm !important;
+  margin: 0 0 1.8mm !important;
+  padding: 0 2.4mm !important;
+  border: var(--xd-rule-thin) solid #111111 !important;
+  background: #111111 !important;
+  font-family: var(--xd-font-latin) !important;
+  font-size: 8.1pt !important;
+  line-height: 1.2 !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+}
+
+body.style-template-exam-paper .explanation-content {
+  padding-left: 3.6mm !important;
+  font-size: 9pt !important;
+  line-height: 1.68 !important;
+  color: var(--xd-color-ink) !important;
+}
+
+body.style-template-exam-paper .explanation-content strong,
+body.style-template-exam-paper .explanation-content b {
+  color: var(--xd-color-accent-strong) !important;
+  font-weight: 700 !important;
+}
+
+body.style-template-exam-paper .explanation-content br {
+  display: block !important;
+  content: "" !important;
+  margin-top: 1.2mm !important;
+}
+
+body.style-template-exam-paper .spacer-md {
+  height: 1.2mm !important;
+}
+
+body.style-template-exam-paper .xd-vocab-intro {
+  margin: 0 0 5.5mm !important;
+  padding-bottom: 2.8mm !important;
+  border-bottom: var(--xd-rule-thin) solid var(--xd-color-line) !important;
+}
+
+body.style-template-exam-paper .xd-vocab-intro__eyebrow {
+  margin: 0 0 1.2mm !important;
+  font-size: 9pt !important;
+  line-height: 1.2 !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+  color: var(--xd-color-muted) !important;
+}
+
+body.style-template-exam-paper .xd-vocab-intro__title {
+  margin: 0 !important;
+  font-size: 14pt !important;
+  line-height: 1.28 !important;
+  font-weight: 700 !important;
+  color: var(--xd-color-accent-strong) !important;
+}
+
+body.style-template-exam-paper .xd-problem-set-page--two-column {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  column-gap: 8mm !important;
+  row-gap: 1.6mm !important;
+  align-content: start !important;
+}
+
+body.style-template-exam-paper .xd-problem-set-page--two-column > .xd-paged-section__title {
+  grid-column: 1 / -1 !important;
+}
+
+body.style-template-exam-paper .xd-problem-set-page--two-column .flow-block,
+body.style-template-exam-paper .xd-problem-set-page--two-column .problem {
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+}

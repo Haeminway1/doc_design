@@ -1,0 +1,10 @@
+extends: logic-basic.yaml
+book:
+  id: logic-basic-xd
+  styleSystem: extravagantdocs
+  styleTemplate: exam-paper
+  reviewRenderer: paged-native
+  cover:
+    variant: minimal
+    mainTitle: 논리 BASIC
+    edition: 2026 EDITION

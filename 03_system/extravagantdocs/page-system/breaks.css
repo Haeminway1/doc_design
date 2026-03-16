@@ -1,0 +1,29 @@
+.xd-break-before-page {
+  break-before: page !important;
+  page-break-before: always !important;
+}
+
+.xd-break-after-page {
+  break-after: page !important;
+  page-break-after: always !important;
+}
+
+.xd-avoid-break {
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+}
+
+.xd-keep-with-next {
+  break-after: avoid-page !important;
+  page-break-after: avoid !important;
+}
+
+.xd-keep-together > * {
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+}
+
+.xd-orphans-safe {
+  orphans: 3 !important;
+  widows: 3 !important;
+}

@@ -1,0 +1,10 @@
+extends: reading-bridge.yaml
+book:
+  id: reading-bridge-xd
+  styleSystem: extravagantdocs
+  styleTemplate: exam-paper
+  reviewRenderer: paged-native
+  cover:
+    variant: minimal
+    mainTitle: 독해 BRIDGE
+    edition: 2026 EDITION

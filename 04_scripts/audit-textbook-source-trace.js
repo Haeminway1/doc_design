@@ -3,14 +3,19 @@
 const fs = require('fs');
 const path = require('path');
 const cheerio = require('cheerio');
-const yaml = require('js-yaml');
+const { loadManifest, usesExtravagantDocs } = require('./build-textbook.js');
 
 const ROOT = path.resolve(__dirname, '..');
 const BOOKS_DIR = path.join(ROOT, '02_textbooks', 'books');
 const CONTENT_DIR = path.join(ROOT, '02_textbooks', 'content');
 const DATA_DIR = path.join(ROOT, '02_textbooks', 'data');
 const OUTPUT_HTML_DIR = path.join(ROOT, '02_textbooks', 'output', 'html');
+const OUTPUT_HTML_SRC_DIR = path.join(ROOT, '02_textbooks', 'output', 'html_src');
 const OUTPUT_PDF_DIR = path.join(ROOT, '02_textbooks', 'output', 'pdf');
+const SOURCE_FALLBACK_DIRS = [
+  path.join(ROOT, '02_textbooks', 'source'),
+  path.join(ROOT, '07_archive', 'textbooks_legacy', 'source'),
+];
 const REPORTS_DIR = path.join(ROOT, '02_textbooks', 'reports');
 const REPORT_JSON = path.join(REPORTS_DIR, 'textbook-source-trace-audit.json');
 const REPORT_MD = path.join(REPORTS_DIR, 'textbook-source-trace-audit.md');
@@ -28,16 +33,56 @@ const SOURCE_MAP = {
   'grammar-bridge-ch08': { mode: 'shared-split-html', path: path.join(ROOT, '02_textbooks', 'source', '[편입영어]문법_bridge_part1.html') },
   'grammar-bridge-ch09': { mode: 'shared-split-html', path: path.join(ROOT, '02_textbooks', 'source', '[편입영어]문법_bridge_part1.html') },
   'grammar-bridge-ch10': { mode: 'shared-split-html', path: path.join(ROOT, '02_textbooks', 'source', '[편입영어]문법_bridge_part2.html') },
+  'grammar-bridge-ch11': { mode: 'shared-split-html', path: path.join(ROOT, '02_textbooks', 'source', '[편입영어]문법_bridge_part2.html') },
   'grammar-bridge-vol1': { mode: 'full-html', path: path.join(ROOT, '02_textbooks', 'source', '[편입영어]문법_bridge_part1.html') },
   'grammar-bridge-vol2': { mode: 'full-html', path: path.join(ROOT, '02_textbooks', 'source', '[편입영어]문법_bridge_part2.html') },
   'logic-basic': { mode: 'full-html', path: path.join(ROOT, '02_textbooks', 'source', '[편입영어]논리_basic.html') },
   'reading-basic': { mode: 'full-html', path: path.join(ROOT, '02_textbooks', 'source', '[편입영어]독해_basic편.html') },
   'reading-bridge': { mode: 'full-html', path: path.join(ROOT, '02_textbooks', 'source', '[편입영어]독해_bridge.html') },
   'reading-intermediate': { mode: 'full-html', path: path.join(ROOT, '02_textbooks', 'source', '[편입영어]독해_intermediate.html') },
-  'syntax-basic': { mode: 'pdf', path: path.join(ROOT, "Vera's Flavor 편입영어_ 구문독해 Basic.pdf") },
+  'syntax-basic': { mode: 'pdf', path: path.join(ROOT, '07_archive', 'root_cleanup', "Vera's Flavor 편입영어_ 구문독해 Basic.pdf") },
   'syntax-bridge': { mode: 'full-html', path: path.join(ROOT, '02_textbooks', 'source', '[편입영어]구문독해_bridge (1).html') },
   'vocab-basic': { mode: 'full-html', path: path.join(ROOT, '02_textbooks', 'source', '[편입영어]보카_basic(1-70).html') },
 };
+
+function canonicalBookId(bookId) {
+  return String(bookId || '').replace(/-xd$/, '');
+}
+
+function isNormalizedSourceComparisonBook(manifest) {
+  const book = manifest.book || {};
+  if (!usesExtravagantDocs(book)) return false;
+  if (book.styleBridge === 'grammar-bridge') return true;
+  return false;
+}
+
+function resolveAuditOutputPaths(manifest) {
+  const bookId = manifest.book.id;
+  const isXdPaged = usesExtravagantDocs(manifest.book);
+  return {
+    htmlPath: isXdPaged
+      ? path.join(OUTPUT_HTML_SRC_DIR, `${bookId}.html`)
+      : path.join(OUTPUT_HTML_DIR, `${bookId}.html`),
+    pdfPath: isXdPaged
+      ? path.join(OUTPUT_PDF_DIR, `${bookId}-paged.pdf`)
+      : path.join(OUTPUT_PDF_DIR, `${bookId}.pdf`),
+  };
+}
+
+function resolveSourcePath(sourceConfig) {
+  if (!sourceConfig) return null;
+  if (fs.existsSync(sourceConfig.path)) {
+    return sourceConfig.path;
+  }
+  const base = path.basename(sourceConfig.path);
+  for (const dir of SOURCE_FALLBACK_DIRS) {
+    const candidate = path.join(dir, base);
+    if (fs.existsSync(candidate)) {
+      return candidate;
+    }
+  }
+  return sourceConfig.path;
+}
 
 const MARKER_SELECTORS = [
   '.section-title',
@@ -196,14 +241,14 @@ function sampleExtractedHtmlMarker(pages, outputHtml) {
 
 function analyzeBook(bookFile) {
   const manifestPath = path.join(BOOKS_DIR, bookFile);
-  const manifest = yaml.load(fs.readFileSync(manifestPath, 'utf8'));
+  const manifest = loadManifest(manifestPath);
   const bookId = manifest.book.id;
+  const normalizedSourceComparison = isNormalizedSourceComparisonBook(manifest);
   const pages = manifest.pages || [];
-  const outputHtmlPath = path.join(OUTPUT_HTML_DIR, `${bookId}.html`);
-  const outputPdfPath = path.join(OUTPUT_PDF_DIR, `${bookId}.pdf`);
+  const { htmlPath: outputHtmlPath, pdfPath: outputPdfPath } = resolveAuditOutputPaths(manifest);
   const outputHtml = fs.existsSync(outputHtmlPath) ? fs.readFileSync(outputHtmlPath, 'utf8') : '';
   const outputText = outputHtml ? compactText(cheerio.load(outputHtml).text()) : '';
-  const sourceConfig = SOURCE_MAP[bookId] || null;
+  const sourceConfig = SOURCE_MAP[canonicalBookId(bookId)] || null;
 
   const pageKinds = summarizePageKinds(pages);
   const resolvedAssets = pages
@@ -220,24 +265,27 @@ function analyzeBook(bookFile) {
     ...analyzeJsonAsset(item.filePath),
   }));
 
-  const extractedHtmlMarker = outputHtml ? sampleExtractedHtmlMarker(pages, outputHtml) : null;
+  const extractedHtmlMarker = normalizedSourceComparison
+    ? null
+    : (outputHtml ? sampleExtractedHtmlMarker(pages, outputHtml) : null);
 
   let sourceAudit = null;
   if (sourceConfig) {
+    const resolvedSourcePath = resolveSourcePath(sourceConfig);
     const exists = fs.existsSync(sourceConfig.path);
     sourceAudit = {
       mode: sourceConfig.mode,
-      path: path.relative(ROOT, sourceConfig.path),
-      exists,
+      path: path.relative(ROOT, resolvedSourcePath),
+      exists: fs.existsSync(resolvedSourcePath),
     };
 
-    if (exists && sourceConfig.mode.endsWith('html')) {
-      const sourceHtml = fs.readFileSync(sourceConfig.path, 'utf8');
+    if (sourceAudit.exists && sourceConfig.mode.endsWith('html')) {
+      const sourceHtml = fs.readFileSync(resolvedSourcePath, 'utf8');
       sourceAudit.stats = sourceStatsForHtml(sourceHtml);
     }
 
-    if (exists && sourceConfig.mode === 'full-html' && outputHtml) {
-      const sourceHtml = fs.readFileSync(sourceConfig.path, 'utf8');
+    if (sourceAudit.exists && sourceConfig.mode === 'full-html' && outputHtml && !normalizedSourceComparison) {
+      const sourceHtml = fs.readFileSync(resolvedSourcePath, 'utf8');
       const markers = extractMarkersFromHtml(sourceHtml, 3);
       sourceAudit.markers = markers.map((marker) => ({
         text: marker,
@@ -277,11 +325,11 @@ function analyzeBook(bookFile) {
     checks,
     status: failures.length === 0 ? 'pass' : 'fail',
     failures,
-    notes: buildNotes(bookId, sourceAudit),
+    notes: buildNotes(bookId, sourceAudit, normalizedSourceComparison),
   };
 }
 
-function buildNotes(bookId, sourceAudit) {
+function buildNotes(bookId, sourceAudit, normalizedSourceComparison) {
   const notes = [];
 
   if (!sourceAudit) {
@@ -295,6 +343,10 @@ function buildNotes(bookId, sourceAudit) {
 
   if (sourceAudit.mode === 'shared-split-html') {
     notes.push('여러 교재가 하나의 HTML source를 공유하므로 source 표본 문구 검사는 volume 단위에서만 수행');
+  }
+
+  if (normalizedSourceComparison) {
+    notes.push('extravagantdocs 정규화 렌더를 사용하므로 source marker exact-match 검사는 생략');
   }
 
   if (bookId === 'logic-basic' && sourceAudit.stats) {
@@ -376,7 +428,11 @@ function renderMarkdown(results) {
 function main() {
   fs.mkdirSync(REPORTS_DIR, { recursive: true });
 
-  const bookFiles = fs.readdirSync(BOOKS_DIR).filter((name) => name.endsWith('.yaml')).sort();
+  const requestedBookIds = process.argv.slice(2).filter(Boolean);
+  const bookFiles = fs.readdirSync(BOOKS_DIR)
+    .filter((name) => name.endsWith('.yaml'))
+    .filter((name) => requestedBookIds.length === 0 || requestedBookIds.includes(path.basename(name, '.yaml')))
+    .sort();
   const results = bookFiles.map(analyzeBook);
   const summary = {
     books: results.length,

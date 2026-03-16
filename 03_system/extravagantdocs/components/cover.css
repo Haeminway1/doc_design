@@ -1,0 +1,51 @@
+.xd-cover-page {
+  width: var(--xd-page-width) !important;
+  min-height: var(--xd-page-height) !important;
+  margin: 8mm auto !important;
+  page-break-after: always !important;
+  break-after: page !important;
+  background: var(--xd-color-paper) !important;
+  border: var(--xd-rule-strong) solid var(--xd-color-accent) !important;
+}
+
+.xd-cover-page__inner {
+  min-height: var(--xd-page-height) !important;
+  padding: 26mm 18mm 22mm !important;
+}
+
+.xd-cover-page__eyebrow {
+  margin-bottom: 14mm !important;
+  font-family: var(--xd-font-latin) !important;
+  font-size: var(--xd-text-md) !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.12em !important;
+  color: var(--xd-color-accent) !important;
+  text-transform: uppercase !important;
+}
+
+.xd-cover-page__title {
+  margin: 0 0 5mm !important;
+  font-family: var(--xd-font-display) !important;
+  font-size: var(--xd-text-cover) !important;
+  font-weight: 700 !important;
+  color: var(--xd-color-accent-strong) !important;
+}
+
+.xd-cover-page__subtitle {
+  margin: 0 0 14mm !important;
+  font-size: var(--xd-text-lg) !important;
+  color: var(--xd-color-ink-soft) !important;
+}
+
+.xd-cover-page__rule {
+  width: 44mm !important;
+  height: 0 !important;
+  margin: 0 0 16mm !important;
+  border-top: var(--xd-rule-strong) solid var(--xd-color-secondary) !important;
+}
+
+.xd-cover-page__meta {
+  margin-top: 120mm !important;
+  font-size: var(--xd-text-md) !important;
+  color: var(--xd-color-muted) !important;
+}

@@ -1,0 +1,67 @@
+:root {
+  --xd-page-width: 210mm;
+  --xd-page-height: 297mm;
+  --xd-margin-top: 12mm;
+  --xd-margin-right: 15mm;
+  --xd-margin-bottom: 19mm;
+  --xd-margin-left: 15mm;
+  --xd-content-pad-top: 0.5mm;
+  --xd-content-pad-right: 0.5mm;
+  --xd-content-pad-bottom: 2.5mm;
+  --xd-content-pad-left: 0.5mm;
+
+  --xd-font-body: 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  --xd-font-heading: 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+  --xd-font-latin: 'Inter', sans-serif;
+  --xd-font-display: 'Playfair Display', 'Times New Roman', serif;
+
+  --xd-text-xs: 7pt;
+  --xd-text-sm: 8pt;
+  --xd-text-md: 9pt;
+  --xd-text-body: 10pt;
+  --xd-text-lg: 12pt;
+  --xd-text-xl: 16pt;
+  --xd-text-2xl: 22pt;
+  --xd-text-cover: 30pt;
+
+  --xd-leading-tight: 1.25;
+  --xd-leading-body: 1.45;
+  --xd-leading-loose: 1.6;
+
+  --xd-space-2xs: 1.5mm;
+  --xd-space-xs: 2mm;
+  --xd-space-sm: 3mm;
+  --xd-space-md: 4mm;
+  --xd-space-lg: 5mm;
+  --xd-space-xl: 7mm;
+  --xd-space-2xl: 12mm;
+
+  --xd-color-paper: #ffffff;
+  --xd-color-screen: #eceff3;
+  --xd-color-ink: #111827;
+  --xd-color-ink-soft: #374151;
+  --xd-color-muted: #6b7280;
+  --xd-color-line: #d1d5db;
+  --xd-color-line-strong: #9ca3af;
+
+  --xd-color-accent: #1e3a8a;
+  --xd-color-accent-strong: #172554;
+  --xd-color-accent-soft: #dbeafe;
+  --xd-color-secondary: #b45309;
+
+  --xd-color-callout-note-bg: #eff6ff;
+  --xd-color-callout-note-line: #2563eb;
+  --xd-color-callout-warn-bg: #fef3c7;
+  --xd-color-callout-warn-line: #d97706;
+  --xd-color-table-head-bg: #eff6ff;
+  --xd-color-table-band: #f9fafb;
+
+  --xd-rule-thin: 0.3mm;
+  --xd-rule-regular: 0.5mm;
+  --xd-rule-strong: 0.8mm;
+  --xd-radius-none: 0;
+
+  --xd-header-font-size: 8pt;
+  --xd-footer-font-size: 7pt;
+  --xd-section-kicker-size: 8pt;
+}

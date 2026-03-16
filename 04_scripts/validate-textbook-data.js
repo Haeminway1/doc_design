@@ -2,14 +2,17 @@
 
 const fs = require('fs');
 const path = require('path');
-const yaml = require('js-yaml');
 const cheerio = require('cheerio');
+const { loadManifest } = require('./build-textbook.js');
 
 const ROOT = path.resolve(__dirname, '..');
 const BOOKS_DIR = path.join(ROOT, '02_textbooks', 'books');
 const DATA_DIR = path.join(ROOT, '02_textbooks', 'data');
 const CONTENT_DIR = path.join(ROOT, '02_textbooks', 'content');
-const SOURCE_DIR = path.join(ROOT, '02_textbooks', 'source');
+const SOURCE_DIRS = [
+  path.join(ROOT, '02_textbooks', 'source'),
+  path.join(ROOT, '07_archive', 'textbooks_legacy', 'source'),
+];
 const REPORT_DIR = path.join(ROOT, '02_textbooks', 'reports');
 
 const SOURCE_MAP = {
@@ -22,8 +25,8 @@ const SOURCE_MAP = {
   'vocab-basic': '[편입영어]보카_basic(1-70).html',
 };
 
-function readYaml(filePath) {
-  return yaml.load(fs.readFileSync(filePath, 'utf8'));
+function canonicalBookId(bookId) {
+  return String(bookId || '').replace(/-xd$/, '');
 }
 
 function readJson(filePath) {
@@ -34,11 +37,21 @@ function fileExists(filePath) {
   return fs.existsSync(filePath);
 }
 
+function resolveSourceFile(sourceFile) {
+  for (const dir of SOURCE_DIRS) {
+    const absPath = path.join(dir, sourceFile);
+    if (fileExists(absPath)) {
+      return absPath;
+    }
+  }
+  return path.join(SOURCE_DIRS[0], sourceFile);
+}
+
 function analyzeSource(bookId) {
-  const sourceFile = SOURCE_MAP[bookId];
+  const sourceFile = SOURCE_MAP[canonicalBookId(bookId)];
   if (!sourceFile) return null;
 
-  const sourcePath = path.join(SOURCE_DIR, sourceFile);
+  const sourcePath = resolveSourceFile(sourceFile);
   if (!fileExists(sourcePath)) {
     return {
       sourceFile,
@@ -171,7 +184,7 @@ function validateVocabularyData(filePath, issues) {
 
 function validateManifest(bookId) {
   const manifestPath = path.join(BOOKS_DIR, `${bookId}.yaml`);
-  const manifest = readYaml(manifestPath);
+  const manifest = loadManifest(manifestPath);
   const issues = new Set();
   const warnings = new Set();
   const sourceStats = analyzeSource(bookId);
@@ -329,11 +342,13 @@ function toMarkdown(report) {
 }
 
 function main() {
-  const bookIds = fs.readdirSync(BOOKS_DIR)
+  const requestedBookIds = process.argv.slice(2).filter(Boolean);
+  const allBookIds = fs.readdirSync(BOOKS_DIR)
     .filter((name) => name.endsWith('.yaml'))
     .filter((name) => name !== 'README.md')
     .map((name) => path.basename(name, '.yaml'))
     .sort();
+  const bookIds = requestedBookIds.length ? allBookIds.filter((bookId) => requestedBookIds.includes(bookId)) : allBookIds;
 
   const books = bookIds.map(validateManifest);
   const issueCount = books.reduce((sum, book) => sum + book.issues.length, 0);

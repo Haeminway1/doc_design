@@ -1,0 +1,10 @@
+extends: grammar-bridge-ch05.yaml
+book:
+  id: grammar-bridge-ch05-xd
+  styleSystem: extravagantdocs
+  styleTemplate: grammar-bridge
+  styleBridge: grammar-bridge
+  reviewRenderer: paged-native
+  cover:
+    label: GRAMMAR BRIDGE
+    edition: CHAPTER 05

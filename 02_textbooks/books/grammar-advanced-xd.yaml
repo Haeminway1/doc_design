@@ -1,0 +1,10 @@
+extends: grammar-advanced.yaml
+book:
+  id: grammar-advanced-xd
+  styleSystem: extravagantdocs
+  styleTemplate: exam-paper
+  reviewRenderer: paged-native
+  cover:
+    variant: minimal
+    mainTitle: 문법 ADVANCED
+    edition: 2026 EDITION

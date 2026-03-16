@@ -1,0 +1,56 @@
+version: 2
+book:
+  id: grammar-bridge-ch02-xd
+  title: 문법 Bridge - 가정법 (Conditional Mood)
+  shortTitle: 문법 Bridge
+  author: Vera's Flavor
+  brand: Vera's Flavor
+  subject: grammar
+  level: bridge
+  theme: sky-academic
+  styleSystem: extravagantdocs
+  styleTemplate: grammar-bridge
+  styleBridge: grammar-bridge
+  reviewRenderer: paged-native
+  coverArt: 05_assets/backgrounds/grammar-bridge-ch02-cover.png
+pages:
+  - kind: cover
+    id: auto-cover
+  - kind: legacy-page
+    id: content-1-ch02-content-01
+    source:
+      path: grammar/bridge/ch02-content-01.html
+  - kind: legacy-page
+    id: content-2-ch02-content-02
+    source:
+      path: grammar/bridge/ch02-content-02.html
+  - kind: legacy-page
+    id: content-3-ch02-content-03
+    source:
+      path: grammar/bridge/ch02-content-03.html
+  - kind: legacy-page
+    id: content-4-ch02-content-04
+    source:
+      path: grammar/bridge/ch02-content-04.html
+  - kind: legacy-page
+    id: content-5-ch02-content-05
+    source:
+      path: grammar/bridge/ch02-content-05.html
+  - kind: legacy-page
+    id: content-6-ch02-content-06
+    source:
+      path: grammar/bridge/ch02-content-06.html
+  - kind: problem-set
+    id: problems-7-ch02-problems
+    layout: compact
+    source:
+      path: grammar/bridge/ch02-problems.json
+  - kind: answer-grid
+    id: answers-8-ch02-problems
+    source:
+      path: grammar/bridge/ch02-problems.json
+  - kind: explanations
+    id: explanations-9-ch02-problems
+    layout: compact
+    source:
+      path: grammar/bridge/ch02-problems.json

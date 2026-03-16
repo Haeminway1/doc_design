@@ -1,0 +1,382 @@
+@import url('tokens.css');
+
+body.style-template-grammar-bridge .page {
+  background: #ffffff !important;
+  border-color: var(--xd-color-line) !important;
+}
+
+body.style-template-grammar-bridge .page-header {
+  color: var(--xd-color-accent-strong) !important;
+  border-bottom-color: var(--xd-color-secondary) !important;
+}
+
+body.style-template-grammar-bridge .chapter-page {
+  border: 0 !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-cover {
+  border: 0 !important;
+  background: #050608 !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-cover__frame {
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+  overflow: hidden !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-cover__art {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-cover__overlay {
+  position: relative !important;
+  z-index: 1 !important;
+  margin-top: -256mm !important;
+  min-height: 256mm !important;
+  padding: 24mm 18mm 22mm !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-cover__brand {
+  display: inline-block !important;
+  align-self: flex-start !important;
+  margin-bottom: 14mm !important;
+  padding: 1.6mm 4mm !important;
+  border: 0.35mm solid #d6cfbf !important;
+  color: #f5f5f2 !important;
+  font-family: var(--xd-font-latin) !important;
+  font-size: 7.5pt !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.14em !important;
+  text-transform: uppercase !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-cover__rule {
+  width: 38mm !important;
+  height: 0 !important;
+  margin-bottom: 8mm !important;
+  border-top: 0.75mm solid var(--xd-color-secondary) !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-cover__label {
+  margin-bottom: 5mm !important;
+  color: #e5dcc7 !important;
+  font-family: var(--xd-font-latin) !important;
+  font-size: 8pt !important;
+  font-weight: 600 !important;
+  letter-spacing: 0.22em !important;
+  text-transform: uppercase !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-cover__title {
+  max-width: 126mm !important;
+  color: #fbfbf8 !important;
+  font-family: var(--xd-font-display) !important;
+  font-size: 28pt !important;
+  font-weight: 700 !important;
+  line-height: 1.12 !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-cover__edition {
+  margin-top: auto !important;
+  color: #d4be86 !important;
+  font-family: var(--xd-font-latin) !important;
+  font-size: 8pt !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.14em !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-shell {
+  display: flex !important;
+  flex-direction: column !important;
+  min-height: 100% !important;
+}
+
+body.style-template-grammar-bridge .chapter-page .page-content {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+body.style-template-grammar-bridge .chapter-page .chapter-opener-body,
+body.style-template-grammar-bridge .xd-paged-opener .xd-paged-opener__body {
+  min-height: 244mm !important;
+  width: 100% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: center !important;
+  align-items: center !important;
+  text-align: center !important;
+}
+
+body.style-template-grammar-bridge .chapter-page .chapter-opener-label,
+body.style-template-grammar-bridge .xd-paged-opener .chapter-opener-label {
+  margin-bottom: 5mm !important;
+  color: var(--xd-color-secondary) !important;
+  font-family: var(--xd-font-latin) !important;
+  font-size: 8pt !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+}
+
+body.style-template-grammar-bridge .chapter-page .chapter-opener-title,
+body.style-template-grammar-bridge .xd-paged-opener .chapter-opener-title {
+  max-width: 122mm !important;
+  margin: 0 auto !important;
+  padding-top: 0 !important;
+  border-top: 0 !important;
+  color: var(--xd-color-accent-strong) !important;
+  font-family: var(--xd-font-display) !important;
+  font-size: 27pt !important;
+  font-weight: 700 !important;
+  line-height: 1.14 !important;
+}
+
+body.style-template-grammar-bridge .chapter-page--practice .chapter-opener-title,
+body.style-template-grammar-bridge .chapter-page--endmatter .chapter-opener-title,
+body.style-template-grammar-bridge .xd-paged-opener--practice .chapter-opener-title,
+body.style-template-grammar-bridge .xd-paged-opener--endmatter .chapter-opener-title {
+  font-size: 24pt !important;
+}
+
+body.style-template-grammar-bridge .chapter-page--practice .chapter-opener-label,
+body.style-template-grammar-bridge .chapter-page--endmatter .chapter-opener-label,
+body.style-template-grammar-bridge .xd-paged-opener--practice .chapter-opener-label,
+body.style-template-grammar-bridge .xd-paged-opener--endmatter .chapter-opener-label {
+  color: var(--xd-color-muted) !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-shell__intro {
+  margin-bottom: 4.5mm !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-shell__eyebrow {
+  margin-bottom: 2mm !important;
+  font-family: var(--xd-font-latin) !important;
+  font-size: 7.5pt !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.14em !important;
+  color: var(--xd-color-accent) !important;
+  text-transform: uppercase !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-shell__title {
+  margin: 0 0 3mm !important;
+  padding-bottom: 2mm !important;
+  border-bottom: 0.6mm solid var(--xd-color-secondary) !important;
+  font-size: 17pt !important;
+  font-weight: 700 !important;
+  line-height: 1.22 !important;
+  color: var(--xd-color-accent-strong) !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-shell__lede {
+  color: var(--xd-color-ink-soft) !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-toc {
+  padding: 14mm 1mm 0 !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-toc__eyebrow {
+  margin-bottom: 2mm !important;
+  color: var(--xd-color-secondary) !important;
+  font-family: var(--xd-font-latin) !important;
+  font-size: 7.5pt !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.18em !important;
+  text-transform: uppercase !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-toc__title {
+  margin: 0 0 7mm !important;
+  font-family: var(--xd-font-display) !important;
+  font-size: 23pt !important;
+  font-weight: 700 !important;
+  line-height: 1.1 !important;
+  color: var(--xd-color-accent-strong) !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-toc__list {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  column-gap: 10mm !important;
+  row-gap: 3.5mm !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-toc__item {
+  display: grid !important;
+  grid-template-columns: 22mm 1fr 10mm !important;
+  align-items: baseline !important;
+  gap: 3mm !important;
+  padding: 2.8mm 0 !important;
+  border-bottom: 0.3mm solid #d8cfba !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-toc__chapter {
+  color: var(--xd-color-secondary) !important;
+  font-family: var(--xd-font-latin) !important;
+  font-size: 7.8pt !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.06em !important;
+  text-transform: uppercase !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-toc__entry-title {
+  color: var(--xd-color-accent-strong) !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-toc__page {
+  color: var(--xd-color-muted) !important;
+  font-family: var(--xd-font-latin) !important;
+  font-size: 8.5pt !important;
+  font-weight: 600 !important;
+  text-align: right !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-page--balanced .xd-gb-shell__groups {
+  display: flex !important;
+  flex-direction: column !important;
+  flex: 1 1 auto !important;
+  padding-bottom: 2mm !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-page--balanced .xd-gb-group-spacer {
+  flex: 1 1 0 !important;
+  min-height: 14mm !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-group {
+  padding: 3.5mm 0 0 !important;
+  border-top: 0.35mm solid var(--xd-color-line) !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-group__title {
+  margin: 0 0 2.5mm !important;
+  font-size: 10.5pt !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+  color: var(--xd-color-accent-strong) !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-group__body {
+  color: var(--xd-color-ink) !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-group__body p,
+body.style-template-grammar-bridge .xd-gb-shell__lede p {
+  margin-bottom: 5.2mm !important;
+  font-size: 9.4pt !important;
+  line-height: 1.92 !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-group__body table,
+body.style-template-grammar-bridge .xd-gb-shell__lede table {
+  margin-top: 4mm !important;
+  margin-bottom: 3mm !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-inline-note {
+  display: block !important;
+  margin-top: 2.1mm !important;
+  margin-left: 13mm !important;
+  color: var(--xd-color-ink-soft) !important;
+  font-size: 8.6pt !important;
+  line-height: 1.72 !important;
+}
+
+body.style-template-grammar-bridge .answer-grid-title {
+  margin-bottom: 4.5mm !important;
+  border-bottom-color: var(--xd-color-accent-strong) !important;
+}
+
+body.style-template-grammar-bridge .xd-answer-grid-page .answer-grid {
+  padding-top: 3mm !important;
+}
+
+body.style-template-grammar-bridge .problem-number,
+body.style-template-grammar-bridge .answer-badge {
+  background: var(--xd-color-accent-soft) !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-group__body strong,
+body.style-template-grammar-bridge .xd-gb-group__body b,
+body.style-template-grammar-bridge .xd-gb-shell__lede strong,
+body.style-template-grammar-bridge .xd-gb-shell__lede b {
+  background: linear-gradient(transparent 55%, #bbdefb 55%) !important;
+  color: inherit !important;
+  padding: 0 !important;
+  font-weight: 700 !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-group__body code,
+body.style-template-grammar-bridge .xd-gb-shell__lede code {
+  background: linear-gradient(transparent 55%, #c8e6c9 55%) !important;
+  border: 0 !important;
+  color: inherit !important;
+  padding: 0 !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-group__body em,
+body.style-template-grammar-bridge .xd-gb-shell__lede em {
+  background: linear-gradient(transparent 55%, #ffcdd2 55%) !important;
+  color: inherit !important;
+  font-style: normal !important;
+}
+
+body.style-template-grammar-bridge table strong,
+body.style-template-grammar-bridge table b,
+body.style-template-grammar-bridge table code,
+body.style-template-grammar-bridge table em {
+  background: none !important;
+  border: 0 !important;
+  color: inherit !important;
+  padding: 0 !important;
+  font-style: normal !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-inline-tip {
+  margin-top: 4mm !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-inline-tip-card {
+  padding: 4.5mm 5mm !important;
+  border-top: 0.8mm solid var(--xd-color-secondary) !important;
+  border-right: var(--xd-rule-thin) solid #d9d1c1 !important;
+  border-bottom: var(--xd-rule-thin) solid #d9d1c1 !important;
+  border-left: var(--xd-rule-thin) solid #d9d1c1 !important;
+  background: #fbfaf7 !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-inline-tip-card__eyebrow {
+  margin-bottom: 1.5mm !important;
+  color: var(--xd-color-muted) !important;
+  font-family: var(--xd-font-latin) !important;
+  font-size: 7pt !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.12em !important;
+  text-transform: uppercase !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-inline-tip-card__title {
+  margin: 0 0 2.8mm !important;
+  font-size: 11pt !important;
+  font-weight: 700 !important;
+  line-height: 1.35 !important;
+  color: var(--xd-color-accent-strong) !important;
+}
+
+body.style-template-grammar-bridge .xd-gb-inline-tip-card__lede p {
+  margin-bottom: 3mm !important;
+}
