@@ -1,0 +1,60 @@
+version: 2
+book:
+  id: olympos-selected
+  title: 올림포스 영어독해 분석서 - Unit 1~5 선별
+  shortTitle: 올림포스 선별 분석
+  author: 올림포스 영어독해
+  brand: 올림포스 영어독해
+  style: olympos-reading
+  subject: reading
+  level: basic
+  theme: sky-academic
+pages:
+  - type: content
+    src: reading/olympos/selected-cover.html
+    pageClass: cover-page no-header-footer
+  # Unit 1
+  - type: content
+    src: reading/olympos/u01-p01.html
+  - type: content
+    src: reading/olympos/u01-e01.html
+  - type: content
+    src: reading/olympos/u01-p04.html
+  - type: content
+    src: reading/olympos/u01-e04.html
+  # Unit 2
+  - type: content
+    src: reading/olympos/u02-p01.html
+  - type: content
+    src: reading/olympos/u02-e01.html
+  - type: content
+    src: reading/olympos/u02-p04.html
+  - type: content
+    src: reading/olympos/u02-e04.html
+  # Unit 3
+  - type: content
+    src: reading/olympos/u03-p01.html
+  - type: content
+    src: reading/olympos/u03-e01.html
+  - type: content
+    src: reading/olympos/u03-p04.html
+  - type: content
+    src: reading/olympos/u03-e04.html
+  # Unit 4
+  - type: content
+    src: reading/olympos/u04-p01.html
+  - type: content
+    src: reading/olympos/u04-e01.html
+  - type: content
+    src: reading/olympos/u04-p04.html
+  - type: content
+    src: reading/olympos/u04-e04.html
+  # Unit 5
+  - type: content
+    src: reading/olympos/u05-p01.html
+  - type: content
+    src: reading/olympos/u05-e01.html
+  - type: content
+    src: reading/olympos/u05-p04.html
+  - type: content
+    src: reading/olympos/u05-e04.html

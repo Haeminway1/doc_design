@@ -64,7 +64,7 @@ code {
 
 /* ─── Cover Page ───────────────────────────────────────── */
 .page.cover-page {
-  background-color: #0284C7 !important;
+  background-color: #FFFFFF !important;
   display: flex !important;
   flex-direction: column !important;
   align-items: center !important;
@@ -96,7 +96,7 @@ code {
   font-family: 'Inter', sans-serif !important;
   font-size: 11pt !important;
   font-weight: 700 !important;
-  color: #FBBF24 !important;
+  color: #1F2937 !important;
   letter-spacing: 2.5pt !important;
   text-transform: uppercase !important;
 }
@@ -110,14 +110,14 @@ code {
 .cover-accent-line {
   width: 80mm !important;
   height: 3px !important;
-  background-color: #FBBF24 !important;
+  background-color: #1F2937 !important;
   margin: 12px auto !important;
 }
 
 .cover-main-title {
   font-family: 'Playfair Display', serif !important;
   font-size: 48pt !important;
-  color: #FFFFFF !important;
+  color: #1F2937 !important;
   font-weight: 800 !important;
   letter-spacing: -1pt !important;
   margin: 8px 0 !important;
@@ -126,7 +126,7 @@ code {
 .cover-subtitle {
   font-family: 'Noto Sans KR', sans-serif !important;
   font-size: 18pt !important;
-  color: #FFFFFF !important;
+  color: #1F2937 !important;
   font-weight: 300 !important;
   margin: 8px 0 !important;
 }
@@ -134,7 +134,7 @@ code {
 .cover-chapter-info {
   font-family: 'Noto Sans KR', sans-serif !important;
   font-size: 12pt !important;
-  color: #BAE6FD !important;
+  color: #6B7280 !important;
   font-weight: 400 !important;
   margin-top: 16px !important;
 }
@@ -145,7 +145,7 @@ code {
 
 .cover-edition {
   font-size: 9pt !important;
-  color: #BAE6FD !important;
+  color: #6B7280 !important;
   font-weight: 300 !important;
 }
 

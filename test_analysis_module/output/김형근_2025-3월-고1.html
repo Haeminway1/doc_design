@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>김형근 학생 성적 심층 분석표</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Noto+Sans+KR:wght@300;400;500;700;900&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --font-display: 'Playfair Display', serif;
+            --font-kr: 'Noto Sans KR', sans-serif;
+            --font-mono: 'DM Mono', monospace;
+
+            --ink: #1a1a2e;
+            --ink-soft: #2d2d44;
+            --ink-muted: #4a4a5a;
+            --gold: #c5a572;
+            --gold-dark: #a68a5b;
+            --gold-light: #d4bc8b;
+            --gold-pale: #f5f0e8;
+            --gold-wash: #faf7f2;
+
+            --text: #1a1a2e;
+            --text-mid: #4a4a5a;
+            --text-soft: #7a7a8a;
+            --text-muted: #a0a0aa;
+
+            --paper: #fafaf7;
+            --card: #ffffff;
+            --border: #e8e6e1;
+            --border-light: #f0eee9;
+            --divider: #d8d5ce;
+
+            --correct: #2d7a4f;
+            --correct-soft: #edf5f0;
+            --warn: #b8860b;
+            --warn-soft: #fdf8ec;
+            --danger: #943434;
+            --danger-soft: #faf0f0;
+        }
+
+        @page { size: A4; margin: 0; }
+        * { margin: 0; padding: 0; box-sizing: border-box; -webkit-print-color-adjust: exact !important; color-adjust: exact !important; }
+
+        body {
+            font-family: var(--font-kr);
+            line-height: 1.8;
+            color: var(--text);
+            background: #e8e6e1;
+            font-size: 9.5pt;
+        }
+
+        /* ── Page ── */
+        .page {
+            width: 210mm; min-height: 297mm;
+            margin: 10mm auto;
+            padding: 18mm 22mm 16mm;
+            background: var(--card);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+            display: flex; flex-direction: column;
+            position: relative;
+            page-break-after: always;
+        }
+        .page:last-child { page-break-after: avoid; }
+        .page-body { flex: 1; }
+
+        .page-accent {
+            position: absolute; top: 0; left: 0; right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, var(--gold), var(--gold-dark), var(--ink));
+        }
+
+        .page-header {
+            text-align: center;
+            padding-bottom: 14px;
+            margin-bottom: 22px;
+            border-bottom: 1px solid var(--ink);
+            position: relative;
+        }
+        .page-header h1 {
+            font-family: var(--font-kr);
+            font-size: 15pt;
+            font-weight: 700;
+            color: var(--ink);
+            letter-spacing: -0.3px;
+        }
+        .page-header::after {
+            content: '';
+            position: absolute; bottom: -1px; left: 50%; transform: translateX(-50%);
+            width: 40px; height: 2px;
+            background: var(--gold);
+        }
+
+        .page-footer {
+            display: flex; justify-content: space-between; align-items: center;
+            padding-top: 12px; margin-top: 20px;
+            border-top: 0.5px solid var(--divider);
+            font-size: 7.5pt; color: var(--text-muted);
+            letter-spacing: 0.3px;
+        }
+        .page-footer .brand {
+            font-family: var(--font-display);
+            font-weight: 600;
+            font-size: 8pt;
+            color: var(--gold-dark);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        /* ── Student Card ── */
+        .student-card {
+            text-align: center;
+            border: 0.5px solid var(--border);
+            padding: 16px 20px;
+            margin-bottom: 18px;
+            position: relative;
+        }
+        .student-card::before {
+            content: '';
+            position: absolute; top: -1px; left: 50%; transform: translateX(-50%);
+            width: 60px; height: 2px;
+            background: var(--gold);
+        }
+        .student-card .name {
+            font-size: 18pt;
+            font-weight: 900;
+            color: var(--ink);
+        }
+        .student-card .exam-name {
+            font-size: 10pt;
+            color: var(--text-soft);
+            margin-top: 4px;
+        }
+        .student-card .date {
+            font-family: var(--font-mono);
+            font-size: 8pt;
+            color: var(--text-muted);
+            margin-top: 4px;
+            letter-spacing: 0.5px;
+        }
+
+        /* ── Section Header ── */
+        .section-header {
+            display: flex; align-items: center; gap: 16px;
+            margin: 24px 0 18px 0;
+            padding-bottom: 12px;
+            border-bottom: 1px solid var(--ink);
+        }
+        .section-header.first { margin-top: 0; }
+        .section-num {
+            font-family: var(--font-display);
+            font-weight: 800;
+            font-size: 24pt;
+            color: var(--gold);
+            line-height: 1;
+            min-width: 34px;
+        }
+        .section-divider {
+            width: 1px; height: 24px;
+            background: var(--divider);
+        }
+        .section-title {
+            font-size: 12pt;
+            font-weight: 700;
+            color: var(--ink);
+        }
+
+        h3 {
+            font-size: 10pt;
+            font-weight: 700;
+            color: var(--ink);
+            margin: 20px 0 10px;
+            padding-left: 14px;
+            position: relative;
+        }
+        h3::before {
+            content: '';
+            position: absolute; left: 0; top: 2px; bottom: 2px;
+            width: 2px; background: var(--gold);
+        }
+
+        /* ── Score Overview ── */
+        .score-overview {
+            display: grid; grid-template-columns: 1fr 1fr 1fr;
+            gap: 0;
+            border: 0.5px solid var(--border);
+            margin-bottom: 16px;
+        }
+        .score-card {
+            text-align: center;
+            padding: 18px 12px;
+            border-right: 0.5px solid var(--border-light);
+        }
+        .score-card:last-child { border-right: none; }
+        .score-card .score-label {
+            font-size: 8pt;
+            color: var(--text-soft);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 6px;
+        }
+        .score-card .score-value {
+            font-family: var(--font-display);
+            font-size: 30pt;
+            font-weight: 800;
+            color: var(--ink);
+            line-height: 1;
+        }
+        .score-card .score-unit {
+            font-family: var(--font-kr);
+            font-size: 10pt;
+            font-weight: 300;
+            color: var(--text-muted);
+        }
+        .score-card.primary {
+            background: var(--ink);
+        }
+        .score-card.primary .score-label { color: var(--gold-light); }
+        .score-card.primary .score-value { color: var(--gold-pale); }
+        .score-card.primary .score-unit { color: var(--gold-dark); }
+
+        /* ── Donut Charts ── */
+        .donut-charts {
+            display: flex; justify-content: center;
+            gap: 0;
+            margin: 10px 0 16px;
+            padding: 14px 0;
+            border: 0.5px solid var(--border);
+            background: var(--paper);
+        }
+        .donut-item {
+            display: flex; flex-direction: column; align-items: center;
+            gap: 6px;
+            flex: 1;
+            padding: 8px 0;
+            position: relative;
+        }
+        .donut-item + .donut-item::before {
+            content: '';
+            position: absolute; left: 0; top: 20%; bottom: 20%;
+            width: 0.5px;
+            background: var(--border);
+        }
+        .donut-badge {
+            font-family: var(--font-display);
+            font-size: 9pt;
+            font-weight: 700;
+            color: var(--gold-pale);
+            background: var(--ink);
+            width: 22px; height: 22px;
+            display: flex; align-items: center; justify-content: center;
+            line-height: 1;
+        }
+        .donut-item svg { display: block; }
+        .donut-name {
+            font-size: 10pt;
+            font-weight: 700;
+            color: var(--ink);
+            margin-top: 4px;
+        }
+        .donut-score {
+            font-family: var(--font-mono);
+            font-size: 8.5pt;
+            color: var(--text-soft);
+        }
+
+        /* ── Summary ── */
+        .summary-card {
+            background: var(--paper);
+            border: 0.5px solid var(--border);
+            padding: 18px 22px;
+            margin-bottom: 16px;
+        }
+        .summary-card p {
+            font-size: 10pt;
+            line-height: 1.9;
+            color: var(--text-mid);
+        }
+
+        /* ── OX Grid ── */
+        .ox-grid {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            gap: 5px;
+            margin-bottom: 20px;
+        }
+        .ox-cell {
+            text-align: center;
+            padding: 7px 2px;
+            font-size: 8pt;
+            border: 0.5px solid var(--border);
+        }
+        .ox-cell .ox-q {
+            font-family: var(--font-mono);
+            font-weight: 500;
+            font-size: 8.5pt;
+            display: block;
+            margin-bottom: 1px;
+        }
+        .ox-cell.is-correct {
+            background: var(--correct-soft);
+            border-color: #c8ddd0;
+        }
+        .ox-cell.is-correct .ox-q { color: var(--correct); }
+        .ox-cell.is-incorrect {
+            background: var(--danger-soft);
+            border-color: #e0cece;
+        }
+        .ox-cell.is-incorrect .ox-q { color: var(--danger); }
+
+        /* ── OX Table ── */
+        .ox-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 9pt;
+            text-align: center;
+            border: 0.5px solid var(--border);
+        }
+        .ox-table th {
+            background: var(--ink);
+            color: var(--gold-pale);
+            font-weight: 500;
+            padding: 10px 6px;
+            font-size: 8.5pt;
+            letter-spacing: 0.5px;
+            border-right: 0.5px solid var(--ink-soft);
+        }
+        .ox-table th:last-child { border-right: none; }
+        .ox-table td {
+            padding: 8px 6px;
+            border-bottom: 0.5px solid var(--border-light);
+            vertical-align: middle;
+        }
+        .ox-table tr:last-child td { border-bottom: none; }
+        .ox-table tr:nth-child(even) td { background: var(--paper); }
+
+        .ox-table .q-num {
+            font-family: var(--font-mono);
+            font-weight: 500;
+            color: var(--text-soft);
+        }
+        .ox-table .q-type {
+            font-size: 8pt;
+            color: var(--text-soft);
+        }
+        .ox-table .correct { color: var(--correct); font-weight: 700; }
+        .ox-table .incorrect { color: var(--danger); font-weight: 700; }
+        .ox-table .student-wrong { color: var(--danger); font-weight: 500; }
+        .ox-table .no-answer { color: var(--text-muted); }
+
+        /* ── Analysis Cards ── */
+        .analysis-card {
+            border: 0.5px solid var(--border);
+            padding: 18px 22px;
+            margin-bottom: 14px;
+            page-break-inside: avoid;
+        }
+        .analysis-card h4 {
+            font-size: 10pt;
+            font-weight: 700;
+            color: var(--ink);
+            margin-bottom: 8px;
+        }
+        .analysis-card p {
+            font-size: 9.5pt;
+            line-height: 1.85;
+            color: var(--text-mid);
+        }
+        .analysis-card ul {
+            padding-left: 16px;
+            margin-top: 6px;
+        }
+        .analysis-card li {
+            font-size: 9.5pt;
+            margin-bottom: 3px;
+            color: var(--text-mid);
+            line-height: 1.75;
+        }
+
+        .wrong-item {
+            display: flex; gap: 14px;
+            padding: 14px 18px;
+            background: var(--danger-soft);
+            border-left: 3px solid var(--danger);
+            margin-bottom: 8px;
+            font-size: 9.5pt;
+            page-break-inside: avoid;
+        }
+        .wrong-item .q-badge {
+            font-family: var(--font-mono);
+            font-weight: 500;
+            color: var(--danger);
+            min-width: 30px;
+            font-size: 9pt;
+        }
+        .wrong-item .q-explanation {
+            color: var(--text-mid);
+            line-height: 1.75;
+        }
+
+        .correct-note {
+            padding: 10px 18px;
+            background: var(--correct-soft);
+            border-left: 3px solid var(--correct);
+            margin-bottom: 8px;
+            font-size: 9pt;
+            color: var(--text-mid);
+        }
+
+        /* ── Solution ── */
+        .solution-box {
+            background: var(--gold-wash);
+            border-left: 3px solid var(--gold);
+            padding: 18px 22px;
+            margin-bottom: 12px;
+            page-break-inside: avoid;
+        }
+        .solution-box .priority-badge {
+            display: inline-block;
+            font-family: var(--font-mono);
+            font-size: 7.5pt;
+            font-weight: 500;
+            color: var(--gold-pale);
+            background: var(--ink);
+            padding: 2px 10px;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+        }
+        .solution-box h4 {
+            font-size: 10.5pt;
+            font-weight: 700;
+            color: var(--ink);
+            margin-bottom: 6px;
+        }
+        .solution-box ul { padding-left: 16px; }
+        .solution-box li {
+            font-size: 9.5pt;
+            margin-bottom: 3px;
+            color: var(--text-mid);
+            line-height: 1.75;
+        }
+
+        .encouragement-box {
+            margin-top: 22px;
+            padding: 24px 30px;
+            border: 0.5px solid var(--border);
+            background: var(--gold-wash);
+            text-align: center;
+            position: relative;
+        }
+        .encouragement-box::before,
+        .encouragement-box::after {
+            content: '';
+            position: absolute; left: 50%; transform: translateX(-50%);
+            width: 40px; height: 1px;
+            background: var(--gold);
+        }
+        .encouragement-box::before { top: -1px; }
+        .encouragement-box::after { bottom: -1px; }
+        .encouragement-box p {
+            font-size: 10pt;
+            line-height: 2;
+            color: var(--text-mid);
+        }
+        .encouragement-box .emphasis {
+            font-weight: 700;
+            color: var(--gold-dark);
+        }
+
+        @media print {
+            body { background: white; }
+            .page { margin: 0; box-shadow: none; }
+        }
+        .no-break { page-break-inside: avoid; }
+    </style>
+</head>
+<body>
+
+    <!-- PAGE 1: 종합 평가 -->
+    <div class="page">
+        <div class="page-accent"></div>
+        <div class="page-body">
+
+            <div class="page-header">
+                <h1>성적 심층 분석표</h1>
+            </div>
+
+            <div class="student-card no-break">
+                <div class="name">김형근 학생</div>
+                <div class="exam-name">2025학년도 3월 고1 전국연합학력평가</div>
+                <div class="date">2026-03-16</div>
+            </div>
+
+            <div class="section-header first">
+                <span class="section-num">01</span>
+                <span class="section-divider"></span>
+                <span class="section-title">종합 평가</span>
+            </div>
+
+            <div class="score-overview no-break">
+                <div class="score-card primary">
+                    <div class="score-label">총점</div>
+                    <div class="score-value">79<span class="score-unit"> / 100</span></div>
+                </div>
+                <div class="score-card">
+                    <div class="score-label">정답률</div>
+                    <div class="score-value">80<span class="score-unit">%</span></div>
+                </div>
+                <div class="score-card">
+                    <div class="score-label">정답 / 전체</div>
+                    <div class="score-value">36<span class="score-unit"> / 45</span></div>
+                </div>
+            </div>
+
+            <h3>영역별 성취도</h3>
+            <div class="donut-charts no-break">
+                <div class="donut-item">
+    <span class="donut-badge">1</span>
+    <svg width="170" height="170" viewBox="0 0 170 170">
+        <defs>
+            <linearGradient id="donut-grad-0" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#047857"/>
+                <stop offset="50%" stop-color="#10b981"/>
+                <stop offset="100%" stop-color="#0d9488"/>
+            </linearGradient>
+        </defs>
+        <circle cx="85" cy="85" r="62" fill="none" stroke="#e8e6e1" stroke-width="22"/>
+        <circle cx="85" cy="85" r="62" fill="none" stroke="url(#donut-grad-0)" stroke-width="22"
+                stroke-dasharray="389.6 389.6"
+                stroke-linecap="round" transform="rotate(-90 85 85)"/>
+        <text x="85" y="79" text-anchor="middle" font-family="Playfair Display,serif" font-size="34" font-weight="800" fill="#1a1a2e">100%</text>
+        <text x="85" y="101" text-anchor="middle" font-family="DM Mono,monospace" font-size="14" fill="#7a7a8a">17/17</text>
+    </svg>
+    <span class="donut-name">듣기</span>
+</div>
+<div class="donut-item">
+    <span class="donut-badge">2</span>
+    <svg width="170" height="170" viewBox="0 0 170 170">
+        <defs>
+            <linearGradient id="donut-grad-1" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#b45309"/>
+                <stop offset="50%" stop-color="#d97706"/>
+                <stop offset="100%" stop-color="#ca8a04"/>
+            </linearGradient>
+        </defs>
+        <circle cx="85" cy="85" r="62" fill="none" stroke="#e8e6e1" stroke-width="22"/>
+        <circle cx="85" cy="85" r="62" fill="none" stroke="url(#donut-grad-1)" stroke-width="22"
+                stroke-dasharray="307.8 389.6"
+                stroke-linecap="round" transform="rotate(-90 85 85)"/>
+        <text x="85" y="79" text-anchor="middle" font-family="Playfair Display,serif" font-size="34" font-weight="800" fill="#1a1a2e">79%</text>
+        <text x="85" y="101" text-anchor="middle" font-family="DM Mono,monospace" font-size="14" fill="#7a7a8a">15/19</text>
+    </svg>
+    <span class="donut-name">기본독해</span>
+</div>
+<div class="donut-item">
+    <span class="donut-badge">3</span>
+    <svg width="170" height="170" viewBox="0 0 170 170">
+        <defs>
+            <linearGradient id="donut-grad-2" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#c2410c"/>
+                <stop offset="50%" stop-color="#ea580c"/>
+                <stop offset="100%" stop-color="#d97706"/>
+            </linearGradient>
+        </defs>
+        <circle cx="85" cy="85" r="62" fill="none" stroke="#e8e6e1" stroke-width="22"/>
+        <circle cx="85" cy="85" r="62" fill="none" stroke="url(#donut-grad-2)" stroke-width="22"
+                stroke-dasharray="171.4 389.6"
+                stroke-linecap="round" transform="rotate(-90 85 85)"/>
+        <text x="85" y="79" text-anchor="middle" font-family="Playfair Display,serif" font-size="34" font-weight="800" fill="#1a1a2e">44%</text>
+        <text x="85" y="101" text-anchor="middle" font-family="DM Mono,monospace" font-size="14" fill="#7a7a8a">4/9</text>
+    </svg>
+    <span class="donut-name">고난도독해</span>
+</div>
+
+            </div>
+
+            <h3>종합 소견</h3>
+            <div class="summary-card">
+                <p>전체적으로 양호한 성취도를 보이고 있으며, 기본기가 잘 갖춰져 있는 것으로 판단됩니다. 듣기 영역(100%)이 상대적으로 강한 편이며, 고난도독해 영역(44%)에 대한 집중적인 보완이 필요할 것 같습니다.</p>
+            </div>
+
+        </div>
+        <div class="page-footer">
+            <span>Page 1 / 5</span>
+        </div>
+    </div>
+
+    <!-- PAGE 2: 정오표 -->
+    <div class="page">
+        <div class="page-accent"></div>
+        <div class="page-body">
+
+            <div class="page-header">
+                <h1>상세 점수 및 정오표</h1>
+            </div>
+
+            <div class="section-header first">
+                <span class="section-num">02</span>
+                <span class="section-divider"></span>
+                <span class="section-title">전체 문항 채점 결과</span>
+            </div>
+
+            <div class="ox-grid">
+                <div class="ox-cell is-correct">
+                    <span class="ox-q">1</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">2</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">3</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">4</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">5</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">6</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">7</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">8</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">9</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">10</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">11</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">12</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">13</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">14</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">15</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">16</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">17</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">18</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">19</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">20</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">21</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">22</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">23</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">24</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">25</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">26</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">27</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-incorrect">
+                    <span class="ox-q">28</span>
+                    <span>X</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">29</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">30</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-incorrect">
+                    <span class="ox-q">31</span>
+                    <span>X</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">32</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">33</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-incorrect">
+                    <span class="ox-q">34</span>
+                    <span>X</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">35</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-incorrect">
+                    <span class="ox-q">36</span>
+                    <span>X</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">37</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-incorrect">
+                    <span class="ox-q">38</span>
+                    <span>X</span>
+                </div>
+<div class="ox-cell is-incorrect">
+                    <span class="ox-q">39</span>
+                    <span>X</span>
+                </div>
+<div class="ox-cell is-incorrect">
+                    <span class="ox-q">40</span>
+                    <span>X</span>
+                </div>
+<div class="ox-cell is-incorrect">
+                    <span class="ox-q">41</span>
+                    <span>X</span>
+                </div>
+<div class="ox-cell is-incorrect">
+                    <span class="ox-q">42</span>
+                    <span>X</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">43</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">44</span>
+                    <span>O</span>
+                </div>
+<div class="ox-cell is-correct">
+                    <span class="ox-q">45</span>
+                    <span>O</span>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="page-footer">
+            <span>Page 2 / 5</span>
+        </div>
+    </div>
+
+        <div class="page">
+        <div class="page-accent"></div>
+        <div class="page-body">
+            <div class="page-header"><h1>문항별 상세 채점표</h1></div>
+            <table class="ox-table">
+                <thead><tr><th style="width:8%">번호</th><th style="width:12%">유형</th><th style="width:10%">정답</th><th style="width:10%">제출</th><th style="width:10%">결과</th></tr></thead>
+                <tbody>
+<tr><td class="q-num">1</td><td class="q-type">듣기</td><td>4</td><td class="">4</td><td class="correct">O</td></tr>
+<tr><td class="q-num">2</td><td class="q-type">듣기</td><td>5</td><td class="">5</td><td class="correct">O</td></tr>
+<tr><td class="q-num">3</td><td class="q-type">듣기</td><td>2</td><td class="">2</td><td class="correct">O</td></tr>
+<tr><td class="q-num">4</td><td class="q-type">듣기</td><td>3</td><td class="">3</td><td class="correct">O</td></tr>
+<tr><td class="q-num">5</td><td class="q-type">듣기</td><td>5</td><td class="">5</td><td class="correct">O</td></tr>
+<tr><td class="q-num">6</td><td class="q-type">듣기</td><td>3</td><td class="">3</td><td class="correct">O</td></tr>
+<tr><td class="q-num">7</td><td class="q-type">듣기</td><td>2</td><td class="">2</td><td class="correct">O</td></tr>
+<tr><td class="q-num">8</td><td class="q-type">듣기</td><td>4</td><td class="">4</td><td class="correct">O</td></tr>
+<tr><td class="q-num">9</td><td class="q-type">듣기</td><td>3</td><td class="">3</td><td class="correct">O</td></tr>
+<tr><td class="q-num">10</td><td class="q-type">듣기</td><td>2</td><td class="">2</td><td class="correct">O</td></tr>
+<tr><td class="q-num">11</td><td class="q-type">듣기</td><td>2</td><td class="">2</td><td class="correct">O</td></tr>
+<tr><td class="q-num">12</td><td class="q-type">듣기</td><td>4</td><td class="">4</td><td class="correct">O</td></tr>
+<tr><td class="q-num">13</td><td class="q-type">듣기</td><td>1</td><td class="">1</td><td class="correct">O</td></tr>
+<tr><td class="q-num">14</td><td class="q-type">듣기</td><td>4</td><td class="">4</td><td class="correct">O</td></tr>
+<tr><td class="q-num">15</td><td class="q-type">듣기</td><td>4</td><td class="">4</td><td class="correct">O</td></tr>
+<tr><td class="q-num">16</td><td class="q-type">듣기</td><td>5</td><td class="">5</td><td class="correct">O</td></tr>
+<tr><td class="q-num">17</td><td class="q-type">듣기</td><td>3</td><td class="">3</td><td class="correct">O</td></tr>
+<tr><td class="q-num">18</td><td class="q-type">기본독해</td><td>3</td><td class="">3</td><td class="correct">O</td></tr>
+<tr><td class="q-num">19</td><td class="q-type">기본독해</td><td>3</td><td class="">3</td><td class="correct">O</td></tr>
+<tr><td class="q-num">20</td><td class="q-type">기본독해</td><td>2</td><td class="">2</td><td class="correct">O</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="page-footer">
+            <span>Page 3 / 5</span>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="page-accent"></div>
+        <div class="page-body">
+            <div class="page-header"><h1>문항별 상세 채점표</h1></div>
+            <table class="ox-table">
+                <thead><tr><th style="width:8%">번호</th><th style="width:12%">유형</th><th style="width:10%">정답</th><th style="width:10%">제출</th><th style="width:10%">결과</th></tr></thead>
+                <tbody>
+<tr><td class="q-num">21</td><td class="q-type">고난도독해</td><td>1</td><td class="">1</td><td class="correct">O</td></tr>
+<tr><td class="q-num">22</td><td class="q-type">기본독해</td><td>1</td><td class="">1</td><td class="correct">O</td></tr>
+<tr><td class="q-num">23</td><td class="q-type">기본독해</td><td>5</td><td class="">5</td><td class="correct">O</td></tr>
+<tr><td class="q-num">24</td><td class="q-type">기본독해</td><td>1</td><td class="">1</td><td class="correct">O</td></tr>
+<tr><td class="q-num">25</td><td class="q-type">기본독해</td><td>4</td><td class="">4</td><td class="correct">O</td></tr>
+<tr><td class="q-num">26</td><td class="q-type">기본독해</td><td>4</td><td class="">4</td><td class="correct">O</td></tr>
+<tr><td class="q-num">27</td><td class="q-type">기본독해</td><td>2</td><td class="">2</td><td class="correct">O</td></tr>
+<tr><td class="q-num">28</td><td class="q-type">기본독해</td><td>2</td><td class="student-wrong">4</td><td class="incorrect">X</td></tr>
+<tr><td class="q-num">29</td><td class="q-type">기본독해</td><td>4</td><td class="">4</td><td class="correct">O</td></tr>
+<tr><td class="q-num">30</td><td class="q-type">기본독해</td><td>5</td><td class="">5</td><td class="correct">O</td></tr>
+<tr><td class="q-num">31</td><td class="q-type">고난도독해</td><td>1</td><td class="student-wrong">5</td><td class="incorrect">X</td></tr>
+<tr><td class="q-num">32</td><td class="q-type">고난도독해</td><td>3</td><td class="">3</td><td class="correct">O</td></tr>
+<tr><td class="q-num">33</td><td class="q-type">고난도독해</td><td>4</td><td class="">4</td><td class="correct">O</td></tr>
+<tr><td class="q-num">34</td><td class="q-type">고난도독해</td><td>1</td><td class="student-wrong">2</td><td class="incorrect">X</td></tr>
+<tr><td class="q-num">35</td><td class="q-type">기본독해</td><td>2</td><td class="">2</td><td class="correct">O</td></tr>
+<tr><td class="q-num">36</td><td class="q-type">고난도독해</td><td>5</td><td class="student-wrong">3</td><td class="incorrect">X</td></tr>
+<tr><td class="q-num">37</td><td class="q-type">고난도독해</td><td>5</td><td class="">5</td><td class="correct">O</td></tr>
+<tr><td class="q-num">38</td><td class="q-type">고난도독해</td><td>3</td><td class="student-wrong">4</td><td class="incorrect">X</td></tr>
+<tr><td class="q-num">39</td><td class="q-type">고난도독해</td><td>5</td><td class="student-wrong">1</td><td class="incorrect">X</td></tr>
+<tr><td class="q-num">40</td><td class="q-type">기본독해</td><td>1</td><td class="student-wrong">2</td><td class="incorrect">X</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="page-footer">
+            <span>Page 4 / 5</span>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="page-accent"></div>
+        <div class="page-body">
+            <div class="page-header"><h1>문항별 상세 채점표</h1></div>
+            <table class="ox-table">
+                <thead><tr><th style="width:8%">번호</th><th style="width:12%">유형</th><th style="width:10%">정답</th><th style="width:10%">제출</th><th style="width:10%">결과</th></tr></thead>
+                <tbody>
+<tr><td class="q-num">41</td><td class="q-type">기본독해</td><td>1</td><td class="student-wrong">4</td><td class="incorrect">X</td></tr>
+<tr><td class="q-num">42</td><td class="q-type">기본독해</td><td>2</td><td class="student-wrong">5</td><td class="incorrect">X</td></tr>
+<tr><td class="q-num">43</td><td class="q-type">기본독해</td><td>4</td><td class="">4</td><td class="correct">O</td></tr>
+<tr><td class="q-num">44</td><td class="q-type">기본독해</td><td>3</td><td class="">3</td><td class="correct">O</td></tr>
+<tr><td class="q-num">45</td><td class="q-type">기본독해</td><td>2</td><td class="">2</td><td class="correct">O</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="page-footer">
+            <span>Page 5 / 5</span>
+        </div>
+    </div>
+
+</body>
+</html>

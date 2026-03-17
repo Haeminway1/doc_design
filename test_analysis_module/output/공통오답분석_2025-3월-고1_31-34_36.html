@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+@page {
+    size: A4;
+    margin: 20mm 18mm 18mm 18mm;
+    @bottom-center {
+        content: "— " counter(page) " —";
+        font-family: 'Noto Sans CJK KR', sans-serif;
+        font-size: 8pt;
+        color: #999;
+    }
+}
+@page :first { @bottom-center { content: none; } }
+
+body {
+    font-family: 'Noto Sans CJK KR', sans-serif;
+    font-size: 10pt;
+    line-height: 1.7;
+    color: #2D2D2D;
+    max-width: 210mm;
+    margin: 0 auto;
+}
+
+/* ─── SECTION / SUBSECTION ─── */
+.section-title {
+    margin-top: 5mm; padding-top: 3mm;
+    border-top: 2.5px solid #1B2A4A;
+    font-size: 15pt; font-weight: bold; color: #1B2A4A;
+    margin-bottom: 2mm; padding-bottom: 3mm;
+    border-bottom: 1px solid #C5A55A;
+}
+.subsection { font-size: 12pt; font-weight: bold; color: #2C5F8A; margin-top: 6mm; margin-bottom: 3mm; }
+.subsection::before { content: "■ "; }
+
+/* ─── PASSAGE ─── */
+.eng-passage {
+    font-family: 'Noto Serif CJK KR', 'Georgia', serif;
+    font-size: 9.5pt; line-height: 1.85; color: #333;
+    margin: 3mm 4mm; padding: 5mm 6mm;
+    background: #FAFAF7; border-left: 3px solid #C5A55A;
+    text-align: justify;
+}
+.eng-passage .keyword {
+    background: linear-gradient(transparent 55%, #BBDEFB 55%);
+    font-weight: bold;
+}
+.eng-passage .contrast {
+    background: linear-gradient(transparent 55%, #FFCDD2 55%);
+}
+.eng-passage .blank {
+    display: inline-block;
+    border-bottom: 2px solid #1B2A4A;
+    min-width: 120px;
+    text-align: center;
+    font-weight: bold;
+    color: #1565C0;
+    padding: 0 4px;
+}
+.eng-passage .order-a { color: #1565C0; font-weight: bold; }
+.eng-passage .order-b { color: #E65100; font-weight: bold; }
+.eng-passage .order-c { color: #2E7D32; font-weight: bold; }
+
+/* ─── BODY TEXT ─── */
+.body-text { font-size: 9.5pt; line-height: 1.8; margin-bottom: 3mm; text-align: justify; }
+
+/* ─── ANSWER BANNER ─── */
+.answer-banner {
+    background: #1B2A4A; color: white;
+    padding: 4mm 6mm; margin: 4mm 0;
+    font-size: 11pt; font-weight: bold;
+    text-align: center; border-radius: 4px;
+}
+.answer-banner .num { color: #C5A55A; font-size: 14pt; }
+
+/* ─── SUMMARY BOX ─── */
+.summary-box {
+    background: #E8EAF6; border-left: 3px solid #283593;
+    padding: 4mm 5mm; margin: 3mm 0;
+    font-size: 10pt; color: #1A237E; line-height: 1.8;
+    font-weight: 500;
+}
+
+/* ─── KEYWORD TABLE ─── */
+.keyword-table {
+    width: 100%; border-collapse: collapse; font-size: 9pt; margin: 2mm 0 4mm 0;
+}
+.keyword-table th { background: #1B2A4A; color: white; padding: 5px 8px; font-size: 8.5pt; text-align: center; }
+.keyword-table td { padding: 5px 8px; border-bottom: 0.5px solid #ddd; vertical-align: top; }
+.keyword-table tr:nth-child(even) { background: #FAFAF7; }
+.keyword-table .plus { color: #1565C0; font-weight: bold; }
+.keyword-table .minus { color: #B71C1C; font-weight: bold; }
+
+/* ─── VOCAB TABLE ─── */
+.vocab-table {
+    width: 100%; border-collapse: collapse; font-size: 9pt; margin: 2mm 0 4mm 0;
+}
+.vocab-table th { background: #1B2A4A; color: white; padding: 5px 8px; font-size: 8.5pt; text-align: center; }
+.vocab-table td { padding: 4px 8px; border-bottom: 0.5px solid #ddd; vertical-align: top; }
+.vocab-table tr:nth-child(even) { background: #FAFAF7; }
+.vocab-table .word { font-weight: bold; white-space: nowrap; width: 28%; }
+.vocab-table .meaning { width: 72%; }
+
+/* ─── OPTION ANALYSIS ─── */
+.option-analysis { margin: 2mm 0; font-size: 9.5pt; line-height: 1.9; }
+.option-item {
+    padding: 3mm 4mm; margin-bottom: 2mm; border-radius: 3px; border-left: 3px solid transparent;
+}
+.option-item.correct { background: #E3F2FD; border-left-color: #1565C0; }
+.option-item.wrong { background: #F5F5F5; border-left-color: #ccc; }
+.option-item .opt-num { font-weight: bold; margin-right: 4px; }
+.option-item .opt-num.is-correct { color: #1565C0; }
+.option-item .opt-num.is-wrong { color: #999; }
+.option-item .opt-word { font-weight: bold; }
+.option-item .opt-kr { color: #555; font-size: 9pt; }
+.option-item .opt-verdict {
+    display: inline-block; font-size: 8pt; font-weight: bold;
+    padding: 1px 8px; border-radius: 3px; margin-left: 6px;
+}
+.verdict-match { background: #BBDEFB; color: #1565C0; }
+.verdict-reverse { background: #FFCDD2; color: #B71C1C; }
+.verdict-irrelevant { background: #E0E0E0; color: #616161; }
+.verdict-trap { background: #FFE0B2; color: #E65100; }
+.option-item .opt-reason {
+    display: block; margin-top: 1mm; margin-left: 20px;
+    font-size: 8.5pt; color: #555; line-height: 1.7;
+}
+
+/* ─── ORDER ANALYSIS (순서배열 전용) ─── */
+.order-step {
+    padding: 3mm 5mm; margin-bottom: 2mm;
+    background: #FFF3E0; border-left: 3px solid #E65100;
+    font-size: 9pt; line-height: 1.8;
+}
+.order-step .step-label {
+    display: inline-block; background: #E65100; color: white;
+    padding: 1px 8px; border-radius: 3px; font-size: 8pt; font-weight: bold; margin-right: 4px;
+}
+.order-step .clue { color: #1565C0; font-weight: bold; }
+.sentence-map {
+    background: #F3E5F5; border: 1.5px solid #CE93D8;
+    padding: 4mm 5mm; margin: 3mm 0; font-size: 8.5pt; line-height: 2;
+}
+.sentence-map .s-label {
+    display: inline-block; background: #7B1FA2; color: white;
+    padding: 1px 6px; border-radius: 3px; font-size: 7.5pt; font-weight: bold; margin-right: 3px;
+}
+
+/* ─── BOXES ─── */
+.tip-box {
+    background: #F1F8E9; border-left: 3px solid #33691E;
+    padding: 3mm 4mm; margin: 3mm 0; font-size: 9pt; color: #33691E;
+}
+
+/* ─── UTILITIES ─── */
+.page-break { page-break-before: always; }
+.header-bar { text-align: center; font-size: 7.5pt; color: #C5A55A; border-bottom: 0.3px solid #C5A55A; padding-bottom: 2mm; margin-bottom: 5mm; }
+
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 31번: 빈칸추론                              -->
+<!-- ══════════════════════════════════════════ -->
+<div class="header-bar">2025.03 고1 전국연합학력평가 &nbsp;|&nbsp; 공통 오답 분석</div>
+<div class="section-title">31번 &nbsp;|&nbsp; 빈칸추론 (2점)</div>
+
+<div class="subsection">한 문장 요약</div>
+<div class="summary-box">
+    플라톤의 '아름다움의 형상(Form of Beauty)'은 색·모양·크기가 없는 <b>추상적 관념</b>이며, 모든 아름다운 것 안에 보편적으로 존재한다.
+</div>
+
+<div class="subsection">원문 지문</div>
+<div class="eng-passage">
+Plato argued that when you see something that strikes you as beautiful, you are really just seeing <span class="keyword">a partial reflection</span> of <span class="keyword">true beauty</span>, just as <span class="contrast">a painting</span> or even <span class="contrast">a photograph</span> only captures part of the real thing. <span class="keyword">True beauty</span>, or what Plato calls the <span class="keyword">Form of Beauty</span>, <span class="keyword">has no particular color, shape, or size</span>. Rather, it is a(n) <span class="blank">abstract</span> <span class="keyword">idea</span>, like <span class="keyword">the number five</span>. You can make <span class="contrast">drawings of the number five in blue or red ink, big or small</span>, but the number five itself is <span class="keyword">none of those things</span>. It <span class="keyword">has no physical form</span>. Think of the idea of <span class="keyword">a triangle</span>, for example. Although it <span class="keyword">has no particular color or size</span>, it somehow <span class="keyword">lies within each and every triangle</span> you see. Plato thought the same was true of beauty. The Form of Beauty somehow <span class="keyword">lies within each and every beautiful thing</span> you see.
+</div>
+
+<div class="answer-banner">정답: <span class="num">① abstract</span></div>
+
+<div class="subsection">키워드 + 유의어/반의어 흐름</div>
+<div class="body-text">
+    첫 두 문장 핵심 키워드: <b>true beauty</b>(진정한 아름다움), <b>Form of Beauty</b>(아름다움의 형상), <b>partial reflection</b>(부분적 반영)<br>
+    빈칸 방향: <b>abstract</b>(추상적) — 물리적 형태 없이 관념으로만 존재
+</div>
+<table class="keyword-table">
+<tr><th width="8%">+/−</th><th width="32%">표현</th><th width="60%">설명</th></tr>
+<tr><td class="plus" style="text-align:center;">+</td><td><b>true beauty, Form of Beauty</b></td><td>핵심 개념 — 눈에 보이지 않는 보편적 아름다움의 본질</td></tr>
+<tr><td class="plus" style="text-align:center;">+</td><td><b>idea</b></td><td>빈칸 바로 뒤에 등장 — "_____ idea" → 정답 단서 직결</td></tr>
+<tr><td class="plus" style="text-align:center;">+</td><td><b>no particular color, shape, or size</b></td><td>물리적 속성을 부정 → "추상적"을 우회적으로 설명</td></tr>
+<tr><td class="plus" style="text-align:center;">+</td><td><b>no physical form</b></td><td>abstract의 가장 직접적인 유의 표현</td></tr>
+<tr><td class="plus" style="text-align:center;">+</td><td><b>lies within each and every</b></td><td>형태 없이도 모든 곳에 내재 → 보편적·추상적 속성</td></tr>
+<tr><td class="minus" style="text-align:center;">−</td><td><b>a painting, a photograph</b></td><td>구체적 재현물 — "captures part of the real thing" → 진짜가 아닌 것</td></tr>
+<tr><td class="minus" style="text-align:center;">−</td><td><b>drawings in blue or red ink, big or small</b></td><td>숫자 5의 구체적 표현들 — 하지만 5 자체는 이것들이 아님</td></tr>
+</table>
+
+<div class="subsection">어려운 단어 및 표현</div>
+<table class="vocab-table">
+<tr><th>표현</th><th>뜻 / 설명</th></tr>
+<tr><td class="word">strikes you as ~</td><td class="meaning">~처럼 느껴지다 (= seems to be)</td></tr>
+<tr><td class="word">partial reflection</td><td class="meaning">부분적 반영. partial = 일부의 ↔ complete</td></tr>
+<tr><td class="word">Form of Beauty</td><td class="meaning">플라톤 철학 용어. '아름다움의 이데아' — 감각 너머의 보편적 본질</td></tr>
+<tr><td class="word">has no physical form</td><td class="meaning">물리적 형태가 없다. physical ↔ abstract</td></tr>
+<tr><td class="word">lies within</td><td class="meaning">~안에 존재하다, 내재하다 (= exists inside)</td></tr>
+</table>
+
+<div class="subsection">선지 분석</div>
+<div class="option-analysis">
+<div class="option-item correct">
+    <span class="opt-num is-correct">①</span> <span class="opt-word">abstract</span> <span class="opt-kr">— 추상적인</span>
+    <span class="opt-verdict verdict-match">키워드 일치</span>
+    <span class="opt-reason">"no physical form" "no particular color, shape, or size" "idea" 등 (+) 키워드와 정확히 대응. 정답.</span>
+</div>
+<div class="option-item wrong">
+    <span class="opt-num is-wrong">②</span> <span class="opt-word">practical</span> <span class="opt-kr">— 실용적인</span>
+    <span class="opt-verdict verdict-irrelevant">무관</span>
+    <span class="opt-reason">본문에 '실용성'에 대한 언급 자체가 없음.</span>
+</div>
+<div class="option-item wrong">
+    <span class="opt-num is-wrong">③</span> <span class="opt-word">imperfect</span> <span class="opt-kr">— 불완전한</span>
+    <span class="opt-verdict verdict-trap">함정 — 주어 착각</span>
+    <span class="opt-reason">"partial reflection"을 보고 연상하기 쉬움. 하지만 불완전한 것은 <b>우리가 보는 아름다움</b>이지, Form of Beauty 자체가 아님. 빈칸의 주어를 확인해야 한다.</span>
+</div>
+<div class="option-item wrong">
+    <span class="opt-num is-wrong">④</span> <span class="opt-word">visualized</span> <span class="opt-kr">— 시각화된</span>
+    <span class="opt-verdict verdict-reverse">키워드 반대</span>
+    <span class="opt-reason">"no particular color" "no physical form" → 시각화할 수 없는 것이 핵심. (+) 키워드와 정면 충돌.</span>
+</div>
+<div class="option-item wrong">
+    <span class="opt-num is-wrong">⑤</span> <span class="opt-word">changeable</span> <span class="opt-kr">— 변할 수 있는</span>
+    <span class="opt-verdict verdict-reverse">키워드 반대</span>
+    <span class="opt-reason">"lies within each and every" → 모든 곳에 동일하게 존재 = 불변·보편. changeable과 정반대.</span>
+</div>
+</div>
+
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 32번: 빈칸추론                              -->
+<!-- ══════════════════════════════════════════ -->
+<div class="page-break"></div>
+<div class="header-bar">2025.03 고1 전국연합학력평가 &nbsp;|&nbsp; 공통 오답 분석</div>
+<div class="section-title">32번 &nbsp;|&nbsp; 빈칸추론 (2점)</div>
+
+<div class="subsection">한 문장 요약</div>
+<div class="summary-box">
+    감정적인 순간에 아이에게 질문을 퍼붓기보다, 눈에 보이는 것을 <b>단순히 관찰해서 말해주는 것</b>이 대화를 여는 데 더 효과적이다.
+</div>
+
+<div class="subsection">원문 지문</div>
+<div class="eng-passage">
+As you listen to your child in an emotional moment, be aware that <span class="blank">sharing simple observations</span> usually <span class="keyword">works better than</span> <span class="contrast">asking questions</span> to get a conversation rolling. You may ask your child <span class="contrast">"Why do you feel sad?"</span> and she may <span class="contrast">not have a clue</span>. As a child, she may <span class="contrast">not have an answer on the tip of her tongue</span>. Maybe she's feeling sad about her parents' arguments, or because she feels overtired, or she's worried about a piano recital. But she may or may not be able to explain any of this. And even when she does come up with an answer, she might be worried that the answer is <span class="contrast">not good enough to justify</span> the feeling. Under these circumstances, <span class="contrast">a series of questions</span> can just <span class="contrast">make a child silent</span>. It's better to <span class="keyword">simply reflect what you notice</span>. You can say, <span class="keyword">"You seem a little tired today,"</span> or, <span class="keyword">"I noticed that you frowned when I mentioned the recital,"</span> and <span class="keyword">wait for her response</span>.
+</div>
+
+<div class="answer-banner">정답: <span class="num">③ sharing simple observations</span></div>
+
+<div class="subsection">키워드 + 유의어/반의어 흐름</div>
+<div class="body-text">
+    첫 문장 핵심 구조: <b>_____ works better than asking questions</b><br>
+    빈칸 방향: 질문의 반대 → <b>관찰을 공유하는 것</b>
+</div>
+<table class="keyword-table">
+<tr><th width="8%">+/−</th><th width="32%">표현</th><th width="60%">설명</th></tr>
+<tr><td class="plus" style="text-align:center;">+</td><td><b>simply reflect what you notice</b></td><td>빈칸의 직접적 풀이 — 관찰한 것을 단순히 반영</td></tr>
+<tr><td class="plus" style="text-align:center;">+</td><td><b>"You seem a little tired today"</b></td><td>관찰 공유의 구체적 예시 ①</td></tr>
+<tr><td class="plus" style="text-align:center;">+</td><td><b>"I noticed that you frowned"</b></td><td>관찰 공유의 구체적 예시 ②</td></tr>
+<tr><td class="plus" style="text-align:center;">+</td><td><b>wait for her response</b></td><td>압박하지 않고 기다림 → 관찰 후 여유</td></tr>
+<tr><td class="minus" style="text-align:center;">−</td><td><b>asking questions</b></td><td>빈칸과 직접 대조 ("better than ~")</td></tr>
+<tr><td class="minus" style="text-align:center;">−</td><td><b>"Why do you feel sad?"</b></td><td>질문 공세의 구체적 예시</td></tr>
+<tr><td class="minus" style="text-align:center;">−</td><td><b>a series of questions → make a child silent</b></td><td>질문 연쇄의 부정적 결과</td></tr>
+</table>
+
+<div class="subsection">어려운 단어 및 표현</div>
+<table class="vocab-table">
+<tr><th>표현</th><th>뜻 / 설명</th></tr>
+<tr><td class="word">get a conversation rolling</td><td class="meaning">대화를 시작하다, 대화의 물꼬를 트다</td></tr>
+<tr><td class="word">not have a clue</td><td class="meaning">전혀 모르다, 감을 잡지 못하다</td></tr>
+<tr><td class="word">on the tip of her tongue</td><td class="meaning">입 끝에서 맴돌다 (생각이 날 듯 안 나는)</td></tr>
+<tr><td class="word">justify the feeling</td><td class="meaning">감정을 정당화하다 — 왜 그렇게 느끼는지 설명</td></tr>
+<tr><td class="word">reflect what you notice</td><td class="meaning">눈에 보이는 것을 반영해서 말해주다</td></tr>
+<tr><td class="word">frowned</td><td class="meaning">인상을 찌푸렸다 (frown의 과거형)</td></tr>
+</table>
+
+<div class="subsection">선지 분석</div>
+<div class="option-analysis">
+<div class="option-item wrong">
+    <span class="opt-num is-wrong">①</span> <span class="opt-word">giving quick advice</span> <span class="opt-kr">— 빠른 조언 주기</span>
+    <span class="opt-verdict verdict-irrelevant">무관</span>
+    <span class="opt-reason">본문에 '조언'에 대한 언급이 없음. reflect/notice는 조언이 아니라 관찰.</span>
+</div>
+<div class="option-item wrong">
+    <span class="opt-num is-wrong">②</span> <span class="opt-word">pushing her for answers</span> <span class="opt-kr">— 답을 요구하기</span>
+    <span class="opt-verdict verdict-reverse">키워드 반대</span>
+    <span class="opt-reason">"a series of questions → make a child silent" = pushing. (−) 방향 그 자체.</span>
+</div>
+<div class="option-item correct">
+    <span class="opt-num is-correct">③</span> <span class="opt-word">sharing simple observations</span> <span class="opt-kr">— 단순한 관찰을 나누기</span>
+    <span class="opt-verdict verdict-match">키워드 일치</span>
+    <span class="opt-reason">"simply reflect what you notice" = sharing simple observations. (+) 키워드 완벽 대응. 정답.</span>
+</div>
+<div class="option-item wrong">
+    <span class="opt-num is-wrong">④</span> <span class="opt-word">telling your own life stories</span> <span class="opt-kr">— 자기 인생 이야기 하기</span>
+    <span class="opt-verdict verdict-irrelevant">무관</span>
+    <span class="opt-reason">부모의 경험담 언급 없음. 초점은 아이를 관찰하는 것.</span>
+</div>
+<div class="option-item wrong">
+    <span class="opt-num is-wrong">⑤</span> <span class="opt-word">leaving her alone to cool down</span> <span class="opt-kr">— 혼자 두고 진정시키기</span>
+    <span class="opt-verdict verdict-irrelevant">무관</span>
+    <span class="opt-reason">"wait for her response" ≠ 혼자 두기. 옆에서 기다리는 것과 자리를 피하는 것은 다름.</span>
+</div>
+</div>
+
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 33번: 빈칸추론                              -->
+<!-- ══════════════════════════════════════════ -->
+<div class="page-break"></div>
+<div class="header-bar">2025.03 고1 전국연합학력평가 &nbsp;|&nbsp; 공통 오답 분석</div>
+<div class="section-title">33번 &nbsp;|&nbsp; 빈칸추론 (3점)</div>
+
+<div class="subsection">한 문장 요약</div>
+<div class="summary-box">
+    피부의 전기 전도도(땀)를 추적하면, 주관적인 감정 상태를 <b>객관적 수치로 측정</b>할 수 있다.
+</div>
+
+<div class="subsection">원문 지문</div>
+<div class="eng-passage">
+Our skin <span class="keyword">conducts electricity</span> more or less efficiently, <span class="keyword">depending on our emotions</span>. We know that when we're <span class="contrast">emotionally stimulated</span> — stressed, sad, any intense emotion, really — our bodies <span class="keyword">sweat a tiny bit</span>, so little we might not even notice. And when those tiny drops of sweat appear, our skin gets <span class="keyword">more electrically conductive</span>. This change in sweat gland activity happens completely <span class="contrast">without your conscious mind</span> having much say in the matter. If you feel emotionally intense, you're going to notice an increase in sweat gland activity. This is particularly useful from a scientific viewpoint, because it allows us to <span class="keyword">put an objective value on a subjective state of mind</span>. We can actually <span class="blank">measure your emotional state</span> by <span class="keyword">tracking how your body subconsciously sweats</span>, by running a bit of electricity through your skin. We can then <span class="keyword">turn the subjective, subconscious experience of emotional intensity into an objective number</span> by figuring out how good your skin gets at transferring an electrical current.
+</div>
+
+<div class="answer-banner">정답: <span class="num">④ measure your emotional state</span></div>
+
+<div class="subsection">키워드 + 유의어/반의어 흐름</div>
+<div class="body-text">
+    첫 두 문장 핵심 키워드: <b>conducts electricity</b>(전기를 전도하다), <b>depending on our emotions</b>(감정에 따라)<br>
+    빈칸 방향: 감정 → 땀 → 전기 전도 → <b>감정을 측정</b>
+</div>
+<table class="keyword-table">
+<tr><th width="8%">+/−</th><th width="32%">표현</th><th width="60%">설명</th></tr>
+<tr><td class="plus" style="text-align:center;">+</td><td><b>put an objective value on a subjective state</b></td><td>핵심 문장 — 주관적 상태에 객관적 수치를 부여 = 측정</td></tr>
+<tr><td class="plus" style="text-align:center;">+</td><td><b>tracking how your body sweats</b></td><td>측정의 구체적 방법</td></tr>
+<tr><td class="plus" style="text-align:center;">+</td><td><b>turn ... into an objective number</b></td><td>빈칸 뒤 문장 — "측정"의 직접적 유의 표현</td></tr>
+<tr><td class="plus" style="text-align:center;">+</td><td><b>conducts electricity / electrically conductive</b></td><td>측정 원리 — 전기 전도도가 감정의 지표</td></tr>
+<tr><td class="minus" style="text-align:center;">−</td><td><b>emotionally stimulated</b></td><td>측정 대상 — 주관적이고 의식적으로 제어 불가능한 감정</td></tr>
+<tr><td class="minus" style="text-align:center;">−</td><td><b>without your conscious mind</b></td><td>의식의 통제 밖 → 주관적·무의식적 영역</td></tr>
+</table>
+
+<div class="subsection">어려운 단어 및 표현</div>
+<table class="vocab-table">
+<tr><th>표현</th><th>뜻 / 설명</th></tr>
+<tr><td class="word">conducts electricity</td><td class="meaning">전기를 전도하다. conduct = 전달하다, 이끌다</td></tr>
+<tr><td class="word">electrically conductive</td><td class="meaning">전기 전도성이 있는. conductive ↔ resistant(저항성의)</td></tr>
+<tr><td class="word">sweat gland activity</td><td class="meaning">땀샘 활동. gland = 분비선</td></tr>
+<tr><td class="word">put an objective value on ~</td><td class="meaning">~에 객관적 수치를 부여하다. objective ↔ subjective</td></tr>
+<tr><td class="word">subconsciously</td><td class="meaning">무의식적으로. sub-(아래) + conscious(의식)</td></tr>
+<tr><td class="word">transferring an electrical current</td><td class="meaning">전류를 전달하다</td></tr>
+</table>
+
+<div class="subsection">선지 분석</div>
+<div class="option-analysis">
+<div class="option-item wrong">
+    <span class="opt-num is-wrong">①</span> <span class="opt-word">limit reactions of hormones</span> <span class="opt-kr">— 호르몬 반응을 제한하다</span>
+    <span class="opt-verdict verdict-irrelevant">무관</span>
+    <span class="opt-reason">본문에 hormone 언급 없음. 측정이지 제한이 아님.</span>
+</div>
+<div class="option-item wrong">
+    <span class="opt-num is-wrong">②</span> <span class="opt-word">control the electrical current</span> <span class="opt-kr">— 전류를 제어하다</span>
+    <span class="opt-verdict verdict-trap">함정 — 동사 방향 착각</span>
+    <span class="opt-reason">"electrical current"는 본문에 있지만, 글의 목적은 전류를 '제어'하는 것이 아니라 전류를 '이용해 측정'하는 것. 키워드는 맞지만 동사 방향이 반대.</span>
+</div>
+<div class="option-item wrong">
+    <span class="opt-num is-wrong">③</span> <span class="opt-word">improve your skin conditions</span> <span class="opt-kr">— 피부 상태를 개선하다</span>
+    <span class="opt-verdict verdict-irrelevant">무관</span>
+    <span class="opt-reason">skin은 나오지만, 피부 '개선'에 대한 내용 zero. 피부는 측정 도구일 뿐.</span>
+</div>
+<div class="option-item correct">
+    <span class="opt-num is-correct">④</span> <span class="opt-word">measure your emotional state</span> <span class="opt-kr">— 감정 상태를 측정하다</span>
+    <span class="opt-verdict verdict-match">키워드 일치</span>
+    <span class="opt-reason">"put an objective value on a subjective state" = measure emotional state. (+) 키워드 완벽 대응. 정답.</span>
+</div>
+<div class="option-item wrong">
+    <span class="opt-num is-wrong">⑤</span> <span class="opt-word">diversify emotional experiences</span> <span class="opt-kr">— 감정 경험을 다양화하다</span>
+    <span class="opt-verdict verdict-irrelevant">무관</span>
+    <span class="opt-reason">"emotional"은 있지만 다양화와 무관. 감정을 '측정'하는 것이지 '다양하게 만드는' 것이 아님.</span>
+</div>
+</div>
+
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 34번: 빈칸추론                              -->
+<!-- ══════════════════════════════════════════ -->
+<div class="page-break"></div>
+<div class="header-bar">2025.03 고1 전국연합학력평가 &nbsp;|&nbsp; 공통 오답 분석</div>
+<div class="section-title">34번 &nbsp;|&nbsp; 빈칸추론 (3점)</div>
+
+<div class="subsection">한 문장 요약</div>
+<div class="summary-box">
+    식물은 냄새와 소리로 소통하며, 이는 고통의 표현이 아닌 <b>해로운 것에 대한 자동적 방어(생존) 반응</b>이다.
+</div>
+
+<div class="subsection">원문 지문</div>
+<div class="eng-passage">
+<span class="keyword">Plants can communicate</span>, although not in the same way we do. Some express their discontent through <span class="keyword">scents</span>. You know that smell that hangs in the air after you've mowed the lawn? Yeah, that's actually an <span class="keyword">SOS</span>. Some plants use <span class="keyword">sound</span>. Yes, sound, though at a frequency that we can't hear. Researchers experimented with plants and microphones to see if they could record any <span class="keyword">trouble calls</span>. They found that plants produce a high-frequency clicking noise when <span class="keyword">stressed</span> and can make different sounds for different <span class="keyword">stressors</span>. The sound a plant makes when it's not getting watered differs from the one it'll make when a leaf is cut. However, it's worth noting that experts <span class="contrast">don't think plants are crying out in pain</span>. It's more likely that these reactions are <span class="keyword">knee-jerk survival actions</span>. Plants are living organisms, and their main objective is to <span class="keyword">survive</span>. Scents and sounds are their tools for <span class="blank">defending against things that might harm them</span>.
+</div>
+
+<div class="answer-banner">정답: <span class="num">① defending against things that might harm them</span></div>
+
+<div class="subsection">키워드 + 유의어/반의어 흐름</div>
+<div class="body-text">
+    첫 두 문장 핵심 키워드: <b>communicate</b>(소통하다), <b>scents</b>(냄새)<br>
+    빈칸 방향: SOS, trouble calls, survival → <b>방어/생존 도구</b>
+</div>
+<table class="keyword-table">
+<tr><th width="8%">+/−</th><th width="32%">표현</th><th width="60%">설명</th></tr>
+<tr><td class="plus" style="text-align:center;">+</td><td><b>SOS</b></td><td>구조 신호 → 위험에 대한 반응 = 방어</td></tr>
+<tr><td class="plus" style="text-align:center;">+</td><td><b>trouble calls</b></td><td>위기 상황 호출 → SOS의 유의 표현</td></tr>
+<tr><td class="plus" style="text-align:center;">+</td><td><b>stressed, stressors</b></td><td>스트레스 원인에 반응 → 방어 행동의 촉발</td></tr>
+<tr><td class="plus" style="text-align:center;">+</td><td><b>knee-jerk survival actions</b></td><td>자동적 생존 행동 → 빈칸 정답의 직접적 유의 표현</td></tr>
+<tr><td class="plus" style="text-align:center;">+</td><td><b>main objective is to survive</b></td><td>빈칸 바로 앞 — 생존이 목적 → tools for 방어</td></tr>
+<tr><td class="minus" style="text-align:center;">−</td><td><b>don't think plants are crying out in pain</b></td><td>통증 표현이 아님을 명시적으로 부정 → "고통"은 오답 방향</td></tr>
+</table>
+
+<div class="subsection">어려운 단어 및 표현</div>
+<table class="vocab-table">
+<tr><th>표현</th><th>뜻 / 설명</th></tr>
+<tr><td class="word">discontent</td><td class="meaning">불만, 불쾌감. dis-(부정) + content(만족)</td></tr>
+<tr><td class="word">scent</td><td class="meaning">냄새, 향기 (= smell, odor)</td></tr>
+<tr><td class="word">mow the lawn</td><td class="meaning">잔디를 깎다</td></tr>
+<tr><td class="word">SOS</td><td class="meaning">구조 신호, 위급 상황 요청</td></tr>
+<tr><td class="word">stressor</td><td class="meaning">스트레스 요인. stress + -or(~하는 것)</td></tr>
+<tr><td class="word">knee-jerk</td><td class="meaning">자동적인, 반사적인 (원래: 무릎 반사)</td></tr>
+</table>
+
+<div class="subsection">선지 분석</div>
+<div class="option-analysis">
+<div class="option-item correct">
+    <span class="opt-num is-correct">①</span> <span class="opt-word">defending against things that might harm them</span> <span class="opt-kr">— 해로울 수 있는 것에 대한 방어</span>
+    <span class="opt-verdict verdict-match">키워드 일치</span>
+    <span class="opt-reason">SOS, trouble calls, survival actions, stressors → 모두 "해로운 것에 대한 방어"와 일치. 정답.</span>
+</div>
+<div class="option-item wrong">
+    <span class="opt-num is-wrong">②</span> <span class="opt-word">showing their support for neighboring plants</span> <span class="opt-kr">— 이웃 식물에 대한 지원 표시</span>
+    <span class="opt-verdict verdict-trap">함정 — communicate 확대 해석</span>
+    <span class="opt-reason">"communicate"에서 '협력'을 연상할 수 있지만, 본문은 다른 식물을 돕는 내용이 아니라 자신의 생존 반응.</span>
+</div>
+<div class="option-item wrong">
+    <span class="opt-num is-wrong">③</span> <span class="opt-word">hiding their pains and dissatisfaction</span> <span class="opt-kr">— 고통과 불만을 숨기기</span>
+    <span class="opt-verdict verdict-reverse">키워드 반대</span>
+    <span class="opt-reason">"don't think plants are crying out in pain" → 고통이 아님을 명시. "숨기기"도 아니고, 오히려 SOS로 드러내는 행동.</span>
+</div>
+<div class="option-item wrong">
+    <span class="opt-num is-wrong">④</span> <span class="opt-word">sharing nutrients with other plants</span> <span class="opt-kr">— 다른 식물과 영양분 공유</span>
+    <span class="opt-verdict verdict-irrelevant">무관</span>
+    <span class="opt-reason">nutrients(영양분)에 대한 언급 없음. 소통 도구는 scents와 sounds.</span>
+</div>
+<div class="option-item wrong">
+    <span class="opt-num is-wrong">⑤</span> <span class="opt-word">changing their genetic structure</span> <span class="opt-kr">— 유전 구조 변경</span>
+    <span class="opt-verdict verdict-irrelevant">무관</span>
+    <span class="opt-reason">유전자에 대한 언급 전혀 없음.</span>
+</div>
+</div>
+
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 36번: 순서배열                              -->
+<!-- ══════════════════════════════════════════ -->
+<div class="page-break"></div>
+<div class="header-bar">2025.03 고1 전국연합학력평가 &nbsp;|&nbsp; 공통 오답 분석</div>
+<div class="section-title">36번 &nbsp;|&nbsp; 순서 배열 (3점)</div>
+
+<div class="subsection">한 문장 요약</div>
+<div class="summary-box">
+    언어 없이 사고할 수 있는 동물이 있더라도, 그것이 곧 <b>개념(concepts)을 소유</b>한다는 뜻은 아니며, 개념 소유를 증명하려면 특정 능력을 보여야 한다.
+</div>
+
+<div class="subsection">원문 지문</div>
+<div class="eng-passage">
+<b>[주어진 글]</b><br>
+Let's assume that at least some animals are capable of <span class="keyword">thinking</span> despite <span class="keyword">lacking a language</span>.<br><br>
+
+<b class="order-c">(C)</b> <span class="keyword">This</span> doesn't necessarily mean that they possess <span class="keyword">concepts</span>, for some forms of thought may be <span class="keyword">nonconceptual</span>. We can imagine, for instance, <span class="keyword">a squirrel</span> who is planning how to get from the branch she's currently standing on to a branch from the tree in front.<br><br>
+
+<b class="order-b">(B)</b> <span class="keyword">To do this</span>, in principle she doesn't need a concept of branch nor a concept of tree. It might be enough for her to have, for example, the ability to <span class="keyword">think in images</span>; to make a <span class="keyword">mental map</span> of the tree where she can imagine and try out different routes.<br><br>
+
+<b class="order-a">(A)</b> <span class="keyword">This</span> doesn't imply that squirrels lack concepts, simply that they don't need them for <span class="keyword">this concrete form of thinking</span>. For us to be able to say that an animal has concepts, we have to show not just that she's capable of thinking, but also that she has <span class="keyword">certain specific abilities</span>.
+</div>
+
+<div class="answer-banner">정답: <span class="num">⑤ (C) - (B) - (A)</span></div>
+
+<div class="subsection">순서 결정 단서 분석</div>
+
+<div class="order-step">
+    <span class="step-label">1단계</span> <b>도입 → (C)</b><br>
+    도입: "some animals are capable of <b>thinking</b>"<br>
+    → (C): "<span class="clue">This</span> doesn't necessarily mean that they possess concepts"<br>
+    <b>This</b> = 동물이 사고할 수 있다는 것. 도입문을 직접 받는 지시어.
+</div>
+
+<div class="order-step">
+    <span class="step-label">2단계</span> <b>(C) → (B)</b><br>
+    (C) 끝: "a squirrel who is planning how to <b>get from the branch... to a branch</b>"<br>
+    → (B): "<span class="clue">To do this</span>, she doesn't need a concept of branch nor a concept of tree"<br>
+    <b>To do this</b> = 다람쥐가 가지에서 가지로 이동 계획을 세우는 것. (C)의 구체적 상황을 직접 받음.
+</div>
+
+<div class="order-step">
+    <span class="step-label">3단계</span> <b>(B) → (A)</b><br>
+    (B): "doesn't need a concept... think in <b>images</b>, <b>mental map</b>"<br>
+    → (A): "<span class="clue">This</span> doesn't imply that squirrels lack concepts... this <b>concrete form of thinking</b>"<br>
+    <b>This</b> = 이미지/심상 지도로 사고하는 것(= 개념 없는 사고). (B)의 논점을 받아 일반화.
+</div>
+
+<div class="subsection">지문 흐름 (Sentence Map)</div>
+<div class="sentence-map">
+<span class="s-label">도입</span> 동물이 언어 없이 사고 가능하다고 가정하자<br>
+<span class="s-label">C</span> 사고 가능 ≠ 개념 소유 → 비개념적 사고 가능 → 다람쥐 예시 도입<br>
+<span class="s-label">B</span> 다람쥐의 가지 이동 계획에 '가지' 개념 불필요 → 이미지/심상 지도로 충분<br>
+<span class="s-label">A</span> 개념이 없다는 뜻은 아님 → 개념 소유 증명에는 '특정 능력'이 필요 → 결론
+</div>
+
+<div class="subsection">어려운 단어 및 표현</div>
+<table class="vocab-table">
+<tr><th>표현</th><th>뜻 / 설명</th></tr>
+<tr><td class="word">lacking a language</td><td class="meaning">언어가 없는. lack = ~이 부족하다/없다</td></tr>
+<tr><td class="word">possess concepts</td><td class="meaning">개념을 소유하다. possess = own, have</td></tr>
+<tr><td class="word">nonconceptual</td><td class="meaning">비개념적인. non-(아닌) + conceptual(개념적인)</td></tr>
+<tr><td class="word">in principle</td><td class="meaning">원칙적으로, 이론상</td></tr>
+<tr><td class="word">think in images</td><td class="meaning">이미지로 사고하다 (언어 대신 심상 활용)</td></tr>
+<tr><td class="word">mental map</td><td class="meaning">심상 지도 — 머릿속에 그리는 공간 지도</td></tr>
+<tr><td class="word">concrete form of thinking</td><td class="meaning">구체적 형태의 사고 (↔ abstract thinking)</td></tr>
+</table>
+
+<div class="tip-box">
+<b>순서 배열 핵심 전략:</b><br>
+1. <b>This / To do this</b> 같은 지시어가 가리키는 대상을 정확히 찾아라 — 앞 문단의 마지막 내용과 연결<br>
+2. <b>구체 → 일반</b> 흐름: 다람쥐 예시(C→B)로 비개념적 사고를 설명한 뒤, (A)에서 "개념 소유 조건"으로 일반화<br>
+3. 세 단락 모두 <b>"This"</b>로 시작 → 각 This가 가리키는 내용이 바로 앞에 있는지 확인
+</div>
+
+
+</body>
+</html>

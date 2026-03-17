@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<style>
+@page {
+    size: A4;
+    margin: 20mm 18mm 18mm 18mm;
+    @bottom-center {
+        content: "— " counter(page) " —";
+        font-family: 'Noto Sans CJK KR', sans-serif;
+        font-size: 8pt;
+        color: #999;
+    }
+}
+@page :first { @bottom-center { content: none; } }
+
+body {
+    font-family: 'Noto Sans CJK KR', sans-serif;
+    font-size: 10pt;
+    line-height: 1.7;
+    color: #2D2D2D;
+    max-width: 210mm;
+    margin: 0 auto;
+}
+
+/* ─── SECTION / SUBSECTION ─── */
+.section-title {
+    margin-top: 5mm; padding-top: 3mm;
+    border-top: 2.5px solid #1B2A4A;
+    font-size: 15pt; font-weight: bold; color: #1B2A4A;
+    margin-bottom: 2mm; padding-bottom: 3mm;
+    border-bottom: 1px solid #C5A55A;
+}
+.subsection { font-size: 12pt; font-weight: bold; color: #2C5F8A; margin-top: 6mm; margin-bottom: 3mm; }
+.subsection::before { content: "■ "; }
+
+/* ─── PASSAGE ─── */
+.eng-passage {
+    font-family: 'Noto Serif CJK KR', 'Georgia', serif;
+    font-size: 9.5pt; line-height: 1.85; color: #333;
+    margin: 3mm 4mm; padding: 5mm 6mm;
+    background: #FAFAF7; border-left: 3px solid #C5A55A;
+    text-align: justify;
+}
+.eng-passage .keyword {
+    background: linear-gradient(transparent 55%, #BBDEFB 55%);
+    font-weight: bold;
+}
+.eng-passage .contrast {
+    background: linear-gradient(transparent 55%, #FFCDD2 55%);
+}
+.eng-passage .blank {
+    display: inline-block;
+    border-bottom: 2px solid #1B2A4A;
+    min-width: 120px;
+    text-align: center;
+    font-weight: bold;
+    color: #1565C0;
+    padding: 0 4px;
+}
+
+/* ─── BODY TEXT ─── */
+.body-text { font-size: 9.5pt; line-height: 1.8; margin-bottom: 3mm; text-align: justify; }
+
+/* ─── ANSWER BANNER ─── */
+.answer-banner {
+    background: #1B2A4A; color: white;
+    padding: 4mm 6mm; margin: 4mm 0;
+    font-size: 11pt; font-weight: bold;
+    text-align: center; border-radius: 4px;
+}
+.answer-banner .num { color: #C5A55A; font-size: 14pt; }
+
+/* ─── SUMMARY BOX ─── */
+.summary-box {
+    background: #E8EAF6; border-left: 3px solid #283593;
+    padding: 4mm 5mm; margin: 3mm 0;
+    font-size: 10pt; color: #1A237E; line-height: 1.8;
+    font-weight: 500;
+}
+
+/* ─── KEYWORD TABLE ─── */
+.keyword-table {
+    width: 100%; border-collapse: collapse; font-size: 9pt; margin: 2mm 0 4mm 0;
+}
+.keyword-table th { background: #1B2A4A; color: white; padding: 5px 8px; font-size: 8.5pt; text-align: center; }
+.keyword-table td { padding: 5px 8px; border-bottom: 0.5px solid #ddd; vertical-align: top; }
+.keyword-table tr:nth-child(even) { background: #FAFAF7; }
+.keyword-table .plus { color: #1565C0; font-weight: bold; }
+.keyword-table .minus { color: #B71C1C; font-weight: bold; }
+
+/* ─── VOCAB TABLE ─── */
+.vocab-table {
+    width: 100%; border-collapse: collapse; font-size: 9pt; margin: 2mm 0 4mm 0;
+}
+.vocab-table th { background: #1B2A4A; color: white; padding: 5px 8px; font-size: 8.5pt; text-align: center; }
+.vocab-table td { padding: 4px 8px; border-bottom: 0.5px solid #ddd; vertical-align: top; }
+.vocab-table tr:nth-child(even) { background: #FAFAF7; }
+.vocab-table .word { font-weight: bold; white-space: nowrap; width: 28%; }
+.vocab-table .meaning { width: 72%; }
+
+/* ─── OPTION ANALYSIS ─── */
+.option-analysis {
+    margin: 2mm 0;
+    font-size: 9.5pt;
+    line-height: 1.9;
+}
+.option-item {
+    padding: 3mm 4mm;
+    margin-bottom: 2mm;
+    border-radius: 3px;
+    border-left: 3px solid transparent;
+}
+.option-item.correct {
+    background: #E3F2FD;
+    border-left-color: #1565C0;
+}
+.option-item.wrong {
+    background: #F5F5F5;
+    border-left-color: #ccc;
+}
+.option-item .opt-num {
+    font-weight: bold;
+    margin-right: 4px;
+}
+.option-item .opt-num.is-correct { color: #1565C0; }
+.option-item .opt-num.is-wrong { color: #999; }
+.option-item .opt-word {
+    font-weight: bold;
+}
+.option-item .opt-kr {
+    color: #555;
+    font-size: 9pt;
+}
+.option-item .opt-verdict {
+    display: inline-block;
+    font-size: 8pt;
+    font-weight: bold;
+    padding: 1px 8px;
+    border-radius: 3px;
+    margin-left: 6px;
+}
+.verdict-match { background: #BBDEFB; color: #1565C0; }
+.verdict-reverse { background: #FFCDD2; color: #B71C1C; }
+.verdict-irrelevant { background: #E0E0E0; color: #616161; }
+.verdict-trap { background: #FFE0B2; color: #E65100; }
+.option-item .opt-reason {
+    display: block;
+    margin-top: 1mm;
+    margin-left: 20px;
+    font-size: 8.5pt;
+    color: #555;
+    line-height: 1.7;
+}
+
+/* ─── BOXES ─── */
+.logic-box {
+    background: #E8EAF6; border-left: 3px solid #283593;
+    padding: 4mm 5mm; margin: 3mm 0;
+    font-size: 9pt; color: #1A237E; line-height: 1.8;
+}
+.tip-box {
+    background: #F1F8E9; border-left: 3px solid #33691E;
+    padding: 3mm 4mm; margin: 3mm 0;
+    font-size: 9pt; color: #33691E;
+}
+
+/* ─── UTILITIES ─── */
+.page-break { page-break-before: always; }
+.header-bar { text-align: center; font-size: 7.5pt; color: #C5A55A; border-bottom: 0.3px solid #C5A55A; padding-bottom: 2mm; margin-bottom: 5mm; }
+
+</style>
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════ -->
+<!-- 31번: 빈칸추론                              -->
+<!-- ══════════════════════════════════════════ -->
+<div class="header-bar">2025.03 고1 전국연합학력평가 &nbsp;|&nbsp; 공통 오답 분석</div>
+<div class="section-title">31번 &nbsp;|&nbsp; 빈칸추론 (2점)</div>
+
+<div class="subsection">한 문장 요약</div>
+<div class="summary-box">
+    플라톤의 '아름다움의 형상(Form of Beauty)'은 색·모양·크기가 없는 <b>추상적 관념</b>이며, 모든 아름다운 것 안에 보편적으로 존재한다.
+</div>
+
+<div class="subsection">원문 지문</div>
+<div class="eng-passage">
+Plato argued that when you see something that strikes you as beautiful, you are really just seeing <span class="keyword">a partial reflection</span> of <span class="keyword">true beauty</span>, just as <span class="contrast">a painting</span> or even <span class="contrast">a photograph</span> only captures part of the real thing. <span class="keyword">True beauty</span>, or what Plato calls the <span class="keyword">Form of Beauty</span>, <span class="keyword">has no particular color, shape, or size</span>. Rather, it is a(n) <span class="blank">abstract</span> <span class="keyword">idea</span>, like <span class="keyword">the number five</span>. You can make <span class="contrast">drawings of the number five in blue or red ink, big or small</span>, but the number five itself is <span class="keyword">none of those things</span>. It <span class="keyword">has no physical form</span>. Think of the idea of <span class="keyword">a triangle</span>, for example. Although it <span class="keyword">has no particular color or size</span>, it somehow <span class="keyword">lies within each and every triangle</span> you see. Plato thought the same was true of beauty. The Form of Beauty somehow <span class="keyword">lies within each and every beautiful thing</span> you see.
+</div>
+
+<div class="answer-banner">정답: <span class="num">① abstract</span></div>
+
+<div class="subsection">키워드 + 유의어/반의어 흐름</div>
+<div class="body-text">
+    본문 첫 두 문장 핵심 키워드: <b>true beauty</b>(진정한 아름다움), <b>Form of Beauty</b>(아름다움의 형상), <b>partial reflection</b>(부분적 반영)<br>
+    빈칸 정답 방향: <b>abstract</b>(추상적) — 물리적 형태 없이 관념으로만 존재
+</div>
+<table class="keyword-table">
+<tr><th width="8%">+/−</th><th width="32%">표현</th><th width="60%">설명</th></tr>
+<tr>
+    <td class="plus" style="text-align:center;">+</td>
+    <td><b>true beauty, Form of Beauty</b></td>
+    <td>핵심 개념 — 눈에 보이지 않는 보편적 아름다움의 본질</td>
+</tr>
+<tr>
+    <td class="plus" style="text-align:center;">+</td>
+    <td><b>idea</b></td>
+    <td>빈칸 바로 뒤에 등장 — "_____ idea" → 정답 단서 직결</td>
+</tr>
+<tr>
+    <td class="plus" style="text-align:center;">+</td>
+    <td><b>no particular color, shape, or size</b></td>
+    <td>물리적 속성을 부정 → "추상적"을 우회적으로 설명</td>
+</tr>
+<tr>
+    <td class="plus" style="text-align:center;">+</td>
+    <td><b>no physical form</b></td>
+    <td>abstract의 가장 직접적인 유의 표현</td>
+</tr>
+<tr>
+    <td class="plus" style="text-align:center;">+</td>
+    <td><b>lies within each and every</b></td>
+    <td>형태 없이도 모든 곳에 내재 → 보편적·추상적 속성</td>
+</tr>
+<tr>
+    <td class="minus" style="text-align:center;">−</td>
+    <td><b>a painting, a photograph</b></td>
+    <td>구체적 재현물 — "captures part of the real thing" → 진짜가 아닌 것</td>
+</tr>
+<tr>
+    <td class="minus" style="text-align:center;">−</td>
+    <td><b>drawings in blue or red ink, big or small</b></td>
+    <td>숫자 5의 구체적 표현들 — 하지만 5 자체는 이것들이 아님</td>
+</tr>
+</table>
+
+<div class="tip-box">
+<b>읽기 전략:</b> (+) 표현이 "no ~", "none of ~" 같은 부정어로 물리적 속성을 계속 지우고, (−) 구체물(painting, drawings)은 "부분일 뿐"이라고 격하하면 → 빈칸 방향은 <b>"물리적이지 않은 = 추상적인"</b>.
+</div>
+
+<div class="subsection">어려운 단어 및 표현</div>
+<table class="vocab-table">
+<tr><th>표현</th><th>뜻 / 설명</th></tr>
+<tr><td class="word">strikes you as ~</td><td class="meaning">~처럼 느껴지다, ~인 것 같다 (= seems to be)</td></tr>
+<tr><td class="word">partial reflection</td><td class="meaning">부분적 반영. partial = 일부의 ↔ complete, whole</td></tr>
+<tr><td class="word">Form of Beauty</td><td class="meaning">플라톤 철학 용어. '아름다움의 이데아' — 감각을 넘어선 보편적 본질</td></tr>
+<tr><td class="word">has no physical form</td><td class="meaning">물리적 형태가 없다. physical ↔ abstract, mental</td></tr>
+<tr><td class="word">lies within</td><td class="meaning">~안에 존재하다, 내재하다 (= exists inside)</td></tr>
+</table>
+
+<div class="subsection">선지 분석</div>
+<div class="option-analysis">
+
+<div class="option-item correct">
+    <span class="opt-num is-correct">①</span>
+    <span class="opt-word">abstract</span>
+    <span class="opt-kr">— 추상적인</span>
+    <span class="opt-verdict verdict-match">키워드 일치</span>
+    <span class="opt-reason">
+        "no physical form" "no particular color, shape, or size" "idea" 등 본문의 (−) 키워드와 정확히 대응.<br>
+        물리적 형태가 없고, 관념(idea)으로만 존재 = <b>abstract</b>. 정답.
+    </span>
+</div>
+
+<div class="option-item wrong">
+    <span class="opt-num is-wrong">②</span>
+    <span class="opt-word">practical</span>
+    <span class="opt-kr">— 실용적인</span>
+    <span class="opt-verdict verdict-irrelevant">무관</span>
+    <span class="opt-reason">
+        본문에 '실용성'에 대한 언급 자체가 없음. "쓸모 있는/현실 적용"과 관련된 키워드 zero.
+    </span>
+</div>
+
+<div class="option-item wrong">
+    <span class="opt-num is-wrong">③</span>
+    <span class="opt-word">imperfect</span>
+    <span class="opt-kr">— 불완전한</span>
+    <span class="opt-verdict verdict-trap">함정 — 방향 착각</span>
+    <span class="opt-reason">
+        "partial reflection"을 보고 "불완전"을 연상하기 쉬움. 하지만 <b>불완전한 것은 우리가 보는 아름다움</b>이지, Form of Beauty 자체가 아님. 빈칸은 Form of Beauty를 설명하는 자리 → 방향 반대.
+    </span>
+</div>
+
+<div class="option-item wrong">
+    <span class="opt-num is-wrong">④</span>
+    <span class="opt-word">visualized</span>
+    <span class="opt-kr">— 시각화된</span>
+    <span class="opt-verdict verdict-reverse">키워드 반대</span>
+    <span class="opt-reason">
+        "no particular color" "no physical form" → 시각화할 수 <b>없는</b> 것이 핵심. visualized는 본문의 (−) 키워드와 정면 충돌.
+    </span>
+</div>
+
+<div class="option-item wrong">
+    <span class="opt-num is-wrong">⑤</span>
+    <span class="opt-word">changeable</span>
+    <span class="opt-kr">— 변할 수 있는</span>
+    <span class="opt-verdict verdict-reverse">키워드 반대</span>
+    <span class="opt-reason">
+        "lies within <b>each and every</b>" → 모든 아름다운 것 안에 동일하게 존재 = 불변·보편. changeable은 이 보편성과 정반대.
+    </span>
+</div>
+
+</div>
+
+</body>
+</html>

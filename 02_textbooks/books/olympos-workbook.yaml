@@ -1,0 +1,46 @@
+version: 2
+book:
+  id: olympos-workbook
+  title: 올림포스 영어독해 워크북 - Unit 1~5
+  shortTitle: 올림포스 워크북
+  author: 올림포스 영어독해
+  brand: 올림포스 영어독해
+  style: olympos-reading
+  subject: reading
+  level: basic
+  theme: sky-academic
+pages:
+  - type: content
+    src: reading/olympos/wb-cover.html
+    pageClass: cover-page no-header-footer
+  - type: content
+    src: reading/olympos/wb-compact-style.html
+    pageClass: no-header-footer
+  # A. 대의파악
+  - type: content
+    src: reading/olympos/wb-daeui-1.html
+  - type: content
+    src: reading/olympos/wb-daeui-2.html
+  # B. 빈칸추론
+  - type: content
+    src: reading/olympos/wb-binkan-1.html
+  - type: content
+    src: reading/olympos/wb-binkan-2.html
+  # C. 내용일치/불일치
+  - type: content
+    src: reading/olympos/wb-ilchi-1.html
+  - type: content
+    src: reading/olympos/wb-ilchi-2.html
+  # D. 요약문완성
+  - type: content
+    src: reading/olympos/wb-yoyak-1.html
+  - type: content
+    src: reading/olympos/wb-yoyak-2.html
+  # E. 함축의미추론
+  - type: content
+    src: reading/olympos/wb-hamchuk-1.html
+  - type: content
+    src: reading/olympos/wb-hamchuk-2.html
+  # 정답
+  - type: content
+    src: reading/olympos/wb-answers.html
