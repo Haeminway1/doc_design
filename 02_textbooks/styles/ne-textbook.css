@@ -35,6 +35,7 @@ code {
   margin: 15mm 18mm !important;
 }
 
+/* 화면용 */
 .page {
   width: 210mm;
   min-height: 297mm;
@@ -42,6 +43,23 @@ code {
   position: relative;
   page-break-after: always !important;
   overflow: visible !important;
+}
+
+/* 인쇄용: @page margin 이 모든 물리 페이지 상하좌우 여백을 담당.
+   .page padding 제거하여 이중 여백 방지 + 넘침 시 여백 유지 */
+@media print {
+  .page {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: auto !important;
+    min-height: auto !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+    page-break-after: always !important;
+  }
+  .page:last-child {
+    page-break-after: avoid !important;
+  }
 }
 
 .page-header {
@@ -212,8 +230,8 @@ code {
   margin-bottom: 24px !important;
   border: 1px solid #E5E7EB !important;
   border-radius: 6px !important;
-  overflow: hidden !important;
-  page-break-inside: avoid !important;
+  overflow: visible !important;
+  /* 긴 카드(번역 14문장 등)는 페이지를 넘길 수 있으므로 avoid 제거 */
 }
 
 .explanation-section {
@@ -304,6 +322,7 @@ code {
   padding: 4px 10px !important;
   border-left: 3px solid #0284C7 !important;
   page-break-inside: avoid !important;
+  break-inside: avoid !important;
 }
 
 .bilingual-pair:nth-child(even) {
@@ -357,6 +376,7 @@ code {
   border-left: 3px solid #0284C7 !important;
   border-radius: 0 4px 4px 0 !important;
   page-break-inside: avoid !important;
+  break-inside: avoid !important;
 }
 
 .syntax-card-header {
@@ -442,15 +462,65 @@ code {
   background-color: #F8FAFC !important;
 }
 
+/* ─── Page Break Flow (페이지 넘김 시 여백 유지) ────────── */
+
+/* 라벨은 항상 첫 콘텐츠와 함께 — 라벨만 페이지 하단에 남는 것 방지 */
+.explanation-label {
+  break-after: avoid !important;
+  page-break-after: avoid !important;
+}
+
+/* 섹션 타이틀도 다음 콘텐츠와 함께 */
+.section-title {
+  break-after: avoid !important;
+  page-break-after: avoid !important;
+}
+
+/* 번역 섹션: 긴 내용은 자연스럽게 넘기되 개별 pair는 보호 */
+.translation-section {
+  break-inside: auto !important;
+  page-break-inside: auto !important;
+}
+
+/* 본문(summary) 섹션도 길면 넘길 수 있음 */
+.summary-section {
+  break-inside: auto !important;
+  page-break-inside: auto !important;
+}
+
+/* 핵심표현·어휘 테이블: 행 단위 보호 */
+.grammar-table tbody tr {
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+}
+
 /* ─── Print Overrides ──────────────────────────────────── */
 @media print {
   body { background: white !important; }
   .page {
     page-break-after: always !important;
   }
-  .explanation-card,
+
+  /* 개별 요소 보호 (한 쌍이 쪼개지지 않게) */
   .syntax-card,
   .bilingual-pair {
     page-break-inside: avoid !important;
+    break-inside: avoid !important;
+  }
+
+  /* 긴 카드/섹션은 자연스럽게 넘김 허용 */
+  .explanation-card,
+  .explanation-section,
+  .translation-section,
+  .summary-section {
+    page-break-inside: auto !important;
+    break-inside: auto !important;
+  }
+
+  /* orphans/widows 보호 */
+  .bilingual-pair,
+  .syntax-card {
+    orphans: 3 !important;
+    widows: 3 !important;
   }
 }

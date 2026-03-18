@@ -1,0 +1,20 @@
+version: 2
+book:
+  id: ne-lesson02-student
+  title: "Lesson 2 · Health Matters! (학생용)"
+  shortTitle: 능률(오) Lesson 2 학생용
+  author: Haemin English
+  brand: Haemin English
+  style: ne-textbook
+  subject: reading
+  level: basic
+pages:
+  - type: content
+    src: school/wirye-g1-ne/lesson02-cover.html
+    pageClass: cover-page no-header-footer
+  - type: content
+    src: school/wirye-g1-ne/lesson02-part1-text.html
+  - type: content
+    src: school/wirye-g1-ne/lesson02-part2-text.html
+  - type: content
+    src: school/wirye-g1-ne/lesson02-part3-text.html

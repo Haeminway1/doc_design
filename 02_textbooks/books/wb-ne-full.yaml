@@ -1,0 +1,45 @@
+version: 2
+book:
+  id: wb-ne-full
+  title: 능률(오) L1-L2 전범위 워크북
+  shortTitle: 능률(오) L1-L2 전범위 워크북
+  author: Haemin English
+  brand: Haemin English
+  style: ne-textbook
+  subject: reading
+  level: basic
+pages:
+  - type: content
+    src: school/wirye-g1-ne/wb-ne-full-cover.html
+    pageClass: cover-page no-header-footer
+  - type: content
+    src: school/wirye-g1-ne/wb-ne-full-compact.html
+    pageClass: no-header-footer
+  - type: content
+    src: school/wirye-g1-ne/wb-ne-full-main-idea.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne-full-implication.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne-full-blank-inference.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne-full-sentence-insertion.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne-full-sentence-ordering.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne-full-content-match.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne-full-summary.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne-full-reference.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne-full-underline-grammar.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne-full-usage-distinction.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne-full-error-correction.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne-full-word-ordering.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne-full-blank-grammar.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne-full-answers.html

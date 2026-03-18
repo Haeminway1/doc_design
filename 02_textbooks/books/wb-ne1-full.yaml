@@ -1,0 +1,45 @@
+version: 2
+book:
+  id: wb-ne1-full
+  title: 능률(오) Lesson 1 워크북
+  shortTitle: 능률(오) Lesson 1 워크북
+  author: Haemin English
+  brand: Haemin English
+  style: ne-textbook
+  subject: reading
+  level: basic
+pages:
+  - type: content
+    src: school/wirye-g1-ne/wb-ne1-full-cover.html
+    pageClass: cover-page no-header-footer
+  - type: content
+    src: school/wirye-g1-ne/wb-ne1-full-compact.html
+    pageClass: no-header-footer
+  - type: content
+    src: school/wirye-g1-ne/wb-ne1-full-main-idea.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne1-full-implication.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne1-full-blank-inference.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne1-full-sentence-insertion.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne1-full-sentence-ordering.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne1-full-content-match.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne1-full-summary.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne1-full-reference.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne1-full-underline-grammar.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne1-full-usage-distinction.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne1-full-error-correction.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne1-full-word-ordering.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne1-full-blank-grammar.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne1-full-answers.html

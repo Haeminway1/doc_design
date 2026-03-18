@@ -279,18 +279,46 @@ code {
   font-weight: 600 !important;
 }
 
-/* === Physical page top/bottom margin (overflow continuation) === */
+/* === 인쇄 페이지 여백 (Ctrl+P / Puppeteer 공통) === */
 @page {
-  margin-top: 10mm !important;
-  margin-bottom: 10mm !important;
+  size: A4 !important;
+  margin: 15mm 18mm !important;
 }
-.page {
-  padding-top: 8mm !important;
-  padding-bottom: 8mm !important;
+
+/* .page div 는 화면용 컨테이너 — 인쇄 시 padding 이 물리 페이지마다 반복되지 않으므로
+   @page margin 에만 의존하고, .page 자체 padding 은 최소화 */
+@media print {
+  .page {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: auto !important;
+    min-height: auto !important;
+    box-shadow: none !important;
+    page-break-after: always !important;
+  }
+  .page:last-child {
+    page-break-after: avoid !important;
+  }
+  .page.no-header-footer {
+    padding: 0 !important;
+  }
 }
-.page.no-header-footer {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
+
+/* === Page-break flow: 긴 컨테이너는 넘기되 개별 항목은 보호 === */
+.explanation-card {
+  overflow: visible !important;
+  break-inside: auto !important;
+  page-break-inside: auto !important;
+}
+.bilingual-pair,
+.syntax-card {
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+}
+.explanation-label,
+.section-title {
+  break-after: avoid !important;
+  page-break-after: avoid !important;
 }
 `;
 

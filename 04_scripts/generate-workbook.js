@@ -99,29 +99,60 @@ pages.push({ type: 'content', src: `school/wirye-g1-ne/${bookId}-cover.html`, pa
 // Compact style
 const compactCss = `<style>
 /* Workbook compact overrides */
-.passage-block { margin-bottom: 14px !important; padding: 10px 12px !important; }
-.passage-body { padding: 6px 10px !important; line-height: 1.55 !important; font-size: 9.5pt !important; }
-.passage-body p { margin-bottom: 3px !important; text-align: justify !important; }
-.question-box { margin-top: 6px !important; padding: 6px 10px !important; }
-.question-box p { margin-bottom: 2px !important; }
-.answer-choices p { margin: 1px 0 !important; font-size: 9pt !important; }
-.chapter-header { margin-bottom: 12px !important; padding-bottom: 6px !important; }
-.section-title { margin: 12px 0 8px 0 !important; }
-.passage-label { margin-bottom: 4px !important; }
+
+/* 핵심: 문제 블록 통째로 페이지 넘김 보호 */
+.passage-block {
+  margin-bottom: 10px !important;
+  padding: 8px 10px !important;
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+}
+
+/* 더 컴팩트한 본문 */
+.passage-body { padding: 4px 8px !important; line-height: 1.45 !important; font-size: 9pt !important; }
+.passage-body p { margin-bottom: 2px !important; text-align: justify !important; }
+
+/* 질문/선지 컴팩트 */
+.question-box { margin-top: 4px !important; padding: 4px 8px !important; }
+.question-box p { margin-bottom: 1px !important; font-size: 9pt !important; }
+.answer-choices p { margin: 0 !important; font-size: 8.5pt !important; line-height: 1.5 !important; }
+
+/* 헤더/라벨 컴팩트 */
+.chapter-header { margin-bottom: 10px !important; padding-bottom: 5px !important; }
+.section-title { margin: 10px 0 6px 0 !important; }
+.passage-label { margin-bottom: 3px !important; font-size: 8pt !important; }
+.passage-badge { font-size: 8pt !important; }
 .page-content { min-height: auto !important; }
+
 /* 서술형 답안란 */
-.answer-line { border-bottom: 1px solid #D1D5DB !important; height: 28px !important; margin: 6px 0 !important; }
-.answer-area { border: 1px solid #D1D5DB !important; border-radius: 4px !important; min-height: 40px !important; padding: 6px 10px !important; margin: 6px 0 !important; }
+.answer-line { border-bottom: 1px solid #D1D5DB !important; height: 24px !important; margin: 4px 0 !important; }
+.answer-area { border: 1px solid #D1D5DB !important; border-radius: 4px !important; min-height: 32px !important; padding: 4px 8px !important; margin: 4px 0 !important; }
+
 /* 어순배열 칩 */
-.word-chips { display: flex !important; flex-wrap: wrap !important; gap: 5px !important; margin: 6px 0 !important; }
-.word-chip { font-family: 'Inter', sans-serif !important; font-size: 9pt !important; padding: 3px 8px !important; background-color: #F0F9FF !important; border: 1px solid #BAE6FD !important; border-radius: 4px !important; color: #0369A1 !important; font-weight: 500 !important; }
+.word-chips { display: flex !important; flex-wrap: wrap !important; gap: 4px !important; margin: 4px 0 !important; }
+.word-chip { font-family: 'Inter', sans-serif !important; font-size: 8.5pt !important; padding: 2px 6px !important; background-color: #F0F9FF !important; border: 1px solid #BAE6FD !important; border-radius: 4px !important; color: #0369A1 !important; font-weight: 500 !important; }
+
 /* 순서배열 청크 */
-.ordering-chunk { font-family: 'Inter', sans-serif !important; font-size: 9pt !important; padding: 5px 10px !important; background-color: #FFFBEB !important; border: 1px solid #FDE68A !important; border-radius: 4px !important; margin: 4px 0 !important; line-height: 1.5 !important; }
+.ordering-chunk { font-family: 'Inter', sans-serif !important; font-size: 8.5pt !important; padding: 3px 8px !important; background-color: #FFFBEB !important; border: 1px solid #FDE68A !important; border-radius: 4px !important; margin: 3px 0 !important; line-height: 1.45 !important; }
 .ordering-chunk b { color: #D97706 !important; }
+
 /* 주어진 문장 */
-.given-box { font-family: 'Inter', sans-serif !important; font-size: 9pt !important; padding: 6px 10px !important; background-color: #FEF3C7 !important; border: 1px solid #FDE68A !important; border-radius: 4px !important; margin-bottom: 6px !important; line-height: 1.5 !important; font-weight: 500 !important; color: #92400E !important; }
+.given-box { font-family: 'Inter', sans-serif !important; font-size: 8.5pt !important; padding: 4px 8px !important; background-color: #FEF3C7 !important; border: 1px solid #FDE68A !important; border-radius: 4px !important; margin-bottom: 4px !important; line-height: 1.45 !important; font-weight: 500 !important; color: #92400E !important; }
+
 /* 요약문 템플릿 */
-.summary-box { font-family: 'Inter', sans-serif !important; font-size: 9pt !important; padding: 6px 10px !important; background-color: #F0F9FF !important; border: 1px solid #BAE6FD !important; border-radius: 4px !important; margin: 6px 0 !important; line-height: 1.6 !important; color: #0369A1 !important; }
+.summary-box { font-family: 'Inter', sans-serif !important; font-size: 8.5pt !important; padding: 4px 8px !important; background-color: #F0F9FF !important; border: 1px solid #BAE6FD !important; border-radius: 4px !important; margin: 4px 0 !important; line-height: 1.5 !important; color: #0369A1 !important; }
+
+/* 인쇄 시 문제 블록 절대 쪼개지 않음 */
+@media print {
+  .passage-block {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+  .chapter-header {
+    break-after: avoid !important;
+    page-break-after: avoid !important;
+  }
+}
 </style>`;
 fs.writeFileSync(path.join(outputDir, `${bookId}-compact.html`), compactCss);
 pages.push({ type: 'content', src: `school/wirye-g1-ne/${bookId}-compact.html`, pageClass: 'no-header-footer' });
