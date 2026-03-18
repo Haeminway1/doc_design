@@ -1,0 +1,45 @@
+version: 2
+book:
+  id: wb-ne1-sample
+  title: 능률 L1 워크북 샘플
+  shortTitle: 능률 L1 워크북 샘플
+  author: Haemin English
+  brand: Haemin English
+  style: ne-textbook
+  subject: reading
+  level: basic
+pages:
+  - type: content
+    src: school/wirye-g1-ne/wb-ne1-sample-cover.html
+    pageClass: cover-page no-header-footer
+  - type: content
+    src: school/wirye-g1-ne/wb-ne1-sample-compact.html
+    pageClass: no-header-footer
+  - type: content
+    src: school/wirye-g1-ne/wb-ne1-sample-main-idea.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne1-sample-implication.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne1-sample-blank-inference.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne1-sample-sentence-insertion.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne1-sample-sentence-ordering.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne1-sample-content-match.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne1-sample-summary.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne1-sample-reference.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne1-sample-underline-grammar.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne1-sample-usage-distinction.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne1-sample-error-correction.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne1-sample-word-ordering.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne1-sample-blank-grammar.html
+  - type: content
+    src: school/wirye-g1-ne/wb-ne1-sample-answers.html

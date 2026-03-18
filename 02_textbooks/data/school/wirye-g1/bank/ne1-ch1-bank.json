@@ -1,0 +1,1356 @@
+{
+  "source": {
+    "textbook": "ne1",
+    "unit": "ch1",
+    "title": "Ticket for One",
+    "sentences": [
+      {
+        "num": 1,
+        "text": "These days, I tend to watch movies on streaming services."
+      },
+      {
+        "num": 2,
+        "text": "However, if I go to the theater, I usually watch an action or science fiction movie with my friends or family."
+      },
+      {
+        "num": 3,
+        "text": "Those are the kinds of movies they enjoy."
+      },
+      {
+        "num": 4,
+        "text": "Going to the theater alone was something I had never done before."
+      },
+      {
+        "num": 5,
+        "text": "So, for the first challenge, I decided to give it a try."
+      },
+      {
+        "num": 6,
+        "text": "It was nice to choose the movie and the seat on my own."
+      },
+      {
+        "num": 7,
+        "text": "I didn't have to worry about anyone else's preferences."
+      },
+      {
+        "num": 8,
+        "text": "I saw the experience as a good opportunity to watch something different, so I chose a historical drama that I had been curious about."
+      },
+      {
+        "num": 9,
+        "text": "At first, it felt a bit awkward and lonely to sit in the theater by myself."
+      },
+      {
+        "num": 10,
+        "text": "But once the movie started, I became completely absorbed in the story."
+      },
+      {
+        "num": 11,
+        "text": "It was so satisfying just to focus on the movie itself."
+      },
+      {
+        "num": 12,
+        "text": "There was nothing to distract me!"
+      },
+      {
+        "num": 13,
+        "text": "This experience made me realize that I sometimes enjoy doing things alone."
+      },
+      {
+        "num": 14,
+        "text": "After the movie, I promised myself that I would try to make my own choices more often and enjoy more activities by myself in the future."
+      }
+    ]
+  },
+  "stats": {
+    "total": 55,
+    "reading": 28,
+    "grammar": 27
+  },
+  "problems": [
+    {
+      "_comment": "═══ READING ═══"
+    },
+    {
+      "id": "ne1-ch1-r01",
+      "type": "main-idea",
+      "subtype": "topic",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      "instruction": "다음 글의 주제로 가장 적절한 것은?",
+      "passage": "These days, I tend to watch movies on streaming services. However, if I go to the theater, I usually watch an action or science fiction movie with my friends or family. Those are the kinds of movies they enjoy. Going to the theater alone was something I had never done before. So, for the first challenge, I decided to give it a try. It was nice to choose the movie and the seat on my own. I didn't have to worry about anyone else's preferences. I saw the experience as a good opportunity to watch something different, so I chose a historical drama that I had been curious about. At first, it felt a bit awkward and lonely to sit in the theater by myself. But once the movie started, I became completely absorbed in the story. It was so satisfying just to focus on the movie itself. There was nothing to distract me! This experience made me realize that I sometimes enjoy doing things alone. After the movie, I promised myself that I would try to make my own choices more often and enjoy more activities by myself in the future.",
+      "choices": [
+        "the importance of choosing movies based on one's own taste rather than critics' reviews",
+        "the differences between watching movies at home and in a theater",
+        "the negative effects of relying too much on streaming services for entertainment",
+        "the benefits of developing a wider range of interests in film genres",
+        "the personal growth that comes from doing something alone for the first time"
+      ],
+      "answer": 5,
+      "explanation": "글쓴이가 처음으로 혼자 영화관에 가는 도전을 통해 혼자만의 활동도 즐길 수 있다는 것을 깨닫고, 앞으로 스스로 선택하겠다고 다짐하는 내용이므로 '처음 혼자 무언가를 하면서 얻는 개인적 성장'이 주제이다. ②는 영화 선택 기준, ③은 집과 극장 비교, ④는 스트리밍 서비스 부정적 효과, ⑤는 영화 장르 관심 확대로 본문의 핵심과 다르다."
+    },
+    {
+      "id": "ne1-ch1-r02",
+      "type": "main-idea",
+      "subtype": "gist",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      "instruction": "다음 글의 요지로 가장 적절한 것은?",
+      "passage": "These days, I tend to watch movies on streaming services. However, if I go to the theater, I usually watch an action or science fiction movie with my friends or family. Those are the kinds of movies they enjoy. Going to the theater alone was something I had never done before. So, for the first challenge, I decided to give it a try. It was nice to choose the movie and the seat on my own. I didn't have to worry about anyone else's preferences. I saw the experience as a good opportunity to watch something different, so I chose a historical drama that I had been curious about. At first, it felt a bit awkward and lonely to sit in the theater by myself. But once the movie started, I became completely absorbed in the story. It was so satisfying just to focus on the movie itself. There was nothing to distract me! This experience made me realize that I sometimes enjoy doing things alone. After the movie, I promised myself that I would try to make my own choices more often and enjoy more activities by myself in the future.",
+      "choices": [
+        "Watching movies alone is always more enjoyable than watching them with others.",
+        "People should avoid following other people's preferences when making decisions.",
+        "Historical dramas are more intellectually stimulating than action or science fiction films.",
+        "Streaming services have made it unnecessary to visit movie theaters in person.",
+        "Stepping out of one's comfort zone can lead to unexpected satisfaction and self-discovery."
+      ],
+      "answer": 5,
+      "explanation": "글쓴이가 한 번도 해본 적 없는 혼자 영화관 가기를 시도하여 예상치 못한 만족감과 자기 발견을 경험했으므로, '안전지대 밖으로 나가면 뜻밖의 만족과 자기 발견을 얻을 수 있다'가 요지이다. ①은 '항상'이라는 극단적 표현, ②는 타인 선호 무시, ④는 장르 비교, ⑤는 스트리밍과 극장 비교로 본문 요지와 다르다."
+    },
+    {
+      "id": "ne1-ch1-r03",
+      "type": "main-idea",
+      "subtype": "title",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      "instruction": "다음 글의 제목으로 가장 적절한 것은?",
+      "passage": "These days, I tend to watch movies on streaming services. However, if I go to the theater, I usually watch an action or science fiction movie with my friends or family. Those are the kinds of movies they enjoy. Going to the theater alone was something I had never done before. So, for the first challenge, I decided to give it a try. It was nice to choose the movie and the seat on my own. I didn't have to worry about anyone else's preferences. I saw the experience as a good opportunity to watch something different, so I chose a historical drama that I had been curious about. At first, it felt a bit awkward and lonely to sit in the theater by myself. But once the movie started, I became completely absorbed in the story. It was so satisfying just to focus on the movie itself. There was nothing to distract me! This experience made me realize that I sometimes enjoy doing things alone. After the movie, I promised myself that I would try to make my own choices more often and enjoy more activities by myself in the future.",
+      "choices": [
+        "Why Streaming Services Are Replacing Movie Theaters",
+        "Alone in the Dark: Finding Joy in a Solo Movie Experience",
+        "The Art of Compromise: Choosing Movies with Friends and Family",
+        "Action vs. Drama: A Comparative Study of Film Genres",
+        "How to Overcome Social Anxiety in Public Spaces"
+      ],
+      "answer": 2,
+      "explanation": "혼자 영화관에 가는 도전에서 예상 밖의 즐거움을 발견한 이야기이므로 '혼자 영화 경험에서 기쁨을 찾다'가 가장 적절하다. ②는 스트리밍 vs 극장, ③은 타협, ④는 장르 비교, ⑤는 사회적 불안으로 본문과 맞지 않는다."
+    },
+    {
+      "id": "ne1-ch1-r04",
+      "type": "implication",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          3
+        ]
+      },
+      "instruction": "밑줄 친 부분이 의미하는 바로 가장 적절한 것은?",
+      "passage": "These days, I tend to watch movies on streaming services. However, if I go to the theater, I usually watch an action or science fiction movie with my friends or family. <u>Those are the kinds of movies they enjoy.</u> Going to the theater alone was something I had never done before. So, for the first challenge, I decided to give it a try. It was nice to choose the movie and the seat on my own. I didn't have to worry about anyone else's preferences. I saw the experience as a good opportunity to watch something different, so I chose a historical drama that I had been curious about. At first, it felt a bit awkward and lonely to sit in the theater by myself. But once the movie started, I became completely absorbed in the story. It was so satisfying just to focus on the movie itself. There was nothing to distract me! This experience made me realize that I sometimes enjoy doing things alone. After the movie, I promised myself that I would try to make my own choices more often and enjoy more activities by myself in the future.",
+      "choices": [
+        "The writer's friends and family prefer to watch movies at home rather than at the theater.",
+        "The writer has always chosen movies based on the preferences of those around them.",
+        "Action and science fiction movies are generally considered the best genres for group viewing.",
+        "The writer's companions determine the genre, so the writer rarely gets to pick freely.",
+        "The writer's friends and family dislike historical dramas and refuse to watch them."
+      ],
+      "answer": 4,
+      "explanation": "친구나 가족이 좋아하는 종류의 영화를 같이 보게 된다는 것은, 동행인이 장르를 결정하므로 글쓴이가 자유롭게 고르지 못한다는 의미이다. ①은 집에서 보는 것을 선호한다는 왜곡, ②는 '항상'이라는 과도한 해석, ④는 근거 없는 일반화, ⑤는 역사 드라마를 거부한다는 언급이 없다."
+    },
+    {
+      "id": "ne1-ch1-r05",
+      "type": "implication",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          7
+        ]
+      },
+      "instruction": "밑줄 친 부분이 의미하는 바로 가장 적절한 것은?",
+      "passage": "These days, I tend to watch movies on streaming services. However, if I go to the theater, I usually watch an action or science fiction movie with my friends or family. Those are the kinds of movies they enjoy. Going to the theater alone was something I had never done before. So, for the first challenge, I decided to give it a try. It was nice to choose the movie and the seat on my own. <u>I didn't have to worry about anyone else's preferences.</u> I saw the experience as a good opportunity to watch something different, so I chose a historical drama that I had been curious about. At first, it felt a bit awkward and lonely to sit in the theater by myself. But once the movie started, I became completely absorbed in the story. It was so satisfying just to focus on the movie itself. There was nothing to distract me! This experience made me realize that I sometimes enjoy doing things alone. After the movie, I promised myself that I would try to make my own choices more often and enjoy more activities by myself in the future.",
+      "choices": [
+        "Being free from the need to consider others' tastes was a refreshing relief.",
+        "The writer found it stressful to be entirely responsible for every decision.",
+        "The writer realized that other people's opinions about movies are not worth considering.",
+        "The writer usually avoids conflict by not expressing personal preferences at all.",
+        "Not having companions meant the writer felt isolated and indifferent about the movie choice."
+      ],
+      "answer": 1,
+      "explanation": "타인의 취향을 신경 쓸 필요가 없었다는 것은 혼자이기에 남의 선호를 고려하지 않아도 되는 상쾌한 해방감을 뜻한다. ①은 스트레스로 반대 해석, ③은 타인 의견 무가치라는 극단적 해석, ④는 갈등 회피, ⑤는 고립감·무관심으로 본문과 다르다."
+    },
+    {
+      "id": "ne1-ch1-r06",
+      "type": "implication",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          8
+        ]
+      },
+      "instruction": "밑줄 친 부분이 의미하는 바로 가장 적절한 것은?",
+      "passage": "These days, I tend to watch movies on streaming services. However, if I go to the theater, I usually watch an action or science fiction movie with my friends or family. Those are the kinds of movies they enjoy. Going to the theater alone was something I had never done before. So, for the first challenge, I decided to give it a try. It was nice to choose the movie and the seat on my own. I didn't have to worry about anyone else's preferences. I saw the experience as a good opportunity to watch something different, so <u>I chose a historical drama that I had been curious about</u>. At first, it felt a bit awkward and lonely to sit in the theater by myself. But once the movie started, I became completely absorbed in the story. It was so satisfying just to focus on the movie itself. There was nothing to distract me! This experience made me realize that I sometimes enjoy doing things alone. After the movie, I promised myself that I would try to make my own choices more often and enjoy more activities by myself in the future.",
+      "choices": [
+        "The writer selected a genre that had always been a shared favorite with friends.",
+        "The writer took advantage of being alone to explore a personal interest previously set aside.",
+        "The writer picked a film that matched the usual action or science fiction preference.",
+        "The writer chose the historical drama because it was the only option available at the time.",
+        "The writer regretted the choice because the historical drama turned out to be disappointing."
+      ],
+      "answer": 2,
+      "explanation": "평소 친구·가족과 함께할 때는 볼 수 없었던, 이전부터 궁금했던 역사 드라마를 혼자이기에 선택할 수 있었다는 뜻이다. ①은 공유 취향, ②는 평소 선호 장르, ④는 유일한 선택지, ⑤는 후회로 본문 내용과 다르다."
+    },
+    {
+      "id": "ne1-ch1-r07",
+      "type": "implication",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          12
+        ]
+      },
+      "instruction": "밑줄 친 \"There was nothing to distract me!\"가 의미하는 바로 가장 적절한 것은?",
+      "passage": "These days, I tend to watch movies on streaming services. However, if I go to the theater, I usually watch an action or science fiction movie with my friends or family. Those are the kinds of movies they enjoy. Going to the theater alone was something I had never done before. So, for the first challenge, I decided to give it a try. It was nice to choose the movie and the seat on my own. I didn't have to worry about anyone else's preferences. I saw the experience as a good opportunity to watch something different, so I chose a historical drama that I had been curious about. At first, it felt a bit awkward and lonely to sit in the theater by myself. But once the movie started, I became completely absorbed in the story. It was so satisfying just to focus on the movie itself. <u>There was nothing to distract me!</u> This experience made me realize that I sometimes enjoy doing things alone. After the movie, I promised myself that I would try to make my own choices more often and enjoy more activities by myself in the future.",
+      "choices": [
+        "The theater was empty, so there were no other audience members making noise.",
+        "Being alone meant there were no companions to pull the writer's attention away from the film.",
+        "The movie's plot was so simple that it required no effort to follow.",
+        "The writer turned off all electronic devices before the movie began.",
+        "The historical drama lacked any exciting scenes that could break the writer's concentration."
+      ],
+      "answer": 2,
+      "explanation": "혼자 왔기 때문에 옆 사람 때문에 집중이 흐트러질 일이 없었다는 의미이다. ①은 빈 극장, ②는 단순한 줄거리, ④는 전자기기 끄기, ⑤는 자극적 장면 부재로 본문 맥락과 다르다."
+    },
+    {
+      "id": "ne1-ch1-r08",
+      "type": "implication",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          14
+        ]
+      },
+      "instruction": "밑줄 친 부분으로부터 추론할 수 있는 것으로 가장 적절한 것은?",
+      "passage": "These days, I tend to watch movies on streaming services. However, if I go to the theater, I usually watch an action or science fiction movie with my friends or family. Those are the kinds of movies they enjoy. Going to the theater alone was something I had never done before. So, for the first challenge, I decided to give it a try. It was nice to choose the movie and the seat on my own. I didn't have to worry about anyone else's preferences. I saw the experience as a good opportunity to watch something different, so I chose a historical drama that I had been curious about. At first, it felt a bit awkward and lonely to sit in the theater by myself. But once the movie started, I became completely absorbed in the story. It was so satisfying just to focus on the movie itself. There was nothing to distract me! This experience made me realize that I sometimes enjoy doing things alone. <u>After the movie, I promised myself that I would try to make my own choices more often and enjoy more activities by myself in the future.</u>",
+      "choices": [
+        "The writer plans to stop watching movies with friends and family entirely.",
+        "The writer believes that everyone should always do things alone for personal growth.",
+        "The writer will only watch historical dramas from now on.",
+        "The writer intends to pursue solo activities and independent decision-making going forward.",
+        "The writer regrets not having tried going to the theater alone much earlier."
+      ],
+      "answer": 4,
+      "explanation": "앞으로 스스로 선택하고 혼자 하는 활동을 더 즐기겠다는 다짐이므로, 독립적 의사결정과 혼자 활동을 추구하겠다는 추론이 적절하다. ①은 '완전히 그만두다'라는 극단, ③은 모든 사람에 대한 일반화, ④는 장르 한정, ⑤는 후회 언급이 없다."
+    },
+    {
+      "id": "ne1-ch1-r09",
+      "type": "blank-inference",
+      "subtype": "phrase",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          1,
+          2
+        ]
+      },
+      "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "passage": "These days, I tend to watch movies on streaming services. However, if I go to the theater, I usually watch an action or science fiction movie with my _________________. Those are the kinds of movies they enjoy. Going to the theater alone was something I had never done before. So, for the first challenge, I decided to give it a try. It was nice to choose the movie and the seat on my own. I didn't have to worry about anyone else's preferences. I saw the experience as a good opportunity to watch something different, so I chose a historical drama that I had been curious about. At first, it felt a bit awkward and lonely to sit in the theater by myself. But once the movie started, I became completely absorbed in the story. It was so satisfying just to focus on the movie itself. There was nothing to distract me! This experience made me realize that I sometimes enjoy doing things alone. After the movie, I promised myself that I would try to make my own choices more often and enjoy more activities by myself in the future.",
+      "blankTarget": "friends or family",
+      "choices": [
+        "friends or family",
+        "teachers and classmates",
+        "online followers",
+        "favorite directors",
+        "personal collection"
+      ],
+      "answer": 1,
+      "explanation": "극장에 가면 친구나 가족과 함께 액션이나 SF 영화를 본다고 했다. ②는 선생님과 급우, ③은 온라인 팔로워, ④는 감독, ⑤는 개인 컬렉션으로 원문과 다르다."
+    },
+    {
+      "id": "ne1-ch1-r10",
+      "type": "blank-inference",
+      "subtype": "word",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          6
+        ]
+      },
+      "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "passage": "These days, I tend to watch movies on streaming services. However, if I go to the theater, I usually watch an action or science fiction movie with my friends or family. Those are the kinds of movies they enjoy. Going to the theater alone was something I had never done before. So, for the first challenge, I decided to give it a try. It was nice to choose the movie and the seat on my own. I didn't have to worry about anyone else's ________________. I saw the experience as a good opportunity to watch something different, so I chose a historical drama that I had been curious about. At first, it felt a bit awkward and lonely to sit in the theater by myself. But once the movie started, I became completely absorbed in the story. It was so satisfying just to focus on the movie itself. There was nothing to distract me! This experience made me realize that I sometimes enjoy doing things alone. After the movie, I promised myself that I would try to make my own choices more often and enjoy more activities by myself in the future.",
+      "blankTarget": "preferences",
+      "choices": [
+        "schedules",
+        "reactions",
+        "preferences",
+        "expenses",
+        "complaints"
+      ],
+      "answer": 3,
+      "explanation": "혼자이기에 타인의 선호(preferences)를 걱정할 필요가 없었다. ①은 일정, ③은 반응, ④는 비용, ⑤는 불만으로 문맥과 맞지 않는다."
+    },
+    {
+      "id": "ne1-ch1-r11",
+      "type": "blank-inference",
+      "subtype": "phrase",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          8
+        ]
+      },
+      "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "passage": "These days, I tend to watch movies on streaming services. However, if I go to the theater, I usually watch an action or science fiction movie with my friends or family. Those are the kinds of movies they enjoy. Going to the theater alone was something I had never done before. So, for the first challenge, I decided to give it a try. It was nice to choose the movie and the seat on my own. I didn't have to worry about anyone else's preferences. I saw the experience as a good ________________ to watch something different, so I chose a historical drama that I had been curious about. At first, it felt a bit awkward and lonely to sit in the theater by myself. But once the movie started, I became completely absorbed in the story. It was so satisfying just to focus on the movie itself. There was nothing to distract me! This experience made me realize that I sometimes enjoy doing things alone. After the movie, I promised myself that I would try to make my own choices more often and enjoy more activities by myself in the future.",
+      "blankTarget": "opportunity",
+      "choices": [
+        "excuse",
+        "obligation",
+        "compromise",
+        "alternative",
+        "opportunity"
+      ],
+      "answer": 5,
+      "explanation": "다른 것을 볼 좋은 기회(opportunity)로 보았다는 의미. ①은 핑계, ②는 의무, ④는 타협, ⑤는 대안으로 문맥상 부자연스럽다."
+    },
+    {
+      "id": "ne1-ch1-r12",
+      "type": "blank-inference",
+      "subtype": "word",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          10
+        ]
+      },
+      "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "passage": "These days, I tend to watch movies on streaming services. However, if I go to the theater, I usually watch an action or science fiction movie with my friends or family. Those are the kinds of movies they enjoy. Going to the theater alone was something I had never done before. So, for the first challenge, I decided to give it a try. It was nice to choose the movie and the seat on my own. I didn't have to worry about anyone else's preferences. I saw the experience as a good opportunity to watch something different, so I chose a historical drama that I had been curious about. At first, it felt a bit awkward and lonely to sit in the theater by myself. But once the movie started, I became completely ________________ in the story. It was so satisfying just to focus on the movie itself. There was nothing to distract me! This experience made me realize that I sometimes enjoy doing things alone. After the movie, I promised myself that I would try to make my own choices more often and enjoy more activities by myself in the future.",
+      "blankTarget": "absorbed",
+      "choices": [
+        "confused",
+        "absorbed",
+        "disappointed",
+        "trapped",
+        "interested"
+      ],
+      "answer": 2,
+      "explanation": "영화가 시작되자 이야기에 완전히 몰입(absorbed)했다. become absorbed in = '~에 빠져들다'. ①은 혼란, ②는 실망, ④는 갇힌, ⑤는 의미가 비슷하나 become interested in은 원문의 '완전히 빠져든' 정도를 표현하지 못한다."
+    },
+    {
+      "id": "ne1-ch1-r13",
+      "type": "blank-inference",
+      "subtype": "clause",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          13,
+          14
+        ]
+      },
+      "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "passage": "These days, I tend to watch movies on streaming services. However, if I go to the theater, I usually watch an action or science fiction movie with my friends or family. Those are the kinds of movies they enjoy. Going to the theater alone was something I had never done before. So, for the first challenge, I decided to give it a try. It was nice to choose the movie and the seat on my own. I didn't have to worry about anyone else's preferences. I saw the experience as a good opportunity to watch something different, so I chose a historical drama that I had been curious about. At first, it felt a bit awkward and lonely to sit in the theater by myself. But once the movie started, I became completely absorbed in the story. It was so satisfying just to focus on the movie itself. There was nothing to distract me! This experience made me realize that I sometimes enjoy doing things alone. After the movie, I promised myself that I would try to ___________________ more often and enjoy more activities by myself in the future.",
+      "blankTarget": "make my own choices",
+      "choices": [
+        "follow my friends' suggestions",
+        "visit the same theater",
+        "watch historical dramas",
+        "avoid crowded places",
+        "make my own choices"
+      ],
+      "answer": 5,
+      "explanation": "스스로 선택하겠다(make my own choices)는 다짐이다. ①은 친구 제안 따르기(반대), ②는 같은 극장 방문, ④는 역사 드라마 시청, ⑤는 붐비는 곳 피하기로 본문의 핵심 다짐과 다르다."
+    },
+    {
+      "id": "ne1-ch1-r14",
+      "type": "blank-inference",
+      "subtype": "word",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          9
+        ]
+      },
+      "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "passage": "These days, I tend to watch movies on streaming services. However, if I go to the theater, I usually watch an action or science fiction movie with my friends or family. Those are the kinds of movies they enjoy. Going to the theater alone was something I had never done before. So, for the first challenge, I decided to give it a try. It was nice to choose the movie and the seat on my own. I didn't have to worry about anyone else's preferences. I saw the experience as a good opportunity to watch something different, so I chose a historical drama that I had been curious about. At first, it felt a bit ________________ and lonely to sit in the theater by myself. But once the movie started, I became completely absorbed in the story. It was so satisfying just to focus on the movie itself. There was nothing to distract me! This experience made me realize that I sometimes enjoy doing things alone. After the movie, I promised myself that I would try to make my own choices more often and enjoy more activities by myself in the future.",
+      "blankTarget": "awkward",
+      "choices": [
+        "natural",
+        "thrilling",
+        "familiar",
+        "awkward",
+        "relaxing"
+      ],
+      "answer": 4,
+      "explanation": "처음에는 어색하고(awkward) 외로웠다. ①은 자연스러운, ②는 스릴 있는, ④는 익숙한, ⑤는 편안한으로 처음 혼자 앉은 감정과 반대된다."
+    },
+    {
+      "id": "ne1-ch1-r15",
+      "type": "blank-inference",
+      "subtype": "phrase",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          4,
+          5
+        ]
+      },
+      "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "passage": "These days, I tend to watch movies on streaming services. However, if I go to the theater, I usually watch an action or science fiction movie with my friends or family. Those are the kinds of movies they enjoy. Going to the theater alone was something I had never done before. So, for the first challenge, I decided to ________________. It was nice to choose the movie and the seat on my own. I didn't have to worry about anyone else's preferences. I saw the experience as a good opportunity to watch something different, so I chose a historical drama that I had been curious about. At first, it felt a bit awkward and lonely to sit in the theater by myself. But once the movie started, I became completely absorbed in the story. It was so satisfying just to focus on the movie itself. There was nothing to distract me! This experience made me realize that I sometimes enjoy doing things alone. After the movie, I promised myself that I would try to make my own choices more often and enjoy more activities by myself in the future.",
+      "blankTarget": "give it a try",
+      "choices": [
+        "ask a friend to join me",
+        "stay home and watch a movie online",
+        "give it a try",
+        "wait for a better opportunity",
+        "look for a less crowded theater"
+      ],
+      "answer": 3,
+      "explanation": "한 번도 해본 적 없는 일이었기에 '시도해 보기로 했다(give it a try)'. ①은 친구 동행 요청, ③은 집에서 보기, ④는 기회 기다리기, ⑤는 덜 붐비는 극장 찾기로 '도전'이라는 맥락과 맞지 않는다."
+    },
+    {
+      "id": "ne1-ch1-r16",
+      "type": "sentence-insertion",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
+      "givenSentence": "I saw the experience as a good opportunity to watch something different, so I chose a historical drama that I had been curious about.",
+      "passage": "Going to the theater alone was something I had never done before. So, for the first challenge, I decided to give it a try. ( ① ) It was nice to choose the movie and the seat on my own. ( ② ) I didn't have to worry about anyone else's preferences. ( ③ ) At first, it felt a bit awkward and lonely to sit in the theater by myself. ( ④ )",
+      "answer": 3,
+      "explanation": "타인의 선호를 걱정할 필요 없었다는 ⑦번 문장 뒤에, 그 경험을 기회로 삼아 다른 장르를 선택했다는 내용이 이어지는 것이 자연스럽다. 이후 극장에서 혼자 앉은 느낌으로 전환된다."
+    },
+    {
+      "id": "ne1-ch1-r17",
+      "type": "sentence-insertion",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
+      "givenSentence": "It was so satisfying just to focus on the movie itself.",
+      "passage": "At first, it felt a bit awkward and lonely to sit in the theater by myself. ( ① ) But once the movie started, I became completely absorbed in the story. ( ② ) There was nothing to distract me! ( ③ ) This experience made me realize that I sometimes enjoy doing things alone. ( ④ )",
+      "answer": 2,
+      "explanation": "이야기에 완전히 몰입했다는 ⑩번 문장 뒤에, 영화 자체에 집중하는 것이 만족스러웠다는 내용이 이어지고, 이후 방해할 것이 없었다는 ⑫번으로 연결되는 것이 자연스럽다."
+    },
+    {
+      "id": "ne1-ch1-r18",
+      "type": "sentence-insertion",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ]
+      },
+      "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
+      "givenSentence": "Those are the kinds of movies they enjoy.",
+      "passage": "These days, I tend to watch movies on streaming services. ( ① ) However, if I go to the theater, I usually watch an action or science fiction movie with my friends or family. ( ② ) Going to the theater alone was something I had never done before. ( ③ ) So, for the first challenge, I decided to give it a try. ( ④ )",
+      "answer": 2,
+      "explanation": "친구나 가족과 함께 액션이나 SF 영화를 본다는 ②번 문장 뒤에, '그것들이 그들이 즐기는 종류의 영화'라는 부연이 오는 것이 자연스럽다. Those는 앞의 action or science fiction movie를, they는 friends or family를 가리킨다."
+    },
+    {
+      "id": "ne1-ch1-r19",
+      "type": "sentence-ordering",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
+      "givenStart": "Those are the kinds of movies they enjoy. Going to the theater alone was something I had never done before.",
+      "chunks": {
+        "A": "It was nice to choose the movie and the seat on my own. I didn't have to worry about anyone else's preferences.",
+        "B": "So, for the first challenge, I decided to give it a try.",
+        "C": "I saw the experience as a good opportunity to watch something different, so I chose a historical drama that I had been curious about."
+      },
+      "choices": [
+        "(A)-(C)-(B)",
+        "(B)-(C)-(A)",
+        "(B)-(A)-(C)",
+        "(C)-(A)-(B)",
+        "(C)-(B)-(A)"
+      ],
+      "answer": 3,
+      "explanation": "(B) 한 번도 해본 적 없으므로 시도하기로 결정 → (A) 혼자 영화·좌석 선택이 좋았고 타인 선호를 걱정할 필요 없었음 → (C) 그 경험을 기회로 삼아 궁금했던 역사 드라마를 선택. 'give it a try' 후 구체적 경험, 그리고 영화 선택 순서가 논리적이다."
+    },
+    {
+      "id": "ne1-ch1-r20",
+      "type": "sentence-ordering",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
+      "givenStart": "I chose a historical drama that I had been curious about.",
+      "chunks": {
+        "A": "But once the movie started, I became completely absorbed in the story. It was so satisfying just to focus on the movie itself.",
+        "B": "At first, it felt a bit awkward and lonely to sit in the theater by myself.",
+        "C": "There was nothing to distract me! This experience made me realize that I sometimes enjoy doing things alone."
+      },
+      "choices": [
+        "(B)-(A)-(C)",
+        "(A)-(B)-(C)",
+        "(C)-(B)-(A)",
+        "(A)-(C)-(B)",
+        "(B)-(C)-(A)"
+      ],
+      "answer": 1,
+      "explanation": "(B) 처음에는 어색하고 외로웠음 → (A) 그러나 영화가 시작되자 완전히 몰입, 집중이 만족스러웠음 → (C) 방해가 없었고, 혼자 하는 것도 즐길 수 있다는 깨달음. 'At first → But once → This experience' 순서로 감정 변화가 자연스럽다."
+    },
+    {
+      "id": "ne1-ch1-r21",
+      "type": "content-match",
+      "subtype": "true",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      "instruction": "다음 글의 내용과 일치하는 것은?",
+      "passage": "These days, I tend to watch movies on streaming services. However, if I go to the theater, I usually watch an action or science fiction movie with my friends or family. Those are the kinds of movies they enjoy. Going to the theater alone was something I had never done before. So, for the first challenge, I decided to give it a try. It was nice to choose the movie and the seat on my own. I didn't have to worry about anyone else's preferences. I saw the experience as a good opportunity to watch something different, so I chose a historical drama that I had been curious about. At first, it felt a bit awkward and lonely to sit in the theater by myself. But once the movie started, I became completely absorbed in the story. It was so satisfying just to focus on the movie itself. There was nothing to distract me! This experience made me realize that I sometimes enjoy doing things alone. After the movie, I promised myself that I would try to make my own choices more often and enjoy more activities by myself in the future.",
+      "choices": [
+        "The writer frequently went to the theater alone before this challenge.",
+        "The writer felt completely relaxed from the moment they sat down alone.",
+        "The writer chose a historical drama for the solo movie experience.",
+        "The writer's friends and family recommended the historical drama.",
+        "The writer decided never to watch movies with others again after this experience."
+      ],
+      "answer": 3,
+      "explanation": "⑧번 문장: 'I chose a historical drama that I had been curious about.' ②는 한 번도 해본 적 없다고 했으므로 불일치, ③은 처음에 어색했으므로 불일치, ④는 추천 언급 없음, ⑤는 다시는 같이 안 보겠다는 내용 없음."
+    },
+    {
+      "id": "ne1-ch1-r22",
+      "type": "content-match",
+      "subtype": "false",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      "instruction": "다음 글의 내용과 일치하지 않는 것은?",
+      "passage": "These days, I tend to watch movies on streaming services. However, if I go to the theater, I usually watch an action or science fiction movie with my friends or family. Those are the kinds of movies they enjoy. Going to the theater alone was something I had never done before. So, for the first challenge, I decided to give it a try. It was nice to choose the movie and the seat on my own. I didn't have to worry about anyone else's preferences. I saw the experience as a good opportunity to watch something different, so I chose a historical drama that I had been curious about. At first, it felt a bit awkward and lonely to sit in the theater by myself. But once the movie started, I became completely absorbed in the story. It was so satisfying just to focus on the movie itself. There was nothing to distract me! This experience made me realize that I sometimes enjoy doing things alone. After the movie, I promised myself that I would try to make my own choices more often and enjoy more activities by myself in the future.",
+      "choices": [
+        "The writer was unable to concentrate on the movie because of loneliness.",
+        "The writer usually watches movies through streaming services these days.",
+        "Going to the theater alone was the writer's first challenge.",
+        "The writer felt awkward and lonely at first in the theater.",
+        "The writer resolved to make independent choices more frequently in the future."
+      ],
+      "answer": 1,
+      "explanation": "⑩번 문장에서 영화가 시작되자 완전히 몰입했다고 하였고, ⑪에서 집중이 만족스러웠다고 했으므로 '외로움 때문에 집중하지 못했다'는 본문과 반대이다. 나머지는 모두 본문과 일치한다."
+    },
+    {
+      "id": "ne1-ch1-r23",
+      "type": "content-match",
+      "subtype": "true",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      "instruction": "다음 글의 내용과 일치하는 것은?",
+      "passage": "These days, I tend to watch movies on streaming services. However, if I go to the theater, I usually watch an action or science fiction movie with my friends or family. Those are the kinds of movies they enjoy. Going to the theater alone was something I had never done before. So, for the first challenge, I decided to give it a try. It was nice to choose the movie and the seat on my own. I didn't have to worry about anyone else's preferences. I saw the experience as a good opportunity to watch something different, so I chose a historical drama that I had been curious about. At first, it felt a bit awkward and lonely to sit in the theater by myself. But once the movie started, I became completely absorbed in the story. It was so satisfying just to focus on the movie itself. There was nothing to distract me! This experience made me realize that I sometimes enjoy doing things alone. After the movie, I promised myself that I would try to make my own choices more often and enjoy more activities by myself in the future.",
+      "choices": [
+        "The writer chose the historical drama because a friend had highly recommended it.",
+        "The writer usually prefers historical dramas over action movies when watching with family.",
+        "The writer felt so lonely during the movie that they left the theater before it ended.",
+        "The writer had been wanting to see the historical drama but had not had the chance until now.",
+        "The writer had gone to the theater alone several times before this particular challenge."
+      ],
+      "answer": 4,
+      "explanation": "⑧번 문장: 'a historical drama that I had been curious about' — 이전부터 궁금했지만 (친구·가족과 함께일 때는) 볼 기회가 없었다가 이번에 선택했다. ②는 친구 추천 없음, ③은 평소 가족과 역사 드라마를 본다는 내용 없음, ④는 끝까지 보았음, ⑤는 한 번도 해본 적 없었음."
+    },
+    {
+      "id": "ne1-ch1-r24",
+      "type": "content-match",
+      "subtype": "false",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      "instruction": "다음 글의 내용과 일치하지 않는 것은?",
+      "passage": "These days, I tend to watch movies on streaming services. However, if I go to the theater, I usually watch an action or science fiction movie with my friends or family. Those are the kinds of movies they enjoy. Going to the theater alone was something I had never done before. So, for the first challenge, I decided to give it a try. It was nice to choose the movie and the seat on my own. I didn't have to worry about anyone else's preferences. I saw the experience as a good opportunity to watch something different, so I chose a historical drama that I had been curious about. At first, it felt a bit awkward and lonely to sit in the theater by myself. But once the movie started, I became completely absorbed in the story. It was so satisfying just to focus on the movie itself. There was nothing to distract me! This experience made me realize that I sometimes enjoy doing things alone. After the movie, I promised myself that I would try to make my own choices more often and enjoy more activities by myself in the future.",
+      "choices": [
+        "The writer tends to use streaming services to watch movies nowadays.",
+        "The writer remained uncomfortable and distracted throughout the entire movie.",
+        "The writer's friends and family enjoy action or science fiction movies.",
+        "The writer decided to try going to the theater alone as a challenge.",
+        "The writer promised to try making independent choices more often in the future."
+      ],
+      "answer": 2,
+      "explanation": "처음에는 어색했지만(⑨) 영화가 시작되자 완전히 몰입했고(⑩), 방해될 것이 없어 만족스러웠다(⑪⑫). '영화 내내 불편하고 산만했다'는 본문과 반대이다. 나머지는 모두 일치한다."
+    },
+    {
+      "id": "ne1-ch1-r25",
+      "type": "summary",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A)와 (B)에 들어갈 말로 가장 적절한 것은?",
+      "passage": "These days, I tend to watch movies on streaming services. However, if I go to the theater, I usually watch an action or science fiction movie with my friends or family. Those are the kinds of movies they enjoy. Going to the theater alone was something I had never done before. So, for the first challenge, I decided to give it a try. It was nice to choose the movie and the seat on my own. I didn't have to worry about anyone else's preferences. I saw the experience as a good opportunity to watch something different, so I chose a historical drama that I had been curious about. At first, it felt a bit awkward and lonely to sit in the theater by myself. But once the movie started, I became completely absorbed in the story. It was so satisfying just to focus on the movie itself. There was nothing to distract me! This experience made me realize that I sometimes enjoy doing things alone. After the movie, I promised myself that I would try to make my own choices more often and enjoy more activities by myself in the future.",
+      "summaryTemplate": "By going to the theater ____(A)____ for the first time, the writer discovered the joy of making independent choices and resolved to enjoy solo activities more ____(B)____.",
+      "choices": [
+        "(A) with a new friend - (B) cautiously",
+        "(A) on a weekday - (B) selectively",
+        "(A) without a ticket - (B) confidently",
+        "(A) alone - (B) frequently",
+        "(A) alone - (B) reluctantly"
+      ],
+      "answer": 4,
+      "explanation": "혼자(alone) 극장에 처음 가서 독립적 선택의 기쁨을 발견하고 앞으로 더 자주(frequently) 혼자 활동을 즐기겠다고 다짐했다. ①의 새 친구, ③의 평일과 선별적, ④의 티켓 없이, ⑤의 마지못해(reluctantly)는 본문과 다르다."
+    },
+    {
+      "id": "ne1-ch1-r26",
+      "type": "summary",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          9,
+          10,
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A)와 (B)에 들어갈 말로 가장 적절한 것은?",
+      "passage": "At first, it felt a bit awkward and lonely to sit in the theater by myself. But once the movie started, I became completely absorbed in the story. It was so satisfying just to focus on the movie itself. There was nothing to distract me! This experience made me realize that I sometimes enjoy doing things alone. After the movie, I promised myself that I would try to make my own choices more often and enjoy more activities by myself in the future.",
+      "summaryTemplate": "Although the writer initially felt ____(A)____, the experience of total immersion in the film led to the ____(B)____ that solo activities can be genuinely enjoyable.",
+      "choices": [
+        "(A) excited - (B) decision",
+        "(A) bored - (B) conclusion",
+        "(A) uncomfortable - (B) realization",
+        "(A) confident - (B) assumption",
+        "(A) uncomfortable - (B) regret"
+      ],
+      "answer": 3,
+      "explanation": "처음에 불편했으나(uncomfortable) 영화에 완전히 몰입한 경험이 혼자 하는 활동이 즐거울 수 있다는 깨달음(realization)을 주었다. ①의 흥분, ③의 지루함, ④의 자신감과 추측, ⑤의 후회는 본문과 다르다."
+    },
+    {
+      "id": "ne1-ch1-r27",
+      "type": "reference",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          5
+        ]
+      },
+      "instruction": "밑줄 친 it이 가리키는 것으로 가장 적절한 것은?",
+      "passage": "These days, I tend to watch movies on streaming services. However, if I go to the theater, I usually watch an action or science fiction movie w<u>it</u>h my friends or family. Those are the kinds of movies they enjoy. Going to the theater alone was something I had never done before. So, for the first challenge, I decided to give it a try. It was nice to choose the movie and the seat on my own. I didn't have to worry about anyone else's preferences. I saw the experience as a good opportunity to watch something different, so I chose a historical drama that I had been curious about. At first, it felt a bit awkward and lonely to sit in the theater by myself. But once the movie started, I became completely absorbed in the story. It was so satisfying just to focus on the movie itself. There was nothing to distract me! This experience made me realize that I sometimes enjoy doing things alone. After the movie, I promised myself that I would try to make my own choices more often and enjoy more activities by myself in the future.",
+      "choices": [
+        "watching a historical drama at a theater",
+        "choosing a seat without asking anyone's opinion",
+        "using a streaming service instead of a theater",
+        "watching an action movie with friends or family",
+        "going to the movie theater by oneself"
+      ],
+      "answer": 5,
+      "explanation": "it은 바로 앞 문장의 'Going to the theater alone'을 가리킨다. ①은 역사 드라마 관람, ③은 좌석 선택, ④는 스트리밍 이용, ⑤는 친구와 액션 영화 보기로 it의 지시 대상과 다르다."
+    },
+    {
+      "id": "ne1-ch1-r28",
+      "type": "reference",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          3,
+          8
+        ]
+      },
+      "instruction": "밑줄 친 (a)와 (b)가 가리키는 대상이 바르게 짝지어진 것은?",
+      "passage": "These days, I tend to watch movies on streaming services. However, if I go to the theater, I usually watch an action or science fiction movie with my friends or family. Those are the kinds of movies <u>they</u> enjoy. Going to the theater alone was something I had never done before. So, for the first challenge, I decided to give it a try. It was nice to choose the movie and the seat on my own. I didn't have to worry about anyone else's preferences. I saw the experience as a good opportunity to watch something different, so I chose a historical drama that I had been curious about. At first, it felt a bit awkward and lonely to sit in the theater by myself. But once the movie started, I became completely absorbed in the story. It was so satisfying just to focus on the movie itself. There was nothing to distract me! This experience made me realize that I sometimes enjoy doing things alone. After the movie, I promised myself that I would try to make my own choices more often and enjoy more activities by myself in the future.",
+      "choices": [
+        "(a) the writer's friends or family - (b) the writer",
+        "(a) streaming services - (b) the writer",
+        "(a) other audience members - (b) the writer's teacher",
+        "(a) the writer's classmates - (b) the writer's family",
+        "(a) the writer's friends or family - (b) the writer's friends"
+      ],
+      "answer": 1,
+      "explanation": "(a) they는 앞 문장의 'my friends or family'를 가리키고, (b) I는 글쓴이 자신을 가리킨다. 나머지 조합은 지시 대상을 잘못 연결한 것이다."
+    },
+    {
+      "_comment": "═══ GRAMMAR ═══"
+    },
+    {
+      "id": "ne1-ch1-g01",
+      "type": "underline-grammar",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          1,
+          4,
+          5,
+          8,
+          13
+        ]
+      },
+      "instruction": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?",
+      "passage": "These days, I ①<u>tend to watch</u> movies on streaming services. ②<u>Going</u> to the theater alone was something I had never done before. So, for the first challenge, I decided ③<u>giving</u> it a try. I saw the experience as a good opportunity ④<u>to watch</u> something different. This experience ⑤<u>made</u> me realize that I sometimes enjoy doing things alone.",
+      "choices": [
+        "①",
+        "②",
+        "④",
+        "③",
+        "⑤"
+      ],
+      "answer": 4,
+      "explanation": "decide + to-V이므로 giving → to give. ① tend to V ✓ ② 동명사 주어 ✓ ④ opportunity to V(형용사적 용법) ✓ ⑤ make + O + V원형(사역동사) ✓"
+    },
+    {
+      "id": "ne1-ch1-g02",
+      "type": "underline-grammar",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          2,
+          6,
+          8,
+          9,
+          14
+        ]
+      },
+      "instruction": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?",
+      "passage": "However, if I ①<u>go</u> to the theater, I usually watch an action or science fiction movie. ②<u>It was nice to choose</u> the movie and the seat on my own. I saw the experience ③<u>as</u> a good opportunity. At first, it felt a bit awkward and lonely ④<u>sitting</u> in the theater by myself. I promised myself that I ⑤<u>would try</u> to make my own choices more often.",
+      "choices": [
+        "①",
+        "②",
+        "③",
+        "④",
+        "⑤"
+      ],
+      "answer": 4,
+      "explanation": "it felt awkward to sit (가주어 it + 진주어 to부정사)이므로 sitting → to sit. ① if조건문에서 현재시제 ✓ ② 가주어 it + to부정사 ✓ ③ see A as B ✓ ⑤ would try(과거 미래) ✓"
+    },
+    {
+      "id": "ne1-ch1-g03",
+      "type": "underline-grammar",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          4,
+          7,
+          10,
+          12,
+          14
+        ]
+      },
+      "instruction": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?",
+      "passage": "Going to the theater alone was something I ①<u>had never done</u> before. I didn't ②<u>have to</u> worry about anyone else's preferences. But once the movie started, I became completely ③<u>absorbing</u> in the story. There was ④<u>nothing to distract</u> me! I promised myself that I would try to make my own choices more ⑤<u>often</u>.",
+      "choices": [
+        "①",
+        "③",
+        "②",
+        "④",
+        "⑤"
+      ],
+      "answer": 2,
+      "explanation": "become absorbed in(~에 몰입하다)이므로 absorbing(능동/현재분사) → absorbed(수동/과거분사). 주어(I)가 몰입당하는 대상이므로 과거분사가 적절. ① 과거완료(경험) ✓ ② didn't have to ✓ ④ nothing to distract(후치수식) ✓ ⑤ often(부사) ✓"
+    },
+    {
+      "id": "ne1-ch1-g04",
+      "type": "underline-grammar",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          1,
+          3,
+          8,
+          11,
+          13
+        ]
+      },
+      "instruction": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?",
+      "passage": "These days, I tend ①<u>to watch</u> movies on streaming services. Those are the kinds of movies ②<u>which</u> they enjoy. I chose a historical drama that I ③<u>had been curious</u> about. It was so ④<u>satisfying</u> just to focus on the movie itself. This experience made me ⑤<u>to realize</u> that I sometimes enjoy doing things alone.",
+      "choices": [
+        "①",
+        "②",
+        "⑤",
+        "③",
+        "④"
+      ],
+      "answer": 3,
+      "explanation": "사역동사 make + O + V원형이므로 to realize → realize. ① tend to V ✓ ② 관계대명사 which(= that) ✓ ③ 과거완료진행(had been curious) ✓ ④ satisfying(감정유발 형용사) ✓"
+    },
+    {
+      "id": "ne1-ch1-g05",
+      "type": "usage-distinction",
+      "subtype": "to-infinitive",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          5,
+          6,
+          8,
+          9,
+          14
+        ]
+      },
+      "instruction": "다음 중 밑줄 친 to부정사의 용법이 나머지 넷과 다른 것은?",
+      "choices": [
+        "I decided <u>to give</u> it a try.",
+        "It was nice <u>to choose</u> the movie on my own.",
+        "I saw the experience as a good opportunity <u>to watch</u> something different.",
+        "It felt awkward <u>to sit</u> in the theater by myself.",
+        "I would try <u>to make</u> my own choices more often."
+      ],
+      "answer": 3,
+      "explanation": "③은 형용사적 용법(opportunity를 후치수식). ①은 명사적 용법(decide의 목적어), ②④는 명사적 용법(가주어 it의 진주어), ⑤는 명사적 용법(try의 목적어). ③만 형용사적 용법으로 다르다."
+    },
+    {
+      "id": "ne1-ch1-g06",
+      "type": "usage-distinction",
+      "subtype": "that",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          8,
+          13,
+          14
+        ]
+      },
+      "instruction": "다음 중 밑줄 친 that의 쓰임이 나머지 넷과 다른 것은?",
+      "choices": [
+        "This experience made me realize <u>that</u> I sometimes enjoy doing things alone.",
+        "I promised myself <u>that</u> I would try to make my own choices.",
+        "She told us <u>that</u> we should share our experiences.",
+        "I believe <u>that</u> everyone needs time alone.",
+        "I chose a historical drama <u>that</u> I had been curious about."
+      ],
+      "answer": 5,
+      "explanation": "①은 관계대명사 that(선행사 a historical drama를 수식), 나머지 ②③④⑤는 모두 접속사 that(명사절을 이끔). ①만 관계대명사로 쓰임이 다르다."
+    },
+    {
+      "id": "ne1-ch1-g07",
+      "type": "usage-distinction",
+      "subtype": "v-ing",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          4,
+          13
+        ]
+      },
+      "instruction": "다음 중 밑줄 친 V-ing의 쓰임이 나머지 넷과 다른 것은?",
+      "choices": [
+        "I enjoy <u>doing</u> things alone.",
+        "She kept <u>talking</u> during the movie.",
+        "<u>Going</u> to the theater alone was something new.",
+        "He suggested <u>watching</u> a documentary instead.",
+        "I considered <u>trying</u> a different genre."
+      ],
+      "answer": 3,
+      "explanation": "①은 동명사 주어(문장의 주어 역할). ②③④⑤는 모두 동명사 목적어(동사의 목적어 역할). ①만 쓰임이 다르다."
+    },
+    {
+      "id": "ne1-ch1-g08",
+      "type": "error-correction",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          1
+        ]
+      },
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 바르게 고치시오.",
+      "stem": "These days, I tend watching movies on streaming services.",
+      "answer": "watching → to watch",
+      "explanation": "tend + to-V (~하는 경향이 있다). tend는 to부정사를 목적어로 취하며 동명사를 쓸 수 없다."
+    },
+    {
+      "id": "ne1-ch1-g09",
+      "type": "error-correction",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          2
+        ]
+      },
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 바르게 고치시오.",
+      "stem": "However, if I will go to the theater, I usually watch an action or science fiction movie.",
+      "answer": "will go → go",
+      "explanation": "if 조건문(조건 부사절)에서는 미래 시제 대신 현재 시제를 사용한다. 습관적 조건을 나타내므로 현재시제 go가 적절하다."
+    },
+    {
+      "id": "ne1-ch1-g10",
+      "type": "error-correction",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          4
+        ]
+      },
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 바르게 고치시오.",
+      "stem": "Go to the theater alone was something I had never done before.",
+      "answer": "Go → Going",
+      "explanation": "주어 자리에 동사원형이 올 수 없다. 동명사(Going)를 써서 '혼자 극장에 가는 것'이라는 주어를 만들어야 한다."
+    },
+    {
+      "id": "ne1-ch1-g11",
+      "type": "error-correction",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          5
+        ]
+      },
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 바르게 고치시오.",
+      "stem": "So, for the first challenge, I decided giving it a try.",
+      "answer": "giving → to give",
+      "explanation": "decide + to-V (~하기로 결정하다). decide는 to부정사를 목적어로 취하며 동명사를 쓸 수 없다."
+    },
+    {
+      "id": "ne1-ch1-g12",
+      "type": "error-correction",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          6
+        ]
+      },
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 바르게 고치시오.",
+      "stem": "It was nice choosing the movie and the seat on my own.",
+      "answer": "choosing → to choose",
+      "explanation": "가주어 It + be + 형용사 + to-V (진주어) 구문이다. It was nice to choose가 올바른 형태."
+    },
+    {
+      "id": "ne1-ch1-g13",
+      "type": "error-correction",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          8
+        ]
+      },
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 바르게 고치시오.",
+      "stem": "I saw the experience for a good opportunity to watch something different.",
+      "answer": "for → as",
+      "explanation": "see A as B = 'A를 B로 여기다'. see는 전치사 as와 함께 쓰인다. for는 부적절."
+    },
+    {
+      "id": "ne1-ch1-g14",
+      "type": "error-correction",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          10
+        ]
+      },
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 바르게 고치시오.",
+      "stem": "But once the movie started, I became completely absorbing in the story.",
+      "answer": "absorbing → absorbed",
+      "explanation": "become absorbed in = '~에 몰입하다'. 주어(I)가 몰입당하는 대상이므로 과거분사 absorbed를 써야 한다. absorbing은 '(무엇이) 흥미진진한'이라는 능동적 의미의 현재분사이다."
+    },
+    {
+      "id": "ne1-ch1-g15",
+      "type": "error-correction",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          13
+        ]
+      },
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 바르게 고치시오.",
+      "stem": "This experience made me to realize that I sometimes enjoy doing things alone.",
+      "answer": "to realize → realize",
+      "explanation": "사역동사 make + 목적어 + 동사원형. make는 목적격 보어로 to부정사가 아닌 원형부정사를 취한다."
+    },
+    {
+      "id": "ne1-ch1-g16",
+      "type": "word-ordering",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          4
+        ]
+      },
+      "instruction": "주어진 단어를 올바른 순서로 배열하시오.",
+      "stem": "혼자 극장에 가는 것은 내가 이전에 한 번도 해본 적 없는 일이었다.",
+      "words": [
+        "something",
+        "the theater alone",
+        "Going to",
+        "I had never",
+        "was",
+        "done before"
+      ],
+      "answer": "Going to the theater alone was something I had never done before.",
+      "explanation": "Going to(동명사 주어) + the theater alone / was something(보어) / I had never done before(관계절, 과거완료-경험)"
+    },
+    {
+      "id": "ne1-ch1-g17",
+      "type": "word-ordering",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          8
+        ]
+      },
+      "instruction": "주어진 단어를 올바른 순서로 배열하여 문장을 완성하시오.",
+      "stem": "I saw _________________________________ about.",
+      "words": [
+        "a historical drama",
+        "to watch",
+        "the experience as",
+        "something different,",
+        "a good opportunity",
+        "so I chose",
+        "that I had been curious"
+      ],
+      "answer": "the experience as a good opportunity to watch something different, so I chose a historical drama that I had been curious",
+      "explanation": "see A as B: the experience as a good opportunity / to부정사 형용사적 용법: to watch something different / 접속사 so + 관계대명사 that: so I chose a historical drama that I had been curious about"
+    },
+    {
+      "id": "ne1-ch1-g18",
+      "type": "word-ordering",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          9
+        ]
+      },
+      "instruction": "주어진 단어를 올바른 순서로 배열하시오.",
+      "stem": "처음에는 혼자 극장에 앉아 있는 것이 조금 어색하고 외로웠다.",
+      "words": [
+        "to sit",
+        "it felt",
+        "a bit awkward",
+        "in the theater",
+        "At first,",
+        "by myself",
+        "and lonely"
+      ],
+      "answer": "At first, it felt a bit awkward and lonely to sit in the theater by myself.",
+      "explanation": "At first(부사구) / it felt(가주어) + a bit awkward and lonely(보어) / to sit(진주어) + in the theater by myself(부사구)"
+    },
+    {
+      "id": "ne1-ch1-g19",
+      "type": "word-ordering",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          13
+        ]
+      },
+      "instruction": "주어진 단어를 올바른 순서로 배열하시오.",
+      "stem": "이 경험은 내가 때때로 혼자 일을 하는 것을 즐긴다는 것을 깨닫게 해주었다.",
+      "words": [
+        "that I",
+        "This experience",
+        "doing things",
+        "sometimes enjoy",
+        "made me realize",
+        "alone"
+      ],
+      "answer": "This experience made me realize that I sometimes enjoy doing things alone.",
+      "explanation": "make + O + V원형: made me realize / that절: that I sometimes enjoy / enjoy + V-ing: doing things alone"
+    },
+    {
+      "id": "ne1-ch1-g20",
+      "type": "word-ordering",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          14
+        ]
+      },
+      "instruction": "주어진 단어를 올바른 순서로 배열하여 문장을 완성하시오.",
+      "stem": "After the movie, I promised _________________________________ in the future.",
+      "words": [
+        "that I would",
+        "more often and",
+        "myself",
+        "enjoy more activities",
+        "try to make",
+        "my own choices",
+        "by myself"
+      ],
+      "answer": "myself that I would try to make my own choices more often and enjoy more activities by myself",
+      "explanation": "promise oneself that: myself that / would + V: I would try to make / 병렬구조: make my own choices more often and enjoy more activities / by myself(혼자서)"
+    },
+    {
+      "id": "ne1-ch1-g21",
+      "type": "blank-grammar",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          1
+        ]
+      },
+      "instruction": "다음 빈칸에 들어갈 말의 형태로 가장 적절한 것은?",
+      "stem": "These days, I tend _______ (watch) movies on streaming services.",
+      "choices": [
+        "to watch",
+        "watching",
+        "watched",
+        "to watching",
+        "watch"
+      ],
+      "answer": 1,
+      "explanation": "tend + to-V. tend는 to부정사를 목적어로 취한다."
+    },
+    {
+      "id": "ne1-ch1-g22",
+      "type": "blank-grammar",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          5
+        ]
+      },
+      "instruction": "다음 빈칸에 들어갈 말의 형태로 가장 적절한 것은?",
+      "stem": "So, for the first challenge, I decided _______ (give) it a try.",
+      "choices": [
+        "giving",
+        "given",
+        "to giving",
+        "give",
+        "to give"
+      ],
+      "answer": 5,
+      "explanation": "decide + to-V. decide는 to부정사를 목적어로 취한다."
+    },
+    {
+      "id": "ne1-ch1-g23",
+      "type": "blank-grammar",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          6
+        ]
+      },
+      "instruction": "다음 빈칸에 들어갈 말의 형태로 가장 적절한 것은?",
+      "stem": "It was nice _______ (choose) the movie and the seat on my own.",
+      "choices": [
+        "to choose",
+        "choosing",
+        "chose",
+        "chosen",
+        "to choosing"
+      ],
+      "answer": 1,
+      "explanation": "가주어 It + be + 형용사 + to-V (진주어). '~하는 것이 좋았다'의 구문이다."
+    },
+    {
+      "id": "ne1-ch1-g24",
+      "type": "blank-grammar",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          10
+        ]
+      },
+      "instruction": "다음 빈칸에 들어갈 말의 형태로 가장 적절한 것은?",
+      "stem": "But once the movie started, I became completely _______ (absorb) in the story.",
+      "choices": [
+        "absorbed",
+        "absorb",
+        "absorbing",
+        "to absorb",
+        "being absorbed"
+      ],
+      "answer": 1,
+      "explanation": "become absorbed in = '~에 몰입하다'. 주어가 감정을 느끼는 대상이므로 과거분사 absorbed가 적절. absorbing은 '흥미진진한'이라는 능동 의미."
+    },
+    {
+      "id": "ne1-ch1-g25",
+      "type": "blank-grammar",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          13
+        ]
+      },
+      "instruction": "다음 빈칸에 들어갈 말의 형태로 가장 적절한 것은?",
+      "stem": "This experience made me _______ (realize) that I sometimes enjoy doing things alone.",
+      "choices": [
+        "to realize",
+        "realize",
+        "realizing",
+        "realized",
+        "to realizing"
+      ],
+      "answer": 2,
+      "explanation": "사역동사 make + 목적어 + 동사원형. make는 원형부정사를 목적격 보어로 취한다."
+    },
+    {
+      "id": "ne1-ch1-g26",
+      "type": "blank-grammar",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          13
+        ]
+      },
+      "instruction": "다음 빈칸에 들어갈 말의 형태로 가장 적절한 것은?",
+      "stem": "I sometimes enjoy _______ (do) things alone.",
+      "choices": [
+        "to do",
+        "do",
+        "done",
+        "doing",
+        "to doing"
+      ],
+      "answer": 4,
+      "explanation": "enjoy + V-ing. enjoy는 동명사를 목적어로 취하며 to부정사는 쓸 수 없다."
+    },
+    {
+      "id": "ne1-ch1-g27",
+      "type": "blank-grammar",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          14
+        ]
+      },
+      "instruction": "다음 빈칸에 들어갈 말의 형태로 가장 적절한 것은?",
+      "stem": "I promised myself that I _______ (try) to make my own choices more often in the future.",
+      "choices": [
+        "will try",
+        "would try",
+        "tried",
+        "have tried",
+        "trying"
+      ],
+      "answer": 2,
+      "explanation": "주절이 과거(promised)이므로 that절에서 미래를 나타낼 때 would를 사용한다(시제 일치). will try는 현재 시점에서의 미래이므로 과거 문맥에 부적절."
+    }
+  ]
+}

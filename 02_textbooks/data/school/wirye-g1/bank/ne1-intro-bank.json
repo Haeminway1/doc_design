@@ -1,0 +1,978 @@
+{
+  "source": {
+    "textbook": "ne1",
+    "unit": "intro",
+    "title": "Discovering Yourself through Challenges",
+    "sentences": [
+      {
+        "num": 1,
+        "text": "\"To grow into a better version of ourselves, we should not stay as we are.\""
+      },
+      {
+        "num": 2,
+        "text": "That was the first thing our teacher said to us on the first day of school."
+      },
+      {
+        "num": 3,
+        "text": "She wanted us to start the semester by pushing ourselves out of our comfort zones and learning more about ourselves."
+      },
+      {
+        "num": 4,
+        "text": "To help us do so, she gave us an assignment to challenge ourselves in three different ways."
+      },
+      {
+        "num": 5,
+        "text": "The three challenges could involve hobbies, exercise, our studies, or even our relationships."
+      },
+      {
+        "num": 6,
+        "text": "The important part was trying something new for each one."
+      },
+      {
+        "num": 7,
+        "text": "She told us that we should share our experiences with our classmates when we finished the challenges."
+      }
+    ]
+  },
+  "stats": {
+    "total": 42,
+    "reading": 21,
+    "grammar": 21
+  },
+  "problems": [
+    {
+      "_comment": "═══ READING ═══"
+    },
+    {
+      "id": "ne1-intro-r01",
+      "type": "main-idea",
+      "subtype": "topic",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "instruction": "다음 글의 주제로 가장 적절한 것은?",
+      "passage": "\"To grow into a better version of ourselves, we should not stay as we are.\" That was the first thing our teacher said to us on the first day of school. She wanted us to start the semester by pushing ourselves out of our comfort zones and learning more about ourselves. To help us do so, she gave us an assignment to challenge ourselves in three different ways. The three challenges could involve hobbies, exercise, our studies, or even our relationships. The important part was trying something new for each one. She told us that we should share our experiences with our classmates when we finished the challenges.",
+      "choices": [
+        "the value of reflecting on past experiences to build self-awareness",
+        "the role of peer collaboration in achieving personal development goals",
+        "a teacher's assignment encouraging self-growth through new challenges",
+        "the psychological benefits of maintaining a consistent daily routine",
+        "the relationship between academic performance and extracurricular activities"
+      ],
+      "answer": 3,
+      "explanation": "선생님이 안전지대에서 벗어나 세 가지 방식으로 자신에게 도전하는 과제를 주었다는 내용이 핵심이므로, '새로운 도전을 통한 자기 성장을 장려하는 선생님의 과제'가 주제이다. ①은 과거 경험 성찰, ②는 동료 협업에 초점을 맞추어 본문과 다르고, ④⑤는 본문과 무관하다."
+    },
+    {
+      "id": "ne1-intro-r02",
+      "type": "main-idea",
+      "subtype": "gist",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "instruction": "다음 글의 요지로 가장 적절한 것은?",
+      "passage": "\"To grow into a better version of ourselves, we should not stay as we are.\" That was the first thing our teacher said to us on the first day of school. She wanted us to start the semester by pushing ourselves out of our comfort zones and learning more about ourselves. To help us do so, she gave us an assignment to challenge ourselves in three different ways. The three challenges could involve hobbies, exercise, our studies, or even our relationships. The important part was trying something new for each one. She told us that we should share our experiences with our classmates when we finished the challenges.",
+      "choices": [
+        "Personal growth requires stepping beyond what is familiar and trying new things.",
+        "Sharing experiences with others is more important than the challenges themselves.",
+        "Teachers should design assignments that focus on students' academic weaknesses.",
+        "Setting clear and measurable goals at the start of a semester leads to success.",
+        "Comfort zones exist to protect us and should be respected rather than abandoned."
+      ],
+      "answer": 1,
+      "explanation": "선생님이 '현재 모습에 머물지 말라'고 말하며 새로운 도전 과제를 제시하고, '각각에 대해 새로운 것을 시도하는 것'이 중요하다고 강조하므로, 요지는 '익숙한 것 너머로 나아가 새로운 것을 시도해야 성장한다'이다. ①은 경험 공유가 더 중요하다는 과장이고, ③④⑤는 본문의 핵심 메시지와 다르다."
+    },
+    {
+      "id": "ne1-intro-r03",
+      "type": "main-idea",
+      "subtype": "purpose",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "instruction": "선생님이 학생들에게 과제를 준 목적으로 가장 적절한 것은?",
+      "passage": "\"To grow into a better version of ourselves, we should not stay as we are.\" That was the first thing our teacher said to us on the first day of school. She wanted us to start the semester by pushing ourselves out of our comfort zones and learning more about ourselves. To help us do so, she gave us an assignment to challenge ourselves in three different ways. The three challenges could involve hobbies, exercise, our studies, or even our relationships. The important part was trying something new for each one. She told us that we should share our experiences with our classmates when we finished the challenges.",
+      "choices": [
+        "to encourage students to build stronger relationships with their classmates",
+        "to have students leave their comfort zones and deepen their self-understanding",
+        "to prepare students for upcoming exams by broadening their study habits",
+        "to help students identify their strongest academic subjects early in the semester",
+        "to assess each student's willingness to follow instructions and complete tasks"
+      ],
+      "answer": 2,
+      "explanation": "③번 문장에서 'pushing ourselves out of our comfort zones and learning more about ourselves'가 직접적인 목적으로 명시되어 있다. ②는 급우 관계 형성, ③은 시험 준비, ④는 학업 과목 파악, ⑤는 과제 수행 의지 평가로 본문 목적과 다르다."
+    },
+    {
+      "id": "ne1-intro-r04",
+      "type": "implication",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          1
+        ]
+      },
+      "instruction": "밑줄 친 \"To grow into a better version of ourselves, we should not stay as we are\"가 의미하는 바로 가장 적절한 것은?",
+      "passage": "<u>\"To grow into a better version of ourselves, we should not stay as we are.\"</u> That was the first thing our teacher said to us on the first day of school. She wanted us to start the semester by pushing ourselves out of our comfort zones and learning more about ourselves. To help us do so, she gave us an assignment to challenge ourselves in three different ways. The three challenges could involve hobbies, exercise, our studies, or even our relationships. The important part was trying something new for each one. She told us that we should share our experiences with our classmates when we finished the challenges.",
+      "choices": [
+        "We should constantly compare ourselves with others to find areas for improvement.",
+        "Accepting who we are right now is the essential first step toward meaningful growth.",
+        "Our personal identity is fixed, so we need external help to become different people.",
+        "We must be willing to embrace change and leave our current state behind to develop.",
+        "Dissatisfaction with ourselves is unhealthy and prevents genuine self-improvement."
+      ],
+      "answer": 4,
+      "explanation": "'더 나은 모습으로 성장하기 위해 현재 모습에 머물러서는 안 된다'는 변화를 수용하고 현재 상태에서 벗어나야 발전할 수 있다는 의미이다. ③은 '있는 그대로 받아들이라'는 반대 의미, ②는 타인 비교, ④는 정체성 고정, ⑤는 불만족이 해롭다는 것으로 본문과 다르다."
+    },
+    {
+      "id": "ne1-intro-r05",
+      "type": "implication",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          3
+        ]
+      },
+      "instruction": "밑줄 친 부분이 의미하는 바로 가장 적절한 것은?",
+      "passage": "\"To grow into a better version of ourselves, we should not stay as we are.\" That was the first thing our teacher said to us on the first day of school. She wanted us to start the semester by <u>pushing ourselves out of our comfort zones</u> and learning more about ourselves. To help us do so, she gave us an assignment to challenge ourselves in three different ways. The three challenges could involve hobbies, exercise, our studies, or even our relationships. The important part was trying something new for each one. She told us that we should share our experiences with our classmates when we finished the challenges.",
+      "choices": [
+        "physically relocating to an unfamiliar environment for a fresh start",
+        "deliberately taking on unfamiliar experiences that feel challenging",
+        "competing intensely with classmates to raise one's academic ranking",
+        "abandoning all previous habits and starting every routine from scratch",
+        "gradually reducing stress by avoiding situations that cause anxiety"
+      ],
+      "answer": 2,
+      "explanation": "comfort zone은 '안전지대', 즉 익숙하고 편안한 영역을 뜻하며, push out of는 '벗어나다'이므로 의도적으로 도전적이고 낯선 경험을 하라는 의미이다. ①은 물리적 이동, ③은 경쟁, ④는 모든 습관 포기라는 극단적 해석, ⑤는 반대 의미이다."
+    },
+    {
+      "id": "ne1-intro-r06",
+      "type": "implication",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          6
+        ]
+      },
+      "instruction": "밑줄 친 문장이 의미하는 바로 가장 적절한 것은?",
+      "passage": "\"To grow into a better version of ourselves, we should not stay as we are.\" That was the first thing our teacher said to us on the first day of school. She wanted us to start the semester by pushing ourselves out of our comfort zones and learning more about ourselves. To help us do so, she gave us an assignment to challenge ourselves in three different ways. The three challenges could involve hobbies, exercise, our studies, or even our relationships. <u>The important part was trying something new for each one.</u> She told us that we should share our experiences with our classmates when we finished the challenges.",
+      "choices": [
+        "Students had to succeed in all three challenges to receive full credit for the assignment.",
+        "Each challenge needed to involve a completely different skill set with no overlap allowed.",
+        "The teacher expected students to choose the most difficult option available in each category.",
+        "Novelty was encouraged only if students could guarantee a positive outcome beforehand.",
+        "The specific area of each challenge mattered less than the act of attempting something unfamiliar."
+      ],
+      "answer": 5,
+      "explanation": "'새로운 것을 시도하는 것이 중요한 부분이었다'이므로, 어떤 분야인지보다 낯선 것에 도전하는 행위 자체가 핵심이라는 의미이다. ①은 성공 필수, ③은 겹침 불가, ④는 가장 어려운 옵션 선택, ⑤는 긍정적 결과 보장이라는 조건을 부가하여 본문과 다르다."
+    },
+    {
+      "id": "ne1-intro-r07",
+      "type": "blank-inference",
+      "subtype": "word",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          1
+        ]
+      },
+      "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "passage": "\"To grow into a better ________________ of ourselves, we should not stay as we are.\" That was the first thing our teacher said to us on the first day of school. She wanted us to start the semester by pushing ourselves out of our comfort zones and learning more about ourselves. To help us do so, she gave us an assignment to challenge ourselves in three different ways. The three challenges could involve hobbies, exercise, our studies, or even our relationships. The important part was trying something new for each one. She told us that we should share our experiences with our classmates when we finished the challenges.",
+      "blankTarget": "version",
+      "choices": [
+        "example",
+        "version",
+        "standard",
+        "reflection",
+        "expression"
+      ],
+      "answer": 2,
+      "explanation": "a better version of ourselves = '우리 자신의 더 나은 모습/버전'. example(예시), standard(기준), reflection(반영), expression(표현)은 모두 문맥상 부자연스럽다."
+    },
+    {
+      "id": "ne1-intro-r08",
+      "type": "blank-inference",
+      "subtype": "phrase",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          3
+        ]
+      },
+      "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "passage": "\"To grow into a better version of ourselves, we should not stay as we are.\" That was the first thing our teacher said to us on the first day of school. She wanted us to start the semester by pushing ourselves out of our ________________ and learning more about ourselves. To help us do so, she gave us an assignment to challenge ourselves in three different ways. The three challenges could involve hobbies, exercise, our studies, or even our relationships. The important part was trying something new for each one. She told us that we should share our experiences with our classmates when we finished the challenges.",
+      "blankTarget": "comfort zones",
+      "choices": [
+        "social circles",
+        "comfort zones",
+        "familiar surroundings",
+        "daily routines",
+        "study groups"
+      ],
+      "answer": 2,
+      "explanation": "'안전지대에서 벗어나다'라는 표현은 push oneself out of one's comfort zone(s)이다. social circles, familiar surroundings, daily routines 등은 의미가 비슷해 보이지만 원문의 정확한 표현은 comfort zones이다."
+    },
+    {
+      "id": "ne1-intro-r09",
+      "type": "blank-inference",
+      "subtype": "word",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          4
+        ]
+      },
+      "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "passage": "\"To grow into a better version of ourselves, we should not stay as we are.\" That was the first thing our teacher said to us on the first day of school. She wanted us to start the semester by pushing ourselves out of our comfort zones and learning more about ourselves. To help us do so, she gave us an ________________ to challenge ourselves in three different ways. The three challenges could involve hobbies, exercise, our studies, or even our relationships. The important part was trying something new for each one. She told us that we should share our experiences with our classmates when we finished the challenges.",
+      "blankTarget": "assignment",
+      "choices": [
+        "opportunity",
+        "incentive",
+        "obligation",
+        "assignment",
+        "invitation"
+      ],
+      "answer": 4,
+      "explanation": "선생님이 학생들에게 준 것이므로 과제(assignment)가 적절하다. opportunity(기회), incentive(동기부여), obligation(의무), invitation(초대)은 모두 교사가 학생에게 '부여하는 과제'라는 맥락에 맞지 않는다."
+    },
+    {
+      "id": "ne1-intro-r10",
+      "type": "blank-inference",
+      "subtype": "clause",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          6,
+          7
+        ]
+      },
+      "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "passage": "\"To grow into a better version of ourselves, we should not stay as we are.\" That was the first thing our teacher said to us on the first day of school. She wanted us to start the semester by pushing ourselves out of our comfort zones and learning more about ourselves. To help us do so, she gave us an assignment to challenge ourselves in three different ways. The three challenges could involve hobbies, exercise, our studies, or even our relationships. The important part was trying something new for each one. She told us that we should _________________________________________ when we finished the challenges.",
+      "blankTarget": "share our experiences with our classmates",
+      "choices": [
+        "evaluate each other's results and rank them accordingly",
+        "write a detailed report analyzing our personal weaknesses",
+        "share our experiences with our classmates",
+        "select the most successful challenge to present to the teacher",
+        "reflect privately in a journal without discussing with anyone"
+      ],
+      "answer": 3,
+      "explanation": "원문에서 도전을 끝낸 후 급우들과 경험을 공유하라고 했다. ①은 평가·순위 매기기, ②는 약점 분석 보고서, ③은 가장 성공적인 도전만 선택, ④는 사적 성찰로 본문의 '공유'와 반대이다."
+    },
+    {
+      "id": "ne1-intro-r11",
+      "type": "sentence-insertion",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
+      "givenSentence": "To help us do so, she gave us an assignment to challenge ourselves in three different ways.",
+      "passage": "\"To grow into a better version of ourselves, we should not stay as we are.\" That was the first thing our teacher said to us on the first day of school. She wanted us to start the semester by pushing ourselves out of our comfort zones and learning more about ourselves. ( ① ) The three challenges could involve hobbies, exercise, our studies, or even our relationships. ( ② ) The important part was trying something new for each one. ( ③ ) She told us that we should share our experiences with our classmates when we finished the challenges. ( ④ )",
+      "answer": 1,
+      "explanation": "'do so'가 앞 문장의 '안전지대에서 벗어나기'를 가리키므로, ③번 문장 바로 뒤인 ①에 들어가야 한다. 또한 과제 설명 후 세 가지 도전의 구체적 내용이 이어지는 것이 자연스럽다."
+    },
+    {
+      "id": "ne1-intro-r12",
+      "type": "sentence-insertion",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "instruction": "글의 흐름으로 보아, 주어진 문장이 들어가기에 가장 적절한 곳은?",
+      "givenSentence": "The important part was trying something new for each one.",
+      "passage": "She wanted us to start the semester by pushing ourselves out of our comfort zones and learning more about ourselves. To help us do so, she gave us an assignment to challenge ourselves in three different ways. ( ① ) The three challenges could involve hobbies, exercise, our studies, or even our relationships. ( ② ) She told us that we should share our experiences with our classmates when we finished the challenges. ( ③ )",
+      "answer": 2,
+      "explanation": "도전이 포함할 수 있는 영역(취미, 운동, 공부, 관계)을 열거한 뒤, 핵심은 '새로운 것을 시도하는 것'이라고 정리하는 ②가 자연스럽다."
+    },
+    {
+      "id": "ne1-intro-r13",
+      "type": "sentence-ordering",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          3,
+          4,
+          5,
+          6
+        ]
+      },
+      "instruction": "주어진 글 다음에 이어질 글의 순서로 가장 적절한 것은?",
+      "givenStart": "\"To grow into a better version of ourselves, we should not stay as we are.\" That was the first thing our teacher said to us on the first day of school.",
+      "chunks": {
+        "A": "She wanted us to start the semester by pushing ourselves out of our comfort zones and learning more about ourselves.",
+        "B": "The three challenges could involve hobbies, exercise, our studies, or even our relationships. The important part was trying something new for each one.",
+        "C": "To help us do so, she gave us an assignment to challenge ourselves in three different ways."
+      },
+      "choices": [
+        "(B)-(A)-(C)",
+        "(C)-(B)-(A)",
+        "(A)-(C)-(B)",
+        "(B)-(C)-(A)",
+        "(C)-(A)-(B)"
+      ],
+      "answer": 3,
+      "explanation": "(A) 안전지대 벗어나기 원함 → (C) 'do so'가 (A)를 받아 과제 부여 → (B) 도전의 구체적 영역과 핵심 설명. 'do so'의 지시 대상이 (A)이므로 (A)-(C) 순서가 필수."
+    },
+    {
+      "id": "ne1-intro-r14",
+      "type": "content-match",
+      "subtype": "true",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "instruction": "다음 글의 내용과 일치하는 것은?",
+      "passage": "\"To grow into a better version of ourselves, we should not stay as we are.\" That was the first thing our teacher said to us on the first day of school. She wanted us to start the semester by pushing ourselves out of our comfort zones and learning more about ourselves. To help us do so, she gave us an assignment to challenge ourselves in three different ways. The three challenges could involve hobbies, exercise, our studies, or even our relationships. The important part was trying something new for each one. She told us that we should share our experiences with our classmates when we finished the challenges.",
+      "choices": [
+        "Each of the three challenges had to be related to physical exercise.",
+        "The students were required to complete the challenges individually without telling anyone.",
+        "The teacher gave the assignment on the last day of the semester.",
+        "The teacher said that the outcome of each challenge would determine the students' grades.",
+        "The assignment required students to challenge themselves in exactly three ways."
+      ],
+      "answer": 5,
+      "explanation": "④번 문장: 'she gave us an assignment to challenge ourselves in three different ways.' 정확히 세 가지 방식으로 도전하는 과제였다. ②는 운동만이 아닌 다양한 분야 가능, ③은 경험 공유를 해야 했으므로 틀림, ④는 개학 첫날이 맞고 학기 마지막 날이 아님, ⑤는 성적 반영 언급 없음."
+    },
+    {
+      "id": "ne1-intro-r15",
+      "type": "content-match",
+      "subtype": "false",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "instruction": "다음 글의 내용과 일치하지 않는 것은?",
+      "passage": "\"To grow into a better version of ourselves, we should not stay as we are.\" That was the first thing our teacher said to us on the first day of school. She wanted us to start the semester by pushing ourselves out of our comfort zones and learning more about ourselves. To help us do so, she gave us an assignment to challenge ourselves in three different ways. The three challenges could involve hobbies, exercise, our studies, or even our relationships. The important part was trying something new for each one. She told us that we should share our experiences with our classmates when we finished the challenges.",
+      "choices": [
+        "The key element of the challenges was achieving successful results in each area.",
+        "The teacher spoke to the students on the first day of school.",
+        "The assignment involved challenging oneself in three different ways.",
+        "The challenges could include areas such as hobbies and relationships.",
+        "Students were expected to share their experiences after completing the challenges."
+      ],
+      "answer": 1,
+      "explanation": "⑥번 문장에서 중요한 것은 '새로운 것을 시도하는 것(trying something new)'이지, '성공적인 결과를 달성하는 것'이 아니다. 나머지는 모두 본문 내용과 일치한다."
+    },
+    {
+      "id": "ne1-intro-r16",
+      "type": "content-match",
+      "subtype": "false",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "instruction": "다음 글의 내용과 일치하지 않는 것은?",
+      "passage": "\"To grow into a better version of ourselves, we should not stay as we are.\" That was the first thing our teacher said to us on the first day of school. She wanted us to start the semester by pushing ourselves out of our comfort zones and learning more about ourselves. To help us do so, she gave us an assignment to challenge ourselves in three different ways. The three challenges could involve hobbies, exercise, our studies, or even our relationships. The important part was trying something new for each one. She told us that we should share our experiences with our classmates when we finished the challenges.",
+      "choices": [
+        "The teacher wanted students to evaluate and rank each other's challenge results.",
+        "The students were asked to challenge themselves in three distinct ways.",
+        "The challenges could encompass hobbies, exercise, academics, or personal connections.",
+        "The purpose of the assignment was to help students learn more about themselves.",
+        "Students were supposed to share their experiences with classmates upon completion."
+      ],
+      "answer": 1,
+      "explanation": "본문에는 학생들 간의 평가·순위 매기기에 대한 언급이 없다. 선생님은 경험을 '공유(share)'하라고 했지 '평가하고 순위를 매기라(evaluate and rank)'고 하지 않았다. 나머지는 모두 본문과 일치한다."
+    },
+    {
+      "id": "ne1-intro-r17",
+      "type": "summary",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7
+        ]
+      },
+      "instruction": "다음 글의 내용을 한 문장으로 요약하고자 한다. 빈칸 (A)와 (B)에 들어갈 말로 가장 적절한 것은?",
+      "passage": "\"To grow into a better version of ourselves, we should not stay as we are.\" That was the first thing our teacher said to us on the first day of school. She wanted us to start the semester by pushing ourselves out of our comfort zones and learning more about ourselves. To help us do so, she gave us an assignment to challenge ourselves in three different ways. The three challenges could involve hobbies, exercise, our studies, or even our relationships. The important part was trying something new for each one. She told us that we should share our experiences with our classmates when we finished the challenges.",
+      "summaryTemplate": "The teacher gave an assignment for students to step out of their ____(A)____ by trying new things and ____(B)____ their experiences with classmates.",
+      "choices": [
+        "(A) comfort zones - (B) sharing",
+        "(A) familiar habits - (B) comparing",
+        "(A) comfort zones - (B) recording",
+        "(A) academic limits - (B) presenting",
+        "(A) daily routines - (B) sharing"
+      ],
+      "answer": 1,
+      "explanation": "안전지대(comfort zones)에서 벗어나 + 경험을 공유(sharing)하라는 과제 내용과 일치. ①의 comparing, ②의 recording, ③의 academic limits와 presenting, ④의 daily routines는 원문 표현과 다르다."
+    },
+    {
+      "id": "ne1-intro-r18",
+      "type": "reference",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          4
+        ]
+      },
+      "instruction": "밑줄 친 do so가 가리키는 것으로 가장 적절한 것은?",
+      "passage": "\"To grow into a better version of ourselves, we should not stay as we are.\" That was the first thing our teacher said to us on the first day of school. She wanted us to start the semester by pushing ourselves out of our comfort zones and learning more about ourselves. <u>To help us do so</u>, she gave us an assignment to challenge ourselves in three different ways. The three challenges could involve hobbies, exercise, our studies, or even our relationships. The important part was trying something new for each one. She told us that we should share our experiences with our classmates when we finished the challenges.",
+      "choices": [
+        "complete the three challenges before the end of the semester",
+        "form study groups and work together on academic goals",
+        "leave their comfort zones and gain deeper self-knowledge",
+        "share their personal experiences with classmates in class",
+        "choose between hobbies, exercise, studies, and relationships"
+      ],
+      "answer": 3,
+      "explanation": "do so는 바로 앞 문장의 'pushing ourselves out of our comfort zones and learning more about ourselves'를 대신한다. ①은 도전 완수, ③은 스터디 그룹, ④는 경험 공유, ⑤는 도전 분야 선택으로 do so의 지시 대상과 다르다."
+    },
+    {
+      "id": "ne1-intro-r19",
+      "type": "blank-inference",
+      "subtype": "phrase",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          1,
+          2,
+          3
+        ]
+      },
+      "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "passage": "\"To grow into a better version of ourselves, we should not stay as we are.\" That was the first thing our teacher said to us on the first day of school. She wanted us to start the semester by __________________________________________ and learning more about ourselves. To help us do so, she gave us an assignment to challenge ourselves in three different ways. The three challenges could involve hobbies, exercise, our studies, or even our relationships. The important part was trying something new for each one. She told us that we should share our experiences with our classmates when we finished the challenges.",
+      "blankTarget": "pushing ourselves out of our comfort zones",
+      "choices": [
+        "setting realistic goals for our academic performance",
+        "strengthening the friendships we already have",
+        "reviewing the materials from the previous semester",
+        "following the same strategies that worked before",
+        "pushing ourselves out of our comfort zones"
+      ],
+      "answer": 5,
+      "explanation": "앞 문장에서 '현재 모습에 머물지 말라'고 했으므로, 안전지대에서 벗어나라(pushing ourselves out of our comfort zones)가 문맥상 적절. ①②③④는 모두 기존 것을 유지·강화하는 방향이라 앞 문장의 '변화' 메시지와 어울리지 않는다."
+    },
+    {
+      "id": "ne1-intro-r20",
+      "type": "blank-inference",
+      "subtype": "word",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          5
+        ]
+      },
+      "instruction": "다음 빈칸에 들어갈 말로 가장 적절한 것은?",
+      "passage": "\"To grow into a better version of ourselves, we should not stay as we are.\" That was the first thing our teacher said to us on the first day of school. She wanted us to start the semester by pushing ourselves out of our comfort zones and learning more about ourselves. To help us do so, she gave us an assignment to challenge ourselves in three different ways. The three challenges could ________________ hobbies, exercise, our studies, or even our relationships. The important part was trying something new for each one. She told us that we should share our experiences with our classmates when we finished the challenges.",
+      "blankTarget": "involve",
+      "choices": [
+        "replace",
+        "exclude",
+        "surpass",
+        "involve",
+        "represent"
+      ],
+      "answer": 4,
+      "explanation": "도전이 취미, 운동, 공부, 인간관계를 '포함할 수 있었다'이므로 involve(포함하다)가 적절. replace(대체), exclude(배제), surpass(초과), represent(대표)는 문맥에 맞지 않는다."
+    },
+    {
+      "id": "ne1-intro-r21",
+      "type": "implication",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          7
+        ]
+      },
+      "instruction": "밑줄 친 부분으로부터 추론할 수 있는 것으로 가장 적절한 것은?",
+      "passage": "\"To grow into a better version of ourselves, we should not stay as we are.\" That was the first thing our teacher said to us on the first day of school. She wanted us to start the semester by pushing ourselves out of our comfort zones and learning more about ourselves. To help us do so, she gave us an assignment to challenge ourselves in three different ways. The three challenges could involve hobbies, exercise, our studies, or even our relationships. The important part was trying something new for each one. <u>She told us that we should share our experiences with our classmates when we finished the challenges.</u>",
+      "choices": [
+        "The teacher planned to grade students based on how well they presented their results.",
+        "The sharing session was optional for students who did not complete all three challenges.",
+        "The teacher thought that the challenges would be too difficult to finish alone.",
+        "The teacher believed students could learn from each other's challenge experiences.",
+        "Students were expected to give advice to classmates who had failed their challenges."
+      ],
+      "answer": 4,
+      "explanation": "경험을 급우들과 공유하라고 한 것은, 서로의 경험에서 배움을 얻을 수 있다는 교육적 의도로 추론할 수 있다. ②는 성적 평가, ③은 선택적, ④는 혼자 완수 불가, ⑤는 실패한 급우에게 조언으로 본문에서 추론할 수 없다."
+    },
+    {
+      "_comment": "═══ GRAMMAR ═══"
+    },
+    {
+      "id": "ne1-intro-g01",
+      "type": "underline-grammar",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          1,
+          2,
+          3,
+          4,
+          6
+        ]
+      },
+      "instruction": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?",
+      "passage": "\"①<u>To grow</u> into a better version of ourselves, we should not stay as we are.\" That was the first thing our teacher ②<u>said</u> to us on the first day of school. She wanted us ③<u>starting</u> the semester by pushing ourselves out of our comfort zones. ④<u>To help</u> us do so, she gave us an assignment. The important part was ⑤<u>trying</u> something new for each one.",
+      "choices": [
+        "①",
+        "②",
+        "④",
+        "③",
+        "⑤"
+      ],
+      "answer": 4,
+      "explanation": "want + 목적어 + to-V 구문이므로 starting → to start. ① to부정사 부사적 용법(목적) ✓ ② said to us ✓ ④ to부정사 부사적 용법(목적) ✓ ⑤ 동명사 주격보어 ✓"
+    },
+    {
+      "id": "ne1-intro-g02",
+      "type": "underline-grammar",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          2,
+          3,
+          4,
+          6,
+          7
+        ]
+      },
+      "instruction": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?",
+      "passage": "That was the first thing ①<u>that</u> our teacher said to us. She wanted us to start the semester by ②<u>pushing</u> ourselves out of our comfort zones. To help us ③<u>do</u> so, she gave us an assignment to challenge ourselves. The important part was trying something ④<u>newly</u> for each one. She told us that we ⑤<u>should share</u> our experiences with our classmates.",
+      "choices": [
+        "④",
+        "①",
+        "②",
+        "③",
+        "⑤"
+      ],
+      "answer": 1,
+      "explanation": "something + 형용사(후치수식)이므로 newly(부사) → new(형용사). ① 관계대명사 that ✓ ② by + 동명사 ✓ ③ help + O + V원형 ✓ ⑤ should share ✓"
+    },
+    {
+      "id": "ne1-intro-g03",
+      "type": "underline-grammar",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          1,
+          3,
+          4,
+          5,
+          7
+        ]
+      },
+      "instruction": "다음 글의 밑줄 친 부분 중, 어법상 틀린 것은?",
+      "passage": "\"To grow into a better version of ourselves, we should not stay as ①<u>we are</u>.\" She wanted us to start the semester by pushing ourselves out of our comfort zones and ②<u>learning</u> more about ourselves. To help us do so, she gave us an assignment ③<u>to challenge</u> ourselves. The three challenges could ④<u>involve</u> hobbies, exercise, or even our relationships. She told us that we should share our experiences ⑤<u>when we will finish</u> the challenges.",
+      "choices": [
+        "⑤",
+        "①",
+        "②",
+        "③",
+        "④"
+      ],
+      "answer": 1,
+      "explanation": "시간 부사절(when)에서는 미래 시제 대신 현재 시제를 사용한다. will finish → finish(ed). 원문은 과거 시제 맥락이므로 finished. ① as we are ✓ ② 병렬구조(pushing and learning) ✓ ③ to부정사 형용사적 용법 ✓ ④ could + 동사원형 ✓"
+    },
+    {
+      "id": "ne1-intro-g04",
+      "type": "usage-distinction",
+      "subtype": "to-infinitive",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          1,
+          3,
+          4,
+          6
+        ]
+      },
+      "instruction": "다음 중 밑줄 친 to부정사의 용법이 나머지 넷과 다른 것은?",
+      "choices": [
+        "She gave us an assignment <u>to challenge</u> ourselves in three different ways.",
+        "<u>To grow</u> into a better version of ourselves, we should not stay as we are.",
+        "She wanted us <u>to start</u> the semester by pushing ourselves out of our comfort zones.",
+        "<u>To help</u> us do so, she gave us an assignment.",
+        "The important part was <u>to try</u> something new for each one."
+      ],
+      "answer": 1,
+      "explanation": "④는 형용사적 용법(assignment를 수식), ①③은 부사적 용법(목적), ②는 명사적 용법(목적격 보어), ⑤는 명사적 용법(보어). → ④만 형용사적 용법으로 다르다."
+    },
+    {
+      "id": "ne1-intro-g05",
+      "type": "usage-distinction",
+      "subtype": "that",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          2,
+          7
+        ]
+      },
+      "instruction": "다음 중 밑줄 친 that의 쓰임이 나머지 넷과 다른 것은?",
+      "choices": [
+        "She told us <u>that</u> we should share our experiences.",
+        "She knew <u>that</u> the assignment would help us grow.",
+        "I believe <u>that</u> trying new things is valuable.",
+        "We learned <u>that</u> comfort zones can limit personal growth.",
+        "<u>That</u> was the first thing our teacher said to us."
+      ],
+      "answer": 5,
+      "explanation": "④의 that은 지시대명사('그것'), 나머지 ①②③⑤는 모두 접속사 that(명사절을 이끄는)이다. ④만 대명사로 쓰임이 다르다."
+    },
+    {
+      "id": "ne1-intro-g06",
+      "type": "error-correction",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          1
+        ]
+      },
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 바르게 고치시오.",
+      "stem": "To grow into a better version of ourselves, we should not stay as we do.",
+      "answer": "do → are",
+      "explanation": "stay as we are = '우리가 현재 있는 그대로 머물다'. 상태를 나타내는 be동사가 적절하다. do는 동작을 나타내므로 부적절."
+    },
+    {
+      "id": "ne1-intro-g07",
+      "type": "error-correction",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          3
+        ]
+      },
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 바르게 고치시오.",
+      "stem": "She wanted us starting the semester by pushing ourselves out of our comfort zones.",
+      "answer": "starting → to start",
+      "explanation": "want + 목적어 + to-V (5형식). want는 동명사가 아닌 to부정사를 목적격 보어로 취한다."
+    },
+    {
+      "id": "ne1-intro-g08",
+      "type": "error-correction",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          4
+        ]
+      },
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 바르게 고치시오.",
+      "stem": "To help us to doing so, she gave us an assignment to challenge ourselves.",
+      "answer": "to doing → do (또는 to do)",
+      "explanation": "help + 목적어 + (to) 동사원형. help 뒤에는 원형부정사 또는 to부정사가 오며, doing(동명사)은 불가."
+    },
+    {
+      "id": "ne1-intro-g09",
+      "type": "error-correction",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          6
+        ]
+      },
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 바르게 고치시오.",
+      "stem": "The important part was trying anything new for each one.",
+      "answer": "anything → something",
+      "explanation": "긍정문에서는 something을 사용한다. anything은 부정문·의문문·조건문에서 쓴다."
+    },
+    {
+      "id": "ne1-intro-g10",
+      "type": "error-correction",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          7
+        ]
+      },
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 바르게 고치시오.",
+      "stem": "She told us that we should share our experiences to our classmates when we finished the challenges.",
+      "answer": "to → with",
+      "explanation": "share A with B = 'A를 B와 나누다'. share는 전치사 with와 함께 쓴다."
+    },
+    {
+      "id": "ne1-intro-g11",
+      "type": "error-correction",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          2
+        ]
+      },
+      "instruction": "다음 문장에서 어법상 틀린 부분을 찾아 바르게 고치시오.",
+      "stem": "That was the first thing what our teacher said to us on the first day of school.",
+      "answer": "what → that (또는 what 삭제)",
+      "explanation": "선행사 the first thing이 있으므로 관계대명사 that을 쓴다. what은 선행사를 포함하는 관계대명사이므로 선행사와 함께 쓸 수 없다."
+    },
+    {
+      "id": "ne1-intro-g12",
+      "type": "word-ordering",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          1
+        ]
+      },
+      "instruction": "주어진 단어를 올바른 순서로 배열하시오.",
+      "stem": "우리 자신의 더 나은 모습으로 성장하기 위해, 우리는 현재의 모습에 머물러서는 안 된다.",
+      "words": [
+        "a better version",
+        "we should not",
+        "To grow into",
+        "as we are",
+        "of ourselves",
+        "stay"
+      ],
+      "answer": "To grow into a better version of ourselves, we should not stay as we are.",
+      "explanation": "To grow into(~으로 성장하기 위해) + a better version of ourselves(우리 자신의 더 나은 모습) / we should not stay(머물러서는 안 된다) + as we are(현재 그대로)"
+    },
+    {
+      "id": "ne1-intro-g13",
+      "type": "word-ordering",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          3
+        ]
+      },
+      "instruction": "주어진 단어를 올바른 순서로 배열하여 문장을 완성하시오.",
+      "stem": "She wanted _________________________________ about ourselves.",
+      "words": [
+        "out of",
+        "by pushing",
+        "us to start",
+        "the semester",
+        "our comfort zones",
+        "ourselves"
+      ],
+      "answer": "us to start the semester by pushing ourselves out of our comfort zones",
+      "explanation": "want + O + to V: us to start / by + V-ing: by pushing / push oneself out of ~: ourselves out of our comfort zones"
+    },
+    {
+      "id": "ne1-intro-g14",
+      "type": "word-ordering",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          4
+        ]
+      },
+      "instruction": "주어진 단어를 올바른 순서로 배열하여 문장을 완성하시오.",
+      "stem": "_________________________ in three different ways.",
+      "words": [
+        "us do so",
+        "she gave us",
+        "to challenge",
+        "To help",
+        "ourselves",
+        "an assignment"
+      ],
+      "answer": "To help us do so, she gave us an assignment to challenge ourselves",
+      "explanation": "To help us do so(우리가 그렇게 하도록 돕기 위해) / she gave us an assignment(과제를 주었다) / to challenge ourselves(자신에게 도전하기 위한)"
+    },
+    {
+      "id": "ne1-intro-g15",
+      "type": "word-ordering",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          7
+        ]
+      },
+      "instruction": "주어진 단어를 올바른 순서로 배열하여 문장을 완성하시오.",
+      "stem": "She told us _________________________________ the challenges.",
+      "words": [
+        "when we finished",
+        "with our classmates",
+        "should share",
+        "that we",
+        "our experiences"
+      ],
+      "answer": "that we should share our experiences with our classmates when we finished",
+      "explanation": "tell + IO + that절: told us that we should share / share A with B: our experiences with our classmates / 시간 부사절: when we finished"
+    },
+    {
+      "id": "ne1-intro-g16",
+      "type": "blank-grammar",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          3
+        ]
+      },
+      "instruction": "다음 빈칸에 들어갈 말의 형태로 가장 적절한 것은?",
+      "stem": "She wanted us _______ (start) the semester by pushing ourselves out of our comfort zones.",
+      "choices": [
+        "start",
+        "to start",
+        "starting",
+        "started",
+        "to starting"
+      ],
+      "answer": 2,
+      "explanation": "want + 목적어 + to-V. want는 to부정사를 목적격 보어로 취한다."
+    },
+    {
+      "id": "ne1-intro-g17",
+      "type": "blank-grammar",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          4
+        ]
+      },
+      "instruction": "다음 빈칸에 들어갈 말의 형태로 가장 적절한 것은?",
+      "stem": "To help us _______ (do) so, she gave us an assignment.",
+      "choices": [
+        "doing",
+        "to doing",
+        "do",
+        "done",
+        "did"
+      ],
+      "answer": 3,
+      "explanation": "help + 목적어 + (to) 동사원형. help는 원형부정사를 허용하므로 do가 가장 적절하다. to do도 가능하지만, 원형이 더 자연스럽다."
+    },
+    {
+      "id": "ne1-intro-g18",
+      "type": "blank-grammar",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          6
+        ]
+      },
+      "instruction": "다음 빈칸에 들어갈 말의 형태로 가장 적절한 것은?",
+      "stem": "The important part was _______ (try) something new for each one.",
+      "choices": [
+        "to trying",
+        "tried",
+        "trying",
+        "having tried",
+        "try"
+      ],
+      "answer": 3,
+      "explanation": "보어 자리에 동명사(주격보어)가 와서 '시도하는 것이었다'의 의미. was trying = '~하는 것이었다'."
+    },
+    {
+      "id": "ne1-intro-g19",
+      "type": "blank-grammar",
+      "difficulty": 2,
+      "source": {
+        "sentences": [
+          3
+        ]
+      },
+      "instruction": "다음 빈칸에 들어갈 말의 형태로 가장 적절한 것은?",
+      "stem": "She wanted us to start the semester by _______ (push) ourselves out of our comfort zones.",
+      "choices": [
+        "push",
+        "pushed",
+        "being pushed",
+        "pushing",
+        "to push"
+      ],
+      "answer": 4,
+      "explanation": "by + V-ing: 전치사 by 뒤에는 동명사가 온다. '~함으로써'의 의미."
+    },
+    {
+      "id": "ne1-intro-g20",
+      "type": "blank-grammar",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          7
+        ]
+      },
+      "instruction": "다음 빈칸에 들어갈 말의 형태로 가장 적절한 것은?",
+      "stem": "She told us that we should share our experiences with our classmates when we _______ (finish) the challenges.",
+      "choices": [
+        "will finish",
+        "finished",
+        "finishing",
+        "would finish",
+        "have finished"
+      ],
+      "answer": 2,
+      "explanation": "시간 부사절(when)에서는 미래 시제를 쓰지 않는다. 주절이 과거(told)이므로 부사절도 과거시제 finished가 적절."
+    },
+    {
+      "id": "ne1-intro-g21",
+      "type": "usage-distinction",
+      "subtype": "as",
+      "difficulty": 3,
+      "source": {
+        "sentences": [
+          1
+        ]
+      },
+      "instruction": "다음 중 밑줄 친 as의 쓰임이 나머지 넷과 다른 것은?",
+      "choices": [
+        "We should not stay <u>as</u> we are.",
+        "Leave it <u>as</u> it is.",
+        "Do in Rome <u>as</u> the Romans do.",
+        "He remained silent <u>as</u> he was before.",
+        "<u>As</u> she was tired, she went to bed early."
+      ],
+      "answer": 5,
+      "explanation": "④는 이유의 접속사 as('~이므로'). 나머지 ①②③⑤는 모두 양태/상태의 접속사 as('~인 그대로, ~처럼')이다."
+    }
+  ]
+}

@@ -1,0 +1,456 @@
+/* ═══════════════════════════════════════════════════════════
+   능률(오) 고1 교과서 본문 해설 — Custom Styles
+   Based on: olympos-reading.css
+   Theme: sky-academic flavor (sky-blue + amber)
+   ═══════════════════════════════════════════════════════════ */
+
+/* ─── Base ─────────────────────────────────────────────── */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Noto Sans KR', sans-serif !important;
+  font-size: 10pt !important;
+  color: #1F2937 !important;
+  line-height: 1.6 !important;
+}
+
+.eng-text {
+  font-family: 'Inter', sans-serif !important;
+}
+
+code {
+  font-family: 'Inter', sans-serif !important;
+  background-color: #F0F9FF !important;
+  border: 1px solid #BAE6FD !important;
+  padding: 1px 5px !important;
+  border-radius: 4px !important;
+  font-size: 9pt !important;
+  font-weight: 500 !important;
+  color: #0369A1 !important;
+}
+
+/* ─── Page Layout ──────────────────────────────────────── */
+@page {
+  size: A4;
+  margin: 15mm 18mm !important;
+}
+
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  padding: 15mm 18mm !important;
+  position: relative;
+  page-break-after: always !important;
+  overflow: visible !important;
+}
+
+.page-header {
+  display: flex !important;
+  justify-content: space-between !important;
+  align-items: center !important;
+  padding-bottom: 8px !important;
+  margin-bottom: 16px !important;
+  border-bottom: 1px solid #E5E7EB !important;
+  font-size: 8pt !important;
+  color: #9CA3AF !important;
+}
+
+.page-content {
+  min-height: 250mm;
+}
+
+.page-footer {
+  height: 8mm;
+}
+
+/* ─── Cover Page ───────────────────────────────────────── */
+.page.cover-page {
+  background-color: #FFFFFF !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  text-align: center !important;
+  padding: 0 !important;
+}
+
+.page.cover-page .page-header,
+.page.cover-page .page-footer {
+  display: none !important;
+}
+
+.page.cover-page .page-content {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 297mm !important;
+}
+
+.cover-top-section {
+  margin-bottom: 40px;
+}
+
+.cover-brand {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 11pt !important;
+  font-weight: 700 !important;
+  color: #1F2937 !important;
+  letter-spacing: 2.5pt !important;
+  text-transform: uppercase !important;
+}
+
+.cover-center-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cover-accent-line {
+  width: 80mm !important;
+  height: 3px !important;
+  background-color: #1F2937 !important;
+  margin: 12px auto !important;
+}
+
+.cover-main-title {
+  font-family: 'Playfair Display', serif !important;
+  font-size: 36pt !important;
+  color: #1F2937 !important;
+  font-weight: 800 !important;
+  letter-spacing: -1pt !important;
+  margin: 8px 0 !important;
+}
+
+.cover-subtitle {
+  font-family: 'Noto Sans KR', sans-serif !important;
+  font-size: 18pt !important;
+  color: #1F2937 !important;
+  font-weight: 300 !important;
+  margin: 8px 0 !important;
+}
+
+.cover-chapter-info {
+  font-family: 'Noto Sans KR', sans-serif !important;
+  font-size: 12pt !important;
+  color: #6B7280 !important;
+  font-weight: 400 !important;
+  margin-top: 16px !important;
+}
+
+.cover-bottom-section {
+  margin-top: 60px;
+}
+
+.cover-edition {
+  font-size: 9pt !important;
+  color: #6B7280 !important;
+  font-weight: 300 !important;
+}
+
+/* ─── Chapter Header ───────────────────────────────────── */
+.chapter-header {
+  display: flex !important;
+  align-items: baseline !important;
+  gap: 10px !important;
+  margin-bottom: 20px !important;
+  padding-bottom: 10px !important;
+  border-bottom: 2px solid #0284C7 !important;
+}
+
+.chapter-number {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 14pt !important;
+  font-weight: 700 !important;
+  color: #0284C7 !important;
+}
+
+.chapter-header > span:last-child {
+  font-size: 14pt !important;
+  font-weight: 700 !important;
+  color: #1F2937 !important;
+}
+
+/* ─── Section Title ────────────────────────────────────── */
+.section-title {
+  font-size: 11pt !important;
+  font-weight: 700 !important;
+  color: #0369A1 !important;
+  margin: 20px 0 12px 0 !important;
+  padding-left: 10px !important;
+  border-left: 3px solid #0284C7 !important;
+}
+
+/* ─── Passage Body (본문 원문) ─────────────────────────── */
+.passage-body {
+  margin: 10px 0 !important;
+  padding: 10px 14px !important;
+  background-color: #F8FAFC !important;
+  border-left: 3px solid #BAE6FD !important;
+  border-radius: 0 4px 4px 0 !important;
+  line-height: 1.8 !important;
+}
+
+.passage-body p {
+  margin-bottom: 6px !important;
+  text-align: justify !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 10pt !important;
+}
+
+.passage-body sup {
+  color: #0284C7 !important;
+  font-weight: 700 !important;
+  font-size: 7pt !important;
+  margin-right: 1px !important;
+}
+
+/* ─── Explanation Card (해설) ──────────────────────────── */
+.explanation-card {
+  margin-bottom: 24px !important;
+  border: 1px solid #E5E7EB !important;
+  border-radius: 6px !important;
+  overflow: hidden !important;
+  page-break-inside: avoid !important;
+}
+
+.explanation-section {
+  padding: 10px 16px !important;
+}
+
+.explanation-label {
+  font-size: 9pt !important;
+  font-weight: 700 !important;
+  color: #FFFFFF !important;
+  display: inline-block !important;
+  padding: 2px 10px !important;
+  border-radius: 3px !important;
+  margin-bottom: 8px !important;
+  print-color-adjust: exact !important;
+  -webkit-print-color-adjust: exact !important;
+}
+
+/* Section colors */
+.summary-section {
+  background-color: #F0F9FF !important;
+  border-bottom: 1px solid #E5E7EB !important;
+}
+
+.summary-section .explanation-label {
+  background-color: #0284C7 !important;
+}
+
+.translation-section {
+  background-color: #FFFFFF !important;
+  border-bottom: 1px solid #E5E7EB !important;
+}
+
+.translation-section .explanation-label {
+  background-color: #0369A1 !important;
+}
+
+.translation-section p {
+  line-height: 1.8 !important;
+  margin-bottom: 4px !important;
+  text-align: justify !important;
+}
+
+.analysis-section {
+  background-color: #FEF3C7 !important;
+  border-bottom: 1px solid #E5E7EB !important;
+}
+
+.analysis-section .explanation-label {
+  background-color: #D97706 !important;
+}
+
+.analysis-section p {
+  line-height: 1.7 !important;
+}
+
+.vocab-section {
+  background-color: #F7F8FA !important;
+}
+
+.vocab-section .explanation-label {
+  background-color: #6B7280 !important;
+}
+
+/* New: 구문독해 section (sky-blue) */
+.syntax-section {
+  background-color: #F0F9FF !important;
+  border-bottom: 1px solid #E5E7EB !important;
+}
+
+.syntax-section .explanation-label {
+  background-color: #0284C7 !important;
+}
+
+/* New: 핵심 표현 section (amber) */
+.expression-section {
+  background-color: #FEF3C7 !important;
+  border-bottom: 1px solid #E5E7EB !important;
+}
+
+.expression-section .explanation-label {
+  background-color: #D97706 !important;
+}
+
+/* ─── Bilingual Translation (문장별 해석) ─────────────── */
+.bilingual-pair {
+  margin-bottom: 6px !important;
+  padding: 4px 10px !important;
+  border-left: 3px solid #0284C7 !important;
+  page-break-inside: avoid !important;
+}
+
+.bilingual-pair:nth-child(even) {
+  border-left-color: #BAE6FD !important;
+}
+
+.bilingual-en {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 9.5pt !important;
+  line-height: 1.6 !important;
+  color: #1F2937 !important;
+  margin-bottom: 2px !important;
+  text-align: justify !important;
+}
+
+.bilingual-en b {
+  color: #0369A1 !important;
+}
+
+.bilingual-ko {
+  font-family: 'Noto Sans KR', sans-serif !important;
+  font-size: 9pt !important;
+  line-height: 1.6 !important;
+  color: #4B5563 !important;
+  padding-left: 12px !important;
+  text-align: justify !important;
+}
+
+.bilingual-num {
+  display: inline-block !important;
+  min-width: 16px !important;
+  height: 16px !important;
+  line-height: 16px !important;
+  text-align: center !important;
+  background-color: #0284C7 !important;
+  color: #FFFFFF !important;
+  font-size: 7pt !important;
+  font-weight: 700 !important;
+  border-radius: 50% !important;
+  margin-right: 4px !important;
+  font-family: 'Inter', sans-serif !important;
+  print-color-adjust: exact !important;
+  -webkit-print-color-adjust: exact !important;
+}
+
+/* ─── Syntax Analysis (구문독해) ──────────────────────── */
+.syntax-card {
+  margin-bottom: 12px !important;
+  padding: 8px 12px !important;
+  background-color: #F0F9FF !important;
+  border-left: 3px solid #0284C7 !important;
+  border-radius: 0 4px 4px 0 !important;
+  page-break-inside: avoid !important;
+}
+
+.syntax-card-header {
+  margin-bottom: 6px !important;
+}
+
+.syntax-card-sentence {
+  font-family: 'Inter', sans-serif !important;
+  font-size: 9pt !important;
+  line-height: 1.5 !important;
+  color: #374151 !important;
+}
+
+.syntax-card-sentence u {
+  color: #0369A1 !important;
+  font-weight: 600 !important;
+  text-decoration-color: #FBBF24 !important;
+}
+
+.syntax-point {
+  margin-bottom: 3px !important;
+  padding-left: 4px !important;
+  font-size: 9pt !important;
+  line-height: 1.6 !important;
+}
+
+.syntax-tag {
+  display: inline-block !important;
+  padding: 0px 6px !important;
+  background-color: #0284C7 !important;
+  color: #FFFFFF !important;
+  font-size: 7pt !important;
+  font-weight: 600 !important;
+  border-radius: 3px !important;
+  margin-right: 4px !important;
+  vertical-align: middle !important;
+  print-color-adjust: exact !important;
+  -webkit-print-color-adjust: exact !important;
+}
+
+.syntax-tag.tag-amber {
+  background-color: #D97706 !important;
+}
+
+.syntax-tag.tag-green {
+  background-color: #0369A1 !important;
+}
+
+/* ─── Grammar Table ────────────────────────────────────── */
+.grammar-table {
+  width: 100% !important;
+  border-collapse: collapse !important;
+  margin: 4px 0 !important;
+  font-size: 9pt !important;
+}
+
+.grammar-table thead th {
+  background-color: #F0F9FF !important;
+  font-weight: 600 !important;
+  padding: 6px 10px !important;
+  border: 1px solid #D1D5DB !important;
+  text-align: left !important;
+  color: #0369A1 !important;
+  print-color-adjust: exact !important;
+  -webkit-print-color-adjust: exact !important;
+}
+
+.grammar-table tbody td {
+  padding: 5px 10px !important;
+  border: 1px solid #E5E7EB !important;
+}
+
+.grammar-table.compact-table {
+  font-size: 8.5pt !important;
+}
+
+.grammar-table.compact-table td,
+.grammar-table.compact-table th {
+  padding: 4px 8px !important;
+}
+
+.grammar-table tbody tr:nth-child(even) {
+  background-color: #F8FAFC !important;
+}
+
+/* ─── Print Overrides ──────────────────────────────────── */
+@media print {
+  body { background: white !important; }
+  .page {
+    page-break-after: always !important;
+  }
+  .explanation-card,
+  .syntax-card,
+  .bilingual-pair {
+    page-break-inside: avoid !important;
+  }
+}
