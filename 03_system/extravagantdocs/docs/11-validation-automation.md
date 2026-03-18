@@ -141,6 +141,7 @@ Calibration notes:
 - keep this heuristic in sync with actual answer-grid designs when a family-specific answer layout changes
 - when a TOC looks visually blank, inspect one rendered page image before assuming a renderer blank-page regression; wrapper-less semantic TOC fragments can fail at the parser layer while still passing broad PDF existence checks
 - when this audit runs immediately after paged PDF generation, `pdftotext` can briefly race the writer and emit transient trailer/xref/empty-stream errors; the script now retries those specific errors automatically instead of requiring a second manual run
+- when a blank page appears at a fixed-legacy -> flow-legacy boundary, inspect whether running-header marker nodes are emitted as sibling blocks before the flow section; that boundary can create a real blank interstitial page even if both neighboring content sections look valid in HTML
 
 ### 7. `audit-extravagantdocs-structure.js`
 

@@ -1122,6 +1122,9 @@ function renderUpgradedLegacyTocPage(page, book, html) {
   });
   flush();
 
+  const totalItems = sections.reduce((sum, section) => sum + section.items.length, 0);
+  const shouldBalance = sections.length >= 3 && totalItems >= 8;
+
   const sectionsHtml = sections.map((section) => {
     const itemsHtml = section.items.map((item) => `
         <li class="toc-item">
@@ -1142,7 +1145,7 @@ ${itemsHtml}
   return `
 ${renderPageShellStart(['page', 'page--fixed', 'toc-page', 'no-header-footer', 'toc-page--upgraded'])}
   <div class="page-content">
-    <div class="toc toc--upgraded-legacy">
+    <div class="toc toc--upgraded-legacy${shouldBalance ? ' toc--upgraded-legacy--balanced' : ''}">
       <h1 class="toc-title">${escapeHtml(title)}</h1>
 ${sectionsHtml}
     </div>
@@ -1171,11 +1174,11 @@ ${items}
 
   if (paged) {
     return `
-${createPagedRunningMarkers({ author: "Vera's Flavor", title: page.title || 'Contents' }, {
-  headerLeft: 'Grammar Bridge',
-  headerRight: page.title || 'Contents'
-})}
 <section class="xd-paged-section xd-paged-section--toc" data-section-id="${escapeHtml(page.id || 'toc')}">
+  ${createPagedRunningLead({ author: "Vera's Flavor", title: page.title || 'Contents' }, {
+    headerLeft: 'Grammar Bridge',
+    headerRight: page.title || 'Contents'
+  })}
 ${body}
 </section>`;
   }
@@ -1746,6 +1749,13 @@ function createPagedRunningMarkers(book, options = {}) {
 <div class="xd-paged-running-source xd-paged-running-source--right">${escapeHtml(headerRight)}</div>`;
 }
 
+function createPagedRunningLead(book, options = {}) {
+  return `
+  <div class="xd-paged-running-lead" aria-hidden="true">
+${createPagedRunningMarkers(book, options)}
+  </div>`;
+}
+
 function createPagedSection(sectionId, pageClass, book, blocks, options = {}) {
   const sectionClasses = ['xd-paged-section'];
   if (pageClass) {
@@ -1761,8 +1771,8 @@ function createPagedSection(sectionId, pageClass, book, blocks, options = {}) {
   const bodyHtml = blocks.map((block, index) => `<div class="flow-block" data-block-id="${escapeHtml(`${sectionId}-${index + 1}`)}">${block}</div>`).join('\n');
 
   return `
-${createPagedRunningMarkers(book, options)}
 <section class="${sectionClasses.join(' ')}" data-section-id="${escapeHtml(sectionId)}">
+  ${createPagedRunningLead(book, options)}
   ${titleHtml}
 ${bodyHtml}
 </section>`;
@@ -1820,11 +1830,11 @@ ${groups.map((group) => renderGrammarBridgeGroup(group, { isFaqPage })).join('\n
   }
 
   return `
-${createPagedRunningMarkers(book, {
-  headerLeft: book.shortTitle || book.brand || book.author,
-  headerRight: partLabel.main || book.title
-})}
 <section class="${sectionClasses.join(' ')}" data-section-id="${escapeHtml(page.id || '')}">
+  ${createPagedRunningLead(book, {
+    headerLeft: book.shortTitle || book.brand || book.author,
+    headerRight: partLabel.main || book.title
+  })}
 ${content}
 </section>`;
 }
@@ -1902,6 +1912,20 @@ function isFlowFriendlyLegacyPagedHtml(html) {
     || /\bexplanation-problem\b/.test(String(html || ''));
 }
 
+function shouldUseFlowForDenseLegacyPagedHtml(html) {
+  const source = String(html || '');
+  const grammarTableRows = (source.match(/<tr\b/gi) || []).length;
+  const exampleBlocks = (source.match(/\bexample-block\b/gi) || []).length;
+  const exampleItems = (source.match(/<li\b/gi) || []).length;
+  const paragraphCount = (source.match(/\bcontent-paragraph\b/gi) || []).length;
+
+  if (grammarTableRows >= 14) return true;
+  if (grammarTableRows >= 10 && exampleBlocks >= 3) return true;
+  if (exampleBlocks >= 6 && exampleItems >= 8) return true;
+  if (paragraphCount >= 8 && exampleBlocks >= 4) return true;
+  return false;
+}
+
 function renderLegacyPage(page, book, options = {}) {
   const absPath = path.join(CONTENT_DIR, page.source.path);
   let html = stripLegacyEmoji(sanitizeLegacyPalette(fs.readFileSync(absPath, 'utf8').trim()));
@@ -1936,13 +1960,13 @@ function renderLegacyPage(page, book, options = {}) {
   }
 
   if (mode === 'paged-native' && legacyPayload && legacyPayload.contentHtml) {
-    if (isFlowFriendlyLegacyPagedHtml(legacyPayload.contentHtml)) {
+    if (isFlowFriendlyLegacyPagedHtml(legacyPayload.contentHtml) || shouldUseFlowForDenseLegacyPagedHtml(legacyPayload.contentHtml)) {
       return `
-${createPagedRunningMarkers(book, {
-  headerLeft: page.meta && page.meta.headerLeft ? page.meta.headerLeft : (legacyPayload.headerLeft || book.author),
-  headerRight: page.meta && page.meta.headerRight ? page.meta.headerRight : (legacyPayload.headerRight || book.title)
-})}
 <section class="xd-paged-section xd-paged-section--legacy xd-paged-section--legacy-flow" data-section-id="${escapeHtml(page.id || '')}">
+  ${createPagedRunningLead(book, {
+    headerLeft: page.meta && page.meta.headerLeft ? page.meta.headerLeft : (legacyPayload.headerLeft || book.author),
+    headerRight: page.meta && page.meta.headerRight ? page.meta.headerRight : (legacyPayload.headerRight || book.title)
+  })}
 ${legacyPayload.contentHtml}
 </section>`;
     }
@@ -1954,11 +1978,11 @@ ${legacyPayload.contentHtml}
       });
     }
     return `
-${createPagedRunningMarkers(book, {
-  headerLeft: page.meta && page.meta.headerLeft ? page.meta.headerLeft : (legacyPayload.headerLeft || book.author),
-  headerRight: page.meta && page.meta.headerRight ? page.meta.headerRight : (legacyPayload.headerRight || book.title)
-})}
 <section class="xd-paged-section xd-paged-section--legacy" data-section-id="${escapeHtml(page.id || '')}">
+  ${createPagedRunningLead(book, {
+    headerLeft: page.meta && page.meta.headerLeft ? page.meta.headerLeft : (legacyPayload.headerLeft || book.author),
+    headerRight: page.meta && page.meta.headerRight ? page.meta.headerRight : (legacyPayload.headerRight || book.title)
+  })}
 ${legacyPayload.contentHtml}
 </section>`;
   }
@@ -1987,13 +2011,13 @@ ${legacyPayload.contentHtml}
   }
 
   if (mode === 'paged-native') {
-    if (isFlowFriendlyLegacyPagedHtml(html)) {
+    if (isFlowFriendlyLegacyPagedHtml(html) || shouldUseFlowForDenseLegacyPagedHtml(html)) {
       return `
-${createPagedRunningMarkers(book, {
-  headerLeft: page.meta && page.meta.headerLeft ? page.meta.headerLeft : book.author,
-  headerRight: page.meta && page.meta.headerRight ? page.meta.headerRight : book.title
-})}
 <section class="xd-paged-section xd-paged-section--legacy xd-paged-section--legacy-flow" data-section-id="${escapeHtml(page.id || '')}">
+  ${createPagedRunningLead(book, {
+    headerLeft: page.meta && page.meta.headerLeft ? page.meta.headerLeft : book.author,
+    headerRight: page.meta && page.meta.headerRight ? page.meta.headerRight : book.title
+  })}
 ${html}
 </section>`;
     }

@@ -1,5 +1,20 @@
 # extravagantdocs Changelog
 
+## 2026-03-18
+
+- Refined the shared `exam-paper` two-column compact drill rhythm:
+  - tightened `xd-problem-set-page--two-column` column and row gaps
+  - reduced compact problem shell gutter width and tightened compact problem spacing
+  - slightly downsized compact number badges for dense short-drill spreads
+  - this improves page utilization for short workbook books without adding a book-specific override
+  - revalidated on:
+    - `syntax-basic-xd`
+- Added balanced layout promotion for upgraded legacy TOCs:
+  - long semantic legacy TOCs can now auto-switch to a two-column upgraded layout during build
+  - this reduces lower-page dead space on continued contents pages without creating a book-specific TOC template
+  - revalidated on:
+    - `grammar-advanced-xd`
+
 ## 2026-03-15
 
 - Finished the next migration wave and brought the remaining textbook families onto non-destructive `-xd` manifests:
@@ -104,6 +119,35 @@
 - Hardened PDF anomaly automation against write-read races:
   - `audit-pdf-page-anomalies.js` now retries transient `pdftotext` trailer/xref/empty-stream failures that can happen when the audit runs immediately after PDF generation
   - recorded in validation automation docs so the retry behavior is part of the documented contract
+- Closed the next shared `exam-paper` component gap:
+  - `extravagantdocs.css` now imports a native `word-entry` component, so vocabulary books no longer render system markup with missing styling
+  - `exam-paper` now also styles recurring legacy study-note patterns such as `chapter-header`, `section-title`, `vocab-word`, `core-image`, `definition`, `example-list`, and `translation-list`
+  - revalidated on:
+    - `vocab-basic-xd`
+    - `logic-basic-xd`
+- Tuned the shared compact-question rhythm for reading-family books:
+  - `problem--compact` now tightens vertical spacing, stem size, and choice spacing in the shared `exam-paper` template
+  - this reduces wasted carry-over space on passage-cluster pages without adding a book-specific rule
+  - revalidated on:
+    - `reading-basic-xd`
+    - `reading-bridge-xd`
+    - `syntax-bridge-xd`
+- Added shared legacy explanation/study-note typography for `exam-paper` books:
+  - `content-paragraph`, `example-block`, and `example-label` now get system spacing and emphasis
+  - inline answer-analysis labels inside `explanation-content` now read as clearer subheads instead of plain inline text
+  - revalidated on:
+    - `grammar-basic-xd`
+    - `reading-intermediate-xd`
+    - `logic-basic-xd`
+- Fixed the next paged-native fixed-page drift:
+  - consecutive `xd-paged-fixed-legacy` sections no longer force a second `break-before`, which removes the blank interstitial page seen in `grammar-basic-xd`
+  - the guard is scoped to adjacent fixed-legacy sections so non-fixed to fixed transitions still start on a fresh page
+  - tightened fixed-legacy header/footer chrome to create a safer one-page budget for dense legacy content and reduce spill-page risk
+- Closed the remaining `grammar-basic-xd` paged blank-page edge case:
+  - dense bare legacy theory fragments can now route to paged flow sections even when the source has no `.page` wrapper
+  - paged running-header marker nodes for flow sections now live inside the section as a hidden lead instead of as sibling nodes before the section boundary
+  - this removes the fixed-legacy -> running-marker -> flow-section blank interstitial page that remained around the `CH 6` transition in `grammar-basic-xd`
+  - `grammar-basic-xd` now passes `audit-pdf-page-anomalies.js`
 
 ## 2026-03-10
 

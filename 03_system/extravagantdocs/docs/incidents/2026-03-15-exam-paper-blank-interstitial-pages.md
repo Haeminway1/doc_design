@@ -40,6 +40,21 @@ The final stable fix was:
 3. remove the oversized fixed height contract from paged fixed legacy artifacts
 4. treat `detailed-answer-section` legacy fragments as paged flow sections instead of fixed one-page artifacts
 
+One last subclass remained after those fixes:
+
+- `grammar-basic-xd` still had a blank page at the `CH 6` boundary between a fixed legacy page and the next dense theory page
+
+That final page was caused by a boundary artifact, not by the theory content itself:
+
+- the dense next page was correctly eligible for paged flow
+- but paged running-header marker nodes were still emitted as sibling blocks before the flow section
+- the sequence `fixed legacy -> running marker siblings -> flow legacy` was enough for paged.js to allocate a blank interstitial page
+
+The final edge-case fix was:
+
+5. allow dense bare legacy fragments to route through the paged flow heuristic even without a `.page` wrapper
+6. move running-header marker nodes for flow sections inside the section as a hidden lead, so the section boundary stays single-piece for paged layout
+
 Representative validation after the fix:
 
 - `grammar-basic-xd` -> pass
@@ -81,6 +96,7 @@ This script flags suspicious interior pages that contain only headers/footers or
 - run `audit-pdf-page-anomalies.js` on paged outputs during QA sweeps
 - if a legacy fragment has no `.page` wrapper, never let paged-native fall back to runtime `.page` markup
 - if a legacy fragment is semantically flow-friendly, prefer a paged section contract over a forced fixed-page artifact
+- if a paged flow section needs running-header metadata, keep the marker nodes inside the section instead of emitting them as siblings ahead of the section boundary
 - before broadening `exam-paper` rollout, verify representative legacy-heavy books such as `grammar-basic-xd` and `syntax-bridge-xd`
 - when the anomaly detector flags numeric-heavy pages, inspect at least one sample page image before treating it as a renderer regression
 - when a semantic TOC looks blank, verify whether the issue is parser coverage for wrapper-less fragments before changing paged layout CSS

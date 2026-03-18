@@ -34,6 +34,107 @@ body.style-template-exam-paper .xd-question__number {
   color: var(--xd-color-accent-strong) !important;
 }
 
+body.style-template-exam-paper .chapter-header {
+  margin: 0 0 4.2mm !important;
+  padding-bottom: 2.2mm !important;
+  border-bottom: var(--xd-rule-thin) solid var(--xd-color-line) !important;
+  color: var(--xd-color-accent-strong) !important;
+}
+
+body.style-template-exam-paper .chapter-header .chapter-number {
+  margin: 0 0 0.8mm !important;
+  font-family: var(--xd-font-latin) !important;
+  font-size: 8.4pt !important;
+  line-height: 1.2 !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.08em !important;
+  text-transform: uppercase !important;
+  color: var(--xd-color-muted) !important;
+}
+
+body.style-template-exam-paper .section-title {
+  margin: 0 0 3mm !important;
+  font-size: 13pt !important;
+  line-height: 1.32 !important;
+  font-weight: 700 !important;
+  color: var(--xd-color-accent-strong) !important;
+}
+
+body.style-template-exam-paper .vocab-word {
+  margin: 0 0 2mm !important;
+  font-family: var(--xd-font-latin) !important;
+  font-size: 11.2pt !important;
+  line-height: 1.35 !important;
+  font-weight: 700 !important;
+  color: var(--xd-color-accent-strong) !important;
+}
+
+body.style-template-exam-paper .core-image,
+body.style-template-exam-paper .definition {
+  margin: 0 0 2.2mm !important;
+  padding-left: 2.6mm !important;
+  border-left: var(--xd-rule-regular) solid var(--xd-color-accent) !important;
+  font-size: 8.9pt !important;
+  line-height: 1.62 !important;
+  color: var(--xd-color-ink) !important;
+}
+
+body.style-template-exam-paper .core-image strong,
+body.style-template-exam-paper .definition strong {
+  color: var(--xd-color-accent-strong) !important;
+}
+
+body.style-template-exam-paper .content-paragraph {
+  margin: 0 0 2.2mm !important;
+  font-size: 9.1pt !important;
+  line-height: 1.68 !important;
+  color: var(--xd-color-ink) !important;
+}
+
+body.style-template-exam-paper .example-block {
+  margin: 0 0 2.4mm !important;
+  padding: 2mm 2.6mm !important;
+  border-left: var(--xd-rule-regular) solid var(--xd-color-accent) !important;
+  background: #faf8f2 !important;
+  font-size: 8.9pt !important;
+  line-height: 1.64 !important;
+  color: var(--xd-color-ink) !important;
+}
+
+body.style-template-exam-paper .example-block:last-child,
+body.style-template-exam-paper .content-paragraph:last-child,
+body.style-template-exam-paper .example-list:last-child,
+body.style-template-exam-paper .translation-list:last-child {
+  margin-bottom: 0 !important;
+}
+
+body.style-template-exam-paper .example-label {
+  display: inline-block !important;
+  margin-right: 1.2mm !important;
+  font-size: 7.8pt !important;
+  line-height: 1.2 !important;
+  font-weight: 700 !important;
+  color: var(--xd-color-accent-strong) !important;
+}
+
+body.style-template-exam-paper .example-list,
+body.style-template-exam-paper .translation-list {
+  margin: 1.8mm 0 0 !important;
+  padding-left: 5.2mm !important;
+}
+
+body.style-template-exam-paper .example-list li,
+body.style-template-exam-paper .translation-list li {
+  margin-bottom: 1.6mm !important;
+  font-size: 8.7pt !important;
+  line-height: 1.65 !important;
+  color: var(--xd-color-ink) !important;
+}
+
+body.style-template-exam-paper .translation-list li {
+  color: var(--xd-color-ink-soft) !important;
+}
+
 body.style-template-exam-paper .problem {
   margin: 0 0 4.8mm !important;
   padding: 0 0 3.4mm !important;
@@ -135,6 +236,27 @@ body.style-template-exam-paper .problem-choices li:last-child {
   margin-bottom: 0 !important;
 }
 
+body.style-template-exam-paper .problem--compact {
+  margin-bottom: 3.6mm !important;
+  padding-bottom: 2.6mm !important;
+}
+
+body.style-template-exam-paper .problem--compact .problem-shell {
+  gap: 3.6mm !important;
+}
+
+body.style-template-exam-paper .problem--compact .problem-stem {
+  margin-bottom: 2mm !important;
+  font-size: 9.5pt !important;
+  line-height: 1.6 !important;
+}
+
+body.style-template-exam-paper .problem--compact .problem-choices li {
+  margin-bottom: 2.4mm !important;
+  font-size: 8.2pt !important;
+  line-height: 1.58 !important;
+}
+
 body.style-template-exam-paper .detailed-answer-section {
   margin: 0 !important;
   padding: 0 !important;
@@ -223,6 +345,8 @@ body.style-template-exam-paper .explanation-content {
 
 body.style-template-exam-paper .explanation-content strong,
 body.style-template-exam-paper .explanation-content b {
+  display: inline-block !important;
+  margin-right: 1mm !important;
   color: var(--xd-color-accent-strong) !important;
   font-weight: 700 !important;
 }
@@ -264,8 +388,8 @@ body.style-template-exam-paper .xd-vocab-intro__title {
 body.style-template-exam-paper .xd-problem-set-page--two-column {
   display: grid !important;
   grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
-  column-gap: 8mm !important;
-  row-gap: 1.6mm !important;
+  column-gap: 7mm !important;
+  row-gap: 0.8mm !important;
   align-content: start !important;
 }
 
@@ -277,4 +401,30 @@ body.style-template-exam-paper .xd-problem-set-page--two-column .flow-block,
 body.style-template-exam-paper .xd-problem-set-page--two-column .problem {
   break-inside: avoid !important;
   page-break-inside: avoid !important;
+}
+
+body.style-template-exam-paper .xd-problem-set-page--two-column .problem--compact {
+  margin-bottom: 2.4mm !important;
+  padding-bottom: 1.8mm !important;
+}
+
+body.style-template-exam-paper .xd-problem-set-page--two-column .problem--compact .problem-shell {
+  grid-template-columns: 9mm 1fr !important;
+  gap: 3mm !important;
+}
+
+body.style-template-exam-paper .xd-problem-set-page--two-column .problem--compact .problem-gutter {
+  padding-top: 0.4mm !important;
+}
+
+body.style-template-exam-paper .xd-problem-set-page--two-column .problem--compact .problem-stem {
+  margin-bottom: 1.4mm !important;
+  font-size: 9.1pt !important;
+  line-height: 1.5 !important;
+}
+
+body.style-template-exam-paper .xd-problem-set-page--two-column .problem--compact .problem-number {
+  min-width: 7.6mm !important;
+  height: 7.6mm !important;
+  font-size: 7.6pt !important;
 }
