@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>편입영어 문법 — Bridge Edition</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* ============================================================
+       Layer 0: Base — Reset, Page Layout, Print
+    ============================================================ */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      /* Color */
+      --bg: #FFFFFF;
+      --ink: #1F2937;
+      --muted: #667085;
+      --line: #E5E7EB;
+
+      /* 교재 팔레트 */
+      --accent-blue: #1E3A8A;
+      --accent-orange: #F59E0B;
+      --concept-bg: #F0F9FF;
+      --concept-border: #0EA5E9;
+      --example-bg: #F7FEE7;
+      --example-border: #22C55E;
+      --warning-bg: #FEF3C7;
+      --warning-border: #F59E0B;
+
+      /* sky-academic 템플릿 팔레트 */
+      --sky-primary: #0369A1;       /* sky-700 — 핵심 강조 */
+      --sky-mid: #0284C7;           /* sky-600 — 부제목, 배지 */
+      --sky-light: #E0F2FE;         /* sky-100 — 배경 블록 */
+      --sky-pale: #F0F9FF;          /* sky-50  — 연한 배경 */
+      --sky-dark: #0C4A6E;          /* sky-900 — 진한 텍스트 */
+      --sky-accent: #F59E0B;        /* amber-400 — 포인트 */
+      --sky-rule: #BAE6FD;          /* sky-200 — 구분선 */
+
+      /* Typography */
+      --f-sans: "Noto Sans KR", "Inter", system-ui, sans-serif;
+      --f-eng: "Inter", system-ui, sans-serif;
+      --f-display: "Playfair Display", serif;
+
+      /* Layout */
+      --page-margin: 14mm;
+    }
+
+    html, body {
+      background-color: #D1D5DB !important;
+      font-family: var(--f-sans);
+      color: var(--ink);
+    }
+
+    /* Print Setup */
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    /* break-inside: avoid on structural blocks */
+    .cover-brand-row,
+    .cover-edition-row,
+    .cover-center,
+    .cover-accent-block,
+    .cover-author-row,
+    .cover-corner-deco {
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    @media print {
+      html, body {
+        background-color: #FFFFFF !important;
+      }
+      .page {
+        margin: 0 !important;
+        box-shadow: none !important;
+      }
+    }
+
+    /* ============================================================
+       A4 Page Shell
+    ============================================================ */
+    .page {
+      width: 210mm;
+      height: 297mm;
+      background-color: #FFFFFF !important;
+      margin: 10mm auto;
+      position: relative;
+      overflow: hidden;
+      page-break-after: always;
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+    }
+
+    .page:last-child {
+      page-break-after: avoid;
+    }
+
+    /* ============================================================
+       Layer 2: sky-academic Template — Cover Page
+    ============================================================ */
+
+    /* Top accent bar */
+    .cover-top-bar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3mm;
+      background-color: var(--sky-primary) !important;
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+    }
+
+    /* Bottom accent bar */
+    .cover-bottom-bar {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 3mm;
+      background-color: var(--sky-primary) !important;
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+    }
+
+    /* Left sidebar stripe */
+    .cover-sidebar {
+      position: absolute;
+      top: 3mm;
+      bottom: 3mm;
+      left: 0;
+      width: 14mm;
+      background-color: var(--sky-light) !important;
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* Vertical brand text in sidebar */
+    .cover-sidebar-text {
+      font-family: var(--f-eng);
+      font-size: 7pt;
+      font-weight: 500;
+      color: var(--sky-primary) !important;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      transform: rotate(180deg);
+    }
+
+    /* Main content area (offset from sidebar) */
+    .cover-main {
+      position: absolute;
+      top: 3mm;
+      bottom: 3mm;
+      left: 14mm;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Brand row */
+    .cover-brand-row {
+      padding: 10mm 14mm 0 14mm;
+      display: flex;
+      align-items: center;
+      gap: 4mm;
+    }
+
+    .cover-brand-logo {
+      width: 8mm;
+      height: 8mm;
+      background-color: var(--sky-primary) !important;
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .cover-brand-logo-inner {
+      width: 4mm;
+      height: 4mm;
+      background-color: #FFFFFF !important;
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+    }
+
+    .cover-brand {
+      font-family: var(--f-eng);
+      font-size: 9pt;
+      font-weight: 600;
+      color: var(--sky-primary) !important;
+      letter-spacing: 0.08em;
+      text-transform: lowercase;
+    }
+
+    /* Edition badge */
+    .cover-edition-row {
+      padding: 5mm 14mm 0 14mm;
+    }
+
+    .cover-edition-badge {
+      display: inline-block;
+      background-color: var(--sky-light) !important;
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+      border-left: 2.5pt solid var(--sky-primary);
+      padding: 1.5mm 5mm 1.5mm 4mm;
+      font-family: var(--f-eng);
+      font-size: 8pt;
+      font-weight: 600;
+      color: var(--sky-dark) !important;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    /* Center content block */
+    .cover-center {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 14mm;
+    }
+
+    /* Horizontal rule above title */
+    .cover-rule {
+      height: 1pt;
+      background-color: var(--sky-rule) !important;
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+      margin-bottom: 10mm;
+    }
+
+    /* Subject label */
+    .cover-subject-label {
+      font-family: var(--f-eng);
+      font-size: 8pt;
+      font-weight: 500;
+      color: var(--sky-mid) !important;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      margin-bottom: 4mm;
+    }
+
+    /* Main title */
+    .cover-main-title {
+      font-family: var(--f-sans);
+      font-size: 34pt;
+      font-weight: 700;
+      color: var(--sky-dark) !important;
+      line-height: 1.15;
+      letter-spacing: -0.01em;
+      margin-bottom: 6mm;
+      page-break-after: avoid;
+      break-after: avoid;
+    }
+
+    /* Subtitle */
+    .cover-subtitle {
+      font-family: var(--f-sans);
+      font-size: 14pt;
+      font-weight: 400;
+      color: var(--sky-primary) !important;
+      line-height: 1.35;
+      margin-bottom: 10mm;
+    }
+
+    /* Horizontal rule below subtitle */
+    .cover-rule-bottom {
+      height: 1pt;
+      background-color: var(--sky-rule) !important;
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+    }
+
+    /* Decorative accent block */
+    .cover-accent-block {
+      margin-top: 10mm;
+      padding: 6mm 7mm;
+      background-color: var(--sky-pale) !important;
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+      border-top: 2pt solid var(--sky-primary);
+    }
+
+    .cover-accent-label {
+      font-family: var(--f-eng);
+      font-size: 7pt;
+      font-weight: 600;
+      color: var(--sky-mid) !important;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 2mm;
+    }
+
+    .cover-accent-text {
+      font-family: var(--f-sans);
+      font-size: 9pt;
+      font-weight: 400;
+      color: var(--sky-dark) !important;
+      line-height: 1.45;
+    }
+
+    /* Author section */
+    .cover-author-row {
+      padding: 0 14mm 10mm 14mm;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .cover-author {
+      display: flex;
+      flex-direction: column;
+      gap: 1mm;
+    }
+
+    .cover-author-label {
+      font-family: var(--f-eng);
+      font-size: 7pt;
+      font-weight: 400;
+      color: var(--muted) !important;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    .author-name {
+      font-family: var(--f-eng);
+      font-size: 11pt;
+      font-weight: 600;
+      color: var(--sky-dark) !important;
+      letter-spacing: 0.03em;
+    }
+
+    /* Corner decoration — solid geometric shapes (PDF-safe) */
+    .cover-corner-deco {
+      width: 18mm;
+      height: 18mm;
+      position: relative;
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end;
+    }
+
+    .corner-sq-large {
+      position: absolute;
+      width: 14mm;
+      height: 14mm;
+      background-color: var(--sky-light) !important;
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+      top: 0;
+      right: 0;
+    }
+
+    .corner-sq-small {
+      position: absolute;
+      width: 7mm;
+      height: 7mm;
+      background-color: var(--sky-primary) !important;
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+      bottom: 0;
+      left: 0;
+    }
+
+    /* eng-text utility */
+    .eng-text {
+      font-family: var(--f-eng);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Cover Page -->
+  <div class="page">
+
+    <!-- Top accent bar -->
+    <div class="cover-top-bar"></div>
+
+    <!-- Bottom accent bar -->
+    <div class="cover-bottom-bar"></div>
+
+    <!-- Left sidebar stripe -->
+    <div class="cover-sidebar">
+      <span class="cover-sidebar-text">Grammar · Bridge · Chapter 2</span>
+    </div>
+
+    <!-- Main content -->
+    <div class="cover-main">
+
+      <!-- Brand row -->
+      <div class="cover-brand-row">
+        <div class="cover-brand-logo">
+          <div class="cover-brand-logo-inner"></div>
+        </div>
+        <span class="cover-brand eng-text">vera's flavor</span>
+      </div>
+
+      <!-- Edition badge -->
+      <div class="cover-edition-row">
+        <span class="cover-edition-badge eng-text">Bridge Edition</span>
+      </div>
+
+      <!-- Center: title block -->
+      <div class="cover-center">
+        <div class="cover-rule"></div>
+        <p class="cover-subject-label eng-text">Grammar Series</p>
+        <h1 class="cover-main-title">편입영어 문법</h1>
+        <p class="cover-subtitle">Chapter 2: 가정법</p>
+        <div class="cover-rule-bottom"></div>
+
+        <!-- Info accent block -->
+        <div class="cover-accent-block">
+          <p class="cover-accent-label eng-text">About this chapter</p>
+          <p class="cover-accent-text">가정법 과거 · 가정법 과거완료 · 혼합 가정법 · 도치 구문을 체계적으로 정리한 편입 집중 교재입니다.</p>
+        </div>
+      </div>
+
+      <!-- Author row -->
+      <div class="cover-author-row">
+        <div class="cover-author">
+          <span class="cover-author-label eng-text">Author</span>
+          <span class="author-name eng-text">Vera Park</span>
+        </div>
+        <div class="cover-corner-deco">
+          <div class="corner-sq-large"></div>
+          <div class="corner-sq-small"></div>
+        </div>
+      </div>
+
+    </div><!-- /.cover-main -->
+
+  </div><!-- /.page -->
+
+</body>
+</html>

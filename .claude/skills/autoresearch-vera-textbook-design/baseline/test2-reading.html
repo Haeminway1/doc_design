@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2024 한양대 편입 독해 — AI 윤리</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* =============================================
+       Layer 0: Base / Reset / Page Layout
+    ============================================= */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #FFFFFF;
+      --ink: #1F2937;
+      --muted: #667085;
+      --line: #E5E7EB;
+
+      --accent-blue: #1E3A8A;
+      --accent-orange: #F59E0B;
+      --concept-bg: #F0F9FF;
+      --concept-border: #0EA5E9;
+      --example-bg: #F7FEE7;
+      --example-border: #22C55E;
+      --warning-bg: #FEF3C7;
+      --warning-border: #F59E0B;
+
+      --f-sans: "Inter", "Noto Sans KR", system-ui, sans-serif;
+      --fs-body: 9pt;
+      --lh-body: 1.35;
+      --fs-small: 8pt;
+      --fs-tiny: 7pt;
+
+      --page-margin: 13mm;
+      --column-gap: 6mm;
+      --para-gap: 4pt;
+
+      --highlight-key: #1E3A8A;
+      --highlight-bg: #FEF3C7;
+      --highlight-bg-text: #92400E;
+      --highlight-eng: #0EA5E9;
+    }
+
+    html, body {
+      background: #D0D0D0;
+      font-family: var(--f-sans);
+      font-size: var(--fs-body);
+      line-height: var(--lh-body);
+      color: var(--ink);
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    /* =============================================
+       Page
+    ============================================= */
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      max-height: 297mm;
+      overflow: hidden;
+      background: #FFFFFF !important;
+      margin: 10mm auto;
+      padding: var(--page-margin);
+      display: flex;
+      flex-direction: column;
+      page-break-after: always;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .page:last-child {
+      page-break-after: avoid;
+    }
+
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1.5pt solid #1E3A8A !important;
+      padding-bottom: 3pt;
+      margin-bottom: 8pt;
+    }
+
+    .page-header .chapter {
+      font-size: 8pt;
+      font-weight: 700;
+      color: #1E3A8A !important;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    .page-header .page-number {
+      font-size: 8pt;
+      color: #667085;
+      font-weight: 400;
+    }
+
+    .page-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 8pt;
+    }
+
+    .page-footer {
+      margin-top: 6pt;
+      padding-top: 3pt;
+      border-top: 0.5pt solid #E5E7EB !important;
+      font-size: 7pt;
+      color: #9CA3AF;
+      text-align: center;
+      letter-spacing: 0.04em;
+    }
+
+    /* =============================================
+       Section Title
+    ============================================= */
+    .section-title {
+      font-size: 11pt;
+      font-weight: 700;
+      color: #1E3A8A !important;
+      letter-spacing: -0.01em;
+      margin-bottom: 6pt;
+      page-break-after: avoid;
+      break-after: avoid;
+    }
+
+    .section-title span.tag {
+      display: inline-block;
+      background: #1E3A8A !important;
+      color: #FFFFFF !important;
+      font-size: 7pt;
+      font-weight: 600;
+      padding: 1pt 5pt;
+      margin-right: 5pt;
+      vertical-align: middle;
+      letter-spacing: 0.04em;
+    }
+
+    /* =============================================
+       Passage Component
+    ============================================= */
+    .passage {
+      border: 1pt solid #1E3A8A !important;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .passage-header {
+      background: #1E3A8A !important;
+      color: #FFFFFF !important;
+      padding: 4pt 8pt;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .passage-number {
+      font-size: 8pt;
+      font-weight: 700;
+      color: #FFFFFF !important;
+      letter-spacing: 0.05em;
+    }
+
+    .passage-source {
+      font-size: 7.5pt;
+      color: #BFD3F7 !important;
+      font-weight: 400;
+    }
+
+    .passage-text {
+      padding: 7pt 8pt 5pt;
+    }
+
+    .passage-text p {
+      font-size: 9pt;
+      line-height: 1.45;
+      color: #1F2937 !important;
+      text-align: justify;
+      margin-bottom: 5pt;
+    }
+
+    .passage-text p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* =============================================
+       Vocab Section
+    ============================================= */
+    .vocab-section {
+      border-top: 0.5pt solid #E5E7EB !important;
+      padding: 5pt 8pt 6pt;
+      background: #F8FAFF !important;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .vocab-label {
+      font-size: 7pt;
+      font-weight: 700;
+      color: #1E3A8A !important;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 4pt;
+    }
+
+    .vocab-list {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 3pt 6pt;
+    }
+
+    .vocab-item {
+      font-size: 7.5pt;
+      color: #1F2937 !important;
+      line-height: 1.3;
+    }
+
+    .vocab-item strong {
+      display: block;
+      font-weight: 600;
+      color: #1E3A8A !important;
+      font-size: 8pt;
+    }
+
+    .vocab-item em {
+      font-style: normal;
+      color: #667085 !important;
+      font-size: 7pt;
+    }
+
+    /* =============================================
+       Problem Component
+    ============================================= */
+    .problem {
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .problem + .problem {
+      margin-top: 7pt;
+    }
+
+    .problem-header {
+      display: flex;
+      align-items: center;
+      gap: 5pt;
+      margin-bottom: 4pt;
+    }
+
+    .problem-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 16pt;
+      height: 16pt;
+      background: #1E3A8A !important;
+      color: #FFFFFF !important;
+      font-size: 8pt;
+      font-weight: 700;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .problem-type {
+      font-size: 7.5pt;
+      font-weight: 600;
+      color: #667085 !important;
+      border: 0.5pt solid #D1D5DB !important;
+      padding: 1pt 5pt;
+    }
+
+    .problem-difficulty {
+      font-size: 7.5pt;
+      color: #F59E0B !important;
+      margin-left: auto;
+    }
+
+    .problem-text {
+      margin-bottom: 5pt;
+    }
+
+    .problem-text p {
+      font-size: 9pt;
+      line-height: 1.38;
+      color: #1F2937 !important;
+      margin-bottom: 3pt;
+    }
+
+    .problem-text .question-stem {
+      font-weight: 400;
+      color: #1F2937 !important;
+    }
+
+    .problem-choices {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.5pt 10pt;
+      padding-left: 4pt;
+    }
+
+    .problem-choices li {
+      font-size: 8.5pt;
+      line-height: 1.3;
+      color: #1F2937 !important;
+      padding: 1.5pt 0;
+    }
+
+    /* =============================================
+       Answer Grid
+    ============================================= */
+    .answer-grid {
+      border: 0.5pt solid #E5E7EB !important;
+      page-break-inside: avoid;
+      break-inside: avoid;
+      margin-top: 6pt;
+    }
+
+    .answer-grid-header {
+      background: #F3F4F6 !important;
+      color: #4B5563 !important;
+      font-size: 7.5pt;
+      font-weight: 700;
+      padding: 3pt 8pt;
+      letter-spacing: 0.04em;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .answer-grid-body {
+      padding: 4pt 8pt;
+      display: flex;
+      gap: 14pt;
+    }
+
+    .answer-item {
+      font-size: 8.5pt;
+      color: #1F2937 !important;
+    }
+
+    .answer-item strong {
+      color: #1E3A8A !important;
+      font-weight: 700;
+      margin-right: 3pt;
+    }
+
+    /* =============================================
+       Highlight Utilities
+    ============================================= */
+    .highlight-key {
+      color: #1E3A8A !important;
+      font-weight: 600;
+    }
+
+    .highlight-bg {
+      background: #FEF3C7 !important;
+      color: #92400E !important;
+      padding: 0 2pt;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .highlight-eng {
+      color: #0EA5E9 !important;
+    }
+
+    /* =============================================
+       Typography Utilities
+    ============================================= */
+    .eng-text {
+      font-family: "Inter", system-ui, sans-serif;
+    }
+
+    /* =============================================
+       Print Media
+    ============================================= */
+    @media print {
+      html, body {
+        background: #FFFFFF;
+        margin: 0;
+        padding: 0;
+      }
+
+      .page {
+        margin: 0;
+        box-shadow: none;
+      }
+
+      * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <span class="chapter">Reading Comprehension &nbsp;|&nbsp; AI Ethics</span>
+    <span class="page-number">1</span>
+  </div>
+
+  <div class="page-content">
+
+    <!-- Section Title -->
+    <div class="section-title">
+      <span class="tag">PASSAGE</span>독해 지문 &amp; 핵심 어휘
+    </div>
+
+    <!-- Passage -->
+    <div class="passage" style="page-break-inside: avoid; break-inside: avoid;">
+      <div class="passage-header">
+        <span class="passage-number eng-text">Passage 1</span>
+        <span class="passage-source">2024 한양대학교 편입학시험</span>
+      </div>
+      <div class="passage-text eng-text">
+        <p>
+          The rapid advancement of artificial intelligence has forced societies to confront a fundamental tension: the pursuit of efficiency and the preservation of human dignity. As AI systems increasingly influence decisions in hiring, lending, and criminal justice, critics argue that these technologies risk embedding existing social biases into automated processes, effectively laundering discrimination through the veneer of objectivity.
+        </p>
+        <p>
+          Proponents of algorithmic governance contend that machine-driven decisions eliminate the arbitrary prejudices of individual human judgment. Yet research has consistently demonstrated that training data drawn from historically unequal societies will <span class="highlight-key">perpetuate</span> those inequalities rather than correct them. When a hiring algorithm is trained on decades of employment records reflecting systemic exclusion, the model does not simply mirror the past — it <span class="highlight-bg">codifies</span> it as a blueprint for the future.
+        </p>
+        <p>
+          This challenge has prompted a growing movement among ethicists and regulators demanding <span class="highlight-eng">algorithmic accountability</span> — the principle that automated systems must be auditable, contestable, and subject to meaningful human oversight. The debate ultimately reveals a deeper question: whether the design of AI systems is a technical problem to be optimized, or a moral one that demands ongoing deliberation about the values a society chooses to encode in its tools.
+        </p>
+      </div>
+
+      <!-- Vocab Section -->
+      <div class="vocab-section">
+        <div class="vocab-label">Key Vocabulary</div>
+        <div class="vocab-list">
+          <div class="vocab-item">
+            <strong class="eng-text">embed</strong>
+            <em>[ɪmbéd] v.</em>
+            <span>깊이 심다, 내포시키다</span>
+          </div>
+          <div class="vocab-item">
+            <strong class="eng-text">perpetuate</strong>
+            <em>[pərpétʃuèit] v.</em>
+            <span>영속시키다, 지속시키다</span>
+          </div>
+          <div class="vocab-item">
+            <strong class="eng-text">codify</strong>
+            <em>[kɑ́dəfài] v.</em>
+            <span>성문화하다, 체계화하다</span>
+          </div>
+          <div class="vocab-item">
+            <strong class="eng-text">contestable</strong>
+            <em>[kəntéstəbl] adj.</em>
+            <span>이의를 제기할 수 있는</span>
+          </div>
+          <div class="vocab-item">
+            <strong class="eng-text">deliberation</strong>
+            <em>[dɪlìbəréiʃən] n.</em>
+            <span>숙의, 신중한 심의</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Problems Section Title -->
+    <div class="section-title" style="margin-top: 4pt;">
+      <span class="tag">QUESTIONS</span>독해 문제
+    </div>
+
+    <!-- Problem 1 -->
+    <div class="problem">
+      <div class="problem-header">
+        <span class="problem-number eng-text">01</span>
+        <span class="problem-type">주제/요지 파악</span>
+        <span class="problem-difficulty">★★★☆</span>
+      </div>
+      <div class="problem-text">
+        <p class="question-stem">위 지문의 주제로 가장 적절한 것은?</p>
+      </div>
+      <ul class="problem-choices eng-text">
+        <li>① The superior accuracy of AI over human judgment in hiring decisions</li>
+        <li>② The risk that AI systems reinforce social inequalities encoded in training data</li>
+        <li>③ The technical limitations of machine learning in processing large datasets</li>
+        <li>④ The economic benefits of replacing human workers with automated systems</li>
+      </ul>
+    </div>
+
+    <!-- Problem 2 -->
+    <div class="problem">
+      <div class="problem-header">
+        <span class="problem-number eng-text">02</span>
+        <span class="problem-type">빈칸 추론</span>
+        <span class="problem-difficulty">★★★★</span>
+      </div>
+      <div class="problem-text">
+        <p class="question-stem">지문의 흐름상 빈칸에 들어갈 표현으로 가장 적절한 것은?</p>
+        <p class="eng-text" style="margin-top: 3pt; padding: 4pt 8pt; border-left: 2pt solid #1E3A8A !important; background: #F8FAFF !important; font-size: 8.5pt; line-height: 1.4; -webkit-print-color-adjust: exact; print-color-adjust: exact;">
+          The demand for algorithmic accountability ultimately reflects a conviction that AI design is not merely a technical problem but a _______ one, requiring society to consciously choose which values its tools will encode.
+        </p>
+      </div>
+      <ul class="problem-choices eng-text">
+        <li>① financial</li>
+        <li>② moral</li>
+        <li>③ logistical</li>
+        <li>④ statistical</li>
+      </ul>
+    </div>
+
+    <!-- Answer Grid -->
+    <div class="answer-grid">
+      <div class="answer-grid-header">정 답</div>
+      <div class="answer-grid-body">
+        <span class="answer-item"><strong>1</strong> ②</span>
+        <span class="answer-item"><strong>2</strong> ②</span>
+      </div>
+    </div>
+
+  </div><!-- /.page-content -->
+
+  <div class="page-footer">vera's flavor &nbsp;|&nbsp; 2024 한양대 편입영어 독해 &nbsp;|&nbsp; AI Ethics</div>
+
+</div><!-- /.page -->
+
+</body>
+</html>

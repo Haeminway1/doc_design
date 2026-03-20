@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 15 — 경제/금융 어휘</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ================================================
+       Layer 0: Base — Reset, Page Layout, Print
+    ================================================ */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      /* Color */
+      --bg: #FFFFFF;
+      --ink: #1F2937;
+      --muted: #667085;
+      --line: #E5E7EB;
+
+      /* 교재 팔레트 */
+      --accent-blue: #1E3A8A;
+      --accent-orange: #F59E0B;
+      --concept-bg: #F0F9FF;
+      --concept-border: #0EA5E9;
+      --example-bg: #F7FEE7;
+      --example-border: #22C55E;
+      --warning-bg: #FEF3C7;
+      --warning-border: #F59E0B;
+
+      /* Typography */
+      --f-sans: "Inter", "Noto Sans KR", system-ui, sans-serif;
+      --fs-body: 9pt;
+      --lh-body: 1.35;
+      --fs-small: 8pt;
+      --fs-tiny: 7pt;
+
+      /* Layout */
+      --page-margin: 13mm;
+      --column-gap: 6mm;
+      --para-gap: 4pt;
+
+      /* Highlight */
+      --highlight-key: #1E3A8A;
+      --highlight-bg: #FEF3C7;
+      --highlight-bg-text: #92400E;
+      --highlight-eng: #0EA5E9;
+    }
+
+    html, body {
+      font-family: var(--f-sans);
+      font-size: var(--fs-body);
+      line-height: var(--lh-body);
+      color: var(--ink);
+      background: #D0D0D0;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    /* ================================================
+       Layer 0: Page Layout
+    ================================================ */
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      background: var(--bg) !important;
+      margin: 8mm auto;
+      padding: var(--page-margin);
+      position: relative;
+      page-break-after: always;
+      break-after: page;
+    }
+
+    .page:last-child {
+      page-break-after: avoid;
+      break-after: avoid;
+    }
+
+    @media print {
+      html, body {
+        background: transparent;
+        margin: 0;
+        padding: 0;
+      }
+      .page {
+        margin: 0;
+        padding: var(--page-margin);
+      }
+    }
+
+    /* ================================================
+       Layer 1: Page Header & Footer
+    ================================================ */
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid var(--accent-blue) !important;
+      padding-bottom: 4pt;
+      margin-bottom: 10pt;
+    }
+
+    .page-header .chapter-label {
+      font-size: var(--fs-small);
+      color: var(--muted);
+      font-weight: 400;
+      letter-spacing: 0.02em;
+    }
+
+    .page-header .page-number {
+      font-size: var(--fs-small);
+      color: var(--muted);
+      font-weight: 400;
+    }
+
+    .page-footer {
+      position: absolute;
+      bottom: 10mm;
+      left: var(--page-margin);
+      right: var(--page-margin);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid var(--line) !important;
+      padding-top: 3pt;
+      font-size: var(--fs-tiny);
+      color: var(--muted);
+    }
+
+    /* ================================================
+       Layer 1: Day Title
+    ================================================ */
+    .day-title {
+      margin-bottom: 10pt;
+      page-break-after: avoid;
+      break-after: avoid;
+    }
+
+    .day-title .day-badge {
+      display: inline-block;
+      background: var(--accent-blue) !important;
+      color: #FFFFFF !important;
+      font-size: 7.5pt;
+      font-weight: 700;
+      padding: 2pt 7pt;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 4pt;
+    }
+
+    .day-title h1 {
+      font-size: 16pt;
+      font-weight: 700;
+      color: var(--accent-blue) !important;
+      line-height: 1.2;
+      page-break-after: avoid;
+      break-after: avoid;
+    }
+
+    .day-title .subtitle {
+      font-size: var(--fs-small);
+      color: var(--muted);
+      margin-top: 2pt;
+    }
+
+    /* ================================================
+       Layer 1: Word Grid (2-column)
+    ================================================ */
+    .word-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--column-gap);
+      margin-top: 8pt;
+    }
+
+    /* ================================================
+       Layer 1: Word Entry Component
+    ================================================ */
+    .word-entry {
+      border: 1px solid var(--line) !important;
+      border-left: 3px solid var(--accent-blue) !important;
+      background: var(--bg) !important;
+      padding: 7pt 8pt;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .word-header {
+      display: flex;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 4pt;
+      margin-bottom: 4pt;
+      border-bottom: 1px solid var(--line) !important;
+      padding-bottom: 4pt;
+    }
+
+    .word-number {
+      font-size: var(--fs-tiny);
+      font-weight: 700;
+      color: var(--accent-blue) !important;
+      background: #EFF6FF !important;
+      padding: 1pt 4pt;
+      min-width: 18pt;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    .word-title {
+      font-size: 11pt;
+      font-weight: 700;
+      color: var(--ink) !important;
+      letter-spacing: 0.01em;
+      font-family: "Inter", sans-serif;
+    }
+
+    .word-phonetic {
+      font-size: 7.5pt;
+      color: var(--muted) !important;
+      font-style: normal;
+      font-family: "Inter", sans-serif;
+    }
+
+    .word-pos {
+      font-size: var(--fs-tiny);
+      font-weight: 600;
+      color: #FFFFFF !important;
+      background: #4B5563 !important;
+      padding: 1pt 4pt;
+      flex-shrink: 0;
+    }
+
+    .word-body {
+      display: flex;
+      flex-direction: column;
+      gap: 3pt;
+    }
+
+    .word-meaning {
+      font-size: 9pt;
+      font-weight: 600;
+      color: var(--ink) !important;
+      line-height: 1.3;
+    }
+
+    .word-example {
+      font-size: var(--fs-small);
+      color: var(--muted) !important;
+      line-height: 1.4;
+      font-family: "Inter", sans-serif;
+      padding-left: 6pt;
+      border-left: 2px solid var(--example-border) !important;
+      background: var(--example-bg) !important;
+      padding: 2pt 5pt;
+    }
+
+    .word-synonyms {
+      font-size: var(--fs-tiny);
+      color: var(--accent-blue) !important;
+      font-family: "Inter", sans-serif;
+      font-style: italic;
+    }
+
+    /* ================================================
+       Layer 1: Highlight Utilities
+    ================================================ */
+    .highlight-key {
+      color: var(--highlight-key) !important;
+      font-weight: 600;
+    }
+
+    .highlight-bg {
+      background: var(--highlight-bg) !important;
+      color: var(--highlight-bg-text) !important;
+      padding: 0 2pt;
+    }
+
+    .highlight-eng {
+      color: var(--highlight-eng) !important;
+    }
+
+    /* ================================================
+       Layer 1: Key Box (하단 요약)
+    ================================================ */
+    .component-box {
+      page-break-inside: avoid;
+      break-inside: avoid;
+      margin-top: 10pt;
+    }
+
+    .key-box {
+      border: 1px solid var(--accent-orange) !important;
+      background: var(--warning-bg) !important;
+    }
+
+    .key-box .box-header {
+      background: var(--accent-orange) !important;
+      padding: 3pt 8pt;
+      display: flex;
+      align-items: center;
+      gap: 5pt;
+    }
+
+    .key-box .box-header .title {
+      font-size: var(--fs-small);
+      font-weight: 700;
+      color: #FFFFFF !important;
+      letter-spacing: 0.02em;
+    }
+
+    .key-box .box-content {
+      padding: 6pt 8pt;
+      font-size: var(--fs-small);
+      line-height: 1.5;
+      color: var(--ink) !important;
+    }
+
+    .key-box .box-content p {
+      margin-bottom: 2pt;
+    }
+
+    /* ================================================
+       Print Media Query
+    ================================================ */
+    @media print {
+      .page {
+        page-break-after: always;
+        break-after: page;
+      }
+      .page:last-child {
+        page-break-after: avoid;
+        break-after: avoid;
+      }
+      .word-entry {
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+      .component-box {
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <span class="chapter-label">Vera's Flavor — 편입영어 보카</span>
+    <span class="page-number">29</span>
+  </div>
+
+  <!-- Day Title -->
+  <div class="day-title">
+    <div class="day-badge">Day 15</div>
+    <h1>경제 / 금융 어휘</h1>
+    <p class="subtitle">Economics &amp; Finance Vocabulary · 핵심 10선</p>
+  </div>
+
+  <!-- Word Grid: 2 columns, 10 entries -->
+  <div class="word-grid">
+
+    <!-- 01 -->
+    <div class="word-entry" data-word="austerity">
+      <div class="word-header">
+        <span class="word-number">01</span>
+        <span class="word-title">austerity</span>
+        <span class="word-phonetic">[ɔːstérəti]</span>
+        <span class="word-pos">n.</span>
+      </div>
+      <div class="word-body">
+        <p class="word-meaning">긴축 (재정), 검소함</p>
+        <p class="word-example">The government imposed austerity measures to reduce the deficit.</p>
+        <p class="word-synonyms">= frugality, stringency, belt-tightening</p>
+      </div>
+    </div>
+
+    <!-- 02 -->
+    <div class="word-entry" data-word="liquidity">
+      <div class="word-header">
+        <span class="word-number">02</span>
+        <span class="word-title">liquidity</span>
+        <span class="word-phonetic">[likwídəti]</span>
+        <span class="word-pos">n.</span>
+      </div>
+      <div class="word-body">
+        <p class="word-meaning">유동성, 현금화 가능성</p>
+        <p class="word-example">Banks must maintain adequate liquidity to meet customer withdrawals.</p>
+        <p class="word-synonyms">= fluidity, solvency, cash availability</p>
+      </div>
+    </div>
+
+    <!-- 03 -->
+    <div class="word-entry" data-word="deflation">
+      <div class="word-header">
+        <span class="word-number">03</span>
+        <span class="word-title">deflation</span>
+        <span class="word-phonetic">[difléiʃən]</span>
+        <span class="word-pos">n.</span>
+      </div>
+      <div class="word-body">
+        <p class="word-meaning">디플레이션, 물가 하락</p>
+        <p class="word-example">Prolonged deflation can lead to a sharp decline in consumer spending.</p>
+
+        <p class="word-synonyms">= price decline, contraction ↔ inflation</p>
+      </div>
+    </div>
+
+    <!-- 04 -->
+    <div class="word-entry" data-word="collateral">
+      <div class="word-header">
+        <span class="word-number">04</span>
+        <span class="word-title">collateral</span>
+        <span class="word-phonetic">[kəlǽtərəl]</span>
+        <span class="word-pos">n. / adj.</span>
+      </div>
+      <div class="word-body">
+        <p class="word-meaning">담보 (물); 부수적인</p>
+        <p class="word-example">The bank required property as <span class="highlight-key">collateral</span> for the loan.</p>
+        <p class="word-synonyms">= security, pledge, guarantee</p>
+      </div>
+    </div>
+
+    <!-- 05 -->
+    <div class="word-entry" data-word="recession">
+      <div class="word-header">
+        <span class="word-number">05</span>
+        <span class="word-title">recession</span>
+        <span class="word-phonetic">[riséʃən]</span>
+        <span class="word-pos">n.</span>
+      </div>
+      <div class="word-body">
+        <p class="word-meaning">경기 침체, 불황</p>
+        <p class="word-example">The economy slipped into a recession after two consecutive quarters of negative growth.</p>
+        <p class="word-synonyms">= downturn, slump, contraction</p>
+      </div>
+    </div>
+
+    <!-- 06 -->
+    <div class="word-entry" data-word="arbitrage">
+      <div class="word-header">
+        <span class="word-number">06</span>
+        <span class="word-title">arbitrage</span>
+        <span class="word-phonetic">[άːrbitrɑːʒ]</span>
+        <span class="word-pos">n.</span>
+      </div>
+      <div class="word-body">
+        <p class="word-meaning">차익 거래, 재정 거래</p>
+        <p class="word-example">Traders exploit price differences through <span class="highlight-key">arbitrage</span> across international markets.</p>
+        <p class="word-synonyms">= price differential trading, spread trading</p>
+      </div>
+    </div>
+
+    <!-- 07 -->
+    <div class="word-entry" data-word="depreciation">
+      <div class="word-header">
+        <span class="word-number">07</span>
+        <span class="word-title">depreciation</span>
+        <span class="word-phonetic">[dipriːʃiéiʃən]</span>
+        <span class="word-pos">n.</span>
+      </div>
+      <div class="word-body">
+        <p class="word-meaning">감가상각; (화폐) 가치 하락</p>
+        <p class="word-example">Annual depreciation of the equipment was recorded as a non-cash expense.</p>
+        <p class="word-synonyms">= devaluation, amortization, write-down</p>
+      </div>
+    </div>
+
+    <!-- 08 -->
+    <div class="word-entry" data-word="fiscal">
+      <div class="word-header">
+        <span class="word-number">08</span>
+        <span class="word-title">fiscal</span>
+        <span class="word-phonetic">[fískəl]</span>
+        <span class="word-pos">adj.</span>
+      </div>
+      <div class="word-body">
+        <p class="word-meaning">재정의, 국고의</p>
+        <p class="word-example">The new <span class="highlight-key">fiscal</span> policy aimed to stimulate growth through tax cuts.</p>
+        <p class="word-synonyms">= financial, budgetary, governmental</p>
+      </div>
+    </div>
+
+    <!-- 09 -->
+    <div class="word-entry" data-word="dividend">
+      <div class="word-header">
+        <span class="word-number">09</span>
+        <span class="word-title">dividend</span>
+        <span class="word-phonetic">[dívidènd]</span>
+        <span class="word-pos">n.</span>
+      </div>
+      <div class="word-body">
+        <p class="word-meaning">배당금; 이익, 보상</p>
+        <p class="word-example">Shareholders received a quarterly <span class="highlight-key">dividend</span> of $2.50 per share.</p>
+        <p class="word-synonyms">= distribution, payout, return</p>
+      </div>
+    </div>
+
+    <!-- 10 -->
+    <div class="word-entry" data-word="leverage">
+      <div class="word-header">
+        <span class="word-number">10</span>
+        <span class="word-title">leverage</span>
+        <span class="word-phonetic">[lévrɪdʒ]</span>
+        <span class="word-pos">n. / v.</span>
+      </div>
+      <div class="word-body">
+        <p class="word-meaning">레버리지, 부채 활용; 활용하다</p>
+        <p class="word-example">The firm used financial <span class="highlight-key">leverage</span> to amplify its return on equity.</p>
+        <p class="word-synonyms">= borrowing power, gearing, influence</p>
+      </div>
+    </div>
+
+  </div>
+  <!-- /word-grid -->
+
+  <!-- Key Box: 핵심 암기 포인트 -->
+  <div class="component-box key-box">
+    <div class="box-header">
+      <span class="title">Key Point — 혼동 주의</span>
+    </div>
+    <div class="box-content">
+      <p><span class="highlight-key">deflation</span> (물가 하락) vs. <span class="highlight-key">depreciation</span> (자산·화폐 가치 하락) — 둘 다 '하락'이지만 대상이 다르다.</p>
+      <p><span class="highlight-key">fiscal</span> (재정의, 정부 예산) vs. <span class="highlight-eng">monetary</span> (통화의, 중앙은행) — 경제 정책 문제에서 자주 구분 출제됨.</p>
+    </div>
+  </div>
+
+  <!-- Page Footer -->
+  <div class="page-footer">
+    <span>vera's flavor</span>
+    <span>Day 15 · 경제/금융 어휘</span>
+    <span>무단 복제 금지</span>
+  </div>
+
+</div>
+<!-- /page -->
+
+</body>
+</html>

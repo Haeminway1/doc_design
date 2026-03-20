@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>편입영어 문법 — Chapter 2: 가정법 | Vera's Flavor Bridge Edition</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;900&family=Noto+Sans+KR:wght@300;400;500;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    /* ============================================================
+       BASE RESET & PAGE LAYOUT
+       Cover: "Gilded Noir" palette
+       --base: #0B0B0F  (near-black, full-bleed background)
+       --accent: #D4AF37 (classic gold)
+       --mid: #3B3A40   (dark graphite)
+       --text: #F5F0E6  (warm cream)
+    ============================================================ */
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      width: 210mm;
+      background-color: #0B0B0F !important;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+
+    .page {
+      width: 210mm;
+      height: 297mm;
+      position: relative;
+      overflow: hidden;
+      page-break-after: always;
+      break-after: page;
+      background-color: #0B0B0F !important;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+
+    .page:last-child {
+      page-break-after: avoid;
+      break-after: avoid;
+    }
+
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    @media print {
+      html, body {
+        width: 210mm;
+        height: 297mm;
+      }
+      .page {
+        page-break-after: always;
+        break-after: page;
+      }
+    }
+
+    /* ============================================================
+       COVER PAGE — GILDED NOIR
+    ============================================================ */
+
+    .cover-page {
+      background-color: #0B0B0F !important;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 16mm 15mm 14mm 15mm;
+      position: relative;
+    }
+
+    /* Top brand bar */
+    .cover-top {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .cover-brand {
+      font-family: "Inter", system-ui, sans-serif;
+      font-size: 8.5pt;
+      font-weight: 400;
+      letter-spacing: 0.22em;
+      color: #D4AF37 !important;
+      text-transform: lowercase;
+      font-style: normal !important;
+    }
+
+    .cover-top-rule {
+      flex: 1;
+      height: 1px;
+      background-color: #3B3A40 !important;
+      margin: 0 10mm;
+    }
+
+    .cover-edition-badge {
+      font-family: "Inter", system-ui, sans-serif;
+      font-size: 7.5pt;
+      font-weight: 500;
+      letter-spacing: 0.18em;
+      color: #3B3A40 !important;
+      text-transform: uppercase;
+      font-style: normal !important;
+      border: 1px solid #3B3A40;
+      padding: 3px 8px;
+      border-radius: 4px;
+    }
+
+    /* Center content block */
+    .cover-content {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      gap: 0;
+    }
+
+    /* Gold horizontal rule above edition */
+    .cover-gold-rule-top {
+      width: 40mm;
+      height: 1px;
+      background-color: #D4AF37 !important;
+      margin-bottom: 12mm;
+    }
+
+    .cover-edition-label {
+      font-family: "Inter", system-ui, sans-serif;
+      font-size: 9pt;
+      font-weight: 400;
+      letter-spacing: 0.3em;
+      color: #D4AF37 !important;
+      text-transform: uppercase;
+      font-style: normal !important;
+      margin-bottom: 10mm;
+    }
+
+    .cover-main-title {
+      font-family: "Playfair Display", "Cormorant Garamond", serif;
+      font-size: 44pt;
+      font-weight: 700;
+      line-height: 1.1;
+      color: #F5F0E6 !important;
+      letter-spacing: -0.01em;
+      margin-bottom: 7mm;
+      font-style: normal !important;
+      page-break-after: avoid;
+      break-after: avoid;
+    }
+
+    /* Gold ornament between title and subtitle */
+    .cover-ornament {
+      display: flex;
+      align-items: center;
+      gap: 4mm;
+      margin-bottom: 7mm;
+    }
+
+    .cover-ornament-line {
+      width: 18mm;
+      height: 1px;
+      background-color: #D4AF37 !important;
+    }
+
+    .cover-ornament-diamond {
+      width: 5px;
+      height: 5px;
+      background-color: #D4AF37 !important;
+      transform: rotate(45deg);
+      flex-shrink: 0;
+    }
+
+    .cover-subtitle {
+      font-family: "Playfair Display", "Cormorant Garamond", serif;
+      font-size: 16pt;
+      font-weight: 400;
+      line-height: 1.3;
+      color: #F5F0E6 !important;
+      letter-spacing: 0.02em;
+      font-style: normal !important;
+    }
+
+    /* Gold rule below subtitle */
+    .cover-gold-rule-bottom {
+      width: 40mm;
+      height: 1px;
+      background-color: #D4AF37 !important;
+      margin-top: 12mm;
+    }
+
+    /* Decorative mid-panel: graphite band */
+    .cover-band {
+      width: 100%;
+      background-color: #3B3A40 !important;
+      padding: 5mm 15mm;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+    }
+
+    .cover-band-text {
+      font-family: "Inter", system-ui, sans-serif;
+      font-size: 8pt;
+      font-weight: 400;
+      letter-spacing: 0.25em;
+      color: #F5F0E6 !important;
+      text-transform: uppercase;
+      font-style: normal !important;
+    }
+
+    /* Author block */
+    .cover-author-block {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3mm;
+    }
+
+    .cover-author-label {
+      font-family: "Inter", system-ui, sans-serif;
+      font-size: 7.5pt;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      color: #3B3A40 !important;
+      text-transform: uppercase;
+      font-style: normal !important;
+    }
+
+    .cover-author-name {
+      font-family: "Playfair Display", "Cormorant Garamond", serif;
+      font-size: 13pt;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      color: #D4AF37 !important;
+      font-style: normal !important;
+    }
+
+    /* Bottom publisher line */
+    .cover-bottom {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-top: 1px solid #3B3A40;
+      padding-top: 5mm;
+    }
+
+    .cover-publisher {
+      font-family: "Inter", system-ui, sans-serif;
+      font-size: 7pt;
+      font-weight: 400;
+      letter-spacing: 0.15em;
+      color: #3B3A40 !important;
+      text-transform: uppercase;
+      font-style: normal !important;
+    }
+
+    .cover-copyright {
+      font-family: "Inter", system-ui, sans-serif;
+      font-size: 7pt;
+      font-weight: 400;
+      letter-spacing: 0.05em;
+      color: #3B3A40 !important;
+      font-style: normal !important;
+    }
+
+    /* Corner accent marks — pure decorative geometry */
+    .corner-mark {
+      position: absolute;
+      width: 12mm;
+      height: 12mm;
+    }
+
+    .corner-mark--tl {
+      top: 10mm;
+      left: 10mm;
+      border-top: 1px solid #D4AF37;
+      border-left: 1px solid #D4AF37;
+    }
+
+    .corner-mark--tr {
+      top: 10mm;
+      right: 10mm;
+      border-top: 1px solid #D4AF37;
+      border-right: 1px solid #D4AF37;
+    }
+
+    .corner-mark--bl {
+      bottom: 10mm;
+      left: 10mm;
+      border-bottom: 1px solid #D4AF37;
+      border-left: 1px solid #D4AF37;
+    }
+
+    .corner-mark--br {
+      bottom: 10mm;
+      right: 10mm;
+      border-bottom: 1px solid #D4AF37;
+      border-right: 1px solid #D4AF37;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="page cover-page">
+
+    <!-- Corner accent marks -->
+    <div class="corner-mark corner-mark--tl"></div>
+    <div class="corner-mark corner-mark--tr"></div>
+    <div class="corner-mark corner-mark--bl"></div>
+    <div class="corner-mark corner-mark--br"></div>
+
+    <!-- Top row: brand | rule | edition badge -->
+    <div class="cover-top">
+      <span class="cover-brand">vera's flavor</span>
+      <div class="cover-top-rule"></div>
+      <span class="cover-edition-badge">Bridge Edition</span>
+    </div>
+
+    <!-- Center: title block -->
+    <div class="cover-content">
+      <div class="cover-gold-rule-top"></div>
+      <p class="cover-edition-label">Bridge Edition</p>
+      <h1 class="cover-main-title">편입영어 문법</h1>
+      <div class="cover-ornament">
+        <div class="cover-ornament-line"></div>
+        <div class="cover-ornament-diamond"></div>
+        <div class="cover-ornament-line"></div>
+      </div>
+      <p class="cover-subtitle">Chapter 2: 가정법</p>
+      <div class="cover-gold-rule-bottom"></div>
+    </div>
+
+    <!-- Graphite band -->
+    <div class="cover-band">
+      <span class="cover-band-text">Subjunctive Mood &nbsp;&bull;&nbsp; Conditional Sentences &nbsp;&bull;&nbsp; Inversion</span>
+    </div>
+
+    <!-- Author -->
+    <div class="cover-author-block">
+      <span class="cover-author-label">Author</span>
+      <span class="cover-author-name">Vera Park</span>
+    </div>
+
+    <!-- Bottom publisher row -->
+    <div class="cover-bottom">
+      <span class="cover-publisher">Vera's Flavor</span>
+      <span class="cover-copyright">© Vera's Flavor. All rights reserved.</span>
+    </div>
+
+  </div>
+
+</body>
+</html>

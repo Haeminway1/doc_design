@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>논리 Basic Step 1 — 논리 연결어 파악</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   Layer 0: Base — Reset, Page Layout, Print
+   ============================================================ */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: #FFFFFF;
+  --ink: #1F2937;
+  --muted: #667085;
+  --line: #E5E7EB;
+
+  --accent-blue: #1E3A8A;
+  --accent-orange: #F59E0B;
+  --concept-bg: #F0F9FF;
+  --concept-border: #0EA5E9;
+  --example-bg: #F7FEE7;
+  --example-border: #22C55E;
+  --warning-bg: #FEF3C7;
+  --warning-border: #F59E0B;
+
+  --f-sans: "Noto Sans KR", "Inter", system-ui, sans-serif;
+  --fs-body: 9pt;
+  --lh-body: 1.35;
+  --fs-small: 8pt;
+  --fs-tiny: 7pt;
+
+  --page-margin: 12mm;
+  --column-gap: 6mm;
+  --para-gap: 4pt;
+
+  --highlight-key: #1E3A8A;
+  --highlight-bg: #FEF3C7;
+  --highlight-bg-text: #92400E;
+  --highlight-eng: #0EA5E9;
+}
+
+body {
+  font-family: var(--f-sans);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--ink);
+  background: #E8E8E8;
+  print-color-adjust: exact !important;
+  -webkit-print-color-adjust: exact !important;
+}
+
+/* ============================================================
+   Page Structure
+   ============================================================ */
+.page {
+  width: 210mm;
+  min-height: 297mm;
+  margin: 8mm auto;
+  padding: var(--page-margin);
+  background: #FFFFFF !important;
+  page-break-after: always;
+  break-after: page;
+  position: relative;
+  overflow: hidden;
+}
+
+.page:last-child {
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid var(--accent-blue) !important;
+  padding-bottom: 3pt;
+  margin-bottom: 8pt;
+}
+
+.page-header .chapter {
+  font-size: 8pt;
+  font-weight: 600;
+  color: var(--accent-blue) !important;
+  letter-spacing: 0.3pt;
+  text-transform: uppercase;
+}
+
+.page-header .page-number {
+  font-size: 8pt;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.page-footer {
+  position: absolute;
+  bottom: 10mm;
+  left: var(--page-margin);
+  right: var(--page-margin);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--fs-tiny);
+  color: var(--muted);
+  border-top: 1px solid var(--line) !important;
+  padding-top: 3pt;
+}
+
+.page-content {
+  padding-bottom: 16mm;
+}
+
+/* ============================================================
+   Layer 1: Typography
+   ============================================================ */
+h1 {
+  font-size: 18pt;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--accent-blue) !important;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h2 {
+  font-size: 13pt;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--accent-blue) !important;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+h3 {
+  font-size: 11pt;
+  font-weight: 600;
+  line-height: 1.25;
+  color: var(--ink);
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+p {
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--ink);
+}
+
+.eng-text {
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+/* ============================================================
+   Highlight Rules
+   ============================================================ */
+.highlight-key {
+  color: var(--highlight-key) !important;
+  font-weight: 600;
+}
+
+.highlight-bg {
+  background: var(--highlight-bg) !important;
+  color: var(--highlight-bg-text) !important;
+  padding: 0 2pt;
+}
+
+.highlight-eng {
+  color: var(--highlight-eng) !important;
+  font-weight: 500;
+}
+
+/* ============================================================
+   Step Section
+   ============================================================ */
+.step-section {
+  page-break-inside: avoid;
+  break-inside: avoid;
+  margin-bottom: 10pt;
+}
+
+.step-section-header {
+  display: flex;
+  align-items: center;
+  gap: 6pt;
+  margin-bottom: 6pt;
+}
+
+.step-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20pt;
+  height: 20pt;
+  background: var(--accent-blue) !important;
+  color: #FFFFFF !important;
+  font-size: 8pt;
+  font-weight: 700;
+  flex-shrink: 0;
+}
+
+.step-title {
+  font-size: 11pt;
+  font-weight: 700;
+  color: var(--accent-blue) !important;
+  letter-spacing: 0.2pt;
+}
+
+.step-desc {
+  font-size: var(--fs-small);
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.step-body {
+  padding-left: 26pt;
+}
+
+/* ============================================================
+   Pattern Box
+   ============================================================ */
+.pattern-box {
+  page-break-inside: avoid;
+  break-inside: avoid;
+  border: 1.5px solid var(--line) !important;
+  margin-bottom: 8pt;
+}
+
+.pattern-box-header {
+  display: flex;
+  align-items: center;
+  gap: 5pt;
+  padding: 5pt 8pt;
+  border-bottom: 1px solid var(--line) !important;
+}
+
+.pattern-box-header .pattern-type {
+  font-size: var(--fs-small);
+  font-weight: 700;
+  color: #FFFFFF !important;
+  padding: 1pt 5pt;
+  letter-spacing: 0.3pt;
+}
+
+.pattern-box-header .pattern-desc {
+  font-size: var(--fs-small);
+  color: var(--muted);
+}
+
+.pattern-box-body {
+  padding: 6pt 8pt;
+}
+
+/* Pattern type colors — solid only */
+.pattern-box--causal .pattern-box-header {
+  background: #EFF6FF !important;
+}
+.pattern-box--causal .pattern-type {
+  background: #1E3A8A !important;
+}
+
+.pattern-box--contrast .pattern-box-header {
+  background: #FFF7ED !important;
+}
+.pattern-box--contrast .pattern-type {
+  background: #C2410C !important;
+}
+
+.pattern-box--addition .pattern-box-header {
+  background: #F0FDF4 !important;
+}
+.pattern-box--addition .pattern-type {
+  background: #15803D !important;
+}
+
+/* Connector list inside pattern-box */
+.connector-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4pt 10pt;
+  margin-bottom: 4pt;
+}
+
+.connector-item {
+  font-size: var(--fs-small);
+  line-height: 1.4;
+}
+
+.connector-item .conn-eng {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  color: var(--accent-blue) !important;
+}
+
+.connector-item .conn-kr {
+  color: var(--muted);
+  font-size: var(--fs-tiny);
+}
+
+.pattern-example {
+  margin-top: 5pt;
+  padding: 4pt 7pt;
+  background: #F8FAFC !important;
+  border-left: 2.5px solid var(--line) !important;
+}
+
+.pattern-example p {
+  font-size: var(--fs-small);
+  line-height: 1.4;
+  color: var(--ink);
+}
+
+.pattern-example .example-label {
+  font-size: var(--fs-tiny);
+  font-weight: 700;
+  color: var(--muted);
+  letter-spacing: 0.3pt;
+  margin-bottom: 2pt;
+  text-transform: uppercase;
+}
+
+/* ============================================================
+   Component Boxes (concept, key, warning, rule)
+   ============================================================ */
+.component-box {
+  page-break-inside: avoid;
+  break-inside: avoid;
+  margin-bottom: 8pt;
+}
+
+.box-header {
+  display: flex;
+  align-items: center;
+  gap: 4pt;
+  padding: 4pt 7pt;
+  font-size: var(--fs-small);
+  font-weight: 700;
+}
+
+.box-header .icon {
+  font-size: 9pt;
+}
+
+.box-header .title {
+  font-size: var(--fs-small);
+  font-weight: 700;
+  letter-spacing: 0.2pt;
+}
+
+.box-content {
+  padding: 5pt 7pt;
+  font-size: var(--fs-small);
+  line-height: 1.4;
+}
+
+.concept-box {
+  border: 1px solid var(--concept-border) !important;
+}
+.concept-box .box-header {
+  background: var(--concept-bg) !important;
+  color: #0369A1 !important;
+  border-bottom: 1px solid var(--concept-border) !important;
+}
+
+.key-box {
+  border: 1px solid #F59E0B !important;
+}
+.key-box .box-header {
+  background: #FFFBEB !important;
+  color: #B45309 !important;
+  border-bottom: 1px solid #F59E0B !important;
+}
+
+.rule-box {
+  border: 1px solid #6366F1 !important;
+}
+.rule-box .box-header {
+  background: #EEF2FF !important;
+  color: #4338CA !important;
+  border-bottom: 1px solid #6366F1 !important;
+}
+
+/* ============================================================
+   Problem Block
+   ============================================================ */
+.problem {
+  page-break-inside: avoid;
+  break-inside: avoid;
+  border: 1px solid var(--line) !important;
+  margin-bottom: 8pt;
+}
+
+.problem-header {
+  display: flex;
+  align-items: center;
+  gap: 5pt;
+  padding: 4pt 8pt;
+  background: #F8F9FA !important;
+  border-bottom: 1px solid var(--line) !important;
+}
+
+.problem-number {
+  font-size: 9pt;
+  font-weight: 700;
+  color: var(--accent-blue) !important;
+}
+
+.problem-type {
+  font-size: var(--fs-tiny);
+  font-weight: 600;
+  color: var(--muted);
+  padding: 1pt 4pt;
+  border: 1px solid var(--line) !important;
+  letter-spacing: 0.2pt;
+}
+
+.problem-instruction {
+  font-size: var(--fs-small);
+  color: var(--muted);
+  font-weight: 400;
+}
+
+.problem-text {
+  padding: 6pt 8pt;
+}
+
+.problem-text p {
+  font-size: var(--fs-small);
+  line-height: 1.5;
+  margin-bottom: 4pt;
+}
+
+.problem-text p:last-child {
+  margin-bottom: 0;
+}
+
+.blank {
+  display: inline-block;
+  border-bottom: 1.5px solid var(--ink) !important;
+  min-width: 36pt;
+  text-align: center;
+}
+
+.problem-choices {
+  list-style: none;
+  padding: 0 8pt 6pt 8pt;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2pt 10pt;
+}
+
+.problem-choices li {
+  font-size: var(--fs-small);
+  font-family: "Inter", sans-serif;
+  line-height: 1.4;
+  padding: 1pt 0;
+}
+
+/* ============================================================
+   Section Title
+   ============================================================ */
+.section-title {
+  font-size: 13pt;
+  font-weight: 700;
+  color: var(--accent-blue) !important;
+  border-bottom: 2px solid var(--accent-blue) !important;
+  padding-bottom: 3pt;
+  margin-bottom: 8pt;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+/* ============================================================
+   Day Title / Chapter Header
+   ============================================================ */
+.chapter-header {
+  margin-bottom: 12pt;
+  page-break-after: avoid;
+  break-after: avoid;
+}
+
+.chapter-tag {
+  display: inline-block;
+  font-size: var(--fs-tiny);
+  font-weight: 700;
+  color: #FFFFFF !important;
+  background: var(--accent-blue) !important;
+  padding: 2pt 7pt;
+  letter-spacing: 0.5pt;
+  text-transform: uppercase;
+  margin-bottom: 5pt;
+}
+
+.chapter-title {
+  font-size: 18pt;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.2;
+  margin-bottom: 2pt;
+}
+
+.chapter-subtitle {
+  font-size: 10pt;
+  font-weight: 400;
+  color: var(--muted);
+}
+
+/* ============================================================
+   Divider
+   ============================================================ */
+.divider {
+  border: none;
+  border-top: 1px solid var(--line) !important;
+  margin: 8pt 0;
+}
+
+/* ============================================================
+   Two-column layout
+   ============================================================ */
+.col-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--column-gap);
+}
+
+/* ============================================================
+   Print rules
+   ============================================================ */
+@media print {
+  body {
+    background: #FFFFFF;
+  }
+  .page {
+    margin: 0;
+    box-shadow: none;
+  }
+  @page {
+    size: A4;
+    margin: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- ============================================================
+     PAGE 1 — 개념 학습 (Step 1~3 + 패턴 박스)
+     ============================================================ -->
+<div class="page">
+  <div class="page-header">
+    <span class="chapter">논리 Basic &nbsp;/&nbsp; Unit 1. 논리 연결어</span>
+    <span class="page-number">1</span>
+  </div>
+
+  <div class="page-content">
+
+    <!-- Chapter Header -->
+    <div class="chapter-header">
+      <div class="chapter-tag">Step 1</div>
+      <h1 class="chapter-title">논리 연결어 파악</h1>
+      <p class="chapter-subtitle">문장과 문장, 단락과 단락 사이의 논리적 관계를 나타내는 연결어를 이해하고 정확히 구분한다.</p>
+    </div>
+
+    <!-- Concept Box: 논리 연결어란 -->
+    <div class="component-box concept-box">
+      <div class="box-header">
+        <span class="icon">📘</span>
+        <span class="title">논리 연결어(Logical Connectors)란?</span>
+      </div>
+      <div class="box-content">
+        <p>두 문장 또는 절 사이의 <span class="highlight-key">논리적 관계</span>를 명시적으로 나타내는 표현이다. 연결어의 의미를 정확히 파악하면 빈칸 추론·문장 삽입·글의 흐름 파악 문제를 효율적으로 풀 수 있다.</p>
+      </div>
+    </div>
+
+    <!-- Step 1: 인과 -->
+    <div class="step-section">
+      <div class="step-section-header">
+        <span class="step-badge">1</span>
+        <span class="step-title">인과 관계 &nbsp;<span style="font-size:8pt;font-weight:400;color:#667085;">(Cause &amp; Effect)</span></span>
+      </div>
+      <div class="step-body">
+        <p style="font-size:8pt;color:#667085;margin-bottom:5pt;">원인과 결과를 연결하는 표현. 앞 내용이 <span class="highlight-key">원인</span>, 뒤 내용이 <span class="highlight-key">결과</span>이거나 그 역순.</p>
+        <div class="pattern-box pattern-box--causal">
+          <div class="pattern-box-header">
+            <span class="pattern-type">인과</span>
+            <span class="pattern-desc">원인 → 결과 / 결과 → 원인</span>
+          </div>
+          <div class="pattern-box-body">
+            <div class="connector-row">
+              <div class="connector-item"><span class="conn-eng">therefore</span> <span class="conn-kr">그러므로</span></div>
+              <div class="connector-item"><span class="conn-eng">thus</span> <span class="conn-kr">따라서</span></div>
+              <div class="connector-item"><span class="conn-eng">hence</span> <span class="conn-kr">그래서</span></div>
+              <div class="connector-item"><span class="conn-eng">as a result</span> <span class="conn-kr">결과적으로</span></div>
+              <div class="connector-item"><span class="conn-eng">consequently</span> <span class="conn-kr">그 결과</span></div>
+              <div class="connector-item"><span class="conn-eng">because of</span> <span class="conn-kr">~때문에</span></div>
+              <div class="connector-item"><span class="conn-eng">due to</span> <span class="conn-kr">~로 인해</span></div>
+              <div class="connector-item"><span class="conn-eng">owing to</span> <span class="conn-kr">~덕분에/때문에</span></div>
+            </div>
+            <div class="pattern-example">
+              <p class="example-label">예문</p>
+              <p class="eng-text">He missed the bus. <span class="highlight-bg">As a result</span>, he was late for the interview.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 2: 대조 -->
+    <div class="step-section">
+      <div class="step-section-header">
+        <span class="step-badge">2</span>
+        <span class="step-title">대조·역접 관계 &nbsp;<span style="font-size:8pt;font-weight:400;color:#667085;">(Contrast &amp; Concession)</span></span>
+      </div>
+      <div class="step-body">
+        <p style="font-size:8pt;color:#667085;margin-bottom:5pt;">앞 내용과 반대되거나 예상을 벗어난 내용을 이어줄 때 사용.</p>
+        <div class="pattern-box pattern-box--contrast">
+          <div class="pattern-box-header">
+            <span class="pattern-type">대조</span>
+            <span class="pattern-desc">앞 내용 ↔ 뒤 내용 (방향 전환)</span>
+          </div>
+          <div class="pattern-box-body">
+            <div class="connector-row">
+              <div class="connector-item"><span class="conn-eng">however</span> <span class="conn-kr">그러나</span></div>
+              <div class="connector-item"><span class="conn-eng">nevertheless</span> <span class="conn-kr">그럼에도 불구하고</span></div>
+              <div class="connector-item"><span class="conn-eng">nonetheless</span> <span class="conn-kr">그렇더라도</span></div>
+              <div class="connector-item"><span class="conn-eng">on the other hand</span> <span class="conn-kr">반면에</span></div>
+              <div class="connector-item"><span class="conn-eng">in contrast</span> <span class="conn-kr">대조적으로</span></div>
+              <div class="connector-item"><span class="conn-eng">although / though</span> <span class="conn-kr">비록 ~일지라도</span></div>
+              <div class="connector-item"><span class="conn-eng">while / whereas</span> <span class="conn-kr">반면에</span></div>
+            </div>
+            <div class="pattern-example">
+              <p class="example-label">예문</p>
+              <p class="eng-text">She studied hard. <span class="highlight-bg">However</span>, she failed the exam.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Step 3: 추가 -->
+    <div class="step-section">
+      <div class="step-section-header">
+        <span class="step-badge">3</span>
+        <span class="step-title">추가·열거 관계 &nbsp;<span style="font-size:8pt;font-weight:400;color:#667085;">(Addition &amp; Enumeration)</span></span>
+      </div>
+      <div class="step-body">
+        <p style="font-size:8pt;color:#667085;margin-bottom:5pt;">앞 내용에 정보를 더하거나 비슷한 항목을 나열.</p>
+        <div class="pattern-box pattern-box--addition">
+          <div class="pattern-box-header">
+            <span class="pattern-type">추가</span>
+            <span class="pattern-desc">앞 내용 + 뒤 내용 (같은 방향)</span>
+          </div>
+          <div class="pattern-box-body">
+            <div class="connector-row">
+              <div class="connector-item"><span class="conn-eng">furthermore</span> <span class="conn-kr">더욱이</span></div>
+              <div class="connector-item"><span class="conn-eng">moreover</span> <span class="conn-kr">게다가</span></div>
+              <div class="connector-item"><span class="conn-eng">in addition</span> <span class="conn-kr">또한</span></div>
+              <div class="connector-item"><span class="conn-eng">besides</span> <span class="conn-kr">그 외에도</span></div>
+              <div class="connector-item"><span class="conn-eng">also</span> <span class="conn-kr">또한</span></div>
+              <div class="connector-item"><span class="conn-eng">not only A but also B</span> <span class="conn-kr">A뿐만 아니라 B도</span></div>
+            </div>
+            <div class="pattern-example">
+              <p class="example-label">예문</p>
+              <p class="eng-text">The plan is efficient. <span class="highlight-bg">Moreover</span>, it is cost-effective.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Key Box: 구별 포인트 -->
+    <div class="component-box key-box">
+      <div class="box-header">
+        <span class="icon">🔑</span>
+        <span class="title">3유형 핵심 구별법</span>
+      </div>
+      <div class="box-content">
+        <p><span class="highlight-key">인과</span> — 앞뒤가 원인·결과 관계인가? 논리 방향이 <em>순방향</em>.</p>
+        <p style="margin-top:3pt;"><span class="highlight-key">대조</span> — 앞뒤 내용이 서로 반대이거나 예상을 뒤집는가? 논리 방향이 <em>역전</em>.</p>
+        <p style="margin-top:3pt;"><span class="highlight-key">추가</span> — 앞 내용을 강화·보충하는가? 논리 방향이 <em>순방향 누적</em>.</p>
+      </div>
+    </div>
+
+  </div><!-- /page-content -->
+
+  <div class="page-footer">
+    <span>논리 Basic &nbsp;|&nbsp; Step 1. 논리 연결어 파악</span>
+    <span>vera's flavor</span>
+  </div>
+</div>
+
+<!-- ============================================================
+     PAGE 2 — 연습 문제
+     ============================================================ -->
+<div class="page">
+  <div class="page-header">
+    <span class="chapter">논리 Basic &nbsp;/&nbsp; Unit 1. 연습 문제</span>
+    <span class="page-number">2</span>
+  </div>
+
+  <div class="page-content">
+
+    <div class="section-title">연습 문제</div>
+
+    <!-- Rule Box: 풀이 전략 -->
+    <div class="component-box rule-box" style="margin-bottom:12pt;">
+      <div class="box-header">
+        <span class="icon">📐</span>
+        <span class="title">빈칸 추론 — 연결어 풀이 전략</span>
+      </div>
+      <div class="box-content">
+        <p>① 빈칸 앞·뒤 문장의 핵심 내용을 각각 파악한다.</p>
+        <p style="margin-top:2pt;">② 두 내용의 논리 방향을 판단한다: <span class="highlight-key">순방향</span>(인과·추가) vs <span class="highlight-key">역방향</span>(대조).</p>
+        <p style="margin-top:2pt;">③ 논리 방향과 일치하는 연결어 선택지를 고른다.</p>
+      </div>
+    </div>
+
+    <!-- Problem 1 -->
+    <div class="problem">
+      <div class="problem-header">
+        <span class="problem-number">01</span>
+        <span class="problem-type">연결어 선택</span>
+        <span class="problem-instruction" style="margin-left:auto;">밑줄에 가장 적절한 연결어를 고르시오.</span>
+      </div>
+      <div class="problem-text">
+        <p class="eng-text">The new software was designed to simplify daily tasks. <span class="blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>, many employees found it more confusing than the previous version.</p>
+      </div>
+      <ul class="problem-choices">
+        <li class="eng-text">① Therefore</li>
+        <li class="eng-text">② However</li>
+        <li class="eng-text">③ Moreover</li>
+        <li class="eng-text">④ As a result</li>
+      </ul>
+    </div>
+
+    <!-- Problem 1 — Explanation -->
+    <div class="component-box concept-box" style="margin-bottom:12pt;">
+      <div class="box-header">
+        <span class="icon">📘</span>
+        <span class="title">01번 해설</span>
+      </div>
+      <div class="box-content">
+        <p><span class="highlight-bg">정답: ②</span> &nbsp;<span class="eng-text highlight-eng">However</span></p>
+        <p style="margin-top:4pt;">앞 문장: 소프트웨어가 일을 <em>단순화</em>하도록 설계되었다 (긍정).</p>
+        <p style="margin-top:2pt;">뒤 문장: 직원들이 이전 버전보다 <em>혼란스럽다</em>고 느꼈다 (부정).</p>
+        <p style="margin-top:2pt;">앞뒤 내용이 <span class="highlight-key">반대 방향</span> → 대조 연결어 <span class="eng-text">however</span>가 적절하다.</p>
+        <p style="margin-top:4pt;color:#667085;font-size:7pt;">오답: ① therefore / ④ as a result — 인과(순방향). ③ moreover — 추가(순방향 누적).</p>
+      </div>
+    </div>
+
+    <!-- Problem 2 -->
+    <div class="problem">
+      <div class="problem-header">
+        <span class="problem-number">02</span>
+        <span class="problem-type">연결어 선택</span>
+        <span class="problem-instruction" style="margin-left:auto;">밑줄에 가장 적절한 연결어를 고르시오.</span>
+      </div>
+      <div class="problem-text">
+        <p class="eng-text">Regular exercise improves cardiovascular health. <span class="blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>, it enhances mental well-being and reduces the risk of depression.</p>
+      </div>
+      <ul class="problem-choices">
+        <li class="eng-text">① Nevertheless</li>
+        <li class="eng-text">② In contrast</li>
+        <li class="eng-text">③ Furthermore</li>
+        <li class="eng-text">④ Consequently</li>
+      </ul>
+    </div>
+
+    <!-- Problem 2 — Explanation -->
+    <div class="component-box concept-box" style="margin-bottom:12pt;">
+      <div class="box-header">
+        <span class="icon">📘</span>
+        <span class="title">02번 해설</span>
+      </div>
+      <div class="box-content">
+        <p><span class="highlight-bg">정답: ③</span> &nbsp;<span class="eng-text highlight-eng">Furthermore</span></p>
+        <p style="margin-top:4pt;">앞 문장: 운동이 심혈관 건강을 <em>향상</em>시킨다.</p>
+        <p style="margin-top:2pt;">뒤 문장: 운동이 정신 건강도 <em>개선</em>하고 우울증 위험도 줄인다.</p>
+        <p style="margin-top:2pt;">두 문장 모두 운동의 긍정적 효과 → <span class="highlight-key">추가 관계</span>. <span class="eng-text">furthermore</span>(더욱이)가 적절하다.</p>
+        <p style="margin-top:4pt;color:#667085;font-size:7pt;">오답: ① nevertheless / ② in contrast — 대조(역방향). ④ consequently — 인과(순방향이나 앞이 원인일 때).</p>
+      </div>
+    </div>
+
+  </div><!-- /page-content -->
+
+  <div class="page-footer">
+    <span>논리 Basic &nbsp;|&nbsp; Step 1. 논리 연결어 파악</span>
+    <span>vera's flavor</span>
+  </div>
+</div>
+
+</body>
+</html>

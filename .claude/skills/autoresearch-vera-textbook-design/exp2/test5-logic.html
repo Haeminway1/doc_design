@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>논리 Basic Step 1 — 논리 연결어 파악</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ========================================
+       Layer 0: Base / Reset / PDF-Safe
+       ======================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      background-color: #D0CBC0 !important;
+      font-family: "Noto Sans KR", "Inter", system-ui, sans-serif;
+      font-size: 9pt;
+      line-height: 1.35;
+      color: #1F2937;
+      -webkit-print-color-adjust: exact !important;
+      print-color-adjust: exact !important;
+    }
+
+    /* ========================================
+       Design Tokens — Logic "Caviar & Cream"
+       ======================================== */
+    :root {
+      --base: #0F0F10;
+      --accent: #A88F5A;
+      --mid: #2A2A2D;
+      --bg: #F4F1EB;
+      --ink: #1F2937;
+      --muted: #667085;
+      --line: #D4CFC5;
+      --border-radius: 6px;
+      --page-margin: 13mm;
+    }
+
+    /* ========================================
+       Layer 0: Page Layout
+       ======================================== */
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      background-color: #F4F1EB !important;
+      margin: 0 auto 12mm auto;
+      padding: var(--page-margin);
+      position: relative;
+      page-break-after: always !important;
+      break-after: page !important;
+      overflow: hidden;
+    }
+
+    .page:last-child {
+      page-break-after: avoid !important;
+      break-after: avoid !important;
+    }
+
+    @media print {
+      body {
+        background-color: #F4F1EB !important;
+        margin: 0;
+      }
+      .page {
+        margin: 0;
+        page-break-after: always !important;
+        break-after: page !important;
+      }
+      .page:last-child {
+        page-break-after: avoid !important;
+        break-after: avoid !important;
+      }
+    }
+
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    /* ========================================
+       Page Header / Footer
+       ======================================== */
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 6pt;
+      border-bottom: 1.5pt solid #0F0F10;
+      margin-bottom: 12pt;
+      page-break-after: avoid;
+      break-after: avoid;
+    }
+
+    .page-header .chapter {
+      font-size: 8pt;
+      font-weight: 600;
+      color: #0F0F10 !important;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .page-header .page-number {
+      font-size: 8pt;
+      font-weight: 400;
+      color: #667085 !important;
+      font-family: "Inter", system-ui, sans-serif;
+    }
+
+    .page-footer {
+      position: absolute;
+      bottom: 10mm;
+      left: var(--page-margin);
+      right: var(--page-margin);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 7pt;
+      color: #667085 !important;
+      border-top: 0.5pt solid #D4CFC5;
+      padding-top: 4pt;
+    }
+
+    /* ========================================
+       Typography
+       ======================================== */
+    h1 {
+      font-size: 18pt;
+      font-weight: 700;
+      line-height: 1.2;
+      color: #0F0F10 !important;
+      page-break-after: avoid;
+      break-after: avoid;
+    }
+
+    h2 {
+      font-size: 13pt;
+      font-weight: 700;
+      line-height: 1.25;
+      color: #0F0F10 !important;
+      page-break-after: avoid;
+      break-after: avoid;
+    }
+
+    h3 {
+      font-size: 11pt;
+      font-weight: 600;
+      line-height: 1.25;
+      color: #0F0F10 !important;
+      page-break-after: avoid;
+      break-after: avoid;
+    }
+
+    p {
+      font-size: 9pt;
+      line-height: 1.35;
+      color: #1F2937 !important;
+      text-align: justify;
+      font-style: normal !important;
+    }
+
+    /* ========================================
+       Page Title Block
+       ======================================== */
+    .page-title-block {
+      margin-bottom: 16pt;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .step-label {
+      display: inline-block;
+      font-size: 8pt;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      color: #F4F1EB !important;
+      background-color: #A88F5A !important;
+      padding: 2pt 8pt;
+      border-radius: 4px;
+      margin-bottom: 5pt;
+      text-transform: uppercase;
+    }
+
+    .page-title-block h2 {
+      font-size: 15pt;
+      font-weight: 700;
+      color: #0F0F10 !important;
+      margin-bottom: 3pt;
+    }
+
+    .page-title-block .subtitle {
+      font-size: 8.5pt;
+      color: #667085 !important;
+      font-weight: 400;
+      text-align: left;
+    }
+
+    /* ========================================
+       Step Section
+       ======================================== */
+    .step-section {
+      margin-bottom: 14pt;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .step-section-header {
+      display: flex;
+      align-items: center;
+      gap: 8pt;
+      margin-bottom: 7pt;
+      page-break-after: avoid;
+      break-after: avoid;
+    }
+
+    .step-number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 20pt;
+      height: 20pt;
+      background-color: #0F0F10 !important;
+      color: #F4F1EB !important;
+      font-size: 9pt;
+      font-weight: 700;
+      border-radius: 4px;
+      flex-shrink: 0;
+      font-family: "Inter", system-ui, sans-serif;
+    }
+
+    .step-section-header h3 {
+      font-size: 11pt;
+      font-weight: 600;
+      color: #0F0F10 !important;
+    }
+
+    .step-section-body {
+      padding-left: 28pt;
+    }
+
+    .step-section-body p {
+      font-size: 9pt;
+      line-height: 1.4;
+      color: #1F2937 !important;
+      text-align: justify;
+      margin-bottom: 5pt;
+      font-style: normal !important;
+    }
+
+    .step-section-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* ========================================
+       Pattern Box
+       ======================================== */
+    .pattern-box {
+      border-radius: 6px;
+      border-left: 3pt solid #A88F5A;
+      background-color: #EDE9E0 !important;
+      padding: 9pt 11pt;
+      margin-bottom: 8pt;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .pattern-box-header {
+      display: flex;
+      align-items: center;
+      gap: 6pt;
+      margin-bottom: 6pt;
+      page-break-after: avoid;
+      break-after: avoid;
+    }
+
+    .pattern-type-tag {
+      display: inline-block;
+      font-size: 7.5pt;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: #A88F5A !important;
+      background-color: #F4F1EB !important;
+      border: 0.75pt solid #A88F5A;
+      padding: 1.5pt 6pt;
+      border-radius: 4px;
+    }
+
+    .pattern-box-title {
+      font-size: 10pt;
+      font-weight: 600;
+      color: #0F0F10 !important;
+    }
+
+    .pattern-keywords {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4pt;
+      margin-bottom: 7pt;
+    }
+
+    .kw-tag {
+      display: inline-block;
+      font-size: 8pt;
+      font-weight: 600;
+      font-family: "Inter", system-ui, sans-serif;
+      font-style: normal !important;
+      color: #0F0F10 !important;
+      background-color: #F4F1EB !important;
+      border: 0.75pt solid #D4CFC5;
+      padding: 2pt 7pt;
+      border-radius: 4px;
+    }
+
+    .pattern-example {
+      font-size: 8.5pt;
+      line-height: 1.45;
+      color: #1F2937 !important;
+      text-align: justify;
+      font-style: normal !important;
+      border-top: 0.5pt solid #C8C2B6;
+      padding-top: 5pt;
+    }
+
+    .pattern-example .ex-label {
+      font-size: 7.5pt;
+      font-weight: 600;
+      color: #667085 !important;
+      display: block;
+      margin-bottom: 2pt;
+      text-align: left;
+    }
+
+    /* ========================================
+       Section Divider
+       ======================================== */
+    .section-divider {
+      border: none;
+      border-top: 0.5pt solid #D4CFC5;
+      margin: 12pt 0;
+    }
+
+    /* ========================================
+       Highlight — 3종만
+       ======================================== */
+    .highlight-key {
+      color: #0F0F10 !important;
+      font-weight: 600;
+    }
+
+    .highlight-bg {
+      background-color: #E8E0CC !important;
+      padding: 0 2pt;
+      border-radius: 4px;
+    }
+
+    .highlight-eng {
+      color: #A88F5A !important;
+      font-weight: 600;
+      font-style: normal !important;
+    }
+
+    /* ========================================
+       Problem Component
+       ======================================== */
+    .problem {
+      margin-bottom: 14pt;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .problem-header {
+      display: flex;
+      align-items: center;
+      gap: 7pt;
+      margin-bottom: 6pt;
+      border-bottom: 1pt solid #D4CFC5;
+      padding-bottom: 5pt;
+    }
+
+    .problem-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 18pt;
+      height: 18pt;
+      background-color: #0F0F10 !important;
+      color: #F4F1EB !important;
+      font-size: 8.5pt;
+      font-weight: 700;
+      border-radius: 4px;
+      font-family: "Inter", system-ui, sans-serif;
+      flex-shrink: 0;
+    }
+
+    .problem-type {
+      font-size: 8pt;
+      font-weight: 500;
+      color: #A88F5A !important;
+      border: 0.75pt solid #A88F5A;
+      padding: 1pt 5pt;
+      border-radius: 4px;
+    }
+
+    .problem-text {
+      margin-bottom: 7pt;
+    }
+
+    .problem-text p {
+      font-size: 9pt;
+      line-height: 1.4;
+      color: #1F2937 !important;
+      text-align: justify;
+      margin-bottom: 4pt;
+      font-style: normal !important;
+    }
+
+    .problem-text .instruction {
+      font-size: 9pt;
+      font-weight: 400;
+      color: #2A2A2D !important;
+      margin-bottom: 5pt;
+    }
+
+    .problem-text .passage-line {
+      font-size: 9pt;
+      line-height: 1.45;
+      color: #1F2937 !important;
+      padding: 5pt 8pt;
+      background-color: #EDE9E0 !important;
+      border-left: 2pt solid #2A2A2D;
+      border-radius: 4px;
+      text-align: justify;
+      font-style: normal !important;
+    }
+
+    .problem-choices {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3pt 12pt;
+      padding: 0;
+    }
+
+    .problem-choices li {
+      font-size: 8.5pt;
+      line-height: 1.3;
+      color: #1F2937 !important;
+      font-style: normal !important;
+    }
+
+    /* ========================================
+       Answer Grid
+       ======================================== */
+    .answer-grid {
+      margin-top: 16pt;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .answer-grid-header {
+      font-size: 9pt;
+      font-weight: 700;
+      color: #F4F1EB !important;
+      background-color: #0F0F10 !important;
+      padding: 4pt 10pt;
+      border-radius: 6px 6px 0 0;
+      display: inline-block;
+    }
+
+    .answer-grid-body {
+      display: flex;
+      gap: 16pt;
+      padding: 7pt 10pt;
+      background-color: #EDE9E0 !important;
+      border: 0.75pt solid #D4CFC5;
+      border-radius: 0 6px 6px 6px;
+    }
+
+    .answer-item {
+      font-size: 9pt;
+      color: #1F2937 !important;
+      font-family: "Inter", system-ui, sans-serif;
+    }
+
+    .answer-item strong {
+      font-weight: 700;
+      color: #0F0F10 !important;
+      margin-right: 3pt;
+    }
+
+    /* ========================================
+       Problems Page Title
+       ======================================== */
+    .problems-title-block {
+      margin-bottom: 16pt;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .problems-title-block h2 {
+      font-size: 13pt;
+      font-weight: 700;
+      color: #0F0F10 !important;
+      margin-bottom: 2pt;
+    }
+
+    .problems-title-block .desc {
+      font-size: 8pt;
+      color: #667085 !important;
+      text-align: left;
+    }
+
+    /* ========================================
+       Blank line
+       ======================================== */
+    .blank {
+      display: inline-block;
+      width: 48pt;
+      border-bottom: 1pt solid #0F0F10;
+      vertical-align: bottom;
+      margin: 0 2pt;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================
+       PAGE 1 — 개념 학습
+       ========================================== -->
+  <div class="page">
+
+    <div class="page-header">
+      <span class="chapter">논리 Basic &nbsp;·&nbsp; Step 1</span>
+      <span class="page-number">1</span>
+    </div>
+
+    <!-- 페이지 타이틀 -->
+    <div class="page-title-block">
+      <div class="step-label">Step 1</div>
+      <h2>논리 연결어 파악</h2>
+      <p class="subtitle">문장과 문장 사이의 논리적 관계를 결정하는 연결어를 정확히 파악한다.</p>
+    </div>
+
+    <!-- Step 1: 연결어란 무엇인가 -->
+    <div class="step-section">
+      <div class="step-section-header">
+        <div class="step-number">1</div>
+        <h3>연결어의 역할</h3>
+      </div>
+      <div class="step-section-body">
+        <p>논리 연결어는 앞 문장과 뒤 문장의 <strong>논리적 관계</strong>를 명시적으로 드러내는 장치다. 연결어를 먼저 파악하면 글의 전개 방향을 예측할 수 있어 독해 속도와 정확도가 동시에 높아진다.</p>
+        <p>연결어는 크게 세 가지 관계로 분류된다: 인과(원인-결과), 대조(역접-양보), 추가(부연-예시). 각 관계는 고유한 신호어를 갖는다.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Step 2: 세 가지 관계 유형 -->
+    <div class="step-section">
+      <div class="step-section-header">
+        <div class="step-number">2</div>
+        <h3>세 가지 연결 관계 — 연결어 목록</h3>
+      </div>
+      <div class="step-section-body">
+
+        <!-- 인과 -->
+        <div class="pattern-box">
+          <div class="pattern-box-header">
+            <span class="pattern-type-tag">인과</span>
+            <span class="pattern-box-title">원인 → 결과</span>
+          </div>
+          <div class="pattern-keywords">
+            <span class="kw-tag">therefore</span>
+            <span class="kw-tag">thus</span>
+            <span class="kw-tag">hence</span>
+            <span class="kw-tag">as a result</span>
+            <span class="kw-tag">consequently</span>
+            <span class="kw-tag">because</span>
+            <span class="kw-tag">since</span>
+          </div>
+          <div class="pattern-example">
+            <span class="ex-label">예문</span>
+            The experiment failed repeatedly. <strong>Therefore</strong>, the team revised their hypothesis from the ground up.
+          </div>
+        </div>
+
+        <!-- 대조 -->
+        <div class="pattern-box">
+          <div class="pattern-box-header">
+            <span class="pattern-type-tag">대조</span>
+            <span class="pattern-box-title">앞 내용 ↔ 뒤 내용 (역접·양보)</span>
+          </div>
+          <div class="pattern-keywords">
+            <span class="kw-tag">however</span>
+            <span class="kw-tag">nevertheless</span>
+            <span class="kw-tag">yet</span>
+            <span class="kw-tag">although</span>
+            <span class="kw-tag">even though</span>
+            <span class="kw-tag">in contrast</span>
+            <span class="kw-tag">on the other hand</span>
+          </div>
+          <div class="pattern-example">
+            <span class="ex-label">예문</span>
+            The policy seemed effective in theory. <strong>However</strong>, its practical outcomes proved far more limited than anticipated.
+          </div>
+        </div>
+
+        <!-- 추가 -->
+        <div class="pattern-box">
+          <div class="pattern-box-header">
+            <span class="pattern-type-tag">추가</span>
+            <span class="pattern-box-title">앞 내용 + 부연·예시</span>
+          </div>
+          <div class="pattern-keywords">
+            <span class="kw-tag">furthermore</span>
+            <span class="kw-tag">moreover</span>
+            <span class="kw-tag">in addition</span>
+            <span class="kw-tag">besides</span>
+            <span class="kw-tag">for example</span>
+            <span class="kw-tag">for instance</span>
+            <span class="kw-tag">that is</span>
+          </div>
+          <div class="pattern-example">
+            <span class="ex-label">예문</span>
+            Regular exercise improves cardiovascular health. <strong>Moreover</strong>, it has been shown to enhance cognitive function and reduce symptoms of anxiety.
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Step 3: 독해 적용 전략 -->
+    <div class="step-section">
+      <div class="step-section-header">
+        <div class="step-number">3</div>
+        <h3>독해 적용 전략</h3>
+      </div>
+      <div class="step-section-body">
+        <p>문장을 읽을 때 연결어가 등장하면 잠시 멈추고 해당 연결어가 속하는 관계 유형을 확인한다. <strong>인과</strong>라면 원인이 무엇인지, <strong>대조</strong>라면 어떤 내용이 반전되는지, <strong>추가</strong>라면 무엇을 보충하는지를 명확히 한 뒤 다음 문장을 읽는다.</p>
+        <p>빈칸 추론 유형에서는 빈칸 앞뒤의 연결어를 먼저 확인한다. 연결어가 주는 방향성만으로 정답 범위를 절반 이상 좁힐 수 있다.</p>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>vera's flavor &nbsp;·&nbsp; 논리 Basic</span>
+      <span>논리 연결어 파악</span>
+    </div>
+
+  </div>
+
+
+  <!-- ==========================================
+       PAGE 2 — 연습 문제
+       ========================================== -->
+  <div class="page">
+
+    <div class="page-header">
+      <span class="chapter">논리 Basic &nbsp;·&nbsp; Step 1 &nbsp;·&nbsp; 연습 문제</span>
+      <span class="page-number">2</span>
+    </div>
+
+    <div class="problems-title-block">
+      <h2>연습 문제</h2>
+      <p class="desc">다음 각 문제를 풀고, 연결어가 나타내는 논리 관계를 확인하라.</p>
+    </div>
+
+    <!-- 문제 01 -->
+    <div class="problem">
+      <div class="problem-header">
+        <span class="problem-number">01</span>
+        <span class="problem-type">연결어 선택</span>
+      </div>
+      <div class="problem-text">
+        <p class="instruction">다음 빈칸에 들어갈 가장 적절한 연결어를 고르시오.</p>
+        <p class="passage-line">
+          Early research on sleep deprivation focused primarily on its effects on physical performance.
+          <span class="blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>,
+          recent studies have demonstrated that insufficient sleep severely impairs decision-making and emotional regulation as well.
+        </p>
+      </div>
+      <ul class="problem-choices">
+        <li>① Therefore</li>
+        <li>② Furthermore</li>
+        <li>③ Because</li>
+        <li>④ Consequently</li>
+      </ul>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- 문제 02 -->
+    <div class="problem">
+      <div class="problem-header">
+        <span class="problem-number">02</span>
+        <span class="problem-type">논리 관계 파악</span>
+      </div>
+      <div class="problem-text">
+        <p class="instruction">밑줄 친 연결어가 나타내는 논리 관계로 가장 적절한 것을 고르시오.</p>
+        <p class="passage-line">
+          The company invested heavily in automation to reduce labor costs.
+          <span class="highlight-key">As a result</span>,
+          overall production efficiency increased by nearly thirty percent within a single fiscal year.
+        </p>
+      </div>
+      <ul class="problem-choices">
+        <li>① 대조</li>
+        <li>② 인과</li>
+        <li>③ 추가</li>
+        <li>④ 양보</li>
+      </ul>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- 정답표 -->
+    <div class="answer-grid">
+      <div class="answer-grid-header">정답</div>
+      <div class="answer-grid-body">
+        <span class="answer-item"><strong>1</strong> ②</span>
+        <span class="answer-item"><strong>2</strong> ②</span>
+      </div>
+    </div>
+
+    <div class="page-footer">
+      <span>vera's flavor &nbsp;·&nbsp; 논리 Basic</span>
+      <span>연습 문제</span>
+    </div>
+
+  </div>
+
+</body>
+</html>

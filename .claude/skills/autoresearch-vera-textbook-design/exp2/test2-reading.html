@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2024 한양대 편입 독해 — AI 윤리</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+KR:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    /* ============================================================
+       Layer 0: Base — Reset, Page Layout, Print
+    ============================================================ */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Reading palette */
+    :root {
+      --base:   #0E2A3A;   /* 딥 잉크 네이비 */
+      --accent: #B08A57;   /* 앤티크 골드탄 */
+      --mid:    #7FA6A8;   /* 뮤트 틸 */
+      --bg:     #F1EFE8;   /* 크림 */
+
+      --ink:    #1F2937;
+      --muted:  #667085;
+      --line:   #D8D5CB;
+
+      --f-sans: "Noto Sans KR", "Inter", system-ui, sans-serif;
+      --f-eng:  "Inter", system-ui, sans-serif;
+      --f-display: "Playfair Display", serif;
+
+      --fs-body:   9pt;
+      --lh-body:   1.45;
+      --fs-small:  8pt;
+      --fs-tiny:   7pt;
+
+      --page-margin: 13mm;
+      --column-gap:  6mm;
+      --border-radius: 6px;
+    }
+
+    html, body {
+      background: #D0CCC0 !important;
+      font-family: var(--f-sans);
+      font-size: var(--fs-body);
+      color: var(--ink);
+    }
+
+    /* A4 page */
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      background: var(--bg) !important;
+      margin: 8mm auto;
+      padding: var(--page-margin);
+      position: relative;
+      page-break-after: always;
+      break-after: page;
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+    }
+    .page:last-child {
+      page-break-after: avoid;
+      break-after: avoid;
+    }
+
+    @media print {
+      html, body { background: none !important; margin: 0; }
+      .page {
+        margin: 0;
+        width: 210mm;
+        min-height: 297mm;
+        page-break-after: always;
+        break-after: page;
+      }
+      .page:last-child {
+        page-break-after: avoid;
+        break-after: avoid;
+      }
+    }
+
+    @page {
+      size: A4;
+      margin: 0;
+    }
+
+    /* ============================================================
+       Page Header / Footer
+    ============================================================ */
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1.5px solid var(--accent) !important;
+      padding-bottom: 5pt;
+      margin-bottom: 12pt;
+    }
+    .page-header .chapter {
+      font-family: var(--f-sans);
+      font-size: 8pt;
+      font-weight: 600;
+      color: var(--base) !important;
+      letter-spacing: 0.02em;
+    }
+    .page-header .page-number {
+      font-family: var(--f-eng);
+      font-size: 8pt;
+      color: var(--accent) !important;
+      font-weight: 600;
+    }
+
+    .page-footer {
+      position: absolute;
+      bottom: var(--page-margin);
+      left: var(--page-margin);
+      right: var(--page-margin);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-top: 1px solid var(--line) !important;
+      padding-top: 5pt;
+      font-size: 7pt;
+      color: var(--muted) !important;
+      font-family: var(--f-eng);
+    }
+
+    .page-content {
+      padding-bottom: 20mm;
+    }
+
+    /* ============================================================
+       Layer 1: Components
+    ============================================================ */
+
+    /* --- Section Title --- */
+    .section-title {
+      font-family: var(--f-sans);
+      font-size: 11pt;
+      font-weight: 700;
+      color: var(--base) !important;
+      border-left: 3px solid var(--accent) !important;
+      padding-left: 8pt;
+      margin-bottom: 10pt;
+      page-break-after: avoid;
+      break-after: avoid;
+    }
+
+    /* --- Passage Component --- */
+    .passage {
+      border: 1px solid var(--line) !important;
+      border-radius: var(--border-radius);
+      background: #EBE9E1 !important;
+      margin-bottom: 14pt;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .passage-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: var(--base) !important;
+      color: #F1EFE8 !important;
+      padding: 5pt 10pt;
+      border-radius: calc(var(--border-radius) - 1px) calc(var(--border-radius) - 1px) 0 0;
+    }
+    .passage-number {
+      font-family: var(--f-display);
+      font-size: 10pt;
+      font-weight: 700;
+      color: var(--accent) !important;
+      letter-spacing: 0.03em;
+    }
+    .passage-source {
+      font-family: var(--f-eng);
+      font-size: 7.5pt;
+      color: var(--mid) !important;
+      font-weight: 400;
+    }
+
+    .passage-body {
+      padding: 10pt 12pt 8pt;
+    }
+
+    .passage-text {
+      font-family: var(--f-eng);
+      font-size: var(--fs-body);
+      font-weight: 400;
+      line-height: var(--lh-body);
+      color: var(--ink) !important;
+      text-align: justify !important;
+      font-style: normal !important;
+    }
+    .passage-text p + p {
+      margin-top: 5pt;
+    }
+
+    /* --- Vocabulary Section (inside passage) --- */
+    .vocab-section {
+      border-top: 1px solid var(--line) !important;
+      padding: 7pt 12pt 8pt;
+    }
+    .vocab-label {
+      font-family: var(--f-sans);
+      font-size: 7.5pt;
+      font-weight: 700;
+      color: var(--accent) !important;
+      margin-bottom: 5pt;
+      letter-spacing: 0.04em;
+    }
+    .vocab-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      column-gap: 10pt;
+      row-gap: 3pt;
+    }
+    .vocab-item {
+      font-size: 8pt;
+      font-family: var(--f-eng);
+      line-height: 1.3;
+      color: var(--ink) !important;
+    }
+    .vocab-item strong {
+      color: var(--base) !important;
+      font-weight: 600;
+    }
+    .vocab-item .vocab-meaning {
+      font-family: var(--f-sans);
+      color: var(--muted) !important;
+      font-size: 7.5pt;
+    }
+
+    /* --- Problem Component --- */
+    .problem {
+      margin-bottom: 12pt;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .problem-header {
+      display: flex;
+      align-items: center;
+      gap: 7pt;
+      margin-bottom: 5pt;
+    }
+    .problem-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 20pt;
+      height: 20pt;
+      background: var(--base) !important;
+      color: #F1EFE8 !important;
+      font-family: var(--f-eng);
+      font-size: 9pt;
+      font-weight: 700;
+      border-radius: 50%;
+      flex-shrink: 0;
+    }
+    .problem-type {
+      font-family: var(--f-sans);
+      font-size: 7.5pt;
+      font-weight: 600;
+      color: var(--mid) !important;
+      border: 1px solid var(--mid) !important;
+      padding: 1pt 5pt;
+      border-radius: 4px;
+    }
+
+    .problem-instruction {
+      font-family: var(--f-sans);
+      font-size: var(--fs-body);
+      line-height: var(--lh-body);
+      color: var(--ink) !important;
+      text-align: justify !important;
+      margin-bottom: 6pt;
+      padding-left: 27pt;
+    }
+
+    /* Long-sentence choices → 1 column */
+    .problem-choices {
+      list-style: none;
+      padding-left: 27pt;
+      display: grid;
+      grid-template-columns: 1fr;   /* 1열 — 선지가 긴 문장 */
+      gap: 3pt;
+    }
+    .problem-choices li {
+      font-family: var(--f-eng);
+      font-size: 8.5pt;
+      line-height: 1.3;
+      color: var(--ink) !important;
+      font-style: normal !important;
+      padding: 2pt 0;
+    }
+    .problem-choices li .choice-num {
+      color: var(--accent) !important;
+      font-weight: 600;
+      margin-right: 3pt;
+    }
+
+    /* --- Answer Grid --- */
+    .answer-grid {
+      border: 1.5px solid var(--accent) !important;
+      border-radius: var(--border-radius);
+      background: #EBE9E1 !important;
+      overflow: hidden;
+      page-break-inside: avoid;
+      break-inside: avoid;
+      margin-top: 6pt;
+    }
+    .answer-grid-header {
+      background: var(--accent) !important;
+      color: #F1EFE8 !important;
+      font-family: var(--f-sans);
+      font-size: 8pt;
+      font-weight: 700;
+      padding: 4pt 10pt;
+      letter-spacing: 0.05em;
+    }
+    .answer-grid-body {
+      display: flex;
+      gap: 0;
+      padding: 6pt 10pt;
+    }
+    .answer-item {
+      font-family: var(--f-eng);
+      font-size: 8.5pt;
+      color: var(--ink) !important;
+      margin-right: 18pt;
+    }
+    .answer-item strong {
+      color: var(--base) !important;
+      font-weight: 700;
+    }
+
+    /* --- Divider --- */
+    .section-divider {
+      border: none;
+      border-top: 1px solid var(--line) !important;
+      margin: 14pt 0;
+    }
+
+    /* ============================================================
+       Page 2: Explanation styles
+    ============================================================ */
+    .explanation {
+      margin-bottom: 14pt;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .explanation-header {
+      display: flex;
+      align-items: center;
+      gap: 8pt;
+      margin-bottom: 6pt;
+    }
+    .exp-num {
+      font-family: var(--f-eng);
+      font-size: 9pt;
+      font-weight: 700;
+      color: var(--base) !important;
+    }
+    .answer-badge {
+      display: inline-block;
+      background: var(--base) !important;
+      color: #F1EFE8 !important;
+      font-family: var(--f-sans);
+      font-size: 8pt;
+      font-weight: 700;
+      padding: 2pt 8pt;
+      border-radius: 4px;
+    }
+    .difficulty {
+      font-size: 8pt;
+      color: var(--accent) !important;
+    }
+
+    .explanation-body {
+      font-family: var(--f-sans);
+      font-size: var(--fs-body);
+      line-height: var(--lh-body);
+      color: var(--ink) !important;
+      text-align: justify !important;
+      padding-left: 0;
+    }
+    .explanation-body p + p {
+      margin-top: 4pt;
+    }
+
+    .exp-eng {
+      font-family: var(--f-eng);
+      font-style: normal !important;
+    }
+
+    .wrong-analysis {
+      background: #E4E2DA !important;
+      border-left: 3px solid var(--mid) !important;
+      border-radius: 0 4px 4px 0;
+      padding: 5pt 8pt;
+      margin-top: 6pt;
+      font-size: 8.5pt;
+      line-height: 1.35;
+      color: var(--ink) !important;
+    }
+    .wrong-analysis p + p {
+      margin-top: 3pt;
+    }
+    .wrong-label {
+      font-family: var(--f-sans);
+      font-size: 7.5pt;
+      font-weight: 700;
+      color: var(--mid) !important;
+      margin-bottom: 3pt;
+    }
+
+    /* key-box for translation */
+    .key-box {
+      border-left: 3px solid var(--accent) !important;
+      border-radius: 0 var(--border-radius) var(--border-radius) 0;
+      background: #E2DFD7 !important;
+      padding: 7pt 10pt;
+      margin-top: 8pt;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+    .key-box-header {
+      font-family: var(--f-sans);
+      font-size: 7.5pt;
+      font-weight: 700;
+      color: var(--accent) !important;
+      margin-bottom: 4pt;
+      letter-spacing: 0.04em;
+    }
+    .key-box-content {
+      font-family: var(--f-sans);
+      font-size: 8.5pt;
+      line-height: 1.4;
+      color: var(--ink) !important;
+      text-align: justify !important;
+    }
+
+    /* highlight — highlight-key only (used sparingly) */
+    .highlight-key {
+      color: var(--base) !important;
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ============================================================
+     PAGE 1: Passage + Vocabulary + Problems + Answer Grid
+============================================================ -->
+<div class="page">
+
+  <div class="page-header">
+    <span class="chapter">Reading — AI 윤리 | 2024 한양대 편입</span>
+    <span class="page-number">01</span>
+  </div>
+
+  <div class="page-content">
+
+    <!-- Passage -->
+    <div class="section-title">지문</div>
+
+    <div class="passage">
+      <div class="passage-header">
+        <span class="passage-number">Passage 1</span>
+        <span class="passage-source">2024 한양대학교 편입학시험</span>
+      </div>
+
+      <div class="passage-body">
+        <div class="passage-text">
+          <p>As artificial intelligence systems grow increasingly capable of performing tasks once reserved for human professionals, questions surrounding their ethical use have moved from the margins of academic debate to the center of global policy discussions. Central to this discourse is the problem of <strong>algorithmic accountability</strong>: when an AI system causes harm — whether by denying someone a loan, misidentifying a suspect, or recommending a harmful medical treatment — who bears moral and legal responsibility? The developers who trained the model, the corporations that deployed it, or the policymakers who failed to regulate it?</p>
+          <p>Critics argue that present frameworks are dangerously inadequate. Current legal systems were designed with human agents in mind and struggle to accommodate entities whose decisions emerge from vast statistical patterns rather than intentional reasoning. Moreover, the opacity of many large-scale machine-learning models — a quality researchers call the "<strong>black-box problem</strong>" — means that even their creators cannot fully explain individual outputs. This lack of transparency erodes the public trust that democratic institutions depend upon.</p>
+          <p>Proponents of stronger AI governance contend that meaningful oversight requires not only technical solutions such as explainable-AI tools, but also structural reforms: mandatory bias audits, independent review boards, and enforceable liability standards. Without such measures, they warn, the deployment of AI at scale risks entrenching existing inequalities and concentrating unprecedented power in the hands of a small number of private actors whose interests may diverge sharply from the public good.</p>
+        </div>
+      </div>
+
+      <div class="vocab-section">
+        <div class="vocab-label">핵심 어휘 KEY VOCABULARY</div>
+        <div class="vocab-grid">
+          <div class="vocab-item">
+            <strong>algorithmic accountability</strong><br>
+            <span class="vocab-meaning">알고리즘 책임성 — AI 결정에 대한 법적·도덕적 책임 귀속</span>
+          </div>
+          <div class="vocab-item">
+            <strong>opacity</strong> <span style="color:var(--muted);font-size:7.5pt;">[oʊˈpæsɪti]</span><br>
+            <span class="vocab-meaning">불투명성, 난해함 (← L. opacus 어두운)</span>
+          </div>
+          <div class="vocab-item">
+            <strong>entrench</strong> <span style="color:var(--muted);font-size:7.5pt;">[ɪnˈtrentʃ]</span><br>
+            <span class="vocab-meaning">v. 공고히 하다, 고착시키다 (불평등 등을)</span>
+          </div>
+          <div class="vocab-item">
+            <strong>governance</strong> <span style="color:var(--muted);font-size:7.5pt;">[ˈɡʌvənəns]</span><br>
+            <span class="vocab-meaning">n. 거버넌스, 관리 체계, 통치 구조</span>
+          </div>
+          <div class="vocab-item">
+            <strong>liability</strong> <span style="color:var(--muted);font-size:7.5pt;">[ˌlaɪəˈbɪlɪti]</span><br>
+            <span class="vocab-meaning">n. 법적 책임, 배상 의무</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Problems -->
+    <div class="section-title">문제</div>
+
+    <!-- Problem 1 -->
+    <div class="problem">
+      <div class="problem-header">
+        <span class="problem-number">01</span>
+        <span class="problem-type">주제 파악</span>
+      </div>
+      <div class="problem-instruction">
+        Which of the following best states the main argument of the passage?
+      </div>
+      <ul class="problem-choices">
+        <li><span class="choice-num">①</span> AI systems have already surpassed human professionals in most fields, making regulation unnecessary.</li>
+        <li><span class="choice-num">②</span> The ethical challenges posed by AI require stronger accountability frameworks, including legal reforms and transparency measures.</li>
+        <li><span class="choice-num">③</span> The black-box problem can be fully resolved through the development of explainable-AI technologies alone.</li>
+        <li><span class="choice-num">④</span> Private corporations are best positioned to regulate their own AI systems without government intervention.</li>
+      </ul>
+    </div>
+
+    <!-- Problem 2 -->
+    <div class="problem">
+      <div class="problem-header">
+        <span class="problem-number">02</span>
+        <span class="problem-type">어휘·문맥</span>
+      </div>
+      <div class="problem-instruction">
+        According to the passage, the "black-box problem" refers to which of the following?
+      </div>
+      <ul class="problem-choices">
+        <li><span class="choice-num">①</span> The tendency of AI companies to hide financial data from regulatory authorities.</li>
+        <li><span class="choice-num">②</span> The inability of even developers to fully explain how a large-scale AI model arrives at individual outputs.</li>
+        <li><span class="choice-num">③</span> The physical security measures used to protect AI servers from unauthorized access.</li>
+        <li><span class="choice-num">④</span> The legal principle shielding AI corporations from liability for discriminatory decisions.</li>
+      </ul>
+    </div>
+
+    <!-- Answer Grid -->
+    <div class="answer-grid">
+      <div class="answer-grid-header">정답표 ANSWER KEY</div>
+      <div class="answer-grid-body">
+        <span class="answer-item"><strong>01</strong> ②</span>
+        <span class="answer-item"><strong>02</strong> ②</span>
+      </div>
+    </div>
+
+  </div><!-- /.page-content -->
+
+  <div class="page-footer">
+    <span>vera's flavor — 편입영어 독해</span>
+    <span>무단 복제 금지</span>
+  </div>
+</div><!-- /.page (1) -->
+
+
+<!-- ============================================================
+     PAGE 2: Explanation
+============================================================ -->
+<div class="page">
+
+  <div class="page-header">
+    <span class="chapter">Reading — AI 윤리 | 해설</span>
+    <span class="page-number">02</span>
+  </div>
+
+  <div class="page-content">
+
+    <div class="section-title">해설</div>
+
+    <!-- Explanation 1 -->
+    <div class="explanation">
+      <div class="explanation-header">
+        <span class="exp-num">01</span>
+        <span class="answer-badge">정답 ②</span>
+        <span class="difficulty">★★☆</span>
+      </div>
+
+      <div class="explanation-body">
+        <p>지문은 첫 문장에서 AI의 <span class="highlight-key">윤리적 사용 문제</span>가 학계를 넘어 글로벌 정책 논의의 중심으로 이동했음을 명시하며, 이후 책임 귀속의 공백, 블랙박스 문제로 인한 투명성 결여, 강화된 거버넌스의 필요성을 순차적으로 전개한다. 따라서 지문의 핵심 주장은 AI가 초래하는 윤리적 문제에 대응하기 위해 법적 개혁과 투명성 확보를 포함한 강력한 책임 체계가 필요하다는 것이다.</p>
+      </div>
+
+      <div class="wrong-analysis">
+        <div class="wrong-label">오답 분석</div>
+        <p><span class="exp-num" style="font-size:8pt;">①</span> <span class="exp-eng">"regulation unnecessary"</span> — 지문은 규제의 필요성을 일관되게 강조하며, AI의 인간 능력 초과 여부를 긍정적으로 평가하지 않는다.</p>
+        <p><span class="exp-num" style="font-size:8pt;">③</span> <span class="exp-eng">"explainable-AI technologies alone"</span> — 세 번째 단락에서 기술적 해결책만으로는 부족하며 구조적 개혁이 함께 필요하다고 명시한다.</p>
+        <p><span class="exp-num" style="font-size:8pt;">④</span> <span class="exp-eng">"without government intervention"</span> — 지문은 오히려 소수의 민간 행위자에게 권력이 집중될 위험을 경고하며 공적 감독을 촉구한다.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Explanation 2 -->
+    <div class="explanation">
+      <div class="explanation-header">
+        <span class="exp-num">02</span>
+        <span class="answer-badge">정답 ②</span>
+        <span class="difficulty">★☆☆</span>
+      </div>
+
+      <div class="explanation-body">
+        <p>지문 2단락은 <span class="exp-eng">"the opacity of many large-scale machine-learning models — a quality researchers call the 'black-box problem' — means that even their creators cannot fully explain individual outputs"</span>라고 직접 정의한다. 즉 블랙박스 문제는 AI 개발자조차 모델의 개별 출력 근거를 설명할 수 없는 <strong>불투명성</strong>을 의미한다.</p>
+      </div>
+
+      <div class="wrong-analysis">
+        <div class="wrong-label">오답 분석</div>
+        <p><span class="exp-num" style="font-size:8pt;">①</span> 재무 정보 은폐는 지문에 언급되지 않는다. 블랙박스는 기업 회계가 아닌 모델 내부 추론의 불투명성을 가리킨다.</p>
+        <p><span class="exp-num" style="font-size:8pt;">③</span> 서버 물리적 보안과는 무관하다. 개념적 혼동을 유도하는 오답이다.</p>
+        <p><span class="exp-num" style="font-size:8pt;">④</span> <span class="exp-eng">liability shield</span>는 지문이 제안하는 해결책(강화된 책임 기준)과 정반대 개념으로, 지문 어디에도 등장하지 않는다.</p>
+      </div>
+    </div>
+
+    <hr class="section-divider">
+
+    <!-- Translation key-box -->
+    <div class="key-box">
+      <div class="key-box-header">지문 핵심 번역 KEY TRANSLATION</div>
+      <div class="key-box-content">
+        <p><strong>[1단락]</strong> AI 시스템이 인간 전문가의 영역을 대체할 만큼 고도화됨에 따라, 알고리즘 책임성 문제 — AI가 피해를 유발했을 때 개발자·기업·정책입안자 중 누가 책임을 지는가 — 가 전 세계 정책 논의의 핵심으로 부상했다.</p>
+        <p style="margin-top:4pt;"><strong>[2단락]</strong> 현행 법체계는 인간 행위자를 전제로 설계되어 AI에 적용하기 어려우며, 블랙박스 문제(개발자조차 출력 근거를 설명할 수 없음)는 민주적 신뢰 기반을 훼손한다.</p>
+        <p style="margin-top:4pt;"><strong>[3단락]</strong> 강력한 AI 거버넌스 지지자들은 기술적 해결책에 더해 편향 감사·독립 심의위원회·강제 가능한 책임 기준 등의 구조적 개혁이 필요하다고 주장한다.</p>
+      </div>
+    </div>
+
+  </div><!-- /.page-content -->
+
+  <div class="page-footer">
+    <span>vera's flavor — 편입영어 독해</span>
+    <span>무단 복제 금지</span>
+  </div>
+</div><!-- /.page (2) -->
+
+</body>
+</html>

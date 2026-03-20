@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>문법 Bridge Ch2 — 가정법</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* ============================================================
+       Layer 0: Base — Reset, Page Layout, Print
+    ============================================================ */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      /* Color */
+      --bg: #FFFFFF;
+      --ink: #1F2937;
+      --muted: #667085;
+      --line: #E5E7EB;
+
+      /* 교재 팔레트 */
+      --accent-blue: #1E3A8A;
+      --accent-orange: #F59E0B;
+      --concept-bg: #F0F9FF;
+      --concept-border: #0EA5E9;
+      --example-bg: #F7FEE7;
+      --example-border: #22C55E;
+      --warning-bg: #FEF3C7;
+      --warning-border: #F59E0B;
+
+      /* Typography — 컴팩트 교재 */
+      --f-sans: "Noto Sans KR", "Inter", system-ui, sans-serif;
+      --fs-body: 9pt;
+      --lh-body: 1.35;
+      --fs-small: 8pt;
+      --fs-tiny: 7pt;
+
+      /* Layout */
+      --page-margin: 13mm;
+      --column-gap: 6mm;
+      --para-gap: 4pt;
+
+      /* Highlight */
+      --highlight-key: #1E3A8A;
+      --highlight-bg: #FEF3C7;
+      --highlight-bg-text: #92400E;
+      --highlight-eng: #0EA5E9;
+    }
+
+    html, body {
+      background: #D1D5DB;
+      font-family: var(--f-sans);
+      font-size: var(--fs-body);
+      color: var(--ink);
+      line-height: var(--lh-body);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* A4 페이지 */
+    .page {
+      width: 210mm;
+      min-height: 297mm;
+      background: #FFFFFF !important;
+      margin: 8mm auto;
+      padding: var(--page-margin);
+      page-break-after: always;
+      break-after: always;
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+      position: relative;
+    }
+
+    .page:last-child {
+      page-break-after: avoid;
+      break-after: avoid;
+    }
+
+    @media print {
+      html, body {
+        background: #FFFFFF;
+      }
+      .page {
+        margin: 0;
+        page-break-after: always;
+        break-after: always;
+      }
+    }
+
+    /* ============================================================
+       Layer 0: Utilities
+    ============================================================ */
+    .eng-text {
+      font-family: "Inter", system-ui, sans-serif;
+    }
+
+    .highlight-key {
+      color: #1E3A8A !important;
+      font-weight: 600;
+    }
+
+    .highlight-bg {
+      background: #FEF3C7 !important;
+      color: #92400E !important;
+      padding: 0 2px;
+    }
+
+    .highlight-eng {
+      color: #0EA5E9 !important;
+    }
+
+    /* ============================================================
+       Layer 1: Components
+    ============================================================ */
+
+    /* --- Page Header --- */
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #1E3A8A !important;
+      padding-bottom: 4pt;
+      margin-bottom: 10pt;
+    }
+
+    .page-header .chapter {
+      font-size: 8pt;
+      font-weight: 700;
+      color: #1E3A8A !important;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+    }
+
+    .page-header .page-number {
+      font-size: 8pt;
+      color: #667085;
+      font-family: "Inter", sans-serif;
+    }
+
+    /* --- Section Title --- */
+    .section-title {
+      font-size: 13pt;
+      font-weight: 700;
+      color: #1E3A8A !important;
+      margin-bottom: 8pt;
+      margin-top: 6pt;
+      page-break-after: avoid;
+      break-after: avoid;
+    }
+
+    .section-sub {
+      font-size: 8pt;
+      color: #667085;
+      font-weight: 400;
+      margin-bottom: 10pt;
+    }
+
+    /* --- Rule Box (문법 공식) --- */
+    .component-box {
+      border-left: 3px solid #1E3A8A !important;
+      padding: 6pt 8pt;
+      margin-bottom: 8pt;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .component-box .box-header {
+      display: flex;
+      align-items: center;
+      gap: 4pt;
+      font-size: 8pt;
+      font-weight: 700;
+      color: #1E3A8A !important;
+      margin-bottom: 4pt;
+    }
+
+    .component-box .box-header .icon {
+      font-size: 9pt;
+    }
+
+    .component-box .box-content {
+      font-size: var(--fs-small);
+      color: var(--ink);
+      line-height: 1.4;
+    }
+
+    .rule-box {
+      background: #F0F9FF !important;
+      border-left-color: #0EA5E9 !important;
+    }
+
+    .rule-box .box-header {
+      color: #0369A1 !important;
+    }
+
+    .concept-box {
+      background: #F0F9FF !important;
+      border-left-color: #0EA5E9 !important;
+    }
+
+    .concept-box .box-header {
+      color: #0369A1 !important;
+    }
+
+    .key-box {
+      background: #FEF9EC !important;
+      border-left-color: #F59E0B !important;
+    }
+
+    .key-box .box-header {
+      color: #92400E !important;
+    }
+
+    .warning-box {
+      background: #FEF3C7 !important;
+      border-left-color: #F59E0B !important;
+    }
+
+    .warning-box .box-header {
+      color: #92400E !important;
+    }
+
+    /* --- Formula Row (가정법 공식) --- */
+    .formula-row {
+      display: flex;
+      align-items: center;
+      gap: 6pt;
+      font-size: 8pt;
+      margin-bottom: 3pt;
+      font-family: "Inter", sans-serif;
+    }
+
+    .formula-label {
+      font-weight: 700;
+      color: #1E3A8A !important;
+      min-width: 28mm;
+      font-size: 7.5pt;
+    }
+
+    .formula-arrow {
+      color: #667085;
+      font-size: 8pt;
+    }
+
+    .formula-code {
+      background: #F0F9FF !important;
+      color: #0369A1 !important;
+      padding: 1pt 4pt;
+      font-size: 7.5pt;
+      font-weight: 600;
+      border: 1px solid #BAE6FD !important;
+    }
+
+    /* --- Divider --- */
+    .divider {
+      border: none;
+      border-top: 1px solid #E5E7EB !important;
+      margin: 10pt 0;
+    }
+
+    /* --- Problem Block --- */
+    .problem {
+      margin-bottom: 10pt;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .problem-header {
+      display: flex;
+      align-items: center;
+      gap: 5pt;
+      margin-bottom: 4pt;
+    }
+
+    .problem-number {
+      background: #1E3A8A !important;
+      color: #FFFFFF !important;
+      font-size: 8pt;
+      font-weight: 700;
+      font-family: "Inter", sans-serif;
+      width: 18pt;
+      height: 18pt;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .problem-type {
+      font-size: 7.5pt;
+      font-weight: 600;
+      color: #1E3A8A !important;
+      background: #EFF6FF !important;
+      padding: 1pt 5pt;
+      border: 1px solid #BFDBFE !important;
+    }
+
+    .problem-subtype {
+      font-size: 7.5pt;
+      color: #667085;
+      font-weight: 400;
+    }
+
+    .problem-text {
+      font-size: var(--fs-body);
+      color: var(--ink);
+      line-height: 1.45;
+      margin-bottom: 5pt;
+      padding-left: 2pt;
+    }
+
+    .problem-text .eng-sentence {
+      font-family: "Inter", sans-serif;
+      font-size: 9pt;
+      color: #1F2937;
+      margin-top: 3pt;
+      padding: 4pt 6pt;
+      background: #F9FAFB !important;
+      border-left: 2px solid #E5E7EB !important;
+      line-height: 1.5;
+    }
+
+    .problem-text .blank {
+      display: inline-block;
+      min-width: 40pt;
+      border-bottom: 1.5px solid #1F2937 !important;
+      text-align: center;
+      vertical-align: bottom;
+      margin: 0 2pt;
+    }
+
+    /* Choices */
+    .problem-choices {
+      list-style: none;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2pt 10pt;
+      padding-left: 2pt;
+      font-size: 8.5pt;
+      font-family: "Inter", sans-serif;
+    }
+
+    .problem-choices li {
+      color: var(--ink);
+      line-height: 1.4;
+    }
+
+    /* --- Explanation Block --- */
+    .explanation {
+      background: #F9FAFB !important;
+      border: 1px solid #E5E7EB !important;
+      padding: 7pt 9pt;
+      margin-bottom: 8pt;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .explanation-header {
+      display: flex;
+      align-items: center;
+      gap: 6pt;
+      margin-bottom: 5pt;
+      padding-bottom: 4pt;
+      border-bottom: 1px solid #E5E7EB !important;
+    }
+
+    .answer-badge {
+      background: #1E3A8A !important;
+      color: #FFFFFF !important;
+      font-size: 7.5pt;
+      font-weight: 700;
+      padding: 1.5pt 6pt;
+      font-family: "Inter", sans-serif;
+      letter-spacing: 0.02em;
+    }
+
+    .difficulty {
+      font-size: 8pt;
+      color: #F59E0B !important;
+      letter-spacing: 1pt;
+    }
+
+    .explanation-num {
+      font-size: 7.5pt;
+      font-weight: 700;
+      color: #667085;
+      font-family: "Inter", sans-serif;
+      margin-left: auto;
+    }
+
+    .explanation-body {
+      font-size: 8pt;
+      color: var(--ink);
+      line-height: 1.45;
+    }
+
+    .explanation-body p {
+      margin-bottom: 3pt;
+    }
+
+    .explanation-body p:last-child {
+      margin-bottom: 0;
+    }
+
+    .wrong-analysis {
+      margin-top: 4pt;
+      padding: 4pt 6pt;
+      background: #FFF7ED !important;
+      border-left: 2px solid #F59E0B !important;
+    }
+
+    .wrong-analysis p {
+      font-size: 7.5pt;
+      color: #92400E !important;
+      margin-bottom: 2pt;
+      line-height: 1.4;
+      font-family: "Inter", sans-serif;
+    }
+
+    .wrong-analysis p:last-child {
+      margin-bottom: 0;
+    }
+
+    .correct-mark {
+      color: #16A34A !important;
+      font-weight: 700;
+    }
+
+    /* --- Answer Grid --- */
+    .answer-grid {
+      margin-top: 8pt;
+      border: 1.5px solid #1E3A8A !important;
+      page-break-inside: avoid;
+      break-inside: avoid;
+    }
+
+    .answer-grid-header {
+      background: #1E3A8A !important;
+      color: #FFFFFF !important;
+      font-size: 8pt;
+      font-weight: 700;
+      padding: 3pt 8pt;
+      letter-spacing: 0.05em;
+    }
+
+    .answer-grid-body {
+      display: flex;
+      gap: 0;
+      padding: 5pt 8pt;
+    }
+
+    .answer-item {
+      font-size: 8.5pt;
+      color: var(--ink);
+      min-width: 18mm;
+      font-family: "Inter", sans-serif;
+    }
+
+    .answer-item strong {
+      color: #1E3A8A !important;
+      font-weight: 700;
+      margin-right: 3pt;
+    }
+
+    /* --- Page Footer --- */
+    .page-footer {
+      position: absolute;
+      bottom: 8mm;
+      left: var(--page-margin);
+      right: var(--page-margin);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 7pt;
+      color: #9CA3AF;
+      border-top: 1px solid #E5E7EB !important;
+      padding-top: 3pt;
+    }
+
+    .page-footer .brand {
+      font-style: italic;
+    }
+
+    /* --- Problem Section Wrapper --- */
+    .problems-section {
+      margin-bottom: 12pt;
+    }
+
+    .problems-section-title {
+      font-size: 10pt;
+      font-weight: 700;
+      color: #1E3A8A !important;
+      margin-bottom: 6pt;
+      margin-top: 10pt;
+      padding-bottom: 3pt;
+      border-bottom: 1px solid #BFDBFE !important;
+      page-break-after: avoid;
+      break-after: avoid;
+    }
+
+    .explanations-section-title {
+      font-size: 10pt;
+      font-weight: 700;
+      color: #374151;
+      margin-bottom: 6pt;
+      margin-top: 4pt;
+      padding-bottom: 3pt;
+      border-bottom: 1px solid #E5E7EB !important;
+      page-break-after: avoid;
+      break-after: avoid;
+    }
+
+    /* --- Two-column layout for explanations --- */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8pt;
+    }
+
+    /* small tag for grammar label */
+    .grammar-label {
+      display: inline-block;
+      font-size: 7pt;
+      font-weight: 600;
+      color: #FFFFFF !important;
+      background: #0369A1 !important;
+      padding: 1pt 4pt;
+      margin-left: 4pt;
+      vertical-align: middle;
+    }
+
+  </style>
+</head>
+<body>
+
+<!-- ============================================================
+     PAGE 1: 개념 요약 + 문제
+============================================================ -->
+<div class="page">
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <span class="chapter">Grammar Bridge &nbsp;|&nbsp; Ch 2. 가정법</span>
+    <span class="page-number eng-text">1</span>
+  </div>
+
+  <!-- Section Title -->
+  <div class="section-title">가정법 핵심 문제</div>
+  <div class="section-sub">가정법 과거 / 가정법 과거완료 / 혼합 가정법 — 각 유형 1문항</div>
+
+  <!-- 개념 요약 박스 -->
+  <div class="component-box rule-box">
+    <div class="box-header">
+      <span class="icon">📐</span>
+      <span class="title">가정법 3종 공식 요약</span>
+    </div>
+    <div class="box-content">
+      <div class="formula-row">
+        <span class="formula-label">가정법 과거</span>
+        <span class="formula-arrow">→</span>
+        <span class="formula-code eng-text">If + S + V-ed/were, S + would/could + RV</span>
+        <span style="margin-left:6pt; font-size:7.5pt; color:#667085;">현재 사실의 반대 가정</span>
+      </div>
+      <div class="formula-row">
+        <span class="formula-label">가정법 과거완료</span>
+        <span class="formula-arrow">→</span>
+        <span class="formula-code eng-text">If + S + had p.p., S + would/could + have p.p.</span>
+        <span style="margin-left:6pt; font-size:7.5pt; color:#667085;">과거 사실의 반대 가정</span>
+      </div>
+      <div class="formula-row">
+        <span class="formula-label">혼합 가정법</span>
+        <span class="formula-arrow">→</span>
+        <span class="formula-code eng-text">If + S + had p.p., S + would + RV (now)</span>
+        <span style="margin-left:6pt; font-size:7.5pt; color:#667085;">과거 원인 → 현재 결과</span>
+      </div>
+    </div>
+  </div>
+
+  <hr class="divider">
+
+  <!-- ── 문제 영역 ── -->
+  <div class="problems-section">
+    <div class="problems-section-title">문 제</div>
+
+    <!-- 문제 1: 가정법 과거 -->
+    <div class="problem">
+      <div class="problem-header">
+        <span class="problem-number">1</span>
+        <span class="problem-type">가정법 과거</span>
+        <span class="problem-subtype">빈칸 완성</span>
+      </div>
+      <div class="problem-text">
+        <p>다음 빈칸에 들어갈 가장 적절한 것을 고르시오.</p>
+        <p class="eng-sentence">If I <span class="blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> more time, I would study abroad. But unfortunately, I have a full-time job.</p>
+      </div>
+      <ul class="problem-choices">
+        <li>① had</li>
+        <li>② have</li>
+        <li>③ will have</li>
+        <li>④ would have</li>
+      </ul>
+    </div>
+
+    <!-- 문제 2: 가정법 과거완료 -->
+    <div class="problem">
+      <div class="problem-header">
+        <span class="problem-number">2</span>
+        <span class="problem-type">가정법 과거완료</span>
+        <span class="problem-subtype">빈칸 완성</span>
+      </div>
+      <div class="problem-text">
+        <p>다음 빈칸에 들어갈 가장 적절한 것을 고르시오.</p>
+        <p class="eng-sentence">If she had taken the earlier train, she <span class="blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> the important meeting yesterday.</p>
+      </div>
+      <ul class="problem-choices">
+        <li>① would not miss</li>
+        <li>② would not have missed</li>
+        <li>③ will not have missed</li>
+        <li>④ had not missed</li>
+      </ul>
+    </div>
+
+    <!-- 문제 3: 혼합 가정법 -->
+    <div class="problem">
+      <div class="problem-header">
+        <span class="problem-number">3</span>
+        <span class="problem-type">혼합 가정법</span>
+        <span class="problem-subtype">빈칸 완성</span>
+      </div>
+      <div class="problem-text">
+        <p>다음 빈칸에 들어갈 가장 적절한 것을 고르시오.</p>
+        <p class="eng-sentence">If he had followed the doctor's advice last year, he <span class="blank">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> much healthier now.</p>
+      </div>
+      <ul class="problem-choices">
+        <li>① would be</li>
+        <li>② would have been</li>
+        <li>③ had been</li>
+        <li>④ will be</li>
+      </ul>
+    </div>
+
+  </div><!-- /problems-section -->
+
+  <!-- 정답표 -->
+  <div class="answer-grid">
+    <div class="answer-grid-header">정 답 표</div>
+    <div class="answer-grid-body">
+      <span class="answer-item"><strong>1</strong> ①</span>
+      <span class="answer-item"><strong>2</strong> ②</span>
+      <span class="answer-item"><strong>3</strong> ①</span>
+    </div>
+  </div>
+
+  <!-- Page Footer -->
+  <div class="page-footer">
+    <span class="brand">vera's flavor</span>
+    <span class="eng-text">Grammar Bridge — Ch 2. Subjunctive Mood</span>
+  </div>
+
+</div><!-- /page 1 -->
+
+
+<!-- ============================================================
+     PAGE 2: 해설
+============================================================ -->
+<div class="page">
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <span class="chapter">Grammar Bridge &nbsp;|&nbsp; Ch 2. 가정법 — 해설</span>
+    <span class="page-number eng-text">2</span>
+  </div>
+
+  <div class="section-title">상 세 해 설</div>
+
+  <!-- 해설 1 -->
+  <div class="explanations-section-title">문제 1 — 가정법 과거</div>
+  <div class="explanation">
+    <div class="explanation-header">
+      <span class="answer-badge">정답: ①</span>
+      <span class="difficulty">★★☆</span>
+      <span class="explanation-num eng-text">#1</span>
+    </div>
+    <div class="explanation-body">
+      <p>마지막 절 <span class="eng-text">"But unfortunately, I have a full-time job."</span>이 현재 사실을 가리킨다. 따라서 이 문장은 <span class="highlight-key">가정법 과거</span>(현재 사실의 반대 가정)다.</p>
+      <p>공식: <span class="eng-text">If + S + <span class="highlight-bg">동사의 과거형</span>, S + would/could + 동사원형</span>. 빈칸에는 <span class="eng-text">had</span>가 적절하다.</p>
+      <div class="wrong-analysis">
+        <p>② <span class="eng-text">have</span> — 직설법 현재형. 가정법에서는 사용 불가.</p>
+        <p>③ <span class="eng-text">will have</span> — 미래 완료. 가정법 조건절에 사용 불가.</p>
+        <p>④ <span class="eng-text">would have</span> — 주절에 쓰이는 형태. 조건절 If 뒤에 올 수 없음.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 해설 2 -->
+  <div class="explanations-section-title">문제 2 — 가정법 과거완료</div>
+  <div class="explanation">
+    <div class="explanation-header">
+      <span class="answer-badge">정답: ②</span>
+      <span class="difficulty">★★★</span>
+      <span class="explanation-num eng-text">#2</span>
+    </div>
+    <div class="explanation-body">
+      <p>조건절에 <span class="eng-text">had taken</span>(과거완료)이 쓰였고, 시간 부사 <span class="eng-text">yesterday</span>가 과거 시점을 명시한다. 따라서 이 문장은 <span class="highlight-key">가정법 과거완료</span>(과거 사실의 반대 가정)다.</p>
+      <p>공식: <span class="eng-text">S + <span class="highlight-bg">would + have + p.p.</span></span>. 정답은 <span class="eng-text">would not have missed</span>.</p>
+      <div class="wrong-analysis">
+        <p>① <span class="eng-text">would not miss</span> — 가정법 과거 주절 형태. 조건절이 과거완료이므로 주절도 <span class="eng-text">have p.p.</span> 필요.</p>
+        <p>③ <span class="eng-text">will not have missed</span> — 미래 완료. 가정법과 무관한 시제.</p>
+        <p>④ <span class="eng-text">had not missed</span> — 과거완료 서술형. 주절에 올 수 없는 형태.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 해설 3 -->
+  <div class="explanations-section-title">문제 3 — 혼합 가정법</div>
+  <div class="explanation">
+    <div class="explanation-header">
+      <span class="answer-badge">정답: ①</span>
+      <span class="difficulty">★★★</span>
+      <span class="explanation-num eng-text">#3</span>
+    </div>
+    <div class="explanation-body">
+      <p>조건절 <span class="eng-text">had followed</span>는 과거 사건, 주절의 <span class="eng-text">now</span>는 현재 결과를 가리킨다. 과거 원인 → 현재 결과를 연결하는 구조가 <span class="highlight-key">혼합 가정법</span>이다.</p>
+      <p>공식: <span class="eng-text">S + <span class="highlight-bg">would + 동사원형</span> (now/today)</span>. 정답은 <span class="eng-text">would be</span>.</p>
+      <div class="wrong-analysis">
+        <p>② <span class="eng-text">would have been</span> — 가정법 과거완료 주절 형태. 조건절과 주절이 모두 과거일 때만 사용 가능. <span class="eng-text">now</span>가 있으므로 오답.</p>
+        <p>③ <span class="eng-text">had been</span> — 과거완료 서술형. 혼합 가정법 주절 불가.</p>
+        <p>④ <span class="eng-text">will be</span> — 직설법 미래. 가정법과 무관.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- 핵심 정리 박스 -->
+  <div class="component-box key-box" style="margin-top:10pt;">
+    <div class="box-header">
+      <span class="icon">🔑</span>
+      <span class="title">혼합 가정법 식별법 — 암기 포인트</span>
+    </div>
+    <div class="box-content">
+      <p>조건절에 <span class="eng-text">had p.p.</span>가 있고, 주절에 <span class="eng-text">now / today / at present</span> 등 <span class="highlight-key">현재 시간 부사</span>가 있으면 반드시 혼합 가정법이다. 주절은 <span class="eng-text">would + 동사원형</span>으로 처리한다.</p>
+    </div>
+  </div>
+
+  <!-- Page Footer -->
+  <div class="page-footer">
+    <span class="brand">vera's flavor</span>
+    <span class="eng-text">Grammar Bridge — Ch 2. Subjunctive Mood</span>
+  </div>
+
+</div><!-- /page 2 -->
+
+</body>
+</html>

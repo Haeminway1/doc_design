@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>편입영어 문법 — Bridge Edition 표지</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <style>
+    /* ============================================================
+       LAYER 0: BASE — reset, print, utilities
+       sky-academic template
+    ============================================================ */
+
+    :root {
+      /* Color — sky-academic palette */
+      --bg: #FFFFFF;
+      --ink: #1F2937;
+      --muted: #667085;
+      --line: #E5E7EB;
+
+      /* sky-academic brand colors */
+      --sky-deep:    #1A6B8A;   /* primary: deep sky teal */
+      --sky-mid:     #2A8FAD;   /* mid tone */
+      --sky-light:   #E8F4F8;   /* light wash bg */
+      --sky-pale:    #F0F8FC;   /* very pale bg */
+      --sky-accent:  #0EA5C9;   /* accent line */
+      --sky-dark:    #0F4A60;   /* darkest text on sky */
+
+      --accent-blue:    #1E3A8A;
+      --accent-orange:  #F59E0B;
+
+      /* Typography */
+      --f-sans: "Noto Sans KR", "Inter", system-ui, sans-serif;
+      --f-eng:  "Inter", system-ui, sans-serif;
+      --f-display: "Playfair Display", serif;
+
+      /* Layout */
+      --page-margin: 14mm;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      font-family: var(--f-sans);
+      background: #D0D0D0;
+      color: var(--ink);
+    }
+
+    /* ============================================================
+       A4 PAGE
+    ============================================================ */
+
+    .page {
+      width: 210mm;
+      height: 297mm;
+      background: var(--bg) !important;
+      position: relative;
+      overflow: hidden;
+      page-break-after: always;
+      print-color-adjust: exact;
+      -webkit-print-color-adjust: exact;
+      margin: 20px auto;
+      display: block;
+    }
+
+    .page:last-child {
+      page-break-after: avoid;
+    }
+
+    @media print {
+      html, body {
+        background: none;
+        margin: 0;
+        padding: 0;
+      }
+      .page {
+        margin: 0;
+      }
+    }
+
+    /* ============================================================
+       COVER PAGE — sky-academic
+    ============================================================ */
+
+    .cover-page {
+      background: var(--bg) !important;
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+    }
+
+    /* ---------- Top bar (brand strip) ---------- */
+    .cover-top-bar {
+      width: 100%;
+      height: 14mm;
+      background: var(--sky-deep) !important;
+      display: flex;
+      align-items: center;
+      padding: 0 var(--page-margin);
+    }
+
+    .cover-brand {
+      font-family: var(--f-eng);
+      font-size: 8.5pt;
+      font-weight: 500;
+      color: #FFFFFF !important;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+    }
+
+    /* ---------- Hero area ---------- */
+    .cover-hero {
+      width: 100%;
+      flex: 1;
+      background: var(--sky-pale) !important;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      padding: 18mm var(--page-margin) 0 var(--page-margin);
+      position: relative;
+    }
+
+    /* Vertical accent rule */
+    .cover-hero::before {
+      content: '';
+      position: absolute;
+      left: var(--page-margin);
+      top: 14mm;
+      width: 3px;
+      height: 52mm;
+      background: var(--sky-deep) !important;
+    }
+
+    /* ---------- Edition badge ---------- */
+    .cover-edition {
+      font-family: var(--f-eng);
+      font-size: 8pt;
+      font-weight: 600;
+      color: var(--sky-mid) !important;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      margin-left: 10mm;
+      margin-bottom: 5mm;
+    }
+
+    /* ---------- Main title ---------- */
+    .cover-main-title {
+      font-family: var(--f-sans);
+      font-size: 32pt;
+      font-weight: 700;
+      color: var(--sky-dark) !important;
+      line-height: 1.15;
+      margin-left: 10mm;
+      margin-bottom: 6mm;
+      letter-spacing: -0.01em;
+      page-break-after: avoid;
+      break-after: avoid;
+    }
+
+    /* ---------- Subtitle ---------- */
+    .cover-subtitle {
+      font-family: var(--f-sans);
+      font-size: 13pt;
+      font-weight: 400;
+      color: var(--sky-deep) !important;
+      margin-left: 10mm;
+      letter-spacing: 0.02em;
+    }
+
+    /* ---------- Horizontal divider ---------- */
+    .cover-divider {
+      width: calc(100% - 2 * var(--page-margin));
+      height: 1px;
+      background: var(--sky-accent) !important;
+      margin: 14mm var(--page-margin) 0 var(--page-margin);
+    }
+
+    /* ---------- Visual accent block ---------- */
+    .cover-accent-block {
+      margin: 10mm var(--page-margin) 0 var(--page-margin);
+      display: flex;
+      gap: 4mm;
+      align-items: stretch;
+    }
+
+    .accent-bar {
+      width: 8mm;
+      background: var(--sky-light) !important;
+      border-left: 3px solid var(--sky-accent) !important;
+    }
+
+    .accent-text-block {
+      flex: 1;
+      background: var(--sky-light) !important;
+      padding: 5mm 6mm;
+    }
+
+    .accent-label {
+      font-family: var(--f-eng);
+      font-size: 7.5pt;
+      font-weight: 600;
+      color: var(--sky-mid) !important;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 2.5mm;
+    }
+
+    .accent-desc {
+      font-family: var(--f-sans);
+      font-size: 9pt;
+      font-weight: 400;
+      color: var(--sky-dark) !important;
+      line-height: 1.5;
+    }
+
+    /* ---------- Decorative grid pattern ---------- */
+    .cover-grid-deco {
+      position: absolute;
+      right: 14mm;
+      top: 10mm;
+      width: 52mm;
+      height: 52mm;
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-rows: repeat(6, 1fr);
+      gap: 2mm;
+      opacity: 1;
+    }
+
+    .grid-dot {
+      width: 3px;
+      height: 3px;
+      background: var(--sky-accent) !important;
+      border-radius: 50%;
+      margin: auto;
+    }
+
+    .grid-dot.dim {
+      background: var(--sky-light) !important;
+    }
+
+    /* ---------- Bottom area ---------- */
+    .cover-bottom {
+      width: 100%;
+      padding: 0 var(--page-margin);
+      margin-top: auto;
+    }
+
+    .cover-chapter-tag {
+      display: inline-block;
+      font-family: var(--f-eng);
+      font-size: 7.5pt;
+      font-weight: 600;
+      color: var(--sky-deep) !important;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      border: 1px solid var(--sky-deep) !important;
+      padding: 1.5mm 4mm;
+      margin-bottom: 8mm;
+    }
+
+    /* ---------- Bottom bar ---------- */
+    .cover-bottom-bar {
+      width: 100%;
+      height: 16mm;
+      background: var(--sky-deep) !important;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 var(--page-margin);
+      margin-top: 0;
+    }
+
+    .cover-author {
+      display: flex;
+      align-items: center;
+      gap: 3mm;
+    }
+
+    .author-label {
+      font-family: var(--f-eng);
+      font-size: 7pt;
+      font-weight: 400;
+      color: #A8D8E8 !important;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .author-name {
+      font-family: var(--f-display);
+      font-size: 11pt;
+      font-weight: 400;
+      color: #FFFFFF !important;
+      letter-spacing: 0.04em;
+    }
+
+    .cover-brand-footer {
+      font-family: var(--f-eng);
+      font-size: 7.5pt;
+      font-weight: 500;
+      color: #A8D8E8 !important;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- ============================================================
+       COVER PAGE — sky-academic
+  ============================================================ -->
+  <div class="page cover-page">
+
+    <!-- Top brand bar -->
+    <div class="cover-top-bar">
+      <span class="cover-brand eng-text">Vera's Flavor</span>
+    </div>
+
+    <!-- Hero content area -->
+    <div class="cover-hero">
+
+      <!-- Decorative dot grid (top-right) -->
+      <div class="cover-grid-deco">
+        <div class="grid-dot dim"></div><div class="grid-dot"></div><div class="grid-dot dim"></div><div class="grid-dot"></div><div class="grid-dot dim"></div><div class="grid-dot dim"></div>
+        <div class="grid-dot"></div><div class="grid-dot dim"></div><div class="grid-dot"></div><div class="grid-dot dim"></div><div class="grid-dot"></div><div class="grid-dot dim"></div>
+        <div class="grid-dot dim"></div><div class="grid-dot"></div><div class="grid-dot dim"></div><div class="grid-dot"></div><div class="grid-dot dim"></div><div class="grid-dot"></div>
+        <div class="grid-dot"></div><div class="grid-dot dim"></div><div class="grid-dot"></div><div class="grid-dot dim"></div><div class="grid-dot"></div><div class="grid-dot dim"></div>
+        <div class="grid-dot dim"></div><div class="grid-dot"></div><div class="grid-dot dim"></div><div class="grid-dot"></div><div class="grid-dot dim"></div><div class="grid-dot"></div>
+        <div class="grid-dot"></div><div class="grid-dot dim"></div><div class="grid-dot"></div><div class="grid-dot dim"></div><div class="grid-dot"></div><div class="grid-dot dim"></div>
+      </div>
+
+      <!-- Edition label -->
+      <p class="cover-edition eng-text">Bridge Edition</p>
+
+      <!-- Main title -->
+      <h1 class="cover-main-title">편입영어 문법</h1>
+
+      <!-- Subtitle -->
+      <p class="cover-subtitle">Chapter 2: 가정법</p>
+
+      <!-- Horizontal rule -->
+      <div class="cover-divider"></div>
+
+      <!-- Accent block -->
+      <div class="cover-accent-block">
+        <div class="accent-bar"></div>
+        <div class="accent-text-block">
+          <p class="accent-label">Grammar · Subjunctive Mood</p>
+          <p class="accent-desc">가정법의 핵심 구조와 출제 패턴을 체계적으로 정리한<br>편입 전문 문법 교재입니다.</p>
+        </div>
+      </div>
+
+      <!-- Chapter tag -->
+      <div class="cover-bottom" style="margin-top: 12mm;">
+        <span class="cover-chapter-tag eng-text">Chapter 02 of 12</span>
+      </div>
+
+    </div>
+
+    <!-- Bottom author bar -->
+    <div class="cover-bottom-bar">
+      <div class="cover-author">
+        <span class="author-label">Author</span>
+        <span class="author-name">Vera Park</span>
+      </div>
+      <span class="cover-brand-footer">vera's flavor</span>
+    </div>
+
+  </div>
+
+</body>
+</html>
