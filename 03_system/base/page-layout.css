@@ -105,7 +105,7 @@
     margin: 10mm auto;
     padding: var(--page-padding-y) var(--page-padding-x);
     background: var(--color-bg-page);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    border: 1px solid #E5E7EB;
     page-break-after: always;
     display: flex;
     flex-direction: column;

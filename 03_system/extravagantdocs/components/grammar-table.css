@@ -1,0 +1,60 @@
+/*
+ * grammar-table.css — Grammar / comparison / structured tables
+ *
+ * Dark-header table variant used for grammar comparison and structured
+ * grammar displays. Distinct from the generic .xd-table component
+ * (which uses a light accent header). This component uses a near-black
+ * header (#1b2a4a) that maps to --xd-color-accent-strong conceptually
+ * but the source intentionally uses a fixed dark navy — kept as #1b2a4a
+ * (close to --xd-color-accent-strong: #172554) for visual consistency
+ * with the textbook's grammar-table design language.
+ *
+ * Even-row banding uses #f7f5f0 (warm off-white — no exact token; closest
+ * is --xd-color-table-band: #f9fafb which is cooler. Kept literal for fidelity.)
+ *
+ * Applies to: .grammar-table, .comparison-table, .structured-grammar-table
+ */
+
+.grammar-table,
+.comparison-table,
+.structured-grammar-table {
+  width: 100% !important;
+  margin: var(--xd-space-md) 0 !important;
+  border-collapse: collapse !important;
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+}
+
+.grammar-table th,
+.comparison-table th,
+.structured-grammar-table th {
+  padding: var(--xd-space-xs) var(--xd-space-sm) !important;
+  border: var(--xd-rule-thin) solid #1b2a4a !important;
+  background: #1b2a4a !important;
+  color: #ffffff !important;
+  font-size: var(--xd-text-md) !important;
+  font-weight: 700 !important;
+  text-align: left !important;
+}
+
+.grammar-table td,
+.comparison-table td,
+.structured-grammar-table td {
+  padding: var(--xd-space-xs) var(--xd-space-sm) !important;
+  border: var(--xd-rule-thin) solid var(--xd-color-line) !important;
+  vertical-align: top !important;
+  line-height: var(--xd-leading-body) !important;
+  text-align: left !important;
+}
+
+/* Center-align special first column / conditional type cells */
+.structured-grammar-table .conditional-type,
+.comparison-table td:first-child {
+  text-align: center !important;
+}
+
+/* Even-row banding — warm off-white (#f7f5f0, no exact token) */
+.comparison-table tbody tr:nth-child(even) td,
+.structured-grammar-table tbody tr:nth-child(even) td {
+  background: #f7f5f0 !important;
+}

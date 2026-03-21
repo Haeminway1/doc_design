@@ -1,0 +1,53 @@
+/*
+ * answer-grid.css
+ * Component: Answer key grid (5-column layout)
+ * Selectors: .xd-answer-grid, .xd-answer-grid-title, .xd-answer-grid-table,
+ *             .xd-answer-grid-item, .xd-answer-grid-number, .xd-answer-grid-answer
+ * Template-agnostic. No body-class scoping.
+ */
+
+.xd-answer-grid {
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+}
+
+.xd-answer-grid-title {
+  margin-bottom: var(--xd-space-sm) !important;
+  padding-bottom: var(--xd-space-xs) !important;
+  border-bottom: var(--xd-rule-regular) solid var(--xd-color-accent) !important;
+  font-size: var(--xd-text-xl) !important;
+  color: var(--xd-color-accent-strong) !important;
+}
+
+.xd-answer-grid-table {
+  display: grid !important;
+  grid-template-columns: repeat(5, minmax(0, 1fr)) !important;
+  max-width: 156mm !important;
+  margin: 0 auto !important;
+  gap: 3.2mm !important;
+}
+
+.xd-answer-grid-item {
+  display: grid !important;
+  grid-template-columns: 1fr auto !important;
+  justify-content: stretch !important;
+  align-items: center !important;
+  gap: 2.2mm !important;
+  min-height: 11.5mm !important;
+  padding: 2mm 2.4mm !important;
+  border: var(--xd-rule-thin) solid var(--xd-color-line) !important;
+  background: var(--xd-color-paper) !important;
+}
+
+.xd-answer-grid-number {
+  font-family: var(--xd-font-latin) !important;
+  font-weight: 700 !important;
+  font-size: 9.4pt !important;
+  color: var(--xd-color-accent-strong) !important;
+}
+
+.xd-answer-grid-answer {
+  font-weight: 700 !important;
+  font-size: 10.2pt !important;
+  color: var(--xd-color-secondary) !important;
+}

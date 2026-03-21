@@ -346,37 +346,3 @@ body.style-template-grammar-bridge table em {
   font-style: normal !important;
 }
 
-body.style-template-grammar-bridge .xd-gb-inline-tip {
-  margin-top: 4mm !important;
-}
-
-body.style-template-grammar-bridge .xd-gb-inline-tip-card {
-  padding: 4.5mm 5mm !important;
-  border-top: 0.8mm solid var(--xd-color-secondary) !important;
-  border-right: var(--xd-rule-thin) solid #d9d1c1 !important;
-  border-bottom: var(--xd-rule-thin) solid #d9d1c1 !important;
-  border-left: var(--xd-rule-thin) solid #d9d1c1 !important;
-  background: #fbfaf7 !important;
-}
-
-body.style-template-grammar-bridge .xd-gb-inline-tip-card__eyebrow {
-  margin-bottom: 1.5mm !important;
-  color: var(--xd-color-muted) !important;
-  font-family: var(--xd-font-latin) !important;
-  font-size: 7pt !important;
-  font-weight: 700 !important;
-  letter-spacing: 0.12em !important;
-  text-transform: uppercase !important;
-}
-
-body.style-template-grammar-bridge .xd-gb-inline-tip-card__title {
-  margin: 0 0 2.8mm !important;
-  font-size: 11pt !important;
-  font-weight: 700 !important;
-  line-height: 1.35 !important;
-  color: var(--xd-color-accent-strong) !important;
-}
-
-body.style-template-grammar-bridge .xd-gb-inline-tip-card__lede p {
-  margin-bottom: 3mm !important;
-}

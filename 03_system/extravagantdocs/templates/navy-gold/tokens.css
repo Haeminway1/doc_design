@@ -1,0 +1,19 @@
+:root {
+  --xd-color-paper: #ffffff;
+  --xd-color-screen: #9fa2b2;
+  --xd-color-ink: #0a0c14;
+  --xd-color-ink-soft: #151c2e;
+  --xd-color-muted: #1b2a4a;
+  --xd-color-line: #dfc89b;
+  --xd-color-line-strong: #c5a55a;
+  --xd-color-accent: #beb17e;
+  --xd-color-accent-strong: #5b553f;
+  --xd-color-accent-soft: #fcf4d9;
+  --xd-color-secondary: #9a8248;
+  --xd-color-callout-note-bg: #fcf4d9;
+  --xd-color-callout-note-line: #9a8248;
+  --xd-color-callout-warn-bg: #ebdabb;
+  --xd-color-callout-warn-line: #726037;
+  --xd-color-table-head-bg: #5b553f;
+  --xd-color-table-band: #ced0d8;
+}

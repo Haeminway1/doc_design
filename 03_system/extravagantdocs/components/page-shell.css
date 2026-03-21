@@ -1,0 +1,57 @@
+/*
+ * page-shell.css — Legacy page shell structural layout
+ *
+ * Defines the visual frame for legacy `.page`-based HTML pages:
+ * the page box, header strip, scrollable content area, and footer strip.
+ *
+ * IMPORTANT: These selectors (.page, .page-header, .page-content, .page-footer)
+ * are LEGACY class names used by older textbook HTML fragments. They do NOT
+ * conflict with the modern page-system/page-box.css, which uses .xd-page__*.
+ * This file provides base structural styling for legacy HTML without body-class
+ * scoping so it applies whenever the extravagantdocs system is loaded.
+ *
+ * For modern HTML, prefer .xd-page / .xd-page__* from page-system/page-box.css.
+ */
+
+.page {
+  width: var(--xd-page-width) !important;
+  min-height: var(--xd-page-height) !important;
+  margin: 8mm auto !important;
+  background: #ffffff !important;
+  border: var(--xd-rule-thin) solid var(--xd-color-line) !important;
+  color: var(--xd-color-ink) !important;
+  display: flex !important;
+  flex-direction: column !important;
+  position: relative !important;
+}
+
+.page-header {
+  min-height: 8mm !important;
+  margin-bottom: 4mm !important;
+  padding-bottom: 1mm !important;
+  border-bottom: var(--xd-rule-thin) solid var(--xd-color-line) !important;
+  font-family: var(--xd-font-body) !important;
+  font-size: var(--xd-header-font-size) !important;
+  font-weight: 600 !important;
+  color: var(--xd-color-accent-strong) !important;
+}
+
+.page-content {
+  color: var(--xd-color-ink) !important;
+  font-size: var(--xd-text-body) !important;
+  line-height: var(--xd-leading-body) !important;
+}
+
+.page-footer {
+  margin-top: 3.5mm !important;
+  padding-top: 1.5mm !important;
+  border-top: var(--xd-rule-thin) solid var(--xd-color-line) !important;
+  font-size: var(--xd-footer-font-size) !important;
+  color: var(--xd-color-muted) !important;
+  text-align: center !important;
+}
+
+/* Remove trailing margin from last child of content area */
+.page-content > *:last-child {
+  margin-bottom: 0 !important;
+}

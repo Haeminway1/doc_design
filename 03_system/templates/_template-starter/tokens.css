@@ -12,7 +12,7 @@
 :root {
     /* --- Accent Colors ---
      * 템플릿의 메인 컬러를 정의합니다.
-     * bridge-refresh.css가 최종 cascade를 처리하므로 !important는 사용하지 마세요.
+     * 템플릿 토큰은 cascade 순서로 적용됩니다. !important는 사용하지 마세요.
      */
     --color-accent-primary: #2563EB;      /* 메인 컬러 (제목, 강조, 보더) */
     --color-accent-light: #EFF6FF;        /* 연한 배경색 (박스, 테이블) */

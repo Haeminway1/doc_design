@@ -1,0 +1,55 @@
+/*
+ * explanation.css
+ * Component: Detailed explanation block for answer explanations
+ * Selectors: .xd-explanation, .xd-explanation-header, .xd-answer-badge,
+ *             .xd-explanation-pair, .xd-explanation-body, .xd-explanations-page
+ * Template-agnostic. No body-class scoping.
+ */
+
+.xd-explanation {
+  margin-bottom: 0 !important;
+  padding: 3.2mm 3.4mm !important;
+  border: var(--xd-rule-thin) solid var(--xd-color-line) !important;
+  border-top: 1mm solid var(--xd-color-accent-strong) !important;
+  background: var(--xd-color-paper) !important;
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+}
+
+.xd-explanation-header {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  gap: 3mm !important;
+  margin-bottom: 2mm !important;
+}
+
+.xd-answer-badge {
+  padding: 0.5mm 2mm !important;
+  border: var(--xd-rule-thin) solid var(--xd-color-line-strong) !important;
+  background: var(--xd-color-paper) !important;
+  font-size: var(--xd-text-sm) !important;
+  font-weight: 700 !important;
+  color: var(--xd-color-accent-strong) !important;
+}
+
+.xd-explanations-page .page-content {
+  padding-bottom: 15mm !important;
+}
+
+.xd-explanation-pair {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 6mm !important;
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+}
+
+.xd-explanation-pair .xd-explanation {
+  min-height: 100% !important;
+}
+
+.xd-explanation-body {
+  font-size: 9.1pt !important;
+  line-height: 1.9 !important;
+}

@@ -1,0 +1,37 @@
+/*
+ * example-list.css — Dash-prefixed example sentence list
+ *
+ * Provides a no-bullet list with em-dash markers used for example sentences
+ * in explanations and content bodies. Each list item is positioned relative
+ * so the absolute-positioned dash marker aligns to the indent.
+ *
+ * Applies to both the explicit `.example-list` class and bare `ul` elements
+ * inside `.explanation-body`.
+ */
+
+.example-list,
+.explanation-body ul {
+  list-style: none !important;
+  padding-left: 0 !important;
+  margin: 2.2mm 0 4.6mm !important;
+}
+
+.example-list li,
+.explanation-body ul li {
+  position: relative !important;
+  padding-left: 13.5mm !important;
+  margin-bottom: 5.2mm !important;
+  line-height: 1.92 !important;
+  text-align: left !important;
+}
+
+/* Em-dash marker — positioned left of text indent */
+.example-list li::before,
+.explanation-body ul li::before {
+  content: '\2014' !important; /* — */
+  position: absolute !important;
+  left: 2.2mm !important;
+  top: 0 !important;
+  color: var(--xd-color-accent-strong) !important;
+  font-weight: 700 !important;
+}

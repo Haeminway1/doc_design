@@ -1,0 +1,163 @@
+/*
+ * problem.css — Problem block component
+ *
+ * Core exam problem layout used across all textbook types. Provides:
+ *   - .xd-problem        — problem container with bottom rule and page-break guard
+ *   - .xd-problem__shell — grid layout: 11mm gutter + 1fr content
+ *   - .xd-problem__number  — square number badge (dark background, white text)
+ *   - .xd-problem__type-badge  — optional type label tag
+ *   - .xd-problem__instruction — bold instruction line above the stem
+ *   - .xd-problem__stem        — problem body text
+ *   - .xd-problem__choices     — 2-column choice list (default)
+ *   - .xd-problem__choice      — single choice item (grid: marker + text)
+ *   - .xd-problem__choice-marker — circled number marker (①②③④⑤)
+ *   - .xd-problem__choice-text   — choice body text
+ *
+ * Variant: .xd-problem--compact — tighter spacing for dense problem sets
+ *
+ * Notes:
+ *   - .problem-number uses #111111 (near-black; closest token is
+ *     --xd-color-ink: #111827, kept literal for exact design match)
+ *   - .problem-type-badge bg uses #f9fafb (== --xd-color-table-band)
+ *   - .problem-instruction color #20242b maps to --xd-color-ink (close enough;
+ *     kept literal as it is slightly different from #111827)
+ *   - columns/column-gap on .xd-problem__choices are intentionally NOT
+ *     !important — paged.js and template overrides need to override these.
+ *
+ * Also provides legacy class mapping:
+ *   .problem, .problem--xd .problem-shell, .problem-number, etc.
+ *   for backward-compatible HTML that uses un-prefixed class names.
+ *
+ * Source: bridges/grammar-bridge.css lines 225-320
+ */
+
+/* ── Container ──────────────────────────────────────────────────────── */
+
+.xd-problem,
+.problem {
+  margin: 0 0 var(--xd-space-sm) !important;
+  padding: 0 0 3mm !important;
+  border-bottom: var(--xd-rule-thin) solid var(--xd-color-line) !important;
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+  background: transparent !important;
+}
+
+/* ── Shell grid (gutter + content) ─────────────────────────────────── */
+
+.xd-problem--xd .xd-problem__shell,
+.problem--xd .problem-shell {
+  display: grid !important;
+  grid-template-columns: 11mm 1fr !important;
+  gap: 4.5mm !important;
+}
+
+/* Problem-set page top padding */
+.page--paginated.xd-problem-set-page .page-content,
+.page--fixed.xd-problem-set-page .page-content,
+.xd-problem-set-page {
+  padding-top: 14mm !important;
+}
+
+/* Gutter vertical offset */
+.xd-problem--xd .xd-problem__gutter,
+.problem--xd .problem-gutter {
+  padding-top: 0.8mm !important;
+}
+
+/* ── Number badge ───────────────────────────────────────────────────── */
+
+.xd-problem__number,
+.problem-number {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-width: 8.5mm !important;
+  height: 8.5mm !important;
+  border: var(--xd-rule-thin) solid #111111 !important;
+  background: #111111 !important;
+  font-family: var(--xd-font-latin) !important;
+  font-size: 8pt !important;
+  font-weight: 700 !important;
+  color: #ffffff !important;
+}
+
+/* ── Type badge ─────────────────────────────────────────────────────── */
+
+.xd-problem__type-badge,
+.problem-type-badge {
+  padding: 0.5mm 2mm !important;
+  border: var(--xd-rule-thin) solid var(--xd-color-line) !important;
+  background: #f9fafb !important; /* == --xd-color-table-band */
+  font-size: var(--xd-text-xs) !important;
+  color: var(--xd-color-muted) !important;
+}
+
+/* ── Instruction ────────────────────────────────────────────────────── */
+
+.xd-problem__instruction,
+.problem-instruction {
+  margin-bottom: 1.6mm !important;
+  font-size: var(--xd-text-sm) !important;
+  font-weight: 600 !important;
+  color: #20242b !important; /* near --xd-color-ink; kept literal */
+}
+
+/* ── Stem ───────────────────────────────────────────────────────────── */
+
+.xd-problem__stem,
+.problem-stem {
+  margin-bottom: 2.8mm !important;
+  font-size: 10.7pt !important;
+  line-height: 1.74 !important;
+  color: var(--xd-color-ink) !important;
+}
+
+/* ── Choices list ───────────────────────────────────────────────────── */
+
+.xd-problem__choices,
+.problem-choices {
+  margin: 0 !important;
+  padding-left: 4mm !important;
+  list-style: none !important;
+  columns: 2;
+  column-gap: 8mm;
+}
+
+.xd-problem__choices--single-column,
+.problem-choices--single-column {
+  columns: 1;
+}
+
+/* ── Single choice item ─────────────────────────────────────────────── */
+
+.xd-problem__choices li,
+.problem-choices li {
+  display: grid !important;
+  grid-template-columns: 7mm 1fr !important;
+  align-items: start !important;
+  gap: 2.6mm !important;
+  margin-bottom: 4.2mm !important;
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+  line-height: 1.78 !important;
+  font-size: 8.2pt !important;
+  padding-left: 2mm !important;
+}
+
+/* ── Choice marker (①②③④⑤) ────────────────────────────────────── */
+
+.xd-problem__choice-marker,
+.problem-choice-marker {
+  font-family: var(--xd-font-latin) !important;
+  font-size: 8pt !important;
+  font-weight: 700 !important;
+  color: var(--xd-color-secondary) !important;
+}
+
+/* ── Choice text ────────────────────────────────────────────────────── */
+
+.xd-problem__choice-text,
+.problem-choice-text {
+  color: var(--xd-color-ink-soft) !important;
+}

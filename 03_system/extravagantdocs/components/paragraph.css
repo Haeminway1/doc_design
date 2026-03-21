@@ -1,0 +1,29 @@
+/*
+ * paragraph.css — Content paragraph and inline code defaults
+ *
+ * Provides typography defaults for paragraph text and inline code
+ * within textbook content areas. Applies to both the legacy
+ * `.content-paragraph` class and bare `p` elements inside `.page-content`.
+ *
+ * Inline `code` elements receive a boxed accent treatment (no background
+ * gradient — PDF-safe solid color only).
+ */
+
+.content-paragraph,
+.page-content p {
+  margin-bottom: var(--xd-space-sm) !important;
+  font-size: var(--xd-text-body) !important;
+  line-height: var(--xd-leading-body) !important;
+  color: var(--xd-color-ink) !important;
+  text-align: left !important;
+}
+
+code {
+  background: var(--xd-color-accent-soft) !important;
+  border: var(--xd-rule-thin) solid var(--xd-color-line) !important;
+  padding: 0.4mm 1.2mm !important;
+  border-radius: 0 !important;
+  color: var(--xd-color-accent-strong) !important;
+  font-family: var(--xd-font-latin) !important;
+  font-size: 0.95em !important;
+}

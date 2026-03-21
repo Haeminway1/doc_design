@@ -1,4 +1,4 @@
-.word-entry {
+.xd-word-entry {
   margin: 0 0 var(--xd-space-md) !important;
   padding: var(--xd-space-md) !important;
   border: var(--xd-rule-thin) solid var(--xd-color-line) !important;
@@ -7,7 +7,7 @@
   page-break-inside: avoid !important;
 }
 
-.word-header {
+.xd-word-entry__header {
   display: flex !important;
   align-items: baseline !important;
   flex-wrap: wrap !important;
@@ -17,7 +17,7 @@
   border-bottom: var(--xd-rule-thin) solid var(--xd-color-accent) !important;
 }
 
-.word-title {
+.xd-word-entry__title {
   margin: 0 !important;
   font-family: var(--xd-font-latin) !important;
   font-size: 12.5pt !important;
@@ -26,14 +26,14 @@
   color: var(--xd-color-accent-strong) !important;
 }
 
-.word-pronunciation {
+.xd-word-entry__pronunciation {
   font-family: var(--xd-font-latin) !important;
   font-size: var(--xd-text-sm) !important;
   line-height: 1.3 !important;
   color: var(--xd-color-muted) !important;
 }
 
-.word-pos {
+.xd-word-entry__pos {
   margin-left: auto !important;
   padding: 0.3mm 1.8mm !important;
   border: var(--xd-rule-thin) solid var(--xd-color-line) !important;
@@ -45,13 +45,13 @@
   color: var(--xd-color-accent-strong) !important;
 }
 
-.word-body {
+.xd-word-entry__body {
   font-size: var(--xd-text-sm) !important;
   line-height: 1.65 !important;
   color: var(--xd-color-ink) !important;
 }
 
-.word-meaning {
+.xd-word-entry__meaning {
   margin: 0 0 1.8mm !important;
   font-size: var(--xd-text-md) !important;
   line-height: 1.45 !important;
@@ -59,14 +59,14 @@
   color: var(--xd-color-ink) !important;
 }
 
-.word-example {
+.xd-word-entry__example {
   margin: 0 !important;
   padding: 2.2mm 2.6mm !important;
   border-left: var(--xd-rule-regular) solid var(--xd-color-accent) !important;
   background: #faf8f2 !important;
 }
 
-.example-en {
+.xd-word-entry__example-en {
   margin: 0 0 1mm !important;
   font-family: var(--xd-font-latin) !important;
   font-size: var(--xd-text-sm) !important;
@@ -74,25 +74,25 @@
   color: var(--xd-color-ink) !important;
 }
 
-.example-ko {
+.xd-word-entry__example-ko {
   margin: 0 !important;
   font-size: var(--xd-text-xs) !important;
   line-height: 1.6 !important;
   color: var(--xd-color-muted) !important;
 }
 
-.word-entry--compact {
+.xd-word-entry--compact {
   padding: 2.8mm !important;
 }
 
-.word-entry--compact .word-title {
+.xd-word-entry--compact .xd-word-entry__title {
   font-size: 11pt !important;
 }
 
-.word-entry--compact .word-meaning {
+.xd-word-entry--compact .xd-word-entry__meaning {
   font-size: var(--xd-text-sm) !important;
 }
 
-.word-entry--compact .word-example {
+.xd-word-entry--compact .xd-word-entry__example {
   padding: 1.8mm 2.2mm !important;
 }

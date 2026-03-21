@@ -34,14 +34,14 @@
 
 /* 1. 핵심 용어 강조 (딥블루) */
 .highlight-key {
-    color: #1E3A8A;
+    color: var(--highlight-key-color);
     font-weight: 600;
 }
 
 /* 2. 배경 하이라이트 (형광펜) */
 .highlight-bg {
-    background: #FEF3C7;
-    color: #92400E;
+    background: var(--highlight-bg-color);
+    color: var(--highlight-bg-text);
     padding: 1pt 3pt;
     border-radius: 2px;
     font-weight: 500;
@@ -49,28 +49,28 @@
 
 /* 3. 영문 강조 (스카이블루) */
 .highlight-eng {
-    color: #0EA5E9;
+    color: var(--highlight-eng-color);
     font-weight: 500;
 }
 
 /* --- 추가 하이라이트 변형 --- */
 .highlight-concept {
-    color: #F97316;
+    color: var(--color-warn, #F97316);
     font-weight: 600;
 }
 
 .highlight-answer {
-    color: #22C55E;
+    color: var(--color-success, #22C55E);
     font-weight: 600;
 }
 
 .highlight-strong {
-    background: #FEF3C7;
-    color: #92400E;
+    background: var(--highlight-bg-color);
+    color: var(--highlight-bg-text);
     font-weight: 700;
     padding: 2pt 4pt;
     border-radius: 3px;
-    border-left: 3px solid #F59E0B;
+    border-left: 3px solid var(--color-caution, #F59E0B);
 }
 
 /* --- 박스 유틸리티 --- */

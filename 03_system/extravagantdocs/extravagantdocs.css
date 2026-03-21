@@ -8,9 +8,29 @@
 @import url('page-system/breaks.css');
 @import url('page-system/preview.css');
 
-@import url('components/section.css');
-@import url('components/table.css');
-@import url('components/callout.css');
+/* Structural */
+@import url('components/page-shell.css');
 @import url('components/cover.css');
+@import url('components/section.css');
+@import url('components/toc.css');
+
+/* Content blocks */
+@import url('components/paragraph.css');
+@import url('components/problem.css');
+@import url('components/explanation.css');
+@import url('components/answer-grid.css');
+@import url('components/example-list.css');
+
+/* Info boxes */
+@import url('components/callout.css');
+@import url('components/tip-box.css');
+@import url('components/qa-card.css');
+@import url('components/formula-card.css');
+
+/* Tables */
+@import url('components/table.css');
+@import url('components/grammar-table.css');
+
+/* Other */
 @import url('components/question-block.css');
 @import url('components/word-entry.css');

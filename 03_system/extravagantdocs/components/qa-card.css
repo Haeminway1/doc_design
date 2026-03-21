@@ -1,0 +1,62 @@
+/*
+ * qa-card.css
+ * Component: Q&A card with eyebrow, question, answer, and dash-list
+ * Promoted from .xd-gb-faq-card — renamed to generic .xd-qa-card
+ * Selectors: .xd-qa-card, .xd-qa-card__eyebrow, .xd-qa-card__question,
+ *             .xd-qa-card__answer, .xd-qa-card__list
+ * Template-agnostic. No body-class scoping.
+ */
+
+.xd-qa-card {
+  padding: 4.4mm 4.8mm 4.8mm !important;
+  border: var(--xd-rule-thin) solid var(--xd-color-line) !important;
+  border-top: 0.9mm solid var(--xd-color-accent-strong) !important;
+  background: var(--xd-color-paper) !important;
+}
+
+.xd-qa-card__eyebrow {
+  margin-bottom: 2.2mm !important;
+  font-family: var(--xd-font-latin) !important;
+  font-size: 7.2pt !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.18em !important;
+  color: var(--xd-color-secondary) !important;
+  text-transform: uppercase !important;
+}
+
+.xd-qa-card__question {
+  margin-bottom: 3.4mm !important;
+  padding-bottom: 2.4mm !important;
+  border-bottom: var(--xd-rule-thin) solid var(--xd-color-line) !important;
+  font-size: 10.6pt !important;
+  font-weight: 700 !important;
+  line-height: 1.55 !important;
+  color: var(--xd-color-accent-strong) !important;
+}
+
+.xd-qa-card__answer p {
+  margin-bottom: 4.2mm !important;
+  line-height: 1.92 !important;
+}
+
+.xd-qa-card__list {
+  list-style: none !important;
+  margin: 1.2mm 0 0 !important;
+  padding-left: 0 !important;
+}
+
+.xd-qa-card__list li {
+  position: relative !important;
+  padding-left: 13.5mm !important;
+  margin-bottom: 4.8mm !important;
+  line-height: 1.92 !important;
+}
+
+.xd-qa-card__list li::before {
+  content: '—' !important;
+  position: absolute !important;
+  left: 2.2mm !important;
+  top: 0 !important;
+  color: var(--xd-color-accent-strong) !important;
+  font-weight: 700 !important;
+}

@@ -1,0 +1,83 @@
+/*
+ * formula-card.css
+ * Component: Formula card with head/body/rows layout
+ * Promoted from .xd-gb-formula-card — renamed to generic .xd-formula-card
+ * Selectors: .xd-formula-grid, .xd-formula-card, .xd-formula-card__head,
+ *             .xd-formula-card__title, .xd-formula-card__meaning,
+ *             .xd-formula-card__body, .xd-formula-card__row,
+ *             .xd-formula-card__label, .xd-formula-card__formula,
+ *             .xd-formula-card__example
+ * Template-agnostic. No body-class scoping.
+ */
+
+.xd-formula-grid {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  gap: 4.5mm !important;
+  margin-top: 4.5mm !important;
+}
+
+.xd-formula-card {
+  border: var(--xd-rule-thin) solid var(--xd-color-line) !important;
+  border-top: 0.9mm solid var(--xd-color-accent-strong) !important;
+  background: var(--xd-color-paper) !important;
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+}
+
+.xd-formula-card__head {
+  padding: 3.4mm 3.8mm 2.8mm !important;
+  border-bottom: var(--xd-rule-thin) solid var(--xd-color-line) !important;
+  background: var(--xd-color-table-band) !important;
+}
+
+.xd-formula-card__title {
+  margin: 0 0 1.6mm !important;
+  font-size: 10.2pt !important;
+  font-weight: 700 !important;
+  color: var(--xd-color-accent-strong) !important;
+}
+
+.xd-formula-card__meaning {
+  font-size: 8.6pt !important;
+  line-height: 1.65 !important;
+  color: var(--xd-color-ink-soft) !important;
+}
+
+.xd-formula-card__body {
+  padding: 3.4mm 3.8mm 3.8mm !important;
+}
+
+.xd-formula-card__row + .xd-formula-card__row {
+  margin-top: 3.8mm !important;
+  padding-top: 3.6mm !important;
+  border-top: var(--xd-rule-thin) solid var(--xd-color-line) !important;
+}
+
+.xd-formula-card__label {
+  margin-bottom: 1.4mm !important;
+  font-size: 7.6pt !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.12em !important;
+  color: var(--xd-color-secondary) !important;
+  text-transform: uppercase !important;
+}
+
+.xd-formula-card__formula {
+  margin-bottom: 1.9mm !important;
+  font-size: 9pt !important;
+  line-height: 1.72 !important;
+  color: var(--xd-color-accent-strong) !important;
+}
+
+.xd-formula-card__example {
+  font-size: 8.8pt !important;
+  line-height: 1.78 !important;
+  color: var(--xd-color-ink) !important;
+}
+
+.xd-formula-card__example br {
+  display: block !important;
+  content: '' !important;
+  margin-top: 1.7mm !important;
+}

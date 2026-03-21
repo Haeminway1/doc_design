@@ -1,0 +1,156 @@
+/* =================================================================== */
+/* Navy Gold Template — Design Tokens                                  */
+/* grammar-bridge, syntax-bridge, reading-bridge 시리즈               */
+/* Vera's Document Studio                                              */
+/* =================================================================== */
+
+/* 이 파일은 base/page-layout.css의 :root 변수를 오버라이드합니다 */
+
+:root {
+    /* --- Accent Colors --- */
+    --color-accent-primary: #1B2A4A;      /* 딥 네이비 (메인) */
+    --color-accent-light: #E8EAF6;        /* 연한 네이비 배경 */
+    --color-accent-dark: #1B2A4A;         /* 진한 네이비 */
+    --color-accent-secondary: #C5A55A;    /* 골드 (보조) */
+
+    /* --- Semantic Colors --- */
+    --color-concept-bg: #E8EAF6;
+    --color-concept-border: #1B2A4A;
+    --color-example-bg: #FFF3E0;
+    --color-example-border: #C5A55A;
+    --color-warning-bg: #FFEBEE;
+    --color-warning-border: #B71C1C;
+
+    /* --- Brand Palette --- */
+    --color-navy-deep: #1B2A4A;
+    --color-gold: #C5A55A;
+    --color-gold-soft: #f4e3a0;
+
+    /* --- Background Tones --- */
+    --color-bg-subtle: #FAFAF7;
+    --color-bg-muted: #F5F5F0;
+    --color-bg-ivory: #FAFAF7;
+
+    /* --- Text & Border --- */
+    --color-text-primary: #2D2D2D;
+    --color-text-secondary: #444444;
+    --color-text-muted: #7a7a7a;
+    --color-border-default: #ddd6c8;
+    --color-border-strong: #C5A55A;
+
+    /* --- Typography --- */
+    --font-accent: 'Noto Sans KR', 'Malgun Gothic', sans-serif;
+
+    /* --- Type Scale --- */
+    --text-xs: 7.5pt;
+    --text-sm: 8.5pt;
+    --text-base: 9.5pt;
+    --text-md: 10pt;
+    --text-lg: 11pt;
+    --text-xl: 13.5pt;
+    --text-2xl: 18pt;
+    --text-3xl: 25pt;
+
+    /* --- Leading --- */
+    --leading-tight: 1.35;
+    --leading-normal: 1.65;
+    --leading-relaxed: 1.75;
+
+    /* --- Spacing --- */
+    --page-padding-y: 14mm;
+    --page-padding-x: 16mm;
+
+    /* --- Shape --- */
+    --radius-sm: 0px;
+    --radius-md: 0px;
+    --radius-lg: 0px;
+
+    /* --- Reading-specific --- */
+    --passage-font-size: 9.5pt;
+    --passage-line-height: 1.85;
+    --choice-font-size: 9pt;
+    --header-font-size: 7.8pt;
+    --footer-font-size: 7.4pt;
+
+    /* --- Header/Footer Style --- */
+    --header-border-style: solid;
+    --header-border-color: var(--color-gold);
+
+    /* --- Table Style --- */
+    --table-header-bg: var(--color-accent-primary);
+    --table-header-border: 2px solid var(--color-accent-primary);
+    --table-border-style: solid;
+}
+
+/* --- Component Overrides --- */
+
+/* Concept Box — navy left border */
+.concept-box {
+    border-left: 3px solid var(--color-concept-border);
+    background-color: var(--color-concept-bg);
+    border-radius: 0px;
+}
+
+/* Tip Box — green tones (intentionally distinct from concept) */
+.tip-box {
+    border-left: 3px solid #33691E;
+    background-color: #F1F8E9;
+    border-radius: 0px;
+}
+
+/* Rule Box — gold accent */
+.rule-box {
+    border-left: 3px solid var(--color-gold);
+    background-color: var(--color-example-bg);
+    border-radius: 0px;
+}
+
+/* Warning Box — red accent */
+.warning-box {
+    border-left: 3px solid var(--color-warning-border);
+    background-color: var(--color-warning-bg);
+    border-radius: 0px;
+}
+
+/* Passage — gold left rule on ivory */
+.passage {
+    border-left: 3px solid var(--color-gold);
+    background-color: var(--color-bg-ivory);
+    border-radius: 0px;
+}
+
+/* Answer / Explanation blocks — navy left rule */
+.answer-grid,
+.explanation {
+    border-left: 3px solid var(--color-accent-primary);
+    border-radius: 0px;
+}
+
+/* Problem number badge — navy pill */
+.problem-number {
+    background: var(--color-accent-primary);
+    color: #ffffff;
+    border-radius: 999px;
+    border: none;
+}
+
+/* Choice markers — gold ring, navy numeral */
+.problem-choices li::before {
+    border: 1px solid var(--color-gold);
+    background: #ffffff;
+    color: var(--color-navy-deep);
+    border-radius: 50%;
+}
+
+/* Table header — navy fill */
+table thead th,
+.grammar-table th,
+.comparison-table th {
+    background: var(--color-accent-primary);
+    color: #ffffff;
+}
+
+/* Cover Background */
+.cover-background-image {
+    background-image: url('../../05_assets/backgrounds/backgroundGMBR.png');
+}

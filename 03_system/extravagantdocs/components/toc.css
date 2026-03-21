@@ -1,0 +1,112 @@
+/*
+ * toc.css
+ * Component: Table of contents structure with dot leaders and page numbers
+ * Extracted from adapters/paged-native.css (lines 176-277) — re-scoped to standalone
+ * Selectors: .toc--upgraded-legacy, .toc-title, .toc-header, .toc-part-title,
+ *             .toc-upgraded-part-title, .toc-upgraded-section, .toc-list,
+ *             .toc-item, .toc-item .title, .toc-item .dots, .toc-item .page-num
+ * Template-agnostic. No body-class or renderer-class scoping.
+ */
+
+.toc--upgraded-legacy .toc-title {
+  margin: 0 0 5mm !important;
+}
+
+.toc--upgraded-legacy--balanced {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  column-gap: 10mm !important;
+  align-content: start !important;
+}
+
+.toc--upgraded-legacy--balanced .toc-title {
+  grid-column: 1 / -1 !important;
+}
+
+.toc-upgraded-section + .toc-upgraded-section {
+  margin-top: 3mm !important;
+}
+
+.toc--upgraded-legacy--balanced .toc-upgraded-section {
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+}
+
+.toc--upgraded-legacy--balanced .toc-upgraded-section + .toc-upgraded-section {
+  margin-top: 0 !important;
+}
+
+.toc-upgraded-part-title {
+  margin: 0 0 2mm !important;
+  padding-top: 2.4mm !important;
+  border-top: var(--xd-rule-thin) solid var(--xd-color-line) !important;
+  font-size: 9.8pt !important;
+  line-height: 1.35 !important;
+  font-weight: 700 !important;
+  color: var(--xd-color-accent-strong) !important;
+}
+
+.toc-header {
+  margin: 0 0 5mm !important;
+  font-size: 15pt !important;
+  line-height: 1.1 !important;
+  font-weight: 700 !important;
+  letter-spacing: 0.04em !important;
+  color: var(--xd-color-accent-strong) !important;
+}
+
+.toc-part-title {
+  margin: 0 0 2mm !important;
+  padding-top: 2.6mm !important;
+  border-top: var(--xd-rule-thin) solid var(--xd-color-line) !important;
+  font-size: 9.8pt !important;
+  line-height: 1.35 !important;
+  font-weight: 700 !important;
+  color: var(--xd-color-accent-strong) !important;
+}
+
+.toc-list {
+  list-style: none !important;
+  margin: 0 0 4mm !important;
+  padding: 0 !important;
+}
+
+.toc-item {
+  display: flex !important;
+  align-items: baseline !important;
+  gap: 1.6mm !important;
+  margin: 0 0 1.4mm !important;
+  font-size: 9.2pt !important;
+  line-height: 1.35 !important;
+  color: var(--xd-color-text) !important;
+}
+
+.toc-item::before {
+  content: none !important;
+}
+
+.toc-item .title {
+  flex: 0 1 auto !important;
+  min-width: 0 !important;
+}
+
+.toc-item .title b,
+.toc-item .title strong {
+  color: var(--xd-color-accent-strong) !important;
+}
+
+.toc-item .dots {
+  flex: 1 1 auto !important;
+  min-width: 6mm !important;
+  height: 0 !important;
+  border-bottom: 1px dotted var(--xd-color-line-strong) !important;
+  transform: translateY(-1.2mm) !important;
+}
+
+.toc-item .page-num {
+  flex: 0 0 auto !important;
+  min-width: 10mm !important;
+  text-align: right !important;
+  font-weight: 600 !important;
+  color: var(--xd-color-muted) !important;
+}

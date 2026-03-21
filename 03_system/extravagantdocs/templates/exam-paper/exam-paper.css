@@ -150,24 +150,6 @@ body.style-template-exam-paper .problem--xd .problem-shell {
   gap: 4.4mm !important;
 }
 
-body.style-template-exam-paper .problem--xd .problem-gutter {
-  padding-top: 0.8mm !important;
-}
-
-body.style-template-exam-paper .problem-number {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  min-width: 8.5mm !important;
-  height: 8.5mm !important;
-  border: var(--xd-rule-thin) solid #111111 !important;
-  background: #111111 !important;
-  font-family: var(--xd-font-latin) !important;
-  font-size: 8pt !important;
-  font-weight: 700 !important;
-  color: #ffffff !important;
-}
-
 body.style-template-exam-paper .problem-type-badge {
   display: inline-flex !important;
   align-items: center !important;
@@ -195,18 +177,6 @@ body.style-template-exam-paper .problem-stem {
   color: var(--xd-color-ink) !important;
 }
 
-body.style-template-exam-paper .problem-choices {
-  margin: 0 !important;
-  padding-left: 4mm !important;
-  list-style: none !important;
-  columns: 2;
-  column-gap: 8mm;
-}
-
-body.style-template-exam-paper .problem-choices--single-column {
-  columns: 1;
-}
-
 body.style-template-exam-paper .problem-choices li {
   display: grid !important;
   grid-template-columns: 7mm 1fr !important;
@@ -225,10 +195,6 @@ body.style-template-exam-paper .problem-choice-marker {
   font-size: 8pt !important;
   font-weight: 700 !important;
   color: var(--xd-color-accent-strong) !important;
-}
-
-body.style-template-exam-paper .problem-choice-text {
-  color: var(--xd-color-ink-soft) !important;
 }
 
 body.style-template-exam-paper .problem:last-child,

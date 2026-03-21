@@ -517,7 +517,6 @@ function resolveStyles(book, pages, options = {}) {
 
   const corePath = path.join(SYSTEM_DIR, 'vera-core.css');
   const templatePath = resolveLegacyTemplatePath(book);
-  const refreshPath = path.join(SYSTEM_DIR, 'base', 'bridge-refresh.css');
   if (!fs.existsSync(templatePath)) {
     throw new Error(`Template not found: ${templatePath}`);
   }
@@ -533,10 +532,6 @@ function resolveStyles(book, pages, options = {}) {
         styleChunks.push(sanitizeLegacyPalette(resolveImports(legacyStylePath)));
       }
     }
-  }
-
-  if (fs.existsSync(refreshPath)) {
-    styleChunks.push(resolveImports(refreshPath));
   }
 
   if (runtime) {
@@ -1234,48 +1229,6 @@ function renderPagedFixedTocPage(page) {
 
 function sanitizeLegacyPalette(html) {
   return String(html || '')
-    .replace(/linear-gradient\(([^)]*)\)/gi, (_, inner) => {
-      const colorMatch = String(inner || '').match(/(#[0-9a-fA-F]{3,8}|var\(--[^)]+\))/);
-      return colorMatch ? colorMatch[1] : '#1B2A4A';
-    })
-    .replace(/var\(--color-deep-blue\)/g, 'var(--color-navy-deep)')
-    .replace(/var\(--color-sea-blue\)/g, 'var(--color-sky)')
-    .replace(/var\(--color-warm-orange\)/g, 'var(--color-gold)')
-    .replace(/#3498db/gi, '#5ca9e6')
-    .replace(/#2980b9/gi, '#1B2A4A')
-    .replace(/#6c96c6/gi, '#5ca9e6')
-    .replace(/#345c85/gi, '#1B2A4A')
-    .replace(/#0ea5e9/gi, '#5ca9e6')
-    .replace(/#0284c7/gi, '#5ca9e6')
-    .replace(/#0369a1/gi, '#1B2A4A')
-    .replace(/#27ae60/gi, '#c5a55a')
-    .replace(/#2ecc71/gi, '#f4e3a0')
-    // verajin 박스 색상 보존: #33691e(tip), #e65100(structure), #b71c1c(trap),
-    // #283593(logic), #1a237e(logic-text), #e8eaf6(concept-bg), #f1f8e9(tip-bg),
-    // #ffebee(warning-bg), #FFF3E0(structure-bg), #F1F8E9(tip-bg) — 리맵핑 제거
-    .replace(/#16a34a/gi, '#c5a55a')
-    .replace(/#10b981/gi, '#5ca9e6')
-    .replace(/#e9a266/gi, '#c5a55a')
-    .replace(/#c0392b/gi, '#c84c4c')
-    .replace(/#ef4444/gi, '#c84c4c')
-    .replace(/#e9f7fd/gi, '#eef7ff')
-    // Legacy blue accents -> Navy
-    .replace(/#2563EB/gi, '#1B2A4A')
-    .replace(/#1E3A8A/gi, '#1B2A4A')
-    .replace(/#2c3e50/gi, '#1B2A4A')
-    .replace(/#5d6d7e/gi, '#7a7a7a')
-    .replace(/#7f8c8d/gi, '#7a7a7a')
-    // Purple -> Navy (reading-basic royal-purple 제거)
-    .replace(/#9B59B6/gi, '#1B2A4A')
-    .replace(/#8E44AD/gi, '#1B2A4A')
-    .replace(/#6C3483/gi, '#1B2A4A')
-    .replace(/#F5EEF8/gi, '#FAFAF7')
-    .replace(/#7C3AED/gi, '#1B2A4A')
-    .replace(/#6D28D9/gi, '#1B2A4A')
-    .replace(/#F3E5F5/gi, '#EEF3FA')
-    .replace(/#CE93D8/gi, '#7B9CC5')
-    .replace(/#7B1FA2/gi, '#1B2A4A')
-    .replace(/#9333EA/gi, '#1B2A4A')
     // Preserve gradient underline highlights (transparent XX%, #color XX%)
     // Strip other linear-gradient to first solid color
     .replace(/linear-gradient\(([^)]*)\)/gi, (match, inner) => {
@@ -1293,13 +1246,7 @@ function sanitizeLegacyPalette(html) {
       return hex;
     })
     // Large border-radius (cosmetic cards) -> subtle
-    .replace(/border-radius\s*:\s*1[2-9]px/gi, 'border-radius: 6px')
-    .replace(/border-radius\s*:\s*[2-9]\dpx/gi, 'border-radius: 6px')
-    // Strip !important from :root variable declarations so bridge-refresh wins
-    .replace(/(--color-[a-z-]+:\s*[^;]+?)\s*!important/gi, '$1')
-    .replace(/(--radius-[a-z-]+:\s*[^;]+?)\s*!important/gi, '$1')
-    .replace(/(--table-[a-z-]+:\s*[^;]+?)\s*!important/gi, '$1')
-    .replace(/(--header-[a-z-]+:\s*[^;]+?)\s*!important/gi, '$1');
+    .replace(/border-radius\s*:\s*(?:1[2-9]|[2-9]\d|\d{3,})\s*px/gi, 'border-radius: 6px');
 }
 
 function stripLegacyEmoji(html) {
@@ -1309,7 +1256,8 @@ function stripLegacyEmoji(html) {
 }
 
 function extractLegacyPagePayload(html) {
-  const $ = cheerio.load(stripLegacyEmoji(sanitizeLegacyPalette(html)));
+  // Callers already sanitize via sanitizeLegacyPalette — only strip emoji here
+  const $ = cheerio.load(stripLegacyEmoji(html));
   const $page = $('.page').first();
   if (!$page.length) return null;
 

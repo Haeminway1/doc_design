@@ -14,11 +14,20 @@ doc_design/
 │   └── output/           #   html_src/ → html/ → pdf/
 ├── 03_system/            # 디자인 시스템
 │   ├── base/             #   reset, page-layout, print, utilities
-│   ├── components/       #   20종 컴포넌트 CSS
-│   ├── templates/        #   8종 시각 테마 (ocean-blue, sky-academic 등)
-│   └── vera-core.css     #   통합 import
+│   ├── components/       #   vera-core 컴포넌트 CSS
+│   ├── templates/        #   vera-core 시각 테마
+│   ├── vera-core.css     #   vera-core 통합 import (레거시 매니페스트용)
+│   └── extravagantdocs/  #   XD 디자인 시스템 (주력)
+│       ├── foundation/   #     토큰, 리셋, 타이포, 프린트
+│       ├── page-system/  #     페이지 박스, 러닝헤더, 브레이크
+│       ├── components/   #     17종 컴포넌트 (.xd- prefix)
+│       ├── templates/    #     21종 시각 테마 (토큰 파이프라인 생성)
+│       ├── adapters/     #     paged-native, browser-print
+│       └── bridges/      #     레거시 마크업 호환 (임시)
 ├── 04_scripts/           # 빌드 스크립트
-│   ├── assemble.js       #   YAML → 최종 HTML 조립
+│   ├── build-textbook.js #   XD YAML → 최종 HTML 조립 (주력)
+│   ├── assemble.js       #   레거시 YAML → HTML 조립
+│   ├── generate-template.js  # 팔레트 → XD 템플릿 생성
 │   ├── generate-textbook-pdf.js  # HTML → PDF (Puppeteer)
 │   └── extract-*.js      #   원본 HTML → JSON/fragments 추출 (11종)
 ├── 05_assets/            # 폰트, 배경이미지
@@ -31,20 +40,23 @@ doc_design/
 ```
 Source HTML → extract-*.js → JSON + HTML fragments + YAML manifest
                                       ↓
-                                assemble.js --book <id|all>
+                        XD 매니페스트 (*-xd.yaml):   build-textbook.js --book <id>
+                        레거시 매니페스트:             assemble.js --book <id|all>
                                       ↓
                               output/html_src/*.html
                                       ↓
                           generate-textbook-pdf.js <id|all>
                                       ↓
                               output/pdf/*.pdf
+
+팔레트 → 템플릿:  generate-template.js --palette <1-100>
 ```
 
 ## 핵심 규칙
 
-1. **PDF 안전 CSS만 사용** — gradient, box-shadow, text-shadow, rgba, opacity, backdrop-filter 금지. 솔리드 컬러 + `!important`. 상세: `.claude/docs/design-rules.md`
-2. **3-Layer CSS 구조 준수** — Base(공통) → Components(재사용) → Templates(시각 개성). 컴포넌트 추가 시 `vera-core.css`에 import 등록.
-3. **매니페스트 기반 조립** — 교재 구성은 YAML(`02_textbooks/books/`)로 선언. 페이지 종류: cover, legacy-page, problem-set, answer-grid, explanations, toc, content, passages, vocabulary.
+1. **PDF 안전 CSS만 사용** — gradient, box-shadow, text-shadow, rgba, opacity, backdrop-filter 금지. 솔리드 컬러만. 상세: `.claude/docs/design-rules.md`
+2. **5-Layer CSS 구조 준수 (XD)** — Foundation → Page System → Components → Templates → Adapters. 컴포넌트는 `.xd-` prefix, `extravagantdocs.css`에 import 등록.
+3. **매니페스트 기반 조립** — 교재 구성은 YAML(`02_textbooks/books/`)로 선언. XD 매니페스트는 `styleSystem: extravagantdocs` + `styleTemplate` 필수.
 
 ## 상세 문서
 

@@ -127,8 +127,7 @@
 /* 변형 2: 오버레이 (.cover--overlay)                                   */
 /* =================================================================== */
 .cover-page.cover--overlay::before {
-    background: var(--color-accent-dark) !important;
-    opacity: 0.85 !important;
+    background: #1A2E5A !important;
 }
 
 /* =================================================================== */
@@ -160,13 +159,6 @@
     display: none !important;
 }
 
-/* 텍스트에 그림자 추가 (가독성) */
-.cover-page.cover--full-bleed .cover-brand,
-.cover-page.cover--full-bleed .cover-main-title,
-.cover-page.cover--full-bleed .cover-edition,
-.cover-page.cover--full-bleed .cover-author {
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6) !important;
-}
 
 /* --- 장식 라인 (옵션) --- */
 .cover-decoration-top {

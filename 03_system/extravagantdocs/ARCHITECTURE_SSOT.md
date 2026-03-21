@@ -2,7 +2,7 @@
 
 This document is the single source of truth for the `extravagantdocs` library namespace inside this repository.
 
-Its role is to prevent drift while the project runs a parallel migration from the legacy `vera-core.css` stack.
+Its role is to define ownership, authority, and non-negotiable rules for the library.
 
 ## 1. Identity
 
@@ -31,16 +31,19 @@ Temporary compatibility root:
 
 - `03_system/extravagantdocs/bridges/`
 
-Phase 1 library entrypoints:
+Library entrypoints:
 
 - `03_system/extravagantdocs/extravagantdocs.css`
 - `03_system/extravagantdocs/templates/exam-paper/exam-paper.css`
 - `03_system/extravagantdocs/templates/grammar-bridge/grammar-bridge.css`
-- `03_system/extravagantdocs/adapters/pagedjs.css`
+- `03_system/extravagantdocs/adapters/paged-native.css`
 
-Phase 1 preview checkpoint:
+Current status:
 
-- `03_system/extravagantdocs/examples/exam-paper-preview.html`
+- First approved specimen family: `grammar-bridge`
+- First approved renderer direction: `paged-native`
+- Legacy bridge still active: `bridges/grammar-bridge.css`
+- Current migrated coverage: 22 `-xd` books across `grammar`, `syntax`, `reading`, `logic`, and `vocab`
 
 ## 3. Ownership By Layer
 
@@ -98,11 +101,23 @@ Rules:
 
 Files:
 
-- `components/section.css`
-- `components/table.css`
-- `components/callout.css`
+- `components/page-shell.css`
 - `components/cover.css`
+- `components/section.css`
+- `components/toc.css`
+- `components/paragraph.css`
+- `components/problem.css`
+- `components/explanation.css`
+- `components/answer-grid.css`
+- `components/example-list.css`
+- `components/callout.css`
+- `components/tip-box.css`
+- `components/qa-card.css`
+- `components/formula-card.css`
+- `components/table.css`
+- `components/grammar-table.css`
 - `components/question-block.css`
+- `components/word-entry.css`
 
 Rules:
 
@@ -116,10 +131,22 @@ Rules:
 - token overrides for a document family
 - cosmetic emphasis that does not redefine page primitives
 
-Files:
+Files (수동 작성):
 
-- `templates/exam-paper/tokens.css`
-- `templates/exam-paper/exam-paper.css`
+- `templates/exam-paper/` — 시험지 스타일 (수동 작성)
+- `templates/grammar-bridge/` — 문법 브릿지 시리즈 (수동 작성)
+
+Files (토큰 파이프라인 생성 — `generate-template.js`):
+
+- `templates/ocean-blue/`, `templates/sky-academic/`, `templates/earth-tone/`
+- `templates/grammar-teal/`, `templates/logic-blue/`, `templates/mint-sky/`
+- `templates/royal-purple/`, `templates/navy-gold/`
+- `templates/amber-guild/`, `templates/carbon-linen/`, `templates/coral-dispatch/`
+- `templates/folio-black/`, `templates/garnet-hall/`, `templates/graphite-gilt/`
+- `templates/olive-manuscript/`, `templates/prussian-ink/`, `templates/samsung-midnight/`
+- `templates/sapphire-codex/`, `templates/sky-academic/`, `templates/thistle-annotation/`
+
+총 21개 템플릿. 신규 템플릿은 `node 04_scripts/generate-template.js --palette <1-100>`으로 생성.
 
 Rules:
 
@@ -136,8 +163,9 @@ Rules:
 
 Files:
 
-- `adapters/pagedjs.css`
-- `adapters/browser-print.css`
+- `adapters/paged-native.css` — Puppeteer PDF 렌더링 (주력)
+- `adapters/browser-print.css` — 브라우저 인쇄 미리보기
+- `adapters/pagedjs.css` — paged.js 폴리필 (레거시, 비활성)
 
 Rules:
 
@@ -167,9 +195,7 @@ Rules:
 
 Current status:
 
-- `03_system/vera-core.css` remains the production default.
-- `03_system/extravagantdocs/` is introduced in parallel.
-- No existing textbook manifest is migrated automatically in Phase 1.
+- `extravagantdocs` is the primary system for XD manifests; `vera-core.css` handles legacy manifests via `assemble.js`.
 - Opt-in manifests may use `book.styleSystem`, `book.styleTemplate`, and `book.styleBridge`.
 
 Migration rule:
@@ -208,7 +234,7 @@ Required:
 
 - `runtime` may own preview-only pagination helpers
 - `paged-native` may own paged.js-only named pages and margin boxes
-- any known visual mismatch between them must be recorded in `docs/09-render-parity.md`
+- any known visual mismatch between them must be recorded in `docs/incidents/`
 - any discovered production regression must be recorded in `docs/incidents/`
 
 Forbidden:
@@ -221,7 +247,7 @@ Forbidden:
 
 If a style looks good on screen but threatens deterministic PDF output, PDF safety wins.
 
-## 6. Token Authority
+## 7. Token Authority
 
 Authoritative token source for `extravagantdocs` is:
 
@@ -242,7 +268,7 @@ Template token overrides are not allowed for:
 
 If structural tokens need to change, change `foundation/tokens.css` first and document the reason here.
 
-## 7. Page Geometry Authority
+## 8. Page Geometry Authority
 
 Authoritative page shell source is:
 
@@ -258,11 +284,11 @@ That file owns:
 
 No other layer may redefine those selectors except render adapters, and only to neutralize them for renderer needs.
 
-## 8. Renderer Authority
+## 9. Renderer Authority
 
 Authoritative paged.js source is:
 
-- `adapters/pagedjs.css`
+- `adapters/paged-native.css`
 
 That file alone owns:
 
@@ -275,7 +301,7 @@ That file alone owns:
 If paged.js behavior needs to change, do not patch component or template files first.
 Change the adapter or the page-system contract.
 
-## 9. Naming Rules
+## 10. Naming Rules
 
 Namespace prefix:
 
@@ -289,11 +315,43 @@ Naming intent:
 
 Do not introduce unprefixed classes in the new library unless they are external renderer hooks.
 
-## 10. Approval Gates
+## 11. Terminology
 
-The user requested a mandatory visual approval checkpoint before migration continues.
+Key terms and their canonical meanings:
 
-That means:
+- **Volume** — the publishable book unit (e.g. `grammar-bridge-vol1`). Top-level editorial product. May contain multiple chapters.
+- **Chapter** — learner-facing major instructional unit inside a volume. Editorial numbering; what the student sees. Must not be inferred from source bundle IDs.
+- **Part** — editorial subdivision label inside a volume. Display taxonomy only; do not assume `part === chapter`. Legacy `Part N` labels in Bridge Grammar are deprecated; canonical display term is `Chapter N`.
+- **Source Bundle** — internal extracted content family used by the build pipeline (e.g. `ch01`, `ch02`). Implementation identifiers only; never shown to end users as editorial numbers.
+- **Page Kind** — rendering role declared in YAML (e.g. `cover`, `legacy-page`, `problem-set`, `answer-grid`, `explanations`). Controls rendering behavior; does not define editorial hierarchy.
+
+Keep these three layers separate: editorial identity (volume/chapter/part) — source identity (bundle IDs) — rendering identity (page kinds and templates). If a change crosses layers, document it explicitly.
+
+## 12. Integrity Rules
+
+Core rule: never rely on one field to mean both editorial numbering and source identity.
+
+Bridge Grammar reality — `grammar-bridge-vol2` displays `Chapter 12–20` but source bundles underneath are `ch02–ch10`. Valid as long as it is explicit. Dangerous when code assumes the numbers match.
+
+Good practice:
+
+- store editorial identity in manifests and visible labels
+- treat source bundle IDs as internal implementation data
+- validate volume-to-source mappings with an audit script (`node 04_scripts/audit-grammar-bridge-taxonomy.js`)
+- document unusual mappings instead of normalizing them silently
+- normalize legacy `Part` labels to `Chapter` labels at the manifest boundary, not by guesswork in downstream UI
+
+Bad practice:
+
+- infer chapter numbers from `chNN` source IDs
+- rename source bundles just to look cleaner without tracing downstream effects
+- mix display labels and source IDs in one field
+
+Minimum validation before approving a new volume or migration: verify volume label, displayed chapter/part labels, source bundle mapping, problem JSON source for each chapter opener, and that the mapping is written down.
+
+## 13. Approval Gate
+
+A mandatory visual approval checkpoint is required before migration continues:
 
 1. Build the non-breaking scaffold.
 2. Produce a visual preview.
@@ -302,14 +360,7 @@ That means:
 
 No automatic production switch is allowed before that checkpoint.
 
-## 11. Planned Next Steps After Visual Approval
-
-1. Review the preview and correct spacing, typography, and page rhythm.
-2. Add the next reusable core components needed by real textbook pages.
-3. Add a non-breaking build hook so a book can opt into `extravagantdocs`.
-4. Migrate one template-backed textbook page as the first live specimen.
-
-## 12. Change Discipline
+## 14. Change Discipline
 
 Whenever one of the following changes, update this file in the same patch:
 
@@ -319,34 +370,16 @@ Whenever one of the following changes, update this file in the same patch:
 - migration rule
 - naming convention
 - approval workflow
+- terminology or integrity rules
 
 If code and this file disagree, this file is the review baseline and the mismatch must be resolved immediately.
 
-## 13. Documentation Architecture
+## 15. Supporting Docs
 
-This file is not the whole documentation system.
+Remaining documentation lives under `03_system/extravagantdocs/docs/`:
 
-Supporting docs now live under:
-
-- `03_system/extravagantdocs/docs/00-overview.md`
-- `03_system/extravagantdocs/docs/01-foundation.md`
-- `03_system/extravagantdocs/docs/02-page-system.md`
-- `03_system/extravagantdocs/docs/03-components.md`
-- `03_system/extravagantdocs/docs/04-templates.md`
-- `03_system/extravagantdocs/docs/05-renderers.md`
-- `03_system/extravagantdocs/docs/06-content-model.md`
-- `03_system/extravagantdocs/docs/07-terminology.md`
-- `03_system/extravagantdocs/docs/08-integrity-rules.md`
-- `03_system/extravagantdocs/docs/specimens/grammar-bridge-ch02.md`
-- `03_system/extravagantdocs/docs/checklists/review-gate.md`
-- `03_system/extravagantdocs/docs/changelog.md`
-- `03_system/extravagantdocs/docs/adr/ADR-0001-paged-native-build-path.md`
-
-Documentation authority is split this way:
-
-- This file defines ownership and non-negotiables
-- `docs/05-renderers.md` defines renderer contracts
-- specimen files define what one approved example is teaching the library
-- ADR files define durable architecture decisions
-
-If a renderer or build-path decision changes, update the matching doc as well as this file when ownership or authority is affected.
+- `changelog.md` — human-readable library evolution log
+- `specimens/grammar-bridge-ch02.md` — reference specimen
+- `checklists/review-gate.md` — mandatory visual approval gate
+- `adr/ADR-0001-paged-native-build-path.md` — paged-native architecture decision
+- `incidents/` — postmortems for renderer drift and production regressions
