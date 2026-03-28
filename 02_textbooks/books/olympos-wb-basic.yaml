@@ -1,0 +1,21 @@
+version: 2
+book:
+  id: olympos-wb-basic
+  title: 올림포스 영어독해 기초 문제 워크북 - Unit 1~3
+  shortTitle: 올림포스 기초 워크북
+  author: Haemin English
+  brand: Haemin English
+  style: olympos-reading
+  subject: reading
+  level: basic
+  theme: sky-academic
+pages:
+  - type: content
+    src: reading/olympos/wb-olympos-basic-cover.html
+    pageClass: cover-page no-header-footer
+  - type: content
+    src: reading/olympos/wb-olympos-basic-01.html
+  - type: content
+    src: reading/olympos/wb-olympos-basic-02.html
+  - type: content
+    src: reading/olympos/wb-olympos-basic-answers.html

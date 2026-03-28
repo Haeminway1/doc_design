@@ -1,0 +1,20 @@
+version: 2
+book:
+  id: wb-m3-L1-grammar
+  title: "위례중3 Lesson 1 문법 워크북"
+  shortTitle: 능률(김) 중3 L1 문법 워크북
+  author: Haemin English
+  brand: Haemin English
+  style: ne-textbook
+  subject: grammar
+  level: basic
+pages:
+  - type: content
+    src: school/wirye-m3-ne/wb-m3-L1-grammar-cover.html
+    pageClass: cover-page no-header-footer
+  - type: content
+    src: school/wirye-m3-ne/wb-m3-L1-grammar-01.html
+  - type: content
+    src: school/wirye-m3-ne/wb-m3-L1-grammar-02.html
+  - type: content
+    src: school/wirye-m3-ne/wb-m3-L1-grammar-answers.html

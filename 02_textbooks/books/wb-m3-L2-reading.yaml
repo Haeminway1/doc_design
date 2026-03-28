@@ -1,0 +1,20 @@
+version: 2
+book:
+  id: wb-m3-L2-reading
+  title: "위례중3 Lesson 2 독해 워크북"
+  shortTitle: 능률(김) 중3 L2 독해 워크북
+  author: Haemin English
+  brand: Haemin English
+  style: ne-textbook
+  subject: reading
+  level: basic
+pages:
+  - type: content
+    src: school/wirye-m3-ne/wb-m3-L2-read-cover.html
+    pageClass: cover-page no-header-footer
+  - type: content
+    src: school/wirye-m3-ne/wb-m3-L2-read-01.html
+  - type: content
+    src: school/wirye-m3-ne/wb-m3-L2-read-02.html
+  - type: content
+    src: school/wirye-m3-ne/wb-m3-L2-read-answers.html

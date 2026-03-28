@@ -1,0 +1,30 @@
+version: 2
+book:
+  id: ne-m3-lesson02
+  title: "Lesson 2 · Take Care of Yourself"
+  shortTitle: 능률(김) 중3 Lesson 2
+  author: Haemin English
+  brand: Haemin English
+  style: ne-textbook
+  subject: reading
+  level: basic
+pages:
+  - type: content
+    src: school/wirye-m3-ne/cover-l2.html
+    pageClass: cover-page no-header-footer
+  - type: content
+    src: school/wirye-m3-ne/lesson02-grammar-01.html
+  - type: content
+    src: school/wirye-m3-ne/lesson02-grammar-02.html
+  - type: content
+    src: school/wirye-m3-ne/lesson02-read-part1-passage.html
+  - type: content
+    src: school/wirye-m3-ne/lesson02-read-part1-translation.html
+  - type: content
+    src: school/wirye-m3-ne/lesson02-read-part1-analysis.html
+  - type: content
+    src: school/wirye-m3-ne/lesson02-read-part2-passage.html
+  - type: content
+    src: school/wirye-m3-ne/lesson02-read-part2-translation.html
+  - type: content
+    src: school/wirye-m3-ne/lesson02-read-part2-analysis.html

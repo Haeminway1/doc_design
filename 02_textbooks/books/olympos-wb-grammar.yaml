@@ -1,0 +1,24 @@
+version: 2
+book:
+  id: olympos-wb-grammar
+  title: 올림포스 영어독해 문법 워크북 - Unit 1~3
+  shortTitle: 올림포스 문법 워크북
+  author: Haemin English
+  brand: Haemin English
+  style: olympos-reading
+  subject: grammar
+  level: intermediate
+  theme: sky-academic
+pages:
+  - type: content
+    src: reading/olympos/wb-olympos-grammar-cover.html
+    pageClass: cover-page no-header-footer
+  - type: content
+    src: reading/olympos/wb-compact-style.html
+    pageClass: no-header-footer
+  - type: content
+    src: reading/olympos/wb-olympos-grammar-01.html
+  - type: content
+    src: reading/olympos/wb-olympos-grammar-02.html
+  - type: content
+    src: reading/olympos/wb-olympos-grammar-answers.html

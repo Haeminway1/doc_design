@@ -1,0 +1,14 @@
+{
+  "mcpServers": {
+    "hwpx": {
+      "command": "hwpx-mcp-server",
+      "args": [],
+      "env": {
+        "HWPX_MCP_MAX_CHARS": "12000",
+        "HWPX_MCP_AUTOBACKUP": "1",
+        "HWPX_MCP_ADVANCED": "1",
+        "LOG_LEVEL": "INFO"
+      }
+    }
+  }
+}

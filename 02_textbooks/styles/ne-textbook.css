@@ -1,6 +1,5 @@
 /* ═══════════════════════════════════════════════════════════
-   능률(오) 고1 교과서 본문 해설 — Custom Styles
-   Based on: olympos-reading.css
+   능률(김) 중3 교과서 본문 해설 — Custom Styles
    Theme: sky-academic flavor (sky-blue + amber)
    ═══════════════════════════════════════════════════════════ */
 
@@ -12,6 +11,9 @@ body {
   font-size: 10pt !important;
   color: #1F2937 !important;
   line-height: 1.6 !important;
+  background-color: #E5E7EB !important;
+  orphans: 3 !important;
+  widows: 3 !important;
 }
 
 .eng-text {
@@ -35,19 +37,22 @@ code {
   margin: 15mm 18mm !important;
 }
 
-/* 화면용 */
 .page {
   width: 210mm;
   min-height: 297mm;
   padding: 15mm 18mm !important;
+  margin: 10mm auto !important;
   position: relative;
   page-break-after: always !important;
   overflow: visible !important;
+  background-color: #FFFFFF !important;
+  box-shadow: 0 1px 6px rgba(0,0,0,0.15) !important;
 }
 
-/* 인쇄용: @page margin 이 모든 물리 페이지 상하좌우 여백을 담당.
-   .page padding 제거하여 이중 여백 방지 + 넘침 시 여백 유지 */
 @media print {
+  body {
+    background-color: #FFFFFF !important;
+  }
   .page {
     padding: 0 !important;
     margin: 0 !important;
@@ -227,11 +232,10 @@ code {
 
 /* ─── Explanation Card (해설) ──────────────────────────── */
 .explanation-card {
-  margin-bottom: 24px !important;
-  border: 1px solid #E5E7EB !important;
-  border-radius: 6px !important;
+  margin-bottom: 20px !important;
+  border: none !important;
+  border-radius: 0 !important;
   overflow: visible !important;
-  /* 긴 카드(번역 14문장 등)는 페이지를 넘길 수 있으므로 avoid 제거 */
 }
 
 .explanation-section {
@@ -253,7 +257,6 @@ code {
 /* Section colors */
 .summary-section {
   background-color: #F0F9FF !important;
-  border-bottom: 1px solid #E5E7EB !important;
 }
 
 .summary-section .explanation-label {
@@ -261,8 +264,7 @@ code {
 }
 
 .translation-section {
-  background-color: #FFFFFF !important;
-  border-bottom: 1px solid #E5E7EB !important;
+  background-color: #FAFBFC !important;
 }
 
 .translation-section .explanation-label {
@@ -277,7 +279,6 @@ code {
 
 .analysis-section {
   background-color: #FEF3C7 !important;
-  border-bottom: 1px solid #E5E7EB !important;
 }
 
 .analysis-section .explanation-label {
@@ -296,20 +297,16 @@ code {
   background-color: #6B7280 !important;
 }
 
-/* New: 구문독해 section (sky-blue) */
 .syntax-section {
   background-color: #F0F9FF !important;
-  border-bottom: 1px solid #E5E7EB !important;
 }
 
 .syntax-section .explanation-label {
   background-color: #0284C7 !important;
 }
 
-/* New: 핵심 표현 section (amber) */
 .expression-section {
   background-color: #FEF3C7 !important;
-  border-bottom: 1px solid #E5E7EB !important;
 }
 
 .expression-section .explanation-label {
@@ -462,7 +459,26 @@ code {
   background-color: #F8FAFC !important;
 }
 
-/* ─── Page Break Flow (페이지 넘김 시 여백 유지) ────────── */
+/* ═══════════════════════════════════════════════════════════
+   Page Break Flow — 항목 보호 (A4 핵심)
+   ═══════════════════════════════════════════════════════════ */
+
+/* 카드·섹션 단위 보호: 잘리지 않고 통째로 넘어감 */
+.explanation-card {
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+}
+
+.explanation-section {
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+}
+
+/* 단, 번역 섹션은 pair가 많아 페이지보다 길 수 있음 → 넘김 허용, 개별 pair만 보호 */
+.translation-section {
+  break-inside: auto !important;
+  page-break-inside: auto !important;
+}
 
 /* 라벨은 항상 첫 콘텐츠와 함께 — 라벨만 페이지 하단에 남는 것 방지 */
 .explanation-label {
@@ -476,51 +492,278 @@ code {
   page-break-after: avoid !important;
 }
 
-/* 번역 섹션: 긴 내용은 자연스럽게 넘기되 개별 pair는 보호 */
-.translation-section {
-  break-inside: auto !important;
-  page-break-inside: auto !important;
+/* 개별 항목: 쪼개지지 않게 보호 */
+.bilingual-pair,
+.syntax-card {
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
 }
 
-/* 본문(summary) 섹션도 길면 넘길 수 있음 */
-.summary-section {
-  break-inside: auto !important;
-  page-break-inside: auto !important;
+/* 테이블 전체 보호 */
+.grammar-table {
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
 }
 
-/* 핵심표현·어휘 테이블: 행 단위 보호 */
+/* 핵심표현·어휘 테이블: 헤더+첫행 보호, 행 단위 보호 */
+.grammar-table thead {
+  break-after: avoid !important;
+  page-break-after: avoid !important;
+}
+
 .grammar-table tbody tr {
   break-inside: avoid !important;
   page-break-inside: avoid !important;
 }
 
+/* ─── Problem Layout ──────────────────────────────────── */
+.passage-block {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  align-items: baseline !important;
+  gap: 2px 6px !important;
+  margin-bottom: 16px !important;
+  padding-bottom: 12px !important;
+  border-bottom: 1px solid #E5E7EB !important;
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+}
+
+.passage-label { display: contents !important; }
+.question-box  { display: contents !important; }
+
+.passage-badge {
+  order: 1 !important;
+  font-family: 'Inter', sans-serif !important;
+  font-weight: 700 !important;
+  font-size: 10pt !important;
+  color: #0284C7 !important;
+  background: none !important;
+  border-radius: 0 !important;
+  min-width: auto !important;
+  width: auto !important;
+  height: auto !important;
+  line-height: normal !important;
+  padding: 0 !important;
+}
+.passage-badge::after {
+  content: '.' !important;
+}
+
+.question-box > :first-child {
+  order: 2 !important;
+  flex: 1 !important;
+  min-width: 50% !important;
+  font-size: 9.5pt !important;
+  font-weight: 500 !important;
+  line-height: 1.5 !important;
+}
+.question-box > :first-child > b:first-child {
+  display: none !important;
+}
+
+.passage-label small {
+  order: 3 !important;
+  display: inline-block !important;
+  padding: 1px 10px !important;
+  background-color: #F0F9FF !important;
+  border: 1px solid #BAE6FD !important;
+  border-radius: 12px !important;
+  font-size: 7.5pt !important;
+  color: #0369A1 !important;
+  font-weight: 500 !important;
+  white-space: nowrap !important;
+  print-color-adjust: exact !important;
+  -webkit-print-color-adjust: exact !important;
+}
+
+.given-box {
+  order: 4 !important;
+  flex-basis: 100% !important;
+  padding: 6px 12px !important;
+  background-color: #FEF3C7 !important;
+  border-left: 3px solid #D97706 !important;
+  border-radius: 0 4px 4px 0 !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 9.5pt !important;
+  line-height: 1.6 !important;
+  margin: 4px 0 !important;
+}
+
+.passage-body {
+  order: 5 !important;
+  flex-basis: 100% !important;
+}
+
+.ordering-chunk {
+  order: 5 !important;
+  flex-basis: 100% !important;
+  padding: 6px 12px !important;
+  margin: 2px 0 !important;
+  background-color: #F8FAFC !important;
+  border-left: 2px solid #D1D5DB !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 9.5pt !important;
+  line-height: 1.6 !important;
+}
+
+.answer-choices {
+  order: 6 !important;
+  flex-basis: 100% !important;
+  margin-top: 6px !important;
+}
+
+.word-chips {
+  order: 6 !important;
+  flex-basis: 100% !important;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 6px !important;
+  margin: 6px 0 !important;
+}
+.word-chip {
+  display: inline-block !important;
+  padding: 3px 10px !important;
+  background-color: #F0F9FF !important;
+  border: 1px solid #BAE6FD !important;
+  border-radius: 4px !important;
+  font-family: 'Inter', sans-serif !important;
+  font-size: 9pt !important;
+  color: #0369A1 !important;
+}
+
+.answer-line {
+  order: 7 !important;
+  flex-basis: 100% !important;
+  border-bottom: 1px solid #9CA3AF !important;
+  min-height: 20px !important;
+  margin-top: 6px !important;
+}
+
+.question-box > :not(:first-child) {
+  order: 6 !important;
+  flex-basis: 100% !important;
+}
+
 /* ─── Print Overrides ──────────────────────────────────── */
 @media print {
-  body { background: white !important; }
-  .page {
-    page-break-after: always !important;
-  }
-
-  /* 개별 요소 보호 (한 쌍이 쪼개지지 않게) */
   .syntax-card,
   .bilingual-pair {
     page-break-inside: avoid !important;
     break-inside: avoid !important;
   }
 
-  /* 긴 카드/섹션은 자연스럽게 넘김 허용 */
   .explanation-card,
-  .explanation-section,
-  .translation-section,
-  .summary-section {
-    page-break-inside: auto !important;
-    break-inside: auto !important;
+  .explanation-section {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
   }
 
-  /* orphans/widows 보호 */
-  .bilingual-pair,
-  .syntax-card {
-    orphans: 3 !important;
-    widows: 3 !important;
+  .translation-section {
+    break-inside: auto !important;
+    page-break-inside: auto !important;
+  }
+
+  .grammar-table {
+    break-inside: avoid !important;
+    page-break-inside: avoid !important;
+  }
+
+  * {
+    print-color-adjust: exact !important;
+    -webkit-print-color-adjust: exact !important;
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   Compact Answer Grid
+   ═══════════════════════════════════════════════════════════ */
+
+.answer-page {
+  font-size: 8.5pt !important;
+  line-height: 1.5 !important;
+  columns: 2 !important;
+  column-gap: 20px !important;
+}
+
+.answer-section {
+  break-inside: avoid !important;
+  margin-bottom: 6px !important;
+}
+
+.answer-section-title {
+  font-weight: 700 !important;
+  font-size: 8pt !important;
+  color: #0369A1 !important;
+  border-bottom: 1.5px solid #0369A1 !important;
+  padding-bottom: 1px !important;
+  margin-bottom: 3px !important;
+  letter-spacing: -0.02em !important;
+}
+
+.answer-grid {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 0px 0px !important;
+  margin-bottom: 2px !important;
+}
+
+.answer-grid .a {
+  width: 20% !important;
+  display: inline-flex !important;
+  align-items: baseline !important;
+  gap: 2px !important;
+  padding: 1px 0 !important;
+  font-size: 8.5pt !important;
+  line-height: 1.4 !important;
+}
+
+.answer-grid .a .n {
+  font-weight: 600 !important;
+  color: #9CA3AF !important;
+  font-size: 7pt !important;
+  min-width: 14px !important;
+  font-family: 'Inter', sans-serif !important;
+}
+
+.answer-grid .a .v {
+  font-weight: 500 !important;
+  color: #1F2937 !important;
+}
+
+.answer-written {
+  margin-bottom: 2px !important;
+}
+
+.answer-written .aw {
+  display: flex !important;
+  gap: 4px !important;
+  padding: 1.5px 0 !important;
+  border-bottom: 0.5px solid #F3F4F6 !important;
+  font-size: 7.5pt !important;
+  line-height: 1.35 !important;
+}
+
+.answer-written .aw .n {
+  font-weight: 600 !important;
+  color: #9CA3AF !important;
+  font-size: 7pt !important;
+  min-width: 18px !important;
+  flex-shrink: 0 !important;
+  font-family: 'Inter', sans-serif !important;
+}
+
+.answer-written .aw .v {
+  color: #1F2937 !important;
+  font-weight: 400 !important;
+}
+
+@media print {
+  .answer-page {
+    columns: 2 !important;
+    column-gap: 20px !important;
+  }
+  .answer-section {
+    break-inside: avoid !important;
   }
 }
